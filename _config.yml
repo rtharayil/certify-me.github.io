@@ -1,0 +1,63 @@
+# Site settings
+title: DevOps Master Architect Workshop 
+email: info@quadralogics.com
+description: A comprehensive, hands-on ,online DevOps learning program for professionals
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+company: QuadraLogics
+#Heading 
+Head1: DevOps <br /> Master Architect <br /> Workshop
+Head2: Learn from the comfort of your home 
+Head3: 72+ hours of the instructor-led, live , hands-on workshop
+HeadCTA: Enroll Now
+HeadCTALink: https://drive.google.com/u/0/uc?id=1jIOXTEolfSOy2nYpC1QxoVlfX_xn5Fns&export=download
+
+#Call to action
+USPH: QuadraLogics Advantage
+USP: Quadralogics is a boutique training firm that specializes in DevOps training and consulting. Since our inception in 2014, QuadraLogics has facilitated more than 70+ corporate and public workshops enabling more than 2000+ practitioners. We are trusted partners with global brands like Pluralsight, Udacity, KnowledgeHut, etc and enable them in designing/delivering technical content and training. Quadralogics today is one of the most trusted training/content producers and a premium player in the B2B DevOps market.Hence enrolling your self with our DevOps Master program entitles you to avail the program at a wholesale price. Building on our experience our industry experts have carefully handcrafted the “DevOps Master Workshop ” series, we use a technique called the “Task-based learning”. In this approach, the practitioner learns by exploring 200+ hands on,real-life scenarios in our labs. This unique style enables the practitioner to be more competent and highly productive after the workshop. 
+
+TContentH: Download Training Contents
+TContentB: Topics include Docker, Kubernetes, Jenkins, Puppet, Ansible, Chef, Terraform, AWS Cloud formation, Nagios, Git, & InSpec
+TContentLink: https://drive.google.com/u/0/uc?id=1jIOXTEolfSOy2nYpC1QxoVlfX_xn5Fns&export=download
+
+#services
+ServicesHeading: Key Features
+
+Services1H: 72+ hours of learning
+Services1: 72+ hours of the instructor-led, live online hands-on workshop. In-depth coverage of Basic to Advanced topics, ideal for beginners and experienced.
+
+Services2H: 1X1 Coaching
+Services2: We understand that learning is never complete without tailoring to your needs. Hence this program includes 1X1 personalized coaching for 3hrs per person.
+
+Services3H: 11 Certification
+Services3: This detail master workshop includes 11 certifications across Docker, Kubernetes, Jenkins, Puppet, Ansible, Chef, Terraform, AWS Cloud formation, Nagios, Git, & InSpec.
+
+Services4H: Class recording
+Services4: Unable to make it to a class, we have covered you, we will upload the class recording to our LMS website and you will have exclusive access to it for the next 6 months.
+
+
+#Clinets
+clinetsH : Sample Cetificates
+
+#Portfolio
+
+portfolioHeader : Learn from the Expert!
+portfolioHeaderA: Help us help you
+portfolioHeaderLink: https://www.youtube.com/embed/i2Vh6yUiZn4
+portfolioHeaderB : About your trainer 
+portfolioHeaderBN: Anju M Dominic
+portfolioHeaderB1: Founder | Speaker | Author
+portfolioHeaderB1C: Anju M Dominic is a well accredited professional corporate trainer and consultant in the field of DevOps . She has conducted over 70+ hands-on workshops across different product and service companies. She is also a trainer/author across various training companies including PluralSight, Edureka, KnowledgeHut, etc. She is currently the Principal consultant and founder of QuadraLogics, a boutique training/consulting firm. Anju is well known for her contributions to technical articles which includes two books and several whitepapers in the field of software engineering. She is also a regular speaker for many DevOps and Agile conferences.
+#Ribbon 
+RHead1: Buy your tickets
+RHead2: 
+RHead3: 4.July2020Workshop Timings- Sat & Sunday 8 pm to 11 pm IST | Doubt Clearances Session Mon 8 pm to 11 pm IST
+RCTA:  Enroll Now!
+
+ph_number: +91-6362315334
+github_username: linkedin/company/quadralogics
+
+footer: ©  2020  www.quadralogics.com
+
+# Build settings
+markdown: kramdown
