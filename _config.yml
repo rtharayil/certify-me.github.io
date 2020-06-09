@@ -6,10 +6,10 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 company: QuadraLogics
 #Heading 
-Head1: Certify Me Online
-Head2: Most trusted Assesment and Certifcation Platform
-Head3: Take our Assesments and get Certified Now 
-HeadCTA: Enroll Now
+Head1: Certify me Online
+Head2: Your trusted Assessment and Certification Platform
+Head3: Take your Assessments and get Certified Now 
+HeadCTA: Get Certified
 HeadCTALink: https://drive.google.com/u/0/uc?id=1jIOXTEolfSOy2nYpC1QxoVlfX_xn5Fns&export=download
 
 #Call to action
@@ -21,16 +21,16 @@ TContentB: Topics include Docker, Kubernetes, Jenkins, Puppet, Ansible, Chef, Te
 TContentLink: https://drive.google.com/u/0/uc?id=1jIOXTEolfSOy2nYpC1QxoVlfX_xn5Fns&export=download
 
 #services
-ServicesHeading: Key Features
+ServicesHeading:  Get ceritifed in 3 steps 
 
-Services1H: 72+ hours of learning
-Services1: 72+ hours of the instructor-led, live online hands-on workshop. In-depth coverage of Basic to Advanced topics, ideal for beginners and experienced.
+Services1H: Step 1)  Enrol
+Services1: Browse our list of certifications and enroll as per your choice and need. We have Basic, Intermediate, and Advanced certifications for each subject.
 
-Services2H: 1X1 Coaching
-Services2: We understand that learning is never complete without tailoring to your needs. Hence this program includes 1X1 personalized coaching for 3hrs per person.
+Services2H: Step 2) Take Assessment
+Services2: Take your online assessments. These assignments are more problem solving focused to test your applied learning over theoretical knowledge. Once enrolled you can complete and submit your assessments in 90 days.
 
-Services3H: 11 Certification
-Services3: This detail master workshop includes 11 certifications across Docker, Kubernetes, Jenkins, Puppet, Ansible, Chef, Terraform, AWS Cloud formation, Nagios, Git, & InSpec.
+Services3H: Step 3) Get Certified
+Services3: our subject matter experts will evaluate &  certify you, it is that simple . Don't worry if you do not clear your assesment , you can re-take the assessment for no extra cost for 2 more times .
 
 Services4H: Class recording
 Services4: Unable to make it to a class, we have covered you, we will upload the class recording to our LMS website and you will have exclusive access to it for the next 6 months.
@@ -57,7 +57,7 @@ RCTA:  Enroll Now!
 ph_number: +91-6362315334
 github_username: linkedin/company/quadralogics
 
-footer: ©  2020  www.quadralogics.com
+footer: ©  2020  www.quadralogics.com , certifyme.online is a QuadraLogics consern 
 
 # Build settings
 markdown: kramdown
