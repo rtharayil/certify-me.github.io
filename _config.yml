@@ -21,21 +21,35 @@ TContentB: Topics include Docker, Kubernetes, Jenkins, Puppet, Ansible, Chef, Te
 TContentLink: https://drive.google.com/u/0/uc?id=1jIOXTEolfSOy2nYpC1QxoVlfX_xn5Fns&export=download
 
 #services
-ServicesHeading:  Get ceritifed in 3 steps 
+ServicesHeading:  Your Certification in 3 steps away
 
-Services1H: Step 1)  Enrol
+Services1H: Step 1.  Enrol
 Services1: Browse our list of certifications and enroll as per your choice and need. We have Basic, Intermediate, and Advanced certifications for each subject.
 
-Services2H: Step 2) Take Assessment
+Services2H: Step 2. Take Assessment
 Services2: Take your online assessments. These assignments are more problem solving focused to test your applied learning over theoretical knowledge. Once enrolled you can complete and submit your assessments in 90 days.
 
-Services3H: Step 3) Get Certified
+Services3H: Step 3. Get Certified
 Services3: our subject matter experts will evaluate &  certify you, it is that simple . Don't worry if you do not clear your assesment , you can re-take the assessment for no extra cost for 2 more times .
 
 Services4H: Class recording
 Services4: Unable to make it to a class, we have covered you, we will upload the class recording to our LMS website and you will have exclusive access to it for the next 6 months.
 
+#features 
 
+FeatureHeading:  Get Ceritifed with us
+
+Feature1H: Showcase your Credentials 
+Feature1: In today's Job market certification holds a key in evaluating your candidature. Certifications from neutral bodies like certify.me.online  will enable you to showcase your credentials and earn trust, thus drastically improve your chances to qualify.
+
+Feature2H: Value for Money
+Feature2: Typically certifications are bundled with training, making certifications costlier. But at certify.me.online you can choose only get certified, this brings your certification cost drastically down. You need to take our assessments and our industry experts will certify you once you clear the pass criteria.
+
+Feature3H:  Life-Long Certification
+Feature3: Our certifications are for life and we don't charge any renewal fee. We also provide you with badges that you can showcase in your resume or email signature. 
+
+Feature4H: Our Certificates are Verifiable  
+Feature4: Each of our certificates comes up with a QR code that enables you to establish your authenticity seamlessly. The also ensures the certificates issued by us can not be forged. We also support the email-based verification process.   
 #Clinets
 clinetsH : Sample Cetificates
 
@@ -49,10 +63,10 @@ portfolioHeaderBN: Anju M Dominic
 portfolioHeaderB1: Founder | Speaker | Author
 portfolioHeaderB1C: Anju M Dominic is a well accredited professional corporate trainer and consultant in the field of DevOps . She has conducted over 70+ hands-on workshops across different product and service companies. She is also a trainer/author across various training companies including PluralSight, Edureka, KnowledgeHut, etc. She is currently the Principal consultant and founder of QuadraLogics, a boutique training/consulting firm. Anju is well known for her contributions to technical articles which includes two books and several whitepapers in the field of software engineering. She is also a regular speaker for many DevOps and Agile conferences.
 #Ribbon 
-RHead1: Buy your tickets
+RHead1: Get Certified Now
 RHead2: 
-RHead3: 4.July2020Workshop Timings- Sat & Sunday 8 pm to 11 pm IST | Doubt Clearances Session Mon 8 pm to 11 pm IST
-RCTA:  Enroll Now!
+RHead3: 
+RCTA:  Enroll !
 
 ph_number: +91-6362315334
 github_username: linkedin/company/quadralogics
