@@ -1,3 +1,9 @@
+collections:
+    devopsma:
+      output: true
+  
+
+
 # Site settings
 title: DevOps Master Architect Workshop 
 email: info@quadralogics.com
@@ -73,5 +79,9 @@ github_username: linkedin/company/quadralogics
 
 footer: ©  2020  www.quadralogics.com , certifyme.online is a QuadraLogics consern 
 
+
+
 # Build settings
 markdown: kramdown
+
+
