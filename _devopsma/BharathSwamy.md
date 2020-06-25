@@ -6,7 +6,7 @@ issuedInstitute: QUADRALOGICS
 issuedTo : Bharath Swamy
 dateOfIssue: 25.June.2020
 program: DevOps Master Workshop
-certificatePath: devopsma/master.jpg
+certificatePath: devopsma/BharathSwamy.png
 
 advTitle1: DevOps <br /> Master Architect <br /> Workshop
 advTitle2: Learn from the comfort of your home
