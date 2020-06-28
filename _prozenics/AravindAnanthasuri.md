@@ -6,11 +6,11 @@ issuedInstitute: Prozenics
 issuedTo : Aravind Ananthasuri
 dateOfIssue: 19.June.2018
 program: AWS Solution Architect Associate
-certificatePath: devopsma/AravindAnanthasuri.jpg
+certificatePath: devopsma/AravindAnanthasuri.gif
 
-advTitle1: 
-advTitle2: 
-advTitle2: 
+advTitle1: <br/>
+advTitle2: <br/>
+advTitle2: <br/> <br/>
 advCTAName: Enroll Now
 advCTALink: http://prozenics.com/courses/aws-solution-architect-associate/
 advBGImagelink: https://media-exp1.licdn.com/dms/image/C511BAQGjnT2zzyWGQw/company-background_10000/0?e=1593428400&v=beta&t=Hgw95TcQbWbBc_JZRYMAPPCxQ0XZjI7oGJqwKX1zNEo
