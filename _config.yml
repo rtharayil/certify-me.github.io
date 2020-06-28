@@ -12,9 +12,9 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 company: QuadraLogics
 #Heading 
-Head1: Certify me Online
-Head2: Your trusted Assessment and Certification Platform
-Head3: Take your Assessments and get Certified Now 
+Head1: Certify Me.Online 
+Head2: Your Trusted Digital Certificate Publishing Platform
+Head3: We add more value to your Training & Certifications
 HeadCTA: Get Certified
 HeadCTALink: https://drive.google.com/u/0/uc?id=1jIOXTEolfSOy2nYpC1QxoVlfX_xn5Fns&export=download
 
@@ -29,24 +29,24 @@ TContentLink: https://drive.google.com/u/0/uc?id=1jIOXTEolfSOy2nYpC1QxoVlfX_xn5F
 #services
 ServicesHeading:  Your Certification in 3 steps away
 
-Services1H: Step 1.  Enrol
+Services1H: Step 1.  OnBoard 
 Services1: Browse our list of certifications and enroll as per your choice and need. We have Basic, Intermediate, and Advanced certifications for each subject.
 
-Services2H: Step 2. Take Assessment
+Services2H: Step 2. Issue
 Services2: Take your online assessments. These assignments are more problem solving focused to test your applied learning over theoretical knowledge. Once enrolled you can complete and submit your assessments in 90 days.
 
-Services3H: Step 3. Get Certified
+Services3H: Step 3. Review
 Services3: our subject matter experts will evaluate &  certify you, it is that simple . Don't worry if you do not clear your assesment , you can re-take the assessment for no extra cost for 2 more times .
 
-Services4H: Class recording
+Services4H:  Step 3. Publish
 Services4: Unable to make it to a class, we have covered you, we will upload the class recording to our LMS website and you will have exclusive access to it for the next 6 months.
 
 #features 
 
-FeatureHeading:  Features
+FeatureHeading:  Adding more value
 
-Feature1H:  Issue Digitized Certificates  
-Feature1: Add value to your training programs by issuing a Digitized Certificate. Each certificate issued by you will be stored in a dedicated web address which is easily accessible by anyone.
+Feature1H:  Publish Digitized Certificates  
+Feature1: Add value to your training programs by issuing & publishing a Digitized Certificate. Each certificate issued by you will be stored in a dedicated web address which is easily accessible by anyone.
 
 Feature2H: Gain More Visibility
 Feature2: The digital certificates issued can easily be shared across different social media platforms like Facebook, Linkedin, Instagram, etc. This enables your trainees to showcase/share their achievements with ease and as a trainer, you directly gain more visibility.
@@ -55,9 +55,9 @@ Feature3H:  Drive More leads
 Feature3: The shareable certificate webpages are customizable to add your branding including, specific call to action, email etc enabling you to drive more sales and revenue. 
 
 Feature4H: Your Certificates are Verifiable  
-Feature4: Each of our certificates comes up with a QR code that enables you to establish your authenticity seamlessly. This also ensures the certificates issued can not be forged. We also support the email-based verification process.   
+Feature4: Each of our certificates comes up with a QR code that enables you to establish your authenticity seamlessly. The also ensures the certificates issued can not be forged. We also support the email-based verification process.   
 #Clinets
-clinetsH : Sample Certificate Web Page
+clinetsH : Sample Cetificate WebPage
 
 #Portfolio
 
