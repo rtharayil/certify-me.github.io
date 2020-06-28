@@ -1,6 +1,8 @@
 collections:
     devopsma:
       output: true
+    prozenics:
+      output: true
   
 
 
