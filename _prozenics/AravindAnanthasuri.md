@@ -11,7 +11,7 @@ certificatePath: devopsma/AravindAnanthasuri.gif
 advTitle1: <br/>
 advTitle2: <br/>
 advTitle2: <br/> <br/>
-advCTAName: Enroll Now
+advCTAName: Learn more
 advCTALink: http://prozenics.com/courses/aws-solution-architect-associate/
 advBGImagelink: https://pbs.twimg.com/media/D9Lo1C9UwAA0Xed.png
 contactCompanyName: Prozenics 
