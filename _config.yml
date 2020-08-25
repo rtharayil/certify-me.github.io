@@ -1,6 +1,8 @@
 collections:
     devopsma:
       output: true
+    prozenics:
+      output: true
   
 
 
@@ -12,52 +14,50 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 company: QuadraLogics
 #Heading 
-Head1: Certify me Online
-Head2: Your trusted Assessment and Certification Platform
-Head3: Take your Assessments and get Certified Now 
-HeadCTA: Get Certified
-HeadCTALink: https://drive.google.com/u/0/uc?id=1jIOXTEolfSOy2nYpC1QxoVlfX_xn5Fns&export=download
-
+Head1: Certify Me.Online 
+Head2: Your Trusted Digital Certificate Publishing Platform
+Head3: We add more value to your Training & Certifications 
+HeadCTA: Request a Demo
+HeadCTALink: mailto:info@quadralogics.com?subject = Express Interest&body = I  would like to know more about how certifyme.online could add value to my  Training & Certifications.
 #Call to action
-USPH: QuadraLogics Advantage
-USP: Quadralogics is a boutique training firm that specializes in DevOps training and consulting. Since our inception in 2014, QuadraLogics has facilitated more than 70+ corporate and public workshops enabling more than 2000+ practitioners. We are trusted partners with global brands like Pluralsight, Udacity, KnowledgeHut, etc and enable them in designing/delivering technical content and training. Quadralogics today is one of the most trusted training/content producers and a premium player in the B2B DevOps market.Hence enrolling your self with our DevOps Master program entitles you to avail the program at a wholesale price. Building on our experience our industry experts have carefully handcrafted the “DevOps Master Workshop ” series, we use a technique called the “Task-based learning”. In this approach, the practitioner learns by exploring 200+ hands on,real-life scenarios in our labs. This unique style enables the practitioner to be more competent and highly productive after the workshop. 
+USPH: Certify Me.Online Advantage
+USP: Certify me is a digital certificate publishing platform for training companies. The sharable, mobile-friendly, and personalized certificate pages enables training firms to gain better visibility, branding, and lead generation via organic sharing across different social media platforms like Facebook, Linkedin, Instagram, etc. Organic sharing is naturally triggered when trainees want to showcase her achievements in her network circle. Each organic share on an average generates 1000+ impressions thus leading to more visibility & sales leads. <br/> Certifyme.online is a QuadraLogics concern .
 
 TContentH: Download Training Contents
 TContentB: Topics include Docker, Kubernetes, Jenkins, Puppet, Ansible, Chef, Terraform, AWS Cloud formation, Nagios, Git, & InSpec
 TContentLink: https://drive.google.com/u/0/uc?id=1jIOXTEolfSOy2nYpC1QxoVlfX_xn5Fns&export=download
 
 #services
-ServicesHeading:  Your Certification in 3 steps away
+ServicesHeading:  Enhanced Lead Generation Just 4 Steps Away
 
-Services1H: Step 1.  Enrol
-Services1: Browse our list of certifications and enroll as per your choice and need. We have Basic, Intermediate, and Advanced certifications for each subject.
+Services1H: Step 1.  OnBoard 
+Services1: This one-time step is to ensure you understand how you could benefit from our product. While onboarding we also ensure all brands and firms associated with us are genuine and authorized firms.
+Services2H: Step 2. Issue
+Services2: Once Onboarded you can issue your certificate to your student on your certificate template along with our unique QR code that can be used to verify the certificate at any given time and place. 
 
-Services2H: Step 2. Take Assessment
-Services2: Take your online assessments. These assignments are more problem solving focused to test your applied learning over theoretical knowledge. Once enrolled you can complete and submit your assessments in 90 days.
+Services3H: Step 3. Review
+Services3: The issued Certificate and branding collaterals undergo a quick quality check to ensure your certificates pages are error-free and presentable. Afterall your brand value is also our concern.
 
-Services3H: Step 3. Get Certified
-Services3: our subject matter experts will evaluate &  certify you, it is that simple . Don't worry if you do not clear your assesment , you can re-take the assessment for no extra cost for 2 more times .
-
-Services4H: Class recording
-Services4: Unable to make it to a class, we have covered you, we will upload the class recording to our LMS website and you will have exclusive access to it for the next 6 months.
+Services4H:  Step 4. Publish
+Services4: Once published you can share it with your students and relax. Each shared certificate on an average generates 1000+ impressions thus leading to more sales leads and more branding.
 
 #features 
 
-FeatureHeading:  Features
+FeatureHeading:  Adding more value
 
-Feature1H:  Issue Digitized Certificates  
-Feature1: Add value to your training programs by issuing a Digitized Certificate. Each certificate issued by you will be stored in a dedicated web address which is easily accessible by anyone.
+Feature1H:  Publish Digitized Certificates  
+Feature1: Add value to your training programs by issuing & publishing a Digitized Certificate. Each certificate issued by you will be stored in a dedicated web address which is easily accessible by anyone.
 
 Feature2H: Gain More Visibility
 Feature2: The digital certificates issued can easily be shared across different social media platforms like Facebook, Linkedin, Instagram, etc. This enables your trainees to showcase/share their achievements with ease and as a trainer, you directly gain more visibility.
 
 Feature3H:  Drive More leads 
-Feature3: The shareable certificate webpages are customizable to add your branding including, specific call to action, email etc enabling you to drive more sales and revenue. 
+Feature3: The shareable certificate webpages are customizable to add your branding including, specific call to action, email etc enabling you to drive more sales and revenue. Our Certificate WebPages are mobile-friendly enabling more shares and impressions
 
 Feature4H: Your Certificates are Verifiable  
-Feature4: Each of our certificates comes up with a QR code that enables you to establish your authenticity seamlessly. This also ensures the certificates issued can not be forged. We also support the email-based verification process.   
+Feature4: Each of our certificates comes up with a QR code that enables you to establish your authenticity seamlessly. The also ensures the certificates issued can not be forged. We also support the email-based verification process.   
 #Clinets
-clinetsH : Sample Certificate Web Page
+clinetsH : Sample Cetificate WebPage
 
 #Portfolio
 
