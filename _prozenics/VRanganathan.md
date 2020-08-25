@@ -6,7 +6,7 @@ issuedInstitute: PROZENICS
 issuedTo : V Ranganathan
 dateOfIssue: 21.Aug.2020
 program: COACHING STYLE LEADERSHIP
-certificatePath: devopsma/AravindAnanthasuri.gif
+certificatePath: prozenics/VRanganathan.jpg
 
 advTitle1: <br/>
 advTitle2: <br/>

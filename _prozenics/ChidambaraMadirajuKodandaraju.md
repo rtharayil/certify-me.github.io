@@ -6,7 +6,7 @@ issuedInstitute: PROZENICS
 issuedTo :  Chidambara Madiraju Kodandaraju
 dateOfIssue: 21.Aug.2020
 program: COACHING STYLE LEADERSHIP
-certificatePath: devopsma/AravindAnanthasuri.gif
+certificatePath: prozenics/ChidambaraMadirajuKodandaraju.jpg
 
 advTitle1: <br/>
 advTitle2: <br/>

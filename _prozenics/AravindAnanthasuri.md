@@ -1,12 +1,12 @@
 ---
 layout: verify
 
-issuedBy: Prasad Mani
+issuedBy: Subrahmaniam, S R V
 issuedInstitute: Prozenics
 issuedTo : Aravind Ananthasuri
 dateOfIssue: 19.June.2018
 program: COACHING STYLE LEADERSHIP
-certificatePath: devopsma/AravindAnanthasuri.gif
+certificatePath: prozenics/AravindAnanthasuri.jpg
 
 advTitle1: <br/>
 advTitle2: <br/>
