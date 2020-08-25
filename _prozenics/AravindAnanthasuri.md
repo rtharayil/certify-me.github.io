@@ -5,7 +5,7 @@ issuedBy: Prasad Mani
 issuedInstitute: Prozenics
 issuedTo : Aravind Ananthasuri
 dateOfIssue: 19.June.2018
-program: AWS Solution Architect Associate
+program: COACHING STYLE LEADERSHIP
 certificatePath: devopsma/AravindAnanthasuri.gif
 
 advTitle1: <br/>
