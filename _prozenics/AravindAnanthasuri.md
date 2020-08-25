@@ -1,12 +1,12 @@
 ---
 layout: verify
 
-issuedBy: Subrahmaniam, S R V
+issuedBy: Prasad Mani
 issuedInstitute: Prozenics
 issuedTo : Aravind Ananthasuri
 dateOfIssue: 19.June.2018
-program: COACHING STYLE LEADERSHIP
-certificatePath: prozenics/AravindAnanthasuri.jpg
+program: AWS Solution Architect Associate
+certificatePath: devopsma/AravindAnanthasuri.gif
 
 advTitle1: <br/>
 advTitle2: <br/>
