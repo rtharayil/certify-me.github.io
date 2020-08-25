@@ -12,7 +12,7 @@ advTitle1: <br/>
 advTitle2: <br/>
 advTitle2: <br/> <br/>
 advCTAName: Learn more
-advCTALink: http://prozenics.com/courses/aws-solution-architect-associate/
+advCTALink: http://prozenics.com/
 advBGImagelink: https://pbs.twimg.com/media/D9Lo1C9UwAA0Xed.png
 contactCompanyName: Prozenics 
 contactMsg: Give us a call or send us an email and we will get back to you as soon as possible!
