@@ -6,7 +6,7 @@ issuedInstitute: PROZENICS
 issuedTo : Kalidas Velmurugan Sermakasi
 dateOfIssue: 21.Aug.2020
 program: COACHING STYLE LEADERSHIP
-certificatePath: prozenics/GnanasambandhamAnbazhagan.jpg
+certificatePath: prozenics/KalidasVelmuruganSermakasi.jpg
 
 advTitle1: <br/>
 advTitle2: <br/>
