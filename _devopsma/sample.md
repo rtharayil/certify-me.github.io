@@ -2,10 +2,10 @@
 layout: verify
 
 issuedBy: Anju M Dominic
-issuedInstitute: QUADRALOGICS
-issuedTo : < Your Name >
-dateOfIssue: 6.July.2018
-program: APAC DevOps Leadership Summit 
+issuedInstitute: < name of the event / firm  >
+issuedTo : < Name of Delegate>
+dateOfIssue: < date >
+program: < Your conference / workshop  name> 
 certificatePath: devopsma/master.jpg
 
 advTitle1: www.quadralogics.com
@@ -23,4 +23,4 @@ contactPh_number: +91-8000080000
 contactEmail: info@tcs.com
 contactCompanyWebSiteLink: www.tcs.com
 ---
-This certificate is issued for completing all the assignments of DevOps Master Workshop which is a 70hr comprehensive workshop focused on 11 DevOps Tools which includes Git, Jenkins, Docker, Chef, Ansible, Puppet, Kubernetes, Terraform, AWS CloudFormation, Nagios and InSpec. 
+ <A write-up about the event and why are you awarding this certificate in less than 50  words >
