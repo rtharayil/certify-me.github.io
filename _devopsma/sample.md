@@ -1,10 +1,10 @@
 ---
 layout: verify
 
-issuedBy: Anju M Dominic
+issuedBy: <name of signatory/conference chair>
 issuedInstitute: < name of the event / firm  >
-issuedTo : < Name of Delegate>
-dateOfIssue: < date >
+issuedTo : < Name of Delegate / Speaker >
+dateOfIssue: < Date >
 program: < Your conference / workshop  name> 
 certificatePath: devopsma/master.jpg
 

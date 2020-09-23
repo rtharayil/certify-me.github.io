@@ -56,7 +56,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 30px 0;
 }
 
 aside {
@@ -110,19 +110,19 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .3);
+        border-color: rgba(black, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: rgba(black, .7);
             &:hover,
             &:focus {
-                color: white;
+                color: black;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: rgba(black, .7);
             &:hover {
-                color: white;
+                color: black
             }
         }
         &.affix {
@@ -150,6 +150,7 @@ aside {
 // Homepage Header
 
 header {
+  font-family: 'Open Sans', sans-serif;
     position: relative;
     width: 100%;
     min-height: auto;
@@ -157,7 +158,7 @@ header {
     background-position: center;
     background-image: url('../img/header.jpg');
     text-align: left;
-    color: black;
+    color: white;
     .header-content {
         position: relative;
         text-align: left;
@@ -184,7 +185,7 @@ header {
         }
     }
     @media (min-width: 768px) {
-        min-height: 100%;
+        min-height: 40%;
         .header-content {
             position: absolute;
             top: 50%;
@@ -381,13 +382,15 @@ header {
 
 .service-box {
     max-width: 400px;
-    margin: 50px auto 0;
+    margin: 20px auto 0;
     @media (min-width: 992px) {
         margin: 20px auto 0;
     }
     p {
         margin-bottom: 0;
     }
+    color: black;
+    line-height: 2;
 }
 
 .row-portfolio1::after {
@@ -478,10 +481,8 @@ html {
   
   .backgroundPricing::after {
     content: '';
-    background: #60a9ff;
-    background: -moz-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
-    background: -webkit-linear-gradient(top, #60a9ff 0%,#4394f4 100%);
-    background: linear-gradient(to bottom, #60a9ff 0%,#4394f4 100%);
+    background: rgb(172, 150, 29);;
+  
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
     height: 350px;
     left: 0;
@@ -559,13 +560,13 @@ html {
   }
   
   .pricing-header {
-    color: #888;
+    color: rgb(172, 150, 29);
     font-weight: 600;
     letter-spacing: 1px;
   }
   
   .pricing-features {
-    color: #016FF9;
+    color: rgb(172, 150, 29);;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 50px 0 25px;
@@ -583,7 +584,7 @@ html {
   }
   
   .pricing-price {
-    color: #016FF9;
+    color: rgb(172, 150, 29);
     display: block;
     font-size: 32px;
     font-weight: 700;
