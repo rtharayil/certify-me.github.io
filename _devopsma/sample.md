@@ -16,7 +16,7 @@ advCTALink: https://www.tcs.com/content/dam/tcs/investor-relations/financial-sta
 advBGImagelink: https://pbs.twimg.com/media/D95h8S9XYAIIwXg?format=jpg
 contactCompanyName: TCS 
 
-CTAText :  Find out how we are helping firms navigate in the new 
+CTAText :  Read TCS's report on Business 4.0 
 
 contactMsg: Give us a call or send us an email and we will get back to you as soon as possible!
 contactPh_number: +91-8000080000
