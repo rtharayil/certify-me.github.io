@@ -13,9 +13,9 @@ advTitle2: Learn from the comfort of your home
 advTitle2: 72+ hours of the instructor-led, live , hands-on workshop
 advCTAName: Download E-Book 
 advCTALink: https://www.splunk.com/en_us/form/5-foundational-devops-practices.html
-advBGImagelink: https://certifyme.online/img/portfolio/splunk.jpg
+advBGImagelink: https://certifyme.online/img/portfolio/splunk.jpeg
 contactCompanyName: Splunk 
-brandLogo: https://certifyme.online/img/portfolio/splunklogo.jpg
+brandLogo: https://certifyme.online/img/portfolio/splunklogo.jpeg
 brandMessage : As your organizations progresses through its DevXOps journey, what are the best practices that successful teams use that you should follow? Discover what separates successful DevXOps teams from those that fail, and learn the next steps to take on your DevXOps journey
 CTAText :  Download our E-Book to learn more
 
