@@ -1,22 +1,36 @@
 <section id="CTA">
     <div class="container">
-        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
-            <h4>{{page.BannerText}}</h4>
-            <div class="service-box1">
-                <img src="{{page.advBGImagelink}}" alt="{{page.BannerText}}" style="width:100%">
+        <div class="row">
+            <div class=" col-xs-12  text-left">
+                {% if page.brandLogo contains "http" %}
+                <div class=" col-xs-2">
+                    <img src="{{page.brandLogo}}" alt="{{page.contactCompanyName}}"
+                        style="max-width:100px ; max-height: 100px;">
+                </div>
+                {% endif %}
+                <div class=" col-xs-10">
+                    <h4>{{page.brandMessage}}</h4>
+                </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
+                <h4>{{page.BannerText}}</h4>
+                <div class="service-box1">
+                    <img src="{{page.advBGImagelink}}" alt="{{page.BannerText}}" style="width:100%">
+                </div>
 
 
-            <p>.</p>
+
+            </div>
         </div>
 
 
-
         <div class="row">
-            <div class="col-lg-9 text-center">
+            <div class="col-lg-8 text-center">
                 <h3>{{page.CTAText}}</h3>
             </div>
-            <div class="col-lg-3 text-center">
+            <div class="col-lg-4 text-center" style="margin-top: 5Px;">
 
                 <a href="{{page.advCTALink}}" class="btn btn-primary btn-xl page-scroll">{{page.advCTAName}}</a>
             </div>
@@ -25,47 +39,47 @@
         <hr>
         <div class="row">
             <div class="col-lg-12 text-left">
-              
-                    {% if page.contactPh_number != "nul" %}
-                    <div class="col-lg-4 text-center">
-                        
+
+                {% if page.contactPh_number != "nul" %}
+                <div class="col-lg-4 text-center">
 
 
-                            <a href="#">
-                                <i class="fa fa-phone-square fa-1x wow bounceIn" data-wow-delay=".1s">
-                                    {{ page.contactPh_number }}</i>
 
-                            </a>
-                        
-                    </div>
-                    {% endif %}
-                    {% if page.contactEmail != "nul" %}
-                    <div class="col-lg-4 text-center">
-                        
+                    <a href="#">
+                        <i class="fa fa-phone-square fa-1x wow bounceIn" data-wow-delay=".1s">
+                            {{ page.contactPh_number }}</i>
 
-                            <a href="mailto:{{ page.contactEmail }}">
-                                <i class="fa fa-envelope-o fa-1x wow bounceIn" data-wow-delay=".1s">
-                                    {{ page.contactEmail }}</i>
+                    </a>
 
-                            </a>
+                </div>
+                {% endif %}
+                {% if page.contactEmail != "nul" %}
+                <div class="col-lg-4 text-center">
 
-                       
-                    </div>
-                    {% endif %}
-                    {% if page.contactCompanyWebSiteLink != "nul" %}
-                    <div class="col-lg-4 text-center">
-                       
 
-                            <a href="https://{{ page.contactCompanyWebSiteLink }}">
-                                <i class="fa fa-link fa-1x wow bounceIn" data-wow-delay=".1s">
-                                    {{ page.contactCompanyWebSiteLink }}</i>
+                    <a href="mailto:{{ page.contactEmail }}">
+                        <i class="fa fa-envelope-o fa-1x wow bounceIn" data-wow-delay=".1s">
+                            {{ page.contactEmail }}</i>
 
-                            </a>
+                    </a>
 
-                       
-                    </div>
-                    {% endif %}
-                
+
+                </div>
+                {% endif %}
+                {% if page.contactCompanyWebSiteLink != "nul" %}
+                <div class="col-lg-4 text-center">
+
+
+                    <a href="https://{{ page.contactCompanyWebSiteLink }}">
+                        <i class="fa fa-link fa-1x wow bounceIn" data-wow-delay=".1s">
+                            {{ page.contactCompanyWebSiteLink }}</i>
+
+                    </a>
+
+
+                </div>
+                {% endif %}
+
             </div>
         </div>
 

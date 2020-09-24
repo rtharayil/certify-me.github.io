@@ -11,16 +11,17 @@ certificatePath: devopsma/master.jpg
 advTitle1: www.quadralogics.com
 advTitle2: Learn from the comfort of your home
 advTitle2: 72+ hours of the instructor-led, live , hands-on workshop
-advCTAName: Download Report 
-advCTALink: https://www.tcs.com/content/dam/tcs/investor-relations/financial-statements/2018-19/ar/annual-report-2018-2019.pdf
-advBGImagelink: https://pbs.twimg.com/media/D95h8S9XYAIIwXg?format=jpg
-contactCompanyName: TCS 
-
-CTAText :  Read TCS's report on Business 4.0 
+advCTAName: Download E-Book 
+advCTALink: https://www.splunk.com/en_us/form/5-foundational-devops-practices.html
+advBGImagelink: https://certifyme.online/img/portfolio/splunk.jpg
+contactCompanyName: Splunk 
+brandLogo: https://certifyme.online/img/portfolio/splunklogo.jpg
+brandMessage : As your organizations progresses through its DevXOps journey, what are the best practices that successful teams use that you should follow? Discover what separates successful DevXOps teams from those that fail, and learn the next steps to take on your DevXOps journey
+CTAText :  Download our E-Book to learn more
 
 contactMsg: Give us a call or send us an email and we will get back to you as soon as possible!
 contactPh_number: +91-8000080000
-contactEmail: info@tcs.com
-contactCompanyWebSiteLink: www.tcs.com
+contactEmail: info@splunk.com
+contactCompanyWebSiteLink: www.splunk.com
 ---
  <A write-up about the event and why are you awarding this certificate in less than 50  words >
