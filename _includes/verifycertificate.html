@@ -12,17 +12,17 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-center">
+            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-left">
                 <div class="service-box1">
 
-                    <h4>Issued By: {{page.issuedBy }} </h4>
-                    <h4> Issuing institution: {{page.issuedInstitute}}</h4>
-                    <h4>Date of issue: {{page.dateOfIssue}} </h4>
-                    <h4>Program name : {{page.program}}</h4>
+                    <h4>Issued By : <strong>{{page.issuedBy }}</strong> </h4>
+                    <h4>Institution : <strong>{{page.issuedInstitute}}</strong></h4>
+                    <h4>Date of issue: <strong>{{page.dateOfIssue}} </h4>
+                    <h4>Program : <strong>{{page.program}}</strong></h4>
                     <hr class="primary">
-                    <div class="team-content text-center">{{ page.content }}</div>
+                    <div class="team-content text-center"><h5>{{ page.content }}<h5></div>
                     <div class="team-social">
-                        <div class="team-social-block">
+                        <div class="team-social-block text-center">
                             <i class="fa fa-4x fa-graduation-cap wow bounceIn text-primary" data-wow-delay=".3s"></i>
                         </div>
                     </div>
@@ -36,13 +36,16 @@
                 <div class="text-center">
 
 
-                    
+                    <a style = "padding-left: 5px;" href="../img/certificate/{{page.certificatePath }}" download="certificate">
+                        <i class="fa fa-download  " data-wow-delay=".1s"></i>
+                      </a>
+                      
 
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://certifyme.online/{{page.url}}"><i class="fa fa-facebook-square  " data-wow-delay=".1s"></i></a>
-                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://certifyme.online/{{page.url}}&title=&summary=&source="><i class="fa fa-linkedin-square  " data-wow-delay=".1s"></i></a>
-                        <a href="https://twitter.com/home?status=https://certifyme.online/{{page.url}} "><i class="fa fa-twitter-square  " data-wow-delay=".1s"></i></a>
-                            <a href="https://pinterest.com/pin/create/button/?url=https://certifyme.online/{{page.url}}&media=&description="><i class="fa fa-pinterest-square " data-wow-delay=".1s"></i></a>
-                            <a href="mailto:info@example.com?&subject=&body=https://certifyme.online/{{page.url}} "><i class="fa  fa-envelope " data-wow-delay=".1s"></i></a>
+                        <a  style = "padding-left: 5px;" href="https://www.facebook.com/sharer/sharer.php?u=https://certifyme.online/{{page.url}}"></a>
+                        <a style = "padding-left: 5px;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://certifyme.online/{{page.url}}&title=&summary=&source="><i class="fa fa-linkedin-square  " data-wow-delay=".1s"></i></a>
+                        <a style = "padding-left: 5px;" href="https://twitter.com/home?status=https://certifyme.online/{{page.url}} "><i class="fa fa-twitter-square  " data-wow-delay=".1s"></i></a>
+                            <a style = "padding-left: 5px;" href="https://pinterest.com/pin/create/button/?url=https://certifyme.online/{{page.url}}&media=&description="><i class="fa fa-pinterest-square " data-wow-delay=".1s"></i></a>
+                            <a style = "padding-left: 5px;" href="mailto:info@example.com?&subject=&body=https://certifyme.online/{{page.url}} "><i class="fa  fa-envelope " data-wow-delay=".1s"></i></a>
                         </div>
             </div>
         </div>
