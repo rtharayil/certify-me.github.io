@@ -15,14 +15,14 @@ defaults:
       type: agilencr2020
     values: 
       issuedBy: Ajay Kabra
-      issuedInstitute: AgileNCR2020
-      dateOfIssue: 29 Nov 2020
-      program: Agile NCR
+      issuedInstitute: Agile NCR
+      dateOfIssue: 29 November 2020
+      program: AgileNCR20
       advCTAName: Listen Now
       advCTALink: https://youtu.be/ZwPNe2vWXfE
       CTAText: Listen, Share and Subscribe to AgileCast
-      advBGImagelink: https://certifyme.online/img/cert/AgileNCR/ranjiththarayil_4ee3d.png
-      brandLogo: https://certifyme.online/img/cert/AgileNCR/banner.jpeg
+      advBGImagelink: https://certifyme.online/img/cert/agilencr2020/banner.jpeg 
+      brandLogo: https://certifyme.online/img/cert/agilencr2020/logo.jpg
       brandMessage: AgileCast ,India's premiere podcast on Agile led technologies. Sharing knowledge is in Xebia's DNA and staying true to this value, practitioners from XACT (Xebia Agile Consulting and Transformation) share their experience and knowledge on current and trending topics related to Agile on AgileCast. A podcast dedicated to science and practice of Agile
       contactPh_number: +31 (0)35 538 1921
       contactEmail: info@xebia.com
