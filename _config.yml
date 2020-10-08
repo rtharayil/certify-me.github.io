@@ -14,10 +14,10 @@ defaults:
       path: ""
       type: agilencr2020
     values: 
-      issuedBy: Ajay Kabra
-      issuedInstitute: Agile NCR
+      issuedBy: Agile NCR 2020 Program Committee
+      issuedInstitute: www.agilencr.org
       dateOfIssue: 29 November 2020
-      program: AgileNCR20
+      program: AgileNCR 2020
       advCTAName: Listen Now
       advCTALink: https://youtu.be/ZwPNe2vWXfE
       CTAText: Listen, Share and Subscribe to AgileCast
