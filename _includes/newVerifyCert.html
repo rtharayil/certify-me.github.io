@@ -42,10 +42,13 @@
                       
 
                         <a  style = "padding-left: 5px;" href="https://www.facebook.com/sharer/sharer.php?u={{page.url}}"></a>
-                        <a style = "padding-left: 5px;" href="https://www.linkedin.com/shareArticle?mini=true&url={{page.url}}&title=&summary=&source="><i class="fa fa-linkedin-square  " data-wow-delay=".1s"></i></a>
+                        <a style = "padding-left: 5px;" href="https://www.linkedin.com/shareArticle?mini=true&url={{page.url}}&title=&summary= {{page.program}} - This certificate is issued to {{page.issuedTo }}&source="><i class="fa fa-linkedin-square  " data-wow-delay=".1s"></i></a>
                         <a style = "padding-left: 5px;" href="https://twitter.com/home?status={{page.url}} "><i class="fa fa-twitter-square  " data-wow-delay=".1s"></i></a>
-                            <a style = "padding-left: 5px;" href="https://pinterest.com/pin/create/button/?url={{page.url}}&media=&description="><i class="fa fa-pinterest-square " data-wow-delay=".1s"></i></a>
-                            <a style = "padding-left: 5px;" href="mailto:info@example.com?&subject=&body={{page.url}} "><i class="fa  fa-envelope " data-wow-delay=".1s"></i></a>
+                            <a style = "padding-left: 5px;" href="https://pinterest.com/pin/create/button/?url={{page.url}}&media=&description= {{page.program}} - This certificate is issued to {{page.issuedTo }}"><i class="fa fa-pinterest-square " data-wow-delay=".1s"></i></a>
+                            <a style = "padding-left: 5px;" href="mailto:info@example.com?&subject= {{page.program}} - This certificate is issued to {{page.issuedTo }} &body= {{page.program}} - This certificate is issued to {{page.issuedTo }} . Link to access this certificate {{page.url}} "><i class="fa  fa-envelope " data-wow-delay=".1s"></i></a>
+                        
+                            <a  style = "padding-left: 5px;"  href="whatsapp://send?text= {{page.program}} - This certificate is issued to {{page.issuedTo }} . Link to access this certificate {{page.url}}" data-action="share/whatsapp/share"><i
+                                class="fa fa-whatsapp  " data-wow-delay=".1s"></i> </a>
                         </div>
             </div>
         </div>

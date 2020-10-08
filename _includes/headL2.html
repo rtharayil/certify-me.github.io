@@ -1,19 +1,30 @@
 <head>
+    <link rel="icon" type="image/png" href="https://certifyme.online/img/logo.png" />
+    <meta charset="utf-8">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content= "This certificate is issued to {{page.issuedTo }}">
-    <meta name="author" content="Quadralogics">
+    <meta name="author" content="certifyMe.online">
     <meta name="robots" content="index, follow">
-    <meta property="og:image" content="https://certifyme.online/img/certificate/{{page.certificatePath }}">
+    <meta property="og:image" content="{{page.certificatePath }}">
     <meta property="og:title" content="{{page.program}}">
    
     <meta property="og:description" content="This certificate is issued to {{page.issuedTo }}">
     <meta property="og:url" content="https://certifyme.online/{{page.url}}">
-    <meta name= "twitter:card" content="summary_large_image">
+    <meta name= "twitter:card" content={{page.certificatePath }}>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="certifyMe.online">
 
-    <title>{{page.program}}</title>
+    <title>{{page.program}} - This certificate is issued to {{page.issuedTo }}</title>
+
+
+
+  
+
+
+
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
