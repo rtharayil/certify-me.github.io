@@ -1,5 +1,5 @@
 --- 
 layout : newCert 
-issuedTo: Vinay THM
+issuedTo: Phavithran K J
 certificatePath: https://certifyme.online/img/certificate/devopsma/PhavithranKJ.png
 --- 
