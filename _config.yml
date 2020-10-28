@@ -5,6 +5,8 @@ collections:
       output: true
     agilencr2020:
       output: true
+    samples:
+      output: true
 
 
  
