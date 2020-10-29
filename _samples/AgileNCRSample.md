@@ -2,10 +2,10 @@
 layout : newCert 
 issuedTo: Vikrant Singh
 certificatePath: https://certifyme.online/img/cert/agilencr2020/VikrantSingh_6c52f.png
-issuedBy: Agile NCR 2020 Program Committee
+issuedBy: Agile NCR 2019 Program Committee
 issuedInstitute: www.agilencr.org
-dateOfIssue: 29 November 2020
-program: AgileNCR 2020
+dateOfIssue: 29 November 2019
+program: AgileNCR 2019
 advCTAName: Listen Now
 advCTALink: https://youtu.be/ZwPNe2vWXfE
 CTAText: Listen, Share and Subscribe to AgileCast
