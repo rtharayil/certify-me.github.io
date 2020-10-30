@@ -54,11 +54,9 @@ defaults:
   
   - 
     scope: 
-      path: "_devopsma/Chef/Badge"
+      path: "_devopsma/Chef"
       type: devopsma
     values: 
-      issuedBy: Anju M Dominic
-      issuedInstitute: QUADRALOGICS
       program: Chef module in DevOps Master Architect Workshop
       text: This badge is issued to recognise the awardee for successfully completing all the requirements for the Chef Module in DevOps Master Architect Workshop, a comprehensive programme spanning 72 hrs/ 3 months.    
    
