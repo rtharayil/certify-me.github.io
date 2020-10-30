@@ -92,18 +92,18 @@ defaults:
       path: "_devopsma/CloudFormation"
       type: devopsma
     values: 
-      program: Chef module in DevOps Master Architect Workshop
-      text: This badge is issued to recognise the awardee for successfully completing all the requirements for the Chef Module in DevOps Master Architect Workshop, a comprehensive programme spanning 72 hrs/ 3 months.
+      program: CloudFormation module in DevOps Master Architect Workshop
+      text: This badge is issued to recognise the awardee for successfully completing all the requirements for the CloudFormation Module in DevOps Master Architect Workshop, a comprehensive programme spanning 72 hrs/ 3 months.
   - 
     scope: 
       path: "_devopsma/Terraform"
       type: devopsma
     values: 
-      program: Chef module in DevOps Master Architect Workshop
-      text: This badge is issued to recognise the awardee for successfully completing all the requirements for the Chef Module in DevOps Master Architect Workshop, a comprehensive programme spanning 72 hrs/ 3 months.
+      program: Terraform module in DevOps Master Architect Workshop
+      text: This badge is issued to recognise the awardee for successfully completing all the requirements for the Terraform Module in DevOps Master Architect Workshop, a comprehensive programme spanning 72 hrs/ 3 months.
   - 
     scope: 
-      path: "_devopsma/Git"
+      path: "_devopsma/Chef"
       type: devopsma
     values: 
       program: Chef module in DevOps Master Architect Workshop

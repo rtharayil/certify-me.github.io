@@ -2,6 +2,5 @@
 layout : newBadge  
 issuedTo: Appandaraj Ayadurai
 dateOfIssue: 30 October 2020
-certificatePath: git staus
-
+certificatePath: https://certifyme.online/img/certificate/devopsma/Badges/Nagios.png
 ---
