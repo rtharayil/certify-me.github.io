@@ -101,6 +101,7 @@ defaults:
     values: 
       program: Terraform module in DevOps Master Architect Workshop
       text: This badge is issued to recognise the awardee for successfully completing all the requirements for the Terraform Module in DevOps Master Architect Workshop, a comprehensive programme spanning 72 hrs/ 3 months.
+  
   - 
     scope: 
       path: "_devopsma/Chef"
@@ -108,6 +109,7 @@ defaults:
     values: 
       program: Chef module in DevOps Master Architect Workshop
       text: This badge is issued to recognise the awardee for successfully completing all the requirements for the Chef Module in DevOps Master Architect Workshop, a comprehensive programme spanning 72 hrs/ 3 months.    
+ 
   - 
     scope: 
       path: "" 
