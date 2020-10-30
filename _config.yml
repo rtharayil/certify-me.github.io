@@ -51,7 +51,17 @@ defaults:
       contactEmail: info@quadralogics.com
       contactCompanyWebSiteLink: www.quadralogics.com
       text: This certificate is issued to recognise the participant for successfully completing all the requirements for the DevOps Master Architect Workshop, a comprehensive programme spanning 72 hrs/ 3 months. 
-     
+  
+  - 
+    scope: 
+      path: "_devopsma/Chef/Badge"
+      type: devopsma
+    values: 
+      issuedBy: Anju M Dominic
+      issuedInstitute: QUADRALOGICS
+      program: Chef module in DevOps Master Architect Workshop
+      text: This badge is issued to recognise the awardee for successfully completing all the requirements for the Chef Module in DevOps Master Architect Workshop, a comprehensive programme spanning 72 hrs/ 3 months.    
+   
   - 
     scope: 
       path: "" 
