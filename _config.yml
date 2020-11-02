@@ -212,13 +212,7 @@ clinetsH : Sample Cetificate WebPage
 
 #Portfolio
 
-portfolioHeader : Learn from the Expert!
-portfolioHeaderA: Help us help you
-portfolioHeaderLink: https://www.youtube.com/embed/i2Vh6yUiZn4
-portfolioHeaderB : About your trainer 
-portfolioHeaderBN: Anju M Dominic
-portfolioHeaderB1: Founder | Speaker | Author
-portfolioHeaderB1C: Anju M Dominic is a well accredited professional corporate trainer and consultant in the field of DevOps . She has conducted over 70+ hands-on workshops across different product and service companies. She is also a trainer/author across various training companies including PluralSight, Edureka, KnowledgeHut, etc. She is currently the Principal consultant and founder of QuadraLogics, a boutique training/consulting firm. Anju is well known for her contributions to technical articles which includes two books and several whitepapers in the field of software engineering. She is also a regular speaker for many DevOps and Agile conferences.
+
 #Ribbon 
 RHead1: Get Certified Now
 RHead2: 
