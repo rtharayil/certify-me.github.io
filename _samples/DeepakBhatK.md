@@ -1,5 +1,5 @@
 ---
-layout: newCert
+layout: sampleCert
 
 issuedBy: Dr K Sankaran , Director 
 issuedInstitute: Justice K S Hegde Institute of Management (JKSHIM)
