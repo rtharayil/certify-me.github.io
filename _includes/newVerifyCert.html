@@ -4,8 +4,9 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h3 class="section-heading"> Certificate Credentials </h3>
-                <h3>This certificate is issued to <strong>{{page.issuedTo }}</strong> <h3>
-                        <hr class="primary" >
+                <h3>This certificate is issued to <strong>{{page.issuedTo }}</strong>
+                    <h3>
+                        <hr class="primary">
             </div>
         </div>
     </div>
@@ -18,50 +19,63 @@
             <div class="text-center">
 
 
-                <a style = "padding-left: 5px;" href="{{page.certificatePath }}" download="certificate">
-                    <i class="fa fa-download  " data-wow-delay=".1s"></i>
-                  </a>
-                  
+                <a style="padding-left: 5px;" href="{{page.certificatePath }}" download="certificate">
+                    <i class="fa fa-download  " data-wow-delay=".1s" style="color: gray;"></i>
+                </a>
 
-                    <a  style = "padding-left: 15px;" href="https://www.facebook.com/sharer/sharer.php?u=https://certifyme.online{{page.url}}"></a>
-                    <a style = "padding-left: 15px;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://certifyme.online{{page.url}}&title=&summary=&source="><i class="fa fa-linkedin-square  " data-wow-delay=".1s"></i></a>
-                    <a style = "padding-left: 15px;" href="http://twitter.com/share?text=This Certificate is issued to {{page.issuedTo }} &url=https://certifyme.online{{page.url}}&hashtags=certifymeonline" ><i class="fa fa-twitter-square  " data-wow-delay=".1s"></i></a>
-                        <a style = "padding-left: 15px;" href="https://pinterest.com/pin/create/button/?url=https://certifyme.online{{page.url}}&media=&description= {{page.program}} - This certificate is issued to {{page.issuedTo }}"><i class="fa fa-pinterest-square " data-wow-delay=".1s"></i></a>
-                        <a style = "padding-left: 15px;" href="mailto:info@example.com?&subject= {{page.program}} - This certificate is issued to {{page.issuedTo }} &body= {{page.program}} - This certificate is issued to {{page.issuedTo }} . Link to access this certificate https://certifyme.online{{page.url}} "><i class="fa  fa-envelope " data-wow-delay=".1s"></i></a>
-                    
-                        <a  style = "padding-left: 15px;"   href="whatsapp://send?text= Happy to share this achievement https://certifyme.online{{page.url}}" data-action="share/whatsapp/share"><i
-                            class="fa fa-whatsapp  " data-wow-delay=".1s"></i> </a>
 
-                            <a style= "padding: 15px"href="https://www.facebook.com/sharer/sharer.php?u=https://certifyme.online{{page.url}}"><i
-                                class="fa fa-facebook  " data-wow-delay=".1s"></i></a> 
-                            
-                            <a style = "padding-left: 15px;" href="http://www.tumblr.com/share/link?url=https://certifyme.online{{page.url}}&amp;title={{page.program}} - This certificate is issued to {{page.issuedTo }}" >
-                                <i class="fa fa-tumblr-square" data-wow-delay=".1s"></i> 
-                            </a>
-                            <a style = "padding-left: 15px;" href="javascript:;" onclick="window.print()">
-                                <i class="fa fa-print" data-wow-delay=".1s"></i>
-                            </a>
-                    </div>
+
+                <a style="padding-left: 15px;"
+                    href="https://www.linkedin.com/shareArticle?mini=true&url=https://certifyme.online{{page.url}}&title=&summary=&source="><i
+                        class="fa fa-linkedin-square  " data-wow-delay=".1s" style="color: gray;"></i></a>
+                <a style="padding-left: 15px;"
+                    href="http://twitter.com/share?text=This Certificate is issued to {{page.issuedTo }} &url=https://certifyme.online{{page.url}}&hashtags=certifymeonline"><i
+                        class="fa fa-twitter-square  " data-wow-delay=".1s" style="color: gray;"></i></a>
+                <a style="padding-left: 15px;"
+                    href="https://pinterest.com/pin/create/button/?url=https://certifyme.online{{page.url}}&media=&description= {{page.program}} - This certificate is issued to {{page.issuedTo }}"><i
+                        class="fa fa-pinterest-square " data-wow-delay=".1s" style="color: gray;"></i></a>
+                <a style="padding-left: 15px;"
+                    href="mailto:info@example.com?&subject= {{page.program}} - This certificate is issued to {{page.issuedTo }} &body= {{page.program}} - This certificate is issued to {{page.issuedTo }} . Link to access this certificate https://certifyme.online{{page.url}} "><i
+                        class="fa  fa-envelope " data-wow-delay=".1s" style="color: gray;"></i></a>
+
+                <a style="padding-left: 15px;"
+                    href="whatsapp://send?text= Happy to share this achievement https://certifyme.online{{page.url}}"
+                    data-action="share/whatsapp/share"><i class="fa fa-whatsapp  " data-wow-delay=".1s"
+                        style="color: gray;"></i> </a>
+
+                <a style="padding: 15px"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://certifyme.online{{page.url}}"><i
+                        class="fa fa-facebook  " data-wow-delay=".1s" style="color: gray;"></i></a>
+
+                <a style="padding-left: 15px;"
+                    href="http://www.tumblr.com/share/link?url=https://certifyme.online{{page.url}}&amp;title={{page.program}} - This certificate is issued to {{page.issuedTo }}">
+                    <i class="fa fa-tumblr-square" data-wow-delay=".1s" style="color: gray;"></i>
+                </a>
+
+            </div>
         </div>
         <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-left ">
-            <div class="service-box1 site-verify" style= "padding: 10px ">
-                
-             
+            <div class="service-box1 site-verify" style="padding: 10px ">
+
+
                 <h6>Issued By : <strong>{{page.issuedBy }}</strong> </h6>
                 <h6>Organization : <strong>{{page.issuedInstitute}}</strong></h6>
                 <h6>Date of issue: <strong>{{page.dateOfIssue}} </h6>
                 <h6>Event : <strong>{{page.program}}</strong></h6>
                 <hr class="primary">
-                <div class="team-content text-left"><h5>{{ page.text }}<h5></div>
+                <div class="team-content text-left">
+                    <h5>{{ page.text }}<h5>
+                </div>
                 <div class="team-social">
                     <div class="team-social-block text-center">
-                        <h3 class="text-left"> <i class="fa fa-2x wow bounceIn fa-check" style = "color: goldenrod;" data-wow-delay=".1s"></i> Verified</h3>
+                        <h3 class="text-left"> <i class="fa fa-2x wow bounceIn fa-check" style="color: goldenrod;"
+                                data-wow-delay=".1s"></i> Verified</h3>
                     </div>
                 </div>
             </div>
 
         </div>
-        
+
     </div>
 
 
