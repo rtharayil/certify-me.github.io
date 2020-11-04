@@ -100,16 +100,16 @@ aside {
                 > a,
                 > a:focus {
                     color: $theme-primary !important;
-                    background-color: transparent;
+                    background-color: white;
                     &:hover {
-                        background-color: transparent;
+                        background-color: white;
                     }
                 }
             }
         }
     }
     @media (min-width: 768px) {
-        background-color: transparent;
+        background-color: white;
         border-color: rgba(black, .3);
         .navbar-header .navbar-brand {
             color: rgba(black, .7);
@@ -320,6 +320,16 @@ header {
 {
   margin:0
 }
+
+.site-footer p
+{
+  color: gray;
+  font-size:12px;
+
+  margin-top:5px;
+  letter-spacing:2px
+}
+
 @media (max-width:991px)
 {
   .site-footer [class^=col-]
