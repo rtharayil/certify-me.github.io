@@ -1,4 +1,4 @@
 --- 
 layout : newBadge 
-issuedTo: Pallavai Sharrma
+issuedTo: Pallavai Sharma
 --- 
