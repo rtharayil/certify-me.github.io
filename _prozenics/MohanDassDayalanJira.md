@@ -17,5 +17,5 @@ contactMsg: Give us a call or send us an email and we will get back to you as so
 contactPh_number: +91- 9884061174
 contactEmail: info@prozenics.com
 contactCompanyWebSiteLink: www.prozenics.com
-test: This certificate is issued for completing all the assignments of Jira for Agile Project Management 
+text: This certificate is issued for completing all the assignments of Jira for Agile Project Management 
 ---
