@@ -115,6 +115,14 @@ defaults:
     values: 
       program: Docker module in DevOps Master Architect Workshop
       text: This badge is issued to recognise the awardee for successfully completing all the requirements for the Docker Module in DevOps Master Architect Workshop, a comprehensive programme spanning 72 hrs/ 3 months.
+  
+  - 
+    scope: 
+      path: "_devopsma/Jenkins"
+      type: devopsma
+    values: 
+      program: Jenkins module in DevOps Master Architect Workshop
+      text: This badge is issued to recognise the awardee for successfully completing all the requirements for the Jenkins Module in DevOps Master Architect Workshop, a comprehensive programme spanning 72 hrs/ 3 months.
 
   - 
     scope: 
