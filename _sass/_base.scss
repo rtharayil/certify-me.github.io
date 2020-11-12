@@ -783,4 +783,11 @@ body {
     opacity: 0.7;
   }
  
+  .client {
+    margin-top: 20px;
+  }
   
+  .client .thumbnail:hover {
+    background: rgba(255, 255, 255, 0);
+    -webkit-transform: scale(1.3);
+  }
