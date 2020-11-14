@@ -11,7 +11,10 @@ collections:
       output: true
     AACONF:
       output: true
+    EDU:
+      output: true
     
+
 
  
 defaults:
@@ -191,6 +194,35 @@ defaults:
       text: "Although times may be uncertain, one thing will remain true - there is power among people and there is power in an Agnostic Agile Mindset.
       Agnostic Agile is launching #AAConf, a global, online conference that will run through Asia Pacific, EMEA and the Americas. The theme for #AAConf 2020 is Business Agility."
       certificatePath: https://certifyme.online/img/cert/badge/AAConf2020Badge.png
+  - 
+    scope: 
+      path: ""
+      type: EDU
+    values: 
+      issuedBy: Program Committee
+      
+
+  - 
+    scope: 
+      path: "_EDU/SRM/IEC20"
+      type: EDU
+    values: 
+      issuedBy: Rohit, Agrwal
+      issuedInstitute: SRM Indian Energy Conference
+      dateOfIssue: 20-Nov-2020
+      program: SRM IEC 2020
+      advCTAName: Register Now
+      advCTALink: https://srmiec.co.in/
+      CTAText: Be a part of SRM IEC 2020
+      advBGImagelink: https://harshgoel.me/src/img/projects/SRMIEC.png
+      brandLogo: https://certifyme.online/EDU/SRM/IEC20/SRM.jpeg
+      brandMessage: SRM Indian Energy Conference
+      contactPh_number: +91-8334011404
+      contactEmail: iecsrm@gmail.com
+      contactCompanyWebSiteLink: www.srmiec.co.in
+      text: SRM Indian Energy Conference is a platform that works on the principles and guidlines of a Model United Nations. The 5th edition of SRMIEC will be conducted on the 20th-22nd November 2020 to involve, evolve and aggregate the ideas of the youth. A conference that exists to assist you in voicing your opinions to the world. A stage that provides you with the opportunity to meet like-minded individuals who have the passion to formulate actions towards a better and healthier future. SRM IEC is a conference where policies envisaging an efficient future are going to be drafted, a place where the foundations for a brighter tomorrow will be laid.
+      certificatePath: https://certifyme.online/EDU/SRM/IEC20/SRM.jpeg
+    
 
 # Site settings
 title: Certify Me  
