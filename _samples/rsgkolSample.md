@@ -3,7 +3,7 @@ layout : sampleBadge
 issuedTo: Arijit Sarbagna
 certificatePath: https://certifyme.online/img/cert/sample/RSGIK.png
 issuedBy: RSG Kolkata Program Committee
-issuedInstitute: www.agilencr.org
+issuedInstitute: RSG Kolkata 2021
 dateOfIssue: 15 November 2019
 program: Regional Scrum Gathering Kolkata 2021
 advCTAName: Register Now
