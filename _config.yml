@@ -211,12 +211,12 @@ defaults:
       issuedInstitute: SRM Indian Energy Conference
       dateOfIssue: 20-Nov-2020
       program: SRM IEC 2020
-      advCTAName: Register Now
-      advCTALink: https://srmiec.co.in/
-      CTAText: Be a part of SRM IEC 2020
-      advBGImagelink: https://harshgoel.me/src/img/projects/SRMIEC.png
-      brandLogo: https://certifyme.online/EDU/SRM/IEC20/SRM.jpeg
-      brandMessage: SRM Indian Energy Conference
+      advCTAName: Learn More
+      advCTALink: https://certifyme.online/
+      CTAText: Drive 10X more relevant traffic to your events page 
+      advBGImagelink: https://certifyme.online/img/whyCM.png
+      brandLogo: https://certifyme.online/img/logo.png
+      brandMessage: Certify Me is a "Trusted Digital Certificate Publishing Platform" . We empower large event producers to generate and publish digitized certificates/Badges for conferences, sports events, training, etc . Our mobile-friendly , verifiable , social-media complaint certificate web pages enable event visibility and reach.
       contactPh_number: +91-8334011404
       contactEmail: iecsrm@gmail.com
       contactCompanyWebSiteLink: www.srmiec.co.in
