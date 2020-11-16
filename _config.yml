@@ -13,6 +13,8 @@ collections:
       output: true
     EDU:
       output: true
+    RSGK:
+      output: true
     
 
 
@@ -221,7 +223,27 @@ defaults:
       contactEmail: iecsrm@gmail.com
       contactCompanyWebSiteLink: www.srmiec.co.in
       text: SRM Indian Energy Conference is a platform that works on the principles and guidlines of a Model United Nations. The 5th edition of SRMIEC will be conducted on the 20th-22nd November 2020 to involve, evolve and aggregate the ideas of the youth. A conference that exists to assist you in voicing your opinions to the world. A stage that provides you with the opportunity to meet like-minded individuals who have the passion to formulate actions towards a better and healthier future. SRM IEC is a conference where policies envisaging an efficient future are going to be drafted, a place where the foundations for a brighter tomorrow will be laid.
-      certificatePath: https://certifyme.online/EDU/SRM/IEC20/SRM.jpeg
+      certificatePath: https://certifyme.online/EDU/SRM/IEC20/SRM.jpeg\
+
+  - 
+    scope: 
+      path:  
+      type: RSGK
+    values: 
+      issuedBy: Arijit Sarbagna
+      issuedInstitute: Agile of East
+      dateOfIssue: 01-Nov-2020
+      program: Regional Scrum Gathering℠ Kolkata
+      advCTAName: Register Now
+      advCTALink: https://www.townscript.com/e/rsg-kolkata-2020
+      CTAText: Join us at Regional Scrum Gathering Kolkata 2021
+      advBGImagelink: https://certifyme.online/img/cert/RSGK/Banner.jpg
+      brandLogo: https://certifyme.online/img/cert/RSGK/logo.png
+      brandMessage: Regional Scrum Gathering Kolkata 2021
+      contactPh_number: nul
+      contactEmail: nul
+      contactCompanyWebSiteLink: https://rsgkol.zoneconnect.in/
+      text: Regional Scrum Gatherings℠ is an opportunity to connect with like-minded agile and Scrum practitioners, trainers, coaches, and enthusiasts. Hear amazing keynote speakers, participate in Coaching Clinics, CSP Lounges, Networking Sessions and more. And one also earns Scrum Education Units (SEUs) for attending. Regional Scrum Gatherings℠ are organized and hosted by local/regional agilists, so each one is truly a unique and valuable experience! And we are thankful to our distinguished speakers - who have kindly agreed to share their valuable time and experience with the event participants. This certificate/badge is a small token of appreciation towards their kind gesture.
     
 
 # Site settings
