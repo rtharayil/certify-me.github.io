@@ -227,7 +227,7 @@ defaults:
 
   - 
     scope: 
-      path:  
+      path:  ""
       type: RSGK
     values: 
       issuedBy: Arijit Sarbagna
