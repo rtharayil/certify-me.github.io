@@ -207,7 +207,7 @@ defaults:
       path: "_EDU/SRM/IEC20"
       type: EDU
     values: 
-      issuedBy: Rohit, Agrwal
+      issuedBy: Rohit, Agarwal
       issuedInstitute: SRM Indian Energy Conference
       dateOfIssue: 20-Nov-2020
       program: SRM IEC 2020
