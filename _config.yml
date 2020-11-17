@@ -223,7 +223,7 @@ defaults:
       contactEmail: iecsrm@gmail.com
       contactCompanyWebSiteLink: www.srmiec.co.in
       text: SRM Indian Energy Conference is a platform that works on the principles and guidlines of a Model United Nations. The 5th edition of SRMIEC will be conducted on the 20th-22nd November 2020 to involve, evolve and aggregate the ideas of the youth. A conference that exists to assist you in voicing your opinions to the world. A stage that provides you with the opportunity to meet like-minded individuals who have the passion to formulate actions towards a better and healthier future. SRM IEC is a conference where policies envisaging an efficient future are going to be drafted, a place where the foundations for a brighter tomorrow will be laid.
-      certificatePath: https://certifyme.online/EDU/SRM/IEC20/SRM.jpeg\
+      certificatePath: https://certifyme.online/EDU/SRM/IEC20/SRM.jpeg
 
   - 
     scope: 
