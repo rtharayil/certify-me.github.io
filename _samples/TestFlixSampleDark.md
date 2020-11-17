@@ -1,7 +1,7 @@
 --- 
 layout : sampleBadge 
 issuedTo: Geosley Andrades 
-certificatePath: https://certifyme.online/img/cert/sample/TFwhite.png
+certificatePath: https://certifyme.online/img/cert/sample/TFDark.png
 issuedBy: "#TESTFLIX Program Committee"
 issuedInstitute: THE TEST TRIBE
 dateOfIssue: 20-Nov-2019
