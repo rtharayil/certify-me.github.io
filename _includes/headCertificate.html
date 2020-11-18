@@ -1,27 +1,32 @@
 <section id="CTA">
     <div class="container site-verify">
-        <div class="row" style= "padding: 10px">
-            
-                {% if page.brandLogo contains "http" %}
-                <div class="  col-md-2 col-sm-6">
-                    <a  href="{{ page.contactCompanyWebSiteLink }}">
+        <div class="row" style="padding: 10px">
+
+            {% if page.brandLogo contains "http" %}
+            <div class="  col-md-2 col-sm-6">
+                <a href="{{ page.contactCompanyWebSiteLink }}">
                     <img src="{{page.brandLogo}}" alt="{{page.contactCompanyName}}"
                         style="max-width:100px ; max-height: 100px;">
-                    </a>
-                </div>
-                {% endif %}
-                <div class=" col-md-10 col-sm-6">
-                    <h4>{{page.brandMessage}}</h4>
-                </div>
-            
+                </a>
+            </div>
+            {% endif %}
+            <div class=" col-md-10 col-sm-6">
+                <h4>{{page.brandMessage}}</h4>
+            </div>
+
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
                 <h4>{{page.BannerText}}</h4>
+                {% if page.advBGImagelink != "nul" %}
                 <div class="service-box1">
                     <img src="{{page.advBGImagelink}}" alt="{{page.BannerText}}" style="width:100%">
                 </div>
-
+                {% else %}
+                <div class="service-box1">
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="{{page.advVedioLink}}?autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+                {% endif %}
 
 
             </div>
@@ -48,8 +53,9 @@
 
 
                     <a href="#">
-                        <i class="fa fa-phone-square fa-1x wow bounceIn" style= "color: gray;" data-wow-delay=".1s">
-                            <h5>{{ page.contactPh_number }} </h5></i>
+                        <i class="fa fa-phone-square fa-1x wow bounceIn" style="color: gray;" data-wow-delay=".1s">
+                            <h5>{{ page.contactPh_number }} </h5>
+                        </i>
 
                     </a>
 
@@ -60,15 +66,16 @@
 
 
                     <a href="mailto:{{ page.contactEmail }}">
-                        <i class="fa fa-envelope-o fa-1x wow bounceIn" style= "color: gray" data-wow-delay=".1s">
-                            <h5> {{ page.contactEmail }}</h5></i>
+                        <i class="fa fa-envelope-o fa-1x wow bounceIn" style="color: gray" data-wow-delay=".1s">
+                            <h5> {{ page.contactEmail }}</h5>
+                        </i>
 
                     </a>
 
 
                 </div>
                 {% endif %}
-                
+
 
             </div>
         </div>
