@@ -59,8 +59,10 @@
         <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-left ">
             <div class="service-box1 site-verify" style="padding: 10px ">
 
-
+                {% if page.issuedBy != "nul" %}
                 <h6>Issued By : <strong>{{page.issuedBy }}</strong> </h6>
+                {% endif %}
+                
                 <h6>Organization : <strong>{{page.issuedInstitute}}</strong></h6>
                 <h6>Date of issue: <strong>{{page.dateOfIssue}} </h6>
                 <h6>Event : <strong>{{page.program}}</strong></h6>
