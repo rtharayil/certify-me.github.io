@@ -266,9 +266,9 @@ defaults:
       issuedInstitute: THE TEST TRIBE
       dateOfIssue: 20-Nov-2020
       program: TESTFLIX - GLOBAL SOFTWARE TESTING BINGE
-      advCTAName: Register here
+      advCTAName: Register for FREE
       advCTALink: https://www.thetesttribe.com/testflix/
-      CTAText: Be a part of TestFlix ,Register for Free
+      CTAText: Be a part of TestFlix !
       advBGImagelink: https://certifyme.online/img/cert/sample/TestFlixBanner.png
       brandLogo: https://certifyme.online/img/cert/sample/TheTestTribe-Logo.png
       brandMessage: "Don't miss to be a part of #TestFlix the biggest global software testing binge featuring 100+ curated atomic talks, 400+ takeaways and an opportunity to network with thousands of testers across the globe."
