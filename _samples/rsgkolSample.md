@@ -11,7 +11,7 @@ advCTALink: https://www.accenture.com/in-en/services/applied-intelligence/mywiza
 advVedioLink : https://player.vimeo.com/video/253699758
 CTAText: Reimagine IT with myWizard
 advBGImagelink: nul
-brandLogo: https://assets.stickpng.com/thumbs/5847e7a1cef1014c0b5e480f.png
+brandLogo: https://180dc.org/wp-content/uploads/2014/04/accenture-logo-300x150.png
 brandMessage: Accenture myWizard® - Ready to reimagine IT? Maximize efficiency and deliver value with seamless intelligent automation powered by Accenture myWizard®.
 
 

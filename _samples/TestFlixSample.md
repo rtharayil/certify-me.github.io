@@ -2,7 +2,7 @@
 layout : sampleBadge 
 issuedTo: Anand Bagmar
 certificatePath: https://certifyme.online/CSIT/theTestTribe/img/cert/TestFlix/AnandBagmar_4250c.png
---- 
+
 issuedBy: "#TESTFLIX Program Committee"
 issuedInstitute: THE TEST TRIBE
 dateOfIssue: 20-Nov-2019
