@@ -1,6 +1,6 @@
 --- 
 layout : sampleBadge 
-issuedTo: Richard Edgren
+issuedTo: Rikard Edgren
 certificatePath: https://certifyme.online/img/cert/sample/EuroStarCert.jpeg
 issuedBy: EuroSTAR 2020 Awards Program Committee
 issuedInstitute: EuroSTAR Huddle 
@@ -15,5 +15,5 @@ brandMessage: "Become a member of #EuroSTARHuddle & avail of Europe’s largest 
 contactPh_number: 353 91 514 470
 contactEmail: hello@eurostarhuddle.com
 contactCompanyWebSiteLink: nul
-text: "The 2020 #EuroSTARConf Best Tutorial was awarded to Rikard Edgren – this is voted by the attendees and well deserved!"
+text: "The 2020 EuroSTARConf Best Tutorial was awarded to Rikard Edgren – this is voted by the attendees and well deserved!"
 --- 
