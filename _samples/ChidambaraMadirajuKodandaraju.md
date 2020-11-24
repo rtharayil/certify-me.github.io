@@ -20,4 +20,5 @@ contactPh_number: +91- 9884061174
 contactEmail: info@prozenics.com
 contactCompanyWebSiteLink: www.prozenics.com
 text: This certificate is issued for completing all the assignments of Coaching Style Leadership
+type: certificate 
 ---

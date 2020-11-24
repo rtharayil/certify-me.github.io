@@ -20,5 +20,6 @@ contactPh_number: +91 8258281465
 contactEmail: jkshim@nitte.edu.in
 contactCompanyWebSiteLink: www.jkshim.nitte.edu.in
 text: This certificate has issued for being a student for the MBA program of this institute during the period 2013 - 2015
+type: certificate 
 
 ---

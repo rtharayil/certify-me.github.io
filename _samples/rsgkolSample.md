@@ -19,4 +19,6 @@ contactPh_number: nul
 contactEmail: nul
 contactCompanyWebSiteLink: https://rsgkol.zoneconnect.in/
 text: This badge credential is issued as appreciation and recognition for being a speaker in Regional Scrum Gathering Kolkata 2021
+
+type: badgeCert 
 --- 

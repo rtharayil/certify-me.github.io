@@ -16,4 +16,5 @@ contactPh_number: +31 (0)35 538 1921
 contactEmail: info@xebia.com
 contactCompanyWebSiteLink: www.xebia.com
 text: This certificate is issued for participating in AgileNCR 2020 conference. AgileNCR is an annual Agile software development conference organized by Xebia and Agile enthusiasts of the NCR region.
+type:  certificate  
 --- 

@@ -16,4 +16,5 @@ contactEmail: ATAsupport@AgileTestingAlliance.org
 contactCompanyWebSiteLink: nul
 text: "#ATAGTR2020 Global Testing Conference is back again in its 5th edition with more fun and more learnings. Conference is scheduled for 12th and 13th December 2020. We have 2 full days with minimum 3 parallel tracks on both the days. 60+ speakers more than 40 Interactive sessions and Talks and Live Labs."
 certificatePath: https://certifyme.online/img/cert/sample/vd.png
+type: badge 
 --- 

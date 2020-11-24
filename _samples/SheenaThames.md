@@ -16,4 +16,5 @@ contactPh_number: nul
 contactEmail: info@goldobstetrics
 contactCompanyWebSiteLink: nul
 text: his annual conference is the most recent addition to a family of conferences focused on maternal child health and hosted by GOLD Learning Online Education. GOLD Learning has been hosting online conferences and other events since 2007 and reaches over 3200 delegates from 80 countries around the world every year. 
+type: badge 
 --- 

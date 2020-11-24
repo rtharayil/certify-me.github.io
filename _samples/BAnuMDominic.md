@@ -16,4 +16,5 @@ contactPh_number: +91-6362315334
 contactEmail: info@quadralogics.com
 contactCompanyWebSiteLink: www.quadralogics.com
 text: This certificate is issued to recognise the participant for successfully completing all the requirements for the DevOps Master Architect Workshop, a comprehensive programme spanning 72 hrs/ 3 months. 
+type: badge 
 --- 

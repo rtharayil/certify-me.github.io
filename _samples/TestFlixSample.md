@@ -17,4 +17,5 @@ contactPh_number: nul
 contactEmail: contact@thetesttribe.com
 contactCompanyWebSiteLink: https://www.thetesttribe.com/
 text: With TestFlix (bit.ly/testflix) we take the opportunity to get Software Testers from across the globe on one big virtual stage where speakers from maximum possible countries will share their knowledge through pre-recorded Atomic Talks. We will be hosting 100+ Speakers from 40+ Countries and provide their work with a global audience in the form of thousands of Testers while the audience experiences an amazing Software Testing Binge watch that goes for 15 hours and covers several time zones. Sit back, relax, and binge watch as we present to you the TestFlix. 
+type: badgeCert 
 --- 

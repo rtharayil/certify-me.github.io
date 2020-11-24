@@ -20,4 +20,5 @@ contactPh_number: +91- 9884061174
 contactEmail: info@prozenics.com
 contactCompanyWebSiteLink: www.prozenics.com
 test: This certificate is issued for completing all the assignments of AWS Certified Solutions Architect Associate programme.
+type: certificate 
 ---

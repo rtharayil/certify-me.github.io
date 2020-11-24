@@ -16,4 +16,5 @@ contactPh_number: 353 91 514 470
 contactEmail: hello@eurostarhuddle.com
 contactCompanyWebSiteLink: nul
 text: "The 2020 EuroSTARConf Best Tutorial was awarded to Rikard Edgren – this is voted by the attendees and well deserved!"
+type: badgeCert 
 --- 

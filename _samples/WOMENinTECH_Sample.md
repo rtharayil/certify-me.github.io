@@ -16,4 +16,5 @@ contactPh_number: +31 (0)35 538 1921
 contactEmail: info@womenintech-awards.com
 contactCompanyWebSiteLink: nul
 text: This badge is issued in honor of getting nominated in "Women in Tech 2020 Awards". It's time to bridge the gender gap in the technology industry by celebrating the remarkable​ women from around the world who innovate, inspire, and transform the sector as we know it. The 3rd edition of the Women in Tech Global Awards will reward incredible figures in a range of 7 categories.
+type: badge 
 --- 

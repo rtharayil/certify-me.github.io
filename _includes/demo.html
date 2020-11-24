@@ -4,57 +4,137 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h3 class="section-heading"> Samples </h3>
-            
-                    
-                        <hr class="primary">
+
+
+                <hr class="primary">
             </div>
         </div>
     </div>
 
-    <div class="container site-verify">
+    <div class=" site-verify">
+        <div class="col-lg-12 text-center">
+            <h4 class="section-heading"> 1 Badges Examples</h4>
+
+
+            <hr class="primary">
+        </div>
         <div class="row">
-        {% for sample in site.samples %}
-        <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 text-center">
-        <a style="padding-left: 5px;" href="https://certifyme.online/{{sample.url }}">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
-                    <div class="service-box1">
-                        <img src="{{sample.certificatePath }}" alt="Forest" style= "max-width:200px ; max-height: 100px;">
-                    </div>
-                    <div class="text-center">
+            
+                {% for sample in site.samples %}
+                {% if sample.type == "badge" %}
+                <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 text-center">
+                    <a style="padding-left: 5px;" href="https://certifyme.online/{{sample.url }}">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
+                                <div class="service-box1">
+                                    <img src="{{sample.certificatePath }}" alt="Forest"
+                                    style="max-width:200px ; max-height: 100px;">
+                                </div>
+                                <div class="text-center">
+
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-left">
+                                <div class="service-box1" style="padding: 10px">
+                                    <h5    style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" class="text-center"> <strong>{{sample.program}}</strong>
+                                    <h5>
 
 
+                                </div>
 
+                            </div>
 
-
-
-
-
-                    </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-left">
-                    <div class="service-box1" style="padding: 10px">
+                {% endif %}
+                {% endfor %}
+
+            
+        </div>
+    </div>
+
+    <div class=" site-verify">
+        <div class="col-lg-12 text-center">
+            <h4 class="section-heading"> 2 Certificate Examples</h4>
 
 
+            <hr class="primary">
+        </div>
+        <div class="row">
+            {% for sample in site.samples %}
+            {% if sample.type == "certificate" %}
+            <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 text-center">
+                <a style="padding-left: 5px;" href="https://certifyme.online/{{sample.url }}">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
+                            <div class="service-box1">
+                                <img src="{{sample.certificatePath }}" alt="Forest"
+                                    style="max-width:200px ; max-height: 100px;">
+                            </div>
+                            <div class="text-center">
 
-                        <p class="text-center"> <strong>{{sample.program}}</strong><p>
-                       
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-left">
+                            <div class="service-box1" style="padding: 10px">
+                                <h5    style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" class="text-center"> <strong>{{sample.program}}</strong>
+                                    <h5>
 
+
+                            </div>
+
+                        </div>
 
                     </div>
-
-                </div>
-
+                </a>
             </div>
-        </a>
+            {% endif %}
+            {% endfor %}
+
+        </div>
     </div>
-        {% endfor %}
+
+    <div class=" site-verify">
+        <div class="col-lg-12 text-center">
+            <h4 class="section-heading">3 BadgesCert Examples</h4>
+
+
+            <hr class="primary">
+        </div>
+        <div class="row">
+            {% for sample in site.samples %}
+            {% if sample.type == "badgeCert" %}
+            <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 text-center">
+                <a style="padding-left: 5px;" href="https://certifyme.online/{{sample.url }}">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
+                            <div class="service-box1">
+                                <img src="{{sample.certificatePath }}" alt="Forest"
+                                    style="max-width:200px ; max-height: 100px;">
+                            </div>
+                            <div class="text-center">
+
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-left">
+                            <div class="service-box1" style="padding: 10px">
+                                <h5    style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" class="text-center"> <strong>{{sample.program}}</strong>
+                                    <h5>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            {% endif %}
+            {% endfor %}
+
+        </div>
     </div>
-</section>
-
-
-
-
-
+   
 
 </section>
