@@ -3,9 +3,9 @@ layout : sampleBadge
 issuedTo: Myles Hopkins
 certificatePath: https://certifyme.online/img/cert/sample/4.png
 issuedBy: Agile20Reflect Festival Program Committee
-issuedInstitute: Agile20Refelect 
+issuedInstitute: Agile20Reflect 
 dateOfIssue: 02 February 2019
-program: Agile20Refelect Festival
+program: Agile20Reflect Festival
 advCTAName: Sign Up
 advCTALink: https://www.agile20reflect.org/
 CTAText: Have you signed up for the Agile20Refelect Festival?
