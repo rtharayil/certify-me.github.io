@@ -179,6 +179,16 @@ defaults:
 
   - 
     scope: 
+      path: "_ATAGTR2020/jury" 
+      type: ATAGTR2020
+    values: 
+      certificatePath: https://certifyme.online/ATAGTR2020/jury/ATAjuri.png
+      dateOfIssue: 24-Nov-2020
+      text: "#ATAGTR2020 is continuing the #AutomATAhon tradition that was started for the first time in 2017. This is the 4th edition of the competition. Meant for testing community to participate in an automation challenge (Hackathon)
+      In-fact the competition is meant not only for the testers but all the testing organizations too"
+
+  - 
+    scope: 
       path: "" 
       type: AACONF
     values: 
