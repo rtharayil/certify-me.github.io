@@ -1,5 +1,5 @@
 <section class="no-padding" id="portfolio">
-  <div class="container">
+  <div >
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">Our Clients </h2>
@@ -9,33 +9,34 @@
 
 
 
-    <div class="container">
+    <div>
 
 
 
-      <section class="no-padding" id="portfolio">
+      <section  id="portfolio">
 
-        <div  class="client">
-         
-            {% for client in site.data.clients %}
+        <div class="client">
 
-            <div class="col-lg-2 col-sm-6 text-center">
+          {% for client in site.data.clients %}
 
+          <div class="col-lg-2 col-sm-3 text-center">
+ 
+            
+
+            <img class="img-responsive" src="{{client.logo}}" alt=""  style="max-width:150px ; max-height: 100px;"></img>
            
-                <img class="img-responsive" src="{{client.logo}}"  alt=""
-                  >
-              
 
-            </div>
 
-            {% endfor %}
+          </div>
+
+          {% endfor %}
 
 
 
 
 
 
-         
+
         </div>
       </section>
 
