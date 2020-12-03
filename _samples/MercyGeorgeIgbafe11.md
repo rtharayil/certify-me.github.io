@@ -1,7 +1,7 @@
 --- 
 layout : sampleBadge 
 issuedTo: Mercy George Igbafe
-certificatePath: https://certifyme.online/img/cert/sample/13.png
+certificatePath: https://certifyme.online/img/cert/sample/11.png
 issuedBy: Agile20Reflect Festival Program Committee
 issuedInstitute: Agile20Reflect 
 dateOfIssue: 01 December 2020
