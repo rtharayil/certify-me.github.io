@@ -242,10 +242,10 @@ defaults:
       path: "_EDU/JIM/EAbhyudaya"
       type: EDU
     values: 
-      issuedBy: Dr. Daneshwar, Sharma
-      issuedInstitute: Jaipuria Institute of Management, Jaipur
+      issuedBy: "Dr. Daneshwar, Sharma"
+      issuedInstitute: "Jaipuria Institute of Management, Jaipur"
       dateOfIssue: 05-Dec-2020
-      program: E-Abhyudaya
+      program: "E-Abhyudaya"
       advCTAName: Know More
       advCTALink: https://www.instagram.com/ecc_jaipuria/
       CTAText: E-Abhyudaya, Jaipuria Institute of Management 
@@ -255,8 +255,7 @@ defaults:
       contactPh_number: nul
       contactEmail: nul
       contactCompanyWebSiteLink: 	https://www.jaipuria.ac.in/abhyudaya/
-      text: "An expression for excellence, Abhyudaya is a platform and opportunity for individuals to transcend the ordinary and ride on the waves of creativity and knowledge. This E-fest has a plethora of carefully curated events, all in line with this year’s theme, which embraces the blend of theoretical and applied knowledge, a consistent demand of the contemporary world. Our goal is to bring bright minds, from all fields of life, together to ignite minds, foster learning and to ultimately kickstart a thought process.
-      We are awarding this badge to applaud his/ her consistent hard work and never dying spirit."
+      text: "An expression for excellence, Abhyudaya is a platform and opportunity for individuals to transcend the ordinary and ride on the waves of creativity and knowledge. This E-fest has a plethora of carefully curated events, all in line with this year’s theme, which embraces the blend of theoretical and applied knowledge, a consistent demand of the contemporary world. Our goal is to bring bright minds, from all fields of life, together to ignite minds, foster learning and to ultimately kickstart a thought process.We are awarding this badge to applaud his/ her consistent hard work and never dying spirit."
       certificatePath: https://certifyme.online/EDU/JIM/EAbhyudaya/img/badge.png
 
   - 
