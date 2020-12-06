@@ -242,13 +242,13 @@ defaults:
       path: "_EDU/JIM/EAbhyudaya"
       type: EDU
     values: 
-      issuedBy: "Dr. Daneshwar, Sharma"
+      issuedBy: "Dr. Daneshwar Sharma (Dean of Student Affairs)"
       issuedInstitute: "Jaipuria Institute of Management, Jaipur"
       dateOfIssue: 05-Dec-2020
       program: "E-Abhyudaya"
       advCTAName: Know More
       advCTALink: https://www.instagram.com/ecc_jaipuria/
-      CTAText: E-Abhyudaya, Jaipuria Institute of Management 
+      CTAText: E-Abhyudaya, Jaipuria Institute of Management , Jaipur
       advBGImagelink: https://certifyme.online/EDU/JIM/EAbhyudaya/img/banner.jpg
       brandLogo: https://certifyme.online/EDU/JIM/EAbhyudaya/img/logo.jpeg
       brandMessage: "With 13 successful editions under it's belt, Jaipuria Institute of Management, Jaipur, present to you, its annual corporate fiesta 'ABHYUDAYA 2020', to be held from 11 – 12 December 2020, for the first time in Online Mode."
