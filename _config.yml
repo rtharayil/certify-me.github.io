@@ -257,6 +257,27 @@ defaults:
       contactCompanyWebSiteLink: 	https://www.jaipuria.ac.in/abhyudaya/
       text: "An expression for excellence, Abhyudaya is a platform and opportunity for individuals to transcend the ordinary and ride on the waves of creativity and knowledge. This E-fest has a plethora of carefully curated events, all in line with this year’s theme, which embraces the blend of theoretical and applied knowledge, a consistent demand of the contemporary world. Our goal is to bring bright minds, from all fields of life, together to ignite minds, foster learning and to ultimately kickstart a thought process.We are awarding this badge to applaud his/ her consistent hard work and never dying spirit."
       certificatePath: https://certifyme.online/EDU/JIM/EAbhyudaya/img/badge.png
+  - 
+    scope: 
+      path: "_EDU/JIM/EAbhyudaya/Jury"
+      type: EDU
+    values: 
+      text: "An expression for excellence, Abhyudaya is a platform and opportunity for individuals to transcend the ordinary and ride on the waves of creativity and knowledge. This E-fest has a plethora of carefully curated events, all in line with this year’s theme, which embraces the blend of theoretical and applied knowledge, a consistent demand of the contemporary world. Our goal is to bring bright minds, from all fields of life, together to ignite minds, foster learning and to ultimately kickstart a thought process."
+      certificatePath: https://certifyme.online/EDU/JIM/EAbhyudaya/img/Jury.png
+  - 
+    scope: 
+      path: "_EDU/JIM/EAbhyudaya/SeniorCoordinators"
+      type: EDU
+    values: 
+      text: "An expression for excellence, Abhyudaya is a platform and opportunity for individuals to transcend the ordinary and ride on the waves of creativity and knowledge. This E-fest has a plethora of carefully curated events, all in line with this year’s theme, which embraces the blend of theoretical and applied knowledge, a consistent demand of the contemporary world. Our goal is to bring bright minds, from all fields of life, together to ignite minds, foster learning and to ultimately kickstart a thought process. We are awarding this badge to applaud his/ her consistent hard work"
+      certificatePath: https://certifyme.online/EDU/JIM/EAbhyudaya/img/Senior_Coordinator.png
+  - 
+    scope: 
+      path: "_EDU/JIM/EAbhyudaya/Sponsor"
+      type: EDU
+    values: 
+      text: "An expression for excellence, Abhyudaya is a platform and opportunity for individuals to transcend the ordinary and ride on the waves of creativity and knowledge. This E-fest has a plethora of carefully curated events, all in line with this year’s theme, which embraces the blend of theoretical and applied knowledge, a consistent demand of the contemporary world. Our goal is to bring bright minds, from all fields of life, together to ignite minds, foster learning and to ultimately kickstart a thought process.We are awarding this badge to express our gratitude for being the sponsor."
+      certificatePath: https://certifyme.online/EDU/JIM/EAbhyudaya/img/Sponsor.png
 
   - 
     scope: 
