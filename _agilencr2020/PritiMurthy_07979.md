@@ -1,5 +1,0 @@
---- 
-layout : newCert 
-issuedTo: Priti Murthy 
-certificatePath: https://certifyme.online/img/cert/agilencr2020/PritiMurthy_07979.png
---- 
