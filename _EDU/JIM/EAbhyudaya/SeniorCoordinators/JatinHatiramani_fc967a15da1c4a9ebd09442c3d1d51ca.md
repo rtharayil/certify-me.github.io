@@ -1,4 +1,4 @@
 --- 
 layout : newBadge 
-issuedTo: Jatin Hatiramani
+issuedTo: Jatin Hathiyani
 --- 
