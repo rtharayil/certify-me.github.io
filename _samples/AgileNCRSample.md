@@ -1,11 +1,13 @@
 --- 
 layout : sampleCert 
-issuedTo: Vikrant Singh
-certificatePath: https://certifyme.online/img/cert/agilencr2020/VikrantSingh_6c52f.png
+
+issuedTo: Ranjith Tharayil 
+certificatePath: https://certifyme.online/img/cert/agilencr2020/RanjithTharayil_1884f.png
+
 issuedBy: Agile NCR 2019 Program Committee
 issuedInstitute: www.agilencr.org
-dateOfIssue: 29 November 2019
-program: AgileNCR 2019
+dateOfIssue: 29 November 2029
+program: AgileNCR 2020
 advCTAName: Listen Now
 advCTALink: https://youtu.be/ZwPNe2vWXfE
 CTAText: Listen, Share and Subscribe to AgileCast
