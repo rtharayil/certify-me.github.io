@@ -791,3 +791,25 @@ body {
     background: rgba(255, 255, 255, 0);
     -webkit-transform: scale(1.3);
   }
+
+  .buttonDemo {
+    background-color: black; /* Green */
+    border: none;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+   
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+ 
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  .buttonDemo:hover {
+    background-color: gold; /* Green */
+    color: black
+  }
+  
+  
