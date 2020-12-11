@@ -1,49 +1,92 @@
-<section class="no-padding" id="portfolio">
-  <div >
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Our Clients </h2>
-        <hr class="primary">
-      </div>
+
+
+  <section id="demos">
+    <!-- Stylesheets -->
+
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading">Our Clients </h2>
+      <hr class="primary">
     </div>
 
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="../assets/owlcarousel/assets/owl.carousel.min.css">
+    
 
 
-    <div>
 
 
 
-      <section  id="portfolio">
+    <!-- javascript -->
+    <script  src="../assets/vendors/jquery.min.js"></script>
+    <script defer src="../assets/owlcarousel/owl.carousel.js"></script>
+    <div class="row">
+      <div class="large-12 columns">
+        
 
-        <div class="client">
+
+        <script>
+          $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            no = $(window).width()/100
+           
+   
+            owl.owlCarousel({
+              items: no,
+              loop: true,
+              margin: 20,
+              autoplay: true,
+              autoplayTimeout: 1000,
+              autoplayHoverPause: true
+            });
+            
+            $('.play').on('click', function () {
+              owl.trigger('play.owl.autoplay', [1000])
+            })
+            $('.stop').on('click', function () {
+              owl.trigger('stop.owl.autoplay')
+            })
+          })
+        </script>
+      </div>
+    </div>
+  </section>
+  <section id="demos">
+    <!-- Stylesheets -->
+
+<style>
+  #owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+</style>
+
+    <!-- Owl Stylesheets -->
+ 
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="owl-carousel owl-theme owl-demo container">
 
           {% for client in site.data.clients %}
 
-          <div class="col-lg-2 col-sm-3 text-center">
- 
-            
+          <div class="item">
 
-            <img class="img-responsive" src="{{client.logo}}" alt=""  style="max-width:150px ; max-height: 100px;"></img>
-           
+
+
+            <img src="{{client.logo}}"     alt="Owl Image">
+
 
 
           </div>
 
           {% endfor %}
 
+          
 
-
-
-
-
-
-        </div>
-      </section>
-
-
+        
+      </div>
     </div>
-
-
-  </div>
-
-</section>
+  </section>
