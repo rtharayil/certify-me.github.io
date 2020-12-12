@@ -340,8 +340,8 @@ defaults:
       issuedInstitute: SYNAPSE QA
       dateOfIssue: 02-Dec-2020
       program: "SUPER READS @ 12.12"
-      advCTAName: Event Info
-      advCTALink: http://bit.ly/superreads
+      advCTAName: Read More
+      advCTALink: http://bit.ly/superreads-lounge
       CTAText: SUPER READS @ 12.12
       advBGImagelink: https://certifyme.online/CSIT/SYNAPSE/SYNAPSEQA2020/banner.png
       brandLogo: https://certifyme.online/CSIT/SYNAPSE/SYNAPSEQA2020/logo.png
