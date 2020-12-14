@@ -350,7 +350,12 @@ defaults:
       contactEmail: contact@synapse-qa.com
       contactCompanyWebSiteLink: https://synapse-qa.com
       text: "SUPER READS @ 12.12 is first of a kind Global Write-A-Thon which launches 12 best articles from 12 different authors simultaneously on 12.12 to recognise talented writers in the community. With this we aim to provide a chance to improve & encourage writing skills alongside opening an opportunity in global scene"
-
+  - 
+    scope: 
+      path: "_CSIT/SYNAPSE/SYNAPSEQA2020/award"
+      type: CSIT
+    values: 
+      dateOfIssue: 12-Dec-2020
 
   - 
     scope: 
