@@ -1,9 +1,7 @@
 --- 
 layout : sampleBadge 
-issuedTo: LINA ZUBYTE
+issuedTo: LINA  ZUBYTE
 certificatePath: https://certifyme.online/CSIT/SYNAPSE/SYNAPSEQA2020/img/cert/award/LINAZUBYTE_c2e4e.png
-layout : sampleBadge 
-certificatePath: https://certifyme.online/CSIT/SYNAPSE/SYNAPSEQA2020/ReviewerBadge.png
 issuedBy: "SUPER READS @ 12.12, PROGRAM COMMITTEE"
 issuedInstitute: SYNAPSE QA
 dateOfIssue: 02-Dec-2020
