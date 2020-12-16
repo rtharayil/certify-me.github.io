@@ -1,5 +1,5 @@
 --- 
 layout : newCert 
-issuedTo: Brijesh Deb
+issuedTo: Onkar Mirajkar
 certificatePath: https://certifyme.online/ATAGTR2020/img/cert/panel/26.png
 --- 
