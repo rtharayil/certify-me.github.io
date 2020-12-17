@@ -292,14 +292,14 @@ defaults:
       advCTAName: Register Now
       advCTALink: https://dare2compete.com/f/udgam-2021-the-annual-entrepreneurship-summit-of-iit-guwahati-indian-institute-of-technology-iit-guwahati-8349
       CTAText: "UDGAM 2021"
-      advBGImagelink: https://certifyme.online/IITG/UDGAM21/img/banner.jpg
+      advBGImagelink: https://certifyme.online/EDU/IITG/UDGAM21/img/banner.jpg
       brandLogo: https://certifyme.online/EDU/IITG/UDGAM21/img/logo.png
       brandMessage: "Welcome to UDGAM 2021. With a whole range of events lined up to foster innovation and a questioning mindset, along with the mammoth participation of hundreds of colleges and schools from all over the Nation, it is a summit that anyone would not want to miss. Our event is live on Dare2compete. To register and for more details, click on the Register Now button below:"
       contactPh_number: 7518002500
       contactEmail: edc@iitg.ac.in
       contactCompanyWebSiteLink: 	https://udgam-iitg.in/
       text: "UDGAM is the annual entrepreneurship event of IIT Guwahati where people interested in entrepreneurship meet, discuss, explore, share, debate, and have fun to spread the idea and spirit of entrepreneurship across the country and ignite the flame within. UDGAM is the flagship event of the Entrepreneurial Development Cell, IIT Guwahati. It was conceptualized to develop and spread the spirit of entrepreneurship among India's youth, thus earning itself the reputation of being the largest E-Summit in the north-east. This badge is issued to UDGAM Campus Ambassadors to feel that they are also part of the UDGAM 2021 Team."
-      certificatePath: https://certifyme.online/IITG/UDGAM21/img/badge.png
+      certificatePath: https://certifyme.online/EDU/IITG/UDGAM21/img/badge.png
   - 
     scope: 
       path:  ""
