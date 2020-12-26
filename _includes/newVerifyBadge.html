@@ -19,13 +19,15 @@
             </div>
             <hr class="primary">
             <div class="text-center">
-                <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
+                <!-- ShareThis BEGIN -->
+                <div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
 
-                 <!-- ShareThis BEGIN --><div class="sharethis-inline-reaction-buttons"></div><!-- ShareThis END -->
+                <!-- ShareThis BEGIN -->
+                <div class="sharethis-inline-reaction-buttons"></div><!-- ShareThis END -->
 
-                
 
-                
+
+
 
             </div>
         </div>
@@ -35,7 +37,7 @@
                 {% if page.issuedBy != "nul" %}
                 <h6>Issued By : <strong>{{page.issuedBy }}</strong> </h6>
                 {% endif %}
-                
+
                 <h6>Organization : <strong>{{page.issuedInstitute}}</strong></h6>
                 <h6>Date of issue: <strong>{{page.dateOfIssue}} </h6>
                 <h6>Event : <strong>{{page.program}}</strong></h6>
@@ -48,9 +50,14 @@
                         <h3 class="text-left"> <i class="fa fa-2x wow bounceIn fa-check" style="color: goldenrod;"
                                 data-wow-delay=".1s"></i> Verified</h3>
                     </div>
-                    <a style="padding-left: 5px;" href="{{page.certificatePath }}" download="certificate">
-                        <i class="fa fa-download  " data-wow-delay=".1s" style="color: gray;"></i>
-                    </a>
+                    <div>
+                        <a style="padding-right: 15px;" href="{{page.certificatePath }}" download="certificate">
+                            <i class="fa fa-download  " data-wow-delay=".1s" style="color: gray;"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name={{page.program | uri_escape}}&certUrl=https://certifyme.online/{{page.url}}
+                        &certId="><img src="https://download.linkedin.com/desktop/add2profile/buttons/en_US.png "
+                                alt="LinkedIn Add to Profile button"></a>
+                    </div>
                 </div>
             </div>
 
