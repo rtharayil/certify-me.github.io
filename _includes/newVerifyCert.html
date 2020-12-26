@@ -51,8 +51,7 @@
                         <a style="padding-right: 15px;" href="{{page.certificatePath }}" download="certificate">
                             <i class="fa fa-download  " data-wow-delay=".1s" style="color: gray;"></i>
                         </a>
-                        <a href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name={{page.program | uri_escape}}&certUrl=https://certifyme.online/{{page.url}}
-                        &certId="><img src="https://download.linkedin.com/desktop/add2profile/buttons/en_US.png "
+                        <a href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name={{page.program | uri_escape}}&certUrl={{'https://certifyme.online'| cgi_escape}}{{page.url|| cgi_escape}}&certId="><img src="https://download.linkedin.com/desktop/add2profile/buttons/en_US.png "
                                 alt="LinkedIn Add to Profile button"></a>
                     </div>
                 </div>
