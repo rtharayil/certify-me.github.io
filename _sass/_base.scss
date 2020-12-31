@@ -233,7 +233,23 @@ header {
   text-transform:uppercase;
   margin-top:5px;
   letter-spacing:2px
+
 }
+.site-verify h2
+{
+  color:black;
+ 
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px;
+  @media only screen and (max-width: 768px) {
+    font-size:20px;
+  }
+  @media only screen and (min-width: 768px) {
+    font-size:25px;
+  }
+}
+
   .site-verify h5
 {
   color:grey;
@@ -563,6 +579,12 @@ html {
     width: 100%;
   }
   
+  .containerBig {
+    margin: 0 auto;
+    padding-left: 20px ;
+    
+    width: 100%;
+  }
   .panel {
     background-color: #fff;
     border-radius: 10px;
