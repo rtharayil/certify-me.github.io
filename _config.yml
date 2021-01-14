@@ -427,10 +427,10 @@ defaults:
       path: "_CSIT/PMI/gameAThon2021"
       type: CSIT 
     values: 
-      issuedBy: "Program Committee , GAME-A-THON 2021"
-      issuedInstitute: Project Management Institute India
-      dateOfIssue: 11-Jan-2021
-      program: PMI GAME-A-THON 2021
+      issuedBy: "	PMI, South Asia"
+      issuedInstitute: Project Management Institute
+      dateOfIssue: 15-Jan-2021
+      program: PMI Project Management - Game-A-Thon
       advCTAName: DOWNLOAD NOW
       advCTALink: http://bit.ly/DSandAIPlaybook
       CTAText: The playbook is now available for FREE  
