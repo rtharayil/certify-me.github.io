@@ -431,12 +431,12 @@ defaults:
       issuedInstitute: Project Management Institute
       dateOfIssue: 15-Jan-2021
       program: PMI Project Management - Game-A-Thon
-      advCTAName: DOWNLOAD NOW
-      advCTALink: http://bit.ly/DSandAIPlaybook
-      CTAText: The playbook is now available for FREE  
-      advBGImagelink: https://www.pmi.org.in/images/HomeBanner_221220200519_PMI-NASSCOM-banner.jpg
+      advCTAName: Click Here
+      advCTALink: https://www.pmi.org/certifications/certified-associate-capm
+      CTAText: For more details about CAPM certifications 
+      advBGImagelink: https://certifyme.online/CSIT/PMI/img/banner.png
       brandLogo: https://www.pmi.org/-/media/pmi/other-images/logos/pmi_logo_ogshare.png
-      brandMessage: Project Management Institute South Asia in association with Nasscom Centre of Excellence - Data Science & Artificial Intelligence present Playbook for Project Management in Data Science and Artificial Intelligence Projects.
+      brandMessage: Project management is among the top skills that employers seek today from young career professionals like you. The CAPM® certification from Project Management Institute, lays the foundation for a lucrative project management career.
       contactPh_number: +91 124 4636 250
       contactEmail: customercare.india@pmi.org
       contactCompanyWebSiteLink: https://www.pmi.org/
