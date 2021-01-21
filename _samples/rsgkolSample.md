@@ -1,5 +1,5 @@
 --- 
-layout : sampleBadge 
+layout : 1To1Cert 
 issuedTo: Arijit Sarbagna
 certificatePath: https://certifyme.online/img/cert/sample/RSGIK.png
 issuedBy: RSG Kolkata Program Committee

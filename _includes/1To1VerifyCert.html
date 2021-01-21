@@ -1,0 +1,100 @@
+<section id="certificate">
+
+
+
+    <div class="containerBig row site-verify">
+
+
+
+        <div class="col-lg-8 col-md-8 col-xs-12 col-sm-12 text-center">
+
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home"><h6>Credential</h6></a></li>
+                <li><a data-toggle="tab" href="#menu1"><h6>Details</h6></a></li>
+
+
+            </ul>
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h6>This Credential is issued to <strong>{{page.issuedTo }}</strong></h6>
+                        <div class="service-box1">
+                            <img src="{{page.certificatePath }}" alt="certificate" style="width:100% ;    ">
+                        </div>
+                        <hr class="primary">
+                        <div class="text-center">
+
+
+
+
+                            <!-- ShareThis BEGIN -->
+                            <div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
+
+
+
+                        </div>
+                </div>
+                <div id="menu1" class="tab-pane fade text-left">
+                   
+                        <div class="service-box1 site-verify" style="padding: 10px ">
+
+                            <h6>This Credential is issued to <strong>{{page.issuedTo }}</strong></h6>
+                            {% if page.issuedBy != "nul" %}
+                            <h6>Issued By : <strong>{{page.issuedBy }}</strong> </h6>
+                            {% endif %}
+                            <h6>Organization : <strong>{{page.issuedInstitute}}</strong></h6>
+                            <h6>Date of issue: <strong>{{page.dateOfIssue}} </h6>
+                            <h6>Event : <strong>{{page.program}}</strong></h6>
+                            
+                            <div class="team-content text-left">
+                                <h5>{{ page.text }}<h5>
+                            </div>
+                            <div class="team-social">
+                                <div class="text-left">
+
+
+
+
+                                    <!-- ShareThis BEGIN -->
+                                    <div class="sharethis-inline-share-buttons">Share</div><!-- ShareThis END -->
+
+
+
+                                </div>
+                                <hr>
+                                <div class="team-social-block text-center">
+                                    <h3 class="text-left"> <i class="fa fa-2x wow bounceIn fa-check"
+                                            style="color: goldenrod;" data-wow-delay=".1s"></i> Verified</h3>
+                                </div>
+                                <div>
+                                    <a style="padding-right: 15px;" href="{{page.certificatePath }}"
+                                        download="certificate">
+                                        <i class="fa fa-download  " data-wow-delay=".1s" style="color: gray;"></i>
+                                    </a>
+                                    <a
+                                        href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name={{page.program | uri_escape}}&certUrl={{'https://certifyme.online'| cgi_escape}}{{page.url|| cgi_escape}}&certId="><img
+                                            src="https://download.linkedin.com/desktop/add2profile/buttons/en_US.png "
+                                            alt="LinkedIn Add to Profile button"></a>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 text-left ">
+            {% include 1To1HeadCertificate.html %}
+
+        </div>
+
+    </div>
+
+
+
+
+</section>
