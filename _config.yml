@@ -442,7 +442,25 @@ defaults:
       contactCompanyWebSiteLink: https://www.pmi.org/
       text: The Project Management GAME-A-THON is a contest to promote project management knowledge amongst students in an interactive engaging way. The game that is created through this contest is expected to augment existing methods of learning Project Management such as lectures, study materials, workshops and on the job training.
          
-      
+  - 
+    scope: 
+      path: "_CSIT/FRUCT2021"
+      type: CSIT 
+    values: 
+      issuedBy: "	Conference Chair"
+      issuedInstitute: FRUCT Association
+      dateOfIssue: 27-Jan-2021
+      program: 28th Conference of the Open Innovations Association FRUCT
+      advCTAName: Download PDF
+      advCTALink: https://fruct.org/sites/default/files/files/FRUCT29_CFP.pdf
+      CTAText:  CALL FOR PARTICIPATION   
+      advBGImagelink: https://www.eurodiaconia.org/wordpress/wp-content/uploads/2016/03/web-cards-01.jpg
+      brandLogo: https://fruct.org/sites/all/themes/fruct/images/fruct.png
+      brandMessage: The 29th IEEE Conference of the Open Innovations Association FRUCT is co-organized by FRUCT Association, Tampere University and IEEE Finland Section. The conference will be held in Tampere (Finland) on 12-14 May 2021.
+      contactPh_number: 
+      contactEmail: info@fruct.org
+      contactCompanyWebSiteLink: https://fruct.org/
+      text: FRUCT is a large Pan-European cooperation framework that promotes open innovations of academia and industry. FRUCT conference is a high-quality scientific event for meeting academia and business people and setting projects. The average conference is attended by over 150 participants representing 30+ member organizations and guests from other organizations. Participants comes from Russia, Finland, Italy, UK, Denmark, India, and other countries and industry is primary represented by Dell EMC, Nokia, MariaDB, Intel, Jolla, Open Mobile Platform, Skolkovo, etc.
       
       
       # Site settings
