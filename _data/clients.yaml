@@ -6,7 +6,7 @@
   logo: https://certifyme.online/img/cert/sample/logo.png
 
 - name: QUADRALOGICS
-  logo: https://prozenics.com/wp-content/uploads/2020/07/quadralogics-1.png
+  logo: https://certifyme.online/samples/img/ql.png
 
 - name: Agile20Reflect Festival
   logo: https://certifyme.online/img/cert/sample/reflectAgile.jpg
@@ -52,16 +52,15 @@
 - name: Clavent
   logo: https://certifyme.online/CSIT/clavent/testfest/img/Clavent.jpeg
 
-- name: IEEE
-  logo: https://www.fruct.org/sites/default/files/files/IEEE.gif
+
 
 - name: MTUCI
   logo:  https://www.fruct.org/sites/default/files/files/conference24/MTUCI_en.png
  
-- name: IEEEComSoc
-  logo:  https://www.fruct.org/sites/default/files/files/IEEE-ComSoc%20logo%20NEW%202016_0.jpg
+
 
 - name: FRUCT
   logo:  https://www.fruct.org/sites/all/themes/fruct/images/fruct.png
 
-
+- name: PMI
+  logo:  https://www.pmi.org.in/images/logo-new.jpg
