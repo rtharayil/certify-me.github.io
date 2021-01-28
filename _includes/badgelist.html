@@ -1,0 +1,92 @@
+
+
+  <section id="demos">
+    <!-- Stylesheets -->
+
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading">Sample Credentials </h2>
+      <hr class="primary">
+    </div>
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="../assets/owlcarousel/assets/owl.carousel.min.css">
+    
+
+
+
+
+
+    <!-- javascript -->
+    <script  src="../assets/vendors/jquery.min.js"></script>
+    <script defer src="../assets/owlcarousel/owl.carousel.js"></script>
+    <div class="row">
+      <div class="large-12 columns">
+        
+
+
+        <script>
+          $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            no = $(window).width()/300
+           
+   
+            owl.owlCarousel({
+              items: no,
+              loop: true,
+              margin: 20,
+              autoplay: true,
+              autoplayTimeout: 1000,
+              autoplayHoverPause: true
+            });
+            
+            $('.play').on('click', function () {
+              owl.trigger('play.owl.autoplay', [1000])
+            })
+            $('.stop').on('click', function () {
+              owl.trigger('stop.owl.autoplay')
+            })
+          })
+        </script>
+      </div>
+    </div>
+  </section>
+  <section id="demos">
+    <!-- Stylesheets -->
+
+<style>
+  #owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+</style>
+
+    <!-- Owl Stylesheets -->
+ 
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="owl-carousel owl-theme owl-demo container">
+
+          {% for badge in site.samples %}
+
+          <div class="item">
+
+
+            <a class="linkedin" target="_blank" href="https://certifyme.online/{{badge.url}}">
+            <img src="{{badge.certificatePath}}"     alt="badge"></a>
+
+
+
+          </div>
+
+          {% endfor %}
+
+          
+
+        
+      </div>
+    </div>
+  </section>
