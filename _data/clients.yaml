@@ -24,7 +24,7 @@
   logo: https://agnosticagile.org/imgs/Logo@2x.png
 
 - name: PROZENICS
-  logo: https://prozenics.com/wp-content/uploads/2020/02/prozenics-logo1.jpg
+  logo: http://prozenics.com/wp-content/uploads/2020/02/prozenics-logo1.jpg
 
 - name: Synapse
   logo: https://synapseqablog.files.wordpress.com/2020/03/synapse-qa-aqua.png
@@ -39,8 +39,7 @@
 
 
   
-- name: LEARNTOR
-  logo: https://miro.medium.com/max/306/1*VOVMT8WC2-MiigGE-WaO-w.png
+
 
 
 - name: Jaipuria Institute of Management
