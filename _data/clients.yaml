@@ -55,6 +55,8 @@
 
 - name: MTUCI
   logo:  https://www.fruct.org/sites/default/files/files/conference24/MTUCI_en.png
+  
+  
  
 
 
@@ -63,3 +65,11 @@
 
 - name: PMI
   logo:  https://www.pmi.org.in/images/logo-new.jpg
+
+- name: Seeding Kerala
+  logo: https://seedingkerala.com/seeding-logo.4d4e33e0.svg
+  
+- name: Seeding Kerala
+  logo: https://startupmission.kerala.gov.in/front_end/img/logo.svg
+  
+ 
