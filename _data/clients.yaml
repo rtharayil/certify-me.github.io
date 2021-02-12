@@ -23,8 +23,7 @@
 - name: Agnostic Agile
   logo: https://agnosticagile.org/imgs/Logo@2x.png
 
-- name: PROZENICS
-  logo: http://prozenics.com/wp-content/uploads/2020/02/prozenics-logo1.jpg
+
 
 - name: Synapse
   logo: https://synapseqablog.files.wordpress.com/2020/03/synapse-qa-aqua.png
@@ -71,5 +70,9 @@
   
 - name: Seeding Kerala
   logo: https://startupmission.kerala.gov.in/front_end/img/logo.svg
+  
+- name: A20
+  logo: https://www.my.certifyme.online/static/fileStore/img/13/14/logo.png
+
   
  
