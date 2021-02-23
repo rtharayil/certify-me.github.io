@@ -27,20 +27,20 @@
         <script>
           $(document).ready(function () {
             var owl = $('.owl-carousel');
-            no = $(window).width()/200
+            no = $(window).width()/250
            
    
             owl.owlCarousel({
               items: no,
               loop: true,
-              margin: 20,
+              margin: 10,
               autoplay: true,
-              autoplayTimeout: 1000,
+              autoplayTimeout: 2000,
               autoplayHoverPause: true
             });
             
             $('.play').on('click', function () {
-              owl.trigger('play.owl.autoplay', [1000])
+              owl.trigger('play.owl.autoplay', [1500])
             })
             $('.stop').on('click', function () {
               owl.trigger('stop.owl.autoplay')
