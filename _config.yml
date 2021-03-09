@@ -466,7 +466,7 @@ defaults:
       # Site settings
 title: Certify Me  
 email: info@quadralogics.com
-description: Your trusted Assessment and Certification Platform
+description: CertifyMe.Online is an end-to-end solution for creating, issuing, and managing your Digital Credentials
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 company: QuadraLogics
