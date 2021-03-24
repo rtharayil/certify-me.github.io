@@ -554,7 +554,7 @@ html {
   
   .backgroundPricing::after {
     content: '';
-    background: rgb(172, 150, 29);;
+    background: $theme-primary;
   
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
     height: 350px;
@@ -639,13 +639,13 @@ html {
   }
   
   .pricing-header {
-    color: rgb(172, 150, 29);
+    color: $theme-primary;
     font-weight: 600;
     letter-spacing: 1px;
   }
   
   .pricing-features {
-    color: rgb(172, 150, 29);;
+    color: $theme-primary;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 50px 0 25px;
@@ -663,7 +663,7 @@ html {
   }
   
   .pricing-price {
-    color: rgb(172, 150, 29);
+    color: $theme-primary;
     display: block;
     font-size: 32px;
     font-weight: 700;
