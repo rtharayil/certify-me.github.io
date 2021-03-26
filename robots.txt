@@ -1,0 +1,9 @@
+# Group 1
+User-agent: *
+Disallow: /AACONF/
+Disallow: /agilencr2020/
+Disallow: /CSIT/
+Disallow: /devopsma/
+Disallow: /prozenics/
+
+Sitemap: https://certifyme.online/sitemap.xml
