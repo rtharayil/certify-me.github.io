@@ -5,5 +5,10 @@ Disallow: /agilencr2020/
 Disallow: /CSIT/
 Disallow: /devopsma/
 Disallow: /prozenics/
+Disallow: /ATAGTR2020/
+Disallow: /EDU/
+Disallow: /RSGK/
+Disallow: /samples/
+
 
 Sitemap: https://certifyme.online/sitemap.xml
