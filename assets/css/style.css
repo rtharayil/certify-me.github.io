@@ -776,18 +776,18 @@ p {
     .header-hero-content {
       padding-top: 100px; } }
   .header-hero-content .header-sub-title {
-    font-size: 38px;
+    font-size: 28px;
     font-weight: 300;
     color: #fff; }
     @media (max-width: 767px) {
       .header-hero-content .header-sub-title {
-        font-size: 24px; } }
+        font-size: 20px; } }
     @media only screen and (min-width: 576px) and (max-width: 767px) {
       .header-hero-content .header-sub-title {
-        font-size: 30px; } }
+        font-size: 24px; } }
   .header-hero-content .header-title {
-    font-size: 38px;
-    font-weight: 700;
+    font-size: 34px;
+    font-weight: 600;
     color: #fff; }
     @media (max-width: 767px) {
       .header-hero-content .header-title {
