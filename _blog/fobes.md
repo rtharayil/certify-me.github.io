@@ -6,7 +6,7 @@ title: 36% of employees cite a lack of recognition as their primary reason for e
 
 abstract: lack of recognition is the single largest factor that later leads an employee to scout for other opportunities and eventually leading to attrition.
 topic: news
-imageLink: https://vidhyalayam.online/img/magazine/author.png
+imageLink: /img/blog/12.png
 featured: true
 ---
 

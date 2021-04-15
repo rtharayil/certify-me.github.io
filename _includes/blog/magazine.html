@@ -28,9 +28,10 @@
 
                             <img src="{{article.imageLink}}" alt="{{article.title}}"
                                 style="max-width:200px;max-height:200px;">
-                            <h4 class="services-title">{{article.title}}</h2>
+                                <p class="text">{{article.title}} </p>
                                 {% else %}
-                                <h4 class="services-title">{{article.title}}</h1>
+                                <p class="text">{{article.title}} </p>
+
                                     {% endif %}
 
 
@@ -42,8 +43,7 @@
 
 
                                     <p><strong>{{article.subTitle}}</strong></p>
-                                    <p class="text">{{article.abstract}} <strong> <a> >>read more</a> </strong></p>
-
+                                    
                         </div>
                     </div>
 

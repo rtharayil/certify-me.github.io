@@ -5,7 +5,7 @@ title: Are you still spending time manually issuing certificates and badges?
 
 abstract: Automating your credential issuing process could cut down your cost up to ~93%
 topic: news
-imageLink: https://vidhyalayam.online/img/magazine/author.png
+imageLink: /img/blog/10.png
 featured: true
 ---
 Automating your credential issuing process could cut down your cost up to ~93%

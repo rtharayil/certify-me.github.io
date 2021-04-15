@@ -5,7 +5,7 @@ title: Application for Digital Credential Sponsorship for your events
 
 abstract: Application for Digital Credential Sponsorship for your events
 topic: news
-imageLink: https://vidhyalayam.online/img/magazine/author.png
+imageLink: /img/blog/5.png
 featured: true
 ---
 Application for Digital Credential Sponsorship for your events
