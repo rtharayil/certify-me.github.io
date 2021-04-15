@@ -1,0 +1,17 @@
+---
+layout: blog
+title: Application for Digital Credential Sponsorship for your events
+
+
+abstract: Application for Digital Credential Sponsorship for your events
+topic: news
+imageLink: https://vidhyalayam.online/img/magazine/author.png
+featured: true
+---
+Application for Digital Credential Sponsorship for your events
+
+We at Certifyme.Online are looking to sponsor digital credentials to upcoming reputed events and conferences, Do reach fill out the below form if qualified our team will get in touch with you.
+
+About www.certifyme.online -We help conferences to automate their credential issuing process enabling them to maximize their online brand presence.
+
+https://lnkd.in/g9pyghc

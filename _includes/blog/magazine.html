@@ -1,0 +1,61 @@
+<section id="blog" class="services-area pt-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="section-title text-center pb-40">
+                    
+                    <h3 class="title">Blog</span></h3>
+                    <div class="line m-auto"></div>
+                </div> <!-- section title -->
+            </div>
+        </div> <!-- row -->
+        <div class="row justify-content-center">
+            {% for article in site.blog %}
+            <div class="col-lg-4 col-md-7 col-sm-8">
+
+
+
+                <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+
+
+
+
+
+
+                    <div onclick="location.href = '{{site.baseurl}}{{article.url}}';">
+                        <div class="row" style="margin: 5px; padding: 5px">
+                            {% if article.imageLink != "nil" %}
+
+                            <img src="{{article.imageLink}}" alt="{{article.title}}"
+                                style="max-width:200px;max-height:200px;">
+                            <h4 class="services-title">{{article.title}}</h2>
+                                {% else %}
+                                <h4 class="services-title">{{article.title}}</h1>
+                                    {% endif %}
+
+
+
+
+
+
+
+
+
+                                    <p><strong>{{article.subTitle}}</strong></p>
+                                    <p class="text">{{article.abstract}} <strong> <a> >>read more</a> </strong></p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div> <!-- single services -->
+            </div>
+            {% endfor %}
+
+        </div> <!-- row -->
+    </div> <!-- container -->
+</section>

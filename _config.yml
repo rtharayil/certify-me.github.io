@@ -17,6 +17,8 @@ collections:
       output: true
     CSIT:
       output: true
+    blog:
+      output: true
     
 
 
