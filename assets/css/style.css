@@ -848,6 +848,21 @@ p {
 /*===========================
       04.SERVICES css 
 ===========================*/
+
+
+@media (max-width: 767px) {
+  .text {
+    margin-left: 10px; } 
+
+    .section-title{
+      margin-left: 10px; } 
+    
+      .small{
+        width :50%
+      }
+  
+  }
+  
 .single-services {
   background-color: #fff;
   -webkit-box-shadow: 0px 5px 30px 0px rgba(167, 167, 167, 0.16);
