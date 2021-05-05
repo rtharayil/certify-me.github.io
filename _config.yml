@@ -19,6 +19,8 @@ collections:
       output: true
     blog:
       output: true
+    awards:
+      output: true
     
 
 
