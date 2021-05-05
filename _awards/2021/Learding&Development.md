@@ -12,7 +12,7 @@ HeadCTA: Nominate
 Why: <span>Why should I nominate myself or my team for the </span><br > HR and L & D Excellence  Awards 2021 <span>?</span>
 
 Why1H: Get Recognised Internationally  
-Why1: Our program reviews carefully handpick only less than  1% of the top HR & L &D professionals. To be recognized in the top one percentage means you are the best in the industry across the globe. Don't you deserve to be recognized for your hard work?  Nominate yourself and your team now.
+Why1: Our program handpick only less than 1% of the top HR & L &D professionals. To be recognized in the top one percentage means you are the best in the industry across the globe. Don't you deserve to be recognized for your hard work?  Nominate yourself and your team now.
 
 Why2H: Gain Better Visibility
 Why2: We promote all our awardees through our social media posts and channels across Linkedin, Facebook, Twitter,  Instagram, Blogpost, etc. Our subscribers all across the globe will have access to this content and this will help you gain more visibility and improve your personal / organization's brand. 
