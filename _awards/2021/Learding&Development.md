@@ -4,7 +4,7 @@ layout: dma
 logo : /img/awards/awardlogo.png
 
 Head1:  HR and L & D Excellence  <br > Awards 2021
-Head2:  <br > Nomination open! <br >Nominate yourself or your team
+Head2:  <br > Nomination are open! <br >Nominate yourself or your team
 Head3: <br >A platform to honour top 1% HR and L&D professionals <br > across the globe 
 BGImagelink: /img/awards/1.png
 HeadCTA: Nominate
