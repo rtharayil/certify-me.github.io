@@ -1,5 +1,5 @@
 ---
-layout: dma
+layout: award
 
 title: HR and L & D Excellence  Awards 2021
 
