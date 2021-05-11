@@ -27,7 +27,8 @@ Why3H: Earn a Digital Credential
 Why3: Earn a Verifiable Digital Credential as a proof of your achievement. The awarded digital credentials can be shared across various social media platforms and also can be added to your LinkedIn profile. You will also be allowed to use the badge , certificate in your resume and email signatures. 
 
 About: About <span> HR and L & D Excellence Awards 2021 </span>
-About1: CertifyMe "HR and L & D Excellence Awards 2021" is widely recognized across the corporate spectrum as the top honors for individual and team achievements in the domains of Human Resource and L&D. 
+About1: CertifyMe "HR and L & D Excellence Awards 2021" is widely recognized across the corporate spectrum as the top honors for individual and team achievements in the domains of Human Resource and L&D. All organizations, public and private, for profit and nonprofit, large and small may submit nominations.
+HR and L & D are key functions in any corporate firm, but unfortunately, professionals in this field of work are seldom recognized and often neglected to be appreciated for their selfless efforts.
 
 
 
