@@ -15,6 +15,24 @@ BGImagelink: /img/awards/1.png
 preview: /img/awards/12.png
 HeadCTA: Nominate
 
+criteria: Our expert panel on judges will evaluate each nomination primarily based on the below three criteria
+criteria1H: Stategic Innovation
+
+criteria1: Skills, knowledge, and experience can only be effectively utilized if encompassed with creativity. Nominees enhancing business performance with novel and different solutions while bidding farewell to yesterday’s methods will be recognized.
+
+criteria2H: Promotes Inclusivity
+criteria2: It is often important to provide actionable steps to improve diversity and inclusivity in one’s workplace rather than solely believe in the cause. Respectable candidates who have played a vital role in making the firm a comfortable, gender diverse, and culturally vast space for the workforce would gain points in this round.
+
+criteria3H: Overcomes Challenges 
+criteria3: An organization’s strongest assets are undoubtedly its workforce. From strategizing workforce planning, upskill training, improving employee engagement to increasing turnover rates the HR and L&D sectors of a company have to overcome key challenges during the COVID era. We at CertifyMe believe that the top 1 percent expertise in the same must be recognized and rewarded.
+
+category: HR / L&D Award Categories
+category1H: Finest L&D Strategy
+category2H: Individual Award HR/L&D
+category3H: Excellence in Workplace Culture & Talent Management
+category4H: Best L&D /HR Team of the Year
+category5H: Best Process Innovation in HR/ L&D
+
 Why: <span>Why should I nominate myself or my team for the </span><br > HR and L & D Excellence  Awards 2021 <span>?</span>
 
 Why1H: Get Recognised Internationally  
