@@ -15,7 +15,7 @@ BGImagelink: /img/awards/1.png
 preview: /img/awards/12.png
 HeadCTA: Nominate
 
-criteria: Our expert panel on judges will evaluate each nomination primarily based on the below three criteria
+criteria: Our expert panel of judges will evaluate each nomination primarily based on the below three criteria
 criteria1H: Stategic Innovation
 
 criteria1: Skills, knowledge, and experience can only be effectively utilized if encompassed with creativity. Nominees enhancing business performance with novel and different solutions while bidding farewell to yesterday’s methods will be recognized.
