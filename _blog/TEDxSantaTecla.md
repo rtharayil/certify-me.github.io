@@ -5,7 +5,7 @@ title: TEDxSantaTecla
 
 abstract: We are extremely proud and honored to be associated with  TEDxSantaTecla 
 topic: news
-imageLink: /img/blog/8.png
+imageLink: /img/blog/TEDxSantaTecla.png
 featured: true
 ---
 We are extremely proud and honored to be associated with  TEDxSantaTecla by enabling them with Digital Credentials for their upcoming events.
