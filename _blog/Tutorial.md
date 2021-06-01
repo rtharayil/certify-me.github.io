@@ -14,7 +14,7 @@ lessons:
 - { id: '557406258', title: 'Lesson 3 ,How can I issue Awards in bulk by uploading a CSV' }
 - { id: '557406616', title: 'Lesson 4 ,How to embed  verifiability to our credentials' }
 - { id: '557407036', title: 'Lesson 5 ,How To use Canva integration to design credential graphics  ' }
-- { id: 'nULGHtflR-o', title: 'Lesson 6 ,How to Customize a credential, like add a photo to a credential graphics ' }
+- { id: '557407341', title: 'Lesson 6 ,How to Customize a credential, like add a photo to a credential graphics ' }
 
 ---
 Video tutorials
