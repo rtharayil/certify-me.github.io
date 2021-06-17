@@ -3,7 +3,7 @@ layout: blog
 title: 𝗪𝗵𝗮𝘁 𝗮𝗿𝗲 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗿𝗲𝗱𝗲𝗻𝘁𝗶𝗮𝗹𝘀
 
 
-abstract:Few facts about digital badges and digital certificates
+abstract: Few facts about digital badges and digital certificates
 topic: news
 imageLink: https://unevoc.unesco.org/up/DigitalCredentialing.jpg
 featured: true
