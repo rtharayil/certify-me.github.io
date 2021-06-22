@@ -20,14 +20,14 @@ We are a SaaS-based Startup Based out of Bangalore India.
 * Link [https://certifyme.online/assets/images/logo21.png](https://certifyme.online/assets/images/logo21.png). 
 
 **Link to Logo for White background**
-![an image alt text](https://certifyme.online/assets/images/logo22.png "Logo for White background")
-Link [https://certifyme.online/assets/images/logo22.png](https://certifyme.online/assets/images/logo22.png). 
+* ![an image alt text](https://certifyme.online/assets/images/logo22.png "Logo for White background")
+* Link [https://certifyme.online/assets/images/logo22.png](https://certifyme.online/assets/images/logo22.png). 
 
 **Website**
-Link  [https://certifyme.online/](https://certifyme.online/assets/images/logo.svg). 
+* Link  [https://certifyme.online/](https://certifyme.online/assets/images/logo.svg). 
 
 
 **Banner image 2:1**
-![an image alt text](https://certifyme.online//img/preview1.png "Banner")
-Link [https://certifyme.online//img/preview1.png](https://certifyme.online//img/preview1.png). 
+* ![an image alt text](https://certifyme.online//img/preview1.png "Banner")
+* Link [https://certifyme.online//img/preview1.png](https://certifyme.online//img/preview1.png). 
 
