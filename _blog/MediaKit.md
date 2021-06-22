@@ -9,7 +9,7 @@ imageLink: /img/preview1.png
 featured: true
 ---
 **Tag line**
-A Credential platform that enables Event producers and TechEd firms to maximize their brand's presence
+-A Credential platform that enables Event producers and TechEd firms to maximize their brand's presence
 
 **About**
 CertifyMe.Online is an end-to-end solution for creating, issuing, and managing Digital Credentials. CertifyMe is also the first Digital credential platform that enables Event producers and TechEd firms to maximize their brand's presence while automating their credential issuing process.
