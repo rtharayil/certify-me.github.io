@@ -21,7 +21,7 @@ We are a SaaS-based Startup Based out of Bangalore India.
 
 #### Link to Logo for Dark background
 * ![an image alt text](https://certifyme.online/img/22.png "Logo for Dark background")
-* Link to logo imge [https://certifyme.online/img/22.png](https://certifyme.online/img/22.png). 
+* Link to logo image [https://certifyme.online/img/22.png](https://certifyme.online/img/22.png). 
 
 #### Website
 * Link  [https://certifyme.online/](https://certifyme.online/assets/images/logo.svg). 
