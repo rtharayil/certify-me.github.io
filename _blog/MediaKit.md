@@ -17,11 +17,11 @@ We are a SaaS-based Startup Based out of Bangalore India.
 
 **Logo for White background**
 * ![an image alt text](https://certifyme.online/img/21.png "Logo for White background")
-* Link [https://certifyme.online/img/21.png](https://certifyme.online/img/21.png). 
+* Link to logo image [https://certifyme.online/img/21.png](https://certifyme.online/img/21.png). 
 
 **Link to Logo for Dark background**
 * ![an image alt text](https://certifyme.online/img/22.png "Logo for Dark background")
-* Link [https://certifyme.online/img/22.png](https://certifyme.online/img/22.png). 
+* Link to logo imge [https://certifyme.online/img/22.png](https://certifyme.online/img/22.png). 
 
 **Website**
 * Link  [https://certifyme.online/](https://certifyme.online/assets/images/logo.svg). 
