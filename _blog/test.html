@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>My First Heading</h1>
+
+    <p>My first paragraph.</p>
+    <button onclick="myFunction3()">Click me</button>
+
+    <script>
+        function myFunction() {
+           
+
+            var xhr = new XMLHttpRequest();
+            
+            xhr.open("POST", 'https://my.certifyme.online/api/v1/credential', true);
+            xhr.setRequestHeader("Authorization", "Basic " + window.btoa('verify@certifyme.online' + ":" + 'test@123'));
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify({template_ID: 218,name: "Riya Thomas", email: "riya@quadralogics.com",text: "VP Quadralogics" }));
+            xhr.onload  = function() {
+   var jsonResponse = xhr.response;
+   alert("The responce " + jsonResponse);
+};
+            xhr.onreadystatechange = function () {
+                // In local files, status is 0 upon success in Mozilla Firefox
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    var status = xhr.status;
+                    if (status === 0 || (status >= 200 && status < 400)) {
+
+                        alert("The issue has been completed successfully " + status);
+                    } else {
+                        alert(" Oh no! There has been an error with the request! " + status);
+
+                    }
+                }
+            };
+        }
+
+        function myFunction3() {
+           
+
+           var xhr = new XMLHttpRequest();
+           
+           xhr.open("GET", "https://my.certifyme.online/api/v1/credential/API1234_d70cdb49-8515-4bff-8b27-0628a634ff9b218", true);
+           xhr.setRequestHeader("Authorization", "Basic " + window.btoa('verify@certifyme.online' + ":" + 'test@123'));
+            xhr.setRequestHeader('Content-Type', 'application/json');
+           xhr.send();
+           xhr.onload  = function() {
+   var jsonResponse = xhr.response;
+   alert("The responce " + jsonResponse);
+};
+           xhr.onreadystatechange = function () {
+               // In local files, status is 0 upon success in Mozilla Firefox
+               if (xhr.readyState === XMLHttpRequest.DONE) {
+                   var status = xhr.status;
+                   if (status === 0 || (status >= 200 && status < 400)) {
+
+                       alert("The issue has been completed successfully " + status);
+                   } else {
+                       alert(" Oh no! There has been an error with the request! " + status);
+
+                   }
+               }
+           };
+       }
+
+
+
+       function myFunction2() {
+           
+
+           var xhr = new XMLHttpRequest();
+           
+           xhr.open("GET", "https://my.certifyme.online/verify/1851", true);
+           xhr.send();
+           xhr.onload  = function() {
+   var jsonResponse = xhr.response;
+   alert("The responce " + jsonResponse);
+};
+           xhr.onreadystatechange = function () {
+               // In local files, status is 0 upon success in Mozilla Firefox
+               if (xhr.readyState === XMLHttpRequest.DONE) {
+                   var status = xhr.status;
+                   if (status === 0 || (status >= 200 && status < 400)) {
+
+                       alert("The issue has been completed successfully " + status);
+                   } else {
+                       alert(" Oh no! There has been an error with the request! " + status);
+
+                   }
+               }
+           };
+       }
+    </script>
+</body>
+
+</html>
