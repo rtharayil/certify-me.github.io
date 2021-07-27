@@ -3,7 +3,7 @@ layout: award
 
 title: Exemplary Leadership Awards 2021
 
-description: A platform to honor the top 1% of Exemplary Leaders who has lead ordinary people in accomplishing extraordinary outcomes.
+description: A platform to honor the top 1% of Exemplary Leaders who has led ordinary people in accomplishing extraordinary outcomes.
 
 
 logo : /img/awards/awardlogoLeader.png
