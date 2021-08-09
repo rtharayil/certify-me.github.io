@@ -1,0 +1,58 @@
+<section id="blog" class="services-area pt-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="section-title text-center pb-40">
+                    
+                    <h3 class="title">Credential Samples</span></h3>
+                    <div class="line m-auto"></div>
+                </div> <!-- section title -->
+            </div>
+        </div> <!-- row -->
+        <div class="row justify-content-center">
+            {% for sample in site.data.samples %}
+            <div class="col-lg-6 col-md-6 col-sm-12">
+
+
+
+                <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+
+
+
+
+                    <a href='{{sample.link}}' target="_blank"> 
+                
+                    <div >
+                        <div class="row" style="margin: 5px; padding: 5px">
+                       
+
+                            <img src="{{sample.img}}" alt="{{sample.name}}"
+                                >
+                                
+                                
+
+
+
+
+
+
+
+
+                                   
+                                    
+                        </div>
+                    </div>
+                    <h6 class="text" style="text-align: center;">{{sample.name}}</h6></a>
+
+
+
+
+
+
+                </div> <!-- single services -->
+            </div>
+            {% endfor %}
+
+        </div> <!-- row -->
+    </div> <!-- container -->
+</section>
