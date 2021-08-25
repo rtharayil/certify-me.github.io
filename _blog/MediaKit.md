@@ -49,7 +49,7 @@ featured: true
 ----
 
 #### Features and Pricing  
-* Link [https://certifyme.online/res/CertifyMeOnlineFeatures.pdf](Sales Deck). 
+* Link [Features and Pricing]( https://certifyme.online/res/CertifyMeOnlineFeatures.pdf). 
 
 ----
 
