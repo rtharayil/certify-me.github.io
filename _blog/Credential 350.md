@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: t
+title: 𝗖𝗿𝗲𝗱𝗲𝗻𝘁𝗶𝗮𝗹𝘀 𝗮𝗿𝗲 𝗳𝗿𝗲𝗲 𝗮𝗱𝘃𝗲𝗿𝘁𝗶𝘀𝗲𝗺𝗲𝗻𝘁𝘀 𝗼𝗻 𝘀𝘁𝗲𝗿𝗼𝗶𝗱𝘀
 
 
 abstract: Few facts about digital badges and digital certificates
