@@ -25,7 +25,7 @@ sitemap:
       {% if page.sitemap.priority %}
         <priority>{{ page.sitemap.priority }}</priority>
       {% else %}
-        <priority>0.5</priority>
+        <priority>0.6</priority>
       {% endif %}
     </url>
     {% endunless %}
@@ -51,7 +51,7 @@ sitemap:
       {% if page.sitemap.priority %}
         <priority>{{ page.sitemap.priority }}</priority>
       {% else %}
-        <priority>0.7</priority>
+        <priority>0.4</priority>
       {% endif %}
     </url>
     {% endunless %}
