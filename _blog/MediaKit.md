@@ -47,6 +47,12 @@ featured: true
 * ![an image alt text](https://certifyme.online//img/preview1.png "Banner")
 
 ----
+#### Banner image 2:1
+* Link [https://certifyme.online//img/preview1.png](https://certifyme.online//img/portfolio/Award%20Verifiable%20Credentials%20(5).png). 
+* ![an image alt text](/img/portfolio/Award%20Verifiable%20Credentials%20(5).png "Banner")
+
+
+----
 
 #### Features and Pricing  
 * Link [Features and Pricing]( https://certifyme.online/res/CertifyMeOnlineFeatures.pdf). 
