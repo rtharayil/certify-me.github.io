@@ -1,0 +1,4 @@
+# Group 1
+User-agent: *
+
+Sitemap: https://certifyme.online/sitemap.xml
