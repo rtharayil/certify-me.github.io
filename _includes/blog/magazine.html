@@ -11,7 +11,7 @@
         </div> <!-- row -->
         <div class="row justify-content-center">
             {% for article in site.blog %}
-            <div class="col-lg-4 col-md-7 col-sm-8">
+            <div class="col-lg-4 col-md-4 col-sm-12">
 
 
 
@@ -23,14 +23,14 @@
 
 
                     <div onclick="location.href = '{{site.baseurl}}{{article.url}}';">
-                        <div class="row" style="margin: 5px; padding: 5px">
+                        <div class="row"  style="margin: 5px; padding: 5px">
                             {% if article.imageLink != "nil" %}
 
                             <img src="{{article.imageLink}}" alt="{{article.title}}"
                                 style="max-width:200px;max-height:200px;">
-                                <p class="text">{{article.title}} </p>
+                                <p class="text" style="text-align: center;">{{article.title}} </p>
                                 {% else %}
-                                <p class="text">{{article.title}} </p>
+                                <p class="text" style="text-align: center;">{{article.title}} </p>
 
                                     {% endif %}
 
