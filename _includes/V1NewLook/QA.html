@@ -1,5 +1,5 @@
 <div class="brand-area pt-90 container">
- 
+
   <div>
     <div class="row justify-content-center">
       <div class="col-lg-10">
@@ -10,7 +10,7 @@
       </div>
     </div>
 
-   
+
     <section class="faq-container">
       {% for QA in site.data.QA %}
       <div class="faq-one">
@@ -23,30 +23,31 @@
       </div>
       <hr class="hr-line">
       {% endfor %}
-      
-     
+
+
     </section>
     <script>
 
 
       var faq = document.getElementsByClassName("faq-page");
       var i;
-      
+
       for (i = 0; i < faq.length; i++) {
-          faq[i].addEventListener("click", function () {
-              /* Toggle between adding and removing the "active" class,
-              to highlight the button that controls the panel */
-              this.classList.toggle("active");
-      
-              /* Toggle between hiding and showing the active panel */
-              var body = this.nextElementSibling;
-              if (body.style.display === "block") {
-                  body.style.display = "none";
-              } else {
-                  body.style.display = "block";
-              }
-          });
+        faq[i].addEventListener("click", function () {
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          this.classList.toggle("active");
+
+          /* Toggle between hiding and showing the active panel */
+          var body = this.nextElementSibling;
+          if (body.style.display === "block") {
+            body.style.display = "none";
+          } else {
+            body.style.display = "block";
+          }
+        });
       }
-      
-        </script>
+
+    </script>
   </div>
+</div>
