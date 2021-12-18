@@ -1,0 +1,90 @@
+<div id="home" class="header-hero bg_cover ">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['table'] });
+        google.charts.setOnLoadCallback(drawTable);
+
+        function drawTable() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Features');
+            data.addColumn('boolean', 'Starter plan (100 credentails/month)');
+            data.addColumn('boolean', 'Premium plan (200 credentails/month)');
+            data.addColumn('boolean', 'VIP plan (600 credentails/month)');
+           
+            data.addRows([
+                ['One-click 50+ Social media share Integrations', true,true, true],
+                ['1000+ Certificates and Badges design templates', true,true, true],
+                ['The bulk award feature - upload a CSV file', true,true, true],
+                ['Add to Linkedin profile Integration', true,true, true],
+         
+                ['Social media friendly credentials pages', true,true, true],
+                ['Responsive web design suited for mobile, tablet, PC', true,true, true],
+                ['Awardee email automation with credential preview ', true,true, true],
+            
+            
+                ['Verifiability using unique QRcode', true,true, true],
+                ['Anti forge feature - tagging credentials to awardees unique identities like DL, passports, etc.', true,true, true],
+                ['HR verification workflow', true,true, true],
+                ['Verifiability using unique QRcode', true,true, true],
+                ['Branding banner with CTA feature ', true,true, true],
+                ['Canva Integration for designing ', true,true, true],
+                ['Analytics dashboards for tracking', true,true, true],
+                ['email Support   ', true,true, true],
+                ['Remove CertifyMe logo from Navigation Bar ', false,true, true],
+                ['Add Your logo on the Navigation Bar ', false,true, true],
+                ['Add hyperlink to your wesite  on the Navigation Bar ', false,true, true],
+                ['SSL encryption enabled verifiability ', false,true, true],
+                ['SSL certificate for custom domain', false,true, true],
+                ['Add to Linkedin profile Integration with your Logo', false,true, true],
+                ['Whitelalbeing CName ', false,true, true],
+                ['SEO optimization due to your custom domain', false,true, true],
+                ['1X1 vedio call for domain configuration and setup', false,true, true],
+                 
+                ['Video advertisement with CTA feature ', false,true, true],
+               
+                ['API for customization and integration ', false,true, true],
+            
+                ['3000 app/LMS integration via Zapier   ', false,true, true],
+              
+                ['Chat Support   ', false,true, true],
+                [' Add your own logos on the footer    ', false,false, true],
+                [' Add social media handles to your footer     ', false,false, true],
+                [' Add social media handles  in awardees email     ', false,false, true],
+                [' Add your logo and branding in  awardees email     ', false,false, true],
+                ['Get CertifyMe verified institution tag   ', false,false, true],
+                ['1X1 training and certification for all your admins  ', false,false, true],
+                ['Resent unread email automation   ', false,false, true],
+                ['Better inbox placement for awardees email ', false,false, true],
+                ['Whitelalbeing CName, SMTP ', false,false, true],
+                ['Email Template customization ', false,false, true],
+                ['24X7  On-call Support   ', false,false, true],
+
+            ]);
+
+            var table = new google.visualization.Table(document.getElementById('table_div'));
+
+            table.draw(data, { showRowNumber: true, width: '100%', height: '100%' });
+        }
+    </script>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="header-hero-content text-center">
+                    <h2 class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Our Detail Feature Set
+                    </h2><br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        @media (min-width:480px) {
+            .custom-css1 {
+              margin: 60px;
+              
+            }
+         }
+</style>
+    <div id="table_div" class="row container"></div>
+</div>
+    
