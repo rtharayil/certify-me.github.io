@@ -5,6 +5,7 @@ title: How to Prevent Certification and Credential Frauds
 
 abstract: How to Prevent Certification and Credential Frauds 
 topic: news
+author : Mrunal Upadhye
 imageLink: /img/blog/7.png
 featured: true
 ---

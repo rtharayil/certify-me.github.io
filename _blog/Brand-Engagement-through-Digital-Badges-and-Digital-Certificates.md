@@ -4,7 +4,7 @@ title: Brand Engagement through Digital Badges and Digital Certificates
 
 
 abstract: Brand Engagement through Digital Badges and Digital Certificates
-
+author : Mrunal Upadhye
 topic: news
 imageLink: /img/blog/7.png
 featured: true

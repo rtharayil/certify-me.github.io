@@ -5,6 +5,7 @@ title: The Future of Digital Credentials- Understanding the Biggest Gamechanger 
 
 abstract: Digital credentials are a significant game changer in higher education. What is a digital credential? How can we verify a digital credential? Learn about the future of digital credentials in this article!
 topic: news
+author : Mrunal Upadhye
 imageLink: /img/preview1.png
 featured: true
 ---

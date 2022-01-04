@@ -5,7 +5,7 @@ title: Why Digital Credentials are gaining popularity?
 
 
 abstract: Why Digital Credentials are gaining popularity?
-
+author : Mrunal Upadhye
 topic: news
 imageLink: /img/blog/7.png
 featured: true
