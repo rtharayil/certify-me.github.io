@@ -3,9 +3,8 @@ layout: blog
 title: Brand Engagement through Digital Badges and Digital Certificates
 
 
-abstract: One of the most crucial concerns organizations tend to have is to achieve attention and engagement from the learners and potential members. An individual who loses his engagement with the brands’ program may lack focus, causing him to feel unsatisfied with the program and may eventually withdraw. This may cause the organization, loss of members and may disturb the progress and brand value. 
+abstract: Brand Engagement through Digital Badges and Digital Certificates
 
-Organizations can get their learners and members by issuing digital badges.
 topic: news
 imageLink: /img/blog/7.png
 featured: true
