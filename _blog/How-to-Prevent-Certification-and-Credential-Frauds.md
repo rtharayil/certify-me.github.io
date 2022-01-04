@@ -40,7 +40,7 @@ The above mentioned are key steps that one could take to acquire the right candi
 
 A major mass of organizations has been a victim of certification fraud that led to hindering the organization’s progress, compromising the quality and brand value, and waste of time and effort for the recruitment.
 
-### Need for candidates verification:
+### Need for candidates verification using Credential:
 
 Talent acquisitions should make candidate verification their top-most priority during the recruitment process. Certification fraud is common and sometimes may cost a lot more than what's bargained for.
 
