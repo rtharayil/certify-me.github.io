@@ -75,6 +75,7 @@ button:hover {
 	color: #131313;
 }
 
+@media only screen and (min-width: 1026px) {
 .background-set {
 	background-image: url(../../images/BG.png);
 	background-repeat: no-repeat;
@@ -86,6 +87,32 @@ button:hover {
 	line-height: 20px;
 	padding-top: 185px;
 }
+}
+@media only screen and (max-width: 1026px) {
+	.background-set {
+		background: black;
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+		position: relative;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		padding-top: 185px;
+	}
+  }
+
+  @media only screen and (min-width: 600px) {
+	.desktop-hide{
+		display: none;
+		
+	}
+	}
+	@media only screen and (max-width: 600px) {
+		.mobile-hide {
+			display: none;
+		}
+	  }
 
 .m-tp {
 	margin-top: 50px
