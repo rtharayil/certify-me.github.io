@@ -7,7 +7,7 @@ abstract:  Every learner is career-focused and invests in a program that benefit
 
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/credential/7.png
+imageLink: /img/blog/credential/9.png
 featured: true
 ---
 # How to Maximize the Value of Your Certification

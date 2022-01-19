@@ -6,7 +6,8 @@ title: Association Membership with Digital Credentials
 abstract: Association Membership with Digital Credentials
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/preview1.png
+imageLink:  /img/blog/credential/11.png
+
 featured: true
 ---
 # Association Membership with Digital Credentials

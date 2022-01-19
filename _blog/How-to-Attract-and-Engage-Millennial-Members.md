@@ -7,7 +7,7 @@ abstract:  The membership program could vary from generation to generation. A ce
 
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/credential/7.png
+imageLink: /img/blog/credential/11.png
 featured: true
 ---
 # How to Attract and Engage Millennial Members

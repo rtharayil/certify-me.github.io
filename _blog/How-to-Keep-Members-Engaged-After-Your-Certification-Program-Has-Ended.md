@@ -7,7 +7,7 @@ abstract:  A lot goes into setting up an engaging certification program. What is
 
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/credential/7.png
+imageLink: /img/blog/credential/8.png
 featured: true
 ---
 # How to Keep Members Engaged After Your Certification Program Has Ended
