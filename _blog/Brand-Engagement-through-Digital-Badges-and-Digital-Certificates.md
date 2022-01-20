@@ -21,7 +21,7 @@ Digital Badges come under a standard set of rules of Open Badges which was found
 
 Digital badges could be issued for achieving a skill, accomplishing a target, making a progress, leveling up, or for engagement and loyalty towards the program.
 
-## Brand Engagement through Digital Badges and Digital Certificates:
+### Brand Engagement through Digital Badges and Digital Certificates:
 
 Digital badges pose as digital proof for the candidates’ achievement, providing recognition for the skills through verification. Digital badges can be easily shared across all digital platforms like social media, websites, social networking sites to display the achievement.
 
@@ -29,6 +29,6 @@ Learners or members of the organization need recognition for their efforts. Iden
 
 Digital badges can be also be displayed to attract learners and increase engagement. For example, A learner earned a digital badge for participation, he then proceeded to display the badge by sharing it across all digital platforms. This created interactions and curiosity among others and a willingness to achieve the same.
 
-## In Conclusion:
+### In Conclusion:
 
 Issuing digital badges is the most effective way to help increase brand engagement. Digital badges display the learners’ competency in the skills achieved which further helps create value for both the brand and the learner.

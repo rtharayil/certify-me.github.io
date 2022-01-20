@@ -9,7 +9,7 @@ author : Mrunal Upadhye
 imageLink: /img/blog/10.png
 featured: true
 ---
-How to Prevent Certification and Credential Frauds?
+# How to Prevent Certification and Credential Frauds?
 
 The corporate world is ever-changing and ever-growing leading to competition and growth. This makes it crucial for organizations to recruit the best employees that help progress and support the goals to be achieved.
 
@@ -19,21 +19,21 @@ Hiring has been much easier with the rise in technology and social-networking si
 
 To get the right candidate one could follow the below-mentioned steps:
 
-### Clear and Concise Job-Description:
+## Clear and Concise Job-Description:
 
 Job descriptions are the most essential part of posting for a job. Write a clear and concise job description mentioning the key role, key responsibilities, qualifications and skills required, years of experience, and about the company.
 
 A job description will help the candidate choose the right job by identifying the roles and responsibilities that match with his/her qualifications, skills, and abilities.
 
-### Customized Job Application:
+## Customized Job Application:
 
 Create customized job applications in the format of online forms and questionnaires. This will help filter qualified candidates as per the required role.
 
-### Telephonic Interviews:
+## Telephonic Interviews:
 
 Interview the client through a telephonic interview or on a professional video platform. This will help identify the persona, personality, and communication skills of the candidate.
 
-### Aid tools and technologies:
+## Aid tools and technologies:
 
 Some numerous tools and technologies will help the organization in the recruiting process. Taking the aid of digital tools will save the time-consuming process of recruitment and also gain the organization a worthy candidate.
 
@@ -41,7 +41,7 @@ The above mentioned are key steps that one could take to acquire the right candi
 
 A major mass of organizations has been a victim of certification fraud that led to hindering the organization’s progress, compromising the quality and brand value, and waste of time and effort for the recruitment.
 
-### Need for candidates verification using Credential:
+## Need for candidates verification using Credential:
 
 Talent acquisitions should make candidate verification their top-most priority during the recruitment process. Certification fraud is common and sometimes may cost a lot more than what's bargained for.
 
@@ -51,6 +51,6 @@ Digital credentials are enabled with blockchain technology that helps share, vie
 
 It also diminishes the chances of unqualified and unlicensed candidates’ access to the job, encouraging a healthy recruitment process.
 
-### In Conclusion:
+## In Conclusion:
 
 Certification frauds are avoidable with the help of digital credentials. Digital credentials are encrypted and verifiable that validating the candidate’s competency to the skills and qualifications.
