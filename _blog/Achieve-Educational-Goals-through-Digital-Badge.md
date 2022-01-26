@@ -5,7 +5,7 @@ title: Achieve Educational Goals through Digital Badge
 abstract: Achieve Educational Goals through Digital Badge 
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/22.png
+imageLink: /img/blog/credential/22.png
 featured: true
 ---
 # Achieve Educational Goals through Digital Badge
