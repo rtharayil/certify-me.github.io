@@ -5,7 +5,7 @@ title: Benefits of Digital Certificates for Businesses
 abstract: Benefits of Digital Certificates for Businesses
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/23.png
+imageLink: /img/blog/credential/23.png
 featured: true
 ---
 # Benefits of Digital Certificates for Businesses

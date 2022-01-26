@@ -6,7 +6,7 @@ title: How to Overcome Traditional Certificate Problems
 abstract: How to Overcome Traditional Certificate Problems   
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/14.png
+imageLink: /img/blog/credential/14.png
 featured: true
 ---
 # Get better at Digital Certificate  

@@ -5,7 +5,7 @@ title: Macro Impact of Micro Credentials
 abstract: Macro Impact of Micro Credentials 
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/26.png
+imageLink: /img/blog/credential/26.png
 featured: true
 ---
 # Macro Impact of Micro Credentials

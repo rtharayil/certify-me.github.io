@@ -7,7 +7,7 @@ title: Why Digital Credentials are gaining popularity?
 abstract: Why Digital Credentials are gaining popularity?
 author : Mrunal Upadhye
 topic: news
-imageLink: /img/blog/7.png
+imageLink: /img/blog/credential/7.png
 featured: true
 ---
 Digital credentials have changed the face of digital authentication. Often issued as a reward to display a person’s competency of skills and abilities, digital credentials have paved their way upwards in the digital working environment.

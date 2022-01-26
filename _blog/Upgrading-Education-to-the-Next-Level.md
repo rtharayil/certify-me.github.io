@@ -6,7 +6,7 @@ title: Upgrading Education to the Next Level
 abstract: Upgrading Education to the Next Level 
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/25.png
+imageLink: /img/blog/credential/25.png
 featured: true
 ---
 # Upgrading Education to the Next Level

@@ -6,7 +6,7 @@ title: Recipe to Success with Digital Badges
 abstract: Recipe to Success with Digital Badges 
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/24.png
+imageLink: /img/blog/credential/24.png
 featured: true
 ---
 # Recipe to Success with Digital Badges

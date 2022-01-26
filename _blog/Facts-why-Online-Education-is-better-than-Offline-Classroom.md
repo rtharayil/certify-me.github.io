@@ -6,7 +6,7 @@ title: 10 reasons why Online Education is better than Offline Classroom
 abstract: Why Online Education is better than Offline Classroom
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/18.png
+imageLink: /img/blog/credential/18.png
 featured: true
 ---
 # Facts why Online Education is better than Offline Classroom

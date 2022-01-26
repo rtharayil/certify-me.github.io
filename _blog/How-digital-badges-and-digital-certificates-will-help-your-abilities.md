@@ -6,7 +6,7 @@ title: Here's how digital badges and digital certificates will help your abiliti
 abstract: Here's how digital badges and digital certificates will help your abilities
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/22.png
+imageLink: /img/blog/credential/22.png
 featured: true
 ---
 # Here's how digital badges and digital certificates will help your abilities

@@ -5,7 +5,7 @@ title: Most Common Types of Digital certificate
 abstract: Most Common Types of Digital certificate
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/28.png
+imageLink: /img/blog/credential/28.png
 featured: true
 ---
 # Most Common Types of Digital certificate

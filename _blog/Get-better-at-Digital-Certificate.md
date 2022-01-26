@@ -6,7 +6,7 @@ title: Get better at Digital Certificate
 abstract: Get better at Digital Certificate  
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/17.png
+imageLink: /img/blog/credential/17.png
 featured: true
 ---
 # Get better at Digital Certificate  

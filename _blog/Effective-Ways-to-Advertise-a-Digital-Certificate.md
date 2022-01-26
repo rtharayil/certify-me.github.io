@@ -6,7 +6,7 @@ title: Effective Ways to Advertise a Digital Certificate
 abstract: Effective Ways to Advertise a Digital Certificate  
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/17.png
+imageLink: /img/blog/credential/17.png
 featured: true
 ---
 # Effective Ways to Advertise a Digital Certificate

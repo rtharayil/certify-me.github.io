@@ -5,7 +5,7 @@ title: Why Digital Skills are important?
 abstract: Why Digital Skills are important?
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/29.png
+imageLink: /img/blog/credential/29.png
 featured: true
 ---
 # Why Digital Skills are important?

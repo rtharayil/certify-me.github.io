@@ -6,7 +6,7 @@ title: Why are Digital Certificates Trending?
 abstract: Why are Digital Certificates Trending?
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/17.png
+imageLink: /img/blog/credential/17.png
 featured: true
 ---
 # Why are Digital Certificates Trending?
