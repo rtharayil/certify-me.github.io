@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 𝗨𝗽𝗴𝗿𝗮𝗱𝗲 !!
+title: Don't just issue certificates, award verifiable and sharable Credentials to your Learners
 
 
 abstract: 𝗨𝗽𝗴𝗿𝗮𝗱𝗲 !! , don't just issue certificates, award verifiable and sharable Credentials to your Learners

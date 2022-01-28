@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 𝗪𝗵𝗮𝘁 𝗮𝗿𝗲 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗿𝗲𝗱𝗲𝗻𝘁𝗶𝗮𝗹𝘀
+title: What are Digital Credentials 
 
 
 abstract: Few facts about digital badges and digital certificates
@@ -10,17 +10,17 @@ featured: true
 ---
 
 
-𝗪𝗵𝗮𝘁 𝗮𝗿𝗲 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗿𝗲𝗱𝗲𝗻𝘁𝗶𝗮𝗹𝘀?
+## 𝗪𝗵𝗮𝘁 𝗮𝗿𝗲 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗿𝗲𝗱𝗲𝗻𝘁𝗶𝗮𝗹𝘀?
 Digital credentials are the digital equivalent of paper-based certificates. Digital credentials include both digital badges and digital certificates. The primary differences between a digital badge and a digital certificate are in its way of representation/graphics.
 
-𝗪𝗵𝗮𝘁 𝗶𝘀 𝘁𝗵𝗲 𝗮𝗱𝘃𝗮𝗻𝘁𝗮𝗴𝗲 𝗼𝗳 𝘂𝘀𝗶𝗻𝗴 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗿𝗲𝗱𝗲𝗻𝘁𝗶𝗮𝗹𝘀?
+## 𝗪𝗵𝗮𝘁 𝗶𝘀 𝘁𝗵𝗲 𝗮𝗱𝘃𝗮𝗻𝘁𝗮𝗴𝗲 𝗼𝗳 𝘂𝘀𝗶𝗻𝗴 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗿𝗲𝗱𝗲𝗻𝘁𝗶𝗮𝗹𝘀?
 -Digital credentials help in automation, reducing time, effort, and cost
 -Digital credentials are easily verifiable and can also be tagged to identities like passport etc
 -Digital credentials are very to share across an email, social media, or messaging platforms in a click
 -Improves Brand visibility of your programs and events
 -Improves your SEO ranking by regenerating qualified and organic backlinks
 
-𝗪𝗵𝗲𝗿𝗲 𝗮𝗿𝗲 𝗱𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗿𝗲𝗱𝗲𝗻𝘁𝗶𝗮𝗹𝘀 𝘂𝘀𝗲𝗱 𝘁𝗼𝗱𝗮𝘆?
+## 𝗪𝗵𝗲𝗿𝗲 𝗮𝗿𝗲 𝗱𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗿𝗲𝗱𝗲𝗻𝘁𝗶𝗮𝗹𝘀 𝘂𝘀𝗲𝗱 𝘁𝗼𝗱𝗮𝘆?
 Few examples where digital credentials used today includes,
 -Diplomas and certificates issued by education providers
 -Awards for gaining a personal or professional skill
