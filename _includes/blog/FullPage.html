@@ -1,66 +1,138 @@
-
- 
-
 <section id="certificate" class="services-area pt-120">
-   
 
-    <div class="container" >
-        
+
+    <div>
+        <marquee behavior="alternate" bgcolor="#bb3434" direction="left" height:="" loop="7" scrollamount="1"
+            scrolldelay="2" width="100%">
+            <a target="_blank" href="https://my.certifyme.online/auth/register/">
+                <span style="font-size: medium;color:#FFFFFF">
+                    SignUp to get Your First FREE 50 Credentials.
+                </span></a>
+        </marquee>
         <div class="row justify-content-center">
-            <div class="col-lg-10">
+            <div class="col-lg-6 ">
                 <div class="section-title text-center pb-40">
 
                     <h1 class="title">{{page.title}}</h1>
 
-                   
+
                     <div class="line m-auto"></div>
-                
+
                     <div class="service-box1">
                         <img src="{{page.imageLink}}" alt="{{page.title}}" style="width:100%">
                     </div>
-                    
-                    <h2>{{page.subTitle}}</h2>
-                    <h6 style="font-weight: 100;"><i>{{page.author}}  :  {{page.date}}</i></h6>
 
 
 
-                    <h4 style="font-weight: 200; ">{{page.abstract}}</h4>
+                    <div align="center">
 
-                 
-                    <div class="text-right">
-
-
-                        
                     </div>
-                </div> <!-- section title -->
+                    <div class=" text-center ">
+
+                        <div class="container">
+
+
+
+
+                            <div>
+                                <div class="row" style="margin: 5px; padding: 5px">
+                                    {% if article.imageLink != "nil" %}
+
+                                    <img src="{{article.imageLink}}" alt="{{article.title}}"
+                                        style="max-width:200px;max-height:200px;">
+                                    {% endif %}
+                                    <div style="padding: 10px ; text-align: left; " class="blogc">
+                                        {{page.content}}
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div> <!-- single services -->
+
+
+
+
+
+                        <div class="text-right">
+
+
+                            <marquee behavior="alternate" bgcolor="#bb3434" direction="left" height:="" loop="7"
+                                scrollamount="1" scrolldelay="2" width="100%">
+                                <a target="_blank" href="https://my.certifyme.online/auth/register/">
+                                    <span style="font-size: medium;color:#FFFFFF">
+                                        Award Verifiable Credentials , SignUp to get Your First FREE 50 Credentials.
+                                    </span></a>
+                            </marquee>
+                        </div>
+                    </div> <!-- section title -->
+                </div>
             </div>
-        </div>
-
-    </div>
-        <div align="center">
-            <marquee behavior="alternate" bgcolor="#bb3434" direction="left" height:="" 
-            loop="7" scrollamount="1" scrolldelay="2" width="100%">
-            <a   target="_blank" href="https://my.certifyme.online/auth/register/">
-            <span style="font-size: medium;color:#FFFFFF">
-                Award Verifiable Credentials , SignUp to get Your First FREE 50 Credentials. </span></a></marquee>
-           </div>
-        <div class=" text-center " >
-
-            <div class="container" >
+            <div class="col-lg-4">
+                <div class="section-title text-center ">
+                    <h5 style="text-align: left;"> You might also like</h5>
+                    {% for article in site.blog reversed limit: 13 %}
+                    
+                    <div class="col-sm-12">
 
 
 
 
-            <div >
-                <div class="row" style="margin: 5px; padding: 5px">
-                    {% if article.imageLink != "nil" %}
+                        <div class=" text-center  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
 
-                    <img src="{{article.imageLink}}" alt="{{article.title}}" style="max-width:200px;max-height:200px;">
-                    {% endif %}
-                    <div style="padding: 10px ; text-align: left; " class="blogc">
-                        {{page.content}}
+
+
+
+
+
+                            <div onclick="location.href = '{{site.baseurl}}{{article.url}}';">
+                                
+                                    <div class="row" style="margin: 5px; padding: 5px">
+
+                                        <div class="col-lg-3 col-md-12 col-sm-12 " style="margin-right: 5px;">
+
+                                            <img src="{{article.imageLink}}" alt="{{article.title}}"
+                                                style="max-width:160px;max-height:70px;"> </img>
+                                        </div>
+                                        <div class="col-lg-8 col-md-12 col-sm-12">
+                                            <h6 class=" text" style="text-align: left;">{{article.title}} </h6>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+                                
+                            </div>
+
+
+
+
+
+
+                        </div> <!-- single services -->
+
+
                     </div>
-
+                  
+                    {% endfor %}
 
                 </div>
             </div>
@@ -68,10 +140,6 @@
 
 
 
-
-
-        </div> <!-- single services -->
-    </div> <!-- single services -->
 
 
 
