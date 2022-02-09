@@ -77,7 +77,8 @@ button:hover {
 
 @media only screen and (min-width: 1026px) {
 .background-set {
-	background-image: url(../../images/BG.png);
+	/*background-image: url(../../images/BG.png);*/
+	background:black;
 	background-repeat: no-repeat;
 	height: 100%;
 	width: 100%;
@@ -544,7 +545,7 @@ button:hover {
 
 #plans {
 	background-image: url(../../images/plans-bg.png);
-	background-repeat: no-repeat;
+	background-repeat: repeat-x;
 	padding: 105px 0px;
 }
 
