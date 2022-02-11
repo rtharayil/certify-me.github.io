@@ -325,7 +325,8 @@ button:hover {
 /* ======= PROCESS  ===== */
 
 .process-text {
-	background-image: url(../../images/process-bg.png);
+	/*background-image: url(../../images/process-bg.png);*/
+	background-color: black;
 	background-position: left;
 	padding: 325px 50px 325px 385px;
 }
@@ -336,7 +337,8 @@ button:hover {
 }
 
 .video-area {
-	background-image: url(../../images/video-thumbnail.png);
+	/*background-image: url(../../images/video-thumbnail.png);*/
+	background-color: white;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -482,7 +484,7 @@ button:hover {
 	border-radius: 15px;
 	margin-top: 50px;
 	cursor: pointer;
-	height: 675px;
+	height: 575px;
 	transition: 0.6s all ease-in-out;
 }
 
@@ -768,7 +770,8 @@ button:hover {
 /* ========= FOOTER ========== */
 
 footer {
-	background-image: url(../../images/plans-bg.png);
+	/*background-image: url(../../images/plans-bg.png);*/
+	background-color: black;
 	background-repeat: no-repeat;
 	padding: 100px 0px;
 	color: #fff;
