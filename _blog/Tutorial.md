@@ -21,7 +21,7 @@ lessons:
 - { id: '687642957', title: 'Lesson 11 ,Add Your Logo ' }
 - { id: '687644035', title: 'Lesson 12 ,Linking LinkedIn to your CertifyMe Account ' }
 - { id: '687645576', title: 'Lesson 13 ,Custom email set up ' }
-- { id: '687645576', title: 'Lesson 14 ,Update passcode email and how to upgrade ' }
+- { id: '687650489', title: 'Lesson 14 ,Update passcode email and how to upgrade ' }
 ---
 Video tutorials
 
