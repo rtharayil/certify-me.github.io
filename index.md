@@ -1,7 +1,7 @@
 ---
 title: "Most Trusted SaaS Based Digital Credential Platform "
 
-description: "CertifyMe.Online is an end-to-end solution for creating, issuing, and managing Digital Credentials. We are the first Digital Credential platform that enables Event producers and TechEd firms to Maximize their Brand’s presence while automating their credential awarding process. "
+description: "CertifyMe is one of the best digital credential platforms offering verifiable digital badges and digital certificates. Start your credentialing journey today."
 
 layout: V2Layout
 
