@@ -30,12 +30,12 @@ criteria3: Accomplishing extraordinary things in organizations is hard work. To 
 
 category:  Edvocate Awards Categories
 category1H: Young Leader Award (Individual Award)
-category2H: Individual Award for Exemplary Leadership
+category2H: Individual Award for Edvocate Leadership
 category3H: Excellence in Workplace Culture (Individual Award)
 category4H: Best Leadership Team of the Year (Team award )
 category5H: Aspiring Leader (Individual Award)
 
-Why: <span>Why should I nominate my leader for the </span><br > Exemplary Leadership Awards 2021 <span>?</span>
+Why: <span>Why should I nominate my leader for the </span><br > Edvocate Leadership Awards 2021 <span>?</span>
 
 Why1H: Get Recognised Internationally  
 Why1: Our award program handpicks only less than 1% of the top  professionals. To be recognized in the top one percentage means you are the best in the industry across the globe. You deserve to be recognized for your hard work. Nominate yourself and your team now.
