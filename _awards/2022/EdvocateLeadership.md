@@ -11,7 +11,7 @@ logo : /img/awards/awardlogoLeader.png
 Head1:  Edvocate Leadership <br > Awards 2022 
 
 Head2:  <br > Nomination are open 
-Head3:  <br > A global platform to honor the top 1% of <br >Exemplary Leaders who have lead ordinary people in <br >accomplishing extraordinary outcomes <br >in the field of Education and Education Technology.
+Head3:  <br > A global platform to honour the top 1% of <br >Exemplary Leaders who have led ordinary people in <br >accomplishing extraordinary outcomes <br >in the field of Education and Education Technology.
 
 BGImagelink: /img/awards/6.png
 preview: /img/awards/1l.png
@@ -35,7 +35,7 @@ category3H: Excellence in Workplace Culture (Individual Award)
 category4H: Best Leadership Team of the Year (Team award )
 category5H: Aspiring Leader (Individual Award)
 
-Why: <span>Why should I nominate my leader for the </span><br > Edvocate Leadership Awards 2021 <span>?</span>
+Why: <span>Why should I nominate my leader for the </span><br > Edvocate Leadership Awards 2022 <span>?</span>
 
 Why1H: Get Recognised Internationally  
 Why1: Our award program handpicks only less than 1% of the top  professionals. To be recognized in the top one percentage means you are the best in the industry across the globe. You deserve to be recognized for your hard work. Nominate yourself and your team now.
@@ -47,7 +47,7 @@ Why3H: Earn a Digital Credential
 Why3: Earn a Verifiable Digital Credential as a proof of your achievement. The awarded digital credentials can be shared across various social media platforms and also can be added to your LinkedIn profile. You will also be allowed to use the badge , certificate in your resume and email signatures. 
 
 About: About <span> CertifyMe Edvocate Leadership Awards 2022 </span>
-About1: CertifyMe " CertifyMe Edvocate Leadership Awards 2022 is widely recognized across the corporate spectrum as the top honors for individual and team achievements in across all domains . All organizations, public and private, for profit and non-profit, large and small may submit nominations. Leaders are key functions in any corporate firm, but unfortunately, professionals in this field of work are seldom recognized and often neglected to be appreciated for their selfless efforts. 
+About1: CertifyMe " CertifyMe Edvocate Leadership Awards 2022 is widely recognized across the corporate spectrum as the top honour for individual and team achievements in across all domains . All organizations, public and private, for profit and non-profit, large and small may submit nominations. Leaders are key functions in any corporate firm, but unfortunately, professionals in this field of work are seldom recognized and often neglected to be appreciated for their selfless efforts. 
 
 
 
