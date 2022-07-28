@@ -42,8 +42,8 @@ button:hover {
 }
 
 .section-heading {
-	font-weight: 800;
-	font-size: 36px;
+	font-weight: 700;
+	font-size: 28px;
 	line-height: 60px;
 }
 
@@ -63,13 +63,26 @@ button:hover {
 	margin-top: 25px;
 }
 
+.section-paragraph2 {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 30px;
+	color: #706e6e;
+	margin-top: 25px;
+}
+
 .white-text {
 	color: #fff;
 }
 
+/*
 .mustard-text {
 	color: #B27409;
-}
+}*/
+
+.mustard-text {
+	color: #131313;
+}	
 
 .black-text {
 	color: #131313;
@@ -245,14 +258,15 @@ button:hover {
 
 #intro h1 {
 	font-weight: Bold;
-	font-size: 44px;
+	font-size: 32px;
 	line-height: 54px;
 	text-align: center;
 }
 
 #intro h4 {
-	font-weight: Bold;
-	font-size: 20px;
+	
+	
+	font-size: 16px;
 	line-height: 24px;
 	text-align: center;
 	color: #fff;
