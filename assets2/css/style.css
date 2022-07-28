@@ -65,7 +65,7 @@ button:hover {
 
 .section-paragraph2 {
 	font-weight: 500;
-	font-size: 12px;
+	font-size: 1px;
 	line-height: 30px;
 	color: #706e6e;
 	margin-top: 25px;
@@ -91,7 +91,7 @@ button:hover {
 @media only screen and (min-width: 1026px) {
 .background-set {
 	/*background-image: url(../../images/BG.png);*/
-	background:black;
+	background:white;
 	background-repeat: no-repeat;
 	height: 100%;
 	width: 100%;
@@ -99,12 +99,12 @@ button:hover {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 20px;
-	padding-top: 185px;
+	padding-top: 25px;
 }
 }
 @media only screen and (max-width: 1026px) {
 	.background-set {
-		background: black;
+		background: white;
 		background-repeat: no-repeat;
 		height: 100%;
 		width: 100%;
@@ -112,7 +112,7 @@ button:hover {
 		font-weight: 600;
 		font-size: 16px;
 		line-height: 20px;
-		padding-top: 185px;
+		padding-top: 5px;
 	}
   }
 
@@ -254,13 +254,14 @@ button:hover {
 }
 
 
+
 /* ======= INTRO ===== */
 
 #intro h1 {
 	font-weight: Bold;
-	font-size: 32px;
+	font-size: 40px;
 	line-height: 54px;
-	text-align: center;
+	text-align: left;
 }
 
 #intro h4 {
@@ -268,8 +269,8 @@ button:hover {
 	
 	font-size: 16px;
 	line-height: 24px;
-	text-align: center;
-	color: #fff;
+	text-align: left;
+	color: black;
 	margin-top: 25px;
 }
 
@@ -284,8 +285,8 @@ button:hover {
 }
 
 .demo-btn {
-	padding: 22px 50px;
-	margin: 25px auto;
+	padding: 22px 30px;
+	margin-top: 10px;
 	text-align: center;
 	display: block;
 	border: none;
