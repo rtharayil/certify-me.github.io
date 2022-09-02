@@ -1,4 +1,6 @@
 # Group 1
 User-agent: *
+Disallow: /preprod.html
+Disallow: /samples.html
 
 Sitemap: https://certifyme.online/sitemap.xml
