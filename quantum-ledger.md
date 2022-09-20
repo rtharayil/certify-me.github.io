@@ -20,6 +20,6 @@ Hero3Msg: Issue, create and award digital credentials with the use of
 
 2FeaturesImg: /assets3/images1/20.png
 2FeaturesTitle: Why & How Immutable Credentials benefit you?
-2FeaturesMessage:  Fully managed ledger that provides a transparent, immutable, and cryptographically verifiable credential transaction log.                   Track all credential data changes, and maintain a complete and verifiable history of changes over time. Maintaining accurate and up-to-date data compiled for each issued credential is made easier. A central database with verifiable transactions
+2FeaturesMessage:  Fully managed ledger that provides a transparent, immutable, and cryptographically verifiable credential transaction log.                   Track all credential data changes, and maintain a complete and verifiable history of changes over time.Maintaining accurate and up-to-date data compiled for each issued credential is made easier.A central database with verifiable transactions
 
 ---
