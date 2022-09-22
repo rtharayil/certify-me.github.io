@@ -8,7 +8,7 @@ layout: V2LayoutPages
 sitemap.priority : 0.9
 
 
-HeroImg: /assets3/images1/3.png
+HeroImg: /assets3/images1/whitelabel.png
 Hero1Msg: Digital Credentials
 Hero2Msg: WhiteLabeling and Customization
 Hero3Msg: Make your credentials stand out according to your branding standards and requirements by easily deploying and customizing it. 
