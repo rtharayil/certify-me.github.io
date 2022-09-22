@@ -11,7 +11,7 @@ sitemap.priority : 0.9
 HeroImg: /assets3/images1/coaching.png
 Hero1Msg: Verifiable Badges and Certificates 
 Hero2Msg: For Professional Training Providers
-Hero2Msg: Our Automated workflow enables professional training providers to issue 
+Hero3Msg: Our Automated workflow enables professional training providers to issue 
           credentials in a couple of clicks
 
 

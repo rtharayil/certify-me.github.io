@@ -11,7 +11,7 @@ sitemap.priority : 0.9
 HeroImg: /assets3/images1/community.png
 Hero1Msg: Digital Certificates and Badges
 Hero2Msg: For Associations
-Hero2Msg: The most reliable digital credential solution for associations to bring in, retain, and engage their members.
+Hero3Msg: The most reliable digital credential solution for associations to bring in, retain, and engage their members.
 
 
 1FeaturesImg: /assets3/images1/securechoice.png

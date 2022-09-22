@@ -11,8 +11,8 @@ sitemap.priority : 0.9
 HeroImg: /assets3/images1/elearning.png
 Hero1Msg: Online Badges and Certificates 
 Hero2Msg: For Elearning Platforms
-Hero2Msg: The most Trusted Credentialing Solution with the best ROI for online course providers.
-          ELearning platforms can offer students digital certificates and badges as they progress during the course as well as after completion of the course.
+Hero3Msg: The most Trusted Credentialing Solution with the best ROI for online course providers.
+          Elearning platforms can offer students digital certificates and badges as they progress during the course as well as after completion of the course.
 
 
 
