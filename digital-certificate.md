@@ -1,40 +1,36 @@
 ---
 title: "Digital Certificate Maker"
 
-description: "Complete solution for creating, issuing and managing verifiable digital certificates"
+description: "Digital certificates are a great way to show your awardees that you genuinely value their achievements"
 
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
 
 
-HeroImg: /assets3/images1/digitalcertificate.png
-Hero1Msg: Digital Certificates
-Hero2Msg: With tamper-proof, verifiable credentials, CertifyMe has assisted 1000+ users in 190 countries.
-          Our seamless digital certificate management solution, designed with security first in mind, allows
-          you to create, issue, and manage verifiable certificates.
+HeroImg: /assets3/images1/digital-certificate.png
+Hero1Msg: Start Award
+Hero2Msg: Verifiable Certificates
+Hero3Msg: With our advanced features, you can easily create, issue, and manage certificates that are branded and professional. This will make your awardees proud and show that you are committed to providing them with the recognition they deserve.        
 
-1FeaturesImg: /assets3/images1/branded.png
-1FeaturesTitle: Easily customizable
-1FeaturesMessage: You may quickly set up your own Digital Credential Platform in the business domain with CertifyMe's White Labeled solutions. 
-                  Our dedicated servers will manage your credential systems, guaranteeing a high level of security and customization.
-                  
-2FeaturesImg: /assets3/images1/manage.png
-2FeaturesTitle: 40+ Features
-2FeaturesMessage: Every one of our credentials has a special QR Code that can be connected to the recipient's unique IDs. 
-                  Your awardee can post your credentials on more than 50+ social media platforms effortlessly thanks to CertifyMe. 
-                  Then there are RSA SHA-1-based cryptographic signatures, Id Tagging, barcodes, and more.
-                  
-                  
-3FeaturesImg: /assets3/images1/create.png
-3FeaturesTitle: Advanced Image Editor
-3FeaturesMessage: Our Advanced Editor helps to create and edit digital certificates.
-                  An option of unlimited custom attributes will aid you to use the placeholders as per your requirement.
+1FeaturesImg: /assets3/images1/editor.png
+1FeaturesTitle: Advanced Certificate Editor
+1FeaturesMessage: Canva's advanced certificate editor allows users to create custom certificates from scratch or upload a pre-made design. The editor is very user-friendly and has a lot of features. Users can assign dynamic fields to the certificates, which is very helpful. They can also add a QR code, change the layout, and upload their images.
 
-4FeaturesImg: /assets3/images1/canva.png
-4FeaturesTitle: Canva Integration
-4FeaturesMessage: Canva Integration let you to create certificates which is more flexible and user friendly.
+                  
+2FeaturesImg: /assets3/images1/immutable-credentials.png
+2FeaturesTitle: Immutable Certificates
+2FeaturesMessage: Immutable certificates are digitally signed and encrypted by us, and only you can decrypt them. This means that you can be sure that the certificate is authentic and that it comes from an authorized source. We believe in transparency and security. These features are essential for protecting your data from hackers, phishing scams and identity theft. By issuing immutable certificates through our platform we can ensure that our customers get the highest level of protection against these threats. We have
 
+                  
+3FeaturesImg: /assets3/images1/API.png
+3FeaturesTitle:  Integrations and Analytics
+3FeaturesMessage: In the digital age, one of the most important skills you can have is knowing how to analyze data. Whether it's customer behaviour, sales numbers, or even your performance metrics, data helps you make more informed decisions. But it's not always easy to get access to all of the data you need to make those decisions. That's where integrated analytics come in. An integrated analytics platform provides an end-to-end solution for delivering business intelligence from multiple data sources. This means that instead of having to build a solution yourself, you can get everything you need right off the bat—all in one place! We also have integration with zapier, Popular LMS Platforms and Integrately to award credentials.
+
+
+4FeaturesImg: /assets3/images1/whitelabel.png
+4FeaturesTitle: Branded Certificate Page
+4FeaturesMessage: Award certificates with complete branded verification page which helps to boost the brand awareness.Institutions can customize everything from the URL to the footer which matches the brand guidelines.
 
 
 

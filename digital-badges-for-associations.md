@@ -1,41 +1,37 @@
 ---
 title: "Digital Credential Software For Associations"
 
-description: "Attarct,Retain and engage members by issuing sharable digital credentials. Most essential tool for associations to create and issue digital badges and certificates"
+description: "An end-to-end solution for creating, issuing, and managing certificates and badges for associations and communities."
 
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
 
 
-HeroImg: /assets3/images1/community.png
+HeroImg: /assets3/images1/Associations.png
 Hero1Msg: Digital Certificates and Badges
 Hero2Msg: For Associations
-Hero3Msg: The most reliable digital credential solution for associations to bring in, retain, and engage their members.
+Hero3Msg: An end-to-end solution for creating, issuing, and managing certificates and badges for associations and communities.
 
 
-1FeaturesImg: /assets3/images1/securechoice.png
-1FeaturesTitle: The Most Trusted Choice for Associations
-1FeaturesMessage: The use of advanced technology and service as a priority CertifyMe is the most trusted choice for Association for digital badging and Certification.
-                  Using our White Labeled solutions, stand out by deploying your own Digital Credential Platform. Our platform enables you to brand 
-                  your credentials and allows you to white-label them to suit your brand standards.
+1FeaturesImg: /assets3/images1/editor.png
+1FeaturesTitle: Create Credential Templates
+1FeaturesMessage: Credential templates can be created with three simple steps. We have an unlimited repository of templates, and users can upload or design their credential images. Canva Integration makes it easy for users to design their images. Canva Integration makes it easy for users to design their images for their credential templates. With just a few clicks, users can have access to a wide variety of tools and resources that they can use to create their unique images.
 
+2FeaturesImg: /assets3/images1/Branding.png
+2FeaturesTitle: Branding Space with CTA
+2FeaturesMessage: The branding space with CTA button on your verification page is one of the most important elements of your page. It is the call to action that tells your visitors what you want them to do next. If you are not using a CTA button, you are missing out on a great opportunity to increase your inbound traffic and collect leads.
 
-2FeaturesImg: /assets3/images1/secure.png
-2FeaturesTitle: We Prioritize your Security
-2FeaturesMessage: Professional Associations can issue credentials with enterprise-level security and operations with our platform which 
-                  upholds various ISO certifications, GDPR compliance, and other enhanced security standards. Our data security specialists 
-                  and compliance officers examine, test, and evaluate the security, privacy, and quality measures on a constant schedule.
+3FeaturesImg: /assets3/images1/Logo.png
+3FeaturesTitle: Branded Credentials
+3FeaturesMessage: Using our white-labelling option users can customize the verification page with their URL, logo and footer which fits their brand. Which helps to issue credentials as a front-end issuer. This is a great option when you're just getting started. Using our full support option we allow users to customize their verification profile with logo, URL, footers and other features. We also provide quick access to a support page.
 
-3FeaturesImg: /assets3/images1/branded.png
-3FeaturesTitle: Seamless Integration
-3FeaturesMessage: Use our REST API to directly connect to your platform or LMS or our Zapier integration to smoothly integrate your platforms. 
-                  Our fully featured API documentation, Zero code Integartion option and Pre Integrated LMS plugins allows you to integrate 
-                  CertifyMe to issue digital certificates and open badges within third party LMS and Applications.
                   
-4FeaturesImg: /assets3/images1/data.png
-4FeaturesTitle: Analytics at your fingertips
-4FeaturesMessage: We offer a three-level analytics solution that makes it easier to gain insightful knowledge about awardees and credentials KPIs.
+4FeaturesImg: /assets3/images1/Level3.png
+4FeaturesTitle: Analytics and Social Media
+4FeaturesMessage: We have three-level analytics which help the users to understand the matrices and success of the program. Users can share their credentials to 40+ social media and as an issuer, you can have zero-cost marketing with digital credentials. We also provide social management platforms like Facebook and Instagram as well as analytics of your web data.
+
+
 
 
 

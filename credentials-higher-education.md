@@ -1,41 +1,38 @@
 ---
 title: "Digital Credentials for Higher Education"
 
-description: "Immutable digital credential solutions for universities and colleges"
+description: "CertifyMe enables colleges and universities to issue certificates, badges and verifiable transcripts having bank-level encryptions and is enabled with quantum ledger and blockchain to make credentials tamper-proof. "
 
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
 
 
-HeroImg: /assets3/images1/college.png
+HeroImg: /assets3/images1/University.png
 Hero1Msg: Immutable Digital Credentials 
 Hero2Msg: For Universities and Colleges
-Hero3Msg: Create, Issue, Share and Validate Immutable digital certificates, badges, transcripts and reports
-          with the most advanced digital credentialing solution
+Hero3Msg: CertifyMe enables colleges and universities to issue certificates, badges and verifiable transcripts having bank-level encryptions 
 
+1FeaturesImg: /assets3/images1/security.png
+1FeaturesTitle: Secure Wallet
+1FeaturesMessage: Students can store their credentials secure in our wallet option. Wallets can be customized to suit organizations' branding. It includes a secure website, email address, SMS, and biometric access verification. Your students will be redirected to the official website of the company. The student will access the website and fill out the form to complete the KYC process. Once done, students can use their saved credentials
 
-1FeaturesImg: /assets3/images1/Brandingbadge.png
-1FeaturesTitle: Immutable Blockchain Credentials
-1FeaturesMessage: Scale up with our immutable digital credential solution to award candidates with protected, encrypted and secure
-                  digital credentials. With the use of advanced technologies like AWS Quantum ledgers, and Blockchain makes credentials
-                  Transparent, immutable and cryptographically verifiable so you never have to worry about fraud.
+2FeaturesImg: /assets3/images1/Branding.png
+2FeaturesTitle: WhiteLabeled Credentials
+2FeaturesMessage: Issue credentials as a front-end face for your organization by customizing the URL, logo, Email and footer part also they get a branding space to highlight the institution's credentials. The same as the customisation part, but the only difference is the look & feel & colour style of it.
 
-2FeaturesImg: /assets3/images1/URL.png
-2FeaturesTitle: Certificates, badges , Transcripts and More
-2FeaturesMessage: Using our advanced tools higher education institutions can create, issue and manage certificates, badges, transcripts and more
-                  With custom fields, visual credential editor with multiple layouts, Attributes, Image upload option, CSV and API for issuing Credentials.
-
-3FeaturesImg: /assets3/images1/Logobadge.png
-3FeaturesTitle: Add to profile
-3FeaturesMessage: Students can attach their acheivements in their linkedin profile and highlight over 40+ social media platforms
-
+3FeaturesImg: /assets3/images1/immutable-credentials.png
+3FeaturesTitle: Quantum Ledger and Blockchain
+3FeaturesMessage: Students can attach their certification to their LinkedIn profile and it helps them to highlight their achievements before prospective employers. If you are looking for a job, you can add it to your resume and let it stand out.
                   
-4FeaturesImg: /assets3/images1/Brandingbadge.png
-4FeaturesTitle: Customizable for your brand
-4FeaturesMessage: CertifyMe enables to customize the credential page which suits your branding page.
-                  Add your URL, Logo on Nav bar , branding space and footer customization makes you the front end of issuing credentials.
-                  We are open for any kind of customization and features to enable you.
+4FeaturesImg: /assets3/images1/setup-badge.png
+4FeaturesTitle: Time saver
+4FeaturesMessage: Easy and flexible to use solution which saves 4x the time of an admin. Our interface is beginner-friendly and users can create, issue and manage credentials within a lesser time frame. We have our API which will give us unlimited access. The UI is easy to understand and easy for admins to start using. You can add users, create new roles, add custom fields and customize the interface.
+
+5FeaturesImg: /assets3/images1/reward-badge.png
+5FeaturesTitle: Add to profile
+5FeaturesMessage: Students can attach their certification to their LinkedIn profile and it helps them to highlight their achievements before prospective employers. If you are looking for a job, you can add it to your resume and let it stand out.
+
 
 
 

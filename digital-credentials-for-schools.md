@@ -1,45 +1,35 @@
 ---
 title: "Digital credentials for schools"
 
-description: "Highlight and motivate with digital credentials to encourage users to achieve specific goals in learning"
+description: "Schools can use the feature to create a school's own digital identity; this helps them build their brand and engage with potential students."
 
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
 
 
-HeroImg: /assets3/images1/school.png
+HeroImg: /assets3/images1/Schools.png
 Hero1Msg: Digital Credentials
 Hero2Msg: For Schools
-Hero3Msg: An end to end solution for schools to create verifiable digital documents.
+Hero3Msg: Certifyme enables schools to create, issue and manage verifiable certificates, badges, id cards, reports and many more.
 
 
-1FeaturesImg: /assets3/images1/credentials.png
-1FeaturesTitle: Digital Badges and Certificates
-1FeaturesMessage: CertifyMe enables Schools to create, issue and manage digital badges and certificates. 
-                  Digital certificates and badges can engage and motivate students to earn goals in learning and other activites.
-                  Our secure and easy to use tool simplify the process of creating and issuing online badges and certificates for schools.
-                  Students can easily share their certificates or badges into different social media platforms and highlight their achievements.
+1FeaturesImg: /assets3/images1/editor.png
+1FeaturesTitle: Create Credentials
+1FeaturesMessage: One of the most effective ways to motivate students is to provide them with credentials. Credentials are an important way for students to show their commitment, and they can have a significant impact on the engagement rate of your pupils. If you already have a student record system in place, we can help you create credentials for your students.
+
                   
-2FeaturesImg: /assets3/images1/idcards.png
-2FeaturesTitle: ID Cards
-2FeaturesMessage: Schools and Institutions can create and issue Verifiable ID cards for their students using our tool.
-                  Helps to verify the students using the QR code. Upload candidates photo and create image templates using our 
-                  advanced editor or canva Integration.
+2FeaturesImg: /assets3/images1/time.png
+2FeaturesTitle: Saves Time
+2FeaturesMessage: You know you're not a bad admin when your team can spend less time on the job. With Certifyme, we help you create, issue and manage credentials in just three easy steps. You can create credentials using just two clicks—and then send out hundreds of them with a single click. And creating a new credential is as simple as clicking a button. With our advanced management options, it's easy to see who has what credentials, how many they have and when they expire.
                   
-3FeaturesImg: /assets3/images1/reportcards.png
-3FeaturesTitle: Report Cards
-3FeaturesMessage: Quick and Easy to create and issue digital report cards. Customizable report cards with custom atributes. 
-                  Can update the report card design with our advanced editor and canva integration. 
-                  Issue report card using CSV file or automate it using Integrations and verify it with our three level verification.
+3FeaturesImg: /assets3/images1/Logo.png
+3FeaturesTitle: Branded Credentials
+3FeaturesMessage: You can now customize your credentials with your school's domain, logo and footer. This makes it easy to make sure that you're creating a strong brand for your students and their accomplishments.
                   
-3FeaturesImg: /assets3/images1/onetool.png
-3FeaturesTitle: All in One Verifiable document solution for schools
-3FeaturesMessage: The user-friendly CertifyMe interface assists Universities, Colleges, and Schools in the creation, issue, monitoring, and 
-                  sharing of Digital Credentials. Our crypto-immutable credentials for quick credential verification could be of great use to students. 
-                  Students could post their credentials across more than 50 social media platforms, increasing both their brand value and visibility 
-                  across all professional networking platforms. Connect your favorite LMS securely to our digital management platform. We are pre-integrated 
-                  with Moodle, Thinkific, Learndash, Zoom, Kajabi, and Docebo
+3FeaturesImg: /assets3/images1/linkedin-badges.png
+3FeaturesTitle: Sharable
+3FeaturesMessage: Students can now share their achievements over different social media platforms to highlight their awards. The students will be able to post their achievements in the form of a screenshot, videos or a photo over various social media platforms such as Twitter, Facebook, Instagram and Snapchat. The students will also be able to share their achievements via email and SMS.
                   
                   
                   

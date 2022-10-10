@@ -1,43 +1,40 @@
 ---
 title: "Professional Training Credentials"
 
-description: "The most Advanced credentialing features to enable professional training provider to start issuing verifiable online badges and certificates"
+description: "We are dedicated to helping organizations reach their training objectives by providing flexible, scalable, and affordable credentialing solutions"
 
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
 
 
-HeroImg: /assets3/images1/coaching.png
+HeroImg: /assets3/images1/training.png
 Hero1Msg: Verifiable Badges and Certificates 
 Hero2Msg: For Professional Training Providers
-Hero3Msg: Our Automated workflow enables professional training providers to issue 
+Hero2Msg: Our Automated workflow enables professional training providers to issue 
           credentials in a couple of clicks
 
 
-1FeaturesImg: /assets3/images1/secure.png
-1FeaturesTitle: The Most Secure Credential Platform
-1FeaturesMessage: Professional training providers can issue skill badges and certificates from the most secure credential platform 
-                  We provides records with enterprise-level security and maintain multiple ISO certifications, GDPR compliance, 
-                  and other diligent security protocols.
+1FeaturesImg: /assets3/images1/whitelabel.png
+1FeaturesTitle: WhiteLabel Credentials
+1FeaturesMessage: The online identity management tool known as WhiteLabel makes it simple to build, manage, and market your digital identity. Your credential page, domain, logo, branding space, emails, and footer may all be customised with WhiteLabel Credentials.
 
-2FeaturesImg: /assets3/images1/branded.png
-2FeaturesTitle: Custom Credential Pages
-2FeaturesMessage: Training Providers can issue credentials and white-label them to suit your brand standards.
-                  Organisations can add custom URL, Logo on Nav Bar, Branding Space, Footer Customisatioin which
-                  stand out by deploying your own Digital Credential Platform in your industry.
 
-3FeaturesImg: /assets3/images1/api.png
-3FeaturesTitle: Integration with LMS Platforms and Third Party Applications
-3FeaturesMessage: Through our Integration users can issue credentials automatically to the candidate once they successfully
-                  complete the course, program or event. Users can Integrate certifyme with a third party application through our Zapier, Integrately, Rest API.
-                  Also We are available on popular LMS platforms as a plugin
+2FeaturesImg: /assets3/images1/Email.png
+2FeaturesTitle: Instant Delivery
+2FeaturesMessage: Instant delivery of certification to the candidate is only possible with the help of blockchain and smart contracts. This is one of the features that make CertifyMe unique and fully decentralized. The blockchain will be used for storing the credentials issued by accreditation organizations. The smart contract verifies the ownership of issued credentials. This helps in resolving the issue of trust among the parties involved in the educational system.
 
-                  
-4FeaturesImg: /assets3/images1/data.png
-4FeaturesTitle: Analytics
-4FeaturesMessage: With our three level advanced analytics option makes it easier to know the key matrices.
-                  Users can manage the credentialing and check the effectiveness using the analytics
+3FeaturesImg: /assets3/images1/LMS.png
+3FeaturesTitle: Automated Process
+3FeaturesMessage: Integrations to issue certificates. Using Zapier, API and LMS plugins. A new certificate requirements report is created in the LMS a certificate is issued. When a visitor completes a course, a mark is added to the reports in the LMS. A Zapier automation is configured to transfer data from the reports in the LMS to an API. The API allows the certificate issuer to view a certificate report.
+                 
+4FeaturesImg: /assets3/images1/level1.png
+4FeaturesTitle: Zero Cost Marketing
+4FeaturesMessage: There are some great ways to market your program for free. Giving your learners an incentive to share your program on social media is one of the most effective ways to make marketing free. When someone shares your content, you will usually see an increase in organic traffic to your website which is free traffic. You can reward them for sharing your content by including a bonus or discount if they share your content.
+
+5FeaturesImg: /assets3/images1/blockchain-badge.png
+5FeaturesTitle: Your Brand – Protected
+5FeaturesMessage: A new way to build trust, protect your awards and preserve the integrity of your credentialing process. Fraud-proof credentials are secured with bank-level encryption and blockchain technology. Retain full control over the validity and expiration of credentials to protect the integrity of your awards and encourage recertification.
 
 
 

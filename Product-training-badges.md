@@ -8,34 +8,23 @@ layout: V2LayoutPages
 sitemap.priority : 0.9
 
 
-HeroImg: /assets3/images1/training.png
+HeroImg: /assets3/images1/product.png
 Hero1Msg: Verifiable Badges and Certificates 
 Hero2Msg: For Product Training
 Hero2Msg: A complete digital credential solution for product training.
 
 
-1FeaturesImg: /assets3/images1/branded.png
-1FeaturesTitle: Branded Credentials
-1FeaturesMessage: Issue credentials in your branding. Using our whitelabel solutions you can issue credentials 
-                  that look and matches the feel of your brand. You can add your URL, Logo, footer and advertisment with CTA.
+1FeaturesImg: /assets3/images1/Branding.png
+1FeaturesTitle: Create Awareness
+1FeaturesMessage: Digital credentials are a way to create awareness of product training. These socially shareable badges and certificates create social waves and they will positively impact your product. With our three-tier analytics, you can check the success of your training program and scale up and down to millions of badges in the future. This will also create a social wave to spread your knowledge and build your brand. This will create awareness of your products and training programs. Create awareness for your industry. 
 
-2FeaturesImg: /assets3/images1/secure.png
-2FeaturesTitle: Protect Your Credentials
-2FeaturesMessage: Advanced technologies like AWS quantum ledger and blockchain to make your credential secure, immutable and transparent.
-                  Get tamper-proof credentials that are secured with bank level encryption.
+2FeaturesImg: /assets3/images1/secure-badge.png
+2FeaturesTitle: Secure with qldb
+2FeaturesMessage: Make your credentials immutable, transparent and cryptographically verifiable with aws quantum ledger. The protocol will be similar to RSA and HMAC except that you will not need to sign the user's key. Using qlde, you can authenticate your users with their identity keys and will have a clean private key with no associated signing keys. 
 
-3FeaturesImg: /assets3/images1/api.png
-3FeaturesTitle: Automated Workflow
-3FeaturesMessage: Automate issuing credentials with our Integrations.
-                  We are integrated with popular LMS platforms as a plugin and we are available on zero code integration platforms like
-                  zapier and integrately. Using our Rest API documentation users can integrate certifyme with any other system.
-
-                  
-4FeaturesImg: /assets3/images1/data.png
-4FeaturesTitle: Analytics Dashboard
-4FeaturesMessage: Track the success of your credentialing using our three level analytics dashboard.
-                  Our advanced credentialing software quickly demonstrate all the data in your analytics dashboard
-                  You can measure the ROI of your product training program.
+3FeaturesImg: /assets3/images1/LMS.png
+3FeaturesTitle: Integrations
+3FeaturesMessage: API, Zapier, and LMS plugins to award credentials automatically from our system. This will reduce your manual effort while issuing more efficient codes. You can also use your API key to automate this process. By default, the login box on the website is configured as a token-based authentication system, you can always choose an alternative. All the APIs are enabled for token authentication.
 
 
 
