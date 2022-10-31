@@ -8,15 +8,15 @@ layout: V2LayoutPages
 sitemap.priority : 0.9
 
 
-HeroImg: /assets3/images1/digital-signature.png
+HeroImg: /assets3/images1/Signature.png
 Hero1Msg: Advanced
 Hero2Msg: Cryptographic Signature
-Hero3Msg: Make Credentials secure, immutable and cryptographically verifiable.
+Hero3Msg: Make Your Credentials secure, immutable and cryptographically verifiable using public and private key.
 
 
 1FeaturesImg: /assets3/images1/immutable-credentials.png
 1FeaturesTitle: What is Cryptographic Signature
-1FeaturesMessage: A cryptographic signature is a mathematical technique used to validate the authenticity and integrity of a message, software or digital document. Signatures are based on public key cryptography, also known as asymmetric cryptography, which uses a pair of mutually authenticating keys – a public key and a private key – to encrypt and decrypt a message.
+1FeaturesMessage: A cryptographic signature is a mathematical technique used to validate the authenticity and integrity of your credential. Signatures are based on public key cryptography, also known as asymmetric cryptography, which uses a pair of mutually authenticating keys – a public key and a private key – to encrypt and decrypt a message.
 
 
 2FeaturesImg: /assets3/images1/RSA.png
@@ -25,6 +25,6 @@ Hero3Msg: Make Credentials secure, immutable and cryptographically verifiable.
 
 3FeaturesImg: /assets3/images1/validate.png
 3FeaturesTitle: Securely Verify your Credentials
-3FeaturesMessage: When you use your cryptographic signature to verify your credentials, you're essentially saying, "I trust this third party or issuer to vouch for my credentials." This gives your credentials added legitimacy and helps to protect them from being forged.
+3FeaturesMessage: Use your cryptographic signature to verify credentials awarded, you're essentially saying, "I trust this issuer to vouch for my credentials." This gives your credentials added legitimacy and helps to protect them from being forged.
 
 ---
