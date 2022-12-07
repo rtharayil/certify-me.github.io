@@ -9,17 +9,18 @@ sitemap.priority : 0.9
 
 
 HeroImg: /assets3/images1/API-1.png
-Hero1Msg: Automate
-Hero2Msg: Awarding Verifiable Credentials
+Hero1Msg: Automation of Credentialing
+Hero2Msg: Use our plug-ins to automate
 Hero3Msg: Automate Issue, Retrive and Delete Certificates and badges using our Integrations
 
 1FeaturesImg: /assets3/images1/LMS.png
-1FeaturesTitle:  LMS Integration
-1FeaturesMessage: Take advantage of Certifyme's LMS Plugins to issue credentials. The integration with an Learning Management System into a company's existing infrastructure can provide many benefits. By using the LMS plugins users can instantly receive,retrieve and update their credentials.In addition, the LMS can be used to track progress and the completion of training requirements. Using LMS Plugins institutions can issue credentials without depedning on a third party application.
+1FeaturesTitle:  Learning Management System (LMS) Integration
+1FeaturesMessage: Take advantage of CertifyMe's Learning Management System (LMS) Plugins to issue credentials. The integration with a LMS into a company's existing infrastructure can provide many benefits. By using the LMS plugins users can instantly receive, retrieve and update their credentials.In addition, the LMS can be used to track progress and the completion of training requirements. Using LMS Plugins institutions can issue credentials without depedning on a third party application.
 
 2FeaturesImg: /assets3/images1/API.png
-2FeaturesTitle: API Documentation
-2FeaturesMessage: Ready to get started? Simply head over to our API docs to see our credentials list, parameters, and response codes. API documentation is a technical document that describes how to use a software programming interface. An API is a set of programming instructions that specify how one software application can communicate with another. Use our API documentation to post, Put, Get and Delete Credentials
+2FeaturesTitle: Application Programming Interface (API) Documentation
+2FeaturesMessage: Ready to get started? 
+ Simply head over to our API docs to see our credentials list, parameters, and response codes. API documentation is a technical document that describes how to use a software programming interface. An API is a set of programming instructions that specify how one software application can communicate with another. Use our API documentation to post, Put, Get and Delete Credentials.
 
 3FeaturesImg: /assets3/images1/Zapier.png
 3FeaturesTitle: Zapier Integration
