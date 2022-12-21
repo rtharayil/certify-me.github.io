@@ -986,3 +986,75 @@ footer {
 .logo-list li:hover img{
 	transform: scale(1.05);
 }
+
+.industrycontainer {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.go-corner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	top: 0;
+	right: 0;
+	background-color: #e01e5a;
+	border-radius: 0 4px 0 32px;
+}
+.go-arrow {
+	margin-top: -4px;
+	margin-right: -4px;
+	color: white;
+	font-family: courier, sans;
+}
+
+.card2 {
+	display: block;
+	top: 0px;
+	position: relative;
+	max-width: 262px;
+	background-color: #f9f2f8;
+	border-radius: 4px;
+	padding: 32px 24px;
+	margin: 12px;
+	text-decoration: none;
+	z-index: 0;
+	overflow: hidden;
+	border: 1px solid #f9f2f8;
+	
+}
+.card2:hover {
+	transition: all 0.2s ease-out;
+	box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+	top: -4px;
+	border: 1px solid #ccc;
+	background-color: white;
+}
+
+
+.card2:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: -16px;
+	right: -16px;
+	background: #e01e5a;
+	height: 32px;
+	width: 32px;
+	border-radius: 32px;
+	transform: scale(2);
+	transform-origin: 50% 50%;
+	transition: transform 0.15s ease-out;
+}
+.card2:hover:before {
+	transform: scale(2.15);
+}
+
