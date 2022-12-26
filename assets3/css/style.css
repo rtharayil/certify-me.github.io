@@ -1,38 +1,4 @@
-/*===== FONTS ======*/
-@font-face {
-	font-family: 'Int Circular PTT Light';
-	src: url('../fonts/IntCircularPTT-Light.woff') format('woff');
-}
 
-@font-face {
-	font-family: 'Int Circular PTT Thin';
-	src: url('../fonts/IntCircularPTT-Thin.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Int Circular PTT Bold';
-	src: url('../fonts/IntCircularPTT-Bold.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Int Circular PTT';
-	src: url('../fonts/IntCircularPTT-Medium.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Int Circular PTT Book';
-	src: url('../fonts/IntCircularPTT-Book.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Int Circular PTT Black';
-	src: url('../fonts/IntCircularPTT-Black.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Larsseit';
-	src: url('../fonts/Larsseit.otf') format('OpenType');
-}
 
 /*====== STRUCTURE =======*/
 html {
@@ -185,7 +151,7 @@ label {
 	-o-transition: all .6s ease-in-out;
 	transition: all .6s ease-in-out;
 	margin-left: 30px;
-	font-family: 'Int Circular PTT';
+	font-family: "Montserrat", sans-serif;
 }
 
 .btn-try:hover {
@@ -346,7 +312,7 @@ label {
 }
 
 .hero-left h1 {
-	font-family: 'Larsseit';
+	font-family: "Montserrat", sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 64px;
@@ -368,7 +334,7 @@ label {
 	font-size: 18px;
 	line-height: 33px;
 	color: #FFFFFF;
-	font-family: 'Int Circular PTT';
+	font-family: "Montserrat", sans-serif;
 	margin-bottom: 50px;
 	max-width: 500px;
 	text-align: justify;
@@ -546,7 +512,7 @@ svg path {
 }
 
 .pricing-header-text {
-	font-family: 'Larsseit';
+	font-family: "Montserrat", sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 26px;
@@ -556,7 +522,7 @@ svg path {
 }
 
 .price-text {
-	font-family: 'Larsseit';
+	font-family: "Montserrat", sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 52px;
@@ -569,7 +535,7 @@ svg path {
 .p-font-small {
 	font-weight: 500 !important;
 	font-size: 24px !important;
-	font-family: 'Larsseit' !important;
+	font-family: "Montserrat", sans-serif;
 	line-height: 24px !important;
 	top: -20px;
 	margin-right: 10px;
@@ -580,7 +546,7 @@ svg path {
 	font-size: 52px;
 	color: #596B8D !important;
 	font-weight: 450 !important;
-	font-family: 'Int Circular PTT Thin' !important;
+	font-family: "Montserrat", sans-serif;
 	transform: translateY(10px);
 }
 
@@ -788,7 +754,7 @@ input:checked+.slider:before {
 	line-height: 60px;
 	color: #FFFFFF;
 	text-align: center;
-	font-family: 'Larsseit';
+	font-family: "Montserrat", sans-serif;
 	margin-bottom: 15px;
 }
 
@@ -798,7 +764,7 @@ input:checked+.slider:before {
 	line-height: 23px;
 	color: #FFFFFF;
 	text-align: center;
-	font-family: 'Int Circular PTT Light';
+	font-family: "Montserrat", sans-serif;
 }
 
 /*=======about css==========*/
@@ -871,7 +837,7 @@ footer {
 }
 
 .footer-links a {
-	font-family: 'Int Circular PTT Light';
+	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
 	line-height: 34px;
 	color: #FFFFFF;
@@ -902,7 +868,7 @@ footer {
 	font-size: 14px;
 	line-height: 34px;
 	color: #FFFFFF;
-	font-family: 'Int Circular PTT Light';
+	font-family: "Montserrat", sans-serif;
 }
 
 .phone:hover,
@@ -935,7 +901,7 @@ footer {
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 14px;
-	font-family: 'Int Circular PTT Light';
+	font-family: "Montserrat", sans-serif;
 	color: #FFFFFF;
 }
 
@@ -1006,14 +972,14 @@ footer {
 	overflow: hidden;
 	top: 0;
 	right: 0;
-	background-color: #e01e5a;
+	background-color: #541554;
 	border-radius: 0 4px 0 32px;
 }
 .go-arrow {
 	margin-top: -4px;
 	margin-right: -4px;
 	color: white;
-	font-family: courier, sans;
+	font-family: "Montserrat", sans-serif;
 }
 
 .card2 {
@@ -1046,7 +1012,7 @@ footer {
 	z-index: -1;
 	top: -16px;
 	right: -16px;
-	background: #e01e5a;
+	background: #541554;
 	height: 32px;
 	width: 32px;
 	border-radius: 32px;
