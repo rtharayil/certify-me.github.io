@@ -34,7 +34,7 @@
                          </span>0 <span class="seprator">/</span> <span class="p-month">month</span> </h3>
                         
                         </div>
-                        <div class="text2">
+                        <div  class="text2">
                       <h3 class="price-text "> <span class="p-font-small"><svg width="12" height="23"
                                viewBox="0 0 12 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                <path
@@ -195,5 +195,24 @@
        </div>
     </div>
     </div>
+    <script>
+function check2() {
+  var checkBox = document.getElementById("checbox");
+  var text1 = document.getElementsByClassName("text1");
+  var text2 = document.getElementsByClassName("text2");
+
+  for (var i = 0; i < text1.length; i++) {
+    if (checkBox.checked == false) {
+      text1[i].style.display = "block";
+      text2[i].style.display = "none";
+    } else if (checkBox.checked == true) {
+      text1[i].style.display = "none";
+      text2[i].style.display = "block";
+    }
+  }
+}
+check2();
+
+    </script>
  </section>
  <!---- PRICING SECTION END -->
