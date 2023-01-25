@@ -8,7 +8,7 @@ layout: V2LayoutPages
 sitemap.priority : 0.9
 
 
-HeroImg: /assets3/Image3/Banking.png
+HeroImg: 
 Hero1Msg: Digital Credentials 
 Hero2Msg: for Banking and Finance
 Hero3Msg: Verifiable Bank Statements, Insurance Credentials, Invoices.

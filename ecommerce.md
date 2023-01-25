@@ -8,7 +8,7 @@ layout: V2LayoutPages
 sitemap.priority : 0.9
 
 
-HeroImg: /assets3/images1/.png
+HeroImg: 
 Hero1Msg: White-Labeled
 Hero2Msg: Product Verification Software
 Hero3Msg: Digitally Verifiable Warranty Cards, Proof of authenticity for ecommerce.

@@ -8,7 +8,7 @@ layout: V2LayoutPages
 sitemap.priority : 0.9
 
 
-HeroImg: /assets3/Image3/government.png
+HeroImg:
 Hero1Msg: Premium Digital Credentials
 Hero2Msg: for Government Institutions
 Hero3Msg: Verifiable Birth Certificates, ID Proof, License, Land Records for Government Institutions

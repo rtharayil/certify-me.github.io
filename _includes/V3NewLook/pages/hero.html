@@ -88,7 +88,17 @@
           </div>
           <div class="hero-right col-lg-5 col-md-12">
              <div class="hero-img">
-                <img src="{{page.HeroImg}}" alt="{{page.Hero1Msg}}" class="img-fluid" style =" max-height: 600px;"/>
+
+                <img 
+                {% if page.HeroImg %}
+                src="{{page.HeroImg}}" 
+                {% else %}
+                src="/assets3/images/hero-img.png" 
+                {% endif %}
+                
+                alt="{{page.Hero1Msg}}" class="img-fluid" style =" max-height: 600px;"/>
+
+
              </div>
           </div>
        </div>
