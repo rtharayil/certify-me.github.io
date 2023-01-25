@@ -58,19 +58,7 @@ featured: true
 * Link [Features and Pricing]( https://certifyme.online/res/CertifyMeOnlineFeatures.pdf). 
 
 ----
-#### Credential Patners login
-* Link [CerifyMe Credential Login ](https://credential.certifyme.online)
-* Link [Quadralogics Credential Login ](https://certificate.quadralogics.com)
-* Link [Hurun Credential Login ](https://certificate.hurunindia.net)
-* Link [Accelq Credential Login ](https://certificate.accelq.com)
-* Link [ATA Credential Login ](https://credentials.agiletestingalliance.org)
-* Link [Enterprise Agility University Credential Login ](https://credential.enterpriseagility.university)
-* Link [One l Xp Credential Login ](https://certificate.onelxp.com)
 
-* Link [One l Xp Credential Login ](https://certificate.agilemania.com/sitemap.xml)
 
-* Link [One l Xp Credential Login ](https://certificate.vlookup)
-* Link [One l Xp Credential Login ](https://certificate.etmasterclass.com)
-* Link [One l Xp Credential Login ](https:certificate.innovativegroup-usa.com)
 
 
