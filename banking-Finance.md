@@ -9,9 +9,9 @@ sitemap.priority : 0.9
 
 
 HeroImg: 
-Hero1Msg: Digital Credentials 
-Hero2Msg: for Banking and Finance
-Hero3Msg: Verifiable Bank Statements, Insurance Credentials, Invoices.
+Hero1Msg: Stay ahead of forgery
+Hero2Msg: Safeguard your brand and trust
+Hero3Msg: Only issue Verifiable Bank Statements, Insurance Credentials, Invoices.
 
 
 1FeaturesImg: /assets3/Image3/10.png

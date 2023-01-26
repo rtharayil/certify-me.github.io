@@ -10,7 +10,7 @@ sitemap.priority : 0.9
 
 HeroImg: 
 Hero1Msg: Safeguard Your Brand 
-Hero2Msg: Tamper-proof Proof of Authenticity Certificates
+Hero2Msg: using tamper-proof Proof of Authenticity Certificates
 Hero3Msg: Digitally Verifiable Warranty Cards, and more for your products.
 
 

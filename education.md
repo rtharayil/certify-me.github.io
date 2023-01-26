@@ -11,8 +11,7 @@ sitemap.priority : 0.9
 HeroImg: 
 Hero1Msg: Add More Value 
 Hero2Msg: to your Learning programs
-Hero3Msg: Award Verifiable, Secure & Blockchain-enabled Transcripts, Learning Badges, ID cards,and Report Cards for educational Institutions
-
+Hero3Msg: Award Verifiable, Secure & Blockchain-enabled Transcripts, Learning Badges, ID cards,and Report Cards 
 
 1FeaturesImg: /assets3/Image3/1.png
 1FeaturesTitle: Transcripts/degree certificates
