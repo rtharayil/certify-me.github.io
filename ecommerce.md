@@ -9,9 +9,9 @@ sitemap.priority : 0.9
 
 
 HeroImg: 
-Hero1Msg: White-Labeled
-Hero2Msg: Product Verification Software
-Hero3Msg: Digitally Verifiable Warranty Cards, Proof of authenticity for ecommerce.
+Hero1Msg: Safeguard Your Brand 
+Hero2Msg: Tamper-proof Proof of Authenticity Certificates
+Hero3Msg: Digitally Verifiable Warranty Cards, and more for your products.
 
 
 1FeaturesImg: /assets3/Image3/5.png

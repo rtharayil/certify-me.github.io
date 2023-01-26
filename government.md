@@ -9,9 +9,9 @@ sitemap.priority : 0.9
 
 
 HeroImg:
-Hero1Msg: Premium Digital Credentials
-Hero2Msg: for Government Institutions
-Hero3Msg: Verifiable Birth Certificates, ID Proof, License, Land Records for Government Institutions
+Hero1Msg:  Verifiable Birth Certificates,
+Hero2Msg:  ID Proof, License, Land Records for Government Institutions 
+Hero3Msg: Enterprise grade Digital Credentials for Government departments
 
 
 1FeaturesImg: /assets3/Image3/13.png

@@ -9,9 +9,9 @@ sitemap.priority : 0.9
 
 
 HeroImg: 
-Hero1Msg: White-Labeled
-Hero2Msg: Digital Credentials for Students
-Hero3Msg: Award Verifiable Transcripts, Learning Badges, ID cards,and Report Cards for educational Institutions
+Hero1Msg: Add More Value 
+Hero2Msg: to your Learning programs
+Hero3Msg: Award Verifiable, Secure & Blockchain-enabled Transcripts, Learning Badges, ID cards,and Report Cards for educational Institutions
 
 
 1FeaturesImg: /assets3/Image3/1.png
