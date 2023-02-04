@@ -271,7 +271,7 @@ label {
 
 #hero {
 	background: #551454;
-	height: 750px;
+	height: 600px;
 	width: 100%;
 	padding-top: 10vh;
 }
@@ -314,8 +314,8 @@ label {
 .hero-left h1 {
 	font-family: "Montserrat", sans-serif;
 	font-style: normal;
-	font-weight: 700;
-	font-size: 64px;
+	font-weight: 600;
+	font-size: 44px;
 	line-height: 76px;
 	color: #FFFFFF;
 	margin-bottom: 40px;
