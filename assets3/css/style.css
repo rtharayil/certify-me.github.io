@@ -271,7 +271,7 @@ label {
 
 #hero {
 	background: #551454;
-	height: 800px;
+	height: 750px;
 	width: 100%;
 	padding-top: 10vh;
 }
@@ -373,7 +373,7 @@ label {
 }
 
 .btn-yellow {
-	background: #ECB22E;
+	background: #1e5107;
 	color: #FFFFFF;
 }
 
@@ -731,7 +731,7 @@ input:checked+.slider:before {
 }
 
 .btn-expert {
-	background: #ECB22E;
+	background: #1e5107;
 }
 
 .btn-cert:hover {
