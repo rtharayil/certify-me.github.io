@@ -271,7 +271,7 @@ label {
 
 #hero {
 	background: #551454;
-	height: 800px;
+
 	width: 100%;
 	padding-top: 10vh;
 }
@@ -314,11 +314,11 @@ label {
 .hero-left h1 {
 	font-family: "Montserrat", sans-serif;
 	font-style: normal;
-	font-weight: 700;
-	font-size: 64px;
-	line-height: 76px;
+	font-weight: 600;
+	font-size: 44px;
+	line-height: 56px;
 	color: #FFFFFF;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .color-yellow {
@@ -335,7 +335,7 @@ label {
 	line-height: 33px;
 	color: #FFFFFF;
 	font-family: "Montserrat", sans-serif;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	max-width: 500px;
 	text-align: justify;
 }
@@ -373,7 +373,7 @@ label {
 }
 
 .btn-yellow {
-	background: #ECB22E;
+	background: #1e5107;
 	color: #FFFFFF;
 }
 
@@ -731,7 +731,7 @@ input:checked+.slider:before {
 }
 
 .btn-expert {
-	background: #ECB22E;
+	background: #1e5107;
 }
 
 .btn-cert:hover {

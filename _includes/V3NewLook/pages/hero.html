@@ -47,7 +47,7 @@
     </div>
     <div class="custom-continer h-100">
        <div class="hero-wrapper row h-100">
-          <div class="hero-left col-lg-6 col-md-12">
+          <div class="hero-left col-lg-7 col-md-12">
              <h1 class="  " data-animation="fadeInUp" data-animation-delay="0">{{page.Hero1Msg}} <br><span class="small-text">{{page.Hero2Msg}}</span>
              </h1>
              <p class=" " data-animation="fadeInUp" data-animation-delay="100">{{page.Hero3Msg}}</span>
@@ -86,9 +86,19 @@
                 Try CertifyMe Premium For Free
              </a>
           </div>
-          <div class="hero-right col-lg-6 col-md-12">
+          <div class="hero-right col-lg-5 col-md-12">
              <div class="hero-img">
-                <img src="{{page.HeroImg}}" alt="image" class="img-fluid" style =" max-height: 600px;"/>
+
+                <img 
+                {% if page.HeroImg %}
+                src="{{page.HeroImg}}" 
+                {% else %}
+                src="/assets3/images/hero-img.png" 
+                {% endif %}
+                
+                alt="{{page.Hero1Msg}}" class="img-fluid" style =" max-height: 600px;"/>
+
+
              </div>
           </div>
        </div>
