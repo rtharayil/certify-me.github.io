@@ -146,7 +146,7 @@ label {
 	font-weight: 450;
 	font-size: 16px;
 	line-height: 24px;
-	color: #551454;
+	color: #671E4E;
 	-webkit-transition: all .6s ease-in-out;
 	-o-transition: all .6s ease-in-out;
 	transition: all .6s ease-in-out;
@@ -162,7 +162,7 @@ label {
 }
 
 .nav-white {
-	background: #551454;
+	background: #671E4E;
 	-webkit-box-shadow: 0px 10px 20px 0px rgb(85 20 84 / 10%);
 	box-shadow: 0px 10px 20px 0px rgb(85 20 84 / 10%);
 	padding: 10px 230px;
@@ -212,7 +212,7 @@ label {
 }
 
 .drop-list a:hover {
-	color: #551454;
+	color: #671E4E;
 }
 
 .drop-list a svg {
@@ -270,7 +270,7 @@ label {
 }
 
 #hero {
-	background: #551454;
+	background: #671E4E;
 
 	width: 100%;
 	padding-top: 10vh;
@@ -364,7 +364,7 @@ label {
 
 .btn-white {
 	background: #FFFFFF;
-	color: #551454;
+	color: #671E4E;
 	margin-right: 30px;
 }
 
@@ -373,7 +373,7 @@ label {
 }
 
 .btn-yellow {
-	background: #1e5107;
+	background: #097C69;
 	color: #FFFFFF;
 }
 
@@ -405,7 +405,7 @@ label {
 .sec-heading h2 {
 	font-weight: 700;
 	font-size: 44px;
-	line-height: 44px;
+	line-height: 54px;
 	color: #000000;
 
 }
@@ -475,7 +475,7 @@ svg path {
 }
 
 .vip-card {
-	background: #541554;
+	background: #671E4E;
 	border: 1px solid rgba(255, 255, 255, 0.1);
 
 }
@@ -517,7 +517,7 @@ svg path {
 	font-weight: 600;
 	font-size: 26px;
 	line-height: 26px;
-	color: #541554;
+	color: #671E4E;
 	margin-bottom: 25px;
 }
 
@@ -527,7 +527,7 @@ svg path {
 	font-weight: 700;
 	font-size: 52px;
 	line-height: 52px;
-	color: #541554;
+	color: #671E4E;
 	display: flex;
 	align-items: flex-end;
 }
@@ -563,7 +563,7 @@ svg path {
 	font-weight: 450;
 	font-size: 17px;
 	line-height: 22px;
-	color: #541554;
+	color: #671E4E;
 	margin-top: 2px;
 }
 
@@ -608,7 +608,7 @@ svg path {
 }
 
 .btn-price:hover {
-	background: #541554;
+	background: #671E4E;
 	color: #fff;
 }
 
@@ -727,11 +727,11 @@ input:checked+.slider:before {
 }
 
 .btn-cert {
-	background: #541554;
+	background: #671E4E;
 }
 
 .btn-expert {
-	background: #1e5107;
+	background: #097C69;
 }
 
 .btn-cert:hover {
@@ -745,7 +745,7 @@ input:checked+.slider:before {
 /*===========Counter css=============*/
 .counter-main-container {
 	padding: 100px 0;
-	background: #541554;
+	background: #671E4E;
 }
 
 .counter-detail h4 {
@@ -785,7 +785,7 @@ input:checked+.slider:before {
 .about-main-container::before {
 	content: '';
 	position: absolute;
-	background: #541554;
+	background: #671E4E;
 	height: 120px;
 	top: 0;
 	width: 100%;
@@ -817,7 +817,7 @@ input:checked+.slider:before {
 /*======= FOOTER ====*/
 footer {
 
-	background: #541554;
+	background: #671E4E;
 }
 
 .footer-top {
@@ -972,7 +972,7 @@ footer {
 	overflow: hidden;
 	top: 0;
 	right: 0;
-	background-color: #541554;
+	background-color: #671E4E;
 	border-radius: 0 4px 0 32px;
 }
 .go-arrow {
@@ -987,15 +987,23 @@ footer {
 	top: 0px;
 	position: relative;
 	max-width: 262px;
-	background-color: #f9f2f8;
-	border-radius: 4px;
+	background-color: white;
+	border-radius: 15px;
 	padding: 32px 24px;
 	margin: 12px;
 	text-decoration: none;
 	z-index: 0;
 	overflow: hidden;
-	border: 1px solid #f9f2f8;
+	border: 1px solid white;
 	
+}
+.card2 h5 {
+	margin-top: 8px;
+	margin-bottom: 8px;
+
+}
+.card2 p{
+	color:#596B8D;
 }
 .card2:hover {
 	transition: all 0.2s ease-out;
@@ -1012,7 +1020,7 @@ footer {
 	z-index: -1;
 	top: -16px;
 	right: -16px;
-	background: #541554;
+	
 	height: 32px;
 	width: 32px;
 	border-radius: 32px;
