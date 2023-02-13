@@ -388,7 +388,7 @@ label {
 
 /*==========bagdes css=============*/
 .badges-main-container {
-	background: #FFFBF3;
+	background: white;
 	padding: 70px 0;
 }
 
@@ -705,7 +705,7 @@ input:checked+.slider:before {
 
 /*=======Enterprise css========*/
 .enterprise-main-container {
-	background: #FFFBF3;
+	background: White;
 	padding: 70px 0px;
 }
 
