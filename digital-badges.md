@@ -9,17 +9,19 @@ sitemap.priority : 0.9
 
 
 HeroImg: /assets3/images1/online-badge.png
-Hero1Msg: Digital Badges
-Hero2Msg: WhiteLabeled Verifiable Badges
-Hero3Msg: Start awarding verifiable badges to boost your company's credibility in the eyes of clients and customers. Scale up your program with whitelabeled digital badges.
+Hero1Msg: Issue Digital Badges 
+Hero2Msg: to Boost Your Organization Credibility
+Hero3Msg: Award Whitelabel-friendly digital badges to acknowledge the hard work students, candidates, and employees have put forth to help your organization reach a new height of excellence and cognizance.
 
 1FeaturesImg: /assets3/images1/digital-badges.png
-1FeaturesTitle: Customizable badges with dynamic metadata
-1FeaturesMessage: Customizable badges have a lot of benefits. They allow you to show off your achievements, set yourself apart from your competitors, and attract new customers. However, they can also be time-consuming and expensive to produce. With MetaCards, you can create customizable badges without having to spend hours designing each one by hand. You can create design templates with dynamic data such as pictures and text, then simply replace the template with your images and text when you need to make a change. Your badge will always look fresh and up-to-date.
+1FeaturesTitle: Complete Freedom To Customize Digital Badge Designs To Recognize Achievements
+1FeaturesMessage: The best first impression an organization can have on an applicant is by shifting to verifiable, tamper-proof badges from same-old paper certificates. CertifyMe works toward simplifying the revolutionary transition.<br> Organizations are always on the lookout for new tools/technologies to attract a larger clientele base. Issuing digital badges is one of the most foolproof ways to stay a step ahead of the competition without breaking the bank. <br> Our Blockchain-based digital credentials and badges are the ideal solutions to skyrocket your membership and retain them for business growth.  
+
 
 2FeaturesImg: /assets3/images1/linkedin-badges.png
-2FeaturesTitle: Add badge to LinkedIn and Share across 40+ Social Media
-2FeaturesMessage: LinkedIn is a very popular social media platform and is often used as a way to enhance your professional career. But it’s also a great way to build your brand and can be used to share information about your work and interests. By adding a LinkedIn badge to your profile, you can let people know that you’re an expert in your field, know someone who is, or know about a topic that’s relevant to their interests.
+2FeaturesTitle: Ease of Sharing the Digital Badge  across 40+ Social Media Channels At A Go
+2FeaturesMessage: Our digital badges come without the hassle of individually sharing them on each platform. End users can distribute the badges among their social networks with a click. <br> Cater to a longer list of students and participants by offering digital badges following a simple authentication and verification method. <br> Take your business to the next step by allowing individuals to celebrate the success of program completion. Issue digital badges that are easy to download and can be shared as email signature or on Facebook, LinkedIn and Twitter. 
+
 
 3FeaturesImg: /assets3/images1/Integrations.png
 3FeaturesTitle: Analyse and Manage your Credentials
