@@ -9,25 +9,26 @@ sitemap.priority : 0.9
 
 
 HeroImg: /assets3/images1/proof.png
-Hero1Msg: Proof of authenticity
-Hero2Msg: Create Product Verification Pages
-Hero3Msg: We're excited to introduce, a simple way to validate the genuineness of any physical product. With CertifyMe, you can verify that your order is authentic with a multi-level verification option. 
+Hero1Msg: Showcase Business Authority by 
+Hero2Msg: Issuing Immutable Credentials
+Hero3Msg: Digital credentials are changing the way organizations communicate with candidates and employees. They are ‘badges of honor’ that widen the path of career opportunities and offer a sense of authenticity. 
 
 1FeaturesImg: /assets3/images1/whitelabel.png
-1FeaturesTitle: Product Verification Page
-1FeaturesMessage: We can help you generate product verification pages with your product images. These pages are a great way to showcase your brand and make sure that your customers are getting the right product. They can be customized with a custom domain, logo, and footer of your brand.
+1FeaturesTitle: Transfer Skills in A Tamper-proof Manner
+1FeaturesMessage: The virtual credentialing platform of CertifyMe assists training providers, educational institutions, and financial organizations to keep track of their documents' safety. The ‘seal of approval’ you offer to students and employees holds the power to kick-start their careers. 
 
 2FeaturesImg: /assets3/images1/Branding.png
-2FeaturesTitle: Branding space
-2FeaturesMessage: Branding space is a great way to advertise your brand. You can attach a video or a banner in the branding space provided on our platform which helps to advertise your brand.
+2FeaturesTitle: The essence of Paper Certificates, the Authority of Digital Platforms
+2FeaturesMessage: Digital certificates deliver an unparalleled and safe rebranding experience that generates revenue, increases visibility, and encourages uninterrupted learning. You can easily turn digital credentials into paper format simply by printing them.
  
 3FeaturesImg: /assets3/images1/secure-badge.png
-3FeaturesTitle: No more product forgery
-3FeaturesMessage: No more counterfeit products. We use Amazon Quantum Ledger and blockchain to make tamper-proof credentials that are immutable, transparent and cryptographically verifiable. This means you can be sure that the product you're buying is exactly what it claims to be.
+3FeaturesTitle: An Extensive Credentialing Solution that Advocates A Compelling Brand Image
+3FeaturesMessage: Our verifiable documents are proof of authenticity that rightly reflects the nonparticipation of third-party platforms. A collaboration with CertifyMe allows you to personalize the certificate and badge designs. Scanning the QR code on the certificate uncovers the details of issuing.
 
 4FeaturesImg: /assets3/images1/verify-badge.png
-4FeaturesTitle: Validation
-4FeaturesMessage: You can validate the product by using the Product Id. The Product Id is a unique identifier of a product. It can be used to check if the product has been purchased before. It is also used in different features like payment, warranty, and others.
+4FeaturesTitle: Emphasize Your Online Brand Presence 
+4FeaturesMessage: Delivering digital certificates puts your organization in the best light. It equally benefits certificate holders by unlocking associated skills with a badge or credential. Be a member of the expanding credentialing network to boost your business reputation. Protect your brand from certificate piracy and deception. <br>CertifyMe securely enables enterprises to scale global credentialing programs for data protection and security. Get in touch with us!
+
 
 
 

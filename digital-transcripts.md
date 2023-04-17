@@ -9,22 +9,24 @@ sitemap.priority : 0.9
 
 
 HeroImg: /assets3/images1/verifiable-diploma.png
-Hero1Msg: Start Awarding
-Hero2Msg: Verifiable Transcripts
-Hero3Msg: Using CertifyMe, users can create, issue, and manage verifiable transcripts with advanced bank-level security encryptions.
+Hero1Msg: Verifiable Transcripts that Drive 
+Hero2Msg: Value and Engagement
+Hero3Msg: Ensure the safety and traceability of certificate details without the necessity of a third-party verification authoritative body. 
 
 
 1FeaturesImg: /assets3/images1/security.png
-1FeaturesTitle: Bank-Level Security Encryption
-1FeaturesMessage:  Bank-level security encryption is a special kind of encryption that is designed to protect the data on your wire transfer, which can be very sensitive. Because of the sensitive nature of your wire transfer information, we use advanced security encryptions to make your transcripts secure.
+1FeaturesTitle: Lifelong Access to Digital Transcripts
+1FeaturesMessage: The digital transcription services of CertifyMe can be rightly claimed as a breakthrough as it has addressed the common problem of paper certificates:Misplacement.<br> The digital credentials and badges remain stored on the Quantum Ledger database. Candidates can access the certificates anytime and from anywhere.
+
                   
 2FeaturesImg: /assets3/images1/secure-badge.png
-2FeaturesTitle: Immutable Transcript Maker
-2FeaturesMessage: Accessing your transcripts and certifications has never been easier. You can now issue transcripts with complete white-labelled credential pages, that is, a URL, logo, footer, and header of the credential page that match your brand. The white-labelled credential page can be generated using the AWS Quantum Ledger and blockchain platform, which is highly secure, reliable, and scalable. Our white-labelled transcripts are certified by a third-party auditor to ensure the authenticity of each transcript.
+2FeaturesTitle: Open Standard Digital Transcripts Issuing Platform
+2FeaturesMessage: CertifyMe is set out on a mission of assisting organizations, training, and educational institutions to constitute the best industry practices. We have simplified the certification process by allowing you to create and issue certificates in a minimal timeframe.<br> The easy-to-design and easy-to-manage verifiable transcripts maximize your brand value, course efficiency, and candidates’ confidence. The instantly shareable digital transcripts take your business reputation up a notch.  
+
                   
 3FeaturesImg: /assets3/images1/verification.png
-3FeaturesTitle: Create, Issue and manage
-3FeaturesMessage: When you're looking for a way to issue and manage transcripts, we've got you covered. With our advanced editor, you can create templates easily, and we have multiple methods of issuing quick awards CSV, APIs for issuing the credential, analytics, and more manageable options so you can measure and analyze your program. CertifyMe is easy-to-use and has all the features that you need to get started on your transcript issuance journey.
+3FeaturesTitle: Bid Goodbye to A Lengthy Transcription Process
+3FeaturesMessage: Our API and Zapier integration solutions make our incorporation process straightforward. Simply integrate us into your traditional credentialing process to get the best of both worlds:smart and dynamic digital transcripts with an easy downloading and sharing process.<br> Making changes to verifiable documents becomes a matter of a split second. Quick application for correction and instant editing make certificate management quick and easy. Exhibit the hard work your students have put forward by collaborating with our credentialing platform.<br> CertifyMe securely enables enterprises to scale global credentialing programs for data protection and security. Get in touch with us!
 
 
 

@@ -9,28 +9,29 @@ sitemap.priority : 0.9
 
 
 HeroImg: /assets3/images1/2.png
-Hero1Msg: White Labeled Credential Platform
-Hero2Msg: Showcase all of this as your applications features
-Hero3Msg: Let the users feel that you have built such a beautiful platform with all the said features to issue Credentials
+Hero1Msg: Whitelabel Credentials for Complete Control 
+Hero2Msg: Over Digital Certificates
+Hero3Msg: Uplift your business visuals by white labeling badges and certificates to revamp the navbar, footer, and domain of the credentials where CertifyMe only acts as an issuing platform but the organization is advertised as the sole issuer. 
 
 
 1FeaturesImg: /assets3/images1/URL.png
-1FeaturesTitle: URL WhiteLabeling
-1FeaturesMessage: Would you like to represent your company in the best way possible to your customers? 
- Well, one way you can do this is called url White Labeling. White Labeling is where you brand a url with your company's name. This is a great way to show your customers that you're a professional company that cares about its image. It's also a great way to get more exposure for your company.
+1FeaturesTitle: A Complete Rebranding Experience by URL WhiteLabeling
+1FeaturesMessage: Represent your company in the best way possible to your customers, not just by replacing our logo with yours, we go beyond that. Well, one way you can do this is by URL white labeling. But this is not the only way to white-label credentials. White labeling enables you to recreate your company environment with the freedom of personalizing the page style, colors, fonts, header, and footer. Communicate with your students through white labeling to establish a life-long relationship. It's also a great way to get more exposure for your company.
+
 
 
 2FeaturesImg: /assets3/images1/Logo.png
-2FeaturesTitle: Logo WhiteLabeling
-2FeaturesMessage:  Logo White Labeling is the process of updating the logo in the verification page to match your brand. Adding a logo can help you to stand out and build brand recognition. Awarding credentials with your logo on the top navigation bar feels you as front face for your awardees while receiving credentials.
+2FeaturesTitle: Reflect Authentic Brand Image
+2FeaturesMessage:  Your certificates are a part of you and partnering with CertifyMe doesn’t take away from the authoritative experience that you want to show off, rather we streamline it. Make the certificate recipients feel like you are the certificate issuer and that no third party is involved in it. We make this possible by white labeling the digital certificates.
 
 3FeaturesImg: /assets3/images1/Footer.png
-3FeaturesTitle: Footer WhiteLabeling
-3FeaturesMessage: When it comes to creating a professional and attractive verification page, footer White Labeling is a key part of the process. This is a process of creating a custom footer that includes your company’s name, logo, and other key information in a professional and attractive way. This can help to improve the overall look and feel of your credential verification page. Also the informations provided in the footer portion helps your candidate to navigate.
+3FeaturesTitle: Consistent Brand Appearance to be Proud of
+3FeaturesMessage: Our assistance doesn’t just end with helping you create and manage badges and certificates. We also work toward offering you a seamless certification experience that strengthens your brand value. Using the platform of CertifyMe, you can rebrand the page content and the emails recipients receive. We keep your information aligned professionally and attractively. This improves the overall look and feel of your credential verification page.
 
 4FeaturesImg: /assets3/images1/Email.png
-4FeaturesTitle: Email WhiteLabeling
-4FeaturesMessage: Email white labelling is a process of customizing the outgoing email address with your sender address. This helps the issuer to be a front face for issuing the credentials. Also you can receive and respond to the feedbacks from awardees.
+4FeaturesTitle: Premium Features at Reasonable Costs
+4FeaturesMessage: Along with catering to your product needs, we also guide you through the primary component that influences your buying decisions - the price. With a sense of security, you also feel a breath of fresh air coming across our service charges.  
+
 
 
 

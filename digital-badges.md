@@ -9,27 +9,29 @@ sitemap.priority : 0.9
 
 
 HeroImg: /assets3/images1/online-badge.png
-Hero1Msg: Issue Digital Badges 
-Hero2Msg: to Boost Your Organization Credibility
-Hero3Msg: Award Whitelabel-friendly digital badges to acknowledge the hard work students, candidates, and employees have put forth to help your organization reach a new height of excellence and cognizance.
+Hero1Msg: Issue Digital Badges  
+Hero2Msg: that Attract More Attendees
+Hero3Msg: Award Whitelabel-friendly digital badges to acknowledge the hard work students, candidates, and employees have put forth to help your organization reach a new height of excellence and recognition.
 
 1FeaturesImg: /assets3/images1/digital-badges.png
 1FeaturesTitle: Complete Freedom To Customize Digital Badge Designs To Recognize Achievements
-1FeaturesMessage: The best first impression an organization can have on an applicant is by shifting to verifiable, tamper-proof badges from same-old paper certificates. CertifyMe works toward simplifying the revolutionary transition.<br> Organizations are always on the lookout for new tools/technologies to attract a larger clientele base. Issuing digital badges is one of the most foolproof ways to stay a step ahead of the competition without breaking the bank. <br> Our Blockchain-based digital credentials and badges are the ideal solutions to skyrocket your membership and retain them for business growth.  
+1FeaturesMessage: The quickest way to motivate applicants is publishing verifiable, tamper-proof badges under their names. CertifyMe works toward simplifying this revolutionary transition.<br> Organizations are always on the lookout for new tools/technologies to attract a larger clientele base. Issuing digital badges is one of the most foolproof ways to stay a step ahead of the competition without breaking the bank. <br>Our Blockchain-based digital credentials and badges are the ideal solutions to skyrocket your membership and retain them for business growth.
+
 
 
 2FeaturesImg: /assets3/images1/linkedin-badges.png
-2FeaturesTitle: Ease of Sharing the Digital Badge  across 40+ Social Media Channels At A Go
-2FeaturesMessage: Our digital badges come without the hassle of individually sharing them on each platform. End users can distribute the badges among their social networks with a click. <br> Cater to a longer list of students and participants by offering digital badges following a simple authentication and verification method. <br> Take your business to the next step by allowing individuals to celebrate the success of program completion. Issue digital badges that are easy to download and can be shared as email signature or on Facebook, LinkedIn and Twitter. 
-
+2FeaturesTitle: Share the Digital Badge across 40+ Social Media Channels in One Go 
+2FeaturesMessage: Our digital badges come without the hassle of individually sharing them on each platform. Awardees can share the badges among their social networks with a single click.<br> Cater to a longer list of students and participants by offering digital badges following a simple authentication and verification method.<br> Take your business to the next step by allowing participants to celebrate the success of program completion. Issue digital badges that are easy to download and can be shared as an email signature or on Facebook, LinkedIn, and Twitter.
 
 3FeaturesImg: /assets3/images1/Integrations.png
-3FeaturesTitle: Analyse and Manage your Credentials
-3FeaturesMessage: Credentials are the keys to unlocking many doors. Credentialing is a key element in the success of any organization, and organizations must have a strategy for managing credentials. Being able to identify the right credential for each position and having a system in place to manage the credentials is important. You can choose the date range, country, type of credential, and more to create a report. There are multiple types of reports to choose from, like usage reports, click-through reports, email reports, and more. You can also view the performance of a particular partner, partner program, or event.
+3FeaturesTitle: Decode the Badge Information by Scanning the QR/BAR Code
+3FeaturesMessage: Our digital badges applaud upskilling, reskilling, and competency improvements. The badges showcase the determination and integrity of program participants and the growth of new skills among them.<br> Simply scanning the QR/ barcode on the badge reveals the timeframe of the certification, essential skills to join the program, skill growth, and future potential of the certificate-holder. This code also holds information on the length of the badge validity. The encoded meta-data communicates the essential details associated with the badge achievement. <br> Our analytics dashboard offers more insights into the way badge receivers are engaging with the badges. The information on badge views, website visits, downloads, and shares on social media, remains at your fingertip.
+
 
 4FeaturesImg: /assets3/images1/badge-analytics.png
-4FeaturesTitle: Integrations and bulk award
-4FeaturesMessage: With the API integration, you can automatically issue badges when someone completes a course, program, or event. This saves time and is more efficient than issuing badges manually. You can also issue badges using a CSV file, which is helpful when you need to issue bulk awards. Integration with no-code platforms like Zapier and Integrated enables you to integrate CertifyMe with any other application without technical knowledge. We are also available as plugins on the most popular LMS platforms and applications.
+4FeaturesTitle: API Integration for Quick and Safe Badge Delivery
+4FeaturesMessage: Represent your brand in the best light by partnering with CertifyMe. Eliminate the risks of mistakes associated with manual certificate designing and make it automated. Digital badges of CertifyMe are the ideal fix to back you up when you are unsure of the solution.<br> Our API-integrated digital badges and digital certificates automatically reach the recipient whenever someone finishes a course or program.<br> We are also suitable for Zapier integration if you are looking for a no-code method. You can also integrate us in LMSs as plugins. We value a simple, straightforward badge automation and distribution procedure.   
+
 
 
 

@@ -9,22 +9,24 @@ sitemap.priority : 0.9
 
 
 HeroImg: /assets3/images1/3.png
-Hero1Msg: Customizable Wallet
-Hero2Msg: Dedicated & secured space to store credentials
-Hero3Msg: Custom Wallet is the simplest and most secure way to store all your digital credentials in one place. Store your credentials securely in your custom wallet.
+Hero1Msg: Custom Badge Wallet to Keep All 
+Hero2Msg: Your Digital Credentials in One Place
+Hero3Msg: CertifyMe has come up with a new feature, a custom badge wallet that enables you and your awardees to access digital badges and certificates anytime, from anywhere.
 
 
 1FeaturesImg: /assets3/images1/Wallet.png
-1FeaturesTitle: Benefits of Custom Credential Wallet
-1FeaturesMessage: A custom credential wallet offers many benefits for you and your awardees. Firstly, it provides a secure place to store credentials for your awardees, so there is no risk of losing them. Secondly, your awardees can create an account and log in at any time, which is very convenient. Finally, the wallet is flexible and can be customized to suit your awardees needs.
+1FeaturesTitle: Portable Digital Certificates to Exhibit to the World
+1FeaturesMessage: The simple custom badge wallet feature of CertifyMe comes with an easy integration/setup procedure. The members associated with your organization who have bagged badges can access the credentials from the wallet to produce in front of other professionals, download them or just share them on social media. The wallet eliminates the hassle of scouring for credentials all over your mobile and is available a click away. 
+
 
 2FeaturesImg: /assets3/images1/Wallet 2.png
-2FeaturesTitle: White-Label Credential Wallet
-2FeaturesMessage: A white-label credential wallet is a type of digital wallet that can be customized concerning your brand persona. This usually includes adding your logo and url. White-label credential wallets offer several advantages for you, including increased brand visibility and recognition..
+2FeaturesTitle: Quick Access for Credential Authentication
+2FeaturesMessage: Let your awardees relax and free them from the hassle of carrying certificates when they need them. Empower certificate holders by organizing the credentials in our custom badge wallet. Learners can simply visit job locations without worrying about finding a spot where they can print them out or worse, forgetting it altogether.   
+
                    
 3FeaturesImg: /assets3/images1/Wallet 3.png
-3FeaturesTitle: Secured with advanced security standards
-3FeaturesMessage:  All the credentials stored in the wallet are secured with multiple-level security encryptions. The algorithms used for encryption are constantly updated to ensure that the data remains secure. In addition, the wallet itself is designed to be tamper-proof, making it difficult for someone to access the data stored within.
+3FeaturesTitle: Secure Student Information Without Third-Party Association
+3FeaturesMessage:  Help students prove their expertise by being a part of our credible certification program. From enhanced brand awareness to improved business visibility, our digital credentials combine security with flexibility. Manage as many certificates as you want using a custom badge wallet without worrying about the experience of your students/employees. 
 
 
 ---
