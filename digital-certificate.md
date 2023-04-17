@@ -9,28 +9,30 @@ sitemap.priority : 0.9
 
 
 HeroImg: /assets3/images1/digital-certificate.png
-Hero1Msg: Start Award
-Hero2Msg: Verifiable Certificates
-Hero3Msg: With our advanced features, you can easily create, issue, and manage certificates that are branded and professional. This will make your awardees proud and show that you are committed to providing them with the recognition they deserve.        
+Hero1Msg: Offer Authentic, Verified, and Tamper-proof 
+Hero2Msg: Digital Certificates to Program Participants
+Hero3Msg: CertifyMe is ruling the realm of digital credentials by offering unlimited design options, a one-click social sharing method, safety, quick delivery, and affordability. Draft, issue and keep a track of the credentials.      
 
 1FeaturesImg: /assets3/images1/editor.png
-1FeaturesTitle: Advanced Certificate Editor
-1FeaturesMessage: Canva's advanced certificate editor allows users to create custom certificates from scratch or upload a pre-made design. The editor is very user-friendly and has a lot of features. Users can assign dynamic fields to the certificates, which is very helpful. They can also add a QR code, change the layout, and upload their images.
+1FeaturesTitle: Smart Digital Credential Solutions to Streamline Certificate Delivery
+1FeaturesMessage: Eliminate the hassle of manually preparing and sharing certificates by onboarding CertifyMe. Our dynamic and top digital credential platform comes with a simple sharing option on Linkedin, Facebook, Twitter, and 37+ other social media channels. You have complete freedom to choose our existing templates or you can custom-build the certificate designs using the already interspersed Canva’s advanced certificate editor.  
 
                   
 2FeaturesImg: /assets3/images1/immutable-credentials.png
-2FeaturesTitle: Immutable Certificates
-2FeaturesMessage: Immutable certificates are digitally signed and encrypted by us, and only you can decrypt them. This means that you can be sure that the certificate is authentic and that it comes from an authorized source. We believe in transparency and security. These features are essential for protecting your data from hackers, phishing scams and identity theft. By issuing immutable certificates through our platform we can ensure that our customers get the highest level of protection against these threats. We have
+2FeaturesTitle: Empower Certificate Holders by Showcasing Immutable Digital Certificates  
+2FeaturesMessage: CertifyMe offers Blockchain-backed electronic credentials as a digital certificate that reflects professionalism and authenticity. Combining smart technology with regular certificates enables you to automate the certificate generation process that no one can tamper with. <br>Immutability offers organizations peace of mind by securing the brand of the institution. Our resolute digital certificates and digital badges also characterize verifiable transcripts and top-level encryption that set you apart from the competitors. 
 
                   
 3FeaturesImg: /assets3/images1/API.png
-3FeaturesTitle:  Integrations and Analytics
-3FeaturesMessage: In the digital age, one of the most important skills you can have is knowing how to analyze data. Whether it's customer behaviour, sales numbers, or even your performance metrics, data helps you make more informed decisions. But it's not always easy to get access to all of the data you need to make those decisions. That's where integrated analytics come in. An integrated analytics platform provides an end-to-end solution for delivering business intelligence from multiple data sources. This means that instead of having to build a solution yourself, you can get everything you need right off the bat—all in one place! We also have integration with zapier, Popular LMS Platforms and Integrately to award credentials.
+3FeaturesTitle: Certificates that Take Organizations Forward
+
+3FeaturesMessage: Drive your organization to excellence and recognition by issuing digital certificates that also impact course engagement. A brand establishment is not only about how engaging the training or programs are, how potential candidates view your organization also influences brand success. Keeping that in mind, CertifyMe has designed its digital certificates that demonstrate value and integrity. Credentials issued by training associations through us also include details on the skills of the certificate holders.<br>The credentials become synonymous with the success that eventually takes your course to a new level of eminence. You spontaneously drive brand awareness when CertifyMe is your chosen digital credentials platform.  
+
 
 
 4FeaturesImg: /assets3/images1/whitelabel.png
-4FeaturesTitle: Branded Certificate Page
-4FeaturesMessage: Award certificates with complete branded verification page which helps to boost the brand awareness.Institutions can customize everything from the URL to the footer which matches the brand guidelines.
+4FeaturesTitle: Insightful Metadata for Fraud Prevention
+4FeaturesMessage: All our digital certificates come with metadata mapping that tells the story behind the certification. The credentials hold extensive information about the program, its length, level, type, and the developed skills of the candidates.<br>CertifyMe securely enables enterprises to scale global credentialing programs for data protection and security. Get in touch with us!
 
 
 

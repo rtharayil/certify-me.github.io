@@ -9,25 +9,30 @@ sitemap.priority : 0.9
 
 
 HeroImg: /assets3/images1/hr-letter.png
-Hero1Msg: Start Awarding
-Hero2Msg: Immutable documents
-Hero2Msg: Immutable documents are useful for keeping records of important events. Start create, issue and manage immutable documents.
+Hero1Msg: Create and Verify 
+Hero2Msg: Digital Documents
+Hero2Msg: Cutting-edge technology combined with a standard certification process to make credentials foolproof and offer a stamp of approval to students.
 
 1FeaturesImg: /assets3/images1/Level3.png
-1FeaturesTitle: All-In-One Solution
-1FeaturesMessage:  You can create, issue, and manage verifiable documents in one app. We are not just a document management solution, but also a platform that helps you manage your documents from the ground up. So whether you need to create, issue, and manage verifiable documents like HR letters, invoices, contracts, or offer letters, or just want to get rid of all those old HR forms lying around, we've got you covered!
+1FeaturesTitle: Fraud-proof Verifiable Documents Allow Instant Authentication
+1FeaturesMessage:  Discover the true potential of your students, employees, and trainees by associating with CertifyMe. Our verifiable document-issuing platform came into action to confront the certificate forgery issue.<br> Give candidates a sense of security and authenticity by turning digital. Our immutable documents not only protect organizations from misrepresentation but also allow students to portray a positive, credible image. Candidates also experience a streamlined certificate-sharing and downloading process.
+
 
 2FeaturesImg: /assets3/images1/immutable-credentials.png
-2FeaturesTitle: Secure and Immutable
-2FeaturesMessage:  Documents are the backbone of any business. From employment contracts to birth certificates, they are used to prove identity, ownership, and more. But when you're dealing with millions of documents in a company's system, it can be hard to keep track of everything. That's why we're excited to announce a new way for you to store your documents. Our solution uses advanced security features like quantum ledger and blockchain to make your sensitive data unbreakable—and even transparent, allowing you to see exactly where each document is stored. You'll never have to worry about lost documents or forgotten passwords again!
+2FeaturesTitle: Insightful Interpretation of Students’ Expertise Using Verifiable Documents
+2FeaturesMessage:  Digital certificates are more than mere documents, they are proof of authenticity. The credentials showcase learners’ skills. Maintaining credibility allows students to demonstrate their knowledge to potential employers and establish a strong professional portfolio. <br>We align job requirements with skill possession following an accurate metadata mapping solution. Leverage the benefits of verifiable credentials to furbish the road toward the dream jobs of students/trainees.<br>Digital badges bring your business to the forefront without investing in marketing channels. The greater number of students who share/download your digital certificates, the more conversion you receive.  
+
 
 3FeaturesImg: /assets3/images1/verification.png
-3FeaturesTitle: Multi Level Verification
-3FeaturesMessage: Multi Level Verification is a way to validate the authenticity of any document, including those that may be in electronic form. Users or third parties can check the authenticity of the papers using multi-level verification. Validate the document with URL, Id Proofs, Quantum Ledger Id, or cryptographic signature.
+3FeaturesTitle: Enhanced Student Engagement
+3FeaturesMessage: Digital credentials greatly bridge the gap between student enrolment and students completing the course/program. The desire for verified and attested certificates that also recognize students’ skills and expertise without the fear of misplacing it works wonders for enhanced student commitment. In the same way, training institutes can boost employee engagement in their upskilling programs. 
+
 
 4FeaturesImg: /assets3/images1/Branding.png
-4FeaturesTitle: WhiteLabel Documents
-4FeaturesMessage: Customizing your credential page with your URL, logo, advertisement space and footer is a great way to make sure that the credentials match your brand. When you create a WhiteLabel document, you can customize everything from the URL to the footer. This means that we'll be able to correctly determine what credentials are being used on each page of your website so that we can ensure that they're all properly linked together in the documents.
+4FeaturesTitle: Immutable Documents to Propel Your Career Forward
+
+4FeaturesMessage: Exhibit in-demand skills to unlock new career opportunities and scope to advance your career. Our digital certificates not only enable organizations to defy all odds but the students and employees as well. The digital badges, verifiable documents, and fraud-proof credentials endorse a robust professional profile. <br>Make your brand invaluable by designing and issuing verifiable documents that attract and persuade the best brains. Achieve business results by teaming up with CertifyMe.  
+
 
 
 
