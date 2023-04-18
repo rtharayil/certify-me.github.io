@@ -25,7 +25,7 @@ Hero3Msg: Portals like LinkedIn helps you to know about the latest job opportuni
                    
 3FeaturesImg: /assets3/images1/Analytics 3.png
 3FeaturesTitle: Skills matched to the relevant keywords in job portal
-3FeaturesMessage:   Once a student has acquired a set of given skill sets then
+3FeaturesMessage:   Once a student has acquired a set of given skill sets 
 
 
 
