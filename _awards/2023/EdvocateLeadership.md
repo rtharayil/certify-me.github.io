@@ -6,6 +6,7 @@ title: Edvocate Leadership Awards 2023
 description: A platform to honor the top 1% of Exemplary Leaders who have led ordinary people in accomplishing extraordinary outcomes in the field of Education and Education Technology.
 
 
+
 logo : /img/awards/awardlogoLeader.png
 
 Head1:  Edvocate Leadership <br > Awards 2023
