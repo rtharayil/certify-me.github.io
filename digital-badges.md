@@ -6,7 +6,9 @@ description: "Create, issue and manage immutable digital badges from CertifyMe"
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert?utm_source=digitalbadge&utm_medium=hero&utm_campaign=Talk+to+the+expert"  
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert?utm_source=digitalbadge&utm_medium=Review&utm_campaign=Talk+to+our+expert"
 
 HeroImg: /assets3/images1/online-badge.png
 Hero1Msg: Issue Digital Badges  

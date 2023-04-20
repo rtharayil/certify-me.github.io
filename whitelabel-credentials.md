@@ -6,7 +6,9 @@ description: "Branded Whitelabel digital Credentials which suits the brand guide
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert?utm_source=whitelabel-credentials&utm_medium=hero&utm_campaign=Talk+to+the+expert"
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert?utm_source=whitelabel-credentials&utm_medium=review&utm_campaign=Talk+to+our+expert"
 
 HeroImg: /assets3/images1/2.png
 Hero1Msg: Whitelabel Credentials for Complete Control 

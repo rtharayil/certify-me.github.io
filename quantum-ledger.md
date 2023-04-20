@@ -6,7 +6,9 @@ description: "Immutable Blockchain certificate and badge provider."
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert?utm_source=quantum-ledger&utm_medium=hero&utm_campaign=Talk+to+the+expert"
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert?utm_source=quantum-ledger&utm_medium=review&utm_campaign=Talk+to+our+expert"
 
 HeroImg: /assets3/images1/ql.png
 Hero1Msg: Cryptographically Verifiable and Quantum Ledger 

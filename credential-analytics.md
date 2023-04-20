@@ -6,7 +6,9 @@ description: "Monitor, evaluate, and manage the effectiveness of credentialing b
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert?utm_source=credential-analytics&utm_medium=hero&utm_campaign=Talk+to+the+expert"
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert?utm_source=credential-analytics&utm_medium=review&utm_campaign=Talk+to+our+expert"
 
 HeroImg: /assets3/images1/Analytics-1.png
 Hero1Msg: Explore How Your Digital 
