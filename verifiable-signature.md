@@ -6,7 +6,9 @@ description: "Cryptographic signature enables to verify digital credentials"
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert?utm_source=verifiable-signature&utm_medium=hero&utm_campaign=Talk+to+the+expert"
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert?utm_source=verifiable-signature&utm_medium=review&utm_campaign=Talk+to+our+expert"
 
 HeroImg: /assets3/images1/Signature.png
 Hero1Msg: Integration of Cryptographic 
