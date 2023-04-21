@@ -10,8 +10,8 @@ logo : /img/awards/awardlogoLeader.png
 
 Head1:  Edvocate Leadership <br > Awards 2023
 
-Head2:  <br > Nomination are open 
-Head3:  <br > A global platform to honour the top 1% of <br >Exemplary Leaders who have led ordinary people in <br >accomplishing extraordinary outcomes <br >in the field of Education and Education Technology.
+Head2:  <br > Nominations are open 
+Head3:  <br > Edvocate Leadership Award 2023 is the highest<br>recognition to honor Leaders who are committed to<br>professional achievements and building a strong team<br>that impacts, influences, and motivates.<br><br>This award acknowledges exemplary leaders and their<br>contribution to advancing the field of Higher Education<br>and Learning & Development.
 
 BGImagelink: /img/awards/6.png
 preview: /img/awards/1l.png
