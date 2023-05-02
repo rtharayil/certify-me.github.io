@@ -13,6 +13,7 @@ featured: true
 ## 𝗪𝗵𝗮𝘁 𝗮𝗿𝗲 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 C𝗿𝗲𝗱𝗲𝗻𝘁𝗶𝗮𝗹𝘀?
 **A Quick Overview**
 <br>
+
 We are rapidly shifting to a digital world where everything is online. This virtual world has a list of advantages that people or organizations adopting it explicitly experience. The certification process is also a part of the ongoing digitalization. 
 For ages, people indulged in dubious certification practices such as credentials forgery. Another common issue people often face with paper certificates is the risk of losing them. To address such issues, <a href="https://certifyme.online/blog/Experiencing-Digital-Certificate-and-Digital-badge.html">digital certificates and badges</a> have become the new norm.<br><br>We all hold several credentials (not only in the form of academic certificates but also passports, driving licenses, security documents, and many more). Keeping all of these in a safe and secure place all the time can be chaotic sometimes. 
 Online courses are also in high demand recently, so delivering physical credentials to students unnecessarily costs the entire system. When safety, efficiency, and ease are questioned, there is nothing better than online credentials.<br>Digital certificates mainly address the question of certificate authentication and verification. These credentials reduce the gap between the day of course completion and the actual day on which awardees receive the certificates. The seamless digital credentialing process enables same-day certification. What can be more exhilarating than receiving certificates on the day the course gets over?<br><br><a href="https://www.w3.org/TR/vc-data-model/">Verifiable Credentials</a> are not only for awarding course certificates; they are also perfect for storing and securing government or organizational information.<br>
@@ -24,7 +25,7 @@ The QR/BARcode in the certificate unlocks information about the competency of th
 
 ## Why Digital Credentials Became the Talk of the Town?
 <br>
-<img src="/img/blog/Digital Certificate.png" alt="Digital Certificate">
+<img src="/img/blog/Digital Certificates.png" alt="Digital Certificate">
 <br><br>
 We all were awarding, claiming, and using paper certificates to exhibit our talent and authenticity. Then what shifted the attention to <a href="https://certifyme.online/blog/The-Importance-of-Including-Digital-Credentials-on-LinkedIn.html">LinkedIn shareable certificates & badges</a>?<br>
 Though paper certificates were traditionally popular and accepted, their issues troubled everyone. From altering the details inside a certificate to the presentation of fraud certificates, the problems were endless. There is also no way to detect whether any information falsification happened.<br>
