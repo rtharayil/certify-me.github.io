@@ -9,31 +9,32 @@ sitemap.priority : 0.9
 
 
 HeroImg: /assets3/images1/HR.png
-Hero1Msg: Digital Certificates and Badges
-Hero2Msg: for upskilling and reskilling.
-Hero3Msg: A digital credential is a proof of an accomplishment that an employee can showcase, access, and verify.
+Hero1Msg: Improve Workplace 
+Hero2Msg: Efficiency with Digital Badges
+Hero3Msg: Inspire your employees to perform their best by enabling them to demonstrate their success and achievements using the digital badges of CertifyMe.
 
 1FeaturesImg: /assets3/images1/Level2.png
-1FeaturesTitle: A complete solution
-1FeaturesMessage: A complete solution for L&D to create, issue and manage certificates, badges, letters and other immutable documents. Users can create unlimited templates in our template repository. Each template can be used for an unlimited number of users and can save to their certificate or other documents in the LBS. 
+1FeaturesTitle: Embedded Metadata in Digital Badges 
+1FeaturesMessage: Let your employees showcase their abilities and hard work by issuing badges with integrated information on what they did to achieve them and how it has propelled the business forward. It works as a sign of professional excellence that shows how a worker puts constant effort to excel in his/her career. 
 
 
 2FeaturesImg: /assets3/images1/motivates.png
-2FeaturesTitle: Motivate Employees
-2FeaturesMessage:  Socially shareable credentials motivate employees to complete internal training and enhance their confidence. Studies show organizations having internal badging have high internal. Employees have little incentive to work hard if they are told they cannot go to remote work or work from home due to fear of exposure. "Work from Home" is just another thing for people to avoid. There is no motivation to put in the hard work required to create a positive
+2FeaturesTitle: Socially Shareable Badges to Flaunt Expertise among Professional Networks
+2FeaturesMessage:  Digital credentials are the perfect tools to let others know about the upskilling efforts of an individual. It not only unlocks new opportunities for the employees but also establishes the organization as a credible certificate provider. Our easy LinkedIn sharing option enables credential holders to easily add the badge in the license & certification section. They can also share the credentials as a post or send HRs via LinkedIn message. We can also arrange a demo for you. 
                    
 3FeaturesImg: /assets3/images1/whitelabel.png
-3FeaturesTitle: Branded Credentials
-3FeaturesMessage:   Can customize the credentials which suit your brand. To make it easy for you, we have designed a quick and easy-to-use template which contains all necessary information to get started with your branding. Our team is here to help you with any branding needs. They are experts in the field and will customize a logo, and print on a variety of materials.
+3FeaturesTitle: Endless Badge Designs at Your Fingertip
+3FeaturesMessage:  Our credentialing program allows you to perform the best practices to attract and engage a greater number of workers. The badge design also plays a critical role in employee engagement. Crafting unique badges can make the program popular among employees while it also inspires them to share the credentials with their professional connections. Our Canva-integrated platform comes with drag-and-drop design creation features. Make the best use of it!
+
 
 
 4FeaturesImg: /assets3/images1/wallet2.png
-4FeaturesTitle: Easy to deploy
-4FeaturesMessage: Certifyme is the best easy-to-deploy digital credential platform in the segment with 40+ advanced digital credentialing features. And our dedicated team will handhold you a detailed onboarding process which makes things easy to go. You will get a personalized digital card with your mobile, email, IM and website information, just like your official ID card. 
+4FeaturesTitle: Enhanced Insights into the Job Market
+4FeaturesMessage: Digital badges boast essential details such as the earning criteria of the credential, skills obtained during the course, and open opportunities in the field of the program. Simply taking a close look at the information integrated into the QR/BARcode can unleash new scopes in the desired field of the certificate holder. 
 
 5FeaturesImg: /assets3/images1/level1.png
-5FeaturesTitle: Analyze and Reward
-5FeaturesMessage: You can analyze and measure the success of your program as well as the engagement rate. The more people get engaged and participate in the program, the better the result. Once you have measured the results, you can decide on the reward. We have many rewards for you to choose from. You will have a chance to earn rewards by doing a good job. There will be a variety of rewards.
+5FeaturesTitle: The Best HR Practice to Invest in
+5FeaturesMessage: Verifiable certificates and badges are one of the best HR policies that make the entire certification process seamless. Whether you are encouraging an employee to learn a new program language or want him/her to earn expertise in software, delivering digital badges influences them to perform the task with integrity. It also reduces the rate of employee turnover and prevents them from leaving the credentialing program incomplete. Talk to our experts for better insights into the program.
  
 
 

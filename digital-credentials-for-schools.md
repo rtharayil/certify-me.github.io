@@ -9,27 +9,27 @@ sitemap.priority : 0.9
 
 
 HeroImg: /assets3/images1/Schools.png
-Hero1Msg: Digital Credentials
-Hero2Msg: For Schools
-Hero3Msg: Certifyme enables schools to create, issue and manage verifiable certificates, badges, id cards, reports and many more.
+Hero1Msg: Boost Student Engagement in 
+Hero2Msg: Your School Program
+Hero3Msg: CertifyMe empowers schools and student curricula by implementing smart and modern blockchain technology in the certification process.
 
 
 1FeaturesImg: /assets3/images1/editor.png
-1FeaturesTitle: Create Credentials
-1FeaturesMessage: One of the most effective ways to motivate students is to provide them with credentials. Credentials are an important way for students to show their commitment, and they can have a significant impact on the engagement rate of your pupils. If you already have a student record system in place, we can help you create credentials for your students.
+1FeaturesTitle: Only Platform on Web that Offers No Cost Course Awareness Scheme
+1FeaturesMessage: We are a credentialing software that onboards schools and educational institutions to assist both the organization and students in reaching their goals. By offering certificates and badges that are ideal to showcase achievements, we drive brand promotion. Our SaaS-based platform enables bank-level encryption for fraud prevention and protection from compromised reputation. 
 
                   
 2FeaturesImg: /assets3/images1/time.png
-2FeaturesTitle: Saves Time
-2FeaturesMessage: You know you're not a bad admin when your team can spend less time on the job. With Certifyme, we help you create, issue and manage credentials in just three easy steps. You can create credentials using just two clicks—and then send out hundreds of them with a single click. And creating a new credential is as simple as clicking a button. With our advanced management options, it's easy to see who has what credentials, how many they have and when they expire.
+2FeaturesTitle: Automated Credentials for Student Success
+2FeaturesMessage: Keep your students from lost opportunities and complex challenges associated with credential verification and sharing. CertifyMe is the perfect solution to offer your students a seamless, stress-free credentialing experience. Integrating us in your existing LMSs is simple, time-saving, and cost-effective. We cut down the traditional certification workload from a day to 30 minutes. No matter which class format or learning experience you offer, we are easy to consolidate in all. We establish a badging experience that is fully branded and trackable. Not sure how it works? Check out our demo!
                   
-3FeaturesImg: /assets3/images1/Logo.png
-3FeaturesTitle: Branded Credentials
-3FeaturesMessage: You can now customize your credentials with your school's domain, logo and footer. This makes it easy to make sure that you're creating a strong brand for your students and their accomplishments.
+# 3FeaturesImg: /assets3/images1/Logo.png
+# 3FeaturesTitle: Branded Credentials
+# 3FeaturesMessage: You can now customize your credentials with your school's domain, logo and footer. This makes it easy to make sure that you're creating a strong brand for your students and their accomplishments.
                   
 3FeaturesImg: /assets3/images1/linkedin-badges.png
-3FeaturesTitle: Sharable
-3FeaturesMessage: Students can now share their achievements over different social media platforms to highlight their awards. The students will be able to post their achievements in the form of a screenshot, videos or a photo over various social media platforms such as Twitter, Facebook, Instagram and Snapchat. The students will also be able to share their achievements via email and SMS.
+3FeaturesTitle: Accessible by A Larger Audience and Employers
+3FeaturesMessage: Your students represent you and vice versa. The more students exhibit the certificates online, the better your brand presence becomes. Integrating us streamlines your virtual existence and gives you an edge over your competitors. Enabling us in your system provides you the flexibility to redesign the certificates and badges that echoes an authoritative brand image.<br>Our white labeling feature validates a credential that only consists of a student's academic information and achievements besides your institute name. Maintaining a seamless certification process is our goal. Choosing us as your certification partner also leverages the ease of social sharing.
                   
                   
                   
