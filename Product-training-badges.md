@@ -9,22 +9,23 @@ sitemap.priority : 0.9
 
 
 HeroImg: /assets3/images1/product.png
-Hero1Msg: Verifiable Badges and Certificates 
-Hero2Msg: For Product Training
-Hero2Msg: A complete digital credential solution for product training.
+Hero1Msg: A Powerful Credentialing Platform 
+Hero2Msg: To Drive Business Growth 
+Hero3Msg: Bring value to your certification courses for both the learners and your organization by partnering with CertifyMe. 
 
 
 1FeaturesImg: /assets3/images1/Branding.png
-1FeaturesTitle: Create Awareness
-1FeaturesMessage: Digital credentials are a way to create awareness of product training. These socially shareable badges and certificates create social waves and they will positively impact your product. With our three-tier analytics, you can check the success of your training program and scale up and down to millions of badges in the future. This will also create a social wave to spread your knowledge and build your brand. This will create awareness of your products and training programs. Create awareness for your industry. 
+1FeaturesTitle: Stunning Credentials Built Only for You
+1FeaturesMessage: A certification program is more than simply designing eye-catchy credentials. No matter which segment you are working with, every industry has its unique look and feel that our certificates offer. The credentials reflect an image that convincingly tells your story.<br> Any organization that collaborates with us, gets the chance of rebranding the certificate. It exudes a positive, credible brand image that is essential to take your organization to the next level. Don’t believe in us? Check out our demo!
+
 
 2FeaturesImg: /assets3/images1/secure-badge.png
-2FeaturesTitle: Secure with qldb
-2FeaturesMessage: Make your credentials immutable, transparent and cryptographically verifiable with aws quantum ledger. The protocol will be similar to RSA and HMAC except that you will not need to sign the user's key. Using qlde, you can authenticate your users with their identity keys and will have a clean private key with no associated signing keys. 
+2FeaturesTitle: An Automated, Efficient, and Cost-effective Process
+2FeaturesMessage: Issuing certificates is one of the most monotonous and labor-intensive tasks after the training session. But this is proof that discloses how beneficial the training is for the learners and how the skills gained in the program will help in the corporate growth. Thus, delivering the credentials as fast as possible is critical for the success of the product training program.
 
 3FeaturesImg: /assets3/images1/LMS.png
-3FeaturesTitle: Integrations
-3FeaturesMessage: API, Zapier, and LMS plugins to award credentials automatically from our system. This will reduce your manual effort while issuing more efficient codes. You can also use your API key to automate this process. By default, the login box on the website is configured as a token-based authentication system, you can always choose an alternative. All the APIs are enabled for token authentication.
+3FeaturesTitle: Effortless Marketing
+3FeaturesMessage: Marketing your organization or training courses is the basis of establishing the institute for the long haul. But traditional marketing tricks also cost a fortune. irrespective of your organization's size and employee count, certificates from CertifyMe enable you to give life to your vision and mission. Our platform comes with an excellent perk; the ability to share the credentials on 40+ social media sites at a go. If this excites you, find out how <a href="https://go.certifyme.online/talk-with-expert?utm_source=digitalbadge&utm_medium=hero&utm_campaign=Talk+to+the+expert">we can help you.</a>
 
 
 
