@@ -9,27 +9,27 @@ sitemap.priority : 0.9
 
 
 HeroImg: /assets3/images1/Associations.png
-Hero1Msg: Digital Certificates and Badges
-Hero2Msg: For Associations
-Hero3Msg: An end-to-end solution for creating, issuing, and managing certificates and badges for associations and communities.
+Hero1Msg: Simple and Productive Member 
+Hero2Msg: Experience for Associations
+Hero3Msg: As a leading partner of global associations, CertifyMe works toward increasing their membership engagement and boosting their retention.
 
 
 1FeaturesImg: /assets3/images1/editor.png
-1FeaturesTitle: Create Credential Templates
-1FeaturesMessage: Credential templates can be created with three simple steps. We have an unlimited repository of templates, and users can upload or design their credential images. Canva Integration makes it easy for users to design their images. Canva Integration makes it easy for users to design their images for their credential templates. With just a few clicks, users can have access to a wide variety of tools and resources that they can use to create their unique images.
+1FeaturesTitle: Excellent Business ROI that No Other Platform Offers
+1FeaturesMessage: Attracting members to a particular association demands thoughtful planning. CertifyMe is the perfect answer to this inquest. It enables members of an association to find value in the membership program by obtaining socially shareable credentials that come with a scannable code. A collaboration with us can benefit your association by driving member engagement at cost-effective prices.
 
 2FeaturesImg: /assets3/images1/Branding.png
-2FeaturesTitle: Branding Space with CTA
-2FeaturesMessage: The branding space with CTA button on your verification page is one of the most important elements of your page. It is the call to action that tells your visitors what you want them to do next. If you are not using a CTA button, you are missing out on a great opportunity to increase your inbound traffic and collect leads.
+2FeaturesTitle: Qualified Members, Verified Credentials
+2FeaturesMessage: Renowned associations highly trust in the potential of our verifiable credentials. They offer their members CertifyMe certificates & badges for end-to-end security that only they have access to. Every document members receive via email is authenticated, downloadable, socially shareable, customized, and centralized.
 
 3FeaturesImg: /assets3/images1/Logo.png
-3FeaturesTitle: Branded Credentials
-3FeaturesMessage: Using our white-labelling option users can customize the verification page with their URL, logo and footer which fits their brand. Which helps to issue credentials as a front-end issuer. This is a great option when you're just getting started. Using our full support option we allow users to customize their verification profile with logo, URL, footers and other features. We also provide quick access to a support page.
+3FeaturesTitle: Be Visible on 40+ Social Media Sites
+3FeaturesMessage: Yes, you have heard right. CertifyMe has been working on the credentialing platform for quite some time. The common phenomenon is that 89% of students, trainees, and learners showcase their expertise on social media channels to reach a broader audience. We streamline the online uploading process by integrating direct buttons/sections that do the data input on various social channels in the shortest time possible.
 
                   
 4FeaturesImg: /assets3/images1/Level3.png
-4FeaturesTitle: Analytics and Social Media
-4FeaturesMessage: We have three-level analytics which help the users to understand the matrices and success of the program. Users can share their credentials to 40+ social media and as an issuer, you can have zero-cost marketing with digital credentials. We also provide social management platforms like Facebook and Instagram as well as analytics of your web data.
+4FeaturesTitle: Hassle-free Certificate Renewal
+4FeaturesMessage: Issuing one certificate and then nothing. It’s the most common scenario that association members face. It not only diminishes the certificate value but also affects the credibility of the association. To address this condition, CertifyMe offers certificate renewal reminders that notify the last day of certification validity and influence knowledge upgrades. A single click is all you need to renew your certification request.
 
 
 
