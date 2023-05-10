@@ -6,7 +6,9 @@ description: "Digital badges and certificates for upskilling and reskilling or a
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert"  
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
 
 HeroImg: /assets3/images1/HR.png
 Hero1Msg: Improve Workplace 
