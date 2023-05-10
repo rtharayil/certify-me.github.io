@@ -6,7 +6,9 @@ description: "The most Advanced credentialing features to enable Elearning platf
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert"  
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
 
 HeroImg: /assets3/images1/5.png
 Hero1Msg: Verifiable Credentials to Showcase 
