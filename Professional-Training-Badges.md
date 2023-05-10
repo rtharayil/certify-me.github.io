@@ -6,7 +6,9 @@ description: "We are dedicated to helping organizations reach their training obj
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert"  
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
 
 HeroImg: /assets3/images1/training.png
 Hero1Msg: Give Your Business  

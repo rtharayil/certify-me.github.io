@@ -6,7 +6,9 @@ description: "An all in one solution for product marketers to issue digital badg
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert"  
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
 
 HeroImg: /assets3/images1/product.png
 Hero1Msg: A Powerful Credentialing Platform 

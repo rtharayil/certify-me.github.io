@@ -6,7 +6,9 @@ description: "Schools can use the feature to create a school's own digital ident
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert"  
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
 
 HeroImg: /assets3/images1/Schools.png
 Hero1Msg: Boost Student Engagement in 

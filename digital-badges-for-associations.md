@@ -6,7 +6,9 @@ description: "An end-to-end solution for creating, issuing, and managing certifi
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert"  
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
 
 HeroImg: /assets3/images1/Associations.png
 Hero1Msg: Simple and Productive Member 

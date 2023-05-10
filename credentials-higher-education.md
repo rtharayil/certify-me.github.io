@@ -6,7 +6,9 @@ description: "CertifyMe enables colleges and universities to issue certificates,
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert"  
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
 
 HeroImg: /assets3/images1/University.png
 Hero1Msg: White Label-friendly Credentialing 
