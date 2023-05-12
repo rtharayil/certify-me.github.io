@@ -2,6 +2,7 @@
 layout: blog
 title:  How does adding Micro-credential
 
+description: Adding micro-credentials to your CV helps fill skill gaps, advance your career, demonstrate personal growth, and provide verified and easily shareable credentials.
 
 abstract:  How does adding Micro-credential
 topic: news

@@ -2,6 +2,7 @@
 layout: blog
 title: Three Effective Advantages of Verifiable Digital Records 
 
+description: Verifiable digital records offer advantages for employers, employees, and learners, enhancing credibility and facilitating career progression.
 
 abstract: Three Effective Advantages of Verifiable Digital Records 
 topic: news

@@ -2,6 +2,7 @@
 layout: blog
 title:  What Are Skill Tags and Why Do They Matter?
 
+description: Skill tags provide context to digital badges, showcasing specific competencies and enhancing visibility for recruiters and employers.
 
 abstract:  What Are Skill Tags and Why Do They Matter?
 topic: news

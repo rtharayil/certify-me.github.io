@@ -2,7 +2,7 @@
 layout: blog
 title:  Three Effective Advantages of Verifiable Digital Records
 
-
+description:
 abstract:  Three Effective Advantages of Verifiable Digital Records
 topic: news
 author : Mrunal Upadhye

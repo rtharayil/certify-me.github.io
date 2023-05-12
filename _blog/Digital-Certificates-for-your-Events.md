@@ -2,6 +2,7 @@
 layout: blog
 title: Digital Certificates for your Events 
 
+description: Digital certificates and badges enhance engagement and brand awareness in events, attracting new participants.
 
 abstract: Digital Certificates for your Events 
 topic: news

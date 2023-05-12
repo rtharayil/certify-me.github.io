@@ -2,6 +2,7 @@
 layout: blog
 title: A Guide to Digital Badges
 
+description: Guide to Digital Badges:Recognize achievements, showcase skills, and enhance employability in the learner-centered digital world.
 
 abstract: In the current digital world, knowledge and information can be obtained from any platform be it digital or analog. We must aid this knowledge to quantify our skill-set and demonstrate our proficiency. Digital badges in one such way to recognise learners achievements and help further in a career path.
 

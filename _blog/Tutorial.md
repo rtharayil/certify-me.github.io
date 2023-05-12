@@ -2,6 +2,7 @@
 layout: tutorial
 title: Application for Digital Credential Sponsorship for your events
 
+description: Video tutorials on creating and managing credentials in CertifyMe, including customization, bulk issuing, and verifiability features.
 
 abstract: Application for Digital Credential Sponsorship for your events
 topic: news

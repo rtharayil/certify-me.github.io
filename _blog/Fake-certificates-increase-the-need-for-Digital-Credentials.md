@@ -2,6 +2,7 @@
 layout: blog
 title: Fake certificates increase the need for Digital Credentials
 
+description: Digital Credentials provide secure proof of qualifications, combatting fake certificates, and aiding in personal branding for career advancement.
 
 abstract: Fake certificates increase the need for Digital Credentials
 

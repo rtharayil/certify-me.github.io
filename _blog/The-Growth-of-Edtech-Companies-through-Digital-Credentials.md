@@ -2,6 +2,7 @@
 layout: blog
 title: The Growth of Edtech Companies through Digital Credentials
 
+description: EdTech refers to the use of educational technology to facilitate learning, and digital credentials enhance its growth and effectiveness.
 
 abstract: The Growth of Edtech Companies through Digital Credentials 
 topic: news

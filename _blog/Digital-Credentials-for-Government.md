@@ -2,6 +2,7 @@
 layout: blog
 title:  Digital Credentials for Government
 
+description: Governments are embracing digital credentials for secure and efficient document issuance and citizen identification processes.
 
 abstract:  Digital Credentials for Government
 topic: news

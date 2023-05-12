@@ -2,6 +2,7 @@
 layout: blog
 title: Promote your events through Digital Credential
 
+description: Promote events effectively with digital credentials, providing legitimacy, recognition, and career advancement opportunities for learners.
 
 abstract: Promote your events through Digital Credential
 

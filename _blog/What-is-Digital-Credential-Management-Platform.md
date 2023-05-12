@@ -2,6 +2,7 @@
 layout: blog
 title: What is Digital Credential Management Platform? 
 
+description: Digital Credential Management Platforms enable institutions to issue and manage digital credentials easily, securely, and efficiently.
 
 abstract: What is Digital Credential Management Platform? 
 topic: news

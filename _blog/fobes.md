@@ -3,7 +3,7 @@ layout: blog
 title: 36% of employees cite a lack of recognition as their primary reason for employee dissatisfaction
 
 
-
+description:
 abstract: lack of recognition is the single largest factor that later leads an employee to scout for other opportunities and eventually leading to attrition.
 topic: news
 imageLink: /img/blog/12.png

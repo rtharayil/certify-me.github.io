@@ -2,7 +2,7 @@
 layout: blog
 title: Media Kit
 
-
+description:
 abstract: Media Kit
 topic: news
 imageLink: /img/preview1.png

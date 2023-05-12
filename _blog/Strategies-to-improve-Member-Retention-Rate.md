@@ -2,6 +2,7 @@
 layout: blog
 title: Strategies to improve Member Retention Rate
 
+description: Effective strategies to market a membership program include content marketing, social media marketing, and attractive membership offers.
 
 abstract:  The one question membership-based organizations are concerned with is How do we retain our members? This question is crucial as retaining the members is essential for the survival of the organization. To answer the question best, it is important to understand why a member would exit or refuse to retain and improvise the conditions and criticisms. There could be numerous reasons why a customer would not want to renew its membership, the following are some of the reason that needs to be improvised
 

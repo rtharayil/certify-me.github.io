@@ -2,6 +2,7 @@
 layout: blog
 title: Digital Credentials for event and Meetings Professionals 
 
+description: Digital credentials are becoming essential in the event and meeting industry, offering easy verification and sharing of professional skills.
 
 abstract: Digital Credentials for event and Meetings Professionals 
 topic: news

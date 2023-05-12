@@ -2,6 +2,7 @@
 layout: blog
 title:  The Importance of Including Digital Credentials on LinkedIn
 
+description: Adding digital credentials on LinkedIn can enhance brand value, networking, and job opportunities.
 
 abstract:  The Importance of Including Digital Credentials on LinkedIn
 topic: news

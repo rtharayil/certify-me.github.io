@@ -2,7 +2,7 @@
 layout: blog
 title: 3 must social media accelerator tools
 
-
+description:
 abstract: 3 must social media accelerator tools to make your next Event a Smash Hit
 topic: news
 imageLink: /img/blog/11.png

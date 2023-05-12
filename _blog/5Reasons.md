@@ -2,6 +2,7 @@
 layout: blog
 title: 5 Reasons why Every Event Marker and Training Manager Need Digital Credentials
 
+description: Social media-friendly credentials enhance visibility, automation saves time and money, verifiable credentials hold greater value, and sharing boosts website traffic and SEO.
 
 abstract: Automating the issue of 1000 certificates could save around 19,000 minutes of manual effort boiling down to 7000 $ of savings
 topic: news
