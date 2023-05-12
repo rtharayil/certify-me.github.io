@@ -2,6 +2,7 @@
 layout: blog
 title: White Labeling Digital Credentials
 
+description: White-labelling digital credentials allows companies to rebrand and resell them, offering cost-effectiveness and brand expansion opportunities.
 
 abstract: White Labeling Digital Credentials
 topic: news

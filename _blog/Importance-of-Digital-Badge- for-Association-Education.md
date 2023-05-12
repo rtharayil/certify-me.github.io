@@ -2,7 +2,7 @@
 layout: blog
 title:  Importance of Digital Badges for Association Education
 
-
+description:
 abstract:  Importance of Digital Badges for Association Education
 topic: news
 author : Mrunal Upadhye

@@ -2,6 +2,7 @@
 layout: blog
 title:  How Professional Certification Benefits the Organisations?
 
+description: Professional certification benefits organizations by reskilling employees, enhancing career advancement, increasing employee satisfaction, and boosting productivity.
 
 abstract:  How Professional Certification Benefits the Organisations?
 topic: news

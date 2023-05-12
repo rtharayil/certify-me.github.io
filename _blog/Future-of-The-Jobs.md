@@ -2,6 +2,7 @@
 layout: blog
 title:  Future of The Jobs
 
+description: Technological advancements will reshape industries and jobs, with 43% of companies reducing personnel, while 40% of employees need reskilling by 2025.
 
 abstract:  Future of The Jobs
 topic: news

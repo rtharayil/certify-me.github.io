@@ -2,6 +2,7 @@
 layout: blog
 title: Here's how digital badges and digital certificates will help your abilities
 
+description: Digital badges and certificates allow learners to showcase their skills and abilities, enhancing employment prospects and building a strong portfolio.
 
 abstract: Here's how digital badges and digital certificates will help your abilities
 topic: news

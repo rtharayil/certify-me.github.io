@@ -3,6 +3,7 @@ layout: blog
 title: Why Digital Credentials are gaining popularity?
 
 
+description: Digital credentials, including certificates and badges, are rising in popularity for their convenience, security, and cost-effectiveness in the digital era.
 
 abstract: Why Digital Credentials are gaining popularity?
 author : Mrunal Upadhye

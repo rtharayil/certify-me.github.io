@@ -2,6 +2,7 @@
 layout: blog
 title:  How Digital credentials help increase Brand Awareness
 
+description: Digital credentials increase brand awareness by sharing achievements on social media, driving website traffic, and leveraging email marketing.
 
 abstract:  How Digital credentials help increase Brand Awareness
 topic: news

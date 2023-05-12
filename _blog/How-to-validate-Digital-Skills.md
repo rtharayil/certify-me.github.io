@@ -2,6 +2,7 @@
 layout: blog
 title: How to validate Digital Skills?
 
+description: Validate digital skills through training and digital credentials to adapt to remote work and changing business trends.
 
 abstract: How to validate Digital Skills?
 

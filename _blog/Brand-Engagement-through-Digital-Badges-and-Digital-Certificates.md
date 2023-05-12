@@ -2,6 +2,7 @@
 layout: blog
 title: Brand Engagement through Digital Badges and Digital Certificates
 
+description: Digital badges drive learner engagement, recognition, and brand value by verifying and rewarding skills achievements.
 
 abstract: Brand Engagement through Digital Badges and Digital Certificates
 author : Mrunal Upadhye

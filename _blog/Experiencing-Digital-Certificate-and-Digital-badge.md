@@ -2,6 +2,7 @@
 layout: blog
 title: Experiencing Digital Certificate and Digital badge
 
+description: Digital credentials, including digital certificates and badges, enhance engagement and recognition for learners in online training platforms.
 
 abstract:  Digital Credentials have revolutionized the face of certifications and badges. Adapting digital certification and digital badges is a must across all industries considering its demanding rise in the new digital world.
 

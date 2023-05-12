@@ -2,7 +2,7 @@
 layout: blog
 title: Don't just issue certificates, award verifiable and sharable Credentials to your Learners
 
-
+description:
 abstract: 𝗨𝗽𝗴𝗿𝗮𝗱𝗲 !! , don't just issue certificates, award verifiable and sharable Credentials to your Learners
 topic: news
 imageLink: /img/blog/1_4.jpeg

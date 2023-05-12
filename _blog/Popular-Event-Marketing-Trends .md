@@ -2,6 +2,7 @@
 layout: blog
 title:  Popular Event Marketing Trends 2022
 
+description: Popular event marketing trends include interactive videos, augmented reality/virtual reality, and the use of artificial intelligence.
 
 abstract:  Popular Event Marketing Trends 2022
 topic: news

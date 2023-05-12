@@ -2,6 +2,7 @@
 layout: blog
 title: 𝗣𝗼𝘀𝗶𝘁𝗶𝘃𝗲 𝗙𝗲𝗲𝗱𝗯𝗮𝗰𝗸 using credentials
 
+description: CertifyMe.online offers a digital credential platform for issuing credentials, providing 50 free credentials and personalized support.
 
 abstract: 𝗣𝗼𝘀𝗶𝘁𝗶𝘃𝗲 𝗙𝗲𝗲𝗱𝗯𝗮𝗰𝗸 𝗧𝗵𝗲 𝗦𝘂𝗽𝗲𝗿 𝗠𝗮𝗻𝘁𝗿𝗮 𝗶𝗻 𝘆𝗼𝘂𝗿 𝗪𝗼𝗿𝗸𝗽𝗹𝗮𝗰𝗲
 topic: news

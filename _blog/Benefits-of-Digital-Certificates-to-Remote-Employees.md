@@ -3,6 +3,7 @@ layout: blog
 title: Benefits of Digital Certificates to Remote Employees
  
 
+description: Digital certificates offer remote employees purpose, accuracy, engagement, security, verification, career development, and shareability for digital skills.
 
 abstract: Benefits of Digital Certificates to Remote Employees
 

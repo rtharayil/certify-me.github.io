@@ -2,6 +2,8 @@
 layout: blog
 title: Most Common Types of Digital certificate
 
+description: Common types of digital certificates include TLS/SSL certificates, code signing certificates, and client certificates for user verification.
+
 abstract: Most Common Types of Digital certificate
 topic: news
 author : Mrunal Upadhye

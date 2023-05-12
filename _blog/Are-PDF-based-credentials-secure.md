@@ -2,6 +2,7 @@
 layout: blog
 title: Are PDF based credentials secure
 
+description: Learn about PDF encryption, password protection, watermarking, and vulnerabilities to secure digital documents.
 
 abstract: Are PDF based credentials secure
 topic: news

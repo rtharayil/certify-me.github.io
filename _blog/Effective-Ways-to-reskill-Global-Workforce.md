@@ -2,6 +2,7 @@
 layout: blog
 title: Effective Ways to reskill Global Workforce 
 
+description: Promote connectivity, skill-based credentials, and tailored learning programs to effectively reskill the global workforce.
 
 abstract: Effective Ways to reskill Global Workforce 
 topic: news

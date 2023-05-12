@@ -2,6 +2,7 @@
 layout: blog
 title:  Brand Awareness and Referrals Using Digital Badges
 
+description: Digital badges enhance brand awareness through social media sharing and email marketing, driving referrals and word-of-mouth marketing.
 
 abstract:   An organisation that prioritises engagement, awareness, and traffic can be domineering in its pursuit of visibility among the thousands of other digital organisations, social media platforms, websites, and email marketing campaigns. With the increased usage of digital media and platforms, the competition has only gotten stronger, and the necessity to stay relevant has never been more important.
 topic: news

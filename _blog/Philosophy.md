@@ -2,6 +2,7 @@
 layout: blog
 title: Our Philosophy
 
+description: Certify Me.Online aims to maximize smiles by providing a trusted platform for creating and managing Digital Credentials.
 
 abstract: We believe that when our platform generates a credential we also generate a possibility of an extra smile on this planet
 topic: news
