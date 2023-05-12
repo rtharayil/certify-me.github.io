@@ -2,6 +2,7 @@
 layout: blog
 title:  Trending Technologies for Online Education
 
+description: Trending technologies for online education:AR/VR, gamified learning, AI, blockchain, and eLearning platforms.
 
 abstract:  Trending Technologies for Online Education
 topic: news

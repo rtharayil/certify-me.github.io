@@ -2,6 +2,7 @@
 layout: blog
 title: The Future of Digital Credentials- Understanding the Biggest Gamechanger in Higher Education
 
+description: Digital credentials, including digital badges and certificates, are verifiable online representations of achievements or qualifications.
 
 abstract: Digital Credential is the instant way to verify and manage your digital certificates, digital badges and achievements online. 
 topic: news

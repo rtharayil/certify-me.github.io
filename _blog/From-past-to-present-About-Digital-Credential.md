@@ -2,6 +2,7 @@
 layout: blog
 title: From-past-to-present-About-Digital-Credential-grow?
 
+description: Digital credentials have revolutionized the certification process, replacing traditional certificates and badges with cost-effective and secure digital alternatives.
 
 abstract:  Certificates and badges have been here for longer than we thought. Traditional paper-based certificates to recognise a persons qualification were issued since the early 1700s. Certificates were used to keep a record of a person birth, death, achievements and qualification or to verify the person's identity. It was the only legal way to identify and prove the legitimacy of the identity of the document.
 

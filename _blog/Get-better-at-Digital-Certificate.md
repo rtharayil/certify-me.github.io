@@ -2,6 +2,7 @@
 layout: blog
 title: Get better at Digital Certificate
 
+description: Digital certificates enhance online education by providing secure and verifiable credentials using blockchain technology.
 
 abstract: Get better at Digital Certificate  
 topic: news

@@ -2,7 +2,7 @@
 layout: blog
 title: Refund Policy
 
-
+description:
 abstract: Our Return and Refund Policy was last updated 10 dec 2021
 topic: news
 imageLink: /img/preview1.png

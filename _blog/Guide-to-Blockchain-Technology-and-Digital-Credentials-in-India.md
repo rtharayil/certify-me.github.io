@@ -2,6 +2,7 @@
 layout: blog
 title: Guide to Blockchain Technology and Digital Credentials in India 
 
+description: Digital credentials with blockchain technology are revolutionizing the education sector in India, enhancing security and eliminating fraudulent practices.
 
 abstract: Guide to Blockchain Technology and Digital Credentials in India 
 topic: news

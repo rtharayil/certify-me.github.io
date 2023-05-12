@@ -2,6 +2,7 @@
 layout: blog
 title: Need for Digital Crenditials for businesses and commercial purposes
 
+description: Digital credentials are crucial for businesses as they enhance employees' skills, save costs, and promote career development.
 
 abstract: The rise in digitalisation led to a digital transformation of all industries giving rise to competition from businesses to businesses and industry to industry irrespective of their size structure. With new technologies invented now and then, businesses must stay relevant and stand out from the crowd.
 

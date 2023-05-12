@@ -2,6 +2,7 @@
 layout: blog
 title: Why are Digital Certificates Trending?
 
+description: Digital certificates are trending due to their security, centralization, authenticity, shareability, and public trust factors.
 
 abstract: Why are Digital Certificates Trending?
 topic: news

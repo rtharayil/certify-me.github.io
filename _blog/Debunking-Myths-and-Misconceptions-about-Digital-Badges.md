@@ -2,6 +2,7 @@
 layout: blog
 title: Debunking Myths and Misconceptions about Digital Badges 
 
+description: Debunking Myths and Misconceptions about Digital Badges, Learn the truth about their effectiveness and benefits.
 
 abstract: Debunking Myths and Misconceptions about Digital Badges 
 topic: news

@@ -2,6 +2,9 @@
 layout: blog
 title: Macro Impact of Micro Credentials
 
+
+description: Micro-credentials and digital badges recognize learners' skills, enhance employability, and promote inclusivity and verifiability in education and industries.
+
 abstract: Macro Impact of Micro Credentials 
 topic: news
 author : Mrunal Upadhye

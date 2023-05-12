@@ -2,7 +2,7 @@
 layout: blog
 title: Brand Engagement through Digital Badges and Digital Certificates
 
-
+description:
 abstract: Brand Engagement through Digital Badges and Digital Certificates
 author : Mrunal Upadhye
 topic: news

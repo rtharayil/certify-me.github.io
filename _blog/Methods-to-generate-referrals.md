@@ -2,6 +2,7 @@
 layout: blog
 title: Methods to generate referrals
 
+description: Generate referrals by being customer-centric, implementing affiliate programs, leveraging testimonials, and directly asking for referrals.
 
 abstract: Methods to generate referrals 
 topic: news

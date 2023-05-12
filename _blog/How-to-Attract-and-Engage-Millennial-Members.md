@@ -2,6 +2,7 @@
 layout: blog
 title: How to Attract and Engage Millennial Members
 
+description: Effective strategies for post-certification program engagement include planning, tracking engagement, and digital marketing techniques for member retention.
 
 abstract:  The membership program could vary from generation to generation. A certain program could attract young learners while the other may be suitable for the older generation. In both cases, it is advisable to study the generation and understand their mannerisms and understanding.
 

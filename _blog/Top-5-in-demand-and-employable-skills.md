@@ -2,6 +2,7 @@
 layout: blog
 title:  Top 5 in-demand and employable skills (2022)
 
+description: Top 5 in-demand employable skills for 2022:Cloud Computing, Artificial Intelligence, Machine Learning, Cybersecurity, and Big Data.
 
 abstract:  Top 5 in-demand and employable skills (2022)
 topic: news

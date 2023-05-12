@@ -2,7 +2,7 @@
 layout: blog
 title: Think out of the box
 
-
+description:
 abstract: How could Digital Credentials enable a global CIO summit skyRocket its ticket sales without spending a penny on advertisements?
 topic: news
 imageLink: /img/blog/13.png

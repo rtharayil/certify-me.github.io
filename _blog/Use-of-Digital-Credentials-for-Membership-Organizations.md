@@ -3,6 +3,8 @@ layout: blog
 title: Use of Digital Credentials for Membership Organizations
 
 
+description: Digital credentials, including certificates and badges, benefit membership organizations by providing recognition, verification, and cost savings.
+
 abstract:  Setting up a membership platform is one thing but marketing it effectively is another. If you fail to market your membership platform it won't give you the desired set of results compromising the quality of brand value.
 
 topic: news

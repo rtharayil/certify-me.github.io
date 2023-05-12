@@ -1,7 +1,8 @@
 ---
 layout: blog
 title: How to Maximize the Value of Your Certification
-
+ 
+description: Maximize certification value with verified digital credentials, accuracy, security, technology, and shareability for increased recognition and trust.
 
 abstract:  Every learner is career-focused and invests in a program that benefits employment. For this, the learner may want the provided certificate shareable and verified. When a learner becomes a part of the learning program, the priority lies with certification hence making it essential for the organization to value and verify the credentials.
 
