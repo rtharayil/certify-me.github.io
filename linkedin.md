@@ -7,6 +7,8 @@ layout: V2LayoutPages
 
 sitemap.priority : 0.9
 
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert"
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
 
 HeroImg: /assets3/images1/linkedin.png
 Hero1Msg: LinkedIn
