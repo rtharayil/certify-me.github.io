@@ -2,6 +2,7 @@
 layout: blog
 title:  Digital Learning and Digital Certificates
 
+description: Digital learning offers personalized education and digital certificates provide secure, verified proof of acquired skills and competencies.
 
 abstract:  With the recent global pandemic and the restrictions and policies that were followed with it, remote working was and continues to be the new norm. With the imposed lockdown and no-contact restrictions, it was hard for learners and students to access education on-site and hinder their educational process.
 topic: news

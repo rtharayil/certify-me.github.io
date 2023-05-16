@@ -5,5 +5,6 @@ description: "CertifyMe is one of the best digital credential platforms offering
 
 layout: V3Layout
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
 sitemap.priority : 1
 ---

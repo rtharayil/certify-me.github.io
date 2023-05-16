@@ -2,7 +2,7 @@
 layout: blog
 title: Digital credentials are a great way to market
 
-
+description:
 abstract: A single digital credential attracts around 3500 + views
 topic: news
 imageLink: /img/blog/1_7.jpeg

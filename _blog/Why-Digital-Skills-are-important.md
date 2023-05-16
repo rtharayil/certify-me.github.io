@@ -2,6 +2,9 @@
 layout: blog
 title: Why Digital Skills are important?
 
+
+description: Digital skills are essential for businesses to stay relevant, compete effectively, and undergo successful digital transformation.
+
 abstract: Why Digital Skills are important?
 topic: news
 author : Mrunal Upadhye

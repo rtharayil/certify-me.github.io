@@ -6,7 +6,9 @@ description: "A verifiable transcript is a permanent record of academic achievem
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert?utm_source=digitaltranscripts&utm_medium=hero&utm_campaign=Talk+to+the+expert"
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert?utm_source=digitaltranscripts&utm_medium=review&utm_campaign=Talk+to+our+expert"
 
 HeroImg: /assets3/images1/verifiable-diploma.png
 Hero1Msg: Verifiable Transcripts that Drive 
@@ -21,7 +23,7 @@ Hero3Msg: Ensure the safety and traceability of certificate details without the 
                   
 2FeaturesImg: /assets3/images1/secure-badge.png
 2FeaturesTitle: Open Standard Digital Transcripts Issuing Platform
-2FeaturesMessage: CertifyMe is set out on a mission of assisting organizations, training, and educational institutions to constitute the best industry practices. We have simplified the certification process by allowing you to create and issue certificates in a minimal timeframe.<br> The easy-to-design and easy-to-manage verifiable transcripts maximize your brand value, course efficiency, and candidates’ confidence. The instantly shareable digital transcripts take your business reputation up a notch.  
+2FeaturesMessage: CertifyMe is set out on a mission of assisting organizations, training, and educational institutions to constitute the best industry practices. We have simplified the certification process by allowing you to create and issue certificates in a minimal timeframe.<br><br> The easy-to-design and easy-to-manage verifiable transcripts maximize your brand value, course efficiency, and candidates’ confidence. The instantly shareable digital transcripts take your business reputation up a notch.  
 
                   
 3FeaturesImg: /assets3/images1/verification.png

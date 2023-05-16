@@ -2,6 +2,7 @@
 layout: blog
 title: Global Education Sector Digital Badge Market
 
+description: Digital badges are gaining traction in Competency-Based Education, driving growth in the global education sector's digital badge market.
 
 abstract:  Global Education Sector Digital Badge Market
 topic: news

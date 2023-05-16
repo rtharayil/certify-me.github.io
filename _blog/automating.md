@@ -2,6 +2,7 @@
 layout: blog
 title: Are you still spending time manually issuing certificates and badges?
 
+description: Automate credential issuing with CertifyMe.Online to save time and up to 93% of costs. Maximize brand presence.
 
 abstract: Automating your credential issuing process could cut down your cost up to ~93%
 topic: news

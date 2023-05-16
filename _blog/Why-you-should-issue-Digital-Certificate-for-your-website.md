@@ -2,6 +2,7 @@
 layout: blog
 title:  Why you should issue Digital Certificate for your website
 
+description: Digital SSL certificates provide secure connections, protect sensitive information, boost search rankings, and instill trust in websites.
 
 abstract:  SSL (Secure Sockets Layer), often known as TLS, is a technology for encrypting Web traffic and authenticating the identity of servers. An SSL certificate authenticates a website's identity and establishes a secure connection.
 topic: news

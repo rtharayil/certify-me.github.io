@@ -2,6 +2,8 @@
 layout: blog
 title: Achieve Educational Goals through Digital Badge
 
+description: Digital badges enable recognition, engagement, and skill display, facilitating educational goals and promoting learner participation and employment opportunities.
+
 abstract: Achieve Educational Goals through Digital Badge 
 topic: news
 author : Mrunal Upadhye

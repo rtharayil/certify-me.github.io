@@ -6,7 +6,9 @@ description: "Digital certificates are a great way to show your awardees that yo
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert?utm_source=digitalcertificate&utm_medium=hero&utm_campaign=Talk+to+the+expert"
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert?utm_source=digitalcertificate&utm_medium=review&utm_campaign=Talk+to+our+expert"
 
 HeroImg: /assets3/images1/digital-certificate.png
 Hero1Msg: Offer Authentic, Verified, and Tamper-proof 

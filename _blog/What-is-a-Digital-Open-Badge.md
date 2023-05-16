@@ -2,6 +2,7 @@
 layout: blog
 title:  What is a Digital Open Badge
 
+description: Digital Open Badges are online equivalents of physical badges that demonstrate progress and achievement in specific skills, with verifiable metadata.
 
 abstract:  Digital Open Badges are gaining popularity among businesses for their verifiability, shareability and security.
 topic: news

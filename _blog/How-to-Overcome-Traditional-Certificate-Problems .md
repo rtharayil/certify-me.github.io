@@ -2,6 +2,7 @@
 layout: blog
 title: How to Overcome Traditional Certificate Problems 
 
+description: Digital education and credentials overcome traditional certification problems with accessibility, eco-friendliness, and security through blockchain technology.
 
 abstract: How to Overcome Traditional Certificate Problems   
 topic: news

@@ -2,6 +2,7 @@
 layout: blog
 title:  Verifiable credentials the key to the online privacy
 
+description: Verifiable credentials offer secure, verified, shareable, and controlled access to data, enhancing online privacy.
 
 abstract:  Verifiable credentials the key to the online privacy
 topic: news

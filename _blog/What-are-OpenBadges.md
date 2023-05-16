@@ -2,6 +2,7 @@
 layout: blog
 title:  What are OpenBadges?
 
+description: Open Badges are portable and verifiable digital badges that recognize achievements and skills, benefiting earners, issuers, and developers.
 
 abstract: What are OpenBadges? 
 topic: news

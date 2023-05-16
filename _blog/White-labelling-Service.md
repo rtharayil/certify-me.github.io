@@ -2,7 +2,7 @@
 layout: blog
 title:  White labelling Service
 
-
+description:
 abstract:  White labelling Service
 topic: news
 author : Mrunal Upadhye

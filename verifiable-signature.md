@@ -6,7 +6,9 @@ description: "Cryptographic signature enables to verify digital credentials"
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert?utm_source=verifiable-signature&utm_medium=hero&utm_campaign=Talk+to+the+expert"
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert?utm_source=verifiable-signature&utm_medium=review&utm_campaign=Talk+to+our+expert"
 
 HeroImg: /assets3/images1/Signature.png
 Hero1Msg: Integration of Cryptographic 
@@ -19,7 +21,7 @@ Hero3Msg: Ensure data integrity by employing verifiable signatures in your certi
 
 
 2FeaturesImg: /assets3/images1/RSA.png
-2FeaturesTitle: Protect Your Data from Mishandling and Misrepresentation
+2FeaturesTitle: Protect Your Data from Theft and Distortion
 2FeaturesMessage: Integration of digital signatures in the credentials keeps you a step forward among competitors. Limit access to your certificates and badges to control credential fraud. The digital signature includes safety features such as cyclic redundancy checks, personal identification numbers (PINs), and asymmetric cryptography.<br>The signature protects user data using security schemes such as asymmetric cryptography, encryption, and decryption. The strict safety guidelines screen your awardees from fraudulent signatures.
 
 

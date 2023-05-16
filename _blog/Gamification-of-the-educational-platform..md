@@ -2,6 +2,7 @@
 layout: blog
 title:  Gamification of the educational platform has existed for decades now, to increase and encourage the learners’ participation and engagement
 
+description: Gamification in education and professional development improves engagement, motivation, and skill recognition through digital badges.
 
 abstract:  Gamification of the educational platform has existed for decades now, to increase and encourage the learners’ participation and engagement
 topic: news

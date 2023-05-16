@@ -2,6 +2,7 @@
 layout: blog
 title: Managing and Sharing Digital Credentials 
 
+description: Digital credentials are managed by accepting, claiming, and sharing them through digital platforms for easy verification and recognition.
 
 abstract: Managing and Sharing Digital Credentials  
 topic: news

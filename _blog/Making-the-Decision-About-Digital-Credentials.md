@@ -2,6 +2,7 @@
 layout: blog
 title: Making the Decision About Digital Credentials
 
+description: Digital credentials require privacy, trust, credential management, and authority to be considered when incorporating them into organizations' systems.
 
 abstract: Digital credentials have been the new buzzword across all organizations. The demand for digital credentials has been ever-growing and hence, the need to incorporate the same is crucial. But the question remains, " How do we incorporate Digital Credentials?” or “How do we make the right decision about Digital Credentials?” To answer these questions best, it is crucial to understand the core requirements the digital credentials system needs to fulfil.
 

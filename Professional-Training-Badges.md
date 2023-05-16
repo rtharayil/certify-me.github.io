@@ -6,35 +6,36 @@ description: "We are dedicated to helping organizations reach their training obj
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert"  
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
 
 HeroImg: /assets3/images1/training.png
-Hero1Msg: Verifiable Badges and Certificates 
-Hero2Msg: For Professional Training Providers
-Hero2Msg: Our Automated workflow enables professional training providers to issue 
-          credentials in a couple of clicks
+Hero1Msg: Give Your Business  
+Hero2Msg: A Push Forward
+Hero3Msg: CertifyMe is equipped with a list of effective and essential features that make the platform fit for the organic promotion of professional training institutes. 
 
 
 1FeaturesImg: /assets3/images1/whitelabel.png
-1FeaturesTitle: WhiteLabel Credentials
-1FeaturesMessage: The online identity management tool known as WhiteLabel makes it simple to build, manage, and market your digital identity. Your credential page, domain, logo, branding space, emails, and footer may all be customised with WhiteLabel Credentials.
+1FeaturesTitle: Branded Credentials for Every Sector
+1FeaturesMessage: Simply choosing a certification platform without considering the benefits it offers can prove a risky move for your business. We are well aware of what we can do for you and keep you informed as well. Our mission is to provide training institutes with software that is easy to integrate into their LMSs and easy to rebrand certificates.
 
 
-2FeaturesImg: /assets3/images1/Email.png
-2FeaturesTitle: Instant Delivery
-2FeaturesMessage: Instant delivery of certification to the candidate is only possible with the help of blockchain and smart contracts. This is one of the features that make CertifyMe unique and fully decentralized. The blockchain will be used for storing the credentials issued by accreditation organizations. The smart contract verifies the ownership of issued credentials. This helps in resolving the issue of trust among the parties involved in the educational system.
+2FeaturesImg: /assets3/images1/level1.png
+2FeaturesTitle: Zero Cost Marketing
+2FeaturesMessage: Professional training institutes often invest a great fortune in business promotion. CertifyMe eliminates the need for marketing investment by offering a page optimization solution. It enables you to add, edit or remove information to suit your business needs. Adding your institute name in the header, footer, and navbar automatically brings your organization to the forefront. Get in touch with our experts to understand what we can do for you!
 
 3FeaturesImg: /assets3/images1/LMS.png
-3FeaturesTitle: Automated Process
-3FeaturesMessage: Integrations to issue certificates. Using Zapier, API and LMS plugins. A new certificate requirements report is created in the LMS a certificate is issued. When a visitor completes a course, a mark is added to the reports in the LMS. A Zapier automation is configured to transfer data from the reports in the LMS to an API. The API allows the certificate issuer to view a certificate report.
+3FeaturesTitle: Data-Driven Credentials for Easy Tracking
+3FeaturesMessage: No matter which credential option or plan you choose, you have complete control over the information you want to embed in QR/BARcode. From the skills the awardee possessed to get selected in your institute or organization to the skills he/she has developed during the training, you can encapsulate everything. The automated certification process also allows you to monitor how credential holders are engaging with the e-documents.
                  
-4FeaturesImg: /assets3/images1/level1.png
-4FeaturesTitle: Zero Cost Marketing
-4FeaturesMessage: There are some great ways to market your program for free. Giving your learners an incentive to share your program on social media is one of the most effective ways to make marketing free. When someone shares your content, you will usually see an increase in organic traffic to your website which is free traffic. You can reward them for sharing your content by including a bonus or discount if they share your content.
+4FeaturesImg: /assets3/images1/Email.png 
+4FeaturesTitle: Complete Automation of the Certificate Delivery Process
+4FeaturesMessage: Crafting a letter, attaching separate documents under different student names, or designing and printing paper certificates, the struggle of the traditional certification process is real. Worry not! CertifyMe has the perfect solution to relieve you from the stress of issuing, managing, and sending certificates. Just integrate us into your Learning Management System to make the certificate creation and delivery process automated.
 
 5FeaturesImg: /assets3/images1/blockchain-badge.png
-5FeaturesTitle: Your Brand – Protected
-5FeaturesMessage: A new way to build trust, protect your awards and preserve the integrity of your credentialing process. Fraud-proof credentials are secured with bank-level encryption and blockchain technology. Retain full control over the validity and expiration of credentials to protect the integrity of your awards and encourage recertification.
+5FeaturesTitle: Keep Students Engaged
+5FeaturesMessage: Student engagement plays a critical role in professional training programs. Add a flair of creativity to your course or program by integrating us. Besides student engagement, your business engagement also enhances when we are working alongside you.<br> CertifyMe streamlines the certification process by welcoming gamification. It boosts student engagement to a great extent. The level-based badging solution inspires students to complete the course and demonstrate a large collection of badges until the end of the course. Students receive the certificate after successful course completion.
 
 
 

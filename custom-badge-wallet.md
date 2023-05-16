@@ -6,7 +6,9 @@ description: "Store and access credentials securely in a custom wallet"
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
+talktoexpertlink: "https://go.certifyme.online/talk-with-expert?utm_source=custom-wallet&utm_medium=hero&utm_campaign=Talk+to+the+expert"
 
+talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert?utm_source=custom-wallet&utm_medium=review&utm_campaign=Talk+to+our+expert"
 
 HeroImg: /assets3/images1/3.png
 Hero1Msg: Custom Badge Wallet to Keep All 
