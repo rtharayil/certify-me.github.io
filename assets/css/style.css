@@ -1322,7 +1322,27 @@ p {
 ul li {
     font-size: 16px;
     line-height: 1.5;
-  }     
+}     
+ul.pricing-features {
+  list-style-type: none; /* Removes default bullet points */
+  padding-left: 0; /* Optional: Removes default indentation */
+}
+
+ul.pricing-features li {
+  position: relative; /* Required for positioning the pseudo-element */
+  padding-left: 20px; /* Adjust the indentation as needed */
+}
+
+ul.pricing-features li::before {
+  content: '\2713'; /* Unicode for tick symbol */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 5px; /* Optional: Adds space between tick and text */
+}
+
+
 /*============================
        10.SUBSCRIBE  css 
 ==============================*/
