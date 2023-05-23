@@ -15,7 +15,7 @@ Head3:  <br > Thought Leadership in Learning & Development 2023<br> Award honors
 
 
 BGImagelink: /img/awards/6.png
-preview: /img/awards/1l.png
+preview: /img/awards/Beige Yoga Studio Meditation Website Desktop Prototype (1).png
 HeadCTA: Nominate
 
 criteria: Our 12 member expert panel of judges will evaluate each nomination primarily based on the below three criteria
@@ -54,7 +54,7 @@ About1: CertifyMe " CertifyMe Thought Leadership In L&D 2023 is widely recognize
 
 AboutImg: /img/awards/7.png
 
-Form: 211204772803448
+Form: 231421520701439
 
 ---
 
