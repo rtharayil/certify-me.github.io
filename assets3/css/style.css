@@ -621,6 +621,11 @@ svg path {
 	font-size: 15px;
 }
 
+
+.smaller-text {
+    font-size: 80%;
+}
+
 /*=========toggle css=======*/
 .switch {
 	position: relative;
