@@ -11,23 +11,23 @@ talktoexpertlink: "https://go.certifyme.online/talk-with-expert"
 talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
 
 HeroImg: 
-Hero1Msg: Stay ahead of forgery
-Hero2Msg: Safeguard your brand and trust
-Hero3Msg: Only issue Verifiable Bank Statements, Insurance Credentials, Invoices.
-
+Hero1Msg: Prevent Accounts Forgery:Safeguard 
+Hero2Msg: Your Brand And Trust
+Hero3Msg: Issue verifiable bank statements, insurance credentials, and invoices for digitally evolved finance duties.
 
 1FeaturesImg: /assets3/Image3/10.png
-1FeaturesTitle: Bank Statements
-1FeaturesMessage: Easily create, issue and manage bank statements with our digital credential management software. Our platform streamlines the process of generating and distributing accurate, up-to-date statements to your customers. Our secure system also allows you to store and access past statements, making it easy to track financial history and resolve any discrepancies. Simplify your banking and finance processes with our software.
+1FeaturesTitle: Open Source Verifiable Bank Statements
+1FeaturesMessage: Ensure streamlined management of bank statements via our digital credential management software, CertifyMe. Our platform transforms the process of statement generation and distribution by automating it and replacing traditional, flawed documents with accurate, up-to-date statements for your customers. The secure documentation system also allows you to store, and access past statements, making it easy to track financial history and resolve any discrepancies. Check <a href="https://go.certifyme.online/request-demo">how we can simplify</a> your banking and finance processes.
+
 
 
 2FeaturesImg: /assets3/Image3/11.png
-2FeaturesTitle: Insurance Credentials
-2FeaturesMessage:  Our trusted digital credential management software makes it easy to effortlessly create, issue, and manage all your insurance credentials. With our streamlined platform, you can quickly generate and distribute accurate, up-to-date insurance documents to your customers with ease. Plus, our secure system allows you to easily store and access past insurance credentials, making it a breeze to track coverage and resolve any discrepancies. Simplify your banking and finance processes with our top-rated software.
+2FeaturesTitle: Cryptographically Secure Insurance Documents for Peer-to-Peer Connection
+2FeaturesMessage:  Our trusted digital credential management tool makes credential/financial statement creation, issuing, and management effortless. Using the streamlined software of CertifyMe, you can store critical, confidential information on a decentralized platform for quick access without compromising document safety. The simple documentation tool holds immense power when payment or statement verification is concerned. The issuing institution can instantly track the details of people accessing statements/credentials. The bank-level encryption of our documents makes them ideal for official interaction. 
 
 3FeaturesImg: /assets3/Image3/12.png
-3FeaturesTitle: Invoices
-3FeaturesMessage: Experience a seamless billing and payment process with our advanced digital credential management software. Our intuitive platform makes it a breeze to create, issue, and manage invoices for your banking and finance business. Say goodbye to lost or misplaced paper documents and hello to a secure system that allows you to easily access and store past invoices. Take control of your financial history and resolve any discrepancies with ease, all while improving efficiency and accuracy with our cutting-edge software.
+3FeaturesTitle: Low-Risk, Traceable Invoices for Bank Employees and Customers
+3FeaturesMessage: Experience a seamless billing and payment process with our advanced digital credential management software. The intuitive platform of CertifyMe makes it a breeze to share authentic bank statements. Whenever a situation persists where a customer has to share bank details, sharing the credential or verified documents can do the job. The scannable statement indicates the document/credential is not tampered with. Tracking the information associated with bank invoices becomes simpler and hassle-free. Take control of your financial history and resolve financial discrepancies using our cutting-edge software. 
 
 
 
