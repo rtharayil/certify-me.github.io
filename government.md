@@ -11,28 +11,27 @@ talktoexpertlink: "https://go.certifyme.online/talk-with-expert"
 talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
 
 HeroImg:
-Hero1Msg:  Verifiable Birth Certificates,
-Hero2Msg:  ID Proof, License, Land Records for Government Institutions 
-Hero3Msg: Enterprise grade Digital Credentials for Government departments
+Hero1Msg:  Verifiable Government-Issued 
+Hero2Msg:  Digital Papers for Seamless Documentation 
+Hero3Msg: Accelerate authentication duties of the government sector by issuing certificates through CertifyMe.
 
 
 1FeaturesImg: /assets3/Image3/13.png
-1FeaturesTitle: Birth Certificates
-1FeaturesMessage: Securely manage birth certificates with our digital credential management software. Our platform streamlines the process of creating, issuing, and storing birth certificates, ensuring that your records are accurate and up-to-date. Our secure system also allows you to easily access past birth certificates, making it simple to track and verify vital information. Streamline your government processes with our trusted software
+1FeaturesTitle: Cryptographically Secure Certificates
+1FeaturesMessage: ‘Digital Identity’ is the new term that people around the world are embracing. It has birthed people’s trust in digital documents. The ease and speed of sharing and accessing digital credentials make them ideal for information collection minus the fear of unauthorized entry. The blockchain-enabled certificates are easy to track and record every change made to them. Altering the information inside a digital document without notifying the issuing authority is impossible.
 
 
 2FeaturesImg: /assets3/Image3/14.png
-2FeaturesTitle: ID proof
-2FeaturesMessage:  Efficiently manage ID documents and proof with our trusted digital credential management software. Streamline your processes and ensure accuracy with our secure platform, which allows for the creation, issuance, and storage of ID documents. Our system also allows for easy access to past ID proof, making it simple to track and verify vital information. Improve your organization's efficiency with our reliable software
+2FeaturesTitle: Convenient and Mobile-friendly Credentials
+2FeaturesMessage: Governments all over the globe are advocating for digital credentials. From the issuing organization to the recipient, the entire circle involved in the credential process experiences the convenience of verifiable credentials. Sharing the documents with concerned authorities/departments or the portability of the certificates make them a perfect replacement for paper documents. The digitized version of the traditional certification discloses all essential details without the threat of forgery. Schedule a <a href="https://go.certifyme.online/request-demo">demo</a> call with our experts for more insights. 
 
 3FeaturesImg: /assets3/Image3/16.png
-3FeaturesTitle: License
-3FeaturesMessage: Ensure accuracy with our trusted digital credential management software. Our secure platform makes it easy to efficiently manage licenses for your organization, including the creation, issuance, and storage of licenses. Our system also allows for easy access to past licenses, making it simple to track and verify vital information. Improve your organization's efficiency with our reliable software.
-
+3FeaturesTitle: Sustainability-Focused Certification and Licensing
+3FeaturesMessage: The sheer amount of government papers can be overwhelming to arrange, track and manage. The piles of paper documents also pose a threat to the environment. Digitizing the documentation process solves the issue in a blink of an eye. CertifyMe comes with all the tools integrated to enable smart licensing and certification systems without compromising sustainability.
 
 4FeaturesImg: /assets3/Image3/17.png
-4FeaturesTitle: Land Records
-4FeaturesMessage: Easily manage land records with our secure digital credential management software. Our platform streamlines the process of creating, issuing, and storing land records, ensuring that your records are accurate and up-to-date. Our secure system also allows you to easily access past land records, making it simple to track and verify vital information. Streamline your government processes with our trusted software
+4FeaturesTitle: Accurate and Authentic Government Records
+4FeaturesMessage: Government documents hold greater significance compared to all other credentials. The certificates & records are proof of citizenship and legal compliance to reside in a state, city, or country. Keeping the documents safe and away from any harm is critical. When the papers are issued by an authoritative body via CertifyMe, the unique ID in the credential contains all essentials. The stamp, logo, and verifiable nature of the statements cushion receivers from facing legal complications and charges. <a href="https://go.certifyme.online/request-demo">Explore</a> how you can issue credentials via the platform. 
 
 
 
