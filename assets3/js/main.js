@@ -57,6 +57,5 @@ function check() {
     }
   }
 }
-var checkBox = document.getElementById("checbox");
-checkBox.setAttribute("checked", "true");
-check();
+
+
