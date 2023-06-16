@@ -1,21 +1,21 @@
 /* ======= MEDIA QUERIES ====*/
 @media (max-width: 1650px) {
     .custom-continer {
-        padding: 0px 150px;
+        padding: 0px 80px;
     }
 
     .navbar {
-        padding: 10px 150px;
+        padding: 0px 80px;
     }
 }
 
 @media(max-width:1500px) {
     .custom-continer {
-        padding: 0px 80px;
+        padding: 0px 40px;
     }
 
     .navbar {
-        padding: 10px 80px;
+        padding: 0px 40px;
     }
 
     .hero-img {
@@ -58,9 +58,7 @@
 
     }
 
-    #hero {
-        height: 700px;
-    }
+   
 
     .shape1 {
         right: 0;
