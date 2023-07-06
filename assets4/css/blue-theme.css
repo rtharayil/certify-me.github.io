@@ -20,8 +20,8 @@
   .removeMobile {
     display: hidden;
   }
-  overflow-y: auto;
-  overflow-x: hidden;
+  /* overflow-y: auto;
+  overflow-x: hidden; */
 }
 
 
