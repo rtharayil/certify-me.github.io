@@ -12,6 +12,18 @@
   Website: www.dsathemes.com
   Tags: Responsive, HTML5, DSAThemes, Landing, Software, Mobile App, SaaS, Startup, Creative, Digital Produc
 */
+/* ====================================================================
+00. industries section css
+======================================================================= */
+
+@media (max-width: 767px){
+  .removeMobile {
+    display: hidden;
+  }
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 
 
 /* ==========================================================================
