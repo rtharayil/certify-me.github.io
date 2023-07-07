@@ -123,7 +123,7 @@
 					patterns: {
 						youtube: {			   
 							index: 'youtube.com',
-							src: 'https://www.youtube.com/watch?v=TJMwk6qIxSc'				
+							src: 'https://www.youtube.com/embed/TJMwk6qIxSc'				
 								}
 							}
 						}		  		  
