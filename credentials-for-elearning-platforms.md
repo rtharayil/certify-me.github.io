@@ -3,35 +3,40 @@ title: "Digital Credential Software For Elearning Platforms"
 
 description: "The most Advanced credentialing features to enable Elearning platform to start issuing verifiable digital badges and certificates "
 
-layout: V2LayoutPages
+layout: V4LayoutInnerpages
 
-sitemap.priority : 0.9
-talktoexpertlink: "https://go.certifyme.online/talk-with-expert"  
+sitemap.priority: 0.9
 
-talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
+# hero section
+HeroTitle: White Labeled Digital Credentials for Your Learning Programs
+HeroText: Integrate our credentialing platform into your existing online course for a seamless certification experience for participants. Our socially shareable credentials also offer a complete rebranding experience that lets the audience know your story.
 
-HeroImg: /assets3/images1/5.png
-Hero1Msg: Verifiable Credentials to Showcase 
-Hero2Msg: The Brand of E-Learning Platforms
-Hero3Msg: Integrate CertifyMe into your existing online course program to deliver a seamless certification experience to course attendees. Our all-inclusive credentialing platform enables a complete rebranding experience by assimilating Canva into the software.
+BoxContentTitle: A Credentialing Platform that is LMS-friendly
+BoxContentText: eLearning program managers are well aware of the ease of collaborating with digital credentialing software that is easy to integrate into learning management systems. The platform of CertifyMe comes with a simple LMS integration feature that enables course providers to issue certificates right at the moment.<br> No more long waiting hours for credentialing. Learners enjoy a seamless, streamlined credentialing journey. The no-code integration process makes CertifyMe a unique platform that no other option comes close to.
+BoxImage: /assets4/images/img-06.png
 
+#features section
+Feature1Image: /assets4/images/img-03.png
+Feature1Title: A Complete Makeover of Regular Certificates
+Feature1Text: We have rightly addressed the branding concern many course designers have by offering white-labeling solutions. It allows the learning platforms to exude an authentic, and reliable brand image. Our verifiable credentials direct learners to pathways to meeting career goals. The professional designs of micro badges and the ease of social display accelerate program completion rates.
 
+Feature2Image: /assets4/images/img-10.png
+Feature2Title: Data Safety and Retention of Brand Reputation
+Feature2Text: Offering e-certificates with no safety features negatively impacts a brand image. Issue blockchain-enabled and bank-level encrypted digital certificates to rightly address the situation. The instant verification system eliminates the waiting period and makes the credentialing process simple, and hassle-free.
 
-1FeaturesImg: /assets3/images1/Editor.png
-1FeaturesTitle: A Virtual Credentialing Platform with Unlimited Design Options
-1FeaturesMessage: The Canva-integrated platform, CertifyMe has no cap over a certificate or badge design solutions. The software comes with a long list of design options but that’s not the end. You can also create exclusive credential designs using Canva. It enables course providers' freedom to be creative and unique. And all these only follow a drag and drop feature. It’s the simplest designing option that only our platform offers.
+Feature3Image: /assets4/images/img-03.png
+Feature3Title: Take Data-Driven Business Decisions
+Feature3Text: The analytics guide available on the CertifyMe platform is one of a kind. Leveraging its power offers elearning platforms an unparalleled level of transparency and competitive advantage that was untouched till now. The analytics section enables program managers to take a look at program, organizational and personal-level insights and determine the growth opportunities.
 
-2FeaturesImg: /assets3/images1/API.png
-2FeaturesTitle: A Complete Makeover of the Certificates
-2FeaturesMessage: We have rightly addressed the concern many course designers have by offering a white labeling option. It eliminates the dubious image of third-party involvement. Integrating us in your LMSs (Zapier, API) enhances your business presence and also makes course enrollment effective for students. Take a look at our demo to find out how we can help you.
+# /assets4/images/img-10.png
+Feature4Image: 
+Feature4Title: Rebrand Your Credentials for Authentic Brand Image Reflection
+Feature4Text: We only remain at the backend, you remain at the forefront. Our customizable digital credentialing platform offers a branding experience like no other. We let you enjoy complete control over your credential header, footer, and navbar along with specially designated places online for brand promotion. Your marketing needs are sorted just by onboarding us.
 
-3FeaturesImg: /assets3/images1/URL.png
-3FeaturesTitle: A Streamlined Credentialing Platform
-3FeaturesMessage: E-Learning platforms lose 56% of their working hours in designing, issuing, and managing credentials. Simple integration with us can minimize the time required for credentialing by up to 35%. Put 100% of your efforts into the essentials while avoiding superfluous.
-                  
-4FeaturesImg: /assets3/images1/Q3.png
-4FeaturesTitle: Unparalleled Brand Reputation
-4FeaturesMessage: A consolidation with us equally influences your brand image and user experience. Offering highly secured virtual badges or verifiable credentials cements a positive brand picture with a focus on improved brand value. The digital certification process also enables authority over the validity of the credentials. In this way, you can encourage constant upskilling. The ease of sharing your credentials on 40+ social media sites leverages the benefit of free-of-cost marketing.
+# /assets4/images/img-08.png
+Feature5Image:
+Feature5Title: Automated Credentials - 16x Less Time Required
+Feature5Text: Experience the ease of credential automation only with CertifyMe. Quick delivery and tracking of as many credentials as you issue. Don’t be in the dark anymore about the future of credentials offered by you - track them down whenever you want, wherever you want.<br> Integrate us into your learning management system (LMSs) for a simplified yet effective credential management solution.
 
 
 
