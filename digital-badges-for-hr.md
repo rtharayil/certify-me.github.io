@@ -3,42 +3,37 @@ title: "Digital Credentials for learning and development"
 
 description: "Digital badges and certificates for upskilling and reskilling or any L&D program"
 
-layout: V2LayoutPages
+layout: V4LayoutInnerpages
 
-sitemap.priority : 0.9
+sitemap.priority: 0.9
 
-talktoexpertlink: "https://go.certifyme.online/talk-with-expert"  
-talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
+# hero section
+HeroTitle: Propel Career Growth of Your Employees with Digital Certificates & Badges
+HeroText: Be a part of a robust and secure network of millions of individuals who take their careers forward with CertifyMe.
 
-HeroImg: /assets3/images1/HR.png
-Hero1Msg: Automated and Legitimate Digital  
-Hero2Msg: Badges for Upskilling Programs
-Hero3Msg: Partner with CertifyMe to trigger an automatic badging process that boosts employee engagement and morale to perform better and helps HRs to rightly award deserving candidates. 
+BoxContentTitle: Credentials that Boost Your Training Program Value
+BoxContentText: Develop digital credentials to drive employee participation in corporate training programs for your organization. Offer them the right tool to showcase their skills online and eliminate the air of confusion surrounding the authenticity of the program. Include program details in digital badges in a verifiable manner to attract a larger talent pool to engage with your programs.
+BoxImage: /assets4/images/img-06.png
 
+#features section
+Feature1Image: /assets4/images/img-03.png
+Feature1Title: Seamless Integration of Open Badges in LMS's
+Feature1Text: CertifyMe is the solution for the decade-old tradition of extended waiting between the course completion date and the date of receiving the credentials for the program. Make the certification process streamlined for learners by issuing and delivering digital certificates right when they complete a program. Simply integrate our platform into your existing learning management system (LMSs) to share automated, socially shareable digital credentials.
 
-1FeaturesImg: /assets3/images1/Level2.png
-1FeaturesTitle: A Comprehensive, Results-driven Solution 
-1FeaturesMessage: The rise of skills-based employment models has played a role in the emergence of trust badges in the hiring process and HRM system. It’s easy to forge a certificate and present it as proof of one’s competence. It not only prevents organizations from hiring the right talent but also hinders qualified applicants from securing a position in an organization. CertifyMe badges are the perfect solution for such scenarios. Streamline the awarding process by opening an account on our platform. Check the <a href="https://go.certifyme.online/request-demo">demo</a>!  
+Feature2Image: /assets4/images/img-10.png
+Feature2Title: Address the Issue of Skills Gap
+Feature2Text: Collect accurate information about your learner competency to design and offer the right course for skill enhancement and career development. Determine employees’ level of knowledge and skills to assign L&D programs and help them scale their expertise. Decide the best positions for your trainees to connect opportunities with career goals.
 
+Feature3Image: /assets4/images/img-03.png
+Feature3Title: Track Your Learner Engagement Level
+Feature3Text: The platform of CertifyMe comes with a detailed analytics guide to offer insights into program level, recipient level, and organizational level credentials data. Analyze them to unlock information on program engagement, social media shares, credential verification, social impressions, and many more that earlier you had no access to. Take actions based on such valuable details to improve program completion rates.
 
-2FeaturesImg: /assets3/images1/motivates.png
-2FeaturesTitle: Motivate Employees to Help in Their Career Progression
-2FeaturesMessage: Socially shareable badges persuade employees to participate in training and upskilling programs that take place during the internal employee improvement cycle. Organizations that arrange frequent, effective training sessions and offer all the tools to demonstrate successful upskilling, attract the best talent pool. The badges enable the quick promotion of the knowledge enhancement program in the social networks of the employees. The robust verification process is an added advantage of the verifiable badges that saves time and minimizes confusion during the internal promotion.
-                   
-3FeaturesImg: /assets3/images1/whitelabel.png
-3FeaturesTitle: Credentials that Reflect A Positive Brand Influence
-3FeaturesMessage: Designing badges & certificates that do justice to the program's effectiveness and look appealing is essential for program promotion. The right design plays a critical role in exuding the desired brand image. CertifyMe doesn’t restrict its contribution to automating the credentialing process. Rather the platform works towards establishing a seamless certification system that benefits the HR department and employees alike. Not sure how? Talk to the experts for insights!
+Feature4Image: /assets4/images/img-10.png
+Feature4Title: Rebrand Your Credentials for Authentic Brand Image Reflection
+Feature4Text: We only remain at the backend, you remain at the forefront. Our customizable digital credentialing platform offers a branding experience like no other. We let you enjoy complete control over your credential header, footer, and navbar along with specially designated places online for brand promotion. Your marketing needs are sorted just by onboarding us.
 
-4FeaturesImg: /assets3/images1/wallet2.png
-4FeaturesTitle: Easy to Deploy and Quick to Take Informed Decisions
-4FeaturesMessage: Certifyme is the easiest-to-deploy digital credentialing platform that also comes with the advantage of being socially shareable. The credentials issued using the software are easy to share and easy to verify. Our dedicated team will handhold you a detailed onboarding process which makes things simple to understand. Candidates receive personalized credentials with details such as recipient name, earning criteria, quantum ledger ID, the validity of the badge/certificate, scannable codes, and organization logo. 
-
-5FeaturesImg: /assets3/images1/level1.png
-5FeaturesTitle: Establish A Culture of Reward and Recognition
-5FeaturesMessage: An organization needs a strong employee recognition program to keep the employees engaged and enthusiastic about the career development program. A collaboration with CertifyMe is the ideal solution to drive career growth and program engagement. Recognize the hard work, efforts, and dedication of employees by honoring them with digital badges & certificates that they can showcase online. A verifiable credential exudes an air of reliability and authenticity that employees seek for. Improve employee retention rates with us. <a href="https://go.certifyme.online/request-demo">Talk to our experts</a> to know how we can help you. 
-
- 
-
-
-
+# /assets4/images/img-08.png
+Feature5Image:
+Feature5Title: Automated Credentials - 16x Less Time Required
+Feature5Text: Experience the ease of credential automation only with CertifyMe. Quick delivery and tracking of as many credentials as you issue. Don’t be in the dark anymore about the future of credentials offered by you - track them down whenever you want, wherever you want.<br> Integrate us into your learning management system (LMSs) for a simplified yet effective credential management solution.
 ---

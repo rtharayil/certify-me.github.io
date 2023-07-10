@@ -3,39 +3,40 @@ title: "Digital Credentials for Higher Education"
 
 description: "CertifyMe enables colleges and universities to issue certificates, badges and verifiable transcripts having bank-level encryptions and is enabled with quantum ledger and blockchain to make credentials tamper-proof. "
 
-layout: V2LayoutPages
+layout: V4LayoutInnerpages
 
-sitemap.priority : 0.9
-talktoexpertlink: "https://go.certifyme.online/talk-with-expert"  
+sitemap.priority: 0.9
 
-talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
+# hero section
+HeroTitle: Rebrand Your Credentials for Higher Student Enrollment Count
+HeroText: Cutting-edge digital credential solutions to enhance student engagement, streamline administrative processes, and improve student enrollment in college and university programs.
 
-HeroImg: /assets3/images1/University.png
-Hero1Msg: White Label-friendly Credentialing 
-Hero2Msg: Solutions to Create Career Opportunities
-Hero3Msg: Blockchain-enabled certificates that offer 360° tracking and engagement monitoring options to students and institutes alike. 
+BoxContentTitle: A Reliable Credentialing Partner to Boost Education Program Success
+BoxContentText: Offer tangible, portable, and safe digital certificates to instantly lift your program value. Give them solid proof of their achievements that are socially shareable and interactive.<br> Let students enjoy the freedom of showcasing their skills and knowledge on social media platforms, professional networking sites, and personal websites. A collaboration with CertifyMe not only boosts students' confidence but also brings issuing institutes under the limelight.
+BoxImage: /assets4/images/img-06.png
 
-1FeaturesImg: /assets3/images1/3.png
-1FeaturesTitle: A Credentialing Partner to Boost Program Success
-1FeaturesMessage: Offering a seamless certification process instantly enhances your program value. It streamlines the certificate delivery process for students. A collaboration with CertifyMe comes with benefits such as socially shareable and portable certificates. Our badges and credentials eliminate the need to carry them around when it’s time to showcase them as proof of your education, skills, and experience.
+#features section
+Feature1Image: /assets4/images/img-03.png
+Feature1Title: A Platform to Drive Student Engagement with Safety
+Feature1Text: Create, issue, and manage an ROI-driven, bank-level encrypted open badging solution that prevents credential fraud and protects your brand from defamation. Establish trust and recognition among students, institutes, and employers with our immutable & verifiable digital certificates & micro badges. 
 
-2FeaturesImg: /assets3/images1/URL.png
-2FeaturesTitle: A Platform to Take Your Students’ Career Forward
-2FeaturesMessage: Micro-credentials are the perfect certification tools that offer students a sense of accomplishment and mark the improvement they make at every stage/step. No need to wait for a year or two or several years to showcase the progress your disciples make. Make the entire process streamlined and effective.
+Feature2Image: /assets4/images/img-10.png
+Feature2Title:  Automated Credentials - 16x Less Time Required
+Feature2Text: Experience the ease of credential automation only with CertifyMe. Quick delivery and tracking of as many credentials as you issue. Don’t be in the dark anymore about the future of credentials offered by you - track them down whenever you want, wherever you want.<br> Integrate us into your learning management system (LMSs) for a simplified yet effective credential management solution.
 
-3FeaturesImg: /assets3/images1/Q2.png
-3FeaturesTitle: Increased Business Reach
-3FeaturesMessage: A one-click social sharing option enables the credentials to be visible to countless people. In the same way, your organization's name, logo, and relevant details become visible to that many people as well. The white labeling option offers 100% control over what you want to demonstrate to the certificate visitors. You can talk to our experts for a demo to understand how things work when you onboard us.
-                  
-4FeaturesImg: /assets3/images1/setup-badge.png
-4FeaturesTitle: Endless Options to Honor Your Alumni
-4FeaturesMessage: Certificates are not the only foolproof tool to credit the skills students have acquired during their higher education. Badges work in the same way as certificates. Institutes also have the freedom to select credential designs as per their choice, not only from our stock of options. Being a Canva-integrated platform, you can create designs on Canva as well. A simple drag-and-drop feature is enough to craft your chosen certificate draft.
+Feature3Image: /assets4/images/img-03.png
+Feature3Title:  Be An Active Participant in Student Hiring Programs
+Feature3Text: Enlist your students under our showcase directory to let them be found easily by employers. Connect your alumni with relevant open opportunities and help them take their careers to the next step. Give your students the necessary push to get them hired. Create a socially visible, easy-to-trace talent pool using our all-in-one digital credentialing platform.
 
-5FeaturesImg: /assets3/images1/LinkedIn 1.png
-5FeaturesTitle: Keep Students Engaged
-5FeaturesMessage: Credentials issued by CertifyMe offer in-depth insights into the skills and knowledge students have gained. The QR/BARcode in the certificate holds all the information associated with acquired skills, the earning criteria, and the related job openings in the field of certification.
+Feature4Image: /assets4/images/img-10.png
+Feature4Title:  Countless Credential Template Design Options - Canva-integrated
+Feature4Text: No need to stick to the same age-old paper certificate design. Upgrade your credentialing solution as per industry standards. Issue certificates, badges, and transcripts - all digitally. Build your reputation as a sustainable institute and earn recognition from global certification bodies. Choose among our hundreds of credential templates to suit your program needs.
 
 
+# /assets4/images/img-08.png
+Feature5Image: 
+Feature5Title:  Automated Credentials - 16x Less Time Required
+Feature5Text: Experience the ease of credential automation only with CertifyMe. Quick delivery and tracking of as many credentials as you issue. Don’t be in the dark anymore about the future of credentials offered by you - track them down whenever you want, wherever you want.<br> Integrate us into your learning management system (LMSs) for a simplified yet effective credential management solution.
 
 
 ---
