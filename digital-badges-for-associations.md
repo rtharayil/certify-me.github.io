@@ -13,7 +13,7 @@ HeroText: Drive organic member growth for your association and boost revenue gen
 
 BoxContentTitle: Credentialing Automation for Excellent Business ROI
 BoxContentText: Harness the power of digital credentials to attract and engage members to your association programs. Our platform enables association program managers to track the level of member engagement and instantly take action to scale the membership program.<br> We seamlessly integrate with your existing learning management systems (LMSs) for a streamlined credentialing solution.
-BoxImage: /assets4/images/img-06.png
+BoxImage: /assets4/images/Hero Images/Associations.png
 
 #features section
 Feature1Image: /assets4/images/Associations/1.png

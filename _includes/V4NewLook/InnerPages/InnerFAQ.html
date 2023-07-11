@@ -1,3 +1,4 @@
+{% if {{page.Q1Title}} %}
 <!-- FAQs-3
 			============================================= -->
 <section id="faqs-3" class="py-100 faqs-section">
@@ -10,10 +11,10 @@
                 <div class="section-title mb-70">
 
                     <!-- Title -->
-                    <h2 class="s-50 w-700">Questions & Answers</h2>
+                    <h2 class="s-50 w-700">{{page.FAQTitle}}</h2>
 
                     <!-- Text -->
-                    <p class="s-21 color--grey">Get All Your Queries Resolved at Our FAQ Page!</p>
+                    <p class="s-21 color--grey">{{page.FAQText}}</p>
 
                 </div>
             </div>
@@ -34,12 +35,10 @@
                         <div class="question mb-35 wow fadeInUp">
 
                             <!-- Question -->
-                            <h5 class="s-22 w-700"><span>1.</span> Getting started with Martex</h5>
+                            <h5 class="s-22 w-700"><span>1.</span> {{page.Q1Title}}</h5>
 
                             <!-- Answer -->
-                            <p class="color--grey">Etiam amet mauris suscipit in odio integer congue metus
-                                and vitae arcu mollis blandit ultrice ligula egestas magna suscipit lectus magna
-                                suscipit luctus blandit and laoreet
+                            <p class="color--grey">{{page.Q1Text}}
                             </p>
 
                         </div>
@@ -49,46 +48,15 @@
                         <div class="question mb-35 wow fadeInUp">
 
                             <!-- Question -->
-                            <h5 class="s-22 w-700"><span>2.</span> What's inside the package?</h5>
+                            <h5 class="s-22 w-700"><span>2.</span> {{page.Q2Title}}</h5>
 
                             <!-- Answer -->
-                            <p class="color--grey">An enim nullam tempor sapien gravida donec ipsum and enim
-                                porta justo integer at velna vitae auctor integer congue undo magna laoreet
-                                augue pretium purus pretium ligula
+                            <p class="color--grey">{{page.Q2Text}}
                             </p>
 
                         </div>
-
-
-                        <!-- QUESTION #3 -->
-                        <div class="question mb-35 wow fadeInUp">
-
-                            <!-- Question -->
-                            <h5 class="s-22 w-700"><span>3.</span> How do I choose a plan?</h5>
-
-                            <!-- Answer -->
-                            <ul class="simple-list color--grey">
-
-                                <li class="list-item">
-                                    <p>Fringilla risus, luctus mauris orci auctor purus ligula euismod pretium
-                                        purus pretium rutrum tempor sapien
-                                    </p>
-                                </li>
-
-                                <li class="list-item">
-                                    <p>Nemo ipsam egestas volute undo turpis purus lipsum primis aliquam sapien
-                                        quaerat sodales pretium a purus
-                                    </p>
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-
                     </div>
                 </div> <!-- END QUESTIONS HOLDER -->
-
 
                 <!-- QUESTIONS WRAPPER -->
                 <div class="col-lg-6">
@@ -99,18 +67,11 @@
                         <div class="question mb-35 wow fadeInUp">
 
                             <!-- Question -->
-                            <h5 class="s-22 w-700"><span>4.</span> How does Martex handle my privacy?</h5>
+                            <h5 class="s-22 w-700"><span>3.</span> {{page.Q3Title}}</h5>
 
                             <!-- Answer -->
-                            <p class="color--grey">Quaerat sodales sapien euismod blandit purus a purus
-                                ipsum primis in cubilia laoreet augue luctus dolor luctus
+                            <p class="color--grey">{{page.Q3Text}}
                             </p>
-
-                            <!-- Answer -->
-                            <p class="color--grey">An enim nullam tempor sapien gravida donec congue metus.
-                                Vitae arcu mollis blandit integer nemo volute velna
-                            </p>
-
                         </div>
 
 
@@ -118,32 +79,13 @@
                         <div class="question mb-35 wow fadeInUp">
 
                             <!-- Question -->
-                            <h5 class="s-22 w-700"><span>5.</span> I have an issue with my account</h5>
+                            <h5 class="s-22 w-700"><span>4.</span> {{page.Q4Title}}</h5>
 
                             <!-- Answer -->
-                            <p class="color--grey">Cubilia laoreet augue egestas and luctus donec curabite
-                                diam vitae dapibus libero and quisque gravida donec neque blandit justo
-                                aliquam molestie nunc sapien justo
+                            <p class="color--grey">{{page.Q4Text}}
                             </p>
 
                         </div>
-
-
-                        <!-- QUESTION #6 -->
-                        <div class="question mb-35 wow fadeInUp">
-
-                            <!-- Question -->
-                            <h5 class="s-22 w-700"><span>6.</span> Can I cancel at anytime?</h5>
-
-                            <!-- Answer -->
-                            <p class="color--grey">An enim nullam tempor sapien gravida donec ipsum and enim
-                                porta justo integer at velna vitae auctor integer congue undo magna laoreet
-                                augue pretium purus pretium ligula
-                            </p>
-
-                        </div>
-
-
                     </div>
                 </div> <!-- END QUESTIONS HOLDER -->
 
@@ -168,3 +110,4 @@
 
     </div> <!-- End container -->
 </section> <!-- END FAQs-3 -->
+{% endif %}

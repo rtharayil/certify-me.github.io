@@ -3,40 +3,66 @@ title: "Digital Certificate Maker"
 
 description: "Digital certificates are a great way to show your awardees that you genuinely value their achievements"
 
-layout: V2LayoutPages
+layout: V4LayoutInnerpages
 
-sitemap.priority : 0.9
-talktoexpertlink: "https://go.certifyme.online/talk-with-expert?utm_source=digitalcertificate&utm_medium=hero&utm_campaign=Talk+to+the+expert"
+sitemap.priority: 0.9
 
-talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert?utm_source=digitalcertificate&utm_medium=review&utm_campaign=Talk+to+our+expert"
+# hero section
+HeroTitle: OpenBadge Compliant Digital Certificates for Quick Credentialing
+HeroText: CertifyMe offers unbeatable digital certificates that allow easy social sharing, instant verification, hassle-free issuing and 24*7 tracking of credential activities.
 
-HeroImg: /assets3/images1/digital-certificate.png
-Hero1Msg: Offer Authentic, Verified, and Tamper-proof 
-Hero2Msg: Digital Certificates to Program Participants
-Hero3Msg: CertifyMe is ruling the realm of digital credentials by offering unlimited design options, a one-click social sharing method, safety, quick delivery, and affordability. Draft, issue and keep a track of the credentials.      
+BoxContentTitle: White-Label Friendly Digital Certificates for Social Visibility
+BoxContentText: Whether you decide to design your e-certificates from scratch or choose a template from our template collection, you have the freedom to rebrand the certificate to match your brand look & feel. Ditch manual certificate creation & automate the credentialing process. Ensure your certificates attract the highest social impressions while also reflecting authentic brand image. Be visible online for organic boost in social engagement and learner enrollment.
+BoxImage: /assets4/images/Hero Images/Certificate.png
 
-1FeaturesImg: /assets3/images1/editor.png
-1FeaturesTitle: Smart Digital Credential Solutions to Streamline Certificate Delivery
-1FeaturesMessage: Eliminate the hassle of manually preparing and sharing certificates by onboarding CertifyMe. Our dynamic and top digital credential platform comes with a simple sharing option on Linkedin, Facebook, Twitter, and 37+ other social media channels. You have complete freedom to choose our existing templates or you can custom-build the certificate designs using the already interspersed Canva’s advanced certificate editor.  
+#features section
+Feature1Image: /assets4/images/Digital certificates/1.png
+Feature1Title: Smart & Responsive Digital Certificates
+Feature1Text: Issue verifiable, and dynamic certificates by incorporating real-time data such as issue dates, expiration dates, course details, or achievement scores. Create an immersive certification experience that eliminates any doubts about the legitimacy of the e-certificates.
 
-                  
-2FeaturesImg: /assets3/images1/immutable-credentials.png
-2FeaturesTitle: Empower Certificate Holders by Showcasing Immutable Digital Certificates  
-2FeaturesMessage: CertifyMe offers Blockchain-backed electronic credentials as a digital certificate that reflects professionalism and authenticity. Combining smart technology with regular certificates enables you to automate the certificate generation process that no one can tamper with. <br>Immutability offers organizations peace of mind by securing the brand of the institution. Our resolute digital certificates and digital badges also characterize verifiable transcripts and top-level encryption that set you apart from the competitors. 
+Feature2Image: /assets4/images/Digital certificates/2.png
+Feature2Title: Mobile-Optimized Digital Certificates
+Feature2Text: Access and display digital certificates seamlessly on any device, including smartphones and tablets. Choose a suitable mobile-optimized design for a smooth user experience, and present learner achievements on the go.
 
-                  
-3FeaturesImg: /assets3/images1/API.png
-3FeaturesTitle: Certificates that Take Organizations Forward
-
-3FeaturesMessage: Drive your organization to excellence and recognition by issuing digital certificates that also impact course engagement. A brand establishment is not only about how engaging the training or programs are, how potential candidates view your organization also influences brand success. Keeping that in mind, CertifyMe has designed its digital certificates that demonstrate value and integrity. Credentials issued by training associations through us also include details on the skills of the certificate holders.<br>The credentials become synonymous with the success that eventually takes your course to a new level of eminence. You spontaneously drive brand awareness when CertifyMe is your chosen digital credentials platform.  
+Feature3Image: /assets4/images/Digital certificates/3.png
+Feature3Title: Bulk Credentialing in A Tamper-proof Manner
+Feature3Text: Embrace the ease of online credentialing with CertifyMe. Press a single button and automatically send your certificates & badges to all recipients. Simplify the process of providing a ‘seal of approval’ to learners & members to progress their careers.
 
 
+Feature4Image: /assets4/images/Digital certificates/4.png
+Feature4Title: Seamless Integration of E-Certificates in LMSs
+Feature4Text: Automate your digital certificate delivery program by integrating us into your existing learning management systems following a no-code integration process. Effortlessly manage your recipient data without the worry of data theft.
 
-4FeaturesImg: /assets3/images1/whitelabel.png
-4FeaturesTitle: Insightful Metadata for Fraud Prevention
-4FeaturesMessage: All our digital certificates come with metadata mapping that tells the story behind the certification. The credentials hold extensive information about the program, its length, level, type, and the developed skills of the candidates.<br>CertifyMe securely enables enterprises to scale global credentialing programs for data protection and security. Get in touch with us!
+# /assets4/images/img-08.png
+Feature5Image:
+Feature5Title: Automated Credentials - 16x Less Time Required
+Feature5Text: Experience the ease of credential automation only with CertifyMe. Quick delivery and tracking of as many credentials as you issue. Don’t be in the dark anymore about the future of credentials offered by you - track them down whenever you want, wherever you want.<br> Integrate us into your learning management system (LMSs) for a simplified yet effective credential management solution.
 
 
+#G2 section
+G2Title: Global Leader in Digital Certificates & Badge Management
+ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
+ActionButtonbelowtext1: Free 50 Credentials
+ActionButtonbelowtext2: Exclusive Support
+
+# testimonial section
+TestimonialTitle: Our Happy Customers
+
+# FAQ Section
+FAQTitle: Questions & Answers
+FAQText: Get All Your Queries Resolved at Our FAQ Page!
+
+Q1Title: What is a digital certificate?
+Q1Text: A digital certificate for institutions is a digital document or credential issued by an educational institution to learners who have completed a course, program, or degree.
+
+Q2Title: Can learners share their digital certificates for institutions on professional networking platforms?
+Q2Text: Yes, learners can share their digital certificates for institutions on professional networking platforms like LinkedIn.
+
+Q3Title: Can digital certificates for institutions be revoked or updated?
+Q3Text: Yes, digital certificates for institutions can be revoked or updated if necessary. You can update/ Edit certificates using the credential management options.
+
+Q4Title: How do digital certificates differ from other types of certificates?
+Q4Text: A digital certificate is an electronic credential that serves as a verifiable proof of achievement or completion, issued in a digital format with embedded metadata and digital signatures for enhanced authenticity and security.
 
 
 ---
