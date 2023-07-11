@@ -13,7 +13,7 @@ HeroText: CertifyMe offers unbeatable digital certificates that allow easy socia
 
 BoxContentTitle: White-Label Friendly Digital Certificates for Social Visibility
 BoxContentText: Whether you decide to design your e-certificates from scratch or choose a template from our template collection, you have the freedom to rebrand the certificate to match your brand look & feel. Ditch manual certificate creation & automate the credentialing process. Ensure your certificates attract the highest social impressions while also reflecting authentic brand image. Be visible online for organic boost in social engagement and learner enrollment.
-BoxImage: /assets4/images/Hero Images/Associations.png
+BoxImage: /assets4/images/Hero Images/Certificate.png
 
 #features section
 Feature1Image: /assets4/images/Digital certificates/1.png

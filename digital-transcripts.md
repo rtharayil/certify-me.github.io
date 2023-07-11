@@ -13,7 +13,7 @@ HeroText: Take your credentialing program to the next level by offering automate
 
 BoxContentTitle: Say NO to Lengthy, Tiring Credentialing Process
 BoxContentText: Eliminate tedious manual transcription - it’s time to welcome the smart, hassle-free, and automated credentialing solution. CertifyMe enables you to experience a certification process that takes 16 times less time. Let us handle your credentialing program and shift your focus to essentials.
-BoxImage: /assets4/images/Hero Images/Associations.png
+BoxImage: /assets4/images/Hero Images/Transcript.png
 
 #features section
 Feature1Image: /assets4/images/Digital Transcript/1.png

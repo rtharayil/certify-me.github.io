@@ -13,7 +13,7 @@ HeroText: Award Open Badge compliant progressive badges to motivate your learner
 
 BoxContentTitle: Freedom to Customize Digital Badges to Recognize Every Achievement
 BoxContentText: Appreciate the hard work and dedication of your learners and members while also keeping your brand under the limelight by designing verifiable, white label-friendly & tamper-proof e-badges. Create micro badges from scratch or choose a design from our large collection of badge templates.
-BoxImage: /assets4/images/Hero Images/Learning & Development.png
+BoxImage: /assets4/images/Hero Images/Badges.png
 
 #features section
 Feature1Image: /assets4/images/Digital Badges/1.png
