@@ -16,15 +16,15 @@ BoxContentText: Harness the power of digital credentials to attract and engage m
 BoxImage: /assets4/images/img-06.png
 
 #features section
-Feature1Image: /assets4/images/img-03.png
+Feature1Image: /assets4/images/Associations/1.png
 Feature1Title: Qualified Members, Verified Credentials
 Feature1Text: Our fully customizable branding solution promotes you as the face of a certification program. You have complete control over the credential look and feel. As you start delivering verifiable certificates & open badges, a greater number of competent members start joining your programs.
 
-Feature2Image: /assets4/images/img-10.png
+Feature2Image: /assets4/images/Associations/2.png
 Feature2Title: Visibility on 40+ Social Media Channels
 Feature2Text: Associations enjoy ample opportunities to improve their brand image and visibility with CertifyMe. Our socially shareable, immutable, portable, and secure e-certificates and micro badges are fit for an online demonstration. Association members can easily showcase their skills on social media channels to reach a broader audience. The instant share feature enables associations to gain wider recognition and attract new members without added costs.
 
-Feature3Image: /assets4/images/img-03.png
+Feature3Image: /assets4/images/Associations/3.png
 Feature3Title: Quick Revenue Generation
 Feature3Text: Create an engaging, and immersive credentialing experience for your members. Let them dive deeper into the activities they can perform using the credentials. Make them a part of online profiles or engage new members through the branding features, our digital certificates are the perfect solution to generate revenue streams.
 
