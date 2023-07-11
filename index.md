@@ -39,4 +39,12 @@ IndustryText4: <b>Associations</b> - Drive revenue growth and attract members or
 BlogSectionTitle: Explore Our Resources!
 BlogSectionText: Access our Extensive Resource Library and Elevate Your Digital Credential Journey.
 
+#banner section
+Banner1: July Edition
+BannerTitle1: Zero to One
+BannerTitle2: Build A Credentialing Program From Scratch
+BannerText: This extensive workbook + ebook combo contains everything you need to build a credentialing program from scratch.
+BannerButton: Download Now
+BannerImage: /assets4/images/Images Webp/build a credentialing program.webp
+
 ---
