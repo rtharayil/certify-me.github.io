@@ -16,11 +16,11 @@ BoxContentText: Eliminate tedious manual transcription - it’s time to welcome 
 BoxImage: /assets4/images/Hero Images/Associations.png
 
 #features section
-Feature1Image: /assets4/images/Associations/1.png
+Feature1Image: /assets4/images/Digital Transcript/1.png
 Feature1Title: Offer the Best Value to Your Learners
 Feature1Text: Your students work hard to earn digital transcripts. Honor the work they put behind gaining e-transcripts by providing socially shareable, Open Badge compliant, and white-labeled credentials that they can proudly display on their professional profiles.
 
-Feature2Image: /assets4/images/Associations/2.png
+Feature2Image: /assets4/images/Digital Transcript/2.png
 Feature2Title: Protect Your Brand Reputation
 Feature2Text: Offer customized, metadata-embedded digital transcripts that come with a unique ID or verification link for instant verification. Prevent your brand from being targeted by forgers. Replace regular PDF or paper certificates with secured, tamper-proof digital papers.
 
@@ -48,7 +48,21 @@ ActionButtonbelowtext2: Exclusive Support
 # testimonial section
 TestimonialTitle: Our Happy Customers
 
+# FAQ Section
+FAQTitle: Questions & Answers
+FAQText: Get All Your Queries Resolved at Our FAQ Page!
 
+Q1Title: What is an educational transcript?
+Q1Text: An educational transcript issued is a digital document or credential provided by universities and higher education institutions to students. It contains a comprehensive record of the courses taken, grades earned, credits completed, and other relevant academic information.
+
+Q2Title: How can the authenticity of an educational transcript issued through CertifyMe be verified?
+Q2Text: The authenticity of an educational credential can be verified with our three-level comprehensive verification flow which includes smart id tagging.
+
+Q3Title: Can students share their educational transcripts issued through CertifyMe with employers or other educational institutions?
+Q3Text: Yes, students can securely share their educational transcripts issued through CertifyMe with employers or other educational institutions.
+
+Q4Title: Can We customize the page layout and design of educational transcripts issued through CertifyMe to reflect our branding and identity?
+Q4Text: Yes, CertifyMe's digital credential management software often allows institutions to customize the page URL, layout, design, and branding of the educational transcripts they issue.
 
 
 ---
