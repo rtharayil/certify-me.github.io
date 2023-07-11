@@ -13,7 +13,7 @@ HeroText: Cutting-edge digital credential solutions to enhance student engagemen
 
 BoxContentTitle: A Reliable Credentialing Partner to Boost Education Program Success
 BoxContentText: Offer tangible, portable, and safe digital certificates to instantly lift your program value. Give them solid proof of their achievements that are socially shareable and interactive.<br> Let students enjoy the freedom of showcasing their skills and knowledge on social media platforms, professional networking sites, and personal websites. A collaboration with CertifyMe not only boosts students' confidence but also brings issuing institutes under the limelight.
-BoxImage: /assets4/images/img-06.png
+BoxImage: /assets4/images/Hero Images/Higher Education.png
 
 #features section
 Feature1Image: /assets4/images/Colleges & Universities/1.png

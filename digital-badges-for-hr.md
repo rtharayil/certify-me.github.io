@@ -13,7 +13,7 @@ HeroText: Be a part of a robust and secure network of millions of individuals wh
 
 BoxContentTitle: Credentials that Boost Your Training Program Value
 BoxContentText: Develop digital credentials to drive employee participation in corporate training programs for your organization. Offer them the right tool to showcase their skills online and eliminate the air of confusion surrounding the authenticity of the program. Include program details in digital badges in a verifiable manner to attract a larger talent pool to engage with your programs.
-BoxImage: /assets4/images/img-06.png
+BoxImage: /assets4/images/Hero Images/Learning & Development.png
 
 #features section
 Feature1Image: /assets4/images/Hr & ld/1.png

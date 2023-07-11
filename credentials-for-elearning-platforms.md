@@ -13,7 +13,7 @@ HeroText: Integrate our credentialing platform into your existing online course 
 
 BoxContentTitle: A Credentialing Platform that is LMS-friendly
 BoxContentText: eLearning program managers are well aware of the ease of collaborating with digital credentialing software that is easy to integrate into learning management systems. The platform of CertifyMe comes with a simple LMS integration feature that enables course providers to issue certificates right at the moment.<br> No more long waiting hours for credentialing. Learners enjoy a seamless, streamlined credentialing journey. The no-code integration process makes CertifyMe a unique platform that no other option comes close to.
-BoxImage: /assets4/images/img-06.png
+BoxImage: /assets4/images/Hero Images/E-Learning.png
 
 #features section
 Feature1Image: /assets4/images/E-Learning/1.png
