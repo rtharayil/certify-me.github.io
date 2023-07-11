@@ -16,20 +16,20 @@ BoxContentText: Whether you decide to design your e-certificates from scratch or
 BoxImage: /assets4/images/Hero Images/Associations.png
 
 #features section
-Feature1Image: /assets4/images/Associations/1.png
+Feature1Image: /assets4/images/Digital certificates/1.png
 Feature1Title: Smart & Responsive Digital Certificates
 Feature1Text: Issue verifiable, and dynamic certificates by incorporating real-time data such as issue dates, expiration dates, course details, or achievement scores. Create an immersive certification experience that eliminates any doubts about the legitimacy of the e-certificates.
 
-Feature2Image: /assets4/images/Associations/2.png
+Feature2Image: /assets4/images/Digital certificates/2.png
 Feature2Title: Mobile-Optimized Digital Certificates
 Feature2Text: Access and display digital certificates seamlessly on any device, including smartphones and tablets. Choose a suitable mobile-optimized design for a smooth user experience, and present learner achievements on the go.
 
-Feature3Image: /assets4/images/Associations/3.png
+Feature3Image: /assets4/images/Digital certificates/3.png
 Feature3Title: Bulk Credentialing in A Tamper-proof Manner
 Feature3Text: Embrace the ease of online credentialing with CertifyMe. Press a single button and automatically send your certificates & badges to all recipients. Simplify the process of providing a ‘seal of approval’ to learners & members to progress their careers.
 
 
-Feature4Image: /assets4/images/img-10.png
+Feature4Image: /assets4/images/Digital certificates/4.png
 Feature4Title: Seamless Integration of E-Certificates in LMSs
 Feature4Text: Automate your digital certificate delivery program by integrating us into your existing learning management systems following a no-code integration process. Effortlessly manage your recipient data without the worry of data theft.
 
@@ -48,7 +48,21 @@ ActionButtonbelowtext2: Exclusive Support
 # testimonial section
 TestimonialTitle: Our Happy Customers
 
+# FAQ Section
+FAQTitle: Questions & Answers
+FAQText: Get All Your Queries Resolved at Our FAQ Page!
 
+Q1Title: What is a digital certificate?
+Q1Text: A digital certificate for institutions is a digital document or credential issued by an educational institution to learners who have completed a course, program, or degree.
+
+Q2Title: Can learners share their digital certificates for institutions on professional networking platforms?
+Q2Text: Yes, learners can share their digital certificates for institutions on professional networking platforms like LinkedIn.
+
+Q3Title: Can digital certificates for institutions be revoked or updated?
+Q3Text: Yes, digital certificates for institutions can be revoked or updated if necessary. You can update/ Edit certificates using the credential management options.
+
+Q4Title: How do digital certificates differ from other types of certificates?
+Q4Text: A digital certificate is an electronic credential that serves as a verifiable proof of achievement or completion, issued in a digital format with embedded metadata and digital signatures for enhanced authenticity and security.
 
 
 ---

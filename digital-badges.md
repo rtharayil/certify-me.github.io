@@ -16,15 +16,15 @@ BoxContentText: Appreciate the hard work and dedication of your learners and mem
 BoxImage: /assets4/images/Hero Images/Learning & Development.png
 
 #features section
-Feature1Image: /assets4/images/Hr & ld/1.png
+Feature1Image: /assets4/images/Digital Badges/1.png
 Feature1Title: Secure, Portable and Shareable Digital Badges for Instant Celebration of Achievement
 Feature1Text: Showcase micro badges on 40+ social media platforms. CertifyMe badges allow one-click social sharing for social recognition. Create new career opportunities for recipients by offering easy-to-download, easy-to-share, and printable badges.
 
-Feature2Image: /assets4/images/Hr & ld/2.png
+Feature2Image: /assets4/images/Digital Badges/2.png
 Feature2Title: A Detailed Analytics Dashboard to Monitor Learner Activities
 Feature2Text: The analytics guide of CertifyMe enables you to see the level of student engagement with the open badges. Whether recipients are sharing online, downloading them or other institutes are verifying badges - you have the information at your fingertips.
 
-Feature3Image: /assets4/images/Hr & ld/3.png
+Feature3Image: /assets4/images/Digital Badges/3.png
 Feature3Title: High Level of Badge Data Security
 Feature3Text: We offer Open Badge 2.0 version-compliant digital badges. The immutable and portable micro badges come with a unique Quantum Ledger ID or a verification link for instant verification. Store the badges in the recipient's wallet.
 
@@ -46,8 +46,20 @@ ActionButtonbelowtext2: Exclusive Support
 # testimonial section
 TestimonialTitle: Our Happy Customers   
 
+# FAQ Section
+FAQTitle: Questions & Answers
+FAQText: Get All Your Queries Resolved at Our FAQ Page!
 
+Q1Title: What are digital badges?
+Q1Text: Digital badges are visual representations of achievements, skills, or knowledge that are earned and displayed online. They serve as a form of recognition and validation of an individual's accomplishments or competencies in a specific area.
 
+Q2Title: How are digital badges different from traditional certificates or credentials?
+Q2Text: Digital badges are typically digital representations that can be easily shared, displayed, and verified online. They are often interactive and contain metadata, allowing for more detailed information about the achievement or skill.
 
+Q3Title: How are digital badges earned?
+Q3Text: Digital badges are typically earned by meeting specific criteria set by the badge issuer.
+
+Q4Title: Are there any standards or frameworks for digital badges?
+Q4Text: The most widely adopted standard is the Open Badges Specification developed by the Mozilla Foundation.
 ---
 
