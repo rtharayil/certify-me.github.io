@@ -36,4 +36,13 @@ Feature4Text: We only remain at the backend, you remain at the forefront. Our cu
 Feature5Image:
 Feature5Title: Automated Credentials - 16x Less Time Required
 Feature5Text: Experience the ease of credential automation only with CertifyMe. Quick delivery and tracking of as many credentials as you issue. Don’t be in the dark anymore about the future of credentials offered by you - track them down whenever you want, wherever you want.<br> Integrate us into your learning management system (LMSs) for a simplified yet effective credential management solution.
+
+#G2 section
+G2Title: Global Leader in Digital Certificates & Badge Management
+ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
+ActionButtonbelowtext1: Free 50 Credentials
+ActionButtonbelowtext2: Exclusive Support
+
+# testimonial section
+TestimonialTitle: Our Happy Customers
 ---
