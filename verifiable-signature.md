@@ -3,30 +3,51 @@ title: "Cryptographic Signature"
 
 description: "Cryptographic signature enables to verify digital credentials"
 
-layout: V2LayoutPages
+layout: V4LayoutInnerpages
 
-sitemap.priority : 0.9
-talktoexpertlink: "https://go.certifyme.online/talk-with-expert?utm_source=verifiable-signature&utm_medium=hero&utm_campaign=Talk+to+the+expert"
+sitemap.priority: 0.9
 
-talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert?utm_source=verifiable-signature&utm_medium=review&utm_campaign=Talk+to+our+expert"
+# hero section
+HeroTitle: Cryptographic Signature-Integrated Digital Credentials for High Level of Data Security
+HeroText: Ensure data integrity by employing verifiable signatures in your digital certificates to showcase proof of authenticity.
 
-HeroImg: /assets3/images1/Signature.png
-Hero1Msg: Integration of Cryptographic 
-Hero2Msg: Signature in Digital Credentials
-Hero3Msg: Ensure data integrity by employing verifiable signatures in your certificates to showcase proof of authenticity.
+BoxContentTitle: What is a Cryptographic Signature?
+BoxContentText: A cryptographic signature is a computational technique to prove the authenticity of your verifiable certificate. These signatures prevent data tampering and are perfect for fraud prevention. The signatures record every minute detail of digital communications via credentials. A certificate that comes with such signatures ensures heightened security and authority.
+BoxImage: /assets4/images/Hero Images/Associations.png
 
-1FeaturesImg: /assets3/images1/immutable-credentials.png
-1FeaturesTitle: What is a Cryptographic Signature?
-1FeaturesMessage: A cryptographic signature is a computational technique to prove the authenticity of your badge/certificate. These signatures prevent data tampering and are perfect for fraud prevention. The signatures record every minute detail of digital communications. A certificate that comes with such signatures, secures heightened security and authority. 
-
-
-2FeaturesImg: /assets3/images1/RSA.png
-2FeaturesTitle: Protect Your Data from Theft and Distortion
-2FeaturesMessage: Integration of digital signatures in the credentials keeps you a step forward among competitors. Limit access to your certificates and badges to control credential fraud. The digital signature includes safety features such as cyclic redundancy checks, personal identification numbers (PINs), and asymmetric cryptography.<br>The signature protects user data using security schemes such as asymmetric cryptography, encryption, and decryption. The strict safety guidelines screen your awardees from fraudulent signatures.
+#features section
+Feature1Image: /assets4/images/Associations/1.png
+Feature1Title: Protect Your Data from Theft and Distortion
+Feature1Text: Integration of digital signatures in the credentials keeps you a step ahead of your competitors. Limit access to your e-certificates and open badges to control credential fraud. The signature protects user data and follows strict safety guidelines to screen fraudulent signatures.
 
 
-3FeaturesImg: /assets3/images1/validate.png
-3FeaturesTitle: Legally Compliant and Globally Accepted Signatures
-3FeaturesMessage: Organizations can issue digital certificates through CertifyMe that have no-nonsense safety features. The verifiable signature credentials hold, block unauthorized activities. Badges or certificates that come with such signatures reflect an image of governance. 
+Feature2Image: /assets4/images/Associations/2.png
+Feature2Title: Legally Compliant and Globally Accepted Signatures
+Feature2Text: Organizations feel a peace of mind while issuing digital certificates using our platform. We operate following no-nonsense safety protocols. The verifiable signature quickly identifies and blocks unauthorized activities in online credentials. Micro badges and digital certificates that incorporate such signatures reflect an image of governance.
+
+#Feature3Image: /assets4/images/Associations/3.png
+Feature3Title: Bulk Credentialing in A Tamper-proof Manner
+Feature3Text: Embrace the ease of online credentialing with CertifyMe. Press a single button and automatically send your certificates & badges to all recipients. Simplify the process of providing a ‘seal of approval’ to learners & members to progress their careers.
+
+
+#Feature4Image: /assets4/images/img-10.png
+Feature4Title: Seamless Integration of E-Certificates in LMSs
+Feature4Text: Automate your digital certificate delivery program by integrating us into your existing learning management systems following a no-code integration process. Effortlessly manage your recipient data without the worry of data theft.
+
+ 
+#Feature5Image: /assets4/images/img-08.png
+Feature5Title: Automated Credentials - 16x Less Time Required
+Feature5Text: Experience the ease of credential automation only with CertifyMe. Quick delivery and tracking of as many credentials as you issue. Don’t be in the dark anymore about the future of credentials offered by you - track them down whenever you want, wherever you want.<br> Integrate us into your learning management system (LMSs) for a simplified yet effective credential management solution.
+
+
+#G2 section
+G2Title: Global Leader in Digital Certificates & Badge Management
+ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
+ActionButtonbelowtext1: Free 50 Credentials
+ActionButtonbelowtext2: Exclusive Support
+
+# testimonial section
+TestimonialTitle: Our Happy Customers
+
 
 ---
