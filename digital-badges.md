@@ -8,7 +8,7 @@ layout: V4LayoutInnerpages
 sitemap.priority: 0.9
 
 # hero section
-HeroTitle: Create, Issue, and Manage Digital Badges that Retain Your Audience
+HeroTitle: Create, Issue, and Manage Digital Badges that Retain Learners & Members
 HeroText: Award Open Badge compliant progressive badges to motivate your learners to continue their excellent learning journey and increase audience participation.
 
 BoxContentTitle: Freedom to Customize Digital Badges to Recognize Every Achievement

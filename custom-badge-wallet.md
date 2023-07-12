@@ -16,11 +16,11 @@ BoxContentText: The custom badge wallet feature simplifies digital credential st
 BoxImage: /assets4/images/Hero Images/Certificate.png
 
 #features section
-Feature1Image: /assets4/images/Digital certificates/1.png
+Feature1Image: /assets4/images/wallet/1.png
 Feature1Title: Secured Wallets Using Custom Login ID and Password
 Feature1Text: Recipients can store their credentials in custom badge wallets to access them whenever they want. Protect the verifiable credentials using self-specified login details.
 
-Feature2Image: /assets4/images/Digital certificates/2.png
+Feature2Image: /assets4/images/wallet/2.png
 Feature2Title: Store Multiple Credentials Under One Roof
 Feature2Text: Eliminate the stress of manually storing and handling credentials. Partner with CertifyMe to automatically collect all your e-credentials in the badge wallet without the risk of losing or misplacing them. The wallet URL customization option takes your credentialing program up a notch. Leave no stone unturned to reflect a trustworthy, and authentic brand appearance.
 

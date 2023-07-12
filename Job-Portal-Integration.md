@@ -16,12 +16,12 @@ BoxContentText: Our credible platform takes care of the complete certification p
 BoxImage: /assets4/images/Hero Images/Associations.png
 
 #features section
-Feature1Image: /assets4/images/Associations/1.png
+Feature1Image: /assets4/images/Job Portal/1.png
 Feature1Title: Promote Lifelong Learning for Career Advancement
 Feature1Text: Create a learning momentum by inspiring candidates to take new courses that open new opportunities. No need to search all over the internet for relevant openings. Simply visit our job integration portal to access the featured open positions.
 
 
-Feature2Image: /assets4/images/Associations/2.png
+Feature2Image: /assets4/images/Job Portal/2.png
 Feature2Title: A Simplified Credentialing Journey
 Feature2Text: The current job market is already competitive. We take weight off your shoulders by integrating a streamlined job search process in our comprehensive digital credentialing platform. Enjoy an all-in-one experience.
 

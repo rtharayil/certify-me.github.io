@@ -12,16 +12,16 @@ HeroTitle: Seamless Integration of CertifyMe with LMSs for Digital Credential Au
 HeroText: Organizations or course providers can easily merge CertifyMe with their choice of tools/software for an up-to-date process.
 
 BoxContentTitle: Experience A Unified Credentialing Process with LMS Integration
-BoxContentText: Issuing digital credentials is made simple by the no-code integration solution of CertifyMe.  We seamlessly integrate into your existing LMSs, automate the online credentialing process and improve efficiency. We enable effortless issuance and management of verifiable credentials within your learning infrastructure. Ensure your learners & members receive their certificates, badges, and diplomas right when they complete the courses. Boost your learning program’s completion rates by up to 72% and slash the credentialing time by 16 times.
+BoxContentText: Issuing digital credentials is made simple by the no-code integration solution of CertifyMe.  We seamlessly integrate into your existing LMSs, automate the online credentialing process and improve efficiency. We enable effortless issuance and management of verifiable credentials within your learning infrastructure. <br> Ensure your learners & members receive their certificates, badges, and diplomas right when they complete the courses. Boost your learning program’s completion rates by up to 72% and reduce the credentialing time by 84%.
 BoxImage: /assets4/images/Hero Images/Associations.png
 
 #features section
-Feature1Image: /assets4/images/Associations/1.png
-Feature1Title: Focus on Revenue Generation and Scale Your Learning Program
+Feature1Image: /assets4/images/integrations/1.png
+Feature1Title: Reduced Wait Time for Credential Access
 Feature1Text: A long gap between course completion and certificate retrieval leaves a bad taste in the mouth. The API integration feature of CertifyMe reduces the workload of labor-intensive manual certificate creation and runs the credentialing process in the background. Generating and distributing e-certificates, and micro badges becomes fuss-free, saving time and ensuring accuracy in your credentialing journey.
 
 
-Feature2Image: /assets4/images/Associations/2.png
+Feature2Image: /assets4/images/integrations/2.png
 Feature2Title: Integrately and Zapier Integration
 Feature2Text: Accelerate your credentialing workflow following a few clicks-enabled Zapier integration to automate processes, and deliver a seamless experience to your recipients with CertifyMee's robust integrations. Start exploring the possibilities today and take your credentialing to new heights. Simply create a Zap (an automation recipe) for impromptu data retrieval from one app to another whenever a new credential is issued.
 
