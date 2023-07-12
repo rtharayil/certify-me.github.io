@@ -16,15 +16,15 @@ BoxContentText: Choose our white labeling plan to ensure a consistent brand appe
 BoxImage: /assets4/images/Hero Images/Transcript.png
 
 #features section
-Feature1Image: /assets4/images/Digital Transcript/1.png
+Feature1Image: /assets4/images/WhiteLabel (1)/1.png
 Feature1Title: Credential Image that Learners Trust
 Feature1Text: White-labeled credentials build trust and credibility among your recipients, partners, and other organizations. Demonstrate your credentials with an authentic brand image to reinforce your brand reputation and your commitment to quality and professionalism.
 
-Feature2Image: /assets4/images/Digital Transcript/2.png
+Feature2Image: /assets4/images/WhiteLabel (1)/2.png
 Feature2Title: Seamless Integration
 Feature2Text: Our white labeling feature seamlessly integrates with your existing website or credentialing platform. Offer a cohesive journey to your recipients without disrupting their experience.
 
-Feature3Image: /assets4/images/Associations/3.png
+Feature3Image: /assets4/images/WhiteLabel (1)/3.png
 Feature3Title: Increased Audience Engagement
 Feature3Text: Unlock the full potential of your brand with CertifyMe's white labeling feature. Stand out from the competition, fully immerse your stakeholders in your brand, enhance engagement, and promote a sense of ownership. Deliver a consistent and branded experience to keep the audience engaged.
 

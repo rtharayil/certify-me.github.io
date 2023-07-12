@@ -3,39 +3,51 @@ title: "Professional Training Credentials"
 
 description: "We are dedicated to helping organizations reach their training objectives by providing flexible, scalable, and affordable credentialing solutions"
 
-layout: V2LayoutPages
+layout: V4LayoutInnerpages
 
-sitemap.priority : 0.9
-talktoexpertlink: "https://go.certifyme.online/talk-with-expert"  
+sitemap.priority: 0.9
 
-talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
+# hero section
+HeroTitle: Take Your Business Forward and Boost Learner Engagement with Digital Credentials
+HeroText: Offer tangible and socially shareable representation of employee accomplishments to drive program growth and create course demand.
 
-HeroImg: /assets3/images1/training.png
-Hero1Msg: Give Your Business  
-Hero2Msg: A Push Forward
-Hero3Msg: CertifyMe is equipped with a list of effective and essential features that make the platform fit for the organic promotion of professional training institutes. 
+BoxContentTitle: Branded Digital Credentials for Zero Cost Marketing
+BoxContentText: Issue white-labeled open badges that reflect your authentic brand image and create a trustworthy, credible appearance. Maintain a cohesive, consistent brand identity since participants first come across you to earn your micro badges. Our premium branding solution keeps you visible online & all across the credential. Manage your digital credential look & feel with complete authority.
+BoxImage: /assets4/images/Hero Images/Associations.png
+
+#features section
+Feature1Image: /assets4/images/Associations/1.png
+Feature1Title: Data-Driven Digital Badges to Track Program Growth
+Feature1Text: Our platform has an embedded analytics section to help program managers have a transparent idea of the program's performance. The three-level analytics:Organizational level, Program level, and Individual level, enable you to take immediate action to boost social impressions & credential share rates.
 
 
-1FeaturesImg: /assets3/images1/whitelabel.png
-1FeaturesTitle: Branded Credentials for Every Sector
-1FeaturesMessage: Simply choosing a certification platform without considering the benefits it offers can prove a risky move for your business. We are well aware of what we can do for you and keep you informed as well. Our mission is to provide training institutes with software that is easy to integrate into their LMSs and easy to rebrand certificates.
+Feature2Image: /assets4/images/Associations/2.png
+Feature2Title: Improve Course Completion Rate
+Feature2Text: Attracting learners and improving learner engagement is a challenge for many professional training providers. Solve it by leveraging the power of digital badges. Open badges promote lifelong learning and influence learners to participate in professional courses. Issuing attractive, verifiable, and socially shareable micro badges boost program completion rate.
+
+Feature3Image: /assets4/images/Associations/3.png
+Feature3Title: Bank-level Encryption to Protect Your Credential Data
+Feature3Text: Blockchain-enabled, OpenBadge Version 2.0 & GDPR compliant, and encrypted online badges keep your credential information protected. Relax knowing your program details are in safe hands when you choose us as your credentialing partner. Eliminate any risks of credential fraud and forgery with CertifyMe.
 
 
-2FeaturesImg: /assets3/images1/level1.png
-2FeaturesTitle: Zero Cost Marketing
-2FeaturesMessage: Professional training institutes often invest a great fortune in business promotion. CertifyMe eliminates the need for marketing investment by offering a page optimization solution. It enables you to add, edit or remove information to suit your business needs. Adding your institute name in the header, footer, and navbar automatically brings your organization to the forefront. Get in touch with our experts to understand what we can do for you!
+Feature4Image: /assets4/images/img-10.png
+Feature4Title: Automate Credentialing Process, Scale Program Growth, and Focus on Essentials
+Feature4Text: Replace the tedious manual credentialing process with an automated, faster, and safer credentialing system by choosing CertifyMe. No matter how many course participants you have or newly joined the session, scaling the badging program is hassle-free when we are with you. Our flexible pricing options offer the freedom of awarding as many credentials as you want while you are growing. Let us take the weight off your shoulders and you only focus on business growth.
 
-3FeaturesImg: /assets3/images1/LMS.png
-3FeaturesTitle: Data-Driven Credentials for Easy Tracking
-3FeaturesMessage: No matter which credential option or plan you choose, you have complete control over the information you want to embed in QR/BARcode. From the skills the awardee possessed to get selected in your institute or organization to the skills he/she has developed during the training, you can encapsulate everything. The automated certification process also allows you to monitor how credential holders are engaging with the e-documents.
-                 
-4FeaturesImg: /assets3/images1/Email.png 
-4FeaturesTitle: Complete Automation of the Certificate Delivery Process
-4FeaturesMessage: Crafting a letter, attaching separate documents under different student names, or designing and printing paper certificates, the struggle of the traditional certification process is real. Worry not! CertifyMe has the perfect solution to relieve you from the stress of issuing, managing, and sending certificates. Just integrate us into your Learning Management System to make the certificate creation and delivery process automated.
 
-5FeaturesImg: /assets3/images1/blockchain-badge.png
-5FeaturesTitle: Keep Students Engaged
-5FeaturesMessage: Student engagement plays a critical role in professional training programs. Add a flair of creativity to your course or program by integrating us. Besides student engagement, your business engagement also enhances when we are working alongside you.<br> CertifyMe streamlines the certification process by welcoming gamification. It boosts student engagement to a great extent. The level-based badging solution inspires students to complete the course and demonstrate a large collection of badges until the end of the course. Students receive the certificate after successful course completion.
+# Feature5Image: /assets4/images/img-08.png
+Feature5Title: Automated Credentials - 16x Less Time Required
+Feature5Text: Experience the ease of credential automation only with CertifyMe. Quick delivery and tracking of as many credentials as you issue. Don’t be in the dark anymore about the future of credentials offered by you - track them down whenever you want, wherever you want.<br> Integrate us into your learning management system (LMSs) for a simplified yet effective credential management solution.
+
+
+#G2 section
+G2Title: Global Leader in Digital Certificates & Badge Management
+ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
+ActionButtonbelowtext1: Free 50 Credentials
+ActionButtonbelowtext2: Exclusive Support
+
+# testimonial section
+TestimonialTitle: Our Happy Customers
 
 
 

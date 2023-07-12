@@ -16,11 +16,11 @@ BoxContentText: Receive comprehensive reports containing a detailed overview of 
 BoxImage: /assets4/images/Hero Images/Transcript.png
 
 #features section
-Feature1Image: /assets4/images/Digital Transcript/1.png
+Feature1Image: /assets4/images/Analytics/1.png
 Feature1Title: Real-time Data Visualization
 Feature1Text: Our intuitive and user-friendly dashboard presents your digital credentials data in real-time, allowing you to monitor the performance and progress of the credentialing programs effortlessly. Updated credentialing knowledge also enables you to take necessary steps for a higher level of credential engagement.
 
-Feature2Image: /assets4/images/Digital Transcript/2.png
+Feature2Image: /assets4/images/Analytics/2.png
 Feature2Title: Track Credential Engagement Metrics
 Feature2Text: Keep track of how recipients use your digital certificates and engage with them. Measure the success of your credentialing programs by tracking organizational, program and individual level metrics such as credential views, shares, sustainability, and click-through rates. Gain valuable insights into recipient engagement to improve impact and relevance of your credentials.
 

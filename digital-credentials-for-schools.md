@@ -3,35 +3,51 @@ title: "Digital credentials for schools"
 
 description: "Schools can use the feature to create a school's own digital identity; this helps them build their brand and engage with potential students."
 
-layout: V2LayoutPages
+layout: V4LayoutInnerpages
 
-sitemap.priority : 0.9
-talktoexpertlink: "https://go.certifyme.online/talk-with-expert"  
+sitemap.priority: 0.9
 
-talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
+# hero section
+HeroTitle: Issue Secure And Verifiable Digital Certificates to Boost Student Engagement
+HeroText: Empower your students to showcase achievements in a verifiable manner to potential employers.
 
-HeroImg: /assets3/images1/Schools.png
-Hero1Msg: Boost Student Engagement in 
-Hero2Msg: Your School Program
-Hero3Msg: CertifyMe empowers schools and student curricula by implementing smart and modern blockchain technology in the certification process.
+BoxContentTitle: A Streamlined Digital Credentialing System
+BoxContentText: Ensure an efficient and hassle-free digital certification process for school students using the user-friendly platform of CertifyMe. Save time and administrative effort by automating your credentialing journey. Offer socially shareable, white-label friendly open badges for the best online exposure.
+BoxImage: /assets4/images/Hero Images/Associations.png
+
+#features section
+Feature1Image: /assets4/images/Associations/1.png
+Feature1Title: Customizable Digital Certificate Templates for Authentic Representation
+Feature1Text: Create tailored e-certificates that align with your institute’s identity. You can start credential designing from scratch or choose from our template library. Add your logo, choose from a range of fonts and colors, and personalize the layout to match your taste and reflect professionalism & prestige.
 
 
-1FeaturesImg: /assets3/images1/editor.png
-1FeaturesTitle: Only Platform on Web that Offers No Cost Course Awareness Scheme
-1FeaturesMessage: We are a credentialing software that onboards schools and educational institutions to assist both the organization and students in reaching their goals. By offering certificates and badges that are ideal to showcase achievements, we drive brand promotion. Our SaaS-based platform enables bank-level encryption for fraud prevention and protection from compromised reputation. 
+Feature2Image: /assets4/images/Associations/2.png
+Feature2Title: Data-Driven Credential Analytics and Insights
+Feature2Text: The platform of CertifyMe comes with a powerful analytics guide to offer insights into student engagement, certificate issuance count, and verification activity. Track the progress of your credentialing program, evaluate the effectiveness of your courses, and make data-powered decisions to improve program outcomes.
 
-                  
-2FeaturesImg: /assets3/images1/time.png
-2FeaturesTitle: Automated Credentials for Student Success
-2FeaturesMessage: Keep your students from lost opportunities and complex challenges associated with credential verification and sharing. CertifyMe is the perfect solution to offer your students a seamless, stress-free credentialing experience. Integrating us in your existing LMSs is simple, time-saving, and cost-effective. We cut down the traditional certification workload from a day to 30 minutes. No matter which class format or learning experience you offer, we are easy to consolidate in all. We establish a badging experience that is fully branded and trackable. Not sure how it works? Check out our demo!
-                  
-# 3FeaturesImg: /assets3/images1/Logo.png
-# 3FeaturesTitle: Branded Credentials
-# 3FeaturesMessage: You can now customize your credentials with your school's domain, logo and footer. This makes it easy to make sure that you're creating a strong brand for your students and their accomplishments.
-                  
-3FeaturesImg: /assets3/images1/linkedin-badges.png
-3FeaturesTitle: Accessible by A Larger Audience and Employers
-3FeaturesMessage: Your students represent you and vice versa. The more students exhibit the certificates online, the better your brand presence becomes. Integrating us streamlines your virtual existence and gives you an edge over your competitors. Enabling us in your system provides you the flexibility to redesign the certificates and badges that echoes an authoritative brand image.<br>Our white labeling feature validates a credential that only consists of a student's academic information and achievements besides your institute name. Maintaining a seamless certification process is our goal. Choosing us as your certification partner also leverages the ease of social sharing.
+#Feature3Image: /assets4/images/Associations/3.png
+Feature3Title: Bulk Credentialing in A Tamper-proof Manner
+Feature3Text: Embrace the ease of online credentialing with CertifyMe. Press a single button and automatically send your certificates & badges to all recipients. Simplify the process of providing a ‘seal of approval’ to learners & members to progress their careers.
+
+
+#Feature4Image: /assets4/images/img-10.png
+Feature4Title: Seamless Integration of E-Certificates in LMSs
+Feature4Text: Automate your digital certificate delivery program by integrating us into your existing learning management systems following a no-code integration process. Effortlessly manage your recipient data without the worry of data theft.
+
+
+# Feature5Image: /assets4/images/img-08.png
+Feature5Title: Automated Credentials - 16x Less Time Required
+Feature5Text: Experience the ease of credential automation only with CertifyMe. Quick delivery and tracking of as many credentials as you issue. Don’t be in the dark anymore about the future of credentials offered by you - track them down whenever you want, wherever you want.<br> Integrate us into your learning management system (LMSs) for a simplified yet effective credential management solution.
+
+
+#G2 section
+G2Title: Global Leader in Digital Certificates & Badge Management
+ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
+ActionButtonbelowtext1: Free 50 Credentials
+ActionButtonbelowtext2: Exclusive Support
+
+# testimonial section
+TestimonialTitle: Our Happy Customers
                   
                   
                   
