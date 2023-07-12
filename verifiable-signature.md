@@ -16,12 +16,12 @@ BoxContentText: A cryptographic signature is a computational technique to prove 
 BoxImage: /assets4/images/Hero Images/Associations.png
 
 #features section
-Feature1Image: /assets4/images/Associations/1.png
+Feature1Image: /assets4/images/Cryptographic Signature/1.png
 Feature1Title: Protect Your Data from Theft and Distortion
 Feature1Text: Integration of digital signatures in the credentials keeps you a step ahead of your competitors. Limit access to your e-certificates and open badges to control credential fraud. The signature protects user data and follows strict safety guidelines to screen fraudulent signatures.
 
 
-Feature2Image: /assets4/images/Associations/2.png
+Feature2Image: /assets4/images/Cryptographic Signature/2.png
 Feature2Title: Legally Compliant and Globally Accepted Signatures
 Feature2Text: Organizations feel a peace of mind while issuing digital certificates using our platform. We operate following no-nonsense safety protocols. The verifiable signature quickly identifies and blocks unauthorized activities in online credentials. Micro badges and digital certificates that incorporate such signatures reflect an image of governance.
 
