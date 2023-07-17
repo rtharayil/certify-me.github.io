@@ -1,5 +1,5 @@
 ---
-title: "Most Trusted SaaS Based Digital Credential Platform "
+title: "Digital Credentials: Verifiable certificate & badge software"
 
 description: "CertifyMe is one of the best digital credential platforms offering verifiable digital badges and digital certificates. Start your credentialing journey today."
 
