@@ -1,7 +1,7 @@
 ---
 title: "Cancellation and Refund Policy | CertifyMe"
 
-description: "CertifyMe is one of the best digital credential platforms offering verifiable digital badges and digital certificates. Start your credentialing journey today."
+description: "Here’s what you need to know about cancelling your CertifyMe credential management software subscription and learn more about our refund policy."
 
 layout: V4LayoutRefundPolicy
 

@@ -1,7 +1,7 @@
 ---
 title: "Privacy Policy | CertifyMe Verifiable Credentials"
 
-description: "CertifyMe is one of the best digital credential platforms offering verifiable digital badges and digital certificates. Start your credentialing journey today."
+description: "This privacy policy document outlines the types of personal information that is received and collected by CertifyMe credentials and how it is used."
 
 layout: V4LayoutPolicy
 
