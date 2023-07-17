@@ -1,7 +1,7 @@
 ---
 title: "Terms of Service | CertifyMe"
 
-description: "CertifyMe is one of the best digital credential platforms offering verifiable digital badges and digital certificates. Start your credentialing journey today."
+description: "The terms by which you may use our online verifiable certificate and badge software provided on or in connection with the service."
 
 layout: V4LayoutTAC
 

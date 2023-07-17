@@ -1,7 +1,7 @@
 ---
 title: "Plans & Pricing | Digital Certificates & Badges"
 
-description: "CertifyMe is one of the best digital credential platforms offering verifiable digital badges and digital certificates. Start your credentialing journey today."
+description: "Affordable online digital credential management software with 100+ credentialing features. Research & compare our plans and features"
 
 layout: V4Layoutpricing
 
