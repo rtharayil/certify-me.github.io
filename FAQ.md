@@ -1,7 +1,7 @@
 ---
 title: "Digital Credentials FAQ: Most Asked Questions on online credentials"
 
-description: "CertifyMe is one of the best digital credential platforms offering verifiable digital badges and digital certificates. Start your credentialing journey today."
+description: "We answer your frequently asked questions about CertifyMe and the easy-to-use digital credential software in the industry."
 
 layout: V4LayoutFAQ
 

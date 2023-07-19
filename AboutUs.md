@@ -1,7 +1,7 @@
 ---
 title: "Learn About CertifyMe Digital Credentials Management Software"
 
-description: "CertifyMe is one of the best digital credential platforms offering verifiable digital badges and digital certificates. Start your credentialing journey today."
+description: "CertifyMe is a software platform that enables organisations to create, issue & manager verifiable certificates and badges."
 
 layout: V4LayoutaboutUs
 
