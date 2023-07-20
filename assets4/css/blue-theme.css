@@ -2466,11 +2466,11 @@ p.video-txt-sm {
 .desktoplogo img {
   width: auto;
   max-width: inherit;
-  max-height: 38px;
+  max-height: 50px;
 }
 
 .blog-header .desktoplogo img {
-  max-height: 30px;
+  max-height: 50px;
 }
 
 /*------------------------------------------*/
@@ -8674,11 +8674,11 @@ img.footer-logo,
 img.footer-logo-dark {
   width: auto;
   max-width: inherit;
-  max-height: 40px;
+  max-height: 50px;
 }
 
 #footer-10 img.footer-logo {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 #footer-1 .footer-logo,
