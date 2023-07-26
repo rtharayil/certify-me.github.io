@@ -12,7 +12,7 @@ HeroTitle: Quantum-Secure Ledger for Top-Level Safety of Digital Certificates
 HeroText: Issue quantum ledger ID-integrated digital credentials to protect cryptographic algorithms used in digital credentials.
 
 BoxContentTitle: What is a quantum ledger?
-BoxContentText: Quantum Ledger (QLDB) is an open-source, decentralized ledger database that stores every detail without the flexibility of removing or deleting an entry or modifying the history. It also refers to a ledger or data structure designed to harness the power of quantum computing. <br> Quantum computers can perform complex computations and solve certain problems much faster than classical computers, which opens up possibilities for new types of data storage and management systems.
+BoxContentText: Quantum Ledger (QLDB) is an open-source, central database that stores every detail without the flexibility of removing or deleting an entry or modifying the history. Along with ledger, our credentialing platform is also blockchain-powered. <br> Thus, data tampering is no longer a concern when you choose us as your credentialing partner.
 BoxImage: /assets4/images/Hero Images/Quantum Ledger (1).png
 
 #features section
