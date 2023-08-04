@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  How are Digital Badges Valuable for Businesses
 
 description: Digital badges benefit businesses by increasing engagement, filling skills gaps, aiding candidate selection, and enhancing brand awareness.

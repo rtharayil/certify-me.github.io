@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Engaging Students online through Digital Credentials
 
 author : Mrunal Upadhye

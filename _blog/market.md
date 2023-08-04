@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Digital credentials are a great way to market
 
 description:

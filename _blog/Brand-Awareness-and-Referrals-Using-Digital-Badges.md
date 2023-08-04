@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Brand Awareness and Referrals Using Digital Badges
 
 description: Digital badges enhance brand awareness through social media sharing and email marketing, driving referrals and word-of-mouth marketing.

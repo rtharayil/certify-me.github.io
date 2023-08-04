@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: The problem of Fake Credentials in India and its Ultimate Solution
 
 description: Fake credentials in India pose a significant problem, but digital credentials offer a secure solution to prevent fraud.

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Digital Credentials for B2B and B2C marketing
 
 description: Achieve marketing success in B2B and B2C sectors by leveraging digital credentials to recognize employee skills.

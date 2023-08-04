@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: A Guide to Digital Badges
 
 description: Guide to Digital Badges:Recognize achievements, showcase skills, and enhance employability in the learner-centered digital world.

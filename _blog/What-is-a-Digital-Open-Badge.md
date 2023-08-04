@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  What is a Digital Open Badge
 
 description: Digital Open Badges are online equivalents of physical badges that demonstrate progress and achievement in specific skills, with verifiable metadata.

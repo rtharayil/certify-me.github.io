@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Effective Ways to Advertise a Digital Certificate
 
 description: Promote digital certificates through trial testing, clear banners, landing pages, beta testing, and offers/discounts to attract users.

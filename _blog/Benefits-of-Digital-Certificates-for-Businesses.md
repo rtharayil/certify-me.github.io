@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Benefits of Digital Certificates for Businesses
 description: Secure and verifiable, digital certificates offer privacy, visibility, and verification, benefiting businesses in the digital world.
 

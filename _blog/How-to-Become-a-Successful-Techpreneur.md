@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  How to Become a Successful Techpreneur
 
 description: To become a successful techpreneur, develop technology knowledge, persistence, belief, teamwork, collaboration, and effective communication skills.

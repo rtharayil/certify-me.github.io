@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Our Philosophy
 
 description: Certify Me.Online aims to maximize smiles by providing a trusted platform for creating and managing Digital Credentials.

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Importance of Digital Badges for Association Education
 
 description:

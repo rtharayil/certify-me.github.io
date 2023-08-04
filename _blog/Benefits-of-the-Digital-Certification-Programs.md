@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Benefits of the Digital Certification Programs
 
 description: Digital certification programs offer accelerated reskilling, professional growth, easy verification, robust encryption, and specialized skill acquisition.

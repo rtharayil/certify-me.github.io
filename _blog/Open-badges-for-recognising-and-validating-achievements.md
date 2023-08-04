@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Open badges for recognising and validating achievements
 
 description: Open badges, a type of digital badge, provide verifiable and shareable evidence of achievements and skills.

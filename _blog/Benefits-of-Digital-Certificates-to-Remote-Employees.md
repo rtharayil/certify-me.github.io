@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Benefits of Digital Certificates to Remote Employees
  
 

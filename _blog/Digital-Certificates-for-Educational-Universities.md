@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Digital Certificates for Educational Universities 
 
 description: Blockchain-enabled digital credentials revolutionize education, ensuring security, automation, and brand awareness for educational institutions.

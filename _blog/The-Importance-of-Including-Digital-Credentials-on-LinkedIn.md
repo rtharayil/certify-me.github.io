@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  The Importance of Including Digital Credentials on LinkedIn
 
 description: Adding digital credentials on LinkedIn can enhance brand value, networking, and job opportunities.
@@ -20,7 +20,7 @@ Experts believe that the rich troves of semi-structured data that LinkedIn’s m
 A recent article by <a href="https://kinsta.com/blog/linkedin-statistics/#:~:text=The%20other%20primary%20reason%20LinkedIn,of%20recruiters%20regularly%20use%20LinkedIn.">Kinsta</a> shows, nearly 58 million organizations are listed on LI whereas 77% of recruiters regularly use this platform to hire new talents. This crucial but unsurprising number reveals the impact of LinkedIn on the job market.<br><br>
 Thus, keeping your ‘digital resume’ updated is the first step toward bagging your dream job.<br>
 Showcasing the badges/credentials you have acquired to date on LinkedIn can help you land jobs 78% faster. When LinkedIn shareable certificates & badges are available at your fingertip, why not enjoy their benefits?<br><br>
-<img src="/img/blog/CertifyMe Linkedin Badge.png" alt="CertifyMe Linkedin Badge">
+<img class="img-fluid r-16" src="/img/blog/CertifyMe Linkedin Badge.png" alt="CertifyMe Linkedin Badge">
 <br><br>
 
 <h2>The Importance of Including Digital Credentials on LinkedIn:</h2>

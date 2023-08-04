@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Certification process through Automation
 
 description: Certification process is transformed through automation, reducing manual work and improving efficiency and accuracy.

@@ -2,7 +2,7 @@
 layout: blog
 title: Using Digital Credentials to Create a Diverse and Inclusive Workplace 
 
-description:
+description: Using Digital Credentials to Create a Diverse and Inclusive Workplace
 abstract: Using Digital Credentials to Create a Diverse and Inclusive Workplace 
 topic: news
 author : Mrunal Upadhye

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Making the Decision About Digital Credentials
 
 description: Digital credentials require privacy, trust, credential management, and authority to be considered when incorporating them into organizations' systems.

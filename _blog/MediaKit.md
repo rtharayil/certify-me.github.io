@@ -1,8 +1,8 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Media Kit
 
-description:
+description: Media Kit
 abstract: Media Kit
 topic: news
 imageLink: /img/preview1.png

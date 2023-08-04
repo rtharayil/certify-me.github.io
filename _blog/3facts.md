@@ -1,6 +1,6 @@
 ---
-layout: blog
-title: Three 𝗳𝗮𝗰𝘁𝘀 about 𝗖𝗿𝗲𝗱𝗲𝗻𝘁𝗶𝗮𝗹
+layout: V4LayoutSingleBlogPost
+title: Three Facts About Credential
 
 description: Digital credentials optimize processes, reduce effort, and enhance traceability. Leveraging branding options boosts social media visibility, driving relevant traffic.
 abstract: Three 𝗳𝗮𝗰𝘁𝘀 𝗲𝘃𝗲𝗿𝘆 𝘁𝗿𝗮𝗶𝗻𝗲𝗿'𝘀 / 𝗲𝘃𝗲𝗻𝘁 𝗺𝗮𝗿𝗸𝗲𝘁𝗲𝗿 𝗻𝗲𝗲𝗱𝘀 𝘁𝗼 𝗸𝗻𝗼𝘄 𝗮𝗯𝗼𝘂𝘁 𝗱𝗶𝗴𝗶𝘁𝗮𝗹 𝗖𝗲𝗿𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗲𝘀 𝗮𝗻𝗱 𝗕𝗮𝗱𝗴𝗲𝘀

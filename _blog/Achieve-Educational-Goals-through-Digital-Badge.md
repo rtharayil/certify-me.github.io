@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Achieve Educational Goals through Digital Badge
 
 description: Digital badges enable recognition, engagement, and skill display, facilitating educational goals and promoting learner participation and employment opportunities.

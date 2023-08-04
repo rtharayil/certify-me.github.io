@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Challenges with traditional (non-digital) certificates
 
 description: Traditional certificates face challenges with cost, storage, security, verification, and shareability. Digital credentials address these issues effectively.

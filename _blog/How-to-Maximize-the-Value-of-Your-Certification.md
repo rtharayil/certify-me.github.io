@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: How to Maximize the Value of Your Certification
  
 description: Maximize certification value with verified digital credentials, accuracy, security, technology, and shareability for increased recognition and trust.

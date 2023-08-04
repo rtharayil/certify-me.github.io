@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Most Common Types of Digital certificate
 
 description: Common types of digital certificates include TLS/SSL certificates, code signing certificates, and client certificates for user verification.
@@ -10,9 +10,11 @@ author : Mrunal Upadhye
 imageLink: /img/blog/credential/28.png
 featured: true
 ---
+
+
 # Types of Digital Certificates to Keep Digital Communication Encrypted
 <br>
-<img src="/img/blog/Types of Certificates.png" alt="Types of Certificate">
+<img class="img-fluid r-16" src="/img/blog/Types of Certificates.png" alt="Types of Certificate">
 <br><br>
 <a href="https://certifyme.online/blog/What-is-a-Digital-Credential.html">Digital credentials</a> a.k.a public key certificates ensure secure online communication and data delivery. Both the issuer and the recipient heave a sigh of relief when a digital certification platform performs as an intermediator.<br><br> <a href="https://resources.certifyme.online/what-are-verifiable-credentials/">Verifiable credentials</a> entail strict safety measures in the form of a public key to maintain a safe channel for official connections or mail delivery. Partnering with a credential provider platform ensures that only verified and authorized channels can access the documents. The stress of anybody accessing business information without permission is diligently addressed since the introduction of digital certificates.<br><br> The digital credential can be stored and accessed with ease if only you are the authorized member. The digital certificate comes with a digital key and digital signature that ensures secure access to the document and avoids unethical hacking or data manipulation.<br><br>The issuing organization, government agencies, and educational platforms highly benefit from digital certificates. They secure the transaction of recognizing the users’ achievements and competency regarding the qualifications.<br>Before discussing the types of certificates, let’s jump right into the definition of digital certificates and why they are recently so hyped up:
 
@@ -27,6 +29,7 @@ featured: true
 - Public Key Certificate
 - Class 1/2/3 Certificate
 - Object Signing Certificate
+<br><br>
 
 <h2>What is a digital certificate?<br>What is its significance in the domain of digital communication?</h2>
 

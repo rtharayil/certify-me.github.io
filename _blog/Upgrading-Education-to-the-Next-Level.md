@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Upgrading Education to the Next Level
 
 description: Online education has gained popularity, allowing individuals to acquire additional certifications in trending fields like digital marketing, cybersecurity, data analysis, and finance.

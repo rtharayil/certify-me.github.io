@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: CertifyMe lets you map a custom domain to your Credential Pages .
 
 description: CertifyMe.Online allows you to map a custom domain to your Credential Pages, enhancing your brand presence.

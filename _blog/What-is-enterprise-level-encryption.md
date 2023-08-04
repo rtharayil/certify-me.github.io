@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  What is enterprise level encryption?
 
 description: Enterprise-level encryption refers to the advanced encryption techniques used by businesses to protect sensitive data from unauthorized access.

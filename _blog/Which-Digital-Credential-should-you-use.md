@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Which Digital Credential should you use?
 
 description: Digital badges are ideal for recognizing skills and interests, while digital certificates are suitable for formal qualifications and achievements.

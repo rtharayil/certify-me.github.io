@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: 36% of employees cite a lack of recognition as their primary reason for employee dissatisfaction
 
 
