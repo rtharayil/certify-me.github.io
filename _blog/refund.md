@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: blog
 title: Refund Policy
 
@@ -60,4 +60,4 @@ We will initiate to reimburse you no later than 28 days from the day on which We
 
 If you have any questions about our Returns and Refunds Policy, please contact us:
 
-    * By sending us an email: admin@certifyme.online
+    * By sending us an email: admin@certifyme.online -->

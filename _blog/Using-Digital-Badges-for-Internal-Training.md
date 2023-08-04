@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Using Digital Badges for Internal Training
 
 description: Gamified digital badges enhance internal training, customized programs, and micro-credentials to bridge skill gaps and boost engagement.

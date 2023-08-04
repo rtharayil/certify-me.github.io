@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Brand Engagement through Digital Badges and Digital Certificates
 
 description:

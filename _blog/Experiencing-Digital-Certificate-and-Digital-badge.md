@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Experiencing Digital Certificate and Digital badge
 
 description: Digital credentials, including digital certificates and badges, enhance engagement and recognition for learners in online training platforms.

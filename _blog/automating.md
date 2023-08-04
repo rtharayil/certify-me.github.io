@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Are you still spending time manually issuing certificates and badges?
 
 description: Automate credential issuing with CertifyMe.Online to save time and up to 93% of costs. Maximize brand presence.

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Digital Learning and Digital Certificates
 
 description: Digital learning offers personalized education and digital certificates provide secure, verified proof of acquired skills and competencies.

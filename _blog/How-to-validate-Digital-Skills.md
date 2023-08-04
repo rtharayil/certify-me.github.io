@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: How to validate Digital Skills?
 
 description: Validate digital skills through training and digital credentials to adapt to remote work and changing business trends.

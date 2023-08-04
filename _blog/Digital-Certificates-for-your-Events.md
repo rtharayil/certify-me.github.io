@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Digital Certificates for your Events 
 
 description: Digital certificates and badges enhance engagement and brand awareness in events, attracting new participants.

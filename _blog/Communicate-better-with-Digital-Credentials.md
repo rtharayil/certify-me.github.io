@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Market better with Digital Credentials
 
 description: Digital credentials revolutionize market communication, allowing individuals to demonstrate skills, accumulate qualifications, and share achievements globally.

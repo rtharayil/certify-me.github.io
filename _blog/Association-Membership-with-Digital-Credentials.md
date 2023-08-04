@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Association Membership with Digital Credentials
 
 description: Digital credentials revolutionize associations, offering verifiable recognition, automated membership management, and cost-effective certifications.

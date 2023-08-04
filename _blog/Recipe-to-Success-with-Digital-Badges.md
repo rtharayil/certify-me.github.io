@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Recipe to Success with Digital Badges
 
 description: Digital badge programs, guided by Customer Success Managers, recognize users' skills and abilities, promoting engagement and achieving success.

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Effective tools that trainers could aid for better learning experience
 
 description: Effective digital education tools like CertifyMe, Kahoot!, Socrative, Storybird, and Knoword enhance student engagement and learning outcomes.

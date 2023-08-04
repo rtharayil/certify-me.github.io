@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  How Digital credentials help increase Brand Awareness
 
 description: Digital credentials increase brand awareness by sharing achievements on social media, driving website traffic, and leveraging email marketing.
@@ -19,7 +19,7 @@ featured: true
 
 <h1>How do Digital Credentials Help Increase Brand Awareness?: A 2023 Guide</h1>
 
-<img src="/img/blog/brand awareness.png" alt="Brand Awareness ">
+<img class="img-fluid r-16" src="/img/blog/brand awareness.png" alt="Brand Awareness" style="margin-top:10px;">
 <br><br>
 Brand awareness sets institutions apart from each other. Organizations try to adopt every possible good practice to improve their brand visibility and online presence. But this does not seal the deal if the effective ones get left behind.<br>Any organization that solely focuses on traditional modes to drive engagement, awareness, and traffic, can struggle to get visibility among its competitors. With the rise in the use of digital media and digital platforms, the competition has become more complex and the need to stay relevant remains constant.<br>The latest <a href="https://www.macmillandictionary.com/dictionary/british/foolproof">foolproof method</a> to enhance brand engagement and awareness is collaborating with digital credentialing platforms. Issuing digital certificates and digital badges has proved to be one of the most effective tools to promote your brand, market and create awareness of the brand’s presence. Many financial, educational, and government organizations have invested in verifiable credentials to support brand promotion.<br><br>Let’s start the discussion with:<br><br>
 
@@ -81,6 +81,6 @@ For educational, training, and financial institutions, digital credentials prove
 The certificates protect business details from forgery while also promoting the brand/organization using the white labeling solution.<br>
 Digital credentials not only help the user to get the benefit of career development but also help the organization to create brand awareness and gain brand visibility. It can be the most effective marketing tool for any organization that is not shy of adopting a digital credentialing program.<br>
 <a href="https://certifyme.online/">CertifyMe is an ideal choice for educational and training institutes</a>. From brand awareness to credential security, the credentialing platform takes care of all.<br><br>
-Check the demo for a solid grasp of the way the tool functions!<br>
+Check the demo for a solid grasp of the way the tool functions!<br><br>
 
 

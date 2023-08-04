@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  The Role of technology in Online Education
 
 description: Technology in online education enhances accessibility, saves time, improves communication, collaboration, and offers digital credentials.

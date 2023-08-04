@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Six Popular and In-Demand Financial Certifications 2022
 
 description: In-demand financial certifications include CPA, CFP, CIC, FRM, ChFC, and CAIA, offering expertise in different areas of finance.

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Which is better paper or digital certificates?
 
 description: Digital certificates offer enhanced security, verification, and shareability, making them a better option over paper certificates.

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Strategies to improve Member Retention Rate
 
 description: Effective strategies to market a membership program include content marketing, social media marketing, and attractive membership offers.

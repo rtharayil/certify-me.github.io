@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Verifiable credentials the key to the online privacy
 
 description: Verifiable credentials offer secure, verified, shareable, and controlled access to data, enhancing online privacy.

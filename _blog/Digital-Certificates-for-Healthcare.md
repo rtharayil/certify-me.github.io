@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Digital Certificates for Healthcare
 
 description: Digital certificates enhance security and compliance in healthcare, with accreditation programs and industry standards.

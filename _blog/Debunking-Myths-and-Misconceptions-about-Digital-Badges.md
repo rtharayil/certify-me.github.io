@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Debunking Myths and Misconceptions about Digital Badges 
 
 description: Debunking Myths and Misconceptions about Digital Badges, Learn the truth about their effectiveness and benefits.

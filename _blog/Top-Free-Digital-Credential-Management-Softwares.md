@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Top Free Digital Credential Management Softwares
 
 description: Top free Digital Credential Management software:Sertifier, CertifyMe, NetCredential, and Hyperstack Credential Cloud.

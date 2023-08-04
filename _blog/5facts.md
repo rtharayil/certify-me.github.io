@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: 5 facts most event Marketer are getting wrong 
 
 description: Avoid five mistakes when issuing digital credentials, and maximize event presence with verifiable badges.

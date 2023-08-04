@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  The Benefits of Investing in Education
 
 description: Investing in online education and internal training improves reskilling, employee retention, productivity, and digital credentials.

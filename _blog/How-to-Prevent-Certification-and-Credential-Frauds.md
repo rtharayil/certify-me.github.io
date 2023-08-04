@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: How to Prevent Certification and Credential Frauds 
 
 description: Prevent certification fraud by verifying credentials using digital certificates backed by blockchain technology for authenticity.

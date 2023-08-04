@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: What are digital credentials and 𝗪𝗵𝗲𝗿𝗲 𝗮𝗿𝗲 𝗱𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗿𝗲𝗱𝗲𝗻𝘁𝗶𝗮𝗹𝘀 𝘂𝘀𝗲𝗱 in 2023? 
 
 description: Digital credentials or verifiable credentials are tamper-proof evidence of achievements that can transform the way skilled professionals showcase their credentials on a global scale.
@@ -25,7 +25,7 @@ The QR/BARcode in the certificate unlocks information about the competency of th
 
 ## Why Digital Credentials Became the Talk of the Town?
 <br>
-<img src="/img/blog/Digital Certificates.png" alt="Digital Certificate">
+<img class="img-fluid r-16" src="/img/blog/Digital Certificates.png" alt="Digital Certificate">
 <br><br>
 We all were awarding, claiming, and using paper certificates to exhibit our talent and authenticity. Then what shifted the attention to <a href="https://certifyme.online/blog/The-Importance-of-Including-Digital-Credentials-on-LinkedIn.html">LinkedIn shareable certificates & badges</a>?<br>
 Though paper certificates were traditionally popular and accepted, their issues troubled everyone. From altering the details inside a certificate to the presentation of fraud certificates, the problems were endless. There is also no way to detect whether any information falsification happened.<br>
@@ -81,3 +81,4 @@ Any skills students gain from attending a course, session, or program remain loc
 
 ## 𝗪𝗵𝗲𝗿𝗲 𝗮𝗿𝗲 𝗱𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗿𝗲𝗱𝗲𝗻𝘁𝗶𝗮𝗹𝘀 𝘂𝘀𝗲𝗱 𝘁𝗼𝗱𝗮𝘆?
 The use of digital credentials is on the rise. There are endless examples where digital credentials play a critical role today, including diplomas and certificates issued by education providers, being awarded for gaining a personal or professional skill, participatory certificates issued in conferences and workshops, awards and recognition programs, speaker recognition badges for conferences and seminars, proof of membership for any organization/community, Deleage entry passes for stage shows and other events, HR letters like a certificate of internship, proof of vaccination, for example, COVID19 vaccinated, social badges used in support/ create awareness of social issues example gender equality, etc.<br><a href="https://certifyme.online/">CertifyMe</a> is an end-to-end solution for creating, issuing, and managing Digital Credentials. Using our White Labeled solutions, we can help you establish a substantial brand value. Your credentials come with a dedicated system that ensures a high level of security & customizability. Transform your credentialing process to let the students showcase their experience and achievements. 
+<br><br>

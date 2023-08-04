@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: blog
 title: Media Kit
 
@@ -61,4 +61,4 @@ featured: true
 
 
 
-
+ -->

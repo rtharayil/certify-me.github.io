@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Are PDF based credentials secure
 
 description: Learn about PDF encryption, password protection, watermarking, and vulnerabilities to secure digital documents.

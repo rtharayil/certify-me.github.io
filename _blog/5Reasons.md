@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: 5 Reasons why Every Event Marker and Training Manager Need Digital Credentials
 
 description: Social media-friendly credentials enhance visibility, automation saves time and money, verifiable credentials hold greater value, and sharing boosts website traffic and SEO.

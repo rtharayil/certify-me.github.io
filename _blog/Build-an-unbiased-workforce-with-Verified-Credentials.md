@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Build an unbiased workforce with Verified Credentials
 
 description: Build an unbiased workforce with verified credentials, reducing biases and ensuring secure, traceable qualifications.

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: What Are Stacked Credentials
 
 description: Stacked credentials are accumulated qualifications that students can combine to build a strong portfolio for career advancement.

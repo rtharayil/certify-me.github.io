@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: How to Keep Members Engaged After Your Certification Program Has Ended
 
 description: To keep members engaged after a certification program, plan effectively, track engagement, and utilize digital marketing strategies.

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Digital Badges A Potential Career Advancement
 
 description: Unlock career advancement opportunities with digital badges. Display and validate your skills to employers effectively.
