@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Impose Digital Credential into your Marketing Strategy 
 
 description: Utilize digital credentials in marketing to leverage social media, email, and online events for increased brand recognition and engagement.

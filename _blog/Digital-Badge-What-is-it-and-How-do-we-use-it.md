@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Digital Badge What is it and How do we use it? 
 
 description: Learn about digital badges and how to use them effectively. Display, share, and verify your achievements easily.

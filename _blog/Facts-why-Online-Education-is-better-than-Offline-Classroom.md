@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: 10 reasons why Online Education is better than Offline Classroom
 
 description: Online education surpasses offline classrooms with convenience, cost-effectiveness, accessibility, and verifiability, benefiting learners of all ages.

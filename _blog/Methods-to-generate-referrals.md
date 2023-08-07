@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Methods to generate referrals
 
 description: Generate referrals by being customer-centric, implementing affiliate programs, leveraging testimonials, and directly asking for referrals.

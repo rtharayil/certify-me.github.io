@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  How can Organisations help Women at Work Stay?
 
 description: Organizations can support women at work by addressing skill gaps, utilizing digital credentials, and tackling workplace challenges.

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Digital Certificates for E-learning platforms 
 
 description: E-learning platforms leverage digital certificates to enhance learning experiences, reward participation, and create brand value.

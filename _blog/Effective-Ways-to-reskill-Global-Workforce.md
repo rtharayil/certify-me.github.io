@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Effective Ways to reskill Global Workforce 
 
 description: Promote connectivity, skill-based credentials, and tailored learning programs to effectively reskill the global workforce.

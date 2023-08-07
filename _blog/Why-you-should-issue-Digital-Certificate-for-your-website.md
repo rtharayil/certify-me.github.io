@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Why you should issue Digital Certificate for your website
 
 description: Digital SSL certificates provide secure connections, protect sensitive information, boost search rankings, and instill trust in websites.

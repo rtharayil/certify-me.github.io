@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Don't just issue certificates, award verifiable and sharable Credentials to your Learners
 
 description:

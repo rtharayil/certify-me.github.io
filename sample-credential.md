@@ -53,19 +53,24 @@ imageLink9: https://www.my.certifyme.online/static/fileStore/img/342/419/7520_ba
 verifyURL9: https://certificate.thestudent.world/verify/SebastianFernandes_8061429d-339b-4869-8eb6-8f7f722bd941419
 
 # Project 10
-title10: ID Cards
-imageLink10: https://www.my.certifyme.online/static/fileStore/img/1198/3382/73976_badge_F8DE01.png
-verifyURL10: https://credential.certifyme.online/verify/dafed8d83382
+title10: Certificate of Attendance - Regional Scrum Gathering
+imageLink10: https://www.my.certifyme.online/static/fileStore/img/2153/7407/175936_badge_C09657.png
+verifyURL10: https://credential.certifyme.online/verify/161983837407
 
 # Project 11
-title11: University Transcript
-imageLink11: https://www.my.certifyme.online/static/fileStore/img/691/3381/73962_badge_25C78B.png
-verifyURL11: https://credential.certifyme.online/verify/1ea395623381
+title11: ID Cards
+imageLink11: https://www.my.certifyme.online/static/fileStore/img/1198/3382/73976_badge_F8DE01.png
+verifyURL11: https://credential.certifyme.online/verify/dafed8d83382
 
 # Project 12
-title12: Student Report Card
-imageLink12: https://www.my.certifyme.online/static/fileStore/img/691/3384/73966_badge_123978.png
-verifyURL12: https://credential.certifyme.online/verify/12bdf9d23384
+title12: University Transcript
+imageLink12: https://www.my.certifyme.online/static/fileStore/img/691/3381/73962_badge_25C78B.png
+verifyURL12: https://credential.certifyme.online/verify/1ea395623381
+
+# Project 13
+title13: Student Report Card
+imageLink13: https://www.my.certifyme.online/static/fileStore/img/691/3384/73966_badge_123978.png
+verifyURL13: https://credential.certifyme.online/verify/12bdf9d23384
 
 #G2 section
 G2Title: Global Leader in Digital Certificates & Badge Management
@@ -77,7 +82,7 @@ ActionButtonbelowtext2: Exclusive Support
 TestimonialTitle: Our Happy Customers
 
 #banner section
-Banner1: July Edition
+Banner1: August Edition
 BannerTitle1: Zero to One
 BannerTitle2: Build A Credentialing Program From Scratch
 BannerText: This extensive workbook + ebook combo contains everything you need to build a credentialing program from scratch.

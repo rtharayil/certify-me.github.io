@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Technological Advancements for Edtech Companies
 
 description: EdTech companies have adopted digital credentials, virtual reality, augmented reality, and podcasts to enhance remote learning experiences.

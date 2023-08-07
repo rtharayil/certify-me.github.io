@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Why is Online Education more effective than On-site Learning?
 
 description: Online education offers remote access, cost-effectiveness, accessibility, shareability, verifiability, individuality, and quality learning experiences.

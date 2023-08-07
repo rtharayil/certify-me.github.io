@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  Using Trust Badges to Increase Ecommerce Conversions
 
 description: Trust badges increase e-commerce conversions by instilling confidence through secure checkout, payment options, and endorsements.

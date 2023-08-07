@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Application for Digital Credential Sponsorship for your events
 
 description: CertifyMe.Online seeks to sponsor digital credentials for events and conferences, offering automation and brand presence.

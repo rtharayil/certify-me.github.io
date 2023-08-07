@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: From-past-to-present-About-Digital-Credential-grow?
 
 description: Digital credentials have revolutionized the certification process, replacing traditional certificates and badges with cost-effective and secure digital alternatives.

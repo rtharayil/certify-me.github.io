@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: Use of Digital Credentials for Membership Organizations
 
 

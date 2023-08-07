@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title: 𝗣𝗼𝘀𝗶𝘁𝗶𝘃𝗲 𝗙𝗲𝗲𝗱𝗯𝗮𝗰𝗸 using credentials
 
 description: CertifyMe.online offers a digital credential platform for issuing credentials, providing 50 free credentials and personalized support.

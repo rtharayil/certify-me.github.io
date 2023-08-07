@@ -1,5 +1,5 @@
     ---
-layout: blog
+layout: V4LayoutSingleBlogPost
 title:  White labelling Service
 
 description:
