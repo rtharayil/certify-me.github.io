@@ -6726,8 +6726,9 @@ p.rbox-2-txt span {
 
 .pricing-features li p {
   line-height: 1;
-  font-weight: 400;
+  font-weight: 350;
   margin-bottom: 0;
+  font-size: medium;
 }
 
 .pricing-features li p span {
