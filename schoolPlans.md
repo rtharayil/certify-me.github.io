@@ -59,10 +59,10 @@ heading4Link: /schoolPlans
 #Navbar End
 
 #Pricing section for schools
-headingprice1: Standard
-headpricingPlan: 100
-studentText: Min 500 Students / Year
-button1: Start free trial
+headingprice1: Elements
+headpricingPlan: 1000
+studentText: 500 Students / Year
+button1: Apply for Grant
 buttonLink1: https://credential.certifyme.online/auth/preregister/standard@certifyme.online 
 feature1: Badge Designer
 feature2: Verifiable QR-Code
@@ -73,7 +73,7 @@ feature6: 5 Templates
 feature7: 1 Admin Account
 feature8: + More
 
-headingprice2: Business
+headingprice2: Essentials
 headpricingPlan2: 250
 student2Text: Min 2000 Students / Year
 button2: Start free trial
@@ -88,7 +88,7 @@ feature15: Basic API
 feature34: 3 Admin Account
 feature16: + More
 
-headingprice3: White Label
+headingprice3: Expanded
 headpricingPlan3: 350
 student3Text: Min 5000 Students / Year
 button3: Start free trial
