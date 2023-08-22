@@ -13,6 +13,7 @@ HeroText: 'Clasificado #1 en Software de Gestión de Credenciales Digitales en l
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Solicite una demostración
 HeroVideoButton: Ver video 
+HeroVideoButtonLink: https://www.youtube.com/watch?v=TJMwk6qIxSc
 FlaticonCheckHeroText: Prueba gratuita, no se requiere tarjeta de crédito.
 
 #statictics section
