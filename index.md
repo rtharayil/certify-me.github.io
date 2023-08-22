@@ -13,6 +13,7 @@ HeroText: 'Ranked #1 in Digital Credential Management Software across Education 
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request A Demo
 HeroVideoButton: Watch Video
+HeroVideoButtonLink: https://www.youtube.com/watch?v=TJMwk6qIxSc
 FlaticonCheckHeroText: Free trial, No Credit Card Required.
 
 #statictics section
