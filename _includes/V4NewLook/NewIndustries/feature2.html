@@ -27,12 +27,14 @@
                     <!-- Text -->
                     <p>{{page.Feature1Text}}
                     </p>
+                    {% if page.feature1button %}
                     <!-- Link -->
                     <div class="txt-block-tra-link mt-25">
                         <a href="{{page.feature1buttonLink}}" target="_blank" class="tra-link ico-20 color--theme">
                             {{page.feature1button}} <span class="flaticon-next"></span>
                         </a>
                     </div>
+                    {% endif %}
 
                 </div>
             </div> <!-- END TEXT BLOCK -->
@@ -72,12 +74,14 @@
                         </p>
 
                     </div> <!-- END TEXT BOX -->
+                    {% if page.feature2button %}
                     <!-- Link -->
                     <div class="txt-block-tra-link mt-25">
                         <a href="{{page.feature2buttonLink}}" target="_blank" class="tra-link ico-20 color--theme">
                             {{page.feature2button}} <span class="flaticon-next"></span>
                         </a>
                     </div>
+                    {% endif %}
 
                 </div>
             </div> <!-- END TEXT BLOCK -->
@@ -129,11 +133,13 @@
                     </p>
 
                     <!-- Link -->
+                    {% if page.feature3button %}
                     <div class="txt-block-tra-link mt-25">
                         <a href="{{page.feature3buttonLink}}" target="_blank" class="tra-link ico-20 color--theme">
                             {{page.feature3button}} <span class="flaticon-next"></span>
                         </a>
                     </div>
+                    {% endif %}
 
                 </div>
             </div> <!-- END TEXT BLOCK -->

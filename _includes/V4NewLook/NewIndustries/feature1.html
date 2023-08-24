@@ -19,11 +19,13 @@
                             </p>
 
                             <!-- Link -->
+                            {% if page.buttonText %}
                             <div class="txt-block-tra-link mt-25">
                                 <a href="{{page.buttonLink}}" target="_blank" class="tra-link ico-20 color--theme">
                                     {{page.buttonText}} <span class="flaticon-next"></span>
                                 </a>
                             </div>
+                            {% endif %}
 
                         </div>
                     </div> <!-- END TEXT BLOCK -->
