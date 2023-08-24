@@ -8,9 +8,9 @@ layout: V4LayoutSmartCerts
 sitemap.priority: 1
 
 # Hero Section 
-HeroTitle: 'CertifyMe For Schools: Easy-to-Use Digital Certificate Maker'
-HeroText: 'The CertifyMe For Schools Program provides a 90% discount on paid plans. Access and send digital certificates to empower your students in their learning journey.'
-HeroImage: /assets4/images/Images Webp/digital credential software.webp
+HeroTitle: Smart Certs <br> When Certificates Turn into Trusted Records
+HeroText: Design, Print, and distribute smart certs with the leading solution for digital certification
+HeroImage: /assets4/images/SmartCerts/online-certificate-generator Image.png
 HeroDemoButton: Apply for Grant
 HeroVideoButton: Explore Our Plans
 HeroVideoButtonLink: /schoolPlans
@@ -24,42 +24,42 @@ Credentialtext: Digital credentials issued every month
 #statictisc section end
 
 #feature 1 section 
-BoxContentTitle: A Pathway to Trust:Enabling your students with verifiable digital certificates
-BoxContentText: Verifiable digital certificates empower your students with secure records of achievements, grades, and participation. Issued by your institution, these certificates enhance program credibility and promote transparency. Students effortlessly showcase accomplishments, streamlining their educational journey.<br> This benefits educators, ensuring accurate and tamper-proof documentation, ultimately enriching the learning experience.
+BoxContentTitle: Redefining Certificate Verification by CertifyMe
+BoxContentText: A revolutionary technology that transforms traditional certificates into a new era of verification. Eliminating manual authentication processes and introducing the power of QR codes and barcodes.<br> With Smart Cert, you have the ability to design, print, and distribute certificates seamlessly using our CertifyMe platform. We handle the printing and delivery, so you can focus on celebrating achievements and recognizing excellence.
 
-BoxImage: /assets4/images/Hero Images/Badges.png
+BoxImage: /assets4/images/SmartCerts/online-certificate-generator (3).png
 buttonText: Talk to our Experts
 buttonLink: https://go.certifyme.online/talk-with-expert
 #feature 1 end
 
 #feature 2 section
-Feature1Image: /assets4/images/Digital Badges/1.png
-Feature1Title: Send verifiable certificates in one click and celebrate achievements instantly
-Feature1Text: Easily issue digital certificates in bulk with just one click, streamlining administrative tasks for schools. Motivate students and enable educators to effortlessly reward achievements, saving time and enhancing success.
+Feature1Image: /assets4/images/SmartCerts/Design (1).png
+Feature1Title: 'Easy to Design, Verify & Manage Certificates:'
+Feature1Text: Empower your organization with CertifyMe - our intuitive certificate design platform. Effortlessly craft stunning certificates that reflect your brand. But that's not all. Our Smart Certificates are equipped with QR codes and bar codes, enabling quick and foolproof verification. Managing certificates has never been this streamlined.
+feature1button: Apply for Grant
+feature1buttonLink: https://go.certifyme.online/schools
 
-Feature2Image: /assets4/images/Digital Badges/2.png
-Feature2Title: Design digital certificates using our certificate designer, providing 100+ smart options tailored for schools.
-Feature2Text: Elevate your school's certificates by incorporating QR codes, customisable features, diverse layouts, integrated signatures, and effortless Canva collaboration. Select from a wide range of 100+ smart options to create standout, personalized certificates that ensure easy verification and authentic touch.
 
-Feature3Image: /assets4/images/Digital Badges/3.png
-Feature3Title: Efficiently oversee and monitor students' certificates in real time while boosting their active participation.
-Feature3Text: Make managing student certificates a breeze with user-friendly tools. Our platform lets you easily edit, resend, export, and analyze student engagement using advanced analytics. Experience the benefits of real-time certificate management while gaining insights to boost student participation and performance.
+Feature2Image: /assets4/images/SmartCerts/Design (2).png
+Feature2Title: 'Effortless Printing & Secure Delivery:'
+Feature2Text: Designing the perfect certificate is just the beginning. We ensure your certificates are not only impeccably designed but also professionally printed and securely delivered to your doorstep. Leave the hassles of printing and logistics to us while you focus on recognizing achievements.
+feature2button: Apply for Grant
+feature2buttonLink: https://go.certifyme.online/schools
 
-#Feature4Image: /assets4/images/Hr & ld/4.png
-Feature4Title: Rebrand Your Credentials for Authentic Brand Image Reflection
-Feature4Text: We only remain at the backend, you remain at the forefront. Our customizable digital credentialing platform offers a branding experience like no other. We let you enjoy complete control over your credential header, footer, and navbar along with specially designated places online for brand promotion. Your marketing needs are sorted just by onboarding us.
-
-# /assets4/images/img-08.png
-Feature5Image:
-Feature5Title: Automated Credentials - 16x Less Time Required
-Feature5Text: Experience the ease of credential automation only with CertifyMe. Quick delivery and tracking of as many credentials as you issue. Don’t be in the dark anymore about the future of credentials offered by you - track them down whenever you want, wherever you want.<br> Integrate us into your learning management system (LMSs) for a simplified yet effective credential management solution.
+Feature3Image: /assets4/images/SmartCerts/Design (3).png
+Feature3Title: 'Eliminate Forgery & Instill Trust:'
+Feature3Text: Bid farewell to the age of forgery and credential manipulation. With Smart Cert, every certificate issued is fortified with advanced verification measures. Ensure the integrity of your organization's achievements and build trust among recipients, employers, and stakeholders.
+feature3button: Apply for Grant
+feature3buttonLink: https://go.certifyme.online/schools
 #feature 2 section end
 
 #G2 section
-G2Title: Global Leader In Online Certificate Generator For Schools
+G2Title: Global Leader in Certification Management Solutions
 ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
 ActionButtonbelowtext1: Free 50 Credentials
 ActionButtonbelowtext2: Exclusive Support
+g2buttonLink: https://go.certifyme.online/schools
+g2buttontext: Apply for Grant
 #G2 section end
 
 # testimonial section
