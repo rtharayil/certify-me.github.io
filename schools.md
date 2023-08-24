@@ -63,7 +63,7 @@ G2Title: Global Leader In Online Certificate Generator For Schools
 ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
 ActionButtonbelowtext1: Free 50 Credentials
 ActionButtonbelowtext2: Exclusive Support
-g2buttonLink: https://go.certifyme.online/schools
+g2buttonLink: https://go.certifyme.online/school-enterprise
 g2buttontext: Talk to our Experts
 #G2 section end
 

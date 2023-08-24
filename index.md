@@ -78,6 +78,8 @@ Industry1: Higher Education
 Industry2: L & D
 Industry3: E-Learning
 Industry4: Associations
+Industry5: School Certs
+Industry6: Smart Certs
 
 ##compare section
 CompareTitle: Compare Now

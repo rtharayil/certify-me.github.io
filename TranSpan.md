@@ -78,6 +78,8 @@ Industry1: Educación más alta
 Industry2: L & D
 Industry3: Aprendizaje electrónico
 Industry4: Asociaciones
+Industry5: School Certs
+Industry6: Smart Certs
 
 ##compare section
 CompareTitle: Compara ahora
