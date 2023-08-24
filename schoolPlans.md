@@ -15,7 +15,7 @@ pricingLink: /schoolPlans
 headingprice1: Elements
 headpricingPlan: 100
 studentText: 500 Students / Year
-button1: Apply for Grant
+button1: Enroll My School
 buttonLink1: https://go.certifyme.online/schools 
 feature1: Badge Designer
 feature2: Verifiable QR-Code
@@ -29,13 +29,9 @@ feature8: + More
 headingprice2: Essentials
 headpricingPlan2: 250
 student2Text: 2000 Students / Year
-button2: Apply for Grant
+button2: Enroll My School
 buttonLink2: https://go.certifyme.online/schools
-feature9: Badge Designer
-feature10: Verifiable QR-Code
-feature11: Bulk upload
-feature12: Social Media Shareable
-feature13: Manage Credentials
+feature9: All Features of Elements
 feature14: 30 Templates
 feature15: Basic API
 feature34: 3 Admin Account
@@ -44,13 +40,9 @@ feature16: + More
 headingprice3: Expanded
 headpricingPlan3: 350
 student3Text: 5000 Students / Year
-button3: Apply for Grant
+button3: Enroll My School
 buttonLink3: https://go.certifyme.online/schools
-feature17: Badge Designer
-feature18: Verifiable QR-Code
-feature19: Bulk upload
-feature20: Social Media Shareable
-feature21: Manage Credentials
+feature17: All Features of Essentials
 feature22: 75 Templates
 feature23: Basic API
 feature35: 5 Admin Account
@@ -60,7 +52,8 @@ headingprice4: Enterprise
 # headpricingPlan4: 0.07
 student4Text: Based on Requirements 
 button4: Talk to Us
-buttonLink4: https://go.certifyme.online/enterprise
+buttonLink4: https://go.certifyme.online/school-enterprise
+feature36: All Features of Expanded
 feature25: SMTP White-labelling
 feature26: Custom SLA
 feature27: Custom DPA
