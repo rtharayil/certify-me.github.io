@@ -3,12 +3,12 @@ title: "Plans & Pricing | Digital Certificates & Badges"
 
 description: "Affordable online digital credential management software with 100+ credentialing features. Research & compare our plans and features"
 
-layout: V4LayoutSchoolPricing
+layout: V4LayoutSmartCertPlans
 
 sitemap.priority : 0
 
 #navbar section
-pricingLink: /schoolPlans
+pricingLink: /SmartCertPlan&Pricing
 
 
 #Pricing section for schools

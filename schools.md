@@ -12,13 +12,14 @@ pricingLink: /schoolPlans
 
 
 # Hero Section 
-HeroTitle: 'CertifyMe For Schools: Easy-to-Use Digital Certificate Maker'
-HeroText: 'The CertifyMe For Schools Program provides a 90% discount on paid plans. Access and send digital certificates to empower your students in their learning journey.'
+HeroTitle: Create and issue digital certificates in minutes<br><span style="font-size:26px;">An intuitive online certificate maker<br> for K-12 Schools</span>
+
+HeroText: 'The CertifyMe For Schools Program provides a 90% discount on paid plans. Reward your students by awarding verifiable certificates with the best school certification management solution available in the market today!'
 HeroImage: /assets4/images/Hero Images/online-certificate-generator.png
 HeroDemoButton: Apply for Grant
 HeroVideoButton: Explore Our Plans
 HeroVideoButtonLink: /schoolPlans
-FlaticonCheckHeroText: Only applicable for schools.
+FlaticonCheckHeroText: only applicable for K - 12 govt. recognized schools.
 # hero section end
 
 #statictics section
@@ -63,7 +64,7 @@ ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the righ
 ActionButtonbelowtext1: Free 50 Credentials
 ActionButtonbelowtext2: Exclusive Support
 g2buttonLink: https://go.certifyme.online/schools
-g2buttontext: Apply for Grant
+g2buttontext: Talk to our Experts
 #G2 section end
 
 # testimonial section

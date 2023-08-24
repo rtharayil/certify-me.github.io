@@ -11,9 +11,9 @@ sitemap.priority: 1
 HeroTitle: Smart Certs <br> When Certificates Turn into Trusted Records
 HeroText: Design, Print, and distribute smart certs with the leading solution for digital certification
 HeroImage: /assets4/images/SmartCerts/online-certificate-generator Image.png
-HeroDemoButton: Apply for Grant
+HeroDemoButton: Order Now
 HeroVideoButton: Explore Our Plans
-HeroVideoButtonLink: /schoolPlans
+HeroVideoButtonLink: /SmartCertPlan&Pricing
 FlaticonCheckHeroText: Only applicable for schools.
 # hero section end
 
@@ -59,7 +59,7 @@ ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the righ
 ActionButtonbelowtext1: Free 50 Credentials
 ActionButtonbelowtext2: Exclusive Support
 g2buttonLink: https://go.certifyme.online/schools
-g2buttontext: Apply for Grant
+g2buttontext: Talk to our Experts
 #G2 section end
 
 # testimonial section
