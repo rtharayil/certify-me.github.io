@@ -11,7 +11,7 @@ sitemap.priority: 1
 pricingLink: '#pricing-1'
 
 # Hero Section 
-HeroTitle: Smart Certs <br> When Certificates Turn into Trusted Records
+HeroTitle: Smart Certs <br> When Printed Certificates Turn into Trusted Verifiable Records 
 HeroText: Design, Print, and distribute smart certs with the leading solution for digital certification
 HeroImage: /assets4/images/SmartCerts/smart-cert (3).png
 HeroDemoButton: Order Now
