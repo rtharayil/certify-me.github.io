@@ -11,10 +11,11 @@ sitemap.priority: 1
 pricingLink: '#pricing-1'
 
 # Hero Section 
-HeroTitle: Smart Certs <br> When Certificates Turn into Trusted Records
+HeroTitle: Smart Certs <br> When Printed Certificates Turn into Trusted Verifiable Records 
 HeroText: Design, Print, and distribute smart certs with the leading solution for digital certification
-HeroImage: /assets4/images/SmartCerts/online-certificate-generator Image.png
+HeroImage: /assets4/images/SmartCerts/smart-cert (3).png
 HeroDemoButton: Order Now
+HeroDemoButtonLink: https://go.certifyme.online/ordernow
 HeroVideoButton: Explore Our Plans
 HeroVideoButtonLink: '#pricing-1'
 #FlaticonCheckHeroText: Only applicable for schools.
@@ -61,7 +62,7 @@ G2Title: Global Leader in Certification Management Solutions
 ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
 ActionButtonbelowtext1: Free 50 Credentials
 ActionButtonbelowtext2: Exclusive Support
-g2buttonLink: https://go.certifyme.online/talk-with-expert
+g2buttonLink: https://go.certifyme.online/talk-to-us-smart
 g2buttontext: Talk to our Experts
 #G2 section end
 
