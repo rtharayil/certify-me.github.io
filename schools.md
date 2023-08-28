@@ -16,7 +16,7 @@ HeroTitle: Create and issue digital certificates in minutes<br><span style="font
 
 HeroText: 'The CertifyMe For Schools Program provides a 90% discount on paid plans. Reward your students by awarding verifiable certificates with the best school certification management solution available in the market today!'
 HeroImage: /assets4/images/schools/smart-cert (2).png
-HeroDemoButton: Apply for Grant
+HeroDemoButton: Enroll My School
 HeroDemoButtonLink: https://go.certifyme.online/schools
 HeroVideoButton: Explore Our Plans
 HeroVideoButtonLink: /schoolPlans
@@ -34,7 +34,7 @@ BoxContentTitle: A Pathway to Trust:Enabling your students with verifiable digit
 BoxContentText: Verifiable digital certificates empower your students with secure records of achievements, grades, and participation. Issued by your institution, these certificates enhance program credibility and promote transparency. Students effortlessly showcase accomplishments, streamlining their educational journey.<br> This benefits educators, ensuring accurate and tamper-proof documentation, ultimately enriching the learning experience.
 
 BoxImage: /assets4/images/schools/This certificate is verified.png
-buttonText: Apply for Grant
+buttonText: Enroll My School
 buttonLink: https://go.certifyme.online/schools
 #feature 1 end
 
@@ -42,19 +42,19 @@ buttonLink: https://go.certifyme.online/schools
 Feature1Image: /assets4/images/schools/send verify.png
 Feature1Title: Send verifiable certificates in one click and celebrate achievements instantly
 Feature1Text: Easily issue digital certificates in bulk with just one click, streamlining administrative tasks for schools. Motivate students and enable educators to effortlessly reward achievements, saving time and enhancing success.
-feature1button: Apply for Grant
+feature1button: Enroll My School
 feature1buttonLink: https://go.certifyme.online/schools
 
 Feature2Image: /assets4/images/schools/design.png
 Feature2Title: Design digital certificates using our certificate designer, providing 100+ smart options tailored for schools.
 Feature2Text: Elevate your school's certificates by incorporating QR codes, customisable features, diverse layouts, integrated signatures, and effortless Canva collaboration. Select from a wide range of 100+ smart options to create standout, personalized certificates that ensure easy verification and authentic touch.
-feature2button: Apply for Grant
+feature2button: Enroll My School
 feature2buttonLink: https://go.certifyme.online/schools
 
 Feature3Image: /assets4/images/schools/Manage.png
 Feature3Title: Efficiently oversee and monitor students' certificates in real time while boosting their active participation.
 Feature3Text: Make managing student certificates a breeze with user-friendly tools. Our platform lets you easily edit, resend, export, and analyze student engagement using advanced analytics. Experience the benefits of real-time certificate management while gaining insights to boost student participation and performance.
-feature3button: Apply for Grant
+feature3button: Enroll My School
 feature3buttonLink: https://go.certifyme.online/schools
 
 #feature 2 section end
