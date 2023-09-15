@@ -8,13 +8,13 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Easy-to-Use Certificate and Badge Management Software for Learning Programs
-HeroText: 'Ranked #1 in Digital Credential Management Software across Education Industry'
+HeroTitle: Safe and Secure Certificate and Badge Management Software for Learning Programs
+HeroText: 'Ranked as Leader in Digital Credential Management Software across Education Industry - G2 , TrustRadius , Capterra' 
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request A Demo
 HeroVideoButton: Watch Video
 HeroVideoButtonLink: https://www.youtube.com/watch?v=TJMwk6qIxSc
-FlaticonCheckHeroText: Free trial, No Credit Card Required.
+FlaticonCheckHeroText: Save ~73g of C02 emission per credential using CertifyMe's Verifiable Badges.
 
 #statictics section
 Institutiontext: Institutions trust <br>CertifyMe
