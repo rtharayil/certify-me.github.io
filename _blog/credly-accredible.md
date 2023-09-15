@@ -65,7 +65,7 @@ Accredible offers a tiered pricing model based on the number of certificates iss
 To help you make an informed decision between Credly and Accredible, let's compare these two platforms across various aspects:
 
 #### 1. Badge/Certificate Customization
-<table style="width:100%">
+<table class="table" style="width:100%">
   <tr>
     <th>Features</th>
     <th>Credly</th>
@@ -91,7 +91,7 @@ To help you make an informed decision between Credly and Accredible, let's compa
 
 #### 2. Verification and Security
 
-<table style="width:100%">
+<table class="table" style="width:100%">
   <tr>
     <th>Features</th>
     <th>Credly</th>
@@ -115,7 +115,7 @@ To help you make an informed decision between Credly and Accredible, let's compa
 </table>
 
 #### 3. Integration
-<table style="width:90%">
+<table class="table" style="width:90%">
   <tr>
     <th>Features</th>
     <th>Credly</th>
@@ -139,7 +139,7 @@ To help you make an informed decision between Credly and Accredible, let's compa
 </table>
 
 #### 4. Analytics
-<table style="width:90%">
+<table class="table" style="width:90%">
   <tr>
     <th>Features</th>
     <th>Credly</th>
@@ -163,7 +163,7 @@ To help you make an informed decision between Credly and Accredible, let's compa
 </table>
 
 #### 5. Ease of Use
-<table style="width:90%">
+<table class="table" style="width:90%">
   <tr>
     <th>Features</th>
     <th>Credly</th>
