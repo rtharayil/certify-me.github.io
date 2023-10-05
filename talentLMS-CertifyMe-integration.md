@@ -1,48 +1,19 @@
 ---
-title: "TalentLMS integration with CertifyMe"
+#title: "TalentLMS integration with CertifyMe"
 
-description: ""
+#description: ""
 
 layout: V4LayoutIntegrations
 
 sitemap.priority: 0.9
 
-# hero section
-HeroTitle: Connect TalentLMS to send certificates
-HeroText: Send certificates and badges by connecting TalentLMS with CertifyMe. Easy to automate creating verifiable certificates and badges for your learning programs.
-HeroButton: Access TalentLMS Integration
-HeroButtonLink: https://zapier.com/apps/talentlms/integrations/certifyme
 
+customText: TalentLMS
+HeroButtonLinkText: talentlms
 # box image
-BoxImage: /assets4/images/Hero Images/Badges.png
-
+BoxImage: /assets4/images/integrations/TalentLMS.png
 #compare section
-compareTitle: TalentLMS and CertifyMe Integration Steps
-## left section
-leftTitle: Access to TalentLMS account
 leftSideLogoLink: https://images.ctfassets.net/eolgt3xbz2ko/4cNmx5mYagorWgaAbk8xJZ/5dab16cc4929f14a53b49afe07b1d793/Talentlms.png?w=225&h=224&q=50&fm=png&fit=pad
-leftText1: Configure TalentLMS & CertifyMe
-leftText2: Pick TalentLMS as trigger
-leftText3: Choose CertifyMe as action
-leftText4: Map the right data
-leftText5: Finish
-## right section
-rightSideLogoLink: https://certifyme.online/assets4/images/Logo/146 (1).png
-rightTitle: Access to CertifyMe account
-rightSideImage: /assets4/images/f_04.png
-
-
-#features-benefits section
-Feature1Image: /assets4/images/Digital Badges/1.png
-Feature1Title: Benefits
-featureText1: Seamless Automation
-featureText2: Quick Setup
-featureText3: Multiple Triggers and Actions 
-featureText4: Enhanced Learner Experience
-featureText5: Real-time Tracking
-featureText6: Verifiable Credentials
-featureText7: Reduced Administrative Burden
-featureText8: Scalability
 
 
 #G2 section

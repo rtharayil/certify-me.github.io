@@ -1,48 +1,19 @@
 ---
-title: "WebinarJam/EventWebinar integration with CertifyMe"
+# title: "WebinarJam/EventWebinar integration with CertifyMe"
 
-description: ""
+# description: ""
 
 layout: V4LayoutIntegrations
 
 sitemap.priority: 0.9
 
-# hero section
-HeroTitle: Connect WebinarJam/EventWebinar to send certificates
-HeroText: Send certificates and badges by connecting WebinarJam/EventWebinar with CertifyMe. Easy to automate creating verifiable certificates and badges for your learning programs.
-HeroButton: Access WebinarJam Integration
-HeroButtonLink: https://zapier.com/apps/webinarjam/integrations/certifyme
 
-# box image
-BoxImage: /assets4/images/Hero Images/Badges.png
-
+customText: WebinarJam/EventWebinar
+HeroButtonLinkText: webinarjam
+BoxImage: /assets4/images/integrations/WebinarJam.png
 #compare section
-compareTitle: WebinarJam/EventWebinar and CertifyMe Integration Steps
-## left section
-leftTitle: Access to WebinarJam account
 leftSideLogoLink: https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/eccafdf3-62ab-455e-b9e8-473dbdb8c5c5.png?auto=format,compress&size=50
-leftText1: Configure WebinarJam/EventWebinar & CertifyMe
-leftText2: Pick WebinarJam/EventWebinar as trigger
-leftText3: Choose CertifyMe as action
-leftText4: Map the right data
-leftText5: Finish
-## right section
-rightSideLogoLink: https://certifyme.online/assets4/images/Logo/146 (1).png
-rightTitle: Access to CertifyMe account
-rightSideImage: /assets4/images/f_04.png
 
-
-#features-benefits section
-Feature1Image: /assets4/images/Digital Badges/1.png
-Feature1Title: Benefits
-featureText1: Seamless Automation
-featureText2: Quick Setup
-featureText3: Multiple Triggers and Actions 
-featureText4: Enhanced Learner Experience
-featureText5: Real-time Tracking
-featureText6: Verifiable Credentials
-featureText7: Reduced Administrative Burden
-featureText8: Scalability
 
 
 #G2 section

@@ -1,48 +1,18 @@
 ---
-title: "Zapier integration with CertifyMe"
+# title: "Zapier integration with CertifyMe"
 
-description: ""
+# description: ""
 
 layout: V4LayoutIntegrations
 
 sitemap.priority: 0.9
 
-# hero section
-HeroTitle: Connect Zapier to send certificates
-HeroText: Send certificates and badges by connecting Zapier with CertifyMe. Easy to automate creating verifiable certificates and badges for your learning programs.
-HeroButton: Access Zapier Integration
-HeroButtonLink: https://zapier.com/apps/zapier/integrations/certifyme
 
-# box image
-BoxImage: /assets4/images/Hero Images/Badges.png
-
+customText: Zapier
+HeroButtonLinkText: zapier
+BoxImage: /assets4/images/integrations/zapier.png
 #compare section
-compareTitle: Zapier and CertifyMe Integration Steps
-## left section
-leftTitle: Access to Zapier account
 leftSideLogoLink: https://cdn.zapier.com/zapier/images/logos/social.png
-leftText1: Configure Zapier & CertifyMe
-leftText2: Pick Zapier as trigger
-leftText3: Choose CertifyMe as action
-leftText4: Map the right data
-leftText5: Finish
-## right section
-rightSideLogoLink: https://certifyme.online/assets4/images/Logo/146 (1).png
-rightTitle: Access to CertifyMe account
-rightSideImage: /assets4/images/f_04.png
-
-
-#features-benefits section
-Feature1Image: /assets4/images/Digital Badges/1.png
-Feature1Title: Benefits
-featureText1: Seamless Automation
-featureText2: Quick Setup
-featureText3: Multiple Triggers and Actions 
-featureText4: Enhanced Learner Experience
-featureText5: Real-time Tracking
-featureText6: Verifiable Credentials
-featureText7: Reduced Administrative Burden
-featureText8: Scalability
 
 
 #G2 section

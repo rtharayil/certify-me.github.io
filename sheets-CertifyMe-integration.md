@@ -1,47 +1,24 @@
 ---
-title: "Google Sheets integration with CertifyMe"
+#title: "Google Sheets integration with CertifyMe"
 
-description: ""
+#description: ""
 
 layout: V4LayoutIntegrations
 
 sitemap.priority: 0.9
 
-# hero section
-HeroTitle: Connect Google Sheets to send certificates
-HeroText: Send certificates and badges by connecting Google Sheets with CertifyMe. Easy to automate creating verifiable certificates and badges for your learning programs.
-HeroButton: Access Google Sheets Integration
-HeroButtonLink: https://zapier.com/apps/google-sheets/integrations/certifyme
+
+
+customText: Google Sheets
+HeroButtonLinkText: google-sheets
 
 # box image
-BoxImage: /assets4/images/Hero Images/Badges.png
+BoxImage: /assets4/images/integrations/GS.png
 
 #compare section
-compareTitle: Google Sheets and CertifyMe Integration Steps
-leftTitle: Access to Google Sheets account
 leftSideLogoLink: https://cdn-icons-png.flaticon.com/512/2913/2913989.png
-leftText1: Configure Google Sheets & CertifyMe
-leftText2: Pick Google Sheets as trigger
-leftText3: Choose CertifyMe as action
-leftText4: Map the right data
-leftText5: Finish
-
-rightSideLogoLink: https://certifyme.online/assets4/images/Logo/146 (1).png
-rightTitle: Access to CertifyMe account
-rightSideImage: /assets4/images/f_04.png
 
 
-#features-benefits section
-Feature1Image: /assets4/images/Digital Badges/1.png
-Feature1Title: Benefits
-featureText1: Seamless Automation
-featureText2: Quick Setup
-featureText3: Multiple Triggers and Actions 
-featureText4: Enhanced Learner Experience
-featureText5: Real-time Tracking
-featureText6: Verifiable Credentials
-featureText7: Reduced Administrative Burden
-featureText8: Scalability
 
 
 #G2 section
