@@ -8,7 +8,7 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Verifiable Certificate and Digtal Badge Management Software for Higher Education  
+HeroTitle: Verifiable Certificate and Digital Badge Management Software for Higher Education  
 HeroText: 'Ranked as Leader in Digital Credential Management Software across Education Industry - G2 , TrustRadius , Capterra' 
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request A Demo
