@@ -1,20 +1,20 @@
 ---
-title: "World's Most Trusted Digital Credential Platform"
+title: "Online Certificate and Badge Maker  - Create & Send Digital Certificates and Badges"
 
-description: "Digital credentials, verifiable badges, and LinkedIn sharable certificates for E-learning and certificate programs."
+description: "CertifyMe is a online certificate and badge making software platform. Easily create, edit, share ,store , renew and verify digital certificates and badges. All-in-one platform for generation certificates and bulk sending emails to recipients. Certificate and Badge maker with user friendly interface, ready-made templates, and delivery emails with Analytics."
 
 layout: V4Layout
 
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Sharable & Verifiable Certificates and Badges for your Learning programs
-HeroText: 'Enable your learners to be your brand ambassadors ' 
+HeroTitle: Online Certificate and Badge making Software Platform 
+HeroText: 'Ranked as leader in online certificate and badge creation Software - G2 , TrustRadius , Capterra' 
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request A Demo
 HeroVideoButton: Watch Video
 HeroVideoButtonLink: https://www.youtube.com/watch?v=TJMwk6qIxSc
-FlaticonCheckHeroText:  A single shared credential clocks ~1.5K impressions in Linkedin.
+FlaticonCheckHeroText:  Our online Certificate and Badge making Software platform has everything you need to generate certificates. A certificate builder, templates, emails, security, analytics , learning paths , custom domain etc 
 
 #statictics section
 Institutiontext: Institutions trust <br>CertifyMe
