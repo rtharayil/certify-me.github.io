@@ -8,8 +8,8 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Sharable & Verifiable Certificates and Badges for your Learning programs
-HeroText: 'Enable your learners to be your brand ambassadors ' 
+HeroTitle: 'Unlock organic Growth! <br> Sharable Certificates and Badges for your Courses'
+HeroText: 'Enable your learners to be your brand ambassadors by awarding them social media sharable badges and certifications ' 
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request A Demo
 HeroVideoButton: Watch Video
