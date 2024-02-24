@@ -1,6 +1,11 @@
+---
+layout: null
+
+---
+
 # Group 1
 User-agent: *
 Disallow: /preprod.html
 Disallow: /samples.html
 
-Sitemap: https://certifyme.online/sitemap.xml
+Sitemap: https://{{site.headurl}}/sitemap.xml
