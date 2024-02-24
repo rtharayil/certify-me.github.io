@@ -1,5 +1,5 @@
 ---
-title: "Digital Credentials: Verifiable certificate & badge software"
+title: "Verifiable certificate & badge software"
 
 description: "Create & Issue digital certificates and badges with CertifyMe and feel confident that you’ve got the easiest technology and the best support in the industry."
 
@@ -8,13 +8,13 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Verifiable Certificate and Digital Badge Management Software for Higher Education  
-HeroText: 'Ranked as Leader in Digital Credential Management Software across Education Industry - G2 , TrustRadius , Capterra' 
+HeroTitle: Sharable & Verifiable Certificates and Badges for your Learning programs
+HeroText: 'Enable your learners to be your brand ambassadors ' 
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request A Demo
 HeroVideoButton: Watch Video
 HeroVideoButtonLink: https://www.youtube.com/watch?v=TJMwk6qIxSc
-FlaticonCheckHeroText: Save ~73g of C02 emission per credential using CertifyMe's Verifiable Badges.
+FlaticonCheckHeroText:  A single shared credential clocks ~1.5K impressions in Linkedin.
 
 #statictics section
 Institutiontext: Institutions trust <br>CertifyMe

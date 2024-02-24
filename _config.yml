@@ -473,7 +473,7 @@ email: info@quadralogics.com
 description: CertifyMe.Online is an end-to-end solution for creating, issuing, and managing your Digital Credentials
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
-headurl: 'certifyme.online'
+headurl: 'certifyme.org'
 company: QuadraLogics
 #Heading 
 Head1: Certify Me.Online 
