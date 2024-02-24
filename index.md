@@ -1,7 +1,7 @@
 ---
-title: "Verifiable certificate & badge software"
+title: "World's Most Trusted Digital Credential Platform"
 
-description: "Create & Issue digital certificates and badges with CertifyMe and feel confident that you’ve got the easiest technology and the best support in the industry."
+description: "Digital credentials, verifiable badges, and LinkedIn sharable certificates for E-learning and certificate programs."
 
 layout: V4Layout
 
@@ -22,7 +22,7 @@ Usertext: Users across 144<br>Countries
 Credentialtext: Digital credentials issued every month
 
 #G2 section
-G2Title: Global Leader in Digital Certificates & Badge Management
+G2Title: World's Most Trusted Digital Credential Platform
 ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
 ActionButtonbelowtext1: Free 50 Credentials
 ActionButtonbelowtext2: Exclusive Support
