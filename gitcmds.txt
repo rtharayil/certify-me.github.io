@@ -1,0 +1,14 @@
+
+featch remotre br ---
+git fetch
+
+list remote br---
+ branches git branch -v -a
+
+ git checkout 
+
+
+to merge master to branch 
+ git merge master
+
+
