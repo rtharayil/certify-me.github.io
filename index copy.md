@@ -8,10 +8,8 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-
 HeroTitle: Online Certificate and Badge making Software Platform 
 HeroText: 'Ranked as leader in online certificate and badge creation Software - G2 , TrustRadius , Capterra' 
-
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request A Demo
 HeroVideoButton: Watch Video
