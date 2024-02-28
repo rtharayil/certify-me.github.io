@@ -1,22 +1,10 @@
 collections:
     devopsma:
-      output: true
-    prozenics:
-      output: true
-    agilencr2020:
-      output: true
-    samples:
-      output: true
-    ATAGTR2020:
-      output: true
-    AACONF:
-      output: true
-    EDU:
-      output: true
-    RSGK:
-      output: true
-    CSIT:
-      output: true
+      output: true 
+
+
+
+
     blog:
       output: true
     awards:
@@ -26,25 +14,7 @@ collections:
 
  
 defaults:
-  - 
-    scope: 
-      path: ""
-      type: agilencr2020
-    values: 
-      issuedBy: Agile NCR 2020 Program Committee
-      issuedInstitute: www.agilencr.org
-      dateOfIssue: 29 November 2020
-      program: "#AgileNCR2020 - AgileNCR 2020"
-      advCTAName: Listen Now
-      advCTALink: https://youtu.be/ZwPNe2vWXfE
-      CTAText: Listen, Share and Subscribe to AgileCast
-      advBGImagelink: https://certifyme.online/img/cert/agilencr2020/banner.jpeg 
-      brandLogo: https://certifyme.online/img/cert/agilencr2020/logo.jpg
-      brandMessage: AgileCast ,India's premiere podcast on Agile led technologies. Sharing knowledge is in Xebia's DNA and staying true to this value, practitioners from XACT (Xebia Agile Consulting and Transformation) share their experience and knowledge on current and trending topics related to Agile on AgileCast. A podcast dedicated to science and practice of Agile
-      contactPh_number: nul
-      contactEmail: info@xebia.com
-      contactCompanyWebSiteLink: https://xebia.com/
-      text: This certificate is issued for participating in AgileNCR 2020 conference. AgileNCR is an annual Agile software development conference organized by Xebia and Agile enthusiasts of the NCR region.
+  
 
   - 
     scope: 
@@ -154,317 +124,13 @@ defaults:
       program: CloudFormation module in DevOps Master Architect Workshop
       text: This badge is issued to recognise the awardee for successfully completing all the requirements for the CloudFormation Module in DevOps Master Architect Workshop, a comprehensive programme spanning 72 hrs/ 3 months.
 
-  - 
-    scope: 
-      path: "" 
-      type: ATAGTR2020
-    values: 
-      issuedBy: "#ATAGTR2020, Program Committee"
-      issuedInstitute: AGILE TESTING ALLIANCE
-      dateOfIssue: 14-Dec-2020
-      program: "#ATAGTR2020 - GLOBAL TESTING RETREAT"
-      advCTAName: Know more
-      advCTALink: https://gtr.agiletestingalliance.org/
-      CTAText: " #ATAGTR2020"
-      advBGImagelink: https://certifyme.online/img/cert/sample/baner.jpg
-      brandLogo: https://certifyme.online/img/cert/sample/logo.png
-      brandMessage: "#ATAGTR2020 was the 5th Edition of Global Testing Retreat, annual flagship conference by Agile Testing Alliance."
-      contactPh_number: +91 8433919049
-      contactEmail: ATAsupport@AgileTestingAlliance.org
-      contactCompanyWebSiteLink: https://gtr.agiletestingalliance.org/
-      text: "#ATAGTR2020 was the 5th Edition of Global Testing Retreat, annual flagship conference by Agile Testing Alliance. The conference was scheduled on 12th and 13th December 2020. It was a 2 Day event with 80 Speakers with more than 40 Interactive sessions and Talks and Live Labs"
-      certificatePath: https://certifyme.online/img/cert/sample/atrBadge.png
-  - 
-    scope: 
-      path: "_ATAGTR2020/volunteer" 
-      type: ATAGTR2020
-    values: 
-      certificatePath: https://certifyme.online/img/cert/badge/ATA_vol_Badge.png
-
-  - 
-    scope: 
-      path: "_ATAGTR2020/jury" 
-      type: ATAGTR2020
-    values: 
-      certificatePath: https://certifyme.online/ATAGTR2020/jury/ATAjuri.png
-      dateOfIssue: 24-Nov-2020
-      text: "#ATAGTR2020 is continuing the #AutomATAhon tradition that was started for the first time in 2017. This is the 4th edition of the competition. Meant for testing community to participate in an automation challenge (Hackathon)
-      In-fact the competition is meant not only for the testers but all the testing organizations too"
-
-  - 
-    scope: 
-      path: "" 
-      type: AACONF
-    values: 
-      issuedBy: Sam Zawadi
-      issuedInstitute: Agnostic Agile
-      dateOfIssue: 20-Nov-2020
-      program: "AACONF 2020 (Agnostic Agile Conference 2020)"
-      advCTAName: Register Now
-      advCTALink: https://agnosticagile.org/
-      CTAText: "Be a part of #AAConf"
-      advBGImagelink: https://certifyme.online/img/cert/badge/AAConf2020BadgeBanner.jpg
-      brandLogo: https://agnosticagile.org/imgs/Logo@2x.png
-      brandMessage: "Join #AAConf, a global, online conference that will run through Asia Pacific, EMEA and the Americas"
-      contactPh_number: nul
-      contactEmail: hello@agnosticagile.org
-      contactCompanyWebSiteLink: nul
-      text: "Although times may be uncertain, one thing will remain true - there is power among people and there is power in an Agnostic Agile Mindset.
-      Agnostic Agile is launching #AAConf, a global, online conference that will run through Asia Pacific, EMEA and the Americas. The theme for #AAConf 2020 is Business Agility."
-      certificatePath: https://certifyme.online/img/cert/badge/AAConf2020Badge.png
-  - 
-    scope: 
-      path: ""
-      type: EDU
-    values: 
-      issuedBy: Program Committee
-      
-
-  - 
-    scope: 
-      path: "_EDU/SRM/IEC20"
-      type: EDU
-    values: 
-      issuedBy: Rohit, Agarwal
-      issuedInstitute: SRM Indian Energy Conference
-      dateOfIssue: 20-Nov-2020
-      program: SRM IEC 2020
-      advCTAName: Learn More
-      advCTALink: https://certifyme.online/
-      CTAText: Drive 10X more relevant traffic to your events page 
-      advBGImagelink: https://certifyme.online/img/whyCM.png
-      brandLogo: https://certifyme.online/img/logo.png
-      brandMessage: Certify Me is a "Trusted Digital Certificate Publishing Platform" . We empower large event producers to generate and publish digitized certificates/Badges for conferences, sports events, training, etc . Our mobile-friendly , verifiable , social-media complaint certificate web pages enable event visibility and reach.
-      contactPh_number: +91-8334011404
-      contactEmail: iecsrm@gmail.com
-      contactCompanyWebSiteLink: www.srmiec.co.in
-      text: SRM Indian Energy Conference is a platform that works on the principles and guidlines of a Model United Nations. The 5th edition of SRMIEC will be conducted on the 20th-22nd November 2020 to involve, evolve and aggregate the ideas of the youth. A conference that exists to assist you in voicing your opinions to the world. A stage that provides you with the opportunity to meet like-minded individuals who have the passion to formulate actions towards a better and healthier future. SRM IEC is a conference where policies envisaging an efficient future are going to be drafted, a place where the foundations for a brighter tomorrow will be laid.
-      certificatePath: https://certifyme.online/EDU/SRM/IEC20/SRM.jpeg
-
-  - 
-    scope: 
-      path: "_EDU/JIM/EAbhyudaya"
-      type: EDU
-    values: 
-      issuedBy: "Dr. Daneshwar Sharma (Dean of Student Affairs)"
-      issuedInstitute: "Jaipuria Institute of Management, Jaipur"
-      dateOfIssue: 05-Dec-2020
-      program: "E-Abhyudaya"
-      advCTAName: Know More
-      advCTALink: https://www.instagram.com/ecc_jaipuria/
-      CTAText: E-Abhyudaya, Jaipuria Institute of Management , Jaipur
-      advBGImagelink: https://certifyme.online/EDU/JIM/EAbhyudaya/img/banner.jpg
-      brandLogo: https://certifyme.online/EDU/JIM/EAbhyudaya/img/logo.jpeg
-      brandMessage: "With 13 successful editions under it's belt, Jaipuria Institute of Management, Jaipur, present to you, its annual corporate fiesta 'ABHYUDAYA 2020', to be held from 11 – 12 December 2020, for the first time in Online Mode."
-      contactPh_number: nul
-      contactEmail: nul
-      contactCompanyWebSiteLink: 	https://www.jaipuria.ac.in/abhyudaya/
-      text: "An expression for excellence, Abhyudaya is a platform and opportunity for individuals to transcend the ordinary and ride on the waves of creativity and knowledge. This E-fest has a plethora of carefully curated events, all in line with this year’s theme, which embraces the blend of theoretical and applied knowledge, a consistent demand of the contemporary world. Our goal is to bring bright minds, from all fields of life, together to ignite minds, foster learning and to ultimately kickstart a thought process.We are awarding this badge to applaud his/ her consistent hard work and never dying spirit."
-      certificatePath: https://certifyme.online/EDU/JIM/EAbhyudaya/img/badge.png
-  - 
-    scope: 
-      path: "_EDU/JIM/EAbhyudaya/Jury"
-      type: EDU
-    values: 
-      text: "An expression for excellence, Abhyudaya is a platform and opportunity for individuals to transcend the ordinary and ride on the waves of creativity and knowledge. This E-fest has a plethora of carefully curated events, all in line with this year’s theme, which embraces the blend of theoretical and applied knowledge, a consistent demand of the contemporary world. Our goal is to bring bright minds, from all fields of life, together to ignite minds, foster learning and to ultimately kickstart a thought process."
-      certificatePath: https://certifyme.online/EDU/JIM/EAbhyudaya/img/Jury.png
-  - 
-    scope: 
-      path: "_EDU/JIM/EAbhyudaya/SeniorCoordinators"
-      type: EDU
-    values: 
-      text: "An expression for excellence, Abhyudaya is a platform and opportunity for individuals to transcend the ordinary and ride on the waves of creativity and knowledge. This E-fest has a plethora of carefully curated events, all in line with this year’s theme, which embraces the blend of theoretical and applied knowledge, a consistent demand of the contemporary world. Our goal is to bring bright minds, from all fields of life, together to ignite minds, foster learning and to ultimately kickstart a thought process. We are awarding this badge to applaud his/ her consistent hard work"
-      certificatePath: https://certifyme.online/EDU/JIM/EAbhyudaya/img/Senior_Coordinator.png
-  - 
-    scope: 
-      path: "_EDU/JIM/EAbhyudaya/Sponsor"
-      type: EDU
-    values: 
-      text: "An expression for excellence, Abhyudaya is a platform and opportunity for individuals to transcend the ordinary and ride on the waves of creativity and knowledge. This E-fest has a plethora of carefully curated events, all in line with this year’s theme, which embraces the blend of theoretical and applied knowledge, a consistent demand of the contemporary world. Our goal is to bring bright minds, from all fields of life, together to ignite minds, foster learning and to ultimately kickstart a thought process.We are awarding this badge to express our gratitude for being the sponsor."
-      certificatePath: https://certifyme.online/EDU/JIM/EAbhyudaya/img/Sponsor.png
 
 
-  - 
-    scope: 
-      path: "_EDU/IITG/UDGAM21"
-      type: EDU
-    values: 
-      issuedBy: "UDGAM 2021, TEAM"
-      issuedInstitute: "E-CELL, IIT GUWAHATI"
-      dateOfIssue: 17-Dec-2020
-      program: "UDGAM 2021"
-      advCTAName: Register Now
-      advCTALink: https://dare2compete.com/f/udgam-2021-the-annual-entrepreneurship-summit-of-iit-guwahati-indian-institute-of-technology-iit-guwahati-8349
-      CTAText: "UDGAM 2021"
-      advBGImagelink: https://certifyme.online/EDU/IITG/UDGAM21/img/banner.jpg
-      brandLogo: https://certifyme.online/EDU/IITG/UDGAM21/img/logo.png
-      brandMessage: "Welcome to UDGAM 2021. With a whole range of events lined up to foster innovation and a questioning mindset, along with the mammoth participation of hundreds of colleges and schools from all over the Nation, it is a summit that anyone would not want to miss. Our event is live on Dare2compete. To register and for more details, click on the Register Now button below:"
-      contactPh_number: 7518002500
-      contactEmail: edc@iitg.ac.in
-      contactCompanyWebSiteLink: 	https://udgam-iitg.in/
-      text: "UDGAM is the annual entrepreneurship event of IIT Guwahati where people interested in entrepreneurship meet, discuss, explore, share, debate, and have fun to spread the idea and spirit of entrepreneurship across the country and ignite the flame within. UDGAM is the flagship event of the Entrepreneurial Development Cell, IIT Guwahati. It was conceptualized to develop and spread the spirit of entrepreneurship among India's youth, thus earning itself the reputation of being the largest E-Summit in the north-east. This badge is issued to UDGAM Campus Ambassadors to feel that they are also part of the UDGAM 2021 Team."
-      certificatePath: https://certifyme.online/EDU/IITG/UDGAM21/img/badge.png
-  - 
-    scope: 
-      path:  ""
-      type: RSGK
-    values: 
-      issuedBy: nul
-      issuedInstitute: ACusBus Consulting Solutions
-      dateOfIssue: 01-Nov-2020
-      program: REGIONAL SCRUM GATHERING KOLKATA
-      advCTAName: Join my Session
-      advCTALink: https://www.townscript.com/e/rsg-kolkata-2020
-      CTAText: Join us at Regional Scrum Gathering Kolkata 2021
-      advBGImagelink: https://certifyme.online/img/cert/RSGK/Banner.jpg
-      brandLogo: https://certifyme.online/img/cert/RSGK/logo.png
-      brandMessage: 	Regional Scrum Gathering Kolkata 2021
-      contactPh_number: nul
-      contactEmail: support@acusbus.com
-      contactCompanyWebSiteLink: https://acusbus.com/
-      text: Regional Scrum Gatherings is an opportunity to connect with like-minded agile and Scrum practitioners, trainers, coaches, and enthusiasts. Hear amazing keynote speakers, participate in Coaching Clinics, CSP Lounges, Networking Sessions and more. And one also earns Scrum Education Units (SEUs) for attending. Regional Scrum Gatherings are organized and hosted by local/regional agilists, so each one is truly a unique and valuable experience! And we are thankful to our distinguished speakers - who have kindly agreed to share their valuable time and experience with the event participants. This certificate/badge is a small token of appreciation towards their kind gesture.
+
+
+  
     
-  - 
-    scope: 
-      path: ""
-      type: CSIT
-    values: 
-      issuedBy: Program Committee
-      
 
-  - 
-    scope: 
-      path: "_CSIT/theTestTribe/TestFlix"
-      type: CSIT
-    values: 
-      layout : sampleBadge 
-      certificatePath: https://certifyme.online/img/cert/sample/TFwhite.png
-      issuedBy: "#TESTFLIX PROGRAM COMMITTEE"
-      issuedInstitute: THE TEST TRIBE
-      dateOfIssue: 20-Nov-2020
-      program: TESTFLIX - GLOBAL SOFTWARE TESTING BINGE
-      advCTAName: Register for FREE
-      advCTALink: https://www.thetesttribe.com/testflix/
-      CTAText: Be a part of TestFlix !
-      advBGImagelink: https://certifyme.online/img/cert/sample/TestFlixBanner.png
-      brandLogo: https://certifyme.online/img/cert/sample/TheTestTribe-Logo.png
-      brandMessage: "Don't miss to be a part of #TestFlix the biggest global software testing binge featuring 100+ curated atomic talks, 400+ takeaways and an opportunity to network with thousands of testers across the globe."
-      contactPh_number: nul
-      contactEmail: contact@thetesttribe.com
-      contactCompanyWebSiteLink: https://www.thetesttribe.com/
-      text: With TestFlix (bit.ly/TestFlix) we take the opportunity to get Software Testers from across the globe on one big virtual stage where speakers from maximum possible countries will share their knowledge through pre-recorded Atomic Talks. We will be hosting 100+ Speakers from 40+ Countries and provide their work with a global audience in the form of thousands of Testers while the audience experiences an amazing Software Testing Binge watch that goes for 15 hours and covers several time zones. Sit back, relax, and binge watch as we present to you the TestFlix.
-
-  - 
-    scope: 
-      path: "_CSIT/SYNAPSE/SYNAPSEQA2020"
-      type: CSIT
-    values: 
-      layout : sampleBadge 
-      certificatePath: https://certifyme.online/CSIT/SYNAPSE/SYNAPSEQA2020/ReviewerBadge.png
-      issuedBy: "SUPER READS @ 12.12, PROGRAM COMMITTEE"
-      issuedInstitute: SYNAPSE QA
-      dateOfIssue: 02-Dec-2020
-      program: "SUPER READS @ 12.12"
-      advCTAName: Read More
-      advCTALink: http://bit.ly/superreads-lounge
-      CTAText: SUPER READS @ 12.12
-      advBGImagelink: https://certifyme.online/CSIT/SYNAPSE/SYNAPSEQA2020/banner.png
-      brandLogo: https://certifyme.online/CSIT/SYNAPSE/SYNAPSEQA2020/logo.png
-      brandMessage: "SYNAPSE QA is a community-driven co-writing blog space that aims to support and inspire testers by bridging the gaps between knowns and unknowns!There are many rich voices, ideas & experiences among the community but they are usually lost somewhere. SYNAPSE QA aims to provide that platform for FREE, where people from the community will be providing feedback on how you could improve your writing skills!And Together, We LEARN, SHARE & GROW!!!"
-      contactPh_number: +60149561810
-      contactEmail: contact@synapse-qa.com
-      contactCompanyWebSiteLink: https://synapse-qa.com
-      text: "SUPER READS @ 12.12 is first of a kind Global Write-A-Thon which launches 12 best articles from 12 different authors simultaneously on 12.12 to recognise talented writers in the community. With this we aim to provide a chance to improve & encourage writing skills alongside opening an opportunity in global scene"
-  - 
-    scope: 
-      path: "_CSIT/SYNAPSE/SYNAPSEQA2020/award"
-      type: CSIT
-    values: 
-      dateOfIssue: 12-Dec-2020
-
-  - 
-    scope: 
-      path: "_CSIT/clavent/testfest"
-      type: CSIT
-    values:   
-      
-      issuedBy: "TestFest, Program Committee"
-      issuedInstitute: Clavent Technologies Pvt. Ltd.
-      dateOfIssue: 10-Dec-2020
-      program: "Innominds presents TestFest USA"
-      advCTAName: Register Now
-      advCTALink: https://www.clavent.com/testfest-usa
-      CTAText: TestFest USA
-      advBGImagelink: https://certifyme.online/CSIT/clavent/testfest/img/award_banner.png
-      brandLogo: https://certifyme.online/CSIT/clavent/testfest/img/Clavent.jpeg
-      brandMessage: "TestFest - Test Automation Fest"
-      contactPh_number: nul
-      contactEmail: contact@clavent.com
-      contactCompanyWebSiteLink: https://www.clavent.com/testfest-usa
-      text: "This badge credential is issued as an appreciation and recognition for being a speaker at #thetestfest.
-      TestFest is a series of mini Test Automation conferences which will virtually be hosted in more than 8 countries with 8 hours of live amazing sessions distributed over 2 days.The TestFest is a gathering of hundreds of Testing leaders and innovators discussing the future of Test Automation to be held firstly in the USA on the 10th & 11th of December, followed by 7 other countries across the world.So join us to network with thought leaders, collaborate with your peers and build your network in a beautiful virtual atmosphere investing just 4 hours from your schedule each day."
-          
-      
-  - 
-    scope: 
-      path: "_CSIT/CMeO"
-      type: CSIT 
-    values: 
-      issuedBy: Ranjith Tharayil
-      issuedInstitute: CertifyMe.online
-      dateOfIssue: 31-Dec-2020
-      program: Certificate of Appreciation
-      advCTAName: Learn More
-      advCTALink: https://certifyme.online/
-      CTAText: Drive 10X more relevant traffic to your events page 
-      advBGImagelink: https://certifyme.online/img/whyCM.png
-      brandLogo: https://certifyme.online/img/logo.png
-      brandMessage: Certify Me is a "Trusted Digital Certificate Publishing Platform" . We empower large event producers to generate and publish digitized certificates/Badges for conferences, sports events, training, etc . Our mobile-friendly , verifiable , social-media complaint certificate web pages enable event visibility and reach.
-      contactPh_number: 
-      contactEmail: info@certifyme.online
-      contactCompanyWebSiteLink: www.certifyme.online
-      text: In grateful recognition for your enduring commitment and exceptional dedication
-
-    
-  - 
-    scope: 
-      path: "_CSIT/PMI/gameAThon2021"
-      type: CSIT 
-    values: 
-      issuedBy: "	PMI, South Asia"
-      issuedInstitute: Project Management Institute
-      dateOfIssue: 15-Jan-2021
-      program: PMI Project Management - Game-A-Thon
-      advCTAName: Click Here
-      advCTALink: https://www.pmi.org/certifications/certified-associate-capm
-      CTAText: For more details about CAPM certifications 
-      advBGImagelink: https://certifyme.online/CSIT/PMI/img/banner.png
-      brandLogo: https://www.pmi.org/-/media/pmi/other-images/logos/pmi_logo_ogshare.png
-      brandMessage: Project management is among the top skills that employers seek today from young career professionals like you. The CAPM® certification from Project Management Institute, lays the foundation for a lucrative project management career.
-      contactPh_number: +91 124 4636 250
-      contactEmail: customercare.india@pmi.org
-      contactCompanyWebSiteLink: https://www.pmi.org/
-      text: The Project Management GAME-A-THON is a contest to promote project management knowledge amongst students in an interactive engaging way. The game that is created through this contest is expected to augment existing methods of learning Project Management such as lectures, study materials, workshops and on the job training.
-         
-  - 
-    scope: 
-      path: "_CSIT/FRUCT2021"
-      type: CSIT 
-    values: 
-      issuedBy: "	Conference Chair"
-      issuedInstitute: FRUCT Association
-      dateOfIssue: 27-Jan-2021
-      program: 28th Conference of the Open Innovations Association FRUCT
-      advCTAName: Download PDF
-      advCTALink: https://fruct.org/sites/default/files/files/FRUCT29_CFP.pdf
-      CTAText:  CALL FOR PARTICIPATION   
-      advBGImagelink: https://www.eurodiaconia.org/wordpress/wp-content/uploads/2016/03/web-cards-01.jpg
-      brandLogo: https://fruct.org/sites/all/themes/fruct/images/fruct.png
-      brandMessage: The 29th IEEE Conference of the Open Innovations Association FRUCT is co-organized by FRUCT Association, Tampere University and IEEE Finland Section. The conference will be held in Tampere (Finland) on 12-14 May 2021.
-      contactPh_number: 
-      contactEmail: info@fruct.org
-      contactCompanyWebSiteLink: https://fruct.org/
-      text: FRUCT is a large Pan-European cooperation framework that promotes open innovations of academia and industry. FRUCT conference is a high-quality scientific event for meeting academia and business people and setting projects. The average conference is attended by over 150 participants representing 30+ member organizations and guests from other organizations. Participants comes from Russia, Finland, Italy, UK, Denmark, India, and other countries and industry is primary represented by Dell EMC, Nokia, MariaDB, Intel, Jolla, Open Mobile Platform, Skolkovo, etc.
       
       
       # Site settings
@@ -473,7 +139,11 @@ email: info@quadralogics.com
 description: CertifyMe.Online is an end-to-end solution for creating, issuing, and managing your Digital Credentials
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
+<<<<<<< HEAD
 headurl: 'certifyme.cc'
+=======
+headurl: 'certifyme.org'
+>>>>>>> Certifyme.org
 company: QuadraLogics
 #Heading 
 Head1: Certify Me.Online 

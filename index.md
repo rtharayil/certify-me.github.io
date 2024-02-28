@@ -1,20 +1,30 @@
 ---
+<<<<<<< HEAD
 title: "Blockchain enabled verifiable certificates and badges "
 
 description: "Blockchain-enabled verifiable certificates and badges for Associations and Higher Education "
+=======
+title: "Sharable and Verifiable Certificates"
+
+description: "Digital credentials, verifiable badges, and LinkedIn sharable certificates for E-learning and certificate programs. Unlock Growth! Enable your learners to be your brand ambassadors by awarding them social media sharable badges and certifications"
+>>>>>>> Certifyme.org
 
 layout: V4Layout
 
 sitemap.priority: 1
 
 # hero section 
+
 HeroTitle: Blockchain-enabled verifiable certificates and badges for Associations and Education Institutions   
 HeroText: 'Ranked as #1 in Blockchain enabled Digital Credential Management Software - G2 , TrustRadius , Capterra' 
+
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request A Demo
 HeroVideoButton: Watch Video
 HeroVideoButtonLink: https://www.youtube.com/watch?v=TJMwk6qIxSc
+
 FlaticonCheckHeroText: Our Blockchain-enabled certificates are secure, immutable, and traceable.
+
 
 #statictics section
 Institutiontext: Institutions trust <br>CertifyMe
@@ -22,7 +32,9 @@ Usertext: Users across 144<br>Countries
 Credentialtext: Digital credentials issued every month
 
 #G2 section
+
 G2Title: Global Leader in Blockchain enabled verifiable certificates and badges
+
 ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
 ActionButtonbelowtext1: Free 50 Credentials
 ActionButtonbelowtext2: Exclusive Support
