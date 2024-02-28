@@ -1,13 +1,10 @@
 ---
-<<<<<<< HEAD
+
 title: "Blockchain enabled verifiable certificates and badges "
 
 description: "Blockchain-enabled verifiable certificates and badges for Associations and Higher Education "
-=======
-title: "Sharable and Verifiable Certificates"
 
-description: "Digital credentials, verifiable badges, and LinkedIn sharable certificates for E-learning and certificate programs. Unlock Growth! Enable your learners to be your brand ambassadors by awarding them social media sharable badges and certifications"
->>>>>>> Certifyme.org
+
 
 layout: V4Layout
 
@@ -64,7 +61,7 @@ IndustryText4: <b>Associations</b> - Drive revenue growth and attract members or
 # blog section
 BlogSectionTitle: Explore Our Resources!
 BlogSectionText: Access our Extensive Resource Library and Elevate Your Digital Credential Journey.
-
+<<<<<<< HEAD
 #banner section
 Banner1: 2024 Edition
 BannerTitle1: Zero to One
