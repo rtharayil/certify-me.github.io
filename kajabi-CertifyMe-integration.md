@@ -13,7 +13,7 @@ HeroButtonLinkText: kajabi
 # box image
 BoxImage: /assets4/images/integrations/Kajabi.png
 #compare section
-leftSideLogoLink: https://attractzen.com/wp-content/uploads/2021/08/kajabi-logo-circle.png
+leftSideLogoLink: https://www.learningrevolution.net/wp-content/uploads/kajabi-logo-icon-circle.png
 
 
 #G2 section
