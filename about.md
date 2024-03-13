@@ -2,6 +2,6 @@
 layout: redirected
 sitemap: false
 permalink: /about
-redirect_to:  /#about
+redirect_to:  /AboutUs
 ---
 
