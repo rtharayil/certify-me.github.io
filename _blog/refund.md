@@ -1,6 +1,6 @@
 ---
 layout: redirected
 sitemap: false
-permalink: /refund
+permalink: /blog/refund
 redirect_to:  /Refundpolicy
 ---
