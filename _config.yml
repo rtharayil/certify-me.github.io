@@ -5,6 +5,8 @@ collections:
       output: true
     awards:
       output: true
+    integrations:
+      output: true
     
 
 
