@@ -25,7 +25,7 @@ sitemap:
       {% if page.sitemap.priority %}
         <priority>{{ page.sitemap.priority }}</priority>
       {% else %}
-        <priority>0.6</priority>
+        <priority>0.8</priority>
       {% endif %}
     </url>
     {% endunless %}
@@ -50,10 +50,36 @@ sitemap:
       {% if page.sitemap.priority %}
         <priority>{{ page.sitemap.priority }}</priority>
       {% else %}
-        <priority>0.4</priority>
+        <priority>0.6</priority>
       {% endif %}
     </url>
     {% endunless %}
+  {% endfor %}
+
+
+  {% for page in site.integrations %}
+    
+    <url>
+      <loc>https://certifyme.online{{ page.url  }}</loc>
+      {% if page.sitemap.lastmod %}
+        <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+      {% elsif page.date %}
+        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      {% if page.sitemap.changefreq %}
+        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
+      {% else %}
+        <changefreq>monthly</changefreq>
+      {% endif %}
+      {% if page.sitemap.priority %}
+        <priority>{{ page.sitemap.priority }}</priority>
+      {% else %}
+        <priority>0.3</priority>
+      {% endif %}
+    </url>
+    
   {% endfor %}
 
   {% for page in site.awards %}
@@ -75,7 +101,7 @@ sitemap:
       {% if page.sitemap.priority %}
         <priority>{{ page.sitemap.priority }}</priority>
       {% else %}
-        <priority>0.4</priority>
+        <priority>0.2</priority>
       {% endif %}
     </url>
     
