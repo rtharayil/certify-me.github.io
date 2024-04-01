@@ -1,6 +1,6 @@
 ---
-title: "Certifier Alternative"
-description: "A different solution for issuing and managing digital credentials, such as badges or certifications, with features and functionality distinct from certifier's offerings."
+title: "Case Studies"
+description: ""
 
 layout: V4LayoutCaseStudies
 
