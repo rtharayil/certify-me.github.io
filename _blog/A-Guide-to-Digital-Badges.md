@@ -128,7 +128,7 @@ Digital badges positively dominate branding & marketing strategies of issuing or
 
 CertifyMe is a new-age digital credentialing platform that delivers digital certificates, open badges, and micro-credentials. You can check their credentialing plans <a href="https://certifyme.online/#pricing">here</a> and collaborate with them for a streamlined certification process.
 
-<a href="https://go.certifyme.online/talk-with-expert?utm_source=google&utm_medium=solutions&utm_campaign=talk+to+us">Talk to the experts</a> of CertifyMe or you can check the <a href="https://go.certifyme.online/request-demo">demo</a> to gear up a foolproof credentialing solution!
+<a href="https://info.certifyme.online/talk-with-expert?utm_source=google&utm_medium=solutions&utm_campaign=talk+to+us">Talk to the experts</a> of CertifyMe or you can check the <a href="https://info.certifyme.online/request-demo">demo</a> to gear up a foolproof credentialing solution!
 
 
 

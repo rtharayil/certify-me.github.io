@@ -7,8 +7,8 @@ layout: V4LayoutInnerpages
 
 sitemap.priority : 0.9
 
-talktoexpertlink: "https://go.certifyme.online/talk-with-expert"
-talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
+talktoexpertlink: "https://info.certifyme.online/talk-with-expert"
+talkToOurExpertLink: "https://info.certifyme.online/talk-with-expert"
 
 HeroImg: 
 HeroTitle: Prevent Accounts Forgery:Safeguard 
@@ -18,7 +18,7 @@ HeroText: Issue verifiable bank statements, insurance credentials, and invoices 
 
 Feature1Image: /assets3/Image3/10.png
 Feature1Title: Open Source Verifiable Bank Statements
-Feature1Text: Ensure streamlined management of bank statements via our digital credential management software, CertifyMe. Our platform transforms the process of statement generation and distribution by automating it and replacing traditional, flawed documents with accurate, up-to-date statements for your customers. The secure documentation system also allows you to store, and access past statements, making it easy to track financial history and resolve any discrepancies. Check <a href="https://go.certifyme.online/request-demo">how we can simplify</a> your banking and finance processes.
+Feature1Text: Ensure streamlined management of bank statements via our digital credential management software, CertifyMe. Our platform transforms the process of statement generation and distribution by automating it and replacing traditional, flawed documents with accurate, up-to-date statements for your customers. The secure documentation system also allows you to store, and access past statements, making it easy to track financial history and resolve any discrepancies. Check <a href="https://info.certifyme.online/request-demo">how we can simplify</a> your banking and finance processes.
 
 
 
