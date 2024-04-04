@@ -6,9 +6,9 @@ description: "Immutable documents are documents that cannot be changed once they
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
-talktoexpertlink: "https://go.certifyme.online/talk-with-expert?utm_source=verifiable-documents&utm_medium=hero&utm_campaign=Talk+to+the+expert"
+talktoexpertlink: "https://info.certifyme.online/talk-with-expert?utm_source=verifiable-documents&utm_medium=hero&utm_campaign=Talk+to+the+expert"
 
-talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert?utm_source=verifiable-documents&utm_medium=review&utm_campaign=Talk+to+our+expert"
+talkToOurExpertLink: "https://info.certifyme.online/talk-with-expert?utm_source=verifiable-documents&utm_medium=review&utm_campaign=Talk+to+our+expert"
 
 HeroImg: /assets3/images1/hr-letter.png
 Hero1Msg: Create and Verify 

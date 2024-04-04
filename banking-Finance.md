@@ -7,8 +7,8 @@ layout: V4LayoutInnerpages
 
 sitemap.priority : 0.9
 
-talktoexpertlink: "https://go.certifyme.online/talk-with-expert"
-talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
+talktoexpertlink: "https://info.certifyme.online/talk-with-expert"
+talkToOurExpertLink: "https://info.certifyme.online/talk-with-expert"
 
 HeroImg: 
 HeroTitle: Prevent Accounts Forgery:Safeguard 
