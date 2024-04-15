@@ -20,7 +20,7 @@ leftSideLogoLink: https://www.tapas-etn-eu.org/events/images/zoom-icon-logo.png
 #G2 section
 G2Title: Global Leader in Digital Certificates & Badge Management
 ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
-ActionButtonbelowtext1: Free 50 Credentials
+ActionButtonbelowtext1: Free 10 Credentials
 ActionButtonbelowtext2: Exclusive Support
 
 # testimonial section

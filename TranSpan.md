@@ -24,7 +24,7 @@ Credentialtext: Credenciales digitales emitidas cada mes
 #G2 section
 G2Title: Líder mundial en gestión de credenciales y certificados digitales
 ActionButtonAbovetext: ¿No estás seguro de cómo empezar? ¡Permítanos guiarlo en la dirección correcta!
-ActionButtonbelowtext1: 50 credenciales gratis
+ActionButtonbelowtext1: 10 credenciales gratis
 ActionButtonbelowtext2: Soporte exclusivo
 
 # testimonial section

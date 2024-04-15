@@ -19,7 +19,7 @@ leftSideLogoLink: https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/eccafdf3-
 #G2 section
 G2Title: Global Leader in Digital Certificates & Badge Management
 ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
-ActionButtonbelowtext1: Free 50 Credentials
+ActionButtonbelowtext1: Free 10 Credentials
 ActionButtonbelowtext2: Exclusive Support
 
 # testimonial section
