@@ -24,7 +24,7 @@ Credentialtext: Identifiants numériques délivrés chaque mois
 #G2 section
 G2Title: Leader mondial de la gestion des certificats numériques et des badges
 ActionButtonAbovetext: Vous ne savez pas par où commencer ? Laissez-nous vous guider dans la bonne direction !
-ActionButtonbelowtext1: 50 identifiants gratuits
+ActionButtonbelowtext1: 10 identifiants gratuits
 ActionButtonbelowtext2: Assistance exclusive
 
 # testimonial section

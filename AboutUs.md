@@ -7,4 +7,7 @@ layout: V4LayoutaboutUs
 
 # talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
 sitemap.priority : 0
+
+# testimonial section
+TestimonialTitle: Our Happy Customers 
 ---

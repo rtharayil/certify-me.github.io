@@ -17,7 +17,7 @@ leftSideLogoLink: https://zapier-images.imgix.net/storage/services/72e0fbf3b4989
 #G2 section
 G2Title: Global Leader in Digital Certificates & Badge Management
 ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
-ActionButtonbelowtext1: Free 50 Credentials
+ActionButtonbelowtext1: Free 10 Credentials
 ActionButtonbelowtext2: Exclusive Support
 
 # testimonial section

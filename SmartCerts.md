@@ -60,7 +60,7 @@ Feature3Text: Bid farewell to the age of forgery and credential manipulation. Wi
 #G2 section
 G2Title: Global Leader in Certification Management Solutions
 ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
-ActionButtonbelowtext1: Free 50 Credentials
+ActionButtonbelowtext1: Free 10 Credentials
 ActionButtonbelowtext2: Exclusive Support
 g2buttonLink: https://go.certifyme.online/talk-to-us-smart
 g2buttontext: Talk to our Experts

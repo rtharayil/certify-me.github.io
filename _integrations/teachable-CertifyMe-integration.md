@@ -22,7 +22,7 @@ leftSideLogoLink: https://images.squarespace-cdn.com/content/v1/5af60e40f8370a26
 #G2 section
 G2Title: Global Leader in Digital Certificates & Badge Management
 ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
-ActionButtonbelowtext1: Free 50 Credentials
+ActionButtonbelowtext1: Free 10 Credentials
 ActionButtonbelowtext2: Exclusive Support
 
 # testimonial section

@@ -24,7 +24,7 @@ Credentialtext: Jeden Monat werden digitale Ausweise ausgestellt
 #G2 section
 G2Title: Weltweiter Marktführer für digitale Zertifikate und Badge-Management
 ActionButtonAbovetext: Sie sind sich nicht sicher, wie Sie anfangen sollen? Lassen Sie sich von uns in die richtige Richtung führen!
-ActionButtonbelowtext1: Kostenlose 50 Anmeldeinformationen
+ActionButtonbelowtext1: Kostenlose 10 Anmeldeinformationen
 ActionButtonbelowtext2: Exklusiver Support
 
 # testimonial section
