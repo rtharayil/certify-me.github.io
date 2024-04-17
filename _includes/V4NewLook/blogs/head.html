@@ -77,6 +77,28 @@
 
   <title>{{page.title}}</title>
 
-  
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{page.title}}",
+      "image": [
+        "https://certifyme.online/{{page.imageLink}}"
+       
+       ],
+     
+      "dateModified": "{{page.date | date: '%FT%T%:z'}}",
+      "author": [{
+          "@type": "Person",
+          "name": "Aneesha Kurian",
+          "url": "https://www.linkedin.com/in/aneesha-kurien-259606244"
+        }],
+        "publisher":
+  {
+    "name": "CertifyMe",
+    "url": "https://certifyme.online"
+  },
+    }
+    </script>
 
 </head>
