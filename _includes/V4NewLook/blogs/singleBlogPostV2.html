@@ -1,0 +1,316 @@
+<!-- SINGLE POST ============================================= -->
+
+
+<section id="single-post" class="pb-90 inner-page-hero blog-page-section mb-5">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <section>
+                <div class="hero-overlay">
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <p class="p-sm  align-items-left"> <a href="/">Home</a> > <a href="/blog">blog</a> >
+                                {{page.stitle}}</p>
+
+                            <!-- HERO TEXT -->
+                            <div class="col-md-6">
+                                <div class="hero-7-txt">
+
+                                    <!-- Title -->
+                                    <h1 class=" fs-2" style="padding-bottom: 30px; ">{{page.title}}</h1>
+
+                                    <p class="p-lg">{{page.abstract}}
+                                    </p>
+
+
+                                    <div class="fw-lighter lh-1 row">
+
+                                        <!-- Text -->
+                                        <div class="col-md-12">
+                                        <p class="p-sm mb-0">
+                                            <span class="flaticon-linkdin"></span> Author : <span
+                                                class="fw-normal">Aneesha Kurian</span> , Credential Solution Architect
+                                            at CertifyMe
+                                        </p>
+                                        </div>
+                                        <hr class="mb-2 mt-2 pt-0 pb-0">
+                                        <div class="col-md-12 row">
+                                            <div class="col-6 ">
+                                        <p class="p-sm ">
+                                            <span>Updated : {{ page.date | date: "%-d %B %Y" }} </span> 
+                                        </p>
+                                            </div>
+                                            <div class="col-6 align-items-right ">
+                                            <p class="p-sm "> <span
+                                               >{{ page.content | number_of_words  | divided_by: 200 | plus: 1 }} min read min read </span>
+                                        </p>
+                                    </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div> <!-- END HERO TEXT -->
+
+
+                            <!-- HERO IMAGE -->
+                            <div class="col-md-6">
+                                <div class=" text-center" style="padding-bottom: 20px;">
+                                    <img src="{{page.imageLink}}" alt="{{page.title}}" style="max-height: 300px; ;">
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                        </div> <!-- End row -->
+                    </div> <!-- End container -->
+                </div> <!-- End hero-overlay -->
+            </section> <!-- END HERO-7 -->
+
+            <!-- SINGLE POST CONTENT -->
+            <div class="col-xl-3  ">
+
+                <div>
+
+                    {% include V4NewLook/blogs/_toc.html content=page.content skip_toc=page.skip_toc%}
+                </div>
+
+           
+ 
+                <div>
+                    {% include V4NewLook/blogs/_singleBlogPostV2ads.html %}
+                </div>
+          
+ 
+ 
+     
+ 
+ 
+    
+
+                    
+                
+
+
+            </div>
+
+            <div class="col-xl-9">
+                <div class="post-content">
+
+                    <!--  SINGLE POST TITLE -->
+                    <div class="single-post-title text-left">
+
+
+                        <!-- Post Tag -->
+                        <h6><span class="fs-5 ;">Summary </span></h6>
+
+                        <!-- Title -->
+                        <h2 class="mb-35 fs-6 lh-lg ml-0" style="text-align: justify;">{{page.description}}</h2>
+
+                        <!-- Post Meta -->
+                        <!-- <div class="blog-post-meta mt-35">
+							<ul class="post-meta-list ico-10">
+								<li><p class="p-md w-500">Education</p></li>
+							</ul>
+                        </div> -->
+
+                    </div> <!-- END SINGLE POST TITLE -->
+
+
+
+
+                    <!-- SINGLE POST TEXT -->
+                    <div class="single-post-txt lh-lg" style="text-align: justify;">
+                        {{page.content}}
+                    </div> <!-- END SINGLE POST TEXT -->
+
+                </div> <!-- End row -->
+            </div> <!-- End container -->
+
+</section> <!-- END SINGLE POST -->
+
+<!-- BANNER-13
+			============================================= -->
+<section id="banner-13" class="pt-100 banner-section" style="margin-top: -100px; margin-bottom: 80px;">
+    <div class="container">
+
+
+        <!-- BANNER-13 WRAPPER -->
+        <div class="banner-13-wrapper bg--05 bg--scroll r-16 block-shadow">
+            <div class="banner-overlay">
+                <div class="row d-flex align-items-center">
+
+
+                    <!-- BANNER-5 TEXT -->
+                    <div class="col-md-7">
+                        <div class="banner-13-txt color--white">
+                            <p class="p-lg" style="margin-bottom: -10px;">2024 Edition</p>
+                            <!-- Title -->
+                            <h2 class="s-45 w-700" style="margin-bottom: -5px;">Zero to One</h2>
+                            <h2 class="s-37 w-700">Build A Credentialing Program From Scratch</h2>
+
+                            <!-- Text -->
+                            <p class="p-lg" style="font-size: 20px;">This extensive workbook + ebook combo contains
+                                everything you need to build a credentialing program from scratch.
+                            </p>
+
+                            <!-- Button -->
+                            <a href="https://info.certifyme.online/ebook" target="_blank"
+                                class="btn r-04 btn--theme hover--tra-white">Download Now</a>
+
+                        </div>
+                    </div> <!-- END BANNER-13 TEXT -->
+
+
+                    <!-- BANNER-13 IMAGE class="banner-13-img text-center"-->
+                    <div class="col-md-5">
+                        <div>
+                            <img class="img-fluid" src="/assets4/images/Images Webp/build a credentialing program.webp"
+                                alt="EbookBanner-image">
+                        </div>
+                    </div>
+
+
+                </div> <!-- End row -->
+            </div> <!-- End banner overlay -->
+        </div> <!-- END BANNER-13 WRAPPER -->
+
+
+    </div> <!-- End container -->
+</section> <!-- END BANNER-13 -->
+
+
+<!-- BLOG-1
+			============================================= -->
+<section id="blog-1" class="bg--white-300 py-100 blog-section division">
+    <div class="container">
+
+
+        <!-- SECTION TITLE -->
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-9">
+                <div class="section-title mb-70">
+
+                    <!-- Title -->
+                    <h2 class="s-50 w-700">Keep Reading...</h2>
+
+                    <!-- Text -->
+                    <p class="s-21 color--grey">Access our Extensive Resource Library and Elevate Your Digital
+                        Credential Journey</p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+
+            <!-- BLOG POST #1 -->
+            <div class="col-md-6 col-lg-4">
+                <div id="bp-1-1" class="blog-post wow fadeInUp">
+
+                    <!-- BLOG POST IMAGE -->
+                    <div class="blog-post-img mb-35">
+                        <img class="img-fluid r-16" src="/img/blog/credential/28.png"
+                            alt="Most Common Types of Digital certificate">
+                    </div>
+
+                    <!-- BLOG POST TEXT -->
+                    <div class="blog-post-txt">
+
+                        <!-- Post Tag -->
+                        <!-- <span class="post-tag color--pink-400">Product News</span> -->
+
+                        <!-- Post Link -->
+                        <h6 class="s-20 w-700">
+                            <a href="https://certifyme.online/blog/Most-Common-Types-of-Digital-certificate.html">
+                                Most Common Types of Digital certificate
+                            </a>
+                        </h6>
+
+                        <!-- Text -->
+                        <p>Common types of digital certificates include TLS/SSL certificates, code signing certificates,
+                            and
+                            client certificates for user verification.
+                        </p>
+
+                    </div> <!-- END BLOG POST TEXT -->
+
+                </div>
+            </div> <!-- END BLOG POST #1 -->
+
+
+            <!-- BLOG POST #2 -->
+            <div class="col-md-6 col-lg-4">
+                <div id="bp-1-2" class="blog-post wow fadeInUp">
+
+                    <!-- BLOG POST IMAGE -->
+                    <div class="blog-post-img mb-35">
+                        <img class="img-fluid r-16" src="/img/blog/credential/23.png"
+                            alt="Benefits of Digital Certificates for Businesses">
+                    </div>
+
+                    <!-- BLOG POST TEXT -->
+                    <div class="blog-post-txt">
+
+                        <!-- Post Tag -->
+                        <!-- <span class="post-tag color--green-400">Community</span> -->
+
+                        <!-- Post Link -->
+                        <h6 class="s-20 w-700">
+                            <a
+                                href="https://certifyme.online/blog/Benefits-of-Digital-Certificates-for-Businesses.html">Benefits
+                                of Digital Certificates for Businesses
+                            </a>
+                        </h6>
+
+                        <!-- Text -->
+                        <p>Secure and verifiable, digital certificates offer privacy, visibility, and verification,
+                            benefiting businesses in the digital world.</p>
+
+                    </div> <!-- END BLOG POST TEXT -->
+
+                </div>
+            </div> <!-- END BLOG POST #2 -->
+
+
+            <!-- BLOG POST #3 -->
+            <div class="col-md-12 col-lg-4">
+                <div id="bp-1-3" class="blog-post wow fadeInUp">
+
+                    <!-- BLOG POST IMAGE -->
+                    <div class="blog-post-img mb-35 ">
+                        <img class="img-fluid r-16" src="/img/blog/credential/36.png" alt="The
+                    Importance of Including Digital Credentials on LinkedIn">
+                    </div>
+
+                    <!-- BLOG POST TEXT -->
+                    <div class="blog-post-txt">
+
+                        <!-- Post Tag -->
+                        <!-- <span class="post-tag color--purple-400">Freelancer Tips</span> -->
+
+                        <!-- Post Link -->
+                        <h6 class="s-20 w-700">
+                            <a
+                                href="https://certifyme.online/blog/The-Importance-of-Including-Digital-Credentials-on-LinkedIn.html">The
+                                Importance of Including Digital Credentials on LinkedIn</a>
+                        </h6>
+
+                        <!-- Text -->
+                        <p>Adding digital credentials on LinkedIn can enhance brand value, networking, and job
+                            opportunities.
+                        </p>
+
+                    </div>
+                </div> <!-- END BLOG POST #3 -->
+
+
+            </div> <!-- End row -->
+        </div> <!-- End container -->
+</section> <!-- END BLOG-1 -->

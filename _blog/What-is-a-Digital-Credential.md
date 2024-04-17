@@ -1,12 +1,18 @@
 ---
 layout: V4LayoutSingleBlogPost
-title: What are digital credentials and 𝗪𝗵𝗲𝗿𝗲 𝗮𝗿𝗲 𝗱𝗶𝗴𝗶𝘁𝗮𝗹 𝗰𝗿𝗲𝗱𝗲𝗻𝘁𝗶𝗮𝗹𝘀 𝘂𝘀𝗲𝗱 in 2023? 
+title: What are digital credentials and where are digital credentails used in 2024? 
+
+udate: April 13, 2024
+author: Aneesha Kurian
+readtime : 9 
 
 description: Digital credentials or verifiable credentials are tamper-proof evidence of achievements that can transform the way skilled professionals showcase their credentials on a global scale.
 abstract: Few facts about digital badges and digital certificates
+stitle : Digital credential
 topic: news
 imageLink: https://unevoc.unesco.org/up/DigitalCredentialing.jpg
 featured: true
+skip_toc : true
 ---
 
 
