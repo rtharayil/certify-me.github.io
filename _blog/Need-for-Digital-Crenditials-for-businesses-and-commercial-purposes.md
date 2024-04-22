@@ -11,7 +11,7 @@ author : Mrunal Upadhye
 imageLink: /img/blog/credential/31.png
 featured: true
 ---
-# Need for Digital Crenditials for businesses and commercial purposes
+## Need for Digital Crenditials 
 
 
 

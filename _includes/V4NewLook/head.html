@@ -35,7 +35,7 @@
   <!-- RESPONSIVE CSS -->
 	<link href="/assets4/css/responsive.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="./assets4/css/whatasapp_style.css">
+
 
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&amp;display=swap"
@@ -47,24 +47,11 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> -->
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102775017-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
-    gtag('config', 'UA-102775017-1');
-  </script>
+
 
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TGB2DJ2');</script>
+  {% include V4NewLook/_GTMScript.html %}
   <!-- End Google Tag Manager -->
 
   <!-- <link rel="icon" type="/image/png" href="https://certifyme.online/img/logo.png" /> -->
@@ -86,18 +73,27 @@
   <meta property="og:site_name" content="certifyMe.online">
 
 
-  <!-- Hotjar Tracking Code for https://certifyme.online/ -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 3325299, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
+
 
   <title>{{page.title}}</title>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CertifyMe Credentials",
+      "operatingSystem": "Windows 7, OSX 10.6, Android 1.6",
+      "applicationCategory": "BusinessApplication",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "244"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0"
+      }
+    }
+  </script>
 
 </head>
