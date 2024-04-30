@@ -170,7 +170,7 @@ Creating top-notch digital badges is simpler than you might think! To get starte
 
 ### 1. Choose the Right Platform
 
-Opt for a trustworthy platform that ensures security and ease of badge management. To get started, you can check out our free platform.
+Opt for a trustworthy platform that ensures security and ease of badge management. To get started, you can check out our [free platform](https://certifyme.online/). 
 
 ### 2. Involve Everyone
 
@@ -178,7 +178,7 @@ Gather input from instructors, administrators, and learners to refine badge crit
 
 ### 3. Embrace Onboarding
 
-Select an onboarding package tailored to your team's needs. Learn from experts and adopt best practices to enhance the user experience and badge quality. Discover the onboarding packages that best align with your needs here.
+Select an onboarding package tailored to your team's needs. Learn from experts and adopt best practices to enhance the user experience and badge quality. Discover the onboarding packages that best align with your needs [here](https://certifyme.online/).
 
 ### 4. Set Clear Criteria
 
