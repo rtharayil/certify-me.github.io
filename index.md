@@ -14,7 +14,7 @@ HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request A Demo
 HeroVideoButton: Watch Video
 HeroVideoButtonLink: https://www.youtube.com/watch?v=TJMwk6qIxSc
-FlaticonCheckHeroText: Social media shareability of our Digital Badges / Certificates enables you to increase your brand value & enrolments 
+FlaticonCheckHeroText: Social media shareability of our Digital Badges / Certificates enables you to increase your brand value & growth 
 
 #statictics section
 Institutiontext: Institutions trust <br>CertifyMe
