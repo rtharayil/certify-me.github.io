@@ -1,10 +1,11 @@
 ---
 layout: V4LayoutSingleBlogPost
-title: Guide to Blockchain Technology and Digital Credentials in India 
+title: "Understanding Blockchain Digital Credentials: A Complete Guide"
 
-description: Digital credentials with blockchain technology are revolutionizing the education sector in India, enhancing security and eliminating fraudulent practices.
+description: Blockchain digital credentials bring security and reliability to digital records like diplomas, certificates, and licenses. Find out why blockchain's decentralized design makes it a game-changer for credential verification and see how it's being used in different industries.
 
-abstract: Digital credentials with blockchain technology are revolutionizing the education sector in India, enhancing security and eliminating fraudulent practices.
+abstract: Blockchain digital credentials bring security and reliability to digital records like diplomas, certificates, and licenses. Find out why blockchain's decentralized design makes it a game-changer for credential verification and see how it's being used in different industries.
+
 topic: news
 author : Mrunal Upadhye
 imageLink: /img/preview1.png
