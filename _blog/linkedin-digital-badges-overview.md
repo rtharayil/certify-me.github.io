@@ -4,7 +4,7 @@ title: "LinkedIn Digital Badges: Your Key to Professional Recognition"
 
 description: Discover how LinkedIn digital badges can elevate your professional profile. Learn the importance of badges, how to add them, and boost your career recognition on LinkedIn. Get started now!
 
-abstract: Discover how LinkedIn digital badges can elevate your professional profile. Learn the importance of badges, how to add them, and boost your career recognition on LinkedIn. Get started now!
+abstract: 
 
 topic: news
 author : Mrunal Upadhye
@@ -12,20 +12,20 @@ imageLink: /img/blog/Blog 4 Banner.webp
 featured: true
 ---
 
-# LinkedIn Digital Badges: Your Key to Professional Recognition
-
 
 In today's competitive job market, standing out is more important than ever. LinkedIn, the premier platform for professional networking, offers a powerful way to showcase your achievements through digital badges. These badges not only highlight your skills but also enhance your credibility and visibility to potential employers and industry peers. In this comprehensive guide, we'll explore the significance of LinkedIn digital badges, demonstrate how to add them to your profile, and explain why they are a crucial tool for professional recognition. Whether you're aiming to boost your career prospects or expand your network, understanding and utilizing LinkedIn digital badges can give you the edge you need.
 
 
-
+<br>
 ## What is a LinkedIn Digital Badge?
 
 A LinkedIn digital badge is a virtual symbol of an achievement or certification. It can represent anything from completing an online course to earning a professional qualification. These badges can be shared on your LinkedIn profile to highlight your skills and accomplishments. They are often used by employers and recruiters to quickly gauge a person's credentials.
 
-<img class="img-fluid r-16" src="/img/blog/Digital badge example.webp" alt="image">
+<div style="text-align: center;">
+    <img class="img-fluid r-16" src="/img/blog/Digital badge example.webp" alt="Linkedin Digital Badge example" style="display: block; margin: 0 auto;">
+    <p><i>Example of a Digital Badge</i></p>
+</div>
 
-*Image metadata title - Linkedin Digital Badge example*
 
 
 
@@ -68,9 +68,8 @@ LinkedIn is a crowded space with many professionals vying for attention. Adding 
 Digital badges not only highlight your accomplishments but also serve as conversation starters. When potential connections visit your LinkedIn profile, these badges provide an immediate talking point, facilitating discussions about shared interests or experiences. This engagement can lead to valuable networking opportunities, helping you forge meaningful connections with professionals in your industry.
 
 
-<img class="img-fluid r-16" src="/img/blog/Standout Employee.webp" alt="image">
+<img class="img-fluid r-16" src="/img/blog/Standout Employee.webp" alt="How to be a standout employee">
 
-*Image metadata title - Standout employee*
 
 
 ## How to Add Digital Badges to LinkedIn
