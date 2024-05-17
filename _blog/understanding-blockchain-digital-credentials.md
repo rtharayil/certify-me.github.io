@@ -4,20 +4,20 @@ title: "Understanding Blockchain Digital Credentials: A Complete Guide"
 
 description: Blockchain digital credentials bring security and reliability to digital records like diplomas, certificates, and licenses. Find out why blockchain's decentralized design makes it a game-changer for credential verification and see how it's being used in different industries.
 
-abstract: Blockchain digital credentials bring security and reliability to digital records like diplomas, certificates, and licenses. Find out why blockchain's decentralized design makes it a game-changer for credential verification and see how it's being used in different industries.
+abstract: 
 
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/preview1.png
+imageLink: /img/blog/Blog 3 Banner WEBP file.webp
 featured: true
 ---
 
-# Understanding Blockchain Digital Credentials: A Complete Guide
+
 Blockchain digital credentials are digital versions of traditional paper credentials like diplomas, certificates, and licenses stored securely on a blockchain, a type of online record-keeping system where information is locked in place once it's added. 
 
 This technology ensures that these digital records are authentic and easy to verify, providing a reliable way to prove your skills and achievements. With blockchain credentials, you don't have to worry about losing your documents or having them questioned by employers or institutions—they are safe, secure, and always accessible.
 
-<img class="img-fluid r-16" src="/img/blog/Blog 3 Banner WEBP file.webp" alt="image">
+
 
 ## Explaining Blockchain Technology for Digital Credentials
 

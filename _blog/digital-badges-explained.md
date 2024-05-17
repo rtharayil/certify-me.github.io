@@ -4,14 +4,13 @@ title: What Is a Digital Badge? Everything You Need To Know
 
 description: Learn all about digital badges, including what they are, how they work, and why they're important. Find out how digital badges can boost your skills, career, and credibility. Get the essentials here.
 
-abstract: Learn all about digital badges, including what they are, how they work, and why they're important. Find out how digital badges can boost your skills, career, and credibility. Get the essentials here.
+abstract: 
 
 topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/CertifyMe Blog 2 banner.png
 featured: true
 ---
-# What Is a Digital Badge? Everything You Need To Know
 
 In today's digital age, the challenge of effectively showcasing one's qualifications and accomplishments has become increasingly daunting.
 
