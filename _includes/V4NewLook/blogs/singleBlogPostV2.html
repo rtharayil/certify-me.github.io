@@ -1,5 +1,35 @@
 <!-- SINGLE POST ============================================= -->
+<style>
 
+.blogcontent h1 {
+  word-spacing: 10px;
+}
+
+.blogcontent p {
+    color : black;
+}
+.blogcontent li {
+    color : black;
+}
+.blogcontent h2 {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.blogcontent img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.blogcontent h3 {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+
+</style>
 
 <section id="single-post" class="pb-90 inner-page-hero blog-page-section mb-5">
     <div class="container">
@@ -14,13 +44,13 @@
                                 {{page.stitle}}</p>
 
                             <!-- HERO TEXT -->
-                            <div class="col-md-6">
+                            <div class="col-md-6" style="padding-left: 10px;">
                                 <div class="hero-7-txt">
 
                                     <!-- Title -->
                                     <h1 style="padding-bottom: 30px; font-size: 2.3em ">{{page.title}}</h1>
 
-                                    <p class="p-lg small" style="font-size: .9em ">{{page.description}}
+                                    <p class="p-lg small" style="font-size: .97em ; color: black">{{page.description}}
                                     </p>
 
 
@@ -58,8 +88,8 @@
 
                             <!-- HERO IMAGE -->
                             <div class="col-md-6">
-                                <div class="text-center" style="padding-bottom: 20px;">
-                                    <img src="{{page.imageLink}}" alt="{{page.title}}" style="max-height: 315px;">
+                                <div class=" text-center" style="padding-bottom: 20px;">
+                                    <img src="{{page.imageLink}}" alt="{{page.title}}" style="max-height: 275px; ;">
                                 </div>
                             </div>
 
@@ -104,16 +134,16 @@
 
             <div class="col-xl-9 mt-35">
                 <div class="post-content">
-                    
+
                     <!--  SINGLE POST TITLE -->
                     <div class="single-post-title text-left">
 
 
-                        <!-- Post Tag -->
+                       
                         <h6 class="fs-4 ;">Summary </h6>
 
-                        <!-- Title -->
-                        <p class="mb-35  lh-lg ml-0" style="text-align: left;">{{page.abstract}}</p>
+                       
+                        <p class="mb-35  lh-lg ml-0 " style="text-align: left;  font-size: 22px;">{{page.abstract}}</p>
 
                         <!-- Post Meta -->
                         <!-- <div class="blog-post-meta mt-35">
@@ -123,12 +153,12 @@
                         </div> -->
 
                     </div> <!-- END SINGLE POST TITLE -->
-                    
+
 
 
 
                     <!-- SINGLE POST TEXT -->
-                    <div class="single-post-txt lh-lg" style="text-align: justify;">
+                    <div class="single-post-txt blogcontent lh-lg" >
                         {{page.content}}
                     </div> <!-- END SINGLE POST TEXT -->
 

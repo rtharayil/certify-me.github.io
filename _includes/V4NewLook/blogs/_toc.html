@@ -23,7 +23,7 @@
             <p>Table of contents</p>
             {% for h2_text in final_h2_texts %}
                 {% assign index = forloop.index | minus: 1 %}
-                <a href="#{{ final_h2_ids[index] }}">{{ forloop.index }}. {{ h2_text }}</a>
+                <a href="#{{ final_h2_ids[index] }}" >{{ forloop.index }}. {{ h2_text }}</a>
                 <br>
             {% endfor %}
         </div>
@@ -33,10 +33,11 @@
             margin: 2em 0 !important;
             padding: 1em;
             color: #494e52;
-            font-size: .75em !important;
+            font-size: .85em !important;
             text-indent: initial;
             background-color: #f9fafc;
             border-radius: 4px;
+           
          
         }
     </style>

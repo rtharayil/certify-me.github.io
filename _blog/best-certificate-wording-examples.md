@@ -11,7 +11,7 @@ author : Mrunal Upadhye
 imageLink: /img/blog/Blog 1 Banner.png
 featured: true
 ---
-# 20 Certificate Wordings that Leave Recipients Feeling Truly Special
+
 
 Crafting certificate wordings is like finding the perfect key for a treasure chest—each one unlocks a unique journey. But expressing heartfelt appreciation in just a few words can be tricky! 
 
