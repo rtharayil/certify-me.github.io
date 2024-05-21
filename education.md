@@ -7,8 +7,8 @@ layout: V2LayoutPages
 
 sitemap.priority : 0.9
 
-talktoexpertlink: "https://go.certifyme.online/talk-with-expert"
-talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
+talktoexpertlink: " https://info.certifyme.online/talk-with-expert"
+talkToOurExpertLink: " https://info.certifyme.online/talk-with-expert"
 
 HeroImg: 
 Hero1Msg: Award Verifiable Credentials  
@@ -18,7 +18,7 @@ Hero3Msg: A foolproof digital certification tool, CertifyMe is replacing physica
 
 1FeaturesImg: /assets3/Image3/1.png
 1FeaturesTitle: Deliver Transcripts that Make Everything Traceable
-1FeaturesMessage: CertifyMe offers a secure, efficient, and convenient way to create, issue, and manage scannable and trackable certificates. These credentials allow organizations/institutions to easily verify the authenticity of the documents and take an informed recruitment/admission decision. Students receive a portable and verifiable record of their achievements. Digital credentials also make social sharing easy for students. Spreading words about achievements has never been this simple before. The issuing institution can also track the level of student engagement with its credentials. From the number of unique views to social media impressions, the issuer can track all. Check the <a href="https://go.certifyme.online/request-demo">demo</a> for more insights!
+1FeaturesMessage: CertifyMe offers a secure, efficient, and convenient way to create, issue, and manage scannable and trackable certificates. These credentials allow organizations/institutions to easily verify the authenticity of the documents and take an informed recruitment/admission decision. Students receive a portable and verifiable record of their achievements. Digital credentials also make social sharing easy for students. Spreading words about achievements has never been this simple before. The issuing institution can also track the level of student engagement with its credentials. From the number of unique views to social media impressions, the issuer can track all. Check the <a href=" https://info.certifyme.online/request-demo">demo</a> for more insights!
 
 
 2FeaturesImg: /assets3/Image3/2.png

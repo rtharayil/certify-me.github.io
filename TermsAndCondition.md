@@ -5,6 +5,6 @@ description: "The terms by which you may use our online verifiable certificate a
 
 layout: V4LayoutTAC
 
-# talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
+# talkToOurExpertLink: " https://info.certifyme.online/talk-with-expert"
 sitemap.priority : 0
 ---

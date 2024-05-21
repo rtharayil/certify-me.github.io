@@ -5,6 +5,6 @@ description: "Here’s what you need to know about cancelling your CertifyMe cre
 
 layout: V4LayoutRefundPolicy
 
-# talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
+# talkToOurExpertLink: " https://info.certifyme.online/talk-with-expert"
 sitemap.priority : 0
 ---
