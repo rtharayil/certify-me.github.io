@@ -5,6 +5,6 @@ description: "We answer your frequently asked questions about CertifyMe and the 
 
 layout: V4LayoutFAQ
 
-# talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
+# talkToOurExpertLink: " https://info.certifyme.online/talk-with-expert"
 sitemap.priority : 0
 ---

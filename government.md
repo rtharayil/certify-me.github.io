@@ -7,8 +7,8 @@ layout: V2LayoutPages
 
 sitemap.priority : 0.9
 
-talktoexpertlink: "https://go.certifyme.online/talk-with-expert"
-talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
+talktoexpertlink: " https://info.certifyme.online/talk-with-expert"
+talkToOurExpertLink: " https://info.certifyme.online/talk-with-expert"
 
 HeroImg:
 Hero1Msg:  Verifiable Government-Issued 
@@ -23,7 +23,7 @@ Hero3Msg: Accelerate authentication duties of the government sector by issuing c
 
 2FeaturesImg: /assets3/Image3/14.png
 2FeaturesTitle: Convenient and Mobile-friendly Credentials
-2FeaturesMessage: Governments all over the globe are advocating for digital credentials. From the issuing organization to the recipient, the entire circle involved in the credential process experiences the convenience of verifiable credentials. Sharing the documents with concerned authorities/departments or the portability of the certificates make them a perfect replacement for paper documents. The digitized version of the traditional certification discloses all essential details without the threat of forgery. Schedule a <a href="https://go.certifyme.online/request-demo">demo</a> call with our experts for more insights. 
+2FeaturesMessage: Governments all over the globe are advocating for digital credentials. From the issuing organization to the recipient, the entire circle involved in the credential process experiences the convenience of verifiable credentials. Sharing the documents with concerned authorities/departments or the portability of the certificates make them a perfect replacement for paper documents. The digitized version of the traditional certification discloses all essential details without the threat of forgery. Schedule a <a href=" https://info.certifyme.online/request-demo">demo</a> call with our experts for more insights. 
 
 3FeaturesImg: /assets3/Image3/16.png
 3FeaturesTitle: Sustainability-Focused Certification and Licensing
@@ -31,7 +31,7 @@ Hero3Msg: Accelerate authentication duties of the government sector by issuing c
 
 4FeaturesImg: /assets3/Image3/17.png
 4FeaturesTitle: Accurate and Authentic Government Records
-4FeaturesMessage: Government documents hold greater significance compared to all other credentials. The certificates & records are proof of citizenship and legal compliance to reside in a state, city, or country. Keeping the documents safe and away from any harm is critical. When the papers are issued by an authoritative body via CertifyMe, the unique ID in the credential contains all essentials. The stamp, logo, and verifiable nature of the statements cushion receivers from facing legal complications and charges. <a href="https://go.certifyme.online/request-demo">Explore</a> how you can issue credentials via the platform. 
+4FeaturesMessage: Government documents hold greater significance compared to all other credentials. The certificates & records are proof of citizenship and legal compliance to reside in a state, city, or country. Keeping the documents safe and away from any harm is critical. When the papers are issued by an authoritative body via CertifyMe, the unique ID in the credential contains all essentials. The stamp, logo, and verifiable nature of the statements cushion receivers from facing legal complications and charges. <a href=" https://info.certifyme.online/request-demo">Explore</a> how you can issue credentials via the platform. 
 
 
 

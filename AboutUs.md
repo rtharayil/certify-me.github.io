@@ -5,6 +5,6 @@ description: "CertifyMe is a software platform that enables organisations to cre
 
 layout: V4LayoutaboutUs
 
-# talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
+# talkToOurExpertLink: " https://info.certifyme.online/talk-with-expert"
 sitemap.priority : 0
 ---

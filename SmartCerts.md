@@ -33,7 +33,7 @@ BoxContentText: A revolutionary technology that transforms traditional certifica
 
 BoxImage: /assets4/images/SmartCerts/online-certificate-generator (3).png
 # buttonText: Talk to our Experts
-# buttonLink: https://go.certifyme.online/talk-with-expert
+# buttonLink:  https://info.certifyme.online/talk-with-expert
 #feature 1 end
 
 #feature 2 section

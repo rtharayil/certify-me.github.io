@@ -6,9 +6,9 @@ description: " A simple way to validate the genuineness of any physical product 
 layout: V2LayoutPages
 
 sitemap.priority : 0.9
-talktoexpertlink: "https://go.certifyme.online/talk-with-expert?utm_source=proof-of-authenticity&utm_medium=hero&utm_campaign=Talk+to+the+expert"
+talktoexpertlink: " https://info.certifyme.online/talk-with-expert?utm_source=proof-of-authenticity&utm_medium=hero&utm_campaign=Talk+to+the+expert"
 
-talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert?utm_source=proof-of-authenticity&utm_medium=review&utm_campaign=Talk+to+our+expert"
+talkToOurExpertLink: " https://info.certifyme.online/talk-with-expert?utm_source=proof-of-authenticity&utm_medium=review&utm_campaign=Talk+to+our+expert"
 
 HeroImg: /assets3/images1/proof.png
 Hero1Msg: Showcase Business Authority by 

@@ -5,6 +5,6 @@ description: "This privacy policy document outlines the types of personal inform
 
 layout: V4LayoutPolicy
 
-# talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
+# talkToOurExpertLink: " https://info.certifyme.online/talk-with-expert"
 sitemap.priority : 0
 ---

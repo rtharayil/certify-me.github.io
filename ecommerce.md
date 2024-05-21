@@ -7,8 +7,8 @@ layout: V2LayoutPages
 
 sitemap.priority : 0.9
 
-talktoexpertlink: "https://go.certifyme.online/talk-with-expert"
-talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
+talktoexpertlink: " https://info.certifyme.online/talk-with-expert"
+talkToOurExpertLink: " https://info.certifyme.online/talk-with-expert"
 
 HeroImg: 
 Hero1Msg: Credentials that Make 
@@ -24,7 +24,7 @@ Hero3Msg: CertifyMe has revolutionized the way online product delivery businesse
 
 2FeaturesImg: /assets3/Image3/6.png
 2FeaturesTitle: Proof of Authenticity is Available at the Fingertip
-2FeaturesMessage: Ensure the authenticity of your products with our digital credential management software. Easily upload and store authentic documents, such as model number, date of production, and other relevant information on our secure platform. No more lost paper documents. Whether you are reselling products or selling spare parts, proving product legitimacy has been simplified. Offer a unique ID or link by scanning the QR/BARcodes on the credential and boost customer trust in your e-commerce business. A <a href="https://go.certifyme.online/request-demo">demo</a> might offer elevated product insights.
+2FeaturesMessage: Ensure the authenticity of your products with our digital credential management software. Easily upload and store authentic documents, such as model number, date of production, and other relevant information on our secure platform. No more lost paper documents. Whether you are reselling products or selling spare parts, proving product legitimacy has been simplified. Offer a unique ID or link by scanning the QR/BARcodes on the credential and boost customer trust in your e-commerce business. A <a href=" https://info.certifyme.online/request-demo">demo</a> might offer elevated product insights.
 
 
 ---
