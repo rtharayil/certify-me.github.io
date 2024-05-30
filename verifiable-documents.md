@@ -27,7 +27,7 @@ Hero3Msg: Cutting-edge technology combined with a standard certification process
 
 3FeaturesImg: /assets3/images1/verification.png
 3FeaturesTitle: Enhanced Student Engagement
-3FeaturesMessage: Digital credentials greatly bridge the gap between student enrolment and students completing the course/program. The desire for verified and attested certificates that also recognize students’ skills and expertise without the fear of misplacing it works wonders for enhanced student commitment. In the same way, training institutes can boost employee engagement in their upskilling programs. 
+3FeaturesMessage: Digital credentials greatly bridge the gap between student enrollment and students completing the course/program. The desire for verified and attested certificates that also recognize students’ skills and expertise without the fear of misplacing it works wonders for enhanced student commitment. In the same way, training institutes can boost employee engagement in their upskilling programs. 
 
 
 4FeaturesImg: /assets3/images1/Branding.png
