@@ -100,4 +100,4 @@ brand.
 For Reference, check out how Certifyme has customized credentials for its 
 customer - stem.org upholding its brand and visibility.
 
-<img class="img-fluid r-16" src="/assets4/images/s_cert.png" alt="certificate">
+<img class="img-fluid r-16" src="/assets4/images/stem_cert.png" alt="certificate">

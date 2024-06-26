@@ -18,7 +18,9 @@ guarantees the integrity, security, and authenticity of digital credentials. Thi
 will answer some frequently asked questions about how CertifyMe achieves these 
 goals.
 
-### How does CertifyMe ensure the integrity and authenticity of digital credentials?
+<ol>
+
+<li> How does CertifyMe ensure the integrity and authenticity of digital credentials?</li>  
 
 CertifyMe employs advanced blockchain technology to ensure the integrity and 
 authenticity of digital credentials. Each credential issued is digitally signed and 
@@ -28,24 +30,26 @@ trustworthy.
 
 CertifyMe employs several advanced technologies and best practices to 
 ensure the integrity and authenticity of digital credentials:
+<ol>
 
-1. **Blockchain Technology**: Each credential issued through CertifyMe is stored on
+<li> <b>Blockchain Technology</b>: Each credential issued through CertifyMe is stored on
 the blockchain, creating a tamper-proof record. This ensures that
-credentials cannot be altered or forged, maintaining their integrity.
+credentials cannot be altered or forged, maintaining their integrity.</li>
 
-1. **Digital Signatures**: All credentials are digitally signed, adding an extra layer of  
+<li> <b>Digital Signatures</b>: All credentials are digitally signed, adding an extra layer of  
 security and verification. This signature confirms the origin and authenticity of the 
-credential.
+credential.</li>
 
-1. **Verification Links**: Every credential includes a unique verification link. Third 
+<li> <b>Verification Links</b>: Every credential includes a unique verification link. Third 
 parties can use this link to validate the credential directly through CertifyMe’s 
-platform.
+platform.</li>
 
-1. **Secure Issuance Processes**: CertifyMe uses secure protocols during the 
+<li> <b>Secure Issuance Processes</b>: CertifyMe uses secure protocols during the 
 credential issuance process to prevent unauthorized access and ensure only 
-authorized personnel can issue credentials.
+authorized personnel can issue credentials.</li>
 
-###  What is CertifyMe's approach to data security and privacy?
+<li>  What is CertifyMe's approach to data security and privacy?</li>
+</ol>
 
 Data security and privacy are paramount at CertifyMe. We implement industry-
 leading security measures, including encryption, secure access controls, and 
@@ -54,7 +58,7 @@ regulations, such as GDPR and w3c standards, ensuring that user data is
 handled with the utmost care and confidentiality. Additionally, we are also ISO 
 2700 and ISO 9001 certified, along with open badge standard compliant.
 
-### How does CertifyMe handle the validation of digital credentials by third parties?
+<li> How does CertifyMe handle the validation of digital credentials by third parties?</li>
 
 CertifyMe makes it easy for third parties to validate digital credentials. Each 
 credential issued includes a unique URL and a QR code that links back to our 
@@ -62,7 +66,7 @@ secure verification portal. Third parties can simply scan the QR code or visit t
 URL to instantly verify the authenticity and details of the credential, ensuring 
 complete trust and transparency.
 
-###  How does CertifyMe handle updates to credentialing standards and regulations?
+<li>  How does CertifyMe handle updates to credentialing standards and regulations?</li>
 
 CertifyMe stays abreast of the latest developments in credentialing standards 
 and regulations. Our platform is designed to be flexible and adaptive, allowing 
@@ -70,7 +74,7 @@ for quick updates to meet new requirements. We work closely with industry
 experts and regulatory bodies to ensure that our credentialing practices remain 
 compliant and up-to-date.
 
-###  Does CertifyMe offer options for conducting security audits and assessments?
+<li>  Does CertifyMe offer options for conducting security audits and assessments?</li>
 
 Yes, CertifyMe offers comprehensive security audits and assessments. We 
 conduct regular internal and external audits to identify and mitigate potential 
@@ -78,7 +82,7 @@ vulnerabilities. Additionally, we provide tools for organizations to perform the
 own security assessments, ensuring that all credentialing processes meet 
 stringent security standards.
 
-### How does CertifyMe handle user authentication and access control?
+<li> How does CertifyMe handle user authentication and access control?</li>
 
 CertifyMe employs robust user authentication and access control mechanisms. 
 We support multi-factor authentication (MFA) to enhance account security 
@@ -86,17 +90,18 @@ and provide customizable access controls that allow organizations to define user
 roles and permissions. This ensures that only authorized personnel can access 
 and manage credentialing data.
 
-### How does CertifyMe ensure data integrity during transmission?
+<li> How does CertifyMe ensure data integrity during transmission?</li>
 
 Data integrity during transmission is a critical concern for CertifyMe. We use 
 end-to-end encryption to protect data as it travels between users and our 
 servers. This prevents any unauthorized access or tampering during 
 transmission, ensuring that the data remains intact and secure.
 
-### Does CertifyMe offer options for encrypting sensitive data?
+<li> Does CertifyMe offer options for encrypting sensitive data?</li>
 
 AAbsolutely. CertifyMe provides advanced encryption options for sensitive data. We use AES-256 encryption, a leading standard in data security, to protect stored data. Additionally, all data transmitted between users and our platform is encrypted using TLS (Transport Layer Security), ensuring that sensitive information is always secure.
 
+</ol>
 # Ensuring the Integrity and Security of Digital Credentials with CertifyMe
 
 In today's technological era where trust and authenticity matters more than ever,
