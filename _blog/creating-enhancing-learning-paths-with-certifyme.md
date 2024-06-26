@@ -8,7 +8,7 @@ description: Explore how CertifyMe can revolutionize your educational offerings 
 abstract: CertifyMe offers powerful tools for creating and managing learning paths, adding specializations, and incorporating recognition. This blog provides a concise guide to these features, helping educators design structured, targeted, and motivating educational journeys for learners.
 topic: news
 author : Mrunal Upadhye
-imageLink: 
+imageLink: /assets4/images/learning_path.png 
 featured: true
 ---
 

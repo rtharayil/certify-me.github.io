@@ -8,7 +8,7 @@ abstract: CertifyMe offers a comprehensive analytics and reporting solution for 
 
 topic: news
 author : Mrunal Upadhye
-imageLink: 
+imageLink: /assets4/images/understanding.png
 featured: true
 ---
 
