@@ -3,8 +3,8 @@
       <br>
       <ol>
       <li><strong>Visit the CertifyMe Website</strong>: Open your web browser 
-      and go to the  <strong><a href='https://www.certifyme.online/'> certifyme.online </a></strong> .
-      <li><strong>Click on 'Login' </strong>: Locate the  <strong><a href='https://credential.certifyme.online/auth/login'>'Login'</a></strong>
+      and go to the  <u><strong><a href='https://www.certifyme.online/'> certifyme.online </a></strong></u> .
+      <li><strong>Click on 'Login' </strong>: Locate the  <u><strong><a href='https://credential.certifyme.online/auth/login'>'Login'</a></strong></u>
       button on the website's homepage and click on it to access the login page.
       <li><strong>Click on 'Forgot Password?'</strong>: On the login page, you'll
       find an option that says <strong>'Forgot Password?'</strong> Click on this link to initiate the 
@@ -29,7 +29,7 @@
       regain access to your account.
       <br>
       
-      <strong><a href='https://youtu.be/d27e4PWeATE'> Click here for Video Demonstration </a></strong>"      
+      <u><strong><a href='https://youtu.be/d27e4PWeATE'> Click here for Video Demonstration </a></strong></u>"      
   c: 1
 
 - Q: Is CertifyMe a cloud-based platform?
@@ -78,3 +78,11 @@
       can log in to your account from different computers, tablets, or smartphones at 
       the same time, providing flexibility and ease of access.
   c: 8
+
+- Q: Is CertifyMe GDPR compliant and holds the required ISO certifications?
+  A: CertifyMe&#39;s commitment to data security and privacy is highlighted on our official website and
+      within our compliance documentation. CertifyMe is GDPR compliant and hold the necessary
+      ISO certifications, which are prominently mentioned in our data protection policy and
+      compliance section. This ensures that our clients are aware of our adherence to stringent data
+      protection standards.
+  c: 9
