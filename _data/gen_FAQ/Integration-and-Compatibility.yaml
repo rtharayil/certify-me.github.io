@@ -15,6 +15,7 @@
     you can also find the company code by clicking on the ‘Admin tools’ dropdown 
     menu and selecting ‘Manage Page.’ The company code will be visible in the URL 
     on this page as well.</li>
+    <strong><a href='https://youtu.be/w9rYMYtSKAQ'> Click here for Video Demonstration </a></strong>
     </ol>"
   c: 1
 - Q: Can CertifyMe generate QR codes for digital credentials?
@@ -51,7 +52,7 @@
     that credentials can be easily shared and integrated across multiple platforms, 
     maximizing their utility and impact.
   c: 5
-- Q: What is the process for updating or amending information on a digital 
+- Q: What is the process for updating or amending information on a <br> digital 
     credential issued through CertifyMe?
   A: The process for updating or amending information on a digital credential issued 
     through CertifyMe is straightforward. Administrators have full control and can 
@@ -62,7 +63,7 @@
     and reliability. This seamless process allows administrators to maintain the 
     integrity and relevance of digital credentials issued through CertifyMe.
   c: 6
-- Q:  Can CertifyMe provide a white-labeled solution for our organization to 
+- Q:  Can CertifyMe provide a white-labeled solution for our organization <br> to 
     maintain brand consistency in our digital credentials?
   A: Yes, CertifyMe offers a white-labeled solution for organizations to maintain 
     brand consistency in their digital credentials. With CertifyMe's white-
