@@ -18,7 +18,7 @@ leading digital credentialing platform, offers innovative solutions to enhance
 brand visibility. Let’s delve into the facets that set Certifyme apart and how they 
 contribute to brand enhancement.
 
-# Whitelabeling Solutions
+## Whitelabeling Solutions
 
 Certifyme provides <b> perfect whitelabeling solutions </b> that seamlessly integrate 
 with your organization’s branding. When learners receive their digital 
@@ -54,7 +54,7 @@ Certifyme ensures that the focus remains on your organization. Users won’t
 perceive Certifyme as an external service; instead, they’ll associate the 
 credentials with your brand.
 
-# Social Shareability
+## Social Shareability
 
 Certifyme encourages learners to share their achievements on social media 
 platforms with just one click. Here’s why these matters for brand visibility:
@@ -87,7 +87,7 @@ with your brand values and encourages recipients to take action. Whether it’s 
 your website, exploring other courses, or sharing their achievement, this call to action 
 reinforces your brand’s impact.
 
-## Conclusion
+### Conclusion
 
 Certifyme isn’t just about issuing digital credentials but about elevating your 
 brand as well. By offering whitelabeling solutions, enabling social shareability, 
