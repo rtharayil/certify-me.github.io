@@ -25,6 +25,7 @@
                 {% assign index = forloop.index | minus: 1 %}
                 <a href="#{{ final_h2_ids[index] }}" >{{ forloop.index }}. {{ h2_text }}</a>
                 <br>
+                <br>
             {% endfor %}
         </div>
     {% endif %}
