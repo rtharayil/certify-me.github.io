@@ -5,7 +5,7 @@ title: Learning Paths and Specializations with CertifyMe
 
 description: This article offers a concise guide to CertifyMe's tools for creating and managing learning paths, adding specializations and integrating recognition, allowing educators to design structured, motivating educational journeys. 
 
-abstract: CertifyMe offers powerful tools for creating and managing learning paths, adding specializations, and incorporating recognition. This blog provides a concise guide to these features, helping educators design structured, targeted, and motivating educational journeys for learners.
+abstract: 
 topic: news
 author : Mrunal Upadhye
 imageLink: /assets4/images/learing-path.png 
