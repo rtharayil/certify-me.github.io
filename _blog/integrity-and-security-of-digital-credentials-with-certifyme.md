@@ -88,4 +88,6 @@ Additionally, all data transmitted between users and our platform is encrypted u
 ## Conclusion
 
 In conclusion, CertifyMe revolutionizes credential management with its comprehensive features and user-centric approach. From ensuring integrity and security to facilitating sharing and integration, CertifyMe empowers organizations and individuals to manage credentials efficiently and securely in today's digital landscape.
+<br>
+<br>
 Experience the benefits of <a href="https://www.certifyme.online/">CertifyMe</a> and elevate your credential management processes today!
