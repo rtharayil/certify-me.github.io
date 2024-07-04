@@ -8,7 +8,7 @@ description: Digital credentials, such as badges and certifications, engage onli
 
 abstract: Engaging students online throughout the course period or program is a significant factor for digital educational platforms. Students who fail to get engaged in the course eventually lose their focus resulting in their progress at the course or program getting hindered.
 topic: news
-imageLink: https://certifyme.online//img/preview1.png
+imageLink: https://certifyme.online/img/preview1.png
 featured: true
 ---
 # Engaging Students online through Digital Credentials
