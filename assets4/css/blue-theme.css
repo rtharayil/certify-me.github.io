@@ -9321,21 +9321,14 @@ img.footer-logo-dark {
 /*  REGISTER PAGE LOGO
 /*------------------------------------------*/
 
-/* .register-page-txt img {
+.register-page-txt img {
   width: auto;
   max-width: inherit;
   max-height: 32px;
   margin-bottom: 55px;
-} */
-
-.register-page-txt img {
-  /* Allow the image to resize based on its container */
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 100%; /* Set max-height to 100% for auto adjustment */
-  margin-bottom: 55px;
 }
+
+
 
 .login-page-logo {
   text-align: center;
