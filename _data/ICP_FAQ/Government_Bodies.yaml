@@ -1,0 +1,44 @@
+  - Q: Does Certifyme offer Credential wallet for securely storing digital IDs, credentials or 
+      certificates. What measures does Certifyme take to prevent unauthorized access to the 
+      credentials wallet?
+    A: Yes, CertifyMe provides a custom digital credential wallet that allows recipients to 
+      securely store their digital IDs, credentials, or certificates. To prevent unauthorized 
+      access, CertifyMe secures wallets using custom login IDs and passwords, ensuring that 
+      verifiable credentials are protected by self-specified login details.
+    c: 1
+  - Q: Can Certifyme integrate with our existing government systems for seamless digital 
+      certificate issuance?
+    A: Yes, CertifyMe can integrate with existing government systems to provide a seamless 
+      digital certificate issuance process.The platform is equipped with tools that enable smart
+      licensing and certification systems without compromising sustainability.
+    c: 2
+  - Q: Is there a limit to the number of digital documents and IDs that can be stored in the 
+      Certifyme wallet?
+    A: No, there is no limit to the number of digital documents and IDs that can be stored in 
+      the CertifyMe wallet. The platform emphasizes the ability to store multiple credentials 
+      under one roof, eliminating the stress of manually storing and handling credentials.
+    c: 3
+  - Q: How user-friendly is the Certifyme platform for citizens to access their digital 
+      certificates?
+    A: CertifyMe is recognized for its user-friendly platform, which is designed with a clear 
+      and  intuitive user interface that allows easy navigation and customization. This makes it
+      convenient for citizens to access their digital certificates.
+    c: 4
+  - Q: In what ways does Certifyme comply with international standards for digital security 
+      and privacy?
+    A: Certifyme aligns with international standards for digital security, other than being ISO 
+      9001 and ISO 2700 certified, it is also compliant with the open badge standard ensuring a 
+      quality credential management system focused on customer satisfaction. It adheres to best 
+      cybersecurity practices, to protect against common digital security threats. Certifyme is 
+      GDPR compliant, upholding stringent data protection and privacy rights to maintain the 
+      integrity and confidentiality of personal data. These measures collectively establish 
+      Certifyme as a trusted platform for digital credentialing.
+    c: 5
+  - Q: Can Certifyme facilitate cross-border verification of digital documents and IDs <br> issued 
+      by our government?
+    A: CertifyMe’s digital credentials are designed to be shareable and verifiable, which implies 
+      that they can be used for cross-border verification. The credentials come with features like 
+      QR/Bar codes and Quantum Ledger IDs for comprehensive verification and proof of 
+      authenticity, which can facilitate the verification of documents issued by governments 
+      across borders.
+    c: 6

@@ -136,26 +136,20 @@
                 <div class="post-content">
 
                     <!--  SINGLE POST TITLE -->
+                    {% if page.abstract %}
                     <div class="single-post-title text-left">
-
-
                        
                         <h6 class="fs-4 ;">Summary </h6>
-
-                       
                         <p class="mb-35  lh-lg ml-0 " style="text-align: left;  font-size: 22px;">{{page.abstract}}</p>
-
+                        
                         <!-- Post Meta -->
                         <!-- <div class="blog-post-meta mt-35">
 							<ul class="post-meta-list ico-10">
 								<li><p class="p-md w-500">Education</p></li>
 							</ul>
                         </div> -->
-
                     </div> <!-- END SINGLE POST TITLE -->
-
-
-
+                    {% endif %}
 
                     <!-- SINGLE POST TEXT -->
                     <div class="single-post-txt blogcontent lh-lg" >

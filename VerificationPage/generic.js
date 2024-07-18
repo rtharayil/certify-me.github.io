@@ -146,3 +146,51 @@ function setupTics() {
     box.style.visibility = "visible";
   }, 2000);
 }
+
+function sendVerifyCredentialRequest(badeIdName){
+  // show modal
+  document.getElementById('id01').style.display = 'block';
+
+  var endpoint = '/stats/verifyCredential/' + badeIdName;
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', endpoint, true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+          console.log('request successful!');
+      } else if (xhr.readyState === 4) {
+          console.error('Error:', xhr.status);
+      }
+  };
+  xhr.send();
+}
+
+function sendlogoRequest(badeIdName){
+  var endpoint = '/stats/navLogo/' + badeIdName;
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', endpoint, true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+          console.log('request successful!');
+      } else if (xhr.readyState === 4) {
+          console.error('Error:', xhr.status);
+      }
+  };
+  xhr.send();
+}
+
+function sendAdvSmallRequest(badeIdName){
+  var endpoint = '/stats/adsSmall/' + badeIdName;
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', endpoint, true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+          console.log('request successful!');
+      } else if (xhr.readyState === 4) {
+          console.error('Error:', xhr.status);
+      }
+  };
+  xhr.send();
+}

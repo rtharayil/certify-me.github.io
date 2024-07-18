@@ -9296,6 +9296,7 @@ img.footer-logo-dark {
 #signup .register-page-wrapper {
   background: url(../images/login-wrapper.jpg);
   background-position: right center;
+  /* background-size: contain; */
 }
 
 #login .register-page-wrapper:after,
@@ -9327,6 +9328,8 @@ img.footer-logo-dark {
   max-height: 32px;
   margin-bottom: 55px;
 }
+
+
 
 .login-page-logo {
   text-align: center;

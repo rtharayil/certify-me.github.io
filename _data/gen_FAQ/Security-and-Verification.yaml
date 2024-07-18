@@ -1,0 +1,114 @@
+- Q: What is CertifyMe's policy on data privacy and security?
+  A: <p>Check our Privacy Policy page <a href="https://www.certifyme.online/Policy"
+                                                target="_blank">here</a> for essential information.
+                                        </p>
+
+- Q: How does CertifyMe ensure the authenticity and integrity of issued credentials?  
+  A: <p>We are GDPR compliant and follow OpenBadge Version 2.0. Safety
+                                            features for industry-standard credential security solutions. The
+                                            credentials issued via CertifyMe come with QR/BARcode and Quantum
+                                            Ledger ID for 360° verification and proof of authenticity.
+                                        </p>
+
+- Q: Can I customize the privacy settings of my issued credentials on CertifyMe?
+  A: <p>Once you choose a credentialing plan, you can enjoy all the features
+                                            listed below the particular plan.
+                                        </p>
+
+- Q: How can I verify the authenticity of a credential issued through CertifyMe?        
+  A: <p>Recipients receive a unique ID that contains all the credential
+                                            information. On the <a href="https://www.certifyme.online/"
+                                                target="_blank">CertifyMe website</a>, a <a
+                                                href="https://my.certifyme.online/wallet/verify/widget"
+                                                target="_blank">Verification Page</a> is
+                                            available under the Resources bar. Put the Quantum Ledger ID in the
+                                            given place, and press the Verify button.
+                                        </p>
+
+                                        <p>OR, you can also visit the issued certificates listed under Your
+                                            Credential Templates and open the credential you want to verify.
+                                            Click on the Verify this Credential button or collect the Quantum
+                                            Ledger ID and follow the aforementioned steps.
+                                        </p>                                
+
+- Q: How to find your LinkedIn company code?
+  A: "To find your LinkedIn company code, follow these steps:
+  <ol>
+  <li>Log In to LinkedIn: Open LinkedIn and log in to your account.</li>
+  <li> Navigate to Your Company Page: Click on the “Me” icon at the top of your LinkedIn
+  homepage, then select your company under the &quot;Manage&quot; section.</li>
+  <li> URL Inspection: Once on your company page, look at the URL in your browser&#39;s address
+  bar. The company code is the string of numbers that appears at the end of the URL. For
+  example, if your URL is https://www.linkedin.com/company/12345678, then 12345678
+  is your company code.</li>
+  <li> Admin View: If you are an admin of the company page, you can also find the company
+  code by clicking on the &quot;Admin tools&quot; dropdown menu and selecting &quot;Manage Page.&quot;
+  The company code will be visible in the URL on this page as well.</li>
+  </ol>"
+  c: 1
+
+- Q: Can CertifyMe generate QR codes for digital credentials?
+  A: Yes, CertifyMe can generate QR codes or bar code for digital credentials. Each credential issued
+    through the platform can be accompanied by a unique QR code, allowing for easy verification
+    and sharing. This feature enhances the accessibility and security of credentials, enabling
+    recipients to conveniently present their credentials for verification in both digital and physical
+    formats.
+  c: 2
+
+- Q: Can CertifyMe facilitate the sharing of digital credentials on social media platforms?
+  A: Yes, CertifyMe offers the option to easily share digital credentials on social media platforms.
+    Recipients of digital credentials can choose to share their achievements on platforms like
+    LinkedIn, Twitter, Facebook, and more directly from the CertifyMe platform. This feature
+    enhances the visibility and recognition of individuals&#39; accomplishments, allowing them to
+    showcase their credentials to a wider audience within their professional networks.
+  c: 3
+
+- Q: Are there options for embedding digital credentials on websites or emails?
+  A: Yes, CertifyMe provides options for embedding digital credentials on websites or emails. Users
+    can generate embeddable HTML code for their credentials, allowing them to seamlessly
+    integrate their achievements into their personal websites, portfolios, or email signatures. This
+    feature enhances the credibility and professionalism of individuals by showcasing their
+    credentials directly within their online presence, making it easier for others to verify their
+    achievements.
+  c: 4
+
+- Q: Can digital credentials issued by CertifyMe be exported for use in other systems or
+    databases?
+  A: Yes, CertifyMe offers the flexibility to export digital credentials for use in other systems or
+    databases. Users can download their credentials in various formats, such as PDF or PNG, and
+    also export the entire data of a credential in CSV format. Additionally, CertifyMe adheres to the
+    Open Badge standard, ensuring that credentials can be easily shared and integrated across
+    multiple platforms, maximizing their utility and impact.
+  c: 5
+
+- Q: "What is the process for updating or amending information on a digital <br> credential issued
+    through CertifyMe?"
+  A: The process for updating or amending information on a digital credential issued through
+    CertifyMe is straightforward. Administrators have full control and can make changes as needed.
+    They can access the credential management system within CertifyMe&#39;s platform, locate the
+    specific credential requiring updates, and edit the relevant information accordingly. Once the
+    changes are saved, the updated credential is immediately available to the recipient, ensuring
+    accuracy and reliability. This seamless process allows administrators to maintain the integrity
+    and relevance of digital credentials issued through CertifyMe.
+  c: 6
+
+- Q: "Can CertifyMe provide a white-labeled solution for our organization to maintain <br> brand
+    consistency in our digital credentials?"
+  A: Yes, CertifyMe offers a white-labeled solution for organizations to maintain brand consistency in
+    their digital credentials. With CertifyMe&#39;s white-labeling options, organizations can customize
+    the appearance and branding of their digital credentials to align with their corporate identity.
+    This ensures that digital credentials reflect the organization&#39;s branding and maintain a
+    professional and cohesive look across all issued credentials.
+  c: 7
+
+- Q: Can CertifyMe be integrated with single sign-on (SSO) solutions?
+  A: Yes, CertifyMe can be seamlessly integrated with single sign-on (SSO) solutions. By integrating
+    with SSO systems, users can access CertifyMe&#39;s platform using their existing credentials from
+    other systems, streamlining the login process and enhancing user experience. This integration
+    also improves security by centralizing user authentication and access control. Overall, integrating
+    CertifyMe with SSO solutions offers convenience, efficiency, and enhanced security for
+    organizations and their users.
+  c: 8
+
+
+

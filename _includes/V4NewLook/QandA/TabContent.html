@@ -1,0 +1,123 @@
+<!-- TABS CONTENT -->
+<div class="tabs-content">
+    <div class="row justify-content-center">
+        <div class="col-xl-10">
+            
+
+            <!-- TAB-1 CONTENT -->
+            <div id="tab-1" class="tab-content current">
+                <div class="accordion-wrapper">
+                    <ul class="accordion">{% for Tab-1 in site.data.ICP_FAQ.Higher_Education %}
+
+                        <li class="accordion-item is-active">
+
+                            <!-- Questions -->
+                            <div class="accordion-thumb">
+                                <h5 class="s-22 w-700">{{ Tab-1.Q }}</h5>
+                            </div>
+
+                            <!-- Answers -->
+                            <div class="accordion-panel color--grey">
+                                {{ Tab-1.A }}
+                            </div>
+
+                        </li>
+                        {% endfor %}
+                    </ul> 
+                </div>
+            </div> <!-- END TAB-1 CONTENT -->
+
+            <!-- TAB-2 CONTENT -->
+            <div id="tab-2" class="tab-content">
+                <div class="accordion-wrapper">
+                    <ul class="accordion">{% for Tab-2 in site.data.ICP_FAQ.L_and_D %}
+
+                        <li class="accordion-item is-active">
+
+                            <!-- Questions -->
+                            <div class="accordion-thumb">
+                                <h5 class="s-22 w-700">{{ Tab-2.Q }}</h5>
+                            </div>
+
+                            <!-- Answers -->
+                            <div class="accordion-panel color--grey">
+                                {{ Tab-2.A }}
+                            </div>
+
+                        </li>
+                        {% endfor %}
+                    </ul> 
+                </div>
+            </div> <!-- END TAB-2 CONTENT -->
+
+            <!-- TAB-3 CONTENT -->
+            <div id="tab-3" class="tab-content">
+                <div class="accordion-wrapper">
+                    <ul class="accordion">{% for Tab-3 in site.data.ICP_FAQ.E-Learning_Platforms %}
+
+                        <li class="accordion-item is-active">
+
+                            <!-- Questions -->
+                            <div class="accordion-thumb">
+                                <h5 class="s-22 w-700">{{ Tab-3.Q }}</h5>
+                            </div>
+
+                            <!-- Answers -->
+                            <div class="accordion-panel color--grey">
+                                {{ Tab-3.A }}
+                            </div>
+
+                        </li>
+                        {% endfor %}
+                    </ul> 
+                </div>
+            </div> <!-- END TAB-3 CONTENT -->
+
+            <!-- TAB-4 CONTENT -->
+            <div id="tab-4" class="tab-content">
+                <div class="accordion-wrapper">
+                    <ul class="accordion">{% for Tab-4 in site.data.ICP_FAQ.Associations %}
+
+                        <li class="accordion-item is-active">
+
+                            <!-- Questions -->
+                            <div class="accordion-thumb">
+                                <h5 class="s-22 w-700">{{ Tab-4.Q }}</h5>
+                            </div>
+
+                            <!-- Answers -->
+                            <div class="accordion-panel color--grey">
+                                {{ Tab-4.A }}
+                            </div>
+
+                        </li>
+                        {% endfor %}
+                    </ul> 
+                </div>
+            </div> <!-- END TAB-4 CONTENT -->
+
+            <!-- TAB-5 CONTENT -->
+            <div id="tab-5" class="tab-content">
+                <div class="accordion-wrapper">
+                    <ul class="accordion">{% for Tab-5 in site.data.ICP_FAQ.Government_Bodies %}
+
+                        <li class="accordion-item is-active">
+
+                            <!-- Questions -->
+                            <div class="accordion-thumb">
+                                <h5 class="s-22 w-700">{{ Tab-5.Q }}</h5>
+                            </div>
+
+                            <!-- Answers -->
+                            <div class="accordion-panel color--grey">
+                                {{ Tab-5.A }}
+                            </div>
+
+                        </li>
+                        {% endfor %}
+                    </ul> 
+                </div>
+            </div> <!-- END TAB-5 CONTENT -->
+        </div>
+    </div>
+</div>
