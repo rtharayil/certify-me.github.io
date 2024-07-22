@@ -1,7 +1,7 @@
 ---
-title: "Digital Credentials for Higher Education"
+title: "Digital Transcript Management for Universities and Students"
 
-description: "CertifyMe enables colleges and universities to issue certificates, badges and verifiable transcripts having bank-level encryptions and is enabled with quantum ledger and blockchain to make credentials tamper-proof. "
+description: "Effortlessly manage transcripts with our secure, efficient platform for universities and students. Enhance accuracy, streamline tasks, and ensure top compliance standards."
 
 layout: V4Layoutproduct
 
