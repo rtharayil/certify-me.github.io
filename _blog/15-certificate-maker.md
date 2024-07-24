@@ -1,6 +1,6 @@
 ---
 layout: V4LayoutSingleBlogPost
-title:  15 Free Online Certificate Maker Software in 2023
+title:  15 Free Online Certificate Maker Software in 2024
 
 description: Explore the top 15 free certificate maker software in 2024. Create professional, customizable certificates easily with these user-friendly tools and find your perfect fit!
 
