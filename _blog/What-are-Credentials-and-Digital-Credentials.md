@@ -1,16 +1,20 @@
 ---
-layout: V4LayoutSingleBlogPost
+layout: redirected
+# layout: V4LayoutSingleBlogPost
 title: What are Credentials and Digital Credentials?
-
 description: Credentials are documents proving an individual's competency. Digital credentials are virtual versions, easily shareable and verifiable.
-
 abstract: What are Credentials and Digital Credentials?
 topic: news
 author : Mrunal Upadhye
 imageLink: /img/preview1.png
-featured: true
----
 
+featured: true
+sitemap: false
+permalink: /blog/What-are-Credentials-and-Digital-Credentials
+redirect_to: https://www.certifyme.online/blog/What-is-a-Digital-Credential
+
+---
+<!-- 
 # What are Credentials and Digital Credentials?
 
 
@@ -46,4 +50,4 @@ Credentials are a piece of documents that acts as evidence to prove the personsâ
 
 
 
-
+ -->

@@ -1,15 +1,22 @@
 ---
-layout: V4LayoutSingleBlogPost
+layout: redirected
+#layout: V4LayoutSingleBlogPost
 title: Brand Engagement through Digital Badges and Digital Certificates
-
 description:
-abstract: Brand Engagement through Digital Badges and Digital Certificates
+abstract:
+
 author : Mrunal Upadhye
 topic: news
 imageLink: /img/blog/7.png
 featured: true
+
+featured: true
+sitemap: false
+permalink: /blog/What-are-Digital-Credentials
+redirect_to: https://www.certifyme.online/blog/What-is-a-Digital-Credential
+
 ---
-One of the most crucial concerns organizations tend to have is to achieve attention and engagement from the learners and potential members. An individual who loses his engagement with the brands’ program may lack focus, causing him to feel unsatisfied with the program and may eventually withdraw. This may cause the organization, loss of members and may disturb the progress and brand value. 
+<!-- One of the most crucial concerns organizations tend to have is to achieve attention and engagement from the learners and potential members. An individual who loses his engagement with the brands’ program may lack focus, causing him to feel unsatisfied with the program and may eventually withdraw. This may cause the organization, loss of members and may disturb the progress and brand value. 
 
 Organizations can get their learners and members by issuing digital badges.
 
@@ -31,4 +38,4 @@ Digital badges can be also be displayed to attract learners and increase engagem
 
 ## In Conclusion:
 
-Issuing digital badges is the most effective way to help increase brand engagement. Digital badges display the learners’ competency in the skills achieved which further helps create value for both the brand and the learner.
+Issuing digital badges is the most effective way to help increase brand engagement. Digital badges display the learners’ competency in the skills achieved which further helps create value for both the brand and the learner. -->
