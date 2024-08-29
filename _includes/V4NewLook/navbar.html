@@ -35,29 +35,30 @@
                <ul class="wsmenu-list nav-theme">
 
                   <!-- DROPDOWN SUB MENU -->
-                  <li aria-haspopup="true"><a href="/allIntegrations" class="h-link" >Products <span class="wsarrow"></span></a>
+                  <li aria-haspopup="true"><a href="/allIntegrations" class="h-link">Products <span
+                           class="wsarrow"></span></a>
                      <div class="wsmegamenu w-75 clearfix">
                         <div class="container">
-                     <div class="row">
-                        <ul class="col-md-12 col-lg-6 link-list">
-                        
-                           <li><a href="/digital-certificate">Digital Certificates & Badges</a></li>                           
-                           
-                        </ul>
-                        <ul class="col-md-12 col-lg-6 link-list">
-                           <li><a href="/digital-transcripts"> Instant Transcripts</a>
-                           <li class="nl-simple" aria-haspopup="true">
-                              <a href="https://info.certifyme.online/talk-with-expert?utm_source=google&utm_medium=solutions&utm_campaign=talk+to+us"
-                                 class="btn r-04 btn--theme hover--theme last-link"
-                                 style="text-align: center;">TALK TO OUR EXPERT</a>
-                           </li>
-                        </ul>
+                           <div class="row">
+                              <ul class="col-md-12 col-lg-6 link-list">
 
-                       
+                                 <li><a href="/digital-certificate">Digital Certificates & Badges</a></li>
+
+                              </ul>
+                              <ul class="col-md-12 col-lg-6 link-list">
+                                 <li><a href="/digital-transcripts"> Instant Transcripts</a>
+                                 <li class="nl-simple" aria-haspopup="true">
+                                    <a href="https://info.certifyme.online/talk-with-expert?utm_source=google&utm_medium=solutions&utm_campaign=talk+to+us"
+                                       class="btn r-04 btn--theme hover--theme last-link"
+                                       style="text-align: center;">TALK TO OUR EXPERT</a>
+                                 </li>
+                              </ul>
+
+
+                           </div>
+                        </div>
                      </div>
-                  </div>
-               </div>
-                     
+
                   </li>
 
 
@@ -78,21 +79,22 @@
                                     <div class="row">
                                        <ul class="col-md-12 col-lg-6 link-list">
                                           <!-- <li><a href="/digital-credentials-for-schools">Schools</a></li> -->
-                                          <li class="fst-li"><a href="/credentials-for-elearning-platforms">E-Learning                                                </a></li>
+                                          <li class="fst-li"><a href="/credentials-for-elearning-platforms">E-Learning
+                                             </a></li>
                                           <li class="fst-li"><a href="/digital-badges-for-associations">Associations</a>
                                           </li>
                                           <li><a href="/credentials-higher-education">Colleges & Universities</a>
                                           </li>
-                                                                                 
-                                         
+
+
                                        </ul>
 
                                        <ul class="col-md-12 col-lg-6 link-list">
 
-                                          <li><a href="/digital-badges-for-hr">L&D Departments</a></li>  
+                                          <li><a href="/digital-badges-for-hr">L&D Departments</a></li>
 
-                                          <li><a href="/ICP-FAQs">Use Case FAQs</a></li>                                         
-                                        
+                                          <li><a href="/ICP-FAQs">Use Case FAQs</a></li>
+
                                           <li class="nl-simple" aria-haspopup="true">
                                              <a href="https://info.certifyme.online/talk-with-expert?utm_source=google&utm_medium=solutions&utm_campaign=talk+to+us"
                                                 class="btn r-04 btn--theme hover--theme last-link"
@@ -156,11 +158,22 @@
 
                               <!-- MEGAMENU LINKS -->
                               <ul class="col-md-12 col-lg-6 link-list">
-                                 <li class="fst-li"><a href="https://my.certifyme.online/wallet/verify/widget" target="_blank">Verification Page</a>
+                                 <li class="fst-li"><a href="https://my.certifyme.online/wallet/verify/widget"
+                                       target="_blank">Verification Page</a>
                                  </li>
-                                 <li><a href="/sample-credential">Samples</a></li>
+                                 <li aria-haspopup="true" class="submenu-item">
+                                    <a href="#" class="d-flex align-items-center">
+                                       Samples
+                                       <span class="wsarrow custom-arrow"></span>
+                                    </a>
+                                    <ul class="submenu">
+                                       <li class="fst-li"><a href="/sample-credential">Credential Samples</a></li>
+                                       <li class="fst-li"><a href="https://credential.certifyme.online/learningPaths/awardee/269d680010495" target="_blank">Learning Path</a></li>
+                                       <li class="fst-li"><a href="https://www.wallet.certifyme.online/directory/showcase/15" target="_blank">Showcase Directory</a></li>
+                                    </ul>
+                                 </li>
                                  <li><a href="https://www.youtube.com/channel/UCkbhyRP0L34oPaUOXBkI61w">Videos </a></li>
-                                 
+
                                  <li><a href="/blog">Blogs</a></li>
                                  <li><a href="https://resources.certifyme.online/">Education Resources</a></li>
                               </ul>
@@ -172,7 +185,7 @@
                                  <li class="fst-li"><a href="/gen-FAQ">FAQ</a></li>
                                  <li class="fst-li"><a href="/AboutUs">About Us</a></li>
                                  <li class="fst-li"><a href="/Admin-Roles">Admin Roles</a></li>
-                                
+
                                  <li class="nl-simple" aria-haspopup="true">
                                     <a href="https://info.certifyme.online/talk-with-expert?utm_source=google&utm_medium=solutions&utm_campaign=talk+to+us"
                                        class="btn r-04 btn--theme hover--theme last-link"
@@ -224,3 +237,104 @@
 
    </div> <!-- End header-wrapper -->
 </header> <!-- END HEADER -->
+
+
+<style>
+   .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      border: 1px solid #fff;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      z-index: 1000;
+      width: 100%;
+      box-sizing: border-box;
+      box-shadow: 0 2px 3px rgba(1, 1, 1, .1);
+      
+   }
+
+   .custom-arrow {
+      margin-left: auto;
+      border: solid #333;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(45deg);
+      width: 10px;
+      height: 10px;
+   }
+
+   .submenu-item {
+      position: relative;
+   }
+
+   .submenu-item:hover .submenu {
+      display: block;
+   }
+
+   .submenu li {
+      padding: 2px 5px;
+   }
+
+   .submenu li a {
+      text-decoration: none;
+      display: block;
+      color: #b1b7cd;
+   }
+
+   .submenu li a:hover {
+      color: #007bff;
+      background-color: #2c3142;
+   }
+
+   @media (max-width: 768px) {
+      .submenu {
+         position: static;
+         width: 100%;
+         border: none;
+      }
+
+      .submenu-item:hover .submenu {
+         display: block;
+      }
+
+      .submenu li {
+         padding: 5px 10px;
+      }
+
+      .submenu li a {
+         padding: 10px;
+      }
+
+      .custom-arrow {
+         margin-left: auto;
+         border: solid #333;
+         border-width: 0 2px 2px 0;
+         display: inline-block;
+         padding: 3px;
+         transform: rotate(45deg);
+         width: 10px;
+         height: 10px;
+      }
+
+   }
+</style>
+
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+       var submenuItem = document.querySelector('.submenu-item');
+       var submenu = submenuItem.querySelector('.submenu');
+   
+       submenuItem.addEventListener('click', function(event) {
+           if (window.innerWidth <= 768) { // Check if the viewport is mobile
+               event.preventDefault(); // Prevent the default action
+               submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block'; // Toggle submenu visibility
+           }
+       });
+   });
+   </script>
+   
