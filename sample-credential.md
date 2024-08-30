@@ -19,8 +19,8 @@ projects:
     imageLink: "https://app.certifyme.online/static/fileStore/img/1959/6324/348598_badge_013651.png"
     verifyURL: "https://app.certifyme.online/verify/55bef6ac6324"
   - title: "Certificate And Badge"
-    imageLink: "https://my.certifyme.online/static/fileStore/img/2478/10644/204853_badge_54BEF7.png"
-    verifyURL: "https://app.certifyme.online/verify/135bf56f10644"  
+    imageLink: "https://app.certifyme.online/static/fileStore/img/2478/10644/348599_badge_0B8416.png"
+    verifyURL: "https://app.certifyme.online/verify/9cf66b9d10644"  
   - title: "Transcript"  
     imageLink: "https://www.my.certifyme.online/static/fileStore/img/700/4074/100507_badge_AF61F5.png"
     verifyURL: "https://www.my.certifyme.online/verify/2b72d5c24074"
@@ -34,8 +34,8 @@ projects:
     imageLink: "https://www.my.certifyme.online/static/fileStore/img/1920/6064/150375_badge_98F4A1.png"
     verifyURL: "https://credential.certifyme.online/verify/a42642326064"
   - title: "Credential with OTP verification"
-    imageLink: "https://my.certifyme.online/static/fileStore/img/2478/10644/204853_badge_54BEF7.png"
-    verifyURL: "https://app.certifyme.online/verify/135bf56f10644"  
+    imageLink: "https://app.certifyme.online/static/fileStore/img/3292/17906/350655_badge_5FA383.png"
+    verifyURL: "https://app.certifyme.online/verify/ef02a77617906"  
 
 #G2 section
 G2Title: Global Leader in Digital Certificates & Badge Management

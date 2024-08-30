@@ -161,7 +161,7 @@
                                  <li class="fst-li"><a href="https://my.certifyme.online/wallet/verify/widget"
                                        target="_blank">Verification Page</a>
                                  </li>
-                                 <li aria-haspopup="true" class="submenu-item">
+                                 <!-- <li aria-haspopup="true" class="submenu-item">
                                     <a href="#" class="d-flex align-items-center">
                                        Samples
                                        <span class="wsarrow custom-arrow"></span>
@@ -171,11 +171,17 @@
                                        <li class="fst-li"><a href="https://credential.certifyme.online/learningPaths/awardee/269d680010495" target="_blank">Learning Path</a></li>
                                        <li class="fst-li"><a href="https://www.wallet.certifyme.online/directory/showcase/15" target="_blank">Showcase Directory</a></li>
                                     </ul>
-                                 </li>
+                                 </li> -->
+                                 <li><a href="/sample-credential">Credential Samples</a></li>
+                                 <li class="fst-li"><a
+                                       href="https://credential.certifyme.online/learningPaths/awardee/269d680010495"
+                                       target="_blank">Learning Path Sample</a></li>
+                                 <li class="fst-li"><a href="https://www.wallet.certifyme.online/directory/showcase/15"
+                                       target="_blank">Showcase Directory Sample</a></li>
                                  <li><a href="https://www.youtube.com/channel/UCkbhyRP0L34oPaUOXBkI61w">Videos </a></li>
 
                                  <li><a href="/blog">Blogs</a></li>
-                                 <li><a href="https://resources.certifyme.online/">Education Resources</a></li>
+
                               </ul>
 
                               <!-- MEGAMENU LINKS -->
@@ -185,6 +191,7 @@
                                  <li class="fst-li"><a href="/gen-FAQ">FAQ</a></li>
                                  <li class="fst-li"><a href="/AboutUs">About Us</a></li>
                                  <li class="fst-li"><a href="/Admin-Roles">Admin Roles</a></li>
+                                 <li><a href="https://resources.certifyme.online/">Education Resources</a></li>
 
                                  <li class="nl-simple" aria-haspopup="true">
                                     <a href="https://info.certifyme.online/talk-with-expert?utm_source=google&utm_medium=solutions&utm_campaign=talk+to+us"
@@ -254,7 +261,7 @@
       width: 100%;
       box-sizing: border-box;
       box-shadow: 0 2px 3px rgba(1, 1, 1, .1);
-      
+
    }
 
    .custom-arrow {
@@ -325,16 +332,15 @@
 </style>
 
 <script>
-   document.addEventListener('DOMContentLoaded', function() {
-       var submenuItem = document.querySelector('.submenu-item');
-       var submenu = submenuItem.querySelector('.submenu');
-   
-       submenuItem.addEventListener('click', function(event) {
-           if (window.innerWidth <= 768) { // Check if the viewport is mobile
-               event.preventDefault(); // Prevent the default action
-               submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block'; // Toggle submenu visibility
-           }
-       });
+   document.addEventListener('DOMContentLoaded', function () {
+      var submenuItem = document.querySelector('.submenu-item');
+      var submenu = submenuItem.querySelector('.submenu');
+
+      submenuItem.addEventListener('click', function (event) {
+         if (window.innerWidth <= 768) { // Check if the viewport is mobile
+            event.preventDefault(); // Prevent the default action
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block'; // Toggle submenu visibility
+         }
+      });
    });
-   </script>
-   
+</script>
