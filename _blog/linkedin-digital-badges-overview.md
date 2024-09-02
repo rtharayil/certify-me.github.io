@@ -128,7 +128,7 @@ Engage with industry conferences, workshops, seminars, and networking events to 
 ## Helpful Tip
 
 If you have a digital credential issued through CertifyMe, sharing it on LinkedIn is straightforward and requires much fewer steps than manually adding badges.
-From the CertifyMe platform, you can directly add badges or certificates to your LinkedIn profile by visiting the credential's verification page and selecting the option to share it on LinkedIn. You can find a detailed tutorial [here](https://certifyme.online/blog/add-badges-linkedin-profile.html).
+From the CertifyMe platform, you can directly add badges or certificates to your LinkedIn profile by visiting the credential's verification page and selecting the option to share it on LinkedIn. You can find a detailed tutorial [here](https://www.certifyme.online/blog/linkedin-badges-for-companies.html).
 
 
 ## Conclusion

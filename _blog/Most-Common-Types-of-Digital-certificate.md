@@ -42,7 +42,7 @@ Here are the key elements of a digital certificate that ensure its authenticity:
 <li><b>Digital Signature:</b> A cryptographic signature by the CA that confirms the authenticity of the certificate.</li>
 </ul>
 <br>
-These elements work together to ensure the certificate's reliability and trustworthiness, enabling secure online interactions. For a more comprehensive understanding of digital certificates and their functions, <a href="https://certifyme.online/blog/What-are-Credentials-and-Digital-Credentials.html">click here.</a>
+These elements work together to ensure the certificate's reliability and trustworthiness, enabling secure online interactions. For a more comprehensive understanding of digital certificates and their functions, <a href="https://www.certifyme.online/blog/What-is-a-Digital-Credential.html">click here.</a>
 <br>
 <br>
 
