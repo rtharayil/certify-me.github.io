@@ -15,10 +15,13 @@
 								<!-- Text -->
 								<p class="p-lg">How to connect {{page.customText}} with CertifyMe to send badges and certificates ?
 								</p>
-
+ 
 								<!-- Button -->	
+                                {% if page.HeroButtonLinkText != 'zapier' %}
 								<a href="https://zapier.com/apps/{{page.HeroButtonLinkText}}/integrations/certifyme" class="btn r-04 btn--theme hover--theme">Access {{page.customText}} Integration</a>
-
+                                {% else %}
+                                <a href="https://zapier.com/apps/certifyme/integrations" class="btn r-04 btn--theme hover--theme">Access {{page.customText}} Integration</a>
+                                {% endif %}
 							</div>
 						</div>	<!-- END HERO TEXT -->	
 
@@ -64,8 +67,12 @@
 
                         <!-- Buttons -->
                         <div class="btns-group">
+                            {% if page.HeroButtonLinkText != 'zapier' %}
                             <a href="https://zapier.com/apps/{{page.HeroButtonLinkText}}/integrations/certifyme" target="_blank"
                                 class="btn r-04 btn--theme hover--theme">Access {{page.customText}} Integration</a>
+                            {% else %}
+                            <a href="https://zapier.com/apps/certifyme/integrations" class="btn r-04 btn--theme hover--theme">Access {{page.customText}} Integration</a>
+                            {% endif %}   
                         </div>
 <div style="text-align: left; margin-top: 30px;">
                         <h2>Benefits of Integrating {{page.customText}} with CertifyMe</h2>
