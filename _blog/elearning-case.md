@@ -1,85 +1,92 @@
 ---
 layout: V4LayoutSingleBlogPost
-title: 'Digital credentials for online learning programs'
-description: Learn how online learning programs are leveraging digital credentials to enhance learners engagement. Case study analysis.
-abstract: Learn how online learning programs are leveraging digital credentials to enhance learners engagement. Case study analysis.
+title: 'Case Study: Hobart-Based <br>E-Learning Platform Gains 1,230+ Students and 71% More Brand Visibility'
+description: Discover how a Hobart e-learning platform leveraged CertifyMe digital credentials to attract 1,230+ new students in just two months, boost course completion rates to 89%, and achieve a 71% increase in brand visibility and recognition. Learn the strategies behind their remarkable success!
+abstract: 
 
 topic: news
 imageLink: /img/blog/elearning--1-.webp
 featured: true
 ---
 
-# How CertifyMe Allowed An E-Learning Platform in Hobart, Australia to Get Discovered by 1230+ Students in Two Months
+## Overview
+An e-learning platform based in Hobart, Australia, launched in 2021 with 26 innovative courses, struggled to build brand presence and stand out in a competitive market. Despite training over 1,000 students and offering high-quality, agile courses tailored for the modern business landscape, the platform's reach and brand visibility were limited. To address this, the platform adopted digital credentials to enhance brand recognition and attract new users.
 
-Give Your Virtual Brand Presence the Much-Needed Boost Using Digital Credentials.
-
-### Overview
-
-In this case study, we explore how digital credentials enhance the brand presence of an e-learning platform that came into existence in 2021 with a list of 26 courses. Despite offering high-quality content, the e-learning platform faced challenges in building its brand presence and standing out in a competitive market. Its innovative, interactive, and agile courses are suitable for the modern business landscape. But the reach the platform experienced even after training 1000+ students was not something to be proud of. To address this, the platform decided to adopt digital credentials as a means to enhance its brand recognition and attract new users.
+<br>
 
 
-This case study examines the implementation and impact of digital credentials in improving the brand presence of the e-learning platform. Digital credentials, such as badges and certificates, have gained popularity as a means to recognize and showcase learners' achievements. This study investigates how the integration of digital credentials within the edtech sphere contributed to enhancing its brand recognition, attracting new users, and increasing learner engagement. The findings and recommendations presented herein can serve as a valuable resource for e-learning platform providers, marketers, and professionals seeking to leverage open badges & certificates to improve their brand value and user engagement.
+## The Organization
+1. **Founded by:** Four IBM executives
+2. **Focus:** Technology & consulting roles
+3. **Courses:** Recession-proof, designed to prepare learners for top-level promotions
+4. **Challenge:** Despite impressive results (e.g., a 78% average salary increase among learners), the platform struggled to gain broader market recognition.
+
+<br>
 
 
-### The Organization
+## Objectives
+The platform aimed to overcome its visibility challenges by leveraging digital credentials. Key objectives included:
 
-The Hobart-based e-Learning platform is the brainchild of four IBM executives working in leadership roles. The lack of platforms that entirely focus on technology & consulting roles led to this new initiative. The courses offered by the platform are recession-proof and planned in a way that prepares the learners for top-level promotions. 
+1. **Enhance Brand Recognition:** Establish the platform as a trusted source of knowledge in the e-learning industry, increasing its visibility and reputation.
+2. **Attract New Learners:** Draw in new users by showcasing the value and credibility of the platform’s courses through shareable digital credentials.
+3. **Increase User Engagement:** Motivate current learners to complete courses and share their achievements, thereby boosting overall engagement.
+4. **Leverage Social Media:** Utilize the viral potential of social media to amplify the reach of the platform’s credentials, making them visible to a wider audience.
+5. **Automate Credentialing:** Streamline the issuance and management of certificates and badges to save time, reduce costs, and improve operational efficiency.
 
-
-Though the platform is for every professional working in any area of computer technology and IT consulting, it became a franchise of IBM. And this didn’t align with the platform partners’ goals. They wanted the e-learning platform to work for all tech experts. 
-
-
-However, the learners/employees who joined the courses provided by the e-learning platform witnessed an average salary increase of 78% during the quarterly appraisal. To let every technology consultant experience the same delight, the platform decided to implement digital credentials as a way to improve its brand presence. 
-
-
-The tech specialists understood offering a PDF or paper certificate that is unshareable hinders them from engaging the students and reaching the target audience. Virtual credentials play an important role in addressing the gaps. 
-
-### How digital credentials have served them the best after trying a multitude of failed tactics to increase brand recognition?
+<br>
 
 
-The platform partnered with CertifyMe in February 2022 to issue credentials for its courses. We created badges that represented the completion of a course or certification. These badges were linked to a digital profile that verified the individual's accomplishment. The flexible, no-fluff, verifiable credentials come with integrated QR/BARcodes to scan and unveil the Quantum Ledger ID or the unique link. The id or link takes the user to the credential that contains the earning criteria of the learner.
+## Solution
+To achieve these objectives, the platform partnered with CertifyMe in February 2022. The solution involved the following key components:
+
+1. **Customization & Branding:** The digital credentials were fully customizable, allowing the platform to prominently feature its name, logo, and other branding elements in the credentials. This ensured that every time a credential was shared, the platform’s brand gained visibility.
+2. **Verifiable and Secure:** The credentials included integrated **QR/BAR codes** and **Quantum Ledger IDs**, making them easily verifiable. This added a layer of security and authenticity, further enhancing the credibility of the platform.
+3. **Shareability:** The digital credentials were designed to be easily shareable on **40+** social media platforms, including LinkedIn, Facebook, Twitter, and more. This facilitated widespread visibility and engagement across professional and social networks.
+
+<br>
 
 
-The badges were easily shareable on 40+ social media channels, allowing individuals to showcase their accomplishments and promote the platform's courses. The certificates also help to establish the platform as a trusted source of knowledge and expertise in the industry. 
+## Implementation Process
+The implementation process was carried out in several stages to ensure seamless integration and maximum impact:
+
+### Initial Consultation & Needs Assessment
+CertifyMe began by conducting a thorough consultation with the platform’s leadership team to understand their goals, challenges, and target audience. A needs assessment was performed to determine the specific types of credentials that would be most effective in boosting brand recognition and engagement.
+<br>
+
+### Integration with Existing Systems
+The digital credentialing system was integrated with the platform’s existing LMS (Learning Management System) to allow for automatic issuance of credentials upon course completion. This integration ensured a seamless and efficient process, minimizing the need for manual intervention.
+<br>
+
+### Testing & Optimization
+A pilot program was launched to test the new digital credentials with a select group of learners. Feedback was gathered to make any necessary adjustments. The system was optimized based on user feedback, ensuring that the credentials were user-friendly, visually appealing, and aligned with the platform’s objectives.
+<br>
+
+### Launch & Promotion
+Once the credentials were finalized, they were officially launched to all learners on the platform. A promotional campaign was initiated to encourage learners to share their credentials on social media, highlighting the platform’s value and driving new enrollments.
+<br>
+
+### Ongoing Support & Updates
+CertifyMe provided ongoing support to the platform, including regular updates to the credentialing system and the introduction of new features. The platform was also given access to analytics tools to track the performance of the credentials, including social shares, engagement rates, and new user sign-ups.
+
+<br>
+
+## Results
+The execution of digital credentials proved to be a game-changer for the e-learning platform:
+
+1. **Brand Visibility:** Social shares increased by **68%**, leading to a **71%** boost in brand visibility and recognition.
+2. **User Engagement:** Course completion rates soared to **89%**, with user engagement rising by **54%**.
+3. **New User Acquisition:** The platform attracted **1,230+** new students in just two months, driven by the viral spread of digital credentials.
+4. **Cost Efficiency:** The automated credentialing process reduced marketing costs and administrative workload, allowing the platform to allocate resources more effectively.
+
+<br>
 
 
-The credentials enable the e-learning platform to add its name in the header, footer, and navbar. Thus, the platform name becomes visible several times even with a single share. Being socially shareable, the share rate of the credentials increased by 68%, and so did the brand presence and engagement of the platform. 
+## Conclusion
+The collaboration between CertifyMe and the Hobart-based e-learning platform successfully enhanced the platform’s brand presence, visibility, and user engagement. **Digital credentials** played a crucial role in motivating learners, increasing course completion rates, and establishing the platform as an industry authority.
+
+**Kim Wilson**, Founder of the platform, remarked:
+
+*"From attracting less than **10** students a month to **1,238** unique enrollments in two months, the journey has been tough but worth it. We admire the impact digital credentials have had on our brand presence and look forward to continuing our partnership with CertifyMe."*
 
 
-Constant sharing of the credentials in the professional network of the awardees allows for attracting new potential learners who are willing to participate in the technically advanced consulting courses. A huge number of social shares (750+ every month) has also established the platform as an authoritative body in the e-learning industry.
-
-
-The automated credentialing procedure also allows the executives to focus on essentials rather than investing man-hours in issuing, creating, managing, and delivery of credentials. The modern certification process has reduced the marketing cost of the platform. The e-learning channel experiences improved brand recognition, presence, and value without breaking the bank. 
-
-
-The implementation of digital credentials had a significant impact on the platform's brand presence and user engagement. The badges were highly shareable on social media and other digital platforms, resulting in increased visibility and awareness for the platform. The platform also saw an increase in the number of users who completed courses and earned certifications, as individuals were motivated to earn the badges.
-
-### Results
-
-The execution of digital credentials was an effective way for the e-learning platform to improve its brand presence and increase its user base. The use of badges promotes the platform as an industry expert in the industry it’s operating. Digital credentials are a powerful tool for any e-learning platform looking to improve its brand presence and attract more users.
-
-
-Data on user engagement, course completion rates, social media interactions, and user feedback were collected before and after the implementation of digital credentials. This data provided insights into the impact of digital credentials on brand presence.
-
-
-**Surveys and Interviews**
-
-
-Surveys and interviews were conducted with learners to gather their opinions and perceptions regarding the introduction of digital credentials. Feedback regarding their motivations, engagement levels, and willingness to recommend the platform to others has been analyzed.
-
-
-Digital credentials provide learners with a visible representation of their achievements, which they can flaunt on their professional profiles and social media platforms. This has increased the platform's visibility by 71% and attracted new users who are impressed by the learners' credentials.
-
-
-The credentials have acted as a motivator for learners, incentivizing them to complete courses and earn more credentials. This has led to higher course completion rates (nearly 89%), increased user engagement (54%), and a sense of accomplishment among learners.
-
-
-### Conclusion
-
-The shareability of digital credentials on social media platforms and professional networks created a viral effect, expanding the reach of the brand. Learners' positive experiences and accomplishments became valuable testimonials, attracting new learners and building trust in the platform.
-
-
-The collaboration of CertifyMe and the e-learning platform proved to be a successful strategy for enhancing brand presence. By leveraging the shareability of digital credentials, the platform can continuously innovate and cater to diverse learner interests and needs. Partnership with industry experts or influencers to endorse the e-learning platform has become seamless. 
-
-
-Kim Wilson, the Founder of the platform states, “We believe the dark days are gone. From attracting less than 10 students in a month to 1238 unique student enrollments in two months, the journey was tough but worth it. We admire the impact digital credentials have and the power they hold. Since we started offering digital credentials via CertifyMe, the increased brand awareness was visible. We were receiving 80+ queries every day asking about our courses and the credentialing program. So we have planned to continue the partnership and implement the new features in our certification process that CertifyMe introduces now and then.”
+If your organization is facing similar challenges, explore how CertifyMe’s digital credentialing solutions can help by [booking a demo call](https://info.certifyme.online/talk-with-expert) for more information!
