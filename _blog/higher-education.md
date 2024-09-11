@@ -1,9 +1,9 @@
 ---
 layout: V4LayoutSingleBlogPost
-title:  'Case Study: Digital Credential for Universities'
+title:  'Case Study: Leeds University Achieves 39% Cost Reduction with CertifyMe Credentials'
 
-description: Learn how higher educational institutions are leveraging digital credentials to enhance student engagement and showcase professional achievements.
-abstract: Learn how higher educational institutions are leveraging digital credentials to enhance student engagement and showcase professional achievements.
+description: Learn how Leeds University reduced credentialing costs by 39%, cut down paper consumption by 96%, and advanced its sustainability objectives by adopting CertifyMe’s digital credentialing system. Discover the custom strategies and game plan that led to these impressive outcomes.
+abstract: 
 
 topic: news
 author : Mrunal Upadhye
@@ -11,80 +11,69 @@ imageLink: /img/blog/higher_education_case_study.jpg
 featured: true
 ---
 
-# A University's Attempt to Achieve Sustainability through Digital Credentials
+## Overview
+Sustainability has become a central issue for universities globally as they strive to minimize their environmental footprint. Leeds University, with its prestigious Master’s program in Environmental Change and Management, recognized the need to adopt sustainable practices in credentialing. Each year, over 600 students enrolled in the program, but the university's reliance on traditional paper certificates posed a significant environmental challenge. With printing and delivery processes contributing to deforestation and high operational costs, the institution sought a greener solution. This case study highlights how Leeds University successfully transitioned to digital credentials to support its sustainability goals.
 
-Assisted the university in Leeds reduce credentialing costs up to 39% with a laser-focus on sustainability.
+<br>
 
-### The Overview
+## The Organization
+1. **Founded:** 1874
+1. **Focus:** Environmental sustainability and green solutions
+1. **Courses:** Specialized in Environmental Change and Management
+1. **Challenge:** Despite its eco-conscious reputation, Leeds University’s traditional credentialing practices were wasteful, contributing to deforestation and increasing operational costs. Efforts to implement a digital solution had previously failed due to a lack of customer support and complex setup, leading the university to revert to paper-based certificates.
 
-Sustainability is a controversial issue. Universities around the world have been actively exploring sustainable practices to reduce their carbon footprint. One such initiative involves the implementation of digital credentials, an innovative approach that aims to replace traditional paper-based certificates with electronic versions. This case study examines the efforts of a Leeds-based university to embrace sustainability through the adoption of digital certificates & badges.
+<br>
 
-The university in question offers a Master's program in Environmental Change and Management. Every year 600+ students enroll in this program. But soon the institute management realizes that the authority of the educational establishment is not following sustainable practices. The credentialing rules of the university play a leading role in the lack of green solutions. Thousands of trees are cut down every year to reward the students of the university. The added cost of printing, credential delivery, and mailing them to the student's address not only increases the budget for certification programs but also impacts its green credit score. 
+## Objectives
+Leeds University aimed to address the following key objectives with CertifyMe’s digital credentialing solution:
+1. **Environmental Sustainability:** Reduce paper waste and carbon emissions by transitioning to digital certificates and badges.
+1. **Efficiency and Accessibility:** Streamline the credentialing process and make certificates easily accessible and shareable for students, alumni, and employers.
+1. **Enhancing Reputation:** Demonstrate leadership in sustainability and position the university as an innovator in the higher education sector.
 
-### The Organization
+<br>
 
-The Leeds-based university is a leading institution known for its commitment to creating a green environment. The 236-year-old educational institute started to invest in sustainable choices in the past decade. The university management identified digital credentials as a replacement for paper certificates. They partnered with a credentialing software but its lack of customer support and complex setup made them shift to traditional certificates. The production, distribution, and storage of these documents consumed significant resources, contributing to deforestation and waste generation. The university sought to leverage the digital credentials of CertifyMe to streamline its credentialing process and reduce its greenhouse effect.
+## Solution
+In collaboration with CertifyMe, Leeds University implemented a secure and user-friendly digital credentialing system with the following key features:
+1. **Blockchain-Enabled Credentials:** CertifyMe’s technology ensure the integrity and authenticity of the digital credentials, eliminating the need for physical documentation.
+1. **Custom Branding and Integration:** Digital credentials were customized to prominently display the university’s branding, and the system was seamlessly integrated with the existing LMS (Learning Management System) for automated credential issuance.
+1. **Social Media Shareability:** Graduates could easily share their credentials across 40+ social media platforms, promoting the university’s brand and demonstrating their achievements to potential employers.
 
-### Objectives:
+<br>
 
+## Implementation Process
 
-1. **Environmental Sustainability:** Reduce paper waste and associated carbon emissions by transitioning from paper-based certificates to digital credentials.
+### Consultation and Needs Assessment
+CertifyMe collaborated with key university departments, including the registrar, IT, and communications teams, to fully understand the university’s sustainability goals and credentialing requirements. This consultation ensured that the solution was tailored to the institution’s specific needs and objectives.
 
+### Pilot Program
+A pilot program was launched to test the new system with a selected group of students and alumni. This allowed the university to gather feedback, address any issues, and ensure smooth functionality before a full-scale implementation.
 
-1. **Efficiency and Accessibility:** Streamline the credentialing process by providing secure and easily shareable electronic certificates that can be accessed anytime, anywhere, enhancing convenience for graduates, employers, and other stakeholders.
+### Integration and Training
+CertifyMe’s digital credentialing platform was seamlessly integrated with the university’s existing Learning Management System (LMS), streamlining the credentialing process. To ensure a smooth transition, staff and students were provided with training on how to access, use, and share their digital certificates.
 
+### Official Launch and Social Media Engagement
+After finalizing the digital credentials, the university launched them to all learners on the platform. A strategic promotional campaign was introduced, encouraging students to share their achievements on social media, amplifying the platform’s reach and driving new student enrollments.
 
-1. **Enhancing Reputation:** Demonstrate the university's commitment to sustainability and position it as a forward-thinking institution in higher education.
+### Continuous Support and Performance Tracking
+CertifyMe provided ongoing support, delivering regular updates and adding new features to the platform. Additionally, analytics tools were made available to track performance, including social shares, engagement rates, and new user sign-ups, ensuring continuous optimization of the credentialing system.
 
+<br>
 
-### Implementation Process
+## Results
 
+1. **Environmental Impact:** Leeds University reduced its paper consumption by **96%**, significantly lowering its carbon footprint.
+1. **Cost Savings:** The switch to digital credentials led to a **39%** reduction in credentialing costs, thanks to savings on printing, distribution, and storage.
+1. **Improved Efficiency:** The automated system accelerated certificate issuance and verification, freeing up administrative resources and enhancing operational efficiency.
+1. **Enhanced Accessibility:** Students could easily access their credentials via CertifyMe’s platform, and sharing on platforms like LinkedIn provided greater visibility for both the university and its graduates.
+1. **Positive Feedback:** Stakeholders, including students, alumni, and employers, praised the convenience and eco-friendly nature of digital credentials, reinforcing the university’s reputation as a leader in sustainability.
 
-1. **Technology Adoption:** The university collaborated with CertifyMe to implement a secure and user-friendly system for generating and issuing digital certificates. Blockchain-enabled technology ensures the integrity and authenticity of the credentials.
+<br>
 
+## Conclusion
+Leeds University’s adoption of [CertifyMe’s digital credentials](https://www.certifyme.online/) proved instrumental in achieving its sustainability objectives and streamlining the credentialing process. By embracing digital technology, the university drastically reduced paper waste and associated costs, while enhancing accessibility and convenience for students and employers alike.
 
-1. **Stakeholder Engagement:** The university formed a cross-functional team involving representatives from various departments, including the registrar's office, IT services, and communications. This team collaborated with us to define the requirements. We communicated how we can help them and how we address the concerns of stakeholders such as students, faculty, and employers.
+As **Averitt Hughes, the Head of the Human Resource Department**, stated, 
 
+*“Choosing CertifyMe was the best decision we made for our sustainability goals. This collaboration has taught us the value of small, impactful steps that contribute to a healthier planet.”*
 
-1. **Pilot Programme:** The pilot program conducted by the university involved a selected group of students and alumni to test the feasibility and effectiveness of the credentials. Feedback and suggestions were actively sought to fine-tune the system and address handling or set-up issues.
-
-
-1. **Integration and Training:** The digital credentialing platform of CertifyMe was integrated with the university's existing learning management system (LMS) to ensure seamless issuance and management of credentials. Training sessions were conducted to acquaint the staff with the new tool and educate students on accessing and sharing their digital certificates.
-
-
-### Outcomes 
-
-
-1. **Environmental Impact:** The university reduced its paper consumption and carbon emissions (96%) associated with printing, transportation, and storage of traditional certificates.
-
-
-1. **Improved Efficiency:** The implementation of digital credentials streamlined the credentialing process, reducing administrative duties, and costs and enabling faster certificate issuance and verification.
-
-
-1. **Enhanced Accessibility:** Graduates can easily access their digital certificates through the CertifyMe platform. The credentials remain stored in our digital wallet. Along with the certificate & badges, students also get a shortcut to the ‘Add to Linkedin’ button. Sharing and showcasing the newly gained knowledge & skills among potential employers or educational institutions became simpler. 
-
-
-1. **Positive Stakeholder Feedback:** Students, alumni, and employers appreciated the convenience, security, and sustainability offered by digital credentials. This initiative positively impacted the university's reputation and brand image.
-
-
-1. **Scalability and Cost Savings:** The digital credentialing system of CertifyMe is scalable. It accommodates the growing number of graduates each year. Eliminating paper and printing expenses has reduced the credentialing cost of the university by 39%.
-
-
-### Conclusion
-
-The plan of implementing digital credentials has proven successful for the Leeds-based university. The newly-achieved sustainability objectives exhibit the institute’s commitment to environmental responsibility. By embracing digital technology, the university reduced its ecological footprint and eliminated paper waste & the associated carbon emissions. The transition to digital credentials also improved efficiency, making the credentialing process faster and more convenient for students, employers, and other stakeholders.
-
-
-The positive feedback received from learners, alumni, and hiring organizations highlighted the accessibility and security offered by digital credentials. Graduates were able to easily access and share their electronic certificates on 40+ social channels. It provides them with a competitive edge in the job market. Employers appreciated the streamlined verification process and the ability to quickly authenticate the qualifications of applicants from the university.
-
-
-The successful implementation of digital credentials also contributed to enhancing the university's reputation as an institution at the forefront of sustainable practices in higher education. The university was recognized as a leader in the adoption of innovative solutions to address environmental challenges and showcased its commitment to preparing graduates for a digital future.
-
-
-Continuous evaluation of their experience and feedback collection played a crucial role in identifying areas for improvement and refining the digital credentialing system. The institute embraced a culture of constant improvement and adapted to evolving needs and technological advancements.
-
-
-The collaborative partnership with CertifyMe proved to be instrumental in the successful implementation and maintenance of the system. Choosing us allowed the university to accommodate the growing number of graduates while optimizing costs.
-
-
-Averitt Hughes, the Head of the Human Resource Department of the university announced CertifyMe as ‘the best choice I have ever made’. He is the one who suggested us to the university's Sustainability Program Manager and was proud of us. According to him, ‘is a 236-year-old prestigious educational institute with an ongoing MSc program in Sustainability and Change Management, the paper certificate was affecting our reputation. For a very long time, we were scrolling through the internet and comparing & checking several credentialing platforms all over the world. But nothing met our expectations as CertifyMe. This collaboration taught me how our one step can extend the earth’s life by 20 years. When this is so simple, why not invest in it?’
+The successful partnership with CertifyMe allowed the university to maintain its green commitments and positioned it as a leader in sustainable education practices. If your institution is looking to adopt sustainable practices while enhancing operational efficiency, consider partnering with CertifyMe. [Book a demo today](https://info.certifyme.online/request-demo) and take the first step toward a greener future!
