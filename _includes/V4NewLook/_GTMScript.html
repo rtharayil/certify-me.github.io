@@ -1,21 +1,40 @@
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TGB2DJ2');</script>
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TGB2DJ2');</script>
 
 <!-- clarity Manager -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "ln6ov8difm");
-    </script>
-        <!-- End clarity Manager -->
+<script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "ln6ov8difm");
+</script>
+<!-- End clarity Manager -->
 
-    <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
-            o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
-            o.onload=function(){window.trackingFunctions.onLoad({appId:"6632557dece980058cea9765"})},
-            document.head.appendChild(o)}initApollo();</script>
+<script>function initApollo() {
+        var n = Math.random().toString(36).substring(7), o = document.createElement("script");
+        o.src = "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=" + n, o.async = !0, o.defer = !0,
+            o.onload = function () { window.trackingFunctions.onLoad({ appId: "6632557dece980058cea9765" }) },
+            document.head.appendChild(o)
+    } initApollo();</script>
+
+
+
+<!-- G2 Manager -->
+<script>(function (c, p, d, u, id, i) {
+    id = ''; // Optional Custom ID for user in your system
+    u = 'https://tracking.g2crowd.com/attribution_tracking/conversions/' + c + '.js?p=' + encodeURI(p) + '&e=' + id;
+    i = document.createElement('script');
+    i.type = 'application/javascript';
+    i.async = true;
+    i.src = u;
+    d.getElementsByTagName('head')[0].appendChild(i);
+  }("1019807", document.location.href, document));
+</script>
