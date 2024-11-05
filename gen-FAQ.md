@@ -1,5 +1,5 @@
 ---
-title: "FAQ Questions &amp; Answers"
+title: "FAQ Question &amp; Answers"
 
 description: "We answer your frequently asked questions about CertifyMe and the easy-to-use digital credential software in the industry."
 

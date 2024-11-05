@@ -9,10 +9,10 @@ sitemap.priority: 0.9
 
 # hero section
 HeroTitle: Transforming Transcript Management for Universities and Students
-HeroText: InstantTranscript streamlines the secure issuance and management of transcripts, migration, transfer, bonafide, and rank certificates.
+HeroText: EduTranscript streamlines the secure issuance and management of transcripts, migration, transfer, bonafide, and rank certificates.
 HeroImage: assets4/images/verf8.png
 
-BoxContentTitle: What InstantTranscript Brings to Your Institution
+BoxContentTitle: What EduTranscript Brings to Your Institution
 BoxContentText1: Earn with Every Request
 BoxContentText2: Automate and Optimize
 BoxContentText3: Simplify Student Life
@@ -38,18 +38,16 @@ Feature2_2Icon: <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.
 
 Feature3Image: assets4/images/verf3.png
 Feature3Title: Streamline Your Workflow and Boost Efficiency
-Feature3Text: "InstantTranscript automates and streamlines credential management by digitizing and centralizing requests, reducing administrative tasks, and improving operational efficiency, allowing your team to focus on more important activities."
+Feature3Text: "EduTranscript automates and streamlines credential management by digitizing and centralizing requests, reducing administrative tasks, and improving operational efficiency, allowing your team to focus on more important activities."
 
 
 Feature4Image: assets4/images/verf2.png
 Feature4Title: Seamless, Secure and Student-Centric Solutions
-Feature4Text: "
-Our advanced platform seamlessly connects with universities and higher education institutions around the world to efficiently process and manage a diverse range of academic credentials, all while ensuring the highest standards of security and compliance.
-"
+Feature4Text: "Our advanced platform seamlessly connects with universities and higher education institutions around the world to efficiently process and manage a diverse range of academic credentials, all while ensuring the highest standards of security and compliance."
 
 Feature5Image: assets4/images/verf1.png
 Feature5Title: Enhance the Student Experience
-Feature5Text: "InstantTranscript gives students instant digital access to their academic records, making it simple to request, receive, and exchange credentials. This improves their entire experience and streamlines their educational journey."
+Feature5Text: "EduTranscript gives students instant digital access to their academic records, making it simple to request, receive, and exchange credentials. This improves their entire experience and streamlines their educational journey."
 
 #G2 section
 G2Title: Global Leader in Digital Certificates & Badge Management

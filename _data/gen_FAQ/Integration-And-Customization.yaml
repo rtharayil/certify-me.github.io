@@ -1,6 +1,6 @@
 - Q:  Can I integrate CertifyMe with other learning management systems or platforms?
   A: <p>Our open API system allows you to integrate your CertifyMe account
-                                            with any LMSs. We seamlessly integrate with Integrately, Zapier, and
+                                            with any LMS's. We seamlessly integrate with Integrately, Zapier, and
                                             Moodle.
                                         </p>
 
@@ -87,4 +87,42 @@
     integrating CertifyMe with SSO solutions offers convenience, efficiency, and 
     enhanced security for organizations and their users.
   c: 8
+- Q: How can I change the branding and design settings for my certificates and badges?
+  A: <p>You can change your credential template any time irrespective of your
+                                            plan. You can do it from the ‘Edit your credential template image’
+                                            in the <a
+                                                href="https://credential.certifyme.online/credentialTemplate/template"
+                                                target="_blank">Design Template</a> section.
+                                        </p>
 
+                                        <!-- Text -->
+                                        <p>For branding solutions, choose between our Business and Enterprise
+                                            plans. Check the <a href="https://www.certifyme.online/pricing"
+                                                target="_blank">Pricing Plan</a> to explore which plan includes
+                                            what
+                                            branding solutions.
+                                        </p>
+  c: 9 
+- Q: Are there options for adding multimedia elements to digital credentials?
+  A: Although CertifyMe does not offer options for adding multimedia elements on to digital
+    credentials itself, reawarder can enhance their credential by incorporating multimedia elements
+    such as images and videos to the webpage itself.
+  c: 10
+- Q: Are there options for adding electronic signatures to digital credentials?
+  A: Yes, CertifyMe provides options for adding cryptographic signature. Users can digitally sign their
+    credentials, adding an extra layer of authenticity and security to the issued credentials.
+  c: 11
+- Q: Can CertifyMe generate secure links for sharing digital credentials?
+  A: Yes, CertifyMe can generate secure links for sharing digital credentials. Users can generate
+    unique, secure links that allow recipients to access and verify their credentials securely.
+  c: 12
+- Q: Does CertifyMe offer options for adding metadata to digital credentials?
+  A: Yes, CertifyMe offers options for adding metadata to digital credentials. Users can include
+    additional information or metadata such as issue date, issuer information, or description to
+    provide more context and enhance the value of the credentials.
+  c: 13
+- Q: Does CertifyMe offer options for setting expiration dates on digital credentials?
+  A: Yes, CertifyMe offers options for setting expiration dates on digital credentials. Users can
+    configure expiration dates for credentials to ensure that they remain valid only for a specified
+    period, enhancing security and compliance with organizational policies.
+  c: 14                                    
