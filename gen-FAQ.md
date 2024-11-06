@@ -1,10 +1,9 @@
 ---
-title: "FAQ Question &amp; Answers"
+title: "FAQ's - Digital Credential"
 
-description: "We answer your frequently asked questions about CertifyMe and the easy-to-use digital credential software in the industry."
+description: "Below, you'll find answers to the most common questions you may have on CertifyMe Digital Credentials. If you still can't find the answer you're looking for, just Contact Us!"
 
 layout: V4LayoutGeneral-FAQ
 
-# talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
-sitemap.priority : 0
+sitemap.priority : 0.5
 ---
