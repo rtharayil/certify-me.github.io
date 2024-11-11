@@ -3,7 +3,7 @@ title: "Digital Transcript Management for Universities and Students"
 
 description: "Effortlessly manage transcripts with our secure, efficient platform for universities and students. Enhance accuracy, streamline tasks, and ensure top compliance standards."
 
-layout: V4Layoutproduct
+layout: V4Layout-EduTranscript
 
 sitemap.priority: 0.9
 
