@@ -5,12 +5,12 @@
 
   // Create badge element
   const badge = document.createElement("a");
-  badge.href = config.linkUrl || "#";
+  badge.href = config.linkUrl || "https://www.certifyme.online";
   badge.target = "_blank";
   badge.style.position = "fixed";
   badge.style.width = config.size || "50px";
   badge.style.height = config.size || "50px";
-  badge.style.backgroundImage = `url(${config.imageUrl || "https://via.placeholder.com/50"})`;
+  badge.style.backgroundImage = `url(${config.imageUrl || "https://www.certifyme.online/assets4/images/Logo/CertifyMe-LOGO.jpg"})`;
   badge.style.backgroundSize = "cover";
   badge.style.backgroundPosition = "center";
   badge.style.cursor = "pointer";
