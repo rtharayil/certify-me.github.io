@@ -9,7 +9,7 @@ sitemap.priority: 0.9
 
 # hero section
 HeroTitle: Transforming Transcript Management for Universities and Students
-HeroText: EduTranscript streamlines the secure issuance and management of transcripts, migration, transfer, bonafide, and rank certificates.
+HeroText: EduTranscript streamlines the secure issuance and management of transcripts, migration, transfer, bona fide, and rank certificates.
 HeroImage: assets4/images/verf8.png
 
 BoxContentTitle: What EduTranscript Brings to Your Institution
