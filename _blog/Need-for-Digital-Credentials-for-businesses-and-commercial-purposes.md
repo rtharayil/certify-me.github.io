@@ -1,6 +1,6 @@
 ---
 layout: V4LayoutSingleBlogPost
-title: Need for Digital Crenditials for businesses and commercial purposes
+title: Need for Digital Credentials for businesses and commercial purposes
 
 description: Digital credentials are crucial for businesses as they enhance employees' skills, save costs, and promote career development.
 
@@ -11,7 +11,7 @@ author : Mrunal Upadhye
 imageLink: /img/blog/credential/31.png
 featured: true
 ---
-## Need for Digital Crenditials 
+## Need for Digital Credentials 
 
 
 
