@@ -1,17 +1,17 @@
 ---
 layout: V4LayoutSingleBlogPost
-title: How can your institution benifit from Digital Credentials
+title: How can your institution benefit from Digital Credentials
 
 description: Digital credentials benefit institutions through cost-effectiveness, promotion, and enhanced security, attracting learners and promoting legitimacy.
 
-abstract: How can your institution benifit from Digital Credentials
+abstract:
 
 topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/credential/28.png
 featured: true
 ---
-# How can your institution benifit from Digital Credentials
+# How can your institution benefit from Digital Credentials
 
 Any institution can improve its performance and engagement with constant development staying updated about new tools and technologies. With the recent global pandemic and its return bringing in digital transformation, institutions must enhance their digital skills and adapt to new digital technologies.
 
