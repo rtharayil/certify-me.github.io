@@ -8,7 +8,7 @@ sitemap.priority: 0.9
 
 
 # hero section
-heroTitle: A Sertifier alternative that switch things up without burning a hole in your pocket
+heroTitle: A Sertifier alternative that shakes things up without burning a hole in your pocket
 herosubTitle: Sertifier's alternative digital credentialing platform that allows organizations to create, issue, manage, and share digital badges and certificates.
 heroImage: /assets4/images/certifyme_vs_sertifier.png
 
