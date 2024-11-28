@@ -31,7 +31,8 @@ Picture this: you're applying for a job, but instead of emailing copies of your 
 This seamless process benefits both individuals and organizations, reducing administrative hurdles while ensuring accuracy and security. Verified credentials are transforming traditional verification methods, making them faster, more reliable, and infinitely more convenient.
 
 
-<img class="img-fluid r-16" src="/img/blog/ultimate-guide-to-verified-credentials/w3c.jpg" alt="What Are Verified Credentials?">
+<img class="img-fluid r-16 d-block mx-auto" src="/img/blog/ultimate-guide-to-verified-credentials/w3c.jpg" alt="What Are Verified Credentials?">
+
 
 <br>
 
@@ -132,7 +133,7 @@ At their heart, verified credentials function through a straightforward trust sy
 
 This triangular relationship ensures a seamless process where credentials are issued, held securely, and verified effortlessly, forming the backbone of trust in a digital ecosystem.
 
-<img class="img-fluid r-16" src="/img/blog/ultimate-guide-to-verified-credentials/IMG-20241127-WA0011.jpg" alt="image">
+<img class="img-fluid r-16 d-block mx-auto" src="/img/blog/ultimate-guide-to-verified-credentials/IMG-20241127-WA0011.jpg" alt="image">
 
 <br>
 
@@ -198,12 +199,12 @@ Verifying the authenticity of verified credentials is a simple and secure proces
 
 1. **Access the Verification Platform:** The link or QR code will take you to a verification platform that connects to the blockchain or decentralized database. This platform houses the cryptographic proofs needed to authenticate the credential. Each credential will have a unique [Quantum ledger ID](https://www.certifyme.online/quantum-ledger), making sure that the credential is immutable and tamper-proof.
 
-    <img class="img-fluid r-16" src="/img/blog/ultimate-guide-to-verified-credentials/Credential Verification.png" alt="Credential Verification">
+    <img class="img-fluid r-16 d-block mx-auto" src="/img/blog/ultimate-guide-to-verified-credentials/Credential Verification.png" alt="Credential Verification">
 
 
 4. **Check the Cryptographic Proofs:** Over there, you can manually verify the credential by typing in the email address of the awardee. The system will then validate the cryptographic proofs associated with the credential, checking them against a secure, immutable record.
 
-    <img class="img-fluid r-16" src="/img/blog/ultimate-guide-to-verified-credentials/Verification image.png" alt="Verification image">
+    <img class="img-fluid r-16 d-block mx-auto" src="/img/blog/ultimate-guide-to-verified-credentials/Verification image.png" alt="Verification image">
 
 5. **Verify the Issuer’s Identity:** The platform will confirm whether the credential was issued by a trusted organization. It will also provide details about the credential's authenticity.
 
