@@ -1,34 +1,33 @@
 <!-- SINGLE POST ============================================= -->
 <style>
+    .blogcontent h1 {
+        word-spacing: 10px;
+    }
 
-.blogcontent h1 {
-  word-spacing: 10px;
-}
+    .blogcontent p {
+        color: black;
+    }
 
-.blogcontent p {
-    color : black;
-}
-.blogcontent li {
-    color : black;
-}
-.blogcontent h2 {
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
+    .blogcontent li {
+        color: black;
+    }
 
-.blogcontent img {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
+    .blogcontent h2 {
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
 
-
-.blogcontent h3 {
-  font-size: 24px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
+    .blogcontent img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 
 
+    .blogcontent h3 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
 </style>
 
 <section id="single-post" class="pb-90 inner-page-hero blog-page-section mb-5">
@@ -89,7 +88,7 @@
                             <!-- HERO IMAGE -->
                             <div class="col-md-6">
                                 <div class=" text-center" style="padding-bottom: 20px;">
-                                    <img src="{{page.imageLink}}" class="img-fluid r-16" alt="{{page.title}}" >
+                                    <img src="{{page.imageLink}}" class="img-fluid r-16" alt="{{page.title}}">
                                 </div>
                             </div>
 
@@ -138,10 +137,10 @@
                     <!--  SINGLE POST TITLE -->
                     {% if page.abstract %}
                     <div class="single-post-title text-left">
-                       
+
                         <h6 class="fs-4 ;">Summary </h6>
                         <p class="mb-35  lh-lg ml-0 " style="text-align: left;  font-size: 22px;">{{page.abstract}}</p>
-                        
+
                         <!-- Post Meta -->
                         <!-- <div class="blog-post-meta mt-35">
 							<ul class="post-meta-list ico-10">
@@ -152,7 +151,7 @@
                     {% endif %}
 
                     <!-- SINGLE POST TEXT -->
-                    <div class="single-post-txt blogcontent lh-lg" >
+                    <div class="single-post-txt blogcontent lh-lg">
                         {{page.content}}
                     </div> <!-- END SINGLE POST TEXT -->
 
