@@ -1,8 +1,8 @@
 ---
 layout: V4LayoutSingleBlogPost
-title: Create Stunning Digital Badges with Canva Badge Maker in 2024
+title: Create Stunning Digital Badges with Canva Badge Maker in 2025
 
-description: Discover how to create stunning digital badges with Canva’s Badge Maker in 2024—simple tips to design eye-catching credentials that stand out!
+description: Discover how to create stunning digital badges with Canva’s Badge Maker in 2025—simple tips to design eye-catching credentials that stand out!
 
 abstract: 
 

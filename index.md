@@ -54,7 +54,7 @@ BlogSectionTitle: Explore Our Resources!
 BlogSectionText: Access our Extensive Resource Library and Elevate Your Digital Credential Journey.
 
 #banner section
-Banner1: 2024 Edition
+Banner1: 2025 Edition
 BannerTitle1: Zero to One
 BannerTitle2: Build A Credentialing Program From Scratch
 BannerText: This extensive workbook + ebook combo contains everything you need to build a credentialing program from scratch.

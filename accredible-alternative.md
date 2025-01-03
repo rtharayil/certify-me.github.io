@@ -8,7 +8,7 @@ sitemap.priority: 0.9
 
 
 # hero section
-heroTitle: The Best Accredible Alternative Everyone's Talking About in 2024
+heroTitle: The Best Accredible Alternative Everyone's Talking About in 2025
 herosubTitle: Accredible's alternative digital credentialing platform that allows organizations to create, issue, manage, and share digital badges and certificates.
 heroImage: /assets4/images/certifyme_vs_accredible.png
 
