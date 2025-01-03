@@ -1,8 +1,8 @@
 ---
 layout: V4LayoutSingleBlogPost-EduTranscript
 
-title:  What Is a High School Transcript and How to Get Yours in 2024?
-description: Discover the essentials of a high school transcript and learn how to easily request yours in 2024, whether for college, scholarships, or career goals.
+title:  What Is a High School Transcript and How to Get Yours in 2025?
+description: Discover the essentials of a high school transcript and learn how to easily request yours in 2025, whether for college, scholarships, or career goals.
 abstract: 
 
 topic: news
@@ -153,7 +153,7 @@ For instance, if you had a few unexcused absences due to a family emergency, you
 
 <br>
 
-## How to Get Your High School Transcript in 2024? 
+## How to Get Your High School Transcript in 2025? 
 Ready to request your high school transcript? Here’s a step-by-step guide to obtaining it based on your enrollment status.
 
 <br>

@@ -1,7 +1,7 @@
 ---
 layout: V4LayoutSingleBlogPost-EduTranscript
 
-title:  "What Is An Academic Transcript & How Do You Get Them in 2024?"
+title:  "What Is An Academic Transcript & How Do You Get Them in 2025?"
 description: "Wondering what an academic transcript is and why it matters? This blog covers everything you need to know—definitions, use cases and how to get yours hassle-free!"
 
 abstract: 
@@ -15,7 +15,7 @@ featured: true
 
 In the world of academia, the academic transcript is a foundational document. Whether you’re applying to a college, graduate school, seeking a scholarship, or entering the job market, your transcript is a key player. It's a detailed record of your academic history, showcasing everything from the courses you’ve taken, to the grades you’ve earned, to the degrees or certificates you've obtained. 
 
-With increasing digitalization, the process of obtaining and sharing transcripts has evolved significantly, especially in 2024. In this article, we’ll dive deep into what an academic transcript is, why it's important, the different types, and how you can access yours today.
+With increasing digitalization, the process of obtaining and sharing transcripts has evolved significantly, especially in 2025. In this article, we’ll dive deep into what an academic transcript is, why it's important, the different types, and how you can access yours today.
 
 <br>
 
@@ -275,7 +275,7 @@ Requesting transcripts at the right time ensures you have all the necessary docu
 
 ## Conclusion
 
-In 2024, the process of requesting and managing academic transcripts has undergone a significant digital transformation, making it more accessible and efficient for students and alumni alike. 
+In 2025, the process of requesting and managing academic transcripts has undergone a significant digital transformation, making it more accessible and efficient for students and alumni alike. 
 
 From high school records to official college transcripts, digital platforms have simplified the process, allowing individuals to request, track, and receive transcripts without the need for physical visits or extended wait times. With academic records now readily available online, it has become easier than ever to share and authenticate academic histories, ensuring that students and graduates can meet deadlines for applications, job requirements, and more.
 

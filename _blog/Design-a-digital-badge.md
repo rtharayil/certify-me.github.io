@@ -1,6 +1,6 @@
 ---
 layout: V4LayoutSingleBlogPost
-title: A Step-by-Step Guide to Creating a Digital Badge in 2024
+title: A Step-by-Step Guide to Creating a Digital Badge in 2025
 
 description: Design badges effortlessly with CertifyMe's step-by-step guide. Create, customize, and award digital badges
 
