@@ -7,7 +7,7 @@ abstract:
 
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/eduTranscript/What Is A High School Transcript Blog Banner.png
+imageLink: /img/eduTranscript/What Is A High School Transcript Blog Banner (2025).png
 
 featured: true
 ---

@@ -9,7 +9,7 @@ abstract:
 
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/50 Alarming Workplace Stress Statistics (2024 Edition).png
+imageLink: /img/blog/50 Alarming Workplace Stress Statistics (2025 Edition).png
 
 featured: true
 ---

@@ -8,7 +8,7 @@ abstract:
 
 topic: news
 author : Mrunal Upadhye
-imageLink: /images/Certificate blog banner.png
+imageLink: /images/15 Free Online Certificate Maker Software in 2025.png
 featured: true
 ---
 

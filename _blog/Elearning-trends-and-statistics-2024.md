@@ -8,7 +8,7 @@ abstract:
 
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/blog/Elearning-trend-&-stats/E-learning Statistics Blog Banner.png
+imageLink: /img/blog/75+ Astonishing E-Learning Trends And Statistics For 2025.png
 featured: true
 ---
 
