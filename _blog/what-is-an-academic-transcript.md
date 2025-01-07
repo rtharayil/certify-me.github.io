@@ -8,7 +8,7 @@ abstract:
 
 topic: news
 author : Mrunal Upadhye
-imageLink: /img/eduTranscript/blog2/What Is An Academic Transcript - 2024.png
+imageLink: /img/eduTranscript/blog2/What Is An Academic Transcript And How Do You Get Them In 2025.png
 
 featured: true
 ---
