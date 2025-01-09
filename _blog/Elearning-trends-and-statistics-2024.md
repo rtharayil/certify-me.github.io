@@ -38,10 +38,10 @@ As the education landscape undergoes a digital transformation, e-learning contin
 
 <br>
 
-## E-learning Learner Statistics for 2024
+## E-learning Learner Statistics for 2025
 
-1. **Coursera Learners:** Coursera had an impressive **148 million learners** in Q1 2024.
-1. **Udemy's Reach:** Udemy boasts over **69 million learners** worldwide in 2024.
+1. **Coursera Learners:** Coursera had an impressive **148 million learners** in Q1 2025.
+1. **Udemy's Reach:** Udemy boasts over **69 million learners** worldwide in 2025.
 1. **MOOC Popularity:** Massively Open Online Courses (MOOCs) reached **180 million learners**, a testament to their accessibility.
 
 <br>
