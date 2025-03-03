@@ -161,7 +161,7 @@ In recognition of [Recipient's Name]'s successful completion of [degree program]
 
 ### 15. Specialized Skills Course
 
-Presented to [Recipient’s Name] in recognition of their successful completion of [course name]. Your hard work and perseverence have led to you mastering new skills. Congratulations on your achievement!
+Presented to [Recipient’s Name] in recognition of their successful completion of [course name]. Your hard work and perseverance have led to you mastering new skills. Congratulations on your achievement!
 
 If the course is CPD-certified, the certificate should list the number of CPD hours and the certifying body, reinforcing the delegate's achievement. Many financial professionals count Excel training as CPD. [Training providers often highlight this](https://www.acuitytraining.co.uk/microsoft-training-courses/excel/).
 
