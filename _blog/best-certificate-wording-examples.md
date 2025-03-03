@@ -148,9 +148,11 @@ A well-crafted certificate of completion serves as a proud reminder of the recip
 
 <img class="img-fluid r-16" src="/img/blog/new_3.png" alt="Certificate of Completion Example">
 
+
 ### 13. Secondary Education Certificate
 
 Presented to [Recipient's Name] in recognition of the successful completion of [secondary education program]. Your hard work, dedication, and academic achievements have prepared you for a bright future. Congratulations on this significant milestone!
+
 
 ### 14. University Graduation Diploma
 
@@ -159,7 +161,10 @@ In recognition of [Recipient's Name]'s successful completion of [degree program]
 
 ### 15. Specialized Skills Course
 
-Presented to [Recipient's Name] in recognition of the successful completion of [course name]. Your dedication, hard work, and commitment to mastering new skills have led to this significant achievement. Congratulations on your accomplishment!
+Presented to [Recipient’s Name] in recognition of their successful completion of [course name]. Your hard work and perseverence have led to you mastering new skills. Congratulations on your achievement!
+
+If the course is CPD-certified, the certificate should list the number of CPD hours and the certifying body, reinforcing the delegate's achievement. Many financial professionals count Excel training as CPD. [Training providers often highlight this](https://www.acuitytraining.co.uk/microsoft-training-courses/excel/).
+
 
 ### 16. Internship Completion
 
