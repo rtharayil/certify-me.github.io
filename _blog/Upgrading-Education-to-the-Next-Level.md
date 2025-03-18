@@ -94,7 +94,8 @@ Another challenge is the lack of personal interaction. Although digital tools fa
 
 
 ### Engagement and Distraction Issues
-While digital learning offers many benefits, it can also lead to distractions. With social media, games, and other online activities just a click away, it’s easy for students to lose focus during online lessons. Additionally, the lack of face-to-face interaction in some digital learning environments can make it harder for students to stay engaged and motivated. Educators need to find ways to keep students focused, whether by using interactive tools, setting clear goals, or incorporating frequent feedback. Balancing the benefits of digital tools with strategies to minimize distractions is key to making digital learning effective.
+
+While digital learning offers many benefits, it can also lead to distractions. With social media, games, and other [online activities](https://www.diy.org/activities-for-kids) just a click away, it’s easy for students to lose focus during online lessons. Additionally, the lack of face-to-face interaction in some digital learning environments can make it harder for students to stay engaged and motivated. Educators need to find ways to keep students focused, whether by using interactive tools, setting clear goals, or incorporating frequent feedback. Balancing the benefits of digital tools with strategies to minimize distractions is key to making digital learning effective.
 
 <br>
 
