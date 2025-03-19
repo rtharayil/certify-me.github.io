@@ -32,7 +32,8 @@ Let’s break it down. Imagine it as a high-tech version of a certificate or bad
 
 A few years back, proving your credentials meant dealing with stacks of paper or PDFs. Fast forward to today, and digital credentials have taken over. They’re not just a fad; they’re becoming the norm. This shift means no more paper clutter—just instant access and easy verification of your achievements.
 
-So, why should you care? Digital credentials streamline the process of showcasing your achievements and make it simpler for employers or educational institutions to verify them. Stick with me, and I’ll explain more about how they’re used and why they’re so important in today’s world.
+So, why should you care? Digital credentials streamline the process of showcasing your achievements—whether it’s completing [language training](https://www.simonandsimon.co.uk/), mastering a technical skill, or earning a professional certification—and make it simpler for employers or educational institutions to verify them. Stick with me, and I’ll explain more about how they’re used and why they’re so important in today’s world.
+
 <br>
 <br>
 
