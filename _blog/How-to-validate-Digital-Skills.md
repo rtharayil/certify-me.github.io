@@ -25,7 +25,7 @@ Three trends that are here to stay and needs to be validated as per the McKinsey
 
 ### Distance economy:
 
-While everyone was forced to work remotely in the year 2020 with the rise of covid, there has still been no end to the remote working pattern even in the year 2022. The rise of Covid still being relevant and the new variants that have come into force have made the remote work the new constant hence, adapting to the new and relevant digital skills and tools is a necessity.
+While everyone was forced to work remotely in the year 2020 with the rise of covid, there has still been no end to the remote working pattern even in the year 2022. The rise of Covid still being relevant and the new variants that have come into force have made the [remote work the new constant hence](https://nativeteams.com/blog/benefits-of-remote-work-for-employers), adapting to the new and relevant digital skills and tools is a necessity.
 
 ### Imbalanced Supply and Demand:
 
