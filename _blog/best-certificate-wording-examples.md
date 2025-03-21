@@ -180,7 +180,8 @@ A certificate of participation is an official document that acknowledges someone
 
 When drafting the text for a certificate of participation, it's crucial to convey appreciation in a sincere and concise manner. Utilizing warm and positive language, we can spotlight the recipient's significance in the event or activity, ensuring they feel genuinely valued and recognized.
 
-The wording should emphasize the importance of the recipient's participation and its positive impact, fostering a sense of belonging and encouraging future engagement.
+The wording should emphasize the importance of the recipient’s participation and its positive impact, fostering a sense of belonging and encouraging future engagement. This is especially important for [early learning](https://sbcl.wa.edu.au/primary-school/kindergarten/) and sporting involvement.
+
 
 <img class="img-fluid r-16" src="/img/blog/new_1.png" alt="Certificate of Participation Example">
 
