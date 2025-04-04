@@ -105,7 +105,9 @@ The repercussions of workplace stress are not confined to the office; they signi
 1. **25% report work as top stressor** – 25% of workers say their job is the number one source of stress in their lives. (Source: Stress.org, 2016)
 1. **60% report difficulty relaxing** – 60% of stressed employees say they find it difficult to unwind or relax once they leave the office. (Source: APA, 2018)
 
-These statistics underscore the far-reaching effects of workplace stress on employees' personal well-being, indicating that the burden extends beyond work and affects family life and personal relationships.
+These statistics underscore the far-reaching effects of workplace stress on employees’ personal well-being, indicating that the burden extends beyond work and affects family life and personal relationships.
+
+However, when used strategically technology such as AI-powered chatbots, time management tools, and project management software can help streamline tasks, prevent workload overload, and helps in creating a [productive team](https://productiveteam.uk/), free from unnecessary stress.
 
 <br>
 
