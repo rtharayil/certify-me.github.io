@@ -39,7 +39,7 @@ These incentives in form of Digital badges or digital credentials can have the s
 
 Internal training programs for B2B and B2C marketing:
 
-Regardless of the type of business or marketing strategy, they must have an internal training programme in place to reskill their employees with updated knowledge and respond to the integration of technology.
+Regardless of the type of business or [brand strategy](https://hypegig.com/brand-strategy/), they must have an internal training programme in place to reskill their employees with updated knowledge and respond to the integration of technology.
 
 Internal training programmes could issue digital credentials upon completion of the course, which would serve as genuine confirmation of the acquired competencies and skills.
 
