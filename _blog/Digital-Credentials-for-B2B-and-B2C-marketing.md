@@ -23,7 +23,7 @@ There are two widely known business types: B2B Marketing and B2C marketing. But,
 
 Any marketing approach or content directed toward a business or organisation is referred to as B2B (business-to-business) marketing. B2B marketing methods are used by companies that sell products or services to other businesses or organisations rather than consumers.
 
-Referral programs and email marketing are two of the most effective B2B marketing strategies. The following are some of the ways that digital credentials can help B2B companies with these marketing strategies:
+Referral programs and [email marketing](https://growthidea.co.uk/blog/unlocking-growth-the-power-of-email-deliverability) are two of the most effective B2B marketing strategies. The following are some of the ways that digital credentials can help B2B companies with these marketing strategies:
 
 Referral: Reviews and other people's experiences with a product or service still affect a big number of buyers. A referral or reference from a trusted source instils trust in potential customers, resulting in brand exposure.
 
