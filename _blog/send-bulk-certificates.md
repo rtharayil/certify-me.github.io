@@ -49,9 +49,7 @@ Once registered, log in to your CertifyMe account using your email and password.
 
 After logging in, the next step is to design your certificate template. In CertifyMe, navigate to the 'Design Template' section via the navigation bar on the left. Next, click on "Edit your credential template," which will take you to the credential template editor. Here, you have two options:
 
-1. <b>Upload a Pre-Designed Template:</b> If you already have a certificate design ready, simply upload it to the editor.
-
-1. <b>Create a New Design:</b> Use the integrated Canva tool to design a certificate that meets your needs. Canva offers a range of customization options, including adding your organization's logo, colors, and other design elements.
+<b>Upload a Pre-Designed Template:</b> If you already have a certificate design ready, simply upload it to the editor.
 
 Ensure your template includes space for variable attributes, such as the recipient's name, course title, and date of completion, to personalize each certificate effectively.
 <br>

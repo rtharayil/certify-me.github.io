@@ -48,17 +48,16 @@ Customer Support
 
 CertifyMe is a SaaS platform that allows trainers, teachers, event marketers, and HR professionals to award verifiable digital Certificates and Badges with only a few clicks. CertifyMe's credentialing platform is trusted by 450+ worldwide brands to automate their credential issuing process. 
 
-CertifyMe's APIs, as well as integrations with Zapier, Canva, and other services, minimise manual labour by up to 100%. CertifyMe allows recipients to effortlessly publish their credentials across 50+ social media networks in one click, allowing institutions to increase their brand awareness.
+CertifyMe's APIs, as well as integrations with Zapier and other services, minimise manual labour by up to 100%. CertifyMe allows recipients to effortlessly publish their credentials across 50+ social media networks in one click, allowing institutions to increase their brand awareness.
 
 CertifyMe Free Plan includes:
 
-50 free credentials
-Bulk upload feature
-Canva integration
-Analytics Dashboard
-Verifiable QR-Code
-Unlimited templates
-Single admin account
+1. 10 free credentials
+1. Bulk upload feature
+1. Analytics Dashboard
+1. Verifiable QR-Code
+1. Unlimited templates
+1. Single admin account
 
 ## NetCredential :
 

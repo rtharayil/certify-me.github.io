@@ -50,13 +50,10 @@ The visual aspect of your digital badge is what captures attention and makes it 
 <ol>
 <li><b>Using the Built-in Editor:</b> CertifyMe provides an intuitive badge editor that allows you to create your badge from scratch. You can choose from a range of shapes, icons, images, and backgrounds to craft a unique and visually appealing badge. The editor also offers options to customize colors, fonts, and sizes to align with your branding or personal preference.</li>
 <br>
-<li><b>Leveraging Canva Integration:</b> For those who are familiar with or <a href="https://www.canva.com/"><b>prefer using Canva</b></a>, CertifyMe offers integration with this popular design tool. You can seamlessly import your Canva designs into the CertifyMe platform, allowing you to take advantage of Canva's extensive design resources while still benefiting from CertifyMe's badge management features.</li>
-<br>
-<li><b>Uploading Your Own Design:</b> If you've already created a badge design using other design software, you can easily upload it to CertifyMe. This flexibility ensures that your badge aligns perfectly with your vision and brand identity.</li>
+<li><b>Uploading Your Own Design:</b> Upload you're already created a badge design using other design software, easily to CertifyMe. This flexibility ensures that your badge aligns perfectly with your vision and brand identity.</li>
 
 </ol>
 
-<img class="img-fluid r-16" src="/img/blog/step 5/Step 4.png" alt="Step 4">
 <br>
 
 <h3>Step 5: Fine-tuning Your Design</h3>

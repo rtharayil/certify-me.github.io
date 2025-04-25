@@ -124,16 +124,6 @@ By following these steps, you’ll create a digital badge that not only stands o
 <br>
 <br>
 
-## Integrating Canva with CertifyMe for Verified Digital Badges
-
-Creating a visually appealing digital badge is just the first step; ensuring it's verifiable and credible is crucial for maintaining its value and trustworthiness. 
-
-In today's digital world, where credentials are often shared online, verifying the authenticity of a badge is essential. This not only protects the integrity of the issuer but also ensures that the recipient's achievements are recognized and respected. 
-
-By integrating Canva with CertifyMe, you can enhance your digital badges with a layer of verification, making them more trustworthy and valuable to employers, educators, and peers.
-<br>
-<br>
-
 ## How to Link Canva Designs with CertifyMe
 
 ### 1. Create and Export Your Badge Design
@@ -157,7 +147,7 @@ Once all details are set, issue the badge. You can then share it directly with r
 <br>
 <br>
 
-## Benefits of CertifyMe Integration
+## Benefits of CertifyMe 
 
 ### Enhanced Credibility 
 
