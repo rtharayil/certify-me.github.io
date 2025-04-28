@@ -12,7 +12,7 @@ imageLink: /img/blog/credential/59.png
 featured: true
 ---
 
-# Technology plays a critical part in the instruction, training, and education of children and young adults in the new era of learning. Student engagement is difficult to achieve, but it is important. When students are actively participating in a session, they pay close attention, ask questions, and ultimately learn more.
+Technology plays a critical part in the instruction, training, and education of children and young adults in the new era of learning. Student engagement is difficult to achieve, but it is important. When students are actively participating in a session, they pay close attention, ask questions, and ultimately learn more.
 
 Many digital education tools have been developed to offer students more flexibility, enhance the academic processes, activities to encourage engagement and simplify the interaction between teachers and students.
 
