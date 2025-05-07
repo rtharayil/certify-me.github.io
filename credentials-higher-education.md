@@ -1,7 +1,7 @@
 ---
 title: "Digital Credentials for Higher Education"
 
-description: "CertifyMe enables colleges and universities to issue certificates, badges and verifiable transcripts having bank-level encryptions and is enabled with quantum ledger and blockchain to make credentials tamper-proof. "
+description: "CertifyMe enables colleges and universities to issue certificates, badges and verifiable transcripts having bank-level encryptions and is enabled with blockchain to make credentials tamper-proof. "
 
 layout: V4LayoutInnerpages2.0
 

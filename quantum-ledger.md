@@ -1,4 +1,11 @@
 ---
+layout: redirected
+sitemap: false
+permalink: /quantum-ledger
+redirect_to:  /
+--- 
+
+<!-- ---
 title: "Immutable Blockchain Credentials"
 
 description: "Immutable Blockchain certificate and badge provider."
@@ -51,4 +58,4 @@ TestimonialTitle: Our Happy Customers
 
 
 
----
+--- -->

@@ -197,7 +197,7 @@ Verifying the authenticity of verified credentials is a simple and secure proces
 
 1. **Scan the QR Code or Click the Link:** If a QR code is provided, use a QR scanner or smartphone camera to scan it. Alternatively, click on the link to open the credential in your browser.
 
-1. **Access the Verification Platform:** The link or QR code will take you to a verification platform that connects to the blockchain or decentralized database. This platform houses the cryptographic proofs needed to authenticate the credential. Each credential will have a unique [Quantum ledger ID](https://www.certifyme.online/quantum-ledger), making sure that the credential is immutable and tamper-proof.
+1. **Access the Verification Platform:** The link or QR code will take you to a verification platform that connects to the blockchain or decentralized database. This platform houses the cryptographic proofs needed to authenticate the credential. Each credential will have a unique ID, making sure that the credential is immutable and tamper-proof.
 
     <img class="img-fluid r-16 d-block mx-auto" src="/img/blog/ultimate-guide-to-verified-credentials/Credential Verification.png" alt="Credential Verification">
 
@@ -218,7 +218,7 @@ These modern tools provide an efficient, accurate, and secure way to verify cred
 
 ## CertifyMe's Technology for Verified Credentials
 
-CertifyMe’s blockchain-powered verification process ensures that each credential is securely stored in a quantum ledger, providing an immutable, fraud-resistant record. By using blockchain technology, CertifyMe eliminates the risk of tampering, making it an incredibly secure method of verifying credentials. 
+By using blockchain technology, CertifyMe eliminates the risk of tampering, making it an incredibly secure method of verifying credentials. 
 
 The integration of verifiable signatures further strengthens this security, allowing issuers to cryptographically sign each document. This ensures that credentials can be verified quickly and without the need for intermediaries, significantly reducing the time and cost associated with traditional verification methods.
 
