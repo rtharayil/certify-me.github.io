@@ -34,11 +34,11 @@
       integrity and confidentiality of personal data. These measures collectively establish 
       Certifyme as a trusted platform for digital credentialing.
     c: 5
-  - Q: Can Certifyme facilitate cross-border verification of digital documents and IDs <br> issued 
-      by our government?
-    A: CertifyMe’s digital credentials are designed to be shareable and verifiable, which implies 
-      that they can be used for cross-border verification. The credentials come with features like 
-      QR/Bar codes and Quantum Ledger IDs for comprehensive verification and proof of 
-      authenticity, which can facilitate the verification of documents issued by governments 
-      across borders.
-    c: 6
+  # - Q: Can Certifyme facilitate cross-border verification of digital documents and IDs <br> issued 
+  #     by our government?
+  #   A: CertifyMe’s digital credentials are designed to be shareable and verifiable, which implies 
+  #     that they can be used for cross-border verification. The credentials come with features like 
+  #     QR/Bar codes and Quantum Ledger IDs for comprehensive verification and proof of 
+  #     authenticity, which can facilitate the verification of documents issued by governments 
+  #     across borders.
+  #   c: 6

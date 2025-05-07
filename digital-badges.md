@@ -26,7 +26,7 @@ Feature2Text: The analytics guide of CertifyMe enables you to see the level of s
 
 Feature3Image: /assets4/images/Digital Badges/3.png
 Feature3Title: High Level of Badge Data Security
-Feature3Text: We offer Open Badge 2.0 version-compliant digital badges. The immutable and portable micro badges come with a unique Quantum Ledger ID or a verification link for instant verification. Store the badges in the recipient's wallet.
+Feature3Text: We offer Open Badge 2.0 version-compliant digital badges. The immutable and portable micro badges come with a unique ID or a verification link for instant verification. Store the badges in the recipient's wallet.
 
 #Feature4Image: /assets4/images/Hr & ld/4.png
 Feature4Title: Rebrand Your Credentials for Authentic Brand Image Reflection

@@ -40,7 +40,7 @@ The platform aimed to overcome its visibility challenges by leveraging digital c
 To achieve these objectives, the platform partnered with CertifyMe in February 2022. The solution involved the following key components:
 
 1. **Customization & Branding:** The digital credentials were fully customizable, allowing the platform to prominently feature its name, logo, and other branding elements in the credentials. This ensured that every time a credential was shared, the platform’s brand gained visibility.
-2. **Verifiable and Secure:** The credentials included integrated **QR/BAR codes** and **Quantum Ledger IDs**, making them easily verifiable. This added a layer of security and authenticity, further enhancing the credibility of the platform.
+2. **Verifiable and Secure:** The credentials included integrated **QR/BAR codes** and **Unique IDs**, making them easily verifiable. This added a layer of security and authenticity, further enhancing the credibility of the platform.
 3. **Shareability:** The digital credentials were designed to be easily shareable on **40+** social media platforms, including LinkedIn, Facebook, Twitter, and more. This facilitated widespread visibility and engagement across professional and social networks.
 
 <br>

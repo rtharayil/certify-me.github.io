@@ -41,7 +41,7 @@ The company aimed to tackle its retention challenges head-on by leveraging digit
 To achieve these objectives, the company partnered with CertifyMe to implement a comprehensive digital credentialing system, including the following components:
 
 1. **Customized Credentials:** Developed digital credentials featuring the company’s branding, ensuring that every credential issued enhanced the company’s visibility and reputation.
-2. **Secure Verification:** Integrated **QR/BAR codes and Quantum Ledger IDs** into the credentials for secure, easily verifiable credentials.
+2. **Secure Verification:** Integrated **QR/BAR codes and Unique IDs** into the credentials for secure, easily verifiable credentials.
 3. **Shareability:** Designed credentials to be shareable across professional networks, increasing the company’s visibility and appeal to potential employees.
 
 <br>
