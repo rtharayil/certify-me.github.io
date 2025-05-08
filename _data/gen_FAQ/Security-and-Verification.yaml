@@ -6,7 +6,7 @@
 - Q: How does CertifyMe ensure the authenticity and integrity of issued credentials?  
   A: <p>We are GDPR compliant and follow Open Badge Version 2.0. Safety
                                             features for industry-standard credential security solutions. The
-                                            credentials issued via CertifyMe come with QR/BARCODE and Quantum
+                                            credentials issued via CertifyMe come with QR/BARCODE and Immutable
                                             Ledger ID for 360° verification and proof of authenticity.
                                         </p>
 
@@ -15,21 +15,21 @@
                                             listed below the particular plan.
                                         </p>
 
-# - Q: How can I verify the authenticity of a credential issued through CertifyMe?        
-#   A: <p>Recipients receive a unique ID that contains all the credential
-#                                             information. On the <a href="https://www.certifyme.online/"
-#                                                 target="_blank">CertifyMe website</a>, a <a
-#                                                 href="https://my.certifyme.online/wallet/verify/widget"
-#                                                 target="_blank">Verification Page</a> is
-#                                             available under the Resources bar. Put the Quantum Ledger ID in the
-#                                             given place, and press the Verify button.
-#                                         </p>
+- Q: How can I verify the authenticity of a credential issued through CertifyMe?        
+  A: <p>Recipients receive a Immutable Ledger ID that contains all the credential
+                                            information. On the <a href="https://www.certifyme.online/"
+                                                target="_blank">CertifyMe website</a>, a <a
+                                                href="https://my.certifyme.online/wallet/verify/widget"
+                                                target="_blank">Verification Page</a> is
+                                            available under the Resources bar. Put the Immutable Ledger ID in the
+                                            given place, and press the Verify button.
+                                        </p>
 
-#                                         <p>OR, you can also visit the issued certificates listed under Your
-#                                             Credential Templates and open the credential you want to verify.
-#                                             Click on the Verify this Credential button or collect the Quantum
-#                                             Ledger ID and follow the aforementioned steps.
-#                                         </p>                                
+                                        <p>OR, you can also visit the issued certificates listed under Your
+                                            Credential Templates and open the credential you want to verify.
+                                            Click on the Verify this Credential button or collect the Immutable
+                                            Ledger ID and follow the aforementioned steps.
+                                        </p>                                
 
 - Q: How to find your LinkedIn company code?
   A: "To find your LinkedIn company code, follow these steps:
