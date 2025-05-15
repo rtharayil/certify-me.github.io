@@ -34,14 +34,21 @@ Digital certificates are crucial for securing online communication, ensuring dat
 Here are the key elements of a digital certificate that ensure its authenticity:
 
 <ol>
-<li><b>Owner's Name:</b> Identifies the individual or organization that owns the certificate.</li>
+
+<li class ="mb-2"><b>Owner's Name:</b> Identifies the individual or organization that owns the certificate.</li>
 
 <li class ="mb-2"><b>Public Key:</b> The public key associated with the owner, used for encryption and verification.</li>
+
 <li class ="mb-2"><b>Certificate Authority (CA) Information:</b> Details about the CA that issued the certificate, including their digital signature.</li>
+
 <li class ="mb-2"><b>Serial Number:</b> A unique identifier for the certificate, issued by the CA.</li>
+
 <li class ="mb-2"><b>Expiration Date:</b> The date until which the certificate is valid, after which it must be renewed.</li>
+
 <li class ="mb-2"><b>Digital Signature:</b> A cryptographic signature by the CA that confirms the authenticity of the certificate.</li>
+
 </ol>
+
 <br>
 <img class="img-fluid r-16" src="/img/blog/elements-of-a-digital-certificate.png" alt="Visual representation of digital certificate elements, including issuer, subject, validity dates, and signature" style="display: block; margin: 0 auto;">
 <br>
@@ -67,15 +74,20 @@ When data is sent, it is encrypted with the recipient's public key and can only 
 
 ## Common Uses of Digital Certificates 
 
-Digital certificates are versatile tools that provide security and trust in various online activities. They play a critical role in areas such as:
+Digital certificates are versatile tools that provide security and trust in various online activities. 
+
+<br>
+
+They play a critical role in areas such as:
+
 <ol>
 
-<li class ="mb-2"><b>Email Encryption:</b> Digital certificates encrypt emails, ensuring that only the intended recipient can read the contents. This prevents unauthorized access and protects sensitive information shared via email.</li>
-<br>
-<li class ="mb-2"><b>VPN Authentication:</b> Virtual Private Networks (VPNs) use digital certificates to authenticate users and devices, ensuring that only authorized entities can access the network. This enhances security, especially for remote workers connecting to corporate networks.</li>
-<br>
-<li class ="mb-2"><b>Secure File Sharing:</b> Digital certificates are used to verify the identity of individuals and organizations involved in file transfers. They ensure that the files have not been tampered with during transit and that the parties involved are legitimate.</li>
-<br>
+<li class ="mb-4"><b>Email Encryption:</b> Digital certificates encrypt emails, ensuring that only the intended recipient can read the contents. This prevents unauthorized access and protects sensitive information shared via email.</li>
+
+<li class ="mb-4"><b>VPN Authentication:</b> Virtual Private Networks (VPNs) use digital certificates to authenticate users and devices, ensuring that only authorized entities can access the network. This enhances security, especially for remote workers connecting to corporate networks.</li>
+
+<li class ="mb-4"><b>Secure File Sharing:</b> Digital certificates are used to verify the identity of individuals and organizations involved in file transfers. They ensure that the files have not been tampered with during transit and that the parties involved are legitimate.</li>
+
 </ol>
 
 <br>
