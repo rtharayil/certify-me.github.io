@@ -11,7 +11,9 @@ imageLink:  /img/blog/credential/11.png
 
 featured: true
 ---
+
 # Association Membership with Digital Credentials
+
 Digitalization has become the most crucial part across all industries ever since the global pandemic. With the rising competition for the same and the ever-changing trends that go with it, it is important to remain relevant and create value for the brand. 
 
 Even before the digitalization of platforms, Association has been one such way to help expand and attract new members to create brand value and attain trust and loyalty.
@@ -22,9 +24,13 @@ Let’s dive deeper into Why Associations Work?
 
 Associations come with their own set of benefits:
 
+<br>
+
 ### Membership: 
 
 Associations allowing membership, helps the organization get a closer look into the needs of the customer. Association membership for digital credentials can help track the progress of their members and make suggestions based on the progress. Memberships that recognize the involvements creates a brand value encouraging others to be part of the same. 
+
+<br>
 
 ### Membership renewal:
 
@@ -32,11 +38,15 @@ Membership can be both long-term and short-term. In both cases, it is crucial to
 
 Automating the membership system to inform and respond to the members regarding the membership term, renewal, and exit saves both time and money. It also helps access and manages the progress of the members.
 
+<br>
+
 ### Cost-Effective:
 
 The traditional membership method has its cons regarding the cost that came with printing, issuing and accrediting both membership cards and certifications. In terms of packing, postage and delivery it was both toilsome and expensive.
 
 These manufacturing and delivery costs can be avoided with digital credentials. Digital credentials are less time-consuming, most cost-effective and provide quality results with fewer resources. On top of things, digital credentials are environment friendly which differs from traditional methods that contribute to environmental degradation through paper and plastic resources.
+
+<br>
 
 ### Generate Referrals:
 
@@ -44,11 +54,15 @@ If the member gets recognition and perks for being a loyal part of the organizat
 
 A positive response from members encourages a positive response from other consumers as well as builds a strong validation for the brand. The organization or association can also generate more referrals by having a referral portal, code or link to which existing members can adhere. Referrals could be gained through digital platforms like social media, websites and emails.
 
+<br>
+
 ### Rewards and Recognition:
 
 As mentioned in the earlier point, members of the association love to get recognised. How the association values and rewards its existing members impacts the organization's status and culture. This also encourages long-term involvement from the members. 
 
 Issuing rewards and recognition to its valuable members increases engagement. This could be done by giving digital credentials for every progress of its members. The organization can issue a digital badge or digital certifications for acknowledging members loyalty, attendance, contribution to a project, progress, etc.
+
+<br>
 
 ### In Conclusion:
 
