@@ -108,6 +108,8 @@ Include metadata such as issuer information, criteria, and badge alignment. This
 
 1. <b>Leveraging Employee Advocacy:</b> Encourage your employees to share their earned badges on their LinkedIn profiles. This not only showcases their skills but also promotes your company's commitment to professional development.
 
+**Bonus Tip :** To support your badge earners in further sharpening their skills beyond your program, you may consider recommending external learning resources. Coursera Plus is one such platform that offers a wide range of courses that can help learners fill knowledge gaps or strengthen prerequisite skills. Learn more about the [Coursera Plus offer](https://missiongraduatenm.org/coursera-plus-discount/) here.
+
 <br>
 
 
