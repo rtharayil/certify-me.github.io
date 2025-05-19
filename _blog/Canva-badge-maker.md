@@ -122,6 +122,8 @@ For a more detailed visual walkthrough of Canva's design interface, [watch this 
 
 Selecting the right template is crucial as it sets the tone for your badge. Canva offers a wide range of templates, making it easy to find one that aligns with your needs. Narrowing your search by purpose, color, and shape can lead to more precise results, ensuring your badge looks professional and polished.
 
+<br>
+
 - Key Steps:
 
 1. <b>Search for Specific Purposes:</b> Use keywords like "Employee of the Month Badge" or "Volunteer Appreciation Badge" to find templates tailored to your needs.
@@ -136,6 +138,8 @@ Selecting the right template is crucial as it sets the tone for your badge. Canv
 
 Customization is where your badge truly comes to life. Canva's tools allow you to modify text, adjust fonts, and tweak colors to perfectly match your brand or personal style. The transparency feature is particularly useful for adding depth and layering to your design, making certain elements stand out or blend smoothly into the background.
 
+<br>
+
 - Key Steps:
 
 1. <b>Edit Text Content:</b> Replace placeholder text with specific titles or names relevant to your purpose, on the badge .
@@ -149,6 +153,8 @@ Customization is where your badge truly comes to life. Canva's tools allow you t
 ### Adding Unique Elements to Your Badge
 
 Adding distinctive elements can make your badge memorable and unique. Canva's "Elements" section provides access to a plethora of shapes, icons, and illustrations. For a truly custom touch, use Canva's AI image generation feature to create original graphics. If you're a premium user, the "Remove Background" tool is invaluable for cleanly integrating images into your design.
+
+<br>
 
 - Key Steps:
 
