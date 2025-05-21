@@ -49,8 +49,7 @@ Once registered, log in to your CertifyMe account using your email and password.
 
 <img class="img-fluid r-16" src="/img/blog/Send Multiple Certificates in a Single Click with CertifyMe Certificate Generator/2.png" alt="CertifyMe Design Template">
 
-After logging in, the next step is to design your certificate template. In CertifyMe, navigate to the 'Design Template' section via the navigation bar on the left. Next, click on "Edit your credential template," which will take you to the credential template editor. Here, you have two options:
-
+After logging in, the next step is to design your certificate template. In CertifyMe, navigate to the 'Design Template' section via the navigation bar on the left. Next, click on "Edit your credential template," which will take you to the credential template editor.
 <b>Upload a Pre-Designed Template:</b> If you already have a certificate design ready, simply upload it to the editor.
 
 If you don’t already have a design, you can explore [free certificate maker tools](https://certifyme.online/blog/15-certificate-maker.html) to create a professional-looking template before uploading it to CertifyMe.
@@ -98,9 +97,13 @@ This step ensures that your certificates are well-organized and easy to manage w
 To efficiently send multiple certificates via email, you'll need to prepare a CSV file containing the necessary recipient information:
 
 1. Create a CSV file where each row represents a different recipient. Include columns for each variable attribute, such as Name, Course Name, and Date of Completion.
+
 2. In CertifyMe, navigate to the "Award Credentials" page for the specific credential template you want to use.
+
 3. Click the "Bulk Award" button, which will reveal the "Upload CSV" option along with a <a href="https://credential.certifyme.online/credentialTemplate/generateSampleCSV/17383">sample CSV</a> file you can download for reference.
+
 4. Upload your completed CSV file, ensuring that each column aligns with the corresponding variable attribute in your certificate template.
+
 5. Verify the data mapping to confirm that all recipient information is accurate and properly assigned.
 
 This process allows you to efficiently manage and distribute a large number of certificates, ensuring that each recipient receives their personalized certificate.
@@ -112,7 +115,9 @@ This process allows you to efficiently manage and distribute a large number of c
 For organizations that need to send a large volume of certificates, CertifyMe offers an API to automate the process:
 
 1. Consult CertifyMe’s API documentation for detailed instructions on integrating the API with your systems.
+
 1. <a href="https://info.certifyme.online/talk-with-expert">Contact CertifyMe's support team</a> to set up API access and receive assistance with the integration process.
+
 1. Use the API to automate the certificate issuance process, which is ideal for ongoing or large-scale distributions.
 
 <img class="img-fluid r-16" src="/img/blog/CertifyMe-API.png" alt="CertifyMe API integration process of consultation, support and issuance
@@ -123,7 +128,9 @@ This automation is particularly useful for organizations that frequently issue c
 <br>
 
 ## Conclusion
-Sending multiple certificates via email is essential in various scenarios, such as issuing course completions, recognizing employee achievements, or validating event participation. Ensuring this process is handled accurately is crucial to prevent errors and maintain the integrity of each certificate. Proper management is key to delivering personalized, secure certificates that reflect your organization’s professionalism.For organizations looking to maintain brand consistency and visibility, [white labeling digital credentials](https://www.certifyme.online/blog/White-Labeling-Digital-Credentials.html) offers a seamless way to issue certificates under your own brand identity.
+Sending multiple certificates via email is essential in various scenarios, such as issuing course completions, recognizing employee achievements, or validating event participation. Ensuring this process is handled accurately is crucial to prevent errors and maintain the integrity of each certificate. 
+
+Proper management is key to delivering personalized, secure certificates that reflect your organization’s professionalism.For organizations looking to maintain brand consistency and visibility, [white labeling digital credentials](https://www.certifyme.online/blog/White-Labeling-Digital-Credentials.html) offers a seamless way to issue certificates under your own brand identity.
 
 CertifyMe is a robust tool designed to streamline this process effectively. It offers an efficient way to design, personalize, and distribute certificates with minimal hassle. <a href="https://credential.certifyme.online/auth/preregister/nav@certifyme.online">Signing up is free</a>  and straightforward, allowing you to start managing your certificate distribution without any cost. Explore how CertifyMe can enhance your certificate issuance process today.
 
