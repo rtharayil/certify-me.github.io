@@ -23,25 +23,17 @@ This blog will answer some frequently asked questions about how CertifyMe achiev
 
 CertifyMe employs several advanced technologies and best practices to ensure the integrity and authenticity of digital credentials. Here is a detailed overview of the technologies employed:
 
-<br>
-
 ### Blockchain Technology
 
 Each credential issued through CertifyMe is stored on the blockchain, creating a tamper-proof record. This ensures that credentials cannot be altered or forged, maintaining their integrity.
-
-<br>
 
 ### Digital Signatures
 
 All credentials are digitally signed, adding an extra layer of security and verification. This signature confirms the origin and authenticity of the credential.
 
-<br>
-
 ### Verification Links
 
 Every credential includes a unique verification link. Third parties can use this link to validate the credential directly through CertifyMe’s platform.
-
-<br>
 
 ### Secure Issuance Processes
 
