@@ -47,11 +47,11 @@ CertifyMe uses secure protocols during the credential issuance process to preven
 
 ## What is CertifyMe's approach to data security and privacy?
 
-Data security and privacy are paramount at CertifyMe. We implement industry-leading security measures, including encryption, secure access controls, and regular security audits.
+Data security and privacy are paramount at CertifyMe. We implement industry-leading security measures, including encryption, secure access controls, and regular security audits. If your team operates remotely, you may also benefit from these best practices on [cyber safety while working from home](https://www.jumpsec.com/guides/cyber-safety-working-from-home/).
 
-Our platform complies with global data protection regulations, such as <a href="https://gdpr.eu/what-is-gdpr/">GDPR</a> and <a href="https://www.w3.org/standards/about/">W3C</a> standards, ensuring that user data is handled with the utmost care and confidentiality. 
+Our platform complies with global data protection regulations, such as [GDPR](https://gdpr.eu/what-is-gdpr/) and [W3C](https://www.w3.org/standards/about/) standards, ensuring that user data is handled with the utmost care and confidentiality.
 
-Additionally, we are also <a href="https://www.isms.online/iso-27001/certification/">ISO 2700</a> and <a href="https://asq.org/quality-resources/iso-9001">ISO 9001</a> certified, along with open badge standard compliant.
+Additionally, we are also [ISO 2700](https://www.isms.online/iso-27001/certification/) and [ISO 9001](https://asq.org/quality-resources/iso-9001) certified, along with open badge standard compliant.
 
 <br>
 
