@@ -161,7 +161,7 @@ By earning digital badges, you demonstrate a commitment to continuous learning a
 </table>
 </div>
 
-Digital badges and digital certificates both serve to represent achievements, but the choice between them depends on factors like issuer preference and recipient needs. Badges offer a visual representation and can be embedded in email signatures or shared online, while certificates follow a formal format and are often printed for verification. Badges use colorful designs, while certificates rely on logos and recipient details. Badges are commonly used for module completion within pathways, while certificates serve as final credentials.
+Digital badges and digital certificates both serve to represent achievements, but the choice between them depends on factors like issuer preference and recipient needs. Badges offer a visual representation and can be embedded in [email signatures](https://www.rocketseed.com/our-products/) or shared online, while certificates follow a formal format and are often printed for verification. Badges use colorful designs, while certificates rely on logos and recipient details. Badges are commonly used for module completion within pathways, while certificates serve as final credentials.
 
 
 ## How to Create a Quality Digital badge?
