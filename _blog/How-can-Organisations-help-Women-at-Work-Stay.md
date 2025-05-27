@@ -305,4 +305,4 @@ If you're curious about how digital credentials can support these efforts, Certi
 
 Plus, using digital credentials doesn’t just support your workforce—it strengthens your employer brand too. [Explore how they fit into your marketing strategy](https://www.certifyme.online/blog/Impose-Digital-Credential-into-your-Marketing-Strategy.html) and show the world that your organization values real, visible skills.
 
-Want to see how it works? [Book a demo call](https://info.certifyme.online/) and explore how CertifyMe can fit into your strategy.
+Want to see how it works? [Book a demo call](https://info.certifyme.online/request-demo) and explore how CertifyMe can fit into your strategy.
