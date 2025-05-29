@@ -12,7 +12,7 @@ imageLink: /img/blog/credential/51.png
 featured: true
 ---
 
-# Digital Credentials for B2B and B2C marketing
+## Digital Credentials for B2B and B2C marketing
 
 
 Issuing digital credentials has its own set of advantages; it can assist organisations in increasing employee satisfaction, which leads to more productive workers. Productive personnel also contribute to the company's success and performance in meeting its goals, boosting sales and overall efficiency.
