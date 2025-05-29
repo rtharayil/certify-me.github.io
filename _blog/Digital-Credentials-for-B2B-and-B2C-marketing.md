@@ -27,7 +27,7 @@ Referral programs and [email marketing](https://growthidea.co.uk/blog/unlocking-
 
 Referral: Reviews and other people's experiences with a product or service still affect a big number of buyers. A referral or reference from a trusted source instils trust in potential customers, resulting in brand exposure.
 
-Email: When sending an email to potential members or customers, the digital badge or credential is presented together with the digital signature and firm logo, they are convinced the mail is not spam and are interested in what the message proposes.
+Email: When sending an email to potential members or customers, the digital badge or credential is presented together with the digital signature and firm logo, they are convinced the mail is not spam and are interested in what the message proposes. To avoid bounces and keep that trust, verify your [email list](https://instantly.ai/email-verification) before hitting send.
 
 ## B2C Marketing:
 
