@@ -4,20 +4,25 @@ title: Making the Decision About Digital Credentials
 
 description: Digital credentials require privacy, trust, credential management, and authority to be considered when incorporating them into organizations' systems.
 
-abstract: Digital credentials have been the new buzzword across all organizations. The demand for digital credentials has been ever-growing and hence, the need to incorporate the same is crucial. But the question remains, " How do we incorporate Digital Credentials?” or “How do we make the right decision about Digital Credentials?” To answer these questions best, it is crucial to understand the core requirements the digital credentials system needs to fulfil.
+abstract:
 
 topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/credential/2.png
 featured: true
 ---
+
 Digital credentials have been the new buzzword across all organizations. The demand for digital credentials has been ever-growing and hence, the need to incorporate the same is crucial. But the question remains, " How do we incorporate Digital Credentials?” or “How do we make the right decision about Digital Credentials?”
 
 To answer these questions best, it is crucial to understand the core requirements the digital credentials system needs to fulfil.
 
+<br>
+
 ## Core requirements for Digital Credentials:
 
 When it comes to digital credentials, often companies or organizations have to decide between buying an in-built digital credential feature through a platform or building the feature that suits best for requirements. In both cases, to make the right decision we need to first understand what system requirements and features one needs to consider:
+
+<br>
 
 ## Privacy and Trust:
 
@@ -29,6 +34,8 @@ The system must provide hassle-free verification of the credentials acquired. Th
 Apart from hassle-free verification, the learner must be able to recover their lost credentials from the respective authority 
 The digital credentials system must be built in a way limiting tracking, unauthorized access and the complete disclosure of the learner to ensure the privacy of the learner/employee
 
+<br>
+
 ## Managing the Credential:
 
 The learner/employee may or will require to share, manage and store their credentials. To do so the digital credential system must feature:
@@ -36,6 +43,8 @@ The learner/employee may or will require to share, manage and store their creden
 A wallet to stores and features the credentials acquired
 A personalized learners portal to access, manage and share the digital credentials across all digital platforms and websites
 Standard tools that enable sharing by verifying the authenticity of both the issuer and receiver
+
+<br>
 
 ## Authority:
 
@@ -51,6 +60,8 @@ Enables full control over the platform
 Allows access to customize, manage its features and tools
 
 Once, the above requirements are considered along with the cost and budget required for digital credentials, the organization can then choose between either buying or building the digital credentials platform. 
+
+<br>
 
 ## In Conclusion:
 
