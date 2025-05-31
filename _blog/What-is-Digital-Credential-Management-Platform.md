@@ -126,7 +126,7 @@ So, you’re curious about why a digital credentialing platform is worth its wei
 4. **Enhanced User Experience:** Both issuers and recipients benefit from a user-friendly interface on a digital credential platform. Customize your credentials to match your organization's branding and deliver them instantly through digital channels. It’s all about making the process as smooth and enjoyable as possible.
 <br>
 
-5. **Scalability:** Whether you’re a startup or a large enterprise, a digital credential platform grows with you. Handle an increasing number of credentials effortlessly without needing extra infrastructure. This scalability makes it a solid choice for organizations of any size or industry.
+5. **Scalability:** Whether you’re a startup or a large enterprise, a digital credential platform grows with you. Handle an increasing number of credentials effortlessly without needing extra infrastructure. You can even [generate credentials from Excel](https://certifier.io/blog/how-to-create-certificates-from-google-sheets-and-excel) or spreadsheets to save time and reduce manual work. This scalability makes it a solid choice for organizations of any size or industry.
 <br>
 
 6. **Environmental Impact:** Going digital means going green. By reducing paper waste, a digital credentialing platform supports sustainable practices and minimizes your environmental footprint. It’s a small change with a big impact on the planet.
