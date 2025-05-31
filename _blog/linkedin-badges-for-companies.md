@@ -104,7 +104,8 @@ Include metadata such as issuer information, criteria, and badge alignment. This
 
 ## Promoting Your Digital Badges
 
-1. <b>Announcing Badge Availability:</b> Promote your badges through various channels, such as email newsletters, social media, and your company website. Let your target audience know about the new opportunity to earn valuable credentials.
+1. <b>Announcing Badge Availability:</b> Promote your badges through various channels, such as email newsletters, social media, and your company website. Let your target audience know about the new opportunity to earn valuable credentials. If you don't have a website yet, use an [AI website builder](https://webwave.me/ai-website-builder) to quickly set one up and display your credentials with pride.
+
 
 1. <b>Leveraging Employee Advocacy:</b> Encourage your employees to share their earned badges on their LinkedIn profiles. This not only showcases their skills but also promotes your company's commitment to professional development.
 
