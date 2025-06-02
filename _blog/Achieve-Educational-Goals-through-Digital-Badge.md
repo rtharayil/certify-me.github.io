@@ -4,13 +4,12 @@ title: Achieve Educational Goals through Digital Badge
 
 description: Digital badges enable recognition, engagement, and skill display, facilitating educational goals and promoting learner participation and employment opportunities.
 
-abstract: Achieve Educational Goals through Digital Badge 
+abstract: 
 topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/credential/22.png
 featured: true
 ---
-# Achieve Educational Goals through Digital Badge
 
 With the changing developments in the learning structure, tools and technologies, it is easier to carry out additional learning practices updating with the changes in the levels of education. Initially, post-completion of the course, diploma or qualification, learners were awarded a diploma or certificate to identify the learners’ competency in the particular subject matter. In addition to that, a new low-stake credential called Digital badges is emerging among new learners.
 
@@ -18,10 +17,13 @@ Digital Badges are verified digital proof of the individual accomplishment in a 
 
 Learners love to get recognised for their work and contribution and perform and engage better when they are acknowledged for what they do. This can be done by issuing Digital Badges. Digital Badges could be issued:
 
-- To acknowledge the persons’ engagement
-- To acknowledge the progress made
-- To showcase and acknowledge their skills
-- To showcase and acknowledge their achievement
+1. To acknowledge the persons’ engagement
+
+1. To acknowledge the progress made
+
+1. To showcase and acknowledge their skills
+
+1. To showcase and acknowledge their achievement
 
 With the help of digital badges, the learner can showcase and display their skills through recognition from the education provider or an authority. Learners can display their badges on social media and social networking sites which in return promotes brand awareness and encourages engagement, curiosity and participation.
 
