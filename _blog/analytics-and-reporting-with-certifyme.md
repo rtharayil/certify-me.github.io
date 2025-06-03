@@ -13,14 +13,16 @@ featured: true
 
 
 In the digital age, effective credential management goes beyond just issuing certificates and badges. It’s about understanding how these credentials are used, their impact, and how to optimize the process. 
+
 CertifyMe offers robust analytics and reporting features through its comprehensive analytic dashboard designed to offer detailed insights into credentialing activities. The dashboard is user-friendly and provides a clear view of various metrics that are crucial for organizations to evaluate their credentialing processes. 
+
 CertifyMe offers analytics at three distinct levels, each catering to different needs within an organization The three levels are:
 
-1. <b>Organization level analytics </b>
+1. **Organization level analytics**
 
-1. <b>Program level analytics</b>
+1. **Program level analytics**
 
-1. <b>Awardee level analytics</b>
+1. **Awardee level analytics**
 
 <br>
 
@@ -45,7 +47,6 @@ It provides an accurate representation of the following metrics:
 <br>
 
 ## Program Level Analytics 
-
 
 Program level analytics focus on specific programs or learning paths. These insights are invaluable for program managers and educators, allowing them to assess the success of their programs, identify areas for improvement, and make data-driven adjustments to enhance learning outcomes. 
 

@@ -4,15 +4,13 @@ title: Association Membership with Digital Credentials
 
 description: Digital credentials revolutionize associations, offering verifiable recognition, automated membership management, and cost-effective certifications.
 
-abstract: Association Membership with Digital Credentials
+abstract: 
 topic: news
 author : Mrunal Upadhye
 imageLink:  /img/blog/credential/11.png
 
 featured: true
 ---
-
-# Association Membership with Digital Credentials
 
 Digitalization has become the most crucial part across all industries ever since the global pandemic. With the rising competition for the same and the ever-changing trends that go with it, it is important to remain relevant and create value for the brand. 
 
