@@ -106,8 +106,19 @@ Historically, verifying academic credentials has been a manual process involving
 
 1. **Reference Checks:** Speaking with previous employers or educators.
 
-**Analogy:** “It’s like checking if a dollar bill is real by just looking at it.”
-
+<style>
+    .quote-box {
+      background-color: #e0f7ff; /* Lightest blue */
+      border-radius: 0.75rem; /* Rounded borders */
+      padding: 1.5rem;
+      font-style: italic;
+      box-shadow: 0 0.25rem 0.5rem rgb(112, 217, 243);
+    }
+  </style>
+  <div class="quote-box">
+    <b>Analogy</b>: “It’s like checking if a dollar bill is real by just looking at it.”
+  </div>
+  
 <br>
 
 ### Challenges with Traditional Methods
@@ -162,7 +173,18 @@ Digital credentials are electronic representations of academic achievements, sec
 
 1. **Digital Badges:** Icons representing specific skills or accomplishments.
 
-**Simple metaphor:** “Think of it like a tamper-proof glass case. What’s inside is sealed and visible to everyone.”
+<style>
+    .quote-box {
+      background-color: #e0f7ff; /* Lightest blue */
+      border-radius: 0.75rem; /* Rounded borders */
+      padding: 1.5rem;
+      font-style: italic;
+      box-shadow: 0 0.25rem 0.5rem rgb(112, 217, 243);
+    }
+  </style>
+  <div class="quote-box">
+    <b>Simple metaphor</b>: “Think of it like a tamper-proof glass case. What’s inside is sealed and visible to everyone.”
+  </div>
 
 <br>
 
@@ -236,7 +258,18 @@ Several institutions have adopted blockchain for [credentialing](https://www.ver
 
 [Grand Valley State University](https://www.gvsu.edu/gvnext/2025/gvsu-partners-launch-pilot-for-blockchain-based-digital-credential-wallet.htm?utm_): Launched a pilot for a blockchain-based digital credential wallet, granting students greater control over their academic records. 
 
-**Pro tip**: Always save a backup or link in your email or cloud storage.
+<style>
+    .quote-box {
+      background-color: #e0f7ff; /* Lightest blue */
+      border-radius: 0.75rem; /* Rounded borders */
+      padding: 1.5rem;
+      font-style: italic;
+      box-shadow: 0 0.25rem 0.5rem rgb(112, 217, 243);
+    }
+  </style>
+  <div class="quote-box">
+    <b>Pro tip</b>: Always save a backup or link in your email or cloud storage.
+  </div>
 
 <br>
 
@@ -274,7 +307,19 @@ At the end of the day, preventing fraud is a shared responsibility. With the rig
 
 1. Regular Audits: Periodically review credentialing processes to identify and rectify potential vulnerabilities.
 
-“You wouldn’t leave your vault unlocked—why do the same with student records?”
+<style>
+    .quote-box {
+      background-color: #e0f7ff; /* Lightest blue */
+      border-radius: 0.75rem; /* Rounded borders */
+      padding: 1.5rem;
+      font-style: italic;
+      box-shadow: 0 0.25rem 0.5rem rgb(112, 217, 243);
+    }
+  </style>
+  <div class="quote-box mb-4">
+    “You wouldn’t leave your vault unlocked—why do the same with student records?”
+  </div>
+
 
 Use trusted platforms that issue blockchain-backed credentials and train staff to verify them properly. Learn how a [digital credential management platform](https://www.certifyme.online/blog/What-is-Digital-Credential-Management-Platform.html) can streamline issuance, verification, and secure sharing processes.
 
