@@ -192,9 +192,13 @@ These statistics highlight the pressure technology places on employees, making i
 The culmination of chronic stress is burnout, which affects workers' ability to perform and can have lasting mental health consequences.
 
 1. **77% of workers face burnout** – 77% of employees report experiencing burnout in their current jobs, with the highest rates observed in the healthcare industry. (Source: Gallup, 2021)
+
 1. **72% more likely to leave jobs** – Employees experiencing burnout are 72% more likely to leave their jobs in the next year. (Source: Deloitte, 2022)
+
 1. **Higher risk of anxiety and depression** – 58% of employees experiencing chronic workplace stress report suffering from anxiety or depression. (Source: Mental Health America, 2020)
+
 1. **48% report mental health decline** – 48% of employees say that work stress has caused a significant decline in their mental health. (Source: APA, 2021)
+
 1. **40% suffer from exhaustion** – 40% of workers report feeling physically exhausted because of stress at work. (Source: Stress.org, 2019)
 
 
@@ -207,9 +211,13 @@ Burnout continues to escalate, particularly among industries like healthcare and
 Stress has a direct impact on employees' overall job satisfaction, with workers reporting lower levels of happiness and engagement due to overwhelming work pressures.
 
 1. **50% dissatisfied with their job** – 50% of employees say that workplace stress has made them dissatisfied with their job. (Source: Gallup, 2019)
+
 1. **33% report decreased job satisfaction** – 33% of employees report that work stress negatively impacts their job satisfaction. (Source: Mental Health America, 2020)
+
 1. **48% say work pressure impacts happiness** – 48% of employees claim that the pressure from work negatively impacts their overall happiness and well-being. (Source: APA, 2019)
+
 1. **72% prefer stress-free jobs** – 72% of workers would prefer a job with less stress, even if it means earning less money. (Source: Stress.org, 2017)
+
 1. **60% seek more work-life balance** – 60% of employees actively seek a better work-life balance due to stress, making it a key factor in employee retention. (Source: Gallup, 2022)
 
 <br>
