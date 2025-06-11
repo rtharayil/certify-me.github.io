@@ -298,7 +298,7 @@ Some digital credential systems include automated typo correction features. This
 
 ### Retroactive Design Amendments
 
-With digital credentials, you can update the design retroactively. If your organization’s branding changes or you want to modify the look of issued credentials, you can apply these updates to previously issued credentials, ensuring consistency in your branding.
+With digital credentials, you can update the design retroactively. If your organization’s branding changes or you want to modify the look of issued credentials, you can apply these updates to previously issued credentials, ensuring consistency in your branding. Additionally, you can personalize your credentials by adding [QR codes](https://www.adobe.com/express/feature/image/qr-code-generator), custom signatures, and other widgets for enhanced security and customization.
 
 ### Issuer Control
 
