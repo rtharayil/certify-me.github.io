@@ -27,7 +27,7 @@ In short, your transcript is a detailed record of your academic journey, capturi
 
 This document not only reflects your academic progress but also serves as a verification of your educational credentials. Transcripts offer a window into your intellectual commitment and skills, illustrating for future schools or employers the breadth of your knowledge, your academic strengths, and your consistency over time.
 
-This record can be critical in a variety of situations, from college applications and scholarship opportunities to job interviews and professional certifications, helping decision-makers understand your academic history at a glance.
+This record can be critical in a variety of situations, from college applications and scholarship [opportunities to job interviews](https://interviewsidekick.com/) and professional certifications, helping decision-makers understand your academic history at a glance.
 
 <br>
 
