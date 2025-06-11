@@ -90,7 +90,7 @@ Unofficial transcripts provide the same detailed overview of your academic recor
 
 Most institutions provide several ways to request your transcripts, making it easier to access your academic records. You can request them directly from the high school or college where you completed your education or through the university’s registrar office, which typically handles transcript requests. 
 
-Additionally, online platforms like [EduTranscript](https://www.certifyme.online/eduTranscript.html), [Parchment](https://www.parchment.com/en-sea/), the [National Student Clearinghouse](https://www.studentclearinghouse.org/) or your school’s student portal have simplified the process, allowing you to request and send transcripts digitally.
+Additionally, online platforms like [EduTranscript](https://www.edutranscript.com/), [Parchment](https://www.parchment.com/en-sea/), the [National Student Clearinghouse](https://www.studentclearinghouse.org/) or your school’s student portal have simplified the process, allowing you to request and send transcripts digitally.
 
 EduTranscript by CertifyMe is quickly becoming the popular choice for transcript workflow management, thanks to its global reach, user-friendly features, and exceptional support, while Parchment and the National Student Clearinghouse primarily serve users in the US and Canada.
 
@@ -113,7 +113,7 @@ Ready to make the request? Here’s a simple guide to requesting your transcript
 1. **Online Portals:** If your school uses an online service, log in to the portal, select your institution, and follow the instructions to request your transcript. Payment may be required, so have a credit or debit card ready. 
 
    
-   If you're using [**EduTranscript by CertifyMe**](https://www.certifyme.online/eduTranscript.html), all you need to do is log in using your credentials, choose the type of transcript you need, upload the necessary information (like ID or forms), and make a secure payment online. You can even track the status of your order directly from your dashboard, from university approval to the moment your transcript arrives at your doorstep.
+   If you're using [**EduTranscript by CertifyMe**](https://www.edutranscript.com/), all you need to do is log in using your credentials, choose the type of transcript you need, upload the necessary information (like ID or forms), and make a secure payment online. You can even track the status of your order directly from your dashboard, from university approval to the moment your transcript arrives at your doorstep.
 
 2. **Registrar's Office:** This is the traditional route. If you’re on campus or near your school, stop by the registrar’s office. Otherwise, you can call or email them to initiate the process. You will find their contact on the “Contact” page of the university website.
 
@@ -167,7 +167,7 @@ If you need your transcript quickly, many schools offer expedited services for a
 ### How to Send Official Transcripts to Universities
 When applying to universities or jobs, you’ll often need to send your transcript directly from the institution. When requesting your transcript, specify the recipient's contact information, including the email or physical address where it should be sent. Many institutions allow you to send transcripts directly through online portals.
 
-To do this using [**EduTranscript**](https://www.certifyme.online/eduTranscript.html), just log in to the platform, submit a request, and specify the institution you want to send your transcript to. Include the contact details of the recipient, whether it’s an admissions guide, administrative office, or university dean, along with the document’s submission deadline.  
+To do this using [**EduTranscript**](https://www.edutranscript.com/), just log in to the platform, submit a request, and specify the institution you want to send your transcript to. Include the contact details of the recipient, whether it’s an admissions guide, administrative office, or university dean, along with the document’s submission deadline.  
 
 Once your request is submitted, the admin from your school or college takes over the process for you. You can then track every step with complete transparency on the platform, from when the transcript is sent to when it’s received by your target institution.
 
@@ -195,6 +195,6 @@ Digital security: Many digital transcripts come as secure PDFs that can’t be e
 
 In summary, obtaining a transcript certificate is a straightforward but essential process, whether you're continuing your education, applying for a job, or transferring credits. We've covered all the basics, from understanding the types of transcripts and knowing when to choose official over unofficial, to locating records from closed institutions and resolving common issues like withheld transcripts. By following the steps outlined above, you can be well-prepared to secure and send your academic record whenever you need it.
 
-Tools like [**EduTranscript by CertifyMe**](https://www.certifyme.online/eduTranscript.html) make ordering transcripts quick and hassle-free, offering easy online access and secure delivery to institutions. With features like expedited options and a reliable order history, CertifyMe keeps the process stress-free and incredibly efficient.
+Tools like [**EduTranscript by CertifyMe**](https://www.edutranscript.com/) make ordering transcripts quick and hassle-free, offering easy online access and secure delivery to institutions. With features like expedited options and a reliable order history, CertifyMe keeps the process stress-free and incredibly efficient.
 
 If you're a high school or college student, or part of a university registrar or admin team, EduTranscript is definitely worth checking out—it’s super easy to use and makes the whole process a breeze. You can give it a [**try for free**](https://info.certifyme.online/eduTranscript-demo) right and I promise you’ll find it super helpful!
