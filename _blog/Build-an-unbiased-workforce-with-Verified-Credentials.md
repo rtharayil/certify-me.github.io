@@ -11,8 +11,8 @@ author : Mrunal Upadhye
 imageLink: /img/blog/credential/23.png
 featured: true
 ---
-# Build an unbiased workforce with Verified Credentials
 
+## Build an unbiased workforce with Verified Credentials
 
 In earlier days, workplaces had to face a biased view in regards to race, gender or sexuality. This, however not entirely diminished, has seen a lot of improvement through incorporating some policies that provide equal views at the workplace irrespective of their race, age and gender.
 
