@@ -208,6 +208,20 @@ Let’s walk through it, one platform at a time.
 
     All because you gave something away with real value.
 
+7. **AI Marketing: Your Secret Weapon**
+
+    AI is making waves in digital marketing, also known as [AI marketing](https://losangelesseoinc.com/ai-marketing-can-help-your-business-succeed/), and it’s a natural complement to a strong digital credential strategy. The insights and analytics from AI tools can help you maximize the impact of your credentials. 
+
+    Here's why it works :-
+
+    1. Data-Driven Improvements: AI tools analyze user behavior to show how and where digital credentials are shared, helping refine your strategy.
+
+    1. Personalized Recommendations: AI-powered platforms like Jasper can draft tailored follow-ups for learners, encouraging them to take the next course or share their credentials.
+
+    **Pro Tip :** Use AI tools to predict trends in sharing patterns for your credentials. This helps you stay ahead of social media or content trends within your industry.
+
+    **Example in Action :** Learn Forward, a corporate training organization, uses AI to track which of its badges are popular on various platforms. This enables smarter, more targeted marketing campaigns that attract more users.
+
 <br>
 
 <img class="img-fluid r-16" src="/img/blog/boost-brand-awareness-with-digital-credentials.png" alt="Different ways to boost brand awareness through digital credentials" style="margin-top:10px;">
