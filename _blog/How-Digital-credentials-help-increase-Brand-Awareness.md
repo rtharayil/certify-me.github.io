@@ -344,4 +344,4 @@ Platforms like CertifyMe make it easy:
 
 From white-labeled design to real-time verification, everything is built to make your job easier and your brand more visible. 
 
-Ready to see it in action? [Book a demo call](https://info.certifyme.online/) and explore how digital credentials can quietly speak volumes about what your institution stands for.
+Ready to see it in action? [Book a demo call](https://info.certifyme.online/request-demo) and explore how digital credentials can quietly speak volumes about what your institution stands for.
