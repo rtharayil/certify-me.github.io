@@ -66,6 +66,7 @@ Before we get excited, there are four core pillars we can’t skip. Ignore any o
 
 Let’s break them down:
 
+<br>
 
 1. Privacy: Who Gets to See What?
 

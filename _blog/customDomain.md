@@ -11,25 +11,30 @@ imageLink: /img/blog/credential/12.png
 featured: true
 ---
 
-# CertifyMe lets you map a custom domain to your Credential Pages .
-
-
-
 ## Steps 1: Choose your SubDomain
-Few suggestions
-* 1 badge.yourdomain.com
-* 2 certificate.yourdomain.com
-* 3 credential.yourdomain.com
-* 4 ?.yourdomain.com
 
+Few suggestions
+
+1. badge.yourdomain.com
+
+1. certificate.yourdomain.com
+
+1. credential.yourdomain.com
+
+1. ?.yourdomain.com
+
+<br>
 
 ## Step 2: Map your SubDomain to app.certifyme.online
+
 Under your DNS and a CName record to make your subdomain point to the credential system server at app.certifyme.online. For example, if you had chosen your subdomain as “certificate.yourdomain.com”, below should be your CName records. (You might need your IT team's help )
 
 ```
 certificate.yourdomain.com app.certifyme.online
 
 ```
+
+<br>
 
 ### Step 2.1 , How to set up a CNAME with GoDaddy
 
@@ -50,6 +55,8 @@ Here’s a brief guide to setting up a CNAME with GoDaddy:
 10. Click Save.
 11. Update us sending an email to CertifyMe with  your sub domain deatils so that we can create your SSL certificate
 
+<br>
+
 ### Step 2.2 , How to set up a CNAME with Google Domain
 
 [Click here to learn how set up a CNAME with Google Domains](https://support.google.com/a/answer/47283?hl=en)
@@ -60,6 +67,8 @@ Mapping
 certificate.yourdomain.com --->  app.certifyme.online
 
 ```
+
+<br>
 
 ### Step 2.3  , How to set up a CNAME with BigRock Domain
 
