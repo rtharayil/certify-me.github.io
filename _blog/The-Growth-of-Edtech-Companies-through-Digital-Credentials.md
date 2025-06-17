@@ -4,20 +4,20 @@ title: The Growth of Edtech Companies through Digital Credentials
 
 description: EdTech refers to the use of educational technology to facilitate learning, and digital credentials enhance its growth and effectiveness.
 
-abstract: The Growth of Edtech Companies through Digital Credentials 
+abstract: 
 topic: news
 author : Mrunal Upadhye
 imageLink: /img/preview1.png
 featured: true
 ---
 
-# What is EdTech?
+## What is EdTech?
 
 EdTechs which is short for Educational Technologies facilitates learning with the combined use of software, educational theory and practice. Educational technologies which are often referred to as EdTech are educational industries that provide and create educational technology for learning and practice.
 
 ## Need for Edtech:
 
-With the recent global pandemic and its constant return, Edtechs has gained a lot of popularity and are constantly trending. The need for educational technology has increased ever since the global pandemic which forced people all around the world to go lockdown and stay quarantined within the four walls of their homes. This made everyone go remote and the need for EdTech to gain popularity.
+With the recent global pandemic and its constant return, Edtechs has gained a lot of popularity and are constantly trending. The need for educational technology has increased ever since the global pandemic which forced people all around the world to go lockdown and stay quarantined within the four walls of their homes. This made everyone go remote and the need for EdTech to gain popularity. Alongside this growth, managing digital learning environments securely also became essential, leading to a rise in demand for [MDM solutions for education](https://scalefusion.com/mdm-solution-for-education).
 
 Edtech company that issue credentials or certification did so by issuing a PDF document of the credential acquired. PDF documents are not secured and allow forgery to the original document, third-party access, data manipulation and many more cyber attacks. This will further target the reputation and brand value of Educational technology. Hence the question of a crucial solution to these rising problems arises.
 
