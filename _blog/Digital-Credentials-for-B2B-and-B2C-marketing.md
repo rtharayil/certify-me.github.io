@@ -4,7 +4,7 @@ title:  Digital Credentials for B2B and B2C marketing
 
 description: Achieve marketing success in B2B and B2C sectors by leveraging digital credentials to recognize employee skills.
 
-abstract:  Digital Credentials for B2B and B2C marketing
+abstract: 
 topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/credential/51.png
@@ -12,12 +12,11 @@ imageLink: /img/blog/credential/51.png
 featured: true
 ---
 
-## Digital Credentials for B2B and B2C marketing
-
-
 Issuing digital credentials has its own set of advantages; it can assist organisations in increasing employee satisfaction, which leads to more productive workers. Productive personnel also contribute to the company's success and performance in meeting its goals, boosting sales and overall efficiency.
 
 There are two widely known business types: B2B Marketing and B2C marketing. But, specifically, how can you use certificates in your marketing to attain these advantages?
+
+<br>
 
 ## B2B Marketing: 
 
@@ -28,6 +27,8 @@ Referral programs and [email marketing](https://growthidea.co.uk/blog/unlocking-
 Referral: Reviews and other people's experiences with a product or service still affect a big number of buyers. A referral or reference from a trusted source instils trust in potential customers, resulting in brand exposure.
 
 Email: When sending an email to potential members or customers, the digital badge or credential is presented together with the digital signature and firm logo, they are convinced the mail is not spam and are interested in what the message proposes. To avoid bounces and keep that trust, verify your [email list](https://instantly.ai/email-verification) before hitting send.
+
+<br>
 
 ## B2C Marketing:
 
