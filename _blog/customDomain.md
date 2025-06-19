@@ -34,25 +34,32 @@ certificate.yourdomain.com app.certifyme.online
 
 ```
 
-<br>
-
 ### Step 2.1 , How to set up a CNAME with GoDaddy
 
 Your custom domain is activated immediately, but for the mapping to be effective, you have to add the right CNAME in your domain’s DNS records. How you add a CNAME to your DNS records depends on your hosting service.
 
-
 Here’s a brief guide to setting up a CNAME with GoDaddy:
 
 1.  Sign in to your GoDaddy account and go to the My Products tab.
+
 2.  Click the domain you want to update.
+
 3.  Click Domain Settings.
+
 4.  In the Additional Settings section, click Manage DNS.
+
 5.  On the DNS Management page, in the Records section, click Add.
+
 6.  From the Type drop-down list, choose CNAME.
+
 7.  In the Host field, type type the respective subdomain  (e.g. "certificate.yourdomain.com" )
+
 8.  In the Points to field, type your CertifyMe domain  ie  app.certifyme.online.
+
 9.  Leave the TTL setting as 1 hour.
+
 10. Click Save.
+
 11. Update us sending an email to CertifyMe with  your sub domain deatils so that we can create your SSL certificate
 
 <br>
@@ -67,8 +74,6 @@ Mapping
 certificate.yourdomain.com --->  app.certifyme.online
 
 ```
-
-<br>
 
 ### Step 2.3  , How to set up a CNAME with BigRock Domain
 
