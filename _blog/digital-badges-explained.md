@@ -162,6 +162,8 @@ By earning digital badges, you demonstrate a commitment to continuous learning a
 </table>
 </div>
 
+<br>
+
 Digital badges and digital certificates both serve to represent achievements, but the choice between them depends on factors like issuer preference and recipient needs. Badges offer a visual representation and can be embedded in [email signatures](https://www.rocketseed.com/our-products/) or shared online, while certificates follow a formal format and are often printed for verification. Badges use colorful designs, while certificates rely on logos and recipient details. Badges are commonly used for module completion within pathways, while certificates serve as final credentials.
 
 
@@ -192,8 +194,6 @@ Encourage students to keep learning and earn more badges by offering different w
 ### 6. Track Progress
 
 Use analytics to monitor badge earning and sharing, gaining insights to improve your program over time.
-
-
 
 By following these steps, organizations can create digital badges that hold meaning, are secure, and provide value to both badge earners and stakeholders. Ready to get started on your badge journey? Let's make your achievements shine!
 
