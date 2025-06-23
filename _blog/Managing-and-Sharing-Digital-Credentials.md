@@ -4,7 +4,7 @@ title: Managing and Sharing Digital Credentials
 
 description: Digital credentials are managed by accepting, claiming, and sharing them through digital platforms for easy verification and recognition.
 
-abstract: Managing and Sharing Digital Credentials  
+abstract: 
 topic: news
 author : Mrunal Upadhye
 imageLink: /img/preview1.png
@@ -36,7 +36,7 @@ Obtaining a Copy of the Digital Credential:
 
 The recipient can download the digital credential after accepting and claiming it for the purpose of printing or storing it for personal records or portfolios.
 
-The digital certificate can be downloaded as a file or copied and pasted into your résumé, portfolio, or social media accounts via URL or links.
+The digital certificate can be downloaded as a file or copied and pasted into your [résumé](https://www.toptal.com/techresume), portfolio, or social media accounts via URL or links.
 
 In Conclusion:
 
