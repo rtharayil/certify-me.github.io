@@ -99,6 +99,10 @@ Want to see how this works in action? Here’s an [e-learning case study](https:
 
 <br>
 
+Think of it like having an [AI receptionist](https://smith.ai/ai-receptionist) for your records office – automating repetitive work so your staff can focus on what truly matters.
+
+<br>
+
 ### Strengthen Your Security and Trust
 
 In an age of deepfakes and fake degrees, credential fraud is real—and growing. Employers are becoming more cautious. Verifying academic claims is no longer optional; it’s essential.
