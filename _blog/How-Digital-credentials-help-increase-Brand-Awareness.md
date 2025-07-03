@@ -214,7 +214,7 @@ Let’s walk through it, one platform at a time.
 
     Here's why it works :-
 
-    1. Data-Driven Improvements: AI tools analyze user behavior to show how and where digital credentials are shared, helping refine your strategy.
+    1. Data-Driven Improvements: AI tools [analyze user behavior](https://middleware.io/product/real-user-monitoring/) to show how and where digital credentials are shared, helping refine your strategy.
 
     1. Personalized Recommendations: AI-powered platforms like Jasper can draft tailored follow-ups for learners, encouraging them to take the next course or share their credentials.
 
