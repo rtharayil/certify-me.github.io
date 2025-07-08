@@ -148,7 +148,7 @@ Adding distinctive elements can make your badge memorable and unique. Canva's "E
 Key Steps:
 
 
-1. <b>Incorporate Icons and Shapes:</b> Add thematic icons or shapes from the “Elements” tab that align with the badge’s message or purpose.
+1. <b>Incorporate Icons and Shapes:</b> Add thematic icons or shapes from the “Elements” tab that align with the badge’s message or purpose — use [thematic analysis](https://www.zonkafeedback.com/guides/thematic-analysis) to ensure consistency and relevance across design elements.
 
 1. <b>Use AI Generated Graphics:</b> Use Canva’s AI image generator to create unique graphics that can’t be found in standard libraries to make your badge design truly original.
 
