@@ -247,6 +247,28 @@ Every time a student shares a credential on LinkedIn or a digital portfolio, you
 
 Today’s learners expect fast, digital-first services—and when you deliver that, it builds real trust. Giving them credentials they can access, use, and share instantly creates a positive post-graduation experience. And satisfied students? They talk. They refer. They return.
 
+<style>
+    .quote-box {
+      background-color: #e0f7ff; /* Lightest blue */
+      border-radius: 0.75rem; /* Rounded borders */
+      padding: 1.5rem;
+      font-style: italic;
+      box-shadow: 0 0.25rem 0.5rem rgb(112, 217, 243);
+    }
+    .quote-author {
+      margin-top: 0;
+      font-weight: 500;
+      text-align: right;
+    }
+</style>
+
+<div class="quote-box mb-4 mt-4">
+   <i>"By meeting these expectations, institutions can foster long-term relationships that extend beyond graduation. Streamlined digital experiences also reduce administrative burdens, allowing staff to focus on personalized student support."</i>
+   <div class="quote-author"> - says Tornike Asatiani, Founder of <a href="https://edumentors.co.uk/" target="_blank"><u>Edumentors</u></a>.</div>
+</div>
+
+Furthermore, real-time access to academic records empowers students to take control of their educational journey. Ultimately, this trust and satisfaction enhance the institution’s reputation and competitiveness in a crowded market.
+
 <br>
 
 ### Improved security and verification
