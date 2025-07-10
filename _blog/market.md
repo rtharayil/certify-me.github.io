@@ -41,7 +41,7 @@ Platforms like CertifyMe make it easy for institutions to issue these credential
 
 Every time someone shares a credential on LinkedIn or adds it to their email footer, something powerful happens.
     
-    The institution that issued it gets *free visibility.*
+The institution that issued it gets *free visibility.*
 
 Now let’s dig deeper.
 
