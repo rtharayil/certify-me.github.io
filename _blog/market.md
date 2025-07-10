@@ -283,8 +283,6 @@ Whether you’re issuing ten badges or ten thousand, CertifyMe can handle it. Bu
 
 CertifyMe was built with educational institutions in mind. It understands your budget constraints and offers pricing that makes sense.
 
-<br>
-
 ### Human Support
 
 No frustrating ticket systems or endless FAQs. CertifyMe provides real-time human support to help you get the most out of the platform.
