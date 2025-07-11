@@ -57,7 +57,7 @@ These elements work together to ensure the certificate’s reliability and trust
 
 ## Digital Certificates vs. Digital Signatures: Key Differences 
 
-While often mentioned together, digital certificates and digital signatures serve different purposes. A digital certificate is used to confirm the identity of the certificate holder, such as a person or organization. On the other hand, a digital signature ensures that a document or message has not been altered after it was signed. 
+While often mentioned together in processes like when you [sign a PDF online](https://pdf.net/), digital certificates and digital signatures serve different purposes. A digital certificate is used to confirm the identity of the certificate holder, such as a person or organization. On the other hand, a digital signature ensures that a document or message has not been altered after it was signed. 
 
 In simple terms, a digital certificate tells you who sent the message, while a digital signature assures you that the message content is genuine and untampered.
 
