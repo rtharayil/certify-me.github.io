@@ -112,7 +112,7 @@ You don’t want your learners to just show up; you want them to get it. That’
 1. Use **Quizizz** or **Kahoot** for more gamified assessments<br>
 1. Anonymous reflection forms using **Microsoft Forms**
 
-**Example:** A student-run peer mentoring group can use weekly quizzes to review topics. The results not only help mentors adjust sessions but also show learners what they still need to work on.
+**Example:** A student-run peer mentoring group can use weekly quizzes to review topics, sharing them easily via QR codes during sessions. One can use the best [QR Code Generators](https://www.the-qrcode-generator.com/) to create and customize these codes for quick access. The results not only help mentors adjust sessions but also show learners what they still need to work on.
 
 **Tip:** Mix it up—use MCQs, short answers, or even open-ended questions to keep learners engaged.
 
