@@ -195,7 +195,7 @@ Verifying the authenticity of verified credentials is a simple and secure proces
     
     Here's an example of a sample digital credential - [click here](https://certificate.hoxomedia.com/verify/6546e5e6662).
 
-1. **Scan the QR Code or Click the Link:** If a QR code is provided, use a QR scanner or smartphone camera to scan it. Alternatively, click on the link to open the credential in your browser.
+1. **Scan the QR Code or Click the Link:** If a QR code is provided, use a QR scanner or smartphone camera to scan it. Alternatively, click on the link to open the credential in your browser. Tool like [The QR Code Generator](https://www.the-qrcode-generator.com/) ensures the code is high‑contrast, sized correctly, and placed so it’s easy to scan without compromising the credential design.
 
 1. **Access the Verification Platform:** The link or QR code will take you to a verification platform that connects to the blockchain or decentralized database. This platform houses the cryptographic proofs needed to authenticate the credential. Each credential will have a unique ID, making sure that the credential is immutable and tamper-proof.
 
