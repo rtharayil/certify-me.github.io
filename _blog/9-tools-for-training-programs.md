@@ -122,7 +122,7 @@ You don’t want your learners to just show up; you want them to get it. That’
 
 **Create Once, Share Many Times**
 
-Training content doesn’t magically appear. Someone has to make it—and that’s where authoring tools come in. These help you build slides, interactive activities, or self-paced modules.
+Training content doesn’t magically appear. Someone has to make it—and that’s where authoring tools come in. These help you build slides, interactive activities, or self-paced modules. Similarly, [AI phone calls](https://convin.ai/product/automated-virtual-ai-agents) can automate the delivery of training content, making it more efficient and accessible for learners.
 
 **Top Choices:**
 
