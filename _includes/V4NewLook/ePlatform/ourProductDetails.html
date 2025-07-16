@@ -26,7 +26,7 @@
                             <h5 class="s-22 w-700" onclick="toggleContent('content1', 'image1')">{{ page.FeatureTitle1
                                 }}
                             </h5>
-                            <p id="content1" style="display: block; text-align: justify;">{{ page.FeatureDescription1 }}
+                            <p id="content1" class="custom-content-text-1" style="display: block; text-align: justify;">{{ page.FeatureDescription1 }}
                             </p>
                         </div>
                     </div> <!-- END CONTENT BOX #1 -->
@@ -43,7 +43,7 @@
                             <h5 class="s-22 w-700" onclick="toggleContent('content2', 'image2')">{{ page.FeatureTitle2
                                 }}
                             </h5>
-                            <p id="content2" style="display: none;text-align: justify;">{{ page.FeatureDescription2 }}
+                            <p id="content2" class="custom-content-text-2" style="display: none;text-align: justify;">{{ page.FeatureDescription2 }}
                             </p>
                         </div>
                     </div> <!-- END CONTENT BOX #1 -->
@@ -60,7 +60,7 @@
                             <h5 class="s-22 w-700" onclick="toggleContent('content3', 'image3')">{{ page.FeatureTitle3
                             }}
                             </h5>
-                            <p id="content3" style="display: none;text-align: justify;">{{ page.FeatureDescription3 }}
+                            <p id="content3" class="custom-content-text-3" style="display: none;text-align: justify;">{{ page.FeatureDescription3 }}
                             </p>
                         </div>
                     </div> <!-- END CONTENT BOX #3 -->
@@ -77,7 +77,7 @@
                             <h5 class="s-22 w-700" onclick="toggleContent('content4', 'image4')">{{ page.FeatureTitle4
                             }}
                             </h5>
-                            <p id="content4" style="display: none;text-align: justify;">{{ page.FeatureDescription4 }}
+                            <p id="content4" class="custom-content-text-4" style="display: none;text-align: justify;">{{ page.FeatureDescription4 }}
                             </p>
                         </div>
                     </div> <!-- END CONTENT BOX #4 -->
@@ -95,7 +95,7 @@
                             <h5 class="s-22 w-700" onclick="toggleContent('content5', 'image5')">{{ page.FeatureTitle5
                             }}</h5>
 
-                            <p id="content5" style="display: none; text-align: justify;">{{ page.FeatureDescription5 }}</p>
+                            <p id="content5" class="custom-content-text-5" style="display: none; text-align: justify;">{{ page.FeatureDescription5 }}</p>
                         </div>
                     </div> <!-- END CONTENT BOX #5 -->
                 </div>
@@ -125,13 +125,11 @@
 </section> <!-- END TEXT CONTENT -->
 
 <script>
-    // Function to toggle content and images visibility
     function toggleContent(contentId, imageId) {
         var content = document.getElementById(contentId);
         var images = document.querySelectorAll('.image');
 
-        // Hide all content and images
-        var allContents = document.querySelectorAll('.cbox-2-txt p');
+        var allContents = document.querySelectorAll('.custom-content-text-1, .custom-content-text-2, .custom-content-text-3, .custom-content-text-4, .custom-content-text-5');
         for (var i = 0; i < allContents.length; i++) {
             allContents[i].style.display = 'none';
         }
@@ -139,7 +137,6 @@
             images[j].style.display = 'none';
         }
 
-        // Show the selected content and image
         content.style.display = 'block';
         document.getElementById(imageId).style.display = 'block';
     }
