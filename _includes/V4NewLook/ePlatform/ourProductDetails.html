@@ -1,0 +1,146 @@
+<!-- TEXT CONTENT -->
+<section class="pt-30 pb-30 ct-03 content-section division" style="margin-bottom: 20px; margin-top: 60px;">
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-9">
+                <div class="section-title" style="margin-bottom: 55px;">
+                    <!-- Title -->
+                    <h2 class="s-38 w-700"> {{ page.OurFeatureTitle }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center">
+            <!-- TEXT BLOCK -->
+            <div class="col-md-5 order-last order-md-2">
+                <div class="txt-block left-column wow fadeInRight">
+                    <!-- CONTENT BOX #1 -->
+                    <div class="cbox-2 process-step">
+                        <!-- Icon -->
+                        <div class="ico-wrap" onclick="toggleContent('content1', 'image1')">
+                            <div class="cbox-2-ico bg--theme color--white">1</div>
+                            <span class="cbox-2-line"></span>
+                        </div>
+                        <!-- Text -->
+                        <div class="cbox-2-txt">
+                            <h5 class="s-22 w-700" onclick="toggleContent('content1', 'image1')">{{ page.FeatureTitle1
+                                }}
+                            </h5>
+                            <p id="content1" style="display: block; text-align: justify;">{{ page.FeatureDescription1 }}
+                            </p>
+                        </div>
+                    </div> <!-- END CONTENT BOX #1 -->
+
+                    <!-- CONTENT BOX #2 -->
+                    <div class="cbox-2 process-step">
+                        <!-- Icon -->
+                        <div class="ico-wrap" onclick="toggleContent('content2', 'image2')">
+                            <div class="cbox-2-ico bg--theme color--white">2</div>
+                            <span class="cbox-2-line"></span>
+                        </div>
+                        <!-- Text -->
+                        <div class="cbox-2-txt">
+                            <h5 class="s-22 w-700" onclick="toggleContent('content2', 'image2')">{{ page.FeatureTitle2
+                                }}
+                            </h5>
+                            <p id="content2" style="display: none;text-align: justify;">{{ page.FeatureDescription2 }}
+                            </p>
+                        </div>
+                    </div> <!-- END CONTENT BOX #1 -->
+
+                    <!-- CONTENT BOX #3 -->
+                    <div class="cbox-2 process-step">
+                        <!-- Icon -->
+                        <div class="ico-wrap" onclick="toggleContent('content3', 'image3')">
+                            <div class="cbox-2-ico bg--theme color--white">3</div>
+                            <span class="cbox-2-line"></span>
+                        </div>
+                        <!-- Text -->
+                        <div class="cbox-2-txt">
+                            <h5 class="s-22 w-700" onclick="toggleContent('content3', 'image3')">{{ page.FeatureTitle3
+                            }}
+                            </h5>
+                            <p id="content3" style="display: none;text-align: justify;">{{ page.FeatureDescription3 }}
+                            </p>
+                        </div>
+                    </div> <!-- END CONTENT BOX #3 -->
+
+                    <!-- CONTENT BOX #4 -->
+                    <div class="cbox-2 process-step">
+                        <!-- Icon -->
+                        <div class="ico-wrap" onclick="toggleContent('content4', 'image4')">
+                            <div class="cbox-2-ico bg--theme color--white">4</div>
+                            <span class="cbox-2-line"></span>
+                        </div>
+                        <!-- Text -->
+                        <div class="cbox-2-txt">
+                            <h5 class="s-22 w-700" onclick="toggleContent('content4', 'image4')">{{ page.FeatureTitle4
+                            }}
+                            </h5>
+                            <p id="content4" style="display: none;text-align: justify;">{{ page.FeatureDescription4 }}
+                            </p>
+                        </div>
+                    </div> <!-- END CONTENT BOX #4 -->
+
+
+
+                    <!-- CONTENT BOX #5 -->
+                    <div class="cbox-2 process-step">
+                        <!-- Icon -->
+                        <div class="ico-wrap" onclick="toggleContent('content5', 'image5')">
+                            <div class="cbox-2-ico bg--theme color--white">5</div>
+                        </div>
+                        <!-- Text -->
+                        <div class="cbox-2-txt">
+                            <h5 class="s-22 w-700" onclick="toggleContent('content5', 'image5')">{{ page.FeatureTitle5
+                            }}</h5>
+
+                            <p id="content5" style="display: none; text-align: justify;">{{ page.FeatureDescription5 }}</p>
+                        </div>
+                    </div> <!-- END CONTENT BOX #5 -->
+                </div>
+            </div> <!-- END TEXT BLOCK -->
+            <!-- IMAGE BLOCK -->
+            <div class="col-md-7 order-first order-md-2">
+                <div class="img-block wow fadeInLeft">
+
+                    <img class="img-fluid image" id="image1" src="{{ page.FeatureImage1 }}"
+                        alt="{{ page.FeatureTitle1 }}" loading="lazy">
+
+                    <img class="img-fluid image" id="image2" src="{{ page.FeatureImage2 }}" 
+                       alt="{{ page.FeatureTitle2 }}" style="display: none;" loading="lazy">
+
+                    <img class="img-fluid image" id="image3" src="{{ page.FeatureImage3 }}"
+                        alt="{{ page.FeatureTitle3 }}" style="display: none;" loading="lazy">
+
+                    <img class="img-fluid image" id="image4" src="{{ page.FeatureImage4 }}"
+                        alt="{{ page.FeatureTitle4 }}" style="display: none;" loading="lazy">
+
+                    <img class="img-fluid image" id="image5" src="{{ page.FeatureImage5 }}"
+                        alt="{{ page.FeatureTitle5 }}" style="display: none;" loading="lazy">
+                </div>
+            </div>
+        </div> <!-- END SECTION CONTENT (ROW) -->
+    </div> <!-- End container -->
+</section> <!-- END TEXT CONTENT -->
+
+<script>
+    // Function to toggle content and images visibility
+    function toggleContent(contentId, imageId) {
+        var content = document.getElementById(contentId);
+        var images = document.querySelectorAll('.image');
+
+        // Hide all content and images
+        var allContents = document.querySelectorAll('.cbox-2-txt p');
+        for (var i = 0; i < allContents.length; i++) {
+            allContents[i].style.display = 'none';
+        }
+        for (var j = 0; j < images.length; j++) {
+            images[j].style.display = 'none';
+        }
+
+        // Show the selected content and image
+        content.style.display = 'block';
+        document.getElementById(imageId).style.display = 'block';
+    }
+</script>
