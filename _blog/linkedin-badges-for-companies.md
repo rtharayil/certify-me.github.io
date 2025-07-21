@@ -12,7 +12,7 @@ imageLink: /img/blog/Guide to Creating LinkedIn Digital Badges for Your Company/
 featured: true
 ---
 
-LinkedIn, being one of the most popular platforms for professionals, provides an excellent opportunity to showcase your skills and achievements. One effective way to do this is by creating optimal digital badges LinkedIn can showcase for your company.
+LinkedIn, being one of the most popular platforms for professionals, provides an excellent opportunity to showcase your skills and achievements. If you're using LinkedIn to reach out to other business professionals, look for new opportunities or [build your sales pipeline](https://sader.agency/how-to-optimize-your-linkedin-outreach-campaigns/) - demonstrating your skills and experience is a non-negotiable. One effective way to do this is by creating optimal digital badges LinkedIn can showcase for your company.
 <br>
 <br>
 These digital badges, often based on the <a href="https://openbadges.org/">Open Badge standard</a> developed by <a href="https://www.mozilla.org/en-US/?v=1">Mozilla</a>, offer a modern and verifiable way to recognize and display skills and accomplishments.
