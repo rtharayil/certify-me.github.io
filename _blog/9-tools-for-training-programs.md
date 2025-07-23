@@ -146,8 +146,8 @@ Videos are everywhere—and training is no exception. Whether it's a recorded le
 **Easy Editors for Beginners:**
 
 1. Clipchamp (by Microsoft)<br>
-1. [Canva Video Editor](https://www.certifyme.online/blog/Canva-badge-maker.html) <br>
-1. iMovie (for Mac users)
+1. iMovie (for Mac users) <br>
+1. [Visme video maker](https://www.visme.co/video-maker/)
     
 **Why It Matters:** You can trim out awkward pauses, add text overlays, and even put in transitions to keep things smooth.
     
