@@ -139,7 +139,7 @@ Learn more about [diploma mills and credential fraud](https://edintegrity.biomed
 
 Here’s something many institutions overlook: digital credentials aren’t just functional—they’re promotional.
 
-Every time a student shares their diploma on LinkedIn or adds it to a digital portfolio, it carries your institution’s name and credibility with it.
+Every time a student shares their diploma on LinkedIn or they while generation portfolio using a [portfolio generator](https://www.visme.co/ai-portfolio-generator) when you add your certificated to a digital portfolio. It carries your institution’s name and credibility with it.
 
 This does three important things:
 
