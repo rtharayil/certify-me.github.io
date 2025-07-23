@@ -293,7 +293,7 @@ Digital credentials aren’t just a tech upgrade—they’re a practical, scalab
 
 Fair question. It’s natural to be cautious when introducing new tech—especially in the education sector, where systems are often complex.
 
-The good news? Most digital credential solutions integrate with existing systems, whether it’s your Student Information System (SIS) or Learning Management System (LMS).
+The good news? Most digital credential solutions integrate with existing systems, whether it’s your Student Information System (SIS) or Learning Management System ([LMS](https://www.kapture.cx/agent-suite/learning-management-system/)).
 
 <br>
 
