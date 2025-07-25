@@ -106,53 +106,53 @@ My roommate once downloaded a “certification” from a random site and proudly
 
 Here’s a step-by-step look inside the process. It’s easier than you might think—no coding required, and no design team must start from scratch.
 
-**1. Brand Upload**
+1. **Brand Upload**
 
-- Logos (usually .SVG or .PNG)
+    1. Logos (usually .SVG or .PNG)
 
-- Official seal or digital signature
+    2. Official seal or digital signature
 
-- Colors, fonts
+    3. Colors, fonts
 
-**2. Template Design**
+2. **Template Design**
 
-- Choose layout: top‑header vs. side‑panel
+    1. Choose layout: top‑header vs. side‑panel
 
-- Apply your branding choices
+    2. Apply your branding choices
 
-- Insert placeholders for:
+    3. Insert placeholders for:
 
-    - Student name
+        1. Student name
 
-    - Achievement title
+        2. Achievement title
 
-    - Issuing date
+        3. Issuing date
 
-    - QR/verification code
+        4. QR/verification code
 
-**3. Preview & Test**
+3. **Preview & Test**
 
-- Use platform preview tools
+    1. Use platform preview tools
 
-- Send sample credentials to test emails
+    2. Send sample credentials to test emails
 
-- Check alignment, cropping, legibility
+    3. Check alignment, cropping, legibility
 
-**4. Issuance**
+4. **Issuance**
 
-- Upload your student list or sync with enrollment system
+    1. Upload your student list or sync with enrollment system
 
-- Send credentials in bulk or one‑by‑one
+    2. Send credentials in bulk or one‑by‑one
 
-- Delivery via email, download link, or LMS integration
+    3. Delivery via email, download link, or LMS integration
 
-**5. Verification Setup**
+5. **Verification Setup**
 
-- Platform usually handles QR/scannable links
+    1. Platform usually handles QR/scannable links
 
-- You choose where it shows up (landing page, portal, etc.)
+    2. You choose where it shows up (landing page, portal, etc.)
 
-- The end‑user sees a branded page—yours, not the platform’s
+    3. The end‑user sees a branded page—yours, not the platform’s
 
 For universities with complex issuance workflows, platforms like CertifyMe even allow API integration with [custom attributes](https://www.certifyme.online/blog/CertifyMe-Custom-Attributes-API-Guide.html) to tailor each credential with precision.
 
@@ -174,39 +174,41 @@ Let’s break it down by stakeholder. You’ll see: whether administrator or stu
 
 ### For Universities / Administrators
 
-**1. Reinforces brand identity**
+1. **Reinforces brand identity**
 
-Every credential doubles as a marketing asset—every time it's shared.
+    Every credential doubles as a marketing asset—every time it's shared.
 
-**2. Improves consistency**
+2. **Improves consistency**
 
-All departments use the same template, fonts, seals—helps maintain quality.
+    All departments use the same template, fonts, seals—helps maintain quality.
 
-**3. Saves time and reduces costs**
+3. **Saves time and reduces costs**
 
-No “find a designer for each certificate” struggle. The tech handles the rest.
+    No “find a designer for each certificate” struggle. The tech handles the rest.
 
-**4. Supports compliance & verifiability**
+4. **Supports compliance & verifiability**
 
-QR codes and platforms mean tamper-proof credentials with audit trails.
+    QR codes and platforms mean tamper-proof credentials with audit trails.
+
+<br>
 
 ### For Students / Recipients
 
-**1. Professional presentation**
+1. **Professional presentation**
 
-Those crisp, branded certificates look polished on digital resumes or portfolios.
+    Those crisp, branded certificates look polished on digital resumes or portfolios.
 
-**2. Easy sharing**
+2. **Easy sharing**
 
-Students share direct links—complete with university’s design—on LinkedIn or email.
+    Students share direct links—complete with university’s design—on LinkedIn or email.
 
-**3. Feels meaningful**
+3. **Feels meaningful**
 
-Seeing the official crest and colors reinforces the sense of accomplishment.
+    Seeing the official crest and colors reinforces the sense of accomplishment.
 
-**4. Trusted by employers**
+4. **Trusted by employers**
 
-No awkward “Is this legit?” moments—just straightforward, branded legitimacy.
+    No awkward “Is this legit?” moments—just straightforward, branded legitimacy.
 
 <br>
 
@@ -214,20 +216,20 @@ No awkward “Is this legit?” moments—just straightforward, branded legitima
 
 There are specific times when you’ll want your credentials to look just right:
 
-**✔ University-wide qualifications**
-Degrees, minors, diplomas—anything full scale.
+**✔ University-wide qualifications**<br>
+    Degrees, minors, diplomas—anything full scale.
 
-**✔ Micro-credentials & Continuing Ed**
-Short courses, workshops, certifications—ideal for badge-heavy portfolios.
+**✔ Micro-credentials & Continuing Ed**<br>
+    Short courses, workshops, certifications—ideal for badge-heavy portfolios.
 
-**✔ Conferences & Summits**
-Your student‑run event, your credentials—in your colors and design.
+**✔ Conferences & Summits**<br>
+    Your student‑run event, your credentials—in your colors and design.
 
-**✔ Extracurricular Programs**
-Leadership programs, peer mentoring, student org certifications.
+**✔ Extracurricular Programs**<br>
+    Leadership programs, peer mentoring, student org certifications.
 
-**✔ Stackable Certifications**
-When modules build toward a larger award, consistency matters.
+**✔ Stackable Certifications**<br>
+    When modules build toward a larger award, consistency matters.
 
 ### Example Use Case
 
@@ -287,33 +289,33 @@ Chances are, the results—less wasted admin time, more polished outcomes, genui
 
 Ready to take the leap? Here are tips to make it smooth:
 
-1. Get high-res logo files
+1. **Get high-res logo files**
 
-No pixelation, please! Ask marketing for official logos in .SVG/.PNG.
+    No pixelation, please! Ask marketing for official logos in .SVG/.PNG.
 
-1. Confirm design style
+1. **Confirm design style**
 
-Serif vs. sans-serif fonts, header vs. footer layouts—pick one “unified” style.
+    Serif vs. sans-serif fonts, header vs. footer layouts—pick one “unified” style.
 
-1. Assign responsibility
+1. **Assign responsibility**
 
-Establish who manages credentials: registrar? marketing? IT?
+    Establish who manages credentials: registrar? marketing? IT?
 
-1. Build a sample template
+1. **Build a sample template**
 
-Choose one credential type (e.g., orientation certificate) to start.
+    Choose one credential type (e.g., orientation certificate) to start.
 
-1. Run a small pilot
+1. **Run a small pilot**
 
-Issue sample PDFs or test links. Check alignment with faculty/students.
+    Issue sample PDFs or test links. Check alignment with faculty/students.
 
-1. Collect feedback
+1. **Collect feedback**
 
-Are things looking professional? Easy to verify? Appealing on LinkedIn?
+    Are things looking professional? Easy to verify? Appealing on LinkedIn?
 
-1. Scale up
+1. **Scale up**
 
-Once you’ve validated the process—go department-by-department or launch campus-wide.
+    Once you’ve validated the process—go department-by-department or launch campus-wide.
 
 Understanding current adoption patterns across universities can help. For a quick overview of where the digital credentialing space is heading, check out the [latest market trends.](https://certifyme.online/blog/market.html)
 
