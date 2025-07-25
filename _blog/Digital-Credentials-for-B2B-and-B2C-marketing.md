@@ -36,6 +36,8 @@ B2C marketing, or business to customer marketing, is a combination of plans, pra
 
 Customers are the focus of B2C marketing, thus acquiring their loyalty and trust is critical for organisations. Many businesses, both large and small, have used incentives to reward loyal consumers, members who have stayed with them for the longest time, or customers who participate. For example, a cafe may provide personalised deals to its loyal customers to encourage them to help with food service and promote customer loyalty.
 
+Similarly, luxury brands like [Tissot](https://laatukoru.com/collections/tissot) often offer exclusive rewards or concierge services to reinforce loyalty, recognizing that long-term relationships matter as much as single sales.
+
 These incentives in form of Digital badges or digital credentials can have the same effect in gaining customer loyalty and building and maintaining customer relations. 
 
 Internal training programs for B2B and B2C marketing:
