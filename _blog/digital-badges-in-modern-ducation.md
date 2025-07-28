@@ -12,7 +12,7 @@ imageLink: /img/blog/Digital Badges in Modern Education A Must-Have Tool for Tea
 featured: true
 ---
 
-Digital badges, also known as online badges or credentials, are rapidly gaining prominence, offering a visual representation of skills and accomplishments that can be earned through various educational endeavours. Whether it's completing a course, participating in a workshop, or taking an exam, <a href="https://certifyme.online/digital-badges">digital badges</a> provide educators with a means to showcase their expertise and achievements on digital platforms, such as websites or social media profiles. In this comprehensive article, we will delve into the myriad benefits of digital badges for teachers and examine how they can revolutionize professional development in the education sector.
+Digital badges, also known as online badges or credentials, are rapidly gaining prominence, offering a visual representation of skills and accomplishments that can be earned through various educational endeavours. Whether it's completing a course, participating in a workshop, or taking an exam, [digital badges](https://certifyme.online/digital-badges) provide educators with a means to showcase their expertise and achievements on digital platforms, such as websites or social media profiles. In this comprehensive article, we will delve into the myriad benefits of digital badges for teachers and examine how they can revolutionize professional development in the education sector.
 
 <br>
 
