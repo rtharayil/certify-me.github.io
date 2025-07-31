@@ -119,7 +119,7 @@ Include metadata such as issuer information, criteria, and badge alignment. This
 
 1. <b>Measuring Badge Impact:</b> Use analytics tools to track badge engagement. Measure the number of badges issued, views, and clicks on LinkedIn. Assess the impact of badges on skill development and career advancement.
 
-1. <b>Gathering Feedback:</b> Collect feedback from badge earners and viewers. Understand their experiences with the badge system and make improvements based on their suggestions.
+1. <b>Gathering Feedback:</b>  Collect feedback from badge earners and viewers by reviewing [types of feedback](https://sloneek.com/lexicon/types-of-feedback) to guide improvements. Understand their experiences with the badge system and make improvements based on their suggestions.
 
 <br>
 
