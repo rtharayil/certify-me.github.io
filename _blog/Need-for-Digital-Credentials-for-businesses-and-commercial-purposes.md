@@ -103,7 +103,7 @@ It creates a ripple effect of growth.
 
 ### Hiring Faster and Smarter
 
-Time is money. The longer it takes to find the right hire, the more it costs.
+Time is money. The longer it takes to find the right hire, the more it costs. That’s why organizations are turning to leading [AI recruitment software](https://x0pa.com/) and applicant tracking systems to transform their hiring processes. When candidates present digital credentials, it can provide the following advantages to the hiring team
 
 With digital credentials:
 
