@@ -72,39 +72,39 @@ Let’s break it down into something relatable: Think of academic transcripts li
 
 1. **Unofficial Transcript**
 
-1. Easy to access.
+   1. Easy to access.
 
-1. Downloadable from your student portal.
+   1. Downloadable from your student portal.
 
-1. Good for personal reference or sharing with family.
+   1. Good for personal reference or sharing with family.
 
-1. Not accepted for official use.
+   1. Not accepted for official use.
 
-Most students use unofficial transcripts to double-check their grades, apply for scholarships, or plan their course loads. It’s like a working draft of your educational story.
+   Most students use unofficial transcripts to double-check their grades, apply for scholarships, or plan their course loads. It’s like a working draft of your educational story. 
 
 2. **Official Transcript**
 
-1. Authenticated by the university.
+   1. Authenticated by the university.
 
-1. Usually includes the registrar’s signature and institutional seal.
+   1. Usually includes the registrar’s signature and institutional seal.
 
-1. Often sent directly to employers, universities, or government offices.
+   1. Often sent directly to employers, universities, or government offices.
 
-1. Typically not opened by the student if it’s paper-based.
+   1. Typically not opened by the student if it’s paper-based.
 
-This is the real deal. It’s the version you send when the stakes are high.
+   This is the real deal. It’s the version you send when the stakes are high.
 
 3. **Digital Transcript in 2025**
 
-This is where it gets interesting. In 2025, more universities are ditching envelopes and moving towards digital formats. Think secure PDFs, blockchain-based credentials, and digital lockers.
+   This is where it gets interesting. In 2025, more universities are ditching envelopes and moving towards digital formats. Think secure PDFs, blockchain-based credentials, and digital lockers.
 
-Why the shift?
+   Why the shift?
 
-1. **Faster delivery:** Minutes instead of days.
+   1. **Faster delivery:** Minutes instead of days.
 
-1. **Tamper-proof:** Encrypted and authenticated.
+   1. **Tamper-proof:** Encrypted and authenticated.
 
-1. **Eco-friendly:** No paper, no ink.
+   1. **Eco-friendly:** No paper, no ink.
 
 **Still confused? Let’s simplify.**
 
@@ -132,56 +132,61 @@ Getting your transcript in 2025 is much easier than it was a decade ago. Many in
 
 <br>
 
-Step 1: Log in to Your Student Portal
+**Step 1: Log in to Your Student Portal**
+
 This might be your university’s internal system like Banner, PeopleSoft, or a custom-built portal. You’ll need your student credentials.
 
-Step 2: Find the “Transcript” Section
+**Step 2: Find the “Transcript” Section**
+
 Usually under "Student Records" or "Academic Records."
 
-Step 3: Choose the Type of Transcript
-Want a PDF copy to keep? Go unofficial.
+**Step 3: Choose the Type of Transcript**
 
-Need one for an employer? Choose the official transcript.
+   1. Want a PDF copy to keep? Go unofficial.
 
-Going digital? Pick the encrypted delivery option.
+   1. Need one for an employer? Choose the official transcript.
 
-Step 4: Verify Your Identity
+   1. Going digital? Pick the encrypted delivery option.
+
+**Step 4: Verify Your Identity**
+
 You may be asked for additional verification (like OTPs or email confirmation).
 
-Step 5: Pay the Fee (if required)
+**Step 5: Pay the Fee (if required)**
+
 Some universities charge $5–10 for official transcripts. Others offer a few free requests per semester.
 
-Step 6: Choose How It Will Be Delivered
+**Step 6: Choose How It Will Be Delivered**
 
-Email to recipient
+   1. Email to recipient
 
-Downloadable secure link
+   1. Downloadable secure link
 
-Mailed paper copy (yes, still an option!)
+   1. Mailed paper copy (yes, still an option!)
 
 **Pro Tips:**
 
-Double-check the recipient's address or email.
+   1. Double-check the recipient's address or email.
 
-If applying to grad school, confirm their preferred delivery format.
+   1. If applying to grad school, confirm their preferred delivery format.
 
-Save a copy for yourself (where allowed).
+   1. Save a copy for yourself (where allowed).
 
 **How Long Does It Take?**
 
-Digital: Sometimes instant. Usually within 24 hours.
+   1. **Digital:** Sometimes instant. Usually within 24 hours.
 
-Mail: 5–10 business days, depending on location.
+   1. **Mail:** 5–10 business days, depending on location.
 
-In-Person Pickup: Some universities allow this with prior appointment.
+   1. **In-Person Pickup:** Some universities allow this with prior appointment.
 
 **Common Mistakes to Avoid:**
 
-Misspelling recipient emails.
+   1. Misspelling recipient emails.
 
-Choosing the wrong type (unofficial when official was needed).
+   1. Choosing the wrong type (unofficial when official was needed).
 
-Requesting during peak times like end-of-semester.
+   1. Requesting during peak times like end-of-semester.
 
 Still stuck? Call or email your Registrar’s office. They're there to help—and trust us, they’ve seen every kind of transcript mishap.
 
@@ -191,50 +196,45 @@ Still stuck? Call or email your Registrar’s office. They're there to help—an
 
 If you’re part of a Registrar’s office, you’ve probably noticed that students are expecting faster, more intuitive services. And when it comes to transcripts, the shift toward digital-first isn’t a trend—it’s the new standard.
 
-What Students Want Today:
+**What Students Want Today:**
 
 1. **Speed:** Instant or same-day transcript processing.
 
+1. **Transparency:** Real-time status tracking.
 
-Transparency: Real-time status tracking.
+1. **Ease of Use:** Mobile-accessible platforms with minimal steps.
 
+1. **Support:** Chatbots, FAQs, and email responses within 24 hours.
 
-Ease of Use: Mobile-accessible platforms with minimal steps.
+**Challenges on Your Side:**
 
+1. High volume of requests during peak periods.
 
-Support: Chatbots, FAQs, and email responses within 24 hours.
+1. Data privacy concerns (hello, FERPA).
 
+1. Platform limitations or outdated systems.
 
-Challenges on Your Side:
-High volume of requests during peak periods.
+**Digital Tools to Consider:**
 
+1. **EduTranscript:** Allows students to receive verified credentials via digital wallets.
 
-Data privacy concerns (hello, FERPA).
+1. **Parchment & National Student Clearinghouse:** Widely used third-party solutions that ensure security and automation.
 
+**The Tech Landscape in 2025:**
 
-Platform limitations or outdated systems.
+1. Institutions are adopting blockchain for secure, tamper-proof transcripts.
 
+1. AI is being used to auto-process standard requests.
 
-Digital Tools to Consider:
-EduTranscript: Allows students to receive verified credentials via digital wallets.
+1. Student identity verification is often done using multi-factor authentication.
 
-
-Parchment & National Student Clearinghouse: Widely used third-party solutions that ensure security and automation.
-
-The Tech Landscape in 2025:
-
-Institutions are adopting blockchain for secure, tamper-proof transcripts.
-
-AI is being used to auto-process standard requests.
-
-Student identity verification is often done using multi-factor authentication.
-
-Privacy Reminder:
+**Privacy Reminder:**
 
 Remember FERPA (Family Educational Rights and Privacy Act). Always ensure:
-Transcripts are shared only with student consent.
 
-Secure protocols are used for both storage and delivery.
+1. Transcripts are shared only with student consent.
+
+1. Secure protocols are used for both storage and delivery.
 
 Registrar offices today are no longer just administrative hubs. They are customer service centers that bridge legacy systems and future-ready student expectations. Making transcript access smoother isn’t just a tech upgrade—it’s a trust-building move.
 
@@ -244,34 +244,41 @@ Registrar offices today are no longer just administrative hubs. They are custome
 
 Here are some of the most frequently asked questions students ask about academic transcripts. If you’re one of them, you’re in good company.
 
-1. Is my transcript free?
-Usually, unofficial transcripts are free. Official ones may have a small fee ($5–$15), especially for mailed copies.
+1. **Is my transcript free?**
+   
+   Usually, unofficial transcripts are free. Official ones may have a small fee ($5–$15), especially for mailed copies.
 
-2. How long does it take to get one?
+2. **How long does it take to get one?**
 
-1. Digital: Sometimes instant
+   1. Digital: Sometimes instant
 
-1. Mailed: 3–10 business days
+   1. Mailed: 3–10 business days
 
-1. In-person: Same day (if allowed)
+   1. In-person: Same day (if allowed)
 
-3. Can I email my transcript to an employer?
-You can, but it’s better if your university sends it directly to ensure authenticity.
+3. **Can I email my transcript to an employer?**
+   
+   You can, but it’s better if your university sends it directly to ensure authenticity.
 
-4. What if I studied abroad?
-You’ll need to request transcripts from that institution separately. Some universities include exchange credits, but not always.
+4. **What if I studied abroad?**
 
-5. Will my GPA be on the transcript?
-Yes, most official transcripts include cumulative GPA.
+   You’ll need to request transcripts from that institution separately. Some universities include exchange credits, but not always.
 
-6. What happens if there’s a mistake?
-Contact your Registrar immediately. Errors in course names, grades, or graduation status should be corrected before sending your transcript anywhere.
+5. **Will my GPA be on the transcript?**
 
-7. Can I request transcripts if I have pending fees?
-Some universities block transcript access until all dues are cleared. Check your student account.
+   Yes, most official transcripts include cumulative GPA.
 
-8. Do employers really look at transcripts?
-For internships, graduate roles, and early-career jobs—yes. Especially in competitive fields.
+6. **What happens if there’s a mistake?**
+   
+   Contact your Registrar immediately. Errors in course names, grades, or graduation status should be corrected before sending your transcript anywhere.
+
+7. **Can I request transcripts if I have pending fees?**
+   
+   Some universities block transcript access until all dues are cleared. Check your student account.
+
+8. **Do employers really look at transcripts?**
+   
+   For internships, graduate roles, and early-career jobs—yes. Especially in competitive fields.
 
 This section can be a lifesaver for students, especially during graduation season or application deadlines. Share it, bookmark it, and maybe even stick it on your dorm fridge.
 
