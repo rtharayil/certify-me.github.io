@@ -20,7 +20,7 @@ There are two widely known business types: B2B Marketing and B2C marketing. But,
 
 ## B2B Marketing: 
 
-Any marketing approach or content directed toward a business or organisation is referred to as B2B (business-to-business) marketing. B2B marketing methods are used by companies that leverage [B2B eCommerce](https://appkodes.com/blog/b2b-ecommerce/) to sell products or services to other businesses or organizations rather than consumers.
+Any marketing approach or content directed toward a business or organisation is referred to as B2B (business-to-business) marketing. B2B marketing methods are used by companies that leverage [B2B eCommerce](https://appkodes.com/blog/b2b-ecommerce/) to sell products or services to other businesses or organizations rather than consumers. These strategies often rely on [b2b marketing communication tools](https://shahidshahmiri.com/b2b-marketing-communication-tools/), such as email automation, CRM platforms, and targeted content delivery systems to build relationships, nurture leads, and streamline the sales process.
 
 Referral programs and [email marketing](https://growthidea.co.uk/blog/unlocking-growth-the-power-of-email-deliverability) are two of the most effective B2B marketing strategies. The following are some of the ways that digital credentials can help B2B companies with these marketing strategies:
 
