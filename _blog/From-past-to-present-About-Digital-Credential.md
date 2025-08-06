@@ -4,16 +4,13 @@ title: From-past-to-present-About-Digital-Credential-grow?
 
 description: Digital credentials have revolutionized the certification process, replacing traditional certificates and badges with cost-effective and secure digital alternatives.
 
-abstract:  Certificates and badges have been here for longer than we thought. Traditional paper-based certificates to recognise a persons qualification were issued since the early 1700s. Certificates were used to keep a record of a person birth, death, achievements and qualification or to verify the person's identity. It was the only legal way to identify and prove the legitimacy of the identity of the document.
+abstract:
 
 topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/credential/32.png
 featured: true
 ---
-
-# From-past-to-present-About-Digital-Credential-grow?
-
 
 Certificates and badges have been here for longer than we thought. Traditional paper-based certificates to recognise a persons qualification were issued since the early 1700s. Certificates were used to keep a record of a person birth, death, achievements and qualification or to verify the person's identity. It was the only legal way to identify and prove the legitimacy of the identity of the document.
 
@@ -29,12 +26,8 @@ By issuing the Digital Certificate, through a quality digital credential issuing
 
 Since Digital credentials are backed with meta-data is is easier for businesses to trace back the identity of the credential and verify the contents of the document. Digital credentials are also encrypted with a digital key and a digital signature that denies any data manipulation or forgery to the original document.
 
-# In Conclusion:
+<br>
+
+## In Conclusion:
 
 From past-to-present DIgital credentials have come a long way replacing traditional certificates and physical badges. It is less time consuming saving a lot of manual work and labour and is the most inexpensive and effective way to issue a recognised residential to the individual. Digital credentials have gained a lot of popularity and are here for the long run.
-
-
-
-
-
-
