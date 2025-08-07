@@ -1,7 +1,8 @@
 ---
 layout: V4LayoutSingleBlogPost
 title: 'Case Study: Hobart-Based <br>E-Learning Platform Gains 1,230+ Students and 71% More Brand Visibility'
-description: Discover how a Hobart e-learning platform leveraged CertifyMe digital credentials to attract 1,230+ new students in just two months, boost course completion rates to 89%, and achieve a 71% increase in brand visibility and recognition. Learn the strategies behind their remarkable success!
+description: "Discover how a Hobart e-learning platform leveraged CertifyMe digital credentials to attract 1,230+ new students in just two months, boost course completion rates to 89%, and achieve a 71% increase in brand visibility and recognition. Learn the strategies behind their remarkable success!"
+
 abstract: 
 
 topic: news
@@ -14,7 +15,6 @@ An e-learning platform based in Hobart, Australia, launched in 2021 with 26 inno
 
 <br>
 
-
 ## The Organization
 1. **Founded by:** Four IBM executives
 2. **Focus:** Technology & consulting roles
@@ -22,7 +22,6 @@ An e-learning platform based in Hobart, Australia, launched in 2021 with 26 inno
 4. **Challenge:** Despite impressive results (e.g., a 78% average salary increase among learners), the platform struggled to gain broader market recognition.
 
 <br>
-
 
 ## Objectives
 The platform aimed to overcome its visibility challenges by leveraging digital credentials. Key objectives included:
@@ -35,7 +34,6 @@ The platform aimed to overcome its visibility challenges by leveraging digital c
 
 <br>
 
-
 ## Solution
 To achieve these objectives, the platform partnered with CertifyMe in February 2022. The solution involved the following key components:
 
@@ -45,24 +43,27 @@ To achieve these objectives, the platform partnered with CertifyMe in February 2
 
 <br>
 
-
 ## Implementation Process
 The implementation process was carried out in several stages to ensure seamless integration and maximum impact:
 
 ### Initial Consultation & Needs Assessment
 CertifyMe began by conducting a thorough consultation with the platform’s leadership team to understand their goals, challenges, and target audience. A needs assessment was performed to determine the specific types of credentials that would be most effective in boosting brand recognition and engagement.
+
 <br>
 
 ### Integration with Existing Systems
 The digital credentialing system was integrated with the platform’s existing LMS (Learning Management System) to allow for automatic issuance of credentials upon course completion. This integration ensured a seamless and efficient process, minimizing the need for manual intervention.
+
 <br>
 
 ### Testing & Optimization
 A pilot program was launched to test the new digital credentials with a select group of learners. Feedback was gathered to make any necessary adjustments. The system was optimized based on user feedback, ensuring that the credentials were user-friendly, visually appealing, and aligned with the platform’s objectives.
+
 <br>
 
 ### Launch & Promotion
 Once the credentials were finalized, they were officially launched to all learners on the platform. A promotional campaign was initiated to encourage learners to share their credentials on social media, highlighting the platform’s value and driving new enrollments.
+
 <br>
 
 ### Ongoing Support & Updates
@@ -79,7 +80,6 @@ The execution of digital credentials proved to be a game-changer for the e-learn
 4. **Cost Efficiency:** The automated credentialing process reduced marketing costs and administrative workload, allowing the platform to allocate resources more effectively.
 
 <br>
-
 
 ## Conclusion
 The collaboration between CertifyMe and the Hobart-based e-learning platform successfully enhanced the platform’s brand presence, visibility, and user engagement. **Digital credentials** played a crucial role in motivating learners, increasing course completion rates, and establishing the platform as an industry authority.
