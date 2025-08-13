@@ -1,328 +1,364 @@
+/* MainVerify Page CSS */
+a:link,
+a:visited {
+  text-decoration: none;
+}
 
-    /* MainVerify Page CSS */
-    a:link,
-    a:visited {
-        text-decoration: none;
-    }
+a:hover,
+a:active {
+  text-decoration: none;
+}
 
-    a:hover,
-    a:active {
-        text-decoration: none;
-    }
+.blurImg {
+  -webkit-filter: blur(5px);
+  /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
+}
+/* End */
 
-    .blurImg {
-        -webkit-filter: blur(5px);
-        /* Safari 6.0 - 9.0 */
-        filter: blur(5px);
-    }
+/* Navbar CSS */
+/* it is for the wallet button */
+@media only screen and (max-width: 600px) {
+  .half {
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+  }
+  .navbarLogo {
+    width: 50%;
+    text-align: left;
+    margin-left: -50px;
+  }
+}
+/* sub Category End */
 
-    /* End */
+.navbarDiv {
+  width: 66.66%;
+  margin: 0 17%;
+}
+.logo {
+  max-width: 150px;
+  max-height: 60px;
+}
+.navButton {
+  margin-left: -20px;
+}
 
-    /* Navbar CSS */
-    /* it is for the wallet button */
-    @media only screen and (max-width: 600px) {
-        .half {
-            width: 50%;
-            float: right;
-            box-sizing: border-box;
-        }
+@media (min-width: 2400px) {
+  .response {
+    
+    margin: 0 23%
+  
+  }
+}
 
-        .navbarLogo {
-            width: 50%;
-            text-align: left;
-            margin-left: -50px;
-        }
-    }
+  @media (min-width: 1880px) and (max-width: 2400px){
+  
+  .response {
+    
+    margin: 0 10%
+  
+  }
+  
+}
 
-    /* sub Category End */
-
-    .navbarDiv {
-        width: 66.66%;
-        margin: 0 17%;
-    }
-
-    .logo {
-        max-width: 150px;
-        max-height: 60px;
-    }
-
-    .navButton {
-        margin-left: -20px;
-    }
-
-    @media (min-width: 2400px) {
-        .response {
-
-            margin: 0 23%
-        }
-    }
-
-    @media (min-width: 1880px) and (max-width: 2400px) {
-
-        .response {
-
-            margin: 0 10%
-        }
-
-    }
-
-    /* 
+/* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
-    @media (min-width: 1025px) and (max-width: 1879px) {
+@media (min-width: 1025px) and (max-width: 1879px) {
+  
+  .response {
+    
+    margin: 0 4%
+  
+  }
+  
+}
 
-        .response {
-
-            margin: 0 4%
-        }
-
-    }
-
-    /* 
+/* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .response {
+    
+    margin: 0 1%
+  
+  }
+  
+}
 
-        .response {
-
-            margin: 0 1%
-        }
-
-    }
-
-    /* 
+/* 
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 
-    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .response {
+    
+    margin: 0 1%
+  
+  }
+  
+}
 
-        .response {
-
-            margin: 0 1%
-        }
-
-    }
-
-    /* 
+/* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 
-    @media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .response {
+    
+    margin: 0 0%
+  
+  }
+  
+}
 
-        .response {
-
-            margin: 0 0%
-        }
-
-    }
-
-    /* 
+/* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
 
-    @media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .response {
+    
+    margin: 0 0%
+  
+  }
+  
+}
+/* End */
 
-        .response {
+/* verifyPage body CSS */
 
-            margin: 0 0%
-        }
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+  .response {
+    width: 100%;
+  }
+} */
+/* small devices (tablets) 
+@media only screen and (min-width: 900px) {
+  .response {
+    width: 100%;
+  }
+}
 
-    }
+@media only screen and (min-width: 1134px) {
+  .response {
+    width: 90%;
+    margin: 0 17%;
+  
+  }
+}
+@media only screen and (min-width: 1530px) {
+  .response {
+    width: 90.55%;
+    margin: 0 15%;
+  
+  }
+}
 
-    /* End */
+@media only screen and (min-width: 1530px) {
+  .response {
+    width: 66.66%;
+    margin: 0 17%;
+  }
+}
+ End */
 
-    /* Left Section CSS */
+/* Left Section CSS */
 
-    /* Custom styles for laptop screens (min-width: 1024px) */
-    @media only screen and (min-width: 1120px) {
-        .rightPading {
-            padding-right: 80px;
-        }
-    }
+/* Custom styles for laptop screens (min-width: 1024px) */
+@media only screen and (min-width: 1120px) {
+  .rightPading {
+    padding-right: 80px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .templateEvent {
+    font-size: 19px;
+    margin-bottom: -2px;
+  }
+  .badgeNamePTag {
+    text-align: left;
+    font-size: 17px;
+    margin-top: 0;
+  }
+}
 
-    @media only screen and (max-width: 600px) {
-        .templateEvent {
-            font-size: 19px;
-            margin-bottom: -2px;
-        }
+.indentation {
+  line-height: 1.8;
+  text-align: justify;
+  text-justify: inter-word;
+}
 
-        .badgeNamePTag {
-            text-align: left;
-            font-size: 17px;
-            margin-top: 0;
-        }
-    }
+.bodyMargin {
+  margin-bottom: 20px;
+}
 
-    .indentation {
-        line-height: 1.8;
-        text-align: justify;
-        text-justify: inter-word;
-    }
+.templateEvent {
+  font-size: 22px;
+  margin-bottom: -2px;
+}
 
-    .bodyMargin {
-        margin-bottom: 20px;
-    }
+.institutionNameSpan {
+  color: rgba(0, 111, 175, 0.801);
+  font-size: 13px;
+}
 
-    .templateEvent {
-        font-size: 22px;
-        margin-bottom: -2px;
-    }
+.Icon {
+  margin-left: 2px;
+}
 
-    .institutionNameSpan {
-        color: rgba(0, 111, 175, 0.801);
-        font-size: 13px;
-    }
+.badgeNamePTag {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 0;
+}
 
-    .Icon {
-        margin-left: 2px;
-    }
+.badgeNameImage {
+  border-radius: 60%;
+  max-width: 50px;
+  border: 1px solid #f4f0f0;
+}
 
-    .badgeNamePTag {
-        text-align: left;
-        font-size: 20px;
-        margin-top: 0;
-    }
+.badgeNameSpan {
+  font-size: 20px;
+}
 
-    .badgeNameImage {
-        border-radius: 60%;
-        max-width: 50px;
-        border: 1px solid #f4f0f0;
-    }
+.link {
+  color: rgba(0, 111, 175, 0.801);
+  font-size: small;
+}
 
-    .badgeNameSpan {
-        font-size: 20px;
-    }
+.smallFont {
+  font-size: small;
+}
 
-    .link {
-        color: rgba(0, 111, 175, 0.801);
-        font-size: small;
-    }
+.largeFont {
+  font-size: medium;
+}
 
-    .smallFont {
-        font-size: small;
-    }
+.icon2 {
+  margin-right: 5px;
+}
 
-    .largeFont {
-        font-size: medium;
-    }
+.badgeTemplateText {
+  margin-bottom: 10px;
+}
 
-    .icon2 {
-        margin-right: 5px;
-    }
+.acquiredSkillsDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
-    .badgeTemplateText {
-        margin-bottom: 10px;
-    }
+.featureButtons {
+  /* color: #524e4e; */
+  font-size: small;
+}
+.w3-flex {
+  display: flex;
+}
 
-    .acquiredSkillsDiv {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+.w3-flex-grow-1 {
+  flex-grow: 1;
+}
 
-    .featureButtons {
-        /* color: #524e4e; */
-        font-size: small;
-    }
+.w3-flex-shrink-1 {
+  flex-shrink: 1;
+}
 
-    .w3-flex {
-        display: flex;
-    }
+/* End */
 
-    .w3-flex-grow-1 {
-        flex-grow: 1;
-    }
+/* Right Section CSS */
+.boxPading {
+  padding: 20px;
+}
+.fourthBox {
+  margin-top: 25px;
+}
+.shareBoxImage {
+  max-width: 100%;
+  height: 110px;
+}
+.thirdBox {
+  margin-bottom: -25px;
+}
+.thirdBoxBarcode {
+  max-width: 100%;
+  height: auto;
+  max-height: 80px;
+}
+/* End */
 
-    .w3-flex-shrink-1 {
-        flex-shrink: 1;
-    }
+/* share button CSS */
+.w3-justify-content-center {
+  justify-content: center;
+}
 
-    /* End */
+.buttonDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-    /* Right Section CSS */
-    .boxPading {
-        padding: 20px;
-    }
+.shareFlex {
+  flex: 0 0 50%; /* Adjust the column size for responsiveness */
+}
+.buttons {
+  width: 200px;
+  padding: auto;
+  margin-bottom: 10px;
+  border: 2px solid black;
+}
 
-    .fourthBox {
-        margin-top: 25px;
-    }
+.buttonWrapper {
+  margin: 4px;
+}
 
-    .shareBoxImage {
-        max-width: 100%;
-        height: 110px;
-    }
+.search-input {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  /* margin-top: 10px; */
+  box-shadow: inset 0 0 5px #1e90ff; 
+}
 
-    .thirdBox {
-        margin-bottom: -25px;
-    }
+.w3-col.s2:not(:last-child) {
+  margin-right: 4px;
+}
+.fb:not(:last-child) {
+  margin-right: 0px;
+}
 
-    .thirdBoxBarcode {
-        max-width: 100%;
-        height: auto;
-        max-height: 80px;
-    }
+/* Media query for screen widths between 1550px and 1800px */
+@media (min-width: 1550px) and (max-width: 1800px) {
+  .w3-col.s2:not(:last-child) {
+    margin-right: 10px; /* Adjust the margin value as needed */
+  }
+}
+/* end */
 
-    /* End */
+.aboutSection a { color: rgba(0, 111, 175, 0.801); text-decoration: underline; }
 
-    /* share button CSS */
-    .w3-justify-content-center {
-        justify-content: center;
-    }
+.marker {
+  background-color: yellow;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
 
-    .buttonDisplay {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .shareFlex {
-        flex: 0 0 50%;
-        /* Adjust the column size for responsiveness */
-    }
-
-    .buttons {
-        width: 200px;
-        padding: auto;
-        margin-bottom: 10px;
-        border: 2px solid black;
-    }
-
-    .buttonWrapper {
-        margin: 4px;
-    }
-
-    .search-input {
-        width: 60%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        font-size: 16px;
-        /* margin-top: 10px; */
-        box-shadow: inset 0 0 5px #1e90ff;
-    }
-
-    .w3-col.s2:not(:last-child) {
-        margin-right: 4px;
-    }
-
-    .fb:not(:last-child) {
-        margin-right: 0px;
-    }
-
-    /* Media query for screen widths between 1550px and 1800px */
-    @media (min-width: 1550px) and (max-width: 1800px) {
-        .w3-col.s2:not(:last-child) {
-            margin-right: 10px;
-            /* Adjust the margin value as needed */
-        }
-    }
-
-    /* end */
+.earningCriteria a { color: rgba(0, 111, 175, 0.801); text-decoration: underline; }
