@@ -31,7 +31,20 @@ Think of self-sovereign identity like having your own personal vault that only y
 In traditional identity systems, universities act as the central authority for student transcripts. When an employer needs to verify a graduate's credentials, they must contact the university directly, creating delays and administrative burden.
 
 SSI fundamentally changes this dynamic by shifting control to the student themselves.
-Add this youtube video here :- https://www.youtube.com/watch?v=djhYZZ3CkuM
+
+<div class="container mt-4">
+    <div class="ratio ratio-16x9 r-16">
+        <iframe class="img-fluid r-16" 
+                src="https://www.youtube.com/embed/djhYZZ3CkuM" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+<br>
 
 ### How Does Self-Sovereign Identity Work For Higher Education Institutions?
 
@@ -148,11 +161,9 @@ The self-sovereign identity model operates through an interconnected system of d
 
 Understanding how SSI functions requires grasping three fundamental building blocks that work together to create a secure, student-controlled credentialing ecosystem.
 
-<img class="img-fluid r-16" src="/img/blog/why-should-institutions-care-about-going-digital.png" alt="Ways of Why Should Institutions Care About Going Digital?" style="display: block; margin: 0 auto;">
+<img class="img-fluid r-16" src="https://cdn.prod.website-files.com/6311eb97e2519f5dbb9ea0cb/66ac97eecd924cd98749e75d_64e71e443e14c16269cf6107_Self-Sovereign%2520Identity%2520pillars-2.webp" alt="How does the Self-Sovereign Identity Model work?" style="display: block; margin: 0 auto;">
 
-<br>
-
-Insert this image over here :- https://cdn.prod.website-files.com/6311eb97e2519f5dbb9ea0cb/66ac97eecd924cd98749e75d_64e71e443e14c16269cf6107_Self-Sovereign%2520Identity%2520pillars-2.webp
+<br> 
 
 ### Decentralized Identifiers: The Foundation of Ownership
 
