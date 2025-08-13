@@ -114,6 +114,8 @@ University registrar teams are facing mounting pressures from fraud prevention n
 
 The registrar's office has traditionally been the guardian of academic records, but this role is evolving rapidly as digital transformation changes how credentials are issued, stored, and verified.
 
+<br>
+
 <img class="img-fluid r-16" src="/img/blog/Why-Is-Self-Sovereign-Identity-Important-For-Higher-Education.png" alt="Importance of Self-Sovereign Identity for University registrar teams" style="display: block; margin: 0 auto;">
 
 <br>
