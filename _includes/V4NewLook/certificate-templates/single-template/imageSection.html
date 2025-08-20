@@ -1,0 +1,128 @@
+<!-- IMAGE SECTION -->
+<div class="col-md-8 mb-4">
+    <!-- Main Image Carousel -->
+    <div id="certificateCarousel" class="carousel slide" data-bs-interval="false">
+
+        <!-- Images -->
+        <div class="carousel-inner">
+            {% for img in page.imageArray %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                <img src="{{ img }}" class="d-block w-100 img-fluid r-08" alt="Certificate {{ forloop.index }}">
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Arrows -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#certificateCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#certificateCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Thumbnail Row Wrapper -->
+    <div class="position-relative mt-3">
+
+        {% if page.imageArray.size > 5 %}
+        <!-- Left Arrow -->
+        <button class="thumb-arrow position-absolute top-50 start-0 translate-middle-y" onclick="scrollThumbnails(-1)">
+            ‹
+        </button>
+        {% endif %}
+
+        <!-- Scrollable Thumbnails -->
+        <div id="thumbScroller" class="d-flex gap-2 px-1"
+            style="overflow:hidden; white-space:nowrap; scroll-behavior:smooth;">
+            {% for img in page.imageArray %}
+            <img src="{{ img }}" class="img-thumbnail flex-shrink-0" style="width:150px; height:auto; cursor:pointer;"
+                data-bs-target="#certificateCarousel" data-bs-slide-to="{{ forloop.index0 }}"
+                alt="Thumbnail {{ forloop.index }}">
+            {% endfor %}
+        </div>
+
+        {% if page.imageArray.size > 5 %}
+        <!-- Right Arrow -->
+        <button class="thumb-arrow position-absolute top-50 end-0 translate-middle-y" onclick="scrollThumbnails(1)">
+            ›
+        </button>
+        {% endif %}
+    </div>
+
+    <script>
+        function scrollThumbnails(direction) {
+            const scroller = document.getElementById('thumbScroller');
+            const scrollAmount = 120; // adjust for how many thumbnails move per click
+            scroller.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        }
+    </script>
+
+    <style>
+        .thumb-arrow {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(0, 0, 0, 0.4);
+            /* transparent circle */
+            color: #fff;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .thumb-arrow:hover {
+            background: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+
+
+
+</div>
+
+
+<!-- TEXT SECTION -->
+<div class="col-md-4 mb-4">
+
+    <!-- Tags -->
+    <div class="d-flex gap-2 mb-3">
+        <span class="badge bg-light text-black p-2 align-middle">{{ page.tag1 }}</span>
+        <span class="badge bg-light text-black p-2 align-middle">{{ page.tag2 }}</span>
+    </div>
+    <!-- Title -->
+    <h2 class="fw-bold mb-3" style="font-size:1.6rem;">
+        {{ page.title }}
+    </h2>
+    <!-- Description -->
+    <p class="text-muted mb-4" style="font-size:0.95rem;">
+        {{ page.description }}
+    </p>
+    <!-- Edit Button -->
+    <div class="text-center mb-4">
+        <a href="https://my.certifyme.online/auth/preregister/" class="btn r-04 btn--theme hover--black w-100">
+            Edit this template
+        </a>
+    </div>
+    <!-- Feature Box -->
+    <div class="p-3 rounded mb-3" style="border: 1px solid lightgrey;">
+        <ul class="list-unstyled mb-0" style="font-size: 14px;">
+            <li class="mb-2"><span class="flaticon-check text-primary me-2"></span> Customize this template for free
+            </li>
+            <li class="mb-2"><span class="flaticon-check text-primary me-2"></span> Email and export in bulk</li>
+            <li class="mb-2"><span class="flaticon-check text-primary me-2"></span> Track recipient engagement</li>
+        </ul>
+    </div>
+    <!-- Sign up text -->
+    <p class="text-center small text-muted mb-0">
+        Don’t have CertifyMe account? <a href="https://my.certifyme.online/auth/preregister/"
+            style="color: blue;"><u>Sign up</u></a>
+    </p>
+
+</div>
+<!-- END TEXT SECTION -->

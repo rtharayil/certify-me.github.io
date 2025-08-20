@@ -1,0 +1,41 @@
+<!-- Related Certificate Templates -->
+{% if page.related_templates and page.related_templates.size > 0 %}
+<div class="row">
+    <div class="col">
+        <h4 class="s-26 w-700 mb-3">Related certificate templates:</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="d-flex flex-wrap gap-2">
+            {% for rel in page.related_templates %}
+                <a href="{{ rel.url }}" class="related-badge">
+                    {{ rel.name }}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<style>
+    .related-badge {
+        display: inline-block;
+        background: #f8f9fa; /* light gray */
+        color: #000;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        margin: 5px;
+    }
+
+    .related-badge:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+</style>

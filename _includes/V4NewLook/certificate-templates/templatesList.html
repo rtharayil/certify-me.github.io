@@ -1,0 +1,31 @@
+{% if template.imageLink != '0' %}
+<!-- POSTS WRAPPER -->
+<div class="posts-wrapper">
+    <div class="row">
+        {% for template in site.credential-templates %}
+            <div onclick="location.href='{{site.baseurl}}{{template.url}}';" class="col-md-4 mb-4">
+                
+                <div class="blog-post wow fadeInUp clearfix h-100">
+
+                    <div class="blog-post-img mb-3">
+                        <img class="img-fluid r-08 w-100" src="{{ template.imageLink }}" alt="{{ template.title }}">
+                    </div>
+
+                    <div class="blog-post-txt">
+                        
+                        <h6 class="s-18 w-700">
+                            <a href="{{ template.url }}">{{ template.title }}</a>
+                        </h6>
+                        
+                        <p class="s-14">{{ template.description }}</p>
+                    
+                    </div>
+
+                </div>
+            
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<!-- END POSTS WRAPPER -->
+{% endif %}

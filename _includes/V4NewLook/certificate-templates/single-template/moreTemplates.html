@@ -1,0 +1,39 @@
+{% assign valid_templates = site.credential-templates | where_exp: "t", "t.url != page.url and t.imageLink != '0'" %}
+{% assign valid_templates = valid_templates | slice: 0, 15 %}
+
+{% if valid_templates.size > 0 %}
+<div class="row">
+    <div class="col">
+        <div class="posts-category ico-20 wow fadeInUp">
+            <h4 class="s-26 w-700">More certificates like this: </h4>
+        </div>
+    </div>
+</div>
+
+<div>
+    <!-- POSTS WRAPPER -->
+    <div class="posts-wrapper">
+        <div class="row">
+            {% for template in valid_templates %}
+            <div onclick="location.href='{{site.baseurl}}{{template.url}}';" class="col-md-3 col-sm-6 mb-4">
+                <div class="blog-post wow fadeInUp clearfix h-100">
+
+                    <div class="blog-post-img mb-3">
+                        <a href="{{ template.url }}"><img class="img-fluid r-08 w-100" src="{{ template.imageLink }}"
+                                alt="{{ template.title }}"></a>
+
+                    </div>
+
+                    <div class="blog-post-txt">
+                        <h6 class="s-16 w-700">
+                            <a href="{{ template.url }}">{{ template.title }}</a>
+                        </h6>
+                    </div>
+
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}

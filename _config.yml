@@ -7,6 +7,8 @@ collections:
       output: true
     integrations:
       output: true
+    credential-templates:
+      output: true  
     
 
 
