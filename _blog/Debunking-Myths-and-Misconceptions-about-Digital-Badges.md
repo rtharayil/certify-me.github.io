@@ -104,7 +104,7 @@ Digital badges are being used for everything from:
 
 1. Soft skill development like communication or leadership
 
-On many campuses, students are already earning digital badges without realizing their value. For instance, universities might issue badges for orientation participation, mental health training, or volunteer work. These aren’t just feel-good experiences—they reflect real-world skills that employers value.
+On many campuses, students are already earning digital badges without realizing their value. For instance, universities might issue badges for orientation participation, [mental health](https://bellmedex.com/specialties/behavioral-health-billing-services/) training, or volunteer work. These aren’t just feel-good experiences—they reflect real-world skills that employers value.
 
 And for administrative staff? Badges are a way to track and recognize staff development, cross-training, or participation in conferences.
 
