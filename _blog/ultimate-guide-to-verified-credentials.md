@@ -180,7 +180,7 @@ Beyond hiring, verified credentials are transforming industries like healthcare,
 1. **Healthcare:** Patients can securely share vaccination records or medical histories with doctors and hospitals, enabling faster treatment and ensuring data accuracy.
 1. **Education:** Universities issue tamper-proof digital diplomas and transcripts, allowing graduates to effortlessly share their qualifications with potential employers or institutions.
 1. **Finance:** Banks and financial institutions use verified credentials to authenticate customer identities, ensuring compliance and reducing the risk of fraud.
-1. **Travel:** Digital health credentials, such as vaccination or test records, simplify border control processes and reduce delays at checkpoints.
+1. **Travel:** Digital [health credentials](https://credentialing.org/), such as vaccination or test records, simplify border control processes and reduce delays at checkpoints.
 
 These applications demonstrate the incredible versatility of verified credentials and their ability to enhance trust, security, and efficiency across industries.
 
