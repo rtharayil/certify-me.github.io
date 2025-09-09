@@ -28,7 +28,7 @@ A digital certificate can also be obtained by automating a response or filling o
 
 Sharing the Digital Credential:
 
-Recipients are redirected to a page that allows them to share the digital credential they have received after claiming it. All digital networks and social media platforms, such as Facebook, Twitter, and Instagram, allow you to share your digital credentials.
+Recipients are redirected to a page that allows them to share the digital credential they have received after claiming it. All digital networks and social media platforms, such as Facebook, Twitter, and Instagram, allow you to share your digital credentials. You can also share your digital certificate in your workplace using [office digital signage](https://screencloud.com/office). This could be especially useful for engineering, legal or healthcare professionals.
 
 Sharing media on digital sites necessitates granting permission to do so. To complete the sharing activity, a pop-up would appear, which would differ depending on the digital platform.
 
