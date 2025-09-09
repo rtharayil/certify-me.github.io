@@ -25,7 +25,7 @@ CertifyMe employs several advanced technologies and best practices to ensure the
 
 ### Blockchain Technology
 
-Each credential issued through CertifyMe is stored on the blockchain, creating a tamper-proof record. This ensures that credentials cannot be altered or forged, maintaining their integrity.
+Each credential issued through CertifyMe is stored on the blockchain, creating a tamper-proof record. This ensures that credentials cannot be altered or forged, maintaining their integrity, similar to [decentralized exchange development](https://www.nadcab.com/decentralized-exchange-development) services.
 
 ### Digital Signatures
 
