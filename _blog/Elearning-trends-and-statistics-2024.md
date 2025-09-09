@@ -29,7 +29,7 @@ As the education landscape undergoes a digital transformation, e-learning contin
 
 1. **Market Value:** The global e-learning market is expected to reach **$350 billion by 2025**.
 1. **Growth in the U.S.:** The U.S. e-learning market is projected to grow by **$12.81 billion from 2020 to 2025**.
-1. **User Expansion:** Online learning platform users are expected to reach **57 million by 2027**.
+1. **User Expansion:** [Online learning platform](http://klasio.com/) users are expected to reach **57 million by 2027**.
 1. **Corporate Expansion:** The corporate e-learning market is projected to expand by **142% between 2021 and 2026**.
 1. **Income Increase:** U.S. firms reported a **42% income boost** due to e-learning.
 1. **Retention Rates:** E-learning improves corporate retention rates from **25% to 60%**.
