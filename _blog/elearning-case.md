@@ -11,11 +11,13 @@ featured: true
 ---
 
 ## Overview
+
 An e-learning platform based in Hobart, Australia, launched in 2021 with 26 innovative courses, struggled to build brand presence and stand out in a competitive market. Despite training over 1,000 students and offering high-quality, agile courses tailored for the modern business landscape, the platform's reach and brand visibility were limited. To address this, the platform adopted digital credentials to enhance brand recognition and attract new users.
 
 <br>
 
 ## The Organization
+
 1. **Founded by:** Four IBM executives
 2. **Focus:** Technology & consulting roles
 3. **Courses:** Recession-proof, designed to prepare learners for top-level promotions
@@ -24,6 +26,7 @@ An e-learning platform based in Hobart, Australia, launched in 2021 with 26 inno
 <br>
 
 ## Objectives
+
 The platform aimed to overcome its visibility challenges by leveraging digital credentials. Key objectives included:
 
 1. **Enhance Brand Recognition:** Establish the platform as a trusted source of knowledge in the e-learning industry, increasing its visibility and reputation.
@@ -35,6 +38,7 @@ The platform aimed to overcome its visibility challenges by leveraging digital c
 <br>
 
 ## Solution
+
 To achieve these objectives, the platform partnered with CertifyMe in February 2022. The solution involved the following key components:
 
 1. **Customization & Branding:** The digital credentials were fully customizable, allowing the platform to prominently feature its name, logo, and other branding elements in the credentials. This ensured that every time a credential was shared, the platform’s brand gained visibility.
@@ -44,34 +48,41 @@ To achieve these objectives, the platform partnered with CertifyMe in February 2
 <br>
 
 ## Implementation Process
+
 The implementation process was carried out in several stages to ensure seamless integration and maximum impact:
 
 ### Initial Consultation & Needs Assessment
+
 CertifyMe began by conducting a thorough consultation with the platform’s leadership team to understand their goals, challenges, and target audience. A needs assessment was performed to determine the specific types of credentials that would be most effective in boosting brand recognition and engagement.
 
 <br>
 
 ### Integration with Existing Systems
+
 The digital credentialing system was integrated with the platform’s existing LMS (Learning Management System) to allow for automatic issuance of credentials upon course completion. This integration ensured a seamless and efficient process, minimizing the need for manual intervention.
 
 <br>
 
 ### Testing & Optimization
+
 A pilot program was launched to test the new digital credentials with a select group of learners. Feedback was gathered to make any necessary adjustments. The system was optimized based on user feedback, ensuring that the credentials were user-friendly, visually appealing, and aligned with the platform’s objectives.
 
 <br>
 
 ### Launch & Promotion
+
 Once the credentials were finalized, they were officially launched to all learners on the platform. A promotional campaign was initiated to encourage learners to share their credentials on social media, highlighting the platform’s value and driving new enrollments.
 
 <br>
 
 ### Ongoing Support & Updates
+
 CertifyMe provided ongoing support to the platform, including regular updates to the credentialing system and the introduction of new features. The platform was also given access to analytics tools to track the performance of the credentials, including social shares, engagement rates, and new user sign-ups.
 
 <br>
 
 ## Results
+
 The execution of digital credentials proved to be a game-changer for the e-learning platform:
 
 1. **Brand Visibility:** Social shares increased by **68%**, leading to a **71%** boost in brand visibility and recognition.
@@ -82,6 +93,7 @@ The execution of digital credentials proved to be a game-changer for the e-learn
 <br>
 
 ## Conclusion
+
 The collaboration between CertifyMe and the Hobart-based e-learning platform successfully enhanced the platform’s brand presence, visibility, and user engagement. **Digital credentials** played a crucial role in motivating learners, increasing course completion rates, and establishing the platform as an industry authority.
 
 **Kim Wilson**, Founder of the platform, remarked:
