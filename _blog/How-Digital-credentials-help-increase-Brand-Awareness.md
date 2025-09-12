@@ -101,7 +101,7 @@ Let’s walk through it, one platform at a time.
     1. Show your institution’s name in feeds you’d never reach otherwise.
 
     This is earned media, the holy grail of brand awareness.
-    It’s not you saying how great your brand is—it’s your students, alumni, and partners doing it for you.
+    It’s not you saying how great your brand is—it’s your students, alumni, and partners doing it for you.This is a similar concept to building high-quality backlinks, where a link from a reputable source is a vote of confidence. One of the best ways to achieve this is through [guest posting](https://marketinglad.io/sites-for-guest-posting/) on relevant sites.
 
     Example:
     Jasmine completes a 6-week leadership course and earns a digital badge. She adds it to her LinkedIn. Her friends, classmates, and even recruiters see it. Suddenly, 600 new people are exposed to your university’s name—without you spending a dime.
