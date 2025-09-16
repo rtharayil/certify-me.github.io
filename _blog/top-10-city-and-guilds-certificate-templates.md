@@ -66,6 +66,21 @@ By using professional templates, you don’t just save time, you also deliver ce
 
 Think *confidence at first glance.* A bold red sidebar and crisp white canvas echo City & Guilds’ brand palette, while a generous header block frames your college logo beside the iconic red ampersand.
 
+<img class="r-16"
+     src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 1.png"
+     alt="Editable Certificate Template 1"
+     style="display: block; margin: 0 auto; max-width: 600px; height: auto;">
+
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/editable-city-and-guilds-blank-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 80%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this City & Guilds Certificate Template →
+  </a>
+</div>
+
 <br>
 
 ### Key features
@@ -80,22 +95,26 @@ Think *confidence at first glance.* A bold red sidebar and crisp white canvas ec
 
 **Industry insight:** Red and white color schemes score highest in brand recognition studies among vocational certificates, making this design particularly effective for apprenticeship programs where employer recognition is crucial.
 
-
-<img class="img-fluid r-16" src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 1.png" alt="Editable Certificate Template 1" style="display: block; margin: 0 auto;">
- 
-
-<a href="https://www.certifyme.online/credential-templates/editable-city-and-guilds-blank-certificate-template.html" 
-   target="_blank"
-   class="btn r-06 btn--theme hover--blue-100" 
-   style="width: 100%; text-align: left; text-decoration: none;">
-   Edit this City & Guilds Certificate Template →
-</a>
-
 <br>
 
 ## Traditional City & Guilds Certificate Template with Dual Signatures
 
 A cream parchment texture bordered by a subtle double rule delivers timeless gravitas. Serif headings evoke traditional academia, instantly signalling credibility to employers and licensing bodies.
+
+<img class="r-16"
+     src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 2.png"
+     alt="Editable Certificate Template 2"
+     style="display: block; margin: 0 auto; max-width: 600px; height: auto;">
+
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/printable-classic-city-and-guilds-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 80%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this City & Guilds Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -111,20 +130,26 @@ A cream parchment texture bordered by a subtle double rule delivers timeless gra
 
 **Industry Insight:** Traditional parchment style conveys credibility and trust, preferred for formal diplomas and official documents displayed in office environments.
 
-<img class="img-fluid r-16" src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 2.png" alt="Editable Certificate Template 2" style="display: block; margin: 0 auto;">
-
-<a href="https://www.certifyme.online/credential-templates/printable-classic-city-and-guilds-certificate-template.html" 
-   target="_blank"
-   class="btn r-06 btn--theme hover--blue-100" 
-   style="width: 100%; text-align: left; text-decoration: none;">
-   Edit this City & Guilds Certificate Template →
-</a>
-
 <br>
 
 ## Clean Minimalist City & Guilds Certificate Template for Digital Credentials
 
 Minimalism meets functionality. Massive whitespace draws the eye straight to the learner’s name, while a pale grey watermark of the crest whispers authenticity.
+
+<img class="r-16"
+     src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 3.png"
+     alt="Editable Certificate Template 3"
+     style="display: block; margin: 0 auto; max-width: 600px; height: auto;">
+
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/classic-city-and-guilds-certificate-blank-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 80%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this City & Guilds Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -140,20 +165,26 @@ Minimalism meets functionality. Massive whitespace draws the eye straight to the
 
 **Industry Insight:** Minimalist layouts improve readability and are highly adaptable for digital credentialing platforms and social media sharing.
 
-<img class="img-fluid r-16" src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 3.png" alt="Editable Certificate Template 3" style="display: block; margin: 0 auto;">
-
-<a href="https://www.certifyme.online/credential-templates/classic-city-and-guilds-certificate-blank-template.html" 
-   target="_blank"
-   class="btn r-06 btn--theme hover--blue-100" 
-   style="width: 100%; text-align: left; text-decoration: none;">
-   Edit this City & Guilds Certificate Template →
-</a>
-
 <br>
 
 ## Premium Ornate City & Guilds Certificate Template for Trade Awards
 
 A decorative scroll border frames a navy header ribbon—ceremonial, yet unmistakably vocational. Perfect when you need to balance pomp with practicality.
+
+<img class="r-16"
+     src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 4.png"
+     alt="Editable Certificate Template 4"
+     style="display: block; margin: 0 auto; max-width: 600px; height: auto;">
+
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/professional-downloadable-city-and-guilds-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 80%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this City & Guilds Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -169,20 +200,26 @@ A decorative scroll border frames a navy header ribbon—ceremonial, yet unmista
 
 **Industry Insight:** Ornate designs paired with premium finishes appeal to vocational awards and trade competitions focused on recognition and prestige.
 
-<img class="img-fluid r-16" src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 4.png" alt="Editable Certificate Template 4" style="display: block; margin: 0 auto;">
-
-<a href="https://www.certifyme.online/credential-templates/professional-downloadable-city-and-guilds-certificate-template.html" 
-   target="_blank"
-   class="btn r-06 btn--theme hover--blue-100" 
-   style="width: 100%; text-align: left; text-decoration: none;">
-   Edit this City & Guilds Certificate Template →
-</a>
-
 <br>
 
 ## Corporate Minimalist City & Guilds Certificate Template for CPD Programs
 
 A thick charcoal frame and centred crest keep the focus on the message. The design reads modern corporate, mirroring leading professional-body certificates.
+
+<img class="r-16"
+     src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 5.png"
+     alt="Editable Certificate Template 5"
+     style="display: block; margin: 0 auto; max-width: 600px; height: auto;">
+
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/free-city-and-guilds-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 80%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this City & Guilds Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -198,20 +235,26 @@ A thick charcoal frame and centred crest keep the focus on the message. The desi
 
 **Industry Insight:** Clean, corporate-style certificates align with HR recruitment processes, enhancing quick scanning and verification.
 
-<img class="img-fluid r-16" src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 5.png" alt="Editable Certificate Template 5" style="display: block; margin: 0 auto;">
-
-<a href="https://www.certifyme.online/credential-templates/free-city-and-guilds-certificate-template.html" 
-   target="_blank"
-   class="btn r-06 btn--theme hover--blue-100" 
-   style="width: 100%; text-align: left; text-decoration: none;">
-   Edit this City & Guilds Certificate Template →
-</a>
-
 <br>
 
 ## Bulk-Ready Classic City & Guilds Certificate Template for Mass Issuance
 
 Neutral grey tones and a duplex-print-ready template make this the workhorse of the list, built for speed when you’re issuing hundreds of awards at semester’s end.
+
+<img class="r-16"
+     src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 6.png"
+     alt="Editable Certificate Template 6"
+     style="display: block; margin: 0 auto; max-width: 600px; height: auto;">
+
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/printable-city-and-guilds-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 80%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this City & Guilds Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -227,20 +270,26 @@ Neutral grey tones and a duplex-print-ready template make this the workhorse of 
 
 **Industry Insight:** Efficient batch issuance templates reduce administrative overhead for large-scale graduation events and digital delivery.
 
-<img class="img-fluid r-16" src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 6.png" alt="Editable Certificate Template 6" style="display: block; margin: 0 auto;">
-
-<a href="https://www.certifyme.online/credential-templates/printable-city-and-guilds-certificate-template.html" 
-   target="_blank"
-   class="btn r-06 btn--theme hover--blue-100" 
-   style="width: 100%; text-align: left; text-decoration: none;">
-   Edit this City & Guilds Certificate Template →
-</a>
-
 <br>
 
 ## Heritage-Style City & Guilds Certificate Template with Security Features
 
 Old-school dignity meets today’s verification standards. A narrow single-line border, seal panel in the bottom-right and ample whitespace create a quietly authoritative look.
+
+<img class="r-16"
+     src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 7.png"
+     alt="Editable Certificate Template 7"
+     style="display: block; margin: 0 auto; max-width: 600px; height: auto;">
+
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/editable-city-and-guilds-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 80%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this City & Guilds Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -256,20 +305,26 @@ Old-school dignity meets today’s verification standards. A narrow single-line 
 
 **Industry Insight:** Combines traditional elegance with modern security, suitable for ceremonies valuing heritage along with verification standards.
 
-<img class="img-fluid r-16" src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 7.png" alt="Editable Certificate Template 7" style="display: block; margin: 0 auto;">
-
-<a href="https://www.certifyme.online/credential-templates/editable-city-and-guilds-certificate-template.html" 
-   target="_blank"
-   class="btn r-06 btn--theme hover--blue-100" 
-   style="width: 100%; text-align: left; text-decoration: none;">
-   Edit this City & Guilds Certificate Template →
-</a>
-
 <br>
 
 ## Multi-Brand City & Guilds Certificate Template for Joint Ventures
 
 A two-column grid sets details left and an embossed crest right—business-school slick without losing City & Guilds DNA.
+
+<img class="r-16"
+     src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 8.png"
+     alt="Editable Certificate Template 8"
+     style="display: block; margin: 0 auto; max-width: 600px; height: auto;">
+
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/free-printable-city-and-guilds-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 80%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this City & Guilds Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -285,20 +340,26 @@ A two-column grid sets details left and an embossed crest right—business-schoo
 
 **Industry Insight:** Supports branding and digital verification integration, ideal for joint ventures and employer-led learning programs requiring co-branding.
 
-<img class="img-fluid r-16" src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 8.png" alt="Editable Certificate Template 8" style="display: block; margin: 0 auto;">
-
-<a href="https://www.certifyme.online/credential-templates/free-printable-city-and-guilds-certificate-template.html" 
-   target="_blank"
-   class="btn r-06 btn--theme hover--blue-100" 
-   style="width: 100%; text-align: left; text-decoration: none;">
-   Edit this City & Guilds Certificate Template →
-</a>
-
 <br>
 
 ## Quick-Print City & Guilds Certificate Template for Event Recognition
 
 Sometimes less is more. This template magnifies the learner’s name in 36-pt serif, with everything else in supporting roles—a design that celebrates the individual.
+
+<img class="r-16"
+     src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 9.png"
+     alt="Editable Certificate Template 9"
+     style="display: block; margin: 0 auto; max-width: 600px; height: auto;">
+
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/professional-city-and-guilds-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 80%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this City & Guilds Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -314,20 +375,27 @@ Sometimes less is more. This template magnifies the learner’s name in 36-pt se
 
 **Industry Insight:** Facilitates on-site quick printing and recognition in workshops or pop-up training, enhancing learner engagement in informal settings.
 
-<img class="img-fluid r-16" src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 9.png" alt="Editable Certificate Template 9" style="display: block; margin: 0 auto;">
-
-<a href="https://www.certifyme.online/credential-templates/professional-city-and-guilds-certificate-template.html" 
-   target="_blank"
-   class="btn r-06 btn--theme hover--blue-100" 
-   style="width: 100%; text-align: left; text-decoration: none;">
-   Edit this City & Guilds Certificate Template →
-</a>
-
 <br>
 
 ## Detailed Multi-Unit City & Guilds Certificate Template with Transcript
 
 Structured tables under the header accommodate multi-unit qualifications—think of it as a mini-transcript and certificate in one.
+
+<img class="r-16"
+     src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 10.png"
+     alt="Editable Certificate Template 10"
+     style="display: block; margin: 0 auto; max-width: 600px; height: auto;">
+
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/free-city-and-guilds-blank-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 80%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this City & Guilds Certificate Template →
+  </a>
+</div>
+
 
 <br>
 
@@ -342,16 +410,6 @@ Structured tables under the header accommodate multi-unit qualifications—think
 **Best for:** modular NVQs, diplomas or any programme where employers need to see unit-level detail at a glance.
 
 **Industry Insight:** Detail-rich templates support modular qualifications where employers need transparent unit-level achievement visibility.
-
-<img class="img-fluid r-16" src="/assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Editable Certificate Template 10.png" alt="Editable Certificate Template 10" style="display: block; margin: 0 auto;">
-
-<a href="https://www.certifyme.online/credential-templates/free-city-and-guilds-blank-certificate-template.html" 
-   target="_blank"
-   class="btn r-06 btn--theme hover--blue-100" 
-   style="width: 100%; text-align: left; text-decoration: none;">
-   Edit this City & Guilds Certificate Template →
-</a>
-
 
 <br>
 
