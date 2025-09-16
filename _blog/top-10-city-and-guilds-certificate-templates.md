@@ -450,7 +450,7 @@ Works offline: the QR stores an embedded URL that loads once a connection resume
 
 When employers need historical awards (pre-2010) or the online portal shows “Not Found,” direct them to:
 
-1. [certificate.services@cityandguilds.com](certificate.services@cityandguilds.com) : include learner full name, DoB, certificate number and centre name.
+1. Send an email to **certificate.services@cityandguilds.com**, including learner full name, DoB, certificate number and centre name.
 
 1. SLA: 2–3 UK business days.
 
