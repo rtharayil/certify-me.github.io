@@ -97,7 +97,7 @@ Employees who are encouraged to upskill—and are given ways to prove those skil
 1. Seek out more training
 1. Share their knowledge with others
 
-It creates a ripple effect of growth.
+It creates a ripple effect of growth. Furthermore, employees who are upskilled are more likely to recommend your workplace, thereby [increasing your eNPS](https://www.custify.com/blog/employee-net-promoter-score-enps/).
 
 <br>
 
