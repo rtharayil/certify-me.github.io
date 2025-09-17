@@ -78,6 +78,15 @@ Below is our comprehensive collection of CNA certificate templates, each designe
 
 <img class="img-fluid r-16" src="/assets4/images/Top_10_CNA_Certificate_Templates_Healthcare_Traning_Programs/CNA Certificate Template 1.png" alt="Editable Certificate Template 1" style="display: block; margin: 0 auto;">
 
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/editable-cna-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this CNA Certificate Template →
+  </a>
+</div>
+
 <br>
 
 ### Key features
@@ -109,6 +118,15 @@ Below is our comprehensive collection of CNA certificate templates, each designe
 ## Printable CNA Certificate Template with Medical-Grade Blue Border Design
 
 <img class="img-fluid r-16" src="/assets4/images/Top_10_CNA_Certificate_Templates_Healthcare_Traning_Programs/CNA Certificate Template 2.png" alt="Editable Certificate Template 2" style="display: block; margin: 0 auto;">
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/printable-cna-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this CNA Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -142,6 +160,15 @@ Below is our comprehensive collection of CNA certificate templates, each designe
 
 <img class="img-fluid r-16" src="/assets4/images/Top_10_CNA_Certificate_Templates_Healthcare_Traning_Programs/CNA Certificate Template 3.png" alt="Editable Certificate Template 3" style="display: block; margin: 0 auto;">
 
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/cna-certificate-template-simple-design.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this CNA Certificate Template →
+  </a>
+</div>
+
 <br>
 
 ### Key Features
@@ -173,6 +200,15 @@ Below is our comprehensive collection of CNA certificate templates, each designe
 ## Modern Elegant CNA Certificate Template for Academic Healthcare Institutions
 
 <img class="img-fluid r-16" src="/assets4/images/Top_10_CNA_Certificate_Templates_Healthcare_Traning_Programs/CNA Certificate Template 4.png" alt="Editable Certificate Template 4" style="display: block; margin: 0 auto;">
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/free-editable-cna-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this CNA Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -206,6 +242,15 @@ Below is our comprehensive collection of CNA certificate templates, each designe
 
 <img class="img-fluid r-16" src="/assets4/images/Top_10_CNA_Certificate_Templates_Healthcare_Traning_Programs/CNA Certificate Template 5.png" alt="Editable Certificate Template 5" style="display: block; margin: 0 auto;">
 
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/cna-certificate-template-bold-and-distinctive-style.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this CNA Certificate Template →
+  </a>
+</div>
+
 <br>
 
 ### Key Features
@@ -237,6 +282,15 @@ Below is our comprehensive collection of CNA certificate templates, each designe
 ## Minimalist CNA Certificate Template for Professional Healthcare Settings
 
 <img class="img-fluid r-16" src="/assets4/images/Top_10_CNA_Certificate_Templates_Healthcare_Traning_Programs/CNA Certificate Template 6.png" alt="Editable Certificate Template 6" style="display: block; margin: 0 auto;">
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/cna-certificate-template-minimalistic-border.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this CNA Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -270,6 +324,15 @@ Below is our comprehensive collection of CNA certificate templates, each designe
 
 <img class="img-fluid r-16" src="/assets4/images/Top_10_CNA_Certificate_Templates_Healthcare_Traning_Programs/CNA Certificate Template 7.png" alt="Editable Certificate Template 7" style="display: block; margin: 0 auto;">
 
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/cna-certificate-template-classic-layout.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this CNA Certificate Template →
+  </a>
+</div>
+
 <br>
 
 ### Key Features 
@@ -301,6 +364,15 @@ Below is our comprehensive collection of CNA certificate templates, each designe
 ## Skills-Based CNA Training Certificate Template for Practical Healthcare Programs
 
 <img class="img-fluid r-16" src="/assets4/images/Top_10_CNA_Certificate_Templates_Healthcare_Traning_Programs/CNA Certificate Template 8.png" alt="Editable Certificate Template 8" style="display: block; margin: 0 auto;">
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/free-cna-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this CNA Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -334,6 +406,15 @@ Below is our comprehensive collection of CNA certificate templates, each designe
 
 <img class="img-fluid r-16" src="/assets4/images/Top_10_CNA_Certificate_Templates_Healthcare_Traning_Programs/CNA Certificate Template 9.png" alt="Editable Certificate Template 9" style="display: block; margin: 0 auto;">
 
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/cna-certificate-template-professional-edition.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this CNA Certificate Template →
+  </a>
+</div>
+
 <br>
 
 ### Key Features 
@@ -365,6 +446,15 @@ Below is our comprehensive collection of CNA certificate templates, each designe
 ## Comprehensive CNA Certificate Template for Theory & Practical Training
 
 <img class="img-fluid r-16" src="/assets4/images/Top_10_CNA_Certificate_Templates_Healthcare_Traning_Programs/CNA Certificate Template 10.png" alt="Editable Certificate Template 10" style="display: block; margin: 0 auto;">
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/cna-certificate-template-practical-training.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this CNA Certificate Template →
+  </a>
+</div>
 
 <br>
 
