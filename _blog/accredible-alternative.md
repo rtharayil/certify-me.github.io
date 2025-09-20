@@ -313,5 +313,5 @@ What matters most is finding a platform that fits the way you work. If you want 
 
 The decision is yours, of course. But if you’re looking for a credentialing platform that’s easier to run, fairer on budget, and trusted by institutions of all sizes, CertifyMe is the people’s choice.
 
-If you’re ready to see how it works in practice, the best next step is simple: **book a short demo call with CertifyMe**. You’ll get a hands-on look at the platform, answers to your specific questions, and a clear sense of whether it’s the right fit for your organization.
+If you’re ready to see how it works in practice, the best next step is simple: [**book a short demo call with CertifyMe**](https://info.certifyme.online/request-demo). You’ll get a hands-on look at the platform, answers to your specific questions, and a clear sense of whether it’s the right fit for your organization.
 
