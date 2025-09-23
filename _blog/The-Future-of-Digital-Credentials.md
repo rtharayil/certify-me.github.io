@@ -359,7 +359,7 @@ Yes, digital credentials take effort to get right. But once the system is in pla
 
 ## What’s Next for Higher Ed?
 
-We’re at an interesting crossroads. The world of education is changing—fast.
+We’re at an interesting crossroads. [The world of education](https://srikalai.com/blog/education-boards-in-india/) is changing—fast.
 
 Employers are beginning to care more about skills than just degrees. Students want flexible, stackable learning. Universities are under pressure to offer more than traditional transcripts.
 
