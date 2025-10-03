@@ -10,7 +10,7 @@ tag1: "Used 262 times"
 tag2: "21cm x 29.7cm"
 
 imageArray:
-  - /assets4/images/certificate-templates/Red Cross Organization ( Trial ) (1).png
+  - /assets4/images/certificate-templates/Red Cross Organization ( Trial ).png
 
 
 # related_templates:
@@ -30,12 +30,14 @@ imageArray:
 #     url: "https://app.certifyme.online/verify/99fc8d126327"        
 
 
-imageLink: /assets4/images/certificate-templates/Red Cross Organization ( Trial ) (1).png
+imageLink: /assets4/images/certificate-templates/Red Cross Organization ( Trial ).png
 
 featured: true
 ---
 
 Our Red Cross certificate template features a polished red accent design that symbolizes compassion, service, and care. Perfect for certifying training completion, volunteer service, and specialized Red Cross programs, this template ensures every achievement is recognized with professionalism. The fresh and aesthetic layout highlights all essential information while maintaining the official look associated with the Red Cross.
+
+<br>
 
 ### Why Choose CertifyMe's Red Cross Certificate Template?
 

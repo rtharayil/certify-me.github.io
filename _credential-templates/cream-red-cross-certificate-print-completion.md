@@ -10,7 +10,7 @@ tag1: "Used 216 times"
 tag2: "21cm x 29.7cm"
 
 imageArray:
-  - /assets4/images/certificate-templates/Red Cross Organization ( Trial ).png
+  - /assets4/images/certificate-templates/Red Cross Organization ( Trial ) (8).png
 
 
 # related_templates:
@@ -30,7 +30,7 @@ imageArray:
 #     url: "https://app.certifyme.online/verify/99fc8d126327"        
 
 
-imageLink: /assets4/images/certificate-templates/Red Cross Organization ( Trial ).png
+imageLink: /assets4/images/certificate-templates/Red Cross Organization ( Trial ) (8).png
 
 featured: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: V4Layout-SingleTemplate
 
-title: "Red Cross Certificate Template for Volunteer Recognition
+title: "Red Cross Certificate Template for Volunteer Recognition"
 
 description: "A professional Red Cross certificate of completion template designed to recognize training, service, and program achievements. The bold red-accent design reflects the values, credibility, and humanitarian mission of the Red Cross."
 
@@ -10,7 +10,7 @@ tag1: "Used 215 times"
 tag2: "21cm x 29.7cm"
 
 imageArray:
-  - /assets4/images/certificate-templates/Red Cross Organization ( Trial ) (2).png
+  - /assets4/images/certificate-templates/Red Cross Organization ( Trial ) (1).png
 
 
 # related_templates:
@@ -30,7 +30,7 @@ imageArray:
 #     url: "https://app.certifyme.online/verify/99fc8d126327"        
 
 
-imageLink: /assets4/images/certificate-templates/Red Cross Organization ( Trial ) (2).png
+imageLink: /assets4/images/certificate-templates/Red Cross Organization ( Trial ) (1).png
 
 featured: true
 ---
