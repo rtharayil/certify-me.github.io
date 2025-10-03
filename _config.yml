@@ -7,7 +7,7 @@ collections:
       output: true
     integrations:
       output: true
-    credential-templates:
+    certificate-templates:
       output: true  
     
 

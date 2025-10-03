@@ -1,4 +1,4 @@
-{% assign valid_templates = site.credential-templates | where_exp: "t", "t.url != page.url and t.imageLink != '0'" %}
+{% assign valid_templates = site.certificate-templates | where_exp: "t", "t.url != page.url and t.imageLink != '0'" %}
 {% assign valid_templates = valid_templates | slice: 0, 15 %}
 
 {% if valid_templates.size > 0 %}
