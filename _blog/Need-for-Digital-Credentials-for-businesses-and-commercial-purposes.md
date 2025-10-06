@@ -127,7 +127,7 @@ When companies use digital credentials internally, it sends a message: "Learning
 
 It nudges employees to keep developing. It also encourages departments to share resources and recognize cross-functional talents. For example:
 
-1. A marketing intern might earn a badge in SEO.
+1. A marketing intern might earn a badge in SEO or [link building](http://rankingraccoon.com/).
 1. An operations staffer might earn a micro-credential in data analytics.
 
 Even industries like event planning are seeing value in this approach—[here’s how digital credentials are helping meetings and event professionals](https://www.certifyme.online/blog/Digital-Credentials-for-event-and-Meetings-Professionals.html).
