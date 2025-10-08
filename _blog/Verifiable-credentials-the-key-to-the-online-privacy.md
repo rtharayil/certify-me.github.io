@@ -304,4 +304,4 @@ If you're curious how this works in practice, check out [CertifyMe](https://www.
 
 Whether you're looking to protect student records or speed up verification tasks, this platform has you covered. Want to see how it fits your needs? 
 
-[Book a demo call](https://info.certifyme.online/request-demo?_gl=1*1vav72*_gcl_au*NzY4NTk3Mzc0LjE3NDk3OTAwMzQ.*_ga*MTQ5OTQ1OTQ0Ny4xNzQxODc1NTIy*_ga_8CWQ2KJW5K*czE3NTA0MjUxMTYkbzExNSRnMSR0MTc1MDQyNTEyMyRqNTMkbDAkaDA.) and take the first step toward smarter, safer credentialing.
+[Book a demo call](https://info.certifyme.online/request-demo) and take the first step toward smarter, safer credentialing.

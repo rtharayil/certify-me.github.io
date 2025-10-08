@@ -10,7 +10,7 @@ topic: news
 imageLink: /assets4/images/Red-Cross/Top-10-Red-Cross-Certificate-Templates-for-Humanitarian-Programs.jpg
 featured: true
 ---
-
+ 
 Emergency response and humanitarian training programs under the Red Cross require professional certification documents that reflect both the gravity of the service and the credibility of the institution. 
 
 A Red Cross certificate template helps training centers, hospitals, and community organizations issue professional and authentic certificates to participants and volunteers. With the right design, institutions can highlight achievement, ensure compliance, and maintain the trusted identity of the Red Cross.
@@ -77,6 +77,15 @@ Whether you’re presenting them at ceremonies or distributing digital copies fo
 
 <img class="img-fluid r-16" src="/assets4/images/Red-Cross/Red Cross 1.png" alt="Red Cross 1" style="display: block; margin: 0 auto;">
 
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/certificate-templates/red-cross-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this Red Cross Certificate Template →
+  </a>
+</div>
+
 <br>
 
 ### Key features
@@ -110,6 +119,15 @@ Whether you’re presenting them at ceremonies or distributing digital copies fo
 ## Red Cross Certificate Template for Volunteer Recognition
 
 <img class="img-fluid r-16" src="/assets4/images/Red-Cross/Red Cross 2.png" alt="Red Cross 2" style="display: block; margin: 0 auto;">
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/red-cross-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this Red Cross Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -145,6 +163,15 @@ Whether you’re presenting them at ceremonies or distributing digital copies fo
 
 <img class="img-fluid r-16" src="/assets4/images/Red-Cross/Red Cross 3.png" alt="Red Cross 3" style="display: block; margin: 0 auto;">
 
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/credential-templates/modern-red-cross-certificate-template-for-appreciation.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this Red Cross Certificate Template →
+  </a>
+</div>
+
 <br>
 
 ### Key Features
@@ -178,6 +205,15 @@ Whether you’re presenting them at ceremonies or distributing digital copies fo
 ## Prestigious Red Cross Certificate Print for Excellence
 
 <img class="img-fluid r-16" src="/assets4/images/Red-Cross/Red Cross 4.png" alt="Red Cross 4" style="display: block; margin: 0 auto;">
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/certificate-templates/prestigious-red-cross-certificate-print-for-excellence.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this Red Cross Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -213,6 +249,15 @@ Whether you’re presenting them at ceremonies or distributing digital copies fo
 
 <img class="img-fluid r-16" src="/assets4/images/Red-Cross/Red Cross 5.png" alt="Red Cross 5" style="display: block; margin: 0 auto;">
 
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/certificate-templates/bls-red-cross-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this Red Cross Certificate Template →
+  </a>
+</div>
+
 <br>
 
 ### Key Features
@@ -247,6 +292,15 @@ Whether you’re presenting them at ceremonies or distributing digital copies fo
 
 <img class="img-fluid r-16" src="/assets4/images/Red-Cross/Red Cross 6.png" alt="Red Cross 6" style="display: block; margin: 0 auto;">
 
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/certificate-templates/minimalist-red-cross-certificate-print.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this Red Cross Certificate Template →
+  </a>
+</div>
+
 <br>
 
 ### Key Features
@@ -278,6 +332,15 @@ Whether you’re presenting them at ceremonies or distributing digital copies fo
 ## Elegant Red Cross Certificate Template with Modern Layout
 
 <img class="img-fluid r-16" src="/assets4/images/Red-Cross/Red Cross 7.png" alt="Red Cross 7" style="display: block; margin: 0 auto;">
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/certificate-templates/elegant-red-cross-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this Red Cross Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -311,6 +374,15 @@ Whether you’re presenting them at ceremonies or distributing digital copies fo
 
 <img class="img-fluid r-16" src="/assets4/images/Red-Cross/Red Cross 8.png" alt="Red Cross 8" style="display: block; margin: 0 auto;">
 
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/certificate-templates/modern-cream-tone-red-cross-certificate-of-completion.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this Red Cross Certificate Template →
+  </a>
+</div>
+
 <br>
 
 ### Key Features
@@ -340,6 +412,15 @@ Whether you’re presenting them at ceremonies or distributing digital copies fo
 ## Premium Red Cross Certificate Template with Executive Layout
 
 <img class="img-fluid r-16" src="/assets4/images/Red-Cross/Red Cross 9.png" alt="Red Cross 9" style="display: block; margin: 0 auto;">
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/certificate-templates/premium-red-cross-certificate-template.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this Red Cross Certificate Template →
+  </a>
+</div>
 
 <br>
 
@@ -374,6 +455,15 @@ Whether you’re presenting them at ceremonies or distributing digital copies fo
 ## Cream Accent Red Cross Certificate Print for Completion
 
 <img class="img-fluid r-16" src="/assets4/images/Red-Cross/Red Cross 10.png" alt="Red Cross 10" style="display: block; margin: 0 auto;">
+
+<div style="text-align: center;">
+  <a href="https://www.certifyme.online/certificate-templates/cream-red-cross-certificate-print-completion.html" 
+     target="_blank"
+     class="btn r-06 btn--theme hover--blue-100" 
+     style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
+     Edit this Red Cross Certificate Template →
+  </a>
+</div>
 
 <br>
 
