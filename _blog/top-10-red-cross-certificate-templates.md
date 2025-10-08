@@ -121,7 +121,7 @@ Whether you’re presenting them at ceremonies or distributing digital copies fo
 <img class="img-fluid r-16" src="/assets4/images/Red-Cross/Red Cross 2.png" alt="Red Cross 2" style="display: block; margin: 0 auto;">
 
 <div style="text-align: center;">
-  <a href="https://www.certifyme.online/credential-templates/red-cross-certificate-template.html" 
+  <a href="https://www.certifyme.online/certificate-templates/red-cross-certificate-template.html" 
      target="_blank"
      class="btn r-06 btn--theme hover--blue-100" 
      style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
@@ -164,7 +164,7 @@ Whether you’re presenting them at ceremonies or distributing digital copies fo
 <img class="img-fluid r-16" src="/assets4/images/Red-Cross/Red Cross 3.png" alt="Red Cross 3" style="display: block; margin: 0 auto;">
 
 <div style="text-align: center;">
-  <a href="https://www.certifyme.online/credential-templates/modern-red-cross-certificate-template-for-appreciation.html" 
+  <a href="https://www.certifyme.online/certificate-templates/modern-red-cross-certificate-template-for-appreciation.html" 
      target="_blank"
      class="btn r-06 btn--theme hover--blue-100" 
      style="width: 100%; text-align: left; text-decoration: none; display: inline-block;">
