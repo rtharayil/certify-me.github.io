@@ -147,7 +147,7 @@ When requesting a transcript, be prepared with:
 
 ### Fees and Processing Information
 
-Transcript requests often come with a fee, which can range from $5 to $25 per document. Payment options vary depending on your institution; many accept credit or debit cards, while others may require checks or money orders for mailed requests.
+Transcript requests often come with a fee, which can range from $5 to $25 per document. Payment options vary depending on your institution; many accept credit or debit cards, while others may require checks or money orders for mailed requests. Some institutions work also work with [high risk merchant accounts](https://tailoredpay.com/) to make sure the payment process goes smoothly.
 
 <br>
 
