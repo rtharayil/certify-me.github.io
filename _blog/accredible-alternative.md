@@ -121,7 +121,7 @@ CertifyMe. It delivers a faster time-to-first-credential and a lighter admin loa
 
 When comparing credentialing platforms, it’s important to look beyond the basics. 
 
-Both Accredible and CertifyMe let you design, issue, and verify credentials—but the way they handle features like design, automation, analytics, and security can make a big difference in daily use.
+Both Accredible and CertifyMe let you design, issue, and verify credentials—but the way they handle features like [workflow automation](https://www.salesmate.io/blog/best-workflow-automation-tools/), design, analytics, and security can make a big difference in daily use.
 
 <br>
 

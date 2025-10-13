@@ -111,7 +111,7 @@ With digital credentials:
 1. There’s less guesswork in screening
 1. Interviews are more focused and informed
 
-HR teams spot qualified candidates faster—especially when credentials are easy to verify and track. [Here's how HR teams are already streamlining hiring using digital credentials](https://certifyme.online/blog/hr-case.html).
+Whether you’re [hiring in the United States](https://remote.com/country-explorer/united-states) or further afield, this also helps HR teams spot qualified candidates faster—especially when credentials are easy to verify and track.
 
 And in competitive industries, that speed can make or break a company’s edge. For instance, if two companies are racing to launch a product, the one that hires and trains quicker has the upper hand.
 
