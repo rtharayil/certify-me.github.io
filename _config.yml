@@ -10,7 +10,8 @@ collections:
     certificate-templates:
       output: true  
     
-
+plugins:
+  - jekyll-redirect-from
 
  
 defaults:
