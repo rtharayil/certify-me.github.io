@@ -28,7 +28,7 @@ Referral: Reviews and other people's experiences with a product or service still
 
 Email: When sending an email to potential members or customers, the digital badge or credential is presented together with the digital signature and firm logo, they are convinced the mail is not spam and are interested in what the message proposes. To avoid bounces and keep that trust, verify your [email list](https://instantly.ai/email-verification) before hitting send.
 
-According to [Flow States Sales](https://flowstatesales.com/flow-state-training-modules/saas-sales-training-course-for-sales-teams/), a sales training agency, B2B sales and marketing strategies should align with the target audience's pain points. A proper sales training program can help the team to design appropriate strategies.
+According to [Flow State Sales](https://flowstatesales.com/flow-state-training-modules/saas-sales-training-course-for-sales-teams/), a sales training agency, B2B sales and marketing strategies should align with the target audience's pain points. A proper sales training program can help the team to design appropriate strategies.
 
 <br>
 
