@@ -9,9 +9,10 @@ collections:
       output: true
     certificate-templates:
       output: true  
+    credential-templates:
+      output: true 
     
-plugins:
-  - jekyll-redirect-from
+
 
  
 defaults:
