@@ -72,33 +72,42 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="CertifyMe">
 
- 
+ <meta name="keywords" content="{{ page.seo_keywords | default: 'Verifiable Credentials, Digital Credentials' | escape }}">
 
 
   <title>{{page.title}}</title>
 
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "{{page.title}}",
-      "image": [
-        "https://certifyme.online/{{page.imageLink}}"
-       
-       ],
-     
-      "dateModified": "{{page.date | date: '%FT%T%:z'}}",
-      "author": [{
-          "@type": "Person",
-          "name": "Aneesha Kurian",
-          "url": "https://www.linkedin.com/in/aneesha-kurien-259606244"
-        }],
-        "publisher":
-  {
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title }}",
+   "description": "{{ page.description }}",
+  "image": [
+    "https://certifyme.online/{{ page.imageLink }}"
+  ],
+  "dateModified": "{{ page.date | date: '%FT%T%:z' }}",
+  "author": {
+    "@type": "Person",
+    "name": "Aneesha Kurian",
+    "url": "https://www.linkedin.com/in/aneesha-kurien-259606244"
+  },
+  "publisher": {
+    "@type": "Organization",
     "name": "CertifyMe",
-    "url": "https://certifyme.online"
-  }
+    "url": "https://www.certifyme.online",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.certifyme.online/assets4/images/Logo/1.png"
     }
-    </script>
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.certifyme.online/{{ page.url }}"
+  }
+}
+</script>
+
+
 
 </head>
