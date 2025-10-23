@@ -113,6 +113,8 @@ With digital credentials:
 
 Whether you’re [hiring in the United States](https://remote.com/country-explorer/united-states) or further afield, this also helps HR teams spot qualified candidates faster—especially when credentials are easy to verify and track.
 
+When it comes to onboarding international talent compliantly, solutions like [Remote’s EOR](https://remote.com/country-explorer/united-states) make it simple to hire in the U.S. and beyond without getting bogged down in entity setup, payroll, or compliance hurdles.
+
 And in competitive industries, that speed can make or break a company’s edge. For instance, if two companies are racing to launch a product, the one that hires and trains quicker has the upper hand.
 
 Also, digital credentials make recruitment more inclusive. They allow hiring managers to consider candidates who may not have a traditional degree but do have certified skills from online platforms, bootcamps, or community programs.
