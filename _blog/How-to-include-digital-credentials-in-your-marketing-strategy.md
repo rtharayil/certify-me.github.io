@@ -53,7 +53,7 @@ But who do we believe?
 
 We believe people. Especially people we know.
 
-When someone earns and shares a digital credential, they’re not just showing off—they’re endorsing your brand.
+When someone earns and shares a digital credential, they’re not just showing off—they’re endorsing your brand, much like alumni who showcase a [digital marketing course](https://www.mygreatlearning.com/academy/premium/mastering-digital-marketing) from your institution to signal practical, job-ready skills.
 
 Think about it like this: If a student posts their newly earned digital badge from your institution on LinkedIn, that post does something magical. It reaches friends, family, peers—people you probably couldn’t reach otherwise. And more importantly, it doesn’t come off as a pitch. It feels authentic.
 
