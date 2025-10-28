@@ -56,7 +56,7 @@ In short, while paper certificates may feel prestigious, they’re not very func
 
 ### Digital Certificates: Credentials for the Connected World
 
-Digital certificates, on the other hand, are created and issued entirely online. You earn a credential—say, for completing a course or attending a workshop—and receive a digital file or link that proves it. That link usually leads to a certificate that’s stored on a secure platform and comes with embedded data: your name, the date, the organization that issued it, and even what you achieved.
+Digital certificates, on the other hand, are created and issued entirely online. You earn a credential—say, for completing a course, attending a workshop, or pursuing a [Cyber security Course](https://online.lifelonglearning.jhu.edu/jhu-cybersecurity-certificate-program) and receive a digital file or link that proves it. That link usually leads to a certificate that’s stored on a secure platform and comes with embedded data: your name, the date, the organization that issued it, and even what you achieved.
 
 They’re not just scanned copies of the paper version. They’re secure, shareable, and often interactive records of achievement, *purpose-built for the digital age*—[learn more about what digital credentials really are](https://www.certifyme.online/blog/What-is-a-Digital-Credential.html).
 
