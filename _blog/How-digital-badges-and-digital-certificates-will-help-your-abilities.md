@@ -221,7 +221,7 @@ Look across your departments and student services. Ask:
 
 1. Are there recurring workshops or training events?
 
-1. Are students engaging in activities that build soft skills (leadership, collaboration, digital literacy)?
+1. Are students engaging in activities that build [soft skills](https://testlify.com/soft-skills-assess-what-matters-with-testlify/) (leadership, collaboration, digital literacy)?
 
 Chances are, many experiences are already badge-worthy—they just lack formal recognition.
 
@@ -318,7 +318,7 @@ If you believe skills should be seen—not just assumed—then this is a tool wo
 
 ## Conclusion
 
-Digital badges and certificates aren’t just digital stickers or shiny tokens—they’re real proof of what someone knows and can do. From soft skills like teamwork to technical know-how like data analysis, these credentials give weight to learning that often slips through the cracks. 
+Digital badges and certificates aren’t just digital stickers or shiny tokens—they’re real proof of what someone knows and can do. From [soft skills](https://testlify.com/soft-skills-assess-what-matters-with-testlify/) like teamwork to technical know-how like data analysis, these credentials give weight to learning that often slips through the cracks. 
 
 When traditional transcripts fall short, a badge or certificate steps in with context, credibility, and clarity. And in a world where skills—not just degrees—open doors, that clarity can really count.
 
