@@ -236,7 +236,7 @@ These statistics emphasize how stress can erode job satisfaction and employee en
 
 Workplace stress is a growing concern in 2025, impacting both individuals and organizations on a massive scale. From physical and mental health challenges to lost productivity and increased healthcare costs, the statistics paint a concerning picture. Whether it’s the toll of burnout, the emotional exhaustion employees face, or the strain on personal relationships, it’s clear that stress is deeply affecting workers everywhere.
 
-Companies that have successfully tackled stress offer [real-life HR strategies to reduce employee stress and turnover](https://certifyme.online/blog/hr-case.html), offering actionable insights for creating healthier workplaces. 
+Companies that have successfully tackled stress offer [real-life HR strategies to reduce employee stress and turnover](https://certifyme.online/blog/hr-case.html),  offering actionable insights for creating healthier workplaces with the help of tools like [AI recruitment software](https://skima.ai/).
 
 The key takeaway? Businesses must take action to prioritize stress management. By supporting employees, promoting mental health initiatives, and fostering a healthier work-life balance, companies can reduce the harmful effects of stress. It’s not just about reducing costs—it's about creating a workplace where employees thrive, stay engaged, and perform at their best. The time to act is now!
 
