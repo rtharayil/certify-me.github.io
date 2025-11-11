@@ -58,7 +58,7 @@ Stacked credentials are like building blocks for your career. You start with sma
 
 ### Blockchain Credentials
 
-Blockchain credentials are the cutting-edge of digital verification. They use blockchain technology to create secure, tamper-proof records of your achievements. This means your credentials are not only digital but also incredibly secure and verifiable, ensuring authenticity.
+[Blockchain credentials](https://www.vaasblock.com/rma-badges/) are the cutting-edge of digital verification. They use blockchain technology to create secure, tamper-proof records of your achievements. This means your credentials are not only digital but also incredibly secure and verifiable, ensuring authenticity.
 
 Each type of credential offers a unique way to highlight your achievements. Understanding these options helps you choose the best way to showcase your skills and accomplishments effectively.
 
