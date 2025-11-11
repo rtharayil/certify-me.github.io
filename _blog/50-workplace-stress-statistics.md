@@ -14,7 +14,6 @@ imageLink: /img/blog/50 Alarming Workplace Stress Statistics (2025 Edition).png
 featured: true
 ---
 
-
 Workplace stress has evolved into a pervasive global issue, impacting not only individual employees but organizations and entire economies. The mounting pressure, particularly in the wake of ongoing global challenges, is causing a significant toll on productivity, health, and mental well-being. 
 
 In 2025, the situation has reached a critical point, with stress now recognized as one of the leading causes of absenteeism, burnout, and healthcare costs.
@@ -47,7 +46,6 @@ Before delving into the full list, let’s spotlight some of the most staggering
 
 Workplace stress is a significant issue not only for individuals but also for global economies. The direct and indirect financial implications of stress-related absenteeism, healthcare costs, and productivity losses are staggering.
 
-
 1. **$1 trillion** – Depression and anxiety cost the global economy approximately $1 trillion every year in lost productivity. (Source: WHO)
 
 1. **$300 billion** – Job stress results in $300 billion in losses annually in the U.S. due to absenteeism, decreased productivity, and workplace accidents. (Source: American Institute of Stress)
@@ -57,7 +55,6 @@ Workplace stress is a significant issue not only for individuals but also for gl
 1. **$200 - $300 billion** – The financial impact of stress-related illnesses costs businesses an estimated $200 to $300 billion per year. (Source: Health Advocate, 2018)
 
 1. **$23.3 billion lost to absenteeism** – Absenteeism due to depression costs the economy around $23.3 billion each year. (Source: APA, 2015)
-
 
 These figures clearly demonstrate the economic burden of workplace stress, underscoring the importance of implementing effective stress management solutions to mitigate financial losses and improve overall productivity.
 
@@ -118,7 +115,6 @@ Workplace stress is not only affecting employees’ health but also their produc
 1. **91% report quality impact** – 91% of employees said feeling overwhelmingly stressed negatively affects the quality of their work. (Source: Deloitte, 2018)
 
 1. **52% of stressed workers feel disconnected** – 52% of employees experiencing stress report feeling disconnected from their work and colleagues. (Source: Gallup, 2020)
-
 
 These findings highlight the tangible effects of stress on both personal and professional levels, showing that overwhelmed employees are less productive, less engaged, and more likely to leave their jobs.
 
@@ -200,7 +196,6 @@ The culmination of chronic stress is burnout, which affects workers' ability to 
 1. **48% report mental health decline** – 48% of employees say that work stress has caused a significant decline in their mental health. (Source: APA, 2021)
 
 1. **40% suffer from exhaustion** – 40% of workers report feeling physically exhausted because of stress at work. (Source: Stress.org, 2019)
-
 
 Burnout continues to escalate, particularly among industries like healthcare and tech, highlighting the need for preventative measures and workplace interventions to address mental health challenges.
 
