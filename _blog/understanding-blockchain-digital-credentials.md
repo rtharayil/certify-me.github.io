@@ -12,7 +12,6 @@ imageLink: /img/blog/Blog 3 Banner WEBP file.webp
 featured: true
 ---
 
-
 Blockchain digital credentials are digital versions of traditional paper credentials like diplomas, certificates, and licenses stored securely on a blockchain, a type of online record-keeping system where information is locked in place once it's added. 
 
 This technology ensures that these digital records are authentic and easy to verify, providing a reliable way to prove your skills and achievements. With blockchain credentials, you don't have to worry about losing your documents or having them questioned by employers or institutions—they are safe, secure, and always accessible.
@@ -84,16 +83,19 @@ Finally, blockchain makes credentials globally accessible. You can share your cr
 
 With blockchain, you get an immutable record that can't be tampered with. This level of security builds trust in the authenticity of your credentials.
 
+<br>
 
 ### Transparency and Accessibility 
 
 Blockchain is a public ledger, so anyone can check the validity of a credential. This transparency makes it easy for employers, schools, and other organizations to verify your achievements without extensive background checks or paperwork.
 
+<br>
 
 ### Decentralization
 
 The decentralized nature of blockchain means there's no central authority controlling the data. This reduces the risk of manipulation and creates a more democratic system for verifying credentials.
 
+<br>
 
 ### Fraud Reduction 
 
@@ -146,6 +148,7 @@ And it’s not just about sharing credentials; CertifyMe’s LCN allows you to m
 
 The [Massachusetts Institute of Technology](https://openlearning.mit.edu/news/developing-open-source-wallet-digital-credentials) (MIT) has been issuing digital diplomas on the blockchain, alongside the traditional paper format, since 2017 (MIT News, 2017). When a student graduates, they receive a digital diploma via an app on their smartphone. This digital diploma is coded and certifiable using blockchain technology. This allows graduates to share their credentials with employers or other educational institutions quickly and securely. 
 
+<br>
 
 ### Professional Certification
 
@@ -153,6 +156,7 @@ The [Institute of Chartered Accountants in England and Wales](https://www.icaew.
 
 This move reflects a broader global shift in [how blockchain and digital tools are upgrading education to the next level](https://www.certifyme.online/blog/Upgrading-Education-to-the-Next-Level.html), making credentials smarter, faster, and more secure.
 
+<br>
 
 ### Healthcare
 
