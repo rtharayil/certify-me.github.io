@@ -247,3 +247,5 @@ It's not about replacing degrees or formal credentials; it's about giving people
 If you're curious how your university could issue or manage digital badges with less stress and more structure, check out [CertifyMe](https://www.certifyme.online). It helps institutions like yours issue secure, verified badges that students can use anywhere—without losing control of the process. From onboarding to issuing, everything’s simplified. 
 
 *Want to see it in action?* [Book a demo call](https://info.certifyme.online/request-demo) and explore how digital recognition can start working for you.
+
+
