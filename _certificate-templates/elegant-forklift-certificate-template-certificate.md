@@ -3,7 +3,7 @@ layout: V4Layout-SingleTemplate
 
 title: "Elegant Forklift Certificate Template for Certificate of Completion"
 
-description: "A professional Red Cross certificate template for Basic Life Support (BLS) certification. Designed with a bold red-accent layout, it provides trusted recognition for life-saving training achievements."
+description: "Customize an elegant red forklift certificate template for a certificate of completion. Issue professional, verified operator certificates quickly with CertifyMe."
 
 #tags section
 tag1: "Used 601 times"

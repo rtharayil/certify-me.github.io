@@ -3,7 +3,7 @@ layout: V4Layout-SingleTemplate
 
 title: "Green & Off-White Forklift Certification Card Template"
 
-description: "A professional Red Cross certificate template for Basic Life Support (BLS) certification. Designed with a bold red-accent layout, it provides trusted recognition for life-saving training achievements."
+description: " Celebrate a forklift certification card template with this refined green and off-white certificate template. Built for authenticity and professional presentation, this forklift training program template is perfect for a corporate setting."
 
 #tags section
 tag1: "Used 541 times"
