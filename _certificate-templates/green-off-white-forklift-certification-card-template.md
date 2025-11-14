@@ -59,7 +59,7 @@ Tailored for forklift academies, training centers, and safety compliance organiz
 
 1. **Marks verified training completion:** A professional record of safety training accomplishment recognized across industrial sectors.
 
-1.**Strengthens organizational credibility:** Reflects a culture of responsibility and operational excellence in training practices.
+1. **Strengthens organizational credibility:** Reflects a culture of responsibility and operational excellence in training practices.
 
 1. **Simplifies administrative management:** Enables quick customization and distribution for large trainee batches without quality loss.
 
