@@ -3,7 +3,7 @@ layout: V4Layout-SingleTemplate
 
 title: "Blue Edge Forklift Certification Card Template"
 
-description: "A professional Red Cross certificate template for Basic Life Support (BLS) certification. Designed with a bold red-accent layout, it provides trusted recognition for life-saving training achievements."
+description: "Get a Blue Edge forklift certification card template for operator training programs. Its crisp white-and-blue design delivers a professional finish that represents skill, discipline, and compliance."
 
 #tags section
 tag1: "Used 590 times"

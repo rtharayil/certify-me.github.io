@@ -3,7 +3,7 @@ layout: V4Layout-SingleTemplate
 
 title: "Forklift Training Certificate Template for Safety & Operator Program"
 
-description: "A professional Red Cross certificate template for Basic Life Support (BLS) certification. Designed with a bold red-accent layout, it provides trusted recognition for life-saving training achievements."
+description: "Get a ready-to-use forklift training certificate template for modern forklift safety and operator training programs. It ensures every certified operator is recognized for their competence and adherence to industrial safety standards."
 
 #tags section
 tag1: "Used 532 times"

@@ -30,6 +30,8 @@ Crafting certificate wordings is a nuanced process, requiring attention to vario
 
 1. Ensure the text effectively communicates the significance and impact of the certificate.
 
+1. Before finalizing, you can use tools like [AI Humanizer](https://quillbot.com/ai-humanizer) to refine your tone and make the certificate wording sound more natural, polished, and human-like
+
 Haven't designed your certificate yet? Making certificates with CertifyMe is super easy! 
 
 <br>
