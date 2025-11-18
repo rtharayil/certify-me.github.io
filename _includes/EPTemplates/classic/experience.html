@@ -1,0 +1,36 @@
+
+<section id="features-11" class="pt-100 features-section division">
+<div class="container ">
+    <!-- SECTION TITLE -->
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-9">
+            <div class="section-title mb-70">
+                <h2 class="s-50 w-700">My Experience</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="timeline">
+        {% for item in page.Experience %}
+        <div class="timeline-year">{{ item.year }}</div>
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+            <div class="timeline-title">{{ item.role }}</div>
+
+            {% if item.company %}
+            <p class="timeline-sub">
+                <strong>Company:</strong> {{ item.company }}
+            </p>
+            {% endif %}
+
+            {% if item.description %}
+            <p class="timeline-sub">
+                <strong>Work:</strong> {{ item.description }}
+            </p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</section>

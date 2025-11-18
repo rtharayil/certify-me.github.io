@@ -1,0 +1,97 @@
+<!-- HEADER
+			============================================= -->
+<header id="header" class="tra-menu navbar-dark light-hero-header white-scroll">
+    <div class="header-wrapper">
+        <!-- MOBILE HEADER -->
+        <div class="wsmobileheader clearfix">
+            <span class="smllogo">
+                <img src="https://www.certifyme.online/assets4/images/Logo/1.png" alt="mobile-logo">
+            </span>
+            <a id="wsnavtoggle" class="wsanimated-arrow">
+                <span></span>
+            </a>
+        </div>
+        <!-- NAVIGATION MENU -->
+        <div class="wsmainfull menu clearfix">
+            <div class="wsmainwp clearfix">
+                <!-- HEADER BLACK LOGO -->
+                <div class="desktoplogo">
+                    <a href="#hero-5" class="logo-black">
+                        <img src="https://www.certifyme.online/assets4/images/Logo/1.png" alt="logo">
+                    </a>
+                </div>
+                <!-- HEADER WHITE LOGO -->
+                <div class="desktoplogo">
+                    <a href="#hero-5" class="logo-white">
+                        <img src="https://www.certifyme.online/assets4/images/Logo/1.png" alt="logo">
+                    </a>
+                </div>
+                <!-- MAIN MENU -->
+                <nav class="wsmenu clearfix">
+                    <ul class="wsmenu-list nav-theme">
+                        <!-- DROPDOWN SUB MENU -->
+                        <li aria-haspopup="true">
+                            <a href="#" class="h-link">Education
+                                <span class="wsarrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                {% for item in page.Education %}
+                                <li aria-haspopup="true">
+                                    <a href="{{ item.link }}">{{ item.name }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <!-- SIMPLE NAVIGATION LINK -->
+                        <li aria-haspopup="true">
+                            <a href="#features-11" class="h-link">Experience
+                                <span class="wsarrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                {% for item in page.Experience %}
+                                <li aria-haspopup="true">
+                                    <a href="{{ item.link }}">{{ item.name }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <!-- MEGAMENU -->
+                        <li aria-haspopup="true" class="mg_link">
+                            <a href="#" class="h-link">Projects
+                                <span class="wsarrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                {% for item in page.Projects %}
+                                <li aria-haspopup="true">
+                                    <a href="{{ item.link }}">{{ item.name }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <!-- END MEGAMENU -->
+                        <!-- SIMPLE NAVIGATION LINK -->
+                        <li class="nl-simple" aria-haspopup="true">
+                            <a href="pricing-1.html" class="h-link">Skills</a>
+                        </li>
+                        <!-- SIMPLE NAVIGATION LINK -->
+                        <li class="nl-simple" aria-haspopup="true">
+                            <a href="faqs.html" class="h-link">Endorsments</a>
+                        </li>
+                        <li class="nl-simple" aria-haspopup="true">
+                            <a href="faqs.html" class="h-link">Reflections</a>
+                        </li>
+                     
+
+                        <li class="nl-simple" aria-haspopup="true">
+                            <a href="faqs.html" class="h-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- END MAIN MENU -->
+            </div>
+        </div>
+        <!-- END NAVIGATION MENU -->
+    </div>
+    <!-- End header-wrapper -->
+</header>
+<!-- END HEADER -->
