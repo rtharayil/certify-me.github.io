@@ -34,42 +34,36 @@ Experience:
 # Add this to your page front matter or data file
 
 Portfolio:
-  - category: "UI/UX DESIGN"
-    title: "Product Admin Dashboard"
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus."
+  - title: "E-Commerce Analytics Dashboard"
+    description: "A comprehensive admin interface featuring real-time sales metrics, inventory management, and customer behavior analytics with interactive charts and data visualization."
     image: "/images/eptemplate/project-1.jpg"
     link: "/projects/admin-dashboard-1"
     
-  - category: "UI/UX DESIGN"
-    title: "Product Admin Dashboard"
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus."
+  - title: "Healthcare Management System"
+    description: "Patient management dashboard with appointment scheduling, medical records tracking, and billing integration. Designed for streamlined clinic operations and improved patient care."
     image: "/images/eptemplate/project2.jpg"
     link: "/projects/admin-dashboard-2"
     
-  - category: "UI/UX DESIGN"
-    title: "Product Admin Dashboard"
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus."
+  - title: "Financial Trading Platform"
+    description: "Real-time stock market dashboard with portfolio tracking, advanced charting tools, and risk analysis features for professional traders and investors."
     image: "/images/eptemplate/project3.jpg"
     link: "/projects/admin-dashboard-3"
     
-  - category: "UI/UX DESIGN"
-    title: "Product Admin Dashboard"
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus."
+  - title: "Social Media Analytics Tool"
+    description: "Marketing dashboard for tracking engagement metrics, audience insights, and campaign performance across multiple social platforms with automated reporting."
     image: "/images/eptemplate/project4.jpg"
     link: "/projects/admin-dashboard-4"
     
-  - category: "UI/UX DESIGN"
-    title: "Product Admin Dashboard"
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus."
+  - title: "Project Management Dashboard"
+    description: "Team collaboration interface with task tracking, milestone management, resource allocation, and progress visualization for agile development teams."
     image: "/images/eptemplate/project5.jpg"
     link: "/projects/admin-dashboard-5"
     
-  - category: "UI/UX DESIGN"
-    title: "Product Admin Dashboard"
-    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus."
+  - title: "Restaurant Operations Panel"
+    description: "Complete restaurant management system with order tracking, table reservations, inventory control, and staff scheduling to optimize daily operations."
     image: "/images/eptemplate/project6.jpg"
-    link: "/projects/admin-dashboard-6" 
-
+    link: "/projects/admin-dashboard-6"
+    
 # Skills Data Structure
 # Add this to your page front matter or data file
 
