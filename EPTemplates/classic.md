@@ -70,6 +70,45 @@ Portfolio:
     image: "/images/eptemplate/project6.jpg"
     link: "/projects/admin-dashboard-6" 
 
+# Skills Data Structure
+# Add this to your page front matter or data file
+
+# Simply add your skills with their proficiency percentages
+# The percentage will automatically animate and display
+
+Skills:
+  # Frontend Development
+  - name: "HTML & CSS"
+    percentage: 95
+    
+  - name: "JavaScript"
+    percentage: 90
+    
+  - name: "React.js"
+    percentage: 85
+    
+  - name: "Vue.js"
+    percentage: 75
+    
+  # Backend Development
+  - name: "Node.js"
+    percentage: 80
+    
+  - name: "Python"
+    percentage: 85
+    
+  # Design & Tools
+  - name: "UI/UX Design"
+    percentage: 90
+    
+  - name: "Figma"
+    percentage: 85
+    
+  - name: "Adobe XD"
+    percentage: 75
+    
+  - name: "Git & GitHub"
+    percentage: 88
 
 
 Projects:
