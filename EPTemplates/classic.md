@@ -21,19 +21,16 @@ Education:
 
 Experience:
   - year: 2024
-    role: "Senior Software Engineer"
+    role: "Intern Software Engineer"
     company: "TechNova Solutions"
-    description: "Led backend API development and optimized system performance."
+    description: "Backend API development and optimized system performance."
 
   - year: 2022
-    role: "Software Engineer"
-    company: "Innova Labs"
-    description: "Worked on microservices, CI/CD pipelines, and product automation."
+    role: "Lab Asisitant"
+    company: "ABC University"
+    description: "CI/CD pipelines, and product automation."
 
-  - year: 2020
-    role: "Junior Developer"
-    company: "SoftCloud Systems"
-    description: "Assisted in building customer-facing web applications."
+ 
 
 
 
