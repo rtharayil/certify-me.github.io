@@ -30,7 +30,45 @@ Experience:
     company: "ABC University"
     description: "CI/CD pipelines, and product automation."
 
- 
+# Example Portfolio Data Structure
+# Add this to your page front matter or data file
+
+Portfolio:
+  - category: "UI/UX DESIGN"
+    title: "Product Admin Dashboard"
+    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus."
+    image: "/images/eptemplate/project-1.jpg"
+    link: "/projects/admin-dashboard-1"
+    
+  - category: "UI/UX DESIGN"
+    title: "Product Admin Dashboard"
+    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus."
+    image: "/images/eptemplate/project2.jpg"
+    link: "/projects/admin-dashboard-2"
+    
+  - category: "UI/UX DESIGN"
+    title: "Product Admin Dashboard"
+    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus."
+    image: "/images/eptemplate/project3.jpg"
+    link: "/projects/admin-dashboard-3"
+    
+  - category: "UI/UX DESIGN"
+    title: "Product Admin Dashboard"
+    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus."
+    image: "/images/eptemplate/project4.jpg"
+    link: "/projects/admin-dashboard-4"
+    
+  - category: "UI/UX DESIGN"
+    title: "Product Admin Dashboard"
+    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus."
+    image: "/images/eptemplate/project5.jpg"
+    link: "/projects/admin-dashboard-5"
+    
+  - category: "UI/UX DESIGN"
+    title: "Product Admin Dashboard"
+    description: "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus."
+    image: "/images/eptemplate/project6.jpg"
+    link: "/projects/admin-dashboard-6" 
 
 
 

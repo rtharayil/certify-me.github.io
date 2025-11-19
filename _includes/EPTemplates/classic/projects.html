@@ -1,0 +1,223 @@
+<section id="portfolio-11" class="pt-100 portfolio-section division">
+<style>
+/* PORTFOLIO GRID STYLES */
+.portfolio-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* PROJECT CARD */
+.project-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.06),
+        0 8px 30px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.1),
+        0 12px 40px rgba(0,0,0,0.08);
+}
+
+/* PROJECT IMAGE */
+.project-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.project-image::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23cccccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>') center/contain no-repeat;
+    opacity: 0.4;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.project-image img[src=""],
+.project-image img:not([src]),
+.project-image img[src*="default"] {
+    display: none;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* PROJECT CONTENT */
+.project-content {
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* PROJECT CATEGORY */
+.project-category {
+    font-size: 13px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+/* PROJECT TITLE */
+.project-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+/* PROJECT DESCRIPTION */
+.project-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+/* CASE STUDY BUTTON */
+.case-study-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #6C63FF;
+    color: #6C63FF;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    align-self: flex-start;
+}
+
+.case-study-btn:hover {
+    background: #6C63FF;
+    color: #ffffff;
+    transform: translateX(4px);
+}
+
+.case-study-btn::after {
+    content: '→';
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+.case-study-btn:hover::after {
+    transform: translateX(4px);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .project-content {
+        padding: 20px;
+    }
+    
+    .project-image {
+        height: 200px;
+    }
+}
+</style>
+
+<div class="container">
+    <!-- SECTION TITLE -->
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-9">
+            <div class="section-title mb-70 text-center">
+                <h2 class="s-50 w-700">Projects</h2>
+                <p class="s-21 color--grey">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius 
+                    eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum. 
+                    Suspendis imperdiet.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PORTFOLIO GRID -->
+    <div class="portfolio-grid">
+        {% for project in page.Portfolio %}
+        
+        <div class="project-card">
+            <!-- Project Image -->
+            <div class="project-image">
+                {% if project.image %}
+                <img src="{{ project.image }}" alt="{{ project.title }}" onerror="this.style.display='none'">
+                {% endif %}
+            </div>
+            
+            <!-- Project Content -->
+            <div class="project-content">
+                {% if project.category %}
+                <div class="project-category">{{ project.category }}</div>
+                {% endif %}
+                
+                <div class="project-title">{{ project.title }}</div>
+                
+                {% if project.description %}
+                <div class="project-description">
+                    {{ project.description }}
+                </div>
+                {% endif %}
+                
+                {% if project.link %}
+                <a href="{{ project.link }}" class="case-study-btn">
+                    Case Study
+                </a>
+                {% else %}
+                <a href="#" class="case-study-btn">
+                    Case Study
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        
+        {% endfor %}
+    </div>
+</div>
+</section>
