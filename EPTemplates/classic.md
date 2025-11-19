@@ -4,29 +4,32 @@ sitemap: false
 
 Education:
   - year: 2023
-    name: "Bachelor of Technology (Computer Science)"
+    name: "Bachelor of Technology"
     university: "ABC University"
     percentage: "82%"
+    link: "/bachelor-of-technology.html"
 
   - year: 2019
     name: "Higher Secondary"
     school: "XYZ Public School"
     percentage: "91%"
+    link: "/higher-secondary.html"
 
   - year: 2017
     name: "Secondary School"
     school: "Little Flower School"
     percentage: "88%"
+    link: "/secondary-school.html"
 
 
 Experience:
   - year: 2024
-    role: "Intern Software Engineer"
+    name: "Intern Software Engineer"
     company: "TechNova Solutions"
     description: "Backend API development and optimized system performance."
 
   - year: 2022
-    role: "Lab Asisitant"
+    name: "Lab Asisitant"
     company: "ABC University"
     description: "CI/CD pipelines, and product automation."
 
@@ -34,36 +37,36 @@ Experience:
 # Add this to your page front matter or data file
 
 Portfolio:
-  - title: "E-Commerce Analytics Dashboard"
+  - name: "E-Commerce Analytics Dashboard"
     description: "A comprehensive admin interface featuring real-time sales metrics, inventory management, and customer behavior analytics with interactive charts and data visualization."
     image: "/images/eptemplate/project-1.jpg"
     link: "/projects/admin-dashboard-1"
     
-  - title: "Healthcare Management System"
+  - name: "Healthcare Management System"
     description: "Patient management dashboard with appointment scheduling, medical records tracking, and billing integration. Designed for streamlined clinic operations and improved patient care."
     image: "/images/eptemplate/project2.jpg"
     link: "/projects/admin-dashboard-2"
     
-  - title: "Financial Trading Platform"
+  - name: "Financial Trading Platform"
     description: "Real-time stock market dashboard with portfolio tracking, advanced charting tools, and risk analysis features for professional traders and investors."
     image: "/images/eptemplate/project3.jpg"
     link: "/projects/admin-dashboard-3"
     
-  - title: "Social Media Analytics Tool"
+  - name: "Social Media Analytics Tool"
     description: "Marketing dashboard for tracking engagement metrics, audience insights, and campaign performance across multiple social platforms with automated reporting."
     image: "/images/eptemplate/project4.jpg"
     link: "/projects/admin-dashboard-4"
     
-  - title: "Project Management Dashboard"
+  - name: "Project Management Dashboard"
     description: "Team collaboration interface with task tracking, milestone management, resource allocation, and progress visualization for agile development teams."
     image: "/images/eptemplate/project5.jpg"
     link: "/projects/admin-dashboard-5"
     
-  - title: "Restaurant Operations Panel"
+  - name: "Restaurant Operations Panel"
     description: "Complete restaurant management system with order tracking, table reservations, inventory control, and staff scheduling to optimize daily operations."
     image: "/images/eptemplate/project6.jpg"
     link: "/projects/admin-dashboard-6"
-    
+
 # Skills Data Structure
 # Add this to your page front matter or data file
 
@@ -106,16 +109,19 @@ Skills:
 
 
 Projects:
-  - name: "MS"
+  - name: "E-Commerce Analytics Dashboard"
     link: "#lnk-1"
-  - name: "B Tech"
+  - name: "Healthcare Management System"
     link: "#lnk-2"
-  - name: "CBSC 12"
+  - name: "Financial Trading Platform"
     link: "#features-13"
-  - name: "SSLC"
+  - name: "Social Media Analytics Tool"
     link: "#integrations-1"
-  - name: "8th"
+  - name: "Project Management Dashboard"
     link: "#integrations-1"
+  - name: "Restaurant Operations Panel"
+    link: "#integrations-1"
+
 
 
 Hero :

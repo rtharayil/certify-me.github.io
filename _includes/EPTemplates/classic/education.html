@@ -113,6 +113,32 @@
         text-align: right;
     }
 }
+
+/* Clickable Timeline Items */
+.timeline-link {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.timeline-link:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.12),
+        0 15px 30px rgba(0,0,0,0.08),
+        inset 0 1px 2px rgba(255,255,255,0.4);
+    border-color: rgba(40, 43, 117, 0.2);
+}
+
+.timeline-link .timeline-title {
+    color: #282B75;
+    transition: color 0.3s ease;
+}
+
+.timeline-link:hover .timeline-title {
+    color: #6C63FF;
+}
 </style>
 <div class="container ">
     <!-- SECTION TITLE -->
@@ -130,7 +156,11 @@
         {% for item in page.Education %}
         <div class="timeline-year">{{ item.year }}</div>
         <div class="timeline-dot"></div>
+        {% if item.link %}
+        <a href="{{ item.link }}" class="timeline-content timeline-link">
+        {% else %}
         <div class="timeline-content">
+        {% endif %}
             <div class="timeline-title">{{ item.name }}</div>
             {% if item.university %}
             <p class="timeline-sub">
@@ -149,7 +179,11 @@
                 <strong>Percentage:</strong> {{ item.percentage }}
             </p>
             {% endif %}
+        {% if item.link %}
+        </a>
+        {% else %}
         </div>
+        {% endif %}
         {% endfor %}
     </div>
  </div>

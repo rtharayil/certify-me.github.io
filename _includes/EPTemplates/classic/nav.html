@@ -35,22 +35,22 @@
                                 <span class="wsarrow"></span>
                             </a>
                             <ul class="sub-menu">
-                                {% for item in page.Education %}
+                                {% for item in site.data.navigation.Education %}
                                 <li aria-haspopup="true">
-                                    <a href="{{ item.link }}">{{ item.name }}</a>
+                                    <a href="{{ item.link }}" data-education-year="{{ item.year }}">{{ item.name }}</a>
                                 </li>
                                 {% endfor %}
                             </ul>
                         </li>
                         <!-- SIMPLE NAVIGATION LINK -->
                         <li aria-haspopup="true">
-                            <a href="#features-11" class="h-link">Experience
+                            <a href="#features-11" class="h-link">experience
                                 <span class="wsarrow"></span>
                             </a>
                             <ul class="sub-menu">
-                                {% for item in page.Experience %}
+                                {% for item in site.data.navigation.Experience %}
                                 <li aria-haspopup="true">
-                                    <a href="{{ item.link }}">{{ item.name }}</a>
+                                    <a href="#" data-experience-year="{{ item.year }}">{{ item.name }}</a>
                                 </li>
                                 {% endfor %}
                             </ul>
@@ -61,7 +61,7 @@
                                 <span class="wsarrow"></span>
                             </a>
                             <ul class="sub-menu">
-                                {% for item in page.Projects %}
+                                {% for item in site.data.navigation.Projects %}
                                 <li aria-haspopup="true">
                                     <a href="{{ item.link }}">{{ item.name }}</a>
                                 </li>
@@ -85,6 +85,17 @@
                         <li class="nl-simple" aria-haspopup="true">
                             <a href="faqs.html" class="h-link">Contact</a>
                         </li>
+                    </ul>
+                </nav>
+                <!-- END MAIN MENU -->
+            </div>
+        </div>
+        <!-- END NAVIGATION MENU -->
+    </div>
+    <!-- End header-wrapper -->
+</header>
+<!-- END HEADER -->
+
                     </ul>
                 </nav>
                 <!-- END MAIN MENU -->

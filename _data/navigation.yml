@@ -1,0 +1,44 @@
+# Centralized Navigation Data for EPTemplates
+Education:
+  - year: 2023
+    name: "Bachelor of Technology"
+    university: "ABC University"
+    percentage: "82%"
+    link: "/bachelor-of-technology.html"
+
+  - year: 2019
+    name: "Higher Secondary"
+    school: "XYZ Public School"
+    percentage: "91%"
+    link: "/higher-secondary.html"
+
+  - year: 2017
+    name: "Secondary School"
+    school: "Little Flower School"
+    percentage: "88%"
+    link: "/secondary-school.html"
+
+Experience:
+  - year: 2024
+    name: "Intern Software Engineer"
+    company: "TechNova Solutions"
+    description: "Backend API development and optimized system performance."
+
+  - year: 2022
+    name: "Lab Asisitant"
+    company: "ABC University"
+    description: "CI/CD pipelines, and product automation."
+
+Projects:
+  - name: "E-Commerce Analytics Dashboard"
+    link: "#lnk-1"
+  - name: "Healthcare Management System"
+    link: "#lnk-2"
+  - name: "Financial Trading Platform"
+    link: "#features-13"
+  - name: "Social Media Analytics Tool"
+    link: "#integrations-1"
+  - name: "Project Management Dashboard"
+    link: "#integrations-1"
+  - name: "Restaurant Operations Panel"
+    link: "#integrations-1"
