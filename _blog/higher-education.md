@@ -50,17 +50,25 @@ In collaboration with CertifyMe, Leeds University implemented a secure and user-
 
 CertifyMe collaborated with key university departments, including the registrar, IT, and communications teams, to fully understand the university’s sustainability goals and credentialing requirements. This consultation ensured that the solution was tailored to the institution’s specific needs and objectives.
 
+<br>
+
 ### Pilot Program
 
 A pilot program was launched to test the new system with a selected group of students and alumni. This allowed the university to gather feedback, address any issues, and ensure smooth functionality before a full-scale implementation.
+
+<br>
 
 ### Integration and Training
 
 CertifyMe’s digital credentialing platform was seamlessly integrated with the university’s existing Learning Management System (LMS), streamlining the credentialing process. To ensure a smooth transition, staff and students were provided with training on how to access, use, and share their digital certificates.
 
+<br>
+
 ### Official Launch and Social Media Engagement
 
 After finalizing the digital credentials, the university launched them to all learners on the platform. A strategic promotional campaign was introduced, encouraging students to share their achievements on social media, amplifying the platform’s reach and driving new student enrollments.
+
+<br>
 
 ### Continuous Support and Performance Tracking
 
