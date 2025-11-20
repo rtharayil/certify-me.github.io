@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include V4NewLook/head.html %}
+
+<body id="page-top">
+	{% include V4NewLook/_GTMNoScript.html %}
+
+    <div id="page" class="page font--jakarta">
+        {% include EPTemplates/classic/nav.html %}
+        {% include EPTemplates/classic/project-detail.html %}
+        {% include V4NewLook/footer.html %}
+
+        <!-- Load jQuery first, then menu.js for dropdown functionality -->
+        <script src="/assets4/js/jquery-3.7.0.min.js"></script>
+        <script src="/assets4/js/bootstrap.min.js"></script>
+        <script src="/assets4/js/menu.js"></script>
+        
+        <!-- Fallback dropdown script -->
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simple dropdown fallback
+            const dropdownToggles = document.querySelectorAll('.wsmenu-list > li > a');
+            
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', function(e) {
+                    const submenu = this.nextElementSibling;
+                    if (submenu && submenu.classList.contains('sub-menu')) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        
+                        // Close other submenus
+                        document.querySelectorAll('.sub-menu').forEach(menu => {
+                            if (menu !== submenu) {
+                                menu.style.display = 'none';
+                            }
+                        });
+                        
+                        // Toggle current submenu
+                        if (submenu.style.display === 'block') {
+                            submenu.style.display = 'none';
+                        } else {
+                            submenu.style.display = 'block';
+                        }
+                    }
+                });
+            });
+        });
+        </script>
+        
+  {% include V4NewLook/scripts.html %}
+
+    </div>
+
+</body>
+
+</html>
