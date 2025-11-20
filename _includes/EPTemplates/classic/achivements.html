@@ -14,7 +14,7 @@
     right: -50%;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, #1915700d 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(108, 99, 255, 0.05) 0%, transparent 70%);
     animation: float 15s ease-in-out infinite;
     pointer-events: none;
 }
@@ -33,36 +33,63 @@
     z-index: 1;
 }
 
-.achievements-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+/* CREDENTIAL CARDS STYLING */
+.credentials-container {
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+}
+
+.credentials-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.credentials-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #191b70;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #282B75 0%, #2220a3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.credentials-header p {
+    font-size: 1.1rem;
+    color: #4a5568;
+    font-weight: 400;
+}
+
+.credentials-grid {
+    display: flex;
+    flex-direction: column;
     gap: 30px;
-    margin-top: 50px;
     margin-bottom: 60px;
 }
 
-.achievement-category {
+.credential-card {
     background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
     border-radius: 20px;
-    padding: 40px 30px;
     box-shadow:
-        0 20px 40px rgba(40, 43, 117, 0.1),
-        0 8px 16px rgba(0,0,0,0.08),
-        0 0 0 1px #342eb6e8;
-    border: 1px solid #1e198bfb;
-    position: relative;
+        0 10px 30px rgba(40, 43, 117, 0.08),
+        0 4px 12px rgba(0,0,0,0.06),
+        0 0 0 1px rgba(108, 99, 255, 0.1);
+    border: 1px solid rgba(108, 99, 255, 0.15);
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
 }
 
-.achievement-category::before {
+.credential-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #282B75 0%, #6C63FF 50%, #8B84FF 100%);
+    background: linear-gradient(90deg, #282B75 0%, #2220a3 50%, #2220a3 100%);
     background-size: 200% 100%;
     animation: gradientShift 3s ease-in-out infinite;
 }
@@ -72,155 +99,46 @@
     50% { background-position: 100% 50%; }
 }
 
-.achievement-category:hover {
-    transform: translateY(-10px) scale(1.02);
+.credential-card:hover {
+    transform: translateY(-5px) scale(1.01);
     box-shadow:
-        0 25px 50px rgba(40, 43, 117, 0.15),
-        0 10px 25px rgba(0,0,0,0.1);
+        0 20px 40px rgba(40, 43, 117, 0.12),
+        0 10px 20px rgba(0,0,0,0.08);
     border-color: rgba(108, 99, 255, 0.3);
 }
 
-.achievement-category-icon {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, hwb(243 12% 34%) 0%, #8B84FF 100%);
-    border-radius: 15px;
+.credential-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .credential-content {
+        flex-direction: row;
+    }
+}
+
+.credential-badge {
+    background: linear-gradient(135deg, #25208b 0%, #2220a3 100%);
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
-    margin-bottom: 25px;
-    box-shadow: 0 8px 25px rgb(40, 34, 161);
-    animation: iconPulse 3s ease-in-out infinite;
-}
-
-@keyframes iconPulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-}
-
-.achievement-category h3 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #2d31a0;
-    margin-bottom: 25px;
-    position: relative;
-}
-
-.achievement-category h3::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 50px;
-    height: 3px;
-    background: linear-gradient(90deg, #6C63FF 0%, #8B84FF 100%);
-    border-radius: 2px;
-}
-
-.achievement-items {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.achievement-item {
-    background: rgba(108, 99, 255, 0.05);
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    border-left: 4px solid #3029a7;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.achievement-item:hover {
-    background: rgba(108, 99, 255, 0.1);
-    transform: translateX(5px);
-    border-left-color: #2a23a7;
-}
-
-.achievement-item:last-child {
-    margin-bottom: 0;
-}
-
-.achievement-item h4 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #2d3748;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.achievement-item h4::before {
-    content: '🏆';
-    font-size: 18px;
-}
-
-.achievement-item p {
-    font-size: 14px;
-    color: #231e75;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.achievement-date {
-    font-size: 12px;
-    color: #231e75;
-    font-weight: 500;
-    margin-top: 8px;
-    display: inline-block;
-    background: rgba(108, 99, 255, 0.1);
-    padding: 4px 8px;
-    border-radius: 6px;
-}
-
-/* FEATURED ACHIEVEMENTS */
-.featured-achievements {
-    margin-bottom: 50px;
-}
-
-.featured-achievements h3 {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 700;
-    color: #282B75;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-.featured-achievements h3::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(90deg, #282B75 0%, #6C63FF 100%);
-    border-radius: 2px;
-}
-
-.featured-achievements-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-}
-
-.featured-achievement {
-    background: linear-gradient(135deg, #6C63FF 0%, #282B75 100%);
-    color: white;
-    padding: 30px;
-    border-radius: 20px;
-    text-align: center;
+    padding: 40px 20px;
+    min-height: 150px;
     position: relative;
     overflow: hidden;
-    transition: all 0.4s ease;
 }
 
-.featured-achievement::before {
+@media (min-width: 768px) {
+    .credential-badge {
+        width: 140px;
+        padding: 30px 20px;
+        min-height: auto;
+    }
+}
+
+.credential-badge::before {
     content: '';
     position: absolute;
     top: -50%;
@@ -236,134 +154,224 @@
     to { transform: rotate(360deg); }
 }
 
-.featured-achievement:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 20px 40px #282B75;
-}
-
-.featured-achievement-content {
+.credential-badge-content {
+    text-align: center;
     position: relative;
     z-index: 1;
 }
 
-.featured-achievement-icon {
-    font-size: 48px;
-    margin-bottom: 20px;
-    display: block;
+.credential-badge-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 10px;
+    filter: brightness(0) invert(1);
 }
 
-.featured-achievement h4 {
-    font-size: 20px;
+.credential-badge-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.9;
+}
+
+.credential-details {
+    flex: 1;
+    padding: 30px;
+}
+
+.credential-header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+    .credential-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.credential-info {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .credential-info {
+        margin-bottom: 0;
+    }
+}
+
+.credential-title {
+    font-size: 1.4rem;
     font-weight: 700;
+    color: #21247e;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.credential-institution {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4a5568;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     margin-bottom: 15px;
 }
 
-.featured-achievement p {
-    font-size: 14px;
-    opacity: 0.9;
-    line-height: 1.6;
-    margin: 0;
+.credential-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 0;
 }
 
-/* STATS SECTION */
-.achievement-stats {
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
-    border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 50px;
-    box-shadow: 0 10px 30px rgba(108, 99, 255, 0.1);
-    border: 1px solid rgba(31, 27, 114, 0);
+@media (min-width: 768px) {
+    .credential-meta {
+        margin-bottom: 0;
+    }
 }
 
-.achievement-stats h3 {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 700;
-    color: #282B75;
-    margin-bottom: 40px;
+.credential-date,
+.credential-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
 }
 
-.achievement-stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
+.credential-date {
+    color: #718096;
 }
 
-.achievement-stat {
-    text-align: center;
-    padding: 25px;
-    background: rgba(108, 99, 255, 0.05);
-    border-radius: 15px;
-    transition: all 0.3s ease;
+.credential-status {
+    color: #38a169;
 }
 
-.achievement-stat:hover {
-    background: rgba(108, 99, 255, 0.1);
-    transform: translateY(-5px);
+.credential-date svg,
+.credential-status svg {
+    width: 16px;
+    height: 16px;
 }
 
-.achievement-stat-number {
-    font-size: 48px;
-    font-weight: 800;
-    color: #282B75;
-    margin-bottom: 10px;
-    display: block;
+.credential-action {
+    flex-shrink: 0;
 }
 
-.achievement-stat-label {
-    font-size: 16px;
-    color: #282B75;
+.view-credential-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #1f1a86 0%, #27228f 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 0.875rem;
     font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.2);
+    border: none;
+    cursor: pointer;
+}
+
+.view-credential-btn:hover {
+    background: linear-gradient(135deg, #2220a3 0%, #2220a3 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(108, 99, 255, 0.3);
+    color: white;
+    text-decoration: none;
+}
+
+.view-credential-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.credential-skills {
+    margin-top: 20px;
+}
+
+.credential-skills-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #718096;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background: rgba(108, 99, 255, 0.08);
+    color: #4a5568;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(108, 99, 255, 0.15);
+}
+
+.skill-tag:hover {
+    background: rgba(108, 99, 255, 0.15);
+    color: #2220a3;
+    transform: translateY(-1px);
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .achievements-wrapper {
         padding: 40px 15px;
     }
     
-    .achievements-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .credentials-header h1 {
+        font-size: 2rem;
     }
     
-    .achievement-category {
+    .credential-details {
+        padding: 20px;
+    }
+    
+    .credential-badge {
+        min-height: 120px;
         padding: 30px 20px;
     }
     
-    .featured-achievements-grid {
-        grid-template-columns: 1fr;
+    .credential-title {
+        font-size: 1.2rem;
     }
     
-    .achievement-stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-    
-    .achievement-stat-number {
-        font-size: 36px;
+    .credential-meta {
+        gap: 15px;
     }
 }
 
 @media (max-width: 576px) {
-    /* Add some space after the achievements grid */
-    .achievements-grid {
-        margin-bottom: 60px;
-    }
-    .achievement-category {
-        padding: 25px 25px;
+    .credentials-header h1 {
+        font-size: 1.75rem;
     }
     
-    .achievement-category h3 {
-        font-size: 20px;
+    .credentials-header p {
+        font-size: 1rem;
     }
     
-    .featured-achievement {
-        padding: 25px 20px;
+    .credential-title {
+        font-size: 1.1rem;
     }
     
-    .achievement-stats-grid {
-        grid-template-columns: 1fr;
+    .credential-institution {
+        font-size: 0.75rem;
     }
 }
 </style>
@@ -373,238 +381,253 @@
     <div class="row justify-content-center">
         <div class="col-md-10 col-lg-9">
             <div class="section-title mb-70 text-center">
-                <h2 class="s-50 w-700" style="background: linear-gradient(135deg, #282B75 0%, #6C63FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">🏆 Achievements & Recognition</h2>
+                <h2 class="s-50 w-700" style="background: linear-gradient(135deg, #282B75 0%, #2220a3 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">🏆 Achievements</h2>
                 <p class="s-21 color--grey">
-                    A showcase of accomplishments, certifications, and recognition throughout my academic and professional journey.
+                    Your earned credentials and certifications
                 </p>
             </div>
         </div>
     </div>
 
-    <!-- ACHIEVEMENT STATS -->
-    <div class="achievement-stats">
-        <h3>📊 Achievement Highlights</h3>
-        <div class="achievement-stats-grid">
-            <div class="achievement-stat">
-                <span class="achievement-stat-number">15+</span>
-                <div class="achievement-stat-label">Certifications Earned</div>
-            </div>
-            <div class="achievement-stat">
-                <span class="achievement-stat-number">8</span>
-                <div class="achievement-stat-label">Awards Won</div>
-            </div>
-            <div class="achievement-stat">
-                <span class="achievement-stat-number">6</span>
-                <div class="achievement-stat-label">Projects Completed</div>
-            </div>
-            <div class="achievement-stat">
-                <span class="achievement-stat-number">95%</span>
-                <div class="achievement-stat-label">Client Satisfaction</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- FEATURED ACHIEVEMENTS -->
-    <div class="featured-achievements">
-        <h3>🌟 Featured Achievements</h3>
-        <div class="featured-achievements-grid">
-            <div class="featured-achievement">
-                <div class="featured-achievement-content">
-                    <div class="featured-achievement-icon">🥇</div>
-                    <h4>Academic Excellence Award</h4>
-                    <p>Recipient of the prestigious Academic Excellence Award for outstanding performance in Computer Science program with GPA of 3.8/4.0</p>
+    <!-- CREDENTIALS GRID -->
+    <div class="credentials-container">
+        <div class="credentials-grid">
+            <!-- Credential 1: Bachelor of Applied Science -->
+            <div class="credential-card">
+                <div class="credential-content">
+                    <div class="credential-badge">
+                        <div class="credential-badge-content">
+                            <svg class="credential-badge-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                            <span class="credential-badge-text">Certificate</span>
+                        </div>
+                    </div>
+                    <div class="credential-details">
+                        <div class="credential-header">
+                            <div class="credential-info">
+                                <h3 class="credential-title">Bachelor of Applied Science</h3>
+                                <p class="credential-institution">BUCKINGHAMSHIRE NEW UNIVERSITY</p>
+                                <div class="credential-meta">
+                                    <div class="credential-date">
+                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                        </svg>
+                                        <span>12 August, 2025</span>
+                                    </div>
+                                    <div class="credential-status">
+                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span>Verified</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="credential-action">
+                                <a href="https://verify.apac.certifyme.org/verify/85c4bf9f24454" class="view-credential-btn">
+                                    View Credential
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="credential-skills">
+                            <h4 class="credential-skills-title">Skills & Competencies</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Mathematics</span>
+                                <span class="skill-tag">Applied Physics</span>
+                                <span class="skill-tag">Problem Solving</span>
+                                <span class="skill-tag">Critical Thinking</span>
+                                <span class="skill-tag">Computer Programming</span>
+                                <span class="skill-tag">Simulation</span>
+                                <span class="skill-tag">Design Thinking</span>
+                                <span class="skill-tag">Product Development</span>
+                                <span class="skill-tag">Systems Integration</span>
+                                <span class="skill-tag">Project Management</span>
+                                <span class="skill-tag">Technical Communication</span>
+                                <span class="skill-tag">Research Methods</span>
+                                <span class="skill-tag">Team Collaboration</span>
+                                <span class="skill-tag">Leadership</span>
+                                <span class="skill-tag">Ethical and Sustainable Practices</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="featured-achievement">
-                <div class="featured-achievement-content">
-                    <div class="featured-achievement-icon">🏅</div>
-                    <h4>Best Project Award</h4>
-                    <p>Won the "Best Capstone Project" award for developing an innovative healthcare management system that improved patient care efficiency by 40%</p>
+
+            <!-- Credential 2: AI & Machine Learning -->
+            <div class="credential-card">
+                <div class="credential-content">
+                    <div class="credential-badge">
+                        <div class="credential-badge-content">
+                            <svg class="credential-badge-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                            <span class="credential-badge-text">Certificate</span>
+                        </div>
+                    </div>
+                    <div class="credential-details">
+                        <div class="credential-header">
+                            <div class="credential-info">
+                                <h3 class="credential-title">AI & Machine Learning Fundamentals Certificate</h3>
+                                <p class="credential-institution">BUCKINGHAMSHIRE NEW UNIVERSITY</p>
+                                <div class="credential-meta">
+                                    <div class="credential-date">
+                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                        </svg>
+                                        <span>08 August, 2025</span>
+                                    </div>
+                                    <div class="credential-status">
+                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span>Verified</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="credential-action">
+                                <a href="https://verify.apac.certifyme.org/verify/aa5d26c026332" class="view-credential-btn">
+                                    View Credential
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="credential-skills">
+                            <h4 class="credential-skills-title">Skills & Competencies</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">Artificial Intelligence</span>
+                                <span class="skill-tag">Neural Networks</span>
+                                <span class="skill-tag">Natural Language Processing</span>
+                                <span class="skill-tag">Python Programming</span>
+                                <span class="skill-tag">Data Preprocessing</span>
+                                <span class="skill-tag">Model Evaluation</span>
+                                <span class="skill-tag">Deep Learning</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="featured-achievement">
-                <div class="featured-achievement-content">
-                    <div class="featured-achievement-icon">🎖️</div>
-                    <h4>Technical Leadership</h4>
-                    <p>Recognized as "Outstanding Student Leader" for leading technical initiatives and mentoring 50+ junior students in programming and development</p>
+
+            <!-- Credential 3: Cloud Computing -->
+            <div class="credential-card">
+                <div class="credential-content">
+                    <div class="credential-badge">
+                        <div class="credential-badge-content">
+                            <svg class="credential-badge-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                            <span class="credential-badge-text">Certificate</span>
+                        </div>
+                    </div>
+                    <div class="credential-details">
+                        <div class="credential-header">
+                            <div class="credential-info">
+                                <h3 class="credential-title">Cloud Computing Professional Certificate</h3>
+                                <p class="credential-institution">BUCKINGHAMSHIRE NEW UNIVERSITY</p>
+                                <div class="credential-meta">
+                                    <div class="credential-date">
+                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                        </svg>
+                                        <span>08 August, 2025</span>
+                                    </div>
+                                    <div class="credential-status">
+                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span>Verified</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="credential-action">
+                                <a href="https://verify.apac.certifyme.org/verify/ac58258726329" class="view-credential-btn">
+                                    View Credential
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="credential-skills">
+                            <h4 class="credential-skills-title">Skills & Competencies</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Cloud Architecture</span>
+                                <span class="skill-tag">Virtualization</span>
+                                <span class="skill-tag">Cloud Networking</span>
+                                <span class="skill-tag">Cloud Security</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Microsoft Azure</span>
+                                <span class="skill-tag">Google Cloud Platform</span>
+                                <span class="skill-tag">DevOps</span>
+                                <span class="skill-tag">Containerization</span>
+                                <span class="skill-tag">Kubernetes</span>
+                                <span class="skill-tag">Infrastructure as Code</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- ACHIEVEMENTS GRID -->
-    <div class="achievements-grid">
-        <!-- AWARDS & RECOGNITION -->
-        <div class="achievement-category">
-            <div class="achievement-category-icon">🏆</div>
-            <h3>Awards & Recognition</h3>
-            <ul class="achievement-items">
-                <li class="achievement-item">
-                    <h4>Academic Excellence Award</h4>
-                    <p>Outstanding performance in Computer Science program with perfect scores in advanced programming courses</p>
-                    <span class="achievement-date">2023</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Best Capstone Project Award</h4>
-                    <p>Developed innovative healthcare management system that improved operational efficiency by 40%</p>
-                    <span class="achievement-date">2023</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Student Leadership Award</h4>
-                    <p>Recognized for exceptional leadership in technical initiatives and peer mentoring programs</p>
-                    <span class="achievement-date">2022</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Research Innovation Prize</h4>
-                    <p>Published research paper on machine learning applications in healthcare systems</p>
-                    <span class="achievement-date">2022</span>
-                </li>
-            </ul>
-        </div>
-
-        <!-- CERTIFICATIONS -->
-        <div class="achievement-category">
-            <div class="achievement-category-icon">📜</div>
-            <h3>Professional Certifications</h3>
-            <ul class="achievement-items">
-                <li class="achievement-item">
-                    <h4>AWS Certified Solutions Architect</h4>
-                    <p>Professional-level certification demonstrating expertise in designing distributed applications and systems on AWS</p>
-                    <span class="achievement-date">2024</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Google Cloud Professional Developer</h4>
-                    <p>Advanced certification in cloud-native application development using Google Cloud Platform</p>
-                    <span class="achievement-date">2024</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Certified Kubernetes Administrator</h4>
-                    <p>Demonstrated expertise in container orchestration and Kubernetes cluster management</p>
-                    <span class="achievement-date">2023</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>MongoDB Certified Developer</h4>
-                    <p>Advanced certification in MongoDB database design and development</p>
-                    <span class="achievement-date">2023</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Scrum Master Certification</h4>
-                    <p>Professional Scrum Master certification for agile project management</p>
-                    <span class="achievement-date">2022</span>
-                </li>
-            </ul>
-        </div>
-
-        <!-- ACADEMIC ACHIEVEMENTS -->
-        <div class="achievement-category">
-            <div class="achievement-category-icon">🎓</div>
-            <h3>Academic Excellence</h3>
-            <ul class="achievement-items">
-                <li class="achievement-item">
-                    <h4>Dean's List Honor</h4>
-                    <p>Consistent placement on Dean's List for academic excellence across all semesters</p>
-                    <span class="achievement-date">2020-2023</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Valedictorian Candidate</h4>
-                    <p>Selected as valedictorian candidate representing top 5% of graduating class</p>
-                    <span class="achievement-date">2023</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Scholarship Recipient</h4>
-                    <p>Awarded merit-based scholarship for outstanding academic achievement</p>
-                    <span class="achievement-date">2020-2023</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Research Publication</h4>
-                    <p>Co-authored research paper published in peer-reviewed journal on AI applications</p>
-                    <span class="achievement-date">2023</span>
-                </li>
-            </ul>
-        </div>
-
-        <!-- PROJECT SUCCESSES -->
-        <div class="achievement-category">
-            <div class="achievement-category-icon">🚀</div>
-            <h3>Project Milestones</h3>
-            <ul class="achievement-items">
-                <li class="achievement-item">
-                    <h4>Healthcare System Implementation</h4>
-                    <p>Successfully deployed healthcare management system used by 10+ clinics with 99.9% uptime</p>
-                    <span class="achievement-date">2023</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>E-Commerce Platform Launch</h4>
-                    <p>Built and launched full-stack e-commerce platform handling $1M+ in transactions</p>
-                    <span class="achievement-date">2023</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Mobile App Success</h4>
-                    <p>Developed mobile app with 10,000+ downloads and 4.8-star rating</p>
-                    <span class="achievement-date">2022</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Open Source Contribution</h4>
-                    <p>Contributed to 5 major open-source projects with 100+ merged pull requests</p>
-                    <span class="achievement-date">2021-2024</span>
-                </li>
-            </ul>
-        </div>
-
-        <!-- COMPETITION WINS -->
-        <div class="achievement-category">
-            <div class="achievement-category-icon">🏁</div>
-            <h3>Competition Achievements</h3>
-            <ul class="achievement-items">
-                <li class="achievement-item">
-                    <h4>Hackathon Winner</h4>
-                    <p>1st place in University Hackathon for developing AI-powered healthcare solution</p>
-                    <span class="achievement-date">2023</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Programming Contest Finalist</h4>
-                    <p>Reached finals in National Programming Competition among 500+ participants</p>
-                    <span class="achievement-date">2022</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Innovation Challenge Winner</h4>
-                    <p>Won innovation challenge for creating sustainable technology solution</p>
-                    <span class="achievement-date">2022</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Business Plan Competition</h4>
-                    <p>2nd place in inter-university business plan competition</p>
-                    <span class="achievement-date">2021</span>
-                </li>
-            </ul>
-        </div>
-
-        <!-- LEADERSHIP & SERVICE -->
-        <div class="achievement-category">
-            <div class="achievement-category-icon">👥</div>
-            <h3>Leadership & Service</h3>
-            <ul class="achievement-items">
-                <li class="achievement-item">
-                    <h4>Technical Club President</h4>
-                    <p>Led programming club with 200+ members, organized 15+ technical events</p>
-                    <span class="achievement-date">2022-2023</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Mentorship Program Lead</h4>
-                    <p>Mentored 50+ junior students in programming and career development</p>
-                    <span class="achievement-date">2021-2023</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Tech Workshop Organizer</h4>
-                    <p>Organized and conducted 20+ workshops on modern technologies</p>
-                    <span class="achievement-date">2021-2023</span>
-                </li>
-                <li class="achievement-item">
-                    <h4>Community Service Award</h4>
-                    <p>Recognized for volunteer work teaching programming to underprivileged students</p>
-                    <span class="achievement-date">2022</span>
-                </li>
-            </ul>
+            <!-- Credential 4: Leadership Award -->
+            <div class="credential-card">
+                <div class="credential-content">
+                    <div class="credential-badge">
+                        <div class="credential-badge-content">
+                            <svg class="credential-badge-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                            <span class="credential-badge-text">Certificate</span>
+                        </div>
+                    </div>
+                    <div class="credential-details">
+                        <div class="credential-header">
+                            <div class="credential-info">
+                                <h3 class="credential-title">Global Leadership & Management Excellence Award</h3>
+                                <p class="credential-institution">BUCKINGHAMSHIRE NEW UNIVERSITY</p>
+                                <div class="credential-meta">
+                                    <div class="credential-date">
+                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                        </svg>
+                                        <span>08 August, 2022</span>
+                                    </div>
+                                    <div class="credential-status">
+                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span>Verified</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="credential-action">
+                                <a href="https://verify.apac.certifyme.org/verify/3de47f9726328" class="view-credential-btn">
+                                    View Credential
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="credential-skills">
+                            <h4 class="credential-skills-title">Skills & Competencies</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Leadership</span>
+                                <span class="skill-tag">Strategic Thinking</span>
+                                <span class="skill-tag">Conflict Resolution</span>
+                                <span class="skill-tag">Cross-Cultural Communication</span>
+                                <span class="skill-tag">Team Management</span>
+                                <span class="skill-tag">Organizational Development</span>
+                                <span class="skill-tag">Business Ethics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
