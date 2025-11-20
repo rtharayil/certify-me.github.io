@@ -23,11 +23,13 @@ Experience:
     name: "Intern Software Engineer"
     company: "TechNova Solutions"
     description: "Backend API development and optimized system performance."
+    link: "/intern-software-engineer.html"
 
   - year: 2022
-    name: "Lab Asisitant"
+    name: "Lab Assistant"
     company: "ABC University"
     description: "CI/CD pipelines, and product automation."
+    link: "/lab-assistant.html"
 
 Projects:
   - name: "E-Commerce Analytics Dashboard"

@@ -44,13 +44,13 @@
                         </li>
                         <!-- SIMPLE NAVIGATION LINK -->
                         <li aria-haspopup="true">
-                            <a href="#features-11" class="h-link">experience
+                            <a href="#experience-section" class="h-link">Experience
                                 <span class="wsarrow"></span>
                             </a>
                             <ul class="sub-menu">
                                 {% for item in site.data.navigation.Experience %}
                                 <li aria-haspopup="true">
-                                    <a href="#" data-experience-year="{{ item.year }}">{{ item.name }}</a>
+                                    <a href="{{ item.link }}" data-experience-year="{{ item.year }}">{{ item.name }}</a>
                                 </li>
                                 {% endfor %}
                             </ul>
