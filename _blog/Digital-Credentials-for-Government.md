@@ -4,15 +4,13 @@ title:  Digital Credentials for Government
 
 description: Governments are embracing digital credentials for secure and efficient document issuance and citizen identification processes.
 
-abstract:  Digital Credentials for Government
+abstract:  
 topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/credential/41.png
 
 featured: true
 ---
-
-#   Digital Credentials for Government
 
 Digital Credentials have been around for a few years now and has been used across various industries. Ever since the global pandemic, the need for digitalisation has risen in regards to remote working and virtual learning and has led to the popularity of Digital Credentials.
 
