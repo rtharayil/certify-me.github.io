@@ -44,3 +44,23 @@ Projects:
     link: "/project-management-dashboard.html"
   - name: "Restaurant Operations Panel"
     link: "/restaurant-operations-panel.html"
+
+Achievements:
+  - name: "🏆 Awards & Recognition"
+    link: "/#achievements-section"
+  - name: "📜 Professional Certifications"
+    link: "/#achievements-section"
+  - name: "🎓 Academic Excellence"
+    link: "/#achievements-section"
+  - name: "🚀 Project Milestones"
+    link: "/#achievements-section"
+  - name: "🏁 Competition Achievements"
+    link: "/#achievements-section"
+  - name: "👥 Leadership & Service"
+    link: "/#achievements-section"
+
+Endorsements:
+  - name: "Feedback"
+    link: "/restaurant-operations-panel.html"
+  - name: "Reflections"
+    link: "/restaurant-operations-panel.html"

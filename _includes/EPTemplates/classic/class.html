@@ -1,0 +1,607 @@
+<section id="achievements-section" class="pt-100 achievements-section division">
+<style>
+/* ACHIEVEMENTS SECTION STYLES */
+.achievements-section {
+    background: linear-gradient(135deg, #f5f7ff 0%, #ffffff 50%, #f0f2ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.achievements-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(108, 99, 255, 0.05) 0%, transparent 70%);
+    animation: float 15s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(30px, -30px) rotate(120deg); }
+    66% { transform: translate(-20px, 20px) rotate(240deg); }
+}
+
+.achievements-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.achievement-category {
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow:
+        0 20px 40px rgba(40, 43, 117, 0.1),
+        0 8px 16px rgba(0,0,0,0.08),
+        0 0 0 1px rgba(108, 99, 255, 0.05);
+    border: 1px solid rgba(108, 99, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.achievement-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #282B75 0%, #6C63FF 50%, #8B84FF 100%);
+    background-size: 200% 100%;
+    animation: gradientShift 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.achievement-category:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow:
+        0 25px 50px rgba(40, 43, 117, 0.15),
+        0 10px 25px rgba(0,0,0,0.1);
+    border-color: rgba(108, 99, 255, 0.3);
+}
+
+.achievement-category-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #6C63FF 0%, #8B84FF 100%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(108, 99, 255, 0.3);
+    animation: iconPulse 3s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.achievement-category h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #282B75;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.achievement-category h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #6C63FF 0%, #8B84FF 100%);
+    border-radius: 2px;
+}
+
+.achievement-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.achievement-item {
+    background: rgba(108, 99, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border-left: 4px solid #6C63FF;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.achievement-item:hover {
+    background: rgba(108, 99, 255, 0.1);
+    transform: translateX(5px);
+    border-left-color: #8B84FF;
+}
+
+.achievement-item:last-child {
+    margin-bottom: 0;
+}
+
+.achievement-item h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.achievement-item h4::before {
+    content: '🏆';
+    font-size: 18px;
+}
+
+.achievement-item p {
+    font-size: 14px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.achievement-date {
+    font-size: 12px;
+    color: #6C63FF;
+    font-weight: 500;
+    margin-top: 8px;
+    display: inline-block;
+    background: rgba(108, 99, 255, 0.1);
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+/* FEATURED ACHIEVEMENTS */
+.featured-achievements {
+    margin-bottom: 50px;
+}
+
+.featured-achievements h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #282B75;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.featured-achievements h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #282B75 0%, #6C63FF 100%);
+    border-radius: 2px;
+}
+
+.featured-achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.featured-achievement {
+    background: linear-gradient(135deg, #6C63FF 0%, #8B84FF 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.featured-achievement::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.featured-achievement:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(108, 99, 255, 0.4);
+}
+
+.featured-achievement-content {
+    position: relative;
+    z-index: 1;
+}
+
+.featured-achievement-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.featured-achievement h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.featured-achievement p {
+    font-size: 14px;
+    opacity: 0.9;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* STATS SECTION */
+.achievement-stats {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(108, 99, 255, 0.1);
+    border: 1px solid rgba(108, 99, 255, 0.1);
+}
+
+.achievement-stats h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #282B75;
+    margin-bottom: 40px;
+}
+
+.achievement-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.achievement-stat {
+    text-align: center;
+    padding: 25px;
+    background: rgba(108, 99, 255, 0.05);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.achievement-stat:hover {
+    background: rgba(108, 99, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.achievement-stat-number {
+    font-size: 48px;
+    font-weight: 800;
+    color: #6C63FF;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.achievement-stat-label {
+    font-size: 16px;
+    color: #4a5568;
+    font-weight: 600;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .achievements-wrapper {
+        padding: 40px 15px;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .achievement-category {
+        padding: 30px 20px;
+    }
+    
+    .featured-achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .achievement-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .achievement-stat-number {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 576px) {
+    .achievement-category {
+        padding: 25px 15px;
+    }
+    
+    .achievement-category h3 {
+        font-size: 20px;
+    }
+    
+    .featured-achievement {
+        padding: 25px 20px;
+    }
+    
+    .achievement-stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="container">
+    <!-- SECTION TITLE -->
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-9">
+            <div class="section-title mb-70 text-center">
+                <h2 class="s-50 w-700" style="background: linear-gradient(135deg, #282B75 0%, #6C63FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">🏆 Achievements & Recognition</h2>
+                <p class="s-21 color--grey">
+                    A showcase of accomplishments, certifications, and recognition throughout my academic and professional journey.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACHIEVEMENT STATS -->
+    <div class="achievement-stats">
+        <h3>📊 Achievement Highlights</h3>
+        <div class="achievement-stats-grid">
+            <div class="achievement-stat">
+                <span class="achievement-stat-number">15+</span>
+                <div class="achievement-stat-label">Certifications Earned</div>
+            </div>
+            <div class="achievement-stat">
+                <span class="achievement-stat-number">8</span>
+                <div class="achievement-stat-label">Awards Won</div>
+            </div>
+            <div class="achievement-stat">
+                <span class="achievement-stat-number">25+</span>
+                <div class="achievement-stat-label">Projects Completed</div>
+            </div>
+            <div class="achievement-stat">
+                <span class="achievement-stat-number">95%</span>
+                <div class="achievement-stat-label">Client Satisfaction</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURED ACHIEVEMENTS -->
+    <div class="featured-achievements">
+        <h3>🌟 Featured Achievements</h3>
+        <div class="featured-achievements-grid">
+            <div class="featured-achievement">
+                <div class="featured-achievement-content">
+                    <div class="featured-achievement-icon">🥇</div>
+                    <h4>Academic Excellence Award</h4>
+                    <p>Recipient of the prestigious Academic Excellence Award for outstanding performance in Computer Science program with GPA of 3.8/4.0</p>
+                </div>
+            </div>
+            <div class="featured-achievement">
+                <div class="featured-achievement-content">
+                    <div class="featured-achievement-icon">🏅</div>
+                    <h4>Best Project Award</h4>
+                    <p>Won the "Best Capstone Project" award for developing an innovative healthcare management system that improved patient care efficiency by 40%</p>
+                </div>
+            </div>
+            <div class="featured-achievement">
+                <div class="featured-achievement-content">
+                    <div class="featured-achievement-icon">🎖️</div>
+                    <h4>Technical Leadership</h4>
+                    <p>Recognized as "Outstanding Student Leader" for leading technical initiatives and mentoring 50+ junior students in programming and development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACHIEVEMENTS GRID -->
+    <div class="achievements-grid">
+        <!-- AWARDS & RECOGNITION -->
+        <div class="achievement-category">
+            <div class="achievement-category-icon">🏆</div>
+            <h3>Awards & Recognition</h3>
+            <ul class="achievement-items">
+                <li class="achievement-item">
+                    <h4>Academic Excellence Award</h4>
+                    <p>Outstanding performance in Computer Science program with perfect scores in advanced programming courses</p>
+                    <span class="achievement-date">2023</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Best Capstone Project Award</h4>
+                    <p>Developed innovative healthcare management system that improved operational efficiency by 40%</p>
+                    <span class="achievement-date">2023</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Student Leadership Award</h4>
+                    <p>Recognized for exceptional leadership in technical initiatives and peer mentoring programs</p>
+                    <span class="achievement-date">2022</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Research Innovation Prize</h4>
+                    <p>Published research paper on machine learning applications in healthcare systems</p>
+                    <span class="achievement-date">2022</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- CERTIFICATIONS -->
+        <div class="achievement-category">
+            <div class="achievement-category-icon">📜</div>
+            <h3>Professional Certifications</h3>
+            <ul class="achievement-items">
+                <li class="achievement-item">
+                    <h4>AWS Certified Solutions Architect</h4>
+                    <p>Professional-level certification demonstrating expertise in designing distributed applications and systems on AWS</p>
+                    <span class="achievement-date">2024</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Google Cloud Professional Developer</h4>
+                    <p>Advanced certification in cloud-native application development using Google Cloud Platform</p>
+                    <span class="achievement-date">2024</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Certified Kubernetes Administrator</h4>
+                    <p>Demonstrated expertise in container orchestration and Kubernetes cluster management</p>
+                    <span class="achievement-date">2023</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>MongoDB Certified Developer</h4>
+                    <p>Advanced certification in MongoDB database design and development</p>
+                    <span class="achievement-date">2023</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Scrum Master Certification</h4>
+                    <p>Professional Scrum Master certification for agile project management</p>
+                    <span class="achievement-date">2022</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ACADEMIC ACHIEVEMENTS -->
+        <div class="achievement-category">
+            <div class="achievement-category-icon">🎓</div>
+            <h3>Academic Excellence</h3>
+            <ul class="achievement-items">
+                <li class="achievement-item">
+                    <h4>Dean's List Honor</h4>
+                    <p>Consistent placement on Dean's List for academic excellence across all semesters</p>
+                    <span class="achievement-date">2020-2023</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Valedictorian Candidate</h4>
+                    <p>Selected as valedictorian candidate representing top 5% of graduating class</p>
+                    <span class="achievement-date">2023</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Scholarship Recipient</h4>
+                    <p>Awarded merit-based scholarship for outstanding academic achievement</p>
+                    <span class="achievement-date">2020-2023</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Research Publication</h4>
+                    <p>Co-authored research paper published in peer-reviewed journal on AI applications</p>
+                    <span class="achievement-date">2023</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- PROJECT SUCCESSES -->
+        <div class="achievement-category">
+            <div class="achievement-category-icon">🚀</div>
+            <h3>Project Milestones</h3>
+            <ul class="achievement-items">
+                <li class="achievement-item">
+                    <h4>Healthcare System Implementation</h4>
+                    <p>Successfully deployed healthcare management system used by 10+ clinics with 99.9% uptime</p>
+                    <span class="achievement-date">2023</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>E-Commerce Platform Launch</h4>
+                    <p>Built and launched full-stack e-commerce platform handling $1M+ in transactions</p>
+                    <span class="achievement-date">2023</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Mobile App Success</h4>
+                    <p>Developed mobile app with 10,000+ downloads and 4.8-star rating</p>
+                    <span class="achievement-date">2022</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Open Source Contribution</h4>
+                    <p>Contributed to 5 major open-source projects with 100+ merged pull requests</p>
+                    <span class="achievement-date">2021-2024</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- COMPETITION WINS -->
+        <div class="achievement-category">
+            <div class="achievement-category-icon">🏁</div>
+            <h3>Competition Achievements</h3>
+            <ul class="achievement-items">
+                <li class="achievement-item">
+                    <h4>Hackathon Winner</h4>
+                    <p>1st place in University Hackathon for developing AI-powered healthcare solution</p>
+                    <span class="achievement-date">2023</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Programming Contest Finalist</h4>
+                    <p>Reached finals in National Programming Competition among 500+ participants</p>
+                    <span class="achievement-date">2022</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Innovation Challenge Winner</h4>
+                    <p>Won innovation challenge for creating sustainable technology solution</p>
+                    <span class="achievement-date">2022</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Business Plan Competition</h4>
+                    <p>2nd place in inter-university business plan competition</p>
+                    <span class="achievement-date">2021</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- LEADERSHIP & SERVICE -->
+        <div class="achievement-category">
+            <div class="achievement-category-icon">👥</div>
+            <h3>Leadership & Service</h3>
+            <ul class="achievement-items">
+                <li class="achievement-item">
+                    <h4>Technical Club President</h4>
+                    <p>Led programming club with 200+ members, organized 15+ technical events</p>
+                    <span class="achievement-date">2022-2023</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Mentorship Program Lead</h4>
+                    <p>Mentored 50+ junior students in programming and career development</p>
+                    <span class="achievement-date">2021-2023</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Tech Workshop Organizer</h4>
+                    <p>Organized and conducted 20+ workshops on modern technologies</p>
+                    <span class="achievement-date">2021-2023</span>
+                </li>
+                <li class="achievement-item">
+                    <h4>Community Service Award</h4>
+                    <p>Recognized for volunteer work teaching programming to underprivileged students</p>
+                    <span class="achievement-date">2022</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</section>
