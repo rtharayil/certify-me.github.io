@@ -152,6 +152,8 @@ Let’s zoom in on campus life for a second. Universities have jumped on the dig
 
 Here’s what’s happening:
 
+<br>
+
 ### Student Clubs and Organizations
 
 A student-run debate society organizes a city-wide competition. Each participant gets a shareable digital badge that:
@@ -164,6 +166,8 @@ A student-run debate society organizes a city-wide competition. Each participant
 
 Instead of collecting dust, these credentials get posted, clicked, and remembered.
 
+<br>
+
 ### Registrar’s Office and Academic Events
 
 Workshops, seminars, and development programs often go unnoticed—until they’re credentialed.
@@ -175,6 +179,8 @@ Workshops, seminars, and development programs often go unnoticed—until they’
 1. Career prep sessions? You guessed it—credentialed.
 
 Now there’s a way to track participation and [incentivize engagement](https://info.acreditta.com/en/blog/credenciales-digitales/las-credenciales-digitales-y-sus-principales-casos-de-uso/).
+
+<br>
 
 ### Student Volunteers and Interns
 
@@ -335,21 +341,31 @@ If you’re convinced that digital credentials can transform how you recognize a
 
 CertifyMe is a leading digital credentialing platform built for modern organizations, universities, and event professionals. It allows you to issue secure, verifiable, and beautifully designed digital badges and certificates with just a few clicks. Whether you're managing a student conference, a professional development workshop, or a large-scale industry event, CertifyMe makes credentialing simple, efficient, and impactful.
 
+<br>
+
 ### Issue Credentials in Minutes
 
 With CertifyMe, you can upload participant data (from CSV files or spreadsheets), customize your badge or certificate design using built-in templates, and issue credentials in bulk. No printing. No envelopes. No delays. Your attendees receive their credentials instantly, with embedded verification links and shareable badges they can proudly post to LinkedIn, email signatures, or personal portfolios.
+
+<br>
 
 ### Security & Verification Built In
 
 CertifyMe uses blockchain-backed verification to prevent tampering or forgery. Each credential comes with a unique, traceable URL that anyone—from recruiters to educators—can use to verify the authenticity of an award. This is a game-changer for event organizers who want their programs to be recognized beyond the event itself.
 
+<br>
+
 ### Custom Branding That Promotes Your Event
 
 Your event is part of your brand, and CertifyMe helps it live on. You can fully customize the look and feel of your credentials—adding your logo, event name, brand colors, and more. Every time a recipient shares their credential online, your event gets organic visibility, acting as a mini digital billboard for your organization.
 
+<br>
+
 ### Track Credential Engagement
 
 Want to know how your issued credentials are performing? CertifyMe gives you access to analytics dashboards that track opens, shares, and verifications. This means you not only see how your audience is interacting with their credentials, but also gain insights into the value and reach of your event.
+
+<br>
 
 ### Ideal for All Event Types
 
