@@ -24,6 +24,8 @@ In this blog, we’ll break down the three most effective advantages of verifiab
 
 ## 1. Enhanced Security and Trustworthiness
 
+<br>
+
 ### The Problem with Traditional Credentials
 
 Think back to the last time you had to prove your academic achievements or professional qualifications. Most likely, you relied on paper certificates, transcripts, or letters sealed with ink stamps. While these physical documents have been the standard for decades, they come with a bundle of challenges that often go unnoticed—until you really need them.
@@ -68,6 +70,8 @@ This enhanced security builds real trust between institutions, students, and emp
 
 ## 2. Streamlined Sharing and Accessibility
 
+<br>
+
 ### Challenges with Physical Documents
 
 If you’ve ever had to send a paper transcript or diploma to someone, you know it’s not as simple as it sounds. Physical documents come with their own set of hurdles that often slow things down or cause unnecessary stress.
@@ -105,7 +109,6 @@ Digital credentials simplify the sharing process:
 
 <img class="img-fluid r-16" src="/img/blog/digital-credential-sharing-benefits.png" alt="Benefits of digital credential sharing">
 
-
 Analogy: Think of digital credentials as streaming music—accessible on-demand, without the need for physical media.
 
 So whether you're applying for a summer internship from your dorm room or showcasing your certifications on LinkedIn, these digital records are always at your fingertips. 
@@ -115,6 +118,8 @@ That kind of convenience can be a real game-changer for students on the move and
 <br>
 
 ## 3. Improved Efficiency for Institutions and Employers
+
+<br>
 
 ### The Administrative Burden
 
