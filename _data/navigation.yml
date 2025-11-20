@@ -1,14 +1,14 @@
 # Centralized Navigation Data for EPTemplates
 Education:
   - year: 2023
-    name: "Bachelor of Technology"
-    university: "ABC University"
+    name: "Bachelor of  Computer Technology"
+    university: "BUCKINGHAMSHIRE NEW UNIVERSITY"
     percentage: "82%"
     link: "/bachelor-of-technology.html"
 
   - year: 2019
     name: "Higher Secondary"
-    school: "XYZ Public School"
+    school: "ST Thomos Public School"
     percentage: "91%"
     link: "/higher-secondary.html"
 
@@ -27,7 +27,7 @@ Experience:
 
   - year: 2022
     name: "Lab Assistant"
-    company: "ABC University"
+    company: "SAP Labs"
     description: "CI/CD pipelines, and product automation."
     link: "/lab-assistant.html"
 
