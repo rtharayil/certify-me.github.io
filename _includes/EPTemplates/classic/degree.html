@@ -1,0 +1,140 @@
+<!-- EDUCATION PAGE -->
+<section id="role-page" class="pb-80 inner-page-hero division">
+    <div class="container">
+        <div class="row justify-content-center">    
+            <div class="col-xl-10">
+
+                <!-- PAGE HEADER -->
+                <div class="edu-header">
+                    <div class="edu-badge">{{ page.degree_type }}</div>
+                    <h2 class="edu-title">{{ page.degree_name }}</h2>
+                    <p class="edu-inst">{{ page.institution }}</p>
+                    <p class="edu-loc">{{ page.location }}</p>
+                    <p class="edu-duration">Duration: {{ page.start_year }} – {{ page.end_year }}</p>
+                </div>
+
+                <!-- MAIN CONTENT -->
+                <div class="txt-block role-info">
+                    
+                    <!-- DESCRIPTION -->
+                    <p class="edu-description">{{ page.description }}</p>
+                    <hr>
+
+                    <!-- SEMESTER OVERVIEW -->
+                    <h5 class="s-24 w-700 mb-4">Semester Overview</h5>
+
+                    <style>
+                        /* ----- MAIN HEADER SECTION ----- */
+                        .edu-header {
+                            text-align: center;
+                            padding: 40px 20px;
+                            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+                            border-radius: 20px;
+                            margin-bottom: 40px;
+                            border: 1px solid #eef0f4;
+                            box-shadow: 0 8px 28px rgba(0,0,0,0.04);
+                        }
+
+                        .edu-badge {
+                            display: inline-block;
+                            padding: 6px 14px;
+                            background: #eef3ff;
+                            color: #3d4a7b;
+                            font-size: 13px;
+                            font-weight: 600;
+                            border-radius: 30px;
+                            margin-bottom: 12px;
+                            border: 1px solid #dde5ff;
+                        }
+
+                        .edu-title {
+                            font-size: 34px;
+                            font-weight: 700;
+                            margin-bottom: 12px;
+                            color: #1c1c1c;
+                        }
+
+                        .edu-inst {
+                            font-size: 20px;
+                            font-weight: 500;
+                            margin-bottom: 4px;
+                            color: #3d3d3d;
+                        }
+
+                        .edu-loc {
+                            font-size: 16px;
+                            color: #6b6b6b;
+                            margin-bottom: 10px;
+                        }
+
+                        .edu-duration {
+                            font-size: 15px;
+                            color: #888;
+                            font-weight: 500;
+                        }
+
+                        .edu-description {
+                            font-size: 17px;
+                            line-height: 1.7;
+                            color: #444;
+                            margin-bottom: 20px;
+                        }
+
+                        /* ----- SEMESTER GRID ----- */
+                        .semester-grid {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+                            gap: 20px;
+                            margin-bottom: 30px;
+                        }
+
+                        .sem-card {
+                            background: #ffffff;
+                            border-radius: 16px;
+                            padding: 22px;
+                            border: 1px solid #f1f1f1;
+                            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+                            transition: transform 0.2s ease, box-shadow 0.2s ease;
+                        }
+                        .sem-card:hover {
+                            transform: translateY(-4px);
+                            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+                        }
+
+                        .sem-card h6 {
+                            font-size: 18px;
+                            margin-bottom: 10px;
+                            font-weight: 700;
+                            color: #222;
+                        }
+
+                        .subject-pill {
+                            background: #f3f5f7;
+                            padding: 6px 12px;
+                            border-radius: 10px;
+                            margin: 4px 4px 0 0;
+                            display: inline-block;
+                            font-size: 13px;
+                            color: #333;
+                            border: 1px solid #e5e5e5;
+                        }
+                    </style>
+
+                    <div class="semester-grid">
+                        {% for sem in page.semester_details %}
+                        <div class="sem-card">
+                            <h6>Semester {{ sem.semester }} (GPA: {{ sem.gpa }})</h6>
+                            {% for sub in sem.subjects %}
+                                <span class="subject-pill">{{ sub }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <hr>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

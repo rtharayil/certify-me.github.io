@@ -1,5 +1,5 @@
 ---
-layout: EPClassicLayout
+layout: EPTemplates/EPClassicLayout
 sitemap: false
 
 Education:
