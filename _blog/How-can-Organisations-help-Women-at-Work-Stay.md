@@ -152,6 +152,8 @@ And here’s something powerful: internal communities.
 Slack channels. Monthly meetups. Mentorship circles.
  When women feel connected to others who understand their journey, they stay longer. They speak up more. They grow faster.
 
+<br>
+
 ### When Support Is Visible, Women Stay—And Thrive
 
 Let’s wrap this into a simple idea:
