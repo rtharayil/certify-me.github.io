@@ -32,6 +32,6 @@ key_features:
   - Electronic Prescriptions
   - Billing Module
 
-project_link: "#https://github.com/"
+project_link: "#"
 
 ---
