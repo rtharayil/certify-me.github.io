@@ -118,6 +118,42 @@
                             color: #333;
                             border: 1px solid #e5e5e5;
                         }
+
+                        /* ----- DOWNLOAD BUTTON ----- */
+                        .download-section {
+                            text-align: center;
+                            margin-top: 40px;
+                            padding-top: 30px;
+                        }
+
+                        .download-btn {
+                            display: inline-flex;
+                            align-items: center;
+                            gap: 10px;
+                            background: linear-gradient(135deg, #3d4a7b 0%, #2c3e50 100%);
+                            color: white;
+                            padding: 15px 30px;
+                            border-radius: 12px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            text-decoration: none;
+                            transition: all 0.3s ease;
+                            box-shadow: 0 6px 20px rgba(61, 74, 123, 0.3);
+                            border: 1px solid #2c3e50;
+                        }
+
+                        .download-btn:hover {
+                            background: linear-gradient(135deg, #2c3e50 0%, #3d4a7b 100%);
+                            transform: translateY(-2px);
+                            box-shadow: 0 8px 25px rgba(61, 74, 123, 0.4);
+                            color: white;
+                            text-decoration: none;
+                        }
+
+                        .download-btn svg {
+                            width: 20px;
+                            height: 20px;
+                        }
                     </style>
 
                     <div class="semester-grid">
@@ -132,6 +168,16 @@
                     </div>
 
                     <hr>
+
+                    <!-- DOWNLOAD SECTION -->
+                    <div class="download-section">
+                        <a href="#" class="download-btn">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            Download Certificate
+                        </a>
+                    </div>
 
                 </div>
             </div>

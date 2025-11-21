@@ -1,49 +1,48 @@
 # Centralized Navigation Data for EPTemplates
 Education:
   - year: 2023
-    name: "Bachelor of  Computer Technology"
-    university: "BUCKINGHAMSHIRE NEW UNIVERSITY"
+    name: "Bachelor of Engineering (B.E.)"
+    university: "Global Institute of Technology"
     percentage: "82%"
-    link: "/bachelor-of-technology.html"
+    link: "/EPTemplates/riya/btech.html"
 
   - year: 2019
     name: "Higher Secondary"
-    school: "ST Thomos Public School"
+    school: "Global Senior Secondary School"
     percentage: "91%"
-    link: "/higher-secondary.html"
+    link: "/EPTemplates/riya/higher-secondary.html"
 
   - year: 2017
     name: "Secondary School"
-    school: "Little Flower School"
+    school: "Lab Assistant"
     percentage: "88%"
-    link: "/secondary-school.html"
+    link: "/EPTemplates/riya/Secondary-School.html"
 
 Experience:
-  - year: 2024
-    name: "Intern Software Engineer"
-    company: "TechNova Solutions"
+  - name: " Software Engineer"
+    company: "TechCraft Solutions"
     description: "Backend API development and optimized system performance."
-    link: "/intern-software-engineer.html"
+    link: "/EPTemplates/riya/software-eng.html"
 
   - year: 2022
     name: "Lab Assistant"
-    company: "SAP Labs"
+    company: "Lab Assistant Experience"
     description: "CI/CD pipelines, and product automation."
-    link: "/lab-assistant.html"
+    link: "/EPTemplates/riya/lab-assistance.html"
 
 Projects:
   - name: "E-Commerce Analytics Dashboard"
-    link: "/ecommerce-analytics-dashboard.html"
+    link: "/EPTemplates/riya/ecommerce-analytics-dashboard.html"
   - name: "Healthcare Management System"
-    link: "/healthcare-management-system.html"
+    link: "/EPTemplates/riya/healthcare-management-system.html"
   - name: "Financial Trading Platform"
-    link: "/financial-trading-platform.html"
+    link: "/EPTemplates/riya/financial-trading-platform.html"
   - name: "Social Media Analytics Tool"
-    link: "/social-media-analytics-tool.html"
+    link: "/EPTemplates/riya/social-media-analytics-tool.html"
   - name: "Project Management Dashboard"
-    link: "/project-management-dashboard.html"
+    link: "/EPTemplates/riya/project-management-dashboard.html"
   - name: "Restaurant Operations Panel"
-    link: "/restaurant-operations-panel.html"
+    link: "/EPTemplates/riya/restaurant-operations-panel.html"
 
 Achievements:
   - name: "🏆 Awards & Recognition"

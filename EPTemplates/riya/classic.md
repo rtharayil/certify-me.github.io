@@ -4,34 +4,34 @@ sitemap: false
 
 Education:
   - year: 2023
-    name: "Bachelor of Technology"
-    university: "ABC University"
+    name: "Bachelor of Engineering (B.E.) "
+    university: "Global Institute of Technology"
     percentage: "82%"
-    link: "/bachelor-of-technology.html"
+    link: "/EPTemplates/riya/btech.html"
 
   - year: 2019
     name: "Higher Secondary"
-    school: "XYZ Public School"
+    school: "Global Senior Secondary School"
     percentage: "91%"
-    link: "/higher-secondary.html"
+    link: "/EPTemplates/riya/higher-secondary.html"
 
   - year: 2017
     name: "Secondary School"
-    school: "Little Flower School"
+    school: "Global Secondary School"
     percentage: "88%"
-    link: "/secondary-school.html"
+    link: "/EPTemplates/riya/Secondary-School.html"
 
 
 Experience:
   - year: 2024
-    name: "Intern Software Engineer"
-    company: "TechNova Solutions"
-    description: "Backend API development and optimized system performance."
+    name: "Software Engineer"
+    company: "TechCraft Solutions"
+    description: "Involved in frontend and backend development, feature enhancement, sprint-baseddelivery, production debugging, and collaborating with cross-functional teams to deliver reliable software solutions."
 
   - year: 2022
-    name: "Lab Asisitant"
-    company: "ABC University"
-    description: "CI/CD pipelines, and product automation."
+    name: "Lab Assistant Experience"
+    company: "Global Insitute of Management Sciences"
+    description: "Worked as a Lab Assistant responsible for assisting science faculty, managing laboratory equipment, maintaining safety standards, and providing hands-on support for student lab sessions and experiments."
 
 # Example Portfolio Data Structure
 # Add this to your page front matter or data file
@@ -40,32 +40,32 @@ Portfolio:
   - name: "E-Commerce Analytics Dashboard"
     description: "A comprehensive admin interface featuring real-time sales metrics, inventory management, and customer behavior analytics with interactive charts and data visualization."
     image: "/images/eptemplate/project-1.jpg"
-    link: "/ecommerce-analytics-dashboard.html"
+    link: "/EPTemplates/riya/ecommerce-analytics-dashboard.html"
     
   - name: "Healthcare Management System"
     description: "Patient management dashboard with appointment scheduling, medical records tracking, and billing integration. Designed for streamlined clinic operations and improved patient care."
     image: "/images/eptemplate/project2.jpg"
-    link: "/healthcare-management-system.html"
+    link: "/EPTemplates/riya/healthcare-management-system.html"
     
   - name: "Financial Trading Platform"
     description: "Real-time stock market dashboard with portfolio tracking, advanced charting tools, and risk analysis features for professional traders and investors."
     image: "/images/eptemplate/project3.jpg"
-    link: "/financial-trading-platform.html"
+    link: "/EPTemplates/riya/financial-trading-platform.html"
     
   - name: "Social Media Analytics Tool"
     description: "Marketing dashboard for tracking engagement metrics, audience insights, and campaign performance across multiple social platforms with automated reporting."
     image: "/images/eptemplate/project4.jpg"
-    link: "/social-media-analytics-tool.html"
+    link: "/EPTemplates/riya/social-media-analytics-tool.html"
     
   - name: "Project Management Dashboard"
     description: "Team collaboration interface with task tracking, milestone management, resource allocation, and progress visualization for agile development teams."
     image: "/images/eptemplate/project5.jpg"
-    link: "/project-management-dashboard.html"
+    link: "/EPTemplates/riya/project-management-dashboard.html"
     
   - name: "Restaurant Operations Panel"
     description: "Complete restaurant management system with order tracking, table reservations, inventory control, and staff scheduling to optimize daily operations."
     image: "/images/eptemplate/project6.jpg"
-    link: "/restaurant-operations-panel.html"
+    link: "/EPTemplates/riya/restaurant-operations-panel.html"
 
 # Skills Data Structure
 # Add this to your page front matter or data file
@@ -128,6 +128,10 @@ Hero :
     - url : /images/eptemplate/Riya.png
     - tagLine:
     - name:
-    - CV: 
+    - CV:
 
 ---
+
+## Achievements Section
+
+{% include EPTemplates/classic/achivements.html %}
