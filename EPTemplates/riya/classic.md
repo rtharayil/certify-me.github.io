@@ -130,8 +130,90 @@ Hero :
     - name:
     - CV:
 
+testimonials:
+  - name: Danielle Lee
+    designation: Board Director
+    company: PMI Phoenix
+    image: /assets4/images/Danielle Image - Review.jpg
+    message: >
+      A skilled and dependable developer with a strong sense of ownership. Their work on
+      our process automation workflows significantly improved operational efficiency and
+      reduced manual errors. Their structured approach, transparency throughout delivery,
+      and commitment to on-time execution stood out.
+
+  - name: Erika Barney
+    designation: Human Resources Director
+    company: Au Pair Weekend
+    image: /assets4/images/Erika Image - Review.jpg
+    message: >
+      They demonstrated remarkable technical depth and the ability to convert loose
+      requirements into a scalable, maintainable solution. Their contributions modernized
+      our internal systems and made data accessibility smoother for multiple departments.
+      A reliable and thoughtful technology partner.
+
+  - name: Chresente Gong
+    designation: Founder
+    company: EIS Education International
+    image: /assets4/images/Chresente Image - Review.jpg
+    message: >
+      What impressed us most was their understanding of both technology and the business
+      implications behind every implementation. Their solutions helped us streamline
+      academic operations and make data-driven decisions faster than ever before.
+
+  - name: Anson Antony
+    designation: Project Manager
+    company: University of Europe
+    image: /assets4/images/Anson Antony Image - Review.jpg
+    message: >
+      They delivered enterprise-quality work with meticulous attention to detail.
+      Code was clean, fully documented, and easy for the internal team to maintain.
+      Their proactive communication and willingness to adapt to project changes made
+      collaboration seamless.
+
+  - name: Joshua J.
+    designation: Chief Learning Officer
+    company: System Support Inc.
+    image: /assets4/images/Images Webp/Joshua.webp
+    message: >
+      Their contributions helped evolve our legacy system into a modern, scalable
+      architecture that performs faster and is easier to maintain. Their full-stack
+      expertise and ability to solve complex problems were key in transforming
+      the product's long-term technical roadmap.
+
+  - name: Kasie V.
+    designation: CEO
+    company: Sigma Forces
+    image: /assets4/images/Images Webp/Kaisie.webp
+    message: >
+      They converted complex business requirements into intuitive user interfaces and
+      high-performance backend systems. The project not only launched ahead of schedule
+      but exceeded customer expectations. Highly dependable and skilled.
+
+  - name: Aleena J.
+    designation: Enrollment Manager
+    company: State University of New York
+    image: /assets4/images/Images Webp/Aleena.webp
+    message: >
+      Their understanding of stakeholder needs and ability to design practical digital
+      solutions was excellent. They helped us streamline enrollment workflows and improve
+      the student onboarding experience in a measurable way.
+
+  - name: Sharon D.
+    designation: Academic Coordinator
+    company: University of Texas
+    image: /assets4/images/Images Webp/Sharon.webp
+    message: >
+      A professional with strong technical abilities and a collaborative working style.
+      Their work improved reporting accuracy, reduced processing time, and created tools
+      that significantly improved daily academic operations. Would highly recommend them
+      for future development work.
+
 ---
 
 ## Achievements Section
 
 {% include EPTemplates/classic/achivements.html %}
+
+## Endorsements Section
+
+{% include EPTemplates/classic/testimonials.html %}
