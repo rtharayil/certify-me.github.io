@@ -28,11 +28,15 @@ Let’s break it down. White labeling—at its core—means taking a pre‑built
 
 Think of it like milkshake cups. You walk into a shop and they serve you the same shake, but you carry it out in a cup printed with your university logo, not theirs. The content is the same, but the brand impression is all yours.
 
+<br>
+
 ### What stays the same:
 
 1. The underlying technology—the platform handles document generation, issuance, verification
 
 1. The core data—name, date, achievement, certificate ID
+
+<br>
 
 ### What changes:
 
@@ -54,13 +58,19 @@ This isn’t about hiding the platform—it’s about owning the experience. In 
 
 If you're still debating whether digital credentials are the right step forward, check out this comparison of [paper vs. digital certificates](https://www.certifyme.online/blog/Which-is-better-paper-or-digital-certificates.html) to see why more institutions are making the switch.
 
+<br>
+
 ### Everyday analogy:
 
 You know those private‑label brands at grocery stores? Same product—a jar of jam—but the label reads “MyStore” instead of “BigBrand.” You don’t think less of it; you see the store’s brand and trust it. White labeling digital credentials works the same way.
 
+<br>
+
 ### A quick story:
 
 Last year, one registrar I talked with told me her stack of plain certificates wouldn’t get mounted on walls—too generic. Once they switched to a white label with the university crest in gold foil design, students wanted to frame them. That’s the power of perceived value.
+
+<br>
 
 ## Why Does Branding Matter for Credentials?
 
