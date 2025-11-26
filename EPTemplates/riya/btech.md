@@ -6,8 +6,8 @@ sitemap: false
 title: "Bachelor of Engineering"
 
 degree_type: "Graduation"
-degree_name: "Bachelor of Engineering (B.E.)"
-institution: "Global Institution of Technologies"
+degree_name: "Bachelor of Engineering (B.E)"
+institution: "PES University"
 location: "Bangalore, India"
 start_year: 2018
 end_year: 2022

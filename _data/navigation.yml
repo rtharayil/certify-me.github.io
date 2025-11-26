@@ -1,8 +1,8 @@
 # Centralized Navigation Data for EPTemplates
 Education:
   - year: 2023
-    name: "Bachelor of Engineering (B.E.)"
-    university: "Global Institute of Technology"
+    name: "Bachelor of Engineering (B.E)"
+    university: "PES University"
     percentage: "82%"
     link: "/EPTemplates/riya/btech.html"
 
