@@ -131,82 +131,81 @@ Hero :
     - CV:
 
 testimonials:
-  - name: Danielle Lee
-    designation: Board Director
-    company: PMI Phoenix
-    image: /assets4/images/Danielle Image - Review.jpg
+  # ===== 40% FACULTY / TEACHERS (3 people) =====
+  - name: Prof. Meera Kulkarni
+    designation: Faculty Mentor
+    company: PES University
+    image: /images/eptemplate/img2.png
     message: >
-      A skilled and dependable developer with a strong sense of ownership. Their work on
-      our process automation workflows significantly improved operational efficiency and
-      reduced manual errors. Their structured approach, transparency throughout delivery,
-      and commitment to on-time execution stood out.
+      Riya Sharma has shown strong clarity in user psychology and interface structuring.
+      Her projects consistently demonstrated research-backed decisions and a refined design process.
+      She is disciplined, creative, and highly focused on delivering meaningful user experiences.
 
-  - name: Erika Barney
-    designation: Human Resources Director
-    company: Au Pair Weekend
-    image: /assets4/images/Erika Image - Review.jpg
+  - name: Dr. Sanjay Patil
+    designation: HOD, Department of Computer Applications
+    company: PES University
+    image: /images/eptemplate/images(1).jpeg
     message: >
-      They demonstrated remarkable technical depth and the ability to convert loose
-      requirements into a scalable, maintainable solution. Their contributions modernized
-      our internal systems and made data accessibility smoother for multiple departments.
-      A reliable and thoughtful technology partner.
+      Riya stood out for her ability to convert conceptual ideas into practical UI layouts.
+      Her presentation and documentation skills were exceptionally clear, and she maintained 
+      a user-first approach in every assignment. She is dependable, hardworking, and a quick learner.
 
-  - name: Chresente Gong
-    designation: Founder
-    company: EIS Education International
-    image: /assets4/images/Chresente Image - Review.jpg
+  - name: Prof. Nisha Rao
+    designation: UX Research Faculty
+    company: PES University, Bengaluru
+    image: /images/eptemplate/img3.png
     message: >
-      What impressed us most was their understanding of both technology and the business
-      implications behind every implementation. Their solutions helped us streamline
-      academic operations and make data-driven decisions faster than ever before.
+      Riya brings both creativity and analytical thinking to the table.
+      Her persona development, usability testing, and workflow mapping were always thorough.
+      She is a promising UI/UX professional who understands both design theory and application.
 
-  - name: Anson Antony
+  # ===== 40% PEERS / STUDENT CONTRIBUTORS (3 people) =====
+  - name: Kedar Varghese
+    designation: Fellow Designer
+    company: PES University
+    image: /images/eptemplate/img4.png
+    message: >
+      Working with Riya has always been inspiring. She brings fresh concepts,
+      clean layouts, and strong collaboration energy. Her understanding of visual balance
+      and typography makes her designs polished and easy to work with.
+
+  - name: Arjun Menon
+    designation: Junior Designer (Project Team)
+    company: PES University
+    image: /images/eptemplate/img5.png
+    message: >
+      Riya guided me through several college design sprints and always encouraged 
+      experimentation. She explains design logic clearly and ensures everyone in the team 
+      is aligned. Her leadership and patience make group work much easier.
+
+  - name: Shreya Desai
+    designation: Student Coordinator
+    company: PES University
+    image: /images/eptemplate/img6.png
+    message: >
+      Riya has been active in design clubs and student projects.
+      She contributed detailed UX case studies and helped streamline many group workflows.
+      She is supportive, friendly, and someone everyone enjoys working with.
+
+  # ===== 20% WORKING PROFESSIONALS (2 people) =====
+  - name: Rahul Shetty
+    designation: Product Design Lead
+    company: PixelCraft Studio, Bengaluru
+    image: /images/eptemplate/img7.png
+    message: >
+      Riya completed her internship under my supervision, and she quickly adapted to 
+      real-world design challenges. Her redesign of our onboarding flow improved user clarity
+      and reduced friction. She is responsible, detail-oriented, and highly dependable.
+
+  - name: Vivek Nair
     designation: Project Manager
-    company: University of Europe
-    image: /assets4/images/Anson Antony Image - Review.jpg
+    company: Creative Minds Digital, Kochi
+    image: /images/eptemplate/img8.png
     message: >
-      They delivered enterprise-quality work with meticulous attention to detail.
-      Code was clean, fully documented, and easy for the internal team to maintain.
-      Their proactive communication and willingness to adapt to project changes made
-      collaboration seamless.
+      Riya demonstrates excellent communication and professionalism.
+      She consistently delivered polished UI screens, aligned with requirements, and 
+      incorporated feedback effectively. Her dedication and design clarity made collaboration seamless.
 
-  - name: Joshua J.
-    designation: Chief Learning Officer
-    company: System Support Inc.
-    image: /assets4/images/Images Webp/Joshua.webp
-    message: >
-      Their contributions helped evolve our legacy system into a modern, scalable
-      architecture that performs faster and is easier to maintain. Their full-stack
-      expertise and ability to solve complex problems were key in transforming
-      the product's long-term technical roadmap.
-
-  - name: Kasie V.
-    designation: CEO
-    company: Sigma Forces
-    image: /assets4/images/Images Webp/Kaisie.webp
-    message: >
-      They converted complex business requirements into intuitive user interfaces and
-      high-performance backend systems. The project not only launched ahead of schedule
-      but exceeded customer expectations. Highly dependable and skilled.
-
-  - name: Aleena J.
-    designation: Enrollment Manager
-    company: State University of New York
-    image: /assets4/images/Images Webp/Aleena.webp
-    message: >
-      Their understanding of stakeholder needs and ability to design practical digital
-      solutions was excellent. They helped us streamline enrollment workflows and improve
-      the student onboarding experience in a measurable way.
-
-  - name: Sharon D.
-    designation: Academic Coordinator
-    company: University of Texas
-    image: /assets4/images/Images Webp/Sharon.webp
-    message: >
-      A professional with strong technical abilities and a collaborative working style.
-      Their work improved reporting accuracy, reduced processing time, and created tools
-      that significantly improved daily academic operations. Would highly recommend them
-      for future development work.
 
 ---
 
