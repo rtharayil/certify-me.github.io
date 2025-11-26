@@ -14,7 +14,7 @@
     right: -50%;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(108, 99, 255, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(235, 237, 250, 0.3) 0%, transparent 70%);
     animation: float 15s ease-in-out infinite;
     pointer-events: none;
 }
@@ -75,8 +75,8 @@
     box-shadow:
         0 10px 30px rgba(40, 43, 117, 0.08),
         0 4px 12px rgba(0,0,0,0.06),
-        0 0 0 1px rgba(108, 99, 255, 0.1);
-    border: 1px solid rgba(108, 99, 255, 0.15);
+        0 0 0 1px rgba(235, 237, 250, 0.3);
+    border: 1px solid rgba(235, 237, 250, 0.5);
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -89,7 +89,7 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #999cff 0%, #8d8bff 50%, #8d8bff 100%);
+    background: linear-gradient(90deg, #EBEDFA 0%, #EBEDFA 50%, #EBEDFA 100%);
     background-size: 200% 100%;
     animation: gradientShift 3s ease-in-out infinite;
 }
@@ -104,7 +104,7 @@
     box-shadow:
         0 20px 40px rgba(40, 43, 117, 0.12),
         0 10px 20px rgba(0,0,0,0.08);
-    border-color: rgba(108, 99, 255, 0.3);
+    border-color: rgba(235, 237, 250, 0.6);
 }
 
 .credential-content {
@@ -119,8 +119,8 @@
 }
 
 .credential-badge {
-    background: linear-gradient(135deg, #8d8bff 0%, #8d8bff 100%);
-    color: white;
+    background: linear-gradient(135deg, #EBEDFA 0%, #EBEDFA 100%);
+    color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,7 +164,7 @@
     width: 48px;
     height: 48px;
     margin: 0 auto 10px;
-    filter: brightness(0) invert(1);
+    filter: brightness(0) invert(0);
 }
 
 .credential-badge-text {
@@ -172,7 +172,8 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    opacity: 0.9;
+    opacity: 1;
+    color: #000000;
 }
 
 .credential-details {
@@ -250,7 +251,7 @@
 }
 
 .credential-status {
-    color: #38a169;
+    color: #000000;
 }
 
 .credential-date svg,
@@ -267,24 +268,24 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: linear-gradient(135deg, #8d8bff 0%, #8d8bff 100%);
-    color: white;
+    background: linear-gradient(135deg, #EBEDFA 0%, #EBEDFA 100%);
+    color: #000000;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 0.875rem;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(235, 237, 250, 0.4);
     border: none;
     cursor: pointer;
 }
 
 .view-credential-btn:hover {
-    background: linear-gradient(135deg, #2220a3 0%, #2220a3 100%);
+    background: linear-gradient(135deg, #d9dbf4 0%, #d9dbf4 100%);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(108, 99, 255, 0.3);
-    color: white;
+    box-shadow: 0 6px 20px rgba(235, 237, 250, 0.6);
+    color: #000000;
     text-decoration: none;
 }
 
@@ -313,19 +314,19 @@
 }
 
 .skill-tag {
-    background: rgba(108, 99, 255, 0.08);
+    background: rgba(235, 237, 250, 0.6);
     color: #4a5568;
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 0.75rem;
     font-weight: 500;
     transition: all 0.3s ease;
-    border: 1px solid rgba(108, 99, 255, 0.15);
+    border: 1px solid rgba(235, 237, 250, 0.7);
 }
 
 .skill-tag:hover {
-    background: rgba(108, 99, 255, 0.15);
-    color: #2220a3;
+    background: rgba(235, 237, 250, 0.8);
+    color: #d9dbf4;
     transform: translateY(-1px);
 }
 
@@ -392,7 +393,8 @@
     <!-- CREDENTIALS GRID -->
     <div class="credentials-container">
         <div class="credentials-grid">
-            <!-- Credential 1: Bachelor of Applied Science -->
+            <!-- CREDENTIAL CARDS GENERATED FROM PAGE DATA -->
+            {% for achievement in page.Achievements %}
             <div class="credential-card">
                 <div class="credential-content">
                     <div class="credential-badge">
@@ -406,25 +408,25 @@
                     <div class="credential-details">
                         <div class="credential-header">
                             <div class="credential-info">
-                                <h3 class="credential-title">Bachelor of Engineering (B.E.)</h3>
-                                <p class="credential-institution">Global Institution of Technologies</p>
+                                <h3 class="credential-title">{{ achievement.name }}</h3>
+                                <p class="credential-institution">{{ achievement.institution }}</p>
                                 <div class="credential-meta">
                                     <div class="credential-date">
                                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                                         </svg>
-                                        <span>12 August, 2025</span>
+                                        <span>{{ achievement.date }}</span>
                                     </div>
                                     <div class="credential-status">
                                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                         </svg>
-                                        <span>Verified</span>
+                                        <span>{{ achievement.status }}</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="credential-action">
-                                <a href="https://verify.apac.certifyme.org/verify/3602b53727834" class="view-credential-btn">
+                                <a href="{{ achievement.link }}" class="view-credential-btn">
                                     View Credential
                                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
@@ -435,199 +437,15 @@
                         <div class="credential-skills">
                             <h4 class="credential-skills-title">Skills & Competencies</h4>
                             <div class="skills-tags">
-                                <span class="skill-tag">Mathematics</span>
-                                <span class="skill-tag">Applied Physics</span>
-                                <span class="skill-tag">Problem Solving</span>
-                                <span class="skill-tag">Critical Thinking</span>
-                                <span class="skill-tag">Computer Programming</span>
-                                <span class="skill-tag">Simulation</span>
-                                <span class="skill-tag">Design Thinking</span>
-                                <span class="skill-tag">Product Development</span>
-                                <span class="skill-tag">Systems Integration</span>
-                                <span class="skill-tag">Project Management</span>
-                                <span class="skill-tag">Technical Communication</span>
-                                <span class="skill-tag">Research Methods</span>
-                                <span class="skill-tag">Team Collaboration</span>
-                                <span class="skill-tag">Leadership</span>
-                                <span class="skill-tag">Ethical and Sustainable Practices</span>
+                                {% for skill in achievement.skills %}
+                                <span class="skill-tag">{{ skill }}</span>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Credential 2: AI & Machine Learning -->
-            <div class="credential-card">
-                <div class="credential-content">
-                    <div class="credential-badge">
-                        <div class="credential-badge-content">
-                            <svg class="credential-badge-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
-                            </svg>
-                            <span class="credential-badge-text">Certificate</span>
-                        </div>
-                    </div>
-                    <div class="credential-details">
-                        <div class="credential-header">
-                            <div class="credential-info">
-                                <h3 class="credential-title">AI & Machine Learning Fundamentals Certificate</h3>
-                                <p class="credential-institution">Global Institution of Technologies</p>
-                                <div class="credential-meta">
-                                    <div class="credential-date">
-                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                        </svg>
-                                        <span>08 August, 2025</span>
-                                    </div>
-                                    <div class="credential-status">
-                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        <span>Verified</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="credential-action">
-                                <a href="https://verify.apac.certifyme.org/verify/a3589ab727837" class="view-credential-btn">
-                                    View Credential
-                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="credential-skills">
-                            <h4 class="credential-skills-title">Skills & Competencies</h4>
-                            <div class="skills-tags">
-                                <span class="skill-tag">Machine Learning</span>
-                                <span class="skill-tag">Artificial Intelligence</span>
-                                <span class="skill-tag">Neural Networks</span>
-                                <span class="skill-tag">Natural Language Processing</span>
-                                <span class="skill-tag">Python Programming</span>
-                                <span class="skill-tag">Data Preprocessing</span>
-                                <span class="skill-tag">Model Evaluation</span>
-                                <span class="skill-tag">Deep Learning</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Credential 3: Cloud Computing -->
-            <div class="credential-card">
-                <div class="credential-content">
-                    <div class="credential-badge">
-                        <div class="credential-badge-content">
-                            <svg class="credential-badge-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
-                            </svg>
-                            <span class="credential-badge-text">Certificate</span>
-                        </div>
-                    </div>
-                    <div class="credential-details">
-                        <div class="credential-header">
-                            <div class="credential-info">
-                                <h3 class="credential-title">Cloud Computing Professional Certificate</h3>
-                                <p class="credential-institution">Global Institution of Technologies</p>
-                                <div class="credential-meta">
-                                    <div class="credential-date">
-                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                        </svg>
-                                        <span>08 August, 2025</span>
-                                    </div>
-                                    <div class="credential-status">
-                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        <span>Verified</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="credential-action">
-                                <a href="https://verify.apac.certifyme.org/verify/cc46329627836" class="view-credential-btn">
-                                    View Credential
-                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="credential-skills">
-                            <h4 class="credential-skills-title">Skills & Competencies</h4>
-                            <div class="skills-tags">
-                                <span class="skill-tag">Cloud Architecture</span>
-                                <span class="skill-tag">Virtualization</span>
-                                <span class="skill-tag">Cloud Networking</span>
-                                <span class="skill-tag">Cloud Security</span>
-                                <span class="skill-tag">AWS</span>
-                                <span class="skill-tag">Microsoft Azure</span>
-                                <span class="skill-tag">Google Cloud Platform</span>
-                                <span class="skill-tag">DevOps</span>
-                                <span class="skill-tag">Containerization</span>
-                                <span class="skill-tag">Kubernetes</span>
-                                <span class="skill-tag">Infrastructure as Code</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Credential 4: Leadership Award -->
-            <div class="credential-card">
-                <div class="credential-content">
-                    <div class="credential-badge">
-                        <div class="credential-badge-content">
-                            <svg class="credential-badge-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
-                            </svg>
-                            <span class="credential-badge-text">Certificate</span>
-                        </div>
-                    </div>
-                    <div class="credential-details">
-                        <div class="credential-header">
-                            <div class="credential-info">
-                                <h3 class="credential-title">Global Leadership & Management Excellence Award</h3>
-                                <p class="credential-institution">Global Institution of Technologies</p>
-                                <div class="credential-meta">
-                                    <div class="credential-date">
-                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                        </svg>
-                                        <span>08 August, 2022</span>
-                                    </div>
-                                    <div class="credential-status">
-                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        <span>Verified</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="credential-action">
-                                <a href="https://verify.apac.certifyme.org/verify/a1ba166d26328" class="view-credential-btn">
-                                    View Credential
-                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="credential-skills">
-                            <h4 class="credential-skills-title">Skills & Competencies</h4>
-                            <div class="skills-tags">
-                                <span class="skill-tag">Leadership</span>
-                                <span class="skill-tag">Strategic Thinking</span>
-                                <span class="skill-tag">Conflict Resolution</span>
-                                <span class="skill-tag">Cross-Cultural Communication</span>
-                                <span class="skill-tag">Team Management</span>
-                                <span class="skill-tag">Organizational Development</span>
-                                <span class="skill-tag">Business Ethics</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>

@@ -7,48 +7,38 @@
                 <div class="hero-5-txt wow fadeInRight">
 
                     <!-- Title -->
-                     <h4 class="s-38 w-700">Hi, I am</h4>
+                    <h4 class="s-38 w-700">Hi, I am</h4>
                     <h2 class="s-58 w-700">Riya Sharma</h2>
-                                 <div class="education-box ">
-    <strong>Bachelor of Engineering (Computer Science)</strong> 
-</div>
-<br>
 
-                   
-                    <p class="color--grey" style="font-size: 1.0625rem;">I'm a UI/UX Developer based in Delhi, India. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
+                    <div class="education-box ">
+                        <strong>Bachelor of Engineering (Computer Science)</strong> 
+                    </div>
+                    <br>
 
-                    <!-- Button -->	
+                    <p class="color--grey" style="font-size: 1.0625rem;">
+                        I'm a UI/UX Developer based in Delhi, India. I strive to build immersive and beautiful web applications through carefully crafted code and user-centric design.
+                    </p>
+
+                    <!-- Buttons -->
                     <div class="d-flex flex-column flex-md-row gap-3 mb-4 justify-content-center justify-content-md-start align-items-center text-center text-md-start">
-                        <a href="/files/1.pdf" download="Riya-Sharma-CV.pdf" class="btn r-04 btn--theme hover--theme">Download CV</a>
-
-    <!-- GitHub Button -->
-    <a href="https://github.com/" target="_blank"
-       class="btn r-04"
-       style="background:#24292e; color:#fff; padding:10px 20px; display:flex; align-items:center; justify-content:center; gap:8px;">
-        <!-- GitHub Icon -->
-        <svg height="18" viewBox="0 0 16 16" width="18" fill="#fff" aria-hidden="true">
-            <path fill-rule="evenodd"
-            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29
-            6.53 5.47 7.59.4.07.55-.17.55-.38
-            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
-            -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87
-            2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
-            0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12
-            0 0 .67-.21 2.2.82A7.47 7.47 0 0 1 8 3.5c.68.003
-            1.36.092 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16
-            1.92.08 2.12.51.56.82 1.27.82 2.15
-            0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
-            0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013
-            8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-        </svg>
-
-        GitHub
-    </a>
-</div>
-
-                 
-                    <div class="d-flex gap-3">
                         
+                        <!-- Download CV -->
+                        <a href="/files/1.pdf" download="Riya-Sharma-CV.pdf" class="btn r-04 btn--theme hover--theme">
+                            Download CV
+                        </a>
+
+                        <!-- New Tell Me About Myself Button -->
+                        <button id="openVideoBtn"
+                                class="btn r-04 btn--theme hover--theme"
+                                style="background:#000000; color:#fff;"
+                                aria-haspopup="dialog" aria-controls="videoPopup">
+                            Watch Intro Video
+                        </button>
+                    </div>
+
+                    <!-- Small Info Boxes -->
+                    <div class="d-flex gap-3">
+
                         <!-- Box 1 -->
                         <div class="p-3 text-center rounded"
                              style="background:#ffffff; border:1px solid #e5e7eb; width:120px; box-shadow:0 3px 10px rgba(0,0,0,0.1);">
@@ -62,15 +52,16 @@
                             <h4 class="w-700 m-0" style="font-size:24px; color:#282B75;">9</h4>
                             <p class="m-0" style="font-size:14px; color:#444;">Endoresments</p>
                         </div>
+
+                        <!-- Box 3 -->
                         <div class="p-3 text-center rounded"
                              style="background:#ffffff; border:1px solid #e5e7eb; width:120px; box-shadow:0 3px 10px rgba(0,0,0,0.1);">
                             <h4 class="w-700 m-0" style="font-size:24px; color:#282B75;">4</h4>
                             <p class="m-0" style="font-size:14px; color:#444;">Achivements</p>
                         </div>
-
-                     
-
                     </div>
+
+                    <!-- Skills Pills -->
                     <div class="d-flex flex-wrap gap-2 mt-3">
                         <span style="background:#eef0ff; color:#282B75; padding:8px 16px; border-radius:30px; font-size:14px; border:1px solid #d6d8f5;">UI/UX Design</span>
                         <span style="background:#eef0ff; color:#282B75; padding:8px 16px; border-radius:30px; font-size:14px; border:1px solid #d6d8f5;">Figma</span>
@@ -78,8 +69,6 @@
                         <span style="background:#eef0ff; color:#282B75; padding:8px 16px; border-radius:30px; font-size:14px; border:1px solid #d6d8f5;">JavaScript</span>
                         <span style="background:#eef0ff; color:#282B75; padding:8px 16px; border-radius:30px; font-size:14px; border:1px solid #d6d8f5;">React</span>
                     </div>
-       
-                    <!-- END HIGHLIGHT BOXES -->
 
                 </div>
             </div>	
@@ -104,3 +93,353 @@
     </div>
 
 </section>
+
+<!-- VIDEO POPUP - COMPLETELY FIXED -->
+<div id="videoPopup"
+     role="dialog"
+     aria-modal="true"
+     aria-hidden="true"
+     aria-labelledby="videoPopupTitle"
+     style="position:fixed; 
+            top:0; 
+            left:0; 
+            width:100vw; 
+            height:100vh;
+            background:rgba(0,0,0,0.95); 
+            display:none; 
+            justify-content:center;
+            align-items:center; 
+            z-index:999999; 
+            padding:0; 
+            margin:0;
+            overflow:hidden;">
+
+    <h2 id="videoPopupTitle" style="position:absolute; left:-9999px;">About Riya Sharma Video</h2>
+
+    <!-- Close Button -->
+    <button id="closeVideoBtn"
+            type="button"
+            aria-label="Close video popup"
+            style="position:fixed; 
+                   top:30px; 
+                   right:30px;
+                   background:#ffffff; 
+                   border:none; 
+                   padding:0;
+                   font-size:24px; 
+                   font-weight:bold; 
+                   cursor:pointer; 
+                   border-radius:50%; 
+                   width:50px; 
+                   height:50px;
+                   z-index:9999999; 
+                   box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+                   transition: all 0.3s ease; 
+                   display:flex; 
+                   align-items:center; 
+                   justify-content:center;
+                   color:#333;
+                   line-height:1;
+                   outline:none;">
+        ✖
+    </button>
+
+    <!-- Video Container -->
+    <div id="videoContainer" 
+         style="max-width:90vw; 
+                width:1200px; 
+                max-height:90vh; 
+                display:flex; 
+                justify-content:center; 
+                align-items:center; 
+                z-index:9999998; 
+                position:relative;
+                pointer-events:none;">
+        
+        <!-- Video Element -->
+        <video id="aboutVideo"
+               src="/images/eptemplate/intro-web.mp4"
+               controls
+               preload="metadata"
+               playsinline
+               style="width:100%; 
+                      height:auto; 
+                      max-height:90vh; 
+                      border-radius:12px; 
+                      background:#000; 
+                      outline:none; 
+                      box-shadow:0 20px 60px rgba(0,0,0,0.8);
+                      pointer-events:auto;">
+            Your browser doesn't support HTML5 video. Please use a modern browser.
+        </video>
+    </div>
+</div>
+
+<!-- CSS STYLES FOR POPUP -->
+<style>
+/* Ensure popup is above everything */
+#videoPopup {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: none;
+}
+
+/* Close button hover effect */
+#closeVideoBtn:hover {
+    background: #ff4444 !important;
+    color: #ffffff !important;
+    transform: scale(1.15) rotate(90deg);
+}
+
+#closeVideoBtn:active {
+    transform: scale(0.95) rotate(90deg);
+}
+
+#closeVideoBtn:focus {
+    outline: 3px solid #fff;
+    outline-offset: 2px;
+}
+
+/* Prevent body scroll when popup is open */
+body.video-popup-open {
+    overflow: hidden !important;
+    position: fixed !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Hide scrollbar completely when popup is open */
+body.video-popup-open::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ensure video controls are accessible */
+#aboutVideo::-webkit-media-controls-panel {
+    z-index: 9999998;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #closeVideoBtn {
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    #videoContainer {
+        max-width: 95vw;
+        max-height: 85vh;
+    }
+}
+</style>
+
+<!-- JAVASCRIPT FOR POPUP - FULLY FIXED -->
+<script>
+(function () {
+    'use strict';
+    
+    let openBtn, videoPopup, aboutVideo, closeBtn, videoContainer;
+
+    // Close the video popup
+    function closeVideoPopup() {
+        if (!videoPopup || !aboutVideo) return;
+        
+        console.log('Closing video popup');
+        
+        // Hide popup
+        videoPopup.style.display = 'none';
+        videoPopup.setAttribute('aria-hidden', 'true');
+
+        // Re-enable body scrolling
+        document.body.classList.remove('video-popup-open');
+        document.documentElement.style.overflow = '';
+        document.body.style.overflow = '';
+
+        // Pause and reset video
+        try {
+            if (!aboutVideo.paused) {
+                aboutVideo.pause();
+            }
+            aboutVideo.currentTime = 0;
+        } catch (err) {
+            console.warn('Error stopping video:', err);
+        }
+
+        // Return focus to open button
+        if (openBtn) {
+            setTimeout(() => {
+                openBtn.focus();
+            }, 100);
+        }
+    }
+
+    // Open the video popup
+    function openVideoPopup() {
+        if (!videoPopup || !aboutVideo) return;
+        
+        console.log('Opening video popup');
+        
+        // Disable body scrolling
+        document.body.classList.add('video-popup-open');
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+        
+        // Show popup
+        videoPopup.style.display = 'flex';
+        videoPopup.setAttribute('aria-hidden', 'false');
+
+        // Try to play video
+        setTimeout(() => {
+            const playPromise = aboutVideo.play();
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    console.log('Video playing');
+                }).catch((err) => {
+                    console.info('Autoplay prevented:', err);
+                    aboutVideo.controls = true;
+                });
+            }
+        }, 100);
+        
+        // Focus on close button
+        setTimeout(() => {
+            if (closeBtn) {
+                closeBtn.focus();
+            }
+        }, 200);
+    }
+
+    // Initialize everything
+    function init() {
+        console.log('Initializing video popup');
+        
+        // Get elements
+        openBtn = document.getElementById('openVideoBtn');
+        videoPopup = document.getElementById('videoPopup');
+        aboutVideo = document.getElementById('aboutVideo');
+        closeBtn = document.getElementById('closeVideoBtn');
+        videoContainer = document.getElementById('videoContainer');
+
+        // Check if all elements exist
+        if (!openBtn) {
+            console.error('Open button not found');
+            return;
+        }
+        if (!videoPopup) {
+            console.error('Video popup not found');
+            return;
+        }
+        if (!aboutVideo) {
+            console.error('Video element not found');
+            return;
+        }
+        if (!closeBtn) {
+            console.error('Close button not found');
+            return;
+        }
+
+        console.log('All elements found');
+
+        // CLOSE BUTTON - Multiple event listeners for reliability
+        closeBtn.onclick = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            console.log('Close button clicked (onclick)');
+            closeVideoPopup();
+            return false;
+        };
+
+        closeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            console.log('Close button clicked (addEventListener)');
+            closeVideoPopup();
+        }, true);
+
+        closeBtn.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Close button touched');
+            closeVideoPopup();
+        }, true);
+
+        // OPEN BUTTON
+        openBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Open button clicked');
+            openVideoPopup();
+        });
+
+        // BACKDROP CLICK - Close when clicking outside video
+        videoPopup.addEventListener('click', function(e) {
+            console.log('Popup clicked, target:', e.target.id);
+            if (e.target === videoPopup) {
+                closeVideoPopup();
+            }
+        });
+
+        // Prevent video clicks from closing popup
+        if (videoContainer) {
+            videoContainer.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        }
+
+        aboutVideo.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+
+        // ESCAPE KEY
+        document.addEventListener('keydown', function(e) {
+            if ((e.key === 'Escape' || e.key === 'Esc') && 
+                videoPopup.style.display === 'flex') {
+                console.log('Escape key pressed');
+                closeVideoPopup();
+            }
+        });
+
+        // PAUSE VIDEO when page is hidden
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden && aboutVideo && !aboutVideo.paused) {
+                try {
+                    aboutVideo.pause();
+                } catch (e) {
+                    console.warn('Could not pause video:', e);
+                }
+            }
+        });
+
+        // PAUSE VIDEO when navigating away
+        window.addEventListener('pagehide', function() {
+            if (aboutVideo && !aboutVideo.paused) {
+                try {
+                    aboutVideo.pause();
+                } catch (e) {
+                    console.warn('Could not pause video:', e);
+                }
+            }
+        });
+
+        // Prevent video from ending and closing popup unexpectedly
+        aboutVideo.addEventListener('ended', function() {
+            console.log('Video ended');
+            // Don't auto-close, let user close manually
+        });
+
+        console.log('Video popup initialized successfully');
+    }
+
+    // Wait for DOM
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+
+    // Also try to init after a short delay as backup
+    setTimeout(init, 500);
+})();
+</script>

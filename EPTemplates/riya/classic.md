@@ -207,6 +207,76 @@ testimonials:
       incorporated feedback effectively. Her dedication and design clarity made collaboration seamless.
 
 
+Achievements:
+  - name: "Bachelor of Engineering (B.E)"
+    institution: "Global Institution of Technologies"
+    date: "12 August, 2025"
+    status: "Verified"
+    link: "https://verify.apac.certifyme.org/verify/3602b53727834"
+    skills:
+      - "Mathematics"
+      - "Applied Physics"
+      - "Problem Solving"
+      - "Critical Thinking"
+      - "Computer Programming"
+      - "Simulation"
+      - "Design Thinking"
+      - "Product Development"
+      - "Systems Integration"
+      - "Project Management"
+      - "Technical Communication"
+      - "Research Methods"
+      - "Team Collaboration"
+      - "Leadership"
+      - "Ethical and Sustainable Practices"
+
+  - name: "AI & Machine Learning Fundamentals Certificate"
+    institution: "Global Institution of Technologies"
+    date: "08 August, 2025"
+    status: "Verified"
+    link: "https://verify.apac.certifyme.org/verify/a3589ab727837"
+    skills:
+      - "Machine Learning"
+      - "Artificial Intelligence"
+      - "Neural Networks"
+      - "Natural Language Processing"
+      - "Python Programming"
+      - "Data Preprocessing"
+      - "Model Evaluation"
+      - "Deep Learning"
+
+  - name: "Cloud Computing Professional Certificate"
+    institution: "Global Institution of Technologies"
+    date: "08 August, 2025"
+    status: "Verified"
+    link: "https://verify.apac.certifyme.org/verify/cc46329627836"
+    skills:
+      - "Cloud Architecture"
+      - "Virtualization"
+      - "Cloud Networking"
+      - "Cloud Security"
+      - "AWS"
+      - "Microsoft Azure"
+      - "Google Cloud Platform"
+      - "DevOps"
+      - "Containerization"
+      - "Kubernetes"
+      - "Infrastructure as Code"
+
+  - name: "Global Leadership & Management Excellence Award"
+    institution: "Global Institution of Technologies"
+    date: "08 August, 2022"
+    status: "Verified"
+    link: "https://verify.apac.certifyme.org/verify/a1ba166d26328"
+    skills:
+      - "Leadership"
+      - "Strategic Thinking"
+      - "Conflict Resolution"
+      - "Cross-Cultural Communication"
+      - "Team Management"
+      - "Organizational Development"
+      - "Business Ethics"
+
 ---
 
 ## Achievements Section
