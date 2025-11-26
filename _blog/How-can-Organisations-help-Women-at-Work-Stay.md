@@ -305,6 +305,6 @@ A small shift in mindset can ripple out into long-term loyalty and stronger team
 
 If you're curious about how digital credentials can support these efforts, CertifyMe might be worth a look. It helps organizations issue secure, verifiable records that boost confidence in women's skills—especially during transitions, like returning to work or upskilling mid-career. It's simple to use and helps women showcase what they know, without extra red tape. 
 
-Plus, using digital credentials doesn’t just support your workforce—it strengthens your employer brand too. [Explore how they fit into your marketing strategy](https://www.certifyme.online/blog/Impose-Digital-Credential-into-your-Marketing-Strategy.html) and show the world that your organization values real, visible skills.
+Plus, using digital credentials doesn’t just support your workforce—it strengthens your employer brand too. Explore how they fit into your marketing strategy and show the world that your organization values real, visible skills.
 
 Want to see how it works? [Book a demo call](https://info.certifyme.online/request-demo) and explore how CertifyMe can fit into your strategy.
