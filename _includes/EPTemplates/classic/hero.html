@@ -32,12 +32,18 @@
                             Download CV
                         </a>
 
-                        <!-- Watch My Introduction Button -->
+                        <!-- My Intro Button - Same size as Download CV with BLUE BORDER -->
                         <button id="openVideoBtn" 
-                                class="btn r-04 btn--theme hover--theme" 
-                                style="background:#282B75; color:#fff; padding:10px 20px;"
-                                aria-haspopup="dialog" aria-controls="videoPopup">
-                            Watch My Introduction
+                                class="btn r-04 btn--theme hover--theme intro-video-btn"
+                                aria-haspopup="dialog" 
+                                aria-controls="videoPopup">
+                            <span class="btn-text">My Intro</span>
+                            <span class="play-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M10 8L16 12L10 16V8Z" fill="currentColor"/>
+                                </svg>
+                            </span>
                         </button>
                     </div>
 
@@ -180,8 +186,62 @@
     </div>
 </div>
 
-<!-- CSS STYLES FOR POPUP & MOBILE RESPONSIVENESS -->
+<!-- CSS STYLES FOR POPUP & MOBILE RESPONSIVENESS & BUTTON -->
 <style>
+/* My Intro Button - Same size as Download CV, WHITE background with BLUE BORDER */
+.intro-video-btn {
+    /* Keep white background with BLUE border */
+    background: #ffffff !important;
+    color: #282B75 !important;
+    border: 2px solid #282B75 !important;
+    
+    /* Match all other properties to Download CV button */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.intro-video-btn:hover {
+    background: #f0f1ff !important;
+    border-color: #282B75 !important;
+    color: #282B75 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(40, 43, 117, 0.2);
+}
+
+.intro-video-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.intro-video-btn:focus {
+    outline: 2px solid #282B75;
+    outline-offset: 2px;
+}
+
+.intro-video-btn .btn-text {
+    line-height: 1;
+}
+
+.intro-video-btn .play-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    color: #282B75;
+}
+
+.intro-video-btn:hover .play-icon {
+    color: #282B75;
+}
+
 /* Ensure popup is above everything */
 #videoPopup {
     -webkit-tap-highlight-color: transparent;
