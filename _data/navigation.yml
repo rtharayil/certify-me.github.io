@@ -4,45 +4,45 @@ Education:
     name: "Bachelor of Engineering (B.E)"
     university: "PES University"
     percentage: "82%"
-    link: "/EPTemplates/riya/btech.html"
+    link: "/EPTemplates/riya/btech"
 
   - year: 2019
     name: "Higher Secondary"
     school: "Global Senior Secondary School"
     percentage: "91%"
-    link: "/EPTemplates/riya/higher-secondary.html"
+    link: "/EPTemplates/riya/higher-secondary"
 
   - year: 2017
     name: "Secondary School"
     school: "Lab Assistant"
     percentage: "88%"
-    link: "/EPTemplates/riya/Secondary-School.html"
+    link: "/EPTemplates/riya/Secondary-School"
 
 Experience:
   - name: " Software Engineer"
     company: "TechCraft Solutions"
     description: "Backend API development and optimized system performance."
-    link: "/EPTemplates/riya/software-eng.html"
+    link: "/EPTemplates/riya/software-eng"
 
   - year: 2022
     name: "Lab Assistant"
     company: "Lab Assistant Experience"
     description: "CI/CD pipelines, and product automation."
-    link: "/EPTemplates/riya/lab-assistance.html"
+    link: "/EPTemplates/riya/lab-assistance"
 
 Projects:
   - name: "E-Commerce Analytics Dashboard"
-    link: "/EPTemplates/riya/ecommerce-analytics-dashboard.html"
+    link: "/EPTemplates/riya/ecommerce-analytics-dashboard"
   - name: "Healthcare Management System"
-    link: "/EPTemplates/riya/healthcare-management-system.html"
+    link: "/EPTemplates/riya/healthcare-management-system"
   - name: "Financial Trading Platform"
-    link: "/EPTemplates/riya/financial-trading-platform.html"
+    link: "/EPTemplates/riya/financial-trading-platform"
   - name: "Social Media Analytics Tool"
-    link: "/EPTemplates/riya/social-media-analytics-tool.html"
+    link: "/EPTemplates/riya/social-media-analytics-tool"
   - name: "Project Management Dashboard"
-    link: "/EPTemplates/riya/project-management-dashboard.html"
+    link: "/EPTemplates/riya/project-management-dashboard"
   - name: "Restaurant Operations Panel"
-    link: "/EPTemplates/riya/restaurant-operations-panel.html"
+    link: "/EPTemplates/riya/restaurant-operations-panel"
 
 Achievements:
   - name: "🏆 Awards & Recognition"
@@ -60,6 +60,6 @@ Achievements:
 
 Endorsements:
   - name: "Feedback"
-    link: "/restaurant-operations-panel.html"
+    link: "/EPTemplates/riya/classic.html#reflections-section"
   - name: "Reflections"
-    link: "/restaurant-operations-panel.html"
+    link: "/EPTemplates/riya/classic.html#reflections-section"
