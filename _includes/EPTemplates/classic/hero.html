@@ -10,6 +10,11 @@
                     <h4 class="s-38 w-700">Hi, I am</h4>
                     <h2 class="s-58 w-700">Riya Sharma</h2>
 
+                    <!-- IMAGE FOR MOBILE - Shows only on mobile after name -->
+                    <div class="hero-mobile-img d-md-none mb-4">	
+                        <img class="img-fluid" src="/images/eptemplate/Riya.png" alt="Riya Sharma" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">					
+                    </div>
+
                     <div class="education-box ">
                         <strong>Bachelor of Engineering (Computer Science)</strong> 
                     </div>
@@ -27,17 +32,17 @@
                             Download CV
                         </a>
 
-                        <!-- New Tell Me About Myself Button -->
-                        <button id="openVideoBtn"
-                                class="btn r-04 btn--theme hover--theme"
-                                style="background:#000000; color:#fff;"
+                        <!-- Watch My Introduction Button -->
+                        <button id="openVideoBtn" 
+                                class="btn r-04 btn--theme hover--theme" 
+                                style="background:#282B75; color:#fff; padding:10px 20px;"
                                 aria-haspopup="dialog" aria-controls="videoPopup">
-                            Watch Intro Video
+                            Watch My Introduction
                         </button>
                     </div>
 
                     <!-- Small Info Boxes -->
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-md-start">
 
                         <!-- Box 1 -->
                         <div class="p-3 text-center rounded"
@@ -50,19 +55,19 @@
                         <div class="p-3 text-center rounded"
                              style="background:#ffffff; border:1px solid #e5e7eb; width:120px; box-shadow:0 3px 10px rgba(0,0,0,0.1);">
                             <h4 class="w-700 m-0" style="font-size:24px; color:#282B75;">9</h4>
-                            <p class="m-0" style="font-size:14px; color:#444;">Endorsement</p>
+                            <p class="m-0" style="font-size:14px; color:#444;">Endoresments</p>
                         </div>
 
                         <!-- Box 3 -->
                         <div class="p-3 text-center rounded"
                              style="background:#ffffff; border:1px solid #e5e7eb; width:120px; box-shadow:0 3px 10px rgba(0,0,0,0.1);">
                             <h4 class="w-700 m-0" style="font-size:24px; color:#282B75;">4</h4>
-                            <p class="m-0" style="font-size:14px; color:#444;">Achievement</p>
+                            <p class="m-0" style="font-size:14px; color:#444;">Achivements</p>
                         </div>
                     </div>
 
                     <!-- Skills Pills -->
-                    <div class="d-flex flex-wrap gap-2 mt-3">
+                    <div class="d-flex flex-wrap gap-2 mt-3 justify-content-center justify-content-md-start">
                         <span style="background:#eef0ff; color:#282B75; padding:8px 16px; border-radius:30px; font-size:14px; border:1px solid #d6d8f5;">UI/UX Design</span>
                         <span style="background:#eef0ff; color:#282B75; padding:8px 16px; border-radius:30px; font-size:14px; border:1px solid #d6d8f5;">Figma</span>
                         <span style="background:#eef0ff; color:#282B75; padding:8px 16px; border-radius:30px; font-size:14px; border:1px solid #d6d8f5;">HTML/CSS</span>
@@ -75,10 +80,10 @@
             <!-- END HERO TEXT -->
 
 
-            <!-- HERO IMAGE -->
-            <div class="col-md-6">	
+            <!-- HERO IMAGE FOR DESKTOP - Shows only on desktop/tablet -->
+            <div class="col-md-6 d-none d-md-block">	
                 <div class="hero-5-img wow fadeInLeft">	
-                    <img class="img-fluid" src="/images/eptemplate/Riya.png" alt="hero-image">					
+                    <img class="img-fluid" src="/images/eptemplate/Riya.png" alt="Riya Sharma">					
                 </div>
             </div>	
 
@@ -114,7 +119,7 @@
             margin:0;
             overflow:hidden;">
 
-    <h2 id="videoPopupTitle" style="position:absolute; left:-9999px;">About Riya Sharma Video</h2>
+    <h2 id="videoPopupTitle" style="position:absolute; left:-9999px;">Introduction Video - Riya Sharma</h2>
 
     <!-- Close Button -->
     <button id="closeVideoBtn"
@@ -175,7 +180,7 @@
     </div>
 </div>
 
-<!-- CSS STYLES FOR POPUP -->
+<!-- CSS STYLES FOR POPUP & MOBILE RESPONSIVENESS -->
 <style>
 /* Ensure popup is above everything */
 #videoPopup {
@@ -217,8 +222,36 @@ body.video-popup-open::-webkit-scrollbar {
     z-index: 9999998;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+    /* Center align text on mobile */
+    .hero-5-txt {
+        text-align: center !important;
+    }
+    
+    .hero-5-txt h4,
+    .hero-5-txt h2 {
+        text-align: center;
+    }
+    
+    .hero-5-txt p {
+        text-align: center;
+    }
+    
+    /* Mobile image styling */
+    .hero-mobile-img {
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+        max-width: 350px;
+    }
+    
+    .hero-mobile-img img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Close button smaller on mobile */
     #closeVideoBtn {
         top: 15px;
         right: 15px;
@@ -230,6 +263,22 @@ body.video-popup-open::-webkit-scrollbar {
     #videoContainer {
         max-width: 95vw;
         max-height: 85vh;
+    }
+    
+    /* Adjust font sizes for mobile */
+    .s-38 {
+        font-size: 28px !important;
+    }
+    
+    .s-58 {
+        font-size: 38px !important;
+    }
+}
+
+/* Tablet and above - keep original layout */
+@media (min-width: 768px) {
+    .hero-mobile-img {
+        display: none !important;
     }
 }
 </style>

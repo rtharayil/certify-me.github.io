@@ -209,7 +209,7 @@ testimonials:
 
 Achievements:
   - name: "Bachelor of Engineering (B.E)"
-    institution: "Global Institution of Technologies"
+    institution: "PES University"
     date: "12 August, 2025"
     status: "Verified"
     link: "https://verify.apac.certifyme.org/verify/3602b53727834"
@@ -231,7 +231,7 @@ Achievements:
       - "Ethical and Sustainable Practices"
 
   - name: "AI & Machine Learning Fundamentals Certificate"
-    institution: "Global Institution of Technologies"
+    institution: "PES University"
     date: "08 August, 2025"
     status: "Verified"
     link: "https://verify.apac.certifyme.org/verify/a3589ab727837"
@@ -246,7 +246,7 @@ Achievements:
       - "Deep Learning"
 
   - name: "Cloud Computing Professional Certificate"
-    institution: "Global Institution of Technologies"
+    institution: "PES University"
     date: "08 August, 2025"
     status: "Verified"
     link: "https://verify.apac.certifyme.org/verify/cc46329627836"
@@ -264,7 +264,7 @@ Achievements:
       - "Infrastructure as Code"
 
   - name: "Global Leadership & Management Excellence Award"
-    institution: "Global Institution of Technologies"
+    institution: "PES University"
     date: "08 August, 2022"
     status: "Verified"
     link: "https://verify.apac.certifyme.org/verify/a1ba166d26328"
