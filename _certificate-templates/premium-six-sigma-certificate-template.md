@@ -62,4 +62,5 @@ The layout includes space for the participant’s name, certification level, pro
 1. **Formal recognition:** Provides learners with professional proof of achievement and competency.
 
 1. **Accepted across industries:** Trusted by employers and training partners worldwide. 
-Smooth administration: Helps maintain, track, and audit certification records easily.
+
+1. **Smooth administration:** Helps maintain, track, and audit certification records easily.
