@@ -170,7 +170,7 @@ These micro-interactions add up. The data? CertifyMe provides credential analyti
 
 Even better? These shares don’t expire. A student might reshare their credential during graduation, again when applying for jobs, and once more on a job anniversary. Every share is a chance for new eyes to see your school.
 
-Unlike traditional marketing campaigns that fade out when the budget dries up, digital credentials keep working—quietly, steadily, organically.
+Unlike traditional [marketing campaigns](https://www.design-hero.com/business-tips/digital-marketing-budget/) that fade out when the budget dries up, digital credentials keep working—quietly, steadily, organically.
 
 The ripple doesn’t just reach students. It reaches:
 
