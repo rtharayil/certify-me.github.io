@@ -15,12 +15,6 @@ SEOtags : "W3C Verifiable Credentials, Digital Credentials, Blockchain Certifica
 seo_keywords : "W3C Verifiable Credentials, Digital Credentials, Blockchain Certificates, CertifyMe, Credential Verification, Decentralized Identity, DID, Web3 Identity, Open Badges 3.0, Digital Trust"
 ---
 
-
-
-
-
-
-
 ## What Are W3C Verifiable Credentials?
 
 The **World Wide Web Consortium (W3C)** — the same organization that defines core web standards like HTML — introduced the **Verifiable Credentials Data Model** to enable digital credentials that are **secure, tamper-proof, and universally verifiable**.
@@ -35,7 +29,7 @@ A **Verifiable Credential** is a digital statement made by an **issuer** about a
 
 Each VC is digitally signed using cryptographic keys, ensuring that the credential cannot be forged or altered without detection.
 
-
+<br>
 
 ## How Verifiable Credentials Work
 
