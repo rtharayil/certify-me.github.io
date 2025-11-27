@@ -4,11 +4,11 @@ sitemap: false
 
 employment_type: "Full-Time"
 job_title: "Lab Assistant"
-company_name: "Global Institute of Management Sciences"
+company_name: "PES University"
 location: "Bangalore, India"
 location_type: "On-Site"
-start_date: 2020
-end_date: 2022
+start_date: 2023
+end_date: 2025
 
 profile: >
   Worked as a Lab Assistant responsible for assisting science faculty, managing laboratory equipment,

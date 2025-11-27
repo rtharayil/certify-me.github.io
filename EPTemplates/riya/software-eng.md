@@ -2,13 +2,13 @@
 layout: EPTemplates/Experince
 sitemap: false
 
-job_title: "Software Engineer"
+job_title: "UI/UX Developer"
 employment_type: "Full-Time"
 company_name: "TechCraft Solutions"
 location: "Bangalore, India"
 location_type: "On-Site"
 
-start_date: 2022
+start_date: 2025
 end_date: Present
 
 profile: >
@@ -17,7 +17,7 @@ profile: >
   clean coding principles.
 
 job_description: >
-  Involved in frontend and backend development, feature enhancement, sprint-based
+  Involved in frontend development, feature enhancement, sprint-based
   delivery, production debugging, and collaborating with cross-functional teams to
   deliver reliable software solutions.
 

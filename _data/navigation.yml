@@ -19,14 +19,14 @@ Education:
     link: "/EPTemplates/riya/Secondary-School"
 
 Experience:
-  - name: " Software Engineer"
+  - name: " UI/UX Developer"
     company: "TechCraft Solutions"
     description: "Backend API development and optimized system performance."
     link: "/EPTemplates/riya/software-eng"
 
   - year: 2022
     name: "Lab Assistant"
-    company: "Lab Assistant Experience"
+    company: "PES University"
     description: "CI/CD pipelines, and product automation."
     link: "/EPTemplates/riya/lab-assistance"
 

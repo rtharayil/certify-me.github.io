@@ -10,7 +10,7 @@ degree_name: "Bachelor of Engineering (B.E)"
 institution: "PES University"
 location: "Bangalore, India"
 start_year: 2018
-end_year: 2022
+end_year: 2023
 
 semester_details:
   - semester:  semester 1

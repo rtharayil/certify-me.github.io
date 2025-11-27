@@ -23,14 +23,14 @@ Education:
 
 
 Experience:
-  - year: 2024
-    name: "Software Engineer"
+  - year: 2025
+    name: "UI/UX Developer"
     company: "TechCraft Solutions"
-    description: "Involved in frontend and backend development, feature enhancement, sprint-baseddelivery, production debugging, and collaborating with cross-functional teams to deliver reliable software solutions."
+    description: "Involved in frontend a development, feature enhancement, sprint-baseddelivery, production debugging, and collaborating with cross-functional teams to deliver reliable software solutions."
 
-  - year: 2022
+  - year: 2023
     name: "Lab Assistant Experience"
-    company: "Global Insitute of Management Sciences"
+    company: "PES University"
     description: "Worked as a Lab Assistant responsible for assisting science faculty, managing laboratory equipment, maintaining safety standards, and providing hands-on support for student lab sessions and experiments."
 
 # Example Portfolio Data Structure
@@ -263,7 +263,7 @@ Achievements:
       - "Kubernetes"
       - "Infrastructure as Code"
 
-  - name: "Global Leadership & Management Excellence Award"
+  - name: "Leadership & Management Excellence Award"
     institution: "PES University"
     date: "08 August, 2022"
     status: "Verified"
