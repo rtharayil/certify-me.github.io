@@ -253,7 +253,7 @@ You’ve issued a credential. Here’s how to amplify its impact:
 
 Remember: A badge not shared is a badge not seen. The true value of digital credentials emerges when they’re in circulation.
 
-And if you're wondering where to start, here's a practical read on [how to embed digital credentials into your marketing strategy.](https://www.certifyme.online/blog/Impose-Digital-Credential-into-your-Marketing-Strategy.html) Celebrate every student. Build every share into a story.
+And if you're wondering where to start, here's a practical read on how to embed digital credentials into your marketing strategy. Celebrate every student. Build every share into a story.
 
 <br>
 
