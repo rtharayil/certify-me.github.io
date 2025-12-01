@@ -21,7 +21,6 @@ This blog is your one-stop solution for all your questions about digital certifi
 
 ## What Is a Digital Certificate? 
 
-
 ### Understanding Digital Certificates
 
 A digital certificate, also known as a public key certificate, is a digital document used to verify the ownership of a public key. This document is issued by a trusted entity known as a Certificate Authority (CA) and contains essential details like the key owner’s identity, the public key itself, and the CA’s digital signature.
@@ -49,6 +48,7 @@ Here are the key elements of a digital certificate that ensure its authenticity:
 </ol>
 
 <br>
+
 <img class="img-fluid r-16" src="/img/blog/elements-of-a-digital-certificate.png" alt="Visual representation of digital certificate elements, including issuer, subject, validity dates, and signature" style="display: block; margin: 0 auto;">
 <br>
 These elements work together to ensure the certificate’s reliability and trustworthiness, enabling secure online interactions. For a more comprehensive understanding of digital certificates and their functions.
@@ -235,6 +235,7 @@ As your business grows, so do your security needs. Digital certificates scale ef
 
 
 ### Reduce Hardware and Infrastructure Costs 
+
 Implementing digital certificates can lead to significant cost savings. By reducing the need for extensive physical security measures and hardware, organizations can lower their infrastructure costs while still maintaining robust data protection.
 
 
