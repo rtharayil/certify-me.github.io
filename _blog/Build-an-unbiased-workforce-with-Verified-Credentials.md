@@ -64,7 +64,7 @@ They are issued using blockchain or similar secure technologies to make sure the
 
 Why does this matter?
 
-Because traditional resumes are full of fluff. And hiring teams are overwhelmed. They don’t have the time to verify every claim. Verified credentials do that work for them. They build trust. They reduce guesswork.
+Because traditional resumes are full of fluff. And hiring teams are overwhelmed. They don’t have the time to verify every claim. W3C verifiable credentials do that work for them. They build trust. They reduce guesswork.
 
 Plus, for students who may not have fancy internships or elite schools on their resumes, these credentials offer a way to stand out. They prove learning, growth, and readiness. They put the focus back on what you know and what you can do, instead of what your background says about you.
 
