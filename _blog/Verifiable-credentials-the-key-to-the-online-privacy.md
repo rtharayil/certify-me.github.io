@@ -77,7 +77,7 @@ That’s not just frustrating. It’s risky.
 
 ## How Verifiable Credentials Help Protect Your Privacy
 
-This is where verifiable credentials change the game—quietly, securely, and without asking you to become a cybersecurity expert.
+This is where [W3C verifiable credentials](https://www.certifyme.online/blog/Understanding-W3C-Verifiable-Credentials.html) change the game—quietly, securely, and without asking you to become a cybersecurity expert.
 
 Instead of flooding systems with personal info, verifiable credentials let you show only what’s necessary. Nothing more, nothing less.
 
