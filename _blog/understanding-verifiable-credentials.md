@@ -36,7 +36,7 @@ Understanding the Verifiable Credentials Model<br>
 The model of verifiable credentials operates through three key roles:
 
 1. <b>The Issuer</b><br>
-<a href="https://resources.certifyme.online/what-are-verifiable-credentials/">Verifiable credentials</a> offer a cryptographically secure way to establish the identity of an entity through verifiable attributes. Issuers are responsible for generating each verifiable credential, maintaining records about the individuals to whom the credentials are issued.
+<a href="https://resources.certifyme.online/what-are-verifiable-credentials/">W3C Verifiable credentials</a> offer a cryptographically secure way to establish the identity of an entity through verifiable attributes. Issuers are responsible for generating each verifiable credential, maintaining records about the individuals to whom the credentials are issued.
 
 1. <b>The Holder</b><br>
 The individuals or entities possessing verifiable credentials are referred to as holders. They have complete control over their credentials, safely displaying, sharing, or storing them without fear of tampering or unauthorized access.
