@@ -22,7 +22,6 @@ Ready to elevate your digital credentials? Let’s get started and make your bad
 
 ## Introduction to Digital Badges
 
-
 ### What Are Digital Badges?
 
 Digital badges are virtual representations of achievements, skills, or credentials earned through various activities or learning experiences. They are designed to showcase accomplishments in a visually appealing way and are often used in educational, professional, and organizational contexts.
@@ -30,7 +29,6 @@ Digital badges are virtual representations of achievements, skills, or credentia
 Each badge includes key information such as the badge issuer, the criteria for earning it, and the date it was awarded. This makes them a great tool for verifying skills and accomplishments online, providing a tangible representation of one's capabilities.
 
 For a more comprehensive overview of digital badges, including their functions and benefits, [click here](https://certifyme.online/blog/digital-badges-explained.html).
-
 
 ### Why Use Canva for Creating Digital Badges?
 
@@ -70,11 +68,9 @@ For a more detailed visual walkthrough of this process, [click here](https://www
 
 Ready to get acquainted with Canva’s design tools? Let’s explore the essential features of Canva’s badge design interface to ensure a seamless and efficient design experience.
 
-
 ### 1. Design Workspace
 
 Once you select a template, you’ll land in Canva’s design workspace. This is where you’ll see your badge and make changes.
-
 
 ### 2. Tools Menu
 
@@ -109,14 +105,11 @@ For a more detailed visual walkthrough of Canva's design interface, [watch this 
 
 ## Designing Your Digital Badge: A Step-by-Step Guide
 
-
 ### Choosing the Perfect Template
 
 Selecting the right template is crucial as it sets the tone for your badge. Canva offers a wide range of templates, making it easy to find one that aligns with your needs. Narrowing your search by purpose, color, and shape can lead to more precise results, ensuring your badge looks professional and polished.
 
-
-Key Steps:
-
+**Key Steps:**
 
 1. <b>Search for Specific Purposes:</b> Use keywords like "Employee of the Month Badge" or "Volunteer Appreciation Badge" to find templates tailored to your needs.
 
@@ -124,14 +117,11 @@ Key Steps:
 
 1. <b>Consider Style and Layout:</b> Look for templates with a layout that can accommodate all necessary elements, such as logos or text.
 
-
 ### Customizing Your Badge Design
 
 Customization is where your badge truly comes to life. Canva's tools allow you to modify text, adjust fonts, and tweak colors to perfectly match your brand or personal style. The transparency feature is particularly useful for adding depth and layering to your design, making certain elements stand out or blend smoothly into the background.
 
-
-Key Steps:
-
+**Key Steps:**
 
 1. <b>Edit Text Content:</b> Replace placeholder text with specific titles or names relevant to your purpose, on the badge .
 
@@ -139,14 +129,11 @@ Key Steps:
 
 1. <b>Use Transparency:</b> Apply transparency effects to create depth, especially for text overlays or background images, enhancing the overall design.
 
-
 ### Adding Unique Elements to Your Badge
 
 Adding distinctive elements can make your badge memorable and unique. Canva's "Elements" section provides access to a plethora of shapes, icons, and illustrations. For a truly custom touch, use Canva's AI image generation feature to create original graphics. If you're a premium user, the "Remove Background" tool is invaluable for cleanly integrating images into your design.
 
-
-Key Steps:
-
+**Key Steps:**
 
 1. <b>Incorporate Icons and Shapes:</b> Add thematic icons or shapes from the “Elements” tab that align with the badge’s message or purpose — use [thematic analysis](https://www.zonkafeedback.com/guides/thematic-analysis) to ensure consistency and relevance across design elements.
 
@@ -160,26 +147,21 @@ By following these steps, you’ll create a digital badge that not only stands o
 
 ## How to Link Canva Designs with CertifyMe
 
-
 ### 1. Create and Export Your Badge Design
 
 Start by designing your badge in Canva. Once satisfied, export the design in a high-quality format like PNG or JPEG. Ensure your design meets the specifications needed for digital verification.
-
 
 ### 2. Log in to CertifyMe
 
 Access your CertifyMe account or sign up if you haven't already. Navigate to the “Design Template” on the left navigation bar and then edit your digital badge template.
 
-
 ### 3. Upload Your Badge Design
 
 Upload your Canva badge design to CertifyMe in the “Edit your Credential Template Image” section under the Credential Template editor. Once the Badge Design is displayed as you want it, save the design for the template.
 
-
 ### 4. Set Verification Details
 
 Define the details for verification such as the badge metadata, the issuer information and the validity period in the “Click to Update your Program Details” section. This step ensures your badges are both credible and secure.
-
 
 ### 5. Issue and Share Your Verified Badge
 
@@ -193,16 +175,13 @@ Once all details are set, issue the badge. You can then share it directly with r
 
 ## Benefits of CertifyMe 
 
-
 ### Enhanced Credibility 
 
 CertifyMe's verification process adds a layer of trust, assuring recipients and viewers that the badge is authentic and awarded based on merit.
 
-
 ### Increased Security
 
 Digital verification prevents unauthorized use or duplication of your badges, protecting the integrity of your credentials.
-
 
 ### Ease of Sharing
 
@@ -210,11 +189,9 @@ Verified badges can be easily shared across various platforms, from LinkedIn pro
 
 Want to build a powerful brand presence? Learn more about [using digital badges on LinkedIn to boost employer branding.](https://www.certifyme.online/blog/linkedin-badges-for-companies.html)
 
-
 ### Comprehensive Analytics
 
 CertifyMe provides analytics on badge distribution and engagement, offering insights into how your badges are being used and recognized.
-
 
 ### Customization Options
 
