@@ -21,8 +21,8 @@ In this guide, we’ll walk you through every step of the process so you can eas
 
 ## Understanding Transcripts
 
-
 ### What is a Transcript?
+
 In short, your transcript is a detailed record of your academic journey, capturing every course you’ve completed, the grades earned, and often additional key details like your overall GPA, academic honors, and, in some cases, extracurricular involvement. 
 
 This document not only reflects your academic progress but also serves as a verification of your educational credentials. Transcripts offer a window into your intellectual commitment and skills, illustrating for future schools or employers the breadth of your knowledge, your academic strengths, and your consistency over time.
@@ -32,6 +32,7 @@ This record can be critical in a variety of situations, from college application
 <br>
 
 ### Official vs. Unofficial Transcripts
+
 You’ll hear these terms a lot, so it’s worth knowing the difference. 
 
 1. **Official transcripts** are certified documents sent directly by your school to the requested institution or individual. These are usually sealed to ensure authenticity. 
@@ -53,7 +54,6 @@ This level of detail makes the transcript a critical document for applications a
 <br>
 
 ## Why You Might Need Your Transcript
-
 
 ### Reasons for Requesting a Transcript
 
@@ -85,7 +85,6 @@ Unofficial transcripts provide the same detailed overview of your academic recor
 
 ## Where to Get Your Transcript
 
-
 ### Institutions and Sources for Transcripts
 
 Most institutions provide several ways to request your transcripts, making it easier to access your academic records. You can request them directly from the high school or college where you completed your education or through the university’s registrar office, which typically handles transcript requests. 
@@ -104,7 +103,6 @@ You can contact the state education office where your school was located, or sea
 <br>
 
 ## How to Request Your Transcript
-
 
 ### Step-by-Step Guide for Requesting Transcripts
 
@@ -133,7 +131,6 @@ Schools maintain records for many years, but it’s a good idea to check with yo
 
 ## Documents and Information Required for a Transcript Request
 
-
 ### Required Documents and Forms
 
 When requesting a transcript, be prepared with:
@@ -153,18 +150,20 @@ Transcript requests often come with a fee, which can range from $5 to $25 per do
 
 ## Processing Times and Delivery Options
 
-
 ### How Long Does it Take to Receive Your Transcript?
+
 Processing times vary widely. Some institutions offer **same-day digital delivery**, while others may take a few days to a few weeks, especially if you’re requesting a hard copy. Be sure to check with your institution for an estimated timeline, especially if you’re working with a deadline.
 
 <br>
 
 ### Expedited Options for Quick Delivery
+
 If you need your transcript quickly, many schools offer expedited services for an additional fee. This can include priority shipping or faster processing times for digital transcripts.
 
 <br>
 
 ### How to Send Official Transcripts to Universities
+
 When applying to universities or jobs, you’ll often need to send your transcript directly from the institution. When requesting your transcript, specify the recipient's contact information, including the email or physical address where it should be sent. Many institutions allow you to send transcripts directly through online portals.
 
 To do this using [**EduTranscript**](https://www.edutranscript.com/), just log in to the platform, submit a request, and specify the institution you want to send your transcript to. Include the contact details of the recipient, whether it’s an admissions guide, administrative office, or university dean, along with the document’s submission deadline.  
@@ -174,7 +173,6 @@ Once your request is submitted, the admin from your school or college takes over
 <br>
 
 ## Potential Issues and Solutions
-
 
 ### Can a College Withhold Your Transcript?
 
