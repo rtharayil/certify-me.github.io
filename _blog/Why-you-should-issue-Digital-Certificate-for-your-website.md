@@ -12,7 +12,6 @@ imageLink: /img/blog/credential/58.png
 featured: true
 ---
 
-
 ## What are Digital SSL Certificates?
 
 SSL (Secure Sockets Layer), often known as TLS, is a technology for encrypting Web traffic and authenticating the identity of servers. An SSL certificate authenticates a website's identity and establishes a secure connection.
