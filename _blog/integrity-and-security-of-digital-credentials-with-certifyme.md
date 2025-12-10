@@ -37,7 +37,9 @@ Every credential includes a unique verification link. Third parties can use this
 
 ### Secure Issuance Processes
 
-CertifyMe uses secure protocols during the credential issuance process to prevent unauthorized access and ensure only authorized personnel can issue credentials
+CertifyMe uses secure protocols during the credential issuance process to prevent unauthorized access and ensure only authorized personnel can issue credentials.
+
+Coupling those security measures with [application performance monitoring](https://middleware.io/product/apm/) ensures not only that credentials are issued securely, but also that the system performs reliably, with minimal latency or downtime — protecting user experience even under peak load.
 
 <br>
 
