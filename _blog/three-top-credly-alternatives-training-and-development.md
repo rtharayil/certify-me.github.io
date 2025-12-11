@@ -140,7 +140,7 @@ Still, if your university runs Canvas and you're looking for seamless integratio
 
 Last on the list—but by no means least—is Accredible.
 
-This one’s known for beautiful, professional certificates and bulletproof verification systems. It’s used by certifying bodies, universities, and major online course providers.
+This one’s known for beautiful, professional certificates and bulletproof verification systems. It’s used by certifying bodies, universities, and [major online course providers.](https://whop.com/blog/best-online-course-platforms/)
 
 **What Makes It Stand Out:**
 
