@@ -10,27 +10,38 @@
                     <p class="p-lg">{{ page.description }}</p>
                 </div>
 
-                <!-- QUESTIONS ACCORDION -->
-                <div class="accordion-wrapper">
-
+                {% if article.imageLink != '0' %}
+                <!-- GLOSSARY LISTING SECTION -->
+                <div class="accordion-wrapper mt-60">
                     <ul class="accordion">
 
-                        {% for block in page.faqs %}
-                        <div class="mb-5">
-                            <h4 class="s-28 w-700 mb-4">{{ block.title }}</h4>
+                        {% assign grouped = site.glossary | group_by: "category" %}
 
-                            {% for q in block.questions %}
-                            <h5 class="s-18  mb-2">
-                                <span>{{ forloop.index }}.</span> {{ q }}
+                        {% for group in grouped %}
+                        <div class="mb-5">
+
+                            <!-- CATEGORY TITLE (printed once!) -->
+                            <h4 class="s-28 w-700 mb-4">{{ group.name }}</h4>
+
+                            {% assign counter = 1 %}
+
+                            {% for article in group.items %}
+                            <h5 class="s-18 mb-2">
+                                <span>{{ counter }}.</span>
+                                <a href="{{ article.url }}" style="color: rgb(0, 0, 192); text-decoration: underline;">
+                                    {{ article.title }}
+                                </a>
                             </h5>
+                            {% assign counter = counter | plus: 1 %}
                             {% endfor %}
+
                         </div>
                         {% endfor %}
 
                     </ul>
-
-                </div> 
-                <!-- END QUESTIONS ACCORDION -->
+                </div>
+                <!-- END GLOSSARY LISTING -->
+                {% endif %}
 
                 <!-- MORE QUESTIONS LINK -->
                 <div class="more-questions">

@@ -1,0 +1,61 @@
+<section>
+    <div class="hero-overlay">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <p class="p-sm  align-items-left"> <a href="/">Home</a> &nbsp > &nbsp <a href="/glossary">Glossary</a>
+                    &nbsp > &nbsp
+                    {{page.stitle}}</p>
+
+                <!-- HERO TEXT -->
+                <div class="col-md-6" style="padding-left: 10px;">
+                    <div class="hero-7-txt">
+
+                        <!-- Title -->
+                        <h1 style="padding-bottom: 30px; font-size: 2.3em ">{{ page.title }}</h1>
+
+                        <p class="p-lg small" style="font-size: .97em ; color: black">{{ page.description }}
+                        </p>
+
+
+                        <div class="fw-lighter lh-1 row">
+
+                            <!-- Text -->
+                            <div class="col-md-12">
+
+                                <p class="p-sm mb-0" style="font-size: .75em "> <img src="/assets4/images/aneesha.jpeg"
+                                        alt="Avatar" style="width:25px ;   border-radius: 50%;">
+                                    <span class="flaticon-linkdin"></span> &nbsp Author : <span
+                                        class="fw-normal">Aneesha Kurian</span>
+
+                                </p>
+                            </div>
+                            <hr class="mb-2 mt-2 pt-0 pb-0">
+                            <div class="col-md-12 row">
+                                <div class="col-6 ">
+                                    <p class="p-sm " style="font-size: .75em ">
+                                        <span>Updated : {{ page.date | date: "%-d %B %Y" }} </span>
+                                    </p>
+                                </div>
+                                <div class="col-6 align-items-right ">
+                                    <p class="p-sm " style="font-size: .75em "> <span>{{ page.content |
+                                            number_of_words | divided_by: 200 | plus: 1 }} min read </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> <!-- END HERO TEXT -->
+
+
+                <!-- HERO IMAGE -->
+                <div class="col-md-6">
+                    <div class=" text-center" style="padding-bottom: 20px;">
+                        <img src="{{ page.imageLink }}" class="img-fluid r-16" alt="{{ page.title }}">
+                    </div>
+                </div>
+
+            </div> <!-- End row -->
+        </div> <!-- End container -->
+    </div> <!-- End hero-overlay -->
+</section>

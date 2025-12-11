@@ -1,0 +1,50 @@
+<!-- SINGLE POST -->
+<style>
+    .blogcontent h1 {
+        word-spacing: 10px;
+    }
+
+    .blogcontent p {
+        color: black;
+    }
+
+    .blogcontent li {
+        color: black;
+    }
+
+    .blogcontent h2 {
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .blogcontent img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    .blogcontent h3 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+</style>
+
+<section id="single-post" class="pb-90 inner-page-hero blog-page-section mb-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            
+            <!-- TOP SECTION -->
+            {% include V4NewLook/glossary/single-post/top-section.html %}
+
+            <!-- LEFT SECTION -->
+            {% include V4NewLook/glossary/single-post/left-section.html %}
+
+            <!-- RIGHT SECTION -->
+            {% include V4NewLook/glossary/single-post/right-section.html  %}
+
+        </div>
+    </div>    
+</section>
+
+{% include V4NewLook/blogs/banners.html %}

@@ -1,4 +1,4 @@
-<!-- SINGLE POST ============================================= -->
+<!-- SINGLE BLOG POST  -->
 <style>
     .blogcontent h1 {
         word-spacing: 10px;
@@ -33,23 +33,24 @@
 <section id="single-post" class="pb-90 inner-page-hero blog-page-section mb-5">
     <div class="container">
         <div class="row justify-content-center">
-
+           <!-- TOP SECTION -->
             <section>
                 <div class="hero-overlay">
                     <div class="container">
                         <div class="row d-flex align-items-center">
+                            
                             <p class="p-sm  align-items-left"> <a href="/">Home</a> &nbsp > &nbsp <a
                                     href="/blog">blog</a> &nbsp > &nbsp
-                                {{page.stitle}}</p>
+                                {{ page.stitle }}</p>
 
                             <!-- HERO TEXT -->
                             <div class="col-md-6" style="padding-left: 10px;">
                                 <div class="hero-7-txt">
 
                                     <!-- Title -->
-                                    <h1 style="padding-bottom: 30px; font-size: 2.3em ">{{page.title}}</h1>
+                                    <h1 style="padding-bottom: 30px; font-size: 2.3em ">{{ page.title }}</h1>
 
-                                    <p class="p-lg small" style="font-size: .97em ; color: black">{{page.description}}
+                                    <p class="p-lg small" style="font-size: .97em ; color: black">{{ page.description }}
                                     </p>
 
 
@@ -82,8 +83,8 @@
                                     </div>
 
                                 </div>
-                            </div> <!-- END HERO TEXT -->
-
+                            </div> 
+                            <!-- END HERO TEXT -->
 
                             <!-- HERO IMAGE -->
                             <div class="col-md-6">
@@ -92,147 +93,44 @@
                                 </div>
                             </div>
 
+                        </div>
+                    </div> 
+                </div> 
+            </section>
 
-
-
-
-
-
-
-                        </div> <!-- End row -->
-                    </div> <!-- End container -->
-                </div> <!-- End hero-overlay -->
-            </section> <!-- END HERO-7 -->
-
-            <!-- SINGLE POST CONTENT -->
-            <div class="col-xl-3  ">
+            <!-- LEFT SECTION -->
+            <div class="col-xl-3">
 
                 <div>
-
                     {% include V4NewLook/blogs/_toc.html content=page.content skip_toc=1%}
                 </div>
-
-
 
                 <div>
                     {% include V4NewLook/blogs/_singleBlogPostV2ads.html %}
                 </div>
 
-
-
-
-
-
-
-
-
-
-
-
             </div>
 
+            <!-- RIGHT SECTION -->
             <div class="col-xl-9 mt-35">
                 <div class="post-content">
 
-                    <!--  SINGLE POST TITLE -->
                     {% if page.abstract %}
                     <div class="single-post-title text-left">
 
-                        <h6 class="fs-4 ;">Summary </h6>
-                        <p class="mb-35  lh-lg ml-0 " style="text-align: left;  font-size: 22px;">{{page.abstract}}</p>
+                        <h6 class="fs-4">Summary</h6>
+                        <p class="mb-35  lh-lg ml-0 " style="text-align: left;  font-size: 22px;">{{ page.abstract }}</p>
 
-                        <!-- Post Meta -->
-                        <!-- <div class="blog-post-meta mt-35">
-							<ul class="post-meta-list ico-10">
-								<li><p class="p-md w-500">Education</p></li>
-							</ul>
-                        </div> -->
-                    </div> <!-- END SINGLE POST TITLE -->
+                    </div> 
                     {% endif %}
 
-                    <!-- SINGLE POST TEXT -->
                     <div class="single-post-txt blogcontent lh-lg">
-                        {{page.content}}
-                    </div> <!-- END SINGLE POST TEXT -->
-
-                </div> <!-- End row -->
-            </div> <!-- End container -->
-
-</section> <!-- END SINGLE POST -->
-
-<!-- BANNER-13
-			============================================= -->
-<section id="banner-13" class="pt-100 banner-section" style="margin-top: -100px; margin-bottom: 80px;">
-    <div class="container">
-
-
-        <!-- BANNER-13 WRAPPER -->
-        <div class="banner-13-wrapper bg--05 bg--scroll r-16 block-shadow">
-            <div class="banner-overlay">
-                <div class="row d-flex align-items-center">
-
-
-                    <!-- BANNER-5 TEXT -->
-                    <div class="col-md-7">
-                        <div class="banner-13-txt color--white">
-                            <p class="p-lg" style="margin-bottom: -10px;">2025 Edition</p>
-                            <!-- Title -->
-                            <h2 class="s-45 w-700" style="margin-bottom: -5px;">Zero to One</h2>
-                            <h2 class="s-37 w-700">Build A Credentialing Program From Scratch</h2>
-
-                            <!-- Text -->
-                            <p class="p-lg" style="font-size: 20px;">This extensive workbook + ebook combo contains
-                                everything you need to build a credentialing program from scratch.
-                            </p>
-
-                            <!-- Button -->
-                            <a href="https://info.certifyme.online/ebook" target="_blank"
-                                class="btn r-04 btn--theme hover--tra-white">Download Now</a>
-
-                        </div>
-                    </div> <!-- END BANNER-13 TEXT -->
-
-
-                    <!-- BANNER-13 IMAGE class="banner-13-img text-center"-->
-                    <div class="col-md-5">
-                        <div>
-                            <img class="img-fluid" src="/assets4/images/Images Webp/build a credentialing program.webp"
-                                alt="EbookBanner-image">
-                        </div>
+                        {{ page.content }}
                     </div>
-
-
-                </div> <!-- End row -->
-            </div> <!-- End banner overlay -->
-        </div> <!-- END BANNER-13 WRAPPER -->
-
-
-    </div> <!-- End container -->
-</section> <!-- END BANNER-13 -->
-
-
-<!-- BLOG-1
-			============================================= -->
-<section id="blog-1" class="bg--white-300 py-100 blog-section division">
-    <div class="container">
-
-
-        <!-- SECTION TITLE -->
-        <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-9">
-                <div class="section-title mb-70">
-
-                    <!-- Title -->
-                    <h2 class="s-50 w-700">Keep Reading...</h2>
-
-                    <!-- Text -->
-                    <p class="s-21 color--grey">Access our Extensive Resource Library and Elevate Your Digital
-                        Credential Journey</p>
 
                 </div>
             </div>
-        </div>
 
+</section> 
 
-        {% include V4NewLook/blogs/_readMore.html %}
-</section> <!-- END BLOG-1 -->
+{% include V4NewLook/blogs/banners.html %}

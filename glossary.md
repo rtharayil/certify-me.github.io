@@ -4,7 +4,8 @@ title: "CertifyMe Glossary"
 description: "Helping you understand digital credentials, badges, and how to use them"
 
 layout: V4Layout-Glossary
-sitemap.priority: 0.9
+
+sitemap.priority: 0
 
 faqs:
   - title: "Digital Credentials - Basics"
@@ -44,7 +45,7 @@ faqs:
       - "How to display digital badge on LinkedIn?"
       - "Where can I display my digital badges to showcase my skills professionally?"
       - "How do I add a digital badge to my professional social media profile?"
-
+ 
   - title: "Digital Badge Software"
     questions:
       - "How can I create verifiable digital badges using credential software?"
