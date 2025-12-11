@@ -11,6 +11,9 @@ collections:
       output: true  
     credential-templates:
       output: true 
+    glossary:
+      output: true
+      permalink: /glossary/:slug/
     
 
 
