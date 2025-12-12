@@ -10,29 +10,49 @@
                     <p class="p-lg">{{ page.description }}</p>
                 </div>
 
-                {% if article.imageLink != '0' %}
+                {% if page.faqs %}
                 <!-- GLOSSARY LISTING SECTION -->
                 <div class="accordion-wrapper mt-60">
                     <ul class="accordion">
 
-                        {% assign grouped = site.glossary | group_by: "category" %}
-
-                        {% for group in grouped %}
+                        {% for block in page.faqs %}
                         <div class="mb-5">
 
-                            <!-- CATEGORY TITLE (printed once!) -->
-                            <h4 class="s-28 w-700 mb-4">{{ group.name }}</h4>
+                            <!-- CATEGORY TITLE -->
+                            <h4 class="s-28 w-700 mb-4">{{ block.title }}</h4>
 
                             {% assign counter = 1 %}
 
-                            {% for article in group.items %}
-                            <h5 class="s-18 mb-2">
-                                <span>{{ counter }}.</span>
-                                <a href="{{ article.url }}" style="color: rgb(0, 0, 192); text-decoration: underline;">
-                                    {{ article.title }}
-                                </a>
-                            </h5>
-                            {% assign counter = counter | plus: 1 %}
+                            {% for question in block.questions %}
+
+                                {% assign q_down = question | downcase %}
+                                {% assign matched = nil %}
+
+                                {% for article in site.glossary %}
+                                    {% assign a_down = article.title | downcase %}
+                                    {% if a_down == q_down %}
+                                        {% assign matched = article %}
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+
+                                {% if matched %}
+                                    <!-- FILE EXISTS — SHOW LINK -->
+                                    <h5 class="s-18 mb-2">
+                                        <span>{{ counter }}.</span>
+                                        <a href="{{ matched.url }}" style="color: rgb(0, 0, 192); text-decoration: underline;">
+                                            {{ question }}
+                                        </a>
+                                    </h5>
+                                {% else %}
+                                    <!-- NO FILE — SHOW AS TEXT WITHOUT LINK -->
+                                    <h5 class="s-18 mb-2">
+                                        <span>{{ counter }}.</span>
+                                        <span>{{ question }}</span>
+                                    </h5>
+                                {% endif %}
+
+                                {% assign counter = counter | plus: 1 %}
                             {% endfor %}
 
                         </div>
@@ -47,8 +67,7 @@
                 <div class="more-questions">
                     <div class="more-questions-txt bg--white-400 r-100">
                         <p class="p-lg">Have any questions? <a href="https://info.certifyme.online/talk-with-expert"
-                                target="_blank" class="color--theme">Get in
-                                Touch</a></p>
+                                target="_blank" class="color--theme">Get in Touch</a></p>
                     </div>
                 </div>
 
