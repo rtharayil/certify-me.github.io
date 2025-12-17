@@ -7,13 +7,14 @@ title: "What Features Should I Look For in Secure Digital Credential Software?"
 
 description: "From cryptographic protection to automation, discover the six must-have features you should evaluate, when choosing a secure digital credentialing software for your organisation."
 
-abstract:
-
-topic: news
-author: Mrunal Upadhye
 imageLink: /assets4/images/Glossary/what-features-should-i-look-in-secure-digital-credential-software.jpg
 
+
+abstract: 
+topic: news
+author: Mrunal Upadhye
 featured: true
+
 ---
 
 The main purpose of a digital credential software is to issue secure, verifiable credentials, which is the key differentiating factor between a digital credential and traditional paper or PDF certificates. So security is an integral part of a digital credential software and shouldn’t be overlooked at any cost. 
