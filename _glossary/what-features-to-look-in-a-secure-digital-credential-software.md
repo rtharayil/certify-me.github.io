@@ -47,7 +47,10 @@ Just like any other industry, the digital credentialing industry is also surroun
 
 #### What is W3C?
 
-<img class="img-fluid r-16" src="/assets4/images/Glossary/world-wide-consortium-logo.jpg" alt="world-wide-consortium-logo" style="display: block; margin: 0 auto;">
+<img class="img-fluid r-16"
+    src="/assets4/images/Glossary/world-wide-consortium-logo.jpg"
+    alt="World Wide Consortium Logo"
+    style="display:block; margin:0 auto; width:50%;">
 
 <br>
 
@@ -56,6 +59,8 @@ W3C or World Wide Web Consortium creates the worldwide standards for the web con
 <br>
 
 #### What is Open Badges 3.0?
+
+<img class="img-fluid r-16" src="/assets4/images/Glossary/open-badges-3.0-description.jpg" alt="Open Badges 3.0 Description" style="display: block; margin: 0 auto;">
 
 Open Badges 3.0 is a modern standard for digital badges developed by the 1EdTech Consortium. It is based on W3C standards, with which you can issue cryptographically signed and easily verifiable digital credentials. 
 
