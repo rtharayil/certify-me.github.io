@@ -27,11 +27,15 @@ However, a digital credentialing service enables the issuance of a complete elec
 
 These features define a digital credentialing service and the benefits it offers over traditional certification methods. They are: 
 
+<br>
+
 ### User-friendly Interface
 
 The easiest way to judge a digital credentialing service’s user interface is to use the product yourself. Create a trial account or ask for a live demo and try issuing a credential without reading instructions. If you can’t create, issue, and send a credential within a few minutes, the interface is likely too complex. Core actions should feel obvious, not hidden behind multiple menus.
 
 A good UI should also work for non-technical users. Give access to someone on your team who isn’t product-savvy and see if they can issue a credential confidently. Finally, check the learner experience: the credential should open cleanly on mobile, load quickly, and make verification and sharing to LinkedIn simple. 
+
+<br>
 
 ### Security and Verification
 
@@ -39,23 +43,31 @@ A good digital credentialing service should ensure that once a credential is iss
 
 Some platforms go a step further by anchoring credential fingerprints to [blockchain ledgers](https://edtechmate.com/blockchain-in-credential-verification-how-distributed-ledgers-revolutionize-qualifications-validation/), creating an additional, immutable reference point. The ability to reliably detect tampering is what separates a true digital credentialing service from a system that simply issues digital certificates.
 
+<br>
+
 ### Integrations
 
 A digital credential platform must integrate with existing workflows or may need to do so in the future. Hence, integrations become an important feature for a digital credential service to provide. Integrations enable easier data transfer and reduce the risk of errors. Most digital credential service providers offer a platform that integrates easily with workflow tools such as CRMs, LMSs, and HR management systems. 
 
-<img class="img-fluid r-16" src="/assets4/images/Glossary/certifyme-integrations.jpg" alt="CertifyMe Integrations" style="display: block; margin: 0 auto;">
+<img class="img-fluid r-16" src="/assets4/images/Glossary/certifyme-integrations.jpg" alt="CertifyMe Integrations" style="display: block; margin: 0 auto; width:70%;">
+
+<br>
 
 ### Digital Credential Manager or Dashboard
 
 A digital credentialing service offers a complete digital certificate journey, which is why the platform must include a dashboard to manage all issued credentials. The dashboard usually provides analytics on all digital certificates, such as the total number of views and social shares, and helps you access details for individual certificates and their recipients.
 
-<img class="img-fluid r-16" src="/assets4/images/Glossary/certifyme-dashboard.jpg" alt="CertifyMe Dashboard" style="display: block; margin: 0 auto;">
+<img class="img-fluid r-16" src="/assets4/images/Glossary/certifyme-dashboard.jpg" alt="CertifyMe Dashboard" style="display: block; margin: 0 auto; width:70%;">
+
+<br>
 
 ### Customizable Templates
 
 A [digital credential](https://www.certifyme.online/blog/What-is-a-Digital-Credential.html) is more than just a statement of fact that someone has achieved or developed a particular skill. It is also an opportunity to enhance your brand visibility, made possible by customizable templates. A good digital credential platform lets you customize your digital certificates and white-label them with your brand identity. For instance, use your brand colors, font, and logo to create digital certificates that help others instantly recognize your brand when they share it online. 
 
-<img class="img-fluid r-16" src="/assets4/images/Glossary/certifyme-customizable-templates.png" alt="CertifyMe Customizable Templates" style="display: block; margin: 0 auto;">
+<img class="img-fluid r-16" src="/assets4/images/Glossary/certifyme-customizable-templates.png" alt="CertifyMe Customizable Templates" style="display: block; margin: 0 auto; width:70%;">
+
+<br>
 
 ### Scalability
 
