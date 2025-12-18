@@ -52,8 +52,6 @@ Just like any other industry, the digital credentialing industry is also surroun
     alt="World Wide Consortium Logo"
     style="display:block; margin:0 auto; width:50%;">
 
-<br>
-
 W3C or World Wide Web Consortium creates the worldwide standards for the web content’s security and interoperability. In simple terms, it allows anyone to verify the authenticity of credentials without compromising the personal information of the recipient. 
 
 <br>
