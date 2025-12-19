@@ -287,7 +287,7 @@ Digital credentials are equipped with security measures that protect against tam
 
 ### Automation and Integrations
 
-Digital credentialing systems can integrate seamlessly with your existing platforms, automating the issuance process and reducing administrative overhead. This means fewer manual tasks, quicker processing times, and a more streamlined workflow for your team.
+A digital credentialing service can integrate seamlessly with your existing platforms, automating the issuance process and reducing administrative overhead. This means fewer manual tasks, quicker processing times, and a more streamlined workflow for your team.
 
 ### Updates and Amendments
 
