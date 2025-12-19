@@ -63,7 +63,7 @@ The visual design of your badge matters. It should be eye-catching, professional
 
 ### Choosing a Badge Platform
 
-Select a digital credentialing service or tool for creating and managing your digital badges. Some popular options include <a href="https://certifyme.online/"> CertifyMe </a>, Credly and Accredible. Ensure that the platform supports the Open Badge standard for interoperability.
+Select a [digital credentialing service](https://www.certifyme.online/glossary/what-is-a-digital-credentialing-service.html) or tool for creating and managing your digital badges. Some popular options include <a href="https://certifyme.online/"> CertifyMe </a>, Credly and Accredible. Ensure that the platform supports the Open Badge standard for interoperability.
 
 ### Selecting Badge Elements
 

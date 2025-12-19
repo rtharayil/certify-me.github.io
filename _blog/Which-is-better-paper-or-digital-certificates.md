@@ -270,7 +270,7 @@ Even the most efficient registrar’s office can’t beat the speed of digital i
 
 Digital certificates are fast.
 
-1. They can be generated and issue in batches, all from a simple digital credentialing service.
+1. They can be generated and issue in batches, all from a simple [digital credentialing service](https://www.certifyme.online/glossary/what-is-a-digital-credentialing-service.html).
 
 1. Delivered instantly to a student’s inbox
 
