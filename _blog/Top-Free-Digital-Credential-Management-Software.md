@@ -37,6 +37,7 @@ In short:
 It’s a win-win.
 
 Still confused? Think of it like a digital backpack that holds all your educational receipts.
+Check out this blog for further reading - [Essential Features to look for in a Digital Credential Software](https://www.certifyme.online/glossary/what-features-to-look-in-a-secure-digital-credential-software.html)
 
 <br>
 
