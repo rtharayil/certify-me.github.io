@@ -59,7 +59,7 @@ Curious about what sets the top digital credential platforms apart? Let’s brea
 7. **Digital Credential Management:** Features that support the efficient management and distribution of digital credentials, ensuring they remain accessible and up-to-date.
 <br>
 
-These features collectively make a digital credentialing software not just a tool but a powerful asset for any organization.
+These features collectively make a digital credentialing software not just a tool but a powerful asset for any organization. Check out this blog for more elaborate reading - [Essential Features to look for in a Digital Credential Software](https://www.certifyme.online/glossary/what-features-to-look-in-a-secure-digital-credential-software.html)
 
 <br>
 <br>
