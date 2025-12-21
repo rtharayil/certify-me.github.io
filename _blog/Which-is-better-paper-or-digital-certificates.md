@@ -440,6 +440,8 @@ We live in a world where everything else—banking, medical records, even our gr
 
 ## Call to Action
 
+<br>
+
 ### For Students:
 
 The next time you finish a course, complete a workshop, or graduate, ask if a digital certificate is available.<br>
