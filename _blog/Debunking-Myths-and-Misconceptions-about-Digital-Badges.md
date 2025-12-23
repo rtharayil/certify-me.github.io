@@ -47,6 +47,8 @@ Digital badges are being used everywhere—from short-term skill programs to co-
 
 They’re portable, sharable (especially on LinkedIn), and give learners the power to tell their own story—one skill at a time.
 
+Further Reading : [What is the Difference Between Digital Badges and Traditional Certificates](https://www.certifyme.online/glossary/what-is-the-difference-between-digital-badges-and-traditional-certificate)
+
 <br>
 
 ## Myth #1: “Digital Badges Are Just Icons or Stickers”
