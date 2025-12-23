@@ -47,6 +47,8 @@ Another thing? They’re stackable. Over time, learners can build a portfolio of
 
 In short, a digital open badge isn’t just a digital sticker—it’s a smart, verifiable record of real-world learning, packaged in a way that’s easy to share, store, and trust.
 
+Further Reading : [What is the Difference Between Digital Badges and Traditional Certificates](https://www.certifyme.online/glossary/what-is-the-difference-between-digital-badges-and-traditional-certificate)
+
 <br>
 
 ### What Makes a Badge ‘Open’?
