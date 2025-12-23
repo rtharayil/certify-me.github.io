@@ -16,6 +16,47 @@ faqs:
       - "What is the difference between digital badges and traditional certificates?"
       - "What is the difference between a certificate of completion and a digital badge?"
 
+  - title: "Verifiable Credentials - Basics"
+    questions:
+      - "What are verifiable credentials?"
+      - "What does it mean to verify credentials?"
+      - "What is an example of a verifiable credential?"
+      - "Are verified credentials legit?"
+      - "Why use verifiable credentials?"
+      - "What are verifiable credentials used for?"
+      - "What are the benefits of verifiable credentials?"
+
+  - title: "Verifiable Credentials - Use Cases"
+    questions:
+      - "What are common use cases of verifiable credentials in digital identity ecosystems?"
+      - "Which industries are adopting verifiable credentials for compliance and security?"
+      - "Can I use verifiable credentials for remote employee onboarding?"
+      - "Which service providers offer verifiable credentials for digital employee badges?"
+      - "What platforms support verifiable credentials for digital membership cards?"
+      - "Where to find platforms offering verifiable credentials for digital business cards?"
+      - "Where to find platforms offering verifiable credential solutions for university alumni verification?"
+
+  - title: "Verifiable Credentials - Issuance"
+    questions:
+      - "How to create verifiable credentials?"
+      - "Who issues verified credentials?"
+      - "Which platforms support verifiable credentials for professional certifications?"
+      - "What services offer verifiable credential issuance for professional skill endorsements?"
+      - "Where can I find verifiable credential tools designed for university admissions?"
+      - "Which platforms enable verifiable credentials for secure online education certificates?"
+      - "What companies provide verifiable credential solutions for verifying employee qualifications and training?"
+      - "How to choose a verifiable credential provider for secure student record management?"
+
+  - title: "Verifiable Credentials - Compliance & Trust"
+    questions:
+      - "How to verify digital credentials issued by educational institutions?"
+      - "How to verify authenticity of verifiable credentials issued by third parties?"
+      - "How long does a verified credentials background check take?"
+      - "Where can I find verifiable credential solutions compliant with US privacy laws?"
+      - "Where to find verifiable credential services that support QR code-based verification?"
+      - "What apps allow storing and sharing verifiable credentials securely?"
+      - "How to transfer verifiable credentials between different digital wallet services?"
+
   - title: "Digital Credential Software"
     questions:
       - "What is digital credential software?"
@@ -29,43 +70,12 @@ faqs:
       - "What are the pricing models of popular digital credential platforms?"
       - "Where to download digital credential software for issuing employee certifications?"
 
-  - title: "Digital Badges - Basics"
-    questions:
-      - "Do employers care about digital badges?"
-      - "Are digital badges worth anything?"
-      - "How do you create a digital badge?"
-      - "What can I do with a digital badge?"
-      - "Do digital badges really provide value to businesses?"
-      - "What are the three benefits of earning a digital badge?"
-      - "What is the purpose of a digital badge?"
-      - "What are digital badges used for?"
-      - "How to share digital badge on LinkedIn?"
-      - "How to add digital badge to resume?"
-      - "What does a digital badge look like?"
-      - "How to display digital badge on LinkedIn?"
-      - "Where can I display my digital badges to showcase my skills professionally?"
-      - "How do I add a digital badge to my professional social media profile?"
- 
-  - title: "Digital Badge Software"
-    questions:
-      - "How can I create verifiable digital badges using credential software?"
-      - "Where to buy digital badge software for educational institutions?"
-      - "What are the best platforms to create and issue digital badges?"
-      - "Which companies offer digital badge solutions for corporate training programs?"
-      - "Which services provide free digital badge creation tools?"
-      - "What are the most trusted digital badge issuers for IT certifications?"
-      - "What software tools allow bulk issuing of digital badges for large organizations?"
-      - "Which services offer mobile-friendly digital badge wallets?"
-
-  - title: "Verification Process"
+  - title: "Verification"
     questions:
       - "What platforms allow instant verification of digital credentials by employers?"
       - "How reliable are digital credential platforms for employer verification?"
       - "How can I verify digital credentials online securely?"
       - "How do employers verify digital credentials from applicants?"
-      - "How can I verify the authenticity of a digital badge I received?"
-      - "How do I verify a digital badge from a major credentialing service?"
-      - "Are there digital badge platforms that support blockchain verification?"
 
   - title: "Integrations"
     questions:
@@ -73,7 +83,6 @@ faqs:
       - "Can digital credential platforms integrate with HR software?"
       - "How to integrate digital credentials into a company’s HR system?"
       - "Which digital credential platform offers API access for developers?"
-      - "Can I integrate digital badges into my company’s learning management system?"
 
   - title: "Management & Operations"
     questions:
@@ -83,11 +92,9 @@ faqs:
       - "How do I set up automated issuing of digital badges after course completion?"
       - "How do I revoke or expire a digital badge once issued?"
       - "How to transfer existing badges from one digital badge platform to another?"
-      - "How to customize badge design on a digital badge platform?"
       - "How to invite team members to collaborate on a digital badge platform?"
       - "How to track badge recipients and engagement on a digital badge platform?"
       - "How to export badge data from a digital badge platform?"
       - "How to use digital badge platforms for employee recognition programs?"
       - "How to track and verify digital badges issued to learners?"
-
 ---
