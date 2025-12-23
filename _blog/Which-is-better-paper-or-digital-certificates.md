@@ -222,7 +222,7 @@ No phone calls. No follow-up emails. No digging through files.
 
 ### Building Institutional Trust
 
-For universities, offering verifiable digital certificates isn’t just convenient—it builds credibility.
+For universities, offering [verifiable credentials](https://www.certifyme.online/glossary/what-are-verifiable-credentials) isn’t just convenient, it builds credibility.
 
 It says:
 
