@@ -50,7 +50,7 @@ And verified credentials offer a way to start.
 
 Imagine you're applying for a job. You list out your skills: data analysis, team leadership, project management. You even mention the online course you took last summer. But how does your future employer *know* that any of that is true?
 
-That’s the whole point of verified credentials. They provide proof. Not just claims. These are digital records issued by institutions, organizations, or training platforms that vouch for your skills or accomplishments. And they’re not PDFs you can edit. They’re secured, shareable, and easy to verify.
+That’s where [verifiable credentials](https://www.certifyme.online/glossary/what-are-verifiable-credentials) come in. They provide proof. Not just claims. These are digital records issued by institutions, organizations, or training platforms that vouch for your skills or accomplishments. And they’re not PDFs you can edit. They’re secured, shareable, and easy to verify.
 
 For example:
 
