@@ -28,6 +28,8 @@ These badges are more than just images; they contain metadata, such as badge nam
 
 Hence, they play a crucial role in showcasing competencies, allowing third parties like potential employers and recruiters to verify candidates' abilities swiftly and accurately. They're versatile tools, issued across various platforms to recognize achievements, signify growth, demonstrate qualifications, and illustrate membership or affiliation.
 
+**Further Reading:** [What is the Difference Between Digital Badges and Traditional Certificates](https://www.certifyme.online/glossary/what-is-the-difference-between-digital-badges-and-traditional-certificate)
+
 <img class="img-fluid r-16" src="/img/blog/Certifyme Digital Badges design.png" alt="Digital Badge image">
 
 <br>
