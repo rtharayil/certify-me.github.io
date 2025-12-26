@@ -116,9 +116,13 @@ Another feature that often gets overlooked? Analytics. Knowing how many credenti
 
 So whether you're a student leader managing certificates for a hackathon, or a university registrar thinking about scale, the tool you choose should offer clarity, control, and confidence. Anything less just adds more to your plate.
 
+<br>
+
 ## Top Free Digital Credential Management Tools (Tested and Trusted)
 
 Here are the top four free tools that we believe deserve your attention. Each one comes with its strengths—so think about what you need most.
+
+<br>
 
 ### Sertifier
 
@@ -141,6 +145,8 @@ Here are the top four free tools that we believe deserve your attention. Each on
 Student clubs, small workshops, and faculty-led sessions.
 
 Fun fact: You can even create QR code-enabled credentials.
+
+<br>
 
 **Drawbacks:**
 
@@ -178,6 +184,8 @@ Bonus insight: CertifyMe lets recipients add their credentials directly to Linke
 
 Related read: [How to Validate Digital Skills Using Digital Credentials](https://www.certifyme.online/blog/What-is-a-Digital-Credential.html)
 
+<br>
+
 ### NetCredential
 
 **What it is:**
@@ -207,6 +215,8 @@ You don’t need tech support to get started. It's almost like using Google Form
 1. Not ideal for large-scale issuance
 
 1. Design flexibility is limited compared to others
+
+<br>
 
 ### Hyperstack Credential Cloud
 
