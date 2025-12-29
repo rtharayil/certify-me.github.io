@@ -1,10 +1,9 @@
 ---
-layout: EPTemplates/ExperienceDetails
+layout: EpTemplates2/ExperienceDetails
 sitemap: false
 
 job_title: "Lab Assistant"
 employment_type: "Full-Time"
-job_title: "Lab Assistant"
 company_name: "PES University"
 location: "Bangalore, India"
 location_type: "On-Site"
@@ -43,4 +42,3 @@ achievements:
   - Reduced equipment downtime by 45% through proactive maintenance
 
 ---
-

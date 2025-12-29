@@ -1,0 +1,396 @@
+<section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+  <!-- Backgrounds -->
+  <div class="absolute inset-0 -z-10 transition-opacity duration-700" id="hero-bg-minimal">
+     <div class="absolute inset-0 bg-background">
+      <div class="absolute inset-0 bg-[url('/attached_assets/generated_images/minimal_abstract_3d_shapes_on_white_background.png')] bg-cover bg-center opacity-20"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-background/0 to-background"></div>
+    </div>
+  </div>
+  <div class="absolute inset-0 -z-10 transition-opacity duration-700 opacity-0" id="hero-bg-gradient">
+    <div class="absolute inset-0">
+      <div class="absolute inset-0 bg-[url('/attached_assets/generated_images/vibrant_fluid_gradient_mesh_background.png')] bg-cover bg-center opacity-30 blur-3xl scale-110"></div>
+      <div class="absolute inset-0 bg-background/60 backdrop-blur-[2px]"></div>
+    </div>
+  </div>
+  <div class="absolute inset-0 -z-10 transition-opacity duration-700 opacity-0" id="hero-bg-profile">
+     <div class="absolute inset-0 bg-background flex items-center justify-end opacity-10">
+      <div class="w-[800px] h-[800px] rounded-full bg-primary/20 blur-[120px] translate-x-1/2"></div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <!-- Content -->
+    <div class="space-y-8 text-center lg:text-left animate-fade-up opacity-0" style="animation-delay: 0.1s">
+      {% if page.available %}
+      <div class="inline-block px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-sm font-medium mb-4">
+        {{ include.page.available | default: "Available for work" }}
+      </div>
+      {% endif %}
+      
+      <h1 class="text-5xl lg:text-7xl font-heading font-bold tracking-tight leading-[1.1]">
+        Hi, I'm Riya Sharma
+        <br />
+        <span id="typewriter" class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+          {% assign display_tagline = include.page.tagline %}
+          {% if display_tagline and display_tagline != "" %}
+            {{ display_tagline }}
+          {% else %}
+            UI/UX Developer & Designer
+          {% endif %}
+        </span>
+      </h1>
+      
+      <p class="text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
+        {{ include.page.description | default: "Building digital experiences that blend design and technology. Specialized in React, Node.js, and modern UI systems." }}
+      </p>
+
+      <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+        <!-- My Intro Button with Video Popup -->
+        <button id="openVideoBtn" 
+                class="bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 inline-flex items-center justify-center whitespace-nowrap rounded-full text-base font-medium transition-colors intro-video-btn"
+                aria-haspopup="dialog" 
+                aria-controls="videoPopup">
+          <span class="btn-text">My Intro</span>
+          <span class="play-icon ml-2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M10 8L16 12L10 16V8Z" fill="currentColor"/>
+            </svg>
+          </span>
+        </button>
+        
+        <!-- Download CV Button -->
+        <a href="{% if include.page.CV %}{{ include.page.CV }}{% else %}/files/1.pdf{% endif %}" download="Riya-Sharma-CV.pdf" class="border border-input bg-background hover:bg-accent hover:text-accent-foreground h-12 px-8 inline-flex items-center justify-center whitespace-nowrap rounded-full text-base font-medium transition-colors">
+          Download CV <i data-lucide="download" class="ml-2 w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Visuals -->
+    <div class="relative flex justify-center items-center animate-fade-up opacity-0" style="animation-delay: 0.3s">
+       <!-- Minimal/Gradient Visual -->
+       <div id="hero-visual-default" class="relative w-full aspect-square max-w-[500px]">
+          <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-[3rem] rotate-3 blur-xl"></div>
+          <div class="relative h-full w-full bg-card/30 backdrop-blur-sm border border-white/10 rounded-[2.5rem] overflow-hidden shadow-2xl">
+             <!-- Profile Image in Square -->
+             <div class="absolute inset-4 rounded-[1.5rem] overflow-hidden">
+               {% if include.page.Hero and include.page.Hero[0] and include.page.Hero[0].url %}
+               <img src="{{ include.page.Hero[0].url }}" alt="{% if include.page.name %}{{ include.page.name }}{% else %}Riya Sharma{% endif %}" class="w-full h-full object-cover" onerror="this.src='/attached_assets/generated_images/professional_headshot_of_a_creative_professional.png'" />
+               {% else %}
+               <img src="/attached_assets/generated_images/professional_headshot_of_a_creative_professional.png" alt="{% if include.page.name %}{{ include.page.name }}{% else %}Riya Sharma{% endif %}" class="w-full h-full object-cover" />
+               {% endif %}
+             </div>
+             <!-- Overlay Design Elements -->
+             <div class="absolute top-0 right-0 p-8 opacity-20">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="currentColor">
+                  <circle cx="50" cy="50" r="40" />
+                </svg>
+             </div>
+             <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-background/80 to-transparent">
+               <div class="space-y-2">
+                 <div class="h-2 w-20 bg-primary/50 rounded-full"></div>
+                 <div class="h-6 w-3/4 bg-foreground/20 rounded-lg"></div>
+                 <div class="h-3 w-1/2 bg-foreground/10 rounded-lg"></div>
+               </div>
+             </div>
+          </div>
+       </div>
+
+       <!-- Profile Visual (Hidden by default) -->
+       <div id="hero-visual-profile" class="hidden relative w-80 h-80 lg:w-[500px] lg:h-[500px]">
+         <div class="absolute inset-0 rounded-full border-2 border-primary/20 animate-[spin_10s_linear_infinite]"></div>
+         <div class="absolute inset-4 rounded-full border-2 border-accent/20 animate-[spin_15s_linear_infinite_reverse]"></div>
+         <div class="absolute inset-0 rounded-full overflow-hidden border-8 border-background shadow-2xl">
+           {% if include.page.Hero and include.page.Hero[0] and include.page.Hero[0].url %}
+           <img src="{{ include.page.Hero[0].url }}" alt="{% if include.page.name %}{{ include.page.name }}{% else %}Riya Sharma{% endif %}" class="w-full h-full object-cover" onerror="this.src='/attached_assets/generated_images/professional_headshot_of_a_creative_professional.png'" />
+           {% else %}
+           <img src="/attached_assets/generated_images/professional_headshot_of_a_creative_professional.png" alt="{% if include.page.name %}{{ include.page.name }}{% else %}Riya Sharma{% endif %}" class="w-full h-full object-cover" />
+           {% endif %}
+         </div>
+         {% if include.page.experience_years %}
+         <div class="absolute -bottom-4 -right-4 bg-card p-4 rounded-2xl shadow-xl border border-border/50 flex items-center gap-3 animate-bounce">
+           <div class="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center text-green-500">
+             <span class="font-bold">6</span>
+           </div>
+           <div>
+             <p class="text-xs text-muted-foreground">Projects</p>
+             <p class="font-bold">Completed</p>
+           </div>
+         </div>
+         {% endif %}
+       </div>
+    </div>
+  </div>
+
+  <!-- Hero Controls -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 p-2 bg-background/50 backdrop-blur-md rounded-full border border-border/50">
+    <button onclick="setHeroVariant('minimal')" class="hero-control px-4 py-1.5 rounded-full text-xs font-medium transition-colors hover:bg-muted" data-variant="minimal">Minimal</button>
+    <button onclick="setHeroVariant('gradient')" class="hero-control px-4 py-1.5 rounded-full text-xs font-medium transition-colors hover:bg-muted" data-variant="gradient">Gradient</button>
+    <button onclick="setHeroVariant('profile')" class="hero-control px-4 py-1.5 rounded-full text-xs font-medium transition-colors hover:bg-muted" data-variant="profile">Profile</button>
+  </div>
+</section>
+
+<script>
+// Debug: Check if variables are being read correctly
+console.log('Debug Info:', {
+  'include.page.title': '{{ include.page.title }}',
+  'include.page.name': '{{ include.page.name }}',
+  'include.page.tagline': '{{ include.page.tagline }}'
+});
+
+// Initialize with gradient variant if no preference
+if (document.getElementById('hero-bg-gradient')) {
+  window.setHeroVariant('gradient');
+}
+</script>
+
+<!-- VIDEO POPUP -->
+<div id="videoPopup"
+     role="dialog"
+     aria-modal="true"
+     aria-hidden="true"
+     aria-labelledby="videoPopupTitle"
+     class="fixed inset-0 bg-black/95 flex items-center justify-center z-[999999] p-4"
+     style="display: none;">
+
+  <h2 id="videoPopupTitle" class="sr-only">Introduction Video - {{ include.page.name | default: 'Riya Sharma' }}</h2>
+
+  <!-- Close Button -->
+  <button id="closeVideoBtn"
+          type="button"
+          aria-label="Close video popup"
+          class="fixed top-6 right-6 bg-white border-none p-0 text-2xl font-bold cursor-pointer rounded-full w-12 h-12 flex items-center justify-center text-gray-800 hover:bg-red-500 hover:text-white transition-all duration-300 z-[9999999]">
+    ✖
+  </button>
+
+  <!-- Video Container -->
+  <div id="videoContainer" 
+       class="relative max-w-4xl w-full max-h-[90vh] flex items-center justify-center">
+    
+    <!-- Video Element -->
+    <video id="aboutVideo"
+           src="{% if include.page.Hero and include.page.Hero[0] and include.page.Hero[0].video %}{{ include.page.Hero[0].video }}{% else %}/images/eptemplate/intro-web.mp4{% endif %}"
+           controls
+           preload="metadata"
+           playsinline
+           class="w-full h-auto max-h-[90vh] rounded-lg bg-black outline-none shadow-2xl">
+      Your browser doesn't support HTML5 video. Please use a modern browser.
+    </video>
+  </div>
+</div>
+
+<!-- CSS STYLES FOR VIDEO POPUP -->
+<style>
+/* My Intro Button Styling */
+.intro-video-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-video-btn:hover .play-icon svg {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.intro-video-btn .play-icon svg {
+  transition: transform 0.3s ease;
+}
+
+/* Prevent body scroll when popup is open */
+body.video-popup-open {
+  overflow: hidden !important;
+  position: fixed !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Close button hover effect */
+#closeVideoBtn:hover {
+  transform: scale(1.1) rotate(90deg);
+}
+
+#closeVideoBtn:active {
+  transform: scale(0.95) rotate(90deg);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #closeVideoBtn {
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+  
+  #videoContainer {
+    max-width: 95vw;
+    max-height: 85vh;
+  }
+}
+</style>
+
+<!-- JAVASCRIPT FOR VIDEO POPUP -->
+<script>
+(function () {
+  'use strict';
+  
+  let openBtn, videoPopup, aboutVideo, closeBtn, videoContainer;
+
+  // Close the video popup
+  function closeVideoPopup() {
+    if (!videoPopup || !aboutVideo) return;
+    
+    console.log('Closing video popup');
+    
+    // Hide popup
+    videoPopup.style.display = 'none';
+    videoPopup.setAttribute('aria-hidden', 'true');
+
+    // Re-enable body scrolling
+    document.body.classList.remove('video-popup-open');
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
+
+    // Pause and reset video
+    try {
+      if (!aboutVideo.paused) {
+        aboutVideo.pause();
+      }
+      aboutVideo.currentTime = 0;
+    } catch (err) {
+      console.warn('Error stopping video:', err);
+    }
+
+    // Return focus to open button
+    if (openBtn) {
+      setTimeout(() => {
+        openBtn.focus();
+      }, 100);
+    }
+  }
+
+  // Open the video popup
+  function openVideoPopup() {
+    if (!videoPopup || !aboutVideo) return;
+    
+    console.log('Opening video popup');
+    
+    // Disable body scrolling
+    document.body.classList.add('video-popup-open');
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+    
+    // Show popup
+    videoPopup.style.display = 'flex';
+    videoPopup.setAttribute('aria-hidden', 'false');
+
+    // Try to play video
+    setTimeout(() => {
+      const playPromise = aboutVideo.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          console.log('Video playing');
+        }).catch((err) => {
+          console.info('Autoplay prevented:', err);
+          aboutVideo.controls = true;
+        });
+      }
+    }, 100);
+    
+    // Focus on close button
+    setTimeout(() => {
+      if (closeBtn) {
+        closeBtn.focus();
+      }
+    }, 200);
+  }
+
+  // Initialize everything
+  function init() {
+    console.log('Initializing video popup');
+    
+    // Get elements
+    openBtn = document.getElementById('openVideoBtn');
+    videoPopup = document.getElementById('videoPopup');
+    aboutVideo = document.getElementById('aboutVideo');
+    closeBtn = document.getElementById('closeVideoBtn');
+    videoContainer = document.getElementById('videoContainer');
+
+    // Check if all elements exist
+    if (!openBtn) {
+      console.error('Open button not found');
+      return;
+    }
+    if (!videoPopup) {
+      console.error('Video popup not found');
+      return;
+    }
+    if (!aboutVideo) {
+      console.error('Video element not found');
+      return;
+    }
+    if (!closeBtn) {
+      console.error('Close button not found');
+      return;
+    }
+
+    console.log('All video popup elements found');
+
+    // CLOSE BUTTON
+    closeBtn.onclick = function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      console.log('Close button clicked');
+      closeVideoPopup();
+    };
+
+    // OPEN BUTTON
+    openBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      console.log('My Intro button clicked');
+      openVideoPopup();
+    });
+
+    // BACKDROP CLICK - Close when clicking outside video
+    videoPopup.addEventListener('click', function(e) {
+      if (e.target === videoPopup) {
+        console.log('Backdrop clicked');
+        closeVideoPopup();
+      }
+    });
+
+    // Prevent video clicks from closing popup
+    if (videoContainer) {
+      videoContainer.addEventListener('click', function(e) {
+        e.stopPropagation();
+      });
+    }
+
+    aboutVideo.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+
+    // ESCAPE KEY
+    document.addEventListener('keydown', function(e) {
+      if ((e.key === 'Escape' || e.key === 'Esc') && 
+          videoPopup.style.display === 'flex') {
+        console.log('Escape key pressed');
+        closeVideoPopup();
+      }
+    });
+
+    console.log('Video popup initialized successfully');
+  }
+
+  // Wait for DOM
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+  // Also try to init after a short delay as backup
+  setTimeout(init, 500);
+})();
+</script>

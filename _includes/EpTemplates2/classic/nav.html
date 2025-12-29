@@ -1,0 +1,147 @@
+<header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-6">
+  <div class="container mx-auto px-6 flex items-center justify-between">
+    <a href="classic.html" class="hover:opacity-80 transition-opacity">
+      <img src="https://www.certifyme.online/assets4/images/Logo/1.png" alt="CertifyMe Logo" class="h-8 w-auto">
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="classic.html#about" class="text-sm font-medium hover:text-primary transition-colors">About</a>
+      
+      <!-- Projects Dropdown -->
+      <div class="relative group">
+        <a href="classic.html#projects" class="text-sm font-medium hover:text-primary transition-colors flex items-center gap-1">
+          Projects
+          <i data-lucide="chevron-down" class="w-4 h-4 group-hover:rotate-180 transition-transform duration-200"></i>
+        </a>
+        <div class="absolute top-full left-0 mt-2 w-64 bg-background border border-border/50 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <div class="p-2">
+            {% for item in site.data.navigation.Projects_EPTemplates2 %}
+            <a href="{{ item.link }}.html" class="block px-3 py-2 text-sm text-foreground hover:bg-muted hover:text-primary rounded-md transition-colors">
+              {{ item.name }}
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      
+      <!-- Education Dropdown -->
+      <div class="relative group">
+        <a href="classic.html#education" class="text-sm font-medium hover:text-primary transition-colors flex items-center gap-1">
+          Education
+          <i data-lucide="chevron-down" class="w-4 h-4 group-hover:rotate-180 transition-transform duration-200"></i>
+        </a>
+        <div class="absolute top-full left-0 mt-2 w-64 bg-background border border-border/50 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <div class="p-2">
+            {% for item in site.data.navigation.Education_EPTemplates2 %}
+            <a href="{{ item.link }}.html" class="block px-3 py-2 text-sm text-foreground hover:bg-muted hover:text-primary rounded-md transition-colors">
+              {{ item.name }}
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      
+      <!-- Experience Dropdown -->
+      <div class="relative group">
+        <a href="classic.html#experience" class="text-sm font-medium hover:text-primary transition-colors flex items-center gap-1">
+          Experience
+          <i data-lucide="chevron-down" class="w-4 h-4 group-hover:rotate-180 transition-transform duration-200"></i>
+        </a>
+        <div class="absolute top-full left-0 mt-2 w-64 bg-background border border-border/50 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <div class="p-2">
+            {% for item in site.data.navigation.Experience_EPTemplates2 %}
+            <a href="{{ item.link }}.html" class="block px-3 py-2 text-sm text-foreground hover:bg-muted hover:text-primary rounded-md transition-colors">
+              {{ item.name }}
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      
+      <a href="classic.html#skills" class="text-sm font-medium hover:text-primary transition-colors">Skills</a>
+      <a href="classic.html#contact" class="text-sm font-medium hover:text-primary transition-colors">Contact</a>
+      
+      <!-- Theme Switcher -->
+      <div class="relative group">
+        <button id="theme-toggle" class="p-2 rounded-full border border-border/50 hover:bg-muted transition-colors">
+          <i data-lucide="sun" class="w-5 h-5 dark:hidden gradient:hidden"></i>
+          <i data-lucide="moon" class="w-5 h-5 hidden dark:block gradient:hidden"></i>
+          <i data-lucide="sparkles" class="w-5 h-5 hidden gradient:block text-primary"></i>
+        </button>
+      </div>
+
+      {% if include.page.CV %}
+      <a href="{{ include.page.CV }}" download="Portfolio-CV.pdf" class="bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-6 py-2 inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
+        Download CV
+      </a>
+      {% else %}
+      <a href="/files/1.pdf" download="Portfolio-CV.pdf" class="bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-6 py-2 inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
+        Download CV
+      </a>
+      {% endif %}
+    </nav>
+
+    <!-- Mobile Toggle -->
+    <div class="flex items-center gap-4 md:hidden">
+      <button id="mobile-theme-toggle" class="p-2 rounded-full border border-border/50">
+         <i data-lucide="sun" class="w-5 h-5 dark:hidden gradient:hidden"></i>
+         <i data-lucide="moon" class="w-5 h-5 hidden dark:block gradient:hidden"></i>
+         <i data-lucide="sparkles" class="w-5 h-5 hidden gradient:block text-primary"></i>
+      </button>
+      <button id="menu-toggle" class="p-2 text-foreground">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-background border-b border-border/40 absolute top-full left-0 right-0 shadow-lg">
+    <nav class="flex flex-col p-6 gap-4">
+      <a href="classic.html#about" class="text-lg font-medium py-2 border-b border-border/10">About</a>
+      
+      <!-- Mobile Projects Section -->
+      <div class="border-b border-border/10 pb-2">
+        <div class="text-lg font-medium py-2">Projects</div>
+        <div class="pl-4 space-y-2">
+          {% for item in site.data.navigation.Projects_EPTemplates2 %}
+          <a href="{{ item.link }}.html" class="block text-sm text-muted-foreground hover:text-primary">{{ item.name }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      
+      <!-- Mobile Education Section -->
+      <div class="border-b border-border/10 pb-2">
+        <div class="text-lg font-medium py-2">Education</div>
+        <div class="pl-4 space-y-2">
+          {% for item in site.data.navigation.Education_EPTemplates2 %}
+          <a href="{{ item.link }}.html" class="block text-sm text-muted-foreground hover:text-primary">{{ item.name }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      
+      <!-- Mobile Experience Section -->
+      <div class="border-b border-border/10 pb-2">
+        <div class="text-lg font-medium py-2">Experience</div>
+        <div class="pl-4 space-y-2">
+          {% for item in site.data.navigation.Experience_EPTemplates2 %}
+          <a href="{{ item.link }}.html" class="block text-sm text-muted-foreground hover:text-primary">{{ item.name }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      
+      <a href="classic.html#skills" class="text-lg font-medium py-2 border-b border-border/10">Skills</a>
+      <a href="classic.html#contact" class="text-lg font-medium py-2 border-b border-border/10">Contact</a>
+      
+      {% if include.page.CV %}
+      <a href="{{ include.page.CV }}" download="Portfolio-CV.pdf" class="w-full bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors">
+        Download CV
+      </a>
+      {% else %}
+      <a href="/files/1.pdf" download="Portfolio-CV.pdf" class="w-full bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors">
+        Download CV
+      </a>
+      {% endif %}
+    </nav>
+  </div>
+</header>

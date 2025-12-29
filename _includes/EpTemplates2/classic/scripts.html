@@ -1,0 +1,377 @@
+<!-- Tailwind Configuration -->
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          heading: ['"Outfit"', 'sans-serif'],
+        },
+        colors: {
+          border: "hsl(var(--border))",
+          input: "hsl(var(--input))",
+          ring: "hsl(var(--ring))",
+          background: "hsl(var(--background))",
+          foreground: "hsl(var(--foreground))",
+          primary: {
+            DEFAULT: "hsl(var(--primary))",
+            foreground: "hsl(var(--primary-foreground))",
+          },
+          secondary: {
+            DEFAULT: "hsl(var(--secondary))",
+            foreground: "hsl(var(--secondary-foreground))",
+          },
+          destructive: {
+            DEFAULT: "hsl(var(--destructive))",
+            foreground: "hsl(var(--destructive-foreground))",
+          },
+          muted: {
+            DEFAULT: "hsl(var(--muted))",
+            foreground: "hsl(var(--muted-foreground))",
+          },
+          accent: {
+            DEFAULT: "hsl(var(--accent))",
+            foreground: "hsl(var(--accent-foreground))",
+          },
+          popover: {
+            DEFAULT: "hsl(var(--popover))",
+            foreground: "hsl(var(--popover-foreground))",
+          },
+          card: {
+            DEFAULT: "hsl(var(--card))",
+            foreground: "hsl(var(--card-foreground))",
+          },
+        },
+        borderRadius: {
+          lg: "var(--radius)",
+          md: "calc(var(--radius) - 2px)",
+          sm: "calc(var(--radius) - 4px)",
+        },
+      },
+    },
+  }
+</script>
+
+<!-- CSS Variables & Custom Styles -->
+<style>
+  /* Base Variables - Light Mode Default */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.75rem;
+  }
+
+  /* Dark Mode */
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+
+  /* Gradient Mode (Deep Purple/Blue Theme) */
+  .gradient {
+    --background: 260 50% 10%;
+    --foreground: 210 40% 98%;
+    --card: 260 50% 15%;
+    --card-foreground: 210 40% 98%;
+    --popover: 260 50% 15%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 280 80% 60%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 260 30% 20%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 260 30% 20%;
+    --muted-foreground: 260 20% 70%;
+    --accent: 320 80% 60%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 260 30% 25%;
+    --input: 260 30% 25%;
+    --ring: 280 80% 60%;
+  }
+
+  body {
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Custom Utilities */
+  .glass {
+    background-color: hsl(var(--background) / 0.6);
+    backdrop-filter: blur(16px);
+    border: 1px solid hsl(0 0% 100% / 0.1);
+  }
+  
+  .gradient .glass {
+    background-color: hsl(0 0% 100% / 0.05);
+    backdrop-filter: blur(24px);
+    border: 1px solid hsl(0 0% 100% / 0.1);
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--muted-foreground) / 0.2);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--muted-foreground) / 0.4);
+  }
+
+  /* Animation Keyframes */
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.8s ease-out forwards;
+  }
+
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+
+  .scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+<!-- JavaScript Logic -->
+<script>
+// Theme Switcher Logic
+const themeToggle = document.getElementById('theme-toggle');
+const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+const html = document.documentElement;
+
+const themes = ['light', 'dark', 'gradient'];
+let currentThemeIndex = 0;
+
+// Check local storage or system preference
+if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    currentThemeIndex = 1;
+    html.classList.add('dark');
+} else if (localStorage.getItem('theme') === 'gradient') {
+    currentThemeIndex = 2;
+    html.classList.add('gradient');
+}
+
+function updateThemeIcon() {
+  html.classList.remove('dark', 'gradient');
+  
+  if (themes[currentThemeIndex] === 'dark') {
+    html.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
+  } else if (themes[currentThemeIndex] === 'gradient') {
+    html.classList.add('gradient');
+    localStorage.setItem('theme', 'gradient');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
+}
+
+function cycleTheme() {
+  currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+  updateThemeIcon();
+}
+
+if (themeToggle) themeToggle.addEventListener('click', cycleTheme);
+if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', cycleTheme);
+
+// Mobile Menu Logic
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Close menu when clicking a link
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+  });
+}
+
+// Hero Typewriter Effect
+const roles = ["UI/UX Developer", "Frontend Developer", "Creative Technologist"];
+let roleIndex = 0;
+const typewriterElement = document.getElementById('typewriter');
+
+if (typewriterElement && roles.length > 0) {
+  setInterval(() => {
+    roleIndex = (roleIndex + 1) % roles.length;
+    typewriterElement.style.opacity = 0;
+    setTimeout(() => {
+      typewriterElement.innerText = roles[roleIndex];
+      typewriterElement.style.opacity = 1;
+    }, 500);
+  }, 3000);
+}
+
+// Hero Variant Switcher
+window.setHeroVariant = function(variant) {
+  const heroBgMinimal = document.getElementById('hero-bg-minimal');
+  const heroBgGradient = document.getElementById('hero-bg-gradient');
+  const heroBgProfile = document.getElementById('hero-bg-profile');
+  const heroVisualDefault = document.getElementById('hero-visual-default');
+  const heroVisualProfile = document.getElementById('hero-visual-profile');
+
+  if (heroBgMinimal) heroBgMinimal.style.opacity = variant === 'minimal' ? 1 : 0;
+  if (heroBgGradient) heroBgGradient.style.opacity = variant === 'gradient' ? 1 : 0;
+  if (heroBgProfile) heroBgProfile.style.opacity = variant === 'profile' ? 1 : 0;
+
+  if (variant === 'profile') {
+    if (heroVisualDefault) heroVisualDefault.classList.add('hidden');
+    if (heroVisualProfile) heroVisualProfile.classList.remove('hidden');
+  } else {
+    if (heroVisualDefault) heroVisualDefault.classList.remove('hidden');
+    if (heroVisualProfile) heroVisualProfile.classList.add('hidden');
+  }
+  
+  // Update buttons
+  document.querySelectorAll('.hero-control').forEach(btn => {
+    if (btn.dataset.variant === variant) {
+        btn.classList.add('bg-primary', 'text-primary-foreground');
+        btn.classList.remove('hover:bg-muted');
+    } else {
+        btn.classList.remove('bg-primary', 'text-primary-foreground');
+        btn.classList.add('hover:bg-muted');
+    }
+  });
+}
+
+// Initialize default variant
+if (document.getElementById('hero-bg-gradient')) {
+  window.setHeroVariant('gradient');
+}
+
+// Project Filtering
+window.filterProjects = function(type) {
+  const buttons = document.querySelectorAll('.project-filter');
+  buttons.forEach(btn => {
+    if (btn.dataset.filter === type) {
+      btn.classList.add('bg-background', 'shadow-sm', 'text-foreground');
+      btn.classList.remove('text-muted-foreground');
+    } else {
+      btn.classList.remove('bg-background', 'shadow-sm', 'text-foreground');
+      btn.classList.add('text-muted-foreground');
+    }
+  });
+
+  const cards = document.querySelectorAll('.project-card');
+  cards.forEach(card => {
+    if (card.classList.contains(type)) {
+      card.classList.remove('hidden');
+      card.classList.add('flex');
+    } else {
+      card.classList.add('hidden');
+      card.classList.remove('flex');
+    }
+  });
+}
+
+// Scroll Animations
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('revealed');
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.scroll-reveal').forEach(el => {
+  observer.observe(el);
+});
+
+// Initialize Lucide
+lucide.createIcons();
+
+// Progress Bar Animation for Skills Section
+document.addEventListener('DOMContentLoaded', function() {
+  const progressBars = document.querySelectorAll('.progress-bar[data-percentage]');
+  
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bar = entry.target;
+          const percentage = bar.getAttribute('data-percentage');
+          
+          // Use requestAnimationFrame for smooth animation
+          requestAnimationFrame(() => {
+            bar.style.width = percentage + '%';
+          });
+          
+          observer.unobserve(bar);
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    progressBars.forEach(bar => observer.observe(bar));
+  } else {
+    // Fallback for older browsers
+    progressBars.forEach(bar => {
+      const percentage = bar.getAttribute('data-percentage');
+      bar.style.width = percentage + '%';
+    });
+  }
+});
+</script>

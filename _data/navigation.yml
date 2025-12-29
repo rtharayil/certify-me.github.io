@@ -30,6 +30,51 @@ Experience:
     description: "CI/CD pipelines, and product automation."
     link: "/EPTemplates/riya/lab-assistance"
 
+# EP Templates 2 Navigation
+Education_EPTemplates2:
+  - year: 2023
+    name: "Bachelor of Engineering (B.E)"
+    university: "PES University"
+    percentage: "82%"
+    link: "/EPTemplates/EpTemplates2/btech"
+
+  - year: 2019
+    name: "Higher Secondary"
+    school: "Global Senior Secondary School"
+    percentage: "91%"
+    link: "/EPTemplates/EpTemplates2/higher-secondary"
+
+  - year: 2017
+    name: "Secondary School"
+    school: "Global Secondary School"
+    percentage: "88%"
+    link: "/EPTemplates/EpTemplates2/Secondary-School"
+
+Experience_EPTemplates2:
+  - name: "UI/UX Developer"
+    company: "TechCraft Solutions"
+    description: "Frontend development, feature enhancement, sprint-based delivery, production debugging, and collaborating with cross-functional teams to deliver reliable software solutions."
+    link: "/EPTemplates/EpTemplates2/software-engineer"
+
+  - name: "Lab Assistant"
+    company: "PES University"
+    description: "Worked as a Lab Assistant responsible for assisting science faculty, managing laboratory equipment, maintaining safety standards, and providing hands-on support for student lab sessions and experiments."
+    link: "/EPTemplates/EpTemplates2/lab-assistance"
+
+Projects_EPTemplates2:
+  - name: "E-Commerce Analytics Dashboard"
+    link: "/EPTemplates/EpTemplates2/ecommerce-analytics-dashboard"
+  - name: "Healthcare Management System"
+    link: "/EPTemplates/EpTemplates2/healthcare-management-system"
+  - name: "Financial Trading Platform"
+    link: "/EPTemplates/EpTemplates2/financial-trading-platform"
+  - name: "Social Media Analytics Tool"
+    link: "/EPTemplates/EpTemplates2/social-media-analytics-tool"
+  - name: "Project Management Dashboard"
+    link: "/EPTemplates/EpTemplates2/project-management-dashboard"
+  - name: "Restaurant Operations Panel"
+    link: "/EPTemplates/EpTemplates2/restaurant-operations-panel"
+
 Projects:
   - name: "E-Commerce Analytics Dashboard"
     link: "/EPTemplates/riya/ecommerce-analytics-dashboard"

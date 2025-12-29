@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+    <title>{{ page.project_name | default: "Project Details" }} | {{ site.title | default: "Portfolio" }}</title>
+    <meta name="description" content="Details about my project {{ page.project_name | default: "Project" }} - {{ page.short_description | default: "A showcase of my work and skills." }}" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        /* Project Details Page Styles */
+        
+        /* Base Variables - Light Mode Default */
+        :root {
+          --background: 0 0% 100%;
+          --foreground: 240 10% 3.9%;
+          --card: 0 0% 100%;
+          --card-foreground: 240 10% 3.9%;
+          --popover: 0 0% 100%;
+          --popover-foreground: 240 10% 3.9%;
+          --primary: 240 5.9% 10%;
+          --primary-foreground: 0 0% 98%;
+          --secondary: 240 4.8% 95.9%;
+          --secondary-foreground: 240 5.9% 10%;
+          --muted: 240 4.8% 95.9%;
+          --muted-foreground: 240 3.8% 46.1%;
+          --accent: 240 4.8% 95.9%;
+          --accent-foreground: 240 5.9% 10%;
+          --destructive: 0 84.2% 60.2%;
+          --destructive-foreground: 0 0% 98%;
+          --border: 240 5.9% 90%;
+          --input: 240 5.9% 90%;
+          --ring: 240 5.9% 10%;
+          --radius: 0.75rem;
+        }
+
+        /* Dark Mode */
+        .dark {
+          --background: 240 10% 3.9%;
+          --foreground: 0 0% 98%;
+          --card: 240 10% 3.9%;
+          --card-foreground: 0 0% 98%;
+          --popover: 240 10% 3.9%;
+          --popover-foreground: 0 0% 98%;
+          --primary: 0 0% 98%;
+          --primary-foreground: 240 5.9% 10%;
+          --secondary: 240 3.7% 15.9%;
+          --secondary-foreground: 0 0% 98%;
+          --muted: 240 3.7% 15.9%;
+          --muted-foreground: 260 20% 70%;
+          --accent: 240 3.7% 15.9%;
+          --accent-foreground: 0 0% 98%;
+          --destructive: 0 62.8% 30.6%;
+          --destructive-foreground: 0 0% 98%;
+          --border: 240 3.7% 15.9%;
+          --input: 240 3.7% 15.9%;
+          --ring: 240 4.9% 83.9%;
+        }
+
+        /* Gradient Mode */
+        .gradient {
+          --background: 260 50% 10%;
+          --foreground: 210 40% 98%;
+          --card: 260 50% 15%;
+          --card-foreground: 210 40% 98%;
+          --popover: 260 50% 15%;
+          --popover-foreground: 210 40% 98%;
+          --primary: 280 80% 60%;
+          --primary-foreground: 210 40% 98%;
+          --secondary: 260 30% 20%;
+          --secondary-foreground: 210 40% 98%;
+          --muted: 260 30% 20%;
+          --muted-foreground: 260 20% 70%;
+          --accent: 320 80% 60%;
+          --accent-foreground: 210 40% 98%;
+          --destructive: 0 62.8% 30.6%;
+          --destructive-foreground: 0 0% 98%;
+          --border: 260 30% 25%;
+          --input: 260 30% 25%;
+          --ring: 280 80% 60%;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+          width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+          background-color: hsl(var(--muted-foreground) / 0.2);
+          border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background-color: hsl(var(--muted-foreground) / 0.4);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .animate-fade-in-up {
+          animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        /* Project Detail Page Styles */
+        .project-detail {
+          transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Header Card Styles */
+        .project-header-card {
+          background: linear-gradient(to bottom right, hsl(var(--card)), hsl(var(--muted) / 0.3));
+          border-radius: 1.5rem;
+          border: 1px solid hsl(var(--border) / 0.5);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease;
+        }
+
+        .project-header-card:hover {
+          box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Content Grid */
+        .content-grid {
+          display: grid;
+          gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+          .content-grid {
+            grid-template-columns: 2fr 1fr;
+          }
+        }
+
+        /* Card Styles */
+        .project-card {
+          background-color: hsl(var(--card));
+          border: 1px solid hsl(var(--border) / 0.5);
+          border-radius: 1rem;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+          transform: translateY(-2px);
+        }
+
+        /* Icon Styles */
+        .icon-container {
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 0.75rem;
+          background-color: hsl(var(--primary) / 0.1);
+          color: hsl(var(--primary));
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .icon-container-accent {
+          background-color: hsl(var(--accent) / 0.1);
+          color: hsl(var(--accent));
+        }
+
+        /* Skills Pills */
+        .skill-pill, .tech-pill {
+          display: inline-flex;
+          align-items: center;
+          padding: 0.375rem 0.75rem;
+          border-radius: 0.5rem;
+          background-color: hsl(var(--muted));
+          color: hsl(var(--muted-foreground));
+          font-size: 0.875rem;
+          font-weight: 500;
+          border: 1px solid hsl(var(--border) / 0.5);
+          transition: all 0.2s ease;
+        }
+
+        .skill-pill:hover, .tech-pill:hover {
+          background-color: hsl(var(--muted) / 0.8);
+          transform: translateY(-1px);
+        }
+
+        /* Gradient Card */
+        .gradient-card {
+          background: linear-gradient(to bottom right, hsl(var(--primary) / 0.05), hsl(var(--accent) / 0.05));
+          border: 1px solid hsl(var(--primary) / 0.2);
+          border-radius: 1rem;
+          padding: 2rem;
+        }
+
+        /* Stats Card */
+        .stats-card {
+          background: linear-gradient(to bottom right, hsl(var(--primary) / 0.05), hsl(var(--accent) / 0.05));
+          border: 1px solid hsl(var(--primary) / 0.2);
+          border-radius: 1rem;
+          padding: 1.5rem;
+        }
+
+        /* List Styles */
+        .feature-list, .challenge-list {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        .feature-item, .challenge-item {
+          display: flex;
+          align-items: flex-start;
+          gap: 0.75rem;
+          margin-bottom: 0.75rem;
+        }
+
+        .feature-icon, .challenge-icon {
+          width: 1.25rem;
+          height: 1.25rem;
+          color: hsl(var(--primary));
+          margin-top: 0.125rem;
+          flex-shrink: 0;
+        }
+
+        /* Back Button */
+        .back-button {
+          width: 100%;
+          border: 1px solid hsl(var(--input));
+          background-color: hsl(var(--background));
+          color: hsl(var(--foreground));
+          height: 2.75rem;
+          padding: 0 1rem;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 0.5rem;
+          font-size: 0.875rem;
+          font-weight: 500;
+          transition: all 0.2s ease;
+          gap: 0.5rem;
+          text-decoration: none;
+        }
+
+        .back-button:hover {
+          background-color: hsl(var(--accent));
+          color: hsl(var(--accent-foreground));
+        }
+
+        /* Action Button */
+        .action-button {
+          background-color: hsl(var(--primary));
+          color: hsl(var(--primary-foreground));
+          height: 2.75rem;
+          padding: 0 1.5rem;
+          border-radius: 0.5rem;
+          font-size: 0.875rem;
+          font-weight: 500;
+          transition: all 0.2s ease;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          border: none;
+          cursor: pointer;
+          white-space: nowrap;
+          text-decoration: none;
+        }
+
+        .action-button:hover {
+          background-color: hsl(var(--primary) / 0.9);
+        }
+
+        /* Project Image */
+        .project-image {
+          width: 100%;
+          max-width: 600px;
+          height: auto;
+          border-radius: 1rem;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease;
+        }
+
+        .project-image:hover {
+          transform: scale(1.02);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+          .content-grid {
+            grid-template-columns: 1fr;
+          }
+          
+          .project-header-card {
+            padding: 1.5rem;
+          }
+          
+          .project-card {
+            padding: 1.5rem;
+          }
+        }
+
+        /* Sticky positioning for sidebar */
+        @media (min-width: 768px) {
+          .sticky-sidebar {
+            position: sticky;
+            top: 6rem;
+          }
+        }
+
+        /* Animation delays */
+        .project-card:nth-child(1) {
+          animation-delay: 0.1s;
+        }
+
+        .project-card:nth-child(2) {
+          animation-delay: 0.2s;
+        }
+
+        .project-card:nth-child(3) {
+          animation-delay: 0.3s;
+        }
+
+        .stats-card {
+          animation-delay: 0.25s;
+        }
+
+        /* Focus states for accessibility */
+        .back-button:focus,
+        .action-button:focus,
+        .skill-pill:focus,
+        .tech-pill:focus {
+          outline: 2px solid hsl(var(--ring));
+          outline-offset: 2px;
+        }
+
+        /* Breadcrumb styles */
+        .breadcrumb {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          font-size: 0.875rem;
+          color: hsl(var(--muted-foreground));
+        }
+
+        .breadcrumb a {
+          transition: color 0.2s ease;
+          text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+          color: hsl(var(--primary));
+        }
+    </style>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        heading: ['"Outfit"', 'sans-serif'],
+                    },
+                    colors: {
+                        border: "hsl(var(--border))",
+                        input: "hsl(var(--input))",
+                        ring: "hsl(var(--ring))",
+                        background: "hsl(var(--background))",
+                        foreground: "hsl(var(--foreground))",
+                        primary: {
+                            DEFAULT: "hsl(var(--primary))",
+                            foreground: "hsl(var(--primary-foreground))",
+                        },
+                        secondary: {
+                            DEFAULT: "hsl(var(--secondary))",
+                            foreground: "hsl(var(--secondary-foreground))",
+                        },
+                        destructive: {
+                            DEFAULT: "hsl(var(--destructive))",
+                            foreground: "hsl(var(--destructive-foreground))",
+                        },
+                        muted: {
+                            DEFAULT: "hsl(var(--muted))",
+                            foreground: "hsl(var(--muted-foreground))",
+                        },
+                        accent: {
+                            DEFAULT: "hsl(var(--accent))",
+                            foreground: "hsl(var(--accent-foreground))",
+                        },
+                        popover: {
+                            DEFAULT: "hsl(var(--popover))",
+                            foreground: "hsl(var(--popover-foreground))",
+                        },
+                        card: {
+                            DEFAULT: "hsl(var(--card))",
+                            foreground: "hsl(var(--card-foreground))",
+                        },
+                    },
+                    borderRadius: {
+                        lg: "var(--radius)",
+                        md: "calc(var(--radius) - 2px)",
+                        sm: "calc(var(--radius) - 4px)",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background text-foreground font-sans antialiased project-detail">
+    
+    <!-- Navbar -->
+    {% include EpTemplates2/classic/nav.html page=page %}
+
+    <main class="pt-24 pb-16">
+        <!-- Breadcrumb -->
+        <div class="container mx-auto px-6 mb-8">
+            <nav class="breadcrumb">
+                <a href="classic.md" class="hover:text-primary transition-colors">Home</a>
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                <a href="index.html#projects" class="hover:text-primary transition-colors">Projects</a>
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                <span class="text-foreground">{{ page.project_name | default: "Project Details" }}</span>
+            </nav>
+        </div>
+
+        <!-- Project Detail Section -->
+        <section class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                
+                <!-- Header Card -->
+                <div class="project-header-card p-8 md:p-12 mb-8 animate-fade-in-up">
+                    <div class="flex flex-wrap items-center gap-3 mb-6">
+                        <span class="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold border border-primary/20">
+                            {{ page.project_type | default: "Web Application" }}
+                        </span>
+                        {% if page.status %}
+                        <span class="inline-flex items-center px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-semibold border border-accent/20">
+                            <i data-lucide="check-circle" class="w-3.5 h-3.5 mr-1.5"></i>
+                            {{ page.status }}
+                        </span>
+                        {% endif %}
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl font-heading font-bold mb-4 tracking-tight project-title">
+                        {{ page.project_name | default: "Project Name" }}
+                    </h1>
+                    
+                    <p class="text-xl text-foreground/80 mb-6 project-description">
+                        {{ page.short_description | default: "Project description" }}
+                    </p>
+
+                    {% if page.image %}
+                    <div class="mb-6">
+                        <img src="{{ page.image }}" alt="{{ page.project_name }}" class="project-image">
+                    </div>
+                    {% endif %}
+
+                    <div class="flex flex-wrap items-center gap-4 text-muted-foreground mb-6">
+                        {% if page.duration %}
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="clock" class="w-4 h-4"></i>
+                            <span>{{ page.duration }}</span>
+                        </div>
+                        {% endif %}
+                        {% if page.team_size %}
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="users" class="w-4 h-4"></i>
+                            <span>{{ page.team_size }}</span>
+                        </div>
+                        {% endif %}
+                        {% if page.role %}
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="user" class="w-4 h-4"></i>
+                            <span>{{ page.role }}</span>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- Content Grid -->
+                <div class="content-grid">
+                    
+                    <!-- Main Content -->
+                    <div class="space-y-8">
+                        
+                        <!-- Overview -->
+                        {% if page.description %}
+                        <div class="project-card p-8 animate-fade-in-up" style="animation-delay: 0.1s">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="icon-container">
+                                    <i data-lucide="file-text" class="w-5 h-5"></i>
+                                </div>
+                                <h2 class="text-2xl font-heading font-bold">Project Overview</h2>
+                            </div>
+                            <div class="text-muted-foreground leading-relaxed text-lg">
+                                {{ page.description }}
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <!-- Key Features -->
+                        {% if page.features %}
+                        <div class="project-card p-8 animate-fade-in-up" style="animation-delay: 0.2s">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="icon-container icon-container-accent">
+                                    <i data-lucide="star" class="w-5 h-5"></i>
+                                </div>
+                                <h2 class="text-2xl font-heading font-bold">Key Features</h2>
+                            </div>
+                            <div class="space-y-4 text-muted-foreground leading-relaxed">
+                                <ul class="feature-list">
+                                    {% for feature in page.features %}
+                                    <li class="feature-item">
+                                        <i data-lucide="check-circle" class="feature-icon"></i>
+                                        <span>{{ feature }}</span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <!-- Challenges & Solutions -->
+                        {% if page.challenges %}
+                        <div class="project-card p-8 animate-fade-in-up" style="animation-delay: 0.2s">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="icon-container icon-container-accent">
+                                    <i data-lucide="lightbulb" class="w-5 h-5"></i>
+                                </div>
+                                <h2 class="text-2xl font-heading font-bold">Challenges & Solutions</h2>
+                            </div>
+                            <div class="space-y-4 text-muted-foreground leading-relaxed">
+                                <ul class="challenge-list">
+                                    {% for challenge in page.challenges %}
+                                    <li class="challenge-item">
+                                        <i data-lucide="arrow-right" class="challenge-icon"></i>
+                                        <span>{{ challenge }}</span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <!-- Action Buttons -->
+                        <div class="gradient-card animate-fade-in-up" style="animation-delay: 0.3s">
+                            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="icon-container">
+                                        <i data-lucide="external-link" class="w-7 h-7"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-lg mb-1">View Project</h3>
+                                        <p class="text-sm text-muted-foreground">Explore the live project</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3">
+                                    {% if page.live_url %}
+                                    <a href="{{ page.live_url }}" class="action-button" target="_blank">
+                                        <i data-lucide="globe" class="w-4 h-4"></i>
+                                        Live Demo
+                                    </a>
+                                    {% endif %}
+                                    {% if page.github_url %}
+                                    <a href="{{ page.github_url }}" class="action-button" target="_blank">
+                                        <i data-lucide="github" class="w-4 h-4"></i>
+                                        Source Code
+                                    </a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="space-y-6">
+                        
+                        <!-- Technologies -->
+                        {% if page.technologies %}
+                        <div class="project-card p-6 sticky-sidebar animate-fade-in-up" style="animation-delay: 0.15s">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="icon-container">
+                                    <i data-lucide="code-2" class="w-5 h-5"></i>
+                                </div>
+                                <h2 class="text-xl font-heading font-bold">Technologies</h2>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-2">
+                                {% for tech in page.technologies %}
+                                <span class="tech-pill">{{ tech }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <!-- Project Stats -->
+                        {% if page.stats %}
+                        <div class="stats-card animate-fade-in-up" style="animation-delay: 0.25s">
+                            <h3 class="font-bold text-lg mb-4">Project Stats</h3>
+                            <div class="space-y-4">
+                                {% if page.stats.lines_of_code %}
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-muted-foreground">Lines of Code</span>
+                                    <span class="font-bold text-primary">{{ page.stats.lines_of_code }}</span>
+                                </div>
+                                {% endif %}
+                                {% if page.stats.commits %}
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-muted-foreground">Commits</span>
+                                    <span class="font-bold text-primary">{{ page.stats.commits }}</span>
+                                </div>
+                                {% endif %}
+                                {% if page.stats.duration %}
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-muted-foreground">Duration</span>
+                                    <span class="font-bold text-primary">{{ page.stats.duration }}</span>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <!-- Back Button -->
+                        <a href="classic.md#projects" class="back-button">
+                            <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                            Back to Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    {% include EpTemplates2/classic/footer.html %}
+
+    <!-- JavaScript -->
+    <script>
+        // Project Details Page JavaScript
+        
+        class ProjectDetailsPage {
+            constructor() {
+                this.themes = ['light', 'dark', 'gradient'];
+                this.currentThemeIndex = 0;
+                this.initializeTheme();
+                this.initializeMobileMenu();
+                this.initializeLucideIcons();
+            }
+
+            // Theme Management
+            initializeTheme() {
+                const themeToggle = document.getElementById('theme-toggle');
+                const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+                const html = document.documentElement;
+
+                // Load saved theme or detect system preference
+                if (localStorage.getItem('theme') === 'dark' || 
+                    (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    this.currentThemeIndex = 1;
+                    html.classList.add('dark');
+                } else if (localStorage.getItem('theme') === 'gradient') {
+                    this.currentThemeIndex = 2;
+                    html.classList.add('gradient');
+                }
+
+                // Update icons based on current theme
+                this.updateThemeIcons();
+
+                // Event listeners for theme toggles
+                if (themeToggle) {
+                    themeToggle.addEventListener('click', () => this.cycleTheme());
+                }
+                
+                if (mobileThemeToggle) {
+                    mobileThemeToggle.addEventListener('click', () => this.cycleTheme());
+                }
+            }
+
+            cycleTheme() {
+                this.currentThemeIndex = (this.currentThemeIndex + 1) % this.themes.length;
+                this.updateTheme();
+            }
+
+            updateTheme() {
+                const html = document.documentElement;
+                html.classList.remove('dark', 'gradient');
+                
+                const currentTheme = this.themes[this.currentThemeIndex];
+                
+                if (currentTheme === 'dark') {
+                    html.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
+                } else if (currentTheme === 'gradient') {
+                    html.classList.add('gradient');
+                    localStorage.setItem('theme', 'gradient');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                }
+                
+                this.updateThemeIcons();
+            }
+
+            updateThemeIcons() {
+                const themeToggles = document.querySelectorAll('#theme-toggle, #mobile-theme-toggle');
+                
+                themeToggles.forEach(toggle => {
+                    const sunIcon = toggle.querySelector('[data-lucide="sun"]');
+                    const moonIcon = toggle.querySelector('[data-lucide="moon"]');
+                    const sparklesIcon = toggle.querySelector('[data-lucide="sparkles"]');
+                    
+                    // Hide all icons first
+                    [sunIcon, moonIcon, sparklesIcon].forEach(icon => {
+                        if (icon) {
+                            icon.classList.add('hidden');
+                        }
+                    });
+                    
+                    // Show appropriate icon based on theme
+                    if (this.currentThemeIndex === 0) { // Light
+                        if (sunIcon) sunIcon.classList.remove('hidden');
+                    } else if (this.currentThemeIndex === 1) { // Dark
+                        if (moonIcon) moonIcon.classList.remove('hidden');
+                    } else if (this.currentThemeIndex === 2) { // Gradient
+                        if (sparklesIcon) {
+                            sparklesIcon.classList.remove('hidden');
+                            sparklesIcon.classList.add('text-primary');
+                        }
+                    }
+                });
+            }
+
+            // Mobile Menu Management
+            initializeMobileMenu() {
+                const menuToggle = document.getElementById('menu-toggle');
+                const mobileMenu = document.getElementById('mobile-menu');
+
+                if (menuToggle && mobileMenu) {
+                    menuToggle.addEventListener('click', () => {
+                        this.toggleMobileMenu(mobileMenu);
+                    });
+
+                    // Close mobile menu when clicking on links
+                    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                    mobileMenuLinks.forEach(link => {
+                        link.addEventListener('click', () => {
+                            this.closeMobileMenu(mobileMenu);
+                        });
+                    });
+
+                    // Close mobile menu when clicking outside
+                    document.addEventListener('click', (event) => {
+                        if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+                            this.closeMobileMenu(mobileMenu);
+                        }
+                    });
+                }
+            }
+
+            toggleMobileMenu(mobileMenu) {
+                mobileMenu.classList.toggle('hidden');
+                
+                // Update menu icon
+                const menuIcon = document.querySelector('#menu-toggle [data-lucide]');
+                if (menuIcon) {
+                    if (mobileMenu.classList.contains('hidden')) {
+                        menuIcon.setAttribute('data-lucide', 'menu');
+                    } else {
+                        menuIcon.setAttribute('data-lucide', 'x');
+                    }
+                    
+                    // Re-initialize icons after changing the icon
+                    this.initializeLucideIcons();
+                }
+            }
+
+            closeMobileMenu(mobileMenu) {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Reset menu icon to hamburger
+                    const menuIcon = document.querySelector('#menu-toggle [data-lucide]');
+                    if (menuIcon) {
+                        menuIcon.setAttribute('data-lucide', 'menu');
+                        this.initializeLucideIcons();
+                    }
+                }
+            }
+
+            // Initialize Lucide Icons
+            initializeLucideIcons() {
+                if (typeof lucide !== 'undefined') {
+                    lucide.createIcons();
+                }
+            }
+
+            // Smooth scroll for anchor links
+            initializeSmoothScroll() {
+                const links = document.querySelectorAll('a[href^="#"]');
+                links.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const targetId = link.getAttribute('href').substring(1);
+                        const targetElement = document.getElementById(targetId);
+                        
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    });
+                });
+            }
+
+            // Initialize animation on scroll
+            initializeScrollAnimations() {
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animate-fade-in-up');
+                        }
+                    });
+                }, observerOptions);
+
+                // Observe elements with animation delay
+                const animatedElements = document.querySelectorAll('[style*="animation-delay"]');
+                animatedElements.forEach(element => {
+                    observer.observe(element);
+                });
+            }
+
+            // Keyboard navigation
+            initializeKeyboardNavigation() {
+                document.addEventListener('keydown', (e) => {
+                    // ESC key closes mobile menu
+                    if (e.key === 'Escape') {
+                        const mobileMenu = document.getElementById('mobile-menu');
+                        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                            this.closeMobileMenu(mobileMenu);
+                        }
+                    }
+                    
+                    // Theme cycling with Ctrl/Cmd + T
+                    if ((e.ctrlKey || e.metaKey) && e.key === 't') {
+                        e.preventDefault();
+                        this.cycleTheme();
+                    }
+                });
+            }
+
+            // Initialize all functionality
+            init() {
+                this.initializeSmoothScroll();
+                this.initializeScrollAnimations();
+                this.initializeKeyboardNavigation();
+                
+                // Initial icon initialization
+                this.initializeLucideIcons();
+                
+                console.log('Project Details Page initialized successfully');
+            }
+        }
+
+        // Auto-initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const projectPage = new ProjectDetailsPage();
+            projectPage.init();
+        });
+    </script>
+</body>
+</html>

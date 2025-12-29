@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+    <title>{{ page.job_title | default: "Experience Details" }} | {{ site.title | default: "Portfolio" }}</title>
+    <meta name="description" content="Details about my role as {{ page.job_title | default: "Professional" }} at {{ page.company_name | default: "Company" }}." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- ==========================================================================
+         Improved CSS Styles - All-in-One Implementation
+         ========================================================================== -->
+    <style>
+        /* ==========================================================================
+           Experience Details Page Styles - IMPROVED VERSION
+           ========================================================================== */
+
+        /* ==========================================================================
+           CSS Custom Properties (Variables)
+           ========================================================================== */
+
+        /* Base Variables - Light Mode Default */
+        :root {
+          /* Color System */
+          --background: 0 0% 100%;
+          --foreground: 240 10% 3.9%;
+          --card: 0 0% 100%;
+          --card-foreground: 240 10% 3.9%;
+          --popover: 0 0% 100%;
+          --popover-foreground: 240 10% 3.9%;
+          --primary: 240 5.9% 10%;
+          --primary-foreground: 0 0% 98%;
+          --secondary: 240 4.8% 95.9%;
+          --secondary-foreground: 240 5.9% 10%;
+          --muted: 240 4.8% 95.9%;
+          --muted-foreground: 240 3.8% 46.1%;
+          --accent: 240 4.8% 95.9%;
+          --accent-foreground: 240 5.9% 10%;
+          --destructive: 0 84.2% 60.2%;
+          --destructive-foreground: 0 0% 98%;
+          --border: 240 5.9% 90%;
+          --input: 240 5.9% 90%;
+          --ring: 240 5.9% 10%;
+          
+          /* Spacing System */
+          --space-xs: 0.25rem;
+          --space-sm: 0.5rem;
+          --space-md: 1rem;
+          --space-lg: 1.5rem;
+          --space-xl: 2rem;
+          --space-2xl: 3rem;
+          
+          /* Typography */
+          --radius: 0.75rem;
+          --font-size-sm: 0.875rem;
+          --font-size-base: 1rem;
+          --font-size-lg: 1.125rem;
+          
+          /* Animation */
+          --transition-fast: 0.15s ease;
+          --transition-normal: 0.2s ease;
+          --transition-slow: 0.3s ease;
+          --animation-duration: 0.8s;
+        }
+
+        /* Dark Mode */
+        @media (prefers-color-scheme: dark) {
+          :root {
+            --background: 240 10% 3.9%;
+            --foreground: 0 0% 98%;
+            --card: 240 10% 3.9%;
+            --card-foreground: 0 0% 98%;
+            --popover: 240 10% 3.9%;
+            --popover-foreground: 0 0% 98%;
+            --primary: 0 0% 98%;
+            --primary-foreground: 240 5.9% 10%;
+            --secondary: 240 3.7% 15.9%;
+            --secondary-foreground: 0 0% 98%;
+            --muted: 240 3.7% 15.9%;
+            --muted-foreground: 240 5% 64.9%;
+            --accent: 240 3.7% 15.9%;
+            --accent-foreground: 0 0% 98%;
+            --destructive: 0 62.8% 30.6%;
+            --destructive-foreground: 0 0% 98%;
+            --border: 240 3.7% 15.9%;
+            --input: 240 3.7% 15.9%;
+            --ring: 240 4.9% 83.9%;
+          }
+        }
+
+        /* Manual Dark Mode Override */
+        .dark {
+          --background: 240 10% 3.9%;
+          --foreground: 0 0% 98%;
+          --card: 240 10% 3.9%;
+          --card-foreground: 0 0% 98%;
+          --popover: 240 10% 3.9%;
+          --popover-foreground: 0 0% 98%;
+          --primary: 0 0% 98%;
+          --primary-foreground: 240 5.9% 10%;
+          --secondary: 240 3.7% 15.9%;
+          --secondary-foreground: 0 0% 98%;
+          --muted: 240 3.7% 15.9%;
+          --muted-foreground: 240 5% 64.9%;
+          --accent: 240 3.7% 15.9%;
+          --accent-foreground: 0 0% 98%;
+          --destructive: 0 62.8% 30.6%;
+          --destructive-foreground: 0 0% 98%;
+          --border: 240 3.7% 15.9%;
+          --input: 240 3.7% 15.9%;
+          --ring: 240 4.9% 83.9%;
+        }
+
+        /* Gradient Mode */
+        .gradient {
+          --background: 260 50% 10%;
+          --foreground: 210 40% 98%;
+          --card: 260 50% 15%;
+          --card-foreground: 210 40% 98%;
+          --popover: 260 50% 15%;
+          --popover-foreground: 210 40% 98%;
+          --primary: 280 80% 60%;
+          --primary-foreground: 210 40% 98%;
+          --secondary: 260 30% 20%;
+          --secondary-foreground: 210 40% 98%;
+          --muted: 260 30% 20%;
+          --muted-foreground: 260 20% 70%;
+          --accent: 320 80% 60%;
+          --accent-foreground: 210 40% 98%;
+          --destructive: 0 62.8% 30.6%;
+          --destructive-foreground: 0 0% 98%;
+          --border: 260 30% 25%;
+          --input: 260 30% 25%;
+          --ring: 280 80% 60%;
+        }
+
+        /* ==========================================================================
+           Scrollbar Styling
+           ========================================================================== */
+
+        ::-webkit-scrollbar {
+          width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+          background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background-color: hsl(var(--muted-foreground) / 0.2);
+          border-radius: 9999px;
+          transition: background-color var(--transition-normal);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+          background-color: hsl(var(--muted-foreground) / 0.4);
+        }
+
+        /* ==========================================================================
+           Animation Keyframes
+           ========================================================================== */
+
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        /* Animation Classes */
+        .animate-fade-in-up {
+          animation: fadeInUp var(--animation-duration) ease-out forwards;
+        }
+
+        /* ==========================================================================
+           Base Layout Components
+           ========================================================================== */
+
+        .experience-detail {
+          background-color: hsl(var(--background));
+          color: hsl(var(--foreground));
+          transition: background-color var(--transition-slow), color var(--transition-slow);
+        }
+
+        /* ==========================================================================
+           Grid System
+           ========================================================================== */
+
+        .content-grid {
+          display: grid;
+          gap: var(--space-xl);
+        }
+
+        @media (min-width: 768px) {
+          .content-grid {
+            grid-template-columns: 2fr 1fr;
+          }
+        }
+
+        /* ==========================================================================
+           Card Components
+           ========================================================================== */
+
+        /* Header Card */
+        .experience-header-card {
+          background: linear-gradient(
+            to bottom right,
+            hsl(var(--card)),
+            hsl(var(--muted) / 0.3)
+          );
+          border-radius: 1.5rem;
+          border: 1px solid hsl(var(--border) / 0.5);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+          transition: all var(--transition-slow);
+          overflow: hidden;
+        }
+
+        .experience-header-card:hover {
+          box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.15);
+          transform: translateY(-2px);
+        }
+
+        /* Experience Card */
+        .experience-card {
+          background-color: hsl(var(--card));
+          border: 1px solid hsl(var(--border) / 0.5);
+          border-radius: var(--radius);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          transition: all var(--transition-normal);
+          overflow: hidden;
+          animation: fadeInUp var(--animation-duration) ease-out forwards;
+        }
+
+        .experience-card:hover {
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+          transform: translateY(-2px);
+        }
+
+        /* ==========================================================================
+           Interactive Elements
+           ========================================================================== */
+
+        /* Icon Containers */
+        .icon-container {
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 0.75rem;
+          background-color: hsl(var(--primary) / 0.1);
+          color: hsl(var(--primary));
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all var(--transition-normal);
+        }
+
+        .icon-container-accent {
+          background-color: hsl(var(--accent) / 0.1);
+          color: hsl(var(--accent));
+        }
+
+        /* Skills Pills */
+        .skill-pill {
+          display: inline-flex;
+          align-items: center;
+          padding: 0.375rem var(--space-sm);
+          border-radius: 0.5rem;
+          background-color: hsl(var(--muted));
+          color: hsl(var(--muted-foreground));
+          font-size: var(--font-size-sm);
+          font-weight: 500;
+          border: 1px solid hsl(var(--border) / 0.5);
+          transition: all var(--transition-normal);
+          cursor: default;
+          user-select: none;
+        }
+
+        .skill-pill:hover {
+          background-color: hsl(var(--muted) / 0.8);
+          transform: translateY(-1px);
+        }
+
+        .skill-pill:focus {
+          outline: 2px solid hsl(var(--ring));
+          outline-offset: 2px;
+        }
+
+        /* ==========================================================================
+           Specialized Card Types
+           ========================================================================== */
+
+        /* Gradient Card */
+        .gradient-card {
+          background: linear-gradient(
+            to bottom right,
+            hsl(var(--primary) / 0.05),
+            hsl(var(--accent) / 0.05)
+          );
+          border: 1px solid hsl(var(--primary) / 0.2);
+          border-radius: var(--radius);
+          padding: var(--space-xl);
+        }
+
+        /* Stats Card */
+        .stats-card {
+          background: linear-gradient(
+            to bottom right,
+            hsl(var(--primary) / 0.05),
+            hsl(var(--accent) / 0.05)
+          );
+          border: 1px solid hsl(var(--primary) / 0.2);
+          border-radius: var(--radius);
+          padding: var(--space-lg);
+          animation: fadeInUp var(--animation-duration) ease-out forwards;
+          animation-delay: 0.25s;
+        }
+
+        /* ==========================================================================
+           Lists and Content
+           ========================================================================== */
+
+        /* Achievement List */
+        .achievement-list,
+        .responsibility-list {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        .achievement-item,
+        .responsibility-item {
+          display: flex;
+          align-items: flex-start;
+          gap: var(--space-sm);
+          margin-bottom: var(--space-sm);
+        }
+
+        .achievement-icon,
+        .responsibility-icon {
+          width: 1.25rem;
+          height: 1.25rem;
+          color: hsl(var(--primary));
+          margin-top: 0.125rem;
+          flex-shrink: 0;
+        }
+
+        /* ==========================================================================
+           Navigation Components
+           ========================================================================== */
+
+        /* Back Button */
+        .back-button {
+          width: 100%;
+          border: 1px solid hsl(var(--input));
+          background-color: hsl(var(--background));
+          color: hsl(var(--foreground));
+          height: 2.75rem;
+          padding: 0 var(--space-md);
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 0.5rem;
+          font-size: var(--font-size-sm);
+          font-weight: 500;
+          transition: all var(--transition-normal);
+          gap: var(--space-sm);
+          cursor: pointer;
+          text-decoration: none;
+        }
+
+        .back-button:hover {
+          background-color: hsl(var(--accent));
+          color: hsl(var(--accent-foreground));
+        }
+
+        .back-button:focus {
+          outline: 2px solid hsl(var(--ring));
+          outline-offset: 2px;
+        }
+
+        /* Download Button */
+        .download-button {
+          background-color: hsl(var(--primary));
+          color: hsl(var(--primary-foreground));
+          height: 2.75rem;
+          padding: 0 var(--space-lg);
+          border-radius: 0.5rem;
+          font-size: var(--font-size-sm);
+          font-weight: 500;
+          transition: all var(--transition-normal);
+          display: inline-flex;
+          align-items: center;
+          gap: var(--space-sm);
+          border: none;
+          cursor: pointer;
+          white-space: nowrap;
+        }
+
+        .download-button:hover {
+          background-color: hsl(var(--primary) / 0.9);
+          transform: translateY(-1px);
+        }
+
+        .download-button:focus {
+          outline: 2px solid hsl(var(--ring));
+          outline-offset: 2px;
+        }
+
+        /* ==========================================================================
+           Breadcrumb Navigation
+           ========================================================================== */
+
+        .breadcrumb {
+          display: flex;
+          align-items: center;
+          gap: var(--space-sm);
+          font-size: var(--font-size-sm);
+          color: hsl(var(--muted-foreground));
+          flex-wrap: wrap;
+        }
+
+        .breadcrumb a {
+          color: hsl(var(--muted-foreground));
+          text-decoration: none;
+          transition: color var(--transition-normal);
+        }
+
+        .breadcrumb a:hover {
+          color: hsl(var(--primary));
+        }
+
+        /* ==========================================================================
+           Mobile Responsive Design
+           ========================================================================== */
+
+        @media (max-width: 768px) {
+          .content-grid {
+            grid-template-columns: 1fr;
+            gap: var(--space-lg);
+          }
+          
+          .experience-header-card {
+            padding: var(--space-lg);
+            border-radius: var(--radius);
+          }
+          
+          .experience-card {
+            padding: var(--space-lg);
+            border-radius: var(--radius);
+          }
+          
+          .breadcrumb {
+            font-size: var(--font-size-sm);
+            gap: var(--space-xs);
+          }
+        }
+
+        /* ==========================================================================
+           Sticky Positioning
+           ========================================================================== */
+
+        @media (min-width: 768px) {
+          .sticky-sidebar {
+            position: sticky;
+            top: 6rem;
+            max-height: calc(100vh - 8rem);
+            overflow-y: auto;
+          }
+        }
+
+        /* ==========================================================================
+           Animation Delays (Optimized)
+           ========================================================================== */
+
+        /* Use CSS custom properties for dynamic animation delays */
+        .experience-card {
+          animation-delay: calc(var(--animation-delay, 0) * 1s);
+        }
+
+        /* Individual card delays for staggered animations */
+        .experience-card:nth-child(1) { --animation-delay: 0.1; }
+        .experience-card:nth-child(2) { --animation-delay: 0.2; }
+        .experience-card:nth-child(3) { --animation-delay: 0.3; }
+
+        .stats-card {
+          animation-delay: 0.25s;
+        }
+
+        /* ==========================================================================
+           High Performance and Accessibility
+           ========================================================================== */
+
+        /* Reduce motion for users who prefer it */
+        @media (prefers-reduced-motion: reduce) {
+          *,
+          *::before,
+          *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+          }
+          
+          .experience-card:hover,
+          .skill-pill:hover,
+          .back-button:hover,
+          .download-button:hover {
+            transform: none !important;
+          }
+        }
+
+        /* Focus management for better accessibility */
+        .skill-pill:focus-visible,
+        .back-button:focus-visible,
+        .download-button:focus-visible {
+          outline: 2px solid hsl(var(--ring));
+          outline-offset: 2px;
+        }
+
+        /* ==========================================================================
+           Print Styles
+           ========================================================================== */
+
+        @media print {
+          .back-button,
+          .download-button {
+            display: none !important;
+          }
+          
+          .experience-card,
+          .experience-header-card {
+            box-shadow: none !important;
+            border: 1px solid #000 !important;
+            break-inside: avoid;
+          }
+          
+          .content-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+    </style>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        heading: ['"Outfit"', 'sans-serif'],
+                    },
+                    colors: {
+                        border: "hsl(var(--border))",
+                        input: "hsl(var(--input))",
+                        ring: "hsl(var(--ring))",
+                        background: "hsl(var(--background))",
+                        foreground: "hsl(var(--foreground))",
+                        primary: {
+                            DEFAULT: "hsl(var(--primary))",
+                            foreground: "hsl(var(--primary-foreground))",
+                        },
+                        secondary: {
+                            DEFAULT: "hsl(var(--secondary))",
+                            foreground: "hsl(var(--secondary-foreground))",
+                        },
+                        destructive: {
+                            DEFAULT: "hsl(var(--destructive))",
+                            foreground: "hsl(var(--destructive-foreground))",
+                        },
+                        muted: {
+                            DEFAULT: "hsl(var(--muted))",
+                            foreground: "hsl(var(--muted-foreground))",
+                        },
+                        accent: {
+                            DEFAULT: "hsl(var(--accent))",
+                            foreground: "hsl(var(--accent-foreground))",
+                        },
+                        popover: {
+                            DEFAULT: "hsl(var(--popover))",
+                            foreground: "hsl(var(--popover-foreground))",
+                        },
+                        card: {
+                            DEFAULT: "hsl(var(--card))",
+                            foreground: "hsl(var(--card-foreground))",
+                        },
+                    },
+                    borderRadius: {
+                        lg: "var(--radius)",
+                        md: "calc(var(--radius) - 2px)",
+                        sm: "calc(var(--radius) - 4px)",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background text-foreground font-sans antialiased experience-detail">
+    
+    <!-- Navbar -->
+    {% include EpTemplates2/classic/nav.html page=page %}
+
+    <main class="pt-24 pb-16">
+        <!-- Breadcrumb -->
+        <div class="container mx-auto px-6 mb-8">
+            <nav class="breadcrumb">
+                <a href="classic.html" class="hover:text-primary transition-colors">Home</a>
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                <a href="classic.html#experience" class="hover:text-primary transition-colors">Experience</a>
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                <span class="text-foreground">{{ page.job_title | default: "Experience Details" }}</span>
+            </nav>
+        </div>
+
+        <!-- Experience Detail Section -->
+        <section class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                
+                <!-- Header Card -->
+                <div class="experience-header-card p-8 md:p-12 mb-8 animate-fade-in-up">
+                    <div class="flex flex-wrap items-center gap-3 mb-6">
+                        <span class="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold border border-primary/20">
+                            {{ page.employment_type | default: "Full-Time" }}
+                        </span>
+                        {% if page.current_role %}
+                        <span class="inline-flex items-center px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-semibold border border-accent/20">
+                            <i data-lucide="briefcase" class="w-3.5 h-3.5 mr-1.5"></i>
+                            Current Role
+                        </span>
+                        {% endif %}
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl font-heading font-bold mb-4 tracking-tight experience-title">
+                        {{ page.job_title | default: "Job Title" }}
+                    </h1>
+                    
+                    <p class="text-2xl font-medium text-foreground/80 mb-3 experience-company">
+                        {{ page.company_name | default: "Company Name" }}
+                    </p>
+
+                    <div class="flex flex-wrap items-center gap-4 text-muted-foreground mb-6">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <span>{{ page.location | default: "Location" }} ({{ page.location_type | default: "Location Type" }})</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="calendar" class="w-4 h-4"></i>
+                            <span>{{ page.start_date | default: "Start Date" }} – {{ page.end_date | default: "End Date" }}</span>
+                        </div>
+                    </div>
+
+                    {% if page.duration %}
+                    <div class="flex items-center gap-2 text-sm font-medium text-muted-foreground">
+                        <i data-lucide="clock" class="w-4 h-4"></i>
+                        <span>Duration: {{ page.duration }}</span>
+                    </div>
+                    {% endif %}
+                </div>
+
+                <!-- Content Grid -->
+                <div class="content-grid">
+                    
+                    <!-- Main Content -->
+                    <div class="space-y-8">
+                        
+                        <!-- Profile Summary -->
+                        {% if page.profile %}
+                        <div class="experience-card p-8 animate-fade-in-up" style="animation-delay: 0.1s">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="icon-container">
+                                    <i data-lucide="user" class="w-5 h-5"></i>
+                                </div>
+                                <h2 class="text-2xl font-heading font-bold">Profile Summary</h2>
+                            </div>
+                            <div class="text-muted-foreground leading-relaxed text-lg">
+                                {{ page.profile }}
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <!-- Job Description -->
+                        {% if page.job_description %}
+                        <div class="experience-card p-8 animate-fade-in-up" style="animation-delay: 0.2s">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="icon-container icon-container-accent">
+                                    <i data-lucide="file-text" class="w-5 h-5"></i>
+                                </div>
+                                <h2 class="text-2xl font-heading font-bold">Job Description</h2>
+                            </div>
+                            <div class="space-y-4 text-muted-foreground leading-relaxed">
+                                {{ page.job_description }}
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <!-- Responsibilities -->
+                        {% if page.responsibilities %}
+                        <div class="experience-card p-8 animate-fade-in-up" style="animation-delay: 0.2s">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="icon-container icon-container-accent">
+                                    <i data-lucide="list-todo" class="w-5 h-5"></i>
+                                </div>
+                                <h2 class="text-2xl font-heading font-bold">Key Responsibilities</h2>
+                            </div>
+                            <div class="space-y-4 text-muted-foreground leading-relaxed">
+                                <ul class="responsibility-list">
+                                    {% for responsibility in page.responsibilities %}
+                                    <li class="responsibility-item">
+                                        <i data-lucide="check-circle" class="responsibility-icon"></i>
+                                        <span>{{ responsibility }}</span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <!-- Achievements -->
+                        {% if page.achievements %}
+                        <div class="experience-card p-8 animate-fade-in-up" style="animation-delay: 0.2s">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="icon-container icon-container-accent">
+                                    <i data-lucide="check-circle" class="w-5 h-5"></i>
+                                </div>
+                                <h2 class="text-2xl font-heading font-bold">Key Achievements</h2>
+                            </div>
+                            <div class="space-y-4 text-muted-foreground leading-relaxed">
+                                <ul class="achievement-list">
+                                    {% for achievement in page.achievements %}
+                                    <li class="achievement-item">
+                                        <i data-lucide="check-circle" class="achievement-icon"></i>
+                                        <span>{{ achievement }}</span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <!-- Download Certificate -->
+                        <div class="gradient-card animate-fade-in-up" style="animation-delay: 0.3s">
+                            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="icon-container">
+                                        <i data-lucide="award" class="w-7 h-7"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-lg mb-1">Experience Certificate</h3>
+                                        <p class="text-sm text-muted-foreground">Download official certificate</p>
+                                    </div>
+                                </div>
+                                <button class="download-button">
+                                    <i data-lucide="download" class="w-4 h-4"></i>
+                                    Download PDF
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="space-y-6">
+                        
+                        <!-- Skills & Tools -->
+                        {% if page.skills %}
+                        <div class="experience-card p-6 sticky-sidebar animate-fade-in-up" style="animation-delay: 0.15s">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="icon-container">
+                                    <i data-lucide="code-2" class="w-5 h-5"></i>
+                                </div>
+                                <h2 class="text-xl font-heading font-bold">Skills & Tools</h2>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-2">
+                                {% for skill in page.skills %}
+                                <span class="skill-pill">{{ skill }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <!-- Quick Stats -->
+                        {% if page.stats %}
+                        <div class="stats-card animate-fade-in-up" style="animation-delay: 0.25s">
+                            <h3 class="font-bold text-lg mb-4">Quick Stats</h3>
+                            <div class="space-y-4">
+                                {% if page.stats.team_size %}
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-muted-foreground">Team Size</span>
+                                    <span class="font-bold text-primary">{{ page.stats.team_size }}</span>
+                                </div>
+                                {% endif %}
+                                {% if page.stats.projects_led %}
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-muted-foreground">Projects Led</span>
+                                    <span class="font-bold text-primary">{{ page.stats.projects_led }}</span>
+                                </div>
+                                {% endif %}
+                                {% if page.stats.performance_gain %}
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-muted-foreground">Performance Gain</span>
+                                    <span class="font-bold text-primary">{{ page.stats.performance_gain }}</span>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <!-- Back Button -->
+                        <a href="classic.html#experience" class="back-button">
+                            <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                            Back to Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    {% include EpTemplates2/classic/footer.html %}
+
+    <!-- ==========================================================================
+         Improved JavaScript - All-in-One Implementation
+         ========================================================================== -->
+    <script>
+        // Experience Details Page JavaScript - IMPROVED VERSION
+        
+        class ExperienceDetailsPage {
+            constructor() {
+                this.themes = ['light', 'dark', 'gradient'];
+                this.currentThemeIndex = 0;
+                this.isInitialized = false;
+                this.initializeTheme();
+                this.initializeMobileMenu();
+                this.initializeLucideIcons();
+            }
+
+            // Theme Management
+            initializeTheme() {
+                const themeToggle = document.getElementById('theme-toggle');
+                const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+                const html = document.documentElement;
+
+                // Load saved theme or detect system preference
+                if (localStorage.getItem('theme') === 'dark' || 
+                    (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    this.currentThemeIndex = 1;
+                    html.classList.add('dark');
+                } else if (localStorage.getItem('theme') === 'gradient') {
+                    this.currentThemeIndex = 2;
+                    html.classList.add('gradient');
+                }
+
+                // Update icons based on current theme
+                this.updateThemeIcons();
+
+                // Event listeners for theme toggles
+                if (themeToggle) {
+                    themeToggle.addEventListener('click', () => this.cycleTheme());
+                }
+                
+                if (mobileThemeToggle) {
+                    mobileThemeToggle.addEventListener('click', () => this.cycleTheme());
+                }
+
+                // Listen for system theme changes
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+                    if (!localStorage.getItem('theme')) {
+                        if (e.matches) {
+                            this.currentThemeIndex = 1;
+                            html.classList.add('dark');
+                            html.classList.remove('gradient');
+                        } else {
+                            this.currentThemeIndex = 0;
+                            html.classList.remove('dark', 'gradient');
+                        }
+                        this.updateThemeIcons();
+                    }
+                });
+            }
+
+            cycleTheme() {
+                this.currentThemeIndex = (this.currentThemeIndex + 1) % this.themes.length;
+                this.updateTheme();
+            }
+
+            updateTheme() {
+                const html = document.documentElement;
+                html.classList.remove('dark', 'gradient');
+                
+                const currentTheme = this.themes[this.currentThemeIndex];
+                
+                if (currentTheme === 'dark') {
+                    html.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
+                } else if (currentTheme === 'gradient') {
+                    html.classList.add('gradient');
+                    localStorage.setItem('theme', 'gradient');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                }
+                
+                this.updateThemeIcons();
+            }
+
+            updateThemeIcons() {
+                const themeToggles = document.querySelectorAll('#theme-toggle, #mobile-theme-toggle');
+                
+                themeToggles.forEach(toggle => {
+                    const sunIcon = toggle.querySelector('[data-lucide="sun"]');
+                    const moonIcon = toggle.querySelector('[data-lucide="moon"]');
+                    const sparklesIcon = toggle.querySelector('[data-lucide="sparkles"]');
+                    
+                    // Hide all icons first
+                    [sunIcon, moonIcon, sparklesIcon].forEach(icon => {
+                        if (icon) {
+                            icon.classList.add('hidden');
+                        }
+                    });
+                    
+                    // Show appropriate icon based on theme
+                    if (this.currentThemeIndex === 0) { // Light
+                        if (sunIcon) sunIcon.classList.remove('hidden');
+                    } else if (this.currentThemeIndex === 1) { // Dark
+                        if (moonIcon) moonIcon.classList.remove('hidden');
+                    } else if (this.currentThemeIndex === 2) { // Gradient
+                        if (sparklesIcon) {
+                            sparklesIcon.classList.remove('hidden');
+                            sparklesIcon.classList.add('text-primary');
+                        }
+                    }
+                });
+            }
+
+            // Mobile Menu Management
+            initializeMobileMenu() {
+                const menuToggle = document.getElementById('menu-toggle');
+                const mobileMenu = document.getElementById('mobile-menu');
+
+                if (menuToggle && mobileMenu) {
+                    menuToggle.addEventListener('click', () => {
+                        this.toggleMobileMenu(mobileMenu);
+                    });
+
+                    // Close mobile menu when clicking on links
+                    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                    mobileMenuLinks.forEach(link => {
+                        link.addEventListener('click', () => {
+                            this.closeMobileMenu(mobileMenu);
+                        });
+                    });
+
+                    // Close mobile menu when clicking outside
+                    document.addEventListener('click', (event) => {
+                        if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+                            this.closeMobileMenu(mobileMenu);
+                        }
+                    });
+                }
+            }
+
+            toggleMobileMenu(mobileMenu) {
+                mobileMenu.classList.toggle('hidden');
+                
+                // Update menu icon
+                const menuIcon = document.querySelector('#menu-toggle [data-lucide]');
+                if (menuIcon) {
+                    if (mobileMenu.classList.contains('hidden')) {
+                        menuIcon.setAttribute('data-lucide', 'menu');
+                    } else {
+                        menuIcon.setAttribute('data-lucide', 'x');
+                    }
+                    
+                    // Re-initialize icons after changing the icon
+                    this.initializeLucideIcons();
+                }
+            }
+
+            closeMobileMenu(mobileMenu) {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Reset menu icon to hamburger
+                    const menuIcon = document.querySelector('#menu-toggle [data-lucide]');
+                    if (menuIcon) {
+                        menuIcon.setAttribute('data-lucide', 'menu');
+                        this.initializeLucideIcons();
+                    }
+                }
+            }
+
+            // Initialize Lucide Icons
+            initializeLucideIcons() {
+                if (typeof lucide !== 'undefined') {
+                    try {
+                        lucide.createIcons();
+                    } catch (error) {
+                        console.warn('Lucide icons initialization failed:', error);
+                    }
+                }
+            }
+
+            // Smooth scroll for anchor links
+            initializeSmoothScroll() {
+                const links = document.querySelectorAll('a[href^="#"]');
+                links.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        const href = link.getAttribute('href');
+                        if (href === '#') return;
+                        
+                        e.preventDefault();
+                        const targetId = href.substring(1);
+                        const targetElement = document.getElementById(targetId);
+                        
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    });
+                });
+            }
+
+            // Initialize animation on scroll with Intersection Observer
+            initializeScrollAnimations() {
+                if ('IntersectionObserver' in window) {
+                    const observerOptions = {
+                        threshold: 0.1,
+                        rootMargin: '0px 0px -50px 0px'
+                    };
+
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('animate-fade-in-up');
+                                observer.unobserve(entry.target); // Only animate once
+                            }
+                        });
+                    }, observerOptions);
+
+                    // Observe elements with animation delay
+                    const animatedElements = document.querySelectorAll('[style*="animation-delay"]');
+                    animatedElements.forEach(element => {
+                        observer.observe(element);
+                    });
+                }
+            }
+
+            // Download functionality
+            initializeDownloadButton() {
+                const downloadButton = document.querySelector('.download-button');
+                if (downloadButton) {
+                    downloadButton.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        this.handleDownload();
+                    });
+                }
+            }
+
+            handleDownload() {
+                // Get experience details for filename
+                const title = document.querySelector('.experience-title')?.textContent?.trim() || 'Experience';
+                const company = document.querySelector('.experience-company')?.textContent?.trim() || 'Certificate';
+                const filename = `${title}_${company}_Certificate.pdf`.replace(/\s+/g, '_');
+                
+                // Show loading state
+                const button = document.querySelector('.download-button');
+                if (button) {
+                    const originalText = button.innerHTML;
+                    button.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i> Preparing...';
+                    button.disabled = true;
+                    
+                    // Simulate processing time
+                    setTimeout(() => {
+                        button.innerHTML = originalText;
+                        button.disabled = false;
+                        
+                        // In real implementation, trigger actual download
+                        console.log(`Downloading: ${filename}`);
+                        alert('Certificate download would start here. This is a demo implementation.');
+                    }, 2000);
+                }
+            }
+
+            // Keyboard navigation
+            initializeKeyboardNavigation() {
+                document.addEventListener('keydown', (e) => {
+                    // ESC key closes mobile menu
+                    if (e.key === 'Escape') {
+                        const mobileMenu = document.getElementById('mobile-menu');
+                        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                            this.closeMobileMenu(mobileMenu);
+                        }
+                    }
+                    
+                    // Theme cycling with Ctrl/Cmd + T
+                    if ((e.ctrlKey || e.metaKey) && e.key === 't') {
+                        e.preventDefault();
+                        this.cycleTheme();
+                    }
+
+                    // Download with Ctrl/Cmd + D
+                    if ((e.ctrlKey || e.metaKey) && e.key === 'd') {
+                        e.preventDefault();
+                        this.handleDownload();
+                    }
+                });
+            }
+
+            // Performance optimization: Debounce function
+            debounce(func, wait) {
+                let timeout;
+                return function executedFunction(...args) {
+                    const later = () => {
+                        clearTimeout(timeout);
+                        func(...args);
+                    };
+                    clearTimeout(timeout);
+                    timeout = setTimeout(later, wait);
+                };
+            }
+
+            // Initialize all functionality
+            init() {
+                if (this.isInitialized) return;
+                
+                this.initializeSmoothScroll();
+                this.initializeScrollAnimations();
+                this.initializeDownloadButton();
+                this.initializeKeyboardNavigation();
+                
+                // Initial icon initialization
+                this.initializeLucideIcons();
+                
+                this.isInitialized = true;
+                console.log('Experience Details Page initialized successfully');
+            }
+        }
+
+        // Auto-initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const experiencePage = new ExperienceDetailsPage();
+            experiencePage.init();
+        });
+
+        // Performance: Initialize on window load for better performance
+        window.addEventListener('load', () => {
+            // Additional initialization for heavy operations
+            if (!experiencePage || !experiencePage.isInitialized) {
+                const experiencePage = new ExperienceDetailsPage();
+                experiencePage.init();
+            }
+        });
+    </script>
+</body>
+</html>
