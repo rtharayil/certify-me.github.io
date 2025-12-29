@@ -44,7 +44,7 @@
         <ul class="space-y-2">
           <li><a href="classic.html#achievements" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Achievements</a></li>
           <li><a href="classic.html#testimonials" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Testimonials</a></li>
-          <li><a href="{% if page.CV %}{{ page.CV }}{% else %}/files/1.pdf{% endif %}" download class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Resume</a></li>
+          <li><a href="/files/1.pdf" download class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Resume</a></li>
           <li><a href="mailto:{{ page.email | default: 'portfolio@example.com' }}" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Newsletter</a></li>
         </ul>
       </div>

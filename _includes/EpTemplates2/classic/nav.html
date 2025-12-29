@@ -60,6 +60,25 @@
       </div>
       
       <a href="classic.html#skills" class="text-sm font-medium hover:text-primary transition-colors">Skills</a>
+      
+      <!-- Feedback Dropdown -->
+      <div class="relative group">
+        <a href="classic.html#achievements" class="text-sm font-medium hover:text-primary transition-colors flex items-center gap-1">
+          Feedback
+          <i data-lucide="chevron-down" class="w-4 h-4 group-hover:rotate-180 transition-transform duration-200"></i>
+        </a>
+        <div class="absolute top-full left-0 mt-2 w-48 bg-background border border-border/50 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <div class="p-2">
+            <a href="classic.html#achievements" class="block px-3 py-2 text-sm text-foreground hover:bg-muted hover:text-primary rounded-md transition-colors">
+              Achievements
+            </a>
+            <a href="classic.html#testimonials" class="block px-3 py-2 text-sm text-foreground hover:bg-muted hover:text-primary rounded-md transition-colors">
+              Endorsements
+            </a>
+          </div>
+        </div>
+      </div>
+      
       <a href="classic.html#contact" class="text-sm font-medium hover:text-primary transition-colors">Contact</a>
       
       <!-- Theme Switcher -->
@@ -71,15 +90,9 @@
         </button>
       </div>
 
-      {% if include.page.CV %}
-      <a href="{{ include.page.CV }}" download="Portfolio-CV.pdf" class="bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-6 py-2 inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
-        Download CV
-      </a>
-      {% else %}
       <a href="/files/1.pdf" download="Portfolio-CV.pdf" class="bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-6 py-2 inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
         Download CV
       </a>
-      {% endif %}
     </nav>
 
     <!-- Mobile Toggle -->
@@ -131,17 +144,21 @@
       </div>
       
       <a href="classic.html#skills" class="text-lg font-medium py-2 border-b border-border/10">Skills</a>
+      
+      <!-- Mobile Feedback Section -->
+      <div class="border-b border-border/10 pb-2">
+        <div class="text-lg font-medium py-2">Feedback</div>
+        <div class="pl-4 space-y-2">
+          <a href="classic.html#achievements" class="block text-sm text-muted-foreground hover:text-primary">Achievements</a>
+          <a href="classic.html#testimonials" class="block text-sm text-muted-foreground hover:text-primary">Endorsements</a>
+        </div>
+      </div>
+      
       <a href="classic.html#contact" class="text-lg font-medium py-2 border-b border-border/10">Contact</a>
       
-      {% if include.page.CV %}
-      <a href="{{ include.page.CV }}" download="Portfolio-CV.pdf" class="w-full bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors">
-        Download CV
-      </a>
-      {% else %}
       <a href="/files/1.pdf" download="Portfolio-CV.pdf" class="w-full bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors">
         Download CV
       </a>
-      {% endif %}
     </nav>
   </div>
 </header>
