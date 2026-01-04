@@ -1,206 +1,236 @@
 <section id="reflections-section" class="pt-100 reflections-section division">
-<style>
-/* REFLECTIONS SECTION STYLES */
-.reflections-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
-    min-height: 200px;
-}
+    <style>
+        /* REFLECTIONS SECTION STYLES */
+        .reflections-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+            min-height: 200px;
+        }
 
-/* QUICK INTRO SECTION */
-.quick-intro {
-    background: linear-gradient(135deg, #282B75 0%, #1a1d4f 100%);
-    color: white;
-    padding: 50px;
-    border-radius: 20px;
-    margin-bottom: 50px;
-    box-shadow:
-        0 10px 40px rgba(40, 43, 117, 0.3),
-        0 4px 12px rgba(0,0,0,0.1);
-    position: relative;
-    overflow: hidden;
-}
+        /* QUICK INTRO SECTION */
+        .quick-intro {
+            background: linear-gradient(135deg, #282B75 0%, #1a1d4f 100%);
+            color: white;
+            padding: 50px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow:
+                0 10px 40px rgba(40, 43, 117, 0.3),
+                0 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
 
-.quick-intro::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-    animation: pulse 15s ease-in-out infinite;
-}
+        .quick-intro::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
 
-@keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 0.5; }
-    50% { transform: scale(1.1); opacity: 0.8; }
-}
+        @keyframes pulse {
 
-.quick-intro-content {
-    position: relative;
-    z-index: 1;
-}
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
 
-.quick-intro h3 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
-    color: white;
-}
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+        }
 
-.quick-intro p {
-    font-size: 17px;
-    line-height: 1.8;
-    opacity: 0.95;
-}
+        .quick-intro-content {
+            position: relative;
+            z-index: 1;
+        }
 
-/* MY JOURNEY NARRATIVE */
-.journey-narrative {
-    margin-bottom: 50px;
-}
+        .quick-intro h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+            color: white;
+        }
 
-.journey-content {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 16px;
-    border: 1px solid rgba(0,0,0,0.06);
-    box-shadow:
-        0 4px 12px rgba(0,0,0,0.06),
-        0 8px 30px rgba(0,0,0,0.04);
-    transition: all 0.3s ease;
-    position: relative;
-}
+        .quick-intro p {
+            font-size: 17px;
+            line-height: 1.8;
+            opacity: 0.95;
+        }
 
-.journey-content:hover {
-    transform: translateY(-4px);
-    box-shadow:
-        0 6px 16px rgba(0,0,0,0.09),
-        0 10px 35px rgba(0,0,0,0.05);
-}
+        /* MY JOURNEY NARRATIVE */
+        .journey-narrative {
+            margin-bottom: 50px;
+        }
 
-.journey-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+        .journey-content {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            box-shadow:
+                0 4px 12px rgba(0, 0, 0, 0.06),
+                0 8px 30px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+            position: relative;
+        }
 
-.journey-title::before {
-    content: '';
-    width: 4px;
-    height: 24px;
-    background: linear-gradient(180deg, #1b1f86 0%, #1a1d4f 100%);
-    border-radius: 2px;
-}
+        .journey-content:hover {
+            transform: translateY(-4px);
+            box-shadow:
+                0 6px 16px rgba(0, 0, 0, 0.09),
+                0 10px 35px rgba(0, 0, 0, 0.05);
+        }
 
-.journey-text {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.8;
-}
+        .journey-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-/* FUTURE VISION */
-.future-vision {
-    background: linear-gradient(135deg, #282B75 0%, #24498d 100%);
-    color: white;
-    padding: 50px;
-    border-radius: 20px;
-    text-align: left;
-    margin: 40px 0;
-}
+        .journey-title::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(180deg, #1b1f86 0%, #1a1d4f 100%);
+            border-radius: 2px;
+        }
 
-.future-vision h3 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #fff;
-}
+        .journey-text {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+        }
 
-.future-vision p {
-    font-size: 17px;
-    text-align: left;
-    line-height: 1.8;
-    opacity: 0.95;
-    max-width: none;
-    margin: 0;
-}
+        /* FUTURE VISION */
+        .future-vision {
+            background: linear-gradient(135deg, #282B75 0%, #24498d 100%);
+            color: white;
+            padding: 50px;
+            border-radius: 20px;
+            text-align: left;
+            margin: 40px 0;
+        }
 
-/* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-    .journey-content {
-        padding: 30px 20px;
-    }
+        .future-vision h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #fff;
+        }
 
-    .quick-intro,
-    .future-vision {
-        padding: 30px 20px;
-    }
-}
+        .future-vision p {
+            font-size: 17px;
+            text-align: left;
+            line-height: 1.8;
+            opacity: 0.95;
+            max-width: none;
+            margin: 0;
+        }
 
-@media (max-width: 576px) {
-    .journey-title {
-        font-size: 20px;
-    }
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 768px) {
+            .journey-content {
+                padding: 30px 20px;
+            }
 
-    .journey-text {
-        font-size: 15px;
-    }
+            .quick-intro,
+            .future-vision {
+                padding: 30px 20px;
+            }
+        }
 
-    .quick-intro h3,
-    .future-vision h3 {
-        font-size: 24px;
-    }
-}
-</style>
+        @media (max-width: 576px) {
+            .journey-title {
+                font-size: 20px;
+            }
 
-<div class="container">
-    <!-- SECTION TITLE -->
-    <div class="row justify-content-center">
-        <div class="col-md-10 col-lg-9">
-            <div class="section-title mb-70">
-                <h2 class="s-50 w-700">Reflections</h2>
-            </div>
-        </div>
-    </div>
+            .journey-text {
+                font-size: 15px;
+            }
 
-    <div class="reflections-wrapper">
-        <!-- QUICK INTRO -->
-        <div class="quick-intro">
-            <div class="quick-intro-content">
-                <h3>Quick Intro</h3>
-                <p>Passionate about creating meaningful digital experiences that bridge the gap between user needs and business objectives. With a strong foundation in design thinking and modern development practices, I believe great interfaces should be intuitive, accessible, and delightful to use.</p>
-            </div>
-        </div>
+            .quick-intro h3,
+            .future-vision h3 {
+                font-size: 24px;
+            }
+        }
+    </style>
 
-        <!-- MY JOURNEY NARRATIVE -->
-        <div class="journey-narrative">
-            <div class="journey-content">
-                <div class="journey-title">My Journey</div>
-                <div class="journey-text">
-                    My journey began in 2018 with a simple question: why do some websites feel intuitive while others frustrate users? This curiosity led me down a rabbit hole of design principles, user psychology, and the beautiful intersection of art and technology. I started with basic HTML and CSS, slowly building my foundation in web development.<br><br>
-                    
-                    The real transformation came during the pandemic in 2020 when the world went digital. This forced me to think deeply about user experiences and accessibility. I immersed myself in learning React, studying design systems, and understanding how to create interfaces that work seamlessly across all devices and abilities.<br><br>
-                    
-                    Through countless hours of prototyping, testing, and iterating, I discovered that great design isn't just about aesthetics—it's about solving real problems for real people. Every pixel placement, every interaction, every decision tells a story and guides users through their digital journey.<br><br>
-                    
-                    Today, I see myself not just as a designer or developer, but as an advocate for users. I've learned to balance user needs with business objectives, aesthetic beauty with functional simplicity, and creative innovation with established patterns. My focus has evolved to creating inclusive, accessible designs that serve everyone.<br><br>
-                    
-                    This journey has taught me that empathy is the most powerful tool in a designer's toolkit. Understanding user pain points, conducting thorough research, and iterating based on feedback have become second nature. Every project I work on is an opportunity to make digital experiences more meaningful and accessible.
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-9">
+                <div class="section-title mb-70">
+                    <h2 class="s-50 w-700">Reflections</h2>
                 </div>
             </div>
         </div>
 
-        <!-- FUTURE VISION -->
-        <div class="future-vision">
-            <h3>Future</h3>
-            <p>The future of UI/UX is incredibly exciting. With emerging technologies like AI, VR/AR, and voice interfaces, the canvas for creating experiences is expanding exponentially. I'm committed to staying at the forefront of these changes, always learning, always growing, and always putting the user at the center of everything I create.</p>
+        <div class="reflections-wrapper">
+            <!-- QUICK INTRO -->
+            <div class="quick-intro">
+                <div class="quick-intro-content">
+                    <h3>Quick Intro</h3>
+                    <p>Passionate about creating meaningful digital experiences that bridge the gap between user needs
+                        and business objectives. With a strong foundation in design thinking and modern development
+                        practices, I believe great interfaces should be intuitive, accessible, and delightful to use.
+                    </p>
+                </div>
+            </div>
+
+            <!-- MY JOURNEY NARRATIVE -->
+            <div class="journey-narrative">
+                <div class="journey-content">
+                    <div class="journey-title">My Journey</div>
+                    <div class="journey-text">
+                        My journey began in 2018 with a simple question: why do some websites feel intuitive while
+                        others frustrate users? This curiosity led me down a rabbit hole of design principles, user
+                        psychology, and the beautiful intersection of art and technology. I started with basic HTML and
+                        CSS, slowly building my foundation in web development.<br><br>
+
+                        The real transformation came during the pandemic in 2020 when the world went digital. This
+                        forced me to think deeply about user experiences and accessibility. I immersed myself in
+                        learning React, studying design systems, and understanding how to create interfaces that work
+                        seamlessly across all devices and abilities.<br><br>
+
+                        Through countless hours of prototyping, testing, and iterating, I discovered that great design
+                        isn't just about aesthetics—it's about solving real problems for real people. Every pixel
+                        placement, every interaction, every decision tells a story and guides users through their
+                        digital journey.<br><br>
+
+                        Today, I see myself not just as a designer or developer, but as an advocate for users. I've
+                        learned to balance user needs with business objectives, aesthetic beauty with functional
+                        simplicity, and creative innovation with established patterns. My focus has evolved to creating
+                        inclusive, accessible designs that serve everyone.<br><br>
+
+                        This journey has taught me that empathy is the most powerful tool in a designer's toolkit.
+                        Understanding user pain points, conducting thorough research, and iterating based on feedback
+                        have become second nature. Every project I work on is an opportunity to make digital experiences
+                        more meaningful and accessible.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FUTURE VISION -->
+            <div class="future-vision">
+                <h3>Future</h3>
+                <p>The future of UI/UX is incredibly exciting. With emerging technologies like AI, VR/AR, and voice
+                    interfaces, the canvas for creating experiences is expanding exponentially. I'm committed to staying
+                    at the forefront of these changes, always learning, always growing, and always putting the user at
+                    the center of everything I create.</p>
+            </div>
         </div>
     </div>
-</div>
 </section>

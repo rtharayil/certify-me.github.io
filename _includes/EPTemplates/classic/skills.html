@@ -1,490 +1,538 @@
 <section id="skills-section" class="pt-100 pb-100 skills-section division">
-<style>
-/* SKILLS SECTION STYLES */
-.skills-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 0;
-}
+    <style>
+        /* SKILLS SECTION STYLES */
+        .skills-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
 
-/* SKILLS GRID - Two Column Layout */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px 60px;
-}
+        /* SKILLS GRID - Two Column Layout */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px 60px;
+        }
 
-/* INDIVIDUAL SKILL ITEM */
-.skill-item {
-    position: relative;
-    padding: 5px;
-}
+        /* INDIVIDUAL SKILL ITEM */
+        .skill-item {
+            position: relative;
+            padding: 5px;
+        }
 
-/* SKILL HEADER */
-.skill-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
-}
+        /* SKILL HEADER */
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
 
-.skill-name {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1a1a1a;
-    letter-spacing: 0.3px;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-}
+        .skill-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            letter-spacing: 0.3px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
 
-/* Underline animation on hover */
-.skill-name::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background: linear-gradient(90deg, #282B75, #3d41a0);
-    transition: width 0.4s ease;
-}
+        /* Underline animation on hover */
+        .skill-name::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: linear-gradient(90deg, #282B75, #3d41a0);
+            transition: width 0.4s ease;
+        }
 
-.skill-item:hover .skill-name::after {
-    width: 100%;
-}
+        .skill-item:hover .skill-name::after {
+            width: 100%;
+        }
 
-.skill-percentage {
-    font-size: 16px;
-    font-weight: 700;
-    color: #282B75;
-    min-width: 45px;
-    text-align: right;
-    transition: all 0.3s ease;
-    position: relative;
-}
+        .skill-percentage {
+            font-size: 16px;
+            font-weight: 700;
+            color: #282B75;
+            min-width: 45px;
+            text-align: right;
+            transition: all 0.3s ease;
+            position: relative;
+        }
 
-/* Animated pulse effect on percentage */
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-}
+        /* Animated pulse effect on percentage */
+        @keyframes pulse {
 
-.skill-item:hover .skill-percentage {
-    animation: pulse 0.6s ease-in-out;
-}
+            0%,
+            100% {
+                transform: scale(1);
+            }
 
-/* PROGRESS BAR CONTAINER */
-.progress-bar-container {
-    width: 100%;
-    height: 12px;
-    background: #f0f0f0;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
-    transition: all 0.3s ease;
-}
+            50% {
+                transform: scale(1.1);
+            }
+        }
 
-.skill-item:hover .progress-bar-container {
-    transform: scaleX(1.02);
-    box-shadow: inset 0 2px 6px rgba(0,0,0,0.1);
-}
+        .skill-item:hover .skill-percentage {
+            animation: pulse 0.6s ease-in-out;
+        }
 
-/* PROGRESS BAR FILL */
-.progress-bar-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #282B75 0%, #3d41a0 50%, #5256c9 100%);
-    background-size: 200% 100%;
-    border-radius: 20px;
-    width: 0%;
-    transition: width 1.8s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    box-shadow: 0 2px 8px rgba(40, 43, 117, 0.3);
-    animation: gradientMove 3s ease infinite;
-}
+        /* PROGRESS BAR CONTAINER */
+        .progress-bar-container {
+            width: 100%;
+            height: 12px;
+            background: #f0f0f0;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+        }
 
-/* Moving gradient animation */
-@keyframes gradientMove {
-    0%, 100% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-}
+        .skill-item:hover .progress-bar-container {
+            transform: scaleX(1.02);
+            box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
 
-/* ENHANCED SHINE EFFECT */
-.progress-bar-fill::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.5),
-        transparent
-    );
-    animation: shine 2.5s infinite;
-}
+        /* PROGRESS BAR FILL */
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #282B75 0%, #3d41a0 50%, #5256c9 100%);
+            background-size: 200% 100%;
+            border-radius: 20px;
+            width: 0%;
+            transition: width 1.8s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            box-shadow: 0 2px 8px rgba(40, 43, 117, 0.3);
+            animation: gradientMove 3s ease infinite;
+        }
 
-@keyframes shine {
-    0% {
-        transform: translateX(-100%);
-    }
-    50%, 100% {
-        transform: translateX(200%);
-    }
-}
+        /* Moving gradient animation */
+        @keyframes gradientMove {
 
-/* GLOWING PARTICLES EFFECT */
-.progress-bar-fill::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 8px;
-    height: 8px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 50%;
-    transform: translateY(-50%);
-    box-shadow: 
-        0 0 10px rgba(255, 255, 255, 0.8),
-        0 0 20px rgba(40, 43, 117, 0.6);
-    animation: glow 1.5s ease-in-out infinite;
-}
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
 
-@keyframes glow {
-    0%, 100% {
-        opacity: 0.5;
-        transform: translateY(-50%) scale(0.8);
-    }
-    50% {
-        opacity: 1;
-        transform: translateY(-50%) scale(1.2);
-    }
-}
+            50% {
+                background-position: 100% 50%;
+            }
+        }
 
-/* SKILL ITEM ANIMATION ON LOAD */
-.skill-item {
-    opacity: 0;
-    transform: translateY(30px) scale(0.95);
-    animation: fadeInUpScale 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
+        /* ENHANCED SHINE EFFECT */
+        .progress-bar-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.5),
+                    transparent);
+            animation: shine 2.5s infinite;
+        }
 
-.skill-item:nth-child(1) { animation-delay: 0.1s; }
-.skill-item:nth-child(2) { animation-delay: 0.2s; }
-.skill-item:nth-child(3) { animation-delay: 0.3s; }
-.skill-item:nth-child(4) { animation-delay: 0.4s; }
-.skill-item:nth-child(5) { animation-delay: 0.5s; }
-.skill-item:nth-child(6) { animation-delay: 0.6s; }
-.skill-item:nth-child(7) { animation-delay: 0.7s; }
-.skill-item:nth-child(8) { animation-delay: 0.8s; }
-.skill-item:nth-child(9) { animation-delay: 0.9s; }
-.skill-item:nth-child(10) { animation-delay: 1.0s; }
+        @keyframes shine {
+            0% {
+                transform: translateX(-100%);
+            }
 
-@keyframes fadeInUpScale {
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
+            50%,
+            100% {
+                transform: translateX(200%);
+            }
+        }
 
-/* ENHANCED HOVER EFFECT */
-.skill-item:hover .skill-name {
-    color: #282B75;
-    transform: translateX(8px);
-}
+        /* GLOWING PARTICLES EFFECT */
+        .progress-bar-fill::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 8px;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            transform: translateY(-50%);
+            box-shadow:
+                0 0 10px rgba(255, 255, 255, 0.8),
+                0 0 20px rgba(40, 43, 117, 0.6);
+            animation: glow 1.5s ease-in-out infinite;
+        }
 
-.skill-item:hover .progress-bar-fill {
-    box-shadow: 
-        0 4px 20px rgba(40, 43, 117, 0.6),
-        0 0 40px rgba(40, 43, 117, 0.3);
-    animation: gradientMove 1.5s ease infinite, pulse-glow 1s ease-in-out infinite;
-}
+        @keyframes glow {
 
-@keyframes pulse-glow {
-    0%, 100% {
-        filter: brightness(1);
-    }
-    50% {
-        filter: brightness(1.2);
-    }
-}
+            0%,
+            100% {
+                opacity: 0.5;
+                transform: translateY(-50%) scale(0.8);
+            }
 
-/* SKILL ICON INDICATOR (optional decorative element) */
-.skill-item::before {
-    content: '◆';
-    position: absolute;
-    left: -20px;
-    top: 8px;
-    font-size: 10px;
-    color: #282B75;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
+            50% {
+                opacity: 1;
+                transform: translateY(-50%) scale(1.2);
+            }
+        }
 
-.skill-item:hover::before {
-    opacity: 1;
-    left: -15px;
-}
+        /* SKILL ITEM ANIMATION ON LOAD */
+        .skill-item {
+            opacity: 0;
+            transform: translateY(30px) scale(0.95);
+            animation: fadeInUpScale 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-    
-    .skill-name {
-        font-size: 16px;
-    }
-    
-    .skill-percentage {
-        font-size: 14px;
-    }
-    
-    .skill-item::before {
-        display: none;
-    }
-}
+        .skill-item:nth-child(1) {
+            animation-delay: 0.1s;
+        }
 
-/* SECTION BACKGROUND WITH ANIMATED GRADIENT */
-.skills-section {
-    background: linear-gradient(180deg, #ffffff 0%, #f9f9fc 100%);
-    position: relative;
-    overflow: hidden;
-}
+        .skill-item:nth-child(2) {
+            animation-delay: 0.2s;
+        }
 
-/* ANIMATED BACKGROUND SHAPES */
-.skills-section::before {
-    content: '';
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(40, 43, 117, 0.08) 0%, transparent 70%);
-    border-radius: 50%;
-    top: -150px;
-    right: -150px;
-    animation: float 8s ease-in-out infinite;
-    pointer-events: none;
-}
+        .skill-item:nth-child(3) {
+            animation-delay: 0.3s;
+        }
 
-.skills-section::after {
-    content: '';
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(61, 65, 160, 0.06) 0%, transparent 70%);
-    border-radius: 50%;
-    bottom: -100px;
-    left: -100px;
-    animation: float 10s ease-in-out infinite reverse;
-    pointer-events: none;
-}
+        .skill-item:nth-child(4) {
+            animation-delay: 0.4s;
+        }
 
-@keyframes float {
-    0%, 100% {
-        transform: translate(0, 0) scale(1);
-    }
-    50% {
-        transform: translate(30px, -30px) scale(1.1);
-    }
-}
+        .skill-item:nth-child(5) {
+            animation-delay: 0.5s;
+        }
 
-/* DECORATIVE PARTICLES */
-.skills-wrapper {
-    position: relative;
-    z-index: 1;
-}
+        .skill-item:nth-child(6) {
+            animation-delay: 0.6s;
+        }
 
-/* NUMBER COUNTER ANIMATION */
-@keyframes countUp {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+        .skill-item:nth-child(7) {
+            animation-delay: 0.7s;
+        }
 
-.skill-percentage {
-    animation: countUp 0.6s ease forwards;
-}
+        .skill-item:nth-child(8) {
+            animation-delay: 0.8s;
+        }
 
-/* SECTION TITLE ANIMATION */
-.section-title h2 {
-    position: relative;
-    display: inline-block;
-}
+        .skill-item:nth-child(9) {
+            animation-delay: 0.9s;
+        }
 
-.section-title h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(90deg, transparent, #282B75, transparent);
-    border-radius: 2px;
-    animation: titleUnderline 2s ease-in-out infinite;
-}
+        .skill-item:nth-child(10) {
+            animation-delay: 1.0s;
+        }
 
-@keyframes titleUnderline {
-    0%, 100% {
-        width: 80px;
-        opacity: 0.8;
-    }
-    50% {
-        width: 120px;
-        opacity: 1;
-    }
-}
+        @keyframes fadeInUpScale {
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
 
-/* RIPPLE EFFECT ON CLICK */
-.skill-item {
-    overflow: hidden;
-}
+        /* ENHANCED HOVER EFFECT */
+        .skill-item:hover .skill-name {
+            color: #282B75;
+            transform: translateX(8px);
+        }
 
-.skill-item::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: rgba(40, 43, 117, 0.2);
-    transform: translate(-50%, -50%);
-    transition: width 0.6s, height 0.6s;
-    pointer-events: none;
-}
+        .skill-item:hover .progress-bar-fill {
+            box-shadow:
+                0 4px 20px rgba(40, 43, 117, 0.6),
+                0 0 40px rgba(40, 43, 117, 0.3);
+            animation: gradientMove 1.5s ease infinite, pulse-glow 1s ease-in-out infinite;
+        }
 
-.skill-item:active::after {
-    width: 300px;
-    height: 300px;
-}
-</style>
+        @keyframes pulse-glow {
 
-<div class="container">
-    <!-- SECTION TITLE -->
-    <div class="row justify-content-center">
-        <div class="col-md-10 col-lg-8">
-            <div class="section-title mb-70 text-center">
-                <h2 class="s-50 w-700" style="margin-bottom: 15px;">Skills & Expertise</h2>
-                <p class="color--grey" style="font-size: 1.0625rem;">
-                    Here's a breakdown of my technical skills and proficiency levels across
-                    various technologies and tools.
-                </p>
+            0%,
+            100% {
+                filter: brightness(1);
+            }
+
+            50% {
+                filter: brightness(1.2);
+            }
+        }
+
+        /* SKILL ICON INDICATOR (optional decorative element) */
+        .skill-item::before {
+            content: '◆';
+            position: absolute;
+            left: -20px;
+            top: 8px;
+            font-size: 10px;
+            color: #282B75;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover::before {
+            opacity: 1;
+            left: -15px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .skill-name {
+                font-size: 16px;
+            }
+
+            .skill-percentage {
+                font-size: 14px;
+            }
+
+            .skill-item::before {
+                display: none;
+            }
+        }
+
+        /* SECTION BACKGROUND WITH ANIMATED GRADIENT */
+        .skills-section {
+            background: linear-gradient(180deg, #ffffff 0%, #f9f9fc 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* ANIMATED BACKGROUND SHAPES */
+        .skills-section::before {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(40, 43, 117, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -150px;
+            right: -150px;
+            animation: float 8s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .skills-section::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(61, 65, 160, 0.06) 0%, transparent 70%);
+            border-radius: 50%;
+            bottom: -100px;
+            left: -100px;
+            animation: float 10s ease-in-out infinite reverse;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            50% {
+                transform: translate(30px, -30px) scale(1.1);
+            }
+        }
+
+        /* DECORATIVE PARTICLES */
+        .skills-wrapper {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* NUMBER COUNTER ANIMATION */
+        @keyframes countUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .skill-percentage {
+            animation: countUp 0.6s ease forwards;
+        }
+
+        /* SECTION TITLE ANIMATION */
+        .section-title h2 {
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #282B75, transparent);
+            border-radius: 2px;
+            animation: titleUnderline 2s ease-in-out infinite;
+        }
+
+        @keyframes titleUnderline {
+
+            0%,
+            100% {
+                width: 80px;
+                opacity: 0.8;
+            }
+
+            50% {
+                width: 120px;
+                opacity: 1;
+            }
+        }
+
+        /* RIPPLE EFFECT ON CLICK */
+        .skill-item {
+            overflow: hidden;
+        }
+
+        .skill-item::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(40, 43, 117, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+            pointer-events: none;
+        }
+
+        .skill-item:active::after {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <div class="section-title mb-70 text-center">
+                    <h2 class="s-50 w-700" style="margin-bottom: 15px;">Skills & Expertise</h2>
+                    <p class="color--grey" style="font-size: 1.0625rem;">
+                        Here's a breakdown of my technical skills and proficiency levels across
+                        various technologies and tools.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SKILLS WRAPPER -->
+        <div class="skills-wrapper">
+            <!-- SKILLS GRID -->
+            <div class="skills-grid">
+                {% for skill in page.Skills %}
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">{{ skill.name }}</span>
+                        <span class="skill-percentage">{{ skill.percentage }}%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" data-percentage="{{ skill.percentage }}"></div>
+                    </div>
+                </div>
+
+                {% endfor %}
             </div>
         </div>
     </div>
-    
-    <!-- SKILLS WRAPPER -->
-    <div class="skills-wrapper">
-        <!-- SKILLS GRID -->
-        <div class="skills-grid">
-            {% for skill in page.Skills %}
-            
-            <div class="skill-item">
-                <div class="skill-header">
-                    <span class="skill-name">{{ skill.name }}</span>
-                    <span class="skill-percentage">{{ skill.percentage }}%</span>
-                </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar-fill" data-percentage="{{ skill.percentage }}"></div>
-                </div>
-            </div>
-            
-            {% endfor %}
-        </div>
-    </div>
-</div>
 
-<!-- ENHANCED JAVASCRIPT FOR ANIMATIONS -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Intersection Observer for animating bars when they come into view
-    const observerOptions = {
-        threshold: 0.2,
-        rootMargin: '0px 0px -100px 0px'
-    };
-    
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const progressBars = entry.target.querySelectorAll('.progress-bar-fill');
-                
-                progressBars.forEach((bar, index) => {
-                    const percentage = bar.getAttribute('data-percentage');
-                    
-                    // Stagger the animation for each bar
-                    setTimeout(() => {
-                        bar.style.width = percentage + '%';
-                        
-                        // Add a bounce effect at the end
-                        setTimeout(() => {
-                            bar.style.transition = 'width 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
-                            bar.style.width = (parseInt(percentage) - 2) + '%';
-                            
+    <!-- ENHANCED JAVASCRIPT FOR ANIMATIONS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Intersection Observer for animating bars when they come into view
+            const observerOptions = {
+                threshold: 0.2,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const progressBars = entry.target.querySelectorAll('.progress-bar-fill');
+
+                        progressBars.forEach((bar, index) => {
+                            const percentage = bar.getAttribute('data-percentage');
+
+                            // Stagger the animation for each bar
                             setTimeout(() => {
                                 bar.style.width = percentage + '%';
-                            }, 150);
-                        }, 1800);
-                        
-                    }, index * 100);
-                });
-                
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-    
-    // Observe the skills section
-    const skillsSection = document.querySelector('.skills-wrapper');
-    if (skillsSection) {
-        // Reset bars to 0
-        document.querySelectorAll('.progress-bar-fill').forEach(bar => {
-            bar.style.width = '0%';
-        });
-        
-        observer.observe(skillsSection);
-    }
-    
-    // Add click ripple effect
-    document.querySelectorAll('.skill-item').forEach(item => {
-        item.addEventListener('click', function(e) {
-            const ripple = document.createElement('span');
-            ripple.style.position = 'absolute';
-            ripple.style.borderRadius = '50%';
-            ripple.style.background = 'rgba(40, 43, 117, 0.3)';
-            ripple.style.width = ripple.style.height = '100px';
-            ripple.style.left = e.offsetX - 50 + 'px';
-            ripple.style.top = e.offsetY - 50 + 'px';
-            ripple.style.pointerEvents = 'none';
-            ripple.style.animation = 'ripple-effect 0.6s ease-out';
-            
-            this.appendChild(ripple);
-            
-            setTimeout(() => {
-                ripple.remove();
-            }, 600);
-        });
-    });
-});
 
-// Add ripple animation
-const style = document.createElement('style');
-style.textContent = `
+                                // Add a bounce effect at the end
+                                setTimeout(() => {
+                                    bar.style.transition = 'width 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+                                    bar.style.width = (parseInt(percentage) - 2) + '%';
+
+                                    setTimeout(() => {
+                                        bar.style.width = percentage + '%';
+                                    }, 150);
+                                }, 1800);
+
+                            }, index * 100);
+                        });
+
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe the skills section
+            const skillsSection = document.querySelector('.skills-wrapper');
+            if (skillsSection) {
+                // Reset bars to 0
+                document.querySelectorAll('.progress-bar-fill').forEach(bar => {
+                    bar.style.width = '0%';
+                });
+
+                observer.observe(skillsSection);
+            }
+
+            // Add click ripple effect
+            document.querySelectorAll('.skill-item').forEach(item => {
+                item.addEventListener('click', function (e) {
+                    const ripple = document.createElement('span');
+                    ripple.style.position = 'absolute';
+                    ripple.style.borderRadius = '50%';
+                    ripple.style.background = 'rgba(40, 43, 117, 0.3)';
+                    ripple.style.width = ripple.style.height = '100px';
+                    ripple.style.left = e.offsetX - 50 + 'px';
+                    ripple.style.top = e.offsetY - 50 + 'px';
+                    ripple.style.pointerEvents = 'none';
+                    ripple.style.animation = 'ripple-effect 0.6s ease-out';
+
+                    this.appendChild(ripple);
+
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+        });
+
+        // Add ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
     @keyframes ripple-effect {
         from {
             transform: scale(0);
@@ -496,6 +544,6 @@ style.textContent = `
         }
     }
 `;
-document.head.appendChild(style);
-</script>
+        document.head.appendChild(style);
+    </script>
 </section>

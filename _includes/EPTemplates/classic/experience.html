@@ -1,113 +1,114 @@
 <section id="features-111" class="pt-100 features-section division">
 
-<style>
-/* MAIN EXPERIENCE WRAPPER */
-.experience-list {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+    <style>
+        /* MAIN EXPERIENCE WRAPPER */
+        .experience-list {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
 
-/* ELEGANT CARD */
-.experience-card {
-    background: #ffffff;
-    padding: 25px 30px;
-    border-radius: 14px;
-    border: 1px solid rgba(0,0,0,0.06);
+        /* ELEGANT CARD */
+        .experience-card {
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 14px;
+            border: 1px solid rgba(0, 0, 0, 0.06);
 
-    /* premium shadow */
-    box-shadow:
-        0 4px 12px rgba(0,0,0,0.06),
-        0 8px 30px rgba(0,0,0,0.04),
-        inset 0 1px 2px rgba(255,255,255,0.5);
-    transition: all 0.2s ease;
-}
+            /* premium shadow */
+            box-shadow:
+                0 4px 12px rgba(0, 0, 0, 0.06),
+                0 8px 30px rgba(0, 0, 0, 0.04),
+                inset 0 1px 2px rgba(255, 255, 255, 0.5);
+            transition: all 0.2s ease;
+        }
 
-.experience-card:hover {
-    transform: translateY(-4px);
-    box-shadow:
-        0 6px 16px rgba(0,0,0,0.09),
-        0 10px 35px rgba(0,0,0,0.05),
-        inset 0 1px 2px rgba(255,255,255,0.5);
-}
+        .experience-card:hover {
+            transform: translateY(-4px);
+            box-shadow:
+                0 6px 16px rgba(0, 0, 0, 0.09),
+                0 10px 35px rgba(0, 0, 0, 0.05),
+                inset 0 1px 2px rgba(255, 255, 255, 0.5);
+        }
 
-/* YEAR LABEL */
-.experience-year {
-    font-size: 16px;
-    font-weight: 600;
-    color: #282B75;
-    margin-bottom: 6px;
-}
+        /* YEAR LABEL */
+        .experience-year {
+            font-size: 16px;
+            font-weight: 600;
+            color: #282B75;
+            margin-bottom: 6px;
+        }
 
-/* ROLE */
-.experience-role {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 6px;
-    color: #000;
-}
+        /* ROLE */
+        .experience-role {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #000;
+        }
 
-/* COMPANY */
-.experience-company {
-    font-size: 17px;
-    color: #333;
-    margin-bottom: 10px;
-}
+        /* COMPANY */
+        .experience-company {
+            font-size: 17px;
+            color: #333;
+            margin-bottom: 10px;
+        }
 
-/* DESCRIPTION */
-.experience-description {
-    font-size: 15px;
-    color: #555;
-    line-height: 1.6;
-}
+        /* DESCRIPTION */
+        .experience-description {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.6;
+        }
 
-@media (max-width: 576px) {
-    .experience-card {
-        padding: 20px;
-    }
-    .experience-role {
-        font-size: 20px;
-    }
-}
-</style>
+        @media (max-width: 576px) {
+            .experience-card {
+                padding: 20px;
+            }
+
+            .experience-role {
+                font-size: 20px;
+            }
+        }
+    </style>
 
 
-<div class="container">
-    <!-- SECTION TITLE -->
-    <div class="row justify-content-center">
-        <div class="col-md-10 col-lg-9">
-            <div class="section-title mb-70">
-                <h2 class="s-50 w-700">My Experience</h2>
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-9">
+                <div class="section-title mb-70">
+                    <h2 class="s-50 w-700">My Experience</h2>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="experience-list">
-        {% for item in page.Experience %}
-        
-        <div class="experience-card">
-            <div class="experience-year">{{ item.year }}</div>
+        <div class="experience-list">
+            {% for item in page.Experience %}
 
-            <div class="experience-role">{{ item.role }}</div>
+            <div class="experience-card">
+                <div class="experience-year">{{ item.year }}</div>
 
-            {% if item.company %}
-            <div class="experience-company">
-                <strong>Company:</strong> {{ item.company }}
+                <div class="experience-role">{{ item.role }}</div>
+
+                {% if item.company %}
+                <div class="experience-company">
+                    <strong>Company:</strong> {{ item.company }}
+                </div>
+                {% endif %}
+
+                {% if item.description %}
+                <div class="experience-description">
+                    {{ item.description }}
+                </div>
+                {% endif %}
             </div>
-            {% endif %}
 
-            {% if item.description %}
-            <div class="experience-description">
-                {{ item.description }}
-            </div>
-            {% endif %}
+            {% endfor %}
         </div>
-
-        {% endfor %}
     </div>
-</div>
 
 </section>

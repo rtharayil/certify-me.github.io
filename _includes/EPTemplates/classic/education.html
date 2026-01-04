@@ -1,190 +1,197 @@
-
 <section id="features-11" class="pt-100 features-section division">
 
-<style>
-/* -------- TIMELINE CONTAINER -------- */
-.timeline {
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 140px 40px 1fr; /* Year | Line + Dot | Card */
-    row-gap: 40px;
-    align-items: start;
-    position: relative;
-}
+    <style>
+        /* -------- TIMELINE CONTAINER -------- */
+        .timeline {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 140px 40px 1fr;
+            /* Year | Line + Dot | Card */
+            row-gap: 40px;
+            align-items: start;
+            position: relative;
+        }
 
-/* --- FANCY VERTICAL LINE --- */
-.timeline::before {
-    content: "";
-    position: absolute;
-    left: 160px;
-    top: 0;
-    width: 6px; /* slightly thicker */
-    height: 100%;
-    background: linear-gradient(
-        to bottom,
-        #282B75,
-        #3B3FA0,
-        #282B75
-    );
-    border-radius: 6px;
+        /* --- FANCY VERTICAL LINE --- */
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 160px;
+            top: 0;
+            width: 6px;
+            /* slightly thicker */
+            height: 100%;
+            background: linear-gradient(to bottom,
+                    #282B75,
+                    #3B3FA0,
+                    #282B75);
+            border-radius: 6px;
 
-    /* soft glow */
-    box-shadow:
-        0 0 6px rgba(40, 43, 117, 0.4),
-        inset 0 0 4px rgba(255, 255, 255, 0.3);
-}
+            /* soft glow */
+            box-shadow:
+                0 0 6px rgba(40, 43, 117, 0.4),
+                inset 0 0 4px rgba(255, 255, 255, 0.3);
+        }
 
-/* YEAR (Full left, aligned) */
-.timeline-year {
-    font-size: 24px;
-    font-weight: 600;
-    color: #282B75;
-    padding-top: 4px;
-    text-align: right;
-    padding-right: 15px;
-}
+        /* YEAR (Full left, aligned) */
+        .timeline-year {
+            font-size: 24px;
+            font-weight: 600;
+            color: #282B75;
+            padding-top: 4px;
+            text-align: right;
+            padding-right: 15px;
+        }
 
-/* DOT (perfectly centered on thick line) */
-/* --- BIGGER DOTS + Glow Border --- */
-.timeline-dot {
-    width: 24px;     /* bigger */
-    height: 24px;
-    background: #ffffff;
-    border: 6px solid #282B75;  /* thick highlight border */
-    border-radius: 50%;
-    position: relative;
-    left: -12px;
-    top: 4px;
-    z-index: 2;
+        /* DOT (perfectly centered on thick line) */
+        /* --- BIGGER DOTS + Glow Border --- */
+        .timeline-dot {
+            width: 24px;
+            /* bigger */
+            height: 24px;
+            background: #ffffff;
+            border: 6px solid #282B75;
+            /* thick highlight border */
+            border-radius: 50%;
+            position: relative;
+            left: -12px;
+            top: 4px;
+            z-index: 2;
 
-    /* premium effect */
-    box-shadow:
-        0 0 8px rgba(40, 43, 117, 0.5),
-        inset 0 2px 3px rgba(255,255,255,0.6);
-}
+            /* premium effect */
+            box-shadow:
+                0 0 8px rgba(40, 43, 117, 0.5),
+                inset 0 2px 3px rgba(255, 255, 255, 0.6);
+        }
 
-/* 3D Card Styling */
-.timeline-content {
-    background: #ffffff;
-    padding: 20px 25px;
-    border-radius: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
+        /* 3D Card Styling */
+        .timeline-content {
+            background: #ffffff;
+            padding: 20px 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.08);
 
-    /* 3D EFFECT */
-    box-shadow:
-        0 2px 6px rgba(0,0,0,0.08),      /* soft base */
-        0 10px 20px rgba(0,0,0,0.06),    /* depth */
-        inset 0 1px 2px rgba(255,255,255,0.4); /* subtle inner glow */
-}
+            /* 3D EFFECT */
+            box-shadow:
+                0 2px 6px rgba(0, 0, 0, 0.08),
+                /* soft base */
+                0 10px 20px rgba(0, 0, 0, 0.06),
+                /* depth */
+                inset 0 1px 2px rgba(255, 255, 255, 0.4);
+            /* subtle inner glow */
+        }
 
-/* Title */
-.timeline-title {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 6px;
-}
+        /* Title */
+        .timeline-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
 
-/* Sub text */
-.timeline-sub {
-    font-size: 15px;
-    margin: 0;
-    color: #444;
-}
+        /* Sub text */
+        .timeline-sub {
+            font-size: 15px;
+            margin: 0;
+            color: #444;
+        }
 
-/* Mobile responsive */
-@media (max-width: 576px) {
-    .timeline {
-        grid-template-columns: 70px 25px 1fr; /* narrower year column */
-    }
+        /* Mobile responsive */
+        @media (max-width: 576px) {
+            .timeline {
+                grid-template-columns: 70px 25px 1fr;
+                /* narrower year column */
+            }
 
-    .timeline::before {
-        left: 90px; /* move the line left */
-    }
+            .timeline::before {
+                left: 90px;
+                /* move the line left */
+            }
 
-    .timeline-dot {
-        left: -6px; /* re-center dot on the thinner line */
-    }
+            .timeline-dot {
+                left: -6px;
+                /* re-center dot on the thinner line */
+            }
 
-    .timeline-year {
-        font-size: 20px;
-        padding-right: 8px;
-        text-align: right;
-    }
-}
+            .timeline-year {
+                font-size: 20px;
+                padding-right: 8px;
+                text-align: right;
+            }
+        }
 
-/* Clickable Timeline Items */
-.timeline-link {
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    color: inherit;
-}
+        /* Clickable Timeline Items */
+        .timeline-link {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
 
-.timeline-link:hover {
-    transform: translateY(-3px);
-    box-shadow:
-        0 4px 12px rgba(0,0,0,0.12),
-        0 15px 30px rgba(0,0,0,0.08),
-        inset 0 1px 2px rgba(255,255,255,0.4);
-    border-color: rgba(40, 43, 117, 0.2);
-}
+        .timeline-link:hover {
+            transform: translateY(-3px);
+            box-shadow:
+                0 4px 12px rgba(0, 0, 0, 0.12),
+                0 15px 30px rgba(0, 0, 0, 0.08),
+                inset 0 1px 2px rgba(255, 255, 255, 0.4);
+            border-color: rgba(40, 43, 117, 0.2);
+        }
 
-.timeline-link .timeline-title {
-    color: #282B75;
-    transition: color 0.3s ease;
-}
+        .timeline-link .timeline-title {
+            color: #282B75;
+            transition: color 0.3s ease;
+        }
 
-.timeline-link:hover .timeline-title {
-    color: #6C63FF;
-}
-</style>
-<div class="container ">
-    <!-- SECTION TITLE -->
-    <div class="row justify-content-center">
-        <div class="col-md-10 col-lg-9">
-            <div class="section-title mb-70">
-                <!-- Section ID -->
-                <!-- Title -->
-                <h2 class="s-50 w-700">My Education</h2>
-                <!-- Text -->
+        .timeline-link:hover .timeline-title {
+            color: #6C63FF;
+        }
+    </style>
+    <div class="container ">
+        <!-- SECTION TITLE -->
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-9">
+                <div class="section-title mb-70">
+                    <!-- Section ID -->
+                    <!-- Title -->
+                    <h2 class="s-50 w-700">My Education</h2>
+                    <!-- Text -->
+                </div>
             </div>
         </div>
-    </div>
-    <div class="timeline">
-        {% for item in page.Education %}
-        <div class="timeline-year">{{ item.year }}</div>
-        <div class="timeline-dot"></div>
-        {% if item.link %}
-        <a href="{{ item.link }}" class="timeline-content timeline-link">
-        {% else %}
-        <div class="timeline-content">
-        {% endif %}
-            <div class="timeline-title">{{ item.name }}</div>
-            {% if item.university %}
-            <p class="timeline-sub">
-                <strong>University:</strong> {{ item.university }}
-            </p>
-            {% endif %}
+        <div class="timeline">
+            {% for item in page.Education %}
+            <div class="timeline-year">{{ item.year }}</div>
+            <div class="timeline-dot"></div>
+            {% if item.link %}
+            <a href="{{ item.link }}" class="timeline-content timeline-link">
+                {% else %}
+                <div class="timeline-content">
+                    {% endif %}
+                    <div class="timeline-title">{{ item.name }}</div>
+                    {% if item.university %}
+                    <p class="timeline-sub">
+                        <strong>University:</strong> {{ item.university }}
+                    </p>
+                    {% endif %}
 
-        {% if item.school %}
-            <p class="timeline-sub">
-                <strong>School:</strong> {{ item.school }}
-            </p>
-            {% endif %}
+                    {% if item.school %}
+                    <p class="timeline-sub">
+                        <strong>School:</strong> {{ item.school }}
+                    </p>
+                    {% endif %}
 
-        {% if item.percentage %}
-            <p class="timeline-sub">
-                <strong>Percentage:</strong> {{ item.percentage }}
-            </p>
-            {% endif %}
-        {% if item.link %}
-        </a>
-        {% else %}
+                    {% if item.percentage %}
+                    <p class="timeline-sub">
+                        <strong>Percentage:</strong> {{ item.percentage }}
+                    </p>
+                    {% endif %}
+                    {% if item.link %}
+            </a>
+            {% else %}
         </div>
         {% endif %}
         {% endfor %}
     </div>
- </div>
+    </div>
 </section>
