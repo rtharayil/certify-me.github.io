@@ -1,0 +1,74 @@
+<footer class="bg-[hsl(var(--card))] border-t border-[hsl(var(--border))]/40 py-16">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-8 mb-12">
+      <div class="md:col-span-1">
+        <a href="classic.html" class="mb-4 inline-block hover:opacity-80 transition-opacity">
+          <img src="https://www.certifyme.online/assets4/images/Logo/1.png" alt="CertifyMe Logo" class="h-10 w-auto">
+        </a>
+        <p class="text-[hsl(var(--muted-foreground))] text-sm mb-4">
+          {{ page.tagline | default: "UI/UX Developer & Designer crafting beautiful digital experiences." }}
+        </p>
+        <div class="flex gap-3">
+          {% if page.github %}
+          <a href="{{ page.github }}" target="_blank" class="w-9 h-9 rounded-lg bg-[hsl(var(--muted))] hover:bg-[hsl(var(--primary))] hover:text-[hsl(var(--primary-foreground))] flex items-center justify-center transition-all border border-[hsl(var(--border))]/50">
+            <i data-lucide="github" class="w-4 h-4"></i>
+          </a>
+          {% endif %}
+          {% if page.linkedin %}
+          <a href="{{ page.linkedin }}" target="_blank" class="w-9 h-9 rounded-lg bg-[hsl(var(--muted))] hover:bg-[hsl(var(--primary))] hover:text-[hsl(var(--primary-foreground))] flex items-center justify-center transition-all border border-[hsl(var(--border))]/50">
+            <i data-lucide="linkedin" class="w-4 h-4"></i>
+          </a>
+          {% endif %}
+          {% if page.twitter %}
+          <a href="{{ page.twitter }}" target="_blank" class="w-9 h-9 rounded-lg bg-[hsl(var(--muted))] hover:bg-[hsl(var(--primary))] hover:text-[hsl(var(--primary-foreground))] flex items-center justify-center transition-all border border-[hsl(var(--border))]/50">
+            <i data-lucide="twitter" class="w-4 h-4"></i>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+      
+      <div>
+        <h3 class="font-heading font-semibold mb-4 text-sm uppercase tracking-wider">Navigation</h3>
+        <ul class="space-y-2">
+          <li><a href="classic.html#about" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">About</a></li>
+          <li><a href="classic.html#projects" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Projects</a></li>
+          <li><a href="classic.html#education" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Education</a></li>
+          <li><a href="classic.html#experience" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Experience</a></li>
+          <li><a href="classic.html#skills" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Skills</a></li>
+          <li><a href="classic.html#contact" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="font-heading font-semibold mb-4 text-sm uppercase tracking-wider">Resources</h3>
+        <ul class="space-y-2">
+          <li><a href="classic.html#achievements" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Achievements</a></li>
+          <li><a href="classic.html#testimonials" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Testimonials</a></li>
+          <li><a href="/files/1.pdf" download class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Resume</a></li>
+          <li><a href="mailto:{{ page.email | default: 'portfolio@example.com' }}" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Newsletter</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="font-heading font-semibold mb-4 text-sm uppercase tracking-wider">Get in Touch</h3>
+        <ul class="space-y-2">
+          <li><a href="classic.html#contact" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Contact Me</a></li>
+          <li><a href="mailto:{{ page.email | default: 'portfolio@example.com' }}" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">{{ page.email | default: 'portfolio@example.com' }}</a></li>
+          <li><a href="tel:{{ page.phone | default: '+1234567890' }}" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">{{ page.phone | default: '+1234567890' }}</a></li>
+          <li><a href="classic.html#contact" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] text-sm transition-colors">Hire Me</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="pt-8 border-t border-[hsl(var(--border))]/40">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-[hsl(var(--muted-foreground))] text-sm">© {{ "now" | date: "%Y" }} {{ page.name | default: site.title | default: "Portfolio" }}. All rights reserved.</p>
+        <div class="flex gap-6 text-sm">
+          <a href="#" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors">Privacy Policy</a>
+          <a href="#" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors">Terms of Service</a>
+          <a href="#" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

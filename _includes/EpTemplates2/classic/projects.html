@@ -1,0 +1,73 @@
+{% if page.Portfolio or page.Projects %}
+<section id="projects" class="py-24">
+  <div class="container mx-auto px-6">
+     <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-6 scroll-reveal">
+       <div>
+         <h2 class="text-3xl lg:text-4xl font-heading font-bold mb-2">Featured Projects</h2>
+         <p class="text-muted-foreground">A selection of my recent work</p>
+       </div>
+       {% assign all_projects = page.Portfolio | default: page.Projects %}
+       {% if all_projects %}
+       <div class="bg-muted/50 p-1 rounded-lg flex">
+         {% assign professional_projects = all_projects | where: "type", "professional" %}
+         {% assign student_projects = all_projects | where: "type", "student" %}
+         {% if professional_projects.size > 0 %}
+         <button onclick="filterProjects('professional')" class="project-filter px-6 py-2 rounded-md text-sm font-medium transition-all bg-background shadow-sm text-foreground" data-filter="professional">Professional</button>
+         {% endif %}
+         {% if student_projects.size > 0 %}
+         <button onclick="filterProjects('student')" class="project-filter px-6 py-2 rounded-md text-sm font-medium transition-all text-muted-foreground hover:text-foreground" data-filter="student">Student</button>
+         {% endif %}
+       </div>
+       {% endif %}
+     </div>
+
+     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+       {% for project in all_projects %}
+       <div class="project-card {{ project.type | default: "professional" }} group h-full flex flex-col overflow-hidden rounded-xl border border-border/50 bg-card text-card-foreground shadow-sm hover:shadow-xl transition-all">
+         <div class="relative h-48 overflow-hidden">
+            <div class="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            {% if project.image %}
+            <img src="{{ project.image }}" alt="{{ project.name }}" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+            {% else %}
+            <div class="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+              <i data-lucide="folder" class="w-16 h-16 text-primary/40"></i>
+            </div>
+            {% endif %}
+         </div>
+         <div class="p-6 flex-grow flex flex-col">
+           <h3 class="text-xl font-bold font-heading">{{ project.name }}</h3>
+           {% if project.category %}
+           <p class="text-sm text-primary font-medium mb-2">{{ project.category }}</p>
+           {% endif %}
+           <p class="text-muted-foreground text-sm mb-4 line-clamp-3 flex-grow">{{ project.description }}</p>
+           {% if project.technologies %}
+           <div class="flex flex-wrap gap-2 mb-4">
+             {% for tech in project.technologies %}
+             <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">{{ tech }}</span>
+             {% endfor %}
+           </div>
+           {% endif %}
+           <div class="flex gap-2">
+             {% if project.link %}
+             <a href="{{ project.link }}" class="flex-1 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-3 rounded-md text-sm font-medium flex items-center justify-center">
+               <i data-lucide="github" class="w-4 h-4 mr-2"></i> Code
+             </a>
+             <a href="{{ project.link }}" class="flex-1 bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-3 rounded-md text-sm font-medium flex items-center justify-center">
+               <i data-lucide="external-link" class="w-4 h-4 mr-2"></i> Demo
+             </a>
+             {% else %}
+             <button class="flex-1 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-3 rounded-md text-sm font-medium flex items-center justify-center">
+               <i data-lucide="github" class="w-4 h-4 mr-2"></i> Code
+             </button>
+             <button class="flex-1 bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-3 rounded-md text-sm font-medium flex items-center justify-center">
+               <i data-lucide="external-link" class="w-4 h-4 mr-2"></i> Demo
+             </button>
+             {% endif %}
+           </div>
+         </div>
+       </div>
+       {% endfor %}
+     </div>
+  </div>
+</section>
+{% endif %}

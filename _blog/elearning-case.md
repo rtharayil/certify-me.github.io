@@ -100,5 +100,4 @@ The collaboration between CertifyMe and the Hobart-based e-learning platform suc
 
 *"From attracting less than **10** students a month to **1,238** unique enrollments in two months, the journey has been tough but worth it. We admire the impact digital credentials have had on our brand presence and look forward to continuing our partnership with CertifyMe."*
 
-
 If your organization is facing similar challenges, explore how CertifyMe’s digital credentialing solutions can help by [booking a demo call](https://info.certifyme.online/talk-with-expert) for more information!

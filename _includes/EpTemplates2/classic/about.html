@@ -1,0 +1,101 @@
+<section id="about" class="py-24 bg-muted/30">
+  <div class="container mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-12 items-start scroll-reveal">
+      <div class="space-y-8">
+        <div>
+          <h2 class="text-3xl lg:text-4xl font-heading font-bold mb-4">About Me</h2>
+          <div class="h-1 w-20 bg-primary rounded-full"></div>
+        </div>
+        <div class="prose prose-lg text-muted-foreground">
+          {% if page.about_text %}
+            {{ page.about_text }}
+          {% else %}
+            <p>I am a passionate {{ page.tagline | default: "Full Stack Developer" }} and UI/UX Designer with a knack for crafting robust and scalable web applications. With over {{ page.experience_years | default: "5" }} years of experience in the tech industry, I have honed my skills in delivering top-notch digital solutions.</p>
+            <p>My journey started with a curiosity for how things work on the web, which led me to pursue a degree in Computer Science. Since then, I've worked with diverse teams and clients, helping them turn complex problems into elegant, user-centric solutions.</p>
+          {% endif %}
+        </div>
+        
+        <!-- Stats -->
+        {% if page.stats %}
+        <div class="grid grid-cols-3 gap-4">
+          {% for stat in page.stats %}
+          <div class="bg-background/50 p-4 rounded-xl text-center">
+            <div class="text-3xl font-bold text-primary mb-1">{{ stat.value }}</div>
+            <div class="text-sm text-muted-foreground">{{ stat.label }}</div>
+          </div>
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="grid grid-cols-3 gap-4">
+          <div class="bg-background/50 p-4 rounded-xl text-center">
+            <div class="text-3xl font-bold text-primary mb-1">6</div>
+            <div class="text-sm text-muted-foreground">Projects</div>
+          </div>
+          <div class="bg-background/50 p-4 rounded-xl text-center">
+            <div class="text-3xl font-bold text-primary mb-1">9</div>
+            <div class="text-sm text-muted-foreground">Endorsements</div>
+          </div>
+          <div class="bg-background/50 p-4 rounded-xl text-center">
+            <div class="text-3xl font-bold text-primary mb-1">4</div>
+            <div class="text-sm text-muted-foreground">Achievements</div>
+          </div>
+        </div>
+        {% endif %}
+
+        <a href="/files/1.pdf" download="Riya-Sharma-CV.pdf" class="border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors">
+          <i data-lucide="download" class="w-4 h-4 mr-2"></i> Download Resume
+        </a>
+      </div>
+
+      <!-- Right Column -->
+      <div class="space-y-8 bg-card p-8 rounded-3xl border border-border/50 shadow-lg">
+         <h3 class="text-2xl font-heading font-bold">Specializations</h3>
+         {% if page.specializations %}
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+           {% for spec in page.specializations %}
+           <div class="flex items-start gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors">
+             <div class="p-2 rounded-lg bg-primary/10 text-primary">
+               {% case spec.icon %}
+               {% when "code" %}
+                 <i data-lucide="code" class="w-5 h-5"></i>
+               {% when "palette" %}
+                 <i data-lucide="palette" class="w-5 h-5"></i>
+               {% when "terminal" %}
+                 <i data-lucide="terminal" class="w-5 h-5"></i>
+               {% when "cpu" %}
+                 <i data-lucide="cpu" class="w-5 h-5"></i>
+               {% else %}
+                 <i data-lucide="code" class="w-5 h-5"></i>
+               {% endcase %}
+             </div>
+             <div>
+               <h4 class="font-bold text-sm">{{ spec.name }}</h4>
+               <p class="text-xs text-muted-foreground">{{ spec.description }}</p>
+             </div>
+           </div>
+           {% endfor %}
+         </div>
+         {% else %}
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex items-start gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors">
+              <div class="p-2 rounded-lg bg-primary/10 text-primary"><i data-lucide="code" class="w-5 h-5"></i></div>
+              <div><h4 class="font-bold text-sm">Web Dev</h4><p class="text-xs text-muted-foreground">Responsive websites</p></div>
+            </div>
+            <div class="flex items-start gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors">
+              <div class="p-2 rounded-lg bg-primary/10 text-primary"><i data-lucide="palette" class="w-5 h-5"></i></div>
+              <div><h4 class="font-bold text-sm">UI Design</h4><p class="text-xs text-muted-foreground">Intuitive interfaces</p></div>
+            </div>
+            <div class="flex items-start gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors">
+              <div class="p-2 rounded-lg bg-primary/10 text-primary"><i data-lucide="terminal" class="w-5 h-5"></i></div>
+              <div><h4 class="font-bold text-sm">Backend</h4><p class="text-xs text-muted-foreground">Robust logic</p></div>
+            </div>
+            <div class="flex items-start gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors">
+              <div class="p-2 rounded-lg bg-primary/10 text-primary"><i data-lucide="cpu" class="w-5 h-5"></i></div>
+              <div><h4 class="font-bold text-sm">System Design</h4><p class="text-xs text-muted-foreground">Scalable architecture</p></div>
+            </div>
+         </div>
+         {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

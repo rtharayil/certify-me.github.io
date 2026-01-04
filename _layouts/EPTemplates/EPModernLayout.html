@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>{{ page.title | default: "Portfolio" }} | {{ site.title | default: "Portfolio" }}</title>
+    <meta name="description" content="{{ page.description | default: "A showcase of my work, skills, and experience." }}" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta-Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body class="bg-background text-foreground font-sans antialiased transition-colors duration-300">
+    
+    <!-- Navbar -->
+    {% include EpTemplates2/classic/nav.html page=page %}
+
+    <main>
+      <!-- Hero Section -->
+      {% include EpTemplates2/classic/hero.html page=page %}
+
+      <!-- About Section -->
+      {% include EpTemplates2/classic/about.html page=page %}
+
+      <!-- Projects Section -->
+      {% include EpTemplates2/classic/projects.html page=page %}
+
+      <!-- Education Section -->
+      {% include EpTemplates2/classic/education.html page=page %}
+
+      <!-- Experience Section -->
+      {% include EpTemplates2/classic/experience.html page=page %}
+
+      <!-- Skills Section -->
+      {% include EpTemplates2/classic/skills.html page=page %}
+
+      <!-- Achievements Section -->
+      {% include EpTemplates2/classic/achivements.html page=page %}
+
+      <!-- Testimonials Section -->
+      {% include EpTemplates2/classic/testimonials.html page=page %}
+
+      <!-- Contact Section -->
+      {% include EpTemplates2/classic/contact.html page=page %}
+    </main>
+
+    <!-- Footer -->
+    {% include EpTemplates2/classic/footer.html %}
+
+    <!-- Scripts -->
+    {% include EpTemplates2/classic/scripts.html %}
+  </body>
+</html>

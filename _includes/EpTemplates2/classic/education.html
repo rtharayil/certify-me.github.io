@@ -1,0 +1,51 @@
+{% if page.Education %}
+<section id="education" class="py-24 bg-muted/30">
+  <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="grid md:grid-cols-1 gap-12">
+      <!-- Education Column -->
+      <div class="space-y-8 scroll-reveal text-center">
+        <div class="flex items-center justify-center gap-3 mb-6">
+           <div class="p-3 bg-primary/10 rounded-xl text-primary">
+             <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+           </div>
+           <h2 class="text-3xl font-heading font-bold">Education</h2>
+        </div>
+
+        <!-- Education Tagline -->
+        <div class="text-center mb-8">
+          <p class="text-lg text-muted-foreground italic max-w-2xl mx-auto">
+            "Building a strong academic foundation that fuels continuous learning and professional growth in the ever-evolving tech landscape."
+          </p>
+        </div>
+
+        <div class="space-y-8 relative flex flex-col items-center">
+          {% for edu in page.Education %}
+          <div class="relative bg-card p-8 rounded-lg border border-border/50 w-full max-w-3xl shadow-sm">
+            <div class="text-center space-y-4">
+              <div class="text-sm text-primary font-medium">{{ edu.year }}</div>
+              <h3 class="text-xl font-bold">{{ edu.name }}</h3>
+              {% if edu.university %}
+              <div class="text-muted-foreground">{{ edu.university }}</div>
+              {% elsif edu.school %}
+              <div class="text-muted-foreground">{{ edu.school }}</div>
+              {% endif %}
+              {% if edu.percentage %}
+              <p class="text-sm text-muted-foreground">
+                <span class="font-medium text-foreground">{{ edu.percentage }}</span>
+              </p>
+              {% endif %}
+              {% if edu.link %}
+              <div class="pt-2">
+                <a href="{{ edu.link }}" class="text-sm text-primary hover:underline">View Details →</a>
+              </div>
+              {% endif %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}

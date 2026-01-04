@@ -110,7 +110,6 @@ Ready to make the request? Here’s a simple guide to requesting your transcript
 
 1. **Online Portals:** If your school uses an online service, log in to the portal, select your institution, and follow the instructions to request your transcript. Payment may be required, so have a credit or debit card ready. 
 
-   
    If you're using [**EduTranscript by CertifyMe**](https://www.edutranscript.com/), all you need to do is log in using your credentials, choose the type of transcript you need, upload the necessary information (like ID or forms), and make a secure payment online. You can even track the status of your order directly from your dashboard, from university approval to the moment your transcript arrives at your doorstep.
 
 2. **Registrar's Office:** This is the traditional route. If you’re on campus or near your school, stop by the registrar’s office. Otherwise, you can call or email them to initiate the process. You will find their contact on the “Contact” page of the university website.

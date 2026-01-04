@@ -1,0 +1,173 @@
+{% comment %}
+  Skills Section Template
+  Enhanced for better readability, performance, and maintainability
+{% endcomment %}
+
+{% if page.Skills and page.Skills.size > 0 %}
+<section id="skills" class="py-24" role="region" aria-labelledby="skills-heading">
+  <div class="container mx-auto px-6">
+    <!-- Section Header -->
+    <header class="text-center mb-16 scroll-reveal">
+      <h2 id="skills-heading" class="text-3xl lg:text-4xl font-heading font-bold mb-4">
+        Skills & Expertise
+      </h2>
+      <p class="text-muted-foreground" role="doc-subtitle">
+        My technical toolbox
+      </p>
+    </header>
+
+    <!-- Skills Grid -->
+    <div class="grid gap-6 
+                grid-cols-1 
+                sm:grid-cols-2 
+                lg:grid-cols-3 
+                xl:grid-cols-4 
+                scroll-reveal"
+         role="list"
+         aria-label="Technical skills and expertise">
+      
+      {% for skill in page.Skills %}
+        {% assign icon_name = skill.icon | default: 'code-2' %}
+        {% assign color_class = skill.color | default: 'blue' %}
+        {% assign category_name = skill.category | default: skill.name %}
+        {% assign skill_items = skill.items %}
+        {% assign percentage = skill.percentage | default: 0 | at_most: 100 | at_least: 0 %}
+        
+        <article class="skill-card group" role="listitem">
+          <!-- Icon Container -->
+          <div class="w-12 h-12 rounded-xl 
+                      bg-{{ color_class }}-500/10 
+                      text-{{ color_class }}-500 
+                      flex items-center justify-center mb-6
+                      transition-all duration-300 
+                      group-hover:scale-110"
+               role="img" 
+               aria-label="{{ icon_name | replace: '-', ' ' }} icon">
+            {% case icon_name %}
+              {% when 'code-2', 'code', 'terminal', 'cpu' %}
+                <i data-lucide="code-2" class="w-6 h-6" aria-hidden="true"></i>
+              {% when 'pen-tool', 'design', 'brush', 'palette' %}
+                <i data-lucide="pen-tool" class="w-6 h-6" aria-hidden="true"></i>
+              {% when 'users', 'team', 'people', 'collaboration' %}
+                <i data-lucide="users" class="w-6 h-6" aria-hidden="true"></i>
+              {% when 'sparkles', 'magic', 'star', 'sparkle' %}
+                <i data-lucide="sparkles" class="w-6 h-6" aria-hidden="true"></i>
+              {% when 'database', 'storage', 'server' %}
+                <i data-lucide="database" class="w-6 h-6" aria-hidden="true"></i>
+              {% when 'cloud', 'cloud-upload', 'cloud-download' %}
+                <i data-lucide="cloud" class="w-6 h-6" aria-hidden="true"></i>
+              {% when 'settings', 'gear', 'wrench' %}
+                <i data-lucide="settings" class="w-6 h-6" aria-hidden="true"></i>
+              {% when 'smartphone', 'mobile', 'phone' %}
+                <i data-lucide="smartphone" class="w-6 h-6" aria-hidden="true"></i>
+              {% else %}
+                <i data-lucide="code-2" class="w-6 h-6" aria-hidden="true"></i>
+            {% endcase %}
+          </div>
+          
+          <!-- Skill Content -->
+          <div class="skill-content">
+            <h3 class="text-lg font-bold font-heading mb-4">{{ category_name }}</h3>
+            
+            {% if skill_items and skill_items.size > 0 %}
+              <!-- Skill Items List -->
+              <ul class="flex flex-wrap gap-2" role="list" aria-label="Skill items">
+                {% for item in skill_items %}
+                  {% if item and item != empty %}
+                    <li>
+                      <span class="skill-tag px-2.5 py-1 rounded-md 
+                                    bg-muted text-xs font-medium 
+                                    text-muted-foreground"
+                            role="listitem">{{ item | escape }}</span>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% else %}
+              <!-- Single Skill with Percentage -->
+              <div class="skill-item-single">
+                <span class="skill-name px-2.5 py-1 rounded-md 
+                             bg-muted text-xs font-medium 
+                             text-muted-foreground"
+                      aria-label="Skill level: {{ category_name }}">{{ category_name | escape }}</span>
+                
+                {% if percentage > 0 %}
+                  <!-- Progress Bar -->
+                  <div class="progress-container mt-3" 
+                       role="progressbar" 
+                       aria-valuenow="{{ percentage }}" 
+                       aria-valuemin="0" 
+                       aria-valuemax="100"
+                       aria-label="{{ category_name }} proficiency">
+                    <div class="progress-track w-full bg-muted rounded-full h-2 overflow-hidden">
+                      <div class="progress-bar bg-primary h-2 rounded-full 
+                                  transition-all duration-1000 ease-out"
+                           style="width: 0%"
+                           data-percentage="{{ percentage }}">
+                      </div>
+                    </div>
+                    <span class="progress-text text-xs text-muted-foreground mt-1 block">
+                      {{ percentage }}%
+                    </span>
+                  </div>
+                {% endif %}
+              </div>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Performance Optimization: Preload critical icons -->
+<link rel="preload" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='16 18 22 12 16 6'%3E%3C/polyline%3E%3Cpolyline points='8 6 2 12 8 18'%3E%3C/polyline%3E%3C/svg%3E" as="image">
+
+<script>
+// Progressive enhancement: Animate progress bars when they come into view
+document.addEventListener('DOMContentLoaded', function() {
+  const progressBars = document.querySelectorAll('.progress-bar[data-percentage]');
+  
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bar = entry.target;
+          const percentage = bar.getAttribute('data-percentage');
+          
+          // Use requestAnimationFrame for smooth animation
+          requestAnimationFrame(() => {
+            bar.style.width = percentage + '%';
+          });
+          
+          observer.unobserve(bar);
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    progressBars.forEach(bar => observer.observe(bar));
+  } else {
+    // Fallback for older browsers
+    progressBars.forEach(bar => {
+      const percentage = bar.getAttribute('data-percentage');
+      bar.style.width = percentage + '%';
+    });
+  }
+});
+</script>
+
+{% else %}
+<!-- Empty State for better UX -->
+<section id="skills" class="py-24" role="region" aria-labelledby="skills-heading-empty">
+  <div class="container mx-auto px-6">
+    <div class="text-center">
+      <h2 id="skills-heading-empty" class="text-3xl lg:text-4xl font-heading font-bold mb-4">
+        Skills & Expertise
+      </h2>
+      <p class="text-muted-foreground">
+        Skills information will be added soon.
+      </p>
+    </div>
+  </div>
+</section>
+{% endif %}
