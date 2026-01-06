@@ -14,7 +14,7 @@ templateDesciption: "Choose from 1,000+ free certificate templates designed to m
 templateBannerTitle: "Create Your Own Certificate Design"
 templateBannerDescription: "Design and send professional certificates<br> with CertifyMe."
 templateBannerButton: "Start For Free"
-templateBannerButtonLink: "https://my.certifyme.online/auth/preregister/"
+templateBannerButtonLink: "https://apac.platform.certifyme.dev/auth/pre-register/"
 
 
 
