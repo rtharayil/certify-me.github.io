@@ -9,7 +9,7 @@ sitemap.priority: 0.9
 
 
 # hero section
-heroTitle: The Best Credly Alternative Everyone's Talking About in 2025
+heroTitle: The Best Credly Alternative Everyone's Talking About in 2026
 herosubTitle: Credly's alternative digital credentialing platform that allows organizations to create, issue, manage, and share digital badges and certificates.
 heroImage: /assets4/images/certifyme_vs_credly.png
 

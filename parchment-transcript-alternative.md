@@ -1,5 +1,5 @@
 ---
-title: "The Modern Parchment Alternative Everyone's Talking About in 2025"
+title: "The Modern Parchment Alternative Everyone's Talking About in 2026"
 
 description: "EduTranscript by CertifyMe is making new waves in the higher education space, enabling institutions to issue secure, verifiable transcripts effortlessly—all through a streamlined, admin-friendly workflow."
 
@@ -9,7 +9,7 @@ sitemap.priority: 0.9
 
 
 # hero section
-heroTitle: The Modern Parchment Alternative Everyone's Talking About in 2025 
+heroTitle: The Modern Parchment Alternative Everyone's Talking About in 2026 
 herosubTitle: "EduTranscript by CertifyMe is making new waves in the higher education space, enabling institutions to issue secure, verifiable transcripts effortlessly—all through a streamlined, admin-friendly workflow."
 heroImage: /assets4/images/Parchment-Transcript-Alternative.png
 
