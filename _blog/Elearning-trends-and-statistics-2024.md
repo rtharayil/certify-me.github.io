@@ -51,7 +51,7 @@ As the education landscape undergoes a digital transformation, e-learning contin
 1. **AI Market Size:** The AI in education market was valued at **$1.77 billion** in **2023**.
 1. **Future Market Projection:** This market is expected to grow at a **37.2% CAGR**, reaching **$1.73 billion** by **2032**, driven by increased adoption of AI, e-learning, and natural language processing tools.
 1. **Regional Leadership:** **North America** leads the AI in education market, driven by widespread adoption among educational institutions and students.
-1. **Student Engagement Boost:** The use of AI in e-learning has resulted in an **80% increase** in student engagement.
+1. **Student Engagement Boost:** As a result, many institutions are now using tools like an [AI video generator](https://predis.ai/ai-video-generator/) to create engaging learning videos, explainer content, and promotional content that enhance both learner experience and outreach.
 1. **AI Study Tools:** Nearly **two-thirds** of students reported using AI tools for studying.
 1. **ChatGPT for Studies:** **50%** of students using AI rely on ChatGPT or GPT-4 for studying and research purposes.
 1. **AI for Quizzes:** **48%** of students prefer using ChatGPT for online quizzes and tests.
