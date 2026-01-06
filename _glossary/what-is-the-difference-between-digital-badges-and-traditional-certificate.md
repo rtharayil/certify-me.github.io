@@ -147,5 +147,5 @@ Digital badges also follow standards such as Open Badges 3.0 and W3C Verifiable 
 
 At a glance, a traditional certificate and a digital badge might seem similar, but under the hood, digital badges represent decades of technological progress. They offer far greater security, flexibility, and reliability, making them a strong, modern alternative to traditional formats.
 
-If you're currently exploring verifiable digital badging solutions for your organisation, CertifyMe is a robust option to consider. There's a [free trial](https://my.certifyme.online/auth/preregister/nav@certifyme.online) available, so you can explore the platform firsthand or you can [talk to our team](https://info.certifyme.online/talk-with-expert) if you’re looking into more advanced, customized plans.
+If you're currently exploring verifiable digital badging solutions for your organisation, CertifyMe is a robust option to consider. There's a [free trial](https://apac.platform.certifyme.dev/auth/pre-register/nav@certifyme.online) available, so you can explore the platform firsthand or you can [talk to our team](https://info.certifyme.online/talk-with-expert) if you’re looking into more advanced, customized plans.
 

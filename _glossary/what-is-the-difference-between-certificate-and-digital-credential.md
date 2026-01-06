@@ -187,6 +187,6 @@ Digital credentials are more suitable when the achievement needs to be trusted b
 
 Reading about the difference helps, but seeing a digital credential makes it much clearer. You can explore a [sample digital credential](https://app.certifyme.online/verify/9cf66b9d10644) on the CertifyMe website to get a sense of what it looks like, how verification works, and what learners experience.
 
-If you want a hands-on feel, you can also [create a free account on CertifyMe](https://my.certifyme.online/auth/preregister/nav@certifyme.online) and issue a test credential to yourself. This lets you see the workflow from the issuer’s side and the learner’s side.
+If you want a hands-on feel, you can also [create a free account on CertifyMe](https://apac.platform.certifyme.dev/auth/pre-register/nav@certifyme.online) and issue a test credential to yourself. This lets you see the workflow from the issuer’s side and the learner’s side.
 
 If you later decide that your organization needs a more advanced credentialing system, you can [request a demo](https://info.certifyme.online/request-demo) from the CertifyMe team to understand the options.
