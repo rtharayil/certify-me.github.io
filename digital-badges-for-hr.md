@@ -65,7 +65,7 @@ Feature6_2Icon: <svg xmlns="http://www.w3.org/2000/svg" version="1.1" img width=
 #G2 section
 G2Title: Global Leader in Digital Certificates & Badge Management
 ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
-ActionButtonbelowtext1: Free 10 Credentials
+ActionButtonbelowtext1: Free 5 Credentials
 ActionButtonbelowtext2: Exclusive Support
 
 # testimonial section
