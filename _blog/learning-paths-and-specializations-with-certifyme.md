@@ -14,17 +14,22 @@ featured: true
 
 In today's fast-paced world, structured learning is key to personal and professional development. CertifyMe offers a comprehensive solution for creating and managing learning paths and specializations. This blog post will guide you through the process and explain the key concepts and features. 
 
+<br>
+
 ## What is a Learning Path?
 
 A learning path is a structured sequence of courses, modules, or milestones designed to guide learners through a comprehensive educational journey. It helps learners achieve specific learning goals by following a predefined roadmap. Learning paths ensure that learners progress logically and systematically, building on their knowledge and skills as they advance.
+
 <br>
-<br>
+
 Explore the structure of a learning path <a href="https://www.youtube.com/watch?v=kXYADGPoars">here</a>
 
+<br>
 
 ## How to Create a Learning Path
 
 Creating a learning path in CertifyMe is straightforward and user-friendly. Follow these steps to set up a structured educational journey: 
+
 1. <b>Log in to your CertifyMe account. </b>
 1. <b>Navigate to the "Learning Paths" section. </b>
 1. <b>Click on "Create New Learning Path." </b>
@@ -35,14 +40,16 @@ Creating a learning path in CertifyMe is straightforward and user-friendly. Foll
 
 You can follow along this step by step tutorial <a href="https://www.youtube.com/watch?v=UolXiFolNAA">video</a>
 
-
-
+<br>
 
 <img class="img-fluid r-16" src="/assets4/images/l_image1.png" alt="Learning paths in CertifyMe">
 
+<br>
 
 ## How to Add a Template to the Learning Path
+
 Templates streamline the design and presentation of your learning path by providing a consistent and professional framework that ensures uniformity across all learning modules. To add a template to your learning path, simply follow the steps given below: 
+
 1. <b>Open the learning path you wish to edit. </b>
 1. <b> Navigate to the "Templates" section within the learning path settings. </b>
 1. <b> Click "Add Template." </b>
@@ -52,24 +59,33 @@ Templates streamline the design and presentation of your learning path by provid
 
 
 ## What is Specialization in a Learning Path?
+
 Specialization in a learning path refers to a subset of courses or modules focused on a particular subject area. It allows learners to gain deeper expertise in a specific field within the broader learning path. Specializations are essential for learners who want to master topics or skills beyond the general curriculum. 
 
+<br>
 
 ## How to Add Specializations to the Learning Path
+
 Specializations enhance learning paths by providing learners with targeted training that deepens their expertise in particular subjects. To add specializations: 
+
 1. <b> Go to the "Learning Paths" section and select the learning path you want to edit. </b>
 1. <b> Click on "Add Specialization." </b>
 1. <b> Enter the name and description of the specialization. </b>
 1. <b> Assign relevant courses or modules to the specialization. </b>
 1. <b> Save the changes to integrate the specialization into the learning path. </b>
 
-
+<br>
 
 <img class="img-fluid r-16" src="/assets4/images/l_image2.png" alt="Specialization within learning paths in CertifyMe">
 
 ## What is Recognition in a Learning Path?
+
 Recognition in a learning path refers to the awards, badges, certificates, or other acknowledgments given to learners upon achieving certain milestones or completing specific courses within the learning path. It serves to motivate learners and provide tangible proof of their accomplishments. Recognitions can be a powerful tool to encourage continuous learning and celebrate progress. 
+
+<br>
+
 ## How to Add Recognitions to the Learning Path
+
 To add a recognition to your learning path: 
 
 1. <b> Open the learning path you wish to edit. </b>
@@ -81,7 +97,10 @@ To add a recognition to your learning path:
   
 By following these guidelines, you can create effective learning paths and specializations with CertifyMe, enhancing the educational experience for your learners and ensuring they achieve their learning goals efficiently and effectively. 
 
+<br>
+
 ## Conclusion
+
 In wrapping up, creating specialized learning paths with added recognitions using CertifyMe can really boost your learners' engagement, retention, and overall experience. By designing these structured, targeted educational journeys, you'll keep your students motivated and invested in their learning. 
 
 This article has all the essential info you need to efficiently implement these strategies using our platform. Just follow the steps we’ve outlined, and we promise you, you’ll see the results you are aiming for. 
