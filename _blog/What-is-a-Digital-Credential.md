@@ -34,6 +34,8 @@ A few years back, proving your credentials meant dealing with stacks of paper or
 
 So, why should you care? Digital credentials streamline the process of showcasing your achievements—whether it’s completing [language training](https://www.simonandsimon.co.uk/), mastering a technical skill, or earning a professional certification—and make it simpler for employers or educational institutions to verify them. Stick with me, and I’ll explain more about how they’re used and why they’re so important in today’s world.
 
+Further Reading : [What is the difference between a Certificate and a Digital Credential?](https://www.certifyme.online/glossary/what-is-the-difference-between-certificate-and-digital-credential.html)
+
 <br>
 
 ## Types of Digital Credentials
