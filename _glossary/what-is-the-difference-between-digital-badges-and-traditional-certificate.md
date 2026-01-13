@@ -27,7 +27,7 @@ This comparison is written as a simple guide for credential issuers such as univ
 
 ## What is a Traditional Certificate?
 
-<img class="img-fluid r-16" src="/assets4/images/Glossary/traditional-certificate.png" alt="Traditional Certificate of Completion" style="display: block; margin: 0 auto; width:70%;">
+<img class="img-fluid r-16" src="/assets4/images/Glossary/traditional-certificate-of-completion.png" alt="Traditional Certificate of Completion" style="display: block; margin: 0 auto; width:70%;">
 
 A traditional certificate is a piece of paper that formally states a fact about someone or something. For instance, if a student has graduated in a discipline such as computer science, a degree certificate from the university will state this fact, thereby proving the individual’s achievement.
 
@@ -37,7 +37,7 @@ Traditional certificates usually exist in physical form, such as being printed o
 
 ## What is a Digital Badge?
 
-<img class="img-fluid r-16" src="/assets4/images/Glossary/digital-badge-or-credential.png" alt="Digital Badge or Credential" style="display: block; margin: 0 auto; width:50%;">
+<img class="img-fluid r-16" src="/assets4/images/Glossary/a-digital-badge (2).png" alt="Digital Badge or Credential" style="display: block; margin: 0 auto; width:50%;">
 
 A [digital badge](https://www.certifyme.online/blog/digital-badges-explained.html), on the other hand, is a type of digital credential that is issued in an electronic format and is cryptographically signed for security. It is usually accessed through a verification link and is designed to be easily shared and independently verified.
 
