@@ -28,6 +28,8 @@ When someone adds new information to the blockchain—like a digital credential 
 
 This unique structure is why blockchain is known for being secure and trustworthy. It ensures that digital credentials are safe from tampering and can be easily verified by anyone who needs to check them.
 
+Further Reading : [What is the difference between a Certificate and a Digital Credential?](https://www.certifyme.online/glossary/what-is-the-difference-between-certificate-and-digital-credential.html)
+
 <br>
 
 ## How Blockchain Digital Credentials Work?
