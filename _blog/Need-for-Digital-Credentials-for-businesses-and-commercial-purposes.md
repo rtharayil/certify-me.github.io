@@ -215,6 +215,8 @@ Let’s zoom out for a second. This isn’t just about tracking employee skills 
 
 The world of work is shifting fast. New tools, new tech, new expectations. If employees can’t keep up, businesses can’t either. And traditional credentials—those printed degrees and outdated certificates—just can’t keep pace. Digital credentials let people learn, prove, and move forward in real time.
 
+For example, tools like an [AI business plan generator](https://prometai.app/) help leaders and teams strategize efficiently, combining verified skills with actionable business insights.
+
 Think of it like this: companies used to invest in office buildings. Now, smart ones are investing in people. Verified, visible skills aren’t just good for employees—they help leaders make smarter choices, plan better teams, and respond to change without panic. It’s not about checking boxes—it’s about being ready for whatever comes next.
 
 And here’s the quiet truth no one really says aloud: if you’re not actively preparing your workforce, you’re already falling behind. Digital credentials aren’t some future tool—they’re today’s solution to tomorrow’s problems.
