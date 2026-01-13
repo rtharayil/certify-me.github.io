@@ -81,6 +81,8 @@ And for institutions? They act like tiny digital ambassadors. Every time a badge
 
 In short, digital credentials don’t just prove something valuable happened—they show who made it happen: you.
 
+Further Reading : [What is the difference between a Certificate and a Digital Credential?](https://www.certifyme.online/glossary/what-is-the-difference-between-certificate-and-digital-credential.html)
+
 <br>
 
 ## Okay, but how do digital credentials actually boost brand awareness?
