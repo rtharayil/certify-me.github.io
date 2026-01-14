@@ -63,6 +63,7 @@ Imagine you're applying for your dream internship or entry-level role. By presen
 <br>
 
 ## What Information Is Included in a High School Transcript?
+
 Your transcript is more than a list of grades—it’s a comprehensive academic profile. Here’s a breakdown of what you can expect to find
 
 <img class="img-fluid r-16" src="/img/eduTranscript/High School Transcript Sample.jpg" alt="High School Transcript Sample">
@@ -132,11 +133,13 @@ For example, did you start off taking more foundational courses and gradually wo
 <br>
 
 ##### Why Your Course Dates Matter on Your Transcript
+
 Course dates show how your academic path developed over time, allowing others to see how you progressively took on more complex subjects. This timeline can be helpful when applying for college or jobs, providing insight into your maturity and academic progression.
 
 <br>
 
 ##### Actions to Take for Better Course Tracking 
+
 Keep a personal record of your courses and grades as a cross-reference. Ensure that all dates accurately reflect when you took each course. If you notice any discrepancies, clarify them with your school.This can help verify that your transcript is complete and correct.
 
 <img class="img-fluid r-16" src="/img/eduTranscript/High School Attendance List Sample.jpg" alt="High School Attendance List Sample">
@@ -154,6 +157,7 @@ For instance, if you had a few unexcused absences due to a family emergency, you
 <br>
 
 ## How to Get Your High School Transcript in 2025? 
+
 Ready to request your high school transcript? Here’s a step-by-step guide to obtaining it based on your enrollment status.
 
 <br>
@@ -215,7 +219,6 @@ Ready to request your high school transcript? Here’s a step-by-step guide to o
 1. **Ask About Processing Times:** Contact the DOE by phone or email to ask about the average processing time, as some requests can take several weeks. It’s also wise to get a confirmation number or reference ID for your request.
 
 1. **Follow Up as Needed:** If you don’t receive your transcript within the expected timeframe, follow up with the DOE. They can confirm the status of your request or provide additional details if there’s a delay.
-
 
 By following these steps, you can retrieve your high school transcript even if your school has closed, ensuring you have the documentation needed for college applications, employment, or other important uses.
 
@@ -309,6 +312,7 @@ Today, digital platforms make obtaining your transcript easier than ever. Here a
 <br>
 
 ##### Features and Functionality
+
 EduTranscript offers several valuable features to simplify the transcript process:
 
 1. **Automated Processing:** Streamlines transcript requests through digital transactions, reducing manual steps and paperwork.
@@ -319,6 +323,7 @@ EduTranscript offers several valuable features to simplify the transcript proces
 <br>
 
 ##### Unique Advantages
+
 EduTranscript stands out for its commitment to speed, security, and ease of access:
 
 1. **Enhanced Security:** With all transactions conducted digitally, EduTranscript minimizes tampering risks, ensuring that transcripts remain secure and authentic.
