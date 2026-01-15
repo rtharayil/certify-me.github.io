@@ -115,6 +115,8 @@ You might be wondering—how does this play out in real life?
 
 Let’s look at both sides of the campus: the student experience and the admin perspective.
 
+<br>
+
 ### For students:
 
 1. Applying for internships: Instead of uploading clunky PDFs of your transcript, you share a verified digital version.
@@ -122,6 +124,8 @@ Let’s look at both sides of the campus: the student experience and the admin p
 1. Accessing student discounts: Prove your current enrollment with a quick digital check.
 
 1. Study abroad programs: Share language proficiency or completed prerequisites in seconds.
+
+<br>
 
 ### For registrar offices and staff:
 
@@ -238,7 +242,7 @@ The good news is, the groundwork is already there. Many universities are explori
 
 1. Credential wallets that integrate with student portals
 
-Here are a few first steps:
+**Here are a few first steps:**
 
 1. Start small – Pilot a program for transcripts or course completions.
 
