@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSI Portal – Login & Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; min-height: 100vh; }
+
+        /* LOGIN PAGE STYLES (from bsi.html) */
+        #loginPageContainer { background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%); min-height: 100vh; }
+        #loginPageContainer.hidden { display: none; }
+        .login-navbar { background-color: #ffffff; padding: 20px 50px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); border-bottom: 1px solid rgba(0, 0, 0, 0.05); display: flex; justify-content: flex-start; }
+        .logo-link { display: block; text-decoration: none; }
+        .login-navbar .logo-link { margin-left: 10%; }
+        .bsi-logo-img { height: 40px; width: auto; display: block; }
+        .login-container { display: flex; justify-content: center; align-items: center; min-height: calc(100vh - 85px); padding: 50px 20px; }
+        .login-card { background: #ffffff; border-radius: 16px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08); width: 100%; max-width: 500px; padding: 50px 45px; border: 1px solid rgba(0, 0, 0, 0.05); }
+        .login-page { display: none; animation: fadeIn 0.3s ease; }
+        .login-page.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .back-arrow { display: inline-flex; align-items: center; margin-bottom: 24px; color: #000; text-decoration: none; font-size: 14px; font-weight: 500; cursor: pointer; }
+        .back-arrow:hover { color: #5b8def; }
+        .card-header { margin-bottom: 35px; }
+        .card-header h1 { font-size: 32px; font-weight: 700; color: #000; margin-bottom: 12px; }
+        .card-header p { color: #666; font-size: 15px; }
+        .form-group { margin-bottom: 24px; }
+        .form-group label { display: block; margin-bottom: 10px; font-weight: 500; color: #333; font-size: 14px; }
+        .form-group input, .form-group select { width: 100%; padding: 14px 16px; border: 1.5px solid #e0e0e0; border-radius: 10px; font-size: 15px; transition: all 0.2s ease; background: #fafafa; }
+        .form-group input:focus, .form-group select:focus { outline: none; border-color: #5b8def; background: #fff; box-shadow: 0 0 0 4px rgba(91, 141, 239, 0.1); }
+        .captcha-container { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+        .captcha-display { flex: 1; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 16px; border-radius: 10px; font-size: 24px; font-weight: 700; letter-spacing: 8px; text-align: center; color: #fff; user-select: none; }
+        .captcha-refresh { width: 48px; height: 48px; background: #f0f0f0; border: none; border-radius: 10px; cursor: pointer; font-size: 20px; transition: all 0.2s ease; }
+        .captcha-refresh:hover { background: #e0e0e0; transform: rotate(90deg); }
+        .forgot-password { text-align: right; margin-top: -10px; margin-bottom: 20px; }
+        .forgot-password a { color: #5b8def; text-decoration: none; font-size: 14px; font-weight: 500; }
+        .forgot-password a:hover { text-decoration: underline; }
+        .btn-primary { width: 100%; padding: 16px; background: linear-gradient(135deg, #000 0%, #333 100%); border: none; border-radius: 10px; color: #fff; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; margin-top: 10px; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); }
+        .btn-secondary { width: 100%; padding: 16px; background: #fff; border: 2px solid #000; border-radius: 10px; color: #000; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; margin-top: 16px; }
+        .btn-secondary:hover { background: #000; color: #fff; }
+        .divider { text-align: center; margin: 28px 0; position: relative; }
+        .divider::before { content: ''; position: absolute; left: 0; top: 50%; width: 100%; height: 1px; background: #e0e0e0; }
+        .divider span { background: #fff; padding: 0 16px; color: #999; font-size: 14px; position: relative; z-index: 1; }
+        .info-box { background: #f0f7ff; border: 1px solid #d0e7ff; border-radius: 10px; padding: 16px; margin-bottom: 24px; }
+        .info-box p { color: #0066cc; font-size: 14px; line-height: 1.6; }
+        .success-message { background: #e8f5e9; border: 1px solid #a5d6a7; color: #2e7d32; padding: 16px; border-radius: 10px; margin-bottom: 20px; display: none; }
+        .error-message { background: #ffebee; border: 1px solid #ffcdd2; color: #c62828; padding: 12px; border-radius: 8px; margin-bottom: 20px; font-size: 14px; display: none; }
+
+        /* DASHBOARD STYLES (from dashboard.html) */
+        #dashboardPageContainer { display: none; height: 100vh; overflow: hidden; }
+        #dashboardPageContainer.active { display: flex; }
+        .dashboard { display: flex; height: 100vh; width: 100%; }
+        .sidebar { width: 256px; background-color: white; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; }
+        .sidebar-logo { padding: 24px; border-bottom: 1px solid #e5e7eb; }
+        .sidebar-logo .bsi-logo-img { width: 100%; max-width: 150px; height: auto; }
+        .org-info { margin-top: 10px; }
+        .org-info .user-name { font-size: 18px; font-weight: 600; color: #1f2937; margin-bottom: 4px; }
+        .org-info .org-name { font-size: 14px; color: #6b7280; margin-bottom: 4px; }
+        .org-info .membership-id { font-size: 14px; color: #6b7280; }
+        .sidebar-nav { flex: 1; padding: 16px; }
+        .nav-item { width: 100%; display: flex; align-items: center; gap: 12px; padding: 12px 16px; border: none; border-radius: 8px; margin-bottom: 8px; cursor: pointer; font-size: 14px; font-weight: 500; transition: all 0.2s; background-color: transparent; color: #374151; text-align: left; }
+        .nav-item:hover { background-color: #f3f4f6; }
+        .nav-item.active { background-color: #3b82f6; color: white; position: relative; }
+        .nav-item.active::after { content: ''; position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; background-color: #10b981; border-radius: 50%; border: 2px solid white; }
+        .nav-icon { width: 20px; height: 20px; }
+        .nav-logout { padding: 16px; border-top: 1px solid #e5e7eb; }
+        .logout-button { width: 100%; display: flex; align-items: center; gap: 12px; padding: 12px 16px; border: none; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 500; background-color: transparent; color: #2563eb; transition: all 0.2s; }
+        .logout-button:hover { background-color: #eff6ff; }
+        .main-content { flex: 1; overflow-y: auto; display: flex; flex-direction: column; background-color: #f9fafb; }
+        .dashboard-header { background-color: white; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); padding: 16px 24px; display: flex; justify-content: flex-end; align-items: center; }
+        .user-profile { width: 40px; height: 40px; background-color: #dbeafe; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #2563eb; font-weight: 600; cursor: pointer; }
+        .content-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; max-width: 1200px; margin-left: auto; margin-right: auto; padding: 0 20px; }
+        .content-header h1 { font-size: 28px; font-weight: 600; color: #1f2937; }
+        .search-bar-header { position: relative; width: 350px; }
+        .search-bar-header input { width: 100%; padding: 10px 40px 10px 16px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 14px; transition: all 0.2s ease; background: #f9fafb; }
+        .search-bar-header input:focus { outline: none; border-color: #3b82f6; background: #fff; box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); }
+        .search-icon-header { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; color: #6b7280; }
+        .content-area { padding: 32px; flex: 1; overflow-y: auto; }
+        .certificate-list { display: flex; flex-direction: column; gap: 24px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .certificate-card { background-color: white; border-radius: 8px; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; transition: box-shadow 0.2s; }
+        .certificate-card:hover { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .certificate-thumbnail { width: 192px; height: 256px; background: #f5f5f5; display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden; border-right: 1px solid #e5e7eb; }
+        .certificate-image { width: 100%; height: 100%; object-fit: cover; }
+        .certificate-info { padding: 24px; flex: 1; display: flex; align-items: center; justify-content: space-between; }
+        .certificate-details h3 { font-size: 18px; font-weight: 600; color: #1f2937; margin-bottom: 8px; }
+        .certificate-desc { font-size: 14px; color: #6b7280; margin-bottom: 4px; }
+        .certificate-date { font-size: 14px; color: #6b7280; }
+        .wallet-content { display: none; }
+        .wallet-content.active { display: block; }
+        .empty-state { background-color: white; border-radius: 8px; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); padding: 64px 32px; text-align: center; max-width: 1200px; margin: 0 auto; }
+        .empty-state h2 { font-size: 20px; font-weight: 600; color: #1f2937; margin: 16px 0 8px; }
+        .empty-state p { color: #6b7280; font-size: 14px; }
+        .dropdown { position: relative; }
+        .btn-more { padding: 8px 24px; border: 1px solid #3b82f6; background-color: white; color: #3b82f6; border-radius: 8px; font-size: 14px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .btn-more:hover { background-color: #eff6ff; }
+        .btn-self-certify { padding: 10px 28px; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border: none; border-radius: 8px; color: white; font-size: 14px; font-weight: 600; cursor: pointer; box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3); transition: all 0.2s; }
+        .btn-self-certify:hover { background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4); transform: translateY(-1px); }
+        .dropdown-menu { display: none; position: absolute; top: calc(100% + 8px); right: 0; background-color: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); min-width: 200px; z-index: 100; }
+        .dropdown-menu.show { display: block; animation: dropdownFade 0.2s ease; }
+        @keyframes dropdownFade { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+        .dropdown-item { width: 100%; padding: 12px 16px; border: none; background: none; text-align: left; color: #374151; cursor: pointer; font-size: 14px; transition: background-color 0.2s; }
+        .dropdown-item:hover { background-color: #f9fafb; }
+        .admin-users-section { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .admin-box { background: white; border-radius: 12px; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); padding: 32px; text-align: center; cursor: pointer; transition: all 0.2s ease; border: 2px solid transparent; }
+        .admin-box:hover { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); transform: translateY(-2px); border-color: #3b82f6; }
+        .admin-box-icon { width: 64px; height: 64px; margin: 0 auto 20px; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+        .admin-box.new-register .admin-box-icon { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
+        .admin-box.approve .admin-box-icon { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); }
+        .admin-box.rejected .admin-box-icon { background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); }
+        .admin-list-view { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .back-button { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 14px; font-weight: 500; color: #374151; cursor: pointer; transition: all 0.2s ease; margin-bottom: 20px; }
+        .back-button:hover { background: #f9fafb; border-color: #3b82f6; color: #3b82f6; }
+        .list-title { font-size: 24px; font-weight: 600; color: #1f2937; margin-bottom: 24px; }
+        .status-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600; margin-top: 8px; }
+        .status-badge.pending { background: #fef3c7; color: #92400e; }
+        .status-badge.approved { background: #d1fae5; color: #065f46; }
+        .status-badge.rejected { background: #fee2e2; color: #991b1b; }
+
+        /* Modal Styles */
+        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); overflow-y: auto; padding: 20px; }
+        .modal.show { display: flex; align-items: flex-start; justify-content: center; animation: fadeIn 0.3s ease; }
+        .modal-content { background-color: #fff; margin: 40px auto; border-radius: 16px; width: 100%; max-width: 900px; max-height: calc(100vh - 80px); overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); display: flex; flex-direction: column; }
+        .modal-header { padding: 30px 40px; border-bottom: 1px solid #e8e8e8; background: linear-gradient(135deg, #f8f9fc 0%, #fff 100%); position: sticky; top: 0; z-index: 10; }
+        .modal-header h2 { font-size: 26px; font-weight: 600; color: #1a1a1a; margin-bottom: 6px; }
+        .modal-header p { font-size: 15px; color: #666; margin: 0; }
+        .modal-body { padding: 40px; overflow-y: auto; flex: 1; background: #fafafa; }
+        .question-section { background: #fff; margin-bottom: 24px; padding: 28px; border-radius: 12px; border: 1px solid #e8e8e8; transition: all 0.2s ease; }
+        .question-number { display: inline-block; background: #5b8def; color: #fff; width: 28px; height: 28px; border-radius: 50%; text-align: center; line-height: 28px; font-size: 13px; font-weight: 600; margin-right: 10px; }
+        .question-title { font-size: 17px; font-weight: 600; color: #1a1a1a; margin-bottom: 12px; display: flex; align-items: center; }
+        .question-text { font-size: 14px; color: #666; margin-bottom: 18px; line-height: 1.6; padding-left: 38px; }
+        .question-options { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 18px; padding-left: 38px; }
+        .option-label { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; color: #333; padding: 10px 18px; border: 2px solid #e8e8e8; border-radius: 8px; transition: all 0.2s ease; background: #fafafa; font-weight: 500; }
+        .option-label:hover { border-color: #5b8def; background: #f0f5ff; }
+        .option-label input[type="radio"] { cursor: pointer; width: 18px; height: 18px; accent-color: #5b8def; }
+        .option-label:has(input[type="radio"]:checked) { border-color: #5b8def; background: #f0f5ff; }
+        .evidence-upload { margin-top: 16px; padding-left: 38px; }
+        .evidence-label { font-size: 13px; color: #666; margin-bottom: 10px; display: block; font-weight: 500; }
+        .file-input { width: 100%; padding: 12px 16px; border: 2px dashed #d0d0d0; border-radius: 8px; font-size: 13px; cursor: pointer; background: #fff; transition: all 0.2s ease; }
+        .file-input:hover { border-color: #5b8def; background: #f8f9fc; }
+        .declaration-section { background: linear-gradient(135deg, #f0f5ff 0%, #e8f0fe 100%); padding: 28px; border-radius: 12px; margin-top: 30px; border: 2px solid #d2e3fc; }
+        .declaration-section h3 { font-size: 18px; font-weight: 600; color: #1a1a1a; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+        .declaration-section p { font-size: 13px; color: #5f6368; line-height: 1.7; margin-bottom: 24px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+        .form-field { display: flex; flex-direction: column; }
+        .form-field label { font-size: 13px; font-weight: 600; color: #1a1a1a; margin-bottom: 8px; }
+        .form-field input { padding: 12px 14px; border: 2px solid #d0d0d0; border-radius: 8px; font-size: 14px; background: #fff; transition: all 0.2s ease; }
+        .form-field input:focus { outline: none; border-color: #5b8def; box-shadow: 0 0 0 4px rgba(91, 141, 239, 0.1); }
+        .modal-footer { padding: 24px 40px; border-top: 1px solid #e8e8e8; display: flex; justify-content: space-between; align-items: center; background: #fff; position: sticky; bottom: 0; z-index: 10; }
+        .progress-indicator { font-size: 13px; color: #666; }
+        .modal-footer-buttons { display: flex; gap: 12px; }
+        .btn-cancel { padding: 12px 28px; background: #fff; border: 2px solid #e8e8e8; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.2s ease; color: #5f6368; }
+        .btn-cancel:hover { background: #f8f9fa; border-color: #d0d0d0; }
+        .btn-submit { padding: 12px 32px; background: #5b8def; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.2s ease; color: #fff; box-shadow: 0 2px 8px rgba(91, 141, 239, 0.3); }
+        .btn-submit:hover { background: #4a7cd6; box-shadow: 0 4px 12px rgba(91, 141, 239, 0.4); transform: translateY(-1px); }
+        .btn-submit:disabled { background: #ccc; cursor: not-allowed; box-shadow: none; transform: none; }
+    </style>
+</head>
+<body>
+
+    <!-- LOGIN PAGE -->
+    <div id="loginPageContainer">
+        <nav class="login-navbar">
+            <a href="#" class="logo-link">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/BSI-logo-charcoal.png" alt="BSI Logo" class="bsi-logo-img">
+            </a>
+        </nav>
+
+        <div class="login-container">
+            <div class="login-card">
+                <!-- LOGIN PAGE -->
+                <div id="loginPage" class="login-page active">
+                    <div class="card-header">
+                        <h1>Member Login</h1>
+                        <p>Access your BSI Member Registration Portal</p>
+                    </div>
+
+                    <div id="loginError" class="error-message"></div>
+
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="membershipId">Membership ID</label>
+                            <input type="text" id="membershipId" placeholder="Enter your membership ID">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Enter your password">
+                        </div>
+
+                        <div class="captcha-container">
+                            <div class="captcha-display" id="captchaDisplay"></div>
+                            <button type="button" class="captcha-refresh" onclick="generateCaptcha()" title="Refresh CAPTCHA">🔄</button>
+                        </div>
+
+                        <div class="form-group captcha-input">
+                            <label for="captcha">Enter CAPTCHA</label>
+                            <input type="text" id="captcha" placeholder="Enter the code shown above">
+                        </div>
+
+                        <div class="forgot-password">
+                            <a href="#" onclick="showPage('forgotPassword'); return false;">Forgot Password?</a>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Login</button>
+                        <div class="divider"><span>or</span></div>
+                        <button type="button" class="btn-secondary" onclick="showPage('signup')">Create New Account</button>
+                    </form>
+                </div>
+
+                <!-- FORGOT PASSWORD PAGE -->
+                <div id="forgotPasswordPage" class="login-page">
+                    <span class="back-arrow" onclick="showPage('login')">← Back to Login</span>
+                    <div class="card-header">
+                        <h1>Forgot Password</h1>
+                        <p>Enter your registered email to reset password</p>
+                    </div>
+                    <div class="info-box"><p>We'll send you a password reset link to your registered email address.</p></div>
+                    <div id="forgotPasswordError" class="error-message"></div>
+                    <div id="forgotPasswordSuccess" class="success-message"></div>
+                    <form id="forgotPasswordForm">
+                        <div class="form-group">
+                            <label for="resetEmail">Email Address</label>
+                            <input type="email" id="resetEmail" placeholder="Enter your email address">
+                        </div>
+                        <button type="submit" class="btn-primary" id="resetBtn">Send Reset Link</button>
+                        <button type="button" class="btn-secondary" onclick="showPage('login')">Cancel</button>
+                    </form>
+                </div>
+
+                <!-- SIGNUP PAGE -->
+                <div id="signupPage" class="login-page">
+                    <span class="back-arrow" onclick="showPage('login')">← Back to Login</span>
+                    <div class="card-header">
+                        <h1>Create Account</h1>
+                        <p>Register your organization with BSI</p>
+                    </div>
+                    <div id="signupError" class="error-message"></div>
+                    <form id="signupForm">
+                        <div class="form-group">
+                            <label for="orgName">Organization Name</label>
+                            <input type="text" id="orgName" placeholder="Enter organization name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactName">Contact Name</label>
+                            <input type="text" id="contactName" placeholder="Enter contact person name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Enter phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="orgType">Organization Type</label>
+                            <select id="orgType">
+                                <option value="">Select organization type</option>
+                                <option value="private">Private Company</option>
+                                <option value="public">Public Company</option>
+                                <option value="government">Government</option>
+                                <option value="nonprofit">Non-Profit</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupPassword">Password</label>
+                            <input type="password" id="signupPassword" placeholder="Create a password">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" placeholder="Confirm your password">
+                        </div>
+                        <button type="submit" class="btn-primary">Create Account</button>
+                        <button type="button" class="btn-secondary" onclick="showPage('login')">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DASHBOARD PAGE (from dashboard.html) -->
+    <div id="dashboardPageContainer">
+        <div class="dashboard">
+            <aside class="sidebar">
+                <div class="sidebar-logo">
+                    <a href="#" class="logo-link">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/BSI-logo-charcoal.png" alt="BSI Logo" class="bsi-logo-img">
+                    </a>
+                    <div class="org-info">
+                        <p class="user-name" id="dashUserName">Alex Thompson</p>
+                        <p class="org-name">Acme Manufacturing Ltd</p>
+                        <p class="membership-id">ID: <span id="dashMembershipId">BSI-MEM-872314</span></p>
+                    </div>
+                </div>
+
+                <nav class="sidebar-nav">
+                    <button class="nav-item active" onclick="switchTab('newCertificate')">
+                        <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                        <span>New Certificate</span>
+                    </button>
+
+                    <button class="nav-item" onclick="switchTab('certificateWallet')">
+                        <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                        </svg>
+                        <span>Certificate Wallet</span>
+                    </button>
+
+                                    </nav>
+
+                <div class="nav-logout">
+                    <button class="logout-button" onclick="logout()">
+                        <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+                        </svg>
+                        <span>LOGOUT</span>
+                    </button>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <header class="dashboard-header">
+                    <div class="user-profile">
+                        <span>J</span>
+                    </div>
+                </header>
+
+                <div class="content-area">
+                    <div class="content-header">
+                        <h1 id="pageTitle">List of Certificates</h1>
+                        <div class="search-bar-header">
+                            <input type="text" id="headerSearch" placeholder="Search certificates...">
+                            <svg class="search-icon-header" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- New Certificate Tab -->
+                    <div id="newCertificateContent" class="wallet-content active">
+                        <div class="certificate-list" id="certificateList"></div>
+                    </div>
+
+                    <!-- Certificate Wallet Tab -->
+                    <div id="certificateWalletContent" class="wallet-content">
+                        <div class="certificate-list" id="walletCertificateList"></div>
+                        <div class="empty-state" id="walletEmptyState">
+                            <svg width="64" height="64" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="margin: 0 auto; opacity: 0.4;">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                            </svg>
+                            <h2>Certificate Wallet</h2>
+                            <p>Your saved certificates will appear here</p>
+                        </div>
+                    </div>
+
+                                    </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Success Popup -->
+    <div id="successPopup" style="display:none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 1100; align-items: center; justify-content: center;">
+        <div style="background: #fff; width: 90%; max-width: 520px; border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); overflow: hidden;">
+            <div style="padding: 22px 24px; border-bottom: 1px solid #e5e7eb; display: flex; align-items:center; gap: 10px;">
+                <div style="width: 36px; height: 36px; border-radius: 50%; background: #22c55e; color: #fff; display:flex; align-items:center; justify-content:center; font-weight:700;">✓</div>
+                <h3 style="margin:0; font-size: 18px; color:#111827;">Certification Submitted</h3>
+            </div>
+            <div style="padding: 22px 24px; color:#374151; font-size: 14px; line-height: 1.6;">
+                <p id="successPopupMsg" style="margin:0;">Your certificate questionnaire has been completed successfully and moved to your Certificate Wallet.</p>
+            </div>
+            <div style="padding: 16px 24px; border-top: 1px solid #e5e7eb; display:flex; justify-content:flex-end; gap: 10px;">
+                <button id="successViewWallet" style="padding: 10px 16px; background:#3b82f6; color:#fff; border:none; border-radius:8px; font-weight:600; cursor:pointer;">View Wallet</button>
+                <button id="successClose" style="padding: 10px 16px; background:#fff; color:#374151; border:1px solid #d1d5db; border-radius:8px; font-weight:600; cursor:pointer;">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Self-Certification Modal -->
+    <div id="certificationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>BSI Self-Certification Questionnaire</h2>
+                <p id="modalCertName">Certificate Name</p>
+            </div>
+            <div class="modal-body">
+                <form id="certificationForm">
+                    <div class="question-section">
+                        <div class="question-title"><span class="question-number">1</span>Standards Adopted</div>
+                        <p class="question-text">Have you formally identified the BSI standard(s) your organisation intends to adopt?</p>
+                        <div class="question-options">
+                            <label class="option-label"><input type="radio" name="q1" value="Yes" required><span>Yes</span></label>
+                            <label class="option-label"><input type="radio" name="q1" value="In Progress"><span>In Progress</span></label>
+                            <label class="option-label"><input type="radio" name="q1" value="No"><span>No</span></label>
+                        </div>
+                        <div class="evidence-upload">
+                            <label class="evidence-label">📎 Evidence (Optional): Standard adoption note or internal communication, Management approval email or document</label>
+                            <input type="file" class="file-input" accept=".pdf,.doc,.docx">
+                        </div>
+                    </div>
+                    <div class="question-section">
+                        <div class="question-title"><span class="question-number">2</span>Defined Scope</div>
+                        <p class="question-text">Is the scope of adoption clearly defined and documented?</p>
+                        <div class="question-options">
+                            <label class="option-label"><input type="radio" name="q2" value="Yes" required><span>Yes</span></label>
+                            <label class="option-label"><input type="radio" name="q2" value="Partially"><span>Partially</span></label>
+                            <label class="option-label"><input type="radio" name="q2" value="No"><span>No</span></label>
+                        </div>
+                        <div class="evidence-upload">
+                            <label class="evidence-label">📎 Evidence (Optional): Scope document, Process flow or department coverage note</label>
+                            <input type="file" class="file-input" accept=".pdf,.doc,.docx">
+                        </div>
+                    </div>
+                    <div class="question-section">
+                        <div class="question-title"><span class="question-number">3</span>Policies & Framework</div>
+                        <p class="question-text">Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?</p>
+                        <div class="question-options">
+                            <label class="option-label"><input type="radio" name="q3" value="Yes" required><span>Yes</span></label>
+                            <label class="option-label"><input type="radio" name="q3" value="In Progress"><span>In Progress</span></label>
+                            <label class="option-label"><input type="radio" name="q3" value="No"><span>No</span></label>
+                        </div>
+                        <div class="evidence-upload">
+                            <label class="evidence-label">📎 Evidence (Optional): Policy document (PDF/Doc), Policy index or table of contents</label>
+                            <input type="file" class="file-input" accept=".pdf,.doc,.docx">
+                        </div>
+                    </div>
+                    <div class="question-section">
+                        <div class="question-title"><span class="question-number">4</span>Roles & Responsibilities</div>
+                        <p class="question-text">Have roles and responsibilities for compliance and implementation been assigned?</p>
+                        <div class="question-options">
+                            <label class="option-label"><input type="radio" name="q4" value="Yes" required><span>Yes</span></label>
+                            <label class="option-label"><input type="radio" name="q4" value="Partially"><span>Partially</span></label>
+                            <label class="option-label"><input type="radio" name="q4" value="No"><span>No</span></label>
+                        </div>
+                        <div class="evidence-upload">
+                            <label class="evidence-label">📎 Evidence (Optional): Responsibility matrix, Appointment letter or internal memo</label>
+                            <input type="file" class="file-input" accept=".pdf,.doc,.docx">
+                        </div>
+                    </div>
+                    <div class="question-section">
+                        <div class="question-title"><span class="question-number">5</span>Risk Assessment</div>
+                        <p class="question-text">Has your organization identified and assessed risks relevant to the adopted standard(s)?</p>
+                        <div class="question-options">
+                            <label class="option-label"><input type="radio" name="q5" value="Yes" required><span>Yes</span></label>
+                            <label class="option-label"><input type="radio" name="q5" value="In Progress"><span>In Progress</span></label>
+                            <label class="option-label"><input type="radio" name="q5" value="No"><span>No</span></label>
+                        </div>
+                        <div class="evidence-upload">
+                            <label class="evidence-label">📎 Evidence (Optional): Risk register, Risk assessment summary</label>
+                            <input type="file" class="file-input" accept=".pdf,.doc,.docx">
+                        </div>
+                    </div>
+                    <div class="question-section">
+                        <div class="question-title"><span class="question-number">6</span>Control Implementation</div>
+                        <p class="question-text">Have appropriate controls or procedures been implemented to address identified risks?</p>
+                        <div class="question-options">
+                            <label class="option-label"><input type="radio" name="q6" value="Yes" required><span>Yes</span></label>
+                            <label class="option-label"><input type="radio" name="q6" value="Partially"><span>Partially</span></label>
+                            <label class="option-label"><input type="radio" name="q6" value="No"><span>No</span></label>
+                        </div>
+                        <div class="evidence-upload">
+                            <label class="evidence-label">📎 Evidence (Optional): Control list, SOPs or procedures document</label>
+                            <input type="file" class="file-input" accept=".pdf,.doc,.docx">
+                        </div>
+                    </div>
+                    <div class="question-section">
+                        <div class="question-title"><span class="question-number">7</span>Training & Awareness</div>
+                        <p class="question-text">Have relevant employees received awareness or training on the adopted standard(s)?</p>
+                        <div class="question-options">
+                            <label class="option-label"><input type="radio" name="q7" value="Yes" required><span>Yes</span></label>
+                            <label class="option-label"><input type="radio" name="q7" value="Partially"><span>Partially</span></label>
+                            <label class="option-label"><input type="radio" name="q7" value="No"><span>No</span></label>
+                        </div>
+                        <div class="evidence-upload">
+                            <label class="evidence-label">📎 Evidence (Optional): Training records, Attendance sheet or screenshots</label>
+                            <input type="file" class="file-input" accept=".pdf,.doc,.docx">
+                        </div>
+                    </div>
+                    <div class="question-section">
+                        <div class="question-title"><span class="question-number">8</span>Monitoring & Review</div>
+                        <p class="question-text">Are internal reviews, audits, or periodic checks conducted to monitor compliance?</p>
+                        <div class="question-options">
+                            <label class="option-label"><input type="radio" name="q8" value="Yes" required><span>Yes</span></label>
+                            <label class="option-label"><input type="radio" name="q8" value="Occasionally"><span>Occasionally</span></label>
+                            <label class="option-label"><input type="radio" name="q8" value="No"><span>No</span></label>
+                        </div>
+                        <div class="evidence-upload">
+                            <label class="evidence-label">📎 Evidence (Optional): Internal review report, Audit checklist or review notes</label>
+                            <input type="file" class="file-input" accept=".pdf,.doc,.docx">
+                        </div>
+                    </div>
+                    <div class="question-section">
+                        <div class="question-title"><span class="question-number">9</span>Corrective Actions</div>
+                        <p class="question-text">Is there a mechanism to record and address non-conformities or improvement actions?</p>
+                        <div class="question-options">
+                            <label class="option-label"><input type="radio" name="q9" value="Yes" required><span>Yes</span></label>
+                            <label class="option-label"><input type="radio" name="q9" value="In Progress"><span>In Progress</span></label>
+                            <label class="option-label"><input type="radio" name="q9" value="No"><span>No</span></label>
+                        </div>
+                        <div class="evidence-upload">
+                            <label class="evidence-label">📎 Evidence (Optional): Corrective action log, Issue tracker or improvement register</label>
+                            <input type="file" class="file-input" accept=".pdf,.doc,.docx">
+                        </div>
+                    </div>
+                    <div class="question-section">
+                        <div class="question-title"><span class="question-number">10</span>Self-Declaration & Commitment</div>
+                        <p class="question-text">Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?</p>
+                        <div class="question-options">
+                            <label class="option-label"><input type="radio" name="q10" value="Yes" required><span>Yes</span></label>
+                            <label class="option-label"><input type="radio" name="q10" value="No"><span>No</span></label>
+                        </div>
+                        <div class="evidence-upload">
+                            <label class="evidence-label">📎 Evidence (Optional): Signed declaration, Management commitment statement</label>
+                            <input type="file" class="file-input" accept=".pdf,.doc,.docx">
+                        </div>
+                    </div>
+                    <div class="declaration-section">
+                        <h3>Final Declaration</h3>
+                        <p>We confirm that the information provided above is true and accurate to the best of our knowledge. This self-certification is based on internal evaluation and does not represent third-party certification or formal accreditation by BSI.</p>
+                        <div class="form-row">
+                            <div class="form-field"><label>Authorized Signatory Name *</label><input type="text" name="signatory_name" required></div>
+                            <div class="form-field"><label>Designation *</label><input type="text" name="designation" required></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-field"><label>Signature (Type Full Name) *</label><input type="text" name="signature" required></div>
+                            <div class="form-field"><label>Date *</label><input type="date" name="date" required></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="progress-indicator">10 questions • All required</div>
+                <div class="modal-footer-buttons">
+                    <button type="button" class="btn-cancel" onclick="closeModal()">Cancel</button>
+                    <button type="button" class="btn-submit" onclick="submitCertification()">Submit Certification</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Shared/global state
+        let currentCaptcha = '';
+        let currentDropdown = null;
+        let currentCertificate = null;
+        let certifiedCertificates = [];
+
+        // Admin data moved to admin.html
+        const newRegisterCertificates = [
+            { id: 1, userName: 'John Smith', orgName: 'Tech Corp', certName: 'BS ISO 9001', certDesc: 'Quality Management', submittedDate: '15 Jan 2026', status: 'pending' },
+            { id: 2, userName: 'Sarah Johnson', orgName: 'Global Industries', certName: 'BS ISO/IEC 27001', certDesc: 'Information Security Management', submittedDate: '14 Jan 2026', status: 'pending' },
+            { id: 3, userName: 'Michael Brown', orgName: 'Healthcare Plus', certName: 'BS ISO 13485', certDesc: 'Medical Devices Quality Management', submittedDate: '13 Jan 2026', status: 'pending' },
+            { id: 4, userName: 'Emily Davis', orgName: 'Food Solutions Ltd', certName: 'BS ISO 22000', certDesc: 'Food Safety Management', submittedDate: '12 Jan 2026', status: 'pending' },
+        ];
+        const approvedCertificates = [
+            { id: 5, userName: 'David Wilson', orgName: 'Energy Corp', certName: 'BS ISO 50001', certDesc: 'Energy Management', approvedDate: '10 Jan 2026', status: 'approved' },
+            { id: 6, userName: 'Lisa Anderson', orgName: 'IT Services Inc', certName: 'BS ISO/IEC 20000', certDesc: 'IT Service Management', approvedDate: '09 Jan 2026', status: 'approved' },
+            { id: 7, userName: 'Robert Taylor', orgName: 'Manufacturing Co', certName: 'BS ISO 45001', certDesc: 'Occupational Health & Safety', approvedDate: '08 Jan 2026', status: 'approved' },
+        ];
+        const rejectedCertificates = [
+            { id: 8, userName: 'Jennifer Moore', orgName: 'StartUp LLC', certName: 'BS ISO 14001', certDesc: 'Environmental Management', rejectedDate: '11 Jan 2026', rejectedReason: 'Incomplete documentation', status: 'rejected' },
+            { id: 9, userName: 'James Martin', orgName: 'Consulting Group', certName: 'BS ISO 31000', certDesc: 'Risk Management', rejectedDate: '10 Jan 2026', rejectedReason: 'Missing evidence files', status: 'rejected' },
+        ];
+
+        // BSI ISO Standards Data
+        const certificates = [
+            { id: 'iso9001', name: 'BS ISO 9001', description: 'Quality Management' },
+            { id: 'iso14001', name: 'BS ISO 14001', description: 'Environmental Management' },
+            { id: 'iso27001', name: 'BS ISO/IEC 27001', description: 'Information Security Management' },
+            { id: 'iso45001', name: 'BS ISO 45001', description: 'Occupational Health & Safety' },
+            { id: 'iso22301', name: 'BS ISO 22301', description: 'Business Continuity' },
+            { id: 'iso50001', name: 'BS ISO 50001', description: 'Energy Management' },
+            { id: 'iso13485', name: 'BS ISO 13485', description: 'Medical Devices Quality Management' },
+            { id: 'iso22000', name: 'BS ISO 22000', description: 'Food Safety Management' },
+            { id: 'iso20000', name: 'BS ISO/IEC 20000', description: 'IT Service Management' },
+            { id: 'iso31000', name: 'BS ISO 31000', description: 'Risk Management' },
+        ];
+
+        // LOGIN HELPERS
+        function generateCaptcha() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let captcha = '';
+            for (let i = 0; i < 6; i++) captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+            currentCaptcha = captcha;
+            const el = document.getElementById('captchaDisplay');
+            if (el) el.textContent = captcha;
+        }
+        function showPage(pageName) {
+            document.querySelectorAll('.login-page').forEach(p => p.classList.remove('active'));
+            if (pageName === 'login') {
+                document.getElementById('loginPage').classList.add('active');
+                generateCaptcha();
+            } else if (pageName === 'forgotPassword') {
+                document.getElementById('forgotPasswordPage').classList.add('active');
+            } else if (pageName === 'signup') {
+                document.getElementById('signupPage').classList.add('active');
+            }
+        }
+        function showError(elementId, message) {
+            const errorElement = document.getElementById(elementId);
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+            setTimeout(() => { errorElement.style.display = 'none'; }, 5000);
+        }
+        function isValidEmail(email) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); }
+
+        // DASHBOARD FUNCTIONS (from dashboard.html)
+        function switchTab(tabName) {
+            const navButtons = document.querySelectorAll('.nav-item');
+            navButtons.forEach(btn => btn.classList.remove('active'));
+            if (event && event.target) event.target.closest('.nav-item').classList.add('active');
+
+            const newCertContent = document.getElementById('newCertificateContent');
+            const walletContent = document.getElementById('certificateWalletContent');
+            const pageTitle = document.getElementById('pageTitle');
+            const contentHeader = document.querySelector('.content-header');
+
+            newCertContent.classList.remove('active');
+            walletContent.classList.remove('active');
+
+            if (tabName === 'newCertificate') {
+                newCertContent.classList.add('active');
+                pageTitle.textContent = 'List of Certificates';
+                contentHeader.style.display = 'flex';
+            } else if (tabName === 'certificateWallet') {
+                walletContent.classList.add('active');
+                pageTitle.textContent = 'Certificate Wallet';
+                contentHeader.style.display = 'flex';
+                updateWalletDisplay();
+            }
+        }
+        // Admin-only code removed from combined.html
+        function approveCertificate(certId) {
+            if (confirm('Are you sure you want to approve this certificate?')) {
+                alert('Certificate ID ' + certId + ' has been approved!');
+            }
+        }
+        function rejectCertificate(certId) {
+            const reason = prompt('Please enter the reason for rejection:');
+            if (reason) alert('Certificate ID ' + certId + ' has been rejected.\nReason: ' + reason);
+        }
+        function populateCertificates() {
+            const listElement = document.getElementById('certificateList');
+            listElement.innerHTML = '';
+            certificates.forEach(cert => {
+                if (certifiedCertificates.some(c => c.id === cert.id)) return;
+                const card = document.createElement('div');
+                card.className = 'certificate-card';
+                card.innerHTML = `
+                    <div class="certificate-thumbnail">
+                        <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSI Certificate" class="certificate-image">
+                    </div>
+                    <div class="certificate-info">
+                        <div class="certificate-details">
+                            <h3>${cert.name}</h3>
+                            <p class="certificate-desc">${cert.description}</p>
+                            <p class="certificate-date">Available for certification</p>
+                        </div>
+                        <div class="certificate-actions">
+                            <button class="btn-self-certify" onclick="openCertificationModal('${cert.id}', '${cert.name}')">Self Certify</button>
+                        </div>
+                    </div>`;
+                listElement.appendChild(card);
+            });
+        }
+        function updateWalletDisplay() {
+            const walletList = document.getElementById('walletCertificateList');
+            const emptyState = document.getElementById('walletEmptyState');
+            if (certifiedCertificates.length === 0) {
+                walletList.style.display = 'none';
+                emptyState.style.display = 'block';
+            } else {
+                walletList.style.display = 'flex';
+                emptyState.style.display = 'none';
+                walletList.innerHTML = '';
+                certifiedCertificates.forEach(cert => {
+                    const card = document.createElement('div');
+                    card.className = 'certificate-card';
+                    card.innerHTML = `
+                        <div class="certificate-thumbnail">
+                            <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSI Certificate" class="certificate-image">
+                        </div>
+                        <div class="certificate-info">
+                            <div class="certificate-details">
+                                <h3>${cert.name}</h3>
+                                <p class="certificate-desc">${cert.description}</p>
+                                <p class="certificate-date">Certified on ${cert.certifiedDate}</p>
+                            </div>
+                        </div>`;
+                    walletList.appendChild(card);
+                });
+            }
+        }
+        function toggleDropdown(event, id) {
+            event.stopPropagation();
+            const dropdown = document.getElementById(`dropdown-${id}`);
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                if (menu.id !== `dropdown-${id}`) menu.classList.remove('show');
+            });
+            dropdown.classList.toggle('show');
+            currentDropdown = dropdown.classList.contains('show') ? dropdown : null;
+        }
+        document.addEventListener('click', function(event) {
+            if (currentDropdown && !event.target.closest('.dropdown')) {
+                currentDropdown.classList.remove('show');
+                currentDropdown = null;
+            }
+        });
+        function openCertificationModal(certId, certName) {
+            currentCertificate = certificates.find(c => c.id === certId);
+            document.getElementById('modalCertName').textContent = certName;
+            document.getElementById('certificationModal').classList.add('show');
+            document.getElementById('certificationForm').reset();
+            if (currentDropdown) { currentDropdown.classList.remove('show'); currentDropdown = null; }
+        }
+        function closeModal() { document.getElementById('certificationModal').classList.remove('show'); currentCertificate = null; }
+        function submitCertification() {
+            const form = document.getElementById('certificationForm');
+            if (!form.checkValidity()) { alert('Please answer all required questions before submitting.'); form.reportValidity(); return; }
+            const today = new Date().toLocaleDateString('en-GB');
+            certifiedCertificates.push({ ...currentCertificate, certifiedDate: today });
+            closeModal();
+            populateCertificates();
+            updateWalletDisplay();
+
+            // Show success popup
+            const popup = document.getElementById('successPopup');
+            const msgEl = document.getElementById('successPopupMsg');
+            if (currentCertificate) {
+                msgEl.textContent = `${currentCertificate.name} questionnaire has been completed successfully and moved to your Certificate Wallet.`;
+            } else {
+                msgEl.textContent = 'Your certificate questionnaire has been completed successfully and moved to your Certificate Wallet.';
+            }
+            popup.style.display = 'flex';
+        }
+
+        // COMBINED FLOW
+        function initDashboard(membershipId, userName = 'Demo User') {
+            document.getElementById('dashUserName').textContent = 'Alex Thompson';
+            document.getElementById('dashMembershipId').textContent = 'BSI-MEM-872314';
+            populateCertificates();
+            updateWalletDisplay();
+            // Ensure default tab
+            const firstNav = document.querySelector('.nav-item');
+            if (firstNav) firstNav.classList.add('active');
+            document.getElementById('newCertificateContent').classList.add('active');
+            document.getElementById('certificateWalletContent').classList.remove('active');
+            document.getElementById('pageTitle').textContent = 'List of Certificates';
+        }
+        function logout() {
+            if (confirm('Are you sure you want to logout?')) {
+                document.getElementById('dashboardPageContainer').classList.remove('active');
+                document.getElementById('loginPageContainer').classList.remove('hidden');
+                document.getElementById('loginForm').reset();
+                document.getElementById('forgotPasswordForm').reset();
+                document.getElementById('signupForm').reset();
+                certifiedCertificates = [];
+                showPage('login');
+            }
+        }
+
+        // LOGIN FORM HANDLERS
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const membershipId = (document.getElementById('membershipId').value || '').trim() || 'BSI-12345';
+            // Optional: validate captcha if desired (skipped for demo)
+            document.getElementById('loginPageContainer').classList.add('hidden');
+            document.getElementById('dashboardPageContainer').classList.add('active');
+            initDashboard(membershipId, 'Demo User');
+        });
+        document.getElementById('forgotPasswordForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('resetEmail').value.trim();
+            if (!email || !isValidEmail(email)) { showError('forgotPasswordError', 'Please enter a valid email address'); return; }
+            const successMsg = document.getElementById('forgotPasswordSuccess');
+            successMsg.textContent = 'Password reset link has been sent to your email!';
+            successMsg.style.display = 'block';
+            setTimeout(() => { showPage('login'); successMsg.style.display = 'none'; this.reset(); }, 3000);
+        });
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const orgName = document.getElementById('orgName').value.trim();
+            const contactName = document.getElementById('contactName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('signupPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            if (!orgName || !contactName || !email) { showError('signupError', 'Please fill in all required fields'); return; }
+            if (!isValidEmail(email)) { showError('signupError', 'Please enter a valid email address'); return; }
+            if (password !== confirmPassword) { showError('signupError', 'Passwords do not match'); return; }
+            alert('Account created successfully!\n\nPlease login with your credentials.');
+            showPage('login');
+            this.reset();
+        });
+
+        // INIT PAGE
+        window.addEventListener('load', function() { generateCaptcha(); });
+        window.onclick = function(event) {
+            const modal = document.getElementById('certificationModal');
+            if (event.target === modal) closeModal();
+        };
+
+        // Success popup actions
+        (function initSuccessPopup(){
+            const popup = document.getElementById('successPopup');
+            const closeBtn = document.getElementById('successClose');
+            const viewWalletBtn = document.getElementById('successViewWallet');
+            if (!popup || !closeBtn || !viewWalletBtn) return;
+            closeBtn.addEventListener('click', () => { popup.style.display = 'none'; });
+            viewWalletBtn.addEventListener('click', () => {
+                popup.style.display = 'none';
+                // Ensure correct tab active state and content visible
+                const navButtons = document.querySelectorAll('.nav-item');
+                navButtons.forEach(btn => btn.classList.remove('active'));
+                const walletNav = Array.from(navButtons).find(b => b.textContent && b.textContent.includes('Certificate Wallet'));
+                if (walletNav) walletNav.classList.add('active');
+                document.getElementById('newCertificateContent').classList.remove('active');
+                document.getElementById('certificateWalletContent').classList.add('active');
+                const pageTitle = document.getElementById('pageTitle');
+                const contentHeader = document.querySelector('.content-header');
+                if (pageTitle) pageTitle.textContent = 'Certificate Wallet';
+                if (contentHeader) contentHeader.style.display = 'flex';
+                updateWalletDisplay();
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BSI Admin Portal</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background: #f5f7fb; min-height: 100vh; }
+
+    /* Admin Login */
+    .navbar { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 16px 24px; display:flex; justify-content:flex-start; }
+    .navbar img { height: 40px; margin-left: 8%; }
+    .login-wrap { display: flex; align-items: center; justify-content: center; min-height: calc(100vh - 73px); padding: 32px 16px; }
+    .card { background: #fff; width: 100%; max-width: 460px; border: 1px solid #e5e7eb; border-radius: 14px; box-shadow: 0 10px 25px rgba(0,0,0,0.06); padding: 40px; }
+    .card h1 { font-size: 28px; margin-bottom: 8px; color: #111827; font-weight: 700; }
+    .card p { color: #6b7280; font-size: 15px; margin-bottom: 28px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-size: 14px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+    .form-group input { width: 100%; padding: 14px 16px; border: 1.5px solid #e5e7eb; border-radius: 10px; background: #fafafa; font-size: 15px; transition: all 0.2s; }
+    .form-group input:focus { outline: none; border-color: #3b82f6; background: #fff; box-shadow: 0 0 0 4px rgba(59,130,246,0.15); }
+    .captcha-row { display: flex; gap: 12px; align-items: center; margin: 16px 0; }
+    .captcha-box { flex: 1; text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; padding: 16px; border-radius: 10px; letter-spacing: 8px; font-weight: 700; font-size: 22px; user-select: none; }
+    .captcha-refresh { width: 48px; height: 48px; border: 1px solid #e5e7eb; border-radius: 10px; background: #fff; cursor: pointer; font-size: 20px; transition: all 0.2s; }
+    .captcha-refresh:hover { background: #f3f4f6; transform: rotate(90deg); }
+    .btn { width: 100%; padding: 16px; border-radius: 10px; border: none; cursor: pointer; font-weight: 700; font-size: 16px; transition: all 0.3s; }
+    .btn-primary { background: linear-gradient(135deg, #111827 0%, #374151 100%); color: #fff; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+    .forgot { text-align: right; margin-top: 12px; }
+    .forgot a { color: #2563eb; font-size: 14px; text-decoration: none; font-weight: 500; }
+    .forgot a:hover { text-decoration: underline; }
+    .error { display:none; background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; padding: 12px; border-radius: 8px; font-size: 14px; margin-bottom: 16px; }
+
+    /* Admin Dashboard */
+    #adminApp { display: none; height: 100vh; }
+    .admin-layout { display: flex; height: 100vh; }
+    .sidebar { width: 256px; background: #fff; border-right: 1px solid #e5e7eb; display: flex; flex-direction: column; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+    .sidebar .brand { padding: 24px; border-bottom: 1px solid #e5e7eb; display:flex; flex-direction:column; align-items:center; }
+    .sidebar .brand img { height: 36px; width: auto; max-width: 150px; }
+    .brand-info { margin-top: 12px; }
+    .brand-info .admin-name { font-weight: 700; color: #111827; font-size: 16px; margin-bottom: 4px; }
+    .brand-info .admin-id { font-size: 13px; color: #6b7280; }
+    
+    .side-nav { padding: 16px; flex: 1; }
+    .nav-item { width: 100%; text-align: left; padding: 12px 16px; border-radius: 8px; border: none; background: transparent; color: #374151; font-weight: 600; font-size: 14px; cursor: pointer; margin-bottom: 8px; transition: all 0.2s; display: flex; align-items: center; gap: 10px; }
+    .nav-item:hover { background: #f3f4f6; }
+    .nav-item.active { background: #3b82f6; color: #fff; }
+    .logout-section { padding: 16px; border-top: 1px solid #e5e7eb; }
+    .logout-section button { width: 100%; padding: 12px 16px; border-radius: 8px; border: none; background: transparent; color: #2563eb; font-weight: 700; font-size: 14px; cursor: pointer; transition: all 0.2s; }
+    .logout-section button:hover { background: #eff6ff; }
+
+    .main { flex: 1; display: flex; flex-direction: column; background: #f9fafb; }
+    .topbar { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 16px 24px; display:flex; align-items:center; justify-content: space-between; }
+    .topbar h1 { font-weight: 700; color: #111827; font-size: 22px; }
+    .user-profile { width: 40px; height: 40px; background-color: #dbeafe; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #2563eb; font-weight: 600; cursor: pointer; }
+    
+    .content { padding: 32px; overflow-y: auto; flex: 1; }
+    
+    /* Admin Dashboard Grid */
+    .admin-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .admin-box { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 32px; cursor: pointer; transition: all 0.2s; text-align: center; }
+    .admin-box:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.15); transform: translateY(-2px); border-color: #3b82f6; }
+    .admin-box-icon { width: 64px; height: 64px; margin: 0 auto 20px; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+    .admin-box-icon svg { width: 32px; height: 32px; color: white; }
+    .admin-box.new-register .admin-box-icon { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
+    .admin-box.approve .admin-box-icon { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); }
+    .admin-box.rejected .admin-box-icon { background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); }
+    .admin-box h3 { font-size: 20px; font-weight: 600; color: #1f2937; margin-bottom: 8px; }
+    .admin-box p { font-size: 14px; color: #6b7280; }
+
+    /* List View */
+    .list-wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    
+    .list-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+    
+    .back-btn { display:inline-flex; align-items:center; gap:10px; padding:12px 24px; border:none; background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%); border-radius:10px; cursor:pointer; font-size: 14px; font-weight: 600; color: #374151; transition: all 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .back-btn:hover { background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%); box-shadow: 0 2px 6px rgba(0,0,0,0.15); transform: translateY(-1px); }
+    .back-btn svg { width: 18px; height: 18px; }
+    
+    .btn-download { display:inline-flex; align-items:center; gap:10px; padding:12px 24px; border:none; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius:10px; cursor:pointer; font-size: 14px; font-weight: 600; color: #fff; transition: all 0.2s; box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3); }
+    .btn-download:hover { background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4); transform: translateY(-1px); }
+    .btn-download svg { width: 18px; height: 18px; }
+    
+    .list-title { font-size: 24px; color: #111827; font-weight: 600; margin-bottom: 24px; }
+
+    .certificate-list { display:flex; flex-direction:column; gap: 24px; }
+    .certificate-card { display:flex; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden; transition: box-shadow 0.2s; }
+    .certificate-card:hover { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+    .certificate-thumbnail { width: 192px; height: 256px; background:#f5f5f5; display:flex; align-items:center; justify-content:center; border-right:1px solid #e5e7eb; flex-shrink: 0; overflow: hidden; }
+    .certificate-image { width: 100%; height: 100%; object-fit: cover; }
+    .certificate-info { padding: 24px; display:flex; justify-content: space-between; align-items:center; flex:1; }
+    .certificate-details h3 { font-size: 18px; margin-bottom: 8px; color:#1f2937; font-weight: 600; }
+    .certificate-desc { color:#6b7280; font-size: 14px; margin-bottom: 4px; }
+    .certificate-date { color:#6b7280; font-size: 14px; }
+    
+    .status-badge { display:inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600; margin-top:8px; }
+    .pending { background:#fef3c7; color:#92400e; }
+    .approved { background:#d1fae5; color:#065f46; }
+    .rejected { background:#fee2e2; color:#991b1b; }
+
+    .admin-actions { display:flex; gap:8px; margin-top:12px; }
+    .btn-approve { padding:10px 16px; background:#10b981; border:none; color:#fff; border-radius:6px; font-weight:600; cursor:pointer; font-size: 13px; transition: all 0.2s; }
+    .btn-approve:hover { background: #059669; }
+    .btn-reject { padding:10px 16px; background:#ef4444; border:none; color:#fff; border-radius:6px; font-weight:600; cursor:pointer; font-size: 13px; transition: all 0.2s; }
+    .btn-reject:hover { background: #dc2626; }
+
+    .admin-list-view { display: none; }
+    .admin-list-view.active { display: block; }
+  </style>
+</head>
+<body>
+  <!-- Admin Login -->
+  <div id="adminLogin">
+    <div class="navbar">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/BSI-logo-charcoal.png" alt="BSI" />
+    </div>
+    <div class="login-wrap">
+      <div class="card">
+        <h1>Admin Login</h1>
+        <p>Access the BSI Admin Users Dashboard</p>
+        <div id="loginError" class="error"></div>
+        <form id="adminLoginForm">
+          <div class="form-group">
+            <label for="adminMembershipId">Admin ID</label>
+            <input type="text" id="adminMembershipId" placeholder="Enter your admin ID" />
+          </div>
+          <div class="form-group">
+            <label for="adminPassword">Password</label>
+            <input type="password" id="adminPassword" placeholder="Enter your password" />
+          </div>
+          <div class="captcha-row">
+            <div id="adminCaptchaText" class="captcha-box"></div>
+            <button type="button" class="captcha-refresh" id="refreshAdminCaptcha">🔄</button>
+          </div>
+          <div class="form-group">
+            <label for="adminCaptcha">Enter CAPTCHA</label>
+            <input type="text" id="adminCaptcha" placeholder="Enter the code shown above" />
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+          <div class="forgot"><a href="#" id="adminForgot">Forgot Password?</a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin App -->
+  <div id="adminApp">
+    <div class="admin-layout">
+      <aside class="sidebar">
+        <div class="brand">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/BSI-logo-charcoal.png" alt="BSI" />
+          <div class="brand-info">
+            <div class="admin-name" id="adminName">Admin User</div>
+            <div class="admin-id">ID: <span id="adminMemId">BSI-ADMIN</span></div>
+          </div>
+        </div>
+        <div class="side-nav">
+          <button class="nav-item active" onclick="showAdminTab('dashboard')">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+            <span>Admin Dashboard</span>
+          </button>
+        </div>
+        <div class="logout-section">
+          <button id="adminLogout">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display:inline-block; vertical-align:middle; margin-right:8px;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+            </svg>
+            LOGOUT
+          </button>
+        </div>
+      </aside>
+      
+      <main class="main">
+        <div class="topbar">
+          <h1 id="pageTitle">Admin Dashboard</h1>
+          <div class="user-profile">
+            <span>A</span>
+          </div>
+        </div>
+        
+        <div class="content">
+          <!-- Dashboard Grid -->
+          <div id="adminDashboard">
+            <div class="admin-grid">
+              <div class="admin-box new-register" onclick="showAdminSection('newRegister')">
+                <div class="admin-box-icon">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                  </svg>
+                </div>
+                <h3>New Register</h3>
+                <p>View newly registered certificates</p>
+              </div>
+
+              <div class="admin-box approve" onclick="showAdminSection('approve')">
+                <div class="admin-box-icon">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <h3>Approved Certificates</h3>
+                <p>View approved user certificates</p>
+              </div>
+
+              <div class="admin-box rejected" onclick="showAdminSection('rejected')">
+                <div class="admin-box-icon">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <h3>Rejected Certificates</h3>
+                <p>View rejected user certificates</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- New Register List -->
+          <div id="newRegisterList" class="admin-list-view">
+            <div class="list-wrap">
+              <div class="list-header">
+                <button class="back-btn" onclick="backToAdminDashboard()">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                  </svg>
+                  Back to Admin Dashboard
+                </button>
+                <button class="btn-download" onclick="downloadNewRegisterList()">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                  </svg>
+                  Download List
+                </button>
+              </div>
+              <div class="list-title">New Registered Certificates</div>
+              <div id="listNewRegister" class="certificate-list"></div>
+            </div>
+          </div>
+
+          <!-- Approved List -->
+          <div id="approvedList" class="admin-list-view">
+            <div class="list-wrap">
+              <div class="list-header">
+                <button class="back-btn" onclick="backToAdminDashboard()">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                  </svg>
+                  Back to Admin Dashboard
+                </button>
+                <button class="btn-download" onclick="downloadApprovedList()">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                  </svg>
+                  Download List
+                </button>
+              </div>
+              <div class="list-title">Approved Certificates</div>
+              <div id="listApproved" class="certificate-list"></div>
+            </div>
+          </div>
+
+          <!-- Rejected List -->
+          <div id="rejectedList" class="admin-list-view">
+            <div class="list-wrap">
+              <div class="list-header">
+                <button class="back-btn" onclick="backToAdminDashboard()">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                  </svg>
+                  Back to Admin Dashboard
+                </button>
+                <button class="btn-download" onclick="downloadRejectedList()">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                  </svg>
+                  Download List
+                </button>
+              </div>
+              <div class="list-title">Rejected Certificates</div>
+              <div id="listRejected" class="certificate-list"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    // Demo admin data
+    const newRegisterCertificates = [
+      { id: 1, userName: 'John Smith', orgName: 'Tech Corp', certName: 'BS ISO 9001', certDesc: 'Quality Management', submittedDate: '15 Jan 2026', status: 'pending' },
+      { id: 2, userName: 'Sarah Johnson', orgName: 'Global Industries', certName: 'BS ISO/IEC 27001', certDesc: 'Information Security Management', submittedDate: '14 Jan 2026', status: 'pending' },
+      { id: 3, userName: 'Michael Brown', orgName: 'Healthcare Plus', certName: 'BS ISO 13485', certDesc: 'Medical Devices Quality Management', submittedDate: '13 Jan 2026', status: 'pending' },
+      { id: 4, userName: 'Emily Davis', orgName: 'Food Solutions Ltd', certName: 'BS ISO 22000', certDesc: 'Food Safety Management', submittedDate: '12 Jan 2026', status: 'pending' },
+    ];
+    
+    const approvedCertificates = [
+      { id: 5, userName: 'David Wilson', orgName: 'Energy Corp', certName: 'BS ISO 50001', certDesc: 'Energy Management', approvedDate: '10 Jan 2026', status: 'approved' },
+      { id: 6, userName: 'Lisa Anderson', orgName: 'IT Services Inc', certName: 'BS ISO/IEC 20000', certDesc: 'IT Service Management', approvedDate: '09 Jan 2026', status: 'approved' },
+      { id: 7, userName: 'Robert Taylor', orgName: 'Manufacturing Co', certName: 'BS ISO 45001', certDesc: 'Occupational Health & Safety', approvedDate: '08 Jan 2026', status: 'approved' },
+    ];
+    
+    const rejectedCertificates = [
+      { id: 8, userName: 'Jennifer Moore', orgName: 'StartUp LLC', certName: 'BS ISO 14001', certDesc: 'Environmental Management', rejectedDate: '11 Jan 2026', rejectedReason: 'Incomplete documentation', status: 'rejected' },
+      { id: 9, userName: 'James Martin', orgName: 'Consulting Group', certName: 'BS ISO 31000', certDesc: 'Risk Management', rejectedDate: '10 Jan 2026', rejectedReason: 'Missing evidence files', status: 'rejected' },
+    ];
+
+    // Captcha
+    let currentCaptcha = '';
+    function genCaptcha() {
+      const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+      let c = '';
+      for (let i = 0; i < 6; i++) c += chars[Math.floor(Math.random() * chars.length)];
+      currentCaptcha = c;
+      document.getElementById('adminCaptchaText').textContent = c;
+    }
+    document.getElementById('refreshAdminCaptcha').addEventListener('click', genCaptcha);
+
+    // Login submit
+    document.getElementById('adminLoginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const mem = (document.getElementById('adminMembershipId').value || '').trim();
+      const pwd = (document.getElementById('adminPassword').value || '').trim();
+      const cap = (document.getElementById('adminCaptcha').value || '').trim();
+      const err = document.getElementById('loginError');
+
+      if (!mem || !pwd || !cap) {
+        err.textContent = 'Please fill in all fields (Admin ID, Password, and CAPTCHA).';
+        err.style.display = 'block';
+        return;
+      }
+      if (cap !== currentCaptcha) {
+        err.textContent = 'Invalid CAPTCHA. Please try again.';
+        err.style.display = 'block';
+        genCaptcha();
+        document.getElementById('adminCaptcha').value = '';
+        return;
+      }
+      err.style.display = 'none';
+
+      // Show admin app
+      document.getElementById('adminLogin').style.display = 'none';
+      document.getElementById('adminApp').style.display = 'block';
+      document.getElementById('adminName').textContent = 'Admin User';
+      document.getElementById('adminMemId').textContent = mem || 'BSI-ADMIN';
+
+      // Populate lists
+      populateNewRegister();
+      populateApproved();
+      populateRejected();
+    });
+
+    // Forgot password
+    document.getElementById('adminForgot').addEventListener('click', function(e){
+      e.preventDefault();
+      alert('Password reset link has been sent to the admin email (demo).');
+    });
+
+    // Logout
+    document.getElementById('adminLogout').addEventListener('click', function(){
+      if (confirm('Are you sure you want to logout?')) {
+        document.getElementById('adminApp').style.display = 'none';
+        document.getElementById('adminLogin').style.display = 'block';
+        document.getElementById('adminLoginForm').reset();
+        genCaptcha();
+      }
+    });
+
+    // Navigation
+    function showAdminTab(tab) {
+      document.getElementById('pageTitle').textContent = 
+        tab === 'dashboard' ? 'Admin Dashboard' : 'Admin Users';
+      
+      document.getElementById('adminDashboard').style.display = 
+        tab === 'dashboard' ? 'block' : 'none';
+    }
+
+    function showAdminSection(section) {
+      const dashboard = document.getElementById('adminDashboard');
+      const newRegisterList = document.getElementById('newRegisterList');
+      const approvedList = document.getElementById('approvedList');
+      const rejectedList = document.getElementById('rejectedList');
+      const pageTitle = document.getElementById('pageTitle');
+
+      // Hide all
+      dashboard.style.display = 'none';
+      newRegisterList.classList.remove('active');
+      approvedList.classList.remove('active');
+      rejectedList.classList.remove('active');
+
+      if (section === 'newRegister') {
+        newRegisterList.classList.add('active');
+        pageTitle.textContent = 'New Registered Certificates';
+      } else if (section === 'approve') {
+        approvedList.classList.add('active');
+        pageTitle.textContent = 'Approved Certificates';
+      } else if (section === 'rejected') {
+        rejectedList.classList.add('active');
+        pageTitle.textContent = 'Rejected Certificates';
+      }
+    }
+
+    function backToAdminDashboard() {
+      document.getElementById('adminDashboard').style.display = 'block';
+      document.getElementById('newRegisterList').classList.remove('active');
+      document.getElementById('approvedList').classList.remove('active');
+      document.getElementById('rejectedList').classList.remove('active');
+      document.getElementById('pageTitle').textContent = 'Admin Dashboard';
+    }
+
+    // Populate Lists
+    function populateNewRegister(){
+      const el = document.getElementById('listNewRegister');
+      el.innerHTML = '';
+      
+      newRegisterCertificates.forEach(cert => {
+        const card = document.createElement('div');
+        card.className = 'certificate-card';
+        card.innerHTML = `
+          <div class="certificate-thumbnail">
+            <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSI Certificate" class="certificate-image">
+          </div>
+          <div class="certificate-info">
+            <div class="certificate-details">
+              <h3>${cert.certName}</h3>
+              <div class="certificate-desc">${cert.certDesc}</div>
+              <div class="certificate-date">User: ${cert.userName} | Organization: ${cert.orgName}</div>
+              <div class="certificate-date">Submitted: ${cert.submittedDate}</div>
+              <span class="status-badge pending">Pending Review</span>
+              <div class="admin-actions">
+                <button class="btn-approve" onclick="approveCertificate(${cert.id})">Approve</button>
+                <button class="btn-reject" onclick="rejectCertificate(${cert.id})">Reject</button>
+              </div>
+            </div>
+          </div>
+        `;
+        el.appendChild(card);
+      });
+    }
+
+    function populateApproved(){
+      const el = document.getElementById('listApproved');
+      el.innerHTML = '';
+      
+      approvedCertificates.forEach(cert => {
+        const card = document.createElement('div');
+        card.className = 'certificate-card';
+        card.innerHTML = `
+          <div class="certificate-thumbnail">
+            <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSI Certificate" class="certificate-image">
+          </div>
+          <div class="certificate-info">
+            <div class="certificate-details">
+              <h3>${cert.certName}</h3>
+              <div class="certificate-desc">${cert.certDesc}</div>
+              <div class="certificate-date">User: ${cert.userName} | Organization: ${cert.orgName}</div>
+              <div class="certificate-date">Approved: ${cert.approvedDate}</div>
+              <span class="status-badge approved">Approved</span>
+            </div>
+          </div>
+        `;
+        el.appendChild(card);
+      });
+    }
+
+    function populateRejected(){
+      const el = document.getElementById('listRejected');
+      el.innerHTML = '';
+      
+      rejectedCertificates.forEach(cert => {
+        const card = document.createElement('div');
+        card.className = 'certificate-card';
+        card.innerHTML = `
+          <div class="certificate-thumbnail">
+            <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSI Certificate" class="certificate-image">
+          </div>
+          <div class="certificate-info">
+            <div class="certificate-details">
+              <h3>${cert.certName}</h3>
+              <div class="certificate-desc">${cert.certDesc}</div>
+              <div class="certificate-date">User: ${cert.userName} | Organization: ${cert.orgName}</div>
+              <div class="certificate-date">Rejected: ${cert.rejectedDate}</div>
+              <div class="certificate-date" style="color:#dc2626; font-weight:600;">Reason: ${cert.rejectedReason}</div>
+              <span class="status-badge rejected">Rejected</span>
+            </div>
+          </div>
+        `;
+        el.appendChild(card);
+      });
+    }
+
+    // Approve/Reject actions
+    function approveCertificate(id){
+      if (confirm('Are you sure you want to approve this certificate?')) {
+        alert('Certificate ID ' + id + ' has been approved!');
+      }
+    }
+    
+    function rejectCertificate(id){
+      const reason = prompt('Please enter the reason for rejection:');
+      if (reason) {
+        alert('Certificate ID ' + id + ' has been rejected.\nReason: ' + reason);
+      }
+    }
+
+    // Download functions
+    function downloadNewRegisterList() {
+      alert('Downloading New Register Certificates list...\n\nThis feature will export all pending certificates to CSV/Excel format.');
+    }
+
+    function downloadApprovedList() {
+      alert('Downloading Approved Certificates list...\n\nThis feature will export all approved certificates to CSV/Excel format.');
+    }
+
+    function downloadRejectedList() {
+      alert('Downloading Rejected Certificates list...\n\nThis feature will export all rejected certificates to CSV/Excel format.');
+    }
+
+    // Initialize
+    window.addEventListener('load', genCaptcha);
+  </script>
+</body>
+</html>
