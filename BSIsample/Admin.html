@@ -30,6 +30,8 @@
     .forgot a { color: #2563eb; font-size: 14px; text-decoration: none; font-weight: 500; }
     .forgot a:hover { text-decoration: underline; }
     .error { display:none; background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; padding: 12px; border-radius: 8px; font-size: 14px; margin-bottom: 16px; }
+    .back-arrow { display: inline-flex; align-items: center; margin-bottom: 20px; color: #374151; text-decoration: none; font-size: 14px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+    .back-arrow:hover { color: #2563eb; }
 
     /* Admin Dashboard */
     #adminApp { display: none; height: 100vh; }
@@ -71,7 +73,11 @@
     /* List View */
     .list-wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
     
-    .list-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+    .list-header { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 24px; }
+    .list-controls { display: flex; align-items: center; gap: 12px; }
+    .list-search { position: relative; width: 320px; margin-left: auto; }
+    .list-search input { width: 100%; padding: 10px 12px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 14px; background: #f9fafb; }
+    .list-search input:focus { outline: none; border-color: #3b82f6; background: #fff; box-shadow: 0 0 0 3px rgba(59,130,246,0.1); }
     
     .back-btn { display:inline-flex; align-items:center; gap:10px; padding:12px 24px; border:none; background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%); border-radius:10px; cursor:pointer; font-size: 14px; font-weight: 600; color: #374151; transition: all 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
     .back-btn:hover { background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%); box-shadow: 0 2px 6px rgba(0,0,0,0.15); transform: translateY(-1px); }
@@ -116,29 +122,49 @@
     </div>
     <div class="login-wrap">
       <div class="card">
-        <h1>Admin Login</h1>
-        <p>Access the BSI Admin Users Dashboard</p>
-        <div id="loginError" class="error"></div>
-        <form id="adminLoginForm">
-          <div class="form-group">
-            <label for="adminMembershipId">Admin ID</label>
-            <input type="text" id="adminMembershipId" placeholder="Enter your admin ID" />
-          </div>
-          <div class="form-group">
-            <label for="adminPassword">Password</label>
-            <input type="password" id="adminPassword" placeholder="Enter your password" />
-          </div>
-          <div class="captcha-row">
-            <div id="adminCaptchaText" class="captcha-box"></div>
-            <button type="button" class="captcha-refresh" id="refreshAdminCaptcha">🔄</button>
-          </div>
-          <div class="form-group">
-            <label for="adminCaptcha">Enter CAPTCHA</label>
-            <input type="text" id="adminCaptcha" placeholder="Enter the code shown above" />
-          </div>
-          <button type="submit" class="btn btn-primary">Login</button>
-          <div class="forgot"><a href="#" id="adminForgot">Forgot Password?</a></div>
-        </form>
+        <!-- Login Form -->
+        <div id="loginFormSection">
+          <h1>Admin Login</h1>
+          <p>Access the BSI Admin Users Dashboard</p>
+          <div id="loginError" class="error"></div>
+          <form id="adminLoginForm">
+            <div class="form-group">
+              <label for="adminMembershipId">Admin ID</label>
+              <input type="text" id="adminMembershipId" placeholder="Enter your admin ID" />
+            </div>
+            <div class="form-group">
+              <label for="adminPassword">Password</label>
+              <input type="password" id="adminPassword" placeholder="Enter your password" />
+            </div>
+            <div class="captcha-row">
+              <div id="adminCaptchaText" class="captcha-box"></div>
+              <button type="button" class="captcha-refresh" id="refreshAdminCaptcha">🔄</button>
+            </div>
+            <div class="form-group">
+              <label for="adminCaptcha">Enter CAPTCHA</label>
+              <input type="text" id="adminCaptcha" placeholder="Enter the code shown above" />
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+            <div class="forgot"><a href="#" id="adminForgot">Forgot Password?</a></div>
+          </form>
+        </div>
+
+        <!-- Forgot Password Form -->
+        <div id="forgotPasswordSection" style="display: none;">
+          <span class="back-arrow" onclick="showLoginForm()">← Back to Login</span>
+          <h1>Forgot Password</h1>
+          <p>Enter your admin email to reset password</p>
+          <div id="forgotError" class="error"></div>
+          <div id="forgotSuccess" class="success-message" style="display:none; background: #e8f5e9; border: 1px solid #a5d6a7; color: #2e7d32; padding: 12px; border-radius: 8px; margin-bottom: 16px;"></div>
+          <form id="forgotPasswordForm">
+            <div class="form-group">
+              <label for="resetEmail">Email Address</label>
+              <input type="email" id="resetEmail" placeholder="Enter your admin email" />
+            </div>
+            <button type="submit" class="btn btn-primary">Send Reset Link</button>
+            <button type="button" class="btn" style="background:#fff; border:2px solid #e5e7eb; color:#374151; margin-top:12px;" onclick="showLoginForm()">Cancel</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -154,11 +180,23 @@
           </div>
         </div>
         <div class="side-nav">
-          <button class="nav-item active" onclick="showAdminTab('dashboard')">
+          <button class="nav-item active" onclick="showAdminSection('newRegister')">
             <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
             </svg>
-            <span>Admin Dashboard</span>
+            <span>New Register</span>
+          </button>
+          <button class="nav-item" onclick="showAdminSection('approve')">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>Approved Certificates</span>
+          </button>
+          <button class="nav-item" onclick="showAdminSection('rejected')">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>Rejected Certificates</span>
           </button>
         </div>
         <div class="logout-section">
@@ -180,8 +218,8 @@
         </div>
         
         <div class="content">
-          <!-- Dashboard Grid -->
-          <div id="adminDashboard">
+          <!-- Dashboard Grid (no longer default) -->
+          <div id="adminDashboard" style="display:none;">
             <div class="admin-grid">
               <div class="admin-box new-register" onclick="showAdminSection('newRegister')">
                 <div class="admin-box-icon">
@@ -219,18 +257,23 @@
           <div id="newRegisterList" class="admin-list-view">
             <div class="list-wrap">
               <div class="list-header">
-                <button class="back-btn" onclick="backToAdminDashboard()">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-                  </svg>
-                  Back to Admin Dashboard
-                </button>
-                <button class="btn-download" onclick="downloadNewRegisterList()">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                  </svg>
-                  Download List
-                </button>
+                <div class="list-controls">
+                  <button class="back-btn" onclick="goBack()">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    Back
+                  </button>
+                  <button class="btn-download" onclick="downloadNewRegisterList()">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Download List
+                  </button>
+                </div>
+                <div class="list-search">
+                  <input type="text" id="searchNewRegister" placeholder="Search..." />
+                </div>
               </div>
               <div class="list-title">New Registered Certificates</div>
               <div id="listNewRegister" class="certificate-list"></div>
@@ -241,18 +284,23 @@
           <div id="approvedList" class="admin-list-view">
             <div class="list-wrap">
               <div class="list-header">
-                <button class="back-btn" onclick="backToAdminDashboard()">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-                  </svg>
-                  Back to Admin Dashboard
-                </button>
-                <button class="btn-download" onclick="downloadApprovedList()">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                  </svg>
-                  Download List
-                </button>
+                <div class="list-controls">
+                  <button class="back-btn" onclick="goBack()">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    Back
+                  </button>
+                  <button class="btn-download" onclick="downloadApprovedList()">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Download List
+                  </button>
+                </div>
+                <div class="list-search">
+                  <input type="text" id="searchApproved" placeholder="Search..." />
+                </div>
               </div>
               <div class="list-title">Approved Certificates</div>
               <div id="listApproved" class="certificate-list"></div>
@@ -263,18 +311,23 @@
           <div id="rejectedList" class="admin-list-view">
             <div class="list-wrap">
               <div class="list-header">
-                <button class="back-btn" onclick="backToAdminDashboard()">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-                  </svg>
-                  Back to Admin Dashboard
-                </button>
-                <button class="btn-download" onclick="downloadRejectedList()">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                  </svg>
-                  Download List
-                </button>
+                <div class="list-controls">
+                  <button class="back-btn" onclick="goBack()">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    Back
+                  </button>
+                  <button class="btn-download" onclick="downloadRejectedList()">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Download List
+                  </button>
+                </div>
+                <div class="list-search">
+                  <input type="text" id="searchRejected" placeholder="Search..." />
+                </div>
               </div>
               <div class="list-title">Rejected Certificates</div>
               <div id="listRejected" class="certificate-list"></div>
@@ -304,6 +357,9 @@
       { id: 8, userName: 'Jennifer Moore', orgName: 'StartUp LLC', certName: 'BS ISO 14001', certDesc: 'Environmental Management', rejectedDate: '11 Jan 2026', rejectedReason: 'Incomplete documentation', status: 'rejected' },
       { id: 9, userName: 'James Martin', orgName: 'Consulting Group', certName: 'BS ISO 31000', certDesc: 'Risk Management', rejectedDate: '10 Jan 2026', rejectedReason: 'Missing evidence files', status: 'rejected' },
     ];
+
+    // Navigation history
+    let navigationHistory = [];
 
     // Captcha
     let currentCaptcha = '';
@@ -347,12 +403,60 @@
       populateNewRegister();
       populateApproved();
       populateRejected();
+      // Default to New Register view
+      showAdminSection('newRegister');
     });
 
     // Forgot password
     document.getElementById('adminForgot').addEventListener('click', function(e){
       e.preventDefault();
-      alert('Password reset link has been sent to the admin email (demo).');
+      showForgotPassword();
+    });
+
+    function showLoginForm() {
+      document.getElementById('loginFormSection').style.display = 'block';
+      document.getElementById('forgotPasswordSection').style.display = 'none';
+      document.getElementById('forgotPasswordForm').reset();
+      document.getElementById('forgotError').style.display = 'none';
+      document.getElementById('forgotSuccess').style.display = 'none';
+    }
+
+    function showForgotPassword() {
+      document.getElementById('loginFormSection').style.display = 'none';
+      document.getElementById('forgotPasswordSection').style.display = 'block';
+    }
+
+    // Forgot password form submission
+    document.getElementById('forgotPasswordForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const email = document.getElementById('resetEmail').value.trim();
+      const err = document.getElementById('forgotError');
+      const success = document.getElementById('forgotSuccess');
+
+      if (!email) {
+        err.textContent = 'Please enter your email address.';
+        err.style.display = 'block';
+        success.style.display = 'none';
+        return;
+      }
+
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        err.textContent = 'Please enter a valid email address.';
+        err.style.display = 'block';
+        success.style.display = 'none';
+        return;
+      }
+
+      err.style.display = 'none';
+      success.textContent = 'Password reset link has been sent to your email!';
+      success.style.display = 'block';
+
+      // Reset form and return to login after 3 seconds
+      setTimeout(() => {
+        showLoginForm();
+      }, 3000);
     });
 
     // Logout
@@ -361,19 +465,12 @@
         document.getElementById('adminApp').style.display = 'none';
         document.getElementById('adminLogin').style.display = 'block';
         document.getElementById('adminLoginForm').reset();
+        navigationHistory = [];
         genCaptcha();
       }
     });
 
-    // Navigation
-    function showAdminTab(tab) {
-      document.getElementById('pageTitle').textContent = 
-        tab === 'dashboard' ? 'Admin Dashboard' : 'Admin Users';
-      
-      document.getElementById('adminDashboard').style.display = 
-        tab === 'dashboard' ? 'block' : 'none';
-    }
-
+    // Navigation with history
     function showAdminSection(section) {
       const dashboard = document.getElementById('adminDashboard');
       const newRegisterList = document.getElementById('newRegisterList');
@@ -387,15 +484,42 @@
       approvedList.classList.remove('active');
       rejectedList.classList.remove('active');
 
+      // Update active in left nav
+      const buttons = document.querySelectorAll('.side-nav .nav-item');
+      buttons.forEach(b => b.classList.remove('active'));
+
+      // Add to navigation history
+      navigationHistory.push(section);
+
       if (section === 'newRegister') {
         newRegisterList.classList.add('active');
         pageTitle.textContent = 'New Registered Certificates';
+        if (buttons[0]) buttons[0].classList.add('active');
       } else if (section === 'approve') {
         approvedList.classList.add('active');
         pageTitle.textContent = 'Approved Certificates';
+        if (buttons[1]) buttons[1].classList.add('active');
       } else if (section === 'rejected') {
         rejectedList.classList.add('active');
         pageTitle.textContent = 'Rejected Certificates';
+        if (buttons[2]) buttons[2].classList.add('active');
+      }
+    }
+
+    // Go back function
+    function goBack() {
+      // Remove current page from history
+      navigationHistory.pop();
+      
+      // If there's a previous page, go to it
+      if (navigationHistory.length > 0) {
+        const previousPage = navigationHistory[navigationHistory.length - 1];
+        // Remove it from history so showAdminSection doesn't duplicate it
+        navigationHistory.pop();
+        showAdminSection(previousPage);
+      } else {
+        // If no history, default to newRegister
+        showAdminSection('newRegister');
       }
     }
 
@@ -405,6 +529,7 @@
       document.getElementById('approvedList').classList.remove('active');
       document.getElementById('rejectedList').classList.remove('active');
       document.getElementById('pageTitle').textContent = 'Admin Dashboard';
+      navigationHistory = [];
     }
 
     // Populate Lists
@@ -515,8 +640,28 @@
       alert('Downloading Rejected Certificates list...\n\nThis feature will export all rejected certificates to CSV/Excel format.');
     }
 
+    // Search handlers
+    function setupSearchHandlers() {
+      const bind = (inputId, listId) => {
+        const input = document.getElementById(inputId);
+        const list = document.getElementById(listId);
+        if (!input || !list) return;
+        input.addEventListener('input', () => {
+          const q = input.value.trim().toLowerCase();
+          const cards = list.querySelectorAll('.certificate-card');
+          cards.forEach(card => {
+            const text = card.textContent.toLowerCase();
+            card.style.display = text.includes(q) ? 'flex' : 'none';
+          });
+        });
+      };
+      bind('searchNewRegister','listNewRegister');
+      bind('searchApproved','listApproved');
+      bind('searchRejected','listRejected');
+    }
+
     // Initialize
-    window.addEventListener('load', genCaptcha);
+    window.addEventListener('load', () => { genCaptcha(); setupSearchHandlers(); });
   </script>
 </body>
 </html>
