@@ -10,37 +10,40 @@
                 </div>
             </div>
         </div>
-        {% if article.imageLink != '0' %}
-        <!-- POSTS WRAPPER -->
         <div class="posts-wrapper">
             <div class="row">
                 {% for article in site.blog %}
-                
-                <!-- BLOG POST #7 -->
-                <div onclick="location.href = '{{site.baseurl}}{{article.url}}';" class="col-md-4">
+
+                {% if article.redirect_from == nil
+                and article.redirect_to == nil
+                and article.imageLink
+                and article.imageLink != '0'
+                and article.imageLink != '' %}
+
+                <div onclick="location.href='{{ site.baseurl }}{{ article.url }}';" class="col-md-4">
                     <div class="blog-post mb-40 wow fadeInUp clearfix">
+
                         <!-- BLOG POST IMAGE -->
                         <div class="blog-post-img mb-35">
-                            <img class="img-fluid r-16" src="{{article.imageLink}}" alt="{{article.title}}">
+                            <img class="img-fluid r-16" src="{{ article.imageLink }}" alt="{{ article.title }}">
                         </div>
 
                         <!-- BLOG POST TEXT -->
                         <div class="blog-post-txt">
-                            <!-- Post Tag -->
                             <span class="post-tag color--blue-400">Blog</span>
-                            <!-- Post Link -->
                             <h6 class="s-20 w-700">
-                                <a href="{{article.url}}">{{article.title}}</a>
+                                <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
                             </h6>
-                            <!-- Text -->
-                            <p>{{article.description}}</p>
-                        </div> <!-- END BLOG POST TEXT -->
+                            <p>{{ article.description }}</p>
+                        </div>
+
                     </div>
-                </div> <!-- END BLOG POST #7 -->
-                
+                </div>
+
+                {% endif %}
                 {% endfor %}
-            </div> <!-- End row -->
-        </div> <!-- END POSTS WRAPPER -->
-        {% endif %}
+            </div>
+        </div>
+
     </div> <!-- End container -->
 </section> <!-- END BLOG POSTS LISTING -->
