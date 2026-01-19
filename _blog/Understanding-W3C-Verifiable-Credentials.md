@@ -271,21 +271,25 @@ Here’s a quick comparison between the two:
 
 W3C Verifiable Credentials (W3C VCs) are already being used across industries where trust and verification matter. Their value comes from being easy to share, machine-verifiable, and globally interoperable.
 
+<br>
 
 ### Education
 
 Universities and training providers use W3C VCs for diplomas, transcripts, [micro-credentials](https://www.edutranscript.com/blog/what-are-micro-credentials.html), and course completions. Students benefit because they can share their achievements instantly, and institutions reduce fraud and manual verification work. These credentials also support international mobility, where applications often require fast, cross-border verification.
 
+<br>
 
 ### Employment and Hiring
 
 Employers use W3C VCs to verify skills, past work experience, and professional licenses. Instead of checking PDFs or calling previous institutions, HR teams get instant confirmation of a candidate’s claims, saving time and improving trust in the hiring process.
 
+<br>
 
 ### Government Services
 
 Governments issue digital IDs, driving licenses, residence permits, and compliance certificates using VCs. Since VCs follow an open standard, they work across departments and agencies without custom integrations.
 
+<br>
 
 ### Healthcare
 
