@@ -127,6 +127,8 @@ Let’s walk through it, one platform at a time.
 3. **Email: Still alive and still effective**
 
     Yep, email is still a big deal. Especially when it’s personal and useful.
+    
+    Some tools like [timetoreply](https://timetoreply.com/blog/customer-service-emails/) helps businesses to measure and track productivity of their business and team.
 
     Here’s the trick:
         Don’t just send digital credentials—celebrate them.
