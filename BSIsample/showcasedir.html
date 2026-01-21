@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertifyMe Showcase Directory</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #e8eef5;
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-logo img {
+            height: 45px;
+            width: auto;
+        }
+
+        /* Institution Profile Styles */
+        .institution-profile {
+            background: white;
+            border-radius: 12px;
+            padding: 3rem 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .institution-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .institution-logo-large {
+            flex-shrink: 0;
+            width: 180px;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f7fafc;
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+            padding: 1.5rem;
+        }
+
+        .institution-logo-large img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .institution-info {
+            flex: 1;
+        }
+
+        .institution-name {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .institution-location {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.125rem;
+            color: #718096;
+            margin-bottom: 1.5rem;
+        }
+
+        .location-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .member-count {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #f0f4ff;
+            color: #4a5568;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .member-icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        .institution-about {
+            margin-bottom: 2rem;
+        }
+
+        .about-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 1rem;
+        }
+
+        .about-text {
+            font-size: 1rem;
+            color: #4a5568;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .institution-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .meta-section {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .meta-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #718096;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+
+        .meta-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .meta-tag {
+            background: #f7fafc;
+            color: #4a5568;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .view-credentials-btn {
+            width: 100%;
+            padding: 1.25rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+        }
+
+        .view-credentials-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Page States */
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Header Section */
+        .directory-header {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .directory-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 0.75rem;
+        }
+
+        .directory-description {
+            font-size: 1.125rem;
+            color: #718096;
+            line-height: 1.6;
+        }
+
+        /* Search Section */
+        .search-section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            position: sticky;
+            top: 73px;
+            z-index: 100;
+        }
+
+        /* Page 2 specific header */
+        .credentials-page-header {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem 2.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .credentials-page-header-content {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .credentials-page-logo {
+            flex-shrink: 0;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 0.75rem;
+        }
+
+        .credentials-page-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .credentials-page-text {
+            flex: 1;
+        }
+
+        .credentials-page-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 0.25rem;
+        }
+
+        .credentials-page-subtitle {
+            font-size: 1rem;
+            color: #718096;
+        }
+
+        /* Make search section standalone on page 2 */
+        #credentialsPage .search-section {
+            display: block;
+            margin-bottom: 2rem;
+        }
+
+        /* Hide search section on page 1 (institution page) - keep it only on page 2 */
+        #institutionPage .search-section {
+            position: relative;
+            top: auto;
+        }
+
+        .search-bar {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1rem 1rem 3rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .search-input:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #a0aec0;
+            pointer-events: none;
+        }
+
+        /* Filters Section */
+        .filters-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .filter-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+        }
+
+        .filter-input,
+        .filter-select {
+            padding: 0.75rem 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .filter-input:focus,
+        .filter-select:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .filter-actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 1rem;
+        }
+
+        .clear-filters-btn {
+            padding: 0.625rem 1.25rem;
+            background: #f7fafc;
+            color: #4a5568;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .clear-filters-btn:hover {
+            background: #edf2f7;
+            border-color: #cbd5e0;
+        }
+
+        /* Results Section */
+        .results-section {
+            background: transparent;
+            border-radius: 0;
+            padding: 0;
+            box-shadow: none;
+            border: none;
+        }
+
+        .results-header {
+            margin-bottom: 1rem;
+            color: #4a5568;
+            font-size: 0.95rem;
+            display: none;
+        }
+
+        /* Credential Cards Grid - Row Layout */
+        .credentials-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .credential-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .credential-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .credential-card:hover {
+            transform: translateX(4px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .credential-image-wrapper {
+            flex-shrink: 0;
+            width: 140px;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f7fafc;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            padding: 0.5rem;
+        }
+
+        .credential-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .credential-info {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding-left: 1rem;
+        }
+
+        .credential-main {
+            flex: 1;
+        }
+
+        .verification-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.375rem;
+            background: #f0fdf4;
+            color: #166534;
+            padding: 0.375rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .verification-icon {
+            width: 14px;
+            height: 14px;
+        }
+
+        .credential-code {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 0.375rem;
+        }
+
+        .credential-title {
+            font-size: 1rem;
+            color: #4a5568;
+            margin-bottom: 0.25rem;
+            line-height: 1.4;
+        }
+
+        .credential-status {
+            font-size: 0.875rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .credential-meta {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .recipient-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2d3748;
+            min-width: 180px;
+        }
+
+        .credential-id {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: #a0aec0;
+            font-family: 'Courier New', monospace;
+            min-width: 140px;
+        }
+
+        .credential-id-label {
+            font-weight: 600;
+        }
+
+        .credential-actions {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .view-credential-btn {
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .view-credential-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .empty-state-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.3;
+        }
+
+        .empty-state-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.75rem;
+        }
+
+        .empty-state-text {
+            font-size: 1.125rem;
+            color: #718096;
+            margin-bottom: 2rem;
+        }
+
+        /* Skeleton Loading */
+        .skeleton-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding-left: 3rem;
+        }
+
+        .skeleton {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s ease-in-out infinite;
+            border-radius: 4px;
+        }
+
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        .skeleton-main {
+            flex: 1;
+        }
+
+        .skeleton-badge {
+            width: 100px;
+            height: 24px;
+            margin-bottom: 0.75rem;
+        }
+
+        .skeleton-title {
+            width: 40%;
+            height: 24px;
+            margin-bottom: 0.5rem;
+        }
+
+        .skeleton-subtitle {
+            width: 50%;
+            height: 18px;
+            margin-bottom: 0.25rem;
+        }
+
+        .skeleton-text {
+            width: 35%;
+            height: 16px;
+        }
+
+        .skeleton-meta {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .skeleton-name {
+            width: 140px;
+            height: 20px;
+        }
+
+        .skeleton-id {
+            width: 120px;
+            height: 20px;
+        }
+
+        .skeleton-button {
+            width: 140px;
+            height: 44px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .navbar-container {
+                padding: 1rem 1.5rem;
+            }
+
+            .institution-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .institution-logo-large {
+                width: 150px;
+                height: 150px;
+            }
+
+            .institution-location {
+                justify-content: center;
+            }
+
+            .credentials-page-logo {
+                width: 70px;
+                height: 70px;
+            }
+
+            .credentials-page-title {
+                font-size: 1.5rem;
+            }
+
+            .credential-card {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1.25rem 1.5rem;
+            }
+
+            .credential-image-wrapper {
+                width: 120px;
+                height: 140px;
+            }
+
+            .credential-info {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                width: 100%;
+                padding-left: 0.75rem;
+            }
+
+            .credential-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .credential-actions {
+                width: 100%;
+            }
+
+            .view-credential-btn {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-container {
+                padding: 1rem 1.25rem;
+            }
+
+            .navbar-logo img {
+                height: 38px;
+            }
+
+            .container {
+                padding: 1rem 0.5rem;
+            }
+
+            .institution-profile {
+                padding: 2rem 1.5rem;
+            }
+
+            .institution-name {
+                font-size: 1.75rem;
+            }
+
+            .institution-logo-large {
+                width: 130px;
+                height: 130px;
+            }
+
+            .about-text {
+                text-align: left;
+            }
+
+            .institution-meta {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .credentials-page-header {
+                padding: 1.5rem;
+            }
+
+            .credentials-page-logo {
+                width: 60px;
+                height: 60px;
+            }
+
+            .credentials-page-title {
+                font-size: 1.25rem;
+            }
+
+            .credentials-page-subtitle {
+                font-size: 0.875rem;
+            }
+
+            .directory-header {
+                padding: 1.5rem 1.25rem;
+            }
+
+            .directory-title {
+                font-size: 1.875rem;
+            }
+
+            .search-section {
+                padding: 1.25rem;
+                position: static;
+            }
+
+            .filters-section {
+                grid-template-columns: 1fr;
+            }
+
+            .results-section {
+                padding: 1.25rem;
+            }
+
+            .credential-card {
+                padding: 1rem 1.25rem;
+                gap: 1rem;
+            }
+
+            .credential-image-wrapper {
+                width: 100px;
+                height: 120px;
+            }
+
+            .recipient-name,
+            .credential-id {
+                min-width: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar-container {
+                padding: 0.875rem 1rem;
+            }
+
+            .navbar-logo img {
+                height: 32px;
+            }
+
+            .institution-profile {
+                padding: 1.5rem 1rem;
+            }
+
+            .institution-name {
+                font-size: 1.5rem;
+            }
+
+            .institution-logo-large {
+                width: 110px;
+                height: 110px;
+                padding: 1rem;
+            }
+
+            .view-credentials-btn {
+                padding: 1rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            .directory-title {
+                font-size: 1.5rem;
+            }
+
+            .directory-description {
+                font-size: 1rem;
+            }
+
+            .credential-card {
+                padding: 1rem;
+            }
+
+            .credential-info {
+                padding-left: 0.5rem;
+            }
+
+            .credential-image-wrapper {
+                width: 90px;
+                height: 110px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/BSI-logo-charcoal.png" alt="BSI Logo">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Page 1: Organization Profile (NO CREDENTIALS) -->
+        <div class="page active" id="institutionPage">
+            <!-- Page Header -->
+            <div class="credentials-page-header">
+                <h1 class="credentials-page-title">British Standards Institution</h1>
+                <p class="credentials-page-subtitle">Directory Showcase</p>
+            </div>
+
+            <!-- Search and Filters Section -->
+            <div class="search-section">
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input 
+                        type="text" 
+                        class="search-input" 
+                        id="searchInput"
+                        placeholder="Search by Name, Credential ID, or Program"
+                        aria-label="Search credentials"
+                    >
+                </div>
+            </div>
+
+            <!-- Organization Profile 1 - TechCert Global -->
+            <div class="institution-profile">
+                <!-- Institution Header -->
+                <div class="institution-header">
+                    <div class="institution-logo-large">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlzK3NJkY6EhvO4awP8pbVcSWetymTRGtW0w&s">
+                    </div>
+                    <div class="institution-info">
+                        <h1 class="institution-name">TechCert Global</h1>
+                        <div class="institution-location">
+                            <svg class="location-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span>Singapore</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Section -->
+                <div class="institution-about">
+                    <h2 class="about-title">About</h2>
+                    <p class="about-text">
+                        TechCert Global is a leading international certification body specializing in technology and digital transformation standards. With over 15 years of experience, we provide comprehensive certification services across cybersecurity, cloud computing, and enterprise systems. Our certifications are recognized globally and help professionals advance their careers in the rapidly evolving tech landscape.
+                    </p>
+                </div>
+
+                <!-- View All Credentials Button -->
+                <button class="view-credentials-btn" id="viewCredentialsBtn">
+                    <span>View all Credentials</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Organization Profile 2 - SkillVerify Institute -->
+            <div class="institution-profile" style="margin-top: 2rem;">
+                <!-- Institution Header -->
+                <div class="institution-header">
+                    <div class="institution-logo-large">
+                        <img src="https://t4.ftcdn.net/jpg/07/00/47/29/360_F_700472906_hfU2RQww0Ij8rBdaHHBaxaR8plVDhKbM.jpg" alt="SkillVerify Logo">
+                    </div>
+                    <div class="institution-info">
+                        <h1 class="institution-name">SkillVerify Institute</h1>
+                        <div class="institution-location">
+                            <svg class="location-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span>Toronto, Canada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Section -->
+                <div class="institution-about">
+                    <h2 class="about-title">About</h2>
+                    <p class="about-text">
+                        SkillVerify Institute is a trusted credential verification organization that validates professional competencies across various industries. We partner with educational institutions and corporations worldwide to provide reliable skill assessment and certification programs. Our mission is to bridge the gap between talent and opportunity by offering transparent, blockchain-verified credentials that employers can trust.
+                    </p>
+                </div>
+
+                <!-- View All Credentials Button -->
+                <button class="view-credentials-btn" id="viewCredentialsBtnISO">
+                    <span>View all Credentials</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Organization Profile 3 - ProCredential Alliance -->
+            <div class="institution-profile" style="margin-top: 2rem;">
+                <!-- Institution Header -->
+                <div class="institution-header">
+                    <div class="institution-logo-large">
+                        <img src="https://media.istockphoto.com/id/1350696625/vector/education-emblem-with-book-and-graduation-cap.jpg?s=612x612&w=0&k=20&c=5jy03wNwUbwz4UmbQkHwpubd5TtNmTVAXeCKVM806Sw=" alt="ProCredential Alliance Logo">
+                    </div>
+                    <div class="institution-info">
+                        <h1 class="institution-name">ProCredential Alliance</h1>
+                        <div class="institution-location">
+                            <svg class="location-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span>Dublin, Ireland</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Section -->
+                <div class="institution-about">
+                    <h2 class="about-title">About</h2>
+                    <p class="about-text">
+                        ProCredential Alliance is an international consortium of industry experts dedicated to establishing standardized professional credentials. We work closely with businesses and educational institutions to develop competency-based certification programs that meet real-world demands. Our credentials are designed to validate practical skills and knowledge, ensuring that certified professionals are job-ready and equipped with current industry practices.
+                    </p>
+                </div>
+
+                <!-- View All Credentials Button -->
+                <button class="view-credentials-btn" id="viewCredentialsBtnPMI">
+                    <span>View all Credentials</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- End of Institution Page -->
+
+        <!-- Page 2: All Credentials List -->
+        <div class="page" id="credentialsPage">
+            <!-- Credentials Page Header -->
+            <div class="credentials-page-header">
+                <div class="credentials-page-header-content">
+                    <div class="credentials-page-logo">
+                        <img id="page2OrgLogo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/BSI-logo-charcoal.png" alt="Organization Logo">
+                    </div>
+                    <div class="credentials-page-text">
+                        <h1 class="credentials-page-title">TechCert Global</h1>
+                        <p class="credentials-page-subtitle">Directory Showcase</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search and Filters (Separate Card on Page 2) -->
+            <div class="search-section">
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input 
+                        type="text" 
+                        class="search-input" 
+                        id="searchInput2"
+                        placeholder="Search by Name, Credential ID, or Standards"
+                        aria-label="Search credentials"
+                    >
+                </div>
+
+                <!-- Filters -->
+                <div class="filters-section">
+                    <div class="filter-group">
+                        <label class="filter-label" for="nameFilter2">Name</label>
+                        <input 
+                            type="text" 
+                            class="filter-input" 
+                            id="nameFilter2"
+                            placeholder="Enter recipient name"
+                        >
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="filter-label" for="credentialIdFilter2">Credential ID</label>
+                        <input 
+                            type="text" 
+                            class="filter-input" 
+                            id="credentialIdFilter2"
+                            placeholder="Enter credential ID"
+                        >
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="filter-label" for="programFilter2">Standards</label>
+                        <select class="filter-select" id="programFilter2">
+                            <option value="">All Standards</option>
+                            <option value="BS ISO/IEC 27001">BS ISO/IEC 27001</option>
+                            <option value="BS ISO 9001">BS ISO 9001</option>
+                            <option value="BS ISO 14001">BS ISO 14001</option>
+                            <option value="BS ISO 22301">BS ISO 22301</option>
+                            <option value="BS ISO 45001">BS ISO 45001</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filter-actions">
+                    <button class="clear-filters-btn" id="clearFiltersBtn2">Clear Filters</button>
+                </div>
+            </div>
+
+            <!-- Results Section (Separate Card) -->
+            <div class="results-section">
+                <div class="results-header" id="resultsHeader2">
+                    Showing 8 credentials
+                </div>
+
+                <!-- Credentials Grid -->
+                <div class="credentials-grid" id="credentialsGrid2">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    id="searchInput"
+                    placeholder="Search by Name, Credential ID, or Program"
+                    aria-label="Search credentials"
+                >
+            </div>
+
+            <!-- Filters -->
+            <div class="filters-section">
+                <div class="filter-group">
+                    <label class="filter-label" for="nameFilter">Name</label>
+                    <input 
+                        type="text" 
+                        class="filter-input" 
+                        id="nameFilter"
+                        placeholder="Enter recipient name"
+                    >
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label" for="credentialIdFilter">Credential ID</label>
+                    <input 
+                        type="text" 
+                        class="filter-input" 
+                        id="credentialIdFilter"
+                        placeholder="Enter credential ID"
+                    >
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label" for="programFilter">Program</label>
+                    <select class="filter-select" id="programFilter">
+                        <option value="">All Programs</option>
+                        <option value="data-science">Data Science Professional</option>
+                        <option value="project-management">Project Management</option>
+                        <option value="cybersecurity">Cybersecurity Specialist</option>
+                        <option value="cloud-architect">Cloud Architecture</option>
+                        <option value="full-stack">Full Stack Development</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="filter-actions">
+                <button class="clear-filters-btn" id="clearFiltersBtn">Clear Filters</button>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section">
+            <div class="results-header" id="resultsHeader">
+                Showing 8 credentials
+            </div>
+
+            <!-- Credentials Grid (Normal State) -->
+            <div class="credentials-grid" id="credentialsGrid">
+                <!-- Credentials will be shown here on Page 1 if needed -->
+            </div>
+
+            <!-- Empty State (Hidden by default) -->
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <div class="empty-state-icon">🔍</div>
+                <h2 class="empty-state-title">No credentials found</h2>
+                <p class="empty-state-text">Try adjusting your search or filters</p>
+                <button class="clear-filters-btn">Clear Filters</button>
+            </div>
+
+            <!-- Loading State (Hidden by default) -->
+            <div class="credentials-grid" id="loadingState" style="display: none;">
+                <!-- Skeleton Cards -->
+                <div class="skeleton-card">
+                    <div class="skeleton skeleton-image-wrapper" style="width: 140px; height: 160px; border-radius: 8px;"></div>
+                    <div class="skeleton-main">
+                        <div class="skeleton skeleton-badge"></div>
+                        <div class="skeleton skeleton-title"></div>
+                        <div class="skeleton skeleton-subtitle"></div>
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                    <div class="skeleton-meta">
+                        <div class="skeleton skeleton-name"></div>
+                        <div class="skeleton skeleton-id"></div>
+                    </div>
+                    <div class="skeleton skeleton-button"></div>
+                </div>
+
+                <div class="skeleton-card">
+                    <div class="skeleton skeleton-image-wrapper" style="width: 140px; height: 160px; border-radius: 8px;"></div>
+                    <div class="skeleton-main">
+                        <div class="skeleton skeleton-badge"></div>
+                        <div class="skeleton skeleton-title"></div>
+                        <div class="skeleton skeleton-subtitle"></div>
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                    <div class="skeleton-meta">
+                        <div class="skeleton skeleton-name"></div>
+                        <div class="skeleton skeleton-id"></div>
+                    </div>
+                    <div class="skeleton skeleton-button"></div>
+                </div>
+
+                <div class="skeleton-card">
+                    <div class="skeleton skeleton-image-wrapper" style="width: 140px; height: 160px; border-radius: 8px;"></div>
+                    <div class="skeleton-main">
+                        <div class="skeleton skeleton-badge"></div>
+                        <div class="skeleton skeleton-title"></div>
+                        <div class="skeleton skeleton-subtitle"></div>
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                    <div class="skeleton-meta">
+                        <div class="skeleton skeleton-name"></div>
+                        <div class="skeleton skeleton-id"></div>
+                    </div>
+                    <div class="skeleton skeleton-button"></div>
+                </div>
+
+                <div class="skeleton-card">
+                    <div class="skeleton skeleton-image-wrapper" style="width: 140px; height: 160px; border-radius: 8px;"></div>
+                    <div class="skeleton-main">
+                        <div class="skeleton skeleton-badge"></div>
+                        <div class="skeleton skeleton-title"></div>
+                        <div class="skeleton skeleton-subtitle"></div>
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                    <div class="skeleton-meta">
+                        <div class="skeleton skeleton-name"></div>
+                        <div class="skeleton skeleton-id"></div>
+                    </div>
+                    <div class="skeleton skeleton-button"></div>
+                </div>
+
+                <div class="skeleton-card">
+                    <div class="skeleton skeleton-image-wrapper" style="width: 140px; height: 160px; border-radius: 8px;"></div>
+                    <div class="skeleton-main">
+                        <div class="skeleton skeleton-badge"></div>
+                        <div class="skeleton skeleton-title"></div>
+                        <div class="skeleton skeleton-subtitle"></div>
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                    <div class="skeleton-meta">
+                        <div class="skeleton skeleton-name"></div>
+                        <div class="skeleton skeleton-id"></div>
+                    </div>
+                    <div class="skeleton skeleton-button"></div>
+                </div>
+
+                <div class="skeleton-card">
+                    <div class="skeleton skeleton-image-wrapper" style="width: 140px; height: 160px; border-radius: 8px;"></div>
+                    <div class="skeleton-main">
+                        <div class="skeleton skeleton-badge"></div>
+                        <div class="skeleton skeleton-title"></div>
+                        <div class="skeleton skeleton-subtitle"></div>
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                    <div class="skeleton-meta">
+                        <div class="skeleton skeleton-name"></div>
+                        <div class="skeleton skeleton-id"></div>
+                    </div>
+                    <div class="skeleton skeleton-button"></div>
+                </div>
+
+                <div class="skeleton-card">
+                    <div class="skeleton skeleton-image-wrapper" style="width: 140px; height: 160px; border-radius: 8px;"></div>
+                    <div class="skeleton-main">
+                        <div class="skeleton skeleton-badge"></div>
+                        <div class="skeleton skeleton-title"></div>
+                        <div class="skeleton skeleton-subtitle"></div>
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                    <div class="skeleton-meta">
+                        <div class="skeleton skeleton-name"></div>
+                        <div class="skeleton skeleton-id"></div>
+                    </div>
+                    <div class="skeleton skeleton-button"></div>
+                </div>
+
+                <div class="skeleton-card">
+                    <div class="skeleton skeleton-image-wrapper" style="width: 140px; height: 160px; border-radius: 8px;"></div>
+                    <div class="skeleton-main">
+                        <div class="skeleton skeleton-badge"></div>
+                        <div class="skeleton skeleton-title"></div>
+                        <div class="skeleton skeleton-subtitle"></div>
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                    <div class="skeleton-meta">
+                        <div class="skeleton skeleton-name"></div>
+                        <div class="skeleton skeleton-id"></div>
+                    </div>
+                    <div class="skeleton skeleton-button"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- End of Institution Page -->
+
+        <!-- Credentials Directory Page (Second Page - Full Listings) -->
+        <div class="page" id="credentialsPage">
+            <!-- Directory Header -->
+            <div class="directory-header">
+                <h1 class="directory-title">All Credentials - British Standards Institution</h1>
+                <p class="directory-description">
+                    Complete list of all verified credentials for British Standards Institution members.
+                </p>
+            </div>
+
+            <!-- Search and Filters -->
+            <div class="search-section">
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input 
+                        type="text" 
+                        class="search-input" 
+                        id="searchInput2"
+                        placeholder="Search by Name, Credential ID, or Program"
+                        aria-label="Search credentials"
+                    >
+                </div>
+
+                <!-- Filters -->
+                <div class="filters-section">
+                    <div class="filter-group">
+                        <label class="filter-label" for="nameFilter2">Name</label>
+                        <input 
+                            type="text" 
+                            class="filter-input" 
+                            id="nameFilter2"
+                            placeholder="Enter recipient name"
+                        >
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="filter-label" for="credentialIdFilter2">Credential ID</label>
+                        <input 
+                            type="text" 
+                            class="filter-input" 
+                            id="credentialIdFilter2"
+                            placeholder="Enter credential ID"
+                        >
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="filter-label" for="programFilter2">Program</label>
+                        <select class="filter-select" id="programFilter2">
+                            <option value="">All Programs</option>
+                            <option value="data-science">Data Science Professional</option>
+                            <option value="project-management">Project Management</option>
+                            <option value="cybersecurity">Cybersecurity Specialist</option>
+                            <option value="cloud-architect">Cloud Architecture</option>
+                            <option value="full-stack">Full Stack Development</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filter-actions">
+                    <button class="clear-filters-btn" id="clearFiltersBtn2">Clear Filters</button>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section">
+                <div class="results-header" id="resultsHeader2">
+                    Showing 8 credentials
+                </div>
+
+                <!-- Duplicate credentials grid will be here -->
+                <div class="credentials-grid" id="credentialsGrid2">
+                    <!-- Same credential cards as first page -->
+                </div>
+
+                <!-- Empty State (Hidden by default) -->
+                <div class="empty-state" id="emptyState2" style="display: none;">
+                    <div class="empty-state-icon">🔍</div>
+                    <h2 class="empty-state-title">No credentials found</h2>
+                    <p class="empty-state-text">Try adjusting your search or filters</p>
+                    <button class="clear-filters-btn">Clear Filters</button>
+                </div>
+
+                <!-- Loading State (Hidden by default) -->
+                <div class="credentials-grid" id="loadingState2" style="display: none;">
+                    <!-- Skeleton cards will be here -->
+                </div>
+            </div>
+        </div>
+        <!-- End of Credentials Page -->
+    </div>
+    <!-- End of Container -->
+
+    <script>
+        // Page navigation
+        const viewCredentialsBtn = document.getElementById('viewCredentialsBtn');
+        const viewCredentialsBtnISO = document.getElementById('viewCredentialsBtnISO');
+        const viewCredentialsBtnPMI = document.getElementById('viewCredentialsBtnPMI');
+        const institutionPage = document.getElementById('institutionPage');
+        const credentialsPage = document.getElementById('credentialsPage');
+        // Elements scoped by credentials page will be queried during navigation
+const directoryTitleEl = document.querySelector('.directory-title');
+const directoryDescEl = document.querySelector('.directory-description');
+
+// Map org names to their logos for dynamic header updates
+const ORGS = {
+    'TechCert Global': {
+        logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlzK3NJkY6EhvO4awP8pbVcSWetymTRGtW0w&s'
+    },
+    'SkillVerify Institute': {
+        logo: 'https://t4.ftcdn.net/jpg/07/00/47/29/360_F_700472906_hfU2RQww0Ij8rBdaHHBaxaR8plVDhKbM.jpg'
+    },
+    'ProCredential Alliance': {
+        logo: 'https://media.istockphoto.com/id/1350696625/vector/education-emblem-with-book-and-graduation-cap.jpg?s=612x612&w=0&k=20&c=5jy03wNwUbwz4UmbQkHwpubd5TtNmTVAXeCKVM806Sw='
+    }
+};
+
+        // Function to navigate to credentials page
+        function navigateToCredentials(organizationName) {
+            console.log('Navigating to credentials for:', organizationName);
+            
+            // Update the header within the credentials page (scope to avoid updating page 1)
+            const page2TitleEl = credentialsPage.querySelector('.credentials-page-title');
+            const page2SubtitleEl = credentialsPage.querySelector('.credentials-page-subtitle');
+            const page2LogoEl = credentialsPage.querySelector('#page2OrgLogo');
+            if (page2TitleEl) page2TitleEl.textContent = organizationName;
+            if (page2LogoEl && ORGS[organizationName]) {
+                page2LogoEl.src = ORGS[organizationName].logo;
+                page2LogoEl.alt = organizationName + ' Logo';
+            }
+            if (directoryTitleEl) {
+                directoryTitleEl.textContent = 'All Credentials - ' + organizationName;
+            }
+            if (directoryDescEl) {
+                directoryDescEl.textContent = 'Complete list of all verified credentials for ' + organizationName + ' members.';
+            }
+            
+            // Clone credentials from template to page 2
+            const credentialsGrid2 = document.getElementById('credentialsGrid2');
+            
+            // Always create fresh credentials when navigating
+            console.log('Creating credential cards...');
+            credentialsGrid2.innerHTML = getCredentialCardsHTML();
+            console.log('Credential cards created:', credentialsGrid2.children.length);
+            
+            institutionPage.classList.remove('active');
+            credentialsPage.classList.add('active');
+            window.scrollTo(0, 0);
+            
+            // Setup filtering for page 2 after navigation - give time for DOM to update
+            setTimeout(() => {
+                setupPage2Filters();
+            }, 200);
+        }
+
+        // TechCert Global Button
+        viewCredentialsBtn.addEventListener('click', function() {
+            navigateToCredentials('TechCert Global');
+        });
+
+        // SkillVerify Institute Button
+        viewCredentialsBtnISO.addEventListener('click', function() {
+            navigateToCredentials('SkillVerify Institute');
+        });
+
+        // ProCredential Alliance Button
+        viewCredentialsBtnPMI.addEventListener('click', function() {
+            navigateToCredentials('ProCredential Alliance');
+        });
+
+        // Setup Page 1 search functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded');
+            
+            const searchInput = document.getElementById('searchInput');
+            const organizationCards = document.querySelectorAll('.institution-profile');
+            
+            // Sort organizations alphabetically on page load
+            sortOrganizationsAlphabetically();
+            
+            // Search functionality
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const searchTerm = searchInput.value.toLowerCase().trim();
+                    console.log('Searching for:', searchTerm);
+                    
+                    let visibleCount = 0;
+                    
+                    organizationCards.forEach(card => {
+                        const orgName = card.querySelector('.institution-name');
+                        const orgLocation = card.querySelector('.institution-location span');
+                        const orgAbout = card.querySelector('.about-text');
+                        
+                        if (orgName && orgLocation && orgAbout) {
+                            const name = orgName.textContent.toLowerCase();
+                            const location = orgLocation.textContent.toLowerCase();
+                            const about = orgAbout.textContent.toLowerCase();
+                            
+                            // Search across name, location, and about text
+                            if (searchTerm === '' || 
+                                name.includes(searchTerm) || 
+                                location.includes(searchTerm) || 
+                                about.includes(searchTerm)) {
+                                card.style.display = 'block';
+                                visibleCount++;
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                    
+                    console.log('Visible organizations:', visibleCount);
+                });
+            }
+            
+            function sortOrganizationsAlphabetically() {
+                const container = document.querySelector('#institutionPage');
+                const cardsArray = Array.from(organizationCards);
+                
+                // Sort by organization name
+                cardsArray.sort((a, b) => {
+                    const nameA = a.querySelector('.institution-name').textContent.trim();
+                    const nameB = b.querySelector('.institution-name').textContent.trim();
+                    return nameA.localeCompare(nameB);
+                });
+                
+                // Remove existing margin-top styles and re-append in sorted order
+                cardsArray.forEach((card, index) => {
+                    if (index > 0) {
+                        card.style.marginTop = '2rem';
+                    } else {
+                        card.style.marginTop = '0';
+                    }
+                    container.appendChild(card);
+                });
+                
+                console.log('Organizations sorted alphabetically');
+            }
+        });
+
+        // Function to generate credential cards HTML
+        function getCredentialCardsHTML() {
+            return `
+                <!-- Credential Card 1 -->
+                <div class="credential-card">
+                    <div class="credential-image-wrapper">
+                        <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSISO9001 Certificate" class="credential-image">
+                    </div>
+                    <div class="credential-info">
+                        <div class="credential-main">
+                            <div class="verification-badge">
+                                <svg class="verification-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Verified
+                            </div>
+                            <div class="credential-code">BSISO9001</div>
+                            <div class="credential-title">Information Security Management</div>
+                            <div class="credential-status">Available for certification</div>
+                        </div>
+                        <div class="credential-meta">
+                            <div class="credential-id">
+                                <span class="credential-id-label">ID:</span>
+                                <span>ISM-2024-8457</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="credential-actions">
+                        <button class="view-credential-btn">Initiate Certification</button>
+                    </div>
+                </div>
+
+                <!-- Credential Card 2 -->
+                <div class="credential-card">
+                    <div class="credential-image-wrapper">
+                        <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSISO9002 Certificate" class="credential-image">
+                    </div>
+                    <div class="credential-info">
+                        <div class="credential-main">
+                            <div class="verification-badge">
+                                <svg class="verification-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Verified
+                            </div>
+                            <div class="credential-code">BSISO9002</div>
+                            <div class="credential-title">Quality Management</div>
+                            <div class="credential-status">Available for certification</div>
+                        </div>
+                        <div class="credential-meta">
+                            <div class="credential-id">
+                                <span class="credential-id-label">ID:</span>
+                                <span>QM-2024-3921</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="credential-actions">
+                        <button class="view-credential-btn">Initiate Certification</button>
+                    </div>
+                </div>
+
+                <!-- Credential Card 3 -->
+                <div class="credential-card">
+                    <div class="credential-image-wrapper">
+                        <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSISO9003 Certificate" class="credential-image">
+                    </div>
+                    <div class="credential-info">
+                        <div class="credential-main">
+                            <div class="verification-badge">
+                                <svg class="verification-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Verified
+                            </div>
+                            <div class="credential-code">BSISO9003</div>
+                            <div class="credential-title">Environmental Management</div>
+                            <div class="credential-status">Available for certification</div>
+                        </div>
+                        <div class="credential-meta">
+                            <div class="credential-id">
+                                <span class="credential-id-label">ID:</span>
+                                <span>EM-2024-7652</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="credential-actions">
+                        <button class="view-credential-btn">Initiate Certification</button>
+                    </div>
+                </div>
+
+                <!-- Credential Card 4 -->
+                <div class="credential-card">
+                    <div class="credential-image-wrapper">
+                        <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSISO9004 Certificate" class="credential-image">
+                    </div>
+                    <div class="credential-info">
+                        <div class="credential-main">
+                            <div class="verification-badge">
+                                <svg class="verification-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Verified
+                            </div>
+                            <div class="credential-code">BSISO9004</div>
+                            <div class="credential-title">Business Continuity</div>
+                            <div class="credential-status">Available for certification</div>
+                        </div>
+                        <div class="credential-meta">
+                            <div class="credential-id">
+                                <span class="credential-id-label">ID:</span>
+                                <span>BC-2024-5439</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="credential-actions">
+                        <button class="view-credential-btn">Initiate Certification</button>
+                    </div>
+                </div>
+
+                <!-- Credential Card 5 -->
+                <div class="credential-card">
+                    <div class="credential-image-wrapper">
+                        <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSISO9005 Certificate" class="credential-image">
+                    </div>
+                    <div class="credential-info">
+                        <div class="credential-main">
+                            <div class="verification-badge">
+                                <svg class="verification-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Verified
+                            </div>
+                            <div class="credential-code">BSISO9005</div>
+                            <div class="credential-title">Occupational Health & Safety</div>
+                            <div class="credential-status">Available for certification</div>
+                        </div>
+                        <div class="credential-meta">
+                            <div class="credential-id">
+                                <span class="credential-id-label">ID:</span>
+                                <span>OHS-2024-2187</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="credential-actions">
+                        <button class="view-credential-btn">Initiate Certification</button>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Basic interactive functionality for Page 2
+        function setupPage2Filters() {
+            console.log('Setting up Page 2 filters...');
+            
+            // Use Page 2 filters (with "2" suffix)
+            const searchInput2 = document.getElementById('searchInput2');
+            const nameFilter2 = document.getElementById('nameFilter2');
+            const credentialIdFilter2 = document.getElementById('credentialIdFilter2');
+            const programFilter2 = document.getElementById('programFilter2');
+            const clearFiltersBtn2 = document.getElementById('clearFiltersBtn2');
+            const credentialsGrid2 = document.getElementById('credentialsGrid2');
+            const emptyState2 = document.getElementById('emptyState2');
+            const resultsHeader2 = document.getElementById('resultsHeader2');
+
+            if (!searchInput2) {
+                console.error('searchInput2 not found!');
+                return;
+            }
+            
+            if (!credentialsGrid2) {
+                console.error('credentialsGrid2 not found!');
+                return;
+            }
+
+            const cards = credentialsGrid2.querySelectorAll('.credential-card');
+            console.log('Total credential cards found:', cards.length);
+            console.log('All filter elements found');
+
+            // Filter credentials based on inputs
+            function filterCredentials() {
+                console.log('=== Filtering credentials ===');
+                
+                const searchTerm = (searchInput2.value || '').toLowerCase().trim();
+                const nameFilterTerm = (nameFilter2.value || '').toLowerCase().trim();
+                const credIdFilterTerm = (credentialIdFilter2.value || '').toLowerCase().trim();
+                const standardsFilterValue = (programFilter2.value || '').toLowerCase();
+
+                console.log('Main search:', searchTerm);
+                console.log('Name filter:', nameFilterTerm);
+                console.log('Credential ID filter:', credIdFilterTerm);
+                console.log('Standards dropdown:', standardsFilterValue);
+
+                const cards = credentialsGrid2.querySelectorAll('.credential-card');
+                console.log('Total cards found:', cards.length);
+                
+                let visibleCount = 0;
+
+                cards.forEach((card, index) => {
+                    // Get all searchable text from the card
+                    const credentialCodeEl = card.querySelector('.credential-code');
+                    const credentialTitleEl = card.querySelector('.credential-title');
+                    const credentialStatusEl = card.querySelector('.credential-status');
+                    const credIdEl = card.querySelector('.credential-id span:last-child');
+
+                    const credentialCode = credentialCodeEl ? credentialCodeEl.textContent.toLowerCase().trim() : '';
+                    const credentialTitle = credentialTitleEl ? credentialTitleEl.textContent.toLowerCase().trim() : '';
+                    const credentialStatus = credentialStatusEl ? credentialStatusEl.textContent.toLowerCase().trim() : '';
+                    const credId = credIdEl ? credIdEl.textContent.toLowerCase().trim() : '';
+
+                    // Remove spaces for better matching
+                    const credentialCodeNoSpaces = credentialCode.replace(/\s+/g, '');
+                    const searchTermNoSpaces = searchTerm.replace(/\s+/g, '');
+                    const nameFilterNoSpaces = nameFilterTerm.replace(/\s+/g, '');
+
+                    console.log(`\nCard ${index + 1}: "${credentialCode}"`);
+
+                    // Check main search bar (searches across ALL fields)
+                    let matchesSearch = true;
+                    if (searchTerm !== '') {
+                        matchesSearch = 
+                            credId.includes(searchTerm) || 
+                            credentialCode.includes(searchTerm) ||
+                            credentialCodeNoSpaces.includes(searchTermNoSpaces) ||
+                            credentialTitle.includes(searchTerm) ||
+                            credentialStatus.includes(searchTerm);
+                        console.log(`  Main search "${searchTerm}": ${matchesSearch}`);
+                    }
+
+                    // Check Name filter - searches credential code
+                    let matchesName = true;
+                    if (nameFilterTerm !== '') {
+                        matchesName = credentialCode.includes(nameFilterTerm) || 
+                                     credentialCodeNoSpaces.includes(nameFilterNoSpaces);
+                        console.log(`  Name filter "${nameFilterTerm}": ${matchesName}`);
+                    }
+
+                    // Check Credential ID filter
+                    let matchesCredId = true;
+                    if (credIdFilterTerm !== '') {
+                        matchesCredId = credId.includes(credIdFilterTerm);
+                        console.log(`  Cred ID filter "${credIdFilterTerm}": ${matchesCredId}`);
+                    }
+                    
+                    // Check standards dropdown filter
+                    let matchesStandards = true;
+                    if (standardsFilterValue !== '') {
+                        const standardNoSpaces = standardsFilterValue.replace(/\s+/g, '');
+                        matchesStandards = credentialCode.includes(standardsFilterValue) ||
+                                          credentialCodeNoSpaces.includes(standardNoSpaces);
+                        console.log(`  Standards filter "${standardsFilterValue}": ${matchesStandards}`);
+                    }
+
+                    // Show card only if it matches ALL active filters (AND logic)
+                    const shouldShow = matchesSearch && matchesName && matchesCredId && matchesStandards;
+                    
+                    if (shouldShow) {
+                        card.style.display = 'flex';
+                        visibleCount++;
+                        console.log(`  ✓ VISIBLE`);
+                    } else {
+                        card.style.display = 'none';
+                        console.log(`  ✗ HIDDEN`);
+                    }
+                });
+
+                console.log(`\n=== Total visible: ${visibleCount} ===\n`);
+
+                // Update results header
+                if (resultsHeader2) {
+                    resultsHeader2.textContent = `Showing ${visibleCount} credential${visibleCount !== 1 ? 's' : ''}`;
+                }
+
+                // Show empty state if no results
+                if (visibleCount === 0) {
+                    credentialsGrid2.style.display = 'none';
+                    if (emptyState2) emptyState2.style.display = 'block';
+                } else {
+                    credentialsGrid2.style.display = 'flex';
+                    if (emptyState2) emptyState2.style.display = 'none';
+                }
+            }
+
+            // Clear all filters
+            function clearAllFilters() {
+                console.log('Clearing all filters');
+                searchInput2.value = '';
+                nameFilter2.value = '';
+                credentialIdFilter2.value = '';
+                programFilter2.value = '';
+                filterCredentials();
+            }
+
+            // Attach event listeners to Page 2 filters
+            console.log('Attaching event listeners...');
+            searchInput2.addEventListener('input', function() {
+                console.log('Search input changed:', searchInput2.value);
+                filterCredentials();
+            });
+            nameFilter2.addEventListener('input', filterCredentials);
+            credentialIdFilter2.addEventListener('input', filterCredentials);
+            programFilter2.addEventListener('change', filterCredentials);
+            clearFiltersBtn2.addEventListener('click', clearAllFilters);
+            
+            console.log('Event listeners attached successfully');
+            
+            // Run initial filter to show all credentials
+            filterCredentials();
+        }
+    </script>
+</body>
+</html>
