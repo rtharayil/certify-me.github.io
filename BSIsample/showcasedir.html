@@ -577,6 +577,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             white-space: nowrap;
+            text-decoration: none;
         }
 
         .view-credential-btn:hover {
@@ -1061,44 +1062,10 @@
                     >
                 </div>
 
-                <!-- Filters -->
-                <div class="filters-section">
-                    <div class="filter-group">
-                        <label class="filter-label" for="nameFilter2">Name</label>
-                        <input 
-                            type="text" 
-                            class="filter-input" 
-                            id="nameFilter2"
-                            placeholder="Enter recipient name"
-                        >
-                    </div>
+                <!-- Filters removed per requirement: keep only main search bar -->
+                <div class="filters-section" style="display:none"></div>
 
-                    <div class="filter-group">
-                        <label class="filter-label" for="credentialIdFilter2">Credential ID</label>
-                        <input 
-                            type="text" 
-                            class="filter-input" 
-                            id="credentialIdFilter2"
-                            placeholder="Enter credential ID"
-                        >
-                    </div>
-
-                    <div class="filter-group">
-                        <label class="filter-label" for="programFilter2">Standards</label>
-                        <select class="filter-select" id="programFilter2">
-                            <option value="">All Standards</option>
-                            <option value="BS ISO/IEC 27001">BS ISO/IEC 27001</option>
-                            <option value="BS ISO 9001">BS ISO 9001</option>
-                            <option value="BS ISO 14001">BS ISO 14001</option>
-                            <option value="BS ISO 22301">BS ISO 22301</option>
-                            <option value="BS ISO 45001">BS ISO 45001</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="filter-actions">
-                    <button class="clear-filters-btn" id="clearFiltersBtn2">Clear Filters</button>
-                </div>
+                <div class="filter-actions" style="display:none"></div>
             </div>
 
             <!-- Results Section (Separate Card) -->
@@ -1581,7 +1548,7 @@ const ORGS = {
                         </div>
                     </div>
                     <div class="credential-actions">
-                        <button class="view-credential-btn">Initiate Certification</button>
+                        <a class="view-credential-btn" href="https://verify.apac.certifyme.org/verify/4e8e27b328322" target="_blank" rel="noopener noreferrer">View Credential</a>
                     </div>
                 </div>
 
@@ -1610,7 +1577,7 @@ const ORGS = {
                         </div>
                     </div>
                     <div class="credential-actions">
-                        <button class="view-credential-btn">Initiate Certification</button>
+                        <a class="view-credential-btn" href="https://verify.apac.certifyme.org/verify/4e8e27b328322" target="_blank" rel="noopener noreferrer">View Credential</a>
                     </div>
                 </div>
 
@@ -1639,7 +1606,7 @@ const ORGS = {
                         </div>
                     </div>
                     <div class="credential-actions">
-                        <button class="view-credential-btn">Initiate Certification</button>
+                        <a class="view-credential-btn" href="https://verify.apac.certifyme.org/verify/4e8e27b328322" target="_blank" rel="noopener noreferrer">View Credential</a>
                     </div>
                 </div>
 
@@ -1668,7 +1635,7 @@ const ORGS = {
                         </div>
                     </div>
                     <div class="credential-actions">
-                        <button class="view-credential-btn">Initiate Certification</button>
+                        <a class="view-credential-btn" href="https://verify.apac.certifyme.org/verify/4e8e27b328322" target="_blank" rel="noopener noreferrer">View Credential</a>
                     </div>
                 </div>
 
@@ -1697,7 +1664,7 @@ const ORGS = {
                         </div>
                     </div>
                     <div class="credential-actions">
-                        <button class="view-credential-btn">Initiate Certification</button>
+                        <a class="view-credential-btn" href="https://verify.apac.certifyme.org/verify/4e8e27b328322" target="_blank" rel="noopener noreferrer">View Credential</a>
                     </div>
                 </div>
             `;
@@ -1709,10 +1676,10 @@ const ORGS = {
             
             // Use Page 2 filters (with "2" suffix)
             const searchInput2 = document.getElementById('searchInput2');
-            const nameFilter2 = document.getElementById('nameFilter2');
-            const credentialIdFilter2 = document.getElementById('credentialIdFilter2');
-            const programFilter2 = document.getElementById('programFilter2');
-            const clearFiltersBtn2 = document.getElementById('clearFiltersBtn2');
+            const nameFilter2 = null;
+            const credentialIdFilter2 = null;
+            const programFilter2 = null;
+            const clearFiltersBtn2 = null;
             const credentialsGrid2 = document.getElementById('credentialsGrid2');
             const emptyState2 = document.getElementById('emptyState2');
             const resultsHeader2 = document.getElementById('resultsHeader2');
@@ -1736,9 +1703,9 @@ const ORGS = {
                 console.log('=== Filtering credentials ===');
                 
                 const searchTerm = (searchInput2.value || '').toLowerCase().trim();
-                const nameFilterTerm = (nameFilter2.value || '').toLowerCase().trim();
-                const credIdFilterTerm = (credentialIdFilter2.value || '').toLowerCase().trim();
-                const standardsFilterValue = (programFilter2.value || '').toLowerCase();
+                const nameFilterTerm = '';
+                const credIdFilterTerm = '';
+                const standardsFilterValue = '';
 
                 console.log('Main search:', searchTerm);
                 console.log('Name filter:', nameFilterTerm);
@@ -1851,10 +1818,7 @@ const ORGS = {
                 console.log('Search input changed:', searchInput2.value);
                 filterCredentials();
             });
-            nameFilter2.addEventListener('input', filterCredentials);
-            credentialIdFilter2.addEventListener('input', filterCredentials);
-            programFilter2.addEventListener('change', filterCredentials);
-            clearFiltersBtn2.addEventListener('click', clearAllFilters);
+            // Removed name/credentialID/standards filters per requirement
             
             console.log('Event listeners attached successfully');
             
