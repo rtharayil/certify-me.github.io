@@ -7,7 +7,7 @@ title: "What is the Difference Between a Certificate of Completion and a Digital
 
 description: "Understand the difference between a certificate of completion and a digital badge, including when to use each, how they are verified, and how they are shared."
 
-imageLink: /assets4/images/Glossary/what-is-the-difference-between-digital-badges-and-traditional-certificates.png
+imageLink: /assets4/images/Glossary/what-is-the-difference-between-a-certificate-of-completion-and-a-digital-badge.png
 
 
 abstract: 
