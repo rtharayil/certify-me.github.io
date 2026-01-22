@@ -49,6 +49,8 @@ In this step-by-step guide, we will walk you through the process of creating dig
 
 Before creating digital badges, identify who you want to target with these credentials. Are they your employees, students, customers, or a broader online community? Understanding your audience will help you tailor your badge criteria and design to their specific needs.
 
+This analysis can help you understand on whether you should just stick digital badges or incorporate a hybrid approach of a [traditional certificate & digital badge.](https://www.certifyme.online/glossary/what-is-the-difference-between-certificate-of-completion-and-digital-badge.html)
+
 <br>
 
 ### Define Badge Criteria
