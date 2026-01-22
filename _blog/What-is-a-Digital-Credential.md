@@ -54,6 +54,8 @@ Think of digital certificates as your formal achievements in digital form. Theyâ
 
 Digital badges are like your personal trophies. Theyâ€™re visually appealing and represent a specific skill or accomplishment. Badges are usually earned through completing certain tasks or challenges, making them perfect for showcasing smaller milestones.
 
+Even though, it might see the same, there are considerable differences when you compare a [digital certificate vs digital badge.](https://www.certifyme.online/glossary/what-is-the-difference-between-certificate-of-completion-and-digital-badge.html)
+
 <br>
 
 ### Micro-Credentials
