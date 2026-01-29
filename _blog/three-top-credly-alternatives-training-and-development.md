@@ -55,17 +55,17 @@ The factors I prioritized in the blog are (1) suitability for internal employee 
 
 1. Learning pathways : Create structured credential journeys (for example: Onboarding → Role readiness → Advanced role certification → Annual refreshers), with clear progression logic and reporting across cohorts.
 
-2. 3 Verifiability methods that map cleanly to real-world L&D needs:
+2. Verifiability methods that map cleanly to real-world L&D needs:
 
-ID Tagging : tie credentials to internal employee identifiers for reliable attribution
+    ID Tagging : tie credentials to internal employee identifiers for reliable attribution
 
-OTP Verification : confirm holder access during verification, useful for internal checks
+    OTP Verification : confirm holder access during verification, useful for internal checks
 
-Digital Signatures: cryptographic authenticity to prevent tampering
+    Digital Signatures: cryptographic authenticity to prevent tampering
 
 3. Enterprise integrations without heavy engineering lift: Integrate via API and connect into existing LMS/publishing workflows, reducing load on the dev team and avoiding “manual admin forever” as programs scale. 
 
-You can find all the integrations available here :- [CertifyMe Integrations.](https://www.certifyme.online/allIntegrations.html)
+    You can find all the integrations available here :- [CertifyMe Integrations.](https://www.certifyme.online/allIntegrations.html)
 
 4. White-label credential experience: Custom landing pages, emails, URLs/domains, verification pages, directories, widgets, and wallet-like experiences so internal programs still feel on-brand across business units.
 
