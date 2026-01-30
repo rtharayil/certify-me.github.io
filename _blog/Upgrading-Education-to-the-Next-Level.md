@@ -148,7 +148,7 @@ These flexible spaces are designed to foster collaboration, creativity, and crit
 
 The digital age has brought with it a wide array of tools designed to enhance learning. From digital textbooks and online curriculum platforms to learning management systems (LMS) and artificial intelligence (AI)-driven tutoring, there are numerous solutions available to support both students and educators.
 
-For example, platforms like Blackboard and Canvas allow teachers to upload materials, track student progress, and facilitate discussions, all in one place. [Custom AI solutions](https://aloa.co/) providers can create AI-driven tools , such as AI chatbots which can answer student questions instantly, providing real-time support. These digital solutions not only streamline educational processes but also make learning more engaging and efficient.
+For example, platforms like Blackboard and Canvas allow teachers to upload materials, track student progress, and facilitate discussions, all in one place. [Custom AI solutions](https://aloa.co/) providers can create AI-driven tools , such as AI chatbots which can answer student questions instantly, providing real-time support. Similarly, an [AI video generator](https://www.veed.io/tools/ai-video) can help educators quickly produce customized instructional content. These digital solutions not only streamline educational processes but also make learning more engaging and efficient.
 
 Among these advancements, [CertifyMe](https://www.certifyme.online/) stands out as a powerful tool for modernizing the credentialing process. This digital solution simplifies the creation, management, and distribution of digital credentials, such as badges and certificates. 
 
