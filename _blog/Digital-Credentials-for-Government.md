@@ -24,7 +24,7 @@ Apart from quickening the documentation process, the government wants verified a
 
 ## Digitising credentials for the Government:
 
-As we all know, despite the incorporation of digital identification processes, many service providers will still opt for the traditional method of authenticating the identity in the form of physical ID, photographs, or a lengthy process and time to obtain verification approval.
+As we all know, despite the incorporation of [digital identification services](https://www.idenfy.com/blog/best-identity-verification-software/) and processes, many service providers will still opt for the traditional method of authenticating the identity in the form of a physical ID, photographs, or a lengthy process and time to obtain verification approval.
 
 On the other hand, A government-run digital identity verification system would standardise the market by requiring all other digital services to work with the country's system.
 
