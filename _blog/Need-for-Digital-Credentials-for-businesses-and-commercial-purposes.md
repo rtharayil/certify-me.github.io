@@ -219,7 +219,9 @@ For example, tools like an [AI business plan generator](https://prometai.app/) h
 
 Think of it like this: companies used to invest in office buildings. Now, smart ones are investing in people. Verified, visible skills aren’t just good for employees—they help leaders make smarter choices, plan better teams, and respond to change without panic. It’s not about checking boxes—it’s about being ready for whatever comes next.
 
-And here’s the quiet truth no one really says aloud: if you’re not actively preparing your workforce, you’re already falling behind. Digital credentials aren’t some future tool—they’re today’s solution to tomorrow’s problems.
+And here’s the quiet truth no one really says aloud: if you’re not actively preparing your workforce, you’re already falling behind. Digital credentials aren’t some future tool—they’re today’s solution to tomorrow’s problems. 
+
+Further Reading : [Best Credly Alternatives for Digital Credentialing](https://www.certifyme.online/blog/three-top-credly-alternatives-training-and-development.html%C2%A0)
 
 <br>
 
