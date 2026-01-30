@@ -115,6 +115,8 @@ Sharing digital credentials promotes the issuer’s brand, increasing visibility
 
 Digital credentials can draw more students to programs as they value shareable, verifiable qualifications for boosting their professional profiles and job prospects.
 
+Further Reading : [Best Credly Alternatives for Digital Badges](https://medium.com/@stephensajimathew/best-credly-alternatives-in-2026-as-per-g2-reddit-and-quora-b9421ccf0b7b)
+
 <br>
 
 ## What are the Benefits of Digital Badges for Recipients? 
