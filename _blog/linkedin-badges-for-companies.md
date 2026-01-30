@@ -95,6 +95,8 @@ Include metadata such as issuer information, criteria, and badge alignment. This
 
 1. <b>Badge Issuing Process:</b> Establish a clear process for issuing badges to individuals who meet the criteria. This process should include verification steps to prevent fraudulent badge claims.
 
+Further Reading : [Best Alternatives to Credly Badges](https://www.certifyme.online/blog/three-top-credly-alternatives-training-and-development.html)
+
 <br>
 
 ## How to Share Your Badge on Linkedin?
