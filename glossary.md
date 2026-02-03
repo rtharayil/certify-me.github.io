@@ -15,6 +15,7 @@ faqs:
       - "What features should I look for in secure digital credential software?"
       - "What is the difference between digital badges and traditional certificates?"
       - "What is the difference between a certificate of completion and a digital badge?"
+      - "How to switch from paper certificates to a digital credential platform?"
 
   - title: "Verifiable Credentials - Basics"
     questions:
@@ -87,7 +88,6 @@ faqs:
   - title: "Management & Operations"
     questions:
       - "How to create and share digital credentials with students securely?"
-      - "How to switch from paper certificates to a digital credential platform?"
       - "How to renew and revoke digital credentials on credential platforms?"
       - "How do I set up automated issuing of digital badges after course completion?"
       - "How do I revoke or expire a digital badge once issued?"
