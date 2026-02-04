@@ -15,13 +15,13 @@ Digital credentials platforms help create and issue Digital credentials. But the
 
 <br>
 
-**Accepting the Digital Credential:**
+## Accepting the Digital Credential:
 
 The participants are notified of obtaining certification via email or the respective application after completing the training and education programs. To accept the certificate, one must first create an account on the digital credential platform and claim the certification and badge that they have obtained. These digital platforms perform a thorough authentication process on the recipient.
 
 <br>
 
-**Claiming the Digital Credential:**
+## Claiming the Digital Credential:
 
 You'll need to claim your digital credential after you've accepted it. Auto-accepting is the most convenient approach to keep track of any future digital credentials you've acquired. 
 
@@ -31,7 +31,7 @@ A digital certificate can also be obtained by automating a response or filling o
 
 <br>
 
-**Sharing the Digital Credential:**
+## Sharing the Digital Credential:
 
 Recipients are redirected to a page that allows them to share the digital credential they have received after claiming it. All digital networks and social media platforms, such as Facebook, Twitter, and Instagram, allow you to share your digital credentials. You can also share your digital certificate in your workplace using [office digital signage](https://screencloud.com/office). This could be especially useful for engineering, legal or healthcare professionals.
 
@@ -39,7 +39,7 @@ Sharing media on digital sites necessitates granting permission to do so. To com
 
 <br>
 
-**Obtaining a Copy of the Digital Credential:**
+## Obtaining a Copy of the Digital Credential:
 
 The recipient can download the digital credential after accepting and claiming it for the purpose of printing or storing it for personal records or portfolios.
 
@@ -47,7 +47,7 @@ The digital certificate can be downloaded as a file or copied and pasted into yo
 
 <br>
 
-**In Conclusion:**
+## In Conclusion:
 
 Accepting, claiming, and sharing the digital credential are all simple and painless processes. Although the process varies depending on the digital credential issuing platform, it's never a bad idea to seek assistance and get pointed in the right direction to better comprehend the process.
 
