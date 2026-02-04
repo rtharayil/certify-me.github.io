@@ -154,6 +154,8 @@ Fun fact: You can even create QR code-enabled credentials.
 
 1. More advanced features like API access are locked behind paid plans
 
+<br>
+
 ### CertifyMe
 
 **What it is:**
