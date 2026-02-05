@@ -182,7 +182,7 @@ For university staff, badges can:
 
 1. Standardize recognition for internal training
 
-Registrars and admin staff can use badge platforms to track learner progress, issue credentials, and improve data transparency. It’s more efficient—and meaningful—than issuing paper certificates that collect dust.
+Registrars and admin staff can use badge platforms to track learner progress, issue credentials, and improve data transparency. For example, a [link building skills](https://thinkingne.com/saas-link-building) sub-section under an SEO minor degree program can be meaningfully recognized and tracked by issuing a digital badge for it. It’s more efficient—and meaningful—than issuing paper certificates that collect dust.
 
 In both cases, badges help create a richer, more accurate picture of what someone knows and can do. [If you're wondering how badges and certificates work together to highlight skills, this guide breaks it down simply.](https://www.certifyme.online/blog/How-digital-badges-and-digital-certificates-will-help-your-abilities.html)
 
