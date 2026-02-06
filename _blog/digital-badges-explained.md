@@ -131,7 +131,7 @@ Digital badges allow you to effortlessly display your skills and achievements on
 
 ### 2. Credential Longevity
 
-Even if a badge expires or the issuing organization closes, your achievements remain accessible, providing a long-term record of your skills and qualifications. This enduring evidence can be invaluable when seeking job opportunities or furthering your education.
+Even if badges expire or the issuing organization changes, credential information remains accessible, allowing recipients to showcase verified skills alongside traditional resumes or those created with a [resume builder](https://rezi.ai/). This enduring evidence can be invaluable when seeking job opportunities or furthering your education.
 
 <br>
 
