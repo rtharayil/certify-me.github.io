@@ -17,8 +17,9 @@
     .card p { color: #6b7280; font-size: 15px; margin-bottom: 28px; }
     .form-group { margin-bottom: 20px; }
     .form-group label { display: block; font-size: 14px; font-weight: 600; color: #374151; margin-bottom: 10px; }
-    .form-group input { width: 100%; padding: 14px 16px; border: 1.5px solid #e5e7eb; border-radius: 10px; background: #fafafa; font-size: 15px; transition: all 0.2s; }
-    .form-group input:focus { outline: none; border-color: #3b82f6; background: #fff; box-shadow: 0 0 0 4px rgba(59,130,246,0.15); }
+    .form-group input, .form-group textarea { width: 100%; padding: 14px 16px; border: 1.5px solid #e5e7eb; border-radius: 10px; background: #fafafa; font-size: 15px; transition: all 0.2s; }
+    .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #3b82f6; background: #fff; box-shadow: 0 0 0 4px rgba(59,130,246,0.15); }
+    .form-group textarea { min-height: 100px; resize: vertical; font-family: inherit; }
     .captcha-row { display: flex; gap: 12px; align-items: center; margin: 16px 0; }
     .captcha-box { flex: 1; text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; padding: 16px; border-radius: 10px; letter-spacing: 8px; font-weight: 700; font-size: 22px; user-select: none; }
     .captcha-refresh { width: 48px; height: 48px; border: 1px solid #e5e7eb; border-radius: 10px; background: #fff; cursor: pointer; font-size: 20px; transition: all 0.2s; }
@@ -39,14 +40,15 @@
     .sidebar { width: 256px; background: #fff; border-right: 1px solid #e5e7eb; display: flex; flex-direction: column; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
     .sidebar .brand { padding: 24px; border-bottom: 1px solid #e5e7eb; display:flex; flex-direction:column; align-items:center; }
     .sidebar .brand img { height: 36px; width: auto; max-width: 150px; }
-    .brand-info { margin-top: 12px; }
+    .brand-info { margin-top: 12px; text-align: center; }
     .brand-info .admin-name { font-weight: 700; color: #111827; font-size: 16px; margin-bottom: 4px; }
-    .brand-info .admin-id { font-size: 13px; color: #6b7280; }
     
     .side-nav { padding: 16px; flex: 1; }
-    .nav-item { width: 100%; text-align: left; padding: 12px 16px; border-radius: 8px; border: none; background: transparent; color: #374151; font-weight: 600; font-size: 14px; cursor: pointer; margin-bottom: 8px; transition: all 0.2s; display: flex; align-items: center; gap: 10px; }
+    .nav-item { width: 100%; text-align: left; padding: 12px 16px; border-radius: 8px; border: none; background: transparent; color: #374151; font-weight: 600; font-size: 14px; cursor: pointer; margin-bottom: 8px; transition: all 0.2s; display: flex; align-items: center; gap: 10px; position: relative; }
     .nav-item:hover { background: #f3f4f6; }
     .nav-item.active { background: #3b82f6; color: #fff; }
+    .nav-badge { position: absolute; right: 12px; background: #ef4444; color: #fff; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 700; }
+    .nav-item.active .nav-badge { background: #fff; color: #3b82f6; }
     .logout-section { padding: 16px; border-top: 1px solid #e5e7eb; }
     .logout-section button { width: 100%; padding: 12px 16px; border-radius: 8px; border: none; background: transparent; color: #2563eb; font-weight: 700; font-size: 14px; cursor: pointer; transition: all 0.2s; }
     .logout-section button:hover { background: #eff6ff; }
@@ -59,20 +61,21 @@
     .content { padding: 32px; overflow-y: auto; flex: 1; }
     
     /* Admin Dashboard Grid */
-    .admin-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-    .admin-box { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 32px; cursor: pointer; transition: all 0.2s; text-align: center; }
+    .admin-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1400px; margin: 0 auto; padding: 0 20px; }
+    .admin-box { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 28px; cursor: pointer; transition: all 0.2s; text-align: center; position: relative; }
     .admin-box:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.15); transform: translateY(-2px); border-color: #3b82f6; }
-    .admin-box-icon { width: 64px; height: 64px; margin: 0 auto 20px; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
-    .admin-box-icon svg { width: 32px; height: 32px; color: white; }
-    .admin-box.new-register .admin-box-icon { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
-    .admin-box.approve .admin-box-icon { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); }
+    .admin-box-icon { width: 56px; height: 56px; margin: 0 auto 16px; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+    .admin-box-icon svg { width: 28px; height: 28px; color: white; }
+    .admin-box.new-submissions .admin-box-icon { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
+    .admin-box.pending-review .admin-box-icon { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
+    .admin-box.approved .admin-box-icon { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
     .admin-box.rejected .admin-box-icon { background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); }
-    .admin-box h3 { font-size: 20px; font-weight: 600; color: #1f2937; margin-bottom: 8px; }
-    .admin-box p { font-size: 14px; color: #6b7280; }
+    .admin-box h3 { font-size: 18px; font-weight: 600; color: #1f2937; margin-bottom: 8px; }
+    .admin-box p { font-size: 13px; color: #6b7280; }
+    .box-badge { position: absolute; top: 16px; right: 16px; background: #ef4444; color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 13px; font-weight: 700; }
 
     /* List View */
     .list-wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-    
     .list-header { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 24px; }
     .list-controls { display: flex; align-items: center; gap: 12px; }
     .list-search { position: relative; width: 320px; margin-left: auto; }
@@ -100,11 +103,14 @@
     .certificate-date { color:#6b7280; font-size: 14px; }
     
     .status-badge { display:inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600; margin-top:8px; }
+    .new { background:#d1fae5; color:#065f46; }
     .pending { background:#fef3c7; color:#92400e; }
     .approved { background:#d1fae5; color:#065f46; }
     .rejected { background:#fee2e2; color:#991b1b; }
 
     .admin-actions { display:flex; gap:8px; margin-top:12px; }
+    .btn-view { padding:10px 16px; background:#3b82f6; border:none; color:#fff; border-radius:6px; font-weight:600; cursor:pointer; font-size: 13px; transition: all 0.2s; }
+    .btn-view:hover { background: #2563eb; }
     .btn-approve { padding:10px 16px; background:#10b981; border:none; color:#fff; border-radius:6px; font-weight:600; cursor:pointer; font-size: 13px; transition: all 0.2s; }
     .btn-approve:hover { background: #059669; }
     .btn-reject { padding:10px 16px; background:#ef4444; border:none; color:#fff; border-radius:6px; font-weight:600; cursor:pointer; font-size: 13px; transition: all 0.2s; }
@@ -112,6 +118,59 @@
 
     .admin-list-view { display: none; }
     .admin-list-view.active { display: block; }
+
+    /* Modal Styles */
+    .modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); overflow-y: auto; padding: 20px; }
+    .modal.show { display: flex; align-items: center; justify-content: center; }
+    .modal-content { background-color: #fff; margin: 40px auto; border-radius: 16px; width: 100%; max-width: 900px; max-height: calc(100vh - 80px); overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); display: flex; flex-direction: column; }
+    .modal-header { padding: 30px 40px; border-bottom: 1px solid #e8e8e8; background: linear-gradient(135deg, #f8f9fc 0%, #fff 100%); }
+    .modal-header h2 { font-size: 24px; font-weight: 600; color: #1a1a1a; margin-bottom: 6px; }
+    .modal-header p { font-size: 14px; color: #666; margin: 0; }
+    .modal-body { padding: 30px 40px; overflow-y: auto; flex: 1; background: #fafafa; }
+    .modal-footer { padding: 20px 40px; border-top: 1px solid #e8e8e8; display: flex; justify-content: flex-end; gap: 12px; background: #fff; }
+
+    .submission-info { background: #fff; padding: 24px; border-radius: 12px; margin-bottom: 24px; border: 1px solid #e8e8e8; }
+    .submission-info h3 { font-size: 16px; font-weight: 600; color: #1a1a1a; margin-bottom: 16px; }
+    .info-row { display: grid; grid-template-columns: 200px 1fr; gap: 12px; margin-bottom: 12px; }
+    .info-label { font-weight: 600; color: #666; font-size: 14px; }
+    .info-value { color: #1a1a1a; font-size: 14px; }
+
+    .question-section { background: #fff; margin-bottom: 20px; padding: 24px; border-radius: 12px; border: 1px solid #e8e8e8; }
+    .question-number { display: inline-block; background: #5b8def; color: #fff; width: 28px; height: 28px; border-radius: 50%; text-align: center; line-height: 28px; font-size: 13px; font-weight: 600; margin-right: 10px; }
+    .question-title { font-size: 16px; font-weight: 600; color: #1a1a1a; margin-bottom: 12px; display: flex; align-items: center; }
+    .question-text { font-size: 14px; color: #666; margin-bottom: 16px; padding-left: 38px; }
+    .question-answer { padding-left: 38px; padding: 12px 16px; background: #f0f5ff; border-left: 3px solid #3b82f6; border-radius: 8px; margin-top: 12px; }
+    .question-answer strong { color: #3b82f6; display: block; margin-bottom: 4px; font-size: 13px; }
+    .question-answer span { color: #1a1a1a; font-size: 14px; }
+    
+    .question-evidence { margin-top: 12px; padding-left: 38px; display: flex; align-items: center; gap: 12px; }
+    .question-evidence-label { font-size: 13px; font-weight: 600; color: #374151; }
+    .btn-download-evidence { padding: 6px 16px; background: #3b82f6; color: #fff; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+    .btn-download-evidence:hover { background: #2563eb; transform: translateY(-1px); box-shadow: 0 2px 6px rgba(59, 130, 246, 0.3); }
+
+    .evidence-section { background: #fff; padding: 24px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #e8e8e8; }
+    .evidence-section h3 { font-size: 16px; font-weight: 600; color: #1a1a1a; margin-bottom: 16px; }
+    .evidence-file { display: flex; align-items: center; gap: 12px; padding: 12px 16px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; margin-bottom: 8px; }
+    .evidence-file svg { width: 20px; height: 20px; color: #3b82f6; }
+
+    /* Confirmation Popup */
+    .popup { display: none; position: fixed; z-index: 3000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); align-items: center; justify-content: center; }
+    .popup.show { display: flex; }
+    .popup-content { background: white; border-radius: 16px; padding: 32px; max-width: 500px; width: 90%; text-align: center; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); }
+    .popup-icon { width: 64px; height: 64px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
+    .popup-icon.warning { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
+    .popup-icon.error { background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); }
+    .popup-icon svg { width: 32px; height: 32px; color: white; }
+    .popup-content h2 { font-size: 22px; font-weight: 600; color: #1f2937; margin-bottom: 12px; }
+    .popup-content p { font-size: 15px; color: #6b7280; margin-bottom: 24px; line-height: 1.6; }
+    .popup-buttons { display: flex; gap: 12px; justify-content: center; }
+    .btn-popup { padding: 12px 28px; border-radius: 8px; border: none; font-weight: 600; cursor: pointer; font-size: 14px; transition: all 0.2s; }
+    .btn-popup.cancel { background: #fff; border: 2px solid #e5e7eb; color: #374151; }
+    .btn-popup.cancel:hover { background: #f9fafb; }
+    .btn-popup.confirm { background: #3b82f6; color: #fff; }
+    .btn-popup.confirm:hover { background: #2563eb; }
+    .btn-popup.success { background: #10b981; color: #fff; }
+    .btn-popup.success:hover { background: #059669; }
   </style>
 </head>
 <body>
@@ -180,23 +239,39 @@
           </div>
         </div>
         <div class="side-nav">
-          <button class="nav-item active" onclick="showAdminSection('newRegister')">
+          <button class="nav-item active" onclick="showAdminSection('dashboard')">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+            <span>Dashboard</span>
+          </button>
+          <button class="nav-item" onclick="showAdminSection('newSubmissions')">
             <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
             </svg>
-            <span>New Register</span>
+            <span>New Submissions</span>
+            <span class="nav-badge" id="newSubmissionsBadge">0</span>
           </button>
-          <button class="nav-item" onclick="showAdminSection('approve')">
+          <button class="nav-item" onclick="showAdminSection('pendingReview')">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>Pending Review</span>
+            <span class="nav-badge" id="pendingReviewBadge">0</span>
+          </button>
+          <button class="nav-item" onclick="showAdminSection('approved')">
             <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
-            <span>Approved Certificates</span>
+            <span>Approved</span>
+            <span class="nav-badge" id="approvedBadge">0</span>
           </button>
           <button class="nav-item" onclick="showAdminSection('rejected')">
             <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
-            <span>Rejected Certificates</span>
+            <span>Rejected</span>
+            <span class="nav-badge" id="rejectedBadge">0</span>
           </button>
         </div>
         <div class="logout-section">
@@ -218,43 +293,57 @@
         </div>
         
         <div class="content">
-          <!-- Dashboard Grid (no longer default) -->
-          <div id="adminDashboard" style="display:none;">
+          <!-- Dashboard Grid -->
+          <div id="adminDashboard">
             <div class="admin-grid">
-              <div class="admin-box new-register" onclick="showAdminSection('newRegister')">
+              <div class="admin-box new-submissions" onclick="showAdminSection('newSubmissions')">
+                <span class="box-badge" id="dashNewBadge">0</span>
                 <div class="admin-box-icon">
                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                   </svg>
                 </div>
-                <h3>New Register</h3>
-                <p>View newly registered certificates</p>
+                <h3>New Submissions</h3>
+                <p>Today's submissions</p>
               </div>
 
-              <div class="admin-box approve" onclick="showAdminSection('approve')">
+              <div class="admin-box pending-review" onclick="showAdminSection('pendingReview')">
+                <span class="box-badge" id="dashPendingBadge">0</span>
+                <div class="admin-box-icon">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <h3>Pending Review</h3>
+                <p>Previous days unreviewed</p>
+              </div>
+
+              <div class="admin-box approved" onclick="showAdminSection('approved')">
+                <span class="box-badge" id="dashApprovedBadge">0</span>
                 <div class="admin-box-icon">
                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                 </div>
-                <h3>Approved Certificates</h3>
-                <p>View approved user certificates</p>
+                <h3>Approved Submissions</h3>
+                <p>All approved certificates</p>
               </div>
 
               <div class="admin-box rejected" onclick="showAdminSection('rejected')">
+                <span class="box-badge" id="dashRejectedBadge">0</span>
                 <div class="admin-box-icon">
                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                 </div>
-                <h3>Rejected Certificates</h3>
-                <p>View rejected user certificates</p>
+                <h3>Rejected Submissions</h3>
+                <p>All rejected certificates</p>
               </div>
             </div>
           </div>
 
-          <!-- New Register List -->
-          <div id="newRegisterList" class="admin-list-view">
+          <!-- New Submissions List -->
+          <div id="newSubmissionsList" class="admin-list-view">
             <div class="list-wrap">
               <div class="list-header">
                 <div class="list-controls">
@@ -264,19 +353,66 @@
                     </svg>
                     Back
                   </button>
-                  <button class="btn-download" onclick="downloadNewRegisterList()">
+                  <button class="btn-download" onclick="downloadNewSubmissionsList()">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                     </svg>
                     Download List
                   </button>
                 </div>
-                <div class="list-search">
-                  <input type="text" id="searchNewRegister" placeholder="Search..." />
+                <div style="display: flex; gap: 12px; align-items: center;">
+                  <div style="display: flex; gap: 8px; align-items: center;">
+                    <label style="font-size: 13px; font-weight: 600; color: #374151; white-space: nowrap;">From:</label>
+                    <input type="date" id="dateFromNew" style="padding: 8px 12px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 13px; background: #f9fafb;" onchange="filterByDateNew()" />
+                  </div>
+                  <div style="display: flex; gap: 8px; align-items: center;">
+                    <label style="font-size: 13px; font-weight: 600; color: #374151; white-space: nowrap;">To:</label>
+                    <input type="date" id="dateToNew" style="padding: 8px 12px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 13px; background: #f9fafb;" onchange="filterByDateNew()" />
+                  </div>
+                  <div class="list-search">
+                    <input type="text" id="searchNewSubmissions" placeholder="Search..." />
+                  </div>
                 </div>
               </div>
-              <div class="list-title">New Registered Certificates</div>
-              <div id="listNewRegister" class="certificate-list"></div>
+              <div class="list-title">New Self-Certification Submissions (Today)</div>
+              <div id="listNewSubmissions" class="certificate-list"></div>
+            </div>
+          </div>
+
+          <!-- Pending Review List -->
+          <div id="pendingReviewList" class="admin-list-view">
+            <div class="list-wrap">
+              <div class="list-header">
+                <div class="list-controls">
+                  <button class="back-btn" onclick="goBack()">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    Back
+                  </button>
+                  <button class="btn-download" onclick="downloadPendingReviewList()">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Download List
+                  </button>
+                </div>
+                <div style="display: flex; gap: 12px; align-items: center;">
+                  <div style="display: flex; gap: 8px; align-items: center;">
+                    <label style="font-size: 13px; font-weight: 600; color: #374151; white-space: nowrap;">From:</label>
+                    <input type="date" id="dateFromPending" style="padding: 8px 12px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 13px; background: #f9fafb;" onchange="filterByDatePending()" />
+                  </div>
+                  <div style="display: flex; gap: 8px; align-items: center;">
+                    <label style="font-size: 13px; font-weight: 600; color: #374151; white-space: nowrap;">To:</label>
+                    <input type="date" id="dateToPending" style="padding: 8px 12px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 13px; background: #f9fafb;" onchange="filterByDatePending()" />
+                  </div>
+                  <div class="list-search">
+                    <input type="text" id="searchPendingReview" placeholder="Search..." />
+                  </div>
+                </div>
+              </div>
+              <div class="list-title">Pending Review (Previous Days)</div>
+              <div id="listPendingReview" class="certificate-list"></div>
             </div>
           </div>
 
@@ -298,11 +434,21 @@
                     Download List
                   </button>
                 </div>
-                <div class="list-search">
-                  <input type="text" id="searchApproved" placeholder="Search..." />
+                <div style="display: flex; gap: 12px; align-items: center;">
+                  <div style="display: flex; gap: 8px; align-items: center;">
+                    <label style="font-size: 13px; font-weight: 600; color: #374151; white-space: nowrap;">From:</label>
+                    <input type="date" id="dateFromApproved" style="padding: 8px 12px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 13px; background: #f9fafb;" onchange="filterByDateApproved()" />
+                  </div>
+                  <div style="display: flex; gap: 8px; align-items: center;">
+                    <label style="font-size: 13px; font-weight: 600; color: #374151; white-space: nowrap;">To:</label>
+                    <input type="date" id="dateToApproved" style="padding: 8px 12px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 13px; background: #f9fafb;" onchange="filterByDateApproved()" />
+                  </div>
+                  <div class="list-search">
+                    <input type="text" id="searchApproved" placeholder="Search..." />
+                  </div>
                 </div>
               </div>
-              <div class="list-title">Approved Certificates</div>
+              <div class="list-title">Approved Submissions</div>
               <div id="listApproved" class="certificate-list"></div>
             </div>
           </div>
@@ -325,11 +471,21 @@
                     Download List
                   </button>
                 </div>
-                <div class="list-search">
-                  <input type="text" id="searchRejected" placeholder="Search..." />
+                <div style="display: flex; gap: 12px; align-items: center;">
+                  <div style="display: flex; gap: 8px; align-items: center;">
+                    <label style="font-size: 13px; font-weight: 600; color: #374151; white-space: nowrap;">From:</label>
+                    <input type="date" id="dateFromRejected" style="padding: 8px 12px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 13px; background: #f9fafb;" onchange="filterByDateRejected()" />
+                  </div>
+                  <div style="display: flex; gap: 8px; align-items: center;">
+                    <label style="font-size: 13px; font-weight: 600; color: #374151; white-space: nowrap;">To:</label>
+                    <input type="date" id="dateToRejected" style="padding: 8px 12px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 13px; background: #f9fafb;" onchange="filterByDateRejected()" />
+                  </div>
+                  <div class="list-search">
+                    <input type="text" id="searchRejected" placeholder="Search..." />
+                  </div>
                 </div>
               </div>
-              <div class="list-title">Rejected Certificates</div>
+              <div class="list-title">Rejected Submissions</div>
               <div id="listRejected" class="certificate-list"></div>
             </div>
           </div>
@@ -338,27 +494,273 @@
     </div>
   </div>
 
+  <!-- View Submission Modal -->
+  <div id="viewSubmissionModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalSubmissionTitle">Submission Details</h2>
+        <p id="modalSubmissionOrg">Organisation Name</p>
+      </div>
+      <div class="modal-body" id="modalSubmissionBody">
+        <!-- Dynamic content loaded here -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn-popup cancel" onclick="closeSubmissionModal()">Close</button>
+        <button id="rejectButton" class="btn-popup confirm" style="background:#ef4444;" onclick="showRejectPopup()">Reject</button>
+        <button id="approveButton" class="btn-popup success" onclick="showApprovePopup()">Approve</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Approve Confirmation Popup -->
+  <div id="approvePopup" class="popup">
+    <div class="popup-content">
+      <div class="popup-icon">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <h2>Approve Submission?</h2>
+      <p>Are you sure you want to approve this self-certification?</p>
+      <div class="popup-buttons">
+        <button class="btn-popup cancel" onclick="hideApprovePopup()">Cancel</button>
+        <button class="btn-popup success" onclick="confirmApprove()">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Approve Success Popup -->
+  <div id="approveSuccessPopup" class="popup">
+    <div class="popup-content">
+      <div class="popup-icon">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <h2>Certification Approved!</h2>
+      <p>The self-certification has been approved.<br><br>The certificate details have been added to the Public Registry and are now available for viewing.</p>
+      <div class="popup-buttons">
+        <button class="btn-popup success" onclick="hideApproveSuccessPopup()">Got it!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reject Popup -->
+  <div id="rejectPopup" class="popup">
+    <div class="popup-content">
+      <div class="popup-icon error">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </div>
+      <h2>Reject Submission</h2>
+      <p style="margin-bottom: 16px;">Please enter the reason for rejection (maximum 70 words)</p>
+      <div class="form-group" style="text-align: left;">
+        <textarea id="rejectReason" placeholder="Enter rejection reason..." style="width:100%;"></textarea>
+      </div>
+      <div class="popup-buttons">
+        <button class="btn-popup cancel" onclick="hideRejectPopup()">Cancel</button>
+        <button class="btn-popup" style="background:#ef4444; color:#fff;" onclick="confirmReject()">Reject</button>
+      </div>
+    </div>
+  </div>
+
   <script>
-    // Demo admin data
-    const newRegisterCertificates = [
-      { id: 1, userName: 'John Smith', orgName: 'Tech Corp', certName: 'BS ISO 9001', certDesc: 'Quality Management', submittedDate: '15 Jan 2026', status: 'pending' },
-      { id: 2, userName: 'Sarah Johnson', orgName: 'Global Industries', certName: 'BS ISO/IEC 27001', certDesc: 'Information Security Management', submittedDate: '14 Jan 2026', status: 'pending' },
-      { id: 3, userName: 'Michael Brown', orgName: 'Healthcare Plus', certName: 'BS ISO 13485', certDesc: 'Medical Devices Quality Management', submittedDate: '13 Jan 2026', status: 'pending' },
-      { id: 4, userName: 'Emily Davis', orgName: 'Food Solutions Ltd', certName: 'BS ISO 22000', certDesc: 'Food Safety Management', submittedDate: '12 Jan 2026', status: 'pending' },
-    ];
-    
-    const approvedCertificates = [
-      { id: 5, userName: 'David Wilson', orgName: 'Energy Corp', certName: 'BS ISO 50001', certDesc: 'Energy Management', approvedDate: '10 Jan 2026', status: 'approved' },
-      { id: 6, userName: 'Lisa Anderson', orgName: 'IT Services Inc', certName: 'BS ISO/IEC 20000', certDesc: 'IT Service Management', approvedDate: '09 Jan 2026', status: 'approved' },
-      { id: 7, userName: 'Robert Taylor', orgName: 'Manufacturing Co', certName: 'BS ISO 45001', certDesc: 'Occupational Health & Safety', approvedDate: '08 Jan 2026', status: 'approved' },
-    ];
-    
-    const rejectedCertificates = [
-      { id: 8, userName: 'Jennifer Moore', orgName: 'StartUp LLC', certName: 'BS ISO 14001', certDesc: 'Environmental Management', rejectedDate: '11 Jan 2026', rejectedReason: 'Incomplete documentation', status: 'rejected' },
-      { id: 9, userName: 'James Martin', orgName: 'Consulting Group', certName: 'BS ISO 31000', certDesc: 'Risk Management', rejectedDate: '10 Jan 2026', rejectedReason: 'Missing evidence files', status: 'rejected' },
+    // Demo data - New submissions (today)
+    const newSubmissions = [
+      { 
+        id: 1, 
+        orgName: 'Tech Innovations Ltd', 
+        standardName: 'BS ISO 9001', 
+        standardDesc: 'Quality Management',
+        submittedDate: '06 Feb 2026', 
+        status: 'new',
+        questions: [
+          { q: 'Standards Adopted - Have you formally identified the BSI standard(s) your organisation intends to adopt?', a: 'Yes', evidence: ['Standard_Adoption_Note.pdf', 'Internal_Communication.pdf'] },
+          { q: 'Defined Scope - Is the scope of adoption clearly defined and documented?', a: 'Yes', evidence: [] },
+          { q: 'Policies & Framework - Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?', a: 'In Progress', evidence: ['Policy_Document.pdf', 'Policy_Index.pdf'] },
+          { q: 'Roles & Responsibilities - Have roles and responsibilities for compliance and implementation been assigned?', a: 'Yes', evidence: [] },
+          { q: 'Risk Assessment - Has your organisation identified and assessed risks relevant to the adopted standard(s)?', a: 'Yes', evidence: [] },
+          { q: 'Control Implementation - Have appropriate controls or procedures been implemented to address identified risks?', a: 'Partially', evidence: [] },
+          { q: 'Training & Awareness - Have relevant employees received awareness or training on the adopted standard(s)?', a: 'Yes', evidence: ['Training_Records.pdf', 'Attendance_Sheet.pdf'] },
+          { q: 'Monitoring & Review - Are internal reviews, audits, or periodic checks conducted to monitor compliance?', a: 'Yes', evidence: [] },
+          { q: 'Corrective Actions - Is there a mechanism to record and address non-conformities or improvement actions?', a: 'In Progress', evidence: [] },
+          { q: 'Self-Declaration & Commitment - Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?', a: 'Yes', evidence: [] }
+        ]
+      },
+      { 
+        id: 2, 
+        orgName: 'Global Solutions Inc', 
+        standardName: 'BS ISO/IEC 27001', 
+        standardDesc: 'Information Security Management',
+        submittedDate: '06 Feb 2026', 
+        status: 'new',
+        questions: [
+          { q: 'Standards Adopted - Have you formally identified the BSI standard(s) your organisation intends to adopt?', a: 'Yes', evidence: ['Management_Approval_Email.pdf'] },
+          { q: 'Defined Scope - Is the scope of adoption clearly defined and documented?', a: 'Partially', evidence: [] },
+          { q: 'Policies & Framework - Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?', a: 'Yes', evidence: ['Security_Policy.pdf', 'Policy_Framework.pdf'] },
+          { q: 'Roles & Responsibilities - Have roles and responsibilities for compliance and implementation been assigned?', a: 'Yes', evidence: [] },
+          { q: 'Risk Assessment - Has your organisation identified and assessed risks relevant to the adopted standard(s)?', a: 'Yes', evidence: [] },
+          { q: 'Control Implementation - Have appropriate controls or procedures been implemented to address identified risks?', a: 'Yes', evidence: [] },
+          { q: 'Training & Awareness - Have relevant employees received awareness or training on the adopted standard(s)?', a: 'Partially', evidence: ['Training_Screenshots.pdf'] },
+          { q: 'Monitoring & Review - Are internal reviews, audits, or periodic checks conducted to monitor compliance?', a: 'Occasionally', evidence: [] },
+          { q: 'Corrective Actions - Is there a mechanism to record and address non-conformities or improvement actions?', a: 'Yes', evidence: [] },
+          { q: 'Self-Declaration & Commitment - Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?', a: 'Yes', evidence: [] }
+        ]
+      },
+      { 
+        id: 6, 
+        orgName: 'Manufacturing Pro Ltd', 
+        standardName: 'BS ISO 14001', 
+        standardDesc: 'Environmental Management',
+        submittedDate: '06 Feb 2026', 
+        status: 'new',
+        questions: [
+          { q: 'Standards Adopted - Have you formally identified the BSI standard(s) your organisation intends to adopt?', a: 'Yes', evidence: ['Adoption_Letter.pdf'] },
+          { q: 'Defined Scope - Is the scope of adoption clearly defined and documented?', a: 'Yes', evidence: [] },
+          { q: 'Policies & Framework - Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?', a: 'Yes', evidence: ['Environmental_Policy.pdf'] },
+          { q: 'Roles & Responsibilities - Have roles and responsibilities for compliance and implementation been assigned?', a: 'Partially', evidence: [] },
+          { q: 'Risk Assessment - Has your organisation identified and assessed risks relevant to the adopted standard(s)?', a: 'Yes', evidence: [] },
+          { q: 'Control Implementation - Have appropriate controls or procedures been implemented to address identified risks?', a: 'In Progress', evidence: [] },
+          { q: 'Training & Awareness - Have relevant employees received awareness or training on the adopted standard(s)?', a: 'Yes', evidence: ['Training_Log.pdf'] },
+          { q: 'Monitoring & Review - Are internal reviews, audits, or periodic checks conducted to monitor compliance?', a: 'Yes', evidence: [] },
+          { q: 'Corrective Actions - Is there a mechanism to record and address non-conformities or improvement actions?', a: 'Yes', evidence: [] },
+          { q: 'Self-Declaration & Commitment - Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?', a: 'Yes', evidence: [] }
+        ]
+      },
+      { 
+        id: 7, 
+        orgName: 'SecureNet Systems', 
+        standardName: 'BS ISO/IEC 20000', 
+        standardDesc: 'IT Service Management',
+        submittedDate: '06 Feb 2026', 
+        status: 'new',
+        questions: [
+          { q: 'Standards Adopted - Have you formally identified the BSI standard(s) your organisation intends to adopt?', a: 'Yes', evidence: ['Management_Decision.pdf', 'Board_Minutes.pdf'] },
+          { q: 'Defined Scope - Is the scope of adoption clearly defined and documented?', a: 'Yes', evidence: [] },
+          { q: 'Policies & Framework - Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?', a: 'Yes', evidence: ['ITSM_Policy.pdf'] },
+          { q: 'Roles & Responsibilities - Have roles and responsibilities for compliance and implementation been assigned?', a: 'Yes', evidence: [] },
+          { q: 'Risk Assessment - Has your organisation identified and assessed risks relevant to the adopted standard(s)?', a: 'Partially', evidence: [] },
+          { q: 'Control Implementation - Have appropriate controls or procedures been implemented to address identified risks?', a: 'Yes', evidence: [] },
+          { q: 'Training & Awareness - Have relevant employees received awareness or training on the adopted standard(s)?', a: 'Yes', evidence: ['Training_Certificates.pdf'] },
+          { q: 'Monitoring & Review - Are internal reviews, audits, or periodic checks conducted to monitor compliance?', a: 'Occasionally', evidence: [] },
+          { q: 'Corrective Actions - Is there a mechanism to record and address non-conformities or improvement actions?', a: 'In Progress', evidence: [] },
+          { q: 'Self-Declaration & Commitment - Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?', a: 'Yes', evidence: [] }
+        ]
+      }
     ];
 
-    // Navigation history
+    // Pending review (previous days)
+    const pendingReview = [
+      { 
+        id: 3, 
+        orgName: 'Healthcare Plus', 
+        standardName: 'BS ISO 13485', 
+        standardDesc: 'Medical Devices Quality Management',
+        submittedDate: '03 Feb 2026', 
+        status: 'pending',
+        questions: [
+          { q: 'Standards Adopted - Have you formally identified the BSI standard(s) your organisation intends to adopt?', a: 'Yes', evidence: ['Standard_Adoption_Note.pdf'] },
+          { q: 'Defined Scope - Is the scope of adoption clearly defined and documented?', a: 'Yes', evidence: [] },
+          { q: 'Policies & Framework - Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?', a: 'Yes', evidence: ['QMS_Policy.pdf', 'Policy_Document.pdf'] },
+          { q: 'Roles & Responsibilities - Have roles and responsibilities for compliance and implementation been assigned?', a: 'Partially', evidence: [] },
+          { q: 'Risk Assessment - Has your organisation identified and assessed risks relevant to the adopted standard(s)?', a: 'In Progress', evidence: [] },
+          { q: 'Control Implementation - Have appropriate controls or procedures been implemented to address identified risks?', a: 'Partially', evidence: [] },
+          { q: 'Training & Awareness - Have relevant employees received awareness or training on the adopted standard(s)?', a: 'Yes', evidence: ['Training_Records.pdf', 'Training_Certificates.pdf'] },
+          { q: 'Monitoring & Review - Are internal reviews, audits, or periodic checks conducted to monitor compliance?', a: 'Yes', evidence: [] },
+          { q: 'Corrective Actions - Is there a mechanism to record and address non-conformities or improvement actions?', a: 'Yes', evidence: [] },
+          { q: 'Self-Declaration & Commitment - Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?', a: 'Yes', evidence: [] }
+        ]
+      },
+      { 
+        id: 4, 
+        orgName: 'Food Safety Corp', 
+        standardName: 'BS ISO 22000', 
+        standardDesc: 'Food Safety Management',
+        submittedDate: '01 Feb 2026', 
+        status: 'pending',
+        questions: [
+          { q: 'Standards Adopted - Have you formally identified the BSI standard(s) your organisation intends to adopt?', a: 'Yes', evidence: ['Internal_Communication.pdf', 'Board_Approval.pdf'] },
+          { q: 'Defined Scope - Is the scope of adoption clearly defined and documented?', a: 'Yes', evidence: [] },
+          { q: 'Policies & Framework - Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?', a: 'In Progress', evidence: ['Policy_Table_of_Contents.pdf'] },
+          { q: 'Roles & Responsibilities - Have roles and responsibilities for compliance and implementation been assigned?', a: 'Yes', evidence: [] },
+          { q: 'Risk Assessment - Has your organisation identified and assessed risks relevant to the adopted standard(s)?', a: 'Yes', evidence: [] },
+          { q: 'Control Implementation - Have appropriate controls or procedures been implemented to address identified risks?', a: 'Yes', evidence: [] },
+          { q: 'Training & Awareness - Have relevant employees received awareness or training on the adopted standard(s)?', a: 'Partially', evidence: ['Training_Screenshots.pdf'] },
+          { q: 'Monitoring & Review - Are internal reviews, audits, or periodic checks conducted to monitor compliance?', a: 'Occasionally', evidence: [] },
+          { q: 'Corrective Actions - Is there a mechanism to record and address non-conformities or improvement actions?', a: 'In Progress', evidence: [] },
+          { q: 'Self-Declaration & Commitment - Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?', a: 'Yes', evidence: [] }
+        ]
+      },
+      { 
+        id: 5, 
+        orgName: 'Energy Solutions Ltd', 
+        standardName: 'BS ISO 50001', 
+        standardDesc: 'Energy Management',
+        submittedDate: '15 Jan 2026', 
+        status: 'pending',
+        questions: [
+          { q: 'Standards Adopted - Have you formally identified the BSI standard(s) your organisation intends to adopt?', a: 'Yes', evidence: ['Adoption_Document.pdf'] },
+          { q: 'Defined Scope - Is the scope of adoption clearly defined and documented?', a: 'Yes', evidence: [] },
+          { q: 'Policies & Framework - Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?', a: 'Yes', evidence: ['Energy_Policy.pdf'] },
+          { q: 'Roles & Responsibilities - Have roles and responsibilities for compliance and implementation been assigned?', a: 'Yes', evidence: [] },
+          { q: 'Risk Assessment - Has your organisation identified and assessed risks relevant to the adopted standard(s)?', a: 'Partially', evidence: [] },
+          { q: 'Control Implementation - Have appropriate controls or procedures been implemented to address identified risks?', a: 'In Progress', evidence: [] },
+          { q: 'Training & Awareness - Have relevant employees received awareness or training on the adopted standard(s)?', a: 'Yes', evidence: ['Training_Log.pdf'] },
+          { q: 'Monitoring & Review - Are internal reviews, audits, or periodic checks conducted to monitor compliance?', a: 'Yes', evidence: [] },
+          { q: 'Corrective Actions - Is there a mechanism to record and address non-conformities or improvement actions?', a: 'Yes', evidence: [] },
+          { q: 'Self-Declaration & Commitment - Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?', a: 'Yes', evidence: [] }
+        ]
+      },
+      { 
+        id: 8, 
+        orgName: 'Construction Excellence Ltd', 
+        standardName: 'BS ISO 45001', 
+        standardDesc: 'Occupational Health & Safety Management',
+        submittedDate: '31 Jan 2026', 
+        status: 'pending',
+        questions: [
+          { q: 'Standards Adopted - Have you formally identified the BSI standard(s) your organisation intends to adopt?', a: 'Yes', evidence: ['Adoption_Resolution.pdf'] },
+          { q: 'Defined Scope - Is the scope of adoption clearly defined and documented?', a: 'Yes', evidence: [] },
+          { q: 'Policies & Framework - Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?', a: 'Yes', evidence: ['Health_Safety_Policy.pdf', 'Policy_Manual.pdf'] },
+          { q: 'Roles & Responsibilities - Have roles and responsibilities for compliance and implementation been assigned?', a: 'Yes', evidence: [] },
+          { q: 'Risk Assessment - Has your organisation identified and assessed risks relevant to the adopted standard(s)?', a: 'Yes', evidence: [] },
+          { q: 'Control Implementation - Have appropriate controls or procedures been implemented to address identified risks?', a: 'Partially', evidence: [] },
+          { q: 'Training & Awareness - Have relevant employees received awareness or training on the adopted standard(s)?', a: 'Yes', evidence: ['Training_Register.pdf'] },
+          { q: 'Monitoring & Review - Are internal reviews, audits, or periodic checks conducted to monitor compliance?', a: 'Yes', evidence: [] },
+          { q: 'Corrective Actions - Is there a mechanism to record and address non-conformities or improvement actions?', a: 'Yes', evidence: [] },
+          { q: 'Self-Declaration & Commitment - Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?', a: 'Yes', evidence: [] }
+        ]
+      },
+      { 
+        id: 9, 
+        orgName: 'Pharma Solutions Inc', 
+        standardName: 'BS ISO 15378', 
+        standardDesc: 'Primary Packaging Materials for Medicinal Products',
+        submittedDate: '28 Jan 2026', 
+        status: 'pending',
+        questions: [
+          { q: 'Standards Adopted - Have you formally identified the BSI standard(s) your organisation intends to adopt?', a: 'Yes', evidence: ['Board_Decision.pdf', 'Management_Letter.pdf'] },
+          { q: 'Defined Scope - Is the scope of adoption clearly defined and documented?', a: 'Partially', evidence: [] },
+          { q: 'Policies & Framework - Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?', a: 'In Progress', evidence: ['Quality_Policy_Draft.pdf'] },
+          { q: 'Roles & Responsibilities - Have roles and responsibilities for compliance and implementation been assigned?', a: 'Yes', evidence: [] },
+          { q: 'Risk Assessment - Has your organisation identified and assessed risks relevant to the adopted standard(s)?', a: 'Yes', evidence: [] },
+          { q: 'Control Implementation - Have appropriate controls or procedures been implemented to address identified risks?', a: 'In Progress', evidence: [] },
+          { q: 'Training & Awareness - Have relevant employees received awareness or training on the adopted standard(s)?', a: 'Partially', evidence: ['Training_Plan.pdf'] },
+          { q: 'Monitoring & Review - Are internal reviews, audits, or periodic checks conducted to monitor compliance?', a: 'Occasionally', evidence: [] },
+          { q: 'Corrective Actions - Is there a mechanism to record and address non-conformities or improvement actions?', a: 'In Progress', evidence: [] },
+          { q: 'Self-Declaration & Commitment - Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?', a: 'Yes', evidence: [] }
+        ]
+      }
+    ];
+
+    // Approved submissions
+    const approvedSubmissions = [];
+
+    // Rejected submissions  
+    const rejectedSubmissions = [];
+
+    let currentSubmissionId = null;
     let navigationHistory = [];
 
     // Captcha
@@ -372,7 +774,7 @@
     }
     document.getElementById('refreshAdminCaptcha').addEventListener('click', genCaptcha);
 
-    // Login submit
+    // Login
     document.getElementById('adminLoginForm').addEventListener('submit', function(e) {
       e.preventDefault();
       const mem = (document.getElementById('adminMembershipId').value || '').trim();
@@ -394,17 +796,15 @@
       }
       err.style.display = 'none';
 
-      // Show admin app
       document.getElementById('adminLogin').style.display = 'none';
       document.getElementById('adminApp').style.display = 'block';
-      document.getElementById('adminName').textContent = 'BSI Admin Users';
-
-      // Populate lists
-      populateNewRegister();
+      
+      updateBadges();
+      populateNewSubmissions();
+      populatePendingReview();
       populateApproved();
       populateRejected();
-      // Default to New Register view
-      showAdminSection('newRegister');
+      showAdminSection('dashboard');
     });
 
     // Forgot password
@@ -426,7 +826,6 @@
       document.getElementById('forgotPasswordSection').style.display = 'block';
     }
 
-    // Forgot password form submission
     document.getElementById('forgotPasswordForm').addEventListener('submit', function(e){
       e.preventDefault();
       const email = document.getElementById('resetEmail').value.trim();
@@ -440,7 +839,6 @@
         return;
       }
 
-      // Email validation
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email)) {
         err.textContent = 'Please enter a valid email address.';
@@ -453,7 +851,6 @@
       success.textContent = 'Password reset link has been sent to your email!';
       success.style.display = 'block';
 
-      // Reset form and return to login after 3 seconds
       setTimeout(() => {
         showLoginForm();
       }, 3000);
@@ -470,74 +867,84 @@
       }
     });
 
-    // Navigation with history
+    // Update badges
+    function updateBadges() {
+      const newCount = newSubmissions.length;
+      const pendingCount = pendingReview.length;
+      const approvedCount = approvedSubmissions.length;
+      const rejectedCount = rejectedSubmissions.length;
+      
+      document.getElementById('newSubmissionsBadge').textContent = newCount;
+      document.getElementById('pendingReviewBadge').textContent = pendingCount;
+      document.getElementById('approvedBadge').textContent = approvedCount;
+      document.getElementById('rejectedBadge').textContent = rejectedCount;
+      
+      document.getElementById('dashNewBadge').textContent = newCount;
+      document.getElementById('dashPendingBadge').textContent = pendingCount;
+      document.getElementById('dashApprovedBadge').textContent = approvedCount;
+      document.getElementById('dashRejectedBadge').textContent = rejectedCount;
+    }
+
+    // Navigation
     function showAdminSection(section) {
       const dashboard = document.getElementById('adminDashboard');
-      const newRegisterList = document.getElementById('newRegisterList');
+      const newList = document.getElementById('newSubmissionsList');
+      const pendingList = document.getElementById('pendingReviewList');
       const approvedList = document.getElementById('approvedList');
       const rejectedList = document.getElementById('rejectedList');
       const pageTitle = document.getElementById('pageTitle');
 
-      // Hide all
       dashboard.style.display = 'none';
-      newRegisterList.classList.remove('active');
+      newList.classList.remove('active');
+      pendingList.classList.remove('active');
       approvedList.classList.remove('active');
       rejectedList.classList.remove('active');
 
-      // Update active in left nav
       const buttons = document.querySelectorAll('.side-nav .nav-item');
       buttons.forEach(b => b.classList.remove('active'));
 
-      // Add to navigation history
       navigationHistory.push(section);
 
-      if (section === 'newRegister') {
-        newRegisterList.classList.add('active');
-        pageTitle.textContent = 'New Registered Certificates';
+      if (section === 'dashboard') {
+        dashboard.style.display = 'block';
+        pageTitle.textContent = 'Admin Dashboard';
         if (buttons[0]) buttons[0].classList.add('active');
-      } else if (section === 'approve') {
-        approvedList.classList.add('active');
-        pageTitle.textContent = 'Approved Certificates';
+      } else if (section === 'newSubmissions') {
+        newList.classList.add('active');
+        pageTitle.textContent = 'New Self-Certification Submissions (Today)';
         if (buttons[1]) buttons[1].classList.add('active');
+      } else if (section === 'pendingReview') {
+        pendingList.classList.add('active');
+        pageTitle.textContent = 'Pending Review (Previous Days)';
+        if (buttons[2]) buttons[2].classList.add('active');
+      } else if (section === 'approved') {
+        approvedList.classList.add('active');
+        pageTitle.textContent = 'Approved Submissions';
+        if (buttons[3]) buttons[3].classList.add('active');
       } else if (section === 'rejected') {
         rejectedList.classList.add('active');
-        pageTitle.textContent = 'Rejected Certificates';
-        if (buttons[2]) buttons[2].classList.add('active');
+        pageTitle.textContent = 'Rejected Submissions';
+        if (buttons[4]) buttons[4].classList.add('active');
       }
     }
 
-    // Go back function
     function goBack() {
-      // Remove current page from history
       navigationHistory.pop();
-      
-      // If there's a previous page, go to it
       if (navigationHistory.length > 0) {
         const previousPage = navigationHistory[navigationHistory.length - 1];
-        // Remove it from history so showAdminSection doesn't duplicate it
         navigationHistory.pop();
         showAdminSection(previousPage);
       } else {
-        // If no history, default to newRegister
-        showAdminSection('newRegister');
+        showAdminSection('dashboard');
       }
     }
 
-    function backToAdminDashboard() {
-      document.getElementById('adminDashboard').style.display = 'block';
-      document.getElementById('newRegisterList').classList.remove('active');
-      document.getElementById('approvedList').classList.remove('active');
-      document.getElementById('rejectedList').classList.remove('active');
-      document.getElementById('pageTitle').textContent = 'Admin Dashboard';
-      navigationHistory = [];
-    }
-
-    // Populate Lists
-    function populateNewRegister(){
-      const el = document.getElementById('listNewRegister');
+    // Populate lists
+    function populateNewSubmissions() {
+      const el = document.getElementById('listNewSubmissions');
       el.innerHTML = '';
       
-      newRegisterCertificates.forEach(cert => {
+      newSubmissions.forEach(sub => {
         const card = document.createElement('div');
         card.className = 'certificate-card';
         card.innerHTML = `
@@ -546,27 +953,77 @@
           </div>
           <div class="certificate-info">
             <div class="certificate-details">
-              <h3>${cert.certName}</h3>
-              <div class="certificate-desc">${cert.certDesc}</div>
-              <div class="certificate-date">User: ${cert.userName} | Organization: ${cert.orgName}</div>
-              <div class="certificate-date">Submitted: ${cert.submittedDate}</div>
-              <span class="status-badge pending">Pending Review</span>
+              <h3>${sub.standardName}</h3>
+              <div class="certificate-desc">${sub.standardDesc}</div>
+              <div class="certificate-date">Organisation: ${sub.orgName}</div>
+              <div class="certificate-date">Submitted: ${sub.submittedDate}</div>
+              <span class="status-badge new">New</span>
               <div class="admin-actions">
-                <button class="btn-approve" onclick="approveCertificate(${cert.id})">Approve</button>
-                <button class="btn-reject" onclick="rejectCertificate(${cert.id})">Reject</button>
+                <button class="btn-view" data-id="${sub.id}" data-type="new">View Submission</button>
               </div>
             </div>
           </div>
         `;
         el.appendChild(card);
       });
+      
+      // Add event listeners to buttons
+      el.querySelectorAll('.btn-view').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const id = parseInt(this.getAttribute('data-id'));
+          const type = this.getAttribute('data-type');
+          viewSubmission(id, type);
+        });
+      });
     }
 
-    function populateApproved(){
+    function populatePendingReview() {
+      const el = document.getElementById('listPendingReview');
+      el.innerHTML = '';
+      
+      pendingReview.forEach(sub => {
+        const card = document.createElement('div');
+        card.className = 'certificate-card';
+        card.innerHTML = `
+          <div class="certificate-thumbnail">
+            <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSI Certificate" class="certificate-image">
+          </div>
+          <div class="certificate-info">
+            <div class="certificate-details">
+              <h3>${sub.standardName}</h3>
+              <div class="certificate-desc">${sub.standardDesc}</div>
+              <div class="certificate-date">Organisation: ${sub.orgName}</div>
+              <div class="certificate-date">Submitted: ${sub.submittedDate}</div>
+              <span class="status-badge pending">Pending Review</span>
+              <div class="admin-actions">
+                <button class="btn-view" data-id="${sub.id}" data-type="pending">View Submission</button>
+              </div>
+            </div>
+          </div>
+        `;
+        el.appendChild(card);
+      });
+      
+      // Add event listeners to buttons
+      el.querySelectorAll('.btn-view').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const id = parseInt(this.getAttribute('data-id'));
+          const type = this.getAttribute('data-type');
+          viewSubmission(id, type);
+        });
+      });
+    }
+
+    function populateApproved() {
       const el = document.getElementById('listApproved');
       el.innerHTML = '';
       
-      approvedCertificates.forEach(cert => {
+      if (approvedSubmissions.length === 0) {
+        el.innerHTML = '<div style="text-align:center; padding:40px; color:#6b7280;">No approved submissions yet.</div>';
+        return;
+      }
+      
+      approvedSubmissions.forEach(sub => {
         const card = document.createElement('div');
         card.className = 'certificate-card';
         card.innerHTML = `
@@ -575,23 +1032,39 @@
           </div>
           <div class="certificate-info">
             <div class="certificate-details">
-              <h3>${cert.certName}</h3>
-              <div class="certificate-desc">${cert.certDesc}</div>
-              <div class="certificate-date">User: ${cert.userName} | Organization: ${cert.orgName}</div>
-              <div class="certificate-date">Approved: ${cert.approvedDate}</div>
+              <h3>${sub.standardName}</h3>
+              <div class="certificate-desc">${sub.standardDesc}</div>
+              <div class="certificate-date">Organisation: ${sub.orgName}</div>
+              <div class="certificate-date">Submitted: ${sub.submittedDate}</div>
+              <div class="certificate-date">Approved: ${sub.approvedDate}</div>
               <span class="status-badge approved">Approved</span>
+              <div class="admin-actions">
+                <button class="btn-view" data-id="${sub.id}" data-type="approved">View Submission</button>
+              </div>
             </div>
           </div>
         `;
         el.appendChild(card);
       });
+      
+      el.querySelectorAll('.btn-view').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const id = parseInt(this.getAttribute('data-id'));
+          viewSubmissionFromList(id, approvedSubmissions);
+        });
+      });
     }
 
-    function populateRejected(){
+    function populateRejected() {
       const el = document.getElementById('listRejected');
       el.innerHTML = '';
       
-      rejectedCertificates.forEach(cert => {
+      if (rejectedSubmissions.length === 0) {
+        el.innerHTML = '<div style="text-align:center; padding:40px; color:#6b7280;">No rejected submissions yet.</div>';
+        return;
+      }
+      
+      rejectedSubmissions.forEach(sub => {
         const card = document.createElement('div');
         card.className = 'certificate-card';
         card.innerHTML = `
@@ -600,44 +1073,383 @@
           </div>
           <div class="certificate-info">
             <div class="certificate-details">
-              <h3>${cert.certName}</h3>
-              <div class="certificate-desc">${cert.certDesc}</div>
-              <div class="certificate-date">User: ${cert.userName} | Organization: ${cert.orgName}</div>
-              <div class="certificate-date">Rejected: ${cert.rejectedDate}</div>
-              <div class="certificate-date" style="color:#dc2626; font-weight:600;">Reason: ${cert.rejectedReason}</div>
+              <h3>${sub.standardName}</h3>
+              <div class="certificate-desc">${sub.standardDesc}</div>
+              <div class="certificate-date">Organisation: ${sub.orgName}</div>
+              <div class="certificate-date">Submitted: ${sub.submittedDate}</div>
+              <div class="certificate-date">Rejected: ${sub.rejectedDate}</div>
+              <div class="certificate-date" style="color:#dc2626; font-weight:600;">Reason: ${sub.rejectedReason}</div>
               <span class="status-badge rejected">Rejected</span>
+              <div class="admin-actions">
+                <button class="btn-view" data-id="${sub.id}" data-type="rejected">View Submission</button>
+              </div>
             </div>
           </div>
         `;
         el.appendChild(card);
       });
+      
+      el.querySelectorAll('.btn-view').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const id = parseInt(this.getAttribute('data-id'));
+          viewSubmissionFromList(id, rejectedSubmissions);
+        });
+      });
     }
 
-    // Approve/Reject actions
-    function approveCertificate(id){
-      if (confirm('Are you sure you want to approve this certificate?')) {
-        alert('Certificate ID ' + id + ' has been approved!');
+    // View submission modal
+    function viewSubmission(id, type) {
+      console.log('viewSubmission called with id:', id, 'type:', type);
+      currentSubmissionId = id;
+      console.log('Set currentSubmissionId to:', currentSubmissionId);
+      
+      const submission = type === 'new' 
+        ? newSubmissions.find(s => s.id === id)
+        : pendingReview.find(s => s.id === id);
+      
+      if (!submission) {
+        console.error('Submission not found! ID:', id);
+        return;
+      }
+      
+      console.log('Found submission:', submission);
+      displaySubmissionModal(submission, type);
+    }
+
+    function viewSubmissionFromList(id, list) {
+      console.log('viewSubmissionFromList called with id:', id);
+      currentSubmissionId = id;
+      console.log('Set currentSubmissionId to:', currentSubmissionId);
+      
+      const submission = list.find(s => s.id === id);
+      if (!submission) {
+        console.error('Submission not found in list!');
+        return;
+      }
+      
+      console.log('Found submission:', submission);
+      displaySubmissionModal(submission, submission.status);
+    }
+
+    function displaySubmissionModal(submission, type) {
+      // Ensure currentSubmissionId is set
+      currentSubmissionId = submission.id;
+      console.log('displaySubmissionModal - currentSubmissionId:', currentSubmissionId);
+      
+      document.getElementById('modalSubmissionTitle').textContent = submission.standardName;
+      document.getElementById('modalSubmissionOrg').textContent = submission.orgName;
+
+      let bodyHTML = `
+        <div class="submission-info">
+          <h3>Submission Information</h3>
+          <div class="info-row">
+            <div class="info-label">Organisation Name:</div>
+            <div class="info-value">${submission.orgName}</div>
+          </div>
+          <div class="info-row">
+            <div class="info-label">Standard Name:</div>
+            <div class="info-value">${submission.standardName} – ${submission.standardDesc}</div>
+          </div>
+          <div class="info-row">
+            <div class="info-label">Submission Date:</div>
+            <div class="info-value">${submission.submittedDate}</div>
+          </div>
+          ${submission.approvedDate ? `
+          <div class="info-row">
+            <div class="info-label">Approved Date:</div>
+            <div class="info-value" style="color:#10b981; font-weight:600;">${submission.approvedDate}</div>
+          </div>
+          ` : ''}
+          ${submission.rejectedDate ? `
+          <div class="info-row">
+            <div class="info-label">Rejected Date:</div>
+            <div class="info-value" style="color:#ef4444; font-weight:600;">${submission.rejectedDate}</div>
+          </div>
+          ` : ''}
+          ${submission.rejectedReason ? `
+          <div class="info-row">
+            <div class="info-label">Rejection Reason:</div>
+            <div class="info-value" style="color:#dc2626; font-weight:600;">${submission.rejectedReason}</div>
+          </div>
+          ` : ''}
+          <div class="info-row">
+            <div class="info-label">Status:</div>
+            <div class="info-value"><span class="status-badge ${
+              type === 'approved' || submission.status === 'approved' ? 'approved' : 
+              type === 'rejected' || submission.status === 'rejected' ? 'rejected' : 
+              type === 'new' ? 'new' : 'pending'
+            }">${
+              type === 'approved' || submission.status === 'approved' ? 'Approved' : 
+              type === 'rejected' || submission.status === 'rejected' ? 'Rejected' : 
+              type === 'new' ? 'New' : 'Pending Review'
+            }</span></div>
+          </div>
+        </div>
+
+        <h3 style="font-size: 18px; font-weight: 600; color: #1a1a1a; margin-bottom: 16px;">Questionnaire Responses</h3>
+      `;
+
+      submission.questions.forEach((q, idx) => {
+        bodyHTML += `
+          <div class="question-section">
+            <div class="question-title">
+              <span class="question-number">${idx + 1}</span>
+              ${q.q}
+            </div>
+            <div class="question-answer">
+              <strong>Answer:</strong>
+              <span>${q.a}</span>
+            </div>
+        `;
+        
+        // Add evidence download button if evidence exists for this question
+        if (q.evidence && q.evidence.length > 0) {
+          // Combine all evidence files into one download
+          const evidenceFiles = q.evidence.join(', ');
+          bodyHTML += `
+            <div class="question-evidence">
+              <span class="question-evidence-label">Evidence:</span>
+              <button class="btn-download-evidence" onclick="downloadQuestionEvidence(${idx + 1}, '${evidenceFiles}')">Download</button>
+            </div>
+          `;
+        }
+        
+        bodyHTML += `</div>`;
+      });
+
+      document.getElementById('modalSubmissionBody').innerHTML = bodyHTML;
+      
+      // Hide approve/reject buttons if submission is already approved or rejected
+      const approveBtn = document.getElementById('approveButton');
+      const rejectBtn = document.getElementById('rejectButton');
+      
+      if (type === 'approved' || submission.status === 'approved') {
+        approveBtn.style.display = 'none';
+        rejectBtn.style.display = 'none';
+      } else if (type === 'rejected' || submission.status === 'rejected') {
+        approveBtn.style.display = 'none';
+        rejectBtn.style.display = 'none';
+      } else {
+        approveBtn.style.display = 'inline-block';
+        rejectBtn.style.display = 'inline-block';
+      }
+      
+      document.getElementById('viewSubmissionModal').classList.add('show');
+    }
+
+    function closeSubmissionModal() {
+      document.getElementById('viewSubmissionModal').classList.remove('show');
+      currentSubmissionId = null;
+    }
+
+    // Download evidence files for a question
+    function downloadQuestionEvidence(questionNum, filesStr) {
+      const files = filesStr.split(', ');
+      
+      if (files.length === 1) {
+        // Single file - download directly
+        downloadEvidence(files[0]);
+      } else {
+        // Multiple files - create a zip-like summary
+        let content = `BSI Self-Certification Evidence - Question ${questionNum}\n\n`;
+        content += `Total Files: ${files.length}\n\n`;
+        content += `Files Included:\n`;
+        files.forEach((file, idx) => {
+          content += `${idx + 1}. ${file}\n`;
+        });
+        content += `\n\nNote: In production, these files would be packaged together.\n`;
+        content += `Organisation: Sample Organisation\n`;
+        content += `Date: ${new Date().toLocaleDateString()}\n`;
+        
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `Question_${questionNum}_Evidence.txt`;
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+        document.body.removeChild(a);
       }
     }
-    
-    function rejectCertificate(id){
-      const reason = prompt('Please enter the reason for rejection:');
-      if (reason) {
-        alert('Certificate ID ' + id + ' has been rejected.\nReason: ' + reason);
+
+    // Download single evidence file
+    function downloadEvidence(filename) {
+      // Create a dummy download (in real implementation, this would fetch from server)
+      const dummyContent = `BSI Evidence Document\n\nFilename: ${filename}\nOrganisation: Sample Organisation\nDate: ${new Date().toLocaleDateString()}\n\nThis is a placeholder for the actual evidence document.`;
+      const blob = new Blob([dummyContent], { type: 'text/plain' });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    }
+
+    // Approve flow
+    function showApprovePopup() {
+      console.log('showApprovePopup - currentSubmissionId:', currentSubmissionId);
+      if (!currentSubmissionId) {
+        alert('Error: No submission selected!');
+        return;
       }
+      document.getElementById('approvePopup').classList.add('show');
     }
 
-    // Download functions
-    function downloadNewRegisterList() {
-      alert('Downloading New Register Certificates list...\n\nThis feature will export all pending certificates to CSV/Excel format.');
+    function hideApprovePopup() {
+      document.getElementById('approvePopup').classList.remove('show');
     }
 
-    function downloadApprovedList() {
-      alert('Downloading Approved Certificates list...\n\nThis feature will export all approved certificates to CSV/Excel format.');
+    function confirmApprove() {
+      // Save the ID BEFORE closing modal (which sets it to null)
+      const submissionIdToApprove = currentSubmissionId;
+      
+      console.log('=== APPROVE STARTED ===');
+      console.log('submissionIdToApprove:', submissionIdToApprove);
+      console.log('newSubmissions before:', newSubmissions.length, newSubmissions.map(s => s.id));
+      console.log('pendingReview before:', pendingReview.length, pendingReview.map(s => s.id));
+      console.log('approvedSubmissions before:', approvedSubmissions.length);
+      
+      hideApprovePopup();
+      closeSubmissionModal();
+      
+      // Find and move submission to approved list
+      let approvedSubmission = null;
+      const newIndex = newSubmissions.findIndex(s => s.id === submissionIdToApprove);
+      console.log('newIndex:', newIndex);
+      if (newIndex !== -1) {
+        approvedSubmission = newSubmissions.splice(newIndex, 1)[0];
+        console.log('✓ Found in newSubmissions and removed');
+      }
+      
+      if (!approvedSubmission) {
+        const pendingIndex = pendingReview.findIndex(s => s.id === submissionIdToApprove);
+        console.log('pendingIndex:', pendingIndex);
+        if (pendingIndex !== -1) {
+          approvedSubmission = pendingReview.splice(pendingIndex, 1)[0];
+          console.log('✓ Found in pendingReview and removed');
+        }
+      }
+
+      if (approvedSubmission) {
+        approvedSubmission.status = 'approved';
+        approvedSubmission.approvedDate = new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).replace(/ /g, ' ');
+        approvedSubmissions.push(approvedSubmission);
+        console.log('✓ Added to approvedSubmissions');
+        console.log('Approved submission:', approvedSubmission);
+      } else {
+        console.error('✗ ERROR: Submission not found in any list!');
+        alert('Error: Could not find submission to approve!');
+        return;
+      }
+
+      console.log('newSubmissions after:', newSubmissions.length, newSubmissions.map(s => s.id));
+      console.log('pendingReview after:', pendingReview.length, pendingReview.map(s => s.id));
+      console.log('approvedSubmissions after:', approvedSubmissions.length, approvedSubmissions.map(s => s.id));
+
+      updateBadges();
+      populateNewSubmissions();
+      populatePendingReview();
+      populateApproved();
+      
+      console.log('=== APPROVE COMPLETED ===');
+
+      // Show success popup
+      document.getElementById('approveSuccessPopup').classList.add('show');
     }
 
-    function downloadRejectedList() {
-      alert('Downloading Rejected Certificates list...\n\nThis feature will export all rejected certificates to CSV/Excel format.');
+    function hideApproveSuccessPopup() {
+      document.getElementById('approveSuccessPopup').classList.remove('show');
+    }
+
+    // Reject flow
+    function showRejectPopup() {
+      console.log('showRejectPopup - currentSubmissionId:', currentSubmissionId);
+      if (!currentSubmissionId) {
+        alert('Error: No submission selected!');
+        return;
+      }
+      document.getElementById('rejectReason').value = '';
+      document.getElementById('rejectPopup').classList.add('show');
+    }
+
+    function hideRejectPopup() {
+      document.getElementById('rejectPopup').classList.remove('show');
+    }
+
+    function confirmReject() {
+      const reason = document.getElementById('rejectReason').value.trim();
+      
+      if (!reason) {
+        alert('Please enter a reason for rejection.');
+        return;
+      }
+
+      // Word count check (70 words max)
+      const wordCount = reason.split(/\s+/).length;
+      if (wordCount > 70) {
+        alert('Rejection reason must be maximum 70 words. Current: ' + wordCount + ' words.');
+        return;
+      }
+
+      // Save the ID BEFORE closing modal (which sets it to null)
+      const submissionIdToReject = currentSubmissionId;
+
+      console.log('=== REJECT STARTED ===');
+      console.log('submissionIdToReject:', submissionIdToReject);
+      console.log('Rejection reason:', reason);
+      console.log('newSubmissions before:', newSubmissions.length, newSubmissions.map(s => s.id));
+      console.log('pendingReview before:', pendingReview.length, pendingReview.map(s => s.id));
+      console.log('rejectedSubmissions before:', rejectedSubmissions.length);
+
+      hideRejectPopup();
+      closeSubmissionModal();
+
+      // Find and move submission to rejected list
+      let rejectedSubmission = null;
+      const newIndex = newSubmissions.findIndex(s => s.id === submissionIdToReject);
+      console.log('newIndex:', newIndex);
+      if (newIndex !== -1) {
+        rejectedSubmission = newSubmissions.splice(newIndex, 1)[0];
+        console.log('✓ Found in newSubmissions and removed');
+      }
+      
+      if (!rejectedSubmission) {
+        const pendingIndex = pendingReview.findIndex(s => s.id === submissionIdToReject);
+        console.log('pendingIndex:', pendingIndex);
+        if (pendingIndex !== -1) {
+          rejectedSubmission = pendingReview.splice(pendingIndex, 1)[0];
+          console.log('✓ Found in pendingReview and removed');
+        }
+      }
+
+      if (rejectedSubmission) {
+        rejectedSubmission.status = 'rejected';
+        rejectedSubmission.rejectedDate = new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).replace(/ /g, ' ');
+        rejectedSubmission.rejectedReason = reason;
+        rejectedSubmissions.push(rejectedSubmission);
+        console.log('✓ Added to rejectedSubmissions');
+        console.log('Rejected submission:', rejectedSubmission);
+      } else {
+        console.error('✗ ERROR: Submission not found in any list!');
+        alert('Error: Could not find submission to reject!');
+        return;
+      }
+
+      console.log('newSubmissions after:', newSubmissions.length, newSubmissions.map(s => s.id));
+      console.log('pendingReview after:', pendingReview.length, pendingReview.map(s => s.id));
+      console.log('rejectedSubmissions after:', rejectedSubmissions.length, rejectedSubmissions.map(s => s.id));
+
+      updateBadges();
+      populateNewSubmissions();
+      populatePendingReview();
+      populateRejected();
+      
+      console.log('=== REJECT COMPLETED ===');
+
+      alert('Submission has been rejected.\n\nReason: ' + reason + '\n\nThe organisation will be notified.');
     }
 
     // Search handlers
@@ -655,13 +1467,220 @@
           });
         });
       };
-      bind('searchNewRegister','listNewRegister');
+      bind('searchNewSubmissions','listNewSubmissions');
+      bind('searchPendingReview','listPendingReview');
       bind('searchApproved','listApproved');
       bind('searchRejected','listRejected');
     }
 
+    // Download functions
+    function downloadNewSubmissionsList() {
+      // Create CSV content
+      let csvContent = "Organisation Name,Standard Name,Standard Description,Submission Date,Status\n";
+      
+      newSubmissions.forEach(sub => {
+        csvContent += `"${sub.orgName}","${sub.standardName}","${sub.standardDesc}","${sub.submittedDate}","New"\n`;
+      });
+
+      // Create blob and download
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.setAttribute('href', url);
+      link.setAttribute('download', 'New_Submissions_' + new Date().toISOString().split('T')[0] + '.csv');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    }
+
+    function downloadPendingReviewList() {
+      // Create CSV content
+      let csvContent = "Organisation Name,Standard Name,Standard Description,Submission Date,Status\n";
+      
+      pendingReview.forEach(sub => {
+        csvContent += `"${sub.orgName}","${sub.standardName}","${sub.standardDesc}","${sub.submittedDate}","Pending Review"\n`;
+      });
+
+      // Create blob and download
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.setAttribute('href', url);
+      link.setAttribute('download', 'Pending_Review_' + new Date().toISOString().split('T')[0] + '.csv');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    }
+
+    function downloadApprovedList() {
+      let csvContent = "Organisation Name,Standard Name,Standard Description,Submission Date,Approved Date,Status\n";
+      
+      approvedSubmissions.forEach(sub => {
+        csvContent += `"${sub.orgName}","${sub.standardName}","${sub.standardDesc}","${sub.submittedDate}","${sub.approvedDate}","Approved"\n`;
+      });
+
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.setAttribute('href', url);
+      link.setAttribute('download', 'Approved_Submissions_' + new Date().toISOString().split('T')[0] + '.csv');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    }
+
+    function downloadRejectedList() {
+      let csvContent = "Organisation Name,Standard Name,Standard Description,Submission Date,Rejected Date,Rejection Reason,Status\n";
+      
+      rejectedSubmissions.forEach(sub => {
+        csvContent += `"${sub.orgName}","${sub.standardName}","${sub.standardDesc}","${sub.submittedDate}","${sub.rejectedDate}","${sub.rejectedReason}","Rejected"\n`;
+      });
+
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.setAttribute('href', url);
+      link.setAttribute('download', 'Rejected_Submissions_' + new Date().toISOString().split('T')[0] + '.csv');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    }
+
+    // Date filter functions
+    function parseSubmissionDate(dateStr) {
+      // Parse "06 Feb 2026" format
+      const months = {
+        'Jan': 0, 'Feb': 1, 'Mar': 2, 'Apr': 3, 'May': 4, 'Jun': 5,
+        'Jul': 6, 'Aug': 7, 'Sep': 8, 'Oct': 9, 'Nov': 10, 'Dec': 11
+      };
+      const parts = dateStr.split(' ');
+      const day = parseInt(parts[0]);
+      const month = months[parts[1]];
+      const year = parseInt(parts[2]);
+      return new Date(year, month, day);
+    }
+
+    function filterByDateNew() {
+      const dateFrom = document.getElementById('dateFromNew').value;
+      const dateTo = document.getElementById('dateToPending').value;
+      
+      const cards = document.querySelectorAll('#listNewSubmissions .certificate-card');
+      
+      cards.forEach(card => {
+        const dateText = card.querySelector('.certificate-date:nth-of-type(2)').textContent.replace('Submitted: ', '');
+        const cardDate = parseSubmissionDate(dateText);
+        
+        let showCard = true;
+        
+        if (dateFrom && dateTo) {
+          const fromDate = new Date(dateFrom);
+          const toDate = new Date(dateTo);
+          showCard = cardDate >= fromDate && cardDate <= toDate;
+        } else if (dateFrom) {
+          const fromDate = new Date(dateFrom);
+          showCard = cardDate >= fromDate;
+        } else if (dateTo) {
+          const toDate = new Date(dateTo);
+          showCard = cardDate <= toDate;
+        }
+        
+        card.style.display = showCard ? 'flex' : 'none';
+      });
+    }
+
+    function filterByDatePending() {
+      const dateFrom = document.getElementById('dateFromPending').value;
+      const dateTo = document.getElementById('dateToPending').value;
+      
+      const cards = document.querySelectorAll('#listPendingReview .certificate-card');
+      
+      cards.forEach(card => {
+        const dateText = card.querySelector('.certificate-date:nth-of-type(2)').textContent.replace('Submitted: ', '');
+        const cardDate = parseSubmissionDate(dateText);
+        
+        let showCard = true;
+        
+        if (dateFrom && dateTo) {
+          const fromDate = new Date(dateFrom);
+          const toDate = new Date(dateTo);
+          showCard = cardDate >= fromDate && cardDate <= toDate;
+        } else if (dateFrom) {
+          const fromDate = new Date(dateFrom);
+          showCard = cardDate >= fromDate;
+        } else if (dateTo) {
+          const toDate = new Date(dateTo);
+          showCard = cardDate <= toDate;
+        }
+        
+        card.style.display = showCard ? 'flex' : 'none';
+      });
+    }
+
+    function filterByDateApproved() {
+      const dateFrom = document.getElementById('dateFromApproved').value;
+      const dateTo = document.getElementById('dateToApproved').value;
+      
+      const cards = document.querySelectorAll('#listApproved .certificate-card');
+      
+      cards.forEach(card => {
+        const dateText = card.querySelector('.certificate-date:nth-of-type(2)').textContent.replace('Submitted: ', '');
+        const cardDate = parseSubmissionDate(dateText);
+        
+        let showCard = true;
+        
+        if (dateFrom && dateTo) {
+          const fromDate = new Date(dateFrom);
+          const toDate = new Date(dateTo);
+          showCard = cardDate >= fromDate && cardDate <= toDate;
+        } else if (dateFrom) {
+          const fromDate = new Date(dateFrom);
+          showCard = cardDate >= fromDate;
+        } else if (dateTo) {
+          const toDate = new Date(dateTo);
+          showCard = cardDate <= toDate;
+        }
+        
+        card.style.display = showCard ? 'flex' : 'none';
+      });
+    }
+
+    function filterByDateRejected() {
+      const dateFrom = document.getElementById('dateFromRejected').value;
+      const dateTo = document.getElementById('dateToRejected').value;
+      
+      const cards = document.querySelectorAll('#listRejected .certificate-card');
+      
+      cards.forEach(card => {
+        const dateText = card.querySelector('.certificate-date:nth-of-type(2)').textContent.replace('Submitted: ', '');
+        const cardDate = parseSubmissionDate(dateText);
+        
+        let showCard = true;
+        
+        if (dateFrom && dateTo) {
+          const fromDate = new Date(dateFrom);
+          const toDate = new Date(dateTo);
+          showCard = cardDate >= fromDate && cardDate <= toDate;
+        } else if (dateFrom) {
+          const fromDate = new Date(dateFrom);
+          showCard = cardDate >= fromDate;
+        } else if (dateTo) {
+          const toDate = new Date(dateTo);
+          showCard = cardDate <= toDate;
+        }
+        
+        card.style.display = showCard ? 'flex' : 'none';
+      });
+    }
+
     // Initialize
-    window.addEventListener('load', () => { genCaptcha(); setupSearchHandlers(); });
+    window.addEventListener('load', () => { 
+      genCaptcha(); 
+      setupSearchHandlers(); 
+    });
   </script>
 </body>
 </html>
