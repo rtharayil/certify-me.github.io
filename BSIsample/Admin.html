@@ -755,10 +755,55 @@
     ];
 
     // Approved submissions
-    const approvedSubmissions = [];
+    const approvedSubmissions = [
+      { 
+        id: 100, 
+        orgName: 'Digital Systems Corp', 
+        standardName: 'BS ISO 9001', 
+        standardDesc: 'Quality Management',
+        submittedDate: '20 Jan 2026',
+        approvedDate: '25 Jan 2026',
+        status: 'approved',
+        questions: [
+          { q: 'Standards Adopted - Have you formally identified the BSI standard(s) your organisation intends to adopt?', a: 'Yes', evidence: ['Adoption_Document.pdf'] },
+          { q: 'Defined Scope - Is the scope of adoption clearly defined and documented?', a: 'Yes', evidence: [] },
+          { q: 'Policies & Framework - Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?', a: 'Yes', evidence: ['Quality_Policy.pdf'] },
+          { q: 'Roles & Responsibilities - Have roles and responsibilities for compliance and implementation been assigned?', a: 'Yes', evidence: [] },
+          { q: 'Risk Assessment - Has your organisation identified and assessed risks relevant to the adopted standard(s)?', a: 'Yes', evidence: [] },
+          { q: 'Control Implementation - Have appropriate controls or procedures been implemented to address identified risks?', a: 'Yes', evidence: [] },
+          { q: 'Training & Awareness - Have relevant employees received awareness or training on the adopted standard(s)?', a: 'Yes', evidence: ['Training_Records.pdf'] },
+          { q: 'Monitoring & Review - Are internal reviews, audits, or periodic checks conducted to monitor compliance?', a: 'Yes', evidence: [] },
+          { q: 'Corrective Actions - Is there a mechanism to record and address non-conformities or improvement actions?', a: 'Yes', evidence: [] },
+          { q: 'Self-Declaration & Commitment - Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?', a: 'Yes', evidence: [] }
+        ]
+      }
+    ];
 
     // Rejected submissions  
-    const rejectedSubmissions = [];
+    const rejectedSubmissions = [
+      { 
+        id: 200, 
+        orgName: 'StartUp Ventures Ltd', 
+        standardName: 'BS ISO/IEC 27001', 
+        standardDesc: 'Information Security Management',
+        submittedDate: '18 Jan 2026',
+        rejectedDate: '22 Jan 2026',
+        rejectedReason: 'Incomplete documentation for risk assessment and control implementation. Missing evidence for employee training and awareness programs.',
+        status: 'rejected',
+        questions: [
+          { q: 'Standards Adopted - Have you formally identified the BSI standard(s) your organisation intends to adopt?', a: 'Yes', evidence: ['Email_Confirmation.pdf'] },
+          { q: 'Defined Scope - Is the scope of adoption clearly defined and documented?', a: 'Partially', evidence: [] },
+          { q: 'Policies & Framework - Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?', a: 'In Progress', evidence: [] },
+          { q: 'Roles & Responsibilities - Have roles and responsibilities for compliance and implementation been assigned?', a: 'Partially', evidence: [] },
+          { q: 'Risk Assessment - Has your organisation identified and assessed risks relevant to the adopted standard(s)?', a: 'No', evidence: [] },
+          { q: 'Control Implementation - Have appropriate controls or procedures been implemented to address identified risks?', a: 'No', evidence: [] },
+          { q: 'Training & Awareness - Have relevant employees received awareness or training on the adopted standard(s)?', a: 'No', evidence: [] },
+          { q: 'Monitoring & Review - Are internal reviews, audits, or periodic checks conducted to monitor compliance?', a: 'No', evidence: [] },
+          { q: 'Corrective Actions - Is there a mechanism to record and address non-conformities or improvement actions?', a: 'In Progress', evidence: [] },
+          { q: 'Self-Declaration & Commitment - Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?', a: 'Yes', evidence: [] }
+        ]
+      }
+    ];
 
     let currentSubmissionId = null;
     let navigationHistory = [];
