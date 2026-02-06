@@ -371,7 +371,7 @@
                 <h3 style="margin:0; font-size: 18px; color:#111827;">Certification Submitted</h3>
             </div>
             <div style="padding: 22px 24px; color:#374151; font-size: 14px; line-height: 1.6;">
-                <p id="successPopupMsg" style="margin:0;">Your certificate questionnaire has been submitted successfully.</p>
+                <p id="successPopupMsg" style="margin:0;"><strong>Submission Successful</strong><br><br>Thank you. Your self-certification questionnaire has been successfully submitted. The details have been shared with the Admin team for review.<br><br>Please check back in 24–48 hours for an update on the status.</p>
             </div>
             <div style="padding: 16px 24px; border-top: 1px solid #e5e7eb; display:flex; justify-content:flex-end; gap: 10px;">
                 <button id="successViewCertified" style="padding: 10px 16px; background:#3b82f6; color:#fff; border:none; border-radius:8px; font-weight:600; cursor:pointer;">View Certified</button>
@@ -565,20 +565,6 @@
                 description: 'Quality Management',
                 certifiedDate: '15/01/2024',
                 expiryDate: '15/01/2027'
-            },
-            {
-                id: 'iso27001',
-                name: 'BS ISO/IEC 27001',
-                description: 'Information Security Management',
-                certifiedDate: '20/12/2023',
-                expiryDate: '20/12/2026'
-            },
-            {
-                id: 'iso45001',
-                name: 'BS ISO 45001',
-                description: 'Occupational Health & Safety',
-                certifiedDate: '10/11/2023',
-                expiryDate: '10/11/2026'
             }
         ];
         let rejectedCertificates = [
@@ -587,12 +573,6 @@
                 name: 'BS ISO 14001',
                 description: 'Environmental Management',
                 rejectionReason: 'Incomplete documentation. Missing evidence files for questions 3, 5, and 7. Please resubmit with all required evidence.'
-            },
-            {
-                id: 'iso22301',
-                name: 'BS ISO 22301',
-                description: 'Business Continuity',
-                rejectionReason: 'Risk assessment documentation does not meet the required standard. Please provide comprehensive risk analysis with mitigation strategies.'
             }
         ];
 
@@ -684,6 +664,8 @@
             availableCerts.forEach(cert => {
                 const card = document.createElement('div');
                 card.className = 'certificate-card';
+                card.setAttribute('data-cert-name', cert.name.toLowerCase());
+                card.setAttribute('data-cert-desc', cert.description.toLowerCase());
                 card.innerHTML = `
                     <div class="certificate-thumbnail">
                         <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSI Certificate" class="certificate-image">
@@ -717,6 +699,8 @@
                 certifiedCertificates.forEach(cert => {
                     const card = document.createElement('div');
                     card.className = 'certificate-card';
+                    card.setAttribute('data-cert-name', cert.name.toLowerCase());
+                    card.setAttribute('data-cert-desc', cert.description.toLowerCase());
                     card.innerHTML = `
                         <div class="certificate-thumbnail">
                             <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSI Certificate" class="certificate-image">
@@ -749,6 +733,8 @@
                 rejectedCertificates.forEach(cert => {
                     const card = document.createElement('div');
                     card.className = 'certificate-card';
+                    card.setAttribute('data-cert-name', cert.name.toLowerCase());
+                    card.setAttribute('data-cert-desc', cert.description.toLowerCase());
                     card.innerHTML = `
                         <div class="certificate-thumbnail">
                             <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSI Certificate" class="certificate-image">
@@ -825,7 +811,7 @@
             const popup = document.getElementById('successPopup');
             const msgEl = document.getElementById('successPopupMsg');
             if (currentCertificate) {
-                msgEl.textContent = `${currentCertificate.name} questionnaire has been submitted successfully and is now in your certified standards.`;
+                msgEl.innerHTML = `<strong>Submission Successful</strong><br><br>Thank you. Your self-certification questionnaire has been successfully submitted. The details have been shared with the Admin team for review.<br><br>Please check back in 24–48 hours for an update on the status.`;
             }
             popup.style.display = 'flex';
         }
@@ -906,6 +892,28 @@
         });
 
         window.addEventListener('load', function() { generateCaptcha(); });
+        
+        // Search functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('headerSearch');
+            if (searchInput) {
+                searchInput.addEventListener('input', function(e) {
+                    const searchTerm = e.target.value.toLowerCase().trim();
+                    const certificateCards = document.querySelectorAll('.certificate-card');
+                    
+                    certificateCards.forEach(card => {
+                        const certName = card.getAttribute('data-cert-name') || '';
+                        const certDesc = card.getAttribute('data-cert-desc') || '';
+                        
+                        if (certName.includes(searchTerm) || certDesc.includes(searchTerm)) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            }
+        });
         
         window.onclick = function(event) {
             const modal = document.getElementById('certificationModal');
