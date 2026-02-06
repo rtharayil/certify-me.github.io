@@ -14,6 +14,8 @@ featured: true
 
 Digital Credentials have been around for a few years now and has been used across various industries. Ever since the global pandemic, the need for digitalisation has risen in regards to remote working and virtual learning and has led to the popularity of Digital Credentials.
 
+<br>
+
 ## Need for Digital Credentials for the Government:
 
 Governments such as the United States, for example, use it for purposes other than industrial or commercial purposes. An updated White House credentialing policy seeks to use agency-issued identifiers such as Social Security numbers to secure digital transactions. Researchers have been investigating what digital credentials can do on the spectrum of region management and customer provision to its citizens. 
@@ -21,6 +23,8 @@ Governments such as the United States, for example, use it for purposes other th
 The government wants effective action to accelerate the processes of limiting location data, citizen identification documents, expenditure and budget records, security clearances, digital infrastructure, and information exchange between departments.
 
 Apart from quickening the documentation process, the government wants verified and secure portals to issue, deliver, and allow citizens easy access to the documents. The government would provide residents with digital documents in the form of chips or QR codes that they could use on their digital devices. Citizens can issue re-usable credentials for identity and records through the portal, which can also be used as a functional ID for verification purposes.
+
+<br>
 
 ## Digitising credentials for the Government:
 
