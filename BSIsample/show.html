@@ -1,0 +1,2610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertifyMe Showcase Directory</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .navbar-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.25rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .navbar-logo img {
+            height: 45px;
+            width: auto;
+        }
+
+        .navbar-brand-text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.125rem;
+        }
+
+        .navbar-org-name {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1a202c;
+            line-height: 1.2;
+        }
+
+        .navbar-title {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #0000FF;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2.5rem 2rem;
+        }
+
+        /* Page States */
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #E6E6FF 0%, #CCCCFF 100%);
+            border-radius: 16px;
+            padding: 3.5rem 3rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 255, 0.15);
+            color: #0C4A6E;
+        }
+
+        .hero-content-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .hero-text-content {
+            flex: 1;
+        }
+
+        .hero-image-wrapper {
+            flex-shrink: 0;
+            width: 400px;
+            height: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-title {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            line-height: 1.6;
+            max-width: 700px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            margin-top: 2.5rem;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            color: #0000FF;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: #0C4A6E;
+            font-weight: 500;
+        }
+
+        /* Advanced Search Section */
+        .search-section {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+        }
+
+        .search-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 1.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .search-icon-title {
+            width: 28px;
+            height: 28px;
+            color: #0000FF;
+        }
+
+        .search-filters {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+            align-items: end;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .filter-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 0.625rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .search-input-wrapper {
+            position: relative;
+        }
+
+        .search-input,
+        .filter-select,
+        .autocomplete-input {
+            width: 100%;
+            padding: 0.875rem 1rem 0.875rem 2.75rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            outline: none;
+            background: #fafbfc;
+        }
+
+        .filter-select,
+        .autocomplete-input {
+            padding-left: 1rem;
+        }
+
+        .search-input:focus,
+        .filter-select:focus,
+        .autocomplete-input:focus {
+            border-color: #0000FF;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #a0aec0;
+            pointer-events: none;
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Autocomplete Styles */
+        .autocomplete-wrapper {
+            position: relative;
+        }
+
+        .autocomplete-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 2px solid #0000FF;
+            border-top: none;
+            border-radius: 0 0 10px 10px;
+            max-height: 250px;
+            overflow-y: auto;
+            z-index: 100;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            display: none;
+        }
+
+        .autocomplete-dropdown.show {
+            display: block;
+        }
+
+        .autocomplete-item {
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .autocomplete-item:last-child {
+            border-bottom: none;
+        }
+
+        .autocomplete-item:hover {
+            background: #f7f9fc;
+        }
+
+        .autocomplete-item.selected {
+            background: #E6E6FF;
+            color: #0000FF;
+            font-weight: 600;
+        }
+
+        /* Organization Cards */
+        .organizations-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .organization-card {
+            background: white;
+            border-radius: 16px;
+            padding: 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+            transition: all 0.4s ease;
+            overflow: hidden;
+        }
+
+        .organization-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 40px rgba(0, 0, 255, 0.2);
+        }
+
+        .org-card-header {
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            padding: 2.5rem 2.5rem 1.5rem;
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .org-logo-wrapper {
+            flex-shrink: 0;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .org-logo-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .org-header-info {
+            flex: 1;
+        }
+
+        .org-name {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 0.75rem;
+            line-height: 1.2;
+        }
+
+        .org-tagline {
+            font-size: 1rem;
+            color: #718096;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .org-meta-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.625rem;
+        }
+
+        .meta-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.375rem;
+            background: white;
+            color: #4a5568;
+            padding: 0.375rem 0.875rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid #e2e8f0;
+        }
+
+        .meta-tag svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .org-card-body {
+            padding: 2rem 2.5rem;
+        }
+
+        .org-description {
+            font-size: 1rem;
+            color: #4a5568;
+            line-height: 1.7;
+            margin-bottom: 1.75rem;
+        }
+
+        .org-details-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .detail-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .detail-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #718096;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .detail-value {
+            font-size: 0.95rem;
+            color: #2d3748;
+            font-weight: 500;
+        }
+
+        .detail-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .detail-badge {
+            background: #E6E6FF;
+            color: #0000FF;
+            padding: 0.375rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .org-features {
+            background: #f7fafc;
+            border-radius: 10px;
+            padding: 1.25rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .features-title {
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.875rem;
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.625rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: #4a5568;
+        }
+
+        .feature-icon {
+            width: 16px;
+            height: 16px;
+            color: #48bb78;
+        }
+
+        /* Social Media Section */
+        .org-social-media {
+            background: #f7fafc;
+            border-radius: 10px;
+            padding: 1.5rem 1.25rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .social-title {
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .social-link.facebook {
+            background: #1877f2;
+            color: white;
+        }
+
+        .social-link.facebook:hover {
+            background: #145dbf;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(24, 119, 242, 0.4);
+        }
+
+        .social-link.linkedin {
+            background: #0a66c2;
+            color: white;
+        }
+
+        .social-link.linkedin:hover {
+            background: #084d92;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(10, 102, 194, 0.4);
+        }
+
+        .social-link.instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white;
+        }
+
+        .social-link.instagram:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(225, 48, 108, 0.4);
+        }
+
+        .social-link.twitter {
+            background: #000000;
+            color: white;
+        }
+
+        .social-link.twitter:hover {
+            background: #1a1a1a;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .social-link.youtube {
+            background: #ff0000;
+            color: white;
+        }
+
+        .social-link.youtube:hover {
+            background: #cc0000;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+        }
+
+        .org-card-footer {
+            padding: 1.5rem 2.5rem;
+            background: #fafbfc;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .view-credentials-btn {
+            width: 100%;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #3f51b5 0%, #303F9F 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            box-shadow: 0 4px 15px rgba(63, 81, 181, 0.3);
+        }
+
+        .view-credentials-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(63, 81, 181, 0.4);
+            background: linear-gradient(135deg, #303F9F 0%, #283593 100%);
+        }
+
+        .btn-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .empty-state-icon {
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.3;
+        }
+
+        .empty-state-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+
+        .empty-state-text {
+            font-size: 1.125rem;
+            color: #718096;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.5rem;
+            background: white;
+            color: #0000FF;
+            border: 2px solid #0000FF;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .back-button:hover {
+            background: #0000FF;
+            color: white;
+            transform: translateX(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 255, 0.3);
+        }
+
+        .back-icon {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .back-button:hover .back-icon {
+            transform: translateX(-3px);
+        }
+
+        /* Page 2 - Credentials Page */
+        .credentials-hero-section {
+            background: linear-gradient(135deg, #E6E6FF 0%, #CCCCFF 100%);
+            border-radius: 16px;
+            padding: 3rem 3rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 255, 0.15);
+            color: #0C4A6E;
+        }
+
+        .credentials-hero-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .credentials-hero-logo {
+            flex-shrink: 0;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            border: 3px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .credentials-hero-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .credentials-hero-text {
+            flex: 1;
+        }
+
+        .credentials-hero-title {
+            font-size: 2.25rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .credentials-hero-subtitle {
+            font-size: 1.125rem;
+            opacity: 0.95;
+            margin-bottom: 1.5rem;
+        }
+
+        .credentials-hero-about {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            padding: 1.25rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(0, 0, 255, 0.2);
+        }
+
+        .about-label {
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.625rem;
+            color: #0000FF;
+        }
+
+        .about-description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #0C4A6E;
+        }
+
+        .credentials-hero-social {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            padding: 1.25rem;
+            border: 1px solid rgba(0, 0, 255, 0.2);
+        }
+
+        .credentials-social-title {
+            font-size: 0.875rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #0000FF;
+            text-align: center;
+        }
+
+        .credentials-social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .credentials-social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: 2px solid rgba(0, 0, 255, 0.2);
+        }
+
+        .credentials-social-link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .credentials-social-link.facebook {
+            background: rgba(24, 119, 242, 0.2);
+            color: white;
+        }
+
+        .credentials-social-link.facebook:hover {
+            background: #1877f2;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 16px rgba(24, 119, 242, 0.5);
+            border-color: white;
+        }
+
+        .credentials-social-link.linkedin {
+            background: rgba(10, 102, 194, 0.2);
+            color: white;
+        }
+
+        .credentials-social-link.linkedin:hover {
+            background: #0a66c2;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 16px rgba(10, 102, 194, 0.5);
+            border-color: white;
+        }
+
+        .credentials-social-link.instagram {
+            background: rgba(225, 48, 108, 0.2);
+            color: white;
+        }
+
+        .credentials-social-link.instagram:hover {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 16px rgba(225, 48, 108, 0.5);
+            border-color: white;
+        }
+
+        .credentials-social-link.twitter {
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+
+        .credentials-social-link.twitter:hover {
+            background: #000000;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+            border-color: white;
+        }
+
+        .credentials-social-link.youtube {
+            background: rgba(255, 0, 0, 0.2);
+            color: white;
+        }
+
+        .credentials-social-link.youtube:hover {
+            background: #ff0000;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 16px rgba(255, 0, 0, 0.5);
+            border-color: white;
+        }
+
+        .credentials-stats {
+            display: flex;
+            gap: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(0, 0, 255, 0.2);
+        }
+
+        .cred-stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cred-stat-number {
+            font-size: 2.25rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            color: #0000FF;
+        }
+
+        .cred-stat-label {
+            font-size: 0.9rem;
+            color: #0C4A6E;
+            font-weight: 500;
+        }
+
+        /* Credentials Search Enhanced */
+        .credentials-search-section {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+        }
+
+        .credentials-search-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .credentials-search-title-section {
+            flex: 1;
+        }
+
+        .credentials-search-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .credentials-search-description {
+            font-size: 0.95rem;
+            color: #718096;
+        }
+
+        .credentials-count-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #0000FF 0%, #0000CC 100%);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 255, 0.3);
+            min-width: 100px;
+        }
+
+        .count-number {
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 0.25rem;
+        }
+
+        .count-label {
+            font-size: 0.8rem;
+            opacity: 0.95;
+            font-weight: 600;
+        }
+
+        /* Page 2 - Credentials Page OLD STYLES TO REMOVE */
+        .credentials-page-header {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem 3rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+        }
+
+        .credentials-header-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .credentials-logo {
+            flex-shrink: 0;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+        }
+
+        .credentials-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .credentials-header-text {
+            flex: 1;
+        }
+
+        .credentials-page-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+        }
+
+        .credentials-page-subtitle {
+            font-size: 1.125rem;
+            color: #718096;
+        }
+
+        /* Credentials Search OLD */
+        /* Removed duplicate, keeping enhanced version */
+
+        /* Credential Cards */
+        .credentials-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .credential-card {
+            background: white;
+            border-radius: 16px;
+            padding: 0;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            border: 2px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .credential-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 6px;
+            background: linear-gradient(180deg, #0000FF 0%, #0000CC 100%);
+        }
+
+        .credential-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 255, 0.2);
+            border-color: #0000FF;
+        }
+
+        .credential-card-inner {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 2rem 2rem 2rem 2.5rem;
+            width: 100%;
+        }
+
+        .credential-image-wrapper {
+            flex-shrink: 0;
+            width: 160px;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px solid #e2e8f0;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .credential-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .credential-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .credential-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+
+        .credential-main {
+            flex: 1;
+        }
+
+        .credential-badges {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.875rem;
+            flex-wrap: wrap;
+        }
+
+        .verification-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #f0fdf4;
+            color: #166534;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .category-badge {
+            display: inline-flex;
+            align-items: center;
+            background: #E6E6FF;
+            color: #0000FF;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .verification-icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        .credential-code {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .credential-title {
+            font-size: 1.125rem;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+
+        .credential-description {
+            font-size: 0.9rem;
+            color: #718096;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
+
+        .credential-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .credential-meta-info {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .credential-meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .meta-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #a0aec0;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .meta-value {
+            font-size: 0.875rem;
+            color: #2d3748;
+            font-weight: 600;
+            font-family: 'Courier New', monospace;
+        }
+
+        .credential-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: #0000FF;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            background: #E6E6FF;
+            border-radius: 8px;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: #0000FF;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .credential-actions {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .view-credential-btn {
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #3f51b5 0%, #303F9F 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 15px rgba(63, 81, 181, 0.3);
+        }
+
+        .view-credential-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(63, 81, 181, 0.4);
+            background: linear-gradient(135deg, #303F9F 0%, #283593 100%);
+        }
+
+        .btn-arrow {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .search-filters {
+                grid-template-columns: 1fr;
+            }
+
+            .org-details-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-list {
+                grid-template-columns: 1fr;
+            }
+
+            .credentials-hero-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .credentials-stats {
+                justify-content: center;
+            }
+
+            .credential-card-inner {
+                flex-direction: column;
+            }
+
+            .credential-footer {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: flex-start;
+            }
+
+            .credential-meta-info {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem 1rem;
+            }
+
+            .back-button {
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 1.25rem;
+            }
+
+            .hero-section {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .hero-content-wrapper {
+                flex-direction: column;
+            }
+
+            .hero-image-wrapper {
+                width: 100%;
+                height: 250px;
+                order: -1;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .search-section {
+                padding: 1.5rem;
+            }
+
+            .org-card-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 2rem 1.5rem 1.5rem;
+            }
+
+            .org-logo-wrapper {
+                width: 100px;
+                height: 100px;
+            }
+
+            .org-card-body {
+                padding: 1.5rem;
+            }
+
+            .credentials-hero-section {
+                padding: 2rem 1.5rem 1.5rem;
+            }
+
+            .credentials-hero-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .credentials-hero-logo {
+                width: 130px;
+                height: 130px;
+            }
+
+            .credentials-hero-title {
+                font-size: 1.75rem;
+            }
+
+            .credentials-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .credentials-search-header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .credentials-count-badge {
+                align-self: flex-start;
+            }
+
+            .credential-card-inner {
+                padding: 1.5rem;
+            }
+
+            .credential-image-wrapper {
+                width: 100%;
+                height: 160px;
+            }
+
+            .credential-actions {
+                width: 100%;
+            }
+
+            .view-credential-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/BSI-logo-charcoal.png" alt="BSI Logo">
+                <div class="navbar-brand-text">
+                    <div class="navbar-org-name">British Standards Institution</div>
+                    <div class="navbar-title">Certification Directory</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Page 1: Organizations Directory -->
+        <div class="page active" id="institutionPage">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="hero-content-wrapper">
+                    <div class="hero-text-content">
+                        <h1 class="hero-title">Global Certification Directory</h1>
+                        <p class="hero-subtitle">
+                            Discover and verify professional certifications from leading organizations worldwide. 
+                            Connect with accredited institutions and explore industry-recognized credentials.
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">5</div>
+                                <div class="stat-label">Certified Organizations</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Industry Sectors</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">Global</div>
+                                <div class="stat-label">Reach & Recognition</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop" alt="Students studying certifications" class="hero-image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Search Section -->
+            <div class="search-section">
+                <h2 class="search-title">
+                    <svg class="search-icon-title" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    Find Organizations
+                </h2>
+                <div class="search-filters">
+                    <!-- Organization Autocomplete -->
+                    <div class="filter-group">
+                        <label class="filter-label">Organization</label>
+                        <div class="autocomplete-wrapper">
+                            <input 
+                                type="text" 
+                                class="autocomplete-input" 
+                                id="orgAutocomplete"
+                                placeholder="Select organization..."
+                                autocomplete="off"
+                            >
+                            <div class="autocomplete-dropdown" id="orgDropdown"></div>
+                        </div>
+                    </div>
+
+                    <!-- Industry Filter -->
+                    <div class="filter-group">
+                        <label class="filter-label">Industry</label>
+                        <select class="filter-select" id="industryFilter">
+                            <option value="">All Industries</option>
+                            <option value="Information Technology & Cybersecurity">Information Technology & Cybersecurity</option>
+                            <option value="Healthcare & Medical Devices">Healthcare & Medical Devices</option>
+                            <option value="Manufacturing & Engineering">Manufacturing & Engineering</option>
+                            <option value="Construction & Infrastructure">Construction & Infrastructure</option>
+                            <option value="Automotive Industry">Automotive Industry</option>
+                            <option value="Energy, Utilities & Power">Energy, Utilities & Power</option>
+                            <option value="Food & Beverage">Food & Beverage</option>
+                            <option value="Aerospace & Aviation">Aerospace & Aviation</option>
+                            <option value="Financial Services & Banking">Financial Services & Banking</option>
+                            <option value="Telecommunications & Media">Telecommunications & Media</option>
+                        </select>
+                    </div>
+
+                    <!-- Country Filter -->
+                    <div class="filter-group">
+                        <label class="filter-label">Location</label>
+                        <select class="filter-select" id="countryFilter">
+                            <option value="">All Countries</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="United States">United States</option>
+                            <option value="Germany">Germany</option>
+                            <option value="France">France</option>
+                            <option value="Japan">Japan</option>
+                            <option value="China">China</option>
+                            <option value="India">India</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Finland">Finland</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Organizations Grid -->
+            <div class="organizations-grid" id="organizationsGrid">
+                <!-- Organization 1 -->
+                <div class="organization-card" data-name="CertifyPro International" data-industry="Information Technology & Cybersecurity,Financial Services & Banking" data-country="United Kingdom">
+                    <div class="org-card-header">
+                        <div class="org-logo-wrapper">
+                            <img src="https://t4.ftcdn.net/jpg/01/10/98/97/360_F_110989747_TnoKJdE0PWoyyKUPRthC5mCjTpXxpvp8.jpg" alt="CertifyPro Logo">
+                        </div>
+                        <div class="org-header-info">
+                            <h2 class="org-name">CertifyPro International</h2>
+                            <p class="org-tagline">Empowering Excellence Through Global Certification Standards</p>
+                            <div class="org-meta-tags">
+                                <span class="meta-tag">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                    London, United Kingdom
+                                </span>
+                                <span class="meta-tag">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                                    </svg>
+                                    Est. 2008
+                                </span>
+                                <span class="meta-tag">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                    </svg>
+                                    5000+ Certified
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-card-body">
+                        <p class="org-description">
+                            CertifyPro International is a globally recognized certification authority with a strong presence in Europe and Asia. We specialize in professional development programs across various sectors including finance, healthcare, and technology. Our certifications are designed to meet international standards and provide professionals with the credentials they need to excel in their careers.
+                        </p>
+                        <div class="org-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Primary Industries</div>
+                                <div class="detail-badges">
+                                    <span class="detail-badge">IT & Cybersecurity</span>
+                                    <span class="detail-badge">Financial Services</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Accreditations</div>
+                                <div class="detail-value">ISO 17024, UKAS, IAS</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Global Offices</div>
+                                <div class="detail-value">London, Singapore, New York, Dubai</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Recognition</div>
+                                <div class="detail-value">IAF, ILAC, EU Recognized</div>
+                            </div>
+                        </div>
+                        <div class="org-social-media">
+                            <div class="social-title">Connect With Us</div>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook" target="_blank" aria-label="Facebook">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link linkedin" target="_blank" aria-label="LinkedIn">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link instagram" target="_blank" aria-label="Instagram">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link twitter" target="_blank" aria-label="X (Twitter)">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link youtube" target="_blank" aria-label="YouTube">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-card-footer">
+                        <button class="view-credentials-btn" data-org="CertifyPro International">
+                            <span>View All Credentials</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Organization 2 -->
+                <div class="organization-card" data-name="GlobalCert Academy" data-industry="Healthcare & Medical Devices,Aerospace & Aviation" data-country="Australia">
+                    <div class="org-card-header">
+                        <div class="org-logo-wrapper">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIikZY88hTCIUVc5yDcXAy7XV-5OcqvCIciQ&s" alt="GlobalCert Logo">
+                        </div>
+                        <div class="org-header-info">
+                            <h2 class="org-name">GlobalCert Academy</h2>
+                            <p class="org-tagline">Pioneering Future-Ready Professional Certifications</p>
+                            <div class="org-meta-tags">
+                                <span class="meta-tag">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                    Sydney, Australia
+                                </span>
+                                <span class="meta-tag">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                                    </svg>
+                                    Est. 2012
+                                </span>
+                                <span class="meta-tag">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                    </svg>
+                                    3200+ Certified
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-card-body">
+                        <p class="org-description">
+                            GlobalCert Academy provides world-class certification programs with a focus on emerging technologies and sustainable practices. Our academy partners with leading universities and industry experts to deliver cutting-edge training and certification services. We are committed to fostering professional growth and helping individuals achieve their career aspirations through recognized qualifications.
+                        </p>
+                        <div class="org-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Primary Industries</div>
+                                <div class="detail-badges">
+                                    <span class="detail-badge">Healthcare & Medical</span>
+                                    <span class="detail-badge">Aerospace</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Accreditations</div>
+                                <div class="detail-value">ISO 17024, JAS-ANZ, NATA</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Global Offices</div>
+                                <div class="detail-value">Sydney, Melbourne, Auckland, Tokyo</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Recognition</div>
+                                <div class="detail-value">APAC Forum, IAF MLA</div>
+                            </div>
+                        </div>
+                        <div class="org-social-media">
+                            <div class="social-title">Connect With Us</div>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook" target="_blank" aria-label="Facebook">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link linkedin" target="_blank" aria-label="LinkedIn">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link instagram" target="_blank" aria-label="Instagram">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link twitter" target="_blank" aria-label="X (Twitter)">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link youtube" target="_blank" aria-label="YouTube">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-card-footer">
+                        <button class="view-credentials-btn" data-org="GlobalCert Academy">
+                            <span>View All Credentials</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Organization 3 -->
+                <div class="organization-card" data-name="ProCredential Alliance" data-industry="Manufacturing & Engineering,Construction & Infrastructure" data-country="Ireland">
+                    <div class="org-card-header">
+                        <div class="org-logo-wrapper">
+                            <img src="https://media.istockphoto.com/id/1350696625/vector/education-emblem-with-book-and-graduation-cap.jpg?s=612x612&w=0&k=20&c=5jy03wNwUbwz4UmbQkHwpubd5TtNmTVAXeCKVM806Sw=" alt="ProCredential Logo">
+                        </div>
+                        <div class="org-header-info">
+                            <h2 class="org-name">ProCredential Alliance</h2>
+                            <p class="org-tagline">Standardized Excellence in Professional Certification</p>
+                            <div class="org-meta-tags">
+                                <span class="meta-tag">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                    Dublin, Ireland
+                                </span>
+                                <span class="meta-tag">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                                    </svg>
+                                    Est. 2010
+                                </span>
+                                <span class="meta-tag">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                    </svg>
+                                    4500+ Certified
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-card-body">
+                        <p class="org-description">
+                            ProCredential Alliance is an international consortium of industry experts dedicated to establishing standardized professional credentials. We work closely with businesses and educational institutions to develop competency-based certification programs that meet real-world demands. Our credentials are designed to validate practical skills and knowledge, ensuring that certified professionals are job-ready and equipped with current industry practices.
+                        </p>
+                        <div class="org-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Primary Industries</div>
+                                <div class="detail-badges">
+                                    <span class="detail-badge">Manufacturing</span>
+                                    <span class="detail-badge">Construction</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Accreditations</div>
+                                <div class="detail-value">ISO 17024, INAB, EA</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Global Offices</div>
+                                <div class="detail-value">Dublin, London, Brussels, Boston</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Recognition</div>
+                                <div class="detail-value">EU Directives, IAF, ILAC</div>
+                            </div>
+                        </div>
+                        <div class="org-social-media">
+                            <div class="social-title">Connect With Us</div>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook" target="_blank" aria-label="Facebook">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link linkedin" target="_blank" aria-label="LinkedIn">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link instagram" target="_blank" aria-label="Instagram">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link twitter" target="_blank" aria-label="X (Twitter)">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link youtube" target="_blank" aria-label="YouTube">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-card-footer">
+                        <button class="view-credentials-btn" data-org="ProCredential Alliance">
+                            <span>View All Credentials</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Organization 4 -->
+                <div class="organization-card" data-name="SkillVerify Institute" data-industry="Automotive Industry,Energy, Utilities & Power" data-country="Canada">
+                    <div class="org-card-header">
+                        <div class="org-logo-wrapper">
+                            <img src="https://t4.ftcdn.net/jpg/07/00/47/29/360_F_700472906_hfU2RQww0Ij8rBdaHHBaxaR8plVDhKbM.jpg" alt="SkillVerify Logo">
+                        </div>
+                        <div class="org-header-info">
+                            <h2 class="org-name">SkillVerify Institute</h2>
+                            <p class="org-tagline">Bridging Talent and Opportunity Through Verified Skills</p>
+                            <div class="org-meta-tags">
+                                <span class="meta-tag">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                    Toronto, Canada
+                                </span>
+                                <span class="meta-tag">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                                    </svg>
+                                    Est. 2015
+                                </span>
+                                <span class="meta-tag">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                    </svg>
+                                    2800+ Certified
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-card-body">
+                        <p class="org-description">
+                            SkillVerify Institute is a trusted credential verification organization that validates professional competencies across various industries. We partner with educational institutions and corporations worldwide to provide reliable skill assessment and certification programs. Our mission is to bridge the gap between talent and opportunity by offering transparent, blockchain-verified credentials that employers can trust.
+                        </p>
+                        <div class="org-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Primary Industries</div>
+                                <div class="detail-badges">
+                                    <span class="detail-badge">Automotive</span>
+                                    <span class="detail-badge">Energy & Utilities</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Accreditations</div>
+                                <div class="detail-value">ISO 17024, SCC, CALA</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Global Offices</div>
+                                <div class="detail-value">Toronto, Vancouver, Montreal, Seattle</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Recognition</div>
+                                <div class="detail-value">IAAC, PAC, IAF MLA</div>
+                            </div>
+                        </div>
+                        <div class="org-social-media">
+                            <div class="social-title">Connect With Us</div>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook" target="_blank" aria-label="Facebook">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link linkedin" target="_blank" aria-label="LinkedIn">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link instagram" target="_blank" aria-label="Instagram">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link twitter" target="_blank" aria-label="X (Twitter)">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link youtube" target="_blank" aria-label="YouTube">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-card-footer">
+                        <button class="view-credentials-btn" data-org="SkillVerify Institute">
+                            <span>View All Credentials</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Organization 5 -->
+                <div class="organization-card" data-name="TechCert Global" data-industry="Information Technology & Cybersecurity,Telecommunications & Media" data-country="Singapore">
+                    <div class="org-card-header">
+                        <div class="org-logo-wrapper">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlzK3NJkY6EhvO4awP8pbVcSWetymTRGtW0w&s" alt="TechCert Logo">
+                        </div>
+                        <div class="org-header-info">
+                            <h2 class="org-name">TechCert Global</h2>
+                            <p class="org-tagline">Leading Digital Transformation Through Certification Excellence</p>
+                            <div class="org-meta-tags">
+                                <span class="meta-tag">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                    Singapore
+                                </span>
+                                <span class="meta-tag">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                                    </svg>
+                                    Est. 2009
+                                </span>
+                                <span class="meta-tag">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                    </svg>
+                                    6200+ Certified
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-card-body">
+                        <p class="org-description">
+                            TechCert Global is a leading international certification body specializing in technology and digital transformation standards. With over 15 years of experience, we provide comprehensive certification services across cybersecurity, cloud computing, and enterprise systems. Our certifications are recognized globally and help professionals advance their careers in the rapidly evolving tech landscape.
+                        </p>
+                        <div class="org-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-label">Primary Industries</div>
+                                <div class="detail-badges">
+                                    <span class="detail-badge">IT & Cybersecurity</span>
+                                    <span class="detail-badge">Telecommunications</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Accreditations</div>
+                                <div class="detail-value">ISO 17024, SAC, JAB</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Global Offices</div>
+                                <div class="detail-value">Singapore, Hong Kong, Mumbai, San Francisco</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-label">Recognition</div>
+                                <div class="detail-value">PAC, APAC, IAF MLA</div>
+                            </div>
+                        </div>
+                        <div class="org-social-media">
+                            <div class="social-title">Connect With Us</div>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook" target="_blank" aria-label="Facebook">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link linkedin" target="_blank" aria-label="LinkedIn">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link instagram" target="_blank" aria-label="Instagram">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link twitter" target="_blank" aria-label="X (Twitter)">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link youtube" target="_blank" aria-label="YouTube">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-card-footer">
+                        <button class="view-credentials-btn" data-org="TechCert Global">
+                            <span>View All Credentials</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <div class="empty-state-icon">🔍</div>
+                <h2 class="empty-state-title">No organizations found</h2>
+                <p class="empty-state-text">Try adjusting your search filters</p>
+            </div>
+        </div>
+        <!-- End of Institution Page -->
+
+        <!-- Page 2: Credentials Page -->
+        <div class="page" id="credentialsPage">
+            <!-- Back Button -->
+            <button class="back-button" id="backButton">
+                <svg class="back-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                </svg>
+                Back to Organizations
+            </button>
+
+            <!-- Credentials Hero Header -->
+            <div class="credentials-hero-section">
+                <div class="credentials-hero-content">
+                    <div class="credentials-hero-logo">
+                        <img id="page2OrgLogo" src="" alt="Organization Logo">
+                    </div>
+                    <div class="credentials-hero-text">
+                        <h1 class="credentials-hero-title" id="page2OrgName">Organization Name</h1>
+                        <p class="credentials-hero-subtitle">Available Certifications & Standards Directory</p>
+                        <div class="credentials-hero-about" id="page2OrgAbout">
+                            <h3 class="about-label">About the Institution</h3>
+                            <p class="about-description">
+                                Leading international certification body specializing in professional development and industry standards. 
+                                We provide globally recognized credentials that validate expertise and advance careers across multiple sectors.
+                            </p>
+                        </div>
+                        <div class="credentials-hero-social">
+                            <div class="credentials-social-title">Connect With Us</div>
+                            <div class="credentials-social-links">
+                                <a href="#" class="credentials-social-link facebook" target="_blank" aria-label="Facebook">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="credentials-social-link linkedin" target="_blank" aria-label="LinkedIn">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="credentials-social-link instagram" target="_blank" aria-label="Instagram">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="credentials-social-link twitter" target="_blank" aria-label="X (Twitter)">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="credentials-social-link youtube" target="_blank" aria-label="YouTube">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="credentials-stats">
+                    <div class="cred-stat-item">
+                        <div class="cred-stat-number" id="totalCredentials">5</div>
+                        <div class="cred-stat-label">Available Certificates</div>
+                    </div>
+                    <div class="cred-stat-item">
+                        <div class="cred-stat-number">100%</div>
+                        <div class="cred-stat-label">Verified</div>
+                    </div>
+                    <div class="cred-stat-item">
+                        <div class="cred-stat-number">ISO</div>
+                        <div class="cred-stat-label">Accredited</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Credentials Search with Info -->
+            <div class="credentials-search-section">
+                <div class="credentials-search-header">
+                    <div class="credentials-search-title-section">
+                        <h2 class="credentials-search-title">
+                            <svg class="search-icon-title" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                            Browse Certifications
+                        </h2>
+                        <p class="credentials-search-description">Search and explore all available certification standards</p>
+                    </div>
+                    <div class="credentials-count-badge" id="credentialsCountBadge">
+                        <span class="count-number" id="visibleCredentialsCount">5</span>
+                        <span class="count-label">Available</span>
+                    </div>
+                </div>
+                <div class="search-input-wrapper">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input 
+                        type="text" 
+                        class="search-input" 
+                        id="credentialsSearch"
+                        placeholder="Search by standard code or certification name..."
+                    >
+                </div>
+            </div>
+
+            <!-- Credentials Grid -->
+            <div class="credentials-grid" id="credentialsGrid">
+                <!-- Credentials will be dynamically inserted -->
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyStateCredentials" style="display: none;">
+                <div class="empty-state-icon">🔍</div>
+                <h2 class="empty-state-title">No credentials found</h2>
+                <p class="empty-state-text">Try adjusting your search or browse all available certifications</p>
+            </div>
+        </div>
+        <!-- End of Credentials Page -->
+    </div>
+
+    <script>
+        // Organization data
+        const orgNames = [
+            'CertifyPro International',
+            'GlobalCert Academy',
+            'ProCredential Alliance',
+            'SkillVerify Institute',
+            'TechCert Global'
+        ];
+
+        const ORGS = {
+            'CertifyPro International': {
+                logo: 'https://t4.ftcdn.net/jpg/01/10/98/97/360_F_110989747_TnoKJdE0PWoyyKUPRthC5mCjTpXxpvp8.jpg',
+                about: 'CertifyPro International is a globally recognized certification authority with a strong presence in Europe and Asia. We specialize in professional development programs across finance, healthcare, and technology sectors, providing certifications designed to meet international standards and help professionals excel in their careers.'
+            },
+            'GlobalCert Academy': {
+                logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIikZY88hTCIUVc5yDcXAy7XV-5OcqvCIciQ&s',
+                about: 'GlobalCert Academy provides world-class certification programs with a focus on emerging technologies and sustainable practices. Our academy partners with leading universities and industry experts to deliver cutting-edge training and certification services that are CPD accredited and globally recognized.'
+            },
+            'ProCredential Alliance': {
+                logo: 'https://media.istockphoto.com/id/1350696625/vector/education-emblem-with-book-and-graduation-cap.jpg?s=612x612&w=0&k=20&c=5jy03wNwUbwz4UmbQkHwpubd5TtNmTVAXeCKVM806Sw=',
+                about: 'ProCredential Alliance is an international consortium of industry experts dedicated to establishing standardized professional credentials. We work closely with businesses and educational institutions to develop competency-based certification programs that meet real-world demands and validate practical skills.'
+            },
+            'SkillVerify Institute': {
+                logo: 'https://t4.ftcdn.net/jpg/07/00/47/29/360_F_700472906_hfU2RQww0Ij8rBdaHHBaxaR8plVDhKbM.jpg',
+                about: 'SkillVerify Institute is a trusted credential verification organization that validates professional competencies across various industries. We partner with educational institutions and corporations worldwide to provide reliable skill assessment and blockchain-verified certification programs that employers can trust.'
+            },
+            'TechCert Global': {
+                logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlzK3NJkY6EhvO4awP8pbVcSWetymTRGtW0w&s',
+                about: 'TechCert Global is a leading international certification body specializing in technology and digital transformation standards. With over 15 years of experience, we provide comprehensive certification services across cybersecurity, cloud computing, and enterprise systems that are recognized globally.'
+            }
+        };
+
+        // DOM Elements
+        const institutionPage = document.getElementById('institutionPage');
+        const credentialsPage = document.getElementById('credentialsPage');
+        const orgAutocomplete = document.getElementById('orgAutocomplete');
+        const orgDropdown = document.getElementById('orgDropdown');
+        const industryFilter = document.getElementById('industryFilter');
+        const countryFilter = document.getElementById('countryFilter');
+        const organizationsGrid = document.getElementById('organizationsGrid');
+        const emptyState = document.getElementById('emptyState');
+
+        // Autocomplete functionality
+        let selectedOrgIndex = -1;
+
+        orgAutocomplete.addEventListener('input', function() {
+            const value = this.value.toLowerCase().trim();
+            
+            if (value === '') {
+                orgDropdown.classList.remove('show');
+                return;
+            }
+
+            const matches = orgNames.filter(name => 
+                name.toLowerCase().includes(value)
+            );
+
+            if (matches.length > 0) {
+                orgDropdown.innerHTML = matches.map((name, index) => 
+                    `<div class="autocomplete-item" data-index="${index}" data-name="${name}">${name}</div>`
+                ).join('');
+                orgDropdown.classList.add('show');
+                selectedOrgIndex = -1;
+            } else {
+                orgDropdown.classList.remove('show');
+            }
+        });
+
+        orgAutocomplete.addEventListener('keydown', function(e) {
+            const items = orgDropdown.querySelectorAll('.autocomplete-item');
+            
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                selectedOrgIndex = Math.min(selectedOrgIndex + 1, items.length - 1);
+                updateAutocompleteSelection(items);
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                selectedOrgIndex = Math.max(selectedOrgIndex - 1, -1);
+                updateAutocompleteSelection(items);
+            } else if (e.key === 'Enter') {
+                e.preventDefault();
+                if (selectedOrgIndex >= 0 && items[selectedOrgIndex]) {
+                    selectAutocompleteItem(items[selectedOrgIndex]);
+                }
+            } else if (e.key === 'Escape') {
+                orgDropdown.classList.remove('show');
+            }
+        });
+
+        function updateAutocompleteSelection(items) {
+            items.forEach((item, index) => {
+                if (index === selectedOrgIndex) {
+                    item.classList.add('selected');
+                } else {
+                    item.classList.remove('selected');
+                }
+            });
+        }
+
+        function selectAutocompleteItem(item) {
+            orgAutocomplete.value = item.dataset.name;
+            orgDropdown.classList.remove('show');
+            filterOrganizations();
+        }
+
+        orgDropdown.addEventListener('click', function(e) {
+            if (e.target.classList.contains('autocomplete-item')) {
+                selectAutocompleteItem(e.target);
+            }
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!orgAutocomplete.contains(e.target) && !orgDropdown.contains(e.target)) {
+                orgDropdown.classList.remove('show');
+            }
+        });
+
+        // Filter organizations
+        function filterOrganizations() {
+            const selectedOrg = orgAutocomplete.value.trim();
+            const selectedIndustry = industryFilter.value;
+            const selectedCountry = countryFilter.value;
+
+            const cards = organizationsGrid.querySelectorAll('.organization-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const industries = card.dataset.industry.split(',');
+                const country = card.dataset.country;
+
+                const matchesOrg = selectedOrg === '' || card.dataset.name === selectedOrg;
+                const matchesIndustry = selectedIndustry === '' || industries.includes(selectedIndustry);
+                const matchesCountry = selectedCountry === '' || country === selectedCountry;
+
+                if (matchesOrg && matchesIndustry && matchesCountry) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (visibleCount === 0) {
+                organizationsGrid.style.display = 'none';
+                emptyState.style.display = 'block';
+            } else {
+                organizationsGrid.style.display = 'grid';
+                emptyState.style.display = 'none';
+            }
+        }
+
+        // Attach filter events
+        industryFilter.addEventListener('change', filterOrganizations);
+        countryFilter.addEventListener('change', filterOrganizations);
+
+        // Navigate to credentials page
+        function navigateToCredentials(orgName) {
+            const page2Logo = document.getElementById('page2OrgLogo');
+            const page2Name = document.getElementById('page2OrgName');
+            const page2About = document.getElementById('page2OrgAbout');
+
+            page2Name.textContent = orgName;
+            if (ORGS[orgName]) {
+                page2Logo.src = ORGS[orgName].logo;
+                page2Logo.alt = orgName + ' Logo';
+                
+                // Update about text
+                if (page2About && ORGS[orgName].about) {
+                    const aboutDesc = page2About.querySelector('.about-description');
+                    if (aboutDesc) {
+                        aboutDesc.textContent = ORGS[orgName].about;
+                    }
+                }
+            }
+
+            const credentialsGrid = document.getElementById('credentialsGrid');
+            credentialsGrid.innerHTML = getCredentialCardsHTML();
+
+            institutionPage.classList.remove('active');
+            credentialsPage.classList.add('active');
+            window.scrollTo(0, 0);
+
+            setupCredentialsSearch();
+        }
+
+        // Attach click handlers
+        document.querySelectorAll('.view-credentials-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const orgName = this.dataset.org;
+                navigateToCredentials(orgName);
+            });
+        });
+
+        // Back button functionality
+        const backButton = document.getElementById('backButton');
+        if (backButton) {
+            backButton.addEventListener('click', function() {
+                credentialsPage.classList.remove('active');
+                institutionPage.classList.add('active');
+                window.scrollTo(0, 0);
+            });
+        }
+
+        // Credentials HTML
+        function getCredentialCardsHTML() {
+            return `
+                <div class="credential-card">
+                    <div class="credential-card-inner">
+                        <div class="credential-image-wrapper">
+                            <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSISO9001" class="credential-image">
+                        </div>
+                        <div class="credential-info">
+                            <div class="credential-header">
+                                <div class="credential-main">
+                                    <div class="credential-badges">
+                                        <div class="verification-badge">
+                                            <svg class="verification-icon" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                            </svg>
+                                            Verified
+                                        </div>
+                                        <div class="category-badge">ISO Standard</div>
+                                    </div>
+                                    <div class="credential-code">BSISO 9001</div>
+                                    <div class="credential-title">Information Security Management System</div>
+                                    <div class="credential-description">
+                                        Comprehensive framework for managing information security, ensuring confidentiality, integrity, and availability of data assets.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="credential-footer">
+                                <div class="credential-meta-info">
+                                    <div class="credential-meta-item">
+                                        <div class="meta-label">Credential ID</div>
+                                        <div class="meta-value">ISM-2024-8457</div>
+                                    </div>
+                                    <div class="credential-meta-item">
+                                        <div class="meta-label">Status</div>
+                                        <div class="credential-status">
+                                            <span class="status-dot"></span>
+                                            Available
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="credential-actions">
+                                    <a class="view-credential-btn" href="https://verify.apac.certifyme.org/verify/4e8e27b328322" target="_blank">
+                                        View Details
+                                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="credential-card">
+                    <div class="credential-card-inner">
+                        <div class="credential-image-wrapper">
+                            <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSISO9002" class="credential-image">
+                        </div>
+                        <div class="credential-info">
+                            <div class="credential-header">
+                                <div class="credential-main">
+                                    <div class="credential-badges">
+                                        <div class="verification-badge">
+                                            <svg class="verification-icon" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                            </svg>
+                                            Verified
+                                        </div>
+                                        <div class="category-badge">ISO Standard</div>
+                                    </div>
+                                    <div class="credential-code">BSISO 9002</div>
+                                    <div class="credential-title">Quality Management System</div>
+                                    <div class="credential-description">
+                                        Establishes quality management principles including strong customer focus, involvement of people, and continual improvement.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="credential-footer">
+                                <div class="credential-meta-info">
+                                    <div class="credential-meta-item">
+                                        <div class="meta-label">Credential ID</div>
+                                        <div class="meta-value">QM-2024-3921</div>
+                                    </div>
+                                    <div class="credential-meta-item">
+                                        <div class="meta-label">Status</div>
+                                        <div class="credential-status">
+                                            <span class="status-dot"></span>
+                                            Available
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="credential-actions">
+                                    <a class="view-credential-btn" href="https://verify.apac.certifyme.org/verify/4e8e27b328322" target="_blank">
+                                        View Details
+                                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="credential-card">
+                    <div class="credential-card-inner">
+                        <div class="credential-image-wrapper">
+                            <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSISO9003" class="credential-image">
+                        </div>
+                        <div class="credential-info">
+                            <div class="credential-header">
+                                <div class="credential-main">
+                                    <div class="credential-badges">
+                                        <div class="verification-badge">
+                                            <svg class="verification-icon" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                            </svg>
+                                            Verified
+                                        </div>
+                                        <div class="category-badge">ISO Standard</div>
+                                    </div>
+                                    <div class="credential-code">BSISO 9003</div>
+                                    <div class="credential-title">Environmental Management System</div>
+                                    <div class="credential-description">
+                                        Framework for organizations to manage environmental responsibilities systematically, contributing to environmental sustainability.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="credential-footer">
+                                <div class="credential-meta-info">
+                                    <div class="credential-meta-item">
+                                        <div class="meta-label">Credential ID</div>
+                                        <div class="meta-value">EM-2024-7652</div>
+                                    </div>
+                                    <div class="credential-meta-item">
+                                        <div class="meta-label">Status</div>
+                                        <div class="credential-status">
+                                            <span class="status-dot"></span>
+                                            Available
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="credential-actions">
+                                    <a class="view-credential-btn" href="https://verify.apac.certifyme.org/verify/4e8e27b328322" target="_blank">
+                                        View Details
+                                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="credential-card">
+                    <div class="credential-card-inner">
+                        <div class="credential-image-wrapper">
+                            <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSISO9004" class="credential-image">
+                        </div>
+                        <div class="credential-info">
+                            <div class="credential-header">
+                                <div class="credential-main">
+                                    <div class="credential-badges">
+                                        <div class="verification-badge">
+                                            <svg class="verification-icon" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                            </svg>
+                                            Verified
+                                        </div>
+                                        <div class="category-badge">ISO Standard</div>
+                                    </div>
+                                    <div class="credential-code">BSISO 9004</div>
+                                    <div class="credential-title">Business Continuity Management</div>
+                                    <div class="credential-description">
+                                        Guidance for organizations to prepare for, respond to, and recover from disruptive incidents when they arise.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="credential-footer">
+                                <div class="credential-meta-info">
+                                    <div class="credential-meta-item">
+                                        <div class="meta-label">Credential ID</div>
+                                        <div class="meta-value">BC-2024-5439</div>
+                                    </div>
+                                    <div class="credential-meta-item">
+                                        <div class="meta-label">Status</div>
+                                        <div class="credential-status">
+                                            <span class="status-dot"></span>
+                                            Available
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="credential-actions">
+                                    <a class="view-credential-btn" href="https://verify.apac.certifyme.org/verify/4e8e27b328322" target="_blank">
+                                        View Details
+                                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="credential-card">
+                    <div class="credential-card-inner">
+                        <div class="credential-image-wrapper">
+                            <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSISO9005" class="credential-image">
+                        </div>
+                        <div class="credential-info">
+                            <div class="credential-header">
+                                <div class="credential-main">
+                                    <div class="credential-badges">
+                                        <div class="verification-badge">
+                                            <svg class="verification-icon" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                            </svg>
+                                            Verified
+                                        </div>
+                                        <div class="category-badge">ISO Standard</div>
+                                    </div>
+                                    <div class="credential-code">BSISO 9005</div>
+                                    <div class="credential-title">Occupational Health & Safety Management</div>
+                                    <div class="credential-description">
+                                        Framework to manage occupational health and safety risks and improve OH&S performance to prevent work-related injury and ill health.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="credential-footer">
+                                <div class="credential-meta-info">
+                                    <div class="credential-meta-item">
+                                        <div class="meta-label">Credential ID</div>
+                                        <div class="meta-value">OHS-2024-2187</div>
+                                    </div>
+                                    <div class="credential-meta-item">
+                                        <div class="meta-label">Status</div>
+                                        <div class="credential-status">
+                                            <span class="status-dot"></span>
+                                            Available
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="credential-actions">
+                                    <a class="view-credential-btn" href="https://verify.apac.certifyme.org/verify/4e8e27b328322" target="_blank">
+                                        View Details
+                                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Credentials search
+        function setupCredentialsSearch() {
+            const credentialsSearch = document.getElementById('credentialsSearch');
+            const credentialsGrid = document.getElementById('credentialsGrid');
+            const emptyStateCredentials = document.getElementById('emptyStateCredentials');
+            const visibleCountEl = document.getElementById('visibleCredentialsCount');
+
+            credentialsSearch.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase().trim();
+                const cards = credentialsGrid.querySelectorAll('.credential-card');
+                let visibleCount = 0;
+
+                cards.forEach(card => {
+                    const code = card.querySelector('.credential-code').textContent.toLowerCase();
+                    const title = card.querySelector('.credential-title').textContent.toLowerCase();
+                    const description = card.querySelector('.credential-description').textContent.toLowerCase();
+
+                    if (searchTerm === '' || code.includes(searchTerm) || title.includes(searchTerm) || description.includes(searchTerm)) {
+                        card.style.display = 'flex';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                // Update visible count badge
+                if (visibleCountEl) {
+                    visibleCountEl.textContent = visibleCount;
+                }
+
+                if (visibleCount === 0) {
+                    credentialsGrid.style.display = 'none';
+                    emptyStateCredentials.style.display = 'block';
+                } else {
+                    credentialsGrid.style.display = 'flex';
+                    emptyStateCredentials.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
