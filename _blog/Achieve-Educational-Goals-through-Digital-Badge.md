@@ -204,6 +204,7 @@ One concern often pops up: “Do employers or grad schools even care about digit
 Short answer: Yes—if they’re from reputable sources.
 
 Badges issued by universities, industry bodies, or verified platforms like CertifyMe or Credly carry weight. 
+
 They include:
 
 1. Verified metadata
