@@ -374,7 +374,7 @@
                 <p id="successPopupMsg" style="margin:0;"><strong>Submission Successful</strong><br><br>Thank you. Your self-certification questionnaire has been successfully submitted. The details have been shared with the Admin team for review.<br><br>Please check back in 24–48 hours for an update on the status.</p>
             </div>
             <div style="padding: 16px 24px; border-top: 1px solid #e5e7eb; display:flex; justify-content:flex-end; gap: 10px;">
-                <button id="successViewCertified" style="padding: 10px 16px; background:#3b82f6; color:#fff; border:none; border-radius:8px; font-weight:600; cursor:pointer;">View Certified</button>
+                <button id="successViewCertified" style="padding: 10px 16px; background:#3b82f6; color:#fff; border:none; border-radius:8px; font-weight:600; cursor:pointer;">Okay</button>
                 <button id="successClose" style="padding: 10px 16px; background:#fff; color:#374151; border:1px solid #d1d5db; border-radius:8px; font-weight:600; cursor:pointer;">Close</button>
             </div>
         </div>
@@ -405,16 +405,10 @@
                     </div>
 
                     <div class="question-section">
-                        <div class="question-title"><span class="question-number">2</span>Defined Scope</div>
-                        <p class="question-text">Is the scope of adoption clearly defined and documented?</p>
-                        <div class="question-options">
-                            <label class="option-label"><input type="radio" name="q2" value="Yes" required><span>Yes</span></label>
-                            <label class="option-label"><input type="radio" name="q2" value="Partially"><span>Partially</span></label>
-                            <label class="option-label"><input type="radio" name="q2" value="No"><span>No</span></label>
-                        </div>
+                        <div class="question-title"><span class="question-number">2</span>Organization Email ID</div>
+                        <p class="question-text">Please provide the organization email ID</p>
                         <div class="evidence-upload">
-                            <label class="evidence-label">📎 Evidence:</label>
-                            <input type="file" class="file-input" accept=".pdf,.doc,.docx">
+                            <input type="email" class="form-field" style="width: 100%; padding: 12px 14px; border: 2px solid #d0d0d0; border-radius: 8px; font-size: 14px; background: #fff; transition: all 0.2s ease;" placeholder="Enter organization email address" required>
                         </div>
                     </div>
 
@@ -546,7 +540,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <div class="progress-indicator">10 questions • All required</div>
+                <div class="progress-indicator">9 questions + 1 email field • All required</div>
                 <div class="modal-footer-buttons">
                     <button type="button" class="btn-cancel" onclick="closeModal()">Cancel</button>
                     <button type="button" class="btn-submit" onclick="submitCertification()">Submit Certification</button>
