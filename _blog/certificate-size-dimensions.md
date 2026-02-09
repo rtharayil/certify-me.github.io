@@ -34,17 +34,23 @@ Certificates come in various sizes, each catering to specific needs and occasion
 
 <b>Ideal for:</b> Academic certificates, professional training programs, and recognition awards.
 
+<br>
+
 ### A4 Size (210mm x 297mm) 
 
 <b>Benefits:</b>  A4 certificates are the international equivalent of the standard certificate size. They offer a slightly elongated format, providing more space for decorative elements and information. A4 certificates are suitable for both portrait and landscape orientations.  
 
 <b>Ideal for:</b> International recognition, conferences, and workshops.
 
+<br>
+
 ### Half Letter Size (5.5” x 8.5”) 
  
 <b>Benefits:</b> Half-letter certificates are compact and versatile. Their smaller certificate page size is ideal for creating a sense of exclusivity or for recognizing achievements in a more intimate setting. They can also be used as event invitations.  
 
 <b>Ideal for:</b> Training workshops, team-building events, and informal recognition.
+
+<br>
 
 ### Custom Sizes 
 
@@ -58,21 +64,31 @@ Certificates come in various sizes, each catering to specific needs and occasion
 
 The visual appeal of a certificate often hinges on the images and graphics used in its design. To ensure your certificate looks polished and professional, it’s essential to choose the right image sizes. Here are some guidelines for selecting image sizes:
 
+<br>
+
 ### High Resolution 
 
 Images for certificates should always be high-resolution to maintain clarity and sharpness. Low-resolution images can appear pixelated when printed. Aim for a minimum of 300 dots per inch (DPI) to ensure your images look crisp, regardless of the certificate size.
+
+<br>
 
 ### Balance Image Size and Content 
 
 Consider the balance between the image size and the content on your certificate. The image should complement the text without overwhelming it. It should enhance the overall design and convey the theme or purpose of the certificate effectively.
 
+<br>
+
 ### Image Placement 
 
 The placement of images is crucial. Common locations for images on certificates include the background, borders, or as part of the central design. Ensure that images do not interfere with important text or information, such as the recipient’s name and the reason for the certificate.
 
+<br>
+
 ### Logo Integration 
 
 If your certificate includes an organization’s logo or seal, make sure it’s a high-quality image. Logos are often placed in the header or footer of the certificate. Ensure that the logo integrates seamlessly with the overall design and doesn’t distract from the certificate’s purpose.
+
+<br>
 
 ### Consider Transparency 
 
@@ -100,11 +116,15 @@ In addition to the image size, the format you choose for your certificate’s im
 
 <b>Ideal for:</b> Certificates with high-quality photographs or intricate graphics.
 
+<br>
+
 ### PNG (Portable Network Graphics) 
 
 <b>Benefits:</b> PNG is a lossless format that preserves image quality but may result in larger file sizes compared to JPEG. It supports transparency, making it ideal for images with a transparent background.  
 
 <b>Ideal for:</b> Certificates with transparency or images that require a crisp, clean look.
+
+<br>
 
 ### PDF (Portable Document Format) 
 
@@ -120,19 +140,27 @@ These certificates can also be issued digitally, supporting various use cases in
 
 Creating certificates with ideal image sizes and formats offers several advantages:
 
+<br>
+
 ### Professional Appearance 
 
 Certificates with high-quality images and appropriate formats exude professionalism. They leave a positive impression on recipients and reflect well on the awarding organization.
 
+<br>
+
 ### Clarity and Readability 
 
 Well-sized and formatted images enhance the clarity and readability of the certificate. Recipients can easily understand and appreciate the content and design.
+
+<br>
 
 ### Versatility 
 
 Certificates designed with ideal image sizes and formats can be used for various purposes, from academic achievements to corporate recognition. They adapt seamlessly to different contexts and events.
 
 Certificates designed with ideal image sizes and formats adapt seamlessly to different contexts and events—from formal education to skill-based recognition. You can also explore [how digital badges can help achieve educational goals](https://www.certifyme.online/blog/Achieve-Educational-Goals-through-Digital-Badge.html) as complementary tools.
+
+<br>
 
 ### Brand Consistency  
 
