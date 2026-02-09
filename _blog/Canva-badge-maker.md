@@ -30,6 +30,8 @@ Each badge includes key information such as the badge issuer, the criteria for e
 
 For a more comprehensive overview of digital badges, including their functions and benefits, [click here](https://certifyme.online/blog/digital-badges-explained.html).
 
+<br>
+
 ### Why Use Canva for Creating Digital Badges?
 
 1. <b>Beginner-Friendly Interface:</b> Canva’s drag-and-drop design makes badge creation simple and intuitive, even for beginners.
@@ -68,9 +70,13 @@ For a more detailed visual walkthrough of this process, [click here](https://www
 
 Ready to get acquainted with Canva’s design tools? Let’s explore the essential features of Canva’s badge design interface to ensure a seamless and efficient design experience.
 
+<br>
+
 ### 1. Design Workspace
 
 Once you select a template, you’ll land in Canva’s design workspace. This is where you’ll see your badge and make changes.
+
+<br>
 
 ### 2. Tools Menu
 
@@ -86,10 +92,13 @@ The Tools Menu on the left is your creative toolkit:
 
 1. <b>Uploads:</b> Upload your own images or logos for personalizing your badge.
 
+<br>
 
 ### 3. Central Canvas
 
 The main area shows your badge template. Click on elements here to resize, move, or modify them as needed.
+
+<br>
 
 ### 4. Top Menu
 
@@ -117,6 +126,8 @@ Selecting the right template is crucial as it sets the tone for your badge. Canv
 
 1. <b>Consider Style and Layout:</b> Look for templates with a layout that can accommodate all necessary elements, such as logos or text.
 
+<br>
+
 ### Customizing Your Badge Design
 
 Customization is where your badge truly comes to life. Canva's tools allow you to modify text, adjust fonts, and tweak colors to perfectly match your brand or personal style. The transparency feature is particularly useful for adding depth and layering to your design, making certain elements stand out or blend smoothly into the background.
@@ -128,6 +139,8 @@ Customization is where your badge truly comes to life. Canva's tools allow you t
 1. <b>Adjust Fonts and Colors:</b> Choose from a wide range of fonts and color palettes, so that the badge is customized to fit your branding.
 
 1. <b>Use Transparency:</b> Apply transparency effects to create depth, especially for text overlays or background images, enhancing the overall design.
+
+<br>
 
 ### Adding Unique Elements to Your Badge
 
@@ -151,17 +164,25 @@ By following these steps, you’ll create a digital badge that not only stands o
 
 Start by designing your badge in Canva. Once satisfied, export the design in a high-quality format like PNG or JPEG. Ensure your design meets the specifications needed for digital verification.
 
+<br>
+
 ### 2. Log in to CertifyMe
 
 Access your CertifyMe account or sign up if you haven't already. Navigate to the “Design Template” on the left navigation bar and then edit your digital badge template.
+
+<br>
 
 ### 3. Upload Your Badge Design
 
 Upload your Canva badge design to CertifyMe in the “Edit your Credential Template Image” section under the Credential Template editor. Once the Badge Design is displayed as you want it, save the design for the template.
 
+<br>
+
 ### 4. Set Verification Details
 
 Define the details for verification such as the badge metadata, the issuer information and the validity period in the “Click to Update your Program Details” section. This step ensures your badges are both credible and secure.
+
+<br>
 
 ### 5. Issue and Share Your Verified Badge
 
@@ -179,9 +200,13 @@ Once all details are set, issue the badge. You can then share it directly with r
 
 CertifyMe's verification process adds a layer of trust, assuring recipients and viewers that the badge is authentic and awarded based on merit.
 
+<br>
+
 ### Increased Security
 
 Digital verification prevents unauthorized use or duplication of your badges, protecting the integrity of your credentials.
+
+<br>
 
 ### Ease of Sharing
 
@@ -189,9 +214,13 @@ Verified badges can be easily shared across various platforms, from LinkedIn pro
 
 Want to build a powerful brand presence? Learn more about [using digital badges on LinkedIn to boost employer branding.](https://www.certifyme.online/blog/linkedin-badges-for-companies.html)
 
+<br>
+
 ### Comprehensive Analytics
 
 CertifyMe provides analytics on badge distribution and engagement, offering insights into how your badges are being used and recognized.
+
+<br>
 
 ### Customization Options
 
