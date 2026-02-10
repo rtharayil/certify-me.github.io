@@ -226,7 +226,7 @@ CertifyMe provides analytics on badge distribution and engagement, offering insi
 
 Tailor your badge credentials to match your brand, with options for customizing issuer profiles and badge appearance.
 
-Integrating Canva with CertifyMe not only enhances the visual appeal of your badges but also ensures they carry the weight of verified authenticity. Whether for professional achievements or educational milestones, this integration offers a robust solution for creating and managing digital credentials.
+Integrating Canva with CertifyMe not only enhances the visual appeal of your badge and makes it a [designers choice](https://designers-choice.net/), but also ensures they carry the weight of verified authenticity.
 
 <br>
 
