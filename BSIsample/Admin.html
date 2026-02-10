@@ -61,7 +61,14 @@
     .content { padding: 32px; overflow-y: auto; flex: 1; }
     
     /* Admin Dashboard Grid */
-    .admin-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1400px; margin: 0 auto; padding: 0 20px; }
+    .admin-grid { 
+      display: grid; 
+      grid-template-columns: repeat(6, 1fr); 
+      gap: 20px; 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      padding: 0 20px; 
+    }
     .admin-box { background: #fff !important; border: 1px solid #e5e7eb; border-radius: 12px; padding: 28px; cursor: pointer; transition: all 0.2s; text-align: center; position: relative; }
     .admin-box:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.15); transform: translateY(-2px); border-color: #3b82f6; }
     .admin-box-icon { width: 56px; height: 56px; margin: 0 auto 16px; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important; border-radius: 12px; display: flex; align-items: center; justify-content: center; }
@@ -71,14 +78,18 @@
     .box-badge { position: absolute; top: 16px; right: 16px; background: #ef4444; color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 13px; font-weight: 700; }
     
     /* Remove any specific card colors - all cards should be white with blue icons */
-    .admin-box.new-submissions { background: #fff !important; }
+    /* Top row - each card spans 2 columns */
+    .admin-box.new-submissions { background: #fff !important; grid-column: 1 / 3; }
     .admin-box.new-submissions .admin-box-icon { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important; }
-    .admin-box.pending-review { background: #fff !important; }
+    .admin-box.pending-review { background: #fff !important; grid-column: 3 / 5; }
     .admin-box.pending-review .admin-box-icon { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important; }
-    .admin-box.approved { background: #fff !important; }
+    .admin-box.approved { background: #fff !important; grid-column: 5 / 7; }
     .admin-box.approved .admin-box-icon { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important; }
-    .admin-box.rejected { background: #fff !important; }
+    /* Bottom row - each card spans 2 columns, centered */
+    .admin-box.rejected { background: #fff !important; grid-column: 2 / 4; }
     .admin-box.rejected .admin-box-icon { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important; }
+    .admin-box.expired { background: #fff !important; grid-column: 4 / 6; }
+    .admin-box.expired .admin-box-icon { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important; }
 
 
     /* List View */
@@ -280,6 +291,13 @@
             <span>Rejected</span>
             <span class="nav-badge" id="rejectedBadge">0</span>
           </button>
+          <button class="nav-item" onclick="showAdminSection('expired')">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>Expired</span>
+            <span class="nav-badge" id="expiredBadge">0</span>
+          </button>
         </div>
         <div class="logout-section">
           <button id="adminLogout">
@@ -345,6 +363,17 @@
                 </div>
                 <h3>Rejected Submissions</h3>
                 <p>All rejected certificates</p>
+              </div>
+
+              <div class="admin-box expired" onclick="showAdminSection('expired')">
+                <span class="box-badge" id="dashExpiredBadge">0</span>
+                <div class="admin-box-icon">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <h3>Expired Certificates</h3>
+                <p>Certificates past validity</p>
               </div>
             </div>
           </div>
@@ -496,6 +525,43 @@
               <div id="listRejected" class="certificate-list"></div>
             </div>
           </div>
+
+          <!-- Expired List -->
+          <div id="expiredList" class="admin-list-view">
+            <div class="list-wrap">
+              <div class="list-header">
+                <div class="list-controls">
+                  <button class="back-btn" onclick="goBack()">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    Back
+                  </button>
+                  <button class="btn-download" onclick="downloadExpiredList()">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Download List
+                  </button>
+                </div>
+                <div style="display: flex; gap: 12px; align-items: center;">
+                  <div style="display: flex; gap: 8px; align-items: center;">
+                    <label style="font-size: 13px; font-weight: 600; color: #374151; white-space: nowrap;">From:</label>
+                    <input type="date" id="dateFromExpired" style="padding: 8px 12px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 13px; background: #f9fafb;" onchange="filterByDateExpired()" />
+                  </div>
+                  <div style="display: flex; gap: 8px; align-items: center;">
+                    <label style="font-size: 13px; font-weight: 600; color: #374151; white-space: nowrap;">To:</label>
+                    <input type="date" id="dateToExpired" style="padding: 8px 12px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 13px; background: #f9fafb;" onchange="filterByDateExpired()" />
+                  </div>
+                  <div class="list-search">
+                    <input type="text" id="searchExpired" placeholder="Search..." />
+                  </div>
+                </div>
+              </div>
+              <div class="list-title">Expired Certificates</div>
+              <div id="listExpired" class="certificate-list"></div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
@@ -545,7 +611,7 @@
         </svg>
       </div>
       <h2>Certification Approved!</h2>
-      <p>The self-certification has been approved.<br><br>The certificate details have been added to the Public Registry and the Organization has been notified via email.</p>
+      <p>The self-certification has been approved.<br><br>The certificate details have been added to the Public Registry and are now available for viewing.</p>
       <div class="popup-buttons">
         <button class="btn-popup success" onclick="hideApproveSuccessPopup()">Got it!</button>
       </div>
@@ -812,6 +878,98 @@
       }
     ];
 
+    // Expired certificates
+    const expiredCertificates = [
+      { 
+        id: 300, 
+        orgName: 'Legacy Manufacturing Ltd', 
+        standardName: 'BS ISO 9001', 
+        standardDesc: 'Quality Management',
+        submittedDate: '10 Jan 2023',
+        approvedDate: '15 Jan 2023',
+        expiredDate: '15 Jan 2026',
+        status: 'expired',
+        questions: [
+          { q: 'Standards Adopted - Have you formally identified the BSI standard(s) your organisation intends to adopt?', a: 'Yes', evidence: ['Adoption_Form.pdf'] },
+          { q: 'Organisation Email ID - Provide your organisation email ID', a: 'admin@legacymanufacturing.com', evidence: [] },
+          { q: 'Policies & Framework - Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?', a: 'Yes', evidence: ['Quality_Policy_2023.pdf'] },
+          { q: 'Roles & Responsibilities - Have roles and responsibilities for compliance and implementation been assigned?', a: 'Yes', evidence: [] },
+          { q: 'Risk Assessment - Has your organisation identified and assessed risks relevant to the adopted standard(s)?', a: 'Yes', evidence: [] },
+          { q: 'Control Implementation - Have appropriate controls or procedures been implemented to address identified risks?', a: 'Yes', evidence: [] },
+          { q: 'Training & Awareness - Have relevant employees received awareness or training on the adopted standard(s)?', a: 'Yes', evidence: ['Training_Archive.pdf'] },
+          { q: 'Monitoring & Review - Are internal reviews, audits, or periodic checks conducted to monitor compliance?', a: 'Yes', evidence: [] },
+          { q: 'Corrective Actions - Is there a mechanism to record and address non-conformities or improvement actions?', a: 'Yes', evidence: [] },
+          { q: 'Self-Declaration & Commitment - Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?', a: 'Yes', evidence: [] }
+        ]
+      },
+      { 
+        id: 301, 
+        orgName: 'Old Tech Solutions', 
+        standardName: 'BS ISO/IEC 27001', 
+        standardDesc: 'Information Security Management',
+        submittedDate: '05 Feb 2023',
+        approvedDate: '12 Feb 2023',
+        expiredDate: '12 Feb 2026',
+        status: 'expired',
+        questions: [
+          { q: 'Standards Adopted - Have you formally identified the BSI standard(s) your organisation intends to adopt?', a: 'Yes', evidence: ['Standards_Doc.pdf'] },
+          { q: 'Organisation Email ID - Provide your organisation email ID', a: 'contact@oldtechsolutions.com', evidence: [] },
+          { q: 'Policies & Framework - Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?', a: 'Yes', evidence: ['InfoSec_Policy_2023.pdf'] },
+          { q: 'Roles & Responsibilities - Have roles and responsibilities for compliance and implementation been assigned?', a: 'Yes', evidence: [] },
+          { q: 'Risk Assessment - Has your organisation identified and assessed risks relevant to the adopted standard(s)?', a: 'Yes', evidence: [] },
+          { q: 'Control Implementation - Have appropriate controls or procedures been implemented to address identified risks?', a: 'Yes', evidence: [] },
+          { q: 'Training & Awareness - Have relevant employees received awareness or training on the adopted standard(s)?', a: 'Yes', evidence: ['Security_Training_2023.pdf'] },
+          { q: 'Monitoring & Review - Are internal reviews, audits, or periodic checks conducted to monitor compliance?', a: 'Yes', evidence: [] },
+          { q: 'Corrective Actions - Is there a mechanism to record and address non-conformities or improvement actions?', a: 'Yes', evidence: [] },
+          { q: 'Self-Declaration & Commitment - Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?', a: 'Yes', evidence: [] }
+        ]
+      },
+      { 
+        id: 302, 
+        orgName: 'Classic Foods Ltd', 
+        standardName: 'BS ISO 22000', 
+        standardDesc: 'Food Safety Management',
+        submittedDate: '20 Dec 2022',
+        approvedDate: '28 Dec 2022',
+        expiredDate: '28 Dec 2025',
+        status: 'expired',
+        questions: [
+          { q: 'Standards Adopted - Have you formally identified the BSI standard(s) your organisation intends to adopt?', a: 'Yes', evidence: ['Adoption_Letter_2022.pdf'] },
+          { q: 'Organisation Email ID - Provide your organisation email ID', a: 'info@classicfoods.com', evidence: [] },
+          { q: 'Policies & Framework - Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?', a: 'Yes', evidence: ['Food_Safety_Policy_2022.pdf'] },
+          { q: 'Roles & Responsibilities - Have roles and responsibilities for compliance and implementation been assigned?', a: 'Yes', evidence: [] },
+          { q: 'Risk Assessment - Has your organisation identified and assessed risks relevant to the adopted standard(s)?', a: 'Yes', evidence: [] },
+          { q: 'Control Implementation - Have appropriate controls or procedures been implemented to address identified risks?', a: 'Yes', evidence: [] },
+          { q: 'Training & Awareness - Have relevant employees received awareness or training on the adopted standard(s)?', a: 'Yes', evidence: ['HACCP_Training_2022.pdf'] },
+          { q: 'Monitoring & Review - Are internal reviews, audits, or periodic checks conducted to monitor compliance?', a: 'Yes', evidence: [] },
+          { q: 'Corrective Actions - Is there a mechanism to record and address non-conformities or improvement actions?', a: 'Yes', evidence: [] },
+          { q: 'Self-Declaration & Commitment - Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?', a: 'Yes', evidence: [] }
+        ]
+      },
+      { 
+        id: 303, 
+        orgName: 'Historical Healthcare Inc', 
+        standardName: 'BS ISO 13485', 
+        standardDesc: 'Medical Devices Quality Management',
+        submittedDate: '15 Nov 2022',
+        approvedDate: '22 Nov 2022',
+        expiredDate: '22 Nov 2025',
+        status: 'expired',
+        questions: [
+          { q: 'Standards Adopted - Have you formally identified the BSI standard(s) your organisation intends to adopt?', a: 'Yes', evidence: ['Standard_Selection_2022.pdf'] },
+          { q: 'Organisation Email ID - Provide your organisation email ID', a: 'admin@historicalhealthcare.com', evidence: [] },
+          { q: 'Policies & Framework - Have relevant policies or frameworks been documented in alignment with the selected BSI standard(s)?', a: 'Yes', evidence: ['QMS_Medical_Policy_2022.pdf'] },
+          { q: 'Roles & Responsibilities - Have roles and responsibilities for compliance and implementation been assigned?', a: 'Yes', evidence: [] },
+          { q: 'Risk Assessment - Has your organisation identified and assessed risks relevant to the adopted standard(s)?', a: 'Yes', evidence: [] },
+          { q: 'Control Implementation - Have appropriate controls or procedures been implemented to address identified risks?', a: 'Yes', evidence: [] },
+          { q: 'Training & Awareness - Have relevant employees received awareness or training on the adopted standard(s)?', a: 'Yes', evidence: ['Medical_Device_Training_2022.pdf'] },
+          { q: 'Monitoring & Review - Are internal reviews, audits, or periodic checks conducted to monitor compliance?', a: 'Yes', evidence: [] },
+          { q: 'Corrective Actions - Is there a mechanism to record and address non-conformities or improvement actions?', a: 'Yes', evidence: [] },
+          { q: 'Self-Declaration & Commitment - Does the organisation commit to maintaining and improving alignment with the adopted BSI standard(s)?', a: 'Yes', evidence: [] }
+        ]
+      }
+    ];
+
     let currentSubmissionId = null;
     let navigationHistory = [];
 
@@ -856,6 +1014,7 @@
       populatePendingReview();
       populateApproved();
       populateRejected();
+      populateExpired();
       showAdminSection('dashboard');
     });
 
@@ -925,16 +1084,19 @@
       const pendingCount = pendingReview.length;
       const approvedCount = approvedSubmissions.length;
       const rejectedCount = rejectedSubmissions.length;
+      const expiredCount = expiredCertificates.length;
       
       document.getElementById('newSubmissionsBadge').textContent = newCount;
       document.getElementById('pendingReviewBadge').textContent = pendingCount;
       document.getElementById('approvedBadge').textContent = approvedCount;
       document.getElementById('rejectedBadge').textContent = rejectedCount;
+      document.getElementById('expiredBadge').textContent = expiredCount;
       
       document.getElementById('dashNewBadge').textContent = newCount;
       document.getElementById('dashPendingBadge').textContent = pendingCount;
       document.getElementById('dashApprovedBadge').textContent = approvedCount;
       document.getElementById('dashRejectedBadge').textContent = rejectedCount;
+      document.getElementById('dashExpiredBadge').textContent = expiredCount;
     }
 
     // Navigation
@@ -944,6 +1106,7 @@
       const pendingList = document.getElementById('pendingReviewList');
       const approvedList = document.getElementById('approvedList');
       const rejectedList = document.getElementById('rejectedList');
+      const expiredList = document.getElementById('expiredList');
       const pageTitle = document.getElementById('pageTitle');
 
       dashboard.style.display = 'none';
@@ -951,6 +1114,7 @@
       pendingList.classList.remove('active');
       approvedList.classList.remove('active');
       rejectedList.classList.remove('active');
+      expiredList.classList.remove('active');
 
       const buttons = document.querySelectorAll('.side-nav .nav-item');
       buttons.forEach(b => b.classList.remove('active'));
@@ -977,6 +1141,10 @@
         rejectedList.classList.add('active');
         pageTitle.textContent = 'Rejected Submissions';
         if (buttons[4]) buttons[4].classList.add('active');
+      } else if (section === 'expired') {
+        expiredList.classList.add('active');
+        pageTitle.textContent = 'Expired Certificates';
+        if (buttons[5]) buttons[5].classList.add('active');
       }
     }
 
@@ -1146,6 +1314,37 @@
           const id = parseInt(this.getAttribute('data-id'));
           viewSubmissionFromList(id, rejectedSubmissions);
         });
+      });
+    }
+
+    function populateExpired() {
+      const el = document.getElementById('listExpired');
+      el.innerHTML = '';
+      
+      if (expiredCertificates.length === 0) {
+        el.innerHTML = '<div style="text-align:center; padding:40px; color:#6b7280;">No expired certificates yet.</div>';
+        return;
+      }
+      
+      expiredCertificates.forEach(sub => {
+        const card = document.createElement('div');
+        card.className = 'certificate-card';
+        card.innerHTML = `
+          <div class="certificate-thumbnail">
+            <img src="https://i.ibb.co/0jzyvgQ0/c-w-seals-bsi-certificate-1.jpg" alt="BSI Certificate" class="certificate-image">
+          </div>
+          <div class="certificate-info">
+            <div class="certificate-details">
+              <h3>${sub.standardName}</h3>
+              <div class="certificate-desc">${sub.standardDesc}</div>
+              <div class="certificate-date">Organisation: ${sub.orgName}</div>
+              <div class="certificate-date">Approved: ${sub.approvedDate}</div>
+              <div class="certificate-date" style="color:#ef4444; font-weight:700;">⚠️ Expired: ${sub.expiredDate}</div>
+              <span class="status-badge" style="background:#ef4444;">Expired</span>
+            </div>
+          </div>
+        `;
+        el.appendChild(card);
       });
     }
 
@@ -1523,6 +1722,7 @@
       bind('searchPendingReview','listPendingReview');
       bind('searchApproved','listApproved');
       bind('searchRejected','listRejected');
+      bind('searchExpired','listExpired');
     }
 
     // Download functions
@@ -1596,6 +1796,24 @@
       const link = document.createElement('a');
       link.setAttribute('href', url);
       link.setAttribute('download', 'Rejected_Submissions_' + new Date().toISOString().split('T')[0] + '.csv');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    }
+
+    function downloadExpiredList() {
+      let csvContent = "Organisation Name,Standard Name,Standard Description,Approved Date,Expired Date,Status\n";
+      
+      expiredCertificates.forEach(sub => {
+        csvContent += `"${sub.orgName}","${sub.standardName}","${sub.standardDesc}","${sub.approvedDate}","${sub.expiredDate}","Expired"\n`;
+      });
+
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.setAttribute('href', url);
+      link.setAttribute('download', 'Expired_Certificates_' + new Date().toISOString().split('T')[0] + '.csv');
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -1708,6 +1926,34 @@
       
       cards.forEach(card => {
         const dateText = card.querySelector('.certificate-date:nth-of-type(2)').textContent.replace('Submitted: ', '');
+        const cardDate = parseSubmissionDate(dateText);
+        
+        let showCard = true;
+        
+        if (dateFrom && dateTo) {
+          const fromDate = new Date(dateFrom);
+          const toDate = new Date(dateTo);
+          showCard = cardDate >= fromDate && cardDate <= toDate;
+        } else if (dateFrom) {
+          const fromDate = new Date(dateFrom);
+          showCard = cardDate >= fromDate;
+        } else if (dateTo) {
+          const toDate = new Date(dateTo);
+          showCard = cardDate <= toDate;
+        }
+        
+        card.style.display = showCard ? 'flex' : 'none';
+      });
+    }
+
+    function filterByDateExpired() {
+      const dateFrom = document.getElementById('dateFromExpired').value;
+      const dateTo = document.getElementById('dateToExpired').value;
+      
+      const cards = document.querySelectorAll('#listExpired .certificate-card');
+      
+      cards.forEach(card => {
+        const dateText = card.querySelector('.certificate-date:nth-of-type(2)').textContent.replace('Approved: ', '');
         const cardDate = parseSubmissionDate(dateText);
         
         let showCard = true;
