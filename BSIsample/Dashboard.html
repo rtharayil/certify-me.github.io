@@ -374,8 +374,8 @@
                 <p id="successPopupMsg" style="margin:0;"><strong>Submission Successful</strong><br><br>Thank you. Your self-certification questionnaire has been successfully submitted. The details have been shared with the Admin team for review.<br><br>Please check back in 24–48 hours for an update on the status.</p>
             </div>
             <div style="padding: 16px 24px; border-top: 1px solid #e5e7eb; display:flex; justify-content:flex-end; gap: 10px;">
-                <button id="successViewCertified" style="padding: 10px 16px; background:#3b82f6; color:#fff; border:none; border-radius:8px; font-weight:600; cursor:pointer;">Okay</button>
-                <button id="successClose" style="padding: 10px 16px; background:#fff; color:#374151; border:1px solid #d1d5db; border-radius:8px; font-weight:600; cursor:pointer;">Close</button>
+                <button id="successViewCertified" style="padding: 10px 16px; background:#3b82f6; color:#fff; border:none; border-radius:8px; font-weight:600; cursor:pointer;">OK</button>
+              <!--  <button id="successClose" style="padding: 10px 16px; background:#fff; color:#374151; border:1px solid #d1d5db; border-radius:8px; font-weight:600; cursor:pointer;">Close</button>  -->
             </div>
         </div>
     </div>
@@ -916,7 +916,7 @@
 
         (function initSuccessPopup(){
             const popup = document.getElementById('successPopup');
-            const closeBtn = document.getElementById('successClose');
+            const closeBtn = document.getElementById('successViewCertified');
             const viewCertifiedBtn = document.getElementById('successViewCertified');
             
             closeBtn.addEventListener('click', () => { popup.style.display = 'none'; });
