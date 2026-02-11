@@ -14,7 +14,7 @@ featured: true
 
 Ever wonder if there’s a better way to prove what you’ve accomplished—without digging through drawers or chasing down signatures?
 
-Most of us have been there: trying to find a lost certificate before a job interview, waiting weeks for a university to send our transcript, or worrying if someone might fake a document that took us years to earn. 
+Most of us have been there: trying to find a lost certificate before a job interview, waiting weeks for a university to send our transcript, or worrying if someone might fake a document that took us years to earn.  
 
 That’s where [verifiable credentials](https://www.certifyme.online/glossary/what-are-verifiable-credentials) come in—they’re like the digital version of a lockbox for your credentials, but smarter and much easier to share. Think of them as your digital cheat sheet for life: easy to access, hard to fake, and built to make verification painless for everyone involved.
 
