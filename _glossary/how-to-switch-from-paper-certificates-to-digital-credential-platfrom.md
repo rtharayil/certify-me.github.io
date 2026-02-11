@@ -17,7 +17,7 @@ featured: true
 
 ---
 
-Paper certificates were designed for an offline world. In today’s digital-first environment, they are difficult to verify, costly to manage, and vulnerable to forgery. Switching to a digital credential platform allows issuers to issue certificates that can be independently verified online, updated or revoked when needed, and managed at scale.
+Paper certificates were designed for an offline world. In today’s digital-first environment, they are difficult to verify, costly to manage, and vulnerable to forgery. Switching to a digital credential platform allows issuers to issue certificates that can be independently verified online, updated or revoked when needed, and managed at scale. 
 
 In practice, most organizations do not replace paper certificates overnight. They begin by issuing digital credentials for new recipients and gradually migrate historical records once processes are validated.
 
