@@ -51,6 +51,3 @@ The digital certificate can be downloaded as a file or copied and pasted into yo
 
 Accepting, claiming, and sharing the digital credential are all simple and painless processes. Although the process varies depending on the digital credential issuing platform, it's never a bad idea to seek assistance and get pointed in the right direction to better comprehend the process.
 
-
-
-

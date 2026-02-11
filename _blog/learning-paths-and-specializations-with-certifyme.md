@@ -107,8 +107,3 @@ This article has all the essential info you need to efficiently implement these 
 
 CertifyMe is here to help you create the enriching learning environment that’s transformative for both you and your students. 
 
-
-
-
-
-

@@ -13,7 +13,7 @@ featured: true
 ---
 
 Certificates and badges have been here for longer than we thought. Traditional paper-based certificates to recognise a persons qualification were issued since the early 1700s. Certificates were used to keep a record of a person birth, death, achievements and qualification or to verify the person's identity. It was the only legal way to identify and prove the legitimacy of the identity of the document.
-
+ 
 But, as the world inclined towards to use of the internet to record and issue the identity of the individual, so did the certification. Traditional paper-based certificates that needed to be produced with limited materials and resources and were expensive, to begin with, were now replaced by inexpensive and quality digital certificates.
 
 Everyone around the world is familiar with the words certificates and badges. Although badges are new to the world and are still in a developing stage they too hold much value to their name as it displays the individual low-stake credential. Traditionally the badges were used in the military to display the individuals ranking and position. Digital badges act the same as a physical badge but it is virtual proof of the individual progress, ranking or competency in quality or skills.
