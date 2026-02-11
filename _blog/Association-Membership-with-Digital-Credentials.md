@@ -12,7 +12,7 @@ imageLink:  /img/blog/credential/11.png
 featured: true
 ---
 
-Digitalization has become the most crucial part across all industries ever since the global pandemic. With the rising competition for the same and the ever-changing trends that go with it, it is important to remain relevant and create value for the brand. 
+Digitalization has become the most crucial part across all industries ever since the global pandemic. With the rising competition for the same and the ever-changing trends that go with it, it is important to remain relevant and create value for the brand.  
 
 Even before the digitalization of platforms, Association has been one such way to help expand and attract new members to create brand value and attain trust and loyalty.
 
