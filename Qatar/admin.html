@@ -1,0 +1,3105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal – Qatar Foundation</title>
+    <link href__="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+        :root {
+            --qf-green-dark: #1a5c3a;
+            --qf-green: #2d7a50;
+            --qf-green-light: #3a9d68;
+            --qf-mint: #b8e6cc;
+            --qf-mint-light: #d4f0e0;
+            --qf-mint-pale: #e8f5ee;
+            --qf-white: #ffffff;
+            --qf-text: #1a2e23;
+            --qf-text-light: #5a7568;
+            --qf-red: #d94f4f;
+            --qf-border: #c8ddd1;
+            --qf-shadow: rgba(26, 92, 58, 0.1);
+            --qf-shadow-strong: rgba(26, 92, 58, 0.18);
+            --bg-main: linear-gradient(145deg, #d6efe0 0%, #b3dcc4 30%, #9fcfb5 60%, #c5e8d5 100%);
+            --bg-topbar: rgba(255,255,255,0.7);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-theme="dark"] {
+            --qf-white: #1a2e23;
+            --qf-text: #e8f5ee;
+            --qf-text-light: #a0b8aa;
+            --qf-border: #2d4a3a;
+            --qf-shadow: rgba(0, 0, 0, 0.3);
+            --qf-shadow-strong: rgba(0, 0, 0, 0.5);
+            --bg-main: linear-gradient(145deg, #0f1e16 0%, #1a2e23 30%, #253d30 60%, #1a2e23 100%);
+            --bg-topbar: rgba(26, 46, 35, 0.9);
+            --qf-mint-pale: #1e3329;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(145deg, #d6efe0 0%, #b3dcc4 30%, #8fcbaa 60%, #b8e0c8 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+        body::before, body::after {
+            content: '';
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.35;
+            z-index: 0;
+            pointer-events: none;
+        }
+        body::before {
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, #7ccba2, transparent);
+            top: -120px; right: -100px;
+            animation: floatOrb 18s ease-in-out infinite;
+        }
+        body::after {
+            width: 400px; height: 400px;
+            background: radial-gradient(circle, #a3e4c1, transparent);
+            bottom: -80px; left: -60px;
+            animation: floatOrb 22s ease-in-out infinite reverse;
+        }
+        @keyframes floatOrb {
+            0%, 100% { transform: translate(0,0) scale(1); }
+            33% { transform: translate(30px,-20px) scale(1.05); }
+            66% { transform: translate(-20px,15px) scale(0.95); }
+        }
+
+        /* ====== AUTH CONTAINER ====== */
+        .auth-wrapper {
+            position: relative; z-index: 1; width: 100%;
+            display: flex; align-items: center; justify-content: center;
+            min-height: 100vh; padding: 24px;
+        }
+        .auth-container {
+            width: 100%; max-width: 1080px; min-height: 620px;
+            display: flex; border-radius: 24px; overflow: hidden;
+            box-shadow: 0 4px 6px var(--qf-shadow), 0 20px 50px var(--qf-shadow-strong), 0 0 0 1px rgba(255,255,255,0.3);
+            background: var(--qf-white);
+            animation: slideUp 0.7s cubic-bezier(0.22,1,0.36,1) forwards;
+            opacity: 0; transform: translateY(30px);
+        }
+        @keyframes slideUp { to { opacity:1; transform:translateY(0); } }
+
+        /* LEFT BRAND PANEL */
+        .brand-panel {
+            width: 44%;
+            background: linear-gradient(165deg, #1a5c3a 0%, #2d7a50 50%, #3a9d68 100%);
+            padding: 48px 40px;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            text-align: center;
+            position: relative; overflow: hidden;
+        }
+        .brand-panel::before {
+            content:''; position:absolute; top:-100px; right:-100px;
+            width:350px; height:350px; border-radius:50%;
+            background: rgba(255,255,255,0.04);
+        }
+        .brand-panel::after {
+            content:''; position:absolute; bottom:-60px; left:-60px;
+            width:250px; height:250px; border-radius:50%;
+            background: rgba(255,255,255,0.04);
+        }
+        .brand-logo {
+            display: flex; flex-direction: column; align-items: center; gap: 20px;
+            position: relative; z-index: 1;
+        }
+        .brand-logo .logo-icon {
+            width: 100px; height: 100px;
+            background: rgba(255,255,255,0.95);
+            border-radius: 22px;
+            display: flex; align-items: center; justify-content: center;
+            padding: 10px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        .brand-logo .logo-icon img {
+            width: 100%; height: 100%; object-fit: contain;
+        }
+        .brand-logo-text {
+            display: flex; flex-direction: column; align-items: center; gap: 4px;
+        }
+        .brand-logo-text span:first-child {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px; font-weight: 600; color: #fff;
+            letter-spacing: 0.5px;
+        }
+        .brand-logo-text span:last-child {
+            font-size: 13px; color: rgba(255,255,255,0.65);
+            letter-spacing: 1px;
+        }
+        .brand-content {
+            position: relative; z-index: 1; margin-top: 32px;
+        }
+        .brand-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px; font-weight: 600; color: #fff;
+            line-height: 1.3; margin-bottom: 14px;
+        }
+        .brand-content p {
+            font-size: 14px; color: rgba(255,255,255,0.7);
+            line-height: 1.65; max-width: 320px; margin: 0 auto;
+        }
+
+        /* RIGHT FORM PANEL */
+        .form-panel {
+            flex: 1; padding: 44px 52px;
+            display: flex; flex-direction: column; justify-content: center;
+            background: #ffffff; overflow-y: auto;
+        }
+        .form-logo {
+            display: none; align-items: center; gap: 12px; margin-bottom: 24px;
+        }
+        .form-logo img { width: 44px; height: 44px; object-fit: contain; }
+        .form-logo span {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px; font-weight: 600; color: var(--qf-green-dark);
+        }
+        @media (max-width: 860px) {
+            .brand-panel { display: none; }
+            .auth-container { max-width: 500px; }
+            .form-panel { padding: 36px 28px; }
+            .form-logo { display: flex; }
+        }
+        @media (max-width: 480px) {
+            .form-panel { padding: 28px 20px; }
+            .captcha-row { flex-direction: column; }
+        }
+
+        /* FORM PAGES */
+        .form-page { display:none; opacity:0; transform:translateX(20px); transition: opacity 0.4s ease, transform 0.4s ease; }
+        .form-page.active { display:block; opacity:1; transform:translateX(0); }
+
+        .form-header { margin-bottom: 28px; }
+        .form-header .badge {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 6px 14px; background: var(--qf-mint-pale);
+            border-radius: 20px; font-size: 11.5px; font-weight: 600;
+            color: var(--qf-green); text-transform: uppercase; letter-spacing: 0.8px;
+            margin-bottom: 14px;
+        }
+        .form-header .badge svg { width:14px; height:14px; stroke:var(--qf-green); fill:none; stroke-width:2; }
+        .form-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px; font-weight: 600; color: #1a2e23; margin-bottom: 6px;
+        }
+        .form-header p { font-size: 14px; color: #5a7568; line-height: 1.5; }
+
+        .form-group { margin-bottom: 18px; position: relative; }
+        .form-group label { display:block; font-size:13px; font-weight:500; color:#1a2e23; margin-bottom:7px; }
+        .form-group label .required { color: var(--qf-red); }
+
+        .input-wrap { position: relative; }
+        .input-wrap .input-icon {
+            position:absolute; left:16px; top:50%; transform:translateY(-50%);
+            width:18px; height:18px; stroke:#5a7568; fill:none;
+            stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round;
+            pointer-events:none; transition: stroke var(--transition);
+        }
+        .input-wrap input, .input-wrap textarea, .input-wrap select {
+            width:100%; padding:13px 16px 13px 46px;
+            border:1.5px solid #c8ddd1; border-radius:var(--radius-sm);
+            font-family:'DM Sans',sans-serif; font-size:14px; color:#1a2e23;
+            background:#f8fbf9; transition:var(--transition); outline:none;
+        }
+        .input-wrap textarea { min-height: 80px; resize: vertical; }
+        .input-wrap input::placeholder, .input-wrap textarea::placeholder { color:#a0b8aa; }
+        .input-wrap input:focus, .input-wrap textarea:focus, .input-wrap select:focus {
+            border-color:var(--qf-green); background:#fff;
+            box-shadow:0 0 0 3px rgba(45,122,80,0.08);
+        }
+        .input-wrap input:focus ~ .input-icon { stroke:var(--qf-green); }
+        .input-wrap input.error {
+            border-color:var(--qf-red); box-shadow:0 0 0 3px rgba(217,79,79,0.08);
+        }
+
+        .toggle-password {
+            position:absolute; right:14px; top:50%; transform:translateY(-50%);
+            background:none; border:none; cursor:pointer; padding:4px;
+        }
+        .toggle-password svg {
+            width:18px; height:18px; stroke:#5a7568; fill:none;
+            stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round;
+            transition: stroke var(--transition);
+        }
+        .toggle-password:hover svg { stroke:var(--qf-green); }
+
+        .error-msg {
+            font-size:12px; color:var(--qf-red); margin-top:5px;
+            display:none; align-items:center; gap:4px;
+        }
+        .error-msg.show { display:flex; }
+        .error-msg svg { width:14px; height:14px; stroke:var(--qf-red); fill:none; stroke-width:2; flex-shrink:0; }
+
+        /* Captcha */
+        .captcha-row { display:flex; gap:12px; align-items:flex-end; }
+        .captcha-row .form-group { flex:1; }
+        .captcha-display {
+            height:48px; min-width:130px;
+            background: linear-gradient(135deg, #e8f5ee, #d4f0e0);
+            border:1.5px solid #c8ddd1; border-radius:var(--radius-sm);
+            display:flex; align-items:center; justify-content:center;
+            position:relative; user-select:none; overflow:hidden;
+        }
+        .captcha-display::before {
+            content:''; position:absolute; inset:0;
+            background: repeating-linear-gradient(90deg,transparent,transparent 8px,rgba(26,92,58,0.04) 8px,rgba(26,92,58,0.04) 9px),
+                         repeating-linear-gradient(0deg,transparent,transparent 6px,rgba(26,92,58,0.03) 6px,rgba(26,92,58,0.03) 7px);
+        }
+        .captcha-text {
+            font-family:'Playfair Display',serif; font-size:22px; font-weight:700;
+            color:var(--qf-green-dark); letter-spacing:6px; position:relative; z-index:1;
+        }
+        .captcha-refresh {
+            position:absolute; right:5px; top:5px; width:22px; height:22px;
+            border-radius:6px; background:rgba(255,255,255,0.6); border:none;
+            cursor:pointer; display:flex; align-items:center; justify-content:center; z-index:2;
+        }
+        .captcha-refresh:hover { background:rgba(255,255,255,0.9); }
+        .captcha-refresh svg { width:13px; height:13px; stroke:var(--qf-green-dark); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+
+        .form-options { display:flex; justify-content:space-between; align-items:center; margin-bottom:22px; }
+        .remember-me { display:flex; align-items:center; gap:8px; cursor:pointer; }
+        .remember-me input[type="checkbox"] { display:none; }
+        .checkmark {
+            width:18px; height:18px; border:1.5px solid #c8ddd1;
+            border-radius:5px; display:flex; align-items:center; justify-content:center;
+            transition:var(--transition); background:#f8fbf9;
+        }
+        .remember-me input:checked ~ .checkmark { background:var(--qf-green); border-color:var(--qf-green); }
+        .checkmark svg { width:12px; height:12px; stroke:#fff; fill:none; stroke-width:2.5; opacity:0; transform:scale(0.5); transition:var(--transition); }
+        .remember-me input:checked ~ .checkmark svg { opacity:1; transform:scale(1); }
+        .remember-me span { font-size:13px; color:#5a7568; }
+
+        .link-btn {
+            background:none; border:none; color:var(--qf-green); font-size:13px;
+            font-weight:500; cursor:pointer; font-family:'DM Sans',sans-serif; transition:var(--transition);
+        }
+        .link-btn:hover { color:var(--qf-green-dark); text-decoration:underline; }
+
+        .btn-primary {
+            width:100%; padding:14px; background:linear-gradient(135deg,var(--qf-green-dark),var(--qf-green));
+            color:#fff; border:none; border-radius:var(--radius-sm);
+            font-family:'DM Sans',sans-serif; font-size:15px; font-weight:600;
+            cursor:pointer; position:relative; overflow:hidden; transition:var(--transition); letter-spacing:0.3px;
+        }
+        .btn-primary::before {
+            content:''; position:absolute; top:0; left:-100%; bottom:0; width:100%;
+            background:linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent);
+            transition:left 0.5s ease;
+        }
+        .btn-primary:hover { box-shadow:0 6px 20px rgba(26,92,58,0.3); transform:translateY(-1px); }
+        .btn-primary:hover::before { left:100%; }
+        .btn-primary:active { transform:translateY(0); }
+
+        .form-footer { text-align:center; margin-top:24px; font-size:13.5px; color:#5a7568; }
+        .form-footer .link-btn { font-size:13.5px; font-weight:600; }
+
+        .back-to-login {
+            display:flex; align-items:center; gap:6px; background:none; border:none;
+            cursor:pointer; font-family:'DM Sans',sans-serif; font-size:13px;
+            font-weight:500; color:#5a7568; margin-bottom:20px; transition:var(--transition);
+        }
+        .back-to-login svg { width:16px; height:16px; stroke:#5a7568; fill:none; stroke-width:2; transition:var(--transition); }
+        .back-to-login:hover { color:var(--qf-green); }
+        .back-to-login:hover svg { stroke:var(--qf-green); transform:translateX(-3px); }
+
+        .password-strength { display:flex; gap:4px; margin-top:6px; }
+        .strength-bar { flex:1; height:3px; border-radius:3px; background:#c8ddd1; transition:background 0.3s ease; }
+        .strength-bar.weak { background:var(--qf-red); }
+        .strength-bar.medium { background:#e6a23c; }
+        .strength-bar.strong { background:var(--qf-green-light); }
+        .strength-bar.very-strong { background:var(--qf-green-dark); }
+        .strength-label { font-size:11px; margin-top:3px; color:#5a7568; }
+
+        .toast {
+            position:fixed; top:24px; right:24px; padding:16px 24px;
+            background:var(--qf-green); color:#fff; border-radius:12px;
+            font-size:14px; font-weight:500; box-shadow:0 8px 30px rgba(26,92,58,0.3);
+            transform:translateX(120%); transition:transform 0.4s cubic-bezier(0.22,1,0.36,1);
+            z-index:1000; display:flex; align-items:center; gap:10px;
+        }
+        .toast.show { transform:translateX(0); }
+        .toast svg { width:20px; height:20px; stroke:#fff; fill:none; stroke-width:2; }
+
+        @keyframes shake {
+            0%,100%{transform:translateX(0)} 20%,60%{transform:translateX(-6px)} 40%,80%{transform:translateX(6px)}
+        }
+        .shake { animation: shake 0.4s ease; }
+
+        /* ============================== */
+        /* ========== DASHBOARD ========= */
+        /* ============================== */
+        .dashboard-wrapper {
+            display: none;
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+        .dashboard-wrapper.active {
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            background: var(--qf-white);
+            border-right: 1px solid var(--qf-border);
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0; left: 0; bottom: 0;
+            z-index: 50;
+            transition: transform 0.3s ease;
+            box-shadow: 2px 0 20px var(--qf-shadow);
+        }
+        .sidebar-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--qf-border);
+        }
+        .sidebar-logo {
+            display: flex; align-items: center; gap: 12px;
+        }
+        .sidebar-logo img { width: 50px; height: 50px; object-fit: contain; }
+        .sidebar-logo-text {
+            display: flex; flex-direction: column;
+        }
+        .sidebar-logo-text span:first-child {
+            font-family: 'Playfair Display', serif;
+            font-size: 13px; font-weight: 600; color: var(--qf-green-dark);
+        }
+        .sidebar-logo-text span:last-child {
+            font-size: 10px; color: var(--qf-text-light);
+        }
+
+        .sidebar-profile {
+            padding: 20px;
+            display: flex; align-items: center; gap: 12px;
+            border-bottom: 1px solid var(--qf-border);
+            background: linear-gradient(135deg, #f8fbf9, #f0f7f3);
+        }
+        [data-theme="dark"] .sidebar-profile {
+            background: linear-gradient(135deg, #1e3329, #253d30);
+        }
+        .profile-avatar {
+            width: 48px; height: 48px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--qf-green), var(--qf-green-light));
+            display: flex; align-items: center; justify-content: center;
+            color: #fff; font-weight: 700; font-size: 16px;
+            flex-shrink: 0;
+        }
+        .profile-info .profile-name { font-size: 14px; font-weight: 600; color: var(--qf-text); }
+        .profile-info .profile-role { font-size: 12px; color: var(--qf-green); }
+
+        .sidebar-nav { flex: 1; padding: 16px 12px; overflow-y: auto; }
+        .nav-label {
+            font-size: 11px; font-weight: 600; color: var(--qf-text-light);
+            text-transform: uppercase; letter-spacing: 1px;
+            padding: 12px 12px 8px;
+        }
+        .nav-item {
+            display: flex; align-items: center; gap: 12px;
+            padding: 12px 16px; border-radius: 12px;
+            font-size: 13.5px; color: var(--qf-text);
+            cursor: pointer; transition: var(--transition);
+            text-decoration: none; border: none; background: none; width: 100%;
+            font-family: 'DM Sans', sans-serif;
+            margin-bottom: 4px;
+        }
+        .nav-item:hover { background: var(--qf-mint-pale); }
+        .nav-item.active {
+            background: var(--qf-green); color: #fff;
+            box-shadow: 0 4px 15px rgba(26,92,58,0.3);
+        }
+        .nav-item svg {
+            width: 20px; height: 20px; stroke: currentColor;
+            fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+            flex-shrink: 0;
+        }
+
+        .sidebar-footer {
+            padding: 16px 12px;
+            border-top: 1px solid var(--qf-border);
+        }
+        .nav-item.logout { color: var(--qf-red); }
+        .nav-item.logout:hover { background: rgba(217,79,79,0.08); }
+
+        /* Main content area */
+        .dash-main {
+            flex: 1;
+            margin-left: 280px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: var(--bg-main);
+        }
+
+        /* Top bar */
+        .topbar {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 16px 32px;
+            background: var(--bg-topbar);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(200,221,209,0.5);
+            position: sticky; top: 0; z-index: 40;
+        }
+        .topbar h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px; font-weight: 600; color: var(--qf-green-dark);
+        }
+        .topbar-actions { display: flex; align-items: center; gap: 10px; position: relative; }
+        .topbar-btn {
+            width: 40px; height: 40px; border-radius: 50%;
+            border: none; background: var(--qf-white);
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; transition: var(--transition); position: relative;
+            box-shadow: 0 2px 8px var(--qf-shadow);
+        }
+        .topbar-btn:hover { background: var(--qf-mint-pale); transform: translateY(-2px); }
+        .topbar-btn svg {
+            width: 18px; height: 18px; stroke: var(--qf-text);
+            fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+        }
+        .notif-badge {
+            position: absolute; top: -2px; right: -2px;
+            width: 18px; height: 18px; border-radius: 50%;
+            background: var(--qf-red); color: #fff;
+            font-size: 10px; font-weight: 700;
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        /* Search Bar */
+        .search-container {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            display: none;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 100px;
+        }
+        .search-container.active { display: flex; }
+        .search-box {
+            width: 90%;
+            max-width: 600px;
+            background: var(--qf-white);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            animation: slideDown 0.3s ease;
+        }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .search-input-wrap {
+            position: relative;
+        }
+        .search-input-wrap input {
+            width: 100%;
+            padding: 14px 50px 14px 20px;
+            border: 2px solid var(--qf-border);
+            border-radius: 12px;
+            font-size: 16px;
+            color: var(--qf-text);
+            background: var(--qf-white);
+        }
+        .search-input-wrap input:focus {
+            outline: none;
+            border-color: var(--qf-green);
+        }
+        .search-close {
+            position: absolute;
+            right: 10px; top: 50%;
+            transform: translateY(-50%);
+            width: 32px; height: 32px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .search-close:hover { background: var(--qf-mint-pale); }
+        .search-close svg {
+            width: 18px; height: 18px;
+            stroke: var(--qf-text-light);
+        }
+
+        /* Notification Dropdown */
+        .notification-dropdown {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 360px;
+            background: var(--qf-white);
+            border-radius: 16px;
+            box-shadow: 0 10px 40px var(--qf-shadow-strong);
+            display: none;
+            flex-direction: column;
+            max-height: 500px;
+            overflow: hidden;
+            animation: slideDown 0.3s ease;
+        }
+        .notification-dropdown.active { display: flex; }
+        .notification-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--qf-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .notification-header h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--qf-text);
+        }
+        .mark-read-btn {
+            font-size: 12px;
+            color: var(--qf-green);
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .notification-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px;
+        }
+        .notif-item {
+            padding: 12px 16px;
+            border-radius: 10px;
+            margin-bottom: 6px;
+            cursor: pointer;
+            transition: var(--transition);
+            border-left: 3px solid transparent;
+        }
+        .notif-item:hover {
+            background: var(--qf-mint-pale);
+        }
+        .notif-item.unread {
+            background: var(--qf-mint-pale);
+            border-left-color: var(--qf-green);
+        }
+        .notif-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 4px;
+        }
+        .notif-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--qf-text);
+        }
+        .notif-time {
+            font-size: 11px;
+            color: var(--qf-text-light);
+        }
+        .notif-message {
+            font-size: 12px;
+            color: var(--qf-text-light);
+            line-height: 1.4;
+        }
+
+        /* Dashboard content */
+        .dash-content { padding: 28px 32px; flex: 1; }
+        .dash-section { display: none; }
+        .dash-section.active { display: block; }
+
+        /* Stats Cards Row */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+        .stat-card {
+            background: var(--qf-white);
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 20px var(--qf-shadow);
+            transition: var(--transition);
+        }
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px var(--qf-shadow-strong);
+        }
+        .stat-info h4 {
+            font-size: 13px;
+            color: var(--qf-text-light);
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .stat-value {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+        }
+        .stat-value span:first-child {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--qf-text);
+        }
+        .stat-change {
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .stat-change.positive {
+            color: var(--qf-green);
+            background: var(--qf-mint-pale);
+        }
+        .stat-change.negative {
+            color: var(--qf-red);
+            background: rgba(217,79,79,0.1);
+        }
+        .stat-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .stat-icon.green { background: var(--qf-mint-pale); }
+        .stat-icon.blue { background: #e8f4fd; }
+        .stat-icon.purple { background: #f3e8fd; }
+        .stat-icon.orange { background: #fff3e0; }
+        .stat-icon svg {
+            width: 28px;
+            height: 28px;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+        }
+        .stat-icon.green svg { stroke: var(--qf-green); }
+        .stat-icon.blue svg { stroke: #4a90d9; }
+        .stat-icon.purple svg { stroke: #9b59b6; }
+        .stat-icon.orange svg { stroke: #f5a623; }
+
+        /* Analytics Grid */
+        .analytics-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+        .analytics-card {
+            background: var(--qf-white);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px var(--qf-shadow);
+        }
+        .analytics-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .analytics-card-header h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--qf-text);
+        }
+        .analytics-card-header p {
+            font-size: 12px;
+            color: var(--qf-text-light);
+            margin-top: 4px;
+        }
+        .card-menu-btn {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-menu-btn:hover { background: var(--qf-mint-pale); }
+        .card-menu-btn svg {
+            width: 16px;
+            height: 16px;
+            stroke: var(--qf-text-light);
+            fill: none;
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 4px;
+            background: #f5f7f6;
+            padding: 4px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        [data-theme="dark"] .tabs {
+            background: #1e3329;
+        }
+        .tab-btn {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            border-radius: 6px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            color: var(--qf-text-light);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .tab-btn.active {
+            background: var(--qf-white);
+            color: var(--qf-text);
+            box-shadow: 0 2px 8px var(--qf-shadow);
+        }
+        .tab-btn:hover:not(.active) {
+            color: var(--qf-text);
+        }
+
+        /* Line Chart */
+        .line-chart-container {
+            height: 180px;
+            position: relative;
+        }
+        .line-chart {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Top Users */
+        .top-users-section h5 {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--qf-text);
+            margin-bottom: 12px;
+        }
+        .top-users-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .top-users-table th {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--qf-text-light);
+            text-align: left;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--qf-border);
+        }
+        .top-users-table td {
+            font-size: 13px;
+            color: var(--qf-text);
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 6px;
+        }
+        .status-dot.active { background: var(--qf-green); }
+        .status-dot.inactive { background: var(--qf-text-light); }
+
+        .view-more-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: var(--qf-green);
+            color: #fff;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 16px;
+        }
+        .view-more-btn:hover {
+            background: var(--qf-green-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Bar Chart */
+        .bar-chart-container {
+            height: 140px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            gap: 12px;
+            padding: 20px 0;
+        }
+        .bar-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            flex: 1;
+        }
+        .bar {
+            width: 100%;
+            max-width: 40px;
+            border-radius: 6px 6px 0 0;
+            transition: height 0.6s cubic-bezier(0.22,1,0.36,1);
+        }
+        .bar.blue { background: linear-gradient(180deg, #4a90d9, #6ba8e8); }
+        .bar.green { background: linear-gradient(180deg, var(--qf-green), var(--qf-green-light)); }
+        .bar.orange { background: linear-gradient(180deg, #f5a623, #f7bc5c); }
+        .bar.purple { background: linear-gradient(180deg, #9b59b6, #b07cc6); }
+        .bar-label {
+            font-size: 11px;
+            color: var(--qf-text-light);
+        }
+
+        /* Notifications Card */
+        .notifications-card {
+            background: var(--qf-white);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px var(--qf-shadow);
+        }
+        .notifications-card h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--qf-text);
+            margin-bottom: 16px;
+        }
+        .notification-item {
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 13px;
+            color: var(--qf-text);
+            line-height: 1.5;
+        }
+        .notification-item:last-child {
+            border-bottom: none;
+        }
+        .notification-item a {
+            color: var(--qf-green);
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .notification-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Learner Management */
+        .learner-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .learner-stat-card {
+            background: var(--qf-white);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 12px var(--qf-shadow);
+        }
+        .learner-stat-card h5 {
+            font-size: 12px;
+            color: var(--qf-text-light);
+            margin-bottom: 8px;
+        }
+        .learner-stat-card .number {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--qf-text);
+        }
+
+        .students-table-card {
+            background: var(--qf-white);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px var(--qf-shadow);
+            margin-bottom: 24px;
+        }
+        .students-table-card h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--qf-text);
+            margin-bottom: 20px;
+        }
+        .students-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .students-table th {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--qf-text-light);
+            text-align: left;
+            padding: 12px;
+            border-bottom: 2px solid var(--qf-border);
+            background: var(--qf-mint-pale);
+        }
+        .students-table td {
+            font-size: 13px;
+            color: var(--qf-text);
+            padding: 14px 12px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .students-table tr:hover {
+            background: var(--qf-mint-pale);
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .badge.certified {
+            background: #d4f0e0;
+            color: var(--qf-green-dark);
+        }
+        .badge.enrolled {
+            background: #e8f4fd;
+            color: #4a90d9;
+        }
+        .badge.in-progress {
+            background: #fff3cd;
+            color: #856404;
+        }
+        .badge.logged-in {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        /* Courses Section */
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+        .course-card {
+            background: var(--qf-white);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 20px var(--qf-shadow);
+            transition: var(--transition);
+        }
+        .course-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px var(--qf-shadow-strong);
+        }
+        .course-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+        .course-header h5 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--qf-text);
+            margin-bottom: 4px;
+        }
+        .course-category {
+            font-size: 11px;
+            color: var(--qf-text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .course-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .course-stat {
+            background: var(--qf-mint-pale);
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .course-stat-label {
+            font-size: 11px;
+            color: var(--qf-text-light);
+            margin-bottom: 4px;
+        }
+        .course-stat-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--qf-text);
+        }
+        .view-course-btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background: var(--qf-green);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .view-course-btn:hover {
+            background: var(--qf-green-dark);
+        }
+
+        /* Opportunity Cards */
+        .opportunity-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .add-opportunity-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            background: var(--qf-green);
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .add-opportunity-btn:hover {
+            background: var(--qf-green-dark);
+            transform: translateY(-2px);
+        }
+        .add-opportunity-btn svg {
+            width: 18px;
+            height: 18px;
+            stroke: #fff;
+        }
+
+        .opportunities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .opportunity-card {
+            background: var(--qf-white);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px var(--qf-shadow);
+            transition: var(--transition);
+        }
+        .opportunity-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px var(--qf-shadow-strong);
+        }
+        .opportunity-card-header {
+            margin-bottom: 16px;
+        }
+        .opportunity-card-header h5 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--qf-text);
+            margin-bottom: 8px;
+        }
+        .opportunity-meta {
+            display: flex;
+            gap: 12px;
+            font-size: 12px;
+            color: var(--qf-text-light);
+            margin-bottom: 12px;
+        }
+        .opportunity-meta span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .opportunity-meta svg {
+            width: 14px;
+            height: 14px;
+            stroke: currentColor;
+        }
+        .opportunity-description {
+            font-size: 13px;
+            color: var(--qf-text);
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        .opportunity-skills {
+            margin-bottom: 16px;
+        }
+        .opportunity-skills-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--qf-text-light);
+            margin-bottom: 8px;
+        }
+        .skills-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .skill-tag {
+            padding: 4px 10px;
+            background: var(--qf-mint-pale);
+            color: var(--qf-green-dark);
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        .opportunity-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            border-top: 1px solid var(--qf-border);
+        }
+        .applicants-count {
+            font-size: 12px;
+            color: var(--qf-text-light);
+        }
+
+        /* Modal Styles */
+        .modal {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .modal.active { display: flex; }
+        .modal-content {
+            background: var(--qf-white);
+            border-radius: 16px;
+            padding: 30px;
+            max-width: 700px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: slideDown 0.3s ease;
+        }
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 24px;
+        }
+        .modal-header h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--qf-text);
+        }
+        .close-modal {
+            width: 36px; height: 36px;
+            border: none;
+            background: var(--qf-mint-pale);
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .close-modal svg {
+            width: 20px; height: 20px;
+            stroke: var(--qf-text);
+        }
+
+        /* Reports Grid */
+        .reports-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .stats-row { grid-template-columns: repeat(2, 1fr); }
+            .analytics-grid { grid-template-columns: 1fr; }
+            .learner-stats { grid-template-columns: repeat(2, 1fr); }
+            .reports-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 900px) {
+            .stats-row { grid-template-columns: 1fr; }
+            .learner-stats { grid-template-columns: 1fr; }
+            .courses-grid { grid-template-columns: 1fr; }
+            .opportunities-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .sidebar { transform: translateX(-100%); }
+            .sidebar.open { transform: translateX(0); }
+            .dash-main { margin-left: 0; }
+            .dash-content { padding: 20px 16px; }
+            .topbar { padding: 14px 16px; }
+            .notification-dropdown { width: 90vw; right: 5vw; }
+        }
+
+        /* Animations */
+        @keyframes cardFadeIn {
+            from { opacity: 0; transform: translateY(16px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .stat-card, .analytics-card, .notifications-card, .students-table-card, .course-card, .opportunity-card {
+            animation: cardFadeIn 0.5s cubic-bezier(0.22,1,0.36,1) forwards;
+            opacity: 0;
+        }
+        .stat-card:nth-child(1) { animation-delay: 0.1s; }
+        .stat-card:nth-child(2) { animation-delay: 0.15s; }
+        .stat-card:nth-child(3) { animation-delay: 0.2s; }
+        .stat-card:nth-child(4) { animation-delay: 0.25s; }
+        .analytics-card:nth-child(1) { animation-delay: 0.25s; }
+        .analytics-card:nth-child(2) { animation-delay: 0.3s; }
+        .notifications-card { animation-delay: 0.35s; }
+    </style>
+</head>
+<body>
+
+    <div class="toast" id="toast">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        <span id="toastMsg">Success!</span>
+    </div>
+
+    <!-- Search Container -->
+    <div class="search-container" id="searchContainer">
+        <div class="search-box">
+            <div class="search-input-wrap">
+                <input type="text" placeholder="Search students, courses, analytics..." id="searchInput">
+                <button class="search-close" onclick="closeSearch()">
+                    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== AUTH SECTION ==================== -->
+    <div class="auth-wrapper" id="authWrapper">
+        <div class="auth-container">
+            <!-- LEFT BRAND PANEL -->
+            <div class="brand-panel">
+                <div class="brand-logo">
+                    <div class="logo-icon">
+                        <img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation Logo">
+                    </div>
+                    <div class="brand-logo-text">
+                        <span>Qatar Foundation</span>
+                        <span>مؤسسة قطر</span>
+                    </div>
+                </div>
+                <div class="brand-content">
+                    <h1>Universal Skills Passport</h1>
+                    <p>Manage and oversee the institutional skills tracking system with comprehensive admin controls.</p>
+                </div>
+            </div>
+
+            <!-- RIGHT FORM PANEL -->
+            <div class="form-panel">
+
+                <!-- ===== LOGIN ===== -->
+                <div class="form-page active" id="loginPage">
+                    <div class="form-logo">
+                        <img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation">
+                        <span>Qatar Foundation</span>
+                    </div>
+                    <div class="form-header">
+                        <div class="badge"><svg viewBox="0 0 24 24"><path d="M12 15l-2 5 2-2 2 2-2-5z"/><circle cx="12" cy="9" r="4"/><path d="M5.5 17.5A8.96 8.96 0 0 1 3 11a9 9 0 0 1 18 0c0 2.5-1 4.8-2.5 6.5"/></svg>Admin Login</div>
+                        <h2>Admin Portal</h2>
+                        <p>Sign in to access the administrative dashboard</p>
+                    </div>
+                    <form id="loginForm" novalidate>
+                        <div class="form-group">
+                            <label>Email Address <span class="required">*</span></label>
+                            <div class="input-wrap">
+                                <svg class="input-icon" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+                                <input type="email" id="loginEmail" placeholder="admin@qf.org.qa" autocomplete="email">
+                            </div>
+                            <div class="error-msg" id="loginEmailErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter a valid email address</span></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Password <span class="required">*</span></label>
+                            <div class="input-wrap">
+                                <svg class="input-icon" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                <input type="password" id="loginPassword" placeholder="Enter your password" autocomplete="current-password">
+                                <button type="button" class="toggle-password" onclick="togglePass('loginPassword',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                            </div>
+                            <div class="error-msg" id="loginPasswordErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter your password</span></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Captcha <span class="required">*</span></label>
+                            <div class="captcha-row">
+                                <div class="captcha-display">
+                                    <span class="captcha-text" id="loginCaptchaText"></span>
+                                    <button type="button" class="captcha-refresh" onclick="generateCaptcha('login')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button>
+                                </div>
+                                <div class="form-group" style="margin-bottom:0">
+                                    <div class="input-wrap">
+                                        <svg class="input-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg>
+                                        <input type="text" id="loginCaptchaInput" placeholder="Enter captcha" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="error-msg" id="loginCaptchaErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div>
+                        </div>
+                        <div class="form-options">
+                            <label class="remember-me"><input type="checkbox"><span class="checkmark"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Remember me</span></label>
+                            <button type="button" class="link-btn" onclick="showPage('forgotPage')">Forgot password?</button>
+                        </div>
+                        <button type="submit" class="btn-primary">Sign In</button>
+                    </form>
+                    <div class="form-footer">Don't have an account? <button type="button" class="link-btn" onclick="showPage('signupPage')">Create Account</button></div>
+                </div>
+
+                <!-- ===== SIGNUP ===== -->
+                <div class="form-page" id="signupPage">
+                    <button type="button" class="back-to-login" onclick="showPage('loginPage')"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>Back to Login</button>
+                    <div class="form-logo">
+                        <img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation">
+                        <span>Qatar Foundation</span>
+                    </div>
+                    <div class="form-header">
+                        <div class="badge"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>New Admin</div>
+                        <h2>Create Admin Account</h2>
+                        <p>Register for administrative access</p>
+                    </div>
+                    <form id="signupForm" novalidate>
+                        <div class="form-group">
+                            <label>Full Name <span class="required">*</span></label>
+                            <div class="input-wrap">
+                                <svg class="input-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                                <input type="text" id="signupName" placeholder="Enter your full name">
+                            </div>
+                            <div class="error-msg" id="signupNameErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter your full name</span></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address <span class="required">*</span></label>
+                            <div class="input-wrap">
+                                <svg class="input-icon" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+                                <input type="email" id="signupEmail" placeholder="admin@qf.org.qa">
+                            </div>
+                            <div class="error-msg" id="signupEmailErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter a valid email address</span></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Password <span class="required">*</span></label>
+                            <div class="input-wrap">
+                                <svg class="input-icon" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                <input type="password" id="signupPassword" placeholder="Min 8 characters" oninput="checkStrength(this.value)">
+                                <button type="button" class="toggle-password" onclick="togglePass('signupPassword',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                            </div>
+                            <div class="password-strength" id="strengthBars"><div class="strength-bar" id="str1"></div><div class="strength-bar" id="str2"></div><div class="strength-bar" id="str3"></div><div class="strength-bar" id="str4"></div></div>
+                            <div class="strength-label" id="strengthLabel"></div>
+                            <div class="error-msg" id="signupPasswordErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Password must be at least 8 characters</span></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm Password <span class="required">*</span></label>
+                            <div class="input-wrap">
+                                <svg class="input-icon" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                <input type="password" id="signupConfirmPassword" placeholder="Re-enter your password">
+                                <button type="button" class="toggle-password" onclick="togglePass('signupConfirmPassword',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                            </div>
+                            <div class="error-msg" id="signupConfirmPasswordErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Passwords do not match</span></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Captcha <span class="required">*</span></label>
+                            <div class="captcha-row">
+                                <div class="captcha-display"><span class="captcha-text" id="signupCaptchaText"></span><button type="button" class="captcha-refresh" onclick="generateCaptcha('signup')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div>
+                                <div class="form-group" style="margin-bottom:0"><div class="input-wrap"><svg class="input-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="signupCaptchaInput" placeholder="Enter captcha" autocomplete="off"></div></div>
+                            </div>
+                            <div class="error-msg" id="signupCaptchaErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div>
+                        </div>
+                        <button type="submit" class="btn-primary" style="margin-top:6px">Create Account</button>
+                    </form>
+                    <div class="form-footer">Already have an account? <button type="button" class="link-btn" onclick="showPage('loginPage')">Sign In</button></div>
+                </div>
+
+                <!-- ===== FORGOT PASSWORD ===== -->
+                <div class="form-page" id="forgotPage">
+                    <button type="button" class="back-to-login" onclick="showPage('loginPage')"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>Back to Login</button>
+                    <div class="form-logo">
+                        <img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation">
+                        <span>Qatar Foundation</span>
+                    </div>
+                    <div class="form-header">
+                        <div class="badge"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Account Recovery</div>
+                        <h2>Reset Password</h2>
+                        <p>Enter your registered email and we'll send you a reset link</p>
+                    </div>
+                    <form id="forgotForm" novalidate>
+                        <div class="form-group">
+                            <label>Email Address <span class="required">*</span></label>
+                            <div class="input-wrap"><svg class="input-icon" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg><input type="email" id="forgotEmail" placeholder="admin@qf.org.qa"></div>
+                            <div class="error-msg" id="forgotEmailErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter a valid email address</span></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Captcha <span class="required">*</span></label>
+                            <div class="captcha-row">
+                                <div class="captcha-display"><span class="captcha-text" id="forgotCaptchaText"></span><button type="button" class="captcha-refresh" onclick="generateCaptcha('forgot')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div>
+                                <div class="form-group" style="margin-bottom:0"><div class="input-wrap"><svg class="input-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="forgotCaptchaInput" placeholder="Enter captcha" autocomplete="off"></div></div>
+                            </div>
+                            <div class="error-msg" id="forgotCaptchaErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Reset Link</button>
+                    </form>
+                    <div class="form-footer">Remembered your password? <button type="button" class="link-btn" onclick="showPage('loginPage')">Sign In</button></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== DASHBOARD SECTION ==================== -->
+    <div class="dashboard-wrapper" id="dashboardWrapper">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF">
+                    <div class="sidebar-logo-text">
+                        <span>مؤسسة قطر</span>
+                        <span>Qatar Foundation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-profile">
+                <div class="profile-avatar" id="dashAvatar">MC</div>
+                <div class="profile-info">
+                    <div class="profile-name" id="dashName">Megan Carter</div>
+                    <div class="profile-role">Business Administrator</div>
+                </div>
+            </div>
+            <div class="sidebar-nav">
+                <div class="nav-label">Main Menu</div>
+                <button class="nav-item active" data-page="dashboard">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                    Dashboard
+                </button>
+                <button class="nav-item" data-page="learner">
+                    <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    Learner Management
+                </button>
+                <button class="nav-item" data-page="verifier">
+                    <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+                    Verifier Management
+                </button>
+                <button class="nav-item" data-page="skills">
+                    <svg viewBox="0 0 24 24"><path d="M12 15l-2 5 2-2 2 2-2-5z"/><circle cx="12" cy="9" r="4"/><path d="M5.5 17.5A8.96 8.96 0 0 1 3 11a9 9 0 0 1 18 0c0 2.5-1 4.8-2.5 6.5"/></svg>
+                    Skill & Badge Management
+                </button>
+                <button class="nav-item" data-page="opportunity">
+                    <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    Opportunity Management
+                </button>
+                <button class="nav-item" data-page="reports">
+                    <svg viewBox="0 0 24 24"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                    Reports and Analytics
+                </button>
+                <button class="nav-item" data-page="audit">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    Audit Logs & Quality Assurance
+                </button>
+            </div>
+            <div class="sidebar-footer">
+                <button class="nav-item logout" onclick="handleLogout()">
+                    <svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                    Sign Out
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main -->
+        <main class="dash-main">
+            <header class="topbar">
+                <div style="display:flex;align-items:center;gap:12px;">
+                    <button class="topbar-btn" id="menuToggle" onclick="document.getElementById('sidebar').classList.toggle('open')" style="display:none;">
+                        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    </button>
+                    <h2 id="pageTitle">Dashboard</h2>
+                </div>
+                <div class="topbar-actions">
+                    <button class="topbar-btn" onclick="openSearch()">
+                        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    </button>
+                    <button class="topbar-btn" id="notifBtn" onclick="toggleNotifications()">
+                        <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                        <span class="notif-badge">4</span>
+                    </button>
+                    <button class="topbar-btn" onclick="toggleTheme()">
+                        <svg viewBox="0 0 24 24" id="themeIcon"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </button>
+                    
+                    <!-- Notification Dropdown -->
+                    <div class="notification-dropdown" id="notificationDropdown">
+                        <div class="notification-header">
+                            <h3>Notifications</h3>
+                            <button class="mark-read-btn" onclick="markAllRead()">Mark all as read</button>
+                        </div>
+                        <div class="notification-list">
+                            <div class="notif-item unread">
+                                <div class="notif-item-header">
+                                    <span class="notif-title">New Badge Verification</span>
+                                    <span class="notif-time">2m ago</span>
+                                </div>
+                                <p class="notif-message">Sara Mohamed submitted a new badge for verification</p>
+                            </div>
+                            <div class="notif-item unread">
+                                <div class="notif-item-header">
+                                    <span class="notif-title">System Update</span>
+                                    <span class="notif-time">1h ago</span>
+                                </div>
+                                <p class="notif-message">System backup completed successfully</p>
+                            </div>
+                            <div class="notif-item">
+                                <div class="notif-item-header">
+                                    <span class="notif-title">New Registrations</span>
+                                    <span class="notif-time">3h ago</span>
+                                </div>
+                                <p class="notif-message">5 new student registrations approved</p>
+                            </div>
+                            <div class="notif-item">
+                                <div class="notif-item-header">
+                                    <span class="notif-title">Course Completion</span>
+                                    <span class="notif-time">5h ago</span>
+                                </div>
+                                <p class="notif-message">Digital Marketing course has 12 new completions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dash-content">
+                <!-- DASHBOARD SECTION -->
+                <div class="dash-section active" id="dashboardSection">
+                    <!-- Stats Row -->
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <h4>Total Students in School A</h4>
+                                <div class="stat-value">
+                                    <span>1,200</span>
+                                    <span class="stat-change positive">+10%</span>
+                                </div>
+                            </div>
+                            <div class="stat-icon green">
+                                <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <h4>Total Teachers in School A</h4>
+                                <div class="stat-value">
+                                    <span>150</span>
+                                    <span class="stat-change positive">+5%</span>
+                                </div>
+                            </div>
+                            <div class="stat-icon blue">
+                                <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <h4>Total Parent Management</h4>
+                                <div class="stat-value">
+                                    <span>1,260</span>
+                                    <span class="stat-change negative">-2%</span>
+                                </div>
+                            </div>
+                            <div class="stat-icon purple">
+                                <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Analytics Grid -->
+                    <div class="analytics-grid">
+                        <!-- Opportunity Analytics -->
+                        <div class="analytics-card">
+                            <div class="analytics-card-header">
+                                <div>
+                                    <h4>Opportunity Analytics</h4>
+                                </div>
+                                <button class="card-menu-btn">
+                                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+                                </button>
+                            </div>
+                            <div class="tabs">
+                                <button class="tab-btn active" onclick="changeChartPeriod('daily')">Daily</button>
+                                <button class="tab-btn" onclick="changeChartPeriod('weekly')">Weekly</button>
+                                <button class="tab-btn" onclick="changeChartPeriod('monthly')">Monthly</button>
+                                <button class="tab-btn" onclick="changeChartPeriod('quarterly')">Quarterly</button>
+                                <button class="tab-btn" onclick="changeChartPeriod('yearly')">Yearly</button>
+                            </div>
+                            <div class="line-chart-container">
+                                <svg class="line-chart" id="lineChart" viewBox="0 0 400 150" preserveAspectRatio="none">
+                                    <defs>
+                                        <linearGradient id="lineGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" style="stop-color:rgba(45,122,80,0.3)"/>
+                                            <stop offset="100%" style="stop-color:rgba(45,122,80,0)"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path id="linePath" d="M0,120 Q50,100 100,80 T200,60 T300,40 T400,30" fill="none" stroke="#2d7a50" stroke-width="2"/>
+                                    <path id="lineArea" d="M0,120 Q50,100 100,80 T200,60 T300,40 T400,30 L400,150 L0,150 Z" fill="url(#lineGradient)"/>
+                                </svg>
+                            </div>
+                            <div class="top-users-section">
+                                <h5>Top user</h5>
+                                <table class="top-users-table">
+                                    <thead>
+                                        <tr>
+                                            <th>UserName</th>
+                                            <th>Name</th>
+                                            <th>Account Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>john_doe</td>
+                                            <td>John Doe</td>
+                                            <td><span class="status-dot active"></span>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sarah_m</td>
+                                            <td>Sarah Mohamed</td>
+                                            <td><span class="status-dot active"></span>Active</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button class="view-more-btn">View More</button>
+                        </div>
+
+                        <!-- Platform Analytics -->
+                        <div class="analytics-card">
+                            <div class="analytics-card-header">
+                                <div>
+                                    <h4>Platform analytics</h4>
+                                    <p>Total Platform analytics for this week</p>
+                                </div>
+                                <button class="card-menu-btn">
+                                    <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                                </button>
+                            </div>
+                            <div class="bar-chart-container" id="platformBarChart">
+                                <div class="bar-item">
+                                    <div class="bar blue" style="height: 60px;"></div>
+                                    <span class="bar-label">group 1</span>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar green" style="height: 90px;"></div>
+                                    <span class="bar-label">group 2</span>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar orange" style="height: 45px;"></div>
+                                    <span class="bar-label">group 3</span>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar purple" style="height: 75px;"></div>
+                                    <span class="bar-label">group 4</span>
+                                </div>
+                            </div>
+                            <p style="font-size: 12px; color: var(--qf-text-light); margin-top: 12px;">Click here to view more detailed analytics</p>
+                            <button class="view-more-btn">View More</button>
+                        </div>
+                    </div>
+
+                    <!-- Notifications -->
+                    <div class="notifications-card">
+                        <h4>Notifications</h4>
+                        <div class="notification-item">
+                            The report analytics for this month is available in the platform, click <a href__="#">here</a> to view more
+                        </div>
+                        <div class="notification-item">
+                            There are 2 inactive student accounts. Click <a href__="#">here</a> to take action
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LEARNER MANAGEMENT SECTION -->
+                <div class="dash-section" id="learnerSection">
+                    <!-- Learner Stats -->
+                    <div class="learner-stats">
+                        <div class="learner-stat-card">
+                            <h5>Total Students</h5>
+                            <div class="number">1,200</div>
+                        </div>
+                        <div class="learner-stat-card">
+                            <h5>Logged In</h5>
+                            <div class="number">856</div>
+                        </div>
+                        <div class="learner-stat-card">
+                            <h5>Certified Students</h5>
+                            <div class="number">342</div>
+                        </div>
+                        <div class="learner-stat-card">
+                            <h5>Enrolled Students</h5>
+                            <div class="number">1,120</div>
+                        </div>
+                    </div>
+
+                    <!-- Students Table -->
+                    <div class="students-table-card">
+                        <h4>All Students</h4>
+                        <table class="students-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                    <th>Courses Enrolled</th>
+                                    <th>Certificates</th>
+                                    <th>Last Login</th>
+                                </tr>
+                            </thead>
+                            <tbody id="studentsTableBody">
+                                <tr>
+                                    <td>#1001</td>
+                                    <td>Ahmed Al-Mansoori</td>
+                                    <td>ahmed.m@qf.edu.qa</td>
+                                    <td><span class="badge logged-in">Logged In</span></td>
+                                    <td>5</td>
+                                    <td><span class="badge certified">3 Certified</span></td>
+                                    <td>2 hours ago</td>
+                                </tr>
+                                <tr>
+                                    <td>#1002</td>
+                                    <td>Fatima Al-Thani</td>
+                                    <td>fatima.t@qf.edu.qa</td>
+                                    <td><span class="badge enrolled">Enrolled</span></td>
+                                    <td>3</td>
+                                    <td><span class="badge in-progress">1 In Progress</span></td>
+                                    <td>1 day ago</td>
+                                </tr>
+                                <tr>
+                                    <td>#1003</td>
+                                    <td>Mohammed Hassan</td>
+                                    <td>mohammed.h@qf.edu.qa</td>
+                                    <td><span class="badge logged-in">Logged In</span></td>
+                                    <td>7</td>
+                                    <td><span class="badge certified">5 Certified</span></td>
+                                    <td>30 mins ago</td>
+                                </tr>
+                                <tr>
+                                    <td>#1004</td>
+                                    <td>Sarah Ahmed</td>
+                                    <td>sarah.a@qf.edu.qa</td>
+                                    <td><span class="badge enrolled">Enrolled</span></td>
+                                    <td>4</td>
+                                    <td><span class="badge in-progress">2 In Progress</span></td>
+                                    <td>3 hours ago</td>
+                                </tr>
+                                <tr>
+                                    <td>#1005</td>
+                                    <td>Omar Khalid</td>
+                                    <td>omar.k@qf.edu.qa</td>
+                                    <td><span class="badge logged-in">Logged In</span></td>
+                                    <td>6</td>
+                                    <td><span class="badge certified">4 Certified</span></td>
+                                    <td>15 mins ago</td>
+                                </tr>
+                                <tr>
+                                    <td>#1006</td>
+                                    <td>Noor Abdullah</td>
+                                    <td>noor.a@qf.edu.qa</td>
+                                    <td><span class="badge enrolled">Enrolled</span></td>
+                                    <td>2</td>
+                                    <td><span class="badge in-progress">1 In Progress</span></td>
+                                    <td>5 hours ago</td>
+                                </tr>
+                                <tr>
+                                    <td>#1007</td>
+                                    <td>Ali Mohamed</td>
+                                    <td>ali.m@qf.edu.qa</td>
+                                    <td><span class="badge logged-in">Logged In</span></td>
+                                    <td>8</td>
+                                    <td><span class="badge certified">6 Certified</span></td>
+                                    <td>1 hour ago</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Courses Grid -->
+                    <div class="students-table-card">
+                        <h4>Course Management</h4>
+                        <div class="courses-grid">
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div>
+                                        <h5>Digital Marketing Fundamentals</h5>
+                                        <div class="course-category">Marketing</div>
+                                    </div>
+                                </div>
+                                <div class="course-stats">
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Enrolled</div>
+                                        <div class="course-stat-value">245</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Completed</div>
+                                        <div class="course-stat-value">180</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">In Progress</div>
+                                        <div class="course-stat-value">45</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">50% Done</div>
+                                        <div class="course-stat-value">20</div>
+                                    </div>
+                                </div>
+                                <button class="view-course-btn" onclick="openCourseDetails('Digital Marketing Fundamentals', {enrolled: 245, completed: 180, inProgress: 45, halfDone: 20})">View Course Details</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div>
+                                        <h5>Web Development Bootcamp</h5>
+                                        <div class="course-category">Technology</div>
+                                    </div>
+                                </div>
+                                <div class="course-stats">
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Enrolled</div>
+                                        <div class="course-stat-value">189</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Completed</div>
+                                        <div class="course-stat-value">125</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">In Progress</div>
+                                        <div class="course-stat-value">48</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">50% Done</div>
+                                        <div class="course-stat-value">16</div>
+                                    </div>
+                                </div>
+                                <button class="view-course-btn" onclick="openCourseDetails('Web Development Bootcamp', {enrolled: 189, completed: 125, inProgress: 48, halfDone: 16})">View Course Details</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div>
+                                        <h5>Data Science with Python</h5>
+                                        <div class="course-category">Data Science</div>
+                                    </div>
+                                </div>
+                                <div class="course-stats">
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Enrolled</div>
+                                        <div class="course-stat-value">312</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Completed</div>
+                                        <div class="course-stat-value">198</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">In Progress</div>
+                                        <div class="course-stat-value">85</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">50% Done</div>
+                                        <div class="course-stat-value">29</div>
+                                    </div>
+                                </div>
+                                <button class="view-course-btn" onclick="openCourseDetails('Data Science with Python', {enrolled: 312, completed: 198, inProgress: 85, halfDone: 29})">View Course Details</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div>
+                                        <h5>UI/UX Design Masterclass</h5>
+                                        <div class="course-category">Design</div>
+                                    </div>
+                                </div>
+                                <div class="course-stats">
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Enrolled</div>
+                                        <div class="course-stat-value">156</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Completed</div>
+                                        <div class="course-stat-value">112</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">In Progress</div>
+                                        <div class="course-stat-value">32</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">50% Done</div>
+                                        <div class="course-stat-value">12</div>
+                                    </div>
+                                </div>
+                                <button class="view-course-btn" onclick="openCourseDetails('UI/UX Design Masterclass', {enrolled: 156, completed: 112, inProgress: 32, halfDone: 12})">View Course Details</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div>
+                                        <h5>Business Analytics</h5>
+                                        <div class="course-category">Business</div>
+                                    </div>
+                                </div>
+                                <div class="course-stats">
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Enrolled</div>
+                                        <div class="course-stat-value">201</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Completed</div>
+                                        <div class="course-stat-value">145</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">In Progress</div>
+                                        <div class="course-stat-value">42</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">50% Done</div>
+                                        <div class="course-stat-value">14</div>
+                                    </div>
+                                </div>
+                                <button class="view-course-btn" onclick="openCourseDetails('Business Analytics', {enrolled: 201, completed: 145, inProgress: 42, halfDone: 14})">View Course Details</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div>
+                                        <h5>Mobile App Development</h5>
+                                        <div class="course-category">Technology</div>
+                                    </div>
+                                </div>
+                                <div class="course-stats">
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Enrolled</div>
+                                        <div class="course-stat-value">178</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Completed</div>
+                                        <div class="course-stat-value">98</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">In Progress</div>
+                                        <div class="course-stat-value">65</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">50% Done</div>
+                                        <div class="course-stat-value">15</div>
+                                    </div>
+                                </div>
+                                <button class="view-course-btn" onclick="openCourseDetails('Mobile App Development', {enrolled: 178, completed: 98, inProgress: 65, halfDone: 15})">View Course Details</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div>
+                                        <h5>Cybersecurity Essentials</h5>
+                                        <div class="course-category">Security</div>
+                                    </div>
+                                </div>
+                                <div class="course-stats">
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Enrolled</div>
+                                        <div class="course-stat-value">267</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Completed</div>
+                                        <div class="course-stat-value">189</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">In Progress</div>
+                                        <div class="course-stat-value">55</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">50% Done</div>
+                                        <div class="course-stat-value">23</div>
+                                    </div>
+                                </div>
+                                <button class="view-course-btn" onclick="openCourseDetails('Cybersecurity Essentials', {enrolled: 267, completed: 189, inProgress: 55, halfDone: 23})">View Course Details</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div>
+                                        <h5>Project Management Professional</h5>
+                                        <div class="course-category">Management</div>
+                                    </div>
+                                </div>
+                                <div class="course-stats">
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Enrolled</div>
+                                        <div class="course-stat-value">234</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Completed</div>
+                                        <div class="course-stat-value">167</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">In Progress</div>
+                                        <div class="course-stat-value">52</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">50% Done</div>
+                                        <div class="course-stat-value">15</div>
+                                    </div>
+                                </div>
+                                <button class="view-course-btn" onclick="openCourseDetails('Project Management Professional', {enrolled: 234, completed: 167, inProgress: 52, halfDone: 15})">View Course Details</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div>
+                                        <h5>Artificial Intelligence Basics</h5>
+                                        <div class="course-category">AI/ML</div>
+                                    </div>
+                                </div>
+                                <div class="course-stats">
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Enrolled</div>
+                                        <div class="course-stat-value">298</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Completed</div>
+                                        <div class="course-stat-value">176</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">In Progress</div>
+                                        <div class="course-stat-value">98</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">50% Done</div>
+                                        <div class="course-stat-value">24</div>
+                                    </div>
+                                </div>
+                                <button class="view-course-btn" onclick="openCourseDetails('Artificial Intelligence Basics', {enrolled: 298, completed: 176, inProgress: 98, halfDone: 24})">View Course Details</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div>
+                                        <h5>Cloud Computing with AWS</h5>
+                                        <div class="course-category">Cloud</div>
+                                    </div>
+                                </div>
+                                <div class="course-stats">
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Enrolled</div>
+                                        <div class="course-stat-value">221</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Completed</div>
+                                        <div class="course-stat-value">143</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">In Progress</div>
+                                        <div class="course-stat-value">62</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">50% Done</div>
+                                        <div class="course-stat-value">16</div>
+                                    </div>
+                                </div>
+                                <button class="view-course-btn" onclick="openCourseDetails('Cloud Computing with AWS', {enrolled: 221, completed: 143, inProgress: 62, halfDone: 16})">View Course Details</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div>
+                                        <h5>Blockchain Technology</h5>
+                                        <div class="course-category">Emerging Tech</div>
+                                    </div>
+                                </div>
+                                <div class="course-stats">
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Enrolled</div>
+                                        <div class="course-stat-value">187</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Completed</div>
+                                        <div class="course-stat-value">98</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">In Progress</div>
+                                        <div class="course-stat-value">71</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">50% Done</div>
+                                        <div class="course-stat-value">18</div>
+                                    </div>
+                                </div>
+                                <button class="view-course-btn" onclick="openCourseDetails('Blockchain Technology', {enrolled: 187, completed: 98, inProgress: 71, halfDone: 18})">View Course Details</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div>
+                                        <h5>Content Marketing Strategy</h5>
+                                        <div class="course-category">Marketing</div>
+                                    </div>
+                                </div>
+                                <div class="course-stats">
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Enrolled</div>
+                                        <div class="course-stat-value">165</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Completed</div>
+                                        <div class="course-stat-value">123</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">In Progress</div>
+                                        <div class="course-stat-value">35</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">50% Done</div>
+                                        <div class="course-stat-value">7</div>
+                                    </div>
+                                </div>
+                                <button class="view-course-btn" onclick="openCourseDetails('Content Marketing Strategy', {enrolled: 165, completed: 123, inProgress: 35, halfDone: 7})">View Course Details</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div>
+                                        <h5>Financial Management</h5>
+                                        <div class="course-category">Finance</div>
+                                    </div>
+                                </div>
+                                <div class="course-stats">
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Enrolled</div>
+                                        <div class="course-stat-value">209</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Completed</div>
+                                        <div class="course-stat-value">156</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">In Progress</div>
+                                        <div class="course-stat-value">41</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">50% Done</div>
+                                        <div class="course-stat-value">12</div>
+                                    </div>
+                                </div>
+                                <button class="view-course-btn" onclick="openCourseDetails('Financial Management', {enrolled: 209, completed: 156, inProgress: 41, halfDone: 12})">View Course Details</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div>
+                                        <h5>Leadership & Communication</h5>
+                                        <div class="course-category">Soft Skills</div>
+                                    </div>
+                                </div>
+                                <div class="course-stats">
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Enrolled</div>
+                                        <div class="course-stat-value">276</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Completed</div>
+                                        <div class="course-stat-value">198</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">In Progress</div>
+                                        <div class="course-stat-value">63</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">50% Done</div>
+                                        <div class="course-stat-value">15</div>
+                                    </div>
+                                </div>
+                                <button class="view-course-btn" onclick="openCourseDetails('Leadership & Communication', {enrolled: 276, completed: 198, inProgress: 63, halfDone: 15})">View Course Details</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-header">
+                                    <div>
+                                        <h5>Advanced Excel & Analytics</h5>
+                                        <div class="course-category">Data Analysis</div>
+                                    </div>
+                                </div>
+                                <div class="course-stats">
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Enrolled</div>
+                                        <div class="course-stat-value">198</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">Completed</div>
+                                        <div class="course-stat-value">145</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">In Progress</div>
+                                        <div class="course-stat-value">38</div>
+                                    </div>
+                                    <div class="course-stat">
+                                        <div class="course-stat-label">50% Done</div>
+                                        <div class="course-stat-value">15</div>
+                                    </div>
+                                </div>
+                                <button class="view-course-btn" onclick="openCourseDetails('Advanced Excel & Analytics', {enrolled: 198, completed: 145, inProgress: 38, halfDone: 15})">View Course Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OPPORTUNITY MANAGEMENT SECTION -->
+                <div class="dash-section" id="opportunitySection">
+                    <div class="opportunity-header">
+                        <h4 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 600; color: var(--qf-text);">Opportunities & Certifications</h4>
+                        <button class="add-opportunity-btn" onclick="openOpportunityModal()">
+                            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            Add New Opportunity
+                        </button>
+                    </div>
+
+                    <div class="opportunities-grid">
+                        <!-- Opportunity Card 1 -->
+                        <div class="opportunity-card">
+                            <div class="opportunity-card-header">
+                                <h5>Full Stack Web Development Program</h5>
+                                <div class="opportunity-meta">
+                                    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>6 Months</span>
+                                    <span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Feb 2026</span>
+                                </div>
+                            </div>
+                            <p class="opportunity-description">Comprehensive program covering HTML, CSS, JavaScript, React, Node.js, and MongoDB with real-world project experience.</p>
+                            <div class="opportunity-skills">
+                                <div class="opportunity-skills-label">Skills You'll Gain</div>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">HTML/CSS</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">MongoDB</span>
+                                </div>
+                            </div>
+                            <div class="opportunity-footer">
+                                <span class="applicants-count">45 applicants</span>
+                                <button class="view-course-btn" style="width: auto; padding: 8px 16px;">View Details</button>
+                            </div>
+                        </div>
+
+                        <!-- Opportunity Card 2 -->
+                        <div class="opportunity-card">
+                            <div class="opportunity-card-header">
+                                <h5>Data Science & AI Certification</h5>
+                                <div class="opportunity-meta">
+                                    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>4 Months</span>
+                                    <span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Mar 2026</span>
+                                </div>
+                            </div>
+                            <p class="opportunity-description">Learn Python programming, machine learning algorithms, deep learning, and natural language processing with industry experts.</p>
+                            <div class="opportunity-skills">
+                                <div class="opportunity-skills-label">Skills You'll Gain</div>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Machine Learning</span>
+                                    <span class="skill-tag">TensorFlow</span>
+                                    <span class="skill-tag">Data Analysis</span>
+                                </div>
+                            </div>
+                            <div class="opportunity-footer">
+                                <span class="applicants-count">67 applicants</span>
+                                <button class="view-course-btn" style="width: auto; padding: 8px 16px;">View Details</button>
+                            </div>
+                        </div>
+
+                        <!-- Opportunity Card 3 -->
+                        <div class="opportunity-card">
+                            <div class="opportunity-card-header">
+                                <h5>Digital Marketing Specialist</h5>
+                                <div class="opportunity-meta">
+                                    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>3 Months</span>
+                                    <span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Feb 2026</span>
+                                </div>
+                            </div>
+                            <p class="opportunity-description">Master SEO, social media marketing, content strategy, email campaigns, and analytics with hands-on projects.</p>
+                            <div class="opportunity-skills">
+                                <div class="opportunity-skills-label">Skills You'll Gain</div>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">SEO</span>
+                                    <span class="skill-tag">Social Media</span>
+                                    <span class="skill-tag">Content Marketing</span>
+                                    <span class="skill-tag">Analytics</span>
+                                </div>
+                            </div>
+                            <div class="opportunity-footer">
+                                <span class="applicants-count">89 applicants</span>
+                                <button class="view-course-btn" style="width: auto; padding: 8px 16px;">View Details</button>
+                            </div>
+                        </div>
+
+                        <!-- Opportunity Card 4 -->
+                        <div class="opportunity-card">
+                            <div class="opportunity-card-header">
+                                <h5>Cybersecurity Professional</h5>
+                                <div class="opportunity-meta">
+                                    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5 Months</span>
+                                    <span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Apr 2026</span>
+                                </div>
+                            </div>
+                            <p class="opportunity-description">Learn network security, ethical hacking, penetration testing, and security architecture with certified instructors.</p>
+                            <div class="opportunity-skills">
+                                <div class="opportunity-skills-label">Skills You'll Gain</div>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">Network Security</span>
+                                    <span class="skill-tag">Ethical Hacking</span>
+                                    <span class="skill-tag">Penetration Testing</span>
+                                    <span class="skill-tag">Risk Management</span>
+                                </div>
+                            </div>
+                            <div class="opportunity-footer">
+                                <span class="applicants-count">52 applicants</span>
+                                <button class="view-course-btn" style="width: auto; padding: 8px 16px;">View Details</button>
+                            </div>
+                        </div>
+
+                        <!-- Opportunity Card 5 -->
+                        <div class="opportunity-card">
+                            <div class="opportunity-card-header">
+                                <h5>Cloud Architecture & DevOps</h5>
+                                <div class="opportunity-meta">
+                                    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>4 Months</span>
+                                    <span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Mar 2026</span>
+                                </div>
+                            </div>
+                            <p class="opportunity-description">Master AWS, Azure, Docker, Kubernetes, CI/CD pipelines, and infrastructure automation for modern cloud solutions.</p>
+                            <div class="opportunity-skills">
+                                <div class="opportunity-skills-label">Skills You'll Gain</div>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">AWS</span>
+                                    <span class="skill-tag">Docker</span>
+                                    <span class="skill-tag">Kubernetes</span>
+                                    <span class="skill-tag">CI/CD</span>
+                                    <span class="skill-tag">Terraform</span>
+                                </div>
+                            </div>
+                            <div class="opportunity-footer">
+                                <span class="applicants-count">38 applicants</span>
+                                <button class="view-course-btn" style="width: auto; padding: 8px 16px;">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REPORTS AND ANALYTICS SECTION -->
+                <div class="dash-section" id="reportsSection">
+                    <h4 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 600; color: var(--qf-text); margin-bottom: 24px;">Reports & Analytics</h4>
+                    
+                    <!-- Student Flow Stats -->
+                    <div class="stats-row" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 24px;">
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <h4>New Students This Month</h4>
+                                <div class="stat-value">
+                                    <span>156</span>
+                                    <span class="stat-change positive">+24%</span>
+                                </div>
+                            </div>
+                            <div class="stat-icon green">
+                                <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <h4>Students Completed Courses</h4>
+                                <div class="stat-value">
+                                    <span>892</span>
+                                    <span class="stat-change positive">+15%</span>
+                                </div>
+                            </div>
+                            <div class="stat-icon blue">
+                                <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <h4>Externally Verified</h4>
+                                <div class="stat-value">
+                                    <span>234</span>
+                                    <span class="stat-change positive">+8%</span>
+                                </div>
+                            </div>
+                            <div class="stat-icon purple">
+                                <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-info">
+                                <h4>Students Left Platform</h4>
+                                <div class="stat-value">
+                                    <span>23</span>
+                                    <span class="stat-change negative">-12%</span>
+                                </div>
+                            </div>
+                            <div class="stat-icon orange">
+                                <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Analytics Grid -->
+                    <div class="reports-grid">
+                        <!-- Student Engagement Chart -->
+                        <div class="analytics-card">
+                            <div class="analytics-card-header">
+                                <div>
+                                    <h4>Student Engagement Trends</h4>
+                                    <p>Monthly active students over the year</p>
+                                </div>
+                            </div>
+                            <div class="line-chart-container">
+                                <svg class="line-chart" viewBox="0 0 400 150" preserveAspectRatio="none">
+                                    <defs>
+                                        <linearGradient id="engagementGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" style="stop-color:rgba(74,144,217,0.3)"/>
+                                            <stop offset="100%" style="stop-color:rgba(74,144,217,0)"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M0,100 L33,95 L66,85 L100,90 L133,75 L166,70 L200,65 L233,55 L266,50 L300,45 L333,40 L366,35 L400,30" fill="none" stroke="#4a90d9" stroke-width="2"/>
+                                    <path d="M0,100 L33,95 L66,85 L100,90 L133,75 L166,70 L200,65 L233,55 L266,50 L300,45 L333,40 L366,35 L400,30 L400,150 L0,150 Z" fill="url(#engagementGradient)"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Completion Rates -->
+                        <div class="analytics-card">
+                            <div class="analytics-card-header">
+                                <div>
+                                    <h4>Course Completion Rates</h4>
+                                    <p>By category</p>
+                                </div>
+                            </div>
+                            <div class="bar-chart-container">
+                                <div class="bar-item">
+                                    <div class="bar blue" style="height: 85px;"></div>
+                                    <span class="bar-label">Tech</span>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar green" style="height: 72px;"></div>
+                                    <span class="bar-label">Business</span>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar orange" style="height: 95px;"></div>
+                                    <span class="bar-label">Design</span>
+                                </div>
+                                <div class="bar-item">
+                                    <div class="bar purple" style="height: 68px;"></div>
+                                    <span class="bar-label">Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Verification Status -->
+                        <div class="analytics-card">
+                            <div class="analytics-card-header">
+                                <div>
+                                    <h4>Verification Status</h4>
+                                    <p>External verification tracking</p>
+                                </div>
+                            </div>
+                            <div class="students-table-card" style="box-shadow: none; padding: 0;">
+                                <table class="students-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Category</th>
+                                            <th>Verified</th>
+                                            <th>Pending</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Certifications</td>
+                                            <td><span class="badge certified">234</span></td>
+                                            <td>45</td>
+                                            <td>279</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Skills Assessments</td>
+                                            <td><span class="badge certified">567</span></td>
+                                            <td>89</td>
+                                            <td>656</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Badges</td>
+                                            <td><span class="badge certified">1,234</span></td>
+                                            <td>156</td>
+                                            <td>1,390</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Student Level Distribution -->
+                        <div class="analytics-card">
+                            <div class="analytics-card-header">
+                                <div>
+                                    <h4>Student Level Distribution</h4>
+                                    <p>Account tier breakdown</p>
+                                </div>
+                            </div>
+                            <div class="students-table-card" style="box-shadow: none; padding: 0;">
+                                <table class="students-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Level</th>
+                                            <th>Students</th>
+                                            <th>Percentage</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Beginner</td>
+                                            <td>456</td>
+                                            <td><span class="badge enrolled">38%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Intermediate</td>
+                                            <td>512</td>
+                                            <td><span class="badge in-progress">42.7%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Advanced</td>
+                                            <td>189</td>
+                                            <td><span class="badge certified">15.8%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Expert</td>
+                                            <td>43</td>
+                                            <td><span class="badge certified">3.5%</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Course Details Modal -->
+    <div class="modal" id="courseModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalCourseTitle">Course Details</h3>
+                <button class="close-modal" onclick="closeCourseModal()">
+                    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="course-detail-stats" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px;">
+                <div class="course-detail-stat" style="background: var(--qf-mint-pale); padding: 16px; border-radius: 12px; text-align: center;">
+                    <div class="course-detail-stat-label" style="font-size: 12px; color: var(--qf-text-light); margin-bottom: 8px;">Total Enrolled</div>
+                    <div class="course-detail-stat-value" id="modalEnrolled" style="font-size: 24px; font-weight: 700; color: var(--qf-text);">0</div>
+                </div>
+                <div class="course-detail-stat" style="background: var(--qf-mint-pale); padding: 16px; border-radius: 12px; text-align: center;">
+                    <div class="course-detail-stat-label" style="font-size: 12px; color: var(--qf-text-light); margin-bottom: 8px;">Certified</div>
+                    <div class="course-detail-stat-value" id="modalCompleted" style="font-size: 24px; font-weight: 700; color: var(--qf-text);">0</div>
+                </div>
+                <div class="course-detail-stat" style="background: var(--qf-mint-pale); padding: 16px; border-radius: 12px; text-align: center;">
+                    <div class="course-detail-stat-label" style="font-size: 12px; color: var(--qf-text-light); margin-bottom: 8px;">In Progress</div>
+                    <div class="course-detail-stat-value" id="modalInProgress" style="font-size: 24px; font-weight: 700; color: var(--qf-text);">0</div>
+                </div>
+                <div class="course-detail-stat" style="background: var(--qf-mint-pale); padding: 16px; border-radius: 12px; text-align: center;">
+                    <div class="course-detail-stat-label" style="font-size: 12px; color: var(--qf-text-light); margin-bottom: 8px;">50% Complete</div>
+                    <div class="course-detail-stat-value" id="modalHalfDone" style="font-size: 24px; font-weight: 700; color: var(--qf-text);">0</div>
+                </div>
+            </div>
+            <div class="students-table-card" style="box-shadow: none; padding: 0;">
+                <h4>Enrolled Students</h4>
+                <table class="students-table">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Email</th>
+                            <th>Enrollment Date</th>
+                            <th>Progress</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ahmed Al-Mansoori</td>
+                            <td>ahmed.m@qf.edu.qa</td>
+                            <td>Jan 15, 2026</td>
+                            <td>100%</td>
+                            <td><span class="badge certified">Certified</span></td>
+                        </tr>
+                        <tr>
+                            <td>Fatima Al-Thani</td>
+                            <td>fatima.t@qf.edu.qa</td>
+                            <td>Jan 20, 2026</td>
+                            <td>50%</td>
+                            <td><span class="badge in-progress">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mohammed Hassan</td>
+                            <td>mohammed.h@qf.edu.qa</td>
+                            <td>Jan 10, 2026</td>
+                            <td>100%</td>
+                            <td><span class="badge certified">Certified</span></td>
+                        </tr>
+                        <tr>
+                            <td>Sarah Ahmed</td>
+                            <td>sarah.a@qf.edu.qa</td>
+                            <td>Jan 25, 2026</td>
+                            <td>75%</td>
+                            <td><span class="badge in-progress">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>Omar Khalid</td>
+                            <td>omar.k@qf.edu.qa</td>
+                            <td>Jan 5, 2026</td>
+                            <td>100%</td>
+                            <td><span class="badge certified">Certified</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Opportunity Modal -->
+    <div class="modal" id="opportunityModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add New Opportunity</h3>
+                <button class="close-modal" onclick="closeOpportunityModal()">
+                    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <form id="opportunityForm">
+                <div class="form-group">
+                    <label>Opportunity Name <span class="required">*</span></label>
+                    <div class="input-wrap">
+                        <svg class="input-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        <input type="text" placeholder="e.g. Full Stack Web Development" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Duration <span class="required">*</span></label>
+                    <div class="input-wrap">
+                        <svg class="input-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <input type="text" placeholder="e.g. 6 Months" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Start Date <span class="required">*</span></label>
+                    <div class="input-wrap">
+                        <svg class="input-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <input type="date" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Description <span class="required">*</span></label>
+                    <div class="input-wrap">
+                        <svg class="input-icon" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                        <textarea placeholder="Describe the opportunity and what participants will learn..." required></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Skills to Gain (comma separated) <span class="required">*</span></label>
+                    <div class="input-wrap">
+                        <svg class="input-icon" viewBox="0 0 24 24"><path d="M12 15l-2 5 2-2 2 2-2-5z"/><circle cx="12" cy="9" r="4"/></svg>
+                        <input type="text" placeholder="e.g. HTML, CSS, JavaScript, React" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Category <span class="required">*</span></label>
+                    <div class="input-wrap">
+                        <svg class="input-icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                        <select required>
+                            <option value="">Select Category</option>
+                            <option value="technology">Technology</option>
+                            <option value="business">Business</option>
+                            <option value="design">Design</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="data">Data Science</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Future Opportunities <span class="required">*</span></label>
+                    <div class="input-wrap">
+                        <svg class="input-icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <textarea placeholder="Describe career paths and opportunities after completion..." required></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Maximum Applicants</label>
+                    <div class="input-wrap">
+                        <svg class="input-icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <input type="number" placeholder="e.g. 100">
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary">Create Opportunity</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // ===== CAPTCHA =====
+        const captchas = { login:'', signup:'', forgot:'' };
+        function generateCaptcha(type) {
+            const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz23456789';
+            let code = '';
+            for (let i = 0; i < 5; i++) code += chars.charAt(Math.floor(Math.random() * chars.length));
+            captchas[type] = code;
+            document.getElementById(type + 'CaptchaText').textContent = code;
+        }
+        generateCaptcha('login');
+        generateCaptcha('signup');
+        generateCaptcha('forgot');
+
+        // ===== PAGE NAVIGATION =====
+        function showPage(pageId) {
+            document.querySelectorAll('.form-page').forEach(p => p.classList.remove('active'));
+            setTimeout(() => document.getElementById(pageId).classList.add('active'), 50);
+            document.querySelectorAll('.error-msg').forEach(e => e.classList.remove('show'));
+            document.querySelectorAll('input').forEach(i => i.classList.remove('error'));
+        }
+
+        function togglePass(inputId, btn) {
+            const input = document.getElementById(inputId);
+            const isPass = input.type === 'password';
+            input.type = isPass ? 'text' : 'password';
+            btn.innerHTML = isPass
+                ? '<svg viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>'
+                : '<svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>';
+        }
+
+        // ===== HELPERS =====
+        function showError(id, msg) {
+            const el = document.getElementById(id);
+            if (msg) el.querySelector('span').textContent = msg;
+            el.classList.add('show');
+        }
+        function clearAllErrors(formId) {
+            document.querySelectorAll('#' + formId + ' .error-msg').forEach(e => e.classList.remove('show'));
+            document.querySelectorAll('#' + formId + ' input').forEach(i => i.classList.remove('error'));
+        }
+        function shakeForm(formId) {
+            const form = document.getElementById(formId);
+            form.classList.add('shake');
+            setTimeout(() => form.classList.remove('shake'), 400);
+        }
+        function isValidEmail(email) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); }
+        function showToast(msg) {
+            document.getElementById('toastMsg').textContent = msg;
+            document.getElementById('toast').classList.add('show');
+            setTimeout(() => document.getElementById('toast').classList.remove('show'), 3000);
+        }
+
+        function checkStrength(val) {
+            let score = 0;
+            if (val.length >= 8) score++;
+            if (/[A-Z]/.test(val)) score++;
+            if (/[0-9]/.test(val)) score++;
+            if (/[^A-Za-z0-9]/.test(val)) score++;
+            const labels = ['','Weak','Medium','Strong','Very Strong'];
+            const classes = ['','weak','medium','strong','very-strong'];
+            for (let i = 1; i <= 4; i++) {
+                const bar = document.getElementById('str' + i);
+                bar.className = 'strength-bar';
+                if (i <= score) bar.classList.add(classes[score]);
+            }
+            document.getElementById('strengthLabel').textContent = val.length > 0 ? labels[score] : '';
+        }
+
+        // ===== SHOW DASHBOARD =====
+        function showDashboard(email) {
+            document.getElementById('authWrapper').style.display = 'none';
+            document.getElementById('dashboardWrapper').classList.add('active');
+            document.body.style.alignItems = 'stretch';
+
+            // Personalize
+            const name = email.split('@')[0];
+            const displayName = name.charAt(0).toUpperCase() + name.slice(1);
+            document.getElementById('dashName').textContent = displayName;
+            document.getElementById('dashAvatar').textContent = displayName.substring(0, 2).toUpperCase();
+
+            // Show menu toggle on mobile
+            if (window.innerWidth <= 768) {
+                document.getElementById('menuToggle').style.display = 'flex';
+            }
+        }
+
+        function handleLogout() {
+            document.getElementById('dashboardWrapper').classList.remove('active');
+            document.getElementById('authWrapper').style.display = 'flex';
+            document.body.style.alignItems = '';
+            showToast('Signed out successfully');
+            showPage('loginPage');
+        }
+
+        // ===== NAV ITEMS =====
+        document.querySelectorAll('.nav-item[data-page]').forEach(item => {
+            item.addEventListener('click', function() {
+                const page = this.getAttribute('data-page');
+                document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Hide all sections
+                document.querySelectorAll('.dash-section').forEach(s => s.classList.remove('active'));
+                
+                // Show selected section
+                if (page === 'dashboard') {
+                    document.getElementById('dashboardSection').classList.add('active');
+                    document.getElementById('pageTitle').textContent = 'Dashboard';
+                } else if (page === 'learner') {
+                    document.getElementById('learnerSection').classList.add('active');
+                    document.getElementById('pageTitle').textContent = 'Learner Management';
+                } else if (page === 'opportunity') {
+                    document.getElementById('opportunitySection').classList.add('active');
+                    document.getElementById('pageTitle').textContent = 'Opportunity Management';
+                } else if (page === 'reports') {
+                    document.getElementById('reportsSection').classList.add('active');
+                    document.getElementById('pageTitle').textContent = 'Reports and Analytics';
+                }
+            });
+        });
+
+        // ===== TABS =====
+        function changeChartPeriod(period) {
+            // Update active tab
+            document.querySelectorAll('.tabs .tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.toLowerCase() === period) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Chart data for different periods
+            const chartData = {
+                daily: 'M0,120 Q50,110 100,90 T200,70 T300,50 T400,40',
+                weekly: 'M0,110 Q50,95 100,85 T200,65 T300,45 T400,35',
+                monthly: 'M0,100 Q50,85 100,75 T200,55 T300,40 T400,30',
+                quarterly: 'M0,90 Q50,75 100,65 T200,50 T300,35 T400,25',
+                yearly: 'M0,80 Q50,65 100,55 T200,40 T300,30 T400,20'
+            };
+
+            const linePath = document.getElementById('linePath');
+            const lineArea = document.getElementById('lineArea');
+            
+            const path = chartData[period];
+            linePath.setAttribute('d', path);
+            lineArea.setAttribute('d', path + ' L400,150 L0,150 Z');
+        }
+
+        // ===== NOTIFICATIONS =====
+        function toggleNotifications() {
+            const dropdown = document.getElementById('notificationDropdown');
+            dropdown.classList.toggle('active');
+        }
+
+        function markAllRead() {
+            document.querySelectorAll('.notif-item.unread').forEach(item => {
+                item.classList.remove('unread');
+            });
+            showToast('All notifications marked as read');
+        }
+
+        // Close notification dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            const dropdown = document.getElementById('notificationDropdown');
+            const btn = document.getElementById('notifBtn');
+            if (!dropdown.contains(e.target) && !btn.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+
+        // ===== THEME TOGGLE =====
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            
+            // Update icon
+            const icon = document.getElementById('themeIcon');
+            if (newTheme === 'dark') {
+                icon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+            } else {
+                icon.innerHTML = '<circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>';
+            }
+        }
+
+        // ===== SEARCH =====
+        function openSearch() {
+            document.getElementById('searchContainer').classList.add('active');
+            document.getElementById('searchInput').focus();
+        }
+
+        function closeSearch() {
+            document.getElementById('searchContainer').classList.remove('active');
+        }
+
+        // Close search on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeSearch();
+                closeCourseModal();
+                closeOpportunityModal();
+            }
+        });
+
+        // Close search when clicking outside
+        document.getElementById('searchContainer').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeSearch();
+            }
+        });
+
+        // ===== COURSE MODAL =====
+        function openCourseDetails(courseName, stats) {
+            document.getElementById('modalCourseTitle').textContent = courseName;
+            document.getElementById('modalEnrolled').textContent = stats.enrolled;
+            document.getElementById('modalCompleted').textContent = stats.completed;
+            document.getElementById('modalInProgress').textContent = stats.inProgress;
+            document.getElementById('modalHalfDone').textContent = stats.halfDone;
+            document.getElementById('courseModal').classList.add('active');
+        }
+
+        function closeCourseModal() {
+            document.getElementById('courseModal').classList.remove('active');
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('courseModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeCourseModal();
+            }
+        });
+
+        // ===== OPPORTUNITY MODAL =====
+        function openOpportunityModal() {
+            document.getElementById('opportunityModal').classList.add('active');
+        }
+
+        function closeOpportunityModal() {
+            document.getElementById('opportunityModal').classList.remove('active');
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('opportunityModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeOpportunityModal();
+            }
+        });
+
+        // Handle opportunity form submission
+        document.getElementById('opportunityForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            showToast('Opportunity created successfully!');
+            closeOpportunityModal();
+            this.reset();
+        });
+
+        // ===== LOGIN =====
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            clearAllErrors('loginForm');
+            let valid = true;
+            const email = document.getElementById('loginEmail').value.trim();
+            const password = document.getElementById('loginPassword').value.trim();
+            const captchaInput = document.getElementById('loginCaptchaInput').value.trim();
+
+            if (!email || !isValidEmail(email)) { showError('loginEmailErr'); document.getElementById('loginEmail').classList.add('error'); valid = false; }
+            if (!password) { showError('loginPasswordErr','Please enter your password'); document.getElementById('loginPassword').classList.add('error'); valid = false; }
+            if (!captchaInput) { showError('loginCaptchaErr','Please enter the captcha code'); valid = false; }
+            else if (captchaInput !== captchas.login) { showError('loginCaptchaErr','Captcha does not match. Please try again.'); valid = false; generateCaptcha('login'); }
+
+            if (!valid) { shakeForm('loginForm'); return; }
+
+            showToast('Login successful! Redirecting...');
+            setTimeout(() => showDashboard(email), 1200);
+            generateCaptcha('login');
+        });
+
+        // ===== SIGNUP =====
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            clearAllErrors('signupForm');
+            let valid = true;
+            const name = document.getElementById('signupName').value.trim();
+            const email = document.getElementById('signupEmail').value.trim();
+            const password = document.getElementById('signupPassword').value.trim();
+            const confirmPassword = document.getElementById('signupConfirmPassword').value.trim();
+            const captchaInput = document.getElementById('signupCaptchaInput').value.trim();
+
+            if (!name) { showError('signupNameErr'); document.getElementById('signupName').classList.add('error'); valid = false; }
+            if (!email || !isValidEmail(email)) { showError('signupEmailErr'); document.getElementById('signupEmail').classList.add('error'); valid = false; }
+            if (!password || password.length < 8) { showError('signupPasswordErr'); document.getElementById('signupPassword').classList.add('error'); valid = false; }
+            if (!confirmPassword || password !== confirmPassword) { showError('signupConfirmPasswordErr'); document.getElementById('signupConfirmPassword').classList.add('error'); valid = false; }
+            if (!captchaInput) { showError('signupCaptchaErr','Please enter the captcha code'); valid = false; }
+            else if (captchaInput !== captchas.signup) { showError('signupCaptchaErr','Captcha does not match.'); valid = false; generateCaptcha('signup'); }
+
+            if (!valid) { shakeForm('signupForm'); return; }
+            showToast('Account created successfully!');
+            generateCaptcha('signup');
+            this.reset(); checkStrength('');
+            setTimeout(() => showPage('loginPage'), 1500);
+        });
+
+        // ===== FORGOT =====
+        document.getElementById('forgotForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            clearAllErrors('forgotForm');
+            let valid = true;
+            const email = document.getElementById('forgotEmail').value.trim();
+            const captchaInput = document.getElementById('forgotCaptchaInput').value.trim();
+
+            if (!email || !isValidEmail(email)) { showError('forgotEmailErr'); document.getElementById('forgotEmail').classList.add('error'); valid = false; }
+            if (!captchaInput) { showError('forgotCaptchaErr','Please enter the captcha code'); valid = false; }
+            else if (captchaInput !== captchas.forgot) { showError('forgotCaptchaErr','Captcha does not match.'); valid = false; generateCaptcha('forgot'); }
+
+            if (!valid) { shakeForm('forgotForm'); return; }
+            showToast('Reset link sent to your email!');
+            generateCaptcha('forgot');
+            this.reset();
+        });
+
+        // Clear errors on input
+        document.querySelectorAll('input').forEach(input => {
+            input.addEventListener('input', function() {
+                this.classList.remove('error');
+                const err = this.closest('.form-group')?.querySelector('.error-msg');
+                if (err) err.classList.remove('show');
+            });
+        });
+
+        // Responsive sidebar
+        window.addEventListener('resize', () => {
+            const toggle = document.getElementById('menuToggle');
+            if (toggle) toggle.style.display = window.innerWidth <= 768 ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>
