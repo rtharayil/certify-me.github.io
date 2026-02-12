@@ -251,6 +251,35 @@ body.dark .cmeta{border-top-color:#3a4d42;color:#8a9d91}
 .vbtn{padding:10px 18px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:var(--tr);margin-top:12px;width:100%}
 .vbtn:hover{box-shadow:0 4px 12px rgba(26,92,58,.3);transform:translateY(-1px)}
 
+/* MY PATHWAY */
+.pathway-header{margin-bottom:30px}
+.pathway-title{font-family:'Playfair Display',serif;font-size:28px;font-weight:600;color:var(--t);margin-bottom:20px}
+body.dark .pathway-title{color:var(--mint)}
+.career-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-bottom:40px}
+.career-card{background:var(--w);border-radius:16px;padding:28px;box-shadow:0 2px 8px var(--sh),0 4px 16px rgba(26,92,58,.05);transition:var(--tr);text-align:center}
+body.dark .career-card{background:rgba(30,46,35,.6);box-shadow:0 2px 8px rgba(0,0,0,.2),0 4px 16px rgba(0,0,0,.1)}
+.career-card:hover{box-shadow:0 8px 28px var(--sh2);transform:translateY(-3px)}
+.career-card-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--t);margin-bottom:12px}
+body.dark .career-card-title{color:var(--mint)}
+.career-card-desc{font-size:13px;color:var(--tl);line-height:1.6;margin-bottom:20px}
+body.dark .career-card-desc{color:#8a9d91}
+.take-test-btn{padding:10px 24px;background:linear-gradient(135deg,#7b4397,#dc2430);color:#fff;border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:var(--tr)}
+.take-test-btn:hover{box-shadow:0 4px 16px rgba(123,67,151,.4);transform:translateY(-1px)}
+.reports-section{margin-bottom:40px}
+.reports-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:var(--t);margin-bottom:20px}
+body.dark .reports-title{color:var(--mint)}
+.reports-table{background:var(--w);border-radius:16px;padding:20px;box-shadow:0 2px 8px var(--sh),0 4px 16px rgba(26,92,58,.05);overflow-x:auto}
+body.dark .reports-table{background:rgba(30,46,35,.6);box-shadow:0 2px 8px rgba(0,0,0,.2),0 4px 16px rgba(0,0,0,.1)}
+.reports-table table{width:100%;border-collapse:collapse}
+.reports-table th{text-align:left;padding:12px;font-size:12px;font-weight:600;color:var(--tl);border-bottom:2px solid var(--b);text-transform:uppercase;letter-spacing:.5px}
+body.dark .reports-table th{color:#8a9d91;border-bottom-color:#3a4d42}
+.reports-table td{padding:14px 12px;font-size:13px;color:var(--t);border-bottom:1px solid var(--b)}
+body.dark .reports-table td{color:#d4f0e0;border-bottom-color:#3a4d42}
+.reports-table tr:last-child td{border-bottom:none}
+.status-badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:600;background:#7b4397;color:#fff}
+.view-report-btn{padding:6px 16px;background:none;border:1.5px solid #7b4397;color:#7b4397;border-radius:6px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:var(--tr)}
+.view-report-btn:hover{background:#7b4397;color:#fff}
+
 /* HISTORY */
 .hlist{display:flex;flex-direction:column;gap:12px}
 .hitem{background:var(--w);border-radius:12px;padding:18px;box-shadow:0 1px 3px var(--sh),0 2px 8px rgba(26,92,58,.04);display:flex;justify-content:space-between;align-items:center}
@@ -267,6 +296,21 @@ body.dark .hstatus.verified{background:rgba(184,230,204,.2)}
 body.dark .hstatus.pending{background:rgba(230,162,60,.2)}
 .hstatus.submitted{background:#e3f2fd;color:#2196f3}
 body.dark .hstatus.submitted{background:rgba(33,150,243,.2)}
+
+/* TEST MODAL */
+.test-modal-content{padding:28px}
+.test-question{margin-bottom:24px}
+.test-question-text{font-size:14px;font-weight:600;color:var(--t);margin-bottom:12px}
+body.dark .test-question-text{color:var(--mint)}
+.test-options{display:flex;flex-direction:column;gap:10px}
+.test-option{display:flex;align-items:center;gap:10px;padding:12px;border:1.5px solid var(--b);border-radius:8px;cursor:pointer;transition:var(--tr)}
+body.dark .test-option{border-color:#3a4d42;background:rgba(30,46,35,.3)}
+.test-option:hover{border-color:var(--g2);background:var(--mp)}
+body.dark .test-option:hover{background:rgba(184,230,204,.1)}
+.test-option input[type="radio"]{margin:0;cursor:pointer}
+.test-option label{font-size:13px;color:var(--t);cursor:pointer;flex:1}
+body.dark .test-option label{color:#d4f0e0}
+.test-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}
 
 /* NOTIFICATION PANEL */
 .notif-panel{position:fixed;right:0;top:0;bottom:0;width:360px;background:var(--w);box-shadow:-4px 0 20px rgba(26,92,58,.15);transform:translateX(100%);transition:transform .3s;z-index:200;overflow-y:auto}
@@ -381,7 +425,7 @@ body.dark .doc-section{border-bottom-color:#3a4d42}
 body.dark .doc-section-title{color:var(--mint)}
 
 @media(max-width:860px){.bp{display:none}.ac{max-width:500px}.fp{padding:32px 24px}.fl{display:flex}}
-@media(max-width:768px){:root{--sw:260px}.side{transform:translateX(-100%)}.side.open{transform:translateX(0);box-shadow:4px 0 20px rgba(0,0,0,.1)}.dm-main{margin-left:0}.mt{display:flex}.dg{grid-template-columns:1fr}.ai{grid-column:auto}.clist{grid-template-columns:1fr}.notif-panel,.search-panel{width:100%}}
+@media(max-width:768px){:root{--sw:260px}.side{transform:translateX(-100%)}.side.open{transform:translateX(0);box-shadow:4px 0 20px rgba(0,0,0,.1)}.dm-main{margin-left:0}.mt{display:flex}.dg{grid-template-columns:1fr}.ai{grid-column:auto}.clist{grid-template-columns:1fr}.notif-panel,.search-panel{width:100%}.career-grid{grid-template-columns:1fr}}
 @media(max-width:480px){.fp{padding:24px 18px}.tc{grid-template-columns:1fr;gap:0}.cr{flex-direction:column}.dc{padding:16px}}
 </style>
 </head>
@@ -458,6 +502,7 @@ body.dark .doc-section-title{color:var(--mint)}
 <div class="side-nav">
 <div class="nlbl">Main Menu</div>
 <button class="ni" data-view="dashboard"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Dashboard<svg class="nc" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+<button class="ni" data-view="pathway"><svg viewBox="0 0 24 24"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>My Pathway<svg class="nc" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
 <button class="ni" data-view="opportunity"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>Opportunity<svg class="nc" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
 <button class="ni" data-view="upload"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Upload Documents<svg class="nc" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
 <button class="ni" data-view="history"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>History<svg class="nc" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
@@ -488,6 +533,65 @@ body.dark .doc-section-title{color:var(--mint)}
 <div class="dcard"><div class="ch"><h4>Upcoming Events</h4></div><div class="el"><div class="eit"><p><strong>Event:</strong> Introduction to Classical Machine Learning</p><p><strong>Date:</strong> June 20, 2025</p><div class="edl">Yet to register ( Deadline may 15th)</div><div class="esk"><strong>Skills covered:</strong> LR, SVM, Python, ML Models</div></div></div><button class="vmb" style="margin-top:12px">View more</button></div>
 <!-- AI -->
 <div class="dcard ai"><div class="ch"><h4><span class="asp">✨</span> AI-Based Suggestions</h4></div><p class="at">Based on your goals, we recommend exploring this learning path to build expertise in cloud computing. This course is designed to equip you with in-demand knowledge and hands-on skills. Additionally, we suggest exploring top-rated online certification programs that can strengthen your credentials and accelerate your journey in this domain.</p><div class="ar"><span>Rate this response</span><button>👍</button><button>👎</button></div></div>
+</div>
+</div>
+
+<!-- MY PATHWAY VIEW -->
+<div class="dv" id="pathwayView">
+<div class="pathway-header">
+<h1 class="pathway-title">CareerBot Dashboard</h1>
+</div>
+<div class="career-grid">
+<div class="career-card">
+<h3 class="career-card-title">Career Ikigai</h3>
+<p class="career-card-desc">Find your purpose through interest-based questions.</p>
+<button class="take-test-btn" onclick="openTest('ikigai')">Take test</button>
+</div>
+<div class="career-card">
+<h3 class="career-card-title">Skill Gap Analyzer</h3>
+<p class="career-card-desc">Take a skill-based test to identify your strengths and gaps.</p>
+<button class="take-test-btn" onclick="openTest('skillgap')">Take test</button>
+</div>
+<div class="career-card">
+<h3 class="career-card-title">Analyze Career Fit</h3>
+<p class="career-card-desc">Understand where you stand and what path suits you best.</p>
+<button class="take-test-btn" onclick="openTest('careerfit')">Take test</button>
+</div>
+</div>
+<div class="reports-section">
+<h2 class="reports-title">Previous Reports</h2>
+<div class="reports-table">
+<table>
+<thead>
+<tr>
+<th>Assessment</th>
+<th>Date</th>
+<th>Status</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Career Ikigai</td>
+<td>July 15, 2024</td>
+<td><span class="status-badge">Completed</span></td>
+<td><button class="view-report-btn" onclick="viewReport('Career Ikigai')">View Report</button></td>
+</tr>
+<tr>
+<td>Skill Fit Analyzer</td>
+<td>June 20, 2024</td>
+<td><span class="status-badge">Completed</span></td>
+<td><button class="view-report-btn" onclick="viewReport('Skill Fit Analyzer')">View Report</button></td>
+</tr>
+<tr>
+<td>Skill Gap Identifier</td>
+<td>May 5, 2024</td>
+<td><span class="status-badge">Completed</span></td>
+<td><button class="view-report-btn" onclick="viewReport('Skill Gap Identifier')">View Report</button></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 
@@ -587,6 +691,21 @@ body.dark .doc-section-title{color:var(--mint)}
 </div>
 </div>
 
+<!-- TEST MODAL -->
+<div class="modal" id="testModal">
+<div class="mcon">
+<div class="mh">
+<h3 id="testModalTitle">Career Assessment</h3>
+<button class="mcb" onclick="closeTestModal()"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+</div>
+<div class="test-modal-content" id="testModalBody"></div>
+<div class="mf">
+<button class="cbtn" onclick="closeTestModal()">Cancel</button>
+<button class="sbtn" onclick="submitTest()">Submit Test</button>
+</div>
+</div>
+</div>
+
 <!-- UPLOAD DOCUMENT MODAL -->
 <div class="modal" id="uploadModal">
 <div class="mcon">
@@ -648,6 +767,24 @@ const courses=[
 {id:10,title:'Artificial Intelligence Ethics',desc:'A three-week course exploring ethical implications and societal impact of AI technology. Students will examine bias in algorithms, privacy concerns, autonomous systems ethics, and policy frameworks. The program includes case studies, debates, and research projects on AI governance and responsible innovation.',duration:'3 weeks',skills:['AI Ethics','Technology Policy','Critical Thinking','Research Methods','Philosophical Analysis','Regulatory Frameworks'],deadline:'May 20, 2026',eligibility:'All students interested in technology, ethics, philosophy, or policy. No technical background required. Strong analytical and critical thinking skills are essential. Interest in social impact of technology is important.',outcomes:['Understand AI impact','Develop frameworks','Policy recommendations','Research skills']}
 ];
 
+const testQuestions={
+ikigai:[
+{q:'What activities make you lose track of time?',opts:['Creating or building things','Helping or teaching others','Analyzing data or solving problems']},
+{q:'What do people often ask your help with?',opts:['Technical skills','Communication and people skills','Strategic thinking and planning']},
+{q:'What type of work environment do you prefer?',opts:['Independent and flexible','Collaborative and social','Structured and organized']}
+],
+skillgap:[
+{q:'How would you rate your Python programming skills?',opts:['Beginner','Intermediate','Advanced']},
+{q:'How comfortable are you with data analysis?',opts:['Never tried it','Some experience','Very comfortable']},
+{q:'What is your experience with cloud platforms?',opts:['No experience','Basic understanding','Professional experience']}
+],
+careerfit:[
+{q:'What motivates you most in your career?',opts:['Financial stability','Making an impact','Learning and growth']},
+{q:'How do you handle deadlines and pressure?',opts:['I thrive under pressure','I manage it well','I prefer steady pace']},
+{q:'Which work style suits you best?',opts:['Solo contributor','Team player','Leadership role']}
+]
+};
+
 const submissions=[
 {name:'Ahmed Al-Thani',university:'Qatar University',spec:'Computer Science',course:'Machine Learning',type:'Certificate',date:'Feb 10, 2026',status:'Verified'},
 {name:'Fatima Hassan',university:'HBKU',spec:'Data Science',course:'Python Programming',type:'Project Report',date:'Feb 8, 2026',status:'Pending'},
@@ -678,6 +815,7 @@ let currentCourse=null;
 let selectedCourseForUpload=null;
 let allCourses=[];
 let allUploadCourses=[];
+let currentTest='';
 
 function toggleDarkMode(){
 document.body.classList.toggle('dark');
@@ -722,6 +860,42 @@ a.href=url;
 a.download=`${name}.pdf`;
 a.click();
 URL.revokeObjectURL(url);
+}
+
+function openTest(type){
+currentTest=type;
+const questions=testQuestions[type];
+const titles={ikigai:'Career Ikigai Assessment',skillgap:'Skill Gap Analyzer',careerfit:'Career Fit Analysis'};
+document.getElementById('testModalTitle').textContent=titles[type];
+const html=questions.map((q,i)=>`
+<div class="test-question">
+<div class="test-question-text">${i+1}. ${q.q}</div>
+<div class="test-options">
+${q.opts.map((opt,j)=>`
+<div class="test-option">
+<input type="radio" id="q${i}_${j}" name="q${i}" value="${opt}">
+<label for="q${i}_${j}">${opt}</label>
+</div>
+`).join('')}
+</div>
+</div>
+`).join('');
+document.getElementById('testModalBody').innerHTML=html;
+document.getElementById('testModal').classList.add('show');
+}
+
+function closeTestModal(){
+document.getElementById('testModal').classList.remove('show');
+}
+
+function submitTest(){
+st('Test submitted successfully! Your results are being processed.');
+closeTestModal();
+}
+
+function viewReport(name){
+st(`Opening ${name} report...`);
+downloadPDF(name.replace(/ /g,'_'));
 }
 
 function filterCourses(){
@@ -906,7 +1080,7 @@ if(!view)return;
 document.querySelectorAll('.side-nav .ni').forEach(n=>n.classList.remove('active'));
 this.classList.add('active');
 document.querySelectorAll('.dv').forEach(v=>v.classList.remove('active'));
-const titles={dashboard:'Dashboard',opportunity:'Opportunity',upload:'Upload Documents',history:'History'};
+const titles={dashboard:'Dashboard',pathway:'My Pathway',opportunity:'Opportunity',upload:'Upload Documents',history:'History'};
 document.getElementById('pageTitle').textContent=titles[view]||'Dashboard';
 const targetView=view+'View';
 const el=document.getElementById(targetView);
