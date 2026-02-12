@@ -310,7 +310,6 @@ body.dark .test-option:hover{background:rgba(184,230,204,.1)}
 .test-option input[type="radio"]{margin:0;cursor:pointer}
 .test-option label{font-size:13px;color:var(--t);cursor:pointer;flex:1}
 body.dark .test-option label{color:#d4f0e0}
-.test-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}
 
 /* NOTIFICATION PANEL */
 .notif-panel{position:fixed;right:0;top:0;bottom:0;width:360px;background:var(--w);box-shadow:-4px 0 20px rgba(26,92,58,.15);transform:translateX(100%);transition:transform .3s;z-index:200;overflow-y:auto}
@@ -423,6 +422,14 @@ body.dark .doc-section{border-bottom-color:#3a4d42}
 .doc-section:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
 .doc-section-title{font-size:14px;font-weight:600;color:var(--g1);margin-bottom:12px}
 body.dark .doc-section-title{color:var(--mint)}
+.link-add-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:var(--mp);border:1px solid var(--g2);color:var(--g2);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:var(--tr);margin-top:8px}
+.link-add-btn:hover{background:var(--g2);color:#fff}
+.link-add-btn svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2}
+.doc-link-row{display:flex;gap:10px;align-items:flex-end;margin-bottom:12px}
+.doc-link-row .fg{flex:1;margin-bottom:0}
+.remove-link-btn{width:38px;height:46px;background:var(--red);border:none;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:var(--tr);flex-shrink:0}
+.remove-link-btn:hover{background:#c93f3f}
+.remove-link-btn svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2}
 
 @media(max-width:860px){.bp{display:none}.ac{max-width:500px}.fp{padding:32px 24px}.fl{display:flex}}
 @media(max-width:768px){:root{--sw:260px}.side{transform:translateX(-100%)}.side.open{transform:translateX(0);box-shadow:4px 0 20px rgba(0,0,0,.1)}.dm-main{margin-left:0}.mt{display:flex}.dg{grid-template-columns:1fr}.ai{grid-column:auto}.clist{grid-template-columns:1fr}.notif-panel,.search-panel{width:100%}.career-grid{grid-template-columns:1fr}}
@@ -575,19 +582,19 @@ body.dark .doc-section-title{color:var(--mint)}
 <td>Career Ikigai</td>
 <td>July 15, 2024</td>
 <td><span class="status-badge">Completed</span></td>
-<td><button class="view-report-btn" onclick="viewReport('Career Ikigai')">View Report</button></td>
+<td><button class="view-report-btn" onclick="viewReport('Career_Ikigai')">View Report</button></td>
 </tr>
 <tr>
 <td>Skill Fit Analyzer</td>
 <td>June 20, 2024</td>
 <td><span class="status-badge">Completed</span></td>
-<td><button class="view-report-btn" onclick="viewReport('Skill Fit Analyzer')">View Report</button></td>
+<td><button class="view-report-btn" onclick="viewReport('Skill_Fit_Analyzer')">View Report</button></td>
 </tr>
 <tr>
 <td>Skill Gap Identifier</td>
 <td>May 5, 2024</td>
 <td><span class="status-badge">Completed</span></td>
-<td><button class="view-report-btn" onclick="viewReport('Skill Gap Identifier')">View Report</button></td>
+<td><button class="view-report-btn" onclick="viewReport('Skill_Gap_Identifier')">View Report</button></td>
 </tr>
 </tbody>
 </table>
@@ -721,6 +728,12 @@ body.dark .doc-section-title{color:var(--mint)}
 <div class="fg"><label>Document Type <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg><select id="udoctype"><option value="">Select document type</option><option value="Certificate">Certificate</option><option value="Transcript">Transcript</option><option value="Project Report">Project Report</option><option value="Achievement">Achievement</option></select></div></div>
 <div class="fg"><label>Related Course <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="2"/></svg><select id="urcourse"><option value="">Select course</option></select></div></div>
 <div class="doc-section">
+<div class="doc-section-title">Document Links</div>
+<div class="fg"><label>Document Link <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><input type="url" id="udoclink" placeholder="https://example.com/document.pdf"></div></div>
+<div id="additionalLinks"></div>
+<button type="button" class="link-add-btn" onclick="addDocumentLink()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Add More Document Links</button>
+</div>
+<div class="doc-section">
 <div class="doc-section-title">Document 1 - Certificate/Achievement</div>
 <div class="fg"><label>Upload File <span class="req">*</span></label><div class="fupload" onclick="document.getElementById('ufile1').click()"><input type="file" id="ufile1" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"><p>Click or drag file to upload</p><span>Formats accepted: pdf, jpg, jpeg, png, doc, docx</span></div></div>
 </div>
@@ -816,6 +829,34 @@ let selectedCourseForUpload=null;
 let allCourses=[];
 let allUploadCourses=[];
 let currentTest='';
+let linkCounter=0;
+
+function addDocumentLink(){
+linkCounter++;
+const container=document.getElementById('additionalLinks');
+const row=document.createElement('div');
+row.className='doc-link-row';
+row.innerHTML=`
+<div class="fg">
+<label>Document Name</label>
+<div class="iw">
+<svg class="ii" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+<input type="text" placeholder="e.g., Certificate" class="doc-link-name">
+</div>
+</div>
+<div class="fg">
+<label>Document Link</label>
+<div class="iw">
+<svg class="ii" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+<input type="url" placeholder="https://example.com/document.pdf" class="doc-link-url">
+</div>
+</div>
+<button type="button" class="remove-link-btn" onclick="this.parentElement.remove()">
+<svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</button>
+`;
+container.appendChild(row);
+}
 
 function toggleDarkMode(){
 document.body.classList.toggle('dark');
@@ -895,7 +936,7 @@ closeTestModal();
 
 function viewReport(name){
 st(`Opening ${name} report...`);
-downloadPDF(name.replace(/ /g,'_'));
+downloadPDF(name);
 }
 
 function filterCourses(){
@@ -1012,12 +1053,16 @@ function openUploadModal(courseId){
 selectedCourseForUpload=courseId;
 const sel=document.getElementById('urcourse');
 sel.innerHTML='<option value="">Select course</option>'+courses.map(c=>`<option value="${c.id}" ${c.id===courseId?'selected':''}>${c.title}</option>`).join('');
+document.getElementById('additionalLinks').innerHTML='';
+linkCounter=0;
 document.getElementById('uploadModal').classList.add('show');
 }
 
 function closeUploadModal(){
 document.getElementById('uploadModal').classList.remove('show');
 document.getElementById('uploadDocForm').reset();
+document.getElementById('additionalLinks').innerHTML='';
+linkCounter=0;
 }
 
 function submitDocument(){
@@ -1026,9 +1071,14 @@ const univ=document.getElementById('uuniv').value.trim();
 const spec=document.getElementById('uspec').value.trim();
 const doctype=document.getElementById('udoctype').value;
 const rcourse=document.getElementById('urcourse').value;
+const doclink=document.getElementById('udoclink').value.trim();
 const file1=document.getElementById('ufile1').files[0];
-if(!name||!univ||!spec||!doctype||!rcourse||!file1){
-st('Please fill all required fields and upload at least Document 1');
+if(!name||!univ||!spec||!doctype||!rcourse){
+st('Please fill all required fields');
+return;
+}
+if(!doclink&&!file1){
+st('Please provide at least one document link or upload Document 1');
 return;
 }
 st('Documents uploaded successfully! Pending verification.');
