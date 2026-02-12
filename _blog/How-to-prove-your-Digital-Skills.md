@@ -34,7 +34,7 @@ Think of them as the “soft hands” of the digital world—the little actions 
 
 There are also deeper layers—like digital communication, data literacy, basic cybersecurity awareness, and online collaboration. These aren’t just buzzwords. They’re the backbone of how most workplaces now run, especially with hybrid and remote jobs on the rise.
 
-And here’s the kicker: even if you don’t think you’re tech-savvy, chances are you’re using digital skills already. Sending professional emails? Using shared drives? Scheduling meetings? That’s it—you’re in the club. 
+And here’s the kicker: even if you don’t think you’re tech-savvy, chances are you’re using digital skills already. Sending professional emails? Using shared drives? Scheduling meetings? That’s it—you’re in the club.  
 
 The real challenge isn’t learning these tools—it’s knowing how to prove you can use them well.
 
