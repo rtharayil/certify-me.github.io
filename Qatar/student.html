@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universal Skills Passport – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--g1:#1a5c3a;--g2:#2d7a50;--g3:#3a9d68;--mint:#b8e6cc;--ml:#d4f0e0;--mp:#e8f5ee;--w:#fff;--t:#1a2e23;--tl:#5a7568;--red:#d94f4f;--b:#c8ddd1;--sh:rgba(26,92,58,.1);--sh2:rgba(26,92,58,.18);--r:16px;--rs:10px;--tr:.3s cubic-bezier(.4,0,.2,1);--sw:270px}
+body{font-family:'DM Sans',sans-serif;min-height:100vh;background:linear-gradient(145deg,#d6efe0,#b3dcc4 30%,#8fcbaa 60%,#b8e0c8);display:flex;align-items:center;justify-content:center;overflow-x:hidden;transition:background .3s}
+body.dark{background:linear-gradient(145deg,#1a2e23,#2d3e36 30%,#3a4d42 60%,#2d3e36)}
+body.dm{align-items:stretch;justify-content:stretch}
+body::before,body::after{content:'';position:fixed;border-radius:50%;filter:blur(80px);opacity:.35;z-index:0;pointer-events:none}
+body::before{width:500px;height:500px;background:radial-gradient(circle,#7ccba2,transparent);top:-120px;right:-100px;animation:fo 18s ease-in-out infinite}
+body::after{width:400px;height:400px;background:radial-gradient(circle,#a3e4c1,transparent);bottom:-80px;left:-60px;animation:fo 22s ease-in-out infinite reverse}
+@keyframes fo{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-20px) scale(1.05)}66%{transform:translate(-20px,15px) scale(.95)}}
+@keyframes su{to{opacity:1;transform:translateY(0)}}
+@keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+.shake{animation:shake .4s ease}
+
+/* AUTH */
+#aw{position:relative;z-index:1;width:100%;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px}
+.ac{width:100%;max-width:1080px;min-height:600px;display:flex;border-radius:24px;overflow:hidden;box-shadow:0 4px 6px var(--sh),0 20px 50px var(--sh2),0 0 0 1px rgba(255,255,255,.3);background:var(--w);animation:su .7s cubic-bezier(.22,1,.36,1) forwards;opacity:0;transform:translateY(30px)}
+.bp{width:44%;background:linear-gradient(165deg,#1a5c3a,#2d7a50 50%,#3a9d68);padding:48px 36px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden}
+.bp::before{content:'';position:absolute;top:-100px;right:-100px;width:350px;height:350px;border-radius:50%;background:rgba(255,255,255,.04)}
+.bp::after{content:'';position:absolute;bottom:-60px;left:-60px;width:250px;height:250px;border-radius:50%;background:rgba(255,255,255,.04)}
+.bl{display:flex;flex-direction:column;align-items:center;gap:18px;position:relative;z-index:1}
+.bl .li{width:90px;height:90px;background:rgba(255,255,255,.95);border-radius:20px;display:flex;align-items:center;justify-content:center;padding:8px;box-shadow:0 8px 30px rgba(0,0,0,.12)}
+.bl .li img{width:100%;height:100%;object-fit:contain}
+.blt span:first-child{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:#fff}
+.blt span:last-child{font-size:13px;color:rgba(255,255,255,.6);letter-spacing:1px;display:block;margin-top:2px}
+.bc{position:relative;z-index:1;margin-top:30px}
+.bc h1{font-family:'Playfair Display',serif;font-size:28px;font-weight:600;color:#fff;line-height:1.3;margin-bottom:12px}
+.bc p{font-size:14px;color:rgba(255,255,255,.7);line-height:1.6}
+.fp{flex:1;padding:40px 48px;display:flex;flex-direction:column;justify-content:center;background:var(--w);overflow-y:auto}
+.fl{display:none;align-items:center;gap:10px;margin-bottom:20px}
+.fl img{width:42px;height:42px;object-fit:contain}
+.fl span{font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:var(--g1)}
+.fpg{display:none;opacity:0;transform:translateX(20px);transition:opacity .4s,transform .4s}
+.fpg.active{display:block;opacity:1;transform:translateX(0)}
+.fh{margin-bottom:26px}
+.fh .badge{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;background:var(--mp);border-radius:20px;font-size:11px;font-weight:600;color:var(--g2);text-transform:uppercase;letter-spacing:.8px;margin-bottom:12px}
+.fh .badge svg{width:13px;height:13px;stroke:var(--g2);fill:none;stroke-width:2}
+.fh h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--t);margin-bottom:5px}
+.fh p{font-size:13.5px;color:var(--tl);line-height:1.5}
+.fg{margin-bottom:16px;position:relative}
+.fg label{display:block;font-size:12.5px;font-weight:500;color:var(--t);margin-bottom:6px}
+.fg .req{color:var(--red)}
+.iw{position:relative}
+.iw .ii{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:17px;height:17px;stroke:var(--tl);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;pointer-events:none;transition:stroke var(--tr)}
+.iw input,.iw select{width:100%;padding:12px 14px 12px 42px;border:1.5px solid var(--b);border-radius:var(--rs);font-family:'DM Sans',sans-serif;font-size:13.5px;color:var(--t);background:#f8fbf9;transition:var(--tr);outline:none}
+.iw input::placeholder{color:#a0b8aa}
+.iw input:focus,.iw select:focus{border-color:var(--g2);background:#fff;box-shadow:0 0 0 3px rgba(45,122,80,.08)}
+.iw input:focus~.ii{stroke:var(--g2)}
+.iw input.err,.iw select.err{border-color:var(--red);box-shadow:0 0 0 3px rgba(217,79,79,.08)}
+.tp{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;padding:3px}
+.tp svg{width:17px;height:17px;stroke:var(--tl);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tp:hover svg{stroke:var(--g2)}
+.em{font-size:11.5px;color:var(--red);margin-top:4px;display:none;align-items:center;gap:4px}
+.em.show{display:flex}
+.em svg{width:13px;height:13px;stroke:var(--red);fill:none;stroke-width:2;flex-shrink:0}
+.cr{display:flex;gap:10px;align-items:flex-end}
+.cr .fg{flex:1}
+.cd{height:46px;min-width:120px;background:linear-gradient(135deg,#e8f5ee,#d4f0e0);border:1.5px solid var(--b);border-radius:var(--rs);display:flex;align-items:center;justify-content:center;position:relative;user-select:none;overflow:hidden}
+.cd::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent,transparent 8px,rgba(26,92,58,.04) 8px,rgba(26,92,58,.04) 9px),repeating-linear-gradient(0deg,transparent,transparent 6px,rgba(26,92,58,.03) 6px,rgba(26,92,58,.03) 7px)}
+.ct{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;color:var(--g1);letter-spacing:5px;position:relative;z-index:1}
+.crf{position:absolute;right:4px;top:4px;width:22px;height:22px;border-radius:6px;background:rgba(255,255,255,.6);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.crf:hover{background:rgba(255,255,255,.9)}
+.crf svg{width:12px;height:12px;stroke:var(--g1);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.fo{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.rm{display:flex;align-items:center;gap:7px;cursor:pointer}
+.rm input[type="checkbox"]{display:none}
+.ck{width:17px;height:17px;border:1.5px solid var(--b);border-radius:4px;display:flex;align-items:center;justify-content:center;transition:var(--tr);background:#f8fbf9}
+.rm input:checked~.ck{background:var(--g2);border-color:var(--g2)}
+.ck svg{width:11px;height:11px;stroke:#fff;fill:none;stroke-width:2.5;opacity:0;transform:scale(.5);transition:var(--tr)}
+.rm input:checked~.ck svg{opacity:1;transform:scale(1)}
+.rm>span{font-size:12.5px;color:var(--tl)}
+.lb{background:none;border:none;color:var(--g2);font-size:12.5px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;transition:var(--tr)}
+.lb:hover{color:var(--g1);text-decoration:underline}
+.bp-btn{width:100%;padding:13px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;border:none;border-radius:var(--rs);font-family:'DM Sans',sans-serif;font-size:14.5px;font-weight:600;cursor:pointer;position:relative;overflow:hidden;transition:var(--tr)}
+.bp-btn::before{content:'';position:absolute;top:0;left:-100%;bottom:0;width:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);transition:left .5s}
+.bp-btn:hover{box-shadow:0 6px 20px rgba(26,92,58,.3);transform:translateY(-1px)}
+.bp-btn:hover::before{left:100%}
+.gsso{width:100%;padding:12px;background:#fff;border:1.5px solid var(--b);border-radius:var(--rs);font-family:'DM Sans',sans-serif;font-size:13.5px;font-weight:500;color:var(--t);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:var(--tr);margin-bottom:20px}
+.gsso:hover{background:#f8fbf9;border-color:var(--g2)}
+.gsso img{width:20px;height:20px}
+.div{display:flex;align-items:center;gap:14px;margin:20px 0;color:var(--tl);font-size:12px}
+.div::before,.div::after{content:'';flex:1;height:1px;background:var(--b)}
+.ff{text-align:center;margin-top:22px;font-size:13px;color:var(--tl)}
+.ff .lb{font-size:13px;font-weight:600}
+.btl{display:flex;align-items:center;gap:5px;background:none;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:12.5px;font-weight:500;color:var(--tl);margin-bottom:18px;transition:var(--tr)}
+.btl svg{width:15px;height:15px;stroke:var(--tl);fill:none;stroke-width:2;transition:var(--tr)}
+.btl:hover{color:var(--g2)}
+.btl:hover svg{stroke:var(--g2);transform:translateX(-3px)}
+.tc{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ps{display:flex;gap:3px;margin-top:5px}
+.sb{flex:1;height:3px;border-radius:3px;background:var(--b);transition:background .3s}
+.sb.weak{background:var(--red)}.sb.medium{background:#e6a23c}.sb.strong{background:var(--g3)}.sb.vstrong{background:var(--g1)}
+.sl{font-size:10.5px;margin-top:3px;color:var(--tl)}
+.toast{position:fixed;top:24px;right:24px;padding:14px 22px;background:var(--g2);color:#fff;border-radius:12px;font-size:13.5px;font-weight:500;box-shadow:0 8px 30px rgba(26,92,58,.3);transform:translateX(120%);transition:transform .4s cubic-bezier(.22,1,.36,1);z-index:1000;display:flex;align-items:center;gap:10px}
+.toast.show{transform:translateX(0)}
+.toast svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2}
+
+/* DASHBOARD */
+#dw{display:none;width:100%;min-height:100vh;position:relative;z-index:1}
+#dw.active{display:flex}
+.side{width:var(--sw);background:linear-gradient(180deg,#e4f3ea,#d4eede 50%,#e0f0e8);display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;z-index:50;border-right:1px solid rgba(200,221,209,.6);transition:transform .3s,background .3s}
+body.dark .side{background:linear-gradient(180deg,#1e2e27,#263329 50%,#2a3830)}
+.side-h{padding:20px 20px 18px}
+.side-logo{display:flex;align-items:center;gap:10px}
+.side-logo img{width:46px;height:46px;object-fit:contain}
+.side-lt span{display:block}
+.side-lt span:first-child{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;color:var(--g1)}
+.side-lt span:last-child{font-size:10px;color:var(--tl);letter-spacing:.3px}
+body.dark .side-lt span:first-child{color:var(--mint)}
+body.dark .side-lt span:last-child{color:#8a9d91}
+.side-prof{padding:16px 20px;display:flex;align-items:center;gap:11px}
+.pav{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--g2),var(--g3));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:15px;flex-shrink:0}
+.pi{flex:1}
+.pn{font-size:13.5px;font-weight:600;color:var(--g1)}
+body.dark .pn{color:var(--mint)}
+.pn .ln{color:var(--red)}
+.pr{font-size:11.5px;color:var(--tl)}
+body.dark .pr{color:#8a9d91}
+.pe{width:24px;height:24px;border:none;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.pe svg{width:16px;height:16px;stroke:var(--tl);fill:none;stroke-width:2}
+.side-nav{flex:1;padding:10px 14px;overflow-y:auto}
+.nlbl{font-size:10px;font-weight:600;color:var(--tl);text-transform:uppercase;letter-spacing:1px;padding:10px 10px 6px}
+body.dark .nlbl{color:#8a9d91}
+.ni{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:10px;font-size:13.5px;color:var(--t);cursor:pointer;transition:var(--tr);border:none;background:none;width:100%;font-family:'DM Sans',sans-serif;text-align:left}
+body.dark .ni{color:#d4f0e0}
+.ni:hover{background:rgba(45,122,80,.07)}
+body.dark .ni:hover{background:rgba(184,230,204,.1)}
+.ni.active{background:var(--g1);color:#fff;font-weight:500;box-shadow:0 2px 10px rgba(26,92,58,.2)}
+.ni svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.ni .nc{width:14px;height:14px;margin-left:auto}
+.side-ft{padding:12px 14px;border-top:1px solid var(--b)}
+body.dark .side-ft{border-top-color:#3a4d42}
+.ni.lo{color:var(--red)}
+.ni.lo:hover{background:rgba(217,79,79,.07)}
+.dm-main{flex:1;margin-left:var(--sw);display:flex;flex-direction:column;min-height:100vh}
+.tb{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;background:rgba(255,255,255,.5);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,221,209,.5);position:sticky;top:0;z-index:40;transition:background .3s,border .3s}
+body.dark .tb{background:rgba(30,46,35,.8);border-bottom-color:rgba(58,77,66,.5)}
+.tb-l{display:flex;align-items:center;gap:12px}
+.tb h2{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--g1)}
+body.dark .tb h2{color:var(--mint)}
+.tb-a{display:flex;align-items:center;gap:10px}
+.tbb{width:38px;height:38px;border-radius:10px;border:1px solid var(--b);background:var(--w);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--tr);position:relative}
+body.dark .tbb{background:rgba(30,46,35,.6);border-color:#3a4d42}
+.tbb:hover{background:var(--mp);border-color:var(--g2)}
+body.dark .tbb:hover{background:rgba(184,230,204,.1)}
+.tbb svg{width:17px;height:17px;stroke:var(--t);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+body.dark .tbb svg{stroke:var(--mint)}
+.nb{position:absolute;top:-4px;right:-4px;width:17px;height:17px;border-radius:50%;background:var(--g3);color:#fff;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.mt{display:none;width:38px;height:38px;border-radius:10px;border:1px solid var(--b);background:var(--w);align-items:center;justify-content:center;cursor:pointer}
+body.dark .mt{background:rgba(30,46,35,.6);border-color:#3a4d42}
+.mt svg{width:17px;height:17px;stroke:var(--t);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+body.dark .mt svg{stroke:var(--mint)}
+.dc{padding:24px 28px;flex:1}
+.dg{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.dcard{background:var(--w);border-radius:16px;padding:22px;box-shadow:0 1px 4px var(--sh),0 4px 16px rgba(26,92,58,.05);transition:var(--tr)}
+body.dark .dcard{background:rgba(30,46,35,.6);box-shadow:0 1px 4px rgba(0,0,0,.2),0 4px 16px rgba(0,0,0,.1)}
+.dcard:hover{box-shadow:0 6px 24px var(--sh2);transform:translateY(-2px)}
+.ch{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.ch h4{font-family:'Playfair Display',serif;font-size:16.5px;font-weight:600;color:var(--t)}
+body.dark .ch h4{color:var(--mint)}
+.ca{display:flex;gap:5px}
+.cab{width:28px;height:28px;border-radius:7px;border:1px solid var(--b);background:var(--w);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--tr)}
+body.dark .cab{background:rgba(30,46,35,.4);border-color:#3a4d42}
+.cab:hover{background:var(--mp)}
+body.dark .cab:hover{background:rgba(184,230,204,.1)}
+.cab svg{width:13px;height:13px;stroke:var(--tl);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+body.dark .cab svg{stroke:var(--mint)}
+.csub{font-size:12.5px;color:var(--tl);margin-bottom:14px}
+body.dark .csub{color:#8a9d91}
+.sw{display:flex;align-items:center;gap:24px}
+.donut{width:140px;height:140px;flex-shrink:0}
+.donut svg{width:100%;height:100%;transform:rotate(-90deg)}
+.donut circle{fill:none;stroke-width:24;cx:70;cy:70;r:58}
+.ll{display:flex;flex-direction:column;gap:9px}
+.lit{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--t)}
+body.dark .lit{color:#d4f0e0}
+.ld{width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;flex-shrink:0}
+.ld.or{border-bottom:10px solid #f5a623}
+.ld.rd{border-bottom:10px solid #e74c3c}
+.ld.bl{border-bottom:10px solid #4a90d9}
+.ld.gr{border-bottom:10px solid #2d7a50}
+.bca{border:1.5px solid var(--b);border-radius:12px;padding:14px;margin-bottom:10px}
+body.dark .bca{border-color:#3a4d42}
+.bc2{display:flex;align-items:flex-end;gap:8px;height:100px}
+.bcol{flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;height:100%;justify-content:flex-end}
+.bar{width:100%;max-width:20px;border-radius:3px 3px 0 0;background:linear-gradient(180deg,var(--g1),var(--g3));transition:height .6s cubic-bezier(.22,1,.36,1);min-height:3px}
+.blbl{font-size:8px;color:var(--tl);text-align:center;line-height:1.1}
+body.dark .blbl{color:#8a9d91}
+.vmb{display:inline-block;padding:7px 16px;border:1px solid var(--b);border-radius:8px;background:var(--w);font-family:'DM Sans',sans-serif;font-size:11.5px;font-weight:500;color:var(--t);cursor:pointer;transition:var(--tr)}
+body.dark .vmb{background:rgba(30,46,35,.4);border-color:#3a4d42;color:var(--mint)}
+.vmb:hover{background:var(--mp);border-color:var(--g2)}
+body.dark .vmb:hover{background:rgba(184,230,204,.1)}
+.nl,.el{display:flex;flex-direction:column;gap:10px}
+.nit,.eit{padding:12px 14px;border-radius:10px;border-left:3px solid var(--g2);background:#fafcfb}
+body.dark .nit,body.dark .eit{background:rgba(30,46,35,.4);border-left-color:var(--g3)}
+.nd{font-size:10.5px;color:var(--tl);font-weight:600;margin-bottom:3px}
+body.dark .nd{color:#8a9d91}
+.nit p,.eit p{font-size:12.5px;color:var(--t);line-height:1.45}
+body.dark .nit p,body.dark .eit p{color:#d4f0e0}
+.nit a,.eit a{color:var(--g2);font-weight:500;text-decoration:none}
+body.dark .nit a,body.dark .eit a{color:var(--mint)}
+.edl{color:var(--red);font-size:11.5px;font-weight:600;margin-top:3px}
+.esk{font-size:11.5px;color:var(--tl);margin-top:2px}
+body.dark .esk{color:#8a9d91}
+.ai{grid-column:1/-1;background:linear-gradient(135deg,#f0f8f3,#e4f3ea)}
+body.dark .ai{background:linear-gradient(135deg,#1e2e27,#263329)}
+.ai h4{display:flex;align-items:center;gap:8px}
+.asp{font-size:18px}
+.at{font-size:13px;color:var(--t);line-height:1.6}
+body.dark .at{color:#d4f0e0}
+.ar{display:flex;align-items:center;gap:8px;margin-top:12px;justify-content:flex-end}
+.ar span{font-size:11.5px;color:var(--tl)}
+body.dark .ar span{color:#8a9d91}
+.ar button{background:none;border:none;cursor:pointer;font-size:15px;padding:2px;transition:transform .2s}
+.ar button:hover{transform:scale(1.2)}
+
+/* SEARCH */
+.search-wrap{margin-bottom:20px}
+.search-box{position:relative}
+.search-box input{width:100%;padding:12px 14px 12px 42px;border:1.5px solid var(--b);border-radius:var(--rs);font-family:'DM Sans',sans-serif;font-size:13.5px;color:var(--t);background:#f8fbf9;transition:var(--tr);outline:none}
+body.dark .search-box input{background:rgba(30,46,35,.6);border-color:#3a4d42;color:var(--mint)}
+.search-box input::placeholder{color:#a0b8aa}
+body.dark .search-box input::placeholder{color:#6a7d71}
+.search-box input:focus{border-color:var(--g2);background:#fff;box-shadow:0 0 0 3px rgba(45,122,80,.08)}
+body.dark .search-box input:focus{background:rgba(30,46,35,.8)}
+.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:17px;height:17px;stroke:var(--tl);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+body.dark .search-icon{stroke:var(--mint)}
+
+/* OPPORTUNITY PAGE */
+.dv{display:none}
+.dv.active{display:block}
+.clist{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.citem{background:var(--w);border-radius:16px;padding:20px;box-shadow:0 1px 3px var(--sh),0 2px 8px rgba(26,92,58,.04);display:flex;flex-direction:column;min-height:280px;transition:var(--tr);cursor:pointer}
+body.dark .citem{background:rgba(30,46,35,.6);box-shadow:0 1px 3px rgba(0,0,0,.2),0 2px 8px rgba(0,0,0,.1)}
+.citem:hover{box-shadow:0 6px 20px var(--sh2);transform:translateY(-3px)}
+.cinfo{flex:1;display:flex;flex-direction:column}
+.ctitle{font-family:'Playfair Display',serif;font-size:17px;font-weight:600;color:var(--t);margin-bottom:10px;line-height:1.3}
+body.dark .ctitle{color:var(--mint)}
+.cdesc{font-size:12px;color:var(--tl);margin-bottom:12px;line-height:1.5;flex:1}
+body.dark .cdesc{color:#8a9d91}
+.cmeta{display:flex;flex-direction:column;gap:6px;font-size:10.5px;color:var(--tl);margin-top:auto;padding-top:12px;border-top:1px solid var(--b)}
+body.dark .cmeta{border-top-color:#3a4d42;color:#8a9d91}
+.cmeta span{display:flex;align-items:center;gap:6px}
+.vbtn{padding:10px 18px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:var(--tr);margin-top:12px;width:100%}
+.vbtn:hover{box-shadow:0 4px 12px rgba(26,92,58,.3);transform:translateY(-1px)}
+
+/* HISTORY */
+.hlist{display:flex;flex-direction:column;gap:12px}
+.hitem{background:var(--w);border-radius:12px;padding:18px;box-shadow:0 1px 3px var(--sh),0 2px 8px rgba(26,92,58,.04);display:flex;justify-content:space-between;align-items:center}
+body.dark .hitem{background:rgba(30,46,35,.6);box-shadow:0 1px 3px rgba(0,0,0,.2),0 2px 8px rgba(0,0,0,.1)}
+.hinfo{flex:1}
+.htitle{font-size:14px;font-weight:600;color:var(--t);margin-bottom:4px}
+body.dark .htitle{color:var(--mint)}
+.hmeta{font-size:11.5px;color:var(--tl);margin-bottom:2px}
+body.dark .hmeta{color:#8a9d91}
+.hstatus{display:inline-block;padding:4px 10px;border-radius:6px;font-size:10px;font-weight:600;margin-top:6px}
+.hstatus.verified{background:var(--mp);color:var(--g2)}
+body.dark .hstatus.verified{background:rgba(184,230,204,.2)}
+.hstatus.pending{background:#fff3e0;color:#e6a23c}
+body.dark .hstatus.pending{background:rgba(230,162,60,.2)}
+.hstatus.submitted{background:#e3f2fd;color:#2196f3}
+body.dark .hstatus.submitted{background:rgba(33,150,243,.2)}
+
+/* NOTIFICATION PANEL */
+.notif-panel{position:fixed;right:0;top:0;bottom:0;width:360px;background:var(--w);box-shadow:-4px 0 20px rgba(26,92,58,.15);transform:translateX(100%);transition:transform .3s;z-index:200;overflow-y:auto}
+body.dark .notif-panel{background:#1e2e27;box-shadow:-4px 0 20px rgba(0,0,0,.3)}
+.notif-panel.show{transform:translateX(0)}
+.notif-header{padding:20px;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;align-items:center}
+body.dark .notif-header{border-bottom-color:#3a4d42}
+.notif-header h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--t)}
+body.dark .notif-header h3{color:var(--mint)}
+.notif-close{width:28px;height:28px;border:none;background:var(--mp);border-radius:6px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+body.dark .notif-close{background:rgba(184,230,204,.1)}
+.notif-close svg{width:14px;height:14px;stroke:var(--t);fill:none;stroke-width:2}
+body.dark .notif-close svg{stroke:var(--mint)}
+.notif-body{padding:12px}
+.notif-item{padding:14px;margin-bottom:8px;border-radius:10px;background:#fafcfb;border-left:3px solid var(--g2);cursor:pointer;transition:var(--tr)}
+body.dark .notif-item{background:rgba(30,46,35,.4);border-left-color:var(--g3)}
+.notif-item:hover{background:var(--mp)}
+body.dark .notif-item:hover{background:rgba(184,230,204,.1)}
+.notif-date{font-size:10px;color:var(--tl);font-weight:600;margin-bottom:4px}
+body.dark .notif-date{color:#8a9d91}
+.notif-text{font-size:12px;color:var(--t);line-height:1.4}
+body.dark .notif-text{color:#d4f0e0}
+
+/* SEARCH PANEL */
+.search-panel{position:fixed;right:0;top:0;bottom:0;width:420px;background:var(--w);box-shadow:-4px 0 20px rgba(26,92,58,.15);transform:translateX(100%);transition:transform .3s;z-index:200;overflow-y:auto}
+body.dark .search-panel{background:#1e2e27;box-shadow:-4px 0 20px rgba(0,0,0,.3)}
+.search-panel.show{transform:translateX(0)}
+.search-header{padding:20px;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;align-items:center}
+body.dark .search-header{border-bottom-color:#3a4d42}
+.search-header h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--t)}
+body.dark .search-header h3{color:var(--mint)}
+.search-close{width:28px;height:28px;border:none;background:var(--mp);border-radius:6px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+body.dark .search-close{background:rgba(184,230,204,.1)}
+.search-close svg{width:14px;height:14px;stroke:var(--t);fill:none;stroke-width:2}
+body.dark .search-close svg{stroke:var(--mint)}
+.search-body{padding:20px}
+.search-input-wrap{margin-bottom:20px}
+.search-result{padding:12px;margin-bottom:8px;border-radius:8px;border:1px solid var(--b);background:#fafcfb;cursor:pointer;transition:var(--tr)}
+body.dark .search-result{background:rgba(30,46,35,.4);border-color:#3a4d42}
+.search-result:hover{background:var(--mp);border-color:var(--g2)}
+body.dark .search-result:hover{background:rgba(184,230,204,.1)}
+.search-result-title{font-size:13px;font-weight:600;color:var(--t);margin-bottom:4px}
+body.dark .search-result-title{color:var(--mint)}
+.search-result-desc{font-size:11px;color:var(--tl)}
+body.dark .search-result-desc{color:#8a9d91}
+
+/* MODAL */
+.modal{display:none;position:fixed;inset:0;background:rgba(26,46,35,.7);backdrop-filter:blur(4px);z-index:100;align-items:center;justify-content:center;padding:24px}
+.modal.show{display:flex}
+.mcon{background:var(--w);border-radius:16px;max-width:750px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(26,92,58,.3)}
+body.dark .mcon{background:#1e2e27}
+.mh{padding:24px;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;align-items:center}
+body.dark .mh{border-bottom-color:#3a4d42}
+.mh h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:var(--t)}
+body.dark .mh h3{color:var(--mint)}
+.mcb{width:32px;height:32px;border:none;background:var(--mp);border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:var(--tr)}
+body.dark .mcb{background:rgba(184,230,204,.1)}
+.mcb:hover{background:var(--ml)}
+.mcb svg{width:16px;height:16px;stroke:var(--t);fill:none;stroke-width:2}
+body.dark .mcb svg{stroke:var(--mint)}
+.mb{padding:28px}
+.msec{margin-bottom:24px}
+.msec:last-child{margin-bottom:0}
+.msec h4{font-size:15px;font-weight:600;color:var(--g1);margin-bottom:10px}
+body.dark .msec h4{color:var(--mint)}
+.msec p,.msec ul{font-size:13.5px;color:var(--t);line-height:1.7}
+body.dark .msec p,body.dark .msec ul{color:#d4f0e0}
+.msec ul{list-style:none;padding-left:0}
+.msec li{padding:5px 0;display:flex;align-items:flex-start;gap:10px}
+.msec li::before{content:'✓';color:var(--g2);font-weight:bold;flex-shrink:0;font-size:14px}
+.mf{padding:20px 24px;border-top:1px solid var(--b);display:flex;gap:10px;justify-content:flex-end}
+body.dark .mf{border-top-color:#3a4d42}
+.sbtn{padding:11px 28px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13.5px;font-weight:600;cursor:pointer;transition:var(--tr)}
+.sbtn:hover{box-shadow:0 4px 12px rgba(26,92,58,.3)}
+.cbtn{padding:11px 28px;background:var(--mp);color:var(--t);border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13.5px;font-weight:600;cursor:pointer;transition:var(--tr)}
+body.dark .cbtn{background:rgba(184,230,204,.1);color:var(--mint)}
+.cbtn:hover{background:var(--ml)}
+
+/* UPLOAD DOCUMENTS */
+.ulist{display:flex;flex-direction:column;gap:14px;margin-bottom:24px}
+.uitem{background:var(--w);border-radius:12px;padding:16px;box-shadow:0 1px 3px var(--sh),0 2px 8px rgba(26,92,58,.04);display:flex;justify-content:space-between;align-items:center}
+body.dark .uitem{background:rgba(30,46,35,.6);box-shadow:0 1px 3px rgba(0,0,0,.2),0 2px 8px rgba(0,0,0,.1)}
+.uinfo{flex:1}
+.utitle{font-size:14px;font-weight:600;color:var(--t);margin-bottom:3px}
+body.dark .utitle{color:var(--mint)}
+.ustatus{font-size:11px;color:var(--tl)}
+body.dark .ustatus{color:#8a9d91}
+.ubtn{padding:8px 16px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:var(--tr)}
+.ubtn:hover{box-shadow:0 4px 12px rgba(26,92,58,.3)}
+.usub{margin-top:16px;background:var(--mp);padding:14px;border-radius:10px}
+body.dark .usub{background:rgba(184,230,204,.1)}
+.usub h5{font-size:13px;font-weight:600;color:var(--g1);margin-bottom:8px}
+body.dark .usub h5{color:var(--mint)}
+.subitem{font-size:11.5px;color:var(--t);padding:4px 0;border-bottom:1px solid var(--b)}
+body.dark .subitem{color:#d4f0e0;border-bottom-color:#3a4d42}
+.subitem:last-child{border-bottom:none}
+.subitem strong{color:var(--g2)}
+body.dark .subitem strong{color:var(--mint)}
+.fupload{border:2px dashed var(--b);border-radius:10px;padding:24px;text-align:center;background:#f8fbf9;cursor:pointer;transition:var(--tr);margin-top:8px}
+body.dark .fupload{background:rgba(30,46,35,.3);border-color:#3a4d42}
+.fupload:hover{border-color:var(--g2);background:var(--mp)}
+body.dark .fupload:hover{background:rgba(184,230,204,.1)}
+.fupload input{display:none}
+.fupload p{font-size:12.5px;color:var(--tl);margin-bottom:4px}
+body.dark .fupload p{color:#8a9d91}
+.fupload span{font-size:11px;color:var(--g2);font-weight:500}
+body.dark .fupload span{color:var(--mint)}
+.doc-section{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--b)}
+body.dark .doc-section{border-bottom-color:#3a4d42}
+.doc-section:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+.doc-section-title{font-size:14px;font-weight:600;color:var(--g1);margin-bottom:12px}
+body.dark .doc-section-title{color:var(--mint)}
+
+@media(max-width:860px){.bp{display:none}.ac{max-width:500px}.fp{padding:32px 24px}.fl{display:flex}}
+@media(max-width:768px){:root{--sw:260px}.side{transform:translateX(-100%)}.side.open{transform:translateX(0);box-shadow:4px 0 20px rgba(0,0,0,.1)}.dm-main{margin-left:0}.mt{display:flex}.dg{grid-template-columns:1fr}.ai{grid-column:auto}.clist{grid-template-columns:1fr}.notif-panel,.search-panel{width:100%}}
+@media(max-width:480px){.fp{padding:24px 18px}.tc{grid-template-columns:1fr;gap:0}.cr{flex-direction:column}.dc{padding:16px}}
+</style>
+</head>
+<body>
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<!-- AUTH -->
+<div id="aw">
+<div class="ac">
+<div class="bp">
+<div class="bl"><div class="li"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF Logo"></div><div class="blt"><span>Qatar Foundation</span><span>مؤسسة قطر</span></div></div>
+<div class="bc"><h1>Universal Skills Passport</h1><p>Track competencies, earn digital badges, and showcase your institutional journey.</p></div>
+</div>
+<div class="fp">
+<!-- LOGIN -->
+<div class="fpg active" id="loginPage">
+<div class="fl"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF"><span>Qatar Foundation</span></div>
+<div class="fh"><div class="badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>Student Portal</div><h2>Welcome Back</h2><p>Sign in to access your Universal Skills Passport</p></div>
+<button class="gsso" onclick="st('Google Sign-In coming soon!')"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Sign in with Google</button>
+<div class="div">OR</div>
+<form id="loginForm" novalidate>
+<div class="fg"><label>Username / Email <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg><input type="text" id="lu" placeholder="Enter your username or email" autocomplete="username"></div><div class="em" id="lue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span></span></div></div>
+<div class="fg"><label>Password <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><input type="password" id="lp" placeholder="Enter your password" autocomplete="current-password"><button type="button" class="tp" onclick="tgp('lp',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div><div class="em" id="lpe"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span></span></div></div>
+<div class="fg"><label>Captcha <span class="req">*</span></label><div class="cr"><div class="cd"><span class="ct" id="lct"></span><button type="button" class="crf" onclick="gc('l')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div><div class="fg" style="margin-bottom:0"><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="lci" placeholder="Enter captcha" autocomplete="off"></div></div></div><div class="em" id="lce"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span></span></div></div>
+<div class="fo"><label class="rm"><input type="checkbox"><span class="ck"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Remember me</span></label><button type="button" class="lb" onclick="sp('forgotPage')">Forgot password?</button></div>
+<button type="submit" class="bp-btn">Sign In</button>
+</form>
+<div class="ff">Don't have an account? <button type="button" class="lb" onclick="sp('signupPage')">Create Account</button></div>
+</div>
+
+<!-- SIGNUP -->
+<div class="fpg" id="signupPage">
+<button type="button" class="btl" onclick="sp('loginPage')"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>Back to Login</button>
+<div class="fl"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF"><span>Qatar Foundation</span></div>
+<div class="fh"><div class="badge"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>New Student</div><h2>Create Account</h2><p>Register for your Universal Skills Passport</p></div>
+<button class="gsso" onclick="st('Google Sign-Up coming soon!')"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Sign up with Google</button>
+<div class="div">OR</div>
+<form id="signupForm" novalidate>
+<div class="tc">
+<div class="fg"><label>First Name <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg><input type="text" id="sf" placeholder="First name"></div><div class="em" id="sfe"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter first name</span></div></div>
+<div class="fg"><label>Last Name <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg><input type="text" id="sla" placeholder="Last name"></div><div class="em" id="slae"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter last name</span></div></div>
+</div>
+<div class="fg"><label>Email <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg><input type="email" id="se" placeholder="student@qu.edu.qa"></div><div class="em" id="see"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter a valid email</span></div></div>
+<div class="fg"><label>Phone Number <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><input type="tel" id="sph" placeholder="+974 XXXX XXXX"></div><div class="em" id="sphe"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter phone number</span></div></div>
+<div class="fg"><label>Student ID <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="2" y1="9" x2="22" y2="9"/></svg><input type="text" id="sid" placeholder="e.g., QF-2025-001"></div><div class="em" id="side"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter Student ID</span></div></div>
+<div class="fg"><label>Password <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><input type="password" id="spw" placeholder="Min 8 characters" oninput="cs(this.value)"><button type="button" class="tp" onclick="tgp('spw',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div><div class="ps"><div class="sb" id="s1"></div><div class="sb" id="s2"></div><div class="sb" id="s3"></div><div class="sb" id="s4"></div></div><div class="sl" id="slb"></div><div class="em" id="spwe"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Min 8 characters required</span></div></div>
+<div class="fg"><label>Captcha <span class="req">*</span></label><div class="cr"><div class="cd"><span class="ct" id="sct"></span><button type="button" class="crf" onclick="gc('s')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div><div class="fg" style="margin-bottom:0"><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="sci" placeholder="Enter captcha" autocomplete="off"></div></div></div><div class="em" id="sce"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div></div>
+<button type="submit" class="bp-btn" style="margin-top:4px">Create Account</button>
+</form>
+<div class="ff">Already have an account? <button type="button" class="lb" onclick="sp('loginPage')">Sign In</button></div>
+</div>
+
+<!-- FORGOT -->
+<div class="fpg" id="forgotPage">
+<button type="button" class="btl" onclick="sp('loginPage')"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>Back to Login</button>
+<div class="fl"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF"><span>Qatar Foundation</span></div>
+<div class="fh"><div class="badge"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Account Recovery</div><h2>Reset Password</h2><p>Enter your email and we'll send you an OTP</p></div>
+<form id="forgotForm" novalidate>
+<div class="fg"><label>Email Address <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg><input type="email" id="fe" placeholder="student@qu.edu.qa"></div><div class="em" id="fee"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter a valid email</span></div></div>
+<div class="fg"><label>Captcha <span class="req">*</span></label><div class="cr"><div class="cd"><span class="ct" id="fct"></span><button type="button" class="crf" onclick="gc('f')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div><div class="fg" style="margin-bottom:0"><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="fci" placeholder="Enter captcha" autocomplete="off"></div></div></div><div class="em" id="fce"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div></div>
+<button type="submit" class="bp-btn">Send Reset Link</button>
+</form>
+<div class="ff">Remembered your password? <button type="button" class="lb" onclick="sp('loginPage')">Sign In</button></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dw">
+<nav class="side" id="side">
+<div class="side-h"><div class="side-logo"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF"><div class="side-lt"><span>Qatar Foundation</span><span>مؤسسة قطر</span></div></div></div>
+<div class="side-prof"><div class="pav" id="da">SM</div><div class="pi"><div class="pn" id="dn">Sara <span class="ln">Mohamed</span></div><div class="pr">Student</div></div><button class="pe"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button></div>
+<div class="side-nav">
+<div class="nlbl">Main Menu</div>
+<button class="ni" data-view="dashboard"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Dashboard<svg class="nc" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+<button class="ni" data-view="opportunity"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>Opportunity<svg class="nc" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+<button class="ni" data-view="upload"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Upload Documents<svg class="nc" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+<button class="ni" data-view="history"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>History<svg class="nc" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+</div>
+<div class="side-ft"><button class="ni lo" onclick="logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Sign Out</button></div>
+</nav>
+
+<main class="dm-main">
+<header class="tb">
+<div class="tb-l"><button class="mt" id="mt" onclick="document.getElementById('side').classList.toggle('open')"><svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><h2 id="pageTitle">Dashboard</h2></div>
+<div class="tb-a">
+<button class="tbb" onclick="toggleNotif()"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><span class="nb">5</span></button>
+<button class="tbb" onclick="toggleDarkMode()"><svg id="themeIcon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button>
+<button class="tbb" onclick="toggleSearch()"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button>
+</div>
+</header>
+<div class="dc">
+<!-- DASHBOARD VIEW -->
+<div class="dv active" id="dashboardView">
+<div class="dg">
+<!-- Skill Progress -->
+<div class="dcard"><div class="ch"><h4>Skill Progress Summary</h4><div class="ca"><button class="cab"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg></button><button class="cab" onclick="downloadPDF('Skill_Progress_Summary')"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></button></div></div><p class="csub">Here you can visualize and track your skill progress</p><div class="sw"><div class="donut"><svg viewBox="0 0 140 140"><circle stroke="#e8f5ee" stroke-dasharray="364.42" stroke-dashoffset="0"/><circle stroke="#f5a623" stroke-dasharray="364.42" stroke-dashoffset="218.65"/><circle stroke="#4a90d9" stroke-dasharray="364.42" stroke-dashoffset="273.32"/><circle stroke="#e74c3c" stroke-dasharray="364.42" stroke-dashoffset="309.76"/><circle stroke="#2d7a50" stroke-dasharray="364.42" stroke-dashoffset="327.98"/></svg></div><div class="ll"><div class="lit"><span class="ld or"></span><strong>8/20</strong>&nbsp;competencies achieved</div><div class="lit"><span class="ld rd"></span><strong>25</strong>&nbsp;in-progress</div><div class="lit"><span class="ld bl"></span><strong>3</strong>&nbsp;pending verification</div><div class="lit"><span class="ld gr"></span><strong>25</strong>&nbsp;New Opportunities available</div></div></div></div>
+<!-- Learning Overview -->
+<div class="dcard"><div class="ch"><h4>Last weeks learning Overview</h4><div class="ca"><button class="cab"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg></button><button class="cab" onclick="downloadPDF('Learning_Overview')"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></button></div></div><p class="csub">This week you have spend <strong>16 hours</strong> upgrading your new skills</p><div class="bca"><div class="bc2" id="bc"></div></div><p class="csub">Click here to view more detailed analytics</p><button class="vmb">View More</button></div>
+<!-- Notifications -->
+<div class="dcard"><div class="ch"><h4>Notifications</h4></div><div class="nl"><div class="nit"><div class="nd">27-04-25:</div><p>Your submission for <a href="#">Gen AI workshop</a> is pending verification.</p></div><div class="nit"><div class="nd">02-05-25:</div><p>Internship opportunity: <a href="#">Qatar Red Crescent</a> now open.</p></div></div><button class="vmb" style="margin-top:12px">View more</button></div>
+<!-- Events -->
+<div class="dcard"><div class="ch"><h4>Upcoming Events</h4></div><div class="el"><div class="eit"><p><strong>Event:</strong> Introduction to Classical Machine Learning</p><p><strong>Date:</strong> June 20, 2025</p><div class="edl">Yet to register ( Deadline may 15th)</div><div class="esk"><strong>Skills covered:</strong> LR, SVM, Python, ML Models</div></div></div><button class="vmb" style="margin-top:12px">View more</button></div>
+<!-- AI -->
+<div class="dcard ai"><div class="ch"><h4><span class="asp">✨</span> AI-Based Suggestions</h4></div><p class="at">Based on your goals, we recommend exploring this learning path to build expertise in cloud computing. This course is designed to equip you with in-demand knowledge and hands-on skills. Additionally, we suggest exploring top-rated online certification programs that can strengthen your credentials and accelerate your journey in this domain.</p><div class="ar"><span>Rate this response</span><button>👍</button><button>👎</button></div></div>
+</div>
+</div>
+
+<!-- OPPORTUNITY VIEW -->
+<div class="dv" id="opportunityView">
+<div class="search-wrap">
+<div class="search-box">
+<svg class="search-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+<input type="text" id="courseSearch" placeholder="Search courses..." oninput="filterCourses()">
+</div>
+</div>
+<div class="clist" id="courseList"></div>
+</div>
+
+<!-- UPLOAD DOCUMENTS VIEW -->
+<div class="dv" id="uploadView">
+<div class="search-wrap">
+<div class="search-box">
+<svg class="search-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+<input type="text" id="uploadSearch" placeholder="Search courses..." oninput="filterUploadCourses()">
+</div>
+</div>
+<div class="ulist" id="uploadList"></div>
+<div class="usub">
+<h5>Recent Submissions</h5>
+<div id="submissionsList"></div>
+</div>
+</div>
+
+<!-- HISTORY VIEW -->
+<div class="dv" id="historyView">
+<div class="hlist" id="historyList"></div>
+</div>
+
+</div>
+</main>
+</div>
+
+<!-- NOTIFICATION PANEL -->
+<div class="notif-panel" id="notifPanel">
+<div class="notif-header">
+<h3>Notifications</h3>
+<button class="notif-close" onclick="toggleNotif()"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+</div>
+<div class="notif-body">
+<div class="notif-item">
+<div class="notif-date">27-04-25</div>
+<div class="notif-text">Your submission for Gen AI workshop is pending verification.</div>
+</div>
+<div class="notif-item">
+<div class="notif-date">02-05-25</div>
+<div class="notif-text">Internship opportunity: Qatar Red Crescent now open.</div>
+</div>
+<div class="notif-item">
+<div class="notif-date">05-05-25</div>
+<div class="notif-text">Machine Learning certificate has been verified and added to your profile.</div>
+</div>
+<div class="notif-item">
+<div class="notif-date">08-05-25</div>
+<div class="notif-text">New course available: Introduction to Blockchain Technology.</div>
+</div>
+<div class="notif-item">
+<div class="notif-date">10-05-25</div>
+<div class="notif-text">Reminder: Web Development Bootcamp starts next week.</div>
+</div>
+</div>
+</div>
+
+<!-- SEARCH PANEL -->
+<div class="search-panel" id="searchPanel">
+<div class="search-header">
+<h3>Search</h3>
+<button class="search-close" onclick="toggleSearch()"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+</div>
+<div class="search-body">
+<div class="search-input-wrap">
+<div class="search-box">
+<svg class="search-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+<input type="text" id="globalSearch" placeholder="Search anything..." oninput="performSearch()">
+</div>
+</div>
+<div id="searchResults"></div>
+</div>
+</div>
+
+<!-- COURSE DETAIL MODAL -->
+<div class="modal" id="courseModal">
+<div class="mcon">
+<div class="mh">
+<h3 id="modalTitle">Course Details</h3>
+<button class="mcb" onclick="closeModal()"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+</div>
+<div class="mb" id="modalBody"></div>
+<div class="mf">
+<button class="cbtn" onclick="closeModal()">Close</button>
+</div>
+</div>
+</div>
+
+<!-- UPLOAD DOCUMENT MODAL -->
+<div class="modal" id="uploadModal">
+<div class="mcon">
+<div class="mh">
+<h3>Upload New Document</h3>
+<button class="mcb" onclick="closeUploadModal()"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+</div>
+<div class="mb">
+<form id="uploadDocForm">
+<div class="fg"><label>Name <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg><input type="text" id="uname" placeholder="Enter your full name"></div></div>
+<div class="fg"><label>University <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><input type="text" id="uuniv" placeholder="Enter university name"></div></div>
+<div class="fg"><label>Specialization <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><input type="text" id="uspec" placeholder="e.g., Computer Science"></div></div>
+<div class="fg"><label>Document Type <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg><select id="udoctype"><option value="">Select document type</option><option value="Certificate">Certificate</option><option value="Transcript">Transcript</option><option value="Project Report">Project Report</option><option value="Achievement">Achievement</option></select></div></div>
+<div class="fg"><label>Related Course <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="2"/></svg><select id="urcourse"><option value="">Select course</option></select></div></div>
+<div class="doc-section">
+<div class="doc-section-title">Document 1 - Certificate/Achievement</div>
+<div class="fg"><label>Upload File <span class="req">*</span></label><div class="fupload" onclick="document.getElementById('ufile1').click()"><input type="file" id="ufile1" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"><p>Click or drag file to upload</p><span>Formats accepted: pdf, jpg, jpeg, png, doc, docx</span></div></div>
+</div>
+<div class="doc-section">
+<div class="doc-section-title">Document 2 - Transcript</div>
+<div class="fg"><label>Upload File</label><div class="fupload" onclick="document.getElementById('ufile2').click()"><input type="file" id="ufile2" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"><p>Click or drag file to upload</p><span>Formats accepted: pdf, jpg, jpeg, png, doc, docx</span></div></div>
+</div>
+<div class="doc-section">
+<div class="doc-section-title">Document 3 - Project Report</div>
+<div class="fg"><label>Upload File</label><div class="fupload" onclick="document.getElementById('ufile3').click()"><input type="file" id="ufile3" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"><p>Click or drag file to upload</p><span>Formats accepted: pdf, jpg, jpeg, png, doc, docx</span></div></div>
+</div>
+<div class="doc-section">
+<div class="doc-section-title">Document 4 - Supporting Documents</div>
+<div class="fg"><label>Upload File</label><div class="fupload" onclick="document.getElementById('ufile4').click()"><input type="file" id="ufile4" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"><p>Click or drag file to upload</p><span>Formats accepted: pdf, jpg, jpeg, png, doc, docx</span></div></div>
+</div>
+<div class="doc-section">
+<div class="doc-section-title">Document 5 - Additional Materials</div>
+<div class="fg"><label>Upload File</label><div class="fupload" onclick="document.getElementById('ufile5').click()"><input type="file" id="ufile5" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"><p>Click or drag file to upload</p><span>Formats accepted: pdf, jpg, jpeg, png, doc, docx</span></div></div>
+</div>
+</form>
+</div>
+<div class="mf">
+<button class="cbtn" onclick="closeUploadModal()">Cancel</button>
+<button class="sbtn" onclick="submitDocument()">Complete</button>
+</div>
+</div>
+</div>
+
+<script>
+const cp={l:'',s:'',f:''};
+function gc(t){const c='ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz23456789';let r='';for(let i=0;i<5;i++)r+=c[Math.floor(Math.random()*c.length)];cp[t]=r;const m={l:'lct',s:'sct',f:'fct'};document.getElementById(m[t]).textContent=r}
+gc('l');gc('s');gc('f');
+
+const courses=[
+{id:1,title:'Arab Innovation Academy Hackathon',desc:'An intensive three-day tech entrepreneurship sprint focusing on innovation and coding. Participants will work in teams to develop innovative solutions, pitch their ideas to industry experts, and compete for prizes. This program combines hands-on technical development with business strategy and presentation skills.',duration:'3 days',skills:['Innovation','Coding','Entrepreneurship','Team Collaboration','Pitching','Problem Solving'],deadline:'May 15, 2026',eligibility:'All students with basic programming knowledge and passion for entrepreneurship are welcome. Prior hackathon experience is beneficial but not required. Students should be prepared to work intensively in team environments.',outcomes:['Build working prototype','Pitch to investors','Network with mentors','Win prizes']},
+{id:2,title:'Introduction to Classical Machine Learning',desc:'A comprehensive six-week course introducing fundamental machine learning concepts and algorithms. Students will learn to build, train, and evaluate ML models using Python and popular libraries. The curriculum covers supervised and unsupervised learning techniques, model optimization, and practical deployment strategies for real-world applications.',duration:'6 weeks',skills:['Python Programming','Machine Learning Algorithms','Data Preprocessing','Model Evaluation','Scikit-learn','Statistical Analysis','Feature Engineering'],deadline:'June 20, 2026',eligibility:'Students with Python programming background and basic understanding of statistics and linear algebra. Familiarity with NumPy and Pandas is recommended. Participants should have their own laptops with Python development environment.',outcomes:['Understand ML concepts','Build ML models','Deploy solutions','Earn certificate']},
+{id:3,title:'Data Science with Python',desc:'An eight-week intensive program teaching data analysis and visualization using Python libraries including Pandas, NumPy, and Matplotlib. Students will learn to clean, transform, analyze, and visualize complex datasets. The course includes hands-on projects with real-world datasets and teaches best practices for data storytelling and presentation.',duration:'8 weeks',skills:['Python','Pandas','Matplotlib','NumPy','Data Cleaning','Statistical Analysis','Data Visualization','Jupyter Notebooks'],deadline:'July 10, 2026',eligibility:'Open to all students with basic programming knowledge. No prior data science experience required. Students should be comfortable with basic mathematics and logical thinking. Access to a computer with internet connection is necessary.',outcomes:['Master data manipulation','Create visualizations','Analyze datasets','Complete projects']},
+{id:4,title:'Cloud Computing Fundamentals',desc:'A four-week course introducing cloud platforms and services with focus on AWS and Azure. Students will learn cloud architecture principles, deployment strategies, and resource management. The program covers virtualization, containerization, serverless computing, and DevOps practices in cloud environments.',duration:'4 weeks',skills:['AWS','Azure','Cloud Architecture','DevOps','Docker','Kubernetes','CI/CD Pipelines','Infrastructure as Code'],deadline:'May 25, 2026',eligibility:'IT and Computer Science students with understanding of networking and operating systems. Basic Linux command line knowledge is required. Students should have completed foundational programming courses.',outcomes:['Understand cloud concepts','Deploy applications','Manage resources','Get certified']},
+{id:5,title:'Digital Marketing Essentials',desc:'A five-week comprehensive program covering modern marketing strategies and digital tools. Students will learn SEO optimization, social media marketing, content strategy, email marketing, and analytics. The course includes practical projects where students create and execute real marketing campaigns with measurable results.',duration:'5 weeks',skills:['SEO','Social Media Marketing','Content Strategy','Google Analytics','Email Marketing','Digital Advertising','Marketing Automation'],deadline:'June 5, 2026',eligibility:'All students interested in marketing, communication, or business are welcome. No technical background required. Creative thinking and communication skills are beneficial. Students should be active on social media platforms.',outcomes:['Create campaigns','Analyze metrics','Build portfolio','Network with professionals']},
+{id:6,title:'Web Development Bootcamp',desc:'An intensive twelve-week full-stack web development bootcamp covering frontend and backend technologies. Students will learn HTML, CSS, JavaScript, React, Node.js, and database management. The program includes multiple projects culminating in a complete web application portfolio. Industry mentors provide guidance throughout the journey.',duration:'12 weeks',skills:['HTML','CSS','JavaScript','React','Node.js','Express','MongoDB','RESTful APIs','Git','Responsive Design'],deadline:'August 1, 2026',eligibility:'Beginners welcome with dedication to intensive learning. No prior coding experience required but helpful. Students should commit 20-30 hours per week. Access to a modern computer and stable internet connection is essential.',outcomes:['Build websites','Create web apps','Deploy projects','Land internships']},
+{id:7,title:'Cybersecurity Basics',desc:'A six-week introduction to information security and ethical hacking principles. Students will learn network security concepts, encryption methods, vulnerability assessment, and penetration testing basics. The course includes hands-on labs in a controlled environment and prepares students for industry certifications.',duration:'6 weeks',skills:['Network Security','Encryption','Penetration Testing','Ethical Hacking','Security Protocols','Risk Assessment','Linux Security'],deadline:'June 15, 2026',eligibility:'Computer Science and IT students with solid networking fundamentals. Understanding of operating systems and basic programming is required. Students must agree to ethical use policies and guidelines.',outcomes:['Identify vulnerabilities','Implement security','Earn certification','Career guidance']},
+{id:8,title:'UI/UX Design Workshop',desc:'A four-week intensive workshop on design thinking and user experience fundamentals. Students will learn user research methodologies, wireframing, prototyping, and design systems. Using industry-standard tools like Figma, participants will create professional design portfolios through multiple real-world projects.',duration:'4 weeks',skills:['Figma','Adobe XD','User Research','Wireframing','Prototyping','Design Systems','Usability Testing','Visual Design'],deadline:'May 30, 2026',eligibility:'All creative students passionate about design and user experience. No prior design experience required. Basic computer skills and aesthetic sense are beneficial. Students should have access to design software.',outcomes:['Design interfaces','Create prototypes','Build portfolio','Client projects']},
+{id:9,title:'Blockchain Technology',desc:'A five-week advanced course on blockchain fundamentals and cryptocurrency technology. Students will learn distributed ledger concepts, consensus mechanisms, smart contract development, and decentralized application architecture. The program includes hands-on coding with Solidity and deployment on test networks.',duration:'5 weeks',skills:['Blockchain Fundamentals','Smart Contracts','Cryptocurrency','Solidity','Web3.js','Ethereum','Distributed Systems'],deadline:'July 5, 2026',eligibility:'Advanced programming students with strong background in algorithms and data structures. JavaScript or Python experience required. Understanding of cryptography basics is recommended.',outcomes:['Understand blockchain','Build DApps','Smart contracts','Industry insights']},
+{id:10,title:'Artificial Intelligence Ethics',desc:'A three-week course exploring ethical implications and societal impact of AI technology. Students will examine bias in algorithms, privacy concerns, autonomous systems ethics, and policy frameworks. The program includes case studies, debates, and research projects on AI governance and responsible innovation.',duration:'3 weeks',skills:['AI Ethics','Technology Policy','Critical Thinking','Research Methods','Philosophical Analysis','Regulatory Frameworks'],deadline:'May 20, 2026',eligibility:'All students interested in technology, ethics, philosophy, or policy. No technical background required. Strong analytical and critical thinking skills are essential. Interest in social impact of technology is important.',outcomes:['Understand AI impact','Develop frameworks','Policy recommendations','Research skills']}
+];
+
+const submissions=[
+{name:'Ahmed Al-Thani',university:'Qatar University',spec:'Computer Science',course:'Machine Learning',type:'Certificate',date:'Feb 10, 2026',status:'Verified'},
+{name:'Fatima Hassan',university:'HBKU',spec:'Data Science',course:'Python Programming',type:'Project Report',date:'Feb 8, 2026',status:'Pending'},
+{name:'Mohammed Khalid',university:'QU',spec:'Business Admin',course:'Digital Marketing',type:'Achievement',date:'Feb 5, 2026',status:'Verified'},
+{name:'Noor Ibrahim',university:'CMU-Q',spec:'Information Systems',course:'Web Development',type:'Certificate',date:'Feb 3, 2026',status:'Verified'},
+{name:'Sara Mohamed',university:'Qatar University',spec:'Engineering',course:'Cloud Computing',type:'Transcript',date:'Jan 30, 2026',status:'Pending'},
+{name:'Khalid Ahmed',university:'HBKU',spec:'AI & ML',course:'Machine Learning',type:'Certificate',date:'Jan 28, 2026',status:'Verified'},
+{name:'Mariam Ali',university:'QU',spec:'Design',course:'UI/UX Workshop',type:'Project Report',date:'Jan 25, 2026',status:'Verified'},
+{name:'Omar Rashid',university:'CMU-Q',spec:'Computer Science',course:'Cybersecurity',type:'Achievement',date:'Jan 22, 2026',status:'Pending'},
+{name:'Layla Mansoor',university:'HBKU',spec:'Business',course:'Digital Marketing',type:'Certificate',date:'Jan 20, 2026',status:'Verified'},
+{name:'Hassan Mubarak',university:'QU',spec:'Computer Science',course:'Blockchain Tech',type:'Project Report',date:'Jan 18, 2026',status:'Verified'}
+];
+
+const history=[
+{title:'Machine Learning Workshop - Certificate',course:'Introduction to Classical Machine Learning',date:'Feb 10, 2026',type:'Certificate',status:'verified'},
+{title:'Hackathon Participation - Achievement',course:'Arab Innovation Academy Hackathon',date:'Feb 8, 2026',type:'Achievement',status:'verified'},
+{title:'Python Project - Report Submission',course:'Data Science with Python',date:'Feb 5, 2026',type:'Project',status:'pending'},
+{title:'Cloud Deployment - Transcript',course:'Cloud Computing Fundamentals',date:'Feb 3, 2026',type:'Transcript',status:'verified'},
+{title:'UI/UX Design Portfolio',course:'UI/UX Design Workshop',date:'Jan 30, 2026',type:'Portfolio',status:'verified'},
+{title:'Digital Marketing Campaign',course:'Digital Marketing Essentials',date:'Jan 28, 2026',type:'Project',status:'submitted'},
+{title:'Web Development Project',course:'Web Development Bootcamp',date:'Jan 25, 2026',type:'Project',status:'pending'},
+{title:'Cybersecurity Lab - Completion',course:'Cybersecurity Basics',date:'Jan 22, 2026',type:'Certificate',status:'verified'},
+{title:'Blockchain Smart Contract',course:'Blockchain Technology',date:'Jan 20, 2026',type:'Code Submission',status:'verified'},
+{title:'AI Ethics Research Paper',course:'Artificial Intelligence Ethics',date:'Jan 18, 2026',type:'Research',status:'submitted'}
+];
+
+let currentCourse=null;
+let selectedCourseForUpload=null;
+let allCourses=[];
+let allUploadCourses=[];
+
+function toggleDarkMode(){
+document.body.classList.toggle('dark');
+const icon=document.getElementById('themeIcon');
+if(document.body.classList.contains('dark')){
+icon.innerHTML='<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+}else{
+icon.innerHTML='<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>';
+}
+}
+
+function toggleNotif(){
+document.getElementById('notifPanel').classList.toggle('show');
+document.getElementById('searchPanel').classList.remove('show');
+}
+
+function toggleSearch(){
+document.getElementById('searchPanel').classList.toggle('show');
+document.getElementById('notifPanel').classList.remove('show');
+}
+
+function performSearch(){
+const query=document.getElementById('globalSearch').value.toLowerCase();
+const results=document.getElementById('searchResults');
+if(!query){results.innerHTML='';return}
+const matches=courses.filter(c=>c.title.toLowerCase().includes(query)||c.desc.toLowerCase().includes(query));
+results.innerHTML=matches.map(c=>`
+<div class="search-result" onclick="viewCourse(${c.id});toggleSearch()">
+<div class="search-result-title">${c.title}</div>
+<div class="search-result-desc">${c.desc.substring(0,80)}...</div>
+</div>
+`).join('')||'<p style="text-align:center;color:var(--tl);padding:20px">No results found</p>';
+}
+
+function downloadPDF(name){
+st(`Downloading ${name}.pdf...`);
+const content=`%PDF-1.4\n1 0 obj\n<< /Type /Catalog /Pages 2 0 R >>\nendobj\n2 0 obj\n<< /Type /Pages /Kids [3 0 R] /Count 1 >>\nendobj\n3 0 obj\n<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >> /Contents 4 0 R >>\nendobj\n4 0 obj\n<< /Length 55 >>\nstream\nBT\n/F1 12 Tf\n100 700 Td\n(${name} Report) Tj\nET\nendstream\nendobj\nxref\n0 5\n0000000000 65535 f\n0000000009 00000 n\n0000000058 00000 n\n0000000115 00000 n\n0000000274 00000 n\ntrailer\n<< /Size 5 /Root 1 0 R >>\nstartxref\n379\n%%EOF`;
+const blob=new Blob([content],{type:'application/pdf'});
+const url=URL.createObjectURL(blob);
+const a=document.createElement('a');
+a.href=url;
+a.download=`${name}.pdf`;
+a.click();
+URL.revokeObjectURL(url);
+}
+
+function filterCourses(){
+const query=document.getElementById('courseSearch').value.toLowerCase();
+const filtered=allCourses.filter(c=>c.title.toLowerCase().includes(query)||c.desc.toLowerCase().includes(query));
+renderCoursesFiltered(filtered);
+}
+
+function filterUploadCourses(){
+const query=document.getElementById('uploadSearch').value.toLowerCase();
+const filtered=allUploadCourses.filter(c=>c.title.toLowerCase().includes(query));
+renderUploadListFiltered(filtered);
+}
+
+function renderCoursesFiltered(list){
+const container=document.getElementById('courseList');
+container.innerHTML=list.map(c=>`
+<div class="citem" onclick="viewCourse(${c.id})">
+<div class="cinfo">
+<div class="ctitle">${c.title}</div>
+<div class="cdesc">${c.desc.substring(0,120)}...</div>
+<div class="cmeta">
+<span>⏱ ${c.duration}</span>
+<span>📅 ${c.deadline}</span>
+</div>
+</div>
+<button class="vbtn" onclick="event.stopPropagation();viewCourse(${c.id})">View Details</button>
+</div>
+`).join('');
+}
+
+function renderCourses(){
+allCourses=[...courses];
+renderCoursesFiltered(allCourses);
+}
+
+function viewCourse(id){
+currentCourse=courses.find(c=>c.id===id);
+if(!currentCourse)return;
+document.getElementById('modalTitle').textContent=currentCourse.title;
+document.getElementById('modalBody').innerHTML=`
+<div class="msec">
+<h4>Course Description</h4>
+<p>${currentCourse.desc}</p>
+</div>
+<div class="msec">
+<h4>Learning Outcomes</h4>
+<ul>
+${currentCourse.outcomes.map(o=>`<li>${o}</li>`).join('')}
+</ul>
+</div>
+<div class="msec">
+<h4>Skills Covered</h4>
+<p>${currentCourse.skills.join(', ')}</p>
+</div>
+<div class="msec">
+<h4>Duration & Deadline</h4>
+<p><strong>Duration:</strong> ${currentCourse.duration}<br><strong>Application Deadline:</strong> ${currentCourse.deadline}</p>
+</div>
+<div class="msec">
+<h4>Eligibility Requirements</h4>
+<p>${currentCourse.eligibility}</p>
+</div>
+`;
+document.getElementById('courseModal').classList.add('show');
+}
+
+function closeModal(){
+document.getElementById('courseModal').classList.remove('show');
+}
+
+function renderUploadListFiltered(list){
+const container=document.getElementById('uploadList');
+container.innerHTML=list.map(c=>`
+<div class="uitem">
+<div class="uinfo">
+<div class="utitle">${c.title}</div>
+<div class="ustatus">Upload your documents for this course</div>
+</div>
+<button class="ubtn" onclick="openUploadModal(${c.id})">Upload Document</button>
+</div>
+`).join('');
+}
+
+function renderUploadList(){
+allUploadCourses=[...courses];
+renderUploadListFiltered(allUploadCourses);
+}
+
+function renderSubmissions(){
+const list=document.getElementById('submissionsList');
+list.innerHTML=submissions.map(s=>`
+<div class="subitem">
+<strong>${s.name}</strong> - ${s.course} (${s.type}) - <span style="color:${s.status==='Verified'?'var(--g2)':'var(--red)'}">${s.status}</span> - ${s.date}
+</div>
+`).join('');
+}
+
+function renderHistory(){
+const list=document.getElementById('historyList');
+list.innerHTML=history.map(h=>`
+<div class="hitem">
+<div class="hinfo">
+<div class="htitle">${h.title}</div>
+<div class="hmeta">Course: ${h.course}</div>
+<div class="hmeta">Type: ${h.type} • Date: ${h.date}</div>
+<span class="hstatus ${h.status}">${h.status.charAt(0).toUpperCase()+h.status.slice(1)}</span>
+</div>
+</div>
+`).join('');
+}
+
+function openUploadModal(courseId){
+selectedCourseForUpload=courseId;
+const sel=document.getElementById('urcourse');
+sel.innerHTML='<option value="">Select course</option>'+courses.map(c=>`<option value="${c.id}" ${c.id===courseId?'selected':''}>${c.title}</option>`).join('');
+document.getElementById('uploadModal').classList.add('show');
+}
+
+function closeUploadModal(){
+document.getElementById('uploadModal').classList.remove('show');
+document.getElementById('uploadDocForm').reset();
+}
+
+function submitDocument(){
+const name=document.getElementById('uname').value.trim();
+const univ=document.getElementById('uuniv').value.trim();
+const spec=document.getElementById('uspec').value.trim();
+const doctype=document.getElementById('udoctype').value;
+const rcourse=document.getElementById('urcourse').value;
+const file1=document.getElementById('ufile1').files[0];
+if(!name||!univ||!spec||!doctype||!rcourse||!file1){
+st('Please fill all required fields and upload at least Document 1');
+return;
+}
+st('Documents uploaded successfully! Pending verification.');
+closeUploadModal();
+}
+
+function sp(id){document.querySelectorAll('.fpg').forEach(p=>p.classList.remove('active'));setTimeout(()=>document.getElementById(id).classList.add('active'),50);document.querySelectorAll('.em').forEach(e=>e.classList.remove('show'));document.querySelectorAll('.fp input').forEach(i=>i.classList.remove('err'))}
+
+function tgp(id,b){const i=document.getElementById(id);const p=i.type==='password';i.type=p?'text':'password';b.innerHTML=p?'<svg viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>':'<svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>'}
+
+function se(id,m){const e=document.getElementById(id);if(m)e.querySelector('span').textContent=m;e.classList.add('show')}
+function ce(fid){document.querySelectorAll('#'+fid+' .em').forEach(e=>e.classList.remove('show'));document.querySelectorAll('#'+fid+' input').forEach(i=>i.classList.remove('err'))}
+function sk(fid){const f=document.getElementById(fid);f.classList.add('shake');setTimeout(()=>f.classList.remove('shake'),400)}
+function ve(e){return/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)}
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+
+function cs(v){let s=0;if(v.length>=8)s++;if(/[A-Z]/.test(v))s++;if(/[0-9]/.test(v))s++;if(/[^A-Za-z0-9]/.test(v))s++;const l=['','Weak','Medium','Strong','Very Strong'],c=['','weak','medium','strong','vstrong'];for(let i=1;i<=4;i++){const b=document.getElementById('s'+i);b.className='sb';if(i<=s)b.classList.add(c[s])}document.getElementById('slb').textContent=v.length>0?l[s]:''}
+
+function showDash(u){
+document.getElementById('aw').style.display='none';
+document.getElementById('dw').classList.add('active');
+document.body.classList.add('dm');
+const n=u.includes('@')?u.split('@')[0]:u;
+const d=n.charAt(0).toUpperCase()+n.slice(1);
+document.getElementById('dn').innerHTML=d;
+document.getElementById('da').textContent=d.substring(0,2).toUpperCase();
+renderCourses();
+renderUploadList();
+renderSubmissions();
+renderHistory();
+setTimeout(rb,300);
+}
+
+function logout(){
+document.getElementById('dw').classList.remove('active');
+document.getElementById('aw').style.display='flex';
+document.body.classList.remove('dm');
+st('Signed out successfully');
+sp('loginPage');
+document.getElementById('loginForm').reset();
+}
+
+function rb(){const d=[{l:'8 weeks ago',h:12},{l:'7 weeks ago',h:30},{l:'6 weeks ago',h:22},{l:'5 weeks ago',h:50},{l:'4 weeks ago',h:38},{l:'3 weeks ago',h:28},{l:'last week',h:65},{l:'this week',h:88}];const c=document.getElementById('bc');c.innerHTML='';d.forEach((x,i)=>{const col=document.createElement('div');col.className='bcol';const bar=document.createElement('div');bar.className='bar';bar.style.height='0%';const lbl=document.createElement('div');lbl.className='blbl';lbl.textContent=x.l;col.appendChild(bar);col.appendChild(lbl);c.appendChild(col);setTimeout(()=>{bar.style.height=x.h+'%'},100+i*80)})}
+
+document.querySelectorAll('.side-nav .ni').forEach(item=>{
+item.addEventListener('click',function(){
+const view=this.getAttribute('data-view');
+if(!view)return;
+document.querySelectorAll('.side-nav .ni').forEach(n=>n.classList.remove('active'));
+this.classList.add('active');
+document.querySelectorAll('.dv').forEach(v=>v.classList.remove('active'));
+const titles={dashboard:'Dashboard',opportunity:'Opportunity',upload:'Upload Documents',history:'History'};
+document.getElementById('pageTitle').textContent=titles[view]||'Dashboard';
+const targetView=view+'View';
+const el=document.getElementById(targetView);
+if(el)el.classList.add('active');
+if(window.innerWidth<=768)document.getElementById('side').classList.remove('open');
+});
+});
+
+document.getElementById('loginForm').addEventListener('submit',function(e){e.preventDefault();ce('loginForm');let v=true;const u=document.getElementById('lu').value.trim(),p=document.getElementById('lp').value.trim(),c=document.getElementById('lci').value.trim();
+if(!u){se('lue','Please enter your username or email');document.getElementById('lu').classList.add('err');v=false}
+if(!p){se('lpe','Please enter your password');document.getElementById('lp').classList.add('err');v=false}
+if(!c){se('lce','Please enter the captcha code');v=false}else if(c!==cp.l){se('lce','Captcha does not match. Try again.');v=false;gc('l')}
+if(!v){sk('loginForm');return}
+st('Login successful! Redirecting...');setTimeout(()=>showDash(u),1000);gc('l')});
+
+document.getElementById('signupForm').addEventListener('submit',function(e){e.preventDefault();ce('signupForm');let v=true;
+if(!document.getElementById('sf').value.trim()){se('sfe');document.getElementById('sf').classList.add('err');v=false}
+if(!document.getElementById('sla').value.trim()){se('slae');document.getElementById('sla').classList.add('err');v=false}
+const em=document.getElementById('se').value.trim();if(!em||!ve(em)){se('see');document.getElementById('se').classList.add('err');v=false}
+if(!document.getElementById('sph').value.trim()){se('sphe');document.getElementById('sph').classList.add('err');v=false}
+if(!document.getElementById('sid').value.trim()){se('side');document.getElementById('sid').classList.add('err');v=false}
+const pw=document.getElementById('spw').value.trim();if(!pw||pw.length<8){se('spwe');document.getElementById('spw').classList.add('err');v=false}
+const c=document.getElementById('sci').value.trim();if(!c){se('sce','Please enter captcha');v=false}else if(c!==cp.s){se('sce','Captcha does not match.');v=false;gc('s')}
+if(!v){sk('signupForm');return}
+st('Account created!');this.reset();cs('');gc('s');setTimeout(()=>sp('loginPage'),1500)});
+
+document.getElementById('forgotForm').addEventListener('submit',function(e){e.preventDefault();ce('forgotForm');let v=true;
+const em=document.getElementById('fe').value.trim();if(!em||!ve(em)){se('fee');document.getElementById('fe').classList.add('err');v=false}
+const c=document.getElementById('fci').value.trim();if(!c){se('fce','Please enter captcha');v=false}else if(c!==cp.f){se('fce','Captcha does not match.');v=false;gc('f')}
+if(!v){sk('forgotForm');return}
+st('Reset link sent to your email!');gc('f');this.reset()});
+
+document.querySelectorAll('.fp input').forEach(i=>{i.addEventListener('input',function(){this.classList.remove('err');const e=this.closest('.fg')?.querySelector('.em');if(e)e.classList.remove('show')})});
+
+document.querySelector('[data-view="dashboard"]').classList.add('active');
+</script>
+</body>
+</html>
