@@ -1487,6 +1487,59 @@
             color: var(--qf-text-light);
         }
 
+        /* Course Status Badges */
+        .status-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .status-badge.pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+        .status-badge.approved {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status-badge.rejected {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        /* Action Buttons in Modal */
+        .modal-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
+            justify-content: flex-end;
+        }
+        .modal-action-btn {
+            padding: 10px 24px;
+            border: none;
+            border-radius: 8px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .modal-action-btn.approve {
+            background: var(--qf-green);
+            color: #fff;
+        }
+        .modal-action-btn.approve:hover {
+            background: var(--qf-green-dark);
+        }
+        .modal-action-btn.reject {
+            background: var(--qf-red);
+            color: #fff;
+        }
+        .modal-action-btn.reject:hover {
+            background: #c0392b;
+        }
+
         /* Responsive */
         @media (max-width: 1200px) {
             .stats-row { grid-template-columns: repeat(2, 1fr); }
@@ -1754,6 +1807,10 @@
                 <button class="nav-item" data-page="verifier">
                     <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
                     Verifier Management
+                </button>
+                <button class="nav-item" data-page="collaborator">
+                    <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><line x1="18" y1="10" x2="22" y2="10"/><line x1="20" y1="8" x2="20" y2="12"/></svg>
+                    Collaborator
                 </button>
                 <button class="nav-item" data-page="opportunity">
                     <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
@@ -2049,6 +2106,7 @@
                                     <th>Courses Enrolled</th>
                                     <th>Certificates</th>
                                     <th>Last Login</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody id="studentsTableBody">
@@ -2695,6 +2753,104 @@
                     </div>
                 </div>
 
+                <!-- COLLABORATOR SECTION (New) -->
+                <div class="dash-section" id="collaboratorSection">
+                    <h4 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 600; color: var(--qf-text); margin-bottom: 24px;">Collaborator Management</h4>
+                    
+                    <!-- Collaborators Table -->
+                    <div class="students-table-card">
+                        <h4>All Collaborators / Verifiers</h4>
+                        <p style="color: var(--qf-text-light); margin-bottom: 20px;">Click on any collaborator to view their submitted courses for approval</p>
+                        <table class="students-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                    <th>Courses Submitted</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr onclick="openCollaboratorCourses('Dr. Hassan Al-Kuwari', 'Data Science Expert')">
+                                    <td>#C001</td>
+                                    <td>Dr. Hassan Al-Kuwari</td>
+                                    <td>hassan.k@qf.edu.qa</td>
+                                    <td>Senior Verifier</td>
+                                    <td>12</td>
+                                    <td><span class="badge active">Active</span></td>
+                                    <td><button class="view-course-btn" style="width: auto; padding: 6px 16px;" onclick="event.stopPropagation(); openCollaboratorCourses('Dr. Hassan Al-Kuwari', 'Data Science Expert')">View Courses</button></td>
+                                </tr>
+                                <tr onclick="openCollaboratorCourses('Prof. Aisha Al-Mannai', 'Marketing Specialist')">
+                                    <td>#C002</td>
+                                    <td>Prof. Aisha Al-Mannai</td>
+                                    <td>aisha.m@qf.edu.qa</td>
+                                    <td>Verifier</td>
+                                    <td>8</td>
+                                    <td><span class="badge active">Active</span></td>
+                                    <td><button class="view-course-btn" style="width: auto; padding: 6px 16px;" onclick="event.stopPropagation(); openCollaboratorCourses('Prof. Aisha Al-Mannai', 'Marketing Specialist')">View Courses</button></td>
+                                </tr>
+                                <tr onclick="openCollaboratorCourses('Dr. Omar Al-Thani', 'Cybersecurity Expert')">
+                                    <td>#C003</td>
+                                    <td>Dr. Omar Al-Thani</td>
+                                    <td>omar.t@qf.edu.qa</td>
+                                    <td>Senior Verifier</td>
+                                    <td>15</td>
+                                    <td><span class="badge active">Active</span></td>
+                                    <td><button class="view-course-btn" style="width: auto; padding: 6px 16px;" onclick="event.stopPropagation(); openCollaboratorCourses('Dr. Omar Al-Thani', 'Cybersecurity Expert')">View Courses</button></td>
+                                </tr>
+                                <tr onclick="openCollaboratorCourses('Ms. Fatima Al-Dosari', 'Design Lead')">
+                                    <td>#C004</td>
+                                    <td>Ms. Fatima Al-Dosari</td>
+                                    <td>fatima.d@qf.edu.qa</td>
+                                    <td>Verifier</td>
+                                    <td>6</td>
+                                    <td><span class="badge pending">Pending Review</span></td>
+                                    <td><button class="view-course-btn" style="width: auto; padding: 6px 16px;" onclick="event.stopPropagation(); openCollaboratorCourses('Ms. Fatima Al-Dosari', 'Design Lead')">View Courses</button></td>
+                                </tr>
+                                <tr onclick="openCollaboratorCourses('Dr. Khalid Ahmed', 'Business Analytics')">
+                                    <td>#C005</td>
+                                    <td>Dr. Khalid Ahmed</td>
+                                    <td>khalid.a@qf.edu.qa</td>
+                                    <td>Junior Verifier</td>
+                                    <td>4</td>
+                                    <td><span class="badge active">Active</span></td>
+                                    <td><button class="view-course-btn" style="width: auto; padding: 6px 16px;" onclick="event.stopPropagation(); openCollaboratorCourses('Dr. Khalid Ahmed', 'Business Analytics')">View Courses</button></td>
+                                </tr>
+                                <tr onclick="openCollaboratorCourses('Prof. Sara Al-Hashemi', 'Web Development')">
+                                    <td>#C006</td>
+                                    <td>Prof. Sara Al-Hashemi</td>
+                                    <td>sara.h@qf.edu.qa</td>
+                                    <td>Senior Verifier</td>
+                                    <td>10</td>
+                                    <td><span class="badge active">Active</span></td>
+                                    <td><button class="view-course-btn" style="width: auto; padding: 6px 16px;" onclick="event.stopPropagation(); openCollaboratorCourses('Prof. Sara Al-Hashemi', 'Web Development')">View Courses</button></td>
+                                </tr>
+                                <tr onclick="openCollaboratorCourses('Dr. Mohammed Al-Jaber', 'Cloud Computing')">
+                                    <td>#C007</td>
+                                    <td>Dr. Mohammed Al-Jaber</td>
+                                    <td>mohammed.j@qf.edu.qa</td>
+                                    <td>Verifier</td>
+                                    <td>7</td>
+                                    <td><span class="badge deactivated">On Leave</span></td>
+                                    <td><button class="view-course-btn" style="width: auto; padding: 6px 16px;" onclick="event.stopPropagation(); openCollaboratorCourses('Dr. Mohammed Al-Jaber', 'Cloud Computing')">View Courses</button></td>
+                                </tr>
+                                <tr onclick="openCollaboratorCourses('Ms. Noura Al-Ansari', 'Leadership Coach')">
+                                    <td>#C008</td>
+                                    <td>Ms. Noura Al-Ansari</td>
+                                    <td>noura.a@qf.edu.qa</td>
+                                    <td>Verifier</td>
+                                    <td>5</td>
+                                    <td><span class="badge active">Active</span></td>
+                                    <td><button class="view-course-btn" style="width: auto; padding: 6px 16px;" onclick="event.stopPropagation(); openCollaboratorCourses('Ms. Noura Al-Ansari', 'Leadership Coach')">View Courses</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
                 <!-- OPPORTUNITY MANAGEMENT SECTION -->
                 <div class="dash-section" id="opportunitySection">
                     <div class="opportunity-header">
@@ -2728,7 +2884,15 @@
                             </div>
                             <div class="opportunity-footer">
                                 <span class="applicants-count">45 applicants</span>
-                                <button class="view-course-btn" style="width: auto; padding: 8px 16px;">View Details</button>
+                                <button class="view-course-btn" style="width: auto; padding: 8px 16px;" onclick="openOpportunityDetails('Full Stack Web Development Program', {
+                                    duration: '6 Months',
+                                    startDate: 'Feb 2026',
+                                    description: 'Comprehensive program covering HTML, CSS, JavaScript, React, Node.js, and MongoDB with real-world project experience.',
+                                    skills: ['HTML/CSS', 'JavaScript', 'React', 'Node.js', 'MongoDB'],
+                                    applicants: 45,
+                                    futureOpportunities: 'Graduates can pursue roles as Full Stack Developers, Frontend Developers, Backend Developers, or Software Engineers at top tech companies.',
+                                    prerequisites: 'Basic programming knowledge recommended.'
+                                })">View Details</button>
                             </div>
                         </div>
 
@@ -2753,7 +2917,15 @@
                             </div>
                             <div class="opportunity-footer">
                                 <span class="applicants-count">67 applicants</span>
-                                <button class="view-course-btn" style="width: auto; padding: 8px 16px;">View Details</button>
+                                <button class="view-course-btn" style="width: auto; padding: 8px 16px;" onclick="openOpportunityDetails('Data Science & AI Certification', {
+                                    duration: '4 Months',
+                                    startDate: 'Mar 2026',
+                                    description: 'Learn Python programming, machine learning algorithms, deep learning, and natural language processing with industry experts.',
+                                    skills: ['Python', 'Machine Learning', 'TensorFlow', 'Data Analysis'],
+                                    applicants: 67,
+                                    futureOpportunities: 'Career paths include Data Scientist, AI Engineer, Machine Learning Engineer, or Data Analyst.',
+                                    prerequisites: 'Basic programming knowledge recommended.'
+                                })">View Details</button>
                             </div>
                         </div>
 
@@ -2778,7 +2950,15 @@
                             </div>
                             <div class="opportunity-footer">
                                 <span class="applicants-count">89 applicants</span>
-                                <button class="view-course-btn" style="width: auto; padding: 8px 16px;">View Details</button>
+                                <button class="view-course-btn" style="width: auto; padding: 8px 16px;" onclick="openOpportunityDetails('Digital Marketing Specialist', {
+                                    duration: '3 Months',
+                                    startDate: 'Feb 2026',
+                                    description: 'Master SEO, social media marketing, content strategy, email campaigns, and analytics with hands-on projects.',
+                                    skills: ['SEO', 'Social Media', 'Content Marketing', 'Analytics'],
+                                    applicants: 89,
+                                    futureOpportunities: 'Graduates can work as Digital Marketing Specialists, SEO Managers, Content Strategists, or Social Media Managers.',
+                                    prerequisites: 'No prior marketing experience required.'
+                                })">View Details</button>
                             </div>
                         </div>
 
@@ -2803,7 +2983,15 @@
                             </div>
                             <div class="opportunity-footer">
                                 <span class="applicants-count">52 applicants</span>
-                                <button class="view-course-btn" style="width: auto; padding: 8px 16px;">View Details</button>
+                                <button class="view-course-btn" style="width: auto; padding: 8px 16px;" onclick="openOpportunityDetails('Cybersecurity Professional', {
+                                    duration: '5 Months',
+                                    startDate: 'Apr 2026',
+                                    description: 'Learn network security, ethical hacking, penetration testing, and security architecture with certified instructors.',
+                                    skills: ['Network Security', 'Ethical Hacking', 'Penetration Testing', 'Risk Management'],
+                                    applicants: 52,
+                                    futureOpportunities: 'Career paths include Cybersecurity Analyst, Security Engineer, Penetration Tester, or Security Consultant.',
+                                    prerequisites: 'Basic IT knowledge recommended.'
+                                })">View Details</button>
                             </div>
                         </div>
 
@@ -2829,7 +3017,15 @@
                             </div>
                             <div class="opportunity-footer">
                                 <span class="applicants-count">38 applicants</span>
-                                <button class="view-course-btn" style="width: auto; padding: 8px 16px;">View Details</button>
+                                <button class="view-course-btn" style="width: auto; padding: 8px 16px;" onclick="openOpportunityDetails('Cloud Architecture & DevOps', {
+                                    duration: '4 Months',
+                                    startDate: 'Mar 2026',
+                                    description: 'Master AWS, Azure, Docker, Kubernetes, CI/CD pipelines, and infrastructure automation for modern cloud solutions.',
+                                    skills: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform'],
+                                    applicants: 38,
+                                    futureOpportunities: 'Graduates can become Cloud Architects, DevOps Engineers, Site Reliability Engineers, or Cloud Consultants.',
+                                    prerequisites: 'Basic understanding of programming and IT infrastructure.'
+                                })">View Details</button>
                             </div>
                         </div>
                     </div>
@@ -2867,7 +3063,7 @@
                         </div>
                         <div class="stat-card">
                             <div class="stat-info">
-                                <h4>Externally Verified</h4>
+                                <h4> Verifier</h4>
                                 <div class="stat-value">
                                     <span>234</span>
                                     <span class="stat-change positive">+8%</span>
@@ -3110,6 +3306,189 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Opportunity Details Modal -->
+    <div class="modal" id="opportunityDetailsModal">
+        <div class="modal-content" style="max-width: 600px;">
+            <div class="modal-header">
+                <h3 id="opportunityDetailTitle">Opportunity Details</h3>
+                <button class="close-modal" onclick="closeOpportunityDetailsModal()">
+                    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <div style="display: flex; gap: 16px; margin-bottom: 16px; flex-wrap: wrap;">
+                    <div style="background: var(--qf-mint-pale); padding: 10px 16px; border-radius: 8px;">
+                        <span style="font-size: 12px; color: var(--qf-text-light); display: block;">Duration</span>
+                        <span style="font-size: 16px; font-weight: 600; color: var(--qf-text);" id="opportunityDetailDuration">6 Months</span>
+                    </div>
+                    <div style="background: var(--qf-mint-pale); padding: 10px 16px; border-radius: 8px;">
+                        <span style="font-size: 12px; color: var(--qf-text-light); display: block;">Start Date</span>
+                        <span style="font-size: 16px; font-weight: 600; color: var(--qf-text);" id="opportunityDetailStartDate">Feb 2026</span>
+                    </div>
+                    <div style="background: var(--qf-mint-pale); padding: 10px 16px; border-radius: 8px;">
+                        <span style="font-size: 12px; color: var(--qf-text-light); display: block;">Applicants</span>
+                        <span style="font-size: 16px; font-weight: 600; color: var(--qf-text);" id="opportunityDetailApplicants">45</span>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 16px;">
+                    <h5 style="font-size: 14px; font-weight: 600; color: var(--qf-text); margin-bottom: 8px;">Description</h5>
+                    <p style="font-size: 13px; color: var(--qf-text); line-height: 1.6;" id="opportunityDetailDescription"></p>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <h5 style="font-size: 14px; font-weight: 600; color: var(--qf-text); margin-bottom: 8px;">Skills You'll Gain</h5>
+                    <div class="skills-tags" id="opportunityDetailSkills"></div>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <h5 style="font-size: 14px; font-weight: 600; color: var(--qf-text); margin-bottom: 8px;">Future Opportunities</h5>
+                    <p style="font-size: 13px; color: var(--qf-text); line-height: 1.6;" id="opportunityDetailFuture"></p>
+                </div>
+
+                <div>
+                    <h5 style="font-size: 14px; font-weight: 600; color: var(--qf-text); margin-bottom: 8px;">Prerequisites</h5>
+                    <p style="font-size: 13px; color: var(--qf-text); line-height: 1.6;" id="opportunityDetailPrereqs"></p>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <!-- <button class="modal-action-btn approve" onclick="applyToOpportunity()">Apply Now</button> -->
+                <button class="modal-action-btn reject" onclick="closeOpportunityDetailsModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Collaborator Courses Modal -->
+    <div class="modal" id="collaboratorCoursesModal">
+        <div class="modal-content" style="max-width: 700px;">
+            <div class="modal-header">
+                <h3 id="collaboratorName">Collaborator's Submitted Courses</h3>
+                <button class="close-modal" onclick="closeCollaboratorCoursesModal()">
+                    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <p style="color: var(--qf-text-light); margin-bottom: 20px;" id="collaboratorRole"></p>
+            
+            <div class="courses-grid" style="grid-template-columns: 1fr;">
+                <!-- Course 1 -->
+                <div class="course-card" style="margin-bottom: 16px;">
+                    <div class="course-header">
+                        <div>
+                            <h5>Advanced Data Science Certification</h5>
+                            <div class="course-category">Data Science</div>
+                        </div>
+                        <span class="status-badge pending">Pending Review</span>
+                    </div>
+                    <p style="font-size: 13px; color: var(--qf-text); margin-bottom: 12px;">Comprehensive data science program covering machine learning, deep learning, and AI applications with real-world projects.</p>
+                    <div style="display: flex; gap: 16px; margin-bottom: 16px;">
+                        <span style="font-size: 12px; color: var(--qf-text-light);">Duration: 4 Months</span>
+                        <span style="font-size: 12px; color: var(--qf-text-light);">Students: 45</span>
+                    </div>
+                    <div class="opportunity-skills">
+                        <div class="skills-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Deep Learning</span>
+                        </div>
+                    </div>
+                    <div class="modal-actions" style="margin-top: 16px;">
+                        <button class="modal-action-btn approve" onclick="approveCourse('Advanced Data Science Certification')">Approve</button>
+                        <button class="modal-action-btn reject" onclick="rejectCourse('Advanced Data Science Certification')">Reject</button>
+                        <!-- <button class="view-course-btn" style="width: auto; padding: 8px 16px;" onclick="viewCourseDetails('Advanced Data Science Certification')">View Details</button> -->
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card" style="margin-bottom: 16px;">
+                    <div class="course-header">
+                        <div>
+                            <h5>Machine Learning Fundamentals</h5>
+                            <div class="course-category">AI/ML</div>
+                        </div>
+                        <span class="status-badge pending">Pending Review</span>
+                    </div>
+                    <p style="font-size: 13px; color: var(--qf-text); margin-bottom: 12px;">Learn core machine learning algorithms, supervised and unsupervised learning, model evaluation, and practical implementations.</p>
+                    <div style="display: flex; gap: 16px; margin-bottom: 16px;">
+                        <span style="font-size: 12px; color: var(--qf-text-light);">Duration: 3 Months</span>
+                        <span style="font-size: 12px; color: var(--qf-text-light);">Students: 32</span>
+                    </div>
+                    <div class="opportunity-skills">
+                        <div class="skills-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                        </div>
+                    </div>
+                    <div class="modal-actions" style="margin-top: 16px;">
+                        <button class="modal-action-btn approve" onclick="approveCourse('Machine Learning Fundamentals')">Approve</button>
+                        <button class="modal-action-btn reject" onclick="rejectCourse('Machine Learning Fundamentals')">Reject</button>
+                        <!-- <button class="view-course-btn" style="width: auto; padding: 8px 16px;" onclick="viewCourseDetails('Machine Learning Fundamentals')">View Details</button> -->
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-card" style="margin-bottom: 16px;">
+                    <div class="course-header">
+                        <div>
+                            <h5>Deep Learning Specialization</h5>
+                            <div class="course-category">AI/ML</div>
+                        </div>
+                        <span class="status-badge pending">Pending Review</span>
+                    </div>
+                    <p style="font-size: 13px; color: var(--qf-text); margin-bottom: 12px;">Deep dive into neural networks, CNNs, RNNs, transformers, and advanced deep learning architectures with PyTorch and TensorFlow.</p>
+                    <div style="display: flex; gap: 16px; margin-bottom: 16px;">
+                        <span style="font-size: 12px; color: var(--qf-text-light);">Duration: 4 Months</span>
+                        <span style="font-size: 12px; color: var(--qf-text-light);">Students: 28</span>
+                    </div>
+                    <div class="opportunity-skills">
+                        <div class="skills-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Neural Networks</span>
+                            <span class="skill-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                    <div class="modal-actions" style="margin-top: 16px;">
+                        <button class="modal-action-btn approve" onclick="approveCourse('Deep Learning Specialization')">Approve</button>
+                        <button class="modal-action-btn reject" onclick="rejectCourse('Deep Learning Specialization')">Reject</button>
+                        <!-- <button class="view-course-btn" style="width: auto; padding: 8px 16px;" onclick="viewCourseDetails('Deep Learning Specialization')">View Details</button> -->
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="course-card" style="margin-bottom: 16px;">
+                    <div class="course-header">
+                        <div>
+                            <h5>Natural Language Processing</h5>
+                            <div class="course-category">AI/ML</div>
+                        </div>
+                        <span class="status-badge pending">Pending Review</span>
+                    </div>
+                    <p style="font-size: 13px; color: var(--qf-text); margin-bottom: 12px;">Master NLP techniques including text preprocessing, sentiment analysis, language models, transformers, and chatbots.</p>
+                    <div style="display: flex; gap: 16px; margin-bottom: 16px;">
+                        <span style="font-size: 12px; color: var(--qf-text-light);">Duration: 3 Months</span>
+                        <span style="font-size: 12px; color: var(--qf-text-light);">Students: 22</span>
+                    </div>
+                    <div class="opportunity-skills">
+                        <div class="skills-tags">
+                            <span class="skill-tag">NLTK</span>
+                            <span class="skill-tag">spaCy</span>
+                            <span class="skill-tag">Transformers</span>
+                            <span class="skill-tag">BERT</span>
+                        </div>
+                    </div>
+                    <div class="modal-actions" style="margin-top: 16px;">
+                        <button class="modal-action-btn approve" onclick="approveCourse('Natural Language Processing')">Approve</button>
+                        <button class="modal-action-btn reject" onclick="rejectCourse('Natural Language Processing')">Reject</button>
+                        <!-- <button class="view-course-btn" style="width: auto; padding: 8px 16px;" onclick="viewCourseDetails('Natural Language Processing')">View Details</button> -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -3548,6 +3927,9 @@
                 } else if (page === 'verifier') {
                     document.getElementById('verifierSection').classList.add('active');
                     document.getElementById('pageTitle').textContent = 'Verifier Management';
+                } else if (page === 'collaborator') {
+                    document.getElementById('collaboratorSection').classList.add('active');
+                    document.getElementById('pageTitle').textContent = 'Collaborator Management';
                 } else if (page === 'opportunity') {
                     document.getElementById('opportunitySection').classList.add('active');
                     document.getElementById('pageTitle').textContent = 'Opportunity Management';
@@ -3639,6 +4021,8 @@
                 closeSearch();
                 closeCourseModal();
                 closeOpportunityModal();
+                closeOpportunityDetailsModal();
+                closeCollaboratorCoursesModal();
                 closeQuickAddModal();
                 closeBulkUploadModal();
                 closeQuickAddVerifierModal();
@@ -3672,6 +4056,75 @@
         document.getElementById('courseModal').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeCourseModal();
+            }
+        });
+
+        // ===== OPPORTUNITY DETAILS MODAL =====
+        function openOpportunityDetails(title, details) {
+            document.getElementById('opportunityDetailTitle').textContent = title;
+            document.getElementById('opportunityDetailDuration').textContent = details.duration;
+            document.getElementById('opportunityDetailStartDate').textContent = details.startDate;
+            document.getElementById('opportunityDetailApplicants').textContent = details.applicants;
+            document.getElementById('opportunityDetailDescription').textContent = details.description;
+            document.getElementById('opportunityDetailFuture').textContent = details.futureOpportunities;
+            document.getElementById('opportunityDetailPrereqs').textContent = details.prerequisites;
+            
+            const skillsContainer = document.getElementById('opportunityDetailSkills');
+            skillsContainer.innerHTML = '';
+            details.skills.forEach(skill => {
+                const tag = document.createElement('span');
+                tag.className = 'skill-tag';
+                tag.textContent = skill;
+                skillsContainer.appendChild(tag);
+            });
+            
+            document.getElementById('opportunityDetailsModal').classList.add('active');
+        }
+
+        function closeOpportunityDetailsModal() {
+            document.getElementById('opportunityDetailsModal').classList.remove('active');
+        }
+
+        function applyToOpportunity() {
+            showToast('Application submitted successfully!');
+            closeOpportunityDetailsModal();
+        }
+
+        document.getElementById('opportunityDetailsModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeOpportunityDetailsModal();
+            }
+        });
+
+        // ===== COLLABORATOR COURSES MODAL =====
+        function openCollaboratorCourses(name, role) {
+            document.getElementById('collaboratorName').textContent = name + "'s Submitted Courses";
+            document.getElementById('collaboratorRole').textContent = 'Role: ' + role;
+            document.getElementById('collaboratorCoursesModal').classList.add('active');
+        }
+
+        function closeCollaboratorCoursesModal() {
+            document.getElementById('collaboratorCoursesModal').classList.remove('active');
+        }
+
+        function approveCourse(courseName) {
+            showToast(courseName + ' has been approved!');
+            // In a real app, you would update the course status here
+        }
+
+        function rejectCourse(courseName) {
+            showToast(courseName + ' has been rejected.');
+            // In a real app, you would update the course status here
+        }
+
+        function viewCourseDetails(courseName) {
+            showToast('Viewing details for ' + courseName);
+            // In a real app, you would open a detailed course modal
+        }
+
+        document.getElementById('collaboratorCoursesModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeCollaboratorCoursesModal();
             }
         });
 
