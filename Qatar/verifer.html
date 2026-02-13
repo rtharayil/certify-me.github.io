@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verifier Portal – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--g1:#1a5c3a;--g2:#2d7a50;--g3:#3a9d68;--mint:#b8e6cc;--ml:#d4f0e0;--mp:#e8f5ee;--w:#fff;--t:#1a2e23;--tl:#5a7568;--red:#d94f4f;--b:#c8ddd1;--sh:rgba(26,92,58,.1);--sh2:rgba(26,92,58,.18);--r:16px;--rs:10px;--tr:.3s cubic-bezier(.4,0,.2,1);--sw:270px}
+body{font-family:'DM Sans',sans-serif;min-height:100vh;background:linear-gradient(145deg,#d6efe0,#b3dcc4 30%,#8fcbaa 60%,#b8e0c8);display:flex;align-items:center;justify-content:center;overflow-x:hidden;transition:background .3s}
+body.dark{background:linear-gradient(145deg,#1a2e23,#2d3e36 30%,#3a4d42 60%,#2d3e36)}
+body.dm{align-items:stretch;justify-content:stretch}
+body::before,body::after{content:'';position:fixed;border-radius:50%;filter:blur(80px);opacity:.35;z-index:0;pointer-events:none}
+body::before{width:500px;height:500px;background:radial-gradient(circle,#7ccba2,transparent);top:-120px;right:-100px;animation:fo 18s ease-in-out infinite}
+body::after{width:400px;height:400px;background:radial-gradient(circle,#a3e4c1,transparent);bottom:-80px;left:-60px;animation:fo 22s ease-in-out infinite reverse}
+@keyframes fo{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-20px) scale(1.05)}66%{transform:translate(-20px,15px) scale(.95)}}
+@keyframes su{to{opacity:1;transform:translateY(0)}}
+@keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+.shake{animation:shake .4s ease}
+
+/* AUTH */
+#aw{position:relative;z-index:1;width:100%;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px}
+.ac{width:100%;max-width:1080px;min-height:600px;display:flex;border-radius:24px;overflow:hidden;box-shadow:0 4px 6px var(--sh),0 20px 50px var(--sh2),0 0 0 1px rgba(255,255,255,.3);background:var(--w);animation:su .7s cubic-bezier(.22,1,.36,1) forwards;opacity:0;transform:translateY(30px)}
+.bp{width:44%;background:linear-gradient(165deg,#1a5c3a,#2d7a50 50%,#3a9d68);padding:48px 36px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden}
+.bp::before{content:'';position:absolute;top:-100px;right:-100px;width:350px;height:350px;border-radius:50%;background:rgba(255,255,255,.04)}
+.bp::after{content:'';position:absolute;bottom:-60px;left:-60px;width:250px;height:250px;border-radius:50%;background:rgba(255,255,255,.04)}
+.bl{display:flex;flex-direction:column;align-items:center;gap:18px;position:relative;z-index:1}
+.bl .li{width:90px;height:90px;background:rgba(255,255,255,.95);border-radius:20px;display:flex;align-items:center;justify-content:center;padding:8px;box-shadow:0 8px 30px rgba(0,0,0,.12)}
+.bl .li img{width:100%;height:100%;object-fit:contain}
+.blt span:first-child{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:#fff}
+.blt span:last-child{font-size:13px;color:rgba(255,255,255,.6);letter-spacing:1px;display:block;margin-top:2px}
+.bc{position:relative;z-index:1;margin-top:30px}
+.bc h1{font-family:'Playfair Display',serif;font-size:28px;font-weight:600;color:#fff;line-height:1.3;margin-bottom:12px}
+.bc p{font-size:14px;color:rgba(255,255,255,.7);line-height:1.6}
+.fp{flex:1;padding:40px 48px;display:flex;flex-direction:column;justify-content:center;background:var(--w);overflow-y:auto}
+.fl{display:none;align-items:center;gap:10px;margin-bottom:20px}
+.fl img{width:42px;height:42px;object-fit:contain}
+.fl span{font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:var(--g1)}
+.fpg{display:none;opacity:0;transform:translateX(20px);transition:opacity .4s,transform .4s}
+.fpg.active{display:block;opacity:1;transform:translateX(0)}
+.fh{margin-bottom:26px}
+.fh .badge{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;background:var(--mp);border-radius:20px;font-size:11px;font-weight:600;color:var(--g2);text-transform:uppercase;letter-spacing:.8px;margin-bottom:12px}
+.fh .badge svg{width:13px;height:13px;stroke:var(--g2);fill:none;stroke-width:2}
+.fh h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--t);margin-bottom:5px}
+.fh p{font-size:13.5px;color:var(--tl);line-height:1.5}
+.fg{margin-bottom:16px;position:relative}
+.fg label{display:block;font-size:12.5px;font-weight:500;color:var(--t);margin-bottom:6px}
+.fg .req{color:var(--red)}
+.iw{position:relative}
+.iw .ii{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:17px;height:17px;stroke:var(--tl);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;pointer-events:none;transition:stroke var(--tr)}
+.iw input,.iw select{width:100%;padding:12px 14px 12px 42px;border:1.5px solid var(--b);border-radius:var(--rs);font-family:'DM Sans',sans-serif;font-size:13.5px;color:var(--t);background:#f8fbf9;transition:var(--tr);outline:none}
+.iw input::placeholder{color:#a0b8aa}
+.iw input:focus,.iw select:focus{border-color:var(--g2);background:#fff;box-shadow:0 0 0 3px rgba(45,122,80,.08)}
+.iw input:focus~.ii{stroke:var(--g2)}
+.iw input.err,.iw select.err{border-color:var(--red);box-shadow:0 0 0 3px rgba(217,79,79,.08)}
+.tp{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;padding:3px}
+.tp svg{width:17px;height:17px;stroke:var(--tl);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tp:hover svg{stroke:var(--g2)}
+.em{font-size:11.5px;color:var(--red);margin-top:4px;display:none;align-items:center;gap:4px}
+.em.show{display:flex}
+.em svg{width:13px;height:13px;stroke:var(--red);fill:none;stroke-width:2;flex-shrink:0}
+.cr{display:flex;gap:10px;align-items:flex-end}
+.cr .fg{flex:1}
+.cd{height:46px;min-width:120px;background:linear-gradient(135deg,#e8f5ee,#d4f0e0);border:1.5px solid var(--b);border-radius:var(--rs);display:flex;align-items:center;justify-content:center;position:relative;user-select:none;overflow:hidden}
+.cd::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent,transparent 8px,rgba(26,92,58,.04) 8px,rgba(26,92,58,.04) 9px),repeating-linear-gradient(0deg,transparent,transparent 6px,rgba(26,92,58,.03) 6px,rgba(26,92,58,.03) 7px)}
+.ct{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;color:var(--g1);letter-spacing:5px;position:relative;z-index:1}
+.crf{position:absolute;right:4px;top:4px;width:22px;height:22px;border-radius:6px;background:rgba(255,255,255,.6);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.crf:hover{background:rgba(255,255,255,.9)}
+.crf svg{width:12px;height:12px;stroke:var(--g1);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.fo{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.rm{display:flex;align-items:center;gap:7px;cursor:pointer}
+.rm input[type="checkbox"]{display:none}
+.ck{width:17px;height:17px;border:1.5px solid var(--b);border-radius:4px;display:flex;align-items:center;justify-content:center;transition:var(--tr);background:#f8fbf9}
+.rm input:checked~.ck{background:var(--g2);border-color:var(--g2)}
+.ck svg{width:11px;height:11px;stroke:#fff;fill:none;stroke-width:2.5;opacity:0;transform:scale(.5);transition:var(--tr)}
+.rm input:checked~.ck svg{opacity:1;transform:scale(1)}
+.rm>span{font-size:12.5px;color:var(--tl)}
+.lb{background:none;border:none;color:var(--g2);font-size:12.5px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;transition:var(--tr)}
+.lb:hover{color:var(--g1);text-decoration:underline}
+.bp-btn{width:100%;padding:13px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;border:none;border-radius:var(--rs);font-family:'DM Sans',sans-serif;font-size:14.5px;font-weight:600;cursor:pointer;position:relative;overflow:hidden;transition:var(--tr)}
+.bp-btn::before{content:'';position:absolute;top:0;left:-100%;bottom:0;width:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);transition:left .5s}
+.bp-btn:hover{box-shadow:0 6px 20px rgba(26,92,58,.3);transform:translateY(-1px)}
+.bp-btn:hover::before{left:100%}
+.gsso{width:100%;padding:12px;background:#fff;border:1.5px solid var(--b);border-radius:var(--rs);font-family:'DM Sans',sans-serif;font-size:13.5px;font-weight:500;color:var(--t);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:var(--tr);margin-bottom:20px}
+.gsso:hover{background:#f8fbf9;border-color:var(--g2)}
+.gsso img{width:20px;height:20px}
+.div{display:flex;align-items:center;gap:14px;margin:20px 0;color:var(--tl);font-size:12px}
+.div::before,.div::after{content:'';flex:1;height:1px;background:var(--b)}
+.ff{text-align:center;margin-top:22px;font-size:13px;color:var(--tl)}
+.ff .lb{font-size:13px;font-weight:600}
+.btl{display:flex;align-items:center;gap:5px;background:none;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:12.5px;font-weight:500;color:var(--tl);margin-bottom:18px;transition:var(--tr)}
+.btl svg{width:15px;height:15px;stroke:var(--tl);fill:none;stroke-width:2;transition:var(--tr)}
+.btl:hover{color:var(--g2)}
+.btl:hover svg{stroke:var(--g2);transform:translateX(-3px)}
+.tc{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ps{display:flex;gap:3px;margin-top:5px}
+.sb{flex:1;height:3px;border-radius:3px;background:var(--b);transition:background .3s}
+.sb.weak{background:var(--red)}.sb.medium{background:#e6a23c}.sb.strong{background:var(--g3)}.sb.vstrong{background:var(--g1)}
+.sl{font-size:10.5px;margin-top:3px;color:var(--tl)}
+.toast{position:fixed;top:24px;right:24px;padding:14px 22px;background:var(--g2);color:#fff;border-radius:12px;font-size:13.5px;font-weight:500;box-shadow:0 8px 30px rgba(26,92,58,.3);transform:translateX(120%);transition:transform .4s cubic-bezier(.22,1,.36,1);z-index:1000;display:flex;align-items:center;gap:10px}
+.toast.show{transform:translateX(0)}
+.toast svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2}
+
+/* DASHBOARD */
+#dw{display:none;width:100%;min-height:100vh;position:relative;z-index:1}
+#dw.active{display:flex}
+.side{width:var(--sw);background:linear-gradient(180deg,#e4f3ea,#d4eede 50%,#e0f0e8);display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;z-index:50;border-right:1px solid rgba(200,221,209,.6);transition:transform .3s,background .3s}
+body.dark .side{background:linear-gradient(180deg,#1e2e27,#263329 50%,#2a3830)}
+.side-h{padding:20px 20px 18px}
+.side-logo{display:flex;align-items:center;gap:10px}
+.side-logo img{width:46px;height:46px;object-fit:contain}
+.side-lt span{display:block}
+.side-lt span:first-child{font-family:'Playfair Display',serif;font-size:13px;font-weight:600;color:var(--g1)}
+.side-lt span:last-child{font-size:10px;color:var(--tl);letter-spacing:.3px}
+body.dark .side-lt span:first-child{color:var(--mint)}
+body.dark .side-lt span:last-child{color:#8a9d91}
+.side-prof{padding:16px 20px;display:flex;align-items:center;gap:11px}
+.pav{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--g2),var(--g3));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:15px;flex-shrink:0}
+.pi{flex:1}
+.pn{font-size:13.5px;font-weight:600;color:var(--g1)}
+body.dark .pn{color:var(--mint)}
+.pn .ln{color:var(--red)}
+.pr{font-size:11.5px;color:var(--tl)}
+body.dark .pr{color:#8a9d91}
+.pe{width:24px;height:24px;border:none;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.pe svg{width:16px;height:16px;stroke:var(--tl);fill:none;stroke-width:2}
+.side-nav{flex:1;padding:10px 14px;overflow-y:auto}
+.nlbl{font-size:10px;font-weight:600;color:var(--tl);text-transform:uppercase;letter-spacing:1px;padding:10px 10px 6px}
+body.dark .nlbl{color:#8a9d91}
+.ni{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:10px;font-size:13.5px;color:var(--t);cursor:pointer;transition:var(--tr);border:none;background:none;width:100%;font-family:'DM Sans',sans-serif;text-align:left}
+body.dark .ni{color:#d4f0e0}
+.ni:hover{background:rgba(45,122,80,.07)}
+body.dark .ni:hover{background:rgba(184,230,204,.1)}
+.ni.active{background:var(--g1);color:#fff;font-weight:500;box-shadow:0 2px 10px rgba(26,92,58,.2)}
+.ni svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.ni .nc{width:14px;height:14px;margin-left:auto}
+.side-ft{padding:12px 14px;border-top:1px solid var(--b)}
+body.dark .side-ft{border-top-color:#3a4d42}
+.ni.lo{color:var(--red)}
+.ni.lo:hover{background:rgba(217,79,79,.07)}
+.dm-main{flex:1;margin-left:var(--sw);display:flex;flex-direction:column;min-height:100vh}
+.tb{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;background:rgba(255,255,255,.5);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,221,209,.5);position:sticky;top:0;z-index:40;transition:background .3s,border .3s}
+body.dark .tb{background:rgba(30,46,35,.8);border-bottom-color:rgba(58,77,66,.5)}
+.tb-l{display:flex;align-items:center;gap:12px}
+.tb h2{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--g1)}
+body.dark .tb h2{color:var(--mint)}
+.tb-a{display:flex;align-items:center;gap:10px}
+.tbb{width:38px;height:38px;border-radius:10px;border:1px solid var(--b);background:var(--w);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--tr);position:relative}
+body.dark .tbb{background:rgba(30,46,35,.6);border-color:#3a4d42}
+.tbb:hover{background:var(--mp);border-color:var(--g2)}
+body.dark .tbb:hover{background:rgba(184,230,204,.1)}
+.tbb svg{width:17px;height:17px;stroke:var(--t);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+body.dark .tbb svg{stroke:var(--mint)}
+.mt{display:none;width:38px;height:38px;border-radius:10px;border:1px solid var(--b);background:var(--w);align-items:center;justify-content:center;cursor:pointer}
+body.dark .mt{background:rgba(30,46,35,.6);border-color:#3a4d42}
+.mt svg{width:17px;height:17px;stroke:var(--t);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+body.dark .mt svg{stroke:var(--mint)}
+.dc{padding:24px 28px;flex:1}
+.dg{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.dcard{background:var(--w);border-radius:16px;padding:22px;box-shadow:0 1px 4px var(--sh),0 4px 16px rgba(26,92,58,.05);transition:var(--tr)}
+body.dark .dcard{background:rgba(30,46,35,.6);box-shadow:0 1px 4px rgba(0,0,0,.2),0 4px 16px rgba(0,0,0,.1)}
+.dcard:hover{box-shadow:0 6px 24px var(--sh2);transform:translateY(-2px)}
+.ch{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.ch h4{font-family:'Playfair Display',serif;font-size:16.5px;font-weight:600;color:var(--t)}
+body.dark .ch h4{color:var(--mint)}
+.csub{font-size:12.5px;color:var(--tl);margin-bottom:14px}
+body.dark .csub{color:#8a9d91}
+
+/* Verification Table */
+.vtable{background:var(--w);border-radius:16px;padding:20px;box-shadow:0 2px 8px var(--sh),0 4px 16px rgba(26,92,58,.05);overflow-x:auto;margin-bottom:20px}
+body.dark .vtable{background:rgba(30,46,35,.6);box-shadow:0 2px 8px rgba(0,0,0,.2),0 4px 16px rgba(0,0,0,.1)}
+.vtable table{width:100%;border-collapse:collapse}
+.vtable th{text-align:left;padding:12px;font-size:12px;font-weight:600;color:var(--tl);border-bottom:2px solid var(--b);text-transform:uppercase;letter-spacing:.5px}
+body.dark .vtable th{color:#8a9d91;border-bottom-color:#3a4d42}
+.vtable td{padding:14px 12px;font-size:13px;color:var(--t);border-bottom:1px solid var(--b)}
+body.dark .vtable td{color:#d4f0e0;border-bottom-color:#3a4d42}
+.vtable tr:last-child td{border-bottom:none}
+.status-badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:600}
+.status-badge.pending{background:#fff3e0;color:#e6a23c}
+body.dark .status-badge.pending{background:rgba(230,162,60,.2)}
+.verify-btn{padding:6px 16px;background:var(--g2);color:#fff;border:none;border-radius:6px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:var(--tr);margin-right:6px}
+.verify-btn:hover{background:var(--g1)}
+.reject-btn{padding:6px 16px;background:none;border:1.5px solid var(--red);color:var(--red);border-radius:6px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:var(--tr)}
+.reject-btn:hover{background:var(--red);color:#fff}
+.vmb{display:inline-block;padding:7px 16px;border:1px solid var(--b);border-radius:8px;background:var(--w);font-family:'DM Sans',sans-serif;font-size:11.5px;font-weight:500;color:var(--t);cursor:pointer;transition:var(--tr)}
+body.dark .vmb{background:rgba(30,46,35,.4);border-color:#3a4d42;color:var(--mint)}
+.vmb:hover{background:var(--mp);border-color:var(--g2)}
+body.dark .vmb:hover{background:rgba(184,230,204,.1)}
+
+@media(max-width:860px){.bp{display:none}.ac{max-width:500px}.fp{padding:32px 24px}.fl{display:flex}}
+@media(max-width:768px){:root{--sw:260px}.side{transform:translateX(-100%)}.side.open{transform:translateX(0);box-shadow:4px 0 20px rgba(0,0,0,.1)}.dm-main{margin-left:0}.mt{display:flex}.dg{grid-template-columns:1fr}}
+@media(max-width:480px){.fp{padding:24px 18px}.tc{grid-template-columns:1fr;gap:0}.cr{flex-direction:column}.dc{padding:16px}}
+</style>
+</head>
+<body>
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<!-- AUTH -->
+<div id="aw">
+<div class="ac">
+<div class="bp">
+<div class="bl"><div class="li"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF Logo"></div><div class="blt"><span>Qatar Foundation</span><span>مؤسسة قطر</span></div></div>
+<div class="bc"><h1>Verifier Portal</h1><p>Verify student documents and manage submissions for the Universal Skills Passport program.</p></div>
+</div>
+<div class="fp">
+<!-- LOGIN -->
+<div class="fpg active" id="loginPage">
+<div class="fl"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF"><span>Qatar Foundation</span></div>
+<div class="fh"><div class="badge"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Verifier Portal</div><h2>Welcome Back</h2><p>Sign in to access the verification dashboard</p></div>
+<button class="gsso" onclick="st('Google Sign-In coming soon!')"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Sign in with Google</button>
+<div class="div">OR</div>
+<form id="loginForm" novalidate>
+<div class="fg"><label>Email <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg><input type="email" id="lu" placeholder="verifier@qf.org.qa" autocomplete="username"></div><div class="em" id="lue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span></span></div></div>
+<div class="fg"><label>Password <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><input type="password" id="lp" placeholder="Enter your password" autocomplete="current-password"><button type="button" class="tp" onclick="tgp('lp',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div><div class="em" id="lpe"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span></span></div></div>
+<div class="fg"><label>Captcha <span class="req">*</span></label><div class="cr"><div class="cd"><span class="ct" id="lct"></span><button type="button" class="crf" onclick="gc('l')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div><div class="fg" style="margin-bottom:0"><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="lci" placeholder="Enter captcha" autocomplete="off"></div></div></div><div class="em" id="lce"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span></span></div></div>
+<div class="fo"><label class="rm"><input type="checkbox"><span class="ck"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Remember me</span></label><button type="button" class="lb" onclick="sp('forgotPage')">Forgot password?</button></div>
+<button type="submit" class="bp-btn">Sign In</button>
+</form>
+<div class="ff">Don't have an account? <button type="button" class="lb" onclick="sp('signupPage')">Create Account</button></div>
+</div>
+
+<!-- SIGNUP -->
+<div class="fpg" id="signupPage">
+<button type="button" class="btl" onclick="sp('loginPage')"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>Back to Login</button>
+<div class="fl"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF"><span>Qatar Foundation</span></div>
+<div class="fh"><div class="badge"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>New Verifier</div><h2>Create Account</h2><p>Register as a document verifier</p></div>
+<button class="gsso" onclick="st('Google Sign-Up coming soon!')"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Sign up with Google</button>
+<div class="div">OR</div>
+<form id="signupForm" novalidate>
+<div class="tc">
+<div class="fg"><label>First Name <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg><input type="text" id="sf" placeholder="First name"></div><div class="em" id="sfe"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter first name</span></div></div>
+<div class="fg"><label>Last Name <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg><input type="text" id="sla" placeholder="Last name"></div><div class="em" id="slae"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter last name</span></div></div>
+</div>
+<div class="fg"><label>Email <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg><input type="email" id="se" placeholder="verifier@qf.org.qa"></div><div class="em" id="see"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter a valid email</span></div></div>
+<div class="fg"><label>Phone Number <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><input type="tel" id="sph" placeholder="+974 XXXX XXXX"></div><div class="em" id="sphe"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter phone number</span></div></div>
+<div class="fg"><label>Verifier ID <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="2" y1="9" x2="22" y2="9"/></svg><input type="text" id="sid" placeholder="e.g., VER-2026-001"></div><div class="em" id="side"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter Verifier ID</span></div></div>
+<div class="fg"><label>Password <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><input type="password" id="spw" placeholder="Min 8 characters" oninput="cs(this.value)"><button type="button" class="tp" onclick="tgp('spw',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div><div class="ps"><div class="sb" id="s1"></div><div class="sb" id="s2"></div><div class="sb" id="s3"></div><div class="sb" id="s4"></div></div><div class="sl" id="slb"></div><div class="em" id="spwe"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Min 8 characters required</span></div></div>
+<div class="fg"><label>Captcha <span class="req">*</span></label><div class="cr"><div class="cd"><span class="ct" id="sct"></span><button type="button" class="crf" onclick="gc('s')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div><div class="fg" style="margin-bottom:0"><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="sci" placeholder="Enter captcha" autocomplete="off"></div></div></div><div class="em" id="sce"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div></div>
+<button type="submit" class="bp-btn" style="margin-top:4px">Create Account</button>
+</form>
+<div class="ff">Already have an account? <button type="button" class="lb" onclick="sp('loginPage')">Sign In</button></div>
+</div>
+
+<!-- FORGOT -->
+<div class="fpg" id="forgotPage">
+<button type="button" class="btl" onclick="sp('loginPage')"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>Back to Login</button>
+<div class="fl"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF"><span>Qatar Foundation</span></div>
+<div class="fh"><div class="badge"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Account Recovery</div><h2>Reset Password</h2><p>Enter your email and we'll send you an OTP</p></div>
+<form id="forgotForm" novalidate>
+<div class="fg"><label>Email Address <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg><input type="email" id="fe" placeholder="verifier@qf.org.qa"></div><div class="em" id="fee"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter a valid email</span></div></div>
+<div class="fg"><label>Captcha <span class="req">*</span></label><div class="cr"><div class="cd"><span class="ct" id="fct"></span><button type="button" class="crf" onclick="gc('f')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div><div class="fg" style="margin-bottom:0"><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="fci" placeholder="Enter captcha" autocomplete="off"></div></div></div><div class="em" id="fce"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div></div>
+<button type="submit" class="bp-btn">Send Reset Link</button>
+</form>
+<div class="ff">Remembered your password? <button type="button" class="lb" onclick="sp('loginPage')">Sign In</button></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dw">
+<nav class="side" id="side">
+<div class="side-h"><div class="side-logo"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF"><div class="side-lt"><span>Qatar Foundation</span><span>مؤسسة قطر</span></div></div></div>
+<div class="side-prof"><div class="pav" id="da">VR</div><div class="pi"><div class="pn" id="dn">Verifier</div><div class="pr">Document Verifier</div></div><button class="pe"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button></div>
+<div class="side-nav">
+<div class="nlbl">Main Menu</div>
+<button class="ni active"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Dashboard<svg class="nc" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+</div>
+<div class="side-ft"><button class="ni lo" onclick="logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Sign Out</button></div>
+</nav>
+
+<main class="dm-main">
+<header class="tb">
+<div class="tb-l"><button class="mt" id="mt" onclick="document.getElementById('side').classList.toggle('open')"><svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><h2>Verifier Dashboard</h2></div>
+<div class="tb-a">
+<button class="tbb" onclick="toggleDarkMode()"><svg id="themeIcon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button>
+</div>
+</header>
+<div class="dc">
+<div class="dg">
+<div class="dcard"><div class="ch"><h4>Pending Verifications</h4></div><p class="csub">You have <strong>8 documents</strong> waiting for verification</p><button class="vmb" onclick="scrollToTable()">View All</button></div>
+<div class="dcard"><div class="ch"><h4>Verified This Week</h4></div><p class="csub">Total of <strong>25 documents</strong> verified in the last 7 days</p></div>
+<div class="dcard"><div class="ch"><h4>Rejected This Month</h4></div><p class="csub"><strong>3 documents</strong> were rejected this month</p></div>
+<div class="dcard"><div class="ch"><h4>Average Processing Time</h4></div><p class="csub">Current average: <strong>2.5 hours</strong> per document</p></div>
+</div>
+
+<div class="vtable" id="verificationTable" style="margin-top:30px">
+<h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--t);margin-bottom:16px">Pending Document Verifications</h3>
+<table>
+<thead>
+<tr>
+<th>Student Name</th>
+<th>University</th>
+<th>Course</th>
+<th>Document Type</th>
+<th>Submitted</th>
+<th>Status</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody id="verificationList">
+<tr>
+<td>Ahmed Al-Thani</td>
+<td>Qatar University</td>
+<td>Machine Learning</td>
+<td>Certificate</td>
+<td>Feb 13, 2026</td>
+<td><span class="status-badge pending">Pending</span></td>
+<td>
+<button class="verify-btn" onclick="verifyDoc(this)">Verify</button>
+<button class="reject-btn" onclick="rejectDoc(this)">Reject</button>
+</td>
+</tr>
+<tr>
+<td>Fatima Hassan</td>
+<td>HBKU</td>
+<td>Python Programming</td>
+<td>Project Report</td>
+<td>Feb 12, 2026</td>
+<td><span class="status-badge pending">Pending</span></td>
+<td>
+<button class="verify-btn" onclick="verifyDoc(this)">Verify</button>
+<button class="reject-btn" onclick="rejectDoc(this)">Reject</button>
+</td>
+</tr>
+<tr>
+<td>Sara Mohamed</td>
+<td>Qatar University</td>
+<td>Cloud Computing</td>
+<td>Transcript</td>
+<td>Feb 11, 2026</td>
+<td><span class="status-badge pending">Pending</span></td>
+<td>
+<button class="verify-btn" onclick="verifyDoc(this)">Verify</button>
+<button class="reject-btn" onclick="rejectDoc(this)">Reject</button>
+</td>
+</tr>
+<tr>
+<td>Omar Rashid</td>
+<td>CMU-Q</td>
+<td>Cybersecurity</td>
+<td>Achievement</td>
+<td>Feb 10, 2026</td>
+<td><span class="status-badge pending">Pending</span></td>
+<td>
+<button class="verify-btn" onclick="verifyDoc(this)">Verify</button>
+<button class="reject-btn" onclick="rejectDoc(this)">Reject</button>
+</td>
+</tr>
+<tr>
+<td>Noor Ibrahim</td>
+<td>Qatar University</td>
+<td>Web Development</td>
+<td>Certificate</td>
+<td>Feb 9, 2026</td>
+<td><span class="status-badge pending">Pending</span></td>
+<td>
+<button class="verify-btn" onclick="verifyDoc(this)">Verify</button>
+<button class="reject-btn" onclick="rejectDoc(this)">Reject</button>
+</td>
+</tr>
+<tr>
+<td>Khalid Ahmed</td>
+<td>HBKU</td>
+<td>Data Science</td>
+<td>Certificate</td>
+<td>Feb 8, 2026</td>
+<td><span class="status-badge pending">Pending</span></td>
+<td>
+<button class="verify-btn" onclick="verifyDoc(this)">Verify</button>
+<button class="reject-btn" onclick="rejectDoc(this)">Reject</button>
+</td>
+</tr>
+<tr>
+<td>Mariam Ali</td>
+<td>Qatar University</td>
+<td>UI/UX Workshop</td>
+<td>Project Report</td>
+<td>Feb 7, 2026</td>
+<td><span class="status-badge pending">Pending</span></td>
+<td>
+<button class="verify-btn" onclick="verifyDoc(this)">Verify</button>
+<button class="reject-btn" onclick="rejectDoc(this)">Reject</button>
+</td>
+</tr>
+<tr>
+<td>Hassan Mubarak</td>
+<td>Qatar University</td>
+<td>Blockchain Tech</td>
+<td>Project Report</td>
+<td>Feb 6, 2026</td>
+<td><span class="status-badge pending">Pending</span></td>
+<td>
+<button class="verify-btn" onclick="verifyDoc(this)">Verify</button>
+<button class="reject-btn" onclick="rejectDoc(this)">Reject</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+</div>
+
+<script>
+const cp={l:'',s:'',f:''};
+function gc(t){const c='ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz23456789';let r='';for(let i=0;i<5;i++)r+=c[Math.floor(Math.random()*c.length)];cp[t]=r;const m={l:'lct',s:'sct',f:'fct'};document.getElementById(m[t]).textContent=r}
+gc('l');gc('s');gc('f');
+
+function toggleDarkMode(){
+document.body.classList.toggle('dark');
+const icon=document.getElementById('themeIcon');
+if(document.body.classList.contains('dark')){
+icon.innerHTML='<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+}else{
+icon.innerHTML='<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>';
+}
+}
+
+function scrollToTable(){
+document.getElementById('verificationTable').scrollIntoView({behavior:'smooth'});
+}
+
+function verifyDoc(btn){
+const row=btn.closest('tr');
+row.style.transition='opacity 0.3s';
+row.style.opacity='0.5';
+setTimeout(()=>{
+row.remove();
+st('Document verified successfully!');
+updateStats();
+},300);
+}
+
+function rejectDoc(btn){
+const row=btn.closest('tr');
+row.style.transition='opacity 0.3s';
+row.style.opacity='0.5';
+setTimeout(()=>{
+row.remove();
+st('Document rejected');
+updateStats();
+},300);
+}
+
+function updateStats(){
+const remaining=document.querySelectorAll('#verificationList tr').length;
+document.querySelector('.dcard .csub strong').textContent=remaining+' documents';
+}
+
+function showDash(u){
+document.getElementById('aw').style.display='none';
+document.getElementById('dw').classList.add('active');
+document.body.classList.add('dm');
+const n=u.includes('@')?u.split('@')[0]:'Verifier';
+const d=n.charAt(0).toUpperCase()+n.slice(1);
+document.getElementById('dn').innerHTML=d;
+document.getElementById('da').textContent=d.substring(0,2).toUpperCase();
+}
+
+function logout(){
+document.getElementById('dw').classList.remove('active');
+document.getElementById('aw').style.display='flex';
+document.body.classList.remove('dm');
+st('Signed out successfully');
+sp('loginPage');
+document.getElementById('loginForm').reset();
+}
+
+function sp(id){document.querySelectorAll('.fpg').forEach(p=>p.classList.remove('active'));setTimeout(()=>document.getElementById(id).classList.add('active'),50);document.querySelectorAll('.em').forEach(e=>e.classList.remove('show'));document.querySelectorAll('.fp input').forEach(i=>i.classList.remove('err'))}
+
+function tgp(id,b){const i=document.getElementById(id);const p=i.type==='password';i.type=p?'text':'password';b.innerHTML=p?'<svg viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>':'<svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>'}
+
+function se(id,m){const e=document.getElementById(id);if(m)e.querySelector('span').textContent=m;e.classList.add('show')}
+function ce(fid){document.querySelectorAll('#'+fid+' .em').forEach(e=>e.classList.remove('show'));document.querySelectorAll('#'+fid+' input').forEach(i=>i.classList.remove('err'))}
+function sk(fid){const f=document.getElementById(fid);f.classList.add('shake');setTimeout(()=>f.classList.remove('shake'),400)}
+function ve(e){return/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)}
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+
+function cs(v){let s=0;if(v.length>=8)s++;if(/[A-Z]/.test(v))s++;if(/[0-9]/.test(v))s++;if(/[^A-Za-z0-9]/.test(v))s++;const l=['','Weak','Medium','Strong','Very Strong'],c=['','weak','medium','strong','vstrong'];for(let i=1;i<=4;i++){const b=document.getElementById('s'+i);b.className='sb';if(i<=s)b.classList.add(c[s])}document.getElementById('slb').textContent=v.length>0?l[s]:''}
+
+document.getElementById('loginForm').addEventListener('submit',function(e){e.preventDefault();ce('loginForm');let v=true;const u=document.getElementById('lu').value.trim(),p=document.getElementById('lp').value.trim(),c=document.getElementById('lci').value.trim();
+if(!u){se('lue','Please enter your email');document.getElementById('lu').classList.add('err');v=false}
+if(!p){se('lpe','Please enter your password');document.getElementById('lp').classList.add('err');v=false}
+if(!c){se('lce','Please enter the captcha code');v=false}else if(c!==cp.l){se('lce','Captcha does not match. Try again.');v=false;gc('l')}
+if(!v){sk('loginForm');return}
+st('Login successful! Redirecting...');setTimeout(()=>showDash(u),1000);gc('l')});
+
+document.getElementById('signupForm').addEventListener('submit',function(e){e.preventDefault();ce('signupForm');let v=true;
+if(!document.getElementById('sf').value.trim()){se('sfe');document.getElementById('sf').classList.add('err');v=false}
+if(!document.getElementById('sla').value.trim()){se('slae');document.getElementById('sla').classList.add('err');v=false}
+const em=document.getElementById('se').value.trim();if(!em||!ve(em)){se('see');document.getElementById('se').classList.add('err');v=false}
+if(!document.getElementById('sph').value.trim()){se('sphe');document.getElementById('sph').classList.add('err');v=false}
+if(!document.getElementById('sid').value.trim()){se('side');document.getElementById('sid').classList.add('err');v=false}
+const pw=document.getElementById('spw').value.trim();if(!pw||pw.length<8){se('spwe');document.getElementById('spw').classList.add('err');v=false}
+const c=document.getElementById('sci').value.trim();if(!c){se('sce','Please enter captcha');v=false}else if(c!==cp.s){se('sce','Captcha does not match.');v=false;gc('s')}
+if(!v){sk('signupForm');return}
+st('Account created!');this.reset();cs('');gc('s');setTimeout(()=>sp('loginPage'),1500)});
+
+document.getElementById('forgotForm').addEventListener('submit',function(e){e.preventDefault();ce('forgotForm');let v=true;
+const em=document.getElementById('fe').value.trim();if(!em||!ve(em)){se('fee');document.getElementById('fe').classList.add('err');v=false}
+const c=document.getElementById('fci').value.trim();if(!c){se('fce','Please enter captcha');v=false}else if(c!==cp.f){se('fce','Captcha does not match.');v=false;gc('f')}
+if(!v){sk('forgotForm');return}
+st('Reset link sent to your email!');gc('f');this.reset()});
+
+document.querySelectorAll('.fp input').forEach(i=>{i.addEventListener('input',function(){this.classList.remove('err');const e=this.closest('.fg')?.querySelector('.em');if(e)e.classList.remove('show')})});
+</script>
+</body>
+</html>
