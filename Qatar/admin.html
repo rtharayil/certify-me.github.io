@@ -3507,42 +3507,42 @@
                     <label>Opportunity Name <span class="required">*</span></label>
                     <div class="input-wrap">
                         <svg class="input-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                        <input type="text" placeholder="e.g. Full Stack Web Development" required>
+                        <input id="oppName" type="text" placeholder="e.g. Full Stack Web Development" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label>Duration <span class="required">*</span></label>
                     <div class="input-wrap">
                         <svg class="input-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        <input type="text" placeholder="e.g. 6 Months" required>
+                        <input id="oppDuration" type="text" placeholder="e.g. 6 Months" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label>Start Date <span class="required">*</span></label>
                     <div class="input-wrap">
                         <svg class="input-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                        <input type="date" required>
+                        <input id="oppStartDate" type="date" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label>Description <span class="required">*</span></label>
                     <div class="input-wrap">
                         <svg class="input-icon" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-                        <textarea placeholder="Describe the opportunity and what participants will learn..." required></textarea>
+                        <textarea id="oppDescription" placeholder="Describe the opportunity and what participants will learn..." required></textarea>
                     </div>
                 </div>
                 <div class="form-group">
                     <label>Skills to Gain (comma separated) <span class="required">*</span></label>
                     <div class="input-wrap">
                         <svg class="input-icon" viewBox="0 0 24 24"><path d="M12 15l-2 5 2-2 2 2-2-5z"/><circle cx="12" cy="9" r="4"/></svg>
-                        <input type="text" placeholder="e.g. HTML, CSS, JavaScript, React" required>
+                        <input id="oppSkills" type="text" placeholder="e.g. HTML, CSS, JavaScript, React" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label>Category <span class="required">*</span></label>
                     <div class="input-wrap">
                         <svg class="input-icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-                        <select required>
+                        <select id="oppCategory" required>
                             <option value="">Select Category</option>
                             <option value="technology">Technology</option>
                             <option value="business">Business</option>
@@ -3557,14 +3557,14 @@
                     <label>Future Opportunities <span class="required">*</span></label>
                     <div class="input-wrap">
                         <svg class="input-icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <textarea placeholder="Describe career paths and opportunities after completion..." required></textarea>
+                        <textarea id="oppFuture" placeholder="Describe career paths and opportunities after completion..." required></textarea>
                     </div>
                 </div>
                 <div class="form-group">
                     <label>Maximum Applicants</label>
                     <div class="input-wrap">
                         <svg class="input-icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                        <input type="number" placeholder="e.g. 100">
+                        <input id="oppMaxApplicants" type="number" placeholder="e.g. 100">
                     </div>
                 </div>
                 <button type="submit" class="btn-primary">Create Opportunity</button>
@@ -4145,12 +4145,92 @@
         });
 
         // Handle opportunity form submission
-        document.getElementById('opportunityForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            showToast('Opportunity created successfully!');
-            closeOpportunityModal();
-            this.reset();
-        });
+                document.getElementById('opportunityForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+        
+                    // collect values
+                    const name = document.getElementById('oppName').value.trim();
+                    const duration = document.getElementById('oppDuration').value.trim();
+                    const startDate = document.getElementById('oppStartDate').value;
+                    const description = document.getElementById('oppDescription').value.trim();
+                    const skillsRaw = document.getElementById('oppSkills').value.trim();
+                    const category = document.getElementById('oppCategory').value;
+                    const futureOpportunities = document.getElementById('oppFuture').value.trim();
+                    const maxApplicants = document.getElementById('oppMaxApplicants').value.trim();
+        
+                    // basic validation
+                    if (!name || !duration || !startDate || !description || !skillsRaw || !category || !futureOpportunities) {
+                        showToast('Please fill all required fields');
+                        return;
+                    }
+        
+                    // parse skills
+                    const skills = skillsRaw.split(',').map(s => s.trim()).filter(Boolean);
+        
+                    // create opportunity card element
+                    const card = document.createElement('div');
+                    card.className = 'opportunity-card';
+        
+                    // header and meta
+                    const headerHtml = `
+                        <div class="opportunity-card-header">
+                            <h5>${escapeHtml(name)}</h5>
+                            <div class="opportunity-meta">
+                                <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>${escapeHtml(duration)}</span>
+                                <span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>${escapeHtml(startDate)}</span>
+                            </div>
+                        </div>
+                        <p class="opportunity-description">${escapeHtml(description)}</p>
+                    `;
+        
+                    // skills tags
+                    const skillsHtml = `<div class="opportunity-skills"><div class="opportunity-skills-label">Skills You'll Gain</div><div class="skills-tags">
+                        ${skills.map(s => `<span class="skill-tag">${escapeHtml(s)}</span>`).join('')}
+                    </div></div>`;
+        
+                    // footer
+                    const applicantsCount = maxApplicants ? `${parseInt(maxApplicants,10)} applicants` : '0 applicants';
+                    const footerHtml = `
+                        <div class="opportunity-footer">
+                            <span class="applicants-count">${escapeHtml(applicantsCount)}</span>
+                            <button class="view-course-btn" style="width: auto; padding: 8px 16px;">View Details</button>
+                        </div>
+                    `;
+        
+                    card.innerHTML = headerHtml + skillsHtml + footerHtml;
+        
+                    // wire up the View Details button to open details modal
+                    const viewBtn = card.querySelector('.view-course-btn');
+                    viewBtn.addEventListener('click', function() {
+                        openOpportunityDetails(name, {
+                            duration: duration,
+                            startDate: startDate,
+                            description: description,
+                            skills: skills,
+                            applicants: maxApplicants ? parseInt(maxApplicants,10) : 0,
+                            futureOpportunities: futureOpportunities,
+                            prerequisites: ''
+                        });
+                    });
+        
+                    // append to grid
+                    const grid = document.querySelector('.opportunities-grid');
+                    if (grid) grid.appendChild(card);
+        
+                    showToast('Opportunity created successfully!');
+                    closeOpportunityModal();
+                    this.reset();
+                });
+        
+                // small helper to avoid HTML injection when inserting text
+                function escapeHtml(str) {
+                    return String(str)
+                        .replace(/&/g, '&amp;')
+                        .replace(/</g, '&lt;')
+                        .replace(/>/g, '&gt;')
+                        .replace(/"/g, '&quot;')
+                        .replace(/'/g, '&#39;');
+                }
 
         // ===== QUICK ADD STUDENT MODAL =====
         function openQuickAddModal() {
