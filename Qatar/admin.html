@@ -198,20 +198,20 @@
         .form-header p { font-size: 14px; color: #5a7568; line-height: 1.5; }
 
         .form-group { margin-bottom: 18px; position: relative; }
-        .form-group label { display:block; font-size:13px; font-weight:500; color:#1a2e23; margin-bottom:7px; }
+        .form-group label { display:block; font-size:13px; font-weight:500; color:var(--qf-text); margin-bottom:7px; }
         .form-group label .required { color: var(--qf-red); }
 
         .input-wrap { position: relative; }
         .input-wrap .input-icon {
             position:absolute; left:16px; top:50%; transform:translateY(-50%);
-            width:18px; height:18px; stroke:#5a7568; fill:none;
+            width:18px; height:18px; stroke:var(--qf-text-light); fill:none;
             stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round;
             pointer-events:none; transition: stroke var(--transition);
         }
         .input-wrap input, .input-wrap textarea, .input-wrap select {
             width:100%; padding:13px 16px 13px 46px;
-            border:1.5px solid #c8ddd1; border-radius:var(--radius-sm);
-            font-family:'DM Sans',sans-serif; font-size:14px; color:#1a2e23;
+            border:1.5px solid var(--qf-border); border-radius:var(--radius-sm);
+            font-family:'DM Sans',sans-serif; font-size:14px; color:var(--qf-text);
             background:#f8fbf9; transition:var(--transition); outline:none;
         }
         .input-wrap textarea { min-height: 80px; resize: vertical; }
@@ -930,6 +930,93 @@
             color: var(--qf-text);
         }
 
+        .students-actions {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .action-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .action-btn.primary {
+            background: var(--qf-green);
+            color: #fff;
+        }
+        .action-btn.primary:hover {
+            background: var(--qf-green-dark);
+            transform: translateY(-2px);
+        }
+        .action-btn.secondary {
+            background: var(--qf-white);
+            color: var(--qf-green);
+            border: 1.5px solid var(--qf-green);
+        }
+        .action-btn.secondary:hover {
+            background: var(--qf-mint-pale);
+        }
+        .action-btn svg {
+            width: 18px;
+            height: 18px;
+            stroke: currentColor;
+        }
+
+        .students-filters {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .filter-group label {
+            font-size: 13px;
+            color: var(--qf-text-light);
+            font-weight: 500;
+        }
+        .filter-select {
+            padding: 8px 14px;
+            border: 1.5px solid var(--qf-border);
+            border-radius: 8px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            color: var(--qf-text);
+            background: var(--qf-white);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .filter-select:focus {
+            outline: none;
+            border-color: var(--qf-green);
+        }
+        .date-input {
+            padding: 8px 14px;
+            border: 1.5px solid var(--qf-border);
+            border-radius: 8px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            color: var(--qf-text);
+            background: var(--qf-white);
+        }
+        .date-input:focus {
+            outline: none;
+            border-color: var(--qf-green);
+        }
+
         .students-table-card {
             background: var(--qf-white);
             border-radius: 16px;
@@ -966,6 +1053,9 @@
         .students-table tr:hover {
             background: var(--qf-mint-pale);
         }
+        .students-table tbody tr {
+            cursor: pointer;
+        }
         .badge {
             display: inline-block;
             padding: 4px 10px;
@@ -985,9 +1075,21 @@
             background: #fff3cd;
             color: #856404;
         }
-        .badge.logged-in {
+        .badge.logged-in, .badge.active {
             background: #d4edda;
             color: #155724;
+        }
+        .badge.inactive {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .badge.pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+        .badge.deactivated {
+            background: #e2e3e5;
+            color: #383d41;
         }
 
         /* Courses Section */
@@ -1226,6 +1328,103 @@
             stroke: var(--qf-text);
         }
 
+        /* Bulk Upload Instructions */
+        .upload-instructions {
+            background: var(--qf-mint-pale);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+        }
+        .upload-instructions h4 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--qf-text);
+            margin-bottom: 12px;
+        }
+        .upload-steps {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        .upload-steps li {
+            counter-increment: step-counter;
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            color: var(--qf-text);
+            line-height: 1.5;
+        }
+        .upload-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            width: 22px;
+            height: 22px;
+            background: var(--qf-green);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: 700;
+        }
+        .download-sample-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            background: var(--qf-white);
+            color: var(--qf-green);
+            border: 1.5px solid var(--qf-green);
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 12px;
+        }
+        .download-sample-btn:hover {
+            background: var(--qf-green);
+            color: #fff;
+        }
+        .download-sample-btn svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+        }
+
+        .file-upload-area {
+            border: 2px dashed var(--qf-border);
+            border-radius: 12px;
+            padding: 40px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .file-upload-area:hover {
+            border-color: var(--qf-green);
+            background: var(--qf-mint-pale);
+        }
+        .file-upload-area svg {
+            width: 48px;
+            height: 48px;
+            stroke: var(--qf-text-light);
+            margin-bottom: 12px;
+        }
+        .file-upload-area p {
+            font-size: 14px;
+            color: var(--qf-text);
+            margin-bottom: 4px;
+        }
+        .file-upload-area span {
+            font-size: 12px;
+            color: var(--qf-text-light);
+        }
+        .file-upload-area input[type="file"] {
+            display: none;
+        }
+
         /* Reports Grid */
         .reports-grid {
             display: grid;
@@ -1234,12 +1433,67 @@
             margin-bottom: 24px;
         }
 
+        /* Verifier Stats Grid */
+        .verifier-detail-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .verifier-detail-stat {
+            background: var(--qf-mint-pale);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .verifier-detail-stat-label {
+            font-size: 12px;
+            color: var(--qf-text-light);
+            margin-bottom: 8px;
+        }
+        .verifier-detail-stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--qf-text);
+        }
+
+        .subjects-list {
+            background: var(--qf-mint-pale);
+            padding: 16px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        .subjects-list h5 {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--qf-text);
+            margin-bottom: 10px;
+        }
+        .subject-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--qf-border);
+        }
+        .subject-item:last-child {
+            border-bottom: none;
+        }
+        .subject-name {
+            font-size: 13px;
+            color: var(--qf-text);
+        }
+        .subject-students {
+            font-size: 12px;
+            color: var(--qf-text-light);
+        }
+
         /* Responsive */
         @media (max-width: 1200px) {
             .stats-row { grid-template-columns: repeat(2, 1fr); }
             .analytics-grid { grid-template-columns: 1fr; }
             .learner-stats { grid-template-columns: repeat(2, 1fr); }
             .reports-grid { grid-template-columns: 1fr; }
+            .verifier-detail-stats { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 900px) {
             .stats-row { grid-template-columns: 1fr; }
@@ -1501,10 +1755,6 @@
                     <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
                     Verifier Management
                 </button>
-                <button class="nav-item" data-page="skills">
-                    <svg viewBox="0 0 24 24"><path d="M12 15l-2 5 2-2 2 2-2-5z"/><circle cx="12" cy="9" r="4"/><path d="M5.5 17.5A8.96 8.96 0 0 1 3 11a9 9 0 0 1 18 0c0 2.5-1 4.8-2.5 6.5"/></svg>
-                    Skill & Badge Management
-                </button>
                 <button class="nav-item" data-page="opportunity">
                     <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                     Opportunity Management
@@ -1512,10 +1762,6 @@
                 <button class="nav-item" data-page="reports">
                     <svg viewBox="0 0 24 24"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
                     Reports and Analytics
-                </button>
-                <button class="nav-item" data-page="audit">
-                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                    Audit Logs & Quality Assurance
                 </button>
             </div>
             <div class="sidebar-footer">
@@ -1736,23 +1982,61 @@
 
                 <!-- LEARNER MANAGEMENT SECTION -->
                 <div class="dash-section" id="learnerSection">
-                    <!-- Learner Stats -->
+                    <!-- Action Buttons -->
+                    <div class="students-actions">
+                        <button class="action-btn primary" onclick="openQuickAddModal()">
+                            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            Quick Add Student
+                        </button>
+                        <button class="action-btn secondary" onclick="openBulkUploadModal()">
+                            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                            Bulk Upload Students
+                        </button>
+                    </div>
+
+                    <!-- Filters -->
+                    <div class="students-filters">
+                        <div class="filter-group">
+                            <label>Status:</label>
+                            <select class="filter-select" id="statusFilter" onchange="filterStudents()">
+                                <option value="all">All Students</option>
+                                <option value="active">Active</option>
+                                <option value="inactive">Inactive</option>
+                                <option value="pending">Pending Approval</option>
+                                <option value="deactivated">Deactivated</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>From:</label>
+                            <input type="date" class="date-input" id="dateFrom" onchange="filterStudents()">
+                        </div>
+                        <div class="filter-group">
+                            <label>To:</label>
+                            <input type="date" class="date-input" id="dateTo" onchange="filterStudents()">
+                        </div>
+                    </div>
+
+                   <!-- Learner Stats -->
                     <div class="learner-stats">
                         <div class="learner-stat-card">
                             <h5>Total Students</h5>
                             <div class="number">1,200</div>
                         </div>
                         <div class="learner-stat-card">
-                            <h5>Logged In</h5>
+                            <h5>Active students</h5>
                             <div class="number">856</div>
                         </div>
                         <div class="learner-stat-card">
-                            <h5>Certified Students</h5>
+                            <h5>Inactive students</h5>
                             <div class="number">342</div>
                         </div>
                         <div class="learner-stat-card">
-                            <h5>Enrolled Students</h5>
-                            <div class="number">1,120</div>
+                            <h5>New joined students</h5>
+                            <div class="number">650</div>
+                        </div>
+                        <div class="learner-stat-card">
+                            <h5>Deactivated students</h5>
+                            <div class="number">650</div>
                         </div>
                     </div>
 
@@ -1772,65 +2056,65 @@
                                 </tr>
                             </thead>
                             <tbody id="studentsTableBody">
-                                <tr>
+                                <tr data-status="active">
                                     <td>#1001</td>
                                     <td>Ahmed Al-Mansoori</td>
                                     <td>ahmed.m@qf.edu.qa</td>
-                                    <td><span class="badge logged-in">Logged In</span></td>
+                                    <td><span class="badge active">Active</span></td>
                                     <td>5</td>
                                     <td><span class="badge certified">3 Certified</span></td>
                                     <td>2 hours ago</td>
                                 </tr>
-                                <tr>
+                                <tr data-status="inactive">
                                     <td>#1002</td>
                                     <td>Fatima Al-Thani</td>
                                     <td>fatima.t@qf.edu.qa</td>
-                                    <td><span class="badge enrolled">Enrolled</span></td>
+                                    <td><span class="badge inactive">Inactive</span></td>
                                     <td>3</td>
                                     <td><span class="badge in-progress">1 In Progress</span></td>
                                     <td>1 day ago</td>
                                 </tr>
-                                <tr>
+                                <tr data-status="active">
                                     <td>#1003</td>
                                     <td>Mohammed Hassan</td>
                                     <td>mohammed.h@qf.edu.qa</td>
-                                    <td><span class="badge logged-in">Logged In</span></td>
+                                    <td><span class="badge active">Active</span></td>
                                     <td>7</td>
                                     <td><span class="badge certified">5 Certified</span></td>
                                     <td>30 mins ago</td>
                                 </tr>
-                                <tr>
+                                <tr data-status="pending">
                                     <td>#1004</td>
                                     <td>Sarah Ahmed</td>
                                     <td>sarah.a@qf.edu.qa</td>
-                                    <td><span class="badge enrolled">Enrolled</span></td>
+                                    <td><span class="badge pending">Pending Approval</span></td>
                                     <td>4</td>
                                     <td><span class="badge in-progress">2 In Progress</span></td>
                                     <td>3 hours ago</td>
                                 </tr>
-                                <tr>
+                                <tr data-status="active">
                                     <td>#1005</td>
                                     <td>Omar Khalid</td>
                                     <td>omar.k@qf.edu.qa</td>
-                                    <td><span class="badge logged-in">Logged In</span></td>
+                                    <td><span class="badge active">Active</span></td>
                                     <td>6</td>
                                     <td><span class="badge certified">4 Certified</span></td>
                                     <td>15 mins ago</td>
                                 </tr>
-                                <tr>
+                                <tr data-status="deactivated">
                                     <td>#1006</td>
                                     <td>Noor Abdullah</td>
                                     <td>noor.a@qf.edu.qa</td>
-                                    <td><span class="badge enrolled">Enrolled</span></td>
+                                    <td><span class="badge deactivated">Deactivated</span></td>
                                     <td>2</td>
                                     <td><span class="badge in-progress">1 In Progress</span></td>
-                                    <td>5 hours ago</td>
+                                    <td>5 days ago</td>
                                 </tr>
-                                <tr>
+                                <tr data-status="active">
                                     <td>#1007</td>
                                     <td>Ali Mohamed</td>
                                     <td>ali.m@qf.edu.qa</td>
-                                    <td><span class="badge logged-in">Logged In</span></td>
+                                    <td><span class="badge active">Active</span></td>
                                     <td>8</td>
                                     <td><span class="badge certified">6 Certified</span></td>
                                     <td>1 hour ago</td>
@@ -2263,6 +2547,155 @@
                                 <button class="view-course-btn" onclick="openCourseDetails('Advanced Excel & Analytics', {enrolled: 198, completed: 145, inProgress: 38, halfDone: 15})">View Course Details</button>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- VERIFIER MANAGEMENT SECTION -->
+                <div class="dash-section" id="verifierSection">
+                    <!-- Action Buttons -->
+                    <div class="students-actions">
+                        <button class="action-btn primary" onclick="openQuickAddVerifierModal()">
+                            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            Quick Add Verifier
+                        </button>
+                        <button class="action-btn secondary" onclick="openBulkUploadVerifierModal()">
+                            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                            Bulk Upload Verifiers
+                        </button>
+                    </div>
+
+                    <!-- Filters -->
+                    <div class="students-filters">
+                        <div class="filter-group">
+                            <label>Status:</label>
+                            <select class="filter-select" id="verifierStatusFilter" onchange="filterVerifiers()">
+                                <option value="all">All Verifiers</option>
+                                <option value="active">Active Verifiers</option>
+                                <option value="inactive">Inactive Verifiers</option>
+                                <option value="pending">Pending Verifiers</option>
+                                <option value="deactivated">Deactivated Verifiers</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>From:</label>
+                            <input type="date" class="date-input" id="verifierDateFrom" onchange="filterVerifiers()">
+                        </div>
+                        <div class="filter-group">
+                            <label>To:</label>
+                            <input type="date" class="date-input" id="verifierDateTo" onchange="filterVerifiers()">
+                        </div>
+                    </div>
+
+                    <!-- Verifier Stats -->
+                    <div class="learner-stats">
+                        <div class="learner-stat-card">
+                            <h5>Total Verifiers</h5>
+                            <div class="number">150</div>
+                        </div>
+                        <div class="learner-stat-card">
+                            <h5>Active Verifiers</h5>
+                            <div class="number">128</div>
+                        </div>
+                        <div class="learner-stat-card">
+                            <h5>Pending Approval</h5>
+                            <div class="number">12</div>
+                        </div>
+                        <div class="learner-stat-card">
+                            <h5>Total Students Certified</h5>
+                            <div class="number">2,340</div>
+                        </div>
+                    </div>
+
+                    <!-- Verifiers Table -->
+                    <div class="students-table-card">
+                        <h4>All Verifiers / Teachers</h4>
+                        <table class="students-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                    <th>Subjects Teaching</th>
+                                    <th>Students Certified</th>
+                                    <th>Join Date</th>
+                                </tr>
+                            </thead>
+                            <tbody id="verifiersTableBody">
+                                <tr data-status="active" onclick="openVerifierDetails('Dr. Hassan Al-Kuwari', {subjects: [{name: 'Data Science', students: 234}, {name: 'Python Programming', students: 189}], totalStudents: 423, certified: 312, inProgress: 89, pending: 22})">
+                                    <td>#V001</td>
+                                    <td>Dr. Hassan Al-Kuwari</td>
+                                    <td>hassan.k@qf.edu.qa</td>
+                                    <td><span class="badge active">Active</span></td>
+                                    <td>2 Subjects</td>
+                                    <td><span class="badge certified">312</span></td>
+                                    <td>Jan 2025</td>
+                                </tr>
+                                <tr data-status="active" onclick="openVerifierDetails('Prof. Aisha Al-Mannai', {subjects: [{name: 'Digital Marketing', students: 298}, {name: 'Content Strategy', students: 145}], totalStudents: 443, certified: 356, inProgress: 67, pending: 20})">
+                                    <td>#V002</td>
+                                    <td>Prof. Aisha Al-Mannai</td>
+                                    <td>aisha.m@qf.edu.qa</td>
+                                    <td><span class="badge active">Active</span></td>
+                                    <td>2 Subjects</td>
+                                    <td><span class="badge certified">356</span></td>
+                                    <td>Mar 2025</td>
+                                </tr>
+                                <tr data-status="inactive" onclick="openVerifierDetails('Dr. Omar Al-Thani', {subjects: [{name: 'Cybersecurity', students: 267}], totalStudents: 267, certified: 189, inProgress: 55, pending: 23})">
+                                    <td>#V003</td>
+                                    <td>Dr. Omar Al-Thani</td>
+                                    <td>omar.t@qf.edu.qa</td>
+                                    <td><span class="badge inactive">Inactive</span></td>
+                                    <td>1 Subject</td>
+                                    <td><span class="badge certified">189</span></td>
+                                    <td>Feb 2025</td>
+                                </tr>
+                                <tr data-status="active" onclick="openVerifierDetails('Ms. Fatima Al-Dosari', {subjects: [{name: 'UI/UX Design', students: 156}, {name: 'Graphic Design', students: 98}], totalStudents: 254, certified: 178, inProgress: 56, pending: 20})">
+                                    <td>#V004</td>
+                                    <td>Ms. Fatima Al-Dosari</td>
+                                    <td>fatima.d@qf.edu.qa</td>
+                                    <td><span class="badge active">Active</span></td>
+                                    <td>2 Subjects</td>
+                                    <td><span class="badge certified">178</span></td>
+                                    <td>Jan 2025</td>
+                                </tr>
+                                <tr data-status="pending" onclick="openVerifierDetails('Dr. Khalid Ahmed', {subjects: [{name: 'Business Analytics', students: 201}], totalStudents: 201, certified: 145, inProgress: 42, pending: 14})">
+                                    <td>#V005</td>
+                                    <td>Dr. Khalid Ahmed</td>
+                                    <td>khalid.a@qf.edu.qa</td>
+                                    <td><span class="badge pending">Pending Approval</span></td>
+                                    <td>1 Subject</td>
+                                    <td><span class="badge certified">145</span></td>
+                                    <td>Feb 2026</td>
+                                </tr>
+                                <tr data-status="active" onclick="openVerifierDetails('Prof. Sara Al-Hashemi', {subjects: [{name: 'Web Development', students: 189}, {name: 'Mobile Development', students: 178}], totalStudents: 367, certified: 223, inProgress: 113, pending: 31})">
+                                    <td>#V006</td>
+                                    <td>Prof. Sara Al-Hashemi</td>
+                                    <td>sara.h@qf.edu.qa</td>
+                                    <td><span class="badge active">Active</span></td>
+                                    <td>2 Subjects</td>
+                                    <td><span class="badge certified">223</span></td>
+                                    <td>Apr 2025</td>
+                                </tr>
+                                <tr data-status="deactivated" onclick="openVerifierDetails('Dr. Mohammed Al-Jaber', {subjects: [{name: 'Cloud Computing', students: 221}], totalStudents: 221, certified: 143, inProgress: 62, pending: 16})">
+                                    <td>#V007</td>
+                                    <td>Dr. Mohammed Al-Jaber</td>
+                                    <td>mohammed.j@qf.edu.qa</td>
+                                    <td><span class="badge deactivated">Deactivated</span></td>
+                                    <td>1 Subject</td>
+                                    <td><span class="badge certified">143</span></td>
+                                    <td>May 2025</td>
+                                </tr>
+                                <tr data-status="active" onclick="openVerifierDetails('Ms. Noura Al-Ansari', {subjects: [{name: 'Leadership Skills', students: 276}, {name: 'Communication', students: 134}], totalStudents: 410, certified: 289, inProgress: 98, pending: 23})">
+                                    <td>#V008</td>
+                                    <td>Ms. Noura Al-Ansari</td>
+                                    <td>noura.a@qf.edu.qa</td>
+                                    <td><span class="badge active">Active</span></td>
+                                    <td>2 Subjects</td>
+                                    <td><span class="badge certified">289</span></td>
+                                    <td>Jun 2025</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
@@ -2764,6 +3197,246 @@
         </div>
     </div>
 
+    <!-- Quick Add Student Modal -->
+    <div class="modal" id="quickAddModal">
+        <div class="modal-content" style="max-width: 500px;">
+            <div class="modal-header">
+                <h3>Quick Add Student</h3>
+                <button class="close-modal" onclick="closeQuickAddModal()">
+                    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <form id="quickAddForm">
+                <div class="form-group">
+                    <label>First Name <span class="required">*</span></label>
+                    <div class="input-wrap">
+                        <svg class="input-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                        <input type="text" placeholder="Enter first name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Last Name <span class="required">*</span></label>
+                    <div class="input-wrap">
+                        <svg class="input-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                        <input type="text" placeholder="Enter last name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email Address <span class="required">*</span></label>
+                    <div class="input-wrap">
+                        <svg class="input-icon" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+                        <input type="email" placeholder="student@qf.edu.qa" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary">Add Student</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bulk Upload Modal -->
+    <div class="modal" id="bulkUploadModal">
+        <div class="modal-content" style="max-width: 600px;">
+            <div class="modal-header">
+                <h3>Bulk Upload Students</h3>
+                <button class="close-modal" onclick="closeBulkUploadModal()">
+                    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            
+            <div class="upload-instructions">
+                <h4>Follow these steps to upload students:</h4>
+                <ol class="upload-steps">
+                    <li>Download the sample CSV file template</li>
+                    <li>Edit the CSV file with student details (First Name, Last Name, Email)</li>
+                    <li>Do not change the header row - only add student data</li>
+                    <li>Save the CSV file</li>
+                    <li>Upload the completed CSV file below</li>
+                </ol>
+                <button class="download-sample-btn" onclick="downloadSampleCSV()">
+                    <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download Sample CSV
+                </button>
+            </div>
+
+            <form id="bulkUploadForm">
+                <div class="form-group">
+                    <label class="file-upload-area" for="csvFileInput">
+                        <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                        <p><strong>Click to upload</strong> or drag and drop</p>
+                        <span>CSV file (Max 5MB)</span>
+                        <input type="file" id="csvFileInput" accept=".csv" onchange="handleFileSelect(event)">
+                    </label>
+                    <div id="fileName" style="margin-top: 12px; font-size: 13px; color: var(--qf-text);"></div>
+                </div>
+                <button type="submit" class="btn-primary">Upload Students</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Quick Add Verifier Modal -->
+    <div class="modal" id="quickAddVerifierModal">
+        <div class="modal-content" style="max-width: 500px;">
+            <div class="modal-header">
+                <h3>Quick Add Verifier</h3>
+                <button class="close-modal" onclick="closeQuickAddVerifierModal()">
+                    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <form id="quickAddVerifierForm">
+                <div class="form-group">
+                    <label>First Name <span class="required">*</span></label>
+                    <div class="input-wrap">
+                        <svg class="input-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                        <input type="text" placeholder="Enter first name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Last Name <span class="required">*</span></label>
+                    <div class="input-wrap">
+                        <svg class="input-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                        <input type="text" placeholder="Enter last name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email Address <span class="required">*</span></label>
+                    <div class="input-wrap">
+                        <svg class="input-icon" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+                        <input type="email" placeholder="teacher@qf.edu.qa" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Subject <span class="required">*</span></label>
+                    <div class="input-wrap">
+                        <svg class="input-icon" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        <input type="text" placeholder="e.g. Data Science" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary">Add Verifier</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bulk Upload Verifier Modal -->
+    <div class="modal" id="bulkUploadVerifierModal">
+        <div class="modal-content" style="max-width: 600px;">
+            <div class="modal-header">
+                <h3>Bulk Upload Verifiers</h3>
+                <button class="close-modal" onclick="closeBulkUploadVerifierModal()">
+                    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            
+            <div class="upload-instructions">
+                <h4>Follow these steps to upload verifiers:</h4>
+                <ol class="upload-steps">
+                    <li>Download the sample CSV file template</li>
+                    <li>Edit the CSV file with verifier details (First Name, Last Name, Email, Subject)</li>
+                    <li>Do not change the header row - only add verifier data</li>
+                    <li>Save the CSV file</li>
+                    <li>Upload the completed CSV file below</li>
+                </ol>
+                <button class="download-sample-btn" onclick="downloadSampleVerifierCSV()">
+                    <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download Sample CSV
+                </button>
+            </div>
+
+            <form id="bulkUploadVerifierForm">
+                <div class="form-group">
+                    <label class="file-upload-area" for="csvVerifierFileInput">
+                        <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                        <p><strong>Click to upload</strong> or drag and drop</p>
+                        <span>CSV file (Max 5MB)</span>
+                        <input type="file" id="csvVerifierFileInput" accept=".csv" onchange="handleVerifierFileSelect(event)">
+                    </label>
+                    <div id="verifierFileName" style="margin-top: 12px; font-size: 13px; color: var(--qf-text);"></div>
+                </div>
+                <button type="submit" class="btn-primary">Upload Verifiers</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Verifier Details Modal -->
+    <div class="modal" id="verifierDetailsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="verifierName">Verifier Details</h3>
+                <button class="close-modal" onclick="closeVerifierDetailsModal()">
+                    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            
+            <!-- Verifier Stats -->
+            <div class="verifier-detail-stats">
+                <div class="verifier-detail-stat">
+                    <div class="verifier-detail-stat-label">Total Students</div>
+                    <div class="verifier-detail-stat-value" id="verifierTotalStudents">0</div>
+                </div>
+                <div class="verifier-detail-stat">
+                    <div class="verifier-detail-stat-label">Students Certified</div>
+                    <div class="verifier-detail-stat-value" id="verifierCertified">0</div>
+                </div>
+                <div class="verifier-detail-stat">
+                    <div class="verifier-detail-stat-label">In Progress</div>
+                    <div class="verifier-detail-stat-value" id="verifierInProgress">0</div>
+                </div>
+            </div>
+
+            <!-- Subjects Teaching -->
+            <div class="subjects-list">
+                <h5>Subjects Teaching</h5>
+                <div id="subjectsContainer"></div>
+            </div>
+
+            <!-- Student Progress Table -->
+            <div class="students-table-card" style="box-shadow: none; padding: 0;">
+                <h4>Student Progress</h4>
+                <table class="students-table">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Subject</th>
+                            <th>Progress</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ahmed Al-Mansoori</td>
+                            <td>Data Science</td>
+                            <td>100%</td>
+                            <td><span class="badge certified">Certified</span></td>
+                        </tr>
+                        <tr>
+                            <td>Fatima Al-Thani</td>
+                            <td>Python Programming</td>
+                            <td>65%</td>
+                            <td><span class="badge in-progress">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mohammed Hassan</td>
+                            <td>Data Science</td>
+                            <td>100%</td>
+                            <td><span class="badge certified">Certified</span></td>
+                        </tr>
+                        <tr>
+                            <td>Sarah Ahmed</td>
+                            <td>Python Programming</td>
+                            <td>50%</td>
+                            <td><span class="badge in-progress">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>Omar Khalid</td>
+                            <td>Data Science</td>
+                            <td>85%</td>
+                            <td><span class="badge in-progress">In Progress</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
     <script>
         // ===== CAPTCHA =====
         const captchas = { login:'', signup:'', forgot:'' };
@@ -2876,6 +3549,9 @@
                 } else if (page === 'learner') {
                     document.getElementById('learnerSection').classList.add('active');
                     document.getElementById('pageTitle').textContent = 'Learner Management';
+                } else if (page === 'verifier') {
+                    document.getElementById('verifierSection').classList.add('active');
+                    document.getElementById('pageTitle').textContent = 'Verifier Management';
                 } else if (page === 'opportunity') {
                     document.getElementById('opportunitySection').classList.add('active');
                     document.getElementById('pageTitle').textContent = 'Opportunity Management';
@@ -2967,6 +3643,11 @@
                 closeSearch();
                 closeCourseModal();
                 closeOpportunityModal();
+                closeQuickAddModal();
+                closeBulkUploadModal();
+                closeQuickAddVerifierModal();
+                closeBulkUploadVerifierModal();
+                closeVerifierDetailsModal();
             }
         });
 
@@ -3021,6 +3702,221 @@
             closeOpportunityModal();
             this.reset();
         });
+
+        // ===== QUICK ADD STUDENT MODAL =====
+        function openQuickAddModal() {
+            document.getElementById('quickAddModal').classList.add('active');
+        }
+
+        function closeQuickAddModal() {
+            document.getElementById('quickAddModal').classList.remove('active');
+        }
+
+        document.getElementById('quickAddModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeQuickAddModal();
+            }
+        });
+
+        document.getElementById('quickAddForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            showToast('Student added successfully! Email invitation sent.');
+            closeQuickAddModal();
+            this.reset();
+        });
+
+        // ===== BULK UPLOAD MODAL =====
+        function openBulkUploadModal() {
+            document.getElementById('bulkUploadModal').classList.add('active');
+        }
+
+        function closeBulkUploadModal() {
+            document.getElementById('bulkUploadModal').classList.remove('active');
+        }
+
+        document.getElementById('bulkUploadModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeBulkUploadModal();
+            }
+        });
+
+        document.getElementById('bulkUploadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const fileInput = document.getElementById('csvFileInput');
+            if (fileInput.files.length === 0) {
+                showToast('Please select a CSV file');
+                return;
+            }
+            showToast('Students uploaded successfully! Email invitations sent.');
+            closeBulkUploadModal();
+            this.reset();
+            document.getElementById('fileName').textContent = '';
+        });
+
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (file) {
+                document.getElementById('fileName').textContent = '✓ Selected: ' + file.name;
+            }
+        }
+
+        function downloadSampleCSV() {
+            const csvContent = 'First Name,Last Name,Email\nJohn,Doe,john.doe@example.com\nJane,Smith,jane.smith@example.com';
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'sample_students.csv';
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+
+        // ===== QUICK ADD VERIFIER MODAL =====
+        function openQuickAddVerifierModal() {
+            document.getElementById('quickAddVerifierModal').classList.add('active');
+        }
+
+        function closeQuickAddVerifierModal() {
+            document.getElementById('quickAddVerifierModal').classList.remove('active');
+        }
+
+        document.getElementById('quickAddVerifierModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeQuickAddVerifierModal();
+            }
+        });
+
+        document.getElementById('quickAddVerifierForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            showToast('Verifier added successfully! Email invitation sent.');
+            closeQuickAddVerifierModal();
+            this.reset();
+        });
+
+        // ===== BULK UPLOAD VERIFIER MODAL =====
+        function openBulkUploadVerifierModal() {
+            document.getElementById('bulkUploadVerifierModal').classList.add('active');
+        }
+
+        function closeBulkUploadVerifierModal() {
+            document.getElementById('bulkUploadVerifierModal').classList.remove('active');
+        }
+
+        document.getElementById('bulkUploadVerifierModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeBulkUploadVerifierModal();
+            }
+        });
+
+        document.getElementById('bulkUploadVerifierForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const fileInput = document.getElementById('csvVerifierFileInput');
+            if (fileInput.files.length === 0) {
+                showToast('Please select a CSV file');
+                return;
+            }
+            showToast('Verifiers uploaded successfully! Email invitations sent.');
+            closeBulkUploadVerifierModal();
+            this.reset();
+            document.getElementById('verifierFileName').textContent = '';
+        });
+
+        function handleVerifierFileSelect(event) {
+            const file = event.target.files[0];
+            if (file) {
+                document.getElementById('verifierFileName').textContent = '✓ Selected: ' + file.name;
+            }
+        }
+
+        function downloadSampleVerifierCSV() {
+            const csvContent = 'First Name,Last Name,Email,Subject\nDr. John,Doe,john.doe@qf.edu.qa,Mathematics\nProf. Jane,Smith,jane.smith@qf.edu.qa,Physics';
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'sample_verifiers.csv';
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+
+        // ===== VERIFIER DETAILS MODAL =====
+        function openVerifierDetails(name, stats) {
+            document.getElementById('verifierName').textContent = name;
+            document.getElementById('verifierTotalStudents').textContent = stats.totalStudents;
+            document.getElementById('verifierCertified').textContent = stats.certified;
+            document.getElementById('verifierInProgress').textContent = stats.inProgress;
+            
+            // Populate subjects
+            const container = document.getElementById('subjectsContainer');
+            container.innerHTML = '';
+            stats.subjects.forEach(subject => {
+                const div = document.createElement('div');
+                div.className = 'subject-item';
+                div.innerHTML = `
+                    <span class="subject-name">${subject.name}</span>
+                    <span class="subject-students">${subject.students} students</span>
+                `;
+                container.appendChild(div);
+            });
+            
+            document.getElementById('verifierDetailsModal').classList.add('active');
+        }
+
+        function closeVerifierDetailsModal() {
+            document.getElementById('verifierDetailsModal').classList.remove('active');
+        }
+
+        document.getElementById('verifierDetailsModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeVerifierDetailsModal();
+            }
+        });
+
+        // ===== STUDENT FILTERS =====
+        function filterStudents() {
+            const statusFilter = document.getElementById('statusFilter').value;
+            const dateFrom = document.getElementById('dateFrom').value;
+            const dateTo = document.getElementById('dateTo').value;
+            
+            const rows = document.querySelectorAll('#studentsTableBody tr');
+            
+            rows.forEach(row => {
+                const rowStatus = row.getAttribute('data-status');
+                let showRow = true;
+                
+                // Status filter
+                if (statusFilter !== 'all' && rowStatus !== statusFilter) {
+                    showRow = false;
+                }
+                
+                // Date filters would be implemented here with actual date data
+                
+                row.style.display = showRow ? '' : 'none';
+            });
+        }
+
+        // ===== VERIFIER FILTERS =====
+        function filterVerifiers() {
+            const statusFilter = document.getElementById('verifierStatusFilter').value;
+            const dateFrom = document.getElementById('verifierDateFrom').value;
+            const dateTo = document.getElementById('verifierDateTo').value;
+            
+            const rows = document.querySelectorAll('#verifiersTableBody tr');
+            
+            rows.forEach(row => {
+                const rowStatus = row.getAttribute('data-status');
+                let showRow = true;
+                
+                // Status filter
+                if (statusFilter !== 'all' && rowStatus !== statusFilter) {
+                    showRow = false;
+                }
+                
+                // Date filters would be implemented here with actual date data
+                
+                row.style.display = showRow ? '' : 'none';
+            });
+        }
 
         // ===== LOGIN =====
         document.getElementById('loginForm').addEventListener('submit', function(e) {
