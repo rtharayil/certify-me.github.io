@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Verifier Portal – Qatar Foundation</title>
-<link href__="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{--g1:#1a5c3a;--g2:#2d7a50;--g3:#3a9d68;--mint:#b8e6cc;--ml:#d4f0e0;--mp:#e8f5ee;--w:#fff;--t:#1a2e23;--tl:#5a7568;--red:#d94f4f;--b:#c8ddd1;--sh:rgba(26,92,58,.1);--sh2:rgba(26,92,58,.18);--r:16px;--rs:10px;--tr:.3s cubic-bezier(.4,0,.2,1);--sw:270px}
@@ -227,10 +227,10 @@ body.dark .filter-btn{background:rgba(30,46,35,.6);border-color:#3a4d42;color:va
 .filter-btn:hover{background:var(--mp);border-color:var(--g2)}
 body.dark .filter-btn:hover{background:rgba(184,230,204,.1)}
 .filter-btn svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2}
+.search-wrapper{position:relative;flex:1}
 .search-input{flex:1;padding:10px 16px 10px 40px;border:1.5px solid var(--b);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--t);background:var(--w);transition:var(--tr);outline:none}
 body.dark .search-input{background:rgba(30,46,35,.6);border-color:#3a4d42;color:var(--mint)}
 .search-input:focus{border-color:var(--g2);box-shadow:0 0 0 3px rgba(45,122,80,.08)}
-.search-wrapper{position:relative;flex:1}
 .search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:16px;height:16px;stroke:var(--tl);fill:none;stroke-width:2}
 body.dark .search-icon{stroke:var(--mint)}
 .apply-btn{padding:10px 24px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:var(--tr)}
@@ -447,6 +447,15 @@ body.dark .student-report-score{color:var(--mint)}
 body.dark .success-title{color:var(--mint)}
 .success-text{font-size:14px;color:var(--tl);line-height:1.6;margin-bottom:24px}
 body.dark .success-text{color:#8a9d91}
+
+/* NEW: Course Detail Modal */
+.course-detail-section{margin-bottom:20px}
+.course-detail-section h4{font-size:14px;font-weight:600;color:var(--g1);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.course-detail-section .detail-item{background:var(--mp);padding:12px 16px;border-radius:8px}
+.course-detail-section .detail-item label{font-size:11px;color:var(--tl);display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px}
+.course-detail-section .detail-item span{font-size:14px;font-weight:600;color:var(--t)}
+body.dark .course-detail-section .detail-item{background:rgba(184,230,204,.1)}
+body.dark .course-detail-section .detail-item span{color:var(--mint)}
 
 @media(max-width:860px){.bp{display:none}.ac{max-width:500px}.fp{padding:32px 24px}.fl{display:flex}}
 @media(max-width:1200px){.stats-grid{grid-template-columns:repeat(2,1fr)}.analytics-grid{grid-template-columns:1fr}}
@@ -667,7 +676,7 @@ Add Course
 </main>
 </div>
 
-<!-- VIEW DETAILS MODAL -->
+<!-- VIEW DETAILS MODAL (Student Task) -->
 <div class="modal" id="detailsModal">
 <div class="mcon">
 <div class="mh">
@@ -675,10 +684,8 @@ Add Course
 <button class="mcb" onclick="closeDetailsModal()"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
 </div>
 <div class="mb" id="detailsContent"></div>
-<div class="mf">
-<button class="close-btn" onclick="closeDetailsModal()">Close</button>
-<button class="hold-btn" onclick="openHoldModal()">Put on Hold</button>
-<button class="verify-btn" onclick="verifySubmission()">Verify</button>
+<div class="mf" id="detailsModalFooter">
+<!-- Dynamic buttons injected here -->
 </div>
 </div>
 </div>
@@ -781,6 +788,20 @@ Add Course
 <h3 class="success-title">Course Submitted Successfully!</h3>
 <p class="success-text">Your course has been sent to the admin for review. Once approved, students will be informed and can enroll in this course.</p>
 <button class="verify-btn" onclick="closeSuccessModal()" style="margin:0 auto">Got it!</button>
+</div>
+</div>
+</div>
+
+<!-- NEW: Course Detail Modal -->
+<div class="modal" id="courseDetailModal">
+<div class="mcon">
+<div class="mh">
+<h3>Course Details</h3>
+<button class="mcb" onclick="closeCourseDetailModal()"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+</div>
+<div class="mb" id="courseDetailContent"></div>
+<div class="mf">
+<button class="close-btn" onclick="closeCourseDetailModal()">Close</button>
 </div>
 </div>
 </div>
@@ -959,7 +980,7 @@ item.innerHTML=`
 ${task.reason?`<div class="task-detail-row" style="color:var(--red)"><strong>Reason:</strong> ${task.reason}</div>`:''}
 </div>
 <div class="task-actions">
-<button class="action-btn" onclick="viewDetails(${task.id})">
+<button class="action-btn" onclick="viewDetails(${task.id}, '${currentTab}')">
 <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
 View Details
 </button>
@@ -976,12 +997,17 @@ list.innerHTML='<div style="text-align:center;padding:40px;color:var(--tl)">No t
 }
 }
 
-function viewDetails(taskId){
+function viewDetails(taskId, sourceTab){
 currentTaskId=taskId;
 let task=null;
+let taskOrigin = sourceTab;
+if(!sourceTab){
 for(let tab in tasksData){
 task=tasksData[tab].find(t=>t.id===taskId);
-if(task)break;
+if(task){ taskOrigin = tab; break; }
+}
+} else {
+task=tasksData[sourceTab]?.find(t=>t.id===taskId);
 }
 if(!task)return;
 const content=document.getElementById('detailsContent');
@@ -1033,16 +1059,41 @@ ${task.reason?`<div class="detail-section">
 <p style="color:var(--red);padding:12px;background:#fde8e8;border-radius:8px">${task.reason}</p>
 </div>`:''}
 `;
+
+const footer = document.getElementById('detailsModalFooter');
+footer.innerHTML = '';
+
+const closeBtn = document.createElement('button');
+closeBtn.className = 'close-btn';
+closeBtn.innerText = 'Close';
+closeBtn.onclick = closeDetailsModal;
+footer.appendChild(closeBtn);
+
+if (taskOrigin === 'new') {
+const holdBtn = document.createElement('button');
+holdBtn.className = 'hold-btn';
+holdBtn.innerText = 'Put on Hold';
+holdBtn.onclick = openHoldModal;
+footer.appendChild(holdBtn);
+const verifyBtn = document.createElement('button');
+verifyBtn.className = 'verify-btn';
+verifyBtn.innerText = 'Verify';
+verifyBtn.onclick = verifySubmission;
+footer.appendChild(verifyBtn);
+} else if (taskOrigin === 'hold') {
+const verifyBtn = document.createElement('button');
+verifyBtn.className = 'verify-btn';
+verifyBtn.innerText = 'Verify';
+verifyBtn.onclick = verifySubmission;
+footer.appendChild(verifyBtn);
+}
+
 document.getElementById('detailsModal').classList.add('show');
 }
 
 function downloadDoc(filename){
 st(`Downloading ${filename}...`);
-// Simulate download
 setTimeout(()=>{
-const link=document.createElement('a');
-link.href__='#';
-link.download=filename;
 st(`${filename} downloaded successfully!`);
 },1000);
 }
@@ -1135,7 +1186,6 @@ function applyFilters(){
 st('Filters applied');
 }
 
-// Task History
 function renderHistory(){
 const list=document.getElementById('historyList');
 if(!list)return;
@@ -1160,7 +1210,6 @@ list.appendChild(div);
 });
 }
 
-// Collaboration - Courses
 function renderCourses(){
 const list=document.getElementById('coursesList');
 if(!list)return;
@@ -1267,12 +1316,130 @@ function closeSuccessModal(){
 document.getElementById('successModal').classList.remove('show');
 }
 
+// FIXED VERSION - START
 function viewCourseDetails(courseId){
-const course=coursesData.find(c=>c.id===courseId);
-if(course){
-st(`Viewing ${course.title}`);
+    const course=coursesData.find(c=>c.id===courseId);
+    if(!course) return;
+    
+    const content = document.getElementById('courseDetailContent');
+    
+    // Properly formatted status badge
+    let statusBadge = '';
+    if(course.status === 'approved') {
+        statusBadge = `<span style="display:inline-block;padding:4px 10px;border-radius:12px;font-size:11px;font-weight:600;background:var(--mp);color:var(--g2)">Approved</span>`;
+    } else if(course.status === 'pending') {
+        statusBadge = `<span style="display:inline-block;padding:4px 10px;border-radius:12px;font-size:11px;font-weight:600;background:#fff3e0;color:#e6a23c">Pending</span>`;
+    } else {
+        statusBadge = `<span style="display:inline-block;padding:4px 10px;border-radius:12px;font-size:11px;font-weight:600;background:#fde8e8;color:#d94f4f">Rejected</span>`;
+    }
+    
+    content.innerHTML = `
+<div class="detail-section">
+    <h4>
+        <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2">
+            <rect x="2" y="3" width="20" height="18" rx="2"/>
+            <line x1="2" y1="9" x2="22" y2="9"/>
+        </svg>
+        Basic Information
+    </h4>
+    <div class="detail-grid">
+        <div class="detail-item">
+            <label>Title</label>
+            <span>${course.title}</span>
+        </div>
+        <div class="detail-item">
+            <label>Instructor</label>
+            <span>${course.instructor}</span>
+        </div>
+        <div class="detail-item">
+            <label>Status</label>
+            ${statusBadge}
+        </div>
+        <div class="detail-item">
+            <label>Max Students</label>
+            <span>${course.maxStudents}</span>
+        </div>
+    </div>
+</div>
+
+<div class="detail-section">
+    <h4>
+        <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+        </svg>
+        Duration & Schedule
+    </h4>
+    <div class="detail-grid">
+        <div class="detail-item">
+            <label>Duration</label>
+            <span>${course.duration}</span>
+        </div>
+        <div class="detail-item">
+            <label>Start Date</label>
+            <span>${course.startDate}</span>
+        </div>
+        <div class="detail-item">
+            <label>End Date</label>
+            <span>${course.endDate}</span>
+        </div>
+    </div>
+</div>
+
+<div class="detail-section">
+    <h4>
+        <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+        </svg>
+        Course Description
+    </h4>
+    <p style="font-size:13px;color:var(--t);padding:12px;background:var(--mp);border-radius:8px;line-height:1.6;margin:0">
+        ${course.description}
+    </p>
+</div>
+
+<div class="detail-section">
+    <h4>
+        <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+        </svg>
+        Competencies & Skills Covered
+    </h4>
+    <p style="font-size:13px;color:var(--t);padding:12px;background:var(--mp);border-radius:8px;margin:0">
+        ${course.competencies}
+    </p>
+</div>
+
+${course.document ? `
+<div class="detail-section">
+    <h4>
+        <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+        </svg>
+        Attached Document
+    </h4>
+    <div class="detail-item">
+        <span>${course.document}</span>
+    </div>
+</div>
+` : ''}
+    `;
+    
+    document.getElementById('courseDetailModal').classList.add('show');
 }
+
+// add missing close helper so modal Close/Cancel work reliably
+function closeCourseDetailModal(){
+    const modal = document.getElementById('courseDetailModal');
+    if(modal) modal.classList.remove('show');
+    const content = document.getElementById('courseDetailContent');
+    if(content) content.innerHTML = '';
 }
+// FIXED VERSION - END
 
 // Analytics - Accordion
 function renderAnalytics(){
@@ -1413,7 +1580,3 @@ renderLineChart(currentChartView);
 </script>
 </body>
 </html>
-
-
-
-
