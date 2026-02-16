@@ -185,12 +185,15 @@ It helps staff recommend electives, flag leadership potential, or tailor academi
 Let’s ground this with some real stories.
 
 **Olivia – The Psychology Undergrad**
+
 She earned badges in “Research Ethics,” “Survey Tools,” and “Data Analysis with SPSS.” When she applied for a summer research internship, she attached her badge portfolio—and got the role.
 
 **University Registrar’s Office in Ohio**
+
 They launched a badge system for student organizations. Now, leadership roles in clubs are formally recognized—and students are more motivated to participate and document their impact.
 
 **Professor Jacobs – Sociology Dept.**
+
 He uses badges to award classroom behaviors: participation, peer feedback, and critical questioning. Over time, this encouraged quieter students to step up—and gave him an easy way to track engagement.
 
 Badges aren’t futuristic. They’re already being used across campuses—and with surprisingly strong results.
