@@ -88,13 +88,11 @@ The metrics depicted include:
 
 ## Does CertifyMe Provide an Option for Downloading Analytics Reports of Issued Credentials? 
 
-
 Yes, CertifyMe allows users to download the analytic reports of issued credentials,  so that organizations can effectively utilize their data for strategic planning and reporting. To download the analytics report, click the "Download Report" button located at the top-left of the "My Analytics" tab.
 
 These reports can be exported in various formats, such as PDF or Excel.
 
 This feature is particularly useful for: 
- 
 
 1. **Offline analysis:** Conduct detailed analysis without needing constant internet access. 
 
