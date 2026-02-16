@@ -45,11 +45,11 @@
       </p>
 
       <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
-        <!-- My Intro Button with Video Popup -->
-        <button id="openVideoBtn" 
-                class="bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 inline-flex items-center justify-center whitespace-nowrap rounded-full text-base font-medium transition-colors intro-video-btn"
-                aria-haspopup="dialog" 
-                aria-controls="videoPopup">
+        <!-- My Intro Button links to external video URL -->
+        <a id="openVideoBtn"
+           href="https://blr1.digitaloceanspaces.com/cme.dev.space/9/reflection/22/fb3fe024bfcc44e38e9f37df08339a67.mp4"
+           target="_blank" rel="noopener noreferrer"
+           class="bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 inline-flex items-center justify-center whitespace-nowrap rounded-full text-base font-medium transition-colors intro-video-btn">
           <span class="btn-text">My Intro</span>
           <span class="play-icon ml-2">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@
               <path d="M10 8L16 12L10 16V8Z" fill="currentColor"/>
             </svg>
           </span>
-        </button>
+        </a>
         
         <!-- Download CV Button -->
         <a href="/files/aishabanuresume.pdf" download="Aisha-Banu-Resume.pdf" class="border border-input bg-background hover:bg-accent hover:text-accent-foreground h-12 px-8 inline-flex items-center justify-center whitespace-nowrap rounded-full text-base font-medium transition-colors">
@@ -136,40 +136,7 @@ if (document.getElementById('hero-bg-gradient')) {
 }
 </script>
 
-<!-- VIDEO POPUP -->
-<div id="videoPopup"
-     role="dialog"
-     aria-modal="true"
-     aria-hidden="true"
-     aria-labelledby="videoPopupTitle"
-     class="fixed inset-0 bg-black/95 flex items-center justify-center z-[999999] p-4"
-     style="display: none;">
-
-  <h2 id="videoPopupTitle" class="sr-only">Introduction Video - {{ include.page.name | default: 'Riya Sharma' }}</h2>
-
-  <!-- Close Button -->
-  <button id="closeVideoBtn"
-          type="button"
-          aria-label="Close video popup"
-          class="fixed top-6 right-6 bg-white border-none p-0 text-2xl font-bold cursor-pointer rounded-full w-12 h-12 flex items-center justify-center text-gray-800 hover:bg-red-500 hover:text-white transition-all duration-300 z-[9999999]">
-    ✖
-  </button>
-
-  <!-- Video Container -->
-  <div id="videoContainer" 
-       class="relative max-w-4xl w-full max-h-[90vh] flex items-center justify-center">
-    
-    <!-- Video Element -->
-    <video id="aboutVideo"
-           src="{% if include.page.Hero and include.page.Hero[0] and include.page.Hero[0].video %}{{ include.page.Hero[0].video }}{% else %}/images/eptemplate/intro-web.mp4{% endif %}"
-           controls
-           preload="metadata"
-           playsinline
-           class="w-full h-auto max-h-[90vh] rounded-lg bg-black outline-none shadow-2xl">
-      Your browser doesn't support HTML5 video. Please use a modern browser.
-    </video>
-  </div>
-</div>
+<!-- VIDEO POPUP disabled: using external link -->
 
 <!-- CSS STYLES FOR VIDEO POPUP -->
 <style>
@@ -222,167 +189,15 @@ body.video-popup-open {
 }
 </style>
 
-<!-- JAVASCRIPT FOR VIDEO POPUP -->
+<!-- JAVASCRIPT FOR VIDEO POPUP disabled: using external link via anchor -->
 <script>
-(function () {
-  'use strict';
-  
-  let openBtn, videoPopup, aboutVideo, closeBtn, videoContainer;
-
-  // Close the video popup
-  function closeVideoPopup() {
-    if (!videoPopup || !aboutVideo) return;
-    
-    console.log('Closing video popup');
-    
-    // Hide popup
-    videoPopup.style.display = 'none';
-    videoPopup.setAttribute('aria-hidden', 'true');
-
-    // Re-enable body scrolling
-    document.body.classList.remove('video-popup-open');
-    document.documentElement.style.overflow = '';
-    document.body.style.overflow = '';
-
-    // Pause and reset video
-    try {
-      if (!aboutVideo.paused) {
-        aboutVideo.pause();
-      }
-      aboutVideo.currentTime = 0;
-    } catch (err) {
-      console.warn('Error stopping video:', err);
-    }
-
-    // Return focus to open button
-    if (openBtn) {
-      setTimeout(() => {
-        openBtn.focus();
-      }, 100);
-    }
-  }
-
-  // Open the video popup
-  function openVideoPopup() {
-    if (!videoPopup || !aboutVideo) return;
-    
-    console.log('Opening video popup');
-    
-    // Disable body scrolling
-    document.body.classList.add('video-popup-open');
-    document.documentElement.style.overflow = 'hidden';
-    document.body.style.overflow = 'hidden';
-    
-    // Show popup
-    videoPopup.style.display = 'flex';
-    videoPopup.setAttribute('aria-hidden', 'false');
-
-    // Try to play video
-    setTimeout(() => {
-      const playPromise = aboutVideo.play();
-      if (playPromise !== undefined) {
-        playPromise.then(() => {
-          console.log('Video playing');
-        }).catch((err) => {
-          console.info('Autoplay prevented:', err);
-          aboutVideo.controls = true;
-        });
-      }
-    }, 100);
-    
-    // Focus on close button
-    setTimeout(() => {
-      if (closeBtn) {
-        closeBtn.focus();
-      }
-    }, 200);
-  }
-
-  // Initialize everything
-  function init() {
-    console.log('Initializing video popup');
-    
-    // Get elements
-    openBtn = document.getElementById('openVideoBtn');
-    videoPopup = document.getElementById('videoPopup');
-    aboutVideo = document.getElementById('aboutVideo');
-    closeBtn = document.getElementById('closeVideoBtn');
-    videoContainer = document.getElementById('videoContainer');
-
-    // Check if all elements exist
-    if (!openBtn) {
-      console.error('Open button not found');
-      return;
-    }
-    if (!videoPopup) {
-      console.error('Video popup not found');
-      return;
-    }
-    if (!aboutVideo) {
-      console.error('Video element not found');
-      return;
-    }
-    if (!closeBtn) {
-      console.error('Close button not found');
-      return;
-    }
-
-    console.log('All video popup elements found');
-
-    // CLOSE BUTTON
-    closeBtn.onclick = function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      console.log('Close button clicked');
-      closeVideoPopup();
-    };
-
-    // OPEN BUTTON
-    openBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      console.log('My Intro button clicked');
-      openVideoPopup();
+(function(){
+  // ensure anchor works even if scripts try to prevent default
+  var btn = document.getElementById('openVideoBtn');
+  if (btn) {
+    btn.addEventListener('click', function(e){
+      // Do not prevent default; let the browser open the link
     });
-
-    // BACKDROP CLICK - Close when clicking outside video
-    videoPopup.addEventListener('click', function(e) {
-      if (e.target === videoPopup) {
-        console.log('Backdrop clicked');
-        closeVideoPopup();
-      }
-    });
-
-    // Prevent video clicks from closing popup
-    if (videoContainer) {
-      videoContainer.addEventListener('click', function(e) {
-        e.stopPropagation();
-      });
-    }
-
-    aboutVideo.addEventListener('click', function(e) {
-      e.stopPropagation();
-    });
-
-    // ESCAPE KEY
-    document.addEventListener('keydown', function(e) {
-      if ((e.key === 'Escape' || e.key === 'Esc') && 
-          videoPopup.style.display === 'flex') {
-        console.log('Escape key pressed');
-        closeVideoPopup();
-      }
-    });
-
-    console.log('Video popup initialized successfully');
   }
-
-  // Wait for DOM
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-
-  // Also try to init after a short delay as backup
-  setTimeout(init, 500);
 })();
 </script>

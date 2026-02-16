@@ -1,13 +1,13 @@
 ---
 layout: EPTemplates/EPModernLayout
-title: "Aisha Mohammed - UI/UX Developer Portfolio"
+title: "Aisha Banu - UI/UX Developer Portfolio"
 description: "UI/UX Developer and Designer specializing in frontend development, feature enhancement, and user-centered design solutions"
-name: "Aisha Mohammed"
+name: "Aisha Banu"
 tagline: "UI/UX Developer & Designer"
-email: "riya.sharma@example.com"
+email: "aishabanu56@gmail.com"
 phone: "+91 98765 43210"
 location: "Bengaluru, Karnataka, India"
-CV: "/cv/riya-sharma-resume.pdf"
+CV: "/files/aishabanuresume.pdf"
 github: "https://github.com/riyasharma"
 linkedin: "https://linkedin.com/in/riyasharma-uiux"
 
@@ -197,7 +197,7 @@ testimonials:
     designation: "Faculty Mentor"
     company: "PES University"
     image: "/images/eptemplate/img2.png"
-    message: "Aisha Mohammed has shown strong clarity in user psychology and interface structuring. Her projects consistently demonstrated research-backed decisions and a refined design process. She is disciplined, creative, and highly focused on delivering meaningful user experiences."
+    message: "Aisha Banu has shown strong clarity in user psychology and interface structuring. Her projects consistently demonstrated research-backed decisions and a refined design process. She is disciplined, creative, and highly focused on delivering meaningful user experiences."
 
   - name: "Dr. Sanjay Patil"
     designation: "HOD, Department of Computer Applications"
@@ -245,9 +245,9 @@ testimonials:
 Hero:
   - url: "/images/eptemplate/aisha.png"
     tagLine: "UI/UX Developer & Designer"
-    name: "Aisha Mohammed"
-    CV: "/files/1.pdf"
-    video: "/images/eptemplate/intro-web.mp4"
+    name: "Aisha Banu"
+    CV: "/files/aishabanuresume.pdf"
+    video: "/images/eptemplate/aishabauintro.mp4"
 
 # Stats for About Section
 stats:
