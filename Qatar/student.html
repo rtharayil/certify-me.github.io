@@ -551,7 +551,7 @@ body.dark .doc-section-title{color:var(--mint)}
 <div id="dw">
 <nav class="side" id="side">
 <div class="side-h"><div class="side-logo"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF"><div class="side-lt"><span>Qatar Foundation</span><span>مؤسسة قطر</span></div></div></div>
-<div class="side-prof"><div class="pav" id="da">SM</div><div class="pi"><div class="pn" id="dn">Sara <span class="ln">Mohamed</span></div><div class="pr">Student</div></div><button class="pe"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button></div>
+<div class="side-prof"><div class="pav" id="da">SM</div><div class="pi"><div class="pn" id="dn">Sara <span class="ln"> </span></div><div class="pr">Student</div></div><button class="pe"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button></div>
 <div class="side-nav">
 <div class="nlbl">Main Menu</div>
 <button class="ni" data-view="dashboard"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Dashboard<svg class="nc" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
@@ -653,11 +653,11 @@ body.dark .doc-section-title{color:var(--mint)}
 <div class="dv" id="pathwayAnalyticsView">
 <div class="analytics-welcome">
 <div>
-<h2>Hi,</h2>
+<h2 id="welcomeUserName">Hello, Sara!</h2>
 <p>Let's explore your Learning Path together</p>
 <p>Lets know more about your self with the help of CareerBot!</p>
 </div>
-<div class="career-bot" onclick="st('CareerBot coming soon!')">
+<div class="career-bot" onclick="goToMyPathway()">
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
 <span>CareerBot</span>
 </div>
@@ -990,6 +990,7 @@ let allCourses=[];
 let allUploadCourses=[];
 let currentTest='';
 let linkCounter=0;
+let currentUserName = 'Sara'; // Default name
 
 function addDocumentLink(){
 linkCounter++;
@@ -1016,6 +1017,17 @@ row.innerHTML=`
 </button>
 `;
 container.appendChild(row);
+}
+
+function goToMyPathway() {
+// Find and click the My Pathway menu item
+const pathwayButton = document.querySelector('.ni[data-view="pathway"]');
+if (pathwayButton) {
+pathwayButton.click();
+}
+// Also close any open panels
+document.getElementById('notifPanel')?.classList.remove('show');
+document.getElementById('searchPanel')?.classList.remove('show');
 }
 
 function toggleDarkMode(){
@@ -1263,8 +1275,14 @@ document.getElementById('dw').classList.add('active');
 document.body.classList.add('dm');
 const n=u.includes('@')?u.split('@')[0]:u;
 const d=n.charAt(0).toUpperCase()+n.slice(1);
-document.getElementById('dn').innerHTML=d;
-document.getElementById('da').textContent=d.substring(0,2).toUpperCase();
+currentUserName = d;
+document.getElementById('dn').innerHTML = d + (d.endsWith('s') ? '' : '') + ' <span class="ln"> </span>';
+document.getElementById('da').textContent = d.substring(0,2).toUpperCase();
+// Update welcome name in Pathway Analytics
+const welcomeElement = document.getElementById('welcomeUserName');
+if (welcomeElement) {
+welcomeElement.textContent = `Hello, ${d}!`;
+}
 renderCourses();
 renderUploadList();
 renderSubmissions();
