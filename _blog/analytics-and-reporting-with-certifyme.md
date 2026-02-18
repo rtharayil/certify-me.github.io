@@ -50,7 +50,7 @@ It provides an accurate representation of the following metrics:
 
 Program level analytics focus on specific programs or learning paths. These insights are invaluable for program managers and educators, allowing them to assess the success of their programs, identify areas for improvement, and make data-driven adjustments to enhance learning outcomes. 
 
-Key metrics displayed include: 
+Key metrics displayed include:  
 
 1. **Completion rates:** Monitor how many learners complete their courses or learning paths.
 
