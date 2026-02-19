@@ -524,7 +524,7 @@ Follow these simple steps to verify a Red Cross certificate online:
 1. **Institution verification portals:** Many Red Cross societies maintain portals where employers and regulators can verify participant certificates quickly and reliably.
 
 <br>
-
+ 
 ### Compliance and Regulatory Support
 
 1. **National registry integration:** Red Cross verification systems often connect with national healthcare or humanitarian training registries, allowing cross-referencing essential for compliance and employment.
