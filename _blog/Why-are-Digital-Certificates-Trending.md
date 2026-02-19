@@ -57,9 +57,3 @@ The high-level security and encryption of the digital certificates and also the 
 
 Digital certificates are gaining popularity among learners and for all the right reasons. A digital certificate is on the rise replacing the use of traditional paper-based certificates. The factors that attracted most of the users who created the buzz are its ability to be easily shared, view and verify.
 
-
-
-
-
-
-

@@ -1,13 +1,13 @@
 ---
 layout: EPTemplates/EPModernLayout
-title: "Riya Sharma - UI/UX Developer Portfolio"
+title: "Aisha Banu - UI/UX Developer Portfolio"
 description: "UI/UX Developer and Designer specializing in frontend development, feature enhancement, and user-centered design solutions"
-name: "Riya Sharma"
+name: "Aisha Banu"
 tagline: "UI/UX Developer & Designer"
-email: "riya.sharma@example.com"
+email: "aishabanu56@gmail.com"
 phone: "+91 98765 43210"
 location: "Bengaluru, Karnataka, India"
-CV: "/cv/riya-sharma-resume.pdf"
+CV: "/files/aishabanuresume.pdf"
 github: "https://github.com/riyasharma"
 linkedin: "https://linkedin.com/in/riyasharma-uiux"
 
@@ -124,21 +124,25 @@ Skills:
   - name: "Frontend Development"
     icon: "code-2"
     color: "bg-blue-500/10 text-blue-500"
+    percentage: 95
     items: ["HTML & CSS", "JavaScript", "React.js", "Vue.js"]
     
   - name: "UI/UX Design"
     icon: "pen-tool"
     color: "bg-purple-500/10 text-purple-500"
+    percentage: 90
     items: ["UI Design", "UX Research", "Prototyping", "Wireframing"]
     
   - name: "Design Tools"
     icon: "palette"
     color: "bg-pink-500/10 text-pink-500"
+    percentage: 85
     items: ["Figma", "Adobe XD", "Sketch", "InVision"]
     
   - name: "Backend & Tools"
     icon: "terminal"
     color: "bg-green-500/10 text-green-500"
+    percentage: 90
     items: ["Node.js", "Python", "Git & GitHub", "REST APIs"]
     
   - name: "Skill Proficiency"
@@ -193,57 +197,57 @@ testimonials:
     designation: "Faculty Mentor"
     company: "PES University"
     image: "/images/eptemplate/img2.png"
-    message: "Riya Sharma has shown strong clarity in user psychology and interface structuring. Her projects consistently demonstrated research-backed decisions and a refined design process. She is disciplined, creative, and highly focused on delivering meaningful user experiences."
+    message: "Aisha Banu has shown strong clarity in user psychology and interface structuring. Her projects consistently demonstrated research-backed decisions and a refined design process. She is disciplined, creative, and highly focused on delivering meaningful user experiences."
 
   - name: "Dr. Sanjay Patil"
     designation: "HOD, Department of Computer Applications"
     company: "PES University"
     image: "/images/eptemplate/images(1).jpeg"
-    message: "Riya stood out for her ability to convert conceptual ideas into practical UI layouts. Her presentation and documentation skills were exceptionally clear, and she maintained a user-first approach in every assignment. She is dependable, hardworking, and a quick learner."
+    message: "Aisha stood out for her ability to convert conceptual ideas into practical UI layouts. Her presentation and documentation skills were exceptionally clear, and she maintained a user-first approach in every assignment. She is dependable, hardworking, and a quick learner."
 
   - name: "Prof. Nisha Rao"
     designation: "UX Research Faculty"
     company: "PES University, Bengaluru"
     image: "/images/eptemplate/img3.png"
-    message: "Riya brings both creativity and analytical thinking to the table. Her persona development, usability testing, and workflow mapping were always thorough. She is a promising UI/UX professional who understands both design theory and application."
+    message: "Aisha brings both creativity and analytical thinking to the table. Her persona development, usability testing, and workflow mapping were always thorough. She is a promising UI/UX professional who understands both design theory and application."
 
   - name: "Kedar Varghese"
     designation: "Fellow Designer"
     company: "PES University"
     image: "/images/eptemplate/img4.png"
-    message: "Working with Riya has always been inspiring. She brings fresh concepts, clean layouts, and strong collaboration energy. Her understanding of visual balance and typography makes her designs polished and easy to work with."
+    message: "Working with Aisha has always been inspiring. She brings fresh concepts, clean layouts, and strong collaboration energy. Her understanding of visual balance and typography makes her designs polished and easy to work with."
 
   - name: "Arjun Menon"
     designation: "Junior Designer (Project Team)"
     company: "PES University"
     image: "/images/eptemplate/img5.png"
-    message: "Riya guided me through several college design sprints and always encouraged experimentation. She explains design logic clearly and ensures everyone in the team is aligned. Her leadership and patience make group work much easier."
+    message: "Aisha guided me through several college design sprints and always encouraged experimentation. She explains design logic clearly and ensures everyone in the team is aligned. Her leadership and patience make group work much easier."
 
   - name: "Shreya Desai"
     designation: "Student Coordinator"
     company: "PES University"
     image: "/images/eptemplate/img6.png"
-    message: "Riya has been active in design clubs and student projects. She contributed detailed UX case studies and helped streamline many group workflows. She is supportive, friendly, and someone everyone enjoys working with."
+    message: "Aisha has been active in design clubs and student projects. She contributed detailed UX case studies and helped streamline many group workflows. She is supportive, friendly, and someone everyone enjoys working with."
 
   - name: "Rahul Shetty"
     designation: "Product Design Lead"
     company: "PixelCraft Studio, Bengaluru"
     image: "/images/eptemplate/img7.png"
-    message: "Riya completed her internship under my supervision, and she quickly adapted to real-world design challenges. Her redesign of our onboarding flow improved user clarity and reduced friction. She is responsible, detail-oriented, and highly dependable."
+    message: "Aisha completed her internship under my supervision, and she quickly adapted to real-world design challenges. Her redesign of our onboarding flow improved user clarity and reduced friction. She is responsible, detail-oriented, and highly dependable."
 
   - name: "Vivek Nair"
     designation: "Project Manager"
     company: "Creative Minds Digital, Kochi"
     image: "/images/eptemplate/img8.png"
-    message: "Riya demonstrates excellent communication and professionalism. She consistently delivered polished UI screens, aligned with requirements, and incorporated feedback effectively. Her dedication and design clarity made collaboration seamless."
+    message: "Aisha demonstrates excellent communication and professionalism. She consistently delivered polished UI screens, aligned with requirements, and incorporated feedback effectively. Her dedication and design clarity made collaboration seamless."
 
 # Hero Section
 Hero:
-  - url: "/images/eptemplate/Riya.png"
+  - url: "/images/eptemplate/aisha.png"
     tagLine: "UI/UX Developer & Designer"
-    name: "Riya Sharma"
-    CV: "/files/1.pdf"
-    video: "/images/eptemplate/intro-web.mp4"
+    name: "Aisha Banu"
+    CV: "/files/aishabanuresume.pdf"
+    video: "/images/eptemplate/aishabauintro.mp4"
 
 # Stats for About Section
 stats:

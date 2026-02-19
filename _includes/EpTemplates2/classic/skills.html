@@ -83,6 +83,27 @@
                   {% endif %}
                 {% endfor %}
               </ul>
+
+              {% if percentage > 0 %}
+                <!-- Progress Bar for category with items -->
+                <div class="progress-container mt-3" 
+                     role="progressbar" 
+                     aria-valuenow="{{ percentage }}" 
+                     aria-valuemin="0" 
+                     aria-valuemax="100"
+                     aria-label="{{ category_name }} proficiency">
+                  <div class="progress-track w-full bg-muted rounded-full h-2 overflow-hidden">
+                    <div class="progress-bar bg-primary h-2 rounded-full 
+                                transition-all duration-1000 ease-out"
+                         style="width: 0%"
+                         data-percentage="{{ percentage }}">
+                    </div>
+                  </div>
+                  <span class="progress-text text-xs text-muted-foreground mt-1 block">
+                    {{ percentage }}%
+                  </span>
+                </div>
+              {% endif %}
             {% else %}
               <!-- Single Skill with Percentage -->
               <div class="skill-item-single">

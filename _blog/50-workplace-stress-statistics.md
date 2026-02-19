@@ -121,6 +121,7 @@ These findings highlight the tangible effects of stress on both personal and pro
 <br>
 
 ## Stress and Its Effect on Personal Life
+
 The repercussions of workplace stress are not confined to the office; they significantly affect employees' personal lives, including their relationships and home life.
 
 1. **70% report relationship strain** – 7 in 10 adults report that workplace stress negatively affects their personal relationships. (Source: ADAA, 2006)

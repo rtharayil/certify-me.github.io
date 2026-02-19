@@ -339,6 +339,6 @@ Digital credentials—especially those backed by blockchain—help keep things h
 
 If you're looking for a way to make your institution’s credentials more secure, CertifyMe is worth checking out. It helps universities issue tamper-proof digital certificates that are easy to share and even easier to verify. Plus, it takes the pressure off admin staff by cutting out manual checks. 
 
-Want to see how it works? [Book a demo](https://info.certifyme.online/request-demo?_gl=1*1kdw3b0*_gcl_au*NzAyNjQ0ODMuMTc0MTg3NTUyMg..*_ga*MTQ5OTQ1OTQ0Ny4xNzQxODc1NTIy*_ga_8CWQ2KJW5K*czE3NDg4NTc1MjkkbzgyJGcwJHQxNzQ4ODU3NTI5JGo2MCRsMCRoMA..) and explore how CertifyMe can help protect your records—and your reputation.
+Want to see how it works? [Book a demo](https://info.certifyme.online/request-demo) and explore how CertifyMe can help protect your records—and your reputation.
 
 Today, proof matters more than claims. And with digital credentials, you don’t just say you did it—you show it.
