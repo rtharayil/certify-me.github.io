@@ -122,6 +122,8 @@ Code signing certificates are crucial for software developers who want to assure
 
 For users, this means they can trust that the software is genuine and hasn't been tampered with by malicious actors. This is particularly important for software distributed through third-party platforms, where the risk of malware is higher.
 
+Even the most “trustworthy” file may contain malware. That’s why users should enhance their protection with dedicated security tools like [MacKeeper](https://mackeeper.com/), which scan systems for threats and remove any malware that slips through.
+
 <br>
 
 ### 3. Client Certificates 
