@@ -277,7 +277,7 @@ Let your learners know:
 
 Students don’t always know what to do with a badge—so make it clear.
 
-Add a one-liner in your email: “You’ve earned a badge! Add it to your LinkedIn or Instagram story with one click.” You can even offer a quick how-to guide or short video tutorial for posting it on platforms like LinkedIn, Twitter, or personal websites.
+Add a one-liner in your email: “You’ve earned a badge! Add it to your LinkedIn or Instagram story with one click.” You can even offer a quick how-to guide or create a short tutorial using an [AI video generator](https://predis.ai/ai-video-generator/) for posting it on platforms like LinkedIn, Twitter, or personal websites.
 
 The easier you make it to share, the more likely it is to travel—and when it travels, your brand travels too.
 
