@@ -103,7 +103,7 @@ Because in today’s digital world, a quiet credential can make a loud impressio
 
 ## For Universities: A Quiet but Effective Marketing Tool
 
-University marketing teams often face a difficult challenge: How do you cut through the noise, especially when budgets are tight and attention spans are shorter than ever?
+University marketing teams often face a difficult challenge: How do you cut through the noise, especially when budgets are tight and attention spans are shorter than ever? While tools like an [AI ad maker](https://predis.ai/) can help streamline campaign creation, digital credentials offer a more organic and trust-driven alternative.
 
 The answer might be sitting in your registrar's office.
 
