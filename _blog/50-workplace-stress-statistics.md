@@ -177,7 +177,7 @@ Technology, while essential for modern work, is contributing to rising stress le
 <br>
 
 <img class="img-fluid r-16" src="/img/blog/The-Link-Between-Technology-and-Workplace-Stress.png" alt="diagrammatic presentation of the Link Between Technology and Workplace Stress" style="display: block; margin: 0 auto;">
-
+ 
 <br>
 
 These statistics highlight the pressure technology places on employees, making it increasingly difficult for them to disconnect from work and manage their stress levels.
