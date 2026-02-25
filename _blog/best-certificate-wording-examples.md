@@ -278,7 +278,7 @@ The design and presentation of a certificate are as important as the wording for
 Spelling and grammar mistakes can undermine the professionalism of a certificate. Always proofread the wording for certificate text to catch any errors. Ensure consistency in details like names, dates, and titles. A final review by another person can help ensure the certificate is error-free and ready for presentation.
 
 <br>
-
+ 
 ## Conclusion
 
 In crafting the perfect wording for certificate text, it's crucial to focus on personalization and clarity. Whether you're recognizing achievements, celebrating milestones, or appreciating contributions, the right words can make all the difference in making recipients feel valued and special. The 20 examples provided are designed to inspire you and help you create memorable and meaningful certificate wordings that resonate with each individual.
