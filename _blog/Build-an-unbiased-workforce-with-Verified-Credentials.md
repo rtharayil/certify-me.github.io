@@ -142,7 +142,7 @@ Verified credentials let universities show this value. They go beyond grades and
 
 1. It strengthens **student outcomes**, making graduates more employable.
 
-Verified credentials are also making waves beyond higher ed—check out c[redentialing use cases in event and meetings industries](https://www.certifyme.online/blog/Digital-Credentials-for-event-and-Meetings-Professionals.html) to see how they scale across sectors.
+Verified credentials are also making waves beyond higher ed—check out [credentialing use cases in event and meetings industries](https://www.certifyme.online/blog/Digital-Credentials-for-event-and-Meetings-Professionals.html) to see how they scale across sectors.
 
 And **for institutions overall:**
 
