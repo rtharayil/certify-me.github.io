@@ -62,6 +62,6 @@ Issuing rewards and recognition to its valuable members increases engagement. Th
 
 <br>
 
-### In Conclusion:
+### Conclusion:
 
 Adapting to the current digital world is a must and association membership is one such term that will quantify its members and create a brand value. It allows members to get recognised and encourages their involvement. 
