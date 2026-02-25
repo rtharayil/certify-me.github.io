@@ -8,8 +8,8 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Verifiable Certificate and Digital Badge Management Software for Higher Education  
-HeroText: 'Empowering verifiable,tamper-proof, and traceable digital credentials globally'
+HeroTitle: Verifiable Digital Credential Software for Institutions That Require Trust  
+HeroText: 'Issue secure, customizable digital credentials that scale with your organization and remain trusted over time.'
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request A Demo
 HeroVideoButton: Watch Video
