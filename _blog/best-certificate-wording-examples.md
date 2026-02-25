@@ -36,7 +36,7 @@ Haven't designed your certificate yet? Making certificates with CertifyMe is sup
 
 <br>
 
-<a href="https://www.certifyme.online/">Sign up for free</a> and bring your dream certificate to life. (CertifyMe also handles the sending process!)
+[Sign up for free](https://apac.platform.certifyme.dev/auth/pre-register/blog@certifyme.online) and bring your dream certificate to life. (CertifyMe also handles the sending process!)
 
 <br>
 
