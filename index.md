@@ -10,7 +10,7 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Verifiable Digital Credential Software for Institutions That Require Trust  
+HeroTitle: Verifiable Digital<br> Credential Software<br> for Institutions That<br> Require Trust  
 HeroText: 'Issue secure, customizable digital credentials that scale with your organization and remain trusted over time.'
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request A Demo
