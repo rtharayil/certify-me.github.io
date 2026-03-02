@@ -5,797 +5,831 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MC Silver Institute – Admin Portal</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
     <style>
-        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-        :root {
-            --p: #7C3AED; --pd: #5B21B6; --pl: #A78BFA; --ps: #EDE9FE;
-            --white: #ffffff; --text: #1f2937; --text-light: #6b7280;
-            --red: #d94f4f; --border: #e5e7eb; --bg: #f9fafb;
-            --success: #059669; --warning: #d97706;
-            --radius: 14px; --radius-sm: 10px; --tr: 0.25s ease;
-        }
-        body { font-family:'DM Sans',sans-serif; min-height:100vh; background:#f3f0ff; overflow-x:hidden; }
-
-        /* ============ AUTH SCREEN (unchanged) ============ */
-        #authScreen {
-            min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px;
-            background:linear-gradient(145deg,#ede9fe 0%,#ddd6fe 30%,#c4b5fd 60%,#ede9fe 100%);
-            position:relative; overflow:hidden;
-        }
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+        :root{--p:#7C3AED;--pd:#5B21B6;--pl:#A78BFA;--ps:#EDE9FE;--text:#1f2937;--tl:#6b7280;--red:#d94f4f;--border:#e5e7eb;--bg:#f9fafb;--green:#059669;--radius:14px;--rsm:10px;--tr:.25s ease;}
+        body{font-family:'DM Sans',sans-serif;min-height:100vh;background:#f3f0ff;overflow-x:hidden;}
+        /* TOAST */
+        .toast{position:fixed;top:24px;right:24px;padding:14px 22px;border-radius:12px;font-size:14px;font-weight:500;color:#fff;box-shadow:0 8px 30px rgba(0,0,0,.15);transform:translateX(130%);transition:transform .4s cubic-bezier(.22,1,.36,1);z-index:9999;display:flex;align-items:center;gap:10px;max-width:320px;}
+        .toast.show{transform:translateX(0);}
+        .toast.success{background:#059669;}.toast.error{background:#d94f4f;}.toast.info{background:#7C3AED;}
+        .toast svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2;flex-shrink:0;}
+        /* AUTH */
+        #authScreen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;background:linear-gradient(145deg,#ede9fe 0%,#ddd6fe 30%,#c4b5fd 60%,#ede9fe 100%);position:relative;overflow:hidden;}
         #authScreen::before,#authScreen::after{content:'';position:fixed;border-radius:50%;filter:blur(80px);opacity:.35;pointer-events:none;}
         #authScreen::before{width:500px;height:500px;background:radial-gradient(circle,#c4b5fd,transparent);top:-120px;right:-100px;animation:floatOrb 18s ease-in-out infinite;}
         #authScreen::after{width:400px;height:400px;background:radial-gradient(circle,#a78bfa,transparent);bottom:-80px;left:-60px;animation:floatOrb 22s ease-in-out infinite reverse;}
         @keyframes floatOrb{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-20px) scale(1.05)}66%{transform:translate(-20px,15px) scale(.95)}}
-
-        .auth-card {
-            width:100%; max-width:1080px; min-height:620px; display:flex;
-            border-radius:24px; overflow:hidden;
-            box-shadow:0 4px 6px rgba(124,58,237,.1),0 20px 50px rgba(124,58,237,.18),0 0 0 1px rgba(255,255,255,.3);
-            background:#fff; animation:slideUp .7s cubic-bezier(.22,1,.36,1) forwards; opacity:0; transform:translateY(30px);
-        }
+        .auth-card{width:100%;max-width:1080px;min-height:620px;display:flex;border-radius:24px;overflow:hidden;box-shadow:0 4px 6px rgba(124,58,237,.1),0 20px 50px rgba(124,58,237,.18);background:#fff;animation:slideUp .7s cubic-bezier(.22,1,.36,1) forwards;opacity:0;transform:translateY(30px);}
         @keyframes slideUp{to{opacity:1;transform:translateY(0)}}
         .brand-panel{width:44%;background:linear-gradient(165deg,#5B21B6 0%,#7C3AED 50%,#9b6eff 100%);padding:48px 40px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden;}
+        .brand-panel::before{content:'';position:absolute;top:-100px;right:-100px;width:350px;height:350px;border-radius:50%;background:rgba(255,255,255,.04);}
+        .brand-panel::after{content:'';position:absolute;bottom:-60px;left:-60px;width:250px;height:250px;border-radius:50%;background:rgba(255,255,255,.04);}
         .brand-logo{display:flex;flex-direction:column;align-items:center;gap:20px;position:relative;z-index:1;}
         .logo-icon{width:140px;height:140px;background:rgba(255,255,255,.95);border-radius:16px;display:flex;align-items:center;justify-content:center;padding:12px;box-shadow:0 8px 30px rgba(0,0,0,.2);overflow:hidden;}
         .logo-icon img{width:100%;height:100%;object-fit:contain;}
-        .brand-logo-text span:first-child{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#fff;}
-        .brand-logo-text span:last-child{font-size:14px;color:rgba(255,255,255,.75);letter-spacing:1px;margin-top:4px;}
-        .brand-content{margin-top:32px;}
+        .blt span:first-child{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#fff;display:block;}
+        .blt span:last-child{font-size:14px;color:rgba(255,255,255,.75);letter-spacing:1px;display:block;margin-top:4px;}
+        .brand-content{position:relative;z-index:1;margin-top:32px;}
         .brand-content h1{font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:#fff;line-height:1.3;margin-bottom:14px;text-shadow:0 2px 4px rgba(0,0,0,.2);}
         .brand-content p{font-size:15px;color:rgba(255,255,255,.85);line-height:1.65;max-width:320px;margin:0 auto;}
         .form-panel{flex:1;padding:44px 52px;display:flex;flex-direction:column;justify-content:center;background:#fff;overflow-y:auto;}
-        .form-header{margin-bottom:28px;}
-        .badge{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:#EDE9FE;border-radius:20px;font-size:11.5px;font-weight:600;color:#7C3AED;text-transform:uppercase;letter-spacing:.8px;margin-bottom:14px;}
-        .badge svg{width:14px;height:14px;stroke:#7C3AED;}
-        .form-header h2{font-family:'Playfair Display',serif;font-size:28px;font-weight:600;color:#1f2937;margin-bottom:6px;}
-        .form-header p{font-size:14px;color:#6b7280;line-height:1.5;}
-        .form-group{margin-bottom:18px;position:relative;}
-        .form-group label{display:block;font-size:13px;font-weight:500;color:var(--text);margin-bottom:7px;}
-        .form-group label .req{color:var(--red);}
-        .input-wrap{position:relative;}
-        .input-wrap .ii{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:18px;height:18px;stroke:var(--text-light);fill:none;stroke-width:1.8;}
-        .input-wrap input{width:100%;padding:13px 16px 13px 46px;border:1.5px solid var(--border);border-radius:var(--radius-sm);font-size:14px;color:var(--text);background:#f9fafb;outline:none;transition:var(--tr);}
-        .input-wrap input:focus{border-color:#7C3AED;background:#fff;box-shadow:0 0 0 3px rgba(124,58,237,.08);}
-        .input-wrap input.err{border-color:var(--red);}
-        .toggle-pw{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;padding:4px;}
-        .toggle-pw svg{width:18px;height:18px;stroke:#6b7280;}
-        .err-msg{font-size:12px;color:var(--red);margin-top:5px;display:none;align-items:center;gap:4px;}
-        .err-msg.show{display:flex;}
-        .err-msg svg{width:14px;height:14px;stroke:var(--red);}
-        .captcha-row{display:flex;gap:12px;align-items:flex-end;}
-        .captcha-row .form-group{flex:1;}
-        .captcha-display{height:48px;min-width:130px;background:linear-gradient(135deg,#EDE9FE,#ddd6fe);border:1.5px solid #c4b5fd;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;position:relative;user-select:none;overflow:hidden;}
-        .captcha-text{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#5B21B6;letter-spacing:6px;position:relative;z-index:1;}
-        .captcha-refresh{position:absolute;right:5px;top:5px;width:22px;height:22px;border-radius:6px;background:rgba(255,255,255,.6);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;}
-        .captcha-refresh svg{width:13px;height:13px;stroke:#5B21B6;}
-        .form-options{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;}
-        .remember-me{display:flex;align-items:center;gap:8px;cursor:pointer;}
-        .remember-me input[type=checkbox]{display:none;}
-        .checkmark{width:18px;height:18px;border:1.5px solid #d1d5db;border-radius:5px;display:flex;align-items:center;justify-content:center;background:#f9fafb;}
-        .remember-me input:checked~.checkmark{background:#7C3AED;border-color:#7C3AED;}
-        .checkmark svg{width:12px;height:12px;stroke:#fff;opacity:0;}
-        .remember-me input:checked~.checkmark svg{opacity:1;}
-        .link-btn{background:none;border:none;color:#7C3AED;font-size:13px;font-weight:500;cursor:pointer;}
-        .link-btn:hover{color:#5B21B6;text-decoration:underline;}
-        .btn-primary{width:100%;padding:14px;background:linear-gradient(135deg,#5B21B6,#7C3AED);color:#fff;border:none;border-radius:var(--radius-sm);font-size:15px;font-weight:600;cursor:pointer;position:relative;overflow:hidden;}
-        .btn-primary:hover{box-shadow:0 6px 20px rgba(124,58,237,.3);transform:translateY(-1px);}
-        .form-footer{text-align:center;margin-top:24px;font-size:13.5px;color:#6b7280;}
-        .back-btn{display:flex;align-items:center;gap:6px;background:none;border:none;cursor:pointer;font-size:13px;font-weight:500;color:#6b7280;margin-bottom:20px;}
-        .back-btn:hover{color:#7C3AED;}
-        .pw-strength{display:flex;gap:4px;margin-top:6px;}
-        .str-bar{flex:1;height:3px;border-radius:3px;background:#d1d5db;}
         .form-page{display:none;opacity:0;transform:translateX(20px);transition:opacity .4s ease,transform .4s ease;}
         .form-page.active{display:block;opacity:1;transform:translateX(0);}
+        .fhdr{margin-bottom:28px;}
+        .badge{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:#EDE9FE;border-radius:20px;font-size:11.5px;font-weight:600;color:#7C3AED;text-transform:uppercase;letter-spacing:.8px;margin-bottom:14px;}
+        .badge svg{width:14px;height:14px;stroke:#7C3AED;fill:none;stroke-width:2;}
+        .fhdr h2{font-family:'Playfair Display',serif;font-size:28px;font-weight:600;color:#1f2937;margin-bottom:6px;}
+        .fhdr p{font-size:14px;color:#6b7280;line-height:1.5;}
+        .fg{margin-bottom:18px;}
+        .fg label{display:block;font-size:13px;font-weight:500;color:var(--text);margin-bottom:7px;}
+        .req{color:var(--red);}
+        .iw{position:relative;}
+        .iw .ic{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:18px;height:18px;stroke:var(--tl);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;pointer-events:none;}
+        .iw input{width:100%;padding:13px 16px 13px 46px;border:1.5px solid var(--border);border-radius:var(--rsm);font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);background:#f9fafb;outline:none;transition:var(--tr);}
+        .iw input:focus{border-color:#7C3AED;background:#fff;box-shadow:0 0 0 3px rgba(124,58,237,.08);}
+        .iw input.ferr{border-color:var(--red);}
+        .tpw{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;padding:4px;}
+        .tpw svg{width:18px;height:18px;stroke:#6b7280;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+        .emsg{font-size:12px;color:var(--red);margin-top:5px;display:none;align-items:center;gap:4px;}
+        .emsg.show{display:flex;}
+        .emsg svg{width:14px;height:14px;stroke:var(--red);fill:none;stroke-width:2;flex-shrink:0;}
+        .cap-row{display:flex;gap:12px;align-items:flex-end;}
+        .cap-row .fg{flex:1;margin-bottom:0;}
+        .cap-disp{height:48px;min-width:130px;background:linear-gradient(135deg,#EDE9FE,#ddd6fe);border:1.5px solid #c4b5fd;border-radius:var(--rsm);display:flex;align-items:center;justify-content:center;position:relative;user-select:none;overflow:hidden;}
+        .cap-text{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#5B21B6;letter-spacing:6px;}
+        .cap-ref{position:absolute;right:5px;top:5px;width:22px;height:22px;border-radius:6px;background:rgba(255,255,255,.6);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+        .cap-ref svg{width:13px;height:13px;stroke:#5B21B6;fill:none;stroke-width:2;stroke-linecap:round;}
+        .fopts{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;}
+        .remme{display:flex;align-items:center;gap:8px;cursor:pointer;}
+        .remme input[type=checkbox]{display:none;}
+        .ck{width:18px;height:18px;border:1.5px solid #d1d5db;border-radius:5px;display:flex;align-items:center;justify-content:center;background:#f9fafb;}
+        .remme input:checked~.ck{background:#7C3AED;border-color:#7C3AED;}
+        .ck svg{width:12px;height:12px;stroke:#fff;fill:none;stroke-width:2.5;opacity:0;}
+        .remme input:checked~.ck svg{opacity:1;}
+        .remme span{font-size:13px;color:#6b7280;}
+        .lbtn{background:none;border:none;color:#7C3AED;font-size:13px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;}
+        .lbtn:hover{color:#5B21B6;text-decoration:underline;}
+        .btn-p{width:100%;padding:14px;background:linear-gradient(135deg,#5B21B6,#7C3AED);color:#fff;border:none;border-radius:var(--rsm);font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;cursor:pointer;}
+        .btn-p:hover{box-shadow:0 6px 20px rgba(124,58,237,.3);transform:translateY(-1px);}
+        .ffoot{text-align:center;margin-top:24px;font-size:13.5px;color:#6b7280;}
+        .back-btn{display:flex;align-items:center;gap:6px;background:none;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;color:#6b7280;margin-bottom:20px;}
+        .back-btn svg{width:16px;height:16px;stroke:#6b7280;fill:none;stroke-width:2;}
+        .back-btn:hover{color:#7C3AED;}
+        .pw-str{display:flex;gap:4px;margin-top:6px;}
+        .sbar{flex:1;height:3px;border-radius:3px;background:#d1d5db;transition:background .3s;}
+        .sbar.weak{background:var(--red);}.sbar.medium{background:#f59e0b;}.sbar.strong{background:#7C3AED;}.sbar.vstrong{background:#5B21B6;}
+        .slbl{font-size:11px;margin-top:3px;color:#6b7280;}
         @keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
-        .shake{animation:shake .4s ease;}
-        .toast{position:fixed;top:24px;right:24px;padding:16px 24px;background:#7C3AED;color:#fff;border-radius:12px;font-size:14px;font-weight:500;box-shadow:0 8px 30px rgba(124,58,237,.3);transform:translateX(120%);transition:transform .4s cubic-bezier(.22,1,.36,1);z-index:9999;display:flex;align-items:center;gap:10px;}
-        .toast.show{transform:translateX(0);}
-        .toast svg{width:20px;height:20px;stroke:#fff;}
-        .toast.success{background:#059669;}
-        .toast.error{background:#d94f4f;}
-
-        /* ============ ADMIN APP ============ */
-        #adminApp{display:none;min-height:100vh;background:#f3f0ff;flex-direction:row;}
+        @media(max-width:860px){.brand-panel{display:none;}.auth-card{max-width:500px;}.form-panel{padding:36px 28px;}}
+        /* ADMIN APP */
+        #adminApp{display:none;min-height:100vh;}
         #adminApp.visible{display:flex;}
-
         .sidebar{width:260px;min-height:100vh;background:linear-gradient(180deg,#5B21B6 0%,#7C3AED 100%);display:flex;flex-direction:column;position:fixed;left:0;top:0;bottom:0;z-index:100;box-shadow:4px 0 20px rgba(91,33,182,.2);}
-        .sidebar-logo{padding:28px 24px 20px;border-bottom:1px solid rgba(255,255,255,.1);}
-        .sidebar-logo-inner{display:flex;align-items:center;gap:12px;}
-        .sidebar-logo-icon{width:44px;height:44px;background:rgba(255,255,255,.95);border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:4px;}
-        .sidebar-logo-icon img{width:100%;height:100%;object-fit:contain;}
-        .sidebar-logo-text{display:flex;flex-direction:column;}
-        .sidebar-logo-text span:first-child{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:#fff;}
-        .sidebar-logo-text span:last-child{font-size:11px;color:rgba(255,255,255,.6);}
-        .sidebar-nav{flex:1;padding:16px 12px;display:flex;flex-direction:column;gap:4px;}
-        .nav-item{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:10px;cursor:pointer;transition:var(--tr);color:rgba(255,255,255,.7);font-size:14px;font-weight:500;border:none;background:none;width:100%;}
-        .nav-item svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8;flex-shrink:0;}
-        .nav-item:hover{background:rgba(255,255,255,.1);color:#fff;}
-        .nav-item.active{background:rgba(255,255,255,.18);color:#fff;font-weight:600;}
-        .sidebar-footer{padding:16px 12px;border-top:1px solid rgba(255,255,255,.1);}
-        .sidebar-user{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;}
+        .sl-logo{padding:28px 24px 20px;border-bottom:1px solid rgba(255,255,255,.1);}
+        .sl-logo-inner{display:flex;align-items:center;gap:12px;}
+        .sl-li{width:44px;height:44px;background:rgba(255,255,255,.95);border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:4px;flex-shrink:0;}
+        .sl-li img{width:100%;height:100%;object-fit:contain;}
+        .sl-lt span:first-child{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:#fff;display:block;}
+        .sl-lt span:last-child{font-size:11px;color:rgba(255,255,255,.6);display:block;}
+        .sl-nav{flex:1;padding:16px 12px;display:flex;flex-direction:column;gap:4px;}
+        .nav-it{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:10px;cursor:pointer;color:rgba(255,255,255,.7);font-size:14px;font-weight:500;border:none;background:none;width:100%;font-family:'DM Sans',sans-serif;transition:var(--tr);}
+        .nav-it svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
+        .nav-it:hover{background:rgba(255,255,255,.1);color:#fff;}
+        .nav-it.active{background:rgba(255,255,255,.18);color:#fff;font-weight:600;}
+        .sl-foot{padding:16px 12px;border-top:1px solid rgba(255,255,255,.1);}
+        .sl-user{display:flex;align-items:center;gap:10px;padding:10px 14px;}
         .avatar{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;flex-shrink:0;}
-        .sidebar-user-info{flex:1;min-width:0;}
-        .sidebar-user-info span:first-child{display:block;font-size:13px;font-weight:600;color:#fff;}
-        .sidebar-user-info span:last-child{display:block;font-size:11px;color:rgba(255,255,255,.6);}
-        .logout-btn{background:none;border:none;cursor:pointer;padding:6px;border-radius:6px;}
-        .logout-btn svg{width:16px;height:16px;stroke:rgba(255,255,255,.6);}
-        .logout-btn:hover svg{stroke:#fff;}
-
-        .main{margin-left:260px;flex:1;min-height:100vh;display:flex;flex-direction:column;}
+        .sl-ui{flex:1;min-width:0;}
+        .sl-ui span:first-child{display:block;font-size:13px;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+        .sl-ui span:last-child{display:block;font-size:11px;color:rgba(255,255,255,.6);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+        .lgout{background:none;border:none;cursor:pointer;padding:6px;border-radius:6px;}
+        .lgout svg{width:16px;height:16px;stroke:rgba(255,255,255,.6);fill:none;stroke-width:2;}
+        .lgout:hover svg{stroke:#fff;}
+        .main{margin-left:260px;flex:1;min-height:100vh;display:flex;flex-direction:column;min-width:0;overflow-x:hidden;width:calc(100vw - 260px);}
         .topbar{background:#fff;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);box-shadow:0 1px 4px rgba(0,0,0,.04);}
         .topbar h1{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:var(--text);}
-        .topbar-actions{display:flex;align-items:center;gap:12px;}
-        .content{padding:32px;flex:1;}
-
-        .panel{display:none;}
+        .topbar-sub{font-size:13px;color:var(--tl);}
+        .content{padding:32px;flex:1;min-width:0;width:100%;box-sizing:border-box;overflow-x:hidden;}
+        .panel{display:none;width:100%;min-width:0;box-sizing:border-box;}
         .panel.active{display:block;}
-
-        /* Dashboard styles */
+        /* DASHBOARD */
         .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:32px;}
-        .stat-card{background:#fff;border-radius:var(--radius);padding:24px;border:1px solid var(--border);position:relative;overflow:hidden;}
-        .stat-card::before{content:'';position:absolute;top:0;right:0;width:80px;height:80px;border-radius:0 var(--radius) 0 80px;opacity:.08;}
-        .stat-card.purple::before{background:#7C3AED;}
-        .stat-card.green::before{background:#059669;}
-        .stat-card.blue::before{background:#2563EB;}
-        .stat-card.orange::before{background:#d97706;}
-        .stat-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
-        .stat-icon.purple{background:#EDE9FE;}
-        .stat-icon.green{background:#d1fae5;}
-        .stat-icon.blue{background:#dbeafe;}
-        .stat-icon.orange{background:#fef3c7;}
-        .stat-icon svg{width:22px;height:22px;fill:none;stroke-width:1.8;}
-        .stat-icon.purple svg{stroke:#7C3AED;}
-        .stat-icon.green svg{stroke:#059669;}
-        .stat-icon.blue svg{stroke:#2563EB;}
-        .stat-icon.orange svg{stroke:#d97706;}
+        .stat-card{background:#fff;border-radius:var(--radius);padding:24px;border:1px solid var(--border);}
+        .si{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
+        .si.pu{background:#EDE9FE;}.si.gr{background:#d1fae5;}.si.bl{background:#dbeafe;}.si.or{background:#fef3c7;}
+        .si svg{width:22px;height:22px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+        .si.pu svg{stroke:#7C3AED;}.si.gr svg{stroke:#059669;}.si.bl svg{stroke:#2563EB;}.si.or svg{stroke:#d97706;}
         .stat-num{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--text);line-height:1;}
-        .stat-label{font-size:13px;color:var(--text-light);margin-top:4px;}
-        .recent-table-wrap{background:#fff;border-radius:var(--radius);border:1px solid var(--border);overflow:hidden;}
-        .section-header{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;}
-        .section-header h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--text);}
+        .stat-lbl{font-size:13px;color:var(--tl);margin-top:4px;}
+        .cw{background:#fff;border-radius:var(--radius);border:1px solid var(--border);overflow:hidden;}
+        .cwh{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;}
+        .cwh h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--text);}
         table{width:100%;border-collapse:collapse;}
-        th{padding:12px 20px;text-align:left;font-size:12px;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:.6px;background:#f9fafb;border-bottom:1px solid var(--border);}
+        th{padding:12px 20px;text-align:left;font-size:12px;font-weight:600;color:var(--tl);text-transform:uppercase;letter-spacing:.6px;background:#f9fafb;border-bottom:1px solid var(--border);}
         td{padding:14px 20px;font-size:14px;color:var(--text);border-bottom:1px solid #f3f4f6;}
-        .pill{display:inline-flex;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:500;}
-        .pill.active{background:#d1fae5;color:#065f46;}
-
-        /* Upload options */
-        .upload-options{display:flex;gap:16px;margin-bottom:32px;}
-        .option-card{flex:1;background:#fff;border:2px solid var(--border);border-radius:var(--radius);padding:32px;text-align:center;cursor:pointer;transition:var(--tr);}
-        .option-card:hover{border-color:#7C3AED;box-shadow:0 4px 20px rgba(124,58,237,.1);}
-        .option-card.active{border-color:#7C3AED;background:#EDE9FE;}
-        .option-card svg{width:48px;height:48px;stroke:#7C3AED;fill:none;stroke-width:1.5;margin-bottom:16px;}
-        .option-card h3{font-size:20px;font-weight:600;color:var(--text);margin-bottom:8px;}
-        .option-card p{color:var(--text-light);font-size:14px;}
-
-        .upload-section{display:none; background:#fff; border-radius:var(--radius); border:1px solid var(--border); padding:32px;}
-        .upload-section.active{display:block;}
-
-        /* Stepper (for quick add) */
-        .stepper{display:flex;align-items:center;gap:0;margin-bottom:32px;background:#fff;border-radius:var(--radius);padding:24px 32px;border:1px solid var(--border);}
-        .step{display:flex;align-items:center;flex:1;position:relative;}
-        .step:last-child{flex:none;}
-        .step-circle{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;border:2px solid #d1d5db;color:#9ca3af;background:#fff;flex-shrink:0;z-index:1;}
-        .step.done .step-circle{background:#7C3AED;border-color:#7C3AED;color:#fff;}
-        .step.active .step-circle{border-color:#7C3AED;color:#7C3AED;box-shadow:0 0 0 4px rgba(124,58,237,.12);}
-        .step-line{flex:1;height:2px;background:#e5e7eb;margin:0 8px;}
-        .step.done .step-line{background:#7C3AED;}
-        .step-info{margin-left:10px;}
-        .step-info .s-num{font-size:11px;color:var(--text-light);font-weight:500;}
-        .step-info .s-name{font-size:13px;font-weight:600;color:var(--text);}
-        .step.active .s-name{color:#7C3AED;}
+        tr:last-child td{border-bottom:none;}
+        .pill{display:inline-flex;align-items:center;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:500;}
+        .pill.gr,.pill.active{background:#d1fae5;color:#065f46;}
+        .btn-sm{padding:8px 16px;border:1.5px solid var(--border);border-radius:var(--rsm);background:#fff;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;color:var(--text);cursor:pointer;transition:var(--tr);}
+        .btn-sm:hover{border-color:#7C3AED;color:#7C3AED;}
+        .empty-state{text-align:center;padding:60px 20px;color:var(--tl);}
+        .empty-state svg{width:48px;height:48px;stroke:#d1d5db;fill:none;stroke-width:1.5;margin:0 auto 16px;display:block;}
+        /* UPLOAD DATA */
+        /* ─── TWO COLUMN OPTION CARDS ─── */
+        .upload-options{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px;}
+        .option-card{background:#fff;border:2px solid var(--border);border-radius:var(--radius);padding:28px 24px;cursor:pointer;transition:border-color var(--tr),box-shadow var(--tr),background var(--tr);display:flex;flex-direction:column;align-items:flex-start;gap:12px;}
+        .option-card:hover{border-color:var(--p);box-shadow:0 4px 20px rgba(124,58,237,.1);}
+        .option-card.active{border-color:var(--p);background:#faf5ff;box-shadow:0 4px 20px rgba(124,58,237,.12);}
+        .oc-icon{width:52px;height:52px;border-radius:12px;background:#EDE9FE;display:flex;align-items:center;justify-content:center;}
+        .oc-icon svg{width:26px;height:26px;stroke:#7C3AED;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+        .option-card.active .oc-icon{background:#7C3AED;}
+        .option-card.active .oc-icon svg{stroke:#fff;}
+        .option-card h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--text);}
+        .option-card p{font-size:13.5px;color:var(--tl);line-height:1.55;margin:0;}
+        /* ─── SECTION TOGGLE ─── */
+        .upload-section{display:none;width:100%;min-width:0;box-sizing:border-box;}
+        .upload-section.active{display:block;width:100%;}
+        /* ─── STEPPER ─── */
+        .stepper{display:flex;align-items:center;background:#fff;border-radius:var(--radius);padding:22px 32px;border:1px solid var(--border);margin-bottom:24px;}
+        .sdot{display:flex;align-items:center;flex:1;}
+        .sdot:last-child{flex:none;}
+        .sc{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;border:2px solid #d1d5db;color:#9ca3af;background:#fff;flex-shrink:0;z-index:1;transition:var(--tr);}
+        .sdot.done .sc{background:#7C3AED;border-color:#7C3AED;color:#fff;}
+        .sdot.active .sc{border-color:#7C3AED;color:#7C3AED;box-shadow:0 0 0 4px rgba(124,58,237,.12);}
+        .sline{flex:1;height:2px;background:#e5e7eb;margin:0 8px;transition:background .3s;}
+        .sdot.done .sline{background:#7C3AED;}
+        .sinfo{margin-left:10px;}
+        .sinfo .sn{font-size:11px;color:var(--tl);font-weight:500;}
+        .sinfo .stitle{font-size:13px;font-weight:600;color:var(--text);}
+        .sdot.active .stitle{color:#7C3AED;}
         .step-content{display:none;}
         .step-content.active{display:block;}
-
-        /* Quick add form */
-        .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
-        .form-grid .full{grid-column:1/-1;}
+        /* ─── QUICK ADD FORM ─── */
+        .up-card{background:#fff;border-radius:var(--radius);border:1px solid var(--border);padding:32px;}
+        .up-card h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--text);margin-bottom:6px;}
+        .up-card .sub{font-size:14px;color:var(--tl);margin-bottom:28px;}
+        .fgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+        .fgrid .full{grid-column:1/-1;}
         .field{display:flex;flex-direction:column;gap:7px;}
         .field label{font-size:13px;font-weight:500;color:var(--text);}
-        .field label .req{color:var(--red);}
-        .field input,.field textarea,.field select{padding:12px 16px;border:1.5px solid var(--border);border-radius:var(--radius-sm);font-size:14px;color:var(--text);background:#f9fafb;outline:none;transition:var(--tr);}
+        .field input,.field textarea{padding:12px 16px;border:1.5px solid var(--border);border-radius:var(--rsm);font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);background:#f9fafb;outline:none;transition:var(--tr);resize:vertical;}
         .field input:focus,.field textarea:focus{border-color:#7C3AED;background:#fff;box-shadow:0 0 0 3px rgba(124,58,237,.08);}
-        .field input.invalid{border-color:var(--red);}
-        .field .hint{font-size:11.5px;color:var(--text-light);}
+        .field input.inv{border-color:var(--red);}
+        .field .hint{font-size:11.5px;color:var(--tl);}
         .field .verr{font-size:12px;color:var(--red);display:none;}
         .field .verr.show{display:block;}
-        .tags-input-wrap{display:flex;flex-wrap:wrap;gap:6px;padding:8px 10px;border:1.5px solid var(--border);border-radius:var(--radius-sm);background:#f9fafb;min-height:48px;cursor:text;}
-        .tags-input-wrap:focus-within{border-color:#7C3AED;}
+        .photo-wrap{width:90px;height:90px;border-radius:12px;background:#f3f0ff;border:2px dashed #c4b5fd;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;cursor:pointer;transition:border-color var(--tr);}
+        .photo-wrap:hover{border-color:#7C3AED;}
+        .photo-wrap img{width:100%;height:100%;object-fit:cover;}
+        .photo-wrap svg{width:28px;height:28px;stroke:#a78bfa;fill:none;stroke-width:1.5;}
+        .tags-wrap{display:flex;flex-wrap:wrap;gap:6px;padding:8px 10px;border:1.5px solid var(--border);border-radius:var(--rsm);background:#f9fafb;min-height:48px;cursor:text;align-items:center;transition:var(--tr);}
+        .tags-wrap:focus-within{border-color:#7C3AED;background:#fff;box-shadow:0 0 0 3px rgba(124,58,237,.08);}
         .tag{display:inline-flex;align-items:center;gap:4px;background:#EDE9FE;color:#5B21B6;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:500;}
-        .tag button{background:none;border:none;cursor:pointer;color:#7C3AED;font-size:14px;}
-        .tags-input{border:none;outline:none;background:transparent;font-size:13px;color:var(--text);flex:1;min-width:100px;padding:2px 4px;}
-        .step-nav{display:flex;justify-content:space-between;margin-top:28px;padding-top:24px;border-top:1px solid var(--border);}
-        .btn-outline{padding:11px 24px;border:1.5px solid var(--border);border-radius:var(--radius-sm);background:#fff;font-size:14px;font-weight:500;color:var(--text);cursor:pointer;}
+        .tag button{background:none;border:none;cursor:pointer;color:#7C3AED;font-size:15px;line-height:1;padding:0 0 0 2px;}
+        .tag-input{border:none;outline:none;background:transparent;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text);flex:1;min-width:100px;padding:2px 4px;}
+        .step-nav{display:flex;justify-content:space-between;align-items:center;margin-top:28px;padding-top:24px;border-top:1px solid var(--border);}
+        .btn-outline{padding:11px 24px;border:1.5px solid var(--border);border-radius:var(--rsm);background:#fff;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;color:var(--text);cursor:pointer;transition:var(--tr);}
         .btn-outline:hover{border-color:#7C3AED;color:#7C3AED;}
-        .btn-next,.btn-submit{padding:11px 28px;border:none;border-radius:var(--radius-sm);background:linear-gradient(135deg,#5B21B6,#7C3AED);color:#fff;font-size:14px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;}
+        .btn-next,.btn-submit{padding:11px 28px;border:none;border-radius:var(--rsm);background:linear-gradient(135deg,#5B21B6,#7C3AED);color:#fff;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:var(--tr);}
         .btn-next:hover,.btn-submit:hover{box-shadow:0 4px 14px rgba(124,58,237,.3);transform:translateY(-1px);}
-        .btn-next svg,.btn-submit svg{width:16px;height:16px;stroke:#fff;}
-
-        /* Bulk upload */
-        .bulk-instructions{background:#f9fafb;border-radius:var(--radius-sm);padding:24px;margin-bottom:24px;border:1px solid var(--border);}
-        .bulk-instructions h4{font-size:16px;font-weight:600;color:var(--text);margin-bottom:12px;}
-        .bulk-instructions ol{padding-left:20px;color:var(--text-light);line-height:1.7;margin-bottom:16px;}
-        .download-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:#7C3AED;color:#fff;border:none;border-radius:var(--radius-sm);font-size:14px;font-weight:500;cursor:pointer;}
-        .download-btn:hover{background:#5B21B6;}
-        .file-upload-area{margin:24px 0;border:2px dashed var(--border);border-radius:var(--radius-sm);padding:32px;text-align:center;background:#f9fafb;cursor:pointer;}
-        .file-upload-area:hover{border-color:#7C3AED;background:#EDE9FE;}
-        .file-upload-area svg{width:36px;height:36px;stroke:#7C3AED;margin-bottom:8px;}
-        .file-upload-area input{display:none;}
-        .preview-table{width:100%;border-collapse:collapse;margin-top:24px;}
-        .preview-table th{background:#EDE9FE;color:#5B21B6;font-weight:600;font-size:12px;padding:12px;text-align:left;}
-        .preview-table td{padding:12px;border-bottom:1px solid var(--border);font-size:13px;}
-        .bulk-actions{display:flex;justify-content:flex-end;gap:12px;margin-top:24px;}
-
-        /* Review */
-        .review-section{margin-bottom:24px;}
-        .review-section h4{font-size:13px;font-weight:700;text-transform:uppercase;color:#7C3AED;margin-bottom:16px;border-bottom:1px solid var(--border);padding-bottom:8px;}
-        .review-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-        .review-item label{font-size:12px;color:var(--text-light);font-weight:500;display:block;margin-bottom:3px;}
-        .review-item span{font-size:14px;color:var(--text);font-weight:500;}
-        .review-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;}
-        .dir-cred{background:#f9fafb;border-radius:8px;padding:10px 12px;margin-bottom:8px;border:1px solid #f3f4f6;}
-
-        @media(max-width:860px){.brand-panel{display:none;}.auth-card{max-width:500px;}}
-        @media(max-width:768px){.sidebar{transform:translateX(-100%);}.main{margin-left:0;}}
+        .btn-next svg,.btn-submit svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+        .add-cred-btn{display:flex;align-items:center;gap:8px;background:#f9fafb;border:1.5px dashed #d1d5db;border-radius:var(--rsm);padding:12px 16px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--tl);cursor:pointer;width:100%;margin-top:4px;transition:var(--tr);}
+        .add-cred-btn:hover{border-color:#7C3AED;color:#7C3AED;background:#EDE9FE;}
+        .add-cred-btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;}
+        .cred-block{background:#f9fafb;border-radius:var(--rsm);padding:20px;margin-bottom:16px;border:1px solid var(--border);position:relative;}
+        .cbt{font-size:13px;font-weight:700;color:#5B21B6;margin-bottom:16px;text-transform:uppercase;letter-spacing:.5px;}
+        .rm-cred{position:absolute;top:12px;right:12px;background:none;border:none;cursor:pointer;color:var(--red);font-size:22px;line-height:1;padding:2px 6px;border-radius:6px;transition:var(--tr);}
+        .rm-cred:hover{background:#fef2f2;}
+        .rev-sec{margin-bottom:24px;}
+        .rev-sec h4{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:#7C3AED;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+        .rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+        .rev-item label{font-size:12px;color:var(--tl);font-weight:500;display:block;margin-bottom:3px;}
+        .rev-item span{font-size:14px;color:var(--text);font-weight:500;}
+        .rev-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;}
+        .cred-rev{background:#f9fafb;border-radius:8px;padding:14px 16px;margin-bottom:10px;border:1px solid #ede9fe;}
+        .cred-link{display:inline-flex;align-items:center;gap:4px;font-size:12px;color:#7C3AED;font-weight:500;text-decoration:none;margin-top:6px;}
+        .cred-link:hover{text-decoration:underline;}
+        .cred-link svg{width:12px;height:12px;stroke:#7C3AED;fill:none;stroke-width:2;}
+        /* ─── BULK UPLOAD — fully responsive ─── */
+        .bulk-card{background:#fff;border-radius:var(--radius);border:1px solid var(--border);padding:28px;width:100%;box-sizing:border-box;overflow:hidden;}
+        .bulk-card h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--text);margin-bottom:6px;}
+        .bulk-card .sub{font-size:14px;color:var(--tl);margin-bottom:24px;}
+        .bulk-instr{background:#f9fafb;border-radius:var(--rsm);padding:20px 22px;margin-bottom:22px;border:1px solid var(--border);}
+        .bulk-instr h4{font-size:15px;font-weight:600;color:var(--text);margin-bottom:10px;}
+        .bulk-instr ol{padding-left:20px;color:var(--tl);line-height:1.8;margin-bottom:14px;font-size:14px;}
+        .dl-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:linear-gradient(135deg,#5B21B6,#7C3AED);color:#fff;border:none;border-radius:var(--rsm);font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;cursor:pointer;transition:var(--tr);}
+        .dl-btn:hover{box-shadow:0 4px 14px rgba(124,58,237,.3);transform:translateY(-1px);}
+        .dl-btn svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+        .file-drop{border:2px dashed #c4b5fd;border-radius:var(--radius);padding:40px 16px;text-align:center;background:#faf5ff;cursor:pointer;transition:border-color var(--tr),background var(--tr);margin-bottom:22px;width:100%;box-sizing:border-box;}
+        .file-drop:hover,.file-drop.drag-over{border-color:#7C3AED;background:#EDE9FE;}
+        .file-drop svg{width:40px;height:40px;stroke:#a78bfa;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px;}
+        .file-drop p{font-size:15px;font-weight:600;color:var(--text);margin-bottom:4px;}
+        .file-drop .hint{font-size:13px;color:var(--tl);}
+        /* preview box — fully contained, no overflow bleed */
+        #csvPreviewWrap{width:100%;box-sizing:border-box;}
+        .csv-preview-box{border:1px solid var(--border);border-radius:var(--rsm);width:100%;box-sizing:border-box;overflow:hidden;margin-bottom:16px;}
+        .csv-preview-head{padding:12px 16px;background:#f9fafb;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+        .csv-preview-head h4{font-size:14px;font-weight:600;color:var(--text);}
+        .csv-preview-head span{font-size:12px;color:var(--tl);}
+        /* THE KEY FIX: scroll wrapper must be width-constrained, never allowed to expand parent */
+        .preview-scroll{width:100%;overflow-x:auto;overflow-y:auto;max-height:260px;-webkit-overflow-scrolling:touch;}
+        .preview-scroll table{border-collapse:collapse;table-layout:auto;width:max-content;min-width:100%;}
+        .preview-scroll table th{background:#EDE9FE;color:#5B21B6;white-space:nowrap;padding:10px 14px;font-size:12px;font-weight:600;text-align:left;border-bottom:2px solid #c4b5fd;position:sticky;top:0;z-index:1;}
+        .preview-scroll table td{white-space:nowrap;padding:10px 14px;font-size:13px;border-bottom:1px solid #f3f4f6;}
+        .preview-scroll table tr:last-child td{border-bottom:none;}
+        /* action buttons — always 100% width row, buttons side by side */
+        .bulk-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px;width:100%;box-sizing:border-box;}
+        @media(max-width:768px){.sidebar{transform:translateX(-100%);}.main{margin-left:0;}.fgrid{grid-template-columns:1fr;}.rev-grid{grid-template-columns:1fr;}.upload-options{grid-template-columns:1fr;}.content{padding:16px;}.bulk-actions{flex-direction:column;}.bulk-actions .btn-outline,.bulk-actions .btn-submit{width:100%;justify-content:center;}}
     </style>
-    <!-- PapaParse for CSV -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 </head>
 <body>
 
-<!-- TOAST -->
-<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg">Success!</span></div>
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg">Done!</span></div>
 
 <!-- AUTH SCREEN -->
 <div id="authScreen">
-    <div class="auth-card">
-        <div class="brand-panel">
-            <div class="brand-logo"><div class="logo-icon"><img src="https://mma.prnewswire.com/media/2236447/nyu_mcsilver_blue.jpg?p=facebook" alt="Logo"></div><div class="brand-logo-text"><span>New York University</span><span>MC SILVER INSTITUTE</span></div></div>
-            <div class="brand-content"><h1>Admin Portal</h1><p>Secure access for faculty and administrators.</p></div>
-        </div>
-        <div class="form-panel">
-            <!-- LOGIN -->
-            <div class="form-page active" id="loginPage">
-                <div class="form-header"><div class="badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>Admin Login</div><h2>Welcome Back</h2><p>Sign in to MC Silver admin panel</p></div>
-                <form id="loginForm">
-                    <div class="form-group"><label>Email <span class="req">*</span></label><div class="input-wrap"><svg class="ii" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg><input type="email" id="loginEmail" placeholder="admin@nyu.edu"></div><div class="err-msg" id="loginEmailErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Valid email required</span></div></div>
-                    <div class="form-group"><label>Password <span class="req">*</span></label><div class="input-wrap"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><input type="password" id="loginPassword" placeholder="********"><button type="button" class="toggle-pw" onclick="togglePass('loginPassword',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div><div class="err-msg" id="loginPasswordErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Password required</span></div></div>
-                    <div class="form-group"><label>Captcha <span class="req">*</span></label><div class="captcha-row"><div class="captcha-display"><span class="captcha-text" id="loginCaptchaText"></span><button type="button" class="captcha-refresh" onclick="genCaptcha('login')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div><div class="form-group" style="margin-bottom:0"><div class="input-wrap"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="loginCaptchaInput" placeholder="Enter captcha"></div></div></div><div class="err-msg" id="loginCaptchaErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div></div>
-                    <div class="form-options"><label class="remember-me"><input type="checkbox"><span class="checkmark"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Remember me</span></label><button type="button" class="link-btn" onclick="showAuthPage('forgotPage')">Forgot password?</button></div>
-                    <button type="submit" class="btn-primary">Sign In</button>
-                </form>
-                <div class="form-footer">Don't have an account? <button type="button" class="link-btn" onclick="showAuthPage('signupPage')">Create Account</button></div>
-            </div>
-            <!-- SIGNUP (placeholder) -->
-            <div class="form-page" id="signupPage">
-                <button type="button" class="back-btn" onclick="showAuthPage('loginPage')"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>Back</button>
-                <div class="form-header"><div class="badge"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>New Admin</div><h2>Create Account</h2></div>
-                <form id="signupForm"><p class="form-footer">Signup form (demo) - use login instead</p></form>
-            </div>
-            <!-- FORGOT (placeholder) -->
-            <div class="form-page" id="forgotPage">
-                <button type="button" class="back-btn" onclick="showAuthPage('loginPage')"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>Back</button>
-                <div class="form-header"><div class="badge"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Recovery</div><h2>Reset Password</h2></div>
-                <form id="forgotForm"><p class="form-footer">Forgot form (demo) - use login instead</p></form>
-            </div>
-        </div>
+  <div class="auth-card">
+    <div class="brand-panel">
+      <div class="brand-logo">
+        <div class="logo-icon"><img src="https://mma.prnewswire.com/media/2236447/nyu_mcsilver_blue.jpg?p=facebook" alt="MC Silver"></div>
+        <div class="blt"><span>New York University</span><span>MC SILVER INSTITUTE</span></div>
+      </div>
+      <div class="brand-content"><h1>Admin Portal</h1><p>Secure access for faculty and administrators to manage programs and credentials.</p></div>
     </div>
+    <div class="form-panel">
+
+      <!-- LOGIN -->
+      <div class="form-page active" id="loginPage">
+        <div class="fhdr"><div class="badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>Admin Login</div><h2>Welcome Back</h2><p>Sign in to access the MC Silver Institute admin panel</p></div>
+        <form id="loginForm" novalidate>
+          <div class="fg"><label>Email <span class="req">*</span></label><div class="iw"><svg class="ic" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg><input type="email" id="loginEmail" placeholder="admin@nyu.edu"></div><div class="emsg" id="eLE"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Valid email required</span></div></div>
+          <div class="fg"><label>Password <span class="req">*</span></label><div class="iw"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><input type="password" id="loginPw" placeholder="Enter your password"><button type="button" class="tpw" onclick="togglePw('loginPw',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div><div class="emsg" id="eLP"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Password is required</span></div></div>
+          <div class="fg"><label>Captcha <span class="req">*</span></label><div class="cap-row"><div class="cap-disp"><span class="cap-text" id="loginCapTxt"></span><button type="button" class="cap-ref" onclick="genCap('login')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div><div class="fg" style="margin-bottom:0"><div class="iw"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="loginCapIn" placeholder="Enter captcha" autocomplete="off"></div></div></div><div class="emsg" id="eLC"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div></div>
+          <div class="fopts"><label class="remme"><input type="checkbox"><span class="ck"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Remember me</span></label><button type="button" class="lbtn" onclick="showAP('forgotPage')">Forgot password?</button></div>
+          <button type="submit" class="btn-p">Sign In</button>
+        </form>
+        <div class="ffoot">Don't have an account? <button type="button" class="lbtn" onclick="showAP('signupPage')">Create Account</button></div>
+      </div>
+
+      <!-- SIGNUP -->
+      <div class="form-page" id="signupPage">
+        <button type="button" class="back-btn" onclick="showAP('loginPage')"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>Back to Login</button>
+        <div class="fhdr"><div class="badge"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>New Admin</div><h2>Create Account</h2><p>Register for administrative access</p></div>
+        <form id="signupForm" novalidate>
+          <div class="fg"><label>Full Name <span class="req">*</span></label><div class="iw"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg><input type="text" id="suName" placeholder="Your full name"></div><div class="emsg" id="eSN"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Required</span></div></div>
+          <div class="fg"><label>Email <span class="req">*</span></label><div class="iw"><svg class="ic" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg><input type="email" id="suEmail" placeholder="admin@nyu.edu"></div><div class="emsg" id="eSE"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Valid email required</span></div></div>
+          <div class="fg"><label>Password <span class="req">*</span></label><div class="iw"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><input type="password" id="suPw" placeholder="Min 8 characters" oninput="checkStr(this.value)"><button type="button" class="tpw" onclick="togglePw('suPw',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div><div class="pw-str"><div class="sbar" id="sb1"></div><div class="sbar" id="sb2"></div><div class="sbar" id="sb3"></div><div class="sbar" id="sb4"></div></div><div class="slbl" id="slbl"></div><div class="emsg" id="eSP"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Min 8 characters</span></div></div>
+          <div class="fg"><label>Confirm Password <span class="req">*</span></label><div class="iw"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><input type="password" id="suCpw" placeholder="Re-enter password"><button type="button" class="tpw" onclick="togglePw('suCpw',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div><div class="emsg" id="eSCP"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Passwords do not match</span></div></div>
+          <div class="fg"><label>Captcha <span class="req">*</span></label><div class="cap-row"><div class="cap-disp"><span class="cap-text" id="signupCapTxt"></span><button type="button" class="cap-ref" onclick="genCap('signup')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div><div class="fg" style="margin-bottom:0"><div class="iw"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="suCapIn" placeholder="Enter captcha" autocomplete="off"></div></div></div><div class="emsg" id="eSCAP"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div></div>
+          <button type="submit" class="btn-p">Create Account</button>
+        </form>
+        <div class="ffoot">Already have an account? <button type="button" class="lbtn" onclick="showAP('loginPage')">Sign In</button></div>
+      </div>
+
+      <!-- FORGOT -->
+      <div class="form-page" id="forgotPage">
+        <button type="button" class="back-btn" onclick="showAP('loginPage')"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>Back to Login</button>
+        <div class="fhdr"><div class="badge"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Recovery</div><h2>Reset Password</h2><p>Enter your email and we'll send a reset link</p></div>
+        <form id="forgotForm" novalidate>
+          <div class="fg"><label>Email <span class="req">*</span></label><div class="iw"><svg class="ic" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg><input type="email" id="fgEmail" placeholder="admin@nyu.edu"></div><div class="emsg" id="eFGE"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Valid email required</span></div></div>
+          <div class="fg"><label>Captcha <span class="req">*</span></label><div class="cap-row"><div class="cap-disp"><span class="cap-text" id="forgotCapTxt"></span><button type="button" class="cap-ref" onclick="genCap('forgot')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div><div class="fg" style="margin-bottom:0"><div class="iw"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="fgCapIn" placeholder="Enter captcha" autocomplete="off"></div></div></div><div class="emsg" id="eFGC"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div></div>
+          <button type="submit" class="btn-p">Send Reset Link</button>
+        </form>
+        <div class="ffoot">Remembered it? <button type="button" class="lbtn" onclick="showAP('loginPage')">Sign In</button></div>
+      </div>
+
+    </div>
+  </div>
 </div>
 
-<!-- ADMIN APP with full sidebar and dashboard -->
+<!-- ADMIN APP -->
 <div id="adminApp">
-    <div class="sidebar">
-        <div class="sidebar-logo">
-            <div class="sidebar-logo-inner">
-                <div class="sidebar-logo-icon"><img src="https://mma.prnewswire.com/media/2236447/nyu_mcsilver_blue.jpg?p=facebook" alt="Logo"></div>
-                <div class="sidebar-logo-text"><span>MC Silver</span><span>INSTITUTE</span></div>
-            </div>
+  <div class="sidebar">
+    <div class="sl-logo"><div class="sl-logo-inner"><div class="sl-li"><img src="https://mma.prnewswire.com/media/2236447/nyu_mcsilver_blue.jpg?p=facebook" alt="Logo"></div><div class="sl-lt"><span>MC Silver</span><span>INSTITUTE</span></div></div></div>
+    <nav class="sl-nav">
+      <button class="nav-it active" id="navDash" onclick="showPanel('dashboard',this)"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>Dashboard</button>
+      <button class="nav-it" id="navUpload" onclick="showPanel('uploadData',this)"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>Upload Data</button>
+    </nav>
+    <div class="sl-foot"><div class="sl-user"><div class="avatar" id="userAvatar">A</div><div class="sl-ui"><span id="slName">Admin User</span><span id="slEmail">admin@nyu.edu</span></div><button class="lgout" onclick="logout()" title="Logout"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg></button></div></div>
+  </div>
+  <div class="main">
+    <div class="topbar"><h1 id="pageTitle">Dashboard</h1><span class="topbar-sub">MC Silver Institute Admin Portal</span></div>
+    <div class="content">
+
+      <!-- DASHBOARD -->
+      <div class="panel active" id="dashboardPanel">
+        <div class="stats-grid">
+          <div class="stat-card"><div class="si pu"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><div class="stat-num" id="stAwardees">145</div><div class="stat-lbl">Total Awardees</div></div>
+          <div class="stat-card"><div class="si gr"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><div class="stat-num" id="stCreds">267</div><div class="stat-lbl">Credentials Issued</div></div>
+          <div class="stat-card"><div class="si bl"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div class="stat-num" id="stInst">12</div><div class="stat-lbl">Institutions</div></div>
+          <div class="stat-card"><div class="si or"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="stat-num" id="stRecent">28</div><div class="stat-lbl">Added This Month</div></div>
         </div>
-        <nav class="sidebar-nav">
-            <button class="nav-item active" onclick="showPanel('dashboard',this)">
-                <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
-                Dashboard
-            </button>
-            <button class="nav-item" onclick="showPanel('uploadData',this)">
-                <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-                Upload Data
-            </button>
-        </nav>
-        <div class="sidebar-footer">
-            <div class="sidebar-user">
-                <div class="avatar" id="userAvatar">A</div>
-                <div class="sidebar-user-info">
-                    <span id="sidebarUserName">Admin User</span>
-                    <span id="sidebarUserEmail">admin@nyu.edu</span>
+        <div class="cw">
+          <div class="cwh"><h3>Recent Awardees</h3><button class="btn-sm" onclick="showPanel('uploadData',document.getElementById('navUpload'))">+ Add New</button></div>
+          <div id="dashBody">
+            <div style="overflow-x:auto;">
+              <table>
+                <thead><tr><th>Awardee</th><th>University</th><th>Credentials</th><th>Languages</th><th>Date Added</th></tr></thead>
+                <tbody>
+                  <tr><td style="font-weight:500">Dr. Sarah Chen</td><td style="color:var(--tl)">New York University</td><td><span class="pill active">3 credentials</span></td><td style="color:var(--tl)">English, Mandarin</td><td style="color:var(--tl);font-size:13px">Mar 15, 2026</td></tr>
+                  <tr><td style="font-weight:500">Prof. Michael Okonkwo</td><td style="color:var(--tl)">Columbia University</td><td><span class="pill active">2 credentials</span></td><td style="color:var(--tl)">English, Igbo</td><td style="color:var(--tl);font-size:13px">Mar 12, 2026</td></tr>
+                  <tr><td style="font-weight:500">Dr. Amina Al-Jaber</td><td style="color:var(--tl)">Georgetown University</td><td><span class="pill active">5 credentials</span></td><td style="color:var(--tl)">Arabic, English, French</td><td style="color:var(--tl);font-size:13px">Mar 10, 2026</td></tr>
+                  <tr><td style="font-weight:500">Prof. James O'Brien</td><td style="color:var(--tl)">Fordham University</td><td><span class="pill active">1 credential</span></td><td style="color:var(--tl)">English, Irish</td><td style="color:var(--tl);font-size:13px">Mar 8, 2026</td></tr>
+                  <tr><td style="font-weight:500">Dr. Priya Sharma</td><td style="color:var(--tl)">NYU Silver School</td><td><span class="pill active">4 credentials</span></td><td style="color:var(--tl)">English, Hindi, Gujarati</td><td style="color:var(--tl);font-size:13px">Mar 5, 2026</td></tr>
+                  <tr><td style="font-weight:500">Ms. Keiko Nakamura</td><td style="color:var(--tl)">Hunter College</td><td><span class="pill active">2 credentials</span></td><td style="color:var(--tl)">Japanese, English</td><td style="color:var(--tl);font-size:13px">Mar 3, 2026</td></tr>
+                  <tr><td style="font-weight:500">Dr. Carlos Rivera</td><td style="color:var(--tl)">Rutgers University</td><td><span class="pill active">3 credentials</span></td><td style="color:var(--tl)">Spanish, English, Portuguese</td><td style="color:var(--tl);font-size:13px">Feb 28, 2026</td></tr>
+                  <tr><td style="font-weight:500">Prof. Aisha Mensah</td><td style="color:var(--tl)">CUNY Graduate Center</td><td><span class="pill active">2 credentials</span></td><td style="color:var(--tl)">English, Twi, French</td><td style="color:var(--tl);font-size:13px">Feb 25, 2026</td></tr>
+                  <tr><td style="font-weight:500">Dr. Lena Fischer</td><td style="color:var(--tl)">New School University</td><td><span class="pill active">3 credentials</span></td><td style="color:var(--tl)">German, English</td><td style="color:var(--tl);font-size:13px">Feb 22, 2026</td></tr>
+                  <tr><td style="font-weight:500">Mr. David Osei-Bonsu</td><td style="color:var(--tl)">Baruch College</td><td><span class="pill active">1 credential</span></td><td style="color:var(--tl)">English, Akan</td><td style="color:var(--tl);font-size:13px">Feb 19, 2026</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UPLOAD DATA -->
+      <div class="panel" id="uploadDataPanel">
+
+        <!-- ─── MODE SELECTOR CARDS (always visible, side by side) ─── -->
+        <div class="upload-options">
+          <div class="option-card active" id="cardQuick" onclick="setMode('quick')">
+            <div class="oc-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+            <h3>Quick Add</h3>
+            <p>Manually enter awardee details through a guided step-by-step form including photo, credentials, languages, and skills.</p>
+          </div>
+          <div class="option-card" id="cardBulk" onclick="setMode('bulk')">
+            <div class="oc-icon"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+            <h3>Bulk Upload</h3>
+            <p>Upload multiple awardees at once using a CSV template file. Download the sample, fill it in, and upload.</p>
+          </div>
+        </div>
+
+        <!-- ─── QUICK ADD ─── -->
+        <div class="upload-section active" id="secQuick">
+          <div class="stepper">
+            <div class="sdot active" id="dot1"><div class="sc" id="sc1">1</div><div class="sinfo"><div class="sn">Step 1</div><div class="stitle">Awardee Details</div></div><div class="sline" id="sl1"></div></div>
+            <div class="sdot" id="dot2"><div class="sc" id="sc2">2</div><div class="sinfo"><div class="sn">Step 2</div><div class="stitle">Credential Details</div></div><div class="sline" id="sl2"></div></div>
+            <div class="sdot" id="dot3"><div class="sc" id="sc3">3</div><div class="sinfo"><div class="sn">Step 3</div><div class="stitle">Review &amp; Submit</div></div></div>
+          </div>
+
+          <!-- Step 1 -->
+          <div class="step-content active" id="scon1">
+            <div class="up-card">
+              <h3>Awardee Details</h3><p class="sub">Enter information about the award recipient</p>
+              <div class="fgrid">
+                <div class="field full">
+                  <label>Awardee Photo</label>
+                  <div style="display:flex;align-items:center;gap:20px;">
+                    <div class="photo-wrap" id="photoPreview" onclick="document.getElementById('photoFile').click()" title="Click to upload photo">
+                      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-4-4-4 4-4-4"/></svg>
+                    </div>
+                    <div><input type="file" id="photoFile" accept="image/*" style="display:none" onchange="previewPhoto(event)"><button type="button" class="btn-sm" onclick="document.getElementById('photoFile').click()">Choose Photo</button><span class="hint" style="display:block;margin-top:6px;">JPG, PNG up to 5MB</span></div>
+                  </div>
                 </div>
-                <button class="logout-btn" onclick="logout()" title="Logout">
-                    <svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
-                </button>
+                <div class="field"><label>Awardee Name <span class="req">*</span></label><input type="text" id="awName" placeholder="Full name"><span class="verr" id="awNameErr">Name is required</span></div>
+                <div class="field"><label>University <span class="req">*</span></label><input type="text" id="awUniv" placeholder="University or institution"><span class="verr" id="awUnivErr">University is required</span></div>
+                <div class="field full"><label>About <span class="req">*</span></label><textarea id="awAbout" rows="4" placeholder="Brief biography or description…"></textarea><span class="verr" id="awAboutErr">About section is required</span></div>
+                <div class="field"><label>Known Languages</label><div class="tags-wrap" id="langWrap" onclick="document.getElementById('langIn').focus()"><input type="text" class="tag-input" id="langIn" placeholder="Type and press Enter…"></div><span class="hint">Press Enter after each language</span></div>
+                <div class="field"><label>Known Skills</label><div class="tags-wrap" id="skillWrap" onclick="document.getElementById('skillIn').focus()"><input type="text" class="tag-input" id="skillIn" placeholder="Type and press Enter…"></div><span class="hint">Press Enter after each skill</span></div>
+              </div>
+              <div class="step-nav"><div></div><button class="btn-next" onclick="goStep(2)">Next: Credential Details<svg viewBox="0 0 24 24"><path d="M5 12h14"/><polyline points="12 5 19 12 12 19"/></svg></button></div>
             </div>
-        </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-content" id="scon2">
+            <div class="up-card">
+              <h3>Credential Details</h3><p class="sub">Add one or more credentials for this awardee</p>
+              <div id="credBlocks"></div>
+              <button type="button" class="add-cred-btn" onclick="addCred()"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>Add Another Credential</button>
+              <div class="step-nav"><button class="btn-outline" onclick="goStep(1)">← Back</button><button class="btn-next" onclick="goStep(3)">Review &amp; Submit<svg viewBox="0 0 24 24"><path d="M5 12h14"/><polyline points="12 5 19 12 12 19"/></svg></button></div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-content" id="scon3">
+            <div class="up-card">
+              <h3>Review &amp; Submit</h3><p class="sub">Check all details carefully before submitting</p>
+              <div id="reviewBody"></div>
+              <div class="step-nav"><button class="btn-outline" onclick="goStep(2)">← Back</button><button class="btn-submit" onclick="submitEntry()"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Submit to Directory</button></div>
+            </div>
+          </div>
+        </div><!-- /secQuick -->
+
+        <!-- ─── BULK UPLOAD ─── -->
+        <div class="upload-section" id="secBulk">
+          <div class="bulk-card">
+            <h3>Bulk Upload</h3><p class="sub">Upload multiple awardees at once via CSV</p>
+            <div class="bulk-instr">
+              <h4>📋 How to use Bulk Upload</h4>
+              <ol>
+                <li>Download the sample CSV template below.</li>
+                <li>Open it in Excel or Google Sheets and fill in your data.</li>
+                <li>Keep the header row intact — do not rename or remove columns.</li>
+                <li>Save as <strong>.csv</strong> and upload using the area below.</li>
+              </ol>
+              <button class="dl-btn" onclick="downloadSampleCSV()"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download Sample CSV</button>
+            </div>
+            <div class="file-drop" id="fileDrop" onclick="document.getElementById('csvFile').click()" ondragover="event.preventDefault();this.classList.add('drag-over')" ondragleave="this.classList.remove('drag-over')" ondrop="handleDrop(event)">
+              <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <p>Click to upload or drag &amp; drop</p>
+              <span class="hint">CSV files only</span>
+              <input type="file" id="csvFile" accept=".csv" style="display:none" onchange="handleCSV(event)">
+            </div>
+            <div id="csvPreviewWrap" style="display:none">
+              <div class="csv-preview-box">
+                <div class="csv-preview-head">
+                  <h4>Data Preview</h4>
+                  <span id="csvRowCountLabel"></span>
+                </div>
+                <div class="preview-scroll">
+                  <table id="csvTable"></table>
+                </div>
+              </div>
+              <div class="bulk-actions">
+                <button class="btn-outline" onclick="resetBulk()">Cancel</button>
+                <button class="btn-submit" onclick="submitBulk()"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Upload All</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- /secBulk -->
+
+      </div><!-- /uploadDataPanel -->
     </div>
-
-    <div class="main">
-        <div class="topbar">
-            <h1 id="pageTitle">Dashboard</h1>
-            <div class="topbar-actions"><span style="font-size:13px;">MC Silver Institute</span></div>
-        </div>
-        <div class="content">
-            <!-- DASHBOARD PANEL (sample data) -->
-            <div class="panel active" id="dashboardPanel">
-                <div class="stats-grid">
-                    <div class="stat-card purple"><div class="stat-icon purple"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><div class="stat-num">145</div><div class="stat-label">Total Awardees</div></div>
-                    <div class="stat-card green"><div class="stat-icon green"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><div class="stat-num">267</div><div class="stat-label">Credentials</div></div>
-                    <div class="stat-card blue"><div class="stat-icon blue"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div class="stat-num">12</div><div class="stat-label">Institutions</div></div>
-                    <div class="stat-card orange"><div class="stat-icon orange"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="stat-num">28</div><div class="stat-label">Added This Month</div></div>
-                </div>
-                <div class="recent-table-wrap">
-                    <div class="section-header"><h3>Recent Awardees</h3><button class="btn-sm outline" onclick="showPanel('uploadData',document.querySelectorAll('.nav-item')[1])">+ Add New</button></div>
-                    <table><thead><tr><th>Awardee</th><th>University</th><th>Credentials</th><th>Date</th></tr></thead><tbody>
-                        <tr><td>Dr. Sarah Chen</td><td>NYU</td><td><span class="pill active">3 credentials</span></td><td>Mar 15, 2026</td></tr>
-                        <tr><td>Prof. Michael Okonkwo</td><td>Columbia</td><td><span class="pill active">2 credentials</span></td><td>Mar 12, 2026</td></tr>
-                        <tr><td>Dr. Amina Al-Jaber</td><td>Georgetown</td><td><span class="pill active">5 credentials</span></td><td>Mar 10, 2026</td></tr>
-                        <tr><td>Prof. James O'Brien</td><td>Fordham</td><td><span class="pill active">1 credential</span></td><td>Mar 8, 2026</td></tr>
-                    </tbody></table>
-                </div>
-            </div>
-
-            <!-- UPLOAD DATA PANEL with two cards -->
-            <div class="panel" id="uploadDataPanel">
-                <!-- Two option cards -->
-                <div class="upload-options">
-                    <div class="option-card active" id="quickAddOption" onclick="selectUploadMode('quick')">
-                        <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                        <h3>Quick Add</h3>
-                        <p>Manually enter awardee details through a step-by-step form.</p>
-                    </div>
-                    <div class="option-card" id="bulkOption" onclick="selectUploadMode('bulk')">
-                        <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-                        <h3>Bulk Upload</h3>
-                        <p>Upload multiple awardees using a CSV template.</p>
-                    </div>
-                </div>
-
-                <!-- Quick Add Section (full 3-step form) -->
-                <div class="upload-section active" id="quickAddSection">
-                    <!-- Stepper -->
-                    <div class="stepper" id="stepper">
-                        <div class="step active" id="step-dot-1"><div class="step-circle">1</div><div class="step-info"><div class="s-num">Step 1</div><div class="s-name">Awardee Details</div></div><div class="step-line"></div></div>
-                        <div class="step" id="step-dot-2"><div class="step-circle">2</div><div class="step-info"><div class="s-num">Step 2</div><div class="s-name">Credential Details</div></div><div class="step-line"></div></div>
-                        <div class="step" id="step-dot-3"><div class="step-circle">3</div><div class="step-info"><div class="s-num">Step 3</div><div class="s-name">Review & Submit</div></div></div>
-                    </div>
-                    <!-- Step 1: Awardee Details with photo -->
-                    <div class="step-content active" id="stepContent1">
-                        <div class="upload-card">
-                            <h3>Awardee Details</h3>
-                            <p class="sub">Enter information about the award recipient</p>
-                            <div class="form-grid">
-                                <!-- Photo upload -->
-                                <div class="field full">
-                                    <label>Awardee Photo</label>
-                                    <div style="display:flex; align-items:center; gap:20px;">
-                                        <div style="width:80px;height:80px;border-radius:10px;background:#f3f0ff;border:1.5px dashed var(--border);display:flex;align-items:center;justify-content:center;overflow:hidden;" id="photoPreview">
-                                            <svg width="30" height="30" viewBox="0 0 24 24" stroke="#9ca3af" fill="none"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-4-4-4 4-4-4"/></svg>
-                                        </div>
-                                        <div>
-                                            <input type="file" id="awardeePhoto" accept="image/*" style="display:none;" onchange="previewPhoto(event)">
-                                            <button type="button" class="btn-sm outline" onclick="document.getElementById('awardeePhoto').click()">Choose File</button>
-                                            <span class="hint" style="margin-left:12px;">JPG, PNG</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Name -->
-                                <div class="field">
-                                    <label>Awardee Name <span class="req">*</span></label>
-                                    <input type="text" id="awardeeName" placeholder="Full name">
-                                    <span class="verr" id="awardeeNameErr">Required</span>
-                                </div>
-                                <!-- University -->
-                                <div class="field">
-                                    <label>University <span class="req">*</span></label>
-                                    <input type="text" id="awardeeUniv" placeholder="University">
-                                    <span class="verr" id="awardeeUnivErr">Required</span>
-                                </div>
-                                <!-- About -->
-                                <div class="field full">
-                                    <label>About <span class="req">*</span></label>
-                                    <textarea id="awardeeAbout" rows="4" placeholder="Bio..."></textarea>
-                                    <span class="verr" id="awardeeAboutErr">Required</span>
-                                </div>
-                                <!-- Languages tags -->
-                                <div class="field">
-                                    <label>Languages</label>
-                                    <div class="tags-input-wrap" id="langTagsWrap" onclick="document.getElementById('langInput').focus()">
-                                        <input type="text" class="tags-input" id="langInput" placeholder="Type and press Enter...">
-                                    </div>
-                                </div>
-                                <!-- Skills tags -->
-                                <div class="field">
-                                    <label>Skills</label>
-                                    <div class="tags-input-wrap" id="skillTagsWrap" onclick="document.getElementById('skillInput').focus()">
-                                        <input type="text" class="tags-input" id="skillInput" placeholder="Type and press Enter...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="step-nav">
-                                <div></div>
-                                <button class="btn-next" onclick="goToStep(2)">Next: Credential Details <svg viewBox="0 0 24 24"><path d="M5 12h14"/><polyline points="12 5 19 12 12 19"/></svg></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Step 2: Credential Details (simplified but functional) -->
-                    <div class="step-content" id="stepContent2">
-                        <div class="upload-card">
-                            <h3>Credential Details</h3>
-                            <p class="sub">Add one or more credentials for this awardee</p>
-                            <div id="credentialBlocks"></div>
-                            <button class="add-cred-btn" onclick="addCredBlock()">
-                                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-                                Add Another Credential
-                            </button>
-                            <div class="step-nav">
-                                <button class="btn-outline" onclick="goToStep(1)">← Back</button>
-                                <button class="btn-next" onclick="goToStep(3)">Review & Submit <svg viewBox="0 0 24 24"><path d="M5 12h14"/><polyline points="12 5 19 12 12 19"/></svg></button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Step 3: Review & Submit -->
-                    <div class="step-content" id="stepContent3">
-                        <div class="upload-card">
-                            <h3>Review & Submit</h3>
-                            <p class="sub">Please review all details before submitting</p>
-                            <div id="reviewContent" class="review-section" style="min-height:100px; background:#f9fafb; border-radius:8px; padding:16px;">Review summary will appear here.</div>
-                            <div class="step-nav">
-                                <button class="btn-outline" onclick="goToStep(2)">← Back</button>
-                                <button class="btn-submit" onclick="submitQuickAdd()">
-                                    <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-                                    Submit to Directory
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bulk Upload Section (full CSV workflow) -->
-                <div class="upload-section" id="bulkSection">
-                    <div class="bulk-instructions">
-                        <h4>📋 Instructions for Bulk Upload</h4>
-                        <ol>
-                            <li>Download the sample CSV file using the button below.</li>
-                            <li>Open the file in Excel or any spreadsheet editor.</li>
-                            <li><strong>Do not change the header row.</strong> Fill in your data starting from row 2.</li>
-                            <li>Columns include: Full Name, University, About, Languages (pipe-separated), Skills (pipe-separated), Photo URL (optional), Credential Name, Issuer, Credential ID, Link, Credential Skills (pipe-separated).</li>
-                            <li>For multiple credentials per person, duplicate the awardee rows with same name but different credential details.</li>
-                            <li>Save the file as CSV and upload it below.</li>
-                        </ol>
-                        <button class="download-btn" onclick="downloadSampleCSV()">
-                            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                            Download Sample CSV
-                        </button>
-                    </div>
-
-                    <div class="file-upload-area" onclick="document.getElementById('csvFile').click()">
-                        <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-                        <p><strong>Click to upload your CSV file</strong></p>
-                        <span style="font-size:13px; color:var(--text-light);">or drag and drop</span>
-                        <input type="file" id="csvFile" accept=".csv" onchange="handleCSVUpload(event)" style="display:none;">
-                    </div>
-
-                    <!-- Preview Table -->
-                    <div id="csvPreviewContainer" style="display:none; margin-top:24px;">
-                        <h4 style="margin-bottom:12px;">Preview (first 5 rows)</h4>
-                        <table class="preview-table" id="csvPreview"></table>
-                        <div class="bulk-actions">
-                            <button class="btn-outline" onclick="resetBulkUpload()">Cancel</button>
-                            <button class="btn-submit" onclick="submitBulkUpload()">Upload to Directory</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  </div>
 </div>
 
 <script>
-// ============ FIXED CAPTCHA (always 5 chars) ============
-let captchas = {login:'', signup:'', forgot:''};
-function genCaptcha(type) {
-    const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz23456789';
-    let code = '';
-    for (let i = 0; i < 5; i++) code += chars[Math.floor(Math.random() * chars.length)];
-    captchas[type] = code;
-    const el = document.getElementById(type + 'CaptchaText');
-    if (el) el.textContent = code;
-}
-genCaptcha('login'); genCaptcha('signup'); genCaptcha('forgot');
+var caps={login:'',signup:'',forgot:''};
+var directory=[];
+var credCount=0;
+var awLangs=[];
+var awSkills=[];
+var photoDataUrl=null;
+var csvData=[];
 
-// ============ AUTH HELPERS ============
-function togglePass(id, btn) {
-    const inp = document.getElementById(id);
-    inp.type = inp.type === 'password' ? 'text' : 'password';
-    btn.innerHTML = inp.type === 'password' 
-        ? '<svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>'
-        : '<svg viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>';
+function toast(msg,type){
+  type=type||'info';
+  var t=document.getElementById('toast');
+  var ico={success:'<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>',error:'<svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>',info:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>'};
+  t.className='toast '+type;
+  t.innerHTML=(ico[type]||ico.info)+'<span>'+msg+'</span>';
+  t.classList.add('show');
+  clearTimeout(t._t);
+  t._t=setTimeout(function(){t.classList.remove('show');},3500);
 }
-function showAuthPage(page) {
-    document.querySelectorAll('.form-page').forEach(p => p.classList.remove('active'));
-    document.getElementById(page).classList.add('active');
+
+function genCap(type){
+  var ch='ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz23456789';
+  var code='';
+  for(var i=0;i<5;i++) code+=ch[Math.floor(Math.random()*ch.length)];
+  caps[type]=code;
+  var el=document.getElementById(type+'CapTxt');
+  if(el) el.textContent=code;
 }
-function toast(msg, type='success') {
-    const t = document.getElementById('toast');
-    t.className = 'toast ' + type;
-    document.getElementById('toastMsg').textContent = msg;
-    t.classList.add('show');
-    setTimeout(() => t.classList.remove('show'), 3000);
+genCap('login'); genCap('signup'); genCap('forgot');
+
+function showAP(id){
+  document.querySelectorAll('.form-page').forEach(function(p){p.classList.remove('active');});
+  setTimeout(function(){document.getElementById(id).classList.add('active');},30);
+  document.querySelectorAll('.emsg').forEach(function(e){e.classList.remove('show');});
+  document.querySelectorAll('#authScreen input').forEach(function(i){i.classList.remove('ferr');});
 }
-document.getElementById('loginForm').addEventListener('submit', (e) => {
-    e.preventDefault();
-    // simple login: just hide auth and show admin
-    document.getElementById('authScreen').style.display = 'none';
-    document.getElementById('adminApp').classList.add('visible');
-    document.getElementById('sidebarUserName').textContent = 'Admin User';
-    document.getElementById('sidebarUserEmail').textContent = document.getElementById('loginEmail').value || 'admin@nyu.edu';
-    document.getElementById('userAvatar').textContent = 'A';
+function togglePw(id,btn){
+  var inp=document.getElementById(id);
+  var show=inp.type==='password';
+  inp.type=show?'text':'password';
+  btn.innerHTML=show?'<svg viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>':'<svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>';
+}
+function isEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
+function showE(id,msg){var el=document.getElementById(id);if(!el)return;if(msg){var s=el.querySelector('span');if(s)s.textContent=msg;}el.classList.add('show');}
+function checkStr(val){
+  var s=0;
+  if(val.length>=8)s++;if(/[A-Z]/.test(val))s++;if(/[0-9]/.test(val))s++;if(/[^A-Za-z0-9]/.test(val))s++;
+  var cls=['','weak','medium','strong','vstrong'];var lbl=['','Weak','Medium','Strong','Very Strong'];
+  for(var i=1;i<=4;i++){var b=document.getElementById('sb'+i);if(b){b.className='sbar';if(i<=s)b.classList.add(cls[s]);}}
+  var l=document.getElementById('slbl');if(l)l.textContent=val.length>0?lbl[s]:'';
+}
+
+document.getElementById('loginForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  document.querySelectorAll('#loginForm .emsg').forEach(function(x){x.classList.remove('show');});
+  var ok=true;
+  var email=document.getElementById('loginEmail').value.trim();
+  var pw=document.getElementById('loginPw').value.trim();
+  var cap=document.getElementById('loginCapIn').value.trim();
+  if(!email||!isEmail(email)){showE('eLE');document.getElementById('loginEmail').classList.add('ferr');ok=false;}
+  if(!pw){showE('eLP');document.getElementById('loginPw').classList.add('ferr');ok=false;}
+  if(!cap){showE('eLC','Enter the captcha');ok=false;}
+  else if(cap!==caps.login){showE('eLC','Captcha does not match');genCap('login');ok=false;}
+  if(!ok)return;
+  var name=email.split('@')[0].replace(/[._]/g,' ').replace(/\b\w/g,function(c){return c.toUpperCase();});
+  document.getElementById('slName').textContent=name;
+  document.getElementById('slEmail').textContent=email;
+  document.getElementById('userAvatar').textContent=name.charAt(0).toUpperCase();
+  document.getElementById('authScreen').style.display='none';
+  document.getElementById('adminApp').classList.add('visible');
+  updateStats(); genCap('login');
 });
 
-// ============ LOGOUT ============
-function logout() {
-    document.getElementById('adminApp').classList.remove('visible');
-    document.getElementById('authScreen').style.display = '';
-    showAuthPage('loginPage');
-    genCaptcha('login');
+document.getElementById('signupForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  document.querySelectorAll('#signupForm .emsg').forEach(function(x){x.classList.remove('show');});
+  var ok=true;
+  var nm=document.getElementById('suName').value.trim();
+  var em=document.getElementById('suEmail').value.trim();
+  var pw=document.getElementById('suPw').value.trim();
+  var cpw=document.getElementById('suCpw').value.trim();
+  var cap=document.getElementById('suCapIn').value.trim();
+  if(!nm){showE('eSN');document.getElementById('suName').classList.add('ferr');ok=false;}
+  if(!em||!isEmail(em)){showE('eSE');document.getElementById('suEmail').classList.add('ferr');ok=false;}
+  if(!pw||pw.length<8){showE('eSP');document.getElementById('suPw').classList.add('ferr');ok=false;}
+  if(!cpw||pw!==cpw){showE('eSCP');document.getElementById('suCpw').classList.add('ferr');ok=false;}
+  if(!cap){showE('eSCAP','Enter the captcha');ok=false;}
+  else if(cap!==caps.signup){showE('eSCAP','Captcha does not match');genCap('signup');ok=false;}
+  if(!ok)return;
+  toast('Account created! Please sign in.','success');
+  genCap('signup');this.reset();checkStr('');
+  setTimeout(function(){showAP('loginPage');},1500);
+});
+
+document.getElementById('forgotForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  document.querySelectorAll('#forgotForm .emsg').forEach(function(x){x.classList.remove('show');});
+  var ok=true;
+  var em=document.getElementById('fgEmail').value.trim();
+  var cap=document.getElementById('fgCapIn').value.trim();
+  if(!em||!isEmail(em)){showE('eFGE');document.getElementById('fgEmail').classList.add('ferr');ok=false;}
+  if(!cap){showE('eFGC','Enter the captcha');ok=false;}
+  else if(cap!==caps.forgot){showE('eFGC','Captcha does not match');genCap('forgot');ok=false;}
+  if(!ok)return;
+  toast('Reset link sent!','success');genCap('forgot');this.reset();
+});
+
+function logout(){
+  document.getElementById('adminApp').classList.remove('visible');
+  document.getElementById('authScreen').style.display='';
+  showAP('loginPage');genCap('login');
+  document.getElementById('loginForm').reset();
 }
 
-// ============ SIDEBAR NAV ============
-function showPanel(name, btn) {
-    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-    document.getElementById(name + 'Panel').classList.add('active');
-    if (btn) btn.classList.add('active');
-    document.getElementById('pageTitle').textContent = name === 'dashboard' ? 'Dashboard' : 'Upload Data';
+function showPanel(name,btn){
+  document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active');});
+  document.querySelectorAll('.nav-it').forEach(function(n){n.classList.remove('active');});
+  document.getElementById(name+'Panel').classList.add('active');
+  if(btn)btn.classList.add('active');
+  var titles={dashboard:'Dashboard',uploadData:'Upload Data'};
+  document.getElementById('pageTitle').textContent=titles[name]||name;
+  if(name==='uploadData')resetQuickForm();
+  if(name==='dashboard')updateStats();
 }
 
-// ============ UPLOAD MODE ============
-function selectUploadMode(mode) {
-    document.querySelectorAll('.option-card').forEach(c => c.classList.remove('active'));
-    document.getElementById(mode === 'quick' ? 'quickAddOption' : 'bulkOption').classList.add('active');
-    document.querySelectorAll('.upload-section').forEach(s => s.classList.remove('active'));
-    document.getElementById(mode === 'quick' ? 'quickAddSection' : 'bulkSection').classList.add('active');
+/* ─── MODE SWITCHER ─── */
+function setMode(mode){
+  document.getElementById('cardQuick').classList.toggle('active',mode==='quick');
+  document.getElementById('cardBulk').classList.toggle('active',mode==='bulk');
+  document.getElementById('secQuick').classList.toggle('active',mode==='quick');
+  document.getElementById('secBulk').classList.toggle('active',mode==='bulk');
 }
 
-// ============ QUICK ADD (full implementation) ============
-let langs = [], skills = [], photoDataUrl = null, credBlockCount = 0;
-let credSkillsArrays = {}; // store skills per credential block
+/* ─── PHOTO ─── */
+function previewPhoto(e){
+  var file=e.target.files[0];if(!file)return;
+  var r=new FileReader();
+  r.onload=function(ev){photoDataUrl=ev.target.result;document.getElementById('photoPreview').innerHTML='<img src="'+ev.target.result+'">';};
+  r.readAsDataURL(file);
+}
 
-// Photo preview
-function previewPhoto(e) {
-    const file = e.target.files[0];
-    if (file) {
-        const r = new FileReader();
-        r.onload = ev => { 
-            photoDataUrl = ev.target.result; 
-            document.getElementById('photoPreview').innerHTML = `<img src="${ev.target.result}" style="width:100%;height:100%;object-fit:cover;">`; 
-        };
-        r.readAsDataURL(file);
+/* ─── TAG INPUTS ─── */
+function setupTag(inputId,arr,wrapId){
+  document.getElementById(inputId).addEventListener('keydown',function(e){
+    if(e.key==='Enter'||e.key===','){
+      e.preventDefault();
+      var val=this.value.trim();
+      if(val&&arr.indexOf(val)===-1){arr.push(val);renderTags(arr,wrapId,inputId);}
+      this.value='';
     }
+  });
+}
+function renderTags(arr,wrapId,inputId){
+  var wrap=document.getElementById(wrapId);var input=document.getElementById(inputId);
+  if(!wrap||!input)return;
+  wrap.innerHTML='';
+  arr.forEach(function(t,i){
+    var span=document.createElement('span');span.className='tag';
+    span.innerHTML=esc(t)+'<button type="button" onclick="rmATag(\''+wrapId+'\',\''+inputId+'\','+i+')">×</button>';
+    wrap.appendChild(span);
+  });
+  wrap.appendChild(input);
+}
+function rmATag(wrapId,inputId,i){
+  if(wrapId==='langWrap'){awLangs.splice(i,1);renderTags(awLangs,'langWrap','langIn');}
+  else{awSkills.splice(i,1);renderTags(awSkills,'skillWrap','skillIn');}
+}
+setupTag('langIn',awLangs,'langWrap');
+setupTag('skillIn',awSkills,'skillWrap');
+
+/* ─── CRED BLOCKS ─── */
+function addCred(){
+  var id=++credCount;
+  window['cs_'+id]=[];
+  var div=document.createElement('div');div.className='cred-block';div.id='cb_'+id;
+  div.innerHTML='<div class="cbt">Credential #'+id+'</div>'+(id>1?'<button class="rm-cred" type="button" onclick="rmCred('+id+')">×</button>':'')+
+    '<div class="fgrid">'+
+    '<div class="field"><label>Credential Name <span class="req">*</span></label><input type="text" id="cn_'+id+'" placeholder="e.g. Certificate in Social Work"><span class="verr" id="cnE_'+id+'">Required</span></div>'+
+    '<div class="field"><label>Issued By <span class="req">*</span></label><input type="text" id="ci_'+id+'" placeholder="Issuing institution"><span class="verr" id="ciE_'+id+'">Required</span></div>'+
+    '<div class="field"><label>Credential ID <span class="req">*</span></label><input type="text" id="cid_'+id+'" placeholder="e.g. NYU-2024-001"><span class="verr" id="cidE_'+id+'">Required</span></div>'+
+    '<div class="field"><label>Credential Link</label><input type="url" id="cl_'+id+'" placeholder="https://verify.example.com/..."></div>'+
+    '<div class="field full"><label>Skills for this Credential</label><div class="tags-wrap" id="csw_'+id+'" onclick="document.getElementById(\'csi_'+id+'\').focus()"><input type="text" class="tag-input" id="csi_'+id+'" placeholder="Type and press Enter…"></div><span class="hint">Press Enter after each skill</span></div>'+
+    '</div>';
+  document.getElementById('credBlocks').appendChild(div);
+  (function(bid){
+    document.getElementById('csi_'+bid).addEventListener('keydown',function(e){
+      if(e.key==='Enter'||e.key===','){
+        e.preventDefault();var val=this.value.trim();var arr=window['cs_'+bid];
+        if(val&&arr.indexOf(val)===-1){arr.push(val);renderCredSkills(bid);}
+        this.value='';
+      }
+    });
+  })(id);
+}
+function renderCredSkills(id){
+  var arr=window['cs_'+id]||[];var wrap=document.getElementById('csw_'+id);var inp=document.getElementById('csi_'+id);
+  if(!wrap||!inp)return;
+  wrap.innerHTML='';
+  arr.forEach(function(t,i){var span=document.createElement('span');span.className='tag';span.innerHTML=esc(t)+'<button type="button" onclick="rmCS('+id+','+i+')">×</button>';wrap.appendChild(span);});
+  wrap.appendChild(inp);
+}
+function rmCS(id,i){window['cs_'+id].splice(i,1);renderCredSkills(id);}
+function rmCred(id){var el=document.getElementById('cb_'+id);if(el)el.remove();}
+
+/* ─── STEPPER ─── */
+function goStep(step){
+  if(step===2&&!valStep1())return;
+  if(step===3&&!valStep2())return;
+  if(step===3)buildReview();
+  for(var i=1;i<=3;i++){
+    document.getElementById('scon'+i).classList.remove('active');
+    var dot=document.getElementById('dot'+i);var circ=document.getElementById('sc'+i);
+    dot.classList.remove('active','done');
+    if(i<step){dot.classList.add('done');circ.innerHTML='<svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:#fff;fill:none;stroke-width:3"><polyline points="20 6 9 17 4 12"/></svg>';}
+    else{circ.textContent=i;if(i===step)dot.classList.add('active');}
+  }
+  document.getElementById('scon'+step).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
 }
 
-// Tags setup for languages and skills
-function setupTags(inputId, arr, wrapId) {
-    document.getElementById(inputId).addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ',') {
-            e.preventDefault();
-            const val = this.value.trim();
-            if (val && !arr.includes(val)) { arr.push(val); renderTags(arr, wrapId, inputId); }
-            this.value = '';
-        }
+function valStep1(){
+  var ok=true;
+  [{id:'awName',err:'awNameErr'},{id:'awUniv',err:'awUnivErr'},{id:'awAbout',err:'awAboutErr'}].forEach(function(f){
+    var el=document.getElementById(f.id);var err=document.getElementById(f.err);
+    el.classList.remove('inv');err.classList.remove('show');
+    if(!el.value.trim()){el.classList.add('inv');err.classList.add('show');ok=false;}
+  });
+  if(!ok)toast('Please fill all required fields.','error');
+  return ok;
+}
+function valStep2(){
+  var blocks=document.querySelectorAll('.cred-block');
+  if(!blocks.length){toast('Please add at least one credential.','error');return false;}
+  var ok=true;
+  blocks.forEach(function(b){
+    var id=b.id.replace('cb_','');
+    [['cn_'+id,'cnE_'+id],['ci_'+id,'ciE_'+id],['cid_'+id,'cidE_'+id]].forEach(function(pair){
+      var el=document.getElementById(pair[0]);var err=document.getElementById(pair[1]);
+      if(el&&err){el.classList.remove('inv');err.classList.remove('show');if(!el.value.trim()){el.classList.add('inv');err.classList.add('show');ok=false;}}
     });
-}
-function renderTags(arr, wrapId, inputId) {
-    const wrap = document.getElementById(wrapId);
-    const input = document.getElementById(inputId);
-    wrap.innerHTML = '';
-    arr.forEach((t, i) => {
-        const tag = document.createElement('span');
-        tag.className = 'tag';
-        tag.innerHTML = t + `<button type="button" onclick="removeTag(${i},'${wrapId}','${inputId}')">×</button>`;
-        wrap.appendChild(tag);
-    });
-    wrap.appendChild(input);
-}
-function removeTag(i, wrapId, inputId) {
-    if (wrapId === 'langTagsWrap') { langs.splice(i,1); renderTags(langs, 'langTagsWrap', 'langInput'); }
-    else { skills.splice(i,1); renderTags(skills, 'skillTagsWrap', 'skillInput'); }
-}
-setupTags('langInput', langs, 'langTagsWrap');
-setupTags('skillInput', skills, 'skillTagsWrap');
-
-// Credential blocks
-function addCredBlock() {
-    const id = ++credBlockCount;
-    credSkillsArrays[id] = [];
-    const div = document.createElement('div');
-    div.className = 'cred-form-block';
-    div.id = 'credBlock' + id;
-    div.innerHTML = `
-        <div class="cred-block-title">Credential #${id}</div>
-        ${id>1?`<button class="remove-cred" type="button" onclick="removeCredBlock(${id})">×</button>`:''}
-        <div class="form-grid">
-            <div class="field"><label>Credential Name *</label><input type="text" id="credName${id}" placeholder="e.g. Certificate"><span class="verr" id="credNameErr${id}">Required</span></div>
-            <div class="field"><label>Issued By *</label><input type="text" id="credIssuer${id}" placeholder="Institution"><span class="verr" id="credIssuerErr${id}">Required</span></div>
-            <div class="field"><label>Credential ID *</label><input type="text" id="credId${id}" placeholder="e.g. NYU-001"><span class="verr" id="credIdErr${id}">Required</span></div>
-            <div class="field"><label>Credential Link</label><input type="url" id="credLink${id}" placeholder="https://..."></div>
-            <div class="field full">
-                <label>Skills for this Credential</label>
-                <div class="tags-input-wrap" id="credSkillWrap${id}" onclick="document.getElementById('credSkillInput${id}').focus()">
-                    <input type="text" class="tags-input" id="credSkillInput${id}" placeholder="Type and press Enter...">
-                </div>
-            </div>
-        </div>`;
-    document.getElementById('credentialBlocks').appendChild(div);
-    // Setup tags for this block's skills
-    const input = document.getElementById('credSkillInput'+id);
-    input.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ',') {
-            e.preventDefault();
-            const val = this.value.trim();
-            if (val && !credSkillsArrays[id].includes(val)) {
-                credSkillsArrays[id].push(val);
-                renderCredSkillTags(id);
-            }
-            this.value = '';
-        }
-    });
-}
-function renderCredSkillTags(id) {
-    const wrap = document.getElementById('credSkillWrap'+id);
-    const input = document.getElementById('credSkillInput'+id);
-    wrap.innerHTML = '';
-    credSkillsArrays[id].forEach((t, i) => {
-        const tag = document.createElement('span');
-        tag.className = 'tag';
-        tag.innerHTML = t + `<button type="button" onclick="removeCredSkill(${id},${i})">×</button>`;
-        wrap.appendChild(tag);
-    });
-    wrap.appendChild(input);
-}
-function removeCredSkill(blockId, i) {
-    credSkillsArrays[blockId].splice(i,1);
-    renderCredSkillTags(blockId);
-}
-function removeCredBlock(id) {
-    const el = document.getElementById('credBlock'+id);
-    if (el) el.remove();
-    delete credSkillsArrays[id];
+  });
+  if(!ok)toast('Please fill all required credential fields.','error');
+  return ok;
 }
 
-// Step navigation
-function goToStep(step) {
-    if (step === 2 && !validateStep1()) return;
-    if (step === 3 && !validateStep2()) return;
-    document.querySelectorAll('.step-content').forEach(s => s.classList.remove('active'));
-    document.getElementById('stepContent' + step).classList.add('active');
-    document.querySelectorAll('.step').forEach((s,i) => {
-        s.classList.remove('active','done');
-        if (i+1 < step) s.classList.add('done');
-        else if (i+1 === step) s.classList.add('active');
-    });
-    if (step === 3) buildReview();
-}
-function validateStep1() {
-    let ok = true;
-    const n = document.getElementById('awardeeName').value.trim();
-    const u = document.getElementById('awardeeUniv').value.trim();
-    const a = document.getElementById('awardeeAbout').value.trim();
-    document.querySelectorAll('#stepContent1 .verr').forEach(v => v.classList.remove('show'));
-    document.querySelectorAll('#stepContent1 input, #stepContent1 textarea').forEach(el => el.classList.remove('invalid'));
-    if (!n) { document.getElementById('awardeeNameErr').classList.add('show'); document.getElementById('awardeeName').classList.add('invalid'); ok=false; }
-    if (!u) { document.getElementById('awardeeUnivErr').classList.add('show'); document.getElementById('awardeeUniv').classList.add('invalid'); ok=false; }
-    if (!a) { document.getElementById('awardeeAboutErr').classList.add('show'); document.getElementById('awardeeAbout').classList.add('invalid'); ok=false; }
-    return ok;
-}
-function validateStep2() {
-    const blocks = document.querySelectorAll('.cred-form-block');
-    if (blocks.length === 0) { toast('Please add at least one credential', 'error'); return false; }
-    let ok = true;
-    blocks.forEach(block => {
-        const id = block.id.replace('credBlock','');
-        const name = document.getElementById('credName'+id);
-        const issuer = document.getElementById('credIssuer'+id);
-        const credId = document.getElementById('credId'+id);
-        const nameErr = document.getElementById('credNameErr'+id);
-        const issuerErr = document.getElementById('credIssuerErr'+id);
-        const credIdErr = document.getElementById('credIdErr'+id);
-        [name, issuer, credId].forEach(el => el.classList.remove('invalid'));
-        [nameErr, issuerErr, credIdErr].forEach(err => err.classList.remove('show'));
-        if (!name.value.trim()) { name.classList.add('invalid'); nameErr.classList.add('show'); ok=false; }
-        if (!issuer.value.trim()) { issuer.classList.add('invalid'); issuerErr.classList.add('show'); ok=false; }
-        if (!credId.value.trim()) { credId.classList.add('invalid'); credIdErr.classList.add('show'); ok=false; }
-    });
-    return ok;
-}
-function buildReview() {
-    const name = document.getElementById('awardeeName').value.trim();
-    const univ = document.getElementById('awardeeUniv').value.trim();
-    const about = document.getElementById('awardeeAbout').value.trim();
-    let html = `<div><strong>Name:</strong> ${name}<br><strong>University:</strong> ${univ}<br><strong>About:</strong> ${about}<br>`;
-    if (langs.length) html += `<strong>Languages:</strong> ${langs.join(', ')}<br>`;
-    if (skills.length) html += `<strong>Skills:</strong> ${skills.join(', ')}<br>`;
-    html += '<br><strong>Credentials:</strong><ul>';
-    document.querySelectorAll('.cred-form-block').forEach(block => {
-        const id = block.id.replace('credBlock','');
-        const cname = document.getElementById('credName'+id).value.trim();
-        const issuer = document.getElementById('credIssuer'+id).value.trim();
-        const cid = document.getElementById('credId'+id).value.trim();
-        const link = document.getElementById('credLink'+id).value.trim();
-        html += `<li>${cname} (${issuer}) - ID: ${cid} ${link ? '<a href="'+link+'" target="_blank">🔗</a>' : ''}`;
-        if (credSkillsArrays[id] && credSkillsArrays[id].length) html += ` <small>skills: ${credSkillsArrays[id].join(', ')}</small>`;
-        html += '</li>';
-    });
-    html += '</ul></div>';
-    document.getElementById('reviewContent').innerHTML = html;
-}
-function submitQuickAdd() {
-    toast('Quick add submitted (demo)','success');
-    // Reset form
-    langs = []; skills = []; photoDataUrl = null; credBlockCount = 0; credSkillsArrays = {};
-    document.getElementById('awardeeName').value = '';
-    document.getElementById('awardeeUniv').value = '';
-    document.getElementById('awardeeAbout').value = '';
-    document.getElementById('photoPreview').innerHTML = `<svg width="30" height="30" viewBox="0 0 24 24" stroke="#9ca3af" fill="none"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-4-4-4 4-4-4"/></svg>`;
-    renderTags(langs, 'langTagsWrap', 'langInput');
-    renderTags(skills, 'skillTagsWrap', 'skillInput');
-    document.getElementById('credentialBlocks').innerHTML = '';
-    goToStep(1);
-    addCredBlock(); // start with one block
+function buildReview(){
+  var name=document.getElementById('awName').value.trim();
+  var univ=document.getElementById('awUniv').value.trim();
+  var about=document.getElementById('awAbout').value.trim();
+  var html='<div class="rev-sec"><h4>Awardee Information</h4><div class="rev-grid">'+
+    '<div class="rev-item"><label>Name</label><span>'+esc(name)+'</span></div>'+
+    '<div class="rev-item"><label>University</label><span>'+esc(univ)+'</span></div>'+
+    '<div class="rev-item" style="grid-column:1/-1"><label>About</label><span>'+esc(about)+'</span></div>';
+  if(awLangs.length) html+='<div class="rev-item"><label>Languages</label><div class="rev-tags">'+awLangs.map(function(l){return '<span class="tag">'+esc(l)+'</span>';}).join('')+'</div></div>';
+  if(awSkills.length) html+='<div class="rev-item"><label>Skills</label><div class="rev-tags">'+awSkills.map(function(s){return '<span class="tag">'+esc(s)+'</span>';}).join('')+'</div></div>';
+  if(photoDataUrl) html+='<div class="rev-item"><label>Photo</label><img src="'+photoDataUrl+'" style="width:60px;height:60px;border-radius:8px;object-fit:cover;margin-top:4px;display:block;"></div>';
+  html+='</div></div>';
+  var blocks=document.querySelectorAll('.cred-block');
+  html+='<div class="rev-sec"><h4>Credentials ('+blocks.length+')</h4>';
+  blocks.forEach(function(b){
+    var id=b.id.replace('cb_','');
+    var cname=document.getElementById('cn_'+id).value.trim();
+    var issuer=document.getElementById('ci_'+id).value.trim();
+    var cid=document.getElementById('cid_'+id).value.trim();
+    var link=document.getElementById('cl_'+id).value.trim();
+    var csk=window['cs_'+id]||[];
+    html+='<div class="cred-rev"><div class="rev-grid">'+
+      '<div class="rev-item"><label>Credential Name</label><span>'+esc(cname)+'</span></div>'+
+      '<div class="rev-item"><label>Issued By</label><span>'+esc(issuer)+'</span></div>'+
+      '<div class="rev-item"><label>Credential ID</label><span style="font-family:monospace;font-size:13px">'+esc(cid)+'</span></div>';
+    if(link) html+='<div class="rev-item"><label>Link</label><a class="cred-link" href="'+esc(link)+'" target="_blank"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>View</a></div>';
+    html+='</div>';
+    if(csk.length) html+='<div style="margin-top:10px"><label style="font-size:11px;color:var(--tl);font-weight:500;display:block;margin-bottom:6px">Skills</label><div class="rev-tags">'+csk.map(function(s){return '<span class="tag">'+esc(s)+'</span>';}).join('')+'</div></div>';
+    html+='</div>';
+  });
+  html+='</div>';
+  document.getElementById('reviewBody').innerHTML=html;
 }
 
-// ============ BULK UPLOAD ============
-let parsedCSVData = [];
-function downloadSampleCSV() {
-    const headers = ['Full Name','University','About','Languages','Skills','Photo URL','Credential Name','Issuer','Credential ID','Link','Credential Skills'];
-    const sampleRows = [
-        ['Dr. Sarah Chen','New York University','Expert in social work','English;Mandarin','Research;Public Policy','https://example.com/photo1.jpg','Certificate in Social Work','NYU Silver','SW-2026-001','https://verify.nyu.edu/001','Social Work;Community Outreach'],
-        ['Prof. Michael Okonkwo','Columbia University','Specialist in urban studies','English;Igbo','Urban Planning;GIS','','Urban Policy Certificate','Columbia SIPA','UP-45','','Policy Analysis;Data Visualization']
-    ];
-    let csvContent = headers.join(',') + '\n';
-    sampleRows.forEach(r => csvContent += r.map(c => `"${c}"`).join(',') + '\n');
-    const blob = new Blob([csvContent], {type: 'text/csv'});
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a'); a.href = url; a.download = 'sample_awardees.csv'; a.click();
-    URL.revokeObjectURL(url);
-}
-function handleCSVUpload(e) {
-    const file = e.target.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (ev) => {
-        Papa.parse(ev.target.result, { header: true, skipEmptyLines: true, complete: (res) => {
-            parsedCSVData = res.data;
-            const preview = parsedCSVData.slice(0,5);
-            if (preview.length) {
-                let html = '<tr>' + Object.keys(preview[0]).map(h => `<th>${h}</th>`).join('') + '</tr>';
-                preview.forEach(r => html += '<tr>' + Object.values(r).map(v => `<td>${v || ''}</td>`).join('') + '</tr>');
-                document.getElementById('csvPreview').innerHTML = html;
-                document.getElementById('csvPreviewContainer').style.display = 'block';
-            }
-        }});
-    };
-    reader.readAsText(file);
-}
-function resetBulkUpload() {
-    parsedCSVData = [];
-    document.getElementById('csvPreviewContainer').style.display = 'none';
-    document.getElementById('csvFile').value = '';
-}
-function submitBulkUpload() {
-    if (!parsedCSVData.length) { toast('No data to upload', 'error'); return; }
-    toast(`Uploaded ${parsedCSVData.length} awardees (demo)`, 'success');
-    resetBulkUpload();
+function submitEntry(){
+  var name=document.getElementById('awName').value.trim();
+  var univ=document.getElementById('awUniv').value.trim();
+  var about=document.getElementById('awAbout').value.trim();
+  var creds=[];
+  document.querySelectorAll('.cred-block').forEach(function(b){
+    var id=b.id.replace('cb_','');
+    creds.push({name:document.getElementById('cn_'+id).value.trim(),issuer:document.getElementById('ci_'+id).value.trim(),credId:document.getElementById('cid_'+id).value.trim(),link:document.getElementById('cl_'+id).value.trim(),skills:(window['cs_'+id]||[]).slice()});
+  });
+  directory.push({id:Date.now(),name:name,univ:univ,about:about,langs:awLangs.slice(),skills:awSkills.slice(),photo:photoDataUrl,credentials:creds,date:new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})});
+  toast('Awardee added successfully!','success');
+  updateStats();
+  setTimeout(function(){resetQuickForm();showPanel('dashboard',document.getElementById('navDash'));},1200);
 }
 
-// Initialize: add first credential block
-addCredBlock();
+function resetQuickForm(){
+  credCount=0;awLangs.length=0;awSkills.length=0;photoDataUrl=null;
+  ['awName','awUniv','awAbout'].forEach(function(id){var el=document.getElementById(id);if(el){el.value='';el.classList.remove('inv');}});
+  document.querySelectorAll('#scon1 .verr').forEach(function(e){e.classList.remove('show');});
+  document.getElementById('photoPreview').innerHTML='<svg viewBox="0 0 24 24" style="width:28px;height:28px;stroke:#a78bfa;fill:none;stroke-width:1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-4-4-4 4-4-4"/></svg>';
+  var pf=document.getElementById('photoFile');if(pf)pf.value='';
+  renderTags(awLangs,'langWrap','langIn');renderTags(awSkills,'skillWrap','skillIn');
+  document.getElementById('credBlocks').innerHTML='';
+  for(var i=1;i<=3;i++){
+    document.getElementById('scon'+i).classList.remove('active');
+    var dot=document.getElementById('dot'+i);var circ=document.getElementById('sc'+i);
+    dot.classList.remove('active','done');if(circ)circ.textContent=i;
+  }
+  document.getElementById('dot1').classList.add('active');
+  document.getElementById('scon1').classList.add('active');
+  addCred();
+  setMode('quick');
+}
+
+function updateStats(){
+  // Only update stat numbers if we have real directory data
+  if(directory.length){
+    document.getElementById('stAwardees').textContent=145+directory.length;
+    var tc=directory.reduce(function(s,a){return s+a.credentials.length;},0);
+    document.getElementById('stCreds').textContent=267+tc;
+    var u={};directory.forEach(function(a){u[a.univ.toLowerCase().trim()]=1;});
+    document.getElementById('stInst').textContent=12+Object.keys(u).length;
+    document.getElementById('stRecent').textContent=28+directory.length;
+    // Prepend new entries to the table
+    var tbody=document.querySelector('#dashBody tbody');
+    if(tbody){
+      var a=directory[directory.length-1];
+      var tr=document.createElement('tr');
+      tr.innerHTML='<td style="font-weight:500">'+esc(a.name)+'</td><td style="color:var(--tl)">'+esc(a.univ)+'</td><td><span class="pill gr">'+a.credentials.length+' credential'+(a.credentials.length!==1?'s':'')+'</span></td><td style="color:var(--tl)">'+a.langs.join(', ')+'</td><td style="color:var(--tl);font-size:13px">'+a.date+'</td>';
+      tbody.insertBefore(tr,tbody.firstChild);
+    }
+  }
+}
+
+/* ─── BULK ─── */
+function downloadSampleCSV(){
+  var headers=['Full Name','University','About','Languages','Skills','Photo URL','Credential Name','Issuer','Credential ID','Link','Credential Skills'];
+  var rows=[['Dr. Sarah Chen','New York University','Expert in social work','English;Mandarin','Research;Public Policy','https://example.com/photo1.jpg','Certificate in Social Work','NYU Silver','SW-2026-001','https://verify.nyu.edu/001','Social Work;Community Outreach'],['Prof. Michael Okonkwo','Columbia University','Specialist in urban studies','English;Igbo','Urban Planning;GIS','','Urban Policy Certificate','Columbia SIPA','UP-45','','Policy Analysis;Data Visualization']];
+  var csv=headers.join(',')+'\n';
+  rows.forEach(function(r){csv+=r.map(function(c){return '"'+c+'"';}).join(',')+'\n';});
+  var blob=new Blob([csv],{type:'text/csv'});var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download='sample_awardees.csv';a.click();URL.revokeObjectURL(url);
+}
+function handleDrop(e){e.preventDefault();document.getElementById('fileDrop').classList.remove('drag-over');var file=e.dataTransfer.files[0];if(file)parseCSVFile(file);}
+function handleCSV(e){var file=e.target.files[0];if(file)parseCSVFile(file);}
+function parseCSVFile(file){
+  var reader=new FileReader();
+  reader.onload=function(ev){
+    Papa.parse(ev.target.result,{header:true,skipEmptyLines:true,complete:function(res){
+      csvData=res.data;
+      if(!csvData.length){toast('No data found in CSV.','error');return;}
+      var preview=csvData.slice(0,8);
+      var cols=Object.keys(preview[0]);
+      var html='<thead><tr>'+cols.map(function(h){return '<th>'+esc(h)+'</th>';}).join('')+'</tr></thead><tbody>';
+      preview.forEach(function(row){html+='<tr>'+cols.map(function(c){return '<td>'+esc(row[c]||'')+'</td>';}).join('')+'</tr>';});
+      html+='</tbody>';
+      document.getElementById('csvTable').innerHTML=html;
+      var lbl=document.getElementById('csvRowCountLabel');
+      if(lbl) lbl.textContent='(showing '+preview.length+' of '+csvData.length+' rows)';
+      document.getElementById('csvPreviewWrap').style.display='block';
+    }});
+  };
+  reader.readAsText(file);
+}
+function resetBulk(){csvData=[];document.getElementById('csvPreviewWrap').style.display='none';var f=document.getElementById('csvFile');if(f)f.value='';}
+function submitBulk(){if(!csvData.length){toast('No data to upload.','error');return;}toast('Uploaded '+csvData.length+' awardee(s) successfully!','success');resetBulk();}
+
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+resetQuickForm();
 </script>
 </body>
 </html>
