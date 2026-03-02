@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NYU McSilver Institute — Credentials Showcase</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --purple: #7C3AED;
+    --purple-dark: #5B21B6;
+    --purple-light: #A78BFA;
+    --purple-pale: #F5F3FF;
+    --purple-hero: #8B5CF6;
+    --white: #FFFFFF;
+    --black: #1E1B2E;
+    --gray-100: #F9F8FF;
+    --gray-200: #EDE9FE;
+    --gray-400: #A0AEC0;
+    --gray-600: #6B7280;
+    --gray-800: #374151;
+    --text: #1F2937;
+    --border: #E5E7EB;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--white);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+
+
+  /* ── NAVBAR ── */
+  .navbar {
+    background: var(--white);
+    border-bottom: 3px solid var(--purple);
+    padding: 0 48px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .navbar-inner {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .logo-img {
+    height: 52px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+
+
+  /* ── HERO / BANNER ── */
+  .hero {
+    background: var(--purple);
+    padding: 56px 48px 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #6D28D9 0%, #7C3AED 50%, #8B5CF6 100%);
+    opacity: 0.6;
+  }
+
+  .hero-inner { position: relative; z-index: 1; }
+
+  .hero-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 14px;
+  }
+
+  .hero h1 {
+    font-family: 'Merriweather', serif;
+    font-size: clamp(28px, 4vw, 52px);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    color: rgba(255,255,255,0.8);
+    max-width: 560px;
+    margin: 0 auto 36px;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  /* Search */
+  .search-wrap {
+    max-width: 600px;
+    margin: 28px auto 0;
+  }
+
+  .search-row {
+    display: flex;
+    background: #fff;
+    border: none;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+  }
+
+  .search-row input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: var(--text);
+    background: transparent;
+  }
+  .search-row input::placeholder { color: var(--gray-400); }
+
+  .search-row button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--black);
+    border: none;
+    color: #fff;
+    padding: 15px 28px;
+    cursor: pointer;
+    transition: background 0.2s;
+    flex-shrink: 0;
+  }
+  .search-row button:hover { background: var(--purple-dark); }
+
+  .search-hint {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 10px;
+    letter-spacing: 0.03em;
+  }
+
+  /* ── SEARCH FILTER TABS ── */
+  .search-filter-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: -1px;
+    justify-content: center;
+  }
+  .s-tab {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.12);
+    border: 1.5px solid rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.7);
+    padding: 9px 24px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-bottom: none;
+  }
+  .s-tab:first-child { border-radius: 3px 0 0 0; }
+  .s-tab:last-child  { border-radius: 0 3px 0 0; border-left: none; }
+  .s-tab:hover { background: rgba(255,255,255,0.2); color: #fff; }
+  .s-tab.active {
+    background: #fff;
+    border-color: #fff;
+    color: var(--purple);
+  }
+
+  /* ── BREADCRUMB ── */
+  .breadcrumb {
+    background: var(--gray-100);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 48px;
+    font-size: 12px;
+    color: var(--gray-600);
+  }
+  .breadcrumb a { color: var(--purple); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb .sep { margin: 0 6px; }
+
+  /* ── MAIN ── */
+  .main {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 48px 40px 80px;
+  }
+
+  .dir-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .dir-title {
+    font-family: 'Merriweather', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .dir-count {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--purple);
+    background: var(--purple-pale);
+    border: 1px solid rgba(87,6,140,0.15);
+    padding: 5px 14px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── MEMBER CARDS ── */
+  .member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .member-card {
+    display: flex;
+    align-items: stretch;
+    background: var(--white);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    animation: fadeUp 0.4s ease both;
+    position: relative;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .member-card:nth-child(1) { animation-delay: 0.04s; }
+  .member-card:nth-child(2) { animation-delay: 0.09s; }
+  .member-card:nth-child(3) { animation-delay: 0.14s; }
+  .member-card:nth-child(4) { animation-delay: 0.19s; }
+  .member-card:nth-child(5) { animation-delay: 0.24s; }
+  .member-card:nth-child(6) { animation-delay: 0.29s; }
+
+  .member-card:hover { background: var(--gray-100); box-shadow: inset 3px 0 0 var(--purple); }
+
+  /* Left col */
+  .card-left-col {
+    width: 220px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--border);
+    background: var(--gray-100);
+  }
+
+  .card-photo-wrap {
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: var(--gray-200);
+  }
+  .card-photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform 0.4s;
+  }
+  .member-card:hover .card-photo-wrap img { transform: scale(1.03); }
+  .card-photo-wrap .initials-box {
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Merriweather', serif;
+    font-size: 60px; font-weight: 700;
+    color: var(--purple); background: var(--purple-pale);
+  }
+
+  .card-name-block {
+    padding: 16px 18px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .card-name {
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--purple);
+    line-height: 1.3;
+    margin-bottom: 2px;
+  }
+
+  .card-location {
+    font-size: 12px;
+    color: var(--gray-600);
+    margin-bottom: 6px;
+  }
+
+  .card-id-pill {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gray-600);
+    background: var(--gray-200);
+    border: 1px solid var(--border);
+    padding: 3px 8px;
+    display: inline-block;
+    margin-bottom: 12px;
+    width: fit-content;
+  }
+
+  .btn-view-creds {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: var(--purple);
+    border: none;
+    color: #fff;
+    padding: 10px 0;
+    cursor: pointer;
+    width: 100%;
+    margin-top: auto;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .btn-view-creds:hover { background: var(--purple-dark); }
+  .btn-view-creds .arr { transition: transform 0.2s; }
+  .btn-view-creds:hover .arr { transform: translateX(3px); }
+
+  /* Right col */
+  .card-body {
+    flex: 1;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .card-section-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 7px;
+    margin-top: 18px;
+  }
+  .card-section-label:first-child { margin-top: 0; }
+
+  .card-bio {
+    font-size: 13.5px;
+    line-height: 1.75;
+    color: var(--gray-800);
+    font-weight: 400;
+  }
+
+  .card-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+  .skill-chip {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 4px 14px;
+    background: var(--white);
+    color: var(--gray-800);
+    border: 1px solid var(--border);
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .member-card:hover .skill-chip {
+    background: var(--purple-pale);
+    color: var(--purple);
+    border-color: rgba(87,6,140,0.2);
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 80px 0;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-style: italic;
+    color: var(--gray-400);
+  }
+
+  /* ── DETAIL PAGE ── */
+  #detail-page {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    background: var(--white);
+    overflow-y: auto;
+    animation: slideIn 0.3s ease;
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(30px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+  .detail-topbar {
+    background: var(--white);
+    border-bottom: 3px solid var(--purple);
+    padding: 0 48px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .back-btn {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: transparent;
+    border: 1.5px solid var(--purple);
+    color: var(--purple);
+    padding: 8px 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: all 0.2s;
+  }
+  .back-btn:hover { background: var(--purple); color: #fff; }
+
+
+
+  /* Profile strip */
+  .detail-profile-strip {
+    background: var(--gray-100);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .detail-profile-inner {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .detail-photo-col {
+    width: 260px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: var(--gray-200);
+  }
+  .detail-photo-col img {
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: top center;
+    display: block;
+  }
+  .detail-photo-col .initials-box {
+    width: 100%; height: 100%; min-height: 280px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Merriweather', serif;
+    font-size: 80px; font-weight: 700;
+    color: var(--purple); background: var(--purple-pale);
+  }
+
+  .detail-profile-info {
+    flex: 1;
+    padding: 40px 48px;
+  }
+
+  .detail-name {
+    font-family: 'Merriweather', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  .detail-dept {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--purple);
+    margin-bottom: 24px;
+  }
+
+  .detail-meta-row {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  .d-meta .d-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gray-600);
+    display: block;
+    margin-bottom: 3px;
+  }
+  .d-meta .d-val {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text);
+  }
+
+  .detail-id-badge {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gray-600);
+    background: var(--gray-200);
+    border: 1px solid var(--border);
+    display: inline-block;
+    padding: 5px 14px;
+  }
+
+  /* Detail body */
+  .detail-body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 48px 48px 80px;
+  }
+
+  .section-block { margin-bottom: 44px; }
+
+  .section-heading {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--purple);
+    display: inline-block;
+  }
+
+  .bio-text {
+    font-size: 14.5px;
+    line-height: 1.8;
+    color: var(--gray-800);
+    max-width: 720px;
+  }
+
+  .detail-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .d-tag {
+    font-size: 13px;
+    padding: 6px 16px;
+    background: var(--white);
+    color: var(--gray-800);
+    border: 1px solid var(--border);
+    transition: background 0.15s;
+  }
+  .d-tag:hover { background: var(--purple-pale); color: var(--purple); border-color: rgba(87,6,140,0.2); }
+
+  /* Cred search */
+  .cred-search-row {
+    display: flex;
+    background: var(--white);
+    border: 1px solid var(--border);
+    max-width: 500px;
+    margin-bottom: 24px;
+    transition: border-color 0.2s;
+  }
+  .cred-search-row:focus-within { border-color: var(--purple); }
+  .cred-search-row input {
+    flex: 1; border: none; outline: none;
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px; color: var(--text);
+    padding: 11px 16px;
+  }
+  .cred-search-row input::placeholder { color: var(--gray-400); }
+  .cred-search-row .s-icon {
+    padding: 11px 14px; color: var(--gray-400);
+    font-size: 15px; display: flex; align-items: center;
+  }
+
+  /* Cred cards */
+  .creds-list { display: flex; flex-direction: column; gap: 0; }
+
+  .cred-card {
+    display: flex;
+    align-items: center;
+    padding: 24px 28px;
+    gap: 28px;
+    border: 1px solid var(--border);
+    border-top: none;
+    background: var(--white);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    transition: background 0.2s, box-shadow 0.25s, transform 0.2s;
+    animation: fadeUp 0.35s ease both;
+  }
+  .cred-card:first-child { border-top: 1px solid var(--border); }
+  .cred-card:hover {
+    background: var(--purple-pale);
+    box-shadow: 0 4px 20px rgba(124,58,237,0.12), inset 3px 0 0 var(--purple);
+    transform: translateX(2px);
+  }
+
+  /* Certificate image thumbnail */
+  .cred-thumb {
+    width: 130px;
+    height: 90px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--gray-100);
+    border-radius: 2px;
+  }
+  .cred-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+    filter: opacity(0.82) saturate(0.9);
+  }
+  .cred-card:hover .cred-thumb img {
+    transform: scale(1.06);
+    filter: opacity(1) saturate(1);
+  }
+
+
+  .cred-info { flex: 1; }
+  .cred-name {
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+    line-height: 1.35;
+  }
+  .cred-meta {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--gray-600);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .cred-meta span { color: var(--purple); }
+
+  .cred-skills { display: flex; flex-wrap: wrap; gap: 7px; }
+  .cred-skill-tag {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 13px;
+    background: var(--purple-pale);
+    border: 1px solid rgba(124,58,237,0.18);
+    color: var(--purple);
+    border-radius: 2px;
+  }
+
+  .btn-cert, a.btn-cert {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--purple);
+    border: none;
+    color: #fff;
+    padding: 11px 22px;
+    cursor: pointer;
+    flex-shrink: 0;
+    white-space: nowrap;
+    transition: all 0.2s;
+    border-radius: 2px;
+  }
+  .btn-cert:hover, a.btn-cert:hover { background: var(--purple-dark); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(124,58,237,0.3); text-decoration: none; }
+
+
+  /* ── MEMBER SOCIAL ICONS ── */
+  .member-social {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .member-social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid rgba(124,58,237,0.25);
+    border-radius: 4px;
+    color: var(--purple);
+    text-decoration: none;
+    transition: all 0.2s;
+    background: var(--purple-pale);
+  }
+  .member-social-icon svg { width: 14px; height: 14px; }
+  .member-social-icon:hover {
+    background: var(--purple);
+    border-color: var(--purple);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(124,58,237,0.3);
+  }
+  /* Also show social icons on detail profile page */
+  .detail-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+  .detail-social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid rgba(124,58,237,0.25);
+    border-radius: 4px;
+    color: var(--purple);
+    text-decoration: none;
+    transition: all 0.2s;
+    background: var(--white);
+  }
+  .detail-social-icon svg { width: 16px; height: 16px; }
+  .detail-social-icon:hover {
+    background: var(--purple);
+    border-color: var(--purple);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(124,58,237,0.3);
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: #0a0a0a;
+    color: rgba(255,255,255,0.75);
+    padding: 52px 56px 36px;
+  }
+
+
+
+  /* Bottom row: logo | contact info | social */
+  .footer-bottom {
+    max-width: 1140px;
+    margin: 0 auto 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-logo-col { flex-shrink: 0; }
+
+  .footer-contact-col {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: rgba(255,255,255,0.65);
+  }
+
+  .footer-social-col {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 1.5px solid rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .social-icon svg { width: 16px; height: 16px; }
+  .social-icon:hover {
+    border-color: #fff;
+    color: #fff;
+    background: rgba(255,255,255,0.08);
+  }
+
+  .footer-legal {
+    max-width: 1140px;
+    margin: 28px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.7;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .navbar, .detail-topbar { padding: 0 20px; }
+    .hero { padding: 40px 20px 48px; }
+    .main { padding: 32px 16px 60px; }
+    .card-left-col { width: 160px; }
+    .card-photo-wrap { width: 160px; height: 160px; }
+    .card-body { padding: 18px 20px; }
+    .detail-profile-strip { flex-direction: column; }
+    .detail-photo-col { width: 100%; height: 200px; }
+    .detail-profile-info { padding: 24px; }
+    .detail-body { padding: 28px 20px 60px; }
+
+    .top-bar { padding: 8px 20px; }
+    .breadcrumb { padding: 10px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ─────────────── MAIN PAGE ─────────────── -->
+<div id="main-page">
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar" style="padding:0 40px;">
+    <div class="navbar-inner">
+      <a href="#" class="logo-wrap">
+        <img src="https://mma.prnewswire.com/media/2236447/nyu_mcsilver_blue.jpg?p=facebook" alt="NYU McSilver Institute" class="logo-img">
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">NYU McSilver Institute — Official Awardee Directory</div>
+      <h1>Celebrating Excellence &amp; Achievement</h1>
+      <p class="hero-desc">Discover and verify the credentials of our distinguished community members — innovators, leaders, and scholars.</p>
+      <div class="search-wrap">
+        <div class="search-filter-tabs">
+          <button class="s-tab active" data-filter="name" onclick="setSearchFilter('name', this)">Awardee Name</button>
+          <button class="s-tab" data-filter="credid" onclick="setSearchFilter('credid', this)">Credential ID</button>
+        </div>
+        <div class="search-row">
+          <input type="text" id="main-search" placeholder="Search by awardee name…" oninput="filterMembers()" />
+          <button onclick="filterMembers()">Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="#">Home</a>
+    <span class="sep">/</span>
+    <a href="#">Directory</a>
+    <span class="sep">/</span>
+    Distinguished Awardees
+  </div>
+
+  <!-- Directory -->
+  <main class="main">
+    <div class="dir-header">
+      <h2 class="dir-title">Distinguished Awardees</h2>
+      <span class="dir-count" id="dir-count">6 Members</span>
+    </div>
+    <div class="member-list" id="member-list"></div>
+    <div class="no-results" id="no-results" style="display:none;">No awardees found matching your search.</div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+
+    <!-- Bottom row: logo | address + phone + email | social icons -->
+    <div class="footer-bottom">
+      <div class="footer-logo-col">
+        <div style="background:#fff; padding:8px 14px; display:inline-flex; align-items:center;">
+          <img src="https://mma.prnewswire.com/media/2236447/nyu_mcsilver_blue.jpg?p=facebook"
+               alt="NYU McSilver Institute"
+               style="height:48px; width:auto; display:block;">
+        </div>
+      </div>
+
+      <div class="footer-contact-col">
+        <span>708 Broadway, Fifth Floor&nbsp;|&nbsp;New York, NY 10003</span>
+        <span>(212) 998-4300</span>
+        <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="711c1202181d071403311f08045f141504">[email&#160;protected]</a></span>
+      </div>
+
+      <div class="footer-social-col">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/NYUMcSilver/" target="_blank" aria-label="Facebook" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <!-- X / Twitter -->
+        <a href="https://x.com/nyumcsilver" target="_blank" aria-label="X (Twitter)" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/nyumcsilver/" target="_blank" aria-label="Instagram" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/c/McSilverInstitute" target="_blank" aria-label="YouTube" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/company/nyu-mcsilver-institute" target="_blank" aria-label="LinkedIn" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Legal text -->
+    <div class="footer-legal">
+      New York University is committed to maintaining an environment that encourages and fosters respect for individual values and appropriate conduct among all persons. In all University spaces—physical and digital—programming, activities, and events are carried out in accordance with applicable law as well as University policy, which includes but is not limited to its Non-Discrimination and Anti-Harassment Policy.
+    </div>
+  </footer>
+
+</div>
+
+<!-- ─────────────── DETAIL PAGE ─────────────── -->
+<div id="detail-page">
+  <div class="detail-topbar">
+    <button class="back-btn" onclick="goBack()">← Back to Directory</button>
+
+  </div>
+  <div id="detail-content"></div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  const members = [
+    {
+      id: 'NX-2024-0001',
+      name: 'Samata Pattinson',
+      initials: 'SP',
+      photo: 'https://randomuser.me/api/portraits/women/44.jpg',
+      location: 'Cambridge, England',
+      dob: 'March 14, 1978',
+      department: 'Business & Law',
+      bio: 'Experienced PMP with a background in law and 27+ years growing revenue for a Massachusetts-based electronics firm. Seeking to leverage leadership expertise as project manager for Paylocity.',
+      languages: ['English', 'German'],
+      skills: ['PMP', 'Project Management', 'Agile', 'Scrum'],
+      social: { linkedin: 'https://linkedin.com/', twitter: 'https://x.com/', instagram: 'https://instagram.com/' },
+      credentials: [
+        { id:'CRED-2022-EL01', name:'Certificate of Exemplary Leadership', year:'2022', issuer:'NYU McSilver Institute', skills:['Patience','Empathy','Dependability','Active Listening'], icon:'🏆' },
+        { id:'CRED-2021-PM02', name:'Advanced Project Management', year:'2021', issuer:'NYU McSilver Institute', skills:['Planning','Risk Management','Stakeholder Engagement'], icon:'📋' }
+      ]
+    },
+    {
+      id: 'NX-2024-0002',
+      name: 'Niyato Se Bla',
+      initials: 'NB',
+      photo: 'https://randomuser.me/api/portraits/men/32.jpg',
+      location: 'Hong Kong',
+      dob: 'July 8, 1990',
+      department: 'Design & Technology',
+      bio: "Product designer who helps data become accessible for everyone. Blends prototyping, interaction, and visual design to make people's lives just a little easier. Avid gamer and aspiring cat communicator.",
+      languages: ['Chinese', 'English', 'Japanese'],
+      skills: ['Product Design', 'UX Research', 'Graphic Design'],
+      social: { linkedin: 'https://linkedin.com/', twitter: 'https://x.com/', instagram: 'https://instagram.com/' },
+      credentials: [
+        { id:'CRED-2023-UX01', name:'Excellence in User Experience Design', year:'2023', issuer:'NYU McSilver Institute', skills:['Prototyping','User Research','Design Systems'], icon:'🎨' }
+      ]
+    },
+    {
+      id: 'NX-2024-0003',
+      name: 'Elena Vasquez',
+      initials: 'EV',
+      photo: 'https://randomuser.me/api/portraits/women/65.jpg',
+      location: 'Madrid, Spain',
+      dob: 'February 11, 1985',
+      department: 'Sciences & Research',
+      bio: 'Biomedical researcher and data scientist specialising in genomics and precision medicine. Passionate about bridging laboratory discoveries with clinical application for underserved populations.',
+      languages: ['Spanish', 'English', 'French'],
+      skills: ['Data Science', 'Genomics', 'Python', 'Clinical Research'],
+      social: { linkedin: 'https://linkedin.com/', instagram: 'https://instagram.com/' },
+      credentials: [
+        { id:'CRED-2024-RS01', name:'Research Excellence Fellowship', year:'2024', issuer:'NYU McSilver Institute', skills:['Scientific Rigour','Data Analysis','Publication'], icon:'🔬' },
+        { id:'CRED-2022-BM01', name:'Biomedical Innovation Award', year:'2022', issuer:'NYU McSilver Institute', skills:['Genomics','Lab Leadership','Grant Writing'], icon:'🧬' }
+      ]
+    },
+    {
+      id: 'NX-2024-0004',
+      name: 'Marcus Okonkwo',
+      initials: 'MO',
+      photo: 'https://randomuser.me/api/portraits/men/75.jpg',
+      location: 'Lagos, Nigeria',
+      dob: 'November 3, 1982',
+      department: 'Finance & Economics',
+      bio: 'Chartered financial analyst with 18 years of experience in emerging markets, private equity, and sustainable investment across Sub-Saharan Africa. Champion of ESG-led capital allocation strategies.',
+      languages: ['English', 'Yoruba', 'French'],
+      skills: ['CFA', 'Private Equity', 'ESG Investing', 'Financial Modelling'],
+      social: { linkedin: 'https://linkedin.com/', twitter: 'https://x.com/' },
+      credentials: [
+        { id:'CRED-2023-FI01', name:'Sustainable Finance Leadership', year:'2023', issuer:'NYU McSilver Institute', skills:['ESG Analysis','Impact Investing','Portfolio Management'], icon:'📈' },
+        { id:'CRED-2022-EM01', name:'Emerging Markets Specialist Award', year:'2022', issuer:'NYU McSilver Institute', skills:['Market Analysis','Risk Assessment','Cross-border Finance'], icon:'🌍' }
+      ]
+    },
+    {
+      id: 'NX-2024-0005',
+      name: 'Priya Subramaniam',
+      initials: 'PS',
+      photo: 'https://randomuser.me/api/portraits/women/29.jpg',
+      location: 'Singapore',
+      dob: 'May 19, 1993',
+      department: 'Arts & Humanities',
+      bio: 'Award-winning cultural strategist and curator working at the intersection of contemporary Southeast Asian art and digital heritage preservation. Believes art is the most honest form of diplomacy.',
+      languages: ['English', 'Tamil', 'Mandarin'],
+      skills: ['Curation', 'Cultural Strategy', 'Digital Heritage', 'Arts Management'],
+      social: { linkedin: 'https://linkedin.com/', instagram: 'https://instagram.com/', twitter: 'https://x.com/' },
+      credentials: [
+        { id:'CRED-2024-AR01', name:'Arts Leadership Excellence Award', year:'2024', issuer:'NYU McSilver Institute', skills:['Creative Vision','Community Engagement','Cultural Diplomacy'], icon:'🎭' }
+      ]
+    },
+    {
+      id: 'NX-2024-0006',
+      name: 'Dr. Amara Diallo',
+      initials: 'AD',
+      photo: 'https://randomuser.me/api/portraits/women/90.jpg',
+      location: 'Dakar, Senegal',
+      dob: 'August 30, 1979',
+      department: 'Medicine & Public Health',
+      bio: 'Epidemiologist and public health advocate with two decades fighting infectious disease outbreaks across West Africa. WHO advisory board member and a leading voice on pandemic preparedness.',
+      languages: ['French', 'Wolof', 'English', 'Arabic'],
+      skills: ['Epidemiology', 'Public Health Policy', 'Field Medicine', 'WHO Advisory'],
+      social: { linkedin: 'https://linkedin.com/', twitter: 'https://x.com/' },
+      credentials: [
+        { id:'CRED-2024-MED01', name:'Global Health Leadership Award', year:'2024', issuer:'NYU McSilver Institute', skills:['Pandemic Preparedness','Community Health','Policy Advocacy'], icon:'🩺' },
+        { id:'CRED-2021-EPI01', name:'Epidemiology Excellence Certificate', year:'2021', issuer:'NYU McSilver Institute', skills:['Outbreak Response','Data Surveillance','Vaccine Rollout'], icon:'💉' },
+        { id:'CRED-2019-AF01', name:'African Public Health Innovator', year:'2019', issuer:'NYU McSilver Institute', skills:['Field Research','Cross-sector Collaboration'], icon:'🌱' }
+      ]
+    }
+  ];
+
+
+  function socialIcons(social, cls='member-social', iconCls='member-social-icon') {
+    if (!social) return '';
+    const icons = {
+      linkedin: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>`,
+      twitter:  `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`,
+      instagram:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>`,
+    };
+    const labels = { linkedin:'LinkedIn', twitter:'X / Twitter', instagram:'Instagram' };
+    const parts = Object.entries(social).map(([k, url]) =>
+      icons[k] ? `<a href="${url}" target="_blank" aria-label="${labels[k]}" class="${iconCls}" onclick="event.stopPropagation()">${icons[k]}</a>` : ''
+    ).join('');
+    return `<div class="${cls}">${parts}</div>`;
+  }
+
+  let filtered = [...members];
+  let activeMember = null;
+  let credQ = '';
+
+  function renderList() {
+    const list = document.getElementById('member-list');
+    const noR  = document.getElementById('no-results');
+    const cnt  = document.getElementById('dir-count');
+
+    if (!filtered.length) {
+      list.innerHTML = '';
+      noR.style.display = 'block';
+      cnt.textContent = '0 Members';
+      return;
+    }
+
+    noR.style.display = 'none';
+    cnt.textContent = `${filtered.length} Member${filtered.length !== 1 ? 's' : ''}`;
+
+    list.innerHTML = filtered.map((m, i) => `
+      <div class="member-card" style="animation-delay:${i * 0.06}s" onclick="openDetail('${m.id}')">
+        <div class="card-left-col">
+          <div class="card-photo-wrap">
+            <img src="${m.photo}" alt="${m.name}"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="initials-box" style="display:none">${m.initials}</div>
+          </div>
+          <div class="card-name-block">
+            <div class="card-name">${m.name}</div>
+            <div class="card-location">📍 ${m.location}</div>
+            <div class="card-id-pill">${m.id}</div>
+            <button class="btn-view-creds">View all Credentials <span class="arr">→</span></button>
+            ${socialIcons(m.social)}
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-section-label">About</div>
+          <p class="card-bio">${m.bio}</p>
+
+          <div class="card-section-label">Known Languages</div>
+          <div class="card-tags">
+            ${m.languages.map(l => `<span class="skill-chip">${l}</span>`).join('')}
+          </div>
+
+          <div class="card-section-label">Known Skills</div>
+          <div class="card-tags">
+            ${m.skills.map(s => `<span class="skill-chip">${s}</span>`).join('')}
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  let activeFilter = 'name';
+
+  function setSearchFilter(type, el) {
+    activeFilter = type;
+    document.querySelectorAll('.s-tab').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+    const input = document.getElementById('main-search');
+    input.placeholder = type === 'name' ? 'Search by awardee name…' : 'Search by credential ID…';
+    input.value = '';
+    input.focus();
+    filtered = [...members];
+    renderList();
+  }
+
+  function filterMembers() {
+    const q = document.getElementById('main-search').value.toLowerCase().trim();
+    if (!q) { filtered = [...members]; renderList(); return; }
+    filtered = members.filter(m => {
+      if (activeFilter === 'name')   return m.name.toLowerCase().includes(q);
+      if (activeFilter === 'credid') return m.credentials.some(c => c.id.toLowerCase().includes(q));
+      return true;
+    });
+    renderList();
+  }
+
+  function openDetail(id) {
+    activeMember = members.find(m => m.id === id);
+    if (!activeMember) return;
+    credQ = '';
+    renderDetail();
+    const dp = document.getElementById('detail-page');
+    dp.style.display = 'block';
+    dp.scrollTop = 0;
+    document.body.style.overflow = 'hidden';
+  }
+
+  function goBack() {
+    document.getElementById('detail-page').style.display = 'none';
+    document.body.style.overflow = '';
+    activeMember = null;
+  }
+
+  function filterCreds() {
+    credQ = document.getElementById('cred-search').value.toLowerCase().trim();
+    renderCredList();
+  }
+
+  function renderCredList() {
+    const m = activeMember;
+    const fc = credQ
+      ? m.credentials.filter(c =>
+          c.name.toLowerCase().includes(credQ) ||
+          c.id.toLowerCase().includes(credQ) ||
+          c.skills.some(s => s.toLowerCase().includes(credQ))
+        )
+      : m.credentials;
+
+    const cont = document.getElementById('cred-list');
+    if (!fc.length) {
+      cont.innerHTML = `<div class="no-results" style="padding:32px 0">No credentials match your search.</div>`;
+      return;
+    }
+
+    const CERT_IMG = 'https://blr1.digitaloceanspaces.com/cme.dev.space/6069/26501/540126/cert_9447ef2b26501.png';
+    cont.innerHTML = fc.map((c, i) => `
+      <div class="cred-card" style="animation-delay:${i * 0.06}s">
+        <div class="cred-thumb">
+          <img src="${CERT_IMG}" alt="Certificate">
+        </div>
+        <div class="cred-info">
+          <div class="cred-name">${c.name}</div>
+          <div class="cred-meta">Issued by <span>${c.issuer}</span> &nbsp;·&nbsp; ${c.id}</div>
+          <div class="cred-skills">
+            ${c.skills.map(s => `<span class="cred-skill-tag">${s}</span>`).join('')}
+          </div>
+        </div>
+        <a href="https://preprod.verification.certifyme.dev/verify/9447ef2b26501" target="_blank" class="btn-cert" onclick="event.stopPropagation()">View Certificate →</a>
+      </div>
+    `).join('');
+  }
+
+  function renderDetail() {
+    const m = activeMember;
+    document.getElementById('detail-content').innerHTML = `
+      <div class="detail-profile-strip">
+        <div class="detail-profile-inner">
+        <div class="detail-photo-col">
+          <img src="${m.photo}" alt="${m.name}"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="initials-box" style="display:none">${m.initials}</div>
+        </div>
+        <div class="detail-profile-info">
+          <div class="detail-name">${m.name}</div>
+          <div class="detail-dept">${m.department}</div>
+          <div class="detail-meta-row">
+            <div class="d-meta"><span class="d-label">Location</span><span class="d-val">${m.location}</span></div>
+            <div class="d-meta"><span class="d-label">Date of Birth</span><span class="d-val">${m.dob}</span></div>
+            <div class="d-meta"><span class="d-label">Languages</span><span class="d-val">${m.languages.join(' · ')}</span></div>
+          </div>
+          <div class="detail-id-badge">${m.id}</div>
+          ${socialIcons(m.social, 'detail-social', 'detail-social-icon')}
+        </div>
+        </div><!-- /.detail-profile-inner -->
+      </div>
+
+      <div class="detail-body">
+        <div class="section-block">
+          <div class="section-heading">About</div>
+          <p class="bio-text">${m.bio}</p>
+        </div>
+
+        <div class="section-block">
+          <div class="section-heading">Known Skills</div>
+          <div class="detail-tags">
+            ${m.skills.map(s => `<span class="d-tag">${s}</span>`).join('')}
+          </div>
+        </div>
+
+        <div class="section-block">
+          <div class="section-heading">Credentials &amp; Certificates</div>
+          <div class="cred-search-row">
+            <span class="s-icon">🔍</span>
+            <input type="text" id="cred-search"
+                   placeholder="Search by credential name or ID…"
+                   oninput="filterCreds()">
+          </div>
+          <div class="creds-list" id="cred-list"></div>
+        </div>
+      </div>
+    `;
+    renderCredList();
+  }
+
+
+  /* ── UPLOAD PAGE ── */
+  let credBlockCount = 1;
+
+  function openUpload() {
+    document.getElementById('upload-page').style.display = 'block';
+    document.getElementById('upload-page').scrollTop = 0;
+    document.body.style.overflow = 'hidden';
+    showTab(1);
+  }
+
+  function closeUpload() {
+    document.getElementById('upload-page').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  function showTab(n) {
+    [1,2,3].forEach(i => {
+      document.getElementById('step-' + i).style.display = i === n ? 'block' : 'none';
+      const tab = document.getElementById('tab-' + i);
+      if (i === n) {
+        tab.style.background = 'var(--purple)';
+        tab.style.color = '#fff';
+      } else {
+        tab.style.background = 'var(--gray-100)';
+        tab.style.color = 'var(--gray-600)';
+      }
+    });
+    if (n === 3) buildReview();
+  }
+
+  function addCredentialBlock() {
+    credBlockCount++;
+    const container = document.getElementById('cred-fields-container');
+    const block = document.createElement('div');
+    block.style.gridColumn = '1/-1';
+    block.id = 'cred-block-' + (credBlockCount - 1);
+    block.innerHTML = `
+      <div style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.15em; color:var(--purple); margin-bottom:16px; padding:8px 12px; background:var(--purple-pale); border-left:3px solid var(--purple); display:flex; justify-content:space-between; align-items:center;">
+        <span>Credential #${credBlockCount}</span>
+        <button onclick="this.closest('[id^=cred-block]').remove(); credBlockCount--;" style="font-size:11px; background:transparent; border:none; color:#EF4444; cursor:pointer; font-weight:700;">✕ Remove</button>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+        <div class="form-group">
+          <label class="form-label">Credential Name *</label>
+          <input class="form-input cred-name-input" type="text" placeholder="e.g. Certificate of Excellence">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Credential ID *</label>
+          <input class="form-input cred-id-input" type="text" placeholder="e.g. CRED-2024-EX01">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Year Issued *</label>
+          <input class="form-input cred-year-input" type="number" placeholder="e.g. 2024" min="2000" max="2099">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Issuing Institution *</label>
+          <input class="form-input cred-issuer-input" type="text" placeholder="e.g. NYU McSilver Institute" value="NYU McSilver Institute">
+        </div>
+        <div class="form-group" style="grid-column:1/-1;">
+          <label class="form-label">Acquired Skills (comma-separated)</label>
+          <input class="form-input cred-skills-input" type="text" placeholder="e.g. Leadership, Empathy">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Certificate URL</label>
+          <input class="form-input cred-cert-input" type="url" placeholder="https://...">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Icon (emoji)</label>
+          <input class="form-input cred-icon-input" type="text" placeholder="🏆" maxlength="2" style="font-size:20px;">
+        </div>
+      </div>
+    `;
+    container.appendChild(block);
+  }
+
+  function buildReview() {
+    const name     = document.getElementById('u-name').value || '—';
+    const id       = document.getElementById('u-id').value || '—';
+    const dob      = document.getElementById('u-dob').value || '—';
+    const location = document.getElementById('u-location').value || '—';
+    const dept     = document.getElementById('u-dept').value || '—';
+    const langs    = document.getElementById('u-langs').value || '—';
+    const bio      = document.getElementById('u-bio').value || '—';
+    const skills   = document.getElementById('u-skills').value || '—';
+    const photo    = document.getElementById('u-photo').value;
+
+    const credNames   = [...document.querySelectorAll('.cred-name-input')].map(el => el.value || '—');
+    const credIds     = [...document.querySelectorAll('.cred-id-input')].map(el => el.value || '—');
+    const credYears   = [...document.querySelectorAll('.cred-year-input')].map(el => el.value || '—');
+    const credIssuers = [...document.querySelectorAll('.cred-issuer-input')].map(el => el.value || '—');
+    const credSkills  = [...document.querySelectorAll('.cred-skills-input')].map(el => el.value || '—');
+    const credIcons   = [...document.querySelectorAll('.cred-icon-input')].map(el => el.value || '🏆');
+
+    const credRows = credNames.map((cn, i) => `
+      <tr style="border-top:1px solid var(--border);">
+        <td style="padding:10px 12px; font-weight:600; color:var(--text);">${credIcons[i]} ${cn}</td>
+        <td style="padding:10px 12px; color:var(--gray-600);">${credIds[i]}</td>
+        <td style="padding:10px 12px; color:var(--gray-600);">${credYears[i]}</td>
+        <td style="padding:10px 12px; color:var(--gray-600);">${credIssuers[i]}</td>
+        <td style="padding:10px 12px; color:var(--gray-600);">${credSkills[i]}</td>
+      </tr>
+    `).join('');
+
+    document.getElementById('review-content').innerHTML = `
+      <h2 style="font-family:'Merriweather',serif; font-size:18px; font-weight:700; color:var(--text); margin-bottom:24px; padding-bottom:12px; border-bottom:1px solid var(--border);">Review Submission</h2>
+
+      <div style="display:flex; gap:24px; margin-bottom:28px; align-items:flex-start;">
+        ${photo ? `<img src="${photo}" style="width:100px; height:100px; object-fit:cover; border:1px solid var(--border); flex-shrink:0;" onerror="this.style.display='none'">` : `<div style="width:100px; height:100px; background:var(--purple-pale); display:flex; align-items:center; justify-content:center; font-family:'Merriweather',serif; font-size:32px; font-weight:700; color:var(--purple); flex-shrink:0;">${(name.split(' ').map(w=>w[0]).join('').slice(0,2)) || '?'}</div>`}
+        <div style="flex:1; display:grid; grid-template-columns:1fr 1fr; gap:12px 24px;">
+          ${[['Full Name',name],['Awardee ID',id],['Date of Birth',dob],['Location',location],['Department',dept],['Languages',langs]].map(([l,v])=>`
+            <div>
+              <div style="font-size:10px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:var(--gray-400); margin-bottom:3px;">${l}</div>
+              <div style="font-size:13.5px; color:var(--text);">${v}</div>
+            </div>
+          `).join('')}
+          <div style="grid-column:1/-1;">
+            <div style="font-size:10px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:var(--gray-400); margin-bottom:3px;">Bio</div>
+            <div style="font-size:13px; color:var(--gray-600); line-height:1.6;">${bio}</div>
+          </div>
+          <div style="grid-column:1/-1;">
+            <div style="font-size:10px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:var(--gray-400); margin-bottom:6px;">Skills</div>
+            <div style="display:flex; flex-wrap:wrap; gap:6px;">
+              ${skills.split(',').map(s=>s.trim()).filter(Boolean).map(s=>`<span style="font-size:11px; padding:3px 11px; background:var(--purple-pale); border:1px solid rgba(124,58,237,0.2); color:var(--purple);">${s}</span>`).join('')}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:var(--purple); margin-bottom:12px;">Credentials (${credNames.length})</div>
+      <table style="width:100%; border-collapse:collapse; font-size:13px; border:1px solid var(--border);">
+        <thead>
+          <tr style="background:var(--purple-pale);">
+            <th style="padding:10px 12px; text-align:left; font-weight:700; color:var(--purple); font-size:11px; letter-spacing:0.08em; text-transform:uppercase;">Name</th>
+            <th style="padding:10px 12px; text-align:left; font-weight:700; color:var(--purple); font-size:11px; letter-spacing:0.08em; text-transform:uppercase;">ID</th>
+            <th style="padding:10px 12px; text-align:left; font-weight:700; color:var(--purple); font-size:11px; letter-spacing:0.08em; text-transform:uppercase;">Year</th>
+            <th style="padding:10px 12px; text-align:left; font-weight:700; color:var(--purple); font-size:11px; letter-spacing:0.08em; text-transform:uppercase;">Issuer</th>
+            <th style="padding:10px 12px; text-align:left; font-weight:700; color:var(--purple); font-size:11px; letter-spacing:0.08em; text-transform:uppercase;">Skills</th>
+          </tr>
+        </thead>
+        <tbody>${credRows}</tbody>
+      </table>
+    `;
+  }
+
+  function submitData() {
+    // Collect personal info
+    const initials = (document.getElementById('u-name').value || 'XX').split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
+    const dob = document.getElementById('u-dob').value;
+    const dobFormatted = dob ? new Date(dob).toLocaleDateString('en-US', {year:'numeric',month:'long',day:'numeric'}) : '';
+
+    const newMember = {
+      id:         document.getElementById('u-id').value || ('NX-2024-00' + (members.length + 1)),
+      name:       document.getElementById('u-name').value || 'Unknown',
+      initials:   initials,
+      photo:      document.getElementById('u-photo').value || '',
+      location:   document.getElementById('u-location').value || '',
+      dob:        dobFormatted,
+      department: document.getElementById('u-dept').value || '',
+      bio:        document.getElementById('u-bio').value || '',
+      languages:  document.getElementById('u-langs').value.split(',').map(s=>s.trim()).filter(Boolean),
+      skills:     document.getElementById('u-skills').value.split(',').map(s=>s.trim()).filter(Boolean),
+      credentials: []
+    };
+
+    // Collect credentials
+    const credNames   = [...document.querySelectorAll('.cred-name-input')];
+    credNames.forEach((el, i) => {
+      const skillsRaw = document.querySelectorAll('.cred-skills-input')[i]?.value || '';
+      newMember.credentials.push({
+        id:     document.querySelectorAll('.cred-id-input')[i]?.value || ('CRED-' + Date.now() + '-' + i),
+        name:   el.value || 'Unnamed Credential',
+        year:   document.querySelectorAll('.cred-year-input')[i]?.value || new Date().getFullYear().toString(),
+        issuer: document.querySelectorAll('.cred-issuer-input')[i]?.value || 'NYU McSilver Institute',
+        skills: skillsRaw.split(',').map(s=>s.trim()).filter(Boolean),
+        icon:   document.querySelectorAll('.cred-icon-input')[i]?.value || '🏆'
+      });
+    });
+
+    members.unshift(newMember);
+    filtered = [...members];
+    renderList();
+    document.getElementById('submit-success').style.display = 'block';
+    document.getElementById('submit-success').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && activeMember) goBack(); });
+  renderList();
+</script>
+
+<!-- ─────────────── UPLOAD PAGE ─────────────── -->
+<div id="upload-page" style="display:none; position:fixed; inset:0; z-index:400; background:#fff; overflow-y:auto;">
+
+  <!-- Upload Topbar -->
+  <div style="background:#fff; border-bottom:3px solid var(--purple); padding:0 48px; height:64px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:10; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+    <button onclick="closeUpload()" style="font-family:'Open Sans',sans-serif; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; background:transparent; border:1.5px solid var(--purple); color:var(--purple); padding:8px 18px; cursor:pointer; display:flex; align-items:center; gap:7px; transition:all 0.2s;" onmouseover="this.style.background='var(--purple)';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='var(--purple)'">← Back to Directory</button>
+    <div style="font-family:'Merriweather',serif; font-size:15px; font-weight:700; color:var(--purple);">NYU McSilver Institute — Data Upload Portal</div>
+  </div>
+
+  <!-- Upload Body -->
+  <div style="max-width:860px; margin:0 auto; padding:48px 40px 80px;">
+
+    <!-- Page Header -->
+    <div style="margin-bottom:40px; padding-bottom:20px; border-bottom:2px solid var(--purple);">
+      <div style="font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--purple); margin-bottom:10px;">Institution Data Upload</div>
+      <h1 style="font-family:'Merriweather',serif; font-size:28px; font-weight:700; color:var(--text); margin-bottom:8px;">Upload Awardee &amp; Credential Data</h1>
+      <p style="font-size:14px; color:var(--gray-600); line-height:1.7;">Fill in the details below to add a new awardee profile and their issued credentials to the showcase directory.</p>
+    </div>
+
+    <!-- Step tabs -->
+    <div style="display:flex; gap:0; margin-bottom:36px; border:1px solid var(--border);">
+      <div id="tab-1" onclick="showTab(1)" style="flex:1; padding:14px 20px; text-align:center; font-size:13px; font-weight:700; cursor:pointer; background:var(--purple); color:#fff; transition:all 0.2s; border-right:1px solid rgba(255,255,255,0.2);">
+        1 — Personal Details
+      </div>
+      <div id="tab-2" onclick="showTab(2)" style="flex:1; padding:14px 20px; text-align:center; font-size:13px; font-weight:700; cursor:pointer; background:var(--gray-100); color:var(--gray-600); transition:all 0.2s; border-right:1px solid var(--border);">
+        2 — Credential Details
+      </div>
+      <div id="tab-3" onclick="showTab(3)" style="flex:1; padding:14px 20px; text-align:center; font-size:13px; font-weight:700; cursor:pointer; background:var(--gray-100); color:var(--gray-600); transition:all 0.2s;">
+        3 — Review &amp; Submit
+      </div>
+    </div>
+
+    <!-- ── STEP 1: Personal Details ── -->
+    <div id="step-1">
+      <div style="background:#fff; border:1px solid var(--border); padding:32px 36px; margin-bottom:24px;">
+        <h2 style="font-family:'Merriweather',serif; font-size:18px; font-weight:700; color:var(--text); margin-bottom:24px; padding-bottom:12px; border-bottom:1px solid var(--border);">Awardee Personal Information</h2>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input class="form-input" id="u-name" type="text" placeholder="e.g. Jane Doe">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Awardee ID *</label>
+            <input class="form-input" id="u-id" type="text" placeholder="e.g. NX-2024-0007">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Date of Birth *</label>
+            <input class="form-input" id="u-dob" type="date">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Location / City *</label>
+            <input class="form-input" id="u-location" type="text" placeholder="e.g. New York, USA">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Department / Field *</label>
+            <input class="form-input" id="u-dept" type="text" placeholder="e.g. Business & Law">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Languages (comma-separated)</label>
+            <input class="form-input" id="u-langs" type="text" placeholder="e.g. English, French">
+          </div>
+
+          <div class="form-group" style="grid-column:1/-1;">
+            <label class="form-label">Profile Photo URL</label>
+            <input class="form-input" id="u-photo" type="url" placeholder="https://example.com/photo.jpg">
+            <div style="font-size:11px; color:var(--gray-400); margin-top:5px;">Paste a direct image link. Leave blank to use initials.</div>
+          </div>
+
+          <div class="form-group" style="grid-column:1/-1;">
+            <label class="form-label">About / Bio *</label>
+            <textarea class="form-input" id="u-bio" rows="4" placeholder="Write a short professional bio…" style="resize:vertical;"></textarea>
+          </div>
+
+          <div class="form-group" style="grid-column:1/-1;">
+            <label class="form-label">Known Skills (comma-separated)</label>
+            <input class="form-input" id="u-skills" type="text" placeholder="e.g. Leadership, Data Analysis, Python">
+          </div>
+
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:flex-end; gap:12px;">
+        <button onclick="showTab(2)" style="font-family:'Open Sans',sans-serif; font-size:13px; font-weight:700; background:var(--purple); border:none; color:#fff; padding:12px 28px; cursor:pointer; letter-spacing:0.04em; transition:background 0.2s;" onmouseover="this.style.background='var(--purple-dark)'" onmouseout="this.style.background='var(--purple)'">Next: Add Credential →</button>
+      </div>
+    </div>
+
+    <!-- ── STEP 2: Credential Details ── -->
+    <div id="step-2" style="display:none;">
+      <div style="background:#fff; border:1px solid var(--border); padding:32px 36px; margin-bottom:16px;">
+        <h2 style="font-family:'Merriweather',serif; font-size:18px; font-weight:700; color:var(--text); margin-bottom:24px; padding-bottom:12px; border-bottom:1px solid var(--border);">Credential Information</h2>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;" id="cred-fields-container">
+          <!-- First credential block -->
+          <div style="grid-column:1/-1;" id="cred-block-0">
+            <div style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.15em; color:var(--purple); margin-bottom:16px; padding:8px 12px; background:var(--purple-pale); border-left:3px solid var(--purple);">Credential #1</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+              <div class="form-group">
+                <label class="form-label">Credential Name *</label>
+                <input class="form-input cred-name-input" type="text" placeholder="e.g. Certificate of Exemplary Leadership">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Credential ID *</label>
+                <input class="form-input cred-id-input" type="text" placeholder="e.g. CRED-2024-EL01">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Year Issued *</label>
+                <input class="form-input cred-year-input" type="number" placeholder="e.g. 2024" min="2000" max="2099">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Issuing Institution *</label>
+                <input class="form-input cred-issuer-input" type="text" placeholder="e.g. NYU McSilver Institute" value="NYU McSilver Institute">
+              </div>
+              <div class="form-group" style="grid-column:1/-1;">
+                <label class="form-label">Acquired Skills (comma-separated)</label>
+                <input class="form-input cred-skills-input" type="text" placeholder="e.g. Leadership, Empathy, Strategic Thinking">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Credential Certificate URL</label>
+                <input class="form-input cred-cert-input" type="url" placeholder="https://example.com/certificate.pdf">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Icon (emoji)</label>
+                <input class="form-input cred-icon-input" type="text" placeholder="🏆" maxlength="2" style="font-size:20px;">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more credentials -->
+        <div style="margin-top:24px; text-align:center;">
+          <button onclick="addCredentialBlock()" style="font-family:'Open Sans',sans-serif; font-size:12px; font-weight:700; background:transparent; border:1.5px dashed var(--purple); color:var(--purple); padding:10px 24px; cursor:pointer; letter-spacing:0.06em; transition:all 0.2s;" onmouseover="this.style.background='var(--purple-pale)'" onmouseout="this.style.background='transparent'">+ Add Another Credential</button>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; gap:12px; margin-top:8px;">
+        <button onclick="showTab(1)" style="font-family:'Open Sans',sans-serif; font-size:13px; font-weight:700; background:transparent; border:1.5px solid var(--gray-400); color:var(--gray-600); padding:12px 24px; cursor:pointer; transition:all 0.2s;" onmouseover="this.style.borderColor='var(--purple)';this.style.color='var(--purple)'" onmouseout="this.style.borderColor='var(--gray-400)';this.style.color='var(--gray-600)'">← Back</button>
+        <button onclick="showTab(3)" style="font-family:'Open Sans',sans-serif; font-size:13px; font-weight:700; background:var(--purple); border:none; color:#fff; padding:12px 28px; cursor:pointer; letter-spacing:0.04em; transition:background 0.2s;" onmouseover="this.style.background='var(--purple-dark)'" onmouseout="this.style.background='var(--purple)'">Next: Review →</button>
+      </div>
+    </div>
+
+    <!-- ── STEP 3: Review & Submit ── -->
+    <div id="step-3" style="display:none;">
+      <div id="review-content" style="background:#fff; border:1px solid var(--border); padding:32px 36px; margin-bottom:24px;">
+        <!-- Filled by JS -->
+      </div>
+
+      <div style="background:var(--purple-pale); border:1px solid rgba(124,58,237,0.2); padding:20px 24px; margin-bottom:24px; display:flex; align-items:flex-start; gap:12px;">
+        <span style="font-size:20px; flex-shrink:0;">ℹ️</span>
+        <div>
+          <div style="font-size:13px; font-weight:700; color:var(--purple); margin-bottom:4px;">Ready to submit?</div>
+          <div style="font-size:13px; color:var(--gray-600); line-height:1.6;">Please review all details carefully before submitting. Once submitted, the awardee profile and credentials will be added to the showcase directory immediately.</div>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; gap:12px;">
+        <button onclick="showTab(2)" style="font-family:'Open Sans',sans-serif; font-size:13px; font-weight:700; background:transparent; border:1.5px solid var(--gray-400); color:var(--gray-600); padding:12px 24px; cursor:pointer; transition:all 0.2s;" onmouseover="this.style.borderColor='var(--purple)';this.style.color='var(--purple)'" onmouseout="this.style.borderColor='var(--gray-400)';this.style.color='var(--gray-600)'">← Edit</button>
+        <button onclick="submitData()" style="font-family:'Open Sans',sans-serif; font-size:14px; font-weight:700; background:var(--purple); border:none; color:#fff; padding:14px 36px; cursor:pointer; letter-spacing:0.04em; transition:background 0.2s;" onmouseover="this.style.background='var(--purple-dark)'" onmouseout="this.style.background='var(--purple)'">✓ Submit to Directory</button>
+      </div>
+
+      <!-- Success message -->
+      <div id="submit-success" style="display:none; margin-top:24px; background:#F0FDF4; border:1.5px solid #86EFAC; padding:24px 28px; text-align:center;">
+        <div style="font-size:36px; margin-bottom:10px;">✅</div>
+        <div style="font-family:'Merriweather',serif; font-size:18px; font-weight:700; color:#166534; margin-bottom:6px;">Successfully Added!</div>
+        <div style="font-size:13px; color:#15803D; margin-bottom:16px;">The awardee has been added to the showcase directory.</div>
+        <button onclick="closeUpload()" style="font-family:'Open Sans',sans-serif; font-size:12px; font-weight:700; background:#16A34A; border:none; color:#fff; padding:10px 24px; cursor:pointer; letter-spacing:0.06em;">View Directory →</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  .form-group { display:flex; flex-direction:column; gap:6px; }
+  .form-label { font-size:12px; font-weight:700; color:var(--gray-800); letter-spacing:0.04em; text-transform:uppercase; }
+  .form-input {
+    font-family:'Open Sans',sans-serif;
+    font-size:13.5px;
+    color:var(--text);
+    background:#fff;
+    border:1px solid var(--border);
+    padding:11px 14px;
+    outline:none;
+    transition:border-color 0.2s, box-shadow 0.2s;
+    width:100%;
+  }
+  .form-input:focus
+  .form-input:focus {
+    border-color: var(--purple);
+    box-shadow: 0 0 0 3px rgba(124,58,237,0.1);
+  }
+  .form-input::placeholder { color: var(--gray-400); }
+  textarea.form-input { font-family: 'Open Sans', sans-serif; line-height: 1.6; }
+
+  /* Upload page section headings */
+  .upload-section-title {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Responsive upload page */
+  @media (max-width: 720px) {
+    #upload-page .grid-2col { grid-template-columns: 1fr !important; }
+    #upload-page { padding: 0; }
+  }
+</style>
+
+</body>
+</html>
