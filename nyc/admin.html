@@ -137,7 +137,6 @@
         .empty-state{text-align:center;padding:60px 20px;color:var(--tl);}
         .empty-state svg{width:48px;height:48px;stroke:#d1d5db;fill:none;stroke-width:1.5;margin:0 auto 16px;display:block;}
         /* UPLOAD DATA */
-        /* ─── TWO COLUMN OPTION CARDS ─── */
         .upload-options{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px;}
         .option-card{background:#fff;border:2px solid var(--border);border-radius:var(--radius);padding:28px 24px;cursor:pointer;transition:border-color var(--tr),box-shadow var(--tr),background var(--tr);display:flex;flex-direction:column;align-items:flex-start;gap:12px;}
         .option-card:hover{border-color:var(--p);box-shadow:0 4px 20px rgba(124,58,237,.1);}
@@ -148,10 +147,8 @@
         .option-card.active .oc-icon svg{stroke:#fff;}
         .option-card h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--text);}
         .option-card p{font-size:13.5px;color:var(--tl);line-height:1.55;margin:0;}
-        /* ─── SECTION TOGGLE ─── */
         .upload-section{display:none;width:100%;min-width:0;box-sizing:border-box;}
         .upload-section.active{display:block;width:100%;}
-        /* ─── STEPPER ─── */
         .stepper{display:flex;align-items:center;background:#fff;border-radius:var(--radius);padding:22px 32px;border:1px solid var(--border);margin-bottom:24px;}
         .sdot{display:flex;align-items:center;flex:1;}
         .sdot:last-child{flex:none;}
@@ -166,7 +163,6 @@
         .sdot.active .stitle{color:#7C3AED;}
         .step-content{display:none;}
         .step-content.active{display:block;}
-        /* ─── QUICK ADD FORM ─── */
         .up-card{background:#fff;border-radius:var(--radius);border:1px solid var(--border);padding:32px;}
         .up-card h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--text);margin-bottom:6px;}
         .up-card .sub{font-size:14px;color:var(--tl);margin-bottom:28px;}
@@ -212,7 +208,6 @@
         .cred-link{display:inline-flex;align-items:center;gap:4px;font-size:12px;color:#7C3AED;font-weight:500;text-decoration:none;margin-top:6px;}
         .cred-link:hover{text-decoration:underline;}
         .cred-link svg{width:12px;height:12px;stroke:#7C3AED;fill:none;stroke-width:2;}
-        /* ─── BULK UPLOAD — fully responsive ─── */
         .bulk-card{background:#fff;border-radius:var(--radius);border:1px solid var(--border);padding:28px;width:100%;box-sizing:border-box;overflow:hidden;}
         .bulk-card h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--text);margin-bottom:6px;}
         .bulk-card .sub{font-size:14px;color:var(--tl);margin-bottom:24px;}
@@ -227,19 +222,16 @@
         .file-drop svg{width:40px;height:40px;stroke:#a78bfa;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px;}
         .file-drop p{font-size:15px;font-weight:600;color:var(--text);margin-bottom:4px;}
         .file-drop .hint{font-size:13px;color:var(--tl);}
-        /* preview box — fully contained, no overflow bleed */
         #csvPreviewWrap{width:100%;box-sizing:border-box;}
         .csv-preview-box{border:1px solid var(--border);border-radius:var(--rsm);width:100%;box-sizing:border-box;overflow:hidden;margin-bottom:16px;}
         .csv-preview-head{padding:12px 16px;background:#f9fafb;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;}
         .csv-preview-head h4{font-size:14px;font-weight:600;color:var(--text);}
         .csv-preview-head span{font-size:12px;color:var(--tl);}
-        /* THE KEY FIX: scroll wrapper must be width-constrained, never allowed to expand parent */
         .preview-scroll{width:100%;overflow-x:auto;overflow-y:auto;max-height:260px;-webkit-overflow-scrolling:touch;}
         .preview-scroll table{border-collapse:collapse;table-layout:auto;width:max-content;min-width:100%;}
         .preview-scroll table th{background:#EDE9FE;color:#5B21B6;white-space:nowrap;padding:10px 14px;font-size:12px;font-weight:600;text-align:left;border-bottom:2px solid #c4b5fd;position:sticky;top:0;z-index:1;}
         .preview-scroll table td{white-space:nowrap;padding:10px 14px;font-size:13px;border-bottom:1px solid #f3f4f6;}
         .preview-scroll table tr:last-child td{border-bottom:none;}
-        /* action buttons — always 100% width row, buttons side by side */
         .bulk-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px;width:100%;box-sizing:border-box;}
         @media(max-width:768px){.sidebar{transform:translateX(-100%);}.main{margin-left:0;}.fgrid{grid-template-columns:1fr;}.rev-grid{grid-template-columns:1fr;}.upload-options{grid-template-columns:1fr;}.content{padding:16px;}.bulk-actions{flex-direction:column;}.bulk-actions .btn-outline,.bulk-actions .btn-submit{width:100%;justify-content:center;}}
     </style>
@@ -323,7 +315,7 @@
         <div class="stats-grid">
           <div class="stat-card"><div class="si pu"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><div class="stat-num" id="stAwardees">145</div><div class="stat-lbl">Total Awardees</div></div>
           <div class="stat-card"><div class="si gr"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><div class="stat-num" id="stCreds">267</div><div class="stat-lbl">Credentials Issued</div></div>
-          <div class="stat-card"><div class="si bl"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div class="stat-num" id="stInst">12</div><div class="stat-lbl">Institutions</div></div>
+          <div class="stat-card"><div class="si bl"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div class="stat-num" id="stInst">12</div><div class="stat-lbl">Courses</div></div>
           <div class="stat-card"><div class="si or"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="stat-num" id="stRecent">28</div><div class="stat-lbl">Added This Month</div></div>
         </div>
         <div class="cw">
@@ -331,18 +323,23 @@
           <div id="dashBody">
             <div style="overflow-x:auto;">
               <table>
-                <thead><tr><th>Awardee</th><th>University</th><th>Credentials</th><th>Languages</th><th>Date Added</th></tr></thead>
+                <thead><tr>
+                  <th>Awardee</th>
+                  <th>Credential ID</th>
+                  <th>Credentials</th>
+                  <th>Last Added Date</th>
+                </tr></thead>
                 <tbody>
-                  <tr><td style="font-weight:500">Dr. Sarah Chen</td><td style="color:var(--tl)">New York University</td><td><span class="pill active">3 credentials</span></td><td style="color:var(--tl)">English, Mandarin</td><td style="color:var(--tl);font-size:13px">Mar 15, 2026</td></tr>
-                  <tr><td style="font-weight:500">Prof. Michael Okonkwo</td><td style="color:var(--tl)">Columbia University</td><td><span class="pill active">2 credentials</span></td><td style="color:var(--tl)">English, Igbo</td><td style="color:var(--tl);font-size:13px">Mar 12, 2026</td></tr>
-                  <tr><td style="font-weight:500">Dr. Amina Al-Jaber</td><td style="color:var(--tl)">Georgetown University</td><td><span class="pill active">5 credentials</span></td><td style="color:var(--tl)">Arabic, English, French</td><td style="color:var(--tl);font-size:13px">Mar 10, 2026</td></tr>
-                  <tr><td style="font-weight:500">Prof. James O'Brien</td><td style="color:var(--tl)">Fordham University</td><td><span class="pill active">1 credential</span></td><td style="color:var(--tl)">English, Irish</td><td style="color:var(--tl);font-size:13px">Mar 8, 2026</td></tr>
-                  <tr><td style="font-weight:500">Dr. Priya Sharma</td><td style="color:var(--tl)">NYU Silver School</td><td><span class="pill active">4 credentials</span></td><td style="color:var(--tl)">English, Hindi, Gujarati</td><td style="color:var(--tl);font-size:13px">Mar 5, 2026</td></tr>
-                  <tr><td style="font-weight:500">Ms. Keiko Nakamura</td><td style="color:var(--tl)">Hunter College</td><td><span class="pill active">2 credentials</span></td><td style="color:var(--tl)">Japanese, English</td><td style="color:var(--tl);font-size:13px">Mar 3, 2026</td></tr>
-                  <tr><td style="font-weight:500">Dr. Carlos Rivera</td><td style="color:var(--tl)">Rutgers University</td><td><span class="pill active">3 credentials</span></td><td style="color:var(--tl)">Spanish, English, Portuguese</td><td style="color:var(--tl);font-size:13px">Feb 28, 2026</td></tr>
-                  <tr><td style="font-weight:500">Prof. Aisha Mensah</td><td style="color:var(--tl)">CUNY Graduate Center</td><td><span class="pill active">2 credentials</span></td><td style="color:var(--tl)">English, Twi, French</td><td style="color:var(--tl);font-size:13px">Feb 25, 2026</td></tr>
-                  <tr><td style="font-weight:500">Dr. Lena Fischer</td><td style="color:var(--tl)">New School University</td><td><span class="pill active">3 credentials</span></td><td style="color:var(--tl)">German, English</td><td style="color:var(--tl);font-size:13px">Feb 22, 2026</td></tr>
-                  <tr><td style="font-weight:500">Mr. David Osei-Bonsu</td><td style="color:var(--tl)">Baruch College</td><td><span class="pill active">1 credential</span></td><td style="color:var(--tl)">English, Akan</td><td style="color:var(--tl);font-size:13px">Feb 19, 2026</td></tr>
+                  <tr><td style="font-weight:500">Samata Pattinson</td><td style="color:var(--tl);font-family:monospace;">NX-2024-0001</td><td><span class="pill active">3 credentials</span></td><td style="color:var(--tl);font-size:13px">Mar 15, 2026</td></tr>
+                  <tr><td style="font-weight:500">Prof. Michael Okonkwo</td><td style="color:var(--tl);font-family:monospace;">UP-45</td><td><span class="pill active">2 credentials</span></td><td style="color:var(--tl);font-size:13px">Mar 12, 2026</td></tr>
+                  <tr><td style="font-weight:500">Dr. Amina Al-Jaber</td><td style="color:var(--tl);font-family:monospace;">PHR-789</td><td><span class="pill active">5 credentials</span></td><td style="color:var(--tl);font-size:13px">Mar 10, 2026</td></tr>
+                  <tr><td style="font-weight:500">Prof. James O'Brien</td><td style="color:var(--tl);font-family:monospace;">LLM-22</td><td><span class="pill active">1 credential</span></td><td style="color:var(--tl);font-size:13px">Mar 8, 2026</td></tr>
+                  <tr><td style="font-weight:500">Dr. Priya Sharma</td><td style="color:var(--tl);font-family:monospace;">MH-4382</td><td><span class="pill active">4 credentials</span></td><td style="color:var(--tl);font-size:13px">Mar 5, 2026</td></tr>
+                  <tr><td style="font-weight:500">Ms. Keiko Nakamura</td><td style="color:var(--tl);font-family:monospace;">JPN-67</td><td><span class="pill active">2 credentials</span></td><td style="color:var(--tl);font-size:13px">Mar 3, 2026</td></tr>
+                  <tr><td style="font-weight:500">Dr. Carlos Rivera</td><td style="color:var(--tl);font-family:monospace;">SP-1098</td><td><span class="pill active">3 credentials</span></td><td style="color:var(--tl);font-size:13px">Feb 28, 2026</td></tr>
+                  <tr><td style="font-weight:500">Prof. Aisha Mensah</td><td style="color:var(--tl);font-family:monospace;">GH-505</td><td><span class="pill active">2 credentials</span></td><td style="color:var(--tl);font-size:13px">Feb 25, 2026</td></tr>
+                  <tr><td style="font-weight:500">Dr. Lena Fischer</td><td style="color:var(--tl);font-family:monospace;">DE-301</td><td><span class="pill active">3 credentials</span></td><td style="color:var(--tl);font-size:13px">Feb 22, 2026</td></tr>
+                  <tr><td style="font-weight:500">Mr. David Osei-Bonsu</td><td style="color:var(--tl);font-family:monospace;">ACC-112</td><td><span class="pill active">1 credential</span></td><td style="color:var(--tl);font-size:13px">Feb 19, 2026</td></tr>
                 </tbody>
               </table>
             </div>
@@ -353,7 +350,7 @@
       <!-- UPLOAD DATA -->
       <div class="panel" id="uploadDataPanel">
 
-        <!-- ─── MODE SELECTOR CARDS (always visible, side by side) ─── -->
+        <!-- MODE SELECTOR CARDS -->
         <div class="upload-options">
           <div class="option-card active" id="cardQuick" onclick="setMode('quick')">
             <div class="oc-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
@@ -367,7 +364,7 @@
           </div>
         </div>
 
-        <!-- ─── QUICK ADD ─── -->
+        <!-- QUICK ADD -->
         <div class="upload-section active" id="secQuick">
           <div class="stepper">
             <div class="sdot active" id="dot1"><div class="sc" id="sc1">1</div><div class="sinfo"><div class="sn">Step 1</div><div class="stitle">Awardee Details</div></div><div class="sline" id="sl1"></div></div>
@@ -419,7 +416,7 @@
           </div>
         </div><!-- /secQuick -->
 
-        <!-- ─── BULK UPLOAD ─── -->
+        <!-- BULK UPLOAD -->
         <div class="upload-section" id="secBulk">
           <div class="bulk-card">
             <h3>Bulk Upload</h3><p class="sub">Upload multiple awardees at once via CSV</p>
@@ -470,6 +467,9 @@ var awLangs=[];
 var awSkills=[];
 var photoDataUrl=null;
 var csvData=[];
+
+// store file data for each credential
+var credFileData = {};
 
 function toast(msg,type){
   type=type||'info';
@@ -632,10 +632,11 @@ function rmATag(wrapId,inputId,i){
 setupTag('langIn',awLangs,'langWrap');
 setupTag('skillIn',awSkills,'skillWrap');
 
-/* ─── CRED BLOCKS ─── */
+/* ─── CRED BLOCKS with file upload ─── */
 function addCred(){
   var id=++credCount;
   window['cs_'+id]=[];
+  credFileData[id] = null; // store uploaded file info
   var div=document.createElement('div');div.className='cred-block';div.id='cb_'+id;
   div.innerHTML='<div class="cbt">Credential #'+id+'</div>'+(id>1?'<button class="rm-cred" type="button" onclick="rmCred('+id+')">×</button>':'')+
     '<div class="fgrid">'+
@@ -643,6 +644,7 @@ function addCred(){
     '<div class="field"><label>Issued By <span class="req">*</span></label><input type="text" id="ci_'+id+'" placeholder="Issuing institution"><span class="verr" id="ciE_'+id+'">Required</span></div>'+
     '<div class="field"><label>Credential ID <span class="req">*</span></label><input type="text" id="cid_'+id+'" placeholder="e.g. NYU-2024-001"><span class="verr" id="cidE_'+id+'">Required</span></div>'+
     '<div class="field"><label>Credential Link</label><input type="url" id="cl_'+id+'" placeholder="https://verify.example.com/..."></div>'+
+    '<div class="field full"><label>Upload Credential (PDF) - optional</label><input type="file" id="cu_'+id+'" accept=".pdf" style="display:block;width:100%;padding:8px;border:1px solid var(--border);border-radius:var(--rsm);background:#fff;"></div>'+
     '<div class="field full"><label>Skills for this Credential</label><div class="tags-wrap" id="csw_'+id+'" onclick="document.getElementById(\'csi_'+id+'\').focus()"><input type="text" class="tag-input" id="csi_'+id+'" placeholder="Type and press Enter…"></div><span class="hint">Press Enter after each skill</span></div>'+
     '</div>';
   document.getElementById('credBlocks').appendChild(div);
@@ -654,6 +656,12 @@ function addCred(){
         this.value='';
       }
     });
+    // store file when selected
+    document.getElementById('cu_'+bid).addEventListener('change',function(e){
+      var f = e.target.files[0];
+      if(f) credFileData[bid] = f;
+      else credFileData[bid] = null;
+    });
   })(id);
 }
 function renderCredSkills(id){
@@ -664,7 +672,7 @@ function renderCredSkills(id){
   wrap.appendChild(inp);
 }
 function rmCS(id,i){window['cs_'+id].splice(i,1);renderCredSkills(id);}
-function rmCred(id){var el=document.getElementById('cb_'+id);if(el)el.remove();}
+function rmCred(id){var el=document.getElementById('cb_'+id);if(el)el.remove(); delete credFileData[id];}
 
 /* ─── STEPPER ─── */
 function goStep(step){
@@ -727,13 +735,15 @@ function buildReview(){
     var issuer=document.getElementById('ci_'+id).value.trim();
     var cid=document.getElementById('cid_'+id).value.trim();
     var link=document.getElementById('cl_'+id).value.trim();
+    var fileInfo = credFileData[id] ? ' (PDF: ' + credFileData[id].name + ')' : '';
     var csk=window['cs_'+id]||[];
     html+='<div class="cred-rev"><div class="rev-grid">'+
       '<div class="rev-item"><label>Credential Name</label><span>'+esc(cname)+'</span></div>'+
       '<div class="rev-item"><label>Issued By</label><span>'+esc(issuer)+'</span></div>'+
-      '<div class="rev-item"><label>Credential ID</label><span style="font-family:monospace;font-size:13px">'+esc(cid)+'</span></div>';
-    if(link) html+='<div class="rev-item"><label>Link</label><a class="cred-link" href="'+esc(link)+'" target="_blank"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>View</a></div>';
-    html+='</div>';
+      '<div class="rev-item"><label>Credential ID</label><span style="font-family:monospace;font-size:13px">'+esc(cid)+'</span></div>'+
+      (link ? '<div class="rev-item"><label>Link</label><a class="cred-link" href="'+esc(link)+'" target="_blank"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>View</a></div>' : '')+
+      (fileInfo ? '<div class="rev-item"><label>PDF</label><span style="color:var(--green);">'+esc(fileInfo)+'</span></div>' : '')+
+    '</div>';
     if(csk.length) html+='<div style="margin-top:10px"><label style="font-size:11px;color:var(--tl);font-weight:500;display:block;margin-bottom:6px">Skills</label><div class="rev-tags">'+csk.map(function(s){return '<span class="tag">'+esc(s)+'</span>';}).join('')+'</div></div>';
     html+='</div>';
   });
@@ -748,7 +758,15 @@ function submitEntry(){
   var creds=[];
   document.querySelectorAll('.cred-block').forEach(function(b){
     var id=b.id.replace('cb_','');
-    creds.push({name:document.getElementById('cn_'+id).value.trim(),issuer:document.getElementById('ci_'+id).value.trim(),credId:document.getElementById('cid_'+id).value.trim(),link:document.getElementById('cl_'+id).value.trim(),skills:(window['cs_'+id]||[]).slice()});
+    var file = credFileData[id] ? { name: credFileData[id].name, size: credFileData[id].size } : null;
+    creds.push({
+      name:document.getElementById('cn_'+id).value.trim(),
+      issuer:document.getElementById('ci_'+id).value.trim(),
+      credId:document.getElementById('cid_'+id).value.trim(),
+      link:document.getElementById('cl_'+id).value.trim(),
+      file: file,
+      skills:(window['cs_'+id]||[]).slice()
+    });
   });
   directory.push({id:Date.now(),name:name,univ:univ,about:about,langs:awLangs.slice(),skills:awSkills.slice(),photo:photoDataUrl,credentials:creds,date:new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})});
   toast('Awardee added successfully!','success');
@@ -758,6 +776,7 @@ function submitEntry(){
 
 function resetQuickForm(){
   credCount=0;awLangs.length=0;awSkills.length=0;photoDataUrl=null;
+  credFileData = {};
   ['awName','awUniv','awAbout'].forEach(function(id){var el=document.getElementById(id);if(el){el.value='';el.classList.remove('inv');}});
   document.querySelectorAll('#scon1 .verr').forEach(function(e){e.classList.remove('show');});
   document.getElementById('photoPreview').innerHTML='<svg viewBox="0 0 24 24" style="width:28px;height:28px;stroke:#a78bfa;fill:none;stroke-width:1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-4-4-4 4-4-4"/></svg>';
@@ -784,12 +803,13 @@ function updateStats(){
     var u={};directory.forEach(function(a){u[a.univ.toLowerCase().trim()]=1;});
     document.getElementById('stInst').textContent=12+Object.keys(u).length;
     document.getElementById('stRecent').textContent=28+directory.length;
-    // Prepend new entries to the table
+    // Prepend new entries to the table (with a placeholder Credential ID)
     var tbody=document.querySelector('#dashBody tbody');
     if(tbody){
       var a=directory[directory.length-1];
       var tr=document.createElement('tr');
-      tr.innerHTML='<td style="font-weight:500">'+esc(a.name)+'</td><td style="color:var(--tl)">'+esc(a.univ)+'</td><td><span class="pill gr">'+a.credentials.length+' credential'+(a.credentials.length!==1?'s':'')+'</span></td><td style="color:var(--tl)">'+a.langs.join(', ')+'</td><td style="color:var(--tl);font-size:13px">'+a.date+'</td>';
+      var firstCredId = (a.credentials && a.credentials[0] && a.credentials[0].credId) ? a.credentials[0].credId : '—';
+      tr.innerHTML='<td style="font-weight:500">'+esc(a.name)+'</td><td style="color:var(--tl);font-family:monospace;">'+esc(firstCredId)+'</td><td><span class="pill gr">'+a.credentials.length+' credential'+(a.credentials.length!==1?'s':'')+'</span></td><td style="color:var(--tl);font-size:13px">'+a.date+'</td>';
       tbody.insertBefore(tr,tbody.firstChild);
     }
   }
