@@ -406,4 +406,5 @@ It's not about doing more work—it’s about working smarter. At the end of the
 
 If you're curious about how to bring this to life, [CertifyMe](https://www.certifyme.online/) might be worth a look. They help institutions issue secure, verifiable credentials that are easy to manage and even easier for students to use. No fluff—just a practical way to modernize how you recognize and track learning. 
 
-Want to see how it works? [Book a quick demo](https://info.certifyme.online/request-demo?_gl=1*gm17lu*_gcl_au*NzAyNjQ0ODMuMTc0MTg3NTUyMg..*_ga*MTQ5OTQ1OTQ0Ny4xNzQxODc1NTIy*_ga_8CWQ2KJW5K*czE3NDk2MTY4OTUkbzEwMSRnMCR0MTc0OTYxNjg5NiRqNTkkbDAkaDA.) and check it out for yourself.
+Want to see how it works? [Book a quick demo](https://info.certifyme.online/request-demo) and check it out for yourself.
+ 

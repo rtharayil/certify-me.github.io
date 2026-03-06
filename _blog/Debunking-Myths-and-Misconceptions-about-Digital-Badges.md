@@ -235,6 +235,3 @@ If you’re ready to explore how digital badges can help your students or staff 
 Their platform lets you issue, manage, and verify badges—all in one place—with transparency and trust baked in. Whether you're a student looking to show off real skills or a registrar aiming to streamline achievements, CertifyMe is worth a closer look. 
 
 [Book a quick demo](https://info.certifyme.online/request-demo) today and see it in action for yourself.
-
-
-
