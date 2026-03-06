@@ -211,3 +211,4 @@ Whether you're a student trying to stand out, a university staff member hoping t
 If you’re curious where to begin, check out [CertifyMe](https://www.certifyme.online). It’s a platform that helps institutions create and issue digital credentials that are easy to verify, hard to fake, and simple to share. Students get recognition they can carry anywhere. Staff get tools that simplify the credentialing process. 
 
 Interested? [Book a quick demo](https://info.certifyme.online/request-demo) to see how it could fit into your work or campus.
+ 
