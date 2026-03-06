@@ -346,3 +346,4 @@ If you're curious about how to actually make all this work, check out [CertifyMe
 It’s a digital credentialing platform built for both learners and administrators, making it easier to issue, track, and manage badges across departments or programs. You’ll get clean badge visuals, secure verification, and skill metadata that tells a story—not just a score. 
 
 *Want to see how it could fit into your world?* [Book a free demo call](https://info.certifyme.online/request-demo) and explore it firsthand.
+ 
