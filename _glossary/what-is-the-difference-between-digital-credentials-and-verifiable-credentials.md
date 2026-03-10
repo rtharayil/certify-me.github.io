@@ -7,7 +7,7 @@ title: "What Is the Difference Between Digital Credentials and Verifiable Creden
 
 description: "Learn the difference between digital credentials and verifiable credentials, why not all digital credentials are independently verifiable, and how W3C standards enable trusted verification."
 
-imageLink: /assets4/images/Glossary/what-does-verifiable-mean-in-digital-credentials.png
+imageLink: /assets4/images/Glossary/what-is-the-difference-between-digital-credentials-and-verifiable-credentials.png
 
 
 abstract: 
