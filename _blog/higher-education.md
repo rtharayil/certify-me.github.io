@@ -95,3 +95,4 @@ As **Averitt Hughes, the Head of the Human Resource Department**, stated,
 *“Choosing CertifyMe was the best decision we made for our sustainability goals. This collaboration has taught us the value of small, impactful steps that contribute to a healthier planet.”*
 
 The successful partnership with CertifyMe allowed the university to maintain its green commitments and positioned it as a leader in sustainable education practices. If your institution is looking to adopt sustainable practices while enhancing operational efficiency, consider partnering with CertifyMe. [Book a demo today](https://info.certifyme.online/request-demo) and take the first step toward a greener future!
+
