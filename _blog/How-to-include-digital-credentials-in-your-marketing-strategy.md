@@ -100,7 +100,7 @@ Tips to make the most of it:
 
 **b. Email Campaigns: Make It Feel Personal**
 
-Email marketing often feels robotic. But not when it’s about celebrating real achievements.
+[Email marketing](https://www.mailmodo.com/guides/email-marketing/) often feels robotic. But not when it’s about celebrating real achievements.
 
 Let your email campaigns reflect recognition, not promotion.
 
