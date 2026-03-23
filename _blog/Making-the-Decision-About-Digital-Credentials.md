@@ -98,7 +98,7 @@ Let’s break them down:
 
     Not unless you know who issued it, right?
 
-    Trust is everything in digital credentials. A badge from a random website doesn’t carry the same weight as one from your university or a known professional body.
+    Trust is everything in digital credentials. A badge from a random website doesn't carry the same weight as one from your university or a known professional body. Part of what determines that trust is whether the credential is actually built for independent verification — a distinction covered in detail in our guide to [digital credentials vs verifiable credentials.](https://www.certifyme.online/glossary/what-is-the-difference-between-digital-credentials-and-verifiable-credentials.html)
 
     Students and employers both need to trust that:
 
