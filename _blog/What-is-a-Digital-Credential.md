@@ -381,7 +381,7 @@ While digital credentials offer many benefits, there are some common challenges 
 
 ### Myth 1: Digital Credentials Offer No Advantage Over Digital PDF Credentials
 
-Some think digital credentials are just advanced PDFs, but they actually offer much more. Unlike static PDFs, digital credentials feature real-time verification, enhanced security with encryption, and tamper-proof technology. They also allow for easy updates and integration with verification systems. While PDFs display information, digital credentials ensure its authenticity and protect it against fraud, making them a far superior option for modern credentialing.
+Some think digital credentials are just advanced PDFs, but they actually offer much more. Unlike static PDFs, digital credentials feature real-time verification, enhanced security with encryption, and tamper-proof technology. That said, not every digital credential is built the same way — understanding the [difference between digital credentials and verifiable credentials](https://www.certifyme.online/glossary/what-is-the-difference-between-digital-credentials-and-verifiable-credentials.html) helps clarify which level of trust a given credential actually provides. They also allow for easy updates and integration with verification systems. While PDFs display information, digital credentials ensure its authenticity and protect it against fraud, making them a far superior option for modern credentialing.
 
 <br>
 
