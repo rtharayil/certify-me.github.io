@@ -10,10 +10,10 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Verifiable Digital<br> Credential Software<br> for Institutions That<br> Require Trust  
-HeroText: 'Issue secure, customizable digital credentials that scale with your organization and remain trusted over time.'
+HeroTitle: Global Recognition for Your Learning Programs through Verifiable Credentials  
+HeroText: 'Empower learners with Open Badge 3 and W3C VC credentials that prove skills, boost employability, and are recognized worldwide.'
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
-HeroDemoButton: Request A Demo
+HeroDemoButton: Request a Demo
 HeroVideoButton: Watch Video
 HeroVideoButtonLink: https://www.youtube.com/watch?v=TJMwk6qIxSc
 FlaticonCheckHeroText: ' Ranked as Leader in Digital Credential Management Software across Education Industry - G2 , TrustRadius , Capterra' 
