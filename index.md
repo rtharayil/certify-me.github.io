@@ -11,7 +11,7 @@ sitemap.priority: 1
 
 # hero section 
 HeroTitle: Global Recognition for Your Learning Programs through Verifiable Credentials  
-HeroText: 'Empower learners with Open Badge 3 and W3C VC credentials that prove skills, boost employability, and are recognized worldwide.'
+HeroText: 'Empower your learners with Badges and Certificates that prove skills, boost employability, and are recognized worldwide'
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request a Demo
 HeroVideoButton: Watch Video
