@@ -10,7 +10,7 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Global Recognition for Your Learning Programs through Verifiable Credentials  
+HeroTitle: Enable Global Recognition for your Learners through Verifiable Credentials  
 HeroText: 'Empower your learners with Badges and Certificates that prove skills, boost employability, and are recognized worldwide'
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request a Demo
