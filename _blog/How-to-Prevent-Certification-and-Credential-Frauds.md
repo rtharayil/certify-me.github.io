@@ -153,7 +153,7 @@ It’s time to face the facts—paper certificates just don’t cut it anymore. 
 
 That’s where digital credentials come in. Think of them as the modern, secure version of your transcript or diploma—only smarter and a lot harder to fake.
 
-At their core, [verifiable digital credentials](https://www.certifyme.online/blog/Effective-advantages-of-verifiable-digital-records.html) are records of academic or professional achievement stored electronically, offering secure, tamper-proof, and instantly shareable alternatives to paper-based documents. 
+At their core, verifiable digital credentials are records of academic or professional achievement stored electronically, offering secure, tamper-proof, and instantly shareable alternatives to paper-based documents. It's worth noting that [not all digital credentials are independently verifiable](https://www.certifyme.online/glossary/what-is-the-difference-between-digital-credentials-and-verifiable-credentials.html) — the fraud-prevention properties described here apply specifically to credentials built on open verification standards like W3C.
 
 Whether it’s a diploma, a certificate of course completion, or a skill badge earned through a workshop, these credentials are designed to be both easily shareable and instantly checkable. No more mailing paper copies. No more waiting on a registrar’s reply.
 
