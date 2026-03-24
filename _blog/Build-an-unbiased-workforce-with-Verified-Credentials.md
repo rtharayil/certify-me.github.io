@@ -60,7 +60,7 @@ For example:
 
 1. A credential showing your CPR training issued by the Red Cross.
 
-They are issued using blockchain or similar secure technologies to make sure they can’t be faked or altered. The best part? They can be shared with just a link, or even embedded on your LinkedIn profile.
+They are issued using blockchain or similar secure technologies to make sure they can't be faked or altered. If you're wondering [are they legit](https://www.certifyme.online/glossary/are-verified-credentials-legit.html) and what specifically makes them tamper-proof, that's covered in detail separately. The best part? They can be shared with just a link, or even embedded on your LinkedIn profile.
 
 Why does this matter?
 
