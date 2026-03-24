@@ -54,8 +54,7 @@ Blockchain technology is an effective safeguard against fraud, primarily due to 
 
 Another reason blockchain digital credentials are secure is the consensus mechanism used to add new blocks to the chain. This process requires agreement from the majority of nodes before a block is considered valid. If someone attempted to change a credential, the consensus mechanism would immediately reject the alteration. 
 
-Blockchain also uses cryptographic security, including hash functions, to create unique identifiers for each block. These hash functions are designed to be one-way, meaning they can't be reversed to reveal or alter the original data, adding a robust layer of security. The transparency and auditability of blockchain further contribute to its security, allowing anyone to inspect the chain and quickly detect unauthorized changes. 
-
+Blockchain also uses cryptographic security, including hash functions, to create unique identifiers for each block. These hash functions are designed to be one-way, meaning they can't be reversed to reveal or alter the original data, adding a robust layer of security. The transparency and auditability of blockchain further contribute to its security, allowing anyone to inspect the chain and quickly detect unauthorized changes. This is also what makes [verified credentials legit](https://www.certifyme.online/glossary/are-verified-credentials-legit.html) — the combination of immutability, cryptographic proof, and open standards working together.
 <br>
 
 ## Is Privacy Protected in Blockchain Digital Credentials?
