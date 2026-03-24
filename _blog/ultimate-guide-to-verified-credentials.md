@@ -192,7 +192,7 @@ These applications demonstrate the incredible versatility of verified credential
 
 ## How to Check the Authenticity of Verified Credentials
 
-Verifying the authenticity of verified credentials is a simple and secure process. Here's a step-by-step approach:
+Verifying the authenticity of verified credentials is a simple and secure process. If you want to understand what it actually means to [verify a credential](https://www.certifyme.online/glossary/what-does-it-mean-to-verify-credentials.html) before going through the steps, that's covered in detail separately. Here's the step-by-step approach:
 
 1. **Obtain the Credential:** The holder provides you with the credential link or a QR code to initiate the verification process. This could be for a diploma, work experience, certification, or other credentials.
 
