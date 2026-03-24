@@ -21,7 +21,7 @@ featured: true
 
 ## The Components of Verifiable Credentials
 
-Verifiable Credentials consist of three fundamental components, each contributing to their integrity and security:
+Verifiable Credentials consist of three fundamental components, each contributing to their integrity and security. How these components are formally structured and protected is defined by the [standards that govern verifiable credentials](https://www.certifyme.online/glossary/what-standards-govern-verifiable-credentials.html), including W3C, Open Badges 3.0, and Europass:
 
 1. <b>Metadata</b><br>
 Metadata is information about data or information. It helps users identify data within repositories and comprehend the underlying information. This valuable aspect of verifiable credentials ensures efficient data management, organization, and utilization.
