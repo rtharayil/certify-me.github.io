@@ -11,7 +11,7 @@ sitemap.priority: 1
 
 # hero section 
 HeroTitle: Empower your Learners with globally recognized Verifiable Credentials  
-HeroText: 'Empower your learners with Badges and Certificates that prove skills, boost employability, and are recognized worldwide'
+HeroText: 'Elevate your learning programs with globally recognized, standards-compliant badges and certificates—powered by secure verification and fraud detection to validate skills and enhance employability'
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request a Demo
 HeroVideoButton: Watch Video
