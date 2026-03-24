@@ -354,7 +354,9 @@ Designed with higher education and professional training in mind, CertifyMe prov
 
 ## Conclusion 
 
-W3C Verifiable Credentials give organizations and individuals a clearer way to share information that others can rely on without the usual delays, doubts, or back-and-forth. Instead of depending on files that can be misplaced or misread, credentials follow a consistent format that’s easy for anyone to check.
+W3C Verifiable Credentials give organizations and individuals a clearer way to share information that others can rely on without the usual delays, doubts, or back-and-forth. If you want to understand how W3C fits alongside other [verifiable credential standards beyond W3C](https://www.certifyme.online/glossary/what-standards-govern-verifiable-credentials.html), such as Open Badges 3.0, Europass, and SD-JWT — that's covered in detail separately.
+
+If you want to understand how W3C fits alongside other verifiable credential standards beyond W3C, such as Open Badges 3.0, Europass, and SD-JWT — that's covered in detail separately. Instead of depending on files that can be misplaced or misread, credentials follow a consistent format that’s easy for anyone to check.
 
 They’re useful across many environments — universities managing student records, employers verifying skills, training providers issuing completions, or government teams confirming identity details. In each case, the goal is the same: make trusted information easier to share and straightforward to confirm, no matter where it’s used.
 
