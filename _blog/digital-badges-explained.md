@@ -22,7 +22,7 @@ However, amidst this sea of qualifications lies a powerful solution: the Digital
 
 ## What is a Digital Badge?
 
-Digital badges are a type of digital credential, offering a modern alternative to traditional paper certificates. They serve as pictorial representations of an individual's achievements and skills, incorporating shapes, colors, banners, icons, and fonts to convey the credential's significance. 
+Digital badges are a type of digital credential, offering a modern alternative to traditional paper certificates. They serve as pictorial representations of an individual's achievements and skills, incorporating shapes, colors, banners, icons, and fonts to convey the credential's significance. For a closer look at [verifiable credential examples](https://www.certifyme.online/glossary/what-is-an-example-of-a-verifiable-credential.html) across formats like badges, transcripts, and course certificates, see our dedicated guide.
 
 These badges are more than just images; they contain metadata, such as badge name, description, issuing organization, and recipient details, providing comprehensive information about the credential's value and relevance.
 
