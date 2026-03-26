@@ -52,7 +52,7 @@ Think of it like this: just as libraries evolved from card catalogs to digital d
 
 Going digital doesn’t mean throwing away tradition. It means preserving the value of your credentials in a format that today’s learners and employers can actually use. 
 
-Whether you're issuing degrees, micro-credentials, or continuing education badges, the digital format gives you more control, more transparency, and more reach.
+Whether you're issuing degrees, micro-credentials, or continuing education badges, the digital format gives you more control, more transparency, and more reach. For a closer look at the different [verifiable credential formats](https://www.certifyme.online/glossary/what-is-an-example-of-a-verifiable-credential.html), including what each one contains and how it's used, see our dedicated guide.
 
 <br>
 

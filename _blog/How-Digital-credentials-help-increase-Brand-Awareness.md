@@ -77,7 +77,7 @@ But that’s just the surface. What makes digital credentials truly exciting in 
 
 Curious about common doubts learners and institutions face? [Explore debunked myths about digital badges](https://www.certifyme.online/blog/Debunking-Myths-and-Misconceptions-about-Digital-Badges.html).
 
-And for institutions? They act like tiny digital ambassadors. Every time a badge is shared, your logo goes with it. Every click back to your site is a potential enrollment, inquiry, or conversation. 
+And for institutions? They act like tiny digital ambassadors. Every time a badge is shared, your logo goes with it. Every click back to your site is a potential enrollment, inquiry, or conversation — one of the less obvious reasons organizations [use verifiable credentials](https://www.certifyme.online/glossary/why-use-verifiable-credentials%20.html) beyond just security and verification.
 
 In short, digital credentials don’t just prove something valuable happened—they show who made it happen: you.
 

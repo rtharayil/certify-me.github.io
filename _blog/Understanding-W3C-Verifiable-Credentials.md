@@ -303,7 +303,7 @@ In all these scenarios, the same benefit repeats: fast, secure, privacy-preservi
 
 Verifying a W3C Verifiable Credential (W3C VC) is designed to be fast and straightforward. Instead of emailing institutions or checking PDFs manually, a verifier can confirm everything in seconds.
 
-The process usually starts with the holder sharing the credential through a QR code, link, or wallet app. This generates a verifiable presentation, which contains the required information along with its digital proof.
+The process usually starts with the holder sharing the credential through a QR code, link, or wallet app. For a detailed breakdown of [how credential verification works](https://www.certifyme.online/glossary/what-does-it-mean-to-verify-credentials.html) — including what each check confirms — see our dedicated guide. This generates a verifiable presentation, which contains the required information along with its digital proof.
 
 When the verifier receives it, their system automatically checks the digital signature against the issuer’s DID. If the signature matches and the DID is valid, the credential is authentic. The system then checks the credential status to confirm it hasn’t been revoked or expired.
 
@@ -354,7 +354,9 @@ Designed with higher education and professional training in mind, CertifyMe prov
 
 ## Conclusion 
 
-W3C Verifiable Credentials give organizations and individuals a clearer way to share information that others can rely on without the usual delays, doubts, or back-and-forth. Instead of depending on files that can be misplaced or misread, credentials follow a consistent format that’s easy for anyone to check.
+W3C Verifiable Credentials give organizations and individuals a clearer way to share information that others can rely on without the usual delays, doubts, or back-and-forth. If you want to understand how W3C fits alongside other [verifiable credential standards beyond W3C](https://www.certifyme.online/glossary/what-standards-govern-verifiable-credentials.html), such as Open Badges 3.0, Europass, and SD-JWT — that's covered in detail separately.
+
+If you want to understand how W3C fits alongside other verifiable credential standards beyond W3C, such as Open Badges 3.0, Europass, and SD-JWT — that's covered in detail separately. Instead of depending on files that can be misplaced or misread, credentials follow a consistent format that’s easy for anyone to check.
 
 They’re useful across many environments — universities managing student records, employers verifying skills, training providers issuing completions, or government teams confirming identity details. In each case, the goal is the same: make trusted information easier to share and straightforward to confirm, no matter where it’s used.
 

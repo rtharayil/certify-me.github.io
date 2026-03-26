@@ -38,7 +38,7 @@ This seamless process benefits both individuals and organizations, reducing admi
 
 ## World Wide Web Consortium's (W3C) Verified Credentials Data Model
 
-The W3C’s Verified Credentials Data Model is a foundational framework that ensures digital credentials are secure, interoperable, and universally accepted. By standardizing how these credentials are issued, stored, and shared, it creates a seamless system for verification across borders, benefiting both individuals and organizations.
+The W3C's Verified Credentials Data Model is a foundational framework that ensures digital credentials are secure, interoperable, and universally accepted. For a fuller breakdown of the [W3C Verified Credentials Data Model](https://www.certifyme.online/blog/what-standards-govern-verifiable-credentials.html) standards — including how Open Badges 3.0, Europass, and SD-JWT relate to it — see our dedicated guide. By standardizing how these credentials are issued, stored, and shared, it creates a seamless system for verification across borders, benefiting both individuals and organizations.
 
 1. **Global Standardization:** The framework provides a uniform structure for digital credentials, ensuring they are tamper-proof and consistent regardless of the issuing authority. This guarantees that credentials meet a reliable and globally recognized format.
 
@@ -192,7 +192,7 @@ These applications demonstrate the incredible versatility of verified credential
 
 ## How to Check the Authenticity of Verified Credentials
 
-Verifying the authenticity of verified credentials is a simple and secure process. Here's a step-by-step approach:
+Verifying the authenticity of verified credentials is a simple and secure process. If you want to understand what it actually means to [verify a credential](https://www.certifyme.online/glossary/what-does-it-mean-to-verify-credentials.html) before going through the steps, that's covered in detail separately. Here's the step-by-step approach:
 
 1. **Obtain the Credential:** The holder provides you with the credential link or a QR code to initiate the verification process. This could be for a diploma, work experience, certification, or other credentials.
 

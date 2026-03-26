@@ -151,7 +151,7 @@ These conventional methods present several drawbacks:
 
 It’s time to face the facts—paper certificates just don’t cut it anymore. They’re easy to damage, easier to forge, and frankly, hard to keep track of in today’s fast-paced, online-first world. 
 
-That’s where digital credentials come in. Think of them as the modern, secure version of your transcript or diploma—only smarter and a lot harder to fake.
+That's where digital credentials come in. Think of them as the modern, secure version of your transcript or diploma — only smarter and a lot harder to fake. Understanding [what credential verification means](https://www.certifyme.online/glossary/what-does-it-mean-to-verify-credentials.html) at a technical level helps clarify why digital credentials are harder to beat than paper or PDFs.
 
 At their core, verifiable digital credentials are records of academic or professional achievement stored electronically, offering secure, tamper-proof, and instantly shareable alternatives to paper-based documents. It's worth noting that [not all digital credentials are independently verifiable](https://www.certifyme.online/glossary/what-is-the-difference-between-digital-credentials-and-verifiable-credentials.html) — the fraud-prevention properties described here apply specifically to credentials built on open verification standards like W3C.
 

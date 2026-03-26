@@ -222,11 +222,9 @@ Verifiable credentials flip this on its head. They’re:
 
 1. Tied to your identity without revealing unnecessary info
 
-1. Impossible to forge, because they come signed by your school or institution
+1.  Impossible to forge because they come signed by your school or institution
 
-1. Easily revoked if something changes or expires
-
-It’s like handing someone a one-time-use key to a single room—rather than the master key to your whole digital life.
+If you want to understand the full picture of why [credentials are legit](https://www.certifyme.online/glossary/are-verified-credentials-legit.html), covering immutable ledgers, cryptographic signatures, and compliance standards, that's detailed separately.
 
 <br>
 

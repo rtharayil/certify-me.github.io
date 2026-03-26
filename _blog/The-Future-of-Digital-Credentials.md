@@ -122,7 +122,7 @@ Let’s be honest—traditional diplomas have done their job for a long time. Yo
 
 But here’s the thing: that paper isn’t exactly built for today’s fast-moving, tech-driven world. It's static, hard to share, and offers very little detail about what you've actually learned.
 
-A diploma says you completed a program. But it doesn’t show the full picture. It doesn’t highlight the coding bootcamp you aced over summer break. Or the leadership course you completed online. Or that research project you spent months on. 
+A diploma says you completed a program. But it doesn't show the full picture. It doesn't highlight the coding bootcamp you aced over summer break. Or the leadership course you completed online. Or that research project you spent months on. That gap is exactly [why institutions use verifiable credentials](https://www.certifyme.online/glossary/why-use-verifiable-credentials%20.html) to supplement traditional qualifications.
 
 In short, a diploma tells the what—not the how, when, or why. Employers today are asking, “What skills do you really have, and how can you prove them?” A diploma alone struggles to answer that.
 
