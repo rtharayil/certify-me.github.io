@@ -10,8 +10,8 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Empower your Learners with globally recognized Verifiable Credentials  
-HeroText: 'Elevate your learning programs with globally recognized, standards-compliant badges and certificates—powered by secure verification and fraud detection to validate skills and enhance employability'
+HeroTitle: Make your Certificates globally verifiable and instantly trusted.  
+HeroText: 'Empower your organization to issue OpenBadge-standard certificates with secure, fraud-proof verification—enhancing the credibility of your learning programs and the employability of your learners'
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request a Demo
 HeroVideoButton: Watch Video
