@@ -10,7 +10,7 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Make your Certificates globally verifiable and instantly trusted.  
+HeroTitle: Issue certificates that are globally verifiable and trusted  
 HeroText: 'Empower your organization to issue OpenBadge-standard certificates with secure, fraud-proof verification—enhancing the credibility of your learning programs and the employability of your learners'
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request a Demo
