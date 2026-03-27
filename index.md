@@ -11,7 +11,7 @@ sitemap.priority: 1
 
 # hero section 
 HeroTitle: Issue certificates that are globally verifiable and trusted  
-HeroText: '<Strong>Open Badges 3.0</Strong> compliant credentials with fraud-proof, secure verification — boosting your credibility and learner employability'
+HeroText: '<Strong>Open Badges 3.0</Strong> compliant tamper-proof credentials. <br> Boosting your credibility and learner employability'
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request a Demo
 HeroVideoButton: Watch Video
