@@ -38,7 +38,7 @@ Leeds University aimed to address the following key objectives with CertifyMe’
 ## Solution
 
 In collaboration with CertifyMe, Leeds University implemented a secure and user-friendly digital credentialing system with the following key features:
-1. **Blockchain-Enabled Credentials:** CertifyMe’s technology ensure the integrity and authenticity of the digital credentials, eliminating the need for physical documentation.
+1. **Blockchain-Enabled Credentials:** CertifyMe's technology ensures the integrity and authenticity of the digital credentials, eliminating the need for physical documentation. This process is explained in full detail in our guide to [educational credential verification.](https://www.certifyme.online/glossary/how-to-verify-digital-credentials-issued-by-educational-institutions.html)
 1. **Custom Branding and Integration:** Digital credentials were customized to prominently display the university’s branding, and the system was seamlessly integrated with the existing LMS (Learning Management System) for automated credential issuance.
 1. **Social Media Shareability:** Graduates could easily share their credentials across 40+ social media platforms, promoting the university’s brand and demonstrating their achievements to potential employers.
 
