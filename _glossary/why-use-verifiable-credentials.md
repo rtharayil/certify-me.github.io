@@ -86,6 +86,36 @@ This context matters. A recruiter reviewing a verifiable credential doesn't have
 
 Before getting into the benefits, it helps to understand exactly what breaks down with traditional systems. The table below maps each problem to how verifiable credentials address it.
 
+<html lang="en">
+<head>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
 <table aria-label="Traditional Credentials vs Verifiable Credentials">
   <thead>
     <tr>
@@ -116,6 +146,9 @@ Before getting into the benefits, it helps to understand exactly what breaks dow
     </tr>
   </tbody>
 </table>
+
+</body>
+</html>
 
 <br>
 
