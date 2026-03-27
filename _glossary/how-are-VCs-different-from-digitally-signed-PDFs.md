@@ -61,6 +61,36 @@ The rules for this ecosystem are set by open global standards, specifically W3C 
 
 The table below summarizes the seven core differences. Each is explained in more detail in the sections that follow.
 
+<html lang="en">
+<head>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
 <table aria-label="Verifiable Credentials vs Digital Signed PDFs">
   <thead>
     <tr>
@@ -107,6 +137,9 @@ The table below summarizes the seven core differences. Each is explained in more
     </tr>
   </tbody>
 </table>
+
+</body>
+</html>
 
 <br>
 
