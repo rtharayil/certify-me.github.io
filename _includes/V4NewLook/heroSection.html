@@ -26,10 +26,69 @@
                         </div>
 
 
-                        <!-- Text -->
-                        <p class="p-sm btn-txt ico-15" style="padding-bottom: 30px;">
-                            <span class="flaticon-check"></span> {{page.FlaticonCheckHeroText}}
-                        </p>
+                       
+
+                        <style>
+                            /* Container */
+.cred-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Default (Desktop) */
+.cred-tag {
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 50px;
+    background: rgba(106, 90, 205, 0.08);
+    color: #282B75!important;
+    border: 1px solid rgba(106, 90, 205, 0.2);
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    margin-bottom: 55px;
+}
+
+/* Hover */
+.cred-tag:hover {
+    background: #6a5acd;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+
+
+/* 📲 Tablet (balanced spacing) */
+@media (min-width: 577px) and (max-width: 991px) {
+    .cred-tag {
+        font-size: 12.5px;
+        padding: 7px 14px;
+    }
+}
+/* Hide on mobile */
+@media (max-width: 576px) {
+    .cred-tags {
+        display: none !important;
+    }
+}
+                        </style>
+
+                       <div class="btns-group cred-tags mt-4">
+                            <span class="cred-tag">Ranked #2 on G2</span>
+                        <span class="cred-tag"> Fraud-Proof Verification</span>
+
+ <span class="cred-tag">W3C Verifiable Credentials</span>
+ 
+
+
+   
+
+ 
+
+    
+
+</div>
 
                     </div>
                 </div> <!-- END HERO TEXT -->
