@@ -32,7 +32,7 @@ Digital credentials are like online proof of your skills, achievements, or knowl
 1. Digital certificates (like your online degree or workshop proof)
 1. Micro-credentials (smaller, focused certifications on specific topics)
 
-These aren't just images or PDFs. They often include data that makes them verifiable — meaning someone can actually check that it's real, which is a function of how [verifiable credentials work](https://www.certifyme.online/glossary/how-are-VCs-different-from-digitally-signed-PDFs.html) differently from a standard signed document.
+These aren't just images or PDFs. They often include data that makes them verifiable — meaning someone can actually check that it's real and not something you made in Photoshop. That verifiability is only one of the [benefits of verifiable credentials](https://www.certifyme.online/glossary/what-are-the-benefits-of-verifiable-credentials.html) that set them apart from static documents.
 
 Imagine you finish a course in "Intro to Data Analysis." You get a digital certificate. Now, instead of mailing or scanning it, you just send a link or add it to your LinkedIn profile. 
 

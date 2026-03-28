@@ -111,7 +111,7 @@ Digital credentials are built for verification.
 
 1. **Tamper-Proof Technology**
 
-   Most platforms use cryptographic seals or blockchain verification, which means once a credential is issued, it can’t be altered or faked.
+   Most platforms use cryptographic seals or blockchain verification, which means once a credential is issued, it can't be altered or faked. It becomes a property that directly supports the [verifiability of credentials](https://www.certifyme.online/glossary/how-do-universities-ensure-longterm-verifiability-of-issued-credentials.html) over years and decades, not just at the moment of issuance. This is why [verifiable credentials](https://www.certifyme.online/glossary/what-are-verifiable-credentials-used-for.html) are being adopted across education, healthcare, and professional associations as a more reliable alternative to paper documents.
 
 1. **Instant Authenticity Checks**
 

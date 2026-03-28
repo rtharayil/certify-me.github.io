@@ -71,7 +71,7 @@ Transcripts are essential in various scenarios where formal proof of education i
 
 ### Do You Need an Official or Unofficial Transcript?
 
-When it comes to formal applications, official transcripts are typically non-negotiable because they serve as a verified, tamper-proof record of your academic performance. An official transcript is usually sent directly from your institution to the recipient, often in a sealed envelope or through secure digital channels. 
+When it comes to formal applications, official transcripts are typically non-negotiable because they serve as a verified, tamper-proof record of your academic performance. An official transcript is usually sent directly from your institution to the recipient, often in a sealed envelope or through secure digital channel. Nowadays institutions increasingly issue them as digital credentials that recipients can [verify digital credentials](https://www.certifyme.online/glossary/how-to-verify-digital-credentials-issued-by-educational-institutions.html) independently via a unique link or ID.
 
 This added security ensures the transcript hasn’t been altered, which is essential for applications where accuracy and integrity are crucial—such as when applying for graduate school, certain jobs, or professional certifications. 
 

@@ -48,7 +48,7 @@ But it's not just about getting into college - a standout transcript can also un
 
 ### Using Your High School Transcript for Graduation or School Transfers
 
-Your transcript acts as proof that you've met the necessary academic requirements, ensuring a smooth transition to graduation or a new school. It's the document that verifies your readiness for the next step in your academic journey.
+Your transcript acts as proof that you've met the necessary academic requirements, ensuring a smooth transition to graduation or a new school. It's the document that verifies your readiness for the next step in your academic journey, though how institutions maintain [long-term verifiability](https://www.certifyme.online/glossary/how-do-universities-ensure-longterm-verifiability-of-issued-credentials.html) of those records over decades is a separate and increasingly important question.
 
 For example, if you're planning to transfer to a different high school or even a college, your transcript will be a crucial part of the process. It demonstrates that you've successfully completed the coursework and achieved the necessary credits to move forward. Without this official record, your ability to graduate or transfer could be significantly hindered.
 
