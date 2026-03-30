@@ -3,7 +3,7 @@ layout: V4Layout-Glossary-Single-Post
 
 category: "Higher-Ed & Issuer Use Cases"
 
-title: "What Are the Common Use Cases of Verifiable Credentials in Digital Identity Ecosystems?"
+title: "What are common use cases of verifiable credentials in digital identity ecosystems?"
 
 description: "Explore common use cases of verifiable credentials in digital identity ecosystems, including government IDs, corporate access, and university identity systems."
 
