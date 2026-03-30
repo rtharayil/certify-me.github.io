@@ -47,7 +47,7 @@ In short, while traditional credentials have served their purpose, their limitat
 
 ### The Digital Solution
 
-Verifiable digital records utilize technologies like blockchain and digital signatures to ensure authenticity. Each credential is :
+Verifiable digital records utilize technologies like blockchain and digital signatures to ensure authenticity — but the [compliance considerations](https://www.certifyme.online/glossary/what-compliance-considerations-matter-when-issuing-digital-credentials.html) around how they're issued, who can issue them, and what data they contain are equally critical to whether those records are legally trusted. Each credential is :
 
 1. **Tamper-Proof:** Once issued, the information cannot be altered without detection.
 
