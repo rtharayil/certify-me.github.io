@@ -20,7 +20,7 @@ If you're still evaluating delivery formats, this quick read on [paper vs. digit
 
 ## Step 1: Choosing a Digital Credential Management Platform
 
-Selecting the right [credential management platform](https://www.certifyme.online/glossary/how-to-choose-a-verifiable-credential-provider-for-secure-student-record-management.html) is crucial for efficiently sending multiple certificates via email. A good platform should offer ease of use, comprehensive customization options, and secure distribution to ensure the integrity of the certificates.
+SSelecting the right digital credential management platform is crucial for efficiently sending multiple certificates via email. A good platform should offer ease of use, customization options, and [digital credentials securely](https://www.certifyme.online/glossary/how-to-create-and-share-digital-credentials-with-students-securely.html) distributed to students — with the integrity of each certificate intact from issuance through to verification.
 
 <a href="https://www.certifyme.online/">CertifyMe</a> excels in these areas with its intuitive interface, making it easy to manage the entire certificate issuance process. The platform allows you to customize certificates to match your organization's branding and provides secure, tamper-proof certificates. 
 
