@@ -19,7 +19,7 @@ If you’re a student or a university staff member, this question matters more t
 
 Here’s where verifiable credentials come in.
 
-You can think of them like a modern-day digital lockbox. They’re secure, tamper-proof, easy to share, and—most importantly—under your control. In this blog, we’ll explore what verifiable credentials are, how they work, and why they’re fast becoming the smartest way to protect your privacy online.
+You can think of them like a modern-day digital lockbox. They're secure, tamper-proof, easy to share, and—most importantly—under your control. That control is exactly what makes them well-suited for a [digital ID ecosystem](), where identity information needs to be shared selectively without handing over more data than the situation requires. In this blog, we’ll explore what verifiable credentials are, how they work, and why they’re fast becoming the smartest way to protect your privacy online.
 
 <br>
 
