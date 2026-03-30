@@ -21,7 +21,7 @@ This blog will answer some frequently asked questions about how CertifyMe achiev
 
 ## How does CertifyMe ensure the integrity and authenticity of digital credentials?
 
-CertifyMe employs several advanced technologies and best practices to ensure the integrity and authenticity of digital credentials, which directly maps to the [benefits of verifiable credentials](https://www.certifyme.online/glossary/what-are-the%20-benefits-of-verifiable-credentials.html) organizations gain when moving away from traditional certificates. Here is a detailed overview of the technologies employed:
+CertifyMe employs several advanced technologies and best practices to ensure the integrity and authenticity of digital credentials, which directly maps to the [benefits of verifiable credentials](https://www.certifyme.online/glossary/what-are-the-benefits-of-verifiable-credentials.html) organizations gain when moving away from traditional certificates. Here is a detailed overview of the technologies employed:
 
 <br>
 
