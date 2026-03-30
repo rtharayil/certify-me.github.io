@@ -59,7 +59,7 @@ Coupling those security measures with [application performance monitoring](https
 
 Data security and privacy are paramount at CertifyMe. We implement industry-leading security measures, including encryption, secure access controls, and regular security audits. If your team operates remotely, you may also benefit from these best practices on [cyber safety while working from home](https://www.jumpsec.com/guides/cyber-safety-working-from-home/).
 
-Our platform complies with global data protection regulations, such as [GDPR](https://gdpr.eu/what-is-gdpr/) and [W3C](https://www.w3.org/standards/about/) standards, ensuring that user data is handled with the utmost care and confidentiality.
+Our platform complies with global data protection regulations, such as GDPR and W3C standards, ensuring that user data is handled with the utmost care and confidentiality. The same regulatory requirements are covered in detail in our guide on [issuing digital credentials](https://www.certifyme.online/glossary/what-compliance-considerations-matter-when-issuing-digital-credentials.html) compliantly.
 
 Additionally, we are also [ISO 2700](https://www.isms.online/iso-27001/certification/) and [ISO 9001](https://asq.org/quality-resources/iso-9001) certified, along with open badge standard compliant.
 
