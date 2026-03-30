@@ -27,7 +27,7 @@ The first step on your journey to creating a digital badge is [logging into the 
 
 ### Step 2: Creating a Credential Template
 
-After logging in, locate the option that says "Design Template" and click on it. This is where you'll begin the process of crafting your digital badge. CertifyMe offers a comprehensive template that guides you through the badge creation process, ensuring that you include all the necessary information to make your badge informative and visually appealing.<br>
+After logging in, locate the option that says "Design Template" and click on it. This is where you'll begin the process of crafting your digital badge. CertifyMe offers a comprehensive template that guides you through the badge creation process, ensuring that you include all the necessary information to make your badge informative and visually appealing — the same workflow used when institutions [create digital credentials](https://www.certifyme.online/glossary/how-to-create-and-share-digital-credentials-with-students-securely.html) and share them securely with students at scale.<br>
 
 <img class="img-fluid r-16" src="/img/blog/step 5/Step 2.png" alt="Step 2">
 
