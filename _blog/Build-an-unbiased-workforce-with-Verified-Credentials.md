@@ -16,7 +16,7 @@ Have you ever watched someone get hired not because they were the most qualified
 
 But what if hiring could be more objective? What if employers focused only on your skills, your achievements, and your actual work — not your background, your appearance, or who you know?
 
-That's where verified credentials come in. These are not just digital certificates or badges. They’re verifiable proof of your accomplishments, skills, and education — issued and confirmed by a trusted source. Whether you’re a student applying for internships or a university staff member guiding learners into the job market, understanding this tool could reshape how we approach hiring.
+That's where verified credentials come in. They're not just digital certificates or badges. They're verifiable proof of your accomplishments, skills, and education — issued and confirmed by a trusted source. Whether you're a student applying for internships or a university staff member guiding learners into the job market, understanding this tool could reshape how we approach hiring. The [use cases](https://www.certifyme.online/glossary/what-are-common-use-cases-of-verifiable-credentials-in-digital-ID-ecosystem.html) extend well beyond hiring though, reaching into government identity systems, campus access control, and corporate workforce management.
 
 This blog is like a conversation with a good friend. We’ll break down the idea of verified credentials, explore the problem of bias in hiring, and look at how we can use technology to make the workforce more fair. No jargon. No hype. Just clear, useful info.
 
