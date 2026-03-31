@@ -50,11 +50,7 @@ Even better? You don’t need to explain it every time. The credential speaks fo
 
 And it’s not just for formal education—EdTech platforms have been among the early adopters, using digital credentials to certify everything from coding skills to behavioral training. [Learn how EdTech companies are using digital credentials to scale](https://www.certifyme.online/blog/The-Growth-of-Edtech-Companies-through-Digital-Credentials.html).
 
-So, in essence, digital credentials are:
-
-1. Easier to manage than traditional certificates
-1. More secure thanks to technology like blockchain
-1. More informative because they show what someone actually knows or can do
+In essence, digital credentials are easier to manage than traditional certificates, more secure thanks to technology like blockchain, and more informative because they show what someone actually knows or can do — and because they're stored in [digital wallet services](https://www.certifyme.online/glossary/how-to-transfer-verifiable-credentials-between-different-digital-wallet-services.html), recipients can carry and share them independently of whichever platform the issuer uses.
 
 One of the most widely used formats is [Mozilla’s Open Badges](https://openbadges.org/), which provides a framework for issuing and verifying digital achievements across industries.
 
