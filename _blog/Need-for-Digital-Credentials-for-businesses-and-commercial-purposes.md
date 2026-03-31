@@ -36,12 +36,7 @@ These aren't just images or PDFs. They often include data that makes them verifi
 
 Imagine you finish a course in "Intro to Data Analysis." You get a digital certificate. Now, instead of mailing or scanning it, you just send a link or add it to your LinkedIn profile. 
 
-Anyone who clicks it can see:
-
-1. What you learned
-1. Who issued it
-1. When you earned it
-1. Whether it’s still valid
+Anyone who clicks it can see what you learned, who issued it, when you earned it, and whether it's still valid — and that last point depends entirely on [credential revocation](https://www.certifyme.online/glossary/what-is-credential-revocation-and-why-does-it-matter-for-compliance.html) controls being in place on the issuer's side.
 
 <br>
 
