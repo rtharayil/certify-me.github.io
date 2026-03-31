@@ -27,7 +27,7 @@ Let’s start with the basics.
 
 Imagine a student completes a short course on data visualization, participates in a leadership workshop, or develops coding skills through a summer bootcamp. These aren’t typically captured in a transcript, but they represent meaningful growth.
 
-Digital badges and digital certificates provide a way to recognize and document these skills in real time, and with credibility. This is why understanding the [benefits of verifiable credentials](https://www.certifyme.online/glossary/what-are-the-benefits-of-verifiable-credentials.html) matters before choosing a credentialing format. For a breakdown of what each credential type looks like in practice, including its components and use cases, see our guide to [credential examples explained.](https://www.certifyme.online/glossary/what-is-an-example-of-a-verifiable-credential.html)
+Digital badges and digital certificates provide a way to recognize and document these skills—in real time, and with credibility — credibility that depends directly on [digital credential security](https://www.certifyme.online/glossary/what-makes-digital-credential-tamper-evident.html) mechanisms like cryptographic signatures and hashing that make them independently verifiable. This is why understanding the [benefits of verifiable credentials](https://www.certifyme.online/glossary/what-are-the-benefits-of-verifiable-credentials.html) matters before choosing a credentialing format. For a breakdown of what each credential type looks like in practice, including its components and use cases, see our guide to [credential examples explained.](https://www.certifyme.online/glossary/what-is-an-example-of-a-verifiable-credential.html)
 
 <br>
 
