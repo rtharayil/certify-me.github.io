@@ -57,7 +57,7 @@ These elements work together to ensure the certificate’s reliability and trust
 
 ## Digital Certificates vs. Digital Signatures: Key Differences 
 
-While often mentioned together in processes like when you sign a PDF online, digital certificates and digital signatures serve different purposes and [verifiable credentials differ](https://www.certifyme.online/glossary/how-are-VCs-different-from-digitally-signed-PDFs.html) from both in how they're structured, verified, and controlled after issuance. A digital certificate is used to confirm the identity of the certificate holder, such as a person or organization. On the other hand, a digital signature ensures that a document or message has not been altered after it was signed. 
+While often mentioned together in processes like when you sign a PDF online, digital certificates and digital signatures serve different purposes. A digital certificate is used to confirm the identity of the certificate holder, such as a person or organization. On the other hand, a digital signature ensures that a document or message has not been altered after it was signed — though even a signed PDF carries [security risks of certificates](https://www.certifyme.online/glossary/what-are-security-risks-of-non-verifiable-digital-certificates.html) that a truly verifiable credential doesn't.
 
 In simple terms, a digital certificate tells you who sent the message, while a digital signature assures you that the message content is genuine and untampered.
 
