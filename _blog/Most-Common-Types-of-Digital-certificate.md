@@ -65,7 +65,7 @@ In simple terms, a digital certificate tells you who sent the message, while a d
 
 ## How Digital Certificates Work
 
-Digital certificates operate using a pair of cryptographic keys: a public key and a private key. The public key is included in the digital certificate and can be shared openly, while the private key is kept secure by the certificate owner. 
+Digital certificates operate using a pair of cryptographic keys: a public key and a private key. The public key is included in the digital certificate and can be shared openly, while the private key is kept secure by the certificate owner — the same infrastructure that makes [tamper-evident credentials](https://www.certifyme.online/glossary/what-makes-digital-credential-tamper-evident.html) possible in verifiable credentialing systems.
 
 When data is sent, it is encrypted with the recipient's public key and can only be decrypted using the corresponding private key. This system ensures that only the intended recipient can access the information. Importantly, digital certificates have an expiration date, typically lasting one to two years, after which they must be renewed. This expiration helps maintain security and ensures that outdated certificates are not used.
 
