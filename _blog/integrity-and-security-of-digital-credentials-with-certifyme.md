@@ -81,7 +81,7 @@ Third parties can simply scan the QR code or visit the URL to instantly verify t
 
 ## How does CertifyMe handle updates to credentialing standards and regulations?
 
-CertifyMe stays abreast of the latest developments in credentialing standards and regulations. Our platform is designed to be flexible and adaptive, allowing for quick updates to meet new requirements.
+CertifyMe stays abreast of the latest developments in credentialing standards and regulations. Our platform is designed to be flexible and adaptive, allowing for quick updates to meet new requirements — including [revocation for compliance](https://www.certifyme.online/glossary/what-is-credential-revocation-and-why-does-it-matter-for-compliance.html), which many platforms treat as an afterthought rather than a core feature.
 
 We work closely with industry experts and regulatory bodies to ensure that our credentialing practices remain compliant and up-to-date.
  
