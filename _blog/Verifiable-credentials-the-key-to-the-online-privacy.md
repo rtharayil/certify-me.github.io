@@ -273,7 +273,7 @@ Many universities are exploring verifiable credentials through solutions like a 
 It’s not as simple as flipping a switch. But with the right tools and partnerships, it’s absolutely doable.
 And more importantly? It’s worth it.
 
-Especially when the right systems help you [prevent certification and credential frauds](https://www.certifyme.online/blog/How-to-Prevent-Certification-and-Credential-Frauds.html) before they even begin.
+Especially when the right systems help you prevent certification and credential frauds before they even begin. [Credential revocation compliance](https://www.certifyme.online/glossary/what-is-credential-revocation-and-why-does-it-matter-for-compliance.html) is part of that — because a credential that can't be invalidated after issuance is a system with no off switch.
 
 Because at the end of the day, this isn’t just about convenience. It’s about digital dignity—letting people own and protect their identity in a world that too often takes that choice away.
 
