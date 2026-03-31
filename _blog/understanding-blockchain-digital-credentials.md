@@ -40,7 +40,7 @@ Once the block is completed, it's linked to the previous block, forming a contin
 
 Additionally, the decentralization of blockchain ensures that even if one copy is compromised, others remain intact. This network-wide distribution makes the blockchain highly resistant to fraud and tampering.
 
-When you earn a digital credential, it's transformed into a unique digital code named “hash” and added to the blockchain, guaranteeing that your credential is secure and verifiable. Anyone checking the blockchain can see that your credential hasn't been altered, providing a reliable way to confirm its authenticity.
+When you earn a digital credential, it's transformed into a unique digital code named "hash" and added to the blockchain, guaranteeing that your credential is secure and verifiable. Anyone checking the blockchain can see that your credential hasn't been altered, providing a reliable way to confirm its authenticity. The full mechanics of [cryptographic hash verification](https://www.certifyme.online/glossary/how-does-cryptographic-verification-work-in-verifiable-credentials.html) — including how private keys, public keys, and hashing work together — are explained in detail separately.
 
 <br>
 
