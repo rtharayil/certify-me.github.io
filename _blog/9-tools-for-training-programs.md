@@ -96,7 +96,7 @@ Think of it like this: If a CRM is your filing cabinet, the LMS is your classroo
 
 **Analogy:** It’s like Netflix for learning. Courses are arranged neatly, learners can pick up where they left off, and everything’s tracked.
     
-**Tip:** Choose an LMS that integrates easily with your existing tools—like Google Workspace or your university email system.
+**Tip:** Choose an LMS that integrates easily with your existing tools—like Google Workspace or your university email system. The same logic applies to your credentialing platform: how well it connects via [best API access](https://www.certifyme.online/glossary/which-digital-credential-platform-offers-API-access-for-developers.html) determines whether credential issuance can be automated from within those tools or handled manually.
 
 <br>
 
