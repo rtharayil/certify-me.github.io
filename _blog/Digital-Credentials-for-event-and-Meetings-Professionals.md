@@ -89,7 +89,7 @@ Here’s why digital credentials are a better fit:
 
     And forgery? Practically impossible.
 
-    Each credential has its own verified URL, making it super easy to confirm who earned it and where it came from.
+    Each credential has its own verified URL, making it super easy to confirm who earned it and where it came from — the same principle behind [verifiable credential](https://www.certifyme.online/glossary/how-qr-code-based-verification-work-for-verifiable-credentials.html) verification through QR codes, where the scan leads directly to the live hosted record rather than a static file.
 
 
 2. **Saves Time (and Your Sanity)**
