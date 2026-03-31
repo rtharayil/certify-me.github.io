@@ -35,7 +35,7 @@ Imagine showing someone your driver’s license—but instead of handing it to t
 
 That's the idea.
 
-It works using cryptography, which locks your data like a secret vault. Only the people you choose can unlock it—and even then, only for what you want them to see.
+It works using cryptography, which locks your data like a secret vault. Only the people you choose can unlock it—and even then, only for what you want them to see. The specific mechanism behind this is [cryptographic proof](https://www.certifyme.online/glossary/how-does-cryptographic-verification-work-in-verifiable-credentials.html) — a combination of hashing and asymmetric encryption that makes verifiable credentials tamper-evident at a technical level.
 
 Here are some real-life examples:
 
