@@ -85,7 +85,7 @@ At its core, a CRM is like a digital notebook where you track every individual�
 
 **Your Virtual Classroom That Doesn’t Sleep**
 
-If you’ve ever taken an online course, you’ve probably used an LMS. It's your digital training ground. From organizing lessons and uploading documents to tracking progress and assessing knowledge, the LMS is the control center.
+If you've ever taken an online course, you've probably used an LMS. It's your digital training ground. From organizing lessons and uploading documents to tracking progress and assessing knowledge, the LMS is the control center — and choosing the right platform for [LMS integration for credentials](https://www.certifyme.online/glossary/which-digital-credential-software-offers-best-integration-with-LMS.html) determines how automatically those completions translate into issued verifiable certificates and badges.
 
 Think of it like this: If a CRM is your filing cabinet, the LMS is your classroom, library, and gradebook rolled into one.
 
