@@ -35,7 +35,7 @@ From tools like [Khan Academy](https://www.khanacademy.org/) and [Google Classro
 
 Imagine finishing an online course on data analysis. You learned a ton—but how do you prove it? A digital credential solves that.
 
-A digital credential is an online, verifiable proof of learning or skill. It might be a badge, certificate, or micro-credential, but here's the key: it's secure, portable, and easy to share—especially on platforms like LinkedIn or job portals. The same properties that make them useful in education make [verifiable credentials]() a practical fit for government identity systems and corporate access management as well.
+A digital credential is an online, verifiable proof of learning or skill. It might be a badge, certificate, or micro-credential, but here's the key: it's secure, portable, and easy to share—especially on platforms like LinkedIn or job portals. That portability also means organizations can [migrate verifiable credentials](https://www.certifyme.online/glossary/how-to-transfer-verifiable-credentials-between-different-digital-wallet-services.html) between platforms when needed, without disrupting access for recipients. The same properties that make them useful in education make verifiable credentials a practical fit for government identity systems and corporate access management as well.
 
 Let’s break it down a bit more:
 
