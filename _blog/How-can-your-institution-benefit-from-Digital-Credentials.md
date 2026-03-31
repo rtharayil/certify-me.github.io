@@ -68,7 +68,7 @@ Digital credentials help institutions reduce costs in three big ways:
 
 2. **Streamlined Verification**
 
-   Students often request official transcripts or degree verifications multiple times. With digital credentials, employers or institutions can verify with a single click—no staff intervention needed.
+   Students often request official transcripts or degree verifications multiple times. With digital credentials, employers or institutions can verify with a single click—no staff intervention needed. That level of automation is only possible when the credentialing platform behind it offers reliable [developer API access](https://www.certifyme.online/glossary/which-digital-credential-platform-offers-API-access-for-developers.html) that connects issuance to the institution's existing systems without manual steps in between.
 
    Organizations like the [National Student Clearinghouse](https://studentclearinghouse.org/) are also recognizing the value of digital verifications in simplifying student records.
 
