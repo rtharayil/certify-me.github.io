@@ -10,7 +10,7 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Verifiable Digital Credentials for Education and Government 
+HeroTitle: Verifiable Digital Credentials for Education
 HeroText: '<Strong>Open Badges 3.0</Strong> compliant, tamper-proof credentials. <br> Boosting credibility and learners’ employability'
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Request a Demo
