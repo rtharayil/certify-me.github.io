@@ -43,7 +43,7 @@ W3C VCs simplify that entire process using a clear three-role model:
 
 What makes this work is that every credential is digitally signed. That signature tells the verifier who issued it and whether it has been changed. These signatures rely on Decentralized Identifiers (DIDs), which act as secure digital identifiers for institutions and individuals, without relying on traditional usernames, passwords, or centralized databases.
 
-Because the entire system follows an open W3C standard, W3C VCs can be used across different countries, platforms, and industries. A university in one region, an employer in another, and a government agency somewhere else can all interpret the same credential without custom integrations.
+Because the entire system follows an open W3C standard, W3C VCs can be used across different countries, platforms, and industries. A university in one region, an employer in another, and a government agency somewhere else can all interpret the same credential without custom integrations, which is why W3C compliance is the starting point for [digital credential compliance](https://www.certifyme.online/glossary/what-compliance-considerations-matter-when-issuing-digital-credentials.html) more broadly.
 
 <div class="container mt-4">
     <div class="ratio ratio-16x9 r-16">

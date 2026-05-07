@@ -57,7 +57,7 @@ These elements work together to ensure the certificate’s reliability and trust
 
 ## Digital Certificates vs. Digital Signatures: Key Differences 
 
-While often mentioned together in processes like when you sign a PDF online, digital certificates and digital signatures serve different purposes and [verifiable credentials differ](https://www.certifyme.online/glossary/how-are-VCs-different-from-digitally-signed-PDFs.html) from both in how they're structured, verified, and controlled after issuance. A digital certificate is used to confirm the identity of the certificate holder, such as a person or organization. On the other hand, a digital signature ensures that a document or message has not been altered after it was signed. 
+While often mentioned together in processes like when you sign a PDF online, digital certificates and digital signatures serve different purposes. A digital certificate is used to confirm the identity of the certificate holder, such as a person or organization. On the other hand, a digital signature ensures that a document or message has not been altered after it was signed — though even a signed PDF carries [security risks of certificates](https://www.certifyme.online/glossary/what-are-security-risks-of-non-verifiable-digital-certificates.html) that a truly verifiable credential doesn't.
 
 In simple terms, a digital certificate tells you who sent the message, while a digital signature assures you that the message content is genuine and untampered.
 
@@ -65,7 +65,7 @@ In simple terms, a digital certificate tells you who sent the message, while a d
 
 ## How Digital Certificates Work
 
-Digital certificates operate using a pair of cryptographic keys: a public key and a private key. The public key is included in the digital certificate and can be shared openly, while the private key is kept secure by the certificate owner. 
+Digital certificates operate using a pair of cryptographic keys: a public key and a private key. The public key is included in the digital certificate and can be shared openly, while the private key is kept secure by the certificate owner — the same infrastructure that makes [tamper-evident credentials](https://www.certifyme.online/glossary/what-makes-digital-credential-tamper-evident.html) possible in verifiable credentialing systems.
 
 When data is sent, it is encrypted with the recipient's public key and can only be decrypted using the corresponding private key. This system ensures that only the intended recipient can access the information. Importantly, digital certificates have an expiration date, typically lasting one to two years, after which they must be renewed. This expiration helps maintain security and ensures that outdated certificates are not used.
 

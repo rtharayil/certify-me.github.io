@@ -16,7 +16,7 @@ Ever wonder why some companies just seem… sharper?
 
 They move faster, hire better, and seem to always have people with the right skills at the right time. The not-so-secret secret? Many of them have embraced digital credentials.
 
-Now, before your eyes glaze over, let me break it down. Digital credentials aren’t some corporate gimmick. They’re more like modern-day skill receipts—easy to share, easy to check, and surprisingly useful. Think of it like this: Would you rather carry a folder of paper certificates or have a neat digital backpack that holds all your skills, ready to go whenever you need?
+Now, before your eyes glaze over, let me break it down. Digital credentials aren't some corporate gimmick. They're more like modern-day skill receipts—easy to share, easy to check, and surprisingly useful — and organizations that want to automate issuance at scale should evaluate which platform offers the strongest [credential software API access](https://www.certifyme.online/glossary/which-digital-credential-platform-offers-API-access-for-developers.html) before committing to a vendor. Think of it like this: Would you rather carry a folder of paper certificates or have a neat digital backpack that holds all your skills, ready to go whenever you need?
 
 Today, we're going to explore why businesses—big or small—are taking digital credentials seriously. And why, if you’re a student, employee, or university staffer, it might matter to you, too.
 
@@ -32,16 +32,11 @@ Digital credentials are like online proof of your skills, achievements, or knowl
 1. Digital certificates (like your online degree or workshop proof)
 1. Micro-credentials (smaller, focused certifications on specific topics)
 
-These aren't just images or PDFs. They often include data that makes them verifiable — meaning someone can actually check that it's real and not something you made in Photoshop. That verifiability is only one of the [benefits of verifiable credentials](https://www.certifyme.online/glossary/what-are-the-benefits-of-verifiable-credentials.html) that set them apart from static documents.
+These aren't just images or PDFs. They often include data that makes them verifiable—meaning someone can actually check that it's real and not something you made in Photoshop. The risks that come with [non-verifiable digital certificates](https://www.certifyme.online/glossary/what-are-security-risks-of-non-verifiable-digital-certificates.html) — formats that lack this verification layer — are exactly what organizations expose themselves to when they treat a PDF as a credential. That verifiability is only one of the [benefits of verifiable credentials](https://www.certifyme.online/glossary/what-are-the-benefits-of-verifiable-credentials.html) that set them apart from static documents.
 
 Imagine you finish a course in "Intro to Data Analysis." You get a digital certificate. Now, instead of mailing or scanning it, you just send a link or add it to your LinkedIn profile. 
 
-Anyone who clicks it can see:
-
-1. What you learned
-1. Who issued it
-1. When you earned it
-1. Whether it’s still valid
+Anyone who clicks it can see what you learned, who issued it, when you earned it, and whether it's still valid — and that last point depends entirely on [credential revocation](https://www.certifyme.online/glossary/what-is-credential-revocation-and-why-does-it-matter-for-compliance.html) controls being in place on the issuer's side.
 
 <br>
 
@@ -55,11 +50,7 @@ Even better? You don’t need to explain it every time. The credential speaks fo
 
 And it’s not just for formal education—EdTech platforms have been among the early adopters, using digital credentials to certify everything from coding skills to behavioral training. [Learn how EdTech companies are using digital credentials to scale](https://www.certifyme.online/blog/The-Growth-of-Edtech-Companies-through-Digital-Credentials.html).
 
-So, in essence, digital credentials are:
-
-1. Easier to manage than traditional certificates
-1. More secure thanks to technology like blockchain
-1. More informative because they show what someone actually knows or can do
+In essence, digital credentials are easier to manage than traditional certificates, more secure thanks to technology like blockchain, and more informative because they show what someone actually knows or can do — and because they're stored in [digital wallet services](https://www.certifyme.online/glossary/how-to-transfer-verifiable-credentials-between-different-digital-wallet-services.html), recipients can carry and share them independently of whichever platform the issuer uses.
 
 One of the most widely used formats is [Mozilla’s Open Badges](https://openbadges.org/), which provides a framework for issuing and verifying digital achievements across industries.
 

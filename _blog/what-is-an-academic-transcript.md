@@ -46,7 +46,7 @@ But there are two kinds of transcripts you’ll hear about:
 
 1. **Unofficial Transcript:** A downloadable or printable record, usually accessible via your student portal. It shows all your grades but isn’t signed or sealed.
 
-1. **Official Transcript:** Authenticated by the Registrar’s office, sealed or digitally encrypted, and sent directly to the intended recipient.
+1. **Official Transcript:** Authenticated by the university. Usually includes the registrar's signature and institutional seal. Often sent directly to employers, universities, or government offices. Typically not opened by the student if it's paper-based. How institutions manage and maintain [secure student records](https://www.certifyme.online/glossary/how-to-choose-a-verifiable-credential-provider-for-secure-student-record-management.html) like these over the long term is a separate but equally critical consideration.
 
 Think of it this way: the unofficial version is like a selfie you took at home; the official version is like a passport photo validated by a government agency.
 

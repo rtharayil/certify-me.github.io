@@ -43,7 +43,7 @@ Sharing media on digital sites necessitates granting permission to do so. To com
 
 The recipient can download the digital credential after accepting and claiming it for the purpose of printing or storing it for personal records or portfolios.
 
-The digital certificate can be downloaded as a file or copied and pasted into your [résumé](https://www.toptal.com/techresume), portfolio, or social media accounts via URL or links.
+The digital certificate can be downloaded as a file or copied and pasted into your résumé, portfolio, or social media accounts via URL or links — and any verifier who receives it can confirm its authenticity through [QR code-based verification](https://www.certifyme.online/glossary/how-qr-code-based-verification-work-for-verifiable-credentials.html) without needing to contact the issuer.
 
 <br>
 

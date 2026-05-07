@@ -118,7 +118,7 @@ This chunking of goals into smaller, manageable tasks makes it easier to stay on
 
 Not all students follow the same road. Some are full-time. Others are juggling part-time jobs. Some are traditional degree-seekers, others are returning adults.
 
-Badges allow universities to offer flexible, customizable learning experiences. You can choose what to learn, when to learn, and how deep to go.
+Badges allow universities to offer flexible, customizable learning experiences. You can choose what to learn, when to learn, and how deep to go — though the quality of that experience depends significantly on which [digital credential software](https://www.certifyme.online/glossary/which-digital-credential-software-offers-best-integration-with-LMS.html) the institution uses and how well it connects to the LMS delivering that content.
 
 Universities can even build badge pathways:
 

@@ -68,7 +68,7 @@ Here’s what sets them apart:
 
 1. They’re verifiable in seconds. Employers and universities can click on the link or scan a QR code to confirm it’s authentic.
 
-1. They’re hard to fake. Many digital certificates are protected with blockchain or other tamper-proof technology, making forgery nearly impossible.
+1. They're hard to fake. Many digital certificates are protected with blockchain or other [tamper-evident digital credentials](https://www.certifyme.online/glossary/what-makes-digital-credential-tamper-evident.html) technology, where any modification after issuance is detectable during verification — making forgery nearly impossible.
 
 So while paper gives you something to hold, digital certificates give you something to use.
 

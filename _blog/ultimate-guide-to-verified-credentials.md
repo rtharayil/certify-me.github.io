@@ -46,7 +46,7 @@ The W3C's Verified Credentials Data Model is a foundational framework that ensur
 
 1. **Simplified Cross-Border Verification:** With the W3C model, credentials issued in one country can be easily verified in another. This eliminates the need for lengthy authentication processes and promotes smoother international operations.
 
-1. **Enhanced Trust:** By using cryptographic proofs and decentralized systems, the model builds trust in the authenticity of credentials, ensuring that they are not falsified or tampered with.
+1. **Enhanced Trust:** By using cryptographic proofs and decentralized systems, the model builds trust in the authenticity of credentials, ensuring that they are not falsified or tampered with. How exactly that [cryptographic verification](https://www.certifyme.online/glossary/how-does-cryptographic-verification-work-in-verifiable-credentials.html) works at a technical level — through hashing and asymmetric encryption — is a separate layer worth understanding before choosing a credentialing platform.
 
 1. **Support for Innovation:** The framework provides a solid foundation for developers and organizations to create innovative tools, such as digital wallets and blockchain-based verification systems, further enhancing the utility of verified credentials.
 

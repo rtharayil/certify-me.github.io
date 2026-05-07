@@ -86,7 +86,7 @@ Let’s say you’re great at using Trello for project management. Or maybe you�
 
 This is where validation comes in.
 
-Without some sort of formal recognition—like a certificate, badge, or credential—your skills are invisible to others. And when you’re applying alongside dozens (or hundreds) of others, visibility matters.
+Without some sort of formal recognition — like a certificate, badge, or credential — your skills are invisible to others. And when you're applying alongside dozens (or hundreds) of others, visibility matters. That recognition only holds weight when it comes from a trusted [verifiable credential provider](https://www.certifyme.online/glossary/how-to-choose-a-verifiable-credential-provider-for-secure-student-record-management.html) that institutions have chosen carefully.
 
 So what’s the solution?
 

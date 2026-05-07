@@ -50,7 +50,7 @@ By going digital, institutions not only meet student expectations but also strea
 
 Think of it like this: just as libraries evolved from card catalogs to digital databases, credentialing systems are due for their own upgrade. And it’s not about being trendy—it’s about being relevant and reliable.
 
-Going digital doesn’t mean throwing away tradition. It means preserving the value of your credentials in a format that today’s learners and employers can actually use. 
+Going digital doesn't mean throwing away tradition. It means preserving the value of your credentials in a format that today's learners and employers can actually use — and choosing a standards-compliant platform means you can [transfer verifiable credentials](https://www.certifyme.online/glossary/how-to-transfer-verifiable-credentials-between-different-digital-wallet-services.html) to a different system in the future without losing the records you've built.
 
 Whether you're issuing degrees, micro-credentials, or continuing education badges, the digital format gives you more control, more transparency, and more reach. For a closer look at the different [verifiable credential formats](https://www.certifyme.online/glossary/what-is-an-example-of-a-verifiable-credential.html), including what each one contains and how it's used, see our dedicated guide.
 
@@ -68,7 +68,7 @@ Digital credentials help institutions reduce costs in three big ways:
 
 2. **Streamlined Verification**
 
-   Students often request official transcripts or degree verifications multiple times. With digital credentials, employers or institutions can verify with a single click—no staff intervention needed.
+   Students often request official transcripts or degree verifications multiple times. With digital credentials, employers or institutions can verify with a single click—no staff intervention needed. That level of automation is only possible when the credentialing platform behind it offers reliable [developer API access](https://www.certifyme.online/glossary/which-digital-credential-platform-offers-API-access-for-developers.html) that connects issuance to the institution's existing systems without manual steps in between.
 
    Organizations like the [National Student Clearinghouse](https://studentclearinghouse.org/) are also recognizing the value of digital verifications in simplifying student records.
 

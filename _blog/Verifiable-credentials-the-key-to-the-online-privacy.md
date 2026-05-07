@@ -19,7 +19,7 @@ If you’re a student or a university staff member, this question matters more t
 
 Here’s where verifiable credentials come in.
 
-You can think of them like a modern-day digital lockbox. They’re secure, tamper-proof, easy to share, and—most importantly—under your control. In this blog, we’ll explore what verifiable credentials are, how they work, and why they’re fast becoming the smartest way to protect your privacy online.
+You can think of them like a modern-day digital lockbox. They're secure, tamper-proof, easy to share, and—most importantly—under your control. That control is exactly what makes them well-suited for a [digital ID ecosystem](), where identity information needs to be shared selectively without handing over more data than the situation requires. In this blog, we’ll explore what verifiable credentials are, how they work, and why they’re fast becoming the smartest way to protect your privacy online.
 
 <br>
 
@@ -35,7 +35,7 @@ Imagine showing someone your driver’s license—but instead of handing it to t
 
 That's the idea.
 
-It works using cryptography, which locks your data like a secret vault. Only the people you choose can unlock it—and even then, only for what you want them to see.
+It works using cryptography, which locks your data like a secret vault. Only the people you choose can unlock it—and even then, only for what you want them to see. The specific mechanism behind this is [cryptographic proof](https://www.certifyme.online/glossary/how-does-cryptographic-verification-work-in-verifiable-credentials.html) — a combination of hashing and asymmetric encryption that makes verifiable credentials tamper-evident at a technical level.
 
 Here are some real-life examples:
 
@@ -273,7 +273,7 @@ Many universities are exploring verifiable credentials through solutions like a 
 It’s not as simple as flipping a switch. But with the right tools and partnerships, it’s absolutely doable.
 And more importantly? It’s worth it.
 
-Especially when the right systems help you [prevent certification and credential frauds](https://www.certifyme.online/blog/How-to-Prevent-Certification-and-Credential-Frauds.html) before they even begin.
+Especially when the right systems help you prevent certification and credential frauds before they even begin. [Credential revocation compliance](https://www.certifyme.online/glossary/what-is-credential-revocation-and-why-does-it-matter-for-compliance.html) is part of that — because a credential that can't be invalidated after issuance is a system with no off switch.
 
 Because at the end of the day, this isn’t just about convenience. It’s about digital dignity—letting people own and protect their identity in a world that too often takes that choice away.
 
