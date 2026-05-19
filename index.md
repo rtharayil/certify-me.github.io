@@ -10,8 +10,8 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Verifiable Digital Credentials for Education
-HeroText: '<Strong>Open Badges 3.0</Strong> compliant, tamper-proof credentials. <br> Boosting credibility and learners’ employability'
+HeroTitle: Verifiable Credential Infrastructure for Education & Workforce Learning
+HeroText:  Issue <strong> Open Badges 3.0 </strong> compliant credentials, learner portfolios, and verified skill records that enhance credibility, showcase achievements, and improve employability.
 HeroImage: /assets4/images/Images Webp/Copy of Credentials Verified (4).png
 HeroDemoButton: Request a Demo
 HeroVideoButton: Watch Video
