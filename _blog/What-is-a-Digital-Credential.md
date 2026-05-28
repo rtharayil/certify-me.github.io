@@ -12,7 +12,7 @@ abstract:
 
 stitle: Digital credential
 topic: news
-imageLink: https://unevoc.unesco.org/up/DigitalCredentialing.jpg
+imageLink: /assets4/images/blog/Verifiable credentials and global connectivity1.png
 featured: true
 skip_toc: true
 ---
