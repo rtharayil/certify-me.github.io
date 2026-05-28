@@ -13,7 +13,7 @@ HeroButtonLinkText: gotowebinar
 # box image
 BoxImage: /assets4/images/integrations/Goto webinar.png
 #compare section
-leftSideLogoLink: https://www3.technologyevaluation.com/getattachment/b7a915f1-c876-55a2-9333-76d57f748d21/logo.png?source=tw2&ext=.png
+leftSideLogoLink: /assets4/images/integrations/Goto webinar.png
 
 
 #G2 section

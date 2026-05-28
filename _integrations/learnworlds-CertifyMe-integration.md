@@ -12,7 +12,7 @@ customText: LearnWorlds
 HeroButtonLinkText: learnworlds
 BoxImage: /assets4/images/integrations/integrations image (1).png
 #compare section
-leftSideLogoLink: https://www.learnworlds.com/app/themes/learnworlds/dist/images/comparison/lw-logo.png
+leftSideLogoLink: /assets4/images/integrations/learnworlds-logo.png
 
 
 #G2 section

@@ -14,7 +14,7 @@ HeroButtonLinkText: zoom
 # box image
 BoxImage: /assets4/images/integrations/Zoom.png
 #compare section
-leftSideLogoLink: https://www.tapas-etn-eu.org/events/images/zoom-icon-logo.png
+leftSideLogoLink: /assets4/images/integrations/zoom-logo.png
 
 
 #G2 section
