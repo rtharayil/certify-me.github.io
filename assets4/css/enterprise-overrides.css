@@ -75,6 +75,7 @@ h2.statistic-number {
 
 /* "Book Demo" button – gradient + shadow */
 .wsmenu > .wsmenu-list > li a.btn.btn--theme {
+  color: #fff !important;
   background: linear-gradient(135deg, var(--cm-indigo) 0%, var(--cm-indigo-mid) 100%) !important;
   border-color: transparent !important;
   border-radius: 9px !important;
