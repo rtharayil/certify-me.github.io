@@ -27,11 +27,41 @@
               </div>
             </div>
 
-            <!-- Real institution header screenshot -->
-            <img src="/assets4/images/showcase-header-crop.png"
-                 alt="CertifyMe Showcase Directory — University of British Columbia institution profile"
-                 loading="lazy"
-                 style="width:100%; display:block; border-bottom: 1px solid #e8edf5;" />
+            <!-- Institution header — HTML replica, always crisp -->
+            <div class="sd-inst-header">
+              <div class="sd-inst-nav">
+                <span class="sd-inst-nav-tab sd-inst-nav-active">Showcase Directory</span>
+                <span class="sd-inst-nav-tab">About</span>
+              </div>
+              <div class="sd-inst-body">
+                <div class="sd-inst-logo">
+                  <img src="/assets4/images/ubc-logo.png"
+                       onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+                       alt="UBC" style="width:48px;height:48px;object-fit:contain;border-radius:6px;" />
+                  <div style="display:none;width:48px;height:48px;background:#002145;border-radius:6px;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;letter-spacing:-.5px;">UBC</div>
+                </div>
+                <div class="sd-inst-info">
+                  <div class="sd-inst-name-row">
+                    <span class="sd-inst-name">University of British Columbia</span>
+                    <span class="sd-inst-verified-badge">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                      Verified
+                    </span>
+                  </div>
+                  <div class="sd-inst-tagline">Inspiring Excellence, Innovation, and Global Leadership</div>
+                  <div class="sd-inst-meta">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Vancouver, British Columbia, Canada
+                    <span class="sd-inst-sep">·</span>
+                    <a href="https://www.ubc.ca" target="_blank" style="color:#6366f1;text-decoration:none;">ubc.ca</a>
+                  </div>
+                </div>
+                <div class="sd-inst-stats">
+                  <div class="sd-inst-stat"><strong>312</strong><span>Public Profiles</span></div>
+                  <div class="sd-inst-stat"><strong>1.2K</strong><span>Credentials Issued</span></div>
+                </div>
+              </div>
+            </div>
 
             <!-- Search bar strip — matching real UI -->
             <div style="background:#f8fafc; padding: 12px 16px; border-bottom: 1px solid #e8edf5; display:flex; align-items:center; gap:10px;">
@@ -139,12 +169,12 @@
 
           <span class="sd-eyebrow">SHOWCASE DIRECTORY</span>
 
-          <h2 class="s-38 w-700" style="margin-top: 14px; margin-bottom: 18px; line-height: 1.18;">
-            Your Graduates, Verified and Findable by Any Employer — Instantly
+          <h2 class="s-38 w-700" style="margin-top: 14px; margin-bottom: 16px; line-height: 1.18;">
+            Your Graduates, Findable by Any Employer — Instantly
           </h2>
 
-          <p class="p-lg" style="color:#555; margin-bottom: 28px;">
-            Every institution on CertifyMe gets a branded public directory of verified credential holders. Hiring managers search, filter and confirm authenticity in seconds — no account, no friction, no calls to your registrar.
+          <p class="p-lg" style="color:#555; margin-bottom: 24px;">
+            A branded public directory of verified credential holders — included for every institution. Hiring managers search, filter and verify in seconds. No account. No friction.
           </p>
 
           <ul class="sd-feature-list">
@@ -154,7 +184,7 @@
               </span>
               <div>
                 <strong>Zero-Friction Employer Access</strong>
-                <span>Filter by credential, skill, batch or year. No login. No fee. Instant verification — the way procurement teams actually work.</span>
+                <span>Filter by credential, skill, batch or year. No login. No fee.</span>
               </div>
             </li>
             <li>
@@ -162,8 +192,8 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               </span>
               <div>
-                <strong>ePortfolio + Skills Depth</strong>
-                <span>Learners attach verified skills, project evidence and achievements alongside their credential — the full picture that L&amp;D and talent teams need.</span>
+                <strong>ePortfolio + Verified Skills</strong>
+                <span>Credentials, project evidence and achievements — in one shareable profile.</span>
               </div>
             </li>
             <li>
@@ -171,23 +201,17 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
               </span>
               <div>
-                <strong>Programme ROI, Always On</strong>
-                <span>Live credential counts, verified learner numbers and employer engagement data — the proof your leadership needs to justify the investment.</span>
+                <strong>Programme ROI, Proven</strong>
+                <span>Live credential counts and employer engagement — the data leadership asks for.</span>
               </div>
             </li>
           </ul>
 
           <div class="sd-ctas">
-            <a href="https://verify.apac.certifyme.org/showcase/university-of-british-columbia"
-               target="_blank" rel="noopener noreferrer"
-               class="btn r-04 btn--theme hover--black">
-              See Live Directory
-            </a>
             <a href="https://info.certifyme.online/request-demo"
                target="_blank" rel="noopener noreferrer"
-               class="tra-link ico-20 color--theme"
-               style="font-weight:600; font-size:15px;">
-              Request Demo <span class="flaticon-next"></span>
+               class="btn r-04 btn--theme hover--black">
+              Request a Demo
             </a>
           </div>
 
@@ -206,8 +230,7 @@
 .sd-pill-dot{width:8px;height:8px;border-radius:50%;display:inline-block;flex-shrink:0;}
 .sd-pill-top{top:4px;left:-4px;}
 .sd-pill-bottom{bottom:10px;right:12px;}
-.sd-real-shell{border-radius:14px;overflow:hidden;box-shadow:0 0 0 1px rgba(40,43,117,.09),0 8px 24px rgba(40,43,117,.10),0 32px 80px rgba(40,43,117,.18);background:#fff;transform:perspective(1200px) rotateY(-3deg) rotateX(1.5deg);transition:transform .4s ease;}
-.sd-real-shell:hover{transform:perspective(1200px) rotateY(0deg) rotateX(0deg);}
+.sd-real-shell{border-radius:14px;overflow:hidden;box-shadow:0 0 0 1px rgba(40,43,117,.09),0 8px 28px rgba(40,43,117,.12),0 40px 90px rgba(40,43,117,.20);background:#fff;transform:translateZ(0);image-rendering:-webkit-optimize-contrast;}
 .sd-real-chrome{background:#f1f3f9;border-bottom:1px solid #e2e6f0;padding:10px 14px;display:flex;align-items:center;gap:7px;}
 .sd-dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0;}
 .sd-real-url{flex:1;background:#fff;border:1px solid #dde1ec;border-radius:6px;padding:5px 10px;font-size:10.5px;color:#64748b;display:flex;align-items:center;gap:6px;margin-left:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
@@ -231,7 +254,24 @@
 .sd-feature-list strong{color:#1e293b;display:block;font-size:15px;margin-bottom:3px;}
 .sd-feature-list span{color:#64748b;font-size:13.5px;}
 .sd-ctas{display:flex;align-items:center;gap:28px;flex-wrap:wrap;}
+/* Institution header */
+.sd-inst-header{background:#fff;border-bottom:1px solid #e8edf5;}
+.sd-inst-nav{display:flex;gap:0;border-bottom:1px solid #e8edf5;padding:0 16px;}
+.sd-inst-nav-tab{font-size:11.5px;font-weight:600;color:#94a3b8;padding:10px 14px;cursor:default;border-bottom:2px solid transparent;margin-bottom:-1px;}
+.sd-inst-nav-active{color:#4f46e5;border-bottom-color:#4f46e5;}
+.sd-inst-body{display:flex;align-items:center;gap:13px;padding:14px 16px;background:#fff;}
+.sd-inst-logo{flex-shrink:0;}
+.sd-inst-info{flex:1;min-width:0;}
+.sd-inst-name-row{display:flex;align-items:center;gap:8px;margin-bottom:3px;flex-wrap:wrap;}
+.sd-inst-name{font-size:13.5px;font-weight:700;color:#0f172a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.sd-inst-verified-badge{display:inline-flex;align-items:center;gap:4px;background:#16a34a;color:#fff;font-size:9.5px;font-weight:700;padding:2px 8px;border-radius:50px;white-space:nowrap;}
+.sd-inst-tagline{font-size:11px;color:#475569;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.sd-inst-meta{font-size:10px;color:#94a3b8;display:flex;align-items:center;gap:5px;flex-wrap:wrap;}
+.sd-inst-sep{color:#cbd5e1;}
+.sd-inst-stats{display:flex;gap:14px;flex-shrink:0;}
+.sd-inst-stat{display:flex;flex-direction:column;align-items:center;font-size:11px;color:#64748b;line-height:1.3;}
+.sd-inst-stat strong{font-size:14px;font-weight:800;color:#0f172a;}
 /* Responsive */
-@media(max-width:991px){.sd-real-shell{transform:none;margin-bottom:50px;}.txt-block.right-column{padding-left:0!important;}.sd-learner-grid{grid-template-columns:1fr 1fr;}}
-@media(max-width:575px){.sd-real-url{display:none;}.sd-ctas{flex-direction:column;align-items:flex-start;gap:16px;}.sd-float-pill{display:none;}.sd-learner-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:991px){.sd-real-shell{transform:none;margin-bottom:50px;}.txt-block.right-column{padding-left:0!important;}.sd-learner-grid{grid-template-columns:1fr 1fr;}.sd-inst-stats{display:none;}}
+@media(max-width:575px){.sd-real-url{display:none;}.sd-ctas{flex-direction:column;align-items:flex-start;gap:16px;}.sd-float-pill{display:none;}.sd-learner-grid{grid-template-columns:1fr 1fr;}.sd-inst-tagline{display:none;}}
 </style>
