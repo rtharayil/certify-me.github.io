@@ -1,0 +1,8 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "7s9Q-va9Xac_6s1wCVOyz"
+uri = "file://artifacts/mockup-sandbox/public/images/hero-credential.png"
+type = "image"
+title = "Hero credential illustration"
