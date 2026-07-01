@@ -1,508 +1,553 @@
-import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { 
-  BarChart3, 
-  Award, 
-  Settings2, 
-  Palette, 
-  Share2,
-  CheckCircle2,
-  ChevronRight,
-  Menu,
-  ShieldCheck,
-  Star,
-  Globe2,
-  Building2,
-  Briefcase,
-  GraduationCap,
-  Landmark,
-  Linkedin,
-  Twitter,
-  Youtube
-} from "lucide-react";
-import "./_group.css";
+import './_group.css';
+import { useState } from 'react';
+import {
+  BarChart3, Zap, Plug, Palette, Share2,
+  CheckCircle, Star, ArrowRight, ChevronRight,
+} from 'lucide-react';
+
+const INDIGO = '#282B75';
+const INDIGO_MID = '#3D4299';
+const PURPLE = '#6a5acd';
+const LAVENDER_BG = '#ECEEFF';
+const LAVENDER_LIGHT = '#F3F4FF';
+
+const features = [
+  {
+    icon: <BarChart3 size={20} />, title: 'Credential Analytics & Engagement Insights',
+    desc: 'Measure the impact of your credential programs with real-time analytics on social sharing, profile visibility, and verification activity. Understand who is engaging with your credentials and how.',
+  },
+  {
+    icon: <Zap size={20} />, title: 'Automated Credential Operations',
+    desc: 'Automate credential issuance with bulk CSV uploads and API triggers — reducing manual work by 90%, minimizing errors, and streamlining large-scale certificate distribution.',
+  },
+  {
+    icon: <Plug size={20} />, title: 'API & Enterprise Integrations',
+    desc: 'Connect CertifyMe with your LMS, CRM, HRMS, and internal systems via REST API to streamline credential workflows and automate issuance at scale.',
+  },
+  {
+    icon: <Palette size={20} />, title: 'Fully Branded Credential Experiences',
+    desc: 'Customize the entire credential journey — issuance, verification, learner wallets, and showcase directories — to reflect your brand identity with white-label precision.',
+  },
+  {
+    icon: <Share2 size={20} />, title: 'Social & Professional Credential Sharing',
+    desc: 'Transform every credential into a branded referral channel. Frictionless one-click sharing to LinkedIn, Twitter, and email turns recipients into advocates.',
+  },
+];
+
+const testimonials = [
+  {
+    quote: 'CertifyMe has the best customer service. They have been partners beside us as long as we have used their product. Our members that have received digital certificates love having something they can keep online and share with their peers.',
+    name: 'Danielle Lee', role: 'Board Director', company: 'PMI Phoenix', img: '/__mockup/images/t1.jpg',
+  },
+  {
+    quote: 'CertifyMe has been very easy to implement and use. Our organization used CertifyMe to create over 7000 certificates this past year. We were able to integrate CertifyMe with our CRM, thus requiring minimal time in labor.',
+    name: 'Erika Barney', role: 'Human Resources Director', company: 'Au Pair Weekend', img: '/__mockup/images/t2.jpg',
+  },
+  {
+    quote: 'The platform is user-friendly and does not need technical knowledge to issue digital credentials. On top of that, I commend their staff, who constantly check on us and respond to our suggestions and comments.',
+    name: 'Chresente Gong', role: 'Founder', company: 'EIS Education International', img: '/__mockup/images/t3.jpg',
+  },
+  {
+    quote: 'The user interface of the platform is remarkably intuitive. I really want to acknowledge the exceptional support that CertifyMe has been providing, which counts a lot towards our satisfaction.',
+    name: 'Anson Antony', role: 'Project Manager', company: 'University of Europe', img: '/__mockup/images/t4.jpg',
+  },
+  {
+    quote: 'Impressive range of features sets it apart as the ultimate solution for certificate verification. Their enterprise plan, along with customizable options, caters to diverse company needs.',
+    name: 'Joshua J.', role: 'Chief Learning Officer', company: 'System Support Inc.', img: '/__mockup/images/t5.webp',
+  },
+  {
+    quote: 'As a training provider, we appreciate the user-friendly interface and customizable digital badging options, which our students enthusiastically showcase on their social media profiles.',
+    name: 'Kasie V.', role: 'CEO', company: 'Sigma Forces', img: '/__mockup/images/t6.webp',
+  },
+];
+
+const stats = [
+  { value: '4,864+', label: 'Institutions trust CertifyMe' },
+  { value: '1M+', label: 'Users across 144 Countries' },
+  { value: '87K+', label: 'Digital credentials issued every month' },
+];
+
+const logos = [
+  { src: '/__mockup/images/logo-ue.webp', alt: 'University of Europe' },
+  { src: '/__mockup/images/logo-ieee.webp', alt: 'IEEE' },
+  { src: '/__mockup/images/logo-harvard.webp', alt: 'Harvard' },
+  { src: '/__mockup/images/logo-pmi.webp', alt: 'PMI' },
+  { src: '/__mockup/images/logo-leb.webp', alt: 'LEB' },
+  { src: '/__mockup/images/logo-dcu.webp', alt: 'DCU' },
+];
+
+const ratings = [
+  { src: '/__mockup/images/capterra.webp', alt: 'Capterra', stars: 5, score: '5/5' },
+  { src: '/__mockup/images/trustradius.webp', alt: 'TrustRadius', stars: 4.5, score: '9/10' },
+  { src: '/__mockup/images/g2-rating.webp', alt: 'G2', stars: 5, score: '4.9/5' },
+];
+
+function Stars({ count }: { count: number }) {
+  return (
+    <div style={{ display: 'flex', gap: 2, alignItems: 'center', justifyContent: 'center' }}>
+      {[1, 2, 3, 4, 5].map(i => (
+        <Star key={i} size={13}
+          fill={i <= Math.floor(count) ? '#F59E0B' : 'none'}
+          color={i <= Math.floor(count) ? '#F59E0B' : '#D1D5DB'}
+        />
+      ))}
+      <span style={{ fontSize: 12, color: '#6B7280', marginLeft: 6, fontWeight: 600 }}>{ratings.find(r => r.stars === count)?.score ?? `${count}/5`}</span>
+    </div>
+  );
+}
 
 export function Homepage() {
+  const [activeFeature, setActiveFeature] = useState(0);
+
   return (
-    <div className="homepage-wrapper min-h-screen w-full flex flex-col">
-      {/* 1. NAVBAR */}
-      <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Award className="h-6 w-6 text-primary-indigo" />
-            <span className="font-bold text-xl tracking-tight text-slate-900">CertifyMe</span>
+    <div style={{ fontFamily: "'Plus Jakarta Sans', 'Inter', sans-serif", backgroundColor: '#fff', color: '#1a1a2e', lineHeight: 1.6 }}>
+
+      {/* ── NAVBAR ─────────────────────────────────── */}
+      <nav style={{
+        position: 'sticky', top: 0, zIndex: 100,
+        backgroundColor: 'rgba(255,255,255,0.97)',
+        backdropFilter: 'blur(12px)',
+        borderBottom: '1px solid #E8E8F0',
+        padding: '0 48px',
+        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+        height: 68,
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <div style={{ width: 32, height: 32, background: `linear-gradient(135deg, ${INDIGO}, ${PURPLE})`, borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <CheckCircle size={18} color="#fff" />
           </div>
-          
-          <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-            <a href="#" className="hover:text-primary-indigo transition-colors">Platform</a>
-            <a href="#" className="hover:text-primary-indigo transition-colors">Solutions</a>
-            <a href="#" className="hover:text-primary-indigo transition-colors">Integrations</a>
-            <a href="#" className="hover:text-primary-indigo transition-colors">Pricing</a>
-            <a href="#" className="hover:text-primary-indigo transition-colors">Resources</a>
-          </nav>
-          
-          <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" className="font-medium">Start Free</Button>
-            <Button className="bg-primary-indigo hover:bg-[#1a1c4b] text-white rounded-full px-6">
-              Request Demo
-            </Button>
-          </div>
-          
-          <Button variant="ghost" size="icon" className="md:hidden">
-            <Menu className="h-5 w-5" />
-          </Button>
+          <span style={{ fontWeight: 800, fontSize: 20, color: INDIGO, letterSpacing: '-0.5px' }}>CertifyMe</span>
         </div>
-      </header>
 
-      <main className="flex-1">
-        {/* 2. HERO */}
-        <section className="relative overflow-hidden bg-slate-50 pt-20 pb-24">
-          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(40,43,117,0.05)_0%,rgba(255,255,255,0)_100%)]" />
-          <div className="container mx-auto px-4 relative">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="max-w-2xl">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 text-primary-indigo text-sm font-semibold mb-6">
-                  <Globe2 className="h-4 w-4" />
-                  Global Certificate & Badge Management
-                </div>
-                
-                <h1 className="text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1] mb-6">
-                  Issue, Manage & Verify <span className="text-gradient-indigo">Digital Credentials</span> at Scale
-                </h1>
-                
-                <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                  Trusted by 4,800+ institutions across 144 countries. Automate certificate and badge issuance, track engagement, and let recipients share their achievements worldwide.
-                </p>
-                
-                <div className="flex flex-wrap gap-4 mb-10">
-                  <Button size="lg" className="bg-primary-indigo hover:bg-[#1a1c4b] text-white rounded-full px-8 h-14 text-base">
-                    Request a Demo
-                  </Button>
-                  <Button size="lg" variant="outline" className="rounded-full px-8 h-14 text-base font-semibold border-slate-300 hover:bg-slate-100">
-                    Start Free Trial <ChevronRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </div>
-                
-                <div className="flex flex-wrap items-center gap-6 text-sm font-medium text-slate-500">
-                  <div className="flex items-center gap-2">
-                    <Star className="h-5 w-5 fill-amber-400 text-amber-400" />
-                    Ranked #2 on G2
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <ShieldCheck className="h-5 w-5 text-emerald-500" />
-                    W3C Verifiable Credentials
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-blue-500" />
-                    Fraud-Proof Verification
-                  </div>
-                </div>
-              </div>
-              
-              <div className="relative lg:h-[600px] flex items-center justify-center">
-                <div className="absolute inset-0 bg-gradient-to-tr from-indigo-50 to-white rounded-[3rem] transform rotate-3 scale-105 opacity-50"></div>
-                <img 
-                  src="/__mockup/images/hero-credential.png" 
-                  alt="Digital Credential Verification" 
-                  className="relative z-10 w-full max-w-lg rounded-2xl shadow-2xl animate-float object-cover aspect-video"
-                />
-              </div>
+        <div style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
+          {['Products', 'Industry Use Case', 'Features', 'Resources', 'Pricing'].map(label => (
+            <a key={label} href="#" style={{ fontSize: 14, fontWeight: 500, color: '#444', textDecoration: 'none' }}>
+              {label}
+            </a>
+          ))}
+        </div>
+
+        <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+          <a href="#" style={{ fontSize: 14, fontWeight: 500, color: '#444', textDecoration: 'none' }}>Login</a>
+          <a href="#" style={{
+            background: `linear-gradient(135deg, ${INDIGO}, ${INDIGO_MID})`,
+            color: '#fff', padding: '10px 22px', borderRadius: 8,
+            fontWeight: 700, fontSize: 14, textDecoration: 'none',
+            boxShadow: `0 4px 14px rgba(40,43,117,0.30)`,
+          }}>Book Demo</a>
+        </div>
+      </nav>
+
+      {/* ── HERO ───────────────────────────────────── */}
+      <section style={{
+        background: `linear-gradient(150deg, ${LAVENDER_BG} 0%, #F0F1FF 50%, #EAF0FF 100%)`,
+        padding: '80px 48px 60px',
+        position: 'relative', overflow: 'hidden',
+      }}>
+        {/* Decorative blob */}
+        <div style={{
+          position: 'absolute', top: -120, right: -120,
+          width: 500, height: 500,
+          background: `radial-gradient(circle, rgba(106,90,205,0.12) 0%, transparent 70%)`,
+          borderRadius: '50%', pointerEvents: 'none',
+        }} />
+
+        <div style={{ maxWidth: 1184, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
+          {/* Left: copy */}
+          <div>
+            <div style={{
+              display: 'inline-flex', alignItems: 'center', gap: 8,
+              background: 'rgba(40,43,117,0.08)', border: '1px solid rgba(40,43,117,0.18)',
+              borderRadius: 50, padding: '6px 16px', marginBottom: 24,
+            }}>
+              <div style={{ width: 6, height: 6, borderRadius: '50%', background: PURPLE }} />
+              <span style={{ fontSize: 13, fontWeight: 600, color: INDIGO }}>Ranked #2 in Digital Credential Software — G2</span>
             </div>
-            
-            {/* Client logos */}
-            <div className="mt-20 pt-10 border-t border-slate-200">
-              <p className="text-center text-sm font-semibold text-slate-400 mb-8 uppercase tracking-wider">Trusted by industry leaders worldwide</p>
-              <div className="flex flex-wrap justify-center gap-12 lg:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                <div className="text-xl font-bold font-serif">University of Europe</div>
-                <div className="text-xl font-bold font-sans tracking-widest">IEEE</div>
-                <div className="text-xl font-bold font-serif italic">HARVARD</div>
-                <div className="text-xl font-bold font-sans">PMI</div>
-              </div>
+
+            <h1 style={{
+              fontSize: 50, fontWeight: 800, lineHeight: 1.12,
+              color: INDIGO, margin: '0 0 22px',
+              letterSpacing: '-1.5px',
+            }}>
+              Verifiable Credential<br />Infrastructure for<br />
+              <span style={{ color: PURPLE }}>Education &amp; Workforce Learning</span>
+            </h1>
+
+            <p style={{ fontSize: 17, color: '#4A4A6A', margin: '0 0 32px', maxWidth: 500, lineHeight: 1.75 }}>
+              Issue <strong>Open Badges 3.0</strong> compliant credentials, learner portfolios, and verified skill records that enhance credibility, showcase achievements, and improve employability.
+            </p>
+
+            <div style={{ display: 'flex', gap: 14, marginBottom: 32, flexWrap: 'wrap' }}>
+              <a href="#" style={{
+                background: `linear-gradient(135deg, ${INDIGO} 0%, ${INDIGO_MID} 100%)`,
+                color: '#fff', padding: '14px 30px', borderRadius: 10,
+                fontWeight: 700, fontSize: 15, textDecoration: 'none',
+                boxShadow: `0 6px 20px rgba(40,43,117,0.35)`,
+                display: 'flex', alignItems: 'center', gap: 8,
+              }}>Request a Demo</a>
+              <a href="#" style={{
+                background: '#fff', color: INDIGO,
+                border: `2px solid ${INDIGO}`, padding: '14px 30px', borderRadius: 10,
+                fontWeight: 700, fontSize: 15, textDecoration: 'none',
+                display: 'flex', alignItems: 'center', gap: 8,
+              }}>Start Free Trial <ArrowRight size={16} /></a>
             </div>
-          </div>
-        </section>
 
-        {/* 3. STATS BAR */}
-        <section className="bg-primary-indigo text-white py-16">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-indigo-600/50">
-              <div className="text-center px-4">
-                <div className="text-4xl md:text-5xl font-bold mb-2">4,800+</div>
-                <div className="text-indigo-200 font-medium">Institutions</div>
-              </div>
-              <div className="text-center px-4">
-                <div className="text-4xl md:text-5xl font-bold mb-2">1M+</div>
-                <div className="text-indigo-200 font-medium">Users</div>
-              </div>
-              <div className="text-center px-4">
-                <div className="text-4xl md:text-5xl font-bold mb-2">144</div>
-                <div className="text-indigo-200 font-medium">Countries</div>
-              </div>
-              <div className="text-center px-4">
-                <div className="text-4xl md:text-5xl font-bold mb-2">87K+</div>
-                <div className="text-indigo-200 font-medium">Monthly Credentials</div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 4. PLATFORM FEATURES */}
-        <section className="py-24 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Enterprise-Grade Credential Infrastructure</h2>
-              <p className="text-lg text-slate-600">Everything you need to build, scale, and secure your digital credentialing program in one unified platform.</p>
-            </div>
-            
-            <Tabs defaultValue="analytics" className="w-full max-w-5xl mx-auto">
-              <TabsList className="w-full h-auto flex flex-wrap justify-center bg-transparent gap-2 mb-12">
-                <TabsTrigger value="analytics" className="data-[state=active]:bg-indigo-50 data-[state=active]:text-primary-indigo data-[state=active]:shadow-none rounded-full px-6 py-3 text-base">
-                  <BarChart3 className="mr-2 h-4 w-4" /> Analytics
-                </TabsTrigger>
-                <TabsTrigger value="issuance" className="data-[state=active]:bg-indigo-50 data-[state=active]:text-primary-indigo data-[state=active]:shadow-none rounded-full px-6 py-3 text-base">
-                  <Award className="mr-2 h-4 w-4" /> Issuance
-                </TabsTrigger>
-                <TabsTrigger value="api" className="data-[state=active]:bg-indigo-50 data-[state=active]:text-primary-indigo data-[state=active]:shadow-none rounded-full px-6 py-3 text-base">
-                  <Settings2 className="mr-2 h-4 w-4" /> API & Integrations
-                </TabsTrigger>
-                <TabsTrigger value="branding" className="data-[state=active]:bg-indigo-50 data-[state=active]:text-primary-indigo data-[state=active]:shadow-none rounded-full px-6 py-3 text-base">
-                  <Palette className="mr-2 h-4 w-4" /> Branding
-                </TabsTrigger>
-                <TabsTrigger value="social" className="data-[state=active]:bg-indigo-50 data-[state=active]:text-primary-indigo data-[state=active]:shadow-none rounded-full px-6 py-3 text-base">
-                  <Share2 className="mr-2 h-4 w-4" /> Social
-                </TabsTrigger>
-              </TabsList>
-              
-              <div className="bg-slate-50 rounded-3xl p-8 md:p-12 border border-slate-100 shadow-sm">
-                <TabsContent value="analytics" className="mt-0 outline-none">
-                  <div className="grid md:grid-cols-2 gap-10 items-center">
-                    <div>
-                      <h3 className="text-2xl font-bold mb-4">Credential Analytics</h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        Measure engagement, social sharing, and verification activity in real-time. Understand how your credentials are driving brand awareness and track the ROI of your programs.
-                      </p>
-                      <ul className="space-y-3">
-                        <li className="flex items-center gap-3 text-slate-700 font-medium"><CheckCircle2 className="h-5 w-5 text-primary-indigo" /> Share rate tracking</li>
-                        <li className="flex items-center gap-3 text-slate-700 font-medium"><CheckCircle2 className="h-5 w-5 text-primary-indigo" /> View & verification metrics</li>
-                        <li className="flex items-center gap-3 text-slate-700 font-medium"><CheckCircle2 className="h-5 w-5 text-primary-indigo" /> Exportable custom reports</li>
-                      </ul>
-                    </div>
-                    <div className="bg-white rounded-xl shadow-lg border border-slate-200 aspect-video flex items-center justify-center p-6">
-                      <div className="w-full h-full border-2 border-dashed border-slate-200 rounded-lg flex flex-col items-center justify-center text-slate-400">
-                        <BarChart3 className="h-12 w-12 mb-2" />
-                        <span>Analytics Dashboard Preview</span>
-                      </div>
-                    </div>
-                  </div>
-                </TabsContent>
-                
-                <TabsContent value="issuance" className="mt-0 outline-none">
-                  <div className="grid md:grid-cols-2 gap-10 items-center">
-                    <div>
-                      <h3 className="text-2xl font-bold mb-4">Automated Issuance</h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        Scale your credentialing with bulk CSV uploads or API triggers. Achieve zero manual work while issuing thousands of tamper-proof certificates instantly.
-                      </p>
-                      <ul className="space-y-3">
-                        <li className="flex items-center gap-3 text-slate-700 font-medium"><CheckCircle2 className="h-5 w-5 text-primary-indigo" /> Bulk CSV processing</li>
-                        <li className="flex items-center gap-3 text-slate-700 font-medium"><CheckCircle2 className="h-5 w-5 text-primary-indigo" /> Dynamic data mapping</li>
-                        <li className="flex items-center gap-3 text-slate-700 font-medium"><CheckCircle2 className="h-5 w-5 text-primary-indigo" /> Automated email delivery</li>
-                      </ul>
-                    </div>
-                    <div className="bg-white rounded-xl shadow-lg border border-slate-200 aspect-video flex items-center justify-center p-6">
-                      <div className="w-full h-full border-2 border-dashed border-slate-200 rounded-lg flex flex-col items-center justify-center text-slate-400">
-                        <Award className="h-12 w-12 mb-2" />
-                        <span>Issuance Engine Preview</span>
-                      </div>
-                    </div>
-                  </div>
-                </TabsContent>
-
-                <TabsContent value="api" className="mt-0 outline-none">
-                  <div className="grid md:grid-cols-2 gap-10 items-center">
-                    <div>
-                      <h3 className="text-2xl font-bold mb-4">API & Integrations</h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        Connect your LMS, CRM, or HRMS in minutes. Our robust REST API and pre-built connectors make it simple to embed credentialing into your existing workflows.
-                      </p>
-                    </div>
-                    <div className="bg-white rounded-xl shadow-lg border border-slate-200 aspect-video flex items-center justify-center p-6">
-                      <div className="w-full h-full border-2 border-dashed border-slate-200 rounded-lg flex flex-col items-center justify-center text-slate-400">
-                        <Settings2 className="h-12 w-12 mb-2" />
-                        <span>API Documentation Preview</span>
-                      </div>
-                    </div>
-                  </div>
-                </TabsContent>
-
-                <TabsContent value="branding" className="mt-0 outline-none">
-                  <div className="grid md:grid-cols-2 gap-10 items-center">
-                    <div>
-                      <h3 className="text-2xl font-bold mb-4">White-Label Branding</h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        Fully branded credential wallets and directories. Ensure every certificate, email, and landing page reflects your organization's unique identity.
-                      </p>
-                    </div>
-                    <div className="bg-white rounded-xl shadow-lg border border-slate-200 aspect-video flex items-center justify-center p-6">
-                      <div className="w-full h-full border-2 border-dashed border-slate-200 rounded-lg flex flex-col items-center justify-center text-slate-400">
-                        <Palette className="h-12 w-12 mb-2" />
-                        <span>Brand Customizer Preview</span>
-                      </div>
-                    </div>
-                  </div>
-                </TabsContent>
-
-                <TabsContent value="social" className="mt-0 outline-none">
-                  <div className="grid md:grid-cols-2 gap-10 items-center">
-                    <div>
-                      <h3 className="text-2xl font-bold mb-4">Social Sharing</h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        Turn every credential into a branded referral channel. One-click sharing to LinkedIn, Twitter, and Facebook amplifies your program's reach organically.
-                      </p>
-                    </div>
-                    <div className="bg-white rounded-xl shadow-lg border border-slate-200 aspect-video flex items-center justify-center p-6">
-                      <div className="w-full h-full border-2 border-dashed border-slate-200 rounded-lg flex flex-col items-center justify-center text-slate-400">
-                        <Share2 className="h-12 w-12 mb-2" />
-                        <span>Social Sharing Preview</span>
-                      </div>
-                    </div>
-                  </div>
-                </TabsContent>
-              </div>
-            </Tabs>
-          </div>
-        </section>
-
-        {/* 5. SOCIAL PROOF / G2 */}
-        <section className="py-24 bg-slate-50">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col items-center text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">Trusted by the World's Leading Institutions</h2>
-              
-              <div className="flex flex-wrap justify-center items-center gap-8 mb-12">
-                <div className="bg-white px-6 py-3 rounded-full shadow-sm border border-slate-200 flex items-center gap-3">
-                  <div className="w-8 h-8 bg-[#ff492c] rounded flex items-center justify-center text-white font-bold text-xs">G2</div>
-                  <span className="font-bold text-slate-700">Leader 2026</span>
-                </div>
-                <div className="bg-white px-6 py-3 rounded-full shadow-sm border border-slate-200 flex items-center gap-3">
-                  <div className="flex text-amber-400">
-                    <Star className="h-5 w-5 fill-current" /><Star className="h-5 w-5 fill-current" /><Star className="h-5 w-5 fill-current" /><Star className="h-5 w-5 fill-current" /><Star className="h-5 w-5 fill-current" />
-                  </div>
-                  <span className="font-bold text-slate-700">4.8/5 Capterra</span>
-                </div>
-                <div className="bg-white px-6 py-3 rounded-full shadow-sm border border-slate-200 flex items-center gap-3">
-                  <ShieldCheck className="h-6 w-6 text-blue-600" />
-                  <span className="font-bold text-slate-700">TrustRadius Top Rated</span>
-                </div>
-              </div>
-            </div>
-            
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <Card className="bg-white border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                <CardContent className="p-8">
-                  <div className="flex gap-1 text-amber-400 mb-6">
-                    <Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" />
-                  </div>
-                  <p className="text-slate-700 text-lg mb-8 leading-relaxed">
-                    "CertifyMe transformed our certificate program — issuance time dropped by 90%. The analytics give us incredible insight into our members."
-                  </p>
-                  <div>
-                    <div className="font-bold text-slate-900">Head of L&D</div>
-                    <div className="text-slate-500 text-sm">PMI Phoenix Chapter</div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                <CardContent className="p-8">
-                  <div className="flex gap-1 text-amber-400 mb-6">
-                    <Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" />
-                  </div>
-                  <p className="text-slate-700 text-lg mb-8 leading-relaxed">
-                    "Our students love the shareable badges. Verification is instant and fraud-proof, saving our office countless hours of manual checks."
-                  </p>
-                  <div>
-                    <div className="font-bold text-slate-900">Registrar</div>
-                    <div className="text-slate-500 text-sm">University of Europe</div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                <CardContent className="p-8">
-                  <div className="flex gap-1 text-amber-400 mb-6">
-                    <Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" /><Star className="h-4 w-4 fill-current" />
-                  </div>
-                  <p className="text-slate-700 text-lg mb-8 leading-relaxed">
-                    "The API integration with our LMS took less than a day. Phenomenal support team and a rock-solid infrastructure."
-                  </p>
-                  <div>
-                    <div className="font-bold text-slate-900">CTO</div>
-                    <div className="text-slate-500 text-sm">Global EdTech Platform</div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* 6. USE CASES */}
-        <section className="py-24 bg-white">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12 text-center">Built for Every Credentialing Use Case</h2>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="group p-6 rounded-2xl border border-slate-200 hover:border-primary-indigo hover:shadow-lg transition-all cursor-pointer">
-                <div className="w-12 h-12 rounded-xl bg-indigo-50 text-primary-indigo flex items-center justify-center mb-6 group-hover:bg-primary-indigo group-hover:text-white transition-colors">
-                  <GraduationCap className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Higher Education</h3>
-                <p className="text-slate-600">Digital diplomas, comprehensive learner records, and verifiable transcripts.</p>
-              </div>
-
-              <div className="group p-6 rounded-2xl border border-slate-200 hover:border-primary-indigo hover:shadow-lg transition-all cursor-pointer">
-                <div className="w-12 h-12 rounded-xl bg-indigo-50 text-primary-indigo flex items-center justify-center mb-6 group-hover:bg-primary-indigo group-hover:text-white transition-colors">
-                  <Building2 className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Corporate Training</h3>
-                <p className="text-slate-600">Employee upskilling badges, compliance certificates, and internal academies.</p>
-              </div>
-
-              <div className="group p-6 rounded-2xl border border-slate-200 hover:border-primary-indigo hover:shadow-lg transition-all cursor-pointer">
-                <div className="w-12 h-12 rounded-xl bg-indigo-50 text-primary-indigo flex items-center justify-center mb-6 group-hover:bg-primary-indigo group-hover:text-white transition-colors">
-                  <Briefcase className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Professional Associations</h3>
-                <p className="text-slate-600">Membership credentials, continuing education units (CEUs), and renewals.</p>
-              </div>
-
-              <div className="group p-6 rounded-2xl border border-slate-200 hover:border-primary-indigo hover:shadow-lg transition-all cursor-pointer">
-                <div className="w-12 h-12 rounded-xl bg-indigo-50 text-primary-indigo flex items-center justify-center mb-6 group-hover:bg-primary-indigo group-hover:text-white transition-colors">
-                  <Settings2 className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Bootcamps & EdTech</h3>
-                <p className="text-slate-600">Micro-credentials, skill-based badges, and automated graduation certificates.</p>
-              </div>
-
-              <div className="group p-6 rounded-2xl border border-slate-200 hover:border-primary-indigo hover:shadow-lg transition-all cursor-pointer">
-                <div className="w-12 h-12 rounded-xl bg-indigo-50 text-primary-indigo flex items-center justify-center mb-6 group-hover:bg-primary-indigo group-hover:text-white transition-colors">
-                  <Landmark className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Government Bodies</h3>
-                <p className="text-slate-600">Licenses, permits, regulatory compliance, and verifiable citizen records.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 7. INTEGRATIONS STRIP */}
-        <section className="py-20 bg-slate-50 border-y border-slate-200 overflow-hidden">
-          <div className="container mx-auto px-4 mb-10 text-center">
-            <h2 className="text-2xl font-bold text-slate-900">Connects With Your Entire Stack</h2>
-          </div>
-          
-          <div className="relative flex w-full">
-            <div className="flex animate-scroll gap-8 pr-8 whitespace-nowrap min-w-max">
-              {/* Duplicate set for infinite scroll */}
-              {[1, 2].map((set) => (
-                <React.Fragment key={set}>
-                  {['Salesforce', 'Workday', 'SAP', 'Moodle', 'Canvas LMS', 'Zapier', 'Slack', 'Microsoft Teams'].map((app) => (
-                    <div key={app} className="flex items-center justify-center px-8 py-4 bg-white rounded-xl shadow-sm border border-slate-100 min-w-[200px]">
-                      <span className="font-semibold text-slate-600">{app}</span>
-                    </div>
-                  ))}
-                </React.Fragment>
+            {/* Trust tags */}
+            <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+              {['Ranked #2 on G2', 'Fraud-Proof Verification', 'W3C Verifiable Credentials'].map(tag => (
+                <span key={tag} style={{
+                  fontSize: 12.5, fontWeight: 600, color: INDIGO,
+                  background: 'rgba(40,43,117,0.07)',
+                  border: '1px solid rgba(40,43,117,0.15)',
+                  borderRadius: 50, padding: '6px 14px',
+                  display: 'inline-flex', alignItems: 'center', gap: 6,
+                }}>
+                  <CheckCircle size={12} color={PURPLE} /> {tag}
+                </span>
               ))}
             </div>
           </div>
-        </section>
 
-        {/* 8. CTA SECTION */}
-        <section className="relative py-24 bg-primary-indigo overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-500/40 via-transparent to-transparent"></div>
-          <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Modernize Your Credentialing Program?</h2>
-            <p className="text-xl text-indigo-100 mb-10">Join 4,800+ institutions already using CertifyMe to issue secure, verifiable credentials.</p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button size="lg" className="bg-white text-primary-indigo hover:bg-slate-100 rounded-full px-8 h-14 text-base font-bold">
-                Request a Demo
-              </Button>
-              <Button size="lg" variant="outline" className="rounded-full px-8 h-14 text-base font-semibold border-indigo-400 text-white hover:bg-indigo-700/50 hover:text-white bg-transparent">
-                Talk to Sales
-              </Button>
-            </div>
+          {/* Right: real hero image from the live site */}
+          <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <img
+              src="/__mockup/images/hero-person.png"
+              alt="Digital Credential Management Software"
+              style={{ width: '100%', maxWidth: 560, objectFit: 'contain', filter: 'drop-shadow(0 20px 60px rgba(40,43,117,0.15))' }}
+            />
           </div>
-        </section>
-      </main>
+        </div>
 
-      {/* 9. FOOTER */}
-      <footer className="bg-slate-900 text-slate-300 pt-20 pb-8 border-t border-slate-800">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            <div>
-              <div className="flex items-center gap-2 mb-6">
-                <Award className="h-6 w-6 text-indigo-400" />
-                <span className="font-bold text-xl tracking-tight text-white">CertifyMe</span>
+        {/* Logo trust strip */}
+        <div style={{ maxWidth: 1184, margin: '48px auto 0', paddingTop: 32, borderTop: '1px solid rgba(40,43,117,0.1)' }}>
+          <p style={{ textAlign: 'center', fontSize: 12, fontWeight: 700, color: '#999', letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 20 }}>Trusted by world-class institutions</p>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 48, flexWrap: 'wrap' }}>
+            {logos.map(l => (
+              <img key={l.alt} src={l.src} alt={l.alt}
+                style={{ height: 34, objectFit: 'contain', filter: 'grayscale(70%) opacity(0.65)', transition: 'all 0.25s' }}
+                onMouseEnter={e => { e.currentTarget.style.filter = 'grayscale(0%) opacity(1)'; }}
+                onMouseLeave={e => { e.currentTarget.style.filter = 'grayscale(70%) opacity(0.65)'; }}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── STATS BAR ──────────────────────────────── */}
+      <section style={{
+        background: `linear-gradient(135deg, ${INDIGO} 0%, #1e2060 50%, #2d1b69 100%)`,
+        padding: '52px 48px',
+      }}>
+        <div style={{ maxWidth: 1184, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0 }}>
+          {stats.map((s, i) => (
+            <div key={i} style={{
+              textAlign: 'center', padding: '0 32px',
+              borderRight: i < 2 ? '1px solid rgba(255,255,255,0.15)' : 'none',
+            }}>
+              <div style={{ fontSize: 54, fontWeight: 800, color: '#fff', letterSpacing: '-2px', lineHeight: 1 }}>{s.value}</div>
+              <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.7)', marginTop: 10, fontWeight: 500, lineHeight: 1.5 }}>{s.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── PLATFORM FEATURES ──────────────────────── */}
+      <section style={{ padding: '100px 48px', background: '#fff' }}>
+        <div style={{ maxWidth: 1184, margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: 60 }}>
+            <p style={{ fontSize: 13, fontWeight: 700, color: PURPLE, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 12 }}>Platform</p>
+            <h2 style={{ fontSize: 42, fontWeight: 800, color: INDIGO, letterSpacing: '-1px', margin: 0 }}>
+              Enterprise-Grade Certificate &amp; Badge Management Platform
+            </h2>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.4fr', gap: 60, alignItems: 'start' }}>
+            {/* Feature list */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+              {features.map((f, i) => (
+                <button key={i} onClick={() => setActiveFeature(i)}
+                  style={{
+                    display: 'flex', alignItems: 'flex-start', gap: 16,
+                    padding: '18px 20px', borderRadius: 12,
+                    background: activeFeature === i ? LAVENDER_BG : 'transparent',
+                    border: activeFeature === i ? `1.5px solid rgba(40,43,117,0.15)` : '1.5px solid transparent',
+                    cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s',
+                    width: '100%',
+                  }}>
+                  <div style={{
+                    width: 40, height: 40, borderRadius: 10, flexShrink: 0,
+                    background: activeFeature === i ? `linear-gradient(135deg, ${INDIGO}, ${PURPLE})` : '#F3F4FF',
+                    color: activeFeature === i ? '#fff' : INDIGO,
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    transition: 'all 0.2s',
+                  }}>
+                    {f.icon}
+                  </div>
+                  <div>
+                    <div style={{ fontWeight: 700, fontSize: 14.5, color: activeFeature === i ? INDIGO : '#444', marginBottom: activeFeature === i ? 4 : 0 }}>
+                      {f.title}
+                    </div>
+                    {activeFeature === i && (
+                      <p style={{ fontSize: 13.5, color: '#666', margin: 0, lineHeight: 1.65 }}>{f.desc}</p>
+                    )}
+                  </div>
+                </button>
+              ))}
+            </div>
+
+            {/* Feature visual panel */}
+            <div style={{
+              background: LAVENDER_BG, borderRadius: 20,
+              padding: 40, minHeight: 400,
+              border: '1px solid rgba(40,43,117,0.08)',
+              position: 'sticky', top: 88,
+              display: 'flex', flexDirection: 'column', justifyContent: 'center',
+            }}>
+              <div style={{
+                width: 56, height: 56, borderRadius: 14,
+                background: `linear-gradient(135deg, ${INDIGO}, ${PURPLE})`,
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                color: '#fff', marginBottom: 24,
+              }}>
+                {features[activeFeature].icon}
               </div>
-              <p className="text-sm text-slate-400 mb-8 leading-relaxed max-w-xs">
-                Global SaaS Certificate & Badge Platform. Empowering organizations to issue verifiable digital credentials.
+              <h3 style={{ fontSize: 24, fontWeight: 800, color: INDIGO, margin: '0 0 16px', lineHeight: 1.3 }}>
+                {features[activeFeature].title}
+              </h3>
+              <p style={{ fontSize: 15.5, color: '#555', margin: 0, lineHeight: 1.8 }}>
+                {features[activeFeature].desc}
               </p>
-              <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-indigo-600 hover:text-white transition-colors">
-                  <Linkedin className="h-4 w-4" />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-indigo-600 hover:text-white transition-colors">
-                  <Twitter className="h-4 w-4" />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-indigo-600 hover:text-white transition-colors">
-                  <Youtube className="h-4 w-4" />
-                </a>
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="text-white font-semibold mb-6">Platform</h4>
-              <ul className="space-y-4 text-sm">
-                <li><a href="#" className="hover:text-indigo-400 transition-colors">Features</a></li>
-                <li><a href="#" className="hover:text-indigo-400 transition-colors">Pricing</a></li>
-                <li><a href="#" className="hover:text-indigo-400 transition-colors">Integrations</a></li>
-                <li><a href="#" className="hover:text-indigo-400 transition-colors">API</a></li>
-                <li><a href="#" className="hover:text-indigo-400 transition-colors">Security</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="text-white font-semibold mb-6">Solutions</h4>
-              <ul className="space-y-4 text-sm">
-                <li><a href="#" className="hover:text-indigo-400 transition-colors">Higher Education</a></li>
-                <li><a href="#" className="hover:text-indigo-400 transition-colors">Corporate Training</a></li>
-                <li><a href="#" className="hover:text-indigo-400 transition-colors">Associations</a></li>
-                <li><a href="#" className="hover:text-indigo-400 transition-colors">Government</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="text-white font-semibold mb-6">Company</h4>
-              <ul className="space-y-4 text-sm">
-                <li><a href="#" className="hover:text-indigo-400 transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-indigo-400 transition-colors">Blog</a></li>
-                <li><a href="#" className="hover:text-indigo-400 transition-colors">Careers</a></li>
-                <li><a href="#" className="hover:text-indigo-400 transition-colors">Contact</a></li>
-              </ul>
+              <a href="#" style={{
+                display: 'inline-flex', alignItems: 'center', gap: 6,
+                marginTop: 28, color: PURPLE, fontWeight: 700, fontSize: 14,
+                textDecoration: 'none',
+              }}>
+                Learn more <ChevronRight size={16} />
+              </a>
             </div>
           </div>
-          
-          <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-            <div>© 2026 CertifyMe. All rights reserved.</div>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </section>
+
+      {/* ── G2 SOCIAL PROOF ────────────────────────── */}
+      <section style={{ padding: '80px 48px', background: LAVENDER_LIGHT }}>
+        <div style={{ maxWidth: 1184, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'center' }}>
+          {/* Left: text + ratings */}
+          <div>
+            <p style={{ fontSize: 13, fontWeight: 700, color: PURPLE, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 12 }}>Recognition</p>
+            <h2 style={{ fontSize: 36, fontWeight: 800, color: INDIGO, margin: '0 0 18px', lineHeight: 1.25 }}>
+              Ranked as the Second-Leading Digital Credential Management Software
+            </h2>
+            <p style={{ fontSize: 16, color: '#555', margin: '0 0 36px', lineHeight: 1.75 }}>
+              Academic institutions have rated us <strong>4.9/5</strong> with the highest user satisfaction score in the G2 Digital Credential Management category.
+            </p>
+
+            {/* Rating cards */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 14, marginBottom: 36 }}>
+              {ratings.map(r => (
+                <div key={r.alt} style={{
+                  background: '#fff', borderRadius: 14, padding: '20px 12px',
+                  boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
+                  border: '1px solid rgba(40,43,117,0.07)',
+                  textAlign: 'center',
+                  display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10,
+                }}>
+                  <img src={r.src} alt={r.alt} style={{ height: 32, objectFit: 'contain' }} />
+                  <Stars count={r.stars} />
+                </div>
+              ))}
+            </div>
+
+            <div style={{ display: 'flex', gap: 16, alignItems: 'center', flexWrap: 'wrap' }}>
+              <a href="#" style={{
+                background: `linear-gradient(135deg, ${INDIGO}, ${INDIGO_MID})`,
+                color: '#fff', padding: '13px 28px', borderRadius: 10,
+                fontWeight: 700, fontSize: 14, textDecoration: 'none',
+                boxShadow: `0 4px 14px rgba(40,43,117,0.3)`,
+              }}>Talk with Experts</a>
+              <a href="#" style={{ fontSize: 14, fontWeight: 600, color: PURPLE, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 4 }}>
+                View G2 Report <ChevronRight size={15} />
+              </a>
+            </div>
+            <p style={{ fontSize: 12.5, color: '#888', marginTop: 12 }}>Free 5 Credentials &nbsp;·&nbsp; Exclusive Support</p>
+          </div>
+
+          {/* Right: G2 grid image */}
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <img src="/__mockup/images/g2-leader-grid.png" alt="G2 Leader Digital Credential Management"
+              style={{ width: '100%', maxWidth: 460, borderRadius: 16, boxShadow: '0 20px 60px rgba(40,43,117,0.12)' }}
+              onError={e => { e.currentTarget.style.background = LAVENDER_BG; e.currentTarget.style.minHeight = '280px'; e.currentTarget.style.borderRadius = '16px'; e.currentTarget.src = ''; }}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ── TESTIMONIALS ───────────────────────────── */}
+      <section style={{ padding: '100px 48px', background: '#fff' }}>
+        <div style={{ maxWidth: 1184, margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: 56 }}>
+            <p style={{ fontSize: 13, fontWeight: 700, color: PURPLE, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 12 }}>Reviews</p>
+            <h2 style={{ fontSize: 42, fontWeight: 800, color: INDIGO, letterSpacing: '-1px', margin: 0 }}>Our Happy Customers</h2>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+            {testimonials.map((t, i) => (
+              <div key={i} style={{
+                background: '#fff', borderRadius: 16, padding: 28,
+                boxShadow: '0 4px 24px rgba(40,43,117,0.08)',
+                border: '1px solid rgba(40,43,117,0.07)',
+                display: 'flex', flexDirection: 'column',
+              }}>
+                <div style={{ display: 'flex', gap: 2, marginBottom: 16 }}>
+                  {[1, 2, 3, 4, 5].map(s => <Star key={s} size={14} fill="#F59E0B" color="#F59E0B" />)}
+                </div>
+                <p style={{ fontSize: 14, color: '#444', lineHeight: 1.75, flex: 1, margin: '0 0 20px', fontStyle: 'italic' }}>
+                  &ldquo;{t.quote}&rdquo;
+                </p>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                  <img src={t.img} alt={t.name}
+                    style={{ width: 44, height: 44, borderRadius: '50%', objectFit: 'cover', border: `2px solid ${LAVENDER_BG}` }}
+                    onError={e => {
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                  <div>
+                    <div style={{ fontWeight: 700, fontSize: 14, color: INDIGO }}>{t.name}</div>
+                    <div style={{ fontSize: 12.5, color: '#888' }}>{t.role} · {t.company}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── INDUSTRY USE CASES ─────────────────────── */}
+      <section style={{ padding: '80px 48px', background: LAVENDER_LIGHT }}>
+        <div style={{ maxWidth: 1184, margin: '0 auto', textAlign: 'center' }}>
+          <p style={{ fontSize: 13, fontWeight: 700, color: PURPLE, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 12 }}>Industries</p>
+          <h2 style={{ fontSize: 38, fontWeight: 800, color: INDIGO, letterSpacing: '-1px', margin: '0 0 48px' }}>
+            Built for Every Credentialing Use Case
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
+            {[
+              { title: 'Higher Education', desc: 'Transcripts, degree certificates, and report cards that drive student engagement', emoji: '🎓' },
+              { title: 'E-Learning', desc: 'Fully branded credentialing for online platforms to boost course completion rates', emoji: '💻' },
+              { title: 'Learning & Development', desc: 'Skill badges and course completion certifications for corporate training programs', emoji: '📈' },
+              { title: 'Associations', desc: 'Membership badges and certifications to drive revenue growth and attract members organically', emoji: '🏛️' },
+            ].map((item, i) => (
+              <div key={i} style={{
+                background: '#fff', borderRadius: 16, padding: '28px 22px',
+                boxShadow: '0 4px 16px rgba(40,43,117,0.06)',
+                border: '1px solid rgba(40,43,117,0.06)',
+                textAlign: 'left', cursor: 'pointer', transition: 'all 0.2s',
+              }}
+                onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(40,43,117,0.14)'; }}
+                onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(40,43,117,0.06)'; }}
+              >
+                <div style={{ fontSize: 32, marginBottom: 14 }}>{item.emoji}</div>
+                <h3 style={{ fontSize: 17, fontWeight: 700, color: INDIGO, margin: '0 0 10px' }}>{item.title}</h3>
+                <p style={{ fontSize: 13.5, color: '#666', margin: 0, lineHeight: 1.65 }}>{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── RESOURCE BANNER ────────────────────────── */}
+      <section style={{ padding: '80px 48px', background: '#fff' }}>
+        <div style={{ maxWidth: 1184, margin: '0 auto' }}>
+          <div style={{
+            background: `linear-gradient(135deg, ${INDIGO} 0%, #1e2060 60%, #2d1b69 100%)`,
+            borderRadius: 24, padding: '56px 64px',
+            display: 'grid', gridTemplateColumns: '1fr auto', gap: 48, alignItems: 'center',
+          }}>
+            <div>
+              <span style={{
+                fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase',
+                color: 'rgba(255,255,255,0.6)', background: 'rgba(255,255,255,0.1)',
+                padding: '4px 12px', borderRadius: 50, marginBottom: 20, display: 'inline-block',
+              }}>2026 Edition</span>
+              <h2 style={{ fontSize: 34, fontWeight: 800, color: '#fff', margin: '12px 0 16px', lineHeight: 1.2 }}>
+                Zero to One:<br />Build A Credentialing Program From Scratch
+              </h2>
+              <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.7)', margin: '0 0 28px', lineHeight: 1.7, maxWidth: 520 }}>
+                This extensive workbook + ebook combo contains everything you need to build a credentialing program from scratch.
+              </p>
+              <a href="#" style={{
+                display: 'inline-flex', alignItems: 'center', gap: 8,
+                background: '#fff', color: INDIGO,
+                padding: '13px 28px', borderRadius: 10, fontWeight: 700, fontSize: 14, textDecoration: 'none',
+              }}>Download Now <ArrowRight size={15} /></a>
+            </div>
+            <div style={{ textAlign: 'center', color: 'rgba(255,255,255,0.4)', fontSize: 80, lineHeight: 1 }}>📘</div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── BLOG CTA ───────────────────────────────── */}
+      <section style={{ padding: '0 48px 100px', background: '#fff', textAlign: 'center' }}>
+        <div style={{ maxWidth: 600, margin: '0 auto' }}>
+          <h2 style={{ fontSize: 38, fontWeight: 800, color: INDIGO, letterSpacing: '-1px', margin: '0 0 12px' }}>
+            Explore Our Resources!
+          </h2>
+          <p style={{ fontSize: 16, color: '#666', margin: '0 0 32px', lineHeight: 1.7 }}>
+            Access our Extensive Resource Library and Elevate Your Digital Credential Journey.
+          </p>
+          <a href="#" style={{
+            display: 'inline-flex', alignItems: 'center', gap: 8,
+            border: `2px solid ${INDIGO}`, color: INDIGO,
+            padding: '13px 28px', borderRadius: 10, fontWeight: 700, fontSize: 14, textDecoration: 'none',
+          }}>Browse Resources <ArrowRight size={15} /></a>
+        </div>
+      </section>
+
+      {/* ── FOOTER ─────────────────────────────────── */}
+      <footer style={{ background: INDIGO, padding: '64px 48px 32px', color: 'rgba(255,255,255,0.7)' }}>
+        <div style={{ maxWidth: 1184, margin: '0 auto' }}>
+          <div style={{
+            display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr 1fr', gap: 48,
+            marginBottom: 48, paddingBottom: 40, borderBottom: '1px solid rgba(255,255,255,0.12)',
+          }}>
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
+                <div style={{ width: 28, height: 28, background: 'rgba(255,255,255,0.15)', borderRadius: 7, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <CheckCircle size={16} color="#fff" />
+                </div>
+                <span style={{ fontWeight: 800, fontSize: 18, color: '#fff' }}>CertifyMe</span>
+              </div>
+              <p style={{ fontSize: 14, lineHeight: 1.7, maxWidth: 240, margin: 0 }}>
+                Global SaaS Certificate &amp; Badge Management Platform trusted by 4,800+ institutions worldwide.
+              </p>
+            </div>
+            {[
+              { title: 'Quick Links', links: ['About Us', 'Pricing', 'Samples', 'Blogs', 'Resources', 'Refund Policy'] },
+              { title: 'Industry Use Case', links: ['Higher Education', 'L & D', 'E-Learning', 'Associations', 'School Certs', 'Smart Certs'] },
+              { title: 'Compare Now', links: ['vs Credly', 'vs Accredible', 'vs Sertifier', 'vs Certifier'] },
+              { title: 'Connect With Us', links: ['LinkedIn', 'Twitter / X', 'YouTube', 'Contact Us'] },
+            ].map(col => (
+              <div key={col.title}>
+                <h4 style={{ color: '#fff', fontWeight: 700, fontSize: 14, marginBottom: 16, marginTop: 0 }}>{col.title}</h4>
+                {col.links.map(l => (
+                  <a key={l} href="#" style={{ display: 'block', fontSize: 13.5, color: 'rgba(255,255,255,0.6)', textDecoration: 'none', marginBottom: 10 }}>
+                    {l}
+                  </a>
+                ))}
+              </div>
+            ))}
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 13 }}>
+            <span>© 2026 CertifyMe. All rights reserved.</span>
+            <div style={{ display: 'flex', gap: 24 }}>
+              {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map(l => (
+                <a key={l} href="#" style={{ color: 'rgba(255,255,255,0.45)', textDecoration: 'none' }}>{l}</a>
+              ))}
             </div>
           </div>
         </div>
       </footer>
+
     </div>
   );
 }
