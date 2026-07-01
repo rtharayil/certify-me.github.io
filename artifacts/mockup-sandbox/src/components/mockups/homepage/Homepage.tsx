@@ -2,7 +2,7 @@ import './_group.css';
 import { useState } from 'react';
 import {
   BarChart3, Zap, Plug, Palette, Share2,
-  CheckCircle, Star, ArrowRight, ChevronRight,
+  CheckCircle, Star, ArrowRight, ChevronRight, ChevronDown,
 } from 'lucide-react';
 
 const INDIGO = '#282B75';
@@ -96,46 +96,201 @@ function Stars({ count }: { count: number }) {
   );
 }
 
+const navMenus = {
+  Products: {
+    cols: [
+      [
+        { label: 'Digital Certificates & Badges', href: '/digital-certificate' },
+        { label: 'E-Portfolio and Skill Development Platform', href: '/e-portfolio-skill-development-platform' },
+      ],
+      [
+        { label: 'EduTranscript', href: 'https://www.edutranscript.com' },
+      ],
+    ],
+  },
+  'Industry Use Case': {
+    cols: [
+      [
+        { label: 'E-Learning', href: '/credentials-for-elearning-platforms' },
+        { label: 'Associations', href: '/digital-badges-for-associations' },
+        { label: 'Colleges & Universities', href: '/credentials-higher-education' },
+      ],
+      [
+        { label: 'L&D Departments', href: '/digital-badges-for-hr' },
+        { label: 'Use Case FAQs', href: '/ICP-FAQs' },
+      ],
+    ],
+  },
+  Features: {
+    cols: [
+      [
+        { label: 'Integrations', href: '/allIntegrations' },
+        { label: 'API', href: '/api/' },
+        { label: 'Security & Compliance', href: '/security/' },
+        { label: 'White-labeling', href: '/whitelabel-credentials' },
+        { label: 'Analytics', href: '/credential-analytics' },
+        { label: 'Custom Wallet', href: '/custom-badge-wallet' },
+      ],
+      [
+        { label: 'Job Portal Integration', href: '/Job-Portal-Integration' },
+        { label: 'Cryptographic Signature', href: '/verifiable-signature' },
+        { label: 'Verification Page', href: '#' },
+        { label: 'Learning Path Sample', href: '#' },
+      ],
+    ],
+  },
+  Resources: {
+    cols: [
+      [
+        { label: 'Credential Samples', href: '/sample-credential' },
+        { label: 'Videos', href: 'https://www.youtube.com/channel/UCkbhyRP0L34oPaUOXBkI61w' },
+        { label: 'Blogs', href: '/blog' },
+        { label: 'Certificate Templates', href: '/certificate-templates' },
+        { label: 'Case Studies', href: '/case-studies' },
+        { label: 'Glossary', href: '/glossary' },
+      ],
+      [
+        { label: "FAQ's — Digital Credential", href: '/gen-FAQ' },
+        { label: "FAQ's — EduTranscript", href: '#' },
+        { label: 'About Us', href: '/AboutUs' },
+        { label: 'Admin Roles', href: '/Admin-Roles' },
+        { label: 'Cryptographic Signature Download', href: '/signature-download' },
+      ],
+    ],
+  },
+};
+
+const loginLinks = [
+  { label: 'Wallet Login', href: 'https://wallet.certifyme.org/auth/login?next=%2F' },
+  { label: 'Institutional Login', href: 'https://apac.platform.certifyme.dev' },
+];
+
+const dropdownBase = {
+  position: 'absolute', top: '100%', left: '50%', transform: 'translateX(-50%)',
+  background: '#fff', borderRadius: 12, padding: '20px 24px',
+  boxShadow: '0 12px 40px rgba(40,43,117,0.14)',
+  border: '1px solid rgba(40,43,117,0.08)',
+  minWidth: 340, zIndex: 200,
+};
+
+function MegaMenu({ menu }: { menu: { cols: { label: string; href: string }[][] } }) {
+  return (
+    <div style={{ ...dropdownBase, minWidth: 480 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: `repeat(${menu.cols.length}, 1fr)`, gap: 8 }}>
+        {menu.cols.map((col, ci) => (
+          <div key={ci}>
+            {col.map(item => (
+              <a key={item.label} href={item.href} style={{
+                display: 'block', padding: '7px 10px', fontSize: 13.5, color: '#333',
+                textDecoration: 'none', borderRadius: 6, transition: 'all 0.15s',
+              }}
+                onMouseEnter={e => { e.currentTarget.style.background = LAVENDER_BG; e.currentTarget.style.color = INDIGO; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#333'; }}
+              >{item.label}</a>
+            ))}
+            {ci === menu.cols.length - 1 && (
+              <a href="https://info.certifyme.online/talk-with-expert" style={{
+                display: 'block', marginTop: 12, padding: '9px 16px', fontSize: 12.5,
+                fontWeight: 700, color: '#fff', textAlign: 'center',
+                background: `linear-gradient(135deg, ${INDIGO}, ${PURPLE})`,
+                borderRadius: 8, textDecoration: 'none', letterSpacing: 0.3,
+              }}>TALK TO OUR EXPERT</a>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function Homepage() {
   const [activeFeature, setActiveFeature] = useState(0);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
 
   return (
     <div style={{ fontFamily: "'Plus Jakarta Sans', 'Inter', sans-serif", backgroundColor: '#fff', color: '#1a1a2e', lineHeight: 1.6 }}>
 
       {/* ── NAVBAR ─────────────────────────────────── */}
       <nav style={{
-        position: 'sticky', top: 0, zIndex: 100,
+        position: 'sticky', top: 0, zIndex: 200,
         backgroundColor: 'rgba(255,255,255,0.97)',
         backdropFilter: 'blur(12px)',
         borderBottom: '1px solid #E8E8F0',
-        padding: '0 48px',
+        padding: '0 40px',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         height: 68,
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <div style={{ width: 32, height: 32, background: `linear-gradient(135deg, ${INDIGO}, ${PURPLE})`, borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <CheckCircle size={18} color="#fff" />
-          </div>
-          <span style={{ fontWeight: 800, fontSize: 20, color: INDIGO, letterSpacing: '-0.5px' }}>CertifyMe</span>
-        </div>
+        {/* Logo */}
+        <a href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', flexShrink: 0 }}>
+          <img src="/__mockup/images/logo.png" alt="CertifyMe" style={{ height: 38, objectFit: 'contain' }} />
+        </a>
 
-        <div style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
-          {['Products', 'Industry Use Case', 'Features', 'Resources', 'Pricing'].map(label => (
-            <a key={label} href="#" style={{ fontSize: 14, fontWeight: 500, color: '#444', textDecoration: 'none' }}>
-              {label}
-            </a>
+        {/* Main links */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+          {(Object.keys(navMenus) as (keyof typeof navMenus)[]).map(key => (
+            <div key={key} style={{ position: 'relative' }}
+              onMouseEnter={() => setOpenMenu(key)}
+              onMouseLeave={() => setOpenMenu(null)}>
+              <button style={{
+                display: 'flex', alignItems: 'center', gap: 4,
+                padding: '8px 12px', background: 'none', border: 'none', cursor: 'pointer',
+                fontSize: 13.5, fontWeight: 600,
+                color: openMenu === key ? INDIGO : '#444',
+                borderRadius: 6, transition: 'color 0.15s',
+              }}>
+                {key} <ChevronDown size={13} style={{ marginTop: 1, opacity: 0.7 }} />
+              </button>
+              {openMenu === key && <MegaMenu menu={navMenus[key]} />}
+            </div>
           ))}
+
+          {/* Pricing — plain link */}
+          <a href="/pricing" style={{
+            padding: '8px 12px', fontSize: 13.5, fontWeight: 600,
+            color: '#444', textDecoration: 'none', borderRadius: 6,
+          }}>Pricing</a>
+
+          {/* Login dropdown */}
+          <div style={{ position: 'relative' }}
+            onMouseEnter={() => setOpenMenu('login')}
+            onMouseLeave={() => setOpenMenu(null)}>
+            <button style={{
+              display: 'flex', alignItems: 'center', gap: 4,
+              padding: '8px 12px', background: 'none', border: 'none', cursor: 'pointer',
+              fontSize: 13.5, fontWeight: 600,
+              color: openMenu === 'login' ? INDIGO : '#444',
+              borderRadius: 6,
+            }}>
+              Login <ChevronDown size={13} style={{ marginTop: 1, opacity: 0.7 }} />
+            </button>
+            {openMenu === 'login' && (
+              <div style={{ ...dropdownBase, minWidth: 200, left: 'auto', right: 0, transform: 'none' }}>
+                {loginLinks.map(l => (
+                  <a key={l.label} href={l.href} style={{
+                    display: 'block', padding: '8px 10px', fontSize: 13.5, color: '#333',
+                    textDecoration: 'none', borderRadius: 6, transition: 'all 0.15s',
+                  }}
+                    onMouseEnter={e => { e.currentTarget.style.background = LAVENDER_BG; e.currentTarget.style.color = INDIGO; }}
+                    onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#333'; }}
+                  >{l.label}</a>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
 
-        <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-          <a href="#" style={{ fontSize: 14, fontWeight: 500, color: '#444', textDecoration: 'none' }}>Login</a>
-          <a href="#" style={{
-            background: `linear-gradient(135deg, ${INDIGO}, ${INDIGO_MID})`,
-            color: '#fff', padding: '10px 22px', borderRadius: 8,
-            fontWeight: 700, fontSize: 14, textDecoration: 'none',
-            boxShadow: `0 4px 14px rgba(40,43,117,0.30)`,
-          }}>Book Demo</a>
-        </div>
+        {/* CTA */}
+        <a href="https://info.certifyme.online/request-demo" style={{
+          background: `linear-gradient(135deg, ${INDIGO} 0%, ${INDIGO_MID} 100%)`,
+          color: '#fff', padding: '11px 24px', borderRadius: 8,
+          fontWeight: 700, fontSize: 14, textDecoration: 'none',
+          boxShadow: `0 4px 16px rgba(40,43,117,0.32)`,
+          whiteSpace: 'nowrap', flexShrink: 0,
+          transition: 'box-shadow 0.2s',
+        }}
+          onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 6px 24px rgba(40,43,117,0.45)'; }}
+          onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 4px 16px rgba(40,43,117,0.32)'; }}
+        >Book Demo</a>
       </nav>
 
       {/* ── HERO ───────────────────────────────────── */}
