@@ -9,141 +9,163 @@
       <div class="col-md-7 order-first order-md-1">
         <div class="lw-shot-wrap wow fadeInLeft">
 
-          <!-- Floating pill -->
-          <div class="lw-float-pill lw-pill-top">
-            <span class="lw-pill-dot" style="background:#16a34a;"></span>
-            <strong>1M+</strong>&nbsp;Active Wallets
+          <!-- Floating stat widget top-right -->
+          <div class="lw-stat-widget lw-widget-tr">
+            <div class="lw-widget-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div class="lw-widget-text">
+              <div class="lw-widget-val">1.2K</div>
+              <div class="lw-widget-lbl">Profile Views</div>
+            </div>
+            <div class="lw-widget-trend">↑ 30%</div>
           </div>
 
-          <!-- Wallet shell -->
-          <div class="lw-wallet-card">
+          <!-- Browser shell -->
+          <div class="lw-browser-shell">
 
-            <!-- Wallet profile header -->
-            <div class="lw-wallet-header">
-              <div class="lw-wallet-avatar">SJ</div>
-              <div class="lw-wallet-user">
-                <div class="lw-wallet-name">Sarah Johnson</div>
-                <div class="lw-wallet-sub">MSc Data Science · University of British Columbia</div>
-                <div class="lw-wallet-verified">
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                  W3C Verified Identity
-                </div>
+            <!-- Chrome bar -->
+            <div class="lw-chrome-bar">
+              <div class="lw-chrome-dots">
+                <span style="background:#ff5f57;"></span>
+                <span style="background:#febc2e;"></span>
+                <span style="background:#28c840;"></span>
               </div>
-              <div class="lw-wallet-qr">
-                <svg width="30" height="30" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="5" y="5" width="28" height="28" rx="3" fill="rgba(255,255,255,0.25)"/>
-                  <rect x="11" y="11" width="16" height="16" rx="1" fill="rgba(255,255,255,0.5)"/>
-                  <rect x="47" y="5" width="28" height="28" rx="3" fill="rgba(255,255,255,0.25)"/>
-                  <rect x="53" y="11" width="16" height="16" rx="1" fill="rgba(255,255,255,0.5)"/>
-                  <rect x="5" y="47" width="28" height="28" rx="3" fill="rgba(255,255,255,0.25)"/>
-                  <rect x="11" y="53" width="16" height="16" rx="1" fill="rgba(255,255,255,0.5)"/>
-                  <rect x="47" y="47" width="8" height="8" rx="1" fill="rgba(255,255,255,0.4)"/>
-                  <rect x="60" y="47" width="8" height="8" rx="1" fill="rgba(255,255,255,0.4)"/>
-                  <rect x="47" y="60" width="8" height="8" rx="1" fill="rgba(255,255,255,0.4)"/>
-                  <rect x="60" y="60" width="8" height="8" rx="1" fill="rgba(255,255,255,0.4)"/>
-                </svg>
+              <div class="lw-chrome-url">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2.2" style="flex-shrink:0;"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                skillstory.org/sarah-johnson
+              </div>
+              <div class="lw-chrome-share">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
               </div>
             </div>
 
-            <!-- Wallet stats bar -->
-            <div class="lw-stats-bar">
-              <div class="lw-stat-item">
-                <strong>4</strong>
-                <span>Credentials</span>
-              </div>
-              <div class="lw-stat-div"></div>
-              <div class="lw-stat-item">
-                <strong>38</strong>
-                <span>Profile Views</span>
-              </div>
-              <div class="lw-stat-div"></div>
-              <div class="lw-stat-item">
-                <strong>6</strong>
-                <span>Job Applications</span>
-              </div>
-            </div>
+            <!-- Wallet body: two-pane layout -->
+            <div class="lw-wallet-body">
 
-            <!-- Tab bar -->
-            <div class="lw-tab-bar">
-              <span class="lw-tab lw-tab-active">My Credentials</span>
-              <span class="lw-tab">CV Builder</span>
-              <span class="lw-tab">Jobs</span>
-            </div>
+              <!-- LEFT PANE: profile sidebar -->
+              <div class="lw-sidebar">
+                <div class="lw-profile-avatar">SJ</div>
+                <div class="lw-profile-name">Sarah Johnson</div>
+                <div class="lw-profile-title">Data Scientist</div>
+                <div class="lw-profile-org">University of British Columbia</div>
+                <div class="lw-verified-badge">
+                  <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  Verified Profile
+                </div>
 
-            <!-- Credentials list -->
-            <div class="lw-cred-list">
+                <div class="lw-sidebar-divider"></div>
 
-              <div class="lw-cred-row lw-cred-featured">
-                <div class="lw-cred-icon" style="background:linear-gradient(135deg,#282b75,#6366f1);">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                <div class="lw-sidebar-label">SKILLS</div>
+                <div class="lw-skills-wrap">
+                  <span class="lw-skill-chip">Python</span>
+                  <span class="lw-skill-chip">ML</span>
+                  <span class="lw-skill-chip">NLP</span>
+                  <span class="lw-skill-chip">SQL</span>
+                  <span class="lw-skill-chip">TensorFlow</span>
                 </div>
-                <div class="lw-cred-info">
-                  <div class="lw-cred-title">MSc Data Science</div>
-                  <div class="lw-cred-issuer">University of British Columbia · Jun 2025</div>
-                </div>
-                <div class="lw-cred-actions">
-                  <span class="lw-cred-badge lw-badge-verified">Verified</span>
-                  <span class="lw-cred-share">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
-                  </span>
-                </div>
-              </div>
 
-              <div class="lw-cred-row">
-                <div class="lw-cred-icon" style="background:linear-gradient(135deg,#0ea5e9,#6366f1);">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
-                <div class="lw-cred-info">
-                  <div class="lw-cred-title">AI &amp; Machine Learning</div>
-                  <div class="lw-cred-issuer">Coursera · Mar 2025</div>
-                </div>
-                <div class="lw-cred-actions">
-                  <span class="lw-cred-badge lw-badge-verified">Verified</span>
-                  <span class="lw-cred-share">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
-                  </span>
-                </div>
-              </div>
+                <div class="lw-sidebar-divider"></div>
 
-              <div class="lw-cred-row">
-                <div class="lw-cred-icon" style="background:linear-gradient(135deg,#10b981,#0ea5e9);">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                <div class="lw-mini-stats">
+                  <div class="lw-mini-stat"><strong>4</strong><span>Credentials</span></div>
+                  <div class="lw-mini-stat"><strong>6</strong><span>Jobs Applied</span></div>
                 </div>
-                <div class="lw-cred-info">
-                  <div class="lw-cred-title">Python for Data Engineering</div>
-                  <div class="lw-cred-issuer">DataCamp · Jan 2025</div>
-                </div>
-                <div class="lw-cred-actions">
-                  <span class="lw-cred-badge lw-badge-verified">Verified</span>
-                  <span class="lw-cred-share">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
-                  </span>
-                </div>
-              </div>
 
-              <!-- Quick action row -->
-              <div class="lw-quick-actions">
-                <a class="lw-action-btn">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
-                  Export CV
-                </a>
-                <a class="lw-action-btn">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-                  Browse Jobs
-                </a>
-                <a class="lw-action-btn">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
+                <button class="lw-share-btn">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
                   Share Profile
-                </a>
+                </button>
               </div>
 
-            </div><!-- end cred list -->
-          </div><!-- end wallet card -->
+              <!-- RIGHT PANE: credentials + actions -->
+              <div class="lw-main-pane">
 
-          <!-- Bottom pill -->
+                <!-- Tab bar -->
+                <div class="lw-tab-bar">
+                  <span class="lw-tab lw-tab-active">My Credentials</span>
+                  <span class="lw-tab">CV Builder</span>
+                  <span class="lw-tab">Jobs</span>
+                </div>
+
+                <!-- Featured credential card -->
+                <div class="lw-cred-card lw-cred-featured">
+                  <div class="lw-cred-card-top">
+                    <div class="lw-cred-card-icon" style="background:linear-gradient(135deg,#282b75,#6366f1);">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                    </div>
+                    <div class="lw-cred-card-meta">
+                      <div class="lw-cred-card-name">MSc Data Science</div>
+                      <div class="lw-cred-card-issuer">University of British Columbia · Jun 2025</div>
+                    </div>
+                    <div class="lw-cred-card-check">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                  </div>
+                  <div class="lw-cred-card-tags">
+                    <span class="lw-cred-tag">Machine Learning</span>
+                    <span class="lw-cred-tag">Data Analysis</span>
+                    <span class="lw-cred-tag">Research Methods</span>
+                  </div>
+                  <div class="lw-cred-card-source">
+                    <span class="lw-source-pill lw-source-cm">CM</span>
+                    <span style="font-size:10px;color:#94a3b8;">Auto-synced via CertifyMe</span>
+                  </div>
+                </div>
+
+                <!-- Two smaller cred rows -->
+                <div class="lw-cred-row-sm">
+                  <div class="lw-cred-row-icon" style="background:linear-gradient(135deg,#0369a1,#0ea5e9);">
+                    <span style="font-size:9px;font-weight:800;color:#fff;">C</span>
+                  </div>
+                  <div class="lw-cred-row-info">
+                    <div class="lw-cred-row-name">AI &amp; Machine Learning Specialisation</div>
+                    <div class="lw-cred-row-src">Coursera · Mar 2025</div>
+                  </div>
+                  <span class="lw-cred-row-badge">Verified</span>
+                </div>
+
+                <div class="lw-cred-row-sm">
+                  <div class="lw-cred-row-icon" style="background:linear-gradient(135deg,#ea4335,#fbbc04);">
+                    <span style="font-size:9px;font-weight:800;color:#fff;">G</span>
+                  </div>
+                  <div class="lw-cred-row-info">
+                    <div class="lw-cred-row-name">Google Data Analytics Certificate</div>
+                    <div class="lw-cred-row-src">Google · Nov 2024</div>
+                  </div>
+                  <span class="lw-cred-row-badge">Verified</span>
+                </div>
+
+                <!-- Add from platforms -->
+                <div class="lw-add-strip">
+                  <span class="lw-add-label">+ Add from</span>
+                  <span class="lw-platform-pill" style="color:#0369a1;">Coursera</span>
+                  <span class="lw-platform-pill" style="color:#ea4335;">Google</span>
+                  <span class="lw-platform-pill" style="color:#f90;">AWS</span>
+                  <span class="lw-platform-pill" style="color:#5624d0;">Udemy</span>
+                  <span class="lw-platform-more">+5 more</span>
+                </div>
+
+                <!-- Actions -->
+                <div class="lw-actions-row">
+                  <button class="lw-action-primary">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></svg>
+                    Export CV
+                  </button>
+                  <button class="lw-action-secondary">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2"/></svg>
+                    Browse Jobs
+                  </button>
+                </div>
+
+              </div><!-- end main pane -->
+            </div><!-- end wallet body -->
+          </div><!-- end browser shell -->
+
+          <!-- Bottom floating pill -->
           <div class="lw-float-pill lw-pill-bottom">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            Credentials verified on blockchain
+            Shareable · Portable · Employer-Ready
           </div>
 
         </div>
@@ -157,7 +179,7 @@
           <span class="lw-eyebrow">LEARNER WALLET</span>
 
           <h2 class="s-38 w-700" style="margin-top: 14px; margin-bottom: 16px; line-height: 1.18;">
-            Every Graduate Gets a Verified Wallet — for Life
+            Every Graduate Gets a Verified Digital Wallet
           </h2>
 
           <p class="p-lg" style="color:#555; margin-bottom: 24px;">
@@ -171,7 +193,7 @@
               </span>
               <div>
                 <strong>Auto-Collecting Credentials</strong>
-                <span>Awards from any issuer go straight into the wallet. No setup required from learners or your team.</span>
+                <span>Awards from any issuer go straight into the wallet — CertifyMe, Coursera, Google, AWS and more.</span>
               </div>
             </li>
             <li>
@@ -211,51 +233,80 @@
 
 
 <style>
-/* ── Learner Wallet section ───────────────────── */
+/* ── Learner Wallet ───────────────────────────── */
 .lw-eyebrow{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;color:#6366f1;background:rgba(99,102,241,.09);padding:5px 14px;border-radius:50px;border:1px solid rgba(99,102,241,.18);}
-/* Shot wrap + pills */
-.lw-shot-wrap{position:relative;padding:28px 8px 44px 0;}
-.lw-float-pill{position:absolute;display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid rgba(40,43,117,.12);border-radius:50px;padding:7px 16px;font-size:13px;font-weight:600;color:#1e293b;box-shadow:0 4px 20px rgba(40,43,117,.12);z-index:2;white-space:nowrap;}
-.lw-pill-dot{width:8px;height:8px;border-radius:50%;display:inline-block;flex-shrink:0;}
-.lw-pill-top{top:4px;right:8px;}
+/* Shot wrap */
+.lw-shot-wrap{position:relative;padding:44px 8px 44px 0;}
+/* Floating stat widget */
+.lw-stat-widget{position:absolute;display:flex;align-items:center;gap:10px;background:#fff;border:1px solid rgba(40,43,117,.10);border-radius:14px;padding:10px 16px;box-shadow:0 4px 20px rgba(40,43,117,.13);z-index:3;}
+.lw-widget-tr{top:8px;right:0;}
+.lw-widget-icon{width:32px;height:32px;border-radius:9px;background:rgba(99,102,241,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.lw-widget-text{}
+.lw-widget-val{font-size:16px;font-weight:900;color:#282b75;line-height:1;}
+.lw-widget-lbl{font-size:10px;color:#94a3b8;margin-top:1px;}
+.lw-widget-trend{font-size:11px;font-weight:700;color:#16a34a;background:#dcfce7;padding:2px 8px;border-radius:50px;}
+/* Floating pill bottom */
+.lw-float-pill{position:absolute;display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid rgba(40,43,117,.12);border-radius:50px;padding:7px 16px;font-size:12.5px;font-weight:600;color:#1e293b;box-shadow:0 4px 20px rgba(40,43,117,.12);z-index:2;white-space:nowrap;}
 .lw-pill-bottom{bottom:16px;left:0;}
-/* Wallet card */
-.lw-wallet-card{border-radius:16px;overflow:hidden;box-shadow:0 0 0 1px rgba(40,43,117,.08),0 8px 28px rgba(40,43,117,.12),0 32px 72px rgba(40,43,117,.16);background:#fff;}
-/* Wallet header */
-.lw-wallet-header{background:linear-gradient(135deg,#282b75 0%,#4f46e5 100%);padding:20px 22px;display:flex;align-items:center;gap:14px;}
-.lw-wallet-avatar{width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,.22);color:#fff;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;letter-spacing:.5px;border:2px solid rgba(255,255,255,.35);}
-.lw-wallet-user{flex:1;min-width:0;}
-.lw-wallet-name{font-size:15px;font-weight:800;color:#fff;margin-bottom:2px;}
-.lw-wallet-sub{font-size:11px;color:rgba(255,255,255,.72);margin-bottom:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.lw-wallet-verified{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:700;color:rgba(255,255,255,.9);background:rgba(255,255,255,.15);padding:2px 9px;border-radius:50px;border:1px solid rgba(255,255,255,.25);}
-.lw-wallet-qr{opacity:.5;flex-shrink:0;}
-/* Stats bar */
-.lw-stats-bar{display:flex;align-items:center;justify-content:space-around;padding:12px 22px;border-bottom:1px solid #f1f5f9;background:#fafbff;}
-.lw-stat-item{display:flex;flex-direction:column;align-items:center;gap:1px;}
-.lw-stat-item strong{font-size:18px;font-weight:900;color:#282b75;line-height:1;}
-.lw-stat-item span{font-size:10px;color:#94a3b8;font-weight:500;}
-.lw-stat-div{width:1px;height:28px;background:#e2e8f0;}
-/* Tab bar */
-.lw-tab-bar{display:flex;border-bottom:1px solid #e8edf5;padding:0 16px;background:#fff;}
-.lw-tab{font-size:12px;font-weight:600;color:#94a3b8;padding:10px 14px;cursor:default;border-bottom:2px solid transparent;margin-bottom:-1px;}
+/* Browser shell */
+.lw-browser-shell{border-radius:14px;overflow:hidden;box-shadow:0 0 0 1px rgba(40,43,117,.08),0 8px 28px rgba(40,43,117,.12),0 32px 72px rgba(40,43,117,.15);background:#fff;}
+.lw-chrome-bar{background:#f1f3f9;border-bottom:1px solid #e2e6f0;padding:9px 14px;display:flex;align-items:center;gap:8px;}
+.lw-chrome-dots{display:flex;gap:5px;flex-shrink:0;}
+.lw-chrome-dots span{width:10px;height:10px;border-radius:50%;display:inline-block;}
+.lw-chrome-url{flex:1;background:#fff;border:1px solid #dde1ec;border-radius:6px;padding:5px 10px;font-size:10.5px;color:#64748b;display:flex;align-items:center;gap:6px;margin:0 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lw-chrome-share{width:28px;height:28px;border-radius:7px;background:#fff;border:1px solid #e2e6f0;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+/* Wallet body: sidebar + main */
+.lw-wallet-body{display:flex;min-height:420px;}
+/* Sidebar */
+.lw-sidebar{width:150px;flex-shrink:0;background:#fafbff;border-right:1px solid #f0f2f8;padding:18px 14px;display:flex;flex-direction:column;align-items:center;}
+.lw-profile-avatar{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#282b75,#6366f1);color:#fff;font-size:17px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:9px;border:2px solid rgba(99,102,241,.3);}
+.lw-profile-name{font-size:12px;font-weight:800;color:#0f172a;text-align:center;margin-bottom:2px;}
+.lw-profile-title{font-size:10px;color:#6366f1;font-weight:600;text-align:center;margin-bottom:2px;}
+.lw-profile-org{font-size:9.5px;color:#94a3b8;text-align:center;line-height:1.3;margin-bottom:8px;}
+.lw-verified-badge{display:inline-flex;align-items:center;gap:4px;background:#6366f1;color:#fff;font-size:9px;font-weight:700;padding:3px 9px;border-radius:50px;}
+.lw-sidebar-divider{width:100%;height:1px;background:#f0f2f8;margin:12px 0;}
+.lw-sidebar-label{font-size:9px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#cbd5e1;margin-bottom:6px;align-self:flex-start;}
+.lw-skills-wrap{display:flex;flex-wrap:wrap;gap:4px;justify-content:center;}
+.lw-skill-chip{font-size:9px;font-weight:600;color:#6366f1;background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.18);border-radius:50px;padding:2px 7px;}
+.lw-mini-stats{display:flex;gap:10px;width:100%;justify-content:center;margin-top:2px;}
+.lw-mini-stat{display:flex;flex-direction:column;align-items:center;gap:0;}
+.lw-mini-stat strong{font-size:15px;font-weight:900;color:#282b75;line-height:1.1;}
+.lw-mini-stat span{font-size:9px;color:#94a3b8;}
+.lw-share-btn{margin-top:12px;width:100%;display:flex;align-items:center;justify-content:center;gap:5px;font-size:10.5px;font-weight:700;color:#6366f1;background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.2);border-radius:8px;padding:7px 8px;cursor:pointer;}
+/* Main pane */
+.lw-main-pane{flex:1;min-width:0;padding:0 0 14px;}
+.lw-tab-bar{display:flex;border-bottom:1px solid #e8edf5;padding:0 14px;}
+.lw-tab{font-size:11.5px;font-weight:600;color:#94a3b8;padding:10px 10px;cursor:default;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;}
 .lw-tab-active{color:#4f46e5;border-bottom-color:#4f46e5;}
-/* Credentials list */
-.lw-cred-list{padding:12px 16px 16px;}
-.lw-cred-row{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:10px;border:1px solid #e8edf5;margin-bottom:8px;background:#fff;transition:box-shadow .18s,border-color .18s;}
-.lw-cred-featured{border-color:rgba(99,102,241,.28);background:rgba(99,102,241,.03);}
-.lw-cred-row:hover{box-shadow:0 3px 14px rgba(40,43,117,.10);border-color:rgba(99,102,241,.3);}
-.lw-cred-icon{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.lw-cred-info{flex:1;min-width:0;}
-.lw-cred-title{font-size:12.5px;font-weight:700;color:#0f172a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.lw-cred-issuer{font-size:10.5px;color:#94a3b8;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.lw-cred-actions{display:flex;align-items:center;gap:8px;flex-shrink:0;}
-.lw-cred-badge{font-size:9.5px;font-weight:700;padding:2px 8px;border-radius:50px;white-space:nowrap;}
-.lw-badge-verified{background:#dcfce7;color:#15803d;border:1px solid #bbf7d0;}
-.lw-cred-share{width:26px;height:26px;border-radius:7px;background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.15);display:flex;align-items:center;justify-content:center;cursor:pointer;}
-/* Quick actions */
-.lw-quick-actions{display:flex;gap:8px;margin-top:4px;}
-.lw-action-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;font-size:11.5px;font-weight:700;color:#4f46e5;background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);border-radius:9px;padding:9px 8px;cursor:pointer;transition:background .18s;text-decoration:none;}
-.lw-action-btn:hover{background:rgba(99,102,241,.14);}
+/* Featured cred card */
+.lw-cred-card{margin:12px 14px 8px;border-radius:12px;border:1px solid rgba(99,102,241,.22);background:linear-gradient(135deg,rgba(99,102,241,.04) 0%,rgba(139,92,246,.03) 100%);padding:12px 14px;}
+.lw-cred-card-top{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+.lw-cred-card-icon{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.lw-cred-card-meta{flex:1;min-width:0;}
+.lw-cred-card-name{font-size:12.5px;font-weight:800;color:#0f172a;}
+.lw-cred-card-issuer{font-size:10px;color:#94a3b8;margin-top:1px;}
+.lw-cred-card-check{width:26px;height:26px;border-radius:50%;background:#6366f1;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.lw-cred-card-tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px;}
+.lw-cred-tag{font-size:9.5px;font-weight:600;color:#6366f1;background:rgba(99,102,241,.09);border:1px solid rgba(99,102,241,.15);border-radius:50px;padding:2px 8px;}
+.lw-cred-card-source{display:flex;align-items:center;gap:6px;}
+.lw-source-pill{font-size:9px;font-weight:800;padding:2px 8px;border-radius:50px;}
+.lw-source-cm{background:#282b75;color:#fff;}
+/* Small cred rows */
+.lw-cred-row-sm{display:flex;align-items:center;gap:9px;padding:7px 14px;border-bottom:1px solid #f8fafc;}
+.lw-cred-row-icon{width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.lw-cred-row-info{flex:1;min-width:0;}
+.lw-cred-row-name{font-size:11px;font-weight:700;color:#0f172a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lw-cred-row-src{font-size:9.5px;color:#94a3b8;}
+.lw-cred-row-badge{font-size:9px;font-weight:700;background:#dcfce7;color:#15803d;border:1px solid #bbf7d0;border-radius:50px;padding:2px 8px;white-space:nowrap;flex-shrink:0;}
+/* Add from platforms */
+.lw-add-strip{display:flex;align-items:center;gap:6px;padding:8px 14px;background:#f8fafc;border-top:1px solid #f0f2f8;border-bottom:1px solid #f0f2f8;flex-wrap:wrap;}
+.lw-add-label{font-size:10px;font-weight:700;color:#94a3b8;white-space:nowrap;}
+.lw-platform-pill{font-size:10px;font-weight:700;background:#fff;border:1px solid #e2e8f0;border-radius:6px;padding:2px 9px;cursor:pointer;}
+.lw-platform-more{font-size:10px;font-weight:600;color:#94a3b8;}
+/* Actions */
+.lw-actions-row{display:flex;gap:8px;padding:10px 14px 0;}
+.lw-action-primary{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;font-size:11.5px;font-weight:700;color:#fff;background:#6366f1;border:none;border-radius:9px;padding:9px 8px;cursor:pointer;}
+.lw-action-secondary{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;font-size:11.5px;font-weight:700;color:#6366f1;background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.2);border-radius:9px;padding:9px 8px;cursor:pointer;}
 /* Copy side */
 .lw-feature-list{list-style:none;padding:0;margin:0 0 32px;display:flex;flex-direction:column;gap:20px;}
 .lw-feature-list li{display:flex;align-items:flex-start;gap:14px;font-size:14.5px;color:#555;line-height:1.55;}
@@ -264,6 +315,6 @@
 .lw-feature-list span{color:#64748b;font-size:13.5px;}
 .lw-ctas{display:flex;align-items:center;gap:28px;flex-wrap:wrap;}
 /* Responsive */
-@media(max-width:991px){.lw-wallet-card{margin-bottom:50px;}.txt-block.right-column{padding-left:0!important;}.lw-wallet-qr{display:none;}}
-@media(max-width:575px){.lw-float-pill{display:none;}.lw-quick-actions{flex-direction:column;}.lw-ctas{flex-direction:column;align-items:flex-start;gap:16px;}}
+@media(max-width:991px){.lw-browser-shell{margin-bottom:50px;}.txt-block.right-column{padding-left:0!important;}.lw-sidebar{width:120px;}.lw-stat-widget{display:none;}}
+@media(max-width:575px){.lw-float-pill{display:none;}.lw-sidebar{display:none;}.lw-ctas{flex-direction:column;align-items:flex-start;gap:16px;}}
 </style>
