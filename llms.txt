@@ -1,0 +1,108 @@
+# CertifyMe
+
+> CertifyMe is a verifiable digital credential software platform for institutions that need to issue, manage, and verify digital certificates, open badges, and learner portfolios at scale.
+
+## What is CertifyMe?
+
+CertifyMe (by Tech99 Innovations Pvt Ltd) is an enterprise-grade digital credentialing platform that enables educational institutions, corporations, associations, and e-learning providers to issue tamper-proof, verifiable digital credentials compliant with Open Badges 3.0 standards.
+
+## Core Product
+
+- **Digital Certificates** — branded, verifiable, shareable certificate webpages with QR codes
+- **Open Badges** — Open Badges 3.0 compliant digital badges for skills and achievements
+- **Learner Portfolios** — portable, verified skill records for learners
+- **Credential Verification** — QR-code and URL-based independent verification
+- **White-Label Credentialing** — fully branded credential experience
+- **Bulk Issuance** — issue thousands of credentials with minimal manual effort
+- **Analytics** — credential engagement and sharing analytics
+- **API & Integrations** — REST API, Zapier, LMS integrations, HR system integrations
+
+## Industries Served
+
+- Higher Education (universities, colleges — transcripts, degree certificates, report cards)
+- E-Learning Platforms (course completion badges, micro-credentials)
+- Corporate Learning & Development (skill badges, training certifications)
+- Professional Associations (membership badges, certification management)
+- Schools (K-12 certificates)
+
+## Key Features
+
+- Open Badges 3.0 compliant credentials
+- QR code verification on every credential
+- Social sharing (LinkedIn, Twitter, Facebook)
+- LMS integrations (Academy Ocean, Airteach, AxisLMS, BambooHR, and more)
+- Custom branding and white-label options
+- Bulk CSV upload for credential issuance
+- API access for programmatic credential management
+- Multi-language credential support
+- GDPR, FERPA, COPPA, ISO 27001, ISO 27701, ISO 9001 compliant
+- No sensitive data upload required (no learner email needed for issuance)
+
+## Standards & Compliance
+
+- Open Badges 3.0 (IMS Global)
+- ISO 9001 certified
+- ISO 27001 certified
+- ISO 27701 certified
+- GDPR compliant
+- FERPA compliant
+- COPPA compliant
+
+## Differentiators
+
+- Ranked #1 Leader in Digital Credential Management Software (G2, TrustRadius, Capterra)
+- Credentials issue to 144+ countries
+- 500+ institutions trust CertifyMe
+- 4.8/5 average rating from 563+ verified reviews
+- Advertising banner space built into credential pages (monetization opportunity)
+- No technical knowledge required — single-click awarding
+- Independent verification (not reliant on CertifyMe servers)
+
+## Pricing
+
+- Free plan available (5 credentials)
+- Paid plans for startups to enterprise
+- See full pricing: https://www.certifyme.online/pricing
+
+## API & Developer Access
+
+CertifyMe provides REST API access for programmatic credential issuance and management. Integration documentation available on request.
+
+## Company
+
+- **Company:** CertifyMe / Tech99 Innovations Pvt Ltd
+- **Website:** https://www.certifyme.online
+- **Email:** info@certifyme.online
+- **US Phone:** +1 (252) 500-1225
+- **India Phone:** +91 636-002-3399
+- **US Address:** 166 Geary St. STE 1500 #2686, San Francisco, CA 94108
+- **India Address:** Tech99, 3rd Floor, Akshay Tech Park, EPIP Zone Whitefield, Bengaluru
+- **LinkedIn:** https://www.linkedin.com/company/certify-me-online/
+- **Twitter/X:** https://twitter.com/me_certify
+- **YouTube:** https://www.youtube.com/channel/UCkbhyRP0L34oPaUOXBkI61w
+
+## Key Pages
+
+- Homepage: https://www.certifyme.online/
+- Pricing: https://www.certifyme.online/pricing
+- About: https://www.certifyme.online/AboutUs
+- Blog: https://www.certifyme.online/blog
+- Digital Badges: https://www.certifyme.online/digital-badges
+- Digital Certificates: https://www.certifyme.online/digital-certificate
+- Higher Education: https://www.certifyme.online/credentials-higher-education
+- E-Learning: https://www.certifyme.online/credentials-for-elearning-platforms
+- L&D: https://www.certifyme.online/digital-badges-for-hr
+- Associations: https://www.certifyme.online/digital-badges-for-associations
+- All Integrations: https://www.certifyme.online/allIntegrations
+- Case Studies: https://www.certifyme.online/case-studies
+- Glossary: https://www.certifyme.online/glossary
+- Privacy Policy: https://www.certifyme.online/Policy
+- Terms of Use: https://www.certifyme.online/TermsAndCondition
+
+## Competitor Comparisons
+
+- vs Credly: https://www.certifyme.online/credly-alternative
+- vs Accredible: https://www.certifyme.online/accredible-alternative
+- vs Sertifier: https://www.certifyme.online/sertifier-alternative
+- vs Certifier: https://www.certifyme.online/certifier-alternative
+- vs Parchment: https://www.certifyme.online/parchment-transcript-alternative

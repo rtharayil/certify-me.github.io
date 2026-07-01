@@ -1,0 +1,222 @@
+# CertifyMe — Full Content Reference for AI Systems
+
+## Company Overview
+
+**CertifyMe** is a verifiable digital credential platform operated by **Tech99 Innovations Pvt Ltd**.
+
+CertifyMe enables educational institutions, corporations, associations, and e-learning providers to:
+1. Design and customize digital credential templates (certificates and badges)
+2. Bulk-issue credentials to thousands of recipients with minimal manual effort
+3. Publish credentials as unique, shareable, mobile-friendly web pages
+4. Embed QR codes for instant, independent verification
+5. Allow recipients to share credentials on LinkedIn, social media, and embed in portfolios
+6. Analyze credential engagement and sharing metrics
+
+The platform is ranked as a **Leader in Digital Credential Management Software** on G2, TrustRadius, and Capterra as of 2024–2025. It has issued credentials to users in **144+ countries** and is trusted by **500+ institutions**.
+
+---
+
+## Product Details
+
+### Digital Certificates
+
+CertifyMe generates individual credential web pages for each recipient. Each page includes:
+- Recipient name, program name, issuing organization, and date of issue
+- An embedded QR code linking to independent verification
+- A branded banner with an advertiser/sponsor call-to-action (optional)
+- Social sharing buttons (LinkedIn, Twitter, Facebook)
+- Mobile-optimized layout
+
+Certificates are not PDFs that can be forged — they are live web pages with persistent, unique URLs.
+
+### Open Badges
+
+CertifyMe is compliant with **Open Badges 3.0** (the IMS Global standard). Badges:
+- Contain verifiable metadata baked into the badge image
+- Can be hosted in Open Badge backpacks and wallets
+- Are shareable to LinkedIn and other platforms
+- Link back to the issuing organization's branded verification page
+
+### Learner Portfolios
+
+Recipients can consolidate multiple credentials into a verifiable learner portfolio page showing:
+- Education credentials
+- Professional certifications
+- Skill badges
+- Work experience verifications
+
+### White-Label Credentialing
+
+Organizations can brand all credential pages, verification pages, and email communications with:
+- Custom logo and colors
+- Custom domain (e.g., credentials.yourorganization.com)
+- Branded QR codes
+- Custom footer with sponsor advertising
+
+---
+
+## Integrations & API
+
+### LMS & Platform Integrations (available via native connector or Zapier)
+
+- Academy Ocean
+- Airteach
+- AxisLMS
+- BambooHR
+- Breezy HR
+- Zapier (connects to 5,000+ apps)
+- Custom REST API
+
+### API Capabilities
+
+CertifyMe provides a REST API enabling:
+- Programmatic credential issuance
+- Recipient management
+- Template selection
+- Verification status lookup
+- Analytics retrieval
+
+API documentation is available on request to enterprise customers.
+
+---
+
+## Industries & Use Cases
+
+### Higher Education
+Universities and colleges use CertifyMe for:
+- Degree certificates
+- Academic transcripts
+- Report cards
+- Honor roll recognition
+- Extracurricular achievement badges
+
+Customers include: State University of New York, University of Europe, University of Texas.
+
+### Corporate Learning & Development (L&D)
+HR departments and L&D teams use CertifyMe for:
+- Training completion certificates
+- Skill certification badges
+- Onboarding completion credentials
+- Compliance training records
+
+Use case: Au Pair Weekend issued 7,000+ certificates integrated with their CRM in one year.
+
+### E-Learning Platforms
+Online learning platforms use CertifyMe for:
+- Course completion badges
+- Micro-credential stacks
+- Learner engagement and course re-enrollment
+
+### Professional Associations
+Associations use CertifyMe for:
+- Membership badges
+- CPD/CEU certification
+- Conference speaker/attendee recognition
+- Certification renewal management
+
+Customer: PMI Phoenix — member satisfaction with digital credential sharing.
+
+### Schools (K-12)
+Schools use CertifyMe for achievement certificates, honor recognition, and extracurricular records.
+
+---
+
+## Security & Compliance
+
+CertifyMe holds the following certifications and compliances:
+
+| Standard | Status |
+|----------|--------|
+| ISO 9001 | Certified |
+| ISO 27001 | Certified (Information Security Management) |
+| ISO 27701 | Certified (Privacy Information Management) |
+| GDPR | Compliant |
+| FERPA | Compliant |
+| COPPA | Compliant |
+
+**Data privacy note:** CertifyMe does not require uploading sensitive learner data (e.g., email addresses) to issue credentials. This is a key privacy differentiator.
+
+Credential verification is **independent** — credentials remain verifiable even if an issuing institution changes its domain or systems.
+
+---
+
+## Pricing Model
+
+CertifyMe offers tiered pricing:
+- **Free plan:** 5 credentials, core features
+- **Starter/Growth:** Affordable monthly pricing for small programs
+- **Enterprise:** Custom pricing with white-label, API access, advanced analytics, dedicated support
+
+See pricing: https://www.certifyme.online/pricing
+
+---
+
+## Competitor Differentiation
+
+| Feature | CertifyMe | Credly | Accredible | Certifier |
+|---------|-----------|--------|------------|-----------|
+| Open Badges 3.0 | ✓ | ✓ | ✓ | ✓ |
+| ISO 27001 Certified | ✓ | – | – | – |
+| No email required for issuance | ✓ | – | – | – |
+| Built-in advertising/sponsor space | ✓ | – | – | – |
+| White-label at all tiers | ✓ | Enterprise only | Enterprise only | – |
+| Free plan | ✓ | – | – | Limited |
+| G2 Leader badge | ✓ | ✓ | ✓ | – |
+
+---
+
+## Customer Testimonials (verified G2/platform reviews)
+
+**Danielle Lee, Board Director, PMI Phoenix:**
+"CertifyMe has the best customer service. They have been partners beside us as long as we have used their product. Our members that have received digital certificates love having something they can keep online and share with their peers."
+
+**Erika Barney, Human Resources Director, Au Pair Weekend:**
+"Our organization used CertifyMe to create over 7000 certificates this past year. We were able to integrate CertifyMe with our CRM, thus requiring minimal time in labor to produce and send the certificates."
+
+**Anson Antony, Project Manager, University of Europe:**
+"The user interface of the platform is remarkably intuitive and makes it easier to use. I really want to acknowledge the exceptional support that CertifyMe has been providing."
+
+**Sharon D., Academic Coordinator, University of Texas:**
+"It offers an end-to-end solution, is user-friendly with single-click awarding, enables students to share badges on LinkedIn, provides branding options, and has excellent customer support."
+
+---
+
+## Key Statistics
+
+- **4.8/5** average rating (563+ reviews across G2, TrustRadius, Capterra)
+- **500+** institutions trust CertifyMe
+- **144+** countries with issued credentials
+- **Millions** of digital credentials issued
+- **#1 Leader** in Digital Credential Management — G2 Education category
+
+---
+
+## Contact & Support
+
+- **Website:** https://www.certifyme.online
+- **Email:** info@certifyme.online
+- **US:** +1 (252) 500-1225 | 166 Geary St. STE 1500 #2686, San Francisco, CA 94108
+- **India:** +91 636-002-3399 | Akshay Tech Park, EPIP Zone Whitefield, Bengaluru
+- **Demo:** https://info.certifyme.online/book-a-demo
+- **Free Trial:** https://credential.certifyme.online/auth/register
+- **LinkedIn:** https://www.linkedin.com/company/certify-me-online/
+- **Twitter/X:** https://twitter.com/me_certify
+- **YouTube:** https://www.youtube.com/channel/UCkbhyRP0L34oPaUOXBkI61w
+- **Affiliate program:** https://info.certifyme.online/affiliate-partner
+
+---
+
+## Glossary of Key Terms
+
+- **Digital Badge:** A visual token with embedded metadata that certifies achievement, linked to a verifiable web page.
+- **Open Badge:** A badge conforming to the IMS Global Open Badges specification (current: v3.0).
+- **Digital Certificate:** A web-based, verifiable version of a traditional paper certificate.
+- **Verifiable Credential:** A tamper-evident credential whose authenticity can be independently checked.
+- **QR Code Verification:** Scanning a QR code on a credential takes the verifier to its live, authenticated web page.
+- **Micro-credential:** A short-form credential recognizing a specific, targeted skill or competency.
+- **LMS:** Learning Management System — software that delivers, tracks, and manages training content.
+- **White-Label:** Rebranding a third-party platform with your own organization's identity.
+
+---
+
+*This file is provided for AI language model indexing per the llms.txt specification (https://llmstxt.org). Last updated: 2025.*

@@ -4,16 +4,84 @@
 {% include V4NewLook/head.html %}
 
 <body id="page-top">
-	{% include V4NewLook/_GTMNoScript.html %}
+        {% include V4NewLook/_GTMNoScript.html %}
+
+  <!-- FAQPage structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I create an account on CertifyMe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Visit certifyme.online, click 'Try for Free', fill in your business email address, and complete registration to access your CertifyMe dashboard."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of credentials can be issued using CertifyMe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CertifyMe allows you to issue digital certificates, diplomas, badges, micro-credentials, digital transcripts, and digital degrees."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I see a demo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can request a demo at https://info.certifyme.online/request-demo"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can we customize the credentials?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can include custom data and logos in the credentials. Enterprise plans offer full white-label customization."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the pricing plans for CertifyMe's services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CertifyMe has three plans: Standard Plan, Business Plan, and Enterprise Solutions. See full details at https://www.certifyme.online/pricing"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do credentials expire?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, credentials never expire unless the admin sets an expiry date. Every credential created on the platform has lifelong validity by default."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What payment methods are accepted for CertifyMe subscriptions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CertifyMe accepts major credit cards and other online payment methods for subscription purchases."
+        }
+      }
+    ]
+  }
+  </script>
 
     <div id="page" class="page font--jakarta">
         {% include V4NewLook/navbar.html %}
 
+        <main id="main-content">
         {% include V4NewLook/FAQ.html %}
+        </main>
 
         {% include V4NewLook/footer.html %}
 
-		{% include V4NewLook/scripts.html %}
+                {% include V4NewLook/scripts.html %}
     </div>
 
 </body>

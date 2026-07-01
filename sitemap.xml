@@ -4,12 +4,15 @@ sitemap:
   exclude: 'yes'
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   {% for page in site.pages %}
     {% unless page.sitemap.exclude == "yes" or page.name == "feed.xml" or page.url contains 'css' or page.url contains 'assets' %}
     <url>
-      <loc>https://certifyme.online{{ page.url | remove: "index.html" }}</loc>
+      <loc>https://www.certifyme.online{{ page.url | remove: "index.html" }}</loc>
       {% if page.sitemap.lastmod %}
         <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
       {% elsif page.date %}
@@ -34,7 +37,7 @@ sitemap:
   {% for page in site.blog %}
     {% unless page.sitemap.exclude == "yes" or page.name == "feed.xml" or page.url contains 'css' or page.url contains 'assets' %}
     <url>
-      <loc>https://certifyme.online{{ page.url | remove: "index.html" }}</loc>
+      <loc>https://www.certifyme.online{{ page.url | remove: "index.html" }}</loc>
       {% if page.sitemap.lastmod %}
         <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
       {% elsif page.date %}
@@ -56,11 +59,9 @@ sitemap:
     {% endunless %}
   {% endfor %}
 
-
   {% for page in site.integrations %}
-    
     <url>
-      <loc>https://certifyme.online{{ page.url  }}</loc>
+      <loc>https://www.certifyme.online{{ page.url }}</loc>
       {% if page.sitemap.lastmod %}
         <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
       {% elsif page.date %}
@@ -79,13 +80,11 @@ sitemap:
         <priority>0.3</priority>
       {% endif %}
     </url>
-    
   {% endfor %}
 
   {% for page in site.awards %}
-    
     <url>
-      <loc>https://certifyme.online{{ page.url  }}</loc>
+      <loc>https://www.certifyme.online{{ page.url }}</loc>
       {% if page.sitemap.lastmod %}
         <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
       {% elsif page.date %}
@@ -104,7 +103,6 @@ sitemap:
         <priority>0.2</priority>
       {% endif %}
     </url>
-    
   {% endfor %}
 
 </urlset>

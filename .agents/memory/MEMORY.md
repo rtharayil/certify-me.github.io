@@ -1,0 +1,1 @@
+- [CertifyMe SEO audit](certifyme-seo-audit.md) — full technical SEO/GEO/a11y audit implemented across all V4 layouts; key patterns for future edits.

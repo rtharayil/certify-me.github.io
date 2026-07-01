@@ -1,13 +1,66 @@
 <head>
 
+  <!-- CHARACTER ENCODING — must be first -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- TITLE & CORE META -->
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="author" content="CertifyMe">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#4A6CF7">
+
+  <!-- CANONICAL URL -->
+  <link rel="canonical" href="https://www.certifyme.online{{ page.url }}">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CertifyMe">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{% if page.abstract %}{{ page.abstract }}{% else %}{{ page.description }}{% endif %}">
+  <meta property="og:url" content="https://www.certifyme.online{{ page.url }}">
+  {% if page.imageLink %}
+  <meta property="og:image" content="https://www.certifyme.online/{{ page.imageLink }}">
+  {% else %}
+  <meta property="og:image" content="https://www.certifyme.online/assets4/images/Images%20Webp/digital%20credential%20software.webp">
+  {% endif %}
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ page.title }}">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@me_certify">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{% if page.abstract %}{{ page.abstract }}{% else %}{{ page.description }}{% endif %}">
+  {% if page.imageLink %}
+  <meta name="twitter:image" content="https://www.certifyme.online/{{ page.imageLink }}">
+  {% else %}
+  <meta name="twitter:image" content="https://www.certifyme.online/assets4/images/Images%20Webp/digital%20credential%20software.webp">
+  {% endif %}
+
   <!-- FAVICON AND TOUCH ICONS -->
-  <link rel="shortcut icon" href="/assets4/images/Logo/CertifyMe-LOGO.jpg" type="image/x-icon">
-  <link rel="icon" href="/assets4/images/Logo/CertifyMe-LOGO.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets4/images/Logo/CertifyMe-LOGO.jpg" type="image/jpeg">
+  <link rel="icon" href="/assets4/images/Logo/CertifyMe-LOGO.jpg" type="image/jpeg">
   <link rel="apple-touch-icon" sizes="152x152" href="/assets4/images/Logo/CertifyMe-LOGO.jpg">
   <link rel="apple-touch-icon" sizes="120x120" href="/assets4/images/Logo/CertifyMe-LOGO.jpg">
   <link rel="apple-touch-icon" sizes="76x76" href="/assets4/images/Logo/CertifyMe-LOGO.jpg">
   <link rel="apple-touch-icon" href="/assets4/images/Logo/CertifyMe-LOGO.jpg">
-  <link rel="icon" href="/assets4/images/Logo/CertifyMe-LOGO.jpg" type="image/x-icon">
+
+  <!-- RESOURCE HINTS — speed up third-party connections -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+  <!-- GOOGLE TAG MANAGER -->
+  {% include V4NewLook/_GTMScript.html %}
+
+  <!-- GOOGLE FONTS — consolidated into one request -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lato:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- BOOTSTRAP CSS -->
   <link rel="stylesheet" href="/assets4/css/bootstrap.min.css">
@@ -32,59 +85,140 @@
   <!-- RESPONSIVE CSS -->
   <link href="/assets4/css/responsive.css" rel="stylesheet">
 
-  <!-- GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&amp;display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
-    rel="stylesheet">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
-
-  <!-- Scripts-->
-  {% include V4NewLook/_GTMScript.html %}
-  <!-- End of Scripts -->
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta name="description" content="{{ page.description }}">
-  <link rel="canonical" href="https://www.certifyme.online{{page.url}}">
-
-  <meta name="author" content="CertifyMe">
-  <meta name="robots" content="index, follow">
-  <meta property="og:image"
-    content="https://www.certifyme.online/assets4/images/Images%20Webp/digital%20credential%20software.webp">
-
-  <meta property="og:image" content="https://www.certifyme.online/{{page.imageLink}}">
-  <meta property="og:title" content="{{page.title}}">
-
-  <meta property="og:description" content="{{ page.abstract }}">
-  <meta property="og:url" content="https://www.certifyme.online">
-  <meta name="twitter:card" content="summary">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="CertifyMe">
-
-
-
-
-  <title>{{ page.title }}</title>
-
-  <!-- Structured Data -->
+  <!-- STRUCTURED DATA: Organization + WebSite + SoftwareApplication -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "CertifyMe Verifiable Digital Credential Software",
-  "applicationCategory": "BusinessApplication",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "ratingCount": "563"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.certifyme.online/#organization",
+        "name": "CertifyMe",
+        "legalName": "Tech99 Innovations Pvt Ltd",
+        "url": "https://www.certifyme.online",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://www.certifyme.online/#logo",
+          "url": "https://www.certifyme.online/assets4/images/Logo/CertifyMe-LOGO.jpg",
+          "contentUrl": "https://www.certifyme.online/assets4/images/Logo/CertifyMe-LOGO.jpg",
+          "caption": "CertifyMe"
+        },
+        "image": { "@id": "https://www.certifyme.online/#logo" },
+        "sameAs": [
+          "https://twitter.com/me_certify",
+          "https://www.linkedin.com/company/certify-me-online/",
+          "https://www.youtube.com/channel/UCkbhyRP0L34oPaUOXBkI61w"
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+1-252-500-1225",
+            "contactType": "customer service",
+            "areaServed": "US",
+            "availableLanguage": "English"
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+91-636-002-3399",
+            "contactType": "customer service",
+            "areaServed": "IN",
+            "availableLanguage": "English"
+          }
+        ],
+        "email": "info@certifyme.online",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "166 Geary St. STE 1500 #2686",
+          "addressLocality": "San Francisco",
+          "addressRegion": "CA",
+          "postalCode": "94108",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.certifyme.online/#website",
+        "name": "CertifyMe",
+        "url": "https://www.certifyme.online",
+        "description": "Verifiable digital credential software for institutions that issue, manage, and verify digital certificates and open badges.",
+        "publisher": { "@id": "https://www.certifyme.online/#organization" },
+        "inLanguage": "en-US",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.certifyme.online/blog?search={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.certifyme.online/#software",
+        "name": "CertifyMe",
+        "alternateName": "CertifyMe Digital Credentialing Platform",
+        "url": "https://www.certifyme.online",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Digital Credential Management",
+        "operatingSystem": "Web",
+        "description": "CertifyMe is a verifiable digital credential software for institutions that manage secure, customizable credentials at scale, with independent verification, long-term reliability, API integrations and minimal manual effort.",
+        "featureList": [
+          "Open Badges 3.0 compliant credentials",
+          "Verifiable digital certificates",
+          "Digital badge management",
+          "API integrations",
+          "White-label credentialing",
+          "QR code verification",
+          "Learner portfolios",
+          "Bulk credential issuance",
+          "LMS integrations",
+          "Analytics and reporting"
+        ],
+        "screenshot": "https://www.certifyme.online/assets4/images/Images%20Webp/digital%20credential%20software.webp",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.certifyme.online/pricing",
+          "priceCurrency": "USD",
+          "price": "0",
+          "description": "Free plan available; paid plans from affordable monthly pricing"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "563",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "provider": { "@id": "https://www.certifyme.online/#organization" }
+      }
+    ]
   }
-}
-</script>
+  </script>
 
+  <!-- STRUCTURED DATA: WebPage (per-page) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.certifyme.online{{ page.url }}#webpage",
+    "url": "https://www.certifyme.online{{ page.url }}",
+    "name": {{ page.title | jsonify }},
+    "description": {{ page.description | jsonify }},
+    "inLanguage": "en-US",
+    "isPartOf": { "@id": "https://www.certifyme.online/#website" },
+    "publisher": { "@id": "https://www.certifyme.online/#organization" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.certifyme.online/"
+        }
+      ]
+    }
+  }
+  </script>
 
 </head>

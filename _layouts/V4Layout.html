@@ -4,7 +4,9 @@
 {% include V4NewLook/head.html %}
 
 <body id="page-top">
-	{% include V4NewLook/_GTMNoScript.html %}
+        {% include V4NewLook/_GTMNoScript.html %}
+
+    <a class="skip-to-main visually-hidden-focusable" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;background:#fff;padding:8px 16px;border:1px solid #4A6CF7;color:#4A6CF7;font-weight:600;text-decoration:none;" onfocus="this.style.left='8px';this.style.width='auto';this.style.height='auto';" onblur="this.style.left='-9999px';this.style.width='1px';this.style.height='1px';">Skip to main content</a>
 
     <div id="page" class="page font--jakarta">
         {% include V4NewLook/navbar.html %}
@@ -13,7 +15,7 @@
 
         {% include V4NewLook/Statistics.html %}
 
-		{% include V4NewLook/ourProductDetails.html %}
+                {% include V4NewLook/ourProductDetails.html %}
 
         {% include V4NewLook/G2Enterprise.html %}
 
@@ -21,11 +23,43 @@
 
         {% include V4NewLook/blogSection.html %}
 
-		{% include V4NewLook/integrations/apiIntegrationsBanner.html %}
+                {% include V4NewLook/integrations/apiIntegrationsBanner.html %}
+
+        </main><!-- end #main-content -->
+
+        <!-- Review structured data for homepage -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "@id": "https://www.certifyme.online/#software",
+          "name": "CertifyMe",
+          "review": [
+            {
+              "@type": "Review",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "author": { "@type": "Person", "name": "Danielle Lee" },
+              "reviewBody": "CertifyMe has the best customer service. They have been partners beside us as long as we have used their product. Our members that have received digital certificates love having something they can keep online and share with their peers."
+            },
+            {
+              "@type": "Review",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "author": { "@type": "Person", "name": "Erika Barney" },
+              "reviewBody": "CertifyMe has been very easy to implement and use. Our organization used CertifyMe to create over 7000 certificates this past year. We were able to integrate CertifyMe with our CRM, thus requiring minimal time in labor."
+            },
+            {
+              "@type": "Review",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "author": { "@type": "Person", "name": "Anson Antony" },
+              "reviewBody": "The user interface of the platform is remarkably intuitive and makes it easier to use. I really want to acknowledge the exceptional support that CertifyMe has been providing."
+            }
+          ]
+        }
+        </script>
 
         {% include V4NewLook/footer.html %}
 
-		{% include V4NewLook/scripts.html %}
+                {% include V4NewLook/scripts.html %}
 
     </div>
 
