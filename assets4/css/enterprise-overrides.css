@@ -565,4 +565,9 @@ h2.statistic-number {
     left: 0;
     transform: none;
   }
+  /* Left-align body text on mobile — easier to read than centered */
+  .hero-7-txt p.p-lg,
+  .hero-7-txt p {
+    text-align: left !important;
+  }
 }
