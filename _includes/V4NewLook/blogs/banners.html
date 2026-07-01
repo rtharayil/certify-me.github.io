@@ -67,6 +67,10 @@
         </div>
 
 
-        {% include V4NewLook/blogs/_readMore.html %}
+        {% if include.related_posts %}
+            {% include V4NewLook/blogs/_relatedArticlesGrid.html related_posts=include.related_posts %}
+        {% else %}
+            {% include V4NewLook/blogs/_readMore.html %}
+        {% endif %}
 </section>
 <!-- END BLOG-1 -->
