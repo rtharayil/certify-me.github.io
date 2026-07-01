@@ -5,7 +5,10 @@
  * ==========================================================
  */
 
-/* ── FONTS: Sora (headlines) + Inter (body) ───────────── */
+/* ── FONT IMPORT (loaded here so no rebuild needed) ────── */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+/* ── FONTS: Manrope (headlines) + Inter (body) ────────── */
 
 /* Body / UI text → Inter */
 body,
@@ -17,7 +20,7 @@ a, li, span, td, th,
   font-family: 'Inter', sans-serif !important;
 }
 
-/* All headings → Sora */
+/* All headings → Manrope */
 h1, h2, h3, h4, h5, h6,
 .hero-7-txt h1,
 .section-title h2,
@@ -25,7 +28,7 @@ h1, h2, h3, h4, h5, h6,
 .review-author h6,
 .statistic-number,
 h2.statistic-number {
-  font-family: 'Sora', sans-serif !important;
+  font-family: 'Manrope', sans-serif !important;
 }
 
 /* ── 0. GLOBAL TOKENS ─────────────────────────────────── */
