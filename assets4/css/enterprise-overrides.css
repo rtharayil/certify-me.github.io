@@ -5,6 +5,29 @@
  * ==========================================================
  */
 
+/* ── FONTS: Sora (headlines) + Inter (body) ───────────── */
+
+/* Body / UI text → Inter */
+body,
+.font--jakarta,
+p, .p-lg, .p-md, .p-sm,
+a, li, span, td, th,
+.btn, input, select, textarea,
+.nav-link, .wsmenu-list a {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* All headings → Sora */
+h1, h2, h3, h4, h5, h6,
+.hero-7-txt h1,
+.section-title h2,
+.txt-block h6,
+.review-author h6,
+.statistic-number,
+h2.statistic-number {
+  font-family: 'Sora', sans-serif !important;
+}
+
 /* ── 0. GLOBAL TOKENS ─────────────────────────────────── */
 :root {
   --cm-indigo:      #282B75;
@@ -86,12 +109,12 @@
   pointer-events: none;
 }
 
-/* H1 — tighter, heavier, more enterprise scale */
+/* H1 — Sora runs slightly wider; tune size down to stay on 3 lines max */
 .hero-7-txt h1.s-42 {
-  font-size: 3rem !important;
+  font-size: 2.65rem !important;
   font-weight: 800 !important;
-  line-height: 1.13 !important;
-  letter-spacing: -1.2px !important;
+  line-height: 1.14 !important;
+  letter-spacing: -1px !important;
   color: var(--cm-indigo) !important;
 }
 
