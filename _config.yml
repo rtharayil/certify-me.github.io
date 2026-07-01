@@ -3,6 +3,7 @@ exclude:
   - .agents
   - vendor
   - node_modules
+  - _archive
   - "*.sh"
   - Gemfile
   - Gemfile.lock
