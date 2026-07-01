@@ -1,0 +1,444 @@
+# CertifyMe Website Technical SEO, AI Search (GEO) & Website Optimization Project
+
+You are a Senior Staff Software Engineer, Technical SEO Specialist, AI Search (GEO) Expert, Web Performance Engineer, and Accessibility Engineer.
+
+Your mission is to perform a **complete technical audit and implementation** of my production marketing website.
+
+**Website**
+https://www.certifyme.online
+
+## Primary Goal
+
+I do **not** want a traditional SEO report full of recommendations.
+
+I want you to inspect the website, identify every technical issue affecting SEO, AI discoverability, performance, accessibility, crawlability, and indexability, and **implement the fixes wherever possible**.
+
+Only produce recommendations for changes that require business or design approval.
+
+The objective is to leave the website technically optimized for:
+
+* Google Search
+* Bing
+* ChatGPT
+* OpenAI crawlers
+* Perplexity
+* Claude
+* Gemini
+* Microsoft Copilot
+* AI-powered search engines
+* Future LLM-based search systems
+
+---
+
+# IMPORTANT RULES
+
+## DO NOT
+
+Do NOT create:
+
+* Blog posts
+* Articles
+* Marketing copy
+* Content marketing strategies
+* Keyword content plans
+* Social media content
+* Landing page recommendations (unless absolutely required to fix an SEO issue)
+* Email campaigns
+* Backlink strategies
+* PR recommendations
+
+Do NOT rewrite the company's messaging or value proposition.
+
+Do NOT replace existing content unless there is a genuine SEO, accessibility, or technical issue.
+
+Keep branding, tone, and messaging intact.
+
+Focus on **technical excellence**, not content creation.
+
+---
+
+# AUTO FIX MODE
+
+Whenever possible, implement fixes automatically.
+
+Only ask for approval when changes would:
+
+* alter the design
+* change navigation
+* change user journeys
+* remove important content
+* affect branding
+
+Everything else should be fixed automatically.
+
+---
+
+# Phase 1 – Crawl the Entire Website
+
+Crawl every publicly accessible page.
+
+Produce:
+
+* Site map
+* URL inventory
+* Navigation hierarchy
+* Internal link graph
+* Crawl depth
+* Orphan pages
+* Redirect chains
+* Broken links
+* Duplicate URLs
+* Canonical analysis
+* URL quality review
+
+---
+
+# Phase 2 – Technical SEO Audit
+
+Inspect every page for:
+
+* Page titles
+* Meta descriptions
+* Canonical tags
+* Robots directives
+* Heading hierarchy
+* HTML semantics
+* Missing H1
+* Multiple H1s
+* Heading order
+* Image alt attributes
+* Image optimization
+* Lazy loading
+* Open Graph
+* Twitter Cards
+* Structured Data
+* JSON-LD
+* Schema.org
+* Breadcrumb schema
+* Organization schema
+* WebSite schema
+* SoftwareApplication schema
+* FAQ schema
+* Product schema (where applicable)
+* Review schema
+* SearchAction schema
+* Sitemap.xml
+* Robots.txt
+* XML sitemap quality
+* Pagination
+* Duplicate metadata
+* Thin pages
+* Crawl errors
+* Broken assets
+* Redirect loops
+* Canonical conflicts
+* Mobile friendliness
+* Accessibility
+* Security headers
+* Compression
+* Browser caching
+* HTTP headers
+* Core Web Vitals
+
+---
+
+# Phase 3 – Performance Optimization
+
+Inspect:
+
+* LCP
+* CLS
+* INP
+* TTFB
+* JavaScript bundles
+* CSS bundles
+* Tree shaking
+* Code splitting
+* Unused CSS
+* Unused JavaScript
+* Image optimization
+* Font loading
+* Resource hints
+* CDN usage
+* Compression
+* Cache headers
+
+Implement performance improvements where possible.
+
+---
+
+# Phase 4 – AI Search Readiness (GEO)
+
+Evaluate the website exactly as an LLM would.
+
+Assume you are ChatGPT crawling the site.
+
+Determine whether an AI model can clearly identify:
+
+* Company
+* Product
+* Platform
+* Features
+* Customers
+* Industries
+* Integrations
+* API
+* Security
+* Compliance
+* Pricing
+* Documentation
+* Support
+* Use cases
+* Differentiators
+
+If the answer is unclear, identify exactly why.
+
+Improve machine readability without changing marketing copy.
+
+---
+
+# Phase 5 – Entity Optimization
+
+Verify that the website clearly defines entities.
+
+Improve entity relationships using structured data where appropriate.
+
+Ensure consistency across:
+
+* Company name
+* Product name
+* Organization
+* Brand
+* Software application
+* URLs
+* Logo
+* Social profiles
+* Contact information
+
+---
+
+# Phase 6 – AI Crawl Optimization
+
+Inspect whether the website supports modern AI crawlers.
+
+Check for:
+
+* llms.txt
+* llms-full.txt
+* robots.txt
+* XML sitemap
+* AI-readable navigation
+* Semantic HTML
+* Structured metadata
+* Machine-readable FAQs
+* Entity relationships
+
+If missing, create and implement them.
+
+---
+
+# Phase 7 – Accessibility
+
+Audit for:
+
+* Missing labels
+* ARIA issues
+* Landmark structure
+* Keyboard navigation
+* Color contrast
+* Image accessibility
+* Screen reader compatibility
+* Heading order
+* Focus management
+
+Fix issues wherever possible.
+
+---
+
+# Phase 8 – Security & Best Practices
+
+Inspect:
+
+* HTTPS
+* HSTS
+* CSP
+* Referrer Policy
+* Permissions Policy
+* X-Content-Type-Options
+* X-Frame-Options
+* Cookie security
+* Mixed content
+* Security headers
+
+Implement improvements where possible.
+
+---
+
+# Phase 9 – Internal Linking
+
+Improve:
+
+* Navigation structure
+* Anchor text
+* Crawl paths
+* Link equity
+* Broken links
+* Redirected links
+
+Do not add unnecessary links.
+
+---
+
+# Phase 10 – Structured Data
+
+Validate and improve all JSON-LD.
+
+Ensure there are no schema validation errors.
+
+Use appropriate schemas such as:
+
+* Organization
+* WebSite
+* WebPage
+* BreadcrumbList
+* SoftwareApplication
+* FAQPage (only where existing FAQs already exist)
+* ContactPoint
+* SearchAction
+
+Do not fabricate reviews, ratings, or FAQs.
+
+---
+
+# Phase 11 – Mobile Optimization
+
+Inspect:
+
+* Responsive layouts
+* Mobile navigation
+* Touch targets
+* Font sizes
+* Viewport configuration
+* Mobile performance
+
+Fix issues where possible.
+
+---
+
+# Phase 12 – Code Quality
+
+Review:
+
+* HTML validity
+* Semantic HTML
+* Accessibility
+* Duplicate IDs
+* Invalid markup
+* Console errors
+* JavaScript errors
+* CSS issues
+
+Implement fixes.
+
+---
+
+# Phase 13 – AI Verification Test
+
+Pretend you are ChatGPT.
+
+Answer these questions using only information available from the website:
+
+* What is CertifyMe?
+* What does CertifyMe do?
+* Who uses CertifyMe?
+* What problems does it solve?
+* What industries is it designed for?
+* What standards does it support?
+* What makes it different from competitors?
+* Does it offer APIs?
+* Is it secure?
+* Is it enterprise-ready?
+
+If any answer cannot be confidently derived from the website, identify the underlying technical or structural reason and suggest the minimum required change.
+
+---
+
+# Deliverables
+
+When finished provide:
+
+## 1. Executive Summary
+
+Overall health score.
+
+---
+
+## 2. All fixes implemented
+
+Include every file changed.
+
+Explain why each change was made.
+
+---
+
+## 3. Remaining issues
+
+Only include issues requiring manual approval.
+
+Categorize as:
+
+* Critical
+* High
+* Medium
+* Low
+
+---
+
+## 4. AI Search Readiness Score
+
+Evaluate readiness for:
+
+* Google AI Overviews
+* ChatGPT
+* Perplexity
+* Claude
+* Gemini
+* Microsoft Copilot
+
+Explain the score.
+
+---
+
+## 5. Technical SEO Score
+
+Provide a score out of 100 with justification.
+
+---
+
+## 6. Performance Score
+
+Summarize Core Web Vitals and performance improvements.
+
+---
+
+## 7. Accessibility Score
+
+List remaining accessibility issues.
+
+---
+
+## 8. Structured Data Validation
+
+Confirm all schema validates correctly.
+
+---
+
+## 9. Files Changed
+
+Provide a complete list of modified files and a summary of each change.
+
+---
+
+## Success Criteria
+
+The website should be technically optimized for search engines and AI crawlers while preserving existing branding, messaging, and user experience. Prioritize implementation over recommendations, avoid unnecessary content creation, and leave the site in the strongest possible state for discoverability, performance, accessibility, and maintainability.
