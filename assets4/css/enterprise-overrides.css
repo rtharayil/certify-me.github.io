@@ -62,7 +62,7 @@ h2.statistic-number {
   transition: box-shadow .3s ease !important;
 }
 
-/* Nav links – cleaner */
+/* Top-level nav links */
 .wsmenu > .wsmenu-list > li > a {
   color: #444 !important;
   font-weight: 500 !important;
@@ -71,6 +71,31 @@ h2.statistic-number {
 }
 .wsmenu > .wsmenu-list > li > a:hover {
   color: var(--cm-indigo) !important;
+}
+
+/* Submenu & megamenu links — smaller, readable */
+.wsmenu > .wsmenu-list > li > ul.sub-menu > li > a,
+.wsmenu > .wsmenu-list > li > .wsmegamenu ul.link-list > li > a,
+.wsmenu > .wsmenu-list > li > .wsmegamenu.halfmenu ul.link-list > li > a,
+.wsmenu > .wsmenu-list > li > .wsmegamenu.w-75 ul.link-list > li > a {
+  font-size: 13.5px !important;
+  font-weight: 400 !important;
+  color: #555 !important;
+  line-height: 1.5 !important;
+}
+.wsmenu > .wsmenu-list > li > ul.sub-menu > li > a:hover,
+.wsmenu > .wsmenu-list > li > .wsmegamenu ul.link-list > li > a:hover {
+  color: var(--cm-indigo) !important;
+}
+
+/* Megamenu section titles */
+.wsmenu > .wsmenu-list > li > .wsmegamenu .title,
+.wsmenu > .wsmenu-list > li > .wsmegamenu.halfmenu .title {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  color: #999 !important;
 }
 
 /* "Book Demo" button – gradient + shadow */
