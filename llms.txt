@@ -33,7 +33,7 @@ CertifyMe (by Tech99 Innovations Pvt Ltd) is an enterprise-grade digital credent
 - LMS integrations (Academy Ocean, Airteach, AxisLMS, BambooHR, and more)
 - Custom branding and white-label options
 - Bulk CSV upload for credential issuance
-- API access for programmatic credential management
+- API access for programmatic credential management — see https://www.certifyme.online/api/
 - Multi-language credential support
 - GDPR, FERPA, COPPA, ISO 27001, ISO 27701, ISO 9001 compliant
 - No sensitive data upload required (no learner email needed for issuance)
@@ -66,7 +66,16 @@ CertifyMe (by Tech99 Innovations Pvt Ltd) is an enterprise-grade digital credent
 
 ## API & Developer Access
 
-CertifyMe provides REST API access for programmatic credential issuance and management. Integration documentation available on request.
+CertifyMe provides a REST API for programmatic credential issuance and management.
+
+- **API Base URL:** https://my.certifyme.online/api/v2/
+- **API Reference Docs:** https://cme-api-v2.readme.io
+- **API Page (website):** https://www.certifyme.online/api/
+- **Credential API (Basic):** Award, retrieve, edit, delete credentials via POST/GET/PUT/DELETE /v2/credential
+- **Template API (Advanced):** Create, copy, edit, delete credential templates
+- **Project Manager API (Advanced):** Create and retrieve credential folders by institution
+- **Analytics API (Advanced):** Retrieve credential engagement metrics by template ID
+- **AI Agent Index:** https://cme-api-v2.readme.io/llms.txt
 
 ## Company
 
@@ -94,6 +103,7 @@ CertifyMe provides REST API access for programmatic credential issuance and mana
 - L&D: https://www.certifyme.online/digital-badges-for-hr
 - Associations: https://www.certifyme.online/digital-badges-for-associations
 - All Integrations: https://www.certifyme.online/allIntegrations
+- API & Developer Docs: https://www.certifyme.online/api/
 - Case Studies: https://www.certifyme.online/case-studies
 - Glossary: https://www.certifyme.online/glossary
 - Privacy Policy: https://www.certifyme.online/Policy
