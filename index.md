@@ -21,7 +21,7 @@ FlaticonCheckHeroText: ' Ranked as Leader in Digital Credential Management Softw
 #statictics section
 Institutiontext: Institutions trust <br>CertifyMe
 Usertext: Users across 144<br>Countries
-Credentialtext: Digital credentials issued every month
+Credentialtext: Digital credentials issued every year
 
 #G2 section
 G2Title: Global Leader in Digital Certificates & Badge Management
