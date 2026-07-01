@@ -1,0 +1,516 @@
+/*
+ * enterprise-overrides.css
+ * CertifyMe — Enterprise SaaS · Trust · Global · Conversion
+ * Loaded last — overrides all theme defaults.
+ * ==========================================================
+ */
+
+/* ── 0. GLOBAL TOKENS ─────────────────────────────────── */
+:root {
+  --cm-indigo:      #282B75;
+  --cm-indigo-mid:  #3D4299;
+  --cm-purple:      #6a5acd;
+  --cm-lavender:    #ECEEFF;
+  --cm-lavender-2:  #F3F4FF;
+  --cm-gold:        #F59E0B;
+  --cm-text:        #1a1a2e;
+  --cm-muted:       #5a5a7a;
+  --cm-shadow-sm:   0 2px 12px rgba(40,43,117,.10);
+  --cm-shadow-md:   0 6px 28px rgba(40,43,117,.16);
+  --cm-shadow-lg:   0 12px 48px rgba(40,43,117,.20);
+  --cm-radius:      10px;
+}
+
+/* ── 1. NAVBAR ────────────────────────────────────────── */
+
+/* Sticky glassy bar */
+.wsmainfull {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 999 !important;
+  background-color: rgba(255,255,255,.97) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border-bottom: 1px solid rgba(40,43,117,.09) !important;
+  box-shadow: 0 1px 20px rgba(40,43,117,.08) !important;
+  transition: box-shadow .3s ease !important;
+}
+
+/* Nav links – cleaner */
+.wsmenu > .wsmenu-list > li > a {
+  color: #444 !important;
+  font-weight: 500 !important;
+  font-size: 14.5px !important;
+  letter-spacing: -.1px;
+}
+.wsmenu > .wsmenu-list > li > a:hover {
+  color: var(--cm-indigo) !important;
+}
+
+/* "Book Demo" button – gradient + shadow */
+.wsmenu > .wsmenu-list > li a.btn.btn--theme {
+  background: linear-gradient(135deg, var(--cm-indigo) 0%, var(--cm-indigo-mid) 100%) !important;
+  border-color: transparent !important;
+  border-radius: 9px !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  padding: 6px 22px 8px !important;
+  box-shadow: 0 4px 16px rgba(40,43,117,.32) !important;
+  transition: box-shadow .25s ease, transform .2s ease !important;
+}
+.wsmenu > .wsmenu-list > li a.btn.btn--theme:hover {
+  box-shadow: 0 6px 24px rgba(40,43,117,.42) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* ── 2. HERO SECTION ──────────────────────────────────── */
+
+/* Richer background — deeper lavender → near-white, with subtle diagonal */
+#hero-7.gr--perl {
+  background-image:
+    radial-gradient(ellipse 80% 60% at 70% -10%, rgba(106,90,205,.10) 0%, transparent 60%),
+    linear-gradient(160deg, #ece9fd 0%, #f0f1ff 40%, #edf2ff 70%, #f5f7ff 100%) !important;
+  position: relative !important;
+}
+
+/* Soft decorative circle top-right */
+#hero-7.gr--perl::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(106,90,205,.09) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* H1 — tighter, heavier, more enterprise scale */
+.hero-7-txt h1.s-42 {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+  line-height: 1.13 !important;
+  letter-spacing: -1.2px !important;
+  color: var(--cm-indigo) !important;
+}
+
+/* Sub-text under H1 */
+.hero-7-txt p.p-lg {
+  font-size: 1.0625rem !important;
+  color: var(--cm-muted) !important;
+  line-height: 1.75 !important;
+  max-width: 510px;
+}
+
+/* Primary CTA — gradient + lift shadow */
+.hero-7-txt .btn--theme,
+.hero-7-txt .btn.btn--theme {
+  background: linear-gradient(135deg, var(--cm-indigo) 0%, var(--cm-indigo-mid) 100%) !important;
+  border-color: transparent !important;
+  border-radius: var(--cm-radius) !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  padding: 14px 30px !important;
+  box-shadow: 0 6px 22px rgba(40,43,117,.36) !important;
+  transition: box-shadow .25s ease, transform .2s ease !important;
+  letter-spacing: -.1px;
+}
+.hero-7-txt .btn--theme:hover,
+.hero-7-txt .btn.btn--theme:hover {
+  box-shadow: 0 10px 30px rgba(40,43,117,.46) !important;
+  transform: translateY(-2px) !important;
+  background-color: transparent !important;
+}
+
+/* Secondary CTA — clean indigo outline */
+.hero-7-txt .btn--tra-black,
+.hero-7-txt .btn.btn--tra-black {
+  color: var(--cm-indigo) !important;
+  background-color: #fff !important;
+  border: 2px solid var(--cm-indigo) !important;
+  border-radius: var(--cm-radius) !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  padding: 14px 30px !important;
+  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease !important;
+}
+.hero-7-txt .btn--tra-black:hover,
+.hero-7-txt .btn.btn--tra-black:hover {
+  background-color: var(--cm-lavender) !important;
+  color: var(--cm-indigo) !important;
+  box-shadow: var(--cm-shadow-sm) !important;
+}
+
+/* Trust tag pills — stronger, checkmark prefix */
+.cred-tag {
+  padding: 8px 16px 8px 14px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  border-radius: 50px !important;
+  background: rgba(40,43,117,.07) !important;
+  color: var(--cm-indigo) !important;
+  border: 1.5px solid rgba(40,43,117,.16) !important;
+  transition: all .2s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+.cred-tag::before {
+  content: '✓';
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--cm-purple);
+  background: rgba(106,90,205,.12);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cred-tag:hover {
+  background: rgba(40,43,117,.12) !important;
+  transform: translateY(-2px) !important;
+  color: var(--cm-indigo) !important;
+}
+
+/* ── 3. LOGO TRUST STRIP ──────────────────────────────── */
+#badges.badges-main-container {
+  border-top: 1px solid rgba(40,43,117,.10) !important;
+  padding-top: 28px !important;
+  margin-top: 32px !important;
+}
+/* Subtle "Trusted by" label */
+#badges.badges-main-container::before {
+  content: 'Trusted by world-class institutions';
+  display: block;
+  text-align: center;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 18px;
+}
+.logo-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 40px !important;
+  flex-wrap: wrap !important;
+}
+.logo-list li img {
+  height: 34px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  filter: grayscale(75%) opacity(.65) !important;
+  transition: filter .25s ease !important;
+}
+.logo-list li img:hover {
+  filter: grayscale(0%) opacity(1) !important;
+}
+
+/* ── 4. STATISTICS — dark indigo conversion strip ─────── */
+#statistic-1 {
+  background: linear-gradient(135deg, var(--cm-indigo) 0%, #1e2060 50%, #2d1b69 100%) !important;
+  padding-top: 56px !important;
+  padding-bottom: 56px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+#statistic-1 h2.statistic-number,
+#statistic-1 .statistic-number {
+  color: #fff !important;
+  font-size: 3.25rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -2px !important;
+  line-height: 1 !important;
+}
+#statistic-1 .statistic-block-txt p,
+#statistic-1 .statistic-block-txt .p-md {
+  color: rgba(255,255,255,.72) !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+}
+/* Vertical dividers between stats */
+#statistic-1 .statistic-1-wrapper .row > .col + .col {
+  border-left: 1px solid rgba(255,255,255,.15) !important;
+}
+/* Desktop: side-by-side layout for digits and text */
+@media (min-width: 992px) {
+  #statistic-1 .statistic-block {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    text-align: left !important;
+  }
+  #statistic-1 .statistic-block-digit { width: auto !important; }
+  #statistic-1 .statistic-block-txt   { width: auto !important; padding-left: 14px !important; }
+}
+
+/* ── 5. SECTION HEADING LABEL ─────────────────────────── */
+/* Add an uppercase accent label before every major h2 that has class w-700 inside content-section */
+.section-title h2.w-700,
+.txt-block h6.s-38.w-700 {
+  letter-spacing: -.5px !important;
+  color: var(--cm-indigo) !important;
+}
+
+/* ── 6. PRODUCT FEATURE TABS ──────────────────────────── */
+/* Tab nav links */
+.nav-tabs .nav-link {
+  border-radius: 8px 8px 0 0 !important;
+  font-weight: 600 !important;
+  color: var(--cm-muted) !important;
+  transition: color .2s, background .2s !important;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: var(--cm-indigo) !important;
+  background: var(--cm-lavender) !important;
+  border-color: rgba(40,43,117,.12) rgba(40,43,117,.12) var(--cm-lavender) !important;
+  font-weight: 700 !important;
+}
+/* Tab icon circles */
+.tab-icon [class^="flaticon-"],
+.tab-icon span[class^="flaticon-"] {
+  color: var(--cm-purple) !important;
+}
+
+/* ── 7. G2 / RATINGS SECTION ─────────────────────────── */
+
+/* Rating boxes — better shadow + border */
+.rbox-1 {
+  background: #fff !important;
+  border-radius: 16px !important;
+  padding: 24px 20px !important;
+  box-shadow: 0 4px 24px rgba(40,43,117,.10) !important;
+  border: 1px solid rgba(40,43,117,.07) !important;
+  text-align: center !important;
+  transition: box-shadow .25s ease, transform .25s ease !important;
+}
+.rbox-1:hover {
+  box-shadow: 0 8px 32px rgba(40,43,117,.18) !important;
+  transform: translateY(-3px) !important;
+}
+.rbox-1-img img {
+  max-height: 38px !important;
+}
+.rbox-1 .star-rating {
+  font-size: 0.85rem !important;
+  background: var(--cm-lavender) !important;
+  border-radius: 50px !important;
+  padding: 5px 12px !important;
+  font-weight: 700 !important;
+  color: var(--cm-indigo) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 3px !important;
+}
+.rbox-1 .star-rating [class^="flaticon-star"] {
+  color: var(--cm-gold) !important;
+}
+
+/* "Talk with Experts" button */
+.img-block-btn a.btn.btn--theme,
+.img-block-btn .btn--theme {
+  background: linear-gradient(135deg, var(--cm-indigo), var(--cm-indigo-mid)) !important;
+  border-color: transparent !important;
+  border-radius: var(--cm-radius) !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  padding: 14px 36px !important;
+  box-shadow: 0 6px 22px rgba(40,43,117,.32) !important;
+  transition: box-shadow .25s ease, transform .2s ease !important;
+}
+.img-block-btn a.btn.btn--theme:hover,
+.img-block-btn .btn--theme:hover {
+  box-shadow: 0 10px 30px rgba(40,43,117,.44) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* "Learn More" inline links — indigo + arrow */
+.txt-block-tra-link a.tra-link {
+  color: var(--cm-purple) !important;
+  font-weight: 700 !important;
+  font-size: 14.5px !important;
+  text-decoration: none !important;
+  transition: color .2s !important;
+}
+.txt-block-tra-link a.tra-link:hover {
+  color: var(--cm-indigo) !important;
+}
+
+/* ── 8. TESTIMONIALS ──────────────────────────────────── */
+.review-1 {
+  background: #fff !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 24px rgba(40,43,117,.09) !important;
+  border: 1px solid rgba(40,43,117,.07) !important;
+  transition: box-shadow .25s ease, transform .25s ease !important;
+}
+.review-1:hover {
+  box-shadow: 0 10px 36px rgba(40,43,117,.16) !important;
+  transform: translateY(-4px) !important;
+}
+/* Star row above quote text */
+.review-1::before {
+  content: '★ ★ ★ ★ ★';
+  display: block;
+  color: var(--cm-gold);
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-bottom: 14px;
+}
+/* Quote icon — indigo tint */
+.review-1 .review-ico span[class^="flaticon-"] {
+  color: rgba(106,90,205,.20) !important;
+}
+/* Author name */
+.review-1 .review-author h6 {
+  color: var(--cm-indigo) !important;
+  font-weight: 700 !important;
+}
+/* Author designation */
+.review-1 .review-author p {
+  color: var(--cm-muted) !important;
+}
+/* Avatar ring */
+.review-avatar img {
+  border: 2px solid var(--cm-lavender) !important;
+  border-radius: 50% !important;
+}
+
+/* Testimonials section background */
+#reviews-1 {
+  background: var(--cm-lavender-2) !important;
+}
+
+/* ── 9. SECTION CONTAINERS ────────────────────────────── */
+/* Alternating section rhythm */
+.ct-01.content-section,
+.ct-08.content-section {
+  background: #fff !important;
+}
+.pt-100.statistic-section {
+  /* handled by #statistic-1 rules above */
+}
+
+/* ── 10. GLOBAL BUTTON POLISH ─────────────────────────── */
+/* All .btn--theme everywhere */
+.btn--theme {
+  border-radius: var(--cm-radius) !important;
+  font-weight: 700 !important;
+  letter-spacing: -.1px !important;
+  transition: box-shadow .25s ease, transform .2s ease, background-color .2s ease !important;
+}
+.btn--theme:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: var(--cm-shadow-md) !important;
+}
+
+/* All .btn--tra-black / secondary outline buttons */
+.btn--tra-black {
+  border: 2px solid var(--cm-indigo) !important;
+  color: var(--cm-indigo) !important;
+  background-color: transparent !important;
+  border-radius: var(--cm-radius) !important;
+  font-weight: 600 !important;
+  transition: background-color .2s, box-shadow .2s !important;
+}
+.btn--tra-black:hover {
+  background-color: var(--cm-lavender) !important;
+  color: var(--cm-indigo) !important;
+}
+
+/* ── 11. LAST-LINK / SCROLL OVERRIDE FIX ─────────────── */
+/* Prevent white-scroll from turning our indigo buttons white */
+.white-scroll .scroll .btn--theme,
+.white-scroll .btn--theme {
+  color: #fff !important;
+  background: linear-gradient(135deg, var(--cm-indigo), var(--cm-indigo-mid)) !important;
+  border-color: transparent !important;
+}
+
+/* ── 12. BLOCK SHADOW — elevation upgrade ─────────────── */
+.block-shadow {
+  box-shadow: 0 6px 28px rgba(40,43,117,.11) !important;
+}
+
+/* ── 13. CONTENT SECTION HEADINGS ─────────────────────── */
+/* Add a subtle top accent line to major section h2s */
+.section-title h2 {
+  position: relative;
+  padding-top: 18px;
+}
+.section-title h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--cm-purple), var(--cm-indigo));
+}
+
+/* ── 14. "OUR PRODUCT DETAILS" FEATURE SECTION ────────── */
+/* Give it a clean white background */
+#tab-1,
+[id^="tabs-"] {
+  background: #fff;
+}
+
+/* ── 15. RESPONSIVE ADJUSTMENTS ───────────────────────── */
+@media (max-width: 991px) {
+  .hero-7-txt h1.s-42 {
+    font-size: 2.25rem !important;
+    letter-spacing: -.7px !important;
+  }
+  #statistic-1 h2.statistic-number {
+    font-size: 2.6rem !important;
+  }
+  #statistic-1 .statistic-1-wrapper .row > .col + .col {
+    border-left: none !important;
+    border-top: 1px solid rgba(255,255,255,.12) !important;
+    padding-top: 24px !important;
+    margin-top: 24px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-7-txt h1.s-42 {
+    font-size: 1.875rem !important;
+    letter-spacing: -.5px !important;
+  }
+  .hero-7-txt .btns-group {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+  .hero-7-txt .btn--theme,
+  .hero-7-txt .btn--tra-black {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  #statistic-1 h2.statistic-number {
+    font-size: 2.25rem !important;
+  }
+  .logo-list {
+    gap: 24px !important;
+  }
+  .logo-list li img {
+    height: 28px !important;
+  }
+  .section-title h2::before {
+    left: 0;
+    transform: none;
+  }
+}
