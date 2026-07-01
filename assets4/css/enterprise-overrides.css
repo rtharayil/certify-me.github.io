@@ -8,7 +8,7 @@
 /* ── FONT IMPORT (loaded here so no rebuild needed) ────── */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
-/* ── FONTS: Manrope (headlines) + Inter (body) ────────── */
+/* ── FONTS: Manrope (headlines) + Inter (body) — permanent choice ─── */
 
 /* Body / UI text → Inter */
 body,
@@ -112,11 +112,11 @@ h2.statistic-number {
   pointer-events: none;
 }
 
-/* H1 — Sora runs slightly wider; tune size down to stay on 3 lines max */
+/* H1 — Manrope 800 at this size hits the enterprise authority mark */
 .hero-7-txt h1.s-42 {
-  font-size: 2.65rem !important;
+  font-size: 2.85rem !important;
   font-weight: 800 !important;
-  line-height: 1.14 !important;
+  line-height: 1.13 !important;
   letter-spacing: -1px !important;
   color: var(--cm-indigo) !important;
 }
