@@ -741,16 +741,159 @@
         </div> <!-- End container -->
 </div> <!-- END STATISTIC-1 -->
 
-                <!-- TEXT CONTENT -->
-<section id="opd-section" class="pt-30 pb-30 ct-03 content-section division" style="margin-bottom: 20px; margin-top: 60px;">
+                <!-- ENTERPRISE PLATFORM SECTION -->
+<style>
+/* ── Shell ── */
+.opd-section{margin-top:60px;margin-bottom:20px;}
+.opd-shell{border-radius:16px;overflow:hidden;
+  box-shadow:0 0 0 1px rgba(40,43,117,.07),
+             0 4px 16px rgba(40,43,117,.09),
+             0 24px 56px rgba(40,43,117,.14);}
+.opd-chrome{background:#f1f3f5;border-bottom:1px solid #e2e8f0;
+  padding:10px 16px;display:flex;align-items:center;gap:12px;}
+.opd-dots{display:flex;gap:6px;}
+.opd-dots span{width:11px;height:11px;border-radius:50%;display:block;}
+.opd-url{flex:1;background:#fff;border:1px solid #e2e8f0;border-radius:6px;
+  padding:5px 10px;font-size:11px;color:#64748b;display:flex;align-items:center;gap:6px;
+  font-family:'Inter',sans-serif;}
+.opd-url svg{flex-shrink:0;}
+.opd-win-btn{background:#e2e8f0;border-radius:5px;padding:4px 8px;
+  font-size:10px;color:#64748b;font-weight:600;}
+/* ── Panel system ── */
+.opd-panels{background:#f8f9fb;position:relative;min-height:420px;}
+.opd-panel{display:none;padding:24px 26px 22px;font-family:'Inter',sans-serif;}
+.opd-panel.active{display:block;}
+/* ── Shared atoms ── */
+.opd-eyebrow{font-size:10px;font-weight:700;letter-spacing:.09em;
+  color:#4f46e5;text-transform:uppercase;margin-bottom:14px;}
+.opd-kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px;}
+.opd-kpi{background:#fff;border:1px solid #e8ebf4;border-radius:10px;
+  padding:13px 10px;text-align:center;}
+.opd-kpi-val{font-size:19px;font-weight:800;color:#1e293b;line-height:1;}
+.opd-kpi-lbl{font-size:10px;color:#94a3b8;margin-top:3px;}
+.opd-kpi-delta{font-size:10px;font-weight:700;color:#16a34a;margin-top:2px;}
+/* Bar chart */
+.opd-chart-label{font-size:10px;font-weight:700;letter-spacing:.07em;
+  color:#94a3b8;text-transform:uppercase;margin-bottom:8px;}
+.opd-bars{display:flex;align-items:flex-end;gap:5px;height:68px;margin-bottom:14px;}
+.opd-bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;}
+.opd-bar{width:100%;border-radius:4px 4px 0 0;}
+.opd-bar-mo{font-size:9px;color:#cbd5e1;}
+/* Credential rows */
+.opd-cred-rows{display:flex;flex-direction:column;gap:8px;}
+.opd-cred-row{display:flex;align-items:center;gap:10px;}
+.opd-cred-dot{width:6px;height:6px;border-radius:50%;background:#4f46e5;flex-shrink:0;}
+.opd-cred-name{font-size:12px;color:#374151;width:148px;flex-shrink:0;font-weight:500;}
+.opd-cred-track{flex:1;background:#f1f5f9;border-radius:4px;height:5px;}
+.opd-cred-fill{height:5px;border-radius:4px;}
+.opd-cred-val{font-size:11px;color:#94a3b8;width:52px;text-align:right;}
+/* Upload */
+.opd-upload-zone{border:1.5px dashed #c7d2fe;border-radius:10px;padding:20px;
+  text-align:center;background:#fff;margin-bottom:14px;}
+.opd-upload-icon{width:36px;height:36px;background:#eef2ff;border-radius:9px;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 8px;}
+.opd-upload-filename{font-size:12px;font-weight:600;color:#1e293b;}
+.opd-upload-meta{font-size:10px;color:#94a3b8;margin-top:2px;}
+.opd-batch-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px;}
+.opd-batch-cell{background:#fff;border:1px solid #e8ebf4;border-radius:9px;
+  padding:10px 8px;text-align:center;}
+.opd-batch-val{font-size:17px;font-weight:800;color:#1e293b;}
+.opd-batch-lbl{font-size:9px;color:#94a3b8;margin-top:2px;}
+.opd-prog-label{display:flex;justify-content:space-between;
+  font-size:11px;color:#64748b;margin-bottom:5px;}
+.opd-prog-track{background:#e2e8f0;border-radius:6px;height:8px;margin-bottom:14px;}
+.opd-prog-fill{height:8px;border-radius:6px;
+  background:linear-gradient(90deg,#4f46e5,#6366f1);}
+.opd-checks{display:flex;flex-direction:column;gap:8px;}
+.opd-check{display:flex;align-items:center;gap:9px;font-size:12px;color:#374151;}
+.opd-check-circle{width:18px;height:18px;border-radius:50%;background:#dcfce7;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+/* Integrations */
+.opd-int-body{display:flex;flex-direction:column;align-items:center;gap:14px;padding:4px 0;}
+.opd-int-tier{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
+.opd-int-chip{background:#fff;border:1.5px solid #e2e8f0;border-radius:9px;
+  padding:8px 13px;display:flex;align-items:center;gap:7px;
+  font-size:12px;font-weight:600;color:#334155;
+  box-shadow:0 1px 4px rgba(0,0,0,.05);}
+.opd-int-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+.opd-int-spine{width:2px;height:20px;background:linear-gradient(180deg,#6366f1,#c7d2fe);
+  border-radius:2px;}
+.opd-int-hub{background:linear-gradient(135deg,#282b75 0%,#4f46e5 100%);
+  border-radius:12px;padding:12px 20px;color:#fff;font-size:14px;font-weight:700;
+  display:flex;align-items:center;gap:8px;
+  box-shadow:0 4px 18px rgba(79,70,229,.38);}
+.opd-int-footer{background:#fff;border:1px solid #e2e8f0;border-radius:8px;
+  padding:9px 14px;display:flex;align-items:center;gap:8px;
+  font-size:11px;color:#64748b;width:100%;}
+.opd-int-pill{background:#282b75;color:#fff;border-radius:4px;
+  font-size:9px;font-weight:700;padding:2px 6px;white-space:nowrap;}
+/* Branding */
+.opd-brand-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.opd-cert-shell{border-radius:11px;overflow:hidden;
+  box-shadow:0 2px 12px rgba(40,43,117,.14);}
+.opd-cert-head{padding:18px 14px 12px;text-align:center;}
+.opd-cert-org-row{display:flex;align-items:center;justify-content:center;gap:7px;margin-bottom:8px;}
+.opd-cert-logo{width:28px;height:28px;border-radius:7px;background:rgba(255,255,255,.2);
+  display:flex;align-items:center;justify-content:center;}
+.opd-cert-org-name{font-size:10px;font-weight:700;color:#fff;letter-spacing:.04em;}
+.opd-cert-title{font-size:13px;font-weight:800;color:#fff;line-height:1.25;}
+.opd-cert-body{background:#fff;padding:12px 14px;}
+.opd-cert-to{font-size:9px;color:#94a3b8;margin-bottom:1px;}
+.opd-cert-recipient{font-size:15px;font-weight:700;color:#1e293b;margin-bottom:7px;}
+.opd-cert-skills{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:9px;}
+.opd-cert-skill{background:#f1f5f9;border-radius:4px;font-size:9px;
+  font-weight:600;color:#4f46e5;padding:2px 7px;}
+.opd-cert-foot{display:flex;justify-content:space-between;align-items:center;}
+.opd-cert-verify{font-size:9px;color:#16a34a;font-weight:700;}
+.opd-cert-date{font-size:9px;color:#94a3b8;}
+.opd-controls{display:flex;flex-direction:column;gap:13px;}
+.opd-ctrl-label{font-size:9px;font-weight:700;color:#94a3b8;
+  text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px;}
+.opd-swatches{display:flex;gap:7px;}
+.opd-swatch{width:20px;height:20px;border-radius:50%;cursor:pointer;}
+.opd-swatch.sel{box-shadow:0 0 0 2px #fff,0 0 0 3.5px #4f46e5;}
+.opd-fonts{display:flex;gap:6px;flex-wrap:wrap;}
+.opd-font-tag{background:#f1f5f9;border-radius:5px;font-size:10px;
+  font-weight:600;color:#334155;padding:4px 9px;}
+.opd-font-tag.sel{background:#4f46e5;color:#fff;}
+.opd-toggles{display:flex;flex-direction:column;gap:7px;}
+.opd-toggle-row{display:flex;justify-content:space-between;align-items:center;}
+.opd-toggle-lbl{font-size:11px;color:#374151;}
+.opd-tog{width:30px;height:17px;border-radius:9px;background:#4f46e5;position:relative;}
+.opd-tog::after{content:'';position:absolute;width:13px;height:13px;
+  background:#fff;border-radius:50%;top:2px;right:2px;}
+/* Verification */
+.opd-verify-header{background:linear-gradient(135deg,#052e16,#166534);
+  border-radius:10px;padding:16px 18px;display:flex;align-items:center;
+  gap:14px;margin-bottom:16px;}
+.opd-verify-shield{width:44px;height:44px;background:rgba(255,255,255,.15);
+  border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.opd-verify-badge{font-size:15px;font-weight:800;color:#fff;}
+.opd-verify-sub{font-size:11px;color:rgba(255,255,255,.75);margin-top:2px;}
+.opd-verify-ts{font-size:10px;color:rgba(255,255,255,.55);margin-top:4px;}
+.opd-verify-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;}
+.opd-verify-cell{background:#fff;border:1px solid #e8ebf4;border-radius:9px;padding:11px 12px;}
+.opd-verify-cell-lbl{font-size:9px;font-weight:700;color:#94a3b8;
+  text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px;}
+.opd-verify-cell-val{font-size:12px;font-weight:600;color:#1e293b;}
+.opd-verify-cell-val.green{color:#16a34a;}
+.opd-hash{background:#f8f9fb;border:1px solid #e2e8f0;border-radius:7px;
+  padding:9px 12px;font-family:'Courier New',monospace;font-size:10px;
+  color:#64748b;display:flex;justify-content:space-between;align-items:center;}
+.opd-hash-copy{background:#4f46e5;color:#fff;border-radius:4px;
+  font-size:9px;font-weight:700;padding:2px 7px;cursor:pointer;}
+</style>
+
+<section class="opd-section pt-30 pb-30 ct-03 content-section division">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-10 col-lg-9">
-        <div class="section-title" style="margin-bottom: 55px;">
+        <div class="section-title" style="margin-bottom:50px;">
           <h2 class="s-38 w-700">Enterprise-grade Certificate &amp; Badge Management Platform</h2>
         </div>
       </div>
     </div>
+
     <div class="row d-flex align-items-center">
 
       <!-- LEFT: step list -->
@@ -764,7 +907,7 @@
             </div>
             <div class="cbox-2-txt">
               <h5 class="s-22 w-700" onclick="opd_switch(1)">Credential Analytics &amp; Engagement Insights</h5>
-              <p id="content1" style="display:block;text-align:justify;">Measure the impact of your credential programs with analytics on engagement, social sharing, profile visibility, and verification activity.</p>
+              <p id="content1" style="display:block;text-align:justify;">Measure the impact of your credential programs with real-time analytics on engagement, social sharing, profile visibility, and verification activity.</p>
             </div>
           </div>
 
@@ -775,7 +918,7 @@
             </div>
             <div class="cbox-2-txt">
               <h5 class="s-22 w-700" onclick="opd_switch(2)">Automated Credential Operations</h5>
-              <p id="content2" style="display:none;text-align:justify;">Automate credential issuance with bulk CSV uploads, reducing manual work, minimising errors, and streamlining large-scale certificate distribution.</p>
+              <p id="content2" style="display:none;text-align:justify;">Issue thousands of credentials in minutes. Bulk CSV upload, automated email delivery, and real-time status tracking — zero manual effort.</p>
             </div>
           </div>
 
@@ -786,7 +929,7 @@
             </div>
             <div class="cbox-2-txt">
               <h5 class="s-22 w-700" onclick="opd_switch(3)">API &amp; Enterprise Integrations</h5>
-              <p id="content3" style="display:none;text-align:justify;">Connect CertifyMe with your LMS, CRM, HRMS, and internal systems to streamline credential workflows and automate issuance at scale.</p>
+              <p id="content3" style="display:none;text-align:justify;">Connect CertifyMe with Canvas, Moodle, Salesforce, Workday or any internal system. REST API, webhooks, SSO and native LMS plugins included.</p>
             </div>
           </div>
 
@@ -797,7 +940,7 @@
             </div>
             <div class="cbox-2-txt">
               <h5 class="s-22 w-700" onclick="opd_switch(4)">Fully Branded Credential Experiences</h5>
-              <p id="content4" style="display:none;text-align:justify;">Customise the entire credential journey — from issuance and verification to learner wallets and showcase directories — to reflect your brand identity consistently.</p>
+              <p id="content4" style="display:none;text-align:justify;">Custom domain, white-label emails, brand colours and fonts. Every touchpoint — from issuance to verification — carries your identity, not ours.</p>
             </div>
           </div>
 
@@ -806,338 +949,280 @@
               <div class="cbox-2-ico bg--theme color--white">5</div>
             </div>
             <div class="cbox-2-txt">
-              <h5 class="s-22 w-700" onclick="opd_switch(5)">Social &amp; Professional Credential Sharing</h5>
-              <p id="content5" style="display:none;text-align:justify;">Transform every credential into a branded referral channel with frictionless social sharing, professional visibility, and audience engagement.</p>
+              <h5 class="s-22 w-700" onclick="opd_switch(5)">Tamper-proof Verification &amp; Trust</h5>
+              <p id="content5" style="display:none;text-align:justify;">Every credential is blockchain-anchored and Open Badges 3.0 compliant. Employers verify in one click — no account, no friction, no fakes.</p>
             </div>
           </div>
 
         </div>
       </div>
 
-      <!-- RIGHT: mockup panels -->
+      <!-- RIGHT: browser shell + panels -->
       <div class="col-md-7 order-first order-md-2">
-        <div class="opd-mockup-wrap">
+        <div class="opd-shell wow fadeInLeft">
 
-          <!-- ── PANEL 1: Analytics ── -->
-          <div class="opd-panel" id="opd1">
-            <style>
-              .opd-mockup-wrap{position:relative;min-height:420px;}
-              .opd-panel{display:none;background:#fff;border-radius:16px;box-shadow:0 4px 32px rgba(40,43,117,.10);padding:28px 28px 22px;font-family:'Inter',sans-serif;}
-              .opd-panel.active{display:block;}
-              .opd-panel-hdr{font-size:11px;font-weight:700;letter-spacing:.08em;color:#4f46e5;text-transform:uppercase;margin-bottom:18px;}
-              /* Stat tiles */
-              .opd-stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px;}
-              .opd-stat{background:#f8f7ff;border-radius:10px;padding:12px 10px;text-align:center;}
-              .opd-stat-val{font-size:18px;font-weight:700;color:#282b75;line-height:1;}
-              .opd-stat-lbl{font-size:10px;color:#64748b;margin-top:4px;}
-              .opd-stat-delta{font-size:10px;color:#16a34a;font-weight:600;}
-              /* Bar chart */
-              .opd-chart-hdr{font-size:11px;font-weight:600;color:#94a3b8;margin-bottom:10px;}
-              .opd-bars{display:flex;align-items:flex-end;gap:6px;height:72px;margin-bottom:16px;}
-              .opd-bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;}
-              .opd-bar{width:100%;border-radius:4px 4px 0 0;background:#4f46e5;}
-              .opd-bar.dim{background:#e0e7ff;}
-              .opd-bar-mo{font-size:9px;color:#94a3b8;}
-              /* Credential rows */
-              .opd-cred-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
-              .opd-cred-name{font-size:12px;color:#374151;width:140px;flex-shrink:0;}
-              .opd-cred-bar-wrap{flex:1;background:#f1f5f9;border-radius:4px;height:6px;}
-              .opd-cred-bar-fill{height:6px;border-radius:4px;background:#4f46e5;}
-              .opd-cred-val{font-size:11px;color:#64748b;width:46px;text-align:right;}
-            </style>
-            <div class="opd-panel-hdr">Credential Analytics</div>
-            <div class="opd-stat-row">
-              <div class="opd-stat">
-                <div class="opd-stat-val">12.4K</div>
-                <div class="opd-stat-lbl">Issued</div>
-                <div class="opd-stat-delta">↑ 18%</div>
-              </div>
-              <div class="opd-stat">
-                <div class="opd-stat-val">89K</div>
-                <div class="opd-stat-lbl">Views</div>
-                <div class="opd-stat-delta">↑ 31%</div>
-              </div>
-              <div class="opd-stat">
-                <div class="opd-stat-val">4.2K</div>
-                <div class="opd-stat-lbl">Shares</div>
-                <div class="opd-stat-delta">↑ 22%</div>
-              </div>
-              <div class="opd-stat">
-                <div class="opd-stat-val">98%</div>
-                <div class="opd-stat-lbl">Verified</div>
-                <div class="opd-stat-delta">↑ 4%</div>
-              </div>
+          <!-- Chrome bar -->
+          <div class="opd-chrome">
+            <div class="opd-dots">
+              <span style="background:#ff5f57;"></span>
+              <span style="background:#febc2e;"></span>
+              <span style="background:#28c840;"></span>
             </div>
-            <div class="opd-chart-hdr">MONTHLY ISSUANCE — JAN TO JUL 2025</div>
-            <div class="opd-bars">
-              <div class="opd-bar-col"><div class="opd-bar dim" style="height:38px;"></div><div class="opd-bar-mo">Jan</div></div>
-              <div class="opd-bar-col"><div class="opd-bar dim" style="height:48px;"></div><div class="opd-bar-mo">Feb</div></div>
-              <div class="opd-bar-col"><div class="opd-bar dim" style="height:44px;"></div><div class="opd-bar-mo">Mar</div></div>
-              <div class="opd-bar-col"><div class="opd-bar dim" style="height:54px;"></div><div class="opd-bar-mo">Apr</div></div>
-              <div class="opd-bar-col"><div class="opd-bar dim" style="height:50px;"></div><div class="opd-bar-mo">May</div></div>
-              <div class="opd-bar-col"><div class="opd-bar dim" style="height:62px;"></div><div class="opd-bar-mo">Jun</div></div>
-              <div class="opd-bar-col"><div class="opd-bar" style="height:72px;"></div><div class="opd-bar-mo">Jul</div></div>
+            <div class="opd-url">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span id="opd-url-text">certifyme.online/analytics</span>
             </div>
-            <div class="opd-chart-hdr">TOP CREDENTIALS BY ENGAGEMENT</div>
-            <div class="opd-cred-row"><span class="opd-cred-name">Python for Data Science</span><div class="opd-cred-bar-wrap"><div class="opd-cred-bar-fill" style="width:92%;"></div></div><span class="opd-cred-val">4.2K views</span></div>
-            <div class="opd-cred-row"><span class="opd-cred-name">Machine Learning Cert</span><div class="opd-cred-bar-wrap"><div class="opd-cred-bar-fill" style="width:80%;background:#6366f1;"></div></div><span class="opd-cred-val">3.8K views</span></div>
-            <div class="opd-cred-row"><span class="opd-cred-name">Cloud Architecture</span><div class="opd-cred-bar-wrap"><div class="opd-cred-bar-fill" style="width:64%;background:#a5b4fc;"></div></div><span class="opd-cred-val">2.9K views</span></div>
+            <div class="opd-win-btn">Share</div>
           </div>
 
-          <!-- ── PANEL 2: Bulk Issuance ── -->
-          <div class="opd-panel" id="opd2">
-            <style>
-              .opd-upload-zone{border:2px dashed #c7d2fe;border-radius:12px;padding:24px;text-align:center;background:#fafbff;margin-bottom:18px;}
-              .opd-upload-ico{width:40px;height:40px;background:#e0e7ff;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;}
-              .opd-upload-name{font-size:12px;font-weight:600;color:#374151;margin-bottom:2px;}
-              .opd-upload-meta{font-size:11px;color:#94a3b8;}
-              .opd-progress-wrap{margin-bottom:18px;}
-              .opd-progress-label{display:flex;justify-content:space-between;font-size:11px;color:#64748b;margin-bottom:6px;}
-              .opd-progress-track{background:#f1f5f9;border-radius:6px;height:10px;}
-              .opd-progress-fill{height:10px;border-radius:6px;background:linear-gradient(90deg,#4f46e5,#6366f1);}
-              .opd-checklist{display:flex;flex-direction:column;gap:9px;}
-              .opd-check-item{display:flex;align-items:center;gap:10px;font-size:13px;color:#374151;}
-              .opd-check-ico{width:20px;height:20px;border-radius:50%;background:#dcfce7;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-              .opd-batch-summary{background:#f8f7ff;border-radius:10px;padding:14px 16px;display:flex;gap:24px;margin-bottom:18px;}
-              .opd-batch-item{text-align:center;}
-              .opd-batch-val{font-size:18px;font-weight:700;color:#282b75;}
-              .opd-batch-lbl{font-size:10px;color:#64748b;margin-top:2px;}
-            </style>
-            <div class="opd-panel-hdr">Automated Credential Operations</div>
-            <div class="opd-upload-zone">
-              <div class="opd-upload-ico">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-              </div>
-              <div class="opd-upload-name">recipients_batch_47.csv</div>
-              <div class="opd-upload-meta">1,000 recipients · Uploaded 2 min ago</div>
-            </div>
-            <div class="opd-batch-summary">
-              <div class="opd-batch-item"><div class="opd-batch-val">1,000</div><div class="opd-batch-lbl">Recipients</div></div>
-              <div class="opd-batch-item"><div class="opd-batch-val" style="color:#16a34a;">847</div><div class="opd-batch-lbl">Issued</div></div>
-              <div class="opd-batch-item"><div class="opd-batch-val" style="color:#f59e0b;">153</div><div class="opd-batch-lbl">Processing</div></div>
-              <div class="opd-batch-item"><div class="opd-batch-val">0</div><div class="opd-batch-lbl">Failed</div></div>
-            </div>
-            <div class="opd-progress-wrap">
-              <div class="opd-progress-label"><span>Issuing credentials…</span><span style="font-weight:600;color:#282b75;">847 / 1,000</span></div>
-              <div class="opd-progress-track"><div class="opd-progress-fill" style="width:84.7%;"></div></div>
-            </div>
-            <div class="opd-checklist">
-              <div class="opd-check-item"><div class="opd-check-ico"><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Personalised emails sent automatically</div>
-              <div class="opd-check-item"><div class="opd-check-ico"><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Analytics tracking activated per recipient</div>
-              <div class="opd-check-item"><div class="opd-check-ico"><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Learner wallets created &amp; populated</div>
-            </div>
-          </div>
+          <!-- Panels -->
+          <div class="opd-panels">
 
-          <!-- ── PANEL 3: Integrations ── -->
-          <div class="opd-panel" id="opd3">
-            <style>
-              .opd-int-hub{display:flex;flex-direction:column;align-items:center;gap:20px;padding:10px 0 6px;}
-              .opd-int-center{background:linear-gradient(135deg,#282b75,#4f46e5);border-radius:16px;padding:14px 22px;color:#fff;font-size:14px;font-weight:700;display:flex;align-items:center;gap:8px;box-shadow:0 4px 20px rgba(79,70,229,.35);}
-              .opd-int-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;}
-              .opd-int-chip{background:#f8f7ff;border:1.5px solid #e0e7ff;border-radius:10px;padding:9px 14px;display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:#374151;}
-              .opd-int-dot{width:8px;height:8px;border-radius:50%;background:#4f46e5;flex-shrink:0;}
-              .opd-int-arrow{color:#c7d2fe;font-size:18px;line-height:1;}
-              .opd-int-divider{width:2px;height:24px;background:linear-gradient(180deg,#4f46e5,#c7d2fe);border-radius:2px;}
-              .opd-int-api-bar{background:#f1f5f9;border-radius:8px;padding:10px 14px;font-size:11px;color:#64748b;display:flex;align-items:center;gap:8px;margin-top:4px;}
-              .opd-int-api-badge{background:#282b75;color:#fff;border-radius:4px;font-size:10px;font-weight:700;padding:2px 6px;}
-            </style>
-            <div class="opd-panel-hdr">API &amp; Enterprise Integrations</div>
-            <div class="opd-int-hub">
-              <div class="opd-int-row">
-                <div class="opd-int-chip"><div class="opd-int-dot" style="background:#e17000;"></div>Canvas LMS</div>
-                <div class="opd-int-chip"><div class="opd-int-dot" style="background:#1798c1;"></div>Salesforce</div>
-                <div class="opd-int-chip"><div class="opd-int-dot" style="background:#0073b1;"></div>Workday</div>
+            <!-- ── 1: Analytics ── -->
+            <div class="opd-panel active" id="opd1">
+              <div class="opd-eyebrow">Credential Analytics</div>
+              <div class="opd-kpi-row">
+                <div class="opd-kpi">
+                  <div class="opd-kpi-val">12.4K</div>
+                  <div class="opd-kpi-lbl">Issued</div>
+                  <div class="opd-kpi-delta">↑ 18%</div>
+                </div>
+                <div class="opd-kpi">
+                  <div class="opd-kpi-val">89K</div>
+                  <div class="opd-kpi-lbl">Views</div>
+                  <div class="opd-kpi-delta">↑ 31%</div>
+                </div>
+                <div class="opd-kpi">
+                  <div class="opd-kpi-val">4.2K</div>
+                  <div class="opd-kpi-lbl">Shares</div>
+                  <div class="opd-kpi-delta">↑ 22%</div>
+                </div>
+                <div class="opd-kpi">
+                  <div class="opd-kpi-val">98%</div>
+                  <div class="opd-kpi-lbl">Verified</div>
+                  <div class="opd-kpi-delta">↑ 4%</div>
+                </div>
               </div>
-              <div class="opd-int-divider"></div>
-              <div class="opd-int-center">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                CertifyMe Platform
+              <div class="opd-chart-label">Monthly Issuance — Jan › Jul 2025</div>
+              <div class="opd-bars">
+                <div class="opd-bar-col"><div class="opd-bar" style="height:38px;background:#e0e7ff;"></div><div class="opd-bar-mo">Jan</div></div>
+                <div class="opd-bar-col"><div class="opd-bar" style="height:48px;background:#c7d2fe;"></div><div class="opd-bar-mo">Feb</div></div>
+                <div class="opd-bar-col"><div class="opd-bar" style="height:44px;background:#c7d2fe;"></div><div class="opd-bar-mo">Mar</div></div>
+                <div class="opd-bar-col"><div class="opd-bar" style="height:54px;background:#a5b4fc;"></div><div class="opd-bar-mo">Apr</div></div>
+                <div class="opd-bar-col"><div class="opd-bar" style="height:50px;background:#a5b4fc;"></div><div class="opd-bar-mo">May</div></div>
+                <div class="opd-bar-col"><div class="opd-bar" style="height:62px;background:#818cf8;"></div><div class="opd-bar-mo">Jun</div></div>
+                <div class="opd-bar-col"><div class="opd-bar" style="height:68px;background:#4f46e5;border-top:3px solid #312e81;"></div><div class="opd-bar-mo" style="color:#4f46e5;font-weight:700;">Jul</div></div>
               </div>
-              <div class="opd-int-divider"></div>
-              <div class="opd-int-row">
-                <div class="opd-int-chip"><div class="opd-int-dot" style="background:#ff4a00;"></div>Zapier</div>
-                <div class="opd-int-chip"><div class="opd-int-dot" style="background:#4a154b;"></div>Slack</div>
-                <div class="opd-int-chip"><div class="opd-int-dot" style="background:#0078d4;"></div>MS Teams</div>
-                <div class="opd-int-chip"><div class="opd-int-dot" style="background:#009845;"></div>SAP</div>
-              </div>
-              <div class="opd-int-api-bar">
-                <div class="opd-int-api-badge">REST API</div>
-                <span>Webhook · SSO · SCIM · Bulk CSV · Native Plugins</span>
+              <div class="opd-chart-label">Top Credentials by Engagement</div>
+              <div class="opd-cred-rows">
+                <div class="opd-cred-row">
+                  <div class="opd-cred-dot"></div>
+                  <span class="opd-cred-name">Python for Data Science</span>
+                  <div class="opd-cred-track"><div class="opd-cred-fill" style="width:94%;background:#4f46e5;"></div></div>
+                  <span class="opd-cred-val">4.2K views</span>
+                </div>
+                <div class="opd-cred-row">
+                  <div class="opd-cred-dot" style="background:#6366f1;"></div>
+                  <span class="opd-cred-name">Machine Learning Cert</span>
+                  <div class="opd-cred-track"><div class="opd-cred-fill" style="width:80%;background:#6366f1;"></div></div>
+                  <span class="opd-cred-val">3.8K views</span>
+                </div>
+                <div class="opd-cred-row">
+                  <div class="opd-cred-dot" style="background:#a5b4fc;"></div>
+                  <span class="opd-cred-name">Cloud Architecture</span>
+                  <div class="opd-cred-track"><div class="opd-cred-fill" style="width:62%;background:#a5b4fc;"></div></div>
+                  <span class="opd-cred-val">2.9K views</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- ── PANEL 4: Branded Credentials ── -->
-          <div class="opd-panel" id="opd4">
-            <style>
-              .opd-brand-split{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;}
-              .opd-brand-cert{border-radius:12px;overflow:hidden;box-shadow:0 2px 16px rgba(40,43,117,.13);}
-              .opd-cert-header{padding:20px 16px 14px;text-align:center;}
-              .opd-cert-logo-row{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:10px;}
-              .opd-cert-logo-box{width:32px;height:32px;border-radius:8px;background:#fff;display:flex;align-items:center;justify-content:center;}
-              .opd-cert-org{font-size:11px;font-weight:700;color:#fff;}
-              .opd-cert-title{font-size:14px;font-weight:800;color:#fff;line-height:1.25;margin-bottom:4px;}
-              .opd-cert-body{background:#fff;padding:14px 16px;}
-              .opd-cert-recipient{font-size:11px;color:#94a3b8;margin-bottom:2px;}
-              .opd-cert-name{font-size:16px;font-weight:700;color:#1e293b;margin-bottom:8px;}
-              .opd-cert-skills{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px;}
-              .opd-cert-skill{background:#f1f5f9;border-radius:4px;font-size:9px;font-weight:600;color:#4f46e5;padding:2px 7px;}
-              .opd-cert-footer{display:flex;justify-content:space-between;align-items:center;}
-              .opd-cert-verify{font-size:9px;color:#16a34a;font-weight:600;}
-              .opd-cert-date{font-size:9px;color:#94a3b8;}
-              /* Controls panel */
-              .opd-brand-controls{display:flex;flex-direction:column;gap:12px;}
-              .opd-ctrl-label{font-size:10px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px;}
-              .opd-color-row{display:flex;gap:6px;}
-              .opd-swatch{width:22px;height:22px;border-radius:50%;cursor:pointer;}
-              .opd-swatch.active{box-shadow:0 0 0 2.5px #fff,0 0 0 4px #4f46e5;}
-              .opd-font-row{display:flex;gap:6px;flex-wrap:wrap;}
-              .opd-font-chip{background:#f1f5f9;border-radius:5px;font-size:10px;font-weight:600;color:#374151;padding:4px 8px;cursor:pointer;}
-              .opd-font-chip.active{background:#4f46e5;color:#fff;}
-              .opd-toggle-row{display:flex;justify-content:space-between;align-items:center;}
-              .opd-toggle-lbl{font-size:11px;color:#374151;}
-              .opd-toggle{width:32px;height:18px;border-radius:9px;background:#4f46e5;position:relative;}
-              .opd-toggle::after{content:'';position:absolute;width:14px;height:14px;background:#fff;border-radius:50%;top:2px;right:2px;}
-            </style>
-            <div class="opd-panel-hdr">Fully Branded Credential Experiences</div>
-            <div class="opd-brand-split">
-              <!-- Certificate preview -->
-              <div class="opd-brand-cert">
-                <div class="opd-cert-header" style="background:linear-gradient(135deg,#282b75,#4f46e5);">
-                  <div class="opd-cert-logo-row">
-                    <div class="opd-cert-logo-box">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <!-- ── 2: Bulk Issuance ── -->
+            <div class="opd-panel" id="opd2">
+              <div class="opd-eyebrow">Automated Credential Operations</div>
+              <div class="opd-upload-zone">
+                <div class="opd-upload-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                </div>
+                <div class="opd-upload-filename">recipients_batch_47.csv</div>
+                <div class="opd-upload-meta">1,000 recipients · Uploaded 2 min ago</div>
+              </div>
+              <div class="opd-batch-row">
+                <div class="opd-batch-cell">
+                  <div class="opd-batch-val">1,000</div>
+                  <div class="opd-batch-lbl">Recipients</div>
+                </div>
+                <div class="opd-batch-cell">
+                  <div class="opd-batch-val" style="color:#16a34a;">847</div>
+                  <div class="opd-batch-lbl">Issued</div>
+                </div>
+                <div class="opd-batch-cell">
+                  <div class="opd-batch-val" style="color:#d97706;">153</div>
+                  <div class="opd-batch-lbl">Processing</div>
+                </div>
+                <div class="opd-batch-cell">
+                  <div class="opd-batch-val" style="color:#64748b;">0</div>
+                  <div class="opd-batch-lbl">Failed</div>
+                </div>
+              </div>
+              <div class="opd-prog-label">
+                <span style="font-weight:600;color:#374151;">Issuing credentials…</span>
+                <span style="font-weight:700;color:#4f46e5;">847 / 1,000</span>
+              </div>
+              <div class="opd-prog-track">
+                <div class="opd-prog-fill" style="width:84.7%;"></div>
+              </div>
+              <div class="opd-checks">
+                <div class="opd-check">
+                  <div class="opd-check-circle"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                  Personalised emails sent automatically
+                </div>
+                <div class="opd-check">
+                  <div class="opd-check-circle"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                  Analytics tracking activated per recipient
+                </div>
+                <div class="opd-check">
+                  <div class="opd-check-circle"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                  Learner wallets created &amp; populated
+                </div>
+              </div>
+            </div>
+
+            <!-- ── 3: Integrations ── -->
+            <div class="opd-panel" id="opd3">
+              <div class="opd-eyebrow">API &amp; Enterprise Integrations</div>
+              <div class="opd-int-body">
+                <div class="opd-int-tier">
+                  <div class="opd-int-chip"><div class="opd-int-dot" style="background:#e17000;"></div>Canvas LMS</div>
+                  <div class="opd-int-chip"><div class="opd-int-dot" style="background:#0a7ec2;"></div>Moodle</div>
+                  <div class="opd-int-chip"><div class="opd-int-dot" style="background:#1798c1;"></div>Salesforce</div>
+                </div>
+                <div class="opd-int-spine"></div>
+                <div class="opd-int-hub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  CertifyMe Platform
+                </div>
+                <div class="opd-int-spine"></div>
+                <div class="opd-int-tier">
+                  <div class="opd-int-chip"><div class="opd-int-dot" style="background:#0073b1;"></div>Workday</div>
+                  <div class="opd-int-chip"><div class="opd-int-dot" style="background:#ff4a00;"></div>Zapier</div>
+                  <div class="opd-int-chip"><div class="opd-int-dot" style="background:#4a154b;"></div>Slack</div>
+                  <div class="opd-int-chip"><div class="opd-int-dot" style="background:#009845;"></div>SAP</div>
+                </div>
+                <div class="opd-int-footer">
+                  <div class="opd-int-pill">REST API</div>
+                  <span>Webhook &nbsp;·&nbsp; SSO / SAML &nbsp;·&nbsp; SCIM &nbsp;·&nbsp; Bulk CSV &nbsp;·&nbsp; Native Plugins</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── 4: Branding ── -->
+            <div class="opd-panel" id="opd4">
+              <div class="opd-eyebrow">Fully Branded Credential Experiences</div>
+              <div class="opd-brand-grid">
+                <div class="opd-cert-shell">
+                  <div class="opd-cert-head" style="background:linear-gradient(135deg,#282b75,#4f46e5);">
+                    <div class="opd-cert-org-row">
+                      <div class="opd-cert-logo">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                      </div>
+                      <div class="opd-cert-org-name">ACME University</div>
                     </div>
-                    <div class="opd-cert-org">ACME University</div>
+                    <div class="opd-cert-title">Certificate of Achievement<br>Data Science Professional</div>
                   </div>
-                  <div class="opd-cert-title">Certificate of Achievement<br>Data Science Professional</div>
-                </div>
-                <div class="opd-cert-body">
-                  <div class="opd-cert-recipient">Awarded to</div>
-                  <div class="opd-cert-name">Sarah Johnson</div>
-                  <div class="opd-cert-skills">
-                    <span class="opd-cert-skill">Python</span>
-                    <span class="opd-cert-skill">ML</span>
-                    <span class="opd-cert-skill">NLP</span>
-                    <span class="opd-cert-skill">TensorFlow</span>
-                  </div>
-                  <div class="opd-cert-footer">
-                    <span class="opd-cert-verify">✓ Blockchain Verified</span>
-                    <span class="opd-cert-date">Jul 1, 2025</span>
-                  </div>
-                </div>
-              </div>
-              <!-- Controls -->
-              <div class="opd-brand-controls">
-                <div>
-                  <div class="opd-ctrl-label">Brand Colour</div>
-                  <div class="opd-color-row">
-                    <div class="opd-swatch active" style="background:#282b75;"></div>
-                    <div class="opd-swatch" style="background:#0f766e;"></div>
-                    <div class="opd-swatch" style="background:#b91c1c;"></div>
-                    <div class="opd-swatch" style="background:#b45309;"></div>
-                    <div class="opd-swatch" style="background:#1d4ed8;"></div>
+                  <div class="opd-cert-body">
+                    <div class="opd-cert-to">Awarded to</div>
+                    <div class="opd-cert-recipient">Sarah Johnson</div>
+                    <div class="opd-cert-skills">
+                      <span class="opd-cert-skill">Python</span>
+                      <span class="opd-cert-skill">ML</span>
+                      <span class="opd-cert-skill">NLP</span>
+                      <span class="opd-cert-skill">TensorFlow</span>
+                    </div>
+                    <div class="opd-cert-foot">
+                      <span class="opd-cert-verify">✓ Blockchain Verified</span>
+                      <span class="opd-cert-date">Jul 1, 2025</span>
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <div class="opd-ctrl-label">Font</div>
-                  <div class="opd-font-row">
-                    <div class="opd-font-chip active">Manrope</div>
-                    <div class="opd-font-chip">Inter</div>
-                    <div class="opd-font-chip">Merriweather</div>
-                  </div>
-                </div>
-                <div>
-                  <div class="opd-ctrl-label">Options</div>
-                  <div style="display:flex;flex-direction:column;gap:8px;">
-                    <div class="opd-toggle-row"><span class="opd-toggle-lbl">Custom domain</span><div class="opd-toggle"></div></div>
-                    <div class="opd-toggle-row"><span class="opd-toggle-lbl">White-label emails</span><div class="opd-toggle"></div></div>
-                    <div class="opd-toggle-row"><span class="opd-toggle-lbl">Remove CertifyMe branding</span><div class="opd-toggle"></div></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ── PANEL 5: Social Sharing ── -->
-          <div class="opd-panel" id="opd5">
-            <style>
-              .opd-share-card{border:1.5px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:16px;}
-              .opd-share-card-top{background:linear-gradient(135deg,#282b75,#4f46e5);padding:18px 16px 14px;}
-              .opd-share-user{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
-              .opd-share-avatar{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;}
-              .opd-share-user-info{font-size:12px;color:rgba(255,255,255,.85);}
-              .opd-share-user-name{font-weight:700;color:#fff;font-size:13px;}
-              .opd-share-badge-row{display:flex;align-items:center;gap:10px;}
-              .opd-share-badge-ico{width:44px;height:44px;border-radius:10px;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;}
-              .opd-share-badge-title{font-size:14px;font-weight:700;color:#fff;}
-              .opd-share-badge-org{font-size:11px;color:rgba(255,255,255,.75);}
-              .opd-share-card-body{padding:12px 16px;}
-              .opd-share-text{font-size:12px;color:#374151;line-height:1.5;margin-bottom:10px;}
-              .opd-share-stats{display:flex;gap:16px;}
-              .opd-share-stat{font-size:11px;color:#64748b;}<br>
-              .opd-share-stat strong{color:#282b75;}
-              /* Share buttons */
-              .opd-share-btns{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;}
-              .opd-share-btn{border-radius:8px;padding:8px 14px;font-size:12px;font-weight:600;display:flex;align-items:center;gap:7px;border:none;cursor:pointer;}
-              /* Engagement strip */
-              .opd-eng-strip{background:#f8f7ff;border-radius:10px;padding:12px 16px;display:flex;gap:20px;}
-              .opd-eng-item{text-align:center;}
-              .opd-eng-val{font-size:16px;font-weight:700;color:#282b75;}
-              .opd-eng-lbl{font-size:10px;color:#64748b;margin-top:2px;}
-            </style>
-            <div class="opd-panel-hdr">Social &amp; Professional Sharing</div>
-            <div class="opd-share-card">
-              <div class="opd-share-card-top">
-                <div class="opd-share-user">
-                  <div class="opd-share-avatar">SJ</div>
+                <div class="opd-controls">
                   <div>
-                    <div class="opd-share-user-name">Sarah Johnson</div>
-                    <div class="opd-share-user-info">MSc Data Science · UBC</div>
-                  </div>
-                </div>
-                <div class="opd-share-badge-row">
-                  <div class="opd-share-badge-ico">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <div class="opd-ctrl-label">Brand Colour</div>
+                    <div class="opd-swatches">
+                      <div class="opd-swatch sel" style="background:#282b75;"></div>
+                      <div class="opd-swatch" style="background:#0f766e;"></div>
+                      <div class="opd-swatch" style="background:#b91c1c;"></div>
+                      <div class="opd-swatch" style="background:#1d4ed8;"></div>
+                      <div class="opd-swatch" style="background:#78350f;"></div>
+                    </div>
                   </div>
                   <div>
-                    <div class="opd-share-badge-title">Data Science Professional</div>
-                    <div class="opd-share-badge-org">Issued by CertifyMe · Jul 1, 2025</div>
+                    <div class="opd-ctrl-label">Font</div>
+                    <div class="opd-fonts">
+                      <div class="opd-font-tag sel">Manrope</div>
+                      <div class="opd-font-tag">Inter</div>
+                      <div class="opd-font-tag">Merriweather</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="opd-ctrl-label">White-label</div>
+                    <div class="opd-toggles">
+                      <div class="opd-toggle-row"><span class="opd-toggle-lbl">Custom domain</span><div class="opd-tog"></div></div>
+                      <div class="opd-toggle-row"><span class="opd-toggle-lbl">White-label emails</span><div class="opd-tog"></div></div>
+                      <div class="opd-toggle-row"><span class="opd-toggle-lbl">Remove CertifyMe branding</span><div class="opd-tog"></div></div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="opd-share-card-body">
-                <div class="opd-share-text">Excited to share my verified credential! 🎓 Skills: Python · ML · NLP · TensorFlow — blockchain-verified and linkable to 4,247 open roles.</div>
-                <div class="opd-share-stats">
-                  <div class="opd-share-stat"><strong>142</strong> profile views</div>
-                  <div class="opd-share-stat"><strong>38</strong> credential clicks</div>
-                  <div class="opd-share-stat"><strong>7</strong> employer saves</div>
+            </div>
+
+            <!-- ── 5: Verification ── -->
+            <div class="opd-panel" id="opd5">
+              <div class="opd-eyebrow">Tamper-proof Verification</div>
+              <div class="opd-verify-header">
+                <div class="opd-verify-shield">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <div>
+                  <div class="opd-verify-badge">✓ CREDENTIAL VERIFIED</div>
+                  <div class="opd-verify-sub">Data Science Professional · ACME University</div>
+                  <div class="opd-verify-ts">Verified 1 Jul 2025, 14:32 UTC · Open Badges 3.0 · W3C VC</div>
                 </div>
               </div>
+              <div class="opd-verify-grid">
+                <div class="opd-verify-cell">
+                  <div class="opd-verify-cell-lbl">Recipient</div>
+                  <div class="opd-verify-cell-val">Sarah Johnson</div>
+                </div>
+                <div class="opd-verify-cell">
+                  <div class="opd-verify-cell-lbl">Issued By</div>
+                  <div class="opd-verify-cell-val">ACME University</div>
+                </div>
+                <div class="opd-verify-cell">
+                  <div class="opd-verify-cell-lbl">Issue Date</div>
+                  <div class="opd-verify-cell-val">1 Jul 2025</div>
+                </div>
+                <div class="opd-verify-cell">
+                  <div class="opd-verify-cell-lbl">Status</div>
+                  <div class="opd-verify-cell-val green">● Active &amp; Valid</div>
+                </div>
+              </div>
+              <div class="opd-verify-cell" style="margin-bottom:10px;">
+                <div class="opd-verify-cell-lbl">Verified Skills</div>
+                <div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:5px;">
+                  <span class="opd-cert-skill">Python</span>
+                  <span class="opd-cert-skill">Machine Learning</span>
+                  <span class="opd-cert-skill">NLP</span>
+                  <span class="opd-cert-skill">TensorFlow</span>
+                </div>
+              </div>
+              <div class="opd-hash">
+                <span>0x4a7f…c3e8d2 · Polygon blockchain</span>
+                <div class="opd-hash-copy">Copy</div>
+              </div>
             </div>
-            <div class="opd-share-btns">
-              <button class="opd-share-btn" style="background:#0077b5;color:#fff;">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                LinkedIn
-              </button>
-              <button class="opd-share-btn" style="background:#1da1f2;color:#fff;">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
-                Twitter / X
-              </button>
-              <button class="opd-share-btn" style="background:#f1f5f9;color:#374151;">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                Copy Link
-              </button>
-            </div>
-            <div class="opd-eng-strip">
-              <div class="opd-eng-item"><div class="opd-eng-val">142</div><div class="opd-eng-lbl">Profile views</div></div>
-              <div class="opd-eng-item"><div class="opd-eng-val">38</div><div class="opd-eng-lbl">Cred. clicks</div></div>
-              <div class="opd-eng-item"><div class="opd-eng-val">7</div><div class="opd-eng-lbl">Employer saves</div></div>
-              <div class="opd-eng-item"><div class="opd-eng-val" style="color:#16a34a;">↑ 30%</div><div class="opd-eng-lbl">vs last month</div></div>
-            </div>
-          </div>
 
-        </div>
+          </div><!-- end opd-panels -->
+        </div><!-- end opd-shell -->
       </div>
 
     </div>
@@ -1145,17 +1230,20 @@
 </section>
 
 <script>
-  function opd_switch(n) {
-    for (var i = 1; i <= 5; i++) {
-      document.getElementById('opd' + i).classList.remove('active');
-      var c = document.getElementById('content' + i);
-      if (c) c.style.display = 'none';
-    }
-    document.getElementById('opd' + n).classList.add('active');
-    var sel = document.getElementById('content' + n);
-    if (sel) sel.style.display = 'block';
+var OPD_URLS = ['certifyme.online/analytics','certifyme.online/bulk-issue',
+  'certifyme.online/integrations','certifyme.online/branding','certifyme.online/verify'];
+function opd_switch(n) {
+  for (var i = 1; i <= 5; i++) {
+    document.getElementById('opd' + i).classList.remove('active');
+    var c = document.getElementById('content' + i);
+    if (c) c.style.display = 'none';
   }
-  opd_switch(1);
+  document.getElementById('opd' + n).classList.add('active');
+  var sel = document.getElementById('content' + n);
+  if (sel) sel.style.display = 'block';
+  var u = document.getElementById('opd-url-text');
+  if (u) u.textContent = OPD_URLS[n - 1];
+}
 </script>
 
 
@@ -2352,319 +2440,319 @@
 
         <!-- TESTIMONIALS-1 -->
 <section id="reviews-1" class="pt-100 shape--06 shape--gr-whitesmoke reviews-section">
-        <div class="container">
+	<div class="container">
 
 
-                <!-- SECTION TITLE -->
-                <div class="row justify-content-center">
-                        <div class="col-md-10 col-lg-9">
-                                <div class="section-title mb-70">
+		<!-- SECTION TITLE -->
+		<div class="row justify-content-center">
+			<div class="col-md-10 col-lg-9">
+				<div class="section-title mb-70">
 
-                                        <!-- Title -->
-                                        <h2 class="s-38 w-700">Our Happy Customers</h2>
+					<!-- Title -->
+					<h2 class="s-38 w-700">Our Happy Customers</h2>
 
-                                        
-                                </div>
-                        </div>
-                </div>
+					
+				</div>
+			</div>
+		</div>
 
 
-                <!-- TESTIMONIALS CONTENT -->
-                <div class="row">
-                        <div class="col">
-                                <div class="owl-carousel owl-theme reviews-1-wrapper">
+		<!-- TESTIMONIALS CONTENT -->
+		<div class="row">
+			<div class="col">
+				<div class="owl-carousel owl-theme reviews-1-wrapper">
 
 
-                                        <!-- TESTIMONIAL #1 -->
-                                        <div class="review-1 bg--white-100 block-shadow r-08">
+					<!-- TESTIMONIAL #1 -->
+					<div class="review-1 bg--white-100 block-shadow r-08">
 
-                                                <!-- Quote Icon -->
-                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+						<!-- Quote Icon -->
+						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-                                                <!-- Text -->
-                                                <div class="review-txt">
+						<!-- Text -->
+						<div class="review-txt">
 
-                                                        <!-- Text -->
-                                                        <p>CertifyMe has the best customer service. They have been partners beside us as long as we have used their product. Our members that have received digital certificates love having something they can keep online and share with their peers.
-                                                        </p>
+							<!-- Text -->
+							<p>CertifyMe has the best customer service. They have been partners beside us as long as we have used their product. Our members that have received digital certificates love having something they can keep online and share with their peers.
+							</p>
 
-                                                        <!-- Author -->
-                                                        <div class="author-data clearfix">
+							<!-- Author -->
+							<div class="author-data clearfix">
 
-                                                                <!-- Avatar -->
-                                                                <div class="review-avatar">
-                                                                        <img src="/assets4/images/Danielle Image - Review.jpg" alt="Danielle Lee, Board Director, PMI Phoenix" loading="lazy">
-                                                                </div>
+								<!-- Avatar -->
+								<div class="review-avatar">
+									<img src="/assets4/images/Danielle Image - Review.jpg" alt="Danielle Lee, Board Director, PMI Phoenix" loading="lazy">
+								</div>
 
-                                                                <!-- Data -->
-                                                                <div class="review-author">
-                                                                        <h6 class="s-16 w-700">Danielle Lee</h6>
-                                                                        <p class="p-sm" style="font-size:15px;">Board Director</p>
-                                                                        <p class="p-sm mt-2" style="font-size:15px;">PMI Phoenix</p>
-                                                                </div>
+								<!-- Data -->
+								<div class="review-author">
+									<h6 class="s-16 w-700">Danielle Lee</h6>
+									<p class="p-sm" style="font-size:15px;">Board Director</p>
+									<p class="p-sm mt-2" style="font-size:15px;">PMI Phoenix</p>
+								</div>
 
-                                                        </div> <!-- End Author -->
+							</div> <!-- End Author -->
 
-                                                </div> <!-- End Text -->
+						</div> <!-- End Text -->
 
-                                        </div> <!-- END TESTIMONIAL #1 -->
+					</div> <!-- END TESTIMONIAL #1 -->
 
 
-                                        <!-- TESTIMONIAL #2 -->
-                                        <div class="review-1 bg--white-100 block-shadow r-08">
+					<!-- TESTIMONIAL #2 -->
+					<div class="review-1 bg--white-100 block-shadow r-08">
 
-                                                <!-- Quote Icon -->
-                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+						<!-- Quote Icon -->
+						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-                                                <!-- Text -->
-                                                <div class="review-txt">
+						<!-- Text -->
+						<div class="review-txt">
 
-                                                        <!-- Text -->
-                                                        <p>CertifyMe has been very easy to implement and use. Our organization used CertifyMe to create over 7000 certificates this past year. We were able to integrate CertifyMe with our CRM, thus requiring minimal time in labor to produce and send the certificates.
-                                                        </p>
+							<!-- Text -->
+							<p>CertifyMe has been very easy to implement and use. Our organization used CertifyMe to create over 7000 certificates this past year. We were able to integrate CertifyMe with our CRM, thus requiring minimal time in labor to produce and send the certificates.
+							</p>
 
-                                                        <!-- Author -->
-                                                        <div class="author-data clearfix">
+							<!-- Author -->
+							<div class="author-data clearfix">
 
-                                                                <!-- Avatar -->
-                                                                <div class="review-avatar">
-                                                                        <img src="/assets4/images/Erika Image - Review.jpg" alt="Erika Barney, Human Resources Director, Au Pair Weekend" loading="lazy">
-                                                                </div>
+								<!-- Avatar -->
+								<div class="review-avatar">
+									<img src="/assets4/images/Erika Image - Review.jpg" alt="Erika Barney, Human Resources Director, Au Pair Weekend" loading="lazy">
+								</div>
 
-                                                                <!-- Data -->
-                                                                <div class="review-author">
-                                                                        <h6 class="s-16 w-700">Erika Barney</h6>
-                                                                        <p class="p-sm" style="font-size:15px;">Human Resources Director</p>
-                                                                        <p class="p-sm mt-2" style="font-size:15px;">Au Pair Weekend</p>
-                                                                </div>
+								<!-- Data -->
+								<div class="review-author">
+									<h6 class="s-16 w-700">Erika Barney</h6>
+									<p class="p-sm" style="font-size:15px;">Human Resources Director</p>
+									<p class="p-sm mt-2" style="font-size:15px;">Au Pair Weekend</p>
+								</div>
 
-                                                        </div> <!-- End Author -->
+							</div> <!-- End Author -->
 
-                                                </div> <!-- End Text -->
+						</div> <!-- End Text -->
 
-                                        </div> <!-- END TESTIMONIAL #2 -->
+					</div> <!-- END TESTIMONIAL #2 -->
 
 
-                                        <!-- TESTIMONIAL #3 -->
-                                        <div class="review-1 bg--white-100 block-shadow r-08">
+					<!-- TESTIMONIAL #3 -->
+					<div class="review-1 bg--white-100 block-shadow r-08">
 
-                                                <!-- Quote Icon -->
-                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+						<!-- Quote Icon -->
+						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-                                                <!-- Text -->
-                                                <div class="review-txt">
+						<!-- Text -->
+						<div class="review-txt">
 
-                                                        <!-- Text -->
-                                                        <p>The platform is user-friendly and does not need technical knowledge to issue digital credentials. On top of that, I commend their staff, who constantly check on us occasionally, as well as respond to our suggestions and comments.
-                                                        </p>
+							<!-- Text -->
+							<p>The platform is user-friendly and does not need technical knowledge to issue digital credentials. On top of that, I commend their staff, who constantly check on us occasionally, as well as respond to our suggestions and comments.
+							</p>
 
-                                                        <!-- Author -->
-                                                        <div class="author-data clearfix">
+							<!-- Author -->
+							<div class="author-data clearfix">
 
-                                                                <!-- Avatar -->
-                                                                <div class="review-avatar">
-                                                                        <img src="/assets4/images/Chresente Image - Review.jpg" alt="Chresente Gong, Founder, EIS Education International" loading="lazy">
-                                                                </div>
+								<!-- Avatar -->
+								<div class="review-avatar">
+									<img src="/assets4/images/Chresente Image - Review.jpg" alt="Chresente Gong, Founder, EIS Education International" loading="lazy">
+								</div>
 
-                                                                <!-- Data -->
-                                                                <div class="review-author">
-                                                                        <h6 class="s-16 w-700">Chresente Gong</h6>
-                                                                        <p class="p-sm" style="font-size:15px;">Founder</p>
-                                                                        <p class="p-sm mt-2" style="font-size:15px;">EIS Education International</p>
-                                                                </div>
+								<!-- Data -->
+								<div class="review-author">
+									<h6 class="s-16 w-700">Chresente Gong</h6>
+									<p class="p-sm" style="font-size:15px;">Founder</p>
+									<p class="p-sm mt-2" style="font-size:15px;">EIS Education International</p>
+								</div>
 
-                                                        </div> <!-- End Author -->
+							</div> <!-- End Author -->
 
-                                                </div> <!-- End Text -->
+						</div> <!-- End Text -->
 
-                                        </div> <!-- END TESTIMONIAL #3 -->
+					</div> <!-- END TESTIMONIAL #3 -->
 
 
-                                        <!-- TESTIMONIAL #4 -->
-                                        <div class="review-1 bg--white-100 block-shadow r-08">
+					<!-- TESTIMONIAL #4 -->
+					<div class="review-1 bg--white-100 block-shadow r-08">
 
-                                                <!-- Quote Icon -->
-                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+						<!-- Quote Icon -->
+						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-                                                <!-- Text -->
-                                                <div class="review-txt">
+						<!-- Text -->
+						<div class="review-txt">
 
-                                                        <!-- Text -->
-                                                        <p>The user interface of the platform is remarkably intuitive and makes it easier to use. I really want to acknowledge the exceptional support that CertifyMe has been providing, which counts a lot towards our satisfaction in using the tool.
-                                                        </p>
+							<!-- Text -->
+							<p>The user interface of the platform is remarkably intuitive and makes it easier to use. I really want to acknowledge the exceptional support that CertifyMe has been providing, which counts a lot towards our satisfaction in using the tool.
+							</p>
 
-                                                        <!-- Author -->
-                                                        <div class="author-data clearfix">
+							<!-- Author -->
+							<div class="author-data clearfix">
 
-                                                                <!-- Avatar -->
-                                                                <div class="review-avatar">
-                                                                        <img src="/assets4/images/Anson Antony Image - Review.jpg" alt="Anson Antony, Project Manager, University of Europe" loading="lazy">
-                                                                </div>
+								<!-- Avatar -->
+								<div class="review-avatar">
+									<img src="/assets4/images/Anson Antony Image - Review.jpg" alt="Anson Antony, Project Manager, University of Europe" loading="lazy">
+								</div>
 
-                                                                <!-- Data -->
-                                                                <div class="review-author">
-                                                                        <h6 class="s-16 w-700">Anson Antony</h6>
-                                                                        <p class="p-sm" style="font-size:15px;">Project Manager</p>
-                                                                        <p class="p-sm mt-2" style="font-size:15px;">University of Europe</p>
-                                                                </div>
+								<!-- Data -->
+								<div class="review-author">
+									<h6 class="s-16 w-700">Anson Antony</h6>
+									<p class="p-sm" style="font-size:15px;">Project Manager</p>
+									<p class="p-sm mt-2" style="font-size:15px;">University of Europe</p>
+								</div>
 
-                                                        </div> <!-- End Author -->
+							</div> <!-- End Author -->
 
-                                                </div> <!-- End Text -->
+						</div> <!-- End Text -->
 
-                                        </div> <!-- END TESTIMONIAL #4 -->
+					</div> <!-- END TESTIMONIAL #4 -->
 
 
-                                        <!-- TESTIMONIAL #5 -->
-                                        <div class="review-1 bg--white-100 block-shadow r-08">
+					<!-- TESTIMONIAL #5 -->
+					<div class="review-1 bg--white-100 block-shadow r-08">
 
-                                                <!-- Quote Icon -->
-                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+						<!-- Quote Icon -->
+						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-                                                <!-- Text -->
-                                                <div class="review-txt">
+						<!-- Text -->
+						<div class="review-txt">
 
-                                                        <!-- Text -->
-                                                        <p>“Impressive range of features sets it apart as the ultimate solution for certificate verification. Their enterprise plan, along with customizable options, caters to diverse company needs, making it an awesome choice.”
-                                                        </p>
+							<!-- Text -->
+							<p>“Impressive range of features sets it apart as the ultimate solution for certificate verification. Their enterprise plan, along with customizable options, caters to diverse company needs, making it an awesome choice.”
+							</p>
 
-                                                        <!-- Author -->
-                                                        <div class="author-data clearfix">
+							<!-- Author -->
+							<div class="author-data clearfix">
 
-                                                                <!-- Avatar -->
-                                                                <div class="review-avatar">
-                                                                        <img src="/assets4/images/Images Webp/Joshua.webp" alt="Joshua J., Chief Learning Officer, System Support Inc." loading="lazy">
-                                                                </div>
+								<!-- Avatar -->
+								<div class="review-avatar">
+									<img src="/assets4/images/Images Webp/Joshua.webp" alt="Joshua J., Chief Learning Officer, System Support Inc." loading="lazy">
+								</div>
 
-                                                                <!-- Data -->
-                                                                <div class="review-author">
-                                                                        <h6 class="s-16 w-700">Joshua J.</h6>
-                                                                        <p class="p-sm" style="font-size:15px;">Chief Learning Officer</p>
-                                                                        <p class="p-sm mt-2" style="font-size:15px;">System Support Inc.</p>
-                                                                </div>
+								<!-- Data -->
+								<div class="review-author">
+									<h6 class="s-16 w-700">Joshua J.</h6>
+									<p class="p-sm" style="font-size:15px;">Chief Learning Officer</p>
+									<p class="p-sm mt-2" style="font-size:15px;">System Support Inc.</p>
+								</div>
 
-                                                        </div> <!-- End Author -->
+							</div> <!-- End Author -->
 
-                                                </div> <!-- End Text -->
+						</div> <!-- End Text -->
 
-                                        </div> <!-- END TESTIMONIAL #5 -->
+					</div> <!-- END TESTIMONIAL #5 -->
 
 
-                                        <!-- TESTIMONIAL #6 -->
-                                        <div class="review-1 bg--white-100 block-shadow r-08">
+					<!-- TESTIMONIAL #6 -->
+					<div class="review-1 bg--white-100 block-shadow r-08">
 
-                                                <!-- Quote Icon -->
-                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+						<!-- Quote Icon -->
+						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-                                                <!-- Text -->
-                                                <div class="review-txt">
+						<!-- Text -->
+						<div class="review-txt">
 
-                                                        <!-- Text -->
-                                                        <p>As a training provider, we appreciate the user-friendly interface and customizable digital badging options, which our students enthusiastically showcase on their social media profiles.
-                                                        </p>
+							<!-- Text -->
+							<p>As a training provider, we appreciate the user-friendly interface and customizable digital badging options, which our students enthusiastically showcase on their social media profiles.
+							</p>
 
-                                                        <!-- Author -->
-                                                        <div class="author-data clearfix">
+							<!-- Author -->
+							<div class="author-data clearfix">
 
-                                                                <!-- Avatar -->
-                                                                <div class="review-avatar">
-                                                                        <img src="/assets4/images/Images Webp/Kaisie.webp" alt="Kasie V., CEO, Sigma Forces" loading="lazy">
-                                                                </div>
+								<!-- Avatar -->
+								<div class="review-avatar">
+									<img src="/assets4/images/Images Webp/Kaisie.webp" alt="Kasie V., CEO, Sigma Forces" loading="lazy">
+								</div>
 
-                                                                <!-- Data -->
-                                                                <div class="review-author">
-                                                                        <h6 class="s-16 w-700">Kasie V.</h6>
-                                                                        <p class="p-sm" style="font-size:15px;">CEO</p>
-                                                                        <p class="p-sm mt-2" style="font-size:15px;">Sigma Forces</p>
-                                                                </div>
+								<!-- Data -->
+								<div class="review-author">
+									<h6 class="s-16 w-700">Kasie V.</h6>
+									<p class="p-sm" style="font-size:15px;">CEO</p>
+									<p class="p-sm mt-2" style="font-size:15px;">Sigma Forces</p>
+								</div>
 
-                                                        </div> <!-- End Author -->
+							</div> <!-- End Author -->
 
-                                                </div> <!-- End Text -->
+						</div> <!-- End Text -->
 
-                                        </div> <!-- END TESTIMONIAL #6 -->
+					</div> <!-- END TESTIMONIAL #6 -->
 
 
-                                        <!-- TESTIMONIAL #7 -->
-                                        <div class="review-1 bg--white-100 block-shadow r-08">
+					<!-- TESTIMONIAL #7 -->
+					<div class="review-1 bg--white-100 block-shadow r-08">
 
-                                                <!-- Quote Icon -->
-                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+						<!-- Quote Icon -->
+						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-                                                <!-- Text -->
-                                                <div class="review-txt">
+						<!-- Text -->
+						<div class="review-txt">
 
-                                                        <!-- Text -->
-                                                        <p>“What truly stands out about CertifyMe is the remarkable support provided by their customer success team. They go above and beyond to ensure a seamless experience. Additionally, the platform boasts a clear and intuitive user interface, allowing easy navigation and customization.”
-                                                        </p>
+							<!-- Text -->
+							<p>“What truly stands out about CertifyMe is the remarkable support provided by their customer success team. They go above and beyond to ensure a seamless experience. Additionally, the platform boasts a clear and intuitive user interface, allowing easy navigation and customization.”
+							</p>
 
-                                                        <!-- Author -->
-                                                        <div class="author-data clearfix">
+							<!-- Author -->
+							<div class="author-data clearfix">
 
-                                                                <!-- Avatar -->
-                                                                <div class="review-avatar">
-                                                                        <img src="/assets4/images/Images Webp/Aleena.webp" alt="Aleena J., Enrollment Manager, State University of New York" loading="lazy">
-                                                                </div>
+								<!-- Avatar -->
+								<div class="review-avatar">
+									<img src="/assets4/images/Images Webp/Aleena.webp" alt="Aleena J., Enrollment Manager, State University of New York" loading="lazy">
+								</div>
 
-                                                                <!-- Data -->
-                                                                <div class="review-author">
-                                                                        <h6 class="s-16 w-700">Aleena J.</h6>
-                                                                        <p class="p-sm" style="font-size:15px;">Enrollment Manager</p>
-                                                                        <p class="p-sm mt-2" style="font-size:15px;">State University of New York</p>
-                                                                </div>
+								<!-- Data -->
+								<div class="review-author">
+									<h6 class="s-16 w-700">Aleena J.</h6>
+									<p class="p-sm" style="font-size:15px;">Enrollment Manager</p>
+									<p class="p-sm mt-2" style="font-size:15px;">State University of New York</p>
+								</div>
 
-                                                        </div> <!-- End Author -->
+							</div> <!-- End Author -->
 
-                                                </div> <!-- End Text -->
+						</div> <!-- End Text -->
 
-                                        </div> <!-- END TESTIMONIAL #7 -->
+					</div> <!-- END TESTIMONIAL #7 -->
 
 
-                                        <!-- TESTIMONIAL #8 -->
-                                        <div class="review-1 bg--white-100 block-shadow r-08">
+					<!-- TESTIMONIAL #8 -->
+					<div class="review-1 bg--white-100 block-shadow r-08">
 
-                                                <!-- Quote Icon -->
-                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+						<!-- Quote Icon -->
+						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-                                                <!-- Text -->
-                                                <div class="review-txt">
+						<!-- Text -->
+						<div class="review-txt">
 
-                                                        <!-- Text -->
-                                                        <p>“It offers an end-to-end solution, is user-friendly with single-click awarding, enables students to share badges on LinkedIn, provides branding options, and has excellent customer support and training.”
-                                                        </p>
+							<!-- Text -->
+							<p>“It offers an end-to-end solution, is user-friendly with single-click awarding, enables students to share badges on LinkedIn, provides branding options, and has excellent customer support and training.”
+							</p>
 
-                                                        <!-- Author -->
-                                                        <div class="author-data clearfix">
+							<!-- Author -->
+							<div class="author-data clearfix">
 
-                                                                <!-- Avatar -->
-                                                                <div class="review-avatar">
-                                                                        <img src="/assets4/images/Images Webp/Sharon.webp" alt="Sharon D., Academic Coordinator, University of Texas" loading="lazy">
-                                                                </div>
+								<!-- Avatar -->
+								<div class="review-avatar">
+									<img src="/assets4/images/Images Webp/Sharon.webp" alt="Sharon D., Academic Coordinator, University of Texas" loading="lazy">
+								</div>
 
-                                                                <!-- Data -->
-                                                                <div class="review-author">
-                                                                        <h6 class="s-16 w-700">Sharon D.</h6>
-                                                                        <p class="p-sm" style="font-size:15px;">Academic Coordinator</p>
-                                                                        <p class="p-sm mt-2" style="font-size:15px;">University of Texas</p>
-                                                                </div>
+								<!-- Data -->
+								<div class="review-author">
+									<h6 class="s-16 w-700">Sharon D.</h6>
+									<p class="p-sm" style="font-size:15px;">Academic Coordinator</p>
+									<p class="p-sm mt-2" style="font-size:15px;">University of Texas</p>
+								</div>
 
-                                                        </div> <!-- End Author -->
+							</div> <!-- End Author -->
 
-                                                </div> <!-- End Text -->
+						</div> <!-- End Text -->
 
-                                        </div> <!-- END TESTIMONIAL #8 -->
+					</div> <!-- END TESTIMONIAL #8 -->
 
 
-                                </div>
-                        </div>
-                </div> <!-- END TESTIMONIALS CONTENT -->
+				</div>
+			</div>
+		</div> <!-- END TESTIMONIALS CONTENT -->
 
 
-        </div> <!-- End container -->
+	</div> <!-- End container -->
 </section> <!-- END TESTIMONIALS-1 -->
 
         <!-- BLOG-1
-                        ============================================= -->
+			============================================= -->
 <section id="blog-1" class="py-100 blog-section division" style="margin-bottom: -50px;">
     <div class="container">
 
@@ -2832,7 +2920,7 @@
 </section> <!-- END BLOG-1 -->
 
                 <!-- BANNER-13
-                        ============================================= -->
+			============================================= -->
 <section id="banner-13" class="pt-100 banner-section">
     <div class="container">
         <!-- BANNER-13 WRAPPER -->
