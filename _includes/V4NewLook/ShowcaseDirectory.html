@@ -4,18 +4,19 @@
   <div class="container">
     <div class="row d-flex align-items-center">
 
-      <!-- ── LEFT: REAL SCREENSHOT ─────────────────────── -->
+      <!-- ── LEFT: COMPOSITE SCREENSHOT ──────────────────── -->
       <div class="col-md-7 order-first order-md-1">
         <div class="sd-shot-wrap wow fadeInLeft">
 
-          <!-- Floating stat pills above the frame -->
           <div class="sd-float-pill sd-pill-top">
             <span class="sd-pill-dot" style="background:#16a34a;"></span>
             <strong>312</strong>&nbsp;Verified Learners
           </div>
 
-          <!-- Browser chrome + screenshot -->
+          <!-- Browser shell -->
           <div class="sd-real-shell">
+
+            <!-- Chrome bar -->
             <div class="sd-real-chrome">
               <span class="sd-dot" style="background:#ff5f57;"></span>
               <span class="sd-dot" style="background:#febc2e;"></span>
@@ -25,15 +26,104 @@
                 verify.apac.certifyme.org/showcase/university-of-british-columbia
               </div>
             </div>
-            <div class="sd-real-viewport">
-              <img src="/assets4/images/showcase-directory-real.png"
-                   alt="CertifyMe Showcase Directory — University of British Columbia"
-                   loading="lazy"
-                   class="sd-real-img" />
-            </div>
-          </div>
 
-          <!-- Floating pill bottom-right -->
+            <!-- Real institution header screenshot -->
+            <img src="/assets4/images/showcase-header-crop.png"
+                 alt="CertifyMe Showcase Directory — University of British Columbia institution profile"
+                 loading="lazy"
+                 style="width:100%; display:block; border-bottom: 1px solid #e8edf5;" />
+
+            <!-- Search bar strip — matching real UI -->
+            <div style="background:#f8fafc; padding: 12px 16px; border-bottom: 1px solid #e8edf5; display:flex; align-items:center; gap:10px;">
+              <div style="flex:1; background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:8px 12px; font-size:12px; color:#94a3b8; display:flex; align-items:center; gap:8px;">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                Search by name, credential or skill…
+              </div>
+              <div style="font-size:11.5px; color:#6366f1; font-weight:600; white-space:nowrap; display:flex; align-items:center; gap:5px;">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M22 12h-4M6 12H2M12 6V2M12 22v-4"/></svg>
+                Clear Filters
+              </div>
+            </div>
+
+            <!-- Learner cards grid — faithful to real design -->
+            <div style="background:#f8fafc; padding:14px 16px 6px;">
+              <div style="font-size:11.5px; color:#64748b; margin-bottom:12px; display:flex; justify-content:space-between; align-items:center;">
+                <span>Showing <strong style="color:#0f172a;">24 learners</strong></span>
+                <span style="display:flex; align-items:center; gap:5px; font-size:11px; color:#64748b;">
+                  Sort by:
+                  <span style="color:#0f172a; font-weight:600;">Recently Added</span>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+                </span>
+              </div>
+
+              <div class="sd-learner-grid">
+
+                <div class="sd-lcard">
+                  <div class="sd-lavatar" style="background:linear-gradient(135deg,#6366f1,#8b5cf6);">MJ</div>
+                  <div class="sd-linfo">
+                    <div class="sd-lname">Michael J.</div>
+                    <div class="sd-lcred">MSc Data Science</div>
+                    <div class="sd-lver"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Verified</div>
+                  </div>
+                </div>
+
+                <div class="sd-lcard">
+                  <div class="sd-lavatar" style="background:linear-gradient(135deg,#0ea5e9,#6366f1);">SR</div>
+                  <div class="sd-linfo">
+                    <div class="sd-lname">Sofia R.</div>
+                    <div class="sd-lcred">AI &amp; Machine Learning</div>
+                    <div class="sd-lver"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Verified</div>
+                  </div>
+                </div>
+
+                <div class="sd-lcard">
+                  <div class="sd-lavatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444);">AL</div>
+                  <div class="sd-linfo">
+                    <div class="sd-lname">Aisha L.</div>
+                    <div class="sd-lcred">Sustainability Leadership</div>
+                    <div class="sd-lver"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Verified</div>
+                  </div>
+                </div>
+
+                <div class="sd-lcard">
+                  <div class="sd-lavatar" style="background:linear-gradient(135deg,#10b981,#0ea5e9);">KP</div>
+                  <div class="sd-linfo">
+                    <div class="sd-lname">Kenji P.</div>
+                    <div class="sd-lcred">Blockchain Essentials</div>
+                    <div class="sd-lver"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Verified</div>
+                  </div>
+                </div>
+
+                <div class="sd-lcard">
+                  <div class="sd-lavatar" style="background:linear-gradient(135deg,#ec4899,#8b5cf6);">NW</div>
+                  <div class="sd-linfo">
+                    <div class="sd-lname">Nadia W.</div>
+                    <div class="sd-lcred">Project Management</div>
+                    <div class="sd-lver"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Verified</div>
+                  </div>
+                </div>
+
+                <div class="sd-lcard">
+                  <div class="sd-lavatar" style="background:linear-gradient(135deg,#282b75,#6366f1);">TK</div>
+                  <div class="sd-linfo">
+                    <div class="sd-lname">Tom K.</div>
+                    <div class="sd-lcred">Digital Marketing</div>
+                    <div class="sd-lver"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Verified</div>
+                  </div>
+                </div>
+
+              </div><!-- end grid -->
+
+              <!-- Bottom fade + "view more" -->
+              <div class="sd-grid-fade">
+                <a href="https://verify.apac.certifyme.org/showcase/university-of-british-columbia" target="_blank" rel="noopener noreferrer" class="sd-view-more-btn">
+                  View all 312 profiles →
+                </a>
+              </div>
+
+            </div><!-- end learner section -->
+          </div><!-- end sd-real-shell -->
+
           <div class="sd-float-pill sd-pill-bottom">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             W3C Verified Credentials
@@ -110,129 +200,38 @@
 
 
 <style>
-/* ── Showcase Directory ────────────────────────────────── */
-.sd-eyebrow {
-  display: inline-block;
-  font-size: 11.5px; font-weight: 800;
-  letter-spacing: 1.8px; text-transform: uppercase;
-  color: #6366f1;
-  background: rgba(99,102,241,.09);
-  padding: 5px 14px; border-radius: 50px;
-  border: 1px solid rgba(99,102,241,.18);
-}
-
-/* Screenshot wrapper */
-.sd-shot-wrap {
-  position: relative;
-  padding: 24px 8px 32px 0;
-}
-
-/* Floating stat pills */
-.sd-float-pill {
-  position: absolute;
-  display: inline-flex; align-items: center; gap: 7px;
-  background: #fff;
-  border: 1px solid rgba(40,43,117,.12);
-  border-radius: 50px;
-  padding: 7px 16px;
-  font-size: 13px; font-weight: 600; color: #1e293b;
-  box-shadow: 0 4px 20px rgba(40,43,117,.12);
-  z-index: 2;
-  white-space: nowrap;
-}
-.sd-pill-dot {
-  width: 8px; height: 8px;
-  border-radius: 50%; display: inline-block; flex-shrink: 0;
-}
-.sd-pill-top  { top: 4px;   left: -10px; }
-.sd-pill-bottom { bottom: 8px; right: 12px; }
-
-/* Browser shell */
-.sd-real-shell {
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow:
-    0 0 0 1px rgba(40,43,117,.09),
-    0 8px 24px rgba(40,43,117,.10),
-    0 32px 80px rgba(40,43,117,.18);
-  background: #fff;
-  transform: perspective(1200px) rotateY(-3deg) rotateX(1.5deg);
-  transition: transform .4s ease;
-}
-.sd-real-shell:hover {
-  transform: perspective(1200px) rotateY(0deg) rotateX(0deg);
-}
-.sd-real-chrome {
-  background: #f1f3f9;
-  border-bottom: 1px solid #e2e6f0;
-  padding: 10px 14px;
-  display: flex; align-items: center; gap: 7px;
-}
-.sd-dot {
-  width: 10px; height: 10px;
-  border-radius: 50%; display: inline-block; flex-shrink: 0;
-}
-.sd-real-url {
-  flex: 1;
-  background: #fff;
-  border: 1px solid #dde1ec;
-  border-radius: 6px;
-  padding: 5px 10px;
-  font-size: 10.5px; color: #64748b;
-  display: flex; align-items: center; gap: 6px;
-  margin-left: 6px;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-}
-.sd-real-viewport {
-  overflow: hidden;
-  max-height: 420px;
-}
-.sd-real-img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: top;
-}
-
+.sd-eyebrow{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;color:#6366f1;background:rgba(99,102,241,.09);padding:5px 14px;border-radius:50px;border:1px solid rgba(99,102,241,.18);}
+.sd-shot-wrap{position:relative;padding:28px 8px 36px 0;}
+.sd-float-pill{position:absolute;display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid rgba(40,43,117,.12);border-radius:50px;padding:7px 16px;font-size:13px;font-weight:600;color:#1e293b;box-shadow:0 4px 20px rgba(40,43,117,.12);z-index:2;white-space:nowrap;}
+.sd-pill-dot{width:8px;height:8px;border-radius:50%;display:inline-block;flex-shrink:0;}
+.sd-pill-top{top:4px;left:-4px;}
+.sd-pill-bottom{bottom:10px;right:12px;}
+.sd-real-shell{border-radius:14px;overflow:hidden;box-shadow:0 0 0 1px rgba(40,43,117,.09),0 8px 24px rgba(40,43,117,.10),0 32px 80px rgba(40,43,117,.18);background:#fff;transform:perspective(1200px) rotateY(-3deg) rotateX(1.5deg);transition:transform .4s ease;}
+.sd-real-shell:hover{transform:perspective(1200px) rotateY(0deg) rotateX(0deg);}
+.sd-real-chrome{background:#f1f3f9;border-bottom:1px solid #e2e6f0;padding:10px 14px;display:flex;align-items:center;gap:7px;}
+.sd-dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0;}
+.sd-real-url{flex:1;background:#fff;border:1px solid #dde1ec;border-radius:6px;padding:5px 10px;font-size:10.5px;color:#64748b;display:flex;align-items:center;gap:6px;margin-left:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+/* Learner grid */
+.sd-learner-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:0;}
+.sd-lcard{display:flex;align-items:center;gap:9px;background:#fff;border:1px solid #e8edf5;border-radius:10px;padding:10px 11px;transition:box-shadow .18s,border-color .18s;}
+.sd-lcard:hover{box-shadow:0 3px 14px rgba(40,43,117,.10);border-color:rgba(99,102,241,.28);}
+.sd-lavatar{width:34px;height:34px;border-radius:50%;color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;letter-spacing:.3px;}
+.sd-linfo{min-width:0;}
+.sd-lname{font-size:11.5px;font-weight:700;color:#0f172a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.sd-lcred{font-size:10px;color:#64748b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px;}
+.sd-lver{font-size:9.5px;font-weight:600;color:#16a34a;margin-top:3px;display:flex;align-items:center;gap:3px;}
+/* Grid fade + cta */
+.sd-grid-fade{position:relative;text-align:center;padding:16px 0 10px;background:linear-gradient(to bottom,rgba(248,250,252,0) 0%,#f8fafc 60%);}
+.sd-view-more-btn{display:inline-block;font-size:12px;font-weight:700;color:#6366f1;background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.2);border-radius:50px;padding:6px 18px;text-decoration:none;transition:all .2s;}
+.sd-view-more-btn:hover{background:rgba(99,102,241,.16);color:#4f46e5;}
 /* Feature list */
-.sd-feature-list {
-  list-style: none; padding: 0;
-  margin: 0 0 32px;
-  display: flex; flex-direction: column; gap: 20px;
-}
-.sd-feature-list li {
-  display: flex; align-items: flex-start; gap: 14px;
-  font-size: 14.5px; color: #555; line-height: 1.55;
-}
-.sd-feat-ico {
-  width: 34px; height: 34px; flex-shrink: 0;
-  border-radius: 9px;
-  background: rgba(99,102,241,.09);
-  border: 1px solid rgba(99,102,241,.15);
-  display: flex; align-items: center; justify-content: center;
-  margin-top: 1px;
-}
-.sd-feature-list strong {
-  color: #1e293b; display: block;
-  font-size: 15px; margin-bottom: 3px;
-}
-.sd-feature-list span { color: #64748b; font-size: 13.5px; }
-
-/* CTAs */
-.sd-ctas {
-  display: flex; align-items: center;
-  gap: 28px; flex-wrap: wrap;
-}
-
+.sd-feature-list{list-style:none;padding:0;margin:0 0 32px;display:flex;flex-direction:column;gap:20px;}
+.sd-feature-list li{display:flex;align-items:flex-start;gap:14px;font-size:14.5px;color:#555;line-height:1.55;}
+.sd-feat-ico{width:34px;height:34px;flex-shrink:0;border-radius:9px;background:rgba(99,102,241,.09);border:1px solid rgba(99,102,241,.15);display:flex;align-items:center;justify-content:center;margin-top:1px;}
+.sd-feature-list strong{color:#1e293b;display:block;font-size:15px;margin-bottom:3px;}
+.sd-feature-list span{color:#64748b;font-size:13.5px;}
+.sd-ctas{display:flex;align-items:center;gap:28px;flex-wrap:wrap;}
 /* Responsive */
-@media (max-width: 991px) {
-  .sd-real-shell { transform: none; margin-bottom: 50px; }
-  .txt-block.right-column { padding-left: 0 !important; }
-  .sd-pill-top { left: 0; }
-}
-@media (max-width: 575px) {
-  .sd-real-url { display: none; }
-  .sd-ctas { flex-direction: column; align-items: flex-start; gap: 16px; }
-  .sd-float-pill { display: none; }
-}
+@media(max-width:991px){.sd-real-shell{transform:none;margin-bottom:50px;}.txt-block.right-column{padding-left:0!important;}.sd-learner-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:575px){.sd-real-url{display:none;}.sd-ctas{flex-direction:column;align-items:flex-start;gap:16px;}.sd-float-pill{display:none;}.sd-learner-grid{grid-template-columns:1fr 1fr;}}
 </style>
