@@ -1,1 +1,1 @@
-- [CertifyMe SEO audit](certifyme-seo-audit.md) — full technical SEO/GEO/a11y audit implemented across all V4 layouts; key patterns for future edits.
+- [CertifyMe SEO Audit Completion](certifyme-seo-audit.md) — full audit roadmap (Critical/High/Medium) now complete; one item left is M6 (10 blog articles, pure content work).

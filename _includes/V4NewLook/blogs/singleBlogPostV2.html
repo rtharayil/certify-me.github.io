@@ -636,11 +636,12 @@ so the section is never empty.
                                     {% endif %}
 
                                     <!-- Author -->
+                                    {% assign post_author = page.author | default: "CertifyMe Team" %}
+                                    {% assign author_slug = post_author | downcase | replace: " ", "-" %}
                                     <div class="blog-author-row">
-                                        <img src="/assets4/images/aneesha.jpeg" alt="Aneesha Kurian" class="blog-author-avatar">
                                         <div>
-                                            <span class="blog-author-name">Aneesha Kurian</span>
-                                            <span class="blog-author-role">Software Engineer</span>
+                                            <a href="/authors/{{ author_slug }}" class="blog-author-name" style="text-decoration:none;">{{ post_author }}</a>
+                                            <span class="blog-author-role">CertifyMe</span>
                                         </div>
                                     </div>
 

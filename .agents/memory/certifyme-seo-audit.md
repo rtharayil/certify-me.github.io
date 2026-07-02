@@ -1,47 +1,37 @@
 ---
-name: CertifyMe SEO/GEO Audit
-description: Technical SEO, AI Search, accessibility, and performance fixes applied to CertifyMe.online Jekyll site.
+name: CertifyMe SEO/GEO Audit Roadmap
+description: Status of the SEO/GEO audit from attached_assets/CertifyMe-SEO-GEO-Audit-2026.md — what is done, what is left, and key architectural notes.
 ---
 
-## Key decisions & patterns
+## Audit reference
+`attached_assets/CertifyMe-SEO-GEO-Audit-2026.md`
 
-**Layout structure:**
-- Modern pages use `_includes/V4NewLook/head.html` (all V4 layouts except blogs/integrations)
-- Blog posts: `_includes/V4NewLook/blogs/head.html`
-- Integration pages: `_includes/V4NewLook/integrations/head.html`
-- `heroSection.html` opens `<main id="main-content">` — `V4Layout.html` closes it before footer
-- All other V4 layouts open/close `<main>` directly around content
+## Status (as of July 2026)
+All Critical and High items are done. All Medium items except M6 are done.
 
-**Why:** Jekyll has no template inheritance blocks, so `<main>` must be in each layout or include individually.
+### Critical (C1-C6) — ALL DONE
+C1 CTAs, C2 404/sitemap, C3 EPTemplate noindex+sitemap:false, C4 Two H1s, C5 Contradicting claims (#1→#2, 4.8→4.9 throughout), C6 Blog slug spaces (permalink: added to spaced filenames).
 
-**Canonical/URL convention:**
-- `_config.yml url: "https://www.certifyme.online"` (set — was empty before)
-- All canonical tags use `https://www.certifyme.online{{ page.url }}`
-- Sitemap and robots.txt reference www.certifyme.online
+### High (H1-H10) — ALL DONE
+H1 .htaccess 301 redirects, H2 sitemap clean URLs, H3 FAQPage JSON-LD (homepage + FAQ variants), H4 BreadcrumbList dynamic 2-item breadcrumb on inner pages (head.html), H5 404.md description, H6 H1s on all pages (25 includes fixed — all hero/content includes changed from h2/h3 to h1), H7 stat numbers h2→span, H8 API banner merged H2, H10 hero fetchpriority already done.
 
-**Structured data applied:**
-- head.html: Organization + WebSite + SoftwareApplication + WebPage @graph
-- blogs/head.html: + BlogPosting schema
-- integrations/head.html: + HowTo schema
-- V4Layout.html body: SoftwareApplication with Review array
-- V4LayoutFAQ.html body: FAQPage schema with 7 Q&As
+### Medium (M1-M10)
+- M1 BlogPosting schema ✅ (already in _includes/V4NewLook/blogs/head.html)
+- M2 SoftwareApplication+Offer schema added to _layouts/V4Layoutpricing.html ✅
+- M3 /micro-credentials landing page ✅
+- M4 /certificate-verification landing page ✅
+- M5 /skills-passport landing page ✅
+- M6 10 Tier 1 blog articles — **NOT done** (pure content writing, no code)
+- M7 Author bio pages + dynamic author in blog template ✅ (authors/mrunal-upadhye.md, authors/aneesha-kurian.md)
+- M8 sameAs Organization schema ✅ (was already present)
+- M9 /press page ✅
+- M10 /gdpr compliance page ✅
 
-**AI crawl files:**
-- `llms.txt` + `llms-full.txt` created per llmstxt.org spec
-- `robots.txt` explicitly allows GPTBot, ChatGPT-User, Google-Extended, PerplexityBot, anthropic-ai, ClaudeBot, etc.
-- `.well-known/security.txt` created
-
-**Image performance:**
-- Hero image: `loading="eager" fetchpriority="high"`
-- All other images: `loading="lazy"` added via Ruby scripts
-- Client logos in hero: lazy; nav logos: eager
-
-**Accessibility:**
-- Skip-to-main link in V4Layout.html body (CSS-only, keyboard visible)
-- `<nav>` gets `role="banner"` on header, `aria-label` on nav element
-- Footer uses `<address>` instead of `<p href="">` (was invalid HTML)
-- Social links get descriptive `aria-label`
-- All `target="_blank"` links get `rel="noopener noreferrer"`
-
-**Google Fonts:**
-- 4 separate requests consolidated into 1 combined URL with `display=swap`
+## Key architectural notes
+- **Source-only rule**: Never edit _site/ directly — rebuilt from source on every Jekyll build.
+- **Layout pattern**: Layouts call includes, H1s live in the includes (not layouts). Key includes: InnerPages/hero.html, InnerPages2.0/hero.html, heroSection.html, alternatives/heroSection.html, case_studies/hero.html, about/aboutCertifyMe.html, PrivacyPolicy.html, QandA/FAQ.html, QandA/FAQ-3.html, pricing/PricingPlan.html, etc.
+- **Blog head**: _includes/V4NewLook/blogs/head.html (separate from main head.html) — has BlogPosting schema.
+- **New layout**: _layouts/V4LayoutContent.html created — renders {{ content }}, used for GDPR/press/author pages.
+- **Blog author**: singleBlogPostV2.html now uses dynamic `page.author` (was hardcoded to Aneesha Kurian). Author slug maps to /authors/<slug>.
+- **Palette/brand**: lavender/indigo #282B75, Manrope headings, Inter body, single CTA "Request a Demo".
+- **Factual claims (canonical)**: G2 rank #2, rating 4.9/5, Capterra 5/5, TrustRadius 9/10, 500+ institutions, 1M+ credentials, 144+ countries.
