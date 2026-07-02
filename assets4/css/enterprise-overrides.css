@@ -239,7 +239,7 @@ h2.statistic-number {
   content: 'Trusted by world-class institutions';
   display: block;
   text-align: center;
-  font-size: 11.5px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -253,11 +253,11 @@ h2.statistic-number {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 40px !important;
+  gap: 56px !important;
   flex-wrap: wrap !important;
 }
 .logo-list li img {
-  height: 34px !important;
+  height: 48px !important;
   width: auto !important;
   object-fit: contain !important;
   filter: grayscale(75%) opacity(.65) !important;
@@ -556,10 +556,10 @@ h2.statistic-number {
     font-size: 2.25rem !important;
   }
   .logo-list {
-    gap: 24px !important;
+    gap: 34px !important;
   }
   .logo-list li img {
-    height: 28px !important;
+    height: 39px !important;
   }
   .section-title h2::before {
     left: 0;
