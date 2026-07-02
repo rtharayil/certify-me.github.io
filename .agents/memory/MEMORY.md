@@ -1,1 +1,1 @@
-- [CertifyMe SEO Audit Completion](certifyme-seo-audit.md) — full audit roadmap (Critical/High/Medium) now complete; one item left is M6 (10 blog articles, pure content work).
+- [CertifyMe H1 audit](certifyme-h1-audit.md) — strip HTML comments before auditing H1s; maps every include to its H1 element; known remaining issues catalogued.
