@@ -1,4 +1,6 @@
 ---
+sitemap: false
+robots: "noindex, nofollow"
 layout: EpTemplates2/Projects
 title: "Healthcare Management System"
 

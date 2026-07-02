@@ -1,4 +1,6 @@
 ---
+sitemap: false
+robots: "noindex, nofollow"
 layout: EPTemplates/Projects
 title: "Project Management Dashboard"
 

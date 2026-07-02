@@ -1,4 +1,5 @@
 ---
+robots: "noindex, nofollow"
 layout: EPTemplates/Experince
 sitemap: false
 

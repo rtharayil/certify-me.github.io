@@ -1,4 +1,6 @@
 ---
+sitemap: false
+robots: "noindex, nofollow"
 layout: EPTemplates/EPModernLayout
 title: "Aisha Banu - UI/UX Developer Portfolio"
 description: "UI/UX Developer and Designer specializing in frontend development, feature enhancement, and user-centered design solutions"
