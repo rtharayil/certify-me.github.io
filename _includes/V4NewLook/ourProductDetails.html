@@ -200,8 +200,8 @@
               <span class="cbox-2-line"></span>
             </div>
             <div class="cbox-2-txt">
-              <h5 class="s-22 w-700" onclick="opd_switch(2)">Automated Credential Operations</h5>
-              <p id="content2" style="display:none;text-align:justify;">Issue thousands of credentials in minutes. Bulk CSV upload, automated email delivery, and real-time status tracking — zero manual effort.</p>
+              <h5 class="s-22 w-700" onclick="opd_switch(2)">Structured Learning Paths</h5>
+              <p id="content2" style="display:none;text-align:justify;">Chain credentials into guided progression tracks. Learners see exactly what to complete next — and institutions see completion rates climb.</p>
             </div>
           </div>
 
@@ -319,53 +319,65 @@
               </div>
             </div>
 
-            <!-- ── 2: Bulk Issuance ── -->
+            <!-- ── 2: Learning Paths ── -->
             <div class="opd-panel" id="opd2">
-              <div class="opd-eyebrow">Automated Credential Operations</div>
-              <div class="opd-upload-zone">
-                <div class="opd-upload-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              <div class="opd-eyebrow">Structured Learning Paths</div>
+              <!-- Path header -->
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+                <div>
+                  <div style="font-size:13px;font-weight:700;color:#1e293b;">Data Science Professional Track</div>
+                  <div style="font-size:11px;color:#94a3b8;margin-top:2px;">4 credentials · Est. 6 months</div>
                 </div>
-                <div class="opd-upload-filename">recipients_batch_47.csv</div>
-                <div class="opd-upload-meta">1,000 recipients · Uploaded 2 min ago</div>
+                <div style="font-size:11px;font-weight:700;color:#4f46e5;background:#eef2ff;border-radius:20px;padding:3px 10px;">75% Complete</div>
               </div>
-              <div class="opd-batch-row">
-                <div class="opd-batch-cell">
-                  <div class="opd-batch-val">1,000</div>
-                  <div class="opd-batch-lbl">Recipients</div>
-                </div>
-                <div class="opd-batch-cell">
-                  <div class="opd-batch-val" style="color:#16a34a;">847</div>
-                  <div class="opd-batch-lbl">Issued</div>
-                </div>
-                <div class="opd-batch-cell">
-                  <div class="opd-batch-val" style="color:#d97706;">153</div>
-                  <div class="opd-batch-lbl">Processing</div>
-                </div>
-                <div class="opd-batch-cell">
-                  <div class="opd-batch-val" style="color:#64748b;">0</div>
-                  <div class="opd-batch-lbl">Failed</div>
-                </div>
+              <!-- Progress bar -->
+              <div style="background:#e2e8f0;border-radius:99px;height:6px;margin-bottom:18px;">
+                <div style="width:75%;height:6px;border-radius:99px;background:linear-gradient(90deg,#4f46e5,#818cf8);"></div>
               </div>
-              <div class="opd-prog-label">
-                <span style="font-weight:600;color:#374151;">Issuing credentials…</span>
-                <span style="font-weight:700;color:#4f46e5;">847 / 1,000</span>
-              </div>
-              <div class="opd-prog-track">
-                <div class="opd-prog-fill" style="width:84.7%;"></div>
-              </div>
-              <div class="opd-checks">
-                <div class="opd-check">
-                  <div class="opd-check-circle"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-                  Personalised emails sent automatically
+              <!-- Steps -->
+              <div style="display:flex;flex-direction:column;gap:9px;">
+                <!-- Step 1 – done -->
+                <div style="display:flex;align-items:center;gap:10px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:9px;padding:9px 12px;">
+                  <div style="width:22px;height:22px;border-radius:50%;background:#16a34a;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                    <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div style="flex:1;min-width:0;">
+                    <div style="font-size:12px;font-weight:600;color:#15803d;">Python for Data Analysis</div>
+                    <div style="font-size:10px;color:#86efac;">Completed · Badge issued</div>
+                  </div>
+                  <div style="font-size:10px;color:#16a34a;font-weight:700;">✓</div>
                 </div>
-                <div class="opd-check">
-                  <div class="opd-check-circle"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-                  Analytics tracking activated per recipient
+                <!-- Step 2 – done -->
+                <div style="display:flex;align-items:center;gap:10px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:9px;padding:9px 12px;">
+                  <div style="width:22px;height:22px;border-radius:50%;background:#16a34a;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                    <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div style="flex:1;min-width:0;">
+                    <div style="font-size:12px;font-weight:600;color:#15803d;">Machine Learning Foundations</div>
+                    <div style="font-size:10px;color:#86efac;">Completed · Badge issued</div>
+                  </div>
+                  <div style="font-size:10px;color:#16a34a;font-weight:700;">✓</div>
                 </div>
-                <div class="opd-check">
-                  <div class="opd-check-circle"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-                  Learner wallets created &amp; populated
+                <!-- Step 3 – in progress -->
+                <div style="display:flex;align-items:center;gap:10px;background:#eef2ff;border:1.5px solid #818cf8;border-radius:9px;padding:9px 12px;">
+                  <div style="width:22px;height:22px;border-radius:50%;background:#4f46e5;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                    <div style="width:7px;height:7px;border-radius:50%;background:#fff;"></div>
+                  </div>
+                  <div style="flex:1;min-width:0;">
+                    <div style="font-size:12px;font-weight:700;color:#4f46e5;">Deep Learning &amp; Neural Networks</div>
+                    <div style="font-size:10px;color:#818cf8;">In progress · 60% done</div>
+                  </div>
+                  <div style="font-size:10px;color:#4f46e5;font-weight:700;background:#c7d2fe;border-radius:5px;padding:2px 6px;">Current</div>
+                </div>
+                <!-- Step 4 – locked -->
+                <div style="display:flex;align-items:center;gap:10px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:9px;padding:9px 12px;opacity:.6;">
+                  <div style="width:22px;height:22px;border-radius:50%;background:#e2e8f0;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  </div>
+                  <div style="flex:1;min-width:0;">
+                    <div style="font-size:12px;font-weight:600;color:#94a3b8;">Capstone: Applied Data Science</div>
+                    <div style="font-size:10px;color:#cbd5e1;">Unlocks after step 3</div>
+                  </div>
                 </div>
               </div>
             </div>
