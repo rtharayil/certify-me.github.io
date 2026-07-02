@@ -12,7 +12,7 @@ sitemap:
   {% for page in site.pages %}
     {% unless page.sitemap.exclude == "yes" or page.name == "feed.xml" or page.url contains 'css' or page.url contains 'assets' or page.url contains 'EPTemplates' or page.url == '/404.html' or page.layout == 'redirected' %}
     <url>
-      <loc>https://www.certifyme.online{{ page.url | remove: "index.html" }}</loc>
+      <loc>https://www.certifyme.online{{ page.url | remove: "index.html" | remove: ".html" }}</loc>
       {% if page.sitemap.lastmod %}
         <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
       {% elsif page.date %}
@@ -37,7 +37,7 @@ sitemap:
   {% for page in site.blog %}
     {% unless page.sitemap.exclude == "yes" or page.name == "feed.xml" or page.url contains 'css' or page.url contains 'assets' %}
     <url>
-      <loc>https://www.certifyme.online{{ page.url | remove: "index.html" }}</loc>
+      <loc>https://www.certifyme.online{{ page.url | remove: "index.html" | remove: ".html" }}</loc>
       {% if page.sitemap.lastmod %}
         <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
       {% elsif page.date %}
@@ -61,7 +61,7 @@ sitemap:
 
   {% for page in site.integrations %}
     <url>
-      <loc>https://www.certifyme.online{{ page.url }}</loc>
+      <loc>https://www.certifyme.online{{ page.url | remove: ".html" }}</loc>
       {% if page.sitemap.lastmod %}
         <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
       {% elsif page.date %}
@@ -84,7 +84,7 @@ sitemap:
 
   {% for page in site.awards %}
     <url>
-      <loc>https://www.certifyme.online{{ page.url }}</loc>
+      <loc>https://www.certifyme.online{{ page.url | remove: ".html" }}</loc>
       {% if page.sitemap.lastmod %}
         <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
       {% elsif page.date %}
