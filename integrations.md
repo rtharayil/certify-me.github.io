@@ -1,7 +1,7 @@
 ---
 title: "Integrate digital credentials with LMS Platforms"
 
-description: ""
+description: "CertifyMe integrates with 150+ LMS platforms, HR tools, and webinar apps. Automate digital certificate and badge delivery in under 2 minutes — no coding needed."
 
 layout: V4LayoutInnerpages
 
