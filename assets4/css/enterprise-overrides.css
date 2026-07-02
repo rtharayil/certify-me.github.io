@@ -526,14 +526,9 @@ h2.statistic-number {
     font-size: 2.25rem !important;
     letter-spacing: -.7px !important;
   }
-  #statistic-1 h2.statistic-number {
-    font-size: 2.6rem !important;
-  }
-  #statistic-1 .statistic-1-wrapper .row > .col + .col {
-    border-left: none !important;
-    border-top: 1px solid rgba(255,255,255,.12) !important;
-    padding-top: 24px !important;
-    margin-top: 24px !important;
+  /* Stats stay 3-col side-by-side at tablet (row-cols-md-3) — keep left border dividers */
+  #statistic-1 .statistic-number {
+    font-size: 2.2rem !important;
   }
 }
 
