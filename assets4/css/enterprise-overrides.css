@@ -580,4 +580,48 @@ h2.statistic-number {
   .hero-7-txt p {
     text-align: left !important;
   }
+
+  /* ── IMAGE TOO BIG / STRETCHED ── */
+  /* Hero image: cap height so it doesn't dominate the screen */
+  .hero-7-img img {
+    max-height: 280px !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  /* Content-section img-block images (G2, etc.) */
+  .img-block img.img-fluid {
+    max-height: 300px !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+  }
+
+  /* ── BROWSER MOCKUP HEIGHT CAPS (Showcase + LearnerWallet) ── */
+  .sd-shot-wrap,
+  .lw-shot-wrap {
+    max-height: 380px !important;
+    overflow: hidden !important;
+  }
+  /* Ensure the inner browser shells don't overflow horizontally */
+  .sd-real-shell,
+  .lw-browser-shell {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* ── SECTION PADDING: reduce pt-100 on mobile ── */
+  .pt-100 {
+    padding-top: 60px !important;
+  }
+  .pb-100 {
+    padding-bottom: 60px !important;
+  }
+
+  /* ── STACKING: ensure text col always readable below mockup ── */
+  .txt-block.right-column,
+  .txt-block.left-column {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 24px !important;
+  }
 }
