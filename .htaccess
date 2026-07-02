@@ -1,0 +1,19 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+# -------------------------------------------------------
+# 301-redirect .html URLs to clean URL equivalents (SEO)
+# Matches: GET /page.html  →  301 /page
+# Excludes 404.html (must remain a bare error page)
+# -------------------------------------------------------
+RewriteCond %{THE_REQUEST} \s/+((?:[^/]+/)*[^/.]+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,NE,L]
+
+# -------------------------------------------------------
+# Internally serve .html file for clean URL requests
+# so /page doesn't 404 after the redirect lands
+# -------------------------------------------------------
+RewriteCond %{REQUEST_FILENAME}       !-f
+RewriteCond %{REQUEST_FILENAME}       !-d
+RewriteCond %{REQUEST_FILENAME}.html  -f
+RewriteRule ^(.+?)/?$                 $1.html [L]
