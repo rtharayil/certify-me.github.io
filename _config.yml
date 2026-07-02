@@ -3,6 +3,7 @@ exclude:
   - .agents
   - vendor
   - node_modules
+  - artifacts
   - _archive
   - "*.sh"
   - Gemfile
