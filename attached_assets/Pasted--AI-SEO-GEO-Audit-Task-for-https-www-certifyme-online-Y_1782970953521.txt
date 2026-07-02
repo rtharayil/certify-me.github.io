@@ -1,0 +1,509 @@
+# AI SEO + GEO Audit Task for https://www.certifyme.online
+
+You are an expert Technical SEO Engineer, AI Search (GEO) consultant, and Web Performance Auditor.
+
+Your task is to perform a complete audit of https://www.certifyme.online as if you were:
+
+* Google Searchbot
+* Bingbot
+* ChatGPT Browser
+* Claude
+* Perplexity
+* Gemini
+* OpenAI's indexing systems
+* AI search engines that retrieve web content using llms.txt, structured data, semantic HTML, and entity extraction.
+
+Do NOT simply run a generic SEO audit.
+
+I want a developer-level report with actionable fixes.
+
+---
+
+## Phase 1 — Crawl the Website
+
+Crawl every public page.
+
+Generate:
+
+* Complete sitemap
+* Site hierarchy
+* Internal linking graph
+* Navigation depth
+* Orphan pages
+* Redirect chains
+* Broken links
+* Canonical URLs
+* Duplicate pages
+* URL structure analysis
+
+---
+
+## Phase 2 — Technical SEO
+
+Inspect every page for:
+
+Title tags
+
+Meta descriptions
+
+H1-H6 hierarchy
+
+Image alt text
+
+Canonical tags
+
+robots.txt
+
+XML sitemap
+
+OpenGraph tags
+
+Twitter Cards
+
+JSON-LD
+
+Schema.org implementation
+
+Breadcrumb schema
+
+Organization schema
+
+SoftwareApplication schema
+
+FAQ schema
+
+Review schema
+
+Product schema (if appropriate)
+
+Missing structured data
+
+Indexability issues
+
+Pagination
+
+Noindex tags
+
+Broken canonicals
+
+JavaScript rendering issues
+
+Lazy loading problems
+
+Core Web Vitals
+
+LCP
+
+CLS
+
+INP
+
+Page speed
+
+Unused CSS
+
+Unused JavaScript
+
+Render blocking resources
+
+Caching
+
+Compression
+
+HTTP headers
+
+Security headers
+
+Accessibility issues
+
+Mobile usability
+
+Generate severity scores for every issue.
+
+---
+
+## Phase 3 — Content SEO
+
+For every page determine:
+
+Primary keyword
+
+Secondary keywords
+
+Search intent
+
+Keyword cannibalization
+
+Thin content
+
+Duplicate content
+
+Missing semantic keywords
+
+Topic coverage
+
+Readability
+
+Content freshness
+
+Missing FAQs
+
+Internal linking opportunities
+
+Content gaps
+
+Pages competing against each other
+
+Recommend improved titles and meta descriptions.
+
+---
+
+## Phase 4 — AI Search (GEO)
+
+Pretend you are ChatGPT crawling this website.
+
+Determine:
+
+Can the company be understood in under 30 seconds?
+
+Can an LLM answer:
+
+"What is CertifyMe?"
+
+"What does CertifyMe do?"
+
+"Who is it for?"
+
+"What problems does it solve?"
+
+"What industries use it?"
+
+"What are its differentiators?"
+
+"What alternatives exist?"
+
+"What standards does it support?"
+
+Can the crawler clearly identify:
+
+Company
+
+Product
+
+Features
+
+Use cases
+
+Pricing
+
+Security
+
+Compliance
+
+Customers
+
+Case studies
+
+Testimonials
+
+Documentation
+
+API
+
+Support
+
+Knowledge base
+
+If not, explain exactly why.
+
+---
+
+## Phase 5 — AI Readiness
+
+Check whether the website includes:
+
+llms.txt
+
+llms-full.txt
+
+AI sitemap
+
+Structured semantic HTML
+
+JSON-LD entities
+
+Knowledge graph connections
+
+Clear entity relationships
+
+Machine-readable FAQs
+
+Author pages
+
+Organization identity
+
+Software identity
+
+Product identity
+
+Review identity
+
+API documentation
+
+Semantic navigation
+
+Heading hierarchy
+
+Entity consistency
+
+Detect anything preventing ChatGPT, Claude or Perplexity from accurately understanding the business.
+
+---
+
+## Phase 6 — Competitive SEO
+
+Compare CertifyMe against:
+
+Credly
+
+Accredible
+
+Certifier
+
+Canvas Credentials
+
+Badgr
+
+Identify:
+
+Missing content
+
+Missing landing pages
+
+Keyword gaps
+
+Feature comparison opportunities
+
+Industry pages
+
+Use case pages
+
+Comparison pages
+
+Location pages
+
+Programmatic SEO opportunities
+
+---
+
+## Phase 7 — E-E-A-T
+
+Evaluate:
+
+Experience
+
+Expertise
+
+Authority
+
+Trust
+
+Look for:
+
+Founder information
+
+Author pages
+
+Research
+
+Case studies
+
+Customer logos
+
+Testimonials
+
+External citations
+
+Awards
+
+Security certifications
+
+Compliance pages
+
+Trust badges
+
+Privacy
+
+Terms
+
+GDPR
+
+SOC2
+
+ISO
+
+Missing trust signals.
+
+---
+
+## Phase 8 — Conversion SEO
+
+Audit:
+
+Homepage
+
+Navigation
+
+CTA placement
+
+Forms
+
+Lead capture
+
+Trust sections
+
+Demo requests
+
+Free trial flow
+
+Pricing visibility
+
+Product screenshots
+
+Feature explanations
+
+Landing pages
+
+Conversion friction
+
+---
+
+## Phase 9 — AI Content Opportunities
+
+Generate at least 100 article ideas targeting:
+
+Digital Credentials
+
+Open Badges
+
+Verifiable Credentials
+
+Credential Wallets
+
+Blockchain Credentials
+
+Certificate Verification
+
+Education Technology
+
+LMS Integration
+
+Corporate Learning
+
+Skills Passport
+
+Digital Certificates
+
+Employee Certification
+
+Credential Fraud
+
+Micro Credentials
+
+Professional Certification
+
+Each idea should include:
+
+Target keyword
+
+Search volume estimate
+
+Difficulty estimate
+
+Search intent
+
+Recommended URL
+
+Outline
+
+Internal links
+
+Schema recommendations
+
+---
+
+## Phase 10 — Prioritized Fixes
+
+Produce a roadmap:
+
+Critical (do immediately)
+
+High Priority (this month)
+
+Medium Priority
+
+Low Priority
+
+Quick Wins
+
+Each recommendation must include:
+
+Expected SEO impact
+
+Expected AI search impact
+
+Estimated implementation effort
+
+Business impact
+
+Developer effort
+
+Priority score
+
+---
+
+## Final Deliverables
+
+Produce:
+
+1. Executive Summary
+
+2. Technical SEO Report
+
+3. AI Search Readiness Report
+
+4. GEO Optimization Report
+
+5. Structured Data Report
+
+6. Internal Linking Report
+
+7. Content Gap Analysis
+
+8. Competitor Gap Analysis
+
+9. Core Web Vitals Report
+
+10. Action Plan (prioritized)
+
+11. AI Prompt Optimization Suggestions
+
+12. Suggested llms.txt
+
+13. Suggested robots.txt improvements
+
+14. Suggested sitemap improvements
+
+15. Suggested Schema JSON-LD
+
+16. Suggested homepage improvements
+
+17. Suggested landing pages
+
+18. Suggested FAQ additions
+
+19. Suggested comparison pages
+
+20. Estimated impact on Google SEO and AI search visibility after implementing all recommendations.
+
+Output the report in well-structured Markdown with tables, code examples where appropriate, and concrete implementation recommendations.
