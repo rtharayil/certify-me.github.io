@@ -1,4 +1,5 @@
 ---
+permalink: /blog/effective-advantages-of-verifiable-digital-records
 title: "Effective Advantages of Verifiable Digital Records"
 
 description: Discover how verifiable digital records boost security, ease sharing, and improve efficiency for students, university staff, and professionals.

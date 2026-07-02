@@ -5,6 +5,7 @@ User-agent: *
 Disallow: /preprod.html
 Disallow: /samples.html
 Disallow: /test.html
+Disallow: /EPTemplates/
 
 # AI crawler access — explicitly allowed
 User-agent: GPTBot

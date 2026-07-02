@@ -1,4 +1,5 @@
 ---
+permalink: /blog/why-institutions-should-embrace-open-badges-3-0-standards
 layout: V4LayoutSingleBlogPost
 
 title:  Why Institutions Should Embrace Open Badges 3.0 Standards

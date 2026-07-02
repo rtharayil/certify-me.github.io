@@ -283,7 +283,13 @@
           "position": 1,
           "name": "Home",
           "item": "https://www.certifyme.online/"
-        }
+        }{% if page.url != "/" %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ page.title | jsonify }},
+          "item": "https://www.certifyme.online{{ page.url | remove: '.html' }}"
+        }{% endif %}
       ]
     }
   }
