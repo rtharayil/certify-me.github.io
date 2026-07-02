@@ -50,14 +50,13 @@ CertifyMe (by Tech99 Innovations Pvt Ltd) is an enterprise-grade digital credent
 
 ## Differentiators
 
-- Ranked #2 in Digital Credential Management Software globally (G2 Research Report, 2026)
-- G2 Category Leader · Capterra 5/5 · TrustRadius 9/10
-- Credentials issued to 144+ countries
-- 500+ institutions trust CertifyMe
-- 4.9/5 average rating from 500+ verified reviews (G2)
-- Advertising banner space built into credential pages (monetization opportunity)
-- No technical knowledge required — single-click awarding
-- Independent verification (not reliant on CertifyMe servers)
+- Only platform with career intelligence (labour market data) embedded in credentials
+- No technical knowledge required — single-click issuance
+- Independent verification (credentials survive if CertifyMe servers go offline)
+- Open Badges 3.0 compliant (not all competitors are)
+- GDPR + FERPA + COPPA compliant in one platform
+- Advertising banner space built into credential webpages (monetisation for issuers)
+- API-first architecture with 1000+ native integrations
 
 ## Pricing
 
@@ -94,6 +93,7 @@ CertifyMe provides a REST API for programmatic credential issuance and managemen
 ## Key Pages
 
 - Homepage: https://www.certifyme.online/
+- Request a Demo: https://go.certifyme.online/request-demo
 - Pricing: https://www.certifyme.online/pricing
 - About: https://www.certifyme.online/AboutUs
 - Blog: https://www.certifyme.online/blog
@@ -129,12 +129,5 @@ CertifyMe provides a REST API for programmatic credential issuance and managemen
 - Credentials issued: 1M+
 
 ## Competitors
-CertifyMe competes with: Credly, Accredible, Certifier, Badgr, Canvas Credentials, Parchment.
+CertifyMe competes with: Credly, Accredible, Certifier, Sertifier, Badgr, Canvas Credentials, Parchment.
 
-## Key Differentiators vs Competitors
-- Only platform with career intelligence (labour market data) embedded in credentials
-- No technical knowledge required — single-click issuance
-- Independent verification (not server-dependent — credentials survive if CertifyMe is offline)
-- Open Badges 3.0 compliant (not all competitors are)
-- GDPR + FERPA + COPPA compliant in one platform
-- Advertising banner space built into credential webpages (monetisation for issuers)
