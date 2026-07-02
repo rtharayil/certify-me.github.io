@@ -794,24 +794,32 @@
   color:#4f46e5;text-transform:uppercase;margin-bottom:14px;}
 .opd-kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px;}
 .opd-kpi{background:#fff;border:1px solid #e8ebf4;border-radius:10px;
-  padding:13px 10px;text-align:center;}
+  padding:13px 10px;text-align:center;
+  box-shadow:0 1px 6px rgba(40,43,117,.06);}
+.opd-kpi:nth-child(1){border-top:3px solid #4f46e5;}
+.opd-kpi:nth-child(2){border-top:3px solid #7c3aed;}
+.opd-kpi:nth-child(3){border-top:3px solid #0891b2;}
+.opd-kpi:nth-child(4){border-top:3px solid #16a34a;}
 .opd-kpi-val{font-size:19px;font-weight:800;color:#1e293b;line-height:1;}
 .opd-kpi-lbl{font-size:10px;color:#94a3b8;margin-top:3px;}
 .opd-kpi-delta{font-size:10px;font-weight:700;color:#16a34a;margin-top:2px;}
 /* Bar chart */
 .opd-chart-label{font-size:10px;font-weight:700;letter-spacing:.07em;
   color:#94a3b8;text-transform:uppercase;margin-bottom:8px;}
-.opd-bars{display:flex;align-items:flex-end;gap:5px;height:68px;margin-bottom:14px;}
-.opd-bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;}
-.opd-bar{width:100%;border-radius:4px 4px 0 0;}
+.opd-bars{display:flex;align-items:flex-end;gap:5px;height:78px;margin-bottom:14px;}
+.opd-bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;}
+.opd-bar-lbl{font-size:8px;font-weight:700;color:#6366f1;}
+.opd-bar{width:100%;border-radius:5px 5px 0 0;}
 .opd-bar-mo{font-size:9px;color:#cbd5e1;}
 /* Credential rows */
-.opd-cred-rows{display:flex;flex-direction:column;gap:8px;}
+.opd-cred-rows{display:flex;flex-direction:column;gap:9px;}
 .opd-cred-row{display:flex;align-items:center;gap:10px;}
-.opd-cred-dot{width:6px;height:6px;border-radius:50%;background:#4f46e5;flex-shrink:0;}
+.opd-cred-rank{width:16px;height:16px;border-radius:4px;background:#eef2ff;
+  font-size:9px;font-weight:800;color:#4f46e5;display:flex;align-items:center;
+  justify-content:center;flex-shrink:0;}
 .opd-cred-name{font-size:12px;color:#374151;width:148px;flex-shrink:0;font-weight:500;}
-.opd-cred-track{flex:1;background:#f1f5f9;border-radius:4px;height:5px;}
-.opd-cred-fill{height:5px;border-radius:4px;}
+.opd-cred-track{flex:1;background:#f1f5f9;border-radius:5px;height:7px;}
+.opd-cred-fill{height:7px;border-radius:5px;}
 .opd-cred-val{font-size:11px;color:#94a3b8;width:52px;text-align:right;}
 /* Upload */
 .opd-upload-zone{border:1.5px dashed #c7d2fe;border-radius:10px;padding:20px;
@@ -1031,32 +1039,32 @@
               </div>
               <div class="opd-chart-label">Monthly Issuance — Jan › Jul 2025</div>
               <div class="opd-bars">
-                <div class="opd-bar-col"><div class="opd-bar" style="height:38px;background:#e0e7ff;"></div><div class="opd-bar-mo">Jan</div></div>
-                <div class="opd-bar-col"><div class="opd-bar" style="height:48px;background:#c7d2fe;"></div><div class="opd-bar-mo">Feb</div></div>
-                <div class="opd-bar-col"><div class="opd-bar" style="height:44px;background:#c7d2fe;"></div><div class="opd-bar-mo">Mar</div></div>
-                <div class="opd-bar-col"><div class="opd-bar" style="height:54px;background:#a5b4fc;"></div><div class="opd-bar-mo">Apr</div></div>
-                <div class="opd-bar-col"><div class="opd-bar" style="height:50px;background:#a5b4fc;"></div><div class="opd-bar-mo">May</div></div>
-                <div class="opd-bar-col"><div class="opd-bar" style="height:62px;background:#818cf8;"></div><div class="opd-bar-mo">Jun</div></div>
-                <div class="opd-bar-col"><div class="opd-bar" style="height:68px;background:#4f46e5;border-top:3px solid #312e81;"></div><div class="opd-bar-mo" style="color:#4f46e5;font-weight:700;">Jul</div></div>
+                <div class="opd-bar-col"><div class="opd-bar-lbl">1.1K</div><div class="opd-bar" style="height:38px;background:linear-gradient(180deg,#a5b4fc,#c7d2fe);"></div><div class="opd-bar-mo">Jan</div></div>
+                <div class="opd-bar-col"><div class="opd-bar-lbl">1.4K</div><div class="opd-bar" style="height:48px;background:linear-gradient(180deg,#818cf8,#a5b4fc);"></div><div class="opd-bar-mo">Feb</div></div>
+                <div class="opd-bar-col"><div class="opd-bar-lbl">1.3K</div><div class="opd-bar" style="height:44px;background:linear-gradient(180deg,#818cf8,#a5b4fc);"></div><div class="opd-bar-mo">Mar</div></div>
+                <div class="opd-bar-col"><div class="opd-bar-lbl">1.7K</div><div class="opd-bar" style="height:54px;background:linear-gradient(180deg,#6366f1,#818cf8);"></div><div class="opd-bar-mo">Apr</div></div>
+                <div class="opd-bar-col"><div class="opd-bar-lbl">1.6K</div><div class="opd-bar" style="height:50px;background:linear-gradient(180deg,#6366f1,#818cf8);"></div><div class="opd-bar-mo">May</div></div>
+                <div class="opd-bar-col"><div class="opd-bar-lbl">1.9K</div><div class="opd-bar" style="height:62px;background:linear-gradient(180deg,#4f46e5,#6366f1);"></div><div class="opd-bar-mo">Jun</div></div>
+                <div class="opd-bar-col"><div class="opd-bar-lbl" style="color:#312e81;font-weight:800;">2.4K</div><div class="opd-bar" style="height:68px;background:linear-gradient(180deg,#312e81,#4f46e5);box-shadow:0 4px 12px rgba(79,70,229,.35);"></div><div class="opd-bar-mo" style="color:#4f46e5;font-weight:700;">Jul</div></div>
               </div>
               <div class="opd-chart-label">Top Credentials by Engagement</div>
               <div class="opd-cred-rows">
                 <div class="opd-cred-row">
-                  <div class="opd-cred-dot"></div>
+                  <div class="opd-cred-rank">1</div>
                   <span class="opd-cred-name">Python for Data Science</span>
-                  <div class="opd-cred-track"><div class="opd-cred-fill" style="width:94%;background:#4f46e5;"></div></div>
+                  <div class="opd-cred-track"><div class="opd-cred-fill" style="width:94%;background:linear-gradient(90deg,#4f46e5,#818cf8);"></div></div>
                   <span class="opd-cred-val">4.2K views</span>
                 </div>
                 <div class="opd-cred-row">
-                  <div class="opd-cred-dot" style="background:#6366f1;"></div>
+                  <div class="opd-cred-rank" style="background:#f3e8ff;color:#7c3aed;">2</div>
                   <span class="opd-cred-name">Machine Learning Cert</span>
-                  <div class="opd-cred-track"><div class="opd-cred-fill" style="width:80%;background:#6366f1;"></div></div>
+                  <div class="opd-cred-track"><div class="opd-cred-fill" style="width:80%;background:linear-gradient(90deg,#7c3aed,#a78bfa);"></div></div>
                   <span class="opd-cred-val">3.8K views</span>
                 </div>
                 <div class="opd-cred-row">
-                  <div class="opd-cred-dot" style="background:#a5b4fc;"></div>
+                  <div class="opd-cred-rank" style="background:#e0f2fe;color:#0891b2;">3</div>
                   <span class="opd-cred-name">Cloud Architecture</span>
-                  <div class="opd-cred-track"><div class="opd-cred-fill" style="width:62%;background:#a5b4fc;"></div></div>
+                  <div class="opd-cred-track"><div class="opd-cred-fill" style="width:62%;background:linear-gradient(90deg,#0891b2,#38bdf8);"></div></div>
                   <span class="opd-cred-val">2.9K views</span>
                 </div>
               </div>
@@ -1158,26 +1166,39 @@
               <div class="opd-eyebrow">Fully Branded Credential Experiences</div>
               <div class="opd-brand-grid">
                 <div class="opd-cert-shell">
-                  <div class="opd-cert-head" style="background:linear-gradient(135deg,#282b75,#4f46e5);">
+                  <div class="opd-cert-head" style="background:linear-gradient(145deg,#1a1d5e 0%,#282b75 45%,#4338ca 100%);position:relative;overflow:hidden;">
+                    <!-- decorative rings -->
+                    <div style="position:absolute;top:-18px;right:-18px;width:70px;height:70px;border-radius:50%;border:1.5px solid rgba(255,255,255,.1);"></div>
+                    <div style="position:absolute;top:-8px;right:-8px;width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(255,255,255,.15);"></div>
                     <div class="opd-cert-org-row">
-                      <div class="opd-cert-logo">
+                      <div class="opd-cert-logo" style="background:rgba(255,255,255,.18);box-shadow:0 0 0 1px rgba(255,255,255,.2);">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                       </div>
-                      <div class="opd-cert-org-name">ACME University</div>
+                      <div class="opd-cert-org-name" style="letter-spacing:.08em;">ACME University</div>
                     </div>
-                    <div class="opd-cert-title">Certificate of Achievement<br>Data Science Professional</div>
+                    <!-- ornamental divider -->
+                    <div style="display:flex;align-items:center;gap:6px;margin:7px 0;">
+                      <div style="flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.3));"></div>
+                      <svg width="8" height="8" viewBox="0 0 10 10" fill="rgba(255,255,255,.5)"><polygon points="5,0 6,4 10,4 7,6 8,10 5,8 2,10 3,6 0,4 4,4"/></svg>
+                      <div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(255,255,255,.3),transparent);"></div>
+                    </div>
+                    <div class="opd-cert-title" style="font-size:11px;font-weight:800;letter-spacing:.01em;">Certificate of Achievement<br>Data Science Professional</div>
                   </div>
-                  <div class="opd-cert-body">
-                    <div class="opd-cert-to">Awarded to</div>
-                    <div class="opd-cert-recipient">Sarah Johnson</div>
+                  <div class="opd-cert-body" style="background:linear-gradient(180deg,#fff 80%,#f8faff);">
+                    <div class="opd-cert-to" style="letter-spacing:.05em;">Awarded to</div>
+                    <div class="opd-cert-recipient" style="font-family:'Manrope',sans-serif;">Sarah Johnson</div>
                     <div class="opd-cert-skills">
                       <span class="opd-cert-skill">Python</span>
                       <span class="opd-cert-skill">ML</span>
                       <span class="opd-cert-skill">NLP</span>
                       <span class="opd-cert-skill">TensorFlow</span>
                     </div>
-                    <div class="opd-cert-foot">
-                      <span class="opd-cert-verify">✓ Blockchain Verified</span>
+                    <!-- seal + footer row -->
+                    <div class="opd-cert-foot" style="align-items:center;">
+                      <span class="opd-cert-verify" style="display:flex;align-items:center;gap:3px;">
+                        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                        Blockchain Verified
+                      </span>
                       <span class="opd-cert-date">Jul 1, 2025</span>
                     </div>
                   </div>
@@ -1216,14 +1237,39 @@
             <!-- ── 5: Verification ── -->
             <div class="opd-panel" id="opd5">
               <div class="opd-eyebrow">Tamper-proof Verification</div>
-              <div class="opd-verify-header">
-                <div class="opd-verify-shield">
+              <div class="opd-verify-header" style="position:relative;overflow:hidden;">
+                <!-- bg shimmer rings -->
+                <div style="position:absolute;right:-20px;top:-20px;width:80px;height:80px;border-radius:50%;border:1.5px solid rgba(255,255,255,.08);"></div>
+                <div style="position:absolute;right:-8px;top:-8px;width:54px;height:54px;border-radius:50%;border:1.5px solid rgba(255,255,255,.12);"></div>
+                <div class="opd-verify-shield" style="background:rgba(74,222,128,.15);border:1px solid rgba(74,222,128,.3);">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
                 </div>
-                <div>
-                  <div class="opd-verify-badge">✓ CREDENTIAL VERIFIED</div>
+                <div style="flex:1;">
+                  <div class="opd-verify-badge" style="display:flex;align-items:center;gap:6px;">
+                    <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 6px #4ade80;"></span>
+                    CREDENTIAL VERIFIED
+                  </div>
                   <div class="opd-verify-sub">Data Science Professional · ACME University</div>
                   <div class="opd-verify-ts">Verified 1 Jul 2025, 14:32 UTC · Open Badges 3.0 · W3C VC</div>
+                </div>
+                <!-- QR code placeholder -->
+                <div style="width:44px;height:44px;background:rgba(255,255,255,.12);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid rgba(255,255,255,.15);">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <rect x="2" y="2" width="8" height="8" rx="1" stroke="rgba(255,255,255,.8)" stroke-width="1.5"/>
+                    <rect x="4" y="4" width="4" height="4" fill="rgba(255,255,255,.7)"/>
+                    <rect x="14" y="2" width="8" height="8" rx="1" stroke="rgba(255,255,255,.8)" stroke-width="1.5"/>
+                    <rect x="16" y="4" width="4" height="4" fill="rgba(255,255,255,.7)"/>
+                    <rect x="2" y="14" width="8" height="8" rx="1" stroke="rgba(255,255,255,.8)" stroke-width="1.5"/>
+                    <rect x="4" y="16" width="4" height="4" fill="rgba(255,255,255,.7)"/>
+                    <rect x="14" y="14" width="2" height="2" fill="rgba(255,255,255,.6)"/>
+                    <rect x="17" y="14" width="2" height="2" fill="rgba(255,255,255,.6)"/>
+                    <rect x="20" y="14" width="2" height="2" fill="rgba(255,255,255,.6)"/>
+                    <rect x="14" y="17" width="2" height="2" fill="rgba(255,255,255,.6)"/>
+                    <rect x="20" y="17" width="2" height="2" fill="rgba(255,255,255,.6)"/>
+                    <rect x="14" y="20" width="2" height="2" fill="rgba(255,255,255,.6)"/>
+                    <rect x="17" y="20" width="2" height="2" fill="rgba(255,255,255,.6)"/>
+                    <rect x="20" y="20" width="2" height="2" fill="rgba(255,255,255,.6)"/>
+                  </svg>
                 </div>
               </div>
               <div class="opd-verify-grid">
