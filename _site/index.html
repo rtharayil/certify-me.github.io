@@ -1198,29 +1198,108 @@
             <!-- ── 3: Integrations ── -->
             <div class="opd-panel" id="opd3">
               <div class="opd-eyebrow">API &amp; Enterprise Integrations</div>
-              <div class="opd-int-body">
-                <div class="opd-int-tier">
-                  <div class="opd-int-chip"><div class="opd-int-dot" style="background:#e17000;"></div>Canvas LMS</div>
-                  <div class="opd-int-chip"><div class="opd-int-dot" style="background:#0a7ec2;"></div>Moodle</div>
-                  <div class="opd-int-chip"><div class="opd-int-dot" style="background:#1798c1;"></div>Salesforce</div>
+
+              <!-- API code snippet -->
+              <div style="background:#0f172a;border-radius:10px;padding:12px 14px;margin-bottom:14px;font-family:'Courier New',monospace;font-size:10px;line-height:1.6;">
+                <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;">
+                  <span style="width:8px;height:8px;border-radius:50%;background:#ff5f57;display:block;"></span>
+                  <span style="width:8px;height:8px;border-radius:50%;background:#febc2e;display:block;"></span>
+                  <span style="width:8px;height:8px;border-radius:50%;background:#28c840;display:block;"></span>
+                  <span style="color:#475569;font-size:9px;margin-left:4px;font-family:'Inter',sans-serif;">Issue a credential — 3 lines</span>
                 </div>
-                <div class="opd-int-spine"></div>
-                <div class="opd-int-hub">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  CertifyMe Platform
-                </div>
-                <div class="opd-int-spine"></div>
-                <div class="opd-int-tier">
-                  <div class="opd-int-chip"><div class="opd-int-dot" style="background:#0073b1;"></div>Workday</div>
-                  <div class="opd-int-chip"><div class="opd-int-dot" style="background:#ff4a00;"></div>Zapier</div>
-                  <div class="opd-int-chip"><div class="opd-int-dot" style="background:#4a154b;"></div>Slack</div>
-                  <div class="opd-int-chip"><div class="opd-int-dot" style="background:#009845;"></div>SAP</div>
-                </div>
-                <div class="opd-int-footer">
-                  <div class="opd-int-pill">REST API</div>
-                  <span>Webhook &nbsp;·&nbsp; SSO / SAML &nbsp;·&nbsp; SCIM &nbsp;·&nbsp; Bulk CSV &nbsp;·&nbsp; Native Plugins</span>
+                <div><span style="color:#7c3aed;">POST</span> <span style="color:#38bdf8;">/api/v1/credentials/issue</span></div>
+                <div style="color:#475569;">Authorization: Bearer <span style="color:#fbbf24;">sk_live_••••••••</span></div>
+                <div style="margin-top:5px;color:#94a3b8;">{</div>
+                <div style="padding-left:14px;"><span style="color:#4ade80;">"recipient"</span><span style="color:#94a3b8;">:</span> <span style="color:#fb923c;">"sarah@acme.edu"</span><span style="color:#94a3b8;">,</span></div>
+                <div style="padding-left:14px;"><span style="color:#4ade80;">"credential"</span><span style="color:#94a3b8;">:</span> <span style="color:#fb923c;">"data-science-pro"</span></div>
+                <div style="color:#94a3b8;">}</div>
+                <div style="margin-top:6px;display:flex;align-items:center;gap:8px;">
+                  <span style="background:#16a34a;color:#fff;font-size:9px;font-weight:700;padding:2px 7px;border-radius:4px;font-family:'Inter',sans-serif;">200 OK</span>
+                  <span style="color:#4ade80;">"status"</span><span style="color:#94a3b8;">: </span><span style="color:#fb923c;">"issued"</span><span style="color:#94a3b8;">,</span> <span style="color:#4ade80;">"id"</span><span style="color:#94a3b8;">: </span><span style="color:#fb923c;">"crd_7Kx9…"</span>
                 </div>
               </div>
+
+              <!-- Integration categories -->
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:12px;">
+
+                <!-- LMS -->
+                <div style="background:#fff;border:1px solid #e8ebf4;border-radius:9px;padding:9px 10px;box-shadow:0 1px 4px rgba(40,43,117,.05);">
+                  <div style="font-size:8px;font-weight:800;letter-spacing:.08em;color:#4f46e5;text-transform:uppercase;margin-bottom:7px;display:flex;align-items:center;gap:4px;">
+                    <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    LMS
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:4px;">
+                    <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#334155;font-weight:600;">
+                      <div style="width:5px;height:5px;border-radius:50%;background:#e17000;flex-shrink:0;"></div>Canvas
+                    </div>
+                    <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#334155;font-weight:600;">
+                      <div style="width:5px;height:5px;border-radius:50%;background:#0a7ec2;flex-shrink:0;"></div>Moodle
+                    </div>
+                    <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#334155;font-weight:600;">
+                      <div style="width:5px;height:5px;border-radius:50%;background:#d2232a;flex-shrink:0;"></div>Blackboard
+                    </div>
+                    <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#334155;font-weight:600;">
+                      <div style="width:5px;height:5px;border-radius:50%;background:#0066cc;flex-shrink:0;"></div>Cornerstone
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CRM -->
+                <div style="background:#fff;border:1px solid #e8ebf4;border-radius:9px;padding:9px 10px;box-shadow:0 1px 4px rgba(40,43,117,.05);">
+                  <div style="font-size:8px;font-weight:800;letter-spacing:.08em;color:#7c3aed;text-transform:uppercase;margin-bottom:7px;display:flex;align-items:center;gap:4px;">
+                    <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    CRM
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:4px;">
+                    <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#334155;font-weight:600;">
+                      <div style="width:5px;height:5px;border-radius:50%;background:#1798c1;flex-shrink:0;"></div>Salesforce
+                    </div>
+                    <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#334155;font-weight:600;">
+                      <div style="width:5px;height:5px;border-radius:50%;background:#ff7a59;flex-shrink:0;"></div>HubSpot
+                    </div>
+                    <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#334155;font-weight:600;">
+                      <div style="width:5px;height:5px;border-radius:50%;background:#0073b1;flex-shrink:0;"></div>Dynamics 365
+                    </div>
+                    <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#94a3b8;font-weight:500;">
+                      + any via Zapier
+                    </div>
+                  </div>
+                </div>
+
+                <!-- SIS -->
+                <div style="background:#fff;border:1px solid #e8ebf4;border-radius:9px;padding:9px 10px;box-shadow:0 1px 4px rgba(40,43,117,.05);">
+                  <div style="font-size:8px;font-weight:800;letter-spacing:.08em;color:#0891b2;text-transform:uppercase;margin-bottom:7px;display:flex;align-items:center;gap:4px;">
+                    <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#0891b2" stroke-width="2.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    SIS
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:4px;">
+                    <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#334155;font-weight:600;">
+                      <div style="width:5px;height:5px;border-radius:50%;background:#0073b1;flex-shrink:0;"></div>Workday
+                    </div>
+                    <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#334155;font-weight:600;">
+                      <div style="width:5px;height:5px;border-radius:50%;background:#009845;flex-shrink:0;"></div>SAP
+                    </div>
+                    <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#334155;font-weight:600;">
+                      <div style="width:5px;height:5px;border-radius:50%;background:#c8102e;flex-shrink:0;"></div>Banner (Ellucian)
+                    </div>
+                    <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#334155;font-weight:600;">
+                      <div style="width:5px;height:5px;border-radius:50%;background:#4a154b;flex-shrink:0;"></div>PeopleSoft
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Protocol strip -->
+              <div style="background:#f8f9fb;border:1px solid #e8ebf4;border-radius:8px;padding:8px 12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;">
+                <span style="background:#282b75;color:#fff;border-radius:4px;font-size:9px;font-weight:700;padding:2px 7px;font-family:'Inter',sans-serif;">REST API</span>
+                <span style="background:#eef2ff;color:#4f46e5;border-radius:4px;font-size:9px;font-weight:700;padding:2px 7px;">Webhooks</span>
+                <span style="background:#eef2ff;color:#4f46e5;border-radius:4px;font-size:9px;font-weight:700;padding:2px 7px;">SSO / SAML</span>
+                <span style="background:#eef2ff;color:#4f46e5;border-radius:4px;font-size:9px;font-weight:700;padding:2px 7px;">SCIM</span>
+                <span style="background:#eef2ff;color:#4f46e5;border-radius:4px;font-size:9px;font-weight:700;padding:2px 7px;">Native Plugins</span>
+                <span style="background:#eef2ff;color:#4f46e5;border-radius:4px;font-size:9px;font-weight:700;padding:2px 7px;">Bulk CSV</span>
+              </div>
+
             </div>
 
             <!-- ── 4: Branding ── -->
