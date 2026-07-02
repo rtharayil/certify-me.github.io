@@ -624,4 +624,28 @@ h2.statistic-number {
     padding-right: 0 !important;
     margin-top: 24px !important;
   }
+
+  /* ── STATISTICS: 3 side-by-side on mobile, compact sizing ── */
+  #statistic-1 .row > .col {
+    flex: 0 0 33.333% !important;
+    max-width: 33.333% !important;
+  }
+  #statistic-1 .statistic-number {
+    font-size: 1.6rem !important;
+  }
+  #statistic-1 .statistic-block-txt p {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
+  /* Remove top border divider override — side-by-side means left border is correct */
+  #statistic-1 .statistic-1-wrapper .row > .col + .col {
+    border-top: none !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    border-left: 1px solid rgba(40,43,117,.1) !important;
+  }
+  #statistic-1 {
+    margin-top: -40px !important;
+    margin-bottom: -20px !important;
+  }
 }
