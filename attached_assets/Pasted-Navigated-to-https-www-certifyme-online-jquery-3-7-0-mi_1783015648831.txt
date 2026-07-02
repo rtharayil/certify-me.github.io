@@ -1,0 +1,58 @@
+Navigated to https://www.certifyme.online/
+jquery-3.7.0.min.js:2 [Violation] Added non-passive event listener to a scroll-blocking 'touchstart' event. Consider marking event handler as 'passive' to make the page more responsive. See https://www.chromestatus.com/feature/5745543795965952
+add	@	jquery-3.7.0.min.js:2
+(anonymous)	@	jquery-3.7.0.min.js:2
+each	@	jquery-3.7.0.min.js:2
+each	@	jquery-3.7.0.min.js:2
+Le	@	jquery-3.7.0.min.js:2
+Le	@	jquery-3.7.0.min.js:2
+on	@	jquery-3.7.0.min.js:2
+e	@	owl.carousel.min.js:7
+(anonymous)	@	owl.carousel.min.js:6
+i	@	jquery-3.7.0.min.js:2
+each	@	jquery-3.7.0.min.js:2
+e	@	owl.carousel.min.js:6
+(anonymous)	@	owl.carousel.min.js:6
+each	@	jquery-3.7.0.min.js:2
+each	@	jquery-3.7.0.min.js:2
+(anonymous)	@	owl.carousel.min.js:6
+(anonymous)	@	custom.js:191
+e	@	jquery-3.7.0.min.js:2
+(anonymous)	@	jquery-3.7.0.min.js:2
+setTimeout		
+(anonymous)	@	jquery-3.7.0.min.js:2
+c	@	jquery-3.7.0.min.js:2
+fireWith	@	jquery-3.7.0.min.js:2
+fire	@	jquery-3.7.0.min.js:2
+c	@	jquery-3.7.0.min.js:2
+fireWith	@	jquery-3.7.0.min.js:2
+ready	@	jquery-3.7.0.min.js:2
+P	@	jquery-3.7.0.min.js:2
+jquery-3.7.0.min.js:2 [Violation] Added non-passive event listener to a scroll-blocking 'touchstart' event. Consider marking event handler as 'passive' to make the page more responsive. See https://www.chromestatus.com/feature/5745543795965952
+add	@	jquery-3.7.0.min.js:2
+(anonymous)	@	jquery-3.7.0.min.js:2
+each	@	jquery-3.7.0.min.js:2
+each	@	jquery-3.7.0.min.js:2
+Le	@	jquery-3.7.0.min.js:2
+on	@	jquery-3.7.0.min.js:2
+(anonymous)	@	owl.carousel.min.js:6
+(anonymous)	@	owl.carousel.min.js:6
+e	@	owl.carousel.min.js:6
+(anonymous)	@	owl.carousel.min.js:6
+each	@	jquery-3.7.0.min.js:2
+each	@	jquery-3.7.0.min.js:2
+(anonymous)	@	owl.carousel.min.js:6
+(anonymous)	@	custom.js:191
+e	@	jquery-3.7.0.min.js:2
+(anonymous)	@	jquery-3.7.0.min.js:2
+setTimeout		
+(anonymous)	@	jquery-3.7.0.min.js:2
+c	@	jquery-3.7.0.min.js:2
+fireWith	@	jquery-3.7.0.min.js:2
+fire	@	jquery-3.7.0.min.js:2
+c	@	jquery-3.7.0.min.js:2
+fireWith	@	jquery-3.7.0.min.js:2
+ready	@	jquery-3.7.0.min.js:2
+P	@	jquery-3.7.0.min.js:2
+﻿
+
