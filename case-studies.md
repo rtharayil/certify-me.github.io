@@ -1,6 +1,6 @@
 ---
-title: "Case Studies"
-description: ""
+title: "Customer Case Studies | CertifyMe Digital Credentials"
+description: "See how 500+ universities, associations, and enterprises use CertifyMe to issue verifiable digital credentials and improve learner outcomes."
 
 layout: V4LayoutCaseStudies
 

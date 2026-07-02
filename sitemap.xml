@@ -10,7 +10,7 @@ sitemap:
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   {% for page in site.pages %}
-    {% unless page.sitemap.exclude == "yes" or page.name == "feed.xml" or page.url contains 'css' or page.url contains 'assets' %}
+    {% unless page.sitemap.exclude == "yes" or page.name == "feed.xml" or page.url contains 'css' or page.url contains 'assets' or page.url contains 'EPTemplates' or page.url == '/404.html' or page.layout == 'redirected' %}
     <url>
       <loc>https://www.certifyme.online{{ page.url | remove: "index.html" }}</loc>
       {% if page.sitemap.lastmod %}

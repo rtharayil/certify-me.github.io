@@ -1,6 +1,6 @@
 ---
-title: "Free Certificate Templates"
-description: ""
+title: "Free Certificate Templates | 1,000+ Designs | CertifyMe"
+description: "Download free certificate templates for academic achievement, training completion, and employee recognition. Customise in minutes with CertifyMe's certificate maker."
 
 layout: V4Layout-Certificate-Templates
 

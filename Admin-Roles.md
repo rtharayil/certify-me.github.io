@@ -1,7 +1,6 @@
 ---
-title: "Admin Roles"
-
-description: ""
+title: "Admin Roles & Permissions | CertifyMe Digital Credentialing"
+description: "Manage your credentialing team with CertifyMe's role-based admin controls. Set permissions for issuers, managers, and viewers across your institution."
 
 layout: V4LayoutAdmin
 

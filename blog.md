@@ -1,5 +1,6 @@
 ---
-title: "Blogs of CertifyMe the Credential Platform"
+title: "Digital Credentials Blog | CertifyMe"
+description: "Expert guides, research, and best practices on digital credentials, open badges, verifiable credentials, and credential management for institutions."
 layout: V4LayoutBlogs
 
 
