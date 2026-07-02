@@ -4,21 +4,79 @@
 {% include V4NewLook/head.html %}
 
 <body id="page-top">
-	{% include V4NewLook/_GTMNoScript.html %}
+        {% include V4NewLook/_GTMNoScript.html %}
+
+  <!-- FAQPage structured data: Digital Credentials -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a digital credential?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A digital credential is a verifiable electronic record of an achievement, skill, or qualification — such as a certificate, badge, or diploma — that can be shared online and independently verified."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are CertifyMe credentials verified?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every credential issued on CertifyMe has a unique verification URL. Anyone can visit that URL to confirm the credential's authenticity, issuer, and recipient without needing an account."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can learners share CertifyMe credentials on LinkedIn?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Learners can share their credentials to LinkedIn, Twitter, Facebook, and other social platforms with a single click directly from their credential page."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does CertifyMe support bulk credential issuance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. CertifyMe supports bulk issuance via CSV upload, allowing you to issue thousands of credentials in minutes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How secure are credentials issued on CertifyMe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CertifyMe credentials are blockchain-secured and tamper-proof. Each credential contains cryptographic metadata that makes it impossible to forge or alter."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I white-label credentials with my organisation's branding?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. CertifyMe's Business and Enterprise plans support full white-label customization including custom domain, logo, colours, and email notifications."
+        }
+      }
+    ]
+  }
+  </script>
 
     <div id="page" class="page font--jakarta">
         {% include V4NewLook/navbar.html %}
 
         {% include V4NewLook/QandA/FAQ-3.html %}
 
-		{% include V4NewLook/QandA/Banner.html %}
+                {% include V4NewLook/QandA/Banner.html %}
 
         {% include V4NewLook/footer.html %}
 
-		{% include V4NewLook/scripts.html %}
+                {% include V4NewLook/scripts.html %}
     </div>
 
-	
+        
 </body>
 
 </html>
