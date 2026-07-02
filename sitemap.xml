@@ -82,6 +82,17 @@ sitemap:
     </url>
   {% endfor %}
 
+  {% for page in site['certificate-templates'] %}
+    {% unless page.sitemap.exclude == "yes" or page.layout == 'redirected' %}
+    <url>
+      <loc>https://www.certifyme.online{{ page.url | remove: ".html" }}</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>{% if page.sitemap.priority %}{{ page.sitemap.priority }}{% else %}0.6{% endif %}</priority>
+    </url>
+    {% endunless %}
+  {% endfor %}
+
   {% for page in site.awards %}
     <url>
       <loc>https://www.certifyme.online{{ page.url | remove: ".html" }}</loc>

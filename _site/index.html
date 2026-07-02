@@ -3353,7 +3353,7 @@ function opd_switch(n) {
 
 
         <!-- BLOG-1
-			============================================= -->
+                        ============================================= -->
 <section id="blog-1" class="py-100 blog-section division" style="margin-bottom: -50px;">
     <div class="container">
 
@@ -3393,10 +3393,10 @@ function opd_switch(n) {
                         <span class="post-tag color--theme">Latest Blog</span>
 
                         <!-- Post Link -->
-                        <h6 class="s-20 w-700">
+                        <p class="s-20 w-700">
                             <a href="https://certifyme.online/blog/What-is-a-Digital-Credential.html"
                                 target="_blank" rel="noopener noreferrer">What Are Digital Credentials?</a>
-                        </h6>
+                        </p>
 
                         <!-- Text -->
                         <p>A tamper-proof evidence of achievements that can transform the way skilled professionals
@@ -3440,11 +3440,11 @@ function opd_switch(n) {
                         <span class="post-tag  color--theme">Case Study</span>
 
                         <!-- Post Link -->
-                        <h6 class="s-20 w-700">
+                        <p class="s-20 w-700">
                             <a href="/case-studies" target="_blank" rel="noopener noreferrer">Hear More From Companies
                                 Like Yours
                             </a>
-                        </h6>
+                        </p>
 
                         <!-- Text -->
                         <p>How CertifyMe Empowers Global Brands to Achieve Remarkable Returns on Investment.</p>
@@ -3486,10 +3486,10 @@ function opd_switch(n) {
                         <span class="post-tag color--theme">Tutorials</span>
 
                         <!-- Post Link -->
-                        <h6 class="s-20 w-700">
+                        <p class="s-20 w-700">
                             <a href="https://www.youtube.com/playlist?list=PLIUyNKOst6-nGSMSaKnYdQUj7VrXwGbcJ"
                                 target="_blank" rel="noopener noreferrer">Watch Our Tutorial Videos</a>
-                        </h6>
+                        </p>
 
                         <!-- Text -->
                         <p>Check how to create, issue and manage credentials more effectively.
@@ -3556,14 +3556,14 @@ function opd_switch(n) {
 
         </main><!-- end #main-content -->
 
-        <!-- Review structured data for homepage -->
+        <!-- Review structured data for homepage — extends main SoftwareApplication via @id -->
         <script type="application/ld+json">
         {
           "@context": "https://schema.org",
-          "@type": "SoftwareApplication",
-          "@id": "https://www.certifyme.online/#software",
-          "name": "CertifyMe",
-          "review": [
+          "@graph": [{
+            "@type": "SoftwareApplication",
+            "@id": "https://www.certifyme.online/#software",
+            "review": [
             {
               "@type": "Review",
               "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
@@ -3583,6 +3583,7 @@ function opd_switch(n) {
               "reviewBody": "The user interface of the platform is remarkably intuitive and makes it easier to use. I really want to acknowledge the exceptional support that CertifyMe has been providing."
             }
           ]
+          }]
         }
         </script>
 
@@ -3625,7 +3626,7 @@ function opd_switch(n) {
          <!-- FOOTER LINKS -->
          <div class="col-sm-4 col-md-3 col-xl-2">
             <div class="footer-links fl-1">
-               <h6 class="s-17 w-700" style="font-size: 16px;">Quick Links</h6>
+               <p class="s-17 w-700" style="font-size: 16px;">Quick Links</p>
                <ul class="foo-links clearfix">
                   <li><p><a href="/Refundpolicy" style="font-size: 14px;">Refund Policy</a></p></li>
                   <li><p><a href="/AboutUs" style="font-size: 14px;">About Us</a></p></li>
@@ -3639,7 +3640,7 @@ function opd_switch(n) {
          <!-- FOOTER LINKS -->
          <div class="col-sm-4 col-md-3 col-xl-2">
             <div class="footer-links fl-2">
-               <h6 class="s-17 w-700" style="font-size: 16px;">Industry Use Case</h6>
+               <p class="s-17 w-700" style="font-size: 16px;">Industry Use Case</p>
                <ul class="foo-links clearfix">
                   <li><p><a href="/credentials-higher-education" style="font-size: 14px;">Higher Education</a></p></li>
                   <li><p><a href="/digital-badges-for-hr" style="font-size: 14px;">L &amp; D</a></p></li>
@@ -3652,7 +3653,7 @@ function opd_switch(n) {
          <!-- FOOTER LINKS -->
          <div class="col-sm-4 col-md-3 col-xl-2">
             <div class="footer-links fl-3">
-               <h6 class="s-17 w-700" style="font-size: 16px;">Compare</h6>
+               <p class="s-17 w-700" style="font-size: 16px;">Compare</p>
                <ul class="foo-links clearfix">
                   <li><p><a href="/parchment-transcript-alternative" style="font-size: 14px;">Parchment Vs CertifyMe</a></p></li>
                   <li><p><a href="/credly-alternative" style="font-size: 14px;">Credly Vs CertifyMe</a></p></li>
@@ -3666,7 +3667,7 @@ function opd_switch(n) {
          <!-- FOOTER LINKS -->
          <div class="col-sm-6 col-md-3">
             <div class="footer-links fl-4">
-               <h6 class="s-17 w-700" style="font-size: 16px;">Connect With Us</h6>
+               <p class="s-17 w-700" style="font-size: 16px;">Connect With Us</p>
 
                <address style="font-style: normal;">
                   <p><a href="mailto:info@certifyme.online" style="font-size: 14px;"><strong>Email:</strong> info@certifyme.online</a></p>

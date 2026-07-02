@@ -37,14 +37,14 @@
 
         </main><!-- end #main-content -->
 
-        <!-- Review structured data for homepage -->
+        <!-- Review structured data for homepage — extends main SoftwareApplication via @id -->
         <script type="application/ld+json">
         {
           "@context": "https://schema.org",
-          "@type": "SoftwareApplication",
-          "@id": "https://www.certifyme.online/#software",
-          "name": "CertifyMe",
-          "review": [
+          "@graph": [{
+            "@type": "SoftwareApplication",
+            "@id": "https://www.certifyme.online/#software",
+            "review": [
             {
               "@type": "Review",
               "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
@@ -64,6 +64,7 @@
               "reviewBody": "The user interface of the platform is remarkably intuitive and makes it easier to use. I really want to acknowledge the exceptional support that CertifyMe has been providing."
             }
           ]
+          }]
         }
         </script>
 

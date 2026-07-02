@@ -3,7 +3,8 @@ title: "Sample Credentials (Badges and Certificates)"
 description: "Global brands use our platform to automate their credential issuing process."
 
 layout: V4LayoutSamples
-sitemap.priority: 0.9
+sitemap:
+  exclude: 'yes'
 
 projects:
   - title: "Non White-label Certificate"

@@ -1,1 +1,2 @@
-- [CertifyMe H1 audit](certifyme-h1-audit.md) — strip HTML comments before auditing H1s; maps every include to its H1 element; known remaining issues catalogued.
+- [CertifyMe heading-order audit](certifyme-headings.md) — template-level fixes, remaining patterns, and what's content-level vs template-level.
+- [CertifyMe SEO critical fixes](certifyme-seo-fixes.md) — sitemap, schema, HSTS, and tracking fixes completed.
