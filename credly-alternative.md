@@ -35,7 +35,7 @@ EaseOfSetup: "9.5"
 EaseOfAdmin: "9.4"
 QualityOfSupport: "9.4"
 WalletOption: "No"
-G2Rating: "4.8 / 5"
+G2Rating: "4.9 / 5"
 
 # testimonial section
 TestimonialTitle: Our Happy Customers 

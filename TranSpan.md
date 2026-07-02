@@ -9,7 +9,7 @@ sitemap.priority: 1
 
 # hero section 
 HeroTitle: Software de gestión de certificados e insignias fácil de usar para programas de aprendizaje
-HeroText: 'Clasificado #1 en Software de Gestión de Credenciales Digitales en la Industria Educativa'
+HeroText: 'Clasificado #2 en Software de Gestión de Credenciales Digitales en la Industria Educativa'
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Solicite una demostración
 HeroVideoButton: Ver video 
