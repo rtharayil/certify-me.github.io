@@ -556,10 +556,20 @@ h2.statistic-number {
     font-size: 2.25rem !important;
   }
   .logo-list {
-    gap: 34px !important;
+    gap: 24px !important;
   }
   .logo-list li img {
-    height: 39px !important;
+    height: 34px !important;
+  }
+  /* Scale down "Trusted by" label on mobile — 16px uppercase overflows at 375px */
+  #badges.badges-main-container::before {
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+  }
+  /* Cap inner-page brand-logo images so they don't render at full natural size */
+  .brand-logo img {
+    max-height: 34px !important;
+    width: auto !important;
   }
   .section-title h2::before {
     left: 0;
