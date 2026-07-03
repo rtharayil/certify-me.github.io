@@ -7,7 +7,7 @@ description: "A side-by-side look at Accredible, Certifier, Credly by Pearson, a
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /assets4/images/certifyme_vs_credly.png
 featured: true
 ---
