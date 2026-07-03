@@ -133,7 +133,7 @@ The factors I prioritized in the blog are (1) suitability for internal employee 
 
 ## Sertifier : Best for Smaller Organizations
 
-[Sertifier](https://www.certifyme.online/sertifier-alternative) is a practical choice for small L&D teams at startups or newer corporate businesses that want digital certificates/badges quickly, with minimal setup and a lower price point. Its pricing is openly positioned to be accessible, and it supports integrations that match common “lean L&D” workflows.
+[Sertifier](https://www.certifyme.online/blog/certifyme-vs-sertifier-2026-comparison) is a practical choice for small L&D teams at startups or newer corporate businesses that want digital certificates/badges quickly, with minimal setup and a lower price point. Its pricing is openly positioned to be accessible, and it supports integrations that match common “lean L&D” workflows.
 
 <img class="img-fluid r-16" src="/assets4/images/Sertifier Home Page.png" alt="Sertifier Home Page" style="display: block; margin: 0 auto;">
 
