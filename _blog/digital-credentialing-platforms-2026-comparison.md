@@ -82,7 +82,7 @@ So when someone on our team asked "how do we actually compare against Accredible
     </tr>
     <tr>
       <td style="padding: 8px; border: 1px solid #ddd;">Talent Discovery</td>
-      <td style="padding: 8px; border: 1px solid #ddd;">Credential directory</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Spotlight directory</td>
       <td style="padding: 8px; border: 1px solid #ddd;">Not offered</td>
       <td style="padding: 8px; border: 1px solid #ddd;">Employer-facing skills profiles</td>
       <td style="padding: 8px; border: 1px solid #ddd;">Showcase Directory — public, searchable talent gallery for employers</td>
@@ -261,7 +261,7 @@ Branding is comprehensive as well — custom domains, fully white-labeled portal
     </tr>
     <tr>
       <td style="padding: 8px; border: 1px solid #ddd;">Public Talent Directory</td>
-      <td style="padding: 8px; border: 1px solid #ddd;">Basic directory</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Yes — Spotlight directory</td>
       <td style="padding: 8px; border: 1px solid #ddd;">No</td>
       <td style="padding: 8px; border: 1px solid #ddd;">Limited</td>
       <td style="padding: 8px; border: 1px solid #ddd;">Yes — Showcase Directory, searchable by employers</td>
