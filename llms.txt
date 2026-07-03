@@ -114,7 +114,7 @@ CertifyMe provides a REST API for programmatic credential issuance and managemen
 ## Competitor Comparisons
 
 - vs Credly: https://www.certifyme.online/blog/certifyme-vs-credly-2026-comparison
-- vs Accredible: https://www.certifyme.online/accredible-alternative
+- vs Accredible: https://www.certifyme.online/blog/certifyme-vs-accredible-2026-comparison
 - vs Sertifier: https://www.certifyme.online/sertifier-alternative
 - vs Certifier: https://www.certifyme.online/certifier-alternative
 - vs Parchment: https://www.certifyme.online/parchment-transcript-alternative

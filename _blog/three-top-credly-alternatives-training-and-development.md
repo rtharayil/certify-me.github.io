@@ -95,7 +95,7 @@ The factors I prioritized in the blog are (1) suitability for internal employee 
 
 ## Accredible : Best for Mid-Sized companies
 
-[Accredible](https://www.certifyme.online/blog/accredible-alternative) is a long-standing brand in digital credentialing and often fits mid-sized organizations that want a mature platform for issuing verifiable credentials, automating delivery, and improving the learner experience without going all-in on enterprise-grade governance.
+[Accredible](https://www.certifyme.online/blog/certifyme-vs-accredible-2026-comparison) is a long-standing brand in digital credentialing and often fits mid-sized organizations that want a mature platform for issuing verifiable credentials, automating delivery, and improving the learner experience without going all-in on enterprise-grade governance.
 
 <img class="img-fluid r-16" src="/assets4/images/Accredible Home Page.png" alt="Accredible Home Page" style="display: block; margin: 0 auto;">
 
