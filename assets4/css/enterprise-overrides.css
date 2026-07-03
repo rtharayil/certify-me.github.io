@@ -744,3 +744,22 @@ h2.statistic-number {
     padding: 36px 0 28px !important;
   }
 }
+
+/* ── Restore bullet/number markers inside blog post body copy ───────
+   The global `ul { list-style: none; }` rule (used for nav/menus)
+   also strips bullets from markdown-generated lists in blog articles.
+   Scope bullets back on for actual post content only. ────────────── */
+.post-content ul {
+  list-style: disc !important;
+  padding-left: 1.4em !important;
+  margin: 0 0 16px 0 !important;
+}
+.post-content ol {
+  list-style: decimal !important;
+  padding-left: 1.4em !important;
+  margin: 0 0 16px 0 !important;
+}
+.post-content ul li,
+.post-content ol li {
+  margin-bottom: 6px;
+}
