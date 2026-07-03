@@ -202,7 +202,7 @@
                <!-- Advantages List -->
                <ul class="advantages ico-15 clearfix" style="padding-bottom: 10px; margin-top: -20px;">
                   <li>
-                     <p class="s-19">{{page.ActionButtonAbovetext}}</p>
+                     <p class="s-19">{{ page.ActionButtonAbovetext | default: "Not sure about how to begin? Let us guide you in the right direction!" }}</p>
                   </li>
                </ul>
 
@@ -213,13 +213,13 @@
                <!-- Advantages List -->
                <ul class="advantages ico-15 clearfix">
                   <li>
-                     <p class="s-15">{{page.ActionButtonbelowtext1}}</p>
+                     <p class="s-15">{{ page.ActionButtonbelowtext1 | default: "Free 5 Credentials" }}</p>
                   </li>
                   <li class="advantages-links-divider">
                      <p><span class="flaticon-minus"></span></p>
                   </li>
                   <li>
-                     <p class="s-15">{{page.ActionButtonbelowtext2}}</p>
+                     <p class="s-15">{{ page.ActionButtonbelowtext2 | default: "Exclusive Support" }}</p>
                   </li>
                   <!-- <li class="advantages-links-divider"><p><span class="flaticon-minus"></span></p></li> -->
                   <!-- <li><p>No Fees</p></li> -->

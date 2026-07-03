@@ -11,32 +11,7 @@
 
 <!-- CLIENT BRANDING / CUSTOMER LOGO LIST
                         ============================================= -->
-<div class="container">
-        <section id="badges" class="badges-main-container">
-                <div class="custom-continer">
-                        <ul class="logo-list d-flex align-items-center justify-content-between">
-                                <li>
-                                        <img src="/assets4/images/Images Webp/University of europe.webp" alt="University of Europe — CertifyMe customer" class="img-fluid" style="margin-right: 5px;" loading="lazy" />
-                                </li>
-                                <li>
-                                        <img src="/assets4/images/Images Webp/IEEE (2).webp" alt="IEEE — CertifyMe customer" class="img-fluid" loading="lazy" />
-                                </li>
-                                <li>
-                                        <img src="/assets4/images/Images Webp/Harvardlogo.webp" alt="Harvard — CertifyMe customer" class="img-fluid" loading="lazy" />
-                                </li>
-                                <li>
-                                        <img src="/assets4/images/Images Webp/PMI logo.webp" alt="PMI — CertifyMe customer" class="img-fluid" loading="lazy" />
-                                </li>
-                                <li>
-                                        <img src="/assets4/images/Images Webp/LEB.webp" alt="LEB — CertifyMe customer" class="img-fluid" loading="lazy" />
-                                </li>
-                                <li>
-                                        <img src="/assets4/images/Images Webp/DCU.webp" alt="DCU — CertifyMe customer" class="img-fluid" loading="lazy" />
-                                </li>
-                        </ul>
-                </div>
-        </section>
-</div>
+{% include V4NewLook/ClientLogos.html %}
 
 <!-- STATISTIC-1
                         ============================================= -->
@@ -61,7 +36,7 @@
 
                                                         <!-- Text -->
                                                         <div class="statistic-block-txt color--grey">
-                                                                <p class="p-md">{{page.Institutiontext}}</p>
+                                                                <p class="p-md">{{ page.Institutiontext | default: "Institutions trust<br>CertifyMe" }}</p>
                                                         </div>
 
                                                 </div>
@@ -81,7 +56,7 @@
 
                                                         <!-- Text -->
                                                         <div class="statistic-block-txt color--grey">
-                                                                <p class="p-md">{{page.Usertext}}</p>
+                                                                <p class="p-md">{{ page.Usertext | default: "Users across 144<br>Countries" }}</p>
                                                         </div>
 
                                                 </div>
@@ -101,7 +76,7 @@
 
                                                         <!-- Text -->
                                                         <div class="statistic-block-txt color--grey">
-                                                                <p class="p-md">{{page.Credentialtext}}</p>
+                                                                <p class="p-md">{{ page.Credentialtext | default: "Digital credentials issued every month" }}</p>
                                                         </div>
 
                                                 </div>

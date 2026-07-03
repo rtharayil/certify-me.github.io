@@ -1,312 +1,320 @@
 <!-- TESTIMONIALS-1 -->
 <section id="reviews-1" class="pt-100 shape--06 shape--gr-whitesmoke reviews-section">
-	<div class="container">
+        <div class="container">
 
 
-		<!-- SECTION TITLE -->
-		<div class="row justify-content-center">
-			<div class="col-md-10 col-lg-9">
-				<div class="section-title mb-70">
+                <!-- SECTION TITLE -->
+                <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-9">
+                                <div class="section-title mb-70">
 
-					<!-- Title -->
-					<h2 class="s-38 w-700">{{page.TestimonialTitle}}</h2>
+                                        <!-- Title -->
+                                        <h2 class="s-38 w-700">{{ page.TestimonialTitle | default: "Our Happy Customers" }}</h2>
 
-					
-				</div>
-			</div>
-		</div>
+                                        
+                                </div>
+                        </div>
+                </div>
 
 
-		<!-- TESTIMONIALS CONTENT -->
-		<div class="row">
-			<div class="col">
-				<div class="owl-carousel owl-theme reviews-1-wrapper">
+                <!-- TESTIMONIALS CONTENT -->
+                <div class="row">
+                        <div class="col">
+                                <div class="owl-carousel owl-theme reviews-1-wrapper">
 
 
-					<!-- TESTIMONIAL #1 -->
-					<div class="review-1 bg--white-100 block-shadow r-08">
+                                        <!-- TESTIMONIAL #1 -->
+                                        <div class="review-1 bg--white-100 block-shadow r-08">
 
-						<!-- Quote Icon -->
-						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+                                                <!-- Quote Icon -->
+                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-						<!-- Text -->
-						<div class="review-txt">
+                                                <!-- Text -->
+                                                <div class="review-txt">
 
-							<!-- Text -->
-							<p>{{ page.authorMessage1 }}
-							</p>
+                                                        <!-- Text -->
+                                                        <p>{{ page.authorMessage1 | default: "Impressive range of features sets it apart as the ultimate solution for certificate verification. Their enterprise plan, along with customizable options, caters to diverse company needs, making it an awesome choice." }}
+                                                        </p>
 
-							<!-- Author -->
-							<div class="author-data clearfix">
+                                                        <!-- Author -->
+                                                        <div class="author-data clearfix">
 
-								<!-- Avatar -->
-								<div class="review-avatar">
-									<img src="{{ page.authorImage1 }}" alt="{{ page.authorName1 }}, {{ page.authorDesignation1 }}, {{ page.authorCompanyName1 }}" loading="lazy">
-								</div>
+                                                                <!-- Avatar -->
+                                                                <div class="review-avatar">
+                                                                        <img src="{{ page.authorImage1 | default: '/assets4/images/Images Webp/Joshua.webp' }}" alt="{{ page.authorName1 | default: 'Joshua J.' }}, {{ page.authorDesignation1 | default: 'Chief Learning Officer' }}, {{ page.authorCompanyName1 | default: 'System Support Inc.' }}" loading="lazy">
+                                                                </div>
 
-								<!-- Data -->
-								<div class="review-author">
-									<h6 class="s-16 w-700">{{ page.authorName1 }}</h6>
-									<p class="p-sm" style="font-size:15px;">{{ page.authorDesignation1 }}</p>
-									<p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName1 }}</p>
-								</div>
+                                                                <!-- Data -->
+                                                                <div class="review-author">
+                                                                        <h6 class="s-16 w-700">{{ page.authorName1 | default: "Joshua J." }}</h6>
+                                                                        <p class="p-sm" style="font-size:15px;">{{ page.authorDesignation1 | default: "Chief Learning Officer" }}</p>
+                                                                        <p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName1 | default: "System Support Inc." }}</p>
+                                                                </div>
 
-							</div> <!-- End Author -->
+                                                        </div> <!-- End Author -->
 
-						</div> <!-- End Text -->
+                                                </div> <!-- End Text -->
 
-					</div> <!-- END TESTIMONIAL #1 -->
+                                        </div> <!-- END TESTIMONIAL #1 -->
 
 
-					<!-- TESTIMONIAL #2 -->
-					<div class="review-1 bg--white-100 block-shadow r-08">
+                                        <!-- TESTIMONIAL #2 -->
+                                        <div class="review-1 bg--white-100 block-shadow r-08">
 
-						<!-- Quote Icon -->
-						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+                                                <!-- Quote Icon -->
+                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-						<!-- Text -->
-						<div class="review-txt">
+                                                <!-- Text -->
+                                                <div class="review-txt">
 
-							<!-- Text -->
-							<p>{{ page.authorMessage2 }}
-							</p>
+                                                        <!-- Text -->
+                                                        <p>{{ page.authorMessage2 | default: "What truly stands out about CertifyMe is the remarkable support provided by their customer success team. They go above and beyond to ensure a seamless experience. Additionally, the platform boasts a clear and intuitive user interface, allowing easy navigation and customization." }}
+                                                        </p>
 
-							<!-- Author -->
-							<div class="author-data clearfix">
+                                                        <!-- Author -->
+                                                        <div class="author-data clearfix">
 
-								<!-- Avatar -->
-								<div class="review-avatar">
-									<img src="{{ page.authorImage2 }}" alt="{{ page.authorName2 }}, {{ page.authorDesignation2 }}, {{ page.authorCompanyName2 }}" loading="lazy">
-								</div>
+                                                                <!-- Avatar -->
+                                                                <div class="review-avatar">
+                                                                        <img src="{{ page.authorImage2 | default: '/assets4/images/Images Webp/Aleena.webp' }}" alt="{{ page.authorName2 | default: 'Aleena J.' }}, {{ page.authorDesignation2 | default: 'Enrollment Manager' }}, {{ page.authorCompanyName2 | default: 'State University of New York' }}" loading="lazy">
+                                                                </div>
 
-								<!-- Data -->
-								<div class="review-author">
-									<h6 class="s-16 w-700">{{ page.authorName2 }}</h6>
-									<p class="p-sm" style="font-size:15px;">{{ page.authorDesignation2 }}</p>
-									<p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName2 }}</p>
-								</div>
+                                                                <!-- Data -->
+                                                                <div class="review-author">
+                                                                        <h6 class="s-16 w-700">{{ page.authorName2 | default: "Aleena J." }}</h6>
+                                                                        <p class="p-sm" style="font-size:15px;">{{ page.authorDesignation2 | default: "Enrollment Manager" }}</p>
+                                                                        <p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName2 | default: "State University of New York" }}</p>
+                                                                </div>
 
-							</div> <!-- End Author -->
+                                                        </div> <!-- End Author -->
 
-						</div> <!-- End Text -->
+                                                </div> <!-- End Text -->
 
-					</div> <!-- END TESTIMONIAL #2 -->
+                                        </div> <!-- END TESTIMONIAL #2 -->
 
 
-					<!-- TESTIMONIAL #3 -->
-					<div class="review-1 bg--white-100 block-shadow r-08">
+                                        <!-- TESTIMONIAL #3 -->
+                                        <div class="review-1 bg--white-100 block-shadow r-08">
 
-						<!-- Quote Icon -->
-						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+                                                <!-- Quote Icon -->
+                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-						<!-- Text -->
-						<div class="review-txt">
+                                                <!-- Text -->
+                                                <div class="review-txt">
 
-							<!-- Text -->
-							<p>{{ page.authorMessage3 }}
-							</p>
+                                                        <!-- Text -->
+                                                        <p>{{ page.authorMessage3 | default: "As a training provider, we appreciate the user-friendly interface and customizable digital badging options, which our students enthusiastically showcase on their social media profiles." }}
+                                                        </p>
 
-							<!-- Author -->
-							<div class="author-data clearfix">
+                                                        <!-- Author -->
+                                                        <div class="author-data clearfix">
 
-								<!-- Avatar -->
-								<div class="review-avatar">
-									<img src="{{ page.authorImage3 }}" alt="{{ page.authorName3 }}, {{ page.authorDesignation3 }}, {{ page.authorCompanyName3 }}" loading="lazy">
-								</div>
+                                                                <!-- Avatar -->
+                                                                <div class="review-avatar">
+                                                                        <img src="{{ page.authorImage3 | default: '/assets4/images/Images Webp/Kaisie.webp' }}" alt="{{ page.authorName3 | default: 'Kasie V.' }}, {{ page.authorDesignation3 | default: 'CEO' }}, {{ page.authorCompanyName3 | default: 'Sigma Forces' }}" loading="lazy">
+                                                                </div>
 
-								<!-- Data -->
-								<div class="review-author">
-									<h6 class="s-16 w-700">{{ page.authorName3 }}</h6>
-									<p class="p-sm" style="font-size:15px;">{{ page.authorDesignation3 }}</p>
-									<p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName3 }}</p>
-								</div>
+                                                                <!-- Data -->
+                                                                <div class="review-author">
+                                                                        <h6 class="s-16 w-700">{{ page.authorName3 | default: "Kasie V." }}</h6>
+                                                                        <p class="p-sm" style="font-size:15px;">{{ page.authorDesignation3 | default: "CEO" }}</p>
+                                                                        <p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName3 | default: "Sigma Forces" }}</p>
+                                                                </div>
 
-							</div> <!-- End Author -->
+                                                        </div> <!-- End Author -->
 
-						</div> <!-- End Text -->
+                                                </div> <!-- End Text -->
 
-					</div> <!-- END TESTIMONIAL #3 -->
+                                        </div> <!-- END TESTIMONIAL #3 -->
 
 
-					<!-- TESTIMONIAL #4 -->
-					<div class="review-1 bg--white-100 block-shadow r-08">
+                                        <!-- TESTIMONIAL #4 -->
+                                        <div class="review-1 bg--white-100 block-shadow r-08">
 
-						<!-- Quote Icon -->
-						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+                                                <!-- Quote Icon -->
+                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-						<!-- Text -->
-						<div class="review-txt">
+                                                <!-- Text -->
+                                                <div class="review-txt">
 
-							<!-- Text -->
-							<p>{{ page.authorMessage4 }}
-							</p>
+                                                        <!-- Text -->
+                                                        <p>{{ page.authorMessage4 | default: "It offers an end-to-end solution, is user-friendly with single-click awarding, enables students to share badges on LinkedIn, provides branding options, and has excellent customer support and training." }}
+                                                        </p>
 
-							<!-- Author -->
-							<div class="author-data clearfix">
+                                                        <!-- Author -->
+                                                        <div class="author-data clearfix">
 
-								<!-- Avatar -->
-								<div class="review-avatar">
-									<img src="{{ page.authorImage4 }}" alt="{{ page.authorName4 }}, {{ page.authorDesignation4 }}, {{ page.authorCompanyName4 }}" loading="lazy">
-								</div>
+                                                                <!-- Avatar -->
+                                                                <div class="review-avatar">
+                                                                        <img src="{{ page.authorImage4 | default: '/assets4/images/Images Webp/Sharon.webp' }}" alt="{{ page.authorName4 | default: 'Sharon D.' }}, {{ page.authorDesignation4 | default: 'Academic Coordinator' }}, {{ page.authorCompanyName4 | default: 'University of Texas' }}" loading="lazy">
+                                                                </div>
 
-								<!-- Data -->
-								<div class="review-author">
-									<h6 class="s-16 w-700">{{ page.authorName4 }}</h6>
-									<p class="p-sm" style="font-size:15px;">{{ page.authorDesignation4 }}</p>
-									<p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName4 }}</p>
-								</div>
+                                                                <!-- Data -->
+                                                                <div class="review-author">
+                                                                        <h6 class="s-16 w-700">{{ page.authorName4 | default: "Sharon D." }}</h6>
+                                                                        <p class="p-sm" style="font-size:15px;">{{ page.authorDesignation4 | default: "Academic Coordinator" }}</p>
+                                                                        <p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName4 | default: "University of Texas" }}</p>
+                                                                </div>
 
-							</div> <!-- End Author -->
+                                                        </div> <!-- End Author -->
 
-						</div> <!-- End Text -->
+                                                </div> <!-- End Text -->
 
-					</div> <!-- END TESTIMONIAL #4 -->
+                                        </div> <!-- END TESTIMONIAL #4 -->
 
 
-					<!-- TESTIMONIAL #5 -->
-					<div class="review-1 bg--white-100 block-shadow r-08">
+                                        {% if page.authorMessage5 %}
+                                        <!-- TESTIMONIAL #5 -->
+                                        <div class="review-1 bg--white-100 block-shadow r-08">
 
-						<!-- Quote Icon -->
-						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+                                                <!-- Quote Icon -->
+                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-						<!-- Text -->
-						<div class="review-txt">
+                                                <!-- Text -->
+                                                <div class="review-txt">
 
-							<!-- Text -->
-							<p>{{ page.authorMessage5 }}
-							</p>
+                                                        <!-- Text -->
+                                                        <p>{{ page.authorMessage5 }}
+                                                        </p>
 
-							<!-- Author -->
-							<div class="author-data clearfix">
+                                                        <!-- Author -->
+                                                        <div class="author-data clearfix">
 
-								<!-- Avatar -->
-								<div class="review-avatar">
-									<img src="{{ page.authorImage5 }}" alt="{{ page.authorName5 }}, {{ page.authorDesignation5 }}, {{ page.authorCompanyName5 }}" loading="lazy">
-								</div>
+                                                                <!-- Avatar -->
+                                                                <div class="review-avatar">
+                                                                        <img src="{{ page.authorImage5 }}" alt="{{ page.authorName5 }}, {{ page.authorDesignation5 }}, {{ page.authorCompanyName5 }}" loading="lazy">
+                                                                </div>
 
-								<!-- Data -->
-								<div class="review-author">
-									<h6 class="s-16 w-700">{{ page.authorName5 }}</h6>
-									<p class="p-sm" style="font-size:15px;">{{ page.authorDesignation5 }}</p>
-									<p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName5 }}</p>
-								</div>
+                                                                <!-- Data -->
+                                                                <div class="review-author">
+                                                                        <h6 class="s-16 w-700">{{ page.authorName5 }}</h6>
+                                                                        <p class="p-sm" style="font-size:15px;">{{ page.authorDesignation5 }}</p>
+                                                                        <p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName5 }}</p>
+                                                                </div>
 
-							</div> <!-- End Author -->
+                                                        </div> <!-- End Author -->
 
-						</div> <!-- End Text -->
+                                                </div> <!-- End Text -->
 
-					</div> <!-- END TESTIMONIAL #5 -->
+                                        </div> <!-- END TESTIMONIAL #5 -->
+                                        {% endif %}
 
 
-					<!-- TESTIMONIAL #6 -->
-					<div class="review-1 bg--white-100 block-shadow r-08">
+                                        {% if page.authorMessage6 %}
+                                        <!-- TESTIMONIAL #6 -->
+                                        <div class="review-1 bg--white-100 block-shadow r-08">
 
-						<!-- Quote Icon -->
-						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+                                                <!-- Quote Icon -->
+                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-						<!-- Text -->
-						<div class="review-txt">
+                                                <!-- Text -->
+                                                <div class="review-txt">
 
-							<!-- Text -->
-							<p>{{ page.authorMessage6 }}
-							</p>
+                                                        <!-- Text -->
+                                                        <p>{{ page.authorMessage6 }}
+                                                        </p>
 
-							<!-- Author -->
-							<div class="author-data clearfix">
+                                                        <!-- Author -->
+                                                        <div class="author-data clearfix">
 
-								<!-- Avatar -->
-								<div class="review-avatar">
-									<img src="{{ page.authorImage6 }}" alt="{{ page.authorName6 }}, {{ page.authorDesignation6 }}, {{ page.authorCompanyName6 }}" loading="lazy">
-								</div>
+                                                                <!-- Avatar -->
+                                                                <div class="review-avatar">
+                                                                        <img src="{{ page.authorImage6 }}" alt="{{ page.authorName6 }}, {{ page.authorDesignation6 }}, {{ page.authorCompanyName6 }}" loading="lazy">
+                                                                </div>
 
-								<!-- Data -->
-								<div class="review-author">
-									<h6 class="s-16 w-700">{{ page.authorName6 }}</h6>
-									<p class="p-sm" style="font-size:15px;">{{ page.authorDesignation6 }}</p>
-									<p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName6 }}</p>
-								</div>
+                                                                <!-- Data -->
+                                                                <div class="review-author">
+                                                                        <h6 class="s-16 w-700">{{ page.authorName6 }}</h6>
+                                                                        <p class="p-sm" style="font-size:15px;">{{ page.authorDesignation6 }}</p>
+                                                                        <p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName6 }}</p>
+                                                                </div>
 
-							</div> <!-- End Author -->
+                                                        </div> <!-- End Author -->
 
-						</div> <!-- End Text -->
+                                                </div> <!-- End Text -->
 
-					</div> <!-- END TESTIMONIAL #6 -->
+                                        </div> <!-- END TESTIMONIAL #6 -->
+                                        {% endif %}
 
 
-					<!-- TESTIMONIAL #7 -->
-					<div class="review-1 bg--white-100 block-shadow r-08">
+                                        {% if page.authorMessage7 %}
+                                        <!-- TESTIMONIAL #7 -->
+                                        <div class="review-1 bg--white-100 block-shadow r-08">
 
-						<!-- Quote Icon -->
-						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+                                                <!-- Quote Icon -->
+                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-						<!-- Text -->
-						<div class="review-txt">
+                                                <!-- Text -->
+                                                <div class="review-txt">
 
-							<!-- Text -->
-							<p>{{ page.authorMessage7 }}
-							</p>
+                                                        <!-- Text -->
+                                                        <p>{{ page.authorMessage7 }}
+                                                        </p>
 
-							<!-- Author -->
-							<div class="author-data clearfix">
+                                                        <!-- Author -->
+                                                        <div class="author-data clearfix">
 
-								<!-- Avatar -->
-								<div class="review-avatar">
-									<img src="{{ page.authorImage7 }}" alt="{{ page.authorName7 }}, {{ page.authorDesignation7 }}, {{ page.authorCompanyName7 }}" loading="lazy">
-								</div>
+                                                                <!-- Avatar -->
+                                                                <div class="review-avatar">
+                                                                        <img src="{{ page.authorImage7 }}" alt="{{ page.authorName7 }}, {{ page.authorDesignation7 }}, {{ page.authorCompanyName7 }}" loading="lazy">
+                                                                </div>
 
-								<!-- Data -->
-								<div class="review-author">
-									<h6 class="s-16 w-700">{{ page.authorName7 }}</h6>
-									<p class="p-sm" style="font-size:15px;">{{ page.authorDesignation7 }}</p>
-									<p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName7 }}</p>
-								</div>
+                                                                <!-- Data -->
+                                                                <div class="review-author">
+                                                                        <h6 class="s-16 w-700">{{ page.authorName7 }}</h6>
+                                                                        <p class="p-sm" style="font-size:15px;">{{ page.authorDesignation7 }}</p>
+                                                                        <p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName7 }}</p>
+                                                                </div>
 
-							</div> <!-- End Author -->
+                                                        </div> <!-- End Author -->
 
-						</div> <!-- End Text -->
+                                                </div> <!-- End Text -->
 
-					</div> <!-- END TESTIMONIAL #7 -->
+                                        </div> <!-- END TESTIMONIAL #7 -->
+                                        {% endif %}
 
 
-					<!-- TESTIMONIAL #8 -->
-					<div class="review-1 bg--white-100 block-shadow r-08">
+                                        {% if page.authorMessage8 %}
+                                        <!-- TESTIMONIAL #8 -->
+                                        <div class="review-1 bg--white-100 block-shadow r-08">
 
-						<!-- Quote Icon -->
-						<div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
+                                                <!-- Quote Icon -->
+                                                <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
 
-						<!-- Text -->
-						<div class="review-txt">
+                                                <!-- Text -->
+                                                <div class="review-txt">
 
-							<!-- Text -->
-							<p>{{ page.authorMessage8 }}
-							</p>
+                                                        <!-- Text -->
+                                                        <p>{{ page.authorMessage8 }}
+                                                        </p>
 
-							<!-- Author -->
-							<div class="author-data clearfix">
+                                                        <!-- Author -->
+                                                        <div class="author-data clearfix">
 
-								<!-- Avatar -->
-								<div class="review-avatar">
-									<img src="{{ page.authorImage8 }}" alt="{{ page.authorName8 }}, {{ page.authorDesignation8 }}, {{ page.authorCompanyName8 }}" loading="lazy">
-								</div>
+                                                                <!-- Avatar -->
+                                                                <div class="review-avatar">
+                                                                        <img src="{{ page.authorImage8 }}" alt="{{ page.authorName8 }}, {{ page.authorDesignation8 }}, {{ page.authorCompanyName8 }}" loading="lazy">
+                                                                </div>
 
-								<!-- Data -->
-								<div class="review-author">
-									<h6 class="s-16 w-700">{{ page.authorName8 }}</h6>
-									<p class="p-sm" style="font-size:15px;">{{ page.authorDesignation8 }}</p>
-									<p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName8 }}</p>
-								</div>
+                                                                <!-- Data -->
+                                                                <div class="review-author">
+                                                                        <h6 class="s-16 w-700">{{ page.authorName8 }}</h6>
+                                                                        <p class="p-sm" style="font-size:15px;">{{ page.authorDesignation8 }}</p>
+                                                                        <p class="p-sm mt-2" style="font-size:15px;">{{ page.authorCompanyName8 }}</p>
+                                                                </div>
 
-							</div> <!-- End Author -->
+                                                        </div> <!-- End Author -->
 
-						</div> <!-- End Text -->
+                                                </div> <!-- End Text -->
 
-					</div> <!-- END TESTIMONIAL #8 -->
+                                        </div> <!-- END TESTIMONIAL #8 -->
+                                        {% endif %}
 
 
-				</div>
-			</div>
-		</div> <!-- END TESTIMONIALS CONTENT -->
+                                </div>
+                        </div>
+                </div> <!-- END TESTIMONIALS CONTENT -->
 
 
-	</div> <!-- End container -->
+        </div> <!-- End container -->
 </section> <!-- END TESTIMONIALS-1 -->
