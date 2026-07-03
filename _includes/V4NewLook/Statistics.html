@@ -9,10 +9,6 @@
         </div>
 </div> -->
 
-<!-- CLIENT BRANDING / CUSTOMER LOGO LIST
-                        ============================================= -->
-{% include V4NewLook/ClientLogos.html %}
-
 <!-- STATISTIC-1
                         ============================================= -->
 <div id="statistic-1" class="py-100 statistic-section division" style="margin-bottom: -50px; margin-top: -90px;">
@@ -36,7 +32,7 @@
 
                                                         <!-- Text -->
                                                         <div class="statistic-block-txt color--grey">
-                                                                <p class="p-md">{{ page.Institutiontext | default: "Institutions trust<br>CertifyMe" }}</p>
+                                                                <p class="p-md">{{page.Institutiontext}}</p>
                                                         </div>
 
                                                 </div>
@@ -56,7 +52,7 @@
 
                                                         <!-- Text -->
                                                         <div class="statistic-block-txt color--grey">
-                                                                <p class="p-md">{{ page.Usertext | default: "Users across 144<br>Countries" }}</p>
+                                                                <p class="p-md">{{page.Usertext}}</p>
                                                         </div>
 
                                                 </div>
@@ -76,7 +72,7 @@
 
                                                         <!-- Text -->
                                                         <div class="statistic-block-txt color--grey">
-                                                                <p class="p-md">{{ page.Credentialtext | default: "Digital credentials issued every month" }}</p>
+                                                                <p class="p-md">{{page.Credentialtext}}</p>
                                                         </div>
 
                                                 </div>
