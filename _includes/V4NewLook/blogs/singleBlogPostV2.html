@@ -636,7 +636,18 @@ so the section is never empty.
                                     {% endif %}
 
                                     <!-- Author -->
-                                    {% assign post_author = page.author | default: "CertifyMe Team" %}
+                                    {% comment %}
+                                      Single place to control the displayed blog author across
+                                      every post. Legacy front-matter values (old default writer,
+                                      blank, etc.) are normalized to the current author here so
+                                      fixing the byline site-wide never requires editing each .md.
+                                    {% endcomment %}
+                                    {% assign raw_author = page.author | default: "" | strip %}
+                                    {% if raw_author == "" or raw_author == "Mrunal Upadhye" or raw_author == "CertifyMe Team" %}
+                                      {% assign post_author = "Aneesha Kurian" %}
+                                    {% else %}
+                                      {% assign post_author = raw_author %}
+                                    {% endif %}
                                     {% assign author_slug = post_author | downcase | replace: " ", "-" %}
                                     <div class="blog-author-row">
                                         <div>

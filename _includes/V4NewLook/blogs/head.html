@@ -153,9 +153,15 @@
         {% endif %}
         "datePublished": "{{ page.date | date_to_xmlschema }}",
         "dateModified": "{{ page.date | date_to_xmlschema }}",
+        {% assign schema_raw_author = page.author | default: "" | strip %}
+        {% if schema_raw_author == "" or schema_raw_author == "Mrunal Upadhye" or schema_raw_author == "CertifyMe Team" %}
+          {% assign schema_author = "Aneesha Kurian" %}
+        {% else %}
+          {% assign schema_author = schema_raw_author %}
+        {% endif %}
         "author": {
           "@type": "Person",
-          "name": "{% if page.author %}{{ page.author }}{% else %}CertifyMe Team{% endif %}"
+          "name": "{{ schema_author }}"
         },
         "publisher": { "@id": "https://www.certifyme.online/#organization" },
         "isPartOf": { "@id": "https://www.certifyme.online/#website" },
