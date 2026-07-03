@@ -10,6 +10,7 @@ sitemap.priority: 0.9
 # hero section
 HeroTitle: Data-Driven Insights To Monitor Your Credential Engagement
 HeroText: Advanced analytics of CertifyMe to understand and measure the level of recipient engagement with the awarded digital credentials.
+HeroImage: /assets4/images/Analytics/1.png
 
 BoxContentTitle: Comprehensive Reporting of Digital Certificate Performance
 BoxContentText: Receive comprehensive reports containing a detailed overview of your credentialing activities. Our reporting feature enables you to track key metrics, such as the number of credentials issued, earned, and downloaded.

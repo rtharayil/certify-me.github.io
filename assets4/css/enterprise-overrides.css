@@ -654,3 +654,93 @@ h2.statistic-number {
     margin-bottom: -20px !important;
   }
 }
+
+/* ── 11. FEATURE PAGES (api, security, whitelabel, analytics, wallet,
+       job-portal, verifiable-signature) — split hero + card polish ── */
+
+/* Hero image — floating card with soft shadow, matches homepage polish */
+.fp-hero-img {
+  position: relative;
+}
+.fp-hero-img img {
+  border-radius: 16px !important;
+  box-shadow: var(--cm-shadow-lg) !important;
+  background: #fff;
+}
+
+/* Box-content wrapper — replace flat theme background with clean card */
+.fp-box-wrapper.bc-1-wrapper {
+  background: var(--cm-lavender-2) !important;
+  padding: 60px !important;
+}
+.fp-box-wrapper .txt-block h2 {
+  color: var(--cm-indigo) !important;
+}
+.fp-box-img img {
+  border-radius: 14px !important;
+  box-shadow: var(--cm-shadow-md) !important;
+  background: #fff;
+}
+
+/* Alternating feature blocks (Feature1-5) — card-style images */
+.content-section.ct-01 .img-block img,
+.content-section.ct-02 .img-block img {
+  border-radius: 14px !important;
+  box-shadow: var(--cm-shadow-md) !important;
+  background: #fff;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.content-section.ct-01 .img-block img:hover,
+.content-section.ct-02 .img-block img:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--cm-shadow-lg) !important;
+}
+.content-section .txt-block h2,
+.content-section .txt-block h3 {
+  color: var(--cm-indigo) !important;
+  font-weight: 800 !important;
+}
+.content-section .txt-block .tra-link {
+  font-weight: 700 !important;
+}
+
+@media (max-width: 767px) {
+  .fp-hero-img {
+    margin-top: 24px;
+  }
+  .fp-box-wrapper.bc-1-wrapper {
+    padding: 32px 20px !important;
+  }
+}
+
+/* ── 12. CERTIFICATE TEMPLATES / ADMIN ROLES PAGE — header band polish ─────── */
+.ct-hero-band {
+  background-image:
+    radial-gradient(ellipse 80% 60% at 70% -10%, rgba(106,90,205,.10) 0%, transparent 60%),
+    linear-gradient(160deg, #ece9fd 0%, #f0f1ff 40%, #edf2ff 70%, #f5f7ff 100%);
+  padding: 56px 0 44px !important;
+  margin-bottom: 20px;
+}
+/* Standalone hero band (not nested inside .inner-page-hero) needs its own
+   clearance so it doesn't render under the fixed header */
+.ct-hero-band-standalone {
+  padding-top: 180px !important;
+}
+.ct-hero-title.s-38 {
+  color: var(--cm-indigo) !important;
+  font-weight: 800 !important;
+  padding: 0 0 14px 0 !important;
+  letter-spacing: -.5px;
+}
+.ct-hero-sub {
+  font-size: 1.0625rem;
+  color: var(--cm-muted);
+  max-width: 640px;
+  line-height: 1.7;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .ct-hero-band {
+    padding: 36px 0 28px !important;
+  }
+}

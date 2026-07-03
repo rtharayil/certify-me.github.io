@@ -10,6 +10,7 @@ sitemap.priority: 0.9
 # hero section
 HeroTitle: Award Digital Certificates that Open New Avenues for Employment
 HeroText: Enable issuers to establish a learning environment that not only impels students to learn but also meets their ultimate goal, of landing a suitable job.
+HeroImage: /assets4/images/Job Portal/1.png
 
 BoxContentTitle: Bridge the Skills Gap
 BoxContentText: Our credible platform takes care of the complete certification process and also comes with an integrated career-advancing tool to promote student employability. Stand out in the competition by quickly identifying the opportunities available relevant to your credentials.

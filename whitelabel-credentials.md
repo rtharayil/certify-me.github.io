@@ -10,6 +10,7 @@ sitemap.priority: 0.9
 # hero section
 HeroTitle: A Powerful White Labeling Solution to Showcase Brand Identity
 HeroText: Enjoy complete control over your digital credential visuals by opting for our premium white-labeled badges and certificates. Tailor credential navbar, footer, and header to match your taste.
+HeroImage: /assets4/images/WhiteLabel (1)/1.png
 
 BoxContentTitle: Maintain Brand Consistency All Over the Digital Credentials
 BoxContentText: Choose our white labeling plan to ensure a consistent brand appearance across all touchpoints of the credentialing process. From registration to issuing, your stakeholders will interact with a platform that reflects your unique brand identity. Experience complete freedom of customizing URL, page style, colors, fonts, header, and footer with CertifyMe.

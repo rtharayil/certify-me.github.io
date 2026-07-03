@@ -10,6 +10,7 @@ sitemap.priority: 0.9
 # hero section
 HeroTitle: Custom Badge Wallet to Keep Your Digital Credentials in One Place
 HeroText: Present digital certificates professionally and memorably. Choose our custom badge wallet feature for easy storage of achievements.
+HeroImage: /assets4/images/wallet/1.png
 
 BoxContentTitle: Verify Portable Digital Certificates from Mobile Devices
 BoxContentText: The custom badge wallet feature simplifies digital credential storage. Recipients can collect certificates & badges in one place. The badge wallets are optimized for mobile devices, ensuring a seamless and responsive viewing experience for recipients.

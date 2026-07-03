@@ -1,30 +1,25 @@
-<!-- HERO-27
+<!-- FEATURE PAGE HERO — split layout matching homepage hero-7
                         ============================================= -->
-<section id="hero-27" class="gr--whitesmoke hero-section">
-    <div class="hero-overlay bg--fixed">
-        <div class="container text-center">
+<section id="hero-7" class="gr--perl hero-section fp-hero">
+    <div class="hero-overlay">
+        <div class="container">
+            <div class="row d-flex align-items-center">
 
-
-            <!-- HERO TEXT -->
-            <div class="row justify-content-center">
-                <div class="col-md-10 col-lg-9">
-                    <div class="hero-27-txt wow fadeInUp">
+                <!-- HERO TEXT -->
+                <div class="col-md-6">
+                    <div class="hero-7-txt wow fadeInUp">
 
                         <!-- Title -->
-                        <h1 class="s-46 w-700">{{page.HeroTitle}}</h1>
+                        <h1 class="s-42 w-700" style="padding-bottom: 20px;">{{page.HeroTitle}}</h1>
 
                         <!-- Text -->
-                        <p class="s-18">{{page.HeroText}}
+                        <p class="p-lg">{{page.HeroText}}
                         </p>
 
                         <!-- Buttons -->
-                        <div class="btns-group">
-                            <a href="https://info.certifyme.online/request-demo"
-                                class="btn r-04 btn--theme hover--theme">Request A Demo</a>
-                            <a href="https://www.youtube.com/watch?v=TJMwk6qIxSc"
-                                class="video-popup1 btn r-04 btn--tra-black hover--theme ico-20 ico-right">
-                                See how it works <span class="flaticon-play"></span>
-                            </a>
+                        <div class="btns-group mt-4">
+                            <a href="https://info.certifyme.online/request-demo" target="_blank"
+                                class="btn r-04 btn--theme hover--black" rel="noopener noreferrer">Request a Demo</a>
                         </div>
 
                         <!-- Advantages List -->
@@ -47,28 +42,24 @@
                         </ul>
 
                     </div>
-                </div>
-            </div> <!-- END HERO TEXT -->
+                </div> <!-- END HERO TEXT -->
 
+                <!-- HERO IMAGE -->
+                <div class="col-md-6">
+                    <div class="hero-7-img fp-hero-img text-center wow fadeInUp">
+                        <img class="img-fluid" src="{{page.HeroImage | default: page.BoxImage}}" alt="{{page.HeroTitle}}" loading="eager" fetchpriority="high">
+                    </div>
+                </div> <!-- END HERO IMAGE -->
 
+            </div> <!-- End row -->
         </div> <!-- End container -->
     </div> <!-- End hero-overlay -->
-</section> <!-- END HERO-27 -->
+</section> <!-- END HERO-7 -->
 
 <!-- BRANDS-1
                         ============================================= -->
-<div id="brands-1" class="pb-100 brands-section wow fadeInUp" style="margin-top: 40px; margin-bottom: -100px;">
+<div id="brands-1" class="pb-60 pt-40 brands-section wow fadeInUp">
     <div class="container">
-
-
-        <!-- BRANDS TITLE -->
-        <!-- <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-9">
-                <div class="brands-title mb-50">
-                    <p class="s-24">The Most Trusted Digital Credential Platform</p>
-                </div>
-            </div>
-        </div> -->
 
         <!-- BRANDS CAROUSEL -->
         <div class="row">
@@ -78,45 +69,44 @@
 
                     <!-- BRAND LOGO IMAGE -->
                     <div class="brand-logo">
-                        <a href="#"><img class="img-fluid" src="/assets4/images/University of europe.png"
-                                alt="brand-logo" loading="lazy"></a>
+                        <img class="img-fluid" src="/assets4/images/University of europe.png"
+                                alt="University of Europe logo" loading="lazy">
                     </div>
 
 
                     <!-- BRAND LOGO IMAGE -->
                     <div class="brand-logo">
-                        <a href="#"><img class="img-fluid" src="/assets4/images/PMI logo greyscale.png"
-                                alt="brand-logo" loading="lazy"></a>
+                        <img class="img-fluid" src="/assets4/images/PMI logo greyscale.png"
+                                alt="PMI logo" loading="lazy">
                     </div>
 
 
                     <!-- BRAND LOGO IMAGE -->
                     <div class="brand-logo">
-                        <a href="#"><img class="img-fluid" src="/assets4/images/LEB.png" alt="brand-logo" loading="lazy"></a>
+                        <img class="img-fluid" src="/assets4/images/LEB.png" alt="LEB logo" loading="lazy">
                     </div>
 
 
                     <!-- BRAND LOGO IMAGE -->
                     <div class="brand-logo">
-                        <a href="#"><img class="img-fluid" src="/assets4/images/IEEE greyscale.png"
-                                alt="brand-logo" loading="lazy"></a>
+                        <img class="img-fluid" src="/assets4/images/IEEE greyscale.png"
+                                alt="IEEE logo" loading="lazy">
                     </div>
 
 
                     <!-- BRAND LOGO IMAGE -->
                     <div class="brand-logo">
-                        <a href="#"><img class="img-fluid" src="/assets4/images/Harvardlogo.png" alt="brand-logo" loading="lazy"></a>
+                        <img class="img-fluid" src="/assets4/images/Harvardlogo.png" alt="Harvard logo" loading="lazy">
                     </div>
 
 
                     <!-- BRAND LOGO IMAGE -->
                     <div class="brand-logo">
-                        <a href="#"><img class="img-fluid" src="/assets4/images/Xebia (1).png" alt="brand-logo" loading="lazy"></a>
+                        <img class="img-fluid" src="/assets4/images/Xebia (1).png" alt="Xebia logo" loading="lazy">
                     </div>
                 </div>
             </div>
         </div> <!-- END BRANDS CAROUSEL -->
-
 
     </div> <!-- End container -->
 </div> <!-- END BRANDS-1 -->
@@ -124,9 +114,9 @@
 
 <!-- BOX CONTENT
                         ============================================= -->
-<section id="lnk-1" class="pt-80 ws-wrapper content-section">
+<section id="lnk-1" class="pt-40 ws-wrapper content-section">
     <div class="container">
-        <div class="bc-1-wrapper bg--02 bg--fixed r-16">
+        <div class="bc-1-wrapper fp-box-wrapper r-16">
             <div class="section-overlay">
                 <div class="row d-flex align-items-center">
 
@@ -142,28 +132,11 @@
                             <p class="s-18">{{page.BoxContentText}}
                             </p>
 
-                            <!-- List -->
-                            <!-- <ul class="simple-list">
-
-                                <li class="list-item">
-                                    <p>Cursus purus suscipit vitae cubilia magnis volute egestas vitae sapien
-                                        turpis sodales magna
-                                    </p>
-                                </li>
-
-                                <li class="list-item">
-                                    <p class="mb-0">Tempor sapien quaerat an ipsum laoreet purus and sapien dolor
-                                        an ultrice ipsum aliquam congue
-                                    </p>
-                                </li>
-
-                            </ul> -->
-
                             <!-- Link -->
                             <div class="txt-block-tra-link mt-25">
-                                <a href="https://info.certifyme.online/talk-with-expert" target="_blank"
+                                <a href="https://info.certifyme.online/request-demo" target="_blank"
                                     class="tra-link ico-20 color--theme" rel="noopener noreferrer">
-                                    Talk to our Experts <span class="flaticon-next"></span>
+                                    Request a Demo <span class="flaticon-next"></span>
                                 </a>
                             </div>
 
@@ -173,7 +146,7 @@
 
                     <!-- IMAGE BLOCK -->
                     <div class="col-md-6 order-first order-md-2">
-                        <div class="img-block right-column wow fadeInLeft">
+                        <div class="img-block right-column fp-box-img wow fadeInLeft">
                             <img class="img-fluid" src="{{page.BoxImage}}" alt="{{page.BoxContentTitle}}" loading="lazy">
                         </div>
                     </div>

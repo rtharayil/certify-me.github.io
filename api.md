@@ -12,6 +12,7 @@ sitemap.priority: 0.9
 # hero section
 HeroTitle: CertifyMe REST API for Digital Credential Automation
 HeroText: Award, retrieve, edit, and delete verifiable digital credentials programmatically. CertifyMe's REST API gives developers full control over the credential lifecycle — from template creation to analytics — so you can integrate credentialing directly into your platform, LMS, or workflow.
+HeroImage: /assets4/images/integrations/1.png
 
 BoxContentTitle: Full Credential Lifecycle via REST API
 BoxContentText: The CertifyMe API is a RESTful JSON API hosted at <strong>https://my.certifyme.online/api/v2/</strong>. It covers four capability tiers — Credential, Template, Project Manager, and Analytics — giving your team programmatic control over every stage of the credentialing process. Whether you are issuing thousands of certificates automatically or pulling engagement analytics for your dashboard, the API handles it. Full interactive reference documentation is available at <a href="https://cme-api-v2.readme.io" target="_blank" rel="noopener noreferrer">cme-api-v2.readme.io</a>.

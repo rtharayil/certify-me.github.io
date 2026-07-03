@@ -12,6 +12,7 @@ sitemap.priority: 0.9
 # hero section
 HeroTitle: Enterprise-Grade Security & Compliance for Digital Credentials
 HeroText: CertifyMe is certified under ISO 27001 (Information Security), ISO 27701 (Privacy), and ISO 9001 (Quality Management), and compliant with GDPR, FERPA, and COPPA. Every credential issued on the platform is tamper-proof, independently verifiable, and protected by industry-standard encryption — with no sensitive learner data required for issuance.
+HeroImage: /images/iso_27001-1.png
 
 BoxContentTitle: Certified. Compliant. Trusted by 500+ Institutions in 144+ Countries.
 BoxContentText: CertifyMe operates under a comprehensive information security management framework independently audited to ISO 27001 standards. Privacy is governed under ISO 27701, ensuring your learners' data is handled with the highest level of care. Quality processes are certified under ISO 9001. The platform is GDPR compliant for European data protection requirements, FERPA compliant for US educational records, and COPPA compliant for platforms serving users under 13. All credentials are issued with cryptographic signatures and QR-based verification — making every badge or certificate independently verifiable without relying on CertifyMe's servers.

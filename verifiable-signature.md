@@ -10,6 +10,7 @@ sitemap.priority: 0.9
 # hero section
 HeroTitle: Cryptographic Signature-Integrated Digital Credentials for High Level of Data Security
 HeroText: Ensure data integrity by employing verifiable signatures in your digital certificates to showcase proof of authenticity.
+HeroImage: /assets4/images/Cryptographic Signature/1.png
 
 BoxContentTitle: What is a Cryptographic Signature?
 BoxContentText: A cryptographic signature is a computational technique to prove the authenticity of your verifiable certificate. These signatures prevent data tampering and are perfect for fraud prevention. The signatures record every minute detail of digital communications via credentials. A certificate that comes with such signatures ensures heightened security and authority.
