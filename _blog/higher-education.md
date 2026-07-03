@@ -9,6 +9,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/higher_education_case_study.jpg
 featured: true
+seo_keywords: "Leeds University digital credentials case study, sustainability in higher education, reducing university paper waste, cost of university certificates, CertifyMe university results"
+faqs:
+  - question: "How did Leeds University cut their paper use by 96%?"
+    answer: "They basically ditched the traditional paper certificates for their Environmental Change program. I think it’s pretty cool that a sustainability course finally started practicing what they preach. Switching to digital saved thousands of sheets of paper every year."
+  - question: "Did the students actually like the digital version?"
+    answer: "Yeah, the feedback was really positive. Graduates loved being able to share their achievements on LinkedIn with just a couple of clicks. It’s way more useful for them than a piece of paper sitting in a drawer somewhere."
+  - question: "How much money did the university actually save?"
+    answer: "They saw a 39% drop in costs. When you factor in printing, secure storage, and mailing those heavy certificates, the savings really add up. Plus, they don't have to deal with the headache of lost mail anymore."
+  - question: "Is it hard to verify these digital degrees?"
+    answer: "Not at all. CertifyMe uses blockchain to make sure the records are legit. Employers can verify a graduate's degree instantly, which beats waiting days for a registrar's office to call back."
 ---
 
 ## Overview

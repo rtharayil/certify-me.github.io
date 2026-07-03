@@ -12,6 +12,16 @@ author : Mrunal Upadhye
 imageLink: /img/blog/50 Alarming Workplace Stress Statistics (2025 Edition).png
 
 featured: true
+seo_keywords: "workplace stress statistics 2025, employee burnout trends, impact of job stress on productivity, mental health at work stats, workplace stress healthcare costs"
+faqs:
+  - question: "How much is workplace stress actually costing businesses?"
+    answer: "It's staggering, really. The WHO says depression and anxiety cost the global economy about $1 trillion a year in lost productivity. In the US alone, job stress is a $300 billion problem annually."
+  - question: "Is technology making us more stressed at work?"
+    answer: "It looks that way. About 72% of employees say they feel stressed because they're always connected through email and mobile devices. It's that 'always on' feeling that makes it so hard to disconnect."
+  - question: "Which group of workers is feeling the most pressure right now?"
+    answer: "Younger workers and mothers are getting hit hardest. Our data shows that 62% of women aged 18 to 34 feel completely overwhelmed, and working moms report 18% more stress than women without kids."
+  - question: "Does stress really affect my physical health that much?"
+    answer: "Yes, and the numbers are scary. Workplace stress is responsible for about 70% of doctor visits. It's not just in your head; it's linked to heart disease, hypertension, and even poor sleep patterns."
 ---
 
 Workplace stress has evolved into a pervasive global issue, impacting not only individual employees but organizations and entire economies. The mounting pressure, particularly in the wake of ongoing global challenges, is causing a significant toll on productivity, health, and mental well-being. 

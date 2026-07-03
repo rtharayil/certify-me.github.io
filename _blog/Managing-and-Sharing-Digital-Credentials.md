@@ -9,6 +9,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/preview1.png
 featured: true
+seo_keywords: "share digital credentials, claim digital badge, verify certificates online, social media credential sharing, digital certificate management"
+faqs:
+  - question: "How do I actually get my badge after I earn it?"
+    answer: "You'll usually get an email notification. From there, you just need to create an account on the platform (like CertifyMe) and 'claim' it. I recommend setting up 'auto-accept' if you can—it makes things so much easier for future badges."
+  - question: "Can I share my badge on Instagram?"
+    answer: "Yes, you can! While LinkedIn is the most common, most platforms allow you to share to Facebook, Twitter, and even Instagram. It's a great way to celebrate your hard work with your whole network."
+  - question: "Is it possible to get a physical copy of my digital certificate?"
+    answer: "Absolutely. Once you've claimed it, you can usually download a high-quality version for printing. I've seen people do this for their personal portfolios or even to hang on their office wall."
+  - question: "How do employers know my shared link is real?"
+    answer: "The link leads directly to a verification page on our platform. They don't even have to call your school or the issuer; the system confirms the authenticity and your details instantly, often via a QR code."
 ---
 
 Digital credentials platforms help create and issue Digital credentials. But the question arises, how do we manage and share the credential earned?

@@ -10,6 +10,16 @@ author : Mrunal Upadhye
 imageLink: /img/blog/What-Is-a-Digital-Open-Badge-Beginner's-Guide.png
 
 featured: true
+seo_keywords: "what is a digital open badge, open badges standard, benefits of digital badges for students, stackable micro-credentials, verify digital badges online"
+faqs:
+  - question: "Is an 'Open Badge' just a fancy image?"
+    answer: "I get this one a lot! While there's a visual icon, the real 'meat' is the metadata hidden inside. It tells the story of who gave it to you and exactly what you did to earn it. It’s more like a smart-chip than a sticker."
+  - question: "What does 'Open' actually mean in this context?"
+    answer: "It means you're not stuck in one platform. Because they follow an open standard, you can take your badge from your university's system and drop it into a totally different wallet or portfolio. You own it, not the software company."
+  - question: "Can I earn badges for things outside of my regular classes?"
+    answer: "Definitely. In my experience, badges are perfect for things like soft skills, volunteering, or workshops that don't usually show up on a traditional transcript. They help fill in the gaps of what makes you, well, you."
+  - question: "How do I show my badges to potential employers?"
+    answer: "Most people add them to their LinkedIn 'Licenses & Certifications' section. You can also put a link in your email signature or on your personal website. It's a great way to show you're constantly learning new things."
 ---
 
 Remember those embroidered patches or shiny stickers you earned as a kid for finishing a reading challenge or mastering the monkey bars? Now imagine those, but made for the digital world—visual markers of your progress and skills that can be shared, verified, and stored forever.

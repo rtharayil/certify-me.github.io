@@ -9,6 +9,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /assets4/images/understanding_analy.png
 featured: true
+seo_keywords: "credential analytics, digital badge reporting, tracking learner engagement, CertifyMe dashboard features, organization level analytics"
+faqs:
+  - question: "What kind of data can I see on the CertifyMe dashboard?"
+    answer: "You get a full view of your credentialing activity. We track everything from total badges issued to how often people are actually verifying them. It's great for seeing if your programs are really hitting the mark."
+  - question: "Can I see how individual learners are doing?"
+    answer: "Yes, we have awardee-level analytics for that. You can see which credentials each person has earned and even how long it's taking them to finish their courses. It helps in spotting who might need a bit more support."
+  - question: "Is there a way to download these reports?"
+    answer: "Of course. There's a 'Download Report' button right at the top of the analytics tab. You can export everything to PDF or Excel if you need to share it with stakeholders or keep records for an audit."
+  - question: "Does the platform track where my badge holders are located?"
+    answer: "It does! We can show you the geographical distribution of your credential holders. It's pretty cool to see your impact mapped out across different regions globally."
 ---
 
 

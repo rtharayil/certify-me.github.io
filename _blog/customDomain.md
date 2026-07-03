@@ -9,6 +9,16 @@ author : Ranjith Tharayil
 topic: news
 imageLink: /img/blog/credential/12.png
 featured: true
+seo_keywords: "custom domain digital certificates, map subdomain CertifyMe, CNAME record guide, white label credentials, GoDaddy CNAME setup"
+faqs:
+  - question: "Why should I bother setting up a custom domain instead of just using the default one?"
+    answer: "Honestly, it’s all about trust. When a student gets a certificate link that says 'certificate.youruniversity.com' instead of a third-party URL, it just feels more official and keeps your branding front and center."
+  - question: "Is the CNAME setup really as complicated as it sounds?"
+    answer: "It's actually pretty straightforward. You just need to point your chosen subdomain to app.certifyme.online in your DNS settings. If you’ve ever verified a site for Google Search Console, you’ve basically already done this kind of work."
+  - question: "Will I need to buy an SSL certificate for my new subdomain?"
+    answer: "No need to worry about that. Once you’ve mapped the domain and let us know, we handle the SSL certificate creation on our end so everything stays secure and encrypted."
+  - question: "How long does it take for the custom domain to start working?"
+    answer: "Usually, the DNS changes take anywhere from a few minutes to an hour to propagate, though GoDaddy and others sometimes say it can take longer. In my experience, it's usually ready by the time you've finished your second cup of coffee."
 ---
 
 ## Steps 1: Choose your SubDomain

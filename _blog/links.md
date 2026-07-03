@@ -7,6 +7,16 @@ abstract: Media Kit
 topic: news
 imageLink: /img/preview1.png
 featured: true
+seo_keywords: "CertifyMe media kit, digital credential platform assets, CertifyMe logos, brand guidelines, digital badging company info"
+faqs:
+  - question: "Where can I find the official CertifyMe logo?"
+    answer: "I've included links for both light and dark backgrounds right here in the media kit. Just scroll down and you'll see the direct links to the images. Feel free to use the one that fits your design best."
+  - question: "Do you have a short description I can use for a feature?"
+    answer: "Yes, I've written out a couple of options—one that's about 150 words if you need the full story, and a shorter 65-word version for quick blurbs. Both are ready for you to copy and paste."
+  - question: "What is CertifyMe's main mission?"
+    answer: "We really believe that every certificate we generate is a chance to create a smile. Our goal is to be the most trusted platform out there, and honestly, we'd love for you to be part of that journey with us."
+  - question: "Where are you guys based?"
+    answer: "We're a SaaS startup based out of Bangalore, India. We've been growing pretty fast and now have over 300 global brands using our platform to automate their credentialing, which is something we're quite proud of."
 ---
 
 #### Tag line

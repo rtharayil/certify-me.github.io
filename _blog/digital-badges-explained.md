@@ -10,6 +10,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/CertifyMe Blog 2 banner.png
 featured: true
+seo_keywords: "what is a digital badge, open badges explained, benefits of digital credentials, digital badge vs certificate, verifiable achievements"
+faqs:
+  - question: "What's the biggest difference between a regular PDF certificate and a digital badge?"
+    answer: "It really comes down to the metadata. A badge isn't just a picture; it's a container for data like who issued it and exactly what you did to earn it. Plus, you can embed it in places a PDF just doesn't work well, like your email signature."
+  - question: "Why do I keep hearing about 'Open Badges'?"
+    answer: "Open Badges are just a specific technical standard that makes sure your badge can be moved between different platforms. It's like having a universal plug—it ensures your achievement isn't stuck in one company's ecosystem forever."
+  - question: "How do these badges help with my job search?"
+    answer: "They make your skills 'searchable'. When you put a verified badge on LinkedIn, recruiters can see at a glance that your skill is backed by an organization. It's much more convincing than just writing a bullet point on a resume."
+  - question: "Can I really just update or revoke a badge after I've sent it?"
+    answer: "Yes, and that's a huge plus for issuers. If a certification expires or someone's status changes, you can update the record instantly. It keeps the whole system honest and prevents people from using outdated credentials."
 ---
 
 In today's digital age, the challenge of effectively showcasing one's qualifications and accomplishments has become increasingly daunting.

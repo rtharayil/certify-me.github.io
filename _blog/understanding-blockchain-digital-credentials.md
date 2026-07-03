@@ -10,6 +10,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/Blog 3 Banner WEBP file.webp
 featured: true
+seo_keywords: "blockchain digital credentials explained, how blockchain certificates work, immutable ledger for education, Learner Credential Network, blockchain fraud prevention"
+faqs:
+  - question: "Wait, is my personal info actually stored ON the blockchain?"
+    answer: "I get asked this a lot! The answer is no. We only store a 'hash'—a unique digital fingerprint—on the blockchain. Your name and private details stay in your wallet, keeping things private but still totally verifiable."
+  - question: "What happens if a node in the blockchain gets hacked?"
+    answer: "That's the beauty of decentralization. Since there are so many copies of the record spread across different nodes, one bad actor can't change the truth. You'd need to control more than half the network to pull off a fraud, which is basically impossible."
+  - question: "Is the Learner Credential Network just for college degrees?"
+    answer: "Not at all. I've seen it used for everything from professional certifications to tiny skill badges. It’s about creating a 'living resume' where every single achievement is backed by solid proof, no matter how small."
+  - question: "Can an employer verify my blockchain badge without any special software?"
+    answer: "Yes, they usually just need a link or a QR code. The verification platform does the heavy lifting in the background, checking the ledger and giving a thumbs-up (or down) in seconds. No crypto knowledge required!"
 ---
 
 Blockchain digital credentials are digital versions of traditional paper credentials like diplomas, certificates, and licenses stored securely on a blockchain, a type of online record-keeping system where information is locked in place once it's added. 

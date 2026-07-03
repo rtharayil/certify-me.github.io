@@ -8,6 +8,16 @@ abstract:
 topic: news
 imageLink: /img/blog/The-Marketing-Power-Of-Digital-Credentials.png
 featured: true
+seo_keywords: "digital credential marketing, brand visibility for universities, social media advocacy, student personal branding, CertifyMe analytics"
+faqs:
+  - question: "How do digital badges act like 'mini billboards'?"
+    answer: "Every time a student shares their badge on social media, your university's name and logo go with it. It's basically free, organic marketing that reaches exactly the right people—employers and other potential students."
+  - question: "Can we track the ROI of our badge program?"
+    answer: "I've built the analytics dashboard specifically for this. You can see how many people are clicking, viewing, and sharing your credentials. It's real data that shows you exactly how much extra exposure you're getting."
+  - question: "Do students find these badges useful for their careers?"
+    answer: "I really think so. Instead of just telling an employer they have a skill, they can prove it with a clickable link. It makes their LinkedIn profile stand out, which is a huge advantage when they're looking for internships or jobs."
+  - question: "Is white-labeling important for my school?"
+    answer: "Definitely. You want the credentials to look like they came from *your* institution, not a random third party. We allow full white-labeling so you can keep your branding consistent across every badge you issue."
 ---
 
 Okay, picture this: You just finished an intense design workshop. You learned a ton, maybe even skipped a party or two to finish the capstone project. And now? You get a digital certificate. But this isn’t your typical, dusty paper version that lives in a folder somewhere. It’s a sleek, clickable, shareable badge that sits on your LinkedIn, your email signature, your digital portfolio.

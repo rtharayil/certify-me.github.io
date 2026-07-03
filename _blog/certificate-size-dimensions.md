@@ -10,6 +10,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/The Art of Certificate Design Ideal Image Sizes and Benefits.png
 featured: true
+seo_keywords: "certificate size and format, standard certificate dimensions, ideal image resolution for certificates, A4 vs Letter size certificates, digital certificate file types"
+faqs:
+  - question: "What's the best size for a certificate that people might want to print?"
+    answer: "Stick with standard Letter (8.5” x 11”) or A4. These are the easiest for people to print at home or find frames for. Anything too weird in size just makes it a headache for the recipient later on."
+  - question: "Does the resolution really matter for digital certificates?"
+    answer: "Oh, 100%. If you use a low-res image, it's going to look pixelated and unprofessional, especially if someone decides to print it. Aim for at least 300 DPI to keep everything crisp and sharp."
+  - question: "Should I send my certificates as JPEG or PDF?"
+    answer: "I'd usually say PDF if they're for printing, but PNG is great for digital sharing. CertifyMe actually handles a lot of this formatting for you, so you don't have to stress too much about the technical bits."
+  - question: "Is landscape or portrait better for a certificate?"
+    answer: "Landscape is definitely the 'classic' look and usually gives you more room for long names or elaborate borders. But portrait is becoming more popular for modern, digital-first designs. It really just depends on your brand's vibe."
 ---
 
 Creating a visually appealing certificate involves more than just choosing the right design elements. It also requires understanding the ideal image sizes and formats to ensure the certificate looks its best and serves its purpose effectively.

@@ -8,6 +8,16 @@ abstract:
 topic: news
 imageLink: /img/blog/elearning--1-.webp
 featured: true
+seo_keywords: "elearning brand visibility case study, CertifyMe success story, digital credentials for student acquisition, Hobart elearning platform results, automated certificate issuance"
+faqs:
+  - question: "How did this Hobart platform get 1,230 new students so fast?"
+    answer: "They basically used digital credentials to go viral. When students shared their certificates on LinkedIn and Facebook, it acted like a giant word-of-mouth campaign. I saw their visibility jump by 71% in just two months because of it."
+  - question: "Did the digital badges actually help people finish the courses?"
+    answer: "Yeah, completion rates hit 89%. I think it's because people love having something tangible to show for their work. When they know a verified badge is waiting at the end, they're much more likely to push through and finish."
+  - question: "Was it hard for them to set up the credential system?"
+    answer: "Not really, because they integrated CertifyMe directly with their existing LMS. It automated the whole thing—so as soon as a student finished a course, the system just handled the certificate issuance. It saved them a ton of admin time."
+  - question: "What made their certificates so shareable?"
+    answer: "They made sure the branding was spot-on. Each credential had the platform's logo and a secure QR code for verification. It looked professional, so students were actually proud to post it on their profiles."
 ---
 
 ## Overview

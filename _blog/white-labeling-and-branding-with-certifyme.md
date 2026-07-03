@@ -10,6 +10,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /assets4/images/Brand image.png
 featured: true
+seo_keywords: "white label digital credentials, custom branded certificates, white labeling for education, SMTP white labeling, domain white labeling for badges"
+faqs:
+  - question: "Will my students know I'm using CertifyMe?"
+    answer: "If you set up white labeling correctly, they won't. I've seen institutions set it up so everything—from the URL to the email address—looks like it's coming directly from their own office. It keeps your brand front and center."
+  - question: "Is it hard to set up a custom domain for my certificates?"
+    answer: "It's simpler than it sounds! You just need to point a subdomain (like certificates.youruniversity.edu) to our platform. It makes the whole experience feel much more official and integrated with your main website."
+  - question: "Why should I bother with SMTP white-labeling?"
+    answer: "In my experience, students are much more likely to open an email if it comes from a name they recognize. Sending credentials from your own domain's email address builds trust and keeps your messages out of the spam folder."
+  - question: "Can I put a video on the credential page?"
+    answer: "Yes, and it's a great way to engage people. I've seen schools include a quick 'congratulations' video or a highlight reel of their program. It turns a static page into something way more memorable for the learner."
 ---
 
 In today’s digital age, establishing a strong brand presence is essential for educational institutions, training providers, and organizations. CertifyMe, a leading digital credentialing platform, offers innovative solutions to enhance brand visibility. Let’s delve into the facets that set CertifyMe apart and how they contribute to brand enhancement.

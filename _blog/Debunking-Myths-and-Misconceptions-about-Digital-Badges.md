@@ -9,6 +9,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/Digital-Badges-Debunked.png
 featured: true
+seo_keywords: "digital badge myths, what are digital badges, digital badge verification, metadata in badges, digital credentials vs stickers"
+faqs:
+  - question: "Aren't digital badges just participation trophies for adults?"
+    answer: "I get why people think that, but no. A real digital badge is backed by metadata—actual proof of what you did. It’s not just for 'showing up'; it’s for proving you’ve mastered a specific skill that an employer can actually verify."
+  - question: "Can't someone just Photoshop a badge and put it on their LinkedIn?"
+    answer: "They could try, but it wouldn't work. A legitimate badge is clickable and leads to a hosted verification page. If there's no live link back to a trusted platform like CertifyMe, it's pretty obvious it's not the real deal."
+  - question: "Do employers actually care about these icons?"
+    answer: "They care about what the icon represents. I've seen recruiters at big companies like IBM and Google use them to quickly spot specific skills that a generic degree might miss. It's about making their job easier by giving them proof."
+  - question: "Will these eventually replace my college degree?"
+    answer: "Probably not, and they aren't trying to. Think of your degree as the main course and badges as the seasoning. They add specific detail and proof of skills that a broad diploma just doesn't have the space to show."
 ---
 
 Not long ago, a friend of mine—someone bright, driven, and actively job hunting—rolled their eyes at a digital badge on LinkedIn. "These are just virtual stickers, right? Like participation trophies but online?" And I got it. On the surface, a digital badge can look like a tiny graphic with no real substance. But that’s the thing—there's a lot more behind that little icon than most people think.

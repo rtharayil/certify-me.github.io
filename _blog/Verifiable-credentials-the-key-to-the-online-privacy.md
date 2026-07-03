@@ -9,6 +9,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/Verifiable-Credentials.png
 featured: true
+seo_keywords: "online privacy verifiable credentials, selective disclosure digital ID, protect student data privacy, W3C verifiable credentials privacy, digital identity security"
+faqs:
+  - question: "What exactly is 'selective disclosure' and why should I care?"
+    answer: "Think of it like this: if a site needs to know you're over 21, you shouldn't have to give them your home address and birth date too. Selective disclosure lets you share just the 'Yes' without handing over the extra data. It’s a huge win for privacy."
+  - question: "Does using verifiable credentials mean I'm being tracked more?"
+    answer: "Actually, it's the opposite. Since the data stays in your wallet and isn't sitting in a giant central database, there's no single place for hackers (or advertisers) to go and steal your whole life story."
+  - question: "What happens if I lose the phone where my digital wallet is?"
+    answer: "It's like losing a physical wallet, but with a backup. Most systems let you recover your credentials using a secure key or by reaching back out to the issuer. Your records aren't 'gone' just because the device is."
+  - question: "Are universities actually doing this yet?"
+    answer: "I've worked with several registrar offices that are already piloting this. They're tired of the 'PDF-by-email' mess as much as we are, and they see this as a way to protect their students' data long-term."
 ---
 
 Let’s be honest: online privacy feels more like a myth than a reality these days. You click “accept” on a cookie notice without reading it. You fill out yet another form with your name, birth date, email, and school ID. You share your transcript with an internship provider, unsure who else might see it.

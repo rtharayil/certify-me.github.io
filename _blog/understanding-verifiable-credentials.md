@@ -10,6 +10,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/Understanding Verifiable Credentials.png
 featured: true
+seo_keywords: "what are verifiable credentials, components of verifiable credentials, metadata in digital badges, verifiable credential model, blockchain certificate benefits"
+faqs:
+  - question: "What's the difference between metadata and the actual claim?"
+    answer: "Think of the claim as the 'what'—like 'I passed this course.' The metadata is the 'context'—who said you passed, when they said it, and how long it's valid. Without metadata, a digital credential is just a picture."
+  - question: "Why do we need a 'Validator' if the data is on a blockchain?"
+    answer: "The blockchain is just the record-keeper. You still need a validator (like a hiring manager or a system) to actually look at that record and say, 'Yes, this matches what the applicant is telling me.' It's the final step in the trust loop."
+  - question: "Can I share these credentials on my LinkedIn profile?"
+    answer: "Definitely. Most modern platforms have a one-click share button. It's much more professional than just typing it in your bio because anyone who clicks it can see the actual proof behind your claim."
+  - question: "Is this technology only for tech companies?"
+    answer: "I've seen it used in healthcare, manufacturing, and even traditional nonprofits. Any place where you need to trust someone's skills without spending days on background checks is a perfect fit for verifiable credentials."
 ---
 
 

@@ -11,6 +11,16 @@ author : Mrunal Upadhye
 imageLink: /img/eduTranscript/blog1/How To Obtain A Transcript Certificate.png
 
 featured: true
+seo_keywords: "how to request college transcripts, official vs unofficial transcripts, transcript request process, obtain transcripts from closed schools, EduTranscript guide"
+faqs:
+  - question: "How long does it usually take to get my transcript?"
+    answer: "It varies quite a bit. Some schools do same-day digital delivery, while others might take a week or two if they're mailing a hard copy. If you're in a rush, I'd check for an expedited option—it's usually worth the extra fee."
+  - question: "What if my college has closed down?"
+    answer: "Don't panic! Usually, those records are moved to the state's department of education or a specific archive. You just need to contact the state office where the school was located to track down your files."
+  - question: "Can a school really hold my transcript if I owe them money?"
+    answer: "Unfortunately, yes. If there's an unpaid library fee or tuition balance, they can block the request. I've found it's best to call the billing office directly—sometimes they'll set up a payment plan to let the transcript go through."
+  - question: "Is there an easier way to send these to multiple universities?"
+    answer: "Platforms like EduTranscript are a lifesaver for this. You can just log in, pick where you want them sent, and track everything from your dashboard. It beats filling out separate mail-in forms for every single application."
 ---
 
 So, you've been asked to submit a transcript, or maybe you need one to apply for a new program. Whether you're looking to transfer credits, apply to graduate school, or meet a job requirement, transcripts are a key part of your academic record. 

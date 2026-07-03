@@ -10,6 +10,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/elearning--2-.webp
 featured: true
+seo_keywords: "employee retention case study, digital credentials for HR, boosting employee engagement, Carlisle tech company success, CertifyMe HR solution"
+faqs:
+  - question: "How did digital credentials actually help with employee retention?"
+    answer: "It was all about recognition. When employees saw their hard work rewarded with a shareable badge, they felt more valued. In the Carlisle case, we saw a 30% jump in retention because people had clear goals to work toward."
+  - question: "Was it hard to integrate the system with their existing HR tools?"
+    answer: "Not at all. We worked closely with their IT team to make sure everything connected smoothly with their LMS. Automation was key—it meant less work for the HR staff while still keeping all the data secure."
+  - question: "Did the employees actually share their badges online?"
+    answer: "They did! It turned into a great recruitment tool too. Every time someone posted a badge on LinkedIn, it showed the world that the company was serious about investing in its people. It's a win-win for everyone involved."
+  - question: "What were the biggest takeaways from this case study?"
+    answer: "The main thing I noticed was how much more engaged people became with their training. There was a 23% increase in course participation once we introduced the badges. It turns out people are way more motivated when their progress is visible."
 ---
 
 

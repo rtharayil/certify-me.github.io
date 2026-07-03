@@ -10,6 +10,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/Proving-Your-Digital-Skills.png
 featured: true
+seo_keywords: "proving digital skills, how to validate skills, digital badges for resume, online skill certification, digital skill toolkit"
+faqs:
+  - question: "What exactly counts as a 'digital skill'?"
+    answer: "It's more than just Excel! It's everything from collaborating in Google Docs to managing projects in Trello or designing in Canva. If it helps you get things done in a hybrid or remote environment, it's a digital skill."
+  - question: "How do I show someone I have these skills if they can't watch me work?"
+    answer: "That's exactly why validation matters. Earning a badge or certificate turns those 'invisible' strengths into something you can actually point to. It's like showing your receipts, but in a way that's easy to share online."
+  - question: "Where should I start if I want to get certified?"
+    answer: "I'd look at platforms like LinkedIn Learning, Coursera, or Google Skillshop. They have great short courses that are self-paced. Most take just a few hours, and you get a verifiable badge that looks great on your profile."
+  - question: "Do I need to be a tech wizard to stay current?"
+    answer: "Not at all. I suggest just picking a few tools you use often and focusing on those. Even setting aside 30 minutes a week to learn something new can make a huge difference over time. It's about pacing yourself, not sprinting."
 ---
 
 Remember when just knowing how to attach a file to an email made you the “tech-savvy” one in the room?

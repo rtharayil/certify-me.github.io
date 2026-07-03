@@ -10,6 +10,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/How-To-Include-Digital-Credentials-In-Your-Marketing-Strategy.png
 featured: true
+seo_keywords: "digital credentials in marketing, social proof for universities, email marketing for students, event engagement with badges, digital credential strategy"
+faqs:
+  - question: "How do I make email campaigns feel less like spam?"
+    answer: "The trick is to celebrate, not just promote. Instead of a generic 'Join our course' email, send a 'Congrats, you've earned this!' message. It feels way more personal, and students are much more likely to click 'Share' when they feel proud."
+  - question: "Can we use badges for our virtual events?"
+    answer: "I highly recommend it. Giving attendees a digital certificate for showing up to a webinar makes the experience feel tangible. It also encourages them to post about the event afterward, which gives you a nice boost in reach."
+  - question: "What's the best way to get students to actually share their badges?"
+    answer: "Keep it simple. I always suggest adding pre-written LinkedIn captions and 'Add to profile' buttons right in the email. The easier you make it, the more likely they are to do it. You don't need to push—just make it convenient."
+  - question: "How do we know if our credential strategy is working?"
+    answer: "You've got to look at the signals. Check who's sharing and which badges get the most views. It's not about complex spreadsheets; even light tracking will tell you which programs are actually sparking engagement."
 ---
 
 Ever seen someone post a digital badge on LinkedIn and wondered what that’s all about?

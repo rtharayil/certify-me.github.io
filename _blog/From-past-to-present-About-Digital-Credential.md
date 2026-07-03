@@ -10,6 +10,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/credential/32.png
 featured: true
+seo_keywords: "history of digital credentials, digital vs paper certificates, blockchain certification history, digital badges evolution, secure document verification"
+faqs:
+  - question: "How long have we been using certificates?"
+    answer: "A lot longer than you'd think! Paper ones have been around since the early 1700s for births and basic qualifications. But honestly, the old way was so expensive and slow—all that printing and shipping really adds up."
+  - question: "What's the main difference with digital badges?"
+    answer: "Badges are newer and usually for 'low-stake' skills or rankings. I find it cool that they actually started in the military for ranking, but now they're virtual proof of how you're progressing in a specific skill or course."
+  - question: "Are digital certificates safe from forgery?"
+    answer: "Much safer than paper. We use blockchain and digital signatures now, which makes it basically impossible to mess with the data. Plus, the metadata lets businesses trace everything back to the source instantly."
+  - question: "Why are businesses switching from paper?"
+    answer: "It’s mostly about cutting costs and manual labor. You don't have to worry about manufacturing paper or paying for storage and travel. I've seen it save companies a ton of time on the whole issuance and verification process."
 ---
 
 Certificates and badges have been here for longer than we thought. Traditional paper-based certificates to recognise a persons qualification were issued since the early 1700s. Certificates were used to keep a record of a person birth, death, achievements and qualification or to verify the person's identity. It was the only legal way to identify and prove the legitimacy of the identity of the document.

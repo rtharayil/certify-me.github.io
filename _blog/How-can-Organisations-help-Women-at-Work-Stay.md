@@ -9,6 +9,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/How-Digital-Credentials-Help-Women-Succeed-At-Work.png
 featured: true
+seo_keywords: "supporting women at work, digital credentials for career re-entry, gender diversity in workforce, reskilling women in tech, inclusive workplace strategies"
+faqs:
+  - question: "Why are so many talented women leaving their jobs?"
+    answer: "It's rarely about a lack of ambition. In my experience, it's usually the 'slow burn' of being overlooked or not having enough flexibility. When a system feels like it was built for someone else, it’s hard to want to stay in it forever."
+  - question: "How do digital credentials help women after a career break?"
+    answer: "They're a huge confidence booster. I've seen women use them to prove their skills are current, even if they've been away for a while. It’s a way to let the work speak for itself without having to over-explain a gap on a resume."
+  - question: "What's the 'skills confidence gap'?"
+    answer: "It's that feeling of being 'left out of the loop' when tech or trends move fast. Most women aren't falling behind because they aren't capable—they just don't always get the same access to training. Verified credentials help bridge that by giving them a clear way to show what they know."
+  - question: "Can flexibility really improve retention?"
+    answer: "Honestly, it's survival for many. I've seen great people walk away just because meetings were always scheduled during daycare hours. When you trust people to manage their own time, they're much more likely to stick around and do their best work."
 ---
 
 It’s not that women don’t want to stay at work—it’s that something keeps pushing them out.

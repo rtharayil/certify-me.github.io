@@ -10,6 +10,16 @@ author : Mrunal Upadhye
 imageLink: /img/blog/credential/58.png
 
 featured: true
+seo_keywords: "SSL certificate benefits, why use HTTPS, types of SSL certificates, website security certificates, boost search rankings with SSL"
+faqs:
+  - question: "Do I really need an SSL certificate for a small blog?"
+    answer: "Yes, I'd say it's essential now. Even if you're not selling anything, browsers like Chrome will mark your site as 'Not Secure' without one. That's a huge red flag for readers, and it can really hurt your traffic."
+  - question: "Will an SSL certificate actually help my SEO?"
+    answer: "It definitely does. Google has confirmed that HTTPS is a ranking signal. In my experience, sites that move from HTTP to HTTPS often see a nice little bump in their search rankings because it shows you're a trusted site."
+  - question: "What's the difference between the cheap and expensive SSLs?"
+    answer: "The basic ones (DV) just prove you own the domain. The more expensive ones (OV/EV) involve a more thorough check of your business. If you're running a big e-commerce store, you'll want the higher level to show customers you're a legitimate, verified entity."
+  - question: "Is it hard to install an SSL certificate?"
+    answer: "It used to be a nightmare, but most hosting providers now have 'one-click' installs or offer free ones like Let's Encrypt. If you're not sure, just check your host's dashboard—it's usually a lot simpler than you'd expect."
 ---
 
 ## What are Digital SSL Certificates?

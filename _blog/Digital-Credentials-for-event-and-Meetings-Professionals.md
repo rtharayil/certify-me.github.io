@@ -9,6 +9,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/Why-Digital-Credentials-Matter-For-Event-Professionals.png
 featured: true
+seo_keywords: "event digital credentials, conference badges for volunteers, speaker recognition certificates, university event management, digital awards for meetings"
+faqs:
+  - question: "Is it really worth the effort to issue digital badges for a small workshop?"
+    answer: "I think so. Even for smaller events, people love having something they can share on LinkedIn. It’s way easier for you than printing paper certificates, and it gives the attendees something that actually lasts longer than a day."
+  - question: "How do these badges help my event's brand?"
+    answer: "Every time a participant shares their badge, your logo and event name go with it. I’ve seen this turn into a bunch of organic marketing—it’s like having mini billboards for your event all over social media, which is pretty cool."
+  - question: "What if a volunteer loses their digital credential link?"
+    answer: "No big deal. Unlike a paper certificate that’s gone forever, we can just resend the link or they can log in to their wallet to find it. It saves you a lot of time on those 'can you re-issue my certificate' emails."
+  - question: "Can I use these to recognize speakers and panelists too?"
+    answer: "Absolutely. I always recommend giving speakers something more than just a thank-you note. A verified token or badge is something they can actually embed on their own websites or portfolios to show off their expertise."
 ---
 
 Ever wish there was an easier way to prove you were part of something meaningful—like a big event or campus conference?

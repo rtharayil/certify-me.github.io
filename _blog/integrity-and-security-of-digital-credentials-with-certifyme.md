@@ -11,6 +11,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /assets4/images/ensuring_integrety.png
 featured: true
+seo_keywords: "digital credential security, blockchain certificates, data integrity CertifyMe, verify digital badges, secure credential issuance"
+faqs:
+  - question: "Is my data actually safe on CertifyMe?"
+    answer: "I get this a lot. We use AES-256 encryption for stored data and TLS for anything in transit. As an engineer here, I can tell you we take this very seriously—we're even ISO 27001 certified."
+  - question: "How does blockchain stop someone from faking a certificate?"
+    answer: "It creates a tamper-proof record that just can't be edited once it's there. Even if someone tries to 'Photosho' a screenshot, the unique verification link will always show the real, original data from our platform."
+  - question: "What happens if I need to revoke a badge?"
+    answer: "We've built that right into the core of the platform. If someone shouldn't have a badge anymore—maybe they didn't finish the requirements—you can revoke it, and that verification link will immediately show it's no longer valid."
+  - question: "Do third parties need an account to verify a badge?"
+    answer: "Nope. They can just scan the QR code or click the URL on the credential. It's designed to be fast so an employer can check it in seconds without having to jump through any hoops."
 ---
 
 In today's digital age, the importance of secure and authentic digital credentials cannot be overstated.  To fully understand the foundation of this technology, check out our guide on [what digital credentials are and how they function](https://www.certifyme.online/blog/What-is-a-Digital-Credential.html). CertifyMe is committed to providing a robust platform that guarantees the integrity, security, and authenticity of digital credentials. This blog will answer some frequently asked questions about how CertifyMe achieves these goals.

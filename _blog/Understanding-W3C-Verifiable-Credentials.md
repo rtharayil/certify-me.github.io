@@ -15,7 +15,15 @@ featured: true
 SEOtags: "W3C Verifiable Credentials, Digital Credentials, Blockchain Certificates, CertifyMe, Credential Verification, Decentralized Identity, Verifiable Credential Standard, DID, Digital Trust, Web3 Identity, Open Badges 3.0"
 
 seo_keywords: "W3C Verifiable Credentials, Digital Credentials, Blockchain Certificates, CertifyMe, Credential Verification, Decentralized Identity, DID, Web3 Identity, Open Badges 3.0, Digital Trust"
-
+faqs:
+  - question: "Is W3C compliance actually mandatory for digital badges?"
+    answer: "It's not 'law,' but honestly, if you're not compliant, you're building on an island. Following W3C standards ensures your credentials don't become obsolete the moment a specific software company changes its mind or goes out of business."
+  - question: "Do I need a crypto wallet to use these?"
+    answer: "Nope! That's a huge misconception. These are digital identity wallets, not crypto wallets. You don't need to know anything about Bitcoin or Ethereum to store your degree securely on your phone."
+  - question: "What's a DID Document and why does it matter?"
+    answer: "Think of a DID Document as a public 'phonebook' for an organization's digital keys. It's what allows a verifier's computer to check a signature without ever having to call the issuer. It makes the whole process independent and fast."
+  - question: "Can W3C credentials work for physical documents too?"
+    answer: "In a way, yes. You can print a QR code on a paper diploma that links to a W3C Verifiable Credential. It’s like giving a physical piece of paper a digital, tamper-proof brain."
 ---
 
 W3C verifiable credentials can sound complicated, but they’re actually a simple way to prove something about yourself online without the usual hassle.

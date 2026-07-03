@@ -10,6 +10,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/CertifyMe-API-Guide-For-Users.png
 featured: true
+seo_keywords: "CertifyMe API guide, custom attributes API, digital certificate API, dynamic data fields, CertifyMe developer documentation"
+faqs:
+  - question: "What exactly counts as a custom attribute in the CertifyMe API?"
+    answer: "In my experience, anything that isn't the standard name or email can be a custom attribute. Think of things like 'EventDate', 'CourseName', or even a specific 'Credits' count—if you've defined it in your template, you can send it via the API using that Custom. prefix."
+  - question: "Does the capitalization of my field names actually matter?"
+    answer: "Yes, it really does. I've spent enough time debugging to tell you that if your template says 'eventdate' and your API call says 'EventDate', it won't map correctly. Keep them exactly the same, case and all."
+  - question: "Is there a limit to how many custom fields I can include in one request?"
+    answer: "Honestly, you can include as many as you've set up in your template. I usually recommend only sending what you actually need on the certificate to keep your JSON payloads clean, but the API won't stop you if you have a dozen attributes."
+  - question: "Why do I need to add 'Custom.' before my field names in the code?"
+    answer: "That's just how our system differentiates between standard fields and your own custom ones. It's mandatory for every single dynamic field you create, so don't skip it or the data won't show up on the final credential."
 ---
 
 ## Handling Custom Attributes in Templates

@@ -9,6 +9,16 @@ topic: news
 author : Mrunal Upadhye
 imageLink: /img/blog/credential/17.png
 featured: true
+seo_keywords: "why digital certificates are trending, benefits of digital certification, secure digital credentials, digital certificate shareability, authenticity in digital credentials"
+faqs:
+  - question: "Why are we suddenly seeing digital certificates everywhere?"
+    answer: "A lot of it started with the pandemic—everyone had to move online fast. But even now, they're trending because they're just so much more useful than paper. You can't put a paper certificate on LinkedIn, but a digital one is a great way to show off your skills."
+  - question: "Are digital certificates really secure?"
+    answer: "Yes, and that's a big reason for the trend. I've seen how much effort goes into the encryption. Every certificate has a digital signature that makes it basically impossible to fake, which is a huge upgrade over traditional paper."
+  - question: "Can I share my digital certificate on my resume?"
+    answer: "You should! I always tell people to include the verification link right on their PDF resume. It lets recruiters check your credentials instantly without having to call your school or previous employer."
+  - question: "Do people actually trust digital certificates?"
+    answer: "They do, because they're so easy to verify. When a recruiter can click a link and see the metadata—who issued it, when, and for what—that builds a lot more trust than just seeing a line of text on a CV."
 ---
 
 The recent global pandemic has led to digitalisation giving rise to many digital buzzwords including Digital Certificates or Digital Certification Programs. Now, the question may arise why exactly are Digital certificates trending? 

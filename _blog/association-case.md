@@ -9,6 +9,16 @@ abstract:
 topic: news
 imageLink: /img/blog/elearning--2-.webp
 featured: true
+seo_keywords: "association membership growth, digital credentials for associations, membership engagement case study, York association success story, automated credential management"
+faqs:
+  - question: "How did digital badges help a York association grow by 32%?"
+    answer: "It was all about visibility. By giving members colorful, shareable badges, the association got a ton of organic marketing on social media. It basically turned their members into brand ambassadors."
+  - question: "Was it hard to integrate this with their existing system?"
+    answer: "Not really. We made sure CertifyMe integrated right into their current membership management setup. This meant badges were issued automatically as soon as members hit certain milestones."
+  - question: "Did the association see an increase in revenue too?"
+    answer: "They did. More members meant more fees and event registrations. Plus, having a modern, digital-first approach helped them land three new industry partnerships, which definitely didn't hurt their bottom line."
+  - question: "What did the members think of the new digital credentials?"
+    answer: "They loved them. Retention rates actually went up by 23%. It turns out people really value having a modern, verifiable way to show off their professional involvement."
 ---
 
 ## Overview
