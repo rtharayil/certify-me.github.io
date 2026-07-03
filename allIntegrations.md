@@ -1,5 +1,5 @@
 ---
-title: "Integrate digital credentials with LMS Platforms"
+title: "All Integrations - Connect CertifyMe with 150+ Platforms"
 
 description: "Seamless Integration of CertifyMe with LMSs for Digital Credential Automation"
 

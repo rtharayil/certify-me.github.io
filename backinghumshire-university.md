@@ -1,6 +1,6 @@
 ---
-title: "Verify Credential"
-description: ""
+title: "Verify Credential | Buckinghamshire New University"
+description: "Verify a digital credential issued by Buckinghamshire New University through CertifyMe."
 
 layout: V4Layout-Backinghum-University
 sitemap.priority: 0.9

@@ -1,6 +1,6 @@
 ---
-title: "Verify Credential"
-description: ""
+title: "Verify Credential | University of Toronto"
+description: "Verify a digital credential issued by the University of Toronto through CertifyMe."
 
 layout: V4Layout-univeristy-of-toronto
 sitemap.priority: 0.9
