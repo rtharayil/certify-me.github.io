@@ -73,6 +73,27 @@ So when someone on our team asked "how do we actually compare against Accredible
       <td style="padding: 8px; border: 1px solid #ddd;">Enterprise workforce development</td>
       <td style="padding: 8px; border: 1px solid #ddd;">Institutions focused on employability & future-ready credentials</td>
     </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ddd;">Job Market Insights</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Not offered</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Not offered</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Workforce/skills reporting (internal)</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Job Intelligence Report — live roles, salary data & skill gaps on every credential</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ddd;">Talent Discovery</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Credential directory</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Not offered</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Employer-facing skills profiles</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Showcase Directory — public, searchable talent gallery for employers</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ddd;">Customer Support</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Standard support tiers</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Standard support tiers</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Enterprise account management</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Dedicated customer success team, frequently praised in reviews</td>
+    </tr>
   </tbody>
 </table>
 
@@ -230,6 +251,20 @@ Branding is comprehensive as well — custom domains, fully white-labeled portal
       <td style="padding: 8px; border: 1px solid #ddd;">No</td>
       <td style="padding: 8px; border: 1px solid #ddd;">Limited</td>
       <td style="padding: 8px; border: 1px solid #ddd;">Yes</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ddd;">Job Intelligence Report</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">No</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">No</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">No</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Yes — live salary data & role matches per credential</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ddd;">Public Talent Directory</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Basic directory</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">No</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Limited</td>
+      <td style="padding: 8px; border: 1px solid #ddd;">Yes — Showcase Directory, searchable by employers</td>
     </tr>
     <tr>
       <td style="padding: 8px; border: 1px solid #ddd;">Analytics</td>
