@@ -88,6 +88,16 @@ h2.statistic-number {
   color: var(--cm-indigo) !important;
 }
 
+/* CTA button inside megamenu link-list must stay white, not inherit the dark submenu link color */
+.wsmenu > .wsmenu-list > li > .wsmegamenu ul.link-list > li > a.btn.btn--theme,
+.wsmenu > .wsmenu-list > li > .wsmegamenu.halfmenu ul.link-list > li > a.btn.btn--theme,
+.wsmenu > .wsmenu-list > li > .wsmegamenu.w-75 ul.link-list > li > a.btn.btn--theme,
+.wsmenu > .wsmenu-list > li > .wsmegamenu ul.link-list > li > a.btn.btn--theme:hover,
+.wsmenu > .wsmenu-list > li > .wsmegamenu.halfmenu ul.link-list > li > a.btn.btn--theme:hover,
+.wsmenu > .wsmenu-list > li > .wsmegamenu.w-75 ul.link-list > li > a.btn.btn--theme:hover {
+  color: #fff !important;
+}
+
 /* Megamenu section titles */
 .wsmenu > .wsmenu-list > li > .wsmegamenu .title,
 .wsmenu > .wsmenu-list > li > .wsmegamenu.halfmenu .title {
