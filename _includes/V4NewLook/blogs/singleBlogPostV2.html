@@ -768,6 +768,10 @@ so the section is never empty.
                         {{ page.content }}
                     </div>
 
+                    {% if page.faqs and page.faqs.size > 0 %}
+                    {% include V4NewLook/blogs/_faq.html faqs=page.faqs %}
+                    {% endif %}
+
                 </div>
             </div>
 

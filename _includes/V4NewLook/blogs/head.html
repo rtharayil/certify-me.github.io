@@ -174,6 +174,24 @@
         },
         "inLanguage": "en-US"
       }
+      {% if page.faqs and page.faqs.size > 0 %}
+      ,{
+        "@type": "FAQPage",
+        "@id": "https://www.certifyme.online{{ page.url }}#faq",
+        "mainEntity": [
+          {% for faq in page.faqs %}
+          {
+            "@type": "Question",
+            "name": {{ faq.question | jsonify }},
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": {{ faq.answer | strip_html | jsonify }}
+            }
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+      {% endif %}
     ]
   }
   </script>
