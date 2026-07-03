@@ -162,6 +162,9 @@
         "author": {
           "@type": "Person",
           "name": "{{ schema_author }}"
+          {% if schema_author == "Aneesha Kurian" %}
+          , "url": "https://www.linkedin.com/in/aneesha-kurien-259606244/"
+          {% endif %}
         },
         "publisher": { "@id": "https://www.certifyme.online/#organization" },
         "isPartOf": { "@id": "https://www.certifyme.online/#website" },
