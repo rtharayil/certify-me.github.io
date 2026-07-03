@@ -1,7 +1,7 @@
 ---
 title: "LinkedIn Job Portal Integration, Find Relavent jobs in a single click"
 
-description: "Awardees can easily find relevant jobs based on their skills with our linkedin job portal integration"
+description: "Explore thousands of jobs matched to your skills in a single click with CertifyMe's LinkedIn job portal integration for credential earners."
 
 layout: V4LayoutInnerpages
 

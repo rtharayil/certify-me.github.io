@@ -3,7 +3,7 @@ layout: award
 
 title: HR and L & D Excellence  Awards 2021
 
-description: A platform to honor the top 1% of HR and L&D professionals across the globe
+description: Nominate yourself or your team for the HR and L&D Excellence Awards 2021, honoring the top 1% of HR and Learning & Development professionals worldwide.
 
 
 logo : /img/awards/awardlogo.png

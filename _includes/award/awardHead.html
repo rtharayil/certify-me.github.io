@@ -12,13 +12,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content= " {{page.title }}">
+    <meta name="description" content="{{page.description | default: page.title}}">
     <meta name="author" content="CertifyMe.Online">
     <meta name="robots" content="index, follow">
     <meta property="og:image" content="{{page.preview}}">
     <meta property="og:title" content={{page.program}}>
    
-    <meta property="og:description" content="{{page.socialTitle }}">
+    <meta property="og:description" content="{{page.socialTitle | default: page.description}}">
     <meta property="og:url" content="{{page.url}}">
     <meta name= "twitter:card" content="{{page.preview}}">
 

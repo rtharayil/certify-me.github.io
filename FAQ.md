@@ -1,7 +1,7 @@
 ---
 title: "Digital Credentials FAQ: Most Asked Questions on online credentials"
 
-description: "We answer your frequently asked questions about CertifyMe and the easy-to-use digital credential software in the industry."
+description: "Get answers to the most common questions about CertifyMe, from pricing and setup to how our digital credentialing platform works day to day."
 
 layout: V4LayoutFAQ
 

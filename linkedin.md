@@ -1,7 +1,7 @@
 ---
 title: "LinkedIn Integration Digital Credentials"
 
-description: "Awardees can easily find relevant jobs based on their skills with our linkedin job portal integration"
+description: "See how CertifyMe connects digital credentials directly to LinkedIn, helping awardees showcase skills and get discovered for relevant roles."
 
 layout: V4LayoutInnerpages
 

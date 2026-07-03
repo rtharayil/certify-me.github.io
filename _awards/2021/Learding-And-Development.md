@@ -3,7 +3,7 @@ layout: award
 
 title: HR and L & D Excellence  Awards 2021
 
-description: A platform to honor the top 1% of HR and L&D professionals across the globe
+description: HR and L&D Excellence Awards 2021 - recognizing outstanding strategic innovation, inclusivity, and workforce impact from HR and L&D leaders globally.
 
 
 logo : /img/awards/awardlogo.png

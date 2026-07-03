@@ -3,7 +3,7 @@ layout: award
 
 title: Edvocate Leadership Awards 2022
 
-description: A platform to honor the top 1% of Exemplary Leaders who have led ordinary people in accomplishing extraordinary outcomes in the field of Education and Education Technology.
+description: Edvocate Leadership Awards 2022 - celebrating the top 1% of exemplary leaders who turned ordinary teams into extraordinary results in education and edtech.
 
 
 logo : /img/awards/awardlogoLeader.png

@@ -3,7 +3,7 @@ layout: V4Layout-SingleTemplate
 
 title: "Professional CEU Certificate of Completion Template"
 
-description: "Customize the CEU certificate of completion template for verified training. Get an editable, professional certificate design with CertifyMe."
+description: "Download the Professional CEU Certificate of Completion template — a polished, editable design built for verified continuing education training."
 
 #tags section
 tag1: "Used 334 times"

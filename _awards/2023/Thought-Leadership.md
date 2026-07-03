@@ -3,7 +3,7 @@ layout: award
 
 title: Edvocate Leadership Awards 2023
 
-description: A platform to honor the top 1% of Exemplary Leaders who have led ordinary people in accomplishing extraordinary outcomes in the field of Education and Education Technology.
+description: Thought Leadership in L&D 2023 Award honors forward-thinking Learning & Development leaders shaping the industry through innovative insights and strategies.
 
 
 logo : /img/awards/Leadership.png

@@ -1,7 +1,7 @@
 ---
 title: "FAQ's - Industry Use Case"
 
-description: "We answer your frequently asked questions about CertifyMe and the easy-to-use digital credential software in the industry."
+description: "Industry-specific FAQs covering how CertifyMe fits different use cases, from associations and training providers to enterprises and educational institutions."
 
 layout: V4LayoutICP_FAQ
 
