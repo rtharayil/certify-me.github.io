@@ -10,7 +10,7 @@ sitemap:
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   {% for page in site.pages %}
-    {% unless page.sitemap.exclude == "yes" or page.name == "feed.xml" or page.url contains 'css' or page.url contains 'assets' or page.url contains 'EPTemplates' or page.url == '/404.html' or page.layout == 'redirected' %}
+    {% unless page.sitemap.exclude == "yes" or page.name == "feed.xml" or page.url contains 'css' or page.url contains 'assets' or page.url contains 'EPTemplates' or page.url == '/404.html' or page.layout == 'redirected' or page.redirect_to %}
     <url>
       <loc>https://www.certifyme.online{{ page.url | remove: "index.html" | remove: ".html" }}</loc>
       {% if page.sitemap.lastmod %}
@@ -83,7 +83,7 @@ sitemap:
   {% endfor %}
 
   {% for page in site['certificate-templates'] %}
-    {% unless page.sitemap.exclude == "yes" or page.layout == 'redirected' %}
+    {% unless page.sitemap.exclude == "yes" or page.layout == 'redirected' or page.redirect_to %}
     <url>
       <loc>https://www.certifyme.online{{ page.url | remove: ".html" }}</loc>
       <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
