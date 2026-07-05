@@ -12,9 +12,7 @@ author: Mrunal Upadhye
 imageLink: /img/blog/W3C-Verifiable-Credentials-Beginner-Guide.png
 featured: true
 
-SEOtags: "W3C Verifiable Credentials, Digital Credentials, Blockchain Certificates, CertifyMe, Credential Verification, Decentralized Identity, Verifiable Credential Standard, DID, Digital Trust, Web3 Identity, Open Badges 3.0"
-
-seo_keywords: "W3C Verifiable Credentials, Digital Credentials, Blockchain Certificates, CertifyMe, Credential Verification, Decentralized Identity, DID, Web3 Identity, Open Badges 3.0, Digital Trust"
+seo_keywords: "what are W3C verifiable credentials, W3C verifiable credentials explained, decentralized identity DID guide, blockchain-based digital credentials, verifiable credentials vs digital badges"
 faqs:
   - question: "Is W3C compliance actually mandatory for digital badges?"
     answer: "It's not 'law,' but honestly, if you're not compliant, you're building on an island. Following W3C standards ensures your credentials don't become obsolete the moment a specific software company changes its mind or goes out of business."
