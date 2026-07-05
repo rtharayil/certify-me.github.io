@@ -110,6 +110,7 @@
         line-height: 1.15;
         color: #14142b;
         padding-bottom: 16px;
+        word-break: break-word;
     }
 
     .blog-hero-dek {
@@ -128,6 +129,43 @@
         height: auto;
         display: block;
         border-radius: 16px;
+    }
+
+    /* RESPONSIVE HERO (title was fixed at 2.6em regardless of viewport,
+       causing oversized/overflowing text on mobile and tablet) */
+    @media (max-width: 991px) {
+        #single-post .hero-overlay {
+            padding: 32px 28px;
+            border-radius: 20px;
+        }
+
+        .blog-hero-title {
+            font-size: 1.9em;
+            padding-bottom: 12px;
+        }
+
+        .blog-hero-dek {
+            font-size: .93em;
+        }
+    }
+
+    @media (max-width: 575px) {
+        #single-post .hero-overlay {
+            padding: 24px 18px;
+            margin: 0;
+            border-radius: 16px;
+        }
+
+        .blog-hero-title {
+            font-size: 1.5em;
+            line-height: 1.25;
+            padding-bottom: 10px;
+        }
+
+        .blog-hero-dek {
+            font-size: .9em;
+            margin-bottom: 16px;
+        }
     }
 
     .blog-author-row {
@@ -560,6 +598,30 @@
         user-select: none;
         z-index: 0;
         border-radius: 10px;
+    }
+
+    /* Decorative images are purely cosmetic; on small screens they add
+       clutter/overflow risk around tight content, so hide them below the
+       tablet breakpoint where there's no room to spare. */
+    @media (max-width: 767px) {
+        .bg-deco {
+            display: none;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .blog-info-strip {
+            padding: 14px 16px;
+            gap: 10px;
+        }
+
+        .info-strip-item {
+            padding: 0 12px;
+        }
+
+        .info-strip-share {
+            padding-left: 12px;
+        }
     }
 </style>
 
