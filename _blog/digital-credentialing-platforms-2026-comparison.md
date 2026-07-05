@@ -26,6 +26,10 @@ A few years ago, "digital credentialing" pretty much meant one thing: a nicer-lo
 
 So when someone on our team asked "how do we actually compare against Accredible, Certifier, and Credly?" — we figured the honest answer was worth writing down, warts and all. If you're a university, certification body, enterprise L&D team, or training provider shopping for a credentialing platform, here's how these four stack up.
 
+<div style="background:#f7f9fc;border-left:4px solid #4c6ef5;padding:16px 20px;margin:24px 0;border-radius:6px;">
+<strong>TL;DR:</strong> Accredible wins on maturity and integrations, Certifier on fast one-off certificate design, and Credly on enterprise skills recognition inside Pearson's ecosystem. CertifyMe stands out for open standards (Open Badges 3.0, W3C Verifiable Credentials), structured learning pathways, and Live Labour Market Intelligence that connects verified skills to real job data.
+</div>
+
 <br>
 
 ## Quick Comparison Scorecard

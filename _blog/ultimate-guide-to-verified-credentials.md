@@ -28,6 +28,10 @@ Imagine a world where verifying your qualifications, medical records, or travel 
 
 In today’s fast-paced digital world, where trust and efficiency are essential, verified credentials are paving the way for a future where outdated, paper-heavy processes are replaced by secure, seamless interactions.
 
+<div style="background:#f7f9fc;border-left:4px solid #4c6ef5;padding:16px 20px;margin:24px 0;border-radius:6px;">
+<strong>TL;DR:</strong> Verified credentials use W3C standards and cryptographic signatures (often backed by blockchain) to make qualifications instantly checkable and tamper-proof, without waiting on a registrar or issuer. Holders store credentials in their own digital wallet and share them directly, cutting verification from days to seconds.
+</div>
+
 These digital game-changers aren’t just about convenience—they’re about building a transparent and efficient system that works for everyone. From job seekers and employers to students and universities, verified credentials are reshaping the way we think about trust and verification.
 
 <br>

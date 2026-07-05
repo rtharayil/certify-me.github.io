@@ -26,6 +26,10 @@ Accredible comes up in almost every conversation we have about digital credentia
 
 What I do think is worth doing is looking at what each platform is actually built to prioritize, because they're not solving the exact same problem. Here's an honest breakdown of where each one holds up, where it doesn't, and who each is really built for.
 
+<div style="background:#f7f9fc;border-left:4px solid #4c6ef5;padding:16px 20px;margin:24px 0;border-radius:6px;">
+<strong>TL;DR:</strong> Accredible is a mature, well-trusted platform with a strong learner experience and a broad integration marketplace built up over years. CertifyMe stands out on career outcomes, with Live Labour Market Intelligence matching a learner's verified skills to real job openings — something Accredible doesn't offer.
+</div>
+
 <br>
 
 ## Quick Comparison

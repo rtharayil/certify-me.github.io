@@ -1,8 +1,8 @@
-    ---
+---
 layout: V4LayoutSingleBlogPost
 title:  White labelling Service
 
-description:
+description: Discover how white labelling lets you rebrand and resell CertifyMe's credentialing software as your own—cutting costs and speeding up market entry.
 abstract:  White labelling Service
 topic: news
 author : Mrunal Upadhye

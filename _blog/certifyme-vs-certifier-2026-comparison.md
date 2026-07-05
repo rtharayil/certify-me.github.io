@@ -26,6 +26,10 @@ I'll be blunt about this one: Certifier is a certificate generator. A good-looki
 
 I think it's worth saying that directly instead of dressing it up as a "close call," because a lot of the confusion we hear from prospects comes from exactly this: people assume that because a platform can issue a QR-verified PDF, it's doing the same job as a credentialing system. It isn't. Here's the honest breakdown.
 
+<div style="background:#f7f9fc;border-left:4px solid #4c6ef5;padding:16px 20px;margin:24px 0;border-radius:6px;">
+<strong>TL;DR:</strong> Certifier is best for one-off events, webinars, or short courses that just need fast, good-looking certificate delivery. CertifyMe is built for ongoing credentialing programs that need verifiable, portable credentials, stackable milestones, workflow automation, and API integrations across an enterprise.
+</div>
+
 <br>
 
 ## Quick Comparison

@@ -28,6 +28,10 @@ Traditional credentials often fail to capture the full spectrum of an individual
 
 However, amidst this sea of qualifications lies a powerful solution: the Digital Badge. In this article, we will delve into the realm of digital badges, exploring their significance, utility, and how they offer a compelling solution to the challenges of credentialing in the digital era.
 
+<div style="background:#f7f9fc;border-left:4px solid #4c6ef5;padding:16px 20px;margin:24px 0;border-radius:6px;">
+<strong>TL;DR:</strong> A digital badge is a verifiable image-based credential containing metadata (issuer, criteria, date) that proves a specific skill or achievement. Unlike a PDF, it follows the Open Badges standard, so it can be shared on LinkedIn, verified instantly, and even updated or revoked if circumstances change.
+</div>
+
 <br>
 
 ## What is a Digital Badge?

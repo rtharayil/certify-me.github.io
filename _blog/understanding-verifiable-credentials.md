@@ -25,6 +25,10 @@ faqs:
 
 ## Understanding Verifiable Credentials
 
+<div style="background:#f7f9fc;border-left:4px solid #4c6ef5;padding:16px 20px;margin:24px 0;border-radius:6px;">
+<strong>TL;DR:</strong> Verifiable credentials pair a claim (what you achieved) with metadata (who issued it, when, and how) so anyone can confirm authenticity without contacting the issuer directly. They're encrypted and tamper-evident, shareable on platforms like LinkedIn, and used well beyond tech — in healthcare, manufacturing, and nonprofits.
+</div>
+
 <a href="https://www.certifyme.online/blog/What-is-a-Digital-Credential.html">Digital credentials</a> have transformed the way we store and display abilities, offering remote organization and, more importantly, rapid credential verification. While digital credentials themselves are not new, today's iterations come with robust encryption features that render them impenetrable, secure, and verifiable. These digital counterparts carry all the essential information just like their physical counterparts but with the added advantage of tamper-evident and credible digital signatures.
 
 <br>

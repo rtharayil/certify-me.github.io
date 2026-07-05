@@ -26,6 +26,10 @@ Parchment comes up a lot when we talk to registrar's offices and higher-ed admin
 
 But transcripts aren't the whole credentialing picture anymore, and that's usually where the conversation with us starts. Here's an honest look at where each platform is strong, and where they're really built for different jobs.
 
+<div style="background:#f7f9fc;border-left:4px solid #4c6ef5;padding:16px 20px;margin:24px 0;border-radius:6px;">
+<strong>TL;DR:</strong> Parchment is the industry standard for secure transcript exchange between institutions and employers — if that's your main need, it's a strong dedicated choice. CertifyMe is the better fit when you need broader digital credentialing (badges, certificates, professional certifications) alongside or instead of transcripts.
+</div>
+
 <br>
 
 ## Quick Comparison

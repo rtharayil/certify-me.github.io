@@ -39,6 +39,10 @@ faqs:
 
 LinkedIn, being one of the most popular platforms for professionals, provides an excellent opportunity to showcase your skills and achievements. If you're using LinkedIn to reach out to other business professionals, look for new opportunities or [build your sales pipeline](https://sader.agency/how-to-optimize-your-linkedin-outreach-campaigns/) - demonstrating your skills and experience is a non-negotiable. One effective way to do this is by creating optimal digital badges LinkedIn can showcase for your company.
 
+<div style="background:#f7f9fc;border-left:4px solid #4c6ef5;padding:16px 20px;margin:24px 0;border-radius:6px;">
+<strong>TL;DR:</strong> To share a company digital badge on LinkedIn: log in, open your Profile, click "Add profile section," choose Licenses & Certifications, then fill in the badge name, issuer, and date and upload the badge image or link. Using the Open Badge standard keeps the badge verifiable, so claims can't be faked.
+</div>
+
 <br>
 
 These digital badges, often based on the <a href="https://openbadges.org/">Open Badge standard</a> developed by <a href="https://www.mozilla.org/en-US/?v=1">Mozilla</a>, offer a modern and verifiable way to recognize and display skills and accomplishments.

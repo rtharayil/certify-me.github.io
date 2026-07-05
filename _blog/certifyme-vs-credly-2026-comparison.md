@@ -26,6 +26,10 @@ If you've been shopping for a credentialing platform lately, you've probably run
 
 We get asked how CertifyMe stacks up against Credly often enough that it seemed worth writing down properly, rather than repeating the same answer in sales calls. So here's an honest look at where each platform is strong, where it isn't, and who each one actually fits best.
 
+<div style="background:#f7f9fc;border-left:4px solid #4c6ef5;padding:16px 20px;margin:24px 0;border-radius:6px;">
+<strong>TL;DR:</strong> Credly is a strong choice for large enterprises already inside Pearson's ecosystem doing internal skills recognition. CertifyMe is the better fit for universities, certification bodies, and enterprises that want structured learning pathways, Open Badges 3.0 + W3C Verifiable Credentials support, deeper white-labeling, and career-outcome tools like Live Labour Market Intelligence.
+</div>
+
 <br>
 
 ## Quick Comparison
