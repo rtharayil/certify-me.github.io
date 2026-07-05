@@ -11,6 +11,21 @@ author : Mrunal Upadhye
 imageLink: /img/blog/Guide to Creating LinkedIn Digital Badges for Your Company/Featured Image.png
 featured: true
 seo_keywords: "LinkedIn digital badges, company branding LinkedIn, create digital badges, employee advocacy LinkedIn, verify LinkedIn badges"
+howto_name: "How to Share Your Digital Badge on LinkedIn"
+howto_description: "Step-by-step guide to uploading and sharing a digital badge on a LinkedIn profile."
+howto_steps:
+  - name: "Log in to LinkedIn"
+    text: "Log in to your LinkedIn profile."
+  - name: "Add a profile section"
+    text: "Go to your Profile and click the Add profile section button."
+  - name: "Select Licenses & Certifications"
+    text: "Select Licenses & Certifications from the available profile sections."
+  - name: "Fill in badge details"
+    text: "Fill in the required information, including the name, issuer, and issuance date of your badge."
+  - name: "Upload the badge"
+    text: "Upload the badge image or link to the badge hosted on your badge platform."
+  - name: "Add a badge description"
+    text: "Write a compelling description of your badge, explaining its significance and the skills it represents."
 faqs:
   - question: "How do I make my company's badges look good on LinkedIn?"
     answer: "I always suggest hiring a pro designer if you can, but the main thing is keeping it clean. It needs to be eye-catching even when it's small. Make sure the text is readable and the colors represent your brand well."

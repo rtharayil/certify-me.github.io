@@ -119,6 +119,17 @@ CertifyMe provides a REST API for programmatic credential issuance and managemen
 - vs Certifier: https://www.certifyme.online/blog/certifyme-vs-certifier-2026-comparison — Certifier is primarily an AI-powered certificate design and bulk issuance tool. CertifyMe is a full credentialing platform with immutable verification, structured learning pathways, and enterprise automation.
 - vs Parchment: https://www.certifyme.online/blog/certifyme-vs-parchment-2026-comparison — Parchment specializes in academic transcript and diploma exchange. CertifyMe is a broader digital credentialing platform covering certificates, badges, and professional certifications alongside career-outcome features.
 
+## Resources (blog & glossary)
+
+- Blog Index: https://www.certifyme.online/blog
+- What Is a Digital Badge: https://www.certifyme.online/blog/digital-badges-explained
+- What Is a Digital Credential: https://www.certifyme.online/blog/What-is-a-Digital-Credential
+- W3C Verifiable Credentials Guide: https://www.certifyme.online/blog/Understanding-W3C-Verifiable-Credentials
+- Digital Badges vs Certificates: https://www.certifyme.online/blog/How-digital-badges-and-digital-certificates-will-help-your-abilities
+- Paper vs Digital Certificates: https://www.certifyme.online/blog/Which-is-better-paper-or-digital-certificates
+- Adding Digital Badges to LinkedIn: https://www.certifyme.online/blog/linkedin-badges-for-companies
+- Glossary Index: https://www.certifyme.online/glossary
+
 ## Factual Claims (canonical, verified July 2026)
 - G2 Rank: #2 in Digital Credential Management Software (Spring 2026)
 - G2 Rating: 4.9/5 from 500+ verified reviews

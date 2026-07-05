@@ -152,7 +152,11 @@
         },
         {% endif %}
         "datePublished": "{{ page.date | date_to_xmlschema }}",
+        {% if page.last_modified %}
+        "dateModified": "{{ page.last_modified | date_to_xmlschema }}",
+        {% else %}
         "dateModified": "{{ page.date | date_to_xmlschema }}",
+        {% endif %}
         {% assign schema_raw_author = page.author | default: "" | strip %}
         {% if schema_raw_author == "" or schema_raw_author == "Mrunal Upadhye" or schema_raw_author == "CertifyMe Team" %}
           {% assign schema_author = "Aneesha Kurian" %}
@@ -172,7 +176,11 @@
           "@type": "WebPage",
           "@id": "https://www.certifyme.online{{ page.url }}"
         },
-        "inLanguage": "en-US"
+        "inLanguage": "en-US",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", ".blog-faq-answer"]
+        }
       }
       {% if page.faqs and page.faqs.size > 0 %}
       ,{
@@ -187,6 +195,24 @@
               "@type": "Answer",
               "text": {{ faq.answer | strip_html | jsonify }}
             }
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+      {% endif %}
+      {% if page.howto_steps and page.howto_steps.size > 0 %}
+      ,{
+        "@type": "HowTo",
+        "@id": "https://www.certifyme.online{{ page.url }}#howto",
+        "name": {{ page.howto_name | default: page.title | jsonify }},
+        "description": {{ page.howto_description | default: page.description | jsonify }},
+        "step": [
+          {% for step in page.howto_steps %}
+          {
+            "@type": "HowToStep",
+            "position": {{ forloop.index }},
+            "name": {{ step.name | jsonify }},
+            "text": {{ step.text | jsonify }}
           }{% unless forloop.last %},{% endunless %}
           {% endfor %}
         ]

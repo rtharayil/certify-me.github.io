@@ -205,13 +205,29 @@
           "Analytics and reporting"
         ],
         "screenshot": "https://www.certifyme.online/assets4/images/Images%20Webp/digital%20credential%20software.webp",
-        "offers": {
-          "@type": "Offer",
-          "url": "https://www.certifyme.online/pricing",
-          "priceCurrency": "USD",
-          "price": "0",
-          "description": "Free plan available; paid plans from affordable monthly pricing"
-        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "StartUp",
+            "url": "https://www.certifyme.online/pricing",
+            "priceCurrency": "USD",
+            "description": "Ideal for startups; request a demo for pricing"
+          },
+          {
+            "@type": "Offer",
+            "name": "Signature",
+            "url": "https://www.certifyme.online/pricing",
+            "priceCurrency": "USD",
+            "description": "Request a demo for pricing"
+          },
+          {
+            "@type": "Offer",
+            "name": "Enterprise",
+            "url": "https://www.certifyme.online/pricing",
+            "priceCurrency": "USD",
+            "description": "Custom enterprise pricing; contact sales"
+          }
+        ],
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
@@ -239,6 +255,10 @@
     "inLanguage": "en-US",
     "isPartOf": { "@id": "https://www.certifyme.online/#website" },
     "publisher": { "@id": "https://www.certifyme.online/#organization" },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", ".section-title p", "meta[name='description']"]
+    },
     "breadcrumb": {
       "@type": "BreadcrumbList",
       "itemListElement": [

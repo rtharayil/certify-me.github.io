@@ -3,6 +3,27 @@
 
 {% include V4NewLook/blogs/head.html %}
 
+<!-- STRUCTURED DATA: DefinedTerm (glossary entry) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "https://www.certifyme.online{{ page.url }}#term",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "url": "https://www.certifyme.online{{ page.url }}",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "@id": "https://www.certifyme.online/glossary#termset",
+    "name": "CertifyMe Digital Credentials Glossary",
+    "url": "https://www.certifyme.online/glossary"
+  }
+  {% if page.category %}
+  , "termCode": {{ page.category | jsonify }}
+  {% endif %}
+}
+</script>
+
 <body id="page-top">
 
     {% include V4NewLook/_GTMNoScript.html %}

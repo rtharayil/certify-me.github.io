@@ -7,6 +7,7 @@ description: Discover how CertifyMe’s digital credentialing solutions revitali
 abstract: 
 
 topic: news
+author: Aneesha Kurian
 imageLink: /img/blog/elearning--2-.webp
 featured: true
 seo_keywords: "association membership growth, digital credentials for associations, membership engagement case study, York association success story, automated credential management"
