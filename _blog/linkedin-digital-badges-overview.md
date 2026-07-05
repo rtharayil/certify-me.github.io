@@ -7,7 +7,7 @@ description: Discover how LinkedIn digital badges can elevate your professional 
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Blog 4 Banner.webp
 featured: true
 seo_keywords: "LinkedIn professional recognition, add badges to LinkedIn, career growth digital badges, LinkedIn certifications, professional credibility"

@@ -6,7 +6,7 @@ description: Uncover the power of a digital credentialing platform and how it ca
 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /assets4/images/blog/What-is-a-Digital-Credentialing-Platform.png
 featured: true
 seo_keywords: "digital credentialing platform, digital certificate software, issue digital badges, credential management system, verifiable credentials platform"

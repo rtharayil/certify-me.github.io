@@ -5,7 +5,7 @@ title: "Top 10 Red Cross Certificate Templates for Humanitarian Programs"
 description: "Explore Red Cross certificate templates for training centers, volunteer programs, and healthcare institutions—editable, professional, and print-ready designs for official Red Cross recognition."
 
 abstract: 
-author : 
+author : Aneesha Kurian
 topic: news
 imageLink: /assets4/images/Red-Cross/Top-10-Red-Cross-Certificate-Templates-for-Humanitarian-Programs.jpg
 featured: true

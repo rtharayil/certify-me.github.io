@@ -7,7 +7,7 @@ description:  Download editable and printable City & Guilds certificate template
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /assets4/images/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers/Top-10-City-and-Guilds-Certificate-Templates-for-Colleges-and-Training-Providers.png
 featured: true
 seo_keywords: "City and Guilds certificate templates, editable vocational certificates, printable apprenticeship templates, training provider certificate designs, accredited centre certificate maker"

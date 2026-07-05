@@ -6,7 +6,7 @@ description: Digital open badges are the online version of physical badges—use
 
 abstract:  
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/What-Is-a-Digital-Open-Badge-Beginner's-Guide.png
 
 featured: true

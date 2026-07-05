@@ -7,7 +7,7 @@ description: Blockchain digital credentials bring security and reliability to di
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Blog 3 Banner WEBP file.webp
 featured: true
 seo_keywords: "blockchain digital credentials explained, how blockchain certificates work, immutable ledger for education, Learner Credential Network, blockchain fraud prevention"

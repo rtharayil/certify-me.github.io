@@ -7,7 +7,7 @@ description: Learn how digital credentials can fit naturally into your marketing
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/How-To-Include-Digital-Credentials-In-Your-Marketing-Strategy.png
 featured: true
 seo_keywords: "digital credentials in marketing, social proof for universities, email marketing for students, event engagement with badges, digital credential strategy"

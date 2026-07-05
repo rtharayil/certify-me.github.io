@@ -7,7 +7,7 @@ description: Learn to create optimal digital badges LinkedIn can showcase for yo
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Guide to Creating LinkedIn Digital Badges for Your Company/Featured Image.png
 featured: true
 seo_keywords: "LinkedIn digital badges, company branding LinkedIn, create digital badges, employee advocacy LinkedIn, verify LinkedIn badges"

@@ -7,7 +7,7 @@ description: Learn how to get college transcripts quickly and easily with expert
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/eduTranscript/blog1/How To Obtain A Transcript Certificate.png
 
 featured: true

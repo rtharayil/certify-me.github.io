@@ -7,7 +7,7 @@ description:  Download editable and printable CNA certificate templates for heal
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /assets4/images/Top_10_CNA_Certificate_Templates_Healthcare_Traning_Programs/Top-10-CNA-Certificate-Templates-Healthcare-Training-Programs.png
 featured: true
 seo_keywords: "CNA certificate templates, nursing assistant certificate maker, healthcare training certificates, editable CNA templates, printable nursing certificates"

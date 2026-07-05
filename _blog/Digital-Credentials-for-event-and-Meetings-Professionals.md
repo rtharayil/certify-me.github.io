@@ -6,7 +6,7 @@ description: Digital credentials are becoming essential in the event and meeting
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Why-Digital-Credentials-Matter-For-Event-Professionals.png
 featured: true
 seo_keywords: "event digital credentials, conference badges for volunteers, speaker recognition certificates, university event management, digital awards for meetings"

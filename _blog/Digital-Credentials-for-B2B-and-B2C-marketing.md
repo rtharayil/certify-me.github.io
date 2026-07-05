@@ -6,7 +6,7 @@ description: Achieve marketing success in B2B and B2C sectors by leveraging digi
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/credential/51.png
 
 featured: true

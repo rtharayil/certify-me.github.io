@@ -6,7 +6,7 @@ description: Digital credentials revolutionize associations, offering verifiable
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink:  /img/blog/credential/11.png
 
 featured: true

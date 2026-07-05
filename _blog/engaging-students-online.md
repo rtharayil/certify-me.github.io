@@ -2,7 +2,7 @@
 layout: V4LayoutSingleBlogPost
 title: How to engage students online using digital credentials?
 
-author : Mrunal Upadhye
+author : Aneesha Kurian
 
 description: Discover how digital credentials like badges and certificates help engage students online by offering recognition, motivation, and measurable progress.
 

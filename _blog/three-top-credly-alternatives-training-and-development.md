@@ -7,7 +7,7 @@ description:  Considering Credly alternatives? This guide helps L&D teams choose
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/3-Smart-Credly-Alternatives.png
 featured: true
 seo_keywords: "Credly alternatives 2026, best digital credential platforms, Accredible vs CertifyMe, Sertifier comparison, corporate L&D credentialing tools"

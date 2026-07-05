@@ -7,7 +7,7 @@ description: Follow our ultimate guide on types of digital certificates—the on
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Types of Certificates.png
 featured: true
 seo_keywords: "types of digital certificates, TLS SSL certificates, code signing certificates, digital signatures vs certificates, secure online communication"

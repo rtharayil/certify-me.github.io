@@ -7,7 +7,7 @@ description: Explore the top 15 free certificate maker software in 2025. Create 
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /images/15 Free Online Certificate Maker Software in 2025.png
 featured: true
 seo_keywords: "free certificate maker online, best certificate design tools 2025, digital certificate generator, bulk certificate issuance, customizable certificate templates"

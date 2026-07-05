@@ -6,7 +6,7 @@ description: Governments are embracing digital credentials for secure and effici
 
 abstract:  
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/credential/41.png
 
 featured: true

@@ -7,7 +7,7 @@ description: This article offers a concise guide to CertifyMe's tools for creati
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /assets4/images/learing-path.png 
 featured: true
 seo_keywords: "learning paths, digital credential specializations, structured learning journeys, learner engagement, CertifyMe learning paths"

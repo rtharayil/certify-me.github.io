@@ -8,7 +8,7 @@ description: Discover 50 alarming workplace stress statistics from 2025, highlig
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/50 Alarming Workplace Stress Statistics (2025 Edition).png
 
 featured: true

@@ -7,7 +7,7 @@ description: Learn all about digital badges, including what they are, how they w
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/CertifyMe Blog 2 banner.png
 featured: true
 seo_keywords: "what is a digital badge, open badges explained, benefits of digital credentials, digital badge vs certificate, verifiable achievements"

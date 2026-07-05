@@ -7,7 +7,7 @@ description: Explore, how digital badges are transforming education for teachers
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Digital Badges in Modern Education A Must-Have Tool for Teachers/Featured Image.png
 featured: true
 seo_keywords: "digital badges in education, teacher professional development, micro-credentials for educators, classroom badging systems, educational recognition"

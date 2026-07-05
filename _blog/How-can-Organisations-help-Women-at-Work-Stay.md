@@ -6,7 +6,7 @@ description: Organizations can support women at work by addressing skill gaps, u
 
 abstract:  
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/How-Digital-Credentials-Help-Women-Succeed-At-Work.png
 featured: true
 seo_keywords: "supporting women at work, digital credentials for career re-entry, gender diversity in workforce, reskilling women in tech, inclusive workplace strategies"

@@ -6,7 +6,7 @@ description: Learn what digital badges really are, bust common myths, and discov
 
 abstract:
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Digital-Badges-Debunked.png
 featured: true
 seo_keywords: "digital badge myths, what are digital badges, digital badge verification, metadata in badges, digital credentials vs stickers"

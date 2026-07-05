@@ -6,7 +6,7 @@ description: Discover how digital credentials make it easy for employers to veri
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Employers validate diploma certificates.png
 featured: true
 seo_keywords: "validate diploma certificates online, digital credential verification for employers, verify academic achievements, blockchain diploma security, hiring process efficiency"

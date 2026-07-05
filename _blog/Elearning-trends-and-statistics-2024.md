@@ -7,7 +7,7 @@ description: Discover the latest e-learning trends and stats shaping 2025! From 
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/75+ Astonishing E-Learning Trends And Statistics For 2025.png
 featured: true
 seo_keywords: "elearning statistics 2025, online learning market trends, AI in education stats, corporate training growth 2025, mobile elearning surge"

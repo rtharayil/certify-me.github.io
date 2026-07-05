@@ -8,7 +8,7 @@ description: "Learn what W3C Verifiable Credentials are, how they work, and why 
 abstract: 
 
 topic: news
-author: Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/W3C-Verifiable-Credentials-Beginner-Guide.png
 featured: true
 

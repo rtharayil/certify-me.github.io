@@ -6,7 +6,7 @@ description: Verifiable credentials give people control over their data—offeri
 
 abstract:  
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Verifiable-Credentials.png
 featured: true
 seo_keywords: "online privacy verifiable credentials, selective disclosure digital ID, protect student data privacy, W3C verifiable credentials privacy, digital identity security"

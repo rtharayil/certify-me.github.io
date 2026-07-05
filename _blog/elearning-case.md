@@ -6,7 +6,7 @@ description: "Discover how a Hobart e-learning platform leveraged CertifyMe digi
 abstract: 
 
 topic: news
-author: Aneesha Kurian
+author : Aneesha Kurian
 imageLink: /img/blog/elearning--1-.webp
 featured: true
 seo_keywords: "elearning brand visibility case study, CertifyMe success story, digital credentials for student acquisition, Hobart elearning platform results, automated certificate issuance"

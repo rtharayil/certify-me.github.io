@@ -6,7 +6,7 @@ description: Digital certificates are trending due to their security, centraliza
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/credential/17.png
 featured: true
 seo_keywords: "why digital certificates are trending, benefits of digital certification, secure digital credentials, digital certificate shareability, authenticity in digital credentials"

@@ -7,7 +7,7 @@ description:  Unlock the secrets to perfect certificate sizes and formats with o
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/The Art of Certificate Design Ideal Image Sizes and Benefits.png
 featured: true
 seo_keywords: "certificate size and format, standard certificate dimensions, ideal image resolution for certificates, A4 vs Letter size certificates, digital certificate file types"

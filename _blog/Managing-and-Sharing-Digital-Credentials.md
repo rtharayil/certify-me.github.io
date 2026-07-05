@@ -6,7 +6,7 @@ description: Digital credentials are managed by accepting, claiming, and sharing
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/preview1.png
 featured: true
 seo_keywords: "share digital credentials, claim digital badge, verify certificates online, social media credential sharing, digital certificate management"

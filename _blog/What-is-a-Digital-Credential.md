@@ -3,7 +3,7 @@ layout: V4LayoutSingleBlogPost
 title: What Are Digital Credentials And How Are They Used In 2025?
 
 udate: April 13, 2024
-author: Aneesha Kurian
+author : Aneesha Kurian
 readtime: 9
 
 description: Uncover the power of digital credentials and their revolutionizing uses in 2025. Dive into our guide to see how they’re transforming the industries of higher education and L&D today!

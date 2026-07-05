@@ -8,7 +8,7 @@ description: This article answers all your questions regarding CertifyMe's compr
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /assets4/images/ensuring_integrety.png
 featured: true
 seo_keywords: "digital credential security, blockchain certificates, data integrity CertifyMe, verify digital badges, secure credential issuance"

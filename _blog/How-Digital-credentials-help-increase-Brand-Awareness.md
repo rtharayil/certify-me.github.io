@@ -6,7 +6,7 @@ description: Digital credentials increase brand awareness by sharing achievement
 
 abstract:  
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/How-Digital-Credentials-Help-Enhance-Brand-Awareness-In-2025.png
 featured: true
 seo_keywords: "brand awareness for institutions, digital credentials marketing, increasing school visibility online, social media engagement for universities, white-labeling digital badges"

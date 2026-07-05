@@ -6,7 +6,7 @@ description: Explore 20 certificate wordings, uniquely designed to make recipien
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Blog 1 Banner.png
 featured: true
 seo_keywords: "certificate wording examples, appreciation certificate text, achievement certificate verbiage, recognition certificate templates, completion certificate wording"

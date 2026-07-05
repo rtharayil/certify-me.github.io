@@ -7,7 +7,7 @@ description: Discover how verifiable digital records boost security, ease sharin
 abstract:  
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Three-Benefits-Of-Verifiable-Digital-Records.png
 featured: true
 seo_keywords: "benefits of verifiable credentials, digital records vs paper, blockchain credential security, online document verification, administrative efficiency in education"

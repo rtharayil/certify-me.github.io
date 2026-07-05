@@ -6,7 +6,7 @@ description: Effective digital education tools like CertifyMe, Kahoot!, Socrativ
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/credential/59.png
 
 featured: true

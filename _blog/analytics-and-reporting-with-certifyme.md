@@ -6,7 +6,7 @@ description: This article details everything you need to know about CertifyMe's 
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /assets4/images/understanding_analy.png
 featured: true
 seo_keywords: "credential analytics, digital badge reporting, tracking learner engagement, CertifyMe dashboard features, organization level analytics"

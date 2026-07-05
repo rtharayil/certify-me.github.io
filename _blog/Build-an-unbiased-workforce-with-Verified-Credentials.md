@@ -7,7 +7,7 @@ description: Learn how verified credentials help reduce hiring bias and build a 
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Building-a-Bias-Free-Workforce-with-Verified-Credentials.png
 featured: true
 seo_keywords: "reduce hiring bias, verified credentials for equity, objective recruitment tools, skills-based hiring, blind recruitment technology"

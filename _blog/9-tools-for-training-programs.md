@@ -7,7 +7,7 @@ description:  Want to kick off your training program? These 9 simple tools can h
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/9-Smart-Tools-Every-Training-Program-Needs (1).png
 featured: true
 seo_keywords: "training program software, learning management system tools, assessment tools for trainers, educational technology for workshops, best tools for student onboarding"

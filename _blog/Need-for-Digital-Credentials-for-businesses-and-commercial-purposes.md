@@ -7,7 +7,7 @@ description: Discover how digital credentials help businesses hire smarter, cut 
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Why-Businesses-Cant-Ignore-Digital-Credentials-Anymore.png
 featured: true
 seo_keywords: "digital credentials for business, employee upskilling, verifiable credentials ROI, hire smarter with badges, business skill validation"

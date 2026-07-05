@@ -6,7 +6,7 @@ description: Discover 7 clear reasons why digital certificates outshine paper on
 
 abstract:  
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/7-Reasons-Digital-Certificates-Are-Better-Than-Paper-Certificates.png
 
 featured: true

@@ -7,7 +7,7 @@ description: Discover how a Fortune 500 tech firm in Carlisle boosted employee r
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/elearning--2-.webp
 featured: true
 seo_keywords: "employee retention case study, digital credentials for HR, boosting employee engagement, Carlisle tech company success, CertifyMe HR solution"

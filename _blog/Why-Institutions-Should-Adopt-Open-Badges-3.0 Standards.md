@@ -9,7 +9,7 @@ description: The Future of Digital Credentials Is Open, Secure, and Verifiable
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: https://openbadges.org/sites/default/files/assets/content/Graphic_Open%20Badges.png
 
 featured: true

@@ -6,7 +6,7 @@ description: Explore how digital credentials like badges and certificates are re
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Future-Of-Digital-Credentials.png
 featured: true
 seo_keywords: "future of higher education credentials, digital badges vs diplomas, micro-credentials in universities, verifiable student records, digital credentialing trends 2026"

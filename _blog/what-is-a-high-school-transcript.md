@@ -6,7 +6,7 @@ description: Discover the essentials of a high school transcript and learn how t
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/eduTranscript/What Is A High School Transcript Blog Banner (2025).png
 
 featured: true

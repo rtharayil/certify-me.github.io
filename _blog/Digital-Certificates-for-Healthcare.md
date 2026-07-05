@@ -7,7 +7,7 @@ description: Discover how digital health facility certificates enhance security 
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Digital-Certificates-for-Healthcare-CertifyMe.png
 
 featured: true

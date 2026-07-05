@@ -7,7 +7,7 @@ description: Learn how to make your digital certificates feel official, branded,
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/How-White-Label-Certificates-Make-Your-University-Stand-Out (1).png
 featured: true
 seo_keywords: "white label university certificates, brandable digital badges, custom credential design, institutional branding credentials, white label platform benefits"

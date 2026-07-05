@@ -7,7 +7,7 @@ description: Discover how verified credentials are transforming education and em
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/ultimate-guide-to-verified-credentials/The-Ultimate-Guide-To-Verified-Credentials-In-2025.png
 featured: true
 seo_keywords: "verified credentials guide 2025, W3C verifiable credentials data model, blockchain credential verification, digital identity wallets, decentralized identifiers DID"

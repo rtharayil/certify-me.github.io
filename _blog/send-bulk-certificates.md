@@ -7,7 +7,7 @@ description: Learn how to send multiple certificates via email in a single click
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Send Multiple Certificates in a Single Click with CertifyMe Certificate Generator/Featured Image.png
 featured: true
 seo_keywords: "send bulk certificates email, how to send multiple certificates at once, bulk certificate generator, automated certificate distribution, email certificates in one click"

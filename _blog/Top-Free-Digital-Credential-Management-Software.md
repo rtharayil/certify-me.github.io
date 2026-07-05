@@ -6,7 +6,7 @@ description: A simple guide to the best free digital credential software—Serti
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Top-Free-Digital-Credential-Management-Software-In-2025.png
 
 featured: true

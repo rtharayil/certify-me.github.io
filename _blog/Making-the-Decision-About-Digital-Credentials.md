@@ -7,7 +7,7 @@ description: Not sure how to choose digital credentials that actually work? Lear
 abstract:
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Making-The-Right-Call-On-Digital-Credentials.png
 featured: true
 seo_keywords: "choosing digital credentials, credential management platform, student data privacy, verifiable credentials vs digital badges, higher education digital transformation"

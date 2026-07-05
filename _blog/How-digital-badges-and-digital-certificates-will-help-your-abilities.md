@@ -6,7 +6,7 @@ description: Digital badges and certificates allow learners to showcase their sk
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/How-Digital-Credentials-Help-You-Stand-Out-In-The-Job-Market.png
 featured: true
 seo_keywords: "digital badges vs certificates, showcasing skills to employers, building a digital portfolio, micro-credentials for students, verifiable skill markers"

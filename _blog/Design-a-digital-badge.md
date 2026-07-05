@@ -8,7 +8,7 @@ description: Design badges effortlessly with CertifyMe's step-by-step guide. Cre
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/digital badges design.png
 featured: true
 seo_keywords: "create digital badge, badge design guide 2025, CertifyMe badge maker, custom digital credentials, how to design badges"

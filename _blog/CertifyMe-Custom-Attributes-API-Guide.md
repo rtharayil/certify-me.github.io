@@ -7,7 +7,7 @@ description: A simple step-by-step guide on how to add custom info like names or
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/CertifyMe-API-Guide-For-Users.png
 featured: true
 seo_keywords: "CertifyMe API guide, custom attributes API, digital certificate API, dynamic data fields, CertifyMe developer documentation"

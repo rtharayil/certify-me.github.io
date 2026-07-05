@@ -8,7 +8,7 @@ description: "Wondering what an academic transcript is and why it matters? This 
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Academic-Transcripts-In-2025.png
 
 featured: true

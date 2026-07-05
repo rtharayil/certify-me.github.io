@@ -7,7 +7,7 @@ description: Discover how to create stunning digital badges with Canva’s Badge
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Canva Badge Blog Banner.png
 featured: true
 seo_keywords: "Canva badge maker guide, design digital badges online, custom badge templates, create credentials with Canva, Canva and CertifyMe integration"

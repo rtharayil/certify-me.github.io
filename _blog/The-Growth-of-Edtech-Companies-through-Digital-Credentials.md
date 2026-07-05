@@ -6,7 +6,7 @@ description: EdTech is no longer just a buzzword—it’s how millions of studen
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/How-Digital-Credentials-Are-Helping-EdTech-Companies-Grow (1).png
 featured: true
 seo_keywords: "EdTech growth strategies, digital credentials in online learning, LMS integration for badges, student engagement in EdTech, verifiable certificates for EdTech platforms"

@@ -5,7 +5,7 @@ title: How Learning Is Evolving in the Digital Age?
 description: Explore how digital tools and innovations are reshaping education, making learning more accessible, personalized, and interactive in the digital age.
 abstract:  
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/How Learning is Evolving in the Digital Age.png
 featured: true
 seo_keywords: "digital education trends, personalized learning technology, adaptive learning platforms, future of education digital age, CertifyMe for institutions"

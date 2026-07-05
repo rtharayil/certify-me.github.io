@@ -6,7 +6,7 @@ description: Learn how Leeds University reduced credentialing costs by 39%, cut 
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/higher_education_case_study.jpg
 featured: true
 seo_keywords: "Leeds University digital credentials case study, sustainability in higher education, reducing university paper waste, cost of university certificates, CertifyMe university results"

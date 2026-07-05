@@ -7,7 +7,7 @@ description: Learn how to validate digital skills with training, badges, and cer
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Proving-Your-Digital-Skills.png
 featured: true
 seo_keywords: "proving digital skills, how to validate skills, digital badges for resume, online skill certification, digital skill toolkit"

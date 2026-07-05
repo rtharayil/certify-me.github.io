@@ -6,7 +6,7 @@ description: Digital credentials do more than prove skills—they market them. H
 
 abstract: 
 topic: news
-author: Aneesha Kurian
+author : Aneesha Kurian
 imageLink: /img/blog/The-Marketing-Power-Of-Digital-Credentials.png
 featured: true
 seo_keywords: "digital credential marketing, brand visibility for universities, social media advocacy, student personal branding, CertifyMe analytics"

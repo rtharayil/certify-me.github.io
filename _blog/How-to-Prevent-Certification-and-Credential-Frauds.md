@@ -6,7 +6,7 @@ description: Prevent certification fraud by verifying credentials using digital 
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/How-To-Spot-And-Prevent-Credential-Fraud-Easily.png
 featured: true
 seo_keywords: "preventing credential fraud, blockchain certificate verification, how to spot fake degrees, diploma mill risks, secure digital credentialing"

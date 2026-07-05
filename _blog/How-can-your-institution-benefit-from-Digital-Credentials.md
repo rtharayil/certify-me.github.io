@@ -7,7 +7,7 @@ description: Digital credentials benefit institutions through cost-effectiveness
 abstract:
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/How-Digital-Credentials-Can-Benefit-Your-Institution-In-2025.png
 featured: true
 seo_keywords: "institutional benefits of digital credentials, cost-effective academic records, digital diploma security, academic brand visibility, modernizing university transcripts"

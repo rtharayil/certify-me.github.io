@@ -6,7 +6,7 @@ description: Digital SSL certificates provide secure connections, protect sensit
 
 abstract:  
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/credential/58.png
 
 featured: true

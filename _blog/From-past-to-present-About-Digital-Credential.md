@@ -7,7 +7,7 @@ description: Digital credentials have revolutionized the certification process, 
 abstract:
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/credential/32.png
 featured: true
 seo_keywords: "history of digital credentials, digital vs paper certificates, blockchain certification history, digital badges evolution, secure document verification"

@@ -6,7 +6,7 @@ description: Discover how digital badges can help students and university staff 
 
 abstract: 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/How-Digital-Badges-Help-You-Stay-on-Track-with-Educational-Goals.png
 featured: true
 seo_keywords: "digital badges for education, tracking learning milestones, student motivation tools, micro-credentials in higher ed, digital badge portfolios for resumes"

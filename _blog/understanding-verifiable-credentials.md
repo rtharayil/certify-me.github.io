@@ -7,7 +7,7 @@ description: Learn about the key components and why verified certificates are a 
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /img/blog/Understanding Verifiable Credentials.png
 featured: true
 seo_keywords: "what are verifiable credentials, components of verifiable credentials, metadata in digital badges, verifiable credential model, blockchain certificate benefits"

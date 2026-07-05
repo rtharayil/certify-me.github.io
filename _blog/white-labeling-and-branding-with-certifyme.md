@@ -7,7 +7,7 @@ description: This article provides guidance on utilizing CertifyMe's white label
 abstract: 
 
 topic: news
-author : Mrunal Upadhye
+author : Aneesha Kurian
 imageLink: /assets4/images/Brand image.png
 featured: true
 seo_keywords: "white label digital credentials, custom branded certificates, white labeling for education, SMTP white labeling, domain white labeling for badges"
