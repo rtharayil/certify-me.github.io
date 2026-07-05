@@ -49,13 +49,13 @@ sitemap.priority: 0.3
 
   <p>Aneesha writes CertifyMe's guides and platform comparisons, including:</p>
 
-  <ul>
-    <li><a href="/blog/certifyme-vs-credly-2026-comparison">CertifyMe vs. Credly: Which Digital Credentialing Platform is Best in 2026?</a></li>
-    <li><a href="/blog/certifyme-vs-certifier-2026-comparison">CertifyMe vs. Certifier: Which Digital Credentialing Platform is Right for Your Organization?</a></li>
-    <li><a href="/blog/certifyme-vs-accredible-2026-comparison">CertifyMe vs. Accredible: Which Digital Credentialing Platform Should You Choose in 2026?</a></li>
-    <li><a href="/blog/certifyme-vs-parchment-2026-comparison">CertifyMe vs. Parchment: Which Digital Credentialing Platform is Best for Modern Institutions?</a></li>
-    <li><a href="/blog/certifyme-vs-sertifier-2026-comparison">CertifyMe vs. Sertifier: Which Digital Credentialing Platform is Best in 2026?</a></li>
-    <li><a href="/blog/digital-credentialing-platforms-2026-comparison">Accredible vs Certifier vs Credly vs CertifyMe: Comparing the Top Digital Credentialing Platforms in 2026</a></li>
+  <ul style="list-style: disc; padding-left: 22px; margin: 0;">
+    <li style="margin-bottom: 12px;"><a href="/blog/certifyme-vs-credly-2026-comparison">CertifyMe vs. Credly: Which Digital Credentialing Platform is Best in 2026?</a></li>
+    <li style="margin-bottom: 12px;"><a href="/blog/certifyme-vs-certifier-2026-comparison">CertifyMe vs. Certifier: Which Digital Credentialing Platform is Right for Your Organization?</a></li>
+    <li style="margin-bottom: 12px;"><a href="/blog/certifyme-vs-accredible-2026-comparison">CertifyMe vs. Accredible: Which Digital Credentialing Platform Should You Choose in 2026?</a></li>
+    <li style="margin-bottom: 12px;"><a href="/blog/certifyme-vs-parchment-2026-comparison">CertifyMe vs. Parchment: Which Digital Credentialing Platform is Best for Modern Institutions?</a></li>
+    <li style="margin-bottom: 12px;"><a href="/blog/certifyme-vs-sertifier-2026-comparison">CertifyMe vs. Sertifier: Which Digital Credentialing Platform is Best in 2026?</a></li>
+    <li style="margin-bottom: 12px;"><a href="/blog/digital-credentialing-platforms-2026-comparison">Accredible vs Certifier vs Credly vs CertifyMe: Comparing the Top Digital Credentialing Platforms in 2026</a></li>
   </ul>
 
 </div>
