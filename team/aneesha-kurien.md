@@ -15,46 +15,48 @@ sitemap.priority: 0.3
     <a href="https://www.linkedin.com/in/aneesha-kurien-259606244/?originalSubdomain=in" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 10px 20px; background: #0a66c2; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600;">View LinkedIn Profile</a>
   </div>
 
-  <br>
+  <hr>
 
-  ## About
+  <h2>About</h2>
 
-  Aneesha is a product growth leader at CertifyMe with extensive experience in B2B SaaS. She works as a collaborative leader with strong problem-solving skills, driving product growth through customer-focused innovations and go-to-market strategies while partnering with cross-functional teams.
+  <p>Aneesha is a product growth leader at CertifyMe with extensive experience in B2B SaaS. She works as a collaborative leader with strong problem-solving skills, driving product growth through customer-focused innovations and go-to-market strategies while partnering with cross-functional teams.</p>
 
-  As CertifyMe's Credential Solution Architect, Aneesha helps organizations design and implement digital credentialing programs — from digital badges and certificates to structured learning pathways — that hold up as verifiable, portable credentials for universities, certification bodies, and enterprises.
+  <p>As CertifyMe's Credential Solution Architect, Aneesha helps organizations design and implement digital credentialing programs &mdash; from digital badges and certificates to structured learning pathways &mdash; that hold up as verifiable, portable credentials for universities, certification bodies, and enterprises.</p>
 
-  <br>
+  <hr>
 
-  ## Experience
+  <h2>Experience</h2>
 
-  **Credential Solution Architect** — CertifyMe (Aug 2021 - Present)
-  Bengaluru, Karnataka, India
+  <p><strong>Credential Solution Architect</strong> &mdash; CertifyMe (Aug 2021 - Present)<br>
+  Bengaluru, Karnataka, India</p>
 
-  CertifyMe.Online is an end-to-end solution for creating, issuing, and managing digital credentials, used by 600+ institutions worldwide.
+  <p>CertifyMe.Online is an end-to-end solution for creating, issuing, and managing digital credentials, used by 600+ institutions worldwide.</p>
 
-  **Customer Success Executive** — Quadralogics (Apr 2019 - Jul 2022)
-  Karnataka, India
+  <p><strong>Customer Success Executive</strong> &mdash; Quadralogics (Apr 2019 - Jul 2022)<br>
+  Karnataka, India</p>
 
-  Focused on new business development and customer relationship management (CRM).
+  <p>Focused on new business development and customer relationship management (CRM).</p>
 
-  <br>
+  <hr>
 
-  ## Education
+  <h2>Education</h2>
 
-  **Bachelor of Technology (B.Tech)** — Bangalore Institute of Technology (2014 - 2018)
+  <p><strong>Bachelor of Technology (B.Tech)</strong> &mdash; Bangalore Institute of Technology (2014 - 2018)</p>
 
-  <br>
+  <hr>
 
-  ## Articles by Aneesha
+  <h2>Articles by Aneesha</h2>
 
-  Aneesha writes CertifyMe's guides and platform comparisons, including:
+  <p>Aneesha writes CertifyMe's guides and platform comparisons, including:</p>
 
-  - [CertifyMe vs. Credly: Which Digital Credentialing Platform is Best in 2026?](/blog/certifyme-vs-credly-2026-comparison)
-  - [CertifyMe vs. Certifier: Which Digital Credentialing Platform is Right for Your Organization?](/blog/certifyme-vs-certifier-2026-comparison)
-  - [CertifyMe vs. Accredible: Which Digital Credentialing Platform Should You Choose in 2026?](/blog/certifyme-vs-accredible-2026-comparison)
-  - [CertifyMe vs. Parchment: Which Digital Credentialing Platform is Best for Modern Institutions?](/blog/certifyme-vs-parchment-2026-comparison)
-  - [CertifyMe vs. Sertifier: Which Digital Credentialing Platform is Best in 2026?](/blog/certifyme-vs-sertifier-2026-comparison)
-  - [Accredible vs Certifier vs Credly vs CertifyMe: Comparing the Top Digital Credentialing Platforms in 2026](/blog/digital-credentialing-platforms-2026-comparison)
+  <ul>
+    <li><a href="/blog/certifyme-vs-credly-2026-comparison">CertifyMe vs. Credly: Which Digital Credentialing Platform is Best in 2026?</a></li>
+    <li><a href="/blog/certifyme-vs-certifier-2026-comparison">CertifyMe vs. Certifier: Which Digital Credentialing Platform is Right for Your Organization?</a></li>
+    <li><a href="/blog/certifyme-vs-accredible-2026-comparison">CertifyMe vs. Accredible: Which Digital Credentialing Platform Should You Choose in 2026?</a></li>
+    <li><a href="/blog/certifyme-vs-parchment-2026-comparison">CertifyMe vs. Parchment: Which Digital Credentialing Platform is Best for Modern Institutions?</a></li>
+    <li><a href="/blog/certifyme-vs-sertifier-2026-comparison">CertifyMe vs. Sertifier: Which Digital Credentialing Platform is Best in 2026?</a></li>
+    <li><a href="/blog/digital-credentialing-platforms-2026-comparison">Accredible vs Certifier vs Credly vs CertifyMe: Comparing the Top Digital Credentialing Platforms in 2026</a></li>
+  </ul>
 
 </div>
 
