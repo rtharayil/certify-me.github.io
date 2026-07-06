@@ -561,10 +561,10 @@ h2.statistic-number {
     font-size: 2.25rem !important;
   }
   .logo-list {
-    gap: 24px !important;
+    gap: 34px !important;
   }
   .logo-list li img {
-    height: 34px !important;
+    height: 39px !important;
   }
   /* Scale down "Trusted by" label on mobile — 16px uppercase overflows at 375px */
   #badges.badges-main-container::before {
