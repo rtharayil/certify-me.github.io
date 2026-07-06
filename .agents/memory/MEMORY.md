@@ -1,3 +1,4 @@
 - [CertifyMe heading-order audit](certifyme-headings.md) — template-level fixes, remaining patterns, and what's content-level vs template-level.
 - [CertifyMe SEO critical fixes](certifyme-seo-fixes.md) — sitemap, schema, HSTS, and tracking fixes completed.
 - [Git history spans multiple eras](git-history-caveats.md) — plain `git log` may only show a narrow recent window; use `--all` when restoring/comparing against a past date.
+- [CertifyMe client-logo section location](certifyme-client-logos.md) — the homepage customer logo strip lives inside Statistics.html via ClientLogos.html, not a standalone section.
