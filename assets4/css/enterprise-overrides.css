@@ -150,7 +150,7 @@ h2.statistic-number {
 
 /* Tighten hero bottom space — was 100px, felt like a dead gap before the logo strip */
 #hero-7 {
-  padding-bottom: 60px !important;
+  padding-bottom: 32px !important;
 }
 
 /* H1 — Manrope 800 at this size hits the enterprise authority mark */
@@ -246,7 +246,7 @@ h2.statistic-number {
 /* ── 3. LOGO TRUST STRIP ──────────────────────────────── */
 #badges.badges-main-container {
   border-top: 1px solid rgba(40,43,117,.10) !important;
-  padding-top: 40px !important;
+  padding-top: 24px !important;
   padding-bottom: 48px !important;
   margin-top: 0 !important;
 }
@@ -568,10 +568,10 @@ h2.statistic-number {
     font-size: 2.25rem !important;
   }
   #hero-7 {
-    padding-bottom: 40px !important;
+    padding-bottom: 24px !important;
   }
   #badges.badges-main-container {
-    padding-top: 28px !important;
+    padding-top: 20px !important;
     padding-bottom: 32px !important;
   }
   .logo-list {
