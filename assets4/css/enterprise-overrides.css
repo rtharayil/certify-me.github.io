@@ -148,6 +148,11 @@ h2.statistic-number {
   pointer-events: none;
 }
 
+/* Tighten hero bottom space — was 100px, felt like a dead gap before the logo strip */
+#hero-7 {
+  padding-bottom: 60px !important;
+}
+
 /* H1 — Manrope 800 at this size hits the enterprise authority mark */
 .hero-7-txt h1.s-42 {
   font-size: 2.85rem !important;
@@ -241,8 +246,9 @@ h2.statistic-number {
 /* ── 3. LOGO TRUST STRIP ──────────────────────────────── */
 #badges.badges-main-container {
   border-top: 1px solid rgba(40,43,117,.10) !important;
-  padding-top: 28px !important;
-  margin-top: 32px !important;
+  padding-top: 40px !important;
+  padding-bottom: 48px !important;
+  margin-top: 0 !important;
 }
 /* Subtle "Trusted by" label */
 #badges.badges-main-container::before {
@@ -254,7 +260,7 @@ h2.statistic-number {
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #999;
-  margin-bottom: 18px;
+  margin-bottom: 28px;
 }
 .logo-list {
   list-style: none !important;
@@ -263,7 +269,7 @@ h2.statistic-number {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 56px !important;
+  gap: 64px !important;
   flex-wrap: wrap !important;
 }
 .logo-list li img {
@@ -271,10 +277,11 @@ h2.statistic-number {
   width: auto !important;
   object-fit: contain !important;
   filter: grayscale(75%) opacity(.65) !important;
-  transition: filter .25s ease !important;
+  transition: filter .25s ease, transform .25s ease !important;
 }
 .logo-list li img:hover {
   filter: grayscale(0%) opacity(1) !important;
+  transform: translateY(-2px) !important;
 }
 
 /* ── 4. STATISTICS — dark indigo conversion strip ─────── */
@@ -560,6 +567,13 @@ h2.statistic-number {
   #statistic-1 h2.statistic-number {
     font-size: 2.25rem !important;
   }
+  #hero-7 {
+    padding-bottom: 40px !important;
+  }
+  #badges.badges-main-container {
+    padding-top: 28px !important;
+    padding-bottom: 32px !important;
+  }
   .logo-list {
     gap: 34px !important;
   }
@@ -570,6 +584,7 @@ h2.statistic-number {
   #badges.badges-main-container::before {
     font-size: 11px !important;
     letter-spacing: 1px !important;
+    margin-bottom: 18px;
   }
   /* Cap inner-page brand-logo images so they don't render at full natural size */
   .brand-logo img {
