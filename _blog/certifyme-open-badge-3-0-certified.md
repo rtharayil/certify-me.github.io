@@ -3,9 +3,9 @@ permalink: /blog/certifyme-open-badge-3-0-certified
 
 layout: V4LayoutSingleBlogPost
 
-title: "CertifyMe Is 1EdTech Certified for Open Badge 3.0: What It Means for Enterprise Credentialing"
+title: "CertifyMe Is 1EdTech Certified for Open Badge 3.0 — And Here's Why That Actually Matters"
 
-description: "CertifyMe is officially 1EdTech (IMS Global) certified for Open Badge 3.0. Discover what this certification means for enterprise digital credentialing, compliance, and interoperability."
+description: "CertifyMe holds official 1EdTech certification for Open Badge 3.0. Here's what that means for enterprise teams, how it compares to other platforms, and why the standard itself is worth understanding."
 
 abstract:
 
@@ -14,58 +14,56 @@ author : Aneesha Kurian
 imageLink: /img/blog/CertifyMe-Open-Badge-3-0-Certified.png
 featured: true
 
-seo_keywords: "CertifyMe Open Badge 3.0 certified, 1EdTech certified digital badge platform, IMS Global Open Badges 3.0 enterprise, Open Badge 3.0 compliant platform, enterprise digital credentialing standards, verifiable digital badges enterprise, Open Badge 3.0 certification for organizations"
+seo_keywords: "CertifyMe Open Badge 3.0 certified, 1EdTech certified badge platform, IMS Global Open Badges 3.0, which platforms support Open Badge 3.0, Open Badge 3.0 enterprise credentialing, open badge 3.0 vs 2.0, 1EdTech certification registry digital badges"
 
 faqs:
   - question: "Is CertifyMe officially certified for Open Badge 3.0?"
-    answer: "Yes. CertifyMe holds official 1EdTech (formerly IMS Global) certification for the Open Badge 3.0 standard. You can verify this directly on the 1EdTech certification registry at site.imsglobal.org/certifications/certifyme/certifyme."
-  - question: "What does Open Badge 3.0 certification mean for enterprise customers?"
-    answer: "It means every badge issued through CertifyMe follows the most current open standard for digital credentials. Your credentials will be verifiable by any compliant system, globally — no vendor lock-in, no proprietary formats, and no risk of credential obsolescence."
-  - question: "How is Open Badge 3.0 different from older badge standards?"
-    answer: "Open Badge 3.0 aligns with the W3C Verifiable Credentials Data Model, adding cryptographic signatures, decentralized identity (DID) support, and wallet portability that earlier versions (1.x and 2.x) lacked. It's a significant upgrade in security, privacy, and interoperability."
-  - question: "Can Open Badge 3.0 credentials be verified without contacting CertifyMe?"
-    answer: "Yes. Credentials issued under Open Badge 3.0 are cryptographically signed. Any compliant verifier can confirm authenticity using the issuer's digital signature and decentralized identifier — no reliance on CertifyMe's servers is required."
-  - question: "Is Open Badge 3.0 suitable for large enterprise credentialing programs?"
-    answer: "Absolutely. Open Badge 3.0 was built with scalability, interoperability, and compliance in mind. CertifyMe's certified implementation supports bulk issuance, API integration, SSO, revocation, and analytics — purpose-built for enterprise scale."
-  - question: "What industries benefit most from Open Badge 3.0 certified platforms?"
-    answer: "Higher education, professional associations, corporate L&D, government training agencies, and healthcare credentialing bodies benefit most. Any organization that needs globally recognized, auditable, tamper-proof credentials will find Open Badge 3.0 compliance essential."
-  - question: "How do I verify that CertifyMe is 1EdTech certified?"
-    answer: "Visit the official 1EdTech certification directory at site.imsglobal.org/certifications/certifyme/certifyme to view CertifyMe's certification record, scope, and conformance details."
+    answer: "Yes — and I don't mean self-declared. CertifyMe has passed the 1EdTech (formerly IMS Global) conformance certification process for Open Badge 3.0, and the certification is publicly listed on the 1EdTech registry at site.imsglobal.org/certifications/certifyme/certifyme. That's the difference between a platform that says it's compliant and one that's been independently tested."
+  - question: "What does Open Badge 3.0 certification mean for enterprise teams?"
+    answer: "In plain terms — every badge you issue through a certified platform follows a verified, open standard. Your credentials are independently verifiable, portable to any W3C-compatible wallet, and not locked to a single vendor. For enterprise procurement and compliance teams, 1EdTech certification is the clearest third-party proof that the platform actually implements the standard correctly."
+  - question: "How is Open Badge 3.0 different from Open Badge 2.0?"
+    answer: "OB 3.0 is built on the W3C Verifiable Credentials Data Model. That's a big deal. It adds cryptographic signing, decentralized identifiers (DIDs), and genuine wallet portability that OB 2.0 simply didn't have. In practice, it means credentials are harder to forge, easier to verify anywhere, and don't depend on the issuing platform staying online."
+  - question: "Which platforms are 1EdTech certified for Open Badge 3.0?"
+    answer: "CertifyMe is listed in the 1EdTech certification registry for Open Badge 3.0. Other platforms in the space vary — some support older Open Badge versions, some claim OB3 compatibility without independent certification, and some (like Parchment or Credly) don't position Open Badge standards as their primary focus at all."
+  - question: "Do Open Badge 3.0 credentials work without the issuing platform?"
+    answer: "Yes — and that's one of the most important things about OB3. Because credentials carry a cryptographic signature tied to the issuer's decentralized identifier, any compliant verifier can check authenticity without contacting CertifyMe. The credential's proof is built into the credential itself."
+  - question: "Is Open Badge 3.0 right for large enterprise credentialing programs?"
+    answer: "It was built for exactly that. OB3's interoperability, cryptographic security, and alignment to W3C standards address the things enterprise programs care about most — compliance, auditability, global portability, and no vendor lock-in. CertifyMe's enterprise implementation adds bulk issuance, API access, revocation, role-based admin, and white-labeling on top of that foundation."
+  - question: "How do I verify CertifyMe's 1EdTech certification myself?"
+    answer: "Go to site.imsglobal.org/certifications and search for CertifyMe. You'll see the certification listing, the standard version, and the conformance details. I always recommend enterprise buyers do this check for any platform they're evaluating — don't take a vendor's word for it."
 ---
 
-CertifyMe is officially **1EdTech (IMS Global) certified for the Open Badge 3.0 standard** — the most current and technically rigorous digital badge specification in the credentialing industry.
+A few months ago, I was in a conversation with an enterprise L&D manager who'd been through three credentialing platform demos that week. Every single one of them had said "we support Open Badges." She asked me what that actually meant. And honestly? It's a fair question, because "we support Open Badges" can mean a lot of different things depending on which version, whether that support is certified, and what the platform actually does with it.
 
-For enterprise learning and development teams, certification bodies, and academic institutions, this certification is more than a badge on a website. It is a confirmation that every credential issued through CertifyMe meets an independently verified, globally accepted interoperability standard — backed by the same organization that governs the LTI, QTI, and Caliper standards used in enterprise learning ecosystems worldwide.
-
-This post explains exactly what that certification means, why Open Badge 3.0 is the standard enterprise credentialing programs should be building on, and what CertifyMe's certified status means for your procurement decisions, compliance requirements, and long-term credential strategy.
+So let me explain what it means when CertifyMe says it — and why the "3.0" part and the "1EdTech certified" part are not just marketing words.
 
 <br>
 
-## What Is Open Badge 3.0 and Why Does the Standard Matter?
+## What Is Open Badge 3.0, and Why Should You Care?
 
-Open Badge 3.0 is the third major version of the Open Badges specification, governed by **1EdTech (formerly IMS Global Learning Consortium)**. It is the first version to fully align with the **W3C Verifiable Credentials Data Model**, making it the only badge standard built on the same cryptographic trust infrastructure used by governments, financial institutions, and identity systems globally.
+If you're already in the digital credentialing space, you've probably heard "Open Badges" thrown around a lot. It's been around since Mozilla started the standard, IMS Global (now 1EdTech) took it over, and now we're on version 3.0.
 
-In practical terms, Open Badge 3.0 upgrades a badge from a static image with embedded metadata (the OB 2.x model) to a **digitally signed, machine-verifiable credential** that:
+Here's the thing — each version isn't just an incremental update. Open Badge 3.0 is a fundamental rearchitecting of what a badge *is* and how it works.
 
-- Carries a cryptographic proof tied to the issuer's decentralized identifier (DID)
-- Can be stored in any W3C-compatible digital wallet
-- Is verifiable by any compliant third-party system — without contacting the issuing platform
-- Supports selective disclosure so recipients share only what is necessary
-- Includes structured evidence, alignment to frameworks, and endorsement pathways
+The earlier versions (1.x and 2.x) were solid for their time. A badge was essentially an image with metadata baked into it — who issued it, what for, when. You could click it and verify. Fine. But the data lived in JSON, there was no standardized cryptographic signing, and verification depended on the issuing platform staying online and accessible.
 
-For enterprise credentialing programs, this matters for three specific reasons.
+Open Badge 3.0 changes the foundation. It's now built directly on the **W3C Verifiable Credentials Data Model** — the same standard being adopted by governments, healthcare systems, and financial institutions for digital identity. That means:
 
-**First, compliance.** Regulated industries — healthcare, financial services, government — increasingly require auditable, tamper-evident credentials. Open Badge 3.0's cryptographic signing satisfies that requirement in a standardized, internationally recognized way.
+- Every badge is **cryptographically signed** by the issuer
+- The issuer gets a **Decentralized Identifier (DID)** — a verifiable digital identity that doesn't depend on a central database
+- Badges are **stored in digital wallets**, not just on a platform page
+- Verification happens **anywhere**, by anyone with a compliant system — no need to ping CertifyMe's servers
+- Recipients can use **selective disclosure** to share only the parts of a credential they choose to
 
-**Second, interoperability.** Enterprise environments rarely rely on a single platform. An Open Badge 3.0 credential issued by one system is readable and verifiable by any other compliant system. That eliminates integration risk and vendor dependency.
-
-**Third, longevity.** Credentials issued under proprietary formats become unverifiable when a vendor changes their system or exits the market. Open Badge 3.0 credentials, once issued, remain verifiable independently of any specific platform.
+For an enterprise team issuing thousands of credentials, that's not an incremental improvement. That's a completely different category of trust.
 
 <br>
 
-## CertifyMe's 1EdTech Certification for Open Badge 3.0
+## CertifyMe's 1EdTech Certification — What It Actually Means
 
-CertifyMe has completed the **1EdTech conformance certification process** for Open Badge 3.0 and is listed in the official 1EdTech certification registry.
+Here's what I want to make clear, because I've seen this muddled in a lot of vendor pitches: there's a difference between *claiming* to support Open Badge 3.0 and being *independently certified* for it.
+
+**CertifyMe is listed in the official 1EdTech certification registry for Open Badge 3.0.**
 
 **[View CertifyMe's Official 1EdTech Certification →](https://site.imsglobal.org/certifications/certifyme/certifyme#cert_pane_nid_625336)**
 
@@ -75,24 +73,19 @@ CertifyMe has completed the **1EdTech conformance certification process** for Op
   <img class="img-fluid r-16" src="/img/blog/CertifyMe-Open-Badge-3-0-Certified.png" alt="CertifyMe Open Badge 3.0 certified by 1EdTech IMS Global" style="display: block; margin: 0 auto; max-width: 720px;">
 </a>
 
-<p class="text-center" style="margin-top:10px; font-size:0.9rem; color:#666;">CertifyMe's official Open Badge 3.0 certification — verified by 1EdTech (IMS Global)</p>
+<p class="text-center" style="margin-top:10px; font-size:0.9rem; color:#666;">CertifyMe's official 1EdTech Open Badge 3.0 certification — publicly verifiable on the IMS Global registry</p>
 
 <br>
 
-This certification is not self-declared. It requires the platform to pass a structured conformance test suite administered by 1EdTech, covering:
+1EdTech certification isn't something you apply for with a checkbox form. The platform goes through a structured conformance test suite administered by 1EdTech, covering: the OB3 data model, cryptographic signing with recognized proof types, achievement and evidence structures, and interoperability with other certified systems. If it fails any part of that, it doesn't get listed.
 
-- Correct implementation of the Open Badge 3.0 data model
-- Proper cryptographic signing using recognized proof types
-- Accurate handling of achievement, evidence, alignment, and endorsement structures
-- Interoperability with other certified systems
-
-For procurement teams and IT leaders evaluating credentialing platforms, 1EdTech certification is the clearest third-party signal that the platform correctly implements the standard — reducing integration risk and ensuring credentials issued today remain verifiable for years to come.
+I always tell buyers: go check the [1EdTech registry](https://site.imsglobal.org/certifications) yourself before you sign anything. The listing is public. Any platform that's passed certification will be there. Any platform that isn't there — regardless of what their sales team says — has not been independently validated.
 
 <br>
 
-## What Changed from Open Badge 2.0 to Open Badge 3.0?
+## Open Badge 3.0 vs. 2.0 — What Actually Changed?
 
-If your organization has historically issued Open Badge 2.x credentials, understanding the technical and practical differences in version 3.0 is essential for planning your credential program.
+If your organization has previously issued OB 2.x badges, understanding the real differences matters for planning any migration or new program.
 
 <html lang="en">
 <head>
@@ -120,8 +113,8 @@ If your organization has historically issued Open Badge 2.x credentials, underst
     </tr>
     <tr>
       <td>Cryptographic signing</td>
-      <td>Optional / limited</td>
-      <td>Required — issuer DID + proof</td>
+      <td>Optional, limited</td>
+      <td>Required — issuer DID + cryptographic proof</td>
     </tr>
     <tr>
       <td>Decentralized Identifiers (DID)</td>
@@ -131,7 +124,12 @@ If your organization has historically issued Open Badge 2.x credentials, underst
     <tr>
       <td>Wallet portability</td>
       <td>Platform-dependent</td>
-      <td>Any W3C-compatible wallet</td>
+      <td>Any W3C-compatible digital wallet</td>
+    </tr>
+    <tr>
+      <td>Independent verification</td>
+      <td>Requires issuer's platform to be online</td>
+      <td>Fully platform-independent</td>
     </tr>
     <tr>
       <td>Selective disclosure</td>
@@ -139,114 +137,33 @@ If your organization has historically issued Open Badge 2.x credentials, underst
       <td>Supported</td>
     </tr>
     <tr>
-      <td>Independent verification</td>
-      <td>Requires issuer platform</td>
-      <td>Platform-independent</td>
-    </tr>
-    <tr>
-      <td>Evidence and alignment</td>
-      <td>Basic</td>
-      <td>Structured, richer schema</td>
-    </tr>
-    <tr>
-      <td>Endorsement support</td>
+      <td>Endorsement model</td>
       <td>Limited</td>
-      <td>Full endorsement credential model</td>
+      <td>Full endorsement credential structure</td>
+    </tr>
+    <tr>
+      <td>Governance</td>
+      <td>IMS Global</td>
+      <td>1EdTech — actively maintained and extended</td>
     </tr>
   </tbody>
 </table>
 </body>
 </html>
 
-<p class="text-center fw-bold">Open Badge 2.0 vs Open Badge 3.0 — key differences</p>
+<p class="text-center fw-bold">Open Badge 2.0 vs. Open Badge 3.0 — what changed</p>
 
 <br>
 
-The shift to W3C Verifiable Credentials is the most consequential change. It means Open Badge 3.0 credentials do not exist in isolation — they are part of the same global trust infrastructure used for digital identity, government credentials, and enterprise identity systems. For enterprise buyers, this removes the "will this credential format survive?" risk that has historically made large-scale badge programs a governance concern.
+The shift to W3C Verifiable Credentials is the biggest thing here. It's not just a technical upgrade — it means OB3 badges are now part of the same global trust fabric as digital passports, government IDs, and financial credentials. That's the kind of interoperability that makes enterprise procurement teams comfortable.
 
 <br>
 
-## Why Enterprise Credentialing Programs Should Require Open Badge 3.0 Compliance
+## Which Platforms Support Open Badge 3.0? (An Honest Look)
 
-Enterprise credentialing programs — whether run by corporate L&D, professional associations, or certification bodies — operate at a scale and under compliance requirements that make format choice a strategic decision, not a technical one.
+This is the part I find most useful to write, because it's also the part that's hardest to get a straight answer on in a vendor demo.
 
-Here is why Open Badge 3.0 compliance should be a procurement requirement for enterprise platforms.
-
-<br>
-
-### 1. Audit-Ready Credential Records
-
-Open Badge 3.0 credentials carry cryptographic proof tied to the issuer's identity. Every credential issued can be independently verified — including who issued it, when, and whether it has been modified. For regulated industries where credential integrity must be demonstrable in audits, this is the difference between a compliance-grade system and a trust-based one.
-
-<br>
-
-### 2. No Vendor Lock-In
-
-Credentials issued in a proprietary format are only verifiable through the issuing vendor's system. Open Badge 3.0 credentials are readable by any 1EdTech-certified or W3C-compatible verifier. If your organization changes platforms, switches vendors, or consolidates systems, credentials issued under Open Badge 3.0 remain valid and verifiable.
-
-<br>
-
-### 3. Global Recognition and Cross-Border Portability
-
-Enterprise organizations with a global workforce or international learner base need credentials that work across borders. Open Badge 3.0 is recognized by universities, employers, governments, and professional bodies internationally. A credential issued in one country is verifiable in another — without intermediary services or manual checks.
-
-<br>
-
-### 4. Alignment with Emerging Regulatory Requirements
-
-The European Digital Credentials for Learning (EDC) framework, national digital identity initiatives, and sector-specific credential regulations are increasingly aligned to W3C and 1EdTech standards. Organizations that build their credential programs on Open Badge 3.0 now are positioning themselves ahead of requirements that are expected to become mandatory across sectors in the near term.
-
-<br>
-
-### 5. Integration with Enterprise Identity and HR Systems
-
-Open Badge 3.0's alignment with W3C Verifiable Credentials makes integration with enterprise identity systems (SSO, HRMS, LMS, and identity wallets) significantly more straightforward. CertifyMe's certified implementation supports REST API access, webhook-based automation, and direct LMS integrations — designed for enterprise IT environments where badge issuance must fit within existing workflows, not replace them.
-
-<br>
-
-## How CertifyMe's Open Badge 3.0 Implementation Works for Enterprise Teams
-
-CertifyMe's 1EdTech-certified Open Badge 3.0 implementation is built for the specific workflows, scale, and compliance requirements of enterprise credentialing programs. Here is what that looks like in practice.
-
-<br>
-
-### Bulk Issuance at Enterprise Scale
-
-Enterprise programs often need to issue thousands of credentials simultaneously — for training completions, certification renewals, event participation, or program milestones. CertifyMe supports bulk issuance via CSV upload, API, or direct LMS triggers, with each credential individually signed and verifiable.
-
-<br>
-
-### Full API Integration
-
-CertifyMe provides a documented REST API that enterprise teams use to automate credential issuance from their existing LMS, HRMS, or certification management systems. Credentials are issued, revoked, and managed programmatically — without requiring manual steps or separate platform logins. [See CertifyMe's API documentation](https://www.certifyme.online/api.html) for integration details.
-
-<br>
-
-### Role-Based Administrative Controls
-
-Large organizations need credential programs with multiple administrators, approval workflows, and access controls. CertifyMe supports role-based permissions so program managers, department leads, and IT administrators each have appropriate access without overlap or security risk.
-
-<br>
-
-### Revocation and Lifecycle Management
-
-Enterprise credentialing programs require the ability to revoke credentials — for compliance updates, certification lapses, or employment changes. Under Open Badge 3.0, revocation is part of the standard. CertifyMe's implementation ensures revoked credentials show as invalid in real time, to any verifier, without manual intervention.
-
-<br>
-
-### White-Label and Brand Control
-
-Enterprise programs need credentials that reflect the organization's brand, not the platform's. CertifyMe supports fully white-labeled credential designs, custom domains for verification pages, and branded sharing experiences — so recipients share credentials that carry your organization's identity, not a third-party vendor's.
-
-<br>
-
-### Recipient-Facing Sharing and Portfolio Tools
-
-Every credential issued through CertifyMe includes a recipient-facing sharing interface that allows one-click sharing to LinkedIn, email, and external portfolios. Recipients can also store credentials in compatible digital wallets. This drives engagement and visibility for the credential program at no additional effort from the issuing organization.
-
-<br>
-
-## Open Badge 3.0 Across Enterprise Use Cases
+I went through the public positioning and 1EdTech certification registry for the platforms enterprise teams most commonly evaluate. Here's what I found — and I've tried to be accurate and fair about each one, because I think that serves you better than a cheerleader comparison.
 
 <html lang="en">
 <head>
@@ -261,125 +178,244 @@ Every credential issued through CertifyMe includes a recipient-facing sharing in
 <table>
   <thead>
     <tr>
-      <th>Enterprise Use Case</th>
-      <th>How Open Badge 3.0 Helps</th>
-      <th>What CertifyMe Adds</th>
+      <th>Platform</th>
+      <th>OB3 Support?</th>
+      <th>1EdTech Certified?</th>
+      <th>W3C VC Aligned?</th>
+      <th>Notes</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Corporate L&amp;D certification</td>
-      <td>Verifiable proof of training completion, skills, and compliance</td>
-      <td>LMS integration, bulk issuance, branded credentials</td>
+      <td><strong>CertifyMe</strong></td>
+      <td>✅ Yes</td>
+      <td>✅ Yes — publicly listed</td>
+      <td>✅ Yes</td>
+      <td>Full OB3 + W3C VC + Immutable Credentials. Only platform in this comparison with verified 1EdTech certification.</td>
     </tr>
     <tr>
-      <td>Professional association certifications</td>
-      <td>Portable, globally recognized member credentials</td>
-      <td>Membership-linked issuance, renewal workflows, white-label</td>
+      <td><strong>Credly (by Pearson)</strong></td>
+      <td>⚠️ OB support, OB3 not emphasized</td>
+      <td>Not prominently listed for OB3</td>
+      <td>Limited public detail</td>
+      <td>Strong enterprise skills recognition platform, primarily focused on Pearson's ecosystem. Credential standards are secondary to skills taxonomy and workforce analytics.</td>
     </tr>
     <tr>
-      <td>Higher education micro-credentials</td>
-      <td>Stackable, interoperable course and program completions</td>
-      <td>LMS integration, transcript-linked issuance, alumni sharing</td>
+      <td><strong>Accredible</strong></td>
+      <td>⚠️ Open Badges supported, OB3 not emphasized</td>
+      <td>Not prominently listed for OB3</td>
+      <td>Limited public detail</td>
+      <td>Well-established platform with broad LMS integrations and engagement features. Doesn't publicly foreground W3C VC or OB3 in its positioning.</td>
     </tr>
     <tr>
-      <td>Government and military training</td>
-      <td>Audit-ready, tamper-evident training records</td>
-      <td>Role-based admin, revocation, compliance-grade verification</td>
+      <td><strong>Certifier</strong></td>
+      <td>✅ Claims OB3 support</td>
+      <td>Not confirmed in public registry</td>
+      <td>Not specified publicly</td>
+      <td>AI-powered certificate design and bulk issuance tool. States OB3 and ISO 27001 alignment. Good for high-volume certificate issuance; lighter on structured credentialing infrastructure.</td>
     </tr>
     <tr>
-      <td>Healthcare credentialing</td>
-      <td>Independently verifiable license and CME records</td>
-      <td>API integration with credentialing registries, revocation</td>
+      <td><strong>Sertifier</strong></td>
+      <td>⚠️ "Open Badges compliant" — version unclear</td>
+      <td>Not confirmed</td>
+      <td>Not specified publicly</td>
+      <td>Focused on learner engagement and credential sharing pages. Public positioning doesn't lean into OB3 or W3C VC specifically.</td>
     </tr>
     <tr>
-      <td>Technology certification programs</td>
-      <td>Industry-recognized, shareable skill credentials</td>
-      <td>LinkedIn sharing, verification pages, analytics dashboard</td>
+      <td><strong>Parchment</strong></td>
+      <td>❌ Not OB-focused</td>
+      <td>N/A</td>
+      <td>Not applicable</td>
+      <td>The standard for academic transcript exchange between institutions. Excellent at what it does — but built for transcripts, not open badge credentialing programs.</td>
     </tr>
   </tbody>
 </table>
 </body>
 </html>
 
-<p class="text-center fw-bold">Enterprise use cases for Open Badge 3.0 with CertifyMe</p>
+<p class="text-center fw-bold">Open Badge 3.0 support across major credentialing platforms (July 2026)</p>
 
 <br>
 
-## How to Evaluate an Open Badge 3.0 Platform for Enterprise Procurement
+A few things I want to flag about this table, because I'd rather be upfront than just drop a nice-looking grid and walk away.
 
-If your organization is evaluating credentialing platforms, Open Badge 3.0 compliance should be a baseline requirement — not a differentiator. The more meaningful procurement questions focus on how the platform implements the standard and what enterprise capabilities sit on top of it.
+**"Supports OB3" is not binary.** A platform can technically implement part of the OB3 spec without passing the full conformance test. That's why I specifically call out 1EdTech certification — it's the only way to know the implementation has been independently validated end-to-end, not just spot-checked against a checklist.
 
-Use these criteria when assessing platforms:
+**Platforms change and update their documentation.** I've written this based on what's publicly stated as of mid-2026. If you're evaluating a specific platform, I'd always recommend checking the [1EdTech certification directory](https://site.imsglobal.org/certifications) directly and asking the vendor to show you their listing — not just a compliance page on their own website.
 
-1. **Verified certification:** Is the platform listed in the [1EdTech certification registry](https://site.imsglobal.org/certifications)? Self-declared compliance is not the same as conformance certification.
-
-2. **API availability and documentation:** Can credentials be issued and managed programmatically? Is the API documented and versioned?
-
-3. **Revocation support:** Does the platform implement credential status correctly, per the Open Badge 3.0 specification? Can revocation be triggered programmatically?
-
-4. **Admin controls and audit logs:** Does the platform provide role-based access and issuing audit trails for compliance purposes?
-
-5. **White-label capability:** Can verification pages, credential designs, and recipient experiences be fully branded?
-
-6. **Integration ecosystem:** Does the platform integrate with the LMS, HRMS, or certification systems already in use in your organization?
-
-7. **Scalability:** Has the platform demonstrated the ability to handle enterprise-scale issuance volumes with consistent uptime and performance?
-
-CertifyMe meets all seven criteria, and its 1EdTech certification confirms the Open Badge 3.0 implementation is independently validated.
+**Different platforms have different strengths.** Credly is genuinely excellent for internal enterprise skills recognition inside large organizations. Accredible has a mature integration ecosystem. Parchment owns academic transcript exchange. None of this comparison is meant to say those platforms are bad — it's about being honest about where OB3 certification sits in each platform's priorities.
 
 <br>
 
-## Conclusion
+## Why Enterprise Teams Should Ask About 1EdTech Certification Specifically
 
-Open Badge 3.0 is the most significant upgrade to digital badge standards in over a decade — and it is the standard that enterprise credentialing programs should be building on now.
+Here's something I've noticed in a lot of enterprise procurement conversations: teams often evaluate platforms on feature lists, pricing tiers, and integration support — and leave credential standards as an afterthought. I get it. You're focused on "does this connect to our LMS" and "can we white-label it."
 
-CertifyMe's 1EdTech certification for Open Badge 3.0 confirms that the platform correctly implements the standard, independently verified by the governing body. For enterprise procurement teams, that certification removes a significant evaluation burden: you know the underlying standard is implemented correctly, and the remaining evaluation is about fit, scale, and integration.
+But here's why standards matter for enterprise specifically.
 
-If you are assessing platforms for a [digital credentialing program](https://www.certifyme.online/blog/What-is-Digital-Credential-Management-Platform.html), building the case internally for open-standard credentials, or migrating from a proprietary format to an interoperable one, CertifyMe's certified Open Badge 3.0 implementation is designed to support that work.
+**Audit and compliance risk.** Regulated industries — healthcare, financial services, government — need demonstrable credential integrity. A cryptographically signed, independently certified credential is a fundamentally different artifact from a PDF or a proprietary badge format when an auditor asks "how do you know this credential hasn't been altered?"
 
-[**View CertifyMe's 1EdTech certification**](https://site.imsglobal.org/certifications/certifyme/certifyme#cert_pane_nid_625336) or [**book a demo with our enterprise team**](https://info.certifyme.online/request-demo) to see how CertifyMe fits your organization's credentialing goals.
+**Vendor lock-in.** If your credentials are issued in a proprietary format that only verifies through one platform's system, you've created dependency. If that platform changes pricing, gets acquired, or changes its verification API, your entire credential archive is affected. OB3-certified credentials verify independently of any specific platform.
+
+**Long-term usability.** Your learners and employees will use their credentials for years — sometimes decades. A badge issued in 2024 should still be verifiable in 2034. Open, cryptographically signed standards give you that. Proprietary formats, historically, don't.
+
+**Global recognition.** Enterprise organizations with international teams or global certification programs need credentials that work everywhere. OB3's alignment with W3C standards means a credential issued anywhere can be verified anywhere by any compliant system.
 
 <br>
 
-## Frequently Asked Questions About CertifyMe and Open Badge 3.0
+## What Enterprise Credentialing Looks Like in Practice with CertifyMe
+
+So practically — what does it look like to run an enterprise credentialing program on CertifyMe's OB3-certified platform?
+
+<br>
+
+### Bulk Issuance Without Manual Work
+
+Enterprise programs often need to issue hundreds or thousands of credentials at once — after a training cycle, certification exam, or annual compliance completion. CertifyMe handles this via CSV upload, direct API triggers from your LMS or HRMS, or webhook-based automation. Each credential is individually signed. No batch processing shortcuts, no corner-cutting on the standard.
+
+<br>
+
+### API Integration With Your Existing Systems
+
+If your credentialing needs to fit inside an existing LMS, HRMS, or certification platform rather than replace it, CertifyMe's [REST API](https://www.certifyme.online/api.html) covers issuance, recipient management, revocation, and analytics programmatically. Enterprise IT teams don't have to build workarounds — the integration is the primary workflow, not an afterthought.
+
+<br>
+
+### Revocation That Actually Works
+
+Under OB3, revocation is part of the standard — not a manual process. When a certification lapses, an employee leaves, or a compliance requirement changes, revoked credentials show as invalid instantly to any verifier anywhere. No delay, no manual communication to a verification system.
+
+<br>
+
+### White-Label All the Way Through
+
+The credential design is yours. The verification page domain is yours. The recipient-facing sharing experience shows your brand, not CertifyMe's. For enterprise programs where brand trust is part of the credential's value, this matters more than it might seem.
+
+<br>
+
+### Role-Based Admin for Large Teams
+
+Multi-department credential programs need controlled access. Program managers, department leads, and IT administrators each get appropriate permissions — nobody sees what they shouldn't, nobody can issue credentials they're not authorized for.
+
+<br>
+
+## Enterprise Use Cases Where OB3 Certification Changes Things
+
+<html lang="en">
+<head>
+    <style>
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-family: Arial, sans-serif; }
+        th, td { border: 1px solid #cccccc; padding: 12px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        tr:nth-child(even) { background-color: #fafafa; }
+    </style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Program Type</th>
+      <th>Why OB3 Certification Matters Here</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Corporate compliance training</td>
+      <td>Cryptographic signing gives audit-ready proof of completion without manual record reconciliation</td>
+    </tr>
+    <tr>
+      <td>Professional association certifications</td>
+      <td>Globally portable credentials members can use anywhere, not locked to the association's portal</td>
+    </tr>
+    <tr>
+      <td>University micro-credentials</td>
+      <td>Stackable, wallet-ready badges that work across employer systems and graduate admissions</td>
+    </tr>
+    <tr>
+      <td>Healthcare licensing and CME</td>
+      <td>Independent verifiability for regulatory purposes without platform dependency</td>
+    </tr>
+    <tr>
+      <td>Government training programs</td>
+      <td>Tamper-evident records meeting public sector credential integrity requirements</td>
+    </tr>
+    <tr>
+      <td>Technology certification bodies</td>
+      <td>Industry-wide recognition, verifiable by employers and partner ecosystems without custom integration</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+
+<p class="text-center fw-bold">Where OB3 certification creates the most enterprise value</p>
+
+<br>
+
+## What to Ask Any Platform Before You Sign
+
+Since I've been in enough of these evaluation cycles to know what the gotchas are, here's the short list of questions I'd ask any credentialing platform vendor specifically on standards:
+
+1. **Are you listed in the 1EdTech certification registry?** If yes, what's the certification number? (Verify it yourself at [site.imsglobal.org/certifications](https://site.imsglobal.org/certifications).)
+2. **Which version of the Open Badges specification are you certified for?** OB2 and OB3 are meaningfully different — make sure they're not conflating them.
+3. **Does your verification work independently of your platform?** Ask them to demonstrate verification from a third-party tool, not just their own verification page.
+4. **How does revocation work?** Can it be triggered programmatically? How fast does it propagate to verifiers?
+5. **Does the credential carry a cryptographic signature?** And can they show you the proof section of an issued credential?
+6. **Do you support wallet-based credential storage?** Which wallets?
+7. **What happens to issued credentials if we switch platforms?** Get this in writing.
+
+CertifyMe's answers to all seven are straightforward — the certification verifies the underlying implementation, and the platform documentation covers the rest. But I'd encourage you to ask every vendor the same questions.
+
+<br>
+
+## Wrapping Up
+
+Here's the bottom line: Open Badge 3.0 matters because digital credentials are becoming infrastructure — not just recognition tools. The platforms that get this right now are the ones building on open, cryptographically sound, independently verified standards rather than proprietary formats dressed up with a badge graphic.
+
+CertifyMe's 1EdTech certification for OB3 is public, independently verified, and directly auditable. If you're building a credentialing program that needs to hold up — to your learners, your compliance team, your auditors, and the employers and institutions that will verify those credentials years from now — that's the kind of foundation worth building on.
+
+If you want to look at our certification directly, it's at [site.imsglobal.org/certifications/certifyme/certifyme](https://site.imsglobal.org/certifications/certifyme/certifyme#cert_pane_nid_625336). And if you want to see how it fits into an actual enterprise credentialing program, [a demo with our team](https://info.certifyme.online/request-demo) is the fastest way to get specific answers to your specific situation.
+
+<br>
+
+## Frequently Asked Questions
 
 ### Is CertifyMe officially certified for Open Badge 3.0?
 
-Yes. CertifyMe holds an official 1EdTech conformance certification for the Open Badge 3.0 standard. This is independently verified and publicly listed in the 1EdTech certification directory at [site.imsglobal.org/certifications/certifyme/certifyme](https://site.imsglobal.org/certifications/certifyme/certifyme#cert_pane_nid_625336).
+Yes — and "officially" is the operative word. CertifyMe has passed the 1EdTech conformance certification process for Open Badge 3.0. That means it's been independently tested, not self-declared. The certification is publicly listed at [site.imsglobal.org/certifications/certifyme/certifyme](https://site.imsglobal.org/certifications/certifyme/certifyme#cert_pane_nid_625336).
 
-### What is 1EdTech and why does its certification matter?
+### What is 1EdTech and why does their certification matter?
 
-1EdTech (formerly IMS Global Learning Consortium) is the standards body that governs Open Badges, LTI, QTI, and other interoperability specifications used across education and enterprise learning. Its certification program requires platforms to pass a structured conformance test suite — it is the authoritative third-party signal that a platform correctly implements a standard.
+1EdTech (formerly IMS Global Learning Consortium) is the standards body that governs Open Badges, LTI, QTI, and other interoperability specifications used in education and enterprise learning globally. Their certification program requires platforms to pass a structured test suite — it's the authoritative third-party signal that a platform has implemented the standard correctly, not just claimed it.
 
-### How is Open Badge 3.0 different from Open Badge 2.0?
+### Which credentialing platforms actually support Open Badge 3.0?
 
-Open Badge 3.0 is built on the W3C Verifiable Credentials Data Model, adding cryptographic signing, decentralized identifiers (DIDs), and wallet portability that version 2.0 lacked. Credentials issued under OB 3.0 are independently verifiable, platform-agnostic, and aligned to the same trust infrastructure used by global identity systems.
+From what's publicly documented and registry-verified as of mid-2026: CertifyMe is the platform in this space with confirmed 1EdTech certification for OB3. Some others — Certifier, for example — claim OB3 support in their documentation. Platforms like Credly and Accredible support older Open Badge versions but don't prominently foreground OB3 or W3C VC compliance. Parchment is built for transcript exchange and isn't positioned around Open Badge standards at all. I'd recommend checking the [1EdTech registry](https://site.imsglobal.org/certifications) yourself for any platform you're evaluating.
 
-### Can Open Badge 3.0 credentials be stored in any digital wallet?
+### How is Open Badge 3.0 different from version 2.0?
 
-Yes. Open Badge 3.0 credentials follow the W3C Verifiable Credentials format, which means they are compatible with any W3C-compliant digital wallet. Recipients are not tied to CertifyMe's system to store, manage, or share their credentials.
+The biggest change is that OB3 is now built on the W3C Verifiable Credentials Data Model. That adds mandatory cryptographic signing, decentralized identifiers (DIDs), and real wallet portability. Practically: OB3 credentials are harder to forge, verifiable by any compliant system without contacting the issuer's platform, and part of the same global trust infrastructure used by governments and financial institutions. OB2 credentials don't have those properties.
 
-### Does CertifyMe support API-based issuance for enterprise programs?
+### Can Open Badge 3.0 credentials be verified without contacting CertifyMe?
 
-Yes. CertifyMe provides a REST API that allows enterprise teams to trigger credential issuance, manage recipients, handle revocation, and retrieve analytics programmatically. This supports integration with LMS platforms, HRMS systems, and custom certification workflows. [View CertifyMe's API documentation](https://www.certifyme.online/api.html).
+Yes — that's the point of the cryptographic design. The credential's proof is tied to the issuer's DID, which is a public identifier. Any compliant verifier can check the signature independently. CertifyMe's platform being online or offline doesn't affect the result of that check.
 
-### What happens to credentials if an organization moves away from CertifyMe?
+### Do I need a blockchain to issue or verify OB3 credentials?
 
-Open Badge 3.0 credentials issued through CertifyMe are signed with the issuing organization's decentralized identifier (DID). The cryptographic proof is embedded in the credential itself, not stored only on CertifyMe's servers. This means credentials remain verifiable regardless of platform changes.
+No. This is a common misconception. OB3 credentials are based on cryptographic signing and DIDs — neither of which requires a blockchain. Some implementations optionally anchor parts of their DID infrastructure to a blockchain, but the core OB3 standard and verification process works without it.
 
-### Is Open Badge 3.0 recognized internationally?
+### How does CertifyMe handle credential revocation under OB3?
 
-Yes. Open Badge 3.0 is governed by 1EdTech, whose standards are used by institutions, employers, and government agencies across over 70 countries. Credentials issued under OB 3.0 are interoperable with any compliant system globally.
+Revocation is part of the OB3 specification, and CertifyMe implements it correctly — which is what the 1EdTech certification validates. When a credential is revoked, its status updates immediately, and any verifier checking it against the credential status endpoint will see it as invalid. This can be triggered manually or programmatically via API.
 
-### How does CertifyMe support enterprise compliance requirements?
+### Is Open Badge 3.0 suitable for regulated industries like healthcare or financial services?
 
-CertifyMe's Open Badge 3.0 implementation supports tamper-evident credentials, revocation, issuing audit logs, role-based administrative controls, and independently verifiable credential records. For regulated industries that need demonstrable credential integrity, the platform is designed to meet those requirements. [Book a demo](https://info.certifyme.online/request-demo) to review how CertifyMe aligns with your specific compliance context.
+It was designed for exactly this. The cryptographic signing, independent verifiability, and audit-ready structure of OB3 credentials address the specific integrity requirements that regulated industries face. CertifyMe's enterprise implementation adds the administrative controls and revocation capabilities that compliance programs typically need on top.
 
-### Can we issue Open Badge 3.0 credentials under our own brand?
+### What's the difference between 1EdTech certification and a platform saying it's "OB3 compliant"?
 
-Yes. CertifyMe supports fully white-labeled credential designs, branded verification pages, and custom domain verification — so all recipient-facing experiences reflect your organization's identity, not CertifyMe's.
+Certification means the platform passed an independent, structured test suite administered by 1EdTech and is listed in their public registry. "Compliant" is what a platform says about itself. They're not the same thing — and for enterprise procurement, the distinction matters.
 
-### Where can I see CertifyMe's 1EdTech certification?
+### How do I see CertifyMe's actual 1EdTech certification?
 
-The certification is publicly listed at [site.imsglobal.org/certifications/certifyme/certifyme](https://site.imsglobal.org/certifications/certifyme/certifyme#cert_pane_nid_625336). The listing includes the certification scope, conformance details, and the specific standard version covered.
+Go to [site.imsglobal.org/certifications/certifyme/certifyme](https://site.imsglobal.org/certifications/certifyme/certifyme#cert_pane_nid_625336). You'll see the certification listing, the standard covered, and the conformance details. I always recommend doing this check yourself — don't just take a vendor's word for it, including ours.
