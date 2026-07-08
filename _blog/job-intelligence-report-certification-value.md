@@ -41,13 +41,15 @@ Not a generic "here's what people in your field earn" infographic. Not a link to
 
 That's what CertifyMe's Job Intelligence Report does. And no other credentialing platform does it this way.
 
+What powers it: every single day, CertifyMe's system analyses **20M+ live job postings** from **25,000+ companies** posting roles across the globe. That continuous analysis is what makes personalisation possible. When your report is generated, it isn't pulling from a six-month-old salary survey or a static database — it's drawing from what the market looks like *right now*, across every major hiring source, distilled down to what's relevant specifically to your credential.
+
 <br>
 
 ## Every Credential, One Personalised Report
 
 Most credentialing platforms end their job at issuance. You earned it, here's your badge, share it on LinkedIn. What happens next — whether the credential actually helps you move forward — is left entirely to you.
 
-CertifyMe's approach is different. The moment your credential is issued, the Job Intelligence Report is generated automatically — personalised to that specific credential, that specific set of verified skills, and the live market that exists for them *today*.
+CertifyMe's approach is different. The moment your credential is issued, CertifyMe's job intelligence engine — which has already analysed 20M+ live postings from 25,000+ companies that day — generates your personalised Job Intelligence Report automatically. It's built specifically for that credential, those verified skills, and the live market that exists for them *today*.
 
 Here's the thing I want to make clear: **this report is not shared across earners.** A Certified Forensic Accountant and a Certified Scrum Master get completely different reports, because the underlying skill sets and the markets for them are completely different. The personalisation happens at the credential level — so your report reflects your achievement, not a generalised industry average.
 
@@ -285,15 +287,23 @@ The personalised report isn't just good for earners. It changes the conversation
 
 <br>
 
-## The Data Behind It: 20M+ Live Jobs, Updated Daily
+## The Engine Behind Every Report: 20M+ Jobs Analysed Daily Across 25,000+ Companies
 
-I know "20M+ live jobs" can sound like a marketing claim, so let me be specific about what it actually means.
+I know "20M+ live jobs" can sound like a headline number dropped to impress, so let me be specific about what it actually means — and why the scale matters for the personalisation.
 
-CertifyMe's labour market system continuously pulls from live job postings across global hiring platforms — not static industry databases, not annual salary surveys. The system covers **25,000+ hiring companies** across **372+ countries**, and the data refreshes daily.
+Every day, CertifyMe's job intelligence system ingests, analyses, and maps **20M+ active job postings** sourced from real hiring activity at **25,000+ companies** posting roles **across the globe**. This isn't a one-time dataset or an annual industry report refreshed each year. It's a continuous, daily process — the system reads the live hiring market every single day and updates what it knows.
 
-What that means in practice: when the Forensic Accountant report shows 92,143 new jobs in the last 90 days, those are actual postings counted from real data during that window. The number changes every day because the market changes every day. The report your learner sees this week will be slightly different from the one they see next month — because the market has moved.
+Here's why that scale is necessary for the personalisation to work:
 
-That freshness is what makes the path from credential to application actually useful. A six-month-old salary survey doesn't help someone negotiate their offer today. A live report from this week's job postings does.
+**Coverage across industries and geographies.** For the report to tell a Certified Forensic Accountant that there are 177,132 openings in 559 countries, the underlying data has to actually cover those countries and industries at scale. Sparse data produces generic, unreliable results. 20M+ daily postings means even niche credentials in specialist fields get meaningful, specific signal — not just "some jobs exist in this area."
+
+**Freshness that reflects today's market.** The 92,143 new jobs that appeared in the Forensic Accountant's last 90-day window were counted from live postings during that exact period. Not estimated. Not extrapolated from last year's averages. When you receive your Job Intelligence Report, it reflects what 25,000+ companies are actively advertising for *right now* — which means the salary range, the recruiter interest rating, and the hiring momentum figure are all derived from current real-world hiring behaviour, not historical trends.
+
+**Employer-level specificity.** Because the system reads actual job postings from named companies — not aggregated industry surveys — it can surface which specific organisations are hiring, how many roles each has open, and what skills they're explicitly asking for in their descriptions. That's where the "T-Mobile: 3,112 openings" and "CVS Health: 2,772 openings" figures come from. Real postings, counted by company.
+
+**Skills employers actually ask for, not skills experts say they should ask for.** The skills section of every report — the part that shows which competencies employers are listing in live job descriptions matching your credential — is pulled directly from the language in those 20M+ postings. When the Forensic Accountant report surfaces Tableau, Splunk, and FraudMAP as in-demand skills alongside the core credential competencies, it's because employers writing real job ads are including those terms. That's a meaningfully more useful signal than a curriculum committee's view of what should matter.
+
+The result of all that analysis — running every day, across every posting, across every company — is what gets distilled into your personalised report the moment your credential is issued. The scale is what makes the personalisation credible. Without 20M+ daily postings from 25,000+ companies, a "personalised" report is just a filtered version of thin, stale data. At this scale, it reflects how the market actually moves.
 
 <br>
 
