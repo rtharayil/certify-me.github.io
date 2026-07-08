@@ -24,7 +24,7 @@ faqs:
   - question: "How is Open Badge 3.0 different from Open Badge 2.0?"
     answer: "OB 3.0 is built on the W3C Verifiable Credentials Data Model. That's a big deal. It adds cryptographic signing, decentralized identifiers (DIDs), and genuine wallet portability that OB 2.0 simply didn't have. In practice, it means credentials are harder to forge, easier to verify anywhere, and don't depend on the issuing platform staying online."
   - question: "Which platforms are 1EdTech certified for Open Badge 3.0?"
-    answer: "CertifyMe is listed in the 1EdTech certification registry for Open Badge 3.0. Other platforms in the space vary — some support older Open Badge versions, some claim OB3 compatibility without independent certification, and some (like Parchment or Credly) don't position Open Badge standards as their primary focus at all."
+    answer: "CertifyMe is listed in the 1EdTech certification registry for Open Badge 3.0. Several other platforms — including Credly and Accredible — also support OB3, but independently verified 1EdTech conformance certification is what separates platforms that have been tested against the full standard from those that self-declare compliance. Always check the 1EdTech registry at site.imsglobal.org/certifications rather than relying on a vendor's own compliance claims."
   - question: "Do Open Badge 3.0 credentials work without the issuing platform?"
     answer: "Yes — and that's one of the most important things about OB3. Because credentials carry a cryptographic signature tied to the issuer's decentralized identifier, any compliant verifier can check authenticity without contacting CertifyMe. The credential's proof is built into the credential itself."
   - question: "Is Open Badge 3.0 right for large enterprise credentialing programs?"
@@ -163,7 +163,9 @@ The shift to W3C Verifiable Credentials is the biggest thing here. It's not just
 
 This is the part I find most useful to write, because it's also the part that's hardest to get a straight answer on in a vendor demo.
 
-I went through the public positioning and 1EdTech certification registry for the platforms enterprise teams most commonly evaluate. Here's what I found — and I've tried to be accurate and fair about each one, because I think that serves you better than a cheerleader comparison.
+Several major platforms now support Open Badge 3.0 — including Credly and Accredible. So if you're evaluating platforms purely on "does it support OB3," that bar is increasingly met across the board. The more useful question — especially for enterprise procurement — is **how** that support is implemented, and whether it's been independently validated.
+
+Here's where the key platforms stand:
 
 <html lang="en">
 <head>
@@ -181,7 +183,7 @@ I went through the public positioning and 1EdTech certification registry for the
       <th>Platform</th>
       <th>OB3 Support?</th>
       <th>1EdTech Certified?</th>
-      <th>W3C VC Aligned?</th>
+      <th>W3C VC + Immutable Credentials?</th>
       <th>Notes</th>
     </tr>
   </thead>
@@ -190,43 +192,43 @@ I went through the public positioning and 1EdTech certification registry for the
       <td><strong>CertifyMe</strong></td>
       <td>✅ Yes</td>
       <td>✅ Yes — publicly listed</td>
-      <td>✅ Yes</td>
-      <td>Full OB3 + W3C VC + Immutable Credentials. Only platform in this comparison with verified 1EdTech certification.</td>
+      <td>✅ Yes — both</td>
+      <td>OB3 + W3C VC + Immutable Credentials. The only platform in this comparison with independently verified 1EdTech conformance certification.</td>
     </tr>
     <tr>
       <td><strong>Credly (by Pearson)</strong></td>
-      <td>⚠️ OB support, OB3 not emphasized</td>
-      <td>Not prominently listed for OB3</td>
-      <td>Limited public detail</td>
-      <td>Strong enterprise skills recognition platform, primarily focused on Pearson's ecosystem. Credential standards are secondary to skills taxonomy and workforce analytics.</td>
+      <td>✅ Yes</td>
+      <td>⚠️ Not confirmed in public registry</td>
+      <td>⚠️ Partial — limited public detail on W3C VC depth</td>
+      <td>Strong enterprise skills recognition platform. OB3 is supported, but the primary focus is Pearson's skills taxonomy and workforce analytics rather than open credential infrastructure.</td>
     </tr>
     <tr>
       <td><strong>Accredible</strong></td>
-      <td>⚠️ Open Badges supported, OB3 not emphasized</td>
-      <td>Not prominently listed for OB3</td>
-      <td>Limited public detail</td>
-      <td>Well-established platform with broad LMS integrations and engagement features. Doesn't publicly foreground W3C VC or OB3 in its positioning.</td>
+      <td>✅ Yes</td>
+      <td>⚠️ Not confirmed in public registry</td>
+      <td>⚠️ Partial — doesn't foreground W3C VC or immutable credentials</td>
+      <td>Well-established platform with a wide LMS integration ecosystem. Supports OB3, but immutable credential infrastructure and W3C VC depth aren't prominently featured in its positioning.</td>
     </tr>
     <tr>
       <td><strong>Certifier</strong></td>
       <td>✅ Claims OB3 support</td>
-      <td>Not confirmed in public registry</td>
+      <td>⚠️ Not confirmed in public registry</td>
       <td>Not specified publicly</td>
-      <td>AI-powered certificate design and bulk issuance tool. States OB3 and ISO 27001 alignment. Good for high-volume certificate issuance; lighter on structured credentialing infrastructure.</td>
+      <td>AI-powered certificate design and high-volume issuance tool. States OB3 and ISO 27001 alignment. Lighter on structured credentialing infrastructure and independent verification depth.</td>
     </tr>
     <tr>
       <td><strong>Sertifier</strong></td>
-      <td>⚠️ "Open Badges compliant" — version unclear</td>
+      <td>⚠️ Open Badges compliant — version unclear</td>
       <td>Not confirmed</td>
       <td>Not specified publicly</td>
-      <td>Focused on learner engagement and credential sharing pages. Public positioning doesn't lean into OB3 or W3C VC specifically.</td>
+      <td>Focused on learner engagement and credential sharing pages. Doesn't specifically position OB3 or W3C VC in its public documentation.</td>
     </tr>
     <tr>
       <td><strong>Parchment</strong></td>
       <td>❌ Not OB-focused</td>
       <td>N/A</td>
       <td>Not applicable</td>
-      <td>The standard for academic transcript exchange between institutions. Excellent at what it does — but built for transcripts, not open badge credentialing programs.</td>
+      <td>The industry standard for secure academic transcript exchange between institutions. Excellent at what it does — but not built for open badge credentialing programs.</td>
     </tr>
   </tbody>
 </table>
@@ -237,13 +239,13 @@ I went through the public positioning and 1EdTech certification registry for the
 
 <br>
 
-A few things I want to flag about this table, because I'd rather be upfront than just drop a nice-looking grid and walk away.
+Here's the nuance I'd flag for anyone using this table in an actual evaluation.
 
-**"Supports OB3" is not binary.** A platform can technically implement part of the OB3 spec without passing the full conformance test. That's why I specifically call out 1EdTech certification — it's the only way to know the implementation has been independently validated end-to-end, not just spot-checked against a checklist.
+**OB3 support isn't the finish line anymore — it's the entry requirement.** Credly and Accredible both support OB3. So does Certifier. The differentiation now sits in *how deeply* the standard is implemented (does the platform use W3C VC + cryptographic signing across the board, or just for specific credential types?) and whether that implementation has been **independently certified** by 1EdTech.
 
-**Platforms change and update their documentation.** I've written this based on what's publicly stated as of mid-2026. If you're evaluating a specific platform, I'd always recommend checking the [1EdTech certification directory](https://site.imsglobal.org/certifications) directly and asking the vendor to show you their listing — not just a compliance page on their own website.
+**1EdTech certification is not the same as claiming compliance.** A certification listing on the [1EdTech registry](https://site.imsglobal.org/certifications) means the platform passed a structured conformance test suite administered by the governing body. A "compliant" or "supported" badge on a vendor's own website means the vendor says so. For enterprise procurement teams, especially in regulated industries, that distinction is worth asking about explicitly.
 
-**Different platforms have different strengths.** Credly is genuinely excellent for internal enterprise skills recognition inside large organizations. Accredible has a mature integration ecosystem. Parchment owns academic transcript exchange. None of this comparison is meant to say those platforms are bad — it's about being honest about where OB3 certification sits in each platform's priorities.
+**Every platform here has genuine strengths.** Credly is the dominant force in enterprise skills recognition and Pearson's learning ecosystem. Accredible has one of the most mature LMS and CRM integration libraries in the space. Parchment is the standard for academic transcript exchange. This comparison is about where OB3 *certification depth* sits in each platform's priorities — not a verdict on their overall quality.
 
 <br>
 
