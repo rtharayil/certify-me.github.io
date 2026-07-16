@@ -11,3 +11,9 @@ id = "PmrfO5yTg9XQO-oyL58m1"
 uri = "file://attached_assets/CertifyMe-SEO-GEO-Audit-2026.md"
 type = "text"
 title = "CertifyMe — Full AI SEO + GEO Audit Report 2026"
+
+[[outputs]]
+id = "q8vweVagj-QZYlaNGTGcI"
+uri = "file://assets4/CertifyMe-GDPR-Enterprise-Policy-v3.0.docx"
+type = "word_document"
+title = "CertifyMe GDPR Enterprise Policy v3.0"
