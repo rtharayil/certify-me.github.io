@@ -1,0 +1,173 @@
+General Data Protection Regulation (GDPR) Policy
+For Enterprise Customers
+Version 2.1 (Enterprise Edition)
+Effective Date: April 16, 2026
+1. Introduction
+Tech99 Innovations Private Limited ("CertifyMe", "we", "our", or "us") is committed to protecting personal data and complying with the European Union General Data Protection Regulation (EU) 2016/679 ("GDPR").
+This policy explains how CertifyMe processes personal data when providing digital credentialing, identity verification, credential management, transcript management, digital wallet, and related SaaS services to Enterprise customers. This edition of the policy applies exclusively to CertifyMe's Enterprise customer relationships and the data subjects whose personal data those customers submit to the platform.
+2. Company Information
+Tech99 Innovations Private Limited
+CIN: U72900KA2021PTC152542
+Registered Office
+3rd Floor, Akshay Tech Park
+Plot No. 72–73
+EPIP Zone, Whitefield
+Bengaluru, Karnataka 560066
+India
+Privacy Contact: privacy@certifyme.online
+GDPR Requests: gdpr@certifyme.online
+3. Scope
+This policy applies solely to CertifyMe's Enterprise customers and to the personal data processed on their behalf through the CertifyMe platform, including:
+    • Enterprise customers and their authorized administrators and users
+    • Credential recipients whose records are issued, stored, or managed by an Enterprise customer
+    • Verifiers accessing credentials shared by an Enterprise customer
+This policy applies only to personal data processed through CertifyMe services under an Enterprise customer agreement. It does not extend to other customer tiers or service arrangements offered by CertifyMe.
+4. Roles Under GDPR
+Depending on the service being provided to the Enterprise customer, CertifyMe may act as:
+Data Processor
+For Enterprise customers, CertifyMe processes personal data solely on behalf of the customer. The customer determines:
+    • what data is uploaded
+    • why it is processed
+    • how long it is retained
+    • who may access it
+Data Controller
+CertifyMe acts as Data Controller for the Enterprise customer relationship itself, specifically for:
+    • account registration
+    • billing
+    • support requests
+    • website analytics
+    • security logs
+    • marketing communications where consent has been obtained
+5. Categories of Personal Data
+Depending on the Enterprise customer's configuration, CertifyMe may process:
+Account Information
+    • Name
+    • Email address
+    • Organization
+    • Job title
+    • Phone number
+Credential Information
+    • Academic records
+    • Certificates
+    • Badges
+    • Transcripts
+    • Skills
+    • Employment history
+    • Achievement records
+Technical Information
+    • IP address
+    • Browser type
+    • Device information
+    • Session identifiers
+    • Login history
+    • Audit logs
+Support Information
+    • Support tickets
+    • Communication history
+    • Attachments voluntarily submitted
+6. Lawful Basis for Processing
+Where CertifyMe acts as Controller in connection with an Enterprise customer relationship, personal data is processed under one or more lawful bases:
+    • Performance of a contract
+    • Compliance with legal obligations
+    • Legitimate business interests
+    • User consent
+    • Protection against fraud and abuse
+Where CertifyMe acts as Processor, processing is performed solely under the documented instructions of the Enterprise customer.
+7. Purpose of Processing
+Personal data is processed to:
+    • Issue digital credentials
+    • Verify credentials
+    • Authenticate users
+    • Manage accounts
+    • Provide customer support
+    • Prevent fraud
+    • Maintain platform security
+    • Generate audit logs
+    • Improve platform performance
+    • Comply with legal obligations
+CertifyMe does not sell personal data.
+8. Data Security
+CertifyMe maintains appropriate Technical and Organizational Measures (TOMs) designed to protect personal data processed for Enterprise customers against accidental or unlawful destruction, loss, alteration, unauthorized disclosure, or access.
+Security controls include, where applicable:
+    • Encryption of data in transit using TLS
+    • Encryption of stored data
+    • Role-Based Access Control (RBAC)
+    • Multi-Factor Authentication for privileged users
+    • Audit logging
+    • Least-privilege access
+    • Secure software development lifecycle
+    • Regular vulnerability assessments
+    • Penetration testing
+    • Infrastructure monitoring
+    • Backup and disaster recovery procedures
+9. International Data Transfers
+Where personal data belonging to an Enterprise customer is transferred outside the European Economic Area (EEA), CertifyMe implements appropriate safeguards, which may include:
+    • Standard Contractual Clauses (SCCs)
+    • Customer-approved transfer mechanisms
+    • Appropriate contractual protections
+10. Data Retention
+Personal data processed for Enterprise customers is retained only for as long as necessary to:
+    • provide contracted services
+    • comply with legal obligations
+    • resolve disputes
+    • enforce agreements
+    • maintain audit requirements
+Upon termination of an Enterprise customer's services, data is retained according to the applicable contractual agreement and applicable legal requirements before secure deletion.
+11. Subprocessors
+CertifyMe may engage trusted subprocessors for infrastructure, hosting, communications, customer support, monitoring, and security services in connection with Enterprise customer data.
+All subprocessors are contractually required to maintain confidentiality and appropriate security controls consistent with GDPR Article 28.
+Enterprise customers may request the current list of approved subprocessors by contacting privacy@certifyme.online.
+12. Data Subject Rights
+Where GDPR applies, individuals whose data is processed in connection with an Enterprise customer relationship may exercise the following rights:
+    • Right of access
+    • Right to rectification
+    • Right to erasure
+    • Right to restriction of processing
+    • Right to data portability
+    • Right to object
+    • Right to withdraw consent
+    • Right to lodge a complaint with a supervisory authority
+Where CertifyMe acts as a Data Processor, requests will be forwarded to the relevant Enterprise customer, acting as Data Controller, unless legally prohibited.
+13. Security Incident and Breach Notification
+CertifyMe maintains documented incident response procedures.
+Where CertifyMe becomes aware of a personal data breach affecting an Enterprise customer's data, the affected customer will be notified without undue delay after confirmation of the incident, in accordance with contractual commitments and applicable law.
+14. Data Processing Agreement (DPA)
+For Enterprise customers, CertifyMe offers a Data Processing Agreement (DPA) incorporating the requirements of GDPR Article 28.
+The DPA defines:
+    • processing instructions
+    • confidentiality obligations
+    • security measures
+    • subprocessors
+    • international transfers
+    • deletion or return of customer data
+    • audit rights
+15. Cookies
+Our website uses cookies necessary for:
+    • authentication
+    • security
+    • session management
+    • user preferences
+    • analytics
+Where required by applicable law, non-essential cookies are used only after obtaining appropriate consent.
+16. Children's Privacy
+CertifyMe's Enterprise services are intended for organizations and their authorized professional users.
+We do not knowingly collect personal information directly from children where prohibited by applicable law.
+Where an Enterprise customer uses CertifyMe to process data relating to minors, that customer is responsible for obtaining any legally required permissions.
+17. Customer Responsibilities
+Enterprise customers acting as Data Controllers are responsible for:
+    • establishing a lawful basis for processing
+    • obtaining required consents where applicable
+    • responding to data subject requests
+    • configuring retention periods
+    • ensuring uploaded data is lawful
+CertifyMe processes personal data only according to the Enterprise customer's documented instructions.
+18. Changes to This Policy
+We may update this GDPR Policy periodically to reflect legal, regulatory, operational, or security changes.
+The latest version will always be available on our website.
+19. Contact
+For GDPR requests, privacy inquiries, or complaints:
+Data Protection Contact: Tech99 Innovations Private Limited
+Email: gdpr@certifyme.online
+General privacy inquiries:
+Email: privacy@certifyme.online
+We aim to acknowledge GDPR requests promptly and respond within the timelines required under applicable law.
