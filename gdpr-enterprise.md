@@ -41,6 +41,14 @@ permalink: /gdpr-enterprise
           <div class="inner-page-title mb-3">
             <h1>General Data Protection Regulation (GDPR) Policy</h1>
             <p class="p-lg mb-1" style="font-size:1.1rem;color:#444;">For Enterprise Customers</p>
+            <div style="margin-top:16px;">
+              <a href="/assets4/CertifyMe-GDPR-Enterprise-Policy-v3.0.docx"
+                 download="CertifyMe-GDPR-Enterprise-Policy-v3.0.docx"
+                 style="display:inline-flex;align-items:center;gap:8px;background:#2E5496;color:#fff;padding:11px 22px;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;box-shadow:0 2px 8px rgba(46,84,150,0.18);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download as Word / Google Docs (.docx)
+              </a>
+            </div>
           </div>
 
           <div class="doc-meta">
