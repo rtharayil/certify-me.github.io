@@ -362,7 +362,7 @@ h2.statistic-number {
 
 /* Rating boxes — better shadow + border */
 .rbox-1 {
-  background: #fff !important;
+  background: rgba(255,255,255,0.65) !important;
   border-radius: 16px !important;
   padding: 24px 20px !important;
   box-shadow: 0 4px 24px rgba(40,43,117,.10) !important;
