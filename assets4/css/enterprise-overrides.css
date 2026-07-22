@@ -249,6 +249,7 @@ h2.statistic-number {
   padding-top: 24px !important;
   padding-bottom: 48px !important;
   margin-top: 0 !important;
+  background: linear-gradient(160deg, #f4f3ff 0%, #eef2ff 60%, #ffffff 100%) !important;
 }
 /* Subtle "Trusted by" label */
 #badges.badges-main-container::before {
