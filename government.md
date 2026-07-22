@@ -36,4 +36,13 @@ Feature3Text: The sheer amount of government papers can be overwhelming to arran
 
 
 
+
+
+seo_keywords: "digital credentials for government, government digital certificates, public sector credential management, government badge software"
+
+faqs:
+  - question: "How can government institutions use digital credentials?"
+    answer: "Government institutions use digital credentials to issue verifiable certificates for professional licensing, compliance training, public service completions, and citizen skills programmes. Digital credentials reduce administrative overhead, eliminate paper certificate management, and provide instant, independent verification for recipients."
+  - question: "Are CertifyMe credentials secure enough for government use?"
+    answer: "Yes. CertifyMe is ISO 27001 certified (Information Security Management) and ISO 27701 certified (Privacy Information Management). Credentials are cryptographically signed and independently verifiable. The platform is used by institutions in 144+ countries including government and public sector organisations."
 ---

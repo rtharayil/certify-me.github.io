@@ -133,7 +133,17 @@
         "@id": "https://www.certifyme.online/#website",
         "name": "CertifyMe",
         "url": "https://www.certifyme.online",
-        "publisher": { "@id": "https://www.certifyme.online/#organization" }
+        "description": "Verifiable digital credential software for institutions that issue, manage, and verify digital certificates and open badges.",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://www.certifyme.online/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.certifyme.online/blog?search={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
       },
       {
         "@type": "BlogPosting",
@@ -178,6 +188,7 @@
           "@id": "https://www.certifyme.online{{ page.url }}"
         },
         "inLanguage": "en-US",
+        {% if page.seo_keywords %}"keywords": {{ page.seo_keywords | jsonify }},{% endif %}
         "speakable": {
           "@type": "SpeakableSpecification",
           "cssSelector": ["h1", ".blog-faq-answer"]

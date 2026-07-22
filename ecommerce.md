@@ -26,4 +26,13 @@ Feature2Title: Proof of Authenticity is Available at the Fingertip
 Feature2Text: Ensure the authenticity of your products with our digital credential management software. Easily upload and store authentic documents, such as model number, date of production, and other relevant information on our secure platform. No more lost paper documents. Whether you are reselling products or selling spare parts, proving product legitimacy has been simplified. Offer a unique ID or link by scanning the QR/BARcodes on the credential and boost customer trust in your e-commerce business. A <a href="https://go.certifyme.online/request-demo">demo</a> might offer elevated product insights.
 
 
+
+
+seo_keywords: "digital credentials for ecommerce, product certification badges, ecommerce achievement badges, customer loyalty credentials"
+
+faqs:
+  - question: "How do ecommerce businesses use digital credentials?"
+    answer: "Ecommerce businesses use digital credentials to certify product knowledge training for resellers and distributors, award loyalty achievements to customers, and provide verifiable product authenticity certificates. Digital credentials increase engagement, build trust, and create shareable social proof of product quality."
+  - question: "Can digital credentials help with reseller certification programmes?"
+    answer: "Yes. CertifyMe can issue verifiable product knowledge certificates to authorised resellers and distributors. These credentials are shareable, independently verifiable, and help brands maintain quality standards across their distribution network."
 ---

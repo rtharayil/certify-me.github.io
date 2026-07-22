@@ -51,4 +51,7 @@ TestimonialTitle: Our Happy Customers
 
 
 
+
+
+seo_keywords: "professional training badges, professional development credentials, training certificate software, CPD badges, professional certification platform"
 ---

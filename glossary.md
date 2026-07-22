@@ -127,4 +127,6 @@ faqs:
   #     - "How to export badge data from a digital badge platform?"
   #     - "How to use digital badge platforms for employee recognition programs?"
   #     - "How to track and verify digital badges issued to learners?"
+
+seo_keywords: "digital credentials glossary, open badges glossary, verifiable credentials terms, credential technology glossary, blockchain credentials terminology"
 ---

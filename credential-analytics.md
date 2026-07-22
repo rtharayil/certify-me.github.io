@@ -1,7 +1,7 @@
 ---
 title: "Digital Credential Analytics"
 
-description: "Monitor, evaluate, and manage the effectiveness of credentialing by our badge analytics"
+description: "Track how learners engage with digital credentials. CertifyMe's analytics dashboard shows share rates, verification counts, platform breakdown, and engagement trends — giving institutions measurable ROI from every credential issued."
 
 layout: V4LayoutInnerpages
 
@@ -50,4 +50,15 @@ ActionButtonbelowtext2: Exclusive Support
 TestimonialTitle: Our Happy Customers 
 
 
+
+
+seo_keywords: "credential analytics, badge analytics, certificate engagement tracking, digital credential reporting, credentialing ROI metrics"
+
+faqs:
+  - question: "What analytics does CertifyMe provide for digital credentials?"
+    answer: "CertifyMe's analytics dashboard shows credential view counts, share rates across platforms, verification counts, download statistics, and engagement trends over time. For every template, you can see which platforms recipients are sharing on and how many times credentials have been independently verified."
+  - question: "Can credential analytics be exported?"
+    answer: "Yes. CertifyMe analytics data can be exported for reporting and BI integration. The Analytics API also allows you to pull credential engagement metrics programmatically into your own dashboards or LMS reporting tools."
+  - question: "How do credential analytics help demonstrate programme ROI?"
+    answer: "Analytics provide evidence that credentials are being used — shared on LinkedIn, verified by employers, and downloaded. This data helps L&D teams, associations, and universities demonstrate the concrete impact of their credentialing programmes and justify continued investment."
 ---

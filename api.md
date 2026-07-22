@@ -53,6 +53,17 @@ Q3Text: Yes. The Credential API supports bulk issuance workflows. You can POST m
 Q4Title: Where can I find the full API reference and OpenAPI specification?
 Q4Text: The complete interactive API reference — including request schemas, response examples, authentication details, and a live try-it console — is at <a href="https://cme-api-v2.readme.io" target="_blank" rel="noopener noreferrer">https://cme-api-v2.readme.io</a>. An OpenAPI-compatible index for AI agents is available at <a href="https://cme-api-v2.readme.io/llms.txt" target="_blank" rel="noopener noreferrer">https://cme-api-v2.readme.io/llms.txt</a>.
 
+
+
+seo_keywords: "digital credential API, certificate API, badge API, REST API credentials, credential automation API, CertifyMe API, credential issuance API, OpenBadge API"
+
+faqs:
+  - question: "What can I do with the CertifyMe API?"
+    answer: "The CertifyMe REST API lets you award, retrieve, edit, and delete digital credentials programmatically. You can automate the full credential lifecycle — from issuing certificates and badges to pulling analytics — without logging into the dashboard. The API base URL is https://my.certifyme.online/api/v2/ and full reference documentation is at cme-api-v2.readme.io."
+  - question: "Which API tier includes bulk credential issuance?"
+    answer: "The Credential API (Basic tier) supports bulk issuance and is included in all CertifyMe plans. You can POST credentials programmatically for multiple recipients in sequence or parallel. For no-code bulk issuance, CertifyMe also integrates with Zapier, Make, and major LMS platforms without requiring API code."
+  - question: "Is the CertifyMe API compatible with OpenAPI specifications?"
+    answer: "Yes. An OpenAPI-compatible reference and an llms.txt index for AI agents are available at cme-api-v2.readme.io. The interactive API reference includes request schemas, response examples, authentication details, and a live try-it console."
 ---
 
 <script type="application/ld+json">

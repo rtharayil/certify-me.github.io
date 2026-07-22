@@ -1,7 +1,7 @@
 ---
 title: "Verifiable Digital Badge Software"
 
-description: "Create, issue and manage immutable digital badges from CertifyMe"
+description: "Issue verifiable digital badges that learners share on LinkedIn and 40+ platforms. CertifyMe is 1EdTech independently certified for Open Badges 3.0 — the global standard for portable, tamper-proof digital credentials."
 
 layout: V4LayoutInnerpages
 
@@ -26,7 +26,7 @@ Feature2Text: The analytics guide of CertifyMe enables you to see the level of s
 
 Feature3Image: /assets4/images/Digital Badges/3.png
 Feature3Title: High Level of Badge Data Security
-Feature3Text: We offer Open Badge 2.0 version-compliant digital badges. The immutable and portable micro badges come with a unique ID or a verification link for instant verification. Store the badges in the recipient's wallet.
+Feature3Text: CertifyMe is 1EdTech independently certified for Open Badges 3.0 — the current global standard for interoperable, portable digital credentials. Every badge carries a cryptographic signature and a unique verification link, making fraud instantly detectable and enabling recipients to present credentials anywhere OB3 is recognised.
 
 #Feature4Image: /assets4/images/Hr & ld/4.png
 Feature4Title: Rebrand Your Credentials for Authentic Brand Image Reflection
@@ -61,5 +61,22 @@ Q3Text: Digital badges are typically earned by meeting specific criteria set by 
 
 Q4Title: Are there any standards or frameworks for digital badges?
 Q4Text: The most widely adopted standard is the Open Badges Specification developed by the Mozilla Foundation.
+
+
+seo_keywords: "digital badges, open badges, digital badge software, open badges 3.0, verifiable digital badges, badge management platform, digital badge maker, OB3 badges"
+
+faqs:
+  - question: "What are digital badges?"
+    answer: "Digital badges are verifiable, portable digital credentials that recognize specific skills, achievements, or learning milestones. They embed structured metadata including issuer identity, earner name, award criteria, and evidence URL — enabling independent verification by employers, institutions, or anyone with the badge link."
+  - question: "Are CertifyMe digital badges Open Badges 3.0 certified?"
+    answer: "Yes. CertifyMe holds independent 1EdTech certification for Open Badges 3.0, the current global standard for interoperable digital credentials. Badges issued on CertifyMe are portable, independently verifiable, and recognised by any OB3-compatible platform or employer portal worldwide."
+  - question: "Which platforms can digital badges be shared on?"
+    answer: "CertifyMe badges include one-click sharing to 40+ platforms including LinkedIn, Twitter, Facebook, WhatsApp, and personal websites. Recipients can also download their badge as an image or PDF, or embed it directly in email signatures and resumes."
+  - question: "Can I white-label digital badges with my organisation's branding?"
+    answer: "Yes. CertifyMe provides full white-label customisation — your logo, brand colours, and custom domain. Badge landing pages and verification pages display your organisation's identity. Learners see your brand, not CertifyMe's."
+  - question: "How do recipients verify a digital badge?"
+    answer: "Every badge includes a unique verification link and QR code. Anyone — employers, institutions, or anyone with the link — can verify the badge's authenticity in seconds without needing a CertifyMe account. The verification page confirms issuer, earner, issue date, and criteria."
+  - question: "Can digital badges have expiry dates?"
+    answer: "Yes. You can set custom expiry dates on any badge. Expired badges display a clear status on the verification page. CertifyMe can also trigger automated renewal notifications to badge earners before expiry."
 ---
 

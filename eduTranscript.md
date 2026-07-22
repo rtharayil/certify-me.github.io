@@ -58,4 +58,14 @@ ActionButtonbelowtext2: Exclusive Support
 # testimonial section
 TestimonialTitle: Our Happy Customers
 
+
+faqs:
+  - question: "What is EduTranscript?"
+    answer: "EduTranscript is CertifyMe's digital academic transcript management system for universities and colleges. It lets institutions issue verifiable, tamper-proof digital transcripts that students can share instantly with employers, graduate schools, or credential evaluation agencies — replacing slow, expensive paper transcript processes."
+  - question: "How are digital transcripts verified?"
+    answer: "Each EduTranscript carries a unique verification URL and QR code. Recipients, employers, or institutions can verify the transcript's authenticity instantly — confirming issuing institution, student name, and academic record details — without contacting the university directly."
+  - question: "Can digital transcripts replace official paper transcripts?"
+    answer: "CertifyMe's digital transcripts provide cryptographically verifiable, tamper-proof records that meet the needs of many employers and institutions. For contexts requiring officially certified paper documents (some jurisdictions or regulatory bodies), universities may still need to supplement with paper. Contact CertifyMe for guidance specific to your institution's requirements."
+
+seo_keywords: "digital transcript, academic transcript software, university digital transcript, verifiable transcripts, EduTranscript, online transcript management"
 ---

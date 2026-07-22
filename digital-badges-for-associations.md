@@ -65,4 +65,16 @@ ActionButtonbelowtext2: Exclusive Support
 # testimonial section
 TestimonialTitle: Our Happy Customers
 
+
+
+seo_keywords: "digital badges for associations, membership credentials, association badge software, professional association digital credentials"
+
+
+faqs:
+  - question: "How do associations use digital badges?"
+    answer: "Associations use digital badges to recognise member achievements, certify professional development, and reward participation in events, training, and certification programmes. Digital badges are shareable on LinkedIn and social media, giving members a way to publicly display their credentials and increasing the association's visibility with each share."
+  - question: "Can associations issue Open Badges 3.0 credentials?"
+    answer: "Yes. CertifyMe is 1EdTech independently certified for Open Badges 3.0. Associations issuing badges through CertifyMe can award OB3-compliant credentials that are portable, interoperable, and recognised by any compatible employer system or platform."
+  - question: "How does CertifyMe help associations retain members?"
+    answer: "Digital badges create tangible, shareable proof of membership value. When members earn and display credentials, it reinforces the value of their association membership and motivates continued engagement. CertifyMe's analytics dashboard lets associations track badge sharing, views, and verification rates — providing measurable evidence of programme impact."
 ---

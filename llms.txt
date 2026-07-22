@@ -99,13 +99,23 @@ CertifyMe provides a REST API for programmatic credential issuance and managemen
 - Blog: https://www.certifyme.online/blog
 - Digital Badges: https://www.certifyme.online/digital-badges
 - Digital Certificates: https://www.certifyme.online/digital-certificate
+- Micro-Credentials: https://www.certifyme.online/micro-credentials
+- Skills Passport (Learner Wallet): https://www.certifyme.online/skills-passport
+- White-Label Credentials: https://www.certifyme.online/whitelabel-credentials
+- Credential Analytics: https://www.certifyme.online/credential-analytics
+- Certificate Verification: https://www.certifyme.online/certificate-verification
+- EduTranscript (Digital Transcripts): https://www.certifyme.online/eduTranscript
 - Higher Education: https://www.certifyme.online/credentials-higher-education
 - E-Learning: https://www.certifyme.online/credentials-for-elearning-platforms
-- L&D: https://www.certifyme.online/digital-badges-for-hr
+- L&D / HR: https://www.certifyme.online/digital-badges-for-hr
 - Associations: https://www.certifyme.online/digital-badges-for-associations
+- Schools: https://www.certifyme.online/digital-credentials-for-schools
+- Government: https://www.certifyme.online/government
+- Banking & Finance: https://www.certifyme.online/banking-Finance
 - All Integrations: https://www.certifyme.online/allIntegrations
 - API & Developer Docs: https://www.certifyme.online/api/
 - Security & Compliance: https://www.certifyme.online/security/
+- GDPR Enterprise Policy: https://www.certifyme.online/gdpr-enterprise
 - Case Studies: https://www.certifyme.online/case-studies
 - Glossary: https://www.certifyme.online/glossary
 - Privacy Policy: https://www.certifyme.online/Policy

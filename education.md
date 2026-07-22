@@ -39,4 +39,15 @@ Feature4Text: Eliminate the manual effort and automate awarding of report cards 
 
 
 
+
+
+seo_keywords: "digital credentials for education, educational digital badges, student credential platform, school digital certificate software"
+
+faqs:
+  - question: "How do educational institutions use digital credentials?"
+    answer: "Educational institutions use digital credentials to issue certificates, diplomas, and badges for course completions, professional development, and continuing education. Digital credentials are faster to issue than printed documents, permanently verifiable, and shareable by recipients on LinkedIn — increasing institutional visibility with every learner share."
+  - question: "Can educational institutions issue white-label credentials?"
+    answer: "Yes. CertifyMe provides full white-label customisation for educational institutions. Credentials display the institution's logo, brand colours, and custom domain — learners see the institution's brand, not CertifyMe's."
+  - question: "Are student credentials protected under FERPA?"
+    answer: "Yes. CertifyMe is FERPA compliant. The platform processes only the minimum data needed for credential issuance and gives institutions full control over student credential records, consistent with FERPA requirements."
 ---

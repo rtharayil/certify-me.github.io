@@ -42,4 +42,15 @@ Feature4Text: Exhibit in-demand skills to unlock new career opportunities and sc
 
 
 
+
+
+seo_keywords: "verifiable digital documents, tamper-proof documents, verifiable PDF, blockchain documents, cryptographically signed documents"
+
+faqs:
+  - question: "What are verifiable digital documents?"
+    answer: "Verifiable digital documents are tamper-proof digital records with embedded cryptographic signatures and unique verification IDs. Unlike scanned PDFs, they cannot be forged — any modification to the content invalidates the signature. Verification is instant via QR code or link and does not require contacting the issuing organisation."
+  - question: "How is a verifiable document different from a scanned PDF?"
+    answer: "A scanned PDF can be easily altered in image-editing software and shows no evidence of tampering. A CertifyMe verifiable document carries a cryptographic signature that binds the content to the issuer. Any alteration breaks the signature and is immediately detectable during verification."
+  - question: "What types of documents can be made verifiable?"
+    answer: "CertifyMe can make certificates, diplomas, transcripts, compliance documents, product authenticity certificates, and any other institutional document verifiable. The platform handles design, issuance, and verification — issuers upload their document template, add recipient data, and CertifyMe handles the rest."
 ---

@@ -53,6 +53,21 @@ Q3Text: No. CertifyMe is designed with data minimisation in mind. Credentials ca
 Q4Title: How are credentials protected against tampering or fraud?
 Q4Text: Every credential carries a cryptographic digital signature and a unique QR code or verification URL. Verifiers can independently confirm authenticity without contacting CertifyMe. The platform also supports blockchain-backed credential storage for institutions requiring immutable audit trails.
 
+
+
+seo_keywords: "ISO 27001 credential security, GDPR compliant credential software, FERPA compliant, digital credential security, ISO 27701, credential platform compliance, secure digital credentials, COPPA compliant"
+
+faqs:
+  - question: "What security certifications does CertifyMe hold?"
+    answer: "CertifyMe is independently certified under ISO 27001 (Information Security Management), ISO 27701 (Privacy Information Management), and ISO 9001 (Quality Management). These certifications are issued by accredited third-party auditors and confirm that CertifyMe operates under verified, enterprise-grade security and privacy controls."
+  - question: "Is CertifyMe GDPR compliant?"
+    answer: "Yes. CertifyMe is GDPR compliant for European data protection requirements. The platform processes only the minimum personal data necessary for credential issuance, provides data subject rights mechanisms, and operates under ISO 27701-certified privacy management controls. A full Data Processing Agreement is available on request."
+  - question: "Is CertifyMe FERPA compliant?"
+    answer: "Yes. CertifyMe is FERPA compliant for US educational record requirements. The platform is designed so that institutions retain control over student data and credentialing records, consistent with FERPA's requirements for educational agencies and institutions."
+  - question: "How are digital credentials protected against tampering?"
+    answer: "Every credential issued on CertifyMe carries a cryptographic signature and a unique verification ID. Any modification to the credential content invalidates the signature. Verification is independent — employers and institutions can verify credential authenticity without relying on CertifyMe's servers."
+  - question: "Does CertifyMe require sensitive learner data to issue credentials?"
+    answer: "No. CertifyMe is designed to issue credentials with minimal personal data — typically only a name and email address. Sensitive data such as grades, ID numbers, or health information is not required or stored. This minimises data exposure and simplifies GDPR and FERPA compliance for issuing institutions."
 ---
 
 <script type="application/ld+json">

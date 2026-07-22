@@ -67,4 +67,18 @@ ActionButtonbelowtext2: Exclusive Support
 # testimonial section
 TestimonialTitle: Our Happy Customers
 
+
+
+seo_keywords: "digital credentials for higher education, university digital badges, student credentials, higher education credential management, open badges university, academic digital credentials"
+
+
+faqs:
+  - question: "How do universities use digital credentials?"
+    answer: "Universities use digital credentials to issue tamper-proof certificates, diplomas, and badges for course completions, continuing education programmes, and micro-credentials. Digital credentials are faster to issue than printed documents, permanently verifiable, and shareable by recipients on LinkedIn and job portals — increasing institutional visibility and learner employability."
+  - question: "Are CertifyMe credentials compliant with FERPA?"
+    answer: "Yes. CertifyMe is FERPA compliant for US educational record requirements. The platform processes only the minimum data needed for credential issuance and gives institutions full control over student records, consistent with FERPA's requirements."
+  - question: "Can CertifyMe integrate with university LMS platforms?"
+    answer: "Yes. CertifyMe integrates with Canvas, Moodle, Blackboard, and other major LMS platforms. When a student completes a course or programme, the credential is issued automatically — no manual work required from faculty or administrators."
+  - question: "Can a university issue Open Badges 3.0 credentials?"
+    answer: "Yes. CertifyMe is 1EdTech independently certified for Open Badges 3.0, the current global standard for interoperable academic credentials. Institutions issuing credentials through CertifyMe can issue OB3-compliant badges and certificates recognised by any compatible platform or employer system."
 ---

@@ -52,4 +52,16 @@ TestimonialTitle: Our Happy Customers
 
 
 
+
+
+seo_keywords: "white label credentials, white label digital badges, white label certificate software, branded digital credentials, custom credential platform"
+
+
+faqs:
+  - question: "What does white-label credentialing mean?"
+    answer: "White-label credentialing means the credential platform operates entirely under your organisation's brand identity — your logo, colours, domain name, and email sender. Recipients see your brand throughout the issuance, delivery, and verification experience. There is no CertifyMe branding visible to end users."
+  - question: "Can I use my own domain for white-label credentials?"
+    answer: "Yes. CertifyMe supports custom domain configuration for white-label deployments. Your credential landing pages, verification URLs, and learner wallet all operate under your domain — reinforcing brand trust with recipients and employers."
+  - question: "Is white-label credentialing included in all CertifyMe plans?"
+    answer: "White-label credential customisation is available on CertifyMe's Signature and Enterprise plans. The level of customisation — including custom domain, email branding, and full UI rebranding — increases with higher tiers. Contact the CertifyMe team for details specific to your requirements."
 ---

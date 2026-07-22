@@ -35,4 +35,7 @@ Feature3Text: Completing a degree can certainly help to improve your career pros
 
 
 
+
+
+seo_keywords: "LinkedIn digital badges, share badges on LinkedIn, LinkedIn credential integration, badge LinkedIn profile"
 ---

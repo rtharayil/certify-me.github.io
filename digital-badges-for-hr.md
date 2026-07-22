@@ -71,4 +71,16 @@ ActionButtonbelowtext2: Exclusive Support
 # testimonial section
 TestimonialTitle: Our Happy Customers
 
+
+
+seo_keywords: "digital credentials for HR, employee credentials, learning and development badges, HR digital badge software, workforce credentials"
+
+
+faqs:
+  - question: "How do HR teams use digital credentials?"
+    answer: "HR and L&D teams use digital credentials to recognise employee training completions, professional development milestones, and internal certifications. Digital credentials provide verifiable proof of skill acquisition, improve employee engagement by making achievements shareable, and give L&D programmes measurable impact through credential analytics."
+  - question: "Can digital credentials be used for employee onboarding certifications?"
+    answer: "Yes. CertifyMe can automatically issue onboarding completion credentials when employees finish required training modules in your LMS or HRIS. This creates an auditable record of training completion and gives new hires a shareable credential demonstrating their readiness."
+  - question: "How do digital credentials improve employee retention?"
+    answer: "Digital credentials make professional development achievements visible and shareable — employees can display them on LinkedIn and professional profiles. This increases the perceived value of internal training programmes and signals to employees that the organisation invests in their career growth, which is linked to improved retention rates."
 ---

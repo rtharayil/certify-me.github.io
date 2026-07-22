@@ -1,7 +1,7 @@
 ---
 title: "Custom digital Credential Wallet"
 
-description: "Store and access credentials securely in a custom wallet"
+description: "Give your learners a permanent, branded digital credential wallet. CertifyMe's custom badge wallet lets recipients collect, manage, and share every credential they earn — on your domain, in your brand colours."
 
 layout: V4LayoutInnerpages
 
@@ -50,4 +50,15 @@ ActionButtonbelowtext2: Exclusive Support
 TestimonialTitle: Our Happy Customers 
 
 
+
+
+seo_keywords: "custom badge wallet, digital credential wallet, badge portfolio, learner credential wallet, custom digital wallet"
+
+faqs:
+  - question: "What is a digital credential wallet?"
+    answer: "A digital credential wallet is a personal, hosted profile where learners collect and manage all their earned credentials — certificates, badges, and micro-credentials — in one place. CertifyMe's wallet is permanent, shareable, and accessible from any device. Learners own their credentials even if they change jobs or institutions."
+  - question: "Can the credential wallet be white-labelled?"
+    answer: "Yes. CertifyMe's custom badge wallet operates on your organisation's brand identity and domain. The wallet interface, email notifications, and credential pages all reflect your branding — not CertifyMe's. Learners experience your platform from start to finish."
+  - question: "How do learners access their credential wallet?"
+    answer: "Learners access their CertifyMe wallet via a personal link sent when they first receive a credential. The wallet requires no app download and works in any browser. From the wallet, learners can view, share, download, and manage all their credentials from any issuing institution."
 ---

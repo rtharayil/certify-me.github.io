@@ -51,5 +51,26 @@ Allow: /
 User-agent: Diffbot
 Allow: /
 
+User-agent: Bingbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
 # Sitemaps
 Sitemap: https://www.certifyme.online/sitemap.xml

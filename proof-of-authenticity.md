@@ -38,4 +38,7 @@ Feature4Text: Delivering digital certificates puts your organization in the best
 
 
 
+
+
+seo_keywords: "proof of authenticity, product authenticity certificate, verifiable product credentials, tamper-proof authenticity badge"
 ---

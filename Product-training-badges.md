@@ -52,4 +52,7 @@ TestimonialTitle: Our Happy Customers
 
 
 
+
+
+seo_keywords: "product training badges, product certification, training credentials, product knowledge badges, employee training certificates"
 ---

@@ -51,6 +51,17 @@ TestimonialTitle: Our Happy Customers
 
 
 
+
+
+seo_keywords: "digital credential integrations, LMS integration credentials, CertifyMe integrations, Moodle badge integration, Canvas credential integration"
+
+faqs:
+  - question: "Which LMS platforms does CertifyMe integrate with?"
+    answer: "CertifyMe integrates with Canvas, Moodle, Blackboard, Teachable, Thinkific, TalentLMS, and 100+ other platforms via direct integrations, Zapier, Make, and REST API. When a learner completes a course, a credential is issued and delivered automatically — no manual work required."
+  - question: "Does CertifyMe integrate with Zapier and Make?"
+    answer: "Yes. CertifyMe supports no-code automation through Zapier and Make (formerly Integromat). You can trigger credential issuance from any platform that connects to Zapier or Make — including CRMs, HRIS systems, and custom workflows."
+  - question: "Can CertifyMe integrate with HR systems like Workday or SAP?"
+    answer: "Yes, through the REST API and Zapier/Make integrations. When an employee completes a training milestone in your HRIS, CertifyMe can automatically issue and deliver the credential. Contact the CertifyMe team for enterprise HRIS integration guidance."
 ---
 
 

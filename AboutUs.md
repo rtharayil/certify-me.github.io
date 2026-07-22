@@ -10,4 +10,7 @@ sitemap.priority : 0
 
 # testimonial section
 TestimonialTitle: Our Happy Customers 
+
+
+seo_keywords: "CertifyMe company, about CertifyMe, digital credential company, 1EdTech certified company, credential technology company"
 ---

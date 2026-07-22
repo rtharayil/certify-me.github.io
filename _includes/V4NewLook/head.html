@@ -15,6 +15,7 @@
   <meta name="description" content="{{ page.description }}">
   <meta name="author" content="CertifyMe">
   <meta name="robots" content="{% if page.robots %}{{ page.robots }}{% else %}index, follow{% endif %}">
+  {% if page.seo_keywords %}<meta name="keywords" content="{{ page.seo_keywords | escape }}">{% endif %}
   <meta name="theme-color" content="#4A6CF7">
 
   <!-- CANONICAL URL -->
@@ -221,6 +222,29 @@
     ]
   }
   </script>
+
+  {% if page.faqs and page.faqs.size > 0 and page.url != "/" %}
+  <!-- STRUCTURED DATA: FAQPage (per-page, non-homepage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://www.certifyme.online{{ page.url }}#faq",
+    "mainEntity": [
+      {% for faq in page.faqs %}
+      {
+        "@type": "Question",
+        "name": {{ faq.question | jsonify }},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": {{ faq.answer | strip_html | jsonify }}
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
 
   {% if page.url == "/" %}
   <!-- STRUCTURED DATA: FAQPage (homepage) -->

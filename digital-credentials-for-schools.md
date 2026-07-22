@@ -51,4 +51,15 @@ TestimonialTitle: Our Happy Customers
                   
                   
                   
+
+
+seo_keywords: "digital credentials for schools, K-12 digital badges, school certificates, student achievement credentials, school digital credential platform"
+
+faqs:
+  - question: "How can schools use digital credentials?"
+    answer: "Schools use digital credentials to recognise student achievements, co-curricular activities, skills development, and course completions. Digital credentials are shareable on social media and student portfolios — helping students build verifiable records of achievement that go beyond grades and transcripts."
+  - question: "Are CertifyMe credentials suitable for K-12 students?"
+    answer: "Yes. CertifyMe is COPPA compliant and designed to handle student credentials responsibly. The platform issues credentials with minimal personal data — typically only a name — and gives schools full control over credential design and delivery."
+  - question: "Can student digital credentials link to university admissions portfolios?"
+    answer: "Yes. CertifyMe credentials are interoperable with Open Badges 3.0 standards, making them portable and verifiable by any compatible institution. Students can include credential verification links in university applications and career portfolios."
 ---

@@ -33,4 +33,15 @@ Feature3Title: Employee Agreement
 Feature3Text: Streamline the process of creating and managing employee agreements with our digital credential management software. Our platform allows you to easily generate, issue and manage contracts, such as employment agreements, confidentiality agreements, and non-disclosure agreements. Our secure system also allows you to store and access past agreements, making it easy to track employee commitments and obligations. Simplify your HR management with our software.
 
 
+
+
+seo_keywords: "digital credentials for HR, workplace credentials, employee badges, workforce learning credentials, L&D digital badges, corporate credential management"
+
+faqs:
+  - question: "What are workplace credentials?"
+    answer: "Workplace credentials are verifiable digital badges and certificates that recognise employee skills, training completions, and professional development milestones. They provide auditable proof of competency, are shareable on LinkedIn and professional profiles, and give L&D programmes measurable, visible impact."
+  - question: "How do workplace credentials improve employee engagement?"
+    answer: "Shareable digital credentials make professional development visible — employees display them on LinkedIn and resumes, which reinforces the value of internal training. Research consistently shows that recognition and credential-earning behaviour increases course completion rates and employee satisfaction."
+  - question: "Can workplace credentials integrate with corporate LMS platforms?"
+    answer: "Yes. CertifyMe integrates with enterprise LMS platforms including Cornerstone, SAP SuccessFactors, Workday Learning, and others via REST API and Zapier. Credential issuance can be automated on training completion events."
 ---

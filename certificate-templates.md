@@ -19,4 +19,7 @@ templateBannerButtonLink: "https://apac.platform.certifyme.dev/auth/pre-register
 
 
 
+
+
+seo_keywords: "certificate templates, digital certificate templates, free certificate templates, badge templates, credential design templates"
 ---

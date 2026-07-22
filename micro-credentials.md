@@ -28,4 +28,19 @@ Feature2_1Text: Connect CertifyMe with your existing LMS (Canvas, Moodle, Blackb
 Feature2_1Icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="40" height="40"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
 Feature2_2Title: Career Intelligence Built In
 Feature2_2Text: Recipients see live labour-market data alongside their micro-credential — relevant job listings, skills demand, and salary benchmarks — making your credentials tangible proof of career value.
+
+
+seo_keywords: "micro-credentials, micro-credentialing platform, stackable badges, digital micro-credentials, open badges 3.0 micro-credentials, micro-certification, skill-based credentials, stackable credentials"
+
+faqs:
+  - question: "What are micro-credentials?"
+    answer: "Micro-credentials are short, targeted digital credentials that recognise specific skills or competencies. Unlike full degrees or certificates, they can be earned in hours or days and are designed to be stackable — earners accumulate them toward larger qualifications or career milestones. CertifyMe supports Open Badges 3.0 compliant micro-credentials."
+  - question: "Are CertifyMe micro-credentials stackable?"
+    answer: "Yes. CertifyMe's micro-credentialing platform supports stackable credentials — learners accumulate individual micro-credentials that count toward programme completion milestones or larger qualifications. Institutions can define credential pathways and progress tracking within the platform."
+  - question: "Do micro-credentials integrate with LMS platforms?"
+    answer: "Yes. CertifyMe integrates with major LMS platforms including Canvas, Moodle, Blackboard, Teachable, Thinkific, and others. When a learner completes a course or assessment in your LMS, a micro-credential is automatically issued via the CertifyMe integration — no manual work required."
+  - question: "Are CertifyMe micro-credentials Open Badges 3.0 compliant?"
+    answer: "Yes. Every micro-credential issued through CertifyMe follows Open Badges 3.0, the current global standard for interoperable portable credentials. This means the credentials are recognised by any OB3-compatible platform, employer portal, or skills framework worldwide."
+  - question: "How do learners share micro-credentials on LinkedIn?"
+    answer: "Each micro-credential includes one-click LinkedIn sharing. When a learner clicks Share, CertifyMe automatically populates the LinkedIn certification section with the issuer name, credential name, issue date, and verification URL. Learners can also add the credential to their LinkedIn profile from their wallet at any time."
 ---

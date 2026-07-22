@@ -140,4 +140,7 @@ Compare4: CertifyMe Vs Certifier
 ## connect section
 ConnectTitle: Connect With Us
 
+
+
+seo_keywords: "digital credential software, digital credential management platform, open badges 3.0, verifiable credentials, digital certificate platform, badge management software, credential issuance platform, 1EdTech certified"
 ---

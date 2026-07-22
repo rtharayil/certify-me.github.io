@@ -53,4 +53,16 @@ ActionButtonbelowtext2: Exclusive Support
 
 # testimonial section
 TestimonialTitle: Our Happy Customers
+
+
+seo_keywords: "digital credentials for eLearning, LMS digital badges, online course certificates, eLearning credential software, SCORM credential integration"
+
+
+faqs:
+  - question: "How does CertifyMe integrate with eLearning platforms?"
+    answer: "CertifyMe integrates with major eLearning platforms including Teachable, Thinkific, Moodle, Canvas, TalentLMS, and others via direct integrations, Zapier, Make, and REST API. When a learner completes a course, CertifyMe automatically issues and sends the credential — no manual work required."
+  - question: "Can credentials be issued automatically when a course is completed?"
+    answer: "Yes. CertifyMe's LMS integrations trigger automatic credential issuance on course completion. Learners receive their certificate or badge by email immediately, with a shareable link and QR code. This automation eliminates manual certificate generation and delivery."
+  - question: "Do eLearning credentials need to be Open Badges compliant?"
+    answer: "Open Badges compliance makes credentials portable and verifiable beyond your platform. CertifyMe issues Open Badges 3.0 compliant credentials — the current global standard — so learners can add their credentials to LinkedIn, employer portals, or any OB3-compatible skills system."
 ---
