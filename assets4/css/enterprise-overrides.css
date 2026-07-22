@@ -31,6 +31,11 @@ h2.statistic-number {
   font-family: 'Manrope', sans-serif !important;
 }
 
+/* ── PAGE BACKGROUND — single source of truth for the lavender base ── */
+#page {
+  background-color: #f4f3ff !important;
+}
+
 /* ── 0. GLOBAL TOKENS ─────────────────────────────────── */
 :root {
   --cm-indigo:      #282B75;
@@ -249,7 +254,7 @@ h2.statistic-number {
   padding-top: 24px !important;
   padding-bottom: 48px !important;
   margin-top: 0 !important;
-  background: linear-gradient(160deg, #f4f3ff 0%, #eef2ff 60%, #ffffff 100%) !important;
+  background: transparent !important;
 }
 /* Subtle "Trusted by" label */
 #badges.badges-main-container::before {
