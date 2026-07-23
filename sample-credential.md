@@ -30,7 +30,7 @@ projects:
     verifyURL: "https://certificate.accelq.com/verify/KshitijBangur-383456cc678"  
   - title: "Expired Certificate"
     imageLink: "https://blr1.digitaloceanspaces.com/apac-badge-image/5344/29496/729534/cert_d63ebcda29496.png"
-    verifyURL: "https://verify.apac.certifyme.org/verify/d63ebcda29496"  
+    verifyURL: "https://verify.apac.certifyme.org/verify/8c80ddb429324"  
   - title: "Credential with QR Code"
     imageLink: "https://www.my.certifyme.online/static/fileStore/img/1920/6064/150375_badge_98F4A1.png"
     verifyURL: "https://verify.apac.certifyme.org/verify/a42642326064"
