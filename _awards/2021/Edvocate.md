@@ -1,3 +1,4 @@
+---
 layout: award
 title: Edvocate Leadership Awards 2022
 description: A platform to honor the top 1% of Exemplary Leaders who has led ordinary people in accomplishing extraordinary outcomes.
@@ -32,3 +33,4 @@ About: About <span> Edvocate Leadership Awards 2022 </span>
 About1: CertifyMe " Edvocate Leadership Awards 2022 " is widely recognized across the corporate spectrum as the top honors for individual and team achievements in across all domains . All organizations, public and private, for profit and non-profit, large and small may submit nominations. Leaders are key functions in any corporate firm, but unfortunately, professionals in this field of work are seldom recognized and often neglected to be appreciated for their selfless efforts.
 AboutImg: /img/awards/7.png
 Form: 211204772803448
+---
