@@ -536,13 +536,6 @@ h2.statistic-number {
   background: linear-gradient(90deg, var(--cm-purple), var(--cm-indigo));
 }
 
-/* ── 14. "OUR PRODUCT DETAILS" FEATURE SECTION ────────── */
-/* Give it a clean white background */
-#tab-1,
-[id^="tabs-"] {
-  background: #fff;
-}
-
 /* ── 15. RESPONSIVE ADJUSTMENTS ───────────────────────── */
 @media (max-width: 991px) {
   .hero-7-txt h1.s-42 {
