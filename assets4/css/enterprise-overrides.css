@@ -2458,6 +2458,40 @@ h2.statistic-number {
 }
 .flp2-compact-fit p { font-size: .82rem; color: #374151; margin: 0; line-height: 1.45; font-style: italic; }
 
+/* Level 2 vendor lock-in warning */
+.flp2-l2-warning {
+  display: flex; gap: 16px; align-items: flex-start;
+  margin-top: 24px; padding: 20px 24px;
+  background: #fef2f2; border: 1.5px solid #fca5a5;
+  border-left: 4px solid #ef4444; border-radius: 10px;
+}
+.flp2-l2w-icon {
+  flex-shrink: 0; color: #dc2626; margin-top: 2px;
+}
+.flp2-l2w-body { flex: 1; }
+.flp2-l2w-title {
+  display: block; font-size: .95rem; font-weight: 800;
+  color: #991b1b; margin-bottom: 8px; line-height: 1.35;
+}
+.flp2-l2w-text {
+  font-size: .85rem; color: #374151; line-height: 1.6; margin: 0 0 12px;
+}
+.flp2-l2w-list {
+  list-style: none; margin: 0 0 12px; padding: 0;
+}
+.flp2-l2w-list li {
+  font-size: .82rem; color: #7f1d1d;
+  padding: 3px 0 3px 18px; position: relative; line-height: 1.5;
+}
+.flp2-l2w-list li::before {
+  content: '✕'; position: absolute; left: 0;
+  font-size: .7rem; color: #dc2626; top: 4px;
+}
+.flp2-l2w-close {
+  font-size: .85rem; font-weight: 600; color: #991b1b;
+  margin: 0; font-style: italic; line-height: 1.5;
+}
+
 /* Bridge (L2 limitation questions) */
 .flp2-bridge {
   margin-top: 28px; padding: 24px 28px; background: #fff3;

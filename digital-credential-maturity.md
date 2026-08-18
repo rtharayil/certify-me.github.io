@@ -136,6 +136,24 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
         <p>Good for recognition. Limited when credentials become business-critical.</p>
       </div>
     </div>
+    <!-- Level 2 lock-in warning -->
+    <div class="flp2-l2-warning">
+      <div class="flp2-l2w-icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </div>
+      <div class="flp2-l2w-body">
+        <strong class="flp2-l2w-title">Most badge platforms stop here — and that creates a problem.</strong>
+        <p class="flp2-l2w-text">The majority of digital badge platforms operate at Level 2. Cost is low, but so is the value ceiling. More importantly, most Level 2 platforms are <strong>not built on open standards</strong> — which means your credential data, designs and recipient records are locked inside a proprietary system.</p>
+        <ul class="flp2-l2w-list">
+          <li>Credentials cannot be independently verified outside the platform</li>
+          <li>Recipient data is owned and controlled by the vendor</li>
+          <li>Switching platforms means losing credential history and portability</li>
+          <li>No structured data — credentials are invisible to systems and AI</li>
+        </ul>
+        <p class="flp2-l2w-close">If your program's credibility matters — or may matter in the future — a proprietary badge platform is a strategic dead end.</p>
+      </div>
+    </div>
+
     <!-- Bridge questions -->
     <div class="flp2-bridge">
       <p class="flp2-bridge-label">Where Level 2 stops — the questions it can't answer:</p>
