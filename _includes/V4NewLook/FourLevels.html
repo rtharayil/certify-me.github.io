@@ -1,111 +1,118 @@
 <!-- =========================================
-     FOUR LEVELS OF DIGITAL CREDENTIALING
-     Homepage compact section (.fl-*)
+     CREDENTIAL MATURITY ENQUIRY
+     Homepage self-qualification section (.fl-*)
      ========================================= -->
 <section class="fl-section" id="credential-levels" aria-labelledby="fl-heading">
   <div class="container">
 
     <!-- Header -->
-    <div class="row justify-content-center text-center mb-4">
+    <div class="row justify-content-center text-center mb-5">
       <div class="col-lg-8 col-xl-7">
-        <span class="fl-eyebrow">CREDENTIALING FRAMEWORK</span>
-        <h2 class="fl-title" id="fl-heading">Not All Digital Credentials Are Created Equal</h2>
-        <p class="fl-subtitle">Organizations have different credentialing needs — from simple digital recognition to independently verifiable credentials and connected skills ecosystems.</p>
+        <span class="fl-eyebrow">CREDENTIAL MATURITY ENQUIRY</span>
+        <h2 class="fl-title" id="fl-heading">Which of These Sounds Like Your Organisation?</h2>
+        <p class="fl-subtitle">Every organisation has different credentialing needs. Find out where you stand — and what you actually need.</p>
       </div>
     </div>
 
-    <!-- Four levels grid -->
-    <div class="fl-grid">
+    <!-- 2 × 2 scenario grid -->
+    <div class="fl-quiz-grid">
 
-      <!-- L1 & L2 — simpler zone -->
-      <div class="fl-zone fl-zone--simple">
-        <div class="fl-zone-header">
-          <span class="fl-zone-label fl-zone-label--simple">Levels 1 – 2</span>
-        </div>
-        <div class="fl-zone-cards">
-
-          <!-- Level 1 -->
-          <div class="fl-card fl-card--l1">
-            <div class="fl-level-num">01</div>
-            <p class="fl-card-tier">Traditional</p>
-            <h3 class="fl-card-name">PDF &amp; Paper</h3>
-            <p class="fl-card-desc">Recognition without digital credential infrastructure.</p>
-            <ul class="fl-feats">
-              <li>PDF / paper certificates</li>
-              <li>Manual verification</li>
-              <li>Static records</li>
-            </ul>
-            <span class="fl-outcome">Recognition</span>
+      <!-- Level 1 -->
+      <a href="/digital-credential-maturity/#level-1" class="fl-qcard fl-qcard--l1" aria-label="Level 1 — PDF and paper credentials">
+        <div class="fl-qcard-inner">
+          <div class="fl-qcard-top">
+            <span class="fl-qcard-num">01</span>
+            <span class="fl-qcard-tier">Traditional</span>
           </div>
-
-          <!-- Level 2 -->
-          <div class="fl-card fl-card--l2">
-            <div class="fl-level-num">02</div>
-            <p class="fl-card-tier">Digital Recognition</p>
-            <h3 class="fl-card-name">Branded Digital Badges</h3>
-            <p class="fl-card-desc">Digital recognition with branding, design and social sharing.</p>
-            <ul class="fl-feats">
-              <li>Custom branding</li>
-              <li>Social sharing</li>
-              <li>Recipient engagement</li>
-            </ul>
-            <span class="fl-outcome">Branding + Sharing</span>
+          <h3 class="fl-qcard-q">"We issue certificates and awards — people print or save them."</h3>
+          <ul class="fl-qsignals">
+            <li>PDFs sent by email or downloaded</li>
+            <li>Paper certificates at events or graduation</li>
+            <li>No need for digital verification or sharing</li>
+          </ul>
+          <div class="fl-qcard-verdict fl-qcard-verdict--no">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+            CertifyMe is not the right fit
           </div>
-
         </div>
-      </div><!-- /.fl-zone--simple -->
+      </a>
 
-      <!-- L3 & L4 — CertifyMe zone -->
-      <div class="fl-zone fl-zone--cm" aria-label="CertifyMe Platform — Levels 3 and 4">
-        <div class="fl-zone-header">
-          <span class="fl-zone-label fl-zone-label--cm">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:5px;vertical-align:-1px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            CERTIFYME PLATFORM
-          </span>
-        </div>
-        <div class="fl-zone-cards">
-
-          <!-- Level 3 -->
-          <div class="fl-card fl-card--l3">
-            <div class="fl-level-num">03</div>
-            <p class="fl-card-tier">Verifiable Credentials</p>
-            <h3 class="fl-card-name">Open Standards + Verification</h3>
-            <p class="fl-card-desc">Cryptographically signed, tamper-evident credentials built on open standards.</p>
-            <ul class="fl-feats">
-              <li>Open Badges 3.0</li>
-              <li>W3C Verifiable Credentials</li>
-              <li>Independent verification</li>
-            </ul>
-            <span class="fl-outcome fl-outcome--accent">Trust + Portability</span>
+      <!-- Level 2 -->
+      <a href="/digital-credential-maturity/#level-2" class="fl-qcard fl-qcard--l2" aria-label="Level 2 — Branded digital badges">
+        <div class="fl-qcard-inner">
+          <div class="fl-qcard-top">
+            <span class="fl-qcard-num">02</span>
+            <span class="fl-qcard-tier">Digital Recognition</span>
           </div>
-
-          <!-- Level 4 -->
-          <div class="fl-card fl-card--l4">
-            <div class="fl-level-num">04</div>
-            <p class="fl-card-tier">Credential + Skills Ecosystem</p>
-            <h3 class="fl-card-name">Records + Skills + Workforce Intelligence</h3>
-            <p class="fl-card-desc">Connected credential infrastructure with CLR, skills taxonomy and labour-market intelligence.</p>
-            <ul class="fl-feats">
-              <li>Comprehensive Learner Records (CLR)</li>
-              <li>Skills taxonomy + mapping</li>
-              <li>Workforce intelligence</li>
-            </ul>
-            <span class="fl-outcome fl-outcome--white">Connected Outcomes</span>
+          <h3 class="fl-qcard-q">"We want branded digital badges our recipients can share on LinkedIn."</h3>
+          <ul class="fl-qsignals">
+            <li>Custom branding and design matter most</li>
+            <li>Social sharing is the primary goal</li>
+            <li>Independent verification is not a priority</li>
+          </ul>
+          <div class="fl-qcard-verdict fl-qcard-verdict--no">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+            CertifyMe would be overkill
           </div>
-
         </div>
-      </div><!-- /.fl-zone--cm -->
+      </a>
 
-    </div><!-- /.fl-grid -->
+      <!-- Level 3 — CertifyMe -->
+      <a href="/digital-credential-maturity/#level-3" class="fl-qcard fl-qcard--l3" aria-label="Level 3 — Verifiable digital credentials">
+        <div class="fl-qcard-inner">
+          <div class="fl-qcard-top">
+            <span class="fl-qcard-num">03</span>
+            <span class="fl-qcard-tier">Verifiable Credentials</span>
+            <span class="fl-qcard-cm-tag">CERTIFYME</span>
+          </div>
+          <h3 class="fl-qcard-q">"We need credentials that employers, institutions and systems can independently verify and recognise globally."</h3>
+          <ul class="fl-qsignals">
+            <li>Built on globally recognised open standards</li>
+            <li>Recipients must be able to prove the credential is real</li>
+            <li>Your program's reputation depends on trust</li>
+            <li>Credentials should be machine-readable and portable</li>
+          </ul>
+          <div class="fl-qcard-verdict fl-qcard-verdict--yes">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            This is where CertifyMe starts
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
 
-    <!-- Footer strip -->
+      <!-- Level 4 — CertifyMe -->
+      <a href="/digital-credential-maturity/#level-4" class="fl-qcard fl-qcard--l4" aria-label="Level 4 — Skills and workforce intelligence">
+        <div class="fl-qcard-inner">
+          <div class="fl-qcard-top">
+            <span class="fl-qcard-num">04</span>
+            <span class="fl-qcard-tier">Credential Ecosystem</span>
+            <span class="fl-qcard-cm-tag">CERTIFYME</span>
+          </div>
+          <h3 class="fl-qcard-q">"We need credentials connected to skills, learning outcomes and workforce intelligence."</h3>
+          <ul class="fl-qsignals">
+            <li>Skills mapping and learning pathways matter</li>
+            <li>Comprehensive Learner Records (CLR) needed</li>
+            <li>Credential data should feed workforce planning</li>
+            <li>We need insight across our entire credential program</li>
+          </ul>
+          <div class="fl-qcard-verdict fl-qcard-verdict--yes">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            CertifyMe becomes an ecosystem
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+    </div><!-- /.fl-quiz-grid -->
+
+    <!-- Footer -->
     <div class="fl-footer-strip">
       <span class="fl-starts-at">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        CertifyMe starts at Level 3
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+        Not sure which level fits you?
       </span>
-      <a href="/digital-credential-maturity" class="fl-cta-link" aria-label="Explore the four levels of digital credentialing">
-        Explore the Four Levels
+      <a href="/digital-credential-maturity/" class="fl-cta-link" aria-label="Take the full credential maturity assessment">
+        Take the full assessment
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
       </a>
     </div>
