@@ -91,22 +91,41 @@
 
 /* Comparison */
 .he-comparison { padding: 60px 0 80px; }
-.he-comp-table { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 44px; }
-.he-comp-side { border-radius: 14px; padding: 26px 22px; }
-.he-comp-side.traditional { background: rgba(239,68,68,.04); border: 1.5px solid rgba(239,68,68,.14); }
+.he-comp-table { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 44px; }
+.he-comp-side { border-radius: 14px; padding: 24px 20px; position: relative; }
+.he-comp-side.legacy { background: rgba(239,68,68,.04); border: 1.5px solid rgba(239,68,68,.14); }
+.he-comp-side.partial { background: rgba(245,158,11,.04); border: 1.5px solid rgba(245,158,11,.2); }
 .he-comp-side.modern { background: linear-gradient(135deg, #eef0ff, #f4f3ff); border: 1.5px solid rgba(79,70,229,.2); }
-.he-comp-label { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 6px; }
-.he-comp-side.traditional .he-comp-label { color: #dc2626; }
+.he-comp-side.modern::before {
+  content: 'RECOMMENDED';
+  position: absolute;
+  top: -11px; left: 50%;
+  transform: translateX(-50%);
+  background: #4f46e5;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.he-comp-label { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 6px; }
+.he-comp-side.legacy .he-comp-label { color: #dc2626; }
+.he-comp-side.partial .he-comp-label { color: #b45309; }
 .he-comp-side.modern .he-comp-label { color: #4f46e5; }
-.he-comp-title { font-family: 'Manrope', sans-serif; font-size: 17px; font-weight: 700; margin-bottom: 14px; }
-.he-comp-side.traditional .he-comp-title { color: #7f1d1d; }
+.he-comp-title { font-family: 'Manrope', sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 14px; line-height: 1.25; }
+.he-comp-side.legacy .he-comp-title { color: #7f1d1d; }
+.he-comp-side.partial .he-comp-title { color: #78350f; }
 .he-comp-side.modern .he-comp-title { color: #20203c; }
 .he-comp-items { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
-.he-comp-items li { display: flex; align-items: center; gap: 8px; font-size: 13.5px; }
-.he-comp-side.traditional .he-comp-items li { color: #991b1b; }
+.he-comp-items li { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; line-height: 1.4; }
+.he-comp-side.legacy .he-comp-items li { color: #991b1b; }
+.he-comp-side.partial .he-comp-items li { color: #78350f; }
 .he-comp-side.modern .he-comp-items li { color: #1e3a5f; }
-.he-comp-ico-bad { color: #ef4444; }
-.he-comp-ico-good { color: #10b981; }
+.he-comp-ico-bad { color: #ef4444; flex-shrink: 0; }
+.he-comp-ico-partial { color: #f59e0b; flex-shrink: 0; }
+.he-comp-ico-good { color: #10b981; flex-shrink: 0; }
 
 /* FAQs */
 .he-faq { padding: 60px 0 80px; }
@@ -146,6 +165,7 @@ details[open] .he-faq-q::after { content: '−'; }
   .he-security-grid { grid-template-columns: repeat(2, 1fr); }
   .he-testimonials { grid-template-columns: 1fr; }
   .he-comp-table { grid-template-columns: 1fr; }
+  .he-comp-side.modern::before { font-size: 8px; }
 }
 @media(max-width:767px) {
   .he-security-grid { grid-template-columns: 1fr; }
@@ -255,34 +275,49 @@ details[open] .he-faq-q::after { content: '−'; }
 <section class="he-comparison content-section division">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <h2 class="s-38 w-700">PDF vs. digital credential</h2>
-        <p class="p-xl color--grey mt-16">The question isn't whether to go digital. It's how much value you're leaving behind by not doing it yet.</p>
+      <div class="col-lg-9 text-center">
+        <h2 class="s-38 w-700">Why "digital badge" isn't enough</h2>
+        <p class="p-xl color--grey mt-16">Universities are often sold basic badge platforms as a digital credential solution. They're not. There are three tiers — and only two of them are fit for higher education.</p>
       </div>
     </div>
     <div class="he-comp-table">
-      <div class="he-comp-side traditional">
-        <div class="he-comp-label">Traditional</div>
-        <div class="he-comp-title">PDF &amp; Paper</div>
+
+      <div class="he-comp-side legacy">
+        <div class="he-comp-label">Outdated</div>
+        <div class="he-comp-title">PDF &amp; Paper Credentials</div>
         <ul class="he-comp-items">
-          <li><span class="he-comp-ico-bad">✕</span> Verification via registrar — days of waiting</li>
-          <li><span class="he-comp-ico-bad">✕</span> Attached to emails, lost, or unreadable</li>
-          <li><span class="he-comp-ico-bad">✕</span> No engagement data, no sharing insights</li>
-          <li><span class="he-comp-ico-bad">✕</span> Easy to forge or misrepresent</li>
-          <li><span class="he-comp-ico-bad">✕</span> No connection to skills or outcomes</li>
+          <li><span class="he-comp-ico-bad">✕</span> Manual verification — days, not seconds</li>
+          <li><span class="he-comp-ico-bad">✕</span> Easy to forge or screenshot and fake</li>
+          <li><span class="he-comp-ico-bad">✕</span> No sharing, no analytics</li>
+          <li><span class="he-comp-ico-bad">✕</span> Not machine-readable by any system</li>
+          <li><span class="he-comp-ico-bad">✕</span> Disconnected from skills</li>
         </ul>
       </div>
+
+      <div class="he-comp-side partial">
+        <div class="he-comp-label">Insufficient for Universities</div>
+        <div class="he-comp-title">Basic Digital Badge Platforms</div>
+        <ul class="he-comp-items">
+          <li><span class="he-comp-ico-bad">✕</span> Verification depends on the platform staying online</li>
+          <li><span class="he-comp-ico-bad">✕</span> No cryptographic signature — can still be faked</li>
+          <li><span class="he-comp-ico-bad">✕</span> Not independently verifiable without a third-party account</li>
+          <li><span class="he-comp-ico-partial">~</span> Shareable, but no comprehensive learner record</li>
+          <li><span class="he-comp-ico-bad">✕</span> Single credential only — no CLR, no full academic record</li>
+        </ul>
+      </div>
+
       <div class="he-comp-side modern">
-        <div class="he-comp-label">CertifyMe + SkillStory</div>
-        <div class="he-comp-title">Digital Credential Ecosystem</div>
+        <div class="he-comp-label">CertifyMe</div>
+        <div class="he-comp-title">W3C Verifiable Credentials + CLR</div>
         <ul class="he-comp-items">
-          <li><span class="he-comp-ico-good">✓</span> Instant independent verification — no account needed</li>
-          <li><span class="he-comp-ico-good">✓</span> One-click sharing to LinkedIn, email, portfolios</li>
-          <li><span class="he-comp-ico-good">✓</span> Analytics on claims, shares and verifications</li>
-          <li><span class="he-comp-ico-good">✓</span> Tamper-proof digital signatures</li>
-          <li><span class="he-comp-ico-good">✓</span> Connected to skills via SkillStory Skill Passport</li>
+          <li><span class="he-comp-ico-good">✓</span> Cryptographically signed — independent verification, no account needed</li>
+          <li><span class="he-comp-ico-good">✓</span> Tamper-proof — impossible to fake or alter</li>
+          <li><span class="he-comp-ico-good">✓</span> Machine-readable — ATS and employer systems parse automatically</li>
+          <li><span class="he-comp-ico-good">✓</span> CLR bundles degrees, transcripts, badges and co-curricular into one record</li>
+          <li><span class="he-comp-ico-good">✓</span> Open Badges 3.0 certified — 1EdTech independently verified</li>
         </ul>
       </div>
+
     </div>
   </div>
 </section>
@@ -310,6 +345,14 @@ details[open] .he-faq-q::after { content: '−'; }
       <details class="he-faq-item">
         <summary class="he-faq-q">Are credentials Open Badges 3.0 certified?</summary>
         <p class="he-faq-a">Yes. CertifyMe is independently certified by 1EdTech for Open Badges 3.0 — the current global standard. Credentials are recognized by any compatible platform, employer system or institution globally.</p>
+      </details>
+      <details class="he-faq-item">
+        <summary class="he-faq-q">What's the difference between a digital badge and a Verifiable Credential?</summary>
+        <p class="he-faq-a">A basic digital badge is an image file (PNG or SVG) with metadata embedded in it. Verification depends on the badge platform's servers staying online — if the platform shuts down, the badge becomes unverifiable. It cannot be cryptographically checked by an employer without going through the issuing platform's website.<br><br>A W3C Verifiable Credential is cryptographically signed with the institution's private key. It can be independently verified by anyone — offline, without contacting the issuer, without any third-party platform. It's tamper-proof by design, machine-readable by ATS and HR systems, and works whether or not CertifyMe exists in ten years. CertifyMe issues W3C Verifiable Credentials (Open Badges 3.0) — not basic badges.</p>
+      </details>
+      <details class="he-faq-item">
+        <summary class="he-faq-q">What is a CLR (Comprehensive Learner Record) and why does it matter?</summary>
+        <p class="he-faq-a">A CLR is a structured, machine-readable record of everything a student has achieved during their time at your institution — degrees, course credits, digital badges, co-curricular activities, competencies and skills — bundled into one verified document. Unlike a single credential or transcript, the CLR gives employers and graduate schools the full picture of a student's learning journey in a format any compliant system can parse automatically.<br><br>The CLR standard is maintained by 1EdTech (the same body behind Open Badges 3.0). Together, Verifiable Credentials + CLR represent what every university's credential infrastructure should be built on.</p>
       </details>
       <details class="he-faq-item">
         <summary class="he-faq-q">What is SkillStory and how does it relate to CertifyMe?</summary>
