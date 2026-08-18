@@ -188,15 +188,15 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
         <p class="flp2-level-major-body">This is where credentials become trusted evidence.</p>
         <!-- Trust Stack -->
         <div class="flp2-trust-stack" aria-label="Trust stack">
-          <div class="flp2-ts-step"><span class="flp2-ts-icon" aria-hidden="true">🏛</span><span>Institution — the authoritative issuer</span></div>
+          <div class="flp2-ts-step"><span class="flp2-ts-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M3 10h18M12 3 2 10h20L12 3ZM7 21V10M12 21V10M17 21V10"/></svg></span><span>Institution — the authoritative issuer</span></div>
           <div class="flp2-ts-arr" aria-hidden="true">↓</div>
-          <div class="flp2-ts-step"><span class="flp2-ts-icon" aria-hidden="true">🔐</span><span>Cryptographically Signed Credential</span></div>
+          <div class="flp2-ts-step"><span class="flp2-ts-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="11" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1" fill="currentColor" stroke="none"/></svg></span><span>Cryptographically Signed Credential</span></div>
           <div class="flp2-ts-arr" aria-hidden="true">↓</div>
-          <div class="flp2-ts-step"><span class="flp2-ts-icon" aria-hidden="true">📐</span><span>Open Standards (OB3, W3C VC)</span></div>
+          <div class="flp2-ts-step"><span class="flp2-ts-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 10 5.5-10 5.5L2 7.5 12 2ZM2 12l10 5.5L22 12M2 17l10 5.5L22 17"/></svg></span><span>Open Standards (OB3, W3C VC)</span></div>
           <div class="flp2-ts-arr" aria-hidden="true">↓</div>
-          <div class="flp2-ts-step"><span class="flp2-ts-icon" aria-hidden="true">✅</span><span>Independent Verification</span></div>
+          <div class="flp2-ts-step"><span class="flp2-ts-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12.75 11.25 15 15 9.75M21 12a9.003 9.003 0 0 0-9-9 9.003 9.003 0 0 0-9 9 9.003 9.003 0 0 0 9 9 9.003 9.003 0 0 0 9-9Z"/></svg></span><span>Independent Verification</span></div>
           <div class="flp2-ts-arr" aria-hidden="true">↓</div>
-          <div class="flp2-ts-step"><span class="flp2-ts-icon" aria-hidden="true">⚙️</span><span>Machine-Readable Evidence</span></div>
+          <div class="flp2-ts-step"><span class="flp2-ts-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 7H7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Z"/><path d="M15 7V5a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="12.01"/></svg></span><span>Machine-Readable Evidence</span></div>
         </div>
       </div>
       <div class="col-lg-7">
@@ -284,7 +284,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
     <div class="row g-3">
       <div class="col-md-6 col-lg-4">
         <div class="flp2-who-card">
-          <div class="flp2-who-icon">🏢</div>
+          <div class="flp2-who-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="17"/><line x1="9.5" y1="14.5" x2="14.5" y2="14.5"/></svg></div>
           <h3>Enterprise L&amp;D</h3>
           <p>Employee learning, certifications and compliance credentials that need to be verifiable and portable.</p>
           <span class="flp2-who-level">Typical: Level 3</span>
@@ -292,7 +292,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="flp2-who-card">
-          <div class="flp2-who-icon">🏅</div>
+          <div class="flp2-who-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
           <h3>Certification Bodies</h3>
           <p>Professional certifications and credential lifecycle. Credentials must be independently verifiable.</p>
           <span class="flp2-who-level">Typical: Level 3</span>
@@ -300,7 +300,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="flp2-who-card">
-          <div class="flp2-who-icon">💻</div>
+          <div class="flp2-who-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
           <h3>E-learning Providers</h3>
           <p>Course and professional credentials built on open standards for portability beyond the platform.</p>
           <span class="flp2-who-level">Typical: Level 3</span>
@@ -308,7 +308,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="flp2-who-card">
-          <div class="flp2-who-icon">🤝</div>
+          <div class="flp2-who-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 20h5v-1a4 4 0 0 0-5.45-3.72M17 20H7m10 0v-2a5.972 5.972 0 0 0-.29-1.8M7 20H2v-1a4 4 0 0 1 5.45-3.72M7 20v-2c0-.65.12-1.26.34-1.82m0 0A5.99 5.99 0 0 1 12 14a5.99 5.99 0 0 1 4.66 2.18M15 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM7 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/></svg></div>
           <h3>Professional Associations</h3>
           <p>Member certifications and professional achievements that carry weight with employers and regulators.</p>
           <span class="flp2-who-level">Typical: Level 3</span>
@@ -316,7 +316,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="flp2-who-card">
-          <div class="flp2-who-icon">🎓</div>
+          <div class="flp2-who-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.26 10.147a60.436 60.436 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 3.741-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/></svg></div>
           <h3>University Departments</h3>
           <p>Course certifications, micro-credentials and specialized programs that need to be trusted by employers and institutions.</p>
           <span class="flp2-who-level">Typical: Level 3</span>
@@ -324,7 +324,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="flp2-who-card">
-          <div class="flp2-who-icon">📚</div>
+          <div class="flp2-who-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg></div>
           <h3>Training Organizations</h3>
           <p>Professional development and skills recognition credentials portable across CPD portfolios and careers.</p>
           <span class="flp2-who-level">Typical: Level 3</span>
@@ -369,7 +369,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
         <h3 class="flp2-subhead">The Level 4 Capability Stack</h3>
         <div class="flp2-cap-stack">
           <div class="flp2-cap-layer">
-            <span class="flp2-cap-icon" aria-hidden="true">🎖</span>
+            <span class="flp2-cap-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 2v20m0 0h10a2 2 0 0 0 2-2V8m-12 14H5a2 2 0 0 1-2-2V8m0 0h18"/></svg></span>
             <div>
               <strong>Credential Infrastructure</strong>
               <p>Degrees · Certificates · Badges · Certifications</p>
@@ -377,7 +377,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
           </div>
           <div class="flp2-cap-arr" aria-hidden="true">↓</div>
           <div class="flp2-cap-layer">
-            <span class="flp2-cap-icon" aria-hidden="true">📋</span>
+            <span class="flp2-cap-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2Z"/></svg></span>
             <div>
               <strong>Comprehensive Records (CLR)</strong>
               <p>Connected achievements · Structured learner records</p>
@@ -385,7 +385,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
           </div>
           <div class="flp2-cap-arr" aria-hidden="true">↓</div>
           <div class="flp2-cap-layer">
-            <span class="flp2-cap-icon" aria-hidden="true">🧩</span>
+            <span class="flp2-cap-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4m0 0-5.5 6M12 11l5.5 6"/></svg></span>
             <div>
               <strong>Skills Layer</strong>
               <p>Skills taxonomy · Credential-to-skill mapping · Skill relationships</p>
@@ -393,7 +393,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
           </div>
           <div class="flp2-cap-arr" aria-hidden="true">↓</div>
           <div class="flp2-cap-layer">
-            <span class="flp2-cap-icon" aria-hidden="true">🗺</span>
+            <span class="flp2-cap-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></span>
             <div>
               <strong>Learning Pathways</strong>
               <p>Progression · Stackable credentials · Recommended learning</p>
@@ -401,7 +401,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
           </div>
           <div class="flp2-cap-arr" aria-hidden="true">↓</div>
           <div class="flp2-cap-layer">
-            <span class="flp2-cap-icon" aria-hidden="true">📊</span>
+            <span class="flp2-cap-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span>
             <div>
               <strong>Workforce Intelligence</strong>
               <p>Job-skill mapping · Labour-market signals · Workforce demand</p>
@@ -409,7 +409,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
           </div>
           <div class="flp2-cap-arr" aria-hidden="true">↓</div>
           <div class="flp2-cap-layer flp2-cap-layer--ss">
-            <span class="flp2-cap-icon" aria-hidden="true">🪪</span>
+            <span class="flp2-cap-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M16 5V3m-8 2V3M2 10h20M7 14h.01M12 14h.01M17 14h.01"/></svg></span>
             <div>
               <strong>Identity — via SkillStory</strong>
               <p>Skill Passport · Verified CV · Portfolio</p>
@@ -426,8 +426,8 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
   <div class="container">
     <div class="row justify-content-center text-center mb-5">
       <div class="col-lg-7">
-        <h2 class="flp2-section-title flp2-section-title--dark" id="flp2-l4v-h2">The Questions Level 4 Answers</h2>
-        <p class="flp2-section-sub flp2-section-sub--dark">The primary B2B value of Level 4 is organizational intelligence — not just individual credential sharing.</p>
+        <h2 class="flp2-section-title" id="flp2-l4v-h2">The Questions Level 4 Answers</h2>
+        <p class="flp2-section-sub">The primary B2B value of Level 4 is organizational intelligence — not just individual credential sharing.</p>
       </div>
     </div>
     <div class="row g-4">
@@ -570,7 +570,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
     <div class="row align-items-center g-5 justify-content-center">
       <div class="col-lg-5 text-center text-lg-start">
         <span class="flp-eyebrow">LEVEL 4 EXTENSION</span>
-        <h2 class="flp2-section-title flp2-section-title--dark" id="flp2-ss-h2">Extend Credentials Into a Lifelong Skill Identity</h2>
+        <h2 class="flp2-section-title" id="flp2-ss-h2">Extend Credentials Into a Lifelong Skill Identity</h2>
         <div class="flp2-ss-rel">
           <div class="flp2-ss-box flp2-ss-box--cm"><strong>CertifyMe</strong><span>The organization's credential infrastructure</span></div>
           <div class="flp2-ss-arr" aria-hidden="true">↓</div>
