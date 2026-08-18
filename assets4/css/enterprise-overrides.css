@@ -953,6 +953,48 @@ h2.statistic-number {
 }
 .bfi2-link:hover { opacity: 1; text-decoration: none; }
 
+/* ── OPEN STANDARDS TRUST STRIP ─────────────────────── */
+.oss-section {
+  background: linear-gradient(135deg, var(--cm-indigo) 0%, #1e2060 50%, #2d1b69 100%);
+  padding: 44px 0;
+}
+.oss-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.35;
+  margin: 0 0 14px;
+  letter-spacing: -0.3px;
+}
+.oss-title-alt {
+  color: rgba(255,255,255,0.55);
+}
+.oss-body {
+  font-size: 15px;
+  color: rgba(255,255,255,0.5);
+  margin: 0 0 26px;
+  line-height: 1.65;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.oss-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.oss-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 13px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+}
+
 /* ── WHY INSTITUTIONS CHOOSE CERTIFYME — Dark Bento ─── */
 .wic2-section {
   background: linear-gradient(135deg, var(--cm-indigo) 0%, #1e2060 50%, #2d1b69 100%);
