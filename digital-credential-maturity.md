@@ -180,7 +180,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
   <div class="container">
     <div class="row justify-content-center text-center mb-4">
       <div class="col-lg-8">
-        <h2 class="flp2-section-title" id="flp2-uc-h2">Where Do Organisations Typically Start?</h2>
+        <h2 class="flp2-section-title" id="flp2-uc-h2">What Level of Credentialing Does Your Organization Need?</h2>
         <p class="flp2-section-sub">The right level depends on what the credential needs to do — not just what it costs. Here's how common scenarios map.</p>
       </div>
     </div>
