@@ -1,114 +1,56 @@
-<!-- INSTITUTIONAL BENEFITS + USE CASES + CAREER SERVICES + EMPLOYER VALUE -->
+<!-- INSTITUTIONAL BENEFITS + CAREER SERVICES + EMPLOYER VALUE -->
 <style>
 .he-benefits { padding: 60px 0 80px; }
 .he-benefits-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 48px;
+  gap: 18px;
+  margin-top: 44px;
 }
 .he-benefit-card {
   background: rgba(255,255,255,0.8);
   border: 1px solid rgba(40,43,117,.09);
   border-radius: 14px;
-  padding: 26px 22px;
+  padding: 24px 20px;
   transition: box-shadow .2s, transform .2s;
 }
-.he-benefit-card:hover {
-  box-shadow: 0 8px 28px rgba(40,43,117,.12);
-  transform: translateY(-2px);
-}
+.he-benefit-card:hover { box-shadow: 0 8px 28px rgba(40,43,117,.12); transform: translateY(-2px); }
 .he-benefit-ico {
-  width: 48px;
-  height: 48px;
+  width: 44px; height: 44px;
   background: #eef0ff;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 14px;
+  border-radius: 11px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 12px;
 }
-.he-benefit-title {
-  font-family: 'Manrope', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: #20203c;
-  margin-bottom: 8px;
-}
-.he-benefit-body {
-  font-size: 13.5px;
-  color: #5a5a7a;
-  line-height: 1.6;
-  margin: 0;
-}
+.he-benefit-title { font-family: 'Manrope', sans-serif; font-size: 15px; font-weight: 700; color: #20203c; margin-bottom: 6px; }
+.he-benefit-body { font-size: 13px; color: #5a5a7a; line-height: 1.55; margin: 0; }
 
-/* Use Cases */
-.he-usecases { padding: 60px 0 80px; }
-.he-uc-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 48px;
-}
-.he-uc-card {
-  background: rgba(255,255,255,0.8);
-  border: 1.5px solid rgba(40,43,117,.09);
-  border-radius: 14px;
-  padding: 24px 20px;
-  transition: border-color .2s, box-shadow .2s;
-}
-.he-uc-card:hover {
-  border-color: rgba(79,70,229,.25);
-  box-shadow: 0 4px 18px rgba(40,43,117,.09);
-}
-.he-uc-stage {
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: #4f46e5;
-  margin-bottom: 6px;
-}
-.he-uc-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: #20203c;
-  margin-bottom: 8px;
-}
-.he-uc-body {
-  font-size: 13px;
-  color: #5a5a7a;
-  line-height: 1.55;
-  margin: 0;
-}
-
-/* Career Services + Employer rows */
+/* Career + Employer */
 .he-career-employer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  margin-top: 0;
   padding: 0 0 80px;
 }
 .he-career-box, .he-employer-box {
   background: rgba(255,255,255,0.8);
   border: 1px solid rgba(40,43,117,.09);
   border-radius: 16px;
-  padding: 32px 28px;
+  padding: 30px 26px;
 }
 .he-career-box h3, .he-employer-box h3 {
   font-family: 'Manrope', sans-serif;
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #20203c;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   line-height: 1.25;
 }
 .he-career-box p, .he-employer-box p {
   font-size: 14px;
   color: #5a5a7a;
   line-height: 1.6;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 .he-small-list {
   list-style: none;
@@ -116,165 +58,112 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 8px;
 }
 .he-small-list li {
   display: flex;
-  align-items: center;
-  gap: 9px;
+  align-items: flex-start;
+  gap: 8px;
   font-size: 13.5px;
   color: #4a4a6a;
+  line-height: 1.45;
 }
 .he-small-list li::before {
   content: '';
-  width: 7px;
-  height: 7px;
+  width: 7px; height: 7px;
   background: #4f46e5;
   border-radius: 50%;
   flex-shrink: 0;
+  margin-top: 6px;
 }
 
 @media(max-width:991px) {
   .he-benefits-grid { grid-template-columns: repeat(2, 1fr); }
-  .he-uc-grid { grid-template-columns: repeat(2, 1fr); }
   .he-career-employer { grid-template-columns: 1fr; }
 }
 @media(max-width:767px) {
   .he-benefits-grid { grid-template-columns: 1fr; }
-  .he-uc-grid { grid-template-columns: 1fr; }
-  .he-benefits, .he-usecases { padding: 50px 0; }
+  .he-benefits { padding: 50px 0; }
   .he-career-employer { padding-bottom: 50px; }
 }
 </style>
 
-<!-- Institutional Benefits -->
 <section class="he-benefits content-section division">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <div class="section-title mb-20">
-          <h2 class="s-38 w-700">What Universities Gain</h2>
-          <p class="p-xl color--grey mt-20">A complete credential infrastructure that reduces administrative effort, improves student experience and extends the value of every programme you run.</p>
-        </div>
+      <div class="col-lg-7 text-center">
+        <h2 class="s-38 w-700">What universities actually gain</h2>
+        <p class="p-xl color--grey mt-16">Less admin overhead. More student value. Better evidence of programme impact.</p>
       </div>
     </div>
     <div class="he-benefits-grid">
       <div class="he-benefit-card">
         <div class="he-benefit-ico">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
-        <div class="he-benefit-title">Reduce Administrative Work</div>
-        <p class="he-benefit-body">Automate credential issuance and verification workflows. Reduce manual effort and free administrative staff for higher-value work.</p>
+        <div class="he-benefit-title">Less manual work</div>
+        <p class="he-benefit-body">Automate credential issuance and verification — free your staff for higher-value work.</p>
       </div>
       <div class="he-benefit-card">
         <div class="he-benefit-ico">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
         </div>
-        <div class="he-benefit-title">Strengthen Academic Trust</div>
-        <p class="he-benefit-body">Issue secure, tamper-proof credentials built on open standards. Make every qualification independently verifiable in seconds.</p>
+        <div class="he-benefit-title">Credentials employers trust</div>
+        <p class="he-benefit-body">Tamper-proof, open-standards credentials independently verifiable in seconds.</p>
       </div>
       <div class="he-benefit-card">
         <div class="he-benefit-ico">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         </div>
-        <div class="he-benefit-title">Improve Student Experience</div>
-        <p class="he-benefit-body">Give students instant access to their credentials and academic achievements — wherever and whenever they need them.</p>
+        <div class="he-benefit-title">Better student experience</div>
+        <p class="he-benefit-body">Students get instant access to achievements they can share anywhere, anytime.</p>
       </div>
       <div class="he-benefit-card">
         <div class="he-benefit-ico">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
         </div>
-        <div class="he-benefit-title">Increase Credential Engagement</div>
-        <p class="he-benefit-body">Make achievements easier to access, share and verify — driving greater engagement with the credentials your institution issues.</p>
+        <div class="he-benefit-title">Credential engagement data</div>
+        <p class="he-benefit-body">See who claims, shares and verifies — by programme, by cohort, over time.</p>
       </div>
       <div class="he-benefit-card">
         <div class="he-benefit-ico">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
         </div>
-        <div class="he-benefit-title">Demonstrate Programme Value</div>
-        <p class="he-benefit-body">Use analytics to understand credential engagement and programme performance — evidence for accreditation, leadership and strategic planning.</p>
+        <div class="he-benefit-title">Accreditation evidence</div>
+        <p class="he-benefit-body">Export programme performance data for accreditation, funding applications and leadership reporting.</p>
       </div>
       <div class="he-benefit-card">
         <div class="he-benefit-ico">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
         </div>
-        <div class="he-benefit-title">Support Student Employability</div>
-        <p class="he-benefit-body">Extend credentials into verified skills, portfolios and career-ready identities through SkillStory — giving students more from every qualification.</p>
+        <div class="he-benefit-title">Student employability</div>
+        <p class="he-benefit-body">SkillStory turns every credential into a verified portfolio and career-ready profile.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Use Cases -->
-<section class="he-usecases content-section division">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <div class="section-title mb-20">
-          <h2 class="s-38 w-700">One Platform Across the Student Lifecycle</h2>
-          <p class="p-xl color--grey mt-20">From first enrolment to alumni status — CertifyMe and SkillStory support every stage of the student journey.</p>
-        </div>
-      </div>
-    </div>
-    <div class="he-uc-grid">
-      <div class="he-uc-card">
-        <div class="he-uc-stage">Admissions</div>
-        <div class="he-uc-title">Prior Credential Verification</div>
-        <p class="he-uc-body">Verify prior credentials and academic records from other institutions quickly and securely — before a student enrols.</p>
-      </div>
-      <div class="he-uc-card">
-        <div class="he-uc-stage">During Study</div>
-        <div class="he-uc-title">Course Badges &amp; Achievement Records</div>
-        <p class="he-uc-body">Issue digital badges for courses, projects, co-curricular activities and achievements as students progress through their programme.</p>
-      </div>
-      <div class="he-uc-card">
-        <div class="he-uc-stage">Graduation</div>
-        <div class="he-uc-title">Degrees, Diplomas &amp; Transcripts</div>
-        <p class="he-uc-body">Issue and deliver degrees, diplomas and digital transcripts at graduation scale — instantly verifiable and branded to your institution.</p>
-      </div>
-      <div class="he-uc-card">
-        <div class="he-uc-stage">Continuing Education</div>
-        <div class="he-uc-title">Micro-Credentials &amp; CPD</div>
-        <p class="he-uc-body">Extend credentialing into professional development, micro-credentials and continuing education programmes beyond the traditional degree.</p>
-      </div>
-      <div class="he-uc-card">
-        <div class="he-uc-stage">Career Services</div>
-        <div class="he-uc-title">Verified Skills &amp; Portfolios</div>
-        <p class="he-uc-body">Help career teams support students with verified skill profiles, portfolios and credentials that evidence what they have learned and achieved.</p>
-      </div>
-      <div class="he-uc-card">
-        <div class="he-uc-stage">Alumni</div>
-        <div class="he-uc-title">Lifelong Access to Achievements</div>
-        <p class="he-uc-body">Alumni retain access to their verified credentials and Skill Passport permanently — the university remains their trusted issuer for life.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Career Services + Employer Value -->
 <section class="content-section division">
   <div class="container">
     <div class="he-career-employer">
-      <div class="he-career-box">
-        <h3>Give Career Services Better Evidence of Student Skills</h3>
-        <p>Verified credentials and SkillStory profiles give career teams the tools to help students build credible, evidence-based applications.</p>
+      <div class="he-career-box wow fadeInLeft">
+        <h3>For Career Services</h3>
+        <p>Give your career team verified evidence of what students actually know and have achieved.</p>
         <ul class="he-small-list">
-          <li>Help students build verified, credible profiles</li>
-          <li>Connect academic achievements to real-world skills</li>
-          <li>Encourage portfolio development with verified evidence</li>
-          <li>Support employability initiatives with institutional data</li>
-          <li>Give students a verified way to present achievements to employers</li>
+          <li>Verified credential profiles students can share in applications</li>
+          <li>Academic achievements linked to real-world skills via SkillStory</li>
+          <li>Portfolio and verified CV tools built on institutional records</li>
+          <li>Employment outcome data tied back to programmes</li>
         </ul>
       </div>
-      <div class="he-employer-box">
-        <h3>Make Student Achievements Easier to Trust</h3>
-        <p>Employers can verify credentials, review evidence and understand the skills represented by academic achievements — without contacting your registrar.</p>
+      <div class="he-employer-box wow fadeInRight">
+        <h3>For Employers Hiring Your Graduates</h3>
+        <p>No phone calls to the registrar. No waiting. Credentials are verified the moment they're shared.</p>
         <ul class="he-small-list">
-          <li>Instant independent credential verification — no account required</li>
-          <li>Access to verified learner profiles where students choose to share</li>
-          <li>Understanding of the skills behind academic qualifications</li>
-          <li>Confidence in the authenticity of every credential presented</li>
-          <li>The university remains the trusted issuer throughout</li>
+          <li>Instant verification — no account or login required</li>
+          <li>Tamper-proof digital signature on every credential</li>
+          <li>Skills mapped to academic achievements via SkillStory profiles</li>
+          <li>Your institution's authority on every verification page</li>
         </ul>
       </div>
     </div>

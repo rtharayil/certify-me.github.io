@@ -4,88 +4,58 @@
 .he-analytics-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  gap: 60px;
   align-items: center;
   margin-top: 48px;
 }
-.he-analytics-metrics {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
+.he-analytics-img {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(40,43,117,.13);
 }
-.he-metric-card {
-  background: rgba(255,255,255,0.85);
-  border: 1px solid rgba(40,43,117,.1);
-  border-radius: 14px;
-  padding: 20px 18px;
-  text-align: center;
-}
-.he-metric-val {
+.he-analytics-img img { width: 100%; display: block; }
+.he-analytics-copy h3 {
   font-family: 'Manrope', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #20203c;
+  margin-bottom: 14px;
+  line-height: 1.22;
+}
+.he-analytics-items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.he-analytics-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.he-analytics-item svg { flex-shrink: 0; margin-top: 3px; }
+.he-analytics-item-title { font-size: 14.5px; font-weight: 700; color: #20203c; margin-bottom: 2px; }
+.he-analytics-item-body { font-size: 13px; color: #5a5a7a; margin: 0; }
+.he-analytics-stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(40,43,117,.09);
+}
+.he-analytics-stat-val {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5rem;
   font-weight: 800;
   color: #282B75;
   line-height: 1;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
-.he-metric-lbl {
-  font-size: 12.5px;
-  color: #5a5a7a;
-  font-weight: 500;
-}
-.he-metric-delta {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 700;
-  color: #059669;
-  background: rgba(5,150,105,.08);
-  border-radius: 6px;
-  padding: 2px 7px;
-  margin-top: 5px;
-}
-.he-analytics-copy h3 {
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #20203c;
-  margin-bottom: 16px;
-  line-height: 1.25;
-}
-.he-analytics-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.he-analytics-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 14.5px;
-  color: #4a4a6a;
-  line-height: 1.5;
-}
-.he-analytics-list li svg { flex-shrink: 0; margin-top: 3px; }
-.he-analytics-quote {
-  background: linear-gradient(135deg, #eef0ff, #f4f3ff);
-  border-left: 3px solid #4f46e5;
-  border-radius: 0 10px 10px 0;
-  padding: 14px 18px;
-  font-size: 14px;
-  font-style: italic;
-  color: #282B75;
-  line-height: 1.6;
-}
+.he-analytics-stat-lbl { font-size: 12px; color: #5a5a7a; }
 
 @media(max-width:991px) {
   .he-analytics-inner { grid-template-columns: 1fr; }
-  .he-analytics-metrics { order: 2; }
-  .he-analytics-copy { order: 1; }
-}
-@media(max-width:480px) {
-  .he-analytics-metrics { grid-template-columns: 1fr; }
   .he-analytics { padding: 50px 0; }
 }
 </style>
@@ -94,61 +64,52 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <div class="section-title mb-10">
-          <h2 class="s-38 w-700">Understand How Students Engage With Your Credentials</h2>
-          <p class="p-xl color--grey mt-20">Move beyond knowing how many credentials you issued. Understand how those credentials are being used — and what that means for your programmes.</p>
-        </div>
+        <h2 class="s-38 w-700">Stop counting certificates. Start understanding them.</h2>
+        <p class="p-xl color--grey mt-16">See which programmes students actually engage with, which credentials get shared to LinkedIn, and where verifications are happening — in one dashboard.</p>
       </div>
     </div>
     <div class="he-analytics-inner">
-      <div class="he-analytics-metrics">
-        <div class="he-metric-card">
-          <div class="he-metric-val">12.4K</div>
-          <div class="he-metric-lbl">Credentials Issued</div>
-          <div class="he-metric-delta">↑ 18%</div>
-        </div>
-        <div class="he-metric-card">
-          <div class="he-metric-val">89%</div>
-          <div class="he-metric-lbl">Claim Rate</div>
-          <div class="he-metric-delta">↑ 6%</div>
-        </div>
-        <div class="he-metric-card">
-          <div class="he-metric-val">34K</div>
-          <div class="he-metric-lbl">Total Views</div>
-          <div class="he-metric-delta">↑ 23%</div>
-        </div>
-        <div class="he-metric-card">
-          <div class="he-metric-val">7.2K</div>
-          <div class="he-metric-lbl">Shares &amp; Verifications</div>
-          <div class="he-metric-delta">↑ 31%</div>
-        </div>
+      <div class="he-analytics-img wow fadeInLeft">
+        <img src="/assets4/images/product-features/product-feature-1-analytics1.svg" alt="CertifyMe credential analytics dashboard" loading="lazy">
       </div>
-      <div class="he-analytics-copy">
-        <h3>Institutional Intelligence, Not Just Issuance Numbers</h3>
-        <ul class="he-analytics-list">
-          <li>
+      <div class="he-analytics-copy wow fadeInRight">
+        <h3>Data that helps you run better programmes</h3>
+        <div class="he-analytics-items">
+          <div class="he-analytics-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Track credential issuance, claim rates and recipient engagement by programme
-          </li>
-          <li>
+            <div>
+              <div class="he-analytics-item-title">Claim &amp; engagement rates by programme</div>
+              <p class="he-analytics-item-body">Know which credentials students actually use</p>
+            </div>
+          </div>
+          <div class="he-analytics-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Monitor social shares, LinkedIn posts and verification activity
-          </li>
-          <li>
+            <div>
+              <div class="he-analytics-item-title">LinkedIn shares &amp; verification activity</div>
+              <p class="he-analytics-item-body">See how your institution is represented in the market</p>
+            </div>
+          </div>
+          <div class="he-analytics-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Identify which programmes generate the most credential engagement
-          </li>
-          <li>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Use data to demonstrate the value of credential programmes to leadership
-          </li>
-          <li>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Export reports for accreditation, funding and strategic planning
-          </li>
-        </ul>
-        <div class="he-analytics-quote">
-          "Move from simply knowing how many credentials you issued to understanding how those credentials are being used — and what they mean for your institution's reputation."
+            <div>
+              <div class="he-analytics-item-title">Exportable reports for accreditation</div>
+              <p class="he-analytics-item-body">Evidence for leadership, funding and strategic planning</p>
+            </div>
+          </div>
+        </div>
+        <div class="he-analytics-stat-row">
+          <div>
+            <div class="he-analytics-stat-val">89%</div>
+            <div class="he-analytics-stat-lbl">avg. claim rate</div>
+          </div>
+          <div>
+            <div class="he-analytics-stat-val">3.2×</div>
+            <div class="he-analytics-stat-lbl">more shares vs. PDF</div>
+          </div>
+          <div>
+            <div class="he-analytics-stat-val">144</div>
+            <div class="he-analytics-stat-lbl">countries covered</div>
+          </div>
         </div>
       </div>
     </div>

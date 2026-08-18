@@ -1,59 +1,45 @@
 <!-- SECURITY + STANDARDS + CUSTOMER PROOF + COMPARISON + FAQS -->
 <style>
-/* Security */
 .he-security { padding: 60px 0 80px; }
 .he-security-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-top: 48px;
+  gap: 14px;
+  margin-top: 44px;
 }
 .he-security-card {
   background: rgba(255,255,255,0.8);
   border: 1px solid rgba(40,43,117,.09);
   border-radius: 14px;
-  padding: 24px 18px;
+  padding: 22px 16px;
   text-align: center;
   transition: box-shadow .2s;
 }
 .he-security-card:hover { box-shadow: 0 4px 18px rgba(40,43,117,.1); }
 .he-sec-ico {
-  width: 48px;
-  height: 48px;
+  width: 44px; height: 44px;
   background: #eef0ff;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 12px;
+  border-radius: 11px;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 10px;
 }
-.he-sec-title {
-  font-size: 14.5px;
-  font-weight: 700;
-  color: #20203c;
-  margin-bottom: 6px;
-}
-.he-sec-body {
-  font-size: 12.5px;
-  color: #5a5a7a;
-  line-height: 1.5;
-  margin: 0;
-}
+.he-sec-title { font-size: 14px; font-weight: 700; color: #20203c; margin-bottom: 5px; }
+.he-sec-body { font-size: 12.5px; color: #5a5a7a; line-height: 1.5; margin: 0; }
 .he-sec-badges {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-  margin-top: 36px;
+  margin-top: 32px;
 }
 .he-sec-badge {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 6px;
   background: rgba(255,255,255,0.85);
   border: 1.5px solid rgba(40,43,117,.12);
   border-radius: 10px;
-  padding: 8px 16px;
+  padding: 7px 14px;
   font-size: 13px;
   font-weight: 700;
   color: #282B75;
@@ -61,115 +47,62 @@
 
 /* Customer Proof */
 .he-proof { padding: 60px 0 80px; }
-.he-testimonials {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 48px;
-}
-.he-testimonial {
-  background: rgba(255,255,255,0.85);
-  border: 1px solid rgba(40,43,117,.09);
-  border-radius: 14px;
-  padding: 26px 22px;
-}
-.he-test-quote {
-  font-size: 14px;
-  color: #4a4a6a;
-  line-height: 1.7;
-  margin-bottom: 20px;
-  font-style: italic;
-}
-.he-test-author {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.he-test-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.he-test-name {
-  font-size: 14px;
-  font-weight: 700;
-  color: #20203c;
-}
-.he-test-role {
-  font-size: 12px;
-  color: #5a5a7a;
-}
 .he-logos {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   align-items: center;
   justify-content: center;
-  margin-top: 48px;
-  padding: 28px 0;
+  margin-top: 40px;
+  padding: 24px 0;
   border-top: 1px solid rgba(40,43,117,.08);
   border-bottom: 1px solid rgba(40,43,117,.08);
 }
 .he-logos img {
-  height: 36px;
-  opacity: 0.65;
+  height: 34px;
+  opacity: 0.6;
   filter: grayscale(1);
   transition: opacity .2s, filter .2s;
 }
 .he-logos img:hover { opacity: 1; filter: grayscale(0); }
+.he-testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 36px;
+}
+.he-testimonial {
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(40,43,117,.09);
+  border-radius: 14px;
+  padding: 24px 20px;
+}
+.he-test-quote {
+  font-size: 14px;
+  color: #4a4a6a;
+  line-height: 1.65;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+.he-test-author { display: flex; align-items: center; gap: 10px; }
+.he-test-avatar { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; }
+.he-test-name { font-size: 13.5px; font-weight: 700; color: #20203c; }
+.he-test-role { font-size: 12px; color: #5a5a7a; }
 
 /* Comparison */
 .he-comparison { padding: 60px 0 80px; }
-.he-comp-table {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin-top: 48px;
-}
-.he-comp-side {
-  border-radius: 14px;
-  padding: 28px 24px;
-}
-.he-comp-side.traditional {
-  background: rgba(239,68,68,.04);
-  border: 1.5px solid rgba(239,68,68,.14);
-}
-.he-comp-side.modern {
-  background: linear-gradient(135deg, #eef0ff, #f4f3ff);
-  border: 1.5px solid rgba(79,70,229,.2);
-}
-.he-comp-label {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
+.he-comp-table { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 44px; }
+.he-comp-side { border-radius: 14px; padding: 26px 22px; }
+.he-comp-side.traditional { background: rgba(239,68,68,.04); border: 1.5px solid rgba(239,68,68,.14); }
+.he-comp-side.modern { background: linear-gradient(135deg, #eef0ff, #f4f3ff); border: 1.5px solid rgba(79,70,229,.2); }
+.he-comp-label { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 6px; }
 .he-comp-side.traditional .he-comp-label { color: #dc2626; }
 .he-comp-side.modern .he-comp-label { color: #4f46e5; }
-.he-comp-title {
-  font-family: 'Manrope', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 16px;
-}
+.he-comp-title { font-family: 'Manrope', sans-serif; font-size: 17px; font-weight: 700; margin-bottom: 14px; }
 .he-comp-side.traditional .he-comp-title { color: #7f1d1d; }
 .he-comp-side.modern .he-comp-title { color: #20203c; }
-.he-comp-items {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-}
-.he-comp-items li {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  font-size: 14px;
-}
+.he-comp-items { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.he-comp-items li { display: flex; align-items: center; gap: 8px; font-size: 13.5px; }
 .he-comp-side.traditional .he-comp-items li { color: #991b1b; }
 .he-comp-side.modern .he-comp-items li { color: #1e3a5f; }
 .he-comp-ico-bad { color: #ef4444; }
@@ -180,8 +113,8 @@
 .he-faq-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-top: 48px;
+  gap: 10px;
+  margin-top: 44px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -193,7 +126,7 @@
   overflow: hidden;
 }
 .he-faq-q {
-  padding: 18px 22px;
+  padding: 17px 20px;
   font-size: 15px;
   font-weight: 700;
   color: #20203c;
@@ -205,19 +138,9 @@
   list-style: none;
 }
 .he-faq-q::-webkit-details-marker { display: none; }
-.he-faq-q::after {
-  content: '+';
-  font-size: 20px;
-  color: #4f46e5;
-  flex-shrink: 0;
-}
+.he-faq-q::after { content: '+'; font-size: 20px; color: #4f46e5; flex-shrink: 0; }
 details[open] .he-faq-q::after { content: '−'; }
-.he-faq-a {
-  padding: 0 22px 18px;
-  font-size: 14px;
-  color: #5a5a7a;
-  line-height: 1.7;
-}
+.he-faq-a { padding: 0 20px 16px; font-size: 14px; color: #5a5a7a; line-height: 1.65; }
 
 @media(max-width:991px) {
   .he-security-grid { grid-template-columns: repeat(2, 1fr); }
@@ -230,66 +153,60 @@ details[open] .he-faq-q::after { content: '−'; }
 }
 </style>
 
-<!-- Security + Standards -->
 <section class="he-security content-section division" id="he-security">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <div class="section-title mb-20">
-          <h2 class="s-38 w-700">Built for the Standards Universities Depend On</h2>
-          <p class="p-xl color--grey mt-20">Every CertifyMe credential satisfies your institution's legal, data privacy and interoperability requirements — out of the box.</p>
-        </div>
+        <h2 class="s-38 w-700">Built for the standards universities depend on</h2>
+        <p class="p-xl color--grey mt-16">Legal, privacy and interoperability requirements — covered out of the box.</p>
       </div>
     </div>
     <div class="he-security-grid">
       <div class="he-security-card">
         <div class="he-sec-ico">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
         </div>
         <div class="he-sec-title">Interoperable</div>
-        <p class="he-sec-body">Open Badges 3.0 and W3C Verifiable Credentials — designed to work across modern credential ecosystems globally.</p>
+        <p class="he-sec-body">Open Badges 3.0 + W3C Verifiable Credentials — works across any modern credential ecosystem</p>
       </div>
       <div class="he-security-card">
         <div class="he-sec-ico">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         </div>
         <div class="he-sec-title">Secure</div>
-        <p class="he-sec-body">RSA &amp; Ed25519 digital signatures, 256-bit AES encryption at rest, SOC 2 Type II audited, and 99.9% enterprise uptime SLA.</p>
+        <p class="he-sec-body">RSA &amp; Ed25519 signatures, AES-256 encryption, SOC 2 Type II audited, 99.9% uptime SLA</p>
       </div>
       <div class="he-security-card">
         <div class="he-sec-ico">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
         </div>
-        <div class="he-sec-title">Trustworthy</div>
-        <p class="he-sec-body">GDPR, FERPA and ISO 27001 aligned. Credentials are independently verifiable — no account required from the verifier.</p>
+        <div class="he-sec-title">Compliant</div>
+        <p class="he-sec-body">GDPR, FERPA and ISO 27001 aligned — independent verification requires no verifier account</p>
       </div>
       <div class="he-security-card">
         <div class="he-sec-ico">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <div class="he-sec-title">Institution-Controlled</div>
-        <p class="he-sec-body">The university retains full control over credential issuance, revocation and the institutional identity at the centre of every credential.</p>
+        <p class="he-sec-body">Full control over issuance, revocation and your institutional identity — always</p>
       </div>
     </div>
     <div class="he-sec-badges">
-      <span class="he-sec-badge">✓ Open Badges 3.0 (1EdTech Certified)</span>
+      <span class="he-sec-badge">✓ Open Badges 3.0 (1EdTech)</span>
       <span class="he-sec-badge">✓ W3C Verifiable Credentials</span>
       <span class="he-sec-badge">✓ SOC 2 Type II</span>
-      <span class="he-sec-badge">✓ ISO 27001 Aligned</span>
+      <span class="he-sec-badge">✓ ISO 27001</span>
       <span class="he-sec-badge">✓ GDPR</span>
       <span class="he-sec-badge">✓ FERPA</span>
     </div>
   </div>
 </section>
 
-<!-- Customer Proof -->
 <section class="he-proof content-section division">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <div class="section-title mb-30">
-          <h2 class="s-38 w-700">Trusted by Education and Workforce Organizations</h2>
-        </div>
+        <h2 class="s-38 w-700">Trusted by universities and education organizations worldwide</h2>
       </div>
     </div>
     <div class="he-logos">
@@ -300,9 +217,9 @@ details[open] .he-faq-q::after { content: '−'; }
       <img src="/assets4/images/Images Webp/DCU.webp" alt="Dublin City University" loading="lazy">
       <img src="/assets4/images/Images Webp/LEB.webp" alt="LEB" loading="lazy">
     </div>
-    <div class="he-testimonials" style="margin-top:40px;">
+    <div class="he-testimonials" style="margin-top:36px;">
       <div class="he-testimonial">
-        <div class="he-test-quote">"The platform is user-friendly and does not need technical knowledge to issue digital credentials. On top of that, I commend their staff, who constantly check on us occasionally, as well as respond to our suggestions and comments."</div>
+        <div class="he-test-quote">"User-friendly and no technical knowledge needed to issue credentials. Their team constantly checks in and responds to our feedback."</div>
         <div class="he-test-author">
           <img src="/assets4/images/Chresente Image - Review.jpg" alt="Chresente Gong" class="he-test-avatar" loading="lazy">
           <div>
@@ -312,7 +229,7 @@ details[open] .he-faq-q::after { content: '−'; }
         </div>
       </div>
       <div class="he-testimonial">
-        <div class="he-test-quote">"The user interface of the platform is remarkably intuitive and makes it easier to use. I really want to acknowledge the exceptional support that CertifyMe has been providing, which counts a lot towards our satisfaction in using the tool."</div>
+        <div class="he-test-quote">"The platform is remarkably intuitive. Exceptional support that counts a lot toward our satisfaction in using the tool."</div>
         <div class="he-test-author">
           <img src="/assets4/images/Anson Antony Image - Review.jpg" alt="Anson Antony" class="he-test-avatar" loading="lazy">
           <div>
@@ -322,7 +239,7 @@ details[open] .he-faq-q::after { content: '−'; }
         </div>
       </div>
       <div class="he-testimonial">
-        <div class="he-test-quote">"CertifyMe has been very easy to implement and use. Our organization used CertifyMe to create over 7000 certificates this past year. We were able to integrate CertifyMe with our CRM, requiring minimal time in labor."</div>
+        <div class="he-test-quote">"We issued over 7,000 certificates last year and integrated CertifyMe with our CRM in minimal time. It just works."</div>
         <div class="he-test-author">
           <img src="/assets4/images/Erika Image - Review.jpg" alt="Erika Barney" class="he-test-avatar" loading="lazy">
           <div>
@@ -335,80 +252,72 @@ details[open] .he-faq-q::after { content: '−'; }
   </div>
 </section>
 
-<!-- Competitive Comparison -->
 <section class="he-comparison content-section division">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <div class="section-title mb-20">
-          <h2 class="s-38 w-700">More Than a Digital Certificate</h2>
-          <p class="p-xl color--grey mt-20">The credential category has evolved. The question is no longer whether to go digital — it's how much value you can create from every credential you issue.</p>
-        </div>
+        <h2 class="s-38 w-700">PDF vs. digital credential</h2>
+        <p class="p-xl color--grey mt-16">The question isn't whether to go digital. It's how much value you're leaving behind by not doing it yet.</p>
       </div>
     </div>
     <div class="he-comp-table">
       <div class="he-comp-side traditional">
-        <div class="he-comp-label">Traditional Approach</div>
-        <div class="he-comp-title">PDF &amp; Paper Credentials</div>
+        <div class="he-comp-label">Traditional</div>
+        <div class="he-comp-title">PDF &amp; Paper</div>
         <ul class="he-comp-items">
-          <li><span class="he-comp-ico-bad">✕</span> Manual verification via registrar</li>
-          <li><span class="he-comp-ico-bad">✕</span> Difficult to share with employers</li>
-          <li><span class="he-comp-ico-bad">✕</span> Static record — no engagement data</li>
+          <li><span class="he-comp-ico-bad">✕</span> Verification via registrar — days of waiting</li>
+          <li><span class="he-comp-ico-bad">✕</span> Attached to emails, lost, or unreadable</li>
+          <li><span class="he-comp-ico-bad">✕</span> No engagement data, no sharing insights</li>
           <li><span class="he-comp-ico-bad">✕</span> Easy to forge or misrepresent</li>
-          <li><span class="he-comp-ico-bad">✕</span> Disconnected from skills</li>
-          <li><span class="he-comp-ico-bad">✕</span> No value beyond issuance</li>
+          <li><span class="he-comp-ico-bad">✕</span> No connection to skills or outcomes</li>
         </ul>
       </div>
       <div class="he-comp-side modern">
         <div class="he-comp-label">CertifyMe + SkillStory</div>
         <div class="he-comp-title">Digital Credential Ecosystem</div>
         <ul class="he-comp-items">
-          <li><span class="he-comp-ico-good">✓</span> Instant independent verification</li>
-          <li><span class="he-comp-ico-good">✓</span> One-click sharing to LinkedIn &amp; beyond</li>
-          <li><span class="he-comp-ico-good">✓</span> Analytics on engagement and programme performance</li>
+          <li><span class="he-comp-ico-good">✓</span> Instant independent verification — no account needed</li>
+          <li><span class="he-comp-ico-good">✓</span> One-click sharing to LinkedIn, email, portfolios</li>
+          <li><span class="he-comp-ico-good">✓</span> Analytics on claims, shares and verifications</li>
           <li><span class="he-comp-ico-good">✓</span> Tamper-proof digital signatures</li>
-          <li><span class="he-comp-ico-good">✓</span> Connected to skills via SkillStory</li>
-          <li><span class="he-comp-ico-good">✓</span> Lifelong Skill Passport and Verified CV</li>
+          <li><span class="he-comp-ico-good">✓</span> Connected to skills via SkillStory Skill Passport</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FAQs -->
 <section class="he-faq content-section division">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <div class="section-title mb-20">
-          <h2 class="s-38 w-700">Frequently Asked Questions</h2>
-        </div>
+        <h2 class="s-38 w-700">Common questions</h2>
       </div>
     </div>
     <div class="he-faq-list">
       <details class="he-faq-item">
         <summary class="he-faq-q">How do universities use digital credentials?</summary>
-        <p class="he-faq-a">Universities use digital credentials to issue tamper-proof certificates, diplomas, badges and transcripts. Digital credentials are faster to issue than printed documents, permanently verifiable, and shareable by recipients on LinkedIn and job portals — increasing institutional visibility and learner outcomes.</p>
+        <p class="he-faq-a">To issue tamper-proof degrees, certificates, badges and transcripts — faster than print, permanently verifiable, and shareable to LinkedIn and job portals. Students get more from every credential they earn, and institutions get visibility into how those credentials are being used.</p>
       </details>
       <details class="he-faq-item">
-        <summary class="he-faq-q">Are CertifyMe credentials compliant with FERPA?</summary>
-        <p class="he-faq-a">Yes. CertifyMe is FERPA compliant for US educational record requirements. The platform processes only the minimum data needed for credential issuance and gives institutions full control over student records, consistent with FERPA's requirements.</p>
+        <summary class="he-faq-q">Is CertifyMe FERPA compliant?</summary>
+        <p class="he-faq-a">Yes. CertifyMe processes only the minimum data needed for credential issuance and gives institutions full control over student records — consistent with FERPA requirements for US educational institutions.</p>
       </details>
       <details class="he-faq-item">
-        <summary class="he-faq-q">Can CertifyMe integrate with university LMS platforms?</summary>
-        <p class="he-faq-a">Yes. CertifyMe integrates with Canvas, Moodle, Blackboard and other major LMS platforms. When a student completes a course or programme, the credential can be issued automatically — no manual work required from faculty or administrators.</p>
+        <summary class="he-faq-q">Does it integrate with Canvas, Moodle or our SIS?</summary>
+        <p class="he-faq-a">Yes. CertifyMe integrates with Canvas, Moodle, Blackboard and other major LMS platforms via REST API, webhooks and native integrations. When a student completes a course, the credential is issued automatically — no manual work from faculty or admin.</p>
       </details>
       <details class="he-faq-item">
-        <summary class="he-faq-q">Can a university issue Open Badges 3.0 credentials?</summary>
-        <p class="he-faq-a">Yes. CertifyMe is 1EdTech independently certified for Open Badges 3.0 — the current global standard for interoperable academic credentials. Institutions issuing credentials through CertifyMe can issue OB3-compliant badges and certificates recognised by any compatible platform or employer system.</p>
+        <summary class="he-faq-q">Are credentials Open Badges 3.0 certified?</summary>
+        <p class="he-faq-a">Yes. CertifyMe is independently certified by 1EdTech for Open Badges 3.0 — the current global standard. Credentials are recognized by any compatible platform, employer system or institution globally.</p>
       </details>
       <details class="he-faq-item">
         <summary class="he-faq-q">What is SkillStory and how does it relate to CertifyMe?</summary>
-        <p class="he-faq-a">SkillStory is the learner-facing layer of the credential ecosystem. CertifyMe issues and manages institutional credentials. SkillStory helps students bring those credentials together with skills, projects, internships and work experience into a lifelong Skill Passport, Verified CV and professional portfolio. The two products work together — CertifyMe powers the institutional credential record; SkillStory extends its value to the learner.</p>
+        <p class="he-faq-a">CertifyMe manages the institution's credential record. SkillStory is the learner-facing layer — it brings together verified credentials with skills, projects and work experience into a portable Skill Passport and Verified CV students carry after graduation. The two work together as one ecosystem.</p>
       </details>
       <details class="he-faq-item">
         <summary class="he-faq-q">How long does it take to get started?</summary>
-        <p class="he-faq-a">Most institutions are issuing their first credentials within a few days of setup. Implementation timelines depend on integration complexity — simple API connections to an existing LMS typically take days, while full institutional deployments with custom branding and SSO may take a few weeks.</p>
+        <p class="he-faq-a">Most institutions issue their first credentials within a few days. Simple API connections typically take days; full deployments with custom branding and SSO take a few weeks.</p>
       </details>
     </div>
   </div>

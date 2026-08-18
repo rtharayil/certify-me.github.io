@@ -1,11 +1,37 @@
-<!-- INTEGRATIONS + AUTOMATION + BRANDING -->
+<!-- INTEGRATIONS + BRANDING -->
 <style>
 .he-integrations { padding: 60px 0 80px; }
+.he-int-img {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(40,43,117,.13);
+  margin-top: 44px;
+}
+.he-int-img img { width: 100%; display: block; }
+.he-int-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 32px;
+  justify-content: center;
+}
+.he-int-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.8);
+  border: 1px solid rgba(40,43,117,.1);
+  border-radius: 10px;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #282B75;
+}
 .he-int-flow {
   display: flex;
   align-items: stretch;
   gap: 0;
-  margin-top: 48px;
+  margin-top: 44px;
   background: rgba(255,255,255,0.8);
   border: 1px solid rgba(40,43,117,.1);
   border-radius: 16px;
@@ -13,24 +39,19 @@
 }
 .he-int-step {
   flex: 1;
-  padding: 28px 20px;
+  padding: 26px 18px;
   text-align: center;
   border-right: 1px solid rgba(40,43,117,.08);
   position: relative;
 }
 .he-int-step:last-child { border-right: none; }
-.he-int-step.highlight {
-  background: linear-gradient(160deg, #eef0ff, #f4f3ff);
-}
+.he-int-step.highlight { background: linear-gradient(160deg, #eef0ff, #f4f3ff); }
 .he-int-step-ico {
-  width: 44px;
-  height: 44px;
+  width: 42px; height: 42px;
   background: #eef0ff;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 12px;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 10px;
 }
 .he-int-step.highlight .he-int-step-ico {
   background: linear-gradient(135deg, #282B75, #4f46e5);
@@ -38,342 +59,169 @@
 .he-int-step.highlight .he-int-step-ico svg { stroke: #fff; }
 .he-int-step-arrow {
   position: absolute;
-  right: -14px;
-  top: 50%;
+  right: -13px; top: 50%;
   transform: translateY(-50%);
   z-index: 2;
   background: #fff;
   border: 1px solid rgba(40,43,117,.12);
   border-radius: 50%;
-  width: 26px;
-  height: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 24px; height: 24px;
+  display: flex; align-items: center; justify-content: center;
 }
-.he-int-step-title {
-  font-size: 14px;
-  font-weight: 700;
-  color: #20203c;
-  margin-bottom: 6px;
-}
-.he-int-step-body {
-  font-size: 12.5px;
-  color: #5a5a7a;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.he-int-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 36px;
-  justify-content: center;
-}
-.he-int-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  background: rgba(255,255,255,0.8);
-  border: 1px solid rgba(40,43,117,.1);
-  border-radius: 10px;
-  padding: 8px 16px;
-  font-size: 13.5px;
-  font-weight: 600;
-  color: #282B75;
-}
-
-/* Automation */
-.he-automation { padding: 60px 0 80px; }
-.he-auto-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  max-width: 580px;
-  margin: 48px auto 0;
-}
-.he-auto-step {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  padding-bottom: 32px;
-  position: relative;
-}
-.he-auto-step::before {
-  content: '';
-  position: absolute;
-  left: 18px;
-  top: 40px;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(to bottom, rgba(79,70,229,.3), rgba(79,70,229,.05));
-}
-.he-auto-step:last-child::before { display: none; }
-.he-auto-dot {
-  width: 36px;
-  height: 36px;
-  background: linear-gradient(135deg, #282B75, #4f46e5);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 700;
-}
-.he-auto-content { flex: 1; padding-top: 4px; }
-.he-auto-title {
-  font-size: 15px;
-  font-weight: 700;
-  color: #20203c;
-  margin-bottom: 4px;
-}
-.he-auto-body {
-  font-size: 13.5px;
-  color: #5a5a7a;
-  margin: 0;
-  line-height: 1.55;
-}
+.he-int-step-title { font-size: 13.5px; font-weight: 700; color: #20203c; margin-bottom: 5px; }
+.he-int-step-body { font-size: 12px; color: #5a5a7a; line-height: 1.45; margin: 0; }
 
 /* Branding */
 .he-branding { padding: 60px 0 80px; }
-.he-brand-features {
+.he-branding-inner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 48px;
-}
-.he-brand-feat {
-  background: rgba(255,255,255,0.75);
-  border: 1px solid rgba(40,43,117,.09);
-  border-radius: 14px;
-  padding: 24px 20px;
-}
-.he-brand-ico {
-  width: 44px;
-  height: 44px;
-  background: #eef0ff;
-  border-radius: 10px;
-  display: flex;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 14px;
+  margin-top: 44px;
 }
-.he-brand-title {
-  font-size: 15px;
-  font-weight: 700;
-  color: #20203c;
-  margin-bottom: 6px;
+.he-brand-img {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 36px rgba(40,43,117,.12);
 }
-.he-brand-body {
-  font-size: 13px;
-  color: #5a5a7a;
-  line-height: 1.55;
-  margin: 0;
+.he-brand-img img { width: 100%; display: block; }
+.he-brand-items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
 }
+.he-brand-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.he-brand-item-dot {
+  width: 8px; height: 8px;
+  background: #4f46e5;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+.he-brand-item-title { font-size: 14.5px; font-weight: 700; color: #20203c; margin-bottom: 2px; }
+.he-brand-item-body { font-size: 13px; color: #5a5a7a; margin: 0; }
 
 @media(max-width:991px) {
   .he-int-flow { flex-direction: column; }
   .he-int-step { border-right: none; border-bottom: 1px solid rgba(40,43,117,.08); }
   .he-int-step-arrow { display: none; }
-  .he-brand-features { grid-template-columns: repeat(2, 1fr); }
+  .he-branding-inner { grid-template-columns: 1fr; }
 }
 @media(max-width:767px) {
-  .he-brand-features { grid-template-columns: 1fr; }
-  .he-integrations, .he-automation, .he-branding { padding: 50px 0; }
+  .he-integrations, .he-branding { padding: 50px 0; }
 }
 </style>
 
-<!-- LMS Integrations -->
 <section class="he-integrations content-section division" id="he-integrations">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <div class="section-title mb-20">
-          <h2 class="s-38 w-700">Fits Into Your Existing University Technology Stack</h2>
-          <p class="p-xl color--grey mt-20">CertifyMe connects with your LMS, SIS and administrative systems — so credentials flow automatically without disrupting existing workflows.</p>
-        </div>
+        <h2 class="s-38 w-700">Fits your tech stack. No rip-and-replace.</h2>
+        <p class="p-xl color--grey mt-16">Canvas, Moodle, Blackboard, your SIS — CertifyMe connects with the systems you already run. Students get credentials automatically when they complete programmes.</p>
       </div>
     </div>
 
     <div class="he-int-flow">
       <div class="he-int-step">
         <div class="he-int-step-ico">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
         </div>
         <div class="he-int-step-title">LMS / SIS</div>
-        <p class="he-int-step-body">Canvas, Moodle, Blackboard, or your internal student information system</p>
+        <p class="he-int-step-body">Canvas, Moodle, Blackboard or your student information system</p>
         <div class="he-int-step-arrow">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </div>
       </div>
       <div class="he-int-step highlight">
         <div class="he-int-step-ico">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
         <div class="he-int-step-title">CertifyMe</div>
-        <p class="he-int-step-body">REST API, webhooks, SSO and native integrations process and generate credentials</p>
+        <p class="he-int-step-body">REST API, webhooks &amp; SSO process and generate credentials</p>
         <div class="he-int-step-arrow">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </div>
       </div>
       <div class="he-int-step">
         <div class="he-int-step-ico">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
         </div>
         <div class="he-int-step-title">Verified Credential</div>
-        <p class="he-int-step-body">Branded, tamper-proof credential generated and ready to issue</p>
+        <p class="he-int-step-body">Branded, tamper-proof and ready to issue</p>
         <div class="he-int-step-arrow">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </div>
       </div>
       <div class="he-int-step">
         <div class="he-int-step-ico">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         </div>
         <div class="he-int-step-title">Student</div>
-        <p class="he-int-step-body">Receives, shares and adds the credential to their SkillStory Skill Passport</p>
+        <p class="he-int-step-body">Claims, shares and adds to their SkillStory Skill Passport</p>
       </div>
     </div>
 
     <div class="he-int-badges">
-      <span class="he-int-badge">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        Canvas LMS
-      </span>
-      <span class="he-int-badge">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        Moodle
-      </span>
-      <span class="he-int-badge">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        REST API
-      </span>
-      <span class="he-int-badge">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        Webhooks
-      </span>
-      <span class="he-int-badge">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        SSO / SAML
-      </span>
-      <span class="he-int-badge">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        Zapier
-      </span>
+      <span class="he-int-badge">✓ Canvas LMS</span>
+      <span class="he-int-badge">✓ Moodle</span>
+      <span class="he-int-badge">✓ Blackboard</span>
+      <span class="he-int-badge">✓ REST API</span>
+      <span class="he-int-badge">✓ Webhooks</span>
+      <span class="he-int-badge">✓ SSO / SAML</span>
+      <span class="he-int-badge">✓ Zapier</span>
     </div>
-    <div class="text-center mt-30">
+    <div class="text-center mt-24">
       <a href="/allIntegrations" class="btn r-04 btn--tra-black hover--blue-100">View All Integrations</a>
     </div>
   </div>
 </section>
 
-<!-- Automation -->
-<section class="he-automation content-section division">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <div class="section-title mb-10">
-          <h2 class="s-38 w-700">From Graduation Data to Digital Credentials</h2>
-          <p class="p-xl color--grey mt-20">Automate the entire credential issuance workflow — from student completion data to a verified, shareable credential — at any scale.</p>
-        </div>
-      </div>
-    </div>
-    <div class="he-auto-timeline">
-      <div class="he-auto-step">
-        <div class="he-auto-dot">1</div>
-        <div class="he-auto-content">
-          <div class="he-auto-title">University System</div>
-          <p class="he-auto-body">Your LMS, SIS or internal system holds the student completion or achievement data.</p>
-        </div>
-      </div>
-      <div class="he-auto-step">
-        <div class="he-auto-dot">2</div>
-        <div class="he-auto-content">
-          <div class="he-auto-title">Completion Trigger</div>
-          <p class="he-auto-body">When a student completes a programme, the system sends a trigger to CertifyMe via API or webhook.</p>
-        </div>
-      </div>
-      <div class="he-auto-step">
-        <div class="he-auto-dot">3</div>
-        <div class="he-auto-content">
-          <div class="he-auto-title">Credential Generated</div>
-          <p class="he-auto-body">CertifyMe creates a branded, Open Badges 3.0 certified credential with the student's verified data.</p>
-        </div>
-      </div>
-      <div class="he-auto-step">
-        <div class="he-auto-dot">4</div>
-        <div class="he-auto-content">
-          <div class="he-auto-title">Student Notified</div>
-          <p class="he-auto-body">The student receives an email with access to their credential — no administrative intervention required.</p>
-        </div>
-      </div>
-      <div class="he-auto-step">
-        <div class="he-auto-dot">5</div>
-        <div class="he-auto-content">
-          <div class="he-auto-title">Credential Becomes Verifiable &amp; Shareable</div>
-          <p class="he-auto-body">The credential is instantly verifiable by any third party and shareable on LinkedIn, portfolios and applications — with full analytics tracked for the institution.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Branding -->
 <section class="he-branding content-section division">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <div class="section-title mb-20">
-          <h2 class="s-38 w-700">Keep Your University at the Centre</h2>
-          <p class="p-xl color--grey mt-20">Every credential should clearly communicate that it came from your institution. CertifyMe powers the experience — your brand stays front and centre.</p>
+    <div class="he-branding-inner">
+      <div class="wow fadeInLeft">
+        <span class="lw-eyebrow" style="display:inline-block;margin-bottom:16px;">Branding</span>
+        <h2 class="s-38 w-700" style="line-height:1.2;margin-bottom:14px;">Every credential should carry your name, not ours.</h2>
+        <p class="p-lg color--grey" style="margin-bottom:20px;">CertifyMe powers the infrastructure. Your institution stays front and centre — on the credential, the verification page and every email sent to a student.</p>
+        <div class="he-brand-items">
+          <div class="he-brand-item">
+            <div class="he-brand-item-dot"></div>
+            <div>
+              <div class="he-brand-item-title">Custom domain</div>
+              <p class="he-brand-item-body">Credentials hosted on your own university domain</p>
+            </div>
+          </div>
+          <div class="he-brand-item">
+            <div class="he-brand-item-dot"></div>
+            <div>
+              <div class="he-brand-item-title">White-label design</div>
+              <p class="he-brand-item-body">Your colours, fonts and logo on every credential</p>
+            </div>
+          </div>
+          <div class="he-brand-item">
+            <div class="he-brand-item-dot"></div>
+            <div>
+              <div class="he-brand-item-title">Branded emails</div>
+              <p class="he-brand-item-body">Credential notifications sent from your institution's address</p>
+            </div>
+          </div>
+          <div class="he-brand-item">
+            <div class="he-brand-item-dot"></div>
+            <div>
+              <div class="he-brand-item-title">Branded verification</div>
+              <p class="he-brand-item-body">Employers see your institution when they verify — not CertifyMe</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="he-brand-features">
-      <div class="he-brand-feat">
-        <div class="he-brand-ico">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        </div>
-        <div class="he-brand-title">Custom Domain</div>
-        <p class="he-brand-body">Serve credentials from your own domain — keeping your institution's identity at the centre of every interaction.</p>
-      </div>
-      <div class="he-brand-feat">
-        <div class="he-brand-ico">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 9 5 12 1.774-5.226L21 14 9 9z"/><path d="m16.071 16.071 4.243 4.243"/><path d="m7.188 2.239.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656-2.12 2.122"/></svg>
-        </div>
-        <div class="he-brand-title">White-Label Design</div>
-        <p class="he-brand-body">Apply your university's colours, fonts, logo and visual identity to every credential and communication.</p>
-      </div>
-      <div class="he-brand-feat">
-        <div class="he-brand-ico">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </div>
-        <div class="he-brand-title">Branded Communications</div>
-        <p class="he-brand-body">All credential delivery emails arrive from your university's brand — not CertifyMe's — maintaining institutional trust.</p>
-      </div>
-      <div class="he-brand-feat">
-        <div class="he-brand-ico">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-        </div>
-        <div class="he-brand-title">Branded Verification</div>
-        <p class="he-brand-body">The verification experience reinforces your institution's authority — employers see your brand when they verify.</p>
-      </div>
-      <div class="he-brand-feat">
-        <div class="he-brand-ico">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-        </div>
-        <div class="he-brand-title">Credential Design Templates</div>
-        <p class="he-brand-body">Design every credential type to match your institution's identity — or use our design team to create them for you.</p>
-      </div>
-      <div class="he-brand-feat">
-        <div class="he-brand-ico">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        </div>
-        <div class="he-brand-title">Admin Role Management</div>
-        <p class="he-brand-body">Assign credential management roles across departments, faculties and administrative teams with full access control.</p>
+      <div class="he-brand-img wow fadeInRight">
+        <img src="/assets4/images/product-features/product-feature-4-branding1.svg" alt="CertifyMe credential branding" loading="lazy">
       </div>
     </div>
   </div>
