@@ -1100,9 +1100,9 @@ h2.statistic-number {
    ═══════════════════════════════════════════════════════ */
 .dcm-section {
   background: #f4f3ff;
-  padding: 70px 0 60px;
+  padding: 52px 0 44px;
 }
-.dcm-header { margin-bottom: 28px; }
+.dcm-header { margin-bottom: 20px; }
 .dcm-title {
   color: var(--cm-indigo, #282B75) !important;
   margin: 0 0 14px !important;
@@ -1193,37 +1193,67 @@ h2.statistic-number {
 .dcm-icon--partial { background: #fef3c7; color: #d97706; }
 .dcm-icon--yes     { background: #dcfce7; color: #16a34a; }
 
-/* ── Open Standards callout ─────────────────────────── */
-.dcm-standards {
+/* ── Open Standards logo strip ──────────────────────── */
+.dcm-std-strip {
   background: #fff;
   border: 1px solid #e2e4ef;
-  border-radius: 10px;
-  padding: 14px 24px;
+  border-radius: 12px;
+  padding: 16px 24px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 16px 0;
   justify-content: center;
-  text-align: center;
 }
-.dcm-standards-label {
-  font-size: 11px;
+.dcm-std-heading {
+  font-size: 10.5px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .7px;
+  letter-spacing: .8px;
   color: #4f46e5;
   white-space: nowrap;
+  padding-right: 20px;
+  border-right: 1px solid #e2e4ef;
+  margin-right: 4px;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
 }
-.dcm-standards-sep {
+.dcm-std-sep {
   width: 1px;
-  height: 14px;
+  height: 44px;
   background: #e2e4ef;
   flex-shrink: 0;
+  margin: 0 16px;
 }
-.dcm-standards-text {
-  font-size: 13px;
-  color: #5a5f7d;
-  line-height: 1.65;
+.dcm-std-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 0 16px;
+}
+.dcm-std-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+}
+.dcm-std-mark--img {
+  gap: 8px;
+}
+.dcm-std-wordmark {
+  font-size: 11px;
+  font-weight: 600;
+  color: #374151;
+  line-height: 1.3;
+}
+.dcm-std-wordmark strong { font-weight: 800; }
+.dcm-std-sub {
+  font-size: 10.5px;
+  color: #9ca3af;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 /* ── Closing CTA ────────────────────────────────────── */
@@ -1260,8 +1290,18 @@ h2.statistic-number {
 
 /* ── Responsive ─────────────────────────────────────── */
 @media (max-width: 575px) {
-  .dcm-section { padding: 44px 0 36px; }
-  .dcm-title   { font-size: 1.35rem !important; }
+  .dcm-section  { padding: 36px 0 30px; }
+  .dcm-title    { font-size: 1.35rem !important; }
   .dcm-subtitle { font-size: 0.9375rem; }
-  .dcm-standards-sep { display: none; }
+  /* Standards strip: stack vertically, drop separators */
+  .dcm-std-strip  { flex-direction: column; align-items: flex-start; padding: 14px 16px; gap: 12px; }
+  .dcm-std-heading { border-right: none; padding-right: 0; border-bottom: 1px solid #e2e4ef; padding-bottom: 10px; width: 100%; }
+  .dcm-std-sep    { display: none; }
+  .dcm-std-tile   { padding: 0; flex-direction: row; align-items: center; gap: 10px; }
+  .dcm-std-sub    { font-size: 11px; }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .dcm-std-sep { margin: 0 8px; }
+  .dcm-std-tile { padding: 0 8px; }
+  .dcm-std-heading { padding-right: 12px; margin-right: 0; }
 }
