@@ -10,8 +10,8 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Verifiable Credential Infrastructure for Education & Workforce Learning
-HeroText:  Issue <strong> Open Badges 3.0 </strong> certified credentials, learner portfolios, and verified skill records that enhance credibility, showcase achievements, and improve employability.
+HeroTitle: Digital Credential Platform for Institutions
+HeroText:  Issue, manage, verify and analyze digital credentials at scale — with <strong>Open Badges 3.0</strong>, W3C Verifiable Credentials and enterprise integrations.
 HeroImage: /assets4/images/Images Webp/Copy of Credentials Verified (4).png
 HeroDemoButton: Request a Demo
 HeroVideoButton: Watch Video
