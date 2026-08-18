@@ -536,11 +536,16 @@ h2.statistic-number {
   background: linear-gradient(90deg, var(--cm-purple), var(--cm-indigo));
 }
 
-/* ── 14. "OUR PRODUCT DETAILS" FEATURE SECTION ────────── */
-/* Give it a clean white background */
-#tab-1,
-[id^="tabs-"] {
-  background: #fff;
+/* ── 14. PRICING COMPARISON TABLE — remove stray white cell background ── */
+/* Bootstrap's .table sets a hardcoded white cell background (--bs-table-bg)
+   and blue-theme.css sets tbody tr to #fff, both leaking as a solid white
+   box now that #page is lavender. Let the page background show through. */
+.comp-table .table {
+  --bs-table-bg: transparent;
+}
+
+.comp-table .table-responsive tbody tr {
+  background-color: transparent;
 }
 
 /* ── 15. RESPONSIVE ADJUSTMENTS ───────────────────────── */
