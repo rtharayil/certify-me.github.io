@@ -1064,3 +1064,33 @@ h2.statistic-number {
   border-radius: 20px;
   border: 1px solid transparent;
 }
+
+/* ── RESPONSIVE: bento sections + footer (mobile / tablet) ── */
+@media (max-width: 575px) {
+  /* Trust-strip separators make no sense when items wrap */
+  .cs2-trust-sep { display: none; }
+  .cs2-trust-strip { gap: 8px 16px; }
+  .cs2-trust-item { font-size: 11.5px; }
+
+  /* Bento section padding tighter on mobile */
+  .bfi2-section,
+  .wic2-section { padding: 28px 0; }
+
+  /* Bento titles scale down */
+  .bfi2-title,
+  .wic2-title { font-size: 1.25rem !important; }
+
+  /* Footer: ensure logo col doesn't have excess bottom gap */
+  #footer-3 .footer-info { margin-bottom: 10px !important; }
+
+  /* Footer link columns: tighten spacing so 2-col grid isn't cramped */
+  #footer-3 .footer-links { margin-bottom: 20px; }
+  #footer-3 .footer-links p { margin-bottom: 4px; }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Trust separators still wrap at sm — keep them hidden */
+  .cs2-trust-sep { display: none; }
+  .bfi2-section,
+  .wic2-section { padding: 32px 0; }
+}
