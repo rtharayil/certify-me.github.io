@@ -1094,3 +1094,174 @@ h2.statistic-number {
   .bfi2-section,
   .wic2-section { padding: 32px 0; }
 }
+
+/* ═══════════════════════════════════════════════════════
+   DIGITAL CREDENTIALS COMPARISON SECTION (.dcm-*)
+   ═══════════════════════════════════════════════════════ */
+.dcm-section {
+  background: #f4f3ff;
+  padding: 70px 0 60px;
+}
+.dcm-header { margin-bottom: 28px; }
+.dcm-title {
+  color: var(--cm-indigo, #282B75) !important;
+  margin: 0 0 14px !important;
+}
+.dcm-subtitle {
+  font-size: 1rem;
+  color: #5a5f7d;
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+/* ── Cards ─────────────────────────────────────────── */
+.dcm-card {
+  background: #fff;
+  border: 1px solid #e2e4ef;
+  border-radius: 14px;
+  padding: 24px 22px 22px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.dcm-card--featured {
+  border-color: #4f46e5;
+  border-width: 2px;
+  background: linear-gradient(170deg, #f5f3ff 0%, #fff 50%);
+  box-shadow: 0 6px 28px rgba(79,70,229,.11);
+}
+
+/* ── Card head ──────────────────────────────────────── */
+.dcm-card-head { display: flex; flex-direction: column; gap: 8px; }
+
+.dcm-tag {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .65px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+.dcm-tag--neutral  { background: #f1f2f6; color: #6b7280; }
+.dcm-tag--mid      { background: #fffbeb; color: #b45309; }
+.dcm-tag--featured { background: #ede9fe; color: #4f46e5; }
+
+.dcm-card-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: #282B75;
+  margin: 0;
+  line-height: 1.3;
+}
+.dcm-card-title--featured { color: #4f46e5; }
+
+/* ── Feature list ───────────────────────────────────── */
+.dcm-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.dcm-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #4b5563;
+}
+
+/* Icon circles */
+.dcm-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.dcm-icon--no      { background: #fee2e2; color: #ef4444; }
+.dcm-icon--partial { background: #fef3c7; color: #d97706; }
+.dcm-icon--yes     { background: #dcfce7; color: #16a34a; }
+
+/* ── Open Standards callout ─────────────────────────── */
+.dcm-standards {
+  background: #fff;
+  border: 1px solid #e2e4ef;
+  border-radius: 10px;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+}
+.dcm-standards-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  color: #4f46e5;
+  white-space: nowrap;
+}
+.dcm-standards-sep {
+  width: 1px;
+  height: 14px;
+  background: #e2e4ef;
+  flex-shrink: 0;
+}
+.dcm-standards-text {
+  font-size: 13px;
+  color: #5a5f7d;
+  line-height: 1.65;
+}
+
+/* ── Closing CTA ────────────────────────────────────── */
+.dcm-cta { padding-top: 4px; }
+.dcm-cta-heading {
+  font-size: 1.1875rem;
+  font-weight: 800;
+  color: #282B75;
+  margin: 0 0 6px;
+}
+.dcm-cta-sub {
+  font-size: 0.9375rem;
+  color: #5a5f7d;
+  margin: 0 0 20px;
+}
+.dcm-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 2px solid #282B75;
+  color: #282B75 !important;
+  padding: 10px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background .18s, color .18s;
+}
+.dcm-cta-btn:hover {
+  background: #282B75;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+/* ── Responsive ─────────────────────────────────────── */
+@media (max-width: 575px) {
+  .dcm-section { padding: 44px 0 36px; }
+  .dcm-title   { font-size: 1.35rem !important; }
+  .dcm-subtitle { font-size: 0.9375rem; }
+  .dcm-standards-sep { display: none; }
+}
