@@ -45,7 +45,6 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
           <span class="flp2-hl-arr" aria-hidden="true">→</span>
           <span class="flp2-hl flp2-hl--strongest">Intelligence</span>
         </div>
-        <p class="flp-hero-statement">CertifyMe starts at Level 3 — where credentials need to be trusted, verifiable and built on open standards. Level 4 extends that foundation into records, skills and workforce intelligence.</p>
         <div class="flp-hero-ctas">
           <a href="#qualifier" class="flp-btn-primary">Find Your Level</a>
           <a href="/request-demo" class="flp-btn-secondary">Talk to a Credential Expert</a>
@@ -70,21 +69,21 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
         <div class="flp2-qc-num">01</div>
         <h3 class="flp2-qc-title">I just need certificates</h3>
         <p class="flp2-qc-desc">PDF generation, paper documents, simple awards.</p>
-        <div class="flp2-qc-verdict flp2-qc-verdict--neutral">CertifyMe is probably more than you need</div>
+        <div class="flp2-qc-verdict flp2-qc-verdict--neutral">CertifyMe should not be used for this</div>
       </div>
       <!-- L2 -->
       <div class="flp2-qual-card flp2-qual-card--dim">
         <div class="flp2-qc-num">02</div>
         <h3 class="flp2-qc-title">I want branded digital recognition</h3>
         <p class="flp2-qc-desc">Digital badges, social sharing, recipient engagement.</p>
-        <div class="flp2-qc-verdict flp2-qc-verdict--neutral">A basic badge platform may be enough</div>
+        <div class="flp2-qc-verdict flp2-qc-verdict--neutral">CertifyMe would be overkill</div>
       </div>
       <!-- L3 -->
       <div class="flp2-qual-card flp2-qual-card--cm">
         <div class="flp2-qc-cm-tag">CERTIFYME</div>
         <div class="flp2-qc-num">03</div>
-        <h3 class="flp2-qc-title">I need credentials people can trust and verify</h3>
-        <p class="flp2-qc-desc">Open standards, cryptographic signing, independent verification, machine-readable credentials.</p>
+        <h3 class="flp2-qc-title">I need credentials people can trust, verify and recognise globally</h3>
+        <p class="flp2-qc-desc">Open standards, cryptographic signing, independent verification, machine-readable credentials, globally recognised credential framework.</p>
         <div class="flp2-qc-verdict flp2-qc-verdict--cm">This is where CertifyMe starts</div>
       </div>
       <!-- L4 -->
@@ -144,6 +143,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
         <span>Can the credential be independently verified?</span>
         <span>Is the data structured and machine-readable?</span>
         <span>Is it built on open standards?</span>
+        <span>Is the program globally recognised?</span>
         <span>Can credentials form a broader record?</span>
         <span>Can achievements connect to skills?</span>
         <span>Can it integrate with workforce systems?</span>
@@ -225,6 +225,12 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
             <div class="flp2-val-card">
               <strong>Scale</strong>
               <p>Issue credentials at scale instead of manually creating certificates.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="flp2-val-card">
+              <strong>Global Recognition</strong>
+              <p>Credentials built on Open Badges 3.0 and W3C VC are recognised by institutions, employers and systems worldwide.</p>
             </div>
           </div>
           <div class="col-sm-6">

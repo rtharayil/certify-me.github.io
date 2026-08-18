@@ -2330,6 +2330,9 @@ h2.statistic-number {
    ========================================================================== */
 
 /* ── Eyebrow (shared with flp-eyebrow, but restate for clarity) ──────────── */
+/* Extra top padding to clear the fixed navbar on the detail page */
+.flp-hero.flp2-hero { padding-top: 140px; }
+
 .flp2-hero .flp-eyebrow { letter-spacing: .12em; font-size: .7rem; font-weight: 700; color: #6366f1; text-transform: uppercase; display: block; margin-bottom: 14px; }
 
 /* ── Hero level progression strip ──────────────────────────────────────────── */
