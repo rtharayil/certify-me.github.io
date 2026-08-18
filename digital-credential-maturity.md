@@ -120,7 +120,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
         <div class="flp2-qcd-top">
           <div class="flp2-qc-cm-tag">CERTIFYME STARTS HERE</div>
           <div class="flp2-qc-num">03</div>
-          <h3 class="flp2-qc-title">I want my program's credentials trusted, verifiable and recognised beyond my platform</h3>
+          <h3 class="flp2-qc-title">I want my program to be trusted and recognised globally</h3>
           <p class="flp2-qc-desc">The credential represents the program. Its credibility is your program's credibility. Employers, institutions and systems need to be able to trust and verify it — without calling you.</p>
         </div>
         <div class="flp2-qcd-signals">
