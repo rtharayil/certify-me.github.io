@@ -1,4 +1,5 @@
 ---
+permalink: /credentials-higher-education
 title: "Digital Credentials for Higher Education | CertifyMe"
 
 description: "Issue, manage and verify degrees, transcripts, certificates and digital badges at scale. Extend student credentials into verified skills, portfolios and Skill Passports with CertifyMe and SkillStory."
