@@ -904,6 +904,8 @@ h2.statistic-number {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  position: relative;
+  overflow: hidden;
   transition: background .2s, border-color .2s;
 }
 .bfi2-card:hover {
@@ -951,7 +953,7 @@ h2.statistic-number {
   opacity: 0.85;
   transition: opacity .15s;
 }
-.bfi2-link:hover { opacity: 1; text-decoration: none; }
+.bfi2-link:hover { opacity: 1; text-decoration: none; color: inherit !important; }
 
 /* ── COMPLIANCE TRUST STRIP (below bento cards) ─────── */
 .cs2-trust-strip {
