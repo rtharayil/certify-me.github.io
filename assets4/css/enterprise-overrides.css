@@ -923,7 +923,7 @@ h2.statistic-number {
 
 /* ── WHY INSTITUTIONS CHOOSE CERTIFYME — Dark Bento ─── */
 .wic2-section {
-  background: #282B75;
+  background: linear-gradient(135deg, #282B75 0%, #3D4299 100%);
   padding: 36px 0;
 }
 .wic2-header { margin-bottom: 20px; }
