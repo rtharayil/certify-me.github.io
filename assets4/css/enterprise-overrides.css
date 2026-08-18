@@ -1593,26 +1593,27 @@ h2.statistic-number {
 
 /* ── Hero ────────────────────────────────────────────────── */
 .flp-hero {
-  background: linear-gradient(135deg, #282B75 0%, #3730a3 100%);
+  background: #f4f3ff;
+  border-bottom: 1px solid #e0e7ff;
   padding: 96px 0 80px;
   text-align: center;
 }
 .flp-h1 {
   font-size: clamp(1.75rem, 4vw, 2.75rem);
   font-weight: 900;
-  color: #fff;
+  color: #282B75;
   margin: 0 0 20px !important;
   line-height: 1.2;
 }
 .flp-hero-lead {
   font-size: 1.125rem;
-  color: #c7d2fe;
+  color: #4b5563;
   margin: 0 0 14px;
   line-height: 1.65;
 }
 .flp-hero-statement {
   font-size: 1rem;
-  color: #a5b4fc;
+  color: #4f46e5;
   font-style: italic;
   margin: 0 0 32px;
   line-height: 1.6;
@@ -1639,16 +1640,16 @@ h2.statistic-number {
 .flp-btn-secondary {
   display: inline-block;
   padding: 12px 28px;
-  background: rgba(255,255,255,0.12);
-  color: #fff;
-  border: 1px solid rgba(255,255,255,0.3);
+  background: #fff;
+  color: #282B75;
+  border: 1px solid #c7d2fe;
   border-radius: 8px;
   font-weight: 700;
   font-size: 0.9375rem;
   text-decoration: none;
   transition: background 0.2s;
 }
-.flp-btn-secondary:hover { background: rgba(255,255,255,0.2); color: #fff; text-decoration: none; }
+.flp-btn-secondary:hover { background: #ede9fe; color: #282B75; text-decoration: none; }
 .flp-btn-secondary--large { padding: 14px 36px; font-size: 1rem; }
 
 /* ── Maturity ladder ─────────────────────────────────────── */
