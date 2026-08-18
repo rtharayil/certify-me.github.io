@@ -86,7 +86,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
           <span class="flp2-qcd-who-label">Typically owned by</span>
           Admin team · Event coordinator · Programme administrator
         </div>
-        <div class="flp2-qc-verdict flp2-qc-verdict--neutral">CertifyMe is not the right tool for this</div>
+        <div class="flp2-qc-verdict flp2-qc-verdict--neutral">CertifyMe might not be the right fit</div>
       </div>
 
       <!-- ── 02 — Digital Recognition ── -->
@@ -112,7 +112,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
         <div class="flp2-qcd-risk flp2-qcd-risk--warn">
           <strong>Watch out:</strong> Most badge platforms stop at Level 2. They are not built on open standards — once you issue at scale, switching costs are high and credential data is locked inside the vendor's system.
         </div>
-        <div class="flp2-qc-verdict flp2-qc-verdict--neutral">CertifyMe would be overkill</div>
+        <div class="flp2-qc-verdict flp2-qc-verdict--neutral">CertifyMe would be an overkill</div>
       </div>
 
       <!-- ── 03 — Verifiable Credentials ── -->
