@@ -873,53 +873,80 @@ h2.statistic-number {
   color: #20203c !important;
 }
 
-/* ── BUILT FOR INSTITUTIONS ─────────────────────────── */
-.bfi-card {
-  background: rgba(255,255,255,0.72);
-  border: 1px solid rgba(40,43,117,.09);
-  border-radius: 14px;
-  padding: 28px 24px 24px;
+/* ── BUILT FOR INSTITUTIONS — Dark Bento ────────────── */
+.bfi2-section {
+  background: linear-gradient(135deg, var(--cm-indigo) 0%, #1e2060 50%, #2d1b69 100%);
+  padding: 36px 0;
+}
+.bfi2-header { margin-bottom: 20px; }
+.bfi2-title  { color: #fff !important; margin: 0 0 8px !important; }
+.bfi2-subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.45);
+  margin: 0;
+  font-weight: 400;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+.bfi2-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 12px;
+  padding: 18px 16px 16px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  transition: box-shadow .2s, transform .2s;
+  gap: 8px;
+  transition: background .2s, border-color .2s;
 }
-.bfi-card:hover {
-  box-shadow: 0 8px 32px rgba(40,43,117,.13);
-  transform: translateY(-3px);
+.bfi2-card:hover {
+  background: rgba(255,255,255,0.09);
+  border-color: rgba(255,255,255,0.15);
 }
-.bfi-icon {
-  width: 52px;
-  height: 52px;
-  background: #eef0ff;
-  border-radius: 12px;
+.bfi2-card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bfi2-icon {
+  width: 34px;
+  height: 34px;
+  background: rgba(255,255,255,0.07);
+  border-radius: 8px;
+  border: 1px solid transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
-.bfi-title {
+.bfi2-card-title {
   margin: 0;
-  color: #20203c;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
 }
-.bfi-body {
-  font-size: 14.5px;
-  line-height: 1.55;
+.bfi2-body {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.5);
   margin: 0;
   flex: 1;
 }
-.bfi-link {
+.bfi2-link {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-size: 13.5px;
+  font-size: 12.5px;
   font-weight: 600;
-  color: #4f46e5;
   text-decoration: none;
   margin-top: 4px;
+  opacity: 0.85;
+  transition: opacity .15s;
 }
-.bfi-link:hover { color: #3730a3; }
+.bfi2-link:hover { opacity: 1; text-decoration: none; }
 
 /* ── WHY INSTITUTIONS CHOOSE CERTIFYME — Dark Bento ─── */
 .wic2-section {
