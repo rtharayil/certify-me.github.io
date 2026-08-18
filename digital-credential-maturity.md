@@ -1,6 +1,6 @@
 ---
-title: "Four Levels of Digital Credentialing | Digital Badges vs Verifiable Credentials"
-description: "Understand the four levels of digital credentialing — from PDF certificates and digital badges to Open Badges 3.0, verifiable credentials, CLR, skills mapping and credential ecosystems."
+title: "The Four Levels of Digital Credentialing | CertifyMe"
+description: "Find your credential level — from digital badges to verifiable credentials and workforce intelligence. CertifyMe helps extend program value and recognition."
 layout: V4LayoutContent
 permalink: /digital-credential-maturity/
 sitemap.priority: 0.9
@@ -800,6 +800,64 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
     </div>
   </div>
 </section>
+
+<!-- FAQPage Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the four levels of digital credentialing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The four levels are: Level 1 — PDF and paper certificates with no digital infrastructure; Level 2 — branded digital badges for social sharing and recognition; Level 3 — standards-based verifiable credentials built on Open Badges 3.0 and W3C Verifiable Credentials, independently verifiable by employers, institutions and systems; Level 4 — a full credential and skills ecosystem including Comprehensive Learner Records (CLR), skills taxonomy, learning pathways and workforce intelligence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a digital badge and a verifiable credential?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A digital badge (Level 2) is primarily a branded, shareable image used for recognition on social platforms like LinkedIn. A verifiable credential (Level 3) is a standards-based, cryptographically signed digital credential built on Open Badges 3.0 or W3C Verifiable Credentials. Unlike a badge, a verifiable credential can be independently verified by employers, institutions, software systems and increasingly AI-powered applications — without contacting the issuing organisation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Open Badges 3.0?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open Badges 3.0 is an open standard for digital credentials maintained by 1EdTech. It defines a structured, machine-readable format for digital credentials that includes cryptographic signing, independent verification, and interoperability across platforms. CertifyMe is 1EdTech certified for Open Badges 3.0 and Comprehensive Learner Records (CLR), with support for W3C Verifiable Credentials."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does an organisation need Level 3 digital credentials?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An organisation needs Level 3 credentials when the credential must do more than look good — it needs to be trusted and verifiable. This includes when employers, institutions or systems need to independently verify the credential; when the program's reputation depends on the credibility of its credentials; when credentials should be machine-readable and portable beyond the issuing platform; or when the organisation wants its program to be globally recognised through open standards."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a Comprehensive Learner Record (CLR)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Comprehensive Learner Record (CLR) is a structured digital record that connects all of a learner's credentials, achievements, skills and experiences into a single, verifiable record. CLR is a standard maintained by 1EdTech. At Level 4, CertifyMe connects individual credentials into CLRs, which can then be linked to skills taxonomies, learning pathways and workforce intelligence systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Level 3 and Level 4 digital credentialing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Level 3 focuses on issuing individual trusted, standards-based, independently verifiable credentials — the credential represents the program, achievement and standards behind it. Level 4 extends this foundation by connecting credentials to Comprehensive Learner Records (CLR), skills taxonomies, learning pathways and workforce intelligence. Level 4 is for organisations that need credential data to feed program analysis, skills gap identification and workforce planning."
+      }
+    }
+  ]
+}
+</script>
 
 <!-- Sticky subnav JS -->
 <script>
