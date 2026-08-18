@@ -138,6 +138,7 @@ h2.statistic-number {
     radial-gradient(ellipse 80% 60% at 70% -10%, rgba(106,90,205,.10) 0%, transparent 60%),
     linear-gradient(160deg, #ece9fd 0%, #f0f1ff 40%, #edf2ff 70%, #f5f7ff 100%) !important;
   position: relative !important;
+  overflow: hidden !important;
 }
 
 /* Soft decorative circle top-right */
@@ -254,7 +255,7 @@ h2.statistic-number {
   padding-top: 24px !important;
   padding-bottom: 48px !important;
   margin-top: 0 !important;
-  background: transparent !important;
+  background: #f5f7ff !important;
 }
 /* Subtle "Trusted by" label */
 #badges.badges-main-container::before {
@@ -1318,7 +1319,7 @@ h2.statistic-number {
    FOUR LEVELS — HOMEPAGE COMPACT SECTION (.fl-*)
    ============================================================ */
 .fl-section {
-  background: #fff;
+  background: #f4f3ff;
   padding: 60px 0 48px;
 }
 .fl-eyebrow {
