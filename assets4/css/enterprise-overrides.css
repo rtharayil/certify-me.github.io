@@ -2409,6 +2409,20 @@ h2.statistic-number {
 .flp2-qc-verdict--cm      { background: #4f46e5; color: #fff; }
 .flp2-qual-card--cm4 .flp2-qc-verdict--cm { background: rgba(255,255,255,.2); }
 
+/* Homepage linked qualifier cards */
+.fl-qual-card-link {
+  text-decoration: none !important;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  cursor: pointer;
+}
+.fl-qual-card-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(40,43,117,.12);
+  text-decoration: none !important;
+}
+.fl-qual-card-link .flp2-qc-title { color: #1f2937; }
+.fl-qual-card-link.flp2-qual-card--cm4 .flp2-qc-title { color: #e0e7ff; }
+
 /* ── SECTION TITLES ──────────────────────────────────────────────────────────── */
 .flp2-section-title {
   font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: 800; color: #282B75;
