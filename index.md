@@ -10,8 +10,8 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Digital Credential Platform for Institutions
-HeroText:  Issue, manage, verify and analyze digital credentials at scale — with <strong>Open Badges 3.0</strong>, W3C Verifiable Credentials and enterprise integrations.
+HeroTitle: The Digital Credential Infrastructure for Institutions
+HeroText:  Issue, manage, verify, and analyze credentials across your entire institution — securely, at scale, and built on open standards.
 HeroImage: /assets4/images/Images Webp/Copy of Credentials Verified (4).png
 HeroDemoButton: Request a Demo
 HeroVideoButton: Watch Video
