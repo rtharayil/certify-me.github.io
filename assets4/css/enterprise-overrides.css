@@ -1239,8 +1239,14 @@ h2.statistic-number {
   justify-content: center;
   height: 34px;
 }
-.dcm-std-mark--img {
+.dcm-std-mark--ob {
   gap: 8px;
+  align-items: center;
+}
+.dcm-std-mark--ob img {
+  border-radius: 6px;
+  background: #111;
+  padding: 2px;
 }
 .dcm-std-wordmark {
   font-size: 11px;
