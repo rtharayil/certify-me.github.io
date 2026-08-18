@@ -60,41 +60,252 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
     <div class="row justify-content-center text-center mb-4">
       <div class="col-lg-7">
         <h2 class="flp2-section-title" id="flp2-q-h2">What Are You Actually Trying to Achieve?</h2>
-        <p class="flp2-section-sub">Find your level in under 10 seconds.</p>
+        <p class="flp2-section-sub">Read each quadrant. One of these is your organisation. Your level is the answer.</p>
       </div>
     </div>
-    <div class="flp2-qual-grid">
-      <!-- L1 -->
-      <div class="flp2-qual-card flp2-qual-card--dim">
-        <div class="flp2-qc-num">01</div>
-        <h3 class="flp2-qc-title">I just need certificates</h3>
-        <p class="flp2-qc-desc">PDF generation, paper documents, simple awards.</p>
-        <div class="flp2-qc-verdict flp2-qc-verdict--neutral">CertifyMe should not be used for this</div>
+
+    <div class="flp2-qual-grid flp2-qual-grid--2x2">
+
+      <!-- ── 01 — PDF & Paper ── -->
+      <div class="flp2-qual-card flp2-qual-card--dim flp2-qual-card--detail">
+        <div class="flp2-qcd-top">
+          <div class="flp2-qc-num">01</div>
+          <h3 class="flp2-qc-title">I just need to issue certificates</h3>
+          <p class="flp2-qc-desc">Paper records, PDF awards, attendance documents. The credential is an admin output — not a program asset.</p>
+        </div>
+        <div class="flp2-qcd-signals">
+          <p class="flp2-qcd-signals-label">You are here if…</p>
+          <ul>
+            <li>Your events or programs are physical-only</li>
+            <li>No employer or institution needs to verify the credential</li>
+            <li>Recipients don't need to share or carry the credential forward</li>
+            <li>Simplicity and low cost are the only requirements</li>
+          </ul>
+        </div>
+        <div class="flp2-qcd-who">
+          <span class="flp2-qcd-who-label">Typically owned by</span>
+          Admin team · Event coordinator · Programme administrator
+        </div>
+        <div class="flp2-qc-verdict flp2-qc-verdict--neutral">CertifyMe is not the right tool for this</div>
       </div>
-      <!-- L2 -->
-      <div class="flp2-qual-card flp2-qual-card--dim">
-        <div class="flp2-qc-num">02</div>
-        <h3 class="flp2-qc-title">I want branded digital recognition</h3>
-        <p class="flp2-qc-desc">Digital badges, social sharing, recipient engagement.</p>
+
+      <!-- ── 02 — Digital Recognition ── -->
+      <div class="flp2-qual-card flp2-qual-card--dim flp2-qual-card--detail">
+        <div class="flp2-qcd-top">
+          <div class="flp2-qc-num">02</div>
+          <h3 class="flp2-qc-title">I want branded digital badges recipients can share</h3>
+          <p class="flp2-qc-desc">Digital recognition, custom branding, LinkedIn sharing. The goal is engagement — not trust or portability.</p>
+        </div>
+        <div class="flp2-qcd-signals">
+          <p class="flp2-qcd-signals-label">You are here if…</p>
+          <ul>
+            <li>Free webinars, short workshops or community participation</li>
+            <li>Completion does not require a graded assessment</li>
+            <li>No employer or third party needs to verify the credential</li>
+            <li>Social sharing on LinkedIn is the primary value</li>
+          </ul>
+        </div>
+        <div class="flp2-qcd-who">
+          <span class="flp2-qcd-who-label">Typically owned by</span>
+          Marketing team · Community manager · Event coordinator
+        </div>
+        <div class="flp2-qcd-risk flp2-qcd-risk--warn">
+          <strong>Watch out:</strong> Most badge platforms stop at Level 2. They are not built on open standards — once you issue at scale, switching costs are high and credential data is locked inside the vendor's system.
+        </div>
         <div class="flp2-qc-verdict flp2-qc-verdict--neutral">CertifyMe would be overkill</div>
       </div>
-      <!-- L3 -->
-      <div class="flp2-qual-card flp2-qual-card--cm">
-        <div class="flp2-qc-cm-tag">CERTIFYME</div>
-        <div class="flp2-qc-num">03</div>
-        <h3 class="flp2-qc-title">I want my program's credentials to be trusted, verifiable and recognised beyond my own platform</h3>
-        <p class="flp2-qc-desc">Strengthen program credibility, extend recognition globally, make credentials machine-readable and understandable by compatible systems and AI-powered applications.</p>
-        <div class="flp2-qc-verdict flp2-qc-verdict--cm">This is where CertifyMe starts</div>
+
+      <!-- ── 03 — Verifiable Credentials ── -->
+      <div class="flp2-qual-card flp2-qual-card--cm flp2-qual-card--detail">
+        <div class="flp2-qcd-top">
+          <div class="flp2-qc-cm-tag">CERTIFYME STARTS HERE</div>
+          <div class="flp2-qc-num">03</div>
+          <h3 class="flp2-qc-title">I want my program's credentials trusted, verifiable and recognised beyond my platform</h3>
+          <p class="flp2-qc-desc">The credential represents the program. Its credibility is your program's credibility. Employers, institutions and systems need to be able to trust and verify it — without calling you.</p>
+        </div>
+        <div class="flp2-qcd-signals">
+          <p class="flp2-qcd-signals-label">You are here if…</p>
+          <ul>
+            <li>You run paid programs with graded assessment</li>
+            <li>Employers or other institutions receive your graduates</li>
+            <li>You issue professional, compliance or regulatory certifications</li>
+            <li>You want global recognition built on open standards (Open Badges 3.0, W3C VC)</li>
+            <li>You need credentials to be machine-readable and AI-understandable</li>
+          </ul>
+        </div>
+        <div class="flp2-qcd-who">
+          <span class="flp2-qcd-who-label">Typically owned by</span>
+          L&amp;D Director · Program Director · VP of Education · Compliance Officer
+        </div>
+        <div class="flp2-qcd-risk flp2-qcd-risk--info">
+          <strong>The cost of getting this wrong:</strong> Credentials issued on a proprietary platform cannot be independently verified. Employers can't trust them. Recipients can't carry them. Your program's reputation is tied to a vendor's continued existence.
+        </div>
+        <div class="flp2-qc-verdict flp2-qc-verdict--cm">This is where CertifyMe starts →</div>
       </div>
-      <!-- L4 -->
-      <div class="flp2-qual-card flp2-qual-card--cm flp2-qual-card--cm4">
-        <div class="flp2-qc-cm-tag">CERTIFYME</div>
-        <div class="flp2-qc-num">04</div>
-        <h3 class="flp2-qc-title">I need credentials connected to skills and outcomes</h3>
-        <p class="flp2-qc-desc">CLR, skills taxonomy, learning pathways, workforce intelligence.</p>
-        <div class="flp2-qc-verdict flp2-qc-verdict--cm">This is where CertifyMe becomes an ecosystem</div>
+
+      <!-- ── 04 — Skills Ecosystem ── -->
+      <div class="flp2-qual-card flp2-qual-card--cm flp2-qual-card--cm4 flp2-qual-card--detail">
+        <div class="flp2-qcd-top">
+          <div class="flp2-qc-cm-tag">CERTIFYME</div>
+          <div class="flp2-qc-num">04</div>
+          <h3 class="flp2-qc-title">I need credential data connected to skills, records and workforce intelligence</h3>
+          <p class="flp2-qc-desc">Individual credentials are not enough. You need structured data that connects learning outcomes to skills, workforce planning and program ROI — across your entire organisation.</p>
+        </div>
+        <div class="flp2-qcd-signals">
+          <p class="flp2-qcd-signals-label">You are here if…</p>
+          <ul>
+            <li>You run multi-course programs or degree pathways</li>
+            <li>Employer or government partnerships require skills evidence</li>
+            <li>You need a Comprehensive Learner Record (CLR)</li>
+            <li>Skills gap analysis and workforce reporting are program requirements</li>
+            <li>You need credential data to feed talent systems and HR platforms</li>
+          </ul>
+        </div>
+        <div class="flp2-qcd-who">
+          <span class="flp2-qcd-who-label">Typically owned by</span>
+          CLO · CHRO · VP Talent Development · University Registrar
+        </div>
+        <div class="flp2-qcd-risk flp2-qcd-risk--dark">
+          <strong>The cost of getting this wrong:</strong> Without structured skills data, you cannot demonstrate program impact. You cannot answer what skills your programs build — and increasingly, employers and funders are asking exactly that.
+        </div>
+        <div class="flp2-qc-verdict flp2-qc-verdict--cm">CertifyMe becomes a skills ecosystem →</div>
+      </div>
+
+    </div><!-- /.flp2-qual-grid -->
+  </div>
+</section>
+
+<!-- ── USE CASE REFERENCE ────────────────────────────────── -->
+<section class="flp2-uc" id="use-cases" aria-labelledby="flp2-uc-h2">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-4">
+      <div class="col-lg-8">
+        <h2 class="flp2-section-title" id="flp2-uc-h2">Where Do Organisations Typically Start?</h2>
+        <p class="flp2-section-sub">The right level depends on what the credential needs to do — not just what it costs. Here's how common scenarios map.</p>
       </div>
     </div>
+
+    <div class="flp2-uc-table" role="table" aria-label="Credential use case reference">
+
+      <!-- Table header -->
+      <div class="flp2-uc-thead" role="row">
+        <span role="columnheader">Level</span>
+        <span role="columnheader">Organisation type</span>
+        <span role="columnheader">What they issue</span>
+        <span role="columnheader">Why this level</span>
+      </div>
+
+      <!-- ── LEVEL 1 ── -->
+      <div class="flp2-uc-group-label flp2-ucg--l1" role="rowgroup" aria-label="Level 1 use cases">Level 1 — PDF &amp; Paper</div>
+
+      <div class="flp2-uc-row" role="row">
+        <div class="flp2-uc-badge flp2-ucb--l1" role="cell" aria-label="Level 1">01</div>
+        <div class="flp2-uc-org" role="cell"><span class="flp2-uc-org-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span> Primary school</div>
+        <div class="flp2-uc-cred" role="cell">Swimming level award</div>
+        <div class="flp2-uc-why" role="cell">Physical milestone record. No employer need, no verification required — a paper certificate is perfectly appropriate.</div>
+      </div>
+
+      <div class="flp2-uc-row" role="row">
+        <div class="flp2-uc-badge flp2-ucb--l1" role="cell" aria-label="Level 1">01</div>
+        <div class="flp2-uc-org" role="cell"><span class="flp2-uc-org-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></span> Community centre</div>
+        <div class="flp2-uc-cred" role="cell">Event attendance certificate</div>
+        <div class="flp2-uc-why" role="cell">Proof of presence, not assessed competence. Recipients keep a paper copy; no digital sharing or verification expected.</div>
+      </div>
+
+      <div class="flp2-uc-row" role="row">
+        <div class="flp2-uc-badge flp2-ucb--l1" role="cell" aria-label="Level 1">01</div>
+        <div class="flp2-uc-org" role="cell"><span class="flp2-uc-org-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span> Internal HR</div>
+        <div class="flp2-uc-cred" role="cell">Employee service anniversary award</div>
+        <div class="flp2-uc-why" role="cell">Internal recognition only. The record stays in the HR system; it never needs to travel beyond the organisation.</div>
+      </div>
+
+      <!-- ── LEVEL 2 ── -->
+      <div class="flp2-uc-group-label flp2-ucg--l2" role="rowgroup" aria-label="Level 2 use cases">Level 2 — Digital Recognition</div>
+
+      <div class="flp2-uc-row" role="row">
+        <div class="flp2-uc-badge flp2-ucb--l2" role="cell" aria-label="Level 2">02</div>
+        <div class="flp2-uc-org" role="cell"><span class="flp2-uc-org-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span> Online workshop provider</div>
+        <div class="flp2-uc-cred" role="cell">Free webinar appreciation badge</div>
+        <div class="flp2-uc-why" role="cell">Recognition and social sharing is the entire goal. No assessment, no employer use — a branded badge is the right tool.</div>
+      </div>
+
+      <div class="flp2-uc-row" role="row">
+        <div class="flp2-uc-badge flp2-ucb--l2" role="cell" aria-label="Level 2">02</div>
+        <div class="flp2-uc-org" role="cell"><span class="flp2-uc-org-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span> Hackathon organiser</div>
+        <div class="flp2-uc-cred" role="cell">Participation badge</div>
+        <div class="flp2-uc-why" role="cell">Community engagement, not an assessed outcome. Shareable on LinkedIn is the primary value — verification is irrelevant.</div>
+      </div>
+
+      <div class="flp2-uc-row" role="row">
+        <div class="flp2-uc-badge flp2-ucb--l2" role="cell" aria-label="Level 2">02</div>
+        <div class="flp2-uc-org" role="cell"><span class="flp2-uc-org-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></span> Corporate L&amp;D team</div>
+        <div class="flp2-uc-cred" role="cell">Internal soft-skills acknowledgement</div>
+        <div class="flp2-uc-why" role="cell">Morale and recognition within the organisation. Not employer-facing externally, so portability and standards don't matter yet.</div>
+      </div>
+
+      <!-- ── LEVEL 3 ── -->
+      <div class="flp2-uc-group-label flp2-ucg--l3" role="rowgroup" aria-label="Level 3 use cases">Level 3 — Verifiable Credentials &nbsp;<span class="flp2-ucg-cm-tag">CERTIFYME STARTS HERE</span></div>
+
+      <div class="flp2-uc-row flp2-uc-row--cm" role="row">
+        <div class="flp2-uc-badge flp2-ucb--l3" role="cell" aria-label="Level 3">03</div>
+        <div class="flp2-uc-org" role="cell"><span class="flp2-uc-org-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span> Online course platform</div>
+        <div class="flp2-uc-cred" role="cell">Graded course completion certificate</div>
+        <div class="flp2-uc-why" role="cell">Employers need to trust and verify this. A badge-only approach fails here — the credential must be independently verifiable and structured.</div>
+      </div>
+
+      <div class="flp2-uc-row flp2-uc-row--cm" role="row">
+        <div class="flp2-uc-badge flp2-ucb--l3" role="cell" aria-label="Level 3">03</div>
+        <div class="flp2-uc-org" role="cell"><span class="flp2-uc-org-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span> Professional body</div>
+        <div class="flp2-uc-cred" role="cell">Industry certification (project management, cloud, finance)</div>
+        <div class="flp2-uc-why" role="cell">Program credibility depends on the credential being trusted. Must be portable, machine-readable and verifiable by third parties.</div>
+      </div>
+
+      <div class="flp2-uc-row flp2-uc-row--cm" role="row">
+        <div class="flp2-uc-badge flp2-ucb--l3" role="cell" aria-label="Level 3">03</div>
+        <div class="flp2-uc-org" role="cell"><span class="flp2-uc-org-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span> University</div>
+        <div class="flp2-uc-cred" role="cell">Executive education / continuing education micro-credential</div>
+        <div class="flp2-uc-why" role="cell">External recognition is the entire value proposition. Open standards (Open Badges 3.0, W3C VC) are required for global portability.</div>
+      </div>
+
+      <div class="flp2-uc-row flp2-uc-row--cm" role="row">
+        <div class="flp2-uc-badge flp2-ucb--l3" role="cell" aria-label="Level 3">03</div>
+        <div class="flp2-uc-org" role="cell"><span class="flp2-uc-org-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span> Corporate training team</div>
+        <div class="flp2-uc-cred" role="cell">Compliance certification (data privacy, health &amp; safety, AML)</div>
+        <div class="flp2-uc-why" role="cell">Regulators and auditors need a verifiable record. The credential must be independently verifiable with a permanent audit trail.</div>
+      </div>
+
+      <!-- ── LEVEL 4 ── -->
+      <div class="flp2-uc-group-label flp2-ucg--l4" role="rowgroup" aria-label="Level 4 use cases">Level 4 — Skills &amp; Program Intelligence &nbsp;<span class="flp2-ucg-cm-tag">CERTIFYME</span></div>
+
+      <div class="flp2-uc-row flp2-uc-row--cm4" role="row">
+        <div class="flp2-uc-badge flp2-ucb--l4" role="cell" aria-label="Level 4">04</div>
+        <div class="flp2-uc-org" role="cell"><span class="flp2-uc-org-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span> University</div>
+        <div class="flp2-uc-cred" role="cell">Comprehensive Learner Record across degree programs</div>
+        <div class="flp2-uc-why" role="cell">All skills, courses and achievements in one portable, structured record. Connects to employer skills systems and workforce matching platforms.</div>
+      </div>
+
+      <div class="flp2-uc-row flp2-uc-row--cm4" role="row">
+        <div class="flp2-uc-badge flp2-ucb--l4" role="cell" aria-label="Level 4">04</div>
+        <div class="flp2-uc-org" role="cell"><span class="flp2-uc-org-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span> Bootcamp / EdTech platform</div>
+        <div class="flp2-uc-cred" role="cell">Multi-skill learning pathway with employer reporting</div>
+        <div class="flp2-uc-why" role="cell">Employers need a structured view of skills, not just individual certificates. Pathway data connects to hiring and skills gap analysis.</div>
+      </div>
+
+      <div class="flp2-uc-row flp2-uc-row--cm4" role="row">
+        <div class="flp2-uc-badge flp2-ucb--l4" role="cell" aria-label="Level 4">04</div>
+        <div class="flp2-uc-org" role="cell"><span class="flp2-uc-org-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span> Enterprise L&amp;D</div>
+        <div class="flp2-uc-cred" role="cell">Workforce upskilling programme</div>
+        <div class="flp2-uc-why" role="cell">Skills intelligence feeds workforce planning. The organisation needs to track skills gaps, pathways and program ROI — not just issue certificates.</div>
+      </div>
+
+      <div class="flp2-uc-row flp2-uc-row--cm4" role="row">
+        <div class="flp2-uc-badge flp2-ucb--l4" role="cell" aria-label="Level 4">04</div>
+        <div class="flp2-uc-org" role="cell"><span class="flp2-uc-org-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="11" rx="2"/><path d="M3 10l9-7 9 7"/><line x1="12" y1="21" x2="12" y2="10"/></svg></span> Government / public sector</div>
+        <div class="flp2-uc-cred" role="cell">National skills programme with verified attainment records</div>
+        <div class="flp2-uc-why" role="cell">Funding accountability and policy reporting require structured, auditable skills evidence across cohorts — not just individual certificates. Credentials must connect to national skills taxonomies and workforce data.</div>
+      </div>
+
+    </div><!-- /.flp2-uc-table -->
   </div>
 </section>
 
@@ -284,7 +495,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
               </div>
             </div>
             <div class="flp2-sb-item">
-              <img src="/images/standards-logos/w3c_vc.png" alt="W3C" height="32" style="max-width:72px;object-fit:contain;filter:brightness(0) invert(1);opacity:.9;">
+              <img src="/images/standards-logos/w3c_2.svg" alt="W3C" height="28" style="max-width:72px;object-fit:contain;filter:brightness(0) invert(1);opacity:.9;">
               <div>
                 <strong>W3C Verifiable Credentials</strong>
                 <span>Supported</span>
@@ -696,42 +907,6 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
     <div class="flp2-tv-advice">
       <span>Not sure?</span>
       <strong>Start with Level 3. Build toward Level 4 as your credential ecosystem grows.</strong>
-    </div>
-  </div>
-</section>
-
-<!-- ── ORG MAPPING ────────────────────────────────────────── -->
-<section class="flp2-org-map" id="org-mapping" aria-labelledby="flp2-om-h2">
-  <div class="container">
-    <div class="row justify-content-center text-center mb-5">
-      <div class="col-lg-6">
-        <h2 class="flp2-section-title" id="flp2-om-h2">Where Do Organizations Typically Start?</h2>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-lg-7">
-        <div class="table-responsive">
-          <table class="flp2-map-table" aria-label="Organization to typical credentialing level">
-            <thead>
-              <tr><th>Organization / Need</th><th>Typical Level</th></tr>
-            </thead>
-            <tbody>
-              <tr class="flp2-map-dim"><td>PDF / basic certificate</td><td><span class="flp2-lp flp2-lp--1">1</span></td></tr>
-              <tr class="flp2-map-dim"><td>Branded recognition / digital badge</td><td><span class="flp2-lp flp2-lp--2">2</span></td></tr>
-              <tr class="flp2-map-cm"><td><strong>University department</strong></td><td><span class="flp2-lp flp2-lp--3">3</span></td></tr>
-              <tr class="flp2-map-cm"><td><strong>Enterprise L&amp;D</strong></td><td><span class="flp2-lp flp2-lp--3">3</span></td></tr>
-              <tr class="flp2-map-cm"><td><strong>Certification body</strong></td><td><span class="flp2-lp flp2-lp--3">3</span></td></tr>
-              <tr class="flp2-map-cm"><td><strong>E-learning provider</strong></td><td><span class="flp2-lp flp2-lp--3">3</span></td></tr>
-              <tr class="flp2-map-cm"><td><strong>Professional association</strong></td><td><span class="flp2-lp flp2-lp--3">3</span></td></tr>
-              <tr class="flp2-map-cm4"><td><strong>University-wide credential ecosystem</strong></td><td><span class="flp2-lp flp2-lp--4">4</span></td></tr>
-              <tr class="flp2-map-cm4"><td><strong>Degrees + transcripts + CLR</strong></td><td><span class="flp2-lp flp2-lp--4">4</span></td></tr>
-              <tr class="flp2-map-cm4"><td><strong>Skills taxonomy + credential mapping</strong></td><td><span class="flp2-lp flp2-lp--4">4</span></td></tr>
-              <tr class="flp2-map-cm4"><td><strong>Workforce intelligence</strong></td><td><span class="flp2-lp flp2-lp--4">4</span></td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p style="font-size:0.78rem;color:#9ca3af;text-align:center;margin-top:10px;">"Typical Level" reflects common patterns — assess your organization's actual requirements.</p>
-      </div>
     </div>
   </div>
 </section>
