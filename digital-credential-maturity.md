@@ -47,7 +47,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
         </div>
         <div class="flp-hero-ctas">
           <a href="#qualifier" class="flp-btn-primary">Find Your Level</a>
-          <a href="/request-demo" class="flp-btn-secondary">Talk to a Credential Expert</a>
+          <a href="https://info.certifyme.online/talk-with-expert" target="_blank" rel="noopener" class="flp-btn-secondary">Talk to a Credential Expert</a>
         </div>
       </div>
     </div>
@@ -986,8 +986,8 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
         </div>
         <p class="flp2-cta-anchor"><strong>CertifyMe is built for both Levels 3 and 4.</strong></p>
         <div class="flp2-cta-buttons">
-          <a href="/request-demo" class="flp-btn-primary flp-btn-primary--large">Discuss Your Credential Strategy</a>
-          <a href="/request-demo" class="flp-btn-secondary flp-btn-secondary--large">Request a Demo</a>
+          <a href="https://info.certifyme.online/talk-with-expert" target="_blank" rel="noopener" class="flp-btn-primary flp-btn-primary--large">Discuss Your Credential Strategy</a>
+          <a href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener" class="flp-btn-secondary flp-btn-secondary--large">Request a Demo</a>
         </div>
       </div>
     </div>
