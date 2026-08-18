@@ -1,0 +1,238 @@
+<!-- PROBLEM SECTION + CREDENTIAL LIFECYCLE -->
+<style>
+.he-problem {
+  padding: 80px 0 60px;
+}
+.he-problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+.he-problem-card {
+  background: rgba(255,255,255,0.7);
+  border: 1px solid rgba(40,43,117,.09);
+  border-radius: 12px;
+  padding: 22px 20px;
+}
+.he-problem-card .he-pc-type {
+  font-size: 13px;
+  font-weight: 700;
+  color: #282B75;
+  margin-bottom: 8px;
+}
+.he-problem-card .he-pc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13.5px;
+  color: #5a5a7a;
+  line-height: 1.7;
+}
+.he-problem-card .he-pc-list li::before {
+  content: '·';
+  color: #4f46e5;
+  font-weight: 700;
+  margin-right: 6px;
+}
+.he-challenge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 36px;
+}
+.he-challenge-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(239,68,68,.06);
+  border: 1px solid rgba(239,68,68,.18);
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-size: 13.5px;
+  color: #b91c1c;
+  font-weight: 500;
+}
+.he-challenge-chip svg { flex-shrink: 0; }
+.he-solution-bar {
+  background: linear-gradient(135deg, #eef0ff, #f4f3ff);
+  border: 1px solid rgba(79,70,229,.15);
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin-top: 40px;
+  text-align: center;
+}
+.he-solution-bar p {
+  font-size: 16.5px;
+  color: #282B75;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ── Lifecycle ── */
+.he-lifecycle {
+  padding: 60px 0 80px;
+}
+.he-lifecycle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 48px;
+}
+.he-lc-card {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(40,43,117,.09);
+  border-radius: 14px;
+  padding: 26px 22px;
+  position: relative;
+  transition: box-shadow .2s, transform .2s;
+}
+.he-lc-card:hover {
+  box-shadow: 0 8px 28px rgba(40,43,117,.12);
+  transform: translateY(-3px);
+}
+.he-lc-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background: linear-gradient(135deg, #282B75, #4f46e5);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+.he-lc-title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #20203c;
+  margin-bottom: 8px;
+}
+.he-lc-body {
+  font-size: 13.5px;
+  color: #5a5a7a;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media(max-width:991px) {
+  .he-problem-grid { grid-template-columns: repeat(2, 1fr); }
+  .he-lifecycle-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media(max-width:767px) {
+  .he-problem-grid { grid-template-columns: 1fr; }
+  .he-lifecycle-grid { grid-template-columns: 1fr; }
+  .he-problem, .he-lifecycle { padding: 50px 0; }
+}
+</style>
+
+<!-- Problem Section -->
+<section class="he-problem content-section division" id="he-overview-2">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <div class="section-title mb-20">
+          <span class="lw-eyebrow" style="display:inline-block;margin-bottom:14px;">THE INSTITUTIONAL CHALLENGE</span>
+          <h2 class="s-38 w-700">Your University's Credentials Should Do More Than Sit in a PDF</h2>
+          <p class="p-xl color--grey mt-20" style="max-width:620px;margin-left:auto;margin-right:auto;">
+            Universities issue many forms of achievement — from degrees to micro-credentials. Traditional documents are difficult to verify, hard to share at scale, and disconnected from the skills they represent.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="he-problem-grid">
+      <div class="he-problem-card">
+        <div class="he-pc-type">What Universities Issue</div>
+        <ul class="he-pc-list">
+          <li>Degrees &amp; Diplomas</li>
+          <li>Transcripts</li>
+          <li>Course Certificates</li>
+          <li>Digital Badges</li>
+          <li>Micro-credentials</li>
+          <li>Co-curricular Achievements</li>
+          <li>Continuing Education</li>
+          <li>Competency-based Records</li>
+        </ul>
+      </div>
+      <div class="he-problem-card">
+        <div class="he-pc-type">The Problem With Traditional Credentials</div>
+        <ul class="he-pc-list">
+          <li>Difficult to verify independently</li>
+          <li>Hard to share with employers</li>
+          <li>Disconnected from each other</li>
+          <li>Expensive to manage at scale</li>
+          <li>No analytics or engagement data</li>
+          <li>Disconnected from skills &amp; outcomes</li>
+          <li>Easy to forge or misrepresent</li>
+        </ul>
+      </div>
+      <div class="he-problem-card">
+        <div class="he-pc-type">What Universities Need</div>
+        <ul class="he-pc-list">
+          <li>Instant, independent verification</li>
+          <li>Scalable issuance &amp; management</li>
+          <li>Open, interoperable standards</li>
+          <li>LMS and system integrations</li>
+          <li>Analytics on engagement</li>
+          <li>Branded credential experience</li>
+          <li>Lifelong learner value</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="he-solution-bar">
+      <p>Keep the academic authority of your institution while making credentials more portable, verifiable and useful — without changing existing workflows.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Credential Lifecycle Section -->
+<section class="he-lifecycle content-section division">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <div class="section-title mb-20">
+          <h2 class="s-38 w-700">One Credential Infrastructure for Your Institution</h2>
+          <p class="p-xl color--grey mt-20">Manage the complete credential lifecycle — from design to issuance to analytics — from a single platform built for institutional scale.</p>
+        </div>
+      </div>
+    </div>
+    <div class="he-lifecycle-grid">
+      <div class="he-lc-card">
+        <div class="he-lc-num">1</div>
+        <div class="he-lc-title">Create</div>
+        <p class="he-lc-body">Design university-branded credentials — degrees, badges, certificates and transcripts — with your institution's identity at the centre of every credential.</p>
+      </div>
+      <div class="he-lc-card">
+        <div class="he-lc-num">2</div>
+        <div class="he-lc-title">Issue</div>
+        <p class="he-lc-body">Issue credentials individually or in bulk. Integrate directly with your LMS so credentials are generated automatically when students complete programmes.</p>
+      </div>
+      <div class="he-lc-card">
+        <div class="he-lc-num">3</div>
+        <div class="he-lc-title">Verify</div>
+        <p class="he-lc-body">Enable employers, partner institutions and any third party to verify credentials instantly — no account required, no manual process, no risk of fakes.</p>
+      </div>
+      <div class="he-lc-card">
+        <div class="he-lc-num">4</div>
+        <div class="he-lc-title">Manage</div>
+        <p class="he-lc-body">Manage credential programmes, recipient records, revocations and renewals from one administrative dashboard. Full control, minimal overhead.</p>
+      </div>
+      <div class="he-lc-card">
+        <div class="he-lc-num">5</div>
+        <div class="he-lc-title">Integrate</div>
+        <p class="he-lc-body">Connect with Canvas, Moodle, your SIS and other institutional systems via REST API, webhooks and SSO. CertifyMe fits into your technology stack.</p>
+      </div>
+      <div class="he-lc-card">
+        <div class="he-lc-num">6</div>
+        <div class="he-lc-title">Analyze</div>
+        <p class="he-lc-body">Move beyond knowing how many credentials you issued. Understand engagement, social sharing, verification activity and programme performance over time.</p>
+      </div>
+    </div>
+  </div>
+</section>

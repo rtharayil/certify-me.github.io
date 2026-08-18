@@ -1,0 +1,86 @@
+<!-- FINAL CTA SECTION -->
+<style>
+.he-final-cta {
+  padding: 80px 0 90px;
+  background: linear-gradient(140deg, #282B75 0%, #3D4299 50%, #4f46e5 100%);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.he-final-cta::before {
+  content: '';
+  position: absolute;
+  bottom: -100px; left: -100px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,.06) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.he-final-cta::after {
+  content: '';
+  position: absolute;
+  top: -80px; right: -80px;
+  width: 320px; height: 320px;
+  background: radial-gradient(circle, rgba(255,255,255,.05) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.he-final-cta .container { position: relative; z-index: 2; }
+.he-cta-eyebrow {
+  display: inline-block;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 20px;
+  padding: 5px 16px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: rgba(255,255,255,.8);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.he-final-cta h2 {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.he-final-cta p {
+  font-size: 16px;
+  color: rgba(255,255,255,.78);
+  line-height: 1.65;
+  max-width: 560px;
+  margin: 0 auto 36px;
+}
+.he-cta-btns {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.he-cta-note {
+  font-size: 13px;
+  color: rgba(255,255,255,.55);
+}
+@media(max-width:767px) {
+  .he-final-cta { padding: 60px 0 70px; }
+  .he-cta-btns { flex-direction: column; align-items: center; }
+}
+</style>
+
+<section class="he-final-cta">
+  <div class="container">
+    <span class="he-cta-eyebrow">Ready to Get Started</span>
+    <h2>Ready to Modernize Your University's Credentials?</h2>
+    <p>Bring degrees, transcripts, certificates, badges, skills and student achievements into a trusted digital credential ecosystem — built on open standards, integrated with your existing systems.</p>
+    <div class="he-cta-btns">
+      <a href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer" class="btn r-04 btn--white" style="min-width:180px;">Request a Demo</a>
+      <a href="https://info.certifyme.online/talk-to-education-expert" target="_blank" rel="noopener noreferrer" class="btn r-04 btn--outline-white" style="min-width:210px;">Talk to an Education Expert</a>
+    </div>
+    <p class="he-cta-note">See how CertifyMe fits into your university's existing systems and credentialing workflows.</p>
+  </div>
+</section>
