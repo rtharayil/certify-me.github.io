@@ -953,46 +953,27 @@ h2.statistic-number {
 }
 .bfi2-link:hover { opacity: 1; text-decoration: none; }
 
-/* ── OPEN STANDARDS TRUST STRIP ─────────────────────── */
-.oss-section {
-  background: linear-gradient(135deg, var(--cm-indigo) 0%, #1e2060 50%, #2d1b69 100%);
-  padding: 44px 0;
-}
-.oss-title {
-  font-size: 26px;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1.35;
-  margin: 0 0 14px;
-  letter-spacing: -0.3px;
-}
-.oss-title-alt {
-  color: rgba(255,255,255,0.55);
-}
-.oss-body {
-  font-size: 15px;
-  color: rgba(255,255,255,0.5);
-  margin: 0 0 26px;
-  line-height: 1.65;
-  max-width: 540px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.oss-chips {
+/* ── COMPLIANCE TRUST STRIP (below bento cards) ─────── */
+.cs2-trust-strip {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
   justify-content: center;
+  padding-top: 4px;
 }
-.oss-chip {
+.cs2-trust-item {
   display: inline-flex;
   align-items: center;
   gap: 5px;
   font-size: 12px;
-  font-weight: 600;
-  padding: 5px 13px;
-  border-radius: 20px;
-  border: 1px solid transparent;
+  font-weight: 500;
+  color: rgba(255,255,255,0.45);
+}
+.cs2-trust-sep {
+  width: 1px;
+  height: 12px;
+  background: rgba(255,255,255,0.15);
 }
 
 /* ── WHY INSTITUTIONS CHOOSE CERTIFYME — Dark Bento ─── */
