@@ -1062,7 +1062,9 @@ h2.statistic-number {
   font-weight: 600;
   padding: 2px 8px;
   border-radius: 20px;
-  border: 1px solid transparent;
+  border: 1px solid rgba(255,255,255,.3);
+  color: #fff;
+  background: rgba(255,255,255,.12);
 }
 
 /* ── RESPONSIVE: bento sections + footer (mobile / tablet) ── */
