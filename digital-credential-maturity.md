@@ -82,8 +82,8 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
       <div class="flp2-qual-card flp2-qual-card--cm">
         <div class="flp2-qc-cm-tag">CERTIFYME</div>
         <div class="flp2-qc-num">03</div>
-        <h3 class="flp2-qc-title">I need credentials people can trust, verify and recognise globally</h3>
-        <p class="flp2-qc-desc">Open standards, cryptographic signing, independent verification, machine-readable credentials, globally recognised credential framework.</p>
+        <h3 class="flp2-qc-title">I want my program's credentials to be trusted, verifiable and recognised beyond my own platform</h3>
+        <p class="flp2-qc-desc">Strengthen program credibility, extend recognition globally, make credentials machine-readable and understandable by compatible systems and AI-powered applications.</p>
         <div class="flp2-qc-verdict flp2-qc-verdict--cm">This is where CertifyMe starts</div>
       </div>
       <!-- L4 -->
@@ -157,8 +157,16 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
 <div class="flp2-transition" role="separator" aria-label="CertifyMe platform begins here">
   <div class="container">
     <div class="flp2-transition-inner">
-      <p class="flp2-tr-top">This Is Where Credentialing Changes</p>
-      <p class="flp2-tr-sub">Recognition tells people something was achieved. Verifiable credentials provide structured, trusted evidence of the achievement.</p>
+      <p class="flp2-tr-top">Extend the Value of Every Program You Deliver</p>
+      <p class="flp2-tr-sub">You have invested heavily in your courses, certifications and training programs. The value of those programs should not stop at your website, LMS or internal database. A standards-based digital credential creates a structured digital representation of the program and achievement — one that can be understood by compatible credential platforms, software systems, search and discovery systems, and increasingly AI-powered applications.</p>
+      <div class="flp2-tr-chain" aria-label="Value chain">
+        <span class="flp2-tr-chain-step">Your Program</span><span class="flp2-tr-chain-arr" aria-hidden="true">→</span>
+        <span class="flp2-tr-chain-step">CertifyMe</span><span class="flp2-tr-chain-arr" aria-hidden="true">→</span>
+        <span class="flp2-tr-chain-step">Open Standards</span><span class="flp2-tr-chain-arr" aria-hidden="true">→</span>
+        <span class="flp2-tr-chain-step">Structured Digital Credential</span><span class="flp2-tr-chain-arr" aria-hidden="true">→</span>
+        <span class="flp2-tr-chain-step">Compatible Systems</span><span class="flp2-tr-chain-arr" aria-hidden="true">→</span>
+        <span class="flp2-tr-chain-step flp2-tr-chain-step--em">Greater Program Value &amp; Recognition</span>
+      </div>
       <div class="flp2-tr-labels">
         <div class="flp2-tr-label">
           <span class="flp2-tr-lv">LEVEL 3</span>
@@ -182,10 +190,10 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
     <div class="row align-items-start g-5">
       <div class="col-lg-5">
         <span class="flp2-cm-eyebrow">CERTIFYME PLATFORM — LEVEL 3</span>
-        <h2 class="flp2-level-major-title" id="flp2-l3-h2">Verifiable Digital Credentials</h2>
-        <p class="flp2-level-major-lead">When a credential needs to prove something.</p>
-        <p class="flp2-level-major-body">For organizations that need trusted, standards-based, independently verifiable credentials — not simply digital recognition.</p>
-        <p class="flp2-level-major-body">This is where credentials become trusted evidence.</p>
+        <h2 class="flp2-level-major-title" id="flp2-l3-h2">Trusted, Verifiable &amp; Interoperable Credentials</h2>
+        <p class="flp2-level-major-lead">Your organisation is not simply issuing a badge. You are creating a standards-based digital representation of your program and the achievement it delivers.</p>
+        <p class="flp2-level-major-body">For organizations that need trusted, standards-based, independently verifiable credentials — and want their program's credibility to extend beyond their own platform.</p>
+        <p class="flp2-level-major-body">This is where credentials become trusted, portable, machine-readable evidence.</p>
         <!-- Trust Stack -->
         <div class="flp2-trust-stack" aria-label="Trust stack">
           <div class="flp2-ts-step"><span class="flp2-ts-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M3 10h18M12 3 2 10h20L12 3ZM7 21V10M12 21V10M17 21V10"/></svg></span><span>Institution — the authoritative issuer</span></div>
@@ -201,48 +209,48 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
       </div>
       <div class="col-lg-7">
         <!-- B2B Value grid -->
-        <h3 class="flp2-subhead">The B2B Value of Level 3</h3>
+        <h3 class="flp2-subhead">What Level 3 Does for Your Program</h3>
         <div class="row g-3 mb-4">
           <div class="col-sm-6">
             <div class="flp2-val-card">
-              <strong>Trust</strong>
-              <p>Recipients, employers, partners and other stakeholders can verify the credential independently.</p>
+              <strong>Strengthen Program Credibility</strong>
+              <p>Your credential represents not only the recipient, but the organisation, program, achievement criteria and standards behind it.</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="flp2-val-card">
-              <strong>Control</strong>
-              <p>The issuing organization remains the authoritative issuer. Full lifecycle management.</p>
+              <strong>Extend Program Recognition</strong>
+              <p>Standards-based credentials are designed to make achievements more portable and usable across a broader credential ecosystem.</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="flp2-val-card">
-              <strong>Standards</strong>
-              <p>Open Badges 3.0 and W3C Verifiable Credentials provide a modern, interoperable foundation.</p>
+              <strong>Make Programs Machine-Understandable</strong>
+              <p>Structured credential data gives compatible systems — and increasingly AI-powered applications — clearer information about your programs, achievements and skills.</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="flp2-val-card">
-              <strong>Scale</strong>
-              <p>Issue credentials at scale instead of manually creating certificates.</p>
+              <strong>Build Long-Term Program Value</strong>
+              <p>Move beyond issuing a certificate toward a credential infrastructure that can evolve into records, skills, pathways and workforce intelligence.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="flp2-val-card">
+              <strong>Independent Verification</strong>
+              <p>Recipients, employers and partners can verify the credential independently — without contacting your organisation.</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="flp2-val-card">
               <strong>Global Recognition</strong>
-              <p>Credentials built on Open Badges 3.0 and W3C VC are recognised by institutions, employers and systems worldwide.</p>
+              <p>Credentials built on Open Badges 3.0 and W3C VC are designed for broader recognition across institutions, employers and compatible systems worldwide.</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="flp2-val-card">
-              <strong>Auditability</strong>
-              <p>A reliable digital record of what was issued and to whom.</p>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="flp2-val-card">
-              <strong>Analytics</strong>
-              <p>Understand issuance, engagement, sharing and verification across your credential program.</p>
+              <strong>Enterprise-Scale Issuance</strong>
+              <p>Issue, manage and track credentials at scale across your entire credential program — with full auditability and lifecycle control.</p>
             </div>
           </div>
         </div>
@@ -258,7 +266,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
               </div>
             </div>
             <div class="flp2-sb-item">
-              <img src="/images/standards-logos/w3c_1.png" alt="W3C" height="20" style="max-width:60px;object-fit:contain;filter:brightness(0) invert(1);opacity:.85;">
+              <img src="/images/standards-logos/w3c_vc.png" alt="W3C" height="32" style="max-width:72px;object-fit:contain;filter:brightness(0) invert(1);opacity:.9;">
               <div>
                 <strong>W3C Verifiable Credentials</strong>
                 <span>Supported</span>
@@ -346,9 +354,9 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
     <div class="row align-items-start g-5">
       <div class="col-lg-5">
         <span class="flp2-cm-eyebrow flp2-cm-eyebrow--gold">CERTIFYME PLATFORM — LEVEL 4</span>
-        <h2 class="flp2-level-major-title" id="flp2-l4-h2">Extend the Credential Into a Skills Ecosystem</h2>
+        <h2 class="flp2-level-major-title" id="flp2-l4-h2">From Credentials to Program &amp; Skills Intelligence</h2>
         <p class="flp2-level-major-lead">Level 4 starts with the same trusted credential foundation — then connects credentials to records, skills, learning pathways and workforce intelligence.</p>
-        <p class="flp2-level-major-body">This is where credentials become infrastructure for skills and workforce intelligence.</p>
+        <p class="flp2-level-major-body">This is where credentials become infrastructure for program intelligence, skills insight and workforce planning.</p>
         <!-- L3→L4 progression -->
         <div class="flp2-progression">
           <div class="flp2-prog-box flp2-prog-box--l3">
@@ -432,57 +440,74 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
   <div class="container">
     <div class="row justify-content-center text-center mb-5">
       <div class="col-lg-7">
-        <h2 class="flp2-section-title" id="flp2-l4v-h2">The Questions Level 4 Answers</h2>
-        <p class="flp2-section-sub">The primary B2B value of Level 4 is organizational intelligence — not just individual credential sharing.</p>
+        <h2 class="flp2-section-title" id="flp2-l4v-h2">What Level 4 Connects for Your Organisation</h2>
+        <p class="flp2-section-sub">The primary B2B value of Level 4 is program and skills intelligence — connecting credential data to records, skills, pathways and workforce planning.</p>
       </div>
     </div>
     <div class="row g-4">
       <!-- University -->
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="flp2-l4v-card">
           <h3>For a University</h3>
           <div class="flp2-l4v-chain">
-            <span>What did we teach?</span>
+            <span>Degrees &amp; Transcripts</span>
             <span class="arr">↓</span>
-            <span>What credentials did we issue?</span>
+            <span>Certificates &amp; Badges</span>
             <span class="arr">↓</span>
-            <span>What skills do those credentials represent?</span>
+            <span>Co-curricular Achievements</span>
             <span class="arr">↓</span>
-            <span>How do those skills align with employer demand?</span>
+            <span>Comprehensive Learner Record (CLR)</span>
             <span class="arr">↓</span>
-            <strong>What should learners learn next?</strong>
+            <span>Skills &amp; Skill Passport</span>
+            <span class="arr">↓</span>
+            <strong>Workforce Relevance</strong>
           </div>
         </div>
       </div>
       <!-- Enterprise -->
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="flp2-l4v-card">
           <h3>For an Enterprise</h3>
           <div class="flp2-l4v-chain">
-            <span>What training did employees complete?</span>
+            <span>Learning Programs</span>
             <span class="arr">↓</span>
-            <span>What credentials did they earn?</span>
+            <span>Employee Credentials</span>
             <span class="arr">↓</span>
-            <span>What skills were developed?</span>
+            <span>Skills &amp; Skills Taxonomy</span>
             <span class="arr">↓</span>
-            <span>Where are the skill gaps?</span>
+            <span>Career Pathways &amp; Job Roles</span>
             <span class="arr">↓</span>
-            <strong>What learning pathways come next?</strong>
+            <strong>Workforce Skill Gap Intelligence</strong>
           </div>
         </div>
       </div>
       <!-- Cert body -->
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="flp2-l4v-card">
           <h3>For a Certification Body</h3>
           <div class="flp2-l4v-chain">
-            <span>What was certified?</span>
+            <span>Certifications &amp; Verification</span>
             <span class="arr">↓</span>
-            <span>What skills does the certification represent?</span>
+            <span>Skills Represented</span>
             <span class="arr">↓</span>
-            <span>How does it relate to professional pathways?</span>
+            <span>Professional Pathways</span>
             <span class="arr">↓</span>
-            <strong>How does it remain valuable over time?</strong>
+            <strong>Credential Lifecycle Value</strong>
+          </div>
+        </div>
+      </div>
+      <!-- E-learning -->
+      <div class="col-md-3">
+        <div class="flp2-l4v-card">
+          <h3>For E-Learning Providers</h3>
+          <div class="flp2-l4v-chain">
+            <span>Courses &amp; Credentials</span>
+            <span class="arr">↓</span>
+            <span>Skills Developed</span>
+            <span class="arr">↓</span>
+            <span>Learning Pathways</span>
+            <span class="arr">↓</span>
+            <strong>Career Relevance</strong>
           </div>
         </div>
       </div>
@@ -750,24 +775,25 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-lg-7">
-        <h2 class="flp2-cta-title" id="flp2-cta-h2">What Does Your Credential Need to Do?</h2>
+        <h2 class="flp2-cta-title" id="flp2-cta-h2">Extend the Value of Every Program You Deliver</h2>
+        <p class="flp2-cta-lead">CertifyMe turns your courses, certifications and achievements into standards-based digital credentials designed to strengthen program credibility, extend recognition and create richer digital context for people, systems and the emerging AI-powered ecosystem.</p>
         <div class="flp2-cta-options">
           <div class="flp2-cta-opt">
-            <p>If it only needs to be displayed:</p>
+            <p>If branding and sharing are your priority:</p>
             <strong>Level 2 may be enough.</strong>
           </div>
           <div class="flp2-cta-opt flp2-cta-opt--em">
-            <p>If it needs to be trusted and verified:</p>
+            <p>If trust, verification and program credibility matter:</p>
             <strong>You need Level 3.</strong>
           </div>
           <div class="flp2-cta-opt flp2-cta-opt--em">
-            <p>If it needs to connect credentials with skills and workforce outcomes:</p>
+            <p>If you want credentials connected to skills and workforce intelligence:</p>
             <strong>You're looking at Level 4.</strong>
           </div>
         </div>
-        <p class="flp2-cta-anchor"><strong>CertifyMe is built for both.</strong></p>
+        <p class="flp2-cta-anchor"><strong>CertifyMe is built for both Levels 3 and 4.</strong></p>
         <div class="flp2-cta-buttons">
-          <a href="/request-demo" class="flp-btn-primary flp-btn-primary--large">Talk to a Credential Expert</a>
+          <a href="/request-demo" class="flp-btn-primary flp-btn-primary--large">Discuss Your Credential Strategy</a>
           <a href="/request-demo" class="flp-btn-secondary flp-btn-secondary--large">Request a Demo</a>
         </div>
       </div>

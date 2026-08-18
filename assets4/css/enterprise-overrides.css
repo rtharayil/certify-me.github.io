@@ -2484,7 +2484,20 @@ h2.statistic-number {
   font-size: 1.4rem; font-weight: 900; color: #fff;
   margin: 0 0 10px; line-height: 1.25;
 }
-.flp2-tr-sub { font-size: .95rem; color: #c7d2fe; margin: 0 0 28px; line-height: 1.6; }
+.flp2-tr-sub { font-size: .95rem; color: #c7d2fe; margin: 0 0 22px; line-height: 1.6; }
+.flp2-tr-chain {
+  display: flex; align-items: center; flex-wrap: wrap;
+  gap: 6px; justify-content: center; margin: 0 0 28px;
+}
+.flp2-tr-chain-step {
+  font-size: .78rem; font-weight: 700; color: #fff;
+  background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+  border-radius: 20px; padding: 4px 12px; white-space: nowrap;
+}
+.flp2-tr-chain-step--em {
+  background: #4f46e5; border-color: #6366f1; color: #fff;
+}
+.flp2-tr-chain-arr { font-size: .75rem; color: rgba(255,255,255,.4); }
 .flp2-tr-labels {
   display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap;
 }
@@ -2779,7 +2792,11 @@ h2.statistic-number {
 .flp2-final-cta { background: #f4f3ff; padding: 80px 0; border-top: 1px solid #e0e7ff; }
 .flp2-cta-title {
   font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 900; color: #282B75;
-  margin: 0 0 32px; line-height: 1.2;
+  margin: 0 0 16px; line-height: 1.2;
+}
+.flp2-cta-lead {
+  font-size: 1rem; color: #4b5563; line-height: 1.65;
+  margin: 0 0 28px; max-width: 600px; margin-left: auto; margin-right: auto;
 }
 .flp2-cta-options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
 .flp2-cta-opt {
