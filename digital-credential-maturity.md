@@ -143,7 +143,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
         <span>Can the credential be independently verified?</span>
         <span>Is the data structured and machine-readable?</span>
         <span>Is it built on open standards?</span>
-        <span>Is the program globally recognised?</span>
+        <span>Do you want your program to be globally recognised?</span>
         <span>Can credentials form a broader record?</span>
         <span>Can achievements connect to skills?</span>
         <span>Can it integrate with workforce systems?</span>
