@@ -5,6 +5,7 @@ stack = "BEST_EFFORT_FALLBACK"
 
 [nix]
 channel = "stable-25_05"
+packages = ["chromium"]
 
 [workflows]
 runButton = "Project"
@@ -40,7 +41,7 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "bundle exec ruby scripts/validate-comparison-pages.rb"
+args = "bundle exec ruby scripts/validate-comparison-pages.rb && npm run test:comparison-mobile"
 
 [workflows.workflow.metadata]
 isValidation = true
