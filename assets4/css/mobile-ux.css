@@ -30,9 +30,129 @@
   }
 }
 
-/* Mobile navigation: the theme's built-in accordion/slide behaviour is
-   used as-is. No overrides here — any override to .wsmenu background
-   paints the full-viewport-wide wrapper, not just the slide-in panel. */
+/* ---------- MOBILE NAVIGATION — full-screen accordion ---------- */
+@media (max-width: 991.98px) {
+  /*
+   * The theme's original 350px drawer shifts the page and leaves a narrow
+   * unreachable sliver beside the menu. Use an intentional full-screen panel
+   * instead, with the persistent mobile header as its close affordance.
+   */
+  .wsmobileheader {
+    height: 72px !important;
+    margin-right: 0 !important;
+    background: rgba(255, 255, 255, .98) !important;
+    border-bottom: 1px solid rgba(40, 43, 117, .10);
+    box-shadow: 0 2px 14px rgba(40, 43, 117, .08) !important;
+  }
+  .wsactive .wsmobileheader {
+    margin-right: 0 !important;
+  }
+  .wsmobileheader .smllogo {
+    margin-top: 18px !important;
+    padding-left: 20px !important;
+  }
+  .wsmobileheader .smllogo img {
+    max-height: 30px;
+    width: auto;
+  }
+  #wsnavtoggle.wsanimated-arrow {
+    top: 16px !important;
+    right: 18px !important;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(40, 43, 117, .16);
+    border-radius: 10px;
+    background: #f5f6ff;
+    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #wsnavtoggle.wsanimated-arrow span {
+    position: relative;
+    width: 22px;
+    background: #282b75;
+  }
+  #wsnavtoggle.wsanimated-arrow span::before,
+  #wsnavtoggle.wsanimated-arrow span::after {
+    background: #282b75;
+  }
+
+  .wsmenu > .wsmenu-list {
+    width: 100% !important;
+    min-height: 100dvh;
+    margin-right: -100% !important;
+    padding: 88px 20px 32px !important;
+    text-align: left;
+    background: #fff !important;
+  }
+  .wsactive .wsmenu > .wsmenu-list {
+    margin-right: 0 !important;
+  }
+  .wsactive .wsmenucontainer {
+    margin-right: 0 !important;
+  }
+  .overlapblackbg {
+    display: none !important;
+  }
+
+  .wsmenu > .wsmenu-list > li > a.h-link,
+  .wsmenu > .wsmenu-list > li > a {
+    padding: 16px 54px 16px 2px !important;
+    font-size: 16px !important;
+    line-height: 1.35 !important;
+    font-weight: 650 !important;
+    color: #1e293b !important;
+    border-bottom: 1px solid #e8eaf3 !important;
+  }
+  .wsmenu > .wsmenu-list > li > .wsmenu-click {
+    width: 52px !important;
+    height: 56px !important;
+  }
+  .wsmenu > .wsmenu-list > li > .wsmegamenu,
+  .wsmenu > .wsmenu-list > li > ul.sub-menu {
+    width: auto !important;
+    margin: 0 -20px !important;
+    padding: 4px 20px 10px !important;
+    background: #f7f8ff !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  .wsmenu > .wsmenu-list > li > .wsmegamenu .container {
+    width: 100%;
+    padding: 0;
+  }
+  .wsmenu > .wsmenu-list > li > .wsmegamenu .row {
+    margin: 0;
+  }
+  .wsmenu > .wsmenu-list > li > .wsmegamenu ul.link-list {
+    margin: 0;
+    padding: 0;
+  }
+  .wsmenu > .wsmenu-list > li > .wsmegamenu ul.link-list > li > a,
+  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > a {
+    padding: 11px 4px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #475569 !important;
+    line-height: 1.4 !important;
+  }
+  .wsmenu > .wsmenu-list > li > .wsmegamenu ul.link-list > li > a.btn {
+    margin: 10px 0 6px !important;
+    padding: 13px 18px !important;
+    text-align: center;
+    color: #fff !important;
+  }
+  .wsmenu > .wsmenu-list > li > a.btn.last-link {
+    display: block;
+    margin: 18px 0 0 !important;
+    padding: 14px 18px !important;
+    text-align: center;
+    border: 0 !important;
+  }
+}
 
 /* ---------- HERO ---------- */
 @media (max-width: 767.98px) {
@@ -415,4 +535,19 @@
     margin-bottom: 22px !important;
   }
   footer { padding-top: 44px !important; }
+  /* Counter the inline -40px margin which causes the footer divider and
+     copyright to overlap the final entries in the longer link column. */
+  #footer-3 > .container > .row:first-child {
+    margin-bottom: 0 !important;
+  }
+  #footer-3 > .container > hr {
+    margin-top: 8px;
+    margin-bottom: 18px;
+  }
+  #footer-3 .bottom-footer .row {
+    row-gap: 6px;
+  }
+  #footer-3 .bottom-secondary-link {
+    text-align: left !important;
+  }
 }

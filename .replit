@@ -42,3 +42,7 @@ externalPort = 3001
 deploymentTarget = "static"
 build = ["bash", "-c", "bundle install && bundle exec jekyll build"]
 publicDir = "_site"
+
+[postMerge]
+path = "scripts/post-merge.sh"
+timeoutMs = 180000

@@ -11,11 +11,14 @@ jQuery(function () {
     jQuery('<div class="overlapblackbg"></div>').prependTo('.wsmenu');
 
     jQuery('#wsnavtoggle').click(function () {
+      const menuWillOpen = !jQuery('body').hasClass('wsactive');
       jQuery('body').toggleClass('wsactive');
+      jQuery(this).attr('aria-expanded', String(menuWillOpen));
     });
 
     jQuery('.overlapblackbg').click(function () {
       jQuery("body").removeClass('wsactive');
+      jQuery('#wsnavtoggle').attr('aria-expanded', 'false');
     });
 
     jQuery('.wsmenu > .wsmenu-list > li').has('.sub-menu').prepend('<span class="wsmenu-click"><i class="wsmenu-arrow"></i></span>');
