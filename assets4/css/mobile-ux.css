@@ -345,6 +345,69 @@
   }
 }
 
+/* ---------- CAROUSEL SWIPE HINTS (dots + edge fade) ----------
+   Only active at <768px via JS wrapping (.carousel-hint-wrap).
+   Dark variant used inside wic2/bfi2 dark-indigo sections. */
+@media (max-width: 767.98px) {
+
+  /* Wrapper anchors the right-edge fade */
+  .carousel-hint-wrap {
+    position: relative;
+  }
+
+  /* Right-edge gradient — light sections */
+  .carousel-hint-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 28px; /* leaves dots area clear */
+    width: 52px;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.88));
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  /* Right-edge gradient — dark (indigo) sections */
+  .carousel-hint-wrap--dark::after {
+    background: linear-gradient(to right, transparent, rgba(30,32,96,0.85));
+  }
+
+  /* Dots row */
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }
+
+  /* Individual dot — light-section default (dark dots) */
+  .carousel-dot {
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.18);
+    transition: background 0.25s ease, width 0.25s ease, border-radius 0.25s ease;
+    flex-shrink: 0;
+  }
+  .carousel-dot.is-active {
+    background: #4f46e5;
+    width: 20px;
+    border-radius: 4px;
+  }
+
+  /* Dark-section variant (white dots) */
+  .carousel-dots--dark .carousel-dot {
+    background: rgba(255, 255, 255, 0.30);
+  }
+  .carousel-dots--dark .carousel-dot.is-active {
+    background: #fff;
+  }
+}
+
 /* ---------- FOOTER ---------- */
 @media (max-width: 767.98px) {
   footer .footer-info,

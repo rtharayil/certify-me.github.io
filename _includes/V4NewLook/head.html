@@ -94,8 +94,8 @@
   <!-- ENTERPRISE OVERRIDES — loaded last, highest specificity -->
   <link href="/assets4/css/enterprise-overrides.css" rel="stylesheet">
 
-  {% if page.url == "/" %}
-  <!-- MOBILE UX — homepage mobile/tablet re-composition, desktop untouched -->
+  {% if page.url == "/" or page.url == "/digital-credential-maturity/" %}
+  <!-- MOBILE UX — homepage + credential-maturity mobile/tablet re-composition, desktop untouched -->
   <link href="/assets4/css/mobile-ux.css" rel="stylesheet">
   {% endif %}
 
