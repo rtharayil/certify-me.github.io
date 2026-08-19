@@ -261,6 +261,13 @@ h2.statistic-number {
   position: relative !important;
   z-index: 1 !important;
 }
+/* ── WORKFORCE INTELLIGENCE section — same bg as hero ─── */
+#job-intelligence-section {
+  background-image:
+    radial-gradient(ellipse 80% 60% at 70% -10%, rgba(106,90,205,.10) 0%, transparent 60%),
+    linear-gradient(160deg, #ece9fd 0%, #f0f1ff 40%, #edf2ff 70%, #f5f7ff 100%) !important;
+}
+
 /* Subtle "Trusted by" label */
 #badges.badges-main-container::before {
   content: 'Trusted by world-class institutions';
@@ -1323,7 +1330,9 @@ h2.statistic-number {
    FOUR LEVELS — HOMEPAGE COMPACT SECTION (.fl-*)
    ============================================================ */
 .fl-section {
-  background: #f4f3ff;
+  background-image:
+    radial-gradient(ellipse 80% 60% at 70% -10%, rgba(106,90,205,.10) 0%, transparent 60%),
+    linear-gradient(160deg, #ece9fd 0%, #f0f1ff 40%, #edf2ff 70%, #f5f7ff 100%);
   padding: 60px 0 48px;
 }
 .fl-eyebrow {
