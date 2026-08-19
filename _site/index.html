@@ -120,6 +120,11 @@
   <!-- ENTERPRISE OVERRIDES — loaded last, highest specificity -->
   <link href="/assets4/css/enterprise-overrides.css" rel="stylesheet">
 
+  
+  <!-- MOBILE UX — homepage mobile/tablet re-composition, desktop untouched -->
+  <link href="/assets4/css/mobile-ux.css" rel="stylesheet">
+  
+
   <!-- STRUCTURED DATA: Organization + WebSite + SoftwareApplication -->
   <script type="application/ld+json">
   {
@@ -579,12 +584,7 @@
         padding: 7px 14px;
     }
 }
-/* Hide on mobile */
-@media (max-width: 767px) {
-    .cred-tags {
-        display: none !important;
-    }
-}
+/* Mobile: compact chips (kept visible; sizing handled in mobile-ux.css) */
                         </style>
 
                        <div class="btns-group cred-tags mt-4">
@@ -1526,7 +1526,7 @@ function opd_switch(n) {
 .jir-chip-dot{width:7px;height:7px;border-radius:50%;display:inline-block;margin-right:4px;vertical-align:middle;}
 /* Responsive */
 @media(max-width:991px){.jir-shot-wrap{padding:36px 0 44px;}.jir-two-col{grid-template-columns:1fr;}.jir-col+.jir-col{border-left:none;border-top:1px solid #f1f5f9;}.jir-co-grid{grid-template-columns:repeat(3,1fr);}.jir-hero-row{flex-direction:column;align-items:flex-start;}.jir-hero-divider{display:none;}}
-@media(max-width:767px){.jir-shot-wrap{padding:24px 0 28px;}.jir-report-card{max-height:480px;overflow-y:auto;}.jir-co-grid{grid-template-columns:repeat(3,1fr);}.jir-float-pill{display:none;}}
+@media(max-width:767px){.jir-shot-wrap{padding:24px 0 28px;}.jir-co-grid{grid-template-columns:repeat(3,1fr);}.jir-float-pill{display:none;}}
 @media(max-width:575px){.jir-hero-num{font-size:30px;}.jir-report-header{flex-direction:column;align-items:flex-start;}.jir-header-right{align-items:flex-start;}}
 </style>
 

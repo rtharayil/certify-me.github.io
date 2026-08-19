@@ -1,0 +1,383 @@
+/* ============================================================
+   MOBILE UX — homepage mobile/tablet re-composition
+   Loaded after enterprise-overrides.css.
+   Desktop (≥992px) is untouched: every rule lives inside
+   max-width media queries.
+   ============================================================ */
+
+/* ---------- GLOBAL POLISH ---------- */
+@media (max-width: 991.98px) {
+
+  html, body {
+    overflow-x: hidden !important;
+  }
+
+  /* Tighten the theme's oversized section paddings on mobile */
+  .py-100 { padding-top: 48px !important; padding-bottom: 48px !important; }
+  .pt-100 { padding-top: 48px !important; }
+  .pb-100 { padding-bottom: 48px !important; }
+  .pt-70  { padding-top: 36px !important; }
+  .pt-60  { padding-top: 40px !important; }
+  .pb-60  { padding-bottom: 40px !important; }
+}
+
+@media (max-width: 991.98px) and (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- MOBILE NAVIGATION ---------- */
+@media (max-width: 991.98px) {
+
+  /* Slide-in panel: near full width, clean white, comfortable tap targets */
+  .wsmenu {
+    background: #fff !important;
+  }
+  .wsmenu > .wsmenu-list {
+    background: #fff !important;
+    padding-bottom: 24px;
+  }
+  .wsmenu > .wsmenu-list > li > a.h-link,
+  .wsmenu > .wsmenu-list > li > a {
+    font-size: 16px !important;
+    padding: 14px 48px 14px 18px !important;
+    color: #1e293b !important;
+    font-weight: 600;
+  }
+  /* Accordion contents: calmer, indented, larger touch targets */
+  .wsmenu > .wsmenu-list > li > .wsmegamenu,
+  .wsmenu > .wsmenu-list > li > ul.sub-menu {
+    background: #f8f9ff !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  .wsmegamenu .link-list li a,
+  .wsmenu ul.sub-menu li a {
+    font-size: 15px !important;
+    padding: 12px 18px !important;
+    color: #334155 !important;
+  }
+  /* Demo CTA inside menus: keep it looking like a button, full width */
+  .wsmegamenu .link-list li a.btn,
+  .wsmenu .wsmenu-list li a.btn {
+    margin: 10px 18px !important;
+    display: block;
+    text-align: center;
+    color: #fff !important;
+  }
+}
+
+/* ---------- HERO ---------- */
+@media (max-width: 767.98px) {
+
+  #hero-7 .hero-7-txt {
+    text-align: left;
+  }
+  #hero-7 h1 {
+    font-size: clamp(1.7rem, 7.5vw, 2.2rem) !important;
+    line-height: 1.22 !important;
+    padding-bottom: 14px !important;
+  }
+  #hero-7 .p-lg {
+    font-size: 1rem !important;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  /* Full-width stacked CTAs */
+  #hero-7 .btns-group:not(.cred-tags) {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  #hero-7 .btns-group:not(.cred-tags) .btn {
+    width: 100%;
+    text-align: center;
+    margin: 0 !important;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  /* Trust chips: visible again, compact single strip.
+     !important needed — enterprise-overrides.css styles .cred-tag and
+     .hero-7-txt .btns-group with !important. */
+  #hero-7 .btns-group.cred-tags {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    margin-top: 18px !important;
+  }
+  #hero-7 .cred-tag {
+    font-size: 11.5px !important;
+    padding: 5px 12px 5px 10px !important;
+    margin-bottom: 0 !important;
+  }
+  /* Image after copy, contained */
+  #hero-7 .hero-7-img {
+    margin-top: 26px;
+    padding-bottom: 0 !important;
+  }
+  #hero-7 .hero-7-img img {
+    max-height: 340px;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+/* ---------- CLIENT LOGOS — 2×3 grid ---------- */
+@media (max-width: 767.98px) {
+  #badges .logo-list {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px 14px;
+    align-items: center;
+    justify-items: center;
+    padding: 8px 0;
+  }
+  #badges .logo-list li {
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #badges .logo-list img {
+    max-height: 34px;
+    width: auto;
+    max-width: 100%;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 419.98px) {
+  #badges .logo-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- STATISTICS — compact 3-up row ---------- */
+@media (max-width: 767.98px) {
+  #statistic-1 {
+    padding-top: 28px !important;
+    padding-bottom: 32px !important;
+  }
+  #statistic-1 .statistic-1-wrapper .row {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+  }
+  #statistic-1 .statistic-1-wrapper .col {
+    flex: 1 1 0;
+    min-width: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  #statistic-1 .statistic-block {
+    text-align: center;
+    margin-bottom: 0 !important;
+  }
+  #statistic-1 .statistic-number {
+    font-size: 1.75rem !important;
+  }
+  #statistic-1 .statistic-block-txt p {
+    font-size: 12.5px !important;
+    line-height: 1.35;
+    margin-bottom: 0;
+  }
+}
+
+/* ---------- CARD GRIDS → SCROLL-SNAP CAROUSELS ----------
+   Applies to: Why Institutions Choose (wic2, incl. Compliance),
+   Built for Institutions (bfi2). One card ~85% wide, swipe. */
+@media (max-width: 767.98px) {
+
+  .wic2-section .row.row-cols-1,
+  .bfi2-section .row.row-cols-1 {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 12px;
+    padding: 4px 4px 14px;
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    scrollbar-width: none;
+  }
+  .wic2-section .row.row-cols-1::-webkit-scrollbar,
+  .bfi2-section .row.row-cols-1::-webkit-scrollbar { display: none; }
+
+  .wic2-section .row.row-cols-1 > .col,
+  .bfi2-section .row.row-cols-1 > .col {
+    flex: 0 0 82% !important;
+    max-width: 82% !important;
+    scroll-snap-align: center;
+    padding: 0 !important;
+  }
+  .wic2-section .wic2-card,
+  .bfi2-section .bfi2-card {
+    height: 100%;
+  }
+  /* Trust strip under compliance: wrap nicely */
+  .cs2-trust-strip {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 14px;
+  }
+  .cs2-trust-sep { display: none; }
+
+  /* FourLevels qualifier grid → carousel */
+  .flp2-qual-grid {
+    display: flex !important;
+    grid-template-columns: none !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 12px;
+    padding: 4px 12px 14px;
+    margin-left: -12px;
+    margin-right: -12px;
+    scrollbar-width: none;
+  }
+  .flp2-qual-grid::-webkit-scrollbar { display: none; }
+  .flp2-qual-grid > .flp2-qual-card {
+    flex: 0 0 82%;
+    scroll-snap-align: center;
+  }
+  .fl-footer-strip {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* ---------- PRODUCT DETAILS (opd) ---------- */
+@media (max-width: 767.98px) {
+  .opd-section {
+    margin-top: 28px !important;
+  }
+  .opd-section .section-title {
+    margin-bottom: 26px !important;
+  }
+  .opd-section .section-title h2 {
+    font-size: 1.5rem !important;
+    line-height: 1.25;
+  }
+  .opd-shell { margin-bottom: 20px !important; }
+  .opd-panel img { max-height: 380px; width: auto !important; max-width: 100%; margin: 0 auto; }
+  /* Step list: tighter spacing */
+  .opd-section .cbox-2.process-step { margin-bottom: 14px; }
+  .opd-section .cbox-2-txt h5 { font-size: 1.05rem !important; }
+  .opd-section .cbox-2-txt p { font-size: 14px !important; text-align: left !important; }
+}
+
+/* ---------- SHOWCASE DIRECTORY ---------- */
+@media (max-width: 767.98px) {
+  #showcase-directory-section .txt-block {
+    padding-left: 0 !important;
+  }
+  #showcase-directory-section h2 {
+    font-size: 1.5rem !important;
+  }
+  #showcase-directory-section .sd-shot-wrap {
+    margin-top: 22px;
+  }
+  #showcase-directory-section .sd-shot-wrap img {
+    max-height: 360px;
+    width: auto !important;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  #showcase-directory-section .sd-ctas .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ---------- JOB INTELLIGENCE ---------- */
+@media (max-width: 767.98px) {
+  #job-intelligence-section .txt-block {
+    padding-right: 0 !important;
+  }
+  #job-intelligence-section h2 {
+    font-size: 1.5rem !important;
+  }
+  #job-intelligence-section .jir-shot-wrap img {
+    max-height: 400px;
+    width: auto !important;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  #job-intelligence-section .jir-ctas .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ---------- LEARNER WALLET ---------- */
+@media (max-width: 767.98px) {
+  #learner-wallet-section .txt-block {
+    padding-left: 0 !important;
+  }
+  #learner-wallet-section h2 {
+    font-size: 1.5rem !important;
+  }
+  #learner-wallet-section .lw-shot-wrap {
+    margin-top: 22px;
+    padding: 0 !important;
+  }
+  #learner-wallet-section .lw-shot-wrap img {
+    max-height: 360px;
+    width: auto !important;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  #learner-wallet-section .lw-ctas .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ---------- LINKEDIN RECOGNITION ---------- */
+@media (max-width: 767.98px) {
+  .li-recog-h2 { font-size: 1.35rem !important; }
+}
+
+/* ---------- G2 ENTERPRISE ---------- */
+@media (max-width: 767.98px) {
+  .ct-01 .txt-block { padding-right: 0 !important; }
+  .ct-01 h2.s-38 { font-size: 1.5rem !important; }
+  .ct-01 .img-block { margin-top: 10px; }
+  #rating-1 { padding-top: 24px !important; }
+  #rating-1 .rbox-1 { margin-bottom: 22px; }
+}
+
+/* ---------- API / INTEGRATIONS BANNER ---------- */
+@media (max-width: 767.98px) {
+  #banner-13 { padding-top: 44px !important; }
+  #banner-13 .banner-13-txt h2 { font-size: 1.5rem !important; }
+  #banner-13 .banner-13-txt .btn {
+    width: 100%;
+    text-align: center;
+  }
+  #banner-13 .col-md-5 img {
+    max-height: 220px;
+    width: auto !important;
+    max-width: 100%;
+    margin: 16px auto 0;
+    display: block;
+  }
+}
+
+/* ---------- FOOTER ---------- */
+@media (max-width: 767.98px) {
+  footer .footer-info,
+  footer .footer-links {
+    margin-bottom: 22px !important;
+  }
+  footer { padding-top: 44px !important; }
+}
