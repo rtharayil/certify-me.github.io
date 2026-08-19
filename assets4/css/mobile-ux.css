@@ -584,8 +584,12 @@
 }
 
 /* ---------- CAROUSEL SWIPE HINTS (dots + edge fade) ----------
-   Only active at <768px via JS wrapping (.carousel-hint-wrap).
-   Dark variant used inside wic2/bfi2 dark-indigo sections. */
+   The wrapper and dots are static HTML; only active-dot state is updated
+   by JS at <768px. Dark variant used inside wic2/bfi2 sections. */
+.carousel-dots {
+  display: none;
+}
+
 @media (max-width: 767.98px) {
 
   /* Wrapper anchors the right-edge fade */
