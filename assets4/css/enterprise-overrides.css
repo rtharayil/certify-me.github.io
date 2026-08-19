@@ -10,8 +10,6 @@
 
 /* ── FONTS: Manrope (headlines) + Inter (body) — permanent choice ─── */
 
-/* Page base — matches hero gradient terminal so no white flash between sections */
-body { background-color: #f5f7ff !important; }
 
 /* Body / UI text → Inter */
 body,
@@ -257,7 +255,9 @@ h2.statistic-number {
   padding-top: 24px !important;
   padding-bottom: 48px !important;
   margin-top: 0 !important;
-  background: transparent !important;
+  background-image:
+    radial-gradient(ellipse 80% 60% at 70% -10%, rgba(106,90,205,.10) 0%, transparent 60%),
+    linear-gradient(160deg, #ece9fd 0%, #f0f1ff 40%, #edf2ff 70%, #f5f7ff 100%) !important;
   position: relative !important;
   z-index: 1 !important;
 }
