@@ -1,0 +1,166 @@
+{% comment %}
+  Reusable comparison-page context.
+  Pass position="intro" before the article or position="footer" after it.
+  Page-specific framing comes from comparison_subject and comparison_context.
+{% endcomment %}
+
+{% if include.position == "intro" %}
+<div class="cp-layer cp-layer--intro" aria-label="Credential ecosystem comparison context">
+  <section class="cp-frame" aria-labelledby="cp-lens-heading">
+    <div class="cp-notbadges-banner">
+      <p class="cp-eyebrow cp-eyebrow--light">Use the right comparison lens</p>
+      <h2 id="cp-lens-heading">Compare the ecosystem, not only the badge</h2>
+      <p>
+        This page evaluates {{ page.comparison_subject | default: "digital credential platforms" }}
+        in the context of {{ page.comparison_context | default: "the complete credential lifecycle" }}.
+        Issuance matters, but buyers should also test what happens afterward: verification, learner
+        records, skills, pathways, workforce relevance, integrations, and professional identity.
+      </p>
+      <div class="cp-pill-row" aria-label="Credential ecosystem layers">
+        <span>Trust</span><span>Records</span><span>Skills</span><span>Pathways</span>
+        <span>Workforce intelligence</span><span>Identity</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cp-frame" aria-labelledby="cp-scope-heading">
+    <div class="cp-heading">
+      <p class="cp-eyebrow">Platform scope</p>
+      <h2 id="cp-scope-heading">What should a platform comparison actually test?</h2>
+      <p>
+        Product labels are inconsistent. Use documented capabilities, standards evidence, and a
+        real workflow test rather than assuming every “badge” or “credential” platform has the same scope.
+      </p>
+    </div>
+
+    <div class="cp-table-wrap" role="region" aria-label="Credential platform evaluation areas" tabindex="0">
+      <table class="cp-scope-table">
+        <caption class="sr-only">Questions to ask any credential platform and CertifyMe's documented approach</caption>
+        <thead>
+          <tr>
+            <th scope="col">Decision area</th>
+            <th scope="col">Questions for any platform</th>
+            <th scope="col">CertifyMe’s documented approach</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Credential trust</th>
+            <td>Which open standards are implemented and independently tested? What issuer keys, status lists, or hosted services must remain available?</td>
+            <td>W3C Verifiable Credentials, cryptographic signing, and independent 1EdTech Open Badges 3.0 certification.</td>
+          </tr>
+          <tr>
+            <th scope="row">Records and progression</th>
+            <td>Can achievements accumulate across milestones, pathways, and Comprehensive Learner Records (CLR)?</td>
+            <td>Stackable credentials, pathway milestones, CLR, and structured skills evidence.</td>
+          </tr>
+          <tr>
+            <th scope="row">Workforce relevance</th>
+            <td>Does reporting stop at delivery and sharing, or connect learning evidence to current workforce signals?</td>
+            <td>Job Intelligence Reports connect verified skills to live roles, salary ranges, and demand signals.</td>
+          </tr>
+          <tr>
+            <th scope="row">Identity and integration</th>
+            <td>Can credentials move into wallets and profiles? Are API, LMS/HRIS, SSO, export, and white-label requirements supported?</td>
+            <td>APIs and integrations, branded issuer experiences, and SkillStory professional identity profiles.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cp-scroll-hint" aria-hidden="true">Swipe horizontally to see all columns →</p>
+  </section>
+
+  <section class="cp-frame" aria-labelledby="cp-journey-heading">
+    <div class="cp-heading">
+      <p class="cp-eyebrow">Credential journey</p>
+      <h2 id="cp-journey-heading">Issuance endpoint or ecosystem starting point?</h2>
+    </div>
+
+    <div class="cp-journey-grid">
+      <article class="cp-journey-card">
+        <p class="cp-card-kicker">Issuance-first model</p>
+        <h3>Design → issue → share → report</h3>
+        <ol>
+          <li>Create and distribute a certificate or badge.</li>
+          <li>Host a recipient page and sharing experience.</li>
+          <li>Track delivery, views, shares, or engagement.</li>
+        </ol>
+        <p class="cp-card-note">A practical fit when the programme’s objective ends with efficient distribution and recognition.</p>
+      </article>
+
+      <article class="cp-journey-card cp-journey-card--featured">
+        <p class="cp-card-kicker">CertifyMe ecosystem model</p>
+        <h3>Issue → accumulate → interpret → activate</h3>
+        <ol>
+          <li>Issue a signed, standards-based credential.</li>
+          <li>Accumulate evidence through records, skills, and pathways.</li>
+          <li>Connect verified skills to current workforce intelligence.</li>
+          <li>Carry achievements into a reusable professional identity.</li>
+        </ol>
+        <p class="cp-card-note">Designed for programmes where the credential must keep creating value after it is awarded.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="cp-frame" aria-labelledby="cp-levels-heading">
+    <div class="cp-heading">
+      <p class="cp-eyebrow">Credential maturity</p>
+      <h2 id="cp-levels-heading">Level 3 Trust and Level 4 Intelligence</h2>
+      <p>CertifyMe positions the ecosystem as two connected layers rather than a longer badge feature list.</p>
+    </div>
+
+    <div class="cp-level-grid">
+      <article class="cp-level-card">
+        <span class="cp-level-number">Level 3</span>
+        <h3>Trust</h3>
+        <p>Standards-based, tamper-evident credentials with cryptographic proof and independently tested Open Badges 3.0 conformance.</p>
+        <p class="cp-level-caveat">Independent verification still depends on resolvable issuer keys and applicable status or revocation resources.</p>
+      </article>
+      <article class="cp-level-card">
+        <span class="cp-level-number">Level 4</span>
+        <h3>Intelligence</h3>
+        <p>Credentials connected to CLR, skills taxonomies, learning pathways, labour-market signals, and reusable professional identity.</p>
+        <p class="cp-level-caveat">This layer helps issuers improve programmes and helps earners understand what their verified skills can unlock.</p>
+      </article>
+    </div>
+
+    <div class="cp-audience-strip" aria-label="Relevant organisations">
+      <strong>Why scope matters:</strong>
+      universities need outcome evidence; certification bodies need durable trust; enterprise L&amp;D
+      needs governance and integration; training providers need credentials linked to learner progression and opportunity.
+      <a href="/digital-credential-maturity/">Explore the credential maturity model →</a>
+    </div>
+  </section>
+</div>
+{% endif %}
+
+{% if include.position == "footer" %}
+<div class="cp-layer cp-layer--footer">
+  <section class="cp-frame" aria-labelledby="cp-related-heading">
+    <div class="cp-heading">
+      <p class="cp-eyebrow">Continue your evaluation</p>
+      <h2 id="cp-related-heading">Related credential ecosystem resources</h2>
+    </div>
+    <nav class="cp-related-grid" aria-label="Related comparison resources">
+      <a href="/digital-credential-maturity/"><strong>Credential maturity model</strong><span>Map your programme to the infrastructure it needs.</span></a>
+      <a href="/blog/certifyme-open-badge-3-0-certified"><strong>Open Badges 3.0 certification</strong><span>Understand independently tested conformance.</span></a>
+      <a href="/blog/digital-credentialing-platforms-2026-comparison"><strong>Four-platform comparison</strong><span>Compare Accredible, Certifier, Credly, and CertifyMe.</span></a>
+      <a href="/blog/What-is-Digital-Credential-Management-Platform"><strong>Enterprise buyer’s guide</strong><span>Use practical questions for procurement and migration.</span></a>
+    </nav>
+  </section>
+
+  <section class="cp-frame">
+    <div class="cp-cta-banner">
+      <div>
+        <p class="cp-eyebrow cp-eyebrow--light">See the complete lifecycle</p>
+        <h2>Evaluate CertifyMe against your real programme requirements</h2>
+        <p>Bring your standards, integration, learner-record, and workforce-outcome requirements to a tailored walkthrough.</p>
+      </div>
+      <div class="cp-cta-actions">
+        <a class="cp-btn cp-btn--primary" href="https://info.certifyme.online/request-demo">Request a demo</a>
+        <a class="cp-btn cp-btn--secondary" href="/digital-badges">Explore the platform</a>
+      </div>
+    </div>
+  </section>
+</div>
+{% endif %}

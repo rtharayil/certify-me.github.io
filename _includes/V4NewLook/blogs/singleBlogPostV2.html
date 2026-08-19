@@ -799,6 +799,12 @@ so the section is never empty.
                 </div>
             </div>
 
+            {% if page.comparison_page %}
+            <div class="col-12">
+                {% include V4NewLook/blogs/_comparisonLayer.html position="intro" %}
+            </div>
+            {% endif %}
+
             <!-- LEFT SECTION -->
             <div class="col-xl-3 blog-sticky-col">
 
@@ -878,6 +884,33 @@ so the section is never empty.
         </div>
     </div>
 </section>
+
+{% if page.comparison_page %}
+{% include V4NewLook/blogs/_comparisonLayer.html position="footer" %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.single-post-txt table').forEach(function (table, index) {
+        if (table.parentElement.classList.contains('cp-article-table-wrap')) return;
+
+        var wrapper = document.createElement('div');
+        wrapper.className = 'cp-article-table-wrap';
+        wrapper.setAttribute('role', 'region');
+        wrapper.setAttribute('tabindex', '0');
+
+        var previousHeading = table.previousElementSibling;
+        while (previousHeading && !/^H[2-4]$/.test(previousHeading.tagName)) {
+            previousHeading = previousHeading.previousElementSibling;
+        }
+        var label = previousHeading ? previousHeading.textContent.trim() : 'Comparison';
+        wrapper.setAttribute('aria-label', label + ' table ' + (index + 1));
+
+        table.parentNode.insertBefore(wrapper, table);
+        wrapper.appendChild(table);
+    });
+});
+</script>
+{% endif %}
 
 <div class="share-toast" id="share-toast"></div>
 
