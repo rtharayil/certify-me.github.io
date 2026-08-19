@@ -3,3 +3,4 @@
 - [Git history spans multiple eras](git-history-caveats.md) — plain `git log` may only show a narrow recent window; use `--all` when restoring/comparing against a past date.
 - [CertifyMe client-logo section location](certifyme-client-logos.md) — the homepage customer logo strip lives inside Statistics.html via ClientLogos.html, not a standalone section.
 - [Mobile homepage overlap cascade](mobile-overlap-cascade.md) — legacy mobile `!important` rules can pull sections together or defeat new carousel layouts.
+- [Credential portability claims](credential-portability-claims.md) — open standards improve portability but do not remove issuer-key or status-resource dependencies.

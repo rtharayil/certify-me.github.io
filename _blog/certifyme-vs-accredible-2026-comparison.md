@@ -105,7 +105,7 @@ Both platforms help you issue secure, verifiable digital credentials. The more r
 
 Accredible has spent years building around the engagement side of credentialing — making it effortless for learners to accept, share, and show off what they've earned. It's built a strong track record doing exactly that, and organizations whose primary goal is program marketing and social visibility find it a natural fit.
 
-CertifyMe started from a different question: what does a credential need to do across its entire useful life? That led toward open standards, tamper-resistant verification, structured skills records, learning pathways, workforce relevance signals, and an architecture where a credential remains portable and meaningful independent of any single vendor. See the [digital credential maturity model](/digital-credential-maturity/) for a framework that maps where different platform capabilities sit across the credential lifecycle.
+CertifyMe started from a different question: what does a credential need to do across its entire useful life? That led toward open standards, tamper-evident verification, structured skills records, learning pathways, workforce relevance signals, and an architecture built for portability beyond one presentation interface. Long-horizon programmes should still confirm issuer-key and status-resource continuity. See the [digital credential maturity model](/digital-credential-maturity/) for a framework that maps where different platform capabilities sit across the credential lifecycle.
 
 These aren't equally broad platforms doing the same thing — they reflect genuinely different scope decisions.
 
@@ -305,7 +305,7 @@ The standards question becomes more important when credentials need to function 
 
 ## When CertifyMe is a Better Fit
 
-- Your credentials need to remain portable and verifiable independent of any single vendor — across platforms, regulatory contexts, or over longer time horizons
+- Your credentials need portable proof across platforms, regulatory contexts, or longer time horizons—and you can confirm issuer-key and status-resource continuity
 - You need independently certified Open Badges 3.0 conformance (verifiable on the public 1EdTech registry) or W3C Verifiable Credentials support for regulatory alignment
 - You run structured certification or learning programs with multiple stages, milestone tracking, or stackable credentials
 - Connecting credentials to actual workforce outcomes and live labour market signals matters alongside or beyond sharing analytics

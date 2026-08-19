@@ -5,7 +5,7 @@
 {% endcomment %}
 
 {% if include.position == "intro" %}
-<div class="cp-layer cp-layer--intro" aria-label="Credential ecosystem comparison context">
+<div id="comparison-ecosystem" class="cp-layer cp-layer--intro" aria-label="Credential ecosystem comparison context">
   <section class="cp-frame" aria-labelledby="cp-lens-heading">
     <div class="cp-notbadges-banner">
       <p class="cp-eyebrow cp-eyebrow--light">Use the right comparison lens</p>
@@ -13,8 +13,7 @@
       <p>
         This page evaluates {{ page.comparison_subject | default: "digital credential platforms" }}
         in the context of {{ page.comparison_context | default: "the complete credential lifecycle" }}.
-        Issuance matters, but buyers should also test what happens afterward: verification, learner
-        records, skills, pathways, workforce relevance, integrations, and professional identity.
+        Test what happens after issuance: trust, progression, workforce relevance, integration, and identity.
       </p>
       <div class="cp-pill-row" aria-label="Credential ecosystem layers">
         <span>Trust</span><span>Records</span><span>Skills</span><span>Pathways</span>
@@ -26,10 +25,9 @@
   <section class="cp-frame" aria-labelledby="cp-scope-heading">
     <div class="cp-heading">
       <p class="cp-eyebrow">Platform scope</p>
-      <h2 id="cp-scope-heading">What should a platform comparison actually test?</h2>
+      <h2 id="cp-scope-heading">A compact platform-scope check</h2>
       <p>
-        Product labels are inconsistent. Use documented capabilities, standards evidence, and a
-        real workflow test rather than assuming every “badge” or “credential” platform has the same scope.
+        Compare documented capabilities and a real workflow test—not product labels alone.
       </p>
     </div>
 
@@ -51,18 +49,13 @@
           </tr>
           <tr>
             <th scope="row">Records and progression</th>
-            <td>Can achievements accumulate across milestones, pathways, and Comprehensive Learner Records (CLR)?</td>
-            <td>Stackable credentials, pathway milestones, CLR, and structured skills evidence.</td>
+            <td>Can achievements accumulate across milestones, pathways, and learner records?</td>
+            <td>Stackable credentials, pathway milestones, structured skills evidence, and CLR-style record foundations; confirm required CLR output and reporting.</td>
           </tr>
           <tr>
-            <th scope="row">Workforce relevance</th>
-            <td>Does reporting stop at delivery and sharing, or connect learning evidence to current workforce signals?</td>
-            <td>Job Intelligence Reports connect verified skills to live roles, salary ranges, and demand signals.</td>
-          </tr>
-          <tr>
-            <th scope="row">Identity and integration</th>
-            <td>Can credentials move into wallets and profiles? Are API, LMS/HRIS, SSO, export, and white-label requirements supported?</td>
-            <td>APIs and integrations, branded issuer experiences, and SkillStory professional identity profiles.</td>
+            <th scope="row">Value after issuance</th>
+            <td>Can the programme connect evidence to workforce signals, integrations, and a reusable learner identity?</td>
+            <td>Where configured, Job Intelligence can relate skills to live role and demand signals; APIs, integrations, and SkillStory support broader workflows.</td>
           </tr>
         </tbody>
       </table>
@@ -79,25 +72,14 @@
     <div class="cp-journey-grid">
       <article class="cp-journey-card">
         <p class="cp-card-kicker">Issuance-first model</p>
-        <h3>Design → issue → share → report</h3>
-        <ol>
-          <li>Create and distribute a certificate or badge.</li>
-          <li>Host a recipient page and sharing experience.</li>
-          <li>Track delivery, views, shares, or engagement.</li>
-        </ol>
-        <p class="cp-card-note">A practical fit when the programme’s objective ends with efficient distribution and recognition.</p>
+        <h3>Design → issue → share</h3>
+        <p class="cp-card-note">A practical fit when efficient distribution and recognition are the programme endpoint.</p>
       </article>
 
       <article class="cp-journey-card cp-journey-card--featured">
         <p class="cp-card-kicker">CertifyMe ecosystem model</p>
         <h3>Issue → accumulate → interpret → activate</h3>
-        <ol>
-          <li>Issue a signed, standards-based credential.</li>
-          <li>Accumulate evidence through records, skills, and pathways.</li>
-          <li>Connect verified skills to current workforce intelligence.</li>
-          <li>Carry achievements into a reusable professional identity.</li>
-        </ol>
-        <p class="cp-card-note">Designed for programmes where the credential must keep creating value after it is awarded.</p>
+        <p class="cp-card-note">Designed for programmes that need a credential to support records, skills, and action after award.</p>
       </article>
     </div>
   </section>
@@ -106,7 +88,7 @@
     <div class="cp-heading">
       <p class="cp-eyebrow">Credential maturity</p>
       <h2 id="cp-levels-heading">Level 3 Trust and Level 4 Intelligence</h2>
-      <p>CertifyMe positions the ecosystem as two connected layers rather than a longer badge feature list.</p>
+      <p>CertifyMe frames the ecosystem as two connected layers.</p>
     </div>
 
     <div class="cp-level-grid">
@@ -119,17 +101,11 @@
       <article class="cp-level-card">
         <span class="cp-level-number">Level 4</span>
         <h3>Intelligence</h3>
-        <p>Credentials connected to CLR, skills taxonomies, learning pathways, labour-market signals, and reusable professional identity.</p>
-        <p class="cp-level-caveat">This layer helps issuers improve programmes and helps earners understand what their verified skills can unlock.</p>
+        <p>Credential evidence can be connected to skills, pathways, labour-market signals, and professional identity.</p>
+        <p class="cp-level-caveat">Availability depends on the issuer’s programme configuration and relevant data sources.</p>
       </article>
     </div>
 
-    <div class="cp-audience-strip" aria-label="Relevant organisations">
-      <strong>Why scope matters:</strong>
-      universities need outcome evidence; certification bodies need durable trust; enterprise L&amp;D
-      needs governance and integration; training providers need credentials linked to learner progression and opportunity.
-      <a href="/digital-credential-maturity/">Explore the credential maturity model →</a>
-    </div>
   </section>
 </div>
 {% endif %}

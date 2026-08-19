@@ -299,7 +299,7 @@ For enterprise buyers weighing the standards question within a full evaluation f
 
 ## When CertifyMe is a Better Fit
 
-- Your credentials need to remain portable and verifiable independent of any single vendor — across platforms, regulatory contexts, or over longer time horizons
+- Your credentials need portable proof across platforms, regulatory contexts, or longer time horizons—and you can confirm issuer-key and status-resource continuity
 - You need independently certified Open Badges 3.0 conformance (publicly verifiable on the 1EdTech registry) and/or W3C Verifiable Credentials support for regulatory or interoperability requirements
 - You serve universities, professional certification bodies, or multi-stage training programs where stackable credentials and milestone tracking are core requirements
 - You need extensive white-labeling that reflects your institution's brand self-serve across the entire credential experience, from issuance through verification

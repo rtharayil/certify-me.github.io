@@ -132,12 +132,12 @@ Parchment has built its reputation on reliable, secure delivery of official acad
 
 ### CertifyMe
 
-CertifyMe builds on W3C Verifiable Credentials, Open Badges 3.0 (independently 1EdTech certified — verifiable on the [1EdTech public registry](https://site.imsglobal.org/certifications)), and immutable credential technology. A credential issued on CertifyMe carries cryptographic proof that is tamper-resistant by design and stays verifiable regardless of what happens to any particular platform.
+CertifyMe builds on W3C Verifiable Credentials, Open Badges 3.0 (independently 1EdTech certified — verifiable on the [1EdTech public registry](https://site.imsglobal.org/certifications)), and immutable credential technology. Its credentials carry tamper-evident cryptographic proof that can be checked outside CertifyMe’s presentation layer when issuer keys and relevant status resources remain available.
 
 **Where it's strong:**
 - Open, interoperable standards with independent certification
 - Immutable, tamper-resistant verification
-- Long-term portability — not a proprietary format tied to one vendor
+- Standards-based portability; confirm issuer-key and status-resource continuity for long-term programmes
 
 For institutions whose credentialing strategy needs to work across regulatory environments, including emerging frameworks like the EU Digital Identity Wallet, the standards architecture is a meaningful differentiator.
 

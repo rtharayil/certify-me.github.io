@@ -130,12 +130,12 @@ Sertifier is Open Badges compliant, supports QR code verification, and operates 
 
 ### CertifyMe
 
-CertifyMe builds on W3C Verifiable Credentials, Open Badges 3.0 (independently 1EdTech certified, publicly verifiable on the [1EdTech registry](https://site.imsglobal.org/certifications)), and immutable credential technology. A credential issued on CertifyMe is tamper-resistant by design and verifiable regardless of what happens to any single platform.
+CertifyMe builds on W3C Verifiable Credentials, Open Badges 3.0 (independently 1EdTech certified, publicly verifiable on the [1EdTech registry](https://site.imsglobal.org/certifications)), and immutable credential technology. Its credentials are tamper-evident by design and can be checked outside CertifyMe’s presentation layer when issuer keys and relevant status resources remain available.
 
 **Where it's strong:**
 - Independent 1EdTech OB3 certification — not self-reported
-- W3C Verifiable Credentials for long-term, platform-independent portability
-- Immutable records designed to hold up over a learner's full career
+- W3C Verifiable Credentials for standards-based portability, with continuity requirements to confirm
+- Immutable records designed for long-running learner records
 
 The [CertifyMe OB3 certification explainer](/blog/certifyme-open-badge-3-0-certified) covers what independent certification means in practice compared to self-reported standards support.
 
