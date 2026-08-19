@@ -1,0 +1,304 @@
+<!-- HIGHER EDUCATION HERO + SUBNAV -->
+
+<!-- ── Sticky Sub-Navigation ───────────────────────── -->
+<style>
+.he-subnav {
+  position: sticky;
+  top: 0;
+  z-index: 990;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(40,43,117,.1);
+  padding: 0;
+}
+.he-subnav-inner {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 0 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.he-subnav-inner::-webkit-scrollbar { display: none; }
+.he-subnav-inner a {
+  display: inline-block;
+  padding: 13px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #5a5a7a;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: color .18s, border-color .18s;
+}
+.he-subnav-inner a:hover,
+.he-subnav-inner a.active {
+  color: #282B75;
+  border-bottom-color: #4f46e5;
+}
+@media(max-width:767px) {
+  .he-subnav-inner a { font-size: 12px; padding: 12px 10px; }
+}
+
+/* ── Hero ── */
+.he-hero {
+  background: linear-gradient(140deg, #eef0ff 0%, #f4f3ff 50%, #fff 100%);
+  padding: 80px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+.he-hero::before {
+  content: '';
+  position: absolute;
+  top: -120px; right: -120px;
+  width: 480px; height: 480px;
+  background: radial-gradient(circle, rgba(79,70,229,.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.he-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #eef0ff;
+  border: 1px solid #c7d2fe;
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .09em;
+  color: #4f46e5;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.he-hero h1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #20203c;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+.he-hero h1 span { color: #4f46e5; }
+.he-hero .he-hero-sub {
+  font-size: 17px;
+  color: #4a4a6a;
+  line-height: 1.6;
+  max-width: 540px;
+  margin-bottom: 32px;
+}
+.he-hero-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+.he-hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.he-hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(79,70,229,.07);
+  border: 1px solid rgba(79,70,229,.18);
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #282B75;
+}
+.he-hero-pill svg { flex-shrink: 0; }
+
+/* ── Hero Visual Flow ── */
+.he-flow-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding: 20px 0;
+}
+.he-flow-node {
+  background: #fff;
+  border: 1.5px solid rgba(40,43,117,.12);
+  border-radius: 14px;
+  padding: 14px 22px;
+  text-align: center;
+  box-shadow: 0 3px 16px rgba(40,43,117,.09);
+  min-width: 210px;
+  position: relative;
+}
+.he-flow-node.accent {
+  background: linear-gradient(135deg, #282B75, #4f46e5);
+  border-color: transparent;
+  color: #fff;
+}
+.he-flow-node.accent .he-fn-label { color: rgba(255,255,255,.8); }
+.he-flow-node.accent .he-fn-title { color: #fff; }
+.he-flow-node.ss-node {
+  background: linear-gradient(135deg, #0d1b4b, #1e3a8a);
+  border-color: transparent;
+}
+.he-flow-node.ss-node .he-fn-label { color: rgba(255,255,255,.7); }
+.he-flow-node.ss-node .he-fn-title { color: #fff; }
+.he-fn-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #8888aa;
+  margin-bottom: 3px;
+}
+.he-fn-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #20203c;
+}
+.he-fn-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  margin-top: 6px;
+}
+.he-fn-chip {
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: rgba(255,255,255,.18);
+  color: rgba(255,255,255,.9);
+}
+.he-fn-chip.dark {
+  background: rgba(40,43,117,.08);
+  color: #4f46e5;
+}
+.he-flow-arrow {
+  width: 2px;
+  height: 22px;
+  background: linear-gradient(to bottom, rgba(79,70,229,.4), rgba(79,70,229,.1));
+  position: relative;
+  margin: 0 auto;
+}
+.he-flow-arrow::after {
+  content: '';
+  position: absolute;
+  bottom: -5px; left: 50%;
+  transform: translateX(-50%);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid rgba(79,70,229,.5);
+}
+@media(max-width:991px) {
+  .he-flow-diagram { padding: 0; }
+  .he-flow-node { min-width: 180px; }
+}
+@media(max-width:767px) {
+  .he-hero { padding: 60px 0 40px; }
+  .he-hero-btns { flex-direction: column; }
+  .he-flow-diagram { display: none; }
+}
+</style>
+
+<div class="he-subnav" id="he-subnav">
+  <div class="he-subnav-inner">
+    <a href="#he-overview">Overview</a>
+    <a href="#he-credentials">Credentials</a>
+    <a href="#he-transcripts">Transcripts</a>
+    <a href="#he-integrations">Integrations</a>
+    <a href="#he-analytics">Analytics</a>
+    <a href="#he-skillstory">SkillStory</a>
+    <a href="#he-student-experience">Student Experience</a>
+    <a href="#he-security">Security</a>
+    <a href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer" style="color:#4f46e5;">Request Demo</a>
+  </div>
+</div>
+
+<main id="main-content">
+<section class="he-hero" id="he-overview">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+
+      <!-- LEFT: Text -->
+      <div class="col-lg-6">
+        <span class="he-hero-eyebrow">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Higher Education Solution
+        </span>
+        <h1>Digital Credentials for <span>Higher Education</span></h1>
+        <p class="he-hero-sub">Turn every academic achievement into a trusted, portable credential. Issue and manage degrees, transcripts, certificates, badges and verified achievements — then extend their value through learner Skill Passports, verified portfolios and career-ready identities.</p>
+        <div class="he-hero-btns">
+          <a href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer" class="btn r-04 btn--theme hover--black">Request a Demo</a>
+          <a href="#he-overview" class="btn r-04 btn--tra-black hover--blue-100">See How It Works</a>
+        </div>
+        <div class="he-hero-pills">
+          <span class="he-hero-pill">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Open Badges 3.0 Certified
+          </span>
+          <span class="he-hero-pill">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            W3C Verifiable Credentials
+          </span>
+          <span class="he-hero-pill">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            SOC 2 Type II
+          </span>
+          <span class="he-hero-pill">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            FERPA Compliant
+          </span>
+        </div>
+      </div>
+
+      <!-- RIGHT: Flow Diagram -->
+      <div class="col-lg-6 d-none d-lg-flex justify-content-center">
+        <div class="he-flow-diagram">
+
+          <div class="he-flow-node">
+            <div class="he-fn-label">Your Institution</div>
+            <div class="he-fn-title">🏛️ University</div>
+          </div>
+          <div class="he-flow-arrow"></div>
+
+          <div class="he-flow-node accent">
+            <div class="he-fn-label">Institutional Layer</div>
+            <div class="he-fn-title">CertifyMe Platform</div>
+            <div class="he-fn-chips">
+              <span class="he-fn-chip">Create</span>
+              <span class="he-fn-chip">Issue</span>
+              <span class="he-fn-chip">Verify</span>
+              <span class="he-fn-chip">Manage</span>
+            </div>
+          </div>
+          <div class="he-flow-arrow"></div>
+
+          <div class="he-flow-node">
+            <div class="he-fn-label">Every Achievement</div>
+            <div class="he-fn-title">Verified Credential</div>
+            <div class="he-fn-chips">
+              <span class="he-fn-chip dark">Degree</span>
+              <span class="he-fn-chip dark">Badge</span>
+              <span class="he-fn-chip dark">Transcript</span>
+            </div>
+          </div>
+          <div class="he-flow-arrow"></div>
+
+          <div class="he-flow-node ss-node">
+            <div class="he-fn-label">Learner Layer</div>
+            <div class="he-fn-title">SkillStory</div>
+            <div class="he-fn-chips">
+              <span class="he-fn-chip">Skill Passport</span>
+              <span class="he-fn-chip">Verified CV</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

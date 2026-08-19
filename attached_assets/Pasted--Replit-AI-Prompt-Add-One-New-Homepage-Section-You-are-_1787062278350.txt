@@ -1,0 +1,445 @@
+# Replit AI Prompt — Add One New Homepage Section
+
+You are working on the existing CertifyMe homepage.
+
+## Objective
+
+Add **ONE new section only** to the existing homepage:
+
+# Digital Credentials Are More Than Digital Badges
+
+This is a **targeted addition**, not a redesign.
+
+The current homepage structure, styling, components, navigation, URLs, SEO, responsive behavior and existing content must remain intact.
+
+## CRITICAL: DO NOT RECREATE OR REWRITE THE WEBSITE
+
+Do NOT:
+
+* Rebuild the homepage
+* Recreate existing sections
+* Change the header
+* Change the navigation
+* Change the footer
+* Change the hero
+* Change existing sections
+* Change existing URLs
+* Change the global design system
+* Replace existing components unnecessarily
+* Add a new framework
+* Add a new CSS framework
+* Add unnecessary dependencies
+* Refactor unrelated code
+* Modify unrelated pages
+* Remove existing content
+* Change existing SEO metadata
+
+Only add the new section described below.
+
+Before coding, inspect the existing homepage implementation and identify the component used for the homepage sections. **Reuse the existing components, typography, spacing, card styles, buttons, borders, shadows and responsive behavior wherever possible.**
+
+---
+
+# WHERE TO PLACE IT
+
+Insert this section on the homepage:
+
+### AFTER
+
+**Why Institutions Choose CertifyMe**
+
+and BEFORE
+
+**Enterprise-grade Certificate & Badge Management Platform**
+
+If the current heading has already been renamed to something similar to:
+
+**A Complete Digital Credential Platform**
+
+place the new section immediately before that section.
+
+The resulting sequence should be:
+
+Hero
+
+↓
+
+Trust / Scale
+
+↓
+
+Why Institutions Choose CertifyMe
+
+↓
+
+### NEW SECTION
+
+**Digital Credentials Are More Than Digital Badges**
+
+↓
+
+Existing platform/features section
+
+Do not move any other homepage sections.
+
+---
+
+# SECTION PURPOSE
+
+The purpose is to explain a simple category distinction:
+
+**Traditional credentials → Basic digital badges → Modern digital credential infrastructure**
+
+This should help visitors understand why CertifyMe is more than a certificate or badge issuing tool.
+
+This is NOT intended to attack competitors.
+
+It should be educational, credible and relevant to:
+
+* Higher education
+* Enterprises
+* Certification bodies
+* Training providers
+* Professional associations
+* Government / public organizations
+
+Do NOT make this specific to universities.
+
+---
+
+# SECTION CONTENT
+
+Use this copy, with only minor grammatical improvements if required.
+
+## Heading
+
+### Digital Credentials Are More Than Digital Badges
+
+## Supporting text
+
+**A digital badge recognizes an achievement. A modern credential platform helps organizations issue, verify, manage and connect those achievements at scale.**
+
+---
+
+# THREE-COLUMN COMPARISON
+
+Create three visually distinct columns/cards.
+
+## Column 1
+
+### Traditional Credentials
+
+**PDF & Paper**
+
+Use:
+
+* Manual verification
+* Easy to copy or manipulate
+* Limited sharing
+* Static records
+* Not designed for modern credential ecosystems
+
+Use subtle negative indicators such as:
+
+✕ or equivalent existing design-system icon.
+
+---
+
+# Column 2
+
+### Basic Digital Badge Platforms
+
+**Digital Recognition**
+
+Use:
+
+* Focused primarily on individual badges
+* Limited credential relationships
+* Varying portability
+* Limited comprehensive records
+* Often focused on recognition rather than the complete credential lifecycle
+
+Do NOT make unsupported claims about specific competitors.
+
+Do NOT say these platforms are "fake", "insecure" or "not compliant".
+
+The goal is category differentiation, not competitor criticism.
+
+---
+
+# Column 3
+
+### CertifyMe
+
+**Digital Credential Infrastructure**
+
+This should be visually emphasized as the recommended/advanced option using the EXISTING CertifyMe visual treatment.
+
+Use:
+
+✓ Open Badges 3.0
+
+✓ W3C Verifiable Credentials
+
+✓ Comprehensive Learner Records (CLR)
+
+✓ Cryptographically verifiable
+
+✓ Machine-readable
+
+✓ Credentials, badges and structured pathways
+
+✓ Analytics and engagement insights
+
+✓ Skills and labour-market intelligence
+
+✓ Enterprise integrations
+
+IMPORTANT:
+
+Only display capabilities that are already supported by the existing CertifyMe website/product.
+
+Do not invent functionality.
+
+---
+
+# CERTIFICATION / STANDARDS CALLOUT
+
+Below the three columns, add a compact trust statement.
+
+### Built on Open Standards
+
+**CertifyMe is 1EdTech certified for Open Badges 3.0 and Comprehensive Learner Records (CLR), with support for W3C Verifiable Credentials.**
+
+Only use this wording if it matches the company's approved certification language.
+
+Do not use "1EdTech certified" for anything that has not actually been certified.
+
+Do not claim "W3C certified" unless such certification exists.
+
+---
+
+# CLOSING STATEMENT
+
+At the bottom of the section, add:
+
+### Move beyond issuing digital badges.
+
+**Build a credential ecosystem that can grow with your organization.**
+
+Add a small secondary CTA:
+
+**Explore the Platform →**
+
+Use the existing button/link component.
+
+If there is already an appropriate platform page, link to that existing page.
+
+Do NOT create a new page.
+
+---
+
+# VISUAL DESIGN
+
+The section should feel like a natural extension of the existing homepage.
+
+Use:
+
+* Existing CertifyMe typography
+* Existing spacing scale
+* Existing border radius
+* Existing card styles
+* Existing shadows
+* Existing icon style
+* Existing colors
+* Existing responsive breakpoints
+
+Do NOT introduce:
+
+* New gradients
+* New fonts
+* New colors
+* Large animations
+* Video
+* 3D graphics
+* Stock photography
+* Large illustrations
+* New design frameworks
+
+The section should be **clean, enterprise-grade and relatively compact**.
+
+---
+
+# IMPORTANT: KEEP IT COMPACT
+
+This section should NOT take up an excessive amount of homepage real estate.
+
+Desktop target:
+
+* Approximately 500–700px tall depending on existing spacing.
+* Three columns on desktop.
+* Three cards should be scannable within a few seconds.
+
+Mobile:
+
+Stack the three cards vertically.
+
+Do not create a giant comparison table that requires excessive scrolling.
+
+The content should be easy to scan.
+
+---
+
+# VISUAL HIERARCHY
+
+Use this hierarchy:
+
+Digital Credentials Are More Than Digital Badges
+
+↓
+
+Short explanation
+
+↓
+
+Traditional Credentials | Basic Digital Badge Platforms | CertifyMe
+
+↓
+
+Open Standards / Certification callout
+
+↓
+
+Move beyond issuing digital badges.
+
+↓
+
+Explore the Platform
+
+CertifyMe should be visually strongest, but do not make the other two columns visually unattractive.
+
+---
+
+# ACCESSIBILITY
+
+Use semantic HTML.
+
+The section should have:
+
+* One H2
+* Appropriate H3 headings
+* Accessible icons
+* Sufficient contrast
+* Keyboard-accessible CTA
+* No information conveyed by color alone
+
+Do not use images where text is more appropriate.
+
+---
+
+# RESPONSIVE BEHAVIOR
+
+Desktop:
+
+Three columns.
+
+Tablet:
+
+Three columns if they remain readable; otherwise transition to a sensible two/one-column layout using existing breakpoints.
+
+Mobile:
+
+One column.
+
+Ensure:
+
+* No horizontal scrolling
+* No clipped text
+* No oversized typography
+* No broken icons
+* No excessive whitespace
+
+---
+
+# PERFORMANCE
+
+This section should add almost zero performance overhead.
+
+Do NOT:
+
+* Add libraries
+* Add external fonts
+* Add animation libraries
+* Add external images
+* Add videos
+* Add third-party scripts
+
+Use existing assets/components.
+
+---
+
+# SEO
+
+Do not modify the homepage's existing title, meta description, canonical URL or structured data unless absolutely necessary.
+
+The section heading can use:
+
+**H2: Digital Credentials Are More Than Digital Badges**
+
+Do not create keyword stuffing.
+
+The section should naturally reinforce:
+
+* digital credentials
+* digital badges
+* Open Badges 3.0
+* W3C Verifiable Credentials
+* CLR
+
+---
+
+# DO NOT CHANGE ANYTHING ELSE
+
+After implementing this section, verify that:
+
+* Hero is unchanged
+* Header is unchanged
+* Navigation is unchanged
+* Existing trust metrics are unchanged
+* "Why Institutions Choose CertifyMe" is unchanged
+* Existing platform section is unchanged
+* Built for Institutions is unchanged
+* Workforce Intelligence is unchanged
+* Credential Passport is unchanged
+* G2 / LinkedIn sections are unchanged
+* Standards section is unchanged
+* Integrations section is unchanged
+* Footer is unchanged
+* Existing URLs are unchanged
+
+The only intended visual/content addition is this new comparison section.
+
+---
+
+# FINAL QA
+
+Before finishing:
+
+1. Run the existing homepage.
+2. Confirm the new section appears in the correct location.
+3. Confirm it uses the existing design language.
+4. Test desktop.
+5. Test mobile.
+6. Check for horizontal overflow.
+7. Check all links.
+8. Check accessibility.
+9. Confirm no unrelated files/components were modified.
+10. Confirm no new dependencies were added.
+
+## Final implementation principle
+
+**Add one high-value section. Do not redesign the website.**
+
+The goal is to make the homepage communicate:
+
+> **CertifyMe is not simply a digital badge issuer. It is a modern digital credential infrastructure platform built on open standards.**

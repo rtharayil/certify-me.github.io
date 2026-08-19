@@ -1,17 +1,17 @@
 ---
 title: "Verifiable Digital Credential Software for Institutions | CertifyMe"
 
-description: "CertifyMe is a verifiable digital credential software for institutions that manage secure, customizable credentials at scale, with independent verification, long-term reliability, API integrations and minimal manual effort."
+description: "Issue, manage and verify digital credentials at scale. Standards-based, independently verifiable — Open Badges 3.0, CLR and W3C VC. Built for institutions."
 
-abstract: "Verifiable digital credential software for institutions that need secure, flexible credentials with independent verification, long-term reliability, API integrations, and minimal manual effort."
+abstract: "CertifyMe helps institutions issue, manage and verify digital credentials at scale — standards-based, independently verifiable, built on Open Badges 3.0, CLR and W3C VC."
 
 layout: V4Layout
 
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Verifiable Credential Infrastructure for Education & Workforce Learning
-HeroText:  Issue <strong> Open Badges 3.0 </strong> certified credentials, learner portfolios, and verified skill records that enhance credibility, showcase achievements, and improve employability.
+HeroTitle: The Digital Credential Infrastructure for Institutions
+HeroText:  Issue, manage, verify, and analyze credentials across your entire institution — securely, at scale, and built on open standards.
 HeroImage: /assets4/images/Images Webp/Copy of Credentials Verified (4).png
 HeroDemoButton: Request a Demo
 HeroVideoButton: Watch Video

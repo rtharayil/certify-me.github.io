@@ -1,0 +1,309 @@
+<!-- SKILLSTORY + STUDENT JOURNEY + SKILL PASSPORT -->
+<style>
+.btn--white {
+  background: #fff !important;
+  color: #282B75 !important;
+  border: 2px solid #fff !important;
+}
+.btn--white:hover { background: transparent !important; color: #fff !important; }
+.btn--outline-white {
+  background: transparent !important;
+  color: #fff !important;
+  border: 2px solid rgba(255,255,255,.5) !important;
+}
+.btn--outline-white:hover { border-color: #fff !important; }
+
+/* SkillStory Hero */
+.he-skillstory {
+  padding: 80px 0;
+  background: linear-gradient(160deg, #0d1b4b 0%, #1e3a8a 60%, #1e3799 100%);
+  position: relative;
+  overflow: hidden;
+}
+.he-skillstory::before {
+  content: '';
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(99,102,241,.18) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.he-ss-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .09em;
+  color: rgba(255,255,255,.85);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.he-skillstory h2 {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.18;
+  margin-bottom: 14px;
+}
+.he-ss-sub {
+  font-size: 16px;
+  color: rgba(255,255,255,.72);
+  line-height: 1.6;
+  max-width: 520px;
+}
+.he-ss-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-top: 48px;
+}
+.he-ss-hero-img {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 16px 56px rgba(0,0,0,.35);
+}
+.he-ss-hero-img img { width: 100%; display: block; }
+.he-ss-right { color: #fff; }
+.he-ss-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 28px 0 32px;
+}
+.he-ss-box {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 12px;
+  padding: 16px;
+}
+.he-ss-box-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.5);
+  margin-bottom: 4px;
+}
+.he-ss-box-brand {
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.he-ss-box-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.he-ss-box-items li {
+  font-size: 12.5px;
+  color: rgba(255,255,255,.75);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.he-ss-box-items li::before {
+  content: '';
+  width: 5px; height: 5px;
+  background: #818cf8;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.he-ss-outcome {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.he-ss-chip {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 20px;
+  padding: 5px 13px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: rgba(255,255,255,.9);
+}
+.he-ss-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* Student Journey */
+.he-journey { padding: 80px 0; }
+.he-journey-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+.he-journey-step {
+  background: rgba(255,255,255,.8);
+  border: 1px solid rgba(40,43,117,.09);
+  border-radius: 14px;
+  padding: 22px 18px;
+}
+.he-journey-num {
+  width: 30px; height: 30px;
+  background: linear-gradient(135deg, #282B75, #4f46e5);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.he-journey-step-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #4f46e5;
+  margin-bottom: 4px;
+}
+.he-journey-step-title { font-size: 14.5px; font-weight: 700; color: #20203c; margin-bottom: 5px; line-height: 1.3; }
+.he-journey-step-body { font-size: 12.5px; color: #5a5a7a; margin: 0; line-height: 1.5; }
+
+/* SkillStory proof bar */
+.he-journey-proof {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, #eef0ff, #f4f3ff);
+  border: 1px solid rgba(79,70,229,.15);
+  border-radius: 14px;
+}
+.he-journey-proof img { height: 28px; flex-shrink: 0; }
+.he-journey-proof-text { font-size: 14px; color: #282B75; font-weight: 600; line-height: 1.45; }
+.he-journey-proof-text span { color: #5a5a7a; font-weight: 400; }
+
+@media(max-width:991px) {
+  .he-ss-inner { grid-template-columns: 1fr; }
+  .he-journey-steps { grid-template-columns: repeat(2, 1fr); }
+}
+@media(max-width:767px) {
+  .he-skillstory, .he-journey { padding: 50px 0; }
+  .he-ss-two-col { grid-template-columns: 1fr; }
+  .he-journey-steps { grid-template-columns: 1fr; }
+}
+</style>
+
+<section class="he-skillstory" id="he-skillstory">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="he-ss-inner">
+      <div class="he-ss-hero-img wow fadeInLeft">
+        <img src="/assets4/images/SkillStory/skillpassport-hero.webp"
+             alt="SkillStory Skill Passport — learner career identity platform"
+             loading="lazy">
+      </div>
+      <div class="he-ss-right wow fadeInRight">
+        <span class="he-ss-eyebrow">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          CertifyMe + SkillStory
+        </span>
+        <h2>Credentials that work for your students long after graduation</h2>
+        <p class="he-ss-sub">CertifyMe handles the institution's side — creating, issuing and verifying credentials at scale. SkillStory handles the student's side — turning those credentials into a portable Skill Passport, Verified CV and career identity they carry for life.</p>
+        <div class="he-ss-two-col">
+          <div class="he-ss-box">
+            <div class="he-ss-box-label">Institution</div>
+            <div class="he-ss-box-brand">CertifyMe</div>
+            <ul class="he-ss-box-items">
+              <li>Degrees &amp; diplomas</li>
+              <li>Transcripts</li>
+              <li>Certificates &amp; badges</li>
+              <li>Co-curricular records</li>
+            </ul>
+          </div>
+          <div class="he-ss-box">
+            <div class="he-ss-box-label">Learner</div>
+            <div class="he-ss-box-brand">SkillStory</div>
+            <ul class="he-ss-box-items">
+              <li>Skill Passport</li>
+              <li>Verified CV</li>
+              <li>Portfolio</li>
+              <li>Job discovery</li>
+            </ul>
+          </div>
+        </div>
+        <div class="he-ss-outcome">
+          <span class="he-ss-chip">Lifelong verified record</span>
+          <span class="he-ss-chip">ATS-friendly Verified CV</span>
+          <span class="he-ss-chip">AI-readable profile</span>
+          <span class="he-ss-chip">Career-ready evidence</span>
+        </div>
+        <div class="he-ss-ctas">
+          <a href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer" class="btn r-04 btn--white">Request a Demo</a>
+          <a href="https://skillstory.org/" target="_blank" rel="noopener noreferrer" class="btn r-04 btn--outline-white">Learn About SkillStory</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Student Journey -->
+<section class="he-journey content-section division" id="he-student-experience">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="s-38 w-700">From student record to career identity</h2>
+        <p class="p-xl color--grey mt-16">How CertifyMe and SkillStory work together across the full student lifecycle.</p>
+      </div>
+    </div>
+    <div class="he-journey-steps">
+      <div class="he-journey-step wow fadeInUp" data-wow-delay=".05s">
+        <div class="he-journey-num">1</div>
+        <div class="he-journey-step-label">Learn</div>
+        <div class="he-journey-step-title">Student completes a programme</div>
+        <p class="he-journey-step-body">Degree, course, badge, internship — any achievement recognized by the university.</p>
+      </div>
+      <div class="he-journey-step wow fadeInUp" data-wow-delay=".1s">
+        <div class="he-journey-num">2</div>
+        <div class="he-journey-step-label">Earn</div>
+        <div class="he-journey-step-title">University issues a verified credential</div>
+        <p class="he-journey-step-body">Tamper-proof, Open Badges 3.0 certified — automatically or on demand.</p>
+      </div>
+      <div class="he-journey-step wow fadeInUp" data-wow-delay=".15s">
+        <div class="he-journey-num">3</div>
+        <div class="he-journey-step-label">Verify</div>
+        <div class="he-journey-step-title">Employers verify instantly</div>
+        <p class="he-journey-step-body">No account needed. No calls to the registrar. The credential speaks for itself.</p>
+      </div>
+      <div class="he-journey-step wow fadeInUp" data-wow-delay=".2s">
+        <div class="he-journey-num">4</div>
+        <div class="he-journey-step-label">Build</div>
+        <div class="he-journey-step-title">Student builds a Skill Passport</div>
+        <p class="he-journey-step-body">Credentials, skills, internships and projects come together in a SkillStory profile.</p>
+      </div>
+      <div class="he-journey-step wow fadeInUp" data-wow-delay=".25s">
+        <div class="he-journey-num">5</div>
+        <div class="he-journey-step-label">Showcase</div>
+        <div class="he-journey-step-title">SkillStory creates a Verified CV</div>
+        <p class="he-journey-step-body">ATS-ready, AI-readable — built from the student's institutional record.</p>
+      </div>
+      <div class="he-journey-step wow fadeInUp" data-wow-delay=".3s">
+        <div class="he-journey-num">6</div>
+        <div class="he-journey-step-label">Lifelong</div>
+        <div class="he-journey-step-title">Alumni carry their record forward — forever</div>
+        <p class="he-journey-step-body">Access never expires. Your institution remains their trusted issuer for life.</p>
+      </div>
+    </div>
+
+    <div class="he-journey-proof wow fadeInUp">
+      <img src="/assets4/images/SkillStory/skillstory-logo.webp" alt="SkillStory" loading="lazy">
+      <div class="he-journey-proof-text">
+        The Skill Passport, Verified CV and career identity are powered by SkillStory. <span>Every credential issued through CertifyMe flows automatically into the learner's SkillStory profile.</span>
+      </div>
+      <a href="https://skillstory.org/" target="_blank" rel="noopener noreferrer" class="btn r-04 btn--theme hover--black" style="white-space:nowrap;flex-shrink:0;">Explore SkillStory</a>
+    </div>
+  </div>
+</section>

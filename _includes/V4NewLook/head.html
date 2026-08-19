@@ -94,6 +94,11 @@
   <!-- ENTERPRISE OVERRIDES — loaded last, highest specificity -->
   <link href="/assets4/css/enterprise-overrides.css" rel="stylesheet">
 
+  {% if page.layout == "V4Layout" or page.layout == "V4LayoutVideo" or page.url == "/digital-credential-maturity/" %}
+  <!-- MOBILE UX — layouts using the homepage components + credential-maturity mobile/tablet re-composition -->
+  <link href="/assets4/css/mobile-ux.css" rel="stylesheet">
+  {% endif %}
+
   <!-- STRUCTURED DATA: Organization + WebSite + SoftwareApplication -->
   <script type="application/ld+json">
   {
