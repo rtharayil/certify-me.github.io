@@ -1,0 +1,1027 @@
+# Rebuild CertifyMe Homepage for Mobile Without Changing Desktop
+
+## Objective
+
+I want you to **rework the CertifyMe homepage specifically for mobile and tablet UX**, while keeping the existing desktop/laptop version intact.
+
+The current website was designed primarily with a laptop/desktop mindset. The existing responsive implementation technically adapts the page to smaller screens, but the result is **not a good mobile user experience**.
+
+Do NOT simply shrink the desktop page.
+
+Instead, treat this as a **responsive UX redesign of the same homepage**:
+
+* Desktop = preserve the current design, content, structure and visual identity as much as possible.
+* Tablet = intelligently adapt the layout.
+* Mobile = create a deliberately designed mobile composition using the same underlying content/data.
+* Do not remove important information just because mobile has less space.
+* Do not create a completely different website or change the business messaging.
+* Reuse the existing assets, links, content, components and data wherever possible.
+
+The goal is:
+
+> **One homepage, one content source, two presentation systems: desktop and mobile.**
+
+---
+
+# 1. FIRST: Audit the Existing Homepage
+
+Before changing code, inspect the entire homepage and understand:
+
+1. Every section in the current homepage.
+2. The purpose of each section.
+3. The hierarchy of information.
+4. Which elements are essential.
+5. Which elements are secondary.
+6. Which elements can be collapsed on mobile.
+7. Which elements need to become cards, accordions, horizontal scrolls, tabs or stacked blocks.
+8. Which elements are causing horizontal overflow.
+9. Which elements have excessive vertical spacing.
+10. Which typography becomes too large or too dense on mobile.
+11. Which images become too dominant.
+12. Which CTA buttons become difficult to use.
+13. Which navigation elements are difficult to use.
+14. Which tables/data visualizations are unusable on small screens.
+
+Do not start blindly modifying CSS.
+
+First understand the existing page.
+
+---
+
+# 2. IMPORTANT: DO NOT BREAK DESKTOP
+
+This is critical.
+
+The existing laptop/desktop version is the baseline.
+
+Do NOT redesign the desktop page simply because you are improving mobile.
+
+Do NOT:
+
+* change desktop spacing unnecessarily
+* change desktop typography unnecessarily
+* change desktop section ordering
+* replace desktop components unnecessarily
+* remove desktop content
+* change desktop navigation behaviour unless required for a shared component
+* change desktop URLs
+* change SEO metadata
+* change structured data
+* change analytics/tracking
+* change existing CTA destinations
+
+The desktop version should continue to look essentially as it does today.
+
+Use responsive breakpoints and/or mobile-specific presentation rules/components where appropriate.
+
+The existing page already includes responsive CSS and an enterprise override stylesheet, so inspect those carefully before adding new styles.
+
+---
+
+# 3. MOBILE SHOULD NOT BE "DESKTOP SHRUNK"
+
+This is the most important design principle.
+
+Do NOT do this:
+
+Desktop:
+
+[IMAGE] [TEXT] [CTA] [CTA]
+
+Mobile:
+
+[IMAGE]
+[TINY TEXT]
+[TINY BUTTON]
+[TINY BUTTON]
+
+Instead, rethink the composition.
+
+For example:
+
+Desktop:
+
+TEXT | VISUAL
+
+Mobile:
+
+TEXT
+CTA
+CTA
+VISUAL
+
+Similarly:
+
+Desktop:
+
+[Card] [Card] [Card]
+
+Mobile:
+
+[Card]
+[Card]
+[Card]
+
+OR, where appropriate:
+
+[Card] → [horizontal scroll]
+
+OR:
+
+[Section title]
+[Most important information]
+[View more]
+
+The mobile layout should feel intentionally designed rather than compressed.
+
+---
+
+# 4. MOBILE DESIGN PRINCIPLES
+
+Use these principles throughout the homepage.
+
+### Width
+
+Design primarily for:
+
+* 320px
+* 360px
+* 375px
+* 390px
+* 414px
+* 430px
+
+Also test tablet widths:
+
+* 600px
+* 768px
+* 820px
+* 1024px
+
+There must be:
+
+* no horizontal scrolling
+* no clipped content
+* no elements extending beyond viewport
+* no tiny unreadable text
+* no overlapping components
+* no CTA buttons touching each other
+* no broken navigation
+
+---
+
+# 5. MOBILE TYPOGRAPHY
+
+Do not simply scale every font proportionally.
+
+Create a deliberate mobile typography hierarchy.
+
+Recommended starting point:
+
+### H1
+
+Approximately:
+
+`32–38px`
+
+depending on screen width.
+
+### H2
+
+Approximately:
+
+`26–30px`
+
+### H3
+
+Approximately:
+
+`20–24px`
+
+### Body
+
+Approximately:
+
+`15–17px`
+
+### Small supporting text
+
+Approximately:
+
+`13–14px`
+
+Do not make body text smaller than necessary just to fit more content.
+
+**Readable content is more important than fitting everything above the fold.**
+
+Use responsive `clamp()` values where appropriate rather than dozens of arbitrary breakpoints.
+
+---
+
+# 6. MOBILE HEADER / NAVIGATION
+
+The current mobile header should be treated as a UX problem, not just a CSS problem.
+
+Redesign the mobile navigation so that it is:
+
+* simple
+* obvious
+* thumb-friendly
+* fast to understand
+* easy to close
+* accessible
+* visually consistent with CertifyMe
+
+Primary mobile navigation should prioritize:
+
+1. Products
+2. Solutions / Industry Use Cases
+3. Features
+4. Pricing
+5. Login
+6. Request a Demo
+
+Do not dump the entire desktop mega-menu into a tiny mobile menu.
+
+Convert complex mega-menu structures into:
+
+### Products
+
+→ Digital Credential Infrastructure
+→ Transcript Management
+→ Skill Passports
+
+### Industry
+
+→ E-Learning
+→ Associations
+→ Higher Education
+→ L&D / HR
+→ Use Case FAQs
+
+### Features
+
+→ Integrations
+→ API
+→ Security & Compliance
+→ White Labeling
+→ Analytics
+→ etc.
+
+Use accordions where appropriate.
+
+The current desktop navigation contains large mega-menu structures for Products, Industry Use Cases and Features, so these should have a much simpler mobile interaction model.
+
+---
+
+# 7. HERO SECTION — REDESIGN FOR MOBILE
+
+The hero is one of the most important areas to redesign.
+
+Current desktop hero uses:
+
+* headline
+* supporting paragraph
+* two CTAs
+* credential tags
+* large visual
+* two-column layout
+
+Keep all of that content.
+
+But on mobile use:
+
+### Mobile structure
+
+1. Headline
+2. Short supporting description
+3. Primary CTA
+4. Secondary CTA
+5. Hero visual
+6. Trust/credential indicators
+
+Do not force the two-column desktop arrangement onto mobile.
+
+The current hero headline is:
+
+"The Digital Credential Infrastructure for Institutions"
+
+and the supporting message explains issuing, managing, verifying and analyzing credentials at scale. Preserve the messaging unless there is a strong UX reason to shorten it visually.
+
+### Mobile hero requirements
+
+* H1 must be comfortably readable.
+* Maximum text width should be controlled.
+* Buttons should be large enough for touch.
+* Primary CTA should be visually dominant.
+* Buttons can become full-width or nearly full-width.
+* Hero image should not consume the entire first screen.
+* Avoid excessive empty space.
+* Do not make the user scroll through a huge image before seeing the next meaningful information.
+
+The current credential tags are hidden entirely on screens below 768px.
+
+Instead of simply hiding them, evaluate whether the most important trust signal should remain visible on mobile.
+
+For example:
+
+**Open Badges 3.0 Certified · Enterprise Integrations · G2 Leader**
+
+Could become compact chips, a small trust row, or a single "Open Badges 3.0 Certified" trust indicator.
+
+---
+
+# 8. CUSTOMER LOGOS
+
+The current customer logos are presented as a horizontal desktop list.
+
+Do not squeeze six logos into a mobile row.
+
+On mobile use one of:
+
+* two-column grid
+* compact horizontal carousel
+* carefully sized logo strip
+* 3 + 3 grid
+
+Prioritize recognition and whitespace.
+
+Do not distort logos.
+
+Do not make logos so small that they become meaningless.
+
+---
+
+# 9. STATISTICS
+
+The current page presents statistics such as:
+
+* 5K+ institutions
+* 1M+ wallets
+* 144 countries
+
+These should remain visible.
+
+But the mobile presentation should be redesigned.
+
+Desktop:
+
+5K+ | 1M+ | 144
+
+Mobile:
+
+### 5K+
+
+Institutions trust CertifyMe
+
+### 1M+
+
+Wallets
+
+### 144
+
+Countries
+
+Use compact cards or stacked blocks.
+
+Avoid excessive vertical whitespace between each statistic.
+
+The current implementation already uses three statistic columns on desktop.
+
+---
+
+# 10. ALL CARD GRIDS
+
+For every multi-column card/grid section, evaluate it independently.
+
+Desktop:
+
+`3 cards`
+
+Mobile should normally become:
+
+`1 card`
+
+But do NOT automatically stack everything.
+
+Where there are many similar cards, consider:
+
+* horizontal swipe carousel
+* accordion
+* "featured + view all"
+* compact grid
+* tabs
+
+Do not make the mobile page unnecessarily long.
+
+The question for every section is:
+
+> "What is the best way for a person holding a phone to consume this information?"
+
+Not:
+
+> "How do I make the desktop grid fit?"
+
+---
+
+# 11. TABLES / DATA-HEAVY SECTIONS
+
+This is especially important.
+
+If the homepage contains comparison tables or data-heavy layouts, **do not simply make the entire table overflow horizontally**.
+
+For mobile, transform tables into:
+
+### Option A — Stacked comparison cards
+
+Example:
+
+**CertifyMe**
+
+Standards
+Open Badges 3.0
+W3C VC
+CLR
+
+Integrations
+LMS
+API
+Enterprise
+
+### Option B — Priority columns
+
+Show only the most important columns initially.
+
+Allow:
+
+**View full comparison →**
+
+### Option C — Horizontal scroll
+
+Only use horizontal scrolling if the table genuinely requires simultaneous column comparison.
+
+If horizontal scrolling is used:
+
+* clearly indicate scrollability
+* preserve column headers
+* avoid tiny text
+* keep first column sticky if useful
+* ensure touch scrolling works naturally
+
+Never allow a table to create accidental page-level horizontal scrolling.
+
+---
+
+# 12. LONG CONTENT
+
+The desktop homepage can afford more information.
+
+Mobile cannot.
+
+Do NOT delete content.
+
+Instead use:
+
+* accordions
+* expandable sections
+* "Read more"
+* "View all"
+* tabs
+* horizontal cards
+* progressive disclosure
+
+Important content should be visible.
+
+Secondary detail can be collapsed.
+
+This preserves the same data while improving mobile UX.
+
+---
+
+# 13. SECTION SPACING
+
+The current desktop page has large section spacing designed for large screens.
+
+Mobile should use a tighter vertical rhythm.
+
+As a starting point:
+
+* section padding: approximately 48–72px
+* card gaps: approximately 16–20px
+* internal card padding: approximately 20–24px
+* heading-to-body gap: approximately 12–16px
+* body-to-CTA gap: approximately 20–24px
+
+Do not apply these blindly.
+
+Use visual judgment.
+
+The objective is:
+
+**compact but not cramped.**
+
+---
+
+# 14. IMAGES
+
+Every major image must be reviewed for mobile.
+
+For each image determine:
+
+* Is it necessary?
+* Is it decorative?
+* Does it communicate product functionality?
+* Does it become too tall?
+* Does it crop badly?
+* Does it push important content too far down?
+* Should it be displayed after the text?
+* Should it become smaller?
+* Should it use a different crop?
+
+Do not simply set every image to `width:100%`.
+
+Use appropriate:
+
+* `object-fit`
+* `aspect-ratio`
+* `max-height`
+* responsive sizing
+* controlled cropping
+
+Reuse the existing image assets wherever possible.
+
+---
+
+# 15. BUTTONS / CTA UX
+
+Mobile CTAs need to be thumb-friendly.
+
+Minimum target:
+
+approximately 44px touch height.
+
+Avoid:
+
+[Request Demo] [Start Trial]
+
+being squeezed side-by-side on narrow screens.
+
+On mobile prefer:
+
+[ Request a Demo ]
+
+[ Start Free Trial ]
+
+or a deliberate stacked arrangement.
+
+Maintain the existing destinations.
+
+Do not invent new CTA destinations.
+
+The existing hero already uses Request a Demo and Start Free Trial, so preserve these actions.
+
+---
+
+# 16. MOBILE CTA STRATEGY
+
+Do not have ten competing CTA styles.
+
+Establish:
+
+### Primary
+
+Request a Demo
+
+### Secondary
+
+Start Free Trial
+
+Use the same hierarchy consistently.
+
+At appropriate points on the mobile page, consider a sticky bottom CTA:
+
+**Request a Demo**
+
+Only implement this if it improves UX and does not obstruct content.
+
+If implemented:
+
+* respect safe-area insets
+* do not cover content
+* provide enough bottom padding
+* make it dismissible if appropriate
+
+---
+
+# 17. ACCESSIBILITY
+
+The mobile redesign must improve accessibility.
+
+Check:
+
+* touch target size
+* contrast
+* focus states
+* keyboard navigation
+* screen reader labels
+* menu ARIA states
+* accordion ARIA states
+* button semantics
+* image alt text
+* logical heading hierarchy
+
+Do not sacrifice accessibility for visual compactness.
+
+---
+
+# 18. PERFORMANCE
+
+Mobile performance matters.
+
+Do not introduce a heavy mobile framework just to solve layout.
+
+Reuse the existing stack.
+
+The current homepage already loads Bootstrap, menu CSS, animation CSS, responsive CSS and enterprise overrides.
+
+Avoid adding unnecessary dependencies.
+
+Do not duplicate all homepage content into a completely separate HTML page.
+
+Prefer:
+
+* shared HTML/data
+* responsive CSS
+* conditional components only where genuinely necessary
+* reusable components
+
+---
+
+# 19. SEO MUST REMAIN INTACT
+
+Do not damage SEO while changing the UX.
+
+Preserve:
+
+* `<title>`
+* meta description
+* canonical
+* Open Graph
+* structured data
+* FAQ structured data
+* semantic headings
+* internal links
+* existing URLs
+* crawlable content
+
+The existing homepage already contains substantial SEO metadata and structured data.
+
+Do not create a separate `/mobile` page.
+
+Do not use a separate mobile URL.
+
+---
+
+# 20. DO NOT HIDE IMPORTANT CONTENT JUST TO PASS A VISUAL TEST
+
+This is important.
+
+Do not solve mobile problems by doing:
+
+```css
+display:none;
+```
+
+for major content unless there is a clear UX reason.
+
+For every piece of content hidden on mobile, ask:
+
+> Can this information be represented more efficiently instead?
+
+For example:
+
+Desktop:
+
+6 feature cards
+
+Mobile:
+
+Featured feature card
++
+"View all features"
+
+is better than simply deleting five features.
+
+---
+
+# 21. CREATE A MOBILE DESIGN SYSTEM
+
+Instead of adding random media-query overrides throughout the existing stylesheet, establish a controlled mobile layer.
+
+Create/organize:
+
+* mobile spacing variables
+* mobile typography scale
+* mobile card styles
+* mobile CTA styles
+* mobile section containers
+* mobile navigation
+* mobile accordion
+* mobile carousel behavior
+* mobile table behavior
+
+Use clear naming.
+
+Avoid dozens of one-off selectors.
+
+Avoid `!important` unless absolutely necessary.
+
+---
+
+# 22. BREAKPOINT STRATEGY
+
+Use a small number of intentional breakpoints.
+
+Suggested:
+
+### Desktop
+
+`≥ 992px`
+
+Preserve existing layout.
+
+### Tablet
+
+`768px – 991px`
+
+Adapt columns and spacing.
+
+### Mobile
+
+`< 768px`
+
+Use deliberately redesigned mobile components/layout.
+
+### Small mobile
+
+`< 390px`
+
+Make additional typography/spacing adjustments only where necessary.
+
+Do not create a breakpoint for every device width.
+
+---
+
+# 23. UX REVIEW SECTION BY SECTION
+
+After implementation, review the entire homepage on:
+
+### Desktop
+
+1440px
+1280px
+1024px
+
+### Tablet
+
+820px
+768px
+
+### Mobile
+
+430px
+414px
+390px
+375px
+360px
+320px
+
+For every viewport check:
+
+* header
+* hero
+* customer logos
+* statistics
+* every content section
+* every card
+* tables
+* forms
+* CTAs
+* footer
+
+---
+
+# 24. TEST FOR THESE SPECIFIC FAILURES
+
+You must actively test and fix:
+
+### Horizontal overflow
+
+There must be no accidental page-level horizontal scroll.
+
+### Text clipping
+
+No heading, button or label should be clipped.
+
+### Tiny text
+
+No important content should require zooming.
+
+### Excessive whitespace
+
+Mobile should not contain huge empty areas inherited from desktop.
+
+### Excessive page length
+
+Avoid unnecessarily stacking dozens of repetitive cards.
+
+### Broken images
+
+Every image must load and remain correctly proportioned.
+
+### Navigation
+
+Menu must be easy to open, understand and close.
+
+### CTA usability
+
+Buttons must be easy to tap.
+
+### Sticky elements
+
+Nothing should cover important content.
+
+### Animation
+
+Reduce/remove animations that make mobile feel slow or distracting.
+
+Respect:
+
+`prefers-reduced-motion`.
+
+---
+
+# 25. VISUAL QUALITY BAR
+
+Do not consider the task complete because:
+
+> "The page is responsive."
+
+That is not the objective.
+
+The objective is:
+
+> **The CertifyMe homepage should feel intentionally designed for mobile.**
+
+It should look like a modern B2B SaaS website when viewed on a phone.
+
+It should have:
+
+* strong hierarchy
+* clear CTA
+* readable typography
+* controlled spacing
+* clean cards
+* intentional image placement
+* easy navigation
+* progressive disclosure
+* no clutter
+* no horizontal overflow
+
+---
+
+# 26. VERY IMPORTANT — USE THE EXISTING DATA
+
+Do not rewrite the entire website's content.
+
+Do not invent:
+
+* new statistics
+* customer names
+* certifications
+* product claims
+* features
+* integrations
+* pricing
+* testimonials
+
+Use the existing homepage content and data.
+
+The current source already contains important product positioning, certifications, integrations, customer logos, statistics and CTAs. Preserve those facts and links.
+
+---
+
+# 27. IMPLEMENTATION APPROACH
+
+Before coding:
+
+### Step 1
+
+Map the homepage:
+
+`Section → Desktop behaviour → Current mobile behaviour → Mobile problem → Proposed mobile behaviour`
+
+### Step 2
+
+Identify which sections can use responsive CSS only.
+
+### Step 3
+
+Identify which sections genuinely need a different mobile DOM/component structure.
+
+### Step 4
+
+Implement the mobile UX.
+
+### Step 5
+
+Test all breakpoints.
+
+### Step 6
+
+Compare desktop before/after to ensure it has not been damaged.
+
+---
+
+# 28. DO NOT CREATE A SEPARATE MOBILE WEBSITE
+
+I do NOT want:
+
+`index.html`
+
+and
+
+`mobile.html`
+
+or:
+
+`/mobile`
+
+or duplicated content.
+
+I want one maintainable homepage.
+
+Where necessary, it is acceptable to have:
+
+* desktop presentation component
+* mobile presentation component
+
+but both must use the same underlying content/data.
+
+---
+
+# 29. FINAL QA REPORT
+
+After completing the implementation, give me a concise report with:
+
+### 1. Sections reviewed
+
+List every homepage section.
+
+### 2. Mobile changes
+
+Explain what changed in each section.
+
+### 3. Desktop protection
+
+Explain how you ensured desktop was not broken.
+
+### 4. Tables
+
+Explain how each table/data-heavy section behaves on mobile.
+
+### 5. Navigation
+
+Explain the new mobile navigation behaviour.
+
+### 6. Performance
+
+List any new assets/dependencies introduced.
+
+### 7. Accessibility
+
+List accessibility improvements.
+
+### 8. Remaining issues
+
+Do not hide problems. Tell me what still needs attention.
+
+---
+
+# 30. MOST IMPORTANT INSTRUCTION
+
+**Do not treat this as a CSS responsiveness task.**
+
+Treat it as a:
+
+> **Mobile UX redesign using the existing CertifyMe homepage content, while preserving the existing desktop experience.**
+
+The desktop design is already our baseline.
+
+The mobile version needs to be **re-composed**, not merely resized.
+
+Before finalizing, actually inspect the rendered page at multiple mobile widths and make another refinement pass based on what you see.
+
+Do not stop after the first responsive implementation.
+
+**Build → Test → Inspect → Fix → Test again.**
