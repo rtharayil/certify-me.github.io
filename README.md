@@ -1,5 +1,5 @@
-# CertifyMe marketing site
-
+# CertifyMe marketing site 
+ 
 ## Validation
 
 Run the comparison-page regression suite before publishing updates to comparison
