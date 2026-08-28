@@ -368,6 +368,18 @@
   transform: translateY(-3px);
 }
 
+.pba-format-card--note {
+  background: #f0f2ff;
+  border-color: #dfe3fb;
+  cursor: default;
+}
+
+.pba-format-card--note:hover {
+  border-color: #dfe3fb;
+  box-shadow: none;
+  transform: none;
+}
+
 .pba-format-icon {
   color: var(--pba-blue);
   font-size: .72rem;
@@ -480,6 +492,30 @@
   font-size: .68rem;
   letter-spacing: .07em;
   text-transform: uppercase;
+}
+
+.pba-variation-card--note {
+  background: #f6f7fb;
+  border-style: dashed;
+  cursor: default;
+}
+
+.pba-variation-card--note:hover {
+  border-color: var(--pba-line);
+}
+
+.pba-variation-note {
+  align-items: center;
+  color: var(--pba-muted);
+  display: flex;
+  font-size: .8rem;
+  height: 130px;
+  line-height: 1.6;
+  margin: 14px 0;
+}
+
+.pba-variation-note strong {
+  color: var(--pba-navy);
 }
 
 .pba-section--usage {

@@ -77,9 +77,6 @@ partner_brand_assets: true
         <p>Choose vector artwork for print and scale, or transparent raster artwork for digital placements.</p>
       </div>
       <div class="pba-format-grid">
-        <a class="pba-format-card" href="/assets3/images/logo.svg" download="certifyme-logo.svg" data-brand-download>
-          <span class="pba-format-icon">SVG</span><strong>Vector Master</strong><span>Resolution-independent artwork for print and unlimited scaling <b>Download SVG ↗</b></span>
-        </a>
         <a class="pba-format-card" href="/assets4/images/Logo/1.png" download="certifyme-primary-logo-7094x1940.png" data-brand-download>
           <span class="pba-format-icon">PNG</span><strong>Ultra High-Resolution PNG</strong><span>7094 × 1940 px · 13.8 MP · Transparent <b>Download PNG ↗</b></span>
         </a>
@@ -89,6 +86,9 @@ partner_brand_assets: true
         <a class="pba-format-card" href="/assets4/images/Logo/11.png" download="certifyme-logo-mark.png" data-brand-download>
           <span class="pba-format-icon pba-format-icon--mark">◈</span><strong>Logo Mark</strong><span>500 × 500 px · Transparent standalone symbol <b>Download PNG ↗</b></span>
         </a>
+        <div class="pba-format-card pba-format-card--note">
+          <span class="pba-format-icon">SOURCE</span><strong>Verified Current Artwork</strong><span>Only current PNG artwork is published here. A current SVG or CDR master will be added once supplied and verified.</span>
+        </div>
       </div>
     </div>
   </section>
@@ -103,9 +103,7 @@ partner_brand_assets: true
         <a class="pba-variation-card" href="/assets4/images/Logo/1.png" download="certifyme-primary-logo-7094x1940.png" data-brand-download><span>Primary Logo</span><div><img src="/assets4/images/Logo/1.png" alt="" loading="lazy"></div><b>7094 × 1940 PNG ↗</b></a>
         <a class="pba-variation-card pba-variation-card--dark" href="/assets4/images/Logo/Logo%20(10).png" download="certifyme-all-white-logo-7094x1940.png" data-brand-download><span>All-White Logo</span><div><img src="/assets4/images/Logo/Logo (10).png" alt="" loading="lazy"></div><b>7094 × 1940 PNG ↗</b></a>
         <a class="pba-variation-card" href="/assets4/images/Logo/11.png" download="certifyme-logo-mark-500x500.png" data-brand-download><span>Logo Mark</span><div><img class="pba-mark-image" src="/assets4/images/Logo/11.png" alt="" loading="lazy"></div><b>500 × 500 PNG ↗</b></a>
-        <a class="pba-variation-card pba-variation-card--dark" href="/assets3/images/logo.svg" download="certifyme-white-logo-vector.svg" data-brand-download><span>White Vector Artwork</span><div><img src="/assets3/images/logo.svg" alt="" loading="lazy"></div><b>Scalable SVG ↗</b></a>
-        <a class="pba-variation-card" href="/assets4/images/Logo/2.png" download="certifyme-blue-grey-logo-7094x1940.png" data-brand-download><span>Blue + Grey Logo</span><div><img src="/assets4/images/Logo/2.png" alt="" loading="lazy"></div><b>7094 × 1940 PNG ↗</b></a>
-        <a class="pba-variation-card" href="/assets4/images/Logo/Logo%20(14).png" download="certifyme-primary-transparent-7094x1940.png" data-brand-download><span>Primary Transparent</span><div><img src="/assets4/images/Logo/Logo (14).png" alt="" loading="lazy"></div><b>7094 × 1940 PNG ↗</b></a>
+        <div class="pba-variation-card pba-variation-card--note"><span>Current file set</span><div class="pba-variation-note">Verified current PNG artwork only.<br><strong>Vector source pending</strong></div><b>Do not use legacy logos</b></div>
       </div>
     </div>
   </section>
