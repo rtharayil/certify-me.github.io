@@ -1,0 +1,196 @@
+# CertifyMe Partner Brand Assets Page
+
+Create a **premium, high-resolution partner brand assets / logo download page for CertifyMe**.
+
+This is a page designed for **universities, institutions, technology partners, customers, media, and other partners** to download official CertifyMe logos and brand assets for use on their websites, presentations, certificates, marketing materials, partnership announcements, and other approved communications.
+
+### Brand
+
+**CertifyMe**
+
+**Tagline:**
+**The Most Trusted Digital Credential Platform**
+
+Use the **official CertifyMe logo provided**. Do not redesign, reinterpret, distort, or alter the logo.
+
+---
+
+## Page Header
+
+Create a sophisticated enterprise SaaS header:
+
+**CERTIFYME PARTNER BRAND ASSETS**
+
+# CertifyMe Logo & Brand Assets
+
+**The Most Trusted Digital Credential Platform**
+
+Supporting text:
+
+**Official CertifyMe brand assets for partners, customers, institutions, and media.**
+
+Add a prominent but elegant visual indication:
+
+**Download Official Assets**
+
+---
+
+## Main Logo Download Area
+
+Create a large premium section titled:
+
+### CertifyMe Logo
+
+Show the official CertifyMe logo prominently in two separate presentation cards.
+
+### 01 — Logo on Light Background
+
+* White background
+* Full official CertifyMe logo
+* High-resolution appearance
+* Transparent PNG representation
+* SVG/vector representation
+* Clearly indicate:
+
+**PNG · SVG · Transparent**
+
+### 02 — Logo on Dark Background
+
+* Deep charcoal / black background
+* Approved white/light CertifyMe logo
+* High-resolution appearance
+* Transparent PNG representation
+* SVG/vector representation
+* Clearly indicate:
+
+**PNG · SVG · Transparent**
+
+Each card should have a clear premium **DOWNLOAD** button underneath.
+
+---
+
+## Logo Formats
+
+Create a clean download section:
+
+### Available Formats
+
+**SVG**
+Vector format for websites, print, presentations and high-resolution applications.
+
+**PNG**
+High-resolution transparent logo for digital use.
+
+**Logo on Dark Background**
+Approved light/white version for dark interfaces and backgrounds.
+
+**Logo Mark**
+Standalone CertifyMe symbol/icon for applications where the full wordmark is not required.
+
+Present these as clean, downloadable asset cards.
+
+---
+
+## Logo Variations
+
+Create a visual grid showing the approved assets:
+
+1. **Primary Logo**
+2. **White Logo**
+3. **Logo Mark**
+4. **Wordmark**
+5. **Primary Logo — Transparent**
+6. **White Logo — Transparent**
+
+Every logo should be **high resolution with a transparent background** where applicable.
+
+Do not invent new logo variations.
+
+---
+
+## Partner Usage
+
+Add a concise section:
+
+### Using the CertifyMe Brand
+
+Partners may use these official assets to identify CertifyMe as their digital credentialing platform, technology provider, or partner.
+
+**Please use the official artwork provided and do not:**
+
+* Stretch or distort the logo
+* Change the logo proportions
+* Modify the logo typography
+* Add effects, shadows, or outlines
+* Change the logo colors
+* Recreate the logo manually
+
+Keep the guidance visually minimal — this is not a lengthy brand guideline document.
+
+---
+
+## Partner Recognition
+
+Add a premium section titled:
+
+### Proudly Powered by CertifyMe
+
+Show the CertifyMe logo alongside a subtle placeholder area for:
+
+**Partner Logo + CertifyMe Logo**
+
+Demonstrate a professional co-branding arrangement suitable for:
+
+* University websites
+* Partner websites
+* Presentations
+* Press releases
+* Digital certificates
+* Events
+* Marketing materials
+
+---
+
+## Footer
+
+End with:
+
+**CertifyMe**
+
+*The Most Trusted Digital Credential Platform*
+
+Small text:
+
+**Official Partner Brand Assets**
+
+Include a subtle **Download All Assets** button.
+
+---
+
+## Design Direction
+
+The page should feel like a **world-class enterprise technology partner portal**, not an advertising poster.
+
+Use:
+
+* Premium white and near-black sections
+* Extremely clean Swiss-style grid
+* Generous whitespace
+* Sophisticated typography
+* Minimal grey dividers
+* High-resolution logo presentation
+* Sharp vector-quality assets
+* Elegant download buttons
+* Consistent card design
+* Modern enterprise SaaS aesthetic
+* Professional enough for universities, governments, and global technology partners
+
+The page should visually communicate:
+
+**Official · Trusted · Professional · Ready to Use**
+
+The most important element is the **CertifyMe logo itself**. Keep every logo representation extremely sharp, clean, undistorted, and faithful to the supplied official artwork.
+
+Do not create fake partner logos or additional brand marks.
+
+The final output should look like the **official CertifyMe Partner Brand Assets / Logo Download Center**.
