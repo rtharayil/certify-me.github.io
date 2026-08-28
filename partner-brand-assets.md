@@ -23,7 +23,7 @@ partner_brand_assets: true
           <div class="pba-logo-stage pba-logo-stage--hero">
             <img src="/assets4/images/Logo/1.png" alt="CertifyMe logo" width="7094" height="1940">
           </div>
-          <p>Official artwork · Transparent PNG</p>
+          <p>Official artwork · 7094 × 1940 px · Transparent PNG</p>
         </div>
       </div>
     </div>
@@ -31,6 +31,12 @@ partner_brand_assets: true
 
   <section id="pba-logo-library" class="pba-section pba-section--library">
     <div class="container">
+      <div class="pba-quality-strip" aria-label="Asset quality specifications">
+        <div><span>Raster master</span><strong>7094 × 1940 px</strong><small>13.8 megapixels</small></div>
+        <div><span>Vector master</span><strong>SVG</strong><small>Resolution-independent</small></div>
+        <div><span>Background</span><strong>Transparent</strong><small>Production-ready PNG</small></div>
+        <div><span>Colour profile</span><strong>sRGB</strong><small>Web and presentation ready</small></div>
+      </div>
       <div class="pba-section-heading">
         <p class="pba-kicker">01 / Core artwork</p>
         <h2>CertifyMe Logo</h2>
@@ -44,19 +50,19 @@ partner_brand_assets: true
             <img src="/assets4/images/Logo/1.png" alt="CertifyMe primary logo on a light background" width="7094" height="1940" loading="lazy">
           </div>
           <div class="pba-card-footer">
-            <div><h3>Primary Logo</h3><p>PNG · Transparent</p></div>
-            <a class="pba-download" href="/assets4/images/Logo/1.png" download="certifyme-primary-logo.png" data-brand-download>Download <span aria-hidden="true">↗</span></a>
+            <div><h3>Primary Logo</h3><p>PNG · 7094 × 1940 px · Transparent</p></div>
+            <a class="pba-download" href="/assets4/images/Logo/1.png" download="certifyme-primary-logo-7094x1940.png" data-brand-download>Download high-res PNG <span aria-hidden="true">↗</span></a>
           </div>
         </article>
 
         <article class="pba-feature-card pba-feature-card--dark">
           <div class="pba-card-topline"><span>02</span><span>Dark background</span></div>
           <div class="pba-logo-stage pba-logo-stage--dark">
-            <img src="/assets4/images/Logo/3.png" alt="CertifyMe approved light logo on a dark background" width="7094" height="1940" loading="lazy">
+            <img src="/assets4/images/Logo/Logo (10).png" alt="CertifyMe official all-white logo on a dark background" width="7094" height="1940" loading="lazy">
           </div>
           <div class="pba-card-footer">
-            <div><h3>White Logo</h3><p>PNG · Transparent</p></div>
-            <a class="pba-download pba-download--light" href="/assets4/images/Logo/3.png" download="certifyme-white-logo.png" data-brand-download>Download <span aria-hidden="true">↗</span></a>
+            <div><h3>All-White Logo</h3><p>PNG · 7094 × 1940 px · Transparent</p></div>
+            <a class="pba-download pba-download--light" href="/assets4/images/Logo/Logo%20(10).png" download="certifyme-all-white-logo-7094x1940.png" data-brand-download>Download high-res PNG <span aria-hidden="true">↗</span></a>
           </div>
         </article>
       </div>
@@ -72,16 +78,16 @@ partner_brand_assets: true
       </div>
       <div class="pba-format-grid">
         <a class="pba-format-card" href="/assets3/images/logo.svg" download="certifyme-logo.svg" data-brand-download>
-          <span class="pba-format-icon">SVG</span><strong>Vector Logo</strong><span>Web, print, and high-resolution use <b>Download ↗</b></span>
+          <span class="pba-format-icon">SVG</span><strong>Vector Master</strong><span>Resolution-independent artwork for print and unlimited scaling <b>Download SVG ↗</b></span>
         </a>
-        <a class="pba-format-card" href="/assets4/images/Logo/1.png" download="certifyme-logo.png" data-brand-download>
-          <span class="pba-format-icon">PNG</span><strong>Transparent PNG</strong><span>High-resolution digital artwork <b>Download ↗</b></span>
+        <a class="pba-format-card" href="/assets4/images/Logo/1.png" download="certifyme-primary-logo-7094x1940.png" data-brand-download>
+          <span class="pba-format-icon">PNG</span><strong>Ultra High-Resolution PNG</strong><span>7094 × 1940 px · 13.8 MP · Transparent <b>Download PNG ↗</b></span>
         </a>
-        <a class="pba-format-card" href="/assets4/images/Logo/3.png" download="certifyme-white-logo.png" data-brand-download>
-          <span class="pba-format-icon pba-format-icon--dark">◐</span><strong>Dark Background Logo</strong><span>Approved light logo for dark surfaces <b>Download ↗</b></span>
+        <a class="pba-format-card" href="/assets4/images/Logo/Logo%20(10).png" download="certifyme-all-white-logo-7094x1940.png" data-brand-download>
+          <span class="pba-format-icon pba-format-icon--dark">◐</span><strong>All-White Logo</strong><span>7094 × 1940 px · Fully white artwork for dark surfaces <b>Download PNG ↗</b></span>
         </a>
         <a class="pba-format-card" href="/assets4/images/Logo/11.png" download="certifyme-logo-mark.png" data-brand-download>
-          <span class="pba-format-icon pba-format-icon--mark">◈</span><strong>Logo Mark</strong><span>Standalone CertifyMe symbol <b>Download ↗</b></span>
+          <span class="pba-format-icon pba-format-icon--mark">◈</span><strong>Logo Mark</strong><span>500 × 500 px · Transparent standalone symbol <b>Download PNG ↗</b></span>
         </a>
       </div>
     </div>
@@ -94,12 +100,12 @@ partner_brand_assets: true
         <p>Use only the official files below. Every transparent asset should remain undistorted and maintain its original proportions.</p>
       </div>
       <div class="pba-variation-grid">
-        <a class="pba-variation-card" href="/assets4/images/Logo/1.png" download="certifyme-primary-logo.png" data-brand-download><span>Primary Logo</span><div><img src="/assets4/images/Logo/1.png" alt="" loading="lazy"></div><b>PNG ↗</b></a>
-        <a class="pba-variation-card pba-variation-card--dark" href="/assets4/images/Logo/3.png" download="certifyme-white-logo.png" data-brand-download><span>White Logo</span><div><img src="/assets4/images/Logo/3.png" alt="" loading="lazy"></div><b>PNG ↗</b></a>
-        <a class="pba-variation-card" href="/assets4/images/Logo/11.png" download="certifyme-logo-mark.png" data-brand-download><span>Logo Mark</span><div><img class="pba-mark-image" src="/assets4/images/Logo/11.png" alt="" loading="lazy"></div><b>PNG ↗</b></a>
-        <a class="pba-variation-card pba-variation-card--dark" href="/assets3/images/logo.svg" download="certifyme-logo.svg" data-brand-download><span>SVG Master Artwork</span><div><img src="/assets3/images/logo.svg" alt="" loading="lazy"></div><b>SVG ↗</b></a>
-        <a class="pba-variation-card" href="/assets4/images/Logo/2.png" download="certifyme-blue-grey-logo.png" data-brand-download><span>Blue + Grey Logo</span><div><img src="/assets4/images/Logo/2.png" alt="" loading="lazy"></div><b>PNG ↗</b></a>
-        <a class="pba-variation-card" href="/assets4/images/Logo/Logo%20(14).png" download="certifyme-primary-transparent.png" data-brand-download><span>Primary Transparent</span><div><img src="/assets4/images/Logo/Logo (14).png" alt="" loading="lazy"></div><b>PNG ↗</b></a>
+        <a class="pba-variation-card" href="/assets4/images/Logo/1.png" download="certifyme-primary-logo-7094x1940.png" data-brand-download><span>Primary Logo</span><div><img src="/assets4/images/Logo/1.png" alt="" loading="lazy"></div><b>7094 × 1940 PNG ↗</b></a>
+        <a class="pba-variation-card pba-variation-card--dark" href="/assets4/images/Logo/Logo%20(10).png" download="certifyme-all-white-logo-7094x1940.png" data-brand-download><span>All-White Logo</span><div><img src="/assets4/images/Logo/Logo (10).png" alt="" loading="lazy"></div><b>7094 × 1940 PNG ↗</b></a>
+        <a class="pba-variation-card" href="/assets4/images/Logo/11.png" download="certifyme-logo-mark-500x500.png" data-brand-download><span>Logo Mark</span><div><img class="pba-mark-image" src="/assets4/images/Logo/11.png" alt="" loading="lazy"></div><b>500 × 500 PNG ↗</b></a>
+        <a class="pba-variation-card pba-variation-card--dark" href="/assets3/images/logo.svg" download="certifyme-white-logo-vector.svg" data-brand-download><span>White Vector Artwork</span><div><img src="/assets3/images/logo.svg" alt="" loading="lazy"></div><b>Scalable SVG ↗</b></a>
+        <a class="pba-variation-card" href="/assets4/images/Logo/2.png" download="certifyme-blue-grey-logo-7094x1940.png" data-brand-download><span>Blue + Grey Logo</span><div><img src="/assets4/images/Logo/2.png" alt="" loading="lazy"></div><b>7094 × 1940 PNG ↗</b></a>
+        <a class="pba-variation-card" href="/assets4/images/Logo/Logo%20(14).png" download="certifyme-primary-transparent-7094x1940.png" data-brand-download><span>Primary Transparent</span><div><img src="/assets4/images/Logo/Logo (14).png" alt="" loading="lazy"></div><b>7094 × 1940 PNG ↗</b></a>
       </div>
     </div>
   </section>
