@@ -1,0 +1,147 @@
+.ach-scope{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#122922;font-size:16px;-webkit-font-smoothing:antialiased}
+.ach-scope{--ink:#082622;--navy:#0b3a30;--muted:#5c6b66;--muted2:#7c8b86;--line:#e6eaea;--green:#0a7a52;--green2:#0d8a5c;--green-dark:#04352d;--mint:#d9f7ea;--mint-text:#0f7350;--mint-bg:#f3faf7;--blue:#2f7fe0;--blue-bg:#e6f0fd;--purple:#7a52d6;--purple-bg:#efe7fb;--orange:#ee9d0d;--orange-bg:#fdeecb}
+.ach-scope a{color:inherit;text-decoration:none}
+.ach-scope img{display:block}
+.ach-scope svg{display:block}
+.ach-scope /* ---------- CONTENT ---------- */
+.content{flex:1;min-width:0;display:flex;flex-direction:column}
+.ach-scope .main{padding:30px 37px 51px}
+.ach-scope .back{display:flex;align-items:center;gap:7px;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:16px}
+.ach-scope .back svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2}
+.ach-scope h1{font-size:32px;line-height:1.15;margin:0 0 7px;font-weight:800;color:var(--ink);letter-spacing:-.3px}
+.ach-scope .sub{font-size:16px;color:var(--muted);margin-bottom:23px}
+.ach-scope .layout{display:grid;grid-template-columns:minmax(0,1fr) 372px;gap:25px;align-items:start}
+.ach-scope .left,
+.ach-scope .right{min-width:0;display:flex;flex-direction:column;gap:23px}
+.ach-scope .card{background:#fff;border:1px solid var(--line);border-radius:16px}
+.ach-scope /* ---------- HERO ---------- */
+.hero{background:var(--mint-bg);padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:23px;position:relative;overflow:hidden}
+.ach-scope .confetti i{position:absolute;width:6px;height:6px;border-radius:1px;transform:rotate(40deg)}
+.ach-scope .hero-left{display:flex;align-items:center;gap:23px;min-width:0}
+.ach-scope .badge-wrap{position:relative;width:87px;height:101px;flex:none;display:flex;align-items:center;justify-content:center}
+.ach-scope .shield{width:69px;height:80px;background:var(--green);clip-path:polygon(50% 0,92% 18%,92% 64%,50% 100%,8% 64%,8% 18%);display:flex;align-items:center;justify-content:center}
+.ach-scope .shield svg{width:37px;height:37px;stroke:#fff;fill:none;stroke-width:3}
+.ach-scope .hero-copy{min-width:0}
+.ach-scope .congrats{font-size:16px;font-weight:700;color:#111;margin-bottom:9px}
+.ach-scope .hero-big{font-size:23px;font-weight:800;letter-spacing:-.2px;color:#080d14;margin-bottom:9px}
+.ach-scope .hero-small{font-size:15px;color:var(--muted)}
+.ach-scope .hero-right{display:flex;align-items:center;gap:18px;flex:none}
+.ach-scope .medal-wrap{position:relative;width:76px;height:99px;flex:none}
+.ach-scope .medal{width:74px;height:71px;background:var(--green-dark);clip-path:polygon(50% 0,91% 19%,91% 72%,50% 100%,9% 72%,9% 19%);display:flex;align-items:center;justify-content:center;position:relative;z-index:2}
+.ach-scope .medal svg{width:32px;height:32px;stroke:#fff;fill:none;stroke-width:1.7}
+.ach-scope .medal-tails{position:absolute;left:16px;top:60px;width:41px;height:34px;z-index:1}
+.ach-scope .medal-tails i{position:absolute;bottom:0;width:16px;height:30px;background:var(--green-dark)}
+.ach-scope .medal-tails i:first-child{left:0;clip-path:polygon(0 0,100% 0,100% 100%,50% 78%,0 100%)}
+.ach-scope .medal-tails i:last-child{right:0;clip-path:polygon(0 0,100% 0,100% 100%,50% 78%,0 100%)}
+.ach-scope .medal-copy{min-width:0;white-space:nowrap}
+.ach-scope .medal-skill{font-size:16px;font-weight:800;color:#111;margin-bottom:7px;display:flex;align-items:center;gap:8px}
+.ach-scope .level{display:inline-block;background:var(--mint);color:var(--mint-text);border-radius:7px;padding:3px 9px;font-size:12px;font-weight:800}
+.ach-scope .medal-date{font-size:13px;color:var(--muted)}
+.ach-scope /* ---------- SUMMARY ---------- */
+.summary{padding:23px 25px}
+.ach-scope .section-title{font-size:17px;font-weight:800;color:#111}
+.ach-scope .summary-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.ach-scope .review-btn{height:34px;border:1px solid #cfe0dc;border-radius:8px;background:#fff;padding:0 14px;font-size:13px;color:var(--navy);font-weight:700;display:flex;align-items:center;gap:7px;cursor:pointer}
+.ach-scope .review-btn svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2.2}
+.ach-scope .summary-row{display:grid;grid-template-columns:1.15fr 1.2fr 1fr 1fr .85fr}
+.ach-scope .metric{min-width:0;padding:0 18px;border-right:1px solid var(--line)}
+.ach-scope .metric:first-child{padding-left:0}
+.ach-scope .metric:last-child{border-right:0}
+.ach-scope .metric-label{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--muted);margin-bottom:10px;white-space:nowrap}
+.ach-scope .metric-label svg{width:17px;height:17px;stroke:#0a2447;fill:none;stroke-width:1.5}
+.ach-scope .metric-value{font-size:15px;color:#111;font-weight:800;white-space:nowrap}
+.ach-scope .metric .level{margin-top:7px}
+.ach-scope .verified-pill{display:inline-flex;align-items:center;gap:5px;background:var(--mint);color:var(--mint-text);border-radius:16px;padding:5px 10px;font-size:13px;font-weight:800}
+.ach-scope .verified-pill svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2.6}
+.ach-scope .score{font-size:16px;font-weight:800;color:#111}
+.ach-scope .excellent{font-size:13px;color:var(--muted);margin-top:5px}
+.ach-scope /* ---------- MEANS ---------- */
+.means{padding:23px 25px}
+.ach-scope .means-row{display:grid;grid-template-columns:repeat(4,1fr);margin-top:18px}
+.ach-scope .mean{display:flex;gap:13px;padding:0 16px;border-right:1px solid var(--line)}
+.ach-scope .mean:first-child{padding-left:0}
+.ach-scope .mean:last-child{border-right:0;padding-right:0}
+.ach-scope .circle{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none}
+.ach-scope .circle svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.6}
+.ach-scope .green{background:var(--mint);color:var(--green)}
+.ach-scope .blue{background:var(--blue-bg);color:var(--blue)}
+.ach-scope .purple{background:var(--purple-bg);color:var(--purple)}
+.ach-scope .orange{background:var(--orange-bg);color:var(--orange)}
+.ach-scope .mean h3{font-size:14px;color:#111;font-weight:800;margin:2px 0 7px}
+.ach-scope .mean p{font-size:13px;line-height:1.5;color:var(--muted);margin:0}
+.ach-scope /* ---------- SKILLS ---------- */
+.skills{padding:23px 25px;position:relative}
+.ach-scope .skill-row{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:18px}
+.ach-scope .skill{border:1px solid var(--line);border-radius:12px;padding:14px 12px 14px;position:relative;background:#fff;display:flex;flex-direction:column;height:113px}
+.ach-scope .skill.selected{border:1.5px solid var(--green)}
+.ach-scope .skill-check{position:absolute;right:-8px;top:-8px;width:21px;height:21px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;border:2px solid #fff}
+.ach-scope .skill-check svg{width:10px;height:10px;stroke:#fff;stroke-width:3;fill:none}
+.ach-scope .skill-top{display:flex;align-items:flex-start;gap:8px;flex:1}
+.ach-scope .skill-icon{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none}
+.ach-scope .skill-icon svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.6}
+.ach-scope .skill-name{font-size:13px;font-weight:800;color:#111;line-height:1.25}
+.ach-scope .skill-lvl{font-size:12px;color:var(--muted);margin-top:3px}
+.ach-scope .bar{height:6px;background:#e9edec;border-radius:3px;overflow:hidden;margin-top:auto}
+.ach-scope .bar b{display:block;height:100%;background:var(--green);border-radius:3px}
+.ach-scope .bar.orange b{background:var(--orange)}
+.ach-scope .all{font-size:14px;color:#0a5b98;font-weight:700;text-align:center;margin-top:18px;display:flex;align-items:center;justify-content:center;gap:7px}
+.ach-scope .all svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2.4}
+.ach-scope .skill-nav{position:absolute;right:-16px;top:50%;transform:translateY(-4px);width:30px;height:30px;border-radius:50%;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 5px rgba(0,0,0,.08)}
+.ach-scope .skill-nav svg{width:14px;height:14px;stroke:#173226;fill:none;stroke-width:2.2}
+.ach-scope /* ---------- CTA ---------- */
+.cta{padding:21px 25px;background:var(--mint-bg);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.ach-scope .cta-left{display:flex;align-items:center;gap:16px;min-width:0}
+.ach-scope .target{width:51px;height:51px;border-radius:50%;background:var(--mint);color:var(--green);display:flex;align-items:center;justify-content:center;flex:none}
+.ach-scope .target svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.5}
+.ach-scope .cta-title{font-size:17px;font-weight:800;color:#111;margin-bottom:6px}
+.ach-scope .cta-sub{font-size:14px;color:var(--muted)}
+.ach-scope .cta-btn{height:48px;border:0;border-radius:9px;background:var(--green-dark);color:#fff;font-size:14px;font-weight:700;flex:none;padding:0 23px;display:flex;align-items:center;gap:9px;cursor:pointer}
+.ach-scope .cta-btn svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:2.4}
+.ach-scope /* ---------- RIGHT COLUMN ---------- */
+.right-title{font-size:17px;font-weight:800;color:#111;margin-bottom:16px}
+.ach-scope .credential-wrap{padding:21px}
+.ach-scope .credential{border:1px solid var(--line);border-radius:12px;overflow:hidden;position:relative}
+.ach-scope .cred-band{height:44px;background:linear-gradient(90deg,var(--green-dark),#0a5748);display:flex;align-items:center;justify-content:space-between;padding:0 14px;color:#fff}
+.ach-scope .cred-band-logo{display:flex;align-items:center;gap:8px}
+.ach-scope .cred-band-logo img{width:22px;height:auto}
+.ach-scope .cred-band-logo b{font-size:10px;font-weight:800;line-height:1.15;display:block;letter-spacing:.2px}
+.ach-scope .cred-band span.right{font-size:11px;font-weight:700}
+.ach-scope .cred-body{padding:18px 16px 51px;display:flex;gap:14px}
+.ach-scope .cred-medal{width:60px;height:64px;flex:none;position:relative}
+.ach-scope .cred-medal .medal{width:60px;height:57px}
+.ach-scope .cred-medal .medal svg{width:25px;height:25px}
+.ach-scope .cred-medal .medal-tails{left:13px;top:48px;width:34px;height:28px}
+.ach-scope .cred-medal .medal-tails i{width:14px;height:25px}
+.ach-scope .cred-name{font-size:17px;font-weight:800;color:#111;margin-bottom:8px}
+.ach-scope .cred-text .level{font-size:12px;padding:3px 9px}
+.ach-scope .cred-date,
+.ach-scope .cred-by{font-size:13px;color:var(--muted);margin-top:7px}
+.ach-scope .cred-id{position:absolute;left:16px;bottom:14px;font-size:10px;color:#8a97a3}
+.ach-scope .qr{position:absolute;right:14px;bottom:12px;width:53px;height:53px;object-fit:cover;border-radius:2px}
+.ach-scope .view{height:44px;border:1px solid var(--line);border-radius:9px;margin-top:14px;display:flex;align-items:center;justify-content:center;gap:8px;font-size:14px;font-weight:700;color:var(--green-dark);cursor:pointer}
+.ach-scope .view svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2.4}
+.ach-scope .next{padding:21px}
+.ach-scope .next-item{display:flex;align-items:center;gap:14px;padding:13px 0}
+.ach-scope .next-item+.next-item{border-top:1px solid var(--line)}
+.ach-scope .next-icon{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none}
+.ach-scope .next-icon svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.6}
+.ach-scope .next-copy{flex:1;min-width:0}
+.ach-scope .next-copy b{display:block;font-size:14px;color:#111;margin-bottom:3px}
+.ach-scope .next-copy span{font-size:13px;color:var(--muted)}
+.ach-scope .arrow{width:16px;height:16px;stroke:#10284a;fill:none;stroke-width:1.8;flex:none}
+.ach-scope .n-green{background:var(--mint);color:var(--green)}
+.ach-scope .n-blue{background:var(--blue-bg);color:var(--blue)}
+.ach-scope .n-purple{background:var(--purple-bg);color:var(--purple)}
+.ach-scope .timeline{padding:21px}
+.ach-scope .timeline-wrap{position:relative;padding-left:23px;margin-top:2px}
+.ach-scope .timeline-wrap:before{content:"";position:absolute;left:6px;top:7px;bottom:39px;width:1px;background:#c7e3d8}
+.ach-scope .event{position:relative;padding-bottom:21px}
+.ach-scope .dot{position:absolute;left:-23px;top:2px;width:13px;height:13px;border-radius:50%;background:var(--green2);display:flex;align-items:center;justify-content:center}
+.ach-scope .dot svg{width:7px;height:7px;stroke:#fff;stroke-width:3;fill:none}
+.ach-scope .dot.blue{background:var(--blue)}
+.ach-scope .event-main{display:flex;justify-content:space-between;gap:9px}
+.ach-scope .event-title{font-size:14px;font-weight:800;color:#111}
+.ach-scope .event-time{font-size:12px;color:var(--muted);text-align:right;line-height:1.4;white-space:nowrap}
+.ach-scope .event-sub{font-size:13px;color:var(--muted);margin-top:5px}
+.ach-scope .timeline-link{font-size:14px;color:#0a5b98;font-weight:700;margin-top:2px;display:flex;align-items:center;gap:7px}
+.ach-scope .timeline-link svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2.4}

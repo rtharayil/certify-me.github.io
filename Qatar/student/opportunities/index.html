@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Opportunity Details – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../Home/student.css">
+<link rel="stylesheet" href="opportunities-content.css">
+</head>
+<body class="dm">
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<div id="dw" class="active">
+
+<!-- ===== sidebar (same shell as student.html) ===== -->
+<aside class="qsb" id="qsb">
+  <div class="qsb-brand">
+    <span class="qsb-logo"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation"></span>
+  </div>
+
+  <nav class="qsb-nav">
+    <button class="qnav" data-view="home" onclick="window.location.href='../Home/student.html'">
+      <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</button>
+    <button class="qnav" data-view="passport">
+      <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2.5"/><line x1="1" y1="10" x2="23" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg>My Passport</button>
+    <button class="qnav" data-view="skills" onclick="window.location.href='../skills/index.html'">
+      <svg viewBox="0 0 24 24"><polygon points="12 2 21 7.5 21 16.5 12 22 3 16.5 3 7.5"/><polyline points="3 7.5 12 13 21 7.5"/><line x1="12" y1="13" x2="12" y2="22"/></svg>My Skills</button>
+    <button class="qnav" data-view="skillgap" onclick="window.location.href='../skillgap/index.html'">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/></svg>Skill Gap</button>
+    <button class="qnav active" data-view="opportunities">
+      <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Opportunities</button>
+    <button class="qnav" data-view="pathways">
+      <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.7"/><circle cx="6" cy="12" r="2.7"/><circle cx="18" cy="19" r="2.7"/><line x1="8.4" y1="10.6" x2="15.6" y2="6.6"/><line x1="8.4" y1="13.4" x2="15.6" y2="17.4"/></svg>Learning Pathways</button>
+    <button class="qnav" data-view="evidence" onclick="window.location.href='../evidence/index.html'">
+      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>My Evidence</button>
+    <button class="qnav" data-view="achievements" onclick="window.location.href='../achievements/index.html'">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><polyline points="8.2 13.5 7 22 12 19 17 22 15.8 13.5"/></svg>Achievements</button>
+    <button class="qnav" data-view="messages">
+      <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2.5"/><polyline points="2.5 6 12 13 21.5 6"/></svg>Messages</button>
+  </nav>
+
+  <div class="qsb-help">
+    <button class="qnav" onclick="st('Help & Support coming soon')">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Help &amp; Support</button>
+  </div>
+</aside>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <h1 class="qtitle">Universal Skills Passport</h1>
+    <div class="qtop-actions">
+      <button class="qicon-btn" onclick="st('Search coming soon')" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="qicon-btn" onclick="st('3 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>3</b>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg></span>
+          <span class="qui"><b id="qUserName">Sara Al Mansoori</b><span>Engineering Student</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>My Profile</button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>Settings</button>
+          <hr>
+          <button type="button" class="qout" onclick="logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+    <div class="opp-scope">
+
+<div class="container">
+
+  <a class="back" href="../Home/student.html">
+    <svg viewBox="0 0 24 24">
+      <path d="m15 5-7 7 7 7M8 12h13"/>
+    </svg>
+    Back to Learning Pathways
+  </a>
+
+  <div class="heading">
+    <div>
+      <h1>Opportunity Details</h1>
+      <p class="sub">Explore this opportunity and how it helps you build the skills you need.</p>
+    </div>
+
+    <div class="actions">
+      <button class="action" id="saveBtn">
+        <svg viewBox="0 0 24 24">
+          <path d="M6 4h12v16l-6-3-6 3z"/>
+        </svg>
+        <span>Save Opportunity</span>
+      </button>
+
+      <button class="action apply" id="applyBtn">
+        Apply Now
+        <svg viewBox="0 0 24 24">
+          <path d="M14 5h5v5M19 5l-8 8"/>
+          <path d="M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <!-- LEFT CONTENT -->
+    <section class="left">
+
+      <div class="card hero">
+        <img class="hero-image" src="data:image/jpeg;base64,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" alt="Sustainability workshop">
+
+        <div class="hero-info">
+          <div class="recommend">RECOMMENDED FOR YOU</div>
+
+          <h2 class="hero-title">
+            QF Sustainability Foundations Workshop
+          </h2>
+
+          <div class="hero-desc">
+            Build core understanding of sustainability concepts and frameworks<br>
+            through interactive sessions and real-world examples.
+          </div>
+
+          <div class="meta">
+
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24">
+                <rect x="4" y="5" width="16" height="15" rx="1"/>
+                <path d="M8 3v4M16 3v4M4 9h16"/>
+              </svg>
+              20 May 2025
+            </div>
+
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="8"/>
+                <path d="M12 7v5l3 2"/>
+              </svg>
+              1 Day
+            </div>
+
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 21s7-6.2 7-12A7 7 0 0 0 5 9c0 5.8 7 12 7 12Z"/>
+                <circle cx="12" cy="9" r="2.3"/>
+              </svg>
+              QF Education City
+            </div>
+
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="7" r="3"/>
+                <path d="M5 21a7 7 0 0 1 14 0"/>
+              </svg>
+              Open to all QF<br>students
+            </div>
+
+          </div>
+
+          <div class="offered">
+            Offered by
+            <span class="qf">QF</span>
+            <strong>QF Sustainability Program</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card section competencies">
+        <div class="section-title">Competencies You Will Develop</div>
+        <div class="section-desc">
+          This opportunity will help you strengthen the following competencies.
+        </div>
+
+        <div class="comp-list">
+
+          <div class="comp">
+            <div class="hex green">
+              <svg viewBox="0 0 24 24">
+                <path d="m12 3 7 4v10l-7 4-7-4V7z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <div>
+              <div class="comp-name">Sustainability</div>
+              <span class="tag">Level 2 → Level 3</span>
+            </div>
+          </div>
+
+          <div class="comp">
+            <div class="hex blue">
+              <svg viewBox="0 0 24 24">
+                <circle cx="7" cy="12" r="2.5"/>
+                <circle cx="17" cy="7" r="2.5"/>
+                <circle cx="17" cy="17" r="2.5"/>
+                <path d="m9.5 10.8 5.2-2.4M9.5 13.2l5.2 2.4"/>
+              </svg>
+            </div>
+            <div>
+              <div class="comp-name">Systems Thinking</div>
+              <span class="tag blue">Level 2 → Level 3</span>
+            </div>
+          </div>
+
+          <div class="comp">
+            <div class="hex teal">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3v18M5 8h14M6 18h12"/>
+              </svg>
+            </div>
+            <div>
+              <div class="comp-name">Problem Solving</div>
+              <span class="tag">Level 2 → Level 3</span>
+            </div>
+          </div>
+
+          <div class="comp">
+            <div class="hex purple">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 6h14v10H5z"/>
+                <path d="m8 20 4-4 4 4"/>
+              </svg>
+            </div>
+            <div>
+              <div class="comp-name">Communication</div>
+              <span class="tag purple">Level 2 → Level 3</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mapping">
+          View all mapped competencies <b>→</b>
+        </div>
+      </div>
+
+      <div class="card section evidence">
+        <div class="section-title">Evidence You Will Provide</div>
+        <div class="section-desc">
+          Submit the following evidence to get your competencies verified.
+        </div>
+
+        <div class="evlist">
+
+          <div class="ev">
+            <div class="evicon">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 3h9l3 3v15H6z"/>
+                <path d="M14 3v5h5M9 12h6M9 16h6"/>
+              </svg>
+            </div>
+            <div>
+              <div class="evname">Project Report</div>
+              <div class="evtext">
+                Short report on sustainability challenge and solution.
+              </div>
+            </div>
+          </div>
+
+          <div class="ev">
+            <div class="evicon">
+              <svg viewBox="0 0 24 24">
+                <rect x="4" y="5" width="16" height="13" rx="1"/>
+                <path d="M8 21h8M12 18v3M9 9h6"/>
+              </svg>
+            </div>
+            <div>
+              <div class="evname">Presentation</div>
+              <div class="evtext">
+                Slides or video presenting your approach and insights.
+              </div>
+            </div>
+          </div>
+
+          <div class="ev">
+            <div class="evicon">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 4h12v16H6z"/>
+                <path d="M9 8h6M9 12h6M9 16h4"/>
+              </svg>
+            </div>
+            <div>
+              <div class="evname">Reflection</div>
+              <div class="evtext">
+                Personal reflection on learning and impact.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card section verification">
+        <div class="section-title">Verification</div>
+        <div class="section-desc">
+          Your evidence will be reviewed and verified by the QF Sustainability Program team.
+        </div>
+
+        <div class="verify">
+
+          <div class="verify-item">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3 5 7v5c0 5 3 8 7 9 4-1 7-4 7-9V7z"/>
+              <path d="m9 12 2 2 4-5"/>
+            </svg>
+            Verifier
+          </div>
+
+          <div class="verify-item">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3 20 7v6c0 4-3 7-8 8-5-1-8-4-8-8V7z"/>
+            </svg>
+            QF Sustainability Program
+          </div>
+
+          <div class="verify-item">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 4h14v16H5z"/>
+              <path d="M9 9h6M9 13h6"/>
+            </svg>
+            Verification Method
+          </div>
+
+          <div class="verify-item">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3 19 6v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/>
+              <path d="m9 12 2 2 4-5"/>
+            </svg>
+            Rubric-based Assessment
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card learn">
+        <div class="bulb">💡</div>
+
+        <div class="learn-main">
+          <div class="learn-title">What you'll learn</div>
+          <div class="learn-desc">
+            Explore sustainability concepts, systems thinking, and practical
+            frameworks to create positive environmental and social impact.
+          </div>
+        </div>
+
+        <div class="tags">
+          <span class="pill">Sustainability Concepts</span>
+          <span class="pill">Systems &amp; Impact Thinking</span>
+          <span class="pill">Local &amp; Global Challenges</span>
+          <span class="pill">Solutions &amp; Innovation</span>
+          <span class="pill">Real-world Applications</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RIGHT CONTENT -->
+    <aside class="right">
+
+      <div class="card details">
+
+        <div class="detail">
+          <svg viewBox="0 0 24 24">
+            <rect x="4" y="5" width="16" height="15" rx="1"/>
+            <path d="M8 3v4M16 3v4M4 9h16"/>
+          </svg>
+          <span class="label">Application Deadline</span>
+          <span class="value">18 May 2025</span>
+        </div>
+
+        <div class="detail">
+          <svg viewBox="0 0 24 24">
+            <rect x="4" y="5" width="16" height="15" rx="1"/>
+            <path d="M8 3v4M16 3v4M4 9h16"/>
+          </svg>
+          <span class="label">Start Date</span>
+          <span class="value">20 May 2025</span>
+        </div>
+
+        <div class="detail">
+          <svg viewBox="0 0 24 24">
+            <rect x="4" y="6" width="16" height="11" rx="1"/>
+            <path d="M8 20h8M12 17v3"/>
+          </svg>
+          <span class="label">Format</span>
+          <span class="value">In-person</span>
+        </div>
+
+        <div class="detail">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="8"/>
+            <path d="M12 7v5l3 2"/>
+          </svg>
+          <span class="label">Time Commitment</span>
+          <span class="value">1 Day (8 Hours)</span>
+        </div>
+
+        <div class="detail">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 7h12M7 7v12h10V7M9 4h6v3"/>
+          </svg>
+          <span class="label">Seats Available</span>
+          <span class="value">42 / 60</span>
+        </div>
+
+        <div class="detail">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 19V9M9 19V5M14 19v-8M19 19V3"/>
+          </svg>
+          <span class="label">Level</span>
+          <span class="value">Beginner to Intermediate</span>
+        </div>
+
+        <div class="detail">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3 19 7v5c0 4-3 7-7 9-4-2-7-5-7-9V7z"/>
+            <path d="m9 12 2 2 4-5"/>
+          </svg>
+          <span class="label">Certificate / Badge</span>
+          <span class="value">Yes <b style="color:#009a69">✓</b></span>
+        </div>
+
+      </div>
+
+      <div class="card rec">
+        <div class="rec-title">
+          ✣ &nbsp;Why this opportunity is recommended for you
+        </div>
+
+        <div class="checkline">
+          <span class="check">✓</span>
+          Helps you build key competencies needed for your goal.
+        </div>
+
+        <div class="checkline">
+          <span class="check">✓</span>
+          Aligned with your interests in sustainability and impact.
+        </div>
+
+        <div class="checkline">
+          <span class="check">✓</span>
+          Complements your current skills and learning journey.
+        </div>
+
+        <div class="checkline">
+          <span class="check">✓</span>
+          Highly rated by students who took this opportunity.
+        </div>
+      </div>
+
+      <div class="card next">
+        <div class="next-title">What happens next?</div>
+
+        <div class="next-grid">
+
+          <div class="timeline">
+
+            <div class="tl">
+              <div class="num">1</div>
+              <div>
+                <div class="tl-title">Apply for this opportunity</div>
+                <div class="tl-text">
+                  Submit your application before 18 May 2025.
+                </div>
+              </div>
+            </div>
+
+            <div class="tl">
+              <div class="num">2</div>
+              <div>
+                <div class="tl-title">Participate &amp; complete</div>
+                <div class="tl-text">
+                  Attend the workshop and complete activities.
+                </div>
+              </div>
+            </div>
+
+            <div class="tl">
+              <div class="num">3</div>
+              <div>
+                <div class="tl-title">Submit your evidence</div>
+                <div class="tl-text">
+                  Upload your report, presentation and reflection.
+                </div>
+              </div>
+            </div>
+
+            <div class="tl">
+              <div class="num">4</div>
+              <div>
+                <div class="tl-title">Get verified &amp; earn badge</div>
+                <div class="tl-text">
+                  Receive verified competencies and your digital badge.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="badge-show">
+            <div class="badge-circle">
+              <svg viewBox="0 0 64 64">
+                <path d="M32 7 48 13v15c0 10-7 18-16 23-9-5-16-13-16-23V13z"/>
+                <path d="m25 29 5 5 10-11"/>
+                <path d="M22 45v13l10-6 10 6V45"/>
+              </svg>
+            </div>
+            <div class="badge-name">Earn Digital Badge</div>
+            <div class="badge-small">
+              Verified by<br>
+              QF Sustainability Program
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <footer class="qfoot">
+    <span>© 2026 Qatar Foundation. All rights reserved.</span>
+    <nav><a href="#">Privacy Policy</a><i>|</i><a href="#">Terms of Use</a><i>|</i><a href="#">Support</a></nav>
+  </footer>
+
+</div>
+</div>
+
+<script>
+try{const n=localStorage.getItem('qfName');if(n)document.getElementById('qUserName').textContent=n}catch(e){}
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+function logout(){try{localStorage.removeItem('qfLoggedIn');localStorage.removeItem('qfName')}catch(e){}window.location.href='../Home/student.html'}
+
+document.querySelectorAll('.qsb-nav .qnav, .qsb-help .qnav').forEach(b=>{
+  b.addEventListener('click',function(){
+    const v=this.dataset.view;
+    if(!v||v==='opportunities')return;
+    document.getElementById('qsb').classList.remove('open');
+    if(v==='home'){window.location.href='../Home/student.html';return}
+    if(v==='achievements'||v==='evidence'||v==='home'||v==='skillgap'||v==='skills')return;
+    st(this.textContent.trim()+' — coming soon');
+  });
+});
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+</script>
+<script src="opportunities.js"></script>
+</body>
+</html>

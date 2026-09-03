@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit Evidence – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../Home/student.css">
+<link rel="stylesheet" href="evidence-content.css">
+</head>
+<body class="dm">
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<div id="dw" class="active">
+
+<!-- ===== sidebar (same shell as student.html) ===== -->
+<aside class="qsb" id="qsb">
+  <div class="qsb-brand">
+    <span class="qsb-logo"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation"></span>
+  </div>
+
+  <nav class="qsb-nav">
+    <button class="qnav" data-view="home" onclick="window.location.href='../Home/student.html'">
+      <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</button>
+    <button class="qnav" data-view="passport">
+      <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2.5"/><line x1="1" y1="10" x2="23" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg>My Passport</button>
+    <button class="qnav" data-view="skills" onclick="window.location.href='../skills/index.html'">
+      <svg viewBox="0 0 24 24"><polygon points="12 2 21 7.5 21 16.5 12 22 3 16.5 3 7.5"/><polyline points="3 7.5 12 13 21 7.5"/><line x1="12" y1="13" x2="12" y2="22"/></svg>My Skills</button>
+    <button class="qnav" data-view="skillgap" onclick="window.location.href='../skillgap/index.html'">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/></svg>Skill Gap</button>
+    <button class="qnav" data-view="opportunities" onclick="window.location.href='../opportunities/index.html'">
+      <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Opportunities</button>
+    <button class="qnav" data-view="pathways">
+      <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.7"/><circle cx="6" cy="12" r="2.7"/><circle cx="18" cy="19" r="2.7"/><line x1="8.4" y1="10.6" x2="15.6" y2="6.6"/><line x1="8.4" y1="13.4" x2="15.6" y2="17.4"/></svg>Learning Pathways</button>
+    <button class="qnav active" data-view="evidence">
+      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>My Evidence</button>
+    <button class="qnav" data-view="achievements" onclick="window.location.href='../achievements/index.html'">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><polyline points="8.2 13.5 7 22 12 19 17 22 15.8 13.5"/></svg>Achievements</button>
+    <button class="qnav" data-view="messages">
+      <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2.5"/><polyline points="2.5 6 12 13 21.5 6"/></svg>Messages</button>
+  </nav>
+
+  <div class="qsb-help">
+    <button class="qnav" onclick="st('Help & Support coming soon')">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Help &amp; Support</button>
+  </div>
+</aside>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <h1 class="qtitle">Universal Skills Passport</h1>
+    <div class="qtop-actions">
+      <button class="qicon-btn" onclick="st('Search coming soon')" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="qicon-btn" onclick="st('3 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>3</b>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg></span>
+          <span class="qui"><b id="qUserName">Sara Al Mansoori</b><span>Engineering Student</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>My Profile</button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>Settings</button>
+          <hr>
+          <button type="button" class="qout" onclick="logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+    <div class="evi-scope">
+
+  <div class="content">
+    <a class="back" href="../Home/student.html"><svg viewBox="0 0 24 24"><path d="m15 5-7 7 7 7M8 12h13"/></svg>Back to My Evidence</a>
+
+    <h1 class="title">Submit Evidence</h1>
+    <p class="subtitle">Submit your evidence for review and earn verified competencies.</p>
+
+    <!-- STEPPER -->
+    <div class="stepper">
+      <div class="step">
+        <div class="step-circle done"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-4-7"/><path d="m9 12 2 2 5-6"/></svg></div>
+        <div class="step-text"><div class="step-title">1. Select Opportunity</div><div class="step-status">Completed</div></div>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <div class="step-circle done"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-4-7"/><path d="m9 12 2 2 5-6"/></svg></div>
+        <div class="step-text"><div class="step-title">2. Select Competency</div><div class="step-status">Completed</div></div>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <div class="step-circle current">3</div>
+        <div class="step-text"><div class="step-title">3. Submit Evidence</div><div class="step-status">In Progress</div></div>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <div class="step-circle">4</div>
+        <div class="step-text"><div class="step-title">4. Review &amp; Verify</div><div class="step-status">Pending</div></div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <section class="left-col">
+
+        <!-- OPPORTUNITY -->
+        <div class="card opportunity">
+          <img class="work-img" src="data:image/png;base64,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" alt="QF Sustainability Foundations Workshop">
+          <div class="op-main">
+            <div class="op-title">QF Sustainability Foundations Workshop</div>
+            <div class="offered">
+              Offered by
+              <span class="program-icon">QF</span>
+              <strong style="color:#1c2c43">QF Sustainability Program</strong>
+            </div>
+          </div>
+
+          <div class="op-meta">
+            <div class="meta-row">
+              <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="1"/><path d="M8 3v4M16 3v4M4 9h16"/></svg>
+              <div><div class="meta-label">Opportunity Date</div>20 May 2025</div>
+            </div>
+            <div class="meta-row">
+              <svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12A7 7 0 0 0 5 9c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.3"/></svg>
+              QF Education City
+            </div>
+          </div>
+
+          <div class="competency">
+            <div class="comp-label">Selected Competency</div>
+            <div class="comp-name">Systems Thinking</div>
+            <div class="level">Target Level <span>Level 3</span></div>
+          </div>
+        </div>
+
+        <!-- UPLOAD CARD -->
+        <div class="card upload-card">
+          <div class="upload-head">
+            <div>
+              <div class="section-title">Upload Your Evidence</div>
+              <div class="section-desc">Add files that demonstrate how you have achieved this competency.</div>
+            </div>
+            <button class="upload-btn" id="uploadBtn">
+              <svg viewBox="0 0 24 24"><path d="M12 16V4M8 8l4-4 4 4"/><path d="M5 14v5h14v-5"/></svg>
+              Upload Files
+            </button>
+          </div>
+
+          <input type="file" id="fileInput" multiple>
+
+          <div class="file-list" id="fileList">
+            <div class="file-row" data-name="Project_Report.pdf">
+              <div class="file-icon pdf"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h5"/></svg></div>
+              <div class="file-info"><div class="file-name">Project_Report.pdf</div><div class="file-size">2.4 MB • PDF</div></div>
+              <div class="file-date">Uploaded on<br>02 May 2025</div>
+              <div class="file-actions">
+                <button title="Preview" class="preview"><svg viewBox="0 0 24 24"><path d="M2.5 12s3.5-5 9.5-5 9.5 5 9.5 5-3.5 5-9.5 5-9.5-5-9.5-5Z"/><circle cx="12" cy="12" r="2.5"/></svg></button>
+                <button title="Delete" class="delete"><svg viewBox="0 0 24 24"><path d="M5 7h14M9 7V4h6v3M8 10v8M12 10v8M16 10v8M6 7l1 14h10l1-14"/></svg></button>
+              </div>
+            </div>
+
+            <div class="file-row" data-name="Presentation_Slides.pptx">
+              <div class="file-icon ppt"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 16h5"/></svg></div>
+              <div class="file-info"><div class="file-name">Presentation_Slides.pptx</div><div class="file-size">8.1 MB • PPTX</div></div>
+              <div class="file-date">Uploaded on<br>02 May 2025</div>
+              <div class="file-actions">
+                <button class="preview"><svg viewBox="0 0 24 24"><path d="M2.5 12s3.5-5 9.5-5 9.5 5 9.5 5-3.5 5-9.5 5-9.5-5-9.5-5Z"/><circle cx="12" cy="12" r="2.5"/></svg></button>
+                <button class="delete"><svg viewBox="0 0 24 24"><path d="M5 7h14M9 7V4h6v3M8 10v8M12 10v8M16 10v8M6 7l1 14h10l1-14"/></svg></button>
+              </div>
+            </div>
+
+            <div class="file-row" data-name="Presentation_Video.mp4">
+              <div class="file-icon mp4"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h5"/><path d="m10 12 5 3-5 3z"/></svg></div>
+              <div class="file-info"><div class="file-name">Presentation_Video.mp4</div><div class="file-size">45.7 MB • MP4</div></div>
+              <div class="file-date">Uploaded on<br>02 May 2025</div>
+              <div class="file-actions">
+                <button class="preview"><svg viewBox="0 0 24 24"><path d="M2.5 12s3.5-5 9.5-5 9.5 5 9.5 5-3.5 5-9.5 5-9.5-5-9.5-5Z"/><circle cx="12" cy="12" r="2.5"/></svg></button>
+                <button class="delete"><svg viewBox="0 0 24 24"><path d="M5 7h14M9 7V4h6v3M8 10v8M12 10v8M16 10v8M6 7l1 14h10l1-14"/></svg></button>
+              </div>
+            </div>
+
+            <div class="file-row" data-name="Reflection.docx">
+              <div class="file-icon docx"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 16h5"/></svg></div>
+              <div class="file-info"><div class="file-name">Reflection.docx</div><div class="file-size">1.2 MB • DOCX</div></div>
+              <div class="file-date">Uploaded on<br>02 May 2025</div>
+              <div class="file-actions">
+                <button class="preview"><svg viewBox="0 0 24 24"><path d="M2.5 12s3.5-5 9.5-5 9.5 5 9.5 5-3.5 5-9.5 5-9.5-5-9.5-5Z"/><circle cx="12" cy="12" r="2.5"/></svg></button>
+                <button class="delete"><svg viewBox="0 0 24 24"><path d="M5 7h14M9 7V4h6v3M8 10v8M12 10v8M16 10v8M6 7l1 14h10l1-14"/></svg></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="upload-footer">
+            <span>You can upload up to 10 files (Max 100MB each)</span>
+            <span class="upload-count" id="uploadCount">4 / 10 files uploaded</span>
+          </div>
+        </div>
+
+        <!-- REFLECTION -->
+        <div class="card reflection">
+          <div class="section-title">Add a Reflection (Optional)</div>
+          <div class="section-desc">Share your key learnings, challenges and how this experience helped you develop this competency.</div>
+          <textarea id="reflection" maxlength="1000" placeholder="Write your reflection here..."></textarea>
+          <div class="text-bottom"><span id="charCount">0</span> / 1000 characters</div>
+        </div>
+
+        <div class="submit-wrap">
+          <button class="submit" id="submitBtn">Submit for Review <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+        <div class="secure">
+          <svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="1"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          Your evidence will be securely submitted for verification.
+        </div>
+
+      </section>
+
+      <!-- RIGHT COLUMN -->
+      <aside class="right-col">
+
+        <div class="right-card about">
+          <div class="right-title">About this Competency</div>
+          <div class="about-top">
+            <div class="comp-badge">
+              <svg viewBox="0 0 24 24"><circle cx="7" cy="12" r="2.2"/><circle cx="17" cy="7" r="2.2"/><circle cx="17" cy="17" r="2.2"/><path d="m9 10.9 5.8-2.7M9 13.1l5.8 2.7"/></svg>
+            </div>
+            <div>
+              <div class="about-name">Systems Thinking</div>
+              <div class="about-text">Ability to understand relationships between interconnected systems and evaluate their impact to solve complex problems.</div>
+              <a href="#" class="link">View full competency details <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-card rubric">
+          <div class="right-title">Assessment Rubric</div>
+          <div class="rubric-intro">Your evidence will be evaluated against the following criteria.</div>
+
+          <div class="criterion">
+            <div class="crit-icon"><svg viewBox="0 0 24 24"><path d="M7 4h10v16H7z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></div>
+            <div><div class="crit-name">System Analysis</div><div class="crit-desc">Identify and analyze system relationships</div></div>
+            <div class="percent">25%</div>
+            <div class="progress"><i></i></div>
+          </div>
+
+          <div class="criterion">
+            <div class="crit-icon"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="2"/><circle cx="16" cy="16" r="2"/><path d="m9.5 9.5 5 5"/></svg></div>
+            <div><div class="crit-name">Interconnections</div><div class="crit-desc">Evaluate how components influence each other</div></div>
+            <div class="percent">25%</div>
+            <div class="progress"><i></i></div>
+          </div>
+
+          <div class="criterion">
+            <div class="crit-icon blue"><svg viewBox="0 0 24 24"><path d="M6 5h12v14H6z"/><path d="m9 12 2 2 4-5"/></svg></div>
+            <div><div class="crit-name">Evidence-based Decisions</div><div class="crit-desc">Use evidence to support decisions and solutions</div></div>
+            <div class="percent">25%</div>
+            <div class="progress"><i></i></div>
+          </div>
+
+          <div class="criterion" style="margin-bottom:0">
+            <div class="crit-icon blue"><svg viewBox="0 0 24 24"><path d="M8 5h8l2 4-6 10L6 9z"/><path d="M6 9h12"/></svg></div>
+            <div><div class="crit-name">Impact &amp; Implications</div><div class="crit-desc">Assess impact and communicate implications clearly</div></div>
+            <div class="percent">25%</div>
+            <div class="progress"><i></i></div>
+          </div>
+        </div>
+
+        <div class="right-card tips">
+          <div class="right-title">Tips for Strong Evidence</div>
+          <div class="tip"><span class="check"><svg viewBox="0 0 24 24"><path d="m6 12 4 4 8-9"/></svg></span>Provide clear and specific examples.</div>
+          <div class="tip"><span class="check"><svg viewBox="0 0 24 24"><path d="m6 12 4 4 8-9"/></svg></span>Show your thought process and decisions.</div>
+          <div class="tip"><span class="check"><svg viewBox="0 0 24 24"><path d="m6 12 4 4 8-9"/></svg></span>Use data, research and credible sources.</div>
+          <div class="tip"><span class="check"><svg viewBox="0 0 24 24"><path d="m6 12 4 4 8-9"/></svg></span>Reflect on challenges and what you learned.</div>
+          <a href="#" class="link" style="margin-top:8px">View Evidence Guidelines <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <footer class="qfoot">
+    <span>© 2026 Qatar Foundation. All rights reserved.</span>
+    <nav><a href="#">Privacy Policy</a><i>|</i><a href="#">Terms of Use</a><i>|</i><a href="#">Support</a></nav>
+  </footer>
+
+</div>
+</div>
+
+<script>
+try{const n=localStorage.getItem('qfName');if(n)document.getElementById('qUserName').textContent=n}catch(e){}
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+function logout(){try{localStorage.removeItem('qfLoggedIn');localStorage.removeItem('qfName')}catch(e){}window.location.href='../Home/student.html'}
+
+document.querySelectorAll('.qsb-nav .qnav, .qsb-help .qnav').forEach(b=>{
+  b.addEventListener('click',function(){
+    const v=this.dataset.view;
+    if(!v||v==='evidence')return;
+    document.getElementById('qsb').classList.remove('open');
+    if(v==='home'){window.location.href='../Home/student.html';return}
+    if(v==='achievements'||v==='home'||v==='opportunities'||v==='skillgap'||v==='skills')return;
+    st(this.textContent.trim()+' — coming soon');
+  });
+});
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+</script>
+<script src="evidence.js"></script>
+</body>
+</html>
