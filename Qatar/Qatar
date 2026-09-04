@@ -564,5 +564,20 @@ document.addEventListener('click',function(e){
 });
 </script>
 <script src="opportunities.js"></script>
-</body>
+<script>
+window.addEventListener('load', function(){
+  setTimeout(function(){
+    var x = window.innerWidth - 5;
+    var y = 20;
+    var el = document.elementFromPoint(x, y);
+    var info = 'NONE';
+    if (el) {
+      var cs = getComputedStyle(el);
+      info = el.tagName + '.' + el.className + '|bg=' + cs.backgroundColor + '|z=' + cs.zIndex + '|pos=' + cs.position;
+    }
+    var beforeCs = getComputedStyle(document.body, '::before');
+    document.title = info + ' ||| bodyBefore bg=' + beforeCs.backgroundColor + ' bg-image=' + beforeCs.backgroundImage.slice(0,60) + ' z=' + beforeCs.zIndex + ' top=' + beforeCs.top + ' right=' + beforeCs.right + ' w=' + beforeCs.width;
+  }, 300);
+});
+</script></body>
 </html>
