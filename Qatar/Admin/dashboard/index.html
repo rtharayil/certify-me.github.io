@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard – Admin Portal – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared/typography.css">
+<link rel="stylesheet" href="../shared/admin-shell.css">
+<link rel="stylesheet" href="dashboard-content.css">
+</head>
+<body class="dm">
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<!-- ===== sidebar (shared component, see Admin/shared/sidebar.js) ===== -->
+<div id="admin-sidebar" data-active="dashboard"></div>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <h1 class="qtitle">Universal Skills Passport <span class="qtitle-pill">Administrator Portal</span></h1>
+    <div class="qtop-actions">
+      <button class="qicon-btn" onclick="st('Search coming soon')" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="qicon-btn" onclick="st('5 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>5</b>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg></span>
+          <span class="qui"><b id="qUserName">Admin</b><span id="qUserRole">Administrator</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>My Profile</button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>Settings</button>
+          <hr>
+          <button type="button" class="qout" onclick="AdminAuth.logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+    <div class="adm-dash-scope">
+
+      <div class="intro">
+        <div><h2 class="greeting">Welcome back, <span id="greetName">Admin</span>!</h2><div class="sub">Here's what's happening on the Universal Skills Passport platform.</div></div>
+        <div class="actions">
+          <div class="date"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg><span>01 – 31 May 2025</span><svg class="down" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg></div>
+          <div class="export"><svg viewBox="0 0 24 24"><path d="M12 3v11M8 10l4 4 4-4M5 17v3h14v-3"/></svg>Export Report</div>
+        </div>
+      </div>
+
+      <section class="stats">
+        <div class="card stat"><div class="staticon sg"><svg viewBox="0 0 24 24"><circle cx="10" cy="7" r="4"/><path d="M3 21v-2a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v2M19 14v6M16 17h6"/></svg></div><div class="statcopy"><div class="label">Total Students</div><span class="number">12,845</span><span class="delta">↑ 8.5%</span><div class="vs">vs Apr 2025</div></div></div>
+        <div class="card stat"><div class="staticon sb"><svg viewBox="0 0 24 24"><path d="M4 21V5l8-2v18M12 21V8l8-2v15M2 21h20M7 8h2M7 12h2M7 16h2M15 11h2M15 15h2"/></svg></div><div class="statcopy"><div class="label">Active Organizations</div><span class="number">145</span><span class="delta">↑ 6.2%</span><div class="vs">vs Apr 2025</div></div></div>
+        <div class="card stat"><div class="staticon sp"><svg viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-3.4 8-8 10-4.6-2-8-5-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></div><div class="statcopy"><div class="label">Verified Competencies</div><span class="number">28,765</span><span class="delta">↑ 12.3%</span><div class="vs">vs Apr 2025</div></div></div>
+        <div class="card stat"><div class="staticon so"><svg viewBox="0 0 24 24"><path d="M12 3 14.5 5l3-.4 1.2 2.8L21 9l-1 3 1 3-2.3 1.6-1.2 2.8-3-.4-2.5 2-2.5-2-3 .4-1.2-2.8L3 15l1-3-1-3 2.3-1.6L6.5 4.6l3 .4L12 3Z"/><path d="M9 12h6M12 9v6"/></svg></div><div class="statcopy"><div class="label">Badges Issued</div><span class="number">9,632</span><span class="delta">↑ 9.1%</span><div class="vs">vs Apr 2025</div></div></div>
+      </section>
+
+      <section class="row1">
+        <div class="panel activities">
+          <div class="head"><div class="ptitle">Recent Activities</div><a class="link" href="#">View All Activities</a></div>
+          <div class="activity-list">
+            <div class="activity"><div class="aicon ag"><svg viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="15" rx="2"/><path d="M8 3v6M16 3v6M8 14h8M12 11v6M9 14h6"/></svg></div><div class="abody"><div class="arow"><span class="aname">Opportunity Created</span><span class="atime">02 May 2025, 10:30 AM</span></div><div class="adesc">QF Sustainability Challenge</div><div class="aby">by Aisha Al-Emadi</div></div></div>
+            <div class="activity"><div class="aicon ap"><svg viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-3.4 8-8 10-4.6-2-8-5-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></div><div class="abody"><div class="arow"><span class="aname">Badge Created</span><span class="atime">02 May 2025, 09:45 AM</span></div><div class="adesc">Artificial Intelligence Foundations – Level 2</div><div class="aby">by Mohammed Al-Meer</div></div></div>
+            <div class="activity"><div class="aicon ab"><svg viewBox="0 0 24 24"><circle cx="10" cy="7" r="4"/><path d="M3 21v-2a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v2M19 14v6M16 17h6"/></svg></div><div class="abody"><div class="arow"><span class="aname">Student Enrolled</span><span class="atime">01 May 2025, 04:20 PM</span></div><div class="adesc">120 new students enrolled from Qatar University</div><div class="aby">by System</div></div></div>
+            <div class="activity"><div class="aicon ao"><svg viewBox="0 0 24 24"><path d="M6 3h12v18H6z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></div><div class="abody"><div class="arow"><span class="aname">Evidence Submitted</span><span class="atime">01 May 2025, 03:10 PM</span></div><div class="adesc">56 evidence submissions across 8 competencies</div><div class="aby">by Students</div></div></div>
+            <div class="activity"><div class="aicon ag"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m7.5 12 3 3 6-7"/></svg></div><div class="abody"><div class="arow"><span class="aname">Competency Verified</span><span class="atime">01 May 2025, 11:05 AM</span></div><div class="adesc">Systems Thinking – Level 3 verified for 28 students</div><div class="aby">by Verifiers</div></div></div>
+          </div>
+        </div>
+
+        <div class="panel trends">
+          <div class="head"><div class="ptitle">Enrollment Trends <span class="info">i</span></div><a class="link" href="#">View Full Report</a></div>
+          <div class="trend-head"><div><div class="tsub">Total Students</div><span class="tnum">12,845</span><span class="tdelta">↑ 8.5% vs Apr 2025</span></div><div class="month">Monthly<svg viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg></div></div>
+          <div class="chart">
+            <i class="g g1"></i><i class="g g2"></i><i class="g g3"></i><i class="g g4"></i><i class="g g5"></i>
+            <div class="ylab"><span>15K</span><span>10K</span><span>5K</span><span>0</span></div>
+            <svg class="linechart" viewBox="0 0 430 174" preserveAspectRatio="none">
+              <defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8eee7" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity=".15"/></linearGradient></defs>
+              <path d="M10 115 L105 100 L200 88 L295 78 L390 64 L390 154 L10 154Z" fill="url(#fill)" stroke="none"/>
+              <path d="M10 115 L105 100 L200 88 L295 78 L390 64" stroke="#087754" stroke-width="2.2"/>
+              <g fill="#087754" stroke="#fff" stroke-width="1.3"><circle cx="10" cy="115" r="4.1"/><circle cx="105" cy="100" r="4.1"/><circle cx="200" cy="88" r="4.1"/><circle cx="295" cy="78" r="4.1"/><circle cx="390" cy="64" r="4.1"/></g>
+            </svg>
+            <div class="xlab"><span>Jan '25</span><span>Feb '25</span><span>Mar '25</span><span>Apr '25</span><span>May '25</span></div>
+          </div>
+          <div class="trendstats">
+            <div class="tstat"><div class="tlbl">New This Month</div><div class="tn">1,245</div><div class="tp">↑ 15.2%</div></div>
+            <div class="tstat"><div class="tlbl">Active This Month</div><div class="tn">9,876</div><div class="tp">↑ 7.4%</div></div>
+            <div class="tstat"><div class="tlbl">Completed Journeys</div><div class="tn">2,134</div><div class="tp">↑ 11.8%</div></div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="panel quick">
+            <div class="ptitle">Quick Actions</div>
+            <div class="quick-grid">
+              <button type="button" class="qitem" onclick="window.location.href='../opportunities/index.html'"><div class="qicon qg"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div><span>Create Opportunity</span></button>
+              <button type="button" class="qitem" onclick="window.location.href='../badges/index.html'"><div class="qicon qp"><svg viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-3.4 8-8 10-4.6-2-8-5-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></div><span>Create Badge</span></button>
+              <button type="button" class="qitem" onclick="window.location.href='../students/index.html'"><div class="qicon qb"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 19c0-4 3-6 6-6s6 2 6 6M15 14c3 0 5 2 5 5"/></svg></div><span>Add Students</span></button>
+              <button type="button" class="qitem" onclick="window.location.href='../reports/index.html'"><div class="qicon qo"><svg viewBox="0 0 24 24"><path d="M6 3h12v18H6z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></div><span>Generate Report</span></button>
+            </div>
+          </div>
+          <div class="panel overview">
+            <div class="ptitle">Platform Overview</div>
+            <div class="ov"><div class="ovi" style="color:#087a58"><svg viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-3.4 8-8 10-4.6-2-8-5-8-10V6l8-3Z"/><path d="M9 12h6"/></svg></div><div><div class="ovlabel">Total Competencies</div><div class="track"><i style="width:78%"></i></div></div><div class="ovval">256</div></div>
+            <div class="ov"><div class="ovi" style="color:#087a58"><svg viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-3.4 8-8 10-4.6-2-8-5-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></div><div><div class="ovlabel">Verified Competencies</div><div class="track"><i style="width:62%"></i></div></div><div class="ovval">28,765</div></div>
+            <div class="ov"><div class="ovi" style="color:#ff7900"><svg viewBox="0 0 24 24"><path d="M12 3 14.5 5l3-.4 1.2 2.8L21 9l-1 3 1 3-2.3 1.6-1.2 2.8-3-.4-2.5 2-2.5-2-3 .4-1.2-2.8L3 15l1-3-1-3 2.3-1.6L6.5 4.6l3 .4L12 3Z"/></svg></div><div><div class="ovlabel">Opportunities</div><div class="track"><i style="width:85%"></i></div></div><div class="ovval">312</div></div>
+            <div class="ov"><div class="ovi" style="color:#1673d5"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 19c0-4 3-6 6-6s6 2 6 6M15 14c3 0 5 2 5 5"/></svg></div><div><div class="ovlabel">Active Verifiers</div><div class="track"><i style="width:66%"></i></div></div><div class="ovval">186</div></div>
+            <div class="ov"><div class="ovi" style="color:#7546bd"><svg viewBox="0 0 24 24"><path d="M5 21V4h14v17M3 21h18M8 8h2M14 8h2M8 12h2M14 12h2M8 16h2M14 16h2"/></svg></div><div><div class="ovlabel">Partners</div><div class="track"><i style="width:55%"></i></div></div><div class="ovval">42</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row2">
+        <div class="panel small">
+          <div class="head"><div class="ptitle">Opportunities Summary</div><a class="link" href="#">View All</a></div>
+          <div class="oppbody"><div class="donut"><div class="dc"><b>312</b><span>Total</span></div></div><div>
+            <div class="legend-row"><i class="dot dblue"></i><span>Active</span><span>142</span><span class="lp">45.5%</span></div>
+            <div class="legend-row"><i class="dot dgreen"></i><span>Upcoming</span><span>68</span><span class="lp">21.8%</span></div>
+            <div class="legend-row"><i class="dot dorange"></i><span>Closed</span><span>72</span><span class="lp">23.1%</span></div>
+            <div class="legend-row"><i class="dot dgray"></i><span>Draft</span><span>30</span><span class="lp">9.6%</span></div>
+          </div></div>
+        </div>
+
+        <div class="panel small">
+          <div class="head"><div class="ptitle">Badge Issuance Trend</div><a class="link" href="#">View Full Report</a></div>
+          <div class="issuebody">
+            <div class="barchart">
+              <i class="bgline b1"></i><i class="bgline b2"></i><i class="bgline b3"></i><i class="bgline b4"></i>
+              <div class="by"><span>6K</span><span>4K</span><span>2K</span><span>0</span></div>
+              <div class="bars"><i class="bar" style="height:74px"></i><i class="bar" style="height:61px"></i><i class="bar" style="height:76px"></i><i class="bar" style="height:84px"></i><i class="bar" style="height:96px"></i></div>
+              <div class="bx"><span>Jan '25</span><span>Feb '25</span><span>Mar '25</span><span>Apr '25</span><span>May '25</span></div>
+            </div>
+            <div class="issue-side"><div class="islbl">Badges Issued</div><div class="isnum">9,632</div><div class="isup">↑ 9.1%</div><div class="isvs">vs Apr 2025</div></div>
+          </div>
+        </div>
+
+        <div class="panel small">
+          <div class="head"><div class="ptitle">Top Competencies (Verified)</div><a class="link" href="#">View All</a></div>
+          <div class="comp-list">
+            <div class="cr"><span class="rank">1</span><span class="ci cblue"><svg viewBox="0 0 24 24"><path d="M12 4l2 4 4 .6-3 3 .7 4.4-3.7-2-3.7 2 .7-4.4-3-3L10 8l2-4Z"/></svg></span><div><div class="cn">Systems Thinking</div><div class="ct"><i style="width:94%"></i></div></div><span class="cc">2,845</span></div>
+            <div class="cr"><span class="rank">2</span><span class="ci cgreen"><svg viewBox="0 0 24 24"><path d="M12 3 20 7v6c0 4.5-3 7-8 8-5-1-8-3.5-8-8V7l8-4Z"/><path d="M8 12h8"/></svg></span><div><div class="cn">Sustainability</div><div class="ct"><i style="width:83%"></i></div></div><span class="cc">2,432</span></div>
+            <div class="cr"><span class="rank">3</span><span class="ci cblue"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M5.5 5.5l13 13M18.5 5.5l-13 13"/></svg></span><div><div class="cn">Research &amp; Inquiry</div><div class="ct"><i style="width:71%"></i></div></div><span class="cc">2,198</span></div>
+            <div class="cr"><span class="rank">4</span><span class="ci cred"><svg viewBox="0 0 24 24"><path d="M5 18V6M12 18V4M19 18V8M3 20h18"/></svg></span><div><div class="cn">Data Analysis</div><div class="ct"><i style="width:62%"></i></div></div><span class="cc">1,987</span></div>
+            <div class="cr"><span class="rank">5</span><span class="ci cpurp"><svg viewBox="0 0 24 24"><path d="M12 3 4 7v10l8 4 8-4V7l-8-4Z"/><path d="M8 10h8M8 14h5"/></svg></span><div><div class="cn">Leadership</div><div class="ct"><i style="width:49%"></i></div></div><span class="cc">1,765</span></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="dash-footnote"><svg viewBox="0 0 24 24"><rect x="6" y="10" width="12" height="10" rx="1"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg><span>Data is updated in real-time. All times are displayed in Arabian Standard Time (AST).</span></div>
+
+    </div>
+  </div>
+
+  <footer class="qfoot">
+    <span>© 2026 Qatar Foundation. All rights reserved.</span>
+    <nav><a href="#">Privacy Policy</a><i>|</i><a href="#">Terms of Use</a><i>|</i><a href="#">Support</a></nav>
+  </footer>
+
+</div>
+
+<script src="../shared/auth.js"></script>
+<script>AdminAuth.requireAuth();</script>
+<script src="../shared/sidebar.js"></script>
+<script>
+document.getElementById('qUserName').textContent = AdminAuth.getName();
+document.getElementById('qUserRole').textContent = AdminAuth.getRole();
+document.getElementById('greetName').textContent = AdminAuth.getName();
+
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+</script>
+</body>
+</html>

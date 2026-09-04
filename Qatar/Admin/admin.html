@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Portal – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/typography.css">
+<link rel="stylesheet" href="shared/admin-auth.css">
+</head>
+<body>
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<div class="auth-wrapper" id="authWrapper">
+    <div class="auth-container">
+        <!-- LEFT BRAND PANEL -->
+        <div class="brand-panel">
+            <div class="brand-logo">
+                <div class="logo-icon">
+                    <img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation Logo">
+                </div>
+                <div class="brand-logo-text">
+                    <span>Qatar Foundation</span>
+                    <span>مؤسسة قطر</span>
+                </div>
+            </div>
+            <div class="brand-content">
+                <h1>Universal Skills Passport</h1>
+                <p>Manage and oversee the institutional skills tracking system with comprehensive admin controls.</p>
+            </div>
+        </div>
+
+        <!-- RIGHT FORM PANEL -->
+        <div class="form-panel">
+
+            <!-- ===== LOGIN ===== -->
+            <div class="form-page active" id="loginPage">
+                <div class="form-logo">
+                    <img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation">
+                    <span>Qatar Foundation</span>
+                </div>
+                <div class="form-header">
+                    <div class="badge"><svg viewBox="0 0 24 24"><path d="M12 15l-2 5 2-2 2 2-2-5z"/><circle cx="12" cy="9" r="4"/><path d="M5.5 17.5A8.96 8.96 0 0 1 3 11a9 9 0 0 1 18 0c0 2.5-1 4.8-2.5 6.5"/></svg>Admin Login</div>
+                    <h2>Admin Portal</h2>
+                    <p>Sign in to access the administrative dashboard</p>
+                </div>
+                <form id="loginForm" novalidate>
+                    <div class="form-group">
+                        <label>Email Address <span class="required">*</span></label>
+                        <div class="input-wrap">
+                            <svg class="input-icon" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+                            <input type="email" id="loginEmail" placeholder="admin@qf.org.qa" autocomplete="email">
+                        </div>
+                        <div class="error-msg" id="loginEmailErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter a valid email address</span></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password <span class="required">*</span></label>
+                        <div class="input-wrap">
+                            <svg class="input-icon" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            <input type="password" id="loginPassword" placeholder="Enter your password" autocomplete="current-password">
+                            <button type="button" class="toggle-password" onclick="togglePass('loginPassword',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                        </div>
+                        <div class="error-msg" id="loginPasswordErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter your password</span></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Captcha <span class="required">*</span></label>
+                        <div class="captcha-row">
+                            <div class="captcha-display">
+                                <span class="captcha-text" id="loginCaptchaText"></span>
+                                <button type="button" class="captcha-refresh" onclick="generateCaptcha('login')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button>
+                            </div>
+                            <div class="form-group" style="margin-bottom:0">
+                                <div class="input-wrap">
+                                    <svg class="input-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg>
+                                    <input type="text" id="loginCaptchaInput" placeholder="Enter captcha" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="error-msg" id="loginCaptchaErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div>
+                    </div>
+                    <div class="form-options">
+                        <label class="remember-me"><input type="checkbox"><span class="checkmark"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Remember me</span></label>
+                        <button type="button" class="link-btn" onclick="showPage('forgotPage')">Forgot password?</button>
+                    </div>
+                    <button type="submit" class="btn-primary">Sign In</button>
+                </form>
+                <div class="form-footer">Don't have an account? <button type="button" class="link-btn" onclick="showPage('signupPage')">Create Account</button></div>
+            </div>
+
+            <!-- ===== SIGNUP ===== -->
+            <div class="form-page" id="signupPage">
+                <button type="button" class="back-to-login" onclick="showPage('loginPage')"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>Back to Login</button>
+                <div class="form-logo">
+                    <img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation">
+                    <span>Qatar Foundation</span>
+                </div>
+                <div class="form-header">
+                    <div class="badge"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>New Admin</div>
+                    <h2>Create Admin Account</h2>
+                    <p>Register for administrative access</p>
+                </div>
+                <form id="signupForm" novalidate>
+                    <div class="form-group">
+                        <label>Full Name <span class="required">*</span></label>
+                        <div class="input-wrap">
+                            <svg class="input-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                            <input type="text" id="signupName" placeholder="Enter your full name">
+                        </div>
+                        <div class="error-msg" id="signupNameErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter your full name</span></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address <span class="required">*</span></label>
+                        <div class="input-wrap">
+                            <svg class="input-icon" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+                            <input type="email" id="signupEmail" placeholder="admin@qf.org.qa">
+                        </div>
+                        <div class="error-msg" id="signupEmailErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter a valid email address</span></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password <span class="required">*</span></label>
+                        <div class="input-wrap">
+                            <svg class="input-icon" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            <input type="password" id="signupPassword" placeholder="Min 8 characters" oninput="checkStrength(this.value)">
+                            <button type="button" class="toggle-password" onclick="togglePass('signupPassword',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                        </div>
+                        <div class="password-strength" id="strengthBars"><div class="strength-bar" id="str1"></div><div class="strength-bar" id="str2"></div><div class="strength-bar" id="str3"></div><div class="strength-bar" id="str4"></div></div>
+                        <div class="strength-label" id="strengthLabel"></div>
+                        <div class="error-msg" id="signupPasswordErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Password must be at least 8 characters</span></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password <span class="required">*</span></label>
+                        <div class="input-wrap">
+                            <svg class="input-icon" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            <input type="password" id="signupConfirmPassword" placeholder="Re-enter your password">
+                            <button type="button" class="toggle-password" onclick="togglePass('signupConfirmPassword',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                        </div>
+                        <div class="error-msg" id="signupConfirmPasswordErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Passwords do not match</span></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Captcha <span class="required">*</span></label>
+                        <div class="captcha-row">
+                            <div class="captcha-display"><span class="captcha-text" id="signupCaptchaText"></span><button type="button" class="captcha-refresh" onclick="generateCaptcha('signup')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div>
+                            <div class="form-group" style="margin-bottom:0"><div class="input-wrap"><svg class="input-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="signupCaptchaInput" placeholder="Enter captcha" autocomplete="off"></div></div>
+                        </div>
+                        <div class="error-msg" id="signupCaptchaErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div>
+                    </div>
+                    <button type="submit" class="btn-primary" style="margin-top:6px">Create Account</button>
+                </form>
+                <div class="form-footer">Already have an account? <button type="button" class="link-btn" onclick="showPage('loginPage')">Sign In</button></div>
+            </div>
+
+            <!-- ===== FORGOT PASSWORD ===== -->
+            <div class="form-page" id="forgotPage">
+                <button type="button" class="back-to-login" onclick="showPage('loginPage')"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>Back to Login</button>
+                <div class="form-logo">
+                    <img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation">
+                    <span>Qatar Foundation</span>
+                </div>
+                <div class="form-header">
+                    <div class="badge"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Account Recovery</div>
+                    <h2>Reset Password</h2>
+                    <p>Enter your registered email and we'll send you a reset link</p>
+                </div>
+                <form id="forgotForm" novalidate>
+                    <div class="form-group">
+                        <label>Email Address <span class="required">*</span></label>
+                        <div class="input-wrap"><svg class="input-icon" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg><input type="email" id="forgotEmail" placeholder="admin@qf.org.qa"></div>
+                        <div class="error-msg" id="forgotEmailErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter a valid email address</span></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Captcha <span class="required">*</span></label>
+                        <div class="captcha-row">
+                            <div class="captcha-display"><span class="captcha-text" id="forgotCaptchaText"></span><button type="button" class="captcha-refresh" onclick="generateCaptcha('forgot')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div>
+                            <div class="form-group" style="margin-bottom:0"><div class="input-wrap"><svg class="input-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="forgotCaptchaInput" placeholder="Enter captcha" autocomplete="off"></div></div>
+                        </div>
+                        <div class="error-msg" id="forgotCaptchaErr"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Reset Link</button>
+                </form>
+                <div class="form-footer">Remembered your password? <button type="button" class="link-btn" onclick="showPage('loginPage')">Sign In</button></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="shared/auth.js"></script>
+<script src="shared/admin-auth.js"></script>
+</body>
+</html>

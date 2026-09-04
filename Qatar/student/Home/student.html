@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universal Skills Passport – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="student.css">
+<link rel="stylesheet" href="../../shared/typography.css">
+</head>
+<body>
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<!-- AUTH -->
+<div id="aw">
+<div class="ac">
+<div class="bp">
+<div class="bl"><div class="li"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF Logo"></div><div class="blt"><span>Qatar Foundation</span><span>مؤسسة قطر</span></div></div>
+<div class="bc"><h1>Universal Skills Passport</h1><p>Track competencies, earn digital badges, and showcase your institutional journey.</p></div>
+</div>
+<div class="fp">
+<!-- LOGIN -->
+<div class="fpg active" id="loginPage">
+<div class="fl"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF"><span>Qatar Foundation</span></div>
+<div class="fh"><div class="badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>Student Portal</div><h2>Welcome Back</h2><p>Sign in to access your Universal Skills Passport</p></div>
+<button class="gsso" onclick="st('Google Sign-In coming soon!')"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Sign in with Google</button>
+<div class="div">OR</div>
+<form id="loginForm" novalidate>
+<div class="fg"><label>Username / Email <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg><input type="text" id="lu" placeholder="Enter your username or email" autocomplete="username"></div><div class="em" id="lue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span></span></div></div>
+<div class="fg"><label>Password <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><input type="password" id="lp" placeholder="Enter your password" autocomplete="current-password"><button type="button" class="tp" onclick="tgp('lp',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div><div class="em" id="lpe"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span></span></div></div>
+<div class="fg"><label>Captcha <span class="req">*</span></label><div class="cr"><div class="cd"><span class="ct" id="lct"></span><button type="button" class="crf" onclick="gc('l')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div><div class="fg" style="margin-bottom:0"><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="lci" placeholder="Enter captcha" autocomplete="off"></div></div></div><div class="em" id="lce"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span></span></div></div>
+<div class="fo"><label class="rm"><input type="checkbox"><span class="ck"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Remember me</span></label><button type="button" class="lb" onclick="sp('forgotPage')">Forgot password?</button></div>
+<button type="submit" class="bp-btn">Sign In</button>
+</form>
+<div class="ff">Don't have an account? <button type="button" class="lb" onclick="sp('signupPage')">Create Account</button></div>
+</div>
+
+<!-- SIGNUP -->
+<div class="fpg" id="signupPage">
+<button type="button" class="btl" onclick="sp('loginPage')"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>Back to Login</button>
+<div class="fl"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF"><span>Qatar Foundation</span></div>
+<div class="fh"><div class="badge"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>New Student</div><h2>Create Account</h2><p>Register for your Universal Skills Passport</p></div>
+<button class="gsso" onclick="st('Google Sign-Up coming soon!')"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Sign up with Google</button>
+<div class="div">OR</div>
+<form id="signupForm" novalidate>
+<div class="tc">
+<div class="fg"><label>First Name <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg><input type="text" id="sf" placeholder="First name"></div><div class="em" id="sfe"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter first name</span></div></div>
+<div class="fg"><label>Last Name <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg><input type="text" id="sla" placeholder="Last name"></div><div class="em" id="slae"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter last name</span></div></div>
+</div>
+<div class="fg"><label>Email <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg><input type="email" id="se" placeholder="student@qu.edu.qa"></div><div class="em" id="see"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter a valid email</span></div></div>
+<div class="fg"><label>Phone Number <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><input type="tel" id="sph" placeholder="+974 XXXX XXXX"></div><div class="em" id="sphe"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter phone number</span></div></div>
+<div class="fg"><label>Student ID <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="2" y1="9" x2="22" y2="9"/></svg><input type="text" id="sid" placeholder="e.g., QF-2025-001"></div><div class="em" id="side"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter Student ID</span></div></div>
+<div class="fg"><label>Password <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><input type="password" id="spw" placeholder="Min 8 characters" oninput="cs(this.value)"><button type="button" class="tp" onclick="tgp('spw',this)"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div><div class="ps"><div class="sb" id="s1"></div><div class="sb" id="s2"></div><div class="sb" id="s3"></div><div class="sb" id="s4"></div></div><div class="sl" id="slb"></div><div class="em" id="spwe"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Min 8 characters required</span></div></div>
+<div class="fg"><label>Captcha <span class="req">*</span></label><div class="cr"><div class="cd"><span class="ct" id="sct"></span><button type="button" class="crf" onclick="gc('s')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div><div class="fg" style="margin-bottom:0"><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="sci" placeholder="Enter captcha" autocomplete="off"></div></div></div><div class="em" id="sce"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div></div>
+<button type="submit" class="bp-btn" style="margin-top:4px">Create Account</button>
+</form>
+<div class="ff">Already have an account? <button type="button" class="lb" onclick="sp('loginPage')">Sign In</button></div>
+</div>
+
+<!-- FORGOT -->
+<div class="fpg" id="forgotPage">
+<button type="button" class="btl" onclick="sp('loginPage')"><svg viewBox="0 0 24 24"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>Back to Login</button>
+<div class="fl"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="QF"><span>Qatar Foundation</span></div>
+<div class="fh"><div class="badge"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Account Recovery</div><h2>Reset Password</h2><p>Enter your email and we'll send you an OTP</p></div>
+<form id="forgotForm" novalidate>
+<div class="fg"><label>Email Address <span class="req">*</span></label><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg><input type="email" id="fe" placeholder="student@qu.edu.qa"></div><div class="em" id="fee"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Please enter a valid email</span></div></div>
+<div class="fg"><label>Captcha <span class="req">*</span></label><div class="cr"><div class="cd"><span class="ct" id="fct"></span><button type="button" class="crf" onclick="gc('f')"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button></div><div class="fg" style="margin-bottom:0"><div class="iw"><svg class="ii" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg><input type="text" id="fci" placeholder="Enter captcha" autocomplete="off"></div></div></div><div class="em" id="fce"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Captcha does not match</span></div></div>
+<button type="submit" class="bp-btn">Send Reset Link</button>
+</form>
+<div class="ff">Remembered your password? <button type="button" class="lb" onclick="sp('loginPage')">Sign In</button></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= DASHBOARD ================= -->
+<div id="dw">
+
+<!-- ===== sidebar ===== -->
+<aside class="qsb" id="qsb">
+  <div class="qsb-brand">
+    <span class="qsb-logo"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation"></span>
+  </div>
+
+  <nav class="qsb-nav">
+    <button class="qnav active" data-view="home">
+      <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</button>
+    <button class="qnav" data-view="passport">
+      <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2.5"/><line x1="1" y1="10" x2="23" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg>My Passport</button>
+    <button class="qnav" data-view="skills" onclick="window.location.href='../skills/index.html'">
+      <svg viewBox="0 0 24 24"><polygon points="12 2 21 7.5 21 16.5 12 22 3 16.5 3 7.5"/><polyline points="3 7.5 12 13 21 7.5"/><line x1="12" y1="13" x2="12" y2="22"/></svg>My Competencies</button>
+    <button class="qnav" data-view="skillgap" onclick="window.location.href='../skillgap/index.html'">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/></svg>Skill Gap Analysis</button>
+    <button class="qnav" data-view="opportunities" onclick="window.location.href='../opportunities/index.html'">
+      <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Opportunities</button>
+    <button class="qnav" data-view="pathways" onclick="window.location.href='../pathways/index.html'">
+      <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.7"/><circle cx="6" cy="12" r="2.7"/><circle cx="18" cy="19" r="2.7"/><line x1="8.4" y1="10.6" x2="15.6" y2="6.6"/><line x1="8.4" y1="13.4" x2="15.6" y2="17.4"/></svg>Learning Pathways</button>
+    <button class="qnav" data-view="evidence" onclick="window.location.href='../evidence/index.html'">
+      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>My Evidence</button>
+    <button class="qnav" data-view="achievements" onclick="window.location.href='../achievements/index.html'">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><polyline points="8.2 13.5 7 22 12 19 17 22 15.8 13.5"/></svg>Achievements</button>
+    <button class="qnav" data-view="messages">
+      <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2.5"/><polyline points="2.5 6 12 13 21.5 6"/></svg>Messages</button>
+  </nav>
+
+  <div class="qsb-help">
+    <button class="qnav" onclick="st('Help & Support coming soon')">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Help &amp; Support</button>
+  </div>
+</aside>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <h1 class="qtitle">Universal Skills Passport</h1>
+    <div class="qtop-actions">
+      <button class="qicon-btn" onclick="st('Search coming soon')" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="qicon-btn" onclick="st('3 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>3</b>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg></span>
+          <span class="qui"><b id="qUserName">Sara Al Mansoori</b><span>Engineering Student</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>My Profile</button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>Settings</button>
+          <hr>
+          <button type="button" class="qout" onclick="logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+
+    <!-- ===== welcome hero ===== -->
+    <section class="qcard hero">
+      <div class="hero-top">
+        <span class="hero-avatar" id="heroAvatar">
+          <img src="../../Assets/sara-profile-photo.png" alt="Sara Al Mansoori">
+        </span>
+        <div class="hero-info">
+          <h2>Welcome back, <span id="heroName">Sara Al Mansoori</span> <span class="wave">👋</span></h2>
+          <p class="hero-sub">Here's your skills journey snapshot.</p>
+          <div class="hero-meta">
+            <div class="hmi">
+              <span class="hmi-ic"><svg viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5Z"/><path d="M6 10.5V16c0 1.4 2.7 3 6 3s6-1.6 6-3v-5.5"/></svg></span>
+              <span class="hmi-t"><b>BSc in Environmental Engineering</b><span>Class of 2025</span></span>
+            </div>
+            <div class="hmi">
+              <span class="hmi-ic"><svg viewBox="0 0 24 24"><path d="M4 21V7l8-4 8 4v14"/><path d="M9 21v-6h6v6"/><line x1="4" y1="21" x2="20" y2="21"/></svg></span>
+              <span class="hmi-t"><b>College of Engineering</b><span>Qatar University</span></span>
+            </div>
+            <div class="hmi">
+              <span class="hmi-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2"/><line x1="3" y1="9.5" x2="21" y2="9.5"/><line x1="8" y1="2.5" x2="8" y2="6.5"/><line x1="16" y1="2.5" x2="16" y2="6.5"/></svg></span>
+              <span class="hmi-t"><b>Member since</b><span>Jan 2025</span></span>
+            </div>
+          </div>
+        </div>
+        <blockquote class="hero-quote">Build your skills today, shape your tomorrow.</blockquote>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat">
+          <span class="hstat-ic green"><svg viewBox="0 0 24 24"><polygon points="12 2 21 7.5 21 16.5 12 22 3 16.5 3 7.5"/><polyline points="3 7.5 12 13 21 7.5"/><line x1="12" y1="13" x2="12" y2="22"/></svg></span>
+          <div class="hstat-t"><div class="hstat-num">5</div><div class="hstat-lbl">Competencies</div><div class="hstat-sub">Across 3 Domains</div></div>
+        </div>
+        <div class="hstat">
+          <span class="hstat-ic green"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><polyline points="7.5 12.5 10.5 15.5 16.5 9"/></svg></span>
+          <div class="hstat-t"><div class="hstat-num">2</div><div class="hstat-lbl">Verified</div><div class="hstat-sub">Competencies</div></div>
+        </div>
+        <div class="hstat">
+          <span class="hstat-ic amber"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5V12l4 2.3"/></svg></span>
+          <div class="hstat-t"><div class="hstat-num">2</div><div class="hstat-lbl">In Progress</div><div class="hstat-sub">Competencies</div></div>
+        </div>
+        <div class="hstat">
+          <span class="hstat-ic blue"><svg viewBox="0 0 24 24"><polyline points="3 17 9.5 10.5 14 15 21 7.5"/><polyline points="15 7.5 21 7.5 21 13.5"/></svg></span>
+          <div class="hstat-t"><div class="hstat-num">26</div><div class="hstat-lbl">Badges Earned</div><div class="hstat-sub">So far</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4-column row ===== -->
+    <div class="row4">
+
+      <!-- My Competencies -->
+      <div class="qcard">
+        <div class="qch"><h3>My Competencies</h3><button class="qall">View all<svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button></div>
+        <div class="skill-list">
+          <div class="skill-row" style="cursor:pointer" onclick="window.location.href='../skills/index.html'">
+            <span class="skill-ic green"><svg viewBox="0 0 24 24"><polygon points="12 2 21 7.5 21 16.5 12 22 3 16.5 3 7.5"/><polyline points="3 7.5 12 13 21 7.5"/><line x1="12" y1="13" x2="12" y2="22"/></svg></span>
+            <div class="skill-main">
+              <div class="skill-top"><span class="skill-name">Systems Thinking</span><span class="skill-level">Level 3</span></div>
+              <div class="skill-bar"><div class="skill-fill green" style="width:100%"></div></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-ic amber"><svg viewBox="0 0 24 24"><circle cx="9" cy="12" r="7"/><circle cx="15" cy="12" r="7"/></svg></span>
+            <div class="skill-main">
+              <div class="skill-top"><span class="skill-name">Interdisciplinary Approaches</span><span class="skill-level">Level 2</span></div>
+              <div class="skill-bar"><div class="skill-fill amber" style="width:66%"></div></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-ic green"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><line x1="3" y1="12" x2="21" y2="12"/></svg></span>
+            <div class="skill-main">
+              <div class="skill-top"><span class="skill-name">Intercultural Knowledge</span><span class="skill-level">Level 3</span></div>
+              <div class="skill-bar"><div class="skill-fill green" style="width:100%"></div></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-ic amber"><svg viewBox="0 0 24 24"><path d="M4 5c3-.5 6 0 8 1.5C14 5 17 4.5 20 5v13c-3-.5-6 0-8 1.5-2-1.5-5-2-8-1.5Z"/><line x1="12" y1="6.5" x2="12" y2="19.5"/></svg></span>
+            <div class="skill-main">
+              <div class="skill-top"><span class="skill-name">Arabic Linguistic Competence</span><span class="skill-level">Level 2</span></div>
+              <div class="skill-bar"><div class="skill-fill amber" style="width:66%"></div></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-ic gray"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2.3h6c0-1.1.4-1.8 1-2.3A7 7 0 0 0 12 2Z"/><line x1="9" y1="19" x2="15" y2="19"/><line x1="10" y1="22" x2="14" y2="22"/></svg></span>
+            <div class="skill-main">
+              <div class="skill-top"><span class="skill-name">Entrepreneurship</span><span class="skill-level">Level 1</span></div>
+              <div class="skill-bar"><div class="skill-fill gray" style="width:33%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- My Progress -->
+      <div class="qcard">
+        <div class="qch"><h3>My Progress</h3></div>
+        <div class="progress-wrap">
+          <div class="donut-box">
+            <svg class="donut" viewBox="0 0 120 120">
+              <circle class="dtrack" cx="60" cy="60" r="50"/>
+              <circle class="dseg green" cx="60" cy="60" r="50" stroke-dasharray="125.66 314.16" stroke-dashoffset="0"/>
+              <circle class="dseg amber" cx="60" cy="60" r="50" stroke-dasharray="125.66 314.16" stroke-dashoffset="-125.66"/>
+              <circle class="dseg gray" cx="60" cy="60" r="50" stroke-dasharray="62.83 314.16" stroke-dashoffset="-251.33"/>
+            </svg>
+            <div class="donut-center"><b>5</b><span>Total</span><span>Competencies</span></div>
+          </div>
+          <div class="progress-legend">
+            <div class="pleg-row"><span class="pdot green"></span><b>2</b><span class="pleg-lbl">Verified</span><span class="pleg-pct">40%</span></div>
+            <div class="pleg-row"><span class="pdot amber"></span><b>2</b><span class="pleg-lbl">In Progress</span><span class="pleg-pct">40%</span></div>
+            <div class="pleg-row"><span class="pdot gray"></span><b>1</b><span class="pleg-lbl">Developing</span><span class="pleg-pct">20%</span></div>
+          </div>
+        </div>
+        <button class="progress-more">View full progress<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></button>
+      </div>
+
+      <!-- Your Next Goal -->
+      <div class="qcard">
+        <div class="qch"><h3>Your Next Goal</h3><button class="qkebab" aria-label="Edit Goal" title="Edit Goal" onclick="st('Edit Goal coming soon')"><svg viewBox="0 0 24 24"><path d="M17 3a2.85 2.85 0 0 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg></button></div>
+        <div class="goal-panel">
+          <div class="goal-head">
+            <span class="goal-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="1.5" fill="#fff" stroke="none"/></svg></span>
+            <div><b class="goal-role">Sustainability Engineer</b><span class="goal-sub">Target Role</span></div>
+          </div>
+          <div class="goal-body">
+            <p class="goal-count">3 competencies to develop</p>
+            <p class="goal-note">Keep going! You're on track to achieve your goal.</p>
+            <button class="goal-btn" onclick="window.location.href='../skillgap/index.html'">View Skill Gap</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Achievements -->
+      <div class="qcard">
+        <div class="qch"><h3>Recent Badges</h3><button class="qall">View all<svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button></div>
+        <div class="ach-list">
+          <div class="ach-row">
+            <span class="ach-hex green"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><polyline points="8.2 13.5 7 22 12 19 17 22 15.8 13.5"/></svg></span>
+            <div class="ach-info">
+              <div class="ach-top"><b>Systems Thinking</b><span class="ach-verified">Verified</span></div>
+              <span class="ach-level">Level 3</span>
+              <span class="ach-date">Issued on 02 May 2025</span>
+            </div>
+          </div>
+          <div class="ach-row">
+            <span class="ach-hex purple"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><polyline points="8.2 13.5 7 22 12 19 17 22 15.8 13.5"/></svg></span>
+            <div class="ach-info">
+              <div class="ach-top"><b>Leadership</b><span class="ach-verified">Verified</span></div>
+              <span class="ach-level">Level 2</span>
+              <span class="ach-date">Issued on 18 Apr 2025</span>
+            </div>
+          </div>
+          <div class="ach-row">
+            <span class="ach-hex teal"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><polyline points="8.2 13.5 7 22 12 19 17 22 15.8 13.5"/></svg></span>
+            <div class="ach-info">
+              <div class="ach-top"><b>Community Impact</b><span class="ach-verified">Verified</span></div>
+              <span class="ach-level">Level 2</span>
+              <span class="ach-date">Issued on 10 Apr 2025</span>
+            </div>
+          </div>
+        </div>
+        <button class="qall ach-more">Go to My Passport<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></button>
+      </div>
+
+    </div>
+
+    <!-- ===== 2-column row ===== -->
+    <div class="row2">
+
+      <!-- Recommended for You -->
+      <div class="qcard">
+        <div class="qch"><h3>Recommended for You</h3><button class="qall">View all opportunities<svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button></div>
+        <div class="reco-row">
+          <div class="reco-list">
+            <div class="reco-item">
+              <div class="reco-thumb green">
+                <span class="reco-tag">Recommended</span>
+              </div>
+              <div class="reco-body">
+                <b>QF Sustainability Challenge</b>
+                <span class="reco-develop">Develop: Sustainability, Systems Thinking</span>
+                <span class="reco-deadline"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2"/><line x1="3" y1="9.5" x2="21" y2="9.5"/><line x1="8" y1="2.5" x2="8" y2="6.5"/><line x1="16" y1="2.5" x2="16" y2="6.5"/></svg>Apply by 20 May 2025</span>
+              </div>
+            </div>
+            <div class="reco-item">
+              <div class="reco-thumb amber">
+                <span class="reco-tag">For You</span>
+              </div>
+              <div class="reco-body">
+                <b>Undergraduate Research Program</b>
+                <span class="reco-develop">Develop: Research &amp; Inquiry, Data Analysis</span>
+                <span class="reco-deadline"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2"/><line x1="3" y1="9.5" x2="21" y2="9.5"/><line x1="8" y1="2.5" x2="8" y2="6.5"/><line x1="16" y1="2.5" x2="16" y2="6.5"/></svg>Apply by 25 May 2025</span>
+              </div>
+            </div>
+            <div class="reco-item">
+              <div class="reco-thumb purple">
+                <span class="reco-tag">Trending</span>
+              </div>
+              <div class="reco-body">
+                <b>Data Visualization Workshop</b>
+                <span class="reco-develop">Develop: Data Analysis, Communication</span>
+                <span class="reco-deadline"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2"/><line x1="3" y1="9.5" x2="21" y2="9.5"/><line x1="8" y1="2.5" x2="8" y2="6.5"/><line x1="16" y1="2.5" x2="16" y2="6.5"/></svg>Apply by 28 May 2025</span>
+              </div>
+            </div>
+          </div>
+          <button class="reco-next" aria-label="Next opportunities" onclick="st('More opportunities coming soon')"><svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg></button>
+        </div>
+      </div>
+
+      <!-- Activity Feed -->
+      <div class="qcard">
+        <div class="qch"><h3>Activity Feed</h3><button class="qall">View all<svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button></div>
+        <div class="feed-list">
+          <div class="feed-row">
+            <span class="feed-ic green"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <div class="feed-body"><p>Your evidence for <b>Systems Thinking</b> has been verified.</p><span class="feed-time">2 May 2025 · 10:30 AM</span></div>
+          </div>
+          <div class="feed-row">
+            <span class="feed-ic amber"><svg viewBox="0 0 24 24"><path d="M12 19V5"/><polyline points="6 11 12 5 18 11"/><line x1="5" y1="19" x2="19" y2="19"/></svg></span>
+            <div class="feed-body"><p>You submitted evidence for <b>Sustainability</b>.</p><span class="feed-time">1 May 2025 · 04:15 PM</span></div>
+          </div>
+          <div class="feed-row">
+            <span class="feed-ic gold"><svg viewBox="0 0 24 24"><polygon points="12 2.5 15 9 22 10 17 15 18.5 22 12 18.5 5.5 22 7 15 2 10 9 9"/></svg></span>
+            <div class="feed-body"><p>You earned the <b>Leadership Level 2</b> badge.</p><span class="feed-time">18 Apr 2025 · 09:20 AM</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="qfoot">
+    <span>© 2026 Qatar Foundation. All rights reserved.</span>
+    <nav><a href="#">Privacy Policy</a><i>|</i><a href="#">Terms of Use</a><i>|</i><a href="#">Support</a></nav>
+  </footer>
+
+</div>
+</div>
+
+
+<script>
+const cp={l:'',s:'',f:''};
+function gc(t){const c='ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz23456789';let r='';for(let i=0;i<5;i++)r+=c[Math.floor(Math.random()*c.length)];cp[t]=r;const m={l:'lct',s:'sct',f:'fct'};document.getElementById(m[t]).textContent=r}
+gc('l');gc('s');gc('f');
+
+/* ===================== DASHBOARD ===================== */
+
+/* --- shell --- */
+function initDash(name){
+  const full=name||'Sara Al Mansoori';
+  document.getElementById('qUserName').textContent=full;
+  document.getElementById('heroName').textContent=full;
+}
+
+document.querySelectorAll('.qsb-nav .qnav, .qsb-help .qnav').forEach(b=>{
+  b.addEventListener('click',function(){
+    if(!this.dataset.view)return;
+    document.querySelectorAll('.qsb-nav .qnav, .qsb-help .qnav').forEach(n=>n.classList.remove('active'));
+    this.classList.add('active');
+    document.getElementById('qsb').classList.remove('open');
+    if(this.dataset.view!=='home'&&this.dataset.view!=='skillgap'&&this.dataset.view!=='achievements'&&this.dataset.view!=='evidence'&&this.dataset.view!=='opportunities'&&this.dataset.view!=='skills'&&this.dataset.view!=='pathways')st(this.textContent.trim()+' — coming soon');
+  });
+});
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+
+/* [DASH-JS] */
+
+function sp(id){document.querySelectorAll('.fpg').forEach(p=>p.classList.remove('active'));setTimeout(()=>document.getElementById(id).classList.add('active'),50);document.querySelectorAll('.em').forEach(e=>e.classList.remove('show'));document.querySelectorAll('.fp input').forEach(i=>i.classList.remove('err'))}
+
+function tgp(id,b){const i=document.getElementById(id);const p=i.type==='password';i.type=p?'text':'password';b.innerHTML=p?'<svg viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>':'<svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>'}
+
+function se(id,m){const e=document.getElementById(id);if(m)e.querySelector('span').textContent=m;e.classList.add('show')}
+function ce(fid){document.querySelectorAll('#'+fid+' .em').forEach(e=>e.classList.remove('show'));document.querySelectorAll('#'+fid+' input').forEach(i=>i.classList.remove('err'))}
+function sk(fid){const f=document.getElementById(fid);f.classList.add('shake');setTimeout(()=>f.classList.remove('shake'),400)}
+function ve(e){return/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)}
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+
+function cs(v){let s=0;if(v.length>=8)s++;if(/[A-Z]/.test(v))s++;if(/[0-9]/.test(v))s++;if(/[^A-Za-z0-9]/.test(v))s++;const l=['','Weak','Medium','Strong','Very Strong'],c=['','weak','medium','strong','vstrong'];for(let i=1;i<=4;i++){const b=document.getElementById('s'+i);b.className='sb';if(i<=s)b.classList.add(c[s])}document.getElementById('slb').textContent=v.length>0?l[s]:''}
+
+function showDash(u){
+document.getElementById('aw').style.display='none';
+document.getElementById('dw').classList.add('active');
+document.body.classList.add('dm');
+const n=u.includes('@')?u.split('@')[0]:u;
+const d=n.charAt(0).toUpperCase()+n.slice(1);
+if(typeof initDash==='function')initDash(d);
+try{localStorage.setItem('qfLoggedIn','1');localStorage.setItem('qfName',d)}catch(e){}
+}
+
+function logout(){
+document.getElementById('dw').classList.remove('active');
+document.getElementById('aw').style.display='flex';
+document.body.classList.remove('dm');
+st('Signed out successfully');
+sp('loginPage');
+document.getElementById('loginForm').reset();
+try{localStorage.removeItem('qfLoggedIn');localStorage.removeItem('qfName')}catch(e){}
+}
+
+(function(){
+try{
+if(localStorage.getItem('qfLoggedIn')==='1'){
+showDash(localStorage.getItem('qfName')||'Student');
+}
+}catch(e){}
+})();
+
+
+document.getElementById('loginForm').addEventListener('submit',function(e){e.preventDefault();ce('loginForm');let v=true;const u=document.getElementById('lu').value.trim(),p=document.getElementById('lp').value.trim(),c=document.getElementById('lci').value.trim();
+if(!u){se('lue','Please enter your username or email');document.getElementById('lu').classList.add('err');v=false}
+if(!p){se('lpe','Please enter your password');document.getElementById('lp').classList.add('err');v=false}
+if(!c){se('lce','Please enter the captcha code');v=false}else if(c!==cp.l){se('lce','Captcha does not match. Try again.');v=false;gc('l')}
+if(!v){sk('loginForm');return}
+st('Login successful! Redirecting...');setTimeout(()=>showDash(u),1000);gc('l')});
+
+document.getElementById('signupForm').addEventListener('submit',function(e){e.preventDefault();ce('signupForm');let v=true;
+if(!document.getElementById('sf').value.trim()){se('sfe');document.getElementById('sf').classList.add('err');v=false}
+if(!document.getElementById('sla').value.trim()){se('slae');document.getElementById('sla').classList.add('err');v=false}
+const em=document.getElementById('se').value.trim();if(!em||!ve(em)){se('see');document.getElementById('se').classList.add('err');v=false}
+if(!document.getElementById('sph').value.trim()){se('sphe');document.getElementById('sph').classList.add('err');v=false}
+if(!document.getElementById('sid').value.trim()){se('side');document.getElementById('sid').classList.add('err');v=false}
+const pw=document.getElementById('spw').value.trim();if(!pw||pw.length<8){se('spwe');document.getElementById('spw').classList.add('err');v=false}
+const c=document.getElementById('sci').value.trim();if(!c){se('sce','Please enter captcha');v=false}else if(c!==cp.s){se('sce','Captcha does not match.');v=false;gc('s')}
+if(!v){sk('signupForm');return}
+st('Account created!');this.reset();cs('');gc('s');setTimeout(()=>sp('loginPage'),1500)});
+
+document.getElementById('forgotForm').addEventListener('submit',function(e){e.preventDefault();ce('forgotForm');let v=true;
+const em=document.getElementById('fe').value.trim();if(!em||!ve(em)){se('fee');document.getElementById('fe').classList.add('err');v=false}
+const c=document.getElementById('fci').value.trim();if(!c){se('fce','Please enter captcha');v=false}else if(c!==cp.f){se('fce','Captcha does not match.');v=false;gc('f')}
+if(!v){sk('forgotForm');return}
+st('Reset link sent to your email!');gc('f');this.reset()});
+
+document.querySelectorAll('.fp input').forEach(i=>{i.addEventListener('input',function(){this.classList.remove('err');const e=this.closest('.fg')?.querySelector('.em');if(e)e.classList.remove('show')})});
+
+</script>
+</body>
+</html>
