@@ -1,6 +1,6 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{--g1:#1a5c3a;--g2:#2d7a50;--g3:#3a9d68;--mint:#b8e6cc;--ml:#d4f0e0;--mp:#e8f5ee;--w:#fff;--t:#1a2e23;--tl:#5a7568;--red:#d94f4f;--b:#c8ddd1;--sh:rgba(26,92,58,.1);--sh2:rgba(26,92,58,.18);--r:16px;--rs:10px;--tr:.3s cubic-bezier(.4,0,.2,1);--sw:270px}
-body{font-family:'DM Sans',sans-serif;min-height:100vh;background:linear-gradient(145deg,#d6efe0,#b3dcc4 30%,#8fcbaa 60%,#b8e0c8);display:flex;align-items:center;justify-content:center;overflow-x:hidden;transition:background .3s}
+body{min-height:100vh;background:linear-gradient(145deg,#d6efe0,#b3dcc4 30%,#8fcbaa 60%,#b8e0c8);display:flex;align-items:center;justify-content:center;overflow-x:hidden;transition:background .3s}
 body.dark{background:linear-gradient(145deg,#1a2e23,#2d3e36 30%,#3a4d42 60%,#2d3e36)}
 body.dm{align-items:stretch;justify-content:stretch}
 body::before,body::after{content:'';position:fixed;border-radius:50%;filter:blur(80px);opacity:.35;z-index:0;pointer-events:none}
@@ -121,7 +121,7 @@ body.dm::before,body.dm::after{display:none}
 
 .qsb-nav{flex:1;display:flex;flex-direction:column;gap:2px;padding:14px 12px;overflow-y:auto;overflow-x:hidden}
 .qsb-nav::-webkit-scrollbar{width:0}
-.qnav{flex-shrink:0;display:flex;align-items:center;gap:13px;width:100%;padding:11px 14px;border:none;border-radius:10px;background:transparent;font-family:Arial,Helvetica,sans-serif;font-size:14.5px;font-weight:500;color:rgba(255,255,255,.78);text-align:left;cursor:pointer;transition:background .2s,color .2s}
+.qnav{flex-shrink:0;display:flex;align-items:center;gap:13px;width:100%;padding:11px 14px;border:none;border-radius:10px;background:transparent;font-family:'DM Sans',sans-serif;font-size:14.5px;font-weight:500;color:rgba(255,255,255,.78);text-align:left;cursor:pointer;transition:background .2s,color .2s}
 .qnav svg{width:19px;height:19px;flex-shrink:0;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .qnav:hover{background:rgba(255,255,255,.08);color:#fff}
 .qnav.active{background:#F4FAF7;color:var(--qg800);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.12)}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Badges & Credentials Management – Admin Portal – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared/typography.css">
+<link rel="stylesheet" href="../shared/admin-shell.css">
+<link rel="stylesheet" href="badges-content.css">
+</head>
+<body class="dm">
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<!-- ===== sidebar (shared component, see Admin/shared/sidebar.js) ===== -->
+<div id="admin-sidebar" data-active="badges"></div>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <h1 class="qtitle">Universal Skills Passport <span class="qtitle-pill">Administrator Portal</span></h1>
+    <div class="qtop-actions">
+      <button class="qicon-btn" onclick="st('Search coming soon')" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="qicon-btn" onclick="st('5 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>5</b>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg></span>
+          <span class="qui"><b id="qUserName">Admin</b><span id="qUserRole">Administrator</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>My Profile</button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>Settings</button>
+          <hr>
+          <button type="button" class="qout" onclick="AdminAuth.logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+    <div class="adm-badges-scope">
+
+    <div class="head-row">
+      <div>
+        <h1>Badges &amp; Credentials Management</h1>
+        <div class="sub">Design, issue and manage digital badges and credentials.</div>
+      </div>
+      <div class="actions">
+        <button class="btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15V3"/><path d="m8 7 4-4 4 4"/><path d="M5 12v7h14v-7"/></svg>
+          Import Badges
+        </button>
+        <button class="btn primary"><span style="display:flex;align-items:center;gap:8px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><path d="M12 8v8M8 12h8"/></svg>Create New Badge</span><span class="split">⌄</span></button>
+      </div>
+    </div>
+
+    <section class="metrics">
+      <div class="metric"><div class="metric-icon mi-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m12 3 2.4 2.1 3.2-.2 1.3 2.9 2.8 1.5-.9 3.1.9 3.1-2.8 1.5-1.3 2.9-3.2-.2L12 22l-2.4-2.1-3.2.2-1.3-2.9-2.8-1.5.9-3.1-.9-3.1 2.8-1.5 1.3-2.9 3.2.2z"/><path d="m9 12 2 2 4-4"/></svg></div><div class="metric-text"><div class="metric-label">Total Badges</div><div><span class="metric-number">482</span><span class="metric-growth up">↑ 8.7%</span></div><div class="metric-foot">vs Apr 2025</div></div></div>
+      <div class="metric"><div class="metric-icon mi-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m4 11 16-7-5 16-4-6-7-3Z"/><path d="m11 14 5-7"/></svg></div><div class="metric-text"><div class="metric-label">Active Badges</div><div><span class="metric-number">412</span><span class="metric-growth up">↑ 9.3%</span></div><div class="metric-foot">vs Apr 2025</div></div></div>
+      <div class="metric"><div class="metric-icon mi-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m12 3 2.5 2 3.1-.1 1.3 2.9 2.7 1.5-.9 3.1.9 3.1-2.7 1.5-1.3 2.9-3.1-.1L12 22l-2.5-2-3.1.1-1.3-2.9-2.7-1.5.9-3.1-.9-3.1 2.7-1.5 1.3-2.9 3.1.1z"/><path d="M9 12h6M12 9v6"/></svg></div><div class="metric-text"><div class="metric-label">Issued This Month</div><div><span class="metric-number">9,632</span><span class="metric-growth up">↑ 11.4%</span></div><div class="metric-foot">vs Apr 2025</div></div></div>
+      <div class="metric"><div class="metric-icon mi-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v13"/><path d="m7 11 5 5 5-5"/><path d="M5 18v3h14v-3"/></svg></div><div class="metric-text"><div class="metric-label">Total Issued</div><div><span class="metric-number">256,814</span><span class="metric-growth up">↑ 13.2%</span></div><div class="metric-foot">vs Apr 2025</div></div></div>
+      <div class="metric"><div class="metric-icon mi-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4M16 3v4M4 10h16M9 14l6 6M15 14l-6 6"/></svg></div><div class="metric-text"><div class="metric-label">Expired / Retired</div><div><span class="metric-number">28</span><span class="metric-growth down">↓ 6.7%</span></div><div class="metric-foot">vs Apr 2025</div></div></div>
+    </section>
+
+    <section class="filters">
+      <div class="field search-field"><label>&nbsp;</label><div class="control search-control">Search badges by name or description... <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg></div></div>
+      <div class="field status"><label>Status</label><div class="control select">All Status <span>⌄</span></div></div>
+      <div class="field type"><label>Badge Type</label><div class="control select">All Types <span>⌄</span></div></div>
+      <div class="field org"><label>Organization</label><div class="control select">All Organizations <span>⌄</span></div></div>
+      <button class="btn more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h10M18 7h2M4 12h4M12 12h8M4 17h10M18 17h2"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="16" cy="17" r="2"/></svg>More Filters</button>
+      <button class="clear">Clear All</button>
+    </section>
+
+    <section class="content">
+      <div class="card table-card">
+        <div class="card-title"><span>Badges (482)</span><span class="link">View Badge Categories ↗</span></div>
+        <table class="table">
+          <thead><tr><th>Badge</th><th>Type</th><th>Organization</th><th>Issued</th><th>Status</th><th>Last Updated</th><th>Actions</th></tr></thead>
+          <tbody>
+            <tr><td><div class="badge-cell"><div class="hex h-green"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6"><path d="M6 13c5-6 10-6 12-6-1 7-5 11-11 11"/><path d="M6 18c1-3 3-5 7-7"/></svg></div><div><div class="badge-name">Sustainability Champion</div><div class="desc">Demonstrates advanced understanding of sustainability principles.</div></div></div></td><td><span class="tag tag-green">Achievement</span></td><td><div class="orgcell"><div class="orglogo" style="color:#158765"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m12 3 8 4v7c0 4-3.4 6.5-8 7-4.6-.5-8-3-8-7V7l8-4Z"/><path d="M8 13c2-2 4-3 8-3"/></svg></div><div class="orgtxt">QF Sustainability<br>Program</div></div></td><td class="issued">4,256</td><td><span class="tag tag-active">Active</span></td><td class="updated">02 May 2025<br>by Aisha Al-Emadi</td><td class="dots">•••</td></tr>
+            <tr><td><div class="badge-cell"><div class="hex h-blue"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="6" r="2"/><circle cx="7" cy="14" r="2"/><circle cx="17" cy="14" r="2"/><path d="M12 8v4M9 14h6"/></svg></div><div><div class="badge-name">AI Foundations - Level 1</div><div class="desc">Basic concepts of Artificial Intelligence and its applications.</div></div></div></td><td><span class="tag tag-blue">Skill</span></td><td><div class="orgcell"><div class="orglogo" style="color:#12a064"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8"/><path d="M8 12h8M12 8v8"/><path d="M5 5h14"/></svg></div><div class="orgtxt">Artificial Intelligence<br>Foundations</div></div></td><td class="issued">6,842</td><td><span class="tag tag-active">Active</span></td><td class="updated">01 May 2025<br>by Mohammed Al-Mee</td><td class="dots">•••</td></tr>
+            <tr><td><div class="badge-cell"><div class="hex h-purple"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M6 18V9M12 18V5M18 18v-7"/><path d="M5 7h5M11 4h5M17 10h3"/></svg></div><div><div class="badge-name">Data Analytics Essentials</div><div class="desc">Apply data analysis techniques to real-world problems.</div></div></div></td><td><span class="tag tag-green">Achievement</span></td><td><div class="orgcell"><div class="orglogo" style="color:#866b50"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 19h16M6 19V9h3v10M11 19V6h3v13M16 19v-7h3v7"/></svg></div><div class="orgtxt">College of<br>Engineering</div></div></td><td class="issued">3,189</td><td><span class="tag tag-active">Active</span></td><td class="updated">30 Apr 2025<br>by Fatima Al-Kaabi</td><td class="dots">•••</td></tr>
+            <tr><td><div class="badge-cell"><div class="hex h-orange"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="8" r="3"/><path d="M5 20c1.5-4 4-6 7-6s5.5 2 7 6"/><path d="M7 8h10M12 5v6"/></svg></div><div><div class="badge-name">Leadership Excellence</div><div class="desc">Exhibits effective leadership and team collaboration.</div></div></div></td><td><span class="tag tag-orange">Behavior</span></td><td><div class="orgcell"><div class="orglogo" style="color:#3983aa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l7 3v6c0 4-2.7 7-7 9-4.3-2-7-5-7-9V6l7-3Z"/><path d="M12 8v8M9 12h6"/></svg></div><div class="orgtxt">QF Leadership<br>Institute</div></div></td><td class="issued">2,975</td><td><span class="tag tag-active">Active</span></td><td class="updated">28 Apr 2025<br>by Ahmed Al-Hajri</td><td class="dots">•••</td></tr>
+            <tr><td><div class="badge-cell"><div class="hex h-red"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6"><path d="M12 4l7 3v5c0 4-3 7-7 8-4-1-7-4-7-8V7l7-3Z"/><path d="M12 8v7M9 11h6"/></svg></div><div><div class="badge-name">Cybersecurity Awareness</div><div class="desc">Understands key cybersecurity concepts and best practices.</div></div></div></td><td><span class="tag tag-pink">Knowledge</span></td><td><div class="orgcell"><div class="orglogo" style="color:#2671a5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l7 3v6c0 4-2.7 7-7 9-4.3-2-7-5-7-9V6l7-3Z"/><path d="M12 8v8"/></svg></div><div class="orgtxt">IT Security<br>Department</div></div></td><td class="issued">7,431</td><td><span class="tag tag-active">Active</span></td><td class="updated">27 Apr 2025<br>by System</td><td class="dots">•••</td></tr>
+            <tr><td><div class="badge-cell"><div class="hex h-cyan"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M12 4c-2 4-5 6-5 10 0 3 2 5 5 5s5-2 5-5c0-4-3-6-5-10Z"/><path d="M9 15c1-2 2-3 3-4"/></svg></div><div><div class="badge-name">Undergraduate Researcher</div><div class="desc">Successfully completed undergraduate research project.</div></div></div></td><td><span class="tag tag-green">Achievement</span></td><td><div class="orgcell"><div class="orglogo" style="color:#82654b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 18h16M6 18V9h4v9M12 18V7h3v11M17 18v-6h2v6"/></svg></div><div class="orgtxt">Qatar University</div></div></td><td class="issued">5,678</td><td><span class="tag tag-active">Active</span></td><td class="updated">25 Apr 2025<br>by Aisha Al-Emadi</td><td class="dots">•••</td></tr>
+            <tr><td><div class="badge-cell"><div class="hex h-gold"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="12" r="6"/><path d="M12 7v10M7 12h10M9 9l6 6M15 9l-6 6"/></svg></div><div><div class="badge-name">Innovation Thinker</div><div class="desc">Demonstrates creative problem-solving and innovative thinking.</div></div></div></td><td><span class="tag tag-blue">Skill</span></td><td><div class="orgcell"><div class="orglogo" style="color:#bb536a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 20V8h10v12M9 5h6M10 12h4M10 15h4"/></svg></div><div class="orgtxt">QF Innovation Center</div></div></td><td class="issued">3,456</td><td><span class="tag tag-draft">Draft</span></td><td class="updated">20 Apr 2025<br>by Mohammed Al-Mee</td><td class="dots">•••</td></tr>
+            <tr><td><div class="badge-cell"><div class="hex h-gray"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M4 9h16M6 9v9M10 9v9M14 9v9M18 9v9M4 18h16M12 4l8 4H4l8-4Z"/></svg></div><div><div class="badge-name">Orientation Completion</div><div class="desc">Completed student orientation program.</div></div></div></td><td><span class="tag tag-gray">Completion</span></td><td><div class="orgcell"><div class="orglogo" style="color:#82654b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 18h16M6 18V9h4v9M12 18V7h3v11M17 18v-6h2v6"/></svg></div><div class="orgtxt">Qatar University</div></div></td><td class="issued">12,345</td><td><span class="tag tag-active">Active</span></td><td class="updated">18 Apr 2025<br>by System</td><td class="dots">•••</td></tr>
+          </tbody>
+        </table>
+        <div class="table-footer">
+          <span>Showing 1 to 8 of 482 badges</span>
+          <div class="pagination"><span>‹</span><span class="pg active">1</span><span>2</span><span>3</span><span>...</span><span>61</span><span>›</span></div>
+          <div class="rows">Rows per page:<div class="control select rows-select">8 <span>⌄</span></div></div>
+        </div>
+      </div>
+
+      <aside class="right">
+        <div class="card side-card dist">
+          <div class="side-title">Badge Types Distribution</div>
+          <div class="dist-body">
+            <div class="donut"><div class="donut-label"><div><div class="donut-num">482</div><div class="donut-total">Total</div></div></div></div>
+            <div class="legend">
+              <div class="legend-row"><i class="dot l1"></i><span>Achievement</span><b>186 (38.6%)</b></div>
+              <div class="legend-row"><i class="dot l2"></i><span>Skill</span><b>132 (27.4%)</b></div>
+              <div class="legend-row"><i class="dot l3"></i><span>Knowledge</span><b>78 (16.2%)</b></div>
+              <div class="legend-row"><i class="dot l4"></i><span>Behavior</span><b>56 (11.6%)</b></div>
+              <div class="legend-row"><i class="dot l5"></i><span>Completion</span><b>30 (6.2%)</b></div>
+            </div>
+          </div>
+          <div class="side-link">View All Badge Types&nbsp; →</div>
+        </div>
+
+        <div class="card side-card rank">
+          <div class="side-title">Top Badges by Issuance</div>
+          <div class="rank-row"><span class="rank-num">1</span><span class="rank-icon" style="background:#707987"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="m12 3 3 5 5 1-4 4 1 5-5-2-5 2 1-5-4-4 5-1z"/></svg></span><span class="rank-name">Orientation Completion</span><div class="bar"><div class="fill" style="width:100%"></div></div><span class="rank-value">12,345</span></div>
+          <div class="rank-row"><span class="rank-num">2</span><span class="rank-icon" style="background:#d84143"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M12 4l7 3v5c0 4-3 7-7 8-4-1-7-4-7-8V7l7-3Z"/></svg></span><span class="rank-name">Cybersecurity Awareness</span><div class="bar"><div class="fill" style="width:60.2%"></div></div><span class="rank-value">7,431</span></div>
+          <div class="rank-row"><span class="rank-num">3</span><span class="rank-icon" style="background:#1c70b9"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="7" r="2"/><circle cx="7" cy="15" r="2"/><circle cx="17" cy="15" r="2"/></svg></span><span class="rank-name">AI Foundations - Level 1</span><div class="bar"><div class="fill" style="width:55.4%"></div></div><span class="rank-value">6,842</span></div>
+          <div class="rank-row"><span class="rank-num">4</span><span class="rank-icon" style="background:#3996ae"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M5 18V8h14v10M8 5h8M9 12h6"/></svg></span><span class="rank-name">Undergraduate Researcher</span><div class="bar"><div class="fill" style="width:46%"></div></div><span class="rank-value">5,678</span></div>
+          <div class="rank-row"><span class="rank-num">5</span><span class="rank-icon" style="background:#168d6a"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M7 16c3-7 7-9 11-9-1 6-4 10-10 11"/><path d="M7 18c1-3 3-5 6-6"/></svg></span><span class="rank-name">Sustainability Champion</span><div class="bar"><div class="fill" style="width:34.5%"></div></div><span class="rank-value">4,256</span></div>
+        </div>
+
+        <div class="card side-card activity">
+          <div class="activity-head"><div class="side-title" style="margin:0">Recent Activities</div><span class="link">View All</span></div>
+          <div class="activity-row"><div class="activity-icon" style="color:#15926f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 4 6 3v5c0 3.5-2.5 6-6 7-3.5-1-6-3.5-6-7V7l6-3Z"/><path d="m9 12 2 2 4-4"/></svg></div><div><div class="act-name">Badge Created</div><div class="act-sub">Innovation Thinker</div></div><div class="act-time">02 May 2025, 11:20 AM<br>by Aisha Al-Emadi</div></div>
+          <div class="activity-row"><div class="activity-icon" style="color:#ef4347;background:#fff0f0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="5" width="14" height="15" rx="2"/><path d="M8 3v4M16 3v4M5 10h14M9 14l6 3M15 14l-6 3"/></svg></div><div><div class="act-name">Badge Updated</div><div class="act-sub">Data Analytics Essentials</div></div><div class="act-time">02 May 2025, 10:15 AM<br>by Mohammed Al-Mee</div></div>
+          <div class="activity-row"><div class="activity-icon" style="color:#197dd2;background:#eaf4ff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4l6 3v5c0 3.5-2.5 6-6 7-3.5-1-6-3.5-6-7V7l6-3Z"/><path d="M12 8v7M9.5 11h5"/></svg></div><div><div class="act-name">Badge Issued in Bulk</div><div class="act-sub">Cybersecurity Awareness (250 badges)</div></div><div class="act-time">01 May 2025, 04:30 PM<br>by System</div></div>
+          <div class="activity-row"><div class="activity-icon" style="color:#ef4347;background:#fff0f0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="5" width="14" height="15" rx="2"/><path d="M8 3v4M16 3v4M5 10h14M9 14l6 6M15 14l-6 6"/></svg></div><div><div class="act-name">Badge Retired</div><div class="act-sub">Old Leadership Program Badge</div></div><div class="act-time">30 Apr 2025, 02:10 PM<br>by Ahmed Al-Hajri</div></div>
+        </div>
+      </aside>
+    </section>
+  
+    </div>
+  </div>
+
+  <footer class="qfoot">
+    <span>© 2026 Qatar Foundation. All rights reserved.</span>
+    <nav><a href="#">Privacy Policy</a><i>|</i><a href="#">Terms of Use</a><i>|</i><a href="#">Support</a></nav>
+  </footer>
+
+</div>
+
+<script src="../shared/auth.js"></script>
+<script>AdminAuth.requireAuth();</script>
+<script src="../shared/sidebar.js"></script>
+<script>
+document.getElementById('qUserName').textContent = AdminAuth.getName();
+document.getElementById('qUserRole').textContent = AdminAuth.getRole();
+
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+</script>
+<script src="badges-content.js"></script>
+</body>
+</html>

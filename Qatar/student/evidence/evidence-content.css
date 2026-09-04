@@ -1,12 +1,12 @@
-.evi-scope{font-family:Arial,Helvetica,sans-serif;color:#14243d;font-size:16px}
+.evi-scope{color:#14243d}
 .evi-scope{--navy:#10294b;--deep:#004d47;--deep2:#00665e;--green:#07865f;--green2:#079b70;--mint:#eaf7f1;--line:#dfe6eb;--soft:#f5f8f9;--text:#14243d;--muted:#53627a;--blue:#0875d1;--shadow:0 2px 8px rgba(18,42,64,.08)}
 .evi-scope button, .evi-scope input, .evi-scope textarea{font:inherit}
 .evi-scope button{cursor:pointer}
-.evi-scope .content{padding:30px 34px 39px 36px;max-width:1766px;margin:auto}
+.evi-scope .content{padding:0 34px 39px 36px;max-width:1766px;margin:auto}
 .evi-scope .back{display:inline-flex;align-items:center;gap:10px;color:#102d52;text-decoration:none;font-size:14px;font-weight:700;margin-bottom:20px}
 .evi-scope .back svg{width:18px;height:18px;stroke:#102d52;fill:none;stroke-width:1.7}
-.evi-scope .title{font-size:34px;line-height:1.05;margin:0;color:#102b4e;font-weight:700}
-.evi-scope .subtitle{font-size:16px;color:#30425d;margin:13px 0 26px}
+.evi-scope .title{margin:0}
+.evi-scope .subtitle{color:#30425d;margin:13px 0 26px}
 .evi-scope .stepper{display:flex;align-items:center;width:100%;max-width:1070px;margin:0 0 23px 0;padding:0 0 0 1px}
 .evi-scope .step{display:flex;align-items:center;flex:1 1 0;min-width:0}
 .evi-scope .step-circle{width:53px;height:53px;min-width:53px;border-radius:50%;display:grid;place-items:center;flex:none;background:#edf1f6;color:#29415e;font-size:17px;font-weight:700}
@@ -103,7 +103,7 @@
 .evi-scope .right-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .evi-scope .right-card{margin-bottom:0}}
 @media(max-width:850px){
-.evi-scope .content{padding:25px 21px}
+.evi-scope .content{padding:0 21px 25px}
 .evi-scope .stepper{width:100%;max-width:none;overflow-x:auto;padding:0 9px 0 1px}
 .evi-scope .step{min-width:236px;flex:0 0 205px}
 .evi-scope .step-line{width:21px;min-width:21px;margin:0 9px}
