@@ -6,6 +6,7 @@
 <title>Universal Skills Passport – Qatar Foundation</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="student.css">
+<link rel="stylesheet" href="../../shared/typography.css">
 </head>
 <body>
 <div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
@@ -87,9 +88,9 @@
     <button class="qnav" data-view="passport">
       <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2.5"/><line x1="1" y1="10" x2="23" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg>My Passport</button>
     <button class="qnav" data-view="skills" onclick="window.location.href='../skills/index.html'">
-      <svg viewBox="0 0 24 24"><polygon points="12 2 21 7.5 21 16.5 12 22 3 16.5 3 7.5"/><polyline points="3 7.5 12 13 21 7.5"/><line x1="12" y1="13" x2="12" y2="22"/></svg>My Skills</button>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 21 7.5 21 16.5 12 22 3 16.5 3 7.5"/><polyline points="3 7.5 12 13 21 7.5"/><line x1="12" y1="13" x2="12" y2="22"/></svg>My Competencies</button>
     <button class="qnav" data-view="skillgap" onclick="window.location.href='../skillgap/index.html'">
-      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/></svg>Skill Gap</button>
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/></svg>Skill Gap Analysis</button>
     <button class="qnav" data-view="opportunities" onclick="window.location.href='../opportunities/index.html'">
       <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Opportunities</button>
     <button class="qnav" data-view="pathways">
@@ -192,11 +193,11 @@
     <!-- ===== 4-column row ===== -->
     <div class="row4">
 
-      <!-- My Skills -->
+      <!-- My Competencies -->
       <div class="qcard">
-        <div class="qch"><h3>My Skills</h3><button class="qall">View all<svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button></div>
+        <div class="qch"><h3>My Competencies</h3><button class="qall">View all<svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button></div>
         <div class="skill-list">
-          <div class="skill-row">
+          <div class="skill-row" style="cursor:pointer" onclick="window.location.href='../skills/index.html'">
             <span class="skill-ic green"><svg viewBox="0 0 24 24"><polygon points="12 2 21 7.5 21 16.5 12 22 3 16.5 3 7.5"/><polyline points="3 7.5 12 13 21 7.5"/><line x1="12" y1="13" x2="12" y2="22"/></svg></span>
             <div class="skill-main">
               <div class="skill-top"><span class="skill-name">Systems Thinking</span><span class="skill-level">Level 3</span></div>
@@ -274,7 +275,7 @@
 
       <!-- Recent Achievements -->
       <div class="qcard">
-        <div class="qch"><h3>Recent Achievements</h3><button class="qall">View all<svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button></div>
+        <div class="qch"><h3>Recent Badges</h3><button class="qall">View all<svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button></div>
         <div class="ach-list">
           <div class="ach-row">
             <span class="ach-hex green"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><polyline points="8.2 13.5 7 22 12 19 17 22 15.8 13.5"/></svg></span>

@@ -1,0 +1,149 @@
+/* Badges & Credentials Management — adapted from the provided "exact"
+   template (admin_badges_credentials_clone_fixed.html). Scoped under
+   .adm-badges-scope so it can't leak into the shared shell or other
+   Admin pages. The template's own header (.topbar/.brand/.search/
+   .profile) is dropped here — the page uses the shared .qtop from
+   admin-shell.css instead. Font-family follows the centralized
+   typography.css; this page keeps its own dense 12px baseline, same
+   pattern as the other Admin sections. */
+.adm-badges-scope{font-size:12px;color:#16284c}
+.adm-badges-scope{--navy:#0e224a;--navy2:#132953;--green:#006b52;--green2:#007d61;--green-soft:#dff2eb;--line:#e3e8ef;--muted:#64728b;--text:#16284c;--blue:#2383dc;--red:#ed3840}
+.adm-badges-scope button,.adm-badges-scope input,.adm-badges-scope select{font:inherit}
+.adm-badges-scope svg{display:block}
+
+.adm-badges-scope .head-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.adm-badges-scope h1{font-size:20px;line-height:24px;margin:0;color:#122650;font-weight:760;letter-spacing:-.35px}
+.adm-badges-scope .sub{font-size:11px;color:#243a61;margin-top:5px}
+.adm-badges-scope .actions{display:flex;gap:10px}
+.adm-badges-scope .btn{height:35px;border-radius:6px;border:1px solid #d9e0e8;background:#fff;color:#12294f;padding:0 15px;font-size:11px;font-weight:700;display:flex;align-items:center;gap:9px;cursor:pointer}
+.adm-badges-scope .btn.primary{background:#006d53;color:#fff;border-color:#006d53;min-width:205px;justify-content:space-between;padding-left:16px;padding-right:8px}
+.adm-badges-scope .btn.primary .split{height:35px;border-left:1px solid rgba(255,255,255,.25);display:grid;place-items:center;width:31px}
+.adm-badges-scope .btn svg{width:15px;height:15px}
+
+.adm-badges-scope .metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-bottom:18px}
+.adm-badges-scope .metric{height:91px;min-width:0;border:1px solid #e2e7ee;border-radius:7px;display:flex;align-items:center;padding:13px 14px;box-shadow:0 1px 3px rgba(25,47,75,.025);overflow:hidden}
+.adm-badges-scope .metric-icon{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;margin-right:15px;flex:none}
+.adm-badges-scope .metric-icon svg{width:27px;height:27px}
+.adm-badges-scope .mi-green{background:#e2f4ee;color:#078466}
+.adm-badges-scope .mi-blue{background:#e5f1ff;color:#1682df}
+.adm-badges-scope .mi-orange{background:#fff0df;color:#f39b38}
+.adm-badges-scope .mi-purple{background:#f0e8fa;color:#8b4bc8}
+.adm-badges-scope .mi-red{background:#fde7e8;color:#ec4049}
+.adm-badges-scope .metric-text{min-width:0}
+.adm-badges-scope .metric-label{font-size:10px;color:#243a60;margin-bottom:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.adm-badges-scope .metric-text>div:nth-child(2){white-space:nowrap}
+.adm-badges-scope .metric-number{font-size:22px;font-weight:750;color:#122650;letter-spacing:-.5px;display:inline-block}
+.adm-badges-scope .metric-growth{font-size:10px;margin-left:9px;font-weight:700}
+.adm-badges-scope .up{color:#008564}
+.adm-badges-scope .down{color:#ef303a}
+.adm-badges-scope .metric-foot{font-size:9px;color:#4c5e7c;margin-top:5px;text-align:right}
+
+.adm-badges-scope .filters{height:78px;border:1px solid #e1e6ed;border-radius:7px;padding:16px 14px;display:flex;align-items:center;gap:21px;margin-bottom:9px}
+.adm-badges-scope .field{display:flex;flex-direction:column;gap:5px}
+.adm-badges-scope .field.search-field{width:365px}
+.adm-badges-scope .field.status{width:158px}
+.adm-badges-scope .field.type{width:148px}
+.adm-badges-scope .field.org{width:165px}
+.adm-badges-scope .field label{font-size:9px;color:#1d3155;font-weight:650}
+.adm-badges-scope .control{height:32px;border:1px solid #dce3eb;border-radius:5px;background:#fff;display:flex;align-items:center;padding:0 10px;font-size:10px;color:#253858}
+.adm-badges-scope .search-control{justify-content:space-between;color:#4d5f7c;cursor:text}
+.adm-badges-scope .select{justify-content:space-between;font-weight:600;cursor:pointer}
+.adm-badges-scope .more{margin-top:15px;height:32px;padding:0 12px;font-size:10px}
+.adm-badges-scope .clear{margin-top:15px;border:0;background:none;color:#0078c8;font-size:10px;font-weight:700;padding:0;cursor:pointer}
+
+.adm-badges-scope .content{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:14px;align-items:start}
+.adm-badges-scope .card{border:1px solid #e2e7ee;border-radius:7px;background:#fff;overflow:hidden;min-width:0}
+.adm-badges-scope .table-card{min-width:0}
+.adm-badges-scope .card-title{height:39px;display:flex;align-items:center;justify-content:space-between;padding:0 14px;font-size:12px;font-weight:750;color:#111d38}
+.adm-badges-scope .link{color:#087bd0;font-size:10px;font-weight:650;display:flex;align-items:center;gap:6px;cursor:pointer}
+.adm-badges-scope .table{width:100%;max-width:100%;border-collapse:collapse;table-layout:fixed}
+.adm-badges-scope .table th{height:30px;background:#f7f8fa;border-top:1px solid #edf0f4;border-bottom:1px solid #e6eaf0;text-align:left;padding:0 13px;font-size:9px;color:#263756;font-weight:700}
+.adm-badges-scope .table td{height:62px;border-bottom:1px solid #e9edf2;padding:7px 12px;vertical-align:middle;font-size:9.5px;color:#243756;overflow:hidden}
+.adm-badges-scope .table th:nth-child(1){width:26.5%}
+.adm-badges-scope .table th:nth-child(2){width:10.5%}
+.adm-badges-scope .table th:nth-child(3){width:18%}
+.adm-badges-scope .table th:nth-child(4){width:8.5%}
+.adm-badges-scope .table th:nth-child(5){width:9%}
+.adm-badges-scope .table th:nth-child(6){width:15%}
+.adm-badges-scope .table th:nth-child(7){width:6.5%}
+.adm-badges-scope .badge-cell{display:flex;align-items:center;gap:10px}
+.adm-badges-scope .hex{width:34px;height:38px;flex:none;display:grid;place-items:center;clip-path:polygon(50% 0%,92% 25%,92% 75%,50% 100%,8% 75%,8% 25%);color:#fff}
+.adm-badges-scope .hex svg{width:20px;height:20px}
+.adm-badges-scope .h-green{background:#198e6c}
+.adm-badges-scope .h-blue{background:#0d73c4}
+.adm-badges-scope .h-purple{background:#7250c4}
+.adm-badges-scope .h-orange{background:#ed842c}
+.adm-badges-scope .h-red{background:#dd3b3e}
+.adm-badges-scope .h-cyan{background:#1f9ba8}
+.adm-badges-scope .h-gold{background:#ce8c15}
+.adm-badges-scope .h-gray{background:#737b89}
+.adm-badges-scope .badge-name{font-size:9.5px;font-weight:750;color:#132750;margin-bottom:3px}
+.adm-badges-scope .desc{font-size:8.3px;line-height:11px;color:#4e607d;max-width:225px}
+.adm-badges-scope .tag{display:inline-flex;align-items:center;height:19px;padding:0 8px;border-radius:4px;font-size:8.5px;font-weight:700}
+.adm-badges-scope .tag-green{background:#e1f4ed;color:#11725b}
+.adm-badges-scope .tag-blue{background:#e4f1ff;color:#2479c4}
+.adm-badges-scope .tag-orange{background:#fff0df;color:#e97815}
+.adm-badges-scope .tag-pink{background:#fde6eb;color:#d83b61}
+.adm-badges-scope .tag-gray{background:#eef1f5;color:#465a78}
+.adm-badges-scope .tag-active{background:#dcf2e9;color:#08735a}
+.adm-badges-scope .tag-draft{background:#e4f0ff;color:#2776c0}
+.adm-badges-scope .orgcell{display:flex;align-items:center;gap:8px}
+.adm-badges-scope .orglogo{width:22px;height:22px;border-radius:4px;display:grid;place-items:center;flex:none}
+.adm-badges-scope .orglogo svg{width:19px;height:19px}
+.adm-badges-scope .orgtxt{font-size:8.5px;line-height:11px}
+.adm-badges-scope .issued{font-size:9.5px;font-weight:600;color:#18315a}
+.adm-badges-scope .updated{font-size:8.5px;line-height:12px}
+.adm-badges-scope .dots{font-size:13px;font-weight:800;letter-spacing:1px;color:#0d2148;white-space:nowrap;text-align:center;cursor:pointer}
+.adm-badges-scope .table-footer{height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 14px;min-width:0;font-size:9px;color:#233a61}
+.adm-badges-scope .pagination{display:flex;align-items:center;gap:18px}
+.adm-badges-scope .pg{width:32px;height:30px;border-radius:5px;display:grid;place-items:center;font-size:9px;font-weight:700;cursor:pointer}
+.adm-badges-scope .pg.active{background:#006b52;color:#fff}
+.adm-badges-scope .rows{display:flex;align-items:center;gap:8px}
+.adm-badges-scope .rows .select{height:30px;width:58px}
+
+.adm-badges-scope .right{display:flex;flex-direction:column;gap:9px}
+.adm-badges-scope .side-card{padding:12px 13px}
+.adm-badges-scope .side-title{font-size:11.5px;font-weight:760;color:#172642;margin-bottom:11px}
+.adm-badges-scope .dist{height:176px}
+.adm-badges-scope .dist-body{display:flex;align-items:center;justify-content:space-between}
+.adm-badges-scope .donut{width:132px;height:132px;border-radius:50%;position:relative;background:conic-gradient(#3e91e1 0 38.6%,#2e70b7 38.6% 66%,#d95d8e 66% 82.2%,#ed896b 82.2% 93.8%,#8e68c5 93.8% 100%);transform:rotate(-3deg)}
+.adm-badges-scope .donut:after{content:"";position:absolute;inset:23px;border-radius:50%;background:#fff}
+.adm-badges-scope .donut-label{position:absolute;z-index:2;inset:0;display:grid;place-items:center;text-align:center;transform:rotate(3deg)}
+.adm-badges-scope .donut-num{font-size:20px;font-weight:800;line-height:19px}
+.adm-badges-scope .donut-total{font-size:8px;font-weight:600;margin-top:1px}
+.adm-badges-scope .legend{width:180px;display:flex;flex-direction:column;gap:12px}
+.adm-badges-scope .legend-row{display:grid;grid-template-columns:9px 1fr auto;gap:8px;align-items:center;font-size:8.5px;color:#314361}
+.adm-badges-scope .dot{width:7px;height:7px;border-radius:50%}
+.adm-badges-scope .l1{background:#3e91e1}
+.adm-badges-scope .l2{background:#2e70b7}
+.adm-badges-scope .l3{background:#d95d8e}
+.adm-badges-scope .l4{background:#ed896b}
+.adm-badges-scope .l5{background:#8e68c5}
+.adm-badges-scope .side-link{margin-top:7px;color:#0878c9;font-size:9px;font-weight:700;cursor:pointer}
+.adm-badges-scope .rank{height:186px;overflow:hidden}
+.adm-badges-scope .rank-row{display:grid;grid-template-columns:17px 22px minmax(0,1fr) 134px 45px;align-items:center;gap:7px;margin:7px 0;height:22px}
+.adm-badges-scope .rank-num{font-size:8px;color:#263858;font-weight:700}
+.adm-badges-scope .rank-icon{width:21px;height:21px;border-radius:50%;display:grid;place-items:center;color:#fff}
+.adm-badges-scope .rank-icon svg{width:13px;height:13px}
+.adm-badges-scope .rank-name{font-size:8.5px;font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.adm-badges-scope .bar{height:3px;background:#e7ebef;border-radius:3px;overflow:hidden;min-width:0}
+.adm-badges-scope .fill{height:100%;background:#1384d7;border-radius:3px}
+.adm-badges-scope .rank-value{text-align:right;font-size:8.5px;font-weight:700;color:#1c477f}
+.adm-badges-scope .activity{min-height:211px}
+.adm-badges-scope .activity-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.adm-badges-scope .activity-row{display:grid;grid-template-columns:27px 1fr 96px;gap:7px;align-items:start;margin:10px 0}
+.adm-badges-scope .activity-icon{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#e9f5f0}
+.adm-badges-scope .activity-icon svg{width:14px;height:14px}
+.adm-badges-scope .act-name{font-size:8.5px;font-weight:750;color:#14284e;line-height:11px}
+.adm-badges-scope .act-sub{font-size:8px;color:#314563;line-height:11px}
+.adm-badges-scope .act-time{text-align:right;font-size:8px;color:#314563;line-height:11px}
+.adm-badges-scope .act-time b{font-weight:500}
+
+@media(max-width:1250px){
+.adm-badges-scope .content{grid-template-columns:minmax(0,1fr) 350px}
+.adm-badges-scope .field.search-field{width:300px}
+.adm-badges-scope .legend{width:165px}
+}
+@media(max-width:1100px){
+.adm-badges-scope .content{grid-template-columns:1fr}
+}
