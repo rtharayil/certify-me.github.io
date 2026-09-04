@@ -30,7 +30,7 @@
 .opp-scope .hero-info{padding:17px 0 9px;flex:1}
 .opp-scope .recommend{display:inline-block;background:#008f67;color:#fff;border-radius:6px;padding:6px 9px;font-size:10px;font-weight:700;margin-bottom:10px}
 .opp-scope .hero-title{font-size:25px;font-weight:700;color:#101b2b;margin:0 0 10px}
-.opp-scope .hero-desc{font-size:15px;line-height:1.9;color:#233a57}
+.opp-scope .hero-desc{font-size:15px;line-height:1.55;color:#233a57}
 .opp-scope .meta{display:flex;gap:32px;align-items:flex-start;margin-top:21px;flex-wrap:wrap}
 .opp-scope .meta-item{display:flex;align-items:center;gap:9px;font-size:13px;color:#172b47;white-space:nowrap}
 .opp-scope .meta-item svg{width:20px;height:20px;stroke:#142d4e;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
