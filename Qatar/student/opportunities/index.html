@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Opportunity Details – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../Home/student.css">
+<link rel="stylesheet" href="../../shared/typography.css">
+<link rel="stylesheet" href="opportunities-content.css">
+</head>
+<body class="dm">
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<div id="dw" class="active">
+
+<!-- ===== sidebar (same shell as student.html) ===== -->
+<aside class="qsb" id="qsb">
+  <div class="qsb-brand">
+    <span class="qsb-logo"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation"></span>
+  </div>
+
+  <nav class="qsb-nav">
+    <button class="qnav" data-view="home" onclick="window.location.href='../Home/student.html'">
+      <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</button>
+    <button class="qnav" data-view="passport">
+      <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2.5"/><line x1="1" y1="10" x2="23" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg>My Passport</button>
+    <button class="qnav" data-view="skills" onclick="window.location.href='../skills/index.html'">
+      <svg viewBox="0 0 24 24"><polygon points="12 2 21 7.5 21 16.5 12 22 3 16.5 3 7.5"/><polyline points="3 7.5 12 13 21 7.5"/><line x1="12" y1="13" x2="12" y2="22"/></svg>My Competencies</button>
+    <button class="qnav" data-view="skillgap" onclick="window.location.href='../skillgap/index.html'">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/></svg>Skill Gap Analysis</button>
+    <button class="qnav active" data-view="opportunities">
+      <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Opportunities</button>
+    <button class="qnav" data-view="pathways" onclick="window.location.href='../pathways/index.html'">
+      <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.7"/><circle cx="6" cy="12" r="2.7"/><circle cx="18" cy="19" r="2.7"/><line x1="8.4" y1="10.6" x2="15.6" y2="6.6"/><line x1="8.4" y1="13.4" x2="15.6" y2="17.4"/></svg>Learning Pathways</button>
+    <button class="qnav" data-view="evidence" onclick="window.location.href='../evidence/index.html'">
+      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>My Evidence</button>
+    <button class="qnav" data-view="achievements" onclick="window.location.href='../achievements/index.html'">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><polyline points="8.2 13.5 7 22 12 19 17 22 15.8 13.5"/></svg>Achievements</button>
+    <button class="qnav" data-view="messages">
+      <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2.5"/><polyline points="2.5 6 12 13 21.5 6"/></svg>Messages</button>
+  </nav>
+
+  <div class="qsb-help">
+    <button class="qnav" onclick="st('Help & Support coming soon')">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Help &amp; Support</button>
+  </div>
+</aside>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <h1 class="qtitle">Universal Skills Passport</h1>
+    <div class="qtop-actions">
+      <button class="qicon-btn" onclick="st('Search coming soon')" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="qicon-btn" onclick="st('3 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>3</b>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg></span>
+          <span class="qui"><b id="qUserName">Sara Al Mansoori</b><span>Engineering Student</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>My Profile</button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>Settings</button>
+          <hr>
+          <button type="button" class="qout" onclick="logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+    <div class="opp-scope">
+
+<div class="container">
+
+  <div class="heading">
+    <div>
+      <h1>Opportunity Details</h1>
+      <p class="sub">Explore this opportunity and how it helps you build the skills you need.</p>
+    </div>
+
+    <div class="actions">
+      <button class="action" id="saveBtn">
+        <svg viewBox="0 0 24 24">
+          <path d="M6 4h12v16l-6-3-6 3z"/>
+        </svg>
+        <span>Save Opportunity</span>
+      </button>
+
+      <button class="action apply" id="applyBtn">
+        Apply Now
+        <svg viewBox="0 0 24 24">
+          <path d="M14 5h5v5M19 5l-8 8"/>
+          <path d="M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <!-- LEFT CONTENT -->
+    <section class="left">
+
+      <div class="card hero">
+        <img class="hero-image" src="../../Assets/reco-sustainability.png" alt="Sustainability workshop">
+
+        <div class="hero-info">
+          <div class="recommend">RECOMMENDED FOR YOU</div>
+
+          <h2 class="hero-title">
+            QF Sustainability Foundations Workshop
+          </h2>
+
+          <div class="hero-desc">
+            Build core understanding of sustainability concepts and frameworks through interactive sessions and real-world examples.
+          </div>
+
+          <div class="meta">
+
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24">
+                <rect x="4" y="5" width="16" height="15" rx="1"/>
+                <path d="M8 3v4M16 3v4M4 9h16"/>
+              </svg>
+              20 May 2025
+            </div>
+
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="8"/>
+                <path d="M12 7v5l3 2"/>
+              </svg>
+              1 Day
+            </div>
+
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 21s7-6.2 7-12A7 7 0 0 0 5 9c0 5.8 7 12 7 12Z"/>
+                <circle cx="12" cy="9" r="2.3"/>
+              </svg>
+              QF Education City
+            </div>
+
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="7" r="3"/>
+                <path d="M5 21a7 7 0 0 1 14 0"/>
+              </svg>
+              Open to all QF<br>students
+            </div>
+
+          </div>
+
+          <div class="offered">
+            Offered by
+            <span class="qf">QF</span>
+            <strong>QF Sustainability Program</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card section competencies">
+        <div class="section-title">Competencies You Will Develop</div>
+        <div class="section-desc">
+          This opportunity will help you strengthen the following competencies.
+        </div>
+
+        <div class="comp-list">
+
+          <div class="comp">
+            <div class="hex green">
+              <svg viewBox="0 0 24 24">
+                <path d="m12 3 7 4v10l-7 4-7-4V7z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <div>
+              <div class="comp-name">Sustainability</div>
+            </div>
+          </div>
+
+          <div class="comp">
+            <div class="hex blue">
+              <svg viewBox="0 0 24 24">
+                <circle cx="7" cy="12" r="2.5"/>
+                <circle cx="17" cy="7" r="2.5"/>
+                <circle cx="17" cy="17" r="2.5"/>
+                <path d="m9.5 10.8 5.2-2.4M9.5 13.2l5.2 2.4"/>
+              </svg>
+            </div>
+            <div>
+              <div class="comp-name">Systems Thinking</div>
+            </div>
+          </div>
+
+          <div class="comp">
+            <div class="hex teal">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 7h3a1 1 0 0 0 1-1V5a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-1a2 2 0 0 0-4 0v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a2 2 0 0 0 0-4H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="comp-name">Problem Solving</div>
+            </div>
+          </div>
+
+          <div class="comp">
+            <div class="hex purple">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 6h14v10H5z"/>
+                <path d="m8 20 4-4 4 4"/>
+              </svg>
+            </div>
+            <div>
+              <div class="comp-name">Communication</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mapping">
+          View all mapped competencies <b>→</b>
+        </div>
+      </div>
+
+      <div class="card section evidence">
+        <div class="section-title">Evidence You Will Provide</div>
+        <div class="section-desc">
+          Submit the following evidence to get your competencies verified.
+        </div>
+
+        <div class="evlist">
+
+          <div class="ev">
+            <div class="evicon">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 3h9l3 3v15H6z"/>
+                <path d="M14 3v5h5M9 12h6M9 16h6"/>
+              </svg>
+            </div>
+            <div>
+              <div class="evname">Project Report</div>
+              <div class="evtext">
+                Short report on sustainability challenge and solution.
+              </div>
+            </div>
+          </div>
+
+          <div class="ev">
+            <div class="evicon">
+              <svg viewBox="0 0 24 24">
+                <rect x="4" y="5" width="16" height="13" rx="1"/>
+                <path d="M8 21h8M12 18v3M9 9h6"/>
+              </svg>
+            </div>
+            <div>
+              <div class="evname">Presentation</div>
+              <div class="evtext">
+                Slides or video presenting your approach and insights.
+              </div>
+            </div>
+          </div>
+
+          <div class="ev">
+            <div class="evicon">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 4h12v16H6z"/>
+                <path d="M9 8h6M9 12h6M9 16h4"/>
+              </svg>
+            </div>
+            <div>
+              <div class="evname">Reflection</div>
+              <div class="evtext">
+                Personal reflection on learning and impact.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card section verification">
+        <div class="section-title">Verification</div>
+        <div class="section-desc">
+          Your evidence will be reviewed and verified by the QF Sustainability Program team.
+        </div>
+
+        <div class="verify">
+
+          <div class="verify-item">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3 5 7v5c0 5 3 8 7 9 4-1 7-4 7-9V7z"/>
+              <path d="m9 12 2 2 4-5"/>
+            </svg>
+            Verifier
+          </div>
+
+          <div class="verify-item">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3 20 7v6c0 4-3 7-8 8-5-1-8-4-8-8V7z"/>
+            </svg>
+            QF Sustainability Program
+          </div>
+
+          <div class="verify-item">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 4h14v16H5z"/>
+              <path d="M9 9h6M9 13h6"/>
+            </svg>
+            Verification Method
+          </div>
+
+          <div class="verify-item">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3 19 6v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/>
+              <path d="m9 12 2 2 4-5"/>
+            </svg>
+            Rubric-based Assessment
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RIGHT CONTENT -->
+    <aside class="right">
+
+      <div class="card details">
+
+        <div class="detail">
+          <svg viewBox="0 0 24 24">
+            <rect x="4" y="5" width="16" height="15" rx="1"/>
+            <path d="M8 3v4M16 3v4M4 9h16"/>
+          </svg>
+          <span class="label">Application Deadline</span>
+          <span class="value">18 May 2025</span>
+        </div>
+
+        <div class="detail">
+          <svg viewBox="0 0 24 24">
+            <rect x="4" y="5" width="16" height="15" rx="1"/>
+            <path d="M8 3v4M16 3v4M4 9h16"/>
+          </svg>
+          <span class="label">Start Date</span>
+          <span class="value">20 May 2025</span>
+        </div>
+
+        <div class="detail">
+          <svg viewBox="0 0 24 24">
+            <rect x="4" y="6" width="16" height="11" rx="1"/>
+            <path d="M8 20h8M12 17v3"/>
+          </svg>
+          <span class="label">Format</span>
+          <span class="value">In-person</span>
+        </div>
+
+        <div class="detail">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="8"/>
+            <path d="M12 7v5l3 2"/>
+          </svg>
+          <span class="label">Time Commitment</span>
+          <span class="value">1 Day (8 Hours)</span>
+        </div>
+
+        <div class="detail">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 7h12M7 7v12h10V7M9 4h6v3"/>
+          </svg>
+          <span class="label">Seats Available</span>
+          <span class="value">42 / 60</span>
+        </div>
+
+        <div class="detail">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 19V9M9 19V5M14 19v-8M19 19V3"/>
+          </svg>
+          <span class="label">Level</span>
+          <span class="value">Beginner to Intermediate</span>
+        </div>
+
+        <div class="detail">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3 19 7v5c0 4-3 7-7 9-4-2-7-5-7-9V7z"/>
+            <path d="m9 12 2 2 4-5"/>
+          </svg>
+          <span class="label">Certificate / Badge</span>
+          <span class="value">Yes <b style="color:#009a69">✓</b></span>
+        </div>
+
+      </div>
+
+      <div class="card rec">
+        <div class="rec-title">
+          ✣ &nbsp;Why this opportunity is recommended for you
+        </div>
+
+        <div class="checkline">
+          <span class="check">✓</span>
+          Helps you build key competencies needed for your goal.
+        </div>
+
+        <div class="checkline">
+          <span class="check">✓</span>
+          Aligned with your interests in sustainability and impact.
+        </div>
+
+        <div class="checkline">
+          <span class="check">✓</span>
+          Complements your current skills and learning journey.
+        </div>
+
+        <div class="checkline">
+          <span class="check">✓</span>
+          Highly rated by students who took this opportunity.
+        </div>
+      </div>
+
+      <div class="card next">
+        <div class="next-title">What happens next?</div>
+
+        <div class="next-grid">
+
+          <div class="timeline">
+
+            <div class="tl">
+              <div class="num">1</div>
+              <div>
+                <div class="tl-title">Apply for this opportunity</div>
+                <div class="tl-text">
+                  Submit your application before 18 May 2025.
+                </div>
+              </div>
+            </div>
+
+            <div class="tl">
+              <div class="num">2</div>
+              <div>
+                <div class="tl-title">Participate &amp; complete</div>
+                <div class="tl-text">
+                  Attend the workshop and complete activities.
+                </div>
+              </div>
+            </div>
+
+            <div class="tl">
+              <div class="num">3</div>
+              <div>
+                <div class="tl-title">Submit your evidence</div>
+                <div class="tl-text">
+                  Upload your report, presentation and reflection.
+                </div>
+              </div>
+            </div>
+
+            <div class="tl">
+              <div class="num">4</div>
+              <div>
+                <div class="tl-title">Get verified &amp; earn badge</div>
+                <div class="tl-text">
+                  Receive verified competencies and your digital badge.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="badge-show">
+            <div class="badge-circle">
+              <svg viewBox="0 0 64 64">
+                <path d="M32 7 48 13v15c0 10-7 18-16 23-9-5-16-13-16-23V13z"/>
+                <path d="m25 29 5 5 10-11"/>
+                <path d="M22 45v13l10-6 10 6V45"/>
+              </svg>
+            </div>
+            <div class="badge-name">Earn Digital Badge</div>
+            <div class="badge-small">
+              Verified by<br>
+              QF Sustainability Program
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <div class="card learn">
+    <div class="bulb">💡</div>
+
+    <div class="learn-main">
+      <div class="learn-title">What you'll learn</div>
+      <div class="learn-desc">
+        Explore sustainability concepts, systems thinking, and practical
+        frameworks to create positive environmental and social impact.
+      </div>
+    </div>
+
+    <div class="tags">
+      <span class="pill">Sustainability Concepts</span>
+      <span class="pill">Systems &amp; Impact Thinking</span>
+      <span class="pill">Local &amp; Global Challenges</span>
+      <span class="pill">Solutions &amp; Innovation</span>
+      <span class="pill">Real-world Applications</span>
+    </div>
+  </div>
+
+</div>
+    </div>
+  </div>
+
+  <footer class="qfoot">
+    <span>© 2026 Qatar Foundation. All rights reserved.</span>
+    <nav><a href="#">Privacy Policy</a><i>|</i><a href="#">Terms of Use</a><i>|</i><a href="#">Support</a></nav>
+  </footer>
+
+</div>
+</div>
+
+<script>
+try{const n=localStorage.getItem('qfName');if(n)document.getElementById('qUserName').textContent=n}catch(e){}
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+function logout(){try{localStorage.removeItem('qfLoggedIn');localStorage.removeItem('qfName')}catch(e){}window.location.href='../Home/student.html'}
+
+document.querySelectorAll('.qsb-nav .qnav, .qsb-help .qnav').forEach(b=>{
+  b.addEventListener('click',function(){
+    const v=this.dataset.view;
+    if(!v||v==='opportunities')return;
+    document.getElementById('qsb').classList.remove('open');
+    if(v==='home'){window.location.href='../Home/student.html';return}
+    if(v==='achievements'||v==='evidence'||v==='home'||v==='skillgap'||v==='skills'||v==='pathways')return;
+    st(this.textContent.trim()+' — coming soon');
+  });
+});
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+</script>
+<script src="opportunities.js"></script>
+</body>
+</html>

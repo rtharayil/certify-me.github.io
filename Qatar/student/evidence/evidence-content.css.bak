@@ -1,0 +1,201 @@
+.evi-scope{font-family:Arial,Helvetica,sans-serif;color:#14243d;font-size:14px}
+.evi-scope{
+  --navy:#10294b;
+  --deep:#004d47;
+  --deep2:#00665e;
+  --green:#07865f;
+  --green2:#079b70;
+  --mint:#eaf7f1;
+  --line:#dfe6eb;
+  --soft:#f5f8f9;
+  --text:#14243d;
+  --muted:#53627a;
+  --blue:#0875d1;
+  --shadow:0 2px 8px rgba(18,42,64,.08);
+}
+.evi-scope button, .evi-scope input, .evi-scope textarea{font:inherit}
+.evi-scope button{cursor:pointer}
+.evi-scope .content{padding:26px 30px 34px 31px;max-width:1536px;margin:auto}
+.evi-scope .back{display:inline-flex;align-items:center;gap:9px;color:#102d52;text-decoration:none;font-size:12px;font-weight:700;margin-bottom:17px}
+.evi-scope .back svg{width:16px;height:16px;stroke:#102d52;fill:none;stroke-width:1.7}
+.evi-scope .title{font-size:30px;line-height:1.05;margin:0;color:#102b4e;font-weight:700}
+.evi-scope .subtitle{font-size:14px;color:#30425d;margin:11px 0 23px}
+.evi-scope .stepper{
+  display:flex;
+  align-items:center;
+  width:100%;
+  max-width:930px;
+  margin:0 0 20px 0;
+  padding:0 0 0 1px;
+}
+.evi-scope .step{
+  display:flex;
+  align-items:center;
+  flex:1 1 0;
+  min-width:0;
+}
+.evi-scope .step-circle{
+  width:46px;
+  height:46px;
+  min-width:46px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  flex:none;
+  background:#edf1f6;
+  color:#29415e;
+  font-size:15px;
+  font-weight:700;
+}
+.evi-scope .step-circle.done{
+  background:#e2f5e9;
+  color:#07935f;
+  box-shadow:0 0 0 7px rgba(226,245,233,.58);
+}
+.evi-scope .step-circle.current{
+  background:#00675e;
+  color:#fff;
+}
+.evi-scope .step-circle svg{
+  width:25px;
+  height:25px;
+  stroke:currentColor;
+  fill:none;
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.evi-scope .step-text{
+  margin-left:12px;
+  min-width:0;
+}
+.evi-scope .step-title{
+  font-size:11px;
+  line-height:1.2;
+  font-weight:700;
+  color:#112b4c;
+  white-space:nowrap;
+}
+.evi-scope .step-status{
+  font-size:11px;
+  line-height:1.2;
+  color:#1e3350;
+  margin-top:6px;
+  white-space:nowrap;
+}
+.evi-scope .step-line{
+  height:1px;
+  background:#55998e;
+  width:30px;
+  min-width:30px;
+  margin:0 17px;
+}
+.evi-scope .grid{display:grid;grid-template-columns:minmax(700px,868px) 355px;gap:42px;align-items:start}
+.evi-scope .card{
+  border:1px solid var(--line);border-radius:10px;background:#fff;box-shadow:var(--shadow);
+}
+.evi-scope .opportunity{height:109px;display:flex;align-items:center;padding:17px 18px;margin-bottom:16px}
+.evi-scope .work-img{width:77px;height:74px;border-radius:5px;object-fit:cover;flex:none}
+.evi-scope .op-main{margin-left:18px;flex:1;min-width:0}
+.evi-scope .op-title{font-size:15px;font-weight:700;color:#111d31;margin-bottom:12px}
+.evi-scope .offered{font-size:11px;color:#394b65;display:flex;align-items:center;gap:10px}
+.evi-scope .program-icon{width:22px;height:22px;border-radius:6px;background:#0a9b63;display:grid;place-items:center;color:white;font-size:11px;font-weight:bold}
+.evi-scope .op-meta{height:67px;border-left:1px solid #e2e7eb;padding-left:28px;display:flex;flex-direction:column;justify-content:center;min-width:185px}
+.evi-scope .op-meta:first-of-type{border-left:0}
+.evi-scope .meta-row{display:flex;align-items:center;gap:11px;font-size:11px;color:#31425e;margin:3px 0}
+.evi-scope .meta-row svg{width:17px;height:17px;stroke:#173557;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.evi-scope .meta-label{font-size:10px;color:#5b6980;margin-bottom:3px}
+.evi-scope .competency{border-left:1px solid #e2e7eb;padding-left:29px;width:220px}
+.evi-scope .comp-label{font-size:10px;color:#5b6980;margin-bottom:9px}
+.evi-scope .comp-name{font-size:12px;font-weight:700;color:#142238;margin-bottom:10px}
+.evi-scope .level{display:flex;align-items:center;gap:8px;font-size:10px;color:#30415b}
+.evi-scope .level span{background:#e7f3ff;color:#0b72d0;padding:5px 9px;border-radius:4px;font-weight:700}
+.evi-scope .upload-card{padding:19px 19px 13px;background:linear-gradient(135deg,#fbfefd 0%,#f1f8f6 100%);margin-bottom:16px}
+.evi-scope .upload-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px}
+.evi-scope .section-title{font-size:15px;font-weight:700;color:#172335}
+.evi-scope .section-desc{font-size:11px;color:#465875;margin-top:6px}
+.evi-scope .upload-btn{
+  border:0;background:#006b60;color:#fff;border-radius:6px;padding:10px 16px;
+  font-size:12px;font-weight:700;display:flex;align-items:center;gap:8px;
+}
+.evi-scope .upload-btn:hover{background:#005a51}
+.evi-scope .upload-btn svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:1.6}
+.evi-scope .file-list{background:#fff;border:1px solid #e4e8ec;border-radius:7px;overflow:hidden}
+.evi-scope .file-row{height:47px;border-bottom:1px solid #e7ebee;display:flex;align-items:center;padding:0 12px}
+.evi-scope .file-row:last-child{border-bottom:0}
+.evi-scope .file-icon{width:31px;height:31px;border-radius:7px;display:grid;place-items:center;margin-right:12px}
+.evi-scope .file-icon svg{width:19px;height:19px;fill:none;stroke:#fff;stroke-width:1.5}
+.evi-scope .pdf{background:#ee4c4c}
+.evi-scope .ppt{background:#f58b27}
+.evi-scope .mp4{background:#4b9ce6}
+.evi-scope .docx{background:#8f5ac8}
+.evi-scope .file-info{width:52%;min-width:280px}
+.evi-scope .file-name{font-size:11px;font-weight:700;color:#1a2940}
+.evi-scope .file-size{font-size:10px;color:#465875;margin-top:3px}
+.evi-scope .file-date{font-size:10px;color:#30425e;line-height:1.35;margin-left:auto;width:150px}
+.evi-scope .file-actions{display:flex;gap:22px;width:55px;justify-content:flex-end}
+.evi-scope .file-actions button{border:0;background:transparent;padding:2px}
+.evi-scope .file-actions svg{width:17px;height:17px;stroke:#112b4c;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.evi-scope .upload-footer{display:flex;justify-content:space-between;align-items:center;padding-top:14px;font-size:10px;color:#334661}
+.evi-scope .upload-count{color:#006e59;font-weight:700}
+.evi-scope .reflection{padding:17px 18px 18px;margin-bottom:14px}
+.evi-scope .reflection .section-desc{margin-top:7px}
+.evi-scope textarea{
+  width:100%;height:91px;margin-top:9px;border:1px solid #d8e0e6;border-radius:7px;
+  resize:none;padding:11px 10px;font-size:11px;color:#33445d;outline:none;
+}
+.evi-scope textarea:focus{border-color:#0a8a73;box-shadow:0 0 0 2px rgba(10,138,115,.08)}
+.evi-scope .text-bottom{text-align:right;font-size:10px;color:#64738a;margin-top:-19px;margin-right:11px;position:relative;pointer-events:none}
+.evi-scope .submit-wrap{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin-top:0}
+.evi-scope .submit{
+  width:185px;height:35px;border:0;border-radius:5px;background:#00665c;color:#fff;font-size:11px;font-weight:700;
+  display:flex;justify-content:center;align-items:center;gap:12px;
+}
+.evi-scope .submit:hover{background:#00574f}
+.evi-scope .submit svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.evi-scope .secure{display:flex;justify-content:flex-end;align-items:center;gap:9px;font-size:10px;color:#40516a;margin-top:12px}
+.evi-scope .secure svg{width:15px;height:15px;stroke:#1c3656;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.evi-scope .right-card{border:1px solid #dfe5e9;border-radius:9px;background:#fff;box-shadow:var(--shadow);padding:18px 18px;margin-bottom:16px}
+.evi-scope .right-title{font-size:14px;font-weight:700;color:#121b2b;margin-bottom:12px}
+.evi-scope .about{min-height:196px}
+.evi-scope .about-top{display:flex;gap:14px}
+.evi-scope .comp-badge{
+  width:50px;height:50px;border-radius:13px;background:#1384d4;display:grid;place-items:center;flex:none;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)
+}
+.evi-scope .comp-badge svg{width:29px;height:29px;stroke:#fff;fill:none;stroke-width:1.45;stroke-linecap:round;stroke-linejoin:round}
+.evi-scope .about-name{font-size:14px;font-weight:700;margin:3px 0 9px}
+.evi-scope .about-text{font-size:11px;line-height:1.65;color:#3e506b}
+.evi-scope .link{display:inline-flex;align-items:center;gap:8px;color:#0571cf;text-decoration:none;font-size:11px;font-weight:700;margin-top:17px}
+.evi-scope .link svg{width:15px;height:15px;stroke:#0571cf;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.evi-scope .rubric{padding-bottom:12px}
+.evi-scope .rubric-intro{font-size:11px;line-height:1.55;color:#41516a;margin-top:-5px;margin-bottom:16px}
+.evi-scope .criterion{display:grid;grid-template-columns:31px 1fr 30px;column-gap:9px;margin-bottom:17px}
+.evi-scope .crit-icon{width:30px;height:30px;border-radius:50%;background:#e0f5eb;display:grid;place-items:center}
+.evi-scope .crit-icon.blue{background:#e5f3ff}
+.evi-scope .crit-icon svg{width:16px;height:16px;stroke:#0a8a63;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.evi-scope .crit-icon.blue svg{stroke:#1b85c9}
+.evi-scope .crit-name{font-size:11px;font-weight:700;color:#1a273a;margin-top:1px}
+.evi-scope .crit-desc{font-size:10px;line-height:1.45;color:#43536b;margin-top:5px}
+.evi-scope .percent{text-align:right;font-size:10px;font-weight:700;color:#075d50}
+.evi-scope .progress{grid-column:2/4;height:5px;background:#edf0f2;border-radius:5px;margin-top:7px;overflow:hidden}
+.evi-scope .progress i{display:block;height:100%;background:#079967;border-radius:5px;width:25%}
+.evi-scope .tips{padding-bottom:15px}
+.evi-scope .tip{display:flex;align-items:flex-start;gap:9px;margin:11px 0;font-size:10px;color:#33455f}
+.evi-scope .check{width:18px;height:18px;border-radius:50%;background:#d8f1e5;display:grid;place-items:center;flex:none}
+.evi-scope .check svg{width:12px;height:12px;stroke:#07935f;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.evi-scope #fileInput{display:none}
+@media(max-width:1150px){
+.evi-scope .grid{grid-template-columns:1fr}
+.evi-scope .right-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.evi-scope .right-card{margin-bottom:0}
+}
+@media(max-width:850px){
+.evi-scope .content{padding:22px 18px}
+.evi-scope .stepper{width:100%;max-width:none;overflow-x:auto;padding:0 8px 0 1px}
+.evi-scope .step{min-width:205px;flex:0 0 205px}
+.evi-scope .step-line{width:18px;min-width:18px;margin:0 8px}
+.evi-scope .opportunity{height:auto;flex-wrap:wrap;gap:15px}
+.evi-scope .op-meta,
+.evi-scope .competency{border-left:0;padding-left:0;width:auto;min-width:0}
+}
