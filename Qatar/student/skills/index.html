@@ -31,7 +31,7 @@
       <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/></svg>Skill Gap Analysis</button>
     <button class="qnav" data-view="opportunities" onclick="window.location.href='../opportunities/index.html'">
       <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Opportunities</button>
-    <button class="qnav" data-view="pathways">
+    <button class="qnav" data-view="pathways" onclick="window.location.href='../pathways/index.html'">
       <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.7"/><circle cx="6" cy="12" r="2.7"/><circle cx="18" cy="19" r="2.7"/><line x1="8.4" y1="10.6" x2="15.6" y2="6.6"/><line x1="8.4" y1="13.4" x2="15.6" y2="17.4"/></svg>Learning Pathways</button>
     <button class="qnav" data-view="evidence" onclick="window.location.href='../evidence/index.html'">
       <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>My Evidence</button>
@@ -267,7 +267,7 @@ document.querySelectorAll('.qsb-nav .qnav, .qsb-help .qnav').forEach(b=>{
     if(!v||v==='skills')return;
     document.getElementById('qsb').classList.remove('open');
     if(v==='home'){window.location.href='../Home/student.html';return}
-    if(v==='achievements'||v==='evidence'||v==='home'||v==='opportunities'||v==='skillgap')return;
+    if(v==='achievements'||v==='evidence'||v==='home'||v==='opportunities'||v==='skillgap'||v==='pathways')return;
     st(this.textContent.trim()+' — coming soon');
   });
 });
