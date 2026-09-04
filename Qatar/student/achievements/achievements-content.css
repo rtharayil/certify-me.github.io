@@ -1,6 +1,8 @@
-.ach-scope{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#122922;font-size:16px;-webkit-font-smoothing:antialiased}
+.ach-scope{color:#122922;-webkit-font-smoothing:antialiased}
 .ach-scope{--ink:#082622;--navy:#0b3a30;--muted:#5c6b66;--muted2:#7c8b86;--line:#e6eaea;--green:#0a7a52;--green2:#0d8a5c;--green-dark:#04352d;--mint:#d9f7ea;--mint-text:#0f7350;--mint-bg:#f3faf7;--blue:#2f7fe0;--blue-bg:#e6f0fd;--purple:#7a52d6;--purple-bg:#efe7fb;--orange:#ee9d0d;--orange-bg:#fdeecb}
 .ach-scope a{color:inherit;text-decoration:none}
+.ach-scope button,.ach-scope input,.ach-scope textarea{font:inherit}
+.ach-scope button{cursor:pointer}
 .ach-scope img{display:block}
 .ach-scope svg{display:block}
 .ach-scope /* ---------- CONTENT ---------- */
@@ -8,8 +10,8 @@
 .ach-scope .main{padding:30px 37px 51px}
 .ach-scope .back{display:flex;align-items:center;gap:7px;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:16px}
 .ach-scope .back svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2}
-.ach-scope h1{font-size:32px;line-height:1.15;margin:0 0 7px;font-weight:800;color:var(--ink);letter-spacing:-.3px}
-.ach-scope .sub{font-size:16px;color:var(--muted);margin-bottom:23px}
+.ach-scope h1{margin:0 0 7px}
+.ach-scope .sub{color:var(--muted);margin-bottom:23px}
 .ach-scope .layout{display:grid;grid-template-columns:minmax(0,1fr) 372px;gap:25px;align-items:start}
 .ach-scope .left,
 .ach-scope .right{min-width:0;display:flex;flex-direction:column;gap:23px}
@@ -107,6 +109,7 @@
 .ach-scope .cred-band-logo b{font-size:10px;font-weight:800;line-height:1.15;display:block;letter-spacing:.2px}
 .ach-scope .cred-band span.right{font-size:11px;font-weight:700}
 .ach-scope .cred-body{padding:18px 16px 51px;display:flex;gap:14px}
+.ach-scope .cred-text{padding-right:62px}
 .ach-scope .cred-medal{width:60px;height:64px;flex:none;position:relative}
 .ach-scope .cred-medal .medal{width:60px;height:57px}
 .ach-scope .cred-medal .medal svg{width:25px;height:25px}

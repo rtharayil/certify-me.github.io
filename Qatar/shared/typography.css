@@ -1,0 +1,38 @@
+/* Shared typography — single source of truth for font-family/size/weight
+   across the Home dashboard and every section page (skills, evidence,
+   opportunities, skillgap, achievements). Load this file in every page's
+   <head>, after the Google Fonts <link> and before the page's own
+   "-content.css". Section stylesheets must not redeclare font-family or
+   base font-size on their scope wrapper — they inherit both from here. */
+
+body{
+  font-family:'DM Sans',sans-serif;
+  font-size:14px;
+}
+
+/* Page title (the single <h1> inside each section's content area, e.g.
+   "Systems Thinking", "Submit Evidence", "Skill Gap Analysis"). Does not
+   affect .qtitle ("Universal Skills Passport" in the top header), which
+   is styled by its own higher-specificity class rule. */
+h1{
+  font-family:inherit;
+  font-weight:700;
+  font-size:30px;
+  line-height:1.15;
+  letter-spacing:-.4px;
+  color:var(--qink);
+}
+
+/* Page subtitle — the one-line description directly under each page's
+   h1 ("Compare your current skills...", "Submit your evidence...").
+   Each section names this element differently in its own markup, so it
+   has to be targeted by its actual class per page; the value itself
+   lives only here. */
+.sk-scope .desc,
+.evi-scope .subtitle,
+.ach-scope .sub,
+.opp-scope .sub,
+.qsg-scope .subtitle{
+  font-size:16px;
+  line-height:1.5;
+}

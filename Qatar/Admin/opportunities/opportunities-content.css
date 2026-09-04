@@ -1,0 +1,149 @@
+/* Opportunities Management — adapted from the provided "exact" template
+   (opportunities_management_exact_images_fixed.html). Scoped under
+   .adm-opp-scope so it can't leak into the shared shell or other Admin
+   pages. The template's own header (.top/.brand/.right/.bell/.user) is
+   dropped here — the page uses the shared .qtop from admin-shell.css
+   instead. Font-family follows the centralized typography.css; this
+   page keeps its own dense 12px baseline, same pattern as the
+   dashboard section. */
+.adm-opp-scope{font-size:12px;color:#10223f}
+.adm-opp-scope button{font:inherit}
+.adm-opp-scope img{image-rendering:auto}
+
+.adm-opp-scope .main{padding:18px 24px 22px}
+.adm-opp-scope .head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px}
+.adm-opp-scope h1{font-size:20px;line-height:24px;margin:0 0 6px;color:#081e43}
+.adm-opp-scope .head p{margin:0;font-size:11px;color:#53617b}
+.adm-opp-scope .buttons{display:flex;gap:14px}
+.adm-opp-scope .btn{height:36px;border:1px solid #dce3ea;background:#fff;border-radius:5px;padding:0 14px;display:flex;align-items:center;gap:8px;font-size:11px;font-weight:600;cursor:pointer}
+.adm-opp-scope .btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8}
+.adm-opp-scope .primary{background:#00644e;color:#fff;border-color:#00644e;min-width:201px;justify-content:space-between;padding-right:0}
+.adm-opp-scope .primary .drop{height:36px;width:40px;border-left:1px solid #ffffff33;display:grid;place-items:center}
+
+.adm-opp-scope .stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-bottom:16px}
+.adm-opp-scope .stat{height:91px;min-width:0;border:1px solid #e2e8ef;border-radius:6px;display:flex;align-items:center;padding:0 12px;overflow:hidden}
+.adm-opp-scope .stat>div:last-child{min-width:0}
+.adm-opp-scope .ico{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;margin-right:17px;flex:none;overflow:hidden}
+.adm-opp-scope .ico img{width:52px;height:52px;display:block;object-fit:cover}
+.adm-opp-scope .g{background:#e8f5f0;color:#087357}
+.adm-opp-scope .b{background:#eaf3ff;color:#1173d1}
+.adm-opp-scope .o{background:#fff2db;color:#ef9200}
+.adm-opp-scope .p{background:#f1eaff;color:#7545d1}
+.adm-opp-scope .r{background:#ffe9ec;color:#e82e49}
+.adm-opp-scope .sl{font-size:10.5px;color:#33435e;margin-bottom:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.adm-opp-scope .sv{font-size:18px;font-weight:700;color:#061b40;line-height:18px;margin-bottom:6px}
+.adm-opp-scope .delta{font-size:9.5px;color:#58667e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.adm-opp-scope .up{color:#087b58;font-weight:600}
+.adm-opp-scope .red{color:#ef334b;font-weight:600}
+
+.adm-opp-scope .filter{height:69px;border:1px solid #e2e8ef;border-radius:6px;padding:11px;display:flex;align-items:center;gap:15px;margin-bottom:10px}
+.adm-opp-scope .search{height:35px;flex:1;max-width:433px;border:1px solid #d9e1ea;border-radius:5px;display:flex;align-items:center;padding:0 10px}
+.adm-opp-scope .search input{border:0;outline:0;flex:1;font-size:10.5px;font-family:inherit}
+.adm-opp-scope .search svg,.adm-opp-scope .sel svg,.adm-opp-scope .more svg{width:15px;height:15px;fill:none;stroke:#11294b;stroke-width:1.7}
+.adm-opp-scope .selectbox{position:relative;width:151px}
+.adm-opp-scope .selectbox.cat,.adm-opp-scope .selectbox.org{width:156px}
+.adm-opp-scope .selectbox label{position:absolute;top:-15px;font-size:9px}
+.adm-opp-scope .sel{height:35px;border:1px solid #d9e1ea;border-radius:5px;display:flex;align-items:center;justify-content:space-between;padding:0 10px;font-size:10px;font-weight:600;cursor:pointer}
+.adm-opp-scope .more{height:35px;border:1px solid #d9e1ea;border-radius:5px;background:white;padding:0 10px;display:flex;align-items:center;gap:8px;font-size:10px;font-weight:600;white-space:nowrap;cursor:pointer}
+.adm-opp-scope .clear{border:0;background:transparent;color:#006ee6;font-size:10px;font-weight:600;cursor:pointer}
+
+.adm-opp-scope .mid{display:grid;grid-template-columns:minmax(650px,2.05fr) minmax(330px,.9fr);gap:14px}
+.adm-opp-scope .card{border:1px solid #e1e7ee;border-radius:6px;background:#fff;overflow:hidden}
+.adm-opp-scope .table{height:402px}
+.adm-opp-scope .ctitle{height:38px;border-bottom:1px solid #e3e8ee;display:flex;align-items:center;padding:0 15px;font-weight:700;font-size:12px}
+.adm-opp-scope .thead,.adm-opp-scope .tr{display:grid;grid-template-columns:2.05fr 1.3fr 1fr .9fr .75fr .9fr .9fr .35fr;align-items:center;padding:0 15px}
+.adm-opp-scope .thead{height:31px;background:#f8fafc;font-size:9px}
+.adm-opp-scope .tr{height:53px;border-bottom:1px solid #e9edf2;font-size:9.5px}
+.adm-opp-scope .opp{display:flex;align-items:center;gap:9px}
+.adm-opp-scope .thumb{width:39px;height:40px;border-radius:5px;object-fit:cover}
+.adm-opp-scope .oname{font-size:10px;font-weight:600;line-height:15px}
+.adm-opp-scope .tag{display:inline-block;margin-top:1px;padding:2px 5px;border-radius:3px;font-size:7.5px;font-weight:600}
+.adm-opp-scope .tag.green{background:#e5f6ef;color:#057354}
+.adm-opp-scope .tag.blue{background:#e8f3ff;color:#006ee6}
+.adm-opp-scope .orgc{display:flex;align-items:center;gap:7px;line-height:13px}
+.adm-opp-scope .ologo{width:20px;height:20px;display:grid;place-items:center;flex:none}
+.adm-opp-scope .orgimg{width:22px;height:22px;object-fit:contain;display:block;flex:none}
+.adm-opp-scope .qf{background:#00815e;clip-path:polygon(50% 0,90% 23%,90% 77%,50% 100%,10% 77%,10% 23%);color:white;border-radius:2px}
+.adm-opp-scope .uni,.adm-opp-scope .col{font-size:18px;color:#a58c70}
+.adm-opp-scope .inn{font-size:17px;color:#0066a0}
+.adm-opp-scope .part{font-size:16px;color:#66ad7b}
+.adm-opp-scope .pill{display:inline-flex;padding:4px 10px;border-radius:5px;font-size:8.5px;font-weight:600}
+.adm-opp-scope .competition{background:#e8f3ff;color:#0069db}
+.adm-opp-scope .research{background:#f0e7ff;color:#6841c5}
+.adm-opp-scope .workshop{background:#fff0e5;color:#df650b}
+.adm-opp-scope .bootcamp{background:#fff1db;color:#c76c00}
+.adm-opp-scope .mentorship{background:#ffe8ed;color:#d52e4c}
+.adm-opp-scope .active{background:#e4f5ee;color:#08765a}
+.adm-opp-scope .upcoming{background:#e8f1ff;color:#3177cc}
+.adm-opp-scope .dots{font-size:17px;letter-spacing:2px;cursor:pointer}
+.adm-opp-scope .pager{height:53px;display:flex;align-items:center;justify-content:space-between;padding:0 15px;font-size:9px;color:#4d5f7a}
+.adm-opp-scope .pages{display:flex;gap:14px;align-items:center}
+.adm-opp-scope .pg{width:28px;height:28px;display:grid;place-items:center;border-radius:4px;cursor:pointer}
+.adm-opp-scope .pg.active{background:#005c4b;color:#fff}
+.adm-opp-scope .rows{display:flex;align-items:center;gap:8px}
+.adm-opp-scope .rows select{height:29px;width:60px;border:1px solid #dce3eb;border-radius:4px;font-family:inherit}
+
+.adm-opp-scope .stack{display:grid;grid-template-rows:194px 208px;gap:10px}
+.adm-opp-scope .stitle{height:37px;padding:0 15px;display:flex;align-items:center;font-size:11px;font-weight:700}
+.adm-opp-scope .view{margin-left:auto;color:#006ee6;font-size:8.5px;cursor:pointer}
+.adm-opp-scope .catbody{height:156px;display:flex;align-items:center;padding:0 13px 5px 22px;gap:24px}
+.adm-opp-scope .donut{width:145px;height:145px;border-radius:50%;flex:none;position:relative;background:conic-gradient(#1474d4 0 27.6%,#a37ce0 27.6% 41.1%,#0c8666 41.1% 59.1%,#f59a24 59.1% 77%,#7463c3 77% 90.4%,#df6570 90.4% 96%,#aeb8c6 96% 100%);transform:rotate(-90deg)}
+.adm-opp-scope .donut:after{content:"";position:absolute;inset:44px;background:#fff;border-radius:50%}
+.adm-opp-scope .center{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(90deg)}
+.adm-opp-scope .center b{font-size:18px}
+.adm-opp-scope .center span{font-size:9px}
+.adm-opp-scope .legend{display:flex;flex-direction:column;gap:11px;font-size:9px;min-width:143px}
+.adm-opp-scope .lr{display:grid;grid-template-columns:9px 1fr auto;gap:6px}
+.adm-opp-scope .dot{width:7px;height:7px;border-radius:50%;margin-top:2px}
+.adm-opp-scope .dgreen{background:#0c8666}
+.adm-opp-scope .dblue{background:#1474d4}
+.adm-opp-scope .dorange{background:#f28a17}
+.adm-opp-scope .dpurp{background:#7463c3}
+.adm-opp-scope .dred{background:#df6570}
+.adm-opp-scope .dgray{background:#aeb8c6}
+.adm-opp-scope .orglist{padding:0 14px 7px}
+.adm-opp-scope .orgrow{height:34px;display:grid;grid-template-columns:23px 25px 1fr 43px;align-items:center;font-size:9px}
+.adm-opp-scope .orgname{line-height:12px}
+.adm-opp-scope .orgname span{display:block;color:#53637b;font-size:8px}
+.adm-opp-scope .pct{text-align:right;font-size:8px}
+
+.adm-opp-scope .bottom{display:grid;grid-template-columns:1.04fr .9fr 1.1fr;gap:14px;margin-top:10px}
+.adm-opp-scope .bottom .card{height:224px}
+.adm-opp-scope .btitle{height:38px;display:flex;align-items:center;padding:0 15px;font-weight:700;font-size:11px}
+.adm-opp-scope .report{margin-left:auto;color:#006ee6;font-size:8.5px;cursor:pointer}
+.adm-opp-scope .appbody{display:flex;height:182px;padding:4px 15px 14px}
+.adm-opp-scope .chart{flex:1}
+.adm-opp-scope .chart svg{width:100%;height:154px}
+.adm-opp-scope .appstats{width:125px;padding:3px 0 0 12px}
+.adm-opp-scope .total{font-size:19px;font-weight:700}
+.adm-opp-scope .caption{font-size:9px;margin-bottom:5px}
+.adm-opp-scope .growth{font-size:8.5px;color:#087b58;font-weight:600;margin-bottom:14px}
+.adm-opp-scope .metric{display:flex;justify-content:space-between;padding:8px 0;border-top:1px solid #edf0f3;font-size:9px}
+.adm-opp-scope .statusbody{height:182px;display:flex;align-items:center;padding:4px 13px}
+.adm-opp-scope .sdonut{width:132px;height:132px;border-radius:50%;background:conic-gradient(#0d8765 0 45.5%,#1775d5 45.5% 67.3%,#9d76e2 67.3% 90.4%,#aeb7c4 90.4% 100%);position:relative;transform:rotate(-90deg);flex:none}
+.adm-opp-scope .sdonut:after{content:"";position:absolute;inset:39px;background:#fff;border-radius:50%}
+.adm-opp-scope .slegend{margin-left:18px;display:flex;flex-direction:column;gap:15px;font-size:9px;min-width:132px}
+.adm-opp-scope .sr{display:grid;grid-template-columns:9px 1fr auto;gap:7px}
+.adm-opp-scope .activity{padding:3px 15px 12px}
+.adm-opp-scope .arow{display:grid;grid-template-columns:23px 31px 1fr 126px;align-items:center;min-height:38px}
+.adm-opp-scope .arank{font-size:9px;color:#425673}
+.adm-opp-scope .aicon{width:28px;height:28px;border-radius:50%;display:grid;place-items:center}
+.adm-opp-scope .aicon img{width:28px;height:28px;display:block;object-fit:cover;border-radius:50%}
+.adm-opp-scope .aig{background:#e8f7f0;color:#0a8060}
+.adm-opp-scope .air{background:#ffecef;color:#ee3953}
+.adm-opp-scope .aib{background:#eaf3ff;color:#1772d0}
+.adm-opp-scope .at{font-size:9.5px;font-weight:700}
+.adm-opp-scope .as{font-size:8.5px;color:#53627a}
+.adm-opp-scope .time{text-align:right;font-size:8.5px;line-height:13px}
+
+.adm-opp-scope .opp-footnote{height:31px;display:flex;align-items:center;justify-content:center;gap:7px;color:#4b5d77;font-size:8.5px}
+.adm-opp-scope .opp-footnote svg{width:14px;height:14px;fill:none;stroke:#243a5a;stroke-width:1.6}
+
+@media(max-width:1250px){
+.adm-opp-scope .stats{grid-template-columns:repeat(3,1fr)}
+.adm-opp-scope .mid{grid-template-columns:minmax(620px,1fr) 320px}
+}
+@media(max-width:1100px){
+.adm-opp-scope .bottom{grid-template-columns:1fr}
+.adm-opp-scope .mid{grid-template-columns:1fr}
+}

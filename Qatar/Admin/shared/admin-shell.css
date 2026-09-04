@@ -1,0 +1,94 @@
+/* Admin shell — sidebar, top bar, page frame.
+   Reused verbatim from the student portal's dashboard shell
+   (Qatar/student/Home/student.css) so both portals share one
+   visual language. Only addition: .qnav-group / .qnav-group-label
+   for the sectioned admin menu (PLATFORM / INSIGHTS / CONFIGURATION),
+   which the student sidebar doesn't need since it's a flat list.
+
+   Load this file after typography.css on every Admin page:
+   <link rel="stylesheet" href="../../shared/typography.css">
+   <link rel="stylesheet" href="../shared/admin-shell.css">
+*/
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+:root{--qg900:#052E1B;--qg800:#0A3D28;--qg700:#0C4A30;--qg600:#0F5C39;--qg500:#157A4A;--qg400:#2E9C6B;--qink:#12261C;--qbody:#5C6B64;--qmut:#8CA098;--qline:#E7ECEA;--qcard:#fff;--qpg:#F6F8F7;--qgold:#C8A233;--qamber:#C97C10;--qamberbg:#FDF0DC;--qok:#177A49;--qokbg:#E4F2EA;--qred:#E24C4C;--qbluebg:#EAF1FB;--qblue:#2B6CB0;--qrad:14px;--qrads:10px;--qgap:20px;--qsw:240px;--qtb:76px}
+
+body{background:var(--qpg);display:block;min-height:100vh}
+
+/* ---------- toast ---------- */
+.toast{position:fixed;top:24px;right:24px;padding:14px 22px;background:var(--qg500);color:#fff;border-radius:12px;font-size:13.5px;font-weight:500;box-shadow:0 8px 30px rgba(26,92,58,.3);transform:translateX(120%);transition:transform .4s cubic-bezier(.22,1,.36,1);z-index:1000;display:flex;align-items:center;gap:10px}
+.toast.show{transform:translateX(0)}
+.toast svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- sidebar ---------- */
+.qsb{position:fixed;top:0;left:0;bottom:0;width:var(--qsw);z-index:60;display:flex;flex-direction:column;background:linear-gradient(180deg,#073A25 0%,#052E1D 55%,#031F14 100%);transition:transform .3s cubic-bezier(.4,0,.2,1)}
+.qsb::after{content:'';position:absolute;left:0;right:0;bottom:0;height:360px;z-index:-1;pointer-events:none;background:url("../../Assets/sidebar-motif.png") bottom center / 100% auto no-repeat;opacity:.7}
+.qsb-brand{flex-shrink:0;padding:22px 20px;border-bottom:1px solid rgba(255,255,255,.08);display:flex;justify-content:center;align-items:center}
+.qsb-logo{width:130px;height:130px;flex-shrink:0}
+.qsb-logo img{width:100%;height:100%;object-fit:contain;display:block;filter:brightness(0) invert(1)}
+
+.qsb-nav{flex:1;display:flex;flex-direction:column;gap:2px;padding:14px 12px;overflow-y:auto;overflow-x:hidden}
+.qsb-nav::-webkit-scrollbar{width:0}
+.qnav-group-label{flex-shrink:0;margin:14px 14px 6px;font-size:10.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:rgba(255,255,255,.38)}
+.qnav-group:first-child .qnav-group-label{margin-top:4px}
+.qnav{flex-shrink:0;display:flex;align-items:center;gap:13px;width:100%;padding:11px 14px;border:none;border-radius:10px;background:transparent;font-family:'DM Sans',sans-serif;font-size:14.5px;font-weight:500;color:rgba(255,255,255,.78);text-align:left;cursor:pointer;transition:background .2s,color .2s}
+.qnav svg{width:19px;height:19px;flex-shrink:0;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.qnav:hover{background:rgba(255,255,255,.08);color:#fff}
+.qnav.active{background:#F4FAF7;color:var(--qg800);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+
+.qsb-help{flex-shrink:0;padding:12px;border-top:1px solid rgba(255,255,255,.08)}
+.qsb-help .qnav.active{background:transparent;color:rgba(255,255,255,.78);font-weight:500;box-shadow:none}
+
+/* ---------- main column ---------- */
+.qmain{margin-left:var(--qsw);min-height:100vh;display:flex;flex-direction:column}
+
+/* ---------- top bar ---------- */
+.qtop{flex-shrink:0;min-height:var(--qtb);display:flex;align-items:center;gap:16px;padding:0 32px;background:#fff;border-bottom:1px solid var(--qline)}
+.qburger{display:none;padding:6px;margin-right:4px;background:none;border:none;cursor:pointer}
+.qburger svg{width:23px;height:23px;stroke:var(--qink);fill:none;stroke-width:2;stroke-linecap:round}
+.qtitle{flex:1;font-family:'DM Sans',sans-serif;font-size:23px;font-weight:700;color:var(--qink);letter-spacing:-.2px;display:flex;align-items:center;gap:12px}
+.qtitle-pill{font-size:11px;font-weight:600;color:var(--qg700);background:var(--qokbg);border:1px solid #cde7dc;border-radius:6px;padding:5px 10px;letter-spacing:0}
+.qtop-actions{display:flex;align-items:center;gap:6px}
+.qicon-btn{position:relative;width:40px;height:40px;display:grid;place-items:center;background:none;border:none;border-radius:10px;cursor:pointer;transition:background .2s}
+.qicon-btn:hover{background:var(--qpg)}
+.qicon-btn svg{width:21px;height:21px;stroke:var(--qink);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.qicon-btn b{position:absolute;top:6px;right:6px;min-width:15px;height:15px;padding:0 3px;border-radius:8px;background:var(--qg500);color:#fff;font-size:9.5px;font-weight:700;display:grid;place-items:center;border:2px solid #fff}
+.qdiv-v{width:1px;height:28px;background:var(--qline);margin:0 6px}
+.quser{position:relative}
+.quser-trigger{display:flex;align-items:center;gap:10px;padding:6px 8px 6px 6px;border-radius:12px;background:none;border:none;cursor:pointer;transition:background .2s;font-family:'DM Sans',sans-serif}
+.quser-trigger:hover{background:var(--qpg)}
+.qava{width:38px;height:38px;border-radius:50%;flex-shrink:0;overflow:hidden;display:grid;place-items:center;background:linear-gradient(140deg,#DCEBE2,#C4E0D0);color:var(--qg700)}
+.qava svg{width:22px;height:22px;stroke:var(--qg600);fill:none;stroke-width:1.6}
+.qui{display:flex;flex-direction:column;align-items:flex-start;line-height:1.25;white-space:nowrap}
+.qui b{font-size:14px;font-weight:700;color:var(--qink)}
+.qui span{font-size:12px;color:var(--qmut)}
+svg.qchev{width:16px;height:16px;stroke:var(--qmut);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;transition:transform .2s}
+.quser.open svg.qchev{transform:rotate(180deg)}
+.qumenu{position:absolute;top:calc(100% + 8px);right:0;min-width:180px;background:#fff;border:1px solid var(--qline);border-radius:12px;box-shadow:0 12px 32px rgba(16,40,28,.14);padding:6px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:.18s;z-index:80}
+.quser.open .qumenu{opacity:1;visibility:visible;transform:translateY(0)}
+.qumenu button{width:100%;display:flex;align-items:center;gap:10px;padding:9px 10px;border:none;background:none;border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:13.5px;font-weight:500;color:var(--qink);text-align:left}
+.qumenu button svg{width:16px;height:16px;stroke:var(--qbody);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.qumenu button:hover{background:var(--qpg)}
+.qumenu button.qout{color:var(--qred)}
+.qumenu button.qout svg{stroke:var(--qred)}
+.qumenu hr{border:none;border-top:1px solid var(--qline);margin:5px 2px}
+
+/* ---------- content frame ---------- */
+.qboard{flex:1;display:flex;flex-direction:column;gap:var(--qgap);padding:22px 32px 0}
+
+/* ---------- footer ---------- */
+.qfoot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:20px 32px;margin-top:var(--qgap);font-size:12.5px;color:var(--qmut)}
+.qfoot nav{display:flex;align-items:center;gap:10px}
+.qfoot a{color:var(--qmut);text-decoration:none;transition:.2s}
+.qfoot a:hover{color:var(--qg500)}
+.qfoot i{font-style:normal;color:var(--qline)}
+
+@media(max-width:860px){
+.qsb{transform:translateX(-100%)}
+.qsb.open{transform:translateX(0);box-shadow:4px 0 24px rgba(0,0,0,.18)}
+.qmain{margin-left:0}
+.qburger{display:flex}
+.qtitle{font-size:19px}
+.qui{display:none}
+.qboard,.qtop{padding-left:18px;padding-right:18px}
+}

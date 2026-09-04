@@ -1,12 +1,12 @@
-.opp-scope{font-family:Arial,Helvetica,sans-serif;color:#17243a;font-size:16px}
+.opp-scope{color:#17243a}
 .opp-scope{--green:#087e6e;--green-dark:#00665d;--navy:#102b4e;--text:#17243a;--muted:#50627a;--line:#dfe6ea;--shadow:0 2px 8px rgba(24,48,72,.08)}
 .opp-scope button, .opp-scope a{font-family:inherit}
-.opp-scope .container{width:100%;max-width:1771px;margin:auto;padding:29px 34px 34px}
+.opp-scope .container{width:100%;max-width:1771px;margin:auto;padding:0 34px 34px}
 .opp-scope .back{display:flex;align-items:center;gap:9px;text-decoration:none;color:#102e52;font-size:14px;font-weight:700;margin-bottom:20px}
 .opp-scope .back svg{width:18px;height:18px;stroke:#102e52;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .opp-scope .heading{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px}
-.opp-scope h1{font-size:34px;line-height:1;margin:0;color:#102c50}
-.opp-scope .sub{font-size:16px;color:#334761;margin:12px 0 0}
+.opp-scope h1{margin:0}
+.opp-scope .sub{color:#334761;margin:12px 0 0}
 .opp-scope .actions{display:flex;gap:12px}
 .opp-scope .action{height:46px;border-radius:7px;padding:0 31px;border:1px solid #e0e6ea;background:#fff;font-size:14px;font-weight:700;color:#151d2a;display:flex;align-items:center;justify-content:center;gap:9px;box-shadow:var(--shadow);cursor:pointer}
 .opp-scope .action svg{width:20px;height:20px;stroke:#142943;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
@@ -98,7 +98,7 @@
 .opp-scope .badge-small{font-size:10px;color:#43536a;margin-top:7px;text-align:center;line-height:1.5}
 .opp-scope .learn{min-height:100px;background:#edf7ff;display:flex;align-items:center;padding:15px 17px;gap:20px}
 .opp-scope .bulb{width:63px;height:63px;border-radius:50%;background:#dceeff;display:grid;place-items:center;font-size:29px;flex:none}
-.opp-scope .learn-main{flex:1}
+.opp-scope .learn-main{flex:1 1 300px;min-width:0}
 .opp-scope .learn-title{font-size:16px;font-weight:700}
 .opp-scope .learn-desc{font-size:12px;line-height:1.5;color:#314761;margin-top:8px}
 .opp-scope .tags{display:flex;flex-wrap:wrap;gap:9px;max-width:747px}
@@ -107,7 +107,7 @@
 .opp-scope .grid{grid-template-columns:1fr}
 .opp-scope .right{display:grid;grid-template-columns:1fr 1fr}}
 @media(max-width:850px){
-.opp-scope .container{padding:23px 16px}
+.opp-scope .container{padding:0 16px 23px}
 .opp-scope .heading{display:block}
 .opp-scope .actions{margin-top:21px}
 .opp-scope .hero{height:auto;flex-direction:column}
@@ -119,91 +119,12 @@
 .opp-scope .learn{height:auto;flex-wrap:wrap}}
 @media(max-width:600px){
 .opp-scope .hero-title{font-size:22px}
-.opp-scope h1{font-size:30px}
 .opp-scope .actions{width:100%;flex-direction:column}
 .opp-scope .action{width:100%}
 .opp-scope .comp-list,
 .opp-scope .evlist{display:grid;grid-template-columns:1fr}
 .opp-scope .ev{border-right:0;border-bottom:1px solid #e8edf0;padding:12px 0}
 .opp-scope .verify{display:grid;grid-template-columns:1fr;gap:12px}}
-.opp-scope .container{max-width:none;padding:25px 30px 25px}
-.opp-scope .back{margin-bottom:21px;font-size:12px}
-.opp-scope .back svg{width:16px;height:16px}
-.opp-scope .heading{margin-bottom:18px}
-.opp-scope h1{font-size:28px;letter-spacing:-.4px}
-.opp-scope .sub{font-size:13px;margin-top:9px}
-.opp-scope .actions{gap:9px}
-.opp-scope .action{height:38px;border-radius:7px;padding:0 25px;font-size:12px}
-.opp-scope .action.apply{min-width:169px}
-.opp-scope .action svg{width:16px;height:16px}
-.opp-scope .grid{grid-template-columns:minmax(0,2fr) minmax(320px,1.18fr);gap:10px}
-.opp-scope .left,
-.opp-scope .right{gap:10px}
-.opp-scope .card{border-radius:10px;box-shadow:0 1px 6px rgba(24,48,72,.07)}
-.opp-scope .hero{min-height:218px;height:218px;padding:7px;gap:21px}
-.opp-scope .hero-image{width:230px !important;min-width:230px !important;height:202px !important;border-radius:8px;object-fit:cover;display:block;background:none !important}
-.opp-scope .hero-image:before,
-.opp-scope .hero-image:after{display:none !important}
-.opp-scope .hero-info{padding:10px 0 6px}
-.opp-scope .recommend{padding:5px 8px;font-size:9px;border-radius:5px;margin-bottom:8px}
-.opp-scope .hero-title{font-size:20px;margin-bottom:8px;letter-spacing:-.25px}
-.opp-scope .hero-desc{font-size:12px;line-height:1.8}
-.opp-scope .meta{gap:28px;margin-top:17px}
-.opp-scope .meta-item{font-size:10px;gap:7px}
-.opp-scope .meta-item svg{width:16px;height:16px}
-.opp-scope .offered{margin-top:12px;padding-top:12px;gap:12px;font-size:10px}
-.opp-scope .qf{width:25px;height:25px;border-radius:7px;font-size:9px}
-.opp-scope .offered strong{font-size:12px}
-.opp-scope .section{padding:13px 14px}
-.opp-scope .section-title{font-size:13px}
-.opp-scope .section-desc{font-size:10px;margin-top:6px}
-.opp-scope .competencies{height:141px}
-.opp-scope .comp-list{margin-top:15px;gap:9px}
-.opp-scope .comp{gap:8px}
-.opp-scope .hex{width:41px;height:41px}
-.opp-scope .hex svg{width:21px;height:21px}
-.opp-scope .comp-name{font-size:10px}
-.opp-scope .tag{font-size:8px;padding:5px 7px;margin-top:5px}
-.opp-scope .mapping{margin-top:12px;font-size:9px}
-.opp-scope .mapping b{font-size:15px}
-.opp-scope .evidence{height:126px}
-.opp-scope .evlist{margin-top:15px}
-.opp-scope .ev{gap:10px;padding:0 12px}
-.opp-scope .evicon{width:45px;height:45px}
-.opp-scope .evicon svg{width:22px;height:22px}
-.opp-scope .evname{font-size:10px}
-.opp-scope .evtext{font-size:9px;line-height:1.4;margin-top:5px}
-.opp-scope .verification{height:101px}
-.opp-scope .verify{margin-top:15px}
-.opp-scope .verify-item{font-size:9px;gap:8px}
-.opp-scope .verify-item svg{width:20px;height:20px}
-.opp-scope .learn{min-height:79px;padding:12px 14px;gap:14px}
-.opp-scope .bulb{width:51px;height:51px;font-size:23px}
-.opp-scope .learn-title{font-size:12px}
-.opp-scope .learn-desc{font-size:9px;margin-top:6px}
-.opp-scope .tags{gap:7px;max-width:644px}
-.opp-scope .pill{font-size:8px;padding:6px 12px}
-.opp-scope .details{height:218px;padding:9px 14px}
-.opp-scope .detail{height:32px}
-.opp-scope .detail svg{width:16px;height:16px;margin-right:10px}
-.opp-scope .label,
-.opp-scope .value{font-size:9px}
-.opp-scope .rec{height:144px;padding:15px}
-.opp-scope .rec-title{font-size:12px}
-.opp-scope .checkline{font-size:9px;margin-top:8px;gap:8px}
-.opp-scope .check{width:15px;height:15px;font-size:9px}
-.opp-scope .next{height:244px;padding:14px}
-.opp-scope .next-title{font-size:12px;margin-bottom:13px}
-.opp-scope .next-grid{grid-template-columns:1fr 112px;gap:8px}
-.opp-scope .timeline:before{left:10px;top:12px;bottom:12px}
-.opp-scope .tl{gap:12px;margin-bottom:13px}
-.opp-scope .num{width:22px;height:22px;font-size:9px}
-.opp-scope .tl-title{font-size:9px}
-.opp-scope .tl-text{font-size:8px;margin-top:3px}
-.opp-scope .badge-circle{width:101px;height:101px}
-.opp-scope .badge-circle svg{width:54px;height:54px}
-.opp-scope .badge-name{font-size:10px;margin-top:9px}
-.opp-scope .badge-small{font-size:8px;margin-top:5px}
 @media(max-width:900px){
 .opp-scope .grid{grid-template-columns:1fr}
 .opp-scope .right{display:flex}}
@@ -215,14 +136,6 @@
 .opp-scope .evlist{display:grid;grid-template-columns:1fr}
 .opp-scope .ev{padding:9px 0;border-right:0;border-bottom:1px solid #e8edf0}
 .opp-scope .verify{display:grid;grid-template-columns:1fr 1fr;gap:9px}}
-.opp-scope .learn{width:100%;height:79px !important;min-height:79px !important;margin-top:0;border-radius:10px;background:#edf7ff !important;border:1px solid #e3edf5;display:flex !important;align-items:center !important;padding:9px 16px !important;gap:15px !important;overflow:hidden}
-.opp-scope .learn .bulb{width:51px !important;height:51px !important;min-width:51px !important;border-radius:50%;background:#dceeff !important;display:grid !important;place-items:center;font-size:23px !important;flex:none}
-.opp-scope .learn .learn-main{flex:1 1 390px;min-width:391px}
-.opp-scope .learn .learn-title{font-size:12px !important;line-height:1.2;font-weight:700;color:#152238;margin:0}
-.opp-scope .learn .learn-desc{font-size:9px !important;line-height:1.45 !important;color:#314761;margin-top:5px !important;max-width:494px}
-.opp-scope .learn .tags{flex:0 1 560px;max-width:644px;display:flex !important;flex-wrap:wrap !important;align-content:center;justify-content:flex-start;gap:7px !important;margin-left:auto}
-.opp-scope .learn .pill{background:#dceeff !important;color:#0864ae !important;padding:6px 14px !important;height:23px;line-height:10px;border-radius:7px !important;font-size:8px !important;white-space:nowrap;display:flex;align-items:center}
-.opp-scope .left > .learn{grid-column:1;width:100%}
 @media(min-width:901px){
 .opp-scope .learn .tags{width:644px}}
 @media(max-width:700px){
@@ -245,14 +158,6 @@
 @media(max-width:600px){
 .opp-scope .comp-list{grid-template-columns:1fr 1fr !important}
 .opp-scope .competencies{min-height:207px}}
-.opp-scope .details{height:253px !important;min-height:253px !important;padding:9px 14px !important;overflow:visible !important}
-.opp-scope .details .detail{height:33px !important;min-height:33px !important;flex:none;display:flex;align-items:center;border-bottom:1px solid #e8ecef}
-.opp-scope .details .detail:last-child{border-bottom:0}
-.opp-scope .details .detail svg{width:16px !important;height:16px !important;flex:none;margin-right:10px !important}
-.opp-scope .details .label,
-.opp-scope .details .value{font-size:9px !important;line-height:1.2;white-space:nowrap}
-.opp-scope .details .value{margin-left:auto;text-align:right}
-.opp-scope .right .rec{margin-top:0 !important;position:relative;z-index:1}
 @media(max-width:700px){
 .opp-scope .details{height:auto !important;min-height:0 !important}
 .opp-scope .details .detail{height:36px !important;min-height:36px !important}}
@@ -300,7 +205,7 @@
 .opp-scope .tl-title,
 .opp-scope .tl-text{overflow-wrap:break-word !important;word-break:normal !important}
 .opp-scope .badge-show{min-width:0 !important;width:144px !important}
-.opp-scope .details{width:100% !important;min-width:0 !important;height:253px !important;overflow:hidden !important}
+.opp-scope .details{width:100% !important;min-width:0 !important;height:auto !important}
 .opp-scope .competencies{width:100% !important;height:auto !important;min-height:141px !important;overflow:visible !important}
 .opp-scope .comp-list{width:100% !important;display:grid !important;grid-template-columns:repeat(4,minmax(0,1fr)) !important;gap:14px !important}
 .opp-scope .comp{min-width:0 !important}
