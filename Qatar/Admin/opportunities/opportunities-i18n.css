@@ -1,0 +1,62 @@
+/* Language toggle control + Arabic-mode text treatment for the
+   Opportunities Management page. Only text-bearing leaf elements
+   switch to RTL reading direction and the Cairo typeface;
+   grid/flex/table structure stays as built so the pixel-tuned
+   layout doesn't shift between languages. */
+
+.lang-toggle{display:flex;gap:2px;background:#eef2f6;border:1px solid #dfe6ec;border-radius:8px;padding:2px;width:max-content}
+.lang-opt{height:28px;padding:0 14px;border:none;border-radius:6px;background:transparent;color:#5c6b84;font-size:11px;font-weight:700;cursor:pointer;font-family:'Cairo','DM Sans',sans-serif}
+.lang-opt.active{background:#00775f;color:#fff}
+.lang-opt:not(.active):hover{color:#0b2348}
+
+.adm-opp-scope.lang-ar{font-family:'Cairo',var(--font-body,'DM Sans'),sans-serif}
+
+.adm-opp-scope.lang-ar h1,
+.adm-opp-scope.lang-ar .head p,
+.adm-opp-scope.lang-ar .btn span,
+.adm-opp-scope.lang-ar .sl,
+.adm-opp-scope.lang-ar .delta span,
+.adm-opp-scope.lang-ar .selectbox label,
+.adm-opp-scope.lang-ar .sel span,
+.adm-opp-scope.lang-ar .more,
+.adm-opp-scope.lang-ar .clear,
+.adm-opp-scope.lang-ar .ctitle,
+.adm-opp-scope.lang-ar .thead div,
+.adm-opp-scope.lang-ar .oname,
+.adm-opp-scope.lang-ar .tag,
+.adm-opp-scope.lang-ar .orgc span,
+.adm-opp-scope.lang-ar .pill,
+.adm-opp-scope.lang-ar .tr > div,
+.adm-opp-scope.lang-ar .pager span,
+.adm-opp-scope.lang-ar .rows,
+.adm-opp-scope.lang-ar .stitle,
+.adm-opp-scope.lang-ar .lr span,
+.adm-opp-scope.lang-ar .center span,
+.adm-opp-scope.lang-ar .view,
+.adm-opp-scope.lang-ar .orgname span,
+.adm-opp-scope.lang-ar .btitle,
+.adm-opp-scope.lang-ar .report,
+.adm-opp-scope.lang-ar .caption,
+.adm-opp-scope.lang-ar .growth span,
+.adm-opp-scope.lang-ar .metric span,
+.adm-opp-scope.lang-ar .sr span,
+.adm-opp-scope.lang-ar .at,
+.adm-opp-scope.lang-ar .as,
+.adm-opp-scope.lang-ar .time,
+.adm-opp-scope.lang-ar .opp-footnote span{
+  direction:rtl;
+  text-align:right;
+  font-family:'Cairo','DM Sans',sans-serif;
+}
+
+.adm-opp-scope.lang-ar .head{direction:rtl}
+.adm-opp-scope.lang-ar .opp{direction:rtl}
+.adm-opp-scope.lang-ar .orgc{direction:rtl}
+.adm-opp-scope.lang-ar .thead{direction:rtl}
+.adm-opp-scope.lang-ar .tr{direction:rtl}
+.adm-opp-scope.lang-ar .lr{direction:rtl}
+.adm-opp-scope.lang-ar .orgrow{direction:rtl}
+.adm-opp-scope.lang-ar .sr{direction:rtl}
+.adm-opp-scope.lang-ar .arow{direction:rtl}
+.adm-opp-scope.lang-ar .metric{direction:rtl}
+.adm-opp-scope.lang-ar input::placeholder{font-family:'Cairo','DM Sans',sans-serif;text-align:right}

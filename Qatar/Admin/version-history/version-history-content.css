@@ -42,10 +42,12 @@
 .adm-vh-scope td{height:50px;border-bottom:1px solid var(--line);padding:0 12px;vertical-align:middle;font-size:10px;color:#172d50}
 .adm-vh-scope tbody tr:last-child td{border-bottom:0}
 .adm-vh-scope tbody tr:first-child{background:#f5f9fe}
-.adm-vh-scope th:nth-child(1){width:19%} .adm-vh-scope th:nth-child(2){width:6%} .adm-vh-scope th:nth-child(3){width:11%} .adm-vh-scope th:nth-child(4){width:20%} .adm-vh-scope th:nth-child(5){width:13%} .adm-vh-scope th:nth-child(6){width:14%} .adm-vh-scope th:nth-child(7){width:11%} .adm-vh-scope th:nth-child(8){width:6%}
+.adm-vh-scope th:nth-child(1){width:19%} .adm-vh-scope th:nth-child(2){width:6%} .adm-vh-scope th:nth-child(3){width:11%} .adm-vh-scope th:nth-child(4){width:26%} .adm-vh-scope th:nth-child(5){width:8%} .adm-vh-scope th:nth-child(6){width:13%} .adm-vh-scope th:nth-child(7){width:11%} .adm-vh-scope th:nth-child(8){width:6%}
 .adm-vh-scope .comp{display:flex;align-items:center;gap:10px;min-width:0}
 .adm-vh-scope .comp>div{min-width:0}
-.adm-vh-scope .comp img{width:32px;height:32px;object-fit:cover;border-radius:8px;flex:none}
+.adm-vh-scope .comp-ico{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;flex:none;overflow:hidden}
+.adm-vh-scope .comp-ico svg{width:18px;height:18px}
+.adm-vh-scope .comp-ico img{width:100%;height:100%;object-fit:cover}
 .adm-vh-scope .compname{font-weight:700;font-size:10px;line-height:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .adm-vh-scope .compsub{font-size:9px;color:#5c6b84;line-height:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .adm-vh-scope .ver{font-weight:700;font-size:10px}
@@ -54,7 +56,7 @@
 .adm-vh-scope .pill.major{background:#fff0d7;color:#f18a00}
 .adm-vh-scope .pill.minor{background:#e9f3ff;color:#1771cb}
 .adm-vh-scope .pill.created{background:#efe5ff;color:#7b43d4}
-.adm-vh-scope .path{display:inline-flex;align-items:center;background:#f0f5fc;color:#54709e;height:23px;border-radius:4px;padding:0 7px;font-size:9px;white-space:nowrap}
+.adm-vh-scope .path{display:inline-block;vertical-align:middle;background:#f0f5fc;color:#54709e;line-height:23px;border-radius:4px;padding:0 7px;font-size:9px;white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
 .adm-vh-scope .taxonomy{display:flex;gap:5px;flex-wrap:wrap}
 .adm-vh-scope .taxpill{height:22px;display:inline-flex;align-items:center;padding:0 7px;border-radius:4px;background:#ddf5ef;color:#00806b;font-size:9px;font-weight:700}
 .adm-vh-scope .taxpill.blue{background:#e6f1ff;color:#1566c3}
@@ -79,7 +81,9 @@
 .adm-vh-scope .panel-title{font-size:15px;font-weight:700;letter-spacing:-.3px;color:#0b2348}
 .adm-vh-scope .close{font-size:20px;font-weight:300;color:#334a6c;line-height:16px;cursor:pointer}
 .adm-vh-scope .hero{display:flex;align-items:center;gap:12px;margin-top:13px}
-.adm-vh-scope .hero img{width:52px;height:52px;border-radius:9px;object-fit:cover}
+.adm-vh-scope .hero-ico{width:52px;height:52px;border-radius:11px;display:grid;place-items:center;flex:none;overflow:hidden}
+.adm-vh-scope .hero-ico svg{width:28px;height:28px}
+.adm-vh-scope .hero-ico img{width:100%;height:100%;object-fit:cover}
 .adm-vh-scope .hero-title{font-size:12px;font-weight:700;color:#0b2348}
 .adm-vh-scope .vtag{display:inline-flex;margin-left:7px;background:#e5f0ff;color:#1264c1;padding:3px 6px;border-radius:5px;font-size:9px;font-weight:700}
 .adm-vh-scope .hero-sub{font-size:10px;color:#5c6b84;margin-top:4px}

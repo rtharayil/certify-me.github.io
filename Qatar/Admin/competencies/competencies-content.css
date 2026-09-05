@@ -82,6 +82,8 @@
 .adm-comp-scope th:nth-child(6){width:6%}
 .adm-comp-scope .comp{display:flex;align-items:center;gap:11px}
 .adm-comp-scope .comp-icon{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;color:#fff;flex:none}
+.adm-comp-scope .comp-icon-img{background:none;overflow:hidden}
+.adm-comp-scope .comp-icon-img img{width:100%;height:100%;object-fit:cover}
 .adm-comp-scope .comp-name{font-size:10px;font-weight:750;color:#12284b}
 .adm-comp-scope .desc{font-size:8.7px;color:#334a6c;line-height:1.3;margin-top:2px;max-width:180px}
 .adm-comp-scope .domain{display:flex;align-items:center;gap:7px;font-size:9px;white-space:nowrap}
