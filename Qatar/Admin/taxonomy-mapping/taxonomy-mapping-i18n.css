@@ -1,0 +1,61 @@
+/* Language toggle + Arabic-mode text treatment for Taxonomy Mapping.
+   Mirrors the Competencies page's approach: only text-bearing leaf
+   elements switch to RTL/Cairo; grid/flex/table structure stays put
+   so the layout doesn't shift between languages. */
+
+.lang-toggle{display:flex;gap:2px;background:#eef2f6;border:1px solid #dfe6ec;border-radius:8px;padding:2px;width:max-content}
+.lang-opt{height:28px;padding:0 14px;border:none;border-radius:6px;background:transparent;color:#5c6b84;font-size:11px;font-weight:700;cursor:pointer;font-family:'Cairo','DM Sans',sans-serif}
+.lang-opt.active{background:#00775f;color:#fff}
+.lang-opt:not(.active):hover{color:#0b2348}
+
+.adm-taxmap-scope.lang-ar{font-family:'Cairo','DM Sans',sans-serif}
+
+.adm-taxmap-scope.lang-ar h1,
+.adm-taxmap-scope.lang-ar .subtitle,
+.adm-taxmap-scope.lang-ar .step-title,
+.adm-taxmap-scope.lang-ar .step-desc,
+.adm-taxmap-scope.lang-ar .section-title,
+.adm-taxmap-scope.lang-ar .section-help,
+.adm-taxmap-scope.lang-ar label,
+.adm-taxmap-scope.lang-ar option,
+.adm-taxmap-scope.lang-ar .row,
+.adm-taxmap-scope.lang-ar .mode-btn,
+.adm-taxmap-scope.lang-ar .comp-name,
+.adm-taxmap-scope.lang-ar .comp-desc,
+.adm-taxmap-scope.lang-ar .levels-title,
+.adm-taxmap-scope.lang-ar .lvl,
+.adm-taxmap-scope.lang-ar .map-details-title,
+.adm-taxmap-scope.lang-ar .skill-name,
+.adm-taxmap-scope.lang-ar .skill-desc,
+.adm-taxmap-scope.lang-ar .score-label,
+.adm-taxmap-scope.lang-ar .score-bottom span,
+.adm-taxmap-scope.lang-ar .tiny-label,
+.adm-taxmap-scope.lang-ar .mapping-box span,
+.adm-taxmap-scope.lang-ar .textarea,
+.adm-taxmap-scope.lang-ar .conf-scale span,
+.adm-taxmap-scope.lang-ar .add-btn span,
+.adm-taxmap-scope.lang-ar .mapped-title,
+.adm-taxmap-scope.lang-ar th,
+.adm-taxmap-scope.lang-ar td,
+.adm-taxmap-scope.lang-ar .right-title,
+.adm-taxmap-scope.lang-ar .view,
+.adm-taxmap-scope.lang-ar .mi-title,
+.adm-taxmap-scope.lang-ar .mi-level,
+.adm-taxmap-scope.lang-ar .info-key,
+.adm-taxmap-scope.lang-ar .info-val,
+.adm-taxmap-scope.lang-ar .note-text,
+.adm-taxmap-scope.lang-ar .back span,
+.adm-taxmap-scope.lang-ar .draft span,
+.adm-taxmap-scope.lang-ar .next span:first-child,
+.adm-taxmap-scope.lang-ar input[type="text"]{
+  direction:rtl;
+  text-align:right;
+  font-family:'Cairo','DM Sans',sans-serif;
+}
+
+.adm-taxmap-scope.lang-ar th{text-align:right}
+.adm-taxmap-scope.lang-ar .row{direction:rtl}
+.adm-taxmap-scope.lang-ar .indent1{padding-left:0;padding-right:21px}
+.adm-taxmap-scope.lang-ar .indent2{padding-left:0;padding-right:42px}
+.adm-taxmap-scope.lang-ar .indent3{padding-left:0;padding-right:63px}
+.adm-taxmap-scope.lang-ar ::placeholder{font-family:'Cairo','DM Sans',sans-serif;text-align:right}

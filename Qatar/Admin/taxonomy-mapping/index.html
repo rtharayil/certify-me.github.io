@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taxonomy Mapping – Admin Portal – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared/typography.css">
+<link rel="stylesheet" href="../shared/admin-shell.css">
+<link rel="stylesheet" href="taxonomy-mapping-content.css">
+<link rel="stylesheet" href="taxonomy-mapping-i18n.css">
+</head>
+<body class="dm">
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<!-- ===== sidebar (shared component, see Admin/shared/sidebar.js) ===== -->
+<div id="admin-sidebar" data-active="competencies"></div>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <h1 class="qtitle">Universal Skills Passport <span class="qtitle-pill" data-i18n="adminPortal">Administrator Portal</span></h1>
+    <div class="qtop-actions">
+      <div class="lang-toggle" id="langToggle" role="group" aria-label="Language">
+        <button type="button" class="lang-opt active" data-lang="en">EN</button>
+        <button type="button" class="lang-opt" data-lang="ar">عربي</button>
+      </div>
+      <button class="qicon-btn" onclick="st('Search coming soon')" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="qicon-btn" onclick="st('5 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>5</b>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><img src="../../Assets/hassan.png" alt="Hassan Al-Kuwari"></span>
+          <span class="qui"><b id="qUserName">Hassan Al-Kuwari</b><span id="qUserRole">Administrator</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg><span data-i18n="myProfile">My Profile</span></button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span data-i18n="settingsLabel">Settings</span></button>
+          <hr>
+          <button type="button" class="qout" onclick="AdminAuth.logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg><span data-i18n="signOut">Sign Out</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+    <div class="adm-taxmap-scope">
+
+    <h1 data-i18n="pageTitle">Competency &rarr; Taxonomy Mapping</h1>
+    <div class="subtitle" data-i18n="pageSubtitle">Link your competencies to global skills taxonomies to ensure interoperability and recognition.</div>
+
+    <div class="steps">
+      <div class="step" data-goto="../competencies/index.html"><div class="num">1</div><div><div class="step-title" data-i18n="stepCompMgmtTitle">Competency Management</div><div class="step-desc" data-i18n="stepCompMgmtSub">Create and edit competencies</div></div></div>
+      <div class="step active"><div class="num">2</div><div><div class="step-title" data-i18n="stepTaxTitle">Taxonomy Mapping</div><div class="step-desc" data-i18n="stepTaxSub">Link to global taxonomies</div></div></div>
+      <div class="step" data-goto="../version-history/index.html"><div class="num">3</div><div><div class="step-title" data-i18n="stepVersionTitle">Version History</div><div class="step-desc" data-i18n="stepVersionSub">View changes</div></div></div>
+      <div class="step" data-goto="comingsoon" data-label="Criteria"><div class="num">4</div><div><div class="step-title" data-i18n="stepDiplomaTitle">Criteria</div><div class="step-desc" data-i18n="stepDiplomaSub">Set criteria and requirements</div></div></div>
+      <div class="step" data-goto="comingsoon" data-label="Review &amp; Publish"><div class="num">5</div><div><div class="step-title" data-i18n="stepReviewTitle">Review &amp; Publish</div><div class="step-desc" data-i18n="stepReviewSub">Finalize and publish</div></div></div>
+    </div>
+
+    <div class="grid">
+      <!-- LEFT -->
+      <section class="card left-card">
+        <div class="section-title" data-i18n="section1Title">1. Select Taxonomy</div>
+        <div class="section-help" data-i18n="section1Help">Choose a taxonomy and browse or search for relevant skills.</div>
+        <label class="field-label" data-i18n="taxonomyLabel">Taxonomy</label>
+        <select class="select">
+          <option data-i18n="escoOption">ESCO – European Skills, Competences, Qualifications and Occupations</option>
+        </select>
+        <div class="searchbox" style="margin-top:13px">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg>
+          <input placeholder="Search ESCO skills, concepts or codes..." data-i18n-placeholder="searchEscoPlaceholder">
+        </div>
+        <div class="search-mode" id="searchMode">
+          <button type="button" class="mode-btn active" data-mode="skill"><span data-i18n="searchBySkill">Search by Skill</span></button>
+          <button type="button" class="mode-btn" data-mode="occupation"><span data-i18n="searchByOccupation">Search by Occupation</span></button>
+        </div>
+
+        <div class="tree">
+          <div class="row"><span class="tw">&rsaquo;</span><span class="folder"></span><span data-i18n="treeA">A - Agriculture, Forestry and Fisheries (129)</span></div>
+          <div class="row"><span class="tw">&rsaquo;</span><span class="folder"></span><span data-i18n="treeB">B - Arts and Humanities (256)</span></div>
+          <div class="row"><span class="tw">&rsaquo;</span><span class="folder"></span><span data-i18n="treeC">C - Business, Administration and Law (432)</span></div>
+          <div class="row"><span class="tw">&#8964;</span><span class="check checked"></span><strong data-i18n="treeD">D - Natural Sciences, Mathematics and Statistics (310)</strong></div>
+          <div class="row indent1"><span class="tw">&#8964;</span><span class="folder" style="border-color:#52b898"></span><strong data-i18n="treeD1">D.1 - Systems and Complexity Science (47)</strong></div>
+          <div class="row indent2"><span class="tw"></span><span class="check"></span><span data-i18n="treeD11">Analyze systems architecture (D.1.1)</span></div>
+          <div class="row indent2"><span class="tw"></span><span class="check"></span><span data-i18n="treeD12">Model complex adaptive systems (D.1.2)</span></div>
+          <div class="row indent2 selected-row"><span class="tw"></span><span class="check checked"></span><strong data-i18n="treeD13">Apply systems thinking methodologies (D.1.3)</strong></div>
+          <div class="row indent2"><span class="tw"></span><span class="check"></span><span data-i18n="treeD14">Evaluate feedback loops and dependencies (D.1.4)</span></div>
+          <div class="row indent1"><span class="tw">&rsaquo;</span><span class="folder"></span><span data-i18n="treeD2">D.2 - Computational Modeling (39)</span></div>
+          <div class="row indent1"><span class="tw">&rsaquo;</span><span class="folder"></span><span data-i18n="treeD3">D.3 - Statistical Analysis (33)</span></div>
+          <div class="row indent1"><span class="tw">&rsaquo;</span><span class="folder"></span><span data-i18n="treeD4">D.4 - Applied Mathematics (41)</span></div>
+          <div class="row"><span class="tw">&rsaquo;</span><span class="folder"></span><span data-i18n="treeE">E - Information and Communication Technologies (298)</span></div>
+          <div class="row"><span class="tw">&rsaquo;</span><span class="folder"></span><span data-i18n="treeF">F - Engineering, Manufacturing and Construction (412)</span></div>
+          <div class="row"><span class="tw">&rsaquo;</span><span class="folder"></span><span data-i18n="treeG">G - Health and Welfare (341)</span></div>
+          <div class="row"><span class="tw">&rsaquo;</span><span class="folder"></span><span data-i18n="treeH">H - Education (268)</span></div>
+          <div class="row"><span class="tw">&rsaquo;</span><span class="folder"></span><span data-i18n="treeI">I - Services (394)</span></div>
+          <div class="row"><span class="tw">&rsaquo;</span><span class="folder"></span><span data-i18n="treeJ">J - Environmental Protection (176)</span></div>
+        </div>
+      </section>
+
+      <!-- MIDDLE -->
+      <section class="card mid-card">
+        <div class="section-title" data-i18n="section2Title">2. Map to Your Competency</div>
+        <div class="section-help" data-i18n="section2Help">Link one or more taxonomy skills to this competency and set the proficiency alignment.</div>
+
+        <div class="competency">
+          <div class="leaf" style="background:#e3ecfb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#2879db" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+          </div>
+          <div>
+            <div class="comp-name" data-i18n="compNameSystems">Systems Thinking</div>
+            <div class="comp-desc" data-i18n="compDescSystems">Understand relationships between<br>interconnected systems.</div>
+          </div>
+          <div class="levels">
+            <div class="levels-title" data-i18n="yourProfLevels">Your Proficiency Levels</div>
+            <div class="level-buttons"><div class="lvl" data-i18n="levelFoundational">Foundational</div><div class="lvl" data-i18n="levelProficient">Proficient</div><div class="lvl active" data-i18n="levelExpert">Expert</div></div>
+          </div>
+        </div>
+
+        <div class="map-details-title" data-i18n="selectedSkillLabel">Selected Taxonomy Skill</div>
+        <div class="selected-skill">
+          <div class="leaf" style="background:#e3ecfb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#2879db" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+          </div>
+          <div style="min-width:0">
+            <div class="skill-name" data-i18n="skillNameSystems">Apply systems thinking methodologies</div>
+            <div class="code">ESCO: D.1.3</div>
+            <div class="skill-desc" data-i18n="skillDescSystems">Apply structured methods to understand how components of a system interact,<br>anticipate emergent behavior and design more effective interventions.</div>
+          </div>
+          <div class="score">
+            <div class="score-label" data-i18n="relevanceScore">Relevance Score</div>
+            <div class="score-val">95%</div>
+            <div class="meter"><span></span></div>
+            <div class="score-bottom"><span data-i18n="highAlignment">High alignment</span><b></b></div>
+          </div>
+        </div>
+
+        <div class="map-details-title" data-i18n="mappingDetailsTitle">Mapping Details</div>
+        <div class="two-col">
+          <div><div class="tiny-label" data-i18n="yourCompLevel">Your Competency Level</div><div class="mapping-box"><span data-i18n="level3Advanced">Level 3 – Advanced</span> <span>&#8964;</span></div></div>
+          <div><div class="tiny-label"><span data-i18n="mappingTypeLabel">Mapping Type</span> <span class="info-i">&#9432;</span></div><div class="mapping-box"><span data-i18n="directMatch">Direct Match</span> <span>&#8964;</span></div></div>
+        </div>
+
+        <div class="just-grid">
+          <div>
+            <div class="tiny-label" data-i18n="justificationLabel">Justification (optional)</div>
+            <textarea class="textarea" data-i18n="justificationText">Direct alignment with ESCO definition. Skill represents core element of systems thinking competency.</textarea>
+            <div class="char">78/500</div>
+          </div>
+          <div class="confidence">
+            <div class="confidence-title" data-i18n="mappingConfidence">Mapping Confidence</div>
+            <div class="meter"><span></span></div>
+            <div class="conf-scale"><span data-i18n="confLow">Low</span><span data-i18n="confMedium">Medium</span><b class="high" data-i18n="confHigh">High</b></div>
+          </div>
+        </div>
+
+        <button class="add-btn"><span class="plus">&#65291;</span><span data-i18n="addAnotherSkill">Add Another Taxonomy Skill</span></button>
+
+        <div class="mapped-title" data-i18n="mappedSkillsTitle">Mapped Taxonomy Skills (2)</div>
+        <div class="map-table">
+          <table>
+            <thead><tr><th>#</th><th data-i18n="thSkill">Skill</th><th data-i18n="thTaxonomy">Taxonomy</th><th data-i18n="thYourLevel">Your Level</th><th data-i18n="thMappingType">Mapping Type</th><th data-i18n="thConfidence">Confidence</th><th data-i18n="thActions">Actions</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td data-i18n="skillNameSystems">Apply systems thinking methodologies</td><td>ESCO: D.1.3</td><td><span data-i18n="level3">Level 3</span></td><td data-i18n="directMatch">Direct Match</td><td><span class="tag green" data-i18n="confHigh">High</span></td><td class="actions">&bull;&bull;&bull;</td></tr>
+              <tr><td>2</td><td data-i18n="treeD11Bare">Analyze systems architecture</td><td>ESCO: D.1.1</td><td><span data-i18n="level2">Level 2</span></td><td data-i18n="relatedSkillType">Related Skill</td><td><span class="tag yellow" data-i18n="confMedium">Medium</span></td><td class="actions">&bull;&bull;&bull;</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- RIGHT -->
+      <aside class="right-col">
+        <section class="card right-card mapping">
+          <div class="right-head"><div class="right-title" data-i18n="currentMappingsTitle">Current Mappings (2)</div><div class="view" data-i18n="viewAllLink">View All</div></div>
+          <div class="mapping-item">
+            <div class="leaf" style="background:#e3ecfb"><svg viewBox="0 0 24 24" fill="none" stroke="#2879db" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
+            <div><div class="mi-title"><span data-i18n="skillNameSystems">Apply systems thinking methodologies</span> <span class="primary" data-i18n="primaryBadge">Primary</span></div><div class="mi-code">ESCO: D.1.3</div><div class="mi-level" data-i18n="levelArrowEsco3">Your Level 3 &rarr; ESCO Level 3</div></div>
+            <div class="dots">&#8942;</div>
+          </div>
+          <div class="mapping-item">
+            <div class="leaf" style="background:#e3ecfb"><svg viewBox="0 0 24 24" fill="none" stroke="#2879db" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
+            <div><div class="mi-title" data-i18n="treeD11Bare">Analyze systems architecture</div><div class="mi-code">ESCO: D.1.1</div><div class="mi-level" data-i18n="levelArrowEsco2">Your Level 2 &rarr; ESCO Level 2</div></div>
+            <div class="dots">&#8942;</div>
+          </div>
+        </section>
+
+        <section class="card right-card info">
+          <div class="right-head"><div class="right-title" data-i18n="skillInfoTitle">Skill Information (from ESCO)</div><div class="view" data-i18n="viewInEsco">View in ESCO &#8599;</div></div>
+          <div class="info-table">
+            <div class="info-row"><div class="info-key" data-i18n="infoSkillUri">Skill URI</div><div class="info-val"><a href="#">https://esco.ec.europa.eu/en/skill/D.1.3 &#8599;</a></div></div>
+            <div class="info-row"><div class="info-key" data-i18n="infoSkillType">Skill Type</div><div class="info-val" data-i18n="infoSkillTypeVal">Skill</div></div>
+            <div class="info-row"><div class="info-key" data-i18n="infoStatus">Status</div><div class="info-val" data-i18n="infoStatusVal">Valid</div></div>
+            <div class="info-row"><div class="info-key" data-i18n="infoCreated">Created</div><div class="info-val">2019-03-08</div></div>
+            <div class="info-row"><div class="info-key" data-i18n="infoLastModified">Last Modified</div><div class="info-val">2024-11-02</div></div>
+            <div class="info-row"><div class="info-key" data-i18n="infoBroaderConcept">Broader Concept</div><div class="info-val"><a href="#" data-i18n="broaderConceptVal">D.1 - Systems and Complexity Science</a></div></div>
+            <div class="info-row"><div class="info-key" data-i18n="infoRelatedSkills">Related Skills</div><div class="info-val"><ul class="related"><li data-i18n="treeD12">Model complex adaptive systems (D.1.2)</li><li data-i18n="treeD14">Evaluate feedback loops and dependencies (D.1.4)</li></ul></div></div>
+            <div class="info-row"><div class="info-key" data-i18n="infoScopeNote">Scope Note</div><div class="info-val scope" data-i18n="scopeNoteVal">Involves applying structured approaches to analyze how parts of a system interact, anticipate emergent behavior and improve decision-making across complex processes.</div></div>
+          </div>
+        </section>
+
+        <section class="right-note">
+          <div class="note-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3.7 9h16.6M3.7 15h16.6M12 3c2.2 2.5 3.2 5.5 3.2 9S14.2 18.5 12 21c-2.2-2.5-3.2-5.5-3.2-9S9.8 5.5 12 3z"/><path d="M3 12h18"/></svg>
+          </div>
+          <div class="note-text" data-i18n="noteText">Mapping to global taxonomies ensures<br>interoperability and enables recognition of<br>competencies across borders and systems.</div>
+        </section>
+      </aside>
+    </div>
+
+    <div class="bottom">
+      <button class="back" id="btnBack"><span data-i18n="arrowBack">&larr;</span> <span data-i18n="backBtn">Back</span></button>
+      <div class="bottom-right">
+        <button class="draft" id="btnDraft"><span>&#9635;</span> <span data-i18n="saveDraftBtn">Save as Draft</span></button>
+        <button class="next" id="btnNext"><span data-i18n="nextVersionHistory">Next: Version History</span><span data-i18n="arrowNext">&rarr;</span></button>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+  <footer class="qfoot">
+    <span data-i18n="copyright">© 2026 Qatar Foundation. All rights reserved.</span>
+    <nav><a href="#" data-i18n="privacyPolicy">Privacy Policy</a><i>|</i><a href="#" data-i18n="termsOfUse">Terms of Use</a><i>|</i><a href="#" data-i18n="supportLabel">Support</a></nav>
+  </footer>
+
+</div>
+
+<script src="../shared/auth.js"></script>
+<script>AdminAuth.requireAuth();</script>
+<script src="../shared/sidebar.js"></script>
+<script>
+document.getElementById('qUserName').textContent = AdminAuth.getName();
+document.getElementById('qUserRole').textContent = AdminAuth.getRole();
+
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+</script>
+<script src="taxonomy-mapping-content.js"></script>
+<script src="taxonomy-mapping-i18n.js"></script>
+</body>
+</html>

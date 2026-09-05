@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evidence Review – Admin Portal – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared/typography.css">
+<link rel="stylesheet" href="../shared/admin-shell.css">
+<link rel="stylesheet" href="review-content.css">
+</head>
+<body class="dm">
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<!-- ===== sidebar (shared component, see Admin/shared/sidebar.js) ===== -->
+<div id="admin-sidebar" data-active="review"></div>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <h1 class="qtitle">Universal Skills Passport <span class="qtitle-pill">Administrator Portal</span></h1>
+    <div class="qtop-actions">
+      <button class="qicon-btn" onclick="st('Search coming soon')" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="qicon-btn" onclick="st('5 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>5</b>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><img src="../../Assets/hassan.png" alt="Hassan Al-Kuwari"></span>
+          <span class="qui"><b id="qUserName">Hassan Al-Kuwari</b><span id="qUserRole">Administrator</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>My Profile</button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>Settings</button>
+          <hr>
+          <button type="button" class="qout" onclick="AdminAuth.logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+    <div class="adm-review-scope">
+
+    <div class="heading-row">
+      <div>
+        <h1>Evidence Review</h1>
+        <div class="sub">Review evidence, verify achievements and manage attestations across the platform.</div>
+      </div>
+      <div class="heading-actions">
+        <button class="btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12"/><path d="m8 11 4 4 4-4"/><path d="M4 15v5h16v-5"/></svg>Export Report
+        </button>
+        <button class="btn green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3.2"/></svg>
+          Verification Settings <span class="down">⌄</span>
+        </button>
+      </div>
+    </div>
+
+    <section class="kpis">
+      <div class="card kpi">
+        <div class="kpi-icon i-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="6" y="4" width="12" height="17" rx="1.5"/><path d="M9 4V2h6v2M9 8h6M9 12h3M9 16h5M15 12h2"/></svg></div>
+        <div class="kpi-copy"><div class="kpi-label">Pending Reviews</div><div class="kpi-value">1,248</div><div class="kpi-note"><span class="up">↑ 18.6%</span>vs Apr 2025</div></div>
+      </div>
+      <div class="card kpi">
+        <div class="kpi-icon i-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></svg></div>
+        <div class="kpi-copy"><div class="kpi-label">Due Soon</div><div class="kpi-value">312</div><div class="kpi-note gray">Due in next 7 days</div></div>
+      </div>
+      <div class="card kpi">
+        <div class="kpi-icon i-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="8" r="3.2"/><circle cx="16.5" cy="9" r="2.6"/><path d="M3.5 19c0-3.2 2.4-5.2 5.5-5.2s5.5 2 5.5 5.2M14 14.2c3.1-.4 5.9 1.4 6.2 4.8"/></svg></div>
+        <div class="kpi-copy"><div class="kpi-label">Active Verifiers</div><div class="kpi-value">186</div><div class="kpi-note gray">Across 24 organizations</div></div>
+      </div>
+      <div class="card kpi">
+        <div class="kpi-icon i-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="m7 12 3.2 3.2L17.5 8"/></svg></div>
+        <div class="kpi-copy"><div class="kpi-label">Completed This Month</div><div class="kpi-value">2,134</div><div class="kpi-note"><span class="up">↑ 15.2%</span>vs Apr 2025</div></div>
+      </div>
+    </section>
+
+    <section class="body-grid">
+      <div class="left-stack">
+        <div class="panel table-panel">
+          <div class="panel-head">
+            <div class="panel-title">Pending Reviews (1,248)</div>
+            <div class="filters">
+              <div class="select">All Types <span>⌄</span></div>
+              <div class="select org">All Organizations <span>⌄</span></div>
+              <div class="select pri">All Priority <span>⌄</span></div>
+              <div class="filter-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#172844" stroke-width="1.7"><path d="M4 6h16M4 12h16M4 18h16"/><path d="M8 4v4M15 10v4M11 16v4"/></svg>Filters</div>
+              <div class="clear">Clear All</div>
+            </div>
+          </div>
+          <div class="table-scroll">
+          <table>
+            <colgroup>
+              <col style="width:4.2%"><col style="width:25.3%"><col style="width:14.5%"><col style="width:15.6%"><col style="width:9.7%"><col style="width:8.3%"><col style="width:9.7%"><col style="width:8.5%"><col style="width:4.2%">
+            </colgroup>
+            <thead><tr>
+              <th><span class="check"></span></th><th>Submission</th><th>Student / Recipient</th><th>Organization</th><th>Submitted On</th><th>Priority</th><th>Due Date</th><th colspan="2">Actions</th>
+            </tr></thead>
+            <tbody>
+              <tr>
+                <td><span class="check"></span></td>
+                <td><div class="subcell"><div class="mini-icon purple-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3 19 6v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3Z"/><path d="m9 12 2 2 4-5"/></svg></div><div><div class="primary">Information Literacy – Level 1</div><div class="secondary">Skill Achievement</div></div></div></td>
+                <td><div class="person"><div class="person-avatar"><img src="../../Assets/maryam.png" alt="Maryam Ahmed"></div><div><div class="primary">Maryam Ahmed</div><div class="secondary">STU-2025-78321</div></div></div></td>
+                <td><div class="orgcell"><div class="orglogo" style="color:#82665b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20h16M6 18V9h12v9M4 9l8-5 8 5M9 12h2v3H9m4-3h2v3h-2"/></svg></div>Carnegie Mellon<br>University in Qatar</div></td>
+                <td><div class="secondary">02 May 2025<br>10:15 AM</div></td>
+                <td><span class="priority high">High</span></td>
+                <td><div class="due-red">05 May 2025<br><span>(2 days left)</span></div></td>
+                <td><button class="review">Review</button></td><td class="dots">⋮</td>
+              </tr>
+              <tr>
+                <td><span class="check"></span></td>
+                <td><div class="subcell"><div class="mini-icon green-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3 19 6v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3Z"/><path d="m9 12 2 2 4-5"/></svg></div><div><div class="primary">QF Sustainability Challenge</div><div class="secondary">Badge</div></div></div></td>
+                <td><div class="person"><div class="person-avatar"><img src="../../Assets/khalid.png" alt="Khalid Hassan"></div><div><div class="primary">Khalid Hassan</div><div class="secondary">STU-2025-67122</div></div></div></td>
+                <td><div class="orgcell"><div class="orglogo" style="color:#188462"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 5h14v14H5z" opacity=".16"/><path d="M7 7h10v10H7z"/><path d="m10 10 5-2v8l-5-2z" fill="#fff"/></svg></div>Hamad Bin Khalifa<br>University</div></td>
+                <td><div class="secondary">01 May 2025<br>03:22 PM</div></td><td><span class="priority medium">Medium</span></td>
+                <td><div class="secondary">06 May 2025<br><span class="due-orange">(3 days left)</span></div></td><td><button class="review">Review</button></td><td class="dots">⋮</td>
+              </tr>
+              <tr>
+                <td><span class="check"></span></td>
+                <td><div class="subcell"><div class="mini-icon blue-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 3h12v18H6z"/><path d="M9 7h6M9 11h6M9 15h3"/></svg></div><div><div class="primary">Undergraduate Research Program</div><div class="secondary">Evidence Submission</div></div></div></td>
+                <td><div class="person"><div class="person-avatar"><img src="../../Assets/fatima.png" alt="Fatima Al-Mansoori"></div><div><div class="primary">Fatima Al-Mansoori</div><div class="secondary">STU-2025-65890</div></div></div></td>
+                <td><div class="orgcell"><div class="orglogo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3 19 7v10l-7 4-7-4V7z"/><path d="M12 8v8M8 10l4-2 4 2"/></svg></div>Northwestern University<br>in Qatar</div></td>
+                <td><div class="secondary">30 Apr 2025<br>11:45 AM</div></td><td><span class="priority high">High</span></td>
+                <td><div class="due-red">04 May 2025<br><span>(Tomorrow)</span></div></td><td><button class="review">Review</button></td><td class="dots">⋮</td>
+              </tr>
+              <tr>
+                <td><span class="check"></span></td>
+                <td><div class="subcell"><div class="mini-icon orange-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 3h10v18H7z"/><path d="M10 7h4M10 11h4M10 15h4"/></svg></div><div><div class="primary">Growth Mindset</div><div class="secondary">Competency Level 3</div></div></div></td>
+                <td><div class="person"><div class="person-avatar"><img src="../../Assets/ahmed.png" alt="Ahmed Al-Hajri"></div><div><div class="primary">Ahmed Al-Hajri</div><div class="secondary">STU-2025-44911</div></div></div></td>
+                <td><div class="orgcell"><div class="orglogo" style="color:#0d75b7"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 5h14v14H5z"/><path d="M8 12h8M12 8v8"/></svg></div>Texas A&amp;M<br>University at Qatar</div></td>
+                <td><div class="secondary">29 Apr 2025<br>09:30 AM</div></td><td><span class="priority medium">Medium</span></td>
+                <td><div class="due-red">05 May 2025<br><span>(2 days left)</span></div></td><td><button class="review">Review</button></td><td class="dots">⋮</td>
+              </tr>
+              <tr>
+                <td><span class="check"></span></td>
+                <td><div class="subcell"><div class="mini-icon green-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3 19 6v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3Z"/><path d="m9 12 2 2 4-5"/></svg></div><div><div class="primary">Data Visualization Workshop</div><div class="secondary">Badge</div></div></div></td>
+                <td><div class="person"><div class="person-avatar"><img src="../../Assets/noora.png" alt="Noora Mohammed"></div><div><div class="primary">Noora Mohammed</div><div class="secondary">STU-2025-33214</div></div></div></td>
+                <td><div class="orgcell"><div class="orglogo" style="color:#248c81"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 19V7l7-4 7 4v12"/><path d="M8 11h8M8 15h5"/></svg></div>HEC Paris<br>Doha</div></td>
+                <td><div class="secondary">28 Apr 2025<br>02:10 PM</div></td><td><span class="priority low">Low</span></td>
+                <td><div class="due-green">07 May 2025<br><span>(4 days left)</span></div></td><td><button class="review">Review</button></td><td class="dots">⋮</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <div class="table-footer">
+            <span>Showing 1 to 5 of 1,248 submissions</span>
+            <div class="pagination"><span>‹</span><span class="pg-active">1</span><span>2</span><span>3</span><span>4</span><span>…</span><span>250</span><span>›</span></div>
+            <div class="rows">Rows per page:<div class="select">5 <span>⌄</span></div></div>
+          </div>
+        </div>
+
+        <div class="lower">
+          <div class="panel chart-panel">
+            <div class="chart-head"><div class="chart-title">Submissions by Type</div><div class="select">This Month <span>⌄</span></div></div>
+            <div class="chart-body">
+              <div class="donut-wrap">
+                <div class="donut">
+                  <svg viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="43" fill="none" stroke="#e8edf3" stroke-width="15"/>
+                    <circle cx="60" cy="60" r="43" fill="none" stroke="#1769e0" stroke-width="15" stroke-dasharray="128 270" stroke-dashoffset="0"/>
+                    <circle cx="60" cy="60" r="43" fill="none" stroke="#008765" stroke-width="15" stroke-dasharray="77 270" stroke-dashoffset="-132"/>
+                    <circle cx="60" cy="60" r="43" fill="none" stroke="#ff9200" stroke-width="15" stroke-dasharray="43 270" stroke-dashoffset="-212"/>
+                    <circle cx="60" cy="60" r="43" fill="none" stroke="#9563d8" stroke-width="15" stroke-dasharray="20 270" stroke-dashoffset="-258"/>
+                    <circle cx="60" cy="60" r="43" fill="none" stroke="#aab3c2" stroke-width="15" stroke-dasharray="7 270" stroke-dashoffset="-282"/>
+                  </svg>
+                  <div class="donut-center"><div class="donut-number">2,134</div><div class="donut-label">Total</div></div>
+                </div>
+              </div>
+              <div class="legend" style="width:46%">
+                <div class="legend-row"><span class="dot l-blue"></span>Skill Achievements <span class="num">1,012</span><span class="pct">(47.4%)</span></div>
+                <div class="legend-row"><span class="dot l-green"></span>Badge Issuance <span class="num">612</span><span class="pct">(28.7%)</span></div>
+                <div class="legend-row"><span class="dot l-orange"></span>Evidence Submission <span class="num">342</span><span class="pct">(16.0%)</span></div>
+                <div class="legend-row"><span class="dot l-purple"></span>Competency Level <span class="num">138</span><span class="pct">(6.5%)</span></div>
+                <div class="legend-row"><span class="dot l-gray"></span>Others <span class="num">30</span><span class="pct">(1.4%)</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel trend">
+            <div class="trend-head"><div class="chart-title">Verification Status Trend</div><div class="trend-legend"><span class="trend-item"><i class="line-dot t-green"></i>Approved</span><span class="trend-item"><i class="line-dot t-orange"></i>Revisions Requested</span><span class="trend-item"><i class="line-dot t-red"></i>Rejected</span></div><div class="select" style="margin-left:auto;min-width:95px;height:29px">This Month <span>⌄</span></div></div>
+            <svg class="trend-svg" viewBox="0 0 560 165" preserveAspectRatio="none">
+              <g stroke="#edf1f5" stroke-width="1"><line x1="45" y1="23" x2="535" y2="23"/><line x1="45" y1="52" x2="535" y2="52"/><line x1="45" y1="81" x2="535" y2="81"/><line x1="45" y1="110" x2="535" y2="110"/><line x1="45" y1="139" x2="535" y2="139"/></g>
+              <g fill="#34435c" font-size="9"><text x="8" y="142">0</text><text x="5" y="113">250</text><text x="5" y="84">500</text><text x="5" y="55">750</text><text x="8" y="26">1K</text>
+                <text x="44" y="158">01 Apr</text><text x="133" y="158">08 Apr</text><text x="222" y="158">15 Apr</text><text x="311" y="158">22 Apr</text><text x="402" y="158">29 Apr</text>
+              </g>
+              <polyline fill="none" stroke="#0b7f5c" stroke-width="2.1" points="45,86 70,80 95,83 120,70 145,66 170,68 195,58 220,55 245,47 270,50 295,55 320,52 345,48 370,40 395,45 420,41 445,51"/>
+              <polyline fill="none" stroke="#ff8a00" stroke-width="2" points="45,116 70,116 95,111 120,108 145,103 170,106 195,102 220,106 245,104 270,105 295,102 320,96 345,100 370,104 395,101 420,102 445,101"/>
+              <polyline fill="none" stroke="#ef4147" stroke-width="2" points="45,129 70,128 95,131 120,127 145,126 170,130 195,124 220,127 245,126 270,128 295,127 320,126 345,126 370,126 395,124 420,127 445,126"/>
+              <g fill="#0b7f5c"><circle cx="45" cy="86" r="3"/><circle cx="70" cy="80" r="3"/><circle cx="95" cy="83" r="3"/><circle cx="120" cy="70" r="3"/><circle cx="145" cy="66" r="3"/><circle cx="170" cy="68" r="3"/><circle cx="195" cy="58" r="3"/><circle cx="220" cy="55" r="3"/><circle cx="245" cy="47" r="3"/><circle cx="270" cy="50" r="3"/><circle cx="295" cy="55" r="3"/><circle cx="320" cy="52" r="3"/><circle cx="345" cy="48" r="3"/><circle cx="370" cy="40" r="3"/><circle cx="395" cy="45" r="3"/><circle cx="420" cy="41" r="3"/><circle cx="445" cy="51" r="3"/></g>
+              <g fill="#ff8a00"><circle cx="45" cy="116" r="3"/><circle cx="70" cy="116" r="3"/><circle cx="95" cy="111" r="3"/><circle cx="120" cy="108" r="3"/><circle cx="145" cy="103" r="3"/><circle cx="170" cy="106" r="3"/><circle cx="195" cy="102" r="3"/><circle cx="220" cy="106" r="3"/><circle cx="245" cy="104" r="3"/><circle cx="270" cy="105" r="3"/><circle cx="295" cy="102" r="3"/><circle cx="320" cy="96" r="3"/><circle cx="345" cy="100" r="3"/><circle cx="370" cy="104" r="3"/><circle cx="395" cy="101" r="3"/><circle cx="420" cy="102" r="3"/><circle cx="445" cy="101" r="3"/></g>
+              <g fill="#ef4147"><circle cx="45" cy="129" r="3"/><circle cx="70" cy="128" r="3"/><circle cx="95" cy="131" r="3"/><circle cx="120" cy="127" r="3"/><circle cx="145" cy="126" r="3"/><circle cx="170" cy="130" r="3"/><circle cx="195" cy="124" r="3"/><circle cx="220" cy="127" r="3"/><circle cx="245" cy="126" r="3"/><circle cx="270" cy="128" r="3"/><circle cx="295" cy="127" r="3"/><circle cx="320" cy="126" r="3"/><circle cx="345" cy="126" r="3"/><circle cx="370" cy="126" r="3"/><circle cx="395" cy="124" r="3"/><circle cx="420" cy="127" r="3"/><circle cx="445" cy="126" r="3"/></g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <aside class="right-stack">
+        <div class="panel right-panel overview">
+          <div class="right-head"><div class="right-title">Verification Overview</div><div class="select">This Month <span>⌄</span></div></div>
+          <div class="overview-content">
+            <div class="overview-donut"><div class="donut">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="43" fill="none" stroke="#edf1f4" stroke-width="15"/>
+                <circle cx="60" cy="60" r="43" fill="none" stroke="#087e5e" stroke-width="15" stroke-dasharray="204 270"/>
+                <circle cx="60" cy="60" r="43" fill="none" stroke="#ff8a00" stroke-width="15" stroke-dasharray="25 270" stroke-dashoffset="-208"/>
+                <circle cx="60" cy="60" r="43" fill="none" stroke="#ef5b60" stroke-width="15" stroke-dasharray="18 270" stroke-dashoffset="-237"/>
+                <circle cx="60" cy="60" r="43" fill="none" stroke="#aab3c2" stroke-width="15" stroke-dasharray="14 270" stroke-dashoffset="-258"/>
+              </svg>
+              <div class="donut-center"><div class="donut-number">2,134</div><div class="donut-label">Total</div></div>
+            </div></div>
+            <div class="overview-legend">
+              <div class="legend-row"><span class="dot l-green"></span>Approved <span class="num">1,612</span><span class="pct">(75.5%)</span></div>
+              <div class="legend-row"><span class="dot l-orange"></span>Revisions Requested <span class="num">342</span><span class="pct">(16.0%)</span></div>
+              <div class="legend-row"><span class="dot" style="background:#ef5b60"></span>Rejected <span class="num">100</span><span class="pct">(4.7%)</span></div>
+              <div class="legend-row"><span class="dot l-gray"></span>Withdrawn <span class="num">80</span><span class="pct">(3.8%)</span></div>
+            </div>
+          </div>
+          <div class="report">View Full Report <span>→</span></div>
+        </div>
+
+        <div class="panel right-panel turnaround">
+          <div class="right-head"><div class="right-title">Review Turnaround Time</div><div class="select">This Month <span>⌄</span></div></div>
+          <div class="turn-content">
+            <div class="metric"><div class="metric-label">Average Time</div><div class="metric-value">1.8 Days</div><div class="metric-note"><span class="up">↓ 0.4 days</span>vs Apr 2025</div></div>
+            <div class="metric"><div class="metric-label">Within SLA</div><div class="metric-value">94.2%</div><div class="metric-note"><span class="up">↑ 4.6%</span>vs Apr 2025</div></div>
+          </div>
+          <div class="report">View SLA Report <span>→</span></div>
+        </div>
+
+        <div class="panel right-panel activity">
+          <div class="right-head"><div class="right-title">Recent Activities</div></div>
+          <div class="activity-list">
+            <div class="activity-row"><div class="activity-icon a-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="m8 12 3 3 5-6"/></svg></div><div class="activity-main"><b>Achievement Verified</b><span>Information Literacy – Level 1</span></div><div class="activity-time">02 May 2025, 11:20 AM<br>by Aisha Al-Emadi</div></div>
+            <div class="activity-row"><div class="activity-icon a-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h10v18H7z"/><path d="M10 8h4M10 12h4M10 16h4"/></svg></div><div class="activity-main"><b>Revision Requested</b><span>Undergraduate Research Program</span></div><div class="activity-time">02 May 2025, 10:45 AM<br>by Mohammed Al-Mee</div></div>
+            <div class="activity-row"><div class="activity-icon a-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 19 6v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3Z"/><path d="m9 12 2 2 4-5"/></svg></div><div class="activity-main"><b>Evidence Approved</b><span>QF Sustainability Challenge Badge</span></div><div class="activity-time">02 May 2025, 09:30 AM<br>by Fatima Al-Kaabi</div></div>
+            <div class="activity-row"><div class="activity-icon a-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="m9 9 6 6M15 9l-6 6"/></svg></div><div class="activity-main"><b>Submission Rejected</b><span>Data Visualization Workshop</span></div><div class="activity-time">01 May 2025, 04:15 PM<br>by Ahmed Al-Hajri</div></div>
+            <div class="activity-row"><div class="activity-icon a-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18H6z"/><path d="M9 7h6M9 11h6M9 15h4"/></svg></div><div class="activity-main"><b>Appeal Submitted</b><span>Growth Mindset</span></div><div class="activity-time">01 May 2025, 02:50 PM<br>by Khalid Hassan</div></div>
+          </div>
+          <div class="viewall">View All Activities <span>→</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="bottom-note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#4b5a73" stroke-width="1.7"><rect x="6" y="10" width="12" height="10" rx="1.5"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg>
+      All times are displayed in Arabia Standard Time (AST).
+    </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="../shared/auth.js"></script>
+<script>AdminAuth.requireAuth();</script>
+<script src="../shared/sidebar.js"></script>
+<script>
+document.getElementById('qUserName').textContent = AdminAuth.getName();
+document.getElementById('qUserRole').textContent = AdminAuth.getRole();
+
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+</script>
+<script src="review-content.js"></script>
+</body>
+</html>

@@ -59,6 +59,7 @@ body{background:var(--qpg);display:block;min-height:100vh}
 .quser-trigger:hover{background:var(--qpg)}
 .qava{width:38px;height:38px;border-radius:50%;flex-shrink:0;overflow:hidden;display:grid;place-items:center;background:linear-gradient(140deg,#DCEBE2,#C4E0D0);color:var(--qg700)}
 .qava svg{width:22px;height:22px;stroke:var(--qg600);fill:none;stroke-width:1.6}
+.qava img{width:100%;height:100%;object-fit:cover}
 .qui{display:flex;flex-direction:column;align-items:flex-start;line-height:1.25;white-space:nowrap}
 .qui b{font-size:14px;font-weight:700;color:var(--qink)}
 .qui span{font-size:12px;color:var(--qmut)}

@@ -11,7 +11,7 @@
 .adm-comp-scope button{font:inherit}
 .adm-comp-scope svg{display:block}
 
-.adm-comp-scope .title-row{display:flex;align-items:flex-start;border-bottom:1px solid #e6ebf0;padding-bottom:17px}
+.adm-comp-scope .title-row{display:flex;align-items:flex-start}
 .adm-comp-scope h1{font-size:20px;line-height:1.2;margin:0;color:#0b2348;letter-spacing:-.4px}
 .adm-comp-scope .subtitle{font-size:11px;margin-top:7px;color:#34496a}
 .adm-comp-scope .title-actions{margin-left:auto;display:flex;gap:12px}
@@ -20,6 +20,20 @@
 .adm-comp-scope .split{display:flex}
 .adm-comp-scope .split .main-add{display:inline-flex;align-items:center;gap:8px;padding-right:23px;border-right:1px solid rgba(255,255,255,.3)}
 .adm-comp-scope .split .drop{width:40px;display:flex;align-items:center;justify-content:center;padding:0}
+
+.adm-comp-scope .steps{height:58px;border:1px solid #e4eaf0;border-radius:8px;margin-top:16px;display:grid;grid-template-columns:1.02fr 1fr 1fr 1fr 1.02fr;overflow:hidden}
+.adm-comp-scope .step{display:flex;align-items:center;padding:0 13px;gap:11px;border-right:1px solid #e4eaf0;position:relative;cursor:pointer}
+.adm-comp-scope .step:last-child{border-right:0}
+.adm-comp-scope .step.active{background:linear-gradient(90deg,#e6f7f4,#eefbf9);cursor:default}
+.adm-comp-scope .step.active:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:#07876f}
+.adm-comp-scope .steps .num{width:32px;height:32px;border-radius:50%;background:#f2f6fc;box-shadow:inset 0 0 0 1px #e3ebf6;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex:none;color:#334a6c}
+.adm-comp-scope .step.active .num{background:#07876f;color:#fff;box-shadow:none}
+.adm-comp-scope .step-title{font-weight:700;font-size:10.5px;line-height:14px;color:#233a5e}
+.adm-comp-scope .step.active .step-title{color:#0a6c56}
+.adm-comp-scope .step-sub{font-size:9px;color:#5c6b84;line-height:13px;white-space:nowrap}
+.adm-comp-scope .steps-next-row{display:flex;justify-content:flex-end;margin-top:18px}
+.adm-comp-scope .steps-next{height:36px;border:0;border-radius:6px;background:#00775f;color:#fff;font-weight:700;font-size:11px;display:flex;align-items:center;gap:16px;padding:0 16px;cursor:pointer}
+.adm-comp-scope .steps-next span:last-child{font-size:14px;font-weight:400}
 
 .adm-comp-scope .filters{height:74px;border:1px solid #e5ebf0;border-radius:9px;margin-top:16px;padding:18px 12px;display:flex;align-items:center;gap:22px}
 .adm-comp-scope .search-main{height:35px;width:305px;border:1px solid #dfe6ed;border-radius:7px;display:flex;align-items:center;padding:0 11px;cursor:text}
@@ -57,11 +71,14 @@
 .adm-comp-scope table{width:100%;border-collapse:collapse;table-layout:fixed}
 .adm-comp-scope th{height:33px;text-align:left;background:#f8fafb;color:#233a5e;font-size:9px;font-weight:700;padding:0 10px;border-bottom:1px solid #e4e9ee}
 .adm-comp-scope td{height:59px;border-bottom:1px solid #e8edf1;padding:0 10px;vertical-align:middle;color:#172d50;font-size:9.5px}
-.adm-comp-scope th:nth-child(1){width:28%}
-.adm-comp-scope th:nth-child(2){width:20%}
-.adm-comp-scope th:nth-child(3){width:18%}
-.adm-comp-scope th:nth-child(4){width:11%}
-.adm-comp-scope th:nth-child(5){width:17%}
+.adm-comp-scope tr.row-highlight{outline:1.5px solid #00775f;outline-offset:-1.5px;position:relative;z-index:1}
+.adm-comp-scope tr.row-highlight td{background:#dff3ef}
+.adm-comp-scope tr.row-highlight .comp-name{color:#00584a}
+.adm-comp-scope th:nth-child(1){width:24%}
+.adm-comp-scope th:nth-child(2){width:15%}
+.adm-comp-scope th:nth-child(3){width:30%;text-align:center}
+.adm-comp-scope th:nth-child(4){width:9%}
+.adm-comp-scope th:nth-child(5){width:16%}
 .adm-comp-scope th:nth-child(6){width:6%}
 .adm-comp-scope .comp{display:flex;align-items:center;gap:11px}
 .adm-comp-scope .comp-icon{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;color:#fff;flex:none}
@@ -69,13 +86,14 @@
 .adm-comp-scope .desc{font-size:8.7px;color:#334a6c;line-height:1.3;margin-top:2px;max-width:180px}
 .adm-comp-scope .domain{display:flex;align-items:center;gap:7px;font-size:9px;white-space:nowrap}
 .adm-comp-scope .dot{width:7px;height:7px;border-radius:50%;flex:none}
-.adm-comp-scope .levels{display:flex;gap:8px}
-.adm-comp-scope .level{width:23px;height:22px;border-radius:5px;background:linear-gradient(#e7f3ee,#eef6f3);display:grid;place-items:center;font-size:9px;color:#17304d}
+.adm-comp-scope .levels{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+.adm-comp-scope .level{height:26px;padding:0 12px;border-radius:6px;background:linear-gradient(#e7f3ee,#eef6f3);display:inline-flex;align-items:center;justify-content:center;font-size:10.5px;font-weight:650;white-space:nowrap;color:#17304d}
 .adm-comp-scope span.status{display:inline-flex;align-items:center;padding:5px 9px;border-radius:5px;font-size:9px;font-weight:700}
 .adm-comp-scope .active{background:#dff3ef;color:#00755f}
 .adm-comp-scope .draft{background:#e7f1ff;color:#2878d3}
 .adm-comp-scope .updated{font-size:9px;line-height:1.35}
-.adm-comp-scope .updated span{display:block;color:#263b5b}
+.adm-comp-scope .updated>span:last-child{white-space:nowrap}
+.adm-comp-scope .updated>span{display:block;color:#263b5b}
 .adm-comp-scope .dots{font-size:16px;font-weight:800;letter-spacing:1px;color:#0b2348;cursor:pointer}
 .adm-comp-scope .pagination{height:54px;display:flex;align-items:center;padding:0 16px;color:#1e3557}
 .adm-comp-scope .showing{font-size:9px}
@@ -91,7 +109,7 @@
 .adm-comp-scope .panel h2{font-size:12px;margin:0;color:#152a4b}
 .adm-comp-scope .domain-panel{height:247px}
 .adm-comp-scope .proficiency-panel{height:193px}
-.adm-comp-scope .activity-panel{height:264px}
+.adm-comp-scope .activity-panel{height:280px}
 .adm-comp-scope .donut-wrap{height:166px;display:flex;align-items:center;gap:16px}
 .adm-comp-scope .donut{width:145px;height:145px;position:relative;flex:none}
 .adm-comp-scope .donut svg{width:100%;height:100%;transform:rotate(-90deg)}
@@ -137,4 +155,9 @@
 }
 @media(max-width:1100px){
 .adm-comp-scope .workspace{grid-template-columns:1fr}
+}
+@media(max-width:900px){
+.adm-comp-scope .steps{grid-template-columns:repeat(5,minmax(0,1fr))}
+.adm-comp-scope .step{padding:0 8px;gap:6px}
+.adm-comp-scope .step-sub{display:none}
 }

@@ -30,7 +30,7 @@ window.AdminAuth = (function () {
   }
 
   function getName() {
-    try { return localStorage.getItem(NAME) || 'Admin'; } catch (e) { return 'Admin'; }
+    try { return localStorage.getItem(NAME) || 'Hassan Al-Kuwari'; } catch (e) { return 'Hassan Al-Kuwari'; }
   }
 
   function getRole() {

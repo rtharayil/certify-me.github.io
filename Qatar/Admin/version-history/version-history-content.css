@@ -1,0 +1,116 @@
+/* Competency Frameworks — Version History step. Exact-clone content
+   adapted to the shared Admin shell: navy/green palette, font scale
+   and card conventions matched to the other Admin sections instead
+   of the reference mockup's own blue/Arial styling. */
+
+.adm-vh-scope{font-size:12px;color:#0d2347;padding-bottom:26px}
+.adm-vh-scope{--navy:#0b2348;--green:#006b58;--green2:#008b72;--line:#e4eaf0;--muted:#5c6b84;--soft:#f7fafb}
+
+.adm-vh-scope h1{font-size:20px;line-height:1.2;margin:0;color:#0b2348;letter-spacing:-.4px}
+.adm-vh-scope .subtitle{font-size:11px;margin-top:7px;color:#34496a}
+
+.adm-vh-scope .steps{height:58px;border:1px solid var(--line);border-radius:8px;margin-top:16px;display:grid;grid-template-columns:1.02fr 1fr 1fr 1fr 1.02fr;overflow:hidden}
+.adm-vh-scope .step{display:flex;align-items:center;padding:0 13px;gap:11px;border-right:1px solid var(--line);position:relative;cursor:pointer}
+.adm-vh-scope .step:last-child{border-right:0}
+.adm-vh-scope .step.active{background:linear-gradient(90deg,#e6f7f4,#eefbf9);cursor:default}
+.adm-vh-scope .step.active:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:#07876f}
+.adm-vh-scope .num{width:32px;height:32px;border-radius:50%;background:#f2f6fc;box-shadow:inset 0 0 0 1px #e3ebf6;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex:none;color:#334a6c}
+.adm-vh-scope .active .num{background:#07876f;color:#fff;box-shadow:none}
+.adm-vh-scope .step-title{font-weight:700;font-size:10.5px;line-height:14px;color:#233a5e}
+.adm-vh-scope .active .step-title{color:#0a6c56}
+.adm-vh-scope .step-sub{font-size:9px;color:#5c6b84;line-height:13px;white-space:nowrap}
+
+.adm-vh-scope .content{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:12px;margin-top:16px}
+.adm-vh-scope .left{min-width:0;border-top:1px solid var(--line)}
+.adm-vh-scope .section-title{font-size:16px;font-weight:700;letter-spacing:-.3px;margin-top:12px;color:#0b2348}
+.adm-vh-scope .section-sub{font-size:10.5px;color:#5c6b84;margin-top:4px}
+.adm-vh-scope .filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.adm-vh-scope .field{height:34px;border:1px solid var(--line);border-radius:6px;background:#fff;display:flex;align-items:center;padding:0 10px;color:#334a6c;font-size:10px;white-space:nowrap;gap:8px}
+.adm-vh-scope .field.searchfield{width:200px}
+.adm-vh-scope .field.domain{width:104px;justify-content:space-between}
+.adm-vh-scope .field.tax{width:118px;justify-content:space-between}
+.adm-vh-scope .field.change{width:136px;justify-content:space-between}
+.adm-vh-scope .field.date{width:130px}
+.adm-vh-scope .filter-spacer{flex:1}
+.adm-vh-scope .smallbtn{height:34px;border:1px solid var(--line);border-radius:6px;background:#fff;color:#172d50;font-weight:700;font-size:10px;padding:0 12px;display:flex;align-items:center;gap:7px;cursor:pointer}
+.adm-vh-scope .smallbtn svg{width:14px;height:14px;stroke:#334a6c}
+
+.adm-vh-scope .table-wrap{margin-top:15px;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.adm-vh-scope table{width:100%;border-collapse:collapse;table-layout:fixed}
+.adm-vh-scope thead{background:#f8fafb}
+.adm-vh-scope th{height:32px;text-align:left;font-size:9px;color:#233a5e;font-weight:700;padding:0 12px;border-bottom:1px solid var(--line)}
+.adm-vh-scope td{height:50px;border-bottom:1px solid var(--line);padding:0 12px;vertical-align:middle;font-size:10px;color:#172d50}
+.adm-vh-scope tbody tr:last-child td{border-bottom:0}
+.adm-vh-scope tbody tr:first-child{background:#f5f9fe}
+.adm-vh-scope th:nth-child(1){width:19%} .adm-vh-scope th:nth-child(2){width:6%} .adm-vh-scope th:nth-child(3){width:11%} .adm-vh-scope th:nth-child(4){width:20%} .adm-vh-scope th:nth-child(5){width:13%} .adm-vh-scope th:nth-child(6){width:14%} .adm-vh-scope th:nth-child(7){width:11%} .adm-vh-scope th:nth-child(8){width:6%}
+.adm-vh-scope .comp{display:flex;align-items:center;gap:10px;min-width:0}
+.adm-vh-scope .comp>div{min-width:0}
+.adm-vh-scope .comp img{width:32px;height:32px;object-fit:cover;border-radius:8px;flex:none}
+.adm-vh-scope .compname{font-weight:700;font-size:10px;line-height:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.adm-vh-scope .compsub{font-size:9px;color:#5c6b84;line-height:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.adm-vh-scope .ver{font-weight:700;font-size:10px}
+.adm-vh-scope .pill{display:inline-flex;align-items:center;height:23px;padding:0 8px;border-radius:5px;font-size:9px;font-weight:700;white-space:nowrap}
+.adm-vh-scope .pill.updated{background:#dcf5ef;color:#00816d}
+.adm-vh-scope .pill.major{background:#fff0d7;color:#f18a00}
+.adm-vh-scope .pill.minor{background:#e9f3ff;color:#1771cb}
+.adm-vh-scope .pill.created{background:#efe5ff;color:#7b43d4}
+.adm-vh-scope .path{display:inline-flex;align-items:center;background:#f0f5fc;color:#54709e;height:23px;border-radius:4px;padding:0 7px;font-size:9px;white-space:nowrap}
+.adm-vh-scope .taxonomy{display:flex;gap:5px;flex-wrap:wrap}
+.adm-vh-scope .taxpill{height:22px;display:inline-flex;align-items:center;padding:0 7px;border-radius:4px;background:#ddf5ef;color:#00806b;font-size:9px;font-weight:700}
+.adm-vh-scope .taxpill.blue{background:#e6f1ff;color:#1566c3}
+.adm-vh-scope .changed{display:flex;align-items:center;gap:7px}
+.adm-vh-scope .pavatar{width:25px;height:25px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:8.5px;flex:none;overflow:hidden;background:#dfe6ec}
+.adm-vh-scope .pavatar img{width:100%;height:100%;object-fit:cover;object-position:center}
+.adm-vh-scope .changed span:last-child{font-size:9.5px;line-height:13px;white-space:nowrap}
+.adm-vh-scope .action{display:flex;align-items:center;gap:12px}
+.adm-vh-scope .view{height:30px;min-width:44px;padding:0 9px;border:1px solid var(--line);border-radius:6px;background:#fff;color:#172d50;font-size:9px;font-weight:700;cursor:pointer}
+.adm-vh-scope .dots{font-size:15px;line-height:16px;color:#334a6c;letter-spacing:1.5px;transform:rotate(90deg);width:9px;cursor:pointer}
+
+.adm-vh-scope .footer{height:54px;display:flex;align-items:center;padding:0 12px;color:#5c6b84;font-size:10px}
+.adm-vh-scope .count{flex:1}
+.adm-vh-scope .pages{display:flex;align-items:center;gap:16px}
+.adm-vh-scope .page{font-weight:700;cursor:pointer}
+.adm-vh-scope .page.current{background:#006c59;color:#fff;width:28px;height:28px;border-radius:5px;display:flex;align-items:center;justify-content:center}
+.adm-vh-scope .rows{margin-left:auto;display:flex;align-items:center;gap:7px}
+.adm-vh-scope .rows select{height:28px;width:44px;border:1px solid var(--line);border-radius:6px;background:#fff;color:#172d50;padding-left:8px;font-size:10px}
+
+.adm-vh-scope .panel{border:1px solid var(--line);border-radius:9px;padding:15px 16px;min-height:640px;background:#fff}
+.adm-vh-scope .panel-head{display:flex;align-items:center;justify-content:space-between}
+.adm-vh-scope .panel-title{font-size:15px;font-weight:700;letter-spacing:-.3px;color:#0b2348}
+.adm-vh-scope .close{font-size:20px;font-weight:300;color:#334a6c;line-height:16px;cursor:pointer}
+.adm-vh-scope .hero{display:flex;align-items:center;gap:12px;margin-top:13px}
+.adm-vh-scope .hero img{width:52px;height:52px;border-radius:9px;object-fit:cover}
+.adm-vh-scope .hero-title{font-size:12px;font-weight:700;color:#0b2348}
+.adm-vh-scope .vtag{display:inline-flex;margin-left:7px;background:#e5f0ff;color:#1264c1;padding:3px 6px;border-radius:5px;font-size:9px;font-weight:700}
+.adm-vh-scope .hero-sub{font-size:10px;color:#5c6b84;margin-top:4px}
+.adm-vh-scope .tabs{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line);margin-top:15px;height:38px}
+.adm-vh-scope .tab{display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#5c6b84;position:relative;cursor:pointer}
+.adm-vh-scope .tab.active{color:#086c60}
+.adm-vh-scope .tab.active:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:#008570}
+.adm-vh-scope .detail{padding-top:14px}
+.adm-vh-scope .detailrow{display:grid;grid-template-columns:96px 1fr;margin-bottom:12px;font-size:10px;line-height:14px}
+.adm-vh-scope .detailrow .label{font-weight:700;color:#233a5e}
+.adm-vh-scope .detailrow .value{color:#172d50}
+.adm-vh-scope .value .pill{height:22px}
+.adm-vh-scope .value .mut{color:#5c6b84}
+.adm-vh-scope .what,.adm-vh-scope .affected{margin-top:10px}
+.adm-vh-scope .block-title{font-size:11px;font-weight:700;color:#0b2348;margin-bottom:5px}
+.adm-vh-scope ul{padding-left:15px;margin:0;color:#334a6c;font-size:10px;line-height:15px}
+.adm-vh-scope .aff{display:flex;align-items:center;gap:8px;color:#334a6c;font-size:10px;line-height:20px}
+.adm-vh-scope .aff svg{width:14px;height:14px;stroke:#00775f;fill:none;stroke-width:1.8}
+.adm-vh-scope .panel-actions{display:flex;gap:10px;margin-top:22px}
+.adm-vh-scope .full{height:40px;flex:1;border:1px solid var(--line);border-radius:6px;background:#fff;color:#172d50;font-size:10px;font-weight:700;cursor:pointer}
+.adm-vh-scope .restore{height:40px;flex:1.2;border:0;border-radius:6px;background:#006f5c;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:7px;cursor:pointer}
+.adm-vh-scope .restore svg{width:15px;height:15px;stroke:#fff}
+
+.adm-vh-scope .bottom{display:flex;justify-content:flex-start;margin-top:18px}
+.adm-vh-scope .back{height:38px;min-width:96px;padding:0 14px;background:#fff;border:1px solid var(--line);border-radius:6px;color:#172d50;font-weight:700;font-size:11px;cursor:pointer}
+
+@media(max-width:1250px){
+  .adm-vh-scope .content{grid-template-columns:minmax(0,1fr) 300px}
+}
+@media(max-width:980px){
+  .adm-vh-scope .content{grid-template-columns:minmax(0,1fr)}
+  .adm-vh-scope .steps{grid-template-columns:repeat(5,1fr)}
+  .adm-vh-scope .step{padding:0 8px;gap:6px}.adm-vh-scope .step-sub{display:none}
+}
