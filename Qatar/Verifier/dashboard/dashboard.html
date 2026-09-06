@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verifier Dashboard – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../student/Home/student.css">
+<link rel="stylesheet" href="../../shared/typography.css">
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="dm">
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<div id="dw" class="active">
+
+<!-- ===== sidebar (same shell as student.html, Verifier nav contents) ===== -->
+<aside class="qsb" id="qsb">
+  <div class="qsb-brand">
+    <span class="qsb-logo"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation"></span>
+  </div>
+
+  <nav class="qsb-nav">
+    <button class="qnav active" data-view="dashboard">
+      <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Dashboard</button>
+    <button class="qnav" data-view="workspace">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>Review Evidence</button>
+    <button class="qnav" data-view="records">
+      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><path d="m9.5 13 2 2 3.5-3.5"/></svg>Verified Evidence</button>
+    <button class="qnav" data-view="students">
+      <svg viewBox="0 0 24 24"><path d="M4 19V9M9 19V5M14 19v-8M19 19V3"/></svg>History</button>
+    <button class="qnav" data-view="settings">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>Settings</button>
+  </nav>
+
+  <div class="qsb-help">
+    <button class="qnav" onclick="st('Help & Support coming soon')">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Help &amp; Support</button>
+  </div>
+</aside>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="qtitle-wrap">
+      <h1 class="qtitle">Universal Skills Passport</h1>
+      <span class="vf-portal-pill">Verifier Portal</span>
+    </div>
+    <div class="qtop-actions">
+      <div class="vf-search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" placeholder="Search by student name, competency, credential ID...">
+      </div>
+            <div class="qlang" role="group" aria-label="Language">
+        <button type="button" class="qlang-opt active" onclick="st('Language switching coming soon')">English</button>
+        <span class="qlang-div">|</span>
+        <button type="button" class="qlang-opt" onclick="st('Language switching coming soon')">العربية</button>
+      </div>
+      <button class="qicon-btn" onclick="st('3 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>12</b>
+      </button>
+      <button class="qicon-btn" onclick="st('Help & Support coming soon')" aria-label="Help">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><img src="../../Assets/Ahmed_al_sulaiti.png" alt="Ahmed Al-Sulaiti"></span>
+          <span class="qui"><b id="qUserName">Ahmed Al-Sulaiti</b><span>Verifier</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>My Profile</button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>Settings</button>
+          <hr>
+          <button type="button" class="qout" onclick="logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+    <div class="vf-scope">
+
+      <!-- 1. PAGE HEADER -->
+      <div class="vf-header">
+        <div>
+          <h1>Verifier Dashboard</h1>
+          <p>Review and verify competencies, evidence and credentials issued through the Universal Skills Passport.</p>
+        </div>
+        <button class="vf-start-btn" onclick="st('Start a Verification coming soon')">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          Start a Verification</button>
+      </div>
+
+      <!-- 2. STATS STRIP -->
+      <div class="vf-stats4">
+        <div class="qcard vf-stat">
+          <span class="vf-stat-ic blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5V12l4 2.3"/></svg></span>
+          <div class="vf-stat-t">
+            <b>2.1 hours</b>
+            <span>Average review time</span>
+            <span class="vf-trend"><span class="trend green">&#8595; 18%</span> vs last month</span>
+          </div>
+        </div>
+        <div class="qcard vf-stat">
+          <span class="vf-stat-ic green"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><polyline points="7.5 12.5 10.5 15.5 16.5 9"/></svg></span>
+          <div class="vf-stat-t">
+            <b>98.4%</b>
+            <span>Verification rate</span>
+            <span class="vf-trend"><span class="trend green">&#8593; 2.6%</span> vs last month</span>
+          </div>
+        </div>
+        <div class="qcard vf-stat">
+          <span class="vf-stat-ic purple"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></span>
+          <div class="vf-stat-t">
+            <b>12</b>
+            <span>Revision requests</span>
+            <span class="vf-trend"><span class="trend red">&#8593; 15%</span> vs last month</span>
+          </div>
+        </div>
+        <div class="qcard vf-stat">
+          <span class="vf-stat-ic blue"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><circle cx="17" cy="9" r="2.6"/><path d="M2.5 19c.6-3.6 2.9-5.6 6.5-5.6s5.9 2 6.5 5.6"/><path d="M15.5 14.3c2.2.3 3.8 2 4.2 4.7"/></svg></span>
+          <div class="vf-stat-t">
+            <b>356</b>
+            <span>Students verified</span>
+            <span class="vf-trend"><span class="trend green">&#8593; 12%</span> vs last month</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3-5. PENDING REVIEWS + QUEUE/TURNAROUND ROW -->
+      <div class="row2">
+
+        <!-- 3. PENDING REVIEWS -->
+        <div class="qcard vf-reviews">
+          <div class="qch"><h3>Pending Reviews — 18</h3><button class="qall" onclick="st('Pending Reviews list coming soon')">View All<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+
+          <div class="vf-table">
+            <div class="vf-trow vf-thead">
+              <span class="vf-tchk"><input type="checkbox"></span>
+              <span>Student</span>
+              <span>Competency</span>
+              <span>Evidence</span>
+              <span>Due</span>
+              <span>Priority</span>
+              <span>Actions</span>
+            </div>
+
+            <div class="vf-trow is-highlighted">
+              <span class="vf-tchk"><input type="checkbox"></span>
+              <span class="vf-student"><span class="vf-av"><img src="../../Assets/sara-profile-photo.png" alt="Sara Al-Mansoori"></span><span class="vf-student-t"><b>Sara Al-Mansoori</b><span>Qatar University</span></span></span>
+              <span>Systems Thinking</span>
+              <span class="vf-ev"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/></svg>4 items</span>
+              <span class="vf-due today">Today</span>
+              <span class="pill high">High</span>
+              <span class="vf-actions"><button class="vf-review-btn" onclick="window.location.href='../evidence-review/index.html'">Review</button><button class="qkebab" onclick="st('More actions coming soon')"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="19" r="1.6"/></svg></button></span>
+            </div>
+
+            <div class="vf-trow">
+              <span class="vf-tchk"><input type="checkbox"></span>
+              <span class="vf-student"><span class="vf-av"><img src="../../Assets/omar_hassan_profile.png" alt="Omar Hassan"></span><span class="vf-student-t"><b>Omar Hassan</b><span>Qatar University</span></span></span>
+              <span>Research &amp; Inquiry</span>
+              <span class="vf-ev"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/></svg>3 items</span>
+              <span class="vf-due today">Today</span>
+              <span class="pill high">High</span>
+              <span class="vf-actions"><button class="vf-review-btn" onclick="st('Review Omar Hassan coming soon')">Review</button><button class="qkebab" onclick="st('More actions coming soon')"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="19" r="1.6"/></svg></button></span>
+            </div>
+
+            <div class="vf-trow">
+              <span class="vf-tchk"><input type="checkbox"></span>
+              <span class="vf-student"><span class="vf-av"><img src="../../Assets/Noor_fatima_profile.png" alt="Noor Fatima"></span><span class="vf-student-t"><b>Noor Fatima</b><span>Qatar Foundation</span></span></span>
+              <span>Communication</span>
+              <span class="vf-ev"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/></svg>2 items</span>
+              <span class="vf-due tomorrow">Tomorrow</span>
+              <span class="pill medium">Medium</span>
+              <span class="vf-actions"><button class="vf-review-btn" onclick="st('Review Noor Ahmed coming soon')">Review</button><button class="qkebab" onclick="st('More actions coming soon')"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="19" r="1.6"/></svg></button></span>
+            </div>
+
+            <div class="vf-trow">
+              <span class="vf-tchk"><input type="checkbox"></span>
+              <span class="vf-student"><span class="vf-av"><img src="../../Assets/Khalid%20Al-Mutawa.png" alt="Khalid Al-Mutawa"></span><span class="vf-student-t"><b>Khalid Al-Mutawa</b><span>QatarEnergy</span></span></span>
+              <span>Data Analysis</span>
+              <span class="vf-ev"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/></svg>5 items</span>
+              <span class="vf-due tomorrow">Tomorrow</span>
+              <span class="pill medium">Medium</span>
+              <span class="vf-actions"><button class="vf-review-btn" onclick="st('Review Khalid Al-Mutawa coming soon')">Review</button><button class="qkebab" onclick="st('More actions coming soon')"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="19" r="1.6"/></svg></button></span>
+            </div>
+
+            <div class="vf-trow">
+              <span class="vf-tchk"><input type="checkbox"></span>
+              <span class="vf-student"><span class="vf-av"><img src="../../Assets/aisha.png" alt="Aisha Rahman"></span><span class="vf-student-t"><b>Aisha Rahman</b><span>Hamad Bin Khalifa University</span></span></span>
+              <span>Sustainability</span>
+              <span class="vf-ev"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/></svg>3 items</span>
+              <span class="vf-due">12 Sep 2026</span>
+              <span class="pill low">Low</span>
+              <span class="vf-actions"><button class="vf-review-btn" onclick="st('Review Aisha Rahman coming soon')">Review</button><button class="qkebab" onclick="st('More actions coming soon')"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="19" r="1.6"/></svg></button></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- right column: queue + turnaround -->
+        <div class="vf-stack">
+
+          <!-- 4. VERIFICATION QUEUE -->
+          <div class="qcard">
+            <div class="qch"><h3>Verification Queue</h3></div>
+            <div class="progress-wrap">
+              <div class="donut-box">
+                <svg class="donut" viewBox="0 0 120 120">
+                  <circle class="dtrack" cx="60" cy="60" r="50"/>
+                  <circle class="dseg red" cx="60" cy="60" r="50" stroke-dasharray="104.72 314.16" stroke-dashoffset="0"/>
+                  <circle class="dseg amber" cx="60" cy="60" r="50" stroke-dasharray="139.63 314.16" stroke-dashoffset="-104.72"/>
+                  <circle class="dseg green" cx="60" cy="60" r="50" stroke-dasharray="69.8 314.16" stroke-dashoffset="-244.35"/>
+                </svg>
+                <div class="donut-center"><b>18</b><span>Pending</span></div>
+              </div>
+              <div class="progress-legend">
+                <div class="pleg-row"><span class="pdot red"></span><span class="pleg-lbl">High Priority</span><b>6</b></div>
+                <div class="pleg-row"><span class="pdot amber"></span><span class="pleg-lbl">Medium Priority</span><b>8</b></div>
+                <div class="pleg-row"><span class="pdot green"></span><span class="pleg-lbl">Low Priority</span><b>4</b></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. REVIEW TURNAROUND TIME -->
+          <div class="qcard">
+            <div class="qch"><h3>Review Turnaround Time</h3><button class="qall" onclick="st('Turnaround details coming soon')">View Details<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+            <div class="vf-chart-wrap">
+              <div class="vf-yaxis"><span>40</span><span>30</span><span>20</span><span>10</span><span>0</span></div>
+              <div class="vf-barchart">
+                <div class="vf-bar-col"><div class="vf-bar-track"><span class="vf-bar-val">32</span><span class="vf-bar" style="height:80%"></span></div><span class="vf-bar-lbl">&lt; 1 hour</span></div>
+                <div class="vf-bar-col"><div class="vf-bar-track"><span class="vf-bar-val">24</span><span class="vf-bar" style="height:60%"></span></div><span class="vf-bar-lbl">1-4 hours</span></div>
+                <div class="vf-bar-col"><div class="vf-bar-track"><span class="vf-bar-val">10</span><span class="vf-bar" style="height:25%"></span></div><span class="vf-bar-lbl">4-24 hours</span></div>
+                <div class="vf-bar-col"><div class="vf-bar-track"><span class="vf-bar-val">4</span><span class="vf-bar" style="height:10%"></span></div><span class="vf-bar-lbl">&gt; 24 hours</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 6-8. ACTIVITY / COMPETENCY / PROMO ROW -->
+      <div class="vf-row3">
+
+        <!-- 6. RECENT ACTIVITY -->
+        <div class="qcard">
+          <div class="qch"><h3>Recent Activity</h3><button class="qall" onclick="st('Full activity log coming soon')">View All<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          <div class="feed-list">
+            <div class="feed-row">
+              <span class="feed-ic green"><svg viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></svg></span>
+              <div class="feed-body"><p><b>Verified competency</b></p><p>Digital Literacy — Fatima Al-Kuwari</p><span class="feed-time">10 mins ago</span></div>
+            </div>
+            <div class="feed-row">
+              <span class="feed-ic red"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><path d="m10 15 2 2 4-4"/></svg></span>
+              <div class="feed-body"><p><b>Requested revision</b></p><p>Research Methods — Ali Al-Thani</p><span class="feed-time">28 mins ago</span></div>
+            </div>
+            <div class="feed-row">
+              <span class="feed-ic green"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></span>
+              <div class="feed-body"><p><b>Verified credential</b></p><p>Sustainability Champion — Layla Hassan</p><span class="feed-time">1 hour ago</span></div>
+            </div>
+            <div class="feed-row">
+              <span class="feed-ic purple"><svg viewBox="0 0 24 24"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-9l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg></span>
+              <div class="feed-body"><p><b>Comment added</b></p><p>&ldquo;Please provide additional evidence for impact metrics.&rdquo;</p><span class="feed-time">2 hours ago</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. VERIFICATION BY COMPETENCY -->
+        <div class="qcard">
+          <div class="qch"><h3>Verification by Competency</h3><button class="vf-period">Last 30 Days
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button></div>
+          <div class="vf-vc-list">
+            <div class="vf-vc-row"><span class="vf-vc-name">Systems Thinking</span><span class="skill-bar"><b class="skill-fill blue" style="width:96%"></b></span><span class="vf-vc-pct">96%</span></div>
+            <div class="vf-vc-row"><span class="vf-vc-name">Research &amp; Inquiry</span><span class="skill-bar"><b class="skill-fill blue" style="width:92%"></b></span><span class="vf-vc-pct">92%</span></div>
+            <div class="vf-vc-row"><span class="vf-vc-name">Communication</span><span class="skill-bar"><b class="skill-fill blue" style="width:88%"></b></span><span class="vf-vc-pct">88%</span></div>
+            <div class="vf-vc-row"><span class="vf-vc-name">Data Analysis</span><span class="skill-bar"><b class="skill-fill blue" style="width:90%"></b></span><span class="vf-vc-pct">90%</span></div>
+            <div class="vf-vc-row"><span class="vf-vc-name">Sustainability</span><span class="skill-bar"><b class="skill-fill blue" style="width:94%"></b></span><span class="vf-vc-pct">94%</span></div>
+            <div class="vf-vc-row"><span class="vf-vc-name">Leadership</span><span class="skill-bar"><b class="skill-fill blue" style="width:87%"></b></span><span class="vf-vc-pct">87%</span></div>
+          </div>
+        </div>
+
+        <!-- 8. PROMO CARD -->
+        <div class="qcard vf-promo">
+          <div class="goal-ic"><svg viewBox="0 0 24 24"><path d="M12 3 19 6v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="m9 12 2 2 4-5"/></svg></div>
+          <h3>Trusted. Verified. Real Impact.</h3>
+          <p>Your reviews help ensure the integrity of learner achievements and build a trusted global talent ecosystem.</p>
+          <button class="goal-btn" onclick="st('Learn More coming soon')">Learn More</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="qfoot">
+    <span>© 2026 Qatar Foundation. All rights reserved.</span>
+    <nav><a href="#">Privacy Policy</a><i>|</i><a href="#">Terms of Use</a><i>|</i><a href="#">Support</a></nav>
+  </footer>
+
+</div>
+</div>
+
+<script>
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+function logout(){st('Sign out coming soon')}
+
+document.querySelectorAll('.qsb-nav .qnav, .qsb-help .qnav').forEach(b=>{
+  b.addEventListener('click',function(){
+    const v=this.dataset.view;
+    if(!v||v==='dashboard')return;
+    document.getElementById('qsb').classList.remove('open');
+    if(v==='workspace'){window.location.href='../evidence-review/index.html';return}
+    if(v==='records'){window.location.href='../competency-decision/index.html';return}
+    if(v==='students'){window.location.href='../history/index.html';return}
+    st(this.textContent.trim()+' — coming soon');
+  });
+});
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+</script>
+</body>
+</html>

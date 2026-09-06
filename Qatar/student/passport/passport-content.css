@@ -1,0 +1,316 @@
+/* My Passport page — reuses shell + qcard-family classes from student.css.
+   Only new, page-specific rules live here. */
+
+/* shared-component color variants not yet defined elsewhere */
+.skill-fill{display:block}
+.skill-fill.blue{background:var(--qblue)}
+.skill-fill.purple{background:#6d4fc9}
+.skill-fill.red{background:var(--qred)}
+.feed-ic.purple{background:#F2E9FF}.feed-ic.purple svg{stroke:#6d4fc9}
+.feed-ic.blue{background:var(--qbluebg)}.feed-ic.blue svg{stroke:var(--qblue)}
+
+.psp-scope{display:flex;flex-direction:column;gap:var(--qgap)}
+
+/* 1. Hero row */
+.psp-hero-row{display:grid;grid-template-columns:1fr 320px;gap:var(--qgap);align-items:start}
+.psp-profile{position:relative;overflow:hidden;display:grid;grid-template-columns:auto 1fr auto;gap:24px;padding:26px;background:linear-gradient(160deg,#EAF5EE,#F3FBF6);border-color:#D8EFE1}
+.psp-profile::before{content:'';position:absolute;inset:0;background:url("../../Assets/leaf.png") right center/60% no-repeat;mix-blend-mode:multiply;opacity:.35;pointer-events:none}
+.psp-avatar,.psp-profile-body,.psp-quote{position:relative;z-index:1}
+
+.psp-avatar{position:relative;width:104px;height:104px;border-radius:50%;flex-shrink:0;overflow:visible}
+.psp-avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center 10%;display:block;box-shadow:0 0 0 4px #fff}
+.psp-avatar-edit{position:absolute;right:0;bottom:0;width:30px;height:30px;border-radius:50%;background:var(--qg700);border:2.5px solid #fff;display:grid;place-items:center;cursor:pointer}
+.psp-avatar-edit svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+.psp-profile-body{min-width:0}
+.psp-name-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.psp-name-row h2{font-family:'DM Sans',sans-serif;font-size:26px;font-weight:700;letter-spacing:-.3px;color:var(--qg800)}
+.psp-verified{width:21px;height:21px;fill:var(--qblue);flex-shrink:0}
+.psp-meta{display:flex;flex-wrap:wrap;align-items:center;gap:9px;font-size:13px;color:var(--qbody);margin-bottom:12px}
+.psp-meta i{font-style:normal;color:var(--qline)}
+.psp-meta span{display:inline-flex;align-items:center;gap:6px}
+.psp-meta svg{width:15px;height:15px;stroke:var(--qmut);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.psp-bio{font-size:13.5px;color:var(--qbody);line-height:1.6;max-width:560px;margin-bottom:16px}
+.psp-tags{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.psp-tag{padding:6px 14px;background:#fff;border:1px solid var(--qline);border-radius:20px;font-size:12px;font-weight:600;color:var(--qg700)}
+.psp-tag-add{display:inline-flex;align-items:center;gap:5px;padding:6px 14px 6px 10px;background:var(--qg700);border:none;border-radius:20px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:#fff;cursor:pointer}
+.psp-tag-add svg{width:13px;height:13px;stroke:#fff;fill:none;stroke-width:2.5}
+
+.psp-quote{text-align:right;padding-left:20px;border-left:1px solid #D8EFE1;flex-shrink:0;max-width:170px}
+.psp-quote-mark{font-family:'Playfair Display',serif;font-size:34px;color:var(--qg500);line-height:.6;display:block}
+.psp-quote p{font-family:'Playfair Display',serif;font-style:italic;font-size:16px;color:var(--qg800);line-height:1.35;margin-bottom:10px}
+.psp-edit-link{margin-left:auto;justify-content:flex-end}
+.psp-link-btn{display:inline-flex;align-items:center;gap:6px;background:none;border:none;padding:0;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:var(--qblue);cursor:pointer}
+.psp-link-btn svg{width:14px;height:14px;stroke:var(--qblue);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.psp-link-btn:hover{text-decoration:underline}
+
+.psp-share{display:flex;flex-direction:column;padding:20px;gap:12px}
+.psp-share-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.psp-share-text{min-width:0}
+.psp-share-title{font-size:15.5px;font-weight:700;color:var(--qink)}
+.psp-share-text p{font-size:12px;color:var(--qbody);margin-top:4px;line-height:1.45}
+.psp-copy-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:12px;background:#fff;border:1px solid var(--qline);border-radius:var(--qrads);font-family:'DM Sans',sans-serif;font-size:13.5px;font-weight:600;color:var(--qink);cursor:pointer}
+.psp-copy-btn svg{width:15px;height:15px;stroke:var(--qink);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.psp-settings-link{display:flex;align-items:center;justify-content:flex-start;gap:7px;background:none;border:none;font-family:'DM Sans',sans-serif;font-size:12.5px;font-weight:600;color:var(--qblue);cursor:pointer}
+.psp-settings-link svg{width:14px;height:14px;stroke:var(--qblue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.psp-qr{width:88px;height:88px;border:1px solid var(--qline);border-radius:8px;padding:5px;flex:none}
+
+/* 2. Stats strip */
+.psp-stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--qgap)}
+.psp-stat{display:flex;align-items:center;gap:16px;padding:22px;min-height:100px}
+.psp-stat-ic{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;flex-shrink:0}
+.psp-stat-ic svg{width:27px;height:27px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.psp-stat-ic.blue{background:var(--qbluebg)}.psp-stat-ic.blue svg{stroke:var(--qblue)}
+.psp-stat-ic.purple{background:#F2E9FF}.psp-stat-ic.purple svg{stroke:#6d4fc9}
+.psp-stat-ic.green{background:var(--qokbg)}.psp-stat-ic.green svg{stroke:var(--qok)}
+.psp-stat-ic.purple2{background:#F2E9FF}.psp-stat-ic.purple2 svg{stroke:#8742ed}
+.psp-stat-ic.teal{background:#E1F5F4}.psp-stat-ic.teal svg{stroke:#0f8b8d}
+.psp-stat div b{display:block;font-size:28px;font-weight:800;color:var(--qink);letter-spacing:-.3px;line-height:1.2}
+.psp-stat div span{font-size:13px;color:var(--qbody)}
+
+/* 3. Three-column row */
+.psp-triple{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.6fr) minmax(0,1fr);gap:var(--qgap);align-items:start}
+.psp-left-col{display:flex;flex-direction:column;gap:var(--qgap);min-width:0;align-self:stretch}
+/* the lower card takes up the remaining column height, level with the journey card */
+.psp-pathways{display:flex;flex-direction:column;flex:1}
+
+/* 3a-ii. Learning Pathways */
+.psp-path-list{flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:2px}
+.psp-path-row{display:flex;align-items:center;gap:14px;width:100%;padding:8px 6px;background:none;border:none;border-radius:var(--qrads);cursor:pointer;text-align:left;font-family:'DM Sans',sans-serif;transition:.2s}
+.psp-path-row:hover{background:var(--qpg)}
+.psp-path-t{flex:1;min-width:0}
+.psp-path-t b{display:block;font-size:13px;font-weight:700;color:var(--qink);margin-bottom:2px}
+.psp-path-t span{font-size:12px;color:var(--qbody)}
+.psp-path-chev{width:18px;height:18px;stroke:var(--qmut);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+
+.psp-ring{--pct:0%;--ring-c:var(--qg600);position:relative;isolation:isolate;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;flex-shrink:0;font-size:10.5px;font-weight:700;color:var(--qink);background:conic-gradient(var(--ring-c) var(--pct),var(--qline) 0)}
+/* the hole must sit above the conic ring but behind the % label */
+.psp-ring::before{content:'';position:absolute;inset:5px;border-radius:50%;background:#fff;z-index:-1}
+.psp-ring.purple{--ring-c:#6d4fc9}
+
+/* 3a. Skills & Competencies */
+.psp-skill-list{display:flex;flex-direction:column;gap:10px}
+.psp-skill-row{display:flex;align-items:center;gap:10px}
+.psp-skill-ic{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;flex-shrink:0}
+.psp-skill-ic svg{width:15px;height:15px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.psp-skill-ic.blue{background:var(--qbluebg)}.psp-skill-ic.blue svg{stroke:var(--qblue)}
+.psp-skill-ic.green{background:var(--qokbg)}.psp-skill-ic.green svg{stroke:var(--qok)}
+.psp-skill-ic.purple{background:#F2E9FF}.psp-skill-ic.purple svg{stroke:#6d4fc9}
+.psp-skill-ic.amber{background:var(--qamberbg)}.psp-skill-ic.amber svg{stroke:var(--qamber)}
+.psp-skill-ic.red{background:#FCE4E4}.psp-skill-ic.red svg{stroke:var(--qred)}
+.psp-skill-name{flex:0 0 150px;font-size:12.5px;font-weight:600;color:var(--qink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.psp-skill-row .skill-bar{flex:1}
+.psp-skill-pct{flex:none;width:34px;text-align:right;font-size:12px;font-weight:700;color:var(--qbody)}
+
+/* 3b. My Learning Journey */
+.psp-journey{display:flex;flex-direction:column}
+.psp-3d-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;background:#fff;border:1px solid var(--qline);border-radius:20px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:var(--qg700);cursor:pointer}
+.psp-3d-btn svg{width:14px;height:14px;stroke:var(--qg700);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+.psp-journey{position:relative}
+.psp-tree-wrap{position:relative;flex:1;min-height:560px;display:grid;place-items:center;margin-bottom:14px}
+.psp-tree-center{position:relative;z-index:1;width:min(420px,62%)}
+
+/* --- living tree: one static base image + masked foliage clusters --- */
+.psp-tree{position:relative;width:100%;aspect-ratio:1/1}
+.psp-tree-base{width:100%;height:100%;object-fit:contain;display:block;-webkit-user-drag:none;user-select:none}
+
+/* each layer re-uses the same image, masked down to a single leaf cluster,
+   pivoting from the trunk so tips travel further than the base */
+.psp-foliage{position:absolute;inset:0;background:url("../../Assets/tree.png") 0 0/100% 100% no-repeat;
+  pointer-events:none;transform-origin:50% 58%;will-change:transform;
+  transition:filter .3s ease}
+.psp-foliage[data-c="1"]{-webkit-mask-image:radial-gradient(ellipse 18% 13% at 50% 9%,#000 40%,transparent 74%);mask-image:radial-gradient(ellipse 18% 13% at 50% 9%,#000 40%,transparent 74%);animation:psp-sway-a 7.6s ease-in-out -1.2s infinite}
+.psp-foliage[data-c="2"]{-webkit-mask-image:radial-gradient(ellipse 16% 13% at 32% 16%,#000 40%,transparent 74%);mask-image:radial-gradient(ellipse 16% 13% at 32% 16%,#000 40%,transparent 74%);animation:psp-sway-b 9.2s ease-in-out -3.4s infinite}
+.psp-foliage[data-c="3"]{-webkit-mask-image:radial-gradient(ellipse 16% 13% at 68% 17%,#000 40%,transparent 74%);mask-image:radial-gradient(ellipse 16% 13% at 68% 17%,#000 40%,transparent 74%);animation:psp-sway-c 8.0s ease-in-out -5.1s infinite}
+.psp-foliage[data-c="4"]{-webkit-mask-image:radial-gradient(ellipse 15% 14% at 86% 32%,#000 38%,transparent 74%);mask-image:radial-gradient(ellipse 15% 14% at 86% 32%,#000 38%,transparent 74%);animation:psp-sway-d 9.8s ease-in-out -2.3s infinite}
+.psp-foliage[data-c="5"]{-webkit-mask-image:radial-gradient(ellipse 15% 14% at 14% 32%,#000 38%,transparent 74%);mask-image:radial-gradient(ellipse 15% 14% at 14% 32%,#000 38%,transparent 74%);animation:psp-sway-b 10.4s ease-in-out -7.6s infinite}
+.psp-foliage[data-c="6"]{-webkit-mask-image:radial-gradient(ellipse 15% 12% at 24% 47%,#000 38%,transparent 74%);mask-image:radial-gradient(ellipse 15% 12% at 24% 47%,#000 38%,transparent 74%);animation:psp-sway-c 8.6s ease-in-out -0.7s infinite}
+.psp-foliage[data-c="7"]{-webkit-mask-image:radial-gradient(ellipse 15% 12% at 78% 46%,#000 38%,transparent 74%);mask-image:radial-gradient(ellipse 15% 12% at 78% 46%,#000 38%,transparent 74%);animation:psp-sway-a 8.3s ease-in-out -4.5s infinite}
+.psp-foliage[data-c="8"]{-webkit-mask-image:radial-gradient(ellipse 14% 12% at 60% 26%,#000 38%,transparent 74%);mask-image:radial-gradient(ellipse 14% 12% at 60% 26%,#000 38%,transparent 74%);animation:psp-sway-d 7.8s ease-in-out -6.2s infinite}
+.psp-foliage.is-lit{filter:brightness(1.07) saturate(1.14) drop-shadow(0 0 7px rgba(21,122,74,.45))}
+
+/* breeze — tiny rotations about the trunk, seamless loops, no whole-tree shake */
+@keyframes psp-sway-a{0%,100%{transform:rotate(0deg) translate3d(0,0,0)}
+  30%{transform:rotate(1.2deg) translate3d(2px,-1.5px,0)}
+  62%{transform:rotate(-.6deg) translate3d(-1.3px,-2.5px,0)}}
+@keyframes psp-sway-b{0%,100%{transform:rotate(0deg) translate3d(0,0,0)}
+  35%{transform:rotate(-1.1deg) translate3d(-1.8px,-1.8px,0)}
+  70%{transform:rotate(.74deg) translate3d(1.6px,-.9px,0)}}
+@keyframes psp-sway-c{0%,100%{transform:rotate(0deg) translate3d(0,0,0)}
+  25%{transform:rotate(.82deg) translate3d(1.3px,-2.2px,0)}
+  58%{transform:rotate(-.96deg) translate3d(-1.6px,-1.1px,0)}}
+@keyframes psp-sway-d{0%,100%{transform:rotate(0deg) translate3d(0,0,0)}
+  40%{transform:rotate(1.02deg) translate3d(1.6px,-1.1px,0)}
+  75%{transform:rotate(-.76deg) translate3d(-1.3px,-2.1px,0)}}
+
+/* invisible hotspots sitting exactly on the leaf clusters */
+.psp-hotspots{position:absolute;inset:0}
+.psp-hotspot{position:absolute;width:20%;height:18%;transform:translate(-50%,-50%);padding:0;border:none;background:none;border-radius:50%;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.psp-hotspot:focus-visible{outline:2px solid var(--qg500);outline-offset:1px}
+.psp-node[data-key]{cursor:pointer}
+.psp-node.is-active .psp-node-ic{box-shadow:0 0 0 3px rgba(21,122,74,.16)}
+
+/* tooltip */
+.psp-tip{position:absolute;z-index:30;width:216px;padding:12px 13px;background:#fff;border:1px solid var(--qline);border-radius:12px;
+  box-shadow:0 12px 30px rgba(16,40,28,.16);opacity:0;visibility:hidden;transform:translateY(4px) scale(.985);
+  transition:opacity .2s ease,transform .2s ease,visibility .2s;pointer-events:none}
+.psp-tip.is-open{opacity:1;visibility:visible;transform:none;pointer-events:auto}
+.psp-tip::after{content:'';position:absolute;left:var(--caret,50%);width:10px;height:10px;background:#fff;border:1px solid var(--qline);transform:translateX(-50%) rotate(45deg)}
+.psp-tip[data-side="top"]::after{bottom:-6px;border-top:0;border-left:0}
+.psp-tip[data-side="bottom"]::after{top:-6px;border-bottom:0;border-right:0}
+.psp-tip-head{display:flex;align-items:flex-start;gap:9px;margin-bottom:8px}
+.psp-tip-leaf{width:28px;height:28px;border-radius:8px;background:var(--qokbg);display:grid;place-items:center;flex-shrink:0}
+.psp-tip-leaf svg{width:15px;height:15px;stroke:var(--qok);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.psp-tip[data-status="verified"] .psp-tip-leaf{background:var(--qg700)}
+.psp-tip[data-status="verified"] .psp-tip-leaf svg{stroke:#fff}
+.psp-tip-h{min-width:0;display:flex;flex-direction:column;gap:2px}
+.psp-tip-title{font-size:12.5px;font-weight:700;color:var(--qink);line-height:1.25}
+.psp-tip-level{font-size:10.5px;font-weight:700;color:var(--qg600)}
+.psp-tip-text{font-size:11.5px;line-height:1.5;color:var(--qbody);margin-bottom:10px}
+.psp-tip-foot{display:flex;align-items:center;gap:9px}
+.psp-tip-bar{flex:1;height:5px;border-radius:4px;background:var(--qline);overflow:hidden}
+.psp-tip-bar i{display:block;height:100%;border-radius:4px;background:var(--qg500)}
+.psp-tip-count{flex:none;font-size:10px;font-weight:700;color:var(--qmut);white-space:nowrap}
+
+/* honour reduced-motion: keep the exact same tree, just still */
+/* --- falling leaves -------------------------------------------------
+   A transparent sheet over the tree. Motion is written frame by frame
+   from passport-leaves.js — there is deliberately no CSS animation or
+   transition here, and nothing clips, so a leaf can sail out past the
+   card when the wind takes it. (body already has overflow-x:hidden, so
+   this can never add a horizontal scrollbar.)                        */
+.psp-leaf-layer{position:absolute;inset:0;z-index:6;pointer-events:none;overflow:visible;
+  perspective:760px;perspective-origin:50% 40%}
+/* the leaf sheet itself never clips — a leaf must be able to sail out past
+   the card. The page column clips on x only (overflow:clip keeps the y axis
+   visible and creates no scroll container), so a leaf on its way off screen
+   can never widen the page. */
+.psp-scope{overflow-x:clip}
+.psp-leaf{position:absolute;left:0;top:0;width:var(--lw,13px);height:calc(var(--lw,13px) * 1.34);
+  opacity:0;pointer-events:none;transform-style:preserve-3d;
+  filter:drop-shadow(0 2px 2.5px rgba(22,52,30,.24))}
+.psp-leaf svg{width:100%;height:100%;display:block;overflow:visible}
+.psp-leaf .lf-body{fill:var(--l1,#6d9a12)}
+.psp-leaf .lf-shade{fill:var(--l2,#43690a);opacity:.42}
+.psp-leaf .lf-vein{fill:none;stroke:var(--l3,#9fc23a);stroke-width:.9;stroke-linecap:round;opacity:.5}
+.psp-leaf .lf-stem{fill:none;stroke:var(--l2,#43690a);stroke-width:1.1;stroke-linecap:round;opacity:.75}
+
+@media(prefers-reduced-motion:reduce){
+  .psp-foliage{animation:none!important}
+  .psp-tip{transition:opacity .01ms linear}
+  .psp-leaf-layer{display:none}
+}
+
+.psp-node{position:absolute;z-index:3;display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;width:96px}
+.psp-node b{font-size:11px;font-weight:700;color:var(--qink);line-height:1.25}
+.psp-node span{font-size:10.5px;font-weight:700;color:var(--qg600)}
+.psp-node-ic{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#fff;border:2px solid currentColor}
+.psp-node-ic svg{width:19px;height:19px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.psp-node-ic.navy{color:#1c3a63}.psp-node-ic.navy svg{stroke:#1c3a63}
+.psp-node-ic.blue{color:var(--qblue)}.psp-node-ic.blue svg{stroke:var(--qblue)}
+.psp-node-ic.amber{color:var(--qamber)}.psp-node-ic.amber svg{stroke:var(--qamber)}
+.psp-node-ic.purple{color:#6d4fc9}.psp-node-ic.purple svg{stroke:#6d4fc9}
+.psp-node-ic.teal{color:#0f8b8d}.psp-node-ic.teal svg{stroke:#0f8b8d}
+
+/* the 7 nodes sit on one true circle around the tree square — evenly
+   spaced every 360/7≈51.4°, starting at 12 o'clock and going clockwise
+   (n1 → n3 → n5 → n7 → n6 → n4 → n2). Both x and y are percentages of
+   the same square (.psp-tree-center), so the ring stays a circle no
+   matter how wide or tall the surrounding card is. */
+.psp-node{top:50%;left:50%;transform:translate(-50%,-50%)}
+.psp-node.n1{top:-8%;left:50%}
+.psp-node.n3{top:13.8%;left:95.3%}
+.psp-node.n5{top:62.9%;left:106.6%}
+.psp-node.n7{top:102.3%;left:75.2%}
+.psp-node.n6{top:102.3%;left:24.8%}
+.psp-node.n4{top:62.9%;left:-6.6%}
+.psp-node.n2{top:13.8%;left:4.7%}
+
+.psp-explore-btn{display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;background:var(--qg700);border:none;border-radius:var(--qrads);font-family:'DM Sans',sans-serif;font-size:13.5px;font-weight:700;color:#fff;cursor:pointer;transition:.2s}
+.psp-explore-btn:hover{background:var(--qg800)}
+.psp-explore-btn svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* 3c. Recent Activity */
+/* run the card down to the full height of the row, level with the journey card */
+.psp-activity{align-self:stretch;display:flex;flex-direction:column}
+/* spread the entries down the full card, with one continuous timeline behind them */
+.psp-act-list{position:relative;flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:12px}
+.psp-act-list::before{content:'';position:absolute;left:16px;top:30px;bottom:30px;width:1.5px;background:var(--qline)}
+.psp-act-row{position:relative;z-index:1;display:flex;align-items:flex-start;gap:12px}
+.psp-act-dot{display:none}
+
+/* 4. Bottom row */
+.psp-quad{display:grid;grid-template-columns:minmax(0,1.22fr) minmax(0,1fr) minmax(0,1.09fr) minmax(0,1.06fr);gap:var(--qgap);align-items:start}
+
+/* 4a. Featured Digital Badges */
+.psp-badge-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.psp-badge-item{display:flex;flex-direction:column;align-items:center;text-align:center;gap:3px;min-width:0}
+.psp-badge-item img{width:48px;height:48px;object-fit:contain;margin-bottom:2px}
+.psp-badge-item b{display:block;width:100%;font-size:10.5px;font-weight:700;color:var(--qink);line-height:1.3;overflow-wrap:normal;word-break:keep-all}
+.psp-badge-item span{display:block;width:100%;font-size:9px;color:var(--qbody);overflow-wrap:break-word}
+
+/* 4b. Recent Credentials */
+.psp-cred-list{display:flex;flex-direction:column;gap:16px}
+.psp-cred-row{display:flex;align-items:flex-start;gap:11px}
+.psp-cred-ic{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;flex-shrink:0}
+.psp-cred-ic svg{width:16px;height:16px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.psp-cred-ic.green{background:var(--qokbg)}.psp-cred-ic.green svg{stroke:var(--qok)}
+.psp-cred-ic.blue{background:var(--qbluebg)}.psp-cred-ic.blue svg{stroke:var(--qblue)}
+.psp-cred-ic.red{background:#FCE4E4}.psp-cred-ic.red svg{stroke:var(--qred)}
+.psp-cred-row b{display:block;font-size:12.5px;font-weight:700;color:var(--qink);margin-bottom:3px}
+.psp-cred-status{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;color:var(--qok)}
+.psp-cred-status svg{width:12px;height:12px;stroke:var(--qok);fill:none;stroke-width:2.5}
+
+/* 4c. Recent Experience */
+.psp-exp-list{display:flex;flex-direction:column;gap:16px}
+.psp-exp-row{display:flex;align-items:flex-start;gap:11px}
+.psp-exp-ic{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;flex-shrink:0}
+.psp-exp-ic svg{width:16px;height:16px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.psp-exp-ic.teal{background:#E1F5F4}.psp-exp-ic.teal svg{stroke:#0f8b8d}
+.psp-exp-ic.green{background:var(--qokbg)}.psp-exp-ic.green svg{stroke:var(--qok)}
+.psp-exp-ic.blue{background:var(--qbluebg)}.psp-exp-ic.blue svg{stroke:var(--qblue)}
+.psp-exp-row b{display:block;font-size:12.5px;font-weight:700;color:var(--qink);margin-bottom:3px}
+.psp-exp-row span{font-size:11px;color:var(--qbody)}
+
+/* 4d. Career Aspirations */
+.psp-career{display:flex;flex-direction:column}
+.psp-career-text{font-size:12.5px;color:var(--qbody);line-height:1.6;margin-bottom:16px;flex:1}
+.psp-career-btn{display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;background:#fff;border:1.5px solid var(--qg700);border-radius:var(--qrads);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;color:var(--qg700);cursor:pointer}
+.psp-career-btn svg{width:16px;height:16px;stroke:var(--qg700);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- responsive ---------- */
+@media(max-width:1180px){
+  .psp-hero-row{grid-template-columns:1fr}
+  .psp-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .psp-triple{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .psp-journey{grid-column:1 / -1}
+  .psp-quad{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .psp-tree-center{width:min(300px,70%)}
+}
+@media(max-width:860px){
+  .psp-profile{grid-template-columns:1fr;gap:18px}
+  .psp-quote{max-width:none;text-align:left;padding-left:0;border-left:0;border-top:1px solid #D8EFE1;padding-top:14px}
+  .psp-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .psp-triple,.psp-quad{grid-template-columns:1fr}
+  .psp-tree-center{width:min(320px,82%)}
+  .psp-tip{width:min(230px,78vw)}
+}
+@media(max-width:560px){
+  .psp-stats{grid-template-columns:1fr}
+  .psp-badge-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .psp-skill-name{flex-basis:110px}
+  .psp-tree-center{width:88%}
+}
+
+/* ---------- Arabic / RTL (this page only) ---------- */
+html[dir="rtl"] .psp-scope{font-family:'DM Sans',Tahoma,Arial,sans-serif}
+html[dir="rtl"] .psp-quote{text-align:left;padding-left:0;padding-right:20px;border-left:0;border-right:1px solid #D8EFE1}
+html[dir="rtl"] .psp-edit-link{margin-left:0;margin-right:auto}
+html[dir="rtl"] .psp-path-row{text-align:right}
+html[dir="rtl"] .psp-skill-pct{text-align:left}
+html[dir="rtl"] .psp-career-btn svg:first-child{order:2}
+html[dir="rtl"] .psp-career-btn svg:last-child{order:0}
+@media(max-width:860px){
+  html[dir="rtl"] .psp-quote{text-align:right;padding-right:0;border-right:0;border-top:1px solid #D8EFE1}
+}

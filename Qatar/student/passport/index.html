@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Passport – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../Home/student.css">
+<link rel="stylesheet" href="../../shared/typography.css">
+<link rel="stylesheet" href="passport-content.css">
+</head>
+<body class="dm">
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<div id="dw" class="active">
+
+<!-- ===== sidebar (same shell as student.html) ===== -->
+<aside class="qsb" id="qsb">
+  <div class="qsb-brand">
+    <span class="qsb-logo"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation"></span>
+  </div>
+
+  <nav class="qsb-nav">
+    <button class="qnav" data-view="home" onclick="window.location.href='../Home/student.html'">
+      <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span data-en="Home" data-ar="الرئيسية">Home</span></button>
+    <button class="qnav active" data-view="passport">
+      <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2.5"/><line x1="1" y1="10" x2="23" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg><span data-en="My Passport" data-ar="جواز مهاراتي">My Passport</span></button>
+    <button class="qnav" data-view="skills" onclick="window.location.href='../skills/index.html'">
+      <svg viewBox="0 0 24 24"><polygon points="12 2 21 7.5 21 16.5 12 22 3 16.5 3 7.5"/><polyline points="3 7.5 12 13 21 7.5"/><line x1="12" y1="13" x2="12" y2="22"/></svg><span data-en="My Competencies" data-ar="كفاءاتي">My Competencies</span></button>
+    <button class="qnav" data-view="skillgap" onclick="window.location.href='../skillgap/index.html'">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/></svg><span data-en="Skill Gap Analysis" data-ar="تحليل فجوة المهارات">Skill Gap Analysis</span></button>
+    <button class="qnav" data-view="opportunities" onclick="window.location.href='../opportunities/index.html'">
+      <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span data-en="Opportunities" data-ar="الفرص">Opportunities</span></button>
+    <button class="qnav" data-view="pathways" onclick="window.location.href='../pathways/index.html'">
+      <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.7"/><circle cx="6" cy="12" r="2.7"/><circle cx="18" cy="19" r="2.7"/><line x1="8.4" y1="10.6" x2="15.6" y2="6.6"/><line x1="8.4" y1="13.4" x2="15.6" y2="17.4"/></svg><span data-en="Learning Pathways" data-ar="مسارات التعلّم">Learning Pathways</span></button>
+    <button class="qnav" data-view="evidence" onclick="window.location.href='../evidence/index.html'">
+      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg><span data-en="My Evidence" data-ar="أدلتي">My Evidence</span></button>
+    <button class="qnav" data-view="achievements" onclick="window.location.href='../achievements/index.html'">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><polyline points="8.2 13.5 7 22 12 19 17 22 15.8 13.5"/></svg><span data-en="Achievements" data-ar="الإنجازات">Achievements</span></button>
+    <button class="qnav" data-view="career-opportunities">
+      <svg viewBox="0 0 24 24"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg><span data-en="Career Opportunities" data-ar="الفرص الوظيفية">Career Opportunities</span></button>
+    <button class="qnav" data-view="messages">
+      <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2.5"/><polyline points="2.5 6 12 13 21.5 6"/></svg><span data-en="Messages" data-ar="الرسائل">Messages</span></button>
+  </nav>
+
+  <div class="qsb-help">
+    <button class="qnav" onclick="st('Help &amp; Support coming soon')">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span data-en="Help &amp; Support" data-ar="المساعدة والدعم">Help &amp; Support</span></button>
+  </div>
+</aside>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <h1 class="qtitle" data-en="Universal Skills Passport" data-ar="جواز المهارات الشامل">Universal Skills Passport</h1>
+    <div class="qtop-actions">
+      <button class="qicon-btn" onclick="st('Search coming soon')" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <div class="qlang" role="group" aria-label="Language">
+        <button type="button" id="pspLangEn" class="qlang-opt active" onclick="setPassportLang('en')">English</button>
+        <span class="qlang-div">|</span>
+        <button type="button" id="pspLangAr" class="qlang-opt" onclick="setPassportLang('ar')">العربية</button>
+      </div>
+      <button class="qicon-btn" onclick="st('3 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>3</b>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><img src="../../Assets/sara-profile-photo.png" alt=""></span>
+          <span class="qui"><b id="qUserName">Sara Al Mansoori</b><span data-en="Engineering Student" data-ar="طالبة هندسة">Engineering Student</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg><span data-en="My Profile" data-ar="ملفي الشخصي">My Profile</span></button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span data-en="Settings" data-ar="الإعدادات">Settings</span></button>
+          <hr>
+          <button type="button" class="qout" onclick="logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg><span data-en="Sign Out" data-ar="تسجيل الخروج">Sign Out</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+    <div class="psp-scope">
+
+      <!-- 1. HERO ROW: profile card + share card -->
+      <div class="psp-hero-row">
+
+        <div class="qcard psp-profile">
+          <span class="psp-avatar">
+            <img src="../../Assets/sara-profile-photo.png" alt="Sara Al-Mansoori">
+            <button type="button" class="psp-avatar-edit" onclick="st('Change photo coming soon')" aria-label="Change photo"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z"/><circle cx="12" cy="13" r="4"/></svg></button>
+          </span>
+
+          <div class="psp-profile-body">
+            <div class="psp-name-row">
+              <h2 id="pspName" data-en="Sara Al-Mansoori" data-ar="سارة المنصوري">Sara Al-Mansoori</h2>
+              <svg class="psp-verified" viewBox="0 0 24 24" aria-label="Verified"><path d="M12 2 14.8 4H18a2 2 0 0 1 2 2v3.2L22 12l-2 2.8V18a2 2 0 0 1-2 2h-3.2L12 22l-2.8-2H6a2 2 0 0 1-2-2v-3.2L2 12l2-2.8V6a2 2 0 0 1 2-2h3.2Z"/><path d="m8.5 12.2 2.4 2.3 4.6-4.8" stroke="#fff" fill="none"/></svg>
+            </div>
+            <div class="psp-meta">
+              <span data-en="Computer Science Student" data-ar="طالبة علوم حاسوب">Computer Science Student</span><i>|</i>
+              <span><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg><span data-en="Qatar University" data-ar="جامعة قطر">Qatar University</span></span><i>|</i>
+              <span><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span data-en="Doha, Qatar" data-ar="الدوحة، قطر">Doha, Qatar</span></span>
+            </div>
+            <p class="psp-bio" data-en="Passionate about using technology to create a more sustainable and inclusive future. I am a lifelong learner, eager to contribute to Qatar&rsquo;s vision through innovation, collaboration and positive impact." data-ar="شغوفة باستخدام التكنولوجيا لخلق مستقبل أكثر استدامة وشمولاً. أنا متعلمة مدى الحياة، حريصة على المساهمة في رؤية قطر من خلال الابتكار والتعاون والأثر الإيجابي.">Passionate about using technology to create a more sustainable and inclusive future. I am a lifelong learner, eager to contribute to Qatar&rsquo;s vision through innovation, collaboration and positive impact.</p>
+            <div class="psp-tags">
+              <span class="psp-tag" data-en="AI &amp; Data" data-ar="الذكاء الاصطناعي والبيانات">AI &amp; Data</span>
+              <span class="psp-tag" data-en="Sustainability" data-ar="الاستدامة">Sustainability</span>
+              <span class="psp-tag" data-en="Innovation" data-ar="الابتكار">Innovation</span>
+              <span class="psp-tag" data-en="Community Impact" data-ar="الأثر المجتمعي">Community Impact</span>
+              <button class="psp-tag-add" onclick="st('Add interest coming soon')"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><span data-en="Add" data-ar="إضافة">Add</span></button>
+            </div>
+          </div>
+
+          <div class="psp-quote">
+            <span class="psp-quote-mark">&ldquo;</span>
+            <p data-en="Learning today<br>for a better<br>tomorrow." data-ar="التعلم اليوم<br>من أجل غدٍ<br>أفضل." data-html="1">Learning today<br>for a better<br>tomorrow.</p>
+            <button class="psp-link-btn psp-edit-link" onclick="st('Edit profile coming soon')"><svg viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg><span data-en="Edit" data-ar="تعديل">Edit</span></button>
+          </div>
+        </div>
+
+        <div class="qcard psp-share">
+          <div class="psp-share-top">
+            <div class="psp-share-text">
+              <h3 class="psp-share-title" data-en="Share My Passport" data-ar="شارك جواز مهاراتي">Share My Passport</h3>
+              <p data-en="Showcase your verified skills and achievements" data-ar="اعرض مهاراتك وإنجازاتك الموثّقة">Showcase your verified skills and achievements</p>
+            </div>
+            <img class="psp-qr" src="../../Assets/passport-qr.png" alt="Passport QR code">
+          </div>
+          <button class="psp-copy-btn" onclick="st('Link copied')"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7.5-.5l-2 2a5 5 0 0 0 7 7l1-1"/></svg><span data-en="Copy Link" data-ar="نسخ الرابط">Copy Link</span></button>
+          <button class="psp-settings-link" onclick="st('Sharing settings coming soon')"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span data-en="Sharing Settings" data-ar="إعدادات المشاركة">Sharing Settings</span></button>
+        </div>
+
+      </div>
+
+      <!-- 2. STATS STRIP -->
+      <div class="psp-stats">
+        <div class="qcard psp-stat">
+          <span class="psp-stat-ic blue"><svg viewBox="0 0 24 24"><path d="M12 3 19 6v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="m9 12 2 2 4-5"/></svg></span>
+          <div><b>18</b><span data-en="Verified Badges" data-ar="شارات موثّقة">Verified Badges</span></div>
+        </div>
+        <div class="qcard psp-stat">
+          <span class="psp-stat-ic purple"><svg viewBox="0 0 24 24"><path d="M22 10 12 4 2 10l10 6 10-6Z"/><path d="M6 12.5V17c0 1.4 2.7 3 6 3s6-1.6 6-3v-4.5"/></svg></span>
+          <div><b>12</b><span data-en="Academic Achievements" data-ar="الإنجازات الأكاديمية">Academic Achievements</span></div>
+        </div>
+        <div class="qcard psp-stat">
+          <span class="psp-stat-ic green"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+          <div><b>6</b><span data-en="Internships &amp; Placements" data-ar="التدريب والتوظيف">Internships &amp; Placements</span></div>
+        </div>
+        <div class="qcard psp-stat">
+          <span class="psp-stat-ic purple2"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20c.5-3.6 2.9-6 6.5-6s6 2.4 6.5 6"/><circle cx="18" cy="9" r="2.6"/><path d="M15.5 20c.4-2.7 1.9-4.5 4-4.8"/></svg></span>
+          <div><b>6</b><span data-en="Co-Curricular Activities" data-ar="الأنشطة اللامنهجية">Co-Curricular Activities</span></div>
+        </div>
+        <div class="qcard psp-stat">
+          <span class="psp-stat-ic teal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 2.5c-4 4-4 15 0 19M12 2.5c4 4 4 15 0 19M3 8h18M3 16h18"/></svg></span>
+          <div><b>4</b><span data-en="Social Impact Projects" data-ar="مشاريع الأثر المجتمعي">Social Impact Projects</span></div>
+        </div>
+      </div>
+
+      <!-- 3. THREE-COLUMN ROW -->
+      <div class="psp-triple">
+
+        <div class="psp-left-col">
+
+        <!-- 3a. SKILLS & COMPETENCIES -->
+        <div class="qcard psp-skills">
+          <div class="qch"><h3 data-en="Skills &amp; Competencies" data-ar="المهارات والكفاءات">Skills &amp; Competencies</h3><button class="qall" onclick="window.location.href='../skills/index.html'"><span data-en="View All" data-ar="عرض الكل">View All</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          <div class="psp-skill-list">
+            <div class="psp-skill-row">
+              <span class="psp-skill-ic blue"><svg viewBox="0 0 24 24"><path d="M12 2a4 4 0 0 0-4 4c0 1.4.7 2.6 1.8 3.4C8.7 10.2 8 11.5 8 13a4 4 0 0 0 8 0c0-1.5-.7-2.8-1.8-3.6C15.3 8.6 16 7.4 16 6a4 4 0 0 0-4-4Z"/><path d="M9 17v1a3 3 0 0 0 6 0v-1"/></svg></span>
+              <span class="psp-skill-name" data-en="Artificial Intelligence" data-ar="الذكاء الاصطناعي">Artificial Intelligence</span>
+              <span class="skill-bar"><b class="skill-fill blue" style="width:85%"></b></span>
+              <span class="psp-skill-pct">85%</span>
+            </div>
+            <div class="psp-skill-row">
+              <span class="psp-skill-ic green"><svg viewBox="0 0 24 24"><path d="M4 19V9M9 19V5M14 19v-8M19 19V3"/></svg></span>
+              <span class="psp-skill-name" data-en="Data Analysis" data-ar="تحليل البيانات">Data Analysis</span>
+              <span class="skill-bar"><b class="skill-fill green" style="width:78%"></b></span>
+              <span class="psp-skill-pct">78%</span>
+            </div>
+            <div class="psp-skill-row">
+              <span class="psp-skill-ic purple"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 2.5c-4 4-4 15 0 19M12 2.5c4 4 4 15 0 19M3 8h18M3 16h18"/></svg></span>
+              <span class="psp-skill-name" data-en="Sustainability" data-ar="الاستدامة">Sustainability</span>
+              <span class="skill-bar"><b class="skill-fill purple" style="width:72%"></b></span>
+              <span class="psp-skill-pct">72%</span>
+            </div>
+            <div class="psp-skill-row">
+              <span class="psp-skill-ic amber"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20c.5-3.6 2.9-6 6.5-6s6 2.4 6.5 6"/><circle cx="18" cy="9" r="2.6"/><path d="M15.5 20c.4-2.7 1.9-4.5 4-4.8"/></svg></span>
+              <span class="psp-skill-name" data-en="Leadership" data-ar="القيادة">Leadership</span>
+              <span class="skill-bar"><b class="skill-fill amber" style="width:68%"></b></span>
+              <span class="psp-skill-pct">68%</span>
+            </div>
+            <div class="psp-skill-row">
+              <span class="psp-skill-ic red"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4 9 9 0 0 1-3.5-.9L3 20l1-5.5a8.4 8.4 0 0 1 1-9A8.5 8.5 0 0 1 12.5 3a8.4 8.4 0 0 1 8.5 8.4Z"/></svg></span>
+              <span class="psp-skill-name" data-en="Communication" data-ar="التواصل">Communication</span>
+              <span class="skill-bar"><b class="skill-fill red" style="width:90%"></b></span>
+              <span class="psp-skill-pct">90%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3a-ii. LEARNING PATHWAYS -->
+        <div class="qcard psp-pathways">
+          <div class="qch"><h3 data-en="Learning Pathways" data-ar="مسارات التعلّم">Learning Pathways</h3><button class="qall" onclick="window.location.href='../pathways/index.html'"><span data-en="View All" data-ar="عرض الكل">View All</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          <div class="psp-path-list">
+            <button type="button" class="psp-path-row" onclick="window.location.href='../pathways/index.html'">
+              <span class="psp-ring green" style="--pct:75%">75%</span>
+              <div class="psp-path-t"><b data-en="AI for a Sustainable Future" data-ar="الذكاء الاصطناعي من أجل مستقبل مستدام">AI for a Sustainable Future</b><span data-en="3 of 4 modules completed" data-ar="اكتملت 3 من 4 وحدات">3 of 4 modules completed</span></div>
+              <svg class="psp-path-chev" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
+            </button>
+            <button type="button" class="psp-path-row" onclick="window.location.href='../pathways/index.html'">
+              <span class="psp-ring purple" style="--pct:40%">40%</span>
+              <div class="psp-path-t"><b data-en="Green Innovation Leader" data-ar="قائد الابتكار الأخضر">Green Innovation Leader</b><span data-en="In progress" data-ar="قيد التنفيذ">In progress</span></div>
+              <svg class="psp-path-chev" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
+            </button>
+            <button type="button" class="psp-path-row" onclick="window.location.href='../pathways/index.html'">
+              <span class="psp-ring green" style="--pct:100%">100%</span>
+              <div class="psp-path-t"><b data-en="Data Analyst Career Path" data-ar="المسار الوظيفي لمحلل بيانات">Data Analyst Career Path</b><span data-en="Completed" data-ar="مكتمل">Completed</span></div>
+              <svg class="psp-path-chev" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        </div>
+
+        <!-- 3b. MY LEARNING JOURNEY -->
+        <div class="qcard psp-journey">
+          <div class="qch"><h3 data-en="My Learning Journey" data-ar="رحلتي التعليمية">My Learning Journey</h3><button class="psp-3d-btn" onclick="st('3D view coming soon')"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg><span data-en="3D View" data-ar="عرض ثلاثي الأبعاد">3D View</span></button></div>
+
+          <div class="psp-tree-wrap">
+            <div class="psp-tree-center">
+              <!-- orbit ring: positioned relative to this exact square, so the
+                   7 nodes sit on a true circle around the tree regardless of
+                   how wide/tall the surrounding card happens to be -->
+              <div class="psp-node n1" data-key="entrepreneurship" role="button" tabindex="0"><span class="psp-node-ic navy"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span><b data-en="Entrepreneurship" data-ar="ريادة الأعمال">Entrepreneurship</b><span>6/6</span></div>
+              <div class="psp-node n2" data-key="innovation" role="button" tabindex="0"><span class="psp-node-ic blue"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.6.6 1 1.6 1 2.5h6c0-.9.4-1.9 1-2.5A6 6 0 0 0 12 2Z"/></svg></span><b data-en="Innovation &amp; Problem Solving" data-ar="الابتكار وحل المشكلات">Innovation &amp; Problem Solving</b><span>5/6</span></div>
+              <div class="psp-node n3" data-key="interdisciplinary" role="button" tabindex="0"><span class="psp-node-ic amber"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20c.5-3.6 2.9-6 6.5-6s6 2.4 6.5 6"/><circle cx="18" cy="9" r="2.6"/><path d="M15.5 20c.4-2.7 1.9-4.5 4-4.8"/></svg></span><b data-en="Interdisciplinary Approaches" data-ar="المناهج متعددة التخصصات">Interdisciplinary Approaches</b><span>4/6</span></div>
+              <div class="psp-node n4" data-key="ethical" role="button" tabindex="0"><span class="psp-node-ic purple"><svg viewBox="0 0 24 24"><path d="m16 3 1.5 3 3 .5-2.2 2.2.5 3.1-2.8-1.5-2.8 1.5.5-3.1L11.5 6.5l3-.5Z"/><path d="M7 13a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/></svg></span><b data-en="Ethical Reasoning" data-ar="التفكير الأخلاقي">Ethical Reasoning</b><span>4/5</span></div>
+              <div class="psp-node n5" data-key="global" role="button" tabindex="0"><span class="psp-node-ic blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5a15 15 0 0 1 0 19 15 15 0 0 1 0-19Z"/></svg></span><b data-en="Global Learning" data-ar="التعلّم العالمي">Global Learning</b><span>5/6</span></div>
+              <div class="psp-node n6" data-key="civic" role="button" tabindex="0"><span class="psp-node-ic teal"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6C19 16.5 12 21 12 21Z"/></svg></span><b data-en="Civic Values" data-ar="القيم المدنية">Civic Values</b><span>3/4</span></div>
+              <div class="psp-node n7" data-key="growth" role="button" tabindex="0"><span class="psp-node-ic amber"><svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="4"/></svg></span><b data-en="Personal Growth" data-ar="النمو الشخصي">Personal Growth</b><span>5/6</span></div>
+
+              <div class="psp-tree" id="pspTree">
+                <img class="psp-tree-base" src="../../Assets/tree.png" alt="Your learning journey, shown as a growing tree" decoding="async">
+                <!-- foliage clusters: same image, masked to one cluster each, swaying independently -->
+                <span class="psp-foliage" data-c="1" aria-hidden="true"></span>
+                <span class="psp-foliage" data-c="2" aria-hidden="true"></span>
+                <span class="psp-foliage" data-c="3" aria-hidden="true"></span>
+                <span class="psp-foliage" data-c="4" aria-hidden="true"></span>
+                <span class="psp-foliage" data-c="5" aria-hidden="true"></span>
+                <span class="psp-foliage" data-c="6" aria-hidden="true"></span>
+                <span class="psp-foliage" data-c="7" aria-hidden="true"></span>
+                <span class="psp-foliage" data-c="8" aria-hidden="true"></span>
+                <div class="psp-hotspots"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="psp-tip" id="pspTip" role="tooltip" aria-hidden="true">
+            <div class="psp-tip-head">
+              <span class="psp-tip-leaf"><svg viewBox="0 0 24 24"><path d="M6 14c2-6 7-9 13-9-1 7-4 12-11 13-2-.5-3-2-2-4Z"/><path d="M6 19c2-4 5-7 9-9"/></svg></span>
+              <span class="psp-tip-h">
+                <b class="psp-tip-title"></b>
+                <span class="psp-tip-level"></span>
+              </span>
+            </div>
+            <p class="psp-tip-text"></p>
+            <div class="psp-tip-foot">
+              <span class="psp-tip-bar"><i></i></span>
+              <span class="psp-tip-count"></span>
+            </div>
+          </div>
+
+          <button class="psp-explore-btn" onclick="st('Full journey view coming soon')"><span data-en="Explore Full Journey" data-ar="استكشف الرحلة كاملة">Explore Full Journey</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+
+        <!-- 3c. RECENT ACTIVITY -->
+        <div class="qcard psp-activity">
+          <div class="qch"><h3 data-en="Recent Activity" data-ar="النشاط الأخير">Recent Activity</h3><button class="qall" onclick="window.location.href='../achievements/index.html'"><span data-en="View All" data-ar="عرض الكل">View All</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          <div class="psp-act-list">
+            <div class="psp-act-row">
+              <span class="psp-act-dot green"></span>
+              <span class="feed-ic green"><svg viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></svg></span>
+              <div class="feed-body"><p><b data-en="Credential Verified" data-ar="تم التحقق من الشهادة">Credential Verified</b></p><p data-en="Systems Thinking — Level 3" data-ar="التفكير المنظومي — المستوى 3">Systems Thinking — Level 3</p><span class="feed-time">03 Sep 2026</span></div>
+            </div>
+            <div class="psp-act-row">
+              <span class="psp-act-dot purple"></span>
+              <span class="feed-ic purple"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+              <div class="feed-body"><p><b data-en="New Badge Earned" data-ar="تم الحصول على شارة جديدة">New Badge Earned</b></p><p data-en="Sustainability Champion" data-ar="بطل الاستدامة">Sustainability Champion</p><span class="feed-time">15 Aug 2026</span></div>
+            </div>
+            <div class="psp-act-row">
+              <span class="psp-act-dot gold"></span>
+              <span class="feed-ic gold"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><polyline points="8.2 13.5 7 22 12 19 17 22 15.8 13.5"/></svg></span>
+              <div class="feed-body"><p><b data-en="Learning Pathway Completed" data-ar="اكتمل مسار التعلّم">Learning Pathway Completed</b></p><p data-en="Data Analyst Career Path" data-ar="المسار الوظيفي لمحلل بيانات">Data Analyst Career Path</p><span class="feed-time">12 Aug 2026</span></div>
+            </div>
+            <div class="psp-act-row">
+              <span class="psp-act-dot green"></span>
+              <span class="feed-ic green"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+              <div class="feed-body"><p><b data-en="Internship Added" data-ar="تمت إضافة تدريب">Internship Added</b></p><p data-en="QatarEnergy — Software Engineering Intern" data-ar="قطر للطاقة — متدربة هندسة برمجيات">QatarEnergy — Software Engineering Intern</p><span class="feed-time">20 Jul 2026</span></div>
+            </div>
+            <div class="psp-act-row">
+              <span class="psp-act-dot blue"></span>
+              <span class="feed-ic blue"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></span>
+              <div class="feed-body"><p><b data-en="Reflection Essay Added" data-ar="تمت إضافة مقال تأملي">Reflection Essay Added</b></p><p data-en="AI for Social Good" data-ar="الذكاء الاصطناعي من أجل الصالح الاجتماعي">AI for Social Good</p><span class="feed-time">15 Jul 2026</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 4. BOTTOM ROW -->
+      <div class="psp-quad">
+
+        <!-- 4a. FEATURED DIGITAL BADGES -->
+        <div class="qcard psp-badges">
+          <div class="qch"><h3 data-en="Featured Digital Badges" data-ar="الشارات الرقمية المميزة">Featured Digital Badges</h3><button class="qall" onclick="st('All badges coming soon')"><span data-en="View All" data-ar="عرض الكل">View All</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          <div class="psp-badge-grid">
+            <div class="psp-badge-item"><img src="../../Assets/badge-ai-fundamentals.png" alt="AI Fundamentals"><b data-en="AI Fundamentals" data-ar="أساسيات الذكاء الاصطناعي">AI Fundamentals</b><span data-en="Qatar University" data-ar="جامعة قطر">Qatar University</span></div>
+            <div class="psp-badge-item"><img src="../../Assets/badge-sustainability-champion.png" alt="Sustainability Champion"><b data-en="Sustainability Champion" data-ar="بطل الاستدامة">Sustainability Champion</b><span data-en="Qatar Foundation" data-ar="مؤسسة قطر">Qatar Foundation</span></div>
+            <div class="psp-badge-item"><img src="../../Assets/badge-data-analytics.png" alt="Data Analytics Specialist"><b data-en="Data Analytics Specialist" data-ar="أخصائية تحليل البيانات">Data Analytics Specialist</b><span data-en="QatarEnergy" data-ar="قطر للطاقة">QatarEnergy</span></div>
+            <div class="psp-badge-item"><img src="../../Assets/badge-community-impact.png" alt="Community Impact Leader"><b data-en="Community Impact Leader" data-ar="قائدة الأثر المجتمعي">Community Impact Leader</b><span data-en="UN SDG Program" data-ar="برنامج أهداف التنمية المستدامة للأمم المتحدة">UN SDG Program</span></div>
+          </div>
+        </div>
+
+        <!-- 4b. RECENT CREDENTIALS -->
+        <div class="qcard psp-credentials">
+          <div class="qch"><h3 data-en="Recent Credentials" data-ar="الشهادات الأخيرة">Recent Credentials</h3><button class="qall" onclick="st('All credentials coming soon')"><span data-en="View All" data-ar="عرض الكل">View All</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          <div class="psp-cred-list">
+            <div class="psp-cred-row">
+              <span class="psp-cred-ic green"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+              <div><b data-en="Systems Thinking — Level 3" data-ar="التفكير المنظومي — المستوى 3">Systems Thinking — Level 3</b><span class="psp-cred-status ok"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Verified &bull; 03 Sep 2026" data-ar="تم التحقق • 03 سبتمبر 2026">Verified &bull; 03 Sep 2026</span></span></div>
+            </div>
+            <div class="psp-cred-row">
+              <span class="psp-cred-ic blue"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+              <div><b data-en="Research &amp; Inquiry — Level 2" data-ar="البحث والاستقصاء — المستوى 2">Research &amp; Inquiry — Level 2</b><span class="psp-cred-status ok"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Verified &bull; 28 Aug 2026" data-ar="تم التحقق • 28 أغسطس 2026">Verified &bull; 28 Aug 2026</span></span></div>
+            </div>
+            <div class="psp-cred-row">
+              <span class="psp-cred-ic red"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+              <div><b data-en="Leadership in Action" data-ar="القيادة في الممارسة">Leadership in Action</b><span class="psp-cred-status ok"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span data-en="Verified &bull; 12 Aug 2026" data-ar="تم التحقق • 12 أغسطس 2026">Verified &bull; 12 Aug 2026</span></span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4c. RECENT EXPERIENCE -->
+        <div class="qcard psp-experience">
+          <div class="qch"><h3 data-en="Recent Experience" data-ar="الخبرة الأخيرة">Recent Experience</h3><button class="qall" onclick="st('All experience coming soon')"><span data-en="View All" data-ar="عرض الكل">View All</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          <div class="psp-exp-list">
+            <div class="psp-exp-row">
+              <span class="psp-exp-ic teal"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+              <div><b data-en="Software Engineering Intern" data-ar="متدربة هندسة برمجيات">Software Engineering Intern</b><span data-en="QatarEnergy &bull; Jun 2025 &ndash; Aug 2025" data-ar="قطر للطاقة • يونيو 2025 – أغسطس 2025">QatarEnergy &bull; Jun 2025 &ndash; Aug 2025</span></div>
+            </div>
+            <div class="psp-exp-row">
+              <span class="psp-exp-ic green"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 2.5c-4 4-4 15 0 19M12 2.5c4 4 4 15 0 19M3 8h18M3 16h18"/></svg></span>
+              <div><b data-en="Startup Innovation Bootcamp" data-ar="معسكر الابتكار الريادي">Startup Innovation Bootcamp</b><span data-en="Qatar Foundation &bull; Jan 2025 &ndash; Apr 2025" data-ar="مؤسسة قطر • يناير 2025 – أبريل 2025">Qatar Foundation &bull; Jan 2025 &ndash; Apr 2025</span></div>
+            </div>
+            <div class="psp-exp-row">
+              <span class="psp-exp-ic blue"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20c.5-3.6 2.9-6 6.5-6s6 2.4 6.5 6"/><circle cx="18" cy="9" r="2.6"/><path d="M15.5 20c.4-2.7 1.9-4.5 4-4.8"/></svg></span>
+              <div><b data-en="QF Student Council" data-ar="مجلس طلاب مؤسسة قطر">QF Student Council</b><span>2023 &ndash; 2024</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4d. CAREER ASPIRATIONS -->
+        <div class="qcard psp-career">
+          <div class="qch"><h3 data-en="Career Aspirations" data-ar="الطموحات المهنية">Career Aspirations</h3><button class="psp-link-btn" onclick="st('Edit aspirations coming soon')"><svg viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg><span data-en="Edit" data-ar="تعديل">Edit</span></button></div>
+          <p class="psp-career-text" data-en="I aspire to build a career at the intersection of AI and sustainability, contributing to Qatar&rsquo;s national development goals and creating solutions that have a positive global impact." data-ar="أطمح إلى بناء مسيرة مهنية عند تقاطع الذكاء الاصطناعي والاستدامة، والمساهمة في أهداف التنمية الوطنية لقطر، وابتكار حلول ذات أثر إيجابي عالمي.">I aspire to build a career at the intersection of AI and sustainability, contributing to Qatar&rsquo;s national development goals and creating solutions that have a positive global impact.</p>
+          <button class="psp-career-btn" onclick="window.location.href='../opportunities/index.html'"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><span data-en="View Career Opportunities" data-ar="عرض الفرص الوظيفية">View Career Opportunities</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="qfoot">
+    <span data-en="© 2026 Qatar Foundation. All rights reserved." data-ar="© 2026 مؤسسة قطر. جميع الحقوق محفوظة.">© 2026 Qatar Foundation. All rights reserved.</span>
+    <nav><a href="#" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a><i>|</i><a href="#" data-en="Terms of Use" data-ar="شروط الاستخدام">Terms of Use</a><i>|</i><a href="#" data-en="Support" data-ar="الدعم">Support</a></nav>
+  </footer>
+
+</div>
+</div>
+
+<script>
+try{const n=localStorage.getItem('qfName');if(n){document.getElementById('qUserName').textContent=n;document.getElementById('pspName').textContent=n}}catch(e){}
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+function logout(){try{localStorage.removeItem('qfLoggedIn');localStorage.removeItem('qfName')}catch(e){}window.location.href='../Home/student.html'}
+
+/* My Passport language toggle — English/Arabic, scoped to this page only. */
+function setPassportLang(lang){
+  lang = lang==='ar' ? 'ar' : 'en';
+  document.documentElement.setAttribute('dir', lang==='ar' ? 'rtl' : 'ltr');
+  document.documentElement.setAttribute('lang', lang);
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    const val = lang==='ar' ? (el.dataset.ar || el.dataset.en) : el.dataset.en;
+    if(el.dataset.html==='1') el.innerHTML = val; else el.textContent = val;
+  });
+  const enBtn=document.getElementById('pspLangEn'), arBtn=document.getElementById('pspLangAr');
+  if(enBtn) enBtn.classList.toggle('active', lang==='en');
+  if(arBtn) arBtn.classList.toggle('active', lang==='ar');
+  if(window.PassportTree) PassportTree.setLang(lang);
+  try{localStorage.setItem('qfPassportLang', lang)}catch(e){}
+}
+
+document.querySelectorAll('.qsb-nav .qnav, .qsb-help .qnav').forEach(b=>{
+  b.addEventListener('click',function(){
+    const v=this.dataset.view;
+    if(!v||v==='passport')return;
+    document.getElementById('qsb').classList.remove('open');
+    if(v==='home'){window.location.href='../Home/student.html';return}
+    if(v==='achievements'||v==='evidence'||v==='opportunities'||v==='skillgap'||v==='pathways'||v==='skills')return;
+    st(this.textContent.trim()+' — coming soon');
+  });
+});
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+</script>
+<script src="passport-tree.js"></script>
+<script src="passport-leaves.js"></script>
+<script>
+try{ if(localStorage.getItem('qfPassportLang')==='ar') setPassportLang('ar'); }catch(e){}
+</script>
+</body>
+</html>

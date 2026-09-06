@@ -29,6 +29,8 @@
 .qsg-scope .competency .gap-pill{margin-top:2px}
 .qsg-scope .competency-name{display:flex;align-items:center;gap:14px;min-width:0}
 .qsg-scope .skill-icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;flex:none;position:relative}
+.qsg-scope .skill-icon.badge-icon{width:44px;height:58px;background:none;border-radius:0}
+.qsg-scope .skill-icon.badge-icon img{width:100%;height:100%;object-fit:contain;display:block}
 .qsg-scope .skill-icon.green{background:linear-gradient(135deg,#0da468,#008d56)}
 .qsg-scope .skill-icon.cyan{background:linear-gradient(135deg,#21c5cb,#0098a0)}
 .qsg-scope .skill-icon.blue{background:linear-gradient(135deg,#258ddd,#1767c8)}

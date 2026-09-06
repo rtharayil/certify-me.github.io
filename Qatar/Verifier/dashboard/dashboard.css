@@ -1,0 +1,120 @@
+/* Verifier Dashboard — reuses shared shell + qcard-family classes from student.css.
+   Only new, Verifier-specific rules live here. */
+
+.vf-scope{display:flex;flex-direction:column;gap:var(--qgap);width:100%}
+
+/* topbar additions */
+.qava img{width:100%;height:100%;object-fit:cover;display:block}
+.qtitle-wrap{flex:1;display:flex;align-items:center;gap:12px;min-width:0}
+.qtitle-wrap .qtitle{flex:none}
+.vf-portal-pill{background:var(--qokbg);color:var(--qok);font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;white-space:nowrap}
+.vf-search{display:flex;align-items:center;gap:9px;width:340px;height:40px;padding:0 14px;border:1px solid var(--qline);border-radius:10px;background:var(--qpg)}
+.vf-search svg{width:16px;height:16px;stroke:var(--qmut);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.vf-search input{flex:1;min-width:0;border:none;background:none;outline:none;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--qink)}
+.vf-search input::placeholder{color:var(--qmut)}
+
+@media(max-width:1180px){.vf-search{width:220px}}
+@media(max-width:860px){.vf-search{display:none}}
+
+/* 1. Page header */
+.vf-header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.vf-header h1{font-family:'DM Sans',sans-serif;font-size:26px;font-weight:700;color:var(--qink)}
+.vf-header p{font-size:13.5px;color:var(--qbody);margin-top:6px;max-width:640px}
+.vf-start-btn{flex:none;height:46px;padding:0 22px;border:none;border-radius:10px;background:var(--qg700);color:#fff;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:700;display:flex;align-items:center;gap:9px;cursor:pointer;transition:background .2s}
+.vf-start-btn:hover{background:var(--qg800)}
+.vf-start-btn svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* 2. Stats strip */
+.vf-stats4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--qgap)}
+.vf-stat{display:flex;align-items:center;gap:14px}
+.vf-stat-ic{width:46px;height:46px;border-radius:50%;flex:none;display:grid;place-items:center}
+.vf-stat-ic svg{width:22px;height:22px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.vf-stat-ic.blue{background:var(--qbluebg)} .vf-stat-ic.blue svg{stroke:var(--qblue)}
+.vf-stat-ic.green{background:var(--qokbg)} .vf-stat-ic.green svg{stroke:var(--qok)}
+.vf-stat-ic.purple{background:#EFE7FB} .vf-stat-ic.purple svg{stroke:#7B3FD1}
+.vf-stat-t{min-width:0}
+.vf-stat-t b{font-size:21px;font-weight:700;color:var(--qink);line-height:1.2}
+.vf-stat-t>span{display:block;font-size:12.5px;color:var(--qbody)}
+.vf-trend{margin-top:1px;font-size:11.5px;color:var(--qmut)}
+.vf-trend .trend{font-weight:700}
+.vf-trend .trend.green{color:var(--qok)}
+.vf-trend .trend.red{color:var(--qred)}
+
+@media(max-width:1180px){.vf-stats4{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.vf-stats4{grid-template-columns:1fr}}
+
+/* right column stack (queue + turnaround) */
+.vf-stack{display:flex;flex-direction:column;gap:var(--qgap)}
+
+/* donut: extra red segment (base donut/legend classes come from student.css) */
+.dseg.red{stroke:var(--qred)}
+.pdot.red{background:var(--qred)}
+
+/* 3. Pending Reviews table */
+.vf-reviews{overflow-x:auto}
+.vf-table{min-width:640px}
+.vf-trow{display:grid;grid-template-columns:28px 1.9fr 1.3fr 1fr .9fr .8fr 1.3fr;align-items:center;gap:10px;padding:12px 8px;border-bottom:1px solid var(--qline);border-radius:8px}
+.vf-trow.is-highlighted{background:#eaf1fb}
+.vf-trow:last-child{border-bottom:none}
+.vf-thead{background:var(--qpg);border-radius:8px;border-bottom:none;font-size:12px;font-weight:700;color:var(--qbody)}
+.vf-tchk input{width:15px;height:15px;accent-color:var(--qg600);cursor:pointer}
+.vf-student{display:flex;align-items:center;gap:10px;min-width:0}
+.vf-av{width:36px;height:36px;border-radius:50%;flex:none;overflow:hidden;display:grid;place-items:center;font-size:11.5px;font-weight:700;color:#fff}
+.vf-av img{width:100%;height:100%;object-fit:cover}
+.vf-av.init.navy{background:#1c3a63}
+.vf-av.init.purple{background:#6d4fc9}
+.vf-av.init.teal{background:#0f8b8d}
+.vf-av.init.amber{background:var(--qamber)}
+.vf-student-t{min-width:0;display:flex;flex-direction:column;gap:1px}
+.vf-student-t b{font-size:13px;font-weight:700;color:var(--qink);white-space:nowrap}
+.vf-student-t span{font-size:11.5px;color:var(--qmut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vf-ev{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--qink)}
+.vf-ev svg{width:15px;height:15px;stroke:var(--qmut);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.vf-due{font-size:13px;font-weight:600;color:var(--qink)}
+.vf-due.today{color:var(--qred)}
+.vf-due.tomorrow{color:var(--qamber)}
+.pill{justify-self:start;font-size:11.5px;font-weight:700;padding:5px 12px;border-radius:20px;white-space:nowrap}
+.pill.high{background:#FCE4E4;color:var(--qred)}
+.pill.medium{background:var(--qamberbg);color:var(--qamber)}
+.pill.low{background:var(--qokbg);color:var(--qok)}
+.vf-actions{display:flex;align-items:center;gap:6px}
+.vf-review-btn{height:32px;padding:0 16px;border:1px solid var(--qbluebg);border-radius:7px;background:var(--qbluebg);color:var(--qblue);font-family:'DM Sans',sans-serif;font-size:12.5px;font-weight:700;cursor:pointer}
+.vf-review-btn:hover{background:#DCEAFA}
+
+/* 5. Review Turnaround Time bar chart */
+.vf-chart-wrap{display:flex;gap:10px;padding-top:10px}
+.vf-yaxis{flex:none;width:20px;height:120px;display:flex;flex-direction:column;justify-content:space-between;font-size:10px;color:var(--qmut);text-align:right}
+.vf-barchart{flex:1;display:flex;align-items:flex-end;justify-content:space-around;gap:14px;background:repeating-linear-gradient(180deg,var(--qline) 0,var(--qline) 1px,transparent 1px,transparent 30px);background-size:100% 120px;background-position:top}
+.vf-bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:9px}
+.vf-bar-track{width:100%;height:120px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:6px}
+.vf-bar-val{font-size:13px;font-weight:700;color:var(--qink)}
+.vf-bar{width:34px;background:linear-gradient(180deg,#5B9BF5,var(--qblue));border-radius:6px 6px 0 0;flex:none}
+.vf-bar-lbl{font-size:11px;color:var(--qmut);white-space:nowrap}
+
+/* Bottom row: activity / competency / promo */
+.vf-row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--qgap);align-items:stretch}
+.vf-row3>.qcard{display:flex;flex-direction:column}
+
+/* 6. Recent Activity: feed-ic red/purple extra variants (green/amber/gold already in student.css) */
+.feed-ic.red{background:#FCE4E4} .feed-ic.red svg{stroke:var(--qred)}
+.feed-ic.purple{background:#EFE7FB} .feed-ic.purple svg{stroke:#7B3FD1}
+
+/* 7. Verification by Competency */
+.vf-period{display:flex;align-items:center;gap:6px;background:var(--qpg);border:1px solid var(--qline);border-radius:8px;padding:6px 10px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:var(--qink);cursor:pointer}
+.vf-period svg{width:13px;height:13px;stroke:var(--qmut);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.vf-vc-list{display:flex;flex-direction:column;gap:15px}
+.vf-vc-row{display:flex;align-items:center;gap:10px}
+.vf-vc-name{flex:0 0 118px;font-size:12.5px;font-weight:600;color:var(--qink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vf-vc-row .skill-bar{flex:1}
+.skill-fill{display:block}
+.skill-fill.blue{background:var(--qblue)}
+.vf-vc-pct{flex:none;width:32px;text-align:right;font-size:12px;font-weight:700;color:var(--qbody)}
+
+/* 8. Promo card (reuses goal-panel look via qcard, custom background design) */
+.vf-promo{background:linear-gradient(160deg,#EAF5EE,#DCEEE3);border-color:#DCEEE3;justify-content:flex-start;position:relative;overflow:hidden}
+.vf-promo::after{content:'';position:absolute;inset:0;background:url("../../Assets/Learn_more_design.png") bottom right/100% no-repeat;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,transparent 42%,#000 62%,#000 100%);mask-image:linear-gradient(to bottom,transparent 0%,transparent 42%,#000 62%,#000 100%);pointer-events:none}
+.vf-promo .goal-ic,.vf-promo h3,.vf-promo p,.vf-promo .goal-btn{position:relative;z-index:1}
+.vf-promo .goal-ic{background:var(--qg700);margin-bottom:14px}
+.vf-promo h3{font-size:17px;font-weight:700;color:var(--qink);margin-bottom:8px}
+.vf-promo p{font-size:12.5px;color:var(--qbody);line-height:1.55;margin-bottom:18px}
+.vf-promo .goal-btn{width:auto;padding:11px 22px;margin-top:0;align-self:flex-start}
