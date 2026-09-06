@@ -1,0 +1,51 @@
+/* Language toggle control + Arabic-mode text treatment for the
+   Competencies page. Only text-bearing leaf elements switch to RTL
+   reading direction and the Cairo typeface; grid/flex/table
+   structure stays as built so the pixel-tuned layout doesn't shift
+   between languages. */
+
+.lang-toggle{display:flex;gap:2px;background:#eef2f6;border:1px solid #dfe6ec;border-radius:8px;padding:2px;width:max-content}
+.lang-opt{height:28px;padding:0 14px;border:none;border-radius:6px;background:transparent;color:#5c6b84;font-size:11px;font-weight:700;cursor:pointer;font-family:'Cairo','DM Sans',sans-serif}
+.lang-opt.active{background:#00775f;color:#fff}
+.lang-opt:not(.active):hover{color:#0b2348}
+
+.adm-comp-scope.lang-ar{font-family:'Cairo',var(--font-body,'DM Sans'),sans-serif}
+
+.adm-comp-scope.lang-ar h1,
+.adm-comp-scope.lang-ar h2,
+.adm-comp-scope.lang-ar .subtitle,
+.adm-comp-scope.lang-ar .comp-name,
+.adm-comp-scope.lang-ar .desc,
+.adm-comp-scope.lang-ar .domain span,
+.adm-comp-scope.lang-ar .level,
+.adm-comp-scope.lang-ar .status,
+.adm-comp-scope.lang-ar .updated span,
+.adm-comp-scope.lang-ar .select,
+.adm-comp-scope.lang-ar .filter-more,
+.adm-comp-scope.lang-ar .clear,
+.adm-comp-scope.lang-ar .btn span,
+.adm-comp-scope.lang-ar th,
+.adm-comp-scope.lang-ar .stat-label,
+.adm-comp-scope.lang-ar .trend,
+.adm-comp-scope.lang-ar .framework,
+.adm-comp-scope.lang-ar .legend-row span,
+.adm-comp-scope.lang-ar .donut-total,
+.adm-comp-scope.lang-ar .bar-label,
+.adm-comp-scope.lang-ar .activity-title,
+.adm-comp-scope.lang-ar .activity-sub,
+.adm-comp-scope.lang-ar .activity-time,
+.adm-comp-scope.lang-ar .pages-info,
+.adm-comp-scope.lang-ar .step-title,
+.adm-comp-scope.lang-ar .step-sub,
+.adm-comp-scope.lang-ar .steps-next span:first-child,
+.adm-comp-scope.lang-ar input[type="text"]{
+  direction:rtl;
+  text-align:right;
+  font-family:'Cairo','DM Sans',sans-serif;
+}
+
+.adm-comp-scope.lang-ar th{text-align:right}
+.adm-comp-scope.lang-ar .comp{direction:rtl}
+.adm-comp-scope.lang-ar .domain{direction:rtl}
+.adm-comp-scope.lang-ar .updated{direction:rtl;text-align:right}
+.adm-comp-scope.lang-ar ::placeholder{font-family:'Cairo','DM Sans',sans-serif;text-align:right}

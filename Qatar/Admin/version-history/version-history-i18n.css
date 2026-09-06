@@ -1,0 +1,53 @@
+/* Language toggle + Arabic-mode text treatment for Version History.
+   Mirrors the Competencies/Taxonomy Mapping pages: only text-bearing
+   leaf elements switch to RTL/Cairo; grid/flex/table structure stays
+   put so the layout doesn't shift between languages. */
+
+.lang-toggle{display:flex;gap:2px;background:#eef2f6;border:1px solid #dfe6ec;border-radius:8px;padding:2px;width:max-content}
+.lang-opt{height:28px;padding:0 14px;border:none;border-radius:6px;background:transparent;color:#5c6b84;font-size:11px;font-weight:700;cursor:pointer;font-family:'Cairo','DM Sans',sans-serif}
+.lang-opt.active{background:#00775f;color:#fff}
+.lang-opt:not(.active):hover{color:#0b2348}
+
+.adm-vh-scope.lang-ar{font-family:'Cairo','DM Sans',sans-serif}
+
+.adm-vh-scope.lang-ar h1,
+.adm-vh-scope.lang-ar .subtitle,
+.adm-vh-scope.lang-ar .step-title,
+.adm-vh-scope.lang-ar .step-sub,
+.adm-vh-scope.lang-ar .section-title,
+.adm-vh-scope.lang-ar .section-sub,
+.adm-vh-scope.lang-ar .field,
+.adm-vh-scope.lang-ar .smallbtn,
+.adm-vh-scope.lang-ar th,
+.adm-vh-scope.lang-ar .compname,
+.adm-vh-scope.lang-ar .compsub,
+.adm-vh-scope.lang-ar .path,
+.adm-vh-scope.lang-ar .changed span:last-child,
+.adm-vh-scope.lang-ar td,
+.adm-vh-scope.lang-ar .view,
+.adm-vh-scope.lang-ar .count,
+.adm-vh-scope.lang-ar .rows,
+.adm-vh-scope.lang-ar .panel-title,
+.adm-vh-scope.lang-ar .hero-title,
+.adm-vh-scope.lang-ar .hero-sub,
+.adm-vh-scope.lang-ar .tab,
+.adm-vh-scope.lang-ar .detailrow .label,
+.adm-vh-scope.lang-ar .detailrow .value,
+.adm-vh-scope.lang-ar .block-title,
+.adm-vh-scope.lang-ar ul,
+.adm-vh-scope.lang-ar .aff span,
+.adm-vh-scope.lang-ar .full span:last-child,
+.adm-vh-scope.lang-ar .restore span,
+.adm-vh-scope.lang-ar .back span:last-child,
+.adm-vh-scope.lang-ar input[type="text"]{
+  direction:rtl;
+  text-align:right;
+  font-family:'Cairo','DM Sans',sans-serif;
+}
+
+.adm-vh-scope.lang-ar th{text-align:right}
+.adm-vh-scope.lang-ar .comp{direction:rtl}
+.adm-vh-scope.lang-ar .changed{direction:rtl}
+.adm-vh-scope.lang-ar .aff{direction:rtl}
+.adm-vh-scope.lang-ar .detailrow{direction:rtl}
+.adm-vh-scope.lang-ar ::placeholder{font-family:'Cairo','DM Sans',sans-serif;text-align:right}

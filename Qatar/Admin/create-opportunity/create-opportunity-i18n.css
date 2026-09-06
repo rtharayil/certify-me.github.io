@@ -1,0 +1,126 @@
+/* Language toggle control + Arabic-mode text treatment shared across
+   the Create Opportunity wizard (Opportunity Details, Assign
+   Competencies, Evidence Requirements). Only text-bearing leaf
+   elements switch to RTL reading direction and the Cairo typeface;
+   grid/flex/table structure stays as built so the pixel-tuned
+   layout doesn't shift between languages or between steps. */
+
+.lang-toggle{display:flex;gap:2px;background:#eef2f6;border:1px solid #dfe6ec;border-radius:8px;padding:2px;width:max-content}
+.lang-opt{height:28px;padding:0 14px;border:none;border-radius:6px;background:transparent;color:#5c6b84;font-size:11px;font-weight:700;cursor:pointer;font-family:'Cairo','DM Sans',sans-serif}
+.lang-opt.active{background:#00775f;color:#fff}
+.lang-opt:not(.active):hover{color:#0b2348}
+
+.adm-createopp-scope.lang-ar,
+.adm-assigncomp-scope.lang-ar,
+.adm-evidencereq-scope.lang-ar{font-family:'Cairo',var(--font-body,'DM Sans'),sans-serif}
+
+/* ---- shared: title row, stepper, footer ---- */
+.adm-createopp-scope.lang-ar h1,.adm-assigncomp-scope.lang-ar h1,.adm-evidencereq-scope.lang-ar h1,
+.adm-createopp-scope.lang-ar .subtitle,.adm-assigncomp-scope.lang-ar .subtitle,.adm-evidencereq-scope.lang-ar .subtitle,
+.adm-createopp-scope.lang-ar .btn span,.adm-assigncomp-scope.lang-ar .btn span,.adm-evidencereq-scope.lang-ar .btn span,
+.adm-createopp-scope.lang-ar .step-title,.adm-assigncomp-scope.lang-ar .step-title,.adm-evidencereq-scope.lang-ar .step-title,
+.adm-createopp-scope.lang-ar .step-sub,.adm-assigncomp-scope.lang-ar .step-sub,.adm-evidencereq-scope.lang-ar .step-sub,
+.adm-createopp-scope.lang-ar .back span,.adm-assigncomp-scope.lang-ar .back span,.adm-evidencereq-scope.lang-ar .back span,
+.adm-createopp-scope.lang-ar .next span,.adm-assigncomp-scope.lang-ar .next span,.adm-evidencereq-scope.lang-ar .next span{
+  direction:rtl;
+  text-align:right;
+  font-family:'Cairo','DM Sans',sans-serif;
+}
+
+/* ---- Opportunity Preview card (shared markup on all 3 pages) ---- */
+.adm-createopp-scope.lang-ar .preview-name,.adm-assigncomp-scope.lang-ar .preview-name,.adm-evidencereq-scope.lang-ar .preview-name,
+.adm-createopp-scope.lang-ar .meta span,.adm-assigncomp-scope.lang-ar .meta span,.adm-evidencereq-scope.lang-ar .meta span,
+.adm-createopp-scope.lang-ar .preview-date,.adm-assigncomp-scope.lang-ar .preview-date,.adm-evidencereq-scope.lang-ar .preview-date,
+.adm-createopp-scope.lang-ar .description,.adm-assigncomp-scope.lang-ar .preview-desc,.adm-evidencereq-scope.lang-ar .preview-desc,
+.adm-createopp-scope.lang-ar .pill,.adm-assigncomp-scope.lang-ar .tag,.adm-evidencereq-scope.lang-ar .tags .tag,
+.adm-createopp-scope.lang-ar .side-heading h2,.adm-assigncomp-scope.lang-ar .rail-title,.adm-evidencereq-scope.lang-ar .rail-title,
+.adm-createopp-scope.lang-ar .edit,.adm-assigncomp-scope.lang-ar .edit,.adm-evidencereq-scope.lang-ar .edit,
+.adm-createopp-scope.lang-ar .small-label,
+.adm-createopp-scope.lang-ar .audience,
+.adm-createopp-scope.lang-ar .status{
+  direction:rtl;
+  text-align:right;
+  font-family:'Cairo','DM Sans',sans-serif;
+}
+
+/* ---- index.html: Opportunity Details form ---- */
+.adm-createopp-scope.lang-ar .field label,
+.adm-createopp-scope.lang-ar .card-title,
+.adm-createopp-scope.lang-ar .card-desc,
+.adm-createopp-scope.lang-ar textarea,
+.adm-createopp-scope.lang-ar .control input,
+.adm-createopp-scope.lang-ar .settings-label,
+.adm-createopp-scope.lang-ar .upload-text,
+.adm-createopp-scope.lang-ar .choose,
+.adm-createopp-scope.lang-ar .recommended,
+.adm-createopp-scope.lang-ar .link-label,
+.adm-createopp-scope.lang-ar .info-label,
+.adm-createopp-scope.lang-ar .info-value,
+.adm-createopp-scope.lang-ar .tip-text{
+  direction:rtl;
+  text-align:right;
+  font-family:'Cairo','DM Sans',sans-serif;
+}
+.adm-createopp-scope.lang-ar .field-search span,
+.adm-createopp-scope.lang-ar select{direction:rtl;text-align:right;font-family:'Cairo','DM Sans',sans-serif}
+
+/* ---- assign-competencies.html: panels ---- */
+.adm-assigncomp-scope.lang-ar .section-head h2,
+.adm-assigncomp-scope.lang-ar .section-head p,
+.adm-assigncomp-scope.lang-ar .panel-title,
+.adm-assigncomp-scope.lang-ar .link,
+.adm-assigncomp-scope.lang-ar .field-search span,
+.adm-assigncomp-scope.lang-ar select,
+.adm-assigncomp-scope.lang-ar .comp-name,
+.adm-assigncomp-scope.lang-ar .comp-desc,
+.adm-assigncomp-scope.lang-ar .domain,
+.adm-assigncomp-scope.lang-ar .selected-name,
+.adm-assigncomp-scope.lang-ar .selected-domain,
+.adm-assigncomp-scope.lang-ar .pro-label,
+.adm-assigncomp-scope.lang-ar .info,
+.adm-assigncomp-scope.lang-ar .legend-row span,
+.adm-assigncomp-scope.lang-ar .bar-title,
+.adm-assigncomp-scope.lang-ar .bar-label,
+.adm-assigncomp-scope.lang-ar .donut-center span{
+  direction:rtl;
+  text-align:right;
+  font-family:'Cairo','DM Sans',sans-serif;
+}
+.adm-assigncomp-scope.lang-ar .comp-row{direction:rtl}
+.adm-assigncomp-scope.lang-ar .selected-row{direction:rtl}
+.adm-assigncomp-scope.lang-ar .legend-row{direction:rtl}
+
+/* ---- evidence-requirements.html: panels ---- */
+.adm-evidencereq-scope.lang-ar .section-head h2,
+.adm-evidencereq-scope.lang-ar .section-head p,
+.adm-evidencereq-scope.lang-ar .panel-title,
+.adm-evidencereq-scope.lang-ar .comp-side-name,
+.adm-evidencereq-scope.lang-ar .comp-side-level,
+.adm-evidencereq-scope.lang-ar .evidence-head h2,
+.adm-evidencereq-scope.lang-ar .evidence-head p,
+.adm-evidencereq-scope.lang-ar .add-btn,
+.adm-evidencereq-scope.lang-ar .ev-title,
+.adm-evidencereq-scope.lang-ar .required,
+.adm-evidencereq-scope.lang-ar .ev-desc,
+.adm-evidencereq-scope.lang-ar .label,
+.adm-evidencereq-scope.lang-ar select,
+.adm-evidencereq-scope.lang-ar .details h3,
+.adm-evidencereq-scope.lang-ar .field label,
+.adm-evidencereq-scope.lang-ar .input,
+.adm-evidencereq-scope.lang-ar .textarea,
+.adm-evidencereq-scope.lang-ar .tag,
+.adm-evidencereq-scope.lang-ar .delete-ev,
+.adm-evidencereq-scope.lang-ar .small-btn,
+.adm-evidencereq-scope.lang-ar .selected-name,
+.adm-evidencereq-scope.lang-ar .selected-level,
+.adm-evidencereq-scope.lang-ar .req-name,
+.adm-evidencereq-scope.lang-ar .req-note,
+.adm-evidencereq-scope.lang-ar .info div{
+  direction:rtl;
+  text-align:right;
+  font-family:'Cairo','DM Sans',sans-serif;
+}
+.adm-evidencereq-scope.lang-ar .comp-side-row{direction:rtl}
+.adm-evidencereq-scope.lang-ar .ev-row{direction:rtl}
+.adm-evidencereq-scope.lang-ar .req-item{direction:rtl}
+.adm-evidencereq-scope.lang-ar .toggle-row{direction:rtl}

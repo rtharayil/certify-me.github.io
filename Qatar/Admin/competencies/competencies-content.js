@@ -18,7 +18,25 @@
     d.addEventListener('click', function () { st('Row actions — coming soon'); });
   });
 
-  document.querySelectorAll('.adm-comp-scope .view-link, .adm-comp-scope .panel-link, .adm-comp-scope .framework, .adm-comp-scope .activity-head a').forEach(function (el) {
+  document.querySelectorAll('.adm-comp-scope .view-link, .adm-comp-scope .panel-link, .adm-comp-scope .activity-head a').forEach(function (el) {
     el.addEventListener('click', function () { st('Coming soon'); });
   });
+
+  document.querySelectorAll('.adm-comp-scope .step[data-goto]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      var target = el.getAttribute('data-goto');
+      if (target === 'comingsoon') {
+        st((el.getAttribute('data-label') || 'This step') + ' — coming soon');
+      } else {
+        window.location.href = target;
+      }
+    });
+  });
+
+  var stepsNext = document.getElementById('btnStepsNext');
+  if (stepsNext) {
+    stepsNext.addEventListener('click', function () {
+      window.location.href = '../taxonomy-mapping/index.html';
+    });
+  }
 })();

@@ -1,0 +1,53 @@
+/* Language toggle control + Arabic-mode text treatment for the
+   Analytics Dashboard page. Only text-bearing leaf elements switch
+   to RTL reading direction and the Cairo typeface; grid/flex/table
+   structure stays as built so the pixel-tuned layout doesn't shift
+   between languages. The real <table> elements get their own
+   `direction` flip so thead and tbody columns reorder together. */
+
+.lang-toggle{display:flex;gap:2px;background:#eef2f6;border:1px solid #dfe6ec;border-radius:8px;padding:2px;width:max-content}
+.lang-opt{height:28px;padding:0 14px;border:none;border-radius:6px;background:transparent;color:#5c6b84;font-size:11px;font-weight:700;cursor:pointer;font-family:'Cairo','DM Sans',sans-serif}
+.lang-opt.active{background:#00775f;color:#fff}
+.lang-opt:not(.active):hover{color:#0b2348}
+
+.adm-analytics-scope.lang-ar{font-family:'Cairo',var(--font-body,'DM Sans'),sans-serif}
+
+.adm-analytics-scope.lang-ar h1,
+.adm-analytics-scope.lang-ar .subtitle,
+.adm-analytics-scope.lang-ar .date span,
+.adm-analytics-scope.lang-ar .btn span,
+.adm-analytics-scope.lang-ar .custom span,
+.adm-analytics-scope.lang-ar .kpi-label,
+.adm-analytics-scope.lang-ar .kpi-foot,
+.adm-analytics-scope.lang-ar .panel-title,
+.adm-analytics-scope.lang-ar .select span,
+.adm-analytics-scope.lang-ar .legend,
+.adm-analytics-scope.lang-ar .map-legend span,
+.adm-analytics-scope.lang-ar .donut-center span,
+.adm-analytics-scope.lang-ar .stat-name span,
+.adm-analytics-scope.lang-ar .report-link span,
+.adm-analytics-scope.lang-ar th,
+.adm-analytics-scope.lang-ar .skill span,
+.adm-analytics-scope.lang-ar .link span,
+.adm-analytics-scope.lang-ar .bar-legend,
+.adm-analytics-scope.lang-ar .opp-left span,
+.adm-analytics-scope.lang-ar .report-name span,
+.adm-analytics-scope.lang-ar .report-sub,
+.adm-analytics-scope.lang-ar .alert-title,
+.adm-analytics-scope.lang-ar .alert-sub,
+.adm-analytics-scope.lang-ar .alert-time,
+.adm-analytics-scope.lang-ar .footer span{
+  direction:rtl;
+  text-align:right;
+  font-family:'Cairo','DM Sans',sans-serif;
+}
+
+.adm-analytics-scope.lang-ar .table{direction:rtl}
+.adm-analytics-scope.lang-ar .reports-table{direction:rtl}
+.adm-analytics-scope.lang-ar th{text-align:right}
+.adm-analytics-scope.lang-ar .skill{direction:rtl}
+.adm-analytics-scope.lang-ar .stat{direction:rtl}
+.adm-analytics-scope.lang-ar .opp-row{direction:rtl}
+.adm-analytics-scope.lang-ar .report-name{direction:rtl}
+.adm-analytics-scope.lang-ar .alert{direction:rtl}
+.adm-analytics-scope.lang-ar .footer{direction:rtl}

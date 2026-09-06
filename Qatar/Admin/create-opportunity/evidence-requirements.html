@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evidence Requirements – Admin Portal – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared/typography.css">
+<link rel="stylesheet" href="../shared/admin-shell.css">
+<link rel="stylesheet" href="evidence-requirements-content.css">
+<link rel="stylesheet" href="create-opportunity-i18n.css">
+</head>
+<body class="dm">
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<!-- ===== sidebar (shared component, see Admin/shared/sidebar.js) ===== -->
+<div id="admin-sidebar" data-active="opportunities"></div>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <h1 class="qtitle">Universal Skills Passport <span class="qtitle-pill" data-i18n="adminPortal">Administrator Portal</span></h1>
+    <div class="qtop-actions">
+      <div class="lang-toggle" id="langToggle" role="group" aria-label="Language">
+        <button type="button" class="lang-opt active" data-lang="en">EN</button>
+        <button type="button" class="lang-opt" data-lang="ar">عربي</button>
+      </div>
+      <button class="qicon-btn" onclick="st('Search coming soon')" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="qicon-btn" onclick="st('5 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>5</b>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><img src="../../Assets/hassan.png" alt="Hassan Al-Kuwari"></span>
+          <span class="qui"><b id="qUserName">Hassan Al-Kuwari</b><span id="qUserRole">Administrator</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg><span data-i18n="myProfile">My Profile</span></button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span data-i18n="settingsLabel">Settings</span></button>
+          <hr>
+          <button type="button" class="qout" onclick="AdminAuth.logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg><span data-i18n="signOut">Sign Out</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+    <div class="adm-evidencereq-scope">
+
+    <section class="title-row">
+      <div>
+        <h1 data-i18n="pageTitle">Create Opportunity</h1>
+        <div class="subtitle" data-i18n="pageSubtitle">Set up a learning, project or workplace opportunity and link it to competencies with evidence and verification.</div>
+      </div>
+      <div class="title-actions">
+        <button class="btn" id="btnSaveDraft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2Z"/><path d="M17 21v-8H7v8"/><path d="M7 3v5h8"/></svg><span data-i18n="saveAsDraft">Save as Draft</span></button>
+        <button class="btn" id="btnCancel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span data-i18n="cancelLabel">Cancel</span></button>
+      </div>
+    </section>
+
+    <div class="steps">
+      <div class="step done" data-goto="index.html"><div class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div><div><div class="step-title" data-i18n="stepOppDetails">Opportunity Details</div><div class="step-sub" data-i18n="stepBasicInfo">Basic information</div></div></div>
+      <div class="step done" data-goto="assign-competencies.html"><div class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div><div><div class="step-title" data-i18n="stepAssignComp">Assign Competencies</div><div class="step-sub" data-i18n="stepSelectConfigure">Select and configure</div></div></div>
+      <div class="step active"><div class="num">3</div><div><div class="step-title" data-i18n="stepEvidenceReq">Evidence Requirements</div><div class="step-sub" data-i18n="stepDefineArtefacts">Define artefacts</div></div></div>
+      <div class="step" data-goto="comingsoon" data-label="Verification &amp; Rules"><div class="num">4</div><div><div class="step-title" data-i18n="stepVerificationRules">Verification &amp; Rules</div><div class="step-sub" data-i18n="stepSetVerifiers">Set verifiers and criteria</div></div></div>
+      <div class="step" data-goto="comingsoon" data-label="Review &amp; Publish"><div class="num">5</div><div><div class="step-title" data-i18n="stepReviewPublish">Review &amp; Publish</div><div class="step-sub" data-i18n="stepConfirmLaunch">Confirm and launch</div></div></div>
+    </div>
+
+    <div class="workspace3">
+      <div class="left-work3">
+        <div class="section-head">
+          <h2 data-i18n="evidenceReqTitle">Evidence Requirements</h2>
+          <p data-i18n="evidenceReqDesc">Define what learners need to submit for each selected competency. You can specify the type of evidence, instructions and whether it is mandatory.</p>
+        </div>
+
+        <div class="two-col">
+      <aside class="comp-panel">
+        <div class="panel-inner">
+          <div class="panel-title" data-i18n="compCount4">Competencies (4)</div>
+          <div class="comp-side-list">
+            <div class="comp-side-row selected" data-name="Systems Thinking" data-level="Level 3 – Proficient" data-i18n-name="c3Name" data-i18n-level="level3ProficientDash">
+              <div class="comp-icon-lg img-icon"><img src="../../Assets/systems-thinking-icon.png" alt="Systems Thinking"></div>
+              <div><div class="comp-side-name" data-i18n="c3Name">Systems Thinking</div><div class="comp-side-level" data-i18n="level3ProficientDash">Level 3 – Proficient</div></div>
+            </div>
+            <div class="comp-side-row" data-name="Civic Values &amp; Social Responsibility" data-level="Level 3 – Proficient" data-i18n-name="c8Name" data-i18n-level="level3ProficientDash">
+              <div class="comp-icon-lg" style="background:#f0474d"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.7"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 2.5-5.5 6-5.5s6 2.5 6 5.5"/><circle cx="18" cy="9" r="2.3"/><path d="M15.5 14.2c2.5.3 4.5 2.4 4.5 5.3"/></svg></div>
+              <div><div class="comp-side-name" data-i18n="c8Name">Civic Values &amp; Social Responsibility</div><div class="comp-side-level" data-i18n="level3ProficientDash">Level 3 – Proficient</div></div>
+            </div>
+            <div class="comp-side-row" data-name="Entrepreneurship" data-level="Level 2 – Intermediate" data-i18n-name="c1Name" data-i18n-level="level2IntermediateDash">
+              <div class="comp-icon-lg" style="background:#f2a30f"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.7"><circle cx="12" cy="9" r="5"/><path d="M9 21h6M10 18h4M12 4V2"/></svg></div>
+              <div><div class="comp-side-name" data-i18n="c1Name">Entrepreneurship</div><div class="comp-side-level" data-i18n="level2IntermediateDash">Level 2 – Intermediate</div></div>
+            </div>
+            <div class="comp-side-row" data-name="Interpersonal &amp; Professional Communication" data-level="Level 2 – Intermediate" data-i18n-name="c11Name" data-i18n-level="level2IntermediateDash">
+              <div class="comp-icon-lg" style="background:#6699df"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.7"><circle cx="12" cy="7" r="3"/><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M10 9 7 14M14 9l3 5M9 17h6"/></svg></div>
+              <div><div class="comp-side-name" data-i18n="c11Name">Interpersonal &amp; Professional Communication</div><div class="comp-side-level" data-i18n="level2IntermediateDash">Level 2 – Intermediate</div></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="evidence-panel">
+        <div class="panel-inner">
+          <div class="evidence-head">
+            <div>
+              <h2 id="evForName" data-i18n-prefix="evidenceForLabel">Evidence for: Systems Thinking</h2>
+              <p data-i18n="configureEvidenceDesc">Configure the evidence items that learners must submit for this competency.</p>
+            </div>
+            <button class="add-btn" id="btnAddEvidence"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span data-i18n="addEvidenceLabel">Add Evidence</span></button>
+          </div>
+
+          <div class="ev-list">
+            <div class="ev-row">
+              <div class="drag"><i></i></div>
+              <div class="ev-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v5h4M9 13h6M9 17h6"/></svg></div>
+              <div class="ev-copy"><div class="ev-title"><span data-i18n="projectReportLabel">Project Report</span> <span class="required" data-i18n="requiredLabel">Required</span></div><div class="ev-desc" data-i18n="projectReportDesc">A detailed report outlining the problem, methodology, findings and recommendations.</div></div>
+              <div class="ev-type"><div class="label" data-i18n="evidenceTypeLabel">Evidence Type</div><select><option data-i18n="docPdfDoc">Document (PDF, DOC, etc.)</option></select></div>
+              <div class="kebab">⋮</div>
+            </div>
+            <div class="ev-row">
+              <div class="drag"><i></i></div>
+              <div class="ev-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="5" width="16" height="12" rx="1"/><path d="M9 21h6M12 17v4M9 9l3 2 3-2"/></svg></div>
+              <div class="ev-copy"><div class="ev-title"><span data-i18n="presentationLabel">Presentation</span> <span class="required" data-i18n="requiredLabel">Required</span></div><div class="ev-desc" data-i18n="presentationDesc">Slide deck or recorded presentation explaining your solution and impact.</div></div>
+              <div class="ev-type"><div class="label" data-i18n="evidenceTypeLabel">Evidence Type</div><select><option data-i18n="presentationPptPdfVideo">Presentation (PPT, PDF, Video)</option></select></div>
+              <div class="kebab">⋮</div>
+            </div>
+            <div class="ev-row">
+              <div class="drag"><i></i></div>
+              <div class="ev-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5h-7L6 20v-4H6.5A2.5 2.5 0 0 1 4 13.5z"/><path d="M8 9h8M8 12h5"/></svg></div>
+              <div class="ev-copy"><div class="ev-title"><span data-i18n="reflectionLabel">Reflection</span> <span class="required" data-i18n="requiredLabel">Required</span></div><div class="ev-desc" data-i18n="reflectionDesc">A reflective write-up on what you learned, challenges faced and future improvements.</div></div>
+              <div class="ev-type"><div class="label" data-i18n="evidenceTypeLabel">Evidence Type</div><select><option data-i18n="writtenReflection">Written Reflection</option></select></div>
+              <div class="kebab">⋮</div>
+            </div>
+          </div>
+
+          <div class="details">
+            <h3 data-i18n="evidenceDetailsTitle">Evidence Details</h3>
+            <div class="form-grid">
+              <div class="field">
+                <label><span data-i18n="titleLabel">Title</span> <span class="reqstar">*</span></label>
+                <input class="input" value="Project Report">
+              </div>
+              <div class="field">
+                <div class="toggle-row"><label style="margin:0" data-i18n="mandatoryLabel">Mandatory</label><button type="button" class="toggle on" id="mandatoryToggle"></button></div>
+              </div>
+
+              <div class="field">
+                <label><span data-i18n="descriptionLabel">Description</span> <span class="reqstar">*</span></label>
+                <textarea class="textarea" data-i18n="projectReportDesc">A detailed report outlining the problem, methodology, findings and recommendations.</textarea>
+                <div class="count">78/500</div>
+              </div>
+              <div class="field">
+                <label data-i18n="acceptableFileTypesLabel">Acceptable File Types</label>
+                <div class="multi">
+                  <span class="tag">PDF <i>×</i></span><span class="tag">DOC <i>×</i></span><span class="tag">DOCX <i>×</i></span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label data-i18n="instructionsForLearnersLabel">Instructions for Learners</label>
+                <textarea class="textarea" data-i18n="uploadPdfInstructions">Upload a PDF document (maximum 10 MB) containing your project report. Include executive summary, methodology, results and impact.</textarea>
+                <div class="count">102/500</div>
+              </div>
+              <div class="field">
+                <label data-i18n="maxFileSizeLabel">Maximum File Size</label>
+                <div class="size-row"><input class="input" value="10"><select><option>MB</option></select></div>
+                <label class="mt" data-i18n="evalCriteriaLabel">Evaluation Criteria (optional)</label>
+                <textarea class="textarea short" data-i18n="evalCriteriaText">Clarity of analysis, depth of insights, and evidence of impact.</textarea>
+                <div class="count">61/500</div>
+              </div>
+            </div>
+            <div class="bottom-actions">
+              <button class="delete-ev" id="btnDeleteEvidence"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M9 7V4h6v3M7 7v13h10V7M10 11v5M14 11v5"/></svg><span data-i18n="deleteEvidenceLabel">Delete Evidence</span></button>
+              <div class="small-actions"><button class="small-btn" id="btnCancelEvidence" data-i18n="cancelLabel">Cancel</button><button class="small-btn update" id="btnUpdateEvidence" data-i18n="updateEvidenceLabel">Update Evidence</button></div>
+            </div>
+          </div>
+        </div>
+      </section>
+        </div>
+      </div>
+
+      <aside>
+        <div class="preview-card">
+          <div class="rail-title-row"><div class="rail-title" data-i18n="oppPreviewTitle">Opportunity Preview</div><div class="edit" id="editPreview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg><span data-i18n="editLabel">Edit</span></div></div>
+          <div class="preview-inner">
+            <div class="preview-top">
+              <div class="leafbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17 1.39.34 2.34.34C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg></div>
+              <div>
+                <div class="preview-name" data-i18n="previewOppName">QF Sustainability Challenge</div>
+                <div class="meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 19 7v10l-7 4-7-4V7z"/><path d="m9 12 2 2 4-5"/></svg><span data-i18n="typeCompetition">Competition</span> <span class="sep">|</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="7" r="3"/><path d="M5 21c0-4 3-6 7-6s7 2 7 6"/></svg> <span data-i18n="hbkuName">Hamad Bin Khalifa University</span></div>
+                <div class="preview-date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg><span data-i18n="dateRangePreview">20 Jun 2025 - 20 Aug 2025</span></div>
+              </div>
+            </div>
+            <div class="preview-desc" data-i18n="oppDescText">A university-wide challenge inviting students to develop innovative solutions for a more sustainable future in Qatar and beyond.</div>
+            <div class="tags"><span class="tag" data-i18n="tagSustainability">Sustainability</span><span class="tag" data-i18n="tagInnovation">Innovation</span><span class="tag" data-i18n="tagQnv2030">Qatar National Vision 2030</span></div>
+          </div>
+        </div>
+
+        <div class="summary-card">
+          <div class="rail-title" data-i18n="selectedCompetencyTitle">Selected Competency</div>
+          <div class="selected-comp">
+            <div class="comp-icon-lg img-icon" id="selCompIcon"><img src="../../Assets/systems-thinking-icon.png" alt="Systems Thinking"></div>
+            <div><div class="selected-name" id="selCompName" data-i18n="c3Name">Systems Thinking</div><div class="selected-level" id="selCompLevel" data-i18n="level3ProficientDash">Level 3 – Proficient</div></div>
+          </div>
+        </div>
+
+        <div class="summary-card">
+          <div class="rail-title-row"><div class="rail-title" data-i18n="evidenceReqCount3">Evidence Requirements (3)</div><div class="edit" data-i18n="viewAll">View All</div></div>
+          <div class="req-list">
+            <div class="req-item"><div class="req-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v5h4M9 13h6M9 17h6"/></svg></div><div class="req-name" data-i18n="projectReportLabel">Project Report</div><span class="req-note" data-i18n="requiredLabel">Required</span></div>
+            <div class="req-item"><div class="req-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="5" width="16" height="12" rx="1"/><path d="M9 21h6M12 17v4"/></svg></div><div class="req-name" data-i18n="presentationLabel">Presentation</div><span class="req-note" data-i18n="requiredLabel">Required</span></div>
+            <div class="req-item"><div class="req-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5h-7L6 20v-4H6.5A2.5 2.5 0 0 1 4 13.5z"/></svg></div><div class="req-name" data-i18n="reflectionLabel">Reflection</div><span class="req-note" data-i18n="requiredLabel">Required</span></div>
+          </div>
+          <div class="info">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 10v6M12 7h.01"/></svg>
+            <div data-i18n="evidenceReqInfo">Learners must submit all required evidence items for each competency. Evidence will be reviewed by the assigned verifiers in the next step.</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="bottom">
+      <button class="back" id="btnBack"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M10 7l-5 5 5 5"/></svg><span data-i18n="backLabel">Back</span></button>
+      <button class="next" id="btnNext"><span data-i18n="nextVerificationRules">Next: Verification &amp; Rules</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+
+    </div>
+  </div>
+
+  <footer class="qfoot">
+    <span data-i18n="copyright">© 2026 Qatar Foundation. All rights reserved.</span>
+    <nav><a href="#" data-i18n="privacyPolicy">Privacy Policy</a><i>|</i><a href="#" data-i18n="termsOfUse">Terms of Use</a><i>|</i><a href="#" data-i18n="supportLabel">Support</a></nav>
+  </footer>
+
+</div>
+
+<script src="../shared/auth.js"></script>
+<script>AdminAuth.requireAuth();</script>
+<script src="../shared/sidebar.js"></script>
+<script>
+document.getElementById('qUserName').textContent = AdminAuth.getName();
+document.getElementById('qUserRole').textContent = AdminAuth.getRole();
+
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+</script>
+<script src="evidence-requirements-content.js"></script>
+<script src="create-opportunity-i18n.js"></script>
+</body>
+</html>

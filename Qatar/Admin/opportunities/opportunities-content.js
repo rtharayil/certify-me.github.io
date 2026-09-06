@@ -4,7 +4,7 @@
 (function () {
   document.querySelectorAll('.adm-opp-scope .btn').forEach(function (b) {
     b.addEventListener('click', function () {
-      if (b.classList.contains('primary')) st('Create Opportunity — coming soon');
+      if (b.classList.contains('primary')) window.location.href = '../create-opportunity/index.html';
       else st('Import Opportunities — coming soon');
     });
   });

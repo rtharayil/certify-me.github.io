@@ -1,0 +1,62 @@
+/* Language toggle control + Arabic-mode text treatment for the
+   Evidence Submissions page. Only text-bearing leaf elements switch to
+   RTL reading direction and the Cairo typeface; grid/flex/table
+   structure stays as built so the pixel-tuned layout doesn't shift
+   between languages. The real <table> gets its own `direction`
+   flip so thead and tbody columns reorder together. */
+
+.lang-toggle{display:flex;gap:2px;background:#eef2f6;border:1px solid #dfe6ec;border-radius:8px;padding:2px;width:max-content}
+.lang-opt{height:28px;padding:0 14px;border:none;border-radius:6px;background:transparent;color:#5c6b84;font-size:11px;font-weight:700;cursor:pointer;font-family:'Cairo','DM Sans',sans-serif}
+.lang-opt.active{background:#00775f;color:#fff}
+.lang-opt:not(.active):hover{color:#0b2348}
+
+.adm-review-scope.lang-ar{font-family:'Cairo',var(--font-body,'DM Sans'),sans-serif}
+
+.adm-review-scope.lang-ar h1,
+.adm-review-scope.lang-ar .sub,
+.adm-review-scope.lang-ar .btn,
+.adm-review-scope.lang-ar .kpi-label,
+.adm-review-scope.lang-ar .kpi-note,
+.adm-review-scope.lang-ar .panel-title,
+.adm-review-scope.lang-ar .select span,
+.adm-review-scope.lang-ar .filter-btn,
+.adm-review-scope.lang-ar .clear,
+.adm-review-scope.lang-ar th,
+.adm-review-scope.lang-ar .primary,
+.adm-review-scope.lang-ar .secondary,
+.adm-review-scope.lang-ar .orgcell span,
+.adm-review-scope.lang-ar .priority,
+.adm-review-scope.lang-ar .due-red,
+.adm-review-scope.lang-ar .due-green,
+.adm-review-scope.lang-ar .table-footer span,
+.adm-review-scope.lang-ar .rows,
+.adm-review-scope.lang-ar .chart-title,
+.adm-review-scope.lang-ar .donut-label,
+.adm-review-scope.lang-ar .legend-row span,
+.adm-review-scope.lang-ar .trend-item span,
+.adm-review-scope.lang-ar .right-title,
+.adm-review-scope.lang-ar .overview-legend .legend-row span,
+.adm-review-scope.lang-ar .report span,
+.adm-review-scope.lang-ar .metric-label,
+.adm-review-scope.lang-ar .metric-note,
+.adm-review-scope.lang-ar .activity-main b,
+.adm-review-scope.lang-ar .activity-main span,
+.adm-review-scope.lang-ar .activity-time,
+.adm-review-scope.lang-ar .viewall span,
+.adm-review-scope.lang-ar .bottom-note span{
+  direction:rtl;
+  text-align:right;
+  font-family:'Cairo','DM Sans',sans-serif;
+}
+
+.adm-review-scope.lang-ar table{direction:rtl}
+.adm-review-scope.lang-ar th{text-align:right}
+.adm-review-scope.lang-ar .subcell{direction:rtl}
+.adm-review-scope.lang-ar .person{direction:rtl}
+.adm-review-scope.lang-ar .orgcell{direction:rtl}
+.adm-review-scope.lang-ar .legend-row{direction:rtl}
+.adm-review-scope.lang-ar .trend-item{direction:rtl}
+.adm-review-scope.lang-ar .activity-row{direction:rtl}
+.adm-review-scope.lang-ar .activity-main{direction:rtl}
+.adm-review-scope.lang-ar .metric{direction:rtl}
+.adm-review-scope.lang-ar .bottom-note{direction:rtl}

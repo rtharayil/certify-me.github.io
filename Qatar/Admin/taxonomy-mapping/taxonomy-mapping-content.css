@@ -1,0 +1,153 @@
+/* Taxonomy Mapping — step 2 of the Add/Edit Competency wizard.
+   Exact-clone content adapted to the shared Admin shell: same
+   navy/green palette, font scale and card conventions as the other
+   Admin sections (Competencies, Review, Analytics) instead of the
+   reference mockup's own indigo/Inter styling. */
+
+.adm-taxmap-scope{font-size:12px;color:#0d2347;padding-bottom:26px}
+.adm-taxmap-scope{--navy:#0b2348;--green:#006b58;--green2:#008b72;--line:#e4eaf0;--muted:#5c6b84;--soft:#f7fafb;--blue:#2475d9}
+
+.adm-taxmap-scope h1{font-size:20px;line-height:1.2;margin:0;color:#0b2348;letter-spacing:-.4px}
+.adm-taxmap-scope .subtitle{font-size:11px;margin-top:7px;color:#34496a}
+
+.adm-taxmap-scope .steps{margin-top:16px;height:58px;border:1px solid var(--line);border-radius:8px;display:grid;grid-template-columns:1.02fr 1fr 1fr 1fr 1.02fr;overflow:hidden}
+.adm-taxmap-scope .step{display:flex;align-items:center;padding:0 12px;border-right:1px solid var(--line);gap:11px;background:#fff;cursor:pointer}
+.adm-taxmap-scope .step.active{cursor:default}
+.adm-taxmap-scope .step:last-child{border-right:0}
+.adm-taxmap-scope .step.active{background:#f0fbf7;border-bottom:2px solid #07865f}
+.adm-taxmap-scope .num{width:32px;height:32px;border:1px solid #dce5f2;border-radius:50%;display:grid;place-items:center;color:#334a6c;font-weight:700;font-size:12px;flex:none;background:#f8faff}
+.adm-taxmap-scope .active .num{background:#087e5d;color:#fff;border-color:#087e5d}
+.adm-taxmap-scope .step-title{font-weight:700;color:#233a5e;font-size:10.5px;line-height:14px}
+.adm-taxmap-scope .active .step-title{color:#0a6c56}
+.adm-taxmap-scope .step-desc{font-size:9px;color:#5c6b84;line-height:12px}
+
+.adm-taxmap-scope .grid{display:grid;grid-template-columns:1.03fr .99fr .63fr;gap:9px;margin-top:12px}
+.adm-taxmap-scope .card{border:1px solid var(--line);border-radius:9px;background:#fff;min-width:0}
+.adm-taxmap-scope .left-card{height:600px;padding:13px 14px}
+.adm-taxmap-scope .mid-card{height:600px;padding:13px 14px}
+.adm-taxmap-scope .right-col{display:flex;flex-direction:column;gap:9px}
+.adm-taxmap-scope .right-card{padding:11px 11px}
+.adm-taxmap-scope .right-card.mapping{height:196px}
+.adm-taxmap-scope .right-card.info{height:290px}
+.adm-taxmap-scope .right-note{height:74px;padding:10px 12px;border:1px solid #d8eee7;border-radius:8px;background:#eefaf6;display:flex}
+.adm-taxmap-scope .section-title{font-size:13px;font-weight:700;color:#0b2348;line-height:17px}
+.adm-taxmap-scope .section-help{font-size:10.5px;color:#5c6b84;margin-top:3px;line-height:14px}
+.adm-taxmap-scope label{display:block;font-weight:700;color:#233a5e;font-size:10px;margin-bottom:5px}
+.adm-taxmap-scope .field-label{margin-top:12px}
+.adm-taxmap-scope .select,.adm-taxmap-scope .input,.adm-taxmap-scope .textarea{width:100%;border:1px solid #dce4ec;border-radius:6px;background:#fff;color:#172d50;height:33px;padding:0 10px;outline:0;font-size:10.5px}
+.adm-taxmap-scope .searchbox{height:33px;display:flex;align-items:center;border:1px solid #dce4ec;border-radius:6px;padding:0 10px;gap:8px;color:#5c6b84}
+.adm-taxmap-scope .search-mode{display:flex;gap:6px;margin-top:9px}
+.adm-taxmap-scope .mode-btn{flex:1;height:29px;border:1px solid #dce4ec;border-radius:6px;background:#fff;color:#5c6b84;font-size:9.5px;font-weight:650;cursor:pointer}
+.adm-taxmap-scope .mode-btn.active{background:#e9f6f0;border-color:#8fd0b8;color:#00755f}
+.adm-taxmap-scope .searchbox svg{width:15px;height:15px;stroke:#334a6c;flex:none}
+.adm-taxmap-scope .searchbox input{border:0;outline:0;width:100%;color:#172d50;font-size:10.5px;background:transparent}
+.adm-taxmap-scope .searchbox input::placeholder{color:#8a96ac}
+
+.adm-taxmap-scope .tree{margin-top:8px;height:420px;overflow:hidden;padding-right:4px;position:relative}
+.adm-taxmap-scope .tree:after{content:"";position:absolute;right:0;top:3px;width:5px;height:406px;border-radius:5px;background:#e4eaf0}
+.adm-taxmap-scope .tree:before{content:"";position:absolute;right:0;top:90px;width:5px;height:128px;border-radius:5px;background:#9aa8ba;z-index:2}
+.adm-taxmap-scope .row{height:24px;display:flex;align-items:center;white-space:nowrap;color:#334a6c;font-size:10.5px}
+.adm-taxmap-scope .row strong{font-weight:700}
+.adm-taxmap-scope .indent1{padding-left:21px}.adm-taxmap-scope .indent2{padding-left:42px}.adm-taxmap-scope .indent3{padding-left:63px}
+.adm-taxmap-scope .tw{width:15px;color:#334a6c;font-size:13px}
+.adm-taxmap-scope .folder,.adm-taxmap-scope .check{width:13px;height:13px;border:1px solid #b9c3d4;border-radius:3px;margin-right:7px;display:inline-block;flex:none}
+.adm-taxmap-scope .check.checked{background:#0a835f;border-color:#0a835f;position:relative}
+.adm-taxmap-scope .check.checked:after{content:"\2713";color:#fff;font-size:9px;position:absolute;left:2px;top:-1px;font-weight:700}
+.adm-taxmap-scope .selected-row{background:#e4f6f0;border-radius:4px;color:#125f50}
+.adm-taxmap-scope .selected-row .check{background:#087e5d;border-color:#087e5d}
+
+.adm-taxmap-scope .competency{margin-top:12px;border:1px solid var(--line);background:#fbfdff;border-radius:8px;min-height:74px;padding:10px;display:flex;align-items:center;gap:12px}
+.adm-taxmap-scope .leaf{width:46px;height:46px;border-radius:50%;background:#d9f7ed;display:grid;place-items:center;flex:none;overflow:hidden}
+.adm-taxmap-scope .leaf-img{width:100%;height:100%;object-fit:cover}
+.adm-taxmap-scope .leaf svg{width:33px;height:33px;stroke:#07845f;fill:none;stroke-width:1.7}
+.adm-taxmap-scope .comp-name{font-size:13px;font-weight:700;color:#0b2348}
+.adm-taxmap-scope .comp-desc{font-size:9.5px;color:#5c6b84;line-height:13px;margin-top:2px}
+.adm-taxmap-scope .levels{margin-left:auto;align-self:stretch;display:flex;flex-direction:column;align-items:flex-end}
+.adm-taxmap-scope .levels-title{font-size:9px;color:#5c6b84;margin-bottom:7px}
+.adm-taxmap-scope .level-buttons{display:flex;gap:5px}
+.adm-taxmap-scope .lvl{height:26px;padding:0 10px;border:1px solid #dce4ec;border-radius:5px;display:grid;place-items:center;color:#334a6c;background:#fff;font-size:9.5px;font-weight:600;white-space:nowrap}
+.adm-taxmap-scope .lvl.active{background:#0a7d5b;border-color:#0a7d5b;color:#fff;font-weight:700}
+
+.adm-taxmap-scope .selected-skill{margin-top:10px;border:1px solid #d7ebe6;border-radius:8px;background:#eefaf6;display:flex;align-items:center;padding:10px;gap:11px}
+.adm-taxmap-scope .selected-skill .leaf{width:38px;height:38px}
+.adm-taxmap-scope .selected-skill .leaf svg{width:28px;height:28px}
+.adm-taxmap-scope .skill-name{font-size:11px;font-weight:700;color:#0b2348}
+.adm-taxmap-scope .code{font-size:9.5px;color:#168264;background:#d9f4eb;border-radius:4px;padding:3px 6px;margin:3px 0 2px;display:inline-block;font-weight:600}
+.adm-taxmap-scope .skill-desc{font-size:9px;color:#5c6b84;line-height:12px}
+.adm-taxmap-scope .score{margin-left:auto;width:120px;border-left:1px solid #d9e9e5;padding-left:11px;flex:none}
+.adm-taxmap-scope .score-label{font-size:8.5px;color:#5c6b84}
+.adm-taxmap-scope .score-val{font-size:16px;font-weight:700;color:#0a7d5b;margin-top:2px}
+.adm-taxmap-scope .meter{height:6px;background:#dfe9e9;border-radius:5px;margin-top:4px;overflow:hidden}
+.adm-taxmap-scope .meter span{display:block;width:91%;height:100%;background:#087d5d;border-radius:5px}
+.adm-taxmap-scope .score-bottom{display:flex;justify-content:space-between;margin-top:7px;font-size:8.5px;color:#5c6b84}
+.adm-taxmap-scope .score-bottom b{background:#087d5d;color:#fff;border-radius:4px;padding:3px 6px}
+
+.adm-taxmap-scope .map-details-title{margin-top:12px;font-size:11px;color:#0b2348;font-weight:700}
+.adm-taxmap-scope .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+.adm-taxmap-scope .tiny-label{font-size:10px;font-weight:700;color:#233a5e;margin-bottom:5px}
+.adm-taxmap-scope .tiny-label .info-i{color:#2475d9;font-style:normal}
+.adm-taxmap-scope .mapping-box{height:33px;border:1px solid #dce4ec;border-radius:6px;padding:0 10px;display:flex;align-items:center;justify-content:space-between;color:#172d50;font-size:10.5px}
+.adm-taxmap-scope .just-grid{display:grid;grid-template-columns:1.28fr .72fr;gap:12px;margin-top:10px}
+.adm-taxmap-scope .textarea{height:70px;resize:none;padding:8px 9px;line-height:14px;font-size:10px;font-family:inherit}
+.adm-taxmap-scope .char{text-align:right;font-size:8.5px;color:#5c6b84;margin-top:2px}
+.adm-taxmap-scope .confidence{border:1px solid var(--line);border-radius:6px;background:#f7fafb;padding:8px 10px}
+.adm-taxmap-scope .confidence-title{font-size:9.5px;font-weight:700;color:#233a5e}
+.adm-taxmap-scope .confidence .meter{margin-top:5px}
+.adm-taxmap-scope .confidence .meter span{width:76%}
+.adm-taxmap-scope .conf-scale{display:flex;justify-content:space-between;align-items:center;margin-top:9px;font-size:8.5px;color:#5c6b84}
+.adm-taxmap-scope .high{background:#087d5d;color:#fff;border-radius:4px;padding:4px 7px;font-weight:700}
+.adm-taxmap-scope .add-btn{margin-top:8px;height:32px;border:1px solid #58b69e;background:#fff;border-radius:6px;color:#08785a;font-weight:700;padding:0 13px;font-size:10.5px;cursor:pointer}
+.adm-taxmap-scope .add-btn .plus{font-size:15px;margin-right:6px;vertical-align:-1px}
+.adm-taxmap-scope .mapped-title{margin-top:12px;font-size:11px;font-weight:700;color:#0b2348}
+.adm-taxmap-scope .map-table{margin-top:6px;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.adm-taxmap-scope table{border-collapse:collapse;width:100%;font-size:9px;color:#172d50}
+.adm-taxmap-scope th{background:#f8fafb;font-weight:700;color:#233a5e;height:26px;text-align:left;padding:0 8px}
+.adm-taxmap-scope td{height:28px;border-top:1px solid var(--line);padding:0 8px}
+.adm-taxmap-scope .tag{display:inline-block;padding:3px 6px;border-radius:4px;font-weight:700}
+.adm-taxmap-scope .tag.green{background:#dff3ef;color:#00755f}.adm-taxmap-scope .tag.yellow{background:#fff1ca;color:#bc7d00}
+.adm-taxmap-scope .actions{font-size:13px;text-align:center;color:#5c6b84}
+
+.adm-taxmap-scope .right-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.adm-taxmap-scope .right-title{font-size:12.5px;font-weight:700;color:#0b2348}
+.adm-taxmap-scope .view{font-size:9.5px;color:#0872ce;font-weight:700;cursor:pointer}
+.adm-taxmap-scope .mapping-item{height:60px;border:1px solid var(--line);border-radius:6px;padding:8px;display:flex;gap:9px;position:relative}
+.adm-taxmap-scope .mapping-item+.mapping-item{margin-top:7px}
+.adm-taxmap-scope .mapping-item .leaf{width:32px;height:32px}
+.adm-taxmap-scope .mapping-item .leaf svg{width:23px;height:23px}
+.adm-taxmap-scope .mi-title{font-size:10px;font-weight:700;color:#0b2348;line-height:13px;padding-right:22px}
+.adm-taxmap-scope .primary{background:#dcf6ed;color:#087c5b;border-radius:4px;padding:2px 5px;font-size:8.5px;margin-left:6px}
+.adm-taxmap-scope .mi-code{font-size:9px;color:#334a6c;margin-top:2px}
+.adm-taxmap-scope .mi-level{font-size:9px;color:#5c6b84;margin-top:4px}
+.adm-taxmap-scope .dots{position:absolute;right:9px;top:20px;color:#334a6c;font-weight:700;cursor:pointer}
+.adm-taxmap-scope .info-table{border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.adm-taxmap-scope .info-row{display:grid;grid-template-columns:100px 1fr;min-height:27px;border-bottom:1px solid var(--line)}
+.adm-taxmap-scope .info-row:last-child{border-bottom:0}
+.adm-taxmap-scope .info-key{background:#f8fafb;color:#334a6c;padding:6px 8px;font-size:9.5px}
+.adm-taxmap-scope .info-val{padding:6px 8px;color:#172d50;font-size:9.5px}
+.adm-taxmap-scope .info-val a{color:#0872ce;text-decoration:none}
+.adm-taxmap-scope .scope{line-height:13px}
+.adm-taxmap-scope .related{margin:0;padding-left:13px}
+.adm-taxmap-scope .related li{margin:2px 0}
+.adm-taxmap-scope .note-icon{width:34px;height:34px;border:2px solid #15876b;border-radius:50%;display:grid;place-items:center;flex:none;margin-right:10px}
+.adm-taxmap-scope .note-icon svg{width:20px;height:20px;stroke:#087d5d}
+.adm-taxmap-scope .note-text{font-size:10px;color:#296052;line-height:14px}
+
+.adm-taxmap-scope .bottom{display:flex;justify-content:space-between;align-items:center;margin-top:20px;flex-wrap:wrap;gap:12px}
+.adm-taxmap-scope .back{height:38px;min-width:96px;padding:0 14px;background:#fff;border:1px solid var(--line);border-radius:6px;color:#172d50;font-weight:700;font-size:11px;cursor:pointer}
+.adm-taxmap-scope .bottom-right{display:flex;gap:12px;flex-wrap:wrap}
+.adm-taxmap-scope .draft{height:38px;min-width:120px;padding:0 14px;border:1px solid var(--line);border-radius:6px;background:#fff;color:#172d50;font-weight:700;font-size:11px;cursor:pointer}
+.adm-taxmap-scope .next{height:38px;min-width:210px;border:0;border-radius:6px;background:#00775f;color:#fff;font-weight:700;font-size:11px;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:0 18px;cursor:pointer}
+.adm-taxmap-scope .next span:last-child{font-size:16px;font-weight:400}
+
+@media(max-width:1250px){
+  .adm-taxmap-scope .steps{grid-template-columns:repeat(5,minmax(0,1fr))}
+  .adm-taxmap-scope .step{padding:0 8px;gap:7px}.adm-taxmap-scope .step-desc{display:none}
+  .adm-taxmap-scope .grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,.72fr)}
+  .adm-taxmap-scope .right-card.info{height:auto}
+}
+@media(max-width:980px){
+  .adm-taxmap-scope .grid{grid-template-columns:minmax(0,1fr)}
+  .adm-taxmap-scope .left-card,.adm-taxmap-scope .mid-card{height:auto}
+  .adm-taxmap-scope .just-grid{grid-template-columns:minmax(0,1fr)}
+  .adm-taxmap-scope .two-col{grid-template-columns:minmax(0,1fr)}
+}

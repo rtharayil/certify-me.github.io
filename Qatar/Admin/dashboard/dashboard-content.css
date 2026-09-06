@@ -23,15 +23,15 @@
 
 .adm-dash-scope .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-top:20px}
 .adm-dash-scope .card{background:#fff;border:1px solid var(--border);border-radius:8px;box-shadow:0 1px 2px rgba(20,40,60,.025)}
-.adm-dash-scope .stat{height:107px;display:flex;align-items:center;padding:17px 16px;overflow:hidden}
-.adm-dash-scope .staticon{width:64px;height:64px;flex:none;border-radius:50%;display:grid;place-items:center}
+.adm-dash-scope .stat{height:107px;display:flex;align-items:flex-start;padding:12px 16px 17px;overflow:hidden}
+.adm-dash-scope .staticon{width:64px;height:64px;flex:none;border-radius:50%;display:grid;place-items:center;margin-top:0}
 .adm-dash-scope .staticon svg{width:35px;height:35px}
 .adm-dash-scope .sg{background:#e1f3ec;color:#00825e}
 .adm-dash-scope .sb{background:#e5f0ff;color:#1170dc}
 .adm-dash-scope .sp{background:#f0e9fa;color:#6c40b8}
 .adm-dash-scope .so{background:#fff0df;color:#fa7800}
 .adm-dash-scope .statcopy{padding-left:21px;min-width:0;overflow:hidden;white-space:nowrap}
-.adm-dash-scope .label{font-size:12.5px;line-height:15px;min-height:30px;margin-bottom:8px;white-space:normal;overflow-wrap:break-word}
+.adm-dash-scope .label{font-size:12.5px;line-height:15px;min-height:15px;margin-bottom:3px;white-space:normal;overflow-wrap:break-word}
 .adm-dash-scope .number{font-size:27px;line-height:1;font-weight:500}
 .adm-dash-scope .delta{color:#00825e;font-size:11px;font-weight:650;margin-left:11px;vertical-align:3px;white-space:nowrap}
 .adm-dash-scope .vs{font-size:10.5px;color:#53647a;margin-top:6px}
@@ -40,7 +40,7 @@
 .adm-dash-scope .row2{display:grid;grid-template-columns:1.02fr 1.03fr .75fr;gap:15px;margin-top:14px}
 .adm-dash-scope .panel{border:1px solid var(--border);border-radius:8px;background:#fff;box-shadow:0 1px 2px rgba(20,40,60,.025)}
 .adm-dash-scope .activities,.adm-dash-scope .trends{height:453px;padding:16px}
-.adm-dash-scope .quick{height:233px;padding:15px}
+.adm-dash-scope .quick{height:324px;padding:15px}
 .adm-dash-scope .overview{height:207px;padding:12px 15px}
 .adm-dash-scope .right{display:flex;flex-direction:column;gap:13px}
 .adm-dash-scope .head{display:flex;justify-content:space-between;align-items:center}
@@ -58,11 +58,12 @@
 .adm-dash-scope .ab{background:#e7f1ff;color:#1170dc}
 .adm-dash-scope .ao{background:#fff0df;color:#fa7800}
 .adm-dash-scope .abody{flex:1;min-width:0}
-.adm-dash-scope .arow{display:flex;justify-content:space-between;gap:8px;line-height:1.25}
+.adm-dash-scope .arow{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;line-height:1.25}
 .adm-dash-scope .aname{font-size:11px;font-weight:700}
+.adm-dash-scope .atime-wrap{flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:2px}
 .adm-dash-scope .atime{font-size:9.5px;color:#33475f;white-space:nowrap}
-.adm-dash-scope .adesc{font-size:10px;color:#263a56;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.adm-dash-scope .aby{font-size:9.5px;color:#203550;text-align:right;margin-top:-1px}
+.adm-dash-scope .adesc{font-size:10px;color:#263a56;margin-top:-6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.adm-dash-scope .aby{font-size:9.5px;color:#203550;text-align:right;white-space:nowrap}
 
 .adm-dash-scope .trend-head{display:flex;justify-content:space-between;margin-top:18px}
 .adm-dash-scope .tsub{font-size:11px;margin-bottom:6px}
@@ -89,6 +90,7 @@
 .adm-dash-scope .tp{font-size:10.5px;color:#00825e;font-weight:650;margin-top:8px}
 
 .adm-dash-scope .quick-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:14px}
+.adm-dash-scope .qitem.qcenter{grid-column:1/-1;width:calc(50% - 4.5px);justify-self:center}
 .adm-dash-scope .qitem{height:82px;border:1px solid #e0e6eb;border-radius:7px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;background:none}
 .adm-dash-scope .qicon{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:#fff;margin-bottom:8px}
 .adm-dash-scope .qicon svg{width:19px;height:19px}
@@ -96,6 +98,7 @@
 .adm-dash-scope .qp{background:#7143bd}
 .adm-dash-scope .qb{background:#1473d8}
 .adm-dash-scope .qo{background:#ff7900}
+.adm-dash-scope .qt{background:#0d9488}
 .adm-dash-scope .qitem span{font-size:10.5px;font-weight:650}
 
 .adm-dash-scope .overview .ptitle{margin-bottom:8px}

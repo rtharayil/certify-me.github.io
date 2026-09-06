@@ -90,9 +90,7 @@
     if (!valid) { shakeForm('loginForm'); return; }
 
     showToast('Login successful! Redirecting...');
-    const name = email.split('@')[0];
-    const displayName = name.charAt(0).toUpperCase() + name.slice(1);
-    AdminAuth.login(displayName, 'System Administrator');
+    AdminAuth.login('Hassan Al-Kuwari', 'System Administrator');
     setTimeout(() => { window.location.href = 'dashboard/index.html'; }, 900);
     generateCaptcha('login');
   });

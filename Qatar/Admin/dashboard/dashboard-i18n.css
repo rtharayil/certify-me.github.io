@@ -1,0 +1,49 @@
+/* Language toggle control + Arabic-mode text treatment for the
+   Dashboard page. Only text-bearing leaf elements switch to RTL
+   reading direction and the Cairo typeface; grid/flex/table
+   structure stays as built so the pixel-tuned layout doesn't shift
+   between languages. */
+
+.lang-toggle{display:flex;gap:2px;background:#eef2f6;border:1px solid #dfe6ec;border-radius:8px;padding:2px;width:max-content}
+.lang-opt{height:28px;padding:0 14px;border:none;border-radius:6px;background:transparent;color:#5c6b84;font-size:11px;font-weight:700;cursor:pointer;font-family:'Cairo','DM Sans',sans-serif}
+.lang-opt.active{background:#00775f;color:#fff}
+.lang-opt:not(.active):hover{color:#0b2348}
+
+.adm-dash-scope.lang-ar{font-family:'Cairo',var(--font-body,'DM Sans'),sans-serif}
+
+.adm-dash-scope.lang-ar .greeting,
+.adm-dash-scope.lang-ar .sub,
+.adm-dash-scope.lang-ar .date span,
+.adm-dash-scope.lang-ar .export,
+.adm-dash-scope.lang-ar .label,
+.adm-dash-scope.lang-ar .vs,
+.adm-dash-scope.lang-ar .ptitle,
+.adm-dash-scope.lang-ar .link,
+.adm-dash-scope.lang-ar .aname,
+.adm-dash-scope.lang-ar .adesc,
+.adm-dash-scope.lang-ar .atime,
+.adm-dash-scope.lang-ar .aby,
+.adm-dash-scope.lang-ar .tsub,
+.adm-dash-scope.lang-ar .tdelta,
+.adm-dash-scope.lang-ar .month span,
+.adm-dash-scope.lang-ar .xlab span,
+.adm-dash-scope.lang-ar .tlbl,
+.adm-dash-scope.lang-ar .qitem span,
+.adm-dash-scope.lang-ar .ovlabel,
+.adm-dash-scope.lang-ar .oppbody span,
+.adm-dash-scope.lang-ar .bx span,
+.adm-dash-scope.lang-ar .islbl,
+.adm-dash-scope.lang-ar .isvs,
+.adm-dash-scope.lang-ar .cn,
+.adm-dash-scope.lang-ar .dash-footnote span{
+  direction:rtl;
+  text-align:right;
+  font-family:'Cairo','DM Sans',sans-serif;
+}
+
+.adm-dash-scope.lang-ar .head{direction:rtl}
+.adm-dash-scope.lang-ar .arow{direction:rtl}
+.adm-dash-scope.lang-ar .atime-wrap{direction:rtl;text-align:right}
+.adm-dash-scope.lang-ar .legend-row{direction:rtl}
+.adm-dash-scope.lang-ar .cr{direction:rtl}
+.adm-dash-scope.lang-ar .ov{direction:rtl}

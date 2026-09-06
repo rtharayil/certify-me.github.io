@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Version History – Admin Portal – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared/typography.css">
+<link rel="stylesheet" href="../shared/admin-shell.css">
+<link rel="stylesheet" href="version-history-content.css">
+<link rel="stylesheet" href="version-history-i18n.css">
+</head>
+<body class="dm">
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<!-- ===== sidebar (shared component, see Admin/shared/sidebar.js) ===== -->
+<div id="admin-sidebar" data-active="competencies"></div>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <h1 class="qtitle">Universal Skills Passport <span class="qtitle-pill" data-i18n="adminPortal">Administrator Portal</span></h1>
+    <div class="qtop-actions">
+      <div class="lang-toggle" id="langToggle" role="group" aria-label="Language">
+        <button type="button" class="lang-opt active" data-lang="en">EN</button>
+        <button type="button" class="lang-opt" data-lang="ar">عربي</button>
+      </div>
+      <button class="qicon-btn" onclick="st('Search coming soon')" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="qicon-btn" onclick="st('5 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>5</b>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><img src="../../Assets/hassan.png" alt="Hassan Al-Kuwari"></span>
+          <span class="qui"><b id="qUserName">Hassan Al-Kuwari</b><span id="qUserRole">Administrator</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg><span data-i18n="myProfile">My Profile</span></button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span data-i18n="settingsLabel">Settings</span></button>
+          <hr>
+          <button type="button" class="qout" onclick="AdminAuth.logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg><span data-i18n="signOut">Sign Out</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+    <div class="adm-vh-scope">
+
+    <h1 data-i18n="pageTitle">Version History</h1>
+    <div class="subtitle" data-i18n="pageSubtitle">Design, manage, and maintain competency frameworks and academic mappings.</div>
+
+    <div class="steps">
+      <div class="step" data-goto="../competencies/index.html"><div class="num">1</div><div><div class="step-title" data-i18n="stepCompMgmtTitle">Competency Management</div><div class="step-sub" data-i18n="stepCompMgmtSub">Create and edit competencies</div></div></div>
+      <div class="step" data-goto="../taxonomy-mapping/index.html"><div class="num">2</div><div><div class="step-title" data-i18n="stepTaxTitle">Taxonomy Mapping</div><div class="step-sub" data-i18n="stepTaxSub">Link to global taxonomies</div></div></div>
+      <div class="step active"><div class="num">3</div><div><div class="step-title" data-i18n="stepVersionTitle">Version History</div><div class="step-sub" data-i18n="stepVersionSub">View changes</div></div></div>
+      <div class="step" data-goto="comingsoon" data-label="Criteria"><div class="num">4</div><div><div class="step-title" data-i18n="stepDiplomaTitle">Criteria</div><div class="step-sub" data-i18n="stepDiplomaSub">Set criteria and requirements</div></div></div>
+      <div class="step" data-goto="comingsoon" data-label="Review &amp; Publish"><div class="num">5</div><div><div class="step-title" data-i18n="stepReviewTitle">Review &amp; Publish</div><div class="step-sub" data-i18n="stepReviewSub">Finalize and publish</div></div></div>
+    </div>
+
+    <div class="content">
+      <section class="left">
+        <div class="section-title" data-i18n="sectionTitle">Version History</div>
+        <div class="section-sub" data-i18n="sectionSub">Track changes to competency definitions, taxonomy mappings, and proficiency level configurations.</div>
+
+        <div class="filters">
+          <div class="field searchfield"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#3c5c96" stroke-width="2"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><span data-i18n="searchPlaceholder">Search competencies...</span></div>
+          <div class="field domain"><span data-i18n="allDomains">All Domains</span> <span>&#8964;</span></div>
+          <div class="field tax"><span data-i18n="allTaxonomies">All Taxonomies</span> <span>&#8964;</span></div>
+          <div class="field change"><span data-i18n="allChangeTypes">All Change Types</span> <span>&#8964;</span></div>
+          <div class="field date"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#234b91" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/><path d="M7 14h3M14 14h3M7 18h3"/></svg><span data-i18n="dateRange">Date Range</span></div>
+          <div class="filter-spacer"></div>
+          <button class="smallbtn"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9"><path d="M12 16V4m0 0-4 4m4-4 4 4"/><path d="M5 12v7h14v-7"/></svg><span data-i18n="importBtn">Import</span></button>
+          <button class="smallbtn"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9"><path d="M12 4v12m0 0-4-4m4 4 4-4"/><path d="M5 12v7h14v-7"/></svg><span data-i18n="exportBtn">Export</span></button>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr>
+              <th data-i18n="thCompetency">Competency</th><th data-i18n="thVersion">Version</th><th data-i18n="thChangeType">Change Type</th><th data-i18n="thHierarchyPath">Hierarchy Path</th><th data-i18n="thTaxonomiesMapped">Taxonomies Mapped</th><th data-i18n="thChangedBy">Changed By</th><th data-i18n="thDateTime">Date &amp; Time</th><th data-i18n="thActions">Actions</th>
+            </tr></thead>
+            <tbody>
+              <tr><td><div class="comp"><span class="comp-ico"><img src="../../Assets/systems-thinking-icon.png" alt="Systems Thinking"></span><div><div class="compname" data-i18n="r1Name">Systems Thinking</div><div class="compsub" data-i18n="r1Sub">Systems &amp; Critical Thinking</div></div></div></td><td class="ver">v3.0</td><td><span class="pill updated" data-i18n="pillUpdated">Updated</span></td><td><span class="path" data-i18n="r1Path">Cognitive Skills &rsaquo; Systems Thinking</span></td><td><div class="taxonomy"><span class="taxpill">ESCO</span><span class="taxpill">O*NET</span></div></td><td><div class="changed"><span class="pavatar"><img src="../../Assets/fatima.png" alt="Fatima Al-Kuwari"></span><span data-i18n="byFatima">Fatima Al-Kuwari</span></div></td><td data-i18n="r1Date">02 Sep 2026<br>10:15 AM</td><td><div class="action"><button class="view" data-i18n="viewBtn">View</button><span class="dots">&bull;&bull;&bull;</span></div></td></tr>
+              <tr><td><div class="comp"><span class="comp-ico" style="background:#f0474d"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 2.5-5.5 6-5.5s6 2.5 6 5.5"/><circle cx="18" cy="9" r="2.3"/><path d="M15.5 14.2c2.5.3 4.5 2.4 4.5 5.3"/></svg></span><div><div class="compname" data-i18n="r2Name">Civic Values &amp; Social Responsibility</div><div class="compsub" data-i18n="r2Sub">Ethics &amp; Civic Responsibility</div></div></div></td><td class="ver">v2.1</td><td><span class="pill updated" data-i18n="pillUpdated">Updated</span></td><td><span class="path" data-i18n="r2Path">Ethics &amp; Civic Responsibility &rsaquo; Civic Values &amp; Social Responsibility</span></td><td><div class="taxonomy"><span class="taxpill">ESCO</span><span class="taxpill blue">UN SDG</span></div></td><td><div class="changed"><span class="pavatar"><img src="../../Assets/omar.png" alt="Omar Al-Emadi"></span><span data-i18n="byOmar">Omar Al-Emadi</span></div></td><td data-i18n="r2Date">28 Aug 2026<br>04:20 PM</td><td><div class="action"><button class="view" data-i18n="viewBtn">View</button><span class="dots">&bull;&bull;&bull;</span></div></td></tr>
+              <tr><td><div class="comp"><span class="comp-ico" style="background:#f2a30f"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="9" r="5"/><path d="M9 21h6M10 18h4M12 4V2"/></svg></span><div><div class="compname" data-i18n="r3Name">Entrepreneurship</div><div class="compsub" data-i18n="r3Sub">Personal &amp; Leadership</div></div></div></td><td class="ver">v1.5</td><td><span class="pill major" data-i18n="pillMajor">Major Update</span></td><td><span class="path" data-i18n="r3Path">Personal &amp; Leadership &rsaquo; Entrepreneurship</span></td><td><div class="taxonomy"><span class="taxpill">ESCO</span><span class="taxpill blue">SFIA</span></div></td><td><div class="changed"><span class="pavatar"><img src="../../Assets/sarah.png" alt="Sarah Hassan"></span><span data-i18n="bySarah">Sarah Hassan</span></div></td><td data-i18n="r3Date">12 Aug 2026<br>11:05 AM</td><td><div class="action"><button class="view" data-i18n="viewBtn">View</button><span class="dots">&bull;&bull;&bull;</span></div></td></tr>
+              <tr><td><div class="comp"><span class="comp-ico" style="background:#6699df"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="12" cy="7" r="3"/><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M10 9 7 14M14 9l3 5M9 17h6"/></svg></span><div><div class="compname" data-i18n="r4Name">Interpersonal &amp; Professional Communication</div><div class="compsub" data-i18n="r4Sub">Communication</div></div></div></td><td class="ver">v2.0</td><td><span class="pill updated" data-i18n="pillUpdated">Updated</span></td><td><span class="path" data-i18n="r4Path">Communication &rsaquo; Interpersonal &amp; Professional Communication</span></td><td><div class="taxonomy"><span class="taxpill">ESCO</span><span class="taxpill">O*NET</span></div></td><td><div class="changed"><span class="pavatar"><img src="../../Assets/khalid.png" alt="Khalid Al-Hajri"></span><span data-i18n="byKhalid">Khalid Al-Hajri</span></div></td><td data-i18n="r4Date">05 Aug 2026<br>09:30 AM</td><td><div class="action"><button class="view" data-i18n="viewBtn">View</button><span class="dots">&bull;&bull;&bull;</span></div></td></tr>
+              <tr><td><div class="comp"><span class="comp-ico" style="background:#e0a800"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M4 17 10 11l4 4 6-8"/><path d="M15 8h5v5"/></svg></span><div><div class="compname" data-i18n="r5Name">Growth Mindset</div><div class="compsub" data-i18n="r5Sub">Personal &amp; Leadership</div></div></div></td><td class="ver">v1.2</td><td><span class="pill minor" data-i18n="pillMinor">Minor Update</span></td><td><span class="path" data-i18n="r5Path">Personal &amp; Leadership &rsaquo; Growth Mindset</span></td><td><div class="taxonomy"><span class="taxpill">ESCO</span></div></td><td><div class="changed"><span class="pavatar"><img src="../../Assets/noora.png" alt="Noora Al-Mansoori"></span><span data-i18n="byNoora">Noora Al-Mansoori</span></div></td><td data-i18n="r5Date">21 Jul 2026<br>03:45 PM</td><td><div class="action"><button class="view" data-i18n="viewBtn">View</button><span class="dots">&bull;&bull;&bull;</span></div></td></tr>
+              <tr><td><div class="comp"><span class="comp-ico" style="background:#ed6690"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6"><path d="M12 4v16M5 9h14M7 9v4M17 9v4M4 20h6M14 20h6"/><path d="M12 4 9 2M12 4l3-2"/></svg></span><div><div class="compname" data-i18n="r6Name">Ethical Reasoning</div><div class="compsub" data-i18n="r6Sub">Ethics &amp; Civic Responsibility</div></div></div></td><td class="ver">v1.1</td><td><span class="pill updated" data-i18n="pillUpdated">Updated</span></td><td><span class="path" data-i18n="r6Path">Values &rsaquo; Ethics</span></td><td><div class="taxonomy"><span class="taxpill">ESCO</span><span class="taxpill">O*NET</span></div></td><td><div class="changed"><span class="pavatar"><img src="../../Assets/david.png" alt="David Lee"></span><span data-i18n="byDavid">David Lee</span></div></td><td data-i18n="r6Date">14 Jul 2026<br>11:10 AM</td><td><div class="action"><button class="view" data-i18n="viewBtn">View</button><span class="dots">&bull;&bull;&bull;</span></div></td></tr>
+              <tr><td><div class="comp"><span class="comp-ico" style="background:#f17e19"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M5 18V8M10 18V5M15 18v-8M20 18V3"/><path d="M4 20h17"/></svg></span><div><div class="compname" data-i18n="r7Name">Information Literacy</div><div class="compsub" data-i18n="r7Sub">Digital &amp; Data Literacy</div></div></div></td><td class="ver">v2.3</td><td><span class="pill major" data-i18n="pillMajor">Major Update</span></td><td><span class="path" data-i18n="r7Path">Digital &amp; Data Literacy &rsaquo; Information Literacy</span></td><td><div class="taxonomy"><span class="taxpill">ESCO</span><span class="taxpill blue">SFIA</span></div></td><td><div class="changed"><span class="pavatar"><img src="../../Assets/ahmed.png" alt="Ahmed Al-Mansoori"></span><span data-i18n="byAhmed">Ahmed Al-Mansoori</span></div></td><td data-i18n="r7Date">02 Jul 2026<br>02:25 PM</td><td><div class="action"><button class="view" data-i18n="viewBtn">View</button><span class="dots">&bull;&bull;&bull;</span></div></td></tr>
+              <tr><td><div class="comp"><span class="comp-ico" style="background:#0ea5a3"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></span><div><div class="compname" data-i18n="r8Name">Glocal Learning</div><div class="compsub" data-i18n="r8Sub">Global &amp; Intercultural Studies</div></div></div></td><td class="ver">v1.0</td><td><span class="pill created" data-i18n="pillCreated">Created</span></td><td><span class="path" data-i18n="r8Path">Global &amp; Intercultural Studies &rsaquo; Glocal Learning</span></td><td><div class="taxonomy"><span class="taxpill blue">UN SDG</span></div></td><td><div class="changed"><span class="pavatar"><img src="../../Assets/maryam.png" alt="Maryam Ibrahim"></span><span data-i18n="byMaryam">Maryam Ibrahim</span></div></td><td data-i18n="r8Date">15 Jun 2026<br>09:10 AM</td><td><div class="action"><button class="view" data-i18n="viewBtn">View</button><span class="dots">&bull;&bull;&bull;</span></div></td></tr>
+            </tbody>
+          </table>
+          <div class="footer">
+            <div class="count" data-i18n="showingText">Showing 1 to 8 of 256 competencies</div>
+            <div class="pages"><span>&lsaquo;</span><span class="page current">1</span><span class="page">2</span><span class="page">3</span><span class="page">4</span><span class="page">5</span><span>...</span><span class="page">32</span><span>&rsaquo;</span></div>
+            <div class="rows"><span data-i18n="rowsPerPage">Rows per page:</span> <select><option>8</option></select></div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <div class="panel-head"><div class="panel-title" data-i18n="r1Name">Systems Thinking</div><div class="close">&times;</div></div>
+        <div class="hero">
+          <span class="hero-ico"><img src="../../Assets/systems-thinking-icon.png" alt="Systems Thinking"></span>
+          <div><div class="hero-title"><span data-i18n="r1Name">Systems Thinking</span> <span class="vtag">v3.0</span></div><div class="hero-sub"><span data-i18n="domainLabel">Domain:</span> <span data-i18n="r1Sub">Systems &amp; Critical Thinking</span></div></div>
+        </div>
+        <div class="tabs"><div class="tab active" data-i18n="tabChangeDetails">Change Details</div><div class="tab" data-i18n="tabVersionCompare">Version Compare</div></div>
+        <div class="detail">
+          <div class="detailrow"><div class="label" data-i18n="thChangeType">Change Type</div><div class="value"><span class="pill updated" data-i18n="pillUpdated">Updated</span></div></div>
+          <div class="detailrow"><div class="label" data-i18n="thDateTime">Date &amp; Time</div><div class="value" data-i18n="detailDateTime">02 Sep 2026, 10:15 AM</div></div>
+          <div class="detailrow"><div class="label" data-i18n="thChangedBy">Changed By</div><div class="value" style="display:flex;align-items:center;gap:8px"><span class="pavatar" style="width:31px;height:31px"><img src="../../Assets/fatima.png" alt="Fatima Al-Kuwari"></span><span><b data-i18n="byFatima">Fatima Al-Kuwari</b><br><span class="mut" data-i18n="fatimaRole">Senior Academic Reviewer</span></span></div></div>
+          <div class="detailrow"><div class="label" data-i18n="reasonLabel">Reason</div><div class="value" data-i18n="reasonText">Updated definition to align with latest ESCO 1.2 and enhance proficiency level descriptors.</div></div>
+          <div class="what"><div class="block-title" data-i18n="whatChangedTitle">What Changed</div><ul><li data-i18n="wc1">Refined competency description</li><li data-i18n="wc2">Updated proficiency level descriptors (Levels 1-4)</li><li data-i18n="wc3">Revised taxonomy mapping (added O*NET 3.1)</li><li data-i18n="wc4">Updated related skills</li></ul></div>
+          <div class="affected"><div class="block-title" data-i18n="affectedTitle">Affected Elements</div>
+            <div class="aff"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg><span data-i18n="affCompDef">Competency Definition</span></div>
+            <div class="aff"><svg viewBox="0 0 24 24"><path d="M6 5h12M6 12h12M6 19h12"/><circle cx="4" cy="5" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="19" r="1"/></svg><span data-i18n="affProfLevels">Proficiency Levels (4)</span></div>
+            <div class="aff"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="16" r="3"/><path d="m10.5 10.5 3 3"/></svg><span data-i18n="affTaxMappings">Taxonomy Mappings (2)</span></div>
+            <div class="aff"><svg viewBox="0 0 24 24"><circle cx="7" cy="12" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="m9.5 10.5 5-2.5M9.5 13.5l5 2.5"/></svg><span data-i18n="affRelatedSkills">Related Skills (6)</span></div>
+          </div>
+          <div class="panel-actions">
+            <button class="full"><span>&#8635;</span> <span data-i18n="viewFullLog">View Full Change Log</span></button>
+            <button class="restore"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 7 4 12l5 5"/><path d="M4 12h10a6 6 0 0 1 6 6"/></svg><span data-i18n="restoreVersion">Restore Version</span></button>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="bottom">
+      <button class="back" id="btnBack"><span data-i18n="arrowBack">&larr;</span> <span data-i18n="backBtn">Back</span></button>
+    </div>
+
+    </div>
+  </div>
+
+  <footer class="qfoot">
+    <span data-i18n="copyright">© 2026 Qatar Foundation. All rights reserved.</span>
+    <nav><a href="#" data-i18n="privacyPolicy">Privacy Policy</a><i>|</i><a href="#" data-i18n="termsOfUse">Terms of Use</a><i>|</i><a href="#" data-i18n="supportLabel">Support</a></nav>
+  </footer>
+
+</div>
+
+<script src="../shared/auth.js"></script>
+<script>AdminAuth.requireAuth();</script>
+<script src="../shared/sidebar.js"></script>
+<script>
+document.getElementById('qUserName').textContent = AdminAuth.getName();
+document.getElementById('qUserRole').textContent = AdminAuth.getRole();
+
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+</script>
+<script src="version-history-content.js"></script>
+<script src="version-history-i18n.js"></script>
+</body>
+</html>

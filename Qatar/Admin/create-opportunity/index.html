@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Opportunity – Admin Portal – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared/typography.css">
+<link rel="stylesheet" href="../shared/admin-shell.css">
+<link rel="stylesheet" href="create-opportunity-content.css">
+<link rel="stylesheet" href="create-opportunity-i18n.css">
+</head>
+<body class="dm">
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<!-- ===== sidebar (shared component, see Admin/shared/sidebar.js) ===== -->
+<div id="admin-sidebar" data-active="opportunities"></div>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <h1 class="qtitle">Universal Skills Passport <span class="qtitle-pill" data-i18n="adminPortal">Administrator Portal</span></h1>
+    <div class="qtop-actions">
+      <div class="lang-toggle" id="langToggle" role="group" aria-label="Language">
+        <button type="button" class="lang-opt active" data-lang="en">EN</button>
+        <button type="button" class="lang-opt" data-lang="ar">عربي</button>
+      </div>
+      <button class="qicon-btn" onclick="st('Search coming soon')" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="qicon-btn" onclick="st('5 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>5</b>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><img src="../../Assets/hassan.png" alt="Hassan Al-Kuwari"></span>
+          <span class="qui"><b id="qUserName">Hassan Al-Kuwari</b><span id="qUserRole">Administrator</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg><span data-i18n="myProfile">My Profile</span></button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span data-i18n="settingsLabel">Settings</span></button>
+          <hr>
+          <button type="button" class="qout" onclick="AdminAuth.logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg><span data-i18n="signOut">Sign Out</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+    <div class="adm-createopp-scope">
+
+    <section class="title-row">
+      <div>
+        <h1 data-i18n="pageTitle">Create Opportunity</h1>
+        <div class="subtitle" data-i18n="pageSubtitle">Set up a learning, project or workplace opportunity and link it to competencies with evidence and verification.</div>
+      </div>
+      <div class="title-actions">
+        <button class="btn" id="btnSaveDraft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2Z"/><path d="M17 21v-8H7v8"/><path d="M7 3v5h8"/></svg><span data-i18n="saveAsDraft">Save as Draft</span></button>
+        <button class="btn" id="btnCancel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span data-i18n="cancelLabel">Cancel</span></button>
+      </div>
+    </section>
+
+    <div class="steps">
+      <div class="step active"><div class="num">1</div><div><div class="step-title" data-i18n="stepOppDetails">Opportunity Details</div><div class="step-sub" data-i18n="stepBasicInfo">Basic information</div></div></div>
+      <div class="step" data-goto="assign-competencies.html"><div class="num">2</div><div><div class="step-title" data-i18n="stepAssignComp">Assign Competencies</div><div class="step-sub" data-i18n="stepSelectConfigure">Select and configure</div></div></div>
+      <div class="step" data-goto="evidence-requirements.html"><div class="num">3</div><div><div class="step-title" data-i18n="stepEvidenceReq">Evidence Requirements</div><div class="step-sub" data-i18n="stepDefineArtefacts">Define artefacts</div></div></div>
+      <div class="step" data-goto="comingsoon" data-label="Verification &amp; Rules"><div class="num">4</div><div><div class="step-title" data-i18n="stepVerificationRules">Verification &amp; Rules</div><div class="step-sub" data-i18n="stepSetVerifiers">Set verifiers and criteria</div></div></div>
+      <div class="step" data-goto="comingsoon" data-label="Review &amp; Publish"><div class="num">5</div><div><div class="step-title" data-i18n="stepReviewPublish">Review &amp; Publish</div><div class="step-sub" data-i18n="stepConfirmLaunch">Confirm and launch</div></div></div>
+    </div>
+
+    <div class="workspace">
+      <div class="left">
+        <div class="card">
+          <h2 class="card-title" data-i18n="oppDetailsTitle">Opportunity Details</h2>
+          <p class="card-desc" data-i18n="oppDetailsDesc">Provide the key information about this opportunity.</p>
+
+          <div class="form-grid">
+            <div class="field">
+              <label><span data-i18n="oppTitleLabel">Opportunity Title</span> <span class="req">*</span></label>
+              <div class="control"><input value="QF Sustainability Challenge"></div>
+            </div>
+            <div class="field">
+              <label><span data-i18n="oppTypeLabel">Opportunity Type</span> <span class="req">*</span></label>
+              <div class="control select-control"><select><option data-i18n="typeCompetition">Competition</option></select><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></div>
+            </div>
+            <div class="field">
+              <label><span data-i18n="orgProgramLabel">Organization / Program</span> <span class="req">*</span></label>
+              <div class="control select-control org-control"><span class="org-mark">🌳</span><select><option>Hamad Bin Khalifa University</option></select><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></div>
+            </div>
+
+            <div class="field span-all">
+              <label><span data-i18n="descriptionLabel">Description</span> <span class="req">*</span></label>
+              <textarea data-i18n="oppDescText">A university-wide challenge inviting students to develop innovative solutions for a more sustainable future in Qatar and beyond.</textarea>
+              <div class="counter">116 / 500</div>
+            </div>
+          </div>
+
+          <div class="date-row">
+            <div class="field">
+              <label data-i18n="startDateLabel">Start Date</label>
+              <div class="control date-control"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg><input value="20 Jun 2025"></div>
+            </div>
+            <div class="field">
+              <label data-i18n="endDateLabel">End Date</label>
+              <div class="control date-control"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg><input value="20 Aug 2025"></div>
+            </div>
+            <div class="field">
+              <label data-i18n="appDeadlineLabel">Application Deadline</label>
+              <div class="control date-control"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg><input value="20 May 2025"></div>
+            </div>
+            <div class="field">
+              <label data-i18n="targetAudienceLabel">Target Audience</label>
+              <div class="control select-control"><select><option data-i18n="studentsLabel">Students</option></select><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <div class="field">
+              <label data-i18n="tagsLabel">Tags</label>
+              <div class="control tag-control">
+                <span class="tag"><span data-i18n="tagSustainability">Sustainability</span> <i>&times;</i></span>
+                <span class="tag"><span data-i18n="tagInnovation">Innovation</span> <i>&times;</i></span>
+                <span class="tag"><span data-i18n="tagQnv2030">Qatar National Vision 2030</span> <i>&times;</i></span>
+                <button class="add-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><span data-i18n="addTagLabel">Add Tag</span></button>
+              </div>
+            </div>
+            <div class="field">
+              <label data-i18n="visibilityLabel">Visibility</label>
+              <div class="control select-control"><select><option data-i18n="publicDiscoverable">Public (Discoverable)</option></select><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title" data-i18n="additionalSettingsTitle">Additional Settings</h2>
+          <p class="card-desc" data-i18n="additionalSettingsDesc">Configure optional settings for this opportunity.</p>
+          <div class="settings-grid">
+            <div>
+              <span class="settings-label" data-i18n="featuredImageLabel">Featured Image</span>
+              <div class="upload">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 16V4m0 0-4 4m4-4 4 4"/><path d="M5 12v7h14v-7"/></svg>
+                <div class="upload-text" data-i18n="dragDropImage">Drag and drop an image, or</div>
+                <button class="choose" data-i18n="chooseFileLabel">Choose File</button>
+                <div class="recommended" data-i18n="recommendedSize">Recommended size: 1200 &times; 630 px (JPG, PNG)</div>
+              </div>
+            </div>
+            <div>
+              <span class="settings-label"><span data-i18n="externalLinksLabel">External Links</span> <span class="optional" data-i18n="optionalLabel">(Optional)</span></span>
+              <div class="links">
+                <div class="link-row"><div class="link-label" data-i18n="programWebsiteLabel">Program Website</div><div class="link-input"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 17H7A5 5 0 0 1 7 7h2"/><path d="M15 7h2a5 5 0 1 1 0 10h-2"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span>https://www.qf.org/sustainability-challenge</span></div></div>
+                <div class="link-row"><div class="link-label" data-i18n="applicationLinkLabel">Application Link</div><div class="link-input"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 17H7A5 5 0 0 1 7 7h2"/><path d="M15 7h2a5 5 0 1 1 0 10h-2"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span>https://apply.qf.org/challenges/sustainability</span></div></div>
+                <div class="link-row"><div class="link-label" data-i18n="infoGuideLabel">Information Guide</div><div class="link-input"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 17H7A5 5 0 0 1 7 7h2"/><path d="M15 7h2a5 5 0 1 1 0 10h-2"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span class="placeholder" data-i18n="exampleGuideUrl">https://example.com/guide</span></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="right">
+        <div class="card preview">
+          <div class="side-heading"><h2 data-i18n="oppPreviewTitle">Opportunity Preview</h2><div class="edit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg><span data-i18n="editLabel">Edit</span></div></div>
+          <div class="preview-box">
+            <div class="preview-top">
+              <div class="preview-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17 1.39.34 2.34.34C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg></div>
+              <div class="preview-main">
+                <div class="preview-name" data-i18n="previewOppName">QF Sustainability Challenge</div>
+                <div class="meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 19 7v10l-7 4-7-4V7z"/><path d="m9 12 2 2 4-5"/></svg><span data-i18n="typeCompetition">Competition</span><span class="sep">|</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg><span data-i18n="hbkuName">Hamad Bin Khalifa University</span></div>
+                <div class="meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg><span data-i18n="dateRangePreview">20 Jun 2025 - 20 Aug 2025</span></div>
+              </div>
+            </div>
+            <div class="description" data-i18n="oppDescText">A university-wide challenge inviting students to develop innovative solutions for a more sustainable future in Qatar and beyond.</div>
+            <div class="pills"><span class="pill" data-i18n="tagSustainability">Sustainability</span><span class="pill" data-i18n="tagInnovation">Innovation</span><span class="pill" data-i18n="tagQnv2030">Qatar National Vision 2030</span></div>
+            <div class="preview-bottom">
+              <div><div class="small-label" data-i18n="targetAudienceLabel">Target Audience</div><div class="audience"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 2.5-5.5 6-5.5s6 2.5 6 5.5"/><circle cx="18" cy="9" r="2.3"/><path d="M15.5 14.2c2.5.3 4.5 2.4 4.5 5.3"/></svg><span data-i18n="studentsLabel">Students</span></div></div>
+              <div><div class="small-label" data-i18n="statusLabel">Status</div><span class="status" data-i18n="statusDraft">Draft</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card info">
+          <div class="side-heading"><h2 data-i18n="keyInfoTitle">Key Information</h2></div>
+          <div class="info-list">
+            <div class="info-row"><div class="info-label" data-i18n="oppIdLabel">Opportunity ID</div><div class="info-value"><span class="auto" data-i18n="autoGenerated">AUTO-GENERATED</span></div></div>
+            <div class="info-row"><div class="info-label" data-i18n="createdByLabel">Created By</div><div class="info-value"><img class="mini-avatar" src="../../Assets/hassan.png" alt="">Hassan Al-Kuwari</div></div>
+            <div class="info-row"><div class="info-label" data-i18n="createdOnLabel">Created On</div><div class="info-value">&mdash;</div></div>
+            <div class="info-row"><div class="info-label" data-i18n="lastUpdatedLabel">Last Updated</div><div class="info-value">&mdash;</div></div>
+          </div>
+          <div class="tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="9" r="5"/><path d="M9 21h6M10 18h4M12 4V2"/></svg><div class="tip-text"><span data-i18n="tipText"><b>Tip:</b> After creating the opportunity, you will assign competencies, define evidence requirements and select verifiers in the next steps.</span></div></div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="bottom">
+      <button class="back" id="btnBack"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg><span data-i18n="backLabel">Back</span></button>
+      <button class="next" id="btnNext"><span data-i18n="nextAssignComp">Next: Assign Competencies</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+    </div>
+
+    </div>
+  </div>
+
+  <footer class="qfoot">
+    <span data-i18n="copyright">© 2026 Qatar Foundation. All rights reserved.</span>
+    <nav><a href="#" data-i18n="privacyPolicy">Privacy Policy</a><i>|</i><a href="#" data-i18n="termsOfUse">Terms of Use</a><i>|</i><a href="#" data-i18n="supportLabel">Support</a></nav>
+  </footer>
+
+</div>
+
+<script src="../shared/auth.js"></script>
+<script>AdminAuth.requireAuth();</script>
+<script src="../shared/sidebar.js"></script>
+<script>
+document.getElementById('qUserName').textContent = AdminAuth.getName();
+document.getElementById('qUserRole').textContent = AdminAuth.getRole();
+
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+</script>
+<script src="create-opportunity-content.js"></script>
+<script src="create-opportunity-i18n.js"></script>
+</body>
+</html>
