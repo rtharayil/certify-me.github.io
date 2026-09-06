@@ -23,7 +23,7 @@
   <nav class="qsb-nav">
     <button class="qnav" data-view="home" onclick="window.location.href='../Home/student.html'">
       <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</button>
-    <button class="qnav" data-view="passport">
+    <button class="qnav" data-view="passport" onclick="window.location.href='../passport/index.html'">
       <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2.5"/><line x1="1" y1="10" x2="23" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg>My Passport</button>
     <button class="qnav" data-view="skills" onclick="window.location.href='../skills/index.html'">
       <svg viewBox="0 0 24 24"><polygon points="12 2 21 7.5 21 16.5 12 22 3 16.5 3 7.5"/><polyline points="3 7.5 12 13 21 7.5"/><line x1="12" y1="13" x2="12" y2="22"/></svg>My Competencies</button>
@@ -37,6 +37,8 @@
       <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>My Evidence</button>
     <button class="qnav active" data-view="achievements">
       <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><polyline points="8.2 13.5 7 22 12 19 17 22 15.8 13.5"/></svg>Achievements</button>
+    <button class="qnav" data-view="career-opportunities">
+      <svg viewBox="0 0 24 24"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg>Career Opportunities</button>
     <button class="qnav" data-view="messages">
       <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2.5"/><polyline points="2.5 6 12 13 21.5 6"/></svg>Messages</button>
   </nav>
@@ -59,6 +61,11 @@
       <button class="qicon-btn" onclick="st('Search coming soon')" aria-label="Search">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       </button>
+            <div class="qlang" role="group" aria-label="Language">
+        <button type="button" class="qlang-opt active" onclick="st('Language switching coming soon')">English</button>
+        <span class="qlang-div">|</span>
+        <button type="button" class="qlang-opt" onclick="st('Language switching coming soon')">العربية</button>
+      </div>
       <button class="qicon-btn" onclick="st('3 new notifications')" aria-label="Notifications">
         <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
         <b>3</b>
@@ -66,7 +73,7 @@
       <span class="qdiv-v"></span>
       <div class="quser" id="quser">
         <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
-          <span class="qava" id="qAvatar"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg></span>
+          <span class="qava" id="qAvatar"><img src="../../Assets/sara-profile-photo.png" alt=""></span>
           <span class="qui"><b id="qUserName">Sara Al Mansoori</b><span>Engineering Student</span></span>
           <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
@@ -215,7 +222,7 @@ document.querySelectorAll('.qsb-nav .qnav, .qsb-help .qnav').forEach(b=>{
     if(!v||v==='achievements')return;
     document.getElementById('qsb').classList.remove('open');
     if(v==='home'){window.location.href='../Home/student.html';return}
-    if(v==='evidence'||v==='home'||v==='opportunities'||v==='skillgap'||v==='skills'||v==='pathways')return;
+    if(v==='evidence'||v==='home'||v==='opportunities'||v==='skillgap'||v==='skills'||v==='pathways'||v==='passport')return;
     st(this.textContent.trim()+' — coming soon');
   });
 });

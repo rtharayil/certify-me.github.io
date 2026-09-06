@@ -44,7 +44,9 @@
 .opp-scope .section-desc{font-size:13px;color:#324661;margin-top:8px}
 .opp-scope .competencies{width:100%;height:auto;min-height:141px;overflow:visible}
 .opp-scope .comp-list{width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:20px}
-.opp-scope .comp{display:flex;align-items:center;gap:12px;min-width:0}
+.opp-scope .comp{display:flex;align-items:center;gap:12px;min-width:0;border:none;background:none;padding:6px;margin:-6px;border-radius:10px;font-family:inherit;text-align:left;cursor:pointer;transition:background .15s}
+.opp-scope .comp.is-highlighted{background:#eaf1fb}
+.opp-scope .comp:hover{background:#f4f7f9}
 .opp-scope .hex{width:54px;height:54px;display:grid;place-items:center;clip-path:polygon(25% 7%,75% 7%,100% 50%,75% 93%,25% 93%,0 50%)}
 .opp-scope .hex.green{background:#069b69}
 .opp-scope .hex.blue{background:#287ed0}

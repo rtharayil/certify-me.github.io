@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Competency Decision – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../student/Home/student.css">
+<link rel="stylesheet" href="../../shared/typography.css">
+<link rel="stylesheet" href="../dashboard/dashboard.css">
+<link rel="stylesheet" href="../evidence-review/evidence-review.css">
+<link rel="stylesheet" href="competency-decision.css">
+</head>
+<body class="dm">
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<div id="dw" class="active">
+
+<!-- ===== sidebar (same shell as dashboard.html, Verifier nav contents) ===== -->
+<aside class="qsb" id="qsb">
+  <div class="qsb-brand">
+    <span class="qsb-logo"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation"></span>
+  </div>
+
+  <nav class="qsb-nav">
+    <button class="qnav" data-view="dashboard">
+      <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Dashboard</button>
+    <button class="qnav" data-view="workspace">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>Review Evidence</button>
+    <button class="qnav active" data-view="records">
+      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><path d="m9.5 13 2 2 3.5-3.5"/></svg>Verified Evidence</button>
+    <button class="qnav" data-view="students">
+      <svg viewBox="0 0 24 24"><path d="M4 19V9M9 19V5M14 19v-8M19 19V3"/></svg>History</button>
+    <button class="qnav" data-view="settings">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>Settings</button>
+  </nav>
+
+  <div class="qsb-help">
+    <button class="qnav" onclick="st('Help &amp; Support coming soon')">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Help &amp; Support</button>
+  </div>
+</aside>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="qtitle-wrap">
+      <h1 class="qtitle">Universal Skills Passport</h1>
+      <span class="vf-portal-pill">Verifier Portal</span>
+    </div>
+    <div class="qtop-actions">
+      <div class="vf-search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" placeholder="Search by student name, credential ID, competency...">
+      </div>
+            <div class="qlang" role="group" aria-label="Language">
+        <button type="button" class="qlang-opt active" onclick="st('Language switching coming soon')">English</button>
+        <span class="qlang-div">|</span>
+        <button type="button" class="qlang-opt" onclick="st('Language switching coming soon')">العربية</button>
+      </div>
+      <button class="qicon-btn" onclick="st('3 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>12</b>
+      </button>
+      <button class="qicon-btn" onclick="st('Help &amp; Support coming soon')" aria-label="Help">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><img src="../../Assets/Ahmed_al_sulaiti.png" alt="Ahmed Al-Sulaiti"></span>
+          <span class="qui"><b id="qUserName">Ahmed Al-Sulaiti</b><span>Verifier</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>My Profile</button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>Settings</button>
+          <hr>
+          <button type="button" class="qout" onclick="logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+    <div class="vf-scope">
+
+      <!-- 1. BREADCRUMB + HEADER -->
+      <a class="er-back" href="../evidence-review/index.html">
+        <svg viewBox="0 0 24 24"><path d="m15 5-7 7 7 7M8 12h13"/></svg>
+        Back
+      </a>
+
+      <div class="er-header">
+        <div>
+          <h1>Verified Evidence</h1>
+          <p>The evidence has been reviewed and the competency has been verified.</p>
+        </div>
+        <button class="cd-next-btn" onclick="st('Next submission coming soon')">View Next Submission<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+
+      <!-- 2-4. MAIN GRID -->
+      <div class="cd-grid">
+
+        <!-- LEFT COLUMN -->
+        <div class="cd-main">
+
+          <!-- 2. VERIFIED BANNER + TIMELINE -->
+          <div class="qcard cd-verified">
+            <div class="cd-celebrate">
+              <div class="cd-check-wrap">
+                <span class="cd-confetti c1"></span>
+                <span class="cd-confetti c2"></span>
+                <span class="cd-confetti c3"></span>
+                <span class="cd-confetti c4"></span>
+                <span class="cd-confetti c5"></span>
+                <span class="cd-confetti c6"></span>
+                <span class="cd-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+              </div>
+              <div class="cd-celebrate-text">
+                <h2>Competency Approved <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></h2>
+                <h3>Systems Thinking — Level 3</h3>
+                <span class="cd-tag">Evidence-backed achievement</span>
+                <p>The submitted evidence meets all criteria for Level 3 competency as per the Qatar Foundation assessment framework.</p>
+              </div>
+            </div>
+
+            <div class="cd-steps">
+              <div class="cd-step done">
+                <span class="cd-step-ic blue"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/></svg></span>
+                <div class="cd-step-t"><b>Evidence Reviewed</b><span>10 Sep 2026, 15:20</span></div>
+              </div>
+              <svg class="cd-step-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <div class="cd-step done">
+                <span class="cd-step-ic solid"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <div class="cd-step-t"><b>Competency Verified</b><span>10 Sep 2026, 15:32</span></div>
+              </div>
+              <svg class="cd-step-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <div class="cd-step done">
+                <span class="cd-step-ic blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg></span>
+                <div class="cd-step-t"><b>Credential rule triggered</b><span>QF Universal Skills Passport updated</span></div>
+              </div>
+              <svg class="cd-step-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <div class="cd-step done">
+                <span class="cd-step-ic blue"><svg viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M8.5 13.5 7 21l5-2 5 2-1.5-7.5"/></svg></span>
+                <div class="cd-step-t"><b>Ready to Issue</b><span>Digital Credential</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. PASSPORT UPDATED NOTICE -->
+          <div class="qcard cd-notice">
+            <span class="cd-notice-ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><path d="m9.5 13 2 2 3.5-3.5"/></svg></span>
+            <div class="cd-notice-t">
+              <b>QF Universal Skills Passport updated</b>
+              <p>This verified competency has been added to Sara&rsquo;s Universal Skills Passport and is now visible in her competency profile (based on her privacy settings).</p>
+            </div>
+            <button class="er-pg-btn" onclick="st('Student passport coming soon')">View Student Passport<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+
+          <!-- 4. ISSUE DIGITAL CREDENTIAL -->
+          <div class="qcard cd-issue">
+            <div class="cd-issue-head">
+              <span class="cd-notice-ic gold"><svg viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M8.5 13.5 7 21l5-2 5 2-1.5-7.5"/></svg></span>
+              <div>
+                <b>Issue Digital Credential</b>
+                <p>Generate and issue a verifiable credential for this competency.</p>
+              </div>
+            </div>
+
+            <div class="cd-issue-grid">
+              <div>
+                <h4 class="er-block-title">Credential Preview</h4>
+                <div class="cd-credential">
+                  <div class="cd-cred-brand">
+                    <img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation">
+                  </div>
+                  <span class="cd-cred-label">Verified Competency</span>
+                  <h5>Systems Thinking<br>Level 3</h5>
+                  <span class="cd-cred-sub">Awarded to</span>
+                  <b class="cd-cred-name">Sara Al-Mansoori</b>
+                  <span class="cd-cred-date">10 September 2026</span>
+                  <div class="cd-cred-badge">
+                    <img src="../../Assets/badge-sustainability-champion.png" alt="Level 3 badge">
+                    <span>Level 3</span>
+                  </div>
+                  <div class="cd-cred-sig">
+                    <span class="cd-sig-mark">Qatar Foundation</span>
+                    <span>Qatar Foundation<br>Authorized Signatory</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="er-block-title">Credential Details</h4>
+                <div class="cd-details">
+                  <div class="cd-d-row"><span>Competency</span><b>Systems Thinking</b></div>
+                  <div class="cd-d-row"><span>Level</span><b>3</b></div>
+                  <div class="cd-d-row"><span>Credential Type</span><b>Digital Badge (Verifiable Credential)</b></div>
+                  <div class="cd-d-row"><span>Issuer</span><b>Qatar Foundation</b></div>
+                  <div class="cd-d-row"><span>Recipient</span><b>Sara Al-Mansoori</b></div>
+                  <div class="cd-d-row"><span>Issue Date</span><b>10 Sep 2026</b></div>
+                  <div class="cd-d-row"><span>Standards</span><b>QF Skills Framework v1.0</b></div>
+                </div>
+                <button class="er-link-btn" onclick="st('Metadata coming soon')">View Metadata<svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></button>
+              </div>
+            </div>
+
+            <div class="cd-issue-actions">
+              <button class="cd-issue-btn" onclick="st('Digital credential issued')"><svg viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M8.5 13.5 7 21l5-2 5 2-1.5-7.5"/></svg>Issue Digital Credential</button>
+              <button class="cd-preview-btn" onclick="st('Preview coming soon')"><svg viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg>Preview</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="cd-side">
+
+          <!-- 5a. STUDENT CARD -->
+          <div class="qcard er-side">
+            <div class="er-block">
+              <h3 class="er-block-title">Student</h3>
+              <div class="er-student">
+                <span class="er-student-av"><img src="../../Assets/sara-profile-photo.png" alt="Sara Al-Mansoori"></span>
+                <div>
+                  <b>Sara Al-Mansoori</b>
+                  <span>Computer Science Student</span>
+                </div>
+              </div>
+              <ul class="er-meta">
+                <li><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>Qatar University</li>
+                <li><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Doha, Qatar</li>
+                <li><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4Z"/><path d="m4 6 8 7 8-7"/></svg>sara.almansoori@qu.edu.qa</li>
+              </ul>
+              <button class="er-link-btn" onclick="st('Full profile coming soon')">View Full Profile<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </div>
+          </div>
+
+          <!-- 5b. SUBMISSION SUMMARY -->
+          <div class="qcard er-evlist">
+            <h3 class="er-block-title">Submission Summary</h3>
+            <div class="er-ev-items">
+              <div class="er-ev-item static">
+                <span class="er-ev-ic blue"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/></svg></span>
+                <span class="er-ev-t"><b>Project Report</b><span>PDF &bull; 2.4 MB</span></span>
+              </div>
+              <div class="er-ev-item static">
+                <span class="er-ev-ic green"><svg viewBox="0 0 24 24"><path d="M4 19V9M9 19V5M14 19v-8M19 19V3"/></svg></span>
+                <span class="er-ev-t"><b>Dataset</b><span>CSV &bull; 1.8 MB</span></span>
+              </div>
+              <div class="er-ev-item static">
+                <span class="er-ev-ic red"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="m10 9 5 3-5 3Z"/></svg></span>
+                <span class="er-ev-t"><b>Presentation</b><span>PPT &bull; 5.1 MB</span></span>
+              </div>
+              <div class="er-ev-item static">
+                <span class="er-ev-ic purple"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></span>
+                <span class="er-ev-t"><b>Reflection</b><span>Text &bull; 1.2 MB</span></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5c. NEXT STEPS -->
+          <div class="qcard cd-next">
+            <h3 class="er-block-title">Next Steps</h3>
+            <ul class="cd-next-list">
+              <li class="done"><span class="cd-next-ic"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Competency added to student&rsquo;s profile</li>
+              <li class="done"><span class="cd-next-ic"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Credential rule executed</li>
+              <li class="done"><span class="cd-next-ic"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Digital credential ready to issue</li>
+              <li><span class="cd-next-ic pending"></span>Notify student</li>
+            </ul>
+          </div>
+
+          <!-- 5d. INFO NOTE -->
+          <div class="cd-info">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><line x1="12" y1="8" x2="12.01" y2="8"/><line x1="12" y1="12" x2="12" y2="16"/></svg>
+            <span>The student will be notified once the credential is issued and will be able to view it in their Universal Skills Passport.</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="qfoot">
+    <span>© 2026 Qatar Foundation. All rights reserved.</span>
+    <nav><a href="#">Privacy Policy</a><i>|</i><a href="#">Terms of Use</a><i>|</i><a href="#">Support</a></nav>
+  </footer>
+
+</div>
+</div>
+
+<script>
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+function logout(){st('Sign out coming soon')}
+
+/* This screen is reachable two ways: a normal click on "Verified Evidence"
+   (highlight that, as usual), or landing here right after Approve on
+   Review Evidence (highlight "Review Evidence" instead, since this is
+   just the next screen in that same flow, not a jump to a new section).
+   The URL flag is the only thing that tells the two apart. */
+if(new URLSearchParams(location.search).get('ctx')==='review'){
+  document.querySelector('.qnav[data-view="records"]').classList.remove('active');
+  document.querySelector('.qnav[data-view="workspace"]').classList.add('active');
+}
+
+document.querySelectorAll('.qsb-nav .qnav, .qsb-help .qnav').forEach(b=>{
+  b.addEventListener('click',function(){
+    const v=this.dataset.view;
+    if(!v||this.classList.contains('active'))return;
+    document.getElementById('qsb').classList.remove('open');
+    if(v==='dashboard'){window.location.href='../dashboard/dashboard.html';return}
+    if(v==='records'){window.location.href='../competency-decision/index.html';return}
+    if(v==='workspace'){window.location.href='../evidence-review/index.html';return}
+    if(v==='students'){window.location.href='../history/index.html';return}
+    st(this.textContent.trim()+' — coming soon');
+  });
+});
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+</script>
+</body>
+</html>

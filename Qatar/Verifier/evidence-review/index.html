@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evidence Review – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../student/Home/student.css">
+<link rel="stylesheet" href="../../shared/typography.css">
+<link rel="stylesheet" href="../dashboard/dashboard.css">
+<link rel="stylesheet" href="evidence-review.css">
+</head>
+<body class="dm">
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<div id="dw" class="active">
+
+<!-- ===== sidebar (same shell as dashboard.html, Verifier nav contents) ===== -->
+<aside class="qsb" id="qsb">
+  <div class="qsb-brand">
+    <span class="qsb-logo"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation"></span>
+  </div>
+
+  <nav class="qsb-nav">
+    <button class="qnav" data-view="dashboard">
+      <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Dashboard</button>
+    <button class="qnav active" data-view="workspace">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>Review Evidence</button>
+    <button class="qnav" data-view="records">
+      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><path d="m9.5 13 2 2 3.5-3.5"/></svg>Verified Evidence</button>
+    <button class="qnav" data-view="students">
+      <svg viewBox="0 0 24 24"><path d="M4 19V9M9 19V5M14 19v-8M19 19V3"/></svg>History</button>
+    <button class="qnav" data-view="settings">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>Settings</button>
+  </nav>
+
+  <div class="qsb-help">
+    <button class="qnav" onclick="st('Help &amp; Support coming soon')">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Help &amp; Support</button>
+  </div>
+</aside>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="qtitle-wrap">
+      <h1 class="qtitle">Universal Skills Passport</h1>
+      <span class="vf-portal-pill">Verifier Portal</span>
+    </div>
+    <div class="qtop-actions">
+      <div class="vf-search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" placeholder="Search by student name, credential ID, competency...">
+      </div>
+            <div class="qlang" role="group" aria-label="Language">
+        <button type="button" class="qlang-opt active" onclick="st('Language switching coming soon')">English</button>
+        <span class="qlang-div">|</span>
+        <button type="button" class="qlang-opt" onclick="st('Language switching coming soon')">العربية</button>
+      </div>
+      <button class="qicon-btn" onclick="st('3 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>12</b>
+      </button>
+      <button class="qicon-btn" onclick="st('Help &amp; Support coming soon')" aria-label="Help">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><img src="../../Assets/Ahmed_al_sulaiti.png" alt="Ahmed Al-Sulaiti"></span>
+          <span class="qui"><b id="qUserName">Ahmed Al-Sulaiti</b><span>Verifier</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>My Profile</button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>Settings</button>
+          <hr>
+          <button type="button" class="qout" onclick="logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+    <div class="vf-scope">
+
+      <!-- 1. BREADCRUMB -->
+      <a class="er-back" href="../dashboard/dashboard.html">
+        <svg viewBox="0 0 24 24"><path d="m15 5-7 7 7 7M8 12h13"/></svg>
+        Back 
+      </a>
+
+      <!-- 1. PAGE HEADER -->
+      <div class="er-header">
+        <div>
+          <h1>Review Evidence</h1>
+          <p>Review student evidence, assess against the rubric and verify competency achievement.</p>
+        </div>
+        <div class="er-pager">
+          <button class="er-pg-btn" onclick="st('Previous submission coming soon')"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>Previous</button>
+          <span class="er-pg-count">2 of 18</span>
+          <button class="er-pg-btn" onclick="st('Next submission coming soon')">Next<svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+        </div>
+      </div>
+
+      <!-- 2-5. MAIN GRID -->
+      <div class="er-grid">
+
+        <!-- 2. STUDENT / COMPETENCY / SUBMISSION COLUMN -->
+        <div class="qcard er-side">
+
+          <div class="er-block">
+            <h3 class="er-block-title">Student</h3>
+            <div class="er-student">
+              <span class="er-student-av"><img src="../../Assets/sara-profile-photo.png" alt="Sara Al-Mansoori"></span>
+              <div>
+                <b>Sara Al-Mansoori</b>
+                <span>Computer Science Student</span>
+              </div>
+            </div>
+            <ul class="er-meta">
+              <li><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>Qatar University</li>
+              <li><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Doha, Qatar</li>
+              <li><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4Z"/><path d="m4 6 8 7 8-7"/></svg>sara.almansoori@qu.edu.qa</li>
+            </ul>
+            <button class="er-link-btn" onclick="st('Full profile coming soon')">View Full Profile<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+
+          <hr class="er-div">
+
+          <div class="er-block">
+            <h3 class="er-block-title">Competency</h3>
+            <div class="er-comp">
+              <span class="er-comp-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg></span>
+              <div>
+                <b>Systems Thinking — Level 3</b>
+                <span class="pill core">Core Competency</span>
+              </div>
+            </div>
+            <p class="er-comp-desc">Apply systems thinking to analyze complex problems, identify interconnections and develop sustainable solutions.</p>
+            <button class="er-link-btn" onclick="st('Competency framework coming soon')">View Competency Framework<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+
+          <hr class="er-div">
+
+          <div class="er-block">
+            <h3 class="er-block-title">Submission Details</h3>
+            <ul class="er-sub-list">
+              <li><span class="er-sub-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><polyline points="12 7 12 12 15.5 14"/></svg>Submitted</span><b>05 Sep 2026, 14:32</b></li>
+              <li><span class="er-sub-ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/></svg>Evidence Items</span><b>4 items</b></li>
+              <li><span class="er-sub-ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/></svg>Submission ID</span><b>USP-2026-001234</b></li>
+              <li><span class="er-sub-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>Status</span><span class="pill amber">Under Review</span></li>
+              <li><span class="er-sub-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Due Date</span><b class="er-due">Today, 10 Sep 2026</b></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- 4. DOCUMENT VIEWER CARD -->
+        <div class="qcard er-viewer">
+          <div class="er-viewer-head">
+            <div>
+              <h3 class="er-block-title" style="margin-bottom:2px">Project Report</h3>
+              <span class="er-viewer-file">sustainability-systems-analysis.pdf</span>
+            </div>
+            <button class="er-dl-btn" onclick="st('Download coming soon')">
+              <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>Download</button>
+          </div>
+
+          <div class="er-viewer-toolbar">
+            <button class="er-tool-btn" onclick="st('Outline coming soon')" aria-label="Outline"><svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+            <span class="er-tool-page" id="erToolPage">1 / 12</span>
+            <span class="er-tool-zoom">
+              <button class="er-tool-btn" onclick="st('Zoom out coming soon')" aria-label="Zoom out"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+              <span>100%</span>
+              <button class="er-tool-btn" onclick="st('Zoom in coming soon')" aria-label="Zoom in"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+            </span>
+            <button class="er-tool-btn" onclick="st('Fullscreen coming soon')" aria-label="Fullscreen"><svg viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg></button>
+          </div>
+
+          <div class="er-page">
+            <div class="er-page-inner" id="erPageStatic">
+              <div class="er-page-letterhead">
+                <img class="er-page-uni" src="../../Assets/Qatar_new.png" alt="Qatar University">
+                <span class="er-page-dept">College of Engineering<br>Department of Computer Science</span>
+              </div>
+              <span class="er-page-date">August 2026</span>
+              <h4 class="er-page-title">A Systems Approach to Sustainable Campus Operations</h4>
+              <p class="er-page-sub">Analyzing Interconnected Factors for a Greener Tomorrow</p>
+              <img class="er-page-img" src="../../Assets/qatar-university-crop.png" alt="Qatar University Campus">
+              <div class="er-page-foot">
+                <span>Prepared by<br><b>Sara Al-Mansoori</b>Computer Science Department<br>Qatar University</span>
+                <span class="er-page-tag">People. Knowledge. A Better Tomorrow.</span>
+              </div>
+            </div>
+            <div class="er-page-inner er-page-inner-img" id="erPageImgWrap" hidden>
+              <img id="erPageImg" class="er-page-full" src="" alt="">
+            </div>
+          </div>
+
+          <div class="er-thumbs">
+            <button type="button" class="er-thumb active" onclick="erShowPage(1,this)"><span class="er-thumb-mini"><img src="../../Assets/1st image.png" alt="Page 1"></span>1</button>
+            <button type="button" class="er-thumb" onclick="erShowPage(2,this)"><span class="er-thumb-mini"><img src="../../Assets/2nd image.png" alt="Page 2"></span>2</button>
+            <button type="button" class="er-thumb" onclick="erShowPage(3,this)"><span class="er-thumb-mini"><img src="../../Assets/3rd image.png" alt="Page 3"></span>3</button>
+            <button type="button" class="er-thumb" onclick="erShowPage(4,this)"><span class="er-thumb-mini"><img src="../../Assets/4th image.png" alt="Page 4"></span>4</button>
+            <button type="button" class="er-thumb" onclick="erShowPage(5,this)"><span class="er-thumb-mini"><img src="../../Assets/5th image.png" alt="Page 5"></span>5</button>
+            <button type="button" class="er-thumb-next" onclick="st('Next page coming soon')" aria-label="More pages"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+          </div>
+        </div>
+
+        <!-- 5. ASSESSMENT RUBRIC CARD -->
+        <div class="qcard er-rubric">
+          <div class="er-rubric-head">
+            <h3 class="er-block-title" style="margin-bottom:0">Assessment Rubric<button class="er-edit-btn" onclick="st('Edit rubric coming soon')" aria-label="Edit Assessment Rubric"><svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4Z"/></svg></button></h3>
+            <button class="er-link-btn" onclick="st('Rubric details coming soon')">View Rubric Details</button>
+          </div>
+
+          <div class="er-rtable">
+            <div class="er-rtable-head"><span>Criterion</span><span>Rating</span></div>
+            <div class="er-rtable-row"><span>Systems analysis</span><span class="er-stars"><span class="er-stars-bg">★★★★★</span><span class="er-stars-fg" style="width:100%">★★★★★</span></span></div>
+            <div class="er-rtable-row"><span>Evidence-based reasoning</span><span class="er-stars"><span class="er-stars-bg">★★★★★</span><span class="er-stars-fg" style="width:80%">★★★★★</span></span></div>
+            <div class="er-rtable-row"><span>Evaluation of alternatives</span><span class="er-stars"><span class="er-stars-bg">★★★★★</span><span class="er-stars-fg" style="width:80%">★★★★★</span></span></div>
+            <div class="er-rtable-row"><span>Communication of solution</span><span class="er-stars"><span class="er-stars-bg">★★★★★</span><span class="er-stars-fg" style="width:100%">★★★★★</span></span></div>
+          </div>
+
+          <div class="er-overall">
+            <span>Overall Assessment</span>
+            <b>4.5 / 5</b>
+          </div>
+
+          <h3 class="er-block-title">Reviewer Comments<button class="er-edit-btn" onclick="st('Edit comment coming soon')" aria-label="Edit Reviewer Comments"><svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4Z"/></svg></button></h3>
+          <div class="er-comment">
+            <p>Strong demonstration of interconnected-system analysis. Evidence supports Level 3 competency. The analysis shows clear understanding of multiple stakeholders and long-term impact considerations.</p>
+            <div class="er-comment-meta"><span>10 Sep 2026, 15:20</span><span>Ahmed Al-Sulaiti</span></div>
+          </div>
+
+          <h3 class="er-block-title">Internal Notes (Optional)<button class="er-edit-btn" onclick="document.querySelector('.er-notes').focus()" aria-label="Edit Internal Notes"><svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4Z"/></svg></button></h3>
+          <textarea class="er-notes" placeholder="Add internal notes (not visible to student)..."></textarea>
+
+          <div class="er-actions">
+            <button class="er-act verify" onclick="window.location.href='../competency-decision/index.html?ctx=review'"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><polyline points="8 12.5 11 15.5 16 9"/></svg>Approve</button>
+            <button class="er-act revise" onclick="st('Revision requested')"><svg viewBox="0 0 24 24"><path d="M10.3 3.6 2.6 17a2 2 0 0 0 1.7 3h15.4a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Resubmit Evidence</button>
+            <button class="er-act reject" onclick="st('Marked as not verified')"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>Reject</button>
+          </div>
+        </div>
+
+        <!-- 6. EVIDENCE LIST — full-width row so the 4 items get real room to
+             auto-fit instead of being squeezed into the narrow side column -->
+        <div class="qcard er-evlist">
+          <h3 class="er-block-title">Evidence (4 items)</h3>
+          <div class="er-ev-items">
+            <button type="button" class="er-ev-item active" onclick="erSelectEvidence(this)">
+              <span class="er-ev-ic blue"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/></svg></span>
+              <span class="er-ev-t"><b>Project Report</b><span>PDF &bull; 2.4 MB</span></span>
+            </button>
+            <button type="button" class="er-ev-item" onclick="erSelectEvidence(this)">
+              <span class="er-ev-ic green"><svg viewBox="0 0 24 24"><path d="M4 19V9M9 19V5M14 19v-8M19 19V3"/></svg></span>
+              <span class="er-ev-t"><b>Dataset</b><span>CSV &bull; 1.8 MB</span></span>
+            </button>
+            <button type="button" class="er-ev-item" onclick="erSelectEvidence(this)">
+              <span class="er-ev-ic red"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="m10 9 5 3-5 3Z"/></svg></span>
+              <span class="er-ev-t"><b>Presentation</b><span>PPT &bull; 5.1 MB</span></span>
+            </button>
+            <button type="button" class="er-ev-item" onclick="erSelectEvidence(this)">
+              <span class="er-ev-ic purple"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></span>
+              <span class="er-ev-t"><b>Reflection</b><span>Text &bull; 1.2 MB</span></span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="qfoot">
+    <span>© 2026 Qatar Foundation. All rights reserved.</span>
+    <nav><a href="#">Privacy Policy</a><i>|</i><a href="#">Terms of Use</a><i>|</i><a href="#">Support</a></nav>
+  </footer>
+
+</div>
+</div>
+
+<script>
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+function logout(){st('Sign out coming soon')}
+function erSelectEvidence(el){
+  document.querySelectorAll('.er-ev-item').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  st(el.querySelector('b').textContent+' selected')
+}
+const erPageFiles={2:'2nd image.png',3:'3rd image.png',4:'4th image.png',5:'5th image.png'};
+function erShowPage(n,el){
+  const staticEl=document.getElementById('erPageStatic'),imgWrap=document.getElementById('erPageImgWrap');
+  if(n===1){
+    staticEl.hidden=false;imgWrap.hidden=true;
+  }else{
+    staticEl.hidden=true;imgWrap.hidden=false;
+    document.getElementById('erPageImg').src='../../Assets/'+erPageFiles[n];
+  }
+  document.getElementById('erToolPage').textContent=n+' / 12';
+  document.querySelectorAll('.er-thumb').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+}
+
+document.querySelectorAll('.qsb-nav .qnav, .qsb-help .qnav').forEach(b=>{
+  b.addEventListener('click',function(){
+    const v=this.dataset.view;
+    if(!v||v==='workspace')return;
+    document.getElementById('qsb').classList.remove('open');
+    if(v==='dashboard'){window.location.href='../dashboard/dashboard.html';return}
+    if(v==='records'){window.location.href='../competency-decision/index.html';return}
+    if(v==='students'){window.location.href='../history/index.html';return}
+    st(this.textContent.trim()+' — coming soon');
+  });
+});
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+
+function erMatchCardHeights(){
+  const side=document.querySelector('.er-side');
+  const viewer=document.querySelector('.er-viewer');
+  const rubric=document.querySelector('.er-rubric');
+  if(!side||!viewer||!rubric)return;
+  viewer.style.height='auto';
+  rubric.style.height='auto';
+  const h=side.getBoundingClientRect().height;
+  viewer.style.height=h+'px';
+  rubric.style.height=h+'px';
+}
+window.addEventListener('load',erMatchCardHeights);
+window.addEventListener('resize',erMatchCardHeights);
+</script>
+</body>
+</html>
