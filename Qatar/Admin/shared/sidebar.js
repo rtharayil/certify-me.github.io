@@ -30,7 +30,7 @@
         icon: '<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>' },
       { key: 'badges', label: 'Badges &amp; Credentials', href: '../badges/index.html',
         icon: '<circle cx="12" cy="8" r="6"/><polyline points="8.2 13.5 7 22 12 19 17 22 15.8 13.5"/>' },
-      { key: 'review', label: 'Evidence Review', href: '../review/index.html',
+      { key: 'review', label: 'Evidence Submissions', href: '../review/index.html',
         icon: '<path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>' }
     ] },
     { label: 'Insights', items: [

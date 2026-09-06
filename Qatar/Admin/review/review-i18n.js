@@ -1,4 +1,4 @@
-/* English / Arabic translations for the Evidence Review page.
+/* English / Arabic translations for the Evidence Submissions page.
    Every [data-i18n] element's text is swapped by key; the page's
    text direction flips to RTL and the Cairo Arabic typeface takes
    over in Arabic mode, following the same pattern as the
@@ -10,7 +10,7 @@
     settingsLabel: { en: 'Settings', ar: 'الإعدادات' },
     signOut: { en: 'Sign Out', ar: 'تسجيل الخروج' },
 
-    pageTitle: { en: 'Evidence Review', ar: 'مراجعة الأدلة' },
+    pageTitle: { en: 'Evidence Submissions', ar: 'تقديمات الأدلة' },
     pageSubtitle: { en: 'Review evidence, verify achievements and manage attestations across the platform.', ar: 'مراجعة الأدلة والتحقق من الإنجازات وإدارة الإقرارات عبر المنصة.' },
     exportReport: { en: 'Export Report', ar: 'تصدير التقرير' },
     verificationSettings: { en: 'Verification Settings', ar: 'إعدادات التحقق' },
@@ -46,7 +46,7 @@
 
     opp2Name: { en: 'QF Sustainability Challenge', ar: 'تحدي مؤسسة قطر للاستدامة' },
     opp2Comp: { en: 'Systems Thinking', ar: 'التفكير المنظومي' },
-    student2Name: { en: 'Khalid Hassan', ar: 'خالد حسن' },
+    student2Name: { en: 'Sara Al Mansoori', ar: 'سارة المنصوري' },
     org2: { en: 'Hamad Bin Khalifa<br>University', ar: 'جامعة حمد بن<br>خليفة' },
     sub2Date: { en: '01 May 2025<br>03:22 PM', ar: '01 مايو 2025<br>03:22 م' },
     priorityMedium: { en: 'Medium', ar: 'متوسطة' },

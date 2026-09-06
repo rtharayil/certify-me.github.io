@@ -1,5 +1,5 @@
 /* Language toggle control + Arabic-mode text treatment for the
-   Evidence Review page. Only text-bearing leaf elements switch to
+   Evidence Submissions page. Only text-bearing leaf elements switch to
    RTL reading direction and the Cairo typeface; grid/flex/table
    structure stays as built so the pixel-tuned layout doesn't shift
    between languages. The real <table> gets its own `direction`
