@@ -148,3 +148,8 @@
 .ach-scope .event-sub{font-size:13px;color:var(--muted);margin-top:5px}
 .ach-scope .timeline-link{font-size:14px;color:#0a5b98;font-weight:700;margin-top:2px;display:flex;align-items:center;gap:7px}
 .ach-scope .timeline-link svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2.4}
+
+@media(max-width:1300px){
+.ach-scope .hero{flex-wrap:wrap}
+.ach-scope .hero-right{flex:1 1 100%;justify-content:flex-start;padding-top:16px;border-top:1px solid rgba(0,0,0,.08);margin-top:6px}
+}

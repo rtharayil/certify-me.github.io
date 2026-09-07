@@ -130,7 +130,7 @@
 .sk-scope .growth-title{font-size:14px;font-weight:780;color:#111;margin-bottom:3px}
 .sk-scope .growth-copy{font-size:11px;line-height:1.45;color:#2d4560;max-width:656px}
 .sk-scope .growth-btn{height:40px;background:#006b59;color:white;border:0;border-radius:6px;padding:0 24px;font-size:12px;font-weight:700;display:flex;align-items:center;gap:10px}
-@media(max-width:1100px){
+@media(max-width:1280px){
 .sk-scope .hero{grid-template-columns:1fr 230px}
 .sk-scope .hero-buttons{grid-column:1/-1;justify-content:flex-start}
 .sk-scope .grid{grid-template-columns:1fr 1fr}
