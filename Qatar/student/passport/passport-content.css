@@ -280,12 +280,15 @@
 .psp-career-btn svg{width:16px;height:16px;stroke:var(--qg700);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 
 /* ---------- responsive ---------- */
+@media(max-width:1320px){
+  .psp-quad{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .psp-badge-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+}
 @media(max-width:1180px){
   .psp-hero-row{grid-template-columns:1fr}
   .psp-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
   .psp-triple{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
   .psp-journey{grid-column:1 / -1}
-  .psp-quad{grid-template-columns:repeat(2,minmax(0,1fr))}
   .psp-tree-center{width:min(300px,70%)}
 }
 @media(max-width:860px){

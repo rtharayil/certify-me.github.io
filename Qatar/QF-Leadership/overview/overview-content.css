@@ -1,0 +1,172 @@
+/* QF Leadership — Overview (Strategic Insights Portal)
+   Sidebar + topbar shell reuse the exact classes/styling from the student
+   portal (student.css) — only the nav items, title pill and search field
+   are new to this portal. */
+
+/* ---- sidebar additions: tagline block above Settings/Help ---- */
+.qsb-tagline{flex-shrink:0;padding:0 20px 18px;margin-top:auto}
+.qsb-tagline p{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;line-height:1.5;color:rgba(255,255,255,.55)}
+
+/* ---- topbar additions ---- */
+.qtitle-wrap{flex:1;display:flex;align-items:center;gap:12px;min-width:0}
+.qtitle-wrap .qtitle{flex:none;white-space:nowrap}
+.ql-portal-pill{background:var(--qokbg);color:var(--qg700);font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+@media(max-width:1650px){.ql-portal-pill{display:none}}
+.ql-search{display:flex;align-items:center;gap:9px;width:360px;height:40px;padding:0 14px;border:1px solid var(--qline);border-radius:10px;background:var(--qpg);flex-shrink:1;min-width:0}
+.ql-search svg{width:16px;height:16px;stroke:var(--qmut);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ql-search input{flex:1;min-width:0;border:none;background:none;outline:none;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--qink)}
+.ql-search input::placeholder{color:var(--qmut)}
+
+/* ---- 1. Welcome hero ---- */
+.ql-scope{display:flex;flex-direction:column;gap:var(--qgap)}
+.ql-hero{position:relative;display:flex;flex-direction:column;gap:14px;padding:22px 28px;min-height:150px;overflow:hidden;
+  background:linear-gradient(115deg,#eaf1fb 0%,#f4f8fd 55%,#fff 100%);border-color:#dbe6f5}
+.ql-hero::before{content:'';position:absolute;inset:-20px;z-index:0;pointer-events:none;filter:blur(8px);opacity:.8;
+  background:linear-gradient(115deg,rgba(255,255,255,.55) 0%,rgba(255,255,255,.35) 45%,rgba(255,255,255,.55) 100%),
+    url("../../Assets/ChatGPT Image Sep 3, 2026, 11_30_23 AM.png") center 60% / cover no-repeat}
+
+.ql-hero-toprow{position:relative;z-index:1;display:flex;justify-content:flex-end;flex-shrink:0}
+.ql-hero-main{position:relative;z-index:1;display:flex;align-items:center;gap:28px;flex:1}
+
+.ql-hero-text{flex:1 1 260px;min-width:200px}
+.ql-hero-text h2{font-size:26px;font-weight:800;color:#000;letter-spacing:-.3px;margin-bottom:6px}
+.ql-hero-text p{font-size:13.5px;color:#000;max-width:420px;line-height:1.5}
+
+.ql-hero-quote{flex:1 1 220px;min-width:180px}
+.ql-hero-quote blockquote{font-family:'Playfair Display',serif;font-style:italic;font-size:15.5px;line-height:1.5;color:#000;margin:0 0 8px}
+.ql-hero-quote cite{font-size:12.5px;font-style:normal;font-weight:700;color:#000}
+
+.ql-daterange{display:flex;align-items:center;gap:9px;height:38px;padding:0 14px;flex-shrink:0;
+  background:#fff;border:1px solid #d7e3f5;border-radius:9px;font-family:'DM Sans',sans-serif;font-size:12.5px;font-weight:700;color:#0f2a4a;cursor:pointer;box-shadow:0 1px 3px rgba(15,42,74,.08)}
+.ql-daterange svg{width:15px;height:15px;stroke:#0f2a4a;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ql-daterange-chev{width:12px!important;height:12px!important;stroke:var(--qmut)!important}
+
+@media(max-width:1080px){
+  .ql-hero-main{flex-wrap:wrap}
+  .ql-hero-quote{flex-basis:100%}
+}
+
+/* ---- 2. KPI stat cards ---- */
+.ql-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--qgap)}
+.ql-stat{display:flex;align-items:center;gap:16px;padding:20px 22px;min-height:96px}
+.ql-stat-ic{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;flex-shrink:0}
+.ql-stat-ic svg{width:24px;height:24px;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ql-stat-ic.green{background:var(--qokbg)}.ql-stat-ic.green svg{stroke:var(--qok)}
+.ql-stat-ic.blue{background:var(--qbluebg)}.ql-stat-ic.blue svg{stroke:var(--qblue)}
+.ql-stat-ic.purple{background:#F2E9FF}.ql-stat-ic.purple svg{stroke:#6d4fc9}
+.ql-stat-ic.amber{background:var(--qamberbg)}.ql-stat-ic.amber svg{stroke:var(--qamber)}
+.ql-stat-label{display:block;font-size:12.5px;color:var(--qbody);margin-bottom:3px}
+.ql-stat div b{display:block;font-size:25px;font-weight:800;color:var(--qink);letter-spacing:-.3px;line-height:1.25}
+.ql-stat-trend{display:block;font-size:11.5px;font-weight:700;color:var(--qok);margin-top:2px}
+.ql-stat-trend i{font-style:normal;font-weight:500;color:var(--qmut)}
+
+@media(max-width:1180px){.ql-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.ql-stats{grid-template-columns:1fr}}
+
+/* ---- 3. Learner Growth / Educational Level / Domain row ---- */
+.ql-row3{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr) minmax(0,1fr);gap:var(--qgap);align-items:stretch}
+.ql-row3>.qcard{display:flex;flex-direction:column}
+.ql-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:14px}
+.ql-card-head h3{font-size:15.5px;font-weight:700;color:var(--qink)}
+.ql-card-sub{display:block;font-size:12px;color:var(--qmut);margin-top:2px}
+.ql-legend{display:flex;flex-direction:column;gap:5px;flex-shrink:0}
+.ql-legend>span{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--qbody);white-space:nowrap}
+.ql-legend .dot{width:8px;height:8px;border-radius:50%;flex:none}
+
+.ql-growth-chart{position:relative;flex:1;padding-left:34px;padding-bottom:20px;min-height:200px;direction:ltr}
+.ql-growth-chart svg{width:100%;height:100%;display:block;overflow:visible}
+.ql-grid line{stroke:var(--qline);stroke-width:1}
+.ql-line{fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.ql-line.blue{stroke:#2b6cb0}
+.ql-line.green{stroke:#0f9d58}
+.ql-dot{stroke:#fff;stroke-width:2}
+.ql-dot.blue{fill:#2b6cb0}
+.ql-dot.green{fill:#0f9d58}
+.ql-yaxis{position:absolute;left:0;top:0;bottom:20px;width:32px;display:flex;flex-direction:column;justify-content:space-between;text-align:right}
+.ql-yaxis span{font-size:10px;color:var(--qmut);transform:translateY(-50%)}
+.ql-yaxis span:last-child{transform:none}
+.ql-xaxis{position:absolute;left:34px;right:6px;bottom:0;display:flex;justify-content:space-between}
+.ql-xaxis span{font-size:10.5px;color:var(--qmut)}
+.ql-endlabel{position:absolute;right:4px;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700;color:#fff;white-space:nowrap;box-shadow:0 2px 6px rgba(16,40,60,.18)}
+.ql-endlabel.blue{background:#2b6cb0}
+.ql-endlabel.green{background:#0f9d58}
+
+/* donut card */
+.ql-donut-card h3{font-size:15.5px;font-weight:700;color:var(--qink);margin-bottom:16px}
+.ql-donut-wrap{display:flex;flex-direction:column;align-items:center;gap:18px;flex:1;justify-content:center}
+.ql-donut{position:relative;width:132px;height:132px;border-radius:50%;flex-shrink:0;
+  background:conic-gradient(#2b6cb0 0% 42%,#0f9d58 42% 66%,#7c5cbf 66% 84%,#e08a2c 84% 94%,#9aa5b1 94% 100%)}
+.ql-donut-center{position:absolute;inset:18px;border-radius:50%;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.ql-donut-center b{font-size:19px;font-weight:800;color:var(--qink);line-height:1.1}
+.ql-donut-center span{font-size:9.5px;color:var(--qmut)}
+.ql-donut-legend{width:100%;display:flex;flex-direction:column;gap:9px}
+.ql-donut-legend li{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--qink)}
+.ql-donut-legend li i{width:9px;height:9px;border-radius:50%;flex:none}
+.ql-donut-legend li b{margin-left:auto;font-size:12px;font-weight:700;color:var(--qmut)}
+
+/* domain card */
+.ql-domain-card h3{font-size:15.5px;font-weight:700;color:var(--qink);margin-bottom:16px}
+.ql-domain-list{display:flex;flex-direction:column;gap:13px;flex:1;justify-content:center}
+.ql-domain-row{display:grid;grid-template-columns:172px minmax(0,1fr) 50px;align-items:center;gap:10px}
+.ql-domain-row span{font-size:12.5px;color:var(--qink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ql-domain-bar{height:8px;border-radius:6px;background:var(--qpg);overflow:hidden}
+.ql-domain-bar i{display:block;height:100%;border-radius:6px}
+.ql-domain-row b{font-size:12px;font-weight:700;color:var(--qmut);text-align:right}
+
+@media(max-width:1180px){.ql-row3{grid-template-columns:1fr 1fr}.ql-growth{grid-column:1/-1}}
+@media(max-width:700px){
+  .ql-row3{grid-template-columns:1fr}
+  .ql-domain-row{grid-template-columns:140px minmax(0,1fr) 44px}
+}
+
+/* ---- 4. Top Competencies / Top Skills / Program Effectiveness ---- */
+.ql-row4{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.1fr) minmax(0,1fr);gap:var(--qgap);align-items:stretch}
+.ql-row4>.qcard{display:flex;flex-direction:column}
+
+.ql-rank-list{display:flex;flex-direction:column;gap:16px;flex:1;justify-content:center}
+.ql-rank-row{display:grid;grid-template-columns:14px 32px minmax(0,2.1fr) minmax(32px,1fr) 40px;align-items:center;gap:9px}
+.ql-rank-n{font-size:12.5px;font-weight:700;color:var(--qmut)}
+.ql-rank-ic{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;flex-shrink:0}
+.ql-rank-ic svg{width:16px;height:16px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ql-rank-ic.green{background:var(--qokbg)}.ql-rank-ic.green svg{stroke:#0f9d58}
+.ql-rank-ic.blue{background:var(--qbluebg)}.ql-rank-ic.blue svg{stroke:#2b6cb0}
+.ql-rank-ic.purple{background:#F2E9FF}.ql-rank-ic.purple svg{stroke:#7c5cbf}
+.ql-rank-ic.amber{background:var(--qamberbg)}.ql-rank-ic.amber svg{stroke:#e08a2c}
+.ql-rank-ic.pink{background:#FCE8EC}.ql-rank-ic.pink svg{stroke:#e0566b}
+.ql-rank-name{font-size:12.5px;font-weight:600;color:var(--qink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ql-rank-bar{height:7px;border-radius:6px;background:var(--qpg);overflow:hidden}
+.ql-rank-bar i{display:block;height:100%;border-radius:6px}
+.ql-rank-row b{font-size:12px;font-weight:700;color:var(--qmut);text-align:right}
+
+/* program effectiveness gauges */
+.ql-effect-card h3{font-size:15.5px;font-weight:700;color:var(--qink);margin-bottom:16px}
+.ql-gauge-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px 14px;flex:1;align-content:center}
+.ql-gauge{display:flex;align-items:center;gap:14px}
+.ql-ring{position:relative;width:64px;height:64px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;
+  background:conic-gradient(var(--c) calc(var(--pct)*1%),var(--qpg) 0)}
+.ql-ring::before{content:'';position:absolute;inset:7px;border-radius:50%;background:#fff}
+.ql-ring b{position:relative;font-size:12.5px;font-weight:800;color:var(--qink)}
+.ql-gauge-label{display:block;font-size:12px;font-weight:600;color:var(--qink);line-height:1.3}
+.ql-gauge-trend{display:block;font-size:10.5px;font-weight:700;color:var(--qok);margin-top:3px}
+
+@media(max-width:1180px){.ql-row4{grid-template-columns:1fr 1fr}.ql-effect-card{grid-column:1/-1}.ql-gauge-grid{grid-template-columns:repeat(4,1fr)}.ql-rank-row{grid-template-columns:14px 30px minmax(0,4fr) minmax(24px,1fr) 36px}.ql-rank-name{font-size:12px}}
+@media(max-width:900px){.ql-gauge-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.ql-row4{grid-template-columns:1fr}}
+@media(max-width:420px){.ql-rank-row{grid-template-columns:14px 30px minmax(0,1fr) 40px}.ql-rank-row .ql-rank-bar{display:none}}
+
+/* ---- 5. Closing banner ---- */
+.ql-banner{position:relative;display:flex;align-items:center;justify-content:center;gap:14px;padding:30px 28px;
+  background:linear-gradient(115deg,#eaf7ef 0%,#f3faf5 100%);border-color:#d9ecdf;text-align:center;flex-wrap:wrap}
+.ql-banner-ic{width:42px;height:42px;border-radius:50%;background:#fff;display:grid;place-items:center;flex-shrink:0;box-shadow:0 3px 8px rgba(15,157,88,.15)}
+.ql-banner-ic svg{width:20px;height:20px;fill:none;stroke:#0f9d58;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ql-banner p{font-size:14.5px;color:#1c3a2a;max-width:520px}
+.ql-banner p b{font-weight:800}
+.ql-banner-tag{display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;color:#0f9d58;white-space:nowrap}
+.ql-banner-tag i{width:26px;height:1px;background:#bcdec9;display:inline-block}
+
+@media(max-width:700px){.ql-banner{flex-direction:column;text-align:center;padding:26px 20px}.ql-banner-tag{flex-direction:row-reverse}.ql-banner-tag i{display:none}}
+
+@media(max-width:1600px){.ql-search{width:260px}}
+@media(max-width:1300px){.ql-search{display:none}}
+@media(max-width:1180px){.qlang{display:none}}
+@media(max-width:1080px){.qui{display:none}}

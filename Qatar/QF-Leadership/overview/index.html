@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Overview – QF Leadership – Qatar Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../student/Home/student.css">
+<link rel="stylesheet" href="../../shared/typography.css">
+<link rel="stylesheet" href="overview-content.css">
+</head>
+<body class="dm">
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
+
+<div id="dw" class="active">
+
+<!-- ===== sidebar (same shell as student.html, QF Leadership nav contents) ===== -->
+<aside class="qsb" id="qsb">
+  <div class="qsb-brand">
+    <span class="qsb-logo"><img src="https://iconape.com/wp-content/files/hz/20759/png/Qatar-Foundation-01.png" alt="Qatar Foundation"></span>
+  </div>
+
+  <nav class="qsb-nav">
+    <button class="qnav active" data-view="overview">
+      <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span data-en="Overview" data-ar="نظرة عامة">Overview</span></button>
+    <button class="qnav" data-view="learners">
+      <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span data-en="Learners" data-ar="المتعلمون">Learners</span></button>
+    <button class="qnav" data-view="organisations">
+      <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg><span data-en="Organisations" data-ar="المؤسسات">Organisations</span></button>
+    <button class="qnav" data-view="industry">
+      <svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><line x1="8.7" y1="10.6" x2="15.3" y2="7.4"/><line x1="8.7" y1="13.4" x2="15.3" y2="16.6"/></svg><span data-en="Industry Partners" data-ar="شركاء الصناعة">Industry Partners</span></button>
+    <button class="qnav" data-view="competencies">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><polyline points="8.2 13.5 7 22 12 19 17 22 15.8 13.5"/></svg><span data-en="Competencies &amp; Skills" data-ar="الكفاءات والمهارات" data-html="1">Competencies &amp; Skills</span></button>
+    <button class="qnav" data-view="programs">
+      <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg><span data-en="Programs" data-ar="البرامج">Programs</span></button>
+    <button class="qnav" data-view="reports">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span data-en="Reports" data-ar="التقارير">Reports</span></button>
+    <button class="qnav" data-view="explorer">
+      <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><span data-en="Data Explorer" data-ar="مستكشف البيانات">Data Explorer</span></button>
+  </nav>
+
+
+  <div class="qsb-help">
+    <button class="qnav" onclick="st('Help & Support coming soon')">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span data-en="Help &amp; Support" data-ar="المساعدة والدعم" data-html="1">Help &amp; Support</span></button>
+  </div>
+</aside>
+
+<!-- ===== main ===== -->
+<div class="qmain">
+
+  <header class="qtop">
+    <button class="qburger" onclick="document.getElementById('qsb').classList.toggle('open')" aria-label="Menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="qtitle-wrap">
+      <h1 class="qtitle" data-en="Universal Skills Passport" data-ar="جواز المهارات الشامل">Universal Skills Passport</h1>
+      <span class="ql-portal-pill" data-en="Strategic Insights Portal" data-ar="بوابة الرؤى الاستراتيجية">Strategic Insights Portal</span>
+    </div>
+    <div class="qtop-actions">
+      <div class="ql-search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" data-en-placeholder="Search learners, skills, organisations, programs..." data-ar-placeholder="البحث عن المتعلمين والمهارات والمؤسسات والبرامج..." placeholder="Search learners, skills, organisations, programs...">
+      </div>
+      <div class="qlang" role="group" aria-label="Language">
+        <button type="button" id="qlLangEn" class="qlang-opt active" onclick="qlSetLang('en')" data-en="English" data-ar="English">English</button>
+        <span class="qlang-div">|</span>
+        <button type="button" id="qlLangAr" class="qlang-opt" onclick="qlSetLang('ar')" data-en="العربية" data-ar="العربية">العربية</button>
+      </div>
+      <button class="qicon-btn" onclick="st('3 new notifications')" aria-label="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        <b>3</b>
+      </button>
+      <button class="qicon-btn" onclick="st('Help & Support coming soon')" aria-label="Help">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </button>
+      <span class="qdiv-v"></span>
+      <div class="quser" id="quser">
+        <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
+          <span class="qava" id="qAvatar"><img src="../../Assets/Maryam Al Misnad.png" alt=""></span>
+          <span class="qui"><b id="qUserName">Dr. Maryam Al-Misnad</b><span data-en="QF Leadership/Ecosystem Manager" data-ar="قيادة مؤسسة قطر / مدير النظام البيئي">QF Leadership/Ecosystem Manager</span></span>
+          <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="qumenu">
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg><span data-en="My Profile" data-ar="ملفي الشخصي">My Profile</span></button>
+          <button type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span data-en="Settings" data-ar="الإعدادات">Settings</span></button>
+          <hr>
+          <button type="button" class="qout" onclick="logout()"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg><span data-en="Sign Out" data-ar="تسجيل الخروج">Sign Out</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="qboard">
+    <div class="ql-scope">
+
+      <!-- 1. WELCOME HERO -->
+      <div class="qcard ql-hero">
+        <div class="ql-hero-toprow">
+          <button type="button" class="ql-daterange">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span data-en="01 Jan 2026 – 31 Aug 2026" data-ar="01 يناير 2026 – 31 أغسطس 2026">01 Jan 2026 – 31 Aug 2026</span>
+            <svg class="ql-daterange-chev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+
+        <div class="ql-hero-main">
+          <div class="ql-hero-text">
+            <h2 data-en="Welcome, Dr. Maryam Al-Misnad" data-ar="مرحباً، د. مريم آل مسند">Welcome, Dr. Maryam Al-Misnad</h2>
+            <p data-en="Insights into Qatar Foundation's skills ecosystem. Empowering learners. Enabling possibilities." data-ar="رؤى حول منظومة المهارات في مؤسسة قطر. تمكين المتعلمين. إتاحة الإمكانيات.">Insights into Qatar Foundation's skills ecosystem. Empowering learners. Enabling possibilities.</p>
+          </div>
+
+          <div class="ql-hero-quote">
+            <blockquote data-en="“Education is the foundation for human potential and a more sustainable future.”" data-ar="«التعليم هو أساس الإمكانات البشرية ومستقبل أكثر استدامة.»">“Education is the foundation for human potential and a more sustainable future.”</blockquote>
+            <cite data-en="— Qatar Foundation" data-ar="— مؤسسة قطر">— Qatar Foundation</cite>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. KPI STAT CARDS -->
+      <div class="ql-stats">
+        <div class="qcard ql-stat">
+          <span class="ql-stat-ic green"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <div><span class="ql-stat-label" data-en="Total Students Enrolled" data-ar="إجمالي الطلاب المسجلين">Total Students Enrolled</span><b>24,892</b><span class="ql-stat-trend up">↑ 12.5% <i data-en="vs last period" data-ar="مقارنة بالفترة السابقة">vs last period</i></span></div>
+        </div>
+        <div class="qcard ql-stat">
+          <span class="ql-stat-ic blue"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg></span>
+          <div><span class="ql-stat-label" data-en="Organisations" data-ar="المؤسسات">Organisations</span><b>142</b><span class="ql-stat-trend up">↑ 8.3% <i data-en="vs last period" data-ar="مقارنة بالفترة السابقة">vs last period</i></span></div>
+        </div>
+        <div class="qcard ql-stat">
+          <span class="ql-stat-ic purple"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><line x1="8.7" y1="10.6" x2="15.3" y2="7.4"/><line x1="8.7" y1="13.4" x2="15.3" y2="16.6"/></svg></span>
+          <div><span class="ql-stat-label" data-en="Industry Partners" data-ar="شركاء الصناعة">Industry Partners</span><b>68</b><span class="ql-stat-trend up">↑ 13.3% <i data-en="vs last period" data-ar="مقارنة بالفترة السابقة">vs last period</i></span></div>
+        </div>
+        <div class="qcard ql-stat">
+          <span class="ql-stat-ic amber"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><polyline points="9.5 7.2 11.3 9 14.5 6"/><polyline points="8.2 13.5 7 22 12 19 17 22 15.8 13.5"/></svg></span>
+          <div><span class="ql-stat-label" data-en="Verified Badges Issued" data-ar="الشارات الموثقة الصادرة">Verified Badges Issued</span><b>12,560</b><span class="ql-stat-trend up">↑ 28.7% <i data-en="vs last period" data-ar="مقارنة بالفترة السابقة">vs last period</i></span></div>
+        </div>
+      </div>
+
+      <!-- 3. LEARNER GROWTH + EDUCATIONAL LEVEL + DOMAIN -->
+      <div class="ql-row3">
+
+        <div class="qcard ql-growth">
+          <div class="ql-card-head">
+            <div><h3 data-en="Learner Growth" data-ar="نمو المتعلمين">Learner Growth</h3><span class="ql-card-sub" data-en="Total learners over time" data-ar="إجمالي المتعلمين عبر الزمن">Total learners over time</span></div>
+            <div class="ql-legend">
+              <span><i class="dot" style="background:#2b6cb0"></i><span data-en="Total Enrolled" data-ar="إجمالي المسجلين">Total Enrolled</span></span>
+              <span><i class="dot" style="background:#0f9d58"></i><span data-en="Active Learners" data-ar="المتعلمون النشطون">Active Learners</span></span>
+            </div>
+          </div>
+          <div class="ql-growth-chart">
+            <svg viewBox="0 0 660 232" preserveAspectRatio="none">
+              <g class="ql-grid">
+                <line x1="46" y1="8" x2="634" y2="8"/><line x1="46" y1="43" x2="634" y2="43"/>
+                <line x1="46" y1="78" x2="634" y2="78"/><line x1="46" y1="113" x2="634" y2="113"/>
+                <line x1="46" y1="148" x2="634" y2="148"/><line x1="46" y1="183" x2="634" y2="183"/>
+                <line x1="46" y1="214" x2="634" y2="214"/>
+              </g>
+              <defs>
+                <linearGradient id="qlFillBlue" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#2b6cb0" stop-opacity=".22"/>
+                  <stop offset="1" stop-color="#2b6cb0" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="qlFillGreen" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#0f9d58" stop-opacity=".22"/>
+                  <stop offset="1" stop-color="#0f9d58" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#qlFillBlue)" stroke="none" d="M46.0,214 L46.0,150.8 L130.0,135.7 L214.0,120.6 L298.0,102.8 L382.0,85.6 L466.0,68.4 L550.0,54.0 L634.0,43.1 L634.0,214 Z"/>
+              <path fill="url(#qlFillGreen)" stroke="none" d="M46.0,214 L46.0,161.8 L130.0,151.5 L214.0,141.9 L298.0,131.6 L382.0,120.6 L466.0,108.9 L550.0,96.6 L634.0,87.5 L634.0,214 Z"/>
+              <path class="ql-line blue" d="M46.0,150.8 L130.0,135.7 L214.0,120.6 L298.0,102.8 L382.0,85.6 L466.0,68.4 L550.0,54.0 L634.0,43.1"/>
+              <path class="ql-line green" d="M46.0,161.8 L130.0,151.5 L214.0,141.9 L298.0,131.6 L382.0,120.6 L466.0,108.9 L550.0,96.6 L634.0,87.5"/>
+              <circle class="ql-dot blue" cx="634.0" cy="43.1" r="4"/>
+              <circle class="ql-dot green" cx="634.0" cy="87.5" r="4"/>
+            </svg>
+            <div class="ql-endlabel blue" style="top:calc(43.1/232 * 100% - 12px)">24,892</div>
+            <div class="ql-endlabel green" style="top:calc(87.5/232 * 100% - 12px)">18,420</div>
+            <div class="ql-yaxis"><span>30K</span><span>25K</span><span>20K</span><span>15K</span><span>10K</span><span>5K</span><span>0</span></div>
+            <div class="ql-xaxis">
+              <span data-en="Jan" data-ar="يناير">Jan</span><span data-en="Feb" data-ar="فبراير">Feb</span><span data-en="Mar" data-ar="مارس">Mar</span><span data-en="Apr" data-ar="أبريل">Apr</span>
+              <span data-en="May" data-ar="مايو">May</span><span data-en="Jun" data-ar="يونيو">Jun</span><span data-en="Jul" data-ar="يوليو">Jul</span><span data-en="Aug" data-ar="أغسطس">Aug</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="qcard ql-donut-card">
+          <h3 data-en="Learners by Educational Level" data-ar="المتعلمون حسب المستوى التعليمي">Learners by Educational Level</h3>
+          <div class="ql-donut-wrap">
+            <div class="ql-donut" style="--p1:42;--p2:24;--p3:18;--p4:10;--p5:6">
+              <div class="ql-donut-center"><b>24,892</b><span data-en="Learners" data-ar="المتعلمون">Learners</span></div>
+            </div>
+            <ul class="ql-donut-legend">
+              <li><i style="background:#2b6cb0"></i><span data-en="Undergraduate" data-ar="البكالوريوس">Undergraduate</span><b>42%</b></li>
+              <li><i style="background:#0f9d58"></i><span data-en="Postgraduate" data-ar="الدراسات العليا">Postgraduate</span><b>24%</b></li>
+              <li><i style="background:#7c5cbf"></i><span data-en="Continuing Education" data-ar="التعليم المستمر">Continuing Education</span><b>18%</b></li>
+              <li><i style="background:#e08a2c"></i><span data-en="Professional Programs" data-ar="البرامج المهنية">Professional Programs</span><b>10%</b></li>
+              <li><i style="background:#9aa5b1"></i><span data-en="Other" data-ar="أخرى">Other</span><b>6%</b></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="qcard ql-domain-card">
+          <h3 data-en="Learners by Domain" data-ar="المتعلمون حسب المجال">Learners by Domain</h3>
+          <div class="ql-domain-list">
+            <div class="ql-domain-row"><span data-en="Sustainability" data-ar="الاستدامة">Sustainability</span><div class="ql-domain-bar"><i style="width:100%;background:#0f9d58"></i></div><b>5,420</b></div>
+            <div class="ql-domain-row"><span data-en="Innovation" data-ar="الابتكار">Innovation</span><div class="ql-domain-bar"><i style="width:92%;background:#2b6cb0"></i></div><b>4,980</b></div>
+            <div class="ql-domain-row"><span data-en="Digital &amp; Data Literacy" data-ar="المعرفة الرقمية والبيانات" data-html="1">Digital &amp; Data Literacy</span><div class="ql-domain-bar"><i style="width:71%;background:#7c5cbf"></i></div><b>3,860</b></div>
+            <div class="ql-domain-row"><span data-en="Leadership" data-ar="القيادة">Leadership</span><div class="ql-domain-bar"><i style="width:58%;background:#e08a2c"></i></div><b>3,120</b></div>
+            <div class="ql-domain-row"><span data-en="Communication" data-ar="التواصل">Communication</span><div class="ql-domain-bar"><i style="width:51%;background:#e0566b"></i></div><b>2,760</b></div>
+            <div class="ql-domain-row"><span data-en="Ethics &amp; Civic Responsibility" data-ar="الأخلاقيات والمسؤولية المدنية" data-html="1">Ethics &amp; Civic Responsibility</span><div class="ql-domain-bar"><i style="width:39%;background:#9aa5b1"></i></div><b>2,100</b></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 4. TOP COMPETENCIES / TOP SKILLS / PROGRAM EFFECTIVENESS -->
+      <div class="ql-row4">
+
+        <div class="qcard ql-rank-card">
+          <div class="ql-card-head"><h3 data-en="Top Competencies" data-ar="أبرز الكفاءات">Top Competencies</h3><button class="qall" onclick="st('Full list coming soon')"><span data-en="View All" data-ar="عرض الكل">View All</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          <div class="ql-rank-list">
+            <div class="ql-rank-row">
+              <span class="ql-rank-n">1</span>
+              <span class="ql-rank-ic green"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><line x1="8.7" y1="10.6" x2="15.3" y2="7.4"/><line x1="8.7" y1="13.4" x2="15.3" y2="16.6"/></svg></span>
+              <span class="ql-rank-name" data-en="Systems Thinking" data-ar="التفكير المنظومي">Systems Thinking</span>
+              <div class="ql-rank-bar"><i style="width:100%;background:#0f9d58"></i></div>
+              <b>8,420</b>
+            </div>
+            <div class="ql-rank-row">
+              <span class="ql-rank-n">2</span>
+              <span class="ql-rank-ic blue"><svg viewBox="0 0 24 24"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11Z"/></svg></span>
+              <span class="ql-rank-name" data-en="Sustainability" data-ar="الاستدامة">Sustainability</span>
+              <div class="ql-rank-bar"><i style="width:94.8%;background:#2b6cb0"></i></div>
+              <b>7,980</b>
+            </div>
+            <div class="ql-rank-row">
+              <span class="ql-rank-n">3</span>
+              <span class="ql-rank-ic purple"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.6.6 1 1.6 1 2.5h6c0-.9.4-1.9 1-2.5A6 6 0 0 0 12 2Z"/></svg></span>
+              <span class="ql-rank-name" data-en="Problem Solving" data-ar="حل المشكلات">Problem Solving</span>
+              <div class="ql-rank-bar"><i style="width:74%;background:#7c5cbf"></i></div>
+              <b>6,230</b>
+            </div>
+            <div class="ql-rank-row">
+              <span class="ql-rank-n">4</span>
+              <span class="ql-rank-ic amber"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></span>
+              <span class="ql-rank-name" data-en="Professional Communication" data-ar="التواصل المهني">Professional Communication</span>
+              <div class="ql-rank-bar"><i style="width:64.2%;background:#e08a2c"></i></div>
+              <b>5,410</b>
+            </div>
+            <div class="ql-rank-row">
+              <span class="ql-rank-n">5</span>
+              <span class="ql-rank-ic pink"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+              <span class="ql-rank-name" data-en="Leadership" data-ar="القيادة">Leadership</span>
+              <div class="ql-rank-bar"><i style="width:59.1%;background:#e0566b"></i></div>
+              <b>4,980</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="qcard ql-rank-card">
+          <div class="ql-card-head"><h3 data-en="Top Skills Earned" data-ar="أبرز المهارات المكتسبة">Top Skills Earned</h3><button class="qall" onclick="st('Full list coming soon')"><span data-en="View All" data-ar="عرض الكل">View All</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          <div class="ql-rank-list">
+            <div class="ql-rank-row">
+              <span class="ql-rank-n">1</span>
+              <span class="ql-rank-ic green"><svg viewBox="0 0 24 24"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11Z"/></svg></span>
+              <span class="ql-rank-name" data-en="Sustainable Development" data-ar="التنمية المستدامة">Sustainable Development</span>
+              <div class="ql-rank-bar"><i style="width:100%;background:#0f9d58"></i></div>
+              <b>6,210</b>
+            </div>
+            <div class="ql-rank-row">
+              <span class="ql-rank-n">2</span>
+              <span class="ql-rank-ic blue"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+              <span class="ql-rank-name" data-en="Data Analysis" data-ar="تحليل البيانات">Data Analysis</span>
+              <div class="ql-rank-bar"><i style="width:96.3%;background:#2b6cb0"></i></div>
+              <b>5,980</b>
+            </div>
+            <div class="ql-rank-row">
+              <span class="ql-rank-n">3</span>
+              <span class="ql-rank-ic purple"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></span>
+              <span class="ql-rank-name" data-en="Critical Thinking" data-ar="التفكير النقدي">Critical Thinking</span>
+              <div class="ql-rank-bar"><i style="width:87.3%;background:#7c5cbf"></i></div>
+              <b>5,420</b>
+            </div>
+            <div class="ql-rank-row">
+              <span class="ql-rank-n">4</span>
+              <span class="ql-rank-ic amber"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></span>
+              <span class="ql-rank-name" data-en="Project Management" data-ar="إدارة المشاريع">Project Management</span>
+              <div class="ql-rank-bar"><i style="width:78.3%;background:#e08a2c"></i></div>
+              <b>4,860</b>
+            </div>
+            <div class="ql-rank-row">
+              <span class="ql-rank-n">5</span>
+              <span class="ql-rank-ic pink"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+              <span class="ql-rank-name" data-en="Collaboration" data-ar="التعاون">Collaboration</span>
+              <div class="ql-rank-bar"><i style="width:72.8%;background:#e0566b"></i></div>
+              <b>4,520</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="qcard ql-effect-card">
+          <h3 data-en="Program Effectiveness" data-ar="فعالية البرامج">Program Effectiveness</h3>
+          <div class="ql-gauge-grid">
+            <div class="ql-gauge">
+              <div class="ql-ring" style="--pct:78;--c:#0f9d58"><b>78%</b></div>
+              <div><span class="ql-gauge-label" data-en="Evidence Verification Rate" data-ar="معدل التحقق من الأدلة">Evidence Verification Rate</span><span class="ql-gauge-trend">↑ 6% <span data-en="vs last period" data-ar="مقارنة بالفترة السابقة">vs last period</span></span></div>
+            </div>
+            <div class="ql-gauge">
+              <div class="ql-ring" style="--pct:72;--c:#2b6cb0"><b>72%</b></div>
+              <div><span class="ql-gauge-label" data-en="Program Completion Rate" data-ar="معدل إتمام البرنامج">Program Completion Rate</span><span class="ql-gauge-trend">↑ 5% <span data-en="vs last period" data-ar="مقارنة بالفترة السابقة">vs last period</span></span></div>
+            </div>
+            <div class="ql-gauge">
+              <div class="ql-ring" style="--pct:92;--c:#7c5cbf"><b>4.6/5</b></div>
+              <div><span class="ql-gauge-label" data-en="Learner Satisfaction" data-ar="رضا المتعلمين">Learner Satisfaction</span><span class="ql-gauge-trend">↑ 0.3 <span data-en="vs last period" data-ar="مقارنة بالفترة السابقة">vs last period</span></span></div>
+            </div>
+            <div class="ql-gauge">
+              <div class="ql-ring" style="--pct:86;--c:#e08a2c"><b>86%</b></div>
+              <div><span class="ql-gauge-label" data-en="Employability Readiness" data-ar="الجاهزية للتوظيف">Employability Readiness</span><span class="ql-gauge-trend">↑ 8% <span data-en="vs last period" data-ar="مقارنة بالفترة السابقة">vs last period</span></span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 5. CLOSING BANNER -->
+      <div class="ql-banner">
+        <span class="ql-banner-ic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11Z"/></svg></span>
+        <p><b data-en="Data-driven insights." data-ar="رؤى قائمة على البيانات.">Data-driven insights.</b> <span data-en="A more skilled, inclusive and sustainable tomorrow." data-ar="غدٌ أكثر مهارة وشمولاً واستدامة.">A more skilled, inclusive and sustainable tomorrow.</span></p>
+        <span class="ql-banner-tag"><span data-en="Qatar Foundation" data-ar="مؤسسة قطر">Qatar Foundation</span> <i></i></span>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="qfoot">
+    <span data-en="© 2026 Qatar Foundation. All rights reserved." data-ar="© 2026 مؤسسة قطر. جميع الحقوق محفوظة.">© 2026 Qatar Foundation. All rights reserved.</span>
+    <nav><a href="#" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a><i>|</i><a href="#" data-en="Terms of Use" data-ar="شروط الاستخدام">Terms of Use</a><i>|</i><a href="#" data-en="Support" data-ar="الدعم">Support</a></nav>
+  </footer>
+
+</div>
+</div>
+
+<script>
+function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
+function logout(){try{localStorage.removeItem('qfLoggedIn');localStorage.removeItem('qfName')}catch(e){}window.location.href='../overview/index.html'}
+
+document.querySelectorAll('.qsb-nav .qnav, .qsb-help .qnav').forEach(b=>{
+  b.addEventListener('click',function(){
+    const v=this.dataset.view;
+    if(!v||v==='overview')return;
+    document.getElementById('qsb').classList.remove('open');
+    st(this.textContent.trim()+' — coming soon');
+  });
+});
+
+document.addEventListener('click',function(e){
+  const u=document.getElementById('quser');
+  if(u&&!u.contains(e.target))u.classList.remove('open');
+});
+
+/* QF Leadership language toggle — English/Arabic, scoped to this page only. */
+function qlSetLang(lang){
+  lang = lang==='ar' ? 'ar' : 'en';
+  document.documentElement.setAttribute('dir', lang==='ar' ? 'rtl' : 'ltr');
+  document.documentElement.setAttribute('lang', lang);
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    const val = lang==='ar' ? (el.dataset.ar || el.dataset.en) : el.dataset.en;
+    if(el.dataset.html==='1') el.innerHTML = val; else el.textContent = val;
+  });
+  document.querySelectorAll('[data-en-placeholder]').forEach(function(el){
+    el.placeholder = lang==='ar' ? (el.dataset.arPlaceholder || el.dataset.enPlaceholder) : el.dataset.enPlaceholder;
+  });
+  const enBtn=document.getElementById('qlLangEn'), arBtn=document.getElementById('qlLangAr');
+  if(enBtn) enBtn.classList.toggle('active', lang==='en');
+  if(arBtn) arBtn.classList.toggle('active', lang==='ar');
+  try{localStorage.setItem('qfLeadershipLang', lang)}catch(e){}
+}
+try{
+  const urlLang = new URLSearchParams(location.search).get('lang');
+  const savedLang = urlLang || localStorage.getItem('qfLeadershipLang');
+  if(savedLang==='ar') qlSetLang('ar');
+}catch(e){}
+</script>
+</body>
+</html>

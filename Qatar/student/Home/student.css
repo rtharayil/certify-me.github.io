@@ -194,7 +194,7 @@ svg.qchev{width:16px;height:16px;stroke:var(--qmut);fill:none;stroke-width:2;str
 .qfoot a:hover{color:var(--qg500)}
 .qfoot i{font-style:normal;color:var(--qline)}
 
-@media(max-width:1180px){.row4{grid-template-columns:1fr 1fr}}
+@media(max-width:1320px){.row4{grid-template-columns:1fr 1fr}}
 @media(max-width:1080px){.row2{grid-template-columns:1fr}}
 @media(max-width:860px){
 .qsb{transform:translateX(-100%)}
