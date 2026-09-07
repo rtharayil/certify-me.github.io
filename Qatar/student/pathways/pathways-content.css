@@ -96,6 +96,8 @@
 .path-comp-ic.blue{background:var(--qblue)}
 .path-comp-ic.green{background:var(--qok)}
 .path-comp-ic.amber{background:var(--qamber)}
+.path-comp-ic.badge-img{width:24px;height:32px;border-radius:0;background:none}
+.path-comp-ic.badge-img img{width:100%;height:100%;object-fit:contain;display:block}
 .path-comp-name{flex:1;min-width:0;font-size:13.5px;font-weight:600;color:var(--qink)}
 .path-comp-pill{flex-shrink:0;font-size:11px;font-weight:700;color:var(--qg700);background:var(--qokbg);padding:3px 9px;border-radius:20px}
 
