@@ -11,8 +11,8 @@
 .adm-dash-scope svg{display:block;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round}
 
 .adm-dash-scope .intro{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:14px}
-.adm-dash-scope h2.greeting{font-size:20px;line-height:1.2;margin:0 0 7px;font-weight:750;letter-spacing:-.3px;color:var(--qink)}
-.adm-dash-scope .sub{font-size:12.5px;color:#30445f}
+.adm-dash-scope h2.greeting{font-size:30px;line-height:1.15;margin:0 0 8px;font-weight:700;letter-spacing:-.4px;color:var(--qink)}
+.adm-dash-scope .sub{font-size:16px;line-height:1.5;color:#30445f}
 .adm-dash-scope .actions{display:flex;gap:12px}
 .adm-dash-scope .date,.adm-dash-scope .export{height:38px;border-radius:7px;display:flex;align-items:center}
 .adm-dash-scope .date{padding:0 12px;gap:9px;font-weight:650;border:1px solid var(--border);background:#fff}
@@ -23,14 +23,14 @@
 
 .adm-dash-scope .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-top:20px}
 .adm-dash-scope .card{background:#fff;border:1px solid var(--border);border-radius:8px;box-shadow:0 1px 2px rgba(20,40,60,.025)}
-.adm-dash-scope .stat{height:107px;display:flex;align-items:flex-start;padding:12px 16px 17px;overflow:hidden}
+.adm-dash-scope .stat{min-height:107px;display:flex;align-items:flex-start;padding:12px 16px 17px}
 .adm-dash-scope .staticon{width:64px;height:64px;flex:none;border-radius:50%;display:grid;place-items:center;margin-top:0}
 .adm-dash-scope .staticon svg{width:35px;height:35px}
 .adm-dash-scope .sg{background:#e1f3ec;color:#00825e}
 .adm-dash-scope .sb{background:#e5f0ff;color:#1170dc}
 .adm-dash-scope .sp{background:#f0e9fa;color:#6c40b8}
 .adm-dash-scope .so{background:#fff0df;color:#fa7800}
-.adm-dash-scope .statcopy{padding-left:21px;min-width:0;overflow:hidden;white-space:nowrap}
+.adm-dash-scope .statcopy{padding-left:21px;min-width:0}
 .adm-dash-scope .label{font-size:12.5px;line-height:15px;min-height:15px;margin-bottom:3px;white-space:normal;overflow-wrap:break-word}
 .adm-dash-scope .number{font-size:27px;line-height:1;font-weight:500}
 .adm-dash-scope .delta{color:#00825e;font-size:11px;font-weight:650;margin-left:11px;vertical-align:3px;white-space:nowrap}
@@ -40,17 +40,18 @@
 .adm-dash-scope .row2{display:grid;grid-template-columns:1.02fr 1.03fr .75fr;gap:15px;margin-top:14px}
 .adm-dash-scope .panel{border:1px solid var(--border);border-radius:8px;background:#fff;box-shadow:0 1px 2px rgba(20,40,60,.025)}
 .adm-dash-scope .activities,.adm-dash-scope .trends{height:453px;padding:16px}
-.adm-dash-scope .quick{height:324px;padding:15px}
+.adm-dash-scope .quick{min-height:233px;padding:15px}
 .adm-dash-scope .overview{height:207px;padding:12px 15px}
 .adm-dash-scope .right{display:flex;flex-direction:column;gap:13px}
 .adm-dash-scope .head{display:flex;justify-content:space-between;align-items:center}
-.adm-dash-scope .ptitle{font-size:13px;font-weight:700}
+.adm-dash-scope .ptitle{font-size:16px;font-weight:700}
 .adm-dash-scope .link{font-size:10.5px;font-weight:650;color:#005bc2;text-decoration:none}
 .adm-dash-scope .link:after{content:"  \2192";font-size:14px}
 .adm-dash-scope .info{display:inline-grid;place-items:center;width:13px;height:13px;border:1px solid #75849a;border-radius:50%;font-size:8px;margin-left:5px;vertical-align:1px;color:#596a80}
 
 .adm-dash-scope .activity-list{margin-top:17px}
-.adm-dash-scope .activity{height:58px;display:flex;gap:10px}
+.adm-dash-scope .activity{min-height:58px;display:flex;gap:10px;padding-bottom:11px;margin-bottom:11px;border-bottom:1px solid #eef1f4}
+.adm-dash-scope .activity:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
 .adm-dash-scope .aicon{width:38px;height:38px;flex:none;border-radius:50%;display:grid;place-items:center}
 .adm-dash-scope .aicon svg{width:21px;height:21px}
 .adm-dash-scope .ag{background:#e2f4ed;color:#00815d}
@@ -58,12 +59,12 @@
 .adm-dash-scope .ab{background:#e7f1ff;color:#1170dc}
 .adm-dash-scope .ao{background:#fff0df;color:#fa7800}
 .adm-dash-scope .abody{flex:1;min-width:0}
-.adm-dash-scope .arow{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;line-height:1.25}
+.adm-dash-scope .arow{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:4px 8px;line-height:1.25}
 .adm-dash-scope .aname{font-size:11px;font-weight:700}
-.adm-dash-scope .atime-wrap{flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:2px}
-.adm-dash-scope .atime{font-size:9.5px;color:#33475f;white-space:nowrap}
-.adm-dash-scope .adesc{font-size:10px;color:#263a56;margin-top:-6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.adm-dash-scope .aby{font-size:9.5px;color:#203550;text-align:right;white-space:nowrap}
+.adm-dash-scope .atime-wrap{flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:2px;max-width:100%}
+.adm-dash-scope .atime{font-size:9.5px;color:#33475f;text-align:right}
+.adm-dash-scope .adesc{font-size:10px;color:#263a56;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.adm-dash-scope .aby{font-size:9.5px;color:#203550;text-align:right}
 
 .adm-dash-scope .trend-head{display:flex;justify-content:space-between;margin-top:18px}
 .adm-dash-scope .tsub{font-size:11px;margin-bottom:6px}
@@ -90,7 +91,6 @@
 .adm-dash-scope .tp{font-size:10.5px;color:#00825e;font-weight:650;margin-top:8px}
 
 .adm-dash-scope .quick-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:14px}
-.adm-dash-scope .qitem.qcenter{grid-column:1/-1;width:calc(50% - 4.5px);justify-self:center}
 .adm-dash-scope .qitem{height:82px;border:1px solid #e0e6eb;border-radius:7px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;background:none}
 .adm-dash-scope .qicon{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:#fff;margin-bottom:8px}
 .adm-dash-scope .qicon svg{width:19px;height:19px}
@@ -110,7 +110,7 @@
 .adm-dash-scope .track i{display:block;height:100%;background:#087a58;border-radius:6px}
 .adm-dash-scope .ovval{text-align:right;font-size:9.5px}
 
-.adm-dash-scope .small{height:211px;padding:15px}
+.adm-dash-scope .small{min-height:211px;padding:15px}
 .adm-dash-scope .oppbody{display:grid;grid-template-columns:145px 1fr;align-items:center;margin-top:12px}
 .adm-dash-scope .donut{width:118px;height:118px;border-radius:50%;position:relative;background:conic-gradient(#1475db 0 45.5%,#087c59 45.5% 67.3%,#ff7900 67.3% 90.4%,#aeb8c4 90.4% 100%)}
 .adm-dash-scope .donut:after{content:"";position:absolute;inset:25px;border-radius:50%;background:#fff}
@@ -142,8 +142,8 @@
 .adm-dash-scope .isup{font-size:10px;color:#00825e;font-weight:650;margin-top:8px}
 .adm-dash-scope .isvs{font-size:9.5px;color:#53647a;margin-top:6px}
 
-.adm-dash-scope .comp-list{margin-top:13px}
-.adm-dash-scope .cr{height:27px;display:grid;grid-template-columns:18px 22px 1fr 42px;gap:6px;align-items:center}
+.adm-dash-scope .comp-list{margin-top:13px;display:flex;flex-direction:column;gap:6px}
+.adm-dash-scope .cr{min-height:27px;display:grid;grid-template-columns:18px 22px 1fr 42px;gap:6px;align-items:center}
 .adm-dash-scope .rank{font-size:9.5px}
 .adm-dash-scope .ci{width:21px;height:21px;border-radius:6px;color:#fff;display:grid;place-items:center}
 .adm-dash-scope .ci svg{width:14px;height:14px}
@@ -170,4 +170,19 @@
 @media(max-width:1100px){
 .adm-dash-scope .row1,.adm-dash-scope .row2{grid-template-columns:1fr}
 .adm-dash-scope .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:600px){
+.adm-dash-scope h2.greeting{font-size:24px}
+.adm-dash-scope .intro{flex-direction:column;align-items:stretch}
+.adm-dash-scope .actions{flex-wrap:wrap}
+.adm-dash-scope .stats{grid-template-columns:1fr}
+.adm-dash-scope .quick-grid{grid-template-columns:1fr}
+.adm-dash-scope .oppbody{grid-template-columns:1fr;justify-items:center;text-align:center}
+.adm-dash-scope .issuebody{grid-template-columns:1fr}
+.adm-dash-scope .issue-side{padding-top:10px}
+}
+@media(max-width:480px){
+.adm-dash-scope h2.greeting{font-size:21px}
+.adm-dash-scope .sub{font-size:13px}
+.adm-dash-scope .date,.adm-dash-scope .export{font-size:11px;padding:0 10px}
 }

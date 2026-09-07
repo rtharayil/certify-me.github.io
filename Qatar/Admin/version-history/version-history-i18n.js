@@ -111,13 +111,13 @@
 
     whatChangedTitle: { en: 'What Changed', ar: 'ما الذي تغيّر' },
     wc1: { en: 'Refined competency description', ar: 'تنقيح وصف الكفاءة' },
-    wc2: { en: 'Updated proficiency level descriptors (Levels 1-4)', ar: 'تحديث أوصاف مستويات الإتقان (المستويات 1-4)' },
+    wc2: { en: 'Updated proficiency level descriptors (Levels 1-3)', ar: 'تحديث أوصاف مستويات الإتقان (المستويات 1-3)' },
     wc3: { en: 'Revised taxonomy mapping (added O*NET 3.1)', ar: 'مراجعة ربط التصنيف (إضافة O*NET 3.1)' },
     wc4: { en: 'Updated related skills', ar: 'تحديث المهارات ذات الصلة' },
 
     affectedTitle: { en: 'Affected Elements', ar: 'العناصر المتأثرة' },
     affCompDef: { en: 'Competency Definition', ar: 'تعريف الكفاءة' },
-    affProfLevels: { en: 'Proficiency Levels (4)', ar: 'مستويات الإتقان (4)' },
+    affProfLevels: { en: 'Proficiency Levels (3)', ar: 'مستويات الإتقان (3)' },
     affTaxMappings: { en: 'Taxonomy Mappings (2)', ar: 'روابط التصنيف (2)' },
     affRelatedSkills: { en: 'Related Skills (6)', ar: 'المهارات ذات الصلة (6)' },
 

@@ -6,14 +6,14 @@
    admin-shell.css instead. Font-family follows the centralized
    typography.css; this page keeps its own dense 12px baseline, same
    pattern as the other Admin sections. */
-.adm-analytics-scope{font-size:12px;color:#0c1b3b}
+.adm-analytics-scope{font-size:14px;color:#0c1b3b}
 .adm-analytics-scope{--navy:#0c1b3b;--green:#007c5b;--green2:#008d69;--line:#e5eaf0;--muted:#65718a;--blue:#0067d9;--purple:#7d4bc4;--orange:#ff8c18}
 .adm-analytics-scope button{font:inherit;color:inherit}
 .adm-analytics-scope svg{overflow:visible}
 
 .adm-analytics-scope .title-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;row-gap:12px;margin-bottom:14px}
-.adm-analytics-scope .title h1{margin:0;font-size:21px;line-height:28px;letter-spacing:-.3px}
-.adm-analytics-scope .subtitle{margin-top:5px;color:#20345a;font-size:11px}
+.adm-analytics-scope .title h1{margin:0;font-size:30px;line-height:1.15;letter-spacing:-.4px}
+.adm-analytics-scope .subtitle{margin-top:6px;color:#20345a;font-size:16px;line-height:1.5}
 .adm-analytics-scope .actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 .adm-analytics-scope .date,.adm-analytics-scope .btn,.adm-analytics-scope .custom{height:35px;border:1px solid #dce3eb;border-radius:7px;background:#fff;color:#0b1d40;font-weight:600;font-size:10px;display:flex;align-items:center;justify-content:center;gap:10px;padding:0 14px;cursor:pointer}
 .adm-analytics-scope .date{width:205px}
@@ -22,18 +22,18 @@
 .adm-analytics-scope .custom .down{border-left:1px solid rgba(255,255,255,.25);height:35px;display:flex;align-items:center;padding-left:15px;margin-left:auto}
 
 .adm-analytics-scope .kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-bottom:16px}
-.adm-analytics-scope .kpi{height:98px;min-width:0;border:1px solid #e4e9ef;border-radius:8px;background:#fff;display:flex;align-items:center;padding:16px 14px;box-shadow:0 1px 2px rgba(14,34,57,.025);overflow:hidden}
+.adm-analytics-scope .kpi{min-height:98px;min-width:0;border:1px solid #e4e9ef;border-radius:8px;background:#fff;display:flex;align-items:center;padding:16px 14px;box-shadow:0 1px 2px rgba(14,34,57,.025)}
 .adm-analytics-scope .kpi-icon{width:53px;height:53px;border-radius:50%;display:grid;place-items:center;flex:0 0 auto;margin-right:15px}
 .adm-analytics-scope .kpi-icon.blue{background:#eaf3ff;color:#0875e1}.adm-analytics-scope .kpi-icon.green{background:#eaf7f1;color:#007c5b}.adm-analytics-scope .kpi-icon.purple{background:#f1eaff;color:#7540c4}.adm-analytics-scope .kpi-icon.orange{background:#fff1dc;color:#f7941d}.adm-analytics-scope .kpi-icon.red{background:#ffecef;color:#e73e52}
-.adm-analytics-scope .kpi-label{font-size:11px;color:#263755;margin-bottom:4px;white-space:nowrap}
+.adm-analytics-scope .kpi-label{font-size:11px;color:#263755;margin-bottom:4px}
 .adm-analytics-scope .kpi-value{font-size:19px;font-weight:750;letter-spacing:.1px;display:inline-block;margin-right:7px}
 .adm-analytics-scope .up{color:#008b5e;font-size:9px;font-weight:700;white-space:nowrap}
-.adm-analytics-scope .kpi-foot{font-size:9px;color:#334464;margin-top:5px;white-space:nowrap}
+.adm-analytics-scope .kpi-foot{font-size:9px;color:#334464;margin-top:5px}
 
 .adm-analytics-scope .grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr) minmax(0,1.02fr);gap:12px}
 .adm-analytics-scope .panel{border:1px solid #e3e8ee;border-radius:8px;background:#fff;overflow:hidden;box-shadow:0 1px 2px rgba(10,28,52,.02);min-width:0}
-.adm-analytics-scope .panel-head{height:48px;padding:0 13px;display:flex;align-items:center;justify-content:space-between;gap:8px}
-.adm-analytics-scope .panel-title{font-size:13px;font-weight:750;letter-spacing:-.1px}
+.adm-analytics-scope .panel-head{min-height:48px;padding:8px 13px;display:flex;align-items:center;flex-wrap:wrap;justify-content:space-between;gap:8px}
+.adm-analytics-scope .panel-title{font-size:15px;font-weight:700;letter-spacing:-.1px}
 .adm-analytics-scope .select{height:26px;border:1px solid #dce3eb;border-radius:5px;padding:0 9px;font-size:9px;font-weight:650;color:#172a4e;background:#fff;display:flex;align-items:center;gap:9px;cursor:pointer;white-space:nowrap}
 .adm-analytics-scope .panel-body{padding:0 13px 12px}
 
@@ -137,4 +137,14 @@
 }
 @media(max-width:560px){
 .adm-analytics-scope .kpis{grid-template-columns:minmax(0,1fr)}
+.adm-analytics-scope .title h1{font-size:24px}
+.adm-analytics-scope .title-row{flex-direction:column;align-items:stretch}
+.adm-analytics-scope .actions{flex-direction:column;align-items:stretch}
+.adm-analytics-scope .date,.adm-analytics-scope .btn,.adm-analytics-scope .custom{width:100%}
+.adm-analytics-scope .engagement{height:auto}
+.adm-analytics-scope .eng-body{flex-direction:column;height:auto;padding:13px}
+.adm-analytics-scope .stats{margin-left:0;margin-top:14px;width:100%}
+.adm-analytics-scope .opp{height:auto}
+.adm-analytics-scope .opp-body{flex-direction:column;height:auto;gap:16px}
+.adm-analytics-scope .opp-list,.adm-analytics-scope .funnel{width:100%}
 }

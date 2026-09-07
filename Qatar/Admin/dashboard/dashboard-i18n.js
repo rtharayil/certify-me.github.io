@@ -16,7 +16,7 @@
     exportReport: { en: 'Export Report', ar: 'تصدير التقرير' },
 
     totalStudents: { en: 'Total Students', ar: 'إجمالي الطلاب' },
-    activeCompetencies: { en: 'Active Competencies', ar: 'الكفاءات النشطة' },
+    activeCompetencies: { en: 'Competencies', ar: 'الكفاءات' },
     skillsEarned: { en: 'Skills Earned', ar: 'المهارات المكتسبة' },
     badgesIssued: { en: 'Badges Issued', ar: 'الشارات الصادرة' },
     vsApr: { en: 'vs Apr 2025', ar: 'مقارنة بأبريل 2025' },
@@ -47,10 +47,6 @@
     dt20250430: { en: '30 Apr 2025, 02:15 PM', ar: '30 أبريل 2025، 02:15 م' },
     byFatimaAlKaabi2: { en: 'by Fatima Al-Kaabi', ar: 'بواسطة فاطمة الكعبي' },
     c11Name: { en: 'Interpersonal &amp; Professional Communication', ar: 'التواصل الشخصي والمهني' },
-    actOppUpdated: { en: 'Opportunity Updated', ar: 'تم تحديث فرصة' },
-    dt20250429: { en: '29 Apr 2025, 09:00 AM', ar: '29 أبريل 2025، 09:00 ص' },
-    byAhmedAlHajri2: { en: 'by Ahmed Al-Hajri', ar: 'بواسطة أحمد الهاجري' },
-    actMentorship: { en: 'Industry Mentorship Program', ar: 'برنامج الإرشاد المهني الصناعي' },
 
     enrollmentTrends: { en: 'Enrollment Trends', ar: 'اتجاهات التسجيل' },
     viewFullReport: { en: 'View Full Report', ar: 'عرض التقرير الكامل' },
@@ -69,7 +65,6 @@
     createCompetency: { en: 'Create Competency', ar: 'إنشاء كفاءة' },
     createBadge: { en: 'Create Badge', ar: 'إنشاء شارة' },
     addStudents: { en: 'Add Students', ar: 'إضافة طلاب' },
-    generateReport: { en: 'Generate Report', ar: 'إنشاء تقرير' },
     createOpportunity: { en: 'Create Opportunity', ar: 'إنشاء فرصة' },
 
     platformOverview: { en: 'Platform Overview', ar: 'نظرة عامة على المنصة' },

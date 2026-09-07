@@ -109,9 +109,9 @@
     viewDomainDetails: { en: 'View Domain Details', ar: 'عرض تفاصيل المجال' },
 
     profLevelDist: { en: 'Proficiency Level Distribution', ar: 'توزيع مستويات الإتقان' },
-    level1Emerging: { en: 'Level 1<br>Emerging', ar: 'المستوى 1<br>ناشئ' },
-    level2Developing: { en: 'Level 2<br>Developing', ar: 'المستوى 2<br>متطور' },
-    level3Applied: { en: 'Level 3<br>Applied', ar: 'المستوى 3<br>تطبيقي' },
+    level1Emerging: { en: 'Level 1<br>Foundational', ar: 'المستوى 1<br>تأسيسي' },
+    level2Developing: { en: 'Level 2<br>Proficient', ar: 'المستوى 2<br>متمكن' },
+    level3Applied: { en: 'Level 3<br>Expert', ar: 'المستوى 3<br>خبير' },
     manageProfLevels: { en: 'Manage Proficiency Levels', ar: 'إدارة مستويات الإتقان' },
 
     recentActivities: { en: 'Recent Activities', ar: 'الأنشطة الأخيرة' },

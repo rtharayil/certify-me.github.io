@@ -7,8 +7,8 @@
 .adm-createopp-scope{--navy:#0b2348;--green:#006b58;--green2:#008b72;--line:#e4eaf0;--muted:#5c6b84;--soft:#f7fafb;--blue:#2475d9}
 
 .adm-createopp-scope .title-row{display:flex;align-items:flex-start}
-.adm-createopp-scope h1{font-size:20px;line-height:1.2;margin:0;color:#0b2348;letter-spacing:-.4px}
-.adm-createopp-scope .subtitle{font-size:11px;margin-top:7px;color:#34496a;max-width:640px}
+.adm-createopp-scope h1{font-size:30px;line-height:1.15;margin:0;color:#0b2348;letter-spacing:-.4px}
+.adm-createopp-scope .subtitle{font-size:16px;line-height:1.5;margin-top:7px;color:#34496a;max-width:640px}
 .adm-createopp-scope .title-actions{margin-left:auto;display:flex;gap:12px;padding-top:2px}
 .adm-createopp-scope .btn{height:36px;border:1px solid #dfe6ec;border-radius:7px;background:#fff;color:#11294c;padding:0 16px;font-weight:650;display:inline-flex;align-items:center;gap:9px;font-size:10.5px;cursor:pointer}
 .adm-createopp-scope .btn svg{width:15px;height:15px;color:#334a6c;flex:none}
@@ -27,7 +27,7 @@
 .adm-createopp-scope .workspace{display:grid;grid-template-columns:minmax(0,2.23fr) minmax(300px,1fr);gap:12px;align-items:start;margin-top:12px}
 .adm-createopp-scope .left,.adm-createopp-scope .right{min-width:0}
 .adm-createopp-scope .card{border:1px solid var(--line);border-radius:9px;background:#fff;box-shadow:0 1px 2px rgba(20,45,70,.025);padding:14px 15px;margin-bottom:12px}
-.adm-createopp-scope .card-title{margin:0;color:#0b2348;font-size:13px;font-weight:700;letter-spacing:-.2px}
+.adm-createopp-scope .card-title{margin:0;color:#0b2348;font-size:16px;font-weight:700;letter-spacing:-.2px}
 .adm-createopp-scope .card-desc{margin:4px 0 14px;color:#5c6b84;font-size:10.5px}
 
 .adm-createopp-scope .form-grid{display:grid;grid-template-columns:1.15fr .95fr .95fr;gap:12px 14px}
@@ -81,7 +81,7 @@
 .adm-createopp-scope .next svg{width:15px;height:15px}
 
 .adm-createopp-scope .side-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
-.adm-createopp-scope .side-heading h2{margin:0;color:#0b2348;font-size:12.5px;font-weight:700;letter-spacing:-.2px}
+.adm-createopp-scope .side-heading h2{margin:0;color:#0b2348;font-size:16px;font-weight:700;letter-spacing:-.2px}
 .adm-createopp-scope .edit{display:flex;align-items:center;gap:6px;color:#0872ce;font-weight:700;font-size:9.5px;cursor:pointer}
 .adm-createopp-scope .edit svg{width:12px;height:12px}
 .adm-createopp-scope .preview-box{border:1px solid var(--line);border-radius:8px;padding:10px;background:linear-gradient(180deg,#f8fbff 0%,#fff 100%)}
@@ -90,7 +90,7 @@
 .adm-createopp-scope .preview-icon svg{width:28px;height:28px;color:#00775f}
 .adm-createopp-scope .preview-main{min-width:0;padding-top:1px}
 .adm-createopp-scope .preview-name{font-size:11.5px;font-weight:700;color:#0b2348;line-height:1.2;margin-bottom:7px}
-.adm-createopp-scope .meta{display:flex;align-items:center;gap:6px;color:#334a6c;font-size:9.5px;margin-bottom:6px;white-space:nowrap}
+.adm-createopp-scope .meta{display:flex;align-items:center;flex-wrap:wrap;row-gap:3px;gap:6px;color:#334a6c;font-size:9.5px;margin-bottom:6px}
 .adm-createopp-scope .meta svg{width:12px;height:12px;color:#5c6b84;flex:none}
 .adm-createopp-scope .sep{color:#a3adc2}
 .adm-createopp-scope .description{font-size:10.5px;color:#334a6c;line-height:1.4;margin:11px 0 13px}
@@ -125,4 +125,17 @@
 }
 @media(max-width:980px){
   .adm-createopp-scope .workspace{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:560px){
+  .adm-createopp-scope h1{font-size:22px}
+  .adm-createopp-scope .title-row{flex-wrap:wrap;gap:10px}
+  .adm-createopp-scope .title-actions{margin-left:0}
+  .adm-createopp-scope .steps{height:auto;grid-template-columns:1fr;border-radius:8px}
+  .adm-createopp-scope .step{border-right:0;border-bottom:1px solid var(--line);padding:10px 12px}
+  .adm-createopp-scope .step:last-child{border-bottom:0}
+  .adm-createopp-scope .form-grid{grid-template-columns:minmax(0,1fr)}
+  .adm-createopp-scope .date-row{grid-template-columns:minmax(0,1fr)}
+  .adm-createopp-scope .preview-bottom{grid-template-columns:minmax(0,1fr)}
+  .adm-createopp-scope .bottom{flex-direction:column;align-items:stretch;gap:10px}
+  .adm-createopp-scope .back,.adm-createopp-scope .next{width:100%;justify-content:center}
 }
