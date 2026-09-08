@@ -74,7 +74,7 @@
       <div class="quser" id="quser">
         <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
           <span class="qava" id="qAvatar"><img src="../../Assets/sara-profile-photo.png" alt=""></span>
-          <span class="qui"><b id="qUserName">Sara Al Mansoori</b><span>Engineering Student</span></span>
+          <span class="qui"><b id="qUserName">Sara Al-Mansoori</b><span>Engineering Student</span></span>
           <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="qumenu">
@@ -205,29 +205,6 @@
             </div>
             <div>
               <div class="comp-name">Systems Thinking</div>
-            </div>
-          </button>
-
-          <button type="button" class="comp" onclick="st('Problem Solving competency page coming soon')">
-            <div class="hex teal">
-              <svg viewBox="0 0 24 24">
-                <path d="M4 7h3a1 1 0 0 0 1-1V5a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-1a2 2 0 0 0-4 0v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a2 2 0 0 0 0-4H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/>
-              </svg>
-            </div>
-            <div>
-              <div class="comp-name">Problem Solving</div>
-            </div>
-          </button>
-
-          <button type="button" class="comp" onclick="st('Communication competency page coming soon')">
-            <div class="hex purple">
-              <svg viewBox="0 0 24 24">
-                <path d="M5 6h14v10H5z"/>
-                <path d="m8 20 4-4 4 4"/>
-              </svg>
-            </div>
-            <div>
-              <div class="comp-name">Communication</div>
             </div>
           </button>
 
@@ -535,7 +512,6 @@
 </div>
 
 <script>
-try{const n=localStorage.getItem('qfName');if(n)document.getElementById('qUserName').textContent=n}catch(e){}
 function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
 function logout(){try{localStorage.removeItem('qfLoggedIn');localStorage.removeItem('qfName')}catch(e){}window.location.href='../Home/student.html'}
 

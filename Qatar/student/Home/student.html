@@ -136,7 +136,7 @@
       <div class="quser" id="quser">
         <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
           <span class="qava" id="qAvatar"><img src="../../Assets/sara-profile-photo.png" alt=""></span>
-          <span class="qui"><b id="qUserName">Sara Al Mansoori</b><span>Engineering Student</span></span>
+          <span class="qui"><b id="qUserName">Sara Al-Mansoori</b><span>Engineering Student</span></span>
           <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="qumenu">
@@ -158,7 +158,7 @@
           <img src="../../Assets/sara-profile-photo.png" alt="Sara Al Mansoori">
         </span>
         <div class="hero-info">
-          <h2>Welcome back, <span id="heroName">Sara Al Mansoori</span> <span class="wave">👋</span></h2>
+          <h2>Welcome back, <span id="heroName">Sara Al-Mansoori</span> <span class="wave">👋</span></h2>
           <p class="hero-sub">Here's your skills journey snapshot.</p>
           <div class="hero-meta">
             <div class="hmi">
@@ -397,7 +397,7 @@ gc('l');gc('s');gc('f');
 
 /* --- shell --- */
 function initDash(name){
-  const full=name||'Sara Al Mansoori';
+  const full='Sara Al-Mansoori';
   document.getElementById('qUserName').textContent=full;
   document.getElementById('heroName').textContent=full;
 }
@@ -435,8 +435,7 @@ function showDash(u){
 document.getElementById('aw').style.display='none';
 document.getElementById('dw').classList.add('active');
 document.body.classList.add('dm');
-const n=u.includes('@')?u.split('@')[0]:u;
-const d=n.charAt(0).toUpperCase()+n.slice(1);
+const d='Sara Al-Mansoori';
 if(typeof initDash==='function')initDash(d);
 try{localStorage.setItem('qfLoggedIn','1');localStorage.setItem('qfName',d)}catch(e){}
 }

@@ -25,9 +25,7 @@
     <button class="qnav" data-view="dashboard">
       <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Dashboard</button>
     <button class="qnav" data-view="workspace">
-      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>Review Evidence</button>
-    <button class="qnav" data-view="records">
-      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><path d="m9.5 13 2 2 3.5-3.5"/></svg>Verified Evidence</button>
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>Review Manager</button>
     <button class="qnav active" data-view="students">
       <svg viewBox="0 0 24 24"><path d="M4 19V9M9 19V5M14 19v-8M19 19V3"/></svg>History</button>
     <button class="qnav" data-view="settings">
@@ -265,7 +263,6 @@ document.querySelectorAll('.qsb-nav .qnav, .qsb-help .qnav').forEach(b=>{
     document.getElementById('qsb').classList.remove('open');
     if(v==='dashboard'){window.location.href='../dashboard/dashboard.html';return}
     if(v==='workspace'){window.location.href='../evidence-review/index.html';return}
-    if(v==='records'){window.location.href='../competency-decision/index.html';return}
     st(this.textContent.trim()+' — coming soon');
   });
 });
