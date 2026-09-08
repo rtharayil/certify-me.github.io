@@ -74,7 +74,7 @@
       <div class="quser" id="quser">
         <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
           <span class="qava" id="qAvatar"><img src="../../Assets/sara-profile-photo.png" alt=""></span>
-          <span class="qui"><b id="qUserName">Sara Al Mansoori</b><span>Engineering Student</span></span>
+          <span class="qui"><b id="qUserName">Sara Al-Mansoori</b><span>Engineering Student</span></span>
           <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="qumenu">
@@ -144,11 +144,11 @@
       <article class="card pad mapped">
         <div class="card-title">Skills Mapped to This Competency <span class="info">i</span></div>
         <div class="sub">This competency is demonstrated through the following skills.</div>
-        <div class="skill-row"><span class="skill-icon blue-bg"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="6"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></span><span class="skill-name">System Analysis</span><span class="level-pill lp-blue">Level 3</span></div>
-        <div class="skill-row"><span class="skill-icon teal-bg"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="16" r="3"/><path d="M10.5 10.5l3 3"/></svg></span><span class="skill-name">Interconnections</span><span class="level-pill lp-green">Level 3</span></div>
-        <div class="skill-row"><span class="skill-icon orange-bg"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3v7M12 14v7M8 10h8"/></svg></span><span class="skill-name">Root Cause Evaluation</span><span class="level-pill lp-orange">Level 2</span></div>
-        <div class="skill-row"><span class="skill-icon cyan-bg"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M5 5l14 14M19 5L5 19"/></svg></span><span class="skill-name">Evidence-based Decision Making</span><span class="level-pill lp-cyan">Level 3</span></div>
-        <div class="skill-row"><span class="skill-icon purple-bg"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3v18M5 8h14M7 16h10"/></svg></span><span class="skill-name">Solution Impact Assessment</span><span class="level-pill lp-purple">Level 2</span></div>
+        <div class="skill-row"><span class="skill-icon blue-bg"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="6"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></span><span class="skill-name">System Analysis</span></div>
+        <div class="skill-row"><span class="skill-icon teal-bg"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="16" r="3"/><path d="M10.5 10.5l3 3"/></svg></span><span class="skill-name">Interconnections</span></div>
+        <div class="skill-row"><span class="skill-icon orange-bg"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3v7M12 14v7M8 10h8"/></svg></span><span class="skill-name">Root Cause Evaluation</span></div>
+        <div class="skill-row"><span class="skill-icon cyan-bg"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M5 5l14 14M19 5L5 19"/></svg></span><span class="skill-name">Evidence-based Decision Making</span></div>
+        <div class="skill-row"><span class="skill-icon purple-bg"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3v18M5 8h14M7 16h10"/></svg></span><span class="skill-name">Solution Impact Assessment</span></div>
         <div class="link green mapped-link">View all mapped skills <span class="arrow">→</span></div>
       </article>
 
@@ -263,7 +263,6 @@
 </div>
 
 <script>
-try{const n=localStorage.getItem('qfName');if(n)document.getElementById('qUserName').textContent=n}catch(e){}
 function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
 function logout(){try{localStorage.removeItem('qfLoggedIn');localStorage.removeItem('qfName')}catch(e){}window.location.href='../Home/student.html'}
 

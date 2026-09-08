@@ -63,12 +63,6 @@
 .sk-scope .cyan-bg{background:#18a5aa}
 .sk-scope .purple-bg{background:#9563d7}
 .sk-scope .skill-name{font-size:12px;font-weight:650;flex:1;color:#0e2847}
-.sk-scope .level-pill{font-size:12px;font-weight:700;padding:5px 9px;border-radius:6px}
-.sk-scope .lp-blue{background:#dcecff;color:#0b66c4}
-.sk-scope .lp-green{background:#d9f4e9;color:#07815e}
-.sk-scope .lp-orange{background:#ffe6d4;color:#e66a00}
-.sk-scope .lp-cyan{background:#dff4f4;color:#0a8b90}
-.sk-scope .lp-purple{background:#eee3fa;color:#8051c1}
 .sk-scope .mapped-link{margin-top:9px}
 .sk-scope .badge-card{height:310px}
 .sk-scope .badge-body{display:flex;align-items:center;gap:20px;margin-top:18px}

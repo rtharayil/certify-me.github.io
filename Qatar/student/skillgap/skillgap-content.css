@@ -9,7 +9,7 @@
 .qsg-scope .analysis-note{width:317px;height:89px;border:1px solid #e0e7eb;border-radius:16px;display:flex;align-items:center;gap:15px;padding:15px;box-shadow:0 2px 8px #0b2b4509;font-size:13px;line-height:16px;color:#263a50}
 .qsg-scope .round-icon{width:49px;height:49px;border-radius:50%;background:#e4f7ef;display:flex;align-items:center;justify-content:center;flex:none}
 .qsg-scope .trend:before{content:"↗";color:#07955d;font-size:26px;font-weight:600;line-height:1}
-.qsg-scope .main-grid{display:grid;grid-template-columns:minmax(0,1fr) 395px;gap:28px}
+.qsg-scope .main-grid{display:grid;grid-template-columns:minmax(0,65fr) minmax(0,35fr);gap:28px}
 .qsg-scope .left-column{min-width:0}
 .qsg-scope .card{background:#fff;border:1px solid #e4e9ed;border-radius:16px;box-shadow:0 2px 12px #0b2b4508}
 .qsg-scope .overview-card{overflow:hidden}
@@ -75,7 +75,7 @@
 .qsg-scope .solid-line,
 .qsg-scope .dashed-line{display:inline-block;width:37px;border-top:3px solid #15975f;margin:0 12px 2px 0}
 .qsg-scope .dashed-line{border-top:2px dashed #1768ff}
-.qsg-scope .radar{display:block;width:100%;max-width:355px;height:auto;margin:10px auto 0}
+.qsg-scope .radar{display:block;width:100%;max-width:580px;height:auto;margin:10px auto 0}
 .qsg-scope .focus-box{border:1px solid #dce9e7;background:#f4fbf9;border-radius:13px;min-height:46px;display:flex;align-items:center;gap:13px;padding:9px 14px;font-size:13px;line-height:16px;color:#46586d;margin-top:14px}
 .qsg-scope .focus-bulb{width:23px;height:23px;border:1.5px solid #15975f;border-radius:50%;position:relative;flex:none}
 .qsg-scope .focus-bulb:after{content:"";position:absolute;width:9px;height:12px;border-bottom:1.5px solid #15975f;left:8px;bottom:-6px}
@@ -127,7 +127,6 @@
 .qsg-scope .steps-card small{display:block;font-size:12px;color:#6a7788;margin-top:7px}
 .qsg-scope .right-arrow{font-size:32px;color:#142c45}
 @media(max-width:1400px){
-.qsg-scope .main-grid{grid-template-columns:minmax(0,1fr) 340px}
 .qsg-scope .analysis-note{display:none}
 .qsg-scope .table-head,
 .qsg-scope .competency{grid-template-columns:minmax(120px,1fr) 125px 80px 55px}

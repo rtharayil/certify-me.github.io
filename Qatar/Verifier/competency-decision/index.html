@@ -12,6 +12,11 @@
 <link rel="stylesheet" href="competency-decision.css">
 </head>
 <body class="dm">
+<script>/* Reached right after Approve on Review Evidence: this is just the next
+   screen in that same flow, not a real section of its own, so no sidebar
+   at all here. Set the flag before the sidebar markup below even paints,
+   so there's no flash of it appearing then disappearing. */
+if(new URLSearchParams(location.search).get('ctx')==='review')document.body.classList.add('qf-no-sidebar');</script>
 <div class="toast" id="toast"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span id="toastMsg"></span></div>
 
 <div id="dw" class="active">
@@ -25,10 +30,8 @@
   <nav class="qsb-nav">
     <button class="qnav" data-view="dashboard">
       <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Dashboard</button>
-    <button class="qnav" data-view="workspace">
-      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>Review Evidence</button>
-    <button class="qnav active" data-view="records">
-      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><path d="m9.5 13 2 2 3.5-3.5"/></svg>Verified Evidence</button>
+    <button class="qnav active" data-view="workspace">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>Review Manager</button>
     <button class="qnav" data-view="students">
       <svg viewBox="0 0 24 24"><path d="M4 19V9M9 19V5M14 19v-8M19 19V3"/></svg>History</button>
     <button class="qnav" data-view="settings">
@@ -211,7 +214,7 @@
             </div>
 
             <div class="cd-issue-actions">
-              <button class="cd-issue-btn" onclick="st('Digital credential issued')"><svg viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M8.5 13.5 7 21l5-2 5 2-1.5-7.5"/></svg>Issue Digital Credential</button>
+              <button class="cd-issue-btn" onclick="st('Redirecting to View Page Of credential')"><svg viewBox="0 0 24 24"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M8.5 13.5 7 21l5-2 5 2-1.5-7.5"/></svg>View Your Digital Credential</button>
               <button class="cd-preview-btn" onclick="st('Preview coming soon')"><svg viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg>Preview</button>
             </div>
           </div>
@@ -300,23 +303,12 @@
 function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
 function logout(){st('Sign out coming soon')}
 
-/* This screen is reachable two ways: a normal click on "Verified Evidence"
-   (highlight that, as usual), or landing here right after Approve on
-   Review Evidence (highlight "Review Evidence" instead, since this is
-   just the next screen in that same flow, not a jump to a new section).
-   The URL flag is the only thing that tells the two apart. */
-if(new URLSearchParams(location.search).get('ctx')==='review'){
-  document.querySelector('.qnav[data-view="records"]').classList.remove('active');
-  document.querySelector('.qnav[data-view="workspace"]').classList.add('active');
-}
-
 document.querySelectorAll('.qsb-nav .qnav, .qsb-help .qnav').forEach(b=>{
   b.addEventListener('click',function(){
     const v=this.dataset.view;
     if(!v||this.classList.contains('active'))return;
     document.getElementById('qsb').classList.remove('open');
     if(v==='dashboard'){window.location.href='../dashboard/dashboard.html';return}
-    if(v==='records'){window.location.href='../competency-decision/index.html';return}
     if(v==='workspace'){window.location.href='../evidence-review/index.html';return}
     if(v==='students'){window.location.href='../history/index.html';return}
     st(this.textContent.trim()+' — coming soon');

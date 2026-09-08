@@ -74,7 +74,7 @@
       <div class="quser" id="quser">
         <button type="button" class="quser-trigger" onclick="document.getElementById('quser').classList.toggle('open')">
           <span class="qava" id="qAvatar"><img src="../../Assets/sara-profile-photo.png" alt=""></span>
-          <span class="qui"><b id="qUserName">Sara Al Mansoori</b><span>Engineering Student</span></span>
+          <span class="qui"><b id="qUserName">Sara Al-Mansoori</b><span>Engineering Student</span></span>
           <svg class="qchev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="qumenu">
@@ -309,7 +309,6 @@
 </div>
 
 <script>
-try{const n=localStorage.getItem('qfName');if(n)document.getElementById('qUserName').textContent=n}catch(e){}
 function st(m){document.getElementById('toastMsg').textContent=m;document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)}
 function logout(){try{localStorage.removeItem('qfLoggedIn');localStorage.removeItem('qfName')}catch(e){}window.location.href='../Home/student.html'}
 
