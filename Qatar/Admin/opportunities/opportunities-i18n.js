@@ -41,7 +41,7 @@
 
     opp1Name: { en: 'QF Sustainability Challenge', ar: 'تحدي مؤسسة قطر للاستدامة' },
     tagRecommended: { en: 'RECOMMENDED', ar: 'موصى به' },
-    org1: { en: 'Hamad Bin Khalifa<br>University', ar: 'جامعة حمد بن<br>خليفة' },
+    org1: { en: 'Qatar<br>University', ar: 'جامعة<br>قطر' },
     catCompetition: { en: 'Competition', ar: 'مسابقة' },
     statusActive: { en: 'Active', ar: 'نشط' },
     date20250620: { en: '20 Jun 2025', ar: '20 يونيو 2025' },

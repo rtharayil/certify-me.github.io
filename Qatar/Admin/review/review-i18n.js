@@ -47,7 +47,7 @@
     opp2Name: { en: 'QF Sustainability Challenge', ar: 'تحدي مؤسسة قطر للاستدامة' },
     opp2Comp: { en: 'Systems Thinking', ar: 'التفكير المنظومي' },
     student2Name: { en: 'Sara Al Mansoori', ar: 'سارة المنصوري' },
-    org2: { en: 'Hamad Bin Khalifa<br>University', ar: 'جامعة حمد بن<br>خليفة' },
+    org2: { en: 'Qatar<br>University', ar: 'جامعة<br>قطر' },
     sub2Date: { en: '01 May 2025<br>03:22 PM', ar: '01 مايو 2025<br>03:22 م' },
     priorityMedium: { en: 'Medium', ar: 'متوسطة' },
     due2: { en: '06 May 2025<br><span class="due-orange">(3 days left)</span>', ar: '06 مايو 2025<br><span class="due-orange">(يتبقى 3 أيام)</span>' },

@@ -41,4 +41,21 @@
       toast('This is a preview — action not yet available');
     });
   });
+
+  /* Keep "Select Taxonomy" the same height as "Map to Your Competency"
+     (not the taller Current Mappings / Skill Information column) so the
+     taxonomy tree fills the extra room instead of leaving it blank, and
+     scrolls internally once it no longer fits. */
+  var leftCard = document.querySelector('.left-card');
+  var midCard = document.querySelector('.mid-card');
+  function syncLeftCardHeight() {
+    if (!leftCard || !midCard) return;
+    leftCard.style.height = '';
+    if (window.innerWidth > 980) {
+      leftCard.style.height = midCard.offsetHeight + 'px';
+    }
+  }
+  window.addEventListener('load', syncLeftCardHeight);
+  window.addEventListener('resize', syncLeftCardHeight);
+  syncLeftCardHeight();
 })();

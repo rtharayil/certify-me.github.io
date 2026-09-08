@@ -3,58 +3,59 @@
    font scale and card conventions matched to the other Admin
    sections instead of the reference mockup's own blue/Inter styling. */
 
-.adm-assigncomp-scope{font-size:12px;color:#0d2347;padding-bottom:26px}
+.adm-assigncomp-scope{font-size:14px;color:#0d2347;padding-bottom:26px}
 .adm-assigncomp-scope{--navy:#0b2348;--green:#006b58;--green2:#008b72;--line:#e4eaf0;--muted:#5c6b84;--soft:#f7fafb;--blue:#2475d9}
 
 .adm-assigncomp-scope .title-row{display:flex;align-items:flex-start}
 .adm-assigncomp-scope h1{font-size:30px;line-height:1.15;margin:0;color:#0b2348;letter-spacing:-.4px}
 .adm-assigncomp-scope .subtitle{font-size:16px;line-height:1.5;margin-top:7px;color:#34496a;max-width:640px}
 .adm-assigncomp-scope .title-actions{margin-left:auto;display:flex;gap:12px;padding-top:2px}
-.adm-assigncomp-scope .btn{height:36px;border:1px solid #dfe6ec;border-radius:7px;background:#fff;color:#11294c;padding:0 16px;font-weight:650;display:inline-flex;align-items:center;gap:9px;font-size:10.5px;cursor:pointer}
+.adm-assigncomp-scope .btn{height:38px;border:1px solid #dfe6ec;border-radius:7px;background:#fff;color:#11294c;padding:0 16px;font-weight:650;display:inline-flex;align-items:center;gap:9px;font-size:13px;cursor:pointer;white-space:nowrap}
 .adm-assigncomp-scope .btn svg{width:15px;height:15px;color:#334a6c;flex:none}
 
-.adm-assigncomp-scope .steps{height:58px;border:1px solid var(--line);border-radius:8px;margin-top:16px;display:grid;grid-template-columns:1.08fr 1.06fr 1fr 1fr 1fr;overflow:hidden}
-.adm-assigncomp-scope .step{display:flex;align-items:center;padding:0 13px;gap:12px;border-right:1px solid var(--line);cursor:pointer}
+.adm-assigncomp-scope .steps{min-height:68px;border:1px solid var(--line);border-radius:8px;margin-top:16px;display:grid;grid-template-columns:1.08fr 1.06fr 1fr 1fr 1fr;overflow:hidden}
+.adm-assigncomp-scope .step{display:flex;align-items:center;padding:0 16px;gap:13px;border-right:1px solid var(--line);cursor:pointer;min-width:0}
+.adm-assigncomp-scope .step>div:last-child{min-width:0}
 .adm-assigncomp-scope .step:last-child{border-right:0}
 .adm-assigncomp-scope .step.active{background:linear-gradient(90deg,#e6f7f4,#eefbf9);cursor:default}
-.adm-assigncomp-scope .num{width:32px;height:32px;border-radius:50%;border:1px solid #dce5f2;background:#f8faff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#334a6c;flex:none}
+.adm-assigncomp-scope .num{width:38px;height:38px;border-radius:50%;border:1px solid #dce5f2;background:#f8faff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;color:#334a6c;flex:none}
 .adm-assigncomp-scope .step.active .num{background:#00775f;color:#fff;border-color:#00775f}
 .adm-assigncomp-scope .step.done .num{background:#dff5ef;color:#00775f;border-color:#dff5ef}
-.adm-assigncomp-scope .step.done .num svg{width:16px;height:16px}
-.adm-assigncomp-scope .step-title{font-size:10.5px;font-weight:700;color:#233a5e;line-height:14px}
+.adm-assigncomp-scope .step.done .num svg{width:18px;height:18px}
+.adm-assigncomp-scope .step-title{font-size:15px;font-weight:700;color:#233a5e;line-height:18px}
 .adm-assigncomp-scope .step.active .step-title{color:#00584a}
-.adm-assigncomp-scope .step-sub{font-size:9px;color:#5c6b84;margin-top:2px;white-space:nowrap}
+.adm-assigncomp-scope .step-sub{font-size:14px;color:#5c6b84;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 .adm-assigncomp-scope .workspace{display:grid;grid-template-columns:minmax(0,2.23fr) minmax(300px,1fr);gap:12px;align-items:start;margin-top:12px}
 .adm-assigncomp-scope .left-work{min-width:0}
 .adm-assigncomp-scope .section-head{padding:2px 0 12px}
 .adm-assigncomp-scope .section-head h2{margin:0 0 4px;font-size:16px;font-weight:700;color:#0b2348}
-.adm-assigncomp-scope .section-head p{margin:0;color:#5c6b84;font-size:10.5px}
+.adm-assigncomp-scope .section-head p{margin:0;color:#5c6b84;font-size:13.5px}
 
 .adm-assigncomp-scope .panels{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:10px;align-items:start}
 .adm-assigncomp-scope .panel{border:1px solid var(--line);border-radius:9px;background:#fff;box-shadow:0 1px 2px rgba(20,45,70,.025);min-height:600px;min-width:0}
 .adm-assigncomp-scope .panel-inner{padding:13px 14px}
 .adm-assigncomp-scope .panel-title-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:11px}
 .adm-assigncomp-scope .panel-title{font-size:16px;font-weight:700;color:#0b2348;letter-spacing:-.2px}
-.adm-assigncomp-scope .link{color:#0872ce;font-size:10px;font-weight:650;cursor:pointer}
-.adm-assigncomp-scope .field-search{height:31px;border:1px solid #dce4ec;border-radius:6px;display:flex;align-items:center;padding:0 10px;gap:8px;color:#5c6b84}
+.adm-assigncomp-scope .link{color:#0872ce;font-size:13px;font-weight:650;cursor:pointer}
+.adm-assigncomp-scope .field-search{height:34px;border:1px solid #dce4ec;border-radius:6px;display:flex;align-items:center;padding:0 10px;gap:8px;color:#5c6b84}
 .adm-assigncomp-scope .field-search svg{width:14px;height:14px;color:#334a6c;flex:none}
-.adm-assigncomp-scope .field-search span{font-size:10px}
+.adm-assigncomp-scope .field-search span{font-size:13.5px}
 .adm-assigncomp-scope .filters{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:9px}
-.adm-assigncomp-scope select{appearance:none;-webkit-appearance:none;width:100%;height:31px;border:1px solid #dce4ec;border-radius:6px;padding:0 20px 0 10px;color:#172d50;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5' fill='none' stroke='%235c6b84' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 8px center;font-size:10px;font-family:inherit;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+.adm-assigncomp-scope select{appearance:none;-webkit-appearance:none;width:100%;height:34px;border:1px solid #dce4ec;border-radius:6px;padding:0 20px 0 10px;color:#172d50;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5' fill='none' stroke='%235c6b84' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 8px center;font-size:13px;font-family:inherit;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
 
 .adm-assigncomp-scope .competency-list{margin-top:11px;height:495px;overflow-y:auto;padding-right:4px}
 .adm-assigncomp-scope .competency-list::-webkit-scrollbar{width:6px}
 .adm-assigncomp-scope .competency-list::-webkit-scrollbar-track{background:#f1f5fb;border-radius:8px}
 .adm-assigncomp-scope .competency-list::-webkit-scrollbar-thumb{background:#c3ceda;border-radius:8px}
-.adm-assigncomp-scope .comp-row{min-height:63px;padding:8px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:36px minmax(0,1fr) 78px 52px 32px;align-items:center;gap:7px}
+.adm-assigncomp-scope .comp-row{min-height:63px;padding:8px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:36px minmax(0,1fr) 92px 60px 32px;align-items:center;gap:7px}
 .adm-assigncomp-scope .comp-icon{width:32px;height:32px;border-radius:9px;display:flex;align-items:center;justify-content:center;color:#fff;flex:none;overflow:hidden}
 .adm-assigncomp-scope .comp-icon svg{width:17px;height:17px}
 .adm-assigncomp-scope .comp-icon.img-icon img{width:100%;height:100%;object-fit:contain}
-.adm-assigncomp-scope .comp-name{font-size:10.5px;font-weight:700;color:#0b2348;line-height:13px}
-.adm-assigncomp-scope .comp-desc{font-size:9px;color:#5c6b84;line-height:12px;margin-top:2px}
-.adm-assigncomp-scope .domain{font-size:9px;color:#334a6c;line-height:12px}
-.adm-assigncomp-scope .level-chip{justify-self:start;background:#e9f2ff;color:#164bd0;padding:4px 6px;border-radius:4px;font-size:9px;white-space:nowrap}
+.adm-assigncomp-scope .comp-name{font-size:13.5px;font-weight:700;color:#0b2348;line-height:16px}
+.adm-assigncomp-scope .comp-desc{font-size:13.5px;color:#5c6b84;line-height:14px;margin-top:2px}
+.adm-assigncomp-scope .domain{font-size:13.5px;color:#334a6c;line-height:14px}
+.adm-assigncomp-scope .level-chip{justify-self:start;background:#e9f2ff;color:#164bd0;padding:4px 6px;border-radius:4px;font-size:13.5px;white-space:nowrap}
 .adm-assigncomp-scope .add{width:28px;height:28px;border:1px solid #dce4ec;border-radius:6px;background:#fff;display:flex;align-items:center;justify-content:center;color:#0561ec;cursor:pointer;justify-self:end}
 .adm-assigncomp-scope .add svg{width:16px;height:16px}
 
@@ -65,14 +66,14 @@
 .adm-assigncomp-scope .selected-row .comp-icon{grid-area:icon;width:36px;height:36px;align-self:start}
 .adm-assigncomp-scope .selected-row>div:nth-child(3){grid-area:name;min-width:0}
 .adm-assigncomp-scope .selected-row>div:nth-child(4){grid-area:level;min-width:0;max-width:260px}
-.adm-assigncomp-scope .selected-name{font-size:10.5px;font-weight:700;color:#0b2348;line-height:14px}
-.adm-assigncomp-scope .selected-domain{font-size:9px;color:#334a6c;line-height:12px;margin-top:3px}
-.adm-assigncomp-scope .pro-label{font-size:9px;color:#5c6b84;margin-bottom:4px}
-.adm-assigncomp-scope .selected-row select{height:31px;font-size:9.5px}
+.adm-assigncomp-scope .selected-name{font-size:13px;font-weight:700;color:#0b2348;line-height:16px}
+.adm-assigncomp-scope .selected-domain{font-size:13.5px;color:#334a6c;line-height:15px;margin-top:3px}
+.adm-assigncomp-scope .pro-label{font-size:13.5px;color:#5c6b84;margin-bottom:4px}
+.adm-assigncomp-scope .selected-row select{height:34px;font-size:13px}
 .adm-assigncomp-scope .delete{position:absolute;bottom:12px;right:14px;color:#e0474d;width:26px;height:26px;border-radius:6px;display:flex;align-items:center;justify-content:center;cursor:pointer}
 .adm-assigncomp-scope .delete:hover{background:#fdecec}
 .adm-assigncomp-scope .delete svg{width:15px;height:15px}
-.adm-assigncomp-scope .info{margin-top:14px;border:1px solid #d7e7f7;background:#f4f8ff;border-radius:6px;padding:10px 11px;display:flex;gap:9px;color:#334a6c;font-size:9.5px;line-height:14px}
+.adm-assigncomp-scope .info{margin-top:14px;border:1px solid #d7e7f7;background:#f4f8ff;border-radius:6px;padding:10px 11px;display:flex;gap:9px;color:#334a6c;font-size:13px;line-height:16px}
 .adm-assigncomp-scope .info svg{width:16px;height:16px;color:#2475d9;flex:none}
 
 .adm-assigncomp-scope .preview-card,.adm-assigncomp-scope .summary-card{border:1px solid var(--line);border-radius:9px;background:#fff;box-shadow:0 1px 2px rgba(20,45,70,.025)}
@@ -80,46 +81,47 @@
 .adm-assigncomp-scope .summary-card{margin-top:12px;padding:13px 14px}
 .adm-assigncomp-scope .rail-title-row{display:flex;justify-content:space-between;align-items:center}
 .adm-assigncomp-scope .rail-title{font-size:16px;font-weight:700;color:#0b2348;letter-spacing:-.2px}
-.adm-assigncomp-scope .edit{display:flex;align-items:center;gap:5px;color:#0872ce;font-size:9.5px;font-weight:650;cursor:pointer}
+.adm-assigncomp-scope .edit{display:flex;align-items:center;gap:5px;color:#0872ce;font-size:13px;font-weight:650;cursor:pointer;white-space:nowrap}
 .adm-assigncomp-scope .edit svg{width:12px;height:12px}
 .adm-assigncomp-scope .preview-inner{margin-top:10px;border-radius:8px;background:linear-gradient(135deg,#e8f8f6,#f4f8ff);border:1px solid var(--line);padding:10px 10px 9px}
-.adm-assigncomp-scope .preview-top{display:grid;grid-template-columns:48px 1fr;gap:9px}
+.adm-assigncomp-scope .preview-top{display:grid;grid-template-columns:48px minmax(0,1fr);gap:9px}
 .adm-assigncomp-scope .leafbox{width:48px;height:48px;background:#dff4ef;border-radius:8px;display:flex;align-items:center;justify-content:center;flex:none}
 .adm-assigncomp-scope .leafbox svg{width:26px;height:26px;color:#00775f}
-.adm-assigncomp-scope .preview-name{font-size:11.5px;font-weight:700;color:#0b2348;line-height:1.2;margin-top:1px}
-.adm-assigncomp-scope .meta{display:flex;align-items:center;flex-wrap:wrap;row-gap:3px;gap:6px;margin-top:6px;font-size:9.5px;color:#334a6c}
+.adm-assigncomp-scope .preview-name{font-size:13.5px;font-weight:700;color:#0b2348;line-height:1.25;margin-top:1px}
+.adm-assigncomp-scope .meta{display:flex;align-items:center;flex-wrap:wrap;row-gap:3px;gap:6px;margin-top:6px;font-size:13px;color:#334a6c}
 .adm-assigncomp-scope .meta svg{width:12px;height:12px;color:#5c6b84;flex:none}
 .adm-assigncomp-scope .meta .sep{color:#a3adc2}
-.adm-assigncomp-scope .preview-date{margin-top:6px;display:flex;gap:6px;align-items:center;font-size:9.5px;color:#334a6c}
+.adm-assigncomp-scope .preview-date{margin-top:6px;display:flex;gap:6px;align-items:center;font-size:13px;color:#334a6c}
 .adm-assigncomp-scope .preview-date svg{width:12px;height:12px;color:#2475d9;flex:none}
-.adm-assigncomp-scope .preview-desc{font-size:10.5px;color:#334a6c;line-height:1.4;margin-top:9px}
+.adm-assigncomp-scope .preview-desc{font-size:13.5px;color:#334a6c;line-height:1.45;margin-top:9px}
 .adm-assigncomp-scope .tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:9px}
-.adm-assigncomp-scope .tag{font-size:9px;background:#eaf1fb;color:#1d4f9c;border-radius:8px;padding:4px 8px;font-weight:600;white-space:nowrap}
+.adm-assigncomp-scope .tag{font-size:13.5px;background:#eaf1fb;color:#1d4f9c;border-radius:8px;padding:4px 8px;font-weight:600;white-space:nowrap}
 
 .adm-assigncomp-scope .chart-title{font-size:16px;font-weight:700;color:#0b2348}
-.adm-assigncomp-scope .donut-area{height:110px;display:grid;grid-template-columns:112px 1fr;align-items:center;margin-top:4px}
-.adm-assigncomp-scope .donut{width:100px;height:100px;border-radius:50%;background:conic-gradient(#1a78df 0 25%,#15986e 25% 50%,#9951db 50% 75%,#dfe6f2 75%);position:relative}
-.adm-assigncomp-scope .donut:after{content:"";position:absolute;inset:17px;border-radius:50%;background:#fff}
+.adm-assigncomp-scope .donut-area{min-height:136px;display:grid;grid-template-columns:132px minmax(0,1fr);align-items:center;margin-top:4px;gap:16px}
+.adm-assigncomp-scope .donut{width:128px;height:128px;border-radius:50%;background:conic-gradient(#1a78df 0 25%,#15986e 25% 50%,#9951db 50% 75%,#dfe6f2 75%);position:relative}
+.adm-assigncomp-scope .donut:after{content:"";position:absolute;inset:21px;border-radius:50%;background:#fff}
 .adm-assigncomp-scope .donut-center{position:absolute;z-index:2;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#0b2348}
-.adm-assigncomp-scope .donut-center strong{font-size:15px;line-height:17px}
-.adm-assigncomp-scope .donut-center span{font-size:8px;color:#5c6b84}
-.adm-assigncomp-scope .legend{display:flex;flex-direction:column;gap:8px;padding-left:4px}
-.adm-assigncomp-scope .legend-row{display:grid;grid-template-columns:8px 1fr 10px;align-items:center;gap:7px;font-size:9px;color:#334a6c}
+.adm-assigncomp-scope .donut-center strong{font-size:21px;line-height:1.15}
+.adm-assigncomp-scope .donut-center span{font-size:13px;color:#5c6b84}
+.adm-assigncomp-scope .legend{display:flex;flex-direction:column;gap:8px;min-width:0}
+.adm-assigncomp-scope .legend-row{display:grid;grid-template-columns:8px minmax(0,1fr) auto;align-items:center;gap:7px;font-size:13.5px;color:#334a6c}
+.adm-assigncomp-scope .legend-row>span:nth-child(2){overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 .adm-assigncomp-scope .dot{width:7px;height:7px;border-radius:50%}
 .adm-assigncomp-scope .d-blue{background:#1a78df}.adm-assigncomp-scope .d-green{background:#15986e}.adm-assigncomp-scope .d-purple{background:#9951db}.adm-assigncomp-scope .d-orange{background:#ff8b18}
 .adm-assigncomp-scope .divider{border-top:1px solid var(--line);margin-top:12px}
 .adm-assigncomp-scope .bar-title{font-size:14px;font-weight:700;color:#0b2348;margin-top:13px}
-.adm-assigncomp-scope .bars{height:105px;margin-top:8px;display:flex;align-items:flex-end;justify-content:space-around;border-bottom:1px solid var(--line);padding:0 2px}
-.adm-assigncomp-scope .bar-col{height:100%;width:56px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}
-.adm-assigncomp-scope .bar-value{font-size:10.5px;font-weight:700;color:#0b2348;margin-bottom:7px}
+.adm-assigncomp-scope .bars{min-height:105px;margin-top:8px;display:flex;align-items:flex-end;justify-content:space-around;border-bottom:1px solid var(--line);padding:0 2px}
+.adm-assigncomp-scope .bar-col{height:100%;width:80px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}
+.adm-assigncomp-scope .bar-value{font-size:13.5px;font-weight:700;color:#0b2348;margin-bottom:7px}
 .adm-assigncomp-scope .bar{width:24px;border-radius:4px 4px 0 0}
 .adm-assigncomp-scope .bar.l3{height:48px;background:#35a780}.adm-assigncomp-scope .bar.l2{height:48px;background:#7fb1f4}.adm-assigncomp-scope .bar.l1{height:0}
-.adm-assigncomp-scope .bar-label{font-size:8px;color:#5c6b84;text-align:center;line-height:11px;margin-top:7px;white-space:nowrap}
+.adm-assigncomp-scope .bar-label{font-size:12px;color:#5c6b84;text-align:center;line-height:1.35;margin-top:7px;white-space:nowrap}
 
 .adm-assigncomp-scope .bottom{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
-.adm-assigncomp-scope .back{height:38px;min-width:96px;padding:0 14px;background:#fff;border:1px solid var(--line);border-radius:6px;color:#172d50;font-weight:700;font-size:11px;display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.adm-assigncomp-scope .back{height:40px;min-width:96px;padding:0 14px;background:#fff;border:1px solid var(--line);border-radius:6px;color:#172d50;font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:8px;cursor:pointer;white-space:nowrap}
 .adm-assigncomp-scope .back svg{width:14px;height:14px}
-.adm-assigncomp-scope .next{height:38px;min-width:225px;border:0;border-radius:6px;background:#00775f;color:#fff;font-weight:700;font-size:11px;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:0 18px;cursor:pointer}
+.adm-assigncomp-scope .next{height:40px;min-width:225px;border:0;border-radius:6px;background:#00775f;color:#fff;font-weight:700;font-size:13px;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:0 18px;cursor:pointer;white-space:nowrap}
 .adm-assigncomp-scope .next svg{width:15px;height:15px}
 
 @media(max-width:1250px){
