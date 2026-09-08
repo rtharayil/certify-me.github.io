@@ -56,6 +56,11 @@
 .opp-scope .hex.badge-img{width:41px;height:54px;clip-path:none;background:none}
 .opp-scope .hex.badge-img img{width:100%;height:100%;object-fit:contain;display:block}
 .opp-scope .comp-name{font-size:13px;font-weight:700;color:#142239;white-space:nowrap}
+.opp-scope .comp-skills-label{font-size:10px;font-weight:700;color:#98a4b3;text-transform:uppercase;letter-spacing:.02em;margin-top:5px}
+.opp-scope .comp-skills{list-style:disc;display:flex;flex-direction:column;gap:2px;margin:3px 0 0;padding-left:14px}
+.opp-scope .comp-skills li{font-size:10.5px;font-weight:500;color:#6b7a8d;line-height:1.4}
+.opp-scope .comp-skills li::marker{color:#c2cbd6}
+.opp-scope .comp-skills i{font-style:normal;color:#98a4b3}
 .opp-scope .tag{display:inline-block;margin-top:7px;padding:6px 9px;border-radius:5px;font-size:10px;background:#e2f4ed;color:#07835d;white-space:nowrap}
 .opp-scope .tag.blue{background:#e5f1ff;color:#0b70cc}
 .opp-scope .tag.purple{background:#eee8fa;color:#6847a5}
