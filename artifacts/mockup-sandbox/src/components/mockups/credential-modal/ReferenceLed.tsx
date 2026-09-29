@@ -1,94 +1,187 @@
-import { useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import modalHtml from '../../../../../../_includes/V4NewLook/credentialSampleModal.html?raw';
+import certificate from '../../../../../../assets4/images/asterford-certificate.svg';
+import qr from '../../../../../../assets4/images/asterford-demo-qr.svg';
+import barcode from '../../../../../../assets4/images/asterford-demo-barcode.svg';
 import './_group.css';
 
-const labels = ['Open Badges 3.0 Verified', 'Skill Taxonomy Map', 'Live Job Market Matches'];
+const jobs = {
+  analyst: ['Insights Analyst', 'Transforms messy data into useful reports for cross-functional teams.', 'Data Analytics · Evidence-based decisions', 'Data visualization'],
+  coordinator: ['Program Coordinator', 'Coordinates timelines, stakeholders, and programme delivery.', 'Project Management · Stakeholder coordination', 'Budget planning'],
+} as const;
+type Job = keyof typeof jobs;
 
 export function ReferenceLed() {
-  const [active, setActive] = useState(0);
   const [open, setOpen] = useState(true);
-  return (
-    <div className="credential-preview-stage">
-      {!open && <button type="button" onClick={() => setOpen(true)} style={{ margin: 32, padding: 16 }}>View Live Sample Credential</button>}
-      <div className="credential-modal credential-reference" role="dialog" aria-modal="true" aria-labelledby="credential-modal-title" hidden={!open}>
-        <div className="credential-modal__backdrop" onClick={() => setOpen(false)} />
-        <div className="credential-modal__panel">
-          <header className="credential-modal__header">
-            <div className="credential-reference__brand">
-              <span className="credential-reference__mark" aria-hidden="true">✓</span>
-              <div><span className="credential-reference__brand-name">CertifyMe</span><span className="credential-reference__brand-caption">Credential verification preview</span></div>
-            </div>
-            <button type="button" className="credential-modal__close" aria-label="Close sample credential" onClick={() => setOpen(false)}>×</button>
-          </header>
-          <div className="credential-reference__intro">
-            <span className="credential-reference__eyebrow">THE CREDENTIAL EXPERIENCE</span>
-            <h2 id="credential-modal-title">Verified Credential <span>&amp; Skill Passport</span></h2>
-            <p>Explore a real credential presentation, then try illustrative skill and career features below.</p>
-          </div>
-          <div className="credential-reference__showcase">
-            <div className="credential-reference__details">
-              <span className="credential-reference__verified"><span aria-hidden="true">✓</span> Verified credential</span>
-              <h3>STEM.org Certified™ Master Trainer</h3>
-              <p className="credential-reference__issuer">Issued by <strong>STEM.org Educational Research™</strong></p>
-              <div className="credential-reference__holder">
-                <span className="credential-reference__avatar" aria-hidden="true">JD</span>
-                <div><small>AWARDED TO</small><strong>John Doe</strong></div>
-              </div>
-              <dl className="credential-reference__facts">
-                <div><dt>Issued on</dt><dd>28 August 2024</dd></div>
-                <div><dt>Validity</dt><dd>Does not expire</dd></div>
-              </dl>
-              <a className="credential-reference__source" href="https://verify.apac.certifyme.org/verify/9cf66b9d10644" target="_blank" rel="noreferrer">Explore this real credential <span aria-hidden="true">↗</span></a>
-            </div>
-            <figure className="credential-reference__art">
-              <div className="credential-reference__art-frame"><img src="/__mockup/images/sample-reference-credential.png" alt="STEM.org Certified Master Trainer certificate awarded to John Doe" /></div>
-              <figcaption>Actual certificate artwork from the linked verification page</figcaption>
-            </figure>
-          </div>
-          <div className="credential-reference__trust">
-            <div className="credential-reference__trust-title"><small>THIS CREDENTIAL IS</small><strong>Verified &amp; Trusted</strong></div>
-            <div><span className="credential-reference__trust-icon">♢</span><span><strong>Protected</strong><small>Securely stored</small></span></div>
-            <div><span className="credential-reference__trust-icon">✓</span><span><strong>Tamper proof</strong><small>Unaltered &amp; authentic</small></span></div>
-            <div><span className="credential-reference__trust-icon">✓</span><span><strong>Status</strong><small><i /> Active</small></span></div>
-          </div>
-          <div className="credential-reference__explore">
-            <div className="credential-reference__explore-head">
-              <div><span className="credential-reference__eyebrow">ILLUSTRATIVE PRODUCT PREVIEW</span><h3>Explore the skill passport</h3></div>
-              <p>The tabs below demonstrate possible features; they do not describe the STEM.org credential above.</p>
-            </div>
-            <div className="credential-modal__tabs" role="tablist" aria-label="Sample skill passport features">
-              {labels.map((label, index) => <button key={label} type="button" role="tab" aria-selected={active === index} tabIndex={active === index ? 0 : -1} onClick={() => setActive(index)} onKeyDown={(event) => {
-                if (event.key === 'ArrowRight') setActive((index + 1) % labels.length);
-                if (event.key === 'ArrowLeft') setActive((index + labels.length - 1) % labels.length);
-              }}>{label}</button>)}
-            </div>
-            <section className="credential-modal__content" role="tabpanel">
-              {active === 0 && <>
-                <span className="credential-modal__verified-mark">✓ Open Badges 3.0 Verified — preview</span>
-                <h3>Trust you can inspect</h3>
-                <p>An illustrative Open Badges 3.0 credential view could show issuer, achievement, and verification details in one place. The real certificate pictured above is a separate example and offers an OpenBadge 2.1 export.</p>
-                <div className="credential-modal__detail-grid"><div><small>Example issuer</small><strong>Your institution</strong></div><div><small>Example achievement</small><strong>Applied Skills Certificate</strong></div><div><small>Example status</small><strong>Active and verifiable</strong></div></div>
-              </>}
-              {active === 1 && <>
-                <span className="credential-reference__eyebrow">SAMPLE COMPETENCIES</span>
-                <h3>Skill Taxonomy Map</h3>
-                <p>Connect an illustrative credential to skills and program context that institutions choose to publish.</p>
-                <div className="credential-modal__skill-tags"><span>Data Analytics</span><span>Project Management</span><span>FERPA Compliant</span></div>
-                <p className="credential-modal__fine-print">“FERPA Compliant” is illustrative program context, not certification of this learner or the reference credential.</p>
-              </>}
-              {active === 2 && <>
-                <span className="credential-reference__eyebrow">WORKFORCE INTELLIGENCE PREVIEW</span>
-                <h3>Live Job Market Matches</h3>
-                <p>These two sample employer-skill alignments are illustrative, not live vacancies or verified endorsements.</p>
-                <div className="credential-modal__matches"><article><span>01 / Example alignment</span><h4>Data &amp; Insights Teams</h4><p>Data Analytics · Reporting · Evidence-based decisions</p></article><article><span>02 / Example alignment</span><h4>Program Operations Teams</h4><p>Project Management · Stakeholder coordination · Delivery</p></article></div>
-              </>}
-            </section>
-          </div>
-          <footer className="credential-modal__footer">
-            <div><span className="credential-reference__eyebrow">FOR YOUR INSTITUTION</span><p>Want to issue credentials like this for your institution?</p></div>
-            <a className="credential-modal__demo" href="https://info.certifyme.online/request-demo" target="_blank" rel="noreferrer">Book a Demo ↗</a>
-          </footer>
-        </div>
-      </div>
-    </div>
-  );
+  const [step, setStep] = useState(0);
+  const [paused, setPaused] = useState(() => window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  const [started, setStarted] = useState(false);
+  const [job, setJob] = useState<Job>('analyst');
+  const root = useRef<HTMLDivElement>(null);
+  const storyUrl = useMemo(() => {
+    const url = new URL('/', window.location.origin);
+    url.searchParams.set('story', 'certificate');
+    return url.href;
+  }, []);
+  const storyText = 'Explore the story behind a fictional university certificate: from an award to trust, skills, and career possibilities.';
+  // Render the actual Jekyll markup so this canvas preview stays in sync with the homepage.
+  const html = useMemo(() => modalHtml.replace(' hidden>', '>')
+    .replaceAll('/assets4/images/asterford-certificate.svg', certificate)
+    .replaceAll('/assets4/images/asterford-demo-qr.svg', qr)
+    .replaceAll('/assets4/images/asterford-demo-barcode.svg', barcode), []);
+  const modalContent = useMemo(() => <div dangerouslySetInnerHTML={{ __html: html }} />, [html]);
+
+  const scrollToTour = (showFeature = false, nextStep = step) => {
+    const panel = root.current?.querySelector<HTMLElement>('.credential-modal__panel');
+    const tour = root.current?.querySelector<HTMLElement>('[data-credential-tour]');
+    const stage = root.current?.querySelector<HTMLElement>(`[data-credential-stage="${nextStep}"]`);
+    const target = showFeature && window.innerWidth <= 650 ? stage : tour;
+    if (panel && target) panel.scrollTo({ top: target.getBoundingClientRect().top - panel.getBoundingClientRect().top + panel.scrollTop - 57, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  };
+
+  useEffect(() => {
+    if (!open) return;
+    const dialog = root.current;
+    if (!dialog) return;
+    dialog.querySelectorAll<HTMLElement>('[data-credential-stage]').forEach((stage, i) => { stage.hidden = i !== step; });
+    dialog.querySelectorAll<HTMLElement>('[data-credential-step-to]').forEach((button, i) => {
+      if (i === step) button.setAttribute('aria-current', 'step');
+      else button.removeAttribute('aria-current');
+    });
+    const strip = dialog.querySelector<HTMLElement>('.credential-tour__steps');
+    const selected = dialog.querySelector<HTMLElement>(`[data-credential-step-to="${step}"]`);
+    if (strip && selected) strip.scrollTo({
+      left: strip.scrollLeft + selected.getBoundingClientRect().left - strip.getBoundingClientRect().left - (strip.clientWidth - selected.clientWidth) / 2,
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
+    });
+    const count = dialog.querySelector<HTMLElement>('[data-credential-count]');
+    const prev = dialog.querySelector<HTMLButtonElement>('[data-credential-prev]');
+    const next = dialog.querySelector<HTMLElement>('[data-credential-forward]');
+    const pause = dialog.querySelector<HTMLElement>('[data-credential-pause]');
+    const pace = dialog.querySelector<HTMLElement>('[data-credential-pace]');
+    if (count) count.textContent = `${String(step + 1).padStart(2, '0')} / 07`;
+    if (prev) prev.disabled = step === 0;
+    if (next) next.textContent = step === 6 ? 'Replay story ↺' : 'Next scene →';
+    if (pause) { pause.textContent = paused ? '▶ Play' : 'Ⅱ Pause'; pause.setAttribute('aria-label', paused ? 'Play story' : 'Pause story'); }
+    if (pace) pace.textContent = paused ? 'You’re in control · choose any scene' : 'The story loops · click to take control';
+    dialog.querySelector('.credential-modal')?.classList.toggle('is-paused', paused);
+    const filmline = dialog.querySelector<HTMLElement>('[data-credential-filmline]');
+    if (filmline) filmline.style.animationPlayState = paused ? 'paused' : 'running';
+    const detail = jobs[job];
+    const selectors = ['[data-credential-job-title]', '[data-credential-job-description]', '[data-credential-job-skills]', '[data-credential-job-gap]'];
+    selectors.forEach((selector, i) => { const el = dialog.querySelector<HTMLElement>(selector); if (el) el.textContent = detail[i]; });
+    dialog.querySelectorAll<HTMLButtonElement>('[data-credential-job]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.credentialJob === job)));
+  }, [step, paused, job, open]);
+
+  useEffect(() => {
+    if (!open) return;
+    const filmline = root.current?.querySelector<HTMLElement>('[data-credential-filmline]');
+    if (!filmline) return;
+    filmline.style.animation = 'none';
+    void filmline.offsetWidth;
+    filmline.style.animation = `credential-scene-timer ${step === 6 ? 8500 : 6800}ms linear forwards`;
+    filmline.style.animationPlayState = paused ? 'paused' : 'running';
+  }, [open, started, step]);
+
+  useEffect(() => {
+    if (!open) return;
+    root.current?.querySelectorAll<HTMLAnchorElement>('[data-credential-social]').forEach(link => {
+      link.href = link.dataset.credentialSocial === 'linkedin'
+        ? `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(storyUrl)}`
+        : `https://twitter.com/intent/tweet?url=${encodeURIComponent(storyUrl)}&text=${encodeURIComponent(storyText)}`;
+    });
+  }, [open, storyUrl]);
+
+  useEffect(() => {
+    if (!open || paused) return;
+    const timeout = window.setTimeout(() => {
+      if (!started) { setStarted(true); scrollToTour(); }
+      else {
+        const next = (step + 1) % 7;
+        setStep(next);
+        window.setTimeout(() => scrollToTour(true, next), 0);
+      }
+    }, started ? (step === 6 ? 8500 : 6800) : 2700);
+    return () => window.clearTimeout(timeout);
+  }, [open, paused, started, step]);
+
+  const navigate = (nextStep: number) => {
+    setPaused(true);
+    setStarted(true);
+    setStep(nextStep);
+    window.setTimeout(() => scrollToTour(true, nextStep), 0);
+  };
+
+  const shareStory = async (action: string) => {
+    const status = root.current?.querySelector<HTMLElement>('[data-credential-share-status]');
+    try {
+      if (action === 'native' && navigator.share) {
+        await navigator.share({ title: 'A certificate with a story · CertifyMe sample', text: storyText, url: storyUrl });
+        if (status) status.textContent = 'Sample story shared.';
+      } else {
+        if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(storyUrl);
+        else {
+          const field = document.createElement('textarea');
+          field.value = storyUrl;
+          field.style.position = 'fixed';
+          field.style.opacity = '0';
+          document.body.appendChild(field);
+          field.select();
+          const copied = document.execCommand('copy');
+          field.remove();
+          if (!copied) throw new Error('Copy unavailable');
+        }
+        if (status) status.textContent = 'Link copied. It opens this fictional sample story.';
+      }
+    } catch (error) {
+      if (status && (!(error instanceof DOMException) || error.name !== 'AbortError')) status.textContent = 'Sharing is unavailable here. Try Copy link.';
+    }
+  };
+
+  const onClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    const target = event.target as HTMLElement;
+    if (target.closest('[data-credential-close]')) { setOpen(false); return; }
+    if (!target.closest('[data-credential-pause]')) setPaused(true);
+    const share = target.closest<HTMLElement>('[data-credential-share]');
+    if (share) { setPaused(true); void shareStory(share.dataset.credentialShare || 'copy'); return; }
+    const goto = target.closest<HTMLElement>('[data-credential-step-to]');
+    if (goto) { navigate(Number(goto.dataset.credentialStepTo)); return; }
+    if (target.closest('[data-credential-prev]')) { navigate(Math.max(step - 1, 0)); return; }
+    if (target.closest('[data-credential-forward]')) { navigate(step === 6 ? 0 : step + 1); return; }
+    if (target.closest('[data-credential-pause]')) {
+      if (paused && step === 6) { setStep(0); scrollToTour(); }
+      setStarted(true);
+      setPaused(!paused);
+      return;
+    }
+    const role = target.closest<HTMLElement>('[data-credential-job]');
+    if (role) { setJob(role.dataset.credentialJob as Job); setPaused(true); }
+  };
+
+  const onChange = (event: React.ChangeEvent<HTMLDivElement>) => {
+    const input = event.target as HTMLInputElement;
+    if (!input.matches('[data-credential-file]') || !input.files?.[0]) return;
+    setPaused(true);
+    const status = input.closest('[data-credential-drop]')?.parentElement?.querySelector('[data-credential-file-status]');
+    if (status) status.textContent = `${input.files[0].name.slice(0, 65)} selected locally · no verification performed`;
+  };
+
+  const onDrop = (event: React.DragEvent<HTMLDivElement>) => {
+    const zone = (event.target as HTMLElement).closest('[data-credential-drop]');
+    if (!zone) return;
+    event.preventDefault();
+    zone.classList.remove('is-dragging');
+    const file = event.dataTransfer.files[0];
+    if (!file) return;
+    setPaused(true);
+    const status = zone.parentElement?.querySelector('[data-credential-file-status]');
+    if (status) status.textContent = `${file.name.slice(0, 65)} selected locally · no verification performed`;
+  };
+
+  return <div className="credential-preview-stage" onClick={onClick} onChange={onChange} onDrop={onDrop}
+    onDragOver={event => { if ((event.target as HTMLElement).closest('[data-credential-drop]')) event.preventDefault(); }}
+    onKeyDown={event => { if (event.key === 'Escape') setOpen(false); else if (event.key === 'Tab') setPaused(true); }} ref={root}>
+    {!open && <button type="button" onClick={() => { setOpen(true); setStep(0); setStarted(false); setPaused(window.matchMedia('(prefers-reduced-motion: reduce)').matches); }} style={{ margin: 32, padding: 16 }}>View sample certificate tour</button>}
+    {open && modalContent}
+  </div>;
 }
