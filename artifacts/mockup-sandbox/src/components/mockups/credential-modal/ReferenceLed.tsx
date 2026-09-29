@@ -10,6 +10,7 @@ const jobs = {
   coordinator: ['Program Coordinator', 'Coordinates timelines, stakeholders, and programme delivery.', 'Project Management · Stakeholder coordination', 'Budget planning'],
 } as const;
 type Job = keyof typeof jobs;
+const STAGE_COUNT = 8;
 
 export function ReferenceLed() {
   const [open, setOpen] = useState(true);
@@ -59,9 +60,9 @@ export function ReferenceLed() {
     const next = dialog.querySelector<HTMLElement>('[data-credential-forward]');
     const pause = dialog.querySelector<HTMLElement>('[data-credential-pause]');
     const pace = dialog.querySelector<HTMLElement>('[data-credential-pace]');
-    if (count) count.textContent = `${String(step + 1).padStart(2, '0')} / 07`;
+    if (count) count.textContent = `${String(step + 1).padStart(2, '0')} / ${String(STAGE_COUNT).padStart(2, '0')}`;
     if (prev) prev.disabled = step === 0;
-    if (next) next.textContent = step === 6 ? 'Replay story ↺' : 'Next scene →';
+    if (next) next.textContent = step === STAGE_COUNT - 1 ? 'Replay story ↺' : 'Next scene →';
     if (pause) { pause.textContent = paused ? '▶ Play' : 'Ⅱ Pause'; pause.setAttribute('aria-label', paused ? 'Play story' : 'Pause story'); }
     if (pace) pace.textContent = paused ? 'You’re in control · choose any scene' : 'The story loops · click to take control';
     dialog.querySelector('.credential-modal')?.classList.toggle('is-paused', paused);
@@ -79,7 +80,7 @@ export function ReferenceLed() {
     if (!filmline) return;
     filmline.style.animation = 'none';
     void filmline.offsetWidth;
-    filmline.style.animation = `credential-scene-timer ${step === 6 ? 8500 : 6800}ms linear forwards`;
+    filmline.style.animation = `credential-scene-timer ${step === STAGE_COUNT - 1 ? 8500 : 6800}ms linear forwards`;
     filmline.style.animationPlayState = paused ? 'paused' : 'running';
   }, [open, started, step]);
 
@@ -97,11 +98,11 @@ export function ReferenceLed() {
     const timeout = window.setTimeout(() => {
       if (!started) { setStarted(true); scrollToTour(); }
       else {
-        const next = (step + 1) % 7;
+        const next = (step + 1) % STAGE_COUNT;
         setStep(next);
         window.setTimeout(() => scrollToTour(true, next), 0);
       }
-    }, started ? (step === 6 ? 8500 : 6800) : 2700);
+    }, started ? (step === STAGE_COUNT - 1 ? 8500 : 6800) : 2700);
     return () => window.clearTimeout(timeout);
   }, [open, paused, started, step]);
 
@@ -147,9 +148,9 @@ export function ReferenceLed() {
     const goto = target.closest<HTMLElement>('[data-credential-step-to]');
     if (goto) { navigate(Number(goto.dataset.credentialStepTo)); return; }
     if (target.closest('[data-credential-prev]')) { navigate(Math.max(step - 1, 0)); return; }
-    if (target.closest('[data-credential-forward]')) { navigate(step === 6 ? 0 : step + 1); return; }
+    if (target.closest('[data-credential-forward]')) { navigate(step === STAGE_COUNT - 1 ? 0 : step + 1); return; }
     if (target.closest('[data-credential-pause]')) {
-      if (paused && step === 6) { setStep(0); scrollToTour(); }
+      if (paused && step === STAGE_COUNT - 1) { setStep(0); scrollToTour(); }
       setStarted(true);
       setPaused(!paused);
       return;
