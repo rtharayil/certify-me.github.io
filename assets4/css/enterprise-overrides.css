@@ -195,13 +195,6 @@ h2.statistic-number {
   font-size: 14px;
   line-height: 1.5;
 }
-.credential-hero-image-note {
-  margin: 6px auto 0;
-  color: var(--cm-muted);
-  font-size: 11px;
-  line-height: 1.4;
-}
-
 /* Sub-text under H1 */
 .hero-7-txt p.p-lg {
   font-size: 1.0625rem !important;

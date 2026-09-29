@@ -88,7 +88,6 @@
                              alt="{{ page.HeroImageAlt | default: 'Digital credentials and skills mapping illustration' | escape }}"
                              {% if page.HeroImageWidth and page.HeroImageHeight %}width="{{ page.HeroImageWidth }}" height="{{ page.HeroImageHeight }}"{% endif %}
                              loading="eager" fetchpriority="high" decoding="async">
-                        {% if page.HeroImageNote %}<p class="credential-hero-image-note">{{ page.HeroImageNote }}</p>{% endif %}
                     </div>
                 </div>
 
