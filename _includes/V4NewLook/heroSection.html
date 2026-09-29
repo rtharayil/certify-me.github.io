@@ -62,7 +62,7 @@
                         </style>
 
                        <div class="btns-group cred-tags mt-4">
-                        <a href="/certifyme-open-badges" target="_blank" rel="noopener noreferrer">
+                        <a href="/blog/certifyme-open-badge-3-0-certified">
                             <span class="cred-tag">Open Badges 3.0 Certified</span>
                         </a>
                         <a href="/allIntegrations" target="_blank" rel="noopener noreferrer">
@@ -88,6 +88,7 @@
                              alt="{{ page.HeroImageAlt | default: 'Digital credentials and skills mapping illustration' | escape }}"
                              {% if page.HeroImageWidth and page.HeroImageHeight %}width="{{ page.HeroImageWidth }}" height="{{ page.HeroImageHeight }}"{% endif %}
                              loading="eager" fetchpriority="high" decoding="async">
+                        {% if page.HeroImageNote %}<p class="credential-hero-image-note">{{ page.HeroImageNote }}</p>{% endif %}
                     </div>
                 </div>
 

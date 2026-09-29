@@ -18,11 +18,16 @@ HeroPrimaryCTA: "Request Demo"
 HeroSecondaryCTA: "Sample Credential Walkthrough"
 HeroProofIntegrations: "Enterprise-Ready Integrations"
 HeroSupportingLine: "Built on open standards. Designed for institutional scale."
-HeroImage: /assets4/images/certifyme-digital-credentials-skill-mapping-hero-960.webp
-HeroImageMobile: /assets4/images/certifyme-digital-credentials-skill-mapping-hero-480.webp
+HeroImage: /assets4/images/certifyme-verifiable-credentials-skills-clr-hero-960.webp
+HeroImageMobile: /assets4/images/certifyme-verifiable-credentials-skills-clr-hero-480.webp
 HeroImageWidth: 960
 HeroImageHeight: 1234
-HeroImageAlt: "Illustration of a learner with digital credentials, skill mapping, a QR code, and a comprehensive learner record"
+HeroImageAlt: "Illustration of a learner with verifiable credentials, skills mapped to taxonomies, a QR code, and a comprehensive learner record"
+HeroImageNote: "Illustrative product visual; job figures shown are examples, not live vacancies."
+imageLink: assets4/images/certifyme-digital-credentials-social-1200x630.jpg
+imageWidth: 1200
+imageHeight: 630
+imageAlt: "CertifyMe digital credentials connecting learning with verifiable skills and careers"
 HeroDemoButton: Request a Demo
 HeroVideoButton: Watch Video
 HeroVideoButtonLink: https://www.youtube.com/watch?v=TJMwk6qIxSc
