@@ -3,6 +3,7 @@ import modalHtml from '../../../../../../_includes/V4NewLook/credentialSampleMod
 import certificate from '../../../../../../assets4/images/asterford-certificate.svg';
 import qr from '../../../../../../assets4/images/asterford-demo-qr.svg';
 import barcode from '../../../../../../assets4/images/asterford-demo-barcode.svg';
+import certifyMeLogo from '../../../../../../assets4/images/Logo/1.png';
 import './_group.css';
 
 const jobs = {
@@ -29,7 +30,8 @@ export function ReferenceLed() {
   const html = useMemo(() => modalHtml.replace(' hidden>', '>')
     .replaceAll('/assets4/images/asterford-certificate.svg', certificate)
     .replaceAll('/assets4/images/asterford-demo-qr.svg', qr)
-    .replaceAll('/assets4/images/asterford-demo-barcode.svg', barcode), []);
+    .replaceAll('/assets4/images/asterford-demo-barcode.svg', barcode)
+    .replaceAll('/assets4/images/Logo/1.png', certifyMeLogo), []);
   const modalContent = useMemo(() => <div dangerouslySetInnerHTML={{ __html: html }} />, [html]);
 
   const scrollToTour = (showFeature = false, nextStep = step) => {
