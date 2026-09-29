@@ -10,8 +10,8 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: The Digital Credential Infrastructure for Institutions
-HeroText:  Issue, manage, verify, and analyze credentials across your entire institution — securely, at scale, and built on open standards.
+HeroTitle: "The Digital Credential & Skill Mapping Infrastructure for Institutions"
+HeroText: "Go beyond basic digital badges. Issue tamper-proof degrees, certificates, and badges embedded with live skill taxonomies, Comprehensive Learner Records (CLR), and workforce intelligence."
 HeroImage: /assets4/images/Images Webp/Copy of Credentials Verified (4).png
 HeroDemoButton: Request a Demo
 HeroVideoButton: Watch Video
