@@ -4,3 +4,4 @@
 - [CertifyMe client-logo section location](certifyme-client-logos.md) — the homepage customer logo strip lives inside Statistics.html via ClientLogos.html, not a standalone section.
 - [Mobile homepage overlap cascade](mobile-overlap-cascade.md) — legacy mobile `!important` rules can pull sections together or defeat new carousel layouts.
 - [Credential portability claims](credential-portability-claims.md) — open standards improve portability but do not remove issuer-key or status-resource dependencies.
+- [Sample credential truthfulness](sample-credential-truthfulness.md) — distinguish the interactive Open Badges 3.0 preview from the linked real credential's older badge export.

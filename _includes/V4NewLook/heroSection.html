@@ -16,14 +16,11 @@
 
                         <p class="p-lg">{{page.HeroText}}
                         </p>
-                        <!-- Buttons https://certifyme.online/img/CmeVedioS.mp4 -->
-                        <div class="btns-group">
+                        <div class="btns-group credential-hero-actions">
                             <a href="https://info.certifyme.online/request-demo" target="_blank"
-                                class="btn r-04 btn--theme hover--black" rel="noopener noreferrer">{{page.HeroDemoButton}}</a>
-                            <a href="https://apac.platform.certifyme.org/auth/pre-register/hero@certifyme.online" target="_blank"
-                                class=" btn r-04 btn--tra-black hover--blue-100 ico-20" rel="noopener noreferrer">Start Free Trial 
-                                </span>
-                            </a>
+                                class="btn r-04 btn--theme hover--black" rel="noopener noreferrer">Schedule Institutional Walkthrough</a>
+                            <button type="button" class="btn r-04 btn--tra-black hover--blue-100"
+                                data-credential-open aria-haspopup="dialog" aria-controls="credential-sample-dialog">View Live Sample Credential</button>
                         </div>
 
 
@@ -91,3 +88,4 @@
         </div> <!-- End container -->
     </div> <!-- End hero-overlay -->
 </section> <!-- END HERO-7 -->
+{% include V4NewLook/credentialSampleModal.html %}
