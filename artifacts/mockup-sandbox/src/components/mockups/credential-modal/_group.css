@@ -1,0 +1,12 @@
+@import "../../../../../../assets4/css/credential-sample-modal.css";
+@import "../../../../../../assets4/css/credential-reference-view.css";
+
+.credential-preview-stage {
+  min-height: 100vh;
+  background: #e8ebf3;
+  font-family: Inter, Arial, sans-serif;
+}
+.credential-preview-stage .credential-modal {
+  position: relative;
+  min-height: 100vh;
+}
