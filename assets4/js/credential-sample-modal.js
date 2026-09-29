@@ -53,10 +53,12 @@
 
   function scrollToTour(showFeature) {
     var target = showFeature && window.innerWidth <= 650 ? stages[current] : tour;
-    panel.scrollTo({
-      top: target.getBoundingClientRect().top - panel.getBoundingClientRect().top + panel.scrollTop - 57,
-      behavior: reduceMotion.matches ? "instant" : "smooth"
-    });
+    var header = dialog.querySelector(".credential-modal__header");
+    var stepHeading = target !== tour ? tour.querySelector(".credential-tour__heading") : null;
+    var top = target.getBoundingClientRect().top - panel.getBoundingClientRect().top +
+      panel.scrollTop - header.getBoundingClientRect().height -
+      (stepHeading ? stepHeading.getBoundingClientRect().height : 0) - 10;
+    panel.scrollTo({ top: Math.max(0, top), behavior: reduceMotion.matches ? "instant" : "smooth" });
   }
 
   function showStep(index, scroll) {
@@ -75,7 +77,7 @@
     });
     restartFilmline();
     updateControls();
-    if (scroll) scrollToTour(true);
+    if (scroll) window.requestAnimationFrame(function () { scrollToTour(true); });
   }
 
   function advanceAfter(delay) {
@@ -104,10 +106,10 @@
     dialog.querySelector(".credential-modal__close").focus();
     if (!paused) {
       timer = window.setTimeout(function () {
-        scrollToTour();
+        scrollToTour(true);
         restartFilmline();
         advanceAfter(6800);
-      }, 2700);
+      }, window.innerWidth <= 650 ? 1500 : 2700);
     }
   }
 
@@ -144,9 +146,7 @@
       advanceAfter(6800);
     } else pauseTour();
   });
-  dialog.addEventListener("pointerdown", function (event) {
-    if (!dialog.hidden && !event.target.closest("[data-credential-pause]")) pauseTour();
-  });
+  // A touch used to scroll the modal is not a request to stop the walkthrough.
   tour.addEventListener("focusin", function (event) {
     if (!event.target.closest("[data-credential-pause]")) pauseTour();
   });

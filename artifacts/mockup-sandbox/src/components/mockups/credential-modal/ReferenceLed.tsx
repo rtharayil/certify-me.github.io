@@ -20,6 +20,7 @@ export function ReferenceLed() {
   const [started, setStarted] = useState(false);
   const [job, setJob] = useState<Job>('analyst');
   const root = useRef<HTMLDivElement>(null);
+  const scrollOnStep = useRef(false);
   const storyUrl = useMemo(() => {
     const url = new URL('/', window.location.origin);
     url.searchParams.set('story', 'certificate');
@@ -39,7 +40,13 @@ export function ReferenceLed() {
     const tour = root.current?.querySelector<HTMLElement>('[data-credential-tour]');
     const stage = root.current?.querySelector<HTMLElement>(`[data-credential-stage="${nextStep}"]`);
     const target = showFeature && window.innerWidth <= 650 ? stage : tour;
-    if (panel && target) panel.scrollTo({ top: target.getBoundingClientRect().top - panel.getBoundingClientRect().top + panel.scrollTop - 57, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+    const header = root.current?.querySelector<HTMLElement>('.credential-modal__header');
+    const stepHeading = target === stage ? tour?.querySelector<HTMLElement>('.credential-tour__heading') : null;
+    if (panel && target && header) {
+      const top = target.getBoundingClientRect().top - panel.getBoundingClientRect().top + panel.scrollTop -
+        header.getBoundingClientRect().height - (stepHeading?.getBoundingClientRect().height ?? 0) - 10;
+      panel.scrollTo({ top: Math.max(0, top), behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+    }
   };
 
   useEffect(() => {
@@ -74,6 +81,10 @@ export function ReferenceLed() {
     const selectors = ['[data-credential-job-title]', '[data-credential-job-description]', '[data-credential-job-skills]', '[data-credential-job-gap]'];
     selectors.forEach((selector, i) => { const el = dialog.querySelector<HTMLElement>(selector); if (el) el.textContent = detail[i]; });
     dialog.querySelectorAll<HTMLButtonElement>('[data-credential-job]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.credentialJob === job)));
+    if (scrollOnStep.current) {
+      scrollOnStep.current = false;
+      window.requestAnimationFrame(() => scrollToTour(true, step));
+    }
   }, [step, paused, job, open]);
 
   useEffect(() => {
@@ -98,21 +109,22 @@ export function ReferenceLed() {
   useEffect(() => {
     if (!open || paused) return;
     const timeout = window.setTimeout(() => {
-      if (!started) { setStarted(true); scrollToTour(); }
+      if (!started) { setStarted(true); scrollToTour(true); }
       else {
         const next = (step + 1) % STAGE_COUNT;
+        scrollOnStep.current = true;
         setStep(next);
-        window.setTimeout(() => scrollToTour(true, next), 0);
       }
-    }, started ? (step === STAGE_COUNT - 1 ? 8500 : 6800) : 2700);
+    }, started ? (step === STAGE_COUNT - 1 ? 8500 : 6800) : (window.innerWidth <= 650 ? 1500 : 2700));
     return () => window.clearTimeout(timeout);
   }, [open, paused, started, step]);
 
   const navigate = (nextStep: number) => {
     setPaused(true);
     setStarted(true);
+    if (nextStep === step) window.requestAnimationFrame(() => scrollToTour(true, nextStep));
+    else scrollOnStep.current = true;
     setStep(nextStep);
-    window.setTimeout(() => scrollToTour(true, nextStep), 0);
   };
 
   const shareStory = async (action: string) => {
@@ -152,7 +164,7 @@ export function ReferenceLed() {
     if (target.closest('[data-credential-prev]')) { navigate(Math.max(step - 1, 0)); return; }
     if (target.closest('[data-credential-forward]')) { navigate(step === STAGE_COUNT - 1 ? 0 : step + 1); return; }
     if (target.closest('[data-credential-pause]')) {
-      if (paused && step === STAGE_COUNT - 1) { setStep(0); scrollToTour(); }
+      if (paused && step === STAGE_COUNT - 1) { scrollOnStep.current = true; setStep(0); }
       setStarted(true);
       setPaused(!paused);
       return;

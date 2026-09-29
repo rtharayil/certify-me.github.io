@@ -10,9 +10,19 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: "The Digital Credential & Skill Mapping Infrastructure for Institutions"
-HeroText: "Go beyond basic digital badges. Issue tamper-proof degrees, certificates, and badges embedded with live skill taxonomies, Comprehensive Learner Records (CLR), and workforce intelligence."
-HeroImage: /assets4/images/Images Webp/Copy of Credentials Verified (4).png
+HeroEyebrow: "Institutional Credential Infrastructure"
+HeroTitle: "Digital Credentials That Connect Learning to Verifiable Skills and Careers"
+HeroLead: "Go beyond basic digital badges."
+HeroText: "Issue verifiable degrees, certificates, and badges — connected to verified skills, Comprehensive Learner Records (CLR), and workforce intelligence."
+HeroPrimaryCTA: "Request Demo"
+HeroSecondaryCTA: "Sample Credential Walkthrough"
+HeroProofIntegrations: "Enterprise-Ready Integrations"
+HeroSupportingLine: "Built on open standards. Designed for institutional scale."
+HeroImage: /assets4/images/certifyme-digital-credentials-skill-mapping-hero-960.webp
+HeroImageMobile: /assets4/images/certifyme-digital-credentials-skill-mapping-hero-480.webp
+HeroImageWidth: 960
+HeroImageHeight: 1234
+HeroImageAlt: "Illustration of a learner with digital credentials, skill mapping, a QR code, and a comprehensive learner record"
 HeroDemoButton: Request a Demo
 HeroVideoButton: Watch Video
 HeroVideoButtonLink: https://www.youtube.com/watch?v=TJMwk6qIxSc

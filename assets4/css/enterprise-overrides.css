@@ -169,6 +169,33 @@ h2.statistic-number {
   color: var(--cm-indigo) !important;
 }
 
+.credential-hero-eyebrow {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--cm-indigo);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+#hero-7 .hero-7-txt h1.credential-hero-title {
+  padding-bottom: 0 !important;
+  margin-bottom: 18px;
+}
+#hero-7 .hero-7-txt .credential-hero-lead {
+  margin: 0 0 8px;
+  color: var(--cm-indigo);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+#hero-7 .hero-7-txt .credential-hero-supporting {
+  margin: 10px 0 0;
+  color: var(--cm-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 /* Sub-text under H1 */
 .hero-7-txt p.p-lg {
   font-size: 1.0625rem !important;
