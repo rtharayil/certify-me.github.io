@@ -22,7 +22,7 @@
   var shareStatus = dialog.querySelector("[data-credential-share-status]");
   var storyUrl = new URL("/", window.location.origin);
   storyUrl.searchParams.set("story", "certificate");
-  var storyText = "Explore the story behind a fictional university certificate: from an award to trust, skills, and career possibilities.";
+  var storyText = "Explore a fictional university credential: structured award data, access controls, verification steps, and possible learning paths.";
 
   function clearTourTimer() {
     if (timer !== null) window.clearTimeout(timer);
@@ -31,13 +31,13 @@
 
   function updateControls() {
     dialog.querySelector("[data-credential-count]").textContent =
-      String(current + 1).padStart(2, "0") + " / " + String(stages.length).padStart(2, "0");
+      "Step " + (current + 1) + " of " + stages.length;
     previousButton.disabled = current === 0;
-    forwardButton.textContent = current === stages.length - 1 ? "Replay story ↺" : "Next scene →";
+    forwardButton.textContent = current === stages.length - 1 ? "Start again ↺" : "Next step →";
     pauseButton.textContent = paused ? "▶ Play" : "Ⅱ Pause";
-    pauseButton.setAttribute("aria-label", paused ? "Play story" : "Pause story");
+    pauseButton.setAttribute("aria-label", paused ? "Play walkthrough" : "Pause walkthrough");
     dialog.querySelector("[data-credential-pace]").textContent =
-      paused ? "You’re in control · choose any scene" : "The story loops · click to take control";
+      paused ? "Paused · choose a step or press Play" : "Auto-playing · select a step to pause";
     dialog.classList.toggle("is-paused", paused);
     filmline.style.animationPlayState = paused ? "paused" : "running";
   }
@@ -158,7 +158,7 @@
       if (!file) return;
       pauseTour();
       var name = file.name.length > 65 ? file.name.slice(0, 62) + "…" : file.name;
-      status.textContent = name + " selected locally · no verification performed";
+      status.textContent = name + " selected locally · file not read or verified";
     }
     input.addEventListener("change", function () { showFile(input.files && input.files[0]); });
     zone.addEventListener("dragover", function (event) { event.preventDefault(); zone.classList.add("is-dragging"); });
@@ -173,14 +173,14 @@
   var jobDetails = {
     analyst: {
       title: "Insights Analyst",
-      description: "Transforms messy data into useful reports for cross-functional teams.",
-      skills: "Data Analytics · Evidence-based decisions",
+      description: "Turns data into reports that support decisions across teams.",
+      skills: "Data analysis · Evidence-based decisions",
       gap: "Data visualization"
     },
     coordinator: {
       title: "Program Coordinator",
       description: "Coordinates timelines, stakeholders, and programme delivery.",
-      skills: "Project Management · Stakeholder coordination",
+      skills: "Project management · Stakeholder coordination",
       gap: "Budget planning"
     }
   };
@@ -221,7 +221,7 @@
         field.remove();
         if (!copied) throw new Error("Copy unavailable");
       }
-      shareStatus.textContent = "Link copied. It opens this fictional sample story.";
+      shareStatus.textContent = "Link copied. It opens this fictional university walkthrough.";
     } catch (error) {
       shareStatus.textContent = "Could not copy the link in this browser.";
     }
@@ -236,13 +236,13 @@
       }
       try {
         await navigator.share({
-          title: "A certificate with a story · CertifyMe sample",
+          title: "University credential walkthrough · CertifyMe example",
           text: storyText,
           url: storyUrl.href
         });
-        shareStatus.textContent = "Sample story shared.";
+        shareStatus.textContent = "Example link shared.";
       } catch (error) {
-        if (error.name !== "AbortError") shareStatus.textContent = "Sharing is unavailable here. Try Copy link.";
+        if (error.name !== "AbortError") shareStatus.textContent = "Sharing is unavailable here. Use Copy link instead.";
       }
     });
   });

@@ -7,8 +7,8 @@ import certifyMeLogo from '../../../../../../assets4/images/Logo/1.png';
 import './_group.css';
 
 const jobs = {
-  analyst: ['Insights Analyst', 'Transforms messy data into useful reports for cross-functional teams.', 'Data Analytics · Evidence-based decisions', 'Data visualization'],
-  coordinator: ['Program Coordinator', 'Coordinates timelines, stakeholders, and programme delivery.', 'Project Management · Stakeholder coordination', 'Budget planning'],
+  analyst: ['Insights Analyst', 'Turns data into reports that support decisions across teams.', 'Data analysis · Evidence-based decisions', 'Data visualization'],
+  coordinator: ['Program Coordinator', 'Coordinates timelines, stakeholders, and programme delivery.', 'Project management · Stakeholder coordination', 'Budget planning'],
 } as const;
 type Job = keyof typeof jobs;
 const STAGE_COUNT = 8;
@@ -25,7 +25,7 @@ export function ReferenceLed() {
     url.searchParams.set('story', 'certificate');
     return url.href;
   }, []);
-  const storyText = 'Explore the story behind a fictional university certificate: from an award to trust, skills, and career possibilities.';
+  const storyText = 'Explore a fictional university credential: structured award data, access controls, verification steps, and possible learning paths.';
   // Render the actual Jekyll markup so this canvas preview stays in sync with the homepage.
   const html = useMemo(() => modalHtml.replace(' hidden>', '>')
     .replaceAll('/assets4/images/asterford-certificate.svg', certificate)
@@ -62,11 +62,11 @@ export function ReferenceLed() {
     const next = dialog.querySelector<HTMLElement>('[data-credential-forward]');
     const pause = dialog.querySelector<HTMLElement>('[data-credential-pause]');
     const pace = dialog.querySelector<HTMLElement>('[data-credential-pace]');
-    if (count) count.textContent = `${String(step + 1).padStart(2, '0')} / ${String(STAGE_COUNT).padStart(2, '0')}`;
+    if (count) count.textContent = `Step ${step + 1} of ${STAGE_COUNT}`;
     if (prev) prev.disabled = step === 0;
-    if (next) next.textContent = step === STAGE_COUNT - 1 ? 'Replay story ↺' : 'Next scene →';
-    if (pause) { pause.textContent = paused ? '▶ Play' : 'Ⅱ Pause'; pause.setAttribute('aria-label', paused ? 'Play story' : 'Pause story'); }
-    if (pace) pace.textContent = paused ? 'You’re in control · choose any scene' : 'The story loops · click to take control';
+    if (next) next.textContent = step === STAGE_COUNT - 1 ? 'Start again ↺' : 'Next step →';
+    if (pause) { pause.textContent = paused ? '▶ Play' : 'Ⅱ Pause'; pause.setAttribute('aria-label', paused ? 'Play walkthrough' : 'Pause walkthrough'); }
+    if (pace) pace.textContent = paused ? 'Paused · choose a step or press Play' : 'Auto-playing · select a step to pause';
     dialog.querySelector('.credential-modal')?.classList.toggle('is-paused', paused);
     const filmline = dialog.querySelector<HTMLElement>('[data-credential-filmline]');
     if (filmline) filmline.style.animationPlayState = paused ? 'paused' : 'running';
@@ -119,8 +119,8 @@ export function ReferenceLed() {
     const status = root.current?.querySelector<HTMLElement>('[data-credential-share-status]');
     try {
       if (action === 'native' && navigator.share) {
-        await navigator.share({ title: 'A certificate with a story · CertifyMe sample', text: storyText, url: storyUrl });
-        if (status) status.textContent = 'Sample story shared.';
+        await navigator.share({ title: 'University credential walkthrough · CertifyMe example', text: storyText, url: storyUrl });
+        if (status) status.textContent = 'Example link shared.';
       } else {
         if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(storyUrl);
         else {
@@ -134,10 +134,10 @@ export function ReferenceLed() {
           field.remove();
           if (!copied) throw new Error('Copy unavailable');
         }
-        if (status) status.textContent = 'Link copied. It opens this fictional sample story.';
+        if (status) status.textContent = 'Link copied. It opens this fictional university walkthrough.';
       }
     } catch (error) {
-      if (status && (!(error instanceof DOMException) || error.name !== 'AbortError')) status.textContent = 'Sharing is unavailable here. Try Copy link.';
+      if (status && (!(error instanceof DOMException) || error.name !== 'AbortError')) status.textContent = 'Sharing is unavailable here. Use Copy link instead.';
     }
   };
 
@@ -166,7 +166,7 @@ export function ReferenceLed() {
     if (!input.matches('[data-credential-file]') || !input.files?.[0]) return;
     setPaused(true);
     const status = input.closest('[data-credential-drop]')?.parentElement?.querySelector('[data-credential-file-status]');
-    if (status) status.textContent = `${input.files[0].name.slice(0, 65)} selected locally · no verification performed`;
+    if (status) status.textContent = `${input.files[0].name.slice(0, 65)} selected locally · file not read or verified`;
   };
 
   const onDrop = (event: React.DragEvent<HTMLDivElement>) => {
@@ -178,13 +178,13 @@ export function ReferenceLed() {
     if (!file) return;
     setPaused(true);
     const status = zone.parentElement?.querySelector('[data-credential-file-status]');
-    if (status) status.textContent = `${file.name.slice(0, 65)} selected locally · no verification performed`;
+    if (status) status.textContent = `${file.name.slice(0, 65)} selected locally · file not read or verified`;
   };
 
   return <div className="credential-preview-stage" onClick={onClick} onChange={onChange} onDrop={onDrop}
     onDragOver={event => { if ((event.target as HTMLElement).closest('[data-credential-drop]')) event.preventDefault(); }}
     onKeyDown={event => { if (event.key === 'Escape') setOpen(false); else if (event.key === 'Tab') setPaused(true); }} ref={root}>
-    {!open && <button type="button" onClick={() => { setOpen(true); setStep(0); setStarted(false); setPaused(window.matchMedia('(prefers-reduced-motion: reduce)').matches); }} style={{ margin: 32, padding: 16 }}>View sample certificate tour</button>}
+    {!open && <button type="button" onClick={() => { setOpen(true); setStep(0); setStarted(false); setPaused(window.matchMedia('(prefers-reduced-motion: reduce)').matches); }} style={{ margin: 32, padding: 16 }}>View credential walkthrough</button>}
     {open && modalContent}
   </div>;
 }
