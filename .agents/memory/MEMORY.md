@@ -7,4 +7,3 @@
 - [Sample credential truthfulness](sample-credential-truthfulness.md) — homepage demo uses one fictional university credential; separate taxonomy and market examples from live/verified claims.
 - [Public proof boundaries](public-proof-boundaries.md) — 1EdTech registry verifies OB3 issuer certification; review-site ratings do not prove Leader status or security audits.
 - [Browser checks in this workspace](browser-checks.md) — Playwright may lack its bundled browser; use installed system Chromium for local UI checks.
-- [Public CareerIQ demo boundary](careeriq-demo-boundary.md) — keep fictional career data separate from authenticated learner records and real employer applications.

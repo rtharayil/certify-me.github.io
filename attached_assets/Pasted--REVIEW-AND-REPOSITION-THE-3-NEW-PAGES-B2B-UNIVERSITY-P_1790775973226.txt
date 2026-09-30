@@ -1,0 +1,651 @@
+# REVIEW AND REPOSITION THE 3 NEW PAGES — B2B UNIVERSITY PRODUCT
+
+You are reviewing the **three pages that already exist in this project**.
+
+**Do NOT rebuild the website from scratch.**
+
+First inspect the existing routes, components, copy, layouts, graphics and interactions. Then improve the existing implementation.
+
+## CRITICAL BUSINESS POSITIONING
+
+We are a **B2B university technology platform**.
+
+Our customers are universities, colleges and education organisations.
+
+We are NOT currently positioning the product as a B2C student career platform.
+
+Therefore, the `/career-opportunities` page must be repositioned.
+
+The current messaging makes it feel like a student-facing job marketplace where an individual logs in, searches jobs and applies.
+
+**That is NOT the primary product positioning.**
+
+The product provides universities with:
+
+* Career intelligence
+* Workforce intelligence
+* Labour-market intelligence
+* Skills intelligence
+* Employer intelligence
+* Programme-to-career insights
+* Credential-to-skill intelligence
+* Career pathway intelligence
+* Job-market visibility
+* Standards-based credential infrastructure
+
+Job opportunities and applications may exist as part of the product capability, but they should not make the product feel B2C.
+
+---
+
+# THE 3-PAGE PRODUCT STORY
+
+The three pages should work together as one coherent B2B university proposition:
+
+### PAGE 1 — DIGITAL CREDENTIAL INFRASTRUCTURE
+
+Primary audience:
+
+* Registrar
+* CIO / CTO
+* Digital transformation leaders
+* Student records leaders
+* Academic administration
+* University executives
+
+Core question:
+
+> How can our university centralise, issue, manage and verify digital credentials?
+
+Core positioning:
+
+> One digital credential infrastructure for your university.
+
+This page should focus on:
+
+* Degrees
+* Diplomas
+* Certificates
+* Digital badges
+* Transcripts
+* Learner records
+* Credential issuing
+* Credential verification
+* Credential management
+* Reissuing / revoking
+* SIS / LMS / CRM integrations
+* Open Badges 3.0
+* CLR 2.0
+* Portable verified learner records
+
+Do NOT turn Page 1 into a workforce intelligence page.
+
+---
+
+# PAGE 2 — WORKFORCE & CAREER INTELLIGENCE
+
+Primary audience:
+
+* Careers and employability directors
+* Workforce development leaders
+* Academic programme leaders
+* Faculties
+* Employer engagement teams
+* Strategy teams
+* Skills leaders
+* Senior university leadership
+
+Core question:
+
+> How do our programmes, credentials and verified skills connect to the labour market?
+
+This should be the main **intelligence** page.
+
+Show the relationship:
+
+University Programmes
+→ Credentials
+→ Verified Skills
+→ Skills Taxonomy
+→ Occupations
+→ Employers
+→ Labour-Market Demand
+→ Career Pathways
+
+Focus on:
+
+* Skills demand
+* Occupation demand
+* Employer demand
+* Programme-to-career alignment
+* Curriculum-to-skills alignment
+* Skills gaps
+* Emerging skills
+* Employer requirements
+* Career pathways
+* Graduate outcomes intelligence
+* Workforce trends
+* Labour-market insights
+
+This is a B2B decision-support product.
+
+It should help a university answer questions such as:
+
+* Which skills are employers asking for?
+* Which programmes develop those skills?
+* Where are our curriculum gaps?
+* Which occupations are connected to our programmes?
+* Which employers are hiring for these skills?
+* How are employer requirements changing?
+* Which career pathways can our learners access?
+* Where should programmes evolve?
+
+---
+
+# PAGE 3 — CAREER OPPORTUNITIES / CAREER INTELLIGENCE
+
+IMPORTANT:
+
+The current page feels too B2C.
+
+**Reposition this page as a B2B university capability.**
+
+Do NOT present it primarily as:
+
+> "Find a job"
+
+Do NOT make the primary CTA:
+
+> "Apply now"
+
+Do NOT make the university disappear behind a consumer job-search experience.
+
+Instead, position it as:
+
+> **Turn verified learner skills into career opportunity intelligence.**
+
+or a similar B2B message.
+
+The page should demonstrate how universities can understand and activate the relationship between:
+
+Verified Credentials
+→ Verified Skills
+→ Occupations
+→ Employers
+→ Job Opportunities
+→ Career Pathways
+
+The purpose is to show the university what its learners' verified skills connect to in the real labour market.
+
+---
+
+# PAGE 3 PRIMARY ICP
+
+The primary ICP should be:
+
+* Careers / Employability Director
+* Head of Careers
+* Workforce Development Director
+* Employer Engagement Director
+* Academic leadership
+* Faculty leadership
+* Skills / curriculum teams
+* University strategy teams
+
+Secondary audience:
+
+* University leadership
+
+Do NOT make students the primary ICP.
+
+---
+
+# PAGE 3 WHAT THE UNIVERSITY SHOULD SEE
+
+Instead of presenting this as an individual job board, show an institutional intelligence experience.
+
+For example:
+
+### Career Opportunity Intelligence
+
+Show:
+
+* Number of occupations connected to university skills
+* Number of employers hiring those skills
+* Number of relevant job opportunities
+* Demand by occupation
+* Demand by location
+* Demand by industry
+* Salary ranges
+* Remote / hybrid / onsite trends
+* Seniority levels
+* Most requested skills
+* Emerging skills
+* Skills gaps
+* Career pathways
+
+Example:
+
+**Business Analytics Programme**
+
+Verified skills:
+
+* SQL
+* Data Analysis
+* Power BI
+* Statistical Analysis
+* Data Visualisation
+
+Connected occupations:
+
+* Data Analyst
+* Business Analyst
+* BI Analyst
+* Reporting Analyst
+
+Employer demand:
+
+* Employers hiring
+* Open opportunities
+* Location
+* Salary range
+* Skills requested
+
+This demonstrates the value to the university.
+
+---
+
+# JOB APPLICATION FUNCTIONALITY
+
+Job application functionality can still exist.
+
+However, it should be presented as a **supporting capability**, not the core B2C proposition.
+
+For example:
+
+> Help universities connect verified learner skills with real employment opportunities.
+
+The product may allow learners to:
+
+* View relevant opportunities
+* See why their verified skills match
+* Identify missing skills
+* Share verified credentials
+* Apply
+* Track applications
+
+But the page should frame this as the **activation layer of the university's career intelligence**, rather than a standalone consumer job platform.
+
+The university should remain the buyer and central user of the story.
+
+---
+
+# IMPORTANT MESSAGE CHANGE
+
+Avoid messaging like:
+
+> Find your next job.
+
+> Jobs matched to your skills.
+
+> Apply directly.
+
+> Your career starts here.
+
+> Search thousands of jobs.
+
+Those phrases create a B2C job-board impression.
+
+Instead use B2B language such as:
+
+> Connect verified skills to real labour-market demand.
+
+> Understand where your learners' skills lead.
+
+> Turn credential data into career intelligence.
+
+> See the occupations, employers and opportunities connected to your programmes.
+
+> Give careers and academic teams a clearer view of learner-to-workforce pathways.
+
+> Move from credentials to skills, and from skills to opportunity.
+
+---
+
+# ICP AUDIT
+
+For EACH of the three pages, audit:
+
+### 1. Who is the buyer?
+
+Is it immediately obvious?
+
+### 2. Who is the user?
+
+Is the page speaking to the right university team?
+
+### 3. What problem does the page solve?
+
+Can this be understood within 5 seconds?
+
+### 4. What decision does the product help the university make?
+
+Make this explicit.
+
+### 5. What evidence does the page provide?
+
+Use product UI, data visualisation and workflows rather than generic marketing claims.
+
+---
+
+# SEO AUDIT
+
+Review SEO for all three pages.
+
+For each page improve:
+
+* Page title
+* Meta description
+* H1
+* H2 structure
+* Semantic HTML
+* Internal linking
+* Image alt text
+* URL structure
+* Open Graph metadata
+* Structured data where appropriate
+* Search intent
+* Keyword relevance
+
+Target B2B university search intent.
+
+Potential keyword themes include:
+
+### Page 1
+
+* digital credentials for universities
+* digital credential platform
+* university digital credentials
+* digital badges for universities
+* academic credential management
+* digital certificate platform
+* learner records
+* Open Badges 3.0
+* CLR 2.0
+
+### Page 2
+
+* workforce intelligence for universities
+* labour market intelligence higher education
+* skills intelligence universities
+* career intelligence platform
+* curriculum skills mapping
+* employer demand intelligence
+* graduate employability intelligence
+* skills gap analysis higher education
+
+### Page 3
+
+* career intelligence universities
+* university career intelligence
+* graduate career pathways
+* skills to jobs intelligence
+* employer intelligence higher education
+* career opportunities intelligence
+* labour market career pathways
+
+Do not keyword-stuff.
+
+SEO copy must still sound like a real B2B technology company.
+
+---
+
+# REMOVE AI-GENERATED FEEL
+
+The pages must NOT feel like they were written by AI.
+
+Review the existing copy and remove:
+
+* Generic corporate filler
+* Excessive buzzwords
+* Repetitive "empower / unlock / transform" language
+* Overly perfect marketing statements
+* Long generic paragraphs
+* Repeated explanations of the same concept
+* Fake-sounding statistics
+* Unnecessary exclamation marks
+* Generic AI-style headings
+* Excessive use of em dashes
+* Empty claims such as "revolutionise the future of education"
+
+Prefer:
+
+* Specific product language
+* Short sentences
+* Concrete university problems
+* Real workflows
+* Clear data relationships
+* Evidence-based statements
+* Natural B2B SaaS copy
+
+The site should feel like it was designed and written by an experienced university technology product team.
+
+---
+
+# UX REVIEW
+
+Review all three pages visually.
+
+Check:
+
+* First viewport
+* 5-second comprehension
+* Information hierarchy
+* CTA hierarchy
+* Navigation
+* Section spacing
+* Typography
+* Card density
+* Charts
+* Tables
+* Filters
+* Icons
+* Data visualisation
+* Responsive behaviour
+* Mobile layout
+* Accessibility
+* Contrast
+* Button consistency
+* Empty states
+* Loading states
+* Hover states
+
+Avoid excessive cards.
+
+Avoid making every piece of information look like a dashboard widget.
+
+Use visual hierarchy to distinguish:
+
+1. Strategic message
+2. Product capability
+3. Evidence
+4. Workflow
+5. CTA
+
+---
+
+# GRAPHICS / DATA VISUALISATION
+
+Improve the visual storytelling.
+
+The graphics should communicate the product architecture rather than decorate the page.
+
+Use clear visual relationships such as:
+
+Credentials
+↓
+Skills
+↓
+Occupations
+↓
+Employers
+↓
+Opportunities
+
+For workforce intelligence:
+
+Programme
+→ Skills
+→ Labour Market
+→ Career Pathways
+
+For credential infrastructure:
+
+University Systems
+→ Credential Platform
+→ Open Badges 3.0 / CLR 2.0
+→ Verified Learner Record
+
+Avoid generic AI-style illustrations.
+
+Avoid unnecessary abstract gradients and decorative graphics.
+
+Prefer clean product UI, diagrams, charts and realistic information architecture.
+
+---
+
+# CROSS-PAGE CONSISTENCY
+
+The three pages should feel like one product.
+
+The narrative should be:
+
+### 01
+
+**Credentials**
+
+Centralise and verify university credentials.
+
+### 02
+
+**Skills & Workforce Intelligence**
+
+Understand what those verified skills mean in the labour market.
+
+### 03
+
+**Career Intelligence**
+
+Connect those skills to occupations, employers, opportunities and career pathways.
+
+The overall product story should therefore be:
+
+**Credentials → Skills → Workforce → Careers**
+
+This should be visible throughout the site without repeating the same copy on every page.
+
+---
+
+# IMPORTANT PRODUCT STANDARDS
+
+Keep the existing standards architecture where relevant:
+
+### Open Badges 3.0
+
+Use this as the verified achievement / credential layer.
+
+### CLR 2.0
+
+Use this as the portable learner record layer.
+
+### Skills taxonomy
+
+Show how verified skills can be mapped to recognised taxonomies such as:
+
+* ESCO
+* O*NET
+* NACE
+* University-specific taxonomy
+
+Do not claim a specific taxonomy is supported unless the existing product implementation actually supports it.
+
+---
+
+# DATA / CLAIMS
+
+Do not invent:
+
+* University customers
+* Employer customers
+* Job counts
+* Salary figures
+* Market statistics
+* Product adoption numbers
+* Integration claims
+* Certifications
+* Partnerships
+
+If the current page contains demo data, clearly identify it as demo/sample data where appropriate.
+
+Do not create fake credibility.
+
+---
+
+# PAGE-BY-PAGE REVIEW DELIVERABLE
+
+Before making changes, inspect all three pages.
+
+Then improve the implementation.
+
+After the changes, provide a short review containing:
+
+### PAGE 1
+
+* ICP
+* Core message
+* Main UX issue found
+* SEO issue found
+* Changes made
+
+### PAGE 2
+
+* ICP
+* Core message
+* Main UX issue found
+* SEO issue found
+* Changes made
+
+### PAGE 3
+
+* ICP
+* Core message
+* Main UX issue found
+* SEO issue found
+* Changes made
+
+### CROSS-SITE
+
+* Navigation changes
+* Messaging changes
+* Visual consistency changes
+* SEO changes
+* Accessibility improvements
+
+---
+
+# MOST IMPORTANT REQUIREMENT
+
+Do not turn this into a B2C career website.
+
+The company sells **B2B university technology**.
+
+The career/job functionality is evidence of the value created from verified credentials, skills and workforce intelligence.
+
+The university remains the customer.
+
+The final three-page story should make that obvious:
+
+**Digital Credential Infrastructure**
+→ **Workforce & Career Intelligence**
+→ **Career Opportunity Intelligence**
+
+Review the existing implementation and make targeted improvements rather than rebuilding the product.
