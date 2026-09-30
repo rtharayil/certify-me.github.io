@@ -2,7 +2,7 @@
  * enterprise-overrides.css
  * CertifyMe — Enterprise SaaS · Trust · Global · Conversion
  * Loaded last — overrides all theme defaults.
- * ==========================================================
+ * ----------------------------------------------------------
  */
 
 /* ── FONT IMPORT (loaded here so no rebuild needed) ────── */
@@ -195,6 +195,13 @@ h2.statistic-number {
   font-size: 14px;
   line-height: 1.5;
 }
+.credential-hero-image-note {
+  margin: 6px auto 0;
+  color: var(--cm-muted);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
 /* Sub-text under H1 */
 .hero-7-txt p.p-lg {
   font-size: 1.0625rem !important;
@@ -1352,9 +1359,9 @@ h2.statistic-number {
   .dcm-std-heading { padding-right: 12px; margin-right: 0; }
 }
 
-/* ============================================================
+/* ------------------------------------------------------------
    FOUR LEVELS — HOMEPAGE COMPACT SECTION (.fl-*)
-   ============================================================ */
+   ------------------------------------------------------------ */
 .fl-section {
   background-image:
     radial-gradient(ellipse 80% 60% at 70% -10%, rgba(106,90,205,.10) 0%, transparent 60%),
@@ -1580,9 +1587,9 @@ h2.statistic-number {
   .fl-title { font-size: 1.35rem !important; }
 }
 
-/* ============================================================
+/* ------------------------------------------------------------
    FOUR LEVELS — DETAIL PAGE (.flp-*)
-   ============================================================ */
+   ------------------------------------------------------------ */
 
 /* ── Shared ─────────────────────────────────────────────── */
 .flp-eyebrow {
@@ -2355,10 +2362,10 @@ h2.statistic-number {
   .flp-up-step { flex-direction: column; gap: 4px; }
 }
 
-/* ==========================================================================
+/* --------------------------------------------------------------------------
    FLP2 — Four Levels Page v2 (Sales & Qualification)
    All classes prefixed .flp2-*
-   ========================================================================== */
+   -------------------------------------------------------------------------- */
 
 /* ── Eyebrow (shared with flp-eyebrow, but restate for clarity) ──────────── */
 /* Extra top padding to clear the fixed navbar on the detail page */

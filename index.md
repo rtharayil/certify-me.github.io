@@ -13,32 +13,28 @@ sitemap.priority: 1
 HeroEyebrow: "Institutional Credential Infrastructure"
 HeroTitle: "Digital Credentials That Connect Learning to Verifiable Skills and Careers"
 HeroLead: "Go beyond basic digital badges."
-HeroText: "Issue verifiable degrees, certificates, and badges — connected to verified skills, Comprehensive Learner Records (CLR), and workforce intelligence."
+HeroText: "Issue verifiable degrees, certificates, and badges — connected to skills, Comprehensive Learner Records (CLR), and workforce insights."
 HeroPrimaryCTA: "Request Demo"
 HeroSecondaryCTA: "Sample Credential Walkthrough"
 HeroProofIntegrations: "Enterprise-Ready Integrations"
 HeroSupportingLine: "Built on open standards. Designed for institutional scale."
-HeroImage: /assets4/images/certifyme-verifiable-credentials-skill-mapping-learner-record-hero-960.webp
-HeroImageMobile: /assets4/images/certifyme-verifiable-credentials-skill-mapping-learner-record-hero-480.webp
+HeroImage: /assets4/images/certifyme-verifiable-credentials-skills-clr-hero-960.webp
+HeroImageMobile: /assets4/images/certifyme-verifiable-credentials-skills-clr-hero-480.webp
 HeroImageWidth: 960
 HeroImageHeight: 1234
-HeroImageAlt: "Illustration of a learner with a verifiable credential, mapped skills, a QR code, and a comprehensive learner record"
-imageLink: assets4/images/certifyme-verifiable-credentials-learner-record-social-1200x630.jpg
+HeroImageAlt: "Illustrative learner credential, skills, learner record and example career roles"
+HeroImageNote: "Illustrative product visual. Learner, skill mappings and career roles are examples, not verified records or live job data."
+imageLink: assets4/images/certifyme-digital-credentials-social-1200x630.jpg
 imageWidth: 1200
 imageHeight: 630
-imageAlt: "CertifyMe illustration of verifiable credentials, mapped skills, and a comprehensive learner record"
+imageAlt: "CertifyMe digital credentials connecting learning with verifiable skills and careers"
 HeroDemoButton: Request a Demo
 HeroVideoButton: Watch Video
 HeroVideoButtonLink: https://www.youtube.com/watch?v=TJMwk6qIxSc
-FlaticonCheckHeroText: ' Ranked as Leader in Digital Credential Management Software across Education Industry - G2 , TrustRadius , Capterra' 
-
-#statictics section
-Institutiontext: Institutions trust <br>CertifyMe
-Usertext: Wallets across 144<br>Countries
-Credentialtext: Digital credentials issued every year
+FlaticonCheckHeroText: 'Read independent reviews of CertifyMe on G2'
 
 #G2 section
-G2Title: Global Leader in Digital Certificates & Badge Management
+G2Title: Explore CertifyMe reviews on G2
 ActionButtonAbovetext: Not sure about how to begin? Let us guide you in the right direction!
 ActionButtonbelowtext1: Free 5 Credentials
 ActionButtonbelowtext2: Exclusive Support
@@ -153,7 +149,6 @@ Compare4: CertifyMe Vs Certifier
 
 ## connect section
 ConnectTitle: Connect With Us
-
 
 
 seo_keywords: "digital credential software, digital credential management platform, open badges 3.0, verifiable credentials, digital certificate platform, badge management software, credential issuance platform, 1EdTech certified"
