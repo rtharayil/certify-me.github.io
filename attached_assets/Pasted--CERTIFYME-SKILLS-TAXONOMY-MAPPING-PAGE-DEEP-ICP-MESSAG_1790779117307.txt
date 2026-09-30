@@ -1,0 +1,1093 @@
+# CERTIFYME — SKILLS TAXONOMY MAPPING PAGE
+
+## DEEP ICP, MESSAGING, SEO, AI SEARCH & UX REVIEW
+
+Review and improve the existing:
+
+`/skills-taxonomy-mapping`
+
+This is an existing CertifyMe B2B solution page.
+
+**Do NOT rebuild the website from scratch.**
+
+First inspect the current implementation, copy, layout, visual hierarchy, components, SEO metadata, structured data, internal links and responsive behaviour.
+
+Then make targeted improvements.
+
+---
+
+# 1. BUSINESS POSITIONING
+
+CertifyMe is a B2B institutional platform.
+
+This page is NOT primarily for individual learners.
+
+It is NOT a student-facing skill-mapping tool.
+
+It is NOT a generic AI skill extraction product.
+
+It is NOT simply a feature for attaching keywords to digital badges.
+
+The solution should be positioned as an **institutional skills intelligence layer**.
+
+It connects:
+
+**Academic / Professional Learning**
+→ **Learning Outcomes**
+→ **Credentials**
+→ **Skills**
+→ **Skills Taxonomy**
+→ **Occupations**
+→ **Workforce Intelligence**
+
+---
+
+# 2. PRIMARY ICPs
+
+The page must be relevant to three primary audiences.
+
+## ICP 1 — University Executive Leadership
+
+Examples:
+
+* Vice-Chancellor
+* President
+* Provost
+* Deputy Vice-Chancellor
+* Registrar
+* Academic leadership
+* Institutional strategy leadership
+
+Their questions:
+
+* Can we understand the skills represented across our programmes?
+* Can we demonstrate the workforce relevance of our programmes?
+* Can we create a consistent institutional skills language?
+* Can we connect learning outcomes to employer and occupational requirements?
+* Can this support programme review and institutional strategy?
+* Can our credentials communicate more than course completion?
+
+The page must communicate strategic value.
+
+---
+
+# 3. ICP 2 — CIO / DIRECTOR OF IT / DIGITAL TRANSFORMATION
+
+Their questions:
+
+* How does the skills layer integrate with our existing systems?
+* Where does the skills data live?
+* How is provenance maintained?
+* Can our institution retain control?
+* Can we use our own competency framework?
+* Can we map to external frameworks?
+* Can skills flow into credentials and CLR?
+* Can this support downstream workforce intelligence?
+* Is this standards-based?
+* Is the data structured and machine-readable?
+
+The page must communicate that Skills Taxonomy Mapping is an **institutional data and interoperability layer**, not simply an AI feature.
+
+---
+
+# 4. ICP 3 — CHARTERED / PROFESSIONAL / CERTIFICATION BODIES
+
+Examples:
+
+* Professional associations
+* Chartered bodies
+* Certification authorities
+* Membership organisations
+* Professional standards organisations
+
+Their questions:
+
+* How do we represent professional standards?
+* How do competencies map to certifications?
+* How do we maintain authoritative terminology?
+* How can CPD and certification connect to skills?
+* How can professional pathways be represented?
+* How do we preserve evidence and credential provenance?
+
+Make this a visible use case.
+
+---
+
+# 5. CURRENT HERO — REPOSITION
+
+The current hero is:
+
+> Connect Every Credential to the Skills It Represents
+
+This is clear but too feature-oriented.
+
+The hero should communicate the larger institutional purpose.
+
+Preferred direction:
+
+### H1
+
+**Connect Learning and Credentials to a Common Skills Language**
+
+or:
+
+**Build an Institutional Skills Layer Across Your Credentials**
+
+or another stronger version with the same strategic meaning.
+
+The supporting message should explain:
+
+> Connect programme learning outcomes, credentials and competencies to structured skills concepts—creating a consistent skills layer that can support learner records, curriculum intelligence and workforce alignment.
+
+The exact final copy can be improved, but the strategic positioning must remain.
+
+---
+
+# 6. THE CORE PROBLEM
+
+Immediately explain the institutional problem.
+
+Universities and professional bodies already have:
+
+* Programmes
+* Courses
+* Learning outcomes
+* Competencies
+* Credentials
+* Certifications
+* Professional standards
+
+But these are often expressed using different terminology.
+
+One department may say:
+
+> Data Analysis
+
+Another:
+
+> Statistical Data Interpretation
+
+Another:
+
+> Applied Analytics
+
+Another:
+
+> Business Intelligence
+
+External employers and occupational frameworks may use yet another vocabulary.
+
+The institutional problem is:
+
+> **How do you create a structured relationship between your own language and the skills language used across the wider workforce?**
+
+This should be the central problem statement.
+
+---
+
+# 7. CORE PRODUCT MODEL
+
+Create a strong visual:
+
+### Institutional Learning
+
+Programmes
+Courses
+Learning outcomes
+Professional standards
+
+↓
+
+### Credential Evidence
+
+Degrees
+Certificates
+Badges
+Professional certifications
+
+↓
+
+### Skills Layer
+
+Skills
+Competencies
+Skill relationships
+
+↓
+
+### Taxonomy Mapping
+
+Institutional framework
+ESCO
+O*NET
+Professional frameworks
+Discipline-specific frameworks
+
+↓
+
+### Workforce Intelligence
+
+Occupations
+Employers
+Demand
+Career pathways
+
+This should be a major visual on the page.
+
+---
+
+# 8. IMPORTANT — INSTITUTIONAL LANGUAGE COMES FIRST
+
+This is one of the strongest concepts already present on the page.
+
+Preserve and strengthen it.
+
+The institution should NOT be forced to replace its own terminology with an external taxonomy.
+
+Position it as:
+
+**Your institutional language**
+
+*
+
+**Structured external taxonomy relationships**
+
+This allows institutions to retain:
+
+* Academic meaning
+* Professional terminology
+* Programme-specific outcomes
+* Institutional competency frameworks
+
+while creating structured relationships to external skills concepts.
+
+This is important for both universities and professional bodies.
+
+---
+
+# 9. GOVERNANCE SHOULD BE A MAJOR DIFFERENTIATOR
+
+The existing page has strong governance language.
+
+Retain it and elevate it.
+
+The message should be:
+
+> Skills mapping should support institutional governance—not replace it.
+
+Make these principles prominent:
+
+### Institutional ownership
+
+The institution defines what its programmes, credentials and certifications mean.
+
+### Reviewed mappings
+
+Mappings can be reviewed and approved by authorised academic or professional teams.
+
+### Traceable evidence
+
+A skill remains connected to the achievement, credential or evidence from which it is derived.
+
+### Versioning
+
+Mappings can evolve as programmes, standards and external frameworks change.
+
+### Provenance
+
+The system should distinguish institutional claims from external taxonomy relationships.
+
+This is a significant differentiator from generic AI skill extraction.
+
+---
+
+# 10. DO NOT POSITION IT AS “AI MAGIC”
+
+Avoid language such as:
+
+* AI automatically understands every skill
+* Automatically maps everything
+* Instant perfect skill mapping
+* 100% accurate skill extraction
+* AI knows what your programme teaches
+
+Do not make unsupported accuracy claims.
+
+If AI-assisted mapping exists in the product, position it as:
+
+> Assisted mapping
+
+followed by:
+
+> Institutional review and approval
+
+This is much more credible for universities and regulated professional bodies.
+
+---
+
+# 11. CREDENTIAL → SKILL RELATIONSHIP
+
+Explain clearly that skills are not simply keywords added to badges.
+
+Show:
+
+**Achievement**
+
+↓
+
+**Evidence / Criteria**
+
+↓
+
+**Represented Skills**
+
+↓
+
+**Credential**
+
+↓
+
+**Learner Record**
+
+This is one of the strongest conceptual elements of the current page and should remain.
+
+The current page correctly explains that structured relationships are more useful than simply attaching keywords to a badge. Preserve this idea.
+
+---
+
+# 12. PROGRAMME INTELLIGENCE
+
+Strengthen the university use case.
+
+Show:
+
+### Programme
+
+BSc Data Science
+
+### Learning outcomes
+
+* Analyse datasets
+* Apply statistical methods
+* Interpret findings
+* Communicate evidence
+
+### Skills
+
+* Data analysis
+* Statistical analysis
+* Data interpretation
+* Quantitative reasoning
+
+### Credentials
+
+Degree
+Micro-credential
+Course certificate
+
+### Workforce relevance
+
+Data Analyst
+Business Analyst
+Data Scientist
+
+The purpose is NOT to promise employment.
+
+The purpose is to demonstrate how a university can create a structured relationship between:
+
+**What it teaches**
+
+and
+
+**How those capabilities are represented and understood externally.**
+
+---
+
+# 13. CURRICULUM INTELLIGENCE
+
+Add a stronger institutional use case.
+
+The platform should help institutions examine:
+
+* Skills represented across programmes
+* Skills duplicated across programmes
+* Skills missing from programmes
+* Skills emerging in external frameworks
+* Skills associated with specific occupations
+* Skills associated with professional standards
+
+This makes Skills Taxonomy Mapping strategically relevant to academic leadership.
+
+---
+
+# 14. WORKFORCE INTELLIGENCE CONNECTION
+
+Make the relationship to the Workforce Intelligence solution explicit.
+
+Use:
+
+**Skills Taxonomy Mapping**
+
+as the bridge between:
+
+**Institutional learning**
+
+and
+
+**Workforce Intelligence**
+
+Visual:
+
+Programmes
+→ Learning Outcomes
+→ Credentials
+→ Skills
+→ Taxonomy
+→ Occupations
+→ Employers
+→ Workforce Demand
+
+Then link to:
+
+**Explore Workforce Intelligence**
+
+This should be one of the most important internal links on the page.
+
+---
+
+# 15. COMPREHENSIVE LEARNER RECORD CONNECTION
+
+Also show:
+
+Skills
+→ Credentials
+→ Comprehensive Learner Record
+
+The message:
+
+> Skills become more useful when they are connected to verified achievements and preserved within a structured learner record.
+
+Link to:
+
+**Explore Comprehensive Learner Records**
+
+The three pages should form a coherent architecture:
+
+### Comprehensive Learner Record
+
+The record layer.
+
+### Skills Taxonomy Mapping
+
+The skills interpretation / structure layer.
+
+### Workforce Intelligence
+
+The external labour-market intelligence layer.
+
+---
+
+# 16. CHARTERED BODY WORKFLOW
+
+Create a dedicated visual for professional bodies.
+
+Example:
+
+### Professional Standard
+
+Competency framework
+
+↓
+
+### Competencies
+
+Defined professional capabilities
+
+↓
+
+### Skills
+
+Structured skills concepts
+
+↓
+
+### Certification
+
+Professional credential
+
+↓
+
+### Evidence
+
+Assessment / achievement evidence
+
+↓
+
+### Professional Record
+
+Certification + CPD + competencies + skills
+
+↓
+
+### Professional Pathway
+
+Progression / specialisation / renewal
+
+This is a major use case and should not be buried in a generic “professional bodies” card.
+
+---
+
+# 17. TAXONOMIES
+
+Keep the existing frameworks section.
+
+Current page appropriately references:
+
+* ESCO
+* O*NET
+* Institutional frameworks
+* Discipline-specific frameworks.
+
+However, change the framing.
+
+Do not say:
+
+> “These are the taxonomies you must use.”
+
+Instead:
+
+> **Work with the frameworks that matter to your institution.**
+
+Then explain:
+
+### Institutional Frameworks
+
+Your own terminology remains authoritative.
+
+### ESCO
+
+Useful for European skills and occupation relationships.
+
+### O*NET
+
+Useful for US occupational information and skills relationships.
+
+### Professional Frameworks
+
+Useful for regulated or professional disciplines.
+
+Do not claim support for a taxonomy unless the implementation actually supports it.
+
+---
+
+# 18. EXPLAIN TAXONOMY VS SKILLS FRAMEWORK
+
+Add a concise educational explanation.
+
+The page should help a non-technical executive understand:
+
+### What is a skills taxonomy?
+
+A structured way of organising skills and relating them to other concepts.
+
+### What is skills mapping?
+
+The process of relating institutional learning outcomes, competencies or credential achievements to those structured concepts.
+
+### Why does it matter?
+
+It creates a common language that allows institutional learning data to connect with learner records, occupations and workforce intelligence.
+
+This is excellent SEO and AI-search content.
+
+---
+
+# 19. SEO STRATEGY
+
+Optimise the page for institutional B2B search intent.
+
+Primary keywords:
+
+* skills taxonomy mapping
+* skills taxonomy mapping platform
+* skills taxonomy mapping software
+* skills mapping for universities
+* skills taxonomy higher education
+
+Secondary keywords:
+
+* credential skill mapping
+* credential to skill mapping
+* learning outcomes to skills mapping
+* curriculum skills mapping
+* skills mapping higher education
+* skills intelligence universities
+* competency mapping platform
+* skills framework mapping
+* university skills taxonomy
+* academic skills mapping
+* professional competency mapping
+* certification skills mapping
+
+Use these naturally.
+
+Do NOT keyword stuff.
+
+---
+
+# 20. SEO TITLE
+
+Recommended direction:
+
+**Skills Taxonomy Mapping for Universities | CertifyMe**
+
+Alternative if broader ICP is desired:
+
+**Skills Taxonomy & Credential Mapping Platform | CertifyMe**
+
+Choose the title based on actual page positioning and target search intent.
+
+---
+
+# 21. META DESCRIPTION
+
+Create a concise description.
+
+Recommended direction:
+
+> Connect learning outcomes, credentials and competencies to structured skills frameworks with CertifyMe's skills taxonomy mapping platform for universities and professional bodies.
+
+Improve if needed while maintaining natural language.
+
+---
+
+# 22. H1 / H2 STRUCTURE
+
+Ensure:
+
+* One H1
+* Logical H2s
+* H3s nested correctly
+* Important concepts appear in crawlable text
+* No headings used merely as visual decoration
+
+Suggested hierarchy:
+
+H1:
+Skills Taxonomy Mapping...
+
+H2:
+Why Institutions Need a Skills Layer
+
+H2:
+How Skills Mapping Works
+
+H2:
+Work With Your Institution's Skills Framework
+
+H2:
+Connect Learning Outcomes to Credentials and Skills
+
+H2:
+Support Curriculum and Programme Intelligence
+
+H2:
+For Universities
+
+H2:
+For Professional and Chartered Bodies
+
+H2:
+From Skills to Workforce Intelligence
+
+H2:
+Skills, Evidence and Verification
+
+H2:
+Institutional Governance
+
+H2:
+Frequently Asked Questions
+
+---
+
+# 23. AI SEARCH / AEO / GEO
+
+Do not use gimmicks.
+
+Do not create hidden content.
+
+Do not create keyword-stuffed question sections.
+
+Instead make the page easy for search engines and AI systems to understand.
+
+Add direct answers to real questions.
+
+Examples:
+
+### What is skills taxonomy mapping?
+
+Answer directly in 40–70 words.
+
+### Why do universities need skills taxonomy mapping?
+
+Answer directly.
+
+### How do credentials map to skills?
+
+Answer directly.
+
+### What is the difference between a skills taxonomy and a competency framework?
+
+Answer directly.
+
+### Can universities use their own skills framework?
+
+Answer directly.
+
+### Can skills be mapped to ESCO?
+
+Answer based only on actual implementation.
+
+### Can skills be mapped to O*NET?
+
+Answer based only on actual implementation.
+
+### How does skills mapping support workforce intelligence?
+
+Answer directly.
+
+### How does skills mapping work with a Comprehensive Learner Record?
+
+Answer directly.
+
+### Can professional bodies map certifications to competencies?
+
+Answer directly.
+
+These answers should be visible page content.
+
+---
+
+# 24. ENTITY / TERMINOLOGY CONSISTENCY
+
+Use consistent terminology across CertifyMe.
+
+Preferred relationship:
+
+**Credential Infrastructure**
+→ **Comprehensive Learner Record**
+→ **Skills Taxonomy Mapping**
+→ **Workforce Intelligence**
+
+Use:
+
+* Skills taxonomy
+* Skills mapping
+* Learning outcomes
+* Competencies
+* Credentials
+* Occupations
+* Workforce intelligence
+
+Avoid constantly switching between:
+
+* skills intelligence
+* skill intelligence
+* skill ontology
+* talent intelligence
+* workforce analytics
+* competency intelligence
+
+unless there is a meaningful distinction.
+
+---
+
+# 25. STRUCTURED DATA
+
+Audit existing structured data.
+
+Use only valid schema describing visible content.
+
+Consider:
+
+* Organization
+* WebPage
+* BreadcrumbList
+* FAQPage where genuinely appropriate and compliant with current Google requirements
+
+Do not create:
+
+* Fake reviews
+* Fake ratings
+* Fake Product schema
+* Fake JobPosting schema
+* Unsupported claims
+
+Structured data must match visible content.
+
+---
+
+# 26. INTERNAL LINKS
+
+Ensure the page links naturally to:
+
+### Comprehensive Learner Record
+
+Anchor:
+
+> Comprehensive Learner Record
+
+### Workforce Intelligence
+
+Anchor:
+
+> Workforce Intelligence for Universities
+
+### Digital Credential Infrastructure
+
+Anchor:
+
+> Digital Credential Infrastructure
+
+### Open Badges / Verification
+
+Where relevant.
+
+These links should form a semantic product graph.
+
+---
+
+# 27. VISUAL DESIGN
+
+The current page has many useful conceptual diagrams.
+
+Do not remove them unnecessarily.
+
+However, improve visual hierarchy.
+
+The page should feel:
+
+* Institutional
+* Premium
+* Enterprise
+* Technical but accessible
+* Credible
+* Human
+
+Avoid:
+
+* Generic AI graphics
+* Excessive gradients
+* Too many cards
+* Dashboard overload
+* Repetitive boxes
+
+Prefer:
+
+* Architecture diagrams
+* Before/after relationships
+* Programme → skill examples
+* Credential → skill relationships
+* Taxonomy visualisations
+* Governance flows
+* Product UI
+
+---
+
+# 28. CURRENT DISCLAIMERS
+
+The current page is appropriately cautious about illustrative mappings and unsupported claims.
+
+Keep this discipline.
+
+However, do not let disclaimers dominate the page.
+
+For example, the current illustrative BSc Data Science mapping explains that it is conceptual and not a live mapping interface.
+
+Keep this as a caption.
+
+Do not put a large warning block above the product value proposition.
+
+---
+
+# 29. HUMAN WRITING TEST
+
+Review every section.
+
+Remove generic AI SaaS language.
+
+Avoid excessive:
+
+* Unlock
+* Empower
+* Transform
+* Revolutionise
+* Seamless
+* Cutting-edge
+* Next-generation
+* Game-changing
+
+Use precise institutional language.
+
+The page should sound like it was written by people who understand:
+
+* Higher education
+* Curriculum governance
+* Professional standards
+* Digital credentials
+* Skills frameworks
+* Enterprise architecture
+* Workforce intelligence
+
+---
+
+# 30. FIVE-SECOND ICP TEST
+
+After implementing the changes, test the first viewport.
+
+### Vice-Chancellor
+
+Can they understand:
+
+> “This gives our institution a structured skills language connecting programmes and credentials to workforce relevance.”
+
+### CIO
+
+Can they understand:
+
+> “This is a governed institutional skills layer that connects credential and learner-record data to external frameworks and workforce systems.”
+
+### Chartered Body Director
+
+Can they understand:
+
+> “This connects our professional standards and certification requirements to structured competencies and skills while preserving our authority.”
+
+If any answer is no, improve the hero and first two sections.
+
+---
+
+# 31. CONVERSION
+
+Primary CTA:
+
+**Request an Institutional Demo**
+
+Secondary:
+
+**Explore Workforce Intelligence**
+
+or
+
+**Explore Comprehensive Learner Records**
+
+Avoid:
+
+* Start free
+* Try it yourself
+* Find your skills
+* Build your profile
+* Find jobs
+
+Those are consumer-oriented.
+
+---
+
+# 32. FINAL PRODUCT ARCHITECTURE
+
+Make the relationship between the three solution areas clear:
+
+### Comprehensive Learner Record
+
+**What has the learner achieved?**
+
+↓
+
+### Skills Taxonomy Mapping
+
+**What skills and competencies does that achievement represent?**
+
+↓
+
+### Workforce Intelligence
+
+**Where are those skills relevant in the workforce?**
+
+This is the most important cross-page relationship.
+
+---
+
+# 33. FINAL VALIDATION
+
+Before completing:
+
+### ICP
+
+* [ ] VC / university leadership understands value
+* [ ] CIO / IT understands architecture value
+* [ ] Chartered body leadership understands certification value
+* [ ] Student is not positioned as buyer
+
+### Messaging
+
+* [ ] Institutional skills layer is clear
+* [ ] Credential mapping is not the only story
+* [ ] Governance is clear
+* [ ] Institutional ownership is clear
+* [ ] Workforce connection is clear
+
+### SEO
+
+* [ ] Title
+* [ ] Meta description
+* [ ] H1
+* [ ] H2 structure
+* [ ] Keywords
+* [ ] Internal links
+* [ ] Canonical
+* [ ] Sitemap
+* [ ] Robots
+* [ ] Structured data
+* [ ] Open Graph
+
+### AI Search
+
+* [ ] Clear definitions
+* [ ] Direct answers
+* [ ] Consistent entities
+* [ ] Strong internal linking
+* [ ] Crawlable text
+* [ ] No hidden content
+* [ ] No keyword stuffing
+
+### UX
+
+* [ ] 5-second understanding
+* [ ] Strong executive story
+* [ ] Clear architecture
+* [ ] Good visual hierarchy
+* [ ] Accessible
+* [ ] Responsive
+* [ ] Premium B2B appearance
+
+---
+
+# REQUIRED OUTPUT
+
+Implement the improvements in the existing application.
+
+Then provide a concise report covering:
+
+1. ICP changes
+2. Messaging changes
+3. SEO changes
+4. AI-search/content changes
+5. UX changes
+6. Technical SEO changes
+7. Internal-linking changes
+8. Any claims or product capabilities that were deliberately not added because they could not be verified
+
+Do not merely give recommendations.
+
+**Implement the corrections.**

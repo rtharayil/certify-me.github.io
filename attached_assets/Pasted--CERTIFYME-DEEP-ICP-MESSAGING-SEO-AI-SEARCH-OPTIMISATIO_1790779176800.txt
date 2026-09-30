@@ -1,0 +1,1230 @@
+# CERTIFYME — DEEP ICP, MESSAGING, SEO & AI SEARCH OPTIMISATION
+
+## IMPORTANT
+
+This is a **review and optimisation task**, not a request to rebuild the website.
+
+Inspect the existing implementation first.
+
+Review and improve these existing pages:
+
+* `/workforce-intelligence`
+* `/comprehensive-learner-record`
+
+The third URL supplied for review was a duplicate of `/workforce-intelligence`, so there are only two unique pages in this audit.
+
+Do not create additional pages unless required for SEO/content architecture and explicitly justified.
+
+Do not radically redesign the visual identity.
+
+Improve the current implementation through targeted, high-quality changes.
+
+---
+
+# 1. BUSINESS CONTEXT
+
+CertifyMe is a B2B digital credential and institutional intelligence platform.
+
+The primary customers are institutions, not consumers.
+
+The most important ICPs for these solution pages are:
+
+### ICP 1 — University Executive Leadership
+
+Examples:
+
+* Vice-Chancellor
+* President
+* Provost
+* Deputy Vice-Chancellor
+* Registrar
+* Academic leadership
+* Institutional strategy leadership
+
+Their concerns include:
+
+* Programme relevance
+* Workforce relevance
+* Graduate employability
+* Institutional differentiation
+* Academic strategy
+* Programme investment
+* Employer relationships
+* Evidence for accreditation and institutional reporting
+* Digital transformation
+* Long-term institutional infrastructure
+
+---
+
+### ICP 2 — Higher Education Technology Leadership
+
+Examples:
+
+* CIO
+* CTO
+* Director of IT
+* Director of Digital Transformation
+* Enterprise Architecture leadership
+
+Their concerns include:
+
+* Integration
+* Architecture
+* APIs
+* SIS / LMS connectivity
+* Identity
+* Security
+* Governance
+* Data ownership
+* Interoperability
+* Open standards
+* Scalability
+* Institutional control
+* Avoiding fragmented point solutions
+
+---
+
+### ICP 3 — Chartered / Professional / Certification Bodies
+
+Examples:
+
+* Director
+* CEO
+* Registrar
+* Head of Certification
+* Head of Membership
+* Digital Transformation Director
+* Professional Standards leadership
+
+Their concerns include:
+
+* Certification
+* Professional development
+* CPD
+* Competencies
+* Skills
+* Renewals
+* Professional pathways
+* Credential verification
+* Employer recognition
+* Member value
+* Maintaining issuer authority
+* Lifelong professional records
+
+---
+
+# 2. PRIMARY POSITIONING PRINCIPLE
+
+The website must not primarily speak to students.
+
+The buyer is the institution.
+
+The learner is an important beneficiary, but not the primary buyer for these pages.
+
+Avoid making these pages feel like:
+
+* B2C career websites
+* Job boards
+* Student portals
+* Generic AI tools
+* Generic analytics software
+* Generic credential vendors
+
+The positioning should communicate:
+
+> CertifyMe provides institutional infrastructure that connects trusted credentials and learning records with skills and workforce intelligence.
+
+---
+
+# 3. PAGE 1 — WORKFORCE INTELLIGENCE
+
+URL:
+
+`/workforce-intelligence`
+
+## Current positioning
+
+The current hero is:
+
+> Connect what your university teaches to what the workforce needs.
+
+This is directionally strong.
+
+Keep the underlying idea, but refine the copy so that it speaks more strongly to institutional decision-makers.
+
+Recommended direction:
+
+### H1
+
+**Connect academic programmes to workforce demand.**
+
+### Supporting copy
+
+> CertifyMe Workforce Intelligence connects your institution's credentials and verified skills with occupations, employers and labour-market demand—helping university leaders understand programme relevance, skills gaps and career pathways.
+
+Do not blindly use this exact copy if a better version is produced, but preserve the positioning.
+
+---
+
+# 4. WORKFORCE INTELLIGENCE — EXECUTIVE MESSAGE
+
+Within the first viewport, the page must answer:
+
+### Who is this for?
+
+Universities and higher-education institutions.
+
+### What is it?
+
+Workforce intelligence.
+
+### What does it connect?
+
+Credentials + skills + programmes + occupations + employers + labour-market demand.
+
+### Why does the institution care?
+
+To understand programme relevance, curriculum alignment, skills gaps, employability and workforce opportunities.
+
+### What should the visitor do?
+
+Book a demo.
+
+The visitor should understand all of this within approximately five seconds.
+
+---
+
+# 5. DO NOT MAKE THE WORKFORCE PAGE A JOB BOARD
+
+Jobs can appear on the page.
+
+However, jobs are evidence of labour-market demand.
+
+They are NOT the primary product.
+
+Do not use B2C language such as:
+
+* Find your next job
+* Apply now
+* Find jobs for your skills
+* Start your career
+* Your next opportunity
+
+Instead use:
+
+* Employer demand
+* Labour-market demand
+* Occupation intelligence
+* Workforce opportunities
+* Career pathway intelligence
+* Programme-to-career alignment
+* Skills-to-occupation mapping
+
+If a job example is shown, explain:
+
+> This job requirement provides evidence of the skills and capabilities employers are requesting.
+
+---
+
+# 6. WORKFORCE PAGE — CORE STORY
+
+Build the page around this relationship:
+
+**Programmes**
+↓
+**Credentials**
+↓
+**Verified Skills**
+↓
+**Skills Taxonomy**
+↓
+**Occupations**
+↓
+**Employer Demand**
+↓
+**Labour-Market Intelligence**
+↓
+**Career Pathways**
+
+This is the central visual architecture.
+
+Do not turn these into unrelated product modules.
+
+They are connected layers of Workforce Intelligence.
+
+---
+
+# 7. ADD AN EXECUTIVE OUTCOME SECTION
+
+Add a strong section near the beginning:
+
+## From academic records to institutional intelligence
+
+Explain that universities already know:
+
+* What they teach
+* Which programmes they run
+* What credentials they issue
+* What learning outcomes exist
+
+The missing layer is understanding how those skills connect to external workforce demand.
+
+Then show four institutional outcomes:
+
+### Programme Relevance
+
+Understand which programmes develop skills associated with employer demand.
+
+### Curriculum Alignment
+
+Identify changing skills requirements and areas requiring academic review.
+
+### Employer Intelligence
+
+Understand which employers, sectors and occupations are associated with programme skills.
+
+### Career Pathways
+
+Understand how programmes and verified skills connect to occupations and career progression.
+
+---
+
+# 8. WORKFORCE PAGE — ICP-SPECIFIC VALUE
+
+Create clear but concise messaging for the major ICPs.
+
+## For University Leadership
+
+> See where your programmes connect to workforce demand and where institutional investment may require deeper market evidence.
+
+## For Academic & Curriculum Leaders
+
+> Compare represented programme skills with occupation and employer requirements.
+
+## For Careers & Employability
+
+> Build evidence-based career pathways from verified skills to occupations and employers.
+
+## For Employer Engagement
+
+> Identify industries, employers and skills relevant to specific programmes.
+
+## For CIO / IT Leadership
+
+> Connect credential, learner-record and skills infrastructure to external workforce data through governed integrations.
+
+Do not make these sections too large.
+
+---
+
+# 9. WORKFORCE PAGE — SKILLS INTELLIGENCE
+
+Strengthen this section.
+
+Show:
+
+### Skills represented by the institution
+
+Programme → credential → skill.
+
+### Skills requested by the market
+
+Occupation → employer → skill.
+
+### Skills gap
+
+Institutional skill supply vs external demand.
+
+Make the distinction clear:
+
+**Institutional evidence**
+
+and
+
+**External market evidence**
+
+are different sources.
+
+This is an important credibility principle.
+
+---
+
+# 10. WORKFORCE PAGE — PROGRAMME INTELLIGENCE
+
+Use a realistic product example.
+
+Example:
+
+**MSc Business Analytics**
+
+Programme evidence:
+
+* SQL
+* Data analysis
+* Statistics
+* Data visualisation
+
+Occupation relationships:
+
+* Data Analyst
+* Business Analyst
+* BI Analyst
+* Reporting Analyst
+
+Then demonstrate the institutional question:
+
+> Are the skills taught and assessed in this programme aligned with the requirements appearing in relevant occupations?
+
+Do not make unsupported claims about actual demand unless real data is available.
+
+---
+
+# 11. WORKFORCE PAGE — EMPLOYER INTELLIGENCE
+
+Show that the product can connect skills and occupations to:
+
+* Employers
+* Industries
+* Regions
+* Job requirements
+* Salary information where available
+* Work modes where available
+* Emerging requirements
+
+If the implementation currently has no live data source connected, do not fabricate numbers.
+
+Use clearly labelled illustrative data.
+
+Move disclaimers into small supporting text rather than making the entire page feel hypothetical.
+
+---
+
+# 12. WORKFORCE PAGE — CAREER PATHWAYS
+
+Show:
+
+Programme
+→ Skills
+→ Entry occupations
+→ Career progression
+→ Industries
+
+This is institutional career intelligence.
+
+Do not present it as an employment guarantee.
+
+Use language such as:
+
+> Possible career pathway
+
+> Occupations to investigate
+
+> Workforce pathway
+
+Do not imply that completing a programme guarantees a particular job.
+
+---
+
+# 13. WORKFORCE PAGE — REDUCE EXCESSIVE DISCLAIMERS
+
+The current page contains many repeated qualifications such as:
+
+* illustrative
+* not live data
+* no live employer demand
+* depends on data provider
+* questions to investigate
+* not a promise of employment
+
+These are useful for credibility but currently weaken the commercial narrative.
+
+Keep necessary disclaimers.
+
+However:
+
+### Move them to:
+
+* small captions
+* methodology notes
+* data-source notes
+* footnotes
+* tooltips
+
+Do not make the primary story sound hypothetical.
+
+The page must feel like:
+
+> A real enterprise product with responsible data governance.
+
+Not:
+
+> A concept for a future product.
+
+---
+
+# 14. PAGE 2 — COMPREHENSIVE LEARNER RECORD
+
+URL:
+
+`/comprehensive-learner-record`
+
+Current H1:
+
+> Build a Complete, Verifiable Record of Learning
+
+This is clear but learner-centric.
+
+Reposition the opening toward the institution.
+
+Recommended direction:
+
+### H1
+
+**Build a complete, verifiable learner record for your institution.**
+
+Supporting copy:
+
+> Connect degrees, credentials, skills, competencies and learning experiences into a structured digital record—while preserving institutional authority, provenance and verification.
+
+Again, improve the wording if necessary, but preserve the institutional positioning.
+
+---
+
+# 15. CLR PAGE — EXECUTIVE VALUE
+
+The first sections should answer:
+
+### Why should a university implement a CLR?
+
+Because academic achievement increasingly exists across:
+
+* Degrees
+* Courses
+* Certificates
+* Micro-credentials
+* Digital badges
+* Projects
+* Placements
+* Competencies
+* Skills
+* Professional development
+
+A CLR gives the institution a structured way to connect these achievements without replacing the authoritative academic transcript.
+
+This distinction is important.
+
+Keep:
+
+> A CLR complements the transcript. It does not replace the authoritative academic record.
+
+This is strong and should remain.
+
+---
+
+# 16. CLR PAGE — CIO / IT MESSAGE
+
+Strengthen the architecture story.
+
+Show:
+
+SIS
++
+LMS
++
+Credential Platform
++
+Skills Framework
++
+Other achievement sources
+
+↓
+
+**CertifyMe**
+
+↓
+
+**Comprehensive Learner Record**
+
+↓
+
+Credentials + Skills + Achievements + Evidence
+
+↓
+
+Verification / Sharing / Institutional Systems
+
+The CIO should immediately understand that this is an infrastructure layer rather than merely a learner profile.
+
+---
+
+# 17. CLR PAGE — UNIVERSITY EXECUTIVE MESSAGE
+
+Add a concise institutional value section:
+
+### One record. Multiple institutional outcomes.
+
+For example:
+
+* More complete representation of learning
+* Better evidence of programme outcomes
+* Structured skills information
+* Portable and verifiable achievements
+* Stronger employer-facing evidence
+* Foundation for workforce intelligence
+* Institutional control over credential provenance
+
+---
+
+# 18. CLR PAGE — CHARTERED BODIES
+
+This ICP must be more visible.
+
+Create a dedicated section:
+
+## Comprehensive records for professional and chartered bodies
+
+Explain how the model can connect:
+
+* Professional certifications
+* Membership achievements
+* CPD
+* Competencies
+* Skills
+* Renewal milestones
+* Professional development
+* Work-based achievements
+* Verification
+
+The important message:
+
+> The issuing body remains the authoritative source of its own achievements.
+
+This is especially important for professional associations and chartered bodies.
+
+---
+
+# 19. CLR PAGE — DO NOT MAKE IT JUST A LEARNER STORY
+
+The current page has strong learner-oriented material.
+
+Keep the learner experience.
+
+But make the hierarchy:
+
+**Institution**
+→ institutional record infrastructure
+→ standards
+→ governance
+→ credentials
+→ skills
+→ learner record
+→ learner benefit
+
+Not:
+
+**Learner**
+→ learner story
+→ learner profile
+→ learner benefit
+→ institution later
+
+The buyer should remain visible.
+
+---
+
+# 20. SEO STRATEGY
+
+Do a complete SEO audit of both pages.
+
+Do not simply insert keywords.
+
+Create a keyword-to-page mapping.
+
+---
+
+## WORKFORCE INTELLIGENCE PRIMARY TERMS
+
+Primary:
+
+* workforce intelligence for universities
+* workforce intelligence higher education
+* labour market intelligence universities
+* workforce intelligence university
+
+Secondary:
+
+* skills intelligence higher education
+* employer demand intelligence
+* curriculum skills mapping
+* programme workforce alignment
+* skills gap analysis higher education
+* career intelligence universities
+* career pathway intelligence
+* university workforce analytics
+* graduate employability intelligence
+* employer intelligence higher education
+
+Use UK spelling where appropriate for international / UK higher-education audiences:
+
+* labour
+* programme
+* organisation
+
+But don't force UK spelling into contexts where the product intentionally targets US search intent.
+
+---
+
+## CLR PRIMARY TERMS
+
+Primary:
+
+* comprehensive learner record
+* comprehensive learner record platform
+* CLR platform
+* CLR 2.0
+* comprehensive learner record higher education
+
+Secondary:
+
+* digital learner record
+* learner record platform
+* comprehensive learner record university
+* digital credentials higher education
+* verifiable learner record
+* skills-based learner record
+* learner records for universities
+* CLR vs transcript
+* Open Badges 3.0 CLR
+* W3C verifiable credentials education
+
+---
+
+# 21. TITLE TAGS
+
+Audit the current title tags.
+
+Use concise, search-oriented titles.
+
+Suggested direction:
+
+### Workforce
+
+**Workforce Intelligence for Universities | CertifyMe**
+
+### CLR
+
+**Comprehensive Learner Record (CLR) Platform | CertifyMe**
+
+Do not make titles excessively long.
+
+---
+
+# 22. META DESCRIPTIONS
+
+Create unique descriptions.
+
+Example Workforce direction:
+
+> Connect university programmes, credentials and verified skills with occupations, employers and labour-market demand using CertifyMe Workforce Intelligence.
+
+Example CLR direction:
+
+> Build a verifiable Comprehensive Learner Record connecting degrees, credentials, skills and achievements across the learner lifecycle.
+
+Improve these where appropriate.
+
+Do not keyword stuff.
+
+---
+
+# 23. H1 / H2 STRUCTURE
+
+Ensure each page has:
+
+* Exactly one clear H1
+* Logical H2 hierarchy
+* H3s beneath the appropriate H2
+* No headings used purely for visual styling
+
+The heading structure should make sense if extracted as plain text.
+
+This is important for both accessibility and machine understanding.
+
+---
+
+# 24. AI SEARCH / AEO / GEO
+
+Do NOT implement gimmicks such as:
+
+* keyword stuffing
+* unnatural question spam
+* hidden text
+* AI-only pages
+* fake `llms.txt` claims
+* repeated keyword blocks
+* fake authority statements
+
+Google's current guidance is that the fundamentals of SEO remain the basis for visibility in AI Search experiences.
+
+Instead:
+
+### Make the pages easy for search systems and AI systems to understand.
+
+For each major concept, provide:
+
+1. Clear definition
+2. Direct answer
+3. Supporting explanation
+4. Product implementation
+5. Relevant standards
+6. Internal links
+7. Evidence / methodology where appropriate
+
+---
+
+# 25. ADD DIRECT-ANSWER CONTENT
+
+The Workforce page should answer questions such as:
+
+### What is workforce intelligence for universities?
+
+Give a concise 40–70 word answer.
+
+### How does workforce intelligence help universities?
+
+Give a concise direct answer.
+
+### How does CertifyMe connect credentials to workforce demand?
+
+Give a concise direct answer.
+
+### What is skills intelligence in higher education?
+
+Give a concise direct answer.
+
+### How can universities compare programme skills with employer demand?
+
+Give a concise direct answer.
+
+---
+
+The CLR page should answer:
+
+### What is a Comprehensive Learner Record?
+
+### What does CLR stand for?
+
+### What is CLR 2.0?
+
+### Does a CLR replace a transcript?
+
+### What can a CLR contain?
+
+### How does a CLR work with digital credentials?
+
+### How does CLR relate to W3C Verifiable Credentials?
+
+### Who uses Comprehensive Learner Records?
+
+### Can professional bodies use a CLR?
+
+These questions already exist in the current CLR page and should be retained and improved.
+
+---
+
+# 26. STRUCTURED DATA
+
+Audit the existing structured data.
+
+Use only schema that genuinely describes visible page content.
+
+Consider where appropriate:
+
+* Organization
+* WebSite
+* WebPage
+* BreadcrumbList
+* FAQPage only where the visible page genuinely contains eligible FAQ content and current Google guidelines support the intended use
+* Article schema for actual editorial content, not product pages
+
+Do not create fake Product, Review, AggregateRating or JobPosting markup.
+
+Structured data must match visible content. Google's guidance specifically emphasizes this.
+
+---
+
+# 27. INTERNAL LINKING
+
+Create deliberate contextual links between:
+
+Workforce Intelligence
+→ Comprehensive Learner Record
+
+Workforce Intelligence
+→ Skills Taxonomy Mapping
+
+Workforce Intelligence
+→ Digital Credential Infrastructure
+
+CLR
+→ Digital Credential Infrastructure
+
+CLR
+→ Skills Taxonomy Mapping
+
+CLR
+→ Workforce Intelligence
+
+The anchor text should describe the destination naturally.
+
+Avoid generic:
+
+> Click here.
+
+Prefer:
+
+> Explore Workforce Intelligence
+
+> Explore Skills Taxonomy Mapping
+
+> Learn about Comprehensive Learner Records
+
+---
+
+# 28. ENTITY CONSISTENCY
+
+Use the same terminology consistently.
+
+Preferred concepts:
+
+**CertifyMe**
+
+**Digital Credential Infrastructure**
+
+**Comprehensive Learner Record / CLR**
+
+**Skills Taxonomy**
+
+**Workforce Intelligence**
+
+**Labour-Market Intelligence**
+
+**Verified Credentials**
+
+**Open Badges 3.0**
+
+**W3C Verifiable Credentials**
+
+Avoid constantly renaming the same concept.
+
+This helps both users and machine systems build a clear understanding of CertifyMe's product architecture.
+
+---
+
+# 29. AUTHORITY / TRUST
+
+Strengthen trust signals without inventing anything.
+
+Where genuinely supported, clearly identify:
+
+* 1EdTech
+* Open Badges 3.0
+* CLR
+* W3C
+* Security certifications
+* Privacy standards
+* Relevant integrations
+
+Use links to authoritative standards documentation where appropriate.
+
+Do not claim that a product capability is certified simply because the underlying standard exists.
+
+---
+
+# 30. DATA METHODOLOGY
+
+For Workforce Intelligence, add a concise methodology section.
+
+Explain:
+
+* What constitutes institutional evidence
+* What constitutes external labour-market data
+* How skills are mapped
+* How occupations are mapped
+* How employer data is sourced
+* Refresh frequency
+* Geography
+* Coverage
+* Data limitations
+
+Do not invent methodology.
+
+If these details depend on the customer's selected data source, say so.
+
+This will improve trust with CIOs and senior academic leaders.
+
+---
+
+# 31. VISUAL / UX AUDIT
+
+Review both pages visually.
+
+The design should feel:
+
+* Premium
+* Institutional
+* Enterprise
+* Modern
+* Credible
+* Human
+* Data-driven
+
+Avoid:
+
+* excessive gradients
+* generic AI artwork
+* excessive floating cards
+* repetitive cards
+* excessive animations
+* generic stock imagery
+* dashboard overload
+
+Use:
+
+* real product UI
+* clean diagrams
+* clear relationships
+* meaningful charts
+* institutional workflows
+* restrained typography
+* strong whitespace
+
+---
+
+# 32. REMOVE AI-WRITTEN FEEL
+
+Review every paragraph.
+
+Remove repetitive phrases such as:
+
+* unlock
+* transform
+* empower
+* revolutionise
+* future of education
+* next-generation
+* seamless
+* cutting-edge
+* game-changing
+
+unless they are genuinely necessary.
+
+Prefer precise statements.
+
+The site should sound like a company that understands:
+
+* university governance
+* academic programmes
+* credentials
+* enterprise architecture
+* skills
+* workforce intelligence
+* professional certification
+
+It should NOT sound like generic AI-generated SaaS marketing.
+
+---
+
+# 33. EXECUTIVE 5-SECOND TEST
+
+After implementing the changes, inspect each page at desktop width.
+
+Ask:
+
+### Workforce Intelligence
+
+Can a Vice-Chancellor immediately understand:
+
+> “This helps my university understand how academic programmes and skills connect to workforce demand.”
+
+Can a CIO understand:
+
+> “This connects institutional credential/skills infrastructure to external workforce data.”
+
+### CLR
+
+Can a Vice-Chancellor understand:
+
+> “This gives our institution a more complete, verifiable digital learner record.”
+
+Can a CIO understand:
+
+> “This is an institutional data/credential layer that connects existing systems and preserves provenance.”
+
+Can a Chartered Body Director understand:
+
+> “This can represent professional certifications, competencies, CPD and renewal milestones in a verifiable record.”
+
+If not, rewrite the relevant section.
+
+---
+
+# 34. CONVERSION STRATEGY
+
+Primary CTA across both pages:
+
+**Request a Demo**
+
+or
+
+**Book an Institutional Demo**
+
+Do not use consumer-style CTAs.
+
+Secondary CTAs should lead deeper into the product architecture.
+
+For example:
+
+Workforce Intelligence:
+**Explore Skills Taxonomy**
+
+CLR:
+**Explore Workforce Intelligence**
+
+Maintain a coherent conversion path.
+
+---
+
+# 35. FINAL VALIDATION
+
+Before completing the work, run the following checks.
+
+### Messaging
+
+* [ ] Correct ICP
+* [ ] Executive value visible
+* [ ] CIO value visible
+* [ ] Chartered body value visible where relevant
+* [ ] No B2C positioning
+* [ ] No job-board positioning
+* [ ] No generic AI marketing copy
+
+### SEO
+
+* [ ] Unique title
+* [ ] Unique meta description
+* [ ] Correct H1
+* [ ] Logical H2/H3 structure
+* [ ] Target keywords used naturally
+* [ ] Internal links
+* [ ] Canonical URL
+* [ ] Open Graph
+* [ ] XML sitemap inclusion
+* [ ] Robots/indexability verified
+* [ ] Structured data validated
+* [ ] No duplicate metadata
+
+### AI Search / Answer Discovery
+
+* [ ] Clear definitions
+* [ ] Direct answers
+* [ ] Strong entity relationships
+* [ ] Clear terminology
+* [ ] Useful FAQ content
+* [ ] Authoritative external references where relevant
+* [ ] Important content available as crawlable text
+* [ ] No hidden SEO content
+* [ ] No keyword stuffing
+
+### UX
+
+* [ ] 5-second comprehension
+* [ ] Clear CTA
+* [ ] Strong hierarchy
+* [ ] Good whitespace
+* [ ] Accessible contrast
+* [ ] Responsive layout
+* [ ] No excessive cards
+* [ ] No unnecessary animations
+* [ ] Product visuals communicate real functionality
+
+---
+
+# 36. REQUIRED OUTPUT FROM REPLIT
+
+After making changes, provide a concise implementation report.
+
+For each page:
+
+### `/workforce-intelligence`
+
+1. Original positioning
+2. ICP problem identified
+3. Messaging changes
+4. SEO changes
+5. AI-search/content changes
+6. UX changes
+7. Technical SEO changes
+
+### `/comprehensive-learner-record`
+
+1. Original positioning
+2. ICP problem identified
+3. Messaging changes
+4. SEO changes
+5. AI-search/content changes
+6. UX changes
+7. Technical SEO changes
+
+Then provide:
+
+### Cross-site changes
+
+* Navigation
+* Internal linking
+* Terminology
+* CTA consistency
+* Metadata
+* Schema
+* Accessibility
+* Performance
+
+Do not merely report what should change.
+
+**Implement the changes in the existing application.**
+
+---
+
+# FINAL PRODUCT POSITIONING
+
+The overall CertifyMe story should become clear:
+
+### CertifyMe
+
+**Institutional digital credential infrastructure**
+
+↓
+
+**Comprehensive Learner Records**
+
+↓
+
+**Verified Skills & Skills Taxonomy**
+
+↓
+
+**Workforce Intelligence**
+
+↓
+
+**Programme, Employer, Occupation & Career Intelligence**
+
+The product should feel like **institutional infrastructure for the relationship between learning, credentials, skills and workforce demand**.
+
+It should not feel like a student job platform.
+
+It should not feel like a generic digital badge vendor.
+
+It should not feel like an AI-generated analytics product.
+
+It should feel like a serious B2B platform designed for universities, professional bodies and institutions.
