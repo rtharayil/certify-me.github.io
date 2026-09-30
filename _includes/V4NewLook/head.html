@@ -113,6 +113,9 @@
   {% if page.partner_brand_assets %}
   <link href="/assets4/css/partner-brand-assets.css" rel="stylesheet">
   {% endif %}
+  {% if page.custom_stylesheet %}
+  <link href="{{ page.custom_stylesheet | relative_url }}" rel="stylesheet">
+  {% endif %}
 
   <!-- STRUCTURED DATA: Organization + WebSite + SoftwareApplication -->
   <script type="application/ld+json">
