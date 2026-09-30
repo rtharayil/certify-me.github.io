@@ -16,7 +16,6 @@ HeroLead: "Go beyond basic digital badges."
 HeroText: "Issue verifiable degrees, certificates, and badges — connected to skills, Comprehensive Learner Records (CLR), and workforce insights."
 HeroPrimaryCTA: "Request Demo"
 HeroSecondaryCTA: "Sample Credential Walkthrough"
-HeroProofIntegrations: "Enterprise-Ready Integrations"
 HeroSupportingLine: "Built on open standards. Designed for institutional scale."
 HeroImage: /assets4/images/certifyme-verifiable-credentials-skills-clr-hero-960.webp
 HeroImageMobile: /assets4/images/certifyme-verifiable-credentials-skills-clr-hero-480.webp
