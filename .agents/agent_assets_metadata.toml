@@ -11,9 +11,25 @@ id = "PmrfO5yTg9XQO-oyL58m1"
 uri = "file://attached_assets/CertifyMe-SEO-GEO-Audit-2026.md"
 type = "text"
 title = "CertifyMe — Full AI SEO + GEO Audit Report 2026"
+logical_id = "a9cb41d4-c07b-4c01-aecc-1e9f2edf5723"
 
 [[outputs]]
 id = "q8vweVagj-QZYlaNGTGcI"
 uri = "file://assets4/CertifyMe-GDPR-Enterprise-Policy-v3.0.docx"
 type = "word_document"
 title = "CertifyMe GDPR Enterprise Policy v3.0"
+logical_id = "a97b0503-9388-48a4-8aee-483d64f6327b"
+
+[[outputs]]
+id = "2BM7ozSkYbXUxDkiTJNpp"
+uri = "file://assets4/images/certifyme-verifiable-credentials-skills-clr-hero-960.webp"
+type = "image"
+title = "Restored homepage hero illustration"
+description = "Original composition with illustrative labels in place of unsupported verification and job-count claims."
+logical_id = "afca797d-e111-4301-bb47-f8fea149bc78"
+content_hash = "sha256:62f246dc4acbd13676965253b3b81883463554a622f48da5afb2f4272027b65b"
+size = 212184
+mtime_ms = 1790780525011
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/afca797d-e111-4301-bb47-f8fea149bc78/fe74f562-a7fd-48f9-8a5c-6fcb5c6774c9"
+storage_version_token = "1790780670632587"
+content_type = "image/webp"

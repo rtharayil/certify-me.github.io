@@ -23,7 +23,6 @@ HeroImageMobile: /assets4/images/certifyme-verifiable-credentials-skills-clr-her
 HeroImageWidth: 960
 HeroImageHeight: 1234
 HeroImageAlt: "Illustrative learner credential, skills, learner record and example career roles"
-HeroImageNote: "Illustrative product visual. Learner, skill mappings and career roles are examples, not verified records or live job data."
 imageLink: assets4/images/certifyme-digital-credentials-social-1200x630.jpg
 imageWidth: 1200
 imageHeight: 630
