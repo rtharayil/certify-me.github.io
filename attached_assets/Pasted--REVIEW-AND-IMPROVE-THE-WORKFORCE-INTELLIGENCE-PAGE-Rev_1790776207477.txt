@@ -1,0 +1,673 @@
+# REVIEW AND IMPROVE THE WORKFORCE INTELLIGENCE PAGE
+
+Review the **existing Workforce Intelligence page** in this project.
+
+This is **ONE SINGLE B2B SOLUTION PAGE**.
+
+Do not split it into Page 1, Page 2, Page 3, or separate products.
+
+Do not rebuild it from scratch.
+
+First inspect the current implementation, content, layout, components, graphics and UX. Then make targeted improvements.
+
+---
+
+## 1. PRODUCT POSITIONING
+
+We provide **Workforce Intelligence for universities**.
+
+The customer is the university.
+
+This is a B2B product designed for university teams such as:
+
+* Careers and Employability
+* Workforce Development
+* Employer Engagement
+* Academic Leadership
+* Faculty Leadership
+* Curriculum / Skills Teams
+* Strategy
+* Digital Transformation
+* University Leadership
+
+The page must NOT feel like:
+
+* A student job board
+* A consumer career website
+* A generic analytics dashboard
+* A recruitment agency
+* An AI-generated career advice tool
+
+The page should communicate:
+
+> **We help universities understand how their credentials and verified skills connect to the workforce.**
+
+---
+
+# 2. CORE PRODUCT STORY
+
+The entire page should tell one simple story:
+
+**Credentials → Skills → Workforce → Careers**
+
+More specifically:
+
+**University programmes and credentials**
+↓
+**Verified learner skills**
+↓
+**Skills taxonomy**
+↓
+**Occupations**
+↓
+**Employer demand**
+↓
+**Labour-market intelligence**
+↓
+**Career pathways**
+↓
+**Job opportunities**
+
+This is the central product architecture.
+
+Do not make these feel like separate products.
+
+They are different layers of the same Workforce Intelligence solution.
+
+---
+
+# 3. HERO SECTION
+
+The hero should immediately communicate:
+
+### Workforce Intelligence for Universities
+
+A strong positioning direction:
+
+> **Connect what your university teaches to what the workforce needs.**
+
+Supporting message:
+
+> Turn verified credentials and skills into actionable intelligence about employer demand, occupations, career pathways and workforce opportunities.
+
+The visitor should understand within 5 seconds:
+
+1. This is for universities.
+2. This is workforce intelligence.
+3. It connects education and skills to labour-market demand.
+4. It helps universities make better programme, curriculum, careers and employer decisions.
+
+Primary CTA:
+
+**Book a Demo**
+
+Secondary CTA:
+
+**Explore Workforce Intelligence**
+
+Avoid consumer language such as:
+
+* Find your next job
+* Apply now
+* Find jobs for you
+* Start your career
+* Your career journey
+
+---
+
+# 4. THE PROBLEM
+
+Explain the university problem clearly.
+
+Universities already have large amounts of information about:
+
+* Programmes
+* Courses
+* Modules
+* Credentials
+* Learners
+* Skills
+* Graduate outcomes
+
+But this information is often disconnected from external labour-market intelligence.
+
+The university needs to understand:
+
+* Which skills are employers demanding?
+* Which occupations require those skills?
+* Which programmes develop those skills?
+* Where are skills gaps?
+* Which industries are growing?
+* Which employers are hiring?
+* Which career pathways are connected to each programme?
+* How is employer demand changing?
+
+Make this concrete rather than using generic statements about “transformation”.
+
+---
+
+# 5. SHOW THE WORKFORCE INTELLIGENCE MODEL
+
+Create a strong visual section showing:
+
+### EDUCATION
+
+Programmes
+Courses
+Modules
+Credentials
+
+↓
+
+### VERIFIED SKILLS
+
+Skills
+Competencies
+Achievements
+Evidence
+
+↓
+
+### WORKFORCE INTELLIGENCE
+
+Skills taxonomy
+Occupations
+Employer demand
+Labour-market trends
+
+↓
+
+### CAREER PATHWAYS
+
+Occupations
+Industries
+Employers
+Opportunities
+
+This should be one of the strongest graphics on the page.
+
+It should feel like a real product architecture diagram, not decorative artwork.
+
+---
+
+# 6. CREDENTIAL → SKILL INTELLIGENCE
+
+Explain how verified credentials become useful workforce data.
+
+For example:
+
+**Degree / Certificate / Badge**
+
+contains:
+
+* Achievement
+* Criteria
+* Evidence
+* Skills
+* Competencies
+
+Those skills can then be mapped against a recognised skills taxonomy.
+
+Show the relationship:
+
+**Credential**
+→ **Verified Skill**
+→ **Taxonomy**
+→ **Occupation**
+→ **Employer Demand**
+
+Mention relevant standards where appropriate:
+
+* Open Badges 3.0
+* CLR 2.0
+
+Do not make the standards the main story.
+
+They support the intelligence layer.
+
+---
+
+# 7. SKILLS INTELLIGENCE
+
+Create a strong product section showing what the university can understand about skills.
+
+Examples:
+
+### Skills in demand
+
+Show skills with:
+
+* Demand
+* Growth
+* Industries
+* Occupations
+* Employers
+
+### Skills supplied by the university
+
+Show:
+
+* Programmes
+* Faculties
+* Credentials
+* Learner populations
+
+### Skills gaps
+
+Show:
+
+**Employer demand**
+vs.
+**University skill supply**
+
+This is where the product becomes strategically useful.
+
+---
+
+# 8. PROGRAMME / CURRICULUM INTELLIGENCE
+
+Show how Workforce Intelligence can help universities understand their programmes.
+
+Example:
+
+**MSc Business Analytics**
+
+Skills:
+
+* SQL
+* Data Analysis
+* Statistics
+* Data Visualisation
+* Business Intelligence
+
+Connected occupations:
+
+* Data Analyst
+* Business Analyst
+* BI Analyst
+* Reporting Analyst
+
+Employer demand:
+
+* Number of employers
+* Industries
+* Locations
+* Salary ranges
+* Required skills
+* Emerging skills
+
+The goal is to help universities understand:
+
+> Where does this programme lead in the labour market?
+
+---
+
+# 9. EMPLOYER INTELLIGENCE
+
+Show employer demand as a core part of the solution.
+
+The university should be able to understand:
+
+* Which employers are hiring for relevant skills?
+* Which employers are hiring graduates from related programmes?
+* What skills are employers requesting?
+* Which industries are creating demand?
+* Where are opportunities geographically?
+* How is employer demand changing?
+
+Use realistic product UI such as:
+
+Employer
+| Industry
+| Occupations
+| Skills
+| Location
+| Demand
+
+Do not invent real employer data unless it already exists in the application.
+
+If using demonstration data, label it clearly.
+
+---
+
+# 10. OCCUPATION INTELLIGENCE
+
+Show how skills connect to occupations.
+
+For example:
+
+**Skills**
+
+SQL
+Data Analysis
+Power BI
+Statistics
+
+↓
+
+**Occupations**
+
+Data Analyst
+Business Analyst
+BI Analyst
+
+↓
+
+**Industries**
+
+Finance
+Technology
+Consulting
+Healthcare
+
+This demonstrates that the platform is more than a simple job-search product.
+
+It provides an understanding of the workforce landscape.
+
+---
+
+# 11. CAREER PATHWAY INTELLIGENCE
+
+Career pathways should be presented from the **university's perspective**.
+
+For example:
+
+**Programme**
+
+MSc Data Analytics
+
+↓
+
+**Skills**
+
+Data Analysis
+SQL
+Statistics
+
+↓
+
+**Entry Occupations**
+
+Junior Data Analyst
+Reporting Analyst
+
+↓
+
+**Career Progression**
+
+Data Analyst
+Senior Data Analyst
+Analytics Manager
+
+↓
+
+**Industries**
+
+Technology
+Finance
+Healthcare
+Consulting
+
+This helps careers and academic teams understand learner pathways.
+
+---
+
+# 12. JOB OPPORTUNITIES
+
+Jobs can be included, but they are **not the main product positioning**.
+
+Do NOT make the page feel like a B2C job board.
+
+Instead explain:
+
+> Workforce Intelligence connects university skills and programmes to real labour-market opportunities.
+
+You can show example jobs as evidence.
+
+For example:
+
+**Data Analyst**
+
+Employer
+Location
+Salary
+Required skills
+
+Matched skills:
+
+✓ SQL
+✓ Data Analysis
+✓ Power BI
+
+Missing / emerging skills:
+
+* Python
+
+The purpose of this section is to demonstrate the connection between:
+
+**Skills → Occupations → Employers → Opportunities**
+
+Not to encourage the visitor to personally apply for jobs.
+
+---
+
+# 13. UNIVERSITY USE CASES
+
+Show practical university use cases.
+
+### Careers & Employability
+
+Understand where learner skills connect to employer demand and career pathways.
+
+### Academic & Curriculum Teams
+
+Identify skills gaps and understand programme-to-occupation alignment.
+
+### Employer Engagement
+
+Identify employers and skills relevant to university programmes.
+
+### Workforce Development
+
+Understand regional and sector workforce demand.
+
+### University Leadership
+
+Use labour-market intelligence to support programme strategy and investment decisions.
+
+---
+
+# 14. DATA VISUALISATION
+
+Improve the existing graphics.
+
+Prioritise:
+
+* Skills demand charts
+* Occupation maps
+* Employer demand
+* Programme-to-skill relationships
+* Skills gap visualisations
+* Career pathway diagrams
+* Geographic demand
+* Industry demand
+
+Avoid making every section a collection of generic cards.
+
+The visuals should answer real university questions.
+
+---
+
+# 15. ICP REVIEW
+
+Audit every section.
+
+Ask:
+
+> Would a university Careers Director immediately understand why this matters?
+
+Then ask:
+
+> Would an academic leader understand how this helps programme decisions?
+
+Then:
+
+> Would a university executive understand the strategic value?
+
+If not, rewrite the section.
+
+Do not make the page student-centric.
+
+---
+
+# 16. SEO
+
+Optimise this single page for B2B university search intent.
+
+Primary keyword themes:
+
+* Workforce Intelligence for Universities
+* Workforce Intelligence Higher Education
+* Labour Market Intelligence Universities
+* Skills Intelligence Higher Education
+* Career Intelligence Universities
+* University Workforce Analytics
+* Skills Gap Analysis Higher Education
+* Employer Demand Intelligence
+* Curriculum Skills Mapping
+* Graduate Employability Intelligence
+
+Improve:
+
+* Page title
+* Meta description
+* H1
+* H2s
+* Semantic HTML
+* Internal links
+* Image alt text
+* Open Graph metadata
+* Structured data where appropriate
+
+Do not keyword stuff.
+
+The copy must remain natural.
+
+---
+
+# 17. REMOVE AI-GENERATED FEEL
+
+The page must feel like a serious B2B university technology product.
+
+Remove:
+
+* Generic AI marketing language
+* Excessive buzzwords
+* Repetitive claims
+* “Unlock”
+* “Revolutionise”
+* “Transform the future”
+* “Empower your institution”
+* Long generic paragraphs
+* Fake statistics
+* Unsupported claims
+
+Prefer:
+
+* Specific product language
+* Concrete university use cases
+* Clear data relationships
+* Real product UI
+* Short explanations
+* Evidence over hype
+
+---
+
+# 18. VISUAL DESIGN
+
+Improve the existing page rather than redesigning everything.
+
+The design should feel:
+
+* Institutional
+* Modern
+* Premium
+* Data-driven
+* Credible
+* Clear
+* Human
+
+Avoid:
+
+* Excessive gradients
+* Generic AI illustrations
+* Too many floating cards
+* Overly futuristic visuals
+* Excessive animation
+* Stock imagery that does not communicate the product
+
+Use product UI and information visualisation wherever possible.
+
+---
+
+# 19. FINAL PAGE STRUCTURE
+
+The final single page should broadly flow like this:
+
+1. **Hero**
+
+   * Workforce Intelligence for Universities
+   * Clear value proposition
+   * CTA
+
+2. **The university workforce intelligence challenge**
+
+3. **Credentials → Skills → Workforce → Careers**
+
+   * Main architecture graphic
+
+4. **Skills Intelligence**
+
+5. **Programme & Curriculum Intelligence**
+
+6. **Occupation Intelligence**
+
+7. **Employer & Labour-Market Intelligence**
+
+8. **Career Pathway Intelligence**
+
+9. **Real Opportunity / Job-Market Connection**
+
+   * Jobs as evidence of workforce demand, not as a B2C job board
+
+10. **University Use Cases**
+
+11. **Standards / Data Infrastructure**
+
+* Open Badges 3.0
+* CLR 2.0
+* Skills taxonomy
+
+12. **Final CTA**
+
+* Book a Demo
+
+---
+
+# MOST IMPORTANT INSTRUCTION
+
+This is **ONE Workforce Intelligence solution page**.
+
+Do not divide it into Page 1, Page 2 or Page 3.
+
+Do not create separate B2C career pages.
+
+Do not make the student the buyer.
+
+The university is the customer.
+
+The core proposition is:
+
+> **Help universities connect verified credentials and skills to workforce demand, employers, occupations and career pathways.**
+
+Review the existing page against this positioning and make targeted improvements to the current implementation.
