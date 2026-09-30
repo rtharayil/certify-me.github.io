@@ -1,0 +1,1381 @@
+# Build Specification: University Workforce Intelligence & Career Opportunities
+
+Build a production-quality, responsive web application called **Workforce Intelligence** for a university digital-credentials platform.
+
+The purpose is NOT to create a workforce report.
+
+The purpose is to create a **learner-facing career opportunity marketplace** where a learner's verified university credentials and skills are used to discover relevant jobs, understand why they match, identify missing skills, and apply directly.
+
+The core product flow is:
+
+**Open Badges 3.0 → CLR 2.0 → Skills Taxonomy → Workforce Intelligence → Job Matching → Job Application**
+
+---
+
+# 1. PRODUCT CONCEPT
+
+A student/alumni member logs into the university credential platform.
+
+They have one or more verified credentials:
+
+* Degree
+* Diploma
+* Certificate
+* Microcredential
+* Digital badge
+* Professional certification
+* Course completion
+* Internship
+* Project
+* Co-curricular achievement
+
+Each credential contains or references verified achievement information.
+
+The system creates a machine-readable skills profile.
+
+Those skills are mapped to a governed skills taxonomy such as:
+
+* ESCO
+* O*NET
+* NACE Career Readiness Competencies
+* University custom taxonomy
+
+The Workforce Intelligence engine then connects those skills to:
+
+* occupations
+* job roles
+* employers
+* active vacancies
+* salary
+* location
+* remote/hybrid/on-site
+* seniority
+* employer demand
+* skills demand
+* career pathways
+
+The learner can then:
+
+**Find a job → View why they match → See skill gaps → View employer → Apply**
+
+---
+
+# 2. IMPORTANT PRODUCT PRINCIPLE
+
+Do NOT design this as an analytics/reporting dashboard.
+
+The primary CTA must be:
+
+**Find Jobs**
+
+The page should feel like a combination of:
+
+* verified digital credential
+* skills passport
+* career marketplace
+* job matching engine
+* career development platform
+
+The learner should immediately understand:
+
+> "These are jobs I can apply for because of the skills I have demonstrated through my verified education and credentials."
+
+---
+
+# 3. MAIN PAGE
+
+Route:
+
+`/career-opportunities`
+
+Optional credential-specific route:
+
+`/career-opportunities/:credentialId`
+
+Example:
+
+`/career-opportunities/dc524e303266`
+
+---
+
+# 4. HEADER
+
+Create a clean university/product navigation bar.
+
+Left:
+
+**CareerIQ**
+small text:
+
+`for University`
+
+Navigation:
+
+* Career Opportunities
+* My Credentials
+* My Skills
+* Applications
+
+Right:
+
+* Notifications
+* Profile avatar
+* User name
+
+On mobile:
+
+* hamburger menu
+* profile avatar
+
+---
+
+# 5. BREADCRUMB
+
+Display:
+
+`My Credentials / Certified Forensic Accountant / Career Opportunities`
+
+---
+
+# 6. HERO SECTION
+
+Headline:
+
+**Your credential opens career opportunities**
+
+Supporting copy:
+
+> Your verified learning achievements are matched to occupations, employer demand and live opportunities. Explore roles where your evidence-backed skills are relevant, identify skill gaps and apply directly.
+
+Show a verified credential card.
+
+Example:
+
+### Certified Forensic Accountant
+
+Issued by:
+
+`University / Professional Body`
+
+Date:
+
+`31 January 2026`
+
+Status:
+
+`Verified`
+
+Standards:
+
+`Open Badges 3.0`
+
+Show a verification icon.
+
+Buttons:
+
+**Find matching jobs**
+
+**View verified skills**
+
+**View credential**
+
+---
+
+# 7. CREDENTIAL-TO-CAREER MATCH
+
+Display a large score.
+
+Example:
+
+**95 / 100**
+
+Label:
+
+**Credential-to-career match**
+
+Supporting text:
+
+`Strong market alignment`
+
+This score should eventually be calculated from:
+
+* verified skills
+* occupation requirements
+* employer demand
+* learner preferences
+* location
+* experience
+* job requirements
+
+Do NOT make this merely a visual score.
+
+Create an API/service layer so it can eventually be calculated dynamically.
+
+---
+
+# 8. MARKET STATISTICS
+
+Create four cards:
+
+### Matching opportunities
+
+`12,486`
+
+`+14% this month`
+
+### Employers hiring
+
+`1,284`
+
+`Across 18 countries`
+
+### New roles
+
+`4,920`
+
+`Last 90 days`
+
+### Median salary
+
+`£62,000`
+
+`For matched roles`
+
+These values are demo data initially.
+
+The architecture must allow them to come from a labour-market data provider later.
+
+---
+
+# 9. VERIFIED SKILLS
+
+Section title:
+
+**Your verified skills**
+
+Description:
+
+> Skills are derived from your achievement evidence and normalised through the university's skills taxonomy.
+
+Display skills as chips/cards:
+
+* Data Analysis
+* Fraud Investigation
+* Financial Analysis
+* Risk Assessment
+* Communication
+* Python
+* SQL
+* Tableau
+* Power BI
+* Problem Solving
+
+Each skill should have:
+
+* skill name
+* taxonomy ID
+* taxonomy source
+* confidence
+* evidence source
+
+Example:
+
+`Data Analysis`
+
+`ESCO aligned`
+
+`Evidence: MSc Data Science`
+
+The UI should allow the learner to click a skill.
+
+Clicking opens:
+
+### Data Analysis
+
+Taxonomy:
+
+`ESCO`
+
+Taxonomy ID:
+
+`example-id`
+
+Evidence:
+
+`MSc Data Science`
+
+Credential:
+
+`Verified`
+
+---
+
+# 10. STANDARDS ARCHITECTURE
+
+Create a visual architecture section:
+
+```text
+OPEN BADGES 3.0
+       ↓
+     CLR 2.0
+       ↓
+SKILLS TAXONOMY
+       ↓
+WORKFORCE INTELLIGENCE
+       ↓
+JOB MATCHING
+       ↓
+APPLICATION
+```
+
+Explain each layer.
+
+### Open Badges 3.0
+
+Represents the verified achievement.
+
+Include:
+
+* issuer
+* learner
+* achievement
+* criteria
+* evidence
+* verification
+* skills
+
+### CLR 2.0
+
+Aggregates the learner's achievements.
+
+It may include:
+
+* degrees
+* courses
+* badges
+* competencies
+* skills
+* internships
+* projects
+* employment achievements
+
+### Skills Taxonomy
+
+Normalise skills.
+
+Support:
+
+* ESCO
+* O*NET
+* NACE
+* university taxonomy
+
+Allow crosswalks between taxonomies.
+
+### Workforce Intelligence
+
+Connect skills to:
+
+* occupations
+* jobs
+* employers
+* salary
+* locations
+* demand
+* career pathways
+
+---
+
+# 11. JOB MATCHING SECTION
+
+This is the MOST IMPORTANT section.
+
+Heading:
+
+**Jobs matched to your verified skills**
+
+Subheading:
+
+> Recommended from your credentials, verified skills, location and career preferences.
+
+Show:
+
+`12,486 opportunities`
+
+Filters:
+
+* Location
+* Distance
+* Minimum skill match
+* Salary
+* Job type
+* Full-time
+* Part-time
+* Contract
+* Internship
+* Remote
+* Hybrid
+* On-site
+* Experience level
+* Industry
+* Employer
+* Date posted
+
+Search input:
+
+`Search jobs, employers or skills`
+
+---
+
+# 12. JOB CARD
+
+Every job should be presented as a rich card.
+
+Example:
+
+### Forensic Accountant
+
+**Apex Consulting**
+
+London, UK
+
+Salary:
+
+`£65,000 – £78,000`
+
+Employment:
+
+`Full-time`
+
+Work mode:
+
+`Hybrid`
+
+Posted:
+
+`2 days ago`
+
+Then show:
+
+### Skill Match
+
+**94%**
+
+Progress bar.
+
+Then:
+
+### Skills you have
+
+Green chips:
+
+✓ Fraud Analysis
+
+✓ Investigations
+
+✓ Tableau
+
+✓ Financial Reporting
+
+✓ Communication
+
+Then:
+
+### Skills to develop
+
+Orange chips:
+
+* Power BI
+
+Then buttons:
+
+**Save**
+
+**View Job**
+
+**Apply Now**
+
+---
+
+# 13. "WHY THIS JOB?" PANEL
+
+When the learner clicks a job, show a detailed explanation.
+
+Example:
+
+## Why you're a 94% match
+
+You have:
+
+`14 of 16 required skills`
+
+### Verified matches
+
+✓ Fraud analysis
+✓ Investigation
+✓ Financial reporting
+✓ Tableau
+✓ Communication
+
+### Skill gaps
+
+○ Power BI
+○ Regulatory reporting
+
+### Evidence
+
+MSc Forensic Accounting
+
+University XYZ
+
+Verified credential
+
+Open Badges 3.0
+
+CLR 2.0
+
+The learner should be able to click:
+
+**View evidence**
+
+and see exactly which credential/module/achievement supports the skill.
+
+This is a key differentiator.
+
+---
+
+# 14. JOB DETAIL PAGE
+
+Route:
+
+`/jobs/:jobId`
+
+Include:
+
+## Job title
+
+Forensic Accountant
+
+## Employer
+
+Apex Consulting
+
+## Location
+
+London, UK
+
+## Salary
+
+£65,000–£78,000
+
+## Employment
+
+Full-time
+
+## Work mode
+
+Hybrid
+
+## Posted
+
+2 days ago
+
+Then:
+
+### Your match
+
+94%
+
+### Why you match
+
+List matched skills.
+
+### Missing skills
+
+List gaps.
+
+### About the role
+
+Full job description.
+
+### Responsibilities
+
+List responsibilities.
+
+### Requirements
+
+List requirements.
+
+### Skills
+
+List required skills.
+
+### Employer
+
+Employer profile.
+
+### Similar opportunities
+
+Show other jobs.
+
+Primary button:
+
+**Apply Now**
+
+Secondary:
+
+**Save Job**
+
+---
+
+# 15. APPLY FLOW
+
+The application process should NOT end at "View Job".
+
+The user should be able to apply.
+
+When clicking:
+
+**Apply Now**
+
+show:
+
+## Apply to Apex Consulting
+
+Pre-fill:
+
+* Name
+* Email
+* Phone
+* Location
+* Education
+* Verified credentials
+* Verified skills
+
+Allow the learner to choose:
+
+### Credentials to share
+
+☑ MSc Forensic Accounting
+
+☑ Digital Certificate
+
+☑ Data Analysis Badge
+
+☐ Other credential
+
+### Skills to share
+
+Allow selection.
+
+### Resume
+
+Upload or select existing verified CV.
+
+### Cover letter
+
+Text area.
+
+Then:
+
+**Submit Application**
+
+After submitting:
+
+`Application submitted successfully`
+
+---
+
+# 16. APPLICATION TRACKER
+
+Create route:
+
+`/applications`
+
+Heading:
+
+**My Applications**
+
+Cards/table:
+
+| Job                     | Employer        | Match | Status    | Date   |
+| ----------------------- | --------------- | ----: | --------- | ------ |
+| Forensic Accountant     | Apex Consulting |   94% | Applied   | 12 Sep |
+| Financial Crime Analyst | Bankline        |   91% | Interview | 8 Sep  |
+| Fraud Analyst           | FinTrust        |   84% | Saved     | 5 Sep  |
+
+Statuses:
+
+* Saved
+* Applied
+* Viewed
+* Shortlisted
+* Interview
+* Offer
+* Rejected
+* Withdrawn
+
+Allow filters.
+
+---
+
+# 17. EMPLOYER SECTION
+
+Create:
+
+**Top employers hiring for your skills**
+
+Cards:
+
+Apex Consulting
+
+`142 matching jobs`
+
+Bankline Group
+
+`96 matching jobs`
+
+FinTrust
+
+`84 matching jobs`
+
+Denton Technologies
+
+`71 matching jobs`
+
+Click employer.
+
+Employer page:
+
+* logo
+* description
+* industries
+* locations
+* open jobs
+* skills they hire for
+* salary range
+* work environment
+* career pathways
+
+Button:
+
+**View jobs**
+
+---
+
+# 18. LABOUR-MARKET INTELLIGENCE
+
+This section should help the learner understand the market, but remain action-oriented.
+
+Heading:
+
+**Where your skills are in demand**
+
+Show:
+
+* UK
+* US
+* India
+* Germany
+* Canada
+
+For each:
+
+* number of matching jobs
+* average salary
+* demand trend
+* top occupations
+
+Example:
+
+United Kingdom
+
+`5,996 opportunities`
+
+Demand:
+
+`High`
+
+Median salary:
+
+`£62,000`
+
+---
+
+# 19. SKILLS EMPLOYERS WANT
+
+Show:
+
+### Skills employers want
+
+Data Analysis — 91%
+
+Investigation — 83%
+
+Communication — 77%
+
+SQL — 63%
+
+Power BI — 58%
+
+Each skill can be clicked.
+
+Clicking opens:
+
+* definition
+* taxonomy
+* demand
+* jobs
+* employers
+* courses
+* learner's current evidence
+
+---
+
+# 20. SKILL GAP ENGINE
+
+Create:
+
+## Close your skill gaps
+
+Example:
+
+### Power BI
+
+Appears in:
+
+`58% of matched opportunities`
+
+Current status:
+
+`Not verified`
+
+Recommendation:
+
+> Add Power BI to increase the number of eligible opportunities.
+
+Button:
+
+**Find learning**
+
+Clicking opens learning opportunities.
+
+This should eventually connect to university courses, microcredentials and external learning providers.
+
+After completion:
+
+The learner receives a new credential/badge.
+
+The new credential updates the CLR.
+
+The skill becomes verified.
+
+The job-match engine recalculates.
+
+This creates the loop:
+
+```text
+JOB GAP
+   ↓
+LEARNING
+   ↓
+ASSESSMENT
+   ↓
+CREDENTIAL
+   ↓
+OPEN BADGE 3.0
+   ↓
+CLR 2.0
+   ↓
+SKILL VERIFIED
+   ↓
+NEW JOB MATCHES
+```
+
+---
+
+# 21. CAREER PATHWAYS
+
+Create:
+
+## Career pathways
+
+Example:
+
+```text
+Data Analyst
+     ↓
+Senior Data Analyst
+     ↓
+Data Scientist
+     ↓
+Analytics Manager
+```
+
+For each role show:
+
+* required skills
+* learner's current skills
+* skill gaps
+* recommended credentials
+* typical salary
+* job availability
+
+Example:
+
+### Data Scientist
+
+Current match:
+
+`78%`
+
+Skills missing:
+
+* Machine Learning
+* Python
+* Statistics
+
+Button:
+
+**Build pathway**
+
+---
+
+# 22. WORK ENVIRONMENT
+
+Show:
+
+Hybrid — 55%
+
+Remote — 25%
+
+On-site — 20%
+
+These should be based on matching jobs.
+
+---
+
+# 23. SENIORITY
+
+Show:
+
+Entry — 34%
+
+Mid-level — 42%
+
+Senior — 24%
+
+Again, based on matching jobs.
+
+---
+
+# 24. PERSONAL CAREER PROFILE
+
+Create a learner profile:
+
+## My Career Profile
+
+Verified credentials:
+
+`8`
+
+Verified skills:
+
+`42`
+
+Occupations matched:
+
+`18`
+
+Career readiness:
+
+`87%`
+
+Profile completion:
+
+`94%`
+
+Include:
+
+**Share my verified profile**
+
+This generates a public/controlled profile URL.
+
+---
+
+# 25. SKILL PASSPORT
+
+Create a separate section:
+
+## My Skill Passport
+
+For every skill:
+
+* skill name
+* verification status
+* evidence
+* issuer
+* credential
+* taxonomy
+* date verified
+
+Example:
+
+### Python
+
+Verified
+
+Evidence:
+
+MSc Data Science
+
+Issuer:
+
+University XYZ
+
+Taxonomy:
+
+ESCO / University Taxonomy
+
+Credential:
+
+Open Badges 3.0
+
+---
+
+# 26. DATA MODEL
+
+Build the backend so the system is not dependent on hardcoded UI.
+
+Core entities:
+
+### User
+
+```text
+id
+name
+email
+location
+preferences
+```
+
+### Credential
+
+```text
+id
+userId
+issuer
+credentialType
+title
+issuedAt
+expiresAt
+verificationStatus
+openBadgeVersion
+evidence
+criteria
+```
+
+### CLR
+
+```text
+id
+userId
+credentials[]
+achievements[]
+skills[]
+competencies[]
+activities[]
+```
+
+### Skill
+
+```text
+id
+name
+taxonomy
+taxonomyId
+description
+level
+evidence[]
+```
+
+### Occupation
+
+```text
+id
+title
+taxonomy
+requiredSkills[]
+```
+
+### Job
+
+```text
+id
+title
+employerId
+location
+salary
+employmentType
+workMode
+requiredSkills[]
+postedAt
+applicationUrl
+```
+
+### Employer
+
+```text
+id
+name
+logo
+description
+locations[]
+industries[]
+```
+
+### JobMatch
+
+```text
+userId
+jobId
+matchScore
+matchedSkills[]
+missingSkills[]
+explanation
+```
+
+### Application
+
+```text
+id
+userId
+jobId
+status
+submittedAt
+credentialsShared[]
+skillsShared[]
+resumeId
+```
+
+---
+
+# 27. API ARCHITECTURE
+
+Create a clean API layer.
+
+Example:
+
+```text
+GET /api/me
+GET /api/me/credentials
+GET /api/me/clr
+GET /api/me/skills
+GET /api/me/career-profile
+
+GET /api/jobs
+GET /api/jobs/:id
+GET /api/jobs/:id/match
+
+GET /api/employers
+GET /api/employers/:id
+
+GET /api/career-pathways
+GET /api/skills/:id
+GET /api/skills/:id/jobs
+
+POST /api/applications
+GET /api/applications
+PATCH /api/applications/:id
+
+GET /api/labour-market
+GET /api/workforce/skills-demand
+GET /api/workforce/occupations
+```
+
+---
+
+# 28. JOB MATCHING LOGIC
+
+Initially implement a demo matching algorithm.
+
+Example:
+
+```text
+match score =
+verified skill coverage
++ skill proficiency
++ occupation relevance
++ location preference
++ experience match
++ employment preference
+```
+
+Example:
+
+```text
+Required skills = 16
+
+Matched verified skills = 14
+
+Base skill match = 87.5%
+
+Location bonus = +3%
+
+Experience bonus = +2%
+
+Final match = 92.5%
+```
+
+Display the explanation.
+
+Do not simply show an unexplained AI score.
+
+---
+
+# 29. AI EXPLANATION
+
+Use AI only to explain the matching data.
+
+Example:
+
+> You are a strong match because your verified MSc credential demonstrates data analysis, SQL, statistical analysis and Python. This role additionally requests Power BI, which is not currently present in your verified skills.
+
+The AI must not invent credentials or skills.
+
+Every skill claim must trace back to:
+
+**Credential → Achievement → Evidence → Skill**
+
+---
+
+# 30. TAXONOMY ARCHITECTURE
+
+The taxonomy layer must be independent of the job board.
+
+Create:
+
+```text
+Institution Skill
+       ↓
+Crosswalk
+       ↓
+ESCO
+       ↓
+Occupation
+       ↓
+Job
+```
+
+Also allow:
+
+```text
+Institution Skill
+       ↓
+NACE
+```
+
+and:
+
+```text
+Institution Skill
+       ↓
+O*NET
+```
+
+Do not hardcode the platform to one taxonomy.
+
+Every skill should have:
+
+```text
+taxonomyName
+taxonomyVersion
+taxonomyId
+conceptUri
+mappingConfidence
+mappingSource
+```
+
+---
+
+# 31. OPEN BADGES 3.0
+
+Treat the credential as a portable verified achievement.
+
+The UI should show:
+
+**Open Badges 3.0**
+
+and allow:
+
+**View credential**
+
+**Verify credential**
+
+**Share credential**
+
+The credential should retain:
+
+* issuer
+* recipient
+* achievement
+* criteria
+* evidence
+* result
+* alignment
+* verification
+
+Do not put labour-market information into the credential itself.
+
+The workforce intelligence layer should consume the verified achievement and skills.
+
+---
+
+# 32. CLR 2.0
+
+The CLR layer should aggregate:
+
+* degree
+* certificates
+* badges
+* courses
+* competencies
+* skills
+* projects
+* internships
+* employment achievements
+
+Provide:
+
+**View my CLR**
+
+and:
+
+**Share my CLR**
+
+The learner should control what gets shared with an employer.
+
+---
+
+# 33. PRIVACY
+
+This is a university product, so privacy is essential.
+
+Do not expose:
+
+* private credentials
+* private skills
+* personal data
+* applications
+
+without learner permission.
+
+The learner chooses:
+
+**What to share**
+
+with each employer/application.
+
+Show:
+
+`You are sharing 1
