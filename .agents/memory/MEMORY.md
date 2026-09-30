@@ -5,5 +5,6 @@
 - [Mobile homepage overlap cascade](mobile-overlap-cascade.md) — legacy mobile `!important` rules can pull sections together or defeat new carousel layouts.
 - [Credential portability claims](credential-portability-claims.md) — open standards improve portability but do not remove issuer-key or status-resource dependencies.
 - [Sample credential truthfulness](sample-credential-truthfulness.md) — homepage demo uses one fictional university credential; separate taxonomy and market examples from live/verified claims.
+- [University Workforce Intelligence positioning](university-workforce-positioning.md) — the standalone Solutions page is B2B for university teams, not a learner job board.
 - [Public proof boundaries](public-proof-boundaries.md) — 1EdTech registry verifies OB3 issuer certification; review-site ratings do not prove Leader status or security audits.
 - [Browser checks in this workspace](browser-checks.md) — Playwright may lack its bundled browser; use installed system Chromium for local UI checks.
