@@ -11,7 +11,7 @@ sitemap.priority: 1
 
 # hero section 
 HeroEyebrow: "Institutional Credential Infrastructure"
-HeroTitle: "Digital Credentials That Connect Learning to Verifiable Skills and workfoces"
+HeroTitle: "Digital Credentials That Connect Learning to Verifiable Skills and Careers"
 HeroLead: "Go beyond basic digital badges."
 HeroText: "Issue verifiable degrees, certificates, and badges — connected to skills, Comprehensive Learner Records (CLR), and workforce insights."
 HeroPrimaryCTA: "Request Demo"
