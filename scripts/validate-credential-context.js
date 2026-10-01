@@ -26,7 +26,7 @@ async function main() {
           return allowed ? route.continue() : route.abort();
         });
         await page.goto(baseUrl, { waitUntil: "domcontentloaded", timeout: 30_000 });
-        const illustration = page.locator('img[src*="credential-six-layer-infographic.webp"]');
+        const illustration = page.locator('img[src*="credential-six-layer-stack.webp"]');
         assert.equal(await illustration.count(), 1, "The section must use the supplied infographic exactly once.");
         const section = illustration.locator("xpath=ancestor::section[1]");
         await section.scrollIntoViewIfNeeded();
@@ -35,7 +35,7 @@ async function main() {
           document.fonts.ready, new Promise((resolve) => setTimeout(resolve, 3000)),
         ]));
         const metrics = await section.evaluate((element) => {
-          const image = element.querySelector('img[src*="credential-six-layer-infographic.webp"]');
+          const image = element.querySelector('img[src*="credential-six-layer-stack.webp"]');
           const heading = element.querySelector("h2");
           const hero = document.querySelector("#hero-7");
           const imageBox = image.getBoundingClientRect();
