@@ -14,3 +14,9 @@ Keep a CDP touch-input session alive for the lifetime of its emulated phone page
 **Why:** In the installed Chromium, detaching a secondary CDP session after dispatching touch input reset the page's touch emulation: the primary pointer changed from coarse to fine and maxTouchPoints became zero. This made later landscape assertions exercise desktop mode even though the context was created as a phone.
 
 **How to apply:** Reuse one session per page for genuine swipe checks. Verify touch capability after gestures before diagnosing responsive failures as app bugs.
+
+Use the actual scrolling ancestor when capturing mobile homepage sections; do not assume the window is the scroll container.
+
+**Why:** The mobile homepage can scroll the body independently. Window scrolling left the view at the hero, while tall element screenshots clipped off-screen text and placed fixed navigation across the captured section.
+
+**How to apply:** Start with element.scrollIntoView, inspect the nearest scrollable ancestor, and adjust that ancestor for the fixed header. Confirm the target's viewport bounds and capture reading viewports rather than treating one tall element image as reliable visual evidence.
