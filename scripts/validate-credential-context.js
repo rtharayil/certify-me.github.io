@@ -80,13 +80,13 @@ async function main() {
         assert.deepEqual(metrics.explicitDimensions, ["1672", "941"], "Reserve intrinsic image space to avoid layout shifts.");
         assert(metrics.headingVisible && metrics.overflow <= 1, `No hidden headline or horizontal overflow at ${width}px.`);
         if (width >= 1024) {
-          assert(metrics.imageWidth >= Math.min(width - metrics.horizontalPadding, 1600) * .6
-            - metrics.columnGap * .6 - 1,
-            `The infographic must fill the wider 60% image area at ${width}px.`);
-          assert(Math.abs(metrics.imageWidth / metrics.copyWidth - 1.5) < .03,
-            `Desktop must use 40% text and 60% image at ${width}px.`);
-          assert(metrics.heading.left < metrics.image.left && metrics.heading.top < metrics.image.top + 400,
-            `Desktop must place text on the left and image on the right at ${width}px.`);
+          assert(metrics.imageWidth >= Math.min(width - metrics.horizontalPadding, 1600) * .7
+            - metrics.columnGap * .7 - 1,
+            `The infographic must fill the wider 70% image area at ${width}px.`);
+          assert(Math.abs(metrics.imageWidth / metrics.copyWidth - 7 / 3) < .03,
+            `Desktop must use 30% text and 70% image at ${width}px.`);
+          assert(metrics.image.right < metrics.heading.left && metrics.heading.top < metrics.image.top + 400,
+            `Desktop must place image on the left and text on the right at ${width}px.`);
         } else {
           assert(metrics.image.top > metrics.heading.bottom, `Phone text must precede the illustration at ${width}px.`);
           assert(metrics.image.left >= 0 && metrics.image.right <= width + 1, "The phone illustration must fit the screen.");
