@@ -9,4 +9,5 @@ The university credential walkthrough is marketing material, not product documen
 - Avoid process commentary such as “Earlier layers stay in view,” “Connections so far” and “Layers explored.” Capability summaries should explain value, not viewing history.
 - Keep navigation labels short and useful; basic Play, Pause, Previous and Next controls do not need marketing language.
 - Preserve fictional, unsigned and unverified example disclosures. Do not invent customer evidence, integration support, certifications, metrics, universal interoperability or career outcomes.
+- The homepage six-layer concept illustration intentionally has no visible sample-disclaimer caption, as requested. Keep the credential walkthrough's existing sample disclosures unchanged.
 - Treat ICP messaging checks as editorial persona reviews unless actual customer research has been performed; never describe them as customer interviews or measured conversion results.

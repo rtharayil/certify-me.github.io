@@ -11,9 +11,11 @@
     <div id="page" class="page font--jakarta">
         {% include V4NewLook/navbar.html %}
 
-        {% include V4NewLook/heroSection.html %}
-
-        {% include V4NewLook/credential-context.html %}
+        <main id="main-content">
+        <div class="credential-hero-flow">
+            {% include V4NewLook/heroSection.html %}
+            {% include V4NewLook/credential-context.html %}
+        </div>
 
         {% include V4NewLook/Statistics.html %}
 
