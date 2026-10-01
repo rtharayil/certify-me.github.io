@@ -1,0 +1,707 @@
+I reviewed the uploaded specification and the current CertifyMe website. The important finding is that **the live website already contains a substantial version of the “Sample Credential Walkthrough”**, so the right task is refinement rather than designing it from scratch.
+
+The current live experience already presents an 8-step walkthrough covering award data, QR/barcode, learner identity, email access, document verification, badge evidence, learning paths, and career context. ([CertifyMe][1])
+
+## A. Current Experience Analysis
+
+### What is working
+
+The current experience has several strong foundations:
+
+1. **It is clearly positioned as a product demonstration**
+
+   * “A UNIVERSITY CREDENTIAL, EXPLAINED”
+   * “From award details to evidence and next steps.”
+   * It explicitly says the example is fictional and not issued. ([CertifyMe][1])
+
+2. **It shows a real credential rather than an abstract illustration.**
+
+   * Asterford University
+   * Applied Data & Project Leadership
+   * learner, date, credential ID, QR and barcode. ([CertifyMe][1])
+
+3. **It demonstrates technical credential structure.**
+   The current walkthrough explains issuer, achievement, learner, evidence and status using an Open Badges-style record. ([CertifyMe][1])
+
+4. **It attempts to move beyond credential issuance.**
+   The final steps already introduce learning paths and career context. ([CertifyMe][1])
+
+5. **It is appropriately cautious about claims.**
+   The walkthrough repeatedly distinguishes fictional examples from actual verification, live jobs and personalised recommendations. That is particularly important for an enterprise audience. ([CertifyMe][1])
+
+### The biggest problem
+
+The current walkthrough is **telling the story of a credential lifecycle**, whereas your specification calls for **telling the story of the credential as institutional infrastructure**.
+
+Those are not quite the same thing.
+
+The current sequence is:
+
+> Award data → QR/barcode → learner identity → email access → document checks → badge evidence → learning path → career context
+
+Your intended strategic sequence is:
+
+> **Credential → Verification → Skills → Taxonomy → Learner Record → Workforce Intelligence → Career Relevance → Institutional Value**
+
+The difference is significant.
+
+The existing flow spends four of its first five stages on relatively operational mechanics:
+
+* QR/barcode
+* learner identity
+* email confirmation
+* document signature
+
+That makes the experience feel closer to **“here are all the things that happen around a digital credential”** than:
+
+> **“Here is why the credential becomes a strategic institutional asset.”**
+
+That is the core change I would make.
+
+---
+
+# B. Proposed Storyline
+
+I recommend **Option C from your brief: a combination of guided credential walkthrough + progressive ecosystem reveal.**
+
+Do not throw away the credential.
+
+Instead, use the credential as the **anchor object** and progressively reveal the infrastructure behind it.
+
+### STEP 01 — THE CREDENTIAL
+
+**Purpose:** Establish the object.
+
+**What the user sees**
+
+The fictional university credential prominently displayed.
+
+Highlight:
+
+* Institution
+* Learner
+* Achievement
+* Award date
+* Credential ID
+
+**Primary message**
+
+> **A credential is more than proof of completion.**
+
+**Supporting message**
+
+> It records what was achieved, who issued it, who earned it, and the evidence behind the achievement.
+
+**Interaction**
+
+Subtle hotspots/highlights on:
+
+`Issuer → Learner → Achievement → Evidence`
+
+**Institutional relevance**
+
+The institution is not simply generating a PDF. It is creating structured achievement data.
+
+---
+
+### STEP 02 — TRUST & VERIFICATION
+
+**Purpose:** Explain why the credential can be trusted.
+
+**Primary message**
+
+> **Make achievement independently verifiable.**
+
+Show:
+
+**Institution → Credential → Verification**
+
+Then reveal:
+
+* credential ID
+* issuer
+* achievement
+* evidence
+* status
+* verification/proof
+
+Avoid spending significant space explaining the mechanics of uploading a PDF or JSON file.
+
+The current site spends considerable space on those mechanics. ([CertifyMe][1])
+
+For an executive buyer, the question is:
+
+> “Can someone independently establish that this achievement is authentic?”
+
+not:
+
+> “Can I upload a JSON file?”
+
+---
+
+### STEP 03 — VERIFIED SKILLS
+
+This should be the first major “aha” moment.
+
+**Primary message**
+
+> **See the skills represented by the credential.**
+
+Instead of generic labels, reveal actual skills associated with the fictional credential.
+
+For example:
+
+**Data Analysis**
+**Project Management**
+**Evidence-Based Decision Making**
+**Data Visualization**
+
+Then visually connect:
+
+**Achievement → Skills**
+
+The user should understand:
+
+> The credential doesn't just say that Jordan completed something. It can represent the capabilities associated with that achievement.
+
+---
+
+### STEP 04 — SKILL TAXONOMY
+
+Now explain the structured layer behind the skills.
+
+**Primary message**
+
+> **Connect skills to a recognised skill vocabulary.**
+
+Visual:
+
+`Data Analysis`
+
+↓
+
+`Structured Skill Concept`
+
+↓
+
+`Taxonomy`
+
+You can show ESCO/O*NET or institutional taxonomy references as supporting detail rather than making taxonomy the headline.
+
+For example:
+
+> **Data Analysis**
+> Structured against recognised skill concepts.
+
+This is where the technical credibility appears without turning the experience into an engineering demo.
+
+---
+
+### STEP 05 — COMPREHENSIVE LEARNER RECORD
+
+This should be the second major reveal.
+
+Take the single credential and visually expand it into:
+
+**Learner Record**
+
+* Credentials
+* Skills
+* Achievements
+* Learning
+* Projects
+* Experiences
+
+Primary message:
+
+> **The credential becomes part of a broader learner record.**
+
+This connects directly with the site's existing CLR positioning, which currently describes bringing skills, credentials, projects, achievements and experiences into one structured record. ([CertifyMe][1])
+
+The visual transition is important:
+
+**Credential card**
+
+→ expands into
+
+**Learner Record**
+
+This is much stronger than simply presenting another static screen.
+
+---
+
+### STEP 06 — WORKFORCE INTELLIGENCE
+
+This is where the experience should differentiate itself most strongly.
+
+Primary message:
+
+> **Connect verified skills to workforce demand.**
+
+Start with:
+
+**Data Analysis**
+
+Then reveal:
+
+**Relevant roles**
+
+* Data Analyst
+* Business Analyst
+* BI Analyst
+
+Then:
+
+**Employer demand**
+
+* Employers
+* Locations
+* Remote / Hybrid / On-site
+* Related skills
+
+Then explain:
+
+> CertifyMe can analyse labour-market demand and connect that intelligence back to programs, credentials and skills.
+
+This aligns with the existing website's workforce-intelligence positioning, which describes connecting credentials and skills to labour-market demand. ([CertifyMe][1])
+
+### Important
+
+Do **not** make this look like a job board.
+
+The current walkthrough's “Career Context” section is visually and conceptually closer to a role recommendation demonstration. ([CertifyMe][1])
+
+The new version should communicate:
+
+> **Labour-market intelligence**
+
+rather than:
+
+> **Jobs you might like.**
+
+---
+
+### STEP 07 — CAREER CONNECTION
+
+Now connect the pieces:
+
+**Verified Credential**
+
+↓
+
+**Verified Skills**
+
+↓
+
+**Relevant Opportunities**
+
+↓
+
+**Career Exploration / Application**
+
+Primary message:
+
+> **Turn verified learning into career context.**
+
+The learner understands the benefit.
+
+The institution understands the bigger system.
+
+---
+
+### STEP 08 — INSTITUTIONAL VALUE
+
+This is the most important missing ending.
+
+Do not finish on a job card.
+
+Finish by zooming out from the learner to the institution.
+
+Show:
+
+**PROGRAMS**
+
+↓
+
+**LEARNING OUTCOMES**
+
+↓
+
+**CREDENTIALS**
+
+↓
+
+**SKILLS**
+
+↓
+
+**WORKFORCE DEMAND**
+
+Primary message:
+
+> **Connect learning to workforce relevance.**
+
+Supporting message:
+
+> Credentials can become structured institutional data that connects program outcomes, verified skills and labour-market demand.
+
+Then the final CTA:
+
+**See how this could work for your institution →**
+
+This fits the current website's institutional positioning much better than ending with “career context.” ([CertifyMe][1])
+
+---
+
+# C. Recommended Interaction Model
+
+I would **not** use a conventional carousel.
+
+I recommend:
+
+### Split-screen guided demonstration
+
+**Left ~58–65%**
+
+Interactive product visual.
+
+**Right ~35–42%**
+
+Narrative panel:
+
+> STEP 03 / 08
+> **Verified Skills**
+
+Short explanation.
+
+`← Back` `Next →`
+
+Progress:
+
+`01 02 03 04 05 06 07 08`
+
+The left side changes progressively.
+
+### The critical interaction
+
+Don't merely replace the entire screen at every step.
+
+Use **progressive reveal**.
+
+For example:
+
+#### Step 1
+
+Credential
+
+↓
+
+#### Step 3
+
+Credential + highlighted skills
+
+↓
+
+#### Step 5
+
+Credential + skills → learner record
+
+↓
+
+#### Step 6
+
+Skills → workforce intelligence
+
+↓
+
+#### Step 8
+
+Program → credential → skills → workforce
+
+This creates a visual argument.
+
+The user **sees the data relationship expanding**.
+
+---
+
+# D. Visual Recommendations
+
+The current website already has a restrained institutional SaaS aesthetic, so I would preserve that rather than introducing a completely new visual language. The homepage itself currently uses a clean white/light interface, indigo accents, restrained cards and structured product visuals. ([CertifyMe][1])
+
+### Modal
+
+Desktop target:
+
+**~1180–1280px wide**
+
+**~720–800px high**
+
+Maximum:
+
+```text
+90vw × 90vh
+```
+
+Don't make it feel like a tiny modal floating over a marketing page.
+
+It should feel closer to a **product demo workspace**.
+
+### Header
+
+```text
+Sample Credential Walkthrough
+
+See how a credential connects learning,
+skills and workforce relevance.
+```
+
+Then:
+
+`01 / 08`
+
+### Main visual
+
+Use a consistent “product canvas”.
+
+Avoid changing the entire visual composition every step.
+
+### Right-side narrative
+
+Keep it extremely short.
+
+For example:
+
+**VERIFIED SKILLS**
+
+### See what the credential represents.
+
+This credential can carry structured skills associated with the achievement.
+
+Then a small institutional note:
+
+> **For institutions:** Connect program outcomes and credentials to structured skill data.
+
+---
+
+# E. Recommended Copy
+
+Here is the copy I would actually use.
+
+### 01 — The Credential
+
+**A credential is more than proof of completion.**
+
+See the achievement, issuer, learner and evidence represented in a structured credential.
+
+---
+
+### 02 — Trust & Verification
+
+**Make achievement independently verifiable.**
+
+A verifier can establish who issued the credential, what was achieved and whether the credential can be trusted.
+
+---
+
+### 03 — Verified Skills
+
+**See the skills this credential represents.**
+
+Credentials can carry structured skills that describe the capabilities demonstrated through an achievement.
+
+---
+
+### 04 — Skill Taxonomy
+
+**Connect skills to a structured vocabulary.**
+
+Map skills to recognised or institutional taxonomies so they can be understood consistently across programs, credentials and systems.
+
+---
+
+### 05 — Comprehensive Learner Record
+
+**Build a richer picture of the learner.**
+
+Bring credentials together with skills, achievements, learning, projects and experiences in a structured learner record.
+
+---
+
+### 06 — Workforce Intelligence
+
+**Connect skills to workforce demand.**
+
+Analyse labour-market data to understand the roles, employers, locations and skills associated with the capabilities represented in your programs.
+
+---
+
+### 07 — Career Connection
+
+**Connect verified learning to career context.**
+
+Verified credentials and skills can help learners explore relevant opportunities while giving institutions greater visibility into workforce relevance.
+
+---
+
+### 08 — Institutional Value
+
+**Connect learning to workforce relevance.**
+
+Programs → Learning Outcomes → Credentials → Skills → Workforce Demand
+
+**CertifyMe provides the infrastructure connecting them.**
+
+CTA:
+
+**See how this could work for your institution →**
+
+---
+
+# F. What I Would Remove / De-emphasise
+
+This is where I think the current implementation needs the biggest correction.
+
+### 1. QR & barcode as a standalone step
+
+The current walkthrough gives QR/barcode its own step. ([CertifyMe][1])
+
+That is too much narrative real estate for a relatively commodity credential feature.
+
+Keep it visually present on the credential, but don't make it a major storyline stage.
+
+### 2. Email confirmation as a major step
+
+The current experience has a dedicated “Email Access” step. ([CertifyMe][1])
+
+This is implementation detail, not strategic differentiation.
+
+Move it into supporting interaction if needed.
+
+### 3. PDF upload
+
+The current walkthrough asks the user to select a certificate PDF and explains that it doesn't actually validate it. ([CertifyMe][1])
+
+That creates cognitive noise.
+
+For an executive demo, a clean simulated verification result is more useful:
+
+> **Credential verified**
+
+Then:
+
+Issuer ✓
+Achievement ✓
+Credential ID ✓
+Proof ✓
+
+The technical explanation can sit behind “View verification details”.
+
+### 4. JSON upload
+
+Same issue.
+
+The current experience asks the user to select Open Badge JSON even though the demo doesn't actually validate it. ([CertifyMe][1])
+
+That is likely to create more questions than value.
+
+### 5. Learning Path
+
+The current learning-path step is useful, but it is not central to the story you have specified.
+
+It should become secondary to:
+
+**Credential → Skills → CLR → Workforce Intelligence**
+
+---
+
+# G. One Important Content Issue
+
+There is a potentially confusing difference between the **current live website** and the specification you supplied.
+
+Your specification says the job intelligence layer currently has:
+
+> **20M+ live jobs and tens of millions of historical jobs.**
+
+That number is **not visible in the current walkthrough** and the live website explicitly describes its workforce preview as illustrative rather than live job data. ([CertifyMe][1])
+
+Therefore I would **not hard-code “20M+ live jobs” into the walkthrough unless the current product/marketing owner confirms that claim is approved for public use.**
+
+Likewise, the live walkthrough explicitly says its employers, trends and alignments are invented and not live vacancies. ([CertifyMe][1])
+
+That's a good safeguard and should remain.
+
+---
+
+# H. The New Information Architecture
+
+I would ultimately make the experience communicate this single architecture:
+
+```text
+                    INSTITUTION
+                         │
+                      PROGRAM
+                         │
+                  LEARNING OUTCOMES
+                         │
+                         ▼
+                    CREDENTIAL
+                         │
+             ┌───────────┴───────────┐
+             ▼                       ▼
+        VERIFICATION              SKILLS
+                                     │
+                               SKILL TAXONOMY
+                                     │
+                                     ▼
+                           LEARNER RECORD / CLR
+                                     │
+                                     ▼
+                           WORKFORCE INTELLIGENCE
+                                     │
+                                     ▼
+                             CAREER RELEVANCE
+```
+
+That is much closer to the strategic CertifyMe story already present across the current website: credentials → skills → CLR → workforce intelligence. ([CertifyMe][1])
+
+## The core transformation
+
+The existing experience effectively says:
+
+> **“Let me show you everything a digital credential can contain.”**
+
+The improved experience should say:
+
+> **“Let me show you what a credential can become when it is connected to the rest of the institutional ecosystem.”**
+
+That is the stronger enterprise story.
+
+---
+
+## Replit implementation plan
+
+I would **not yet tell Replit to start rewriting the modal**.
+
+Your own specification correctly says:
+
+> inspect → analyse → propose → implement. 
+
+The live-site audit gives us the **story and UX direction**, but I cannot truthfully provide the requested file/component-level implementation plan yet because the uploaded material does not contain the site's source code.
+
+For the actual implementation phase, the Replit agent needs access to the repository so it can identify:
+
+* `data-credential-open`
+* `credential-sample-dialog`
+* modal HTML
+* walkthrough JavaScript
+* CSS
+* assets
+* analytics events
+* responsive breakpoints
+* accessibility/focus handling
+
+Those are explicitly required by your specification. 
+
+**So I would not make a blind code-generation prompt from this point.** If you provide/connect the CertifyMe website repository in Replit, the next step should be a **code-aware implementation prompt that forces Replit Agent to inspect the existing implementation first, produce the file-level audit, then implement the 8-step experience above without touching unrelated website components.**
+
+[1]: https://www.certifyme.online/ "Verifiable Digital Credential Software for Institutions | CertifyMe"
