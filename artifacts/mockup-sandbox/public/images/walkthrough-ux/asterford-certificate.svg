@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" role="img" aria-labelledby="title desc">
+  <title id="title">Asterford University sample academic certificate</title>
+  <desc id="desc">A fictional graduate certificate in Applied Data and Project Leadership awarded to Jordan Lee, marked as a demonstration specimen.</desc>
+  <defs>
+    <pattern id="paper" width="9" height="9" patternUnits="userSpaceOnUse"><path d="M0 0h9v9H0z" fill="#fffdf7"/><circle cx="1" cy="1" r=".45" fill="#e6ddc9"/></pattern>
+    <radialGradient id="seal"><stop stop-color="#f9efc9"/><stop offset="1" stop-color="#cfac61"/></radialGradient>
+    <linearGradient id="line" x2="1" y2="0"><stop stop-color="#bd9b56" stop-opacity="0"/><stop offset=".5" stop-color="#bd9b56"/><stop offset="1" stop-color="#bd9b56" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="960" height="680" fill="url(#paper)"/>
+  <rect x="19" y="19" width="922" height="642" rx="2" fill="none" stroke="#182b4a" stroke-width="5"/>
+  <rect x="31" y="31" width="898" height="618" fill="none" stroke="#ba9858" stroke-width="1.5"/>
+  <rect x="40" y="40" width="880" height="600" fill="none" stroke="#ddcfb0" stroke-width="1"/>
+  <path d="M43 104V43h61M917 104V43h-61M43 576v61h61M917 576v61h-61" fill="none" stroke="#b48e4e" stroke-width="5"/>
+  <path d="M105 88h147M708 88h147M105 592h175M680 592h175" stroke="#d9c6a1" stroke-width="1"/>
+  <circle cx="480" cy="104" r="49" fill="#182b4a" stroke="#c7a568" stroke-width="4"/>
+  <path d="M457 84l23-10 23 10v25c0 14-11 25-23 31-12-6-23-17-23-31z" fill="none" stroke="#f6e8c0" stroke-width="2.6"/>
+  <path d="M467 97q13-6 13 4 0-10 13-4v16q-13-5-13 3-1-8-13-3z" fill="none" stroke="#f6e8c0" stroke-width="2"/>
+  <path d="M480 92v24" stroke="#f6e8c0" stroke-width="1.8"/>
+  <text x="480" y="180" text-anchor="middle" font-family="Georgia,serif" font-size="29" letter-spacing="5" fill="#182b4a">ASTERFORD UNIVERSITY</text>
+  <text x="480" y="207" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="10" letter-spacing="4" fill="#9b793d">SCHOOL OF CONTINUING &amp; PROFESSIONAL STUDIES</text>
+  <path d="M260 228h440" stroke="url(#line)" stroke-width="2"/>
+  <text x="480" y="271" text-anchor="middle" font-family="Georgia,serif" font-size="19" font-style="italic" fill="#806737">This certifies that</text>
+  <text x="480" y="323" text-anchor="middle" font-family="Georgia,serif" font-size="49" fill="#142943">Jordan Lee</text>
+  <path d="M313 339h334" stroke="#d6bd88" stroke-width="1"/>
+  <text x="480" y="371" text-anchor="middle" font-family="Georgia,serif" font-size="17" fill="#42556b">has successfully completed the requirements for the</text>
+  <text x="480" y="411" text-anchor="middle" font-family="Georgia,serif" font-size="26" font-weight="700" fill="#182b4a">Graduate Certificate in</text>
+  <text x="480" y="448" text-anchor="middle" font-family="Georgia,serif" font-size="27" font-weight="700" fill="#182b4a">Applied Data &amp; Project Leadership</text>
+  <path d="M374 472h212" stroke="url(#line)" stroke-width="2"/>
+  <circle cx="480" cy="547" r="42" fill="url(#seal)" stroke="#a67c36" stroke-width="2"/>
+  <circle cx="480" cy="547" r="34" fill="none" stroke="#836330" stroke-width="1"/>
+  <text x="480" y="537" text-anchor="middle" font-family="Georgia,serif" font-size="9" font-weight="bold" letter-spacing="2" fill="#533d1d">ASTERFORD</text>
+  <text x="480" y="556" text-anchor="middle" font-family="Georgia,serif" font-size="24" font-weight="bold" fill="#533d1d">AU</text>
+  <text x="480" y="571" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" font-weight="bold" letter-spacing="1.5" fill="#533d1d">UNIVERSITY</text>
+  <path d="M93 543h246M621 543h246" stroke="#9f8a6a" stroke-width="1"/>
+  <text x="216" y="532" text-anchor="middle" font-family="Georgia,serif" font-size="15" font-style="italic" fill="#263e59">22 May 2026</text>
+  <text x="216" y="565" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" fill="#69778a">DATE OF ISSUE</text>
+  <text x="744" y="532" text-anchor="middle" font-family="Georgia,serif" font-size="17" font-style="italic" fill="#263e59">Office of the Registrar</text>
+  <text x="744" y="565" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" fill="#69778a">ACADEMIC REGISTRAR</text>
+  <text x="480" y="619" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.4" fill="#786851">SAMPLE CERTIFICATE · FOR PRODUCT DEMONSTRATION ONLY · NOT ISSUED</text>
+</svg>

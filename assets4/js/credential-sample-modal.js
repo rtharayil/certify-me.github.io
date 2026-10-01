@@ -10,9 +10,13 @@
   var workspace = dialog.querySelector("[data-active-step]");
   var ecosystem = dialog.querySelector(".credential-ecosystem");
   var currentVisual = dialog.querySelector("[data-credential-current-visual]");
+  var past = dialog.querySelector(".credential-readable__past");
+  var presentationVisual = dialog.querySelector("[data-credential-presentation-visual]");
+  var outcomeVisual = dialog.querySelector("[data-credential-outcome-visual]");
   var stages = Array.prototype.slice.call(dialog.querySelectorAll("[data-credential-stage]"));
   var reveals = Array.prototype.slice.call(dialog.querySelectorAll("[data-reveal-index]"));
-  var steps = Array.prototype.slice.call(dialog.querySelectorAll("[data-credential-step-to]"));
+  var layers = Array.prototype.slice.call(dialog.querySelectorAll("[data-credential-step-to]"));
+  var outcomeButton = dialog.querySelector("[data-credential-outcome]");
   var pauseButton = dialog.querySelector("[data-credential-pause]");
   var previousButton = dialog.querySelector("[data-credential-prev]");
   var forwardButton = dialog.querySelector("[data-credential-forward]");
@@ -20,6 +24,9 @@
   var pace = dialog.querySelector("[data-credential-pace]");
   var filmline = dialog.querySelector("[data-credential-filmline]");
   var shareStatus = dialog.querySelector("[data-credential-share-status]");
+  var header = dialog.querySelector(".credential-modal__header");
+  var footer = dialog.querySelector(".credential-modal__footer");
+  var specimen = dialog.querySelector(".credential-readable__specimen");
   var previousFocus = null;
   var previousOverflow = "";
   var current = 0;
@@ -28,74 +35,108 @@
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   var storyUrl = new URL("/", window.location.origin);
   storyUrl.searchParams.set("story", "certificate");
-  var storyText = "Explore a fictional university credential and how it could connect learning, skills, records and workforce relevance. All verification and workforce views are illustrative.";
+  var storyText = "Explore CertifyMe's fictional university credential walkthrough. Sharing this link opens the tour only; it does not share a learner record.";
+
+  var dwellByPanel = [13000, 15000, 22000, 15000, 15000, 16000, 16000];
 
   function clearTourTimer() {
     if (timer !== null) window.clearTimeout(timer);
     timer = null;
   }
 
+  function currentDwell() {
+    return dwellByPanel[current] || 15000;
+  }
+
   function updateControls() {
-    count.textContent = "Layer " + String(current + 1).padStart(2, "0") + " of " + String(stages.length).padStart(2, "0");
-    if (current === 0 && document.activeElement === previousButton) {
-      forwardButton.focus();
-    }
+    var isOutcome = current === stages.length - 1;
+    count.textContent = isOutcome
+      ? "Institutional outcome"
+      : "Layer " + String(current + 1).padStart(2, "0") + " of " + String(layers.length).padStart(2, "0");
+    if (current === 0 && document.activeElement === previousButton) forwardButton.focus();
     previousButton.disabled = current === 0;
-    forwardButton.textContent = current === stages.length - 1 ? "Restart ↺" : "Next layer →";
+    forwardButton.textContent = isOutcome
+      ? "Restart walkthrough ↺"
+      : current === layers.length - 1 ? "Institutional outcome →" : "Next layer →";
     pauseButton.textContent = paused ? "Play" : "Pause";
     pauseButton.setAttribute("aria-label", paused ? "Play walkthrough" : "Pause walkthrough");
-    pace.textContent = paused ? "Paused · choose a layer or press Play" : "Auto-playing · choose a layer to take control";
+    pace.textContent = paused
+      ? "Paused · choose a layer or resume"
+      : isOutcome ? "Institutional outcome · returning to the start" : "Following the institutional story";
     dialog.classList.toggle("is-paused", paused);
     filmline.style.animationPlayState = paused ? "paused" : "running";
+    layers.forEach(function (layer, index) {
+      if (!isOutcome && index === current) layer.setAttribute("aria-current", "true");
+      else layer.removeAttribute("aria-current");
+    });
+    if (outcomeButton) {
+      if (isOutcome) outcomeButton.setAttribute("aria-current", "true");
+      else outcomeButton.removeAttribute("aria-current");
+    }
   }
 
   function restartFilmline() {
     filmline.style.animation = "none";
     void filmline.offsetWidth;
     if (!reduceMotion.matches) {
-      filmline.style.animation = "credential-scene-timer 6800ms linear forwards";
+      filmline.style.animation = "readable-timer " + currentDwell() + "ms linear forwards";
       filmline.style.animationPlayState = paused ? "paused" : "running";
     }
   }
 
-  function showStep(index, revealInView) {
+  function bringIntoReadableView(target) {
+    var bounds = target.getBoundingClientRect();
+    var panelBounds = panel.getBoundingClientRect();
+    var safeTop = Math.max(panelBounds.top, header.getBoundingClientRect().bottom) + 12;
+    var safeBottom = Math.min(panelBounds.bottom, footer.getBoundingClientRect().top) - 12;
+    if (window.matchMedia("(max-width: 620px)").matches) {
+      safeTop = Math.max(safeTop, specimen.getBoundingClientRect().bottom + 12);
+    }
+    var available = Math.max(0, safeBottom - safeTop);
+    var delta = 0;
+    if (bounds.height > available || bounds.top < safeTop) delta = bounds.top - safeTop;
+    else if (bounds.bottom > safeBottom) delta = bounds.bottom - safeBottom;
+    if (delta) panel.scrollBy({ top: delta, behavior: reduceMotion.matches ? "auto" : "smooth" });
+  }
+
+  function showPanel(index, revealInView) {
     current = (index + stages.length) % stages.length;
+    var isOutcome = current === stages.length - 1;
+    var isPresentation = current === 0;
     workspace.setAttribute("data-active-step", String(current));
+
     stages.forEach(function (stage, stageIndex) {
       stage.hidden = stageIndex !== current;
     });
+
+    ecosystem.appendChild(presentationVisual);
+    presentationVisual.hidden = false;
+    presentationVisual.classList.toggle("is-current-reveal", isPresentation);
+    presentationVisual.classList.toggle("is-past-reveal", !isPresentation);
+    if (isPresentation) currentVisual.appendChild(presentationVisual);
+
     reveals.forEach(function (layer) {
       var revealIndex = Number(layer.getAttribute("data-reveal-index"));
       ecosystem.appendChild(layer);
-      var active = revealIndex === current;
-      var past = revealIndex < current;
-      layer.hidden = revealIndex > current;
+      var active = !isOutcome && revealIndex === current;
+      var past = isOutcome || revealIndex < current;
+      layer.hidden = !active && !past;
       layer.classList.toggle("is-current-reveal", active);
       layer.classList.toggle("is-past-reveal", past);
       if (active) currentVisual.appendChild(layer);
     });
-    currentVisual.hidden = current === 0;
-    steps.forEach(function (step, stepIndex) {
-      if (stepIndex === current) step.setAttribute("aria-current", "true");
-      else step.removeAttribute("aria-current");
-    });
+
+    ecosystem.appendChild(outcomeVisual);
+    outcomeVisual.hidden = !isOutcome;
+    if (isOutcome) currentVisual.appendChild(outcomeVisual);
+    currentVisual.hidden = false;
+    past.hidden = isPresentation;
 
     restartFilmline();
     updateControls();
     if (revealInView) {
       window.requestAnimationFrame(function () {
-        var target = currentVisual.hidden ? stages[current] : currentVisual;
-        var bounds = target.getBoundingClientRect();
-        var panelBounds = panel.getBoundingClientRect();
-        var headerBottom = dialog.querySelector(".credential-modal__header").getBoundingClientRect().bottom;
-        var footerTop = dialog.querySelector(".credential-modal__footer").getBoundingClientRect().top;
-        var safeTop = Math.max(panelBounds.top, headerBottom) + 12;
-        var safeBottom = Math.min(panelBounds.bottom, footerTop) - 12;
-        var available = Math.max(0, safeBottom - safeTop);
-        var delta = 0;
-        if (bounds.height > available || bounds.top < safeTop) delta = bounds.top - safeTop;
-        else if (bounds.bottom > safeBottom) delta = bounds.bottom - safeBottom;
-        if (delta) panel.scrollBy({ top: delta, behavior: reduceMotion.matches ? "auto" : "smooth" });
+        bringIntoReadableView(currentVisual);
       });
     }
   }
@@ -104,8 +145,8 @@
     clearTourTimer();
     if (paused || dialog.hidden) return;
     timer = window.setTimeout(function () {
-      showStep(current + 1, true);
-      advanceAfter(6800);
+      showPanel(current === stages.length - 1 ? 0 : current + 1, true);
+      advanceAfter(currentDwell());
     }, delay);
   }
 
@@ -122,15 +163,13 @@
     dialog.hidden = false;
     document.body.style.overflow = "hidden";
     paused = reduceMotion.matches;
-    showStep(0);
+    showPanel(0, false);
     panel.scrollTop = 0;
     dialog.querySelector(".credential-modal__close").focus();
-    if (!paused) {
-      timer = window.setTimeout(function () {
-        showStep(1, true);
-        advanceAfter(6800);
-      }, 2600);
-    }
+    if (!paused) timer = window.setTimeout(function () {
+      showPanel(1, true);
+      advanceAfter(currentDwell());
+    }, currentDwell());
   }
 
   function close() {
@@ -145,42 +184,48 @@
     element.addEventListener("click", close);
   });
 
-  steps.forEach(function (button, index) {
+  layers.forEach(function (button, index) {
     button.addEventListener("click", function () {
       pauseTour();
-      showStep(index, true);
+      showPanel(index, true);
     });
   });
+
+  if (outcomeButton) {
+    outcomeButton.addEventListener("click", function () {
+      pauseTour();
+      showPanel(stages.length - 1, true);
+    });
+  }
 
   previousButton.addEventListener("click", function () {
     if (current > 0) {
       pauseTour();
-      showStep(current - 1, true);
+      showPanel(current - 1, true);
     }
   });
 
   forwardButton.addEventListener("click", function () {
     pauseTour();
-    showStep(current === stages.length - 1 ? 0 : current + 1, true);
+    showPanel(current === stages.length - 1 ? 0 : current + 1, true);
   });
 
   pauseButton.addEventListener("click", function () {
     if (paused) {
       paused = false;
-      if (current === stages.length - 1) showStep(0);
       updateControls();
-      advanceAfter(6800);
+      restartFilmline();
+      advanceAfter(currentDwell());
     } else {
       pauseTour();
     }
   });
 
-  // Keyboard focus is an intentional interaction; touch scrolling alone does not pause the tour.
   tour.addEventListener("focusin", function (event) {
     if (!event.target.closest("[data-credential-pause]")) pauseTour();
   });
-  dialog.querySelector(".credential-university__showcase").addEventListener("focusin", pauseTour);
-  dialog.querySelector(".credential-modal__footer").addEventListener("focusin", pauseTour);
+  specimen.addEventListener("focusin", pauseTour);
+  footer.addEventListener("focusin", pauseTour);
 
   function handleMotionPreferenceChange(event) {
     if (event.matches) pauseTour();
@@ -215,9 +260,9 @@
         field.remove();
         if (!copied) throw new Error("Copy unavailable");
       }
-      shareStatus.textContent = "Link copied. It opens this fictional university walkthrough.";
+      shareStatus.textContent = "Tour link copied. It opens this fictional walkthrough only.";
     } catch (error) {
-      shareStatus.textContent = "Could not copy the link in this browser.";
+      shareStatus.textContent = "Could not copy the tour link in this browser.";
     }
   }
 
@@ -236,7 +281,7 @@
         });
         shareStatus.textContent = "Fictional walkthrough link shared.";
       } catch (error) {
-        if (error.name !== "AbortError") shareStatus.textContent = "Sharing is unavailable here. Use Copy link instead.";
+        if (error.name !== "AbortError") shareStatus.textContent = "Sharing is unavailable here. Use Copy tour link instead.";
       }
     });
   });

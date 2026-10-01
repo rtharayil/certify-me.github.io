@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap");
+@import "./credential-sample-modal-scoped.css";
+@import "./credential-university-scoped.css";
+
+.credential-preview-stage {
+  min-height: 100vh;
+}
