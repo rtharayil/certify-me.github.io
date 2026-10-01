@@ -26,7 +26,7 @@ async function main() {
           return allowed ? route.continue() : route.abort();
         });
         await page.goto(baseUrl, { waitUntil: "domcontentloaded", timeout: 30_000 });
-        const illustration = page.locator('img[src*="credential-six-layer-illustration.webp"]');
+        const illustration = page.locator('img[src*="credential-six-layer-infographic.webp"]');
         assert.equal(await illustration.count(), 1, "The new section must use the cropped image exactly once.");
         const section = illustration.locator("xpath=ancestor::section[1]");
         await section.scrollIntoViewIfNeeded();
@@ -35,7 +35,7 @@ async function main() {
           document.fonts.ready, new Promise((resolve) => setTimeout(resolve, 3000)),
         ]));
         const metrics = await section.evaluate((element) => {
-          const image = element.querySelector('img[src*="credential-six-layer-illustration.webp"]');
+          const image = element.querySelector('img[src*="credential-six-layer-infographic.webp"]');
           const heading = element.querySelector("h2");
           const hero = document.querySelector("#hero-7");
           const imageBox = image.getBoundingClientRect();
@@ -63,12 +63,12 @@ async function main() {
         assert.match(metrics.copy, /not issued/i);
         assert.match(metrics.copy, /not (?:issued or )?verified/i);
         assert(metrics.alt.length > 20, "The illustration needs useful alternative text.");
-        assert.deepEqual(metrics.dimensions, [1215, 941], "Remove only the left text strip; retain the full right-side graphic.");
-        assert.deepEqual(metrics.explicitDimensions, ["1215", "941"], "Reserve intrinsic image space to avoid layout shifts.");
+        assert.deepEqual(metrics.dimensions, [1672, 941], "Use the full new infographic without cropping.");
+        assert.deepEqual(metrics.explicitDimensions, ["1672", "941"], "Reserve intrinsic image space to avoid layout shifts.");
         assert(metrics.headingVisible && metrics.overflow <= 1, `No hidden headline or horizontal overflow at ${width}px.`);
         if (width >= 1024) {
-          assert(Math.abs(metrics.imageWidth / metrics.copyWidth - 3) < .03,
-            `Desktop must use one-quarter text and three-quarters image at ${width}px.`);
+          assert(Math.abs(metrics.imageWidth / metrics.copyWidth - 1.5) < .03,
+            `Desktop must use 40% text and 60% image at ${width}px.`);
           assert(metrics.heading.left < metrics.image.left && metrics.heading.top < metrics.image.top + 400,
             `Desktop must place text on the left and image on the right at ${width}px.`);
         } else {
