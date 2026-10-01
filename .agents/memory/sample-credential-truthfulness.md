@@ -11,6 +11,12 @@ Describe the walkthrough as connected **layers**, not steps, and show meaningful
 
 **Why:** The user found the repeated disclaimers and ecosystem headings wasteful of screen space and the numbers-only navigation unclear. Subsequent spacing-only refinements still felt cramped and too small; they asked for a full UX redesign, deeper verification explanation, merged related concepts, and an unnumbered outcome.
 
+Keep the current layer, upcoming layer and automatic/paused state visible as the tour scrolls; a navigation highlight alone is insufficient.
+
+**Why:** The user explicitly said they could not tell that different layers were being shown or that another layer would follow.
+
+**How to apply:** Preserve a persistent progress indicator when changing walkthrough layout, scrolling or playback.
+
 For homepage hero artwork, preserve the original composition when correcting unsupported visual claims; edit the misleading labels rather than replacing the whole illustration with a different one. **Why:** The user asked why the image had changed and accepted restoring its original visual composition with only unsupported claims neutralised. **How to apply:** Treat a change in featured imagery as a visible design decision, not a routine factual correction; keep the person, layout and card structure unless the user requests a broader redesign.
 
 **Why:** The user explicitly rejected a real certificate inserted into a generic product demo and clarified that the goal is a visual wizard, not a real verifier. They subsequently approved a strategic institutional storyline rather than separate operational-mechanics chapters. Mixing a real person's credential with simulated Open Badges 3.0, taxonomy and job data falsely connects claims. The linked original offers an OpenBadge 2.1 export, so it cannot substantiate an Open Badges 3.0 verified claim.

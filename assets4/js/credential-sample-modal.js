@@ -16,6 +16,11 @@
   var stages = Array.prototype.slice.call(dialog.querySelectorAll("[data-credential-stage]"));
   var reveals = Array.prototype.slice.call(dialog.querySelectorAll("[data-reveal-index]"));
   var layers = Array.prototype.slice.call(dialog.querySelectorAll("[data-credential-step-to]"));
+  var layerNames = layers.map(function (layer) {
+    return layer.textContent.replace(/^\s*\d+\s*/, "").trim();
+  });
+  var focusTitle = dialog.querySelector("[data-credential-focus-title]");
+  var focusNext = dialog.querySelector("[data-credential-focus-next]");
   var outcomeButton = dialog.querySelector("[data-credential-outcome]");
   var pauseButton = dialog.querySelector("[data-credential-pause]");
   var previousButton = dialog.querySelector("[data-credential-prev]");
@@ -27,17 +32,22 @@
   var header = dialog.querySelector(".credential-modal__header");
   var footer = dialog.querySelector(".credential-modal__footer");
   var specimen = dialog.querySelector(".credential-readable__specimen");
+  var specimenDisclosure = dialog.querySelector(".credential-readable__specimen-disclosure");
+  var layerPicker = dialog.querySelector(".credential-readable__layer-picker");
+  var choiceCurrent = dialog.querySelector("[data-credential-choice-current]");
   var previousFocus = null;
   var previousOverflow = "";
   var current = 0;
   var paused = false;
   var timer = null;
+  var readingTouch = null;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  var mobileLayout = window.matchMedia("(max-width: 620px), (max-width: 950px) and (max-height: 500px) and (pointer: coarse)");
   var storyUrl = new URL("/", window.location.origin);
   storyUrl.searchParams.set("story", "certificate");
   var storyText = "Explore CertifyMe's fictional university credential walkthrough. Sharing this link opens the tour only; it does not share a learner record.";
 
-  var dwellByPanel = [13000, 15000, 22000, 15000, 15000, 16000, 16000];
+  var dwellByPanel = [10400, 12000, 17600, 12000, 12000, 12800, 12800];
 
   function clearTourTimer() {
     if (timer !== null) window.clearTimeout(timer);
@@ -45,7 +55,14 @@
   }
 
   function currentDwell() {
-    return dwellByPanel[current] || 15000;
+    return dwellByPanel[current] || 12000;
+  }
+
+  function syncHeaderHeight() {
+    if (!dialog.hidden) {
+      dialog.style.setProperty("--read-header-height", Math.ceil(header.getBoundingClientRect().height) + "px");
+      dialog.style.setProperty("--read-footer-height", Math.ceil(footer.getBoundingClientRect().height) + "px");
+    }
   }
 
   function updateControls() {
@@ -53,6 +70,19 @@
     count.textContent = isOutcome
       ? "Institutional outcome"
       : "Layer " + String(current + 1).padStart(2, "0") + " of " + String(layers.length).padStart(2, "0");
+    var nextName = isOutcome ? layerNames[0]
+      : current === layers.length - 1 ? "Institutional outcome" : layerNames[current + 1];
+    focusTitle.textContent = isOutcome
+      ? (mobileLayout.matches ? "Institutional outcome" : "Viewing the institutional outcome")
+      : (mobileLayout.matches
+        ? count.textContent + " · " + layerNames[current]
+        : "Viewing " + count.textContent.toLowerCase() + " · " + layerNames[current]);
+    if (choiceCurrent) choiceCurrent.textContent = isOutcome ? "Institutional outcome" : layerNames[current];
+    focusNext.textContent = mobileLayout.matches
+      ? (paused ? "Paused · " : "Auto · ") + (isOutcome ? "Loop: " : "Next: ") + nextName
+      : (paused ? "Paused · " : "Auto-playing · ") +
+        (isOutcome ? "Loops back to: " : "Next: ") + nextName +
+        (paused ? " · Press Play to continue" : "");
     if (current === 0 && document.activeElement === previousButton) forwardButton.focus();
     previousButton.disabled = current === 0;
     forwardButton.textContent = isOutcome
@@ -60,9 +90,7 @@
       : current === layers.length - 1 ? "Institutional outcome →" : "Next layer →";
     pauseButton.textContent = paused ? "Play" : "Pause";
     pauseButton.setAttribute("aria-label", paused ? "Play walkthrough" : "Pause walkthrough");
-    pace.textContent = paused
-      ? "Paused · choose a layer or resume"
-      : isOutcome ? "Institutional outcome · returning to the start" : "Following the institutional story";
+    pace.textContent = paused ? "Paused" : "Auto-playing";
     dialog.classList.toggle("is-paused", paused);
     filmline.style.animationPlayState = paused ? "paused" : "running";
     layers.forEach(function (layer, index) {
@@ -73,6 +101,7 @@
       if (isOutcome) outcomeButton.setAttribute("aria-current", "true");
       else outcomeButton.removeAttribute("aria-current");
     }
+    syncHeaderHeight();
   }
 
   function restartFilmline() {
@@ -87,10 +116,24 @@
   function bringIntoReadableView(target) {
     var bounds = target.getBoundingClientRect();
     var panelBounds = panel.getBoundingClientRect();
-    var safeTop = Math.max(panelBounds.top, header.getBoundingClientRect().bottom) + 12;
+    var headerBottom = header.getBoundingClientRect().bottom;
+    var safeTop = Math.max(panelBounds.top, headerBottom) + 12;
     var safeBottom = Math.min(panelBounds.bottom, footer.getBoundingClientRect().top) - 12;
-    if (window.matchMedia("(max-width: 620px)").matches) {
-      safeTop = Math.max(safeTop, specimen.getBoundingClientRect().bottom + 12);
+    if (mobileLayout.matches) {
+      var pickerSummary = layerPicker && layerPicker.querySelector("summary");
+      if (pickerSummary) safeTop = Math.max(safeTop, headerBottom + pickerSummary.getBoundingClientRect().height + 22);
+      var targetBounds = target.getBoundingClientRect();
+      var stage = target.closest(".credential-readable__stage");
+      var firstParagraph = stage && stage.querySelector("p:not(.credential-readable__note):not(.credential-readable__critical)");
+      var readingBottom = firstParagraph ? firstParagraph.getBoundingClientRect().bottom : targetBounds.bottom;
+      var available = Math.max(0, safeBottom - safeTop);
+      var readingHeight = readingBottom - targetBounds.top;
+      var desiredTop = readingHeight <= available ? safeTop : Math.max(safeTop, safeBottom - readingHeight);
+      // Keep the heading and opening paragraph between the sticky picker and footer.
+      if (targetBounds.top < safeTop || readingBottom > safeBottom) {
+        panel.scrollBy({ top: targetBounds.top - desiredTop, behavior: "auto" });
+      }
+      return;
     }
     var available = Math.max(0, safeBottom - safeTop);
     var delta = 0;
@@ -136,9 +179,30 @@
     updateControls();
     if (revealInView) {
       window.requestAnimationFrame(function () {
-        bringIntoReadableView(currentVisual);
+        var activeStage = stages[current];
+        bringIntoReadableView(mobileLayout.matches ? activeStage.querySelector("h2") : currentVisual);
       });
     }
+  }
+
+  function syncDisclosureMode(event) {
+    var isMobile = event ? event.matches : mobileLayout.matches;
+    if (specimenDisclosure) specimenDisclosure.open = !isMobile;
+    if (layerPicker) layerPicker.open = !isMobile;
+    if (!dialog.hidden && isMobile) {
+      window.requestAnimationFrame(function () {
+        bringIntoReadableView(stages[current].querySelector("h2"));
+      });
+    }
+  }
+
+  function syncViewport() {
+    syncHeaderHeight();
+    if (dialog.hidden || !mobileLayout.matches) return;
+    window.requestAnimationFrame(function () {
+      var heading = stages[current].querySelector("h2");
+      if (heading) bringIntoReadableView(heading);
+    });
   }
 
   function advanceAfter(delay) {
@@ -156,8 +220,34 @@
     updateControls();
   }
 
+  function pauseForReadingGesture(event) {
+    if (!mobileLayout.matches || dialog.hidden || paused) return;
+    if (event.type === "touchstart") {
+      var target = event.target;
+      readingTouch = {
+        y: event.touches.length ? event.touches[0].clientY : 0,
+        interactive: target && target.closest && !!target.closest("[data-credential-pause]")
+      };
+      return;
+    }
+    if (event.type === "touchend" || event.type === "touchcancel") {
+      readingTouch = null;
+      return;
+    }
+    if (event.type === "touchmove") {
+      if (!readingTouch || readingTouch.interactive || !event.touches.length) return;
+      if (Math.abs(event.touches[0].clientY - readingTouch.y) > 8) pauseTour();
+      return;
+    }
+    if (event.type === "wheel" && Math.abs(event.deltaY) > 2) {
+      var wheelTarget = event.target;
+      if (!(wheelTarget && wheelTarget.closest && wheelTarget.closest("[data-credential-pause]"))) pauseTour();
+    }
+  }
+
   function open() {
     if (!dialog.hidden) return;
+    syncDisclosureMode();
     previousFocus = document.activeElement;
     previousOverflow = document.body.style.overflow;
     dialog.hidden = false;
@@ -165,7 +255,12 @@
     paused = reduceMotion.matches;
     showPanel(0, false);
     panel.scrollTop = 0;
-    dialog.querySelector(".credential-modal__close").focus();
+    dialog.querySelector(".credential-modal__close").focus({ preventScroll: true });
+    window.requestAnimationFrame(function () {
+      if (!dialog.hidden && mobileLayout.matches) {
+        bringIntoReadableView(stages[current].querySelector("h2"));
+      }
+    });
     if (!paused) timer = window.setTimeout(function () {
       showPanel(1, true);
       advanceAfter(currentDwell());
@@ -180,6 +275,23 @@
   }
 
   opener.addEventListener("click", open);
+  window.addEventListener("resize", syncViewport);
+  if (typeof ResizeObserver === "function") {
+    var stickyBoundsObserver = new ResizeObserver(syncHeaderHeight);
+    stickyBoundsObserver.observe(header);
+    stickyBoundsObserver.observe(footer);
+  }
+  panel.addEventListener("touchstart", pauseForReadingGesture, { passive: true });
+  panel.addEventListener("touchmove", pauseForReadingGesture, { passive: true });
+  panel.addEventListener("touchend", pauseForReadingGesture, { passive: true });
+  panel.addEventListener("touchcancel", pauseForReadingGesture, { passive: true });
+  panel.addEventListener("wheel", pauseForReadingGesture, { passive: true });
+  syncDisclosureMode();
+  if (typeof mobileLayout.addEventListener === "function") {
+    mobileLayout.addEventListener("change", syncDisclosureMode);
+  } else if (typeof mobileLayout.addListener === "function") {
+    mobileLayout.addListener(syncDisclosureMode);
+  }
   dialog.querySelectorAll("[data-credential-close]").forEach(function (element) {
     element.addEventListener("click", close);
   });
@@ -188,6 +300,23 @@
     button.addEventListener("click", function () {
       pauseTour();
       showPanel(index, true);
+      if (layerPicker && mobileLayout.matches) {
+        layerPicker.open = false;
+        layerPicker.querySelector("summary").focus({ preventScroll: true });
+      }
+    });
+  });
+
+  dialog.querySelectorAll("[data-credential-revisit]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      pauseTour();
+      showPanel(Number(button.getAttribute("data-credential-revisit")), false);
+      var heading = stages[current].querySelector("h2");
+      heading.setAttribute("tabindex", "-1");
+      heading.focus({ preventScroll: true });
+      window.requestAnimationFrame(function () {
+        bringIntoReadableView(heading);
+      });
     });
   });
 
@@ -195,6 +324,10 @@
     outcomeButton.addEventListener("click", function () {
       pauseTour();
       showPanel(stages.length - 1, true);
+      if (layerPicker && mobileLayout.matches) {
+        layerPicker.open = false;
+        layerPicker.querySelector("summary").focus({ preventScroll: true });
+      }
     });
   }
 
@@ -225,7 +358,9 @@
     if (!event.target.closest("[data-credential-pause]")) pauseTour();
   });
   specimen.addEventListener("focusin", pauseTour);
-  footer.addEventListener("focusin", pauseTour);
+  footer.addEventListener("focusin", function (event) {
+    if (!event.target.closest("[data-credential-pause]")) pauseTour();
+  });
 
   function handleMotionPreferenceChange(event) {
     if (event.matches) pauseTour();
@@ -235,15 +370,6 @@
   } else if (typeof reduceMotion.addListener === "function") {
     reduceMotion.addListener(handleMotionPreferenceChange);
   }
-
-  dialog.querySelectorAll("[data-credential-social]").forEach(function (link) {
-    if (link.getAttribute("data-credential-social") === "linkedin") {
-      link.href = "https://www.linkedin.com/sharing/share-offsite/?url=" + encodeURIComponent(storyUrl.href);
-    } else {
-      link.href = "https://twitter.com/intent/tweet?url=" +
-        encodeURIComponent(storyUrl.href) + "&text=" + encodeURIComponent(storyText);
-    }
-  });
 
   async function copyStoryLink() {
     try {
@@ -281,7 +407,8 @@
         });
         shareStatus.textContent = "Fictional walkthrough link shared.";
       } catch (error) {
-        if (error.name !== "AbortError") shareStatus.textContent = "Sharing is unavailable here. Use Copy tour link instead.";
+        var errorName = error && typeof error === "object" ? error.name : undefined;
+        if (errorName !== "AbortError") await copyStoryLink();
       }
     });
   });
