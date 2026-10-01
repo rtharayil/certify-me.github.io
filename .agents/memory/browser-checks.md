@@ -20,3 +20,9 @@ Use the actual scrolling ancestor when capturing mobile homepage sections; do no
 **Why:** The mobile homepage can scroll the body independently. Window scrolling left the view at the hero, while tall element screenshots clipped off-screen text and placed fixed navigation across the captured section.
 
 **How to apply:** Start with element.scrollIntoView, inspect the nearest scrollable ancestor, and adjust that ancestor for the fixed header. Confirm the target's viewport bounds and capture reading viewports rather than treating one tall element image as reliable visual evidence.
+
+Keep browser configuration and cache state outside the watched Jekyll workspace when running local browser checks.
+
+**Why:** System Chromium wrote crash-report settings beneath the workspace's `.config` directory while tests ran. Jekyll treated those browser-state changes as source edits and repeatedly regenerated the site; image decoding could fail transiently even though the asset was intact and returned HTTP 200.
+
+**How to apply:** If browser checks cause unexpected regeneration or intermittent asset failures, inspect the watcher logs before changing artwork or application code. Use temporary directories for browser configuration/cache where possible, and wait for the actual lazy-loaded image to load before decoding it.
