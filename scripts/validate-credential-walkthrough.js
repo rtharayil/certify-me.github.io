@@ -139,7 +139,7 @@ async function assertCumulativeReveals(dialog, stageIndex) {
     index: Number(layer.getAttribute("data-reveal-index")),
     visible: !layer.hidden && getComputedStyle(layer).display !== "none",
   })));
-  assert(result.length === 7, `Expected seven progressively revealed ecosystem layers; found ${result.length}.`);
+  assert(result.length === 8, `Expected eight progressively revealed ecosystem layers; found ${result.length}.`);
   const visibleIndices = result.filter((layer) => layer.visible).map((layer) => layer.index);
   const expectedIndices = Array.from({ length: stageIndex }, (_, index) => index + 1);
   assert(
@@ -181,12 +181,58 @@ async function assertCurrentRevealInModalViewport(dialog, stageIndex) {
   );
 }
 
-async function assertStageThreeQualifier(dialog) {
-  const text = await dialog.locator("[data-credential-stage]").nth(2).innerText();
+async function assertSkillsLayerQualifier(dialog) {
+  const text = await dialog.locator("[data-credential-stage]").nth(3).innerText();
   assert(
     /\billustrat(?:ive|ion)\b|\bexample\b/i.test(text)
       && /\bunverified\b|\bnot\s+(?:been\s+)?(?:independently\s+)?verified\b/i.test(text),
-    `Active stage 3 must locally qualify its skills as illustrative and unverified; got: ${text.replace(/\s+/g, " ").trim()}`,
+    `Active Verified Skills layer (index 3) must locally qualify its skills as illustrative and unverified; got: ${text.replace(/\s+/g, " ").trim()}`,
+  );
+}
+
+async function assertLayerCountLabel(dialog, layerIndex) {
+  const result = await dialog.evaluate((element) => {
+    const counter = element.querySelector("[data-credential-count]");
+    const steps = element.querySelector("[data-credential-step-to]");
+    const nav = steps && steps.closest("nav");
+    return {
+      counterText: counter ? (counter.innerText || counter.textContent || "").trim() : "",
+      navLabel: nav ? nav.getAttribute("aria-label") || "" : "",
+      counterVisible: Boolean(counter && counter.getClientRects().length),
+    };
+  });
+  const layerCounter = new RegExp(`\\blayers?\\b\\D*0?${layerIndex + 1}\\D+0?9\\b`, "i");
+  assert(
+    result.counterVisible
+      && layerCounter.test(result.counterText)
+      && !/\bstep\b/i.test(result.counterText),
+    `Visible walkthrough counter must identify layer ${layerIndex + 1} of 9, not a step: ${JSON.stringify(result.counterText)}.`,
+  );
+  assert(
+    /\blayers?\b/i.test(result.navLabel) && !/\bstep\b/i.test(result.navLabel),
+    `Walkthrough navigation label must say layers, not steps: ${JSON.stringify(result.navLabel)}.`,
+  );
+}
+
+async function assertStandardisationLayer(dialog) {
+  const result = await dialog.evaluate((element) => {
+    const narrative = element.querySelectorAll("[data-credential-stage]")[1];
+    const visual = element.querySelector('[data-reveal-index="1"]');
+    return {
+      narrative: narrative ? narrative.textContent || "" : "",
+      visual: visual ? visual.textContent || "" : "",
+    };
+  });
+  const text = `${result.narrative} ${result.visual}`;
+  assert(
+    /open badges\s*3\.0/i.test(text) && /w3c\s+verifiable credentials/i.test(text),
+    `Standardisation layer must name Open Badges 3.0 and W3C Verifiable Credentials: ${text.replace(/\s+/g, " ").trim()}`,
+  );
+  assert(
+    /global/i.test(text)
+      && /recognition|acceptance/i.test(text)
+      && /(?:not|never|does not|doesn't|cannot|can't|isn't|is not)[\s\S]{0,80}guarantee(?:d)?|guarantee(?:d)?[\s\S]{0,80}(?:not|no|never)/i.test(text),
+    `Standardisation layer must qualify recognition as not globally guaranteed: ${text.replace(/\s+/g, " ").trim()}`,
   );
 }
 
@@ -226,54 +272,51 @@ async function assertFocusWithinDialog(dialog, message) {
 
 function labelCategory(text) {
   const categories = [
-    { index: 3, pattern: /\btaxonom(?:y|ies)\b|\bclassification\b|\bframeworks?\b|\bvocabular(?:y|ies)\b|\bmappings?\b|\bstandards?\b/i },
-    { index: 7, pattern: /\binstitution(?:al)?\b|\buniversity\b|\bissuer\b|\bcampus\b/i },
-    { index: 5, pattern: /\bworkforce\b|\bemploy(?:er|ment)\b|\bjobs?\b|\bvacanc(?:y|ies)\b|\blabou?r market\b|\bhiring\b|\bworkplace\b/i },
-    { index: 6, pattern: /\bcareer\b|\bpathways?\b|\bprogression\b|\bfuture learning\b|\bnext steps?\b/i },
-    { index: 4, pattern: /\blearner\b|\bstudent\b|\btranscript\b|\bidentity\b|\bpersonal record\b|\blearning record\b/i },
-    { index: 2, pattern: /\bskills?\b|\bcompetenc(?:y|ies)\b|\bcapabilit(?:y|ies)\b|\bproficienc(?:y|ies)\b/i },
-    { index: 1, pattern: /\bverif(?:y|ies|ication)\b|\bauthentic(?:ity)?\b|\bproof\b|\btrust\b|\bassurance\b|\bsecurity\b/i },
-    { index: 0, pattern: /\bcredential\b|\baward\b|\bcertificate\b|\bqualification\b|\bissuance\b/i },
+    { index: 4, pattern: /\btaxonom(?:y|ies)\b|\bclassification\b|\bframeworks?\b|\bvocabular(?:y|ies)\b|\bmappings?\b/i },
+    { index: 8, pattern: /\binstitution(?:al)?\b|\buniversity\b|\bissuer\b|\bcampus\b/i },
+    { index: 6, pattern: /\bworkforce\b|\bemploy(?:er|ment)\b|\bjobs?\b|\bvacanc(?:y|ies)\b|\blabou?r market\b|\bhiring\b|\bworkplace\b/i },
+    { index: 7, pattern: /\bcareer\b|\bpathways?\b|\bprogression\b|\bfuture learning\b|\bnext steps?\b/i },
+    { index: 5, pattern: /\blearner\b|\bstudent\b|\btranscript\b|\bidentity\b|\bpersonal record\b|\blearning record\b/i },
+    { index: 3, pattern: /\bskills?\b|\bcompetenc(?:y|ies)\b|\bcapabilit(?:y|ies)\b|\bproficienc(?:y|ies)\b/i },
+    { index: 2, pattern: /\bverif(?:y|ies|ication)\b|\bauthentic(?:ity)?\b|\bproof\b|\btrust\b|\bassurance\b|\bsecurity\b/i },
+    { index: 1, pattern: /\bstandardisation\b|\bstandardization\b|\bstandards?\b|\bopen badges\b|\bverifiable credentials\b|\binteroperab/i },
+    { index: 0, pattern: /\bpresentation\b|\bcredential\b|\baward\b|\bcertificate\b|\bqualification\b|\bissuance\b/i },
   ];
   const match = categories.find((category) => category.pattern.test(text));
   return match ? match.index : -1;
 }
 
-async function assertEightOrderedStages(dialog) {
+async function assertNineOrderedLayers(dialog) {
   const steps = dialog.locator("[data-credential-step-to]");
   const stages = dialog.locator("[data-credential-stage]");
-  assert(await steps.count() === 8, `Expected eight direct-step buttons; found ${await steps.count()}.`);
+  assert(await steps.count() === 9, `Expected nine direct-layer buttons; found ${await steps.count()}.`);
   const nonButtons = await steps.evaluateAll((elements) => elements.filter(
     (element) => element.tagName !== "BUTTON",
   ).length);
-  assert(nonButtons === 0, "Direct-step navigation must use buttons.");
-  assert(await stages.count() === 8, `Expected eight staged panels; found ${await stages.count()}.`);
+  assert(nonButtons === 0, "Direct-layer navigation must use buttons.");
+  assert(await stages.count() === 9, `Expected nine narrative layers; found ${await stages.count()}.`);
 
   const labels = await steps.evaluateAll((buttons, stageSelector) => {
     const panels = Array.from(document.querySelectorAll(stageSelector));
     return buttons.map((button, index) => {
       const panel = panels[index];
-      const label = `${button.innerText || ""} ${button.getAttribute("aria-label") || ""}`;
+      const label = (button.innerText || "").replace(/\s+/g, " ").trim();
+      const accessibleLabel = button.getAttribute("aria-label") || "";
       const headings = panel
         ? Array.from(panel.querySelectorAll("h1, h2, h3, h4, h5, [aria-label]"))
           .map((heading) => `${heading.textContent || ""} ${heading.getAttribute("aria-label") || ""}`)
           .join(" ")
         : "";
-      return { label, headings, text: panel ? panel.textContent || "" : "" };
+      return { label, accessibleLabel, headings, text: panel ? panel.textContent || "" : "" };
     });
   }, "[data-credential-stage]");
-  const categories = labels.map(({ label, headings, text }) => (
-    labelCategory(label) >= 0
-      ? labelCategory(label)
-      : labelCategory(headings) >= 0
-        ? labelCategory(headings)
-        : labelCategory(text)
-  ));
-  const expected = [0, 1, 2, 3, 4, 5, 6, 7];
+  const categories = labels.map(({ label }) => labelCategory(label));
+  const expected = [0, 1, 2, 3, 4, 5, 6, 7, 8];
   assert(
     categories.every((category, index) => category === expected[index]),
-    `Walkthrough stages must follow Credential, Verification, Skills, Taxonomy, Learner Record, Workforce, Career, Institutional; got ${JSON.stringify(categories.map((category, index) => category < 0 ? labels[index].label.trim().replace(/\s+/g, " ").slice(0, 75) : category + 1))}.`,
+    `Visible layer labels must follow Presentation, Standardisation, Trust & Verification, Verified Skills, Skill Taxonomy, Comprehensive Learner Record, Workforce Intelligence, Career Connection, Institutional Value; got ${JSON.stringify(labels.map(({ label, accessibleLabel }, index) => ({ visible: label, accessible: accessibleLabel, category: categories[index] }))) }.`,
   );
+  await assertLayerCountLabel(dialog, 0);
   return { steps, stages };
 }
 
@@ -298,6 +341,7 @@ async function assertNoFileInputsOrLiveJobs(dialog) {
     }
     return {
       fileInputs,
+      text,
       hasFictionalDisclaimer: /\bfictional\b|\bfiction\b/i.test(text),
       liveClaims,
     };
@@ -306,6 +350,11 @@ async function assertNoFileInputsOrLiveJobs(dialog) {
   assert(result.fileInputs.length === 0, `Walkthrough must not include PDF/JSON file inputs: ${JSON.stringify(result.fileInputs)}.`);
   assert(result.hasFictionalDisclaimer, "Walkthrough is missing a clear fictional-example disclaimer.");
   assert(result.liveClaims.length === 0, `Walkthrough makes a live-jobs claim: ${result.liveClaims.join(", ")}.`);
+  assert(!/SIMULATED SAMPLE/i.test(result.text), "Redundant SIMULATED SAMPLE notice must be absent.");
+  assert(
+    !/THE CONNECTED STORY|Explore the ecosystem/i.test(result.text),
+    "The old THE CONNECTED STORY / Explore the ecosystem framing must be absent.",
+  );
 }
 
 async function assertVisibleNavigation(dialog) {
@@ -344,9 +393,11 @@ async function captureStage(page, dialog, stages, index, filename) {
 
 async function settleAndAssertStage(page, dialog, stageIndex) {
   await page.waitForTimeout(450);
+  await assertLayerCountLabel(dialog, stageIndex);
   await assertCumulativeReveals(dialog, stageIndex);
   await assertCurrentRevealInModalViewport(dialog, stageIndex);
-  if (stageIndex === 2) await assertStageThreeQualifier(dialog);
+  if (stageIndex === 1) await assertStandardisationLayer(dialog);
+  if (stageIndex === 3) await assertSkillsLayerQualifier(dialog);
 }
 
 async function verifyDemoCta(dialog) {
@@ -380,7 +431,7 @@ async function validateDesktop(browser, clientErrors) {
     await page.goto(BASE_URL, { waitUntil: "domcontentloaded", timeout: TIMEOUT_MS });
     const initialOverflow = await page.evaluate(() => document.body.style.overflow);
     const { dialog, opener } = await openDialog(page);
-    const { steps, stages } = await assertEightOrderedStages(dialog);
+    const { steps, stages } = await assertNineOrderedLayers(dialog);
     await assertVisibleNavigation(dialog);
     await assertNoFileInputsOrLiveJobs(dialog);
     await assertCertificateLoaded(page, dialog);
@@ -415,11 +466,11 @@ async function validateDesktop(browser, clientErrors) {
 
     const stageScreenshots = new Map([
       [2, "desktop-stage-3.png"],
-      [4, "desktop-stage-5.png"],
-      [5, "desktop-stage-6.png"],
-      [7, "desktop-stage-8.png"],
+      [5, "desktop-stage-5.png"],
+      [6, "desktop-stage-6.png"],
+      [8, "desktop-stage-8.png"],
     ]);
-    for (let stageIndex = 1; stageIndex < 8; stageIndex += 1) {
+    for (let stageIndex = 1; stageIndex < 9; stageIndex += 1) {
       await dialog.locator("[data-credential-forward]").click();
       await waitForStage(page, stages, stageIndex);
       await settleAndAssertStage(page, dialog, stageIndex);
@@ -467,9 +518,9 @@ async function validateShortDesktop(browser, clientErrors) {
     await page.goto(BASE_URL, { waitUntil: "domcontentloaded", timeout: TIMEOUT_MS });
     const { dialog } = await openDialog(page);
     const stages = dialog.locator("[data-credential-stage]");
-    await dialog.locator("[data-credential-step-to]").nth(2).click();
-    await waitForStage(page, stages, 2);
-    await settleAndAssertStage(page, dialog, 2);
+    await dialog.locator("[data-credential-step-to]").nth(3).click();
+    await waitForStage(page, stages, 3);
+    await settleAndAssertStage(page, dialog, 3);
     await assertNoHorizontalOverflow(page, dialog, "desktop 1280x720");
     await page.screenshot({ path: path.join(SCREENSHOT_DIR, "desktop-720-stage-3.png") });
   } finally {
@@ -490,19 +541,19 @@ async function validateMobile(browser, clientErrors) {
   try {
     await page.goto(BASE_URL, { waitUntil: "domcontentloaded", timeout: TIMEOUT_MS });
     const { dialog } = await openDialog(page);
-    const { stages } = await assertEightOrderedStages(dialog);
+    const { stages } = await assertNineOrderedLayers(dialog);
     await assertVisibleNavigation(dialog);
     await assertNoFileInputsOrLiveJobs(dialog);
     await assertCertificateLoaded(page, dialog);
     await assertNoHorizontalOverflow(page, dialog, "mobile 390px");
-    await captureStage(page, dialog, stages, 4, "mobile-stage-5.png");
-    await captureStage(page, dialog, stages, 7, "mobile-stage-8.png");
+    await captureStage(page, dialog, stages, 5, "mobile-stage-5.png");
+    await captureStage(page, dialog, stages, 8, "mobile-stage-8.png");
 
     await page.setViewportSize({ width: 320, height: 844 });
     await assertNoHorizontalOverflow(page, dialog, "narrow 320px");
     await assertVisibleNavigation(dialog);
-    await dialog.locator("[data-credential-step-to]").nth(4).click();
-    await waitForStage(page, stages, 4);
+    await dialog.locator("[data-credential-step-to]").nth(5).click();
+    await waitForStage(page, stages, 5);
     await assertNoHorizontalOverflow(page, dialog, "narrow 320px stage 5");
     await dialog.locator("button[data-credential-close]").click();
     await dialog.waitFor({ state: "hidden", timeout: TIMEOUT_MS });
@@ -526,11 +577,11 @@ async function validateShareUrlAndReducedMotion(browser, clientErrors) {
     await page.goto(storyUrl.href, { waitUntil: "domcontentloaded", timeout: TIMEOUT_MS });
     const dialog = page.locator("#credential-sample-dialog, [role='dialog']").first();
     await dialog.waitFor({ state: "visible", timeout: TIMEOUT_MS });
-    const { stages } = await assertEightOrderedStages(dialog);
+    const { stages } = await assertNineOrderedLayers(dialog);
     await waitForStage(page, stages, 0);
     await assertPaused(dialog, "Reduced-motion preference should open the walkthrough paused.");
-    await dialog.locator("[data-credential-step-to]").nth(2).click();
-    await waitForStage(page, stages, 2);
+    await dialog.locator("[data-credential-step-to]").nth(3).click();
+    await waitForStage(page, stages, 3);
     await assertPaused(dialog, "Interaction under reduced motion should remain paused.");
   } finally {
     await context.close();
@@ -582,19 +633,21 @@ async function validateFinalAutoplayLoop(browser, clientErrors) {
 
     await page.clock.runFor(2_600);
     await assertCurrentStage(stages, 1);
-    for (let stageIndex = 2; stageIndex < 8; stageIndex += 1) {
+    for (let stageIndex = 2; stageIndex < 9; stageIndex += 1) {
       await page.clock.runFor(6_800);
       await assertCurrentStage(stages, stageIndex);
+      await assertLayerCountLabel(dialog, stageIndex);
     }
     await page.clock.runFor(6_800);
     await assertCurrentStage(stages, 0);
+    await assertLayerCountLabel(dialog, 0);
     await assertPlaying(dialog, "Autoplay should loop from the final stage to the first.");
 
-    await dialog.locator("[data-credential-step-to]").nth(2).click();
-    await assertCurrentStage(stages, 2);
+    await dialog.locator("[data-credential-step-to]").nth(3).click();
+    await assertCurrentStage(stages, 3);
     await assertPaused(dialog, "A user interaction should stop the autoplay loop.");
     await page.clock.runFor(68_000);
-    await assertCurrentStage(stages, 2);
+    await assertCurrentStage(stages, 3);
     await assertPaused(dialog, "Autoplay advanced after the user took control.");
   } finally {
     await context.close();

@@ -36,15 +36,15 @@
   }
 
   function updateControls() {
-    count.textContent = "Step " + String(current + 1).padStart(2, "0") + " of " + String(stages.length).padStart(2, "0");
+    count.textContent = "Layer " + String(current + 1).padStart(2, "0") + " of " + String(stages.length).padStart(2, "0");
     if (current === 0 && document.activeElement === previousButton) {
       forwardButton.focus();
     }
     previousButton.disabled = current === 0;
-    forwardButton.textContent = current === stages.length - 1 ? "Restart ↺" : "Next →";
+    forwardButton.textContent = current === stages.length - 1 ? "Restart ↺" : "Next layer →";
     pauseButton.textContent = paused ? "Play" : "Pause";
     pauseButton.setAttribute("aria-label", paused ? "Play walkthrough" : "Pause walkthrough");
-    pace.textContent = paused ? "Paused · choose a step or press Play" : "Auto-playing · choose a step to take control";
+    pace.textContent = paused ? "Paused · choose a layer or press Play" : "Auto-playing · choose a layer to take control";
     dialog.classList.toggle("is-paused", paused);
     filmline.style.animationPlayState = paused ? "paused" : "running";
   }
@@ -76,29 +76,25 @@
     });
     currentVisual.hidden = current === 0;
     steps.forEach(function (step, stepIndex) {
-      if (stepIndex === current) step.setAttribute("aria-current", "step");
+      if (stepIndex === current) step.setAttribute("aria-current", "true");
       else step.removeAttribute("aria-current");
     });
 
-    var strip = dialog.querySelector(".credential-tour__steps");
-    var selected = steps[current];
-    if (selected) {
-      strip.scrollTo({
-        left: strip.scrollLeft + selected.getBoundingClientRect().left - strip.getBoundingClientRect().left -
-          (strip.clientWidth - selected.clientWidth) / 2,
-        behavior: reduceMotion.matches ? "auto" : "smooth"
-      });
-    }
     restartFilmline();
     updateControls();
     if (revealInView) {
       window.requestAnimationFrame(function () {
         var target = currentVisual.hidden ? stages[current] : currentVisual;
         var bounds = target.getBoundingClientRect();
+        var panelBounds = panel.getBoundingClientRect();
         var headerBottom = dialog.querySelector(".credential-modal__header").getBoundingClientRect().bottom;
         var footerTop = dialog.querySelector(".credential-modal__footer").getBoundingClientRect().top;
-        var delta = bounds.bottom > footerTop - 16 ? bounds.bottom - footerTop + 16 : 0;
-        if (bounds.top < headerBottom + 16) delta = bounds.top - headerBottom - 16;
+        var safeTop = Math.max(panelBounds.top, headerBottom) + 12;
+        var safeBottom = Math.min(panelBounds.bottom, footerTop) - 12;
+        var available = Math.max(0, safeBottom - safeTop);
+        var delta = 0;
+        if (bounds.height > available || bounds.top < safeTop) delta = bounds.top - safeTop;
+        else if (bounds.bottom > safeBottom) delta = bounds.bottom - safeBottom;
         if (delta) panel.scrollBy({ top: delta, behavior: reduceMotion.matches ? "auto" : "smooth" });
       });
     }
