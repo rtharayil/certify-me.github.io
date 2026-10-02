@@ -3,7 +3,7 @@
 - [Git history spans multiple eras](git-history-caveats.md) — plain `git log` may only show a narrow recent window; use `--all` when restoring/comparing against a past date.
 - [CertifyMe client-logo section location](certifyme-client-logos.md) — the homepage customer logo strip lives inside Statistics.html via ClientLogos.html, not a standalone section.
 - [Mobile homepage overlap cascade](mobile-overlap-cascade.md) — host spacing can override modal and carousel layouts; inspect the cascade before shrinking text.
-- [Credential portability claims](credential-portability-claims.md) — open standards improve portability but do not remove issuer-key or status-resource dependencies.
+- [Credential proof boundaries](credential-portability-claims.md) — standards retain issuer-resource dependencies; signed subject data is not independent identity verification.
 - [Sample credential truthfulness](sample-credential-truthfulness.md) — homepage demo uses one fictional university credential; separate taxonomy and market examples from live/verified claims.
 - [University Workforce Intelligence positioning](university-workforce-positioning.md) — the standalone Solutions page is B2B for university teams, not a learner job board.
 - [Comprehensive Learner Record positioning](clr-positioning.md) — lead with institution-governed record infrastructure; the learner-facing record is a benefit, not the buyer story.
