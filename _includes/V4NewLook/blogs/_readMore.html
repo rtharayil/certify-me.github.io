@@ -82,10 +82,15 @@
                 <!-- <span class="post-tag color--purple-400">Freelancer Tips</span> -->
 
                 <!-- Post Link -->
-                <h6 class="s-20 w-700">
-                    <a
-                        href="https://www.certifyme.online/blog/15-certificate-maker.html">15 Free Online Certificate Maker Software in 2025</a>
-                </h6>
+                {% if include.card_heading_level == "h3" %}
+                <h3 class="s-20 w-700">
+                    <a href="https://www.certifyme.online/blog/15-certificate-maker.html">15 Free Online Certificate Maker Software in 2025</a>
+                </h3>
+                {% else %}
+                <p class="s-20 w-700">
+                    <a href="https://www.certifyme.online/blog/15-certificate-maker.html">15 Free Online Certificate Maker Software in 2025</a>
+                </p>
+                {% endif %}
 
                 <!-- Text -->
                 <p>Explore the top 15 free certificate maker software in 2025. Create professional, customizable certificates easily with these user-friendly tools and find your perfect fit!

@@ -5050,11 +5050,13 @@ h5.h5-title {
 /*  CONTENT BOX TYPOGRAPHY
 /*------------------------------------------*/
 
+.cbox-2-txt h3,
 .cbox-2-txt h5,
 .cbox-3-txt h5 {
   margin-bottom: 15px;
 }
 
+.ct-03 .cbox-2-txt h3,
 .ct-03 .cbox-2-txt h5 {
   margin-bottom: 10px;
 }
@@ -7649,19 +7651,23 @@ span.release-date span {
 }
 
 .accordion-thumb h5,
-.accordion-thumb h4 {
+.accordion-thumb h4,
+#faqs-2 .accordion-thumb h2,
+#faqs-4 .accordion-thumb h2 {
   line-height: 1;
   margin-bottom: 0;
 }
 
 .question h5,
-.accordion-panel-item h5 {
+.accordion-panel-item h5,
+#faqs-2 .faqs-2-question h3 {
   margin-bottom: 20px;
 }
 
 .question h5 span,
 .accordion-thumb h5 span,
-.accordion-panel-item h5 span {
+.accordion-panel-item h5 span,
+#faqs-2 .faqs-2-question h3 span {
   margin-right: 5px;
 }
 

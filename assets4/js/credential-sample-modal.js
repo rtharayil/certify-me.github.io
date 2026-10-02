@@ -191,7 +191,7 @@
     if (layerPicker) layerPicker.open = !isMobile;
     if (!dialog.hidden && isMobile) {
       window.requestAnimationFrame(function () {
-        bringIntoReadableView(stages[current].querySelector("h2"));
+        bringIntoReadableView(stages[current].querySelector("h3"));
       });
     }
   }
@@ -200,7 +200,7 @@
     syncHeaderHeight();
     if (dialog.hidden || !mobileLayout.matches) return;
     window.requestAnimationFrame(function () {
-      var heading = stages[current].querySelector("h2");
+      var heading = stages[current].querySelector("h3");
       if (heading) bringIntoReadableView(heading);
     });
   }
@@ -258,7 +258,7 @@
     dialog.querySelector(".credential-modal__close").focus({ preventScroll: true });
     window.requestAnimationFrame(function () {
       if (!dialog.hidden && mobileLayout.matches) {
-        bringIntoReadableView(stages[current].querySelector("h2"));
+        bringIntoReadableView(stages[current].querySelector("h3"));
       }
     });
     if (!paused) timer = window.setTimeout(function () {
@@ -311,7 +311,7 @@
     button.addEventListener("click", function () {
       pauseTour();
       showPanel(Number(button.getAttribute("data-credential-revisit")), false);
-      var heading = stages[current].querySelector("h2");
+      var heading = stages[current].querySelector("h3");
       heading.setAttribute("tabindex", "-1");
       heading.focus({ preventScroll: true });
       window.requestAnimationFrame(function () {

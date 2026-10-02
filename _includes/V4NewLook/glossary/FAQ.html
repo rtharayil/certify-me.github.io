@@ -19,7 +19,7 @@
                         <div class="mb-5">
 
                             <!-- CATEGORY TITLE -->
-                            <h4 class="s-28 w-700 mb-4">{{ block.title }}</h4>
+                            <h2 class="s-28 w-700 mb-4">{{ block.title }}</h2>
 
                             {% assign counter = 1 %}
 
@@ -38,18 +38,18 @@
 
                                 {% if matched %}
                                     <!-- FILE EXISTS — SHOW LINK -->
-                                    <h5 class="s-18 mb-2">
+                                    <h3 class="s-18 mb-2">
                                         <span>{{ counter }}.</span>
                                         <a href="{{ matched.url }}" style="color: rgb(0, 0, 192); text-decoration: underline;">
                                             {{ question }}
                                         </a>
-                                    </h5>
+                                    </h3>
                                 {% else %}
                                     <!-- NO FILE — SHOW AS TEXT WITHOUT LINK -->
-                                    <h5 class="s-18 mb-2">
+                                    <h3 class="s-18 mb-2">
                                         <span>{{ counter }}.</span>
                                         <span>{{ question }}</span>
-                                    </h5>
+                                    </h3>
                                 {% endif %}
 
                                 {% assign counter = counter | plus: 1 %}

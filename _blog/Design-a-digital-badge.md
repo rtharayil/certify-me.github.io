@@ -27,7 +27,7 @@ In today's digital age, [credentials](https://www.certifyme.online/) and certifi
 
 <br>
 
-### Step 1: <a href="https://credential.certifyme.online/auth/login">Logging</a> into CertifyMe
+## Step 1: <a href="https://credential.certifyme.online/auth/login">Logging</a> into CertifyMe
 
 The first step on your journey to creating a digital badge is [logging into the CertifyMe platform](https://credential.certifyme.online/auth/login). If you're not already registered, you'll need to sign up for an account. Once you've successfully logged in, you'll be greeted by a user-friendly dashboard that provides access to a variety of tools and features.<br>
 
@@ -35,7 +35,7 @@ The first step on your journey to creating a digital badge is [logging into the 
 
 <br>
 
-### Step 2: Creating a Credential Template
+## Step 2: Creating a Credential Template
 
 After logging in, locate the option that says "Design Template" and click on it. This is where you'll begin the process of crafting your digital badge. CertifyMe offers a comprehensive template that guides you through the badge creation process, ensuring that you include all the necessary information to make your badge informative and visually appealing — the same workflow used when institutions [create digital credentials](https://www.certifyme.online/glossary/how-to-create-and-share-digital-credentials-with-students-securely.html) and share them securely with students at scale.<br>
 
@@ -43,7 +43,7 @@ After logging in, locate the option that says "Design Template" and click on it.
 
 <br>
 
-<h3>Step 3: Completing the First Step</h3>
+<h2>Step 3: Completing the First Step</h2>
 
 In this step, you'll need to fill out the initial information required for your badge. This includes:
 
@@ -61,7 +61,7 @@ In this step, you'll need to fill out the initial information required for your 
 
 <br>
 
-### Step 4: Designing Your Badge
+## Step 4: Designing Your Badge
 
 The visual aspect of your digital badge is what captures attention and makes it stand out. CertifyMe offers multiple ways to design your badge:
 
@@ -71,7 +71,7 @@ The visual aspect of your digital badge is what captures attention and makes it 
 
 <br>
 
-### Step 5: Fine-tuning Your Design
+## Step 5: Fine-tuning Your Design
 
 Once you've chosen a design method and created your badge, it's time to fine-tune the details:
 
@@ -85,7 +85,7 @@ Once you've chosen a design method and created your badge, it's time to fine-tun
 
 <br>
 
-### Saving the Template and Commencing Awards
+## Saving the Template and Commencing Awards
 
 With your badge design perfected and saved, you're now ready to use it to recognize achievements. The template you've created serves as a reusable blueprint for future badges, streamlining the process for awarding credentials.
 
@@ -93,6 +93,6 @@ When you're prepared to award a badge, simply access the template you've saved. 
 
 <br>
 
-### Conclusion
+## Conclusion
 
 Creating a digital badge using CertifyMe is a straightforward and rewarding process. By following the step-by-step guide outlined in this article, you can ensure that your digital badges not only reflect the achievements they represent but also stand out as visually appealing and credible credentials in the digital landscape. Whether you're an educational institution, a corporate entity, or an individual looking to acknowledge accomplishments, CertifyMe provides the tools you need to design and award impactful digital badges.

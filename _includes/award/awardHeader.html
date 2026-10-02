@@ -4,15 +4,29 @@
             background-image: url('{{page.BGImagelink}}');
             color: black;
         }
+        header .award-header-subheading {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.1;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        header .award-header-description {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.1;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
     </style>
     <div class="header-content">
         <div class="header-content-inner ;">
             <h1>{{page.Head1}}</h1>
             
             <div>
-                <h3>{{page.Head2}}</h3>
+                <h2 class="award-header-subheading">{{page.Head2}}</h2>
 
-                <h5>{{page.Head3}}</h5>
+                <p class="award-header-description">{{page.Head3}}</p>
             </div>
             <a href="#form" class="btn btn-primary btn-xl page-scroll" style="margin-top: 20px">{{page.HeadCTA}}</a>
         </div>

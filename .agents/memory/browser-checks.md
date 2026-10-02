@@ -32,3 +32,9 @@ Keep browser configuration and cache state outside the watched Jekyll workspace 
 **Why:** System Chromium wrote crash-report settings beneath the workspace's `.config` directory while tests ran. Jekyll treated those browser-state changes as source edits and repeatedly regenerated the site; image decoding could fail transiently even though the asset was intact and returned HTTP 200.
 
 **How to apply:** If browser checks cause unexpected regeneration or intermittent asset failures, inspect the watcher logs before changing artwork or application code. Use temporary directories for browser configuration/cache where possible, and wait for the actual lazy-loaded image to load before decoding it.
+
+Distinguish a browser transport failure from a broken interaction when HTML loads but its script does not.
+
+**Why:** System Chromium encountered `ERR_CERT_VERIFIER_CHANGED` on the proxied preview's assets. The homepage rendered, but the missing dialog script made a working opener appear broken.
+
+**How to apply:** Inspect failed network requests as well as JavaScript exceptions. If transport is unreliable, check that the server serves the intended bytes and isolate the component's behavior separately; do not change production TLS or rewrite working application logic to satisfy a faulty browser session.

@@ -34,13 +34,13 @@ Associations come with their own set of benefits:
 
 <br>
 
-### Membership: 
+## Membership:
 
 Associations allowing membership, helps the organization get a closer look into the needs of the customer. Association membership for digital credentials can help track the progress of their members and make suggestions based on the progress. Memberships that recognize the involvements creates a brand value encouraging others to be part of the same. 
 
 <br>
 
-### Membership renewal:
+## Membership renewal:
 
 Membership can be both long-term and short-term. In both cases, it is crucial to notify the members for renewal. With traditional membership, it was tough to inform its members about their membership duration and renewal.
 
@@ -48,7 +48,7 @@ Automating the membership system to inform and respond to the members regarding 
 
 <br>
 
-### Cost-Effective:
+## Cost-Effective:
 
 The traditional membership method has its cons regarding the cost that came with printing, issuing and accrediting both membership cards and certifications. In terms of packing, postage and delivery it was both toilsome and expensive.
 
@@ -56,7 +56,7 @@ These manufacturing and delivery costs can be avoided with digital credentials. 
 
 <br>
 
-### Generate Referrals:
+## Generate Referrals:
 
 If the member gets recognition and perks for being a loyal part of the organization, it would make room for word-to-mouth marketing, generating referrals and attracting more members. This further gets the organization its brand recognition building trust in the existing members.
 
@@ -64,7 +64,7 @@ A positive response from members encourages a positive response from other consu
 
 <br>
 
-### Rewards and Recognition:
+## Rewards and Recognition:
 
 As mentioned in the earlier point, members of the association love to get recognised. How the association values and rewards its existing members impacts the organization's status and culture. This also encourages long-term involvement from the members. 
 
@@ -72,6 +72,6 @@ Issuing rewards and recognition to its valuable members increases engagement. Th
 
 <br>
 
-### Conclusion:
+## Conclusion:
 
 Adapting to the current digital world is a must and association membership is one such term that will quantify its members and create a brand value. It allows members to get recognised and encourages their involvement. 

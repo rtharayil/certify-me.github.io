@@ -44,7 +44,7 @@ async function main() {
           const frame = element.querySelector("figure");
           return {
             text: element.textContent.replace(/\s+/g, " ").trim(),
-            heading: element.querySelector("h2").textContent.trim(),
+            heading: element.querySelector("h3").textContent.trim(),
             followsLayerFive: element.previousElementSibling?.classList.contains("credential-learner-record"),
             sharedFlow: element.parentElement.classList.contains("credential-hero-flow"),
             dimensions: [image.naturalWidth, image.naturalHeight],
@@ -54,7 +54,7 @@ async function main() {
             icons: element.querySelectorAll('svg[aria-hidden="true"]').length,
             controls: element.querySelectorAll("button, input, select, a").length,
             imageBox: image.getBoundingClientRect().toJSON(),
-            copyBox: element.querySelector("h2").parentElement.getBoundingClientRect().toJSON(),
+            copyBox: element.querySelector("h3").parentElement.getBoundingClientRect().toJSON(),
             frameBorder: getComputedStyle(frame).borderTopWidth,
             frameShadow: getComputedStyle(frame).boxShadow,
             overflow: Math.max(document.documentElement.scrollWidth, document.body.scrollWidth) - innerWidth,

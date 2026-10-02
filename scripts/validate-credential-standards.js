@@ -44,7 +44,7 @@ async function main() {
           const frame = element.querySelector("figure");
           return {
             text: element.textContent.replace(/\s+/g, " ").trim(),
-            heading: element.querySelector("h2").textContent.trim(),
+            heading: element.querySelector("h3").textContent.trim(),
             followsLayerOne: element.previousElementSibling?.classList.contains("credential-presentation"),
             layerGap: element.querySelector(".credential-standards__inner").getBoundingClientRect().top
               - element.previousElementSibling.querySelector(".credential-presentation__inner").getBoundingClientRect().bottom,

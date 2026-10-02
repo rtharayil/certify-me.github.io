@@ -307,7 +307,7 @@ async function assertPhoneReadingPosition(dialog, label) {
     const footer = element.querySelector(".credential-modal__footer");
     const stage = Array.from(element.querySelectorAll("[data-credential-stage]"))
       .find((item) => !item.hidden);
-    const title = stage && stage.querySelector("h2");
+    const title = stage && stage.querySelector("h3");
     const prose = stage
       && stage.querySelector(":scope > p:not(.credential-readable__note):not(.credential-readable__critical)");
     if (!panel || !header || !title || !prose) return null;
@@ -1843,7 +1843,7 @@ async function validateExploredLayerNavigation(browser, clientErrors) {
         await page.waitForTimeout(450);
         await assertPaused(dialog, "Revisiting a layer must pause autoplay for reading.");
         await assertFocusIndicator(dialog, index);
-        assert(await stages.nth(index).locator("h2").evaluate((heading) => document.activeElement === heading),
+        assert(await stages.nth(index).locator("h3").evaluate((heading) => document.activeElement === heading),
           "Revisiting a layer must put keyboard/screen-reader focus on its explanation.");
         if (phone) await assertPhoneReadingPosition(dialog, `Revisited phone layer ${index + 1}`);
       }

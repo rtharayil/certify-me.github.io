@@ -21,7 +21,7 @@ faqs:
     answer: "Absolutely. It's the fastest way to add new services to your portfolio. If your clients are asking for something you don't offer yet, you can white-label a solution and be ready to sell it by next week."
 ---
 
-# White labelling Service
+<p class="s-32 w-700">White labelling Service</p>
 
 When an organisation buys services from a white label company, the white label company rebrands the services and resells them under your company's name. White-label enterprises create, manufacture, brand, and sell services under the buyer's name.
 

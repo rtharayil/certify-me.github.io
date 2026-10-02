@@ -585,7 +585,7 @@
   .bc-2-txt h2, .bc-3-txt h2, .bc-4-txt h2, .txt-block h3, .txt-block h2 { margin-bottom: 20px; }
   .txt-block h5, .bc-6 h4 { margin-bottom: 18px; }
   h5.h5-title { margin-top: 18px; margin-bottom: 18px; }
-  .cbox-2-txt h5, .cbox-3-txt h5, .bc-6 h4 { margin-bottom: 12px; }
+  .cbox-2-txt h3, .cbox-2-txt h5, .cbox-3-txt h5, .bc-6 h4 { margin-bottom: 12px; }
 
   .ct-08 .section-title h2, .ct-09 .section-title h2, .ct-10 .section-title h2 { padding: 0 5px; }
 
@@ -622,7 +622,7 @@
   .cbox-4-txt { margin-bottom: 22px; }
 
   /* Content Box Typography */
-  .ct-03 .cbox-2-txt h5 { margin-bottom: 12px; }
+  .ct-03 .cbox-2-txt h3, .ct-03 .cbox-2-txt h5 { margin-bottom: 12px; }
   .cbox-6 h6 { margin-bottom: 12px; }
   .cbox-1-txt p { margin-bottom: 5px; }
 
@@ -2034,7 +2034,7 @@
   .cbox-4-txt { margin-bottom: 16px; }
 
   /* Content Box Typography */
-  .cbox-2-txt h5, .cbox-3-txt h5 { margin-bottom: 10px; }
+  .cbox-2-txt h3, .cbox-2-txt h5, .cbox-3-txt h5 { margin-bottom: 10px; }
   .cbox-6 h6 { margin-bottom: 12px; }
   .cbox-1-txt p {  margin-bottom: 5px; }
 
@@ -3972,7 +3972,7 @@
   .bc-2-txt h2, .bc-3-txt h2, .bc-4-txt h2, .txt-block h3, .txt-block h2 { margin-bottom: 20px; }
   .txt-block h5 { margin-bottom: 18px; }
   h5.h5-title { margin-top: 18px; margin-bottom: 18px; }
-  .cbox-2-txt h5, .cbox-3-txt h5, .bc-6-txt h5 { margin-bottom: 12px; }
+  .cbox-2-txt h3, .cbox-2-txt h5, .cbox-3-txt h5, .bc-6-txt h5 { margin-bottom: 12px; }
 
   .txt-block p.s-20, .txt-block p.s-21 { font-size: 1.3125rem; }
 
@@ -5002,7 +5002,7 @@
   .bc-5-wrapper .section-title p { padding: 0 5%; } 
 
   .bc-2-txt h2, .bc-3-txt h2, .bc-4-txt h2, .txt-block h3, .txt-block h2 { margin-bottom: 15px; }
-  .cbox-2-txt h5, .cbox-3-txt h5, .bc-6-txt h5 { margin-bottom: 12px; }
+  .cbox-2-txt h3, .cbox-2-txt h5, .cbox-3-txt h5, .bc-6-txt h5 { margin-bottom: 12px; }
 
   .txt-block p.p-sm, .txt-block p { margin-bottom: 0.875rem; }
   .txt-block p.s-20, .txt-block p.s-21 { font-size: 1.1875rem; }
@@ -5428,7 +5428,7 @@
   #faqs-2 .accordion-panel { padding: 30px 0 15px 0; } 
   #faqs-2 .accordion-panel-item.mb-35, #faqs-3 .question.mb-35 { margin-bottom: 25px; }
 
-  .faqs-section .accordion-thumb h5 { line-height: 1.4; padding-right: 8%; }
+  .faqs-section .accordion-thumb h5, #faqs-4 .accordion-thumb h2 { line-height: 1.4; padding-right: 8%; }
   .question h5, .accordion-panel-item h5 { line-height: 1.4; margin-bottom: 15px; }
 
   /* FAQs Tabs */
@@ -6172,7 +6172,7 @@
   .txt-box { margin-bottom: 15px; } 
 
   .bc-2-txt h2, .bc-3-txt h2, .bc-4-txt h2, .txt-block h3, .txt-block h2 { margin-bottom: 14px; }
-  .cbox-2-txt h5, .cbox-3-txt h5, .bc-6-txt h5 { margin-bottom: 12px; }
+  .cbox-2-txt h3, .cbox-2-txt h5, .cbox-3-txt h5, .bc-6-txt h5 { margin-bottom: 12px; }
 
   .txt-block p.p-sm, .txt-block p { margin-bottom: 0.875rem; }
   .txt-block p.s-20, .txt-block p.s-21 { font-size: 1.1875rem; }
@@ -6598,7 +6598,7 @@
   #faqs-2 .accordion-panel { padding: 30px 0 15px 0; } 
   #faqs-2 .accordion-panel-item.mb-35, #faqs-3 .question.mb-35 { margin-bottom: 25px; }
 
-  .faqs-section .accordion-thumb h5 { line-height: 1.4; padding-right: 8%; }
+  .faqs-section .accordion-thumb h5, #faqs-4 .accordion-thumb h2 { line-height: 1.4; padding-right: 8%; }
   .question h5, .accordion-panel-item h5 { line-height: 1.4; margin-bottom: 15px; }
 
   /* FAQs Tabs */
@@ -7371,7 +7371,7 @@
   .bc-5-wrapper .section-title p { padding: 0 2%; }
 
   .bc-2-txt h2, .bc-3-txt h2, .bc-4-txt h2, .txt-block h3, .txt-block h2 { margin-bottom: 14px; }
-  .cbox-2-txt h5, .cbox-3-txt h5, .bc-6-txt h5 { margin-bottom: 12px; }
+  .cbox-2-txt h3, .cbox-2-txt h5, .cbox-3-txt h5, .bc-6-txt h5 { margin-bottom: 12px; }
 
   .txt-block p.p-sm, .txt-block p { margin-bottom: 0.897435rem; }
   .txt-block p.s-20, .txt-block p.s-21 { font-size: 1.12820rem; }
@@ -7814,7 +7814,7 @@
   #faqs-2 .accordion-panel { padding: 30px 0 15px 0; } 
   #faqs-2 .accordion-panel-item.mb-35, #faqs-3 .question.mb-35 { margin-bottom: 25px; }
 
-  .faqs-section .accordion-thumb h5 { line-height: 1.35; padding-right: 8%; }
+  .faqs-section .accordion-thumb h5, #faqs-4 .accordion-thumb h2 { line-height: 1.35; padding-right: 8%; }
   .question h5, .accordion-panel-item h5 { line-height: 1.35; margin-bottom: 15px; }
 
   /* FAQs Tabs */
@@ -8613,7 +8613,7 @@
   .bc-2-txt h2, .bc-3-txt h2, .bc-4-txt h2, .txt-block h3, .txt-block h2 { margin-bottom: 14px; }
   .txt-block h5 { margin-bottom: 16px; }
   h5.h5-title { margin-top: 16px; margin-bottom: 16px; }
-  .cbox-2-txt h5, .cbox-3-txt h5, .bc-6-txt h5 { margin-bottom: 12px; }
+  .cbox-2-txt h3, .cbox-2-txt h5, .cbox-3-txt h5, .bc-6-txt h5 { margin-bottom: 12px; }
   
   .txt-block p, .txt-block p.p-md, .txt-block p.p-lg { margin-bottom: 0.85714rem; }
   .txt-block p.s-20, .txt-block p.s-21 { font-size: 1.14285rem; }
@@ -9066,7 +9066,7 @@
   #faqs-2 .accordion-panel { padding: 25px 0 10px 0; } 
   #faqs-2 .accordion-panel-item.mb-35, #faqs-3 .question.mb-35 { margin-bottom: 20px; }
 
-  .faqs-section .accordion-thumb h5 { line-height: 1.35; padding-right: 8%; }
+  .faqs-section .accordion-thumb h5, #faqs-4 .accordion-thumb h2 { line-height: 1.35; padding-right: 8%; }
   .question h5, .accordion-panel-item h5 { line-height: 1.35; margin-bottom: 15px; }
 
   /* FAQs Tabs */

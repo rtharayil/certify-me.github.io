@@ -24,7 +24,7 @@ permalink: /gdpr-enterprise
 .gdpr-table tr:nth-child(even) td { background: #fafbff; }
 .gdpr-badge { display: inline-block; background: #e8f5e9; color: #2e7d32; border-radius: 4px; padding: 2px 10px; font-size: 0.82rem; font-weight: 600; margin-left: 8px; vertical-align: middle; }
 .gdpr-toc { background: #f7f9fc; border: 1px solid #e2e6ea; border-radius: 8px; padding: 20px 28px; margin: 28px 0; }
-.gdpr-toc h3 { margin-top: 0; font-size: 1rem; color: #2c3e6b; }
+.gdpr-toc-title { margin-top: 0; font-size: 1rem; color: #2c3e6b; font-weight: 700; }
 .gdpr-toc ol { margin: 0; padding-left: 1.4rem; }
 .gdpr-toc li { margin-bottom: 4px; font-size: 0.9rem; }
 .gdpr-toc a { color: #4c6ef5; text-decoration: none; }
@@ -57,7 +57,7 @@ permalink: /gdpr-enterprise
           </div>
 
           <div class="gdpr-toc">
-            <h3>Table of Contents</h3>
+            <p class="gdpr-toc-title">Table of Contents</p>
             <ol>
               <li><a href="#s1">Introduction</a></li>
               <li><a href="#s2">Company Information</a></li>

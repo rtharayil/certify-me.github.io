@@ -21,10 +21,10 @@ permalink: /gdpr
 
         <div class="txt-block legal-info">
 
-          <h4 class="s-30 w-700"><span>1.</span> Our GDPR Commitment</h4>
+          <h2 class="s-30 w-700"><span>1.</span> Our GDPR Commitment</h2>
           <p>CertifyMe processes personal data as both a <strong>Data Controller</strong> (for our own operations) and a <strong>Data Processor</strong> (on behalf of institutions that use our platform to issue credentials). We are committed to lawful, fair, and transparent processing of all personal data.</p>
 
-          <h4 class="s-30 w-700"><span>2.</span> What Data We Process</h4>
+          <h2 class="s-30 w-700"><span>2.</span> What Data We Process</h2>
           <p>When institutions use CertifyMe to issue credentials, we may process the following personal data of credential recipients:</p>
           <ul>
             <li>Full name</li>
@@ -35,7 +35,7 @@ permalink: /gdpr
           </ul>
           <p>We do not sell personal data to third parties. We do not use recipient data for advertising purposes.</p>
 
-          <h4 class="s-30 w-700"><span>3.</span> Legal Bases for Processing</h4>
+          <h2 class="s-30 w-700"><span>3.</span> Legal Bases for Processing</h2>
           <p>We process personal data on the following legal bases:</p>
           <ul>
             <li><strong>Contract performance</strong> — processing necessary to deliver the credential issuance service</li>
@@ -44,7 +44,7 @@ permalink: /gdpr
             <li><strong>Consent</strong> — where we rely on consent, you may withdraw it at any time</li>
           </ul>
 
-          <h4 class="s-30 w-700"><span>4.</span> Your Rights Under GDPR</h4>
+          <h2 class="s-30 w-700"><span>4.</span> Your Rights Under GDPR</h2>
           <p>If you are located in the EU/EEA or the UK, you have the following rights regarding your personal data:</p>
           <ul>
             <li><strong>Right of access</strong> — request a copy of the personal data we hold about you</li>
@@ -57,19 +57,19 @@ permalink: /gdpr
           </ul>
           <p>To exercise any of these rights, please email <a href="mailto:privacy@certifyme.online">privacy@certifyme.online</a>.</p>
 
-          <h4 class="s-30 w-700"><span>5.</span> Data Retention</h4>
+          <h2 class="s-30 w-700"><span>5.</span> Data Retention</h2>
           <p>Credential data is retained for as long as the issuing institution's account is active, or as required by law. Institutions may request deletion of recipient data at any time through the CertifyMe dashboard or by contacting our support team.</p>
 
-          <h4 class="s-30 w-700"><span>6.</span> International Data Transfers</h4>
+          <h2 class="s-30 w-700"><span>6.</span> International Data Transfers</h2>
           <p>CertifyMe may transfer personal data to countries outside the EU/EEA. Where this occurs, we ensure appropriate safeguards are in place, including Standard Contractual Clauses (SCCs) approved by the European Commission.</p>
 
-          <h4 class="s-30 w-700"><span>7.</span> Data Processing Agreement (DPA)</h4>
+          <h2 class="s-30 w-700"><span>7.</span> Data Processing Agreement (DPA)</h2>
           <p>Institutions that use CertifyMe to process personal data on behalf of their learners or recipients can request a Data Processing Agreement (DPA). Please contact <a href="mailto:privacy@certifyme.online">privacy@certifyme.online</a> to request a DPA.</p>
 
-          <h4 class="s-30 w-700"><span>8.</span> Data Breach Notification</h4>
+          <h2 class="s-30 w-700"><span>8.</span> Data Breach Notification</h2>
           <p>In the event of a personal data breach that is likely to result in a risk to your rights and freedoms, CertifyMe will notify the relevant supervisory authority within 72 hours of becoming aware of the breach, as required by GDPR Article 33. Affected data subjects will be notified without undue delay where the breach is likely to result in a high risk to their rights.</p>
 
-          <h4 class="s-30 w-700"><span>9.</span> Contact & DPO</h4>
+          <h2 class="s-30 w-700"><span>9.</span> Contact & DPO</h2>
           <p>For GDPR-related queries, data subject requests, or to request our DPA, please contact:</p>
           <p><strong>CertifyMe Privacy Team</strong><br>
           Email: <a href="mailto:privacy@certifyme.online">privacy@certifyme.online</a><br>
