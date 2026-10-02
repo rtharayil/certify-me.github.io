@@ -18,9 +18,10 @@ async function main() {
         const section = page.locator("#institution-outcomes");
         assert.equal(await section.count(), 1);
         assert(await section.evaluate((element) =>
-          element.previousElementSibling.classList.contains("credential-workforce-intelligence")
+          element.previousElementSibling.classList.contains("credential-context")
+          && element.nextElementSibling.id === "credential-layers-intro"
           && element.parentElement.classList.contains("credential-hero-flow")),
-          "Place the outcome directly after Layer 6 in the shared homepage background.");
+          "Place the complete outcome section after the overview and before Explore the Six Layers.");
         assert.equal(await section.locator(".credential-institution-outcomes__outcomes > li").count(), 5);
         assert.equal(await section.locator(".credential-institution-outcomes__audience-list > li").count(), 6);
         for (const role of ["Students", "Faculty", "Programme leaders", "Employers", "Administration", "Leadership"]) {

@@ -46,7 +46,8 @@ async function main() {
             text: element.textContent.replace(/\s+/g, " ").trim(),
             features: Array.from(element.querySelectorAll("li"), (item) => item.textContent.trim()),
             followsOverview: introduction?.id === "credential-layers-intro"
-              && introduction.previousElementSibling?.classList.contains("credential-context"),
+              && introduction.previousElementSibling?.id === "institution-outcomes"
+              && introduction.previousElementSibling.previousElementSibling?.classList.contains("credential-context"),
             introTitle: introduction?.querySelector("h2")?.textContent,
             introDescription: introduction?.querySelector("p")?.textContent,
             introCentered: introduction && getComputedStyle(introduction).textAlign === "center",
@@ -72,7 +73,7 @@ async function main() {
           };
         });
         assert.equal(metrics.heading, "Presentation & Access");
-        assert(metrics.followsOverview && metrics.sharedBackground, "Place the new introduction between the overview and Layer 1 in the shared flow.");
+        assert(metrics.followsOverview && metrics.sharedBackground, "Keep the overview, institutional outcomes, introduction and Layer 1 in that order.");
         assert.equal(metrics.introTitle, "Explore the Six Layers Behind the Infrastructure");
         assert.equal(metrics.introDescription, "From how achievements are presented and verified to how they become structured skills, comprehensive learner records and workforce intelligence, each layer adds depth and value to the institutional record.");
         assert(metrics.introCentered && metrics.introAboveLayer, "Keep the introduction centered and above Layer 1.");
