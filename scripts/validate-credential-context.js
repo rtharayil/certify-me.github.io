@@ -36,7 +36,8 @@ async function main() {
         ]));
         const metrics = await section.evaluate((element) => {
           const image = element.querySelector('img[src*="credential-six-layer-stack.webp"]');
-          const heading = element.querySelector("h2");
+          const heading = element.querySelector(".credential-context__copy h3");
+          const centeredHeading = element.querySelector(".credential-context__heading");
           const hero = document.querySelector("#hero-7");
           const imageBox = image.getBoundingClientRect();
           const headingBox = heading.getBoundingClientRect();
@@ -45,6 +46,11 @@ async function main() {
             .filter((item) => item.compareDocumentPosition(element) & Node.DOCUMENT_POSITION_FOLLOWING);
           return {
             title: heading.textContent.replace(/\s+/g, " ").trim(),
+            centeredTitle: centeredHeading.querySelector("h2").textContent.trim(),
+            centeredSummary: centeredHeading.querySelector(".credential-context__summary").textContent.trim(),
+            centeredAlignment: getComputedStyle(centeredHeading).textAlign,
+            headerBeforeGrid: centeredHeading.getBoundingClientRect().bottom
+              <= element.querySelector(".credential-context__inner").getBoundingClientRect().top,
             copy: element.textContent.replace(/\s+/g, " ").trim(),
             alt: image.alt,
             dimensions: [image.naturalWidth, image.naturalHeight],
@@ -70,14 +76,18 @@ async function main() {
           };
         });
         assert.match(metrics.title, /A digital credential is more than what you see/i);
+        assert.equal(metrics.centeredTitle, "From Credentials to Institutional Intelligence.");
+        assert.equal(metrics.centeredSummary, "CertifyMe connects the complete journey from achievement to skills, learner records and workforce opportunity.");
+        assert.equal(metrics.centeredAlignment, "center");
+        assert(metrics.headerBeforeGrid, "Place the centered heading above both the artwork and existing explanation.");
         assert(metrics.directlyAfterHero, "The section must be directly after the hero, before other homepage sections.");
         assert.equal(metrics.captions, 0, "The requested sample caption must be removed.");
         assert(!metrics.copy.includes("Illustrative sample only"), "Do not move the removed caption elsewhere in the section.");
         assert(metrics.topPadding <= 20, "Keep the opening spacing compact.");
         assert(metrics.sharedBackground && metrics.contiguous, "Hero and six-layer section must share one continuous background.");
         assert(metrics.alt.length > 20, "The illustration needs useful alternative text.");
-        assert.deepEqual(metrics.dimensions, [1672, 941], "Use the full new infographic without cropping.");
-        assert.deepEqual(metrics.explicitDimensions, ["1672", "941"], "Reserve intrinsic image space to avoid layout shifts.");
+        assert.deepEqual(metrics.dimensions, [1671, 941], "Use the full new infographic without cropping.");
+        assert.deepEqual(metrics.explicitDimensions, ["1671", "941"], "Reserve intrinsic image space to avoid layout shifts.");
         assert(metrics.headingVisible && metrics.overflow <= 1, `No hidden headline or horizontal overflow at ${width}px.`);
         if (width >= 1024) {
           assert(metrics.imageWidth >= Math.min(width - metrics.horizontalPadding, 1600) * .7

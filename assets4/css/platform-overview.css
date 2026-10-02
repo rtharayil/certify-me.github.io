@@ -1,0 +1,31 @@
+.platform-overview-page {
+  padding-top: 120px;
+}
+
+/* The mobile body scrolls independently; do not let scroll effects hide content. */
+.platform-overview-page .wow {
+  visibility: visible !important;
+}
+
+#platform-reviews {
+  scroll-margin-top: 100px;
+}
+
+.platform-overview-page__heading {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.platform-overview-page__heading h1 {
+  margin: 0;
+  color: #29264f;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -.04em;
+}
+
+@media (max-width: 991px) {
+  .platform-overview-page {
+    padding-top: 100px;
+  }
+}

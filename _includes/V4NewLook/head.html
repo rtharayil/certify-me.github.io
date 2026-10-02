@@ -100,7 +100,7 @@
   <!-- ENTERPRISE OVERRIDES — loaded last, highest specificity -->
   <link href="/assets4/css/enterprise-overrides.css" rel="stylesheet">
 
-  {% if page.layout == "V4Layout" or page.layout == "V4LayoutVideo" or page.url == "/digital-credential-maturity/" %}
+  {% if page.layout == "V4Layout" or page.layout == "V4LayoutVideo" or page.url == "/digital-credential-maturity/" or page.url == "/platform-overview" %}
   <!-- MOBILE UX — layouts using the homepage components + credential-maturity mobile/tablet re-composition -->
   <link href="/assets4/css/mobile-ux.css" rel="stylesheet">
   {% endif %}
@@ -115,6 +115,7 @@
   <link href="/assets4/css/credential-skill-taxonomy.css?v={{ site.time | date: '%s' }}" rel="stylesheet">
   <link href="/assets4/css/credential-learner-record.css?v={{ site.time | date: '%s' }}" rel="stylesheet">
   <link href="/assets4/css/credential-workforce-intelligence.css?v={{ site.time | date: '%s' }}" rel="stylesheet">
+  <link href="/assets4/css/credential-institution-outcomes.css?v={{ site.time | date: '%s' }}" rel="stylesheet">
   <link href="/assets4/css/credential-layer-artwork.css?v={{ site.time | date: '%s' }}" rel="stylesheet">
   {% endif %}
 

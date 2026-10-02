@@ -17,9 +17,15 @@ Keep a CDP touch-input session alive for the lifetime of its emulated phone page
 
 Use the actual scrolling ancestor when capturing mobile homepage sections; do not assume the window is the scroll container.
 
-**Why:** The mobile homepage can scroll the body independently. Window scrolling left the view at the hero, while tall element screenshots clipped off-screen text and placed fixed navigation across the captured section. Unsettled scrolling and unloaded lazy images can also make a temporary capture look like a permanent spacing defect.
+**Why:** The mobile site can scroll the body independently, even when document.scrollingElement reports HTML. Window scrolling left the view at the hero, while tall element screenshots clipped off-screen text and placed fixed navigation across the captured section. Unsettled scrolling and unloaded lazy images can also make a temporary capture look like a permanent spacing defect.
 
-**How to apply:** Start with element.scrollIntoView using instant behavior, inspect the nearest scrollable ancestor, and adjust that ancestor for the fixed header without smooth scrolling. Wait for visible lazy images to load and decode. Confirm the target's viewport bounds and capture reading viewports rather than treating one tall element image as reliable visual evidence.
+**How to apply:** Start with element.scrollIntoView using instant behavior, inspect the nearest scrollable ancestor, and adjust that ancestor for the fixed header without smooth scrolling. Wait for visible lazy images to load and decode. Confirm the target's viewport bounds and capture reading viewports rather than treating one tall element image as reliable visual evidence. Do not assume a hash URL alone produced a settled section capture.
+
+Verify visibility after scrolling when reusing legacy animated sections; valid geometry and loaded artwork do not guarantee that their text is displayed.
+
+**Why:** Legacy WOW effects left relocated review content hidden on mobile even after a bounded wait. This was distinct from the transient lazy-image and unsettled-scroll captures above.
+
+**How to apply:** Keep readable content independent of unreliable entrance-animation visibility, scoping any override to the affected page so unrelated pages retain their behavior.
 
 Keep browser configuration and cache state outside the watched Jekyll workspace when running local browser checks.
 

@@ -27,18 +27,31 @@ async function main() {
         const section = page.locator(".credential-presentation");
         assert.equal(await section.count(), 1);
         await section.scrollIntoViewIfNeeded();
-        await section.locator("img").evaluate((image) => image.decode());
+        const artwork = section.locator("img");
+        await artwork.scrollIntoViewIfNeeded();
+        await page.waitForFunction(() => {
+          const image = document.querySelector(".credential-presentation img");
+          return image?.complete && image.naturalWidth > 0;
+        });
+        await artwork.evaluate((image) => image.decode());
         await page.evaluate(() => Promise.race([
           document.fonts.ready, new Promise((resolve) => setTimeout(resolve, 3000)),
         ]));
         const metrics = await section.evaluate((element) => {
           const image = element.querySelector("img");
           const heading = element.querySelector("h2");
+          const introduction = element.previousElementSibling;
           return {
             heading: heading.textContent,
             text: element.textContent.replace(/\s+/g, " ").trim(),
             features: Array.from(element.querySelectorAll("li"), (item) => item.textContent.trim()),
-            followsOverview: element.previousElementSibling?.classList.contains("credential-context"),
+            followsOverview: introduction?.id === "credential-layers-intro"
+              && introduction.previousElementSibling?.classList.contains("credential-context"),
+            introTitle: introduction?.querySelector("h2")?.textContent,
+            introDescription: introduction?.querySelector("p")?.textContent,
+            introCentered: introduction && getComputedStyle(introduction).textAlign === "center",
+            introAboveLayer: introduction && introduction.getBoundingClientRect().bottom
+              <= element.getBoundingClientRect().top + 1,
             sharedBackground: element.parentElement.classList.contains("credential-hero-flow"),
             imageDimensions: [image.naturalWidth, image.naturalHeight],
             reservedDimensions: [image.getAttribute("width"), image.getAttribute("height")],
@@ -59,7 +72,10 @@ async function main() {
           };
         });
         assert.equal(metrics.heading, "Presentation & Access");
-        assert(metrics.followsOverview && metrics.sharedBackground, "Place Layer 1 directly after the overview in the shared flow.");
+        assert(metrics.followsOverview && metrics.sharedBackground, "Place the new introduction between the overview and Layer 1 in the shared flow.");
+        assert.equal(metrics.introTitle, "Explore the Six Layers Behind the Infrastructure");
+        assert.equal(metrics.introDescription, "From how achievements are presented and verified to how they become structured skills, comprehensive learner records and workforce intelligence, each layer adds depth and value to the institutional record.");
+        assert(metrics.introCentered && metrics.introAboveLayer, "Keep the introduction centered and above Layer 1.");
         assert.match(metrics.text, /Make achievement visible\. Make it easy to access and share\./);
         assert.match(metrics.text, /CertifyMe gives institutions a professional digital credential experience/);
         assert(!metrics.text.includes("From a document someone stores"),

@@ -15,30 +15,19 @@
         <div class="credential-hero-flow">
             {% include V4NewLook/heroSection.html %}
             {% include V4NewLook/credential-context.html %}
+            {% include V4NewLook/credential-layers-intro.html %}
             {% include V4NewLook/credential-presentation-access.html %}
             {% include V4NewLook/credential-standards-interoperability.html %}
             {% include V4NewLook/credential-verification-trust.html %}
             {% include V4NewLook/credential-skill-taxonomy.html %}
             {% include V4NewLook/credential-learner-record.html %}
             {% include V4NewLook/credential-workforce-intelligence.html %}
+            {% include V4NewLook/credential-institution-outcomes.html %}
         </div>
 
         {% include V4NewLook/Statistics.html %}
 
         {% include V4NewLook/WhyInstitutionsChoose.html %}
-
-                {% include V4NewLook/ourProductDetails.html %}
-
-        {% include V4NewLook/BuiltForInstitutions.html %}
-
-        {% include V4NewLook/ShowcaseDirectory.html %}
-
-        {% include V4NewLook/JobIntelligenceReport.html %}
-
-        {% include V4NewLook/LearnerWallet.html %}
-
-        {% include V4NewLook/G2Enterprise.html %}
-
 
         {% include V4NewLook/ComplianceStandards.html %}
 
@@ -47,37 +36,6 @@
                 {% include V4NewLook/integrations/apiIntegrationsBanner.html %}
 
         </main><!-- end #main-content -->
-
-        <!-- Review structured data for homepage — extends main SoftwareApplication via @id -->
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@graph": [{
-            "@type": "SoftwareApplication",
-            "@id": "https://www.certifyme.online/#software",
-            "review": [
-            {
-              "@type": "Review",
-              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-              "author": { "@type": "Person", "name": "Danielle Lee" },
-              "reviewBody": "CertifyMe has the best customer service. They have been partners beside us as long as we have used their product. Our members that have received digital certificates love having something they can keep online and share with their peers."
-            },
-            {
-              "@type": "Review",
-              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-              "author": { "@type": "Person", "name": "Erika Barney" },
-              "reviewBody": "CertifyMe has been very easy to implement and use. Our organization used CertifyMe to create over 7000 certificates this past year. We were able to integrate CertifyMe with our CRM, thus requiring minimal time in labor."
-            },
-            {
-              "@type": "Review",
-              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-              "author": { "@type": "Person", "name": "Anson Antony" },
-              "reviewBody": "The user interface of the platform is remarkably intuitive and makes it easier to use. I really want to acknowledge the exceptional support that CertifyMe has been providing."
-            }
-          ]
-          }]
-        }
-        </script>
 
         {% include V4NewLook/footer.html %}
 
