@@ -3,7 +3,7 @@
 
 {% include V4NewLook/head.html %}
 
-<body id="page-top">
+<body id="page-top"{% if page.url == "/" %} class="homepage-audited"{% endif %}>
         {% include V4NewLook/_GTMNoScript.html %}
 
     <a class="skip-to-main visually-hidden-focusable" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;background:#fff;padding:8px 16px;border:1px solid #4A6CF7;color:#4A6CF7;font-weight:600;text-decoration:none;" onfocus="this.style.left='8px';this.style.width='auto';this.style.height='auto';" onblur="this.style.left='-9999px';this.style.width='1px';this.style.height='1px';">Skip to main content</a>
@@ -32,6 +32,8 @@
         {% include V4NewLook/ComplianceStandards.html %}
 
         {% include V4NewLook/FourLevels.html %}
+
+        {% if page.url == "/" %}{% include V4NewLook/homepage-answers.html %}{% endif %}
 
                 {% include V4NewLook/integrations/apiIntegrationsBanner.html %}
 

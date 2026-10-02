@@ -139,6 +139,12 @@
     color: #475569 !important;
     line-height: 1.4 !important;
   }
+  body.homepage-audited .wsmenu > .wsmenu-list > li > .wsmegamenu ul.link-list > li > a:not(.btn),
+  body.homepage-audited .wsmenu > .wsmenu-list > li > ul.sub-menu > li > a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
   .wsmenu > .wsmenu-list > li > .wsmegamenu ul.link-list > li > a.btn {
     margin: 10px 0 6px !important;
     padding: 13px 18px !important;
@@ -671,5 +677,50 @@
   }
   #footer-3 .bottom-secondary-link {
     text-align: left !important;
+  }
+}
+
+/* Homepage-only tap target refinements for the shared mobile navigation
+   and credential walkthrough controls. */
+@media (max-width: 991.98px) {
+  body.homepage-audited #wsnavtoggle.wsanimated-arrow {
+    top: 14px !important;
+    right: 16px !important;
+    width: 44px;
+    height: 44px;
+    touch-action: manipulation;
+  }
+
+}
+
+@media (max-width: 1200px) and (pointer: coarse) {
+  body.homepage-audited .credential-readable .credential-modal__close {
+    flex-basis: 44px;
+    width: 44px;
+    height: 44px;
+  }
+
+  body.homepage-audited .credential-readable__controls button {
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+
+  body.homepage-audited .credential-readable__share-shortcut,
+  body.homepage-audited .credential-modal__demo,
+  body.homepage-audited .credential-readable__layers button,
+  body.homepage-audited .credential-readable__outcome-link button,
+  body.homepage-audited .credential-readable [data-credential-revisit] {
+    min-height: 44px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) and (pointer: coarse) {
+  body.homepage-audited .wsmenu > .wsmenu-list > li > .wsmegamenu ul.link-list > li > a:not(.btn),
+  body.homepage-audited .wsmenu > .wsmenu-list > li > ul.sub-menu > li > a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }

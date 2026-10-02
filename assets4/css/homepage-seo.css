@@ -1,0 +1,28 @@
+/* Main homepage only. Native disclosures keep answers available without JavaScript. */
+.homepage-answers { padding: 72px 0; background: #f7f7fd; color: #252456; }
+.homepage-answers__header { max-width: 850px; margin: 0 auto 32px; text-align: center; }
+.homepage-answers__eyebrow { color: #54438d; font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+#homepage-answers h2 { font-size: clamp(2rem, 3.25vw, 3.25rem); font-weight: 800; line-height: 1.12; letter-spacing: -.045em; }
+.homepage-answers__header > p:last-child { margin-top: 18px; color: #59586b; }
+.homepage-answers__list { max-width: 940px; margin: 0 auto; }
+.homepage-answers__item { margin: 0 0 12px; border: 1px solid #dcddea; border-radius: 12px; background: #fff; }
+.homepage-answers__item summary { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 56px; padding: 18px 22px; cursor: pointer; list-style: none; }
+.homepage-answers__item summary::-webkit-details-marker { display: none; }
+#homepage-answers summary h3 { margin: 0; color: #252456; font-size: 1.15rem; font-weight: 700; line-height: 1.4; }
+.homepage-answers__item summary > span { flex: 0 0 20px; text-align: center; font-size: 24px; line-height: 1; transition: transform .15s ease; }
+.homepage-answers__item[open] summary > span { transform: rotate(45deg); }
+.homepage-answers__answer { padding: 0 22px 20px; color: #59586b; line-height: 1.65; }
+.homepage-answers__answer p { margin: 0 0 8px; }
+.homepage-answers__answer a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; max-width: 100%; color: #3d347e; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.homepage-answers__item summary:focus-visible, .homepage-answers__answer a:focus-visible { outline: 3px solid #5648ad; outline-offset: 3px; border-radius: 8px; }
+@media (max-width: 991px) {
+  #homepage-answers h2 { font-size: clamp(2rem, 7.5vw, 2.6rem); line-height: 1.14; }
+}
+@media (max-width: 620px) {
+  .homepage-answers { padding: 48px 0; }
+  .homepage-answers__item summary { padding: 16px; }
+  .homepage-answers__answer { padding: 0 16px 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .homepage-answers__item summary > span { transition: none; }
+}

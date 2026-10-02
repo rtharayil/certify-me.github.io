@@ -1,17 +1,16 @@
 ---
-name: CertifyMe SEO critical fixes
-description: Critical SEO/technical issues fixed in this project. Sitemap, schema, HSTS, tracking.
+name: CertifyMe SEO verification
+description: Audit rendered schema rather than historical counts, and preserve plugin dependencies when deferring scripts.
 ---
 
-## Completed critical fixes
-1. **Sitemap** (`sitemap.xml`) — Added `site['certificate-templates']` loop; 301 → 380 URLs. Custom Liquid template (NOT jekyll-sitemap plugin).
-2. **sample-credential** — Excluded from sitemap via `sitemap: false` in frontmatter.
-3. **Duplicate SoftwareApplication schema** (`_layouts/V4Layout.html`) — Review block wrapped in `@graph` for proper @id merging.
-4. **HSTS** (`_headers`) — `Strict-Transport-Security: max-age=63072000; includeSubDomains; preload`
-5. **404 h6→p** — Description tag corrected in 404 page.
-6. **test.html tracking pixel** — `alt=""` added.
+Audit the freshly built, rendered homepage before accepting historical schema counts or source-only reports. Multiple JSON-LD blocks are not automatically duplicate or conflicting entities.
 
-## Architecture notes
-- Custom `sitemap.xml` is a Liquid template (source file). Iterates: site.pages, site.blog, site.integrations, site.awards, site['certificate-templates'].
-- Homepage schema: 4 JSON-LD blocks — Block 1: @graph [Organization, WebSite, SoftwareApplication], Block 2: FAQPage, Block 3: WebPage, Block 4: @graph [SoftwareApplication with reviews via @id merge]. This is correct.
-- Jekyll workflow: `bundle exec jekyll serve --host 0.0.0.0 --port 5000 --skip-initial-build`. ALWAYS rebuild with `bundle exec jekyll build` before auditing `_site/`.
+**Why:** Historical notes and an explorer report described obsolete homepage ratings and FAQ claims that were absent from the emitted homepage. Shared templates can also retain non-homepage schema inside a conditional branch.
+
+**How to apply:** Build once after the coherent edit batch, parse the emitted JSON-LD, inspect resolved entity IDs and visible-content correspondence, and distinguish valid Schema.org description from eligibility for a Google rich result. Do not infer live rankings or citation visibility from local validation.
+
+Load jQuery plugins before scripts that register ready callbacks using those plugins when converting synchronous footer scripts to deferred scripts.
+
+**Why:** With deferred scripts, jQuery can observe an interactive document and run a ready callback before a later plugin has finished loading. The previously synchronous ordering then produced a real validation-plugin runtime error.
+
+**How to apply:** Review dependencies, not only script counts; test delayed loading and runtime errors after deferral. Preserve unrelated pages' loading behavior when the requested scope is homepage-only.

@@ -43,6 +43,8 @@
   var readingTouch = null;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   var mobileLayout = window.matchMedia("(max-width: 620px), (max-width: 950px) and (max-height: 500px) and (pointer: coarse)");
+  var homepageSingleColumnLayout = window.matchMedia("(max-width: 900px)");
+  var homepageReadingLayout = document.body.classList.contains("homepage-audited");
   var storyUrl = new URL("/", window.location.origin);
   storyUrl.searchParams.set("story", "certificate");
   var storyText = "Explore CertifyMe's fictional university credential walkthrough. Sharing this link opens the tour only; it does not share a learner record.";
@@ -142,6 +144,10 @@
     if (delta) panel.scrollBy({ top: delta, behavior: reduceMotion.matches ? "auto" : "smooth" });
   }
 
+  function shouldRevealStageHeading() {
+    return mobileLayout.matches || (homepageReadingLayout && homepageSingleColumnLayout.matches);
+  }
+
   function showPanel(index, revealInView) {
     current = (index + stages.length) % stages.length;
     var isOutcome = current === stages.length - 1;
@@ -180,7 +186,8 @@
     if (revealInView) {
       window.requestAnimationFrame(function () {
         var activeStage = stages[current];
-        bringIntoReadableView(mobileLayout.matches ? activeStage.querySelector("h2") : currentVisual);
+        var stageHeading = activeStage.querySelector("h3, h2");
+        bringIntoReadableView(shouldRevealStageHeading() ? (stageHeading || currentVisual) : currentVisual);
       });
     }
   }
@@ -198,7 +205,7 @@
 
   function syncViewport() {
     syncHeaderHeight();
-    if (dialog.hidden || !mobileLayout.matches) return;
+    if (dialog.hidden || !shouldRevealStageHeading()) return;
     window.requestAnimationFrame(function () {
       var heading = stages[current].querySelector("h3");
       if (heading) bringIntoReadableView(heading);
@@ -257,7 +264,7 @@
     panel.scrollTop = 0;
     dialog.querySelector(".credential-modal__close").focus({ preventScroll: true });
     window.requestAnimationFrame(function () {
-      if (!dialog.hidden && mobileLayout.matches) {
+      if (!dialog.hidden && shouldRevealStageHeading()) {
         bringIntoReadableView(stages[current].querySelector("h3"));
       }
     });

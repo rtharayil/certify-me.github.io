@@ -1,5 +1,5 @@
 - [CertifyMe heading audits](certifyme-headings.md) — parsed-HTML audits, marketing vs demo scope, and responsive cascade pitfalls.
-- [CertifyMe SEO critical fixes](certifyme-seo-fixes.md) — sitemap, schema, HSTS, and tracking fixes completed.
+- [CertifyMe SEO verification](certifyme-seo-fixes.md) — trust emitted schema over stale reports; preserve plugin dependencies when deferring scripts.
 - [Git history spans multiple eras](git-history-caveats.md) — plain `git log` may only show a narrow recent window; use `--all` when restoring/comparing against a past date.
 - [CertifyMe client-logo section location](certifyme-client-logos.md) — the homepage customer logo strip lives inside Statistics.html via ClientLogos.html, not a standalone section.
 - [Mobile homepage overlap cascade](mobile-overlap-cascade.md) — host spacing can override modal and carousel layouts; inspect the cascade before shrinking text.

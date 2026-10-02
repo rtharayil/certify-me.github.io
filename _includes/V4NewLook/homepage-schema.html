@@ -1,0 +1,79 @@
+<!-- Homepage entity data mirrors visible content; no invented ratings, prices or search endpoint. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.certifyme.online/#organization",
+      "name": "CertifyMe",
+      "url": "https://www.certifyme.online/",
+      "logo": "https://www.certifyme.online/assets4/images/Logo/1.png",
+      "email": "info@certifyme.online",
+      "sameAs": ["https://www.linkedin.com/company/certify-me-online/"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.certifyme.online/#website",
+      "url": "https://www.certifyme.online/",
+      "name": "CertifyMe",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://www.certifyme.online/#organization" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.certifyme.online/#software",
+      "name": "CertifyMe",
+      "url": "https://www.certifyme.online/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Digital Credential Management",
+      "operatingSystem": "Web",
+      "description": {{ page.HeroText | jsonify }},
+      "featureList": [
+        "Digital certificate and badge issuance",
+        "Credential sharing and access",
+        "Open standards and issuer-resource-based verification",
+        "Skills and taxonomy context",
+        "Comprehensive Learner Records",
+        "Institutional workforce context"
+      ],
+      "provider": { "@id": "https://www.certifyme.online/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.certifyme.online/#webpage",
+      "url": "https://www.certifyme.online/",
+      "name": {{ page.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "dateModified": {{ page.last_modified_at | jsonify }},
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://www.certifyme.online/#website" },
+      "publisher": { "@id": "https://www.certifyme.online/#organization" },
+      "mainEntity": { "@id": "https://www.certifyme.online/#software" },
+      "hasPart": { "@id": "https://www.certifyme.online/#homepage-answers" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.certifyme.online{{ page.HeroImage }}",
+        "width": {{ page.HeroImageWidth }},
+        "height": {{ page.HeroImageHeight }},
+        "caption": {{ page.HeroImageAlt | jsonify }}
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.certifyme.online/#homepage-answers",
+      "url": "https://www.certifyme.online/#homepage-answers",
+      "isPartOf": { "@id": "https://www.certifyme.online/#webpage" },
+      "mainEntity": [
+        {% for faq in page.homepage_faqs %}
+        {
+          "@type": "Question",
+          "name": {{ faq.question | jsonify }},
+          "acceptedAnswer": { "@type": "Answer", "text": {{ faq.answer | jsonify }} }
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }
+  ]
+}
+</script>

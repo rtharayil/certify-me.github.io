@@ -1,19 +1,50 @@
 ---
-title: "Verifiable Digital Credential Software for Institutions | CertifyMe"
+title: "Digital Credential Software for Institutions | CertifyMe"
 
-description: "Issue, manage and verify digital credentials at scale. Standards-based, independently verifiable — Open Badges 3.0, CLR and W3C VC. Built for institutions."
+description: "CertifyMe helps institutions issue digital certificates and badges, connect achievements to skills, and govern Comprehensive Learner Records."
 
-abstract: "CertifyMe helps institutions issue, manage and verify digital credentials at scale — standards-based, independently verifiable, built on Open Badges 3.0, CLR and W3C VC."
+abstract: "CertifyMe helps institutions issue digital certificates and badges, connect achievements to skills, and govern Comprehensive Learner Records."
 
 layout: V4Layout
 
-sitemap.priority: 1
+sitemap:
+  priority: 1
+  lastmod: "2026-10-02"
+  changefreq: monthly
+last_modified_at: "2026-10-02"
+robots: "index, follow, max-image-preview:large"
+
+homepage_faqs:
+  - question: "What is CertifyMe?"
+    answer: "CertifyMe is digital credential software for universities and institutions. It connects digital certificates and badges with skills, learner records and workforce context, while keeping credential issuance and record governance with the institution."
+    link: "/digital-credential-maturity/"
+    link_label: "Explore credential infrastructure"
+  - question: "What do the Open Badges 3.0 and CLR 2.0 certifications cover?"
+    answer: "The 1EdTech registry lists CertifyMe for Open Badges 3.0 Issuer and CLR 2.0 Issuer and Displayer roles. These are product-role certifications, not a guarantee that every credential or receiving system is certified or compatible. Check the registry for current scope and status."
+    link: "https://site.imsglobal.org/certifications/certifyme/certifyme"
+    link_label: "Check the 1EdTech certification registry"
+  - question: "How is a digital credential checked for authenticity?"
+    answer: "A compatible verifier checks cryptographic proof against an issuer-controlled key and examines the issuer, achievement, criteria and evidence, plus applicable expiry, status or revocation information. Verification can depend on access to issuer resources. A QR code or record ID locates a credential; it does not by itself prove authenticity or independently verify a learner's identity."
+    link: "#credential-verification-title"
+    link_label: "Read about verification and trust"
+  - question: "What is a Comprehensive Learner Record?"
+    answer: "A Comprehensive Learner Record (CLR) connects achievements, skills, coursework, projects and experiences while preserving their sources. It complements the authoritative transcript rather than replacing it. The institution sets stewardship, consent and access rules."
+    link: "#credential-learner-record-title"
+    link_label: "Explore Comprehensive Learner Records"
+  - question: "Does the homepage show real credentials or live job matches?"
+    answer: "No. The sample walkthrough uses a fictional university credential that is unsigned, unissued and unverified. Homepage artwork uses example roles and sectors, not live vacancies, employer endorsements, demand counts or verified job matches. Workforce context is presented for institutional discussions about programme relevance."
+    link: "#credential-workforce-intelligence-title"
+    link_label: "Read about workforce context"
+  - question: "How can an institution assess compatibility and pricing?"
+    answer: "Discuss your credential formats, receiving systems, integrations, governance and export requirements with CertifyMe before choosing a plan. Confirm issuer-key, status-resource and continuity arrangements as part of that review; open standards do not guarantee universal acceptance."
+    link: "/pricing"
+    link_label: "Review plans and request a demo"
 
 # hero section 
 HeroEyebrow: "Institutional Credential Infrastructure"
 HeroTitle: "Digital Credentials That Connect Learning to Verifiable Skills and Careers"
 HeroLead: "Go beyond basic digital badges."
-HeroText: "Issue verifiable degrees, certificates, and badges — connected to skills, Comprehensive Learner Records (CLR), and workforce insights."
+HeroText: "CertifyMe is digital credential software for universities and institutions. Issue certificates and badges, connect achievements to skills, and organise Comprehensive Learner Records (CLR), with institutional governance."
 HeroPrimaryCTA: "Request Demo"
 HeroSecondaryCTA: "Sample Credential Walkthrough"
 HeroSupportingLine: "Built on open standards. Designed for institutional scale."

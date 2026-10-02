@@ -61,10 +61,10 @@
 
                        <div class="btns-group cred-tags mt-4">
                         <a href="https://site.imsglobal.org/certifications/certifyme/certifyme" target="_blank" rel="noopener noreferrer" aria-label="Open Badges 3.0 Issuer certification in the 1EdTech registry">
-                            <span class="cred-tag">Open Badges 3.0 Certified</span>
+                            <span class="cred-tag">{% if page.url == "/" %}Open Badges 3.0 Issuer{% else %}Open Badges 3.0 Certified{% endif %}</span>
                         </a>
                         <a href="https://site.imsglobal.org/certifications/certifyme/certifyme" target="_blank" rel="noopener noreferrer" aria-label="CLR 2.0 Issuer and Displayer certifications in the 1EdTech registry">
-                            <span class="cred-tag">CLR 2.0 Certified</span>
+                            <span class="cred-tag">{% if page.url == "/" %}CLR 2.0 Issuer / Displayer{% else %}CLR 2.0 Certified{% endif %}</span>
                         </a>
                          <span class="cred-tag">SOC 2 Type II Attested</span>
                        </div>

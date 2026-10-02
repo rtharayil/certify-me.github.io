@@ -33,3 +33,17 @@ mtime_ms = 1790780525011
 storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/afca797d-e111-4301-bb47-f8fea149bc78/fe74f562-a7fd-48f9-8a5c-6fcb5c6774c9"
 storage_version_token = "1790780670632587"
 content_type = "image/webp"
+
+[[outputs]]
+id = "tGXz-FIF7vytmxp9xK3O6"
+uri = "file://.local/reports/homepage-seo-ai-ux-audit-2026-10-02.pdf"
+type = "pdf"
+title = "Homepage SEO, AI-search and UX audit"
+description = "Five-page report with prioritized findings, implemented fixes, performance comparison and mobile/tablet test results."
+logical_id = "351a678c-4e54-4b3b-9d8b-d95d2cace694"
+content_hash = "sha256:f873c0d0e7d20d72339d165adf5f2231a2e011bf4d2c42754dbb751fdaf22c7b"
+size = 62574
+mtime_ms = 1790947500997
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/351a678c-4e54-4b3b-9d8b-d95d2cace694/706d8fdc-801b-45be-8f89-b43fcdba9808"
+storage_version_token = "1790947524488086"
+content_type = "application/pdf"
