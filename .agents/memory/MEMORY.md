@@ -12,3 +12,4 @@
 - [Browser checks in this workspace](browser-checks.md) — system Chromium, Jekyll watch interference, CDP touch emulation, and real scroll containers.
 - [Native disclosures and sticky containment](native-details-sticky.md) — sticky children can remain confined by native details content boxes despite display:contents.
 - [Uploaded image cropping](uploaded-image-cropping.md) — scale preview coordinates to source pixels and preserve callouts outside the requested crop.
+- [Homepage layer artwork](homepage-layer-artwork.md) — all six illustrations blend into the background; soften edges without blurring meaningful content.

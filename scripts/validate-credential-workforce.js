@@ -8,7 +8,7 @@ const baseUrl = process.env.CREDENTIAL_CONTEXT_URL
   || (process.env.REPLIT_DEV_DOMAIN ? `https://${process.env.REPLIT_DEV_DOMAIN}` : "http://127.0.0.1:5000");
 
 async function main() {
-  fs.mkdirSync("/tmp/credential-standards", { recursive: true });
+  fs.mkdirSync("/tmp/credential-workforce", { recursive: true });
   const browser = await chromium.launch({
     executablePath: execFileSync("which", ["chromium"], { encoding: "utf8" }).trim(),
     headless: true,
@@ -24,16 +24,16 @@ async function main() {
             ? route.continue() : route.abort();
         });
         await page.goto(baseUrl, { waitUntil: "domcontentloaded" });
-        const image = page.locator('img[src*="credential-standards-ecosystem.webp"]');
-        assert.equal(await image.count(), 1, "Use the supplied network image exactly once.");
+        await page.waitForLoadState("load");
+        const image = page.locator('img[src*="credential-workforce-intelligence.webp"]');
+        assert.equal(await image.count(), 1);
         const section = image.locator("xpath=ancestor::section[1]");
-        await section.scrollIntoViewIfNeeded();
         await image.scrollIntoViewIfNeeded();
         await image.evaluate((element) => element.complete && element.naturalWidth
           ? Promise.resolve()
           : new Promise((resolve, reject) => {
             element.addEventListener("load", resolve, { once: true });
-            element.addEventListener("error", () => reject(new Error("Standards artwork failed to load.")), { once: true });
+            element.addEventListener("error", () => reject(new Error("Workforce artwork failed to load.")), { once: true });
           }));
         await image.evaluate((element) => element.decode());
         await page.evaluate(() => Promise.race([
@@ -45,50 +45,46 @@ async function main() {
           return {
             text: element.textContent.replace(/\s+/g, " ").trim(),
             heading: element.querySelector("h2").textContent.trim(),
-            followsLayerOne: element.previousElementSibling?.classList.contains("credential-presentation"),
-            layerGap: element.querySelector(".credential-standards__inner").getBoundingClientRect().top
-              - element.previousElementSibling.querySelector(".credential-presentation__inner").getBoundingClientRect().bottom,
-            rootFontSize: parseFloat(getComputedStyle(document.documentElement).fontSize),
+            followsLayerFive: element.previousElementSibling?.classList.contains("credential-learner-record"),
             sharedFlow: element.parentElement.classList.contains("credential-hero-flow"),
             dimensions: [image.naturalWidth, image.naturalHeight],
             reservedDimensions: [image.getAttribute("width"), image.getAttribute("height")],
-            aspectRatio: image.getBoundingClientRect().width / image.getBoundingClientRect().height,
             alt: image.alt,
+            caption: frame.querySelector("figcaption")?.textContent.trim(),
             icons: element.querySelectorAll('svg[aria-hidden="true"]').length,
+            controls: element.querySelectorAll("button, input, select, a").length,
             imageBox: image.getBoundingClientRect().toJSON(),
-            copyBox: element.querySelector(".credential-standards__copy").getBoundingClientRect().toJSON(),
+            copyBox: element.querySelector("h2").parentElement.getBoundingClientRect().toJSON(),
             frameBorder: getComputedStyle(frame).borderTopWidth,
             frameShadow: getComputedStyle(frame).boxShadow,
             overflow: Math.max(document.documentElement.scrollWidth, document.body.scrollWidth) - innerWidth,
           };
         });
-        assert(metrics.followsLayerOne && metrics.sharedFlow, "Layer 2 must follow Layer 1 within the shared background.");
-        assert(metrics.layerGap >= 2.5 * metrics.rootFontSize - 1
-          && metrics.layerGap <= 4 * metrics.rootFontSize + 1,
-          "Keep clear, compact separation between Layers 1 and 2 at every breakpoint.");
-        assert.equal(metrics.heading, "Standards & Interoperability");
-        assert.match(metrics.text, /Layer 2/i);
-        assert.match(metrics.text, /Build for the ecosystem, not just the platform\./);
-        for (const term of ["Open Badges 3.0", "W3C Verifiable Credentials", "Portability", "Interoperability", "Ecosystem Ready"]) {
-          assert(metrics.text.includes(term), `Include the reference messaging: ${term}.`);
+        assert(metrics.followsLayerFive && metrics.sharedFlow, "Layer 6 must follow Layer 5 in the credential flow.");
+        assert.equal(metrics.heading.replace(/\.$/, ""), "Workforce Intelligence");
+        for (const term of [/Layer 6/i, /Turn learning into opportunity\./i, /Job Insights/i,
+          /employer|hiring/i, /Personalised/i, /Application Pathways/i, /universit|institution/i,
+          /careers guidance/i, /skills/i, /learner.record/i]) {
+          assert.match(metrics.text, term);
         }
-        assert.match(metrics.text, /compatible/i, "Qualify interoperability through compatible systems.");
-        assert(!/\b(Canvas|Moodle|D2L|Blackboard|universally|vendor.independent)\b/i.test(metrics.text),
-          "Do not turn the concept diagram into unsupported integration or independence claims.");
-        assert.deepEqual(metrics.dimensions, [1254, 1254], "Keep the complete artwork uncropped.");
+        assert(!/\d+\s*%|guaranteed|Google|Microsoft|Amazon|Flipkart|\bTCS\b|live job feed|apply directly from/i.test(metrics.text),
+          "Do not convert conceptual jobs, scores or employer marks into claims about live results.");
+        assert.equal(metrics.caption, undefined, "Keep the Layer 6 illustration free of a visible caption.");
+        assert.equal(metrics.controls, 0, "Do not add faux job filters or applications.");
+        assert.deepEqual(metrics.dimensions, [1254, 1254]);
         assert.deepEqual(metrics.reservedDimensions, ["1254", "1254"]);
-        assert(Math.abs(metrics.aspectRatio - 1) < .01, "Preserve the square artwork without distortion.");
         assert.match(metrics.alt, /conceptual/i);
-        assert(metrics.icons >= 3, "The three capabilities should have decorative icons.");
+        assert(metrics.icons >= 4);
         assert.equal(metrics.frameBorder, "0px");
         assert.equal(metrics.frameShadow, "none");
         assert(metrics.overflow <= 1, `No horizontal overflow at ${width}px.`);
-        assert(metrics.imageBox.left >= 0 && metrics.imageBox.right <= width + 1, "Keep every artwork node inside the screen.");
+        assert(metrics.imageBox.left >= 0 && metrics.imageBox.right <= width + 1);
+        assert(Math.abs(metrics.imageBox.width / metrics.imageBox.height - 1) < .01);
         if (width >= 1024) {
-          assert(metrics.imageBox.right < metrics.copyBox.left, "Desktop must place the image left and copy right.");
-          await section.screenshot({ path: `/tmp/credential-standards/section-${width}.png` });
+          assert(metrics.imageBox.right < metrics.copyBox.left, "Alternate with Layer 5: artwork left, copy right.");
+          await section.screenshot({ path: `/tmp/credential-workforce/section-${width}.png`, animations: "disabled" });
         } else {
-          assert(metrics.copyBox.bottom < metrics.imageBox.top, "Keep the mobile/tablet reading order stacked with text first.");
+          assert(metrics.copyBox.bottom < metrics.imageBox.top, "Keep text-first tablet/mobile stacking.");
           await section.evaluate((element) => {
             element.scrollIntoView({ block: "start", behavior: "instant" });
             for (let parent = element.parentElement; parent; parent = parent.parentElement) {
@@ -100,9 +96,9 @@ async function main() {
             }
             window.scrollBy(0, -90);
           });
-          await page.screenshot({ path: `/tmp/credential-standards/section-${width}.png` });
+          await page.screenshot({ path: `/tmp/credential-workforce/section-${width}.png`, animations: "disabled" });
         }
-        console.log(`Standards & Interoperability section passed at ${width}px.`);
+        console.log(`Workforce Intelligence section passed at ${width}px.`);
       } finally {
         await page.close();
       }

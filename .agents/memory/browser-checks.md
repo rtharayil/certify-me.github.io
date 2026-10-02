@@ -17,9 +17,9 @@ Keep a CDP touch-input session alive for the lifetime of its emulated phone page
 
 Use the actual scrolling ancestor when capturing mobile homepage sections; do not assume the window is the scroll container.
 
-**Why:** The mobile homepage can scroll the body independently. Window scrolling left the view at the hero, while tall element screenshots clipped off-screen text and placed fixed navigation across the captured section.
+**Why:** The mobile homepage can scroll the body independently. Window scrolling left the view at the hero, while tall element screenshots clipped off-screen text and placed fixed navigation across the captured section. Unsettled scrolling and unloaded lazy images can also make a temporary capture look like a permanent spacing defect.
 
-**How to apply:** Start with element.scrollIntoView, inspect the nearest scrollable ancestor, and adjust that ancestor for the fixed header. Confirm the target's viewport bounds and capture reading viewports rather than treating one tall element image as reliable visual evidence.
+**How to apply:** Start with element.scrollIntoView using instant behavior, inspect the nearest scrollable ancestor, and adjust that ancestor for the fixed header without smooth scrolling. Wait for visible lazy images to load and decode. Confirm the target's viewport bounds and capture reading viewports rather than treating one tall element image as reliable visual evidence.
 
 Keep browser configuration and cache state outside the watched Jekyll workspace when running local browser checks.
 
