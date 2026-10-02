@@ -23,10 +23,8 @@ async function main() {
           && element.parentElement.classList.contains("credential-hero-flow")),
           "Place the complete outcome section after the overview and before Explore the Six Layers.");
         assert.equal(await section.locator(".credential-institution-outcomes__outcomes > li").count(), 5);
-        assert.equal(await section.locator(".credential-institution-outcomes__audience-list > li").count(), 6);
-        for (const role of ["Students", "Faculty", "Programme leaders", "Employers", "Administration", "Leadership"]) {
-          assert.equal(await section.getByText(role, { exact: true }).count(), 1);
-        }
+        assert.equal(await section.locator(".credential-institution-outcomes__audiences").count(), 0,
+          "The removed One connected ecosystem section must not be rendered.");
         assert.match(await section.textContent(), /A more connected, recognised and future-ready university/);
         assert.equal(await section.locator("button").count(), 0, "Do not invent job-application actions.");
         const image = section.locator("img");
@@ -53,7 +51,6 @@ async function main() {
         for (const target of [
           ".credential-institution-outcomes__header",
           ".credential-institution-outcomes__leadership",
-          ".credential-institution-outcomes__audiences",
         ]) {
           const element = section.locator(target);
           await element.scrollIntoViewIfNeeded();
@@ -73,7 +70,7 @@ async function main() {
         if (width === 1440) {
           await section.screenshot({ path: "/tmp/institution-outcomes-desktop-section.png", animations: "disabled" });
         }
-        console.log(`Institutional artwork, placement, five outcomes and six audiences passed at ${width}px.`);
+        console.log(`Institutional artwork, placement, five outcomes and ecosystem section removal passed at ${width}px.`);
       } finally {
         await page.close();
       }
