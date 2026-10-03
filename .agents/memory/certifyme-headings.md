@@ -20,3 +20,9 @@ Inspect computed root font size and legacy important declarations before diagnos
 **Why:** Tablet styles use a smaller root font size, and an important legacy hero rule defeated newer, more specific heading styles. Repeating ordinary specificity changes did not affect the rendered H1.
 
 **How to apply:** Measure actual pixels at tablet as well as desktop/phone widths. Resolve the important-rule conflict narrowly rather than applying global heading overrides.
+
+Homepage section titles should be H2s, smaller than the hero title, and use the hero's font style.
+
+**Why:** The user noticed oversized section headings and inconsistent font styling and explicitly requested this hierarchy.
+
+**How to apply:** Preserve a single hero H1; keep section titles smaller at every breakpoint, including wide desktops. Match the hero's font family, weight and spacing across highlighted words too. Keep subordinate card/question headings and dialog headings semantically separate.

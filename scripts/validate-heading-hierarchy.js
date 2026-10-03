@@ -12,10 +12,11 @@ async function main() {
     args: ["--ignore-certificate-errors"],
   });
   try {
-    for (const width of process.argv.includes("--dialog-only") ? [] : [1440, 768, 390, 320]) {
+    for (const width of process.argv.includes("--dialog-only") ? [] : [2560, 1920, 1440, 1024, 768, 390, 320]) {
       const page = await browser.newPage({ viewport: { width, height: 1000 } });
       try {
         await page.goto(baseUrl, { waitUntil: "domcontentloaded" });
+        await page.evaluate(() => document.fonts.ready);
         assert.equal(await page.locator("h1").count(), 1, "Exactly one homepage H1, including hidden markup.");
         const outline = await page.locator("h1,h2,h3,h4,h5,h6").evaluateAll((headings) =>
           headings.map((heading) => ({
@@ -27,21 +28,31 @@ async function main() {
             `Skipped heading level before ${outline[index].text}.`);
         }
         const sectionHeadings = page.locator(
-          ".credential-context__heading > h2, .credential-layers-intro > h2,"
-          + " #compliance-standards .wic2-title, #credential-levels .fl-title");
+          '#main-content h2:not(:where([role="dialog"] *, .modal *, .homepage-trust-banner__accessible-title))');
         const sizes = await sectionHeadings.evaluateAll((headings) => headings.map((heading) =>
           parseFloat(getComputedStyle(heading).fontSize)));
-        assert.equal(sizes.length, 4);
+        assert(sizes.length >= 10, "Check every native homepage section heading.");
         assert(Math.max(...sizes) - Math.min(...sizes) < 1, "Keep primary section H2 sizes consistent.");
         const heroSize = await page.locator("h1").evaluate((heading) =>
           parseFloat(getComputedStyle(heading).fontSize));
-        assert(heroSize >= Math.max(...sizes), "The primary H1 must not be smaller than section H2 headings.");
+        assert(heroSize > Math.max(...sizes), "Every section H2 must be strictly smaller than the hero H1.");
+        const heroStyle = await page.locator("h1").evaluate(heading => {
+          const style = getComputedStyle(heading);
+          return { family: style.fontFamily, weight: style.fontWeight, spacing: style.letterSpacing };
+        });
+        assert(await sectionHeadings.evaluateAll((headings, hero) => headings.every(heading => {
+          const style = getComputedStyle(heading);
+          return style.fontFamily === hero.family && style.fontWeight === hero.weight
+            && style.letterSpacing === hero.spacing
+            && [...heading.querySelectorAll("span,strong,em")].every(child =>
+              getComputedStyle(child).fontFamily === hero.family);
+        }), heroStyle), "Match the hero's font, weight and spacing, including highlighted words.");
         // Use stable heading IDs rather than relying on incidental wrapper depth.
         const layerTitles = page.locator(
           "#credential-presentation-title, #credential-standards-title, #credential-verification-title,"
           + " #credential-skill-taxonomy-title, #credential-learner-record-title, #credential-workforce-intelligence-title");
         assert.equal(await layerTitles.count(), 6);
-        assert(await layerTitles.evaluateAll((headings) => headings.every((heading) => heading.tagName === "H3")));
+        assert(await layerTitles.evaluateAll((headings) => headings.every((heading) => heading.tagName === "H2")));
         for (const heading of await sectionHeadings.all()) {
           await heading.evaluate((element) => element.scrollIntoView({ block: "center", behavior: "instant" }));
           assert(await heading.evaluate((element) => {
@@ -52,7 +63,7 @@ async function main() {
         }
         assert(await page.evaluate(() =>
           Math.max(document.body.scrollWidth, document.documentElement.scrollWidth) <= innerWidth + 1));
-        console.log(`One H1, ordered H2/H3 outline and responsive heading scale passed at ${width}px.`);
+        console.log(`Passed ${width}px: one H1, all ${sizes.length} section H2s at ${sizes[0]}px below ${heroSize}px hero, matching font/weight/spacing, no overflow.`);
       } finally {
         await page.close();
       }

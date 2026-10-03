@@ -43,7 +43,7 @@ async function main() {
           const frame = element.querySelector("figure");
           return {
             text: element.textContent.replace(/\s+/g, " ").trim(),
-            heading: element.querySelector("h3").textContent.trim(),
+            heading: element.querySelector("#credential-skill-taxonomy-title").textContent.trim(),
             followsLayerThree: element.previousElementSibling?.classList.contains("credential-verification"),
             sharedFlow: element.parentElement.classList.contains("credential-hero-flow"),
             dimensions: [image.naturalWidth, image.naturalHeight],
@@ -51,7 +51,7 @@ async function main() {
             alt: image.alt,
             icons: element.querySelectorAll('svg[aria-hidden="true"]').length,
             imageBox: image.getBoundingClientRect().toJSON(),
-            copyBox: element.querySelector("h3").parentElement.getBoundingClientRect().toJSON(),
+            copyBox: element.querySelector("#credential-skill-taxonomy-title").parentElement.getBoundingClientRect().toJSON(),
             frameBorder: getComputedStyle(frame).borderTopWidth,
             frameShadow: getComputedStyle(frame).boxShadow,
             overflow: Math.max(document.documentElement.scrollWidth, document.body.scrollWidth) - innerWidth,

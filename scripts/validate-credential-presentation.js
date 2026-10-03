@@ -39,7 +39,7 @@ async function main() {
         ]));
         const metrics = await section.evaluate((element) => {
           const image = element.querySelector("img");
-          const heading = element.querySelector("h3");
+          const heading = element.querySelector("#credential-presentation-title");
           const introduction = element.previousElementSibling;
           return {
             heading: heading.textContent,

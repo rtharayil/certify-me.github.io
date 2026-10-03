@@ -40,11 +40,11 @@ async function main() {
         ]));
         const metrics = await section.evaluate((element) => {
           const image = element.querySelector("img");
-          const copy = element.querySelector("h3").parentElement;
+          const copy = element.querySelector("#credential-verification-title").parentElement;
           const frame = element.querySelector("figure");
           return {
             text: element.textContent.replace(/\s+/g, " ").trim(),
-            heading: element.querySelector("h3").textContent.trim(),
+            heading: element.querySelector("#credential-verification-title").textContent.trim(),
             followsLayerTwo: element.previousElementSibling?.classList.contains("credential-standards"),
             sharedFlow: element.parentElement.classList.contains("credential-hero-flow"),
             dimensions: [image.naturalWidth, image.naturalHeight],
