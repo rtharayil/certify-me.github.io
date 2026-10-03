@@ -16,6 +16,91 @@
   box-sizing: border-box;
 }
 
+.homepage-trust-banner--image {
+  padding: clamp(1rem, 2vw, 2rem) 1rem;
+  background: transparent;
+}
+
+.homepage-audited #institution-outcomes {
+  padding-bottom: 0;
+}
+
+.homepage-audited #institution-outcomes .credential-institution-outcomes__story {
+  margin-bottom: 0;
+}
+
+.homepage-audited #institution-outcomes + .homepage-trust-banner--image {
+  padding-top: 0;
+}
+
+.homepage-trust-banner--image .homepage-trust-banner__inner {
+  width: min(100%, 1600px);
+}
+
+.homepage-trust-banner__accessible-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.homepage-trust-banner__artwork {
+  margin: 0;
+}
+
+.homepage-trust-banner__artwork a,
+.homepage-trust-banner__artwork img {
+  display: block;
+  width: 100%;
+}
+
+.homepage-trust-banner__artwork img {
+  height: auto;
+  object-fit: contain;
+  /* Fade the perimeter only; preserve the sharp text, map and logos. */
+  -webkit-mask-image:
+    linear-gradient(to right, transparent, #000 2%, #000 98%, transparent),
+    linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
+  mask-image:
+    linear-gradient(to right, transparent, #000 2%, #000 98%, transparent),
+    linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.homepage-trust-banner__artwork a:focus-visible {
+  outline: 3px solid var(--htb-blue);
+  outline-offset: 4px;
+}
+
+.homepage-trust-banner__enlarge-hint {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .homepage-trust-banner.homepage-trust-banner--image {
+    padding: 1rem .75rem;
+  }
+
+  .homepage-trust-banner__enlarge-hint {
+    display: block;
+    margin-top: .5rem;
+    color: var(--htb-muted);
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+
 .homepage-trust-banner__inner {
   width: min(100%, 1300px);
   margin-inline: auto;

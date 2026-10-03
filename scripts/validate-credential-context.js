@@ -76,8 +76,8 @@ async function main() {
           };
         });
         assert.match(metrics.title, /A digital credential is more than what you see/i);
-        assert.equal(metrics.centeredTitle, "From Credentials to Institutional Intelligence.");
-        assert.equal(metrics.centeredSummary, "CertifyMe connects the complete journey from achievement to skills, learner records and workforce opportunity.");
+        assert.equal(metrics.centeredTitle, "From Credentials to Workforce Intelligence.");
+        assert.equal(metrics.centeredSummary, "CertifyMe connects achievement, skills, learner records and workforce opportunity through one standards-aligned infrastructure.");
         assert.equal(metrics.centeredAlignment, "center");
         assert(metrics.headerBeforeGrid, "Place the centered heading above both the artwork and existing explanation.");
         assert(metrics.directlyAfterHero, "The section must be directly after the hero, before other homepage sections.");

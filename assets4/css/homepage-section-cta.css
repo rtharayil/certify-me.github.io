@@ -1,0 +1,50 @@
+.homepage-audited .homepage-section-cta {
+  margin-top: 1.35rem;
+}
+
+.homepage-audited .homepage-section-cta__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+  min-height: 48px;
+  max-width: 100%;
+  padding: .8rem 1.3rem;
+  border: 1px solid #39358b;
+  border-radius: 8px;
+  background: #39358b;
+  color: #fff;
+  font-family: inherit;
+  font-size: .95rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .15s ease;
+}
+
+.homepage-audited .homepage-section-cta__link:hover {
+  background: #29256c;
+  color: #fff;
+}
+
+.homepage-audited .homepage-section-cta__link:focus-visible {
+  outline: 3px solid #3675dc;
+  outline-offset: 4px;
+}
+
+.homepage-audited :is(#homepage-trust-banner, #compliance-standards, #homepage-answers) .homepage-section-cta {
+  text-align: center;
+}
+
+@media (max-width: 680px) {
+  .homepage-audited .homepage-section-cta__link {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .homepage-audited .homepage-section-cta__link {
+    transition: none;
+  }
+}

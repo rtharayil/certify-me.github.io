@@ -27,12 +27,11 @@ async function main() {
             `Skipped heading level before ${outline[index].text}.`);
         }
         const sectionHeadings = page.locator(
-          ".credential-context__heading > h2, .credential-institution-outcomes__header > h2,"
-          + " .credential-layers-intro > h2, #why-certifyme .wic2-title,"
-          + " #compliance-standards .wic2-title, #credential-levels .fl-title, #banner-13 h2");
+          ".credential-context__heading > h2, .credential-layers-intro > h2,"
+          + " #compliance-standards .wic2-title, #credential-levels .fl-title");
         const sizes = await sectionHeadings.evaluateAll((headings) => headings.map((heading) =>
           parseFloat(getComputedStyle(heading).fontSize)));
-        assert.equal(sizes.length, 7);
+        assert.equal(sizes.length, 4);
         assert(Math.max(...sizes) - Math.min(...sizes) < 1, "Keep primary section H2 sizes consistent.");
         const heroSize = await page.locator("h1").evaluate((heading) =>
           parseFloat(getComputedStyle(heading).fontSize));

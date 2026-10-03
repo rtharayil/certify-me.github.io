@@ -128,7 +128,8 @@
   {% endif %}
   {% if page.url == "/" %}
   <link href="/assets4/css/homepage-seo.css" rel="stylesheet">
-  <link href="/assets4/css/homepage-trust-banner.css" rel="stylesheet">
+  <link href="/assets4/css/homepage-trust-banner.css?v={{ site.time | date: '%s' }}" rel="stylesheet">
+  <link href="/assets4/css/homepage-section-cta.css?v={{ site.time | date: '%s' }}" rel="stylesheet">
   {% endif %}
 
   {% if page.partner_brand_assets %}

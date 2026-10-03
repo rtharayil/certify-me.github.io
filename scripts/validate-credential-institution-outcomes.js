@@ -23,9 +23,19 @@ async function main() {
           && element.parentElement.classList.contains("credential-hero-flow")),
           "Place the complete outcome section after the overview and before Explore the Six Layers.");
         assert.equal(await section.locator(".credential-institution-outcomes__outcomes > li").count(), 5);
+        assert.deepEqual(await section.locator(".credential-institution-outcomes__outcomes li > span:last-child").allTextContents(), [
+          "Stronger Graduate Outcomes — Credential-backed Skills",
+          "Greater Institutional Visibility — Achievement & Recognition",
+          "Meaningful Employer Engagement — Skills & Opportunity",
+          "More Efficient Operations — Issue · Share · Report",
+          "Standards-Aligned Foundation — Open Badges · W3C VC",
+        ], "Use the requested concise outcome wording exactly");
         assert.equal(await section.locator(".credential-institution-outcomes__audiences").count(), 0,
           "The removed One connected ecosystem section must not be rendered.");
-        assert.match(await section.textContent(), /A more connected, recognised and future-ready university/);
+        assert.equal(await section.locator(".credential-institution-outcomes__header").count(), 0);
+        assert.equal(await section.locator(".credential-institution-outcomes__eyebrow").textContent(), "The institutional outcome");
+        assert.equal(await section.locator("#credential-institution-outcomes-title").textContent(), "Digital Credential Infrastructure that supports institutional progress.");
+        assert.doesNotMatch(await section.textContent(), /A more connected, recognised and future-ready university|For university leadership|CertifyMe brings credential issuance/);
         assert.equal(await section.locator("button").count(), 0, "Do not invent job-application actions.");
         const image = section.locator("img");
         await image.scrollIntoViewIfNeeded();
@@ -42,14 +52,14 @@ async function main() {
             alt: element.alt,
           };
         });
-        assert.equal(metrics.src, "/assets4/images/credential-institution-outcomes.webp");
+        assert.match(metrics.src, /^\/assets4\/images\/credential-institution-outcomes\.webp\?v=\d+$/);
         assert.deepEqual(metrics.dimensions, [1254, 1254]);
         assert(Math.abs(metrics.ratio - 1) < .01, "Preserve the complete supplied illustration.");
         assert.match(metrics.mask, /linear-gradient/);
         assert.equal(metrics.filter, "none", "Keep the artwork's text sharp.");
         assert.match(metrics.alt, /[Cc]onceptual/);
         for (const target of [
-          ".credential-institution-outcomes__header",
+          ".credential-institution-outcomes__section-heading",
           ".credential-institution-outcomes__leadership",
         ]) {
           const element = section.locator(target);

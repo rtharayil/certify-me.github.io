@@ -46,10 +46,8 @@ async function main() {
             text: element.textContent.replace(/\s+/g, " ").trim(),
             features: Array.from(element.querySelectorAll("li"), (item) => item.textContent.trim()),
             followsOverview: introduction?.id === "credential-layers-intro"
-              && introduction.previousElementSibling?.id === "why-certifyme"
-              && introduction.previousElementSibling.previousElementSibling?.id === "badges"
-              && introduction.previousElementSibling.previousElementSibling.previousElementSibling?.id === "homepage-trust-banner"
-              && introduction.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling?.id === "institution-outcomes",
+              && introduction.previousElementSibling?.id === "homepage-trust-banner"
+              && introduction.previousElementSibling.previousElementSibling?.id === "institution-outcomes",
             introTitle: introduction?.querySelector("h2")?.textContent,
             introDescription: introduction?.querySelector("p")?.textContent,
             introCentered: introduction && getComputedStyle(introduction).textAlign === "center",
