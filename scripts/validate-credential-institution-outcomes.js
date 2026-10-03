@@ -63,19 +63,31 @@ async function main() {
           const copy = element.querySelector(".credential-institution-outcomes__leadership").getBoundingClientRect();
           return {
             columnRatio: artwork.width / copy.width,
-            imageRight: artwork.right,
-            copyLeft: copy.left,
+            imageLeft: artwork.left,
+            copyRight: copy.right,
             imageBottom: artwork.bottom,
             copyTop: copy.top,
           };
         });
-        if (width > 680) {
-          assert(Math.abs(layout.columnRatio - 1.5) < .02,
-            "Use 60% image and 40% text in the side-by-side layout");
-          assert(layout.imageRight < layout.copyLeft, "Keep artwork left and text right");
+        if (width > 991) {
+          assert(Math.abs(layout.columnRatio - 7 / 3) < .02,
+            "Match the six-layer approach's 70% image and 30% text layout");
+          assert(layout.copyRight < layout.imageLeft, "Keep text left and artwork right");
         } else {
           assert(layout.imageBottom <= layout.copyTop, "Keep the stacked mobile layout");
         }
+        const approachLayout = await page.locator(".credential-context__inner").evaluate(node => ({
+          width: node.getBoundingClientRect().width,
+          imageWidth: node.querySelector(".credential-context__figure").getBoundingClientRect().width,
+        }));
+        const outcomeLayout = await section.locator(".credential-institution-outcomes__story").evaluate(node => ({
+          width: node.getBoundingClientRect().width,
+          imageWidth: node.querySelector(".credential-institution-outcomes__artwork").getBoundingClientRect().width,
+        }));
+        assert(Math.abs(approachLayout.width - outcomeLayout.width) <= 2,
+          "Use the same full-width container as the six-layer approach");
+        assert(Math.abs(approachLayout.imageWidth - outcomeLayout.imageWidth) <= 2,
+          "Use the same image sizing as the six-layer approach");
         for (const target of [
           ".credential-institution-outcomes__section-heading",
           ".credential-institution-outcomes__leadership",
