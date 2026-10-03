@@ -205,7 +205,7 @@ A credential that is issued and then ignored is less useful than it could be. Th
 
 A credential that proves someone met a qualification standard is more valuable when it is connected to what that qualification means in the labour market.
 
-CertifyMe attaches a [Job Intelligence Report](/blog/job-intelligence-report-certification-program-value) to every issued credential — a live analysis of active job openings, salary benchmarks, recruiter interest, and hiring momentum for the specific credential's associated skills. This runs on a continuously updated dataset of 20M+ live job postings from 25,000+ companies across 372 countries, refreshed daily.
+CertifyMe connects credential-associated skills to a [Job Intelligence Report](/blog/job-intelligence-report-certification-program-value). The owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks, using CertifyMe's own job-framing engine. Agree the report fields, reviewed skill mappings, geographic coverage and learner access for your programme; this is not a daily-refresh or guaranteed-employment claim.
 
 For credential earners, the report converts the credential from a proof of completion into a job search tool — showing which employers are actively hiring for their verified skills, what the salary range looks like, and how hiring momentum for their credential has moved over the past 90 days. For issuing organizations, per-credential market data from the moment of issuance provides the employment outcome evidence that alumni surveys take months to generate.
 

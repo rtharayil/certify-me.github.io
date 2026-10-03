@@ -108,7 +108,7 @@ Your CSV needs to include:
 1. Description or skills covered
 1. Any relevant evidence links
 
-Take the time to get this right. Errors here carry through into the issued credentials. The broader question of [choosing a credential provider](https://www.certifyme.online/blog/how-to-choose-VC-provider-for-secure-student-record-management.html) for your new system is worth thinking through in parallel — specifically whether it supports the verification methods, revocation controls, and open standards that prevent this situation from repeating.
+Take the time to get this right. Errors here carry through into the issued credentials. The broader question of [evaluating a credential platform](/compare/) for your new system is worth thinking through in parallel — specifically its verification methods, revocation controls, supported standards and continuity arrangements.
 
 <br>
 

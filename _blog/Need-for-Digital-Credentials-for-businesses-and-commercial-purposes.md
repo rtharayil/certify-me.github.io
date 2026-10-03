@@ -222,7 +222,7 @@ Think of it like this: companies used to invest in office buildings. Now, smart 
 
 And here’s the quiet truth no one really says aloud: if you’re not actively preparing your workforce, you’re already falling behind. Digital credentials aren’t some future tool—they’re today’s solution to tomorrow’s problems. 
 
-Further Reading : [Best Credly Alternatives for Digital Credentialing](https://www.certifyme.online/blog/three-top-credly-alternatives-training-and-development.html%C2%A0)
+Further Reading : [Best Credly Alternatives for Digital Credentialing](/blog/three-top-credly-alternatives-training-and-development.html)
 
 <br>
 

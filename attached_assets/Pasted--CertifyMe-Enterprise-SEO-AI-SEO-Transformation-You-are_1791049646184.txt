@@ -1,0 +1,1732 @@
+
+# CertifyMe — Enterprise SEO + AI SEO Transformation
+
+You are working on the live CertifyMe website:
+
+**https://www.certifyme.online/**
+
+Your task is to implement a comprehensive SEO and AI-search optimization transformation based on the existing website and codebase.
+
+## CRITICAL INSTRUCTION
+
+Do NOT blindly rewrite the website.
+
+Do NOT create hundreds of new pages.
+
+Do NOT remove existing pages simply because they are old.
+
+Do NOT invent company statistics, customers, certifications, integrations, security claims, awards, rankings, pricing, or product capabilities.
+
+Do NOT change product functionality.
+
+Do NOT change the visual design unnecessarily.
+
+Do NOT replace existing high-performing content without first understanding its purpose.
+
+Your objective is:
+
+> **Increase CertifyMe's organic search visibility, institutional commercial intent, semantic authority, AI-search discoverability, crawlability, and conversion potential while preserving existing SEO equity.**
+
+The implementation must be based on the EXISTING CODEBASE and CURRENT SITE CONTENT.
+
+---
+
+# PART 1 — FIRST: AUDIT BEFORE CHANGING ANYTHING
+
+Before modifying any file, perform a complete audit of the current CertifyMe website and codebase.
+
+Do not assume that previous SEO recommendations are still correct.
+
+Inspect the actual current implementation.
+
+## Audit all important page categories
+
+Find and inspect:
+
+### Core pages
+
+- Homepage
+- Platform overview
+- Digital credentials
+- Digital credential platform
+- Credential verification
+- Digital badges
+- Analytics
+- APIs
+- Integrations
+
+### Institutional pages
+
+- Higher education
+- Universities
+- Certification bodies
+- Enterprise
+- Government
+- Training / learning providers
+
+### Strategic pages
+
+- Skills taxonomy mapping
+- Comprehensive Learner Record
+- Workforce Intelligence
+- Digital Credential Maturity
+- Skill Passport / SkillStory
+- Learning pathways
+- Career / opportunity pages
+
+### Standards pages
+
+- Open Badges
+- Open Badges 3.0
+- W3C Verifiable Credentials
+- CLR
+- interoperability
+
+### Trust/security pages
+
+- Security
+- Privacy
+- GDPR
+- SOC 2
+- ISO
+- Data residency
+- verification/security architecture
+- subprocessors
+- terms
+
+### Commercial pages
+
+- Pricing
+- Demo/contact
+- product pages
+- solution pages
+
+### Comparison pages
+
+- CertifyMe vs Accredible
+- CertifyMe vs Certifier
+- CertifyMe vs Credly
+- CertifyMe vs Parchment
+- other competitor comparisons
+
+### Case studies
+
+Inspect every case study.
+
+### Blog/resource estate
+
+Inspect the full blog/resource structure.
+
+Pay special attention to older content around:
+
+- certificate maker
+- certificate templates
+- certificate design
+- free certificates
+- certificate wording
+- digital certificates
+- badges
+- events
+- LinkedIn certificates
+- generic certificate topics
+
+---
+
+# PART 2 — BUILD A PAGE INVENTORY
+
+Create an internal audit table containing every indexable page.
+
+For each page record:
+
+- URL
+- page title
+- meta description
+- H1
+- canonical
+- robots directive
+- indexability
+- page type
+- primary search intent
+- primary keyword/topic
+- secondary topics
+- target ICP
+- commercial intent
+- content quality
+- internal links in
+- internal links out
+- schema present
+- breadcrumbs
+- duplicate/overlapping intent
+- recommended action
+
+Recommended actions:
+
+- KEEP
+- IMPROVE
+- CONSOLIDATE
+- REDIRECT
+- NOINDEX
+- RESTRUCTURE
+- CREATE SUPPORTING PAGE
+
+Do NOT delete pages merely because they are old.
+
+---
+
+# PART 3 — ESTABLISH THE NEW CERTIFYME SEO POSITIONING
+
+The website must clearly establish the following category:
+
+# Digital Credential Infrastructure for Institutions
+
+The positioning should connect:
+
+**Credentials**
+
+↓
+
+**Standards & Interoperability**
+
+↓
+
+**Verification & Trust**
+
+↓
+
+**Skills**
+
+↓
+
+**Comprehensive Learner Record**
+
+↓
+
+**Workforce Intelligence & Opportunity**
+
+Do not use this as meaningless marketing language.
+
+Each layer must have supporting pages and contextual internal links.
+
+---
+
+# PART 4 — CREATE THE INFORMATION ARCHITECTURE
+
+The preferred architecture is:
+
+```text
+Digital Credential Infrastructure
+│
+├── Credentials
+│   ├── Digital Credentials
+│   ├── Digital Badges
+│   ├── Credential Verification
+│   ├── Credential Lifecycle
+│   ├── Credential Analytics
+│   └── Credential APIs
+│
+├── Standards
+│   ├── Open Badges 3.0
+│   ├── W3C Verifiable Credentials
+│   ├── CLR 2.0
+│   └── Interoperability
+│
+├── Skills
+│   ├── Skills Taxonomy Mapping
+│   ├── Credential-to-Skill Mapping
+│   ├── Competency Mapping
+│   ├── ESCO
+│   └── O*NET
+│
+├── Learner Records
+│   ├── Comprehensive Learner Record
+│   ├── Digital Learner Record
+│   ├── Skill Passport
+│   └── Digital Transcript
+│
+├── Workforce Intelligence
+│   ├── Skills Intelligence
+│   ├── Occupation Mapping
+│   ├── Workforce Demand
+│   └── Job Intelligence
+│
+├── Solutions
+│   ├── Higher Education
+│   ├── Certification Bodies
+│   ├── Enterprise
+│   ├── Government
+│   └── Training Providers
+│
+├── Resources
+│   ├── Guides
+│   ├── Comparisons
+│   ├── Case Studies
+│   ├── Standards
+│   └── Templates
+│
+└── Trust
+    ├── Security
+    ├── Compliance
+    ├── Privacy
+    ├── Data Residency
+    └── Subprocessors
+```
+
+Do not create duplicate pages if an equivalent page already exists.
+
+Reuse and improve existing pages wherever possible.
+
+---
+
+# PART 5 — HOMEPAGE
+
+Improve the homepage so that its primary entity relationship is immediately clear.
+
+The homepage should clearly communicate:
+
+## Primary entity
+
+**CertifyMe**
+
+## Category
+
+**Digital Credential Infrastructure**
+
+## Primary ICP
+
+**Institutions**
+
+## Core value
+
+Connecting:
+
+**learning → credentials → verified skills → learner records → workforce opportunity**
+
+The homepage should not look like a generic certificate generator.
+
+The following concepts should be clearly discoverable:
+
+- digital credentials
+- Open Badges 3.0
+- W3C Verifiable Credentials
+- verification
+- skills taxonomy
+- Comprehensive Learner Record
+- workforce intelligence
+- higher education
+- enterprise
+- certification bodies
+
+Do not keyword-stuff.
+
+---
+
+# PART 6 — CREATE / IMPROVE THE SIX CORE AUTHORITY PAGES
+
+Make these pages authoritative topic hubs.
+
+## 1. Digital Credential Infrastructure
+
+Explain:
+
+- definition
+- institutional problem
+- credential lifecycle
+- standards
+- verification
+- APIs
+- integrations
+- skills
+- learner records
+- workforce intelligence
+- use cases
+- implementation
+- security
+- FAQs
+
+Target intent:
+
+**digital credential infrastructure**
+
+---
+
+## 2. Open Badges 3.0
+
+Create or improve a canonical page explaining:
+
+- what Open Badges 3.0 is
+- why institutions use it
+- credential portability
+- interoperability
+- verification
+- issuer
+- recipient
+- achievement
+- evidence
+- skills
+- relationship with W3C VC
+- CertifyMe's implementation, ONLY where factually verified
+
+Do not make unsupported certification claims.
+
+---
+
+## 3. W3C Verifiable Credentials
+
+Explain:
+
+- what W3C Verifiable Credentials are
+- issuer
+- holder
+- verifier
+- cryptographic verification
+- credential portability
+- interoperability
+- relationship to digital credentials
+- relationship to Open Badges
+
+---
+
+## 4. Skills Taxonomy Mapping
+
+Make this one of CertifyMe's flagship pages.
+
+Clearly explain:
+
+**Programme**
+
+→ **Learning Outcome**
+
+→ **Achievement Evidence**
+
+→ **Credential**
+
+→ **Skill**
+
+→ **Learner Record**
+
+→ **Occupation**
+
+→ **Workforce Demand**
+
+Cover:
+
+- ESCO
+- O*NET
+- custom taxonomies
+- competency frameworks
+- credential-to-skill mapping
+- curriculum-to-skill mapping
+- learning outcomes
+- employability
+- workforce intelligence
+
+---
+
+## 5. Comprehensive Learner Record
+
+Explain:
+
+- what a CLR is
+- CLR vs transcript
+- CLR vs credential
+- CLR vs digital badge
+- CLR vs student record
+- credentials
+- skills
+- competencies
+- projects
+- experiences
+- assessments
+- provenance
+- verification
+- portability
+- lifelong learning
+
+Include a clear FAQ.
+
+---
+
+## 6. Workforce Intelligence
+
+Explain:
+
+- verified skills
+- occupations
+- jobs
+- employers
+- workforce demand
+- skills demand
+- learner opportunity
+- institutional workforce intelligence
+- graduate employability
+- credential relevance
+
+Do not make unsupported claims about actual job-market datasets.
+
+Only describe capabilities that actually exist.
+
+---
+
+# PART 7 — HIGHER EDUCATION SEO
+
+Make Higher Education the strongest commercial vertical.
+
+Create a central:
+
+# Digital Credentials for Universities
+
+page.
+
+It should connect to:
+
+- Digital credentials
+- Digital badges
+- Microcredentials
+- Digital diplomas
+- Digital transcripts
+- CLR
+- Skills taxonomy
+- Credential verification
+- Student skill passport
+- Graduate employability
+- Workforce intelligence
+- LMS integrations
+- APIs
+- security
+- data residency
+
+Create supporting pages only where there is genuine unique value.
+
+Do not create keyword-swapped duplicate pages.
+
+---
+
+# PART 8 — BUYER-PERSONA CONTENT
+
+Where appropriate, organize content around institutional buyers.
+
+## CIO / IT
+
+Focus:
+
+- API
+- integration
+- security
+- interoperability
+- standards
+- data residency
+- authentication
+- governance
+
+## Registrar
+
+Focus:
+
+- credential lifecycle
+- verification
+- digital diplomas
+- transcripts
+- records
+- auditability
+
+## Provost / Academic leadership
+
+Focus:
+
+- skills
+- learning outcomes
+- credentials
+- CLR
+- programme intelligence
+
+## Career Services
+
+Focus:
+
+- skills
+- learner records
+- employability
+- opportunities
+- Skill Passport
+
+## Dean / Faculty
+
+Focus:
+
+- programme outcomes
+- credentials
+- skills
+- learner achievement
+- workforce relevance
+
+Do not create thin persona pages just to capture keywords.
+
+Use these concepts naturally within strong solution pages.
+
+---
+
+# PART 9 — LEGACY CERTIFICATE CONTENT
+
+Do NOT delete existing certificate-template or certificate-maker content automatically.
+
+Instead classify it.
+
+For each legacy page determine:
+
+### A
+
+Strong traffic + useful conversion potential
+
+→ KEEP + optimize
+
+### B
+
+Useful informational content
+
+→ KEEP + improve + place under Resources
+
+### C
+
+Duplicate/thin content
+
+→ CONSOLIDATE
+
+### D
+
+No value / obsolete / duplicate
+
+→ 301 redirect or NOINDEX where appropriate
+
+### E
+
+Pages that confuse the institutional brand
+
+→ move into resource architecture where technically appropriate
+
+Do not destroy historical SEO equity.
+
+---
+
+# PART 10 — AI SEO / AEO
+
+Optimize important pages for AI systems.
+
+Every major authority page should have:
+
+## A. Clear definition
+
+Immediately answer:
+
+> What is X?
+
+## B. Short factual summary
+
+Provide a concise answer before long-form explanation.
+
+## C. Structured sections
+
+Use clear H2/H3 questions.
+
+## D. Comparison tables
+
+Where useful.
+
+## E. FAQ
+
+Use real questions, not keyword stuffing.
+
+## F. Evidence
+
+Link to authoritative external standards when appropriate.
+
+## G. First-party evidence
+
+Link to relevant CertifyMe product documentation/case studies.
+
+## H. Updated date
+
+Show meaningful last-updated information where appropriate.
+
+## I. Author/reviewer
+
+Use real people and real credentials only.
+
+## J. Entity consistency
+
+Use the same terminology across pages.
+
+---
+
+# PART 11 — BUILD AN AI-READABLE KNOWLEDGE GRAPH
+
+Every major page should link to related concepts.
+
+Example:
+
+```text
+Digital Credentials
+       ↓
+Open Badges 3.0
+       ↓
+Verification
+       ↓
+Skills
+       ↓
+CLR
+       ↓
+Workforce Intelligence
+```
+
+Skills Taxonomy should link to:
+
+- Learning Outcomes
+- Credentials
+- CLR
+- Occupations
+- Workforce Intelligence
+
+CLR should link to:
+
+- Credentials
+- Skills
+- Verification
+- Skill Passport
+- Workforce Intelligence
+
+Workforce Intelligence should link to:
+
+- Skills
+- Credentials
+- CLR
+- Occupations
+- Jobs
+
+The goal is that a search engine or AI crawler can understand the complete relationship without guessing.
+
+---
+
+# PART 12 — INTERNAL LINKING
+
+For every priority page:
+
+- add contextual incoming links
+- add contextual outgoing links
+- use descriptive anchor text
+- avoid repetitive exact-match anchors
+- link from high-authority pages to strategic pages
+- link from blog content to pillar pages
+- link from comparison pages to product/solution pages
+- link from case studies to relevant product capabilities
+
+Every priority page should NOT become an orphan.
+
+Target:
+
+**minimum 3–5 useful contextual internal links into each major authority page.**
+
+Quality matters more than quantity.
+
+---
+
+# PART 13 — COMPETITOR COMPARISON SEO
+
+Create a central:
+
+# Digital Credential Platform Comparison
+
+resource.
+
+Comparison pages may include:
+
+- CertifyMe vs Accredible
+- CertifyMe vs Certifier
+- CertifyMe vs Credly
+- CertifyMe vs Parchment
+- CertifyMe vs other legitimate alternatives
+
+Use factual dimensions:
+
+- target market
+- credential types
+- standards
+- Open Badges
+- W3C VC
+- CLR
+- skills
+- verification
+- integrations
+- APIs
+- analytics
+- workforce capabilities
+- security
+- data residency
+- pricing model
+- contract model
+- implementation
+
+Do not make unsupported statements about competitors.
+
+Do not create fake disadvantages.
+
+Where information is unknown, say:
+
+**Not publicly specified**
+
+rather than inventing information.
+
+---
+
+# PART 14 — TRUST CENTER
+
+Create or improve a dedicated Trust Center.
+
+Include only verified claims.
+
+Potential sections:
+
+- Security
+- Privacy
+- Data protection
+- GDPR
+- FERPA
+- ISO
+- SOC 2
+- Open Badges
+- W3C VC
+- CLR
+- Data residency
+- Encryption
+- Authentication
+- Availability
+- Backup
+- Disaster recovery
+- Incident response
+- Subprocessors
+- Penetration testing
+
+Do NOT claim certification unless the current evidence confirms it.
+
+Do NOT claim compliance merely because the product can support compliance.
+
+---
+
+# PART 15 — CLAIM CONSISTENCY
+
+Create a single source of truth for company claims.
+
+Audit the entire website for:
+
+- number of customers
+- countries
+- credentials issued
+- wallets
+- users
+- G2 rating
+- rankings
+- certifications
+- standards
+- integrations
+- security claims
+
+If two pages contain different values:
+
+DO NOT choose one arbitrarily.
+
+Flag it.
+
+Use the currently approved/verified value only after checking the existing project source or explicit authoritative configuration.
+
+Do not invent replacement values.
+
+---
+
+# PART 16 — CASE STUDIES
+
+Turn case studies into structured proof.
+
+Every case study should ideally contain:
+
+- customer
+- industry
+- geography
+- problem
+- existing systems
+- requirements
+- solution
+- implementation
+- integrations
+- standards
+- measurable outcomes
+- quote
+- technology
+- security
+- results
+
+Only publish numerical outcomes that are supported by the existing source material.
+
+Do not manufacture ROI.
+
+---
+
+# PART 17 — METADATA
+
+Every indexable page needs:
+
+### Unique title
+
+### Unique meta description
+
+### One clear H1
+
+### Logical H2 hierarchy
+
+### Canonical URL
+
+### Open Graph title
+
+### Open Graph description
+
+### Social image where appropriate
+
+Do not stuff keywords.
+
+Title should reflect:
+
+**Topic + audience/use case + CertifyMe**
+
+where appropriate.
+
+---
+
+# PART 18 — SCHEMA
+
+Audit and implement appropriate structured data.
+
+Potential types:
+
+- Organization
+- WebSite
+- WebPage
+- BreadcrumbList
+- Article
+- Person
+- SoftwareApplication
+- Product
+- Service
+- FAQPage
+- Review/AggregateRating ONLY where legitimate and compliant
+
+Do not add fake schema.
+
+Do not add FAQ schema merely to manipulate search results.
+
+Schema must represent visible page content.
+
+Validate generated JSON-LD.
+
+---
+
+# PART 19 — TECHNICAL SEO
+
+Audit:
+
+- robots.txt
+- sitemap.xml
+- sitemap index
+- canonical URLs
+- redirects
+- 404s
+- 5xx errors
+- duplicate URLs
+- trailing slash consistency
+- HTTP/HTTPS
+- www/non-www
+- `.html` consistency
+- pagination
+- orphan pages
+- broken internal links
+- image alt attributes
+- image dimensions
+- lazy loading
+- Core Web Vitals
+- JavaScript rendering
+- mobile rendering
+- heading structure
+- crawl depth
+- indexability
+
+Do not change URL structures unnecessarily.
+
+If URLs need changing:
+
+**301 redirect old → new**
+
+and preserve the original page's SEO intent.
+
+---
+
+# PART 20 — PAGE SPEED
+
+Do not sacrifice design.
+
+Prioritize:
+
+- image compression
+- modern image formats
+- lazy loading below fold
+- width/height attributes
+- font optimization
+- unused JS
+- unused CSS
+- third-party scripts
+- render-blocking resources
+- caching
+
+Do not remove functionality simply to obtain a theoretical PageSpeed score.
+
+---
+
+# PART 21 — BLOG STRATEGY
+
+Do NOT simply increase publishing volume.
+
+Create topic clusters.
+
+## Cluster A
+
+Digital Credentials
+
+## Cluster B
+
+Open Badges
+
+## Cluster C
+
+Verifiable Credentials
+
+## Cluster D
+
+Skills Taxonomy
+
+## Cluster E
+
+CLR
+
+## Cluster F
+
+Microcredentials
+
+## Cluster G
+
+Higher Education
+
+## Cluster H
+
+Workforce Intelligence
+
+## Cluster I
+
+Credential Security
+
+## Cluster J
+
+Digital Transformation
+
+Every article must have a clear parent pillar.
+
+Every article must link to its pillar.
+
+Pillar pages should link back to important supporting content.
+
+---
+
+# PART 22 — CONTENT QUALITY RULE
+
+Do not generate generic AI articles.
+
+Every new article must contain at least one of:
+
+- original analysis
+- original framework
+- implementation guidance
+- real example
+- documented customer evidence
+- standards interpretation
+- technical explanation
+- comparison
+- original data
+- institutional use case
+
+Avoid:
+
+> “In today's rapidly evolving digital world…”
+
+Avoid generic introductions.
+
+Answer the searcher's question immediately.
+
+---
+
+# PART 23 — URL POLICY
+
+Prefer short, stable URLs.
+
+Examples:
+
+```text
+/digital-credential-infrastructure
+/open-badges-3
+/verifiable-credentials
+/skills-taxonomy-mapping
+/comprehensive-learner-record
+/workforce-intelligence
+/solutions/higher-education
+```
+
+Do not create:
+
+```text
+/digital-credentials-best-digital-credential-platform-for-universities
+```
+
+Avoid keyword stuffing in URLs.
+
+---
+
+# PART 24 — MOBILE SEO
+
+Every modification must be mobile-first.
+
+Test:
+
+- 320px
+- 375px
+- 390px
+- 430px
+- tablet
+- desktop
+
+Check:
+
+- navigation
+- headings
+- hero
+- CTA
+- tables
+- cards
+- comparison tables
+- images
+- accordions
+- breadcrumbs
+- internal links
+- forms
+
+No horizontal overflow.
+
+No clipped text.
+
+No unreadable tables.
+
+---
+
+# PART 25 — PRESERVE CONVERSION
+
+SEO changes must NOT reduce:
+
+- Demo CTA
+- Contact CTA
+- product navigation
+- enterprise trust
+- readability
+- visual hierarchy
+- page speed
+
+Do not turn commercial pages into walls of SEO text.
+
+---
+
+# PART 26 — IMPLEMENTATION RULE
+
+Before modifying each page:
+
+1. Identify existing SEO value.
+2. Identify existing URL.
+3. Identify existing intent.
+4. Identify existing internal links.
+5. Identify existing metadata.
+6. Identify existing content.
+7. Determine whether to KEEP / IMPROVE / CONSOLIDATE / REDIRECT.
+8. Only then modify.
+
+Keep changes focused on the highest-impact 20%.
+
+---
+
+# PART 27 — DO NOT OVER-OPTIMIZE
+
+Avoid:
+
+- keyword stuffing
+- repetitive anchor text
+- hidden text
+- invisible content
+- doorway pages
+- near-duplicate city pages
+- fake FAQs
+- fake reviews
+- fake statistics
+- fake author profiles
+- fake citations
+- schema manipulation
+- AI-generated content farms
+
+The goal is sustainable SEO.
+
+---
+
+# PART 28 — TESTING: ROUND 1
+
+After implementation, perform a complete SEO validation.
+
+Call this:
+
+# SEO TEST ROUND 1 — STRUCTURAL VALIDATION
+
+Check every indexable page for:
+
+### Indexability
+
+- Is it indexable?
+- Is robots correct?
+- Is canonical correct?
+- Is it in sitemap where appropriate?
+
+### Metadata
+
+- title exists
+- title unique
+- description exists
+- description unique
+- H1 exists
+- H1 appropriate
+
+### Architecture
+
+- correct URL
+- correct breadcrumb
+- correct parent
+- correct internal links
+
+### Content
+
+- clear search intent
+- no duplicate intent
+- useful content
+- clear CTA
+
+### AI SEO
+
+- direct definition
+- structured headings
+- factual statements
+- FAQ where useful
+- related concepts
+- authoritative references
+- update information where appropriate
+
+### Schema
+
+- valid JSON-LD
+- no malformed schema
+- schema matches visible content
+
+### Technical
+
+- broken links
+- redirects
+- 404
+- 5xx
+- images
+- alt text
+- mobile
+- performance
+
+Produce a machine-readable report.
+
+---
+
+# ROUND 1 ACCEPTANCE CRITERIA
+
+Do not consider Round 1 passed unless:
+
+### Critical
+
+- no broken canonical URLs
+- no accidental noindex on strategic pages
+- no accidental robots blocking
+- no strategic page missing H1
+- no strategic page missing title
+- no strategic page missing canonical
+- no broken internal links on priority pages
+- sitemap works
+- robots.txt works
+- no accidental mass redirects
+- mobile layout works
+
+### High
+
+- all priority pages have metadata
+- all priority pages have internal links
+- all six authority pages are connected
+- higher education hub is connected
+- comparison hub is connected
+- trust center is connected
+
+### Medium
+
+- schema validation
+- image optimization
+- secondary metadata
+- older blog cleanup
+
+Fix all critical and high-severity issues before proceeding.
+
+---
+
+# PART 29 — TESTING: ROUND 2
+
+After fixing Round 1 issues, perform a SECOND completely independent audit.
+
+Do not simply reuse the Round 1 result.
+
+Call this:
+
+# SEO TEST ROUND 2 — ADVERSARIAL VALIDATION
+
+Pretend you are:
+
+### 1. Googlebot
+
+Can the site be crawled?
+
+### 2. Google Search
+
+Can each page's purpose be understood?
+
+### 3. ChatGPT
+
+Can an AI determine:
+
+- what CertifyMe is?
+- who it serves?
+- what digital credential infrastructure means?
+- what its standards are?
+- how skills relate to credentials?
+- what CLR means?
+- how workforce intelligence relates to credentials?
+
+### 4. University CIO
+
+Can I quickly find:
+
+- security
+- integrations
+- API
+- standards
+- data residency
+- implementation
+- enterprise information?
+
+### 5. University Dean
+
+Can I understand:
+
+- learning outcomes
+- credentials
+- skills
+- learner records
+- workforce relevance?
+
+### 6. Registrar
+
+Can I understand:
+
+- digital credentials
+- verification
+- transcripts
+- learner records
+- lifecycle?
+
+### 7. Career Services
+
+Can I understand:
+
+- skills
+- learner records
+- employability
+- opportunities?
+
+### 8. Search competitor
+
+Can I understand exactly how CertifyMe differs from:
+
+- Accredible
+- Certifier
+- Credly
+- Parchment?
+
+---
+
+# ROUND 2 — SEARCH INTENT TEST
+
+Check whether CertifyMe has an authoritative page for each of these concepts:
+
+```text
+digital credential platform
+digital credentials
+digital credential infrastructure
+digital badges
+digital badge platform
+credential verification
+Open Badges 3.0
+W3C Verifiable Credentials
+verifiable credentials
+comprehensive learner record
+CLR
+digital learner record
+skills taxonomy
+skills taxonomy mapping
+credential-to-skill mapping
+ESCO skills
+O*NET skills
+microcredentials
+digital credentials for universities
+digital badges for universities
+digital transcripts
+digital diplomas
+student skill passport
+graduate employability
+workforce intelligence
+credential analytics
+digital credential API
+digital credential integrations
+```
+
+For each query determine:
+
+- existing page
+- best page
+- whether intent is satisfied
+- whether page is indexed
+- whether another page competes with it
+- whether internal links support it
+
+Do NOT create pages automatically just because a keyword is missing.
+
+---
+
+# ROUND 2 — AI ANSWER TEST
+
+For each of these questions, inspect the website and determine whether the answer can be extracted clearly from the current site:
+
+### Q1
+
+What is CertifyMe?
+
+### Q2
+
+What is CertifyMe's primary market?
+
+### Q3
+
+What is a digital credential?
+
+### Q4
+
+How does CertifyMe support Open Badges 3.0?
+
+### Q5
+
+How does credential verification work?
+
+### Q6
+
+How does CertifyMe map credentials to skills?
+
+### Q7
+
+What is CertifyMe's Comprehensive Learner Record?
+
+### Q8
+
+How does CertifyMe connect skills to workforce intelligence?
+
+### Q9
+
+How is CertifyMe different from a traditional certificate generator?
+
+### Q10
+
+How is CertifyMe different from Accredible, Certifier and Credly?
+
+### Q11
+
+Why would a university use CertifyMe?
+
+### Q12
+
+What security capabilities does CertifyMe provide?
+
+For every question:
+
+**PASS** if the answer is clear and supported by the site.
+
+**PARTIAL** if the answer requires inference.
+
+**FAIL** if the answer cannot be reliably determined.
+
+Fix PARTIAL and FAIL issues where practical.
+
+---
+
+# PART 30 — FINAL SEO SCORECARD
+
+After Round 2, generate this report:
+
+```text
+CERTIFYME SEO IMPLEMENTATION SCORECARD
+
+1. Information Architecture       XX/10
+2. Technical SEO                  XX/10
+3. On-page SEO                    XX/10
+4. Internal Linking               XX/10
+5. Content Quality                XX/10
+6. Institutional SEO              XX/10
+7. Higher Education SEO           XX/10
+8. Entity SEO                     XX/10
+9. AI SEO / AEO                   XX/10
+10. Schema                         XX/10
+11. Trust / Evidence               XX/10
+12. Conversion SEO                 XX/10
+13. Mobile SEO                     XX/10
+14. Page Speed                     XX/10
+15. Overall                        XX/10
+```
+
+Do not give inflated scores.
+
+Every score must include 1–3 factual reasons.
+
+---
+
+# PART 31 — FINAL ISSUE REGISTER
+
+Produce:
+
+```text
+CRITICAL
+1.
+2.
+3.
+
+HIGH
+1.
+2.
+3.
+
+MEDIUM
+1.
+2.
+3.
+
+LOW
+1.
+2.
+3.
+```
+
+For every issue include:
+
+- URL/file
+- problem
+- why it matters
+- recommended fix
+- whether implemented
+- validation status
+
+---
+
+# PART 32 — CHANGE LOG
+
+At the end provide:
+
+```text
+FILES MODIFIED
+
+FILE
+CHANGE
+REASON
+SEO IMPACT
+RISK
+```
+
+Also list:
+
+```text
+FILES CREATED
+
+FILE
+PURPOSE
+URL
+```
+
+And:
+
+```text
+URL CHANGES
+
+OLD URL
+NEW URL
+REDIRECT
+REASON
+```
+
+---
+
+# PART 33 — FINAL SAFETY CHECK
+
+Before declaring completion, verify:
+
+[ ] No important existing page was accidentally deleted.
+
+[ ] No important URL was changed without redirect.
+
+[ ] No strategic page is accidentally noindexed.
+
+[ ] No robots.txt blocking was introduced.
+
+[ ] Sitemap remains valid.
+
+[ ] Canonicals are valid.
+
+[ ] No broken navigation.
+
+[ ] No broken internal links on priority pages.
+
+[ ] No unsupported company claims were introduced.
+
+[ ] No fake statistics were introduced.
+
+[ ] No fake customer claims were introduced.
+
+[ ] No fake certifications were introduced.
+
+[ ] No fake reviews were introduced.
+
+[ ] No competitor misinformation was introduced.
+
+[ ] No keyword stuffing.
+
+[ ] No duplicate doorway pages.
+
+[ ] Mobile layout works.
+
+[ ] Desktop layout works.
+
+[ ] Core functionality still works.
+
+[ ] Forms still work.
+
+[ ] CTAs still work.
+
+[ ] Analytics scripts still work.
+
+[ ] Existing design language is preserved.
+
+---
+
+# MOST IMPORTANT SUCCESS CRITERION
+
+Do not judge success by:
+
+- number of pages created
+- number of keywords inserted
+- number of words added
+- PageSpeed score alone
+- number of FAQs
+
+Judge success by whether the site now communicates one coherent entity:
+
+# CERTIFYME
+
+**Digital Credential Infrastructure for Institutions**
+
+connecting:
+
+**Credentials → Trust → Skills → Learner Records → Workforce Intelligence**
+
+while maintaining strong commercial pathways for:
+
+**Universities → Certification Bodies → Enterprise → Government → Training Providers**
+
+---
+
+# EXECUTION PRIORITY
+
+If time is limited, prioritize exactly in this order:
+
+## P0
+
+1. Homepage positioning
+2. Information architecture
+3. Six authority pages
+4. Higher Education pillar
+5. Internal linking
+6. Claims consistency
+7. Technical indexation/canonical/sitemap
+
+## P1
+
+8. Trust Center
+9. Comparison architecture
+10. Case-study architecture
+11. AI/AEO optimization
+12. Schema
+
+## P2
+
+13. Legacy content consolidation
+14. Blog topic clusters
+15. Image optimization
+16. secondary technical improvements
+
+Do NOT spend most of the implementation effort on P2 while P0 remains incomplete.
+
+---
+
+# FINAL INSTRUCTION TO REPLIT
+
+Work in this sequence:
+
+**AUDIT → PLAN → IMPLEMENT → ROUND 1 TEST → FIX → ROUND 2 TEST → FIX → FINAL REPORT**
+
+Do not skip the audit.
+
+Do not skip either testing round.
+
+Do not declare the task complete after implementation alone.
+
+The final response must clearly state:
+
+1. What was changed.
+2. What was not changed.
+3. Which URLs were created.
+4. Which URLs were modified.
+5. Which URLs were redirected.
+6. Round 1 test results.
+7. Round 2 test results.
+8. Remaining issues.
+9. Any items requiring human/business confirmation.
+10. Final SEO + AI SEO score.
+
+If an important business fact cannot be verified from the existing code/content, **STOP and flag it rather than inventing it.**

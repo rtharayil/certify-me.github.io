@@ -32,3 +32,9 @@ Use a stable configured public origin for SEO URLs, not Jekyll's runtime site.ur
 **Why:** Jekyll serve overrides site.url with its local listening address; absolute_url then emits local sitemap and social-image URLs even when a production build passes.
 
 **How to apply:** Keep canonical-origin configuration independent of preview serving, and check both the production build and served sitemap after metadata changes.
+
+Keep body rendering opt-in for data-driven layouts.
+
+**Why:** Legacy pages can contain unused Markdown and JSON-LD beneath their front matter. Enabling a shared content slot globally activated stale FAQ scripts that did not match the displayed questions.
+
+**How to apply:** Enable body rendering only for reviewed pages that need it. Preserve the existing metadata-driven assembly elsewhere, and compare emitted schema with visible content after layout changes.

@@ -1,0 +1,63 @@
+authorities:
+  - title: "Digital credential infrastructure"
+    url: "/platform-overview"
+  - title: "Open Badges 3.0"
+    url: "/blog/why-institutions-should-embrace-open-badges-3-0-standards"
+  - title: "W3C Verifiable Credentials"
+    url: "/blog/Understanding-W3C-Verifiable-Credentials.html"
+  - title: "Skills taxonomy mapping"
+    url: "/skills-taxonomy-mapping"
+  - title: "Comprehensive Learner Record"
+    url: "/comprehensive-learner-record"
+  - title: "Workforce intelligence"
+    url: "/workforce-intelligence"
+supporting_resources:
+  - title: "CertifyMe's Open Badges issuer certification"
+    url: "/blog/certifyme-open-badge-3-0-certified"
+  - title: "What a digital credential represents"
+    url: "/blog/What-is-a-Digital-Credential.html"
+  - title: "Credential-based job intelligence and its evidence boundaries"
+    url: "/blog/job-intelligence-report-certification-program-value"
+  - title: "Microcredentials for institutional programmes"
+    url: "/micro-credentials"
+clusters:
+  - id: credentials
+    title: "Digital Credentials"
+    url: "/platform-overview"
+    terms: "credential|certificate|certification|template|design|wording|event"
+  - id: open-badges
+    title: "Open Badges"
+    url: "/blog/why-institutions-should-embrace-open-badges-3-0-standards"
+    terms: "open badge|digital badge|badges"
+  - id: verifiable-credentials
+    title: "Verifiable Credentials"
+    url: "/blog/Understanding-W3C-Verifiable-Credentials.html"
+    terms: "w3c|verifiable|cryptographic|blockchain"
+  - id: skills
+    title: "Skills Taxonomy"
+    url: "/skills-taxonomy-mapping"
+    terms: "skill|competenc|taxonomy|esco|o*net"
+  - id: learner-records
+    title: "Comprehensive Learner Records"
+    url: "/comprehensive-learner-record"
+    terms: "learner record|clr|learning and employment record"
+  - id: microcredentials
+    title: "Microcredentials"
+    url: "/micro-credentials"
+    terms: "micro-credential|microcredential"
+  - id: higher-education
+    title: "Higher Education"
+    url: "/credentials-higher-education"
+    terms: "university|universities|college|student|higher education|transcript|diploma"
+  - id: workforce
+    title: "Workforce Intelligence"
+    url: "/workforce-intelligence"
+    terms: "workforce|employability|career|occupation|job market|job intelligence"
+  - id: security
+    title: "Credential Security"
+    url: "/security/"
+    terms: "security|privacy|gdpr|fraud|tamper|secure"
+  - id: transformation
+    title: "Institutional Digital Transformation"
+    url: "/platform-overview"
+    terms: "digital transformation|automation|institution|enterprise"

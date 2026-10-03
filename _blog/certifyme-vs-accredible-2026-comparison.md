@@ -28,7 +28,7 @@ faqs:
   - question: "Which platform is better for verifiable credential standards?"
     answer: "CertifyMe holds independent 1EdTech certification for Open Badges 3.0 conformance and supports W3C Verifiable Credentials. Whether Accredible holds equivalent independent OB3 certification is not clearly documented publicly — verify with the vendor. For credentials that need to work within regulatory frameworks being built on the W3C VC standard — EU Digital Identity Wallet, national digital identity schemes — CertifyMe's standards architecture is the more clearly documented choice."
   - question: "Which platform is better for career outcomes?"
-    answer: "CertifyMe attaches a Job Intelligence Report to every issued credential, providing live data on active job openings, salary benchmarks, and hiring signals for the credential's associated skills, drawn from 20M+ live postings across 25,000+ companies. Accredible's career-outcomes approach is primarily built around credential sharing and social visibility — valuable for program marketing, but not the same as connecting a credential directly to current employment signals."
+    answer: "CertifyMe relates credential-associated skills to workforce information through its own job-framing engine. The owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks. Comparable Accredible dataset coverage and refresh cadence are not publicly specified in the sources reviewed here; ask each vendor about the actual implementation."
 ---
 
 Accredible comes up in almost every conversation about digital credentialing. It's one of the oldest, most established names in the space, and it's earned that reputation — millions of credentials issued, a genuinely good learner experience, and a brand that universities and associations trust. So when people ask how CertifyMe compares, the honest starting point isn't "who wins" — it's understanding what each platform is actually built to do.
@@ -162,7 +162,7 @@ Credentials are increasingly expected to function as career signals, not just co
 
 Accredible focuses on helping learners showcase achievements and share them socially, with analytics on views and engagement. This is valuable for program visibility, but the platform's career story primarily ends at sharing.
 
-CertifyMe adds **Live Labour Market Intelligence** to every issued credential — connecting verified skills to real, current job openings, salary benchmarks, and hiring signals drawn from 20M+ live postings across 25,000+ companies. For universities and certification providers trying to demonstrate actual workforce outcomes rather than completion numbers, this closes a gap that Accredible's engagement-first model does not directly address.
+CertifyMe adds **Live Labour Market Intelligence** around credential-associated skills: the owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks, using CertifyMe's own job-framing engine. Comparable Accredible dataset and refresh details are **not publicly specified** in the sources reviewed here. Workforce information is not proof of improved employment outcomes; measure those separately.
 
 This is part of a broader category distinction: CertifyMe's credential infrastructure extends to workforce relevance as a first-class capability, not a bolt-on. Review [credential analytics](/credential-analytics) for more on how post-issuance data connects to programme effectiveness.
 

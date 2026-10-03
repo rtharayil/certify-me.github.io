@@ -145,7 +145,6 @@ And unlike a traditional diploma, these credentials are verifiable. Employers ca
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Credential Comparison</title>
   <style>
     body {
       font-family: Arial, sans-serif;

@@ -52,7 +52,7 @@ This seamless process benefits both individuals and organizations, reducing admi
 
 ## World Wide Web Consortium's (W3C) Verified Credentials Data Model
 
-The W3C's Verified Credentials Data Model is a foundational framework that ensures digital credentials are secure, interoperable, and universally accepted. For a fuller breakdown of the [W3C Verified Credentials Data Model](https://www.certifyme.online/blog/what-standards-govern-verifiable-credentials.html) standards — including how Open Badges 3.0, Europass, and SD-JWT relate to it — see our dedicated guide. By standardizing how these credentials are issued, stored, and shared, it creates a seamless system for verification across borders, benefiting both individuals and organizations.
+The W3C Verifiable Credentials Data Model describes machine-verifiable issuer claims. For a fuller breakdown of [credential standards](/glossary/what-standards-govern-verifiable-credentials.html), see the standards guide and [W3C institutional primer](/blog/Understanding-W3C-Verifiable-Credentials.html). Receiving-system compatibility, securing mechanisms and acceptance policies still require assessment; the model does not guarantee universal acceptance.
 
 1. **Global Standardization:** The framework provides a uniform structure for digital credentials, ensuring they are tamper-proof and consistent regardless of the issuing authority. This guarantees that credentials meet a reliable and globally recognized format.
 

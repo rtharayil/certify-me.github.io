@@ -24,7 +24,7 @@
   <link rel="canonical" href="https://www.certifyme.online{{ page.url }}">
 
   <!-- OPEN GRAPH -->
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="{% if page.layout contains 'SingleBlogPost' %}article{% else %}website{% endif %}">
   <meta property="og:site_name" content="CertifyMe">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="{{ meta_title }}">
@@ -218,9 +218,9 @@
         "alternateName": "CertifyMe Digital Credentialing Platform",
         "url": "https://www.certifyme.online",
         "applicationCategory": "BusinessApplication",
-        "applicationSubCategory": "Digital Credential Management",
+        "applicationSubCategory": "Digital Credential Infrastructure for Institutions",
         "operatingSystem": "Web",
-        "description": "CertifyMe is a verifiable digital credential software for institutions that manage secure, customizable credentials at scale, with independent verification, long-term reliability, API integrations and minimal manual effort.",
+        "description": "CertifyMe provides digital credential infrastructure for institutions, connecting credential issuance, open standards, verification, reviewed skills, learner records and workforce intelligence.",
         "featureList": [
           "Open Badges 3.0 issuer certification listed by 1EdTech",
           "Verifiable digital certificates",
@@ -234,36 +234,14 @@
           "Analytics and reporting"
         ],
         "screenshot": "https://www.certifyme.online/assets4/images/Images%20Webp/digital%20credential%20software.webp",
-        "offers": [
-          {
-            "@type": "Offer",
-            "name": "StartUp",
-            "url": "https://www.certifyme.online/pricing",
-            "priceCurrency": "USD",
-            "description": "Ideal for startups; request a demo for pricing"
-          },
-          {
-            "@type": "Offer",
-            "name": "Signature",
-            "url": "https://www.certifyme.online/pricing",
-            "priceCurrency": "USD",
-            "description": "Request a demo for pricing"
-          },
-          {
-            "@type": "Offer",
-            "name": "Enterprise",
-            "url": "https://www.certifyme.online/pricing",
-            "priceCurrency": "USD",
-            "description": "Custom enterprise pricing; contact sales"
-          }
-        ],
         "provider": { "@id": "https://www.certifyme.online/#organization" }
       }
     ]
   }
   </script>
 
-  {% if page.faqs and page.faqs.size > 0 and page.url != "/" %}
+  <!-- Data-driven legacy layouts do not necessarily render front-matter FAQs. -->
+  {% if page.faqs and page.faqs.size > 0 and page.url != "/" and page.seo_pillar %}
   <!-- STRUCTURED DATA: FAQPage (per-page, non-homepage) -->
   <script type="application/ld+json">
   {

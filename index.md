@@ -1,9 +1,9 @@
 ---
-title: "Digital Credential Platform for Universities | CertifyMe"
+title: "Digital Credential Infrastructure for Institutions | CertifyMe"
 
-description: "Issue verifiable degrees, certificates and badges for universities, connected to Open Badges 3.0, skills, learner records and workforce intelligence."
+description: "CertifyMe connects credential issuance, open standards, verification, skills and learner records for institutions, with universities as its strongest vertical."
 
-abstract: "Issue verifiable degrees, certificates and badges for universities, connected to Open Badges 3.0, skills, learner records and workforce intelligence."
+abstract: "Digital credential infrastructure for universities, certification bodies, enterprise, government and training providers."
 
 layout: V4Layout
 

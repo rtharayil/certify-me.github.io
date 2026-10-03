@@ -1,0 +1,58 @@
+# Owner-confirmed company/product facts; public recognition checked 2026-10-03.
+# Private reports are not published here. Metric definitions must remain distinct.
+reviewed_on: "2026-10-03"
+positioning: "Digital Credential Infrastructure for Institutions"
+institutions_display: "5K+"
+wallets_display: "1M+"
+geographic_reach: "Global reach"
+jobs_display: "20 million"
+companies_display: "50,000"
+job_refresh: "every two weeks"
+job_engine: "CertifyMe's own job-framing engine"
+enterprise_authentication: "SSO and MFA are standard at the enterprise level."
+hosting: "Hosting across the globe; data residency and transfer requirements are agreed contractually."
+soc:
+  label: "SOC 2 Type II Attested"
+  period: "1 February–30 April 2026"
+  criteria: "Security, Availability and Confidentiality"
+iso:
+  - standard: "ISO/IEC 27001:2022"
+    scope: "Information security management"
+    expiry: "4 June 2027"
+  - standard: "ISO/IEC 27701:2019"
+    scope: "Privacy information management"
+    expiry: "5 September 2027"
+  - standard: "ISO 9001:2015"
+    scope: "Quality management"
+    expiry: "28 April 2027"
+  - standard: "ISO 14001:2015"
+    scope: "Environmental management"
+    expiry: "16 September 2028"
+  - standard: "ISO 22301:2019"
+    scope: "Business continuity management"
+    expiry: "8 February 2029"
+g2:
+  category_rank: 2
+  category_sort: "G2 Score"
+  category_url: "https://www.g2.com/categories/digital-credential-management"
+  usability_rank: 2
+  usability_url: "https://www.g2.com/categories/digital-credential-management?tab=easiest_to_use"
+  rating: "4.8"
+  review_count: 570
+  reviews_url: "https://www.g2.com/products/certifyme/reviews"
+anonymous_cases:
+  - id: executive-education
+    customer: "Global executive-education provider"
+    problem: "Branded, verifiable credentials across international programmes."
+    solution: "White-labelled credentialing connected to the existing LMS, skills mapping and sharing."
+    outcome: "36,000+ credentials issued; approximately 24,000 professionals reached (estimated); delivery within four months and more than three years of engagement."
+  - id: workforce-training
+    customer: "Global workforce-training provider"
+    problem: "Consistent credential and training records across different national requirements."
+    solution: "Dedicated isolated infrastructure, adaptable training records and ESCO mapping."
+    outcome: "40,000+ learners supported; 80,000+ credentials issued; approximately 82% adoption; five regulatory/funding frameworks and 66 languages."
+  - id: applied-sciences
+    customer: "Applied-sciences university"
+    problem: "Connect assessed competencies, achievements and career-services engagement."
+    solution: "Competency-linked badges, learner profiles, job intelligence, opportunities and a showcase directory."
+    outcome: "7,800+ students issued verified badges; 24,000+ credentials over three years; 45% higher career-services engagement and approximately 38% student adoption."

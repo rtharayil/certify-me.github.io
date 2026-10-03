@@ -1,0 +1,30 @@
+<section class="container py-5" aria-labelledby="institutional-implementation-title">
+  {% if page.url == "/workforce-intelligence" %}
+  <h2>CertifyMe's job-intelligence coverage</h2>
+  <p>For career-services teams, <strong>graduate employability</strong> means helping graduates demonstrate assessed capabilities and investigate relevant opportunities. Workforce information can support that work, but actual graduate employment requires separate outcome measurement.</p>
+  <p>The owner confirms {{ site.data.approved_claims.jobs_display }} live jobs from {{ site.data.approved_claims.companies_display }} companies worldwide, refreshed {{ site.data.approved_claims.job_refresh }}, using {{ site.data.approved_claims.job_engine }}. A live-job dataset does not mean real-time refresh. Geographic coverage, source permissions, deduplication and salary-field availability must still be assessed for an institution's intended use.</p>
+  <p>Connect reviewed achievement-to-skill mappings to occupation and employer requirements. This informs curriculum and career-services decisions; it does not certify employer demand, automatically prove a learner's competence or guarantee a job.</p>
+  {% elsif page.url == "/skills-taxonomy-mapping" %}
+  <h2>How learning evidence connects to workforce demand</h2>
+  <p><strong>Programme → Learning Outcome → Achievement Evidence → Credential → Skill → Learner Record → Occupation → Workforce Demand.</strong></p>
+  <p>The institution governs the first five relationships. ESCO, O*NET and custom competency frameworks offer reference concepts; reviewed crosswalks retain the local academic meaning. A learner record preserves provenance, while occupational requirements and employer demand require distinct market evidence.</p>
+  {% elsif page.url == "/comprehensive-learner-record" %}
+  <h2>CLR versus other institutional records</h2>
+  <div class="table-responsive" tabindex="0" role="region" aria-label="Learner record types">
+    <table class="table"><thead><tr><th scope="col">Record</th><th scope="col">Relationship to a CLR</th></tr></thead><tbody>
+      <tr><th scope="row">Academic transcript</th><td>The authoritative academic record; a CLR complements it with broader achievements.</td></tr>
+      <tr><th scope="row">Single credential</th><td>An issued claim about an achievement; a CLR can connect multiple achievements with their provenance.</td></tr>
+      <tr><th scope="row">Digital badge</th><td>An achievement credential; it can contribute to a broader learner record.</td></tr>
+      <tr><th scope="row">Student information record</th><td>The institution's operational record of enrolment, grades and administration; a CLR is not a replacement for the SIS.</td></tr>
+    </tbody></table>
+  </div>
+  {% endif %}
+  <h2 id="institutional-implementation-title">From credential issuance to institutional records</h2>
+  <p>Start with an institution-governed <a href="/platform-overview">credential lifecycle</a>: define the achievement and approval rules, issue the appropriate format, and maintain correction, expiry and revocation processes. <a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges 3.0</a> describes achievement credentials; the <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C Verifiable Credentials model</a> explains issuer, holder and verifier roles. Format support does not guarantee compatibility with every receiving system.</p>
+  <p><a href="/certificate-verification">Verification</a> checks proof, issuer authority and applicable status resources. Institution-reviewed <a href="/skills-taxonomy-mapping">skills relationships</a> connect assessed outcomes to capabilities; a <a href="/comprehensive-learner-record">Comprehensive Learner Record</a> retains achievement provenance. <a href="/workforce-intelligence">Workforce intelligence</a> then relates those skills to occupations and separately sourced market information—not a guarantee of employment.</p>
+  <h3>Plan the implementation with the right teams</h3>
+  <p>Registrars agree issuance, corrections and authoritative records. Academic teams define assessed outcomes and review competencies. Career services decide how learners present evidence and investigate opportunities. CIOs assess <a href="/api/">API workflows</a>, <a href="/allIntegrations.html">integration scope</a>, <a href="/security/">security and contractual data residency</a>, access controls and continuity before rollout.</p>
+  <p>Higher education is the strongest vertical, while certification bodies, enterprise, government and training providers can apply the same infrastructure to their own governed achievements. Explore the <a href="/credentials-higher-education">university implementation hub</a>, <a href="/compare/">platform evaluation guides</a> and <a href="/case-studies.html">anonymous customer evidence</a>.</p>
+  <a class="btn r-04 btn--theme hover--black" href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer">Discuss Your Institutional Rollout</a>
+  <p class="small mt-3">Institutional guidance updated 3 October 2026. Certification roles are listed in the <a href="https://site.imsglobal.org/certifications/certifyme/certifyme" target="_blank" rel="noopener noreferrer">1EdTech registry</a>; implementation and receiving-system compatibility require separate assessment.</p>
+</section>

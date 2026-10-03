@@ -158,7 +158,7 @@ Here's where CertifyMe covers ground that Credly's current design does not focus
 
 Credly's approach to career outcomes is built around workforce visibility — making skills visible to employers within its network and providing HR analytics for workforce planning. That signal flows primarily inward (to the organization's HR function) rather than outward (to the credential holder navigating the job market).
 
-CertifyMe adds **Live Labour Market Intelligence** to every issued credential — real, current data on which roles, salaries, and hiring signals align with the skills the learner just earned, drawn from 20M+ live postings across 25,000+ companies. It turns the credential into an actionable career signal for the holder, not just a record visible to employers in a network. For higher-ed institutions and workforce programs trying to demonstrate real employment outcomes rather than completion counts, this is a meaningful category distinction.
+CertifyMe adds **Live Labour Market Intelligence** around credential-associated skills. The owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks, using its own job-framing engine. Comparable Credly dataset coverage and refresh cadence are **not publicly specified** in the sources reviewed here. Compare actual programme workflows and report coverage; neither credential sharing nor job intelligence alone proves improved employment outcomes.
 
 <br>
 

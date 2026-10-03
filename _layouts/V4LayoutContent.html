@@ -12,6 +12,7 @@
         <main id="main-content">
             {% include V4NewLook/strategic-breadcrumbs.html %}
             {{ content }}
+            {% if page.seo_pillar %}{% include V4NewLook/institutional-implementation.html %}{% endif %}
             {% include V4NewLook/strategic-links.html %}
         </main><!-- /#main-content -->
 

@@ -25,6 +25,8 @@
 
 		{% include V4NewLook/integrations/apiIntegrationsBanner.html %}
 
+        {% if page.render_content %}{{ content }}{% endif %}
+        {% if page.seo_pillar %}{% include V4NewLook/institutional-implementation.html %}{% include V4NewLook/strategic-links.html %}{% endif %}
                 </main><!-- /#main-content -->
 
         {% include V4NewLook/footer.html %}

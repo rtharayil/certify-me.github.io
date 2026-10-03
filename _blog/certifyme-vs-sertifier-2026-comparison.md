@@ -22,7 +22,7 @@ faqs:
   - question: "Does CertifyMe support Open Badges 3.0 and W3C Verifiable Credentials?"
     answer: "Yes. CertifyMe holds independent 1EdTech certification for Open Badges 3.0 conformance — verifiable on the 1EdTech public registry — and builds on W3C Verifiable Credentials. Its portable cryptographic proof can be checked outside CertifyMe's interface when issuer keys and relevant status resources remain available. Sertifier publicly states Open Badges support; independent OB3 certification and W3C VC implementation are not clearly documented publicly, so verify current status with the vendor."
   - question: "What career outcome features does CertifyMe offer compared to Sertifier?"
-    answer: "CertifyMe includes Live Labour Market Intelligence, connecting a learner's verified skills and credentials to live job openings, salary benchmarks, and hiring signals across 20M+ postings from 25,000+ companies. Sertifier's career story is primarily credential sharing and visibility with employers — useful for recognition, but the active job-matching layer is not part of its offering."
+    answer: "CertifyMe connects credential-associated skills with workforce intelligence. The owner confirms 20 million live jobs, 50,000 companies worldwide and refresh every two weeks. Comparable Sertifier dataset coverage, refresh cadence and job-framing scope are not publicly specified in the sources reviewed here; confirm these with the vendor."
   - question: "Which platform is better for enterprise credentialing programs?"
     answer: "CertifyMe is the stronger fit for enterprise credentialing programs running multiple certification tracks, requiring independent open-standards verification, or needing deep white-label control and multi-organization management. Sertifier is well suited for straightforward credential issuance programs where learner engagement and social sharing are the primary goals and the organizational structure is simpler."
   - question: "What happens to issued credentials if we switch platforms?"
@@ -163,7 +163,7 @@ This is where the scope difference becomes most visible.
 
 **Sertifier** lets recipients share verified credentials with employers and their professional network — useful for recognition and visibility, and that is where its career story ends.
 
-**CertifyMe** adds **Live Labour Market Intelligence**, matching a learner's verified skills to real, current job openings, salary benchmarks, and hiring signals drawn from 20M+ live postings across 25,000+ companies. The difference is between a credential someone can post and a credential someone can act on.
+**CertifyMe** adds **Live Labour Market Intelligence** around credential-associated skills. The owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks, using CertifyMe's own job-framing engine. Confirm the geographic and report-field coverage relevant to your institution. Comparable Sertifier dataset and refresh details are **not publicly specified** in the sources reviewed here.
 
 Beyond individual credentials, CertifyMe's [micro-credentials framework](/micro-credentials) and [skills passport](/skills-passport) support the kind of cumulative skills record that is increasingly expected by employers, accreditors, and regulatory frameworks — not just a shareable badge but a documented, verifiable picture of what a learner knows and can do.
 

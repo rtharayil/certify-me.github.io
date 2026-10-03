@@ -13,6 +13,10 @@ author : Aneesha Kurian
 imageLink: https://openbadges.org/sites/default/files/assets/content/Graphic_Open%20Badges.png
 
 featured: true
+seo_pillar: true
+seo_cluster: open-badges
+breadcrumb_label: "Open Badges 3.0"
+last_modified_at: "2026-10-03"
 seo_keywords: "Open Badges 3.0 standards, benefits of open badges, verifiable credentials for institutions, digital badge interoperability, IMS Global Open Badges"
 faqs:
   - question: "What is Open Badges 3.0?"

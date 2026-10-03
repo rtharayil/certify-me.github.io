@@ -15,6 +15,7 @@ breadcrumb_label: "Digital Credential Platform Comparisons"
     <li><a href="/blog/certifyme-vs-parchment-2026-comparison.html">CertifyMe vs Parchment: academic records and credential infrastructure</a></li>
     <li><a href="/blog/certifyme-vs-credly-2026-comparison.html">CertifyMe vs Credly: digital credentials and programme requirements</a></li>
     <li><a href="/blog/certifyme-vs-accredible-2026-comparison.html">CertifyMe vs Accredible: credential platform scope</a></li>
+    <li><a href="/blog/certifyme-vs-certifier-2026-comparison.html">CertifyMe vs Certifier: issuance and institutional requirements</a></li>
     <li><a href="/blog/certifyme-vs-sertifier-2026-comparison.html">CertifyMe vs Sertifier: issuance, engagement and institutional needs</a></li>
   </ul>
   <p>These guides retain their existing canonical article URLs. Vendor capabilities, certification roles and plan inclusions can change; confirm current evidence with each provider before purchasing.</p>

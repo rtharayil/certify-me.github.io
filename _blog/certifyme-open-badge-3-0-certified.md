@@ -279,7 +279,7 @@ Enterprise programs often need to issue hundreds or thousands of credentials at 
 
 ### API Integration With Your Existing Systems
 
-If your credentialing needs to fit inside an existing LMS, HRMS, or certification platform rather than replace it, CertifyMe's [REST API](https://www.certifyme.online/api.html) covers issuance, recipient management, revocation, and analytics programmatically. Enterprise IT teams don't have to build workarounds — the integration is the primary workflow, not an afterthought.
+If your credentialing needs to fit inside an existing LMS, HRMS, or certification platform rather than replace it, assess CertifyMe's [REST API](/api/) against your issuance, recipient management, revocation and analytics requirements. Agree permissions, data mapping, exceptions and integration ownership rather than assuming an off-the-shelf connection to every system.
 
 <br>
 

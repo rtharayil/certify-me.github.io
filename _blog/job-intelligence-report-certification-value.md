@@ -20,7 +20,7 @@ faqs:
   - question: "What is CertifyMe's Job Intelligence Report?"
     answer: "It's a personalised career report automatically generated for every credential CertifyMe issues. The moment a learner earns their badge or certificate, the report maps their specific credential skills to live job openings they can actually apply for — including salary data, recruiter interest, top hiring employers, and a direct path to matching roles. It's not a generic industry overview; it's built around your credential, your skills, and your market."
   - question: "How does CertifyMe trace a path from a credential to specific job opportunities?"
-    answer: "CertifyMe maps the verified skills embedded in each credential against 20M+ live job postings updated daily. It identifies roles where employers are actively asking for exactly those skills, ranks them by demand and fit, and surfaces the actual employers and job types — so a learner can move from 'I just earned this' to 'here are 177,000+ openings I qualify for' in one step, with the option to explore and apply directly from their wallet."
+    answer: "CertifyMe relates credential-associated skills to job-market information using its own job-framing engine. The owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks. Reviewed skill mappings and receiving-employer requirements are still needed; the report does not prove eligibility for every displayed role."
   - question: "Is the Job Intelligence Report the same for every earner?"
     answer: "No — and that's the point. A Certified Forensic Accountant gets a report built around forensic accounting skills and the market that exists for them. A data analyst gets a completely different report reflecting their skills and demand. The personalisation happens at the credential level, so every earner's report reflects their actual achievement and the live market for it."
   - question: "What does the personalised Job Intelligence Report include?"
@@ -30,7 +30,7 @@ faqs:
   - question: "Do other credentialing platforms offer personalised job matching like this?"
     answer: "Not at this level. Credly offers workforce analytics tied to an internal skills taxonomy — useful for HR teams, but not a personalised job-matching report for individual earners. Accredible shows credential engagement data like views and shares. Neither platform traces a direct, per-credential path from achievement to specific live job opportunities the way CertifyMe does."
   - question: "How current is the job data in the report?"
-    answer: "The data is refreshed daily from 20M+ live job postings across 25,000+ hiring companies in 372+ countries. When the report shows 92,143 new jobs added in 90 days for a specific credential, those are real postings counted from current data — not survey estimates or cached numbers from months ago."
+    answer: "The owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks through CertifyMe's own job-framing engine. An exact country count and raw-data licensing have not been confirmed. Example report values on this page are not a current vacancy feed."
   - question: "Who else benefits from the Job Intelligence Report besides the earner?"
     answer: "Program directors and enterprise L&D teams benefit too, because the report gives them specific, defensible data about the market value of what they're issuing — active openings, salary benchmarks, recruiter demand. But the primary design of the report is for the earner: a personalised, actionable path from credential to career opportunity."
   - question: "How does the Job Intelligence Report help enterprise L&D buyers justify training investment?"
@@ -38,7 +38,7 @@ faqs:
   - question: "How does issuing Job Intelligence Reports help a learning program attract more learners?"
     answer: "Prospective learners can see the market data before they enrol — not just marketing copy. When a program can show '177,000+ active job openings linked to this credential, median salary $57,200, +52% hiring momentum,' that's a far more persuasive enrollment argument than any testimonial. It turns the credential's market value into a pre-enrollment selling point."
   - question: "What questions should B2B buyers ask credentialing platforms about career outcome features?"
-    answer: "Ask specifically: Does the platform attach live job market data to individual credentials or just show aggregate analytics? Are the job openings from real, named postings or industry surveys? Is the data updated daily or periodically? Can prospective learners see the data before they enrol? Can you use the data in budget justification and program reporting? CertifyMe answers yes to all five — most platforms don't offer this layer at all."
+    answer: "Ask about report scope, vacancy sources, coverage, data permissions, refresh cadence, access and programme reporting. CertifyMe's owner confirms 20 million live jobs from 50,000 companies worldwide and refresh every two weeks. Confirm the actual configuration for your programme rather than assuming every field or workflow is included."
   - question: "Can the Job Intelligence Report data be used in learning program marketing?"
     answer: "Yes — and this is one of the most underused advantages. The specific numbers in the report (active openings, salary range, recruiter interest, Credential Impact Score) are sourced from live market data, which makes them defensible in enrollment marketing, accreditation submissions, and employer partnership conversations. You're not making a claim — you're citing a live market report."
 ---
@@ -49,7 +49,7 @@ Not a generic "here's what people in your field earn" infographic. Not a link to
 
 That's what CertifyMe's Job Intelligence Report does. And no other credentialing platform does it this way.
 
-What powers it: every single day, CertifyMe's system analyses **20M+ live job postings** from **25,000+ companies** posting roles across the globe. That continuous analysis is what makes personalisation possible. When your report is generated, it isn't pulling from a six-month-old salary survey or a static database — it's drawing from what the market looks like *right now*, across every major hiring source, distilled down to what's relevant specifically to your credential.
+What powers it: the owner confirms **20 million live jobs** from **50,000 companies worldwide**, **refreshed every two weeks**, using CertifyMe's own job-framing engine. This is not a daily or real-time refresh claim, and does not establish coverage of every hiring source. Geography, source permissions and available report fields should be assessed for the intended institutional use.
 
 <br>
 
@@ -57,7 +57,7 @@ What powers it: every single day, CertifyMe's system analyses **20M+ live job po
 
 Most credentialing platforms end their job at issuance. You earned it, here's your badge, share it on LinkedIn. What happens next — whether the credential actually helps you move forward — is left entirely to you.
 
-CertifyMe's approach is different. The moment your credential is issued, CertifyMe's job intelligence engine — which has already analysed 20M+ live postings from 25,000+ companies that day — generates your personalised Job Intelligence Report automatically. It's built specifically for that credential, those verified skills, and the live market that exists for them *today*.
+CertifyMe connects credential-associated skills with job intelligence. The confirmed dataset contains 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks. Agree how achievements map to reviewed skills and how a report is configured for the programme; issuance alone does not independently prove every skill or guarantee a current job match.
 
 Here's the thing I want to make clear: **this report is not shared across earners.** A Certified Forensic Accountant and a Certified Scrum Master get completely different reports, because the underlying skill sets and the markets for them are completely different. The personalisation happens at the credential level — so your report reflects your achievement, not a generalised industry average.
 
@@ -123,7 +123,7 @@ This is a real CertifyMe credential issued for a **Certified Forensic Accountant
     </tr>
     <tr>
       <td>Geographic availability</td>
-      <td>Roles available across <strong>559 countries</strong></td>
+      <td>Roles across the globe; confirm geographic coverage for the intended use</td>
     </tr>
     <tr>
       <td>Top employers actively hiring right now</td>
@@ -168,7 +168,7 @@ Here's the journey the report enables, step by step.
 
 ### Step 1 — Credential Earned, Report Generated
 
-The earner receives their digital credential. Simultaneously, CertifyMe's labour market system — drawing from 20M+ daily-refreshed job postings — maps the verified skills in that credential to live market demand. The report generates automatically. No extra steps, no separate tool to log into.
+The earner receives a digital credential. CertifyMe's job-framing engine can relate its associated skills to market information drawn from 20 million live jobs across 50,000 companies worldwide, refreshed every two weeks. Agree skill mappings, report configuration and access as part of the programme implementation.
 
 <br>
 
@@ -319,7 +319,7 @@ This is the one that matters most when you're in a room with a CFO or a board ju
 
 Traditionally, program directors prove value through alumni surveys, engagement metrics, or anecdotal success stories. Those are slow to gather, limited in sample size, and easy to question. "Our alumni say they found it useful" is not the same as "our credentials are linked to 177,132 active job openings and a 90% recruiter interest rating."
 
-The Job Intelligence Report gives you the second kind of evidence automatically, per credential, from day one. You don't have to wait for a cohort to graduate and fill out a survey. The market data is there the moment the credential is issued, derived from 20M+ daily job postings from 25,000+ real companies.
+The Job Intelligence Report adds a market perspective alongside institutional achievement evidence. The owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks. It complements—not replaces—graduate-outcome research, and employment impact still requires its own measurement.
 
 That's the language budget conversations respond to. Not "how many learners completed the program" — but "what does the market pay for what we're certifying, and how fast is demand growing?"
 
@@ -339,7 +339,7 @@ If you're a professional association competing for members, a university competi
 
 The skills section of every Job Intelligence Report — what employers are actually asking for in live job descriptions that match the credential — is a direct feedback loop from the hiring market to your curriculum.
 
-When the Forensic Accountant report surfaces Tableau, Splunk, and FraudMAP as skills employers are requesting alongside the core competencies, that's not a theoretical suggestion. It's what 25,000+ companies writing live job ads are specifying. If your curriculum doesn't cover those tools, you now have market evidence — not expert opinion — for why it should.
+The Forensic Accountant example illustrates how a report can prompt curriculum questions about tools and competencies. Before changing a programme, validate the reviewed skill mappings and relevant employer evidence. The owner-confirmed overall dataset contains 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks; the example does not prove that every company requests the illustrated tools.
 
 This is useful for initial curriculum design, accreditation reviews, and annual program updates. Instead of commissioning a market study, you have live employer-demand data attached to every credential you've already issued.
 
@@ -381,7 +381,7 @@ If you're evaluating credentialing platforms specifically on career outcome feat
     </tr>
     <tr>
       <td>Are job openings sourced from real named company postings, or from industry surveys and estimates?</td>
-      <td>✅ Real named company postings — 25,000+ companies, updated daily</td>
+      <td>Owner-confirmed coverage: 50,000 companies worldwide; refresh every two weeks</td>
     </tr>
     <tr>
       <td>How frequently is the job market data refreshed?</td>
@@ -448,7 +448,7 @@ Yes. A Certified Forensic Accountant and a Certified Scrum Master get completely
 
 ### How does the report trace from a credential to specific job opportunities?
 
-CertifyMe maps the verified skills in each credential against 20M+ live job postings refreshed daily. It identifies which roles require exactly those skills, which employers are actively hiring for them, and what the demand and salary trajectory looks like. Earners can then log into their wallet to see matched roles and move directly to application.
+CertifyMe relates credential-associated skills to market information through its own job-framing engine. The owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks. The institution should review skill mappings, geographic coverage, report fields and learner access; a match does not establish eligibility for every role.
 
 ### Can I see the report before deciding to pursue a certification?
 
@@ -464,7 +464,7 @@ It's a percentile ranking that shows how a credential's labour market performanc
 
 ### How fresh is the job data in the report?
 
-It's refreshed daily from 20M+ live job postings across 25,000+ hiring companies in 372+ countries. The Hiring Momentum figure — for example, 92,143 new jobs in 90 days for the Forensic Accountant credential — is a real count from live posting data, not an estimate.
+The owner confirms refresh every two weeks, with 20 million live jobs from 50,000 companies worldwide. An exact country total is not confirmed. Hiring-momentum figures shown in report examples are not a current vacancy snapshot; review source definitions and dates before using a count in institutional reporting.
 
 ### Can earners apply for jobs directly from CertifyMe?
 
@@ -472,7 +472,7 @@ Yes. From the credential page, learners can log into their CertifyMe wallet, whi
 
 ### Does the report show which specific companies are hiring?
 
-Yes — the report names the top employers currently hiring for the credential's skills and shows how many openings each has. For the Certified Forensic Accountant example, this includes T-Mobile (3,112 openings), CVS Health (2,772), Dick's Sporting Goods (3,065), and others — all from live data, updated daily.
+A configured report can present employer information alongside credential-associated skills. The examples here are not a current vacancy feed. Confirm employer coverage, source dates and the actual posting before interpreting a named organisation or opening count as an opportunity available now.
 
 ### Is this feature available for all credentials issued through CertifyMe?
 
