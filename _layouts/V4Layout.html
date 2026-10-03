@@ -16,6 +16,11 @@
             {% include V4NewLook/heroSection.html %}
             {% include V4NewLook/credential-context.html %}
             {% include V4NewLook/credential-institution-outcomes.html %}
+            {% if page.url == "/" %}
+            {% include V4NewLook/homepage-trust-banner.html %}
+            {% include V4NewLook/Statistics.html %}
+            {% include V4NewLook/WhyInstitutionsChoose.html %}
+            {% endif %}
             {% include V4NewLook/credential-layers-intro.html %}
             {% include V4NewLook/credential-presentation-access.html %}
             {% include V4NewLook/credential-standards-interoperability.html %}
@@ -25,9 +30,10 @@
             {% include V4NewLook/credential-workforce-intelligence.html %}
         </div>
 
+        {% unless page.url == "/" %}
         {% include V4NewLook/Statistics.html %}
-
         {% include V4NewLook/WhyInstitutionsChoose.html %}
+        {% endunless %}
 
         {% include V4NewLook/ComplianceStandards.html %}
 
@@ -35,7 +41,9 @@
 
         {% if page.url == "/" %}{% include V4NewLook/homepage-answers.html %}{% endif %}
 
-                {% include V4NewLook/integrations/apiIntegrationsBanner.html %}
+        {% unless page.url == "/" %}
+        {% include V4NewLook/integrations/apiIntegrationsBanner.html %}
+        {% endunless %}
 
         </main><!-- end #main-content -->
 

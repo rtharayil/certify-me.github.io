@@ -47,3 +47,17 @@ mtime_ms = 1790947500997
 storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/351a678c-4e54-4b3b-9d8b-d95d2cace694/706d8fdc-801b-45be-8f89-b43fcdba9808"
 storage_version_token = "1790947524488086"
 content_type = "application/pdf"
+
+[[outputs]]
+id = "0UZkX09gOVRYgXOJRZgjy"
+uri = "file://assets4/images/certifyme-global-impact-map.webp"
+type = "image"
+title = "Extracted global-impact map"
+description = "Lossless crop from your supplied artwork, retaining the original markers, regional names and their positions."
+logical_id = "a363d86e-bdba-49dc-8749-19397ba316b7"
+content_hash = "sha256:9f3d6288b9d70f654855c03e01152a0fdc56905fa4c34ebef900502e0823979a"
+size = 236854
+mtime_ms = 1791010243649
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/a363d86e-bdba-49dc-8749-19397ba316b7/633af636-5140-4b32-bd1d-93f464d194b0"
+storage_version_token = "1791010559583712"
+content_type = "image/webp"

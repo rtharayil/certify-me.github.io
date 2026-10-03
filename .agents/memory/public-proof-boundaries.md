@@ -12,3 +12,9 @@ After the G2 grid image was removed for lack of a dated ranking report, the owne
 **Why:** Public-facing proof was presented as current despite no independent, dated report or underlying operational evidence for several claims. Certification scopes and review ratings change.
 
 **How to apply:** Link to the 1EdTech registry for exact certification scope; cite a dated G2 report before making new Leader-award claims. Preserve the owner-requested homepage G2 image and exact attestation pill, but do not invent a ranking or audit period, change “Attested” to “Certified,” or expand either claim elsewhere without evidence. Require internally reconciled metric definitions before restoring reach claims.
+
+Keep the metric attached to any review-site rank: a G2 “Easiest To Use” placement is not an overall category ranking. LinkedIn Products is a directory; its listing order alone does not establish a rated Top 5 award.
+
+**Why:** Checks of primary sources distinguished a scoped G2 usability rank from general ranking copy, while the LinkedIn category page did not substantiate the site's own Top 5 claim. The vendor's website cannot independently corroborate its own recognition claims.
+
+**How to apply:** Use the exact published metric and link to its primary source. Ask for the dated ranking source or screenshot before introducing LinkedIn Top 5 recognition.

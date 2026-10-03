@@ -19,7 +19,7 @@ async function main() {
         assert.equal(await section.count(), 1);
         assert(await section.evaluate((element) =>
           element.previousElementSibling.classList.contains("credential-context")
-          && element.nextElementSibling.id === "credential-layers-intro"
+          && element.nextElementSibling.id === "homepage-trust-banner"
           && element.parentElement.classList.contains("credential-hero-flow")),
           "Place the complete outcome section after the overview and before Explore the Six Layers.");
         assert.equal(await section.locator(".credential-institution-outcomes__outcomes > li").count(), 5);

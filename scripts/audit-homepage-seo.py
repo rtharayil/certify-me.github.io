@@ -14,10 +14,14 @@ class Page(HTMLParser):
         self.ids, self.tags = [], Counter()
         self.title, self.json_blocks, self.current_json = "", [], None
         self.in_title = False
+        self.in_head = False
+        self.document_titles = 0
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         self.tags[tag] += 1
+        if tag == "head":
+            self.in_head = True
         if attrs.get("id"):
             self.ids.append(attrs["id"])
         if tag == "meta":
@@ -32,8 +36,9 @@ class Page(HTMLParser):
             self.scripts.append(attrs)
             if attrs.get("type") == "application/ld+json":
                 self.current_json = ""
-        elif tag == "title":
+        elif tag == "title" and self.in_head:
             self.in_title = True
+            self.document_titles += 1
 
     def handle_data(self, data):
         if self.in_title:
@@ -42,6 +47,8 @@ class Page(HTMLParser):
             self.current_json += data
 
     def handle_endtag(self, tag):
+        if tag == "head":
+            self.in_head = False
         if tag == "title":
             self.in_title = False
         elif tag == "script" and self.current_json is not None:
@@ -55,7 +62,7 @@ page = Page()
 page.feed(html)
 assert page.tags["h1"] == 1, "Exactly one H1 including hidden markup"
 assert page.tags["main"] == 1, "Do not nest the sample's workspace inside a second main landmark"
-assert page.tags["title"] == 1 and 30 <= len(page.title.strip()) <= 65
+assert page.document_titles == 1 and 30 <= len(page.title.strip()) <= 65
 assert not [key for key, count in Counter(page.ids).items() if count > 1], "Duplicate HTML IDs"
 
 def meta(key):
@@ -125,7 +132,9 @@ sitemap = ET.parse(root / "sitemap.xml")
 ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 home = [u for u in sitemap.findall("s:url", ns) if u.findtext("s:loc", namespaces=ns) == canonical[0]]
 assert len(home) == 1
-assert home[0].findtext("s:lastmod", namespaces=ns) == "2026-10-02"
+assert home[0].findtext("s:lastmod", namespaces=ns) == next(
+    node["dateModified"] for node in graph if node["@type"] == "WebPage"
+)
 assert home[0].findtext("s:priority", namespaces=ns) == "1"
 print(json.dumps({"status": "passed", "scope": "homepage only", "title_characters": len(page.title),
                   "description_characters": len(meta("description")), "schema_entities": dict(types),

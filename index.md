@@ -9,9 +9,9 @@ layout: V4Layout
 
 sitemap:
   priority: 1
-  lastmod: "2026-10-02"
+  lastmod: "2026-10-03"
   changefreq: monthly
-last_modified_at: "2026-10-02"
+last_modified_at: "2026-10-03"
 robots: "index, follow, max-image-preview:large"
 
 homepage_faqs:
