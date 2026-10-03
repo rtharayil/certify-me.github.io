@@ -33,5 +33,5 @@ H1 .htaccess 301 redirects, H2 sitemap clean URLs, H3 FAQPage JSON-LD (homepage 
 - **Blog head**: _includes/V4NewLook/blogs/head.html (separate from main head.html) — has BlogPosting schema.
 - **New layout**: _layouts/V4LayoutContent.html created — renders {{ content }}, used for GDPR/press/author pages.
 - **Blog author**: singleBlogPostV2.html now uses dynamic `page.author` (was hardcoded to Aneesha Kurian). Author slug maps to /authors/<slug>.
-- **Palette/brand**: lavender/indigo #282B75, Manrope headings, Inter body, single CTA "Request a Demo".
+- **Palette/brand**: lavender/indigo #282B75, Manrope headings, single CTA "Request a Demo".
 - **Factual claims (canonical)**: G2 rank #2, rating 4.9/5, Capterra 5/5, TrustRadius 9/10, 500+ institutions, 1M+ credentials, 144+ countries.

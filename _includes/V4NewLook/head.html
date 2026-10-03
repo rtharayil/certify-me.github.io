@@ -11,8 +11,8 @@
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
 
   <!-- TITLE & CORE META -->
-  {% assign meta_title = page.title %}{% assign meta_description = page.description %}{% assign meta_abstract = page.description %}{% if page.abstract %}{% assign meta_abstract = page.abstract %}{% endif %}
-  {% if page.url == "/" %}{% assign meta_title = meta_title | escape %}{% assign meta_description = meta_description | escape %}{% assign meta_abstract = meta_abstract | escape %}{% endif %}
+  {% assign meta_title = page.title | escape %}{% assign meta_description = page.description | escape %}{% assign meta_abstract = page.abstract | default: page.description | escape %}
+  {% include seo-image-url.html %}
   <title>{{ meta_title }}</title>
   <meta name="description" content="{{ meta_description }}">
   <meta name="author" content="CertifyMe">
@@ -31,7 +31,7 @@
   <meta property="og:description" content="{{ meta_abstract }}">
   <meta property="og:url" content="https://www.certifyme.online{{ page.url }}">
   {% if page.imageLink %}
-  <meta property="og:image" content="https://www.certifyme.online/{{ page.imageLink }}">
+    <meta property="og:image" content="{{ seo_image | escape }}">
   {% else %}
   <meta property="og:image" content="https://www.certifyme.online/assets4/images/Images%20Webp/digital%20credential%20software.webp">
   {% endif %}
@@ -50,7 +50,7 @@
   <meta name="twitter:title" content="{{ meta_title }}">
   <meta name="twitter:description" content="{{ meta_abstract }}">
   {% if page.imageLink %}
-  <meta name="twitter:image" content="https://www.certifyme.online/{{ page.imageLink }}">
+  <meta name="twitter:image" content="{{ seo_image | escape }}">
   {% else %}
   <meta name="twitter:image" content="https://www.certifyme.online/assets4/images/Images%20Webp/digital%20credential%20software.webp">
   {% endif %}
@@ -81,10 +81,10 @@
 
   <!-- GOOGLE FONTS — consolidated into one request -->
   {% if page.url == "/" %}
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
   {% else %}
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   {% endif %}
 
   <!-- BOOTSTRAP CSS -->
@@ -112,6 +112,7 @@
 
   <!-- ENTERPRISE OVERRIDES — loaded last, highest specificity -->
   <link href="/assets4/css/enterprise-overrides.css" rel="stylesheet">
+  <link href="/assets4/css/site-typography.css" rel="stylesheet">
 
   {% if page.layout == "V4Layout" or page.layout == "V4LayoutVideo" or page.url == "/digital-credential-maturity/" or page.url == "/platform-overview" %}
   <!-- MOBILE UX — layouts using the homepage components + credential-maturity mobile/tablet re-composition -->
@@ -208,15 +209,7 @@
         "url": "https://www.certifyme.online",
         "description": "Verifiable digital credential software for institutions that issue, manage, and verify digital certificates and open badges.",
         "publisher": { "@id": "https://www.certifyme.online/#organization" },
-        "inLanguage": "en-US",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://www.certifyme.online/blog?search={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
-        }
+    "inLanguage": "en-US"
       },
       {
         "@type": "SoftwareApplication",
@@ -279,12 +272,16 @@
     "@id": "https://www.certifyme.online{{ page.url }}#faq",
     "mainEntity": [
       {% for faq in page.faqs %}
+      {% assign faq_answer = faq.answer %}
+      {% if page.layout contains "Innerpages" or page.layout == "V4Layout-EduTranscript" or page.url == "/platform-overview" %}
+        {% assign faq_answer = faq_answer | markdownify %}
+      {% endif %}
       {
         "@type": "Question",
         "name": {{ faq.question | jsonify }},
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": {{ faq.answer | strip_html | jsonify }}
+          "text": {{ faq_answer | strip_html | strip | jsonify }}
         }
       }{% unless forloop.last %},{% endunless %}
       {% endfor %}
@@ -300,7 +297,7 @@
     "@type": "WebPage",
     "@id": "https://www.certifyme.online{{ page.url }}#webpage",
     "url": "https://www.certifyme.online{{ page.url }}",
-    "name": {{ page.title | jsonify }},
+            "name": {{ page.breadcrumb_label | default: page.title | jsonify }},
     "description": {{ page.description | jsonify }},
     {% if page.HeroImage and page.HeroImageWidth and page.HeroImageHeight %}
     "primaryImageOfPage": {
@@ -331,7 +328,7 @@
           "@type": "ListItem",
           "position": 2,
           "name": {{ page.title | jsonify }},
-          "item": "https://www.certifyme.online{{ page.url | remove: '.html' }}"
+      "item": "https://www.certifyme.online{{ page.url }}"
         }{% endif %}
       ]
     }

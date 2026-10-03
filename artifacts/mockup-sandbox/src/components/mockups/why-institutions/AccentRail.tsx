@@ -58,8 +58,8 @@ const items = [
 
 export function AccentRail() {
   return (
-    <div style={{ background: "#f4f3ff", minHeight: "100vh", fontFamily: "'Inter', sans-serif", padding: "60px 0" }}>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <div style={{ background: "#f4f3ff", minHeight: "100vh", fontFamily: "'Source Sans 3', sans-serif", padding: "60px 0" }}>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
       <div style={{ maxWidth: 900, margin: "0 auto", padding: "0 40px" }}>
         {/* Header */}

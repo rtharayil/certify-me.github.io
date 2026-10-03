@@ -553,7 +553,7 @@ h1, h2, h3, h4, h5, h6 {
 .font--inter h4,
 .font--inter h5,
 .font--inter h6 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
   letter-spacing: -0.5px;
 }
 
@@ -1880,7 +1880,7 @@ p.video-txt-sm {
 }
 
 .font--inter .section-id  {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 /*------------------------------------------*/

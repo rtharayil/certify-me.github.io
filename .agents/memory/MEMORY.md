@@ -17,3 +17,5 @@
 - [Homepage section image placement](homepage-section-layout.md) — six-layer approach image goes right; institutional outcome image goes left on desktop.
 - [Homepage section CTAs](homepage-section-ctas.md) — every homepage content section needs a visible action; retain the maturity assessment CTA.
 - [Credential maturity positioning](credential-maturity-positioning.md) — use positive institutional capability framing, not negative sales qualification.
+- [Website typography](website-typography.md) — the user's Source Sans 3 choice is website-wide, not limited to the homepage introduction.
+- [Institutional SEO scope](institutional-seo-scope.md) — B2B university positioning; preserve brand and existing URLs, and require evidence before pruning or adding proof.

@@ -1,0 +1,595 @@
+You are an expert technical SEO engineer, information architect and B2B SaaS SEO strategist.
+
+You are modifying the existing CertifyMe website at:
+
+https://www.certifyme.online/
+
+IMPORTANT:
+This is an SEO optimization project, NOT a visual redesign.
+
+Do not change the existing brand identity, visual design system, colors, typography, animations, six-layer model, or overall UX unless a change is directly required for SEO, accessibility, crawlability or conversion.
+
+The objective is to implement the highest-impact 20% of SEO improvements that can generate approximately 80% of the SEO benefit.
+
+==================================================
+PRIMARY SEO POSITIONING
+==================================================
+
+CertifyMe should be understood by search engines and users as:
+
+"Digital credential infrastructure for universities and institutions"
+
+The core semantic journey is:
+
+Digital Credentials
+→ Standards & Interoperability
+→ Verification & Trust
+→ Skills Taxonomy Mapping
+→ Comprehensive Learner Record
+→ Workforce Intelligence
+
+Primary ICP:
+
+- Universities
+- Higher education institutions
+- Registrars
+- CIO / CTO / IT leadership
+- Digital transformation leaders
+- Career services
+- Continuing education
+- Professional and certification bodies
+
+Do NOT optimize the site primarily for consumer searches.
+
+==================================================
+PRIORITY 1 — HOMEPAGE SEO
+==================================================
+
+Optimize the homepage for the primary commercial topic:
+
+"Digital credential platform for universities and institutions"
+
+Use an H1 similar to:
+
+Digital Credential Platform for Universities and Institutions
+
+Supporting copy:
+
+Issue verifiable digital degrees, certificates and badges—and connect them to skills, Comprehensive Learner Records and workforce intelligence.
+
+Do not destroy the existing six-layer positioning. Preserve it as the core differentiation immediately below the primary positioning.
+
+Ensure:
+
+- Exactly one H1
+- Clear H2 hierarchy
+- Primary keyword naturally appears in H1
+- Primary keyword appears naturally in first 100 words
+- Strong semantic coverage of:
+  digital credentials
+  universities
+  digital certificates
+  digital diplomas
+  digital badges
+  Open Badges 3.0
+  W3C Verifiable Credentials
+  skills
+  Comprehensive Learner Record
+  credential verification
+  workforce intelligence
+
+Do not keyword-stuff.
+
+==================================================
+PRIORITY 2 — HIGHER EDUCATION PILLAR PAGE
+==================================================
+
+The existing higher-education page is:
+
+/credentials-higher-education.html
+
+Do NOT create a duplicate page unless technically necessary.
+
+Optimize this page as the primary SEO pillar for:
+
+Primary:
+"digital credentials for universities"
+
+Secondary:
+"digital credentials for higher education"
+"university digital credentials"
+"digital credentialing platform for universities"
+"digital certificates for universities"
+"digital diplomas"
+"digital badges for universities"
+"digital credential management software"
+
+Improve the page structure around these sections:
+
+1. Digital Credentials for Universities
+2. Why Universities Need Digital Credentials
+3. Digital Diplomas and Certificates
+4. Digital Badges and Microcredentials
+5. Open Badges 3.0
+6. W3C Verifiable Credentials
+7. Credential Verification
+8. Skills Taxonomy Mapping
+9. Comprehensive Learner Records
+10. Workforce Intelligence
+11. LMS/SIS/API Integrations
+12. Security and Compliance
+13. Use Cases
+    - Registrar
+    - CIO / IT
+    - Career Services
+    - Continuing Education
+14. Customer Evidence
+15. FAQs
+16. Request Demo
+
+Use contextual internal links to the relevant pillar pages.
+
+==================================================
+PRIORITY 3 — SIX-LAYER SEO ARCHITECTURE
+==================================================
+
+Treat the following existing pages as strategic SEO pillar pages:
+
+1. Digital Credential Infrastructure
+2. Skills Taxonomy Mapping
+3. Comprehensive Learner Record
+4. Workforce Intelligence for Universities
+
+Add/strengthen dedicated SEO content around:
+
+A. Open Badges 3.0
+Target:
+- open badges 3.0
+- open badges 3.0 for universities
+- Open Badges 3.0 certification
+- digital badges standards
+
+B. Verifiable Credential Verification
+Target:
+- digital credential verification
+- university credential verification
+- verifiable credentials
+- verifiable digital certificates
+
+C. Skills Taxonomy Mapping
+Target:
+- skills taxonomy mapping
+- skills mapping for universities
+- credential skills mapping
+- curriculum skills mapping
+
+D. Comprehensive Learner Record
+Target:
+- comprehensive learner record
+- CLR 2.0
+- CLR platform
+- digital learner record
+- comprehensive learner record for universities
+
+E. Workforce Intelligence
+Target:
+- workforce intelligence for universities
+- skills intelligence higher education
+- curriculum workforce alignment
+- university labor market intelligence
+
+Do not create thin pages.
+
+Each page should contain:
+- clear search-intent-focused H1
+- concise definition
+- institutional problem
+- solution
+- how it works
+- standards
+- use cases
+- implementation considerations
+- FAQs
+- strong CTA
+- internal links to adjacent layers
+
+==================================================
+PRIORITY 4 — INTERNAL LINKING
+==================================================
+
+Create a deliberate internal-linking graph.
+
+Higher Education page must link to:
+
+Digital Credential Infrastructure
+Open Badges 3.0
+Credential Verification
+Skills Taxonomy Mapping
+Comprehensive Learner Record
+Workforce Intelligence
+
+Skills Taxonomy Mapping must link to:
+
+Higher Education
+CLR
+Workforce Intelligence
+
+CLR must link to:
+
+Higher Education
+Skills Taxonomy Mapping
+Digital Credential Infrastructure
+Skill Passport
+
+Workforce Intelligence must link to:
+
+Higher Education
+Skills Taxonomy Mapping
+CLR
+
+Use descriptive anchor text.
+
+Avoid generic anchors such as:
+"click here"
+"learn more"
+
+Use anchors such as:
+"skills taxonomy mapping"
+"Comprehensive Learner Record"
+"digital credentials for universities"
+"credential verification"
+
+==================================================
+PRIORITY 5 — COMPARISON SEO
+==================================================
+
+Create a clean comparison architecture:
+
+/compare/
+/compare/certifyme-vs-parchment/
+/compare/certifyme-vs-credly/
+/compare/certifyme-vs-accredible/
+/compare/certifyme-vs-sertifier/
+
+If equivalent articles already exist, do NOT create duplicate URLs.
+
+Instead:
+- identify the existing canonical article
+- improve it
+- move/redirect only when technically safe
+- preserve backlinks
+
+Comparison pages must be genuinely useful and factual.
+
+Use comparison dimensions such as:
+
+- Higher education
+- Academic records
+- Digital credentials
+- Open Badges 3.0
+- W3C VC
+- CLR
+- Skills
+- Integrations
+- Verification
+- Analytics
+- Learner experience
+- Workforce capabilities
+- Security
+- Best-fit use cases
+
+Do NOT make unsupported superiority claims.
+
+==================================================
+PRIORITY 6 — BLOG CLEANUP
+==================================================
+
+Do NOT mass-produce new blog articles.
+
+First classify existing articles into:
+
+A. Strategic / retain and strengthen
+B. Consolidate
+C. Low-value / deprioritize
+
+Strategic topics:
+
+- Universities
+- Higher education
+- Digital credentials
+- Open Badges 3.0
+- W3C Verifiable Credentials
+- Credential verification
+- Skills
+- CLR
+- Workforce intelligence
+- Microcredentials
+- Digital diplomas
+- Digital transcripts
+- Employer recognition
+
+Consolidate overlapping articles covering the same search intent.
+
+Avoid having multiple pages competing for:
+
+"digital credentials"
+"digital badges"
+"digital certificates"
+
+Where multiple articles target the same intent, choose one canonical authority page and internally link supporting articles to it.
+
+Do NOT delete pages without checking:
+- backlinks
+- organic traffic
+- indexing
+- ranking keywords
+
+Use redirects only where appropriate.
+
+==================================================
+PRIORITY 7 — TITLE / META / CANONICAL
+==================================================
+
+Audit every strategic page.
+
+Every indexable page must have:
+
+- unique title
+- unique meta description
+- canonical URL
+- correct robots directive
+- one H1
+- logical H2 hierarchy
+- Open Graph title
+- Open Graph description
+- Open Graph image
+- Twitter/X card metadata
+
+Recommended homepage title:
+
+Digital Credential Platform for Universities | CertifyMe
+
+Recommended homepage meta description:
+
+Issue verifiable digital degrees, certificates and badges for universities—connected to Open Badges 3.0, skills, Comprehensive Learner Records and workforce intelligence.
+
+Recommended higher-education title:
+
+Digital Credentials for Universities & Higher Education | CertifyMe
+
+Recommended higher-education meta description:
+
+Issue and verify digital degrees, certificates and badges while connecting achievements to skills, Comprehensive Learner Records and career outcomes.
+
+Keep titles within sensible search-result length.
+
+==================================================
+PRIORITY 8 — STRUCTURED DATA
+==================================================
+
+Implement valid JSON-LD where appropriate.
+
+Homepage:
+
+- Organization
+- WebSite
+
+Product/platform pages:
+
+- SoftwareApplication where appropriate
+- Organization
+
+Blog articles:
+
+- Article
+- BreadcrumbList
+
+All strategic pages:
+
+- BreadcrumbList
+
+FAQ sections:
+
+- FAQPage only when the questions and answers are visibly present on the page and comply with current search-engine requirements.
+
+Do not add fake, hidden or misleading structured data.
+
+Validate all JSON-LD.
+
+==================================================
+PRIORITY 9 — IMAGE SEO
+==================================================
+
+Audit all important images.
+
+For every strategic image:
+
+- descriptive filename
+- meaningful alt text
+- width/height attributes
+- lazy-load below-the-fold images
+- avoid unnecessary oversized assets
+- use modern formats where supported
+- do not put important SEO text only inside images
+
+Alt text should describe the image naturally.
+
+Do not keyword-stuff alt attributes.
+
+==================================================
+PRIORITY 10 — TECHNICAL SEO
+==================================================
+
+Audit and fix:
+
+- sitemap.xml
+- robots.txt
+- canonical URLs
+- trailing slash consistency
+- HTTP/HTTPS consistency
+- www/non-www consistency
+- redirect chains
+- broken internal links
+- orphan pages
+- duplicate pages
+- duplicate titles
+- duplicate meta descriptions
+- index/noindex directives
+- pagination where applicable
+- 404 handling
+- mobile rendering
+- Core Web Vitals
+- image loading
+- JavaScript-dependent content
+- crawlable navigation
+
+Make sure sitemap.xml contains only canonical, indexable URLs returning 200.
+
+Make sure robots.txt does not block important CSS, JS or page content required for rendering.
+
+==================================================
+PRIORITY 11 — BREADCRUMBS
+==================================================
+
+Add visible breadcrumbs to strategic pages where appropriate.
+
+Example:
+
+Home
+→ Solutions
+→ Higher Education
+→ Digital Credentials
+
+and:
+
+Home
+→ Solutions
+→ Comprehensive Learner Record
+
+Use BreadcrumbList structured data.
+
+==================================================
+PRIORITY 12 — CASE STUDIES / PROOF
+==================================================
+
+Create a scalable case-study architecture using only verified customer relationships and approved claims.
+
+Example:
+
+/customers/
+/customers/[institution]/
+
+Each case study should contain:
+
+- institution
+- challenge
+- solution
+- implementation
+- integrations
+- credential volume where verified
+- measurable outcome where verified
+- customer quote where approved
+- CTA
+
+Do not invent statistics, customer relationships or outcomes.
+
+==================================================
+IMPORTANT CONTENT RULES
+==================================================
+
+Do NOT:
+
+- keyword stuff
+- create hundreds of thin pages
+- create doorway pages
+- create fake university pages
+- create fake statistics
+- invent customer claims
+- invent integrations
+- create AI-generated filler
+- duplicate existing articles
+- change URLs unnecessarily
+- remove valuable indexed content without analysis
+- make unsupported "best", "only", "number one" claims
+- hide SEO content from users
+
+==================================================
+SUCCESS CRITERIA
+==================================================
+
+After implementation, produce an SEO audit report containing:
+
+1. Pages modified
+2. URLs created
+3. URLs consolidated
+4. Redirects created
+5. Metadata changes
+6. H1/H2 changes
+7. Internal-link changes
+8. Schema implemented
+9. Technical SEO fixes
+10. Images optimized
+11. Broken links fixed
+12. Sitemap/robots status
+13. Duplicate-content issues resolved
+14. Remaining SEO issues
+
+Also produce a keyword-to-URL map:
+
+Keyword cluster → Target URL → Search intent → Page type
+
+At minimum include:
+
+- digital credentials for universities
+- digital credential platform
+- digital credentials higher education
+- digital credential management
+- digital diploma
+- digital certificate
+- digital badges
+- Open Badges 3.0
+- W3C Verifiable Credentials
+- digital credential verification
+- skills taxonomy mapping
+- skills mapping for universities
+- comprehensive learner record
+- CLR 2.0
+- digital learner record
+- workforce intelligence for universities
+- university labor market intelligence
+- digital credentials comparison
+- CertifyMe vs Parchment
+- CertifyMe vs Credly
+- CertifyMe vs Accredible
+
+FINAL REQUIREMENT:
+
+Before changing anything, inspect the existing codebase and determine:
+
+- framework
+- routing
+- templates
+- current SEO implementation
+- current sitemap generation
+- current robots implementation
+- existing structured data
+- existing canonical implementation
+- existing metadata system
+
+Reuse the existing architecture.
+
+Do not rebuild the site.
+
+Implement only the highest-impact SEO changes first.
+
+The priority is:
+
+1. Search intent + keyword architecture
+2. Higher Education pillar
+3. Internal linking
+4. Metadata/canonical/schema
+5. Comparison and proof architecture
+6. Technical crawlability
+7. Blog consolidation
+
+Everything else is secondary.

@@ -6,7 +6,7 @@
   --cp-muted: #62677a;
   --cp-line: #e3e5ef;
   --cp-soft: #f5f6fb;
-  font-family: "Inter", "Manrope", sans-serif;
+  font-family: "Source Sans 3", "Manrope", sans-serif;
 }
 
 .cp-layer--intro {
@@ -41,7 +41,7 @@
 .cp-heading h2,
 .cp-notbadges-banner h2,
 .cp-cta-banner h2 {
-  font-family: "Manrope", "Inter", sans-serif;
+  font-family: "Manrope", "Source Sans 3", sans-serif;
   color: var(--cp-ink);
   font-weight: 800;
   line-height: 1.2;
@@ -223,7 +223,7 @@
 .cp-journey-card h3,
 .cp-level-card h3 {
   color: var(--cp-ink);
-  font-family: "Manrope", "Inter", sans-serif;
+  font-family: "Manrope", "Source Sans 3", sans-serif;
   font-size: 1.08rem;
   font-weight: 800;
   margin: 5px 0 12px;

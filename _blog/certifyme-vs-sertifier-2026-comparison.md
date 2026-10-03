@@ -1,8 +1,8 @@
 ---
 layout: V4LayoutSingleBlogPost
-title: "CertifyMe vs. Sertifier: Credential Infrastructure vs. Issuance and Engagement (2026)"
+title: "CertifyMe vs Sertifier: Institutional Credential Comparison"
 
-description: "An honest comparison of CertifyMe and Sertifier — covering what happens after issuance, credential standards, skills and pathways, workforce relevance, and when each platform is the right fit."
+description: "Compare CertifyMe and Sertifier by credential issuance, standards, learner experience, integration requirements and institutional programme needs."
 
 abstract: 
 

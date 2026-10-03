@@ -10,6 +10,7 @@
         {% include V4NewLook/navbar.html %}
 
         <main id="main-content">
+        {% include V4NewLook/strategic-breadcrumbs.html %}
 
         {% include V4NewLook/InnerPages2.0/hero.html %}
 
@@ -18,6 +19,8 @@
 		{% include V4NewLook/about/aboutStats.html %}
 
 		{% include V4NewLook/InnerPages2.0/allFeatures.html %}
+{% if page.seo_pillar %}<div class="container py-4">{{ content }}</div>{% endif %}
+{% include V4NewLook/strategic-links.html %}
 
 		{% include V4NewLook/G2Enterprise.html %}
 

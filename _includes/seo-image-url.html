@@ -1,0 +1,10 @@
+{%- assign seo_image_path = include.image | default: page.imageLink | default: "/assets4/images/Images%20Webp/digital%20credential%20software.webp" -%}
+{%- assign seo_image_prefix = seo_image_path | slice: 0, 2 -%}
+{%- if seo_image_path contains "://" -%}
+  {%- assign seo_image = seo_image_path -%}
+{%- elsif seo_image_prefix == "//" -%}
+  {%- assign seo_image = seo_image_path | prepend: "https:" -%}
+{%- else -%}
+  {%- assign seo_image = seo_image_path | relative_url | prepend: site.canonical_origin -%}
+{%- endif -%}
+{%- assign seo_image = seo_image | replace: " ", "%20" -%}

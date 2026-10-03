@@ -1,8 +1,8 @@
 /* Comprehensive Learner Record — institutional product page. */
-.clr { --ink:#1d2853; --muted:#53607b; --line:#dce2ef; --accent:#344399; font-family:"Inter",sans-serif; color:var(--ink); background:#fff; }
+.clr { --ink:#1d2853; --muted:#53607b; --line:#dce2ef; --accent:#344399; font-family:"Source Sans 3",sans-serif; color:var(--ink); background:#fff; }
 .clr * { box-sizing:border-box; }
 .clr-shell { width:min(1160px,calc(100% - 48px)); margin-inline:auto; }
-.clr h1,.clr h2,.clr h3 { color:inherit; font-family:"Manrope","Inter",sans-serif; letter-spacing:-.035em; }
+.clr h1,.clr h2,.clr h3 { color:inherit; font-family:"Manrope","Source Sans 3",sans-serif; letter-spacing:-.035em; }
 .clr h1 { margin:0 0 25px; font-size:clamp(2.6rem,4.4vw,4.2rem); line-height:1.12; font-weight:800; }
 .clr h2 { margin:0 0 18px; font-size:clamp(2rem,3vw,3rem); line-height:1.18; font-weight:800; }
 .clr h3 { margin:0 0 10px; font-size:1.17rem; line-height:1.35; font-weight:750; }

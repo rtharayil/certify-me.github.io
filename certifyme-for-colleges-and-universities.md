@@ -1,10 +1,25 @@
 ---
 permalink: /credentials-higher-education
-title: "Digital Credentials for Higher Education | CertifyMe"
+title: "Digital Credentials for Universities & Higher Education | CertifyMe"
 
-description: "Issue, manage and verify degrees, transcripts, certificates and digital badges at scale. Extend student credentials into verified skills, portfolios and Skill Passports with CertifyMe and SkillStory."
+description: "Issue and verify digital degrees, certificates and badges while connecting achievements to skills, Comprehensive Learner Records and career outcomes."
 
-abstract: "CertifyMe is the digital credential infrastructure for universities and colleges — enabling institutions to issue, manage, verify and analyze every type of credential, then extend their value through SkillStory."
+abstract: "Digital credential infrastructure for universities: connect institutional achievements, open standards, verification, skills and learner records."
+seo_pillar: true
+breadcrumb_label: "Digital Credentials for Universities"
+faqs:
+  - question: "What are digital credentials for universities?"
+    answer: "Digital credentials are institution-issued records of an achievement, such as a degree, diploma, certificate, badge or microcredential. Structured credential data can preserve the issuer, recipient, criteria and evidence so receiving organisations can interpret and verify the achievement."
+  - question: "How do digital diplomas, certificates and badges differ?"
+    answer: "A digital diploma represents a qualification, a certificate records a defined award or completion, and a badge can represent a specific achievement or microcredential. Universities define the academic meaning, assessment criteria and authority of each credential."
+  - question: "What does Open Badges 3.0 certification cover?"
+    answer: "The 1EdTech registry lists CertifyMe for Open Badges 3.0 Issuer and CLR 2.0 Issuer and Displayer roles. These are product-role certifications. Receiving-system compatibility and the format and verification requirements of a particular credential still need to be assessed."
+  - question: "How can a university connect credentials to its SIS and LMS?"
+    answer: "Define the authoritative system, issuance event, data mapping and approval process first. Then assess available integrations, APIs or webhooks against the institution's systems, access controls and exception-handling requirements."
+  - question: "Does a Comprehensive Learner Record replace the academic transcript?"
+    answer: "No. A Comprehensive Learner Record connects achievements, skills and other learning evidence while retaining their sources. It complements the authoritative academic transcript; the institution governs issuance, consent and access."
+  - question: "How should a university assess security and implementation?"
+    answer: "Review deployment, data residency, access controls, retention, consent, issuer-key management and status or revocation resources. Request current security evidence and its scope, and agree integration ownership and continuity arrangements before rollout."
 
 layout: V4LayoutHigherEd
 

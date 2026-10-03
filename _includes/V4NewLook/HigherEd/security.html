@@ -194,14 +194,14 @@ details[open] .he-faq-q::after { content: '−'; }
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         </div>
         <div class="he-sec-title">Secure</div>
-        <p class="he-sec-body">RSA &amp; Ed25519 signatures, AES-256 encryption, SOC 2 Type II audited, 99.9% uptime SLA</p>
+        <p class="he-sec-body">Review signing and encryption requirements, current audit evidence, deployment scope and contractual availability commitments.</p>
       </div>
       <div class="he-security-card">
         <div class="he-sec-ico">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
         </div>
         <div class="he-sec-title">Compliant</div>
-        <p class="he-sec-body">GDPR, FERPA and ISO 27001 aligned — independent verification requires no verifier account</p>
+        <p class="he-sec-body">Assess applicable privacy obligations, record access, consent, retention and the security evidence required by your institution.</p>
       </div>
       <div class="he-security-card">
         <div class="he-sec-ico">
@@ -214,8 +214,8 @@ details[open] .he-faq-q::after { content: '−'; }
     <div class="he-sec-badges">
       <span class="he-sec-badge">✓ Open Badges 3.0 (1EdTech)</span>
       <span class="he-sec-badge">✓ W3C Verifiable Credentials</span>
-      <span class="he-sec-badge">✓ SOC 2 Type II</span>
-      <span class="he-sec-badge">✓ ISO 27001</span>
+      <span class="he-sec-badge">Review SOC 2 report scope</span>
+      <span class="he-sec-badge">Review ISO documentation</span>
       <span class="he-sec-badge">✓ GDPR</span>
       <span class="he-sec-badge">✓ FERPA</span>
     </div>
@@ -329,39 +329,13 @@ details[open] .he-faq-q::after { content: '−'; }
         <h2 class="s-38 w-700">Common questions</h2>
       </div>
     </div>
-    <div class="he-faq-list">
+    <div class="he-faq-list" id="institutional-faqs">
+      {% for faq in page.faqs %}
       <details class="he-faq-item">
-        <summary class="he-faq-q">How do universities use digital credentials?</summary>
-        <p class="he-faq-a">To issue tamper-proof degrees, certificates, badges and transcripts — faster than print, permanently verifiable, and shareable to LinkedIn and job portals. Students get more from every credential they earn, and institutions get visibility into how those credentials are being used.</p>
+        <summary class="he-faq-q">{{ faq.question | escape }}</summary>
+        <p class="he-faq-a">{{ faq.answer | escape }}</p>
       </details>
-      <details class="he-faq-item">
-        <summary class="he-faq-q">Is CertifyMe FERPA compliant?</summary>
-        <p class="he-faq-a">Yes. CertifyMe processes only the minimum data needed for credential issuance and gives institutions full control over student records — consistent with FERPA requirements for US educational institutions.</p>
-      </details>
-      <details class="he-faq-item">
-        <summary class="he-faq-q">Does it integrate with Canvas, Moodle or our SIS?</summary>
-        <p class="he-faq-a">Yes. CertifyMe integrates with Canvas, Moodle, Blackboard and other major LMS platforms via REST API, webhooks and native integrations. When a student completes a course, the credential is issued automatically — no manual work from faculty or admin.</p>
-      </details>
-      <details class="he-faq-item">
-        <summary class="he-faq-q">Are credentials Open Badges 3.0 certified?</summary>
-        <p class="he-faq-a">Yes. CertifyMe is independently certified by 1EdTech for Open Badges 3.0 — the current global standard. Credentials are recognized by any compatible platform, employer system or institution globally.</p>
-      </details>
-      <details class="he-faq-item">
-        <summary class="he-faq-q">What's the difference between a digital badge and a Verifiable Credential?</summary>
-        <p class="he-faq-a">A basic digital badge is an image file (PNG or SVG) with metadata embedded in it. Verification depends on the badge platform's servers staying online — if the platform shuts down, the badge becomes unverifiable. It cannot be cryptographically checked by an employer without going through the issuing platform's website.<br><br>A W3C Verifiable Credential is cryptographically signed with the institution's private key. It can be independently verified by anyone — offline, without contacting the issuer, without any third-party platform. It's tamper-proof by design, machine-readable by ATS and HR systems, and works whether or not CertifyMe exists in ten years. CertifyMe issues W3C Verifiable Credentials (Open Badges 3.0) — not basic badges.</p>
-      </details>
-      <details class="he-faq-item">
-        <summary class="he-faq-q">What is a CLR (Comprehensive Learner Record) and why does it matter?</summary>
-        <p class="he-faq-a">A CLR is a structured, machine-readable record of everything a student has achieved during their time at your institution — degrees, course credits, digital badges, co-curricular activities, competencies and skills — bundled into one verified document. Unlike a single credential or transcript, the CLR gives employers and graduate schools the full picture of a student's learning journey in a format any compliant system can parse automatically.<br><br>The CLR standard is maintained by 1EdTech (the same body behind Open Badges 3.0). Together, Verifiable Credentials + CLR represent what every university's credential infrastructure should be built on.</p>
-      </details>
-      <details class="he-faq-item">
-        <summary class="he-faq-q">What is SkillStory and how does it relate to CertifyMe?</summary>
-        <p class="he-faq-a">CertifyMe manages the institution's credential record. SkillStory is the learner-facing layer — it brings together verified credentials with skills, projects and work experience into a portable Skill Passport and Verified CV students carry after graduation. The two work together as one ecosystem.</p>
-      </details>
-      <details class="he-faq-item">
-        <summary class="he-faq-q">How long does it take to get started?</summary>
-        <p class="he-faq-a">Most institutions issue their first credentials within a few days. Simple API connections typically take days; full deployments with custom branding and SSO take a few weeks.</p>
-      </details>
+      {% endfor %}
     </div>
   </div>
 </section>

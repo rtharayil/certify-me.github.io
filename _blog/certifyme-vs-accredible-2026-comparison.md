@@ -1,6 +1,6 @@
 ---
 layout: V4LayoutSingleBlogPost
-title: "CertifyMe vs. Accredible: Which Digital Credentialing Platform Should You Choose in 2026?"
+title: "CertifyMe vs Accredible: Institutional Credentials Compared"
 
 description: "Compare CertifyMe and Accredible by platform scope, open standards, learner records, pathways, integrations, workforce relevance, and the best fit for each."
 

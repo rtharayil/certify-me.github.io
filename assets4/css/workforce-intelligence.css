@@ -1,8 +1,8 @@
 /* Workforce Intelligence: B2B university solution page. */
-.wi { --wi-ink:#1b2852; --wi-muted:#52617d; --wi-line:#d9e1ee; --wi-accent:#344597; font-family:"Inter",sans-serif; color:var(--wi-ink); background:#fff; }
+.wi { --wi-ink:#1b2852; --wi-muted:#52617d; --wi-line:#d9e1ee; --wi-accent:#344597; font-family:"Source Sans 3",sans-serif; color:var(--wi-ink); background:#fff; }
 .wi * { box-sizing:border-box; }
 .wi-shell { width:min(1160px,calc(100% - 48px)); margin-inline:auto; }
-.wi h1,.wi h2,.wi h3 { font-family:"Manrope","Inter",sans-serif; color:inherit; letter-spacing:-.035em; }
+.wi h1,.wi h2,.wi h3 { font-family:"Manrope","Source Sans 3",sans-serif; color:inherit; letter-spacing:-.035em; }
 .wi h1 { margin:0 0 21px; font-size:clamp(2.55rem,4.3vw,4.25rem); line-height:1.1; font-weight:800; }
 .wi h2 { margin:0 0 17px; font-size:clamp(2rem,3vw,2.8rem); line-height:1.18; font-weight:800; }
 .wi h3 { margin:0 0 10px; font-size:1.16rem; font-weight:750; line-height:1.3; }

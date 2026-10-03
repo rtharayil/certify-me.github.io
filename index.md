@@ -1,9 +1,9 @@
 ---
-title: "Digital Credential Software for Institutions | CertifyMe"
+title: "Digital Credential Platform for Universities | CertifyMe"
 
-description: "CertifyMe helps institutions issue digital certificates and badges, connect achievements to skills, and govern Comprehensive Learner Records."
+description: "Issue verifiable degrees, certificates and badges for universities, connected to Open Badges 3.0, skills, learner records and workforce intelligence."
 
-abstract: "CertifyMe helps institutions issue digital certificates and badges, connect achievements to skills, and govern Comprehensive Learner Records."
+abstract: "Issue verifiable degrees, certificates and badges for universities, connected to Open Badges 3.0, skills, learner records and workforce intelligence."
 
 layout: V4Layout
 
@@ -46,11 +46,11 @@ homepage_faqs:
 
 # hero section 
 HeroEyebrow: "Institutional Credential Infrastructure"
-HeroTitle: "Digital Credentials That Connect Learning to Verifiable Skills and Careers"
-HeroLead: "Go beyond basic digital badges."
-HeroText: "CertifyMe is digital credential infrastructure for universities and institutions—connecting trusted credentials, skills and learner records through standards-aligned technology and institutional governance."
+HeroTitle: "Digital Credential Platform for Universities and Institutions"
+HeroLead: "Digital credential infrastructure, built for institutions."
+HeroText: "Issue verifiable digital degrees, diplomas, certificates and badges—and connect them to skills, Comprehensive Learner Records (CLR) and workforce intelligence, with institutional governance."
 HeroPrimaryCTA: "Request Demo"
-HeroSecondaryCTA: "Sample Credential Walkthrough"
+HeroSecondaryCTA: false
 HeroSupportingLine: "Built on open standards. Designed for institutional scale."
 HeroImage: /assets4/images/certifyme-verifiable-credentials-skills-clr-hero-960.webp
 HeroImageMobile: /assets4/images/certifyme-verifiable-credentials-skills-clr-hero-480.webp

@@ -100,7 +100,7 @@ export function Homepage() {
   const [activeFeature, setActiveFeature] = useState(0);
 
   return (
-    <div style={{ fontFamily: "'Plus Jakarta Sans', 'Inter', sans-serif", backgroundColor: '#fff', color: '#1a1a2e', lineHeight: 1.6 }}>
+    <div style={{ fontFamily: "'Plus Jakarta Sans', 'Source Sans 3', sans-serif", backgroundColor: '#fff', color: '#1a1a2e', lineHeight: 1.6 }}>
 
       {/* ── NAVBAR ─────────────────────────────────── */}
       <nav style={{

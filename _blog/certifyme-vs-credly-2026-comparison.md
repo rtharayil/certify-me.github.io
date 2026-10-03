@@ -1,6 +1,6 @@
 ---
 layout: V4LayoutSingleBlogPost
-title: "CertifyMe vs. Credly: Which Digital Credentialing Platform is Best in 2026?"
+title: "CertifyMe vs Credly: Digital Credential Platforms Compared"
 
 description: "Compare CertifyMe and Credly by enterprise skills recognition, open standards, learning pathways, learner records, workforce relevance, and portability."
 

@@ -834,6 +834,11 @@ so the section is never empty.
 
                     <div class="single-post-txt blogcontent lh-lg">
                         {{ page.content }}
+                        {% if page.comparison_page %}
+                        <aside class="border rounded p-3 my-4" aria-label="Institutional comparison context">
+                          <p>Evaluate your institution's requirements with the <a href="/compare/">digital credential platform comparison hub</a> and the <a href="/credentials-higher-education">digital credentials for universities guide</a>. Confirm current vendor capabilities, certification roles, security evidence and plan inclusions before procurement.</p>
+                        </aside>
+                        {% endif %}
                     </div>
 
                     {% if page.faqs and page.faqs.size > 0 %}

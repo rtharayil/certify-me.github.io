@@ -6,31 +6,9 @@
  */
 
 /* ── FONT IMPORT (loaded here so no rebuild needed) ────── */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
 
-/* ── FONTS: Manrope (headlines) + Inter (body) — permanent choice ─── */
-
-
-/* Body / UI text → Inter */
-body,
-.font--jakarta,
-p, .p-lg, .p-md, .p-sm,
-a, li, span, td, th,
-.btn, input, select, textarea,
-.nav-link, .wsmenu-list a {
-  font-family: 'Inter', sans-serif !important;
-}
-
-/* All headings → Manrope */
-h1, h2, h3, h4, h5, h6,
-.hero-7-txt h1,
-.section-title h2,
-.txt-block h6,
-.review-author h6,
-.statistic-number,
-h2.statistic-number {
-  font-family: 'Manrope', sans-serif !important;
-}
+/* Shared font-family rules are in site-typography.css. */
 
 /* ── PAGE BACKGROUND — single source of truth for the lavender base ── */
 #page {
@@ -840,7 +818,7 @@ h2.statistic-number {
    body copy, unstyled gray headings) with no visual hierarchy. This
    gives the article body the same polish as the rest of the site. ── */
 .post-content {
-  font-family: 'Inter', sans-serif !important;
+  font-family: 'Source Sans 3', sans-serif !important;
   font-size: 1.0625rem !important;
   line-height: 1.75 !important;
   color: #33334d !important;

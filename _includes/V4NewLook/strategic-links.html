@@ -1,0 +1,18 @@
+{% if page.seo_pillar %}
+<section class="container py-4" aria-labelledby="related-infrastructure-title">
+  <h2 id="related-infrastructure-title">Connected credential infrastructure</h2>
+  <nav aria-label="Related institutional capabilities">
+    <ul>
+      {% unless page.url == "/credentials-higher-education" %}<li><a href="/credentials-higher-education">Digital credentials for universities</a></li>{% endunless %}
+      {% unless page.url == "/platform-overview" %}<li><a href="/platform-overview">Digital credential infrastructure</a></li>{% endunless %}
+      <li><a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges 3.0 standards</a></li>
+      {% unless page.url == "/certificate-verification" %}<li><a href="/certificate-verification">Digital credential verification</a></li>{% endunless %}
+      {% unless page.url == "/skills-taxonomy-mapping" %}<li><a href="/skills-taxonomy-mapping">Skills taxonomy mapping</a></li>{% endunless %}
+      {% unless page.url == "/comprehensive-learner-record" %}<li><a href="/comprehensive-learner-record">Comprehensive Learner Record</a></li>{% endunless %}
+      {% unless page.url == "/workforce-intelligence" %}<li><a href="/workforce-intelligence">Workforce intelligence for universities</a></li>{% endunless %}
+      <li><a href="/skills-passport">Learner Skill Passport</a></li>
+      <li><a href="/compare/">Digital credential platform comparisons</a></li>
+    </ul>
+  </nav>
+</section>
+{% endif %}

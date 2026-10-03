@@ -37,7 +37,7 @@ async function main() {
           ? route.continue() : route.abort();
       });
       await page.goto(base, { waitUntil: "domcontentloaded" });
-      await page.locator("#hero-7 [data-credential-open]").waitFor();
+      await page.locator("#hero-7 .credential-hero-actions .btn--theme").waitFor();
       await page.evaluate(() => document.fonts.ready);
       await page.locator(".skip-to-main").focus();
       await page.keyboard.press("Enter");
@@ -111,12 +111,14 @@ async function main() {
         }
       }
       const opener = page.locator("#hero-7 [data-credential-open]");
+      if (await opener.count()) {
       await opener.scrollIntoViewIfNeeded();
       await opener.click();
       await page.locator("#credential-sample-dialog").waitFor({ state: "visible" });
       await page.keyboard.press("Escape");
       await page.locator("#credential-sample-dialog").waitFor({ state: "hidden" });
       assert(await opener.evaluate(node => node === document.activeElement), "Closing the walkthrough must restore focus");
+      }
       await page.evaluate(() => {
         document.documentElement.style.scrollBehavior = "auto";
         document.body.style.scrollBehavior = "auto";
@@ -135,7 +137,7 @@ async function main() {
         width, density, selectedImageKB: Math.round(imageBytes / 1024),
         originalImageKB: Math.round(baselineBytes / 1024),
         imageReductionPercent: Math.round((1 - imageBytes / baselineBytes) * 100),
-        checks: "images, keyboard skip/FAQ/modal, touch targets, headings, overflow, runtime",
+        checks: "images, keyboard skip/FAQ, modal when enabled, touch targets, headings, overflow, runtime",
       }));
       await context.close();
     }

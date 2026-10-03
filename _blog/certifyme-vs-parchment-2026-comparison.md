@@ -1,8 +1,8 @@
 ---
 layout: V4LayoutSingleBlogPost
-title: "CertifyMe vs. Parchment: Credential Ecosystem vs. Transcript Exchange (2026)"
+title: "CertifyMe vs Parchment: University Credentials Compared"
 
-description: "An honest comparison of CertifyMe and Parchment — covering what happens after issuance, credential standards, skills and pathways, workforce relevance, and when each platform is the right fit."
+description: "Compare CertifyMe and Parchment for university credential needs: academic records, standards, verification, skills, integrations and institutional fit."
 
 abstract: 
 

@@ -1,4 +1,16 @@
-{% if {{page.Q1Title}} %}
+{% if page.faqs and page.faqs.size > 0 %}
+<section class="faqs-section py-5" aria-labelledby="credential-faq-heading">
+  <div class="container">
+    <h2 id="credential-faq-heading">{{ page.FAQTitle | default: "Frequently Asked Questions" | escape }}</h2>
+    {% for faq in page.faqs %}
+    <details class="border rounded p-3 mb-3">
+      <summary>{{ faq.question | escape }}</summary>
+      <div class="mt-3">{{ faq.answer | markdownify }}</div>
+    </details>
+    {% endfor %}
+  </div>
+</section>
+{% elsif page.Q1Title %}
 <!-- FAQs-3
                         ============================================= -->
 <section id="faqs-3" class="py-100 faqs-section">

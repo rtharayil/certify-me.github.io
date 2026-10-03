@@ -1,0 +1,19 @@
+/* Shared website typography. Keep sizes, weights and spacing in page styles. */
+body,
+.font--jakarta,
+p, .p-lg, .p-md, .p-sm,
+a, li, span, td, th,
+.btn, button, input, select, textarea,
+.nav-link, .wsmenu-list a {
+  font-family: 'Source Sans 3', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.hero-7-txt h1,
+.section-title h2,
+.txt-block h6,
+.review-author h6,
+.statistic-number,
+h2.statistic-number {
+  font-family: 'Manrope', sans-serif !important;
+}

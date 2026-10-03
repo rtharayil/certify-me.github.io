@@ -61,3 +61,59 @@ mtime_ms = 1791010243649
 storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/a363d86e-bdba-49dc-8749-19397ba316b7/633af636-5140-4b32-bd1d-93f464d194b0"
 storage_version_token = "1791010559583712"
 content_type = "image/webp"
+
+[[outputs]]
+id = "jlDzZKOoA6vQ5BhSQa_CX"
+uri = "file://.local/reports/institutional-seo/seo-audit-report.html"
+type = "html"
+title = "SEO Implementation Audit"
+description = "14-part implementation report, validation results, keyword ownership and remaining evidence requirements."
+logical_id = "359ef38f-2380-479e-9594-4b5d283df2bf"
+content_hash = "sha256:b7e0526711f1e59c8f2610c164730291cedf5547a4f2b22d25983f88d6abf5a6"
+size = 13456
+mtime_ms = 1791027553121
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/359ef38f-2380-479e-9594-4b5d283df2bf/47309078-004c-4756-8895-6dcc2f1cd23e"
+storage_version_token = "1791027613413843"
+content_type = "text/html"
+
+[[outputs]]
+id = "c_JcW5vV9P1dZ_qAyLtWZ"
+uri = "file://.local/reports/institutional-seo/keyword-to-url-map.csv"
+type = "table"
+title = "Keyword-to-URL Map"
+description = "27 keyword clusters assigned to existing authority pages and the new comparison hub."
+logical_id = "a255fc35-f5e7-454d-94e9-a7527648fcf4"
+content_hash = "sha256:186b0c90bdaf63e25d07dd2470ef913befc23d829749f8ef5889b1360a30ae94"
+size = 3714
+mtime_ms = 1791027553118
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/a255fc35-f5e7-454d-94e9-a7527648fcf4/3b31d419-9210-4eee-832b-dc5accd96648"
+storage_version_token = "1791027614745305"
+content_type = "text/csv"
+
+[[outputs]]
+id = "vbjU31wWwfO2LwCB5kbBU"
+uri = "file://.local/reports/institutional-seo/blog-content-inventory.csv"
+type = "table"
+title = "Blog Content Inventory"
+description = "83 articles classified for retention, consolidation review or deprioritization. No merge or deletion authorization."
+logical_id = "ae320f45-65d1-4f80-b056-8b8dd2f84f39"
+content_hash = "sha256:6b86e4673f963197ab5f82e87012951203094efb59479eef8093b88606ad4c09"
+size = 20937
+mtime_ms = 1791027553119
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/ae320f45-65d1-4f80-b056-8b8dd2f84f39/40fcd1be-3fab-492d-92dd-aca7659a7c1c"
+storage_version_token = "1791027616213174"
+content_type = "text/csv"
+
+[[outputs]]
+id = "XkN7eSd8rUMnYmLBZAin7"
+uri = "file://.local/reports/institutional-seo/customer-evidence-register.csv"
+type = "table"
+title = "Customer Evidence Template"
+description = "Empty approval register for customer relationships, quotes, integrations and measured outcomes."
+logical_id = "3135516d-039e-4fa4-998d-1a5c9f60075a"
+content_hash = "sha256:8ab784c856685d5d6580e223a8d5f46dd072ad5071620ed9437f4ae71c90ccac"
+size = 176
+mtime_ms = 1791027553120
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/3135516d-039e-4fa4-998d-1a5c9f60075a/3d6576c1-cd91-42cd-bcec-c51393b93ebf"
+storage_version_token = "1791027617564762"
+content_type = "text/csv"

@@ -4,7 +4,7 @@
 .credential-preview-stage {
   min-height: 100vh;
   background: #e8ebf3;
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Source Sans 3", Arial, sans-serif;
 }
 .credential-preview-stage .credential-modal {
   position: relative;

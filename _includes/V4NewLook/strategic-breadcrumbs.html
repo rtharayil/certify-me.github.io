@@ -1,0 +1,8 @@
+{% if page.seo_pillar %}
+<nav class="container pt-4 pb-3" aria-label="Breadcrumb">
+  <ol class="list-inline mb-0">
+    <li class="list-inline-item"><a href="/">Home</a><span aria-hidden="true"> / </span></li>
+    <li class="list-inline-item" aria-current="page">{{ page.breadcrumb_label | default: page.title | escape }}</li>
+  </ol>
+</nav>
+{% endif %}

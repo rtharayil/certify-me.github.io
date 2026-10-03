@@ -4,13 +4,17 @@
 User-agent: *
 # Staging / test pages
 Disallow: /preprod.html
+Disallow: /preprod
 Disallow: /samples.html
+Disallow: /samples
 Disallow: /test.html
+Disallow: /test
 # Demo / template previews
 Disallow: /EPTemplates/
 Disallow: /BSIsample/
 # Legacy sample-credential page
 Disallow: /sample-credential.html
+Disallow: /sample-credential
 # Low-value legacy pages (devopsma sample credentials)
 Disallow: /devopsma/
 # Low-value geo-demo directories

@@ -54,8 +54,8 @@ const items = [
 
 export function DarkBento() {
   return (
-    <div style={{ background: "#282B75", fontFamily: "'Inter', sans-serif", padding: "36px 0" }}>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <div style={{ background: "#282B75", fontFamily: "'Source Sans 3', sans-serif", padding: "36px 0" }}>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 32px" }}>
 

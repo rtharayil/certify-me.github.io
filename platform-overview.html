@@ -2,13 +2,26 @@
 layout: V4LayoutContent
 permalink: /platform-overview
 title: "Digital Credential Management Platform Overview | CertifyMe"
-description: "Explore CertifyMe’s credential management platform, institutional workflows, showcase directory, learner wallet and independent reviews."
+description: "Explore digital credential infrastructure for universities: issuance, open standards, verification, skills, learner records and institutional governance."
+seo_pillar: true
+breadcrumb_label: "Digital Credential Infrastructure"
+faqs:
+  - question: "What is digital credential infrastructure?"
+    answer: "Digital credential infrastructure connects institution-governed issuance, open standards, verification, skills and learner records. It preserves achievement evidence and issuer authority rather than treating a credential as a badge image alone."
+  - question: "How does digital credential management work?"
+    answer: "Define the award and approval process, issue the supported credential format, maintain sharing and verification resources, and govern corrections, expiry or revocation. Reviewed skills and learner records can extend the evidence while keeping its source clear."
+  - question: "What should university IT teams assess?"
+    answer: "Assess SIS and LMS data flows, API permissions, credential formats, proof and status resources, deployment, privacy, access controls and exception handling. Confirm the implementation scope and available integrations before rollout."
+  - question: "How do credentials connect to learner records and workforce intelligence?"
+    answer: "A Comprehensive Learner Record connects achievements while preserving provenance. Reviewed skills mappings interpret those achievements. Workforce intelligence relates skills to occupations and separately sourced labour-market information whose coverage and freshness must be documented."
 custom_stylesheet: /assets4/css/platform-overview.css
 ---
 
 <div class="platform-overview-page">
   <header class="platform-overview-page__heading container">
-    <h1>Platform Overview</h1>
+    <h1>Digital Credential Infrastructure for Institutions</h1>
+    <p>Digital credential infrastructure connects issuance, standards, verification and record governance. CertifyMe helps institutional teams organise these capabilities around trusted achievements rather than a badge image alone.</p>
+    <p>Explore <a href="/credentials-higher-education">digital credentials for universities</a>, <a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges 3.0</a> and <a href="/certificate-verification">credential verification</a>, then connect the evidence through <a href="/skills-taxonomy-mapping">skills taxonomy mapping</a>, <a href="/comprehensive-learner-record">Comprehensive Learner Records</a> and <a href="/workforce-intelligence">workforce intelligence</a>.</p>
   </header>
 
   {% include V4NewLook/ourProductDetails.html %}
@@ -19,6 +32,15 @@ custom_stylesheet: /assets4/css/platform-overview.css
   <div id="platform-reviews">
     {% include V4NewLook/G2Enterprise.html %}
   </div>
+  <section class="container py-5" aria-labelledby="platform-faq-title">
+    <h2 id="platform-faq-title">Institutional implementation questions</h2>
+    {% for faq in page.faqs %}
+    <details class="border rounded p-3 mb-3">
+      <summary>{{ faq.question | escape }}</summary>
+      <div class="mt-3">{{ faq.answer | markdownify }}</div>
+    </details>
+    {% endfor %}
+  </section>
 </div>
 
 <!-- Review structured data accompanies the independent reviews section. -->

@@ -365,7 +365,7 @@ async function checkViewport(browser, width) {
 
   try {
     await page.goto(`${BASE_URL}/`, { waitUntil: "domcontentloaded", timeout: 30_000 });
-    await page.locator("#hero-7 [data-credential-open]").waitFor({ state: "visible" });
+    await page.locator("#hero-7 .credential-hero-actions .btn--theme").waitFor({ state: "visible" });
     await page.waitForFunction(() => (
       window.jQuery
       && document.querySelector("#wsnavtoggle")
@@ -492,6 +492,8 @@ async function checkViewport(browser, width) {
     );
 
     const opener = page.locator("#hero-7 [data-credential-open]");
+    const hasWalkthrough = await opener.count() > 0;
+    if (hasWalkthrough) {
     const openerSize = await opener.evaluate((element) => {
       const rect = element.getBoundingClientRect();
       return { width: rect.width, height: rect.height };
@@ -500,6 +502,7 @@ async function checkViewport(browser, width) {
       openerSize.width >= 44 && openerSize.height >= 44,
       `${width}px sample-credential CTA is below the 44px tap-target minimum: ${JSON.stringify(openerSize)}`,
     );
+    }
 
     if (isTabletOrMobile) {
       const menuToggle = page.locator("#wsnavtoggle");
@@ -567,6 +570,7 @@ async function checkViewport(browser, width) {
       await checkTouchDesktopNestedNavigation(page, width);
     }
 
+    if (hasWalkthrough) {
     await opener.tap();
     const dialog = page.locator("#credential-sample-dialog");
     await dialog.waitFor({ state: "visible" });
@@ -673,6 +677,7 @@ async function checkViewport(browser, width) {
       await opener.evaluate((element) => document.activeElement === element),
       `${width}px closing the walkthrough should return focus to its opener`,
     );
+    }
 
     await checkHomepageFaq(page, width);
     assert(pageErrors.length === 0, `${width}px browser JavaScript errors: ${pageErrors.join("; ")}`);
@@ -684,7 +689,7 @@ async function checkViewport(browser, width) {
       `${width}px homepage runtime/asset console errors: ${JSON.stringify(appRuntimeErrors)}`,
     );
     console.log(
-      `Passed homepage at ${width}x${height}px: touch navigation, CTA, six layers, modal focus/scroll, FAQ touch/keyboard and overflow.`,
+      `Passed homepage at ${width}x${height}px: touch navigation, CTA, six layers, ${hasWalkthrough ? "modal focus/scroll" : "walkthrough CTA disabled"}, FAQ touch/keyboard and overflow.`,
     );
   } finally {
     await context.close();

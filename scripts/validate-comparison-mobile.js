@@ -3,6 +3,7 @@
 const { execFileSync, spawn } = require("node:child_process");
 const fs = require("node:fs");
 const http = require("node:http");
+const https = require("node:https");
 const path = require("node:path");
 const { chromium } = require("playwright");
 
@@ -26,7 +27,8 @@ function waitForServer(url) {
 
   return new Promise((resolve, reject) => {
     function poll() {
-      const request = http.get(url, (response) => {
+      const client = new URL(url).protocol === "https:" ? https : http;
+      const request = client.get(url, (response) => {
         response.resume();
         if (response.statusCode >= 200 && response.statusCode < 500) {
           resolve();

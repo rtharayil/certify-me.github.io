@@ -1867,6 +1867,20 @@ async function main() {
   const browser = await chromium.launch({ headless: true, executablePath: browserExecutable() });
 
   try {
+    const availability = await browser.newPage();
+    let enabled;
+    try {
+      const response = await availability.goto(`${BASE_URL}/`, { waitUntil: "domcontentloaded" });
+      assert(response?.ok(), "Homepage could not be loaded.");
+      await availability.locator("#hero-7 .credential-hero-actions .btn--theme").waitFor();
+      enabled = await availability.locator("#hero-7 [data-credential-open]").count() > 0;
+    } finally {
+      await availability.close();
+    }
+    if (!enabled) {
+      console.log("Skipped walkthrough-only checks: the homepage walkthrough button is disabled.");
+      return;
+    }
     console.log("Checking desktop layouts and readability...");
     await validateDesktop(browser, clientErrors);
     await validateShortDesktop(browser, clientErrors);

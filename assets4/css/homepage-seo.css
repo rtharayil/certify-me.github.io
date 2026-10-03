@@ -1,4 +1,11 @@
 /* Main homepage only. Native disclosures keep answers available without JavaScript. */
+#hero-7 .hero-7-txt > p.p-lg {
+  font-family: 'Source Sans 3', sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+}
+
 .homepage-answers { padding: 72px 0; background: #f7f7fd; color: #252456; }
 .homepage-answers__header { max-width: 850px; margin: 0 auto 32px; text-align: center; }
 .homepage-answers__eyebrow { color: #54438d; font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
