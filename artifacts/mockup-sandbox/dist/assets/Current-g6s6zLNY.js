@@ -1,4 +1,4 @@
-import{r as H,j as O}from"./index-LFj5Q8YE.js";const Q=`<div id="credential-sample-dialog" class="credential-modal credential-university" role="dialog" aria-modal="true"
+import{r as H,j as O}from"./index-0b0AC5mf.js";const Q=`<div id="credential-sample-dialog" class="credential-modal credential-university" role="dialog" aria-modal="true"
      aria-labelledby="credential-modal-title" aria-describedby="credential-modal-description" hidden>
   <div class="credential-modal__backdrop" data-credential-close></div>
   <div class="credential-modal__panel" tabindex="-1">

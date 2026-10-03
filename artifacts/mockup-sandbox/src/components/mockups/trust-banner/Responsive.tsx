@@ -19,12 +19,12 @@ const sectors = [
 ];
 
 const institutions = [
-  { name: "University of Europe", file: "trust-logo-ue.png", width: 197 },
-  { name: "IEEE", file: "trust-logo-ieee.png", width: 169 },
-  { name: "Harvard Business Publishing", file: "trust-logo-harvard.png", width: 261 },
-  { name: "Project Management Institute", file: "trust-logo-pmi.png", width: 172 },
-  { name: "Indian Institute of Science", file: "trust-logo-iisc.png", width: 213 },
-  { name: "DCU", file: "trust-logo-dcu.png", width: 123 },
+  { name: "University of Europe", file: "trust-logo-ue-web.png", width: 179, height: 57 },
+  { name: "IEEE", file: "trust-logo-ieee-web.png", width: 296, height: 92 },
+  { name: "Harvard Business Publishing", file: "trust-logo-harvard-web.png", width: 296, height: 114 },
+  { name: "Project Management Institute", file: "trust-logo-pmi-web.png", width: 548, height: 170 },
+  { name: "Indian Institute of Science", file: "trust-logo-iisc-web.png", width: 548, height: 483 },
+  { name: "DCU", file: "trust-logo-dcu-web.png", width: 542, height: 548 },
 ];
 
 export function Responsive() {
@@ -110,7 +110,7 @@ export function Responsive() {
                 src={`/__mockup/images/${institution.file}`}
                 alt={institution.name}
                 width={institution.width}
-                height="88"
+                height={institution.height}
                 loading="lazy"
                 decoding="async"
               />

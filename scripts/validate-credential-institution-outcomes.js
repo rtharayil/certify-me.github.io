@@ -63,8 +63,8 @@ async function main() {
           const copy = element.querySelector(".credential-institution-outcomes__leadership").getBoundingClientRect();
           return {
             columnRatio: artwork.width / copy.width,
-            imageLeft: artwork.left,
-            copyRight: copy.right,
+            imageRight: artwork.right,
+            copyLeft: copy.left,
             imageBottom: artwork.bottom,
             copyTop: copy.top,
           };
@@ -72,7 +72,7 @@ async function main() {
         if (width > 991) {
           assert(Math.abs(layout.columnRatio - 7 / 3) < .02,
             "Match the six-layer approach's 70% image and 30% text layout");
-          assert(layout.copyRight < layout.imageLeft, "Keep text left and artwork right");
+          assert(layout.imageRight < layout.copyLeft, "Keep artwork left and text right");
         } else {
           assert(layout.imageBottom <= layout.copyTop, "Keep the stacked mobile layout");
         }

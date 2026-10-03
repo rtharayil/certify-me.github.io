@@ -15,6 +15,12 @@ Keep “A global learning community” at the same visual scale as “The instit
 
 **How to apply:** Compare their container widths, horizontal alignment and text/artwork proportions at the same viewport. Preserve the consistent H2 typography rather than compensating for a narrow container with an oversized headline.
 
+Keep the institution logos on one line at a reduced size, using genuine web-sourced logo artwork.
+
+**Why:** After requesting larger web-sourced logos, the user clarified: “reduce size of logo sould be on one line.”
+
+**How to apply:** Preserve a single row of all six logos, with smaller responsive sizing instead of wrapping. Retain the existing organizations and local copies of sourced assets.
+
 The trust banner's outer edges should blend into the homepage background, while its meaningful content remains sharp.
 
 **Why:** The user said “trust banner to blend in to bg, currently the edges are too sharp.”

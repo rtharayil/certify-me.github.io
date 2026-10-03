@@ -14,5 +14,6 @@
 - [Uploaded image cropping](uploaded-image-cropping.md) — scale preview coordinates to source pixels and preserve callouts outside the requested crop.
 - [Homepage layer artwork](homepage-layer-artwork.md) — all six illustrations blend into the background; soften edges without blurring meaningful content.
 - [Trust banner artwork](trust-banner-artwork.md) — owner now requests a native responsive recreation; preserve supplied content and background blending.
+- [Homepage section image placement](homepage-section-layout.md) — six-layer approach image goes right; institutional outcome image goes left on desktop.
 - [Homepage section CTAs](homepage-section-ctas.md) — every homepage content section needs a visible action; retain the maturity assessment CTA.
 - [Credential maturity positioning](credential-maturity-positioning.md) — use positive institutional capability framing, not negative sales qualification.

@@ -63,6 +63,12 @@ const base = `https://${process.env.REPLIT_DEV_DOMAIN}`;
           regions: [...section.querySelectorAll(".trust-responsive__regions > span")].map(node => node.childNodes[0].textContent.trim()),
           sectors: [...section.querySelectorAll(".trust-responsive__sectors li")].map(node => node.textContent.trim()),
           logos: [...section.querySelectorAll(".trust-responsive__logo img")].map(node => node.alt),
+          logoSizes: [...section.querySelectorAll(".trust-responsive__logo img")].map(node => ({
+            height: parseFloat(getComputedStyle(node).height),
+            fit: getComputedStyle(node).objectFit,
+            src: node.getAttribute("src"),
+            top: node.getBoundingClientRect().top,
+          })),
           withinViewport: [...section.querySelectorAll("h2, p, li, img, a")].every(node => {
             const bounds = node.getBoundingClientRect();
             return bounds.left >= -1 && bounds.right <= innerWidth + 1;
@@ -100,6 +106,11 @@ const base = `https://${process.env.REPLIT_DEV_DOMAIN}`;
       assert.deepEqual(data.regions, ["North America", "Europe", "Latin America", "Africa", "Middle East", "Asia Pacific"]);
       assert.deepEqual(data.sectors, ["Higher Education", "Government", "Enterprise", "Non-Profits", "Industry Partners"]);
       assert.deepEqual(data.logos, ["University of Europe", "IEEE", "Harvard Business Publishing", "Project Management Institute", "Indian Institute of Science", "DCU"]);
+      assert(data.logoSizes.every(logo => logo.height === (width > 991 ? 60 : 36) && logo.fit === "contain"
+        && /trust-logo-.+-web\.png$/.test(logo.src)),
+        "Use smaller web-sourced logos without distortion");
+      assert(data.logoSizes.every(logo => Math.abs(logo.top - data.logoSizes[0].top) <= 1),
+        "Keep all six logos on one line at every viewport width");
       assert.equal(data.font, data.heroFont);
       assert(data.size < data.heroSize, "Banner H2 must be smaller than the hero H1");
       assert(data.withinViewport, "Keep text, artwork and the demo button inside the viewport");

@@ -273,7 +273,7 @@ html:has(.trust-responsive-preview) { font-size: 16px; }
 .trust-responsive__logo {
   display: grid;
   min-width: 0;
-  min-height: 43px;
+  min-height: 76px;
   place-items: center;
   padding: .25rem .7rem;
   border-right: 1px solid rgba(82, 77, 153, .13);
@@ -286,8 +286,9 @@ html:has(.trust-responsive-preview) { font-size: 16px; }
 .trust-responsive__logo img {
   display: block;
   max-width: 100%;
-  width: auto;
-  max-height: 46px;
+  width: 100%;
+  height: 60px;
+  max-height: 60px;
   object-fit: contain;
   mix-blend-mode: multiply;
 }
@@ -367,18 +368,17 @@ html:has(.trust-responsive-preview) { font-size: 16px; }
   }
 
   .trust-responsive__institutions {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    row-gap: .2rem;
     margin-top: .6rem;
   }
 
   .trust-responsive__logo {
-    min-height: 46px;
-    padding-inline: .45rem;
+    min-height: 52px;
+    padding-inline: .15rem;
   }
 
-  .trust-responsive__logo:nth-child(3) {
-    border-right: 0;
+  .trust-responsive__logo img {
+    height: 36px;
+    max-height: 36px;
   }
 }
 

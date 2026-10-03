@@ -56,7 +56,7 @@ async function main() {
             dimensions: [image.naturalWidth, image.naturalHeight],
             explicitDimensions: [image.getAttribute("width"), image.getAttribute("height")],
             image: { left: imageBox.left, top: imageBox.top, right: imageBox.right },
-            heading: { left: headingBox.left, top: headingBox.top, bottom: headingBox.bottom },
+            heading: { left: headingBox.left, right: headingBox.right, top: headingBox.top, bottom: headingBox.bottom },
             copyWidth: element.querySelector(".credential-context__copy").getBoundingClientRect().width,
             imageWidth: imageBox.width,
             horizontalPadding: parseFloat(getComputedStyle(element).paddingLeft)
@@ -95,8 +95,8 @@ async function main() {
             `The infographic must fill the wider 70% image area at ${width}px.`);
           assert(Math.abs(metrics.imageWidth / metrics.copyWidth - 7 / 3) < .03,
             `Desktop must use 30% text and 70% image at ${width}px.`);
-          assert(metrics.image.right < metrics.heading.left && metrics.heading.top < metrics.image.top + 400,
-            `Desktop must place image on the left and text on the right at ${width}px.`);
+          assert(metrics.heading.right < metrics.image.left && metrics.heading.top < metrics.image.top + 400,
+            `Desktop must place text on the left and image on the right at ${width}px.`);
         } else {
           assert(metrics.image.top > metrics.heading.bottom, `Phone text must precede the illustration at ${width}px.`);
           assert(metrics.image.left >= 0 && metrics.image.right <= width + 1, "The phone illustration must fit the screen.");
