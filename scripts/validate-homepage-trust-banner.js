@@ -9,16 +9,16 @@ const root = path.resolve(__dirname, "..");
 const base = `https://${process.env.REPLIT_DEV_DOMAIN}`;
 
 (async () => {
-  const response = await fetch(`${base}/assets4/images/trusted-worldwide-global-learning-network.webp`);
+  const response = await fetch(`${base}/assets4/images/certifyme-global-impact-map.webp`);
   assert.equal(response.status, 200);
   assert(Buffer.from(await response.arrayBuffer()).equals(
-    fs.readFileSync(path.join(root, "assets4/images/trusted-worldwide-global-learning-network.webp"))));
+    fs.readFileSync(path.join(root, "assets4/images/certifyme-global-impact-map.webp"))));
   const browser = await chromium.launch({
     executablePath: execFileSync("which", ["chromium"], { encoding: "utf8" }).trim(),
     args: ["--no-sandbox", "--disable-dev-shm-usage"],
   });
   try {
-    for (const width of [320, 390, 768, 1024, 1440]) {
+    for (const width of [320, 390, 768, 1024, 1440, 1920]) {
       const page = await browser.newPage({ viewport: { width, height: 1100 }, ignoreHTTPSErrors: true });
       await page.route("**/*", async route => {
         const url = new URL(route.request().url());
@@ -33,54 +33,75 @@ const base = `https://${process.env.REPLIT_DEV_DOMAIN}`;
       await page.goto(base, { waitUntil: "domcontentloaded" });
       const banner = page.locator("#homepage-trust-banner");
       assert.equal(await banner.count(), 1);
-      await banner.scrollIntoViewIfNeeded();
+      await banner.locator(".trust-responsive__institutions").scrollIntoViewIfNeeded();
       await page.waitForFunction(() => {
-        const image = document.querySelector("#homepage-trust-banner img");
-        return image?.complete && image.naturalWidth > 0;
+        return [...document.querySelectorAll("#homepage-trust-banner img")]
+          .every(image => image.complete && image.naturalWidth > 0);
       });
-      await banner.locator("img").evaluate(image => image.decode());
+      await banner.locator("img").evaluateAll(images => Promise.all(images.map(image => image.decode())));
       const data = await banner.evaluate(section => {
-        const image = section.querySelector(".homepage-trust-banner__artwork img");
+        const image = section.querySelector(".trust-responsive__map img");
         const rect = image.getBoundingClientRect();
         const targets = ["institution-outcomes", "homepage-trust-banner", "credential-layers-intro"];
         const elements = targets.map(id => document.getElementById(id));
         return {
           dimensions: [image.naturalWidth, image.naturalHeight],
-          reservedDimensions: [Number(image.width), Number(image.height)],
           fit: getComputedStyle(image).objectFit,
           mask: getComputedStyle(image).maskImage,
           filter: getComputedStyle(image).filter,
           background: getComputedStyle(section).backgroundColor,
-          oldContent: Boolean(section.querySelector(".homepage-trust-banner__world, .homepage-trust-banner__header, .homepage-trust-banner__stats")),
-          fullSizeLink: image.parentElement.getAttribute("href") === image.getAttribute("src"),
+          oldContent: Boolean(section.querySelector(".homepage-trust-banner__artwork, .homepage-trust-banner__accessible-title")),
           alt: image.alt,
           g2Removed: !section.querySelector(".homepage-trust-banner__recognition"),
           ratio: rect.width / rect.height,
           order: elements.every((e, i) => !i || elements[i - 1].nextElementSibling === e),
-          outcomesGap: image.getBoundingClientRect().top
+          outcomesGap: section.getBoundingClientRect().top
             - document.querySelector("#institution-outcomes .credential-institution-outcomes__story").getBoundingClientRect().bottom,
           overflow: Math.max(document.documentElement.scrollWidth, document.body.scrollWidth) - innerWidth,
           heading: section.querySelector("h2").textContent.replace(/\s+/g, " ").trim(),
+          stats: [...section.querySelectorAll(".trust-responsive__stats strong")].map(node => node.textContent.trim()),
+          regions: [...section.querySelectorAll(".trust-responsive__regions > span")].map(node => node.childNodes[0].textContent.trim()),
+          sectors: [...section.querySelectorAll(".trust-responsive__sectors li")].map(node => node.textContent.trim()),
+          logos: [...section.querySelectorAll(".trust-responsive__logo img")].map(node => node.alt),
+          withinViewport: [...section.querySelectorAll("h2, p, li, img, a")].every(node => {
+            const bounds = node.getBoundingClientRect();
+            return bounds.left >= -1 && bounds.right <= innerWidth + 1;
+          }),
+          font: getComputedStyle(section.querySelector("h2")).fontFamily,
+          size: parseFloat(getComputedStyle(section.querySelector("h2")).fontSize),
+          heroFont: getComputedStyle(document.querySelector("h1")).fontFamily,
+          heroSize: parseFloat(getComputedStyle(document.querySelector("h1")).fontSize),
+          blendBackdrop: getComputedStyle(section).zIndex,
+          ctaAlignment: getComputedStyle(section.querySelector(".trust-responsive__action")).textAlign,
         };
       });
-      assert.deepEqual(data.dimensions, [2055, 765]);
-      assert(!data.oldContent, "Replace the old standalone heading, stats and map with the approved banner");
-      assert(data.fullSizeLink, "Allow the full banner to be viewed at readable size");
+      assert.deepEqual(data.dimensions, [960, 480]);
+      assert(!data.oldContent, "Replace the flattened artwork and hidden heading with native content");
       assert.equal(data.fit, "contain");
       assert.match(data.mask, /linear-gradient/, "Blend the banner perimeter into its background");
-      assert.equal(data.filter, "none", "Keep the banner text and logos sharp");
+      assert.equal(data.filter, "none", "Keep the map sharp");
       assert.equal(data.background, "rgba(0, 0, 0, 0)", "Use the continuous homepage background");
-      assert.match(data.alt, /5K\+/);
-      assert.match(data.alt, /1M\+/);
+      assert.deepEqual(data.stats, ["5K+", "1M+", "Global reach"]);
+      assert.deepEqual(data.regions, ["North America", "Europe", "Latin America", "Africa", "Middle East", "Asia Pacific"]);
+      assert.deepEqual(data.sectors, ["Higher Education", "Government", "Enterprise", "Non-Profits", "Industry Partners"]);
+      assert.deepEqual(data.logos, ["University of Europe", "IEEE", "Harvard Business Publishing", "Project Management Institute", "Indian Institute of Science", "DCU"]);
+      assert.equal(data.font, data.heroFont);
+      assert(data.size < data.heroSize, "Banner H2 must be smaller than the hero H1");
+      assert(data.withinViewport, "Keep text, artwork and the demo button inside the viewport");
+      assert.equal(data.blendBackdrop, "auto", "Allow map and logo artwork to blend with the shared background");
+      assert.equal(data.ctaAlignment, "left", "Preserve the approved left-aligned demo button");
       assert(data.g2Removed, "Remove the standalone G2 recognition block");
-      assert(Math.abs(data.ratio - 2055 / 765) < .01, "Do not distort or crop the supplied banner");
+      assert(Math.abs(data.ratio - 2) < .01, "Do not distort the map");
       assert(data.order, "Trust banner must lead directly into the six layers");
       assert(Math.abs(data.outcomesGap) <= 1, "Remove the gap between institutional outcomes and the trust banner");
       assert(data.overflow <= 1, "No page overflow");
       assert.equal(data.heading, "Trusted by Institutions. Used by Learners. Valued Worldwide.");
+      assert.equal(await banner.locator(".homepage-section-cta__link").count(), 1);
+      assert.equal(await banner.locator(".homepage-section-cta__link").getAttribute("href"), "https://info.certifyme.online/request-demo");
+      assert.match(await banner.locator(".homepage-section-cta__link").getAttribute("rel"), /noopener/);
       assert.equal(await page.locator("#badges").count(), 0);
       assert.equal(await page.locator("#why-certifyme").count(), 0);
-      console.log(`Passed ${width}px: banner preserved, G2/client strip/Why Institutions removed, no overflow.`);
+      console.log(`Passed ${width}px: native banner, preserved content/logos, matching H2 font, blended background, zero preceding gap, no overflow.`);
       await page.close();
     }
   } finally {
