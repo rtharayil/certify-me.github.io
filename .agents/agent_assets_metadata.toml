@@ -117,3 +117,17 @@ mtime_ms = 1791027553120
 storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/3135516d-039e-4fa4-998d-1a5c9f60075a/3d6576c1-cd91-42cd-bcec-c51393b93ebf"
 storage_version_token = "1791027617564762"
 content_type = "text/csv"
+
+[[outputs]]
+id = "NhcMG_JC-i2Ix7kknRNqk"
+uri = "file://.local/reports/enterprise-seo/evidence-analysis.pdf"
+type = "pdf"
+title = "CertifyMe attachment evidence analysis"
+description = "Approved metrics, anonymous case-study outcomes, dated security scopes and remaining confirmation items."
+logical_id = "a6ffcf9a-ccf7-4900-ac84-80e9c966cc65"
+content_hash = "sha256:4c2f1ebc41729be455fc148f6002532ef02ae86290e3022c95d63bc2c79442f1"
+size = 47144
+mtime_ms = 1791048504439
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/a6ffcf9a-ccf7-4900-ac84-80e9c966cc65/c523ceb7-fe62-46af-8f07-888496cd04d3"
+storage_version_token = "1791048534038721"
+content_type = "application/pdf"

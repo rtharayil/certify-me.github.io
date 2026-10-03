@@ -4,6 +4,7 @@ exclude:
   - vendor
   - node_modules
   - artifacts
+  - attached_assets
   - _archive
   - "*.sh"
   - Gemfile

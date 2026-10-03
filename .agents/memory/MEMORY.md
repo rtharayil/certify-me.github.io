@@ -18,4 +18,6 @@
 - [Homepage section CTAs](homepage-section-ctas.md) — every homepage content section needs a visible action; retain the maturity assessment CTA.
 - [Credential maturity positioning](credential-maturity-positioning.md) — use positive institutional capability framing, not negative sales qualification.
 - [Website typography](website-typography.md) — the user's Source Sans 3 choice is website-wide, not limited to the homepage introduction.
-- [Institutional SEO scope](institutional-seo-scope.md) — B2B university positioning; preserve brand and existing URLs, and require evidence before pruning or adding proof.
+- [Institutional SEO scope](institutional-seo-scope.md) — institutions first, higher education strongest; preserve brand, URLs, and evidence boundaries.
+- [Approved claims and anonymous customers](approved-claim-policy.md) — homepage metrics are authoritative; owner approves job figures and case outcomes but requires anonymous customers.
+- [Private evidence and builds](private-evidence-builds.md) — exclude uploads and verify stale build copies are not served; keep document-analysis tooling separate from the application.
