@@ -53,8 +53,8 @@ async function main() {
           };
         });
         assert.match(metrics.src, /^\/assets4\/images\/credential-institution-outcomes\.webp\?v=\d+$/);
-        assert.deepEqual(metrics.dimensions, [1254, 1254]);
-        assert(Math.abs(metrics.ratio - 1) < .01, "Preserve the complete supplied illustration.");
+        assert.deepEqual(metrics.dimensions, [1429, 1100]);
+        assert(Math.abs(metrics.ratio - 1429 / 1100) < .01, "Preserve the complete supplied illustration.");
         assert.match(metrics.mask, /linear-gradient/);
         assert.equal(metrics.filter, "none", "Keep the artwork's text sharp.");
         assert.match(metrics.alt, /[Cc]onceptual/);
