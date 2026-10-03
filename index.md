@@ -48,7 +48,7 @@ homepage_faqs:
 HeroEyebrow: "Institutional Credential Infrastructure"
 HeroTitle: "Digital Credentials That Connect Learning to Verifiable Skills and Careers"
 HeroLead: "Go beyond basic digital badges."
-HeroText: "CertifyMe is digital credential software for universities and institutions. Issue certificates and badges, connect achievements to skills, and organise Comprehensive Learner Records (CLR), with institutional governance."
+HeroText: "CertifyMe is digital credential infrastructure for universities and institutions—connecting trusted credentials, skills and learner records through standards-aligned technology and institutional governance."
 HeroPrimaryCTA: "Request Demo"
 HeroSecondaryCTA: "Sample Credential Walkthrough"
 HeroSupportingLine: "Built on open standards. Designed for institutional scale."
