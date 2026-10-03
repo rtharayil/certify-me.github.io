@@ -50,7 +50,7 @@
 .wsmenu > .wsmenu-list > li > a {
   color: #444 !important;
   font-weight: 500 !important;
-  font-size: 14.5px !important;
+  font-size: 15.5px !important;
   letter-spacing: -.1px;
 }
 .wsmenu > .wsmenu-list > li > a:hover {
@@ -62,7 +62,7 @@
 .wsmenu > .wsmenu-list > li > .wsmegamenu ul.link-list > li > a,
 .wsmenu > .wsmenu-list > li > .wsmegamenu.halfmenu ul.link-list > li > a,
 .wsmenu > .wsmenu-list > li > .wsmegamenu.w-75 ul.link-list > li > a {
-  font-size: 13.5px !important;
+  font-size: 14.5px !important;
   font-weight: 400 !important;
   color: #555 !important;
   line-height: 1.5 !important;
@@ -85,7 +85,7 @@
 /* Megamenu section titles */
 .wsmenu > .wsmenu-list > li > .wsmegamenu .title,
 .wsmenu > .wsmenu-list > li > .wsmegamenu.halfmenu .title {
-  font-size: 11px !important;
+  font-size: 12px !important;
   font-weight: 700 !important;
   letter-spacing: 1px !important;
   text-transform: uppercase !important;
@@ -99,7 +99,7 @@
   border-color: transparent !important;
   border-radius: 9px !important;
   font-weight: 700 !important;
-  font-size: 14px !important;
+  font-size: 15px !important;
   padding: 6px 22px 8px !important;
   box-shadow: 0 4px 16px rgba(40,43,117,.32) !important;
   transition: box-shadow .25s ease, transform .2s ease !important;

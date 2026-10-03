@@ -17,3 +17,18 @@ h1, h2, h3, h4, h5, h6,
 h2.statistic-number {
   font-family: 'Manrope', sans-serif !important;
 }
+
+/* Footer text: one pixel larger, preserving the existing size hierarchy. */
+#footer-3 .footer-links a,
+#footer-3 address a {
+  font-size: 14px !important;
+}
+
+#footer-3 .footer-links > p.s-17 {
+  font-size: 15px !important;
+}
+
+#footer-3 .bottom-footer p,
+#footer-3 .bottom-footer a {
+  font-size: 13px !important;
+}
