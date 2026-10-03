@@ -250,12 +250,21 @@
 }
 
 .trust-responsive__logo {
+  --trust-logo-width: clamp(44px, 11.3vw, 160px);
+  --trust-logo-height: clamp(14px, 3.4vw, 48px);
   display: grid;
   min-width: 0;
-  min-height: 76px;
+  min-height: clamp(44px, 7vw, 96px);
   place-items: center;
   padding: .25rem .7rem;
   border-right: 1px solid rgba(82, 77, 153, .13);
+}
+
+/* Compact seals need more height than wide wordmarks for similar visual weight. */
+.trust-responsive__logo:nth-child(5),
+.trust-responsive__logo:nth-child(6) {
+  --trust-logo-width: clamp(32px, 6.3vw, 94px);
+  --trust-logo-height: clamp(28px, 5.8vw, 84px);
 }
 
 .trust-responsive__logo:last-child {
@@ -265,9 +274,8 @@
 .trust-responsive__logo img {
   display: block;
   max-width: 100%;
-  width: 100%;
-  height: 60px;
-  max-height: 60px;
+  width: var(--trust-logo-width);
+  height: var(--trust-logo-height);
   object-fit: contain;
   mix-blend-mode: multiply;
 }
@@ -347,13 +355,7 @@
   }
 
   .trust-responsive__logo {
-    min-height: 52px;
     padding-inline: .15rem;
-  }
-
-  .trust-responsive__logo img {
-    height: 36px;
-    max-height: 36px;
   }
 }
 

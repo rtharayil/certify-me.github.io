@@ -67,7 +67,7 @@ const base = `https://${process.env.REPLIT_DEV_DOMAIN}`;
             height: parseFloat(getComputedStyle(node).height),
             fit: getComputedStyle(node).objectFit,
             src: node.getAttribute("src"),
-            top: node.getBoundingClientRect().top,
+            centerY: node.getBoundingClientRect().top + node.getBoundingClientRect().height / 2,
           })),
           withinViewport: [...section.querySelectorAll("h2, p, li, img, a")].every(node => {
             const bounds = node.getBoundingClientRect();
@@ -106,10 +106,13 @@ const base = `https://${process.env.REPLIT_DEV_DOMAIN}`;
       assert.deepEqual(data.regions, ["North America", "Europe", "Latin America", "Africa", "Middle East", "Asia Pacific"]);
       assert.deepEqual(data.sectors, ["Higher Education", "Government", "Enterprise", "Non-Profits", "Industry Partners"]);
       assert.deepEqual(data.logos, ["University of Europe", "IEEE", "Harvard Business Publishing", "Project Management Institute", "Indian Institute of Science", "DCU"]);
-      assert(data.logoSizes.every(logo => logo.height === (width > 991 ? 60 : 36) && logo.fit === "contain"
+      assert(data.logoSizes.every(logo => logo.height > 0 && logo.fit === "contain"
         && /trust-logo-.+-web\.png$/.test(logo.src)),
-        "Use smaller web-sourced logos without distortion");
-      assert(data.logoSizes.every(logo => Math.abs(logo.top - data.logoSizes[0].top) <= 1),
+        "Use web-sourced logos without distortion");
+      assert(data.logoSizes.slice(0, 4).every(logo => logo.height <= 48)
+        && data.logoSizes.slice(4).every(logo => logo.height > data.logoSizes[0].height),
+        "Reduce wide wordmarks and enlarge IISc/DCU for similar visual weight");
+      assert(data.logoSizes.every(logo => Math.abs(logo.centerY - data.logoSizes[0].centerY) <= 1),
         "Keep all six logos on one line at every viewport width");
       assert.equal(data.font, data.heroFont);
       assert(data.size < data.heroSize, "Banner H2 must be smaller than the hero H1");

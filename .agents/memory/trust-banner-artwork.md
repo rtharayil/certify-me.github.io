@@ -19,7 +19,7 @@ Keep the institution logos on one line at a reduced size, using genuine web-sour
 
 **Why:** After requesting larger web-sourced logos, the user clarified: “reduce size of logo sould be on one line.”
 
-**How to apply:** Preserve a single row of all six logos, with smaller responsive sizing instead of wrapping. Retain the existing organizations and local copies of sourced assets.
+**How to apply:** Preserve a single row of all six logos, with smaller responsive sizing instead of wrapping. Retain the existing organizations and local copies of sourced assets. Balance visible artwork rather than giving every logo an identical height: the user requested smaller UE, IEEE, HBP and PMI wordmarks and larger IISc and DCU marks so they look similar in visual weight.
 
 The trust banner's outer edges should blend into the homepage background, while its meaningful content remains sharp.
 
