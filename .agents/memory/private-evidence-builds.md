@@ -9,6 +9,12 @@ Treat confidential evidence uploads as analysis input, not publishable website a
 
 **How to apply:** Preserve original uploads, exclude their directory from website builds, remove only stale generated copies when necessary, and verify the actual HTTP response for private-file routes after rebuilding. Keep raw extracted pages and sensitive text in temporary or excluded analysis locations.
 
+Use harmless synthetic fixtures for upload-exposure regression checks, never the actual confidential evidence.
+
+**Why:** The owner explicitly requires original uploads to be preserved and the confidential SOC report not to be used as a test fixture.
+
+**How to apply:** Isolate test source, caches, output, and server processes in temporary directories; test stale output and skipped-build startup as well as fresh builds.
+
 Ad-hoc Python package installation in a Ruby/Jekyll project can scaffold an unrelated Python application and alter system dependencies even when installation fails.
 
 **Why:** The package installer initialized application files before failing on its Python environment during document analysis.

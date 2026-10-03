@@ -23,6 +23,10 @@ args = "Start application"
 task = "workflow.run"
 args = "comparison-pages"
 
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "private-uploads"
+
 [[workflows.workflow]]
 name = "Start application"
 author = "agent"
@@ -42,6 +46,17 @@ author = "agent"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "bundle exec ruby scripts/validate-comparison-pages.rb && npm run test:comparison-mobile"
+
+[workflows.workflow.metadata]
+isValidation = true
+
+[[workflows.workflow]]
+name = "private-uploads"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run test:private-uploads"
 
 [workflows.workflow.metadata]
 isValidation = true

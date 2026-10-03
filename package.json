@@ -4,7 +4,8 @@
   "description": "## Validation",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test:comparison-mobile",
+    "test": "npm run test:private-uploads && npm run test:comparison-mobile",
+    "test:private-uploads": "bundle exec ruby scripts/validate-private-uploads.rb",
     "test:comparison-mobile": "node scripts/validate-comparison-mobile.js"
   },
   "keywords": [],
