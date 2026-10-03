@@ -58,6 +58,24 @@ async function main() {
         assert.match(metrics.mask, /linear-gradient/);
         assert.equal(metrics.filter, "none", "Keep the artwork's text sharp.");
         assert.match(metrics.alt, /[Cc]onceptual/);
+        const layout = await section.evaluate(element => {
+          const artwork = element.querySelector(".credential-institution-outcomes__artwork").getBoundingClientRect();
+          const copy = element.querySelector(".credential-institution-outcomes__leadership").getBoundingClientRect();
+          return {
+            columnRatio: artwork.width / copy.width,
+            imageRight: artwork.right,
+            copyLeft: copy.left,
+            imageBottom: artwork.bottom,
+            copyTop: copy.top,
+          };
+        });
+        if (width > 680) {
+          assert(Math.abs(layout.columnRatio - 1.5) < .02,
+            "Use 60% image and 40% text in the side-by-side layout");
+          assert(layout.imageRight < layout.copyLeft, "Keep artwork left and text right");
+        } else {
+          assert(layout.imageBottom <= layout.copyTop, "Keep the stacked mobile layout");
+        }
         for (const target of [
           ".credential-institution-outcomes__section-heading",
           ".credential-institution-outcomes__leadership",
