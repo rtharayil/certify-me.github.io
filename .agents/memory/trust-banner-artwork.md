@@ -9,6 +9,12 @@ The owner approved the redesigned responsive native trust banner for the homepag
 
 **How to apply:** Preserve the supplied headline, figures, named regions, sectors and institution logos in the native responsive layout. Follow the homepage's hero-relative H2 typography, and do not revert to the flattened image. This choice applies to this banner, not every illustration on the site.
 
+Keep “A global learning community” at the same visual scale as “The institutional outcome.”
+
+**Why:** The user said the two sections were not the same size and requested a matching redesign.
+
+**How to apply:** Compare their container widths, horizontal alignment and text/artwork proportions at the same viewport. Preserve the consistent H2 typography rather than compensating for a narrow container with an oversized headline.
+
 The trust banner's outer edges should blend into the homepage background, while its meaningful content remains sharp.
 
 **Why:** The user said “trust banner to blend in to bg, currently the edges are too sharp.”

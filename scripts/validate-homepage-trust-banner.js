@@ -18,7 +18,7 @@ const base = `https://${process.env.REPLIT_DEV_DOMAIN}`;
     args: ["--no-sandbox", "--disable-dev-shm-usage"],
   });
   try {
-    for (const width of [320, 390, 768, 1024, 1440, 1920]) {
+    for (const width of [320, 390, 768, 991, 1024, 1440, 1920]) {
       const page = await browser.newPage({ viewport: { width, height: 1100 }, ignoreHTTPSErrors: true });
       await page.route("**/*", async route => {
         const url = new URL(route.request().url());
@@ -73,6 +73,21 @@ const base = `https://${process.env.REPLIT_DEV_DOMAIN}`;
           heroSize: parseFloat(getComputedStyle(document.querySelector("h1")).fontSize),
           blendBackdrop: getComputedStyle(section).zIndex,
           ctaAlignment: getComputedStyle(section.querySelector(".trust-responsive__action")).textAlign,
+          alignment: (() => {
+            const trust = section.querySelector(".trust-responsive__inner").getBoundingClientRect();
+            const reference = document.querySelector(".credential-institution-outcomes__inner").getBoundingClientRect();
+            const copy = section.querySelector(".trust-responsive__copy").getBoundingClientRect();
+            const map = section.querySelector(".trust-responsive__map").getBoundingClientRect();
+            return {
+              widthDifference: trust.width - reference.width,
+              leftDifference: trust.left - reference.left,
+              columnRatio: map.width / copy.width,
+              copyRight: copy.right,
+              mapLeft: map.left,
+              copyBottom: copy.bottom,
+              mapTop: map.top,
+            };
+          })(),
         };
       });
       assert.deepEqual(data.dimensions, [960, 480]);
@@ -90,6 +105,18 @@ const base = `https://${process.env.REPLIT_DEV_DOMAIN}`;
       assert(data.withinViewport, "Keep text, artwork and the demo button inside the viewport");
       assert.equal(data.blendBackdrop, "auto", "Allow map and logo artwork to blend with the shared background");
       assert.equal(data.ctaAlignment, "left", "Preserve the approved left-aligned demo button");
+      assert(Math.abs(data.alignment.widthDifference) <= 1
+        && Math.abs(data.alignment.leftDifference) <= 1,
+        "Match the institutional outcome's container width and horizontal alignment");
+      if (width > 991) {
+        assert(Math.abs(data.alignment.columnRatio - 7 / 3) < .02,
+          "Match the institutional outcome's text and artwork proportions");
+        assert(data.alignment.copyRight < data.alignment.mapLeft,
+          "Keep desktop text on the left and artwork on the right");
+      } else {
+        assert(data.alignment.copyBottom <= data.alignment.mapTop,
+          "Stack the trust section cleanly on mobile and tablet");
+      }
       assert(data.g2Removed, "Remove the standalone G2 recognition block");
       assert(Math.abs(data.ratio - 2) < .01, "Do not distort the map");
       assert(data.order, "Trust banner must lead directly into the six layers");

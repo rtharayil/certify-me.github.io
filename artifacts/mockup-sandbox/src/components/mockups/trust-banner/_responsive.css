@@ -1,30 +1,69 @@
+/* Match the main app's headline font without affecting other preview components. */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+.trust-responsive-preview {
+  min-height: 100dvh;
+  background: linear-gradient(160deg, #ece9fd 0%, #f0f1ff 40%, #edf2ff 70%, #f5f7ff 100%);
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}
+
+/* Extracted responsive root sizes, scoped to this preview rather than other mockups. */
+html:has(.trust-responsive-preview) { font-size: 16px; }
+@media (min-width: 1200px) {
+  html:has(.trust-responsive-preview) { font-size: 115.6%; }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  html:has(.trust-responsive-preview) { font-size: 85%; }
+}
+@media (min-width: 321px) and (max-width: 389.98px) {
+  html:has(.trust-responsive-preview) { font-size: 97.5%; }
+}
+@media (max-width: 320.98px) {
+  html:has(.trust-responsive-preview) { font-size: 87.5%; }
+}
+
+.trust-responsive-preview .trust-responsive__copy h2 {
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.65rem, 2.5vw, 2.3rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.13;
+}
+@media (max-width: 991px) {
+  .trust-responsive-preview .trust-responsive__copy h2 {
+    font-size: clamp(1.5rem, 4vw, 2.1rem);
+    letter-spacing: -.7px;
+  }
+}
+@media (max-width: 680px) {
+  .trust-responsive-preview .trust-responsive__copy h2 {
+    font-size: clamp(1.5rem, 6vw, 1.9rem);
+    letter-spacing: -.5px;
+  }
+}
+
 .trust-responsive {
   --trust-ink: #28264f;
   --trust-muted: #62627d;
   --trust-accent: #4c48a4;
   --trust-line: rgba(82, 77, 153, .16);
-  min-height: 100dvh;
   color: var(--trust-ink);
-  background:
-    radial-gradient(ellipse 75% 66% at 75% 5%, rgba(113, 104, 203, .09), transparent 69%),
-    linear-gradient(155deg, #efedfc 0%, #f1f2ff 50%, #f4f6ff 100%);
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
-
-.trust-responsive .trust-responsive__section {
-  padding: clamp(2.15rem, 4.2vw, 3.6rem) clamp(1rem, 3.5vw, 3rem);
+  padding: 1rem 1rem 1.5rem;
   background: transparent;
+  isolation: auto;
 }
 
 .trust-responsive .trust-responsive__inner {
-  width: min(100%, 1260px);
+  width: min(100%, 1600px);
+  margin-inline: auto;
 }
 
 .trust-responsive__main {
   display: grid;
-  grid-template-columns: minmax(300px, .84fr) minmax(0, 1.16fr);
+  grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
   align-items: center;
-  gap: clamp(1.25rem, 3.4vw, 3.5rem);
+  gap: clamp(.75rem, 1.5vw, 1.5rem);
 }
 
 .trust-responsive__copy {
@@ -55,12 +94,12 @@
   max-width: 600px;
   margin: 0;
   color: var(--trust-ink);
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: clamp(2.15rem, 3.45vw, 3.55rem);
-  font-weight: 800;
-  letter-spacing: -.055em;
-  line-height: 1.04;
   text-wrap: balance;
+}
+
+.trust-responsive__action {
+  margin-top: 0;
+  text-align: left;
 }
 
 .trust-responsive__summary {
@@ -253,9 +292,9 @@
   mix-blend-mode: multiply;
 }
 
-@media (max-width: 760px) {
-  .trust-responsive .trust-responsive__section {
-    padding: 2rem 1rem 2.25rem;
+@media (max-width: 991px) {
+  .trust-responsive {
+    padding: 1rem .75rem 1.5rem;
   }
 
   .trust-responsive__main {
@@ -281,18 +320,20 @@
 
   .trust-responsive .trust-responsive__copy h2 {
     max-width: 610px;
-    font-size: clamp(2rem, 8.5vw, 3rem);
-    line-height: 1.04;
   }
 
   .trust-responsive__summary {
     margin: .75rem 0 .9rem;
   }
 
-  .trust-responsive .trust-responsive__cta {
+  .trust-responsive__action {
     grid-column: 1 / -1;
     justify-self: start;
     margin-bottom: .95rem;
+  }
+
+  .trust-responsive .trust-responsive__cta {
+    width: auto;
   }
 
   .trust-responsive__stats {
@@ -305,8 +346,8 @@
   }
 
   .trust-responsive__map {
-    width: min(100%, 600px);
-    margin-inline: auto;
+    width: 100%;
+    margin: 0;
   }
 
   .trust-responsive__regions {
@@ -341,13 +382,15 @@
   }
 }
 
-@media (max-width: 380px) {
-  .trust-responsive .trust-responsive__section {
-    padding-inline: .75rem;
+@media (max-width: 680px) {
+  .trust-responsive {
+    padding: 1rem .75rem 1.5rem;
   }
+}
 
-  .trust-responsive .trust-responsive__copy h2 {
-    font-size: clamp(1.82rem, 8.25vw, 2.1rem);
+@media (max-width: 380px) {
+  .trust-responsive {
+    padding-inline: .75rem;
   }
 
   .trust-responsive__stats {
@@ -383,5 +426,11 @@
 @media (prefers-reduced-motion: reduce) {
   .trust-responsive .trust-responsive__cta {
     transition: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .trust-responsive {
+    padding-inline: .7rem;
   }
 }

@@ -4,11 +4,12 @@
   --trust-muted: #62627d;
   --trust-accent: #4c48a4;
   --trust-line: rgba(82, 77, 153, .16);
-  padding: clamp(2.15rem, 4.2vw, 3.6rem) clamp(1rem, 3.5vw, 3rem);
+  padding: 1rem 1rem 1.5rem;
   color: var(--trust-ink);
   background: transparent;
-  /* The theme's section z-index isolates multiply-blended artwork from the shared background. */
+  /* Keep multiply-blended artwork in the shared homepage background's stacking context. */
   z-index: auto;
+  isolation: auto;
   scroll-margin-top: 100px;
 }
 
@@ -31,15 +32,15 @@
 }
 
 .trust-responsive__inner {
-  width: min(100%, 1260px);
+  width: min(100%, 1600px);
   margin-inline: auto;
 }
 
 .trust-responsive__main {
   display: grid;
-  grid-template-columns: minmax(300px, .84fr) minmax(0, 1.16fr);
+  grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
   align-items: center;
-  gap: clamp(1.25rem, 3.4vw, 3.5rem);
+  gap: clamp(.75rem, 1.5vw, 1.5rem);
 }
 
 .trust-responsive__copy {
@@ -271,9 +272,9 @@
   mix-blend-mode: multiply;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 991px) {
   .homepage-trust-banner.trust-responsive {
-    padding: 2rem 1rem 2.25rem;
+    padding: 1rem .75rem 1.5rem;
   }
 
   .trust-responsive__main {
@@ -321,8 +322,8 @@
   }
 
   .trust-responsive__map {
-    width: min(100%, 600px);
-    margin-inline: auto;
+    width: 100%;
+    margin: 0;
   }
 
   .trust-responsive__regions {
@@ -354,6 +355,12 @@
 
   .trust-responsive__logo:nth-child(3) {
     border-right: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .homepage-trust-banner.trust-responsive {
+    padding: 1rem .75rem 1.5rem;
   }
 }
 
@@ -389,6 +396,12 @@
 
   .trust-responsive__sectors li {
     font-size: .72rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .homepage-trust-banner.trust-responsive {
+    padding-inline: .7rem;
   }
 }
 

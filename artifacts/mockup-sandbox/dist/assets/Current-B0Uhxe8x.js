@@ -1,4 +1,4 @@
-import{j as e}from"./index-BlVDXdRY.js";/* empty css               */const a=`<section class="homepage-trust-banner homepage-trust-banner--image" id="homepage-trust-banner" aria-labelledby="homepage-trust-banner-title">
+import{j as e}from"./index-LFj5Q8YE.js";/* empty css               */const a=`<section class="homepage-trust-banner homepage-trust-banner--image" id="homepage-trust-banner" aria-labelledby="homepage-trust-banner-title">
   <div class="homepage-trust-banner__inner">
     <h2 class="homepage-trust-banner__accessible-title" id="homepage-trust-banner-title">Trusted by Institutions. Used by Learners. Valued Worldwide.</h2>
     <figure class="homepage-trust-banner__artwork">

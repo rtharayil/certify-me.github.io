@@ -19,34 +19,35 @@ const sectors = [
 ];
 
 const institutions = [
-  { name: "University of Europe", file: "trust-logo-ue.png" },
-  { name: "IEEE", file: "trust-logo-ieee.png" },
-  { name: "Harvard Business Publishing", file: "trust-logo-harvard.png" },
-  { name: "Project Management Institute", file: "trust-logo-pmi.png" },
-  { name: "Indian Institute of Science", file: "trust-logo-iisc.png" },
-  { name: "DCU", file: "trust-logo-dcu.png" },
+  { name: "University of Europe", file: "trust-logo-ue.png", width: 197 },
+  { name: "IEEE", file: "trust-logo-ieee.png", width: 169 },
+  { name: "Harvard Business Publishing", file: "trust-logo-harvard.png", width: 261 },
+  { name: "Project Management Institute", file: "trust-logo-pmi.png", width: 172 },
+  { name: "Indian Institute of Science", file: "trust-logo-iisc.png", width: 213 },
+  { name: "DCU", file: "trust-logo-dcu.png", width: 123 },
 ];
 
 export function Responsive() {
   return (
-    <div className="trust-responsive homepage-audited">
-      <section
-        className="homepage-trust-banner trust-responsive__section"
-        id="homepage-trust-banner"
-        aria-labelledby="trust-responsive-title"
-      >
-        <div className="homepage-trust-banner__inner trust-responsive__inner">
-          <div className="trust-responsive__main">
-            <header className="trust-responsive__copy">
-              <p className="trust-responsive__eyebrow">A global learning community</p>
-              <h2 id="trust-responsive-title">
-                Trusted by Institutions. Used by Learners. Valued Worldwide.
-              </h2>
-              <p className="trust-responsive__summary">
-                Powering a more open, skilled and opportunity-ready world.
-              </p>
+    <div className="trust-responsive-preview">
+    <section
+      className="homepage-trust-banner trust-responsive"
+      id="homepage-trust-banner"
+      aria-labelledby="homepage-trust-banner-title"
+    >
+      <div className="trust-responsive__inner">
+        <div className="trust-responsive__main">
+          <header className="trust-responsive__copy">
+            <p className="trust-responsive__eyebrow">A global learning community</p>
+            <h2 id="homepage-trust-banner-title">
+              Trusted by Institutions. Used by Learners. Valued Worldwide.
+            </h2>
+            <p className="trust-responsive__summary">
+              Powering a more open, skilled and opportunity-ready world.
+            </p>
+            <div className="homepage-section-cta trust-responsive__action">
               <a
-                className="trust-responsive__cta"
+                className="homepage-section-cta__link trust-responsive__cta"
                 href="https://info.certifyme.online/request-demo"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -54,67 +55,70 @@ export function Responsive() {
               >
                 Request a Demo <span aria-hidden="true">→</span>
               </a>
-              <ul className="trust-responsive__stats" aria-label="Platform reach">
-                <li>
-                  <strong>5K+</strong>
-                  <span>Institutions trust our platform</span>
-                </li>
-                <li>
-                  <strong>1M+</strong>
-                  <span>Learners worldwide</span>
-                </li>
-                <li>
-                  <strong className="trust-responsive__global">Global reach</strong>
-                  <span>Across diverse regions and sectors</span>
-                </li>
-              </ul>
-            </header>
+            </div>
+            <ul className="trust-responsive__stats" aria-label="Platform reach">
+              <li>
+                <strong>5K+</strong>
+                <span>Institutions trust our platform</span>
+              </li>
+              <li>
+                <strong>1M+</strong>
+                <span>Learners worldwide</span>
+              </li>
+              <li>
+                <strong className="trust-responsive__global">Global reach</strong>
+                <span>Across diverse regions and sectors</span>
+              </li>
+            </ul>
+          </header>
 
-            <figure className="trust-responsive__map">
+          <figure className="trust-responsive__map">
+            <img
+              src="/__mockup/images/trust-world-map.webp"
+              alt="World map showing North America, Europe, Latin America, Africa, the Middle East and Asia Pacific"
+              width="960"
+              height="480"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption className="trust-responsive__regions">
+              {regions.map((region, index) => (
+                <span key={region}>
+                  {region}
+                  {index < regions.length - 1 && (
+                    <span className="trust-responsive__region-separator" aria-hidden="true">
+                      ·
+                    </span>
+                  )}
+                </span>
+              ))}
+            </figcaption>
+          </figure>
+        </div>
+
+        <section className="trust-responsive__sectors" aria-labelledby="trust-sectors-title">
+          <h3 id="trust-sectors-title">Trusted across sectors</h3>
+          <ul>
+            {sectors.map((sector) => <li key={sector}>{sector}</li>)}
+          </ul>
+        </section>
+
+        <div className="trust-responsive__institutions" aria-label="Trusted institutions">
+          {institutions.map((institution) => (
+            <div className="trust-responsive__logo" key={institution.file}>
               <img
-                src="/__mockup/images/trust-world-map.webp"
-                alt="World map showing North America, Europe, Latin America, Africa, the Middle East and Asia Pacific"
-                width="960"
-                height="480"
-                loading="eager"
+                src={`/__mockup/images/${institution.file}`}
+                alt={institution.name}
+                width={institution.width}
+                height="88"
+                loading="lazy"
                 decoding="async"
               />
-              <figcaption className="trust-responsive__regions">
-                {regions.map((region, index) => (
-                  <span key={region}>
-                    {region}
-                    {index < regions.length - 1 && (
-                      <span className="trust-responsive__region-separator" aria-hidden="true">
-                        ·
-                      </span>
-                    )}
-                  </span>
-                ))}
-              </figcaption>
-            </figure>
-          </div>
-
-          <section className="trust-responsive__sectors" aria-labelledby="trust-sectors-title">
-            <h3 id="trust-sectors-title">Trusted across sectors</h3>
-            <ul>
-              {sectors.map((sector) => <li key={sector}>{sector}</li>)}
-            </ul>
-          </section>
-
-          <div className="trust-responsive__institutions" aria-label="Trusted institutions">
-            {institutions.map((institution) => (
-              <div className="trust-responsive__logo" key={institution.file}>
-                <img
-                  src={`/__mockup/images/${institution.file}`}
-                  alt={institution.name}
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
     </div>
   );
 }

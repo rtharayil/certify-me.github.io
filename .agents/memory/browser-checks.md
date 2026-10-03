@@ -9,6 +9,12 @@ If Playwright fails to launch because its bundled Chromium headless shell is mis
 
 **How to apply:** Run `which chromium` and use the resulting path as Playwright's `executablePath` for local responsive and interaction checks. This is a test-environment workaround, not an app dependency.
 
+Shell verification commands do not inherit the managed preview workflow's runtime configuration.
+
+**Why:** A working sandbox preview could not be built from an ordinary shell until its workflow-supplied runtime metadata was also provided. This looked like a broken build environment even though the preview and dependencies worked.
+
+**How to apply:** Check declared configuration requirements and workflow status before attempting dependency repairs. Supply the matching non-secret workflow metadata for one-off build checks; do not alter application defaults to bypass required configuration.
+
 Keep a CDP touch-input session alive for the lifetime of its emulated phone page; let closing the browser context clean it up.
 
 **Why:** In the installed Chromium, detaching a secondary CDP session after dispatching touch input reset the page's touch emulation: the primary pointer changed from coarse to fine and maxTouchPoints became zero. This made later landscape assertions exercise desktop mode even though the context was created as a phone.
