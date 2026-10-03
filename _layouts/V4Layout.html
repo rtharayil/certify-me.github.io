@@ -11,7 +11,7 @@
     <div id="page" class="page font--jakarta">
         {% include V4NewLook/navbar.html %}
 
-        <main id="main-content">
+        <main id="main-content"{% if page.url == "/" %} tabindex="-1"{% endif %}>
         <div class="credential-hero-flow">
             {% include V4NewLook/heroSection.html %}
             {% include V4NewLook/credential-context.html %}
@@ -49,6 +49,7 @@
 
                 {% include V4NewLook/scripts.html %}
         <script defer src="/assets4/js/credential-sample-modal.js?v={{ site.time | date: '%s' }}"></script>
+        {% if page.url == "/" %}<script defer src="/assets4/js/homepage-ux.js"></script>{% endif %}
 
     </div>
 

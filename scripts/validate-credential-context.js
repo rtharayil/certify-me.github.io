@@ -86,7 +86,8 @@ async function main() {
         assert(metrics.topPadding <= 20, "Keep the opening spacing compact.");
         assert(metrics.sharedBackground && metrics.contiguous, "Hero and six-layer section must share one continuous background.");
         assert(metrics.alt.length > 20, "The illustration needs useful alternative text.");
-        assert.deepEqual(metrics.dimensions, [1672, 941], "Use the full new infographic without cropping.");
+        assert(metrics.dimensions[0] > 0 && Math.abs(metrics.dimensions[0] / metrics.dimensions[1] - 1672 / 941) < .01,
+          "Responsive overview artwork must retain its original aspect ratio without cropping.");
         assert.deepEqual(metrics.explicitDimensions, ["1672", "941"], "Reserve intrinsic image space to avoid layout shifts.");
         assert(metrics.headingVisible && metrics.overflow <= 1, `No hidden headline or horizontal overflow at ${width}px.`);
         if (width >= 1024) {

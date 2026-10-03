@@ -330,7 +330,15 @@ async function assertPhoneReadingPosition(dialog, label) {
     // Long paragraphs need scrolling; the heading and opening lines must be unobscured.
     const blocked = [titleRect, proseStartRect].some((readingRect) => pinned.some((item) => {
       if (item === title || item === prose) return false;
-      return overlaps(readingRect, item.getBoundingClientRect());
+      const bounds = item.getBoundingClientRect();
+      if (!overlaps(readingRect, bounds)) return false;
+      // Native closed details can retain child layout boxes without painting them.
+      // Confirm actual overlap at the painted intersection, not just a stale box.
+      const hit = document.elementFromPoint(
+        (Math.max(readingRect.left, bounds.left) + Math.min(readingRect.right, bounds.right)) / 2,
+        (Math.max(readingRect.top, bounds.top) + Math.min(readingRect.bottom, bounds.bottom)) / 2,
+      );
+      return Boolean(hit && (hit === item || item.contains(hit)));
     }));
     return {
       title: { top: titleRect.top, bottom: titleRect.bottom },
@@ -542,7 +550,7 @@ async function assertWorkspaceStartsNearHeader(dialog, label) {
   }
   const gap = await dialog.evaluate((element) => {
     const header = element.querySelector(".credential-modal__header");
-    const workspace = element.querySelector(".credential-university__workspace")
+    const workspace = element.querySelector(".credential-readable__workspace, .credential-university__workspace")
       || element.querySelector("main");
     if (!header || !workspace) return null;
     return workspace.getBoundingClientRect().top - header.getBoundingClientRect().bottom;

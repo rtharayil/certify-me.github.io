@@ -9,10 +9,10 @@ const root = path.resolve(__dirname, "..");
 const base = `https://${process.env.REPLIT_DEV_DOMAIN}`;
 
 (async () => {
-  const response = await fetch(`${base}/assets4/images/certifyme-global-impact-map.webp`);
+  const response = await fetch(`${base}/assets4/images/certifyme-global-regions-map.png`);
   assert.equal(response.status, 200);
   assert(Buffer.from(await response.arrayBuffer()).equals(
-    fs.readFileSync(path.join(root, "assets4/images/certifyme-global-impact-map.webp"))));
+    fs.readFileSync(path.join(root, "attached_assets/Global_Regions_Map_Infographic_1791018496405.png"))));
   const browser = await chromium.launch({
     executablePath: execFileSync("which", ["chromium"], { encoding: "utf8" }).trim(),
     args: ["--no-sandbox", "--disable-dev-shm-usage"],
@@ -50,6 +50,9 @@ const base = `https://${process.env.REPLIT_DEV_DOMAIN}`;
           mask: getComputedStyle(image).maskImage,
           filter: getComputedStyle(image).filter,
           background: getComputedStyle(section).backgroundColor,
+          marginTop: parseFloat(getComputedStyle(section).marginTop),
+          marginBottom: parseFloat(getComputedStyle(section).marginBottom),
+          mapSrc: image.getAttribute("src"),
           oldContent: Boolean(section.querySelector(".homepage-trust-banner__artwork, .homepage-trust-banner__accessible-title")),
           alt: image.alt,
           g2Removed: !section.querySelector(".homepage-trust-banner__recognition"),
@@ -60,7 +63,7 @@ const base = `https://${process.env.REPLIT_DEV_DOMAIN}`;
           overflow: Math.max(document.documentElement.scrollWidth, document.body.scrollWidth) - innerWidth,
           heading: section.querySelector("h2").textContent.replace(/\s+/g, " ").trim(),
           stats: [...section.querySelectorAll(".trust-responsive__stats strong")].map(node => node.textContent.trim()),
-          regions: [...section.querySelectorAll(".trust-responsive__regions > span")].map(node => node.childNodes[0].textContent.trim()),
+          caption: section.querySelector(".trust-responsive__regions").textContent.trim(),
           sectors: [...section.querySelectorAll(".trust-responsive__sectors li")].map(node => node.textContent.trim()),
           logos: [...section.querySelectorAll(".trust-responsive__logo img")].map(node => node.alt),
           logoSizes: [...section.querySelectorAll(".trust-responsive__logo img")].map(node => ({
@@ -96,14 +99,16 @@ const base = `https://${process.env.REPLIT_DEV_DOMAIN}`;
           })(),
         };
       });
-      assert.deepEqual(data.dimensions, [960, 480]);
+      assert(data.dimensions[0] > 0 && Math.abs(data.dimensions[0] / data.dimensions[1] - 2) < .01,
+        "Responsive map must retain the uploaded artwork's aspect ratio");
+      assert.equal(data.mapSrc, "/assets4/images/certifyme-global-regions-map.png");
       assert(!data.oldContent, "Replace the flattened artwork and hidden heading with native content");
       assert.equal(data.fit, "contain");
       assert.match(data.mask, /linear-gradient/, "Blend the banner perimeter into its background");
       assert.equal(data.filter, "none", "Keep the map sharp");
       assert.equal(data.background, "rgba(0, 0, 0, 0)", "Use the continuous homepage background");
       assert.deepEqual(data.stats, ["5K+", "1M+", "Global reach"]);
-      assert.deepEqual(data.regions, ["North America", "Europe", "Latin America", "Africa", "Middle East", "Asia Pacific"]);
+      assert.equal(data.caption, "Deployments all across the globe");
       assert.deepEqual(data.sectors, ["Higher Education", "Government", "Enterprise", "Non-Profits", "Industry Partners"]);
       assert.deepEqual(data.logos, ["University of Europe", "IEEE", "Harvard Business Publishing", "Project Management Institute", "Indian Institute of Science", "DCU"]);
       assert(data.logoSizes.every(logo => logo.height > 0 && logo.fit === "contain"
@@ -134,7 +139,10 @@ const base = `https://${process.env.REPLIT_DEV_DOMAIN}`;
       assert(data.g2Removed, "Remove the standalone G2 recognition block");
       assert(Math.abs(data.ratio - 2) < .01, "Do not distort the map");
       assert(data.order, "Trust banner must lead directly into the six layers");
-      assert(Math.abs(data.outcomesGap) <= 1, "Remove the gap between institutional outcomes and the trust banner");
+      assert(data.marginTop >= 24 && data.marginBottom >= 24,
+        "Add visible margin above and below the trust section");
+      assert(Math.abs(data.outcomesGap - data.marginTop) <= 1,
+        "Separate institutional outcomes from the trust banner by its new margin");
       assert(data.overflow <= 1, "No page overflow");
       assert.equal(data.heading, "Trusted by Institutions. Used by Learners. Valued Worldwide.");
       assert.equal(await banner.locator(".homepage-section-cta__link").count(), 1);
@@ -142,7 +150,7 @@ const base = `https://${process.env.REPLIT_DEV_DOMAIN}`;
       assert.match(await banner.locator(".homepage-section-cta__link").getAttribute("rel"), /noopener/);
       assert.equal(await page.locator("#badges").count(), 0);
       assert.equal(await page.locator("#why-certifyme").count(), 0);
-      console.log(`Passed ${width}px: native banner, preserved content/logos, matching H2 font, blended background, zero preceding gap, no overflow.`);
+      console.log(`Passed ${width}px: uploaded map, section margins, balanced single-row logos, matching H2 font, blended background, no overflow.`);
       await page.close();
     }
   } finally {

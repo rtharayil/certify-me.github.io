@@ -67,7 +67,8 @@ async function main() {
         }
         assert(!/verified identity|recipient identity verified|platform.independent|tamper.proof|guaranteed security/i.test(metrics.text),
           "Do not turn cryptographic evidence into real-world identity or absolute security claims.");
-        assert.deepEqual(metrics.dimensions, [1254, 1254], "Preserve the complete supplied illustration.");
+        assert(metrics.dimensions[0] > 0 && Math.abs(metrics.dimensions[0] / metrics.dimensions[1] - 1) < .01,
+          "Responsive verification artwork must remain square and uncropped.");
         assert.deepEqual(metrics.reservedDimensions, ["1254", "1254"]);
         assert.match(metrics.alt, /conceptual/i);
         assert(metrics.icons >= 3, "Use distinct decorative icons for the three trust checks.");

@@ -89,7 +89,7 @@ types = Counter(node["@type"] for node in graph)
 assert types == Counter({"Organization": 1, "WebSite": 1, "SoftwareApplication": 1, "WebPage": 1, "FAQPage": 1})
 assert len({node["@id"] for node in graph}) == len(graph)
 faq = next(node for node in graph if node["@type"] == "FAQPage")
-assert len(faq["mainEntity"]) == 6
+assert len(faq["mainEntity"]) == 7
 for question in faq["mainEntity"]:
     from html import escape
     assert escape(question["name"], quote=True).replace("&#x27;", "&#39;") in html
@@ -122,6 +122,24 @@ assert len([s for s in sources if "bootstrap.min.js" in s]) == 1
 assert all("defer" in s for s in page.scripts if s.get("src", "").startswith("/assets4/"))
 assert any(img.get("fetchpriority") == "high" and img.get("srcset") and img.get("width") for img in page.images)
 assert all("alt" in image for image in page.images)
+assert all(image.get("width") and image.get("height") for image in page.images), "Reserve space for every homepage image"
+from PIL import Image
+responsive_images = 0
+for image in page.images:
+    if not image.get("srcset"):
+        assert image["src"].endswith(".svg") or "optimized/brand-" in image["src"], \
+            f"Raster image missing responsive candidates: {image['src']}"
+        continue
+    responsive_images += 1
+    assert image.get("sizes"), f"Missing responsive sizes: {image['src']}"
+    for candidate in image["srcset"].split(","):
+        url, descriptor = candidate.strip().split()
+        asset = root / unquote(urlsplit(url).path).lstrip("/")
+        assert asset.is_file(), f"Missing responsive asset: {url}"
+        with Image.open(asset) as bitmap:
+            assert bitmap.width == int(descriptor.rstrip("w")), f"Incorrect srcset descriptor: {url}"
+        assert asset.stat().st_size <= 400_000, f"Responsive image exceeds 400KB budget: {url}"
+assert responsive_images >= 20
 for bot in ["Googlebot", "Bingbot", "OAI-SearchBot", "PerplexityBot"]:
     import urllib.robotparser
     robots = urllib.robotparser.RobotFileParser()
@@ -138,6 +156,7 @@ assert home[0].findtext("s:lastmod", namespaces=ns) == next(
 assert home[0].findtext("s:priority", namespaces=ns) == "1"
 print(json.dumps({"status": "passed", "scope": "homepage only", "title_characters": len(page.title),
                   "description_characters": len(meta("description")), "schema_entities": dict(types),
-                  "visible_and_schema_questions": 6, "broken_internal_links": missing,
+                  "visible_and_schema_questions": len(faq["mainEntity"]), "broken_internal_links": missing,
                   "local_scripts": len([s for s in sources if s.startswith("/")]),
+                  "responsive_images": responsive_images, "all_images_have_dimensions": True,
                   "indexable_for": ["Googlebot", "Bingbot", "OAI-SearchBot", "PerplexityBot"]}, indent=2))

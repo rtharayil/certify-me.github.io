@@ -85,7 +85,8 @@ async function main() {
           "Branded credential design", "Unique credential URLs", "QR-based access",
           "Rich credential pages", "Digital sharing", "Institutional branding",
         ]);
-        assert.deepEqual(metrics.imageDimensions, [1150, 941]);
+        assert(metrics.imageDimensions[0] > 0 && Math.abs(metrics.imageDimensions[0] / metrics.imageDimensions[1] - 1150 / 941) < .01,
+          "Responsive presentation artwork must retain its original aspect ratio");
         assert.deepEqual(metrics.reservedDimensions, ["1150", "941"]);
         assert.match(metrics.alt, /conceptual/i);
         assert.equal(metrics.iconCount, 6, "Each capability needs its own relevant icon.");

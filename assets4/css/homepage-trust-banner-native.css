@@ -5,6 +5,7 @@
   --trust-accent: #4c48a4;
   --trust-line: rgba(82, 77, 153, .16);
   padding: 1rem 1rem 1.5rem;
+  margin-block: clamp(24px, 3vw, 48px);
   color: var(--trust-ink);
   background: transparent;
   /* Keep multiply-blended artwork in the shared homepage background's stacking context. */

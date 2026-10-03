@@ -66,7 +66,8 @@ async function main() {
         }
         assert(!/guaranteed|ESCO\s+\d{4}|O\*NET\s+\d{2}-\d{4}|native integration|automatically verified/i.test(metrics.text),
           "Do not invent validated taxonomy codes, integrations or guaranteed outcomes.");
-        assert.deepEqual(metrics.dimensions, [1254, 1254]);
+        assert(metrics.dimensions[0] > 0 && Math.abs(metrics.dimensions[0] / metrics.dimensions[1] - 1) < .01,
+          "Responsive taxonomy artwork must remain square");
         assert.deepEqual(metrics.reservedDimensions, ["1254", "1254"]);
         assert.match(metrics.alt, /conceptual/i);
         assert.match(metrics.alt, /skill|taxonomy/i);

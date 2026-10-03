@@ -26,3 +26,36 @@
 @media (prefers-reduced-motion: reduce) {
   .homepage-answers__item summary > span { transition: none; }
 }
+
+/* Keep mobile footer links and certification links usable by touch. */
+@media (max-width: 991px) {
+  .homepage-audited #footer-3 .footer-links a,
+  .homepage-audited #footer-3 address a,
+  .homepage-audited #footer-3 .footer-socials a,
+  .homepage-audited #hero-7 .cred-tags > a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
+.homepage-audited #footer-3 a:focus-visible {
+  outline: 3px solid #5648ad;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* Public section anchors must not disappear under the fixed navigation. */
+.homepage-audited .credential-hero-flow > section[id],
+.homepage-audited .credential-hero-flow > section h2[id],
+.homepage-audited #homepage-answers {
+  scroll-margin-top: 90px;
+}
+
+/* Step controls stay available in the footer; the picker must not cover prose. */
+@media (max-width: 620px), (max-width: 950px) and (max-height: 500px) and (pointer: coarse) {
+  .homepage-audited #credential-sample-dialog .credential-readable__layer-picker {
+    position: relative;
+    top: auto;
+  }
+}

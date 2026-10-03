@@ -1,6 +1,6 @@
 ---
 name: Browser checks in this workspace
-description: A local Playwright browser-cache mismatch and the dependable alternative for visual verification.
+description: Workspace browser quirks affecting responsive images, touch input, Jekyll watching, and body-scrolling anchors.
 ---
 
 If Playwright fails to launch because its bundled Chromium headless shell is missing, check for a system Chromium installation and pass that executable to Playwright instead of treating the app as broken.
@@ -21,11 +21,11 @@ Keep a CDP touch-input session alive for the lifetime of its emulated phone page
 
 **How to apply:** Reuse one session per page for genuine swipe checks. Verify touch capability after gestures before diagnosing responsive failures as app bugs.
 
-Use the actual scrolling ancestor when capturing mobile homepage sections; do not assume the window is the scroll container.
+Use the actual scrolling ancestor when capturing mobile homepage sections or checking native anchors; do not assume the window is the scroll container.
 
-**Why:** The mobile site can scroll the body independently, even when document.scrollingElement reports HTML. Window scrolling left the view at the hero, while tall element screenshots clipped off-screen text and placed fixed navigation across the captured section. Unsettled scrolling and unloaded lazy images can also make a temporary capture look like a permanent spacing defect.
+**Why:** The mobile site can scroll the body independently, even when document.scrollingElement reports HTML. Window scrolling left the view at the hero, while tall element screenshots clipped off-screen text and placed fixed navigation across the captured section. Native anchors could also land below the fixed header after closing a dialog despite a CSS scroll margin. Unsettled scrolling and unloaded lazy images can make a temporary capture look like a permanent spacing defect.
 
-**How to apply:** Start with element.scrollIntoView using instant behavior, inspect the nearest scrollable ancestor, and adjust that ancestor for the fixed header without smooth scrolling. Wait for visible lazy images to load and decode. Confirm the target's viewport bounds and capture reading viewports rather than treating one tall element image as reliable visual evidence. Do not assume a hash URL alone produced a settled section capture.
+**How to apply:** Start with element.scrollIntoView using instant behavior, inspect the nearest scrollable ancestor, and adjust that ancestor for the fixed header without smooth scrolling. Wait for visible lazy images to load and decode. Compare actual anchor bounds with the visible header, not just a CSS declaration. Capture reading viewports rather than treating one tall element image as reliable evidence. Do not assume a hash URL alone produced a settled section capture.
 
 Verify visibility after scrolling when reusing legacy animated sections; valid geometry and loaded artwork do not guarantee that their text is displayed.
 
@@ -44,3 +44,9 @@ Distinguish a browser transport failure from a broken interaction when HTML load
 **Why:** System Chromium encountered `ERR_CERT_VERIFIER_CHANGED` on the proxied preview's assets. The homepage rendered, but the missing dialog script made a working opener appear broken.
 
 **How to apply:** Inspect failed network requests as well as JavaScript exceptions. If transport is unreliable, check that the server serves the intended bytes and isolate the component's behavior separately; do not change production TLS or rewrite working application logic to satisfy a faulty browser session.
+
+Do not require original-file natural dimensions from responsive images using width descriptors.
+
+**Why:** Chromium reports density-corrected integer natural dimensions for srcset images. Small logos can have an apparently different aspect ratio simply because their corrected height rounds to a few pixels.
+
+**How to apply:** Verify candidate files against their declared widths and source proportions, then allow about one pixel of density-corrected rounding in browser checks. Retain strict original width/height attribute checks for reserved layout space.

@@ -1,0 +1,19 @@
+{
+  "brand": {"source": "assets4/images/Logo/1.png", "widths": [320, 640]},
+  "hero": {"source": "assets4/images/certifyme-verifiable-credentials-skills-clr-hero-960.webp", "widths": [480, 960], "quality": 85},
+  "overview": {"source": "assets4/images/credential-six-layer-stack.webp", "widths": [480, 960, 1440, 1672]},
+  "outcomes": {"source": "assets4/images/credential-institution-outcomes.webp", "widths": [480, 960, 1536]},
+  "map": {"source": "assets4/images/certifyme-global-regions-map.png", "widths": [480, 960, 1440, 1774]},
+  "presentation": {"source": "assets4/images/credential-presentation-access.webp", "widths": [480, 960, 1150]},
+  "standards": {"source": "assets4/images/credential-standards-ecosystem.webp", "widths": [480, 960, 1254]},
+  "verification": {"source": "assets4/images/credential-verification-trust.webp", "widths": [480, 960, 1254]},
+  "taxonomy": {"source": "assets4/images/credential-skill-taxonomy.webp", "widths": [480, 960, 1254]},
+  "record": {"source": "assets4/images/credential-learner-record.webp", "widths": [480, 960, 1254]},
+  "workforce": {"source": "assets4/images/credential-workforce-intelligence.webp", "widths": [480, 960, 1254]},
+  "ue": {"source": "assets4/images/trust-logo-ue-web.png", "widths": [179]},
+  "ieee": {"source": "assets4/images/trust-logo-ieee-web.png", "widths": [296]},
+  "harvard": {"source": "assets4/images/trust-logo-harvard-web.png", "widths": [296]},
+  "pmi": {"source": "assets4/images/trust-logo-pmi-web.png", "widths": [320]},
+  "iisc": {"source": "assets4/images/trust-logo-iisc-web.png", "widths": [200]},
+  "dcu": {"source": "assets4/images/trust-logo-dcu-web.png", "widths": [200]}
+}

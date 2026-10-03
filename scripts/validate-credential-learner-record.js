@@ -66,7 +66,8 @@ async function main() {
         }
         assert(!/\d+\s*%|guaranteed|automatically hired|certified sample|replace.{0,20}transcript/i.test(metrics.text),
           "Do not invent readiness scores, outcomes, sample certification or transcript replacement.");
-        assert.deepEqual(metrics.dimensions, [1254, 1254]);
+        assert(metrics.dimensions[0] > 0 && Math.abs(metrics.dimensions[0] / metrics.dimensions[1] - 1) < .01,
+          "Responsive learner-record artwork must remain square");
         assert.deepEqual(metrics.reservedDimensions, ["1254", "1254"]);
         assert.match(metrics.alt, /conceptual/i);
         assert(metrics.icons >= 4, "Give each audience benefit a decorative icon.");

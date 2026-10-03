@@ -15,6 +15,12 @@ Keep “A global learning community” at the same visual scale as “The instit
 
 **How to apply:** Compare their container widths, horizontal alignment and text/artwork proportions at the same viewport. Preserve the consistent H2 typography rather than compensating for a narrow container with an oversized headline.
 
+Keep visible spacing above and below “A global learning community.”
+
+**Why:** The user requested added margin for this section, superseding the earlier gap-free transition from the institutional outcome.
+
+**How to apply:** Preserve responsive section margins and the continuous background; do not restore the earlier zero-gap requirement during later layout changes.
+
 Keep the institution logos on one line at a reduced size, using genuine web-sourced logo artwork.
 
 **Why:** After requesting larger web-sourced logos, the user clarified: “reduce size of logo sould be on one line.”

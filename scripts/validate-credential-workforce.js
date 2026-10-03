@@ -71,7 +71,8 @@ async function main() {
           "Do not convert conceptual jobs, scores or employer marks into claims about live results.");
         assert.equal(metrics.caption, undefined, "Keep the Layer 6 illustration free of a visible caption.");
         assert.equal(metrics.controls, 0, "Do not add faux job filters or applications.");
-        assert.deepEqual(metrics.dimensions, [1254, 1254]);
+        assert(metrics.dimensions[0] > 0 && Math.abs(metrics.dimensions[0] / metrics.dimensions[1] - 1) < .01,
+          "Responsive workforce artwork must remain square");
         assert.deepEqual(metrics.reservedDimensions, ["1254", "1254"]);
         assert.match(metrics.alt, /conceptual/i);
         assert(metrics.icons >= 4);

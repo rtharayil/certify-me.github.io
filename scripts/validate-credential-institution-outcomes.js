@@ -53,7 +53,8 @@ async function main() {
           };
         });
         assert.match(metrics.src, /^\/assets4\/images\/credential-institution-outcomes\.webp\?v=\d+$/);
-        assert.deepEqual(metrics.dimensions, [1536, 1024]);
+        assert(metrics.dimensions[0] > 0 && Math.abs(metrics.dimensions[0] / metrics.dimensions[1] - 1536 / 1024) < .01,
+          "Responsive outcome artwork must retain its original aspect ratio");
         assert(Math.abs(metrics.ratio - 1536 / 1024) < .01, "Preserve the complete supplied illustration.");
         assert.match(metrics.mask, /linear-gradient/);
         assert.equal(metrics.filter, "none", "Keep the artwork's text sharp.");

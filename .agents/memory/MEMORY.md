@@ -9,7 +9,7 @@
 - [Comprehensive Learner Record positioning](clr-positioning.md) — lead with institution-governed record infrastructure; the learner-facing record is a benefit, not the buyer story.
 - [Skills taxonomy positioning](skills-taxonomy-positioning.md) — keep institutional terminology authoritative and distinguish reviewed taxonomy relationships from verified integrations.
 - [Public proof boundaries](public-proof-boundaries.md) — 1EdTech registry verifies OB3 issuer certification; review-site ratings do not prove Leader status or security audits.
-- [Browser checks in this workspace](browser-checks.md) — system Chromium, Jekyll watch interference, CDP touch emulation, and real scroll containers.
+- [Browser checks in this workspace](browser-checks.md) — system Chromium, Jekyll watching, touch input, body-scrolling anchors, and srcset rounding.
 - [Native disclosures and sticky containment](native-details-sticky.md) — sticky children can remain confined by native details content boxes despite display:contents.
 - [Uploaded image cropping](uploaded-image-cropping.md) — scale preview coordinates to source pixels and preserve callouts outside the requested crop.
 - [Homepage layer artwork](homepage-layer-artwork.md) — all six illustrations blend into the background; soften edges without blurring meaningful content.

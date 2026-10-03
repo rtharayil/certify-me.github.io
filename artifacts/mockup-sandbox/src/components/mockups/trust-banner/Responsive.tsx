@@ -1,15 +1,6 @@
 import "./_group.css";
 import "./_responsive.css";
 
-const regions = [
-  "North America",
-  "Europe",
-  "Latin America",
-  "Africa",
-  "Middle East",
-  "Asia Pacific",
-];
-
 const sectors = [
   "Higher Education",
   "Government",
@@ -38,7 +29,7 @@ export function Responsive() {
       <div className="trust-responsive__inner">
         <div className="trust-responsive__main">
           <header className="trust-responsive__copy">
-            <p className="trust-responsive__eyebrow">A global learning community</p>
+            <p className="trust-responsive__eyebrow">A Global Credential Ecosystem</p>
             <h2 id="homepage-trust-banner-title">
               Trusted by Institutions. Used by Learners. Valued Worldwide.
             </h2>
@@ -63,7 +54,7 @@ export function Responsive() {
               </li>
               <li>
                 <strong>1M+</strong>
-                <span>Learners worldwide</span>
+                <span>Learners Wallets worldwide</span>
               </li>
               <li>
                 <strong className="trust-responsive__global">Global reach</strong>
@@ -74,24 +65,15 @@ export function Responsive() {
 
           <figure className="trust-responsive__map">
             <img
-              src="/__mockup/images/trust-world-map.webp"
+              src="/__mockup/images/trust-world-map.png"
               alt="World map showing North America, Europe, Latin America, Africa, the Middle East and Asia Pacific"
-              width="960"
-              height="480"
+              width="1774"
+              height="887"
               loading="lazy"
               decoding="async"
             />
             <figcaption className="trust-responsive__regions">
-              {regions.map((region, index) => (
-                <span key={region}>
-                  {region}
-                  {index < regions.length - 1 && (
-                    <span className="trust-responsive__region-separator" aria-hidden="true">
-                      ·
-                    </span>
-                  )}
-                </span>
-              ))}
+              Deployments all across the globe
             </figcaption>
           </figure>
         </div>

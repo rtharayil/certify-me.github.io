@@ -75,7 +75,8 @@ async function main() {
         assert.match(metrics.text, /compatible/i, "Qualify interoperability through compatible systems.");
         assert(!/\b(Canvas|Moodle|D2L|Blackboard|universally|vendor.independent)\b/i.test(metrics.text),
           "Do not turn the concept diagram into unsupported integration or independence claims.");
-        assert.deepEqual(metrics.dimensions, [1254, 1254], "Keep the complete artwork uncropped.");
+        assert(metrics.dimensions[0] > 0 && Math.abs(metrics.dimensions[0] / metrics.dimensions[1] - 1) < .01,
+          "Responsive standards artwork must remain square and uncropped.");
         assert.deepEqual(metrics.reservedDimensions, ["1254", "1254"]);
         assert(Math.abs(metrics.aspectRatio - 1) < .01, "Preserve the square artwork without distortion.");
         assert.match(metrics.alt, /conceptual/i);

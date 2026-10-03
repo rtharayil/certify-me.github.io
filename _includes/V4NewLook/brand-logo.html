@@ -1,0 +1,6 @@
+<img{% if include.class %} class="{{ include.class }}"{% endif %}
+  {% if page.url == "/" %}src="/assets4/images/optimized/brand-640.webp"
+  {% include V4NewLook/homepage-image-attributes.html key="brand" sizes="(max-width: 991px) 160px, 200px" %}
+  width="640" height="175"{% else %}src="/assets4/images/Logo/1.png"{% endif %}
+  alt="{{ include.alt | default: 'CertifyMe logo' | escape }}"
+  loading="{{ include.loading | default: 'eager' }}"{% if page.url == "/" %} decoding="async"{% endif %}>

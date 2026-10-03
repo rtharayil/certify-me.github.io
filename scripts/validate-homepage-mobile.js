@@ -153,7 +153,7 @@ async function checkHomepageFaq(page, width) {
   await faq.scrollIntoViewIfNeeded();
   const items = faq.locator("details.homepage-answers__item");
   const count = await items.count();
-  assert(count === 6, `${width}px expected six homepage FAQ disclosures, found ${count}`);
+  assert(count === 7, `${width}px expected seven homepage FAQ disclosures, found ${count}`);
 
   for (let index = 0; index < count; index += 1) {
     const item = items.nth(index);
@@ -415,7 +415,7 @@ async function checkViewport(browser, width) {
         homepageScoped: document.body.classList.contains("homepage-audited"),
         layerCount: layerSelectors.filter((selector) => document.querySelector(selector)).length,
         layerHeadings: layerSelectors.map((selector) => (
-          document.querySelector(`${selector} h3`)?.textContent.trim() || ""
+          document.querySelector(`${selector} h2`)?.textContent.trim() || ""
         )),
         removedAudienceSectionPresent: !!document.querySelector(".credential-institution-outcomes__audiences"),
         jqueryScripts: matchingScript("/assets4/js/jquery-3.7.0.min.js"),

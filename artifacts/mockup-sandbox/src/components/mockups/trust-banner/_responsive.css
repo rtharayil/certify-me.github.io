@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 .trust-responsive-preview {
+  display: flow-root;
   min-height: 100dvh;
   background: linear-gradient(160deg, #ece9fd 0%, #f0f1ff 40%, #edf2ff 70%, #f5f7ff 100%);
   font-family: "Inter", sans-serif;
@@ -50,6 +51,7 @@ html:has(.trust-responsive-preview) { font-size: 16px; }
   --trust-line: rgba(82, 77, 153, .16);
   color: var(--trust-ink);
   padding: 1rem 1rem 1.5rem;
+  margin-block: clamp(24px, 3vw, 48px);
   background: transparent;
   isolation: auto;
 }
