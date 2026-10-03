@@ -1,13 +1,13 @@
 ---
 name: Trust banner artwork
-description: Owner's choice of finished artwork for the homepage trust banner.
+description: Owner's updated request to recreate the trust banner while preserving its content and background blending.
 ---
 
-The homepage trust banner uses the owner's finished uploaded image by explicit choice, rather than a recreated HTML/vector layout.
+The owner now wants the homepage trust banner recreated as a responsive native section that matches the homepage design. This supersedes their earlier choice to use the finished uploaded image directly.
 
-**Why:** After being offered a responsive recreation or direct use of the attachment, the owner selected “Use the attached image as the banner.”
+**Why:** The owner later said the flat image looked out of design and accepted a responsive recreation in Design mode.
 
-**How to apply:** Preserve the complete artwork and its proportions. Do not silently replace it with a recreated layout or revise its embedded names, figures or map. This choice applies to this trust banner, not every illustration on the site.
+**How to apply:** Preserve the supplied headline, figures, named regions, sectors and institution logos while making the text and layout native and responsive. Review the design before replacing the live homepage banner. This request applies to this banner, not every illustration on the site.
 
 The trust banner's outer edges should blend into the homepage background, while its meaningful content remains sharp.
 

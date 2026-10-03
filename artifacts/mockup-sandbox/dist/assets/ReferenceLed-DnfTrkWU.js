@@ -1,4 +1,4 @@
-import{r,j as S}from"./index-BJY4NIfB.js";/* empty css               */const U=`<div id="credential-sample-dialog" class="credential-modal credential-university credential-readable" role="dialog" aria-modal="true"
+import{r,j as S}from"./index-BlVDXdRY.js";/* empty css               */const U=`<div id="credential-sample-dialog" class="credential-modal credential-university credential-readable" role="dialog" aria-modal="true"
      aria-labelledby="credential-modal-title" aria-describedby="credential-modal-description" hidden>
   <div class="credential-modal__backdrop" data-credential-close></div>
   <div class="credential-modal__panel" tabindex="-1">
@@ -19,7 +19,7 @@ import{r,j as S}from"./index-BJY4NIfB.js";/* empty css               */const U=`
     <div class="credential-readable__intro">
       <div>
         <span class="credential-readable__eyebrow">CREDENTIAL INFRASTRUCTURE FOR UNIVERSITIES</span>
-        <h1 id="credential-modal-title">More value from every credential.</h1>
+        <h2 id="credential-modal-title">More value from every credential.</h2>
       </div>
       <p id="credential-modal-description">See how your university can connect achievements, skills and learner records—while keeping their meaning and ownership clear. Illustrated with one fictional credential.</p>
       <div class="credential-readable__share-utility">
@@ -28,7 +28,7 @@ import{r,j as S}from"./index-BJY4NIfB.js";/* empty css               */const U=`
       </div>
     </div>
 
-    <main class="credential-readable__workspace" data-active-step="0">
+    <{% if page.url == "/" %}div{% else %}main{% endif %} class="credential-readable__workspace" data-active-step="0">
       <details class="credential-readable__specimen-disclosure" open>
         <summary class="credential-readable__specimen-summary">
           <span>THE REFERENCE</span>
@@ -46,7 +46,7 @@ import{r,j as S}from"./index-BJY4NIfB.js";/* empty css               */const U=`
         </figure>
         <div class="credential-readable__identity">
           <p class="credential-readable__institution">ASTERFORD UNIVERSITY <span>· Fictional institution</span></p>
-          <h2>Applied Data &amp;<br>Project Leadership</h2>
+          <h3>Applied Data &amp;<br>Project Leadership</h3>
           <p class="credential-readable__program">Graduate Certificate · School of Continuing &amp; Professional Studies</p>
           <div class="credential-readable__recipient">
             <span class="credential-readable__avatar" aria-hidden="true">JL</span>
@@ -90,21 +90,21 @@ import{r,j as S}from"./index-BJY4NIfB.js";/* empty css               */const U=`
           <div class="credential-readable__story" aria-live="polite">
             <article class="credential-readable__stage" data-credential-stage="0">
               <span class="credential-readable__kicker">LAYER 01 <i></i> PRESENTATION &amp; SHARING</span>
-              <h2>Help learners share achievements with context.</h2>
+              <h3>Help learners share achievements with context.</h3>
               <p>Give learners a portable record of their achievement—not just a badge image. An issued credential can be shared by link or added to a learner profile, social channel or wallet where the receiving service supports it.</p>
               <p>Keep the issuer, achievement and evidence connected to the same record so each shared link carries context.</p>
               <p class="credential-readable__note"><strong>In this demonstration</strong> The share controls distribute this fictional walkthrough only. Jordan Lee’s sample credential is not issued.</p>
             </article>
             <article class="credential-readable__stage" data-credential-stage="1" hidden>
               <span class="credential-readable__kicker">LAYER 02 <i></i> STANDARDISATION</span>
-              <h2>Use shared standards to support exchange.</h2>
+              <h3>Use shared standards to support exchange.</h3>
               <p>Keep issuer, achievement and evidence together in a structured credential. Open Badges 3.0 and the W3C Verifiable Credentials data model give compatible systems a shared way to exchange and check that information.</p>
               <p>Standards support portability, not universal acceptance. Receiving-system support, access to issuer keys and status resources, and institutional policy still matter.</p>
               <p class="credential-readable__note"><strong>More than a badge image</strong> Issuer · achievement · recipient · criteria · evidence · status · proof concepts</p>
             </article>
             <article class="credential-readable__stage" data-credential-stage="2" hidden>
               <span class="credential-readable__kicker">LAYER 03 <i></i> VERIFICATION</span>
-              <h2>Give reviewers a record they can check.</h2>
+              <h3>Give reviewers a record they can check.</h3>
               <p>Give employers and institutions a way to examine the issuer, achievement and evidence—not just a badge image. A compatible verifier checks cryptographic proof against an issuer-controlled public key and establishes how that key belongs to the issuer.</p>
               <p>A unique ID or QR code can locate a record; it does not prove authenticity. Checking an Open Badge also means examining its issuer, recipient, achievement, criteria and evidence, alongside compatible proof, schema and applicable expiry, status or revocation checks.</p>
               <p class="credential-readable__note"><strong>Important limits</strong> A valid signature does not prove learner competence or imply automatic issuer endorsement. DID or HTTPS issuer references may support key discovery where available; a DID is not required for every credential.</p>
@@ -121,26 +121,26 @@ import{r,j as S}from"./index-BJY4NIfB.js";/* empty css               */const U=`
             </article>
             <article class="credential-readable__stage" data-credential-stage="3" hidden>
               <span class="credential-readable__kicker">LAYER 04 <i></i> SKILLS &amp; TAXONOMY</span>
-              <h2>Make your program’s skills easier to understand.</h2>
+              <h3>Make your program’s skills easier to understand.</h3>
               <p>Describe the skills a program is intended to develop, then relate your institution’s terms to a shared vocabulary. Give academic, careers and employer-engagement teams a clearer language for the learning behind an achievement.</p>
               <p class="credential-readable__note"><strong>Illustrative only</strong> These sample skills and vocabulary relationships are not independently assessed, verified mappings or evidence of competence.</p>
             </article>
             <article class="credential-readable__stage" data-credential-stage="4" hidden>
               <span class="credential-readable__kicker">LAYER 05 <i></i> COMPREHENSIVE LEARNER RECORD</span>
-              <h2>Connect achievements without losing their origins.</h2>
+              <h3>Connect achievements without losing their origins.</h3>
               <p>Bring credentials, skills, coursework, projects and experiences into a coherent learner record—with each source and issuer kept visible.</p>
               <p>Your institution sets stewardship, consent and access rules. A Comprehensive Learner Record complements the authoritative transcript; it does not replace it or merge distinct evidence into a single claim.</p>
               <p class="credential-readable__note"><strong>Your institution stays in control</strong> Govern access. Preserve where each record came from and what it actually says.</p>
             </article>
             <article class="credential-readable__stage" data-credential-stage="5" hidden>
               <span class="credential-readable__kicker">LAYER 06 <i></i> WORKFORCE &amp; CAREER CONTEXT</span>
-              <h2>Show how learning connects to workforce needs.</h2>
+              <h3>Show how learning connects to workforce needs.</h3>
               <p>Consider program outcomes alongside employer-relevant skills and occupational contexts. Help your curriculum, careers and employer-engagement teams discuss program relevance and future learning pathways.</p>
               <p class="credential-readable__note"><strong>Illustrative context</strong> Roles and sectors shown are examples only. No live vacancies, employer endorsements, demand counts, job matches or personalised recommendations are presented.</p>
             </article>
             <article class="credential-readable__stage credential-readable__outcome-stage" data-credential-stage="6" hidden>
               <span class="credential-readable__kicker">INSTITUTIONAL OUTCOME</span>
-              <h2>Bring your credential strategy together.</h2>
+              <h3>Bring your credential strategy together.</h3>
               <p>With CertifyMe, your institution can connect the credentials it issues with the learning they represent, the records it governs and the workforce contexts learners explore.</p>
               <p>Support clearer credential sharing, coherent learner records and better-informed conversations about program relevance—without losing sight of who issued each record or what it proves.</p>
               <p class="credential-readable__note"><strong>Let’s talk about your institution</strong> Discuss credential access, learner records and governance with CertifyMe.</p>
@@ -191,7 +191,7 @@ import{r,j as S}from"./index-BJY4NIfB.js";/* empty css               */const U=`
         </article>
 
       </section>
-    </main>
+    </{% if page.url == "/" %}div{% else %}main{% endif %}>
 
     <footer class="credential-modal__footer">
       <div class="credential-readable__controls">
