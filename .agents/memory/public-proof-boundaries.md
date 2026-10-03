@@ -18,3 +18,15 @@ Keep the metric attached to any review-site rank: a G2 “Easiest To Use” plac
 **Why:** Checks of primary sources distinguished a scoped G2 usability rank from general ranking copy, while the LinkedIn category page did not substantiate the site's own Top 5 claim. The vendor's website cannot independently corroborate its own recognition claims.
 
 **How to apply:** Use the exact published metric and link to its primary source. Ask for the dated ranking source or screenshot before introducing LinkedIn Top 5 recognition.
+
+Use G2's dedicated “Easiest To Use” category page to verify usability placement, rather than assuming the generic category/reviews page contains it.
+
+**Why:** The dedicated usability page explicitly showed CertifyMe as #2, while ordinary review pages and snippets did not consistently retain the ranking label.
+
+**How to apply:** Check https://www.g2.com/categories/digital-credential-management?tab=easiest_to_use for current placement; keep “Easiest To Use” attached to the claim and date the observation. A verified usability position is not an overall global category rank or a dated Leader award.
+
+Verify G2's main category ordering separately from usability: the all-segment overview can explicitly be sorted by **G2 Score**, supporting a dated category-position claim.
+
+**Why:** An earlier assessment was too narrow because it checked usability without the category overview the owner subsequently supplied. The overview provided separate evidence of category placement.
+
+**How to apply:** Check https://www.g2.com/categories/digital-credential-management, confirm the active sort and filters, and distinguish organic products from sponsored cards. Record the current placement with “by G2 Score” and an observation date. Do not restrict claims to usability when category-score evidence exists, or treat either placement as proof of a separately dated Leader award.
