@@ -30,3 +30,11 @@ Verify G2's main category ordering separately from usability: the all-segment ov
 **Why:** An earlier assessment was too narrow because it checked usability without the category overview the owner subsequently supplied. The overview provided separate evidence of category placement.
 
 **How to apply:** Check https://www.g2.com/categories/digital-credential-management, confirm the active sort and filters, and distinguish organic products from sponsored cards. Record the current placement with “by G2 Score” and an observation date. Do not restrict claims to usability when category-score evidence exists, or treat either placement as proof of a separately dated Leader award.
+
+## Competitor capability evidence
+
+Do not carry forward feature-absence claims from older comparison articles. A missing public mention is **unconfirmed**, not **absent**; product support, registry conformance, plan entitlement and tested interoperability are different evidence categories.
+
+**Why:** Current primary documentation contradicted earlier claims that competitors lacked OB3/VC support, external labour-market insights, connected learner records or institutional administration.
+
+**How to apply:** Check the vendor's current product documentation and dated announcements before revising comparisons. Keep positive observations attributed and dated; request exact product/role/plan evidence without inferring a negative from silence.

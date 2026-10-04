@@ -754,8 +754,10 @@ so the section is never empty.
                                         <span><i class="flaticon-calendar"></i>{{ page.date | date: "%-d %B %Y" }}</span>
                                     </div>
                                     {% endif %}
-                                    {% if page.content_authority_p0 and page.last_modified %}
+                                    {% if page.content_authority_p0 or page.content_authority_p1 %}
+                                    {% if page.last_modified %}
                                     <p class="small mb-0">Editorial content updated {{ page.last_modified | date: "%-d %B %Y" }}.</p>
+                                    {% endif %}
                                     {% endif %}
 
                                 </div>

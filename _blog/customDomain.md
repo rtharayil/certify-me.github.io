@@ -2,7 +2,7 @@
 layout: V4LayoutSingleBlogPost
 title: CertifyMe lets you map a custom domain to your Credential Pages .
 
-description: CertifyMe.Online allows you to map a custom domain to your Credential Pages, enhancing your brand presence.
+description: "Set up an institution-owned credential subdomain with correct CNAME syntax, platform activation and tested TLS and verification."
 
 abstract: 
 author : Aneesha Kurian
@@ -10,89 +10,60 @@ topic: news
 imageLink: /img/blog/credential/12.png
 featured: true
 seo_keywords: "custom domain digital certificates, map subdomain CertifyMe, CNAME record guide, white label credentials, GoDaddy CNAME setup"
+last_modified: 2026-10-04
+content_authority_p1: true
 faqs:
-  - question: "Why should I bother setting up a custom domain instead of just using the default one?"
-    answer: "Honestly, it’s all about trust. When a student gets a certificate link that says 'certificate.youruniversity.com' instead of a third-party URL, it just feels more official and keeps your branding front and center."
-  - question: "Is the CNAME setup really as complicated as it sounds?"
-    answer: "It's actually pretty straightforward. You just need to point your chosen subdomain to app.certifyme.online in your DNS settings. If you’ve ever verified a site for Google Search Console, you’ve basically already done this kind of work."
-  - question: "Will I need to buy an SSL certificate for my new subdomain?"
-    answer: "No need to worry about that. Once you’ve mapped the domain and let us know, we handle the SSL certificate creation on our end so everything stays secure and encrypted."
-  - question: "How long does it take for the custom domain to start working?"
-    answer: "Usually, the DNS changes take anywhere from a few minutes to an hour to propagate, though GoDaddy and others sometimes say it can take longer. In my experience, it's usually ready by the time you've finished your second cup of coffee."
+  - question: "What should the CNAME Name field contain?"
+    answer: "Follow the DNS provider's format. GoDaddy expects the host prefix, such as certificate, rather than the domain repeated. The target is the confirmed hostname, not an HTTPS URL."
+  - question: "Does creating DNS activate the credential page immediately?"
+    answer: "No. DNS propagation, approved platform mapping and TLS provisioning must all complete. Test the real hostname before sharing it."
+  - question: "Should recipients bypass a TLS warning?"
+    answer: "No. Stop distributing the link and ask the responsible IT/platform team to fix the hostname or certificate problem."
 ---
 
-## Steps 1: Choose your SubDomain
+A custom credential domain is a presentation and routing choice. It does not change who awards the achievement or make a record authentic by itself. Have the institution's DNS administrator approve a dedicated subdomain and confirm the current platform target with CertifyMe before changing production DNS.
 
-Few suggestions
+## 1. Choose a dedicated subdomain
 
-1. badge.yourdomain.com
+Examples include `badge.example.edu`, `certificate.example.edu` or `credential.example.edu`. These are fictional domains. Avoid replacing the institution's main website, mail host or an existing service. Record who owns the DNS zone and who maintains the platform mapping.
 
-1. certificate.yourdomain.com
+## 2. Add the confirmed CNAME
 
-1. credential.yourdomain.com
+The documented CertifyMe target in this guide is `app.certifyme.online`; confirm it with the onboarding team for the current setup. A typical record looks like:
 
-1. ?.yourdomain.com
-
-<br>
-
-## Step 2: Map your SubDomain to app.certifyme.online
-
-Under your DNS and a CName record to make your subdomain point to the credential system server at app.certifyme.online. For example, if you had chosen your subdomain as “certificate.yourdomain.com”, below should be your CName records. (You might need your IT team's help )
-
-```
-certificate.yourdomain.com app.certifyme.online
-
+```text
+Type:   CNAME
+Name:   certificate
+Target: app.certifyme.online
+TTL:    according to your DNS policy
 ```
 
-### Step 2.1 , How to set up a CNAME with GoDaddy
+Some providers want only the host label (`certificate`), while others accept a fully qualified name. Do not accidentally create `certificate.example.edu.example.edu`. A CNAME target is a hostname, not an HTTPS URL or a path. Check for conflicting records before adding it.
 
-Your custom domain is activated immediately, but for the mapping to be effective, you have to add the right CNAME in your domain’s DNS records. How you add a CNAME to your DNS records depends on your hosting service.
+## 3. Understand the routing and activation flow
 
-Here’s a brief guide to setting up a CNAME with GoDaddy:
-
-1.  Sign in to your GoDaddy account and go to the My Products tab.
-
-2.  Click the domain you want to update.
-
-3.  Click Domain Settings.
-
-4.  In the Additional Settings section, click Manage DNS.
-
-5.  On the DNS Management page, in the Records section, click Add.
-
-6.  From the Type drop-down list, choose CNAME.
-
-7.  In the Host field, type type the respective subdomain  (e.g. "certificate.yourdomain.com" )
-
-8.  In the Points to field, type your CertifyMe domain  ie  app.certifyme.online.
-
-9.  Leave the TTL setting as 1 hour.
-
-10. Click Save.
-
-11. Update us sending an email to CertifyMe with  your sub domain deatils so that we can create your SSL certificate
-
-<br>
-
-### Step 2.2 , How to set up a CNAME with Google Domain
-
-[Click here to learn how set up a CNAME with Google Domains](https://support.google.com/a/answer/47283?hl=en)
-
-Mapping 
-
-```
-certificate.yourdomain.com --->  app.certifyme.online
-
+```text
+Recipient opens certificate.example.edu
+    -> DNS resolves the CNAME target
+    -> CertifyMe recognizes the approved custom hostname
+    -> TLS certificate covers certificate.example.edu
+    -> the requested credential page is served
 ```
 
-### Step 2.3  , How to set up a CNAME with BigRock Domain
+DNS alone does not complete platform activation or TLS provisioning. Provide only the approved hostname through the normal onboarding channel; never send private keys, DNS account passwords or email credentials in a support message.
 
-[Click here to learn how set up a CNAME with BigRock](https://support.bigrock.com/index.php?/Knowledgebase/Article/View/1217/5/adding-a-cname-record-on-dns-management)
+## 4. Follow your current DNS provider's instructions
 
-Mapping 
+[GoDaddy's maintained CNAME instructions](https://www.godaddy.com/help/add-a-cname-record-19236) specify a host prefix in the Name field and explain that global updates can take up to 48 hours. Exact UI labels and propagation vary. For other registrars, use their current official documentation rather than an old Google Domains or BigRock menu sequence. The authoritative DNS provider may differ from the domain registrar.
 
-```
-certificate.yourdomain.com --->  app.certifyme.online
+## 5. Test before distributing links
 
-```
+Have IT confirm DNS resolution, the approved platform mapping and a valid TLS hostname without browser warnings. Open an authorized test credential on desktop and mobile, then check its sharing and verification links. Retain the official issuer identity and evidence/status behavior after branding.
 
+If DNS resolves but the page fails, check platform activation and TLS separately. If a browser warns about the certificate, stop distributing the link and resolve the hostname/certificate mismatch; do not instruct recipients to bypass the warning. Record an escalation owner and monitor renewals.
+
+## 6. Plan maintenance and exit
+
+The institution owns its domain; the platform serves the record under the agreed mapping. Decide what happens to custom URLs, TLS, keys and status resources if the contract ends. Remove unused mappings under a controlled offboarding process to avoid leaving orphaned DNS.
+
+Use the [branding implementation guide](/blog/white-labeling-and-branding-with-certifyme.html) for email and presentation, and [credential infrastructure governance](/platform-overview) for record ownership. [Discuss the current domain setup](https://info.certifyme.online/request-demo) before changing a live service.

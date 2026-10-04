@@ -106,6 +106,9 @@ with (OUT / "competitor-evidence-matrix.csv").open("w", newline="") as f:
 for v in vendors:
     path=ROOT / "_blog" / f"certifyme-vs-{v['slug']}-2026-comparison.md"
     source=path.read_text(); front=source.split("---",2)[1]
+    # Generate evidence exports without replacing separately reviewed P1 copy.
+    if re.search(r"^content_authority_p1:\s*true\s*$", front, re.M):
+        continue
     front=re.sub(r"\nfaqs:\n.*", "", front, flags=re.S)
     front=re.sub(r"\nlast_modified(?:_at)?:[^\n]*", "", front)
     front=re.sub(r"\ncomparison_evidence_phase4:[^\n]*", "", front)

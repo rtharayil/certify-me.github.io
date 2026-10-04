@@ -11,15 +11,15 @@ author : Aneesha Kurian
 imageLink: /assets4/images/Brand image.png
 featured: true
 seo_keywords: "white label digital credentials, custom branded certificates, white labeling for education, SMTP white labeling, domain white labeling for badges"
+last_modified: 2026-10-04
+content_authority_p1: true
 faqs:
-  - question: "Will my students know I'm using CertifyMe?"
-    answer: "If you set up white labeling correctly, they won't. I've seen institutions set it up so everything—from the URL to the email address—looks like it's coming directly from their own office. It keeps your brand front and center."
-  - question: "Is it hard to set up a custom domain for my certificates?"
-    answer: "It's simpler than it sounds! You just need to point a subdomain (like certificates.youruniversity.edu) to our platform. It makes the whole experience feel much more official and integrated with your main website."
-  - question: "Why should I bother with SMTP white-labeling?"
-    answer: "In my experience, students are much more likely to open an email if it comes from a name they recognize. Sending credentials from your own domain's email address builds trust and keeps your messages out of the spam folder."
-  - question: "Can I put a video on the credential page?"
-    answer: "Yes, and it's a great way to engage people. I've seen schools include a quick 'congratulations' video or a highlight reel of their program. It turns a static page into something way more memorable for the learner."
+  - question: "Does a branded sender guarantee inbox delivery?"
+    answer: "No. Configure the approved sending arrangement and review SPF, DKIM and DMARC alignment. Authentication is important but does not guarantee inbox placement."
+  - question: "Does white labeling mean hiding the service provider?"
+    answer: "No. It makes approved institutional presentation prominent while keeping provider attribution and data-processing disclosures accurate."
+  - question: "Can we assume every branding feature is included?"
+    answer: "No. Confirm custom domain, email, banner, video and support entitlement in the current contract and test the actual setup."
 ---
 
 In today’s digital age, establishing a strong brand presence is essential for educational institutions, training providers, and organizations. CertifyMe, a leading digital credentialing platform, offers innovative solutions to enhance brand visibility. Let’s delve into the facets that set CertifyMe apart and how they contribute to brand enhancement.
@@ -28,7 +28,7 @@ In today’s digital age, establishing a strong brand presence is essential for 
 
 ## White Labeling Solutions
 
-CertifyMe provides **perfect whitelabeling solutions** that seamlessly integrate with your organization’s branding. When learners receive their digital credentials, the entire experience—from the credential page to the sharing process—feels like it’s coming directly from your institution. Here’s how it works:
+CertifyMe provides **white-labeling options** that seamlessly integrate with your organization’s branding. When learners receive their digital credentials, the entire experience—from the credential page to the sharing process—feels like it’s coming directly from your institution. Here’s how it works:
 
 <br>
 
@@ -48,7 +48,7 @@ For example, if your organization is “MyUniversity,” you can create a custom
 ### SMTP White-labeling
 
 SMTP (Simple Mail Transfer Protocol) white-labeling allows you to customize the email notifications sent to learners during the credentialing process.
-You can configure CertifyMe to use your own SMTP server for sending emails. This ensures that all communication related to credentials—such as issuance notifications, sharing links, and reminders—comes from your institution’s email domain. By white-labeling SMTP, you maintain a consistent brand experience throughout the communication journey.
+You can configure CertifyMe to use your own SMTP server for sending emails. Confirm the supported sending arrangement and test each credential notification. Custom sender presentation alone does not guarantee authenticated delivery or inbox placement. By white-labeling SMTP, you maintain a consistent brand experience throughout the communication journey.
 
 <br>
 
@@ -58,7 +58,7 @@ Customize the content and design of email notifications sent to learners. You ca
 Tailor the email messages to align with your institution’s tone and style. Whether it’s a congratulatory email upon credential issuance or a reminder to share the credential, you have full control over the content.
 
 
-**CertifyMe ensures that the focus remains on your organization. Users won’t perceive CertifyMe as an external service; instead, they’ll associate the credentials with your brand.**
+**The approved branding scope can keep the institution prominent. Provider attribution and data-processing disclosures should remain accurate; white labeling is not concealment of an external processor.**
 
 <br>
 
@@ -96,9 +96,20 @@ You can include a captivating marketing banner image or even a video (e.g., a Vi
 CertifyMe allows you to add a branding message alongside the credential. Craft a compelling message that aligns with your brand values and encourages recipients to take action. Whether it’s visiting your website, exploring other courses, or sharing their achievement, this call to action reinforces your brand’s impact.
 
 
-**You can check out over [here](https://app.certifyme.online/verify/9cf66b9d10644),  how we implemented the above features to provide a customized credentialing solution for stem.org, catering to their unique brand and maximizing their visibility.**
+For bounded first-party implementation evidence, see the [approved anonymous case studies](/case-studies.html). This walkthrough does not assert a named customer's permission or a measured brand-visibility result.
 
 <br>
+
+
+## Launch checklist: domain, email and accessible presentation
+
+Have IT confirm the CNAME target, approved platform mapping and TLS hostname using the [custom-domain setup guide](/blog/customDomain.html). Branding assets alone do not configure a domain or a supported integration.
+
+For email, agree the approved sending service and align the visible From domain with authenticated delivery. Review SPF authorization, DKIM signing and DMARC alignment with the institution's email administrator. SPF, DKIM and DMARC have distinct roles; they do not guarantee delivery or eliminate phishing. Avoid adding multiple SPF records or changing a domain-wide DMARC policy without review. [Google's sender guidelines](https://support.google.com/a/answer/81126) provide a primary implementation reference. Do not send SMTP passwords or private keys through ordinary support messages.
+
+Check templates, long learner names, language variants, mobile display, keyboard navigation and accessible video captions. A visual signature or crest is not cryptographic proof. Keep issuer identity, achievement criteria and status intelligible; review [verification responsibilities](/certificate-verification) separately.
+
+Confirm current plan entitlement for custom domains, SMTP, banners and video before rollout. Measure optional sharing and recipient feedback with a stated cohort and period if engagement is a goal. Do not claim increased opens, trust or sharing rates without evidence.
 
 ## Conclusion 
 

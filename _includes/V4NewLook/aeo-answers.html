@@ -10,6 +10,6 @@
   <p>Published implementation context: <a href="{{ aeo_authority.url }}">this CertifyMe page</a>; <a href="/case-studies.html">scoped anonymous first-party cases</a>. First-party product descriptions are not independently validated deployment outcomes.</p>
   <ul>{% for source in aeo_authority.references %}<li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title | escape }}</a> — {{ source.source_type }}; observed {{ source.observed_on }}{% unless source.publication_date == 'NOT PUBLICLY SPECIFIED' %}; published/updated {{ source.publication_date }}{% endunless %}.</li>{% endfor %}</ul>
   <p><a href="/platform-overview#credential-entities">Definitions and relationships</a> · <a href="/comprehensive-learner-record">learner-record provenance</a> · <a href="/skills-taxonomy-mapping">reviewed skills mappings</a> · <a href="/compare/">evidence-led platform comparisons</a></p>
-  <p class="small">Editorial update: 4 October 2026. Evaluate published implementation context against the actual product profile, evidence and institutional contract.</p>
+  <p class="small">Editorial update: 4 October 2026. Evaluate published implementation context against the actual product profile, evidence and institutional contract. Existing blog attribution is retained where published; no new named reviewer, human-expert approval or live AI citation result is claimed.</p>
 </section>
 {% endif %}
