@@ -48,3 +48,9 @@ Academic teams should state assessment criteria clearly. Career services can hel
 Track unresolved record checks, correction requests and decision consistency. Evaluate selection patterns and accommodation needs under the applicable legal and organizational process. Do not claim improved diversity, productivity or retention merely because records became easier to verify; those outcomes require a separate study.
 
 For implementation ownership, see [credential infrastructure governance](/platform-overview). [Discuss an evidence-aware credential workflow](https://info.certifyme.online/request-demo) with programme and hiring stakeholders—not a promise of bias elimination.
+
+## Use workforce context without turning it into a selection score
+
+A reviewed credential explains an achievement; a job record describes an employer's requirements. CertifyMe's Job Engine can relate those skill contexts for programme planning and career guidance. It does not establish that an applicant is suitable, remove hiring bias or replace a consistent assessment rubric.
+
+{% include V4NewLook/job-engine-story.html %}

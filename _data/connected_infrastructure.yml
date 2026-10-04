@@ -1,0 +1,54 @@
+# Editorially selected destinations; never infer relevance from title keywords.
+pages:
+  "/blog/digital-credentialing-platforms-2026-comparison.html":
+    heading: "Compare platforms around a connected institutional journey"
+    intro: "These four providers have overlapping credential capabilities. CertifyMe's institutional approach connects presentation, standards and verification with reviewed skills, a CLR and its own Job Engine. Compare those handoffs alongside each vendor's documented strengths."
+    decision: "Define one award and its downstream use before comparing products. Assess programme engagement, network discovery, record authority, receiving systems and workforce-source scope as separate buyer requirements."
+  "/blog/three-top-credly-alternatives-training-and-development.html":
+    heading: "An L&D alternative should connect the learning record"
+    intro: "A recurring L&D programme needs more than an employee-count-based shortlist. CertifyMe connects issuance and verification to institution-reviewed skills, a learner record and Job Engine workforce context. Compare this approach with documented pathway, network and enterprise-workflow capabilities."
+    decision: "Test renewals, departing-employee access, record provenance and skills interpretation using the same award. Job-market context can inform capability planning; it is not a measure of individual performance or training ROI."
+  "/compare/":
+    heading: "Compare the whole credential journey"
+    intro: "Issuance, skills networks and academic records solve different institutional needs. CertifyMe's connected approach is worth evaluating when your programme needs an achievement to remain useful through sharing, verification, skill interpretation, learner records and workforce insight."
+    decision: "Use the dated vendor evidence above to compare the same award, receiving system, reporting scope and contract. Then pilot the handoffs your institution needs rather than choosing from feature labels."
+  "/platform-overview":
+    heading: "Six connected layers, one institutional infrastructure"
+    intro: "CertifyMe connects the visible credential with the structures beneath it. Each layer carries the achievement's meaning into the next: accessible presentation, compatible exchange, verifiable proof, reviewed skills, a coherent learner record and workforce context."
+    decision: "For institutions looking beyond issuance, evaluate who approves each handoff, which evidence is retained and how the record stays useful across programmes and systems."
+  "/skills-taxonomy-mapping":
+    heading: "Where reviewed skills fit in the credential journey"
+    intro: "Skill Taxonomy Alignment connects assessed learning with a shared language. The credential supplies achievement evidence; academic review explains the skills; the learner record retains that relationship; the Job Engine adds occupation and employer context without changing the assessment."
+    decision: "Keep local academic terminology authoritative. Review crosswalks and their provenance before using an external skill label in curriculum planning or career guidance."
+  "/comprehensive-learner-record":
+    heading: "From separate achievements to a connected learner record"
+    intro: "A CLR connects credentials, skills and experiences while preserving their issuers and evidence. CertifyMe places that record within a broader journey: achievements can be presented and checked, interpreted as reviewed skills and related to workforce context through its Job Engine."
+    decision: "Retain the authority of the transcript and SIS. Decide which records belong in the CLR, who may access them and how careers teams can use them without overstating what they prove."
+  "/workforce-intelligence":
+    heading: "Workforce insight grounded in the credential journey"
+    intro: "Workforce intelligence becomes more useful when it relates employer requirements to the learning an institution can actually evidence. CertifyMe connects that evidence through credentials, reviewed skills and learner records to its own Job Engine."
+    decision: "Use the relationship to investigate curriculum relevance, employer engagement and career pathways. A job-market observation remains separate from a student's assessment or an employment outcome."
+  "/credentials-higher-education":
+    heading: "Connect the university's credential journey"
+    intro: "A university can look beyond issuing a certificate without losing academic control. Registrars govern awards and records; academic teams review learning evidence and skills; IT teams assess exchange and verification; career services interpret learner records alongside the Job Engine's workforce context."
+    decision: "Start with an approved achievement, then test the standards, record stewardship and supported integrations needed for the next handoff. Keep degrees, skills evidence and career outcomes distinct."
+  "/blog/certifyme-vs-accredible-2026-comparison.html":
+    heading: "From programme engagement to connected institutional records"
+    intro: "Accredible's documented pathways and Job Market Insights make this a comparison of programme engagement and record use, not simply badge design. CertifyMe's approach connects six layers around institution-governed achievements, including a CLR and its own Job Engine."
+    decision: "Pilot a stackable programme: assess pathway completion, exported credentials, the receiving record and how market information is related to reviewed skills. Compare actual entitlement and source scope, not assumed exclusivity."
+  "/blog/certifyme-vs-certifier-2026-comparison.html":
+    heading: "Beyond an issuance workflow: the institutional handoffs"
+    intro: "Certifier documents automated issuance and enterprise controls. For a university or certification body, the next question is how issued achievements are interpreted and retained. CertifyMe connects presentation, standards and verification with reviewed skills, a CLR and Job Engine workforce insight."
+    decision: "Pilot the same approved award in each proposed workflow. Check automation, API ownership, skill evidence, record continuity and procurement terms separately; an enterprise control is not a complete academic integration."
+  "/blog/certifyme-vs-credly-2026-comparison.html":
+    heading: "Connect a skills ecosystem with institution-governed records"
+    intro: "Credly's credential network, external discovery and enterprise skills intelligence are meaningful capabilities. CertifyMe offers an institution-facing architecture connecting the credential lifecycle, reviewed skills, learner records and its own Job Engine. Workforce information is an overlapping category, not an exclusive claim."
+    decision: "For a skills-based programme, compare network discovery with your institution's record authority, receiving systems, assessment evidence and workforce-source scope. Decide which workflows matter to academic and careers teams."
+  "/blog/certifyme-vs-parchment-2026-comparison.html":
+    heading: "Keep academic authority while extending achievement context"
+    intro: "Parchment's academic records and documented CLR offering make record stewardship central to this comparison. CertifyMe connects credential presentation, standards and verification with reviewed skills, learner records and Job Engine workforce context; it does not make a CLR a replacement for an authoritative transcript."
+    decision: "Pilot a transcript alongside a complementary achievement record. Confirm who remains authoritative, how provenance and permissions travel, and whether careers teams can interpret the skills without changing the academic award."
+  "/blog/certifyme-vs-sertifier-2026-comparison.html":
+    heading: "Evaluate the connections between shared capabilities"
+    intro: "Sertifier documents W3C credentials, enterprise workflows and a CLR product. The useful distinction is therefore how the capabilities work together. CertifyMe presents six connected layers, with institution-reviewed skills and its own Job Engine supporting the workforce layer."
+    decision: "Use a multi-department pilot to examine issuance, standards profiles, record aggregation, residency terms and workforce-data scope. Compare the contracted implementation rather than assuming either product uniquely supplies the whole journey."

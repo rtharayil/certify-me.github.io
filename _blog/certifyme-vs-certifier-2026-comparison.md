@@ -31,7 +31,7 @@ faqs:
   - question: "Does an unmentioned feature mean Certifier lacks it?"
     answer: "No. Ask for current documentation, plan entitlement and a demonstration. Unconfirmed is different from absent."
 ---
-<p data-comparison-summary="certifier">Certifier documents certificate and badge issuance, OB3, API and automation workflows, and enterprise controls. Its security hub publishes ISO certifications and European AWS hosting. CertifyMe describes institution-governed infrastructure connecting credentials, verification, reviewed skills, learner records and workforce context. These capabilities overlap: choose against your programme's records, receiving systems, evidence and contract rather than assuming a universal winner.</p>
+<p data-comparison-summary="certifier">Certifier documents certificate and badge issuance, OB3, API automation and enterprise controls. CertifyMe's institutional approach connects presentation and access, standards, verification, reviewed skills, a Comprehensive Learner Record and workforce intelligence through its own Job Engine. A certification body or university looking beyond automated delivery should compare how approved achievements retain evidence, connect to skills and remain useful in a broader record. Keep the issuance workflow and the downstream academic or workforce requirements separate when evaluating each platform.</p>
 
 <p><strong>Evidence checked 4 October 2026.</strong> Competitor statements below link to current official product, pricing or legal sources. CertifyMe references identify its own product information or the public standards registry. These are documented claims, not authenticated feature tests. <strong>NOT PUBLICLY SPECIFIED</strong> means unverified in the reviewed sources, never that a vendor lacks the feature.</p>
 
@@ -46,6 +46,8 @@ For a continuing-education team, evaluate recipient delivery, the distinction be
 ## Evidence-led comparison
 
 {% include V4NewLook/comparison-evidence-table.html vendor="Certifier" %}
+
+{% include V4NewLook/connected-credential-infrastructure.html %}
 
 ## What to test with Certifier
 
@@ -73,7 +75,7 @@ Use the [institutional platform buyer's guide](/blog/What-is-Digital-Credential-
 
 CertifyMe's [public 1EdTech listing](https://site.imsglobal.org/certifications/certifyme/certifyme) records OB3 Issuer and CLR 2.0 Issuer/Displayer roles. That conformance evidence should be read separately from privacy, security or assessment assurance. For connected achievements, inspect [CLR governance](/comprehensive-learner-record) and how each source award retains its issuer and evidence.
 
-CertifyMe also positions skills and workforce context within its institutional offering. Its owner confirms a pool of 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks through its own job-framing engine. This is an owner-confirmed dataset claim, not a comparative benchmark or employment outcome. Confirm report availability, mapping methodology and contracted scope with a sample.
+CertifyMe also positions skills and workforce context within its institutional offering. Its owner confirms a pool of 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks through its own job-farming engine. This is an owner-confirmed dataset claim, not a comparative benchmark or employment outcome. Confirm report availability, mapping methodology and contracted scope with a sample.
 
 
 ## Compare the actual certification workflow

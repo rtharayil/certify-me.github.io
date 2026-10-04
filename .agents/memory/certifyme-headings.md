@@ -5,6 +5,12 @@ description: Reliable audit scope and proof boundaries when checking heading hie
 
 Audit parsed, rendered HTML rather than matching heading strings in source or output with regular expressions. Ignore comments, scripts and templates; report indexable marketing pages separately from noindex pages, legacy demos and utility outputs.
 
+Scope page-title extraction to the document head; SVG `<title>` elements describe diagrams, not page metadata.
+
+**Why:** A historical audit snapshot captured “Credential Comparison” from an inline diagram instead of the glossary page's actual document title, producing a false metadata-change warning.
+
+**How to apply:** Verify title mismatches against the rendered document head before treating them as SEO regressions. Do not assume a saved audit's title field is head-scoped.
+
 **Why:** A literal-tag audit falsely reported duplicate H1s on nearly every integration page because it counted a commented statistics heading. Old audit totals were also misleading because certificate demos and utility pages were mixed with public marketing content.
 
 **How to apply:** Rebuild before auditing. Verify emitted headings and their actual source before editing; do not infer a defect from a matching string in a comment. Give legacy demo issues their own scope instead of silently changing their search visibility.

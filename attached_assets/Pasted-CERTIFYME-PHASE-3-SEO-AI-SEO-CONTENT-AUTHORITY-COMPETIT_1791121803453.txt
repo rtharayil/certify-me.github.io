@@ -1,0 +1,1677 @@
+CERTIFYME — PHASE 3 SEO, AI SEO, CONTENT AUTHORITY & COMPETITIVE DIFFERENTIATION
+
+============================================================
+IMPORTANT — READ THIS ENTIRE PROMPT BEFORE MAKING ANY CHANGE
+============================================================
+
+You are working on the CertifyMe website:
+
+https://www.certifyme.online/
+
+This website has already gone through TWO previous rounds of a large SEO transformation based on a 33-part SEO implementation brief.
+
+DO NOT rerun the original 33-part SEO transformation.
+
+DO NOT blindly repeat:
+- sitemap work
+- canonical work
+- metadata work
+- schema work
+- image-dimension work
+- robots work
+- generic technical SEO work
+- mobile regression work
+- the previous SEO audit
+- broad site-wide rewriting
+
+Those activities have already been performed.
+
+The purpose of THIS phase is different.
+
+============================================================
+PRIMARY OBJECTIVE
+============================================================
+
+The goal of this phase is to make the CertifyMe website communicate and prove a much stronger strategic differentiation:
+
+CERTIFYME IS NOT JUST A DIGITAL CREDENTIAL ISSUING PLATFORM.
+
+CERTIFYME IS DIGITAL CREDENTIAL INFRASTRUCTURE FOR INSTITUTIONS.
+
+Its differentiation is the connected six-layer architecture:
+
+01. PRESENTATION & ACCESS
+02. STANDARDS & INTEROPERABILITY
+03. VERIFICATION & TRUST
+04. SKILL TAXONOMY ALIGNMENT
+05. COMPREHENSIVE LEARNER RECORD
+06. WORKFORCE INTELLIGENCE & OPPORTUNITY
+
+These are NOT six unrelated product features.
+
+They are interconnected layers of one institutional infrastructure.
+
+The website must make this relationship obvious.
+
+The strategic journey is:
+
+ACHIEVEMENT
+↓
+PRESENTATION & ACCESS
+↓
+STANDARDS & INTEROPERABILITY
+↓
+VERIFICATION & TRUST
+↓
+SKILL TAXONOMY ALIGNMENT
+↓
+COMPREHENSIVE LEARNER RECORD
+↓
+WORKFORCE INTELLIGENCE & OPPORTUNITY
+
+The ultimate message should be:
+
+An institution does not have to stop at issuing a digital credential.
+
+CertifyMe can connect the achievement to standards, verification, skills, the learner's broader record and workforce intelligence.
+
+This is the core strategic differentiation that must be reflected throughout the website.
+
+============================================================
+CRITICAL MARKETING PRINCIPLE
+============================================================
+
+The website is a MARKETING WEBSITE for CertifyMe.
+
+The comparison pages are NOT intended to be neutral Wikipedia pages.
+
+They must remain factually accurate, evidence-based and credible.
+
+BUT they should also be designed to help an institutional buyer understand:
+
+"Why should I consider CertifyMe?"
+
+The correct balance is:
+
+80% useful/factual buyer information
+20% CertifyMe differentiation and soft selling
+
+DO NOT hard sell.
+
+DO NOT write:
+
+"CertifyMe is the best."
+
+"CertifyMe is clearly superior."
+
+"Nobody else can do this."
+
+"Only CertifyMe has this."
+
+"Competitor X cannot do this."
+
+unless the statement is independently verified from current authoritative evidence.
+
+Instead, use positive differentiation.
+
+Examples:
+
+"CertifyMe takes a broader infrastructure approach..."
+
+"CertifyMe extends the credential lifecycle into..."
+
+"For institutions looking beyond credential issuance..."
+
+"One of CertifyMe's distinguishing characteristics is..."
+
+"CertifyMe connects these capabilities through a common infrastructure..."
+
+"This becomes particularly relevant for institutions seeking..."
+
+The reader should naturally reach the conclusion:
+
+"CertifyMe addresses a broader institutional problem."
+
+Do not force that conclusion through aggressive sales language.
+
+============================================================
+SOURCE OF TRUTH
+============================================================
+
+Before modifying content, inspect the current repository and existing SEO handover/report files.
+
+Look for and use the existing approved claims source of truth, including:
+
+_data/approved_claims.yml
+
+and existing:
+
+- 33-part-analysis-handover.md
+- 33-part-status-matrix.json
+- scorecard.json
+- final-issue-register.json
+- change-log.json
+- competitor evidence files
+- existing SEO reports
+- existing product/marketing content
+
+Do NOT create conflicting facts.
+
+If an existing approved source gives a value, use that value.
+
+If a fact is not approved or cannot be verified:
+
+DO NOT INVENT IT.
+
+Use:
+
+"Not publicly specified"
+
+or omit the claim.
+
+============================================================
+APPROVED JOB INTELLIGENCE POSITIONING
+============================================================
+
+CertifyMe has its own Job Engine / workforce intelligence infrastructure.
+
+The system:
+
+1. Sources jobs from company/job-provider sources.
+2. Continuously ingests job records.
+3. Enriches job information.
+4. Normalizes/structures job attributes.
+5. Maps relevant skills and taxonomies.
+6. Connects jobs with skill information.
+7. Supports workforce and opportunity intelligence.
+
+The currently approved positioning is:
+
+20 MILLION LIVE JOBS
+50,000 COMPANIES WORLDWIDE
+REFRESHED EVERY TWO WEEKS
+
+ONLY use these figures if they are still present in the approved source of truth.
+
+Do not increase them.
+
+Do not invent a larger number.
+
+Do not say "real-time" unless the approved evidence explicitly says so.
+
+Do not say:
+
+"all jobs"
+
+"every company"
+
+"guaranteed job matching"
+
+"guaranteed employment"
+
+"guaranteed placement"
+
+unless explicitly supported.
+
+The correct positioning is:
+
+WORKFORCE INTELLIGENCE
+JOB-MARKET VISIBILITY
+SKILL-TO-OPPORTUNITY RELATIONSHIPS
+OPPORTUNITY INTELLIGENCE
+
+============================================================
+WHY THE JOB ENGINE MATTERS
+============================================================
+
+Do not present the Job Engine as an isolated feature.
+
+Its strategic importance is the connection:
+
+VERIFIED ACHIEVEMENT
+↓
+SKILLS
+↓
+LEARNER RECORD
+↓
+WORKFORCE DEMAND
+↓
+OCCUPATIONS / JOBS
+↓
+OPPORTUNITIES
+
+The Job Engine is evidence that CertifyMe's workforce layer is a real infrastructure capability rather than simply a marketing statement about "career readiness."
+
+============================================================
+CERTIFYME SIX-LAYER MODEL
+============================================================
+
+Use the following six-layer model consistently.
+
+Do not rename the layers without a strong reason.
+
+------------------------------------------------------------
+01 — PRESENTATION & ACCESS
+------------------------------------------------------------
+
+Make achievement visible, branded, accessible and shareable through:
+
+- credential design
+- unique credential URLs
+- QR access
+- credential pages
+- sharing
+- portable access
+
+Position this as the visible/access layer of the credential.
+
+------------------------------------------------------------
+02 — STANDARDS & INTEROPERABILITY
+------------------------------------------------------------
+
+Use recognized standards and interoperable credential models, including where supported:
+
+- Open Badges 3.0
+- W3C Verifiable Credentials
+- standards-based credential exchange/interoperability
+
+Do not overstate certification.
+
+Clearly distinguish:
+- support
+- implementation
+- certification
+- interoperability
+
+Only make the claim supported by current evidence.
+
+------------------------------------------------------------
+03 — VERIFICATION & TRUST
+------------------------------------------------------------
+
+Establish:
+
+- issuer
+- recipient
+- achievement
+- authenticity
+- integrity
+- verification
+- credential status
+
+using appropriate cryptographic and verification mechanisms.
+
+QR codes are access mechanisms.
+
+Do not describe a QR code itself as proof of authenticity.
+
+------------------------------------------------------------
+04 — SKILL TAXONOMY ALIGNMENT
+------------------------------------------------------------
+
+Connect achievements to structured skills using, where supported:
+
+- ESCO
+- O*NET
+- institution-defined/custom frameworks
+- competency frameworks
+
+The important idea is:
+
+Achievement
+→ evidence
+→ learning outcome
+→ skill
+→ credential
+
+Do not imply that taxonomy mapping automatically proves competence.
+
+Make clear that institutions govern the relationship between learning outcomes, evidence and skills where applicable.
+
+------------------------------------------------------------
+05 — COMPREHENSIVE LEARNER RECORD
+------------------------------------------------------------
+
+Connect multiple forms of achievement into a broader learner record.
+
+This may include:
+
+- credentials
+- degrees
+- skills
+- competencies
+- assessments
+- projects
+- experiences
+- other verified achievements
+
+Position CLR as a connected learner record, not simply another certificate.
+
+Do not imply it automatically replaces the SIS or official transcript.
+
+------------------------------------------------------------
+06 — WORKFORCE INTELLIGENCE & OPPORTUNITY
+------------------------------------------------------------
+
+Connect verified learner/skill information with workforce intelligence.
+
+This includes:
+
+- skills
+- occupations
+- jobs
+- employers
+- labour-market information
+- opportunity intelligence
+- job intelligence
+
+CertifyMe's Job Engine is a core part of this layer.
+
+============================================================
+THE CENTRAL DIFFERENTIATION
+============================================================
+
+DO NOT present this as:
+
+"CertifyMe has six features."
+
+Present it as:
+
+"CertifyMe connects six layers into one institutional credential infrastructure."
+
+This distinction is critical.
+
+The website should communicate:
+
+A credential does not have to remain an isolated digital certificate.
+
+It can become:
+
+A VERIFIED ACHIEVEMENT
+→ STANDARDIZED
+→ TRUSTED
+→ SKILL-CONNECTED
+→ PART OF A LEARNER RECORD
+→ CONNECTED TO WORKFORCE INTELLIGENCE
+
+That is the core CertifyMe story.
+
+============================================================
+PHASE 1 — FULL CONTENT AUDIT BEFORE CHANGES
+============================================================
+
+Before modifying any page, identify:
+
+1. All comparison pages.
+2. All competitor-related blogs.
+3. All "alternative" pages.
+4. All "best platform" articles.
+5. All major digital credential articles.
+6. All skills articles.
+7. All CLR articles.
+8. All workforce/employability articles.
+9. All higher-education articles.
+10. All pages mentioning:
+   - digital credentials
+   - digital badges
+   - Open Badges
+   - W3C VC
+   - verification
+   - skills
+   - learner records
+   - workforce
+   - jobs
+   - career opportunities
+   - microcredentials
+
+Build a content inventory.
+
+For every page record:
+
+- URL
+- title
+- page type
+- current intent
+- ICP
+- current topic
+- six-layer concepts already present
+- missing six-layer concepts
+- Job Engine relevance
+- current CTA
+- competitor relevance
+- recommended action
+
+Recommended actions:
+
+KEEP
+IMPROVE
+REWRITE
+CONSOLIDATE
+NO CHANGE
+
+Do not make destructive changes automatically.
+
+============================================================
+PHASE 2 — COMPARISON PAGE AUDIT
+============================================================
+
+Audit all current comparison pages.
+
+At minimum inspect:
+
+/compare/
+
+/blog/certifyme-vs-accredible-2026-comparison.html
+/blog/certifyme-vs-certifier-2026-comparison.html
+/blog/certifyme-vs-credly-2026-comparison.html
+/blog/certifyme-vs-parchment-2026-comparison.html
+/blog/certifyme-vs-sertifier-2026-comparison.html
+
+Also find any other competitor comparison pages.
+
+For each page determine:
+
+A. Does it contain factual comparison data?
+
+B. Does it explain what the differences mean for an institution?
+
+C. Does it clearly explain CertifyMe's broader infrastructure model?
+
+D. Does it explain the six-layer architecture?
+
+E. Does it explain how the six layers connect?
+
+F. Does it explain skills?
+
+G. Does it explain CLR?
+
+H. Does it explain workforce intelligence?
+
+I. Does it explain the Job Engine where relevant?
+
+J. Does it use the approved job data?
+
+K. Does it give the reader a natural reason to consider CertifyMe?
+
+L. Is the CertifyMe differentiation too weak?
+
+M. Is the page too sales-heavy?
+
+N. Are competitor claims supported?
+
+============================================================
+PHASE 3 — COMPETITOR RESEARCH
+============================================================
+
+Before changing factual competitor information, verify current competitor information.
+
+Competitors:
+
+- Accredible
+- Certifier
+- Credly
+- Parchment
+- Sertifier
+
+Use CURRENT primary sources whenever possible.
+
+Verify:
+
+- ICP
+- positioning
+- credential issuance
+- digital badges
+- Open Badges
+- W3C VC
+- CLR
+- skills
+- learner records
+- workforce intelligence
+- verification
+- analytics
+- APIs
+- integrations
+- security
+- data residency
+- pricing
+- contract model
+- higher education
+- enterprise
+- certification bodies
+
+For every important comparison claim record:
+
+Vendor
+Capability
+Claim
+Source URL
+Source date
+Confidence
+
+If the vendor does not publicly specify something:
+
+NOT PUBLICLY SPECIFIED
+
+Never infer that a competitor lacks a feature because it is not visible on their website.
+
+============================================================
+PHASE 4 — REBUILD THE COMPARISON PAGE STORY
+============================================================
+
+Each major comparison page should use the following conceptual structure.
+
+------------------------------------------------------------
+SECTION 1 — DIRECT BUYER ANSWER
+------------------------------------------------------------
+
+Start with a concise, useful answer.
+
+Example:
+
+"Both platforms support digital credentialing, but they take different approaches. [Competitor] focuses on X, while CertifyMe positions digital credentials as part of a broader institutional infrastructure connecting presentation, standards, verification, skills, learner records and workforce intelligence."
+
+Adapt this to the actual competitor.
+
+Do not use generic copy.
+
+------------------------------------------------------------
+SECTION 2 — FACTUAL COMPARISON
+------------------------------------------------------------
+
+Keep the existing factual comparison table.
+
+Do not remove useful data.
+
+Use:
+
+Yes
+No
+Not publicly specified
+Depends on plan
+Depends on product
+Evidence available
+
+where appropriate.
+
+Do not manipulate competitor information.
+
+------------------------------------------------------------
+SECTION 3 — WHAT THE DIFFERENCE MEANS
+------------------------------------------------------------
+
+Interpret the factual table.
+
+Do not simply list features.
+
+Explain what the differences mean to:
+
+- university leadership
+- CIO/IT
+- registrar
+- academic leadership
+- career services
+- certification bodies
+- enterprise L&D
+
+where relevant.
+
+------------------------------------------------------------
+SECTION 4 — WHERE CERTIFYME TAKES A BROADER INFRASTRUCTURE APPROACH
+------------------------------------------------------------
+
+This is the major differentiation section.
+
+Use a headline similar to:
+
+"Where CertifyMe Takes a Broader Infrastructure Approach"
+
+Do not use exactly the same heading on every page if another natural heading is better.
+
+Explain the six layers.
+
+------------------------------------------------------------
+SECTION 5 — THE SIX-LAYER CERTIFYME ARCHITECTURE
+------------------------------------------------------------
+
+Present:
+
+01 Presentation & Access
+↓
+02 Standards & Interoperability
+↓
+03 Verification & Trust
+↓
+04 Skill Taxonomy Alignment
+↓
+05 Comprehensive Learner Record
+↓
+06 Workforce Intelligence & Opportunity
+
+Explain each briefly.
+
+The emphasis must be:
+
+CONNECTED ARCHITECTURE
+
+not six isolated features.
+
+------------------------------------------------------------
+SECTION 6 — WHY THE CONNECTION MATTERS
+------------------------------------------------------------
+
+Explain:
+
+Traditional credential workflow:
+
+Achievement
+→ Certificate
+→ Share
+
+CertifyMe infrastructure:
+
+Achievement
+→ Credential
+→ Standards
+→ Verification
+→ Skills
+→ Learner Record
+→ Workforce Intelligence
+→ Opportunity
+
+Do not insult competitors.
+
+The point is that CertifyMe is designed around the broader institutional journey.
+
+------------------------------------------------------------
+SECTION 7 — SKILLS + LEARNER RECORD
+------------------------------------------------------------
+
+Explain that CertifyMe can connect:
+
+- achievement
+- learning outcomes
+- evidence
+- skills
+- credentials
+- learner records
+
+This is particularly important for universities.
+
+Link contextually to:
+
+/skills-taxonomy-mapping
+
+/comprehensive-learner-record
+
+------------------------------------------------------------
+SECTION 8 — WORKFORCE INTELLIGENCE + JOB ENGINE
+------------------------------------------------------------
+
+Where relevant, include a concise section explaining:
+
+"Beyond the credential, CertifyMe connects institutional achievement and skills data to workforce intelligence."
+
+Explain the Job Engine.
+
+Use approved current figures:
+
+20M live jobs
+50K companies worldwide
+refreshed every two weeks
+
+ONLY if confirmed by the approved claims source.
+
+Explain:
+
+- job ingestion
+- enrichment
+- skill mapping
+- taxonomy alignment
+- occupation/job relationships
+- workforce intelligence
+
+Do not promise employment.
+
+Link to:
+
+/workforce-intelligence
+
+------------------------------------------------------------
+SECTION 9 — INSTITUTIONAL VALUE
+------------------------------------------------------------
+
+Translate the architecture into outcomes.
+
+For universities:
+
+- trusted digital achievements
+- standards interoperability
+- skill visibility
+- connected learner records
+- workforce relevance
+- opportunity intelligence
+
+For certification bodies:
+
+- credential lifecycle
+- verification
+- portability
+- standards
+- skill representation
+- workforce relevance
+
+For enterprise:
+
+- credentials
+- verification
+- skills
+- learning records
+- workforce intelligence
+
+Only include capabilities supported by the product.
+
+------------------------------------------------------------
+SECTION 10 — EVIDENCE
+------------------------------------------------------------
+
+Where possible connect the claims to:
+
+- standards
+- product documentation
+- security pages
+- case studies
+- approved metrics
+- relevant product pages
+
+Do not make unsupported claims.
+
+------------------------------------------------------------
+SECTION 11 — SOFT CTA
+------------------------------------------------------------
+
+End with a natural CertifyMe CTA.
+
+Examples:
+
+"Explore the CertifyMe Digital Credential Infrastructure"
+
+"See how CertifyMe connects credentials, skills and learner records"
+
+"Explore CertifyMe for Higher Education"
+
+Avoid:
+
+"Buy now."
+
+"CertifyMe is the obvious choice."
+
+============================================================
+PHASE 5 — COMPETITOR-SPECIFIC DIFFERENTIATION
+============================================================
+
+Do NOT copy the same comparison language across every competitor.
+
+For each competitor identify:
+
+"What is the buyer actually comparing?"
+
+Then adapt.
+
+For a credential-focused competitor:
+
+Emphasize:
+
+credential → verification → skills → CLR → workforce
+
+For a network/skills-focused competitor:
+
+Emphasize:
+
+institution-controlled infrastructure
+→ credential lifecycle
+→ standards
+→ learner record
+→ institutional workforce intelligence
+
+For a transcript/academic-record-focused provider:
+
+Emphasize:
+
+credential + skills + CLR + workforce intelligence
+
+For an enterprise credential platform:
+
+Emphasize:
+
+connected six-layer architecture
++ institutional governance
++ standards
++ skills
++ workforce
+
+The difference should be meaningful.
+
+============================================================
+PHASE 6 — SOFT SELL
+============================================================
+
+Use approximately:
+
+80% objective information
+20% CertifyMe differentiation
+
+The page should never feel like:
+
+"CertifyMe says we are better."
+
+It should feel like:
+
+"Here are the facts. Here is the architectural difference. Here is why that difference may matter to your institution."
+
+Good language:
+
+"CertifyMe's broader approach..."
+
+"CertifyMe connects..."
+
+"CertifyMe extends..."
+
+"For institutions looking beyond..."
+
+"This can be particularly valuable when..."
+
+"One distinguishing aspect of CertifyMe is..."
+
+Avoid:
+
+"best"
+"number one"
+"unmatched"
+"only platform"
+"no competitor can"
+"competitors cannot"
+"superior"
+
+unless independently supported.
+
+============================================================
+PHASE 7 — SIX-LAYER CONTENT ACROSS THE BLOG
+============================================================
+
+Do not force the six-layer model into every article.
+
+Identify the most relevant existing articles.
+
+Prioritize articles about:
+
+- digital credentials
+- digital badges
+- Open Badges
+- W3C VC
+- credential verification
+- skills
+- skills taxonomy
+- CLR
+- learner records
+- microcredentials
+- higher education
+- employability
+- workforce intelligence
+- career outcomes
+- credential platforms
+- digital transformation
+
+For relevant articles:
+
+1. Add natural contextual references to the six-layer architecture.
+2. Link to relevant authority pages.
+3. Explain how the article's topic fits into the broader infrastructure.
+4. Use the Job Engine where workforce/job intelligence is genuinely relevant.
+5. Do not insert irrelevant promotional sections.
+
+============================================================
+PHASE 8 — JOB ENGINE CONTENT
+============================================================
+
+Find the strongest existing pages where Job Engine/workforce intelligence should be emphasized.
+
+Prioritize:
+
+- workforce intelligence
+- skills taxonomy
+- CLR
+- higher education
+- employability
+- career opportunities
+- digital credentials and careers
+- skills-based education
+- credential-to-career content
+
+Explain the Job Engine accurately.
+
+The architecture is:
+
+JOB SOURCING
+→ JOB INGESTION
+→ JOB ENRICHMENT
+→ SKILL/TAXONOMY MAPPING
+→ OCCUPATION/JOB STRUCTURING
+→ WORKFORCE INTELLIGENCE
+→ OPPORTUNITY INSIGHT
+
+Use approved current scale:
+
+20M live jobs
+50K companies
+refreshed every two weeks
+
+Do not make unsupported claims about:
+- coverage
+- real-time updates
+- scraping every company
+- all global jobs
+- job placement
+- employment guarantees
+
+============================================================
+PHASE 9 — INTERNAL LINKING
+============================================================
+
+Comparison pages must contextually link to:
+
+Digital Credential Infrastructure
+Open Badges 3.0
+W3C Verifiable Credentials
+Skills Taxonomy Mapping
+Comprehensive Learner Record
+Workforce Intelligence
+Higher Education
+Security
+Verification
+Case Studies
+
+Do NOT simply put all links in a footer block.
+
+Place links at the point where the concept is discussed.
+
+Example:
+
+When discussing skills:
+
+"CertifyMe's Skills Taxonomy Mapping..."
+
+When discussing learner records:
+
+"Comprehensive Learner Record..."
+
+When discussing workforce:
+
+"Workforce Intelligence..."
+
+When discussing standards:
+
+"Open Badges 3.0..."
+
+This creates an AI-readable semantic network.
+
+============================================================
+PHASE 10 — AI SEO / AEO
+============================================================
+
+The objective is not to "stuff keywords for AI."
+
+The objective is to make CertifyMe the clearest first-party source for its own concepts.
+
+Every strategic page should clearly answer:
+
+What is it?
+Why does it matter?
+How does it work?
+How does CertifyMe implement it?
+What standards apply?
+How is it different?
+Who uses it?
+What are its limitations?
+
+The first 100–150 words should answer the core intent clearly.
+
+Use:
+
+- concise definitions
+- structured headings
+- tables where useful
+- FAQs
+- factual statements
+- evidence
+- internal links
+- genuine authors/reviewers where available
+
+Do not fabricate authors.
+
+Do not fabricate expert review.
+
+============================================================
+PHASE 11 — SIX-LAYER ENTITY RELATIONSHIP
+============================================================
+
+Make the following relationships explicit across the site:
+
+CertifyMe
+→ Digital Credential Infrastructure
+
+Digital Credential Infrastructure
+→ Presentation & Access
+→ Standards & Interoperability
+→ Verification & Trust
+→ Skills
+→ CLR
+→ Workforce Intelligence
+
+Skills
+→ Learning Outcomes
+→ Credentials
+→ CLR
+→ Occupations
+→ Workforce Demand
+
+CLR
+→ Credentials
+→ Skills
+→ Competencies
+→ Experiences
+→ Workforce
+
+Workforce Intelligence
+→ Skills
+→ Occupations
+→ Jobs
+→ Employers
+→ Opportunities
+
+This should be understandable to:
+
+Google
+ChatGPT
+Claude
+Perplexity
+Gemini
+human buyers
+
+without needing the system to infer the relationships.
+
+============================================================
+PHASE 12 — COMPETITOR CLAIM SAFETY
+============================================================
+
+Before publishing every competitor claim ask:
+
+"Can this statement be proven from a current authoritative source?"
+
+If YES:
+publish with source/evidence where appropriate.
+
+If NO:
+rewrite.
+
+Examples:
+
+BAD:
+
+"Credly does not provide workforce intelligence."
+
+GOOD:
+
+"Credly's public positioning emphasizes its credential network and workforce skills ecosystem. CertifyMe takes an additional infrastructure approach by connecting credentials, skills, learner records and its own job intelligence layer."
+
+BAD:
+
+"Accredible doesn't have CLR."
+
+GOOD:
+
+"Accredible's publicly documented platform focuses on X. CertifyMe additionally positions the Comprehensive Learner Record as a connected layer within its credential infrastructure."
+
+Never imply absence unless proven.
+
+============================================================
+PHASE 13 — CASE STUDIES
+============================================================
+
+Where relevant, connect case studies to the six layers.
+
+For example:
+
+Case study
+→ credential issuance
+→ verification
+→ skills
+→ learner record
+→ workforce
+
+Only use actual documented evidence.
+
+Do not manufacture outcomes.
+
+Do not manufacture customer names.
+
+Do not manufacture quotes.
+
+============================================================
+PHASE 14 — DESIGN
+============================================================
+
+The six-layer section should visually feel like a core CertifyMe architectural concept.
+
+Use the existing CertifyMe design system.
+
+Preferred visual language:
+
+- Indigo #4F46E5 where appropriate
+- white/light backgrounds
+- clean enterprise design
+- restrained visual hierarchy
+- no giant blue blocks
+- no excessive gradients
+- no "AI-generated" looking graphics
+
+The six layers should visually connect.
+
+Avoid six unrelated cards.
+
+Possible structure:
+
+01
+Presentation & Access
+↓
+02
+Standards & Interoperability
+↓
+03
+Verification & Trust
+↓
+04
+Skill Taxonomy Alignment
+↓
+05
+Comprehensive Learner Record
+↓
+06
+Workforce Intelligence & Opportunity
+
+Adapt to responsive design.
+
+============================================================
+PHASE 15 — DO NOT DAMAGE EXISTING SEO
+============================================================
+
+Before changing each URL:
+
+Record:
+
+- current URL
+- title
+- H1
+- metadata
+- canonical
+- current intent
+- existing internal links
+- schema
+- existing content
+
+Preserve URL unless there is a compelling reason.
+
+Do not:
+
+- delete pages
+- mass redirect
+- mass noindex
+- remove existing search intent
+- remove valuable competitor keywords
+- remove valuable informational content
+
+without evidence.
+
+============================================================
+PHASE 16 — IMPLEMENTATION
+============================================================
+
+Only after completing the audit and comparison research should implementation begin.
+
+Prioritize:
+
+P0:
+
+1. Comparison pages
+2. Comparison hub
+3. Digital Credential Infrastructure
+4. Skills Taxonomy
+5. Comprehensive Learner Record
+6. Workforce Intelligence
+7. Higher Education
+
+P1:
+
+8. Highest-value digital credential blogs
+9. Open Badges/W3C content
+10. Relevant employability/workforce articles
+11. Relevant case studies
+
+P2:
+
+12. Remaining blog articles
+
+Do not spend time rewriting low-value pages while P0 pages remain weak.
+
+============================================================
+PHASE 17 — ROUND 1 TEST
+============================================================
+
+After implementation run:
+
+SIX-LAYER VALIDATION ROUND 1
+
+For every major comparison page check:
+
+[ ] factual comparison remains
+[ ] competitor data remains
+[ ] sources/evidence remain
+[ ] CertifyMe positioning is clear
+[ ] six-layer model appears
+[ ] six layers are shown as connected
+[ ] Presentation & Access is represented
+[ ] Standards & Interoperability is represented
+[ ] Verification & Trust is represented
+[ ] Skill Taxonomy Alignment is represented
+[ ] CLR is represented
+[ ] Workforce Intelligence is represented
+[ ] Job Engine is mentioned where relevant
+[ ] approved job data is used correctly
+[ ] no employment guarantee
+[ ] no unsupported competitor criticism
+[ ] no hard sales language
+[ ] useful CTA exists
+[ ] contextual internal links exist
+[ ] mobile works
+[ ] schema remains valid
+
+Also inspect 20 priority blog articles.
+
+For each:
+
+- six-layer relevance
+- appropriate internal links
+- Job Engine relevance
+- institutional relevance
+- no forced marketing language
+
+Create:
+
+six-layer-round1.json
+six-layer-round1-report.md
+
+============================================================
+PHASE 18 — FIX ROUND 1
+============================================================
+
+Do not merely report failures.
+
+Fix all critical and high-priority issues found in Round 1.
+
+Then rerun affected tests.
+
+============================================================
+PHASE 19 — ROUND 2 INDEPENDENT TEST
+============================================================
+
+ROUND 2 MUST BE INDEPENDENT.
+
+Do not simply reuse Round 1 output.
+
+Pretend you are:
+
+1. A university CIO
+2. A registrar
+3. A dean
+4. Career services director
+5. Certification-body executive
+6. Enterprise L&D leader
+7. Google
+8. ChatGPT
+9. Perplexity
+10. A procurement officer
+
+Ask:
+
+"What is CertifyMe?"
+
+"What makes CertifyMe different?"
+
+"Why should a university choose CertifyMe?"
+
+"What happens beyond issuing a credential?"
+
+"How are skills connected?"
+
+"What is the CLR?"
+
+"How does CertifyMe connect skills to jobs?"
+
+"Does CertifyMe have its own workforce intelligence?"
+
+"What is the Job Engine?"
+
+"What does 20 million jobs mean?"
+
+"How does CertifyMe compare with Accredible?"
+
+"How does CertifyMe compare with Certifier?"
+
+"How does CertifyMe compare with Credly?"
+
+"How does CertifyMe compare with Parchment?"
+
+"How does CertifyMe compare with Sertifier?"
+
+For every question:
+
+PASS
+PARTIAL
+FAIL
+
+Explain why.
+
+============================================================
+PHASE 20 — SOFT-SELL TEST
+============================================================
+
+For every comparison page score:
+
+Factual credibility /10
+Competitor fairness /10
+CertifyMe differentiation /10
+Six-layer clarity /10
+Job Engine visibility /10
+Institutional relevance /10
+Soft-sell quality /10
+SEO intent preservation /10
+AI readability /10
+
+Target:
+
+No category below 8/10.
+
+If a page is below 8:
+
+fix it.
+
+============================================================
+PHASE 21 — COMPETITOR FAIRNESS TEST
+============================================================
+
+For every comparison page:
+
+Extract every sentence that makes a claim about the competitor.
+
+Classify:
+
+SUPPORTED
+UNSUPPORTED
+INTERPRETIVE
+OPINION
+
+Any UNSUPPORTED competitor claim must be removed or rewritten.
+
+Do not remove factual negative information if it is supported.
+
+Do not hide genuine limitations of CertifyMe either.
+
+The goal is:
+
+FACTUAL + CREDIBLE + CERTIFYME-FAVORABLE
+
+not:
+
+BIAS + UNSUPPORTED SALES CLAIMS
+
+============================================================
+PHASE 22 — SIX-LAYER COVERAGE TEST
+============================================================
+
+Create a matrix:
+
+Page
+Presentation & Access
+Standards
+Verification
+Skills
+CLR
+Workforce
+Job Engine
+Internal Links
+Soft Sell
+
+Use:
+
+STRONG
+PARTIAL
+MISSING
+
+The following pages must be STRONG:
+
+Comparison Hub
+CertifyMe vs Accredible
+CertifyMe vs Certifier
+CertifyMe vs Credly
+CertifyMe vs Parchment
+CertifyMe vs Sertifier
+Platform Overview
+Higher Education
+Skills Taxonomy
+CLR
+Workforce Intelligence
+
+Do not require every layer to be forced into unrelated blog articles.
+
+============================================================
+PHASE 23 — JOB ENGINE COVERAGE TEST
+============================================================
+
+Identify the 15 most relevant pages where Job Engine/workforce intelligence should appear.
+
+At minimum inspect:
+
+Workforce Intelligence
+Skills Taxonomy
+CLR
+Higher Education
+career/employability
+digital credential platform
+digital credentials
+credential-to-career
+skills-based education
+microcredentials
+relevant comparison pages
+
+For each determine:
+
+STRONG
+PARTIAL
+NOT RELEVANT
+
+Do not force Job Engine into pages where it does not belong.
+
+============================================================
+PHASE 24 — FINAL REPORT
+============================================================
+
+Create:
+
+six-layer-content-audit.csv
+six-layer-content-audit.json
+comparison-differentiation-audit.csv
+competitor-claim-audit.csv
+job-engine-content-audit.csv
+ai-answer-test.json
+six-layer-round1.json
+six-layer-round1-report.md
+six-layer-round2.json
+six-layer-round2-report.md
+phase3-final-report.md
+
+The final report must include:
+
+1. Number of pages audited.
+2. Number of comparison pages audited.
+3. Number of blogs audited.
+4. Number of pages modified.
+5. Number of pages not modified.
+6. Number of pages where six-layer differentiation was strengthened.
+7. Number of pages where Job Engine was added/improved.
+8. Number of pages where internal links were added.
+9. Number of competitor claims corrected.
+10. Number of unsupported claims removed.
+11. Round 1 result.
+12. Round 2 result.
+13. Remaining issues.
+14. Pages requiring human approval.
+15. Final score.
+
+============================================================
+FINAL SCORECARD
+============================================================
+
+Score:
+
+Six-Layer Positioning
+Comparison SEO
+Content Authority
+Institutional SEO
+Higher Education SEO
+AI SEO / AEO
+Entity Clarity
+Internal Linking
+Competitor Evidence
+Job Engine Visibility
+Soft-Sell Quality
+Factual Trust
+Technical SEO Regression
+Mobile Regression
+
+Give each /10.
+
+Do not inflate.
+
+============================================================
+FINAL ACCEPTANCE CRITERIA
+============================================================
+
+Do NOT declare COMPLETE unless:
+
+[ ] Comparison pages retain factual competitor data.
+
+[ ] Competitor data is evidence-based.
+
+[ ] CertifyMe is clearly differentiated.
+
+[ ] Six-layer architecture is clearly explained.
+
+[ ] Six layers are presented as interconnected.
+
+[ ] Presentation & Access is represented.
+
+[ ] Standards & Interoperability is represented.
+
+[ ] Verification & Trust is represented.
+
+[ ] Skill Taxonomy Alignment is represented.
+
+[ ] Comprehensive Learner Record is represented.
+
+[ ] Workforce Intelligence & Opportunity is represented.
+
+[ ] Job Engine is visible on relevant pages.
+
+[ ] Approved 20M/50K/two-week figures are used only where appropriate and verified.
+
+[ ] No unsupported competitor claims remain.
+
+[ ] No fabricated capabilities remain.
+
+[ ] No fabricated statistics remain.
+
+[ ] No employment guarantees are implied.
+
+[ ] Comparison pages remain soft-sell rather than hard-sell.
+
+[ ] Six-layer content is not forced into irrelevant articles.
+
+[ ] Relevant blogs link to authority pages.
+
+[ ] Comparison pages link to authority pages.
+
+[ ] Higher Education page reinforces the architecture.
+
+[ ] CLR page reinforces Skills and Workforce.
+
+[ ] Skills page reinforces CLR and Workforce.
+
+[ ] Workforce page reinforces Skills and CLR.
+
+[ ] Job Engine is explained as infrastructure rather than a generic job board.
+
+[ ] AI answer tests pass.
+
+[ ] Round 1 passes.
+
+[ ] Round 2 independently passes.
+
+[ ] No major technical SEO regression.
+
+[ ] No mobile regression.
+
+[ ] No CTA regression.
+
+============================================================
+IMPORTANT FINAL INSTRUCTION
+============================================================
+
+The objective is NOT to make CertifyMe sound louder.
+
+The objective is to make the website make a compelling, factual and logical case that:
+
+CERTIFYME IS A CONNECTED DIGITAL CREDENTIAL INFRASTRUCTURE.
+
+The differentiation is:
+
+PRESENTATION & ACCESS
++
+STANDARDS & INTEROPERABILITY
++
+VERIFICATION & TRUST
++
+SKILL TAXONOMY ALIGNMENT
++
+COMPREHENSIVE LEARNER RECORD
++
+WORKFORCE INTELLIGENCE & OPPORTUNITY
+
+The Job Engine provides the workforce layer with a real underlying data infrastructure.
+
+The resulting institutional journey is:
+
+ACHIEVEMENT
+→ CREDENTIAL
+→ STANDARDIZATION
+→ VERIFICATION
+→ SKILLS
+→ LEARNER RECORD
+→ WORKFORCE INTELLIGENCE
+→ OPPORTUNITY
+
+The reader should arrive at the conclusion:
+
+"CertifyMe is not simply a place to issue digital credentials. It is infrastructure for turning institutional achievement into trusted, portable, skill-connected learner and workforce intelligence."
+
+That conclusion must be earned through factual information, architecture, evidence and useful comparison — NOT through aggressive sales language.
+
+Do not declare completion unless both validation rounds support it.

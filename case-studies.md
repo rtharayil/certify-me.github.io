@@ -25,6 +25,15 @@ TestimonialTitle: Our Happy Customers
     <p><strong>Problem:</strong> {{ study.problem | escape }}</p>
     <p><strong>Implementation:</strong> {{ study.solution | escape }}</p>
     <p><strong>Results:</strong> {{ study.outcome | escape }}</p>
+    <h4>Which parts of the connected journey does this case evidence?</h4>
+    {% case study.id %}
+    {% when "executive-education" %}
+    <p><strong>Presentation &amp; Access → Verification &amp; Trust → Skill Taxonomy Alignment.</strong> The approved account describes branded, verifiable credentials, LMS-connected delivery and skills mapping. These are documented implementation relationships, not evidence that every six-layer capability was deployed in this project.</p>
+    {% when "workforce-training" %}
+    <p><strong>Presentation &amp; Access → Skill Taxonomy Alignment → training-record context.</strong> The approved account connects credential issuance, ESCO mapping and adaptable training records. Training records alone do not establish a CLR 2.0 deployment; the case does not document a Job Engine rollout or employment outcome.</p>
+    {% when "applied-sciences" %}
+    <p><strong>Presentation &amp; Access → Verification &amp; Trust → Skill Taxonomy Alignment → learner-profile context → Workforce Intelligence &amp; Opportunity.</strong> Competency-linked verified badges, profiles, a showcase directory and job intelligence connect learning evidence with career-services activity. A learner profile is not, by itself, proof of a CLR standards implementation. The engagement increase is not a placement or employment measure.</p>
+    {% endcase %}
   </article>
   {% endfor %}
   <p>Assess <a href="/platform-overview">implementation responsibilities</a>, <a href="/skills-taxonomy-mapping">skills mapping</a>, <a href="/comprehensive-learner-record">learner records</a> and <a href="/workforce-intelligence">workforce relevance</a> against your own programme. Career-services engagement is not the same as graduate employment.</p>

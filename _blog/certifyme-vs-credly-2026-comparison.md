@@ -33,7 +33,7 @@ faqs:
   - question: "Do signed credentials independently identify applicants?"
     answer: "No. A signed subject identifier is not independent real-world identity proofing. The receiving organization needs an appropriate recipient-matching policy."
 ---
-<p data-comparison-summary="credly">Credly by Pearson documents Acclaim credential programmes, skills-oriented enterprise use cases, analytics and integrations. Its OB3 page specifically documents import and verification of OB2/OB3 badges from other issuers. CertifyMe describes institution-governed infrastructure connecting credentials, verification, reviewed skills, learner records and workforce context. These capabilities overlap: choose against your programme's records, receiving systems, evidence and contract rather than assuming a universal winner.</p>
+<p data-comparison-summary="credly">Credly by Pearson documents a credential network, enterprise skills intelligence, external discovery and OB2/OB3 import and verification. CertifyMe connects presentation and access, standards, verification, institution-reviewed skills, a Comprehensive Learner Record and workforce intelligence through its own Job Engine. For skills-based programmes, consider how network discovery fits alongside your institution's authority over achievement evidence and learner records. Both describe workforce capabilities: compare their sources, supported workflows and intended users rather than assuming that workforce intelligence belongs to only one provider.</p>
 
 <p><strong>Evidence checked 4 October 2026.</strong> Competitor statements below link to current official product, pricing or legal sources. CertifyMe references identify its own product information or the public standards registry. These are documented claims, not authenticated feature tests. <strong>NOT PUBLICLY SPECIFIED</strong> means unverified in the reviewed sources, never that a vendor lacks the feature.</p>
 
@@ -48,6 +48,8 @@ This is a vendor-published description, not a new audit of data quality or cover
 ## Evidence-led comparison
 
 {% include V4NewLook/comparison-evidence-table.html vendor="Credly" %}
+
+{% include V4NewLook/connected-credential-infrastructure.html %}
 
 ## What to test with Credly
 
@@ -70,7 +72,7 @@ No new human reviewer or independent security verification is claimed. Existing 
 | Evaluation area | Credly | CertifyMe | Institutional test |
 |---|---|---|---|
 | External credential discovery | Published searchable network | Institutional credential/showcase positioning | Visibility settings, consent and recipient control |
-| Market context | Published Occupation Insights | Owner-confirmed dataset and job-framing scope | Same skills, region, dates and sample roles |
+| Market context | Published Occupation Insights | Owner-confirmed dataset and job-farming scope | Same skills, region, dates and sample roles |
 | Achievement standards | Request current exact role/version evidence | Public OB3 issuer listing | Export into the intended receiver; inspect proof/status |
 | Connected learning records | Confirm current programme scope | Public CLR issuer/displayer roles | Source provenance, correction and recipient association |
 | Operations and security | Request current documentation | Request current documentation | Permissions, integration exceptions, audit scope and residency |
@@ -88,4 +90,4 @@ Use [skills taxonomy mapping](/skills-taxonomy-mapping) to review what a capabil
 
 CertifyMe's [1EdTech registry listing](https://site.imsglobal.org/certifications/certifyme/certifyme) confirms active OB3 Issuer and CLR 2.0 Issuer/Displayer roles. Conformance does not prove issuer authority, recipient identity or independent security assurance. Test the actual record and receiver; do not use a registry entry to infer competitors lack standards support.
 
-The CertifyMe owner confirms 20 million live jobs, 50,000 companies worldwide and refresh every two weeks, processed through its own job-framing engine. These are first-party coverage statements, not independently verified hiring outcomes. The [workforce intelligence guide](/workforce-intelligence) explains the institutional use: programme teams compare reviewed capabilities with occupational requirements and market signals. A job match is not a placement, a salary promise or proof of competence.
+The CertifyMe owner confirms 20 million live jobs, 50,000 companies worldwide and refresh every two weeks, processed through its own job-farming engine. These are first-party coverage statements, not independently verified hiring outcomes. The [workforce intelligence guide](/workforce-intelligence) explains the institutional use: programme teams compare reviewed capabilities with occupational requirements and market signals. A job match is not a placement, a salary promise or proof of competence.

@@ -33,7 +33,7 @@ faqs:
   - question: "Does a standards listing remove migration dependencies?"
     answer: "No. Export compatibility, issuer keys, status resources and evidence access may remain operational dependencies."
 ---
-<p data-comparison-summary="sertifier">Sertifier documents enterprise credential workflows, Open Badges, W3C VCs, API/webhooks, configurable EU/US residency and a dedicated CLR product. These are shared capabilities to evaluate, not grounds for declaring CertifyMe uniquely broader. CertifyMe describes institution-governed infrastructure connecting credentials, verification, reviewed skills, learner records and workforce context. These capabilities overlap: choose against your programme's records, receiving systems, evidence and contract rather than assuming a universal winner.</p>
+<p data-comparison-summary="sertifier">Sertifier documents enterprise credential workflows, Open Badges, W3C VCs, API/webhooks, configurable EU/US residency and a CLR product. CertifyMe connects presentation and access, standards, verification, institution-reviewed skills, a Comprehensive Learner Record and workforce intelligence through its own Job Engine. For a multi-department institution, the meaningful comparison is how these capabilities connect under academic, IT and records governance. Test the contracted workflow and workforce-data scope: shared standards and CLR capabilities should be recognised, not presented as exclusive CertifyMe features.</p>
 
 <p><strong>Evidence checked 4 October 2026.</strong> Competitor statements below link to current official product, pricing or legal sources. CertifyMe references identify its own product information or the public standards registry. These are documented claims, not authenticated feature tests. <strong>NOT PUBLICLY SPECIFIED</strong> means unverified in the reviewed sources, never that a vendor lacks the feature.</p>
 
@@ -56,6 +56,8 @@ Published capabilities are not a guarantee of entitlement on every plan. Request
 ## Evidence-led comparison
 
 {% include V4NewLook/comparison-evidence-table.html vendor="Sertifier" %}
+
+{% include V4NewLook/connected-credential-infrastructure.html %}
 
 ## What to test with Sertifier
 
@@ -85,4 +87,4 @@ The right choice depends on tested requirements and contract scope, not an enter
 
 CertifyMe's [1EdTech listing](https://site.imsglobal.org/certifications/certifyme/certifyme) confirms active OB3 Issuer and CLR 2.0 Issuer/Displayer roles. See the [certification evidence guide](/blog/certifyme-open-badge-3-0-certified) for the boundaries. It is not a security audit and does not establish universal wallet compatibility or independent recipient identity.
 
-Its owner confirms workforce coverage of 20 million live jobs, 50,000 companies worldwide and refresh every two weeks through its own job-framing engine. These are owner-confirmed figures, not independently audited outcomes. Ask Sertifier for current workforce scope without inferring absence; compare the same skills, geography and programme evidence across reports.
+Its owner confirms workforce coverage of 20 million live jobs, 50,000 companies worldwide and refresh every two weeks through its own job-farming engine. These are owner-confirmed figures, not independently audited outcomes. Ask Sertifier for current workforce scope without inferring absence; compare the same skills, geography and programme evidence across reports.

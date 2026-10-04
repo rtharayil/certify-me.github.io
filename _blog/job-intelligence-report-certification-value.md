@@ -26,7 +26,7 @@ Job-intelligence reports relate reviewed skill evidence to occupations and separ
 
 ## Approved coverage and refresh
 
-The owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks, using CertifyMe's own job-framing engine. This is not a claim of real-time refresh, a particular country count, source licensing or salary-field availability.
+The owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks, using CertifyMe's own job-farming engine. This is not a claim of real-time refresh, a particular country count, source licensing or salary-field availability.
 
 ## Use an evidence–mapping–market chain
 
@@ -55,4 +55,10 @@ Use the [anonymous case evidence](/case-studies.html) for approved adoption and 
 ## Plan your next step
 
 Discuss the actual award, evidence and implementation requirements with your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
+
+## The infrastructure connecting learning evidence to job intelligence
+
+The report is one output of CertifyMe's Job Engine, not an isolated career-readiness claim. Reviewed learning evidence supplies the skill context; structured job records supply the employer and occupation context. Keep those two sources distinct when academic and career-services teams interpret a report.
+
+{% include V4NewLook/job-engine-story.html %}
 

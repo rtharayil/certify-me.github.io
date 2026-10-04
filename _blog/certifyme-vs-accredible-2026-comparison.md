@@ -33,7 +33,7 @@ faqs:
   - question: "Are the workforce figures independently verified outcomes?"
     answer: "No. The 20 million jobs, 50,000 companies and two-week refresh figures are owner-confirmed coverage statements, not evidence that a learner secured employment."
 ---
-<p data-comparison-summary="accredible">Accredible documents digital credentials, programme engagement, pathways, a wallet and Job Market Insights. Its January 2026 announcement explicitly adds OB3 and W3C VC export and ingestion. CertifyMe describes institution-governed infrastructure connecting credentials, verification, reviewed skills, learner records and workforce context. These capabilities overlap: choose against your programme's records, receiving systems, evidence and contract rather than assuming a universal winner.</p>
+<p data-comparison-summary="accredible">Accredible documents credential engagement, pathways, a wallet and Job Market Insights, with OB3 and W3C VC export and ingestion announced in January 2026. CertifyMe connects presentation and access, standards, verification, reviewed skills, a Comprehensive Learner Record and workforce intelligence through its own Job Engine. For a university building stackable programmes, the useful comparison is how engagement and pathway evidence connect to institution-governed records and career context. Evaluate those handoffs against your programme; shared capabilities do not establish an exclusive advantage.</p>
 
 <p><strong>Evidence checked 4 October 2026.</strong> Competitor statements below link to current official product, pricing or legal sources. CertifyMe references identify its own product information or the public standards registry. These are documented claims, not authenticated feature tests. <strong>NOT PUBLICLY SPECIFIED</strong> means unverified in the reviewed sources, never that a vendor lacks the feature.</p>
 
@@ -48,6 +48,8 @@ For a university, ask to see how the ACE fields, pathway rules and receiving-sys
 ## Evidence-led comparison
 
 {% include V4NewLook/comparison-evidence-table.html vendor="Accredible" %}
+
+{% include V4NewLook/connected-credential-infrastructure.html %}
 
 ## What to test with Accredible
 
@@ -75,7 +77,7 @@ This article focuses on Accredible's standards and pathway overlap. Use the [pla
 
 The [1EdTech registry](https://site.imsglobal.org/certifications/certifyme/certifyme) lists CertifyMe's active OB3 Issuer role and CLR 2.0 Issuer/Displayer roles. That is conformance evidence for listed roles, not an independent security audit. Read the [CertifyMe certification scope](/blog/certifyme-open-badge-3-0-certified) rather than inferring identity assurance or universal portability.
 
-CertifyMe positions its institutional offering around governed awards, connected records, skills relationships and workforce context. For workforce intelligence, the owner confirms **20 million live jobs from 50,000 companies worldwide, refreshed every two weeks**, processed by its own job-framing engine. These are owner-confirmed coverage figures, not independently audited benchmarks, proof of placement or a promise that every issued credential includes every report feature. Request programme-specific samples and plan scope.
+CertifyMe positions its institutional offering around governed awards, connected records, skills relationships and workforce context. For workforce intelligence, the owner confirms **20 million live jobs from 50,000 companies worldwide, refreshed every two weeks**, processed by its own job-farming engine. These are owner-confirmed coverage figures, not independently audited benchmarks, proof of placement or a promise that every issued credential includes every report feature. Request programme-specific samples and plan scope.
 
 
 ## Side-by-side procurement tests

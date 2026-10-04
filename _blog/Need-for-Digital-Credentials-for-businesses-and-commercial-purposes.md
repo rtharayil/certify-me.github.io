@@ -55,3 +55,9 @@ Engagement surveys, retention, employee net promoter scores and hiring performan
 ## Scope integrations and growth before procurement
 
 Request current connector/API documentation and test your actual LMS or HRIS. An automation catalogue does not prove a native supported connection to every named system. The [L&D alternatives guide](/blog/three-top-credly-alternatives-training-and-development.html) focuses on recurring programme operations; [skills taxonomy mapping](/skills-taxonomy-mapping) covers reviewed capability relationships. [Discuss a business credential pilot](https://info.certifyme.online/request-demo) with explicit acceptance criteria and no invented ROI.
+
+## Extend reviewed learning records into workforce planning
+
+A business can retain credential and skill evidence in a broader learner record, then investigate how those reviewed skills relate to occupations and employer requirements. CertifyMe's Job Engine supplies market context for that investigation. Treat it as input to programme planning, not an automated employee ranking or a guaranteed staffing outcome.
+
+{% include V4NewLook/job-engine-story.html %}

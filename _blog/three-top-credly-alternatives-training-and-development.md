@@ -51,7 +51,7 @@ Test that workflow with every shortlisted vendor: duplicate events, a missed ref
 
 ## Workforce context and security require separate evidence
 
-CertifyMe's owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks through its own job-framing engine. These are first-party coverage statements, not independently measured career outcomes. Evaluate [workforce intelligence](/workforce-intelligence) only where external career context is relevant to the programme; it does not replace assessed role readiness.
+CertifyMe's owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks through its own job-farming engine. These are first-party coverage statements, not independently measured career outcomes. Evaluate [workforce intelligence](/workforce-intelligence) only where external career context is relevant to the programme; it does not replace assessed role readiness.
 
 Request current security audit scope, hosting region, roles, SSO entitlement, API limits, support commitments and export rights for all vendors. Conformance certification is distinct from SOC 2 attestation, ISO certification and privacy obligations.
 
@@ -60,3 +60,9 @@ Request current security audit scope, hosting region, roles, SSO entitlement, AP
 Compare today’s scope with the next planned programme expansion, not an arbitrary 12–18 month prediction that every team will outgrow a platform. Include renewal administration, recipient continuity, export, key/status maintenance and re-integration in total cost.
 
 The [platform buyer's guide](/blog/What-is-Digital-Credential-Management-Platform.html) covers general procurement; the [four-platform overview](/blog/digital-credentialing-platforms-2026-comparison) covers broader vendor scope. This guide's purpose is recurring L&D operations. [Request an L&D workflow demonstration](https://info.certifyme.online/request-demo) with the same acceptance criteria across the shortlist.
+
+## Connect the programme record to workforce questions
+
+For L&D teams reviewing future capability needs, CertifyMe's own Job Engine adds externally sourced market context to institution-reviewed skills and learner records. Assess that workflow alongside each vendor's documented skills and workforce offering. External demand does not measure a learner's competence or prove training ROI.
+
+{% include V4NewLook/connected-credential-infrastructure.html %}

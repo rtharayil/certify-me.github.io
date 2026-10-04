@@ -33,7 +33,7 @@ faqs:
   - question: "Does a badge replace an official transcript?"
     answer: "Not automatically. The receiving institution's requirements and the registrar's official-record policy determine what is acceptable."
 ---
-<p data-comparison-summary="parchment">Parchment documents an education records ecosystem spanning transcripts, diplomas, certificates, badges and CLRs. It also explicitly markets OB3-compliant badges for workforce programmes. CertifyMe describes institution-governed infrastructure connecting credentials, verification, reviewed skills, learner records and workforce context. These capabilities overlap: choose against your programme's records, receiving systems, evidence and contract rather than assuming a universal winner.</p>
+<p data-comparison-summary="parchment">Parchment documents transcripts, diplomas, certificates, badges and CLRs, including OB3-compliant badges for workforce programmes. CertifyMe connects presentation and access, standards, verification, reviewed skills, a Comprehensive Learner Record and workforce intelligence through its own Job Engine. A registrar should compare authoritative academic-record workflows with the complementary skill and career context a programme needs. Neither a CLR nor a workforce report replaces the official transcript. Evaluate record stewardship, exchange and receiving-system requirements for each proposed implementation.</p>
 
 <p><strong>Evidence checked 4 October 2026.</strong> Competitor statements below link to current official product, pricing or legal sources. CertifyMe references identify its own product information or the public standards registry. These are documented claims, not authenticated feature tests. <strong>NOT PUBLICLY SPECIFIED</strong> means unverified in the reviewed sources, never that a vendor lacks the feature.</p>
 
@@ -48,6 +48,8 @@ For the institutional architecture, read [Comprehensive Learner Record governanc
 ## Evidence-led comparison
 
 {% include V4NewLook/comparison-evidence-table.html vendor="Parchment" %}
+
+{% include V4NewLook/connected-credential-infrastructure.html %}
 
 ## What to test with Parchment
 

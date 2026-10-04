@@ -481,3 +481,31 @@ mtime_ms = 1791093363812
 storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/02e68a5a-3245-411e-a1e6-8a89b41e19e6/91c9cc58-5123-4380-8bfd-4fb89857702c"
 storage_version_token = "1791093387322237"
 content_type = "text/csv"
+
+[[outputs]]
+id = "YmS2LhPUc_-JrGCBc2Z_a"
+uri = "file://.local/reports/six-layer-phase3/phase3-final-report.html"
+type = "html"
+title = "CertifyMe Phase 3 — Final Report"
+description = "Implementation summary, all required counts, fourteen-category scorecard, both validation results and remaining evidence limits."
+logical_id = "9819c114-f912-4be5-80a6-f4e761a55676"
+content_hash = "sha256:d5babd3c7663be5b4d9bd6731c35301b5f74928dba056b66d523d65fdbbb672a"
+size = 12161
+mtime_ms = 1791126209086
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/9819c114-f912-4be5-80a6-f4e761a55676/aa1a52b5-8902-4e47-8a9a-eef94efd142b"
+storage_version_token = "1791126340126446"
+content_type = "text/html"
+
+[[outputs]]
+id = "PkHQRB0s3JF1NdX-keiri"
+uri = "file://.local/reports/six-layer-phase3/phase3-reports.zip"
+type = "unspecified"
+title = "Phase 3 — Complete Reports Bundle"
+description = "All eleven requested deliverables plus coverage matrix, browser results, scorecard and retained AI test/retest evidence. No private uploads or application code."
+logical_id = "5008ee58-50ab-47f3-82ef-c5f60e9ebec0"
+content_hash = "sha256:3c2341c38ad2417d8979efdf46a946a8c667bc787b413455b70599dee7b6c9d9"
+size = 115249
+mtime_ms = 1791126209150
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/5008ee58-50ab-47f3-82ef-c5f60e9ebec0/75048a9f-44bc-4104-a41a-51a1822b8f65"
+storage_version_token = "1791126341591145"
+content_type = "application/octet-stream"
