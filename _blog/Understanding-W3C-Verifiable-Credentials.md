@@ -1,30 +1,40 @@
 ---
 layout: V4LayoutSingleBlogPost
 title: "W3C Verifiable Credentials for Institutions | CertifyMe"
-description: "Understand the W3C credential model: issuer, holder, verifier, cryptographic proof, status and interoperability, with practical institutional implementation guidance."
+description: "The W3C Verifiable Credentials data model describes issuer, holder and verifier roles."
 abstract: "A W3C Verifiable Credential expresses issuer claims in a machine-verifiable format; proof validation, issuer trust and status remain distinct checks."
 topic: standards
 author: Aneesha Kurian
 imageLink: /img/blog/W3C-Verifiable-Credentials-Beginner-Guide.png
 featured: true
 seo_pillar: true
-seo_cluster: verifiable-credentials
+seo_cluster: "verifiable-credentials"
 breadcrumb_label: "W3C Verifiable Credentials"
-last_modified_at: "2026-10-03"
-faqs:
-  - question: "What is a W3C Verifiable Credential?"
-    answer: "A Verifiable Credential is a machine-verifiable set of claims made by an issuer about a subject, represented using the W3C credential data model and protected by a supported securing mechanism."
-  - question: "Who are the issuer, holder and verifier?"
-    answer: "The issuer makes and secures claims. The holder stores or presents credentials. The verifier evaluates the presented information, proof, issuer authority and applicable status against its own acceptance policy. The holder and credential subject are not necessarily the same entity."
-  - question: "Do W3C Verifiable Credentials require a blockchain or DID?"
-    answer: "No. Blockchain is not required by the data model, and issuer identification need not use a decentralized identifier. Key discovery, signing and verification depend on the selected implementation."
-  - question: "Are all Verifiable Credentials encrypted or selectively disclosable?"
-    answer: "No. Signing and encryption serve different purposes. Selective disclosure depends on the credential format, securing mechanism and presentation protocol; the data model alone does not supply it."
-  - question: "How do Open Badges 3.0 relate to W3C credentials?"
-    answer: "Open Badges 3.0 applies a Verifiable Credentials-based model to achievements, with issuer, recipient, achievement criteria and evidence context. It adds education-specific semantics; standards adoption does not guarantee compatibility with every wallet."
-  - question: "Does a valid signature prove a person's identity or skills?"
-    answer: "No. A valid proof establishes integrity and signing authority under the supported mechanism. The verifier must separately assess issuer authority, subject binding, evidence, validity and any required status checks."
+last_modified_at: "2026-10-04"
+faqs: [{"question":"Does the W3C data model prescribe one universal proof mechanism?","answer":"No. A supported securing mechanism must be selected and evaluated alongside the data model and the receiving system."},{"question":"Does a valid proof establish the learner's real-world identity?","answer":"No. It supports checking signed credential data; independent identity assurance needs a separate established process."}]
+last_modified: "2026-10-04"
+content_authority_p0: true
 ---
+
+<p>{% include V4NewLook/aeo-lead.html %}</p>
+
+## Implementation exercise: inspect one credential end to end
+
+Choose a fictional achievement and identify issuer, subject, holder and intended verifier. Record the achievement data, securing mechanism, key discovery and applicable status resources. Then test what happens when the proof fails or a required resource is unavailable.
+
+## Keep the institutional meaning outside the cryptographic shortcut
+
+Use the [institutional issuance lifecycle](/platform-overview) to decide who approves an award and who handles corrections. A securing mechanism cannot decide whether assessment evidence justified the achievement.
+
+## Connect the standard to related records
+
+An [Open Badges achievement credential](/blog/why-institutions-should-embrace-open-badges-3-0-standards) specializes the achievement context. A [Comprehensive Learner Record](/comprehensive-learner-record) can connect records while retaining provenance. [Reviewed skill relationships](/skills-taxonomy-mapping) remain distinct from cryptographic proof.
+
+## First-party context and limits
+
+The [anonymous implementation cases](/case-studies.html) illustrate institution-specific programmes. They are not a W3C certification or a guarantee that every verifier supports a particular credential format. The W3C model itself does not verify participant identity or award authority.
+
+## Existing operational reference
 
 ## What are W3C Verifiable Credentials?
 
@@ -94,3 +104,8 @@ Start with one approved achievement, document assessment criteria and subject bi
 - [1EdTech Comprehensive Learner Record standard](https://www.1edtech.org/standards/clr)
 
 Updated 3 October 2026. Standards explain an architecture; product certification roles and implementation scope should be checked separately.
+
+## Plan your next step
+
+Discuss the actual award, evidence and implementation requirements with your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
+

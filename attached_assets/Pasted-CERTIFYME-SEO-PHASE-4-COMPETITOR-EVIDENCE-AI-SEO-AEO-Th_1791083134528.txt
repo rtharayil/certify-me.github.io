@@ -1,0 +1,237 @@
+CERTIFYME SEO PHASE 4 — COMPETITOR EVIDENCE + AI SEO/AEO
+
+The previous two SEO implementation sessions are complete.
+
+DO NOT repeat the previous technical SEO work.
+
+Focus exclusively on:
+
+1. competitor evidence
+2. comparison SEO
+3. AI search readiness
+4. entity authority
+5. answer-engine optimization
+
+Competitors:
+
+- Accredible
+- Certifier
+- Credly
+- Parchment
+- Sertifier
+
+==================================================
+1. LIVE COMPETITOR RESEARCH
+==================================================
+
+Research each competitor's CURRENT official website.
+
+Use current primary vendor sources wherever possible.
+
+For each competitor verify:
+
+- target ICP
+- positioning
+- digital credential capabilities
+- digital badges
+- Open Badges
+- W3C VC
+- CLR
+- skills
+- learner records
+- workforce intelligence
+- analytics
+- API
+- integrations
+- security
+- data residency
+- pricing
+- contract model
+- enterprise model
+- higher education
+- certification bodies
+- workforce use cases
+
+Record:
+
+vendor
+dimension
+current claim
+source URL
+source date
+confidence
+notes
+
+If information cannot be verified:
+
+write:
+
+NOT PUBLICLY SPECIFIED
+
+Never infer absence from silence.
+
+==================================================
+2. CERTIFYME COMPARISON PAGES
+==================================================
+
+Audit:
+
+/compare/
+/blog/certifyme-vs-accredible-2026-comparison.html
+/blog/certifyme-vs-certifier-2026-comparison.html
+/blog/certifyme-vs-credly-2026-comparison.html
+/blog/certifyme-vs-parchment-2026-comparison.html
+/blog/certifyme-vs-sertifier-2026-comparison.html
+
+Correct outdated or unsupported cells.
+
+Every material competitor claim must be traceable to:
+
+- official vendor documentation
+- official pricing page
+- official legal documentation
+- official product documentation
+- authoritative standards documentation
+
+Do not create aggressive "CertifyMe wins" language.
+
+Make comparisons neutral and buyer-useful.
+
+==================================================
+3. BUILD A COMPARISON MATRIX
+==================================================
+
+Create:
+
+competitor-evidence-matrix.csv
+
+Columns:
+
+Vendor
+ICP
+Credentialing
+Open Badges
+W3C VC
+CLR
+Skills
+Learner Records
+Workforce Intelligence
+Verification
+Analytics
+API
+Integrations
+Security
+Data Residency
+Pricing
+Contract
+Higher Education
+Enterprise
+Evidence URL
+Evidence Date
+Confidence
+
+==================================================
+4. AI ANSWER ENGINE OPTIMIZATION
+==================================================
+
+For every major authority page test:
+
+"What is X?"
+"Why does X matter?"
+"How does X work?"
+"How does CertifyMe implement X?"
+"What standards apply?"
+"How is X different from Y?"
+"When should an institution use X?"
+"What are the limitations?"
+
+Make the first 100–150 words capable of answering the core question independently.
+
+Do not add generic AI filler.
+
+==================================================
+5. ENTITY CLARITY
+==================================================
+
+Ensure the website consistently defines:
+
+CertifyMe
+Digital Credential Infrastructure
+Digital Credentials
+Open Badges 3.0
+W3C Verifiable Credentials
+Skills Taxonomy
+Comprehensive Learner Record
+Workforce Intelligence
+Skill Passport
+
+Ensure the relationships are explicit.
+
+Example:
+
+CertifyMe
+→ Digital Credential Infrastructure
+→ credentials
+→ verification
+→ skills
+→ learner records
+→ workforce intelligence
+
+==================================================
+6. AI CITATION READINESS
+==================================================
+
+Do not claim that CertifyMe is "AI optimized" merely because keywords exist.
+
+Check whether every important concept has:
+
+- clear definition
+- authoritative source
+- first-party evidence
+- factual boundaries
+- structured answer
+- FAQ
+- related concepts
+- internal links
+- update date
+- real author/reviewer where applicable
+
+==================================================
+7. TEST
+==================================================
+
+Create 20 AI questions covering:
+
+definition
+comparison
+implementation
+standards
+security
+higher education
+skills
+CLR
+workforce
+competitors
+
+For each:
+
+PASS
+PARTIAL
+FAIL
+
+Explain why.
+
+Q10 from the previous audit must specifically be retested:
+
+"How does CertifyMe differ from Accredible, Certifier and Credly?"
+
+This must become PASS only when the answer is supported by current evidence.
+
+Do not claim actual ChatGPT/Perplexity citation success unless an actual live experiment is performed.
+
+Produce:
+
+competitor-evidence-matrix.csv
+ai-answer-test.json
+comparison-audit.md
+ai-seo-gap-report.md

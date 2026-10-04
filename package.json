@@ -4,6 +4,7 @@
   "description": "## Validation",
   "main": "index.js",
   "scripts": {
+    "build:performance-css": "node scripts/build-performance-css.cjs",
     "test": "npm run test:private-uploads && npm run test:comparison-mobile",
     "test:private-uploads": "bundle exec ruby scripts/validate-private-uploads.rb",
     "test:comparison-mobile": "node scripts/validate-comparison-mobile.js"
@@ -13,5 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "playwright": "^1.62.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1"
   }
 }

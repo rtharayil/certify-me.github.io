@@ -51,6 +51,12 @@ Distinguish a browser transport failure from a broken interaction when HTML load
 
 **How to apply:** Inspect failed network requests as well as JavaScript exceptions. If transport is unreliable, check that the server serves the intended bytes and isolate the component's behavior separately; do not change production TLS or rewrite working application logic to satisfy a faulty browser session.
 
+Preserve intrinsic HTML dimensions, but verify the complementary CSS dimension when resizing responsive images or fixed-height logos.
+
+**Why:** Reserving intrinsic dimensions exposed older rules that changed only width or only height, visibly distorting illustrations and logos. A width-and-height attribute audit can pass while rendered proportions are wrong.
+
+**How to apply:** Keep intrinsic attributes for layout stability; use automatic height for responsive-width illustrations and automatic width for fixed-height logos. Capped uncropped thumbnails need automatic dimensions together. Check rendered proportions at desktop/mobile sizes and exclude deliberate contain/cover crops from distortion failures.
+
 Do not require original-file natural dimensions from responsive images using width descriptors.
 
 **Why:** Chromium reports density-corrected integer natural dimensions for srcset images. Small logos can have an apparently different aspect ratio simply because their corrected height rounds to a few pixels.

@@ -13,7 +13,7 @@
                                                                 <h1 class="s-42 w-700">{{ page.HeroTitle }}</h1>
 
                                                                 <!-- Text -->
-                                                                <p class="p-lg">{{ page.HeroText }}
+                        <p class="p-lg">{% assign aeo_hero = site.data.ai_authority | where: "url", page.url | first %}{% if aeo_hero %}{% include V4NewLook/aeo-lead.html %}{% else %}{{ page.HeroText }}{% endif %}
                                                                 </p>
                                 
                                 <div class="btns-group">

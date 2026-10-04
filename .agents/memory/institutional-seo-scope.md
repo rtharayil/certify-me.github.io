@@ -20,3 +20,11 @@ For comprehensive SEO work, follow audit → plan → implement → structural t
 **Why:** The owner explicitly requires both testing rounds and evidence-based claim handling.
 
 **How to apply:** Do not present a prior narrow audit or a pre-implementation inventory as either required testing round. Keep unknown indexing, traffic, backlink, security, and operational facts explicit.
+
+## Content-authority-only work
+
+For the owner's content-authority phase, do not rerun the original 33-part transformation or redo passing technical, positioning and authority-connection work. Complete the full-body inventory before selected P0 edits; determine parents from article meaning, not title keywords. Shared parent/navigation modules are not contextual editorial body links.
+
+**Why:** The owner explicitly said the previous transformation had already been executed twice and requested curated content authority instead of another structural pass.
+
+**How to apply:** Use a new scope-specific content-authority validation, retain baseline scores as baseline, and separate executed changes from deferred recommendations. Future articles need a content-reviewed parent decision; do not reintroduce title matching as a fallback.

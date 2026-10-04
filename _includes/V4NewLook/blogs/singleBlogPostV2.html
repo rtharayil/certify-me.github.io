@@ -754,6 +754,9 @@ so the section is never empty.
                                         <span><i class="flaticon-calendar"></i>{{ page.date | date: "%-d %B %Y" }}</span>
                                     </div>
                                     {% endif %}
+                                    {% if page.content_authority_p0 and page.last_modified %}
+                                    <p class="small mb-0">Editorial content updated {{ page.last_modified | date: "%-d %B %Y" }}.</p>
+                                    {% endif %}
 
                                 </div>
                             </div>
@@ -838,6 +841,8 @@ so the section is never empty.
 
                     <div class="single-post-txt blogcontent lh-lg">
                         {{ page.content }}
+                        {% include V4NewLook/authority-editorial.html %}
+                        {% include V4NewLook/aeo-answers.html %}
                         {% if page.comparison_page %}
                         <aside class="border rounded p-3 my-4" aria-label="Institutional comparison context">
                           <p>Evaluate your institution's requirements with the <a href="/compare/">digital credential platform comparison hub</a> and the <a href="/credentials-higher-education">digital credentials for universities guide</a>. Confirm current vendor capabilities, certification roles, security evidence and plan inclusions before procurement.</p>

@@ -4,12 +4,13 @@ permalink: /compare/
 title: "Digital Credential Platform Comparisons | CertifyMe"
 description: "Compare digital credential platforms for institutional needs: standards, verification, academic records, skills, integrations and learner experience."
 seo_pillar: true
+last_modified_at: "2026-10-04"
 breadcrumb_label: "Digital Credential Platform Comparisons"
 ---
 
 <section class="container py-5">
   <h1>Digital Credential Platform Comparisons</h1>
-  <p>Universities and professional bodies need different combinations of academic records, credential issuance, standards and learner-record capabilities. These existing guides help procurement teams compare scope and ask implementation questions—not assume one vendor fits every institution.</p>
+  <p>{% include V4NewLook/aeo-lead.html %}</p>
   <h2>Compare CertifyMe with other platforms</h2>
   <ul>
     <li><a href="/blog/certifyme-vs-parchment-2026-comparison.html">CertifyMe vs Parchment: academic records and credential infrastructure</a></li>
@@ -18,7 +19,10 @@ breadcrumb_label: "Digital Credential Platform Comparisons"
     <li><a href="/blog/certifyme-vs-certifier-2026-comparison.html">CertifyMe vs Certifier: issuance and institutional requirements</a></li>
     <li><a href="/blog/certifyme-vs-sertifier-2026-comparison.html">CertifyMe vs Sertifier: issuance, engagement and institutional needs</a></li>
   </ul>
-  <p>These guides retain their existing canonical article URLs. Vendor capabilities, certification roles and plan inclusions can change; confirm current evidence with each provider before purchasing.</p>
+  <p><strong>Official-source research observed 4 October 2026.</strong> Material competitor claims in each guide link to the relevant vendor product, pricing or legal page. NOT PUBLICLY SPECIFIED means unverified in the reviewed sources, not that the feature is absent. Receiving-system compatibility, security report scope, plan entitlements and contracts still require due diligence.</p>
+  <h2>How does CertifyMe differ from Accredible, Certifier and Credly?</h2>
+  <p>CertifyMe's institutional positioning is described in its <a href="/platform-overview">first-party infrastructure overview</a>; standards roles are independently traceable in the registry linked below. Product positioning is not proof of exclusive capabilities or measured outcomes.</p>
+  <p data-comparison-answer="q10">CertifyMe describes institution-governed credential infrastructure connecting issuance, verification, reviewed skills, learner records and workforce context. Its <a href="https://site.imsglobal.org/certifications/certifyme/certifyme">public registry entry</a> lists active Open Badges 3.0 Issuer and CLR 2.0 Issuer/Displayer roles for the specified product. <a href="https://www.accredible.com/platform">Accredible documents pathways and Job Market Insights</a>, and its <a href="https://www.accredible.com/newsroom/accredible-launches-support-for-open-badge-3-0-and-w3c-verifiable-credentials">January 2026 release documents OB3 and W3C VC export/ingestion</a>. <a href="https://certifier.io/blog/open-badges-3-0">Certifier documents OB3 badges</a> and <a href="https://certifier.io/enterprise">enterprise SSO, audit logs and tailored workflows</a>. <a href="https://info.credly.com/product/acclaim">Credly documents Acclaim programmes and enterprise skills intelligence</a>; its <a href="https://info.credly.com/product/open-badge-3.0">OB3 page specifically documents external OB2/OB3 import and verification</a>. These capabilities overlap. Evaluate the actual issuance/export profile, metrics, integrations and contract; none of these sources establishes a universal winner or exclusive workforce capability.</p>
   <h2>Institutional evaluation checklist</h2>
   <ul>
     <li><strong>Academic records:</strong> distinguish degrees, transcripts, certificates, digital badges and microcredentials.</li>

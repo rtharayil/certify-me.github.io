@@ -1,0 +1,205 @@
+CERTIFYME SEO PHASE 5 — PERFORMANCE + TECHNICAL SEO CLOSURE
+
+The previous SEO transformation already completed:
+
+- sitemap structural audit
+- canonical checks
+- metadata checks
+- duplicate metadata checks
+- intrinsic image dimension repair
+- private-upload regression
+- mobile comparison-table regression
+
+DO NOT redo those tasks unless required for regression.
+
+Current Page Speed readiness is only 6/10.
+
+Focus specifically on performance and remaining technical SEO.
+
+==================================================
+1. BASELINE
+==================================================
+
+Measure representative pages:
+
+Homepage
+Platform Overview
+Higher Education
+Skills Taxonomy
+CLR
+Workforce Intelligence
+Security
+Comparison Hub
+one comparison article
+one long blog article
+one case study
+
+Measure:
+
+- HTML transfer
+- total page weight
+- JS
+- CSS
+- fonts
+- images
+- third-party scripts
+- render-blocking resources
+- lazy loading
+- preload
+- caching
+- compression
+- image format
+- DOM size
+- request count
+- LCP
+- CLS
+- INP where measurable
+
+Do NOT optimize blindly.
+
+Create:
+
+performance-before.csv
+
+==================================================
+2. IMAGE OPTIMIZATION
+==================================================
+
+Find oversized images.
+
+Where safe:
+
+- WebP/AVIF
+- responsive srcset
+- width/height
+- lazy loading below fold
+- preload only genuinely critical images
+
+Do not change important visual artwork unnecessarily.
+
+Do not reduce hero quality excessively.
+
+==================================================
+3. FONT OPTIMIZATION
+==================================================
+
+Audit:
+
+- font files
+- weights
+- preload
+- font-display
+- unused weights
+
+Remove only genuinely unused fonts/weights.
+
+==================================================
+4. JAVASCRIPT
+==================================================
+
+Audit:
+
+- unused JS
+- third-party scripts
+- blocking scripts
+- defer/async
+- duplicate libraries
+
+Do not break:
+
+analytics
+forms
+menus
+FAQ
+product functionality
+
+==================================================
+5. CSS
+==================================================
+
+Audit:
+
+- unused CSS
+- large CSS bundles
+- render blocking
+- duplicated styles
+
+Preserve visual design.
+
+==================================================
+6. CACHE / COMPRESSION
+==================================================
+
+Inspect applicable:
+
+gzip/brotli
+cache headers
+static assets
+HTML caching
+CDN behaviour
+
+If deployment configuration cannot be changed from this repository, document exactly what must be configured externally.
+
+==================================================
+7. TECHNICAL SEO
+==================================================
+
+Check:
+
+HTTP → HTTPS
+www → canonical host
+trailing slash
+.html variants
+redirect chains
+404
+5xx
+canonical response
+sitemap
+robots
+pagination
+orphan pages
+crawl depth
+internal links
+
+Distinguish:
+
+LOCAL/REPLIT VERIFIED
+
+from:
+
+PRODUCTION NOT VERIFIED
+
+Never claim production verification from preview evidence.
+
+==================================================
+8. TEST
+==================================================
+
+Run the existing regression suite.
+
+Then run:
+
+performance-after.csv
+
+Compare before vs after.
+
+Do not claim improvement unless measured.
+
+Ensure:
+
+no visual regression
+no functionality regression
+no SEO regression
+
+FINAL:
+
+Provide:
+
+performance-before.csv
+performance-after.csv
+performance-comparison.md
+technical-seo-closure.md
+
+Score performance again.
+
+Do not optimize purely for Lighthouse score at the expense of UX or functionality.

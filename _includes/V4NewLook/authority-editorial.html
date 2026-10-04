@@ -1,0 +1,35 @@
+{% assign authority_review = site.data.authority_editorial | where: "url", page.url | first %}
+{% if authority_review %}
+<section class="container py-5 content-authority-editorial" data-authority-review="{{ authority_review.id }}" aria-labelledby="authority-editorial-{{ authority_review.id }}">
+  <h2 id="authority-editorial-{{ authority_review.id }}">{{ authority_review.name | escape }}: institutional implementation checklist</h2>
+  <p><strong>{{ authority_review.definition | escape }}</strong></p>
+  <h3>The institutional problem and why it matters</h3>
+  <p>{{ authority_review.problem | escape }}</p>
+  <h3>Architecture and how it works</h3>
+  <p>{{ authority_review.architecture | escape }}</p>
+  <p>{{ authority_review.how | escape }}</p>
+  <h3>Standards and implementation decisions</h3>
+  <p>{{ authority_review.standards | escape }}</p>
+  <p>{{ authority_review.implementation | escape }}</p>
+  <h3>Use cases and an illustrative example</h3>
+  <p>{{ authority_review.use_case | escape }}</p>
+  <p>{{ authority_review.example | escape }}</p>
+  <h3>Limitations and evidence boundaries</h3>
+  <p>{{ authority_review.limitation | escape }}</p>
+  <p>For first-party implementation evidence, review the <a href="/case-studies.html">anonymous institutional cases</a>. Their approved issuance, adoption and engagement measures describe specific programmes, not a guarantee of the same result elsewhere. Read the <a href="/security/">documented assurance and contractual residency scope</a> separately from a standards claim.</p>
+  <h3>Related implementation reading</h3>
+  <ul>
+    {% for reading in authority_review.reading %}
+    <li><a href="{{ reading.url }}">{{ reading.anchor | escape }}</a> — {{ reading.context | escape }}</li>
+    {% endfor %}
+  </ul>
+  <h3>Related concepts</h3>
+  <p>Use the programme's requirements to connect <a href="/platform-overview">credential governance</a>, <a href="/skills-taxonomy-mapping">reviewed skills</a>, <a href="/comprehensive-learner-record">record provenance</a> and <a href="/workforce-intelligence">occupational context</a>. These are related responsibilities, not interchangeable proofs.</p>
+  <h3>Implementation questions</h3>
+  {% for faq in authority_review.faq %}
+  <details class="mb-3"><summary>{{ faq.question | escape }}</summary><p class="mt-2">{{ faq.answer | escape }}</p></details>
+  {% endfor %}
+  <p class="small">Editorial content updated 4 October 2026.</p>
+  <a class="btn r-04 btn--theme hover--black" href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer">Discuss your programme requirements</a>
+</section>
+{% endif %}

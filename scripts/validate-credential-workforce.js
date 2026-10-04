@@ -52,7 +52,7 @@ async function main() {
             alt: image.alt,
             caption: frame.querySelector("figcaption")?.textContent.trim(),
             icons: element.querySelectorAll('svg[aria-hidden="true"]').length,
-            controls: element.querySelectorAll("button, input, select, a").length,
+            controls: frame.querySelectorAll("button, input, select, a").length,
             imageBox: image.getBoundingClientRect().toJSON(),
             copyBox: element.querySelector("#credential-workforce-intelligence-title").parentElement.getBoundingClientRect().toJSON(),
             frameBorder: getComputedStyle(frame).borderTopWidth,

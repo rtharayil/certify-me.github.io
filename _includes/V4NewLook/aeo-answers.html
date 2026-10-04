@@ -1,0 +1,15 @@
+{% assign aeo_authority = site.data.ai_authority | where: "url", page.url | first %}
+{% if aeo_authority %}
+<section class="container py-5 content-authority-editorial" data-ai-authority="{{ aeo_authority.id }}" aria-labelledby="aeo-{{ aeo_authority.id }}">
+  <h2 id="aeo-{{ aeo_authority.id }}">Questions for institutional implementation</h2>
+  {% for answer in aeo_authority.answers %}
+  <h3 id="aeo-{{ aeo_authority.id }}-{{ forloop.index }}">{{ answer.question | escape }}</h3>
+  <p data-answer-category="{{ answer.category }}">{{ answer.answer | escape }}</p>
+  {% endfor %}
+  <h3>Evidence and related concepts</h3>
+  <p>Published implementation context: <a href="{{ aeo_authority.url }}">this CertifyMe page</a>; <a href="/case-studies.html">scoped anonymous first-party cases</a>. First-party product descriptions are not independently validated deployment outcomes.</p>
+  <ul>{% for source in aeo_authority.references %}<li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title | escape }}</a> — {{ source.source_type }}; observed {{ source.observed_on }}{% unless source.publication_date == 'NOT PUBLICLY SPECIFIED' %}; published/updated {{ source.publication_date }}{% endunless %}.</li>{% endfor %}</ul>
+  <p><a href="/platform-overview#credential-entities">Definitions and relationships</a> · <a href="/comprehensive-learner-record">learner-record provenance</a> · <a href="/skills-taxonomy-mapping">reviewed skills mappings</a> · <a href="/compare/">evidence-led platform comparisons</a></p>
+  <p class="small">Editorial update: 4 October 2026. Evaluate published implementation context against the actual product profile, evidence and institutional contract.</p>
+</section>
+{% endif %}

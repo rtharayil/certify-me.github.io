@@ -7,7 +7,7 @@
     {% for rp in related_posts %}
     <a href="{{ site.baseurl }}{{ rp.url }}" class="related-article-item">
         <div class="related-article-img">
-            <img src="{{ rp.imageLink }}" alt="{{ rp.title }}">
+            <img src="{{ rp.imageLink }}" alt="{{ rp.title }}" loading="lazy" decoding="async">
         </div>
         <div class="related-article-txt">
             <span class="post-tag color--blue-400">Blog</span>

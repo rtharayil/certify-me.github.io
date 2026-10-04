@@ -6,6 +6,7 @@ description: "Issue and verify digital degrees, certificates and badges while co
 
 abstract: "Digital credential infrastructure for universities: connect institutional achievements, open standards, verification, skills and learner records."
 seo_pillar: true
+last_modified_at: "2026-10-04"
 breadcrumb_label: "Digital Credentials for Universities"
 faqs:
   - question: "What are digital credentials for universities?"

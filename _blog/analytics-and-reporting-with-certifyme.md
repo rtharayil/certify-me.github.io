@@ -2,25 +2,43 @@
 layout: V4LayoutSingleBlogPost
 title: Understanding Analytics and Reporting in CertifyMe
 
-description: This article details everything you need to know about CertifyMe's multi-level analytics, dashboard features, and the ability to download and generate detailed reports on credential usage.
-
+description: "Credential analytics help institutions understand issuance and engagement."
 abstract: 
 topic: news
 author : Aneesha Kurian
 imageLink: /assets4/images/understanding_analy.png
 featured: true
 seo_keywords: "credential analytics, digital badge reporting, tracking learner engagement, CertifyMe dashboard features, organization level analytics"
-faqs:
-  - question: "What kind of data can I see on the CertifyMe dashboard?"
-    answer: "You get a full view of your credentialing activity. We track everything from total badges issued to how often people are actually verifying them. It's great for seeing if your programs are really hitting the mark."
-  - question: "Can I see how individual learners are doing?"
-    answer: "Yes, we have awardee-level analytics for that. You can see which credentials each person has earned and even how long it's taking them to finish their courses. It helps in spotting who might need a bit more support."
-  - question: "Is there a way to download these reports?"
-    answer: "Of course. There's a 'Download Report' button right at the top of the analytics tab. You can export everything to PDF or Excel if you need to share it with stakeholders or keep records for an audit."
-  - question: "Does the platform track where my badge holders are located?"
-    answer: "It does! We can show you the geographical distribution of your credential holders. It's pretty cool to see your impact mapped out across different regions globally."
+faqs: [{"question":"Do credential views demonstrate employment outcomes?","answer":"No. Views and shares are engagement measures. Employment requires separate defined and collected outcome evidence."},{"question":"Can we assume a historical analytics screenshot describes today's fields?","answer":"No. Confirm current report definitions, availability and access with the approved product documentation."}]
+last_modified: "2026-10-04"
+last_modified_at: "2026-10-04"
+seo_cluster: "credentials"
+content_authority_p0: true
 ---
 
+Credential analytics help institutions understand issuance and engagement. Interpretation matters: a viewed or shared credential is not evidence of skill attainment, job placement or verified employer demand.
+
+## Preserve the event definitions
+
+The original operational guide below describes existing analytics views. Confirm current field definitions, access rights and report availability before treating a screenshot or historical guide as an active product guarantee.
+
+## Use an issuance–engagement–outcome measurement ladder
+
+Issuance records what was awarded. Engagement records interactions such as views or shares where measured. Outcomes require separate evidence, such as assessment results or an agreed graduate follow-up method. Do not substitute one level for another.
+
+## Connect analytics to governed records
+
+The [institutional credential lifecycle](/platform-overview) helps define who approves an award and corrects it. A [learner record with provenance](/comprehensive-learner-record) provides achievement context rather than making an interaction count a competency score.
+
+## Keep labour-market information separate
+
+[Workforce intelligence](/workforce-intelligence) concerns occupations and separately sourced market signals. It should not be inferred from credential-page traffic or a share count.
+
+## Evaluate a pilot responsibly
+
+Write down event definitions, time window, consent, duplicates and missing-data limitations. Compare agreed measures with the programme baseline. The [anonymous case evidence](/case-studies.html) illustrates scoped adoption/engagement results, not universal conversion uplift.
+
+## Existing operational reference
 
 In the digital age, effective credential management goes beyond just issuing certificates and badges. It’s about understanding how these credentials are used, their impact, and how to optimize the process. 
 
@@ -134,9 +152,7 @@ Our meticulously designed analytics and reporting features provide a comprehensi
 
 We've ensured you have all the necessary information to monitor progress and identify ways to optimize your process effectively.
 
+## Plan your next step
 
-
-
-
-
+Discuss the actual award, evidence and implementation requirements with your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
 

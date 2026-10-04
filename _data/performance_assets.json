@@ -1,0 +1,474 @@
+{
+  "images": {
+    "/assets4/images/Logo/1.png": {
+      "src": "/assets4/performance/images/1.2476608728fd-1440.webp",
+      "width": 1440,
+      "height": 394,
+      "original_width": 7094,
+      "original_height": 1940,
+      "original_bytes": 733200,
+      "bytes": 47116,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/1.1b51017561a5-480.webp",
+          "width": 480,
+          "height": 131,
+          "bytes": 12912
+        },
+        {
+          "src": "/assets4/performance/images/1.3152910afed0-960.webp",
+          "width": 960,
+          "height": 263,
+          "bytes": 27932
+        },
+        {
+          "src": "/assets4/performance/images/1.2476608728fd-1440.webp",
+          "width": 1440,
+          "height": 394,
+          "bytes": 47116
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "d2910cbe3400cec53d93d8efbbf7e7db0c3cf64e5a1a5f41a8ccfa4e2c7257d4"
+    },
+    "/images/iso_27001-1.png": {
+      "src": "/assets4/performance/images/iso_27001-1.5eb6f3219661-500.webp",
+      "width": 500,
+      "height": 500,
+      "original_width": 500,
+      "original_height": 500,
+      "original_bytes": 144293,
+      "bytes": 91140,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/iso_27001-1.d1c2a15e67c9-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 97690
+        },
+        {
+          "src": "/assets4/performance/images/iso_27001-1.5eb6f3219661-500.webp",
+          "width": 500,
+          "height": 500,
+          "bytes": 91140
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "f51d8a2bbfd3a5eb5fad7a838035433cbaa114fdab3b277df11b7d6eb142fdb2"
+    },
+    "/assets4/images/img-02.png": {
+      "src": "/assets4/performance/images/img-02.dfe987b249b0-435.webp",
+      "width": 435,
+      "height": 355,
+      "original_width": 435,
+      "original_height": 355,
+      "original_bytes": 83103,
+      "bytes": 53888,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/img-02.dfe987b249b0-435.webp",
+          "width": 435,
+          "height": 355,
+          "bytes": 53888
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "fd81b7845589c09daeaa0f74d7eff5f5306fa6c13335d12d28c7578b6fdd00a4"
+    },
+    "/img/Blog5.png": {
+      "src": "/assets4/performance/images/Blog5.900f19f5385c-299.webp",
+      "width": 299,
+      "height": 336,
+      "original_width": 299,
+      "original_height": 336,
+      "original_bytes": 71827,
+      "bytes": 45934,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/Blog5.900f19f5385c-299.webp",
+          "width": 299,
+          "height": 336,
+          "bytes": 45934
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "cbbeeb92e2cc44fd1e800aa004422dae6de13f28cd1b0e26e812b811bef3f518"
+    },
+    "/img/Blog7.png": {
+      "src": "/assets4/performance/images/Blog7.388b92a9dccb-299.webp",
+      "width": 299,
+      "height": 336,
+      "original_width": 299,
+      "original_height": 336,
+      "original_bytes": 59964,
+      "bytes": 37094,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/Blog7.388b92a9dccb-299.webp",
+          "width": 299,
+          "height": 336,
+          "bytes": 37094
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "1f8ec128d90857f2697e11809630bcc430ece30b7b181f9dfeed679e3b790c1a"
+    },
+    "/img/Blog9.png": {
+      "src": "/assets4/performance/images/Blog9.ab49a5e88b1c-299.webp",
+      "width": 299,
+      "height": 336,
+      "original_width": 299,
+      "original_height": 336,
+      "original_bytes": 69096,
+      "bytes": 44336,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/Blog9.ab49a5e88b1c-299.webp",
+          "width": 299,
+          "height": 336,
+          "bytes": 44336
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "6264c1d9be10e2100b0340772e497b7459a2b4857925b0edcef92c1885dbd958"
+    },
+    "/img/Blog2.png": {
+      "src": "/assets4/performance/images/Blog2.52fabf8fedf5-299.webp",
+      "width": 299,
+      "height": 336,
+      "original_width": 299,
+      "original_height": 336,
+      "original_bytes": 88614,
+      "bytes": 49984,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/Blog2.52fabf8fedf5-299.webp",
+          "width": 299,
+          "height": 336,
+          "bytes": 49984
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "1321ac3d65a0434bc3abb32a068b900d6695a099267ea4e907379a0c676695a5"
+    },
+    "/img/Blog4.png": {
+      "src": "/assets4/performance/images/Blog4.926c6b403dc2-299.webp",
+      "width": 299,
+      "height": 336,
+      "original_width": 299,
+      "original_height": 336,
+      "original_bytes": 55610,
+      "bytes": 29014,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/Blog4.926c6b403dc2-299.webp",
+          "width": 299,
+          "height": 336,
+          "bytes": 29014
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "998174dd8e709f331cae929cc21f826a28cf1f67884f50c7b7ece1a1609be346"
+    },
+    "/assets4/images/certifyme_vs_accredible.png": {
+      "src": "/assets4/performance/images/certifyme_vs_accredible.23ea0c13909c-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "original_width": 1920,
+      "original_height": 1080,
+      "original_bytes": 2013244,
+      "bytes": 875788,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/certifyme_vs_accredible.ffb13ef17dc7-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 148664
+        },
+        {
+          "src": "/assets4/performance/images/certifyme_vs_accredible.eba952394716-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 462714
+        },
+        {
+          "src": "/assets4/performance/images/certifyme_vs_accredible.23ea0c13909c-1440.webp",
+          "width": 1440,
+          "height": 810,
+          "bytes": 875788
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "61d253f329ccd6f6bfcd12abdc960b856062c4d2456bff96ba562797454c038f"
+    },
+    "/assets4/images/certifyme_vs_credly.png": {
+      "src": "/assets4/performance/images/certifyme_vs_credly.f633136f55fb-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "original_width": 1920,
+      "original_height": 1080,
+      "original_bytes": 1860563,
+      "bytes": 814910,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/certifyme_vs_credly.297f42c000bc-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 140066
+        },
+        {
+          "src": "/assets4/performance/images/certifyme_vs_credly.80457a9c8149-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 425134
+        },
+        {
+          "src": "/assets4/performance/images/certifyme_vs_credly.f633136f55fb-1440.webp",
+          "width": 1440,
+          "height": 810,
+          "bytes": 814910
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "04549452204dc42053ae211e5502b8d759bc5cefa98fe60419223e787d6d86d7"
+    },
+    "/assets4/images/CertifyMe vs Parchment Blog Banner.png": {
+      "src": "/assets4/performance/images/CertifyMe-vs-Parchment-Blog-Banner.b98b93771ed6-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "original_width": 1920,
+      "original_height": 1080,
+      "original_bytes": 1976771,
+      "bytes": 859604,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/CertifyMe-vs-Parchment-Blog-Banner.6cc555fde5c2-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 146120
+        },
+        {
+          "src": "/assets4/performance/images/CertifyMe-vs-Parchment-Blog-Banner.b695f22bdaf5-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 448818
+        },
+        {
+          "src": "/assets4/performance/images/CertifyMe-vs-Parchment-Blog-Banner.b98b93771ed6-1440.webp",
+          "width": 1440,
+          "height": 810,
+          "bytes": 859604
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "7fa6375e1ae0cc97176cddf40f7f80a2f33d8e5128ab394adc6deea6b8f39e09"
+    },
+    "/assets4/images/Brand image.png": {
+      "src": "/assets4/performance/images/Brand-image.d147e19f6796-1280.webp",
+      "width": 1280,
+      "height": 720,
+      "original_width": 1280,
+      "original_height": 720,
+      "original_bytes": 834166,
+      "bytes": 584990,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/Brand-image.9c166b725df8-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 132460
+        },
+        {
+          "src": "/assets4/performance/images/Brand-image.40d97a28b2d8-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 403864
+        },
+        {
+          "src": "/assets4/performance/images/Brand-image.d147e19f6796-1280.webp",
+          "width": 1280,
+          "height": 720,
+          "bytes": 584990
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "dbb518d352ede558b2391f1d77c6b99558535722cea69e98060377387899cab7"
+    },
+    "/assets4/images/Logo/EduTranscript_Logo(540x540).png": {
+      "src": "/assets4/performance/images/EduTranscript_Logo-540x540-.bd8a2660d93f-471.webp",
+      "width": 471,
+      "height": 141,
+      "original_width": 471,
+      "original_height": 141,
+      "original_bytes": 50094,
+      "bytes": 36312,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/EduTranscript_Logo-540x540-.bd8a2660d93f-471.webp",
+          "width": 471,
+          "height": 141,
+          "bytes": 36312
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "13f080b3ce8410f43be826be66f78c8ba4b6e79fa46d8ef99073dddff2d6c5d7"
+    },
+    "/img/blog/transcript-types.png": {
+      "src": "/assets4/performance/images/transcript-types.7a9f0b3a675f-1440.webp",
+      "width": 1440,
+      "height": 1300,
+      "original_width": 1872,
+      "original_height": 1690,
+      "original_bytes": 162261,
+      "bytes": 100474,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/transcript-types.6317b3333369-480.webp",
+          "width": 480,
+          "height": 433,
+          "bytes": 26566
+        },
+        {
+          "src": "/assets4/performance/images/transcript-types.a5c8372006f1-960.webp",
+          "width": 960,
+          "height": 867,
+          "bytes": 63736
+        },
+        {
+          "src": "/assets4/performance/images/transcript-types.7a9f0b3a675f-1440.webp",
+          "width": 1440,
+          "height": 1300,
+          "bytes": 100474
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "13716cbe75913b718036289d24df3c14bf510abbbef3b19690f65f699c3db797"
+    },
+    "/img/blog/obtaining-academic-transcript-in-2025.png": {
+      "src": "/assets4/performance/images/obtaining-academic-transcript-in-2025.f581e0322a6b-1440.webp",
+      "width": 1440,
+      "height": 836,
+      "original_width": 2232,
+      "original_height": 1296,
+      "original_bytes": 234108,
+      "bytes": 137264,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/obtaining-academic-transcript-in-2025.d09282b217fa-480.webp",
+          "width": 480,
+          "height": 279,
+          "bytes": 33964
+        },
+        {
+          "src": "/assets4/performance/images/obtaining-academic-transcript-in-2025.39d95964413c-960.webp",
+          "width": 960,
+          "height": 557,
+          "bytes": 82194
+        },
+        {
+          "src": "/assets4/performance/images/obtaining-academic-transcript-in-2025.f581e0322a6b-1440.webp",
+          "width": 1440,
+          "height": 836,
+          "bytes": 137264
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "06a5134de3f4376ad84f50e1453789e00dbccb83a25f53b8d352f13487819331"
+    },
+    "/img/blog/transcript-technologies.png": {
+      "src": "/assets4/performance/images/transcript-technologies.000511788587-1440.webp",
+      "width": 1440,
+      "height": 905,
+      "original_width": 2299,
+      "original_height": 1445,
+      "original_bytes": 224341,
+      "bytes": 106462,
+      "variants": [
+        {
+          "src": "/assets4/performance/images/transcript-technologies.e750448b843e-480.webp",
+          "width": 480,
+          "height": 302,
+          "bytes": 27180
+        },
+        {
+          "src": "/assets4/performance/images/transcript-technologies.6e051fa3eee2-960.webp",
+          "width": 960,
+          "height": 603,
+          "bytes": 65642
+        },
+        {
+          "src": "/assets4/performance/images/transcript-technologies.000511788587-1440.webp",
+          "width": 1440,
+          "height": 905,
+          "bytes": 106462
+        }
+      ],
+      "lossless_encoding": true,
+      "resampling": "Lanczos only for responsive smaller variants; no crop",
+      "source_sha256": "b3172faf46a9e43e01ecdbebe19e03629d5e46122ac527c76eaca98f02ee6354"
+    }
+  },
+  "styles": {
+    "/assets4/css/animate.css": {
+      "href": "/assets4/css/animate.607d3304452a.min.css",
+      "original_bytes": 23868,
+      "bytes": 17096
+    },
+    "/assets4/css/blue-theme.css": {
+      "href": "/assets4/css/blue-theme.d67529e88ff4.min.css",
+      "original_bytes": 247686,
+      "bytes": 172996
+    },
+    "/assets4/css/credential-university.css": {
+      "href": "/assets4/css/credential-university.bf0fa3631ab7.min.css",
+      "original_bytes": 41817,
+      "bytes": 35331
+    },
+    "/assets4/css/enterprise-overrides.css": {
+      "href": "/assets4/css/enterprise-overrides.8d4a7911eee8.min.css",
+      "original_bytes": 104768,
+      "bytes": 73515
+    },
+    "/assets4/css/menu.css": {
+      "href": "/assets4/css/menu.3b245b7192e3.min.css",
+      "original_bytes": 31065,
+      "bytes": 22083
+    },
+    "/assets4/css/mobile-ux.css": {
+      "href": "/assets4/css/mobile-ux.3f7d4bfcfd3f.min.css",
+      "original_bytes": 20914,
+      "bytes": 14102
+    },
+    "/assets4/css/responsive.css": {
+      "href": "/assets4/css/responsive.ed4e8845cbc4.min.css",
+      "original_bytes": 413740,
+      "bytes": 325344
+    },
+    "/assets4/css/skills-taxonomy-mapping.css": {
+      "href": "/assets4/css/skills-taxonomy-mapping.c3c45ec4bfd7.min.css",
+      "original_bytes": 18279,
+      "bytes": 15543
+    },
+    "/assets4/css/workforce-intelligence.css": {
+      "href": "/assets4/css/workforce-intelligence.cf9af8f34fd6.min.css",
+      "original_bytes": 16036,
+      "bytes": 14459
+    }
+  },
+  "method": "Measured resources only; lossless WebP, unchanged SVG vectors with smaller lossless embedded rasters; originals retained. CSS parser minification, no unused-rule purge."
+}

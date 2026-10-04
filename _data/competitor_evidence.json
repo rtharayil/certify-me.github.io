@@ -1,0 +1,3845 @@
+{
+  "observed_on": "2026-10-04",
+  "method": "Agent-curated claims from fetched official vendor pages. Confidence concerns published evidence, not authenticated feature testing or independent security assurance. NOT PUBLICLY SPECIFIED means not established in the reviewed sources, never feature absence.",
+  "vendors": [
+    {
+      "name": "Accredible",
+      "slug": "accredible",
+      "summary": "Accredible documents digital credentials, programme engagement, pathways, a wallet and Job Market Insights. Its January 2026 announcement explicitly adds OB3 and W3C VC export and ingestion.",
+      "buyer_checks": "Evaluate credential export and ingestion, pathway completion/dropoff reporting, and the source and scope of Job Market Insights. Confirm receiving-system compatibility rather than assuming that a standards label proves every exchange.",
+      "facts": [
+        {
+          "vendor": "Accredible",
+          "dimension": "ICP",
+          "current_claim": "Universities, associations, product certification providers, employee training and awarding/testing bodies are listed audiences.",
+          "source_url": "https://www.accredible.com/platform",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S01",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/platform",
+              "title": "Digital credentials that fuel program growth",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Positioning",
+          "current_claim": "A unified credential platform covering issuance, learning pathways, learner visibility and programme measurement.",
+          "source_url": "https://www.accredible.com/platform",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S01",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/platform",
+              "title": "Digital credentials that fuel program growth",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Credentialing",
+          "current_claim": "Design and issue digital certificates and badges; editing, expiry and renewals are documented.",
+          "source_url": "https://www.accredible.com/platform",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S01",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/platform",
+              "title": "Digital credentials that fuel program growth",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Digital Badges",
+          "current_claim": "Digital badge design and issuance with achievement, criteria and skills information.",
+          "source_url": "https://www.accredible.com/platform",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S01",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/platform",
+              "title": "Digital credentials that fuel program growth",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Open Badges",
+          "current_claim": "Vendor announces OB2/OB3 conversion at sharing or verification, with OB3 export and ingestion.",
+          "source_url": "https://www.accredible.com/newsroom/accredible-launches-support-for-open-badge-3-0-and-w3c-verifiable-credentials",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "2026-01-13",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S03",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/newsroom/accredible-launches-support-for-open-badge-3-0-and-w3c-verifiable-credentials",
+              "title": "Accredible Launches Support for Open Badge 3.0 and W3C Verifiable Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "2026-01-13",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "W3C VC",
+          "current_claim": "January 13, 2026 announcement documents W3C VC export and ingestion. Confirm the exact model version, proof and receiver requirements.",
+          "source_url": "https://www.accredible.com/newsroom/accredible-launches-support-for-open-badge-3-0-and-w3c-verifiable-credentials",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "2026-01-13",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S03",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/newsroom/accredible-launches-support-for-open-badge-3-0-and-w3c-verifiable-credentials",
+              "title": "Accredible Launches Support for Open Badge 3.0 and W3C Verifiable Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "2026-01-13",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "CLR",
+          "current_claim": "NOT PUBLICLY SPECIFIED",
+          "source_url": "https://www.accredible.com/platform; https://www.accredible.com/newsroom/accredible-launches-support-for-open-badge-3-0-and-w3c-verifiable-credentials",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; 2026-01-13",
+          "confidence": "LOW",
+          "notes": "Pathways and a wallet do not establish a CLR 2.0 implementation or certification role. This is the result of reviewed-source coverage, not evidence of absence.",
+          "sources": [
+            {
+              "id": "S01",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/platform",
+              "title": "Digital credentials that fuel program growth",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S03",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/newsroom/accredible-launches-support-for-open-badge-3-0-and-w3c-verifiable-credentials",
+              "title": "Accredible Launches Support for Open Badge 3.0 and W3C Verifiable Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "2026-01-13",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "NOT PUBLICLY SPECIFIED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Skills",
+          "current_claim": "Credential skills and learning outcomes are linked to Job Market Insights.",
+          "source_url": "https://www.accredible.com/platform",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S01",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/platform",
+              "title": "Digital credentials that fuel program growth",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Learner Records",
+          "current_claim": "A digital wallet and visual milestone learning pathways are documented; this is not evidence of CLR conformance.",
+          "source_url": "https://www.accredible.com/platform; https://www.accredible.com/newsroom/accredible-launches-support-for-open-badge-3-0-and-w3c-verifiable-credentials",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; 2026-01-13",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S01",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/platform",
+              "title": "Digital credentials that fuel program growth",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S03",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/newsroom/accredible-launches-support-for-open-badge-3-0-and-w3c-verifiable-credentials",
+              "title": "Accredible Launches Support for Open Badge 3.0 and W3C Verifiable Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "2026-01-13",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Workforce Intelligence",
+          "current_claim": "Job Market Insights tied to programme skills and learning outcomes are documented. Exact dataset coverage, licensing and refresh are NOT PUBLICLY SPECIFIED in reviewed sources.",
+          "source_url": "https://www.accredible.com/platform",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "MEDIUM",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S01",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/platform",
+              "title": "Digital credentials that fuel program growth",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PARTIAL_PUBLIC_DETAIL"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Verification",
+          "current_claim": "Verifiable credentials and conversion into supported open formats at sharing or verification are described.",
+          "source_url": "https://www.accredible.com/platform; https://www.accredible.com/newsroom/accredible-launches-support-for-open-badge-3-0-and-w3c-verifiable-credentials",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; 2026-01-13",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S01",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/platform",
+              "title": "Digital credentials that fuel program growth",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S03",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/newsroom/accredible-launches-support-for-open-badge-3-0-and-w3c-verifiable-credentials",
+              "title": "Accredible Launches Support for Open Badge 3.0 and W3C Verifiable Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "2026-01-13",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Analytics",
+          "current_claim": "Email and credential engagement, social shares, referrals, pathway completions and dropoffs.",
+          "source_url": "https://www.accredible.com/platform",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S01",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/platform",
+              "title": "Digital credentials that fuel program growth",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "API",
+          "current_claim": "Pricing lists API access and exportable insights data; the platform links public API documentation. Confirm plan entitlements.",
+          "source_url": "https://www.accredible.com/platform; https://www.accredible.com/pricing",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S01",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/platform",
+              "title": "Digital credentials that fuel program growth",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S02",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/pricing",
+              "title": "Pricing to fit your digital credentialing needs",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Integrations",
+          "current_claim": "Published integration directory and plan matrix list LMS/workflow connections including Moodle, Canvas and Zapier. Verify each connector and plan.",
+          "source_url": "https://www.accredible.com/platform; https://www.accredible.com/pricing",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S01",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/platform",
+              "title": "Digital credentials that fuel program growth",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S02",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/pricing",
+              "title": "Pricing to fit your digital credentialing needs",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Security",
+          "current_claim": "Trust centre offers SOC 2 Type 2 report access, a bridge letter and a public SOC 3 summary. Current report period and contractual scope require review.",
+          "source_url": "https://www.accredible.com/trust-center",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S30",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/trust-center",
+              "title": "Accredible Trust Center",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Data Residency",
+          "current_claim": "Operations documentation describes an opt-in EU region in Frankfurt at account creation, with region-specific backups. Confirm the full processing and transfer scope.",
+          "source_url": "https://help.accredible.com/s/article/accredible-operations-and-security",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S04",
+              "vendor": "Accredible",
+              "url": "https://help.accredible.com/s/article/accredible-operations-and-security",
+              "title": "Accredible official documentation",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Pricing",
+          "current_claim": "Recipient-based plans; Launch displays $45/month on a 12-month term billed monthly, and custom plans are available. Recheck quota and inclusions at purchase.",
+          "source_url": "https://www.accredible.com/pricing",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S02",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/pricing",
+              "title": "Pricing to fit your digital credentialing needs",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Contract",
+          "current_claim": "Pricing FAQ states one-year and multi-year contracts; the displayed Launch offer is a 12-month term.",
+          "source_url": "https://www.accredible.com/pricing",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S02",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/pricing",
+              "title": "Pricing to fit your digital credentialing needs",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Higher Education",
+          "current_claim": "An official higher-education solution is listed, with university implementations on the platform page.",
+          "source_url": "https://www.accredible.com/platform",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S01",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/platform",
+              "title": "Digital credentials that fuel program growth",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Enterprise",
+          "current_claim": "Custom recipient volumes, expanded features, enterprise security support and custom SLAs/terms are listed.",
+          "source_url": "https://www.accredible.com/pricing",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S02",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/pricing",
+              "title": "Pricing to fit your digital credentialing needs",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Certification Bodies",
+          "current_claim": "Product certification, associations and awarding/testing bodies are official solution categories.",
+          "source_url": "https://www.accredible.com/platform",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S01",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/platform",
+              "title": "Digital credentials that fuel program growth",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Accredible",
+          "dimension": "Workforce Use Cases",
+          "current_claim": "Employee training, career-related credentials, learning pathways and Job Market Insights.",
+          "source_url": "https://www.accredible.com/platform",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S01",
+              "vendor": "Accredible",
+              "url": "https://www.accredible.com/platform",
+              "title": "Digital credentials that fuel program growth",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        }
+      ]
+    },
+    {
+      "name": "Certifier",
+      "slug": "certifier",
+      "summary": "Certifier documents certificate and badge issuance, OB3, API and automation workflows, and enterprise controls. Its security hub publishes ISO certifications and European AWS hosting.",
+      "buyer_checks": "Match annual issuance limits and billing to your programme. Test an OB3 export, the actual CRM/LMS workflow, roles, audit logs and SSO. Do not equate ISO certification with a SOC 2 report.",
+      "facts": [
+        {
+          "vendor": "Certifier",
+          "dimension": "ICP",
+          "current_claim": "Organizations running certification programmes, including small teams and enterprise credential issuers.",
+          "source_url": "https://certifier.io/pricing; https://certifier.io/enterprise",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S06",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/pricing",
+              "title": "Pick up a plan to generate  certificates and badges",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S07",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/enterprise",
+              "title": "Enterprise digital credentials without enterprise friction",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Positioning",
+          "current_claim": "Digital certificate and badge issuance with branded delivery and enterprise credential workflows.",
+          "source_url": "https://certifier.io/en; https://certifier.io/enterprise",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S05",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/en",
+              "title": "\\#1 Certificate Maker",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "PARTIAL_EXTRACT",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S07",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/enterprise",
+              "title": "Enterprise digital credentials without enterprise friction",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Credentialing",
+          "current_claim": "Design, generate, send, manage and verify digital certificates and badges.",
+          "source_url": "https://certifier.io/en; https://certifier.io/pricing",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S05",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/en",
+              "title": "\\#1 Certificate Maker",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "PARTIAL_EXTRACT",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S06",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/pricing",
+              "title": "Pick up a plan to generate  certificates and badges",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Digital Badges",
+          "current_claim": "Vendor documents digital badge issuance and automatic OB3 compliance for issued badges.",
+          "source_url": "https://certifier.io/blog/open-badges-3-0",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S08",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/blog/open-badges-3-0",
+              "title": "What Are Open Badges 3.0? A Simple Guide",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Open Badges",
+          "current_claim": "Official OB3 guide states that issued badges support Open Badges 3.0 and claims 1EdTech certification. Exact registry role and sample export should be checked.",
+          "source_url": "https://certifier.io/blog/open-badges-3-0",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S08",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/blog/open-badges-3-0",
+              "title": "What Are Open Badges 3.0? A Simple Guide",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "W3C VC",
+          "current_claim": "NOT PUBLICLY SPECIFIED",
+          "source_url": "https://certifier.io/blog/open-badges-3-0; https://certifier.io/enterprise",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "LOW",
+          "notes": "OB3's VC-based model is not separate evidence of standalone VC profiles, model versions or wallet presentation support. This is the result of reviewed-source coverage, not evidence of absence.",
+          "sources": [
+            {
+              "id": "S08",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/blog/open-badges-3-0",
+              "title": "What Are Open Badges 3.0? A Simple Guide",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S07",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/enterprise",
+              "title": "Enterprise digital credentials without enterprise friction",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "NOT PUBLICLY SPECIFIED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "CLR",
+          "current_claim": "NOT PUBLICLY SPECIFIED",
+          "source_url": "https://certifier.io/pricing; https://certifier.io/enterprise",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "LOW",
+          "notes": "Learning pathway creation does not establish CLR 2.0 conformance. This is the result of reviewed-source coverage, not evidence of absence.",
+          "sources": [
+            {
+              "id": "S06",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/pricing",
+              "title": "Pick up a plan to generate  certificates and badges",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S07",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/enterprise",
+              "title": "Enterprise digital credentials without enterprise friction",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "NOT PUBLICLY SPECIFIED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Skills",
+          "current_claim": "Skills are listed in the credential design feature matrix. Automatic taxonomy mapping is NOT PUBLICLY SPECIFIED.",
+          "source_url": "https://certifier.io/pricing",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "MEDIUM",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S06",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/pricing",
+              "title": "Pick up a plan to generate  certificates and badges",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PARTIAL_PUBLIC_DETAIL"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Learner Records",
+          "current_claim": "Learning pathway creation is listed; a standards-based aggregate learner-record profile is NOT PUBLICLY SPECIFIED.",
+          "source_url": "https://certifier.io/pricing",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "MEDIUM",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S06",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/pricing",
+              "title": "Pick up a plan to generate  certificates and badges",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PARTIAL_PUBLIC_DETAIL"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Workforce Intelligence",
+          "current_claim": "NOT PUBLICLY SPECIFIED",
+          "source_url": "https://certifier.io/pricing; https://certifier.io/enterprise; https://certifier.io/blog/certifier-enterprise-features-teams",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED; 2026-09-15",
+          "confidence": "LOW",
+          "notes": "No comparable labour-market dataset, licensing, coverage or refresh was established. This is the result of reviewed-source coverage, not evidence of absence.",
+          "sources": [
+            {
+              "id": "S06",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/pricing",
+              "title": "Pick up a plan to generate  certificates and badges",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S07",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/enterprise",
+              "title": "Enterprise digital credentials without enterprise friction",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S38",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/blog/certifier-enterprise-features-teams",
+              "title": "Certifier Enterprise Features for Teams in 2026",
+              "observed_on": "2026-10-04",
+              "publication_date": "2026-09-15",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "NOT PUBLICLY SPECIFIED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Verification",
+          "current_claim": "OB3 guide describes badge metadata, a unique identifier and verification; test a real export and status lifecycle.",
+          "source_url": "https://certifier.io/blog/open-badges-3-0",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S08",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/blog/open-badges-3-0",
+              "title": "What Are Open Badges 3.0? A Simple Guide",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Analytics",
+          "current_claim": "Advanced analytics is listed in paid-plan and enterprise features; confirm metrics and plan access.",
+          "source_url": "https://certifier.io/pricing; https://certifier.io/enterprise",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S06",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/pricing",
+              "title": "Pick up a plan to generate  certificates and badges",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S07",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/enterprise",
+              "title": "Enterprise digital credentials without enterprise friction",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "API",
+          "current_claim": "Pricing lists API access and documentation; legal terms define API access and its agreement/order conditions.",
+          "source_url": "https://certifier.io/pricing; https://certifier.io/terms",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S06",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/pricing",
+              "title": "Pick up a plan to generate  certificates and badges",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S22",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/terms",
+              "title": "Terms of Service",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Integrations",
+          "current_claim": "Pricing and enterprise documentation list automation connections, including Zapier, Make and Pipedream, with tailored integrations at enterprise level.",
+          "source_url": "https://certifier.io/pricing; https://certifier.io/enterprise",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S06",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/pricing",
+              "title": "Pick up a plan to generate  certificates and badges",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S07",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/enterprise",
+              "title": "Enterprise digital credentials without enterprise friction",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Security",
+          "current_claim": "Security hub states ISO 27001 and ISO 9001 certification and GDPR practices; explicitly says it has no separate SOC 2 compliance report. Request current certificate scope.",
+          "source_url": "https://certifier.io/legal-and-security",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "2026-01-13",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S21",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/legal-and-security",
+              "title": "Legal and Security Policies",
+              "observed_on": "2026-10-04",
+              "publication_date": "2026-01-13",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Data Residency",
+          "current_claim": "Security hub states infrastructure is hosted on AWS within Europe. This alone does not establish EU-only processing or a selectable worldwide residency guarantee.",
+          "source_url": "https://certifier.io/legal-and-security",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "2026-01-13",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S21",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/legal-and-security",
+              "title": "Legal and Security Policies",
+              "observed_on": "2026-10-04",
+              "publication_date": "2026-01-13",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Pricing",
+          "current_claim": "Public free and paid tiers with annual issuing limits, billing choices and custom Enterprise pricing. Values vary with selected volume and billing; obtain a like-for-like quote.",
+          "source_url": "https://certifier.io/pricing",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S06",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/pricing",
+              "title": "Pick up a plan to generate  certificates and badges",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Contract",
+          "current_claim": "Terms define monthly/multiple-month or annual subscription periods and a minimum obligation for each subscription term; API terms may depend on the agreement/order.",
+          "source_url": "https://certifier.io/terms",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S22",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/terms",
+              "title": "Terms of Service",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Higher Education",
+          "current_claim": "Enterprise product article explicitly discusses university continuing education and microcredential workflows.",
+          "source_url": "https://certifier.io/blog/certifier-enterprise-features-teams",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "2026-09-15",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S38",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/blog/certifier-enterprise-features-teams",
+              "title": "Certifier Enterprise Features for Teams in 2026",
+              "observed_on": "2026-10-04",
+              "publication_date": "2026-09-15",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Enterprise",
+          "current_claim": "Enterprise page lists SAML SSO, audit logs, custom DPA/SLA, roles, white-labeling and tailored integrations.",
+          "source_url": "https://certifier.io/enterprise",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S07",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/enterprise",
+              "title": "Enterprise digital credentials without enterprise friction",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Certification Bodies",
+          "current_claim": "Enterprise article documents membership, partner and customer certification workflows; confirm the professional body's specific approval and renewal requirements.",
+          "source_url": "https://certifier.io/blog/certifier-enterprise-features-teams",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "2026-09-15",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S38",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/blog/certifier-enterprise-features-teams",
+              "title": "Certifier Enterprise Features for Teams in 2026",
+              "observed_on": "2026-10-04",
+              "publication_date": "2026-09-15",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Certifier",
+          "dimension": "Workforce Use Cases",
+          "current_claim": "Enterprise and partner training/certification issuance workflows; a labour-market intelligence product is not established by these use cases.",
+          "source_url": "https://certifier.io/enterprise; https://certifier.io/blog/certifier-enterprise-features-teams",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; 2026-09-15",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S07",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/enterprise",
+              "title": "Enterprise digital credentials without enterprise friction",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S38",
+              "vendor": "Certifier",
+              "url": "https://certifier.io/blog/certifier-enterprise-features-teams",
+              "title": "Certifier Enterprise Features for Teams in 2026",
+              "observed_on": "2026-10-04",
+              "publication_date": "2026-09-15",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        }
+      ]
+    },
+    {
+      "name": "Credly",
+      "slug": "credly",
+      "summary": "Credly by Pearson documents Acclaim credential programmes, skills-oriented enterprise use cases, analytics and integrations. Its OB3 page specifically documents import and verification of OB2/OB3 badges from other issuers.",
+      "buyer_checks": "Distinguish external badge import/verification from your own issuance profile. Test the contracted API, skills data feed, earner experience and integrations. Obtain the exact security and geographic processing terms.",
+      "facts": [
+        {
+          "vendor": "Credly",
+          "dimension": "ICP",
+          "current_claim": "Training providers, higher education, professional associations, product certification providers and enterprise organizations.",
+          "source_url": "https://info.credly.com/product/acclaim",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S09",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/acclaim",
+              "title": "Digital Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Positioning",
+          "current_claim": "Digital credential programmes and trusted skills intelligence within Pearson Workforce Skills.",
+          "source_url": "https://info.credly.com/product/acclaim; https://info.credly.com/pricing",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S09",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/acclaim",
+              "title": "Digital Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S11",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/pricing",
+              "title": "Contact Us",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Credentialing",
+          "current_claim": "Create, manage, market, analyze and scale digital credential programmes.",
+          "source_url": "https://info.credly.com/product/acclaim; https://info.credly.com/acclaim-product-features",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S09",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/acclaim",
+              "title": "Digital Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S12",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/acclaim-product-features",
+              "title": "Credly Features and Functionality",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Digital Badges",
+          "current_claim": "Badge issuance and programme tracking are explicitly documented.",
+          "source_url": "https://info.credly.com/product/acclaim",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S09",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/acclaim",
+              "title": "Digital Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Open Badges",
+          "current_claim": "OB3 product page documents upload and verification of external OB2/OB3 badges with automatically parsed metadata. Do not infer universal OB3 issuance from this import feature.",
+          "source_url": "https://info.credly.com/product/open-badge-3.0",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S10",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/open-badge-3.0",
+              "title": "Open Badge 3.0",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "W3C VC",
+          "current_claim": "NOT PUBLICLY SPECIFIED",
+          "source_url": "https://info.credly.com/product/open-badge-3.0; https://info.credly.com/acclaim-product-features",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "LOW",
+          "notes": "The reviewed OB3 import page does not establish a standalone VC issuance or presentation profile. This is the result of reviewed-source coverage, not evidence of absence.",
+          "sources": [
+            {
+              "id": "S10",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/open-badge-3.0",
+              "title": "Open Badge 3.0",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S12",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/acclaim-product-features",
+              "title": "Credly Features and Functionality",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "NOT PUBLICLY SPECIFIED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "CLR",
+          "current_claim": "NOT PUBLICLY SPECIFIED",
+          "source_url": "https://info.credly.com/product/acclaim; https://info.credly.com/product/open-badge-3.0",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "LOW",
+          "notes": "A unified badge collection is not proof of CLR 2.0 conformance. This is the result of reviewed-source coverage, not evidence of absence.",
+          "sources": [
+            {
+              "id": "S09",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/acclaim",
+              "title": "Digital Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S10",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/open-badge-3.0",
+              "title": "Open Badge 3.0",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "NOT PUBLICLY SPECIFIED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Skills",
+          "current_claim": "Credential metadata represents skills; enterprise positioning includes workforce capabilities and skills-based talent decisions.",
+          "source_url": "https://info.credly.com/product/acclaim",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S09",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/acclaim",
+              "title": "Digital Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Learner Records",
+          "current_claim": "Earners can combine imported badges from multiple issuers into a collection with verification. Exact CLR profile is NOT PUBLICLY SPECIFIED.",
+          "source_url": "https://info.credly.com/product/open-badge-3.0",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "MEDIUM",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S10",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/open-badge-3.0",
+              "title": "Open Badge 3.0",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PARTIAL_PUBLIC_DETAIL"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Workforce Intelligence",
+          "current_claim": "Enterprise skills intelligence and talent decisions are documented; OB3 imports enrich a Workforce API feed. Equivalent job-market coverage and refresh are NOT PUBLICLY SPECIFIED.",
+          "source_url": "https://info.credly.com/product/acclaim; https://info.credly.com/product/open-badge-3.0",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "MEDIUM",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S09",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/acclaim",
+              "title": "Digital Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S10",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/open-badge-3.0",
+              "title": "Open Badge 3.0",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PARTIAL_PUBLIC_DETAIL"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Verification",
+          "current_claim": "External OB2/OB3 badge verification and metadata parsing are documented; receiver and issuer-resource requirements still matter.",
+          "source_url": "https://info.credly.com/product/open-badge-3.0",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S10",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/open-badge-3.0",
+              "title": "Open Badge 3.0",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Analytics",
+          "current_claim": "Credential usage and earner engagement analytics, trends and programme optimization.",
+          "source_url": "https://info.credly.com/product/acclaim; https://info.credly.com/acclaim-product-features",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S09",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/acclaim",
+              "title": "Digital Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S12",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/acclaim-product-features",
+              "title": "Credly Features and Functionality",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "API",
+          "current_claim": "Official developer gateway links API fundamentals, authentication, endpoints and terms; OB3 page also describes a Workforce API.",
+          "source_url": "https://www.credly.com/docs/web_service_api; https://info.credly.com/product/open-badge-3.0",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S24",
+              "vendor": "Credly",
+              "url": "https://www.credly.com/docs/web_service_api",
+              "title": "📋 The Fundamentals   [Skip link to 📋 The Fundamentals](https://docs.credly.com/browse/docs/getting-started\\#-the-fundamentals)",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S10",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/open-badge-3.0",
+              "title": "Open Badge 3.0",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Integrations",
+          "current_claim": "Acclaim page lists integrations including Canvas, Degreed and Zapier; confirm specific connector availability.",
+          "source_url": "https://info.credly.com/product/acclaim",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S09",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/acclaim",
+              "title": "Digital Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Security",
+          "current_claim": "Security page publishes ISO 27001 and ISO 27701 assurances and GDPR practices, with further security documentation on request. Current certificate validity and scope need review.",
+          "source_url": "https://info.credly.com/data-security-privacy",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S23",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/data-security-privacy",
+              "title": "Data Security and Privacy",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Data Residency",
+          "current_claim": "NOT PUBLICLY SPECIFIED",
+          "source_url": "https://info.credly.com/data-security-privacy",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "LOW",
+          "notes": "The reviewed security page does not establish selectable hosting regions or universal data-residency guarantees. This is the result of reviewed-source coverage, not evidence of absence.",
+          "sources": [
+            {
+              "id": "S23",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/data-security-privacy",
+              "title": "Data Security and Privacy",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "NOT PUBLICLY SPECIFIED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Pricing",
+          "current_claim": "Official pricing page directs organizations to request pricing for the selected solution; no universal public rate is supplied.",
+          "source_url": "https://info.credly.com/pricing",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S11",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/pricing",
+              "title": "Contact Us",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Contract",
+          "current_claim": "NOT PUBLICLY SPECIFIED",
+          "source_url": "https://info.credly.com/pricing",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "LOW",
+          "notes": "Pricing is sales-led; minimum term, renewals and enterprise license conditions require the actual contract. This is the result of reviewed-source coverage, not evidence of absence.",
+          "sources": [
+            {
+              "id": "S11",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/pricing",
+              "title": "Contact Us",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "NOT PUBLICLY SPECIFIED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Higher Education",
+          "current_claim": "Higher education institutions are explicitly addressed on the Acclaim product page.",
+          "source_url": "https://info.credly.com/product/acclaim",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S09",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/acclaim",
+              "title": "Digital Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Enterprise",
+          "current_claim": "Enterprise organizations are an explicit audience, with skills intelligence, internal mobility and talent decision use cases.",
+          "source_url": "https://info.credly.com/product/acclaim",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S09",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/acclaim",
+              "title": "Digital Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Certification Bodies",
+          "current_claim": "Professional associations and product certification providers are explicit product audiences.",
+          "source_url": "https://info.credly.com/product/acclaim",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S09",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/acclaim",
+              "title": "Digital Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Credly",
+          "dimension": "Workforce Use Cases",
+          "current_claim": "Employee recognition, workforce capabilities, internal mobility and skills-based talent decisions.",
+          "source_url": "https://info.credly.com/product/acclaim",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S09",
+              "vendor": "Credly",
+              "url": "https://info.credly.com/product/acclaim",
+              "title": "Digital Credentials",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        }
+      ]
+    },
+    {
+      "name": "Parchment",
+      "slug": "parchment",
+      "summary": "Parchment documents an education records ecosystem spanning transcripts, diplomas, certificates, badges and CLRs. It also explicitly markets OB3-compliant badges for workforce programmes.",
+      "buyer_checks": "Evaluate official transcript and diploma exchange separately from badge issuance. Ask how CLR data is structured and exchanged, which SIS/LMS/API connections apply, and which regional agreement governs storage and international transfers.",
+      "facts": [
+        {
+          "vendor": "Parchment",
+          "dimension": "ICP",
+          "current_claim": "Education institutions and learners, plus employers and training organizations using workforce credentials.",
+          "source_url": "https://www.parchment.com/; https://www.parchment.com/platform/workforce/solutions/digital-badges",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S13",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/",
+              "title": "Turn every  digital badge   into an   opportunity",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S14",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+              "title": "Parchment Award Digital Badges to Support Workforce Development",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Positioning",
+          "current_claim": "An education credential and records platform connecting transcripts, diplomas, badges, certificates and CLRs.",
+          "source_url": "https://www.parchment.com/",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S13",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/",
+              "title": "Turn every  digital badge   into an   opportunity",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Credentialing",
+          "current_claim": "Official records issuance and exchange, including transcripts, diplomas, certificates, badges and CLRs.",
+          "source_url": "https://www.parchment.com/",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S13",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/",
+              "title": "Turn every  digital badge   into an   opportunity",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Digital Badges",
+          "current_claim": "Higher-education and workforce digital badge products are documented.",
+          "source_url": "https://www.parchment.com/platform/workforce/solutions/digital-badges; https://www.parchment.com/platform/higher-education/digital-badges",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S14",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+              "title": "Parchment Award Digital Badges to Support Workforce Development",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S15",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/higher-education/digital-badges",
+              "title": "Digital Badges for higher education",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Open Badges",
+          "current_claim": "Workforce product page explicitly describes OB3-compliant, metadata-rich digital badges.",
+          "source_url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S14",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+              "title": "Parchment Award Digital Badges to Support Workforce Development",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "W3C VC",
+          "current_claim": "NOT PUBLICLY SPECIFIED",
+          "source_url": "https://www.parchment.com/platform/workforce/solutions/digital-badges; https://www.parchment.com/platform/higher-education/clr-services",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "LOW",
+          "notes": "OB3 and CLR product labels do not establish every standalone VC profile, proof suite or wallet presentation. This is the result of reviewed-source coverage, not evidence of absence.",
+          "sources": [
+            {
+              "id": "S14",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+              "title": "Parchment Award Digital Badges to Support Workforce Development",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S25",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/higher-education/clr-services",
+              "title": "CLR Services",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "NOT PUBLICLY SPECIFIED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "CLR",
+          "current_claim": "Dedicated CLR Services include record planning, structuring, sharing and consulting. Confirm the exact CLR standard version and registry role.",
+          "source_url": "https://www.parchment.com/platform/higher-education/clr-services",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S25",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/higher-education/clr-services",
+              "title": "CLR Services",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Skills",
+          "current_claim": "Badges validate skills; CLR Services describe skills and competencies within wider institutional learning evidence.",
+          "source_url": "https://www.parchment.com/platform/workforce/solutions/digital-badges; https://www.parchment.com/platform/higher-education/clr-services",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S14",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+              "title": "Parchment Award Digital Badges to Support Workforce Development",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S25",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/higher-education/clr-services",
+              "title": "CLR Services",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Learner Records",
+          "current_claim": "Transcripts, diplomas and CLR Services connect academic and co-curricular achievements.",
+          "source_url": "https://www.parchment.com/; https://www.parchment.com/platform/higher-education/clr-services",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S13",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/",
+              "title": "Turn every  digital badge   into an   opportunity",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S25",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/higher-education/clr-services",
+              "title": "CLR Services",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Workforce Intelligence",
+          "current_claim": "Workforce badges, pathways and CLR career connections are described. A comparable labour-market dataset, licensing and refresh are NOT PUBLICLY SPECIFIED.",
+          "source_url": "https://www.parchment.com/platform/workforce/solutions/digital-badges; https://www.parchment.com/platform/higher-education/clr-services",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "MEDIUM",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S14",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+              "title": "Parchment Award Digital Badges to Support Workforce Development",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S25",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/higher-education/clr-services",
+              "title": "CLR Services",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PARTIAL_PUBLIC_DETAIL"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Verification",
+          "current_claim": "Official credential exchange and verifiable OB3 badges are described; test the actual issuer/status/receiver workflow.",
+          "source_url": "https://www.parchment.com/; https://www.parchment.com/platform/workforce/solutions/digital-badges",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S13",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/",
+              "title": "Turn every  digital badge   into an   opportunity",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S14",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+              "title": "Parchment Award Digital Badges to Support Workforce Development",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Analytics",
+          "current_claim": "Higher-education badge analytics and workforce programme reporting/real-time analytics are documented.",
+          "source_url": "https://www.parchment.com/platform/workforce/solutions/digital-badges; https://www.parchment.com/platform/higher-education/digital-badges",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S14",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+              "title": "Parchment Award Digital Badges to Support Workforce Development",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S15",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/higher-education/digital-badges",
+              "title": "Digital Badges for higher education",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "API",
+          "current_claim": "NOT PUBLICLY SPECIFIED",
+          "source_url": "https://www.parchment.com/; https://www.parchment.com/platform/higher-education/clr-services",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "LOW",
+          "notes": "Public material reviewed does not establish a self-serve API contract; this is not a claim that APIs are unavailable. This is the result of reviewed-source coverage, not evidence of absence.",
+          "sources": [
+            {
+              "id": "S13",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/",
+              "title": "Turn every  digital badge   into an   opportunity",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S25",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/higher-education/clr-services",
+              "title": "CLR Services",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "NOT PUBLICLY SPECIFIED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Integrations",
+          "current_claim": "Connections between badges, official records, learning pathways and CLR services are described. Exact SIS/LMS connector and entitlement list is NOT PUBLICLY SPECIFIED in the reviewed pages.",
+          "source_url": "https://www.parchment.com/platform/workforce/solutions/digital-badges; https://www.parchment.com/platform/higher-education/clr-services",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "MEDIUM",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S14",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+              "title": "Parchment Award Digital Badges to Support Workforce Development",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S25",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/higher-education/clr-services",
+              "title": "CLR Services",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PARTIAL_PUBLIC_DETAIL"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Security",
+          "current_claim": "Trust page states annual SOC 2 Type II auditing, encryption, access controls and security-report access. Review the actual current report and contracted product scope.",
+          "source_url": "https://www.parchment.com/en-gb/resources/trust",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S26",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/en-gb/resources/trust",
+              "title": "Trust",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Data Residency",
+          "current_claim": "Published DPA states US storage and authorizes processing/transfers in the US or other subprocessor countries. Confirm applicable regional terms; do not interpret this as a universal US-only guarantee.",
+          "source_url": "https://www.parchment.com/data-protection-addendum",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S27",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/data-protection-addendum",
+              "title": "Data Protection Addendum",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Pricing",
+          "current_claim": "Institutional get-a-quote page; request product-specific pricing and clarify institution versus learner ordering charges.",
+          "source_url": "https://www.parchment.com/pricing/get-a-quote",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S16",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/pricing/get-a-quote",
+              "title": "Get a Quote",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Contract",
+          "current_claim": "Quote-led institutional procurement; minimum license term and renewal terms are NOT PUBLICLY SPECIFIED. A public DPA addresses processing obligations, not a universal product price.",
+          "source_url": "https://www.parchment.com/pricing/get-a-quote; https://www.parchment.com/data-protection-addendum",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "MEDIUM",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S16",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/pricing/get-a-quote",
+              "title": "Get a Quote",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S27",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/data-protection-addendum",
+              "title": "Data Protection Addendum",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PARTIAL_PUBLIC_DETAIL"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Higher Education",
+          "current_claim": "Dedicated higher-education badge and CLR products, in addition to official academic records.",
+          "source_url": "https://www.parchment.com/; https://www.parchment.com/platform/higher-education/digital-badges; https://www.parchment.com/platform/higher-education/clr-services",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S13",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/",
+              "title": "Turn every  digital badge   into an   opportunity",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S15",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/higher-education/digital-badges",
+              "title": "Digital Badges for higher education",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S25",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/higher-education/clr-services",
+              "title": "CLR Services",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Enterprise",
+          "current_claim": "Workforce programmes address training providers and employers; specific enterprise license/SLA details are NOT PUBLICLY SPECIFIED.",
+          "source_url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "MEDIUM",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S14",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+              "title": "Parchment Award Digital Badges to Support Workforce Development",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PARTIAL_PUBLIC_DETAIL"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Certification Bodies",
+          "current_claim": "NOT PUBLICLY SPECIFIED",
+          "source_url": "https://www.parchment.com/; https://www.parchment.com/platform/workforce/solutions/digital-badges",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "LOW",
+          "notes": "Employer/training use cases alone do not establish a dedicated professional-body certification/renewal product. This is the result of reviewed-source coverage, not evidence of absence.",
+          "sources": [
+            {
+              "id": "S13",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/",
+              "title": "Turn every  digital badge   into an   opportunity",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S14",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+              "title": "Parchment Award Digital Badges to Support Workforce Development",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "NOT PUBLICLY SPECIFIED"
+        },
+        {
+          "vendor": "Parchment",
+          "dimension": "Workforce Use Cases",
+          "current_claim": "Skills recognition across employee learning, training credentials, career pathways and workforce programme reporting.",
+          "source_url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S14",
+              "vendor": "Parchment",
+              "url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+              "title": "Parchment Award Digital Badges to Support Workforce Development",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        }
+      ]
+    },
+    {
+      "name": "Sertifier",
+      "slug": "sertifier",
+      "summary": "Sertifier documents enterprise credential workflows, Open Badges, W3C VCs, API/webhooks, configurable EU/US residency and a dedicated CLR product. These are shared capabilities to evaluate, not grounds for declaring CertifyMe uniquely broader.",
+      "buyer_checks": "Test the exact Open Badges version, VC export/proof and CLR profile rather than relying on broad standards wording. Confirm residency across backups/subprocessors and obtain the applicable security assurance and enterprise SLA.",
+      "facts": [
+        {
+          "vendor": "Sertifier",
+          "dimension": "ICP",
+          "current_claim": "Enterprise learning, partner/customer certification, training providers and institutions using CLRs.",
+          "source_url": "https://sertifier.com/solutions/enterprise; https://sertifier.com/solutions/training-certificates; https://sertifier.com/comprehensive-learner-records",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S19",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/enterprise",
+              "title": "Digital credentialing built for enterprise",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S20",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/training-certificates",
+              "title": "Create and send training certificates",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S28",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/comprehensive-learner-records",
+              "title": "Empower Your Learners with Comprehensive Learner Records",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Positioning",
+          "current_claim": "Design, issue and verify credentials across employee learning, partner certification and customer education.",
+          "source_url": "https://sertifier.com/solutions/enterprise",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S19",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/enterprise",
+              "title": "Digital credentialing built for enterprise",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Credentialing",
+          "current_claim": "Branded digital certificates and badges with automated training completion workflows.",
+          "source_url": "https://sertifier.com/solutions/enterprise; https://sertifier.com/solutions/training-certificates",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S19",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/enterprise",
+              "title": "Digital credentialing built for enterprise",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S20",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/training-certificates",
+              "title": "Create and send training certificates",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Digital Badges",
+          "current_claim": "Enterprise page explicitly describes digital certificates and badges under the organization's brand.",
+          "source_url": "https://sertifier.com/solutions/enterprise",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S19",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/enterprise",
+              "title": "Digital credentialing built for enterprise",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Open Badges",
+          "current_claim": "Enterprise product page states Open Badges support. Exact version/certification role is NOT PUBLICLY SPECIFIED in these reviewed product documents.",
+          "source_url": "https://sertifier.com/solutions/enterprise",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "MEDIUM",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S19",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/enterprise",
+              "title": "Digital credentialing built for enterprise",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PARTIAL_PUBLIC_DETAIL"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "W3C VC",
+          "current_claim": "Enterprise page explicitly lists W3C Verifiable Credentials. Exact data-model version, proof suite and interoperability require testing.",
+          "source_url": "https://sertifier.com/solutions/enterprise",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S19",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/enterprise",
+              "title": "Digital credentialing built for enterprise",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "CLR",
+          "current_claim": "Dedicated CLR page describes creating and managing academic and non-academic learning records. Confirm standard version and certification role.",
+          "source_url": "https://sertifier.com/comprehensive-learner-records",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S28",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/comprehensive-learner-records",
+              "title": "Empower Your Learners with Comprehensive Learner Records",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Skills",
+          "current_claim": "CLR page documents learning-outcome-to-skill mapping and tracking competencies.",
+          "source_url": "https://sertifier.com/comprehensive-learner-records",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S28",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/comprehensive-learner-records",
+              "title": "Empower Your Learners with Comprehensive Learner Records",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Learner Records",
+          "current_claim": "CLR product spans coursework, co-curricular achievements, certifications, microcredentials and digital wallet support.",
+          "source_url": "https://sertifier.com/comprehensive-learner-records",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S28",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/comprehensive-learner-records",
+              "title": "Empower Your Learners with Comprehensive Learner Records",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Workforce Intelligence",
+          "current_claim": "CLR page connects skills with industry requirements and curriculum decisions. Comparable job-market dataset coverage, licensing and refresh are NOT PUBLICLY SPECIFIED.",
+          "source_url": "https://sertifier.com/comprehensive-learner-records",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "MEDIUM",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S28",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/comprehensive-learner-records",
+              "title": "Empower Your Learners with Comprehensive Learner Records",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PARTIAL_PUBLIC_DETAIL"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Verification",
+          "current_claim": "Training credentials have verification/sharing workflows; enterprise page describes standards-based and blockchain verification options. Test dependencies rather than assuming permanence.",
+          "source_url": "https://sertifier.com/solutions/enterprise; https://sertifier.com/solutions/training-certificates",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S19",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/enterprise",
+              "title": "Digital credentialing built for enterprise",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S20",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/training-certificates",
+              "title": "Create and send training certificates",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Analytics",
+          "current_claim": "Delivery, engagement and sharing analytics across programmes.",
+          "source_url": "https://sertifier.com/solutions/enterprise; https://sertifier.com/pricing",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S19",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/enterprise",
+              "title": "Digital credentialing built for enterprise",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S18",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/pricing",
+              "title": "I'll send credentials to500 people this year.",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "API",
+          "current_claim": "Enterprise documentation describes a REST API, webhooks and a sandbox.",
+          "source_url": "https://sertifier.com/solutions/enterprise",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S19",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/enterprise",
+              "title": "Digital credentialing built for enterprise",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Integrations",
+          "current_claim": "Named LMS/CRM integrations and automation including Canvas, Moodle, Salesforce and Zapier; CLR page also discusses LMS/SIS integration. Confirm scope.",
+          "source_url": "https://sertifier.com/solutions/enterprise; https://sertifier.com/comprehensive-learner-records",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S19",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/enterprise",
+              "title": "Digital credentialing built for enterprise",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S28",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/comprehensive-learner-records",
+              "title": "Empower Your Learners with Comprehensive Learner Records",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Security",
+          "current_claim": "Trust centre states ISO 27001:2022 and GDPR; training page also advertises SOC 2 Type II auditing. Request current certificates/reports and their scope; neither was independently audited here.",
+          "source_url": "https://sertifier.com/data-security; https://sertifier.com/solutions/training-certificates",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S29",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/data-security",
+              "title": "Security & trust at Sertifier",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S20",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/training-certificates",
+              "title": "Create and send training certificates",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Data Residency",
+          "current_claim": "Trust centre specifies configurable Google Cloud EU (europe-west1) or US (us-east1/us-central1) regions per customer. Confirm transfers, support access and backups.",
+          "source_url": "https://sertifier.com/data-security",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S29",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/data-security",
+              "title": "Security & trust at Sertifier",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Pricing",
+          "current_claim": "Recipient-based public monthly/yearly options and free tier; the retrieved selector shows $750/year for 500 people. This is a selected scenario, not a universal minimum price.",
+          "source_url": "https://sertifier.com/pricing",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S18",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/pricing",
+              "title": "I'll send credentials to500 people this year.",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Contract",
+          "current_claim": "Pricing FAQ describes monthly/yearly billing and multi-year enterprise agreements; enterprise page describes contractual SLA and support targets.",
+          "source_url": "https://sertifier.com/pricing; https://sertifier.com/solutions/enterprise",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S18",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/pricing",
+              "title": "I'll send credentials to500 people this year.",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S19",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/enterprise",
+              "title": "Digital credentialing built for enterprise",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Higher Education",
+          "current_claim": "Dedicated CLR product addresses academic/co-curricular learning, institutions, LMS and SIS use cases.",
+          "source_url": "https://sertifier.com/comprehensive-learner-records",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S28",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/comprehensive-learner-records",
+              "title": "Empower Your Learners with Comprehensive Learner Records",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Enterprise",
+          "current_claim": "Enterprise page lists teams/roles, SSO, API, sandbox, named support, SLA and residency options.",
+          "source_url": "https://sertifier.com/solutions/enterprise",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S19",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/enterprise",
+              "title": "Digital credentialing built for enterprise",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Certification Bodies",
+          "current_claim": "Partner and channel certification, resellers and technician/customer education use cases are documented; confirm a professional body's specific renewal governance.",
+          "source_url": "https://sertifier.com/solutions/enterprise",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S19",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/enterprise",
+              "title": "Digital credentialing built for enterprise",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        },
+        {
+          "vendor": "Sertifier",
+          "dimension": "Workforce Use Cases",
+          "current_claim": "Employee learning, compliance training, leadership, partner certification and skills-oriented learner records.",
+          "source_url": "https://sertifier.com/solutions/enterprise; https://sertifier.com/comprehensive-learner-records",
+          "source_date": "2026-10-04",
+          "source_date_basis": "retrieval/observation",
+          "publication_dates": "NOT PUBLICLY SPECIFIED; NOT PUBLICLY SPECIFIED",
+          "confidence": "HIGH",
+          "notes": "Published vendor claim; plan, deployment and actual operation not independently tested.",
+          "sources": [
+            {
+              "id": "S19",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/solutions/enterprise",
+              "title": "Digital credentialing built for enterprise",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            },
+            {
+              "id": "S28",
+              "vendor": "Sertifier",
+              "url": "https://sertifier.com/comprehensive-learner-records",
+              "title": "Empower Your Learners with Comprehensive Learner Records",
+              "observed_on": "2026-10-04",
+              "publication_date": "NOT PUBLICLY SPECIFIED",
+              "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+              "extraction": "FETCHED",
+              "source_type": "official vendor"
+            }
+          ],
+          "status": "PUBLISHED"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "vendor": "Accredible",
+      "url": "https://www.accredible.com/platform",
+      "title": "Digital credentials that fuel program growth",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S02",
+      "vendor": "Accredible",
+      "url": "https://www.accredible.com/pricing",
+      "title": "Pricing to fit your digital credentialing needs",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S03",
+      "vendor": "Accredible",
+      "url": "https://www.accredible.com/newsroom/accredible-launches-support-for-open-badge-3-0-and-w3c-verifiable-credentials",
+      "title": "Accredible Launches Support for Open Badge 3.0 and W3C Verifiable Credentials",
+      "observed_on": "2026-10-04",
+      "publication_date": "2026-01-13",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S04",
+      "vendor": "Accredible",
+      "url": "https://help.accredible.com/s/article/accredible-operations-and-security",
+      "title": "Accredible official documentation",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S05",
+      "vendor": "Certifier",
+      "url": "https://certifier.io/en",
+      "title": "\\#1 Certificate Maker",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "PARTIAL_EXTRACT",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S06",
+      "vendor": "Certifier",
+      "url": "https://certifier.io/pricing",
+      "title": "Pick up a plan to generate  certificates and badges",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S07",
+      "vendor": "Certifier",
+      "url": "https://certifier.io/enterprise",
+      "title": "Enterprise digital credentials without enterprise friction",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S08",
+      "vendor": "Certifier",
+      "url": "https://certifier.io/blog/open-badges-3-0",
+      "title": "What Are Open Badges 3.0? A Simple Guide",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S09",
+      "vendor": "Credly",
+      "url": "https://info.credly.com/product/acclaim",
+      "title": "Digital Credentials",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S10",
+      "vendor": "Credly",
+      "url": "https://info.credly.com/product/open-badge-3.0",
+      "title": "Open Badge 3.0",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S11",
+      "vendor": "Credly",
+      "url": "https://info.credly.com/pricing",
+      "title": "Contact Us",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S12",
+      "vendor": "Credly",
+      "url": "https://info.credly.com/acclaim-product-features",
+      "title": "Credly Features and Functionality",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S13",
+      "vendor": "Parchment",
+      "url": "https://www.parchment.com/",
+      "title": "Turn every  digital badge   into an   opportunity",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S14",
+      "vendor": "Parchment",
+      "url": "https://www.parchment.com/platform/workforce/solutions/digital-badges",
+      "title": "Parchment Award Digital Badges to Support Workforce Development",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S15",
+      "vendor": "Parchment",
+      "url": "https://www.parchment.com/platform/higher-education/digital-badges",
+      "title": "Digital Badges for higher education",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S16",
+      "vendor": "Parchment",
+      "url": "https://www.parchment.com/pricing/get-a-quote",
+      "title": "Get a Quote",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S17",
+      "vendor": "Sertifier",
+      "url": "https://sertifier.com/product",
+      "title": "Sertifier official documentation",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S18",
+      "vendor": "Sertifier",
+      "url": "https://sertifier.com/pricing",
+      "title": "I'll send credentials to500 people this year.",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S19",
+      "vendor": "Sertifier",
+      "url": "https://sertifier.com/solutions/enterprise",
+      "title": "Digital credentialing built for enterprise",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S20",
+      "vendor": "Sertifier",
+      "url": "https://sertifier.com/solutions/training-certificates",
+      "title": "Create and send training certificates",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S21",
+      "vendor": "Certifier",
+      "url": "https://certifier.io/legal-and-security",
+      "title": "Legal and Security Policies",
+      "observed_on": "2026-10-04",
+      "publication_date": "2026-01-13",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S22",
+      "vendor": "Certifier",
+      "url": "https://certifier.io/terms",
+      "title": "Terms of Service",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S23",
+      "vendor": "Credly",
+      "url": "https://info.credly.com/data-security-privacy",
+      "title": "Data Security and Privacy",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S24",
+      "vendor": "Credly",
+      "url": "https://www.credly.com/docs/web_service_api",
+      "title": "📋 The Fundamentals   [Skip link to 📋 The Fundamentals](https://docs.credly.com/browse/docs/getting-started\\#-the-fundamentals)",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S25",
+      "vendor": "Parchment",
+      "url": "https://www.parchment.com/platform/higher-education/clr-services",
+      "title": "CLR Services",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S26",
+      "vendor": "Parchment",
+      "url": "https://www.parchment.com/en-gb/resources/trust",
+      "title": "Trust",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S27",
+      "vendor": "Parchment",
+      "url": "https://www.parchment.com/data-protection-addendum",
+      "title": "Data Protection Addendum",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S28",
+      "vendor": "Sertifier",
+      "url": "https://sertifier.com/comprehensive-learner-records",
+      "title": "Empower Your Learners with Comprehensive Learner Records",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S29",
+      "vendor": "Sertifier",
+      "url": "https://sertifier.com/data-security",
+      "title": "Security & trust at Sertifier",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S30",
+      "vendor": "Accredible",
+      "url": "https://www.accredible.com/trust-center",
+      "title": "Accredible Trust Center",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S31",
+      "vendor": "Standards",
+      "url": "https://www.w3.org/TR/vc-data-model-2.0/",
+      "title": "Verifiable Credentials Data Model v2.0",
+      "observed_on": "2026-10-04",
+      "publication_date": "2025-05-15",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "PARTIAL_EXTRACT",
+      "source_type": "official standards/registry"
+    },
+    {
+      "id": "S32",
+      "vendor": "Standards",
+      "url": "https://www.1edtech.org/standards/open-badges",
+      "title": "**Open Badges**",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official standards/registry"
+    },
+    {
+      "id": "S33",
+      "vendor": "Standards",
+      "url": "https://www.1edtech.org/standards/clr",
+      "title": "**CLR Standard** ®",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official standards/registry"
+    },
+    {
+      "id": "S34",
+      "vendor": "CertifyMe",
+      "url": "https://site.imsglobal.org/certifications/certifyme/certifyme",
+      "title": "CertifyMe official documentation",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official standards/registry"
+    },
+    {
+      "id": "S35",
+      "vendor": "Taxonomy",
+      "url": "https://esco.ec.europa.eu/en/classification/skills",
+      "title": "Skills & competences",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official standards/registry"
+    },
+    {
+      "id": "S36",
+      "vendor": "Taxonomy",
+      "url": "https://www.onetcenter.org/overview.html",
+      "title": "About O\\*NET",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official standards/registry"
+    },
+    {
+      "id": "S37",
+      "vendor": "Accredible",
+      "url": "https://www.accredible.com/features/job-market-insights",
+      "title": "Something went wrong",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S38",
+      "vendor": "Certifier",
+      "url": "https://certifier.io/blog/certifier-enterprise-features-teams",
+      "title": "Certifier Enterprise Features for Teams in 2026",
+      "observed_on": "2026-10-04",
+      "publication_date": "2026-09-15",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    },
+    {
+      "id": "S39",
+      "vendor": "Sertifier",
+      "url": "https://sertifier.com/solutions/higher-education",
+      "title": "Sertifier official documentation",
+      "observed_on": "2026-10-04",
+      "publication_date": "NOT PUBLICLY SPECIFIED",
+      "source_date_basis": "Observed 2026-10-04; publication/update date retained only when displayed.",
+      "extraction": "FETCHED",
+      "source_type": "official vendor"
+    }
+  ],
+  "certifyme": [
+    {
+      "dimension": "ICP",
+      "claim": "Institutional issuers: universities, professional bodies, enterprises and training organizations.",
+      "url": "/platform-overview"
+    },
+    {
+      "dimension": "Positioning",
+      "claim": "Institution-governed credential infrastructure, not a universal claim of broader functionality than competitors.",
+      "url": "/platform-overview"
+    },
+    {
+      "dimension": "Credentialing",
+      "claim": "Digital credential issuance and verification with open-standard achievement and record context.",
+      "url": "/platform-overview"
+    },
+    {
+      "dimension": "Digital Badges",
+      "claim": "Digital badges represent institution-authorized achievements; confirm the implemented format.",
+      "url": "/digital-badges.html"
+    },
+    {
+      "dimension": "Open Badges",
+      "claim": "Public registry lists active Open Badges 3.0 Issuer certification for the specified CertifyMe product.",
+      "url": "https://site.imsglobal.org/certifications/certifyme/certifyme"
+    },
+    {
+      "dimension": "W3C VC",
+      "claim": "OB3/CLR achievement profiles use the VC model. No general W3C certification or universal v2.0/proof-suite support is inferred.",
+      "url": "/blog/Understanding-W3C-Verifiable-Credentials.html"
+    },
+    {
+      "dimension": "CLR",
+      "claim": "Public registry lists active CLR 2.0 Issuer and Displayer roles for the specified product.",
+      "url": "https://site.imsglobal.org/certifications/certifyme/certifyme"
+    },
+    {
+      "dimension": "Skills",
+      "claim": "Institution-led taxonomy mapping keeps reviewed outcomes and evidence authoritative; no native reference-framework connector is inferred.",
+      "url": "/skills-taxonomy-mapping"
+    },
+    {
+      "dimension": "Learner Records",
+      "claim": "Connected achievements with issuer/evidence provenance; a learner-facing Skill Passport is not a new standards certification.",
+      "url": "/comprehensive-learner-record"
+    },
+    {
+      "dimension": "Workforce Intelligence",
+      "claim": "Credential-associated skills are related to occupational/hiring context. Source permissions, coverage and contractual availability require review.",
+      "url": "/workforce-intelligence"
+    },
+    {
+      "dimension": "Verification",
+      "claim": "Check record proof, issuer and relevant lifecycle resources; this is not independent identity verification.",
+      "url": "/certificate-verification"
+    },
+    {
+      "dimension": "Analytics",
+      "claim": "Credential/programme analytics are documented; agree metrics and export requirements rather than treating engagement as a career outcome.",
+      "url": "/credential-analytics.html"
+    },
+    {
+      "dimension": "API",
+      "claim": "API documentation and integration workflows are published; confirm the current field contract, authentication, entitlements and retry behavior.",
+      "url": "/api/"
+    },
+    {
+      "dimension": "Integrations",
+      "claim": "An integrations directory is published; validate each required connector and scope before procurement.",
+      "url": "/allIntegrations.html"
+    },
+    {
+      "dimension": "Security",
+      "claim": "Public security page states scoped assurance information. Review examination period, management-system scope, customer controls and current documents.",
+      "url": "/security/"
+    },
+    {
+      "dimension": "Data Residency",
+      "claim": "Global hosting availability is owner-confirmed; actual storage, backups, access and transfers require a contract-specific residency assessment.",
+      "url": "/security/"
+    },
+    {
+      "dimension": "Pricing",
+      "claim": "Assess the current public plan/enterprise quote, volume, inclusions and deployment requirements; no universal competitor price advantage is claimed.",
+      "url": "/pricing.html"
+    },
+    {
+      "dimension": "Contract",
+      "claim": "Confirm actual minimum term, renewal, SLA, retention and verification continuity in the agreement.",
+      "url": "/TermsAndCondition"
+    },
+    {
+      "dimension": "Higher Education",
+      "claim": "University buyer journey connects Registrar, academic, IT/security and careers responsibilities.",
+      "url": "/credentials-higher-education"
+    },
+    {
+      "dimension": "Enterprise",
+      "claim": "Enterprise SSO/MFA is owner-confirmed. Exact protocols, interfaces, deployment and contractual controls need confirmation.",
+      "url": "/security/"
+    },
+    {
+      "dimension": "Certification Bodies",
+      "claim": "Programme owners retain assessment, certification criteria, renewal and record authority.",
+      "url": "/platform-overview"
+    },
+    {
+      "dimension": "Workforce Use Cases",
+      "claim": "Institutional curriculum relevance and career context; no employment or salary guarantee.",
+      "url": "/workforce-intelligence"
+    }
+  ]
+}

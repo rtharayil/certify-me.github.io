@@ -1,0 +1,313 @@
+CERTIFYME SEO PHASE 3 — CONTENT AUTHORITY & 83-BLOG ESTATE CLOSURE
+
+IMPORTANT:
+The previous CertifyMe SEO transformation has already been executed twice.
+
+DO NOT rerun the original 33-part SEO transformation.
+
+DO NOT redo tasks that already pass:
+- sitemap structural validation
+- canonical validation
+- duplicate metadata detection
+- image intrinsic-dimension repair
+- FAQ mismatch cleanup
+- mobile comparison-table regression
+- private-upload regression
+- existing institutional positioning
+- existing six authority connections
+
+The previous implementation is documented in:
+- 33-part-analysis-handover.md
+- 33-part-status-matrix.json
+- scorecard.json
+- final-issue-register.json
+- change-log.json
+
+The previous scorecard is approximately:
+- Information Architecture: 8
+- Technical SEO: 8
+- On-page SEO: 8.5
+- Internal Linking: 8
+- Content Quality: 7
+- Institutional SEO: 9
+- Higher Education SEO: 8.5
+- AI SEO: 7.5
+- Page Speed: 6
+
+The main remaining weakness is CONTENT AUTHORITY.
+
+OBJECTIVE:
+
+Turn CertifyMe's existing content estate into a genuinely curated topical authority system rather than relying primarily on automated title-based topic assignment.
+
+==================================================
+PHASE 1 — INVENTORY
+==================================================
+
+Inspect all 83 blog articles individually.
+
+For each article create a CSV/JSON record:
+
+- URL
+- title
+- H1
+- current topic
+- proposed topic cluster
+- primary search intent
+- secondary intent
+- target ICP
+- funnel stage
+- parent authority page
+- supporting authority pages
+- content quality score /10
+- originality score /10
+- institutional relevance /10
+- AI-answer usefulness /10
+- commercial relevance /10
+- factual-risk level
+- duplicate/overlap risk
+- current CTA
+- recommended action
+
+Actions:
+
+KEEP
+IMPROVE
+REWRITE
+CONSOLIDATE
+REDIRECT
+NOINDEX
+LEAVE AS RESOURCE
+
+DO NOT make destructive decisions merely from title similarity.
+
+==================================================
+PHASE 2 — TEN TOPIC CLUSTERS
+==================================================
+
+Use the existing ten topic clusters.
+
+For every article manually determine its true parent.
+
+Do NOT use title matching alone.
+
+The parent must be selected based on actual article meaning.
+
+Each article should have:
+
+1. one primary parent pillar
+2. relevant supporting pages
+3. meaningful internal links
+4. no forced keyword anchors
+
+==================================================
+PHASE 3 — CONTENT QUALITY
+==================================================
+
+Score each article using:
+
+A. Does it answer the searcher's question immediately?
+
+B. Does it contain original value?
+
+C. Does it contain institutional/technical insight?
+
+D. Does it contain evidence?
+
+E. Does it contain outdated claims?
+
+F. Does it overlap with another CertifyMe page?
+
+G. Does it support a commercial journey?
+
+H. Does it contribute to CertifyMe's institutional entity?
+
+I. Is it useful to AI systems answering the question?
+
+J. Does it deserve to exist independently?
+
+==================================================
+PHASE 4 — PRIORITIZE
+==================================================
+
+DO NOT rewrite all 83 articles automatically.
+
+Create three groups:
+
+P0 — HIGH VALUE
+Pages that should be rewritten now.
+
+P1 — MEDIUM VALUE
+Pages that need targeted improvement.
+
+P2 — LOW VALUE
+Pages where action should be deferred until traffic/backlink evidence is available.
+
+Start implementation only for P0.
+
+Target approximately the highest-value 15–25 articles first.
+
+==================================================
+PHASE 5 — AUTHORITY PAGES
+==================================================
+
+Perform a complete editorial checklist for these six authority destinations:
+
+1. Digital Credential Infrastructure
+2. Open Badges 3.0
+3. W3C Verifiable Credentials
+4. Skills Taxonomy Mapping
+5. Comprehensive Learner Record
+6. Workforce Intelligence
+
+For each page verify:
+
+- clear definition
+- concise answer
+- institutional problem
+- why it matters
+- architecture
+- how it works
+- standards
+- implementation
+- use cases
+- limitations
+- examples
+- FAQs
+- first-party evidence
+- internal links
+- related concepts
+- genuine update date
+- genuine author/reviewer where available
+- CTA
+- no unsupported claims
+
+Create a six-page checklist.
+
+Do not invent reviewers.
+
+Do not invent credentials.
+
+If there is no genuine reviewer, omit the reviewer rather than fabricating one.
+
+==================================================
+PHASE 6 — HIGHER EDUCATION
+==================================================
+
+Review:
+
+/credentials-higher-education
+
+against the complete university buyer journey.
+
+Verify content for:
+
+Registrar
+CIO
+Provost
+Dean
+Career Services
+Academic leadership
+IT/security
+
+Make sure the page links meaningfully to:
+
+digital credentials
+digital badges
+microcredentials
+verification
+Open Badges
+W3C VC
+CLR
+skills taxonomy
+learner records
+Skill Passport
+workforce intelligence
+analytics
+API
+integrations
+security
+data residency
+
+Do NOT create thin keyword pages.
+
+==================================================
+PHASE 7 — INTERNAL LINKS
+==================================================
+
+Do not count repeated global/shared modules as meaningful editorial links.
+
+For each six authority page:
+
+Identify at least 5 genuinely useful contextual body links from relevant articles/pages.
+
+For each link record:
+
+source URL
+target URL
+anchor text
+context
+reason
+
+Also create relevant pillar → article links.
+
+==================================================
+PHASE 8 — IMPLEMENT
+==================================================
+
+Only after the inventory is complete:
+
+Implement the highest-value improvements.
+
+Preserve URLs unless there is a compelling evidence-backed reason to change them.
+
+Do not mass rewrite.
+
+Do not create keyword-only pages.
+
+Do not delete pages without evidence.
+
+==================================================
+PHASE 9 — TEST
+==================================================
+
+Run a new content-authority validation.
+
+Check:
+
+- every 83 article has a reviewed cluster
+- every article has a parent decision
+- every P0 article has been improved
+- authority pages meet all checklist requirements
+- internal links are contextual
+- no duplicate intent was introduced
+- no unsupported claims were introduced
+- metadata remains valid
+- schema remains valid
+- mobile remains valid
+
+Do NOT merely rerun the previous structural test.
+
+Create:
+
+content-authority-audit.json
+content-authority-audit.csv
+content-authority-report.md
+
+FINAL REPORT:
+
+State:
+
+- how many articles KEEP
+- IMPROVE
+- REWRITE
+- CONSOLIDATE
+- REDIRECT
+- NOINDEX
+- DEFER
+
+List every modified URL.
+
+List every unresolved content issue.
+
+Do not claim the content transformation is complete unless every requested acceptance criterion is actually satisfied.

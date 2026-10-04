@@ -1,0 +1,164 @@
+CERTIFYME FINAL SEO RELEASE AUDIT
+
+The CertifyMe SEO transformation has now gone through multiple implementation phases.
+
+DO NOT make broad SEO changes.
+
+This is a RELEASE / ACCEPTANCE AUDIT.
+
+==================================================
+1. FULL SITE
+==================================================
+
+Audit the current build.
+
+Check:
+
+- sitemap
+- robots
+- canonical
+- metadata
+- schema
+- links
+- mobile
+- performance
+- six authority pages
+- higher education
+- comparison pages
+- blog clusters
+- claims
+- case studies
+- trust
+- AI answer readiness
+
+==================================================
+2. 33-PART MATRIX
+==================================================
+
+Use the original 33-part matrix.
+
+For every part:
+
+COMPLETE
+PARTIAL
+NOT APPLICABLE
+
+No vague "mostly done".
+
+Every PARTIAL requires:
+
+- exact gap
+- URL/file
+- reason
+- next action
+
+==================================================
+3. ZERO ASSUMPTION RULE
+==================================================
+
+Do not count:
+
+keyword presence
+schema syntax
+HTTP 200
+link existence
+automated term matching
+
+as proof of:
+
+content quality
+AI citation
+ranking
+traffic
+conversion
+production indexing
+
+==================================================
+4. AI TEST
+==================================================
+
+Test 20 high-value questions.
+
+Require clear answers for:
+
+CertifyMe identity
+ICP
+digital credentials
+infrastructure
+Open Badges
+W3C VC
+skills
+CLR
+workforce
+higher education
+security
+competitors
+
+==================================================
+5. PRODUCTION
+==================================================
+
+If production access exists, verify:
+
+live URL
+robots
+sitemap
+redirects
+canonical
+indexability
+Search Console status
+CWV
+
+If production access does not exist:
+
+mark:
+
+NOT VERIFIED — OWNER ACTION REQUIRED
+
+Do not pretend preview equals production.
+
+==================================================
+6. FINAL SCORE
+==================================================
+
+Score:
+
+Technical SEO
+Information Architecture
+Content Quality
+Institutional SEO
+Higher Education
+AI SEO
+Entity SEO
+Internal Linking
+Trust
+Schema
+Performance
+Conversion SEO
+
+Then provide:
+
+CURRENT SCORE
+PREVIOUS SCORE
+CHANGE
+EVIDENCE
+
+Do not invent improvement.
+
+==================================================
+7. FINAL DECISION
+==================================================
+
+Give exactly one:
+
+READY FOR PRODUCTION
+
+or
+
+READY WITH NON-BLOCKING ITEMS
+
+or
+
+NOT READY
+
+If not ready, list the exact blockers.

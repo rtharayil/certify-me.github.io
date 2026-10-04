@@ -1,4 +1,5 @@
 ---
+last_modified_at: "2026-10-04"
 title: "Digital Credential Verification for Universities | CertifyMe"
 
 description: "Understand digital credential verification for universities: issuer information, cryptographic proof, credential status and implementation requirements."

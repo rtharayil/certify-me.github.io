@@ -1,24 +1,19 @@
-{% assign cluster = site.data.institutional_seo.clusters | where: "id", page.seo_cluster | first %}
-{% unless cluster %}
-  {% assign article_topic = page.title | downcase %}
-  {% assign cluster = site.data.institutional_seo.clusters | first %}
-  {% assign cluster_matched = false %}
-  {% for candidate in site.data.institutional_seo.clusters reversed %}
-    {% assign terms = candidate.terms | split: "|" %}
-    {% for term in terms %}
-      {% if article_topic contains term %}
-        {% assign cluster = candidate %}
-        {% assign cluster_matched = true %}
-        {% break %}
-      {% endif %}
-    {% endfor %}
-    {% if cluster_matched %}{% break %}{% endif %}
-  {% endfor %}
-{% endunless %}
-<aside class="container py-4" aria-labelledby="article-parent-title">
-  {% if page.url contains "job-intelligence-report-certification-value" %}
+{% assign editorial = site.data.blog_editorial | where: "url", page.url | first %}
+{% if editorial %}
+{% assign cluster = site.data.institutional_seo.clusters | where: "id", editorial.cluster | first %}
+<aside class="container py-4" aria-labelledby="article-parent-title" data-reviewed-cluster="{{ editorial.cluster }}" data-reviewed-parent="{{ editorial.parent }}">
+  {% if page.url == "/blog/job-intelligence-report-certification-program-value" %}
   <p><strong>Data note, 3 October 2026:</strong> Owner-confirmed coverage is {{ site.data.approved_claims.jobs_display }} live jobs from {{ site.data.approved_claims.companies_display }} companies worldwide, refreshed {{ site.data.approved_claims.job_refresh }}. Report examples on this page are not a current public vacancy feed; sample numbers do not establish country coverage or real-time freshness.</p>
   {% endif %}
   <h2 id="article-parent-title">Put this resource in an institutional context</h2>
-  <p>This article belongs to the <a href="{{ cluster.url }}">{{ cluster.title | escape }}</a> topic cluster. Use the connected guidance to distinguish credential presentation from standards, verification, assessed skills and record governance. For procurement, compare <a href="/compare/">credential platforms</a>; for implementation, start with <a href="/credentials-higher-education">university requirements</a> or the <a href="/platform-overview">institutional infrastructure overview</a>.</p>
+  <p>This resource focuses on {{ editorial.topic | escape }}. Its reviewed parent is the <a href="{{ editorial.parent }}">{{ cluster.title | escape }}</a> pillar. Resource articles retain their original informational purpose; a parent assignment does not make a design template, historical example or transcript request an assessed credential.</p>
+  {% if editorial.supporting.size > 0 %}
+  <p>For related context:
+    {% for related in editorial.supporting %}
+      {% assign related_authority = site.data.institutional_seo.authorities | where: "url", related | first %}
+      <a href="{{ related }}">{% if related_authority %}{{ related_authority.title | escape }}{% elsif related == "/certificate-verification" %}credential verification{% elsif related == "/credentials-higher-education" %}university implementation{% else %}related institutional guidance{% endif %}</a>{% unless forloop.last %} · {% endunless %}
+    {% endfor %}.
+  </p>
+  {% endif %}
 </aside>
+{% endif %}

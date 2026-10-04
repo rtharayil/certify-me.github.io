@@ -1,0 +1,998 @@
+[
+  {
+    "url": "/blog/15-certificate-maker.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "Certificate maker tools",
+    "intent": "Informational",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/50-workplace-stress-statistics.html",
+    "cluster": "workforce",
+    "parent": "/workforce-intelligence",
+    "topic": "Workplace stress statistics",
+    "intent": "Educational",
+    "supporting": [
+      "/skills-taxonomy-mapping",
+      "/comprehensive-learner-record"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/9-tools-for-training-programs.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "Training program tools",
+    "intent": "Educational",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Achieve-Educational-Goals-through-Digital-Badge.html",
+    "cluster": "open-badges",
+    "parent": "/blog/why-institutions-should-embrace-open-badges-3-0-standards",
+    "topic": "assessed badge milestones and educational goals",
+    "intent": "Educational",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/skills-taxonomy-mapping"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Association-Membership-with-Digital-Credentials.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "Associations and digital credentials",
+    "intent": "Informational",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Build-an-unbiased-workforce-with-Verified-Credentials.html",
+    "cluster": "workforce",
+    "parent": "/workforce-intelligence",
+    "topic": "workforce",
+    "intent": "Informational",
+    "supporting": [
+      "/skills-taxonomy-mapping",
+      "/comprehensive-learner-record"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Canva-badge-maker.html",
+    "cluster": "open-badges",
+    "parent": "/blog/why-institutions-should-embrace-open-badges-3-0-standards",
+    "topic": "credentials",
+    "intent": "Instructional",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/skills-taxonomy-mapping"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/CertifyMe-Custom-Attributes-API-Guide.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "custom-attribute API requests",
+    "intent": "Technical",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Debunking-Myths-and-Misconceptions-about-Digital-Badges.html",
+    "cluster": "open-badges",
+    "parent": "/blog/why-institutions-should-embrace-open-badges-3-0-standards",
+    "topic": "badge interpretation and verification myths",
+    "intent": "Informational",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/skills-taxonomy-mapping"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Design-a-digital-badge.html",
+    "cluster": "open-badges",
+    "parent": "/blog/why-institutions-should-embrace-open-badges-3-0-standards",
+    "topic": "credentials",
+    "intent": "Instructional",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/skills-taxonomy-mapping"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Digital-Certificates-for-Healthcare.html",
+    "cluster": "security",
+    "parent": "/security/",
+    "topic": "Digital Healthcare Security",
+    "intent": "informational",
+    "supporting": [
+      "/certificate-verification",
+      "/blog/Understanding-W3C-Verifiable-Credentials.html"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Digital-Credentials-for-B2B-and-B2C-marketing.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "Marketing with Digital Credentials",
+    "intent": "informational",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Digital-Credentials-for-Government.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "Government Digital Identity",
+    "intent": "informational",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Digital-Credentials-for-event-and-Meetings-Professionals.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "Digital Credentials for Events",
+    "intent": "commercial",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Effective-advantages-of-verifiable-digital-records.html",
+    "cluster": "verifiable-credentials",
+    "parent": "/blog/Understanding-W3C-Verifiable-Credentials.html",
+    "topic": "operational benefits of verifiable records",
+    "intent": "educational",
+    "supporting": [
+      "/certificate-verification",
+      "/platform-overview"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Effective-tools-that-trainers-could-aid-for-better-learning-experience.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "Educational technology tools",
+    "intent": "Informational/Product promotion",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Elearning-trends-and-statistics-2024.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "E-learning statistics and market trends",
+    "intent": "Data aggregation",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/From-past-to-present-About-Digital-Credential.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "History and utility of digital credentials",
+    "intent": "Educational",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/HRLD2021.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "Credentialing sponsorship for events",
+    "intent": "Lead generation",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/How-Digital-credentials-help-increase-Brand-Awareness.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "Using digital credentials for marketing",
+    "intent": "Educational/Marketing",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/How-can-Organisations-help-Women-at-Work-Stay.html",
+    "cluster": "workforce",
+    "parent": "/workforce-intelligence",
+    "topic": "Supporting women in the workforce via digital credentials",
+    "intent": "informational",
+    "supporting": [
+      "/skills-taxonomy-mapping",
+      "/comprehensive-learner-record"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/How-can-your-institution-benefit-from-Digital-Credentials.html",
+    "cluster": "higher-education",
+    "parent": "/credentials-higher-education",
+    "topic": "institutional programme governance and benefits",
+    "intent": "informational",
+    "supporting": [
+      "/skills-taxonomy-mapping",
+      "/comprehensive-learner-record"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/How-digital-badges-and-digital-certificates-will-help-your-abilities.html",
+    "cluster": "skills",
+    "parent": "/skills-taxonomy-mapping",
+    "topic": "Practical applications of digital credentials for learners",
+    "intent": "informational",
+    "supporting": [
+      "/comprehensive-learner-record",
+      "/workforce-intelligence"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/How-to-Prevent-Certification-and-Credential-Frauds.html",
+    "cluster": "security",
+    "parent": "/security/",
+    "topic": "credential-fraud prevention checks",
+    "intent": "informational",
+    "supporting": [
+      "/certificate-verification",
+      "/blog/Understanding-W3C-Verifiable-Credentials.html"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/How-to-include-digital-credentials-in-your-marketing-strategy.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "Marketing benefits of using digital credentials",
+    "intent": "informational",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/How-to-prove-your-Digital-Skills.html",
+    "cluster": "skills",
+    "parent": "/skills-taxonomy-mapping",
+    "topic": "evidence of digital capabilities",
+    "intent": "Informative",
+    "supporting": [
+      "/comprehensive-learner-record",
+      "/workforce-intelligence"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Making-the-Decision-About-Digital-Credentials.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "requirements-led credential procurement",
+    "intent": "Educational",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Managing-and-Sharing-Digital-Credentials.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "User process for digital credentials",
+    "intent": "How-to",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Most-Common-Types-of-Digital-certificate.html",
+    "cluster": "security",
+    "parent": "/security/",
+    "topic": "Technical overview of digital certificates",
+    "intent": "Educational",
+    "supporting": [
+      "/certificate-verification",
+      "/blog/Understanding-W3C-Verifiable-Credentials.html"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Need-for-Digital-Credentials-for-businesses-and-commercial-purposes.html",
+    "cluster": "workforce",
+    "parent": "/workforce-intelligence",
+    "topic": "Commercial and business application of credentials",
+    "intent": "Commercial",
+    "supporting": [
+      "/skills-taxonomy-mapping",
+      "/comprehensive-learner-record"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/The-Future-of-Digital-Credentials.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "Future of Higher Education Credentials",
+    "intent": "educational awareness",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/The-Growth-of-Edtech-Companies-through-Digital-Credentials.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "EdTech growth strategies",
+    "intent": "business-to-business marketing",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Top-Free-Digital-Credential-Management-Software.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "free digital credential tools",
+    "intent": "lead generation",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Understanding-W3C-Verifiable-Credentials.html",
+    "cluster": "verifiable-credentials",
+    "parent": "/blog/Understanding-W3C-Verifiable-Credentials.html",
+    "topic": "W3C credential roles and proof boundaries",
+    "intent": "technical education",
+    "supporting": [
+      "/certificate-verification",
+      "/platform-overview"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Upgrading-Education-to-the-Next-Level.html",
+    "cluster": "higher-education",
+    "parent": "/credentials-higher-education",
+    "topic": "digital education evolution",
+    "intent": "thought leadership",
+    "supporting": [
+      "/skills-taxonomy-mapping",
+      "/comprehensive-learner-record"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Verifiable-credentials-the-key-to-the-online-privacy.html",
+    "cluster": "verifiable-credentials",
+    "parent": "/blog/Understanding-W3C-Verifiable-Credentials.html",
+    "topic": "online privacy",
+    "intent": "educational",
+    "supporting": [
+      "/certificate-verification",
+      "/platform-overview"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/What-is-Digital-Credential-Management-Platform.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "credential-platform lifecycle management",
+    "intent": "commercial",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/What-is-a-Digital-Credential.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "achievement records versus digital presentation",
+    "intent": "educational",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/What-is-a-Digital-Open-Badge.html",
+    "cluster": "open-badges",
+    "parent": "/blog/why-institutions-should-embrace-open-badges-3-0-standards",
+    "topic": "the definition and structure of an Open Badge",
+    "intent": "educational",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/skills-taxonomy-mapping"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Which-is-better-paper-or-digital-certificates.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "paper vs digital certificates",
+    "intent": "persuasive",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/White-Labeling-Digital-Credentials.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "White Labeling for Higher Education",
+    "intent": "informational",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/White-labelling-Service.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "General White Labelling Service",
+    "intent": "commercial",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Why-Digital-Credentials-are-gaining-popularity.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "Popularity of Digital Credentials",
+    "intent": "informational",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/why-institutions-should-embrace-open-badges-3-0-standards",
+    "cluster": "open-badges",
+    "parent": "/blog/why-institutions-should-embrace-open-badges-3-0-standards",
+    "topic": "institutional implementation of Open Badges 3.0",
+    "intent": "educational",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/skills-taxonomy-mapping"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Why-are-Digital-Certificates-Trending.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "Digital Certificate Trends",
+    "intent": "informational",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/Why-you-should-issue-Digital-Certificate-for-your-website.html",
+    "cluster": "security",
+    "parent": "/security/",
+    "topic": "SSL Certificates",
+    "intent": "Informational",
+    "supporting": [
+      "/certificate-verification",
+      "/blog/Understanding-W3C-Verifiable-Credentials.html"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/analytics-and-reporting-with-certifyme.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "interpretation of credential analytics",
+    "intent": "Commercial",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/association-case.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "Credentialing Case Study",
+    "intent": "Commercial",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/best-certificate-wording-examples.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "Certificate Wording",
+    "intent": "Educational",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/certificate-size-dimensions.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "Certificate Design",
+    "intent": "Educational",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/certifyme-open-badge-3-0-certified",
+    "cluster": "open-badges",
+    "parent": "/blog/why-institutions-should-embrace-open-badges-3-0-standards",
+    "topic": "Open Badge 3.0 certification",
+    "intent": "Informational",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/skills-taxonomy-mapping"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/certifyme-vs-accredible-2026-comparison.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "CertifyMe vs Accredible comparison",
+    "intent": "Commercial",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/certifyme-vs-certifier-2026-comparison.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "CertifyMe vs Certifier comparison",
+    "intent": "Commercial",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/certifyme-vs-credly-2026-comparison.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "CertifyMe vs Credly comparison",
+    "intent": "Commercial",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/certifyme-vs-parchment-2026-comparison.html",
+    "cluster": "higher-education",
+    "parent": "/credentials-higher-education",
+    "topic": "CertifyMe vs Parchment comparison",
+    "intent": "Commercial",
+    "supporting": [
+      "/skills-taxonomy-mapping",
+      "/comprehensive-learner-record"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/certifyme-vs-sertifier-2026-comparison.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "Platform Comparison",
+    "intent": "Comparison",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/customDomain.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "Technical Integration",
+    "intent": "Technical Guide",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/digital-badges-explained.html",
+    "cluster": "open-badges",
+    "parent": "/blog/why-institutions-should-embrace-open-badges-3-0-standards",
+    "topic": "Educational Content",
+    "intent": "Definition/Education",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/skills-taxonomy-mapping"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/digital-badges-in-modern-education.html",
+    "cluster": "higher-education",
+    "parent": "/credentials-higher-education",
+    "topic": "Professional Development",
+    "intent": "Advocacy/Education",
+    "supporting": [
+      "/skills-taxonomy-mapping",
+      "/comprehensive-learner-record"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/digital-credentialing-platforms-2026-comparison.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "Platform Comparison",
+    "intent": "Comparison",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/elearning-case.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "news",
+    "intent": "Informational/Commercial",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/engaging-students-online.html",
+    "cluster": "higher-education",
+    "parent": "/credentials-higher-education",
+    "topic": "news",
+    "intent": "Educational/Informational",
+    "supporting": [
+      "/skills-taxonomy-mapping",
+      "/comprehensive-learner-record"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/higher-education.html",
+    "cluster": "higher-education",
+    "parent": "/credentials-higher-education",
+    "topic": "higher-education governance and buyer roles",
+    "intent": "Educational/Commercial",
+    "supporting": [
+      "/skills-taxonomy-mapping",
+      "/comprehensive-learner-record"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/how-to-get-college-transcripts.html",
+    "cluster": "learner-records",
+    "parent": "/comprehensive-learner-record",
+    "topic": "news",
+    "intent": "Informational",
+    "supporting": [
+      "/credentials-higher-education",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/hr-case.html",
+    "cluster": "workforce",
+    "parent": "/workforce-intelligence",
+    "topic": "news",
+    "intent": "Informational/Commercial",
+    "supporting": [
+      "/skills-taxonomy-mapping",
+      "/comprehensive-learner-record"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/integrity-and-security-of-digital-credentials-with-certifyme.html",
+    "cluster": "security",
+    "parent": "/security/",
+    "topic": "platform security versus credential-proof controls",
+    "intent": "informational",
+    "supporting": [
+      "/certificate-verification",
+      "/blog/Understanding-W3C-Verifiable-Credentials.html"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/job-intelligence-report-certification-program-value",
+    "cluster": "workforce",
+    "parent": "/workforce-intelligence",
+    "topic": "institutional job intelligence and approved data coverage",
+    "intent": "commercial",
+    "supporting": [
+      "/skills-taxonomy-mapping",
+      "/comprehensive-learner-record"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/learning-paths-and-specializations-with-certifyme.html",
+    "cluster": "microcredentials",
+    "parent": "/micro-credentials",
+    "topic": "milestone assessment in learning paths",
+    "intent": "instructional",
+    "supporting": [
+      "/skills-taxonomy-mapping",
+      "/comprehensive-learner-record"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/linkedin-badges-for-companies.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "LinkedIn Badge Strategy",
+    "intent": "instructional",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/linkedin-digital-badges-overview.html",
+    "cluster": "open-badges",
+    "parent": "/blog/why-institutions-should-embrace-open-badges-3-0-standards",
+    "topic": "Professional Branding via Credentials",
+    "intent": "instructional",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/skills-taxonomy-mapping"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/market.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "Digital credential marketing",
+    "intent": "educational",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/send-bulk-certificates.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "Bulk certificate issuance",
+    "intent": "instructional",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/three-top-credly-alternatives-training-and-development.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "Credly alternatives for L&D",
+    "intent": "comparison",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/top-10-city-and-guilds-certificate-templates.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "Certificate templates for City & Guilds",
+    "intent": "instructional",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/top-10-cna-certificate-templates.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "CNA certificate templates",
+    "intent": "instructional",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/top-10-red-cross-certificate-templates.html",
+    "cluster": "credentials",
+    "parent": "/platform-overview",
+    "topic": "Red Cross certificate templates for training and recognition",
+    "intent": "informational",
+    "supporting": [
+      "/blog/Understanding-W3C-Verifiable-Credentials.html",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/ultimate-guide-to-verified-credentials.html",
+    "cluster": "verifiable-credentials",
+    "parent": "/blog/Understanding-W3C-Verifiable-Credentials.html",
+    "topic": "purpose-specific credential-verification decisions",
+    "intent": "educational",
+    "supporting": [
+      "/certificate-verification",
+      "/platform-overview"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/understanding-blockchain-digital-credentials.html",
+    "cluster": "verifiable-credentials",
+    "parent": "/blog/Understanding-W3C-Verifiable-Credentials.html",
+    "topic": "Blockchain technology for credentialing",
+    "intent": "educational",
+    "supporting": [
+      "/certificate-verification",
+      "/platform-overview"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/understanding-verifiable-credentials.html",
+    "cluster": "verifiable-credentials",
+    "parent": "/blog/Understanding-W3C-Verifiable-Credentials.html",
+    "topic": "claims, proof and policy in verifiable credentials",
+    "intent": "educational",
+    "supporting": [
+      "/certificate-verification",
+      "/platform-overview"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/validate-diploma-certificates.html",
+    "cluster": "security",
+    "parent": "/security/",
+    "topic": "Employer validation of diplomas",
+    "intent": "transactional",
+    "supporting": [
+      "/certificate-verification",
+      "/blog/Understanding-W3C-Verifiable-Credentials.html"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/what-is-a-high-school-transcript.html",
+    "cluster": "learner-records",
+    "parent": "/comprehensive-learner-record",
+    "topic": "high-school-transcript-guide",
+    "intent": "informational",
+    "supporting": [
+      "/credentials-higher-education",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/what-is-an-academic-transcript.html",
+    "cluster": "learner-records",
+    "parent": "/comprehensive-learner-record",
+    "topic": "academic-transcript-overview",
+    "intent": "informational",
+    "supporting": [
+      "/credentials-higher-education",
+      "/certificate-verification"
+    ],
+    "reviewed_on": "2026-10-04"
+  },
+  {
+    "url": "/blog/white-labeling-and-branding-with-certifyme.html",
+    "cluster": "transformation",
+    "parent": "/platform-overview",
+    "topic": "branding-digital-credentials",
+    "intent": "commercial",
+    "supporting": [
+      "/certificate-verification",
+      "/credentials-higher-education"
+    ],
+    "reviewed_on": "2026-10-04"
+  }
+]

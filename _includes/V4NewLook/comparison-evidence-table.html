@@ -1,0 +1,15 @@
+{% assign evidence_vendor = site.data.competitor_evidence.vendors | where: "name", include.vendor | first %}
+<table data-comparison-evidence="{{ evidence_vendor.slug }}" style="width:100%;border-collapse:collapse;">
+  <thead><tr><th scope="col" style="padding:8px;border:1px solid #ddd;">Dimension</th><th scope="col" style="padding:8px;border:1px solid #ddd;">{{ evidence_vendor.name | escape }}</th><th scope="col" style="padding:8px;border:1px solid #ddd;">CertifyMe</th></tr></thead>
+  <tbody>
+  {% for fact in evidence_vendor.facts %}
+  {% assign own_fact = site.data.competitor_evidence.certifyme | where: "dimension", fact.dimension | first %}
+  <tr data-evidence-dimension="{{ fact.dimension | escape }}">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">{{ fact.dimension | escape }}</th>
+    <td style="padding:8px;border:1px solid #ddd;">{{ fact.current_claim | escape }} <span class="small d-block">{% for source in fact.sources %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.id }}: {{ source.title | escape }}</a>{% unless forloop.last %}; {% endunless %}{% endfor %}</span></td>
+    <td style="padding:8px;border:1px solid #ddd;">{{ own_fact.claim | escape }} <span class="small d-block"><a href="{{ own_fact.url }}">CertifyMe reference{% if own_fact.url contains 'imsglobal' %} — public registry{% else %} — first-party{% endif %}</a></span></td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<p class="small">Source observation: 4 October 2026. Displayed source publication dates are distinct from retrieval dates. Security statements are vendor-published assurances, not a new independent audit. Confirm current scope and contract.</p>

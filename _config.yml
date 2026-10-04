@@ -1,5 +1,6 @@
 exclude:
   - .local
+  - .cache
   - .agents
   - vendor
   - node_modules

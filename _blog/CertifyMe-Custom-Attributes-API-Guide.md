@@ -2,8 +2,7 @@
 layout: V4LayoutSingleBlogPost
 title: CertifyMe API Guide For Users
 
-description: A simple step-by-step guide on how to add custom info like names or dates when sending digital certificates through CertifyMe
-
+description: "Custom credential attributes let an issuing workflow supply programme-specific values."
 abstract: 
 
 topic: news
@@ -11,16 +10,32 @@ author : Aneesha Kurian
 imageLink: /img/blog/CertifyMe-API-Guide-For-Users.png
 featured: true
 seo_keywords: "CertifyMe API guide, custom attributes API, digital certificate API, dynamic data fields, CertifyMe developer documentation"
-faqs:
-  - question: "What exactly counts as a custom attribute in the CertifyMe API?"
-    answer: "In my experience, anything that isn't the standard name or email can be a custom attribute. Think of things like 'EventDate', 'CourseName', or even a specific 'Credits' count—if you've defined it in your template, you can send it via the API using that Custom. prefix."
-  - question: "Does the capitalization of my field names actually matter?"
-    answer: "Yes, it really does. I've spent enough time debugging to tell you that if your template says 'eventdate' and your API call says 'EventDate', it won't map correctly. Keep them exactly the same, case and all."
-  - question: "Is there a limit to how many custom fields I can include in one request?"
-    answer: "Honestly, you can include as many as you've set up in your template. I usually recommend only sending what you actually need on the certificate to keep your JSON payloads clean, but the API won't stop you if you have a dozen attributes."
-  - question: "Why do I need to add 'Custom.' before my field names in the code?"
-    answer: "That's just how our system differentiates between standard fields and your own custom ones. It's mandatory for every single dynamic field you create, so don't skip it or the data won't show up on the final credential."
+faqs: [{"question":"Can I invent a new custom field in a request?","answer":"Confirm the field in the template and current API contract first. An example payload is not permission to assume new schema fields or accepted types."},{"question":"Does a successful API response prove the learner's competence?","answer":"No. It reports the API operation. The institution remains responsible for approved achievement and assessment data."}]
+last_modified: "2026-10-04"
+last_modified_at: "2026-10-04"
+seo_cluster: "credentials"
+content_authority_p0: true
 ---
+
+Custom credential attributes let an issuing workflow supply programme-specific values. Match field names and permitted values to the current template and API contract before issuing records.
+
+## Validate the data contract before a bulk request
+
+The existing examples below describe the documented Custom. field convention. Check the exact field name, type, requiredness and current endpoint documentation; do not infer support for a new field or authentication protocol from an example.
+
+## Keep assessment and transport responsibilities separate
+
+The institution decides who earned the achievement and approves the source data. The API transports an issuance request; it does not independently validate the learner's competence or identity. Place these responsibilities within the [institutional issuance lifecycle](/platform-overview).
+
+## Test failure and correction paths
+
+Test a missing required value, an unexpected field, duplicate requests and a correction in a safe test programme. Agree retry and reconciliation behavior with the current API documentation; this guide does not promise automatic idempotency or a particular integration.
+
+## Check the record after issuance
+
+Inspect the returned credential against the approved input and [credential proof and status checks](/blog/Understanding-W3C-Verifiable-Credentials.html). Where the programme uses [Open Badges achievement fields](/blog/why-institutions-should-embrace-open-badges-3-0-standards), distinguish the credential's standard fields from institution-specific attributes. Never place secrets or unnecessary personal data in a public credential.
+
+## Existing operational reference
 
 ## Handling Custom Attributes in Templates
 
@@ -214,4 +229,8 @@ curl --request POST \
 ## Support
 
 For support or questions, please contact **support@certifyme.cc**.
+
+## Plan your next step
+
+Discuss the actual award, evidence and implementation requirements with your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
 

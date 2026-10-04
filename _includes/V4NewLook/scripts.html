@@ -1,4 +1,4 @@
-{% unless page.url == "/" %}
+{% if page.legacy_v3_scripts %}
 <script src="/assets3/js/jquery.min.js"></script>
 <script async src="/assets3/js/bootstrap.min.js"></script>
 <!--SEO Fix-->
@@ -9,7 +9,7 @@
 <script type="text/javascript" src="/assets3/js/slick.min.js"></script>
 <!-- MAIN JS-->
 <script src="/assets3/js/main.js"></script>
-{% endunless %}
+{% endif %}
 
 
 
@@ -57,25 +57,24 @@
 
 <!-- EXTERNAL SCRIPTS
                 ============================================= -->
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/jquery-3.7.0.min.js"></script>
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/bootstrap.min.js"></script>
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/modernizr.custom.js"></script>
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/jquery.easing.js"></script>
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/jquery.appear.js"></script>
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/menu.js"></script>
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/owl.carousel.min.js"></script>
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/pricing-toggle.js"></script>
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/jquery.magnific-popup.min.js"></script>
-{% unless page.url == "/" %}<script src="/assets4/js/request-form.js"></script>{% endunless %}
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/jquery.validate.min.js"></script>
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/jquery.ajaxchimp.min.js"></script>
-{% if page.url == "/" %}<script defer src="/assets4/js/request-form.js"></script>{% endif %}
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/popper.min.js"></script>
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/lunar.js"></script>
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/wow.js"></script>
+<script defer src="/assets4/js/jquery-3.7.0.min.js"></script>
+<script defer src="/assets4/js/bootstrap.min.js"></script>
+<script defer src="/assets4/js/modernizr.custom.js"></script>
+<script defer src="/assets4/js/jquery.easing.js"></script>
+<script defer src="/assets4/js/jquery.appear.js"></script>
+<script defer src="/assets4/js/menu.js"></script>
+<script defer src="/assets4/js/owl.carousel.min.js"></script>
+<script defer src="/assets4/js/pricing-toggle.js"></script>
+<script defer src="/assets4/js/jquery.magnific-popup.min.js"></script>
+<script defer src="/assets4/js/jquery.validate.min.js"></script>
+<script defer src="/assets4/js/jquery.ajaxchimp.min.js"></script>
+<script defer src="/assets4/js/request-form.js"></script>
+<script defer src="/assets4/js/popper.min.js"></script>
+<script defer src="/assets4/js/lunar.js"></script>
+<script defer src="/assets4/js/wow.js"></script>
 
 <!-- Custom Script -->
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/custom.js"></script>
+<script defer src="/assets4/js/custom.js"></script>
 
 <!-- Mobile carousel swipe hints (dots + edge fade, <768px only) -->
-<script {% if page.url == "/" %}defer {% endif %}src="/assets4/js/carousel-dots.js"></script>
+<script defer src="/assets4/js/carousel-dots.js"></script>

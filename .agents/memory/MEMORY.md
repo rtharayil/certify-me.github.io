@@ -21,3 +21,6 @@
 - [Institutional SEO scope](institutional-seo-scope.md) — institutions first, higher education strongest; preserve brand, URLs, and evidence boundaries.
 - [Approved claims and anonymous customers](approved-claim-policy.md) — homepage metrics are authoritative; owner approves job figures and case outcomes but requires anonymous customers.
 - [Private evidence and builds](private-evidence-builds.md) — exclude uploads and verify stale build copies are not served; keep document-analysis tooling separate from the application.
+- [Jekyll JSON Unicode](jekyll-json-unicode.md) — escaped emoji surrogate pairs are valid JSON but fail this site's YAML-backed data loader; emit literal UTF-8.
+- [Performance proof boundaries](performance-proof-boundaries.md) — canonical hosting and Replit deployment can behave differently; local timings and lab input are not field CWV.
+- [AI evidence boundaries](ai-evidence-boundaries.md) — validate generated quotations and answer scope; supplied-corpus tests do not establish public AI citations.

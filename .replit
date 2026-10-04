@@ -71,9 +71,135 @@ externalPort = 3001
 
 [deployment]
 deploymentTarget = "static"
-build = ["bash", "-c", "bundle install && bundle exec jekyll build"]
+build = ["bash", "-c", "npm ci --include=dev && npm run build:performance-css && bundle install && bundle exec jekyll build"]
 publicDir = "_site"
 
 [postMerge]
 path = "scripts/post-merge.sh"
 timeoutMs = 180000
+
+# Phase 5: response headers apply after republishing, not in Jekyll preview.
+[[deployment.responseHeaders]]
+path = "/assets4/performance/*"
+name = "Cache-Control"
+value = "public, max-age=31536000, immutable"
+
+[[deployment.responseHeaders]]
+path = "/assets4/css/animate.607d3304452a.min.css"
+name = "Cache-Control"
+value = "public, max-age=31536000, immutable"
+
+[[deployment.responseHeaders]]
+path = "/assets4/css/blue-theme.d67529e88ff4.min.css"
+name = "Cache-Control"
+value = "public, max-age=31536000, immutable"
+
+[[deployment.responseHeaders]]
+path = "/assets4/css/credential-university.bf0fa3631ab7.min.css"
+name = "Cache-Control"
+value = "public, max-age=31536000, immutable"
+
+[[deployment.responseHeaders]]
+path = "/assets4/css/enterprise-overrides.b4629ae0cdd8.min.css"
+name = "Cache-Control"
+value = "public, max-age=31536000, immutable"
+
+[[deployment.responseHeaders]]
+path = "/assets4/css/menu.3b245b7192e3.min.css"
+name = "Cache-Control"
+value = "public, max-age=31536000, immutable"
+
+[[deployment.responseHeaders]]
+path = "/assets4/css/mobile-ux.3f7d4bfcfd3f.min.css"
+name = "Cache-Control"
+value = "public, max-age=31536000, immutable"
+
+[[deployment.responseHeaders]]
+path = "/assets4/css/responsive.ed4e8845cbc4.min.css"
+name = "Cache-Control"
+value = "public, max-age=31536000, immutable"
+
+[[deployment.responseHeaders]]
+path = "/assets4/css/skills-taxonomy-mapping.c3c45ec4bfd7.min.css"
+name = "Cache-Control"
+value = "public, max-age=31536000, immutable"
+
+[[deployment.responseHeaders]]
+path = "/assets4/css/workforce-intelligence.cf9af8f34fd6.min.css"
+name = "Cache-Control"
+value = "public, max-age=31536000, immutable"
+
+[[deployment.responseHeaders]]
+path = "/assets4/js/*"
+name = "Cache-Control"
+value = "public, max-age=3600, must-revalidate"
+
+[[deployment.responseHeaders]]
+path = "/assets4/images/optimized/*"
+name = "Cache-Control"
+value = "public, max-age=3600, must-revalidate"
+
+[[deployment.responseHeaders]]
+path = "/"
+name = "Cache-Control"
+value = "public, max-age=0, must-revalidate"
+
+[[deployment.responseHeaders]]
+path = "/platform-overview"
+name = "Cache-Control"
+value = "public, max-age=0, must-revalidate"
+
+[[deployment.responseHeaders]]
+path = "/credentials-higher-education"
+name = "Cache-Control"
+value = "public, max-age=0, must-revalidate"
+
+[[deployment.responseHeaders]]
+path = "/skills-taxonomy-mapping"
+name = "Cache-Control"
+value = "public, max-age=0, must-revalidate"
+
+[[deployment.responseHeaders]]
+path = "/comprehensive-learner-record"
+name = "Cache-Control"
+value = "public, max-age=0, must-revalidate"
+
+[[deployment.responseHeaders]]
+path = "/workforce-intelligence"
+name = "Cache-Control"
+value = "public, max-age=0, must-revalidate"
+
+[[deployment.responseHeaders]]
+path = "/security/"
+name = "Cache-Control"
+value = "public, max-age=0, must-revalidate"
+
+[[deployment.responseHeaders]]
+path = "/compare/"
+name = "Cache-Control"
+value = "public, max-age=0, must-revalidate"
+
+[[deployment.responseHeaders]]
+path = "/blog/certifyme-vs-accredible-2026-comparison.html"
+name = "Cache-Control"
+value = "public, max-age=0, must-revalidate"
+
+[[deployment.responseHeaders]]
+path = "/blog/what-is-an-academic-transcript.html"
+name = "Cache-Control"
+value = "public, max-age=0, must-revalidate"
+
+[[deployment.responseHeaders]]
+path = "/blog/association-case.html"
+name = "Cache-Control"
+value = "public, max-age=0, must-revalidate"
+
+[[deployment.responseHeaders]]
+path = "/sitemap.xml"
+name = "Cache-Control"
+value = "public, max-age=0, must-revalidate"
+
+[[deployment.responseHeaders]]
+path = "/robots.txt"
+name = "Cache-Control"
+value = "public, max-age=0, must-revalidate"

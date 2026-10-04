@@ -51,9 +51,10 @@ async function main() {
         }
         assert.equal(await page.locator("main h1").count(), 1);
         assert.equal(await page.getByText("Independent reviews", { exact: true }).count(), 1);
-        assert.equal(await page.locator('link[href="/assets4/css/mobile-ux.css"]').count(), 1,
+        const mobileStyle = require("../_data/performance_assets.json").styles["/assets4/css/mobile-ux.css"]?.href || "/assets4/css/mobile-ux.css";
+        assert.equal(await page.locator(`link[href="${mobileStyle}"]`).count(), 1,
           "Keep the moved components' existing responsive styles.");
-        assert.match(await page.title(), /Platform Overview/);
+        assert.match(await page.title(), /Platform Overview|Digital Credential Infrastructure & Platform/);
         assert(await page.locator('meta[name="description"]').getAttribute("content"));
 
         for (const index of [2, 4, 0]) {

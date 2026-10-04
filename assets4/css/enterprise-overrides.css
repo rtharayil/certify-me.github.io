@@ -313,6 +313,22 @@
   transform: translateY(-2px) !important;
 }
 
+/* Capped editorial thumbnails must shrink in both dimensions, not flatten. */
+.blog-post-img img[style*="max-height"] {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Mobile body scrolling can leave legacy entrance animations hidden. */
+@media (max-width: 767.98px) {
+  [class^="he-"].wow,
+  [class^="he-"] .wow {
+    visibility: visible !important;
+    animation: none !important;
+  }
+}
+
 /* ── 4. STATISTICS — dark indigo conversion strip ─────── */
 #statistic-1 {
   background: linear-gradient(135deg, var(--cm-indigo) 0%, #1e2060 50%, #2d1b69 100%) !important;

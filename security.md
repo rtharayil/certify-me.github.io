@@ -6,7 +6,7 @@ render_content: true
 permalink: /security/
 seo_pillar: true
 breadcrumb_label: "Security and Trust"
-last_modified_at: "2026-10-03"
+last_modified_at: "2026-10-04"
 sitemap.priority: 0.9
 HeroTitle: Security and Governance for Institutional Credentials
 HeroText: "Review security evidence, privacy responsibilities and verification dependencies before an institutional rollout. CertifyMe is SOC 2 Type II Attested, with management-system certifications covering information security, privacy, quality, environmental management and business continuity."

@@ -70,7 +70,8 @@
   {% include V4NewLook/_GTMScript.html %}
 
   <!-- GOOGLE FONTS — consolidated into one request -->
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 
   <!-- BOOTSTRAP CSS -->
   <link rel="stylesheet" href="/assets4/css/bootstrap.min.css">

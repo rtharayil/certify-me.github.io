@@ -215,3 +215,269 @@ mtime_ms = 1791082454054
 storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/c98ee093-b0fe-4742-9efb-22f702871e2d/9e968dbf-a12b-4530-b39e-c7419e3dc731"
 storage_version_token = "1791082522499396"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "UHvqr_GJXL3yIj9R083Ye"
+uri = "file://.local/reports/content-authority/content-authority-report.md"
+type = "text"
+title = "Phase 3 content-authority report"
+description = "Executed outcomes, all changed URLs, validation results and the complete deferred-issue register."
+logical_id = "c8653c0d-c652-4f36-be06-b4b3a22079df"
+content_hash = "sha256:00557d53908409301ee6b3593d5a9af5bc417ed38873bed6e5e5f8b7d23c5dde"
+size = 56894
+mtime_ms = 1791085982242
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/c8653c0d-c652-4f36-be06-b4b3a22079df/636b601c-c2a2-4cb9-9d63-dc40d8e5337e"
+storage_version_token = "1791086053126742"
+content_type = "text/markdown"
+
+[[outputs]]
+id = "3h3lYLSEWQQLya2ixJSBG"
+uri = "file://.local/reports/content-authority/content-authority-audit.csv"
+type = "table"
+title = "83-article content-authority audit"
+description = "Reviewed parents, intent, ICP, baseline scores, factual/overlap candidates and actual implementation status."
+logical_id = "a091ae64-df87-46f9-b7b9-2a834e60ab5a"
+content_hash = "sha256:55f54ef56372c37833a7bcd912c13cbfbc9652ccbe01cd4a300b485e960970b2"
+size = 240083
+mtime_ms = 1791085735797
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/a091ae64-df87-46f9-b7b9-2a834e60ab5a/f8b6b103-0b52-4ba5-9b30-5e9d96382c98"
+storage_version_token = "1791086054504571"
+content_type = "text/csv"
+
+[[outputs]]
+id = "FVFo69uqhL13dJcNvC41Q"
+uri = "file://.local/reports/content-authority/six-authority-checklist.pdf"
+type = "pdf"
+title = "Six-page authority checklist"
+description = "One page per authority, with all 19 editorial criteria, contextual source counts and honest evidence boundaries."
+logical_id = "0e902cd9-c4d9-4f0d-92fa-2c2bb23c210b"
+content_hash = "sha256:0d884f7bf5c7fbe1e6ddc4d0137a18d6887a8d81e624b5ae3ee8aac7d757070b"
+size = 69223
+mtime_ms = 1791085983413
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/0e902cd9-c4d9-4f0d-92fa-2c2bb23c210b/d0d40307-1112-4da4-978c-ffc3a650300b"
+storage_version_token = "1791086056090896"
+content_type = "application/pdf"
+
+[[outputs]]
+id = "x6GNJRSqXLPNmawODfFg8"
+uri = "file://.local/reports/content-authority/certifyme-content-authority-phase3-evidence.zip"
+type = "unspecified"
+title = "Phase 3 evidence bundle"
+description = "33 files: requested JSON/CSV/Markdown, six-page checklist, all 83 baseline reviews, link registries, responsive results and unresolved issues."
+logical_id = "86d5bcc5-eabe-4828-b0e6-9936f9fbad4a"
+content_hash = "sha256:c7723c4a1bf4b26b681bf5fed1c8923de7ec9828471aa0e09866830a14a65c84"
+size = 865381
+mtime_ms = 1791085984493
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/86d5bcc5-eabe-4828-b0e6-9936f9fbad4a/6cdc92bc-1d07-4671-abcf-dc4e8addd1e6"
+storage_version_token = "1791086057397203"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "yjfxExvk_Q9jVmsQsXPZC"
+uri = "file://.local/reports/competitor-ai-seo/competitor-evidence-matrix.csv"
+type = "table"
+title = "Competitor evidence matrix"
+description = "Five vendors across the exact requested columns, with current official sources and observation dates."
+logical_id = "932d95fb-aa72-4b0a-a8c3-4f8e6ce0259e"
+content_hash = "sha256:1f1b1aa0a8ef8026477eb079e59f395a79264fb52930a2fc2498a4e697f11d47"
+size = 13175
+mtime_ms = 1791087987228
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/932d95fb-aa72-4b0a-a8c3-4f8e6ce0259e/c4b71953-c88f-4cfc-aedb-ebe5dd2828c8"
+storage_version_token = "1791088627421729"
+content_type = "text/csv"
+
+[[outputs]]
+id = "8eKKpY5A6Upr-kNFL0KG0"
+uri = "file://.local/reports/competitor-ai-seo/ai-answer-test.json"
+type = "unspecified"
+title = "20-question answer test"
+description = "16 PASS, 4 PARTIAL, 0 FAIL. Q10 is supported by current evidence; this is a local benchmark, not live AI citation testing."
+logical_id = "4d0a15e8-992c-408c-bfb6-324231d30210"
+content_hash = "sha256:e8af428b07a11c894ded4097926a0ac2dbf177a09da04eb978f34f301201d91c"
+size = 25573
+mtime_ms = 1791088520518
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/4d0a15e8-992c-408c-bfb6-324231d30210/361f91ee-c876-463b-a08b-b90687c1cc63"
+storage_version_token = "1791088628812726"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "23f4W3xitp4dOKCofK2xV"
+uri = "file://.local/reports/competitor-ai-seo/comparison-audit.md"
+type = "text"
+title = "Comparison audit"
+description = "Page-by-page corrections, source boundaries, preserved publication details and verification results."
+logical_id = "b657bc50-ee9b-4289-8691-db449ab9d97a"
+content_hash = "sha256:dc4d011b2b7440220fcfdf19eb6ce16bfb2c586182b141f7596a29cd421e3f91"
+size = 12316
+mtime_ms = 1791088520564
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/b657bc50-ee9b-4289-8691-db449ab9d97a/dd1d2542-9405-4a5e-b88b-7d364af5b9d0"
+storage_version_token = "1791088630211835"
+content_type = "text/markdown"
+
+[[outputs]]
+id = "jgUoJSNVfaxh4UEqpN1vQ"
+uri = "file://.local/reports/competitor-ai-seo/ai-seo-gap-report.md"
+type = "text"
+title = "AI SEO and AEO gap report"
+description = "Ten authority pages, nine entity definitions, citation-readiness criteria and explained remaining evidence gaps."
+logical_id = "b644fa11-631f-48df-a5c4-f424c8910622"
+content_hash = "sha256:f90e69c6eb31f8652bb37acf5e84ffb10a0ae8523e6005e84b3461bec48e0488"
+size = 15988
+mtime_ms = 1791088520564
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/b644fa11-631f-48df-a5c4-f424c8910622/1ee4884e-abc5-4c2a-8708-7b2d92d13132"
+storage_version_token = "1791088631519786"
+content_type = "text/markdown"
+
+[[outputs]]
+id = "MUa9E56fJe7JVOL-WlQRT"
+uri = "file://.local/reports/competitor-ai-seo/competitor-evidence-longform.csv"
+type = "table"
+title = "Detailed evidence records"
+description = "110 dimension-level records including claim, primary URL, date basis, confidence and notes."
+logical_id = "72d25c81-bbb8-4fd2-bdac-63a681563a7d"
+content_hash = "sha256:49cd1e927717ed2d64c1094b59d6ebe337b4d9424f5f181aac315be688a611d3"
+size = 42395
+mtime_ms = 1791087987226
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/72d25c81-bbb8-4fd2-bdac-63a681563a7d/ee29a1e3-e456-41a4-b6f9-1f68c4bf5661"
+storage_version_token = "1791088632950477"
+content_type = "text/csv"
+
+[[outputs]]
+id = "8lGkd5X8TpYXORvuk5h8D"
+uri = "file://.local/reports/performance-closure/performance-before.csv"
+type = "table"
+title = "performance-before.csv"
+description = "Eleven representative pages: cold-cache mobile baseline medians and resource metrics."
+logical_id = "05d09778-e8dd-475d-8fea-960c849d54b0"
+content_hash = "sha256:f0742c5b44018fee8c16294bc18339ba1d16e3c566b5086819fbb4bf7ebc7aad"
+size = 5359
+mtime_ms = 1791089186989
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/05d09778-e8dd-475d-8fea-960c849d54b0/1f14f247-1b3d-4ef8-b6ad-948737b77d01"
+storage_version_token = "1791091851572596"
+content_type = "text/csv"
+
+[[outputs]]
+id = "F9zrXQvib_jECT30GSpfB"
+uri = "file://.local/reports/performance-closure/performance-after.csv"
+type = "table"
+title = "performance-after.csv"
+description = "Matching mobile after-measurements, including explicit missing/field-INP limitations."
+logical_id = "c9aaf99f-7b78-4501-bac9-c28a5c8b80db"
+content_hash = "sha256:22664d6b652d1e991bc68089d19e8496c538a1d26e5b12cb52e2fc3a60b35b23"
+size = 5238
+mtime_ms = 1791090671197
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/c9aaf99f-7b78-4501-bac9-c28a5c8b80db/986348df-b451-457a-95ba-c1ecc1c17f86"
+storage_version_token = "1791091852921865"
+content_type = "text/csv"
+
+[[outputs]]
+id = "IqcWrvehArjwDBS-yZEoM"
+uri = "file://.local/reports/performance-closure/performance-comparison.md"
+type = "text"
+title = "performance-comparison.md"
+description = "Measured changes, custom 7.7/10 lab score, methods and regression results."
+logical_id = "30cdc982-a82c-4e8c-8284-f3567eaecb77"
+content_hash = "sha256:40b2787079386d709153a891f1c720fec406279e2c886df3ade05e4c2e68707e"
+size = 8865
+mtime_ms = 1791091657039
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/30cdc982-a82c-4e8c-8284-f3567eaecb77/c486b0fc-3f78-402d-9065-40f3f88e6574"
+storage_version_token = "1791091854308341"
+content_type = "text/markdown"
+
+[[outputs]]
+id = "s7nsNjJhCt0TzLRUTmu75"
+uri = "file://.local/reports/performance-closure/technical-seo-closure.md"
+type = "text"
+title = "technical-seo-closure.md"
+description = "Local verification, live HTTP evidence and exact remaining hosting/CDN actions."
+logical_id = "e1e46038-a50f-40c9-91f4-3a8124a1298b"
+content_hash = "sha256:ac38c9d4cd829dc8b9e89af9d5d533f1f47cfbcabb52fdfb218f0d314a880829"
+size = 15811
+mtime_ms = 1791091657040
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/e1e46038-a50f-40c9-91f4-3a8124a1298b/0e194c72-d261-4622-9d85-388ad859c15b"
+storage_version_token = "1791091855632737"
+content_type = "text/markdown"
+
+[[outputs]]
+id = "3LAvUCv5umFj0olKuYYPY"
+uri = "file://.local/reports/final-seo-release/final-seo-release-audit.md"
+type = "text"
+title = "Final SEO Release Audit"
+description = "NOT READY: full acceptance findings, exact blockers, production evidence, original 33-part matrix and score explanations."
+logical_id = "d382fa51-3df5-4784-ba61-55db2966b0f3"
+content_hash = "sha256:da18863b0dc0fe54daad9d62990e6196b8cb5a1304648513e77994632424ddbe"
+size = 35407
+mtime_ms = 1791093363820
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/d382fa51-3df5-4784-ba61-55db2966b0f3/f2b337d0-705e-405c-9acc-57a85422ca60"
+storage_version_token = "1791093380519088"
+content_type = "text/markdown"
+
+[[outputs]]
+id = "OB7cmwHY41ZTx-Vr9DVWt"
+uri = "file://.local/reports/final-seo-release/33-part-release-matrix.csv"
+type = "table"
+title = "Original 33-Part Acceptance Matrix"
+description = "9 COMPLETE, 24 PARTIAL, 0 NOT APPLICABLE; every partial has an exact gap, URL/file, reason and next action."
+logical_id = "b2da8e7b-be58-413b-bfe4-2a8adbb7da22"
+content_hash = "sha256:dd93c619c8fd8e082f1a604c90910ef7343879f211e84a1748b788d8b4e7dfe1"
+size = 14714
+mtime_ms = 1791093363819
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/b2da8e7b-be58-413b-bfe4-2a8adbb7da22/02f6e32c-8406-42fb-b302-b5e5e0c8f26a"
+storage_version_token = "1791093381900141"
+content_type = "text/csv"
+
+[[outputs]]
+id = "L8YO3qq5KG96trKUFLDoc"
+uri = "file://.local/reports/final-seo-release/release-scorecard.csv"
+type = "table"
+title = "Release Scorecard"
+description = "Twelve categories with current score, previous score, change and evidence; incomparable performance scoring is explicit."
+logical_id = "81fa6dfd-2d3f-4ba3-83b8-2115c6b91c7d"
+content_hash = "sha256:8baedee45964c55d64cb673c3c93c78d14bf13af484e1e321c0b0eb9caf55287"
+size = 1957
+mtime_ms = 1791093363819
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/81fa6dfd-2d3f-4ba3-83b8-2115c6b91c7d/7ade39f5-4d51-4092-97ea-6de61fb096f1"
+storage_version_token = "1791093383253492"
+content_type = "text/csv"
+
+[[outputs]]
+id = "TgBieq5mdOHqdZ8WzyH3P"
+uri = "file://.local/reports/final-seo-release/release-issues.csv"
+type = "table"
+title = "Release Blockers and Owner Actions"
+description = "Four blockers plus non-blocking evidence-dependent items, affected locations and exact closure actions."
+logical_id = "10dfb190-2e1c-472f-991d-48e0594a17f3"
+content_hash = "sha256:5162672e3ffd577df4f88f175dfd178b83c3a92df529c4874d297086ea740111"
+size = 5762
+mtime_ms = 1791093363820
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/10dfb190-2e1c-472f-991d-48e0594a17f3/c4a705d7-3899-421d-be5a-8d91094c3160"
+storage_version_token = "1791093384645932"
+content_type = "text/csv"
+
+[[outputs]]
+id = "xt3TJP5aKzFgU-fN-Cplg"
+uri = "file://.local/reports/final-seo-release/ai-answer-test.md"
+type = "text"
+title = "Twenty-Question AI Acceptance Test"
+description = "Actual internal source-grounded responses, manual adjudication, quotation issues and explicit external-citation limitations."
+logical_id = "5219ddf7-5d53-422e-89cf-3ef8e0b4b978"
+content_hash = "sha256:c7c564c9b045b37c307d8fc582c27a7f3648745eec8b04b73e96ec5239bf9ff2"
+size = 18997
+mtime_ms = 1791093363818
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/5219ddf7-5d53-422e-89cf-3ef8e0b4b978/8713e103-dbfe-471b-8468-85a0fce75315"
+storage_version_token = "1791093385975844"
+content_type = "text/markdown"
+
+[[outputs]]
+id = "iPu3rL64qyyYbxDKYh3XF"
+uri = "file://.local/reports/final-seo-release/p1-current-build-gaps.csv"
+type = "table"
+title = "P1 Current-Build Acceptance Gaps"
+description = "Twenty-six required P1 article sources still match the saved baseline; confirm merge state and recheck substantive corrections."
+logical_id = "02e68a5a-3245-411e-a1e6-8a89b41e19e6"
+content_hash = "sha256:8e70ee097bfc278e59f3f327459d9f9c2e361649037f7900c62adb199efeac68"
+size = 20320
+mtime_ms = 1791093363812
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/02e68a5a-3245-411e-a1e6-8a89b41e19e6/91c9cc58-5123-4380-8bfd-4fb89857702c"
+storage_version_token = "1791093387322237"
+content_type = "text/csv"
