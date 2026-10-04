@@ -159,3 +159,59 @@ mtime_ms = 1791079045370
 storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/016ad08a-da79-4575-832e-a18fd120a216/316e5e00-1041-4e29-a0ef-43baaab240d5"
 storage_version_token = "1791079092452393"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "x69xKawcM7jwrEQj9VpCN"
+uri = "file://.local/reports/enterprise-seo/33-part-analysis-handover.pdf"
+type = "pdf"
+title = "Detailed 33-Part Analysis Handover — PDF"
+description = "25 pages covering both work phases, every original brief section, completed fixes, unfinished work, evidence limits and acceptance criteria."
+logical_id = "5635f7cd-66dd-4808-8b5e-20b9a8666831"
+content_hash = "sha256:8f7a8f2f9c6ffe2532680bd2c84f21dfdb91c55aa88a6f1638a1d65887107d82"
+size = 167323
+mtime_ms = 1791082453542
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/5635f7cd-66dd-4808-8b5e-20b9a8666831/7c1b8693-d189-49d8-b15e-14ff1cc798f7"
+storage_version_token = "1791082518355587"
+content_type = "application/pdf"
+
+[[outputs]]
+id = "0zmG8cGQNyIg6IB5FZvon"
+uri = "file://.local/reports/enterprise-seo/33-part-analysis-handover.md"
+type = "text"
+title = "33-Part Handover — Markdown for AI Analysis"
+description = "Full readable text of the detailed handover, ready to share with an analyst or upload for AI review."
+logical_id = "24aff0b5-f6aa-4f5a-ad63-eaeb37eb17f3"
+content_hash = "sha256:14e69142aa933c98fe60ee117eb31762ad5014b066ec417813ed0a93341c83f6"
+size = 67792
+mtime_ms = 1791082443718
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/24aff0b5-f6aa-4f5a-ad63-eaeb37eb17f3/2c4a9972-0330-4b75-bd20-90279dc32a15"
+storage_version_token = "1791082519770315"
+content_type = "text/markdown"
+
+[[outputs]]
+id = "5IAIE4u3t5gPbtYhlFnoO"
+uri = "file://.local/reports/enterprise-seo/33-part-status-matrix.csv"
+type = "table"
+title = "33-Part Status Matrix — CSV"
+description = "One row per original brief section: requirement, current status, fixes, remaining gaps, reason, closure criteria and evidence pointers."
+logical_id = "11f9d50c-d863-48cd-9d8b-efa9022065e7"
+content_hash = "sha256:817a51ac2311e7985a0fc4d15ac6e574be762eee4aaa59f26468675fe858b61c"
+size = 33880
+mtime_ms = 1791082443722
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/11f9d50c-d863-48cd-9d8b-efa9022065e7/855ecfae-ba8b-4dea-8483-0ce2723fd520"
+storage_version_token = "1791082521137838"
+content_type = "text/csv"
+
+[[outputs]]
+id = "EwJMhOjPVaygW6D1WrF9U"
+uri = "file://.local/reports/enterprise-seo/analysis-handover-bundle.zip"
+type = "unspecified"
+title = "Complete Analysis Handover + Audit Evidence"
+description = "18 files: handover PDF/Markdown, CSV/JSON matrix, original final report, audit results, page inventory, scorecard, issue/change registers and regression logs. No raw private uploads."
+logical_id = "c98ee093-b0fe-4742-9efb-22f702871e2d"
+content_hash = "sha256:ee46bad1583bce6849916e585d49e6e061d7254dc4663d2eb8b429656d69ed70"
+size = 463254
+mtime_ms = 1791082454054
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/c98ee093-b0fe-4742-9efb-22f702871e2d/9e968dbf-a12b-4530-b39e-c7419e3dc731"
+storage_version_token = "1791082522499396"
+content_type = "application/octet-stream"
