@@ -17,7 +17,7 @@ featured: true
 
 ---
 
-SMigrating verifiable credentials from one platform to another is straightforward if both systems follow W3C and Open Badges standards, and more involved if you're moving from a closed or traditional system. 
+Migration depends on both platforms' supported export and import formats. Standards can help, but do not guarantee that every credential, template or status record transfers unchanged.
 
 This article covers both scenarios as step-by-step guides. The key difference between the two comes down to one thing: whether your current system can export structured data.
 
@@ -25,7 +25,7 @@ This article covers both scenarios as step-by-step guides. The key difference be
 
 ## TL;DR
 
-1. If your current platform is W3C and Open Badges compliant (like Accredible), migration involves exporting credential data, recreating templates in CertifyMe, and using bulk upload to reissue — the open standards make this portable by design.
+1. Confirm export support, proof formats, recipient data and status handling with both providers. Test a representative migration before reissuing or importing a full batch.
 
 1. The essential dataset to export includes issuer details, recipient details, credential title, issue and expiry dates, credential ID, and verification URLs — missing any of these creates problems during reissuance.
 

@@ -18,7 +18,7 @@ faqs:
   - question: "What if my college has closed down?"
     answer: "Don't panic! Usually, those records are moved to the state's department of education or a specific archive. You just need to contact the state office where the school was located to track down your files."
   - question: "Can a school really hold my transcript if I owe them money?"
-    answer: "Unfortunately, yes. If there's an unpaid library fee or tuition balance, they can block the request. I've found it's best to call the billing office directly—sometimes they'll set up a payment plan to let the transcript go through."
+    answer: "Ask the registrar about the institution's policy and applicable law. Transcript-withholding restrictions vary; an unpaid balance does not automatically mean every transcript can lawfully be withheld."
   - question: "Is there an easier way to send these to multiple universities?"
     answer: "Platforms like EduTranscript are a lifesaver for this. You can just log in, pick where you want them sent, and track everything from your dashboard. It beats filling out separate mail-in forms for every single application."
 ---
@@ -81,7 +81,7 @@ Transcripts are essential in various scenarios where formal proof of education i
 
 ### Do You Need an Official or Unofficial Transcript?
 
-When it comes to formal applications, official transcripts are typically non-negotiable because they serve as a verified, tamper-proof record of your academic performance. An official transcript is usually sent directly from your institution to the recipient, often in a sealed envelope or through secure digital channel. Nowadays institutions increasingly issue them as digital credentials that recipients can [verify digital credentials](https://www.certifyme.online/glossary/how-to-verify-digital-credentials-issued-by-educational-institutions.html) independently via a unique link or ID.
+For formal applications, recipients often require an official transcript sent through the issuing institution's approved channel. Follow the recipient's requirements for paper or digital delivery. Where a transcript uses a verifiable credential format, compatible services can [check its issuer information and integrity](https://www.certifyme.online/glossary/how-to-verify-digital-credentials-issued-by-educational-institutions.html); an access link alone is not proof of authenticity.
 
 This added security ensures the transcript hasn’t been altered, which is essential for applications where accuracy and integrity are crucial—such as when applying for graduate school, certain jobs, or professional certifications. 
 

@@ -28,16 +28,16 @@ howto_steps:
     text: "Write a compelling description of your badge, explaining its significance and the skills it represents."
 faqs:
   - question: "How do I make my company's badges look good on LinkedIn?"
-    answer: "I always suggest hiring a pro designer if you can, but the main thing is keeping it clean. It needs to be eye-catching even when it's small. Make sure the text is readable and the colors represent your brand well."
+    answer: "Use a clear layout, readable text and your institution's brand colours. Check the badge at small sizes before issuing it."
   - question: "Will my employees actually share these?"
-    answer: "I've found that if the badge represents a real achievement, they're usually proud to show it off. It's great for their own profiles too, so it's a win-win for everyone involved."
+    answer: "Explain the achievement and provide sharing instructions. Recipients decide whether to share; issuing a badge does not guarantee sharing or engagement."
   - question: "How do I stop people from making fake claims?"
     answer: "That's why we use the Open Badge standard. It includes metadata that makes the badge verifiable. If someone tries to claim a badge they didn't earn, the verification check will fail—simple as that."
   - question: "Can I track how many people are seeing these badges?"
     answer: "Yes! Use our analytics tools to see the number of shares, views, and clicks. It's honestly the best way to see the actual impact your badge program is having on your company's visibility."
 ---
 
-LinkedIn, being one of the most popular platforms for professionals, provides an excellent opportunity to showcase your skills and achievements. If you're using LinkedIn to reach out to other business professionals, look for new opportunities or [build your sales pipeline](https://sader.agency/how-to-optimize-your-linkedin-outreach-campaigns/) - demonstrating your skills and experience is a non-negotiable. One effective way to do this is by creating optimal digital badges LinkedIn can showcase for your company.
+LinkedIn lets recipients display credentials in their professional profiles. Issuers should explain what each credential recognises and how it can be verified.
 
 <div style="background:#f7f9fc;border-left:4px solid #4c6ef5;padding:16px 20px;margin:24px 0;border-radius:6px;">
 <strong>TL;DR:</strong> To share a company digital badge on LinkedIn: log in, open your Profile, click "Add profile section," choose Licenses & Certifications, then fill in the badge name, issuer, and date and upload the badge image or link. Using the Open Badge standard keeps the badge verifiable, so claims can't be faked.
@@ -49,7 +49,7 @@ These digital badges, often based on the <a href="https://openbadges.org/">Open 
 
 <br>
 
-In this step-by-step guide, we will walk you through the process of creating digital badges LinkedIn can prominently exhibit for your company’s brand awareness, from understanding the concept to implementing it effectively.
+This guide covers badge design, award criteria, issuance and sharing on LinkedIn.
 
 <br>
 
@@ -78,7 +78,7 @@ In this step-by-step guide, we will walk you through the process of creating dig
 
 Before creating digital badges, identify who you want to target with these credentials. Are they your employees, students, customers, or a broader online community? Understanding your audience will help you tailor your badge criteria and design to their specific needs.
 
-This analysis can help you understand on whether you should just stick digital badges or incorporate a hybrid approach of a [traditional certificate & digital badge.](https://www.certifyme.online/glossary/what-is-the-difference-between-certificate-of-completion-and-digital-badge.html)
+Choose a badge, a certificate or both according to your award requirements and how recipients will use the record.
 
 <br>
 
@@ -144,12 +144,11 @@ Further Reading : [Best Alternatives to Credly Badges](https://www.certifyme.onl
 
 ## Promoting Your Digital Badges
 
-1. <b>Announcing Badge Availability:</b> Promote your badges through various channels, such as email newsletters, social media, and your company website. Let your target audience know about the new opportunity to earn valuable credentials. If you don't have a website yet, use an [AI website builder](https://webwave.me/ai-website-builder) to quickly set one up and display your credentials with pride.
+1. Announce the badge programme through your institution's website, newsletters and relevant channels. Explain eligibility, award criteria and how recipients can share their credentials.
 
 
 1. <b>Leveraging Employee Advocacy:</b> Encourage your employees to share their earned badges on their LinkedIn profiles. This not only showcases their skills but also promotes your company's commitment to professional development.
 
-**Bonus Tip :** To support your badge earners in further sharpening their skills beyond your program, you may consider recommending external learning resources. Coursera Plus is one such platform that offers a wide range of courses that can help learners fill knowledge gaps or strengthen prerequisite skills. Learn more about the [Coursera Plus offer](https://missiongraduatenm.org/coursera-plus-discount/) here.
 
 <br>
 
@@ -163,4 +162,4 @@ Further Reading : [Best Alternatives to Credly Badges](https://www.certifyme.onl
 
 ## Conclusion
 
-Creating LinkedIn digital badges for your company or a [franchise business](https://michaelleander.com/blog/best-franchises-to-own) is a strategic move to recognize and promote skills and achievements within your community. By following this step-by-step guide, you can establish a credible badge program that benefits both your organization and the individuals who earn these digital credentials. Digital badges are not only a representation of accomplishments but also a pathway to continuous learning and professional growth in the digital age. Start designing and sharing your badges to unlock new opportunities for yourself and those connected to your organization.
+Before launching, confirm award criteria, recipient details, branding and verification. Give recipients clear instructions for adding the credential to LinkedIn.

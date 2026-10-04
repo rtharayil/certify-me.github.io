@@ -1,7 +1,7 @@
 ---
 title: "Digital Certificate Software | Issue & Manage Verifiable e-Certificates | CertifyMe"
 
-description: "Issue tamper-proof, verifiable digital certificates at scale. CertifyMe lets institutions design, automate, and deliver e-certificates with QR verification, white-label branding, and bulk issuance — in minutes, not weeks."
+description: "Design and issue branded digital certificates with issuer-managed records, bulk delivery and compatible verification. Define the authorised award and workflow before implementation."
 
 layout: V4LayoutInnerpages
 
@@ -9,10 +9,10 @@ sitemap.priority: 0.9
 
 # hero section
 HeroTitle: OpenBadge Compliant Digital Certificates for Quick Credentialing
-HeroText: CertifyMe offers unbeatable digital certificates that allow easy social sharing, instant verification, hassle-free issuing and 24*7 tracking of credential activities.
+HeroText: Create, issue and manage digital certificates with sharing and verification features.
 
 BoxContentTitle: White-Label Friendly Digital Certificates for Social Visibility
-BoxContentText: Whether you decide to design your e-certificates from scratch or choose a template from our template collection, you have the freedom to rebrand the certificate to match your brand look & feel. Ditch manual certificate creation & automate the credentialing process. Ensure your certificates attract the highest social impressions while also reflecting authentic brand image. Be visible online for organic boost in social engagement and learner enrollment.
+BoxContentText: Design a certificate or adapt an existing template to your brand. Use a reviewed recipient list and award criteria to manage issuance consistently.
 BoxImage: /assets4/images/Hero Images/Certificate.png
 
 #features section
@@ -25,8 +25,8 @@ Feature2Title: Mobile-Optimized Digital Certificates
 Feature2Text: Access and display digital certificates seamlessly on any device, including smartphones and tablets. Choose a suitable mobile-optimized design for a smooth user experience, and present learner achievements on the go.
 
 Feature3Image: /assets4/images/Digital certificates/3.png
-Feature3Title: Bulk Credentialing in A Tamper-proof Manner
-Feature3Text: Embrace the ease of online credentialing with CertifyMe. Press a single button and automatically send your certificates & badges to all recipients. Simplify the process of providing a ‘seal of approval’ to learners & members to progress their careers.
+Feature3Title: Bulk Issuance with Integrity Checks
+Feature3Text: Prepare a recipient list and issue certificates or badges in a batch. Review the award approvals and delivery settings before sending.
 
 
 Feature4Image: /assets4/images/Digital certificates/4.png
@@ -71,15 +71,15 @@ seo_keywords: "digital certificates, digital certificate software, verifiable ce
 
 faqs:
   - question: "What is a digital certificate?"
-    answer: "A digital certificate is a verifiable, tamper-proof online credential that replaces paper certificates. It contains embedded metadata including issuer name, earner details, award criteria, and issue date. Each certificate has a unique verification link and QR code enabling instant, independent verification by employers or institutions."
-  - question: "Are CertifyMe digital certificates tamper-proof?"
-    answer: "Yes. CertifyMe certificates use cryptographic signatures and unique verification IDs. Any modification to certificate content invalidates the signature, making forgery instantly detectable. Verification is independent — it does not rely on CertifyMe's servers remaining online."
+    answer: "A digital certificate records an issuer-authorised achievement. A verifiable format retains issuer, recipient and award information and supports integrity checks. A link or QR code provides access; it is not by itself proof of authenticity."
+  - question: "What makes a signed certificate tamper-evident?"
+    answer: "Changing signed data causes cryptographic verification to fail when checked. Verification still requires the relevant issuer, key and status resources. Plan export, retention and continuity; a hosted link alone does not guarantee verification if services become unavailable."
   - question: "How quickly can I issue digital certificates in bulk?"
-    answer: "Bulk issuance takes minutes. Upload a CSV with recipient names and emails, select your certificate template, and CertifyMe generates personalised certificates and sends delivery emails to all recipients automatically. There is no per-certificate manual work required."
+    answer: "CertifyMe supports bulk issuance using prepared recipient data and approved templates. Validate fields, award decisions and delivery before scheduling a batch. Processing time depends on batch size and the agreed workflow."
   - question: "Can digital certificates have expiry dates and renewal workflows?"
     answer: "Yes. You can set expiry dates on any certificate template. CertifyMe automatically displays expiry status on verification pages and can trigger renewal reminder emails to recipients before the certificate expires — keeping credentials current without manual follow-up."
   - question: "What formats do digital certificate recipients receive?"
-    answer: "Recipients receive a unique shareable verification URL, a downloadable PDF, and a QR code. The certificate is also stored permanently in their CertifyMe learner wallet. They can share it on LinkedIn, embed it in email signatures, or download it at any time."
+    answer: "Recipient delivery can include a shareable credential page, PDF and QR code. Confirm wallet access, export format, retention and service-continuity terms for the programme. A PDF download alone is not a complete verification package."
   - question: "Can I white-label digital certificates with my organisation's branding?"
     answer: "Yes. CertifyMe provides full white-label customisation. Certificates display your organisation's logo, colours, and custom domain. The certificate landing page, verification page, and email delivery all reflect your brand identity — learners see your brand, not CertifyMe's."
 ---

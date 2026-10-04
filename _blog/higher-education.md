@@ -45,7 +45,7 @@ Use [workforce intelligence](/workforce-intelligence) to explore occupational re
 
 ## Evidence and limitations
 
-The [anonymous applied-sciences case](/case-studies.html) includes owner-approved credentials and career-service engagement outcomes. This article does not claim a named university's savings or guarantee the same result. Residency, integrations and procurement requirements need actual documentation and contract review.
+The [applied-sciences case study](/case-studies.html) describes credential issuance and career-service engagement. The customer's identity remains confidential, and results vary by programme. Confirm residency, integration and procurement requirements through documentation and contract review.
 
 ## Plan your next step
 

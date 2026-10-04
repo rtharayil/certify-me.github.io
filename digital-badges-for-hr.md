@@ -20,11 +20,7 @@ BoxImage: assets4/images/landd3.png
 #features section
 Feature1Image: assets4/images/landd2.png
 Feature1Title: Engage Employees with Seamless Credentialing
-Feature1Text: "CertifyMe’s automated system enhances engagement by issuing instant, verifiable digital badges. This motivates employees to participate and complete courses efficiently.
-<br>
-<br>
-
-Eliminate manual certificate distribution with CertifyMe’s seamless process. Employees feel recognized and achieve higher engagement through efficient certification management."
+Feature1Text: "Use digital badges to recognise employee achievements and reduce manual certificate delivery. Measure engagement separately rather than assuming issuance alone increases participation."
 
 Feature2Image: 
 Feature2_1Title: Certified Badges Enhance Course Value
@@ -49,10 +45,7 @@ The verification process ensures employees retain and apply training session kno
 
 Feature5Image: assets4/images/landd4.png
 Feature5Title: Instant Recognition for Employee Achievements
-Feature5Text: "Do you struggle with employee recognition? 
-<br>
-<br>
-CertifyMe's automated credentialing system assures prompt and visible recognition of accomplishments, improving morale and building a culture of continual improvement and participation."
+Feature5Text: "Define which employee achievements receive a credential and who approves them. Digital delivery makes the recognition accessible to recipients."
 
 Feature6Image: assets4/images/landd6.png
 Feature6_1Title: Continuous Upskilling Made Easy

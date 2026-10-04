@@ -7,7 +7,7 @@
 
             <!-- BLOG POST IMAGE -->
             <div class="blog-post-img mb-35">
-                <img class="img-fluid r-16" src="{{ rp.imageLink }}" alt="{{ rp.title }}" style="max-height:250px">
+                <img class="img-fluid r-16" src="{{ rp.imageLink }}" alt="{{ rp.title | strip_html | escape }}" style="max-height:250px">
             </div>
 
             <!-- BLOG POST TEXT -->

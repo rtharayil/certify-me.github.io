@@ -45,7 +45,7 @@ The table below summarizes each industry, the problem they faced with traditiona
     <tr>
       <td>Higher Education</td>
       <td>Forged transcripts and slow manual verification</td>
-      <td>Tamper-proof records verifiable in real time via a unique link</td>
+      <td>Issuer-managed records with integrity and applicable status checks</td>
     </tr>
     <tr>
       <td>eLearning Platforms</td>
@@ -55,7 +55,7 @@ The table below summarizes each industry, the problem they faced with traditiona
     <tr>
       <td>Corporate L&amp;D</td>
       <td>Manual tracking and self-reported completions</td>
-      <td>Tamper-proof badges and certificates issued automatically on completion</td>
+      <td>Signed badges or certificates issued through an authorised completion workflow</td>
     </tr>
     <tr>
       <td>Professional Associations</td>
@@ -103,7 +103,7 @@ That combination makes eLearning certificates genuinely useful in a hiring conte
 
 Most organizations track employee training manually, through spreadsheets or self-reported progress. This creates two problems. First, the data is unreliable. Second, it's impossible to verify whether a specific employee actually completed compliance training or a required upskilling course.
 
-Verifiable credentials introduce accountability. When a course is completed, the platform issues a tamper-proof [digital badge](https://www.certifyme.online/blog/digital-badges-explained.html) or certificate automatically. HR teams can check credential status in real time. Employees can share their credentials internally when applying for promotions or externally when moving to a new organization. The credential's status, whether active, expired, or revoked, is always current.
+An institution can configure an approved completion or assessment event to trigger a [digital badge](https://www.certifyme.online/blog/digital-badges-explained.html) or certificate. Recipients can share the award with HR or another organisation. Verification checks issuer information, integrity and applicable status; status freshness depends on the supported mechanism and available resources.
 
 <br>
 

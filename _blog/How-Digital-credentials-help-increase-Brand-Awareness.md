@@ -19,7 +19,7 @@ faqs:
     answer: "IBM's own page documents badges and certifications. It does not prove CertifyMe customer outcomes or a causal marketing effect."
 ---
 
-Ever wonder how some brands just stick in your mind, while others fade before you even finish scrolling?
+Optional credential sharing gives an institution another way to make its programmes visible. This guide is for education and training teams deciding how to support recipient sharing and measure awareness without confusing views with enrolment, learning or hiring outcomes.
 
 That’s the magic of brand awareness—and in 2025, it’s no longer just about ads or logos. It's about visibility in the digital spaces where real conversations happen. Think of digital credentials like smart, shareable proof of achievement that quietly carry your institution’s name across LinkedIn profiles, email signatures, and beyond. 
 
@@ -322,11 +322,10 @@ Building brand awareness in 2025 isn’t about shouting louder, it's about being
 
 Whether it’s a student proudly posting a badge or a recruiter clicking a verified certificate, each digital credential quietly tells your story. And the more those stories get shared, the more your brand earns attention—without needing to constantly chase it.
 
-If you're in the registrar’s office juggling paper requests, or a student trying to make your resume stand out, digital credentials simplify both ends of the journey. They're practical, portable, and powerful—especially when paired with thoughtful design and intentional sharing. 
+For registrars, digital credentials support issuance and verification workflows. For recipients, they provide a shareable record of an achievement.
 
-What starts as a certificate becomes a touchpoint: a moment where someone else sees your brand and remembers it. That’s how recognition grows—not in one big leap, but in hundreds of small, meaningful ones.
 
-If you're looking for a simple, secure way to issue branded, verifiable digital credentials, CertifyMe is worth checking out. 
+Discuss your institution's branding, issuance and verification requirements with CertifyMe.
 
 Platforms like CertifyMe make it easy:
 

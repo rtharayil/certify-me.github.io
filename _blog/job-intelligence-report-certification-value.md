@@ -15,7 +15,7 @@ featured: true
 
 seo_keywords: "CertifyMe job intelligence report, learning program credential value, enterprise credentialing job market data, personalised career report digital credential, prove ROI of certification programs, credential to job opportunity tracing, live labour market intelligence credential, B2B credentialing platform career outcomes, enterprise L&D credential ROI, job matching digital credentials, credential impact score certifyme"
 
-faqs: [{"question":"Is the dataset refreshed in real time?","answer":"The approved cadence is every two weeks. Live-job coverage is not a promise of real-time updates."},{"question":"Does a report guarantee a job or salary?","answer":"No. Availability, suitability, compensation and hiring decisions need separate current evidence and employer confirmation."}]
+faqs: [{"question":"Is the dataset refreshed in real time?","answer":"The dataset is refreshed every two weeks, not in real time."},{"question":"Does a report guarantee a job or salary?","answer":"No. Check current vacancy details and compensation with the employer. A report does not guarantee a hiring outcome."}]
 last_modified: "2026-10-04"
 last_modified_at: "2026-10-04"
 seo_cluster: "workforce"
@@ -24,9 +24,9 @@ content_authority_p0: true
 
 Job-intelligence reports relate reviewed skill evidence to occupations and separately sourced market information. They support investigation and institutional decisions, not a guarantee of a vacancy match, salary or employment.
 
-## Approved coverage and refresh
+## Job coverage and refresh
 
-The owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks, using CertifyMe's own job-farming engine. This is not a claim of real-time refresh, a particular country count, source licensing or salary-field availability.
+CertifyMe's own job-farming engine covers 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks. Before using the data, confirm geographic coverage, permitted use and the availability of fields such as salary.
 
 ## Use an evidence–mapping–market chain
 
@@ -38,7 +38,7 @@ A [Comprehensive Learner Record](/comprehensive-learner-record) connects achieve
 
 ## Interpret the report rather than promising a result
 
-The [workforce-intelligence authority page](/workforce-intelligence) explains institutional use of occupations and employer demand. Confirm source date, refresh, geography, deduplication and the meaning of any ranking before using a report in curriculum or career decisions.
+See how university teams use [workforce intelligence](/workforce-intelligence) to investigate occupations and employer demand. Check source dates, geographic coverage, duplicate handling and the meaning of rankings before using a report in curriculum or career decisions.
 
 ## Illustrative example: programme relevance review
 
@@ -50,7 +50,7 @@ Within the [credential lifecycle](/platform-overview), assign academic approval,
 
 ## What evidence can support a claim?
 
-Use the [anonymous case evidence](/case-studies.html) for approved adoption and career-service engagement examples. Keep these measures distinct from hiring outcomes. Confirm raw data source permissions, licensing and contract scope before making stronger data claims.
+Read the [customer case studies](/case-studies.html) for adoption and career-service engagement examples. These measures are distinct from hiring outcomes. Confirm data permissions and contract scope for your institution's intended use.
 
 ## Plan your next step
 

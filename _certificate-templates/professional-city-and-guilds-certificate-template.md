@@ -43,7 +43,7 @@ This certificate template features a bold and professional style, making it stan
 
 1. **Accreditation-Friendly Design:** The certificate template is designed with accreditation in mind, so you can be confident it reflects official standards.
 
-1. **City & Guilds-Inspired Layout:** Its layout and style closely match the trusted City & Guilds format, giving learners certificates that feel credible and respected.
+1. **City & Guilds-Inspired Layout:** This is a design template, not a City & Guilds-issued or endorsed qualification.
 
 1. **Easy to Personalize:** You don’t need to struggle with formatting or design, as you only need to add the learner’s name, course title, your centre’s logo, important dates, QR codes or verification numbers, and the required signatures.
 

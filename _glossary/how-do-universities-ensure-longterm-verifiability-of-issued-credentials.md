@@ -150,23 +150,23 @@ The table below maps each traditional failure directly to how a [digital credent
     </tr>
     <tr>
       <td>Standards alignment</td>
-      <td>No set rules for how it should be built, so the process differs depending on the software used.</td>
-      <td>Follows global rules set by W3C and Open Badges 3.0, so it works the same way on any platform.</td>
+      <td>Uses PDF and digital-signature formats. Verification depends on the signature, certificate chain and validation tools.</td>
+      <td>Uses a defined credential standard. Compatibility still depends on the format, proof method and receiving system.</td>
     </tr>
     <tr>
       <td>Updates and reissuance</td>
-      <td>To make a change, you create a new file and sign it again — the old version keeps circulating.</td>
-      <td>Changes are made through the system, and the old version is marked as invalid right away.</td>
+      <td>Changes require a newly signed file. Assess certificate validation and any applicable revocation information.</td>
+      <td>Changes may require reissuance and a status update. Verifiers must check the issuer's applicable status information.</td>
     </tr>
     <tr>
       <td>Holder sharing experience</td>
-      <td>Sent as a file attachment, and the person receiving it has to figure out what it means on their own.</td>
-      <td>Shared as a link that already includes the issuer's details, what was earned, and how to verify it.</td>
+      <td>Shared as a file. The recipient checks the signature and the issuer's information using suitable validation tools.</td>
+      <td>Shared through supported files, wallets or links. The receiving system must support the credential's verification requirements.</td>
     </tr>
     <tr>
       <td>Risk of misuse</td>
-      <td>High — someone can copy and reuse the file, and there's no quick way to check if it's still valid.</td>
-      <td>Low — anyone can check in real time whether the credential is active, expired, or cancelled.</td>
+      <td>A file can be copied without invalidating its signature. Current validity depends on certificate validation and applicable status information.</td>
+      <td>Integrity and status checks can identify certain problems. They do not independently establish the recipient's identity or the truth of every claim.</td>
     </tr>
   </tbody>
 </table>

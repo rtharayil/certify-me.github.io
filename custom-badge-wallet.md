@@ -9,7 +9,7 @@ sitemap.priority: 0.9
 
 # hero section
 HeroTitle: Custom Badge Wallet to Keep Your Digital Credentials in One Place
-HeroText: Present digital certificates professionally and memorably. Choose our custom badge wallet feature for easy storage of achievements.
+HeroText: A custom badge wallet gives recipients a place to access and share their credentials.
 HeroImage: /assets4/images/wallet/1.png
 
 BoxContentTitle: Verify Portable Digital Certificates from Mobile Devices
@@ -23,7 +23,7 @@ Feature1Text: Recipients can store their credentials in custom badge wallets to 
 
 Feature2Image: /assets4/images/wallet/2.png
 Feature2Title: Store Multiple Credentials Under One Roof
-Feature2Text: Eliminate the stress of manually storing and handling credentials. Partner with CertifyMe to automatically collect all your e-credentials in the badge wallet without the risk of losing or misplacing them. The wallet URL customization option takes your credentialing program up a notch. Leave no stone unturned to reflect a trustworthy, and authentic brand appearance.
+Feature2Text: Collect issued credentials in a recipient wallet and configure its URL to match your programme's branding. Agree access, retention and continuity arrangements before rollout.
 
 #Feature3Image: /assets4/images/Digital certificates/3.png
 Feature3Title: Bulk Credentialing in A Tamper-proof Manner

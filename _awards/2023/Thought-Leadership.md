@@ -10,7 +10,7 @@ logo : /img/awards/Leadership.png
 
 Head1:  Thought Leadership<br> In L&D 2023
 
-Head2:  <br > Nominations are open 
+Head2:  <br > 2023 programme archive
 Head3:  <br > Thought Leadership in Learning & Development 2023<br> Award honors the Thought Leaders who shape the L&D<br> domain with their forward-thinking perspectives,<br>innovative insights, expertise, best practices, and strategies.<br><br>The award recognizes the commitment, diligence, and<br>discernment of the leaders around us who relentlessly<br> perform to exchange ideas, collaborate on projects, and<br>build relationships within the industry.
 
 
@@ -39,7 +39,7 @@ category5H: Aspiring Leader (Individual Award)
 Why: <span>Why should I nominate my leader for the </span><br > Thought Leadership In L&D 2023 <span>?</span>
 
 Why1H: Get Recognised Internationally  
-Why1: Our award program handpicks only less than 1% of the top  professionals. To be recognized in the top one percentage means you are the best in the industry across the globe. You deserve to be recognized for your hard work. Nominate yourself and your team now.
+Why1: The 2023 programme recognised contributions to learning and development. An award acknowledges the recognised contribution; it is not an independently verified ranking of all professionals worldwide. This page records the archived programme.
 
 Why2H: Gain Better Visibility
 Why2: Let the world know about your achievements! Leverage the social sharing option of CertifyMe credentials and post the award directly to social media platforms. Our platform comes with a built-in sharing solution that allows you to compose engaging social media posts on 40+ platforms. Highlight the value and significance of the credential, and showcase your expertise in the L&D field. What can be the best way to maximize visibility? 
@@ -48,7 +48,7 @@ Why3H: Earn a Digital Credential
 Why3: Earn a Verifiable Digital Credential as a proof of your achievement. The awarded digital credentials can be shared across various social media platforms and also can be added to your LinkedIn profile. You will also be allowed to use the badge , certificate in your resume and email signatures. 
 
 About: About <span> CertifyMe Thought Leadership In L&D 2023 </span>
-About1: CertifyMe " CertifyMe Thought Leadership In L&D 2023 is widely recognized across the corporate spectrum as the top honour for individual and team achievements in across all domains . All organizations, public and private, for profit and non-profit, large and small may submit nominations. Leaders are key functions in any corporate firm, but unfortunately, professionals in this field of work are seldom recognized and often neglected to be appreciated for their selfless efforts. 
+About1: CertifyMe Thought Leadership in L&D 2023 recognises individual and team contributions to learning and development. The programme invited nominations from public and private organisations, including businesses and non-profits of different sizes. This archived page describes the 2023 programme.
 
 
 

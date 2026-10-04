@@ -5,7 +5,7 @@ category: "Verifiable Credentials - Basics"
 
 title: "Why Use Verifiable Credentials?"
 
-description: "Learn how verifiable credentials address the limitations of traditional credentialing systems by preventing forgery, enabling instant verification, and making secure digital sharing easy."
+description: "Verifiable credentials support integrity checks and structured sharing. Trust still depends on the issuer, proof method and applicable status information."
 
 imageLink: /assets4/images/Glossary/why-use-verified-credentials.png
 

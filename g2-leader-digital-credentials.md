@@ -1,6 +1,6 @@
 ---
-title: "CertifyMe on G2 | #2 Ranked Digital Credential Management Software"
-description: "CertifyMe is ranked #2 globally in Digital Credential Management on G2 with a 4.9/5 rating from 500+ verified reviews. See why institutions choose CertifyMe."
+title: "CertifyMe on G2 | Digital Credential Management Reviews"
+description: "Explore CertifyMe customer feedback and its dated G2 category ranking. Review current ratings and evaluate the platform against your institution's requirements."
 
 layout: V4LayoutG2Grid
 

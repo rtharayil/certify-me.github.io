@@ -16,7 +16,7 @@ BoxContentText: "CertifyMe serves 5K+ institutions and 1M+ learner wallets world
 BoxImage: /images/iso-27001-image.png
 Feature1Image: /images/iso_27001-1.png
 Feature1Title: Information Security Management — ISO/IEC 27001:2022
-Feature1Text: "The supplied certificate covers the information security management system for SaaS digital-credential activities. Access-control, risk-management and incident-response requirements should be assessed alongside the institution's own responsibilities. The owner confirms completed 2026 surveillance and active status; printed expiry is 4 June 2027."
+Feature1Text: "CertifyMe's ISO/IEC 27001:2022 certificate covers the information security management system for SaaS digital-credential activities. Its status is active following 2026 surveillance, with a printed expiry of 4 June 2027. Request the current certificate and assess access controls, risk management and incident response alongside your institution's responsibilities."
 Feature2Image: /images/iso-27701.png
 Feature2Title: Privacy, Quality and Business Continuity
 Feature2Text: "ISO/IEC 27701:2019 covers privacy information management; ISO 9001:2015 covers quality management; ISO 22301:2019 covers business continuity. ISO 14001:2015 concerns environmental management, not cybersecurity. Ask for the relevant certificate scope and current maintenance evidence during procurement."
@@ -29,7 +29,7 @@ FAQTitle: Institutional Security Questions
 FAQText: "Scope, evidence and shared responsibilities for institutional procurement."
 faqs:
   - question: "What does CertifyMe's SOC 2 Type II report cover?"
-    answer: "The supplied restricted-use report covers Security, Availability and Confidentiality for the examination period 1 February–30 April 2026. SOC 2 is an attestation, not a certification. Obtain the report through the procurement process and assess complementary customer and subservice controls."
+    answer: "CertifyMe's restricted-use report covers Security, Availability and Confidentiality for the examination period 1 February–30 April 2026. SOC 2 is an attestation, not a certification. Obtain the report through the procurement process and assess complementary customer and subservice controls."
   - question: "Are SSO and MFA included for enterprise customers?"
     answer: "Yes. SSO and MFA are standard at the enterprise level. Confirm authentication protocols, enforcement policies, account roles and implementation details for your institution."
   - question: "Where is institutional data hosted?"
@@ -49,7 +49,7 @@ faqs:
       <tbody>{% for certificate in site.data.approved_claims.iso %}<tr><th scope="row">{{ certificate.standard | escape }}</th><td>{{ certificate.scope | escape }}</td><td>{{ certificate.expiry | escape }}</td></tr>{% endfor %}</tbody>
     </table>
   </div>
-  <p>Document review and owner confirmations updated {{ site.data.approved_claims.reviewed_on }}. Printed expiry dates are not substitutes for continuing surveillance or certificate-status checks. The owner confirms current maintenance for the four certificates whose 2026 surveillance dates were queried; independent registry status was not checked here.</p>
+  <p>Request current certificates and surveillance information during procurement. Printed expiry dates alone do not establish continuing certification status.</p>
   <h3>Shared responsibilities before rollout</h3>
   <p>Agree identity and access policies, evidence requirements, retention, correction, revocation, backup and continuity arrangements. Validate the actual <a href="/api/">API permissions</a>, <a href="/allIntegrations.html">integration workflows</a> and <a href="/certificate-verification">credential-verification process</a> for your institution.</p>
   <p>Standards scope: <a href="https://site.imsglobal.org/certifications/certifyme/certifyme" target="_blank" rel="noopener noreferrer">1EdTech's registry</a> lists Open Badges 3.0 Issuer and CLR 2.0 Issuer/Displayer roles. These certifications do not establish universal wallet acceptance or certify every individual record.</p>

@@ -59,7 +59,7 @@ faqs:
   - question: "How can schools use digital credentials?"
     answer: "Schools use digital credentials to recognise student achievements, co-curricular activities, skills development, and course completions. Digital credentials are shareable on social media and student portfolios — helping students build verifiable records of achievement that go beyond grades and transcripts."
   - question: "Are CertifyMe credentials suitable for K-12 students?"
-    answer: "Yes. CertifyMe is COPPA compliant and designed to handle student credentials responsibly. The platform issues credentials with minimal personal data — typically only a name — and gives schools full control over credential design and delivery."
+    answer: "Schools can use CertifyMe to recognise student achievements while governing credential design and delivery. For minors, review consent, necessary personal data, sharing settings and the school's applicable privacy obligations, including COPPA where relevant. Platform features alone do not establish compliance for every school or implementation."
   - question: "Can student digital credentials link to university admissions portfolios?"
     answer: "Yes. CertifyMe credentials are interoperable with Open Badges 3.0 standards, making them portable and verifiable by any compatible institution. Students can include credential verification links in university applications and career portfolios."
 ---

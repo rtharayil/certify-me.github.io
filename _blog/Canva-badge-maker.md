@@ -13,16 +13,16 @@ featured: true
 seo_keywords: "Canva badge maker guide, design digital badges online, custom badge templates, create credentials with Canva, Canva and CertifyMe integration"
 faqs:
   - question: "Is Canva really the best tool for making badges if I'm a beginner?"
-    answer: "Definitely. It's so intuitive with the drag-and-drop stuff. You don't need to be a pro designer to make something that looks really sharp and professional in just a few minutes."
+    answer: "Yes. Canva's drag-and-drop tools let users arrange badge artwork without specialist design software."
   - question: "How do I make sure my Canva badge doesn't look like everyone else's?"
-    answer: "The trick is in the elements. Don't just stick with the default template—swap out the icons, tweak the colors to match your brand, and maybe even use their AI generator to create some unique graphics."
+    answer: "Customise the icons, colours and layout to match your institution's brand. Use original or appropriately licensed artwork."
   - question: "Can I use my Canva design on CertifyMe?"
     answer: "Yes, and I actually recommend it! You can design the visual part in Canva, export it, and then upload it to CertifyMe to add the secure verification data. It's the best of both worlds."
   - question: "What file format should I use when exporting my badge from Canva?"
     answer: "Go with PNG. It's high-quality and supports transparency, which is exactly what you want for a digital badge that might be displayed on different backgrounds or websites."
 ---
 
-Have you ever wanted to create a digital badge that truly stands out and captures attention? Whether you're an educator, business leader, or event organizer, crafting a unique digital badge can make a significant impact. 
+Canva helps educators, training teams and event organisers design badge artwork. A verifiable digital badge also needs an issuer, an achievement description, criteria and a record that recipients can share. This guide explains the design steps and the distinction between an image and an issued credential.
 
 In this guide, we're diving into the world of Canva's Digital Badge Maker. You'll discover how to design badges that not only look impressive but also resonate with your audience. From choosing the perfect template to customizing every detail, we'll walk you through the process step-by-step. Plus, we'll share expert tips to ensure your badges are not just eye-catching but also effective. 
 
@@ -236,7 +236,7 @@ CertifyMe provides analytics on badge distribution and engagement, offering insi
 
 Tailor your badge credentials to match your brand, with options for customizing issuer profiles and badge appearance.
 
-Integrating Canva with CertifyMe not only enhances the visual appeal of your badge and makes it a [designers choice](https://designers-choice.net/), but also ensures they carry the weight of verified authenticity.
+Canva provides the artwork; CertifyMe provides the issued credential record. A badge image alone does not establish authenticity: review the issuer, achievement, proof and applicable status through the credential's verification process.
 
 <br>
 

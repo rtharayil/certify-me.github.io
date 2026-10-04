@@ -3738,7 +3738,7 @@
     },
     {
       "dimension": "Positioning",
-      "claim": "Institution-governed credential infrastructure, not a universal claim of broader functionality than competitors.",
+      "claim": "Connected institutional credential infrastructure linking awards, reviewed skills, learner records and Job Engine workforce intelligence.",
       "url": "/platform-overview"
     },
     {
@@ -3808,7 +3808,7 @@
     },
     {
       "dimension": "Data Residency",
-      "claim": "Global hosting availability is owner-confirmed; actual storage, backups, access and transfers require a contract-specific residency assessment.",
+      "claim": "Hosting is available globally. Confirm storage locations, backups, support access and transfers against the data-residency terms in your contract.",
       "url": "/security/"
     },
     {
@@ -3828,7 +3828,7 @@
     },
     {
       "dimension": "Enterprise",
-      "claim": "Enterprise SSO/MFA is owner-confirmed. Exact protocols, interfaces, deployment and contractual controls need confirmation.",
+      "claim": "SSO and MFA are standard for enterprise customers. Confirm supported protocols, deployment details and contractual controls for your institution.",
       "url": "/security/"
     },
     {

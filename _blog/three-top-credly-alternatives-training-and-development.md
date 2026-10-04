@@ -51,7 +51,7 @@ Test that workflow with every shortlisted vendor: duplicate events, a missed ref
 
 ## Workforce context and security require separate evidence
 
-CertifyMe's owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks through its own job-farming engine. These are first-party coverage statements, not independently measured career outcomes. Evaluate [workforce intelligence](/workforce-intelligence) only where external career context is relevant to the programme; it does not replace assessed role readiness.
+CertifyMe's own job-farming engine covers 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks. These first-party coverage figures are not measured career outcomes. Evaluate [workforce intelligence](/workforce-intelligence) where occupational and employer information is relevant to the programme; it does not replace an assessment of role readiness.
 
 Request current security audit scope, hosting region, roles, SSO entitlement, API limits, support commitments and export rights for all vendors. Conformance certification is distinct from SOC 2 attestation, ISO certification and privacy obligations.
 

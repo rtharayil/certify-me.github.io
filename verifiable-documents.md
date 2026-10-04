@@ -21,22 +21,22 @@ BoxImage: /assets3/images1/hr-letter.png
 
 Feature1Image: /assets3/images1/Level3.png
 Feature1Title: Fraud-proof Verifiable Documents Allow Instant Authentication
-Feature1Text:  Discover the true potential of your students, employees, and trainees by associating with CertifyMe. Our verifiable document-issuing platform came into action to confront the certificate forgery issue.<br> Give candidates a sense of security and authenticity by turning digital. Our immutable documents not only protect organizations from misrepresentation but also allow students to portray a positive, credible image. Candidates also experience a streamlined certificate-sharing and downloading process.
+Feature1Text: CertifyMe supports digital document issuance and verification for institutional records. The issuer remains responsible for the accuracy of the underlying claim.
 
 
 Feature2Image: /assets3/images1/immutable-credentials.png
 Feature2Title: Insightful Interpretation of Students’ Expertise Using Verifiable Documents
-Feature2Text:  Digital certificates are more than mere documents, they are proof of authenticity. The credentials showcase learners’ skills. Maintaining credibility allows students to demonstrate their knowledge to potential employers and establish a strong professional portfolio. <br><br>We align job requirements with skill possession following an accurate metadata mapping solution. Leverage the benefits of verifiable credentials to furbish the road toward the dream jobs of students/trainees.<br><br>Digital badges bring your business to the forefront without investing in marketing channels. The greater number of students who share/download your digital certificates, the more conversion you receive.  
+Feature2Text: Include the achievement, issuer and assessment details that recipients need. Any skills mapping should be reviewed by the responsible academic or training team.
 
 
 Feature3Image: /assets3/images1/verification.png
 Feature3Title: Enhanced Student Engagement
-Feature3Text: Digital credentials greatly bridge the gap between student enrollment and students completing the course/program. The desire for verified and attested certificates that also recognize students’ skills and expertise without the fear of misplacing it works wonders for enhanced student commitment. In the same way, training institutes can boost employee engagement in their upskilling programs. 
+Feature3Text: Digital credentials record course or programme completion. Measure learner participation and completion separately rather than assuming that credentials cause an improvement.
 
 
 Feature4Image: /assets3/images1/Branding.png
 Feature4Title: Immutable Documents to Propel Your Career Forward
-Feature4Text: Exhibit in-demand skills to unlock new career opportunities and scope to advance your career. Our digital certificates not only enable organizations to defy all odds but the students and employees as well. The digital badges, verifiable documents, and fraud-proof credentials endorse a robust professional profile.<br><br>Make your brand invaluable by designing and issuing verifiable documents that attract and persuade the best brains. Achieve business results by teaming up with CertifyMe.  
+Feature4Text: Give recipients a shareable record of their achievements and the skills the institution has assessed.
 
 
 
@@ -48,9 +48,9 @@ seo_keywords: "verifiable digital documents, tamper-proof documents, verifiable 
 
 faqs:
   - question: "What are verifiable digital documents?"
-    answer: "Verifiable digital documents are tamper-proof digital records with embedded cryptographic signatures and unique verification IDs. Unlike scanned PDFs, they cannot be forged — any modification to the content invalidates the signature. Verification is instant via QR code or link and does not require contacting the issuing organisation."
+    answer: "A verifiable document retains issuer information and supports cryptographic integrity checks. Altering protected data causes verification to fail when checked. A link or QR code provides access; relevant keys, status resources and issuer-authority checks still matter."
   - question: "How is a verifiable document different from a scanned PDF?"
-    answer: "A scanned PDF can be easily altered in image-editing software and shows no evidence of tampering. A CertifyMe verifiable document carries a cryptographic signature that binds the content to the issuer. Any alteration breaks the signature and is immediately detectable during verification."
+    answer: "A scanned image alone does not provide a cryptographic proof. PDFs can also be digitally signed, so the distinction is the supported proof, issuer information and verification process—not simply the file extension."
   - question: "What types of documents can be made verifiable?"
-    answer: "CertifyMe can make certificates, diplomas, transcripts, compliance documents, product authenticity certificates, and any other institutional document verifiable. The platform handles design, issuance, and verification — issuers upload their document template, add recipient data, and CertifyMe handles the rest."
+    answer: "Discuss the proposed award or document type, issuer authority, protected fields and verification requirements. Certificates, academic records and other institutional use cases need an agreed implementation; a template alone does not establish regulatory acceptance or suitability for every document."
 ---

@@ -276,4 +276,4 @@ A verifiable credential, however, is built with security, standards, and verific
 
 In today’s digital ecosystem, simply being digital is no longer enough. For credentials to be trusted at scale, they must also be verifiable.
 
-For organizations issuing large numbers of credentials, platforms like [CertifyMe](https://www.certifyme.online/) make it possible to move beyond simple digital files and issue credentials that can be independently verified anywhere they are shared.
+For high-volume issuance, confirm the platform's credential formats, verification methods and status-management features.

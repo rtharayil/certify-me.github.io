@@ -18,7 +18,7 @@ BoxImage: /assets4/images/Hero Images/Associations.png
 #features section
 Feature1Image: /assets4/images/integrations/1.png
 Feature1Title: Reduced Wait Time for Credential Access
-Feature1Text: A long gap between course completion and certificate retrieval leaves a bad taste in the mouth. The API integration feature of CertifyMe reduces the workload of labor-intensive manual certificate creation and runs the credentialing process in the background. Generating and distributing e-certificates, and micro badges becomes fuss-free, saving time and ensuring accuracy in your credentialing journey.
+Feature1Text: API integration can connect an approved course-completion event to credential issuance. Plan authentication, error handling and recipient-data validation.
 
 
 Feature2Image: /assets4/images/integrations/2.png

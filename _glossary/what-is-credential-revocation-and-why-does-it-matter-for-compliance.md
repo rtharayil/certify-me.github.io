@@ -170,4 +170,4 @@ Most institutions don't think about revocation until they need it urgently — a
 
 [CertifyMe](https://www.certifyme.online/) builds revocation into the credentialing workflow from the start. You can revoke individual credentials or an entire batch, and the change shows up immediately on the verification portal. No lag, no manual workarounds. Anyone who checks the credential after revocation sees the updated status right away.
 
-Role-based access controls mean only the right people can trigger a revocation — so you're not trading one risk for another. And if you want to see how issuance, lifecycle management, and revocation work together before committing, there's a free plan to test it out.
+Limit revocation permissions to authorised roles and keep an audit trail of each decision.

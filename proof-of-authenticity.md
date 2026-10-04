@@ -12,7 +12,7 @@ talkToOurExpertLink: "https://info.certifyme.online/talk-with-expert?utm_source=
 
 
 HeroTitle: Showcase Business Authority by Issuing Immutable Credentials
-HeroText: Digital credentials are changing the way organizations communicate with candidates and employees. They are ‘badges of honor’ that widen the path of career opportunities and offer a sense of authenticity. 
+HeroText: Digital credentials give recipients a shareable record of an achievement, with verification information maintained by the issuer.
 
 
 BoxContentTitle: Immutable Credentials
@@ -20,12 +20,12 @@ BoxContentTitle: Immutable Credentials
 BoxImage: /assets3/images1/proof.png
 
 Feature1Image: /assets3/images1/whitelabel.png
-Feature1Title: Transfer Skills in A Tamper-proof Manner
+Feature1Title: Retain Evidence and Check Record Integrity
 Feature1Text: The virtual credentialing platform of CertifyMe assists training providers, educational institutions, and financial organizations to keep track of their documents' safety. The ‘seal of approval’ you offer to students and employees holds the power to kick-start their careers. 
 
 Feature2Image: /assets3/images1/Branding.png
-Feature2Title: The essence of Paper Certificates, the Authority of Digital Platforms
-Feature2Text: Digital certificates deliver an unparalleled and safe rebranding experience that generates revenue, increases visibility, and encourages uninterrupted learning. You can easily turn digital credentials into paper format simply by printing them.
+Feature2Title: Shareable records with issuer verification
+Feature2Text: Create branded digital certificates and manage their issuance and verification. Printing is a presentation option, not a substitute for verification.
  
 Feature3Image: /assets3/images1/secure-badge.png
 Feature3Title: An Extensive Credentialing Solution that Advocates A Compelling Brand Image

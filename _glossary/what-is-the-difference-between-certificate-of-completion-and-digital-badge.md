@@ -21,7 +21,7 @@ A certificate of completion and a digital badge serve different purposes. While 
 
 A certificate of completion is used when someone finishes an entire course, program, or required training and needs formal proof of completion. A digital badge is used to recognise a specific skill or capability and is designed to be easy to verify and share online. Simply put, certificates are best for formal completion, while badges are better for skill recognition and visibility.
 
-So, when it comes to recognizing someone for their achievement, how will you choose the right one? 
+Choose the format according to the achievement being recognised and the recipient's requirements.
 
 <br>
 

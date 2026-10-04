@@ -35,9 +35,9 @@ imageLink: /assets4/images/certificate-templates/Template 1.png
 featured: true
 ---
 
-The Forklift Truck Certificate Template for Operator Safety comes with a Green Border Design and is made for training centers and safety organizations that want a professional, trustworthy look for their certificates. The green border gives a neat and easy-to-read feel, while the template also gives a professional look because of its layout.
+This forklift truck operator safety certificate template features a green border design, suitable for training centers and safety organizations.
 
-The A4 template includes spaces for the trainee’s name, course title, completion date, trainer signature, certificate ID, and company logo. You can also add a QR code for quick verification. Using forklift truck certificate templates helps the user save time and issue consistent certificates that reflect the organization’s credibility.
+The A4 template includes fields for the trainee's name, course title, completion date, trainer signature, certificate ID and company logo. A QR code can link to verification information when configured by the issuer.
 
 <br>
 
@@ -57,12 +57,9 @@ The A4 template includes spaces for the trainee’s name, course title, completi
 
 ### Key Benefits
 
-1. **Builds professional credibility:** Demonstrates that your organization prioritizes safety and qualified operator training, strengthening trust among clients and auditors.
+1. Documents safety training for clients and auditors.
 
-1. **Encourages responsible practice:** Serves as a motivational reminder for operators to adhere to safety procedures and maintain operational discipline.
 
-1. **Adds legitimacy to training outcomes:** Employers and safety boards easily recognize this certificate as an authentic document of verified training completion.
+1. Records issuer-authorised completion details.
 
 1. **Improves record-keeping efficiency:** The structured design makes archiving and retrieval of operator certifications simpler and more organized.
-
-1. **Long-term value:** With durable formatting and a timeless design, this certificate remains valid and presentable throughout its operational validity period.

@@ -24,7 +24,7 @@ BoxImage3: assets4/images/verf5.png
 Feature1Image: assets4/images/verf4.png
 Feature1Title: Unlock A New Revenue Stream
 
-Feature1Text: When students request a transcript or certificate through our portal, a fee is applied, which is shared between your university and CertifyMe. This partnership transforms routine administrative tasks into a valuable revenue stream, benefiting both institutions and CertifyMe.
+Feature1Text: Transcript-request fees can be shared between the university and CertifyMe under the agreed service terms. Confirm pricing and responsibilities before offering the service.
 
 
 
@@ -61,11 +61,11 @@ TestimonialTitle: Our Happy Customers
 
 faqs:
   - question: "What is EduTranscript?"
-    answer: "EduTranscript is CertifyMe's digital academic transcript management system for universities and colleges. It lets institutions issue verifiable, tamper-proof digital transcripts that students can share instantly with employers, graduate schools, or credential evaluation agencies — replacing slow, expensive paper transcript processes."
+    answer: "EduTranscript maintains institution-issued academic transcript records with digital delivery and supported verification. The university retains authority over the record. Sharing, retention and recipient acceptance depend on the agreed implementation."
   - question: "How are digital transcripts verified?"
-    answer: "Each EduTranscript carries a unique verification URL and QR code. Recipients, employers, or institutions can verify the transcript's authenticity instantly — confirming issuing institution, student name, and academic record details — without contacting the university directly."
+    answer: "A verification link or QR code provides access to the record or service. Supported checks assess issuer information, protected data and applicable status using available resources. This does not independently identify the person presenting the transcript."
   - question: "Can digital transcripts replace official paper transcripts?"
-    answer: "CertifyMe's digital transcripts provide cryptographically verifiable, tamper-proof records that meet the needs of many employers and institutions. For contexts requiring officially certified paper documents (some jurisdictions or regulatory bodies), universities may still need to supplement with paper. Contact CertifyMe for guidance specific to your institution's requirements."
+    answer: "A digital transcript can support the recipient's required workflow when the format and verification method are accepted. Some contexts still require paper or additional certification. Confirm the receiving institution's and jurisdiction's requirements rather than assuming universal acceptance."
 
 seo_keywords: "digital transcript, academic transcript software, university digital transcript, verifiable transcripts, EduTranscript, online transcript management"
 ---

@@ -29,7 +29,7 @@ faqs:
   - question: "Does Credly provide external labour-market insights?"
     answer: "Yes. Its Occupation Insights page describes job and labour-market information and a vendor-stated 24/7 posting update process. Confirm current programme and geographic scope with Credly."
   - question: "Is CertifyMe's job data proof of employment outcomes?"
-    answer: "No. The owner-confirmed coverage and refresh figures describe market data. Placement, earnings or hiring impact require separate measured evidence."
+    answer: "No. CertifyMe's coverage and refresh figures describe market data. Placement, earnings or hiring impact require separate measured evidence."
   - question: "Do signed credentials independently identify applicants?"
     answer: "No. A signed subject identifier is not independent real-world identity proofing. The receiving organization needs an appropriate recipient-matching policy."
 ---
@@ -65,14 +65,14 @@ Compare volume units, billing/renewal terms, entitlement, implementation and sup
 
 Use the [university buyer journey](/credentials-higher-education) to assign responsibilities, the [credential infrastructure overview](/platform-overview) to define the lifecycle, and the [comparison hub](/compare/) to evaluate other vendors. Review [scoped anonymous implementation cases](/case-studies.html) separately: first-party results are not guaranteed outcomes for another institution.
 
-No new human reviewer or independent security verification is claimed. Existing publication attribution is retained. Verification of credential proof is not independent recipient-identity verification.
+Credential-proof verification checks the signed record; it does not independently establish the recipient's identity.
 
 ## Compare external usefulness without assuming a winner
 
 | Evaluation area | Credly | CertifyMe | Institutional test |
 |---|---|---|---|
 | External credential discovery | Published searchable network | Institutional credential/showcase positioning | Visibility settings, consent and recipient control |
-| Market context | Published Occupation Insights | Owner-confirmed dataset and job-farming scope | Same skills, region, dates and sample roles |
+| Market context | Published Occupation Insights | CertifyMe's dataset and job-farming engine | Same skills, region, dates and sample roles |
 | Achievement standards | Request current exact role/version evidence | Public OB3 issuer listing | Export into the intended receiver; inspect proof/status |
 | Connected learning records | Confirm current programme scope | Public CLR issuer/displayer roles | Source provenance, correction and recipient association |
 | Operations and security | Request current documentation | Request current documentation | Permissions, integration exceptions, audit scope and residency |
@@ -90,4 +90,4 @@ Use [skills taxonomy mapping](/skills-taxonomy-mapping) to review what a capabil
 
 CertifyMe's [1EdTech registry listing](https://site.imsglobal.org/certifications/certifyme/certifyme) confirms active OB3 Issuer and CLR 2.0 Issuer/Displayer roles. Conformance does not prove issuer authority, recipient identity or independent security assurance. Test the actual record and receiver; do not use a registry entry to infer competitors lack standards support.
 
-The CertifyMe owner confirms 20 million live jobs, 50,000 companies worldwide and refresh every two weeks, processed through its own job-farming engine. These are first-party coverage statements, not independently verified hiring outcomes. The [workforce intelligence guide](/workforce-intelligence) explains the institutional use: programme teams compare reviewed capabilities with occupational requirements and market signals. A job match is not a placement, a salary promise or proof of competence.
+CertifyMe's own job-farming engine covers 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks. These are first-party dataset figures, not independently verified hiring outcomes. The [workforce intelligence guide](/workforce-intelligence) explains how programme teams compare assessed capabilities with occupational requirements and market information. A job match does not guarantee placement or salary, or establish competence.

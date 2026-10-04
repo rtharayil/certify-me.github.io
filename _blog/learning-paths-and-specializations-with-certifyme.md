@@ -41,7 +41,7 @@ A [Comprehensive Learner Record](/comprehensive-learner-record) can connect the 
 
 ## Existing operational reference
 
-In today's fast-paced world, structured learning is key to personal and professional development. CertifyMe offers a comprehensive solution for creating and managing learning paths and specializations. This blog post will guide you through the process and explain the key concepts and features. 
+Learning paths organise a sequence of achievements. Institutions can use them to define milestones, award criteria and recognition within a programme.
 
 <br>
 
@@ -130,11 +130,9 @@ By following these guidelines, you can create effective learning paths and speci
 
 ## Conclusion
 
-In wrapping up, creating specialized learning paths with added recognitions using CertifyMe can really boost your learners' engagement, retention, and overall experience. By designing these structured, targeted educational journeys, you'll keep your students motivated and invested in their learning. 
+Review each pathway's milestones and award criteria with the responsible academic or training team. Measure participation and completion against your programme's baseline.
 
-This article has all the essential info you need to efficiently implement these strategies using our platform. Just follow the steps we’ve outlined, and we promise you, you’ll see the results you are aiming for. 
 
-CertifyMe is here to help you create the enriching learning environment that’s transformative for both you and your students.
 
 ## Plan your next step
 

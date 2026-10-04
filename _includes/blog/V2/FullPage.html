@@ -50,7 +50,7 @@
                 <div class="row" style="margin: 5px; padding: 5px">
                     {% if article.imageLink != "nil" %}
 
-                    <img src="{{article.imageLink}}" alt="{{article.title}}" style="max-width:200px;max-height:200px;">
+                    <img src="{{article.imageLink}}" alt="{{article.title | strip_html | escape}}" style="max-width:200px;max-height:200px;">
                     {% endif %}
                     <div style="padding: 10px ; text-align: left; " class="blogc">
                         {{page.content}}

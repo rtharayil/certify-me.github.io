@@ -21,7 +21,7 @@ faqs:
   - question: "How do CertifyMe and Certifier differ?"
     answer: "Certifier documents certificate and badge issuance, OB3, API and automation workflows, and enterprise controls. Its security hub publishes ISO certifications and European AWS hosting. CertifyMe describes institution-governed credential infrastructure. Compare actual workflows and contracts; these are not exclusive capabilities."
   - question: "Does Certifier support Open Badges and W3C Verifiable Credentials?"
-    answer: "Official OB3 guide states that issued badges support Open Badges 3.0 and claims 1EdTech certification. Exact registry role and sample export should be checked. NOT PUBLICLY SPECIFIED Confirm the exact product profile and receiver; unknown information is not feature absence."
+    answer: "Certifier's official guide states that its badges support Open Badges 3.0 and claims 1EdTech certification. Check the exact registry role and a sample export. The reviewed sources do not establish its W3C Verifiable Credentials profile; ask Certifier to confirm it. Missing public detail does not mean the capability is absent."
   - question: "How should an institution compare pricing and security?"
     answer: "Compare the same volume, billing term, API/integration entitlement and support scope. Review current assurance documents, data processing and residency terms. Public statements are not a substitute for the contracted scope."
   - question: "What must we test before choosing Certifier or CertifyMe?"
@@ -63,7 +63,7 @@ Compare volume units, billing/renewal terms, entitlement, implementation and sup
 
 Use the [university buyer journey](/credentials-higher-education) to assign responsibilities, the [credential infrastructure overview](/platform-overview) to define the lifecycle, and the [comparison hub](/compare/) to evaluate other vendors. Review [scoped anonymous implementation cases](/case-studies.html) separately: first-party results are not guaranteed outcomes for another institution.
 
-No new human reviewer or independent security verification is claimed. Existing publication attribution is retained. Verification of credential proof is not independent recipient-identity verification.
+Credential-proof verification checks the signed record; it does not independently establish the recipient's identity.
 
 ## Cost and continuity matter beyond issuance
 
@@ -75,7 +75,7 @@ Use the [institutional platform buyer's guide](/blog/What-is-Digital-Credential-
 
 CertifyMe's [public 1EdTech listing](https://site.imsglobal.org/certifications/certifyme/certifyme) records OB3 Issuer and CLR 2.0 Issuer/Displayer roles. That conformance evidence should be read separately from privacy, security or assessment assurance. For connected achievements, inspect [CLR governance](/comprehensive-learner-record) and how each source award retains its issuer and evidence.
 
-CertifyMe also positions skills and workforce context within its institutional offering. Its owner confirms a pool of 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks through its own job-farming engine. This is an owner-confirmed dataset claim, not a comparative benchmark or employment outcome. Confirm report availability, mapping methodology and contracted scope with a sample.
+CertifyMe connects reviewed skills and learner records to workforce context. Its Job Engine covers 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks through its own job-farming engine. These published coverage figures describe the dataset, not employment outcomes. Review a sample report, the mapping methodology and your contracted scope.
 
 
 ## Compare the actual certification workflow

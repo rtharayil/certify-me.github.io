@@ -55,7 +55,6 @@ The OSHA certificate template for Introduction to Safety Management is crafted f
 
 ### Key Benefits
 
-1. **Promotes a culture of safety:** Reinforces the importance of safety management and risk awareness at every workplace level.
 
 1. **Boosts organizational credibility:** Demonstrates that your team follows OSHA-compliant safety standards.
 

@@ -1,0 +1,25 @@
+{% if page.comparison_page %}
+<section class="comparison-sources" aria-labelledby="comparison-sources-title">
+  <h2 id="comparison-sources-title">Sources &amp; References</h2>
+  <p>Official product pages support the published capabilities in this comparison. They do not independently establish how a feature will operate in your institution. Sources checked 4 October 2026.</p>
+  <ul>
+  {% for vendor in site.data.competitor_evidence.vendors %}
+    {% if page.comparison_subject contains vendor.name or page.content contains vendor.name %}
+      {% assign used_urls = '' %}
+      {% for fact in vendor.facts %}
+        {% for source in fact.sources %}
+          {% assign url_key = source.url | prepend: '|' | append: '|' %}
+          {% unless used_urls contains url_key %}
+          <li><strong>{{ vendor.name | escape }}</strong> — <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title | remove: '**' | escape }}</a>. Supports {% case fact.dimension %}{% when 'ICP' %}the intended customer groups{% when 'API' %}API access and terms{% when 'W3C VC' %}the documented credential format{% when 'CLR' %}learner-record information{% else %}the documented {{ fact.dimension | downcase | escape }} information{% endcase %}{% unless source.publication_date == 'NOT PUBLICLY SPECIFIED' %}; published/updated {{ source.publication_date | escape }}{% endunless %}.</li>
+          {% assign used_urls = used_urls | append: url_key %}
+          {% endunless %}
+        {% endfor %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+    <li><strong>1EdTech</strong> — <a href="https://site.imsglobal.org/certifications/certifyme/certifyme" target="_blank" rel="noopener noreferrer">CertifyMe certification listing</a>. Supports the listed Open Badges 3.0 Issuer and CLR 2.0 Issuer/Displayer roles.</li>
+    <li><strong>W3C</strong> — <a href="https://www.w3.org/TR/vc-data-model-2.0/" target="_blank" rel="noopener noreferrer">Verifiable Credentials Data Model 2.0</a>. Defines the data model, not certification of a particular product.</li>
+    <li><strong>CertifyMe</strong> — <a href="/platform-overview">Institutional credential architecture</a>, <a href="/skills-taxonomy-mapping">reviewed skills mapping</a>, <a href="/comprehensive-learner-record">learner records</a> and <a href="/workforce-intelligence">Job Engine workforce intelligence</a>. These are CertifyMe's own published product descriptions and coverage figures.</li>
+  </ul>
+</section>
+{% endif %}

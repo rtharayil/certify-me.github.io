@@ -21,7 +21,6 @@ Both digital badges and traditional certificates are used to recognize achieveme
 
 This blog explores the key differences between digital badges and traditional certificates to help clarify where each approach fits best, depending on the context and requirements.
 
-This comparison is written as a simple guide for credential issuers such as universities, government bodies, training providers, and associations.
 
 <br>
 
@@ -77,14 +76,14 @@ When issued as verifiable credentials, digital badges comply with established in
     </tr>
 
     <tr>
-      <td style="border: 1px solid black;"><b>Security &amp; Tamper-Proofing</b></td>
+      <td style="border: 1px solid black;"><b>Integrity &amp; Verification</b></td>
       <td style="border: 1px solid black;">
         It can easily be altered in both physical and digital formats. For instance, the name of the 
         issuer or the recipient can be edited using software such as Photoshop.
       </td>
       <td style="border: 1px solid black;">
-        It is signed with a cryptographic signature, which changes if any unauthorized alteration is made. 
-        Hence, it is almost impossible to tamper with.
+        A cryptographic proof detects changes to protected data when verified.
+        Digital signatures do not prevent every misuse; issuer, status and identity checks remain relevant.
       </td>
     </tr>
 

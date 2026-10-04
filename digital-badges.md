@@ -1,7 +1,7 @@
 ---
 title: "Verifiable Digital Badge Software"
 
-description: "Issue verifiable digital badges that learners share on LinkedIn and 40+ platforms. CertifyMe is 1EdTech independently certified for Open Badges 3.0 — the global standard for portable, tamper-proof digital credentials."
+description: "Issue and share institution-authorised digital badges with issuer and integrity checks. CertifyMe is listed by 1EdTech as an Open Badges 3.0 Issuer."
 
 layout: V4LayoutInnerpages
 
@@ -12,7 +12,7 @@ HeroTitle: Create, Issue, and Manage Digital Badges that Retain Learners & Membe
 HeroText: Award Open Badge compliant progressive badges to motivate your learners to continue their excellent learning journey and increase audience participation.
 
 BoxContentTitle: Freedom to Customize Digital Badges to Recognize Every Achievement
-BoxContentText: Appreciate the hard work and dedication of your learners and members while also keeping your brand under the limelight by designing verifiable, white label-friendly & tamper-proof e-badges. Create micro badges from scratch or choose a design from our large collection of badge templates.
+BoxContentText: Create branded digital badges for authorised achievements. Retain the issuer, recipient, award criteria and evidence needed to interpret the badge, then support sharing and compatible verification.
 BoxImage: /assets4/images/Hero Images/Badges.png
 
 #features section

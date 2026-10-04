@@ -57,7 +57,7 @@ A QR code can be added to ensure fast online verification, helping companies mai
 
 ### Key Benefits-
 
-1. **Official recognition:** Provides employees with a polished, verifiable acknowledgment of their training completion.
+1. Provides a layout for recording training completion. The issuer must authorise the award and configure any verification information.
 
 1. **Supports compliance:** Makes it easier for companies to maintain OSHA-compliant documentation.
 

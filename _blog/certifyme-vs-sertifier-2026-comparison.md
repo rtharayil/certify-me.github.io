@@ -73,7 +73,7 @@ Compare volume units, billing/renewal terms, entitlement, implementation and sup
 
 Use the [university buyer journey](/credentials-higher-education) to assign responsibilities, the [credential infrastructure overview](/platform-overview) to define the lifecycle, and the [comparison hub](/compare/) to evaluate other vendors. Review [scoped anonymous implementation cases](/case-studies.html) separately: first-party results are not guaranteed outcomes for another institution.
 
-No new human reviewer or independent security verification is claimed. Existing publication attribution is retained. Verification of credential proof is not independent recipient-identity verification.
+Credential-proof verification checks the signed record; it does not independently establish the recipient's identity.
 
 ## A useful pilot for multi-department programmes
 
@@ -87,4 +87,4 @@ The right choice depends on tested requirements and contract scope, not an enter
 
 CertifyMe's [1EdTech listing](https://site.imsglobal.org/certifications/certifyme/certifyme) confirms active OB3 Issuer and CLR 2.0 Issuer/Displayer roles. See the [certification evidence guide](/blog/certifyme-open-badge-3-0-certified) for the boundaries. It is not a security audit and does not establish universal wallet compatibility or independent recipient identity.
 
-Its owner confirms workforce coverage of 20 million live jobs, 50,000 companies worldwide and refresh every two weeks through its own job-farming engine. These are owner-confirmed figures, not independently audited outcomes. Ask Sertifier for current workforce scope without inferring absence; compare the same skills, geography and programme evidence across reports.
+CertifyMe's own job-farming engine covers 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks. These dataset figures are not independently audited outcomes. Ask Sertifier about its current workforce offering and compare reports using the same skills, geography and programme evidence.

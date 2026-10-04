@@ -65,13 +65,13 @@ Compare volume units, billing/renewal terms, entitlement, implementation and sup
 
 Use the [university buyer journey](/credentials-higher-education) to assign responsibilities, the [credential infrastructure overview](/platform-overview) to define the lifecycle, and the [comparison hub](/compare/) to evaluate other vendors. Review [scoped anonymous implementation cases](/case-studies.html) separately: first-party results are not guaranteed outcomes for another institution.
 
-No new human reviewer or independent security verification is claimed. Existing publication attribution is retained. Verification of credential proof is not independent recipient-identity verification.
+Credential-proof verification checks the signed record; it does not independently establish the recipient's identity.
 
 ## Test records rather than slogans
 
 Request the same authorized sample from both vendors: an official award where applicable, an assessed badge and a connected record. Check export into the actual receiver; correct an error and inspect status. Confirm who maintains issuer keys, status resources and evidence access after migration. Compare current fees, support, integration obligations, administrator controls and scoped security documents.
 
-For CertifyMe workforce context, the owner confirms 20 million live jobs from 50,000 companies, refreshed every two weeks. This is first-party coverage, not proof of graduate placement or comparative superiority. Use the [university credential guide](/credentials-higher-education) to align buyer roles, and [request a university workflow demonstration](https://info.certifyme.online/request-demo) against your existing record responsibilities.
+CertifyMe's workforce dataset covers 20 million live jobs from 50,000 companies, refreshed every two weeks. These first-party coverage figures do not measure graduate placement or establish comparative superiority. Use the [university credential guide](/credentials-higher-education) to plan responsibilities across your teams, and [request a university workflow demonstration](https://info.certifyme.online/request-demo) against your existing record processes.
 
 ## When one platform—or two—may make sense
 
@@ -88,6 +88,6 @@ An institution might retain an established official-transcript workflow while pi
 | Certificates and badges | Published certificates and badge offerings | Published institutional credential offering; OB3 issuer listed | Award formats, branding, criteria and proof |
 | Connected records | Published CLR offering | CLR 2.0 Issuer/Displayer registry roles | Exact product/version, export, provenance and receiver |
 | Student progression | Published student pathways | Institutional pathway positioning | Progression rules and assessed requirements |
-| Workforce relevance | Published workforce offering | Owner-confirmed market data scope | Geography, mapping, report availability and data methodology |
+| Workforce relevance | Published workforce offering | CertifyMe's market-data coverage | Geography, mapping, report availability and data methodology |
 
 CertifyMe's [public registry](https://site.imsglobal.org/certifications/certifyme/certifyme) supports its specified OB3 and CLR conformance roles. It does not independently establish all contracted product features or privacy/security assurance. Look up the precise Parchment product, version and role rather than assuming that a broad brand corresponds to one certification scope.

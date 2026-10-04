@@ -25,7 +25,7 @@
 
                         <!-- BLOG POST IMAGE -->
                         <div class="blog-post-img mb-35">
-                            <img class="img-fluid r-16" src="{{ article.imageLink }}" alt="{{ article.title }}">
+                            <img class="img-fluid r-16" src="{{ article.imageLink }}" alt="{{ article.title | strip_html | escape }}">
                         </div>
 
                         <!-- BLOG POST TEXT -->

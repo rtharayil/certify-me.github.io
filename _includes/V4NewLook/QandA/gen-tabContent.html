@@ -15,7 +15,8 @@
                             </div>
                             <!-- Answers -->
                             <div class="accordion-panel color--grey">
-                                {{ Tab-1.A }}
+                                {% assign video_label = 'Video guide: ' | append: Tab-1.Q | escape %}
+                                {{ Tab-1.A | replace: 'Click here for Video Demonstration', video_label }}
                             </div>
                         </li>
                         {% endfor %}
@@ -34,7 +35,8 @@
                             </div>
                             <!-- Answers -->
                             <div class="accordion-panel color--grey">
-                                {{ Tab-2.A }}
+                                {% assign video_label = 'Video guide: ' | append: Tab-2.Q | escape %}
+                                {{ Tab-2.A | replace: 'Click here for Video Demonstration', video_label }}
                             </div>
                         </li>
                         {% endfor %}
@@ -57,7 +59,8 @@
                             </div>
                             <!-- Answers -->
                             <div class="accordion-panel color--grey">
-                                {{ Tab-3.A }}
+                                {% assign video_label = 'Video guide: ' | append: Tab-3.Q | escape %}
+                                {{ Tab-3.A | replace: 'Click here for Video Demonstration', video_label }}
                             </div>
                         </li>
                         {% endfor %}
@@ -80,7 +83,8 @@
                             </div>
                             <!-- Answers -->
                             <div class="accordion-panel color--grey">
-                                {{ Tab-4.A }}
+                                {% assign video_label = 'Video guide: ' | append: Tab-4.Q | escape %}
+                                {{ Tab-4.A | replace: 'Click here for Video Demonstration', video_label }}
                             </div>
                         </li>
                         {% endfor %}
@@ -104,7 +108,8 @@
                             </div>
                             <!-- Answers -->
                             <div class="accordion-panel color--grey">
-                                {{ Tab-5.A }}
+                                {% assign video_label = 'Video guide: ' | append: Tab-5.Q | escape %}
+                                {{ Tab-5.A | replace: 'Click here for Video Demonstration', video_label }}
                             </div>
                         </li>
                         {% endfor %}
@@ -123,7 +128,8 @@
                             </div>
                             <!-- Answers -->
                             <div class="accordion-panel color--grey">
-                                {{ Tab-6.A }}
+                                {% assign video_label = 'Video guide: ' | append: Tab-6.Q | escape %}
+                                {{ Tab-6.A | replace: 'Click here for Video Demonstration', video_label }}
                             </div>
                         </li>
                         {% endfor %}
@@ -147,7 +153,8 @@
                             </div>
                             <!-- Answers -->
                             <div class="accordion-panel color--grey">
-                                {{ Tab-7.A }}
+                                {% assign video_label = 'Video guide: ' | append: Tab-7.Q | escape %}
+                                {{ Tab-7.A | replace: 'Click here for Video Demonstration', video_label }}
                             </div>
                         </li>
                         {% endfor %}
@@ -167,7 +174,8 @@
                             </div>
                             <!-- Answers -->
                             <div class="accordion-panel color--grey">
-                                {{ Tab-8.A }}
+                                {% assign video_label = 'Video guide: ' | append: Tab-8.Q | escape %}
+                                {{ Tab-8.A | replace: 'Click here for Video Demonstration', video_label }}
                             </div>
                         </li>
                         {% endfor %}

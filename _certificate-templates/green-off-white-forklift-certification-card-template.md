@@ -43,7 +43,7 @@ Tailored for forklift academies, training centers, and safety compliance organiz
 
 ### Why Choose CertifyMe’s Forklift Template?
 
-1. **Elegant industrial aesthetic:** The combination of soft green accents and off-white tones adds an element of trust and calm professionalism, suitable for both academic and industrial certification needs.
+1. Features green and off-white design elements, suitable for academic and industrial certifications.
 
 1. **Fully compliant structure:** Developed to align with safety certification protocols, ensuring consistency and validity across issued documents.
 
@@ -62,5 +62,3 @@ Tailored for forklift academies, training centers, and safety compliance organiz
 1. **Strengthens organizational credibility:** Reflects a culture of responsibility and operational excellence in training practices.
 
 1. **Simplifies administrative management:** Enables quick customization and distribution for large trainee batches without quality loss.
-
-1. **Projects sustainability and trust:** The green-themed aesthetic subtly conveys safety awareness, growth, and environmental consciousness.

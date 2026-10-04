@@ -2,19 +2,19 @@
   A: |
     <ol>
         <li>
-            <p>Visit the <a href='https://www.certifyme.online/' target='_blank'>Home Page</a> of the CertifyMe website
-                <a href='https://www.certifyme.online/' target='_blank'>here</a>.
+            <p>Use your institution's assigned sign-up route or the
+                <a href='https://credential.certifyme.online/auth/register/' target='_blank' rel='noopener noreferrer'>registration page</a>.
             </p>
         </li>
         <li>
-            <p>Click on the <a href='https://apac.platform.certifyme.org/auth/pre-register/nav@certifyme.onlone' target='_blank'>'Try for Free'</a> button located at the top right side of the page.
+            <p>If your organisation manages account access, ask its administrator
+                whether you need an invitation.
             </p>
         </li>
         <li>
             <p>You will be directed to the Sign Up or account creation page.
-                Fill in the required information (only your business email
-                address) and press the Signup button.<br><i>[Note: Don’t miss
-                'I am not a robot' button]</i>
+                Follow the displayed requirements for your work account. Complete the
+                “I am not a robot” check if it is shown.
             </p>
         </li>
         <li>
@@ -48,10 +48,11 @@
 
 - Q: I can’t activate my CertifyMe account.
   A: |
-    <p>We ensure a safe and secure credentialing process for our clients.
-        There’s almost no chance for such mishaps. If you face any concerns
-        with CertifyMe account activation, get in touch with our customer
-        support team for assistance at <a href="https://info.certifyme.online/talk-with-expert" target='_blank'>info@certifyme.online</a>.
+    <p>Check the institution's assigned login route and any invitation or confirmation email,
+        including the spam folder. If access is organisation-managed, ask the administrator
+        to confirm your access. If the issue persists, describe the error and
+        <a href="https://info.certifyme.online/talk-with-expert" target='_blank' rel="noopener noreferrer">contact the CertifyMe team</a>.
+        Do not include passwords or sensitive recipient data.
     </p>
 
 - Q: How to reset your password on CertifyMe?
@@ -120,7 +121,7 @@
     same is intimated to the customers as part of regular updates."
 
 - Q: Can CertifyMe be accessed from multiple devices simultaneously?
-  A: "Yes, CertifyMe can be accessed from multiple devices simultaneously. You can log in to your account from different computers, tablets, or smartphones at the same time, providing flexibility and ease of access."
+  A: "Use approved devices with your own account. Concurrent access depends on the institution's session, SSO and security configuration. Follow its access policy and do not share administrator credentials."
 
 - Q: Is CertifyMe GDPR compliant and holds the required ISO certifications?
-  A: "CertifyMe's commitment to data security and privacy is highlighted on our official website and within our compliance documentation. CertifyMe is GDPR compliant and holds the necessary ISO certifications, which are prominently mentioned in our data protection policy and compliance section. This ensures that our clients are aware of our adherence to stringent data protection standards."
+  A: "CertifyMe publishes security and privacy assurance information on its security page. Review the current certificate scopes, applicable data-processing terms and controls for your institution. A management-system certificate does not establish every GDPR obligation or every regulator's required controls."

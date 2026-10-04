@@ -35,7 +35,7 @@ imageLink: /assets4/images/certificate-templates/Six Sigma 10.png
 featured: true
 ---
 
-Celebrate foundational Six Sigma Certificate sample knowledge with this Yellow Belt certificate sample. Ideal for skill-building programs, corporate learning departments, and training academies, this template highlights completion of essential Lean and Six Sigma concepts.
+Use this Yellow Belt certificate sample to recognise completion of a foundational Lean and Six Sigma programme. Training providers and corporate learning teams can customise the layout for their own approved award. A template does not independently establish a participant's competence or the issuer's accreditation.
 
 The certificate includes dedicated fields for the participant’s name, Yellow Belt level, training program title, completion date, authorizing signature, organization name or logo, certificate number, and an optional space for QR-based verification. The layout ensures a clear, professional, and credible presentation suitable for both print and digital use.
 

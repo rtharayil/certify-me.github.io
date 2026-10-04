@@ -3,6 +3,12 @@ name: Source-grounded AI evidence
 description: Separate generated answer confidence, source fidelity and public AI-citation evidence.
 ---
 
+Page-level scores do not establish claim-level support or complete review coverage. Match returned URLs and claims to the exact inputs; keep raw judgments and explicit editorial adjudications separate.
+
+**Why:** Readability/source reviews omitted claims, invented quotations and treated necessary evidence qualifications as defects.
+
+**How to apply:** Check high-risk statements against primary material, reject invented evidence and distinguish actual reader failures from optional wording or flattened hidden-tab content.
+
 Do not accept a model's “SUPPORTED” label or an apparently exact quotation as evidence without source checking and semantic review.
 
 **Why:** A source-conditioned acceptance run returned confident labels for all answers, but some quotations were paraphrased or stitched and some answers omitted required qualifications.

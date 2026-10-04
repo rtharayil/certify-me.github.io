@@ -12,10 +12,10 @@ talkToOurExpertLink: "https://info.certifyme.online/talk-with-expert"
 
 HeroImg: 
 HeroTitle: Award Verifiable Credentials to add Value to your Learning Programs
-HeroText: A foolproof digital certification tool, CertifyMe is replacing physical credentials to streamline the credentialing system.  
+HeroText: CertifyMe supports digital certificate issuance and management for educational institutions.
  
 BoxContentTitle: A Reliable Credentialing Partner to Boost Education Program Success
-BoxContentText: Offer tangible, portable, and safe digital certificates to instantly lift your program value. Give them solid proof of their achievements that are socially shareable and interactive.<br> Let students enjoy the freedom of showcasing their skills and knowledge on social media platforms, professional networking sites, and personal websites. A collaboration with CertifyMe not only boosts students' confidence but also brings issuing institutes under the limelight.
+BoxContentText: Give students a shareable record of their achievements. Include the issuer, award criteria and verification information so recipients can understand the credential.
 BoxImage: /assets4/images/Hero Images/Higher Education.png
 
 Feature1Image: /assets3/Image3/1.png
@@ -34,7 +34,7 @@ Feature3Text: Micro-credentials are changing the spectrum of credentialing and u
 
 Feature4Image: /assets3/Image3/4.png
 Feature4Title: Reduced Manual Labour to Issue and Deliver Report Cards
-Feature4Text: Eliminate the manual effort and automate awarding of report cards by onboarding CertifyMe. A collaboration with us provides your students with real-time analytics on student performance. A verifiable digital report card allows them to stay informed about their progress and allows institutions to be updated with valuable insights into student engagement. It promotes transparency in the credentialing process and makes students job-ready. 
+Feature4Text: Digital report cards can record student results and support authorised sharing. Institutions remain responsible for grades, access permissions and corrections; a report card alone does not establish job readiness.
 
 
 

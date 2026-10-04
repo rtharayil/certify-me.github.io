@@ -32,3 +32,35 @@ h2.statistic-number {
 #footer-3 .bottom-footer a {
   font-size: 14px !important;
 }
+
+/* Editorial tables retain their content without clipping on narrow screens. */
+.editorial-table-scroll {
+  max-width: 100%;
+  width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1rem;
+}
+.editorial-table-scroll:focus-visible {
+  outline: 2px solid #342b78;
+  outline-offset: 3px;
+}
+.editorial-table-scroll table {
+  width: 100%;
+  min-width: 480px;
+}
+.editorial-table-hint { display: none; }
+@media (max-width: 767px) {
+  .stm-table th,
+  .stm-table td {
+    font-size: 14px !important;
+    line-height: 1.6;
+  }
+  .editorial-table-hint {
+    display: block;
+    margin-top: -.5rem;
+    font-size: 14px;
+    color: #615b75;
+  }
+}

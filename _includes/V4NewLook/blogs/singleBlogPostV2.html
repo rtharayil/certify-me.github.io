@@ -756,7 +756,7 @@ so the section is never empty.
                                     {% endif %}
                                     {% if page.content_authority_p0 or page.content_authority_p1 %}
                                     {% if page.last_modified %}
-                                    <p class="small mb-0">Editorial content updated {{ page.last_modified | date: "%-d %B %Y" }}.</p>
+                                    <p class="small mb-0">Updated {{ page.last_modified | date: "%-d %B %Y" }}</p>
                                     {% endif %}
                                     {% endif %}
 
@@ -767,7 +767,7 @@ so the section is never empty.
                             <!-- HERO IMAGE -->
                             <div class="col-md-6">
                                 <div class="blog-hero-img-wrap">
-                                    <img src="{{page.imageLink}}" alt="{{page.title}}">
+                                    <img src="{{page.imageLink}}" alt="{{page.title | strip_html | escape}}">
                                 </div>
                             </div>
 
@@ -855,6 +855,7 @@ so the section is never empty.
                     {% if page.faqs and page.faqs.size > 0 %}
                     {% include V4NewLook/blogs/_faq.html faqs=page.faqs %}
                     {% endif %}
+                    {% include V4NewLook/comparison-sources.html %}
 
                 </div>
             </div>

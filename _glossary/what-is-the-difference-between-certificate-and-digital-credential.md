@@ -60,7 +60,7 @@ That difference matters most when accuracy, trust, and public visibility are imp
 
 Although certificates and digital credentials both recognize achievement, they behave very differently in practice.
 
-The table below highlights the distinctions that matter most to learners and issuers. It focuses on factual differences without adding any unnecessary explanation, so you can see clearly what each format does and doesn’t offer.
+Compare the formats below against your verification, sharing and record-management requirements.
 
 <br>
 
@@ -185,7 +185,7 @@ Digital credentials are more suitable when the achievement needs to be trusted b
 
 ## The Best Way to Understand the Difference
 
-Reading about the difference helps, but seeing a digital credential makes it much clearer. You can explore a [sample digital credential](https://app.certifyme.online/verify/9cf66b9d10644) on the CertifyMe website to get a sense of what it looks like, how verification works, and what learners experience.
+Explore a [sample digital credential](https://app.certifyme.online/verify/9cf66b9d10644) to see the issuer, award details and verification information.
 
 If you want a hands-on feel, you can also [create a free account on CertifyMe](https://apac.platform.certifyme.org/auth/pre-register/nav@certifyme.online) and issue a test credential to yourself. This lets you see the workflow from the issuer’s side and the learner’s side.
 

@@ -19,7 +19,6 @@ featured: true
 
 A digital credential is tamper-evident when any change made to it after issuance is immediately detectable during verification. Six things work together to make this possible: cryptographic signatures, hashing, optional blockchain anchoring, independent verification methods, open standards compliance, and secure lifecycle controls. 
 
-This article explains how each one contributes and why all six matter.
 
 <br>
 
@@ -181,4 +180,4 @@ No single component alone makes a credential fully tamper-evident. The table bel
 
 [CertifyMe](https://www.certifyme.online/) applies cryptographic signatures and hashing to every issued credential, supports multiple verification methods including QR code, unique ID, and PDF upload, and complies with W3C Verifiable Credentials and Open Badges standards. Role-based access controls and revocation management are built into the platform. 
 
-There's a free plan available if you want to test how verification works before rolling out at scale.
+Use a pilot to test verification and recipient access before a wider rollout.

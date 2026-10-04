@@ -11,7 +11,7 @@ talktoexpertlink: "https://info.certifyme.online/talk-with-expert"
 talkToOurExpertLink: "https://info.certifyme.online/talk-with-expert"
 
 HeroImg: 
-HeroTitle: Prevent Accounts Forgery:Safeguard 
+HeroTitle: How can financial teams verify issued records?
 Hero2Msg: Your Brand And Trust
 HeroText: Issue verifiable bank statements, insurance credentials, and invoices for digitally evolved finance duties.
 
@@ -24,7 +24,7 @@ Feature1Text: Ensure streamlined management of bank statements via our digital c
 
 Feature2Image: /assets3/Image3/11.png
 Feature2Title: Cryptographically Secure Insurance Documents for Peer-to-Peer Connection
-Feature2Text:  Our trusted digital credential management tool makes credential/financial statement creation, issuing, and management effortless. Using the streamlined software of CertifyMe, you can store critical, confidential information on a decentralized platform for quick access without compromising document safety. The simple documentation tool holds immense power when payment or statement verification is concerned. The issuing institution can instantly track the details of people accessing statements/credentials. The bank-level encryption of our documents makes them ideal for official interaction. 
+Feature2Text: Create and maintain issuer-managed credential records with clear recipient information, evidence and verification context. A signed record supports integrity checks; it does not prevent every form of forgery or independently verify a person's identity. For financial documents, agree the supported record type, access controls, encryption, retention and regulatory responsibilities before implementation.
 
 Feature3Image: /assets3/Image3/12.png
 Feature3Title: Low-Risk, Traceable Invoices for Bank Employees and Customers
@@ -38,7 +38,7 @@ seo_keywords: "digital credentials for banking, finance sector certificates, fin
 
 faqs:
   - question: "How do financial institutions use digital credentials?"
-    answer: "Banks, insurance firms, and financial services organisations use digital credentials to certify regulatory compliance training, professional development completions, and internal certification programmes. Digital credentials provide auditable, tamper-proof records of employee training — supporting regulatory examination and reducing compliance documentation overhead."
+    answer: "Financial institutions use credentials to record authorised training achievements and internal certifications. Signed records support integrity checks and an evidence trail. Whether a record satisfies a regulator's documentation requirements depends on the programme, jurisdiction and agreed controls."
   - question: "Are CertifyMe credentials suitable for compliance certification in financial services?"
-    answer: "Yes. CertifyMe's cryptographically signed credentials provide verifiable, tamper-proof records suitable for compliance documentation. The platform is ISO 27001 certified and GDPR compliant — meeting enterprise security standards required by financial institutions."
+    answer: "CertifyMe supports issuer-managed, cryptographically verifiable credential records. Review the scoped security and privacy information, assessment evidence and regulatory requirements before using a record for financial-services compliance. A management-system certificate does not establish every control required by a financial institution."
 ---

@@ -17,11 +17,11 @@ featured: true
 
 ---
 
-Are you thinking of digitizing your credential issuance system but have no clue how to create and share one? Well, then you are in the right place. 
+This guide covers preparing, issuing and sharing digital credentials with students.
 
-Shifting from traditional certificates to digital credentials is not a tech-heavy implementation, at least if you choose a platform like CertifyMe. Creating white-labeled digital credentials is a simple step-by-step procedure once you set up your account with us.
+Plan the rollout around templates, award approvals, recipient data and delivery. Technical requirements depend on your systems and selected integration.
 
-Not only this, but sharing a digital credential with students is easy too. So, stay with us throughout this blog to create your first digital credential with CertifyMe.
+After issuance, explain how students can access and share their credentials.
 
 <br>
 

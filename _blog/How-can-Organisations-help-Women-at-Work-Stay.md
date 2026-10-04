@@ -12,13 +12,13 @@ featured: true
 seo_keywords: "supporting women at work, digital credentials for career re-entry, gender diversity in workforce, reskilling women in tech, inclusive workplace strategies"
 faqs:
   - question: "Why are so many talented women leaving their jobs?"
-    answer: "It's rarely about a lack of ambition. In my experience, it's usually the 'slow burn' of being overlooked or not having enough flexibility. When a system feels like it was built for someone else, it’s hard to want to stay in it forever."
+    answer: "Review progression, recognition, workload and flexibility using employee feedback. Retention challenges vary by organisation and role."
   - question: "How do digital credentials help women after a career break?"
-    answer: "They're a huge confidence booster. I've seen women use them to prove their skills are current, even if they've been away for a while. It’s a way to let the work speak for itself without having to over-explain a gap on a resume."
+    answer: "Digital credentials can help returning employees present recent assessed achievements. Employers still need to consider the evidence and role requirements."
   - question: "What's the 'skills confidence gap'?"
     answer: "It's that feeling of being 'left out of the loop' when tech or trends move fast. Most women aren't falling behind because they aren't capable—they just don't always get the same access to training. Verified credentials help bridge that by giving them a clear way to show what they know."
   - question: "Can flexibility really improve retention?"
-    answer: "Honestly, it's survival for many. I've seen great people walk away just because meetings were always scheduled during daycare hours. When you trust people to manage their own time, they're much more likely to stick around and do their best work."
+    answer: "Flexible scheduling can support employees with caring responsibilities. Set clear role requirements and assess retention using the organisation's own data."
 ---
 
 It’s not that women don’t want to stay at work—it’s that something keeps pushing them out.
@@ -95,7 +95,7 @@ Let’s talk about something a little newer: digital credentials.
 
 No, we’re not talking about a badge for showing up to a webinar. We’re talking about verified, skill-based records that prove what you actually know.
 
-Think of them like modern-day Girl Scout badges—but for your career.
+Digital credentials can document a specific achievement, with the award criteria and supporting evidence defined by the issuer.
 
 So, why do digital credentials matter for women at work?
 

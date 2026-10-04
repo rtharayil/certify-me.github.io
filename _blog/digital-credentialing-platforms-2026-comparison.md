@@ -56,7 +56,7 @@ None of these use cases is a sufficient reason to declare a vendor universally b
 
 ## Workforce data is not graduate-outcome evidence
 
-Credly publicly describes external occupation insights and vendor-stated 24/7 job-posting updates. CertifyMe's owner confirms 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks through its own job-farming engine. These are differently scoped first-party statements, not independently comparable benchmarks. Test relevance, freshness and geographic coverage on the same programme. Neither a job match nor a salary band proves a learner obtained employment.
+Credly describes external occupation insights and 24/7 job-posting updates. CertifyMe's own job-farming engine covers 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks. These first-party statements describe different datasets and update processes, not independently comparable benchmarks. Test relevance, freshness and geographic coverage against the same programme. A job match or salary band does not show that a learner obtained employment.
 
 ## Keep broad and focused comparisons distinct
 

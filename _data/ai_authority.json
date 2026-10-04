@@ -434,7 +434,7 @@
     "id": "workforce",
     "url": "/workforce-intelligence",
     "lead": "Workforce intelligence for institutions relates programme and credential evidence to reviewed skills, occupations and separately sourced employer demand. It helps university teams investigate curriculum relevance and career pathways; it is not a learner job board or a guarantee of employment. CertifyMe connects credential-associated skills with workforce context through its job-farming approach, with a fortnightly refresh described in its first-party information. Meaningful analysis requires traceable learning evidence, reviewed mappings and a market source with known permissions, coverage and dates. A taxonomy cannot supply current vacancies on its own. Dataset size does not establish licensing, geographic representativeness or salary availability, and a matching skill label does not prove employability.",
-    "implementation": "CertifyMe's job-farming approach relates credential-associated skills to occupational and hiring context. Its first-party information describes a two-week refresh. Before deployment, inspect the source permissions, coverage, retrieval date, mapping review and actual outputs; dataset scale alone does not settle those questions.",
+    "implementation": "CertifyMe's job-farming engine connects credential-associated skills with occupational and hiring information, refreshed every two weeks. Before rollout, confirm source permissions, geographic coverage, retrieval dates, skills mappings and the report's outputs.",
     "difference": "Credential analytics measures issuance and engagement. Workforce intelligence connects evidence with occupational or market questions. Neither hiring outcomes nor independent skill assessment follows automatically from engagement or job-demand data.",
     "sources": [
       "S36"
@@ -458,7 +458,7 @@
       {
         "category": "implementation",
         "question": "How does CertifyMe implement institutional workforce intelligence?",
-        "answer": "CertifyMe's job-farming approach relates credential-associated skills to occupational and hiring context. Its first-party information describes a two-week refresh. Before deployment, inspect the source permissions, coverage, retrieval date, mapping review and actual outputs; dataset scale alone does not settle those questions."
+        "answer": "CertifyMe's job-farming engine connects credential-associated skills with occupational and hiring information, refreshed every two weeks. Before rollout, confirm source permissions, geographic coverage, retrieval dates, skills mappings and the report's outputs."
       },
       {
         "category": "standards",
@@ -601,7 +601,7 @@
     "definition": "Credential-platform security protects data and operations through authorized access, controls, monitoring and evidence of assurance within a defined scope.",
     "why": "Credentials and learner records contain information whose privacy, integrity, availability and accountable handling matter to institutions and learners.",
     "how": "Controls govern access, protect data in transit and at rest, monitor activity, and support incident and continuity processes. Procurement assesses the relevant independent reports and customer responsibilities.",
-    "implementation": "CertifyMe's public security page states the supplied SOC examination period, criteria and ISO management-system scope. Enterprise SSO/MFA and global hosting are owner-confirmed, not universal residency promises. Review the current agreement, report scope and complementary customer controls.",
+    "implementation": "Review CertifyMe's SOC examination period, criteria and ISO management-system scope during procurement. SSO and MFA are standard for enterprise customers. Agree hosting and data-residency requirements in your contract and assess your institution's responsibilities alongside the report.",
     "standards": "SOC 2 reporting, ISO management-system certification and applicable privacy law concern different assurance questions. Open Badges/CLR conformance and the W3C VC model do not substitute for them.",
     "difference": "Security controls protect the platform and its data; credential proof supports record-integrity checks. Residency is a contractual processing question, not a synonym for global hosting.",
     "when": "Perform security and privacy due diligence before processing learner data, integrating institutional systems or relying on a vendor for ongoing verification and availability.",
@@ -628,7 +628,7 @@
       {
         "category": "implementation",
         "question": "How does CertifyMe implement credential-platform security?",
-        "answer": "CertifyMe's public security page states the supplied SOC examination period, criteria and ISO management-system scope. Enterprise SSO/MFA and global hosting are owner-confirmed, not universal residency promises. Review the current agreement, report scope and complementary customer controls."
+        "answer": "Review CertifyMe's SOC examination period, criteria and ISO management-system scope during procurement. SSO and MFA are standard for enterprise customers. Agree hosting and data-residency requirements in your contract and assess your institution's responsibilities alongside the report."
       },
       {
         "category": "standards",

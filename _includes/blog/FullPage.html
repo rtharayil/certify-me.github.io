@@ -19,7 +19,7 @@
                     <div class="line m-auto"></div>
 
                     <div class="service-box1">
-                        <img src="{{page.imageLink}}" alt="{{page.title}}" style="width:100%">
+                        <img src="{{page.imageLink}}" alt="{{page.title | strip_html | escape}}" style="width:100%">
                     </div>
 
 
@@ -38,7 +38,7 @@
                                 <div class="row" style="margin: 5px; padding: 5px">
                                     {% if article.imageLink != "nil" %}
 
-                                    <img src="{{article.imageLink}}" alt="{{article.title}}"
+                                    <img src="{{article.imageLink}}" alt="{{article.title | strip_html | escape}}"
                                         style="max-width:200px;max-height:200px;">
                                     {% endif %}
                                     <div style="padding: 10px ; text-align: left; " class="blogc">
@@ -97,7 +97,7 @@
 
                                         <div class="col-lg-3 col-md-12 col-sm-12 " style="margin-right: 5px;">
 
-                                            <img src="{{article.imageLink}}" alt="{{article.title}}"
+                                            <img src="{{article.imageLink}}" alt="{{article.title | strip_html | escape}}"
                                                 style="width:auto;max-height:70px;"> </img>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-sm-12">

@@ -13,11 +13,11 @@ featured: true
 seo_keywords: "LinkedIn professional recognition, add badges to LinkedIn, career growth digital badges, LinkedIn certifications, professional credibility"
 faqs:
   - question: "How much does a badge really help my profile?"
-    answer: "Quite a bit, actually. Recruiters use these to quickly scan for specific skills. In my experience, having a 'verified' badge looks way more credible than just listing a skill in the text section of your profile."
+    answer: "Recruiters can inspect the issuer, award criteria and verification information. Acceptance depends on the employer and the role."
   - question: "Is it a pain to add certificates to LinkedIn?"
     answer: "It used to be, but if you're using CertifyMe, it's just a couple of clicks. You go to the verification page of your badge and hit 'Share on LinkedIn.' We handle the details so you don't have to type everything in manually."
   - question: "What if my badge doesn't have an expiration date?"
-    answer: "No worries! When you're adding it, there's a simple checkbox that says 'This credential does not expire.' I recommend checking that for things like foundational skills that don't really go out of date."
+    answer: "Use the expiry date specified by the issuer. Select the no-expiry option only when the issued credential has no expiry date; do not override an expiry because a skill seems permanent."
   - question: "Can I add badges from old courses I finished?"
     answer: "Definitely. As long as you have the details like the issuer and the date, you can add them. It's a great way to fill out your 'Licenses & Certifications' section and show your commitment to lifelong learning."
 ---
@@ -141,8 +141,7 @@ From the CertifyMe platform, you can directly add badges or certificates to your
 
 ## Conclusion
 
-Harnessing the potential of LinkedIn digital badges can transform your professional presence, making your profile more attractive to potential employers and industry peers. These badges not only showcase your achievements but also enhance your credibility and help you stand out in a competitive market.
+Recipients can add digital badges to LinkedIn to show achievements. The badge should identify the issuer and explain the award criteria.
 
-Imagine the impact of having a LinkedIn profile that visually communicates your dedication to continuous learning and professional development. Whether you've completed online courses, earned prestigious certifications, achieved significant milestones, or actively participated in industry events, these badges tell a compelling story about your career journey.
 
-Now that you know how to add these badges, it's time to take action. Follow our step-by-step guide and start adding your hard-earned digital badges to your LinkedIn profile. Don't let your accomplishments go unnoticed.Your future self will thank you for taking this proactive step in enhancing your career prospects.
+Follow the steps above to add a badge to LinkedIn. Check that its title, issuer and verification link are accurate.

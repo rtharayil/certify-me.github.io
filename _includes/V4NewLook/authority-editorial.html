@@ -14,9 +14,9 @@
   <h3>Use cases and an illustrative example</h3>
   <p>{{ authority_review.use_case | escape }}</p>
   <p>{{ authority_review.example | escape }}</p>
-  <h3>Limitations and evidence boundaries</h3>
+   <h3>What to confirm before implementation</h3>
   <p>{{ authority_review.limitation | escape }}</p>
-  <p>For first-party implementation evidence, review the <a href="/case-studies.html">anonymous institutional cases</a>. Their approved issuance, adoption and engagement measures describe specific programmes, not a guarantee of the same result elsewhere. Read the <a href="/security/">documented assurance and contractual residency scope</a> separately from a standards claim.</p>
+   <p>See how institutions have used CertifyMe in the <a href="/case-studies.html">customer case studies</a>. Results vary by programme. Review <a href="/security/">security, privacy and hosting requirements</a> alongside the credential standards your institution needs.</p>
   <h3>Related implementation reading</h3>
   <ul>
     {% for reading in authority_review.reading %}
@@ -29,7 +29,6 @@
   {% for faq in authority_review.faq %}
   <details class="mb-3"><summary>{{ faq.question | escape }}</summary><p class="mt-2">{{ faq.answer | escape }}</p></details>
   {% endfor %}
-  <p class="small">Editorial content updated 4 October 2026.</p>
   <a class="btn r-04 btn--theme hover--black" href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer">Discuss your programme requirements</a>
 </section>
 {% endif %}

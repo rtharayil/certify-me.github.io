@@ -13,7 +13,7 @@ featured: true
 seo_keywords: "CNA certificate templates, nursing assistant certificate maker, healthcare training certificates, editable CNA templates, printable nursing certificates"
 faqs:
   - question: "Why does the design of a CNA certificate even matter?"
-    answer: "You'd be surprised how much weight a professional-looking certificate carries. I've heard from HR managers that a clean, institutional design just feels more 'legit' when they're reviewing applications in a hurry."
+    answer: "A clear design helps a reader find the award details. Recognition depends on the issuer, assessment and qualification requirements, not the appearance of the certificate."
   - question: "Do these templates meet state regulatory standards?"
     answer: "We've designed them with the standard fields like training hours and certificate IDs in mind. Of course, you should always check your specific state's rules, but these cover the essential bases for most programs."
   - question: "Can I add my own hospital or school logo?"

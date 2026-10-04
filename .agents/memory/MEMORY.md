@@ -24,3 +24,4 @@
 - [Jekyll JSON Unicode](jekyll-json-unicode.md) — escaped emoji surrogate pairs are valid JSON but fail this site's YAML-backed data loader; emit literal UTF-8.
 - [Performance proof boundaries](performance-proof-boundaries.md) — canonical hosting and Replit deployment can behave differently; local timings and lab input are not field CWV.
 - [AI evidence boundaries](ai-evidence-boundaries.md) — validate generated quotations and answer scope; supplied-corpus tests do not establish public AI citations.
+- [Reader-copy boundaries](reader-copy-boundaries.md) — keep editorial taxonomy and approvals out of public copy; check shared text and never invent first-person experience.

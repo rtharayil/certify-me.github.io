@@ -14,7 +14,7 @@ faqs:
   - question: "Can I use these for official CPR or First Aid training?"
     answer: "Yes, they're perfect for that. We've included all the spots you need for trainer signatures and dates. Just make sure you're following the official curriculum requirements while you're at it!"
   - question: "What's the best way to handle certificate verification?"
-    answer: "I always suggest using QR codes. It's so much faster for an employer to just scan a code than to try and track down a paper record. It builds a lot of trust in the certification."
+    answer: "A QR code can direct a verifier to the issuer's record. Check the award, issuer and current status; a template or QR code does not establish Red Cross endorsement."
   - question: "Are these templates okay for volunteer recognition too?"
     answer: "Absolutely. Not every certificate has to be for a course. Giving a volunteer a professional-looking 'Appreciation' certificate is a small gesture that really means a lot to people who give their time."
   - question: "Do I need special software to edit these?"

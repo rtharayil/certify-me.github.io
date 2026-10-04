@@ -47,7 +47,7 @@ Learners can use assessed achievements to explain capabilities and investigate o
 
 ## Use documented evidence with its boundaries
 
-The [anonymous case-study hub](/case-studies.html) includes owner-approved issuance, adoption and engagement outcomes. They describe particular implementations, not guaranteed savings for another institution. Use the [university implementation hub](/credentials-higher-education) to organize a pilot around registrar, academic, IT and career-service needs.
+The [customer case studies](/case-studies.html) describe issuance, adoption and engagement in specific programmes. They do not guarantee savings for another institution. Use the [university implementation guide](/credentials-higher-education) to organise a pilot with registrar, academic, IT and career-service teams.
 
 ## Plan your next step
 

@@ -119,7 +119,7 @@ Issuing verified and recognized digital badges enhances the credibility and repu
 
 ### 6. Increased Brand Awareness
 
-Sharing digital credentials promotes the issuer’s brand, increasing visibility and attracting more students or customers to their programs. Digital badges serve as organic marketing tools, as recipients share them on social media and other platforms. When combined with strategies like [affiliate marketing](https://www.bitdegree.org/tutorials/what-is-affiliate-marketing), this can further amplify reach through trusted partners who promote your credentialing programs in exchange for commissions or incentives.
+Sharing a credential can make the issuing organisation visible to a wider audience. Views and shares do not establish additional enrolments.
 
 <br>
 

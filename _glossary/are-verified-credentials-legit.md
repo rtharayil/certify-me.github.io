@@ -5,7 +5,7 @@ category: "Verifiable Credentials - Basics"
 
 title: "Are Verified Credentials Legit?"
 
-description: "Explore how immutable ledger, cryptographic signatures, and global standards like W3C and Open Badges 3.0 make digital credentials tamper-proof, instantly verifiable, and more secure."
+description: "Learn how to assess issuer authority, cryptographic integrity, evidence and status for credentials using W3C and Open Badges standards."
 
 imageLink: /assets4/images/Glossary/are-verified-credentials-legit.png
 

@@ -509,3 +509,59 @@ mtime_ms = 1791126209150
 storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/5008ee58-50ab-47f3-82ef-c5f60e9ebec0/75048a9f-44bc-4104-a41a-51a1822b8f65"
 storage_version_token = "1791126341591145"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "sHmV-YZlGT53vPpUxaSeP"
+uri = "file://.local/reports/readability-release/readability-audit.csv"
+type = "table"
+title = "Website readability audit"
+description = "Final assessment of 369 canonical pages, with scores, issues and recommended actions."
+logical_id = "bf11acb5-6663-4f51-906f-0cf03f1e423a"
+content_hash = "sha256:6757694b6d01b1fc256907a7a149b4100cabd17666bd88ce5216a98d3125ed12"
+size = 75207
+mtime_ms = 1791140503327
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/bf11acb5-6663-4f51-906f-0cf03f1e423a/183bd7db-f759-4fb5-8138-dea7a3b0134d"
+storage_version_token = "1791140587483655"
+content_type = "text/csv"
+
+[[outputs]]
+id = "4O3EpDEgnvRq8z6A9THlc"
+uri = "file://.local/reports/readability-release/comparison-readability-scorecard.csv"
+type = "table"
+title = "Comparison readability scorecard"
+description = "Eight comparisons; every critical category meets the recorded 8/10 minimum."
+logical_id = "f2f48e48-d183-4260-b5da-ee71beda373f"
+content_hash = "sha256:a67705a7aa391b8f50dbaa7d8f65718e9715f7332af7c4167bbe2b6d762fdb77"
+size = 1016
+mtime_ms = 1791140503330
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/f2f48e48-d183-4260-b5da-ee71beda373f/5e8cd9ab-5bad-4eb9-b99a-a433390c46dc"
+storage_version_token = "1791140588763293"
+content_type = "text/csv"
+
+[[outputs]]
+id = "skYpYguNo4Y1kHVuoAjdG"
+uri = "file://.local/reports/readability-release/blog-readability-scorecard.csv"
+type = "table"
+title = "Blog readability scorecard"
+description = "83 blog posts, including comparisons, assessed for clarity, structure, relevance and natural writing."
+logical_id = "2a1b898b-7262-412d-ac39-beca3d2a0baf"
+content_hash = "sha256:70bce592eb052d7da24afe96419dd1ae9b90ff58eb972e5b93f0d03dea0041c8"
+size = 10567
+mtime_ms = 1791140503330
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/2a1b898b-7262-412d-ac39-beca3d2a0baf/0b6b6343-0011-458c-a8f4-a2c427d2d3d4"
+storage_version_token = "1791140590091636"
+content_type = "text/csv"
+
+[[outputs]]
+id = "UE65UBYRIZ7GWFGorJmgp"
+uri = "file://.local/reports/readability-release/internal-claim-source-mapping.csv"
+type = "table"
+title = "Internal claim-to-source mapping"
+description = "194 entries identifying source, type, date, evidence strength and scope limits. Not published on the website."
+logical_id = "546e1bf1-7488-47d0-885f-6a5831a905b4"
+content_hash = "sha256:c475e1caa813d0af385efeae59a2f134fac69581deb5047355cde0b79bd0c6b1"
+size = 80046
+mtime_ms = 1791140503333
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/546e1bf1-7488-47d0-885f-6a5831a905b4/18a2a82c-49f8-4323-9277-98eef9d7d26d"
+storage_version_token = "1791140591430893"
+content_type = "text/csv"

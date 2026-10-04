@@ -19,7 +19,7 @@ faqs:
   - question: "How do I make sure people don't just fake these?"
     answer: "That's why we include spots for QR codes and unique serial numbers. If someone tries to copy a design, the verification link won't work. It's all about that digital paper trail."
   - question: "Are these templates easy to edit if I have a lot of students?"
-    answer: "Honestly, doing them one by one is a pain. I always recommend using a tool that supports bulk editing or mail-merge. You just upload your list, and the system fills in all the names and dates for you."
+    answer: "For authorised awards, a bulk-editing or mail-merge workflow can populate a template from a reviewed recipient list. Check names, dates and award approvals before delivery."
 ---
 
 Certificates are not just documents, they are symbols of achievement, professionalism, and recognition. For learners, they validate hard work and dedication. For institutions, they reflect credibility and standards.

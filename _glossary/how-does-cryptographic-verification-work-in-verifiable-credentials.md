@@ -5,7 +5,7 @@ category: "Verification, Security & Trust"
 
 title: "How does cryptographic verification work in verifiable credentials?"
 
-description: "Learn how cryptographic verification works in verifiable credentials using public–private keys and hashing to issue tamper-proof and independently verifiable digital credentials."
+description: "Understand how cryptographic proofs support credential integrity and issuer checks, with clear limits around identity, status and verification resources."
 
 imageLink: /assets4/images/Glossary/how-does-cryptographic-verification-work-in-verifiable-credentials.png
 
@@ -41,7 +41,7 @@ Asymmetric encryption uses two mathematically linked keys: a private key and a p
 
 The relationship between the keys is what makes this secure. A signature made with a private key can only be confirmed using the corresponding public key. If someone other than the legitimate issuer tried to sign a credential, the public key check would fail.
 
-A useful way to picture it: the issuer puts a lock on a box using their private key. Anyone with the public key can check whether that specific lock is genuine. If a different lock has been substituted, the public key won't fit, and the check fails. Understanding how [verifiable credentials differ from digitally signed PDFs](https://www.certifyme.online/glossary/how-are-VCs-different-from-digitally-signed-PDFs.html) helps clarify exactly why this key infrastructure matters beyond what a standard digital signature provides.
+The issuer signs the credential with a private key. A verifier uses the corresponding public key to check that the signed content has not been altered. Compare [verifiable credentials and digitally signed PDFs](https://www.certifyme.online/glossary/how-are-VCs-different-from-digitally-signed-PDFs.html) for their verification and format requirements.
 
 <br>
 

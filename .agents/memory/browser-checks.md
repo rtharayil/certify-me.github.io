@@ -3,6 +3,12 @@ name: Browser checks in this workspace
 description: Workspace browser quirks affecting responsive images, touch input, Jekyll watching, and body-scrolling anchors.
 ---
 
+Keep Chromium configuration outside the watched workspace by setting a temporary XDG_CONFIG_HOME for browser-check processes.
+
+**Why:** Default browser configuration writes can trigger Jekyll's watcher repeatedly; an isolated temporary user-data directory alone does not prevent all configuration writes.
+
+**How to apply:** Use a temporary configuration location as well as a temporary browser profile when running browser checks.
+
 If Playwright fails to launch because its bundled Chromium headless shell is missing, check for a system Chromium installation and pass that executable to Playwright instead of treating the app as broken.
 
 **Why:** The Playwright package can be present without the exact browser revision it expects, while the workspace still has a working Chromium binary. Installing another browser adds unnecessary setup for a simple site check.
