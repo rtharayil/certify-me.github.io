@@ -994,6 +994,9 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
   </div>
 </section>
 
+{% comment %}
+Retired static FAQ markup: stale answers contradict the reviewed capability framing
+and do not match visible content. The assessment and visible content remain intact.
 <!-- FAQPage Schema -->
 <script type="application/ld+json">
 {
@@ -1051,6 +1054,7 @@ seo_keywords: "digital credential maturity, digital badge vs verifiable credenti
   ]
 }
 </script>
+{% endcomment %}
 
 <!-- Sticky subnav JS -->
 <script>

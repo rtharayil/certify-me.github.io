@@ -10,19 +10,19 @@ const escape = value => String(value ?? "").replace(/[&<>"']/g, c => ({ "&": "&a
 const scores = [
   ["Information Architecture", 8, "Ten topic clusters and six existing authority destinations are connected; URLs were preserved. Some legacy blog-parent assignments remain title-based editorial triage."],
   ["Technical SEO", 8, "369 sitemap documents have matching emitted canonicals and live-preview HTTP checks. Strategic crawling exclusions are correct. Published-host redirect behaviour and Google indexing remain unverified."],
-  ["On-page SEO", 7.5, "All 17 priority pages satisfy the metadata and single-H1 gate. Two utility-page defects and two historical duplicate-metadata groups remain."],
+  ["On-page SEO", 8.5, "The whole-sitemap heading/metadata check now passes. The two utility-page defects and both historical duplicate-metadata groups were corrected without changing URLs."],
   ["Internal Linking", 8, "Six authority destinations, higher education, comparison and trust hubs have incoming main-content links. Counts include repeated contextual modules, not independently assessed editorial endorsements."],
   ["Content Quality", 7, "W3C authority content, institutional implementation guidance and approved case evidence were improved. The 83-blog estate has not received a complete article-by-article rewrite."],
   ["Institutional SEO", 9, "Institutional infrastructure leads the main positioning; higher education is strongest without excluding certification bodies, enterprise, government and training providers. Governance and buyer roles are explicit."],
   ["Higher Education SEO", 8.5, "Registrars, academic teams, CIOs and career services have coherent routes into credentials, standards, skills, CLR and workforce evidence. Engagement is not represented as job-placement success."],
   ["Entity SEO", 8, "Company positioning, standards vocabulary and governed claim sources are aligned across priority pages. No Google Knowledge Panel or search-engine entity recognition was demonstrated."],
   ["AI SEO / AEO", 7.5, "28 intent destinations and 12 answer questions were tested against fresh DOM content. Manual competitor-answer confidence remains partial; term presence is not proof of AI citations or ranking."],
-  ["Schema", 7, "Priority JSON-LD and visible FAQ checks pass; unsupported integration FAQ markup and individual five-star review values were removed. Five legacy FAQ/answer mismatches remain."],
+  ["Schema", 8.5, "Whole-sitemap JSON-LD and FAQ correspondence checks now pass. Five mismatched static FAQ scripts were retired without removing visible questions; truthful priority-page FAQs remain. JSON validity is not a guarantee of rich-result eligibility."],
   ["Trust / Evidence", 8, "Owner-approved figures, anonymous case outcomes, dated G2 observations and scoped security evidence are used. Independent ISO status checks and a revised signed SOC opinion were not obtained."],
   ["Conversion SEO", 7.5, "Priority pages retain visible actions and institutional rollout links. External lead forms were not submitted, analytics delivery was not tested and conversion uplift was not measured."],
   ["Mobile SEO", 8.5, "Independent browser checks cover six widths; comparison tables pass their separate 390px scroll/focus test. Mobile menu and native FAQ interactions were checked, but not every legacy dialog."],
-  ["Page Speed", 5, "Production Core Web Vitals and Lighthouse evidence are unavailable. Local navigation timings are not field performance; multiple reused image components still lack reserved dimensions. This is a provisional readiness score, not a measured speed score."],
-  ["Overall", 7.5, "Critical/high priority gates pass and the institutional story is coherent. Medium legacy work, production indexing, performance and end-to-end conversion checks remain explicitly open."],
+  ["Page Speed", 6, "Real image dimensions now reserve aspect ratios on rendered pages; the 178 prior priority omissions are cleared. Production Core Web Vitals, compression opportunities and script/font measurements are not established. This is a provisional readiness score, not a measured speed score."],
+  ["Overall", 7.8, "Both validation rounds pass, with no structural issues or duplicate-metadata groups in the current sitemap audit. Legacy editorial review, third-party comparison evidence, production indexing/performance and conversion delivery are not declared complete."],
 ];
 const answers = [
   ["PASS", "Institutional digital credential infrastructure connecting governed issuance, verification, skills, learner records and workforce information."],
@@ -42,6 +42,12 @@ function table(headers, rows) {
   return `<table><thead><tr>${headers.map(h => `<th>${escape(h)}</th>`).join("")}</tr></thead><tbody>${rows.map(row => `<tr>${row.map(v => `<td>${escape(v)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
 }
 function describeFile(file) {
+  if (file === "_includes/V4NewLook/blogs/singleBlogPostV2.html") return ["Add institutional topic links and contain horizontal overflow from rotated decorative artwork.", "Connect article authority paths while preserving readable tables, TOC stickiness and artwork.", "Topic-cluster links and responsive layout", "Moderate: shared article template; browser and comparison checks"];
+  if (file.includes("html_page_output")) return ["Render the opted-in extensionless utility source as HTML while preserving its permalink.", "Prevent /lab from being downloaded as application/octet-stream.", "Usable utility route and correct content type", "Low: explicit per-page opt-in"];
+  if (file.includes("intrinsic_image")) return ["Add intrinsic public-media dimensions with preserved artwork, scaling and private-path safeguards.", "Resolve missing layout reservations without changing source pixels.", "Image layout stability", "Moderate: rendering-wide; unit and browser checks"];
+  if (["lab", "signature-download.md", "_layouts/experience-layout.html", "_includes/V4NewLook/DigitalSignature/body.html"].includes(file)) return ["Correct utility-page heading/description semantics; identify the experience view as illustrative.", "Ensure a real H1 and accurate search description without implying a verified university record.", "Heading/metadata clarity", "Low: semantic changes; existing actions retained"];
+  if (file.includes("FAQ") || file === "digital-credential-maturity.md") return ["Retire mismatched static FAQ JSON-LD; preserve visible FAQ and assessment content.", "Avoid claims that do not match the reviewed visible answers.", "Schema truthfulness", "Low: misleading markup removed, UI preserved"];
+  if (file === "_awards/2021/Edvocate.md") return ["Make historical nomination title and description specific and unique.", "Distinguish the archived nomination overview without changing its URL or historical award year.", "Unique metadata", "Low: metadata only"];
   if (file.includes("Understanding-W3C")) return ["Refresh the existing W3C authority article with factual model/proof boundaries and institutional decisions.", "Correct technical positioning without changing its URL.", "Authority and answer clarity", "Moderate: substantial content revision"];
   if (file === "security.md") return ["Publish reviewed security/privacy scopes and procurement guidance at the existing trust URL.", "Replace generic assurance with approved evidence boundaries.", "Trust and CIO intent", "Moderate: assurance wording"];
   if (file.includes("integrations/head")) return ["Remove hidden/unmatched FAQ claims from integration JSON-LD.", "Schema must not assert unsupported setup promises absent from the displayed answer.", "Schema truthfulness", "Low: markup-only"];
@@ -57,8 +63,25 @@ function describeFile(file) {
 async function main() {
   const r1 = read("round-1/structural.json"), r2 = read("round-2/adversarial.json");
   if (r1.status !== "PASS" || r2.status !== "PASS") throw new Error("Do not produce a successful final deliverable before both priority gates pass.");
-  const changed = execFileSync("git", ["diff", "--name-only"], { encoding: "utf8" }).trim().split("\n").filter(f => f && !f.startsWith(".agents/"));
-  const created = execFileSync("git", ["ls-files", "--others", "--exclude-standard"], { encoding: "utf8" }).trim().split("\n").filter(f => f && !f.startsWith("attached_assets/") && !f.startsWith(".agents/"));
+  const currentChanged = execFileSync("git", ["diff", "--name-only"], { encoding: "utf8" }).trim().split("\n").filter(f => f && !f.startsWith(".agents/"));
+  const currentCreated = execFileSync("git", ["ls-files", "--others", "--exclude-standard"], { encoding: "utf8" }).trim().split("\n").filter(f => f && !f.startsWith("attached_assets/") && !f.startsWith(".agents/"));
+  // Checkpoints may commit the earlier implementation between report runs.
+  // Preserve the delivered inventory instead of erasing it with a working-tree diff.
+  const priorLog = fs.existsSync(path.join(OUT, "change-log.json")) ? read("change-log.json") : { modified: [], created: [] };
+  const created = [...new Set([...(priorLog.created || []).map(row => row.file), ...currentCreated])];
+  const changed = [...new Set([...(priorLog.modified || []).map(row => row.file), ...currentChanged])].filter(file => !created.includes(file));
+  const previousModified = new Map((priorLog.modified || []).map(row => [row.file, row]));
+  const modificationRecords = changed.map(file => {
+    const prior = previousModified.get(file);
+    if (prior && !currentChanged.includes(file)) return prior;
+    const [change, reason, seoImpact, risk] = describeFile(file);
+    const row = { file, change, reason, seoImpact, risk };
+    if (prior) for (const key of ["change", "reason", "seoImpact", "risk"]) {
+      if (prior[key] && !prior[key].includes(row[key])) row[key] = `${prior[key]} Also: ${row[key]}`;
+      else if (prior[key]) row[key] = prior[key];
+    }
+    return row;
+  });
   const duplicateIssues = Object.entries(r1.duplicates).flatMap(([kind, groups]) => Object.entries(groups).map(([value, urls]) => ({
     severity: "medium", urls, problem: `Duplicate ${kind}: ${value}`, why: "Historical pages are less distinguishable in search results.",
     recommendedFix: "Review the historical intent and traffic before changing copy or consolidating; preserve URLs and use page-specific metadata.",
@@ -71,8 +94,8 @@ async function main() {
     implemented: false, validation: "Detected by the whole-sitemap structural inventory; outside the cleared priority gate.",
   })).concat(duplicateIssues);
   const imageCount = r1.pages.filter(p => p.priority).reduce((sum, p) => sum + p.images_missing_dimensions, 0);
+  if (imageCount > 0) openIssues.push({ severity: "medium", urls: ["_includes/V4NewLook/", "_layouts/"], problem: `${imageCount} priority-page image elements lack width/height attributes; reused components are counted repeatedly.`, why: "Unreserved image layout can contribute to layout shifts.", recommendedFix: "Audit original aspect ratios and reserve image space without changing uploaded art or cropping.", implemented: false, validation: "Static attribute inventory only; actual production CLS unknown." });
   openIssues.push(
-    { severity: "medium", urls: ["_includes/V4NewLook/", "_layouts/"], problem: `${imageCount} priority-page image elements lack width/height attributes; reused components are counted repeatedly.`, why: "Unreserved image layout can contribute to layout shifts.", recommendedFix: "Audit original aspect ratios and reserve image space without changing uploaded art or cropping.", implemented: false, validation: "Static attribute inventory only; actual production CLS unknown." },
     { severity: "medium", urls: ["_blog/", "_integrations/", ".local/reports/enterprise-seo/claim-review-register.csv"], problem: "Legacy claims and title-based topic classification still need editorial review.", why: "Repository presence does not independently establish historical promises, native connectors or current competitor capabilities.", recommendedFix: "Review high-traffic pages against owner approvals and current primary sources before rewriting/consolidating.", implemented: false, validation: "Baseline candidate register is triage, not an approved-claims list." },
     { severity: "medium", urls: ["/compare/", "_blog/certifyme-vs-*-2026-comparison.md"], problem: "Manual AI competitor-answer test remains PARTIAL.", why: "A trustworthy detailed comparison needs current provider-by-provider evidence, not only competitor names.", recommendedFix: "Verify comparison dimensions against dated primary vendor documentation; mark unknowns rather than infer absence.", implemented: false, validation: "Automated term test passes; stricter manual judgment is PARTIAL." },
     { severity: "medium", urls: ["Published website / Search Console"], problem: "Production indexing, redirects and Core Web Vitals are unknown.", why: "A working preview does not prove Google indexation, search performance or field speed.", recommendedFix: "After publishing, check the actual public host, URL Inspection, sitemap discovery and field performance.", implemented: false, validation: "Not independently verified in this environment." },
@@ -97,7 +120,7 @@ async function main() {
   fs.writeFileSync(path.join(OUT, "scorecard.json"), JSON.stringify({ reviewedOn: "2026-10-04", scale: "0–10 engineering readiness judgments; not measured ranking", categories: scores.map(([category, score, reasons]) => ({ category, score, reasons })) }, null, 2));
   fs.writeFileSync(path.join(OUT, "final-issue-register.json"), JSON.stringify(issueRegister, null, 2));
   fs.writeFileSync(path.join(OUT, "round-2/manual-review.json"), JSON.stringify(manualReview, null, 2));
-  fs.writeFileSync(path.join(OUT, "change-log.json"), JSON.stringify({ modified: changed.map(file => { const [change, reason, seoImpact, risk] = describeFile(file); return { file, change, reason, seoImpact, risk }; }), created: created.map(file => ({ file, purpose: file.startsWith("_data/") ? "Governed claims/topic configuration" : file.startsWith("_includes/") ? "Contextual institutional/topic content" : "Validation/report generation", publicURL: "None — support file, not a new public route" })), urlChanges: [], urlsDeleted: [], redirectsAdded: [] }, null, 2));
+  fs.writeFileSync(path.join(OUT, "change-log.json"), JSON.stringify({ scope: "Cumulative delivered implementation and follow-up fixes, including work committed by intervening checkpoints.", modified: modificationRecords, created: created.map(file => ({ file, purpose: file.startsWith("_data/") ? "Governed claims/topic configuration" : file.startsWith("_includes/") ? "Contextual institutional/topic content" : file.startsWith("_plugins/") ? "HTML output and intrinsic image safeguards" : "Validation/report generation", publicURL: "None — support file, not a new public route" })), urlChanges: [], urlsDeleted: [], redirectsAdded: [] }, null, 2));
   const priorityLinks = r1.pages.filter(p => p.priority).map(p => [new URL(p.url).pathname, p.incoming_pages.length, p.images_missing_alt, p.images_missing_dimensions]);
   const safetyRows = [
     ["Existing pages/URLs", "PASS", "No page file deletion or route renaming introduced; no new public content routes or mass redirects."],
@@ -122,8 +145,8 @@ async function main() {
     <p>Final implementation review: 4 October 2026 · Approval/evidence observations: 3 October 2026</p>
     <p class="note"><strong>Digital Credential Infrastructure for Institutions.</strong><br>Institutions first; higher education strongest. Credentials → standards and proof → reviewed skills → connected learner records → workforce information.</p>
     <h2>1. Executive outcome</h2>
-    <p><strong>P0/P1 implementation and both priority acceptance gates pass.</strong> This is not a claim that the entire historical estate is clean. ${r1.issues.length} medium structural issues, two historical duplicate-metadata groups and additional evidence/performance work remain. Changes are validated in preview and have not been published by the agent.</p>
-    <ul><li>Existing URLs and brand/design preserved; no keyword-only routes or automatic consolidation.</li><li>Governed approved claims, ten topic clusters, institutional implementation context and blog parent links introduced.</li><li>W3C authority article refreshed at its original URL; existing OB3, skills, CLR and workforce destinations connected.</li><li>Trust content uses distinct SOC/ISO/GDPR scopes, enterprise SSO/MFA and contractual residency boundaries.</li><li>Three anonymous case summaries added; current job/G2/scale figures corrected with qualifiers and dates.</li><li>Critical/high defects found by the tests were fixed; unsupported integration FAQ JSON-LD removed.</li></ul>
+    <p><strong>Both audit gates pass, and the concrete follow-up defects are fixed.</strong> The current whole-sitemap audit reports ${r1.issues.length} structural issues and ${Object.values(r1.duplicates).reduce((sum, groups) => sum + Object.keys(groups).length, 0)} duplicate-metadata groups. This is not a claim that every historical article, third-party fact or production-dependent check is complete. Changes are validated in preview and have not been published by the agent.</p>
+    <ul><li>Existing URLs and brand/design preserved; no keyword-only routes or automatic consolidation.</li><li>Governed approved claims, ten topic clusters, institutional implementation context and blog parent links introduced.</li><li>W3C authority article refreshed at its original URL; existing OB3, skills, CLR and workforce destinations connected.</li><li>Trust content uses distinct SOC/ISO/GDPR scopes, enterprise SSO/MFA and contractual residency boundaries.</li><li>Three anonymous case summaries added; current job/G2/scale figures corrected with qualifiers and dates.</li><li>The five legacy FAQ mismatches, two utility-heading/metadata defects and both archived duplicate-metadata groups are now resolved.</li><li>Intrinsic image sizes are added from real PNG/JPEG/WebP/GIF/SVG headers; 178 previous priority-page omissions cleared. Source artwork and explicit sizing remain unchanged; private uploads and symlinks into private folders are not read.</li></ul>
     <h2>2. Required 15-category scorecard</h2>
     <p>Scores are conservative engineering/content-readiness judgments, not measured rankings, revenue or search traffic. No before/after numerical score is invented.</p>
     ${table(["Category", "Score / 10", "Factual reasons and limits"], scores.map(([name, score, reasons]) => [name, score.toFixed(1), reasons]))}
@@ -131,12 +154,12 @@ async function main() {
     <p>Baseline: 369 marketing sitemap pages, 83 blog articles and 77 additional credential/demo documents inventoried; 27 sampled published URLs returned 200. Audit candidates, approved evidence and implementation are separate records. Prioritize the highest-impact institutional pages; do not consolidate old content without traffic/backlink information.</p>
     <h3>Round 1 — Structural Validation: ${escape(r1.status)}</h3>
     <p>Fresh generated HTML/XML/robots, not a reused baseline result. All ${r1.sitemap_count} sitemap documents inventoried; ${r1.priority_count} priority pages gated for metadata, H1, canonical, crawlability, main-content destinations, visible FAQ agreement and conversion actions. Current result: no critical/high issue; ${r1.issues.length} medium issues. Duplicate groups are reported separately. Alt/dimension counts are an inventory, not a claim that all images are optimized.</p>
-    <p>Fixes included: null-safe schema inspection; consistent private/demo crawler policy; scoped shared content rendering; removal of mismatched integration FAQ markup; stale link repairs; approved metric/refresh wording; removal of unsupported per-review five-star values. Existing utility/demo intent and historical duplicates were not automatically changed.</p>
+    <p>Fixes included: null-safe schema inspection; consistent private/demo crawler policy; scoped shared content rendering; removal of mismatched integration and legacy FAQ markup; stale link repairs; approved metric/refresh wording; removal of unsupported per-review five-star values; corrected utility headings and historical metadata; intrinsic image-space reservations. Utility/example intent remains explicit; no blanket noindex or URL consolidation was introduced. The seven repaired routes are now strict regression targets, and duplicate indexed metadata fails validation.</p>
     <h3>Round 2 — Adversarial Validation: ${escape(r2.status)}</h3>
     <p>Independent serving-app HTTP requests and Chromium DOM checks; the script does not read Round 1's report. ${r2.sitemapResponses.length} sitemap destinations checked, all HTTP 200. ${r2.layouts.length} rendered checks; widths 320, 375, 390, 430, 768 and 1440. No detected page overflow greater than 2px, bad tested heading counts, malformed JSON-LD or completed broken main-content images. Lazy images not yet loaded are not proven by this check. Native FAQ open/close and mobile menu checks pass. The automated question test checks terms; the stricter manual result below is authoritative.</p>
     <p>Post-review fixes: reviewed-page-only body rendering avoids activating unused legacy scripts; graduate-employability wording clarifies outcome measurement; useful digital-badge/microcredential/analytics links added; micro-credentials/microcredentials orthography normalized in intent triage. Final reports reflect the recheck.</p>
     <h3>Additional regression verification</h3>
-    <ul><li>Jekyll production build passes; running workflow restarted and healthy, with existing non-fatal Ruby/Bundler warnings.</li><li>Comparison structure validator passes. Seven comparison/alternative articles pass the separate 390px keyboard-focusable horizontal-table check.</li><li>Private-upload suite passes fresh/cached/incremental builds and cached/normal/symlinked startup cases; excluded upload routes return 404 and original uploads are preserved.</li><li>Mobile homepage screenshot inspected. No live external demo form submitted.</li></ul>
+    <ul><li>Jekyll production build passes; running workflow restarted and healthy, with existing non-fatal Ruby/Bundler warnings.</li><li>Comparison structure validator passes. Seven comparison/alternative articles pass the separate 390px keyboard-focusable horizontal-table check.</li><li>Intrinsic-size unit tests cover PNG, JPEG, WebP and SVG; explicit sizing, scaling, missing sources, unknown external sources and private-folder traversal/symlink protection.</li><li>Private-upload suite passes fresh/cached/incremental builds and cached/normal/symlinked startup cases; excluded upload routes return 404 and original uploads are preserved.</li><li>Repaired routes checked at mobile/desktop widths in addition to the original priority suite. No live external demo form submitted.</li></ul>
     ${table(["Persona", "Manual result", "What can/cannot be established"], manualReview.personas)}
     <h2 class="page">4. Search intent review — all 28 requested queries</h2>
     <p>Every requested query has an existing destination. The keyword-coverage status below is only mechanical triage. Canonical alternates and competing candidates require manual/traffic review; actual Google indexing is UNKNOWN for every query. No pages were created just to match keywords.</p>
@@ -154,7 +177,7 @@ async function main() {
     ${table(["Severity", "URL / file", "Problem", "Why it matters", "Recommended fix", "Implemented?", "Validation"], issueRows)}
     <h2 class="page">8. Change log — files modified</h2>
     <p>Agent-memory housekeeping is excluded from the public website change log. Exact source diffs remain in the workspace/checkpoint.</p>
-    ${table(["File", "Change", "Reason", "SEO impact", "Risk"], changed.map(file => [file, ...describeFile(file)]))}
+    ${table(["File", "Change", "Reason", "SEO impact", "Risk"], modificationRecords.map(row => [row.file, row.change, row.reason, row.seoImpact, row.risk]))}
     <h3>Files created</h3>
     ${table(["File", "Purpose", "Public URL"], created.map(file => [file, file.startsWith("_data/") ? "Approved claims / topic-cluster configuration" : file.startsWith("_includes/") ? "Institutional or blog-topic context" : "Validation/report generation", "None — support file"]))}
     <p>Generated deliverables: final-report.pdf/html, scorecard.json, final-issue-register.json, change-log.json, both round reports, final page inventory, manual adversarial review and downloadable validation bundle.</p>
@@ -162,7 +185,7 @@ async function main() {
     <h2 class="page">9. Final safety checklist</h2>
     ${table(["Requirement", "Result", "Evidence / limitation"], safetyRows)}
     <h2>10. Recommended sequence after this delivery</h2>
-    <ol><li>Review the approved preview and publish through the normal owner-controlled process.</li><li>Verify the published host, Search Console discovery/indexing, field performance, agreed test-lead delivery and consent-aware analytics.</li><li>Resolve the five legacy FAQ mismatches, two utility semantics and historical duplicate metadata without deleting valuable URLs.</li><li>Use traffic/backlink and current primary-source evidence to prioritize legacy editorial/competitor work and image layout-space fixes.</li></ol>
+    <ol><li>Review the approved preview and publish through the normal owner-controlled process.</li><li>Verify the published host, Search Console discovery/indexing, field performance, agreed test-lead delivery and consent-aware analytics.</li><li>Use traffic/backlink and current primary-source evidence for legacy editorial/consolidation decisions and fully verified vendor comparisons.</li><li>Measure further image compression, font/script and caching opportunities without sacrificing existing design or functionality.</li></ol>
     <p class="small">Evidence records: audit-and-plan.md, evidence-analysis.md, approved_claims.yml, round-1/structural.json, round-1/page-inventory.csv, round-2/adversarial.json and round-2/manual-review.json. Private uploads are not included in the downloadable validation bundle.</p>
     </body></html>`;
   const htmlFile = path.join(OUT, "final-report.html");
@@ -172,6 +195,6 @@ async function main() {
   await page.goto(`file://${htmlFile}`, { waitUntil: "load" });
   await page.pdf({ path: path.join(OUT, "final-report.pdf"), printBackground: true, preferCSSPageSize: true });
   await browser.close();
-  console.log(JSON.stringify({ round1: r1.status, round2: r2.status, structuralMedium: r1.issues.length, manualAI: "11 PASS, 1 PARTIAL", overall: 7.5, filesModified: changed.length, filesCreated: created.length, pdf: path.join(OUT, "final-report.pdf") }, null, 2));
+  console.log(JSON.stringify({ round1: r1.status, round2: r2.status, structuralIssues: r1.issues.length, manualAI: "11 PASS, 1 PARTIAL", overall: 7.8, filesModified: changed.length, filesCreated: created.length, pdf: path.join(OUT, "final-report.pdf") }, null, 2));
 }
 main().catch(e => { console.error(e); process.exitCode = 1; });

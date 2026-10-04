@@ -39,6 +39,12 @@ Keep browser configuration and cache state outside the watched Jekyll workspace 
 
 **How to apply:** If browser checks cause unexpected regeneration or intermittent asset failures, inspect the watcher logs before changing artwork or application code. Use temporary directories for browser configuration/cache where possible, and wait for the actual lazy-loaded image to load before decoding it.
 
+Restart the long-running Jekyll watcher after adding or changing a plugin, before trusting a fresh standalone build's output.
+
+**Why:** A watcher with the old plugin registry regenerated the shared output directory after a successful standalone build and erased the new plugin's changes. This made a passing image-dimension audit appear to regress.
+
+**How to apply:** Restart once after the plugin batch, build the current source, and run the final audits against that output. Avoid concurrent generators with different loaded plugin versions.
+
 Distinguish a browser transport failure from a broken interaction when HTML loads but its script does not.
 
 **Why:** System Chromium encountered `ERR_CERT_VERIFIER_CHANGED` on the proxied preview's assets. The homepage rendered, but the missing dialog script made a working opener appear broken.

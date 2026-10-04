@@ -1,7 +1,7 @@
 ---
 layout: award
-title: Edvocate Leadership Awards 2022
-description: A platform to honor the top 1% of Exemplary Leaders who has led ordinary people in accomplishing extraordinary outcomes.
+title: "Edvocate Leadership Awards 2022 — Archived Nomination Overview"
+description: "Archived nomination overview for the Edvocate Leadership Awards 2022, including leadership categories and evaluation criteria."
 logo : /img/awards/awardlogoLeader.png
 Head1:  Edvocate Leadership Awards <br > Awards 2022
 Head2:  <br > Nomination are open

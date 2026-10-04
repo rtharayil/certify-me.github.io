@@ -587,6 +587,10 @@
     /* DECORATIVE BACKGROUND IMAGES */
     #single-post {
         position: relative;
+        /* Rotated background artwork must not widen the page. Clip only the
+           horizontal overflow without creating a scrolling ancestor for TOC
+           stickiness or changing the article's scrollable table wrappers. */
+        overflow-x: clip;
     }
     #single-post > .container {
         position: relative;

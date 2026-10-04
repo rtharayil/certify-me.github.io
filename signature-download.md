@@ -1,6 +1,6 @@
 ---
 title: "Download Cryptographic Signature – Public Key Access"
-description: "Secure and verify your credentials with our cryptographic signature. Download the public key to authenticate digital certificates and badges effortlessly."
+description: "Download the CertifyMe cryptographic public key for supported credential-verification workflows. Issuer trust and credential status require separate checks."
 
 layout: V4Layout-Download-DS
 sitemap.priority: 0.9

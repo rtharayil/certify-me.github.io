@@ -8,3 +8,9 @@ On this project, `git log` (default, current branch/HEAD) only surfaced a handfu
 **Why:** Squash merges, branch imports, or checkpoint mechanics can leave the default `git log` view pointing at a short recent chain, while the full commit graph (with real historical authored dates) is only visible via `--all` (or explicitly walking known older commit hashes).
 
 **How to apply:** When a user asks to restore, diff against, or match "how it was on [date]," always search with `git log --all --pretty=... --date=iso | grep <date>` before concluding a date doesn't exist in history. Don't trust the default `git log` output as the full picture of available history.
+
+Keep cumulative delivery inventories when regenerating reports; do not replace them with the latest working-tree diff.
+
+**Why:** Intervening checkpoints can commit the earlier implementation. A regenerated report based only on the remaining diff then omits already-delivered work and misrepresents the scope.
+
+**How to apply:** Merge the prior delivered inventory with the current follow-up changes, deduplicate by file and preserve earlier change descriptions.

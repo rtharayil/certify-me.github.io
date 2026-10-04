@@ -25,6 +25,10 @@ PRIORITY = [
      for vendor in ("parchment", "credly", "accredible", "certifier", "sertifier")]
 OUT = ROOT / ".local/reports/enterprise-seo/round-1"
 SITE = ROOT / "_site"
+DEFECT_ROUTES = {
+    "/FAQ.html", "/ICP-FAQs.html", "/digital-credential-maturity/",
+    "/eduTranscript-FAQ.html", "/gen-FAQ.html", "/lab", "/signature-download.html",
+}
 
 
 def resolve(href):
@@ -48,6 +52,7 @@ def main():
         p = reader.Page(file)
         route = urlparse(url).path
         priority = route in PRIORITY
+        strict = priority or route in DEFECT_ROUTES
         row = {"url": url, "title": p.title, "description": p.meta.get("description", ""),
                "h1": [text for level, text in p.headings if level == 1],
                "canonical": p.canonicals, "robots": p.meta.get("robots", ""),
@@ -64,7 +69,7 @@ def main():
         if "noindex" in row["robots"] or not row["google_crawlable"] or not row["ai_crawlable"]:
             issues.append({"severity": "critical" if priority else "medium", "url": url, "issue": "Indexation/crawler discrepancy"})
         if not p.title or any(not p.meta.get(key) for key in required) or len(row["h1"]) != 1:
-            issues.append({"severity": "high" if priority else "medium", "url": url, "issue": "Metadata or single-H1 requirement incomplete"})
+            issues.append({"severity": "high" if strict else "medium", "url": url, "issue": "Metadata or single-H1 requirement incomplete"})
         for href in p.links:
             absolute = urljoin(url, href)
             target = urlparse(absolute)
@@ -87,10 +92,13 @@ def main():
                     if not q or not words or q not in body or len(words & visible) / len(words) < .95:
                         row["faq_mismatches"].append(q or "(missing question name)")
         if p.errors or row["faq_mismatches"]:
-            issues.append({"severity": "high" if priority else "medium", "url": url, "issue": "Schema syntax or visible-FAQ mismatch",
+            issues.append({"severity": "high" if strict else "medium", "url": url, "issue": "Schema syntax or visible-FAQ mismatch",
                            "details": p.errors + row["faq_mismatches"]})
         if priority and not row["cta_count"]:
             issues.append({"severity": "high", "url": url, "issue": "No conversion CTA in main content"})
+        if priority and row["images_missing_dimensions"]:
+            issues.append({"severity": "high", "url": url, "issue": "Priority images lack intrinsic dimensions",
+                           "count": row["images_missing_dimensions"]})
         titles[p.title].append(url)
         descriptions[row["description"]].append(url)
         pages[url] = row
@@ -99,6 +107,9 @@ def main():
     for route in PRIORITY:
         if BASE + route not in pages:
             issues.append({"severity": "critical", "url": route, "issue": "Priority page absent from sitemap"})
+    for route in DEFECT_ROUTES:
+        if BASE + route not in pages:
+            issues.append({"severity": "critical", "url": route, "issue": "Required defect-regression page absent from sitemap"})
     for agent in ("Googlebot", "OAI-SearchBot", "GPTBot", "ClaudeBot", "PerplexityBot"):
         if robots.can_fetch(agent, BASE + "/attached_assets/private.pdf") or robots.can_fetch(agent, BASE + "/devopsma/example.html"):
             issues.append({"severity": "critical", "issue": f"{agent} does not share private/demo exclusions"})
@@ -113,10 +124,14 @@ def main():
         row["actual_google_indexing"] = "unknown: Search Console not available"
     duplicates = {kind: {key: values for key, values in groups.items() if key and len(values) > 1}
                   for kind, groups in (("titles", titles), ("descriptions", descriptions))}
+    for kind, groups in duplicates.items():
+        for value, urls in groups.items():
+            issues.append({"severity": "high", "urls": urls, "issue": f"Duplicate sitemap {kind}", "value": value})
     result = {"round": "SEO TEST ROUND 1 — STRUCTURAL VALIDATION",
               "method": "Fresh generated HTML, XML and robots parsing; no baseline result reused",
               "scope": "Every marketing sitemap document; priority gating, whole-estate medium issue inventory",
               "sitemap_count": len(sitemap), "priority_count": len(PRIORITY),
+               "defect_regression_routes": sorted(DEFECT_ROUTES),
               "issues": issues, "duplicates": duplicates, "pages": list(pages.values()),
               "limitations": ["Local destination resolution is not a live HTTP check.", "Automated text checks do not prove editorial quality or rich-result eligibility."]}
     result["status"] = "PASS" if not any(i["severity"] in ("critical", "high") for i in issues) else "FAIL"

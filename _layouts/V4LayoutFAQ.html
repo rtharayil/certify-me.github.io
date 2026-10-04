@@ -6,6 +6,9 @@
 <body id="page-top">
         {% include V4NewLook/_GTMNoScript.html %}
 
+  {% comment %}
+  Retired static FAQ markup: its answers did not match the visible FAQ section.
+  Keep the visible questions; only restore markup generated from shared reviewed data.
   <!-- FAQPage structured data -->
   <script type="application/ld+json">
   {
@@ -71,6 +74,7 @@
     ]
   }
   </script>
+  {% endcomment %}
 
     <div id="page" class="page font--jakarta">
         {% include V4NewLook/navbar.html %}

@@ -1,6 +1,11 @@
 ---
 layout: experience-layout
-title: Lab Assistant - ABC University
+permalink: /lab
+html_output: true
+title: "Lab Assistant — Example Experience Record | CertifyMe"
+description: "Explore an illustrative lab-assistant experience record. This example view is not an issuer-verified university credential."
+experience_heading: "Lab Assistant — Example Experience Record"
+experience_notice: "Illustrative experience view, not an issuer-verified public credential."
 ---
 
 <!-- Experience Header -->

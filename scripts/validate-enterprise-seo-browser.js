@@ -15,6 +15,8 @@ const PRIORITY = [
   ...["parchment", "credly", "accredible", "certifier", "sertifier"].map(v => `/blog/certifyme-vs-${v}-2026-comparison.html`),
 ];
 const WIDTHS = [320, 375, 390, 430, 768, 1440];
+const DEFECT_ROUTES = ["/FAQ.html", "/ICP-FAQs.html", "/digital-credential-maturity/",
+  "/eduTranscript-FAQ.html", "/gen-FAQ.html", "/lab", "/signature-download.html"];
 const INTENTS = [
   ["digital credential platform", "/platform-overview"], ["digital credentials", "/platform-overview"],
   ["digital credential infrastructure", "/platform-overview"], ["digital badges", "/digital-badges.html"],
@@ -64,12 +66,13 @@ async function main() {
     }
   }));
   const browser = await chromium.launch({ executablePath: execFileSync("which", ["chromium"], { encoding: "utf8" }).trim(), headless: true, args: ["--no-sandbox"] });
+  try {
   const page = await browser.newPage();
   const layouts = [], documents = new Map(), errors = [];
   page.on("pageerror", e => errors.push(e.message));
   // Suppress only unrelated analytics/ad traffic; keep application JS, CSS and images.
   await page.route(/googletagmanager\.com|google-analytics\.com|doubleclick\.net/, r => r.abort());
-  const destinations = [...new Set([...PRIORITY, ...INTENTS.map(i => i[1])])];
+  const destinations = [...new Set([...DEFECT_ROUTES, ...PRIORITY, ...INTENTS.map(i => i[1])])];
   for (const route of destinations) {
     for (const width of (PRIORITY.includes(route) ? WIDTHS : [390, 1440])) {
       await page.setViewportSize({ width, height: 900 });
@@ -133,9 +136,10 @@ async function main() {
     interactions.push({ name: "Mobile menu opens", pass: await page.locator("body").evaluate(el => el.classList.contains("wsactive")) });
     await menu.click();
   }
-  await browser.close();
   const issues = [
     ...statuses.filter(r => r.status !== 200).map(r => ({ severity: "critical", ...r, issue: "Sitemap HTTP destination not 200" })),
+    ...statuses.filter(r => r.status === 200 && !r.contentType?.includes("text/html"))
+      .map(r => ({ severity: "high", ...r, issue: "Sitemap destination is not served as HTML" })),
     ...layouts.filter(r => r.overflow > 2 || r.status !== 200 || r.h1Count !== 1 || r.jsonErrors.length || r.brokenImages.length)
       .map(r => ({ severity: "high", ...r, issue: "Rendered layout/heading/schema/image check" })),
     ...interactions.filter(i => !i.pass).map(i => ({ severity: "high", ...i })),
@@ -153,5 +157,8 @@ async function main() {
     issues, partialIntents: intents.filter(i => i.intentStatus !== "PASS"), partialAnswers: answers.filter(a => a.status !== "PASS"),
     interactions, browserErrors: report.browserErrors }, null, 2));
   if (issues.length) process.exitCode = 1;
+  } finally {
+    await browser.close();
+  }
 }
 main().catch(e => { console.error(e); process.exitCode = 1; });
