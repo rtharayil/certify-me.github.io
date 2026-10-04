@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Image proportion regression fixtures</title>
+<style>
+  img { display:block; margin:8px; }
+  #corrected, #squeezed { width:200px; }
+  #corrected { height:auto; }
+  #contain, #cover, #scale-down { width:150px; height:150px; }
+  #contain { object-fit:contain; }
+  #cover { object-fit:cover; }
+  #scale-down { object-fit:scale-down; }
+  #lazy { margin-top:2000px; width:160px; height:auto; }
+  #rounded { width:99px; height:auto; }
+  #bordered { box-sizing:border-box; padding:10px; border:2px solid; width:224px; height:124px; }
+  .clipped { height:0; overflow:hidden; }
+</style>
+<!-- HTML attributes reserve 400x200; changing ONLY width squeezes this image. -->
+<img id="squeezed" width="400" height="200" alt="Deliberately squeezed">
+<img id="corrected" width="400" height="200" alt="Responsive correction">
+<img id="contain" width="400" height="200" alt="Intentional contain">
+<img id="cover" width="400" height="200" alt="Intentional cover crop">
+<img id="scale-down" width="400" height="200" alt="Intentional scale-down">
+<img id="bordered" width="400" height="200" alt="Undistorted content inside padded border">
+<img id="rounded" width="296" height="20" sizes="99px" alt="Density-rounded small logo">
+<p id="visible-text">This copy must remain visible after scrolling.</p>
+<div class="clipped"><p id="clipped-text">This copy is intentionally clipped for the negative visibility test.</p></div>
+<img id="lazy" width="400" height="200" loading="lazy" alt="Offscreen lazy image">
+<script>
+  const image = (width, height) => "data:image/svg+xml," + encodeURIComponent(
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}"><rect width="100%" height="100%" fill="navy"/></svg>`);
+  document.querySelectorAll("img:not(#rounded)").forEach(img => img.src = image(400, 200));
+  document.querySelector("#rounded").src = image(296, 20);
+  document.querySelector("#rounded").srcset = image(296, 20) + " 296w";
+</script>
+</html>

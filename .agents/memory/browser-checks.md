@@ -61,4 +61,10 @@ Do not require original-file natural dimensions from responsive images using wid
 
 **Why:** Chromium reports density-corrected integer natural dimensions for srcset images. Small logos can have an apparently different aspect ratio simply because their corrected height rounds to a few pixels.
 
-**How to apply:** Verify candidate files against their declared widths and source proportions, then allow about one pixel of density-corrected rounding in browser checks. Retain strict original width/height attribute checks for reserved layout space.
+**How to apply:** Verify candidate files against their declared widths and source proportions. For browser regression checks, decode currentSrc in a separate Image without srcset to recover the selected resource's unrounded ratio; otherwise allow about one pixel of density-corrected rounding. Retain strict original width/height attribute checks for reserved layout space.
+
+Prefer the selected resource's unrounded ratio over a generous percentage tolerance for small responsive logos.
+
+**Why:** Density-corrected heights can round to only a few pixels, making an undistorted logo appear substantially stretched. Raising a global ratio tolerance would also let genuinely squeezed images pass.
+
+**How to apply:** Keep the corrected natural dimensions in diagnostic reports, but use the independently decoded selected resource for the proportion assertion. Keep only a small layout/subpixel tolerance.
