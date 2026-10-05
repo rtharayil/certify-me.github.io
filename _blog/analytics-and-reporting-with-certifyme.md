@@ -9,7 +9,7 @@ author : Aneesha Kurian
 imageLink: /assets4/images/understanding_analy.png
 featured: true
 seo_keywords: "credential analytics, digital badge reporting, tracking learner engagement, CertifyMe dashboard features, organization level analytics"
-faqs: [{"question":"Do credential views demonstrate employment outcomes?","answer":"No. Views and shares are engagement measures. Employment requires separate defined and collected outcome evidence."},{"question":"Can we assume a historical analytics screenshot describes today's fields?","answer":"No. Confirm current report definitions, availability and access with the approved product documentation."}]
+faqs: [{"question":"What do credential views and shares measure?","answer":"Views and shares describe credential engagement. Academic attainment and employment outcomes have their own assessment and outcome evidence."},{"question":"Which analytics reports are available?","answer":"Available reports and fields depend on the current product and account access. The analytics documentation describes the supported views and their event definitions."}]
 last_modified: "2026-10-04"
 last_modified_at: "2026-10-04"
 seo_cluster: "credentials"
@@ -18,13 +18,13 @@ content_authority_p0: true
 
 Credential analytics help institutions understand issuance and engagement. Interpretation matters: a viewed or shared credential is not evidence of skill attainment, job placement or verified employer demand.
 
-## Preserve the event definitions
+## Visibility into credential activity
 
-The original operational guide below describes existing analytics views. Confirm current field definitions, access rights and report availability before treating a screenshot or historical guide as an active product guarantee.
+CertifyMe's analytics views help credential teams understand available issuance and engagement activity. Each report's event definitions, time window and account access give its figures their operational meaning.
 
-## Use an issuance–engagement–outcome measurement ladder
+## Issuance, engagement and programme outcomes
 
-Issuance records what was awarded. Engagement records interactions such as views or shares where measured. Outcomes require separate evidence, such as assessment results or an agreed graduate follow-up method. Do not substitute one level for another.
+Issuance records what was awarded. Engagement describes measured interactions such as views or shares. Assessment results and graduate follow-up evidence describe programme outcomes. Each gives institutional teams a different view of the programme.
 
 ## Connect analytics to governed records
 
@@ -34,11 +34,11 @@ The [institutional credential lifecycle](/platform-overview) helps define who ap
 
 [Workforce intelligence](/workforce-intelligence) concerns occupations and separately sourced market signals. It should not be inferred from credential-page traffic or a share count.
 
-## Evaluate a pilot responsibly
+## Programme-specific engagement insights
 
-Write down event definitions, time window, consent, duplicates and missing-data limitations. Compare agreed measures with the programme baseline. The [anonymous case evidence](/case-studies.html) illustrates scoped adoption/engagement results, not universal conversion uplift.
+Event definitions, reporting periods and data coverage shape how a programme's activity is understood. The [customer case studies](/case-studies.html) describe adoption and engagement within individual implementations.
 
-## Existing operational reference
+## Analytics across the organisation
 
 In the digital age, effective credential management goes beyond just issuing certificates and badges. It’s about understanding how these credentials are used, their impact, and how to optimize the process. 
 
@@ -154,5 +154,5 @@ We've ensured you have all the necessary information to monitor progress and ide
 
 ## Plan your next step
 
-Discuss the actual award, evidence and implementation requirements with your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
+See how credential analytics supports your programme's operations and engagement visibility. [Request an institutional demo](https://info.certifyme.online/request-demo).
 

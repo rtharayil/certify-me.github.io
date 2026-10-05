@@ -1,53 +1,53 @@
 ---
 layout: V4LayoutSingleBlogPost
-title:  'Case Study: Leeds University Achieves 39% Cost Reduction with CertifyMe Credentials'
+title: 'Digital Credentials for Universities: From Academic Awards to Connected Learner Records'
 
-description: "Digital credentials in higher education should connect academic approval, authoritative records and learner evidence."
+description: "Discover how CertifyMe connects university awards, verified credentials, skills and learner records while preserving institutional academic authority."
 abstract: 
 
 topic: news
 author : Aneesha Kurian
 imageLink: /img/blog/higher_education_case_study.jpg
 featured: true
-seo_keywords: "Leeds University digital credentials case study, sustainability in higher education, reducing university paper waste, cost of university certificates, CertifyMe university results"
+seo_keywords: "digital credentials for universities, university credential infrastructure, academic awards, Comprehensive Learner Records, assessed skills, university career services"
 faqs: [{"question":"Does a CLR replace our transcript or SIS?","answer":"Not automatically. It complements institutional records with connected achievements and provenance; the university governs the authoritative roles."},{"question":"Can digital credentials guarantee graduate employability?","answer":"No. They can support evidence presentation and opportunity research; employment outcomes require separate measurement."}]
-last_modified: "2026-10-04"
-last_modified_at: "2026-10-04"
+last_modified: "2026-10-05"
+last_modified_at: "2026-10-05"
 seo_cluster: "higher-education"
 content_authority_p0: true
 ---
 
-Digital credentials in higher education should connect academic approval, authoritative records and learner evidence. A university rollout succeeds only when registrar, academic, IT and career-service responsibilities are explicit.
+University achievements carry more meaning than a certificate image can convey. Degrees, assessed projects, professional learning and co-curricular awards each represent a different part of a learner's progress. Digital credential infrastructure brings that context into records that learners can present and receiving organisations can interpret.
 
-## Map the university buyer journey
+## One connected credential foundation for university teams
 
-Use the [higher-education implementation hub](/credentials-higher-education) to separate programme design, technical evaluation, record governance and learner support. Do not assume one department can approve every layer.
+[CertifyMe for higher education](/credentials-higher-education) connects issuance, verification, skills and learner records. Academic teams retain authority over assessed outcomes, registrars govern official awards, and IT teams support the institutional systems behind delivery. Career services gain a richer view of the evidence learners bring to their next opportunity.
 
-## Registrar: define the authoritative achievement
+## Academic records with institutional authority
 
-Agree names, programme identifiers, award dates, correction procedures and verification exceptions. Decide how the issued achievement relates to the transcript and operational student record.
+Digital diplomas, certificates and badges carry the university's award information into a shareable record. Issuer identity, dates, criteria and applicable status help receiving teams understand the achievement. Corrections and record maintenance remain part of the [credential lifecycle](/platform-overview), with the university retaining authority over its academic records.
 
-## Academic leaders: preserve the assessed meaning
+## Assessed learning expressed through recognised skills
 
-Provosts, deans and programme teams should link outcomes to evidence and review [skills taxonomy relationships](/skills-taxonomy-mapping). A market term must not overwrite the academic outcome or become automatic proof of competence.
+Institution-defined learning outcomes remain authoritative. [Reviewed skills taxonomy relationships](/skills-taxonomy-mapping) connect those outcomes with recognised capability terminology, helping learners explain the relevance of an assessed achievement. The relationship adds context to academic evidence; the assessment remains the basis for the awarded capability.
 
-## IT: test standards and the lifecycle
+## Open standards for structured achievement records
 
-Assess the [credential infrastructure workflow](/platform-overview), supported interfaces, authentication, access, export and status-resource continuity. For [Open Badges 3.0](/blog/why-institutions-should-embrace-open-badges-3-0-standards), test receiving-system compatibility and the actual supported proof mechanism.
+[Open Badges 3.0](/blog/why-institutions-should-embrace-open-badges-3-0-standards) provides a structured achievement format with issuer, recipient, criteria and evidence information. CertifyMe's certified issuer role supports this standards-based approach. Exchange and verification depend on compatible formats, proof mechanisms and available issuer resources.
 
-## Learner records: complement rather than replace
+## A broader record of learner achievement
 
-A [Comprehensive Learner Record](/comprehensive-learner-record) can connect assessed achievements and other experiences with provenance. A Skill Passport or learner presentation should not be treated as a new authoritative transcript unless the institution has explicitly established that role.
+A [Comprehensive Learner Record](/comprehensive-learner-record) brings related achievements together while preserving their issuers and evidence. It gives learners a connected presentation of their progress alongside the authoritative transcript and student information record.
 
-## Career services: distinguish engagement from employment
+## Career relevance grounded in learning evidence
 
-Use [workforce intelligence](/workforce-intelligence) to explore occupational requirements and reviewed market context. Track the actual outcome being evaluated rather than treating engagement as job placement.
+[Workforce intelligence](/workforce-intelligence) relates reviewed skills to occupations and separately sourced employer demand. Career-service teams can use that context alongside assessed achievements to support opportunity research and learner guidance. Engagement, applications and employment remain distinct outcomes.
 
-## Evidence and limitations
+## Institutional adoption in practice
 
-The [applied-sciences case study](/case-studies.html) describes credential issuance and career-service engagement. The customer's identity remains confidential, and results vary by programme. Confirm residency, integration and procurement requirements through documentation and contract review.
+CertifyMe's [anonymous institutional case studies](/case-studies.html) describe credential issuance, adoption and engagement in specific programmes. They show how universities and other institutions have applied digital credentials to their own operating needs.
 
-## Plan your next step
+## Connect your university's achievements
 
-Discuss the actual award, evidence and implementation requirements with your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
+See how CertifyMe fits your university's awards, academic systems and learner-record goals. [Request a university demo](https://info.certifyme.online/request-demo).
 

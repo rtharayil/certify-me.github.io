@@ -59,5 +59,5 @@ Review [anonymous institutional cases](/case-studies.html) and the [public verif
 
 ## Plan your next step
 
-Discuss the actual award, evidence and implementation requirements with your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
+Explore how CertifyMe connects your institution's achievement records with sharing and verification. [Request an institutional demo](https://info.certifyme.online/request-demo).
 

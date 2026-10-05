@@ -15,16 +15,16 @@ last_modified: 2026-10-04
 content_authority_p1: true
 faqs:
   - question: "Does free software mean an institutional pilot has no risk?"
-    answer: "No. Data protection, award authority, recipient support and long-term verification still require approval and testing."
+    answer: "Institutional award authority, data protection, recipient support and ongoing verification remain part of credential-programme governance on a free plan."
   - question: "Does every listed platform currently have a verified free tier?"
-    answer: "No. Current source observations differ, and a usable NetCredential free entitlement was not established. Confirm written terms rather than assuming availability."
+    answer: "Free-plan availability and included features vary by provider. NetCredential's published information does not establish a usable free issuance allowance."
   - question: "Is the only free-plan limitation issuance volume?"
-    answer: "No. Export, API, branding, lifecycle operations, support and continuity may have separate limits. Ask about each requirement."
+    answer: "No. Access to export, APIs, branding, record maintenance, support and long-term continuity can vary by plan as well as issuance volume."
 ---
 
 A free account or entry plan can help test credential issuance, but it is not a risk-free substitute for institutional approval. An education record may need to remain available long after a trial ends. Check current limits, data rights and verification continuity before uploading real learner data. This is CertifyMe's blog, not a hands-on ranking of the products below.
 
-## Current source observations
+## Published free plans and credential allowances
 
 Primary pricing or product pages were checked on 4 October 2026. Prices and plan terms can change; these observations do not guarantee future entitlement.
 

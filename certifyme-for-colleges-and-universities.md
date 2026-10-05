@@ -6,7 +6,7 @@ description: "Issue and verify digital degrees, certificates and badges while co
 
 abstract: "Digital credential infrastructure for universities: connect institutional achievements, open standards, verification, skills and learner records."
 seo_pillar: true
-last_modified_at: "2026-10-04"
+last_modified_at: "2026-10-05"
 breadcrumb_label: "Digital Credentials for Universities"
 faqs:
   - question: "What are digital credentials for universities?"
@@ -16,11 +16,11 @@ faqs:
   - question: "What does Open Badges 3.0 certification cover?"
     answer: "The 1EdTech registry lists CertifyMe for Open Badges 3.0 Issuer and CLR 2.0 Issuer and Displayer roles. These are product-role certifications. Receiving-system compatibility and the format and verification requirements of a particular credential still need to be assessed."
   - question: "How can a university connect credentials to its SIS and LMS?"
-    answer: "Define the authoritative system, issuance event, data mapping and approval process first. Then assess available integrations, APIs or webhooks against the institution's systems, access controls and exception-handling requirements."
+    answer: "Supported integrations, APIs or webhooks connect approved award data with credential issuance. The institution's SIS or LMS remains the source for the relevant academic or completion information, with interfaces and access configured for the agreed workflow."
   - question: "Does a Comprehensive Learner Record replace the academic transcript?"
     answer: "No. A Comprehensive Learner Record connects achievements, skills and other learning evidence while retaining their sources. It complements the authoritative academic transcript; the institution governs issuance, consent and access."
-  - question: "How should a university assess security and implementation?"
-    answer: "Review deployment, data residency, access controls, retention, consent, issuer-key management and status or revocation resources. Request current security evidence and its scope, and agree integration ownership and continuity arrangements before rollout."
+  - question: "How does CertifyMe support institutional security requirements?"
+    answer: "Enterprise SSO and MFA, access controls and agreed deployment and data-processing terms support institutional credential programmes. Security documentation describes the applicable assurance scope, while integration and continuity responsibilities are defined for the university's workflow."
 
 layout: V4LayoutHigherEd
 

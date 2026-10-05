@@ -7,7 +7,8 @@ const output = ".local/reports/competitor-ai-seo";
 const authorities = JSON.parse(fs.readFileSync("_data/ai_authority.json"));
 const vendors = JSON.parse(fs.readFileSync("_data/competitor_evidence.json")).vendors;
 const targets = [...authorities.map(a=>({url:a.url,id:a.id})),...vendors.map(v=>({
-  url:`/blog/certifyme-vs-${v.slug}-2026-comparison.html`,vendor:v.slug
+  url:`/blog/certifyme-vs-${v.slug}-2026-comparison.html`,vendor:v.slug,
+  expectedEvidenceUrls:[...new Set(v.facts.flatMap(f=>f.sources.map(s=>s.url)))]
 }))];
 const base = process.env.REPLIT_DEV_DOMAIN ? `https://${process.env.REPLIT_DEV_DOMAIN}` : null;
 if (!base) throw new Error("The preview development domain is required.");
@@ -53,7 +54,9 @@ if (!base) throw new Error("The preview development domain is required.");
         leadPresent:target.id?visible(lead):null,
         answers:answers?answers.querySelectorAll("[data-answer-category]").length:null,
         comparisonRows:table?table.querySelectorAll("tbody tr").length:null,
-        externalEvidenceLinks:table?table.querySelectorAll('a[href^="https://"]').length:null,
+        externalEvidenceLinks:table?document.querySelectorAll('.comparison-sources a[href^="https://"]').length:null,
+        evidenceLinksComplete:target.vendor?target.expectedEvidenceUrls.every(url=>
+          [...document.querySelectorAll('.comparison-sources a')].some(a=>a.getAttribute('href')===url)):null,
         tableScrollable,
         sourceSans:getComputedStyle(document.querySelector("main")).fontFamily
       };
@@ -62,7 +65,7 @@ if (!base) throw new Error("The preview development domain is required.");
     results.push(result);
     if(result.http!==200||result.h1!==1||result.horizontalOverflow>2||
       (target.id&&(!result.leadPresent||result.answers!==8))||
-      (target.vendor&&(result.comparisonRows!==22||!result.tableScrollable||result.externalEvidenceLinks<22))){
+      (target.vendor&&(result.comparisonRows!==22||!result.tableScrollable||!result.evidenceLinksComplete))){
       issues.push(result);
     }
   }

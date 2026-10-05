@@ -45,5 +45,5 @@ Standards can reduce dependency on a single presentation format, but verificatio
 
 ## Plan your next step
 
-Discuss the actual award, evidence and implementation requirements with your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
+See how CertifyMe's structured credential records support your institution's awards and verification workflows. [Request an institutional demo](https://info.certifyme.online/request-demo).
 

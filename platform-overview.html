@@ -10,9 +10,9 @@ faqs:
   - question: "What is digital credential infrastructure?"
     answer: "Digital credential infrastructure connects institution-governed issuance, open standards, verification, skills and learner records. It preserves achievement evidence and issuer authority rather than treating a credential as a badge image alone."
   - question: "How does digital credential management work?"
-    answer: "Define the award and approval process, issue the supported credential format, maintain sharing and verification resources, and govern corrections, expiry or revocation. Reviewed skills and learner records can extend the evidence while keeping its source clear."
-  - question: "What should university IT teams assess?"
-    answer: "Assess SIS and LMS data flows, API permissions, credential formats, proof and status resources, deployment, privacy, access controls and exception handling. Confirm the implementation scope and available integrations before rollout."
+    answer: "Credential management connects approved award data with issuance, delivery, verification and ongoing record maintenance. Reviewed skills and learner records extend the achievement's context while preserving its source."
+  - question: "How does CertifyMe fit university IT workflows?"
+    answer: "Supported APIs and integrations connect credential issuance with institutional data flows. Access controls, credential formats and deployment terms are configured around the university's systems and operating requirements."
   - question: "How do credentials connect to learner records and workforce intelligence?"
     answer: "A Comprehensive Learner Record connects achievements while preserving provenance. Reviewed skills mappings interpret those achievements. Workforce intelligence relates skills to occupations and separately sourced labour-market information whose coverage and freshness must be documented."
 custom_stylesheet: /assets4/css/platform-overview.css
@@ -34,7 +34,7 @@ custom_stylesheet: /assets4/css/platform-overview.css
     {% include V4NewLook/G2Enterprise.html %}
   </div>
   <section class="container py-5" aria-labelledby="platform-faq-title">
-    <h2 id="platform-faq-title">Institutional implementation questions</h2>
+    <h2 id="platform-faq-title">Institutional platform questions</h2>
     {% for faq in page.faqs %}
     <details class="border rounded p-3 mb-3">
       <summary>{{ faq.question | escape }}</summary>

@@ -41,15 +41,15 @@ Authentication, permissions, monitoring and data protection govern the platform.
 
 The [security page](/security/) describes approved SOC 2 Type II attestation wording, distinct ISO management-system purposes and enterprise authentication. A GDPR policy is not an independent GDPR certification; ISO quality and environmental scopes are not cybersecurity certifications.
 
-## Ask procurement questions in writing
+## Security aligned with institutional operations
 
-Agree supported authentication, evidence access, correction/status processes, retention, export and continuity. Hosting availability is not a guarantee that every customer's storage, backups and support access stay in one region. Residency requirements are contractual.
+Authentication, evidence access, record maintenance and continuity support institutional credential operations. Deployment and residency terms establish the agreed scope for storage, backups and support access.
 
-## Test an exception, not just a successful demo
+## Verification results with clear meaning
 
-Use an authorized test record with a changed signed field or unavailable verification resource. Record what the verifier can establish and what remains unknown. Do not declare every case secure merely because one green status indicator appears.
+Supported proof checks can reveal changes to signed credential data. Verification also depends on available issuer and status resources; an unresolved resource remains an unresolved check. This gives receiving teams a meaningful result rather than treating every record as equally verified.
 
 ## Plan your next step
 
-Discuss the actual award, evidence and implementation requirements with your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
+Explore CertifyMe's credential verification and enterprise security foundations for your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
 

@@ -40,9 +40,9 @@ The [1EdTech registry](https://site.imsglobal.org/certifications/certifyme/certi
 
 Place award approval and maintenance within the [institutional credential lifecycle](/platform-overview). Keep assessment evidence attributable, review [achievement-to-skill relationships](/skills-taxonomy-mapping), and preserve provenance when achievements contribute to a [Comprehensive Learner Record](/comprehensive-learner-record).
 
-## Run a compatibility pilot
+## Sharing and verification across compatible systems
 
-Issue a fictional or authorized test achievement; inspect the data/proof; test a supported recipient and verifier; exercise an invalid proof or unavailable resource; and record export/continuity requirements. Do not turn a successful one-system demonstration into universal interoperability.
+An Open Badges 3.0 record carries structured achievement information and supported proof. Compatible receiving systems can interpret those fields and check applicable status, giving learners a way to present the award beyond its original interface. Exchange depends on the implemented formats and receiving-system support.
 
 ## Review privacy and portability limits
 
@@ -54,5 +54,5 @@ An exported achievement may remain dependent on issuer keys and status resources
 
 ## Plan your next step
 
-Discuss the actual award, evidence and implementation requirements with your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
+Explore Open Badges 3.0 issuance and connected learner records for your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
 

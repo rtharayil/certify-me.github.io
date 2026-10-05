@@ -21,35 +21,35 @@ content_authority_p0: true
 
 A digital credential management platform coordinates an institution's achievement records across approval, issuance, verification and ongoing maintenance. Its value is the governed lifecycle, not just certificate-image creation.
 
-## Use a six-decision lifecycle
+## A connected achievement lifecycle
 
-Define the achievement; approve the assessment; prepare issuer/recipient data; issue the chosen format; verify proof and applicable status; maintain corrections, expiry and export. Assign an accountable team to each decision.
+CertifyMe connects an institution-approved achievement with credential issuance, recipient delivery, verification and ongoing maintenance. Award information and assessment meaning remain institution-governed, while supported formats give the issued record a structured representation.
 
-## Design the record contract
+## Institutional authority behind every award
 
-Decide which fields are authoritative, which evidence may be public and how the record relates to existing systems. The [institutional infrastructure overview](/platform-overview) connects operational requirements rather than assuming an integration exists.
+Authoritative award data, evidence permissions and supported interfaces connect the record with institutional operations. The [platform overview](/platform-overview) shows how those elements support a consistent credential lifecycle.
 
-## Evaluate standards separately
+## Standards-based achievement records
 
-Review [Open Badges 3.0 achievement structures](/blog/why-institutions-should-embrace-open-badges-3-0-standards) and the [W3C issuer–holder–verifier model](/blog/Understanding-W3C-Verifiable-Credentials.html). Confirm the exact implementation and receiving-system capabilities, including proof and status dependencies.
+[Open Badges 3.0](/blog/why-institutions-should-embrace-open-badges-3-0-standards) structures achievement information within a [verifiable-credential model](/blog/Understanding-W3C-Verifiable-Credentials.html). Compatible receiving systems can interpret supported records and check their applicable proof and status resources.
 
-## Add skills only with a reviewed relationship
+## Reviewed skills with academic meaning
 
-Use [skills taxonomy mapping](/skills-taxonomy-mapping) to relate outcomes and evidence to capabilities. A software platform does not independently establish competence because it stores a skill label.
+[Skills taxonomy mapping](/skills-taxonomy-mapping) relates assessed outcomes and evidence to reviewed capabilities. Academic ownership preserves the meaning of each relationship, making the achievement easier to explain beyond its programme title.
 
 ## Connect learner records and market information
 
 A [Comprehensive Learner Record](/comprehensive-learner-record) preserves achievement provenance across a connected record. [Workforce intelligence](/workforce-intelligence) adds separately sourced occupational and demand context, not a job guarantee.
 
-## Test procurement assumptions
+## Workflows connected to institutional systems
 
-Ask for demonstrations of supported API/integration scope, access controls, correction paths, export and continuity. Security and residency are contract-specific questions. A [comparison guide](/compare/) should be checked against current primary sources before a purchase decision.
+Supported APIs and integrations connect credential operations with institutional workflows. Access, record maintenance and deployment terms form part of that configured scope. The [platform comparisons](/compare/) explain the distinctions between published vendor offerings.
 
-## Use documented examples, not promised ROI
+## Institutional adoption in practice
 
-The [anonymous case evidence](/case-studies.html) gives scoped issuance, adoption and engagement results. Plan a pilot baseline for your own administrative and academic outcomes instead of transferring another programme's metrics.
+The [customer case studies](/case-studies.html) show issuance, adoption and engagement within individual programmes, illustrating how credential infrastructure supports institutional operations.
 
 ## Plan your next step
 
-Discuss the actual award, evidence and implementation requirements with your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
+See how CertifyMe connects awards, verification, skills and learner records for your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
 

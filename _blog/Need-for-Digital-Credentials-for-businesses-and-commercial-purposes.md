@@ -52,9 +52,9 @@ Compare approval-to-issuance time, correction rates, unresolved checks, renewal 
 
 Engagement surveys, retention, employee net promoter scores and hiring performance require their own measurement. Badge views are not a substitute. Employees should not be expected to complete required work outside paid or otherwise applicable working arrangements simply because a course is online.
 
-## Scope integrations and growth before procurement
+## Connected workflows for organisational learning
 
-Request current connector/API documentation and test your actual LMS or HRIS. An automation catalogue does not prove a native supported connection to every named system. The [L&D alternatives guide](/blog/three-top-credly-alternatives-training-and-development.html) focuses on recurring programme operations; [skills taxonomy mapping](/skills-taxonomy-mapping) covers reviewed capability relationships. [Discuss a business credential pilot](https://info.certifyme.online/request-demo) with explicit acceptance criteria and no invented ROI.
+Supported connectors and APIs bring institution-approved programme information into credential workflows. Connection options depend on the relevant systems and supported actions. The [L&D alternatives guide](/blog/three-top-credly-alternatives-training-and-development.html) explains recurring programme operations, while [skills taxonomy mapping](/skills-taxonomy-mapping) connects assessed learning with reviewed capabilities. [See CertifyMe for your organisation's learning programmes](https://info.certifyme.online/request-demo).
 
 ## Extend reviewed learning records into workforce planning
 

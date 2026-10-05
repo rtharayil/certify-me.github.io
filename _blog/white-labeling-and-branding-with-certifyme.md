@@ -101,15 +101,15 @@ For bounded first-party implementation evidence, see the [approved anonymous cas
 <br>
 
 
-## Launch checklist: domain, email and accessible presentation
+## A branded credential experience
 
-Have IT confirm the CNAME target, approved platform mapping and TLS hostname using the [custom-domain setup guide](/blog/customDomain.html). Branding assets alone do not configure a domain or a supported integration.
+Custom domains connect the credential experience with your institution's web identity through configured DNS and TLS. The [custom-domain setup guide](/blog/customDomain.html) covers the required platform mapping.
 
 For email, agree the approved sending service and align the visible From domain with authenticated delivery. Review SPF authorization, DKIM signing and DMARC alignment with the institution's email administrator. SPF, DKIM and DMARC have distinct roles; they do not guarantee delivery or eliminate phishing. Avoid adding multiple SPF records or changing a domain-wide DMARC policy without review. [Google's sender guidelines](https://support.google.com/a/answer/81126) provide a primary implementation reference. Do not send SMTP passwords or private keys through ordinary support messages.
 
-Check templates, long learner names, language variants, mobile display, keyboard navigation and accessible video captions. A visual signature or crest is not cryptographic proof. Keep issuer identity, achievement criteria and status intelligible; review [verification responsibilities](/certificate-verification) separately.
+A branded presentation brings templates, learner names and programme identity together across supported devices. Accessible navigation and captions help recipients use that experience. Issuer information, achievement criteria and [credential verification](/certificate-verification) provide the record context behind the visual design.
 
-Confirm current plan entitlement for custom domains, SMTP, banners and video before rollout. Measure optional sharing and recipient feedback with a stated cohort and period if engagement is a goal. Do not claim increased opens, trust or sharing rates without evidence.
+Custom domains, SMTP, banners and video are available according to the selected plan. Together, branding and supported delivery options give recipients a recognisable institutional experience when accessing and sharing their achievements.
 
 ## Conclusion 
 

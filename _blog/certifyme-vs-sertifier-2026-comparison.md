@@ -49,9 +49,9 @@ For a university department or L&D team, the questions are who approves an award
 | Programme reporting | Course/cohort reporting | Institutional credential/record reporting | Completion denominators and correction history |
 | Administration | Role-based permissions, SSO/SCIM | Institutional access/governance offering | Role boundaries, provisioning and account removal |
 | Branding | Branded portal | Branded credential offering | Domains, email and accessible verification pages |
-| Standards | Ask for exact current role/version evidence | Public OB3 and CLR registry roles | Credential export and actual receiver verification |
+| Standards | Published VC and CLR offerings; exact roles and versions depend on the product profile | Public OB3 and CLR registry roles | Credential export and actual receiver verification |
 
-Published capabilities are not a guarantee of entitlement on every plan. Request a current proposal and test the exact administrative setup rather than assuming a free tier includes enterprise controls—or that higher-scale use necessarily requires migration.
+Plan entitlements and the configured administrative scope determine how these capabilities support a programme. Issuance volume, automation and enterprise controls are distinct parts of that offering.
 
 ## Evidence-led comparison
 
@@ -69,19 +69,19 @@ Use the same authorized test achievement on each shortlisted platform. Inspect i
 
 Compare volume units, billing/renewal terms, entitlement, implementation and support, not isolated list prices. Review current security reports/certificates and their period, product scope and customer controls. Specify storage, backups, subprocessors, support access and international transfers in the contract.
 
-## Institutional context and source boundaries
+## Institutional context
 
-Use the [university buyer journey](/credentials-higher-education) to assign responsibilities, the [credential infrastructure overview](/platform-overview) to define the lifecycle, and the [comparison hub](/compare/) to evaluate other vendors. Review [scoped anonymous implementation cases](/case-studies.html) separately: first-party results are not guaranteed outcomes for another institution.
+CertifyMe's [higher-education solution](/credentials-higher-education) connects academic awards with reviewed skills and learner records. The [platform overview](/platform-overview) explains the lifecycle, while [customer case studies](/case-studies.html) show programme-specific use.
 
 Credential-proof verification checks the signed record; it does not independently establish the recipient's identity.
 
-## A useful pilot for multi-department programmes
+## Institutional control across departments
 
-Assign an academic/programme owner, registrar or records owner, IT integration owner and privacy reviewer. Issue an authorized award through a completion event; test a duplicate, an incorrect recipient, a revoked or expired award and account deprovisioning. Inspect what a verifier sees and what is logged. Review [credential infrastructure governance](/platform-overview) to connect those tests to accountable owners.
+CertifyMe connects institution-approved achievements with issuance, recipient access and verification. Academic teams retain responsibility for assessed meaning, registrars for authoritative records, and IT for access and supported integration workflows. The [credential lifecycle](/platform-overview) also supports correction and applicable status processes.
 
-Security and continuity need written evidence for both vendors: current audit scope, data regions, permissions, export rights and maintenance of issuer keys/status resources after termination. A conformance listing does not answer all these questions.
+Security and continuity depend on the agreed product, deployment and contract scope for either vendor. Standards certification covers specified credential roles; independent assurance and access to issuer keys and status resources are distinct matters.
 
-The right choice depends on tested requirements and contract scope, not an enterprise-versus-entry-level label. Use the [platform buyer's guide](/blog/What-is-Digital-Credential-Management-Platform.html) for procurement and [request a governance-focused demo](https://info.certifyme.online/request-demo) against the same pilot for both products.
+The [platform guide](/blog/What-is-Digital-Credential-Management-Platform.html) explains the broader infrastructure choice. [See CertifyMe's credential workflow](https://info.certifyme.online/request-demo) in the context of your institution's awards and records.
 
 ## CertifyMe's standards and workforce evidence
 

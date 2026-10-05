@@ -42,7 +42,8 @@ for v in data["vendors"]:
     checks=[]
     for fact in v["facts"]:
         verified=bool(fact["sources"]) and all(s["url"] in raw and s["observed_on"]=="2026-10-04" for s in fact["sources"])
-        visible=norm(fact["current_claim"]) in norm(" ".join(parsed.text)) if parsed else False
+        displayed_claim=fact["current_claim"].replace("NOT PUBLICLY SPECIFIED","Not specified in the reviewed public sources")
+        visible=norm(displayed_claim) in norm(" ".join(parsed.text)) if parsed else False
         checks.append({"dimension":fact["dimension"],"published_claim_visible":visible,"primary_links_present":verified,"status":fact["status"]})
         if not visible or not verified: issues.append(url+": missing factual cell/source for "+fact["dimension"])
     if any(s in raw for s in ["the more clearly documented choice","CertifyMe wins","attaches live Job Intelligence Reports to every credential"]):

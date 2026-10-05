@@ -59,9 +59,9 @@ Use the same authorized test achievement on each shortlisted platform. Inspect i
 
 Compare volume units, billing/renewal terms, entitlement, implementation and support, not isolated list prices. Review current security reports/certificates and their period, product scope and customer controls. Specify storage, backups, subprocessors, support access and international transfers in the contract.
 
-## Institutional context and source boundaries
+## Institutional context
 
-Use the [university buyer journey](/credentials-higher-education) to assign responsibilities, the [credential infrastructure overview](/platform-overview) to define the lifecycle, and the [comparison hub](/compare/) to evaluate other vendors. Review [scoped anonymous implementation cases](/case-studies.html) separately: first-party results are not guaranteed outcomes for another institution.
+CertifyMe's [higher-education solution](/credentials-higher-education) connects university awards with reviewed skills and learner records. The [platform overview](/platform-overview) explains the infrastructure behind this approach, and [customer case studies](/case-studies.html) show programme-specific adoption.
 
 Credential-proof verification checks the signed record; it does not independently establish the recipient's identity.
 

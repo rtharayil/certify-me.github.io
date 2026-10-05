@@ -24,4 +24,4 @@ contactPh_number: +91-8000080000
 contactEmail: info@splunk.com
 contactCompanyWebSiteLink: www.splunk.com
 ---
- <A write-up about the event and why are you awarding this certificate in less than 50  words >
+Event description

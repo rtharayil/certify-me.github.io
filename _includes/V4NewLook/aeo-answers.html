@@ -1,7 +1,7 @@
 {% assign aeo_authority = site.data.ai_authority | where: "url", page.url | first %}
 {% if aeo_authority %}
 <section class="container py-5 content-authority-editorial" data-ai-authority="{{ aeo_authority.id }}" aria-labelledby="aeo-{{ aeo_authority.id }}">
-  <h2 id="aeo-{{ aeo_authority.id }}">Questions before implementation</h2>
+  <h2 id="aeo-{{ aeo_authority.id }}">Common questions</h2>
   {% for answer in aeo_authority.answers %}
   <details class="mb-3">
     <summary id="aeo-{{ aeo_authority.id }}-{{ forloop.index }}"><strong>{{ answer.question | escape }}</strong></summary>
@@ -9,13 +9,13 @@
   </details>
   {% endfor %}
   <h2>Sources &amp; References</h2>
-  <p>Standards sources describe the applicable specifications. CertifyMe's <a href="{{ aeo_authority.url }}">product information</a> and <a href="/case-studies.html">anonymous case studies</a> describe its offering and reported outcomes, not independent product tests.</p>
+  <p>The references below explain the relevant standards. CertifyMe's <a href="{{ aeo_authority.url }}">product information</a> and <a href="/case-studies.html">customer case studies</a> describe institutional capabilities and adoption.</p>
   {% if aeo_authority.id == 'security' %}
   <p><strong>Security assurance evidence:</strong> Request the applicable SOC 2 report, ISO certificates and processing terms during procurement. The <a href="/security/">CertifyMe security summary</a> is a first-party description, not the complete independent report. The 1EdTech credential registry does not establish SOC 2, ISO or privacy-law compliance.</p>
   {% else %}
   <ul>{% for source in aeo_authority.references %}<li><strong>{% if source.url contains 'w3.org' %}W3C{% elsif source.url contains '1edtech' or source.url contains 'imsglobal' %}1EdTech{% else %}{{ source.vendor | escape }}{% endif %}</strong> — <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{% if source.url contains 'imsglobal' %}CertifyMe certification listing{% else %}{{ source.title | remove: '**' | escape }}{% endif %}</a>; accessed {{ source.observed_on }}{% unless source.publication_date == 'NOT PUBLICLY SPECIFIED' %}; published/updated {{ source.publication_date }}{% endunless %}.</li>{% endfor %}</ul>
   {% endif %}
   <p><a href="/platform-overview#credential-entities">Definitions and relationships</a> · <a href="/comprehensive-learner-record">learner-record provenance</a> · <a href="/skills-taxonomy-mapping">reviewed skills mappings</a> · <a href="/compare/">evidence-led platform comparisons</a></p>
-  <p class="small">Sources checked 4 October 2026. Confirm the applicable product profile and contract for your institution.</p>
+  <p class="small">References accessed 4 October 2026.</p>
 </section>
 {% endif %}

@@ -31,9 +31,9 @@ faqs:
 
 CertifyMe has an active **Open Badges 3.0 Issuer** listing in the [public 1EdTech certification registry](https://site.imsglobal.org/certifications/certifyme/certifyme). The listing checked on 4 October 2026 records certification on **11 May 2026**, registration **IMSO4ce2026W1**, including **API Service Consumer (Write)**. This is useful evidence of a specified interoperability role—not a blanket guarantee about security, identity or every receiving system.
 
-## A short answer for procurement teams
+## Certified achievement and learner-record roles
 
-Record the product, version, certified role and certification identifier in your evaluation. Then test the institution's actual award, export and receiver. The registry also lists CertifyMe's active **CLR 2.0 Issuer and Displayer** roles, certified **24 August 2026**, registration **IMSR2ce2026W1**. Inspect those entries separately if learner records are in scope.
+Alongside Open Badges 3.0 issuance, the registry lists CertifyMe's active **CLR 2.0 Issuer and Displayer** roles, certified **24 August 2026**, registration **IMSR2ce2026W1**. These roles support structured individual achievements and connected learner records, with exchange dependent on compatible receiving systems.
 
 The registry states that CertifyMe has **not yet been vetted for privacy and security**. OB3 certification must not be represented as a SOC 2 report, ISO certification or independent security audit. Request those documents separately and check dates, legal entity, system scope and customer responsibilities.
 

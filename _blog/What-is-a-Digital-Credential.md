@@ -45,11 +45,11 @@ A university could issue a project-completion credential identifying the learner
 
 A credential may carry an achievement related to a skill, but the mapping needs review. A [Comprehensive Learner Record](/comprehensive-learner-record) can organize several achievements while preserving their issuers and evidence; it is not automatic replacement of the transcript.
 
-## Plan the implementation
+## Digital credentials in institutional practice
 
-Agree data minimization, recipient access, corrections, export and key/status continuity. Check supported format/proof versions with receiving systems. For real implementation context, see [anonymous institutional cases](/case-studies.html) and the [university buyer journey](/credentials-higher-education).
+CertifyMe connects credential issuance with recipient access, verification and supported record-maintenance workflows. [Customer case studies](/case-studies.html) describe programme-specific adoption, while the [higher-education solution](/credentials-higher-education) connects university awards with skills and learner records.
 
 ## Plan your next step
 
-Discuss the actual award, evidence and implementation requirements with your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
+Explore a connected credential experience for your institution's achievements. [Request an institutional demo](https://info.certifyme.online/request-demo).
 

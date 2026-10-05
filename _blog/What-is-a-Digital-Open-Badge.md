@@ -51,5 +51,5 @@ CertifyMe's [issuer certification article](/blog/certifyme-open-badge-3-0-certif
 
 ## Plan your next step
 
-Discuss the actual award, evidence and implementation requirements with your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
+See how CertifyMe turns institution-approved achievements into structured, shareable badge records. [Request an institutional demo](https://info.certifyme.online/request-demo).
 

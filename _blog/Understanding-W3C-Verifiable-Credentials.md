@@ -18,9 +18,9 @@ content_authority_p0: true
 
 <p>{% include V4NewLook/aeo-lead.html %}</p>
 
-## Implementation exercise: inspect one credential end to end
+## The structure behind a verifiable achievement
 
-Choose a fictional achievement and identify issuer, subject, holder and intended verifier. Record the achievement data, securing mechanism, key discovery and applicable status resources. Then test what happens when the proof fails or a required resource is unavailable.
+An achievement credential connects the issuer's claim with its subject, supported proof and applicable status. The holder presents the record, and a compatible verifier checks the proof and available issuer resources. A failed proof or unavailable resource changes what the receiving organisation can establish.
 
 ## Keep the institutional meaning outside the cryptographic shortcut
 
@@ -30,9 +30,9 @@ Use the [institutional issuance lifecycle](/platform-overview) to decide who app
 
 An [Open Badges achievement credential](/blog/why-institutions-should-embrace-open-badges-3-0-standards) specializes the achievement context. A [Comprehensive Learner Record](/comprehensive-learner-record) can connect records while retaining provenance. [Reviewed skill relationships](/skills-taxonomy-mapping) remain distinct from cryptographic proof.
 
-## First-party context and limits
+## Institutional adoption in practice
 
-The [anonymous implementation cases](/case-studies.html) illustrate institution-specific programmes. They are not a W3C certification or a guarantee that every verifier supports a particular credential format. The W3C model itself does not verify participant identity or award authority.
+The [customer case studies](/case-studies.html) show how institutional programmes use credential workflows. Standards define the record structure; issuer authority and assessment give the represented achievement its meaning.
 
 ## Existing operational reference
 
@@ -90,11 +90,11 @@ The [W3C VC Data Model 1.1](https://www.w3.org/TR/vc-data-model/) and [Data Mode
 </table>
 </div>
 
-## Institutional implementation checklist
+## Verifiable credentials in institutional workflows
 
-Registrars define issuance and correction rules. Academic teams establish what the achievement evidences. CIOs assess [credential APIs](/api/), [integrations](/allIntegrations.html), key and status-resource continuity, privacy and [security responsibilities](/security/). Career services decide how learners present achievements alongside—not instead of—other hiring evidence.
+Registrars govern awards and corrections, academic teams establish assessed meaning, and supported [APIs](/api/) and [integrations](/allIntegrations.html) connect record workflows with institutional systems. [Security controls](/security/) support access and data handling, while career services help learners present achievements in occupational context.
 
-Start with one approved achievement, document assessment criteria and subject binding, test issuance and verification with the intended receiver, and agree corrections, expiry, revocation and retention. Expand only after the workflow and responsibilities are clear.
+CertifyMe brings approved achievement information into a supported credential format with issuance, sharing and verification workflows. Criteria and subject associations remain part of the record context, while corrections and applicable status processes support its ongoing lifecycle.
 
 ## Authoritative standards references
 
@@ -107,5 +107,5 @@ Updated 3 October 2026. Standards explain an architecture; product certification
 
 ## Plan your next step
 
-Discuss the actual award, evidence and implementation requirements with your institution. [Request an institutional demo](https://info.certifyme.online/request-demo).
+See how CertifyMe's structured achievement records support your institution's credential workflows. [Request an institutional demo](https://info.certifyme.online/request-demo).
 

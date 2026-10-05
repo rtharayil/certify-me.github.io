@@ -61,15 +61,15 @@ Use the same authorized test achievement on each shortlisted platform. Inspect i
 
 Compare volume units, billing/renewal terms, entitlement, implementation and support, not isolated list prices. Review current security reports/certificates and their period, product scope and customer controls. Specify storage, backups, subprocessors, support access and international transfers in the contract.
 
-## Institutional context and source boundaries
+## Institutional context
 
-Use the [university buyer journey](/credentials-higher-education) to assign responsibilities, the [credential infrastructure overview](/platform-overview) to define the lifecycle, and the [comparison hub](/compare/) to evaluate other vendors. Review [scoped anonymous implementation cases](/case-studies.html) separately: first-party results are not guaranteed outcomes for another institution.
+CertifyMe's [higher-education solution](/credentials-higher-education) connects academic records, assessed skills and career relevance. The [platform overview](/platform-overview) explains the underlying lifecycle, while [customer case studies](/case-studies.html) show adoption within individual programmes.
 
 Credential-proof verification checks the signed record; it does not independently establish the recipient's identity.
 
-## A university pilot that resolves the choice
+## From university award to connected record
 
-Have the registrar define an authoritative award, academic staff approve criteria, IT validate the export/integration, and career services review any skill-to-job interpretation. Test one completion, correction and status exception. Export the record into the actual receiving system and agree who maintains keys and status resources after termination. A standard reduces some migration risk; it does not remove every issuer dependency.
+A university credential programme connects registrar-governed awards with academic criteria, supported record exchange and career-relevant skills context. CertifyMe brings those elements together through credential issuance, verification, learner records and workforce information. Portability still depends on compatible receiving systems and continued access to issuer resources.
 
 This article focuses on Accredible's standards and pathway overlap. Use the [platform buyer's guide](/blog/What-is-Digital-Credential-Management-Platform.html) for the full procurement process, and [skills taxonomy mapping](/skills-taxonomy-mapping) when competency labels need institutional review. [Request a scoped comparison demo](https://info.certifyme.online/request-demo) with the same acceptance criteria for both vendors.
 

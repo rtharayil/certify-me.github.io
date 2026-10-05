@@ -35,7 +35,7 @@ for b in briefs:
     }
     # The current specifications are context, not proof of native integrations or all versions.
     if b["id"]=="verifiable-credentials":
-        values["standards"]="W3C publishes VC Data Model v2.0; Open Badges 3.0 and CLR 2.0 define achievement profiles. Confirm the actual profile, model version and proof suite; generic v2.0 publication does not prove every product implements v2.0."
+        values["standards"]="W3C publishes the Verifiable Credentials data model, including v2.0. Open Badges 3.0 and CLR 2.0 apply achievement-specific profiles. Each product's supported profile determines its model version and proof mechanism."
     questions=[
         ("definition",f"What is {names[b['id']]}?"),
         ("why",f"Why does {names[b['id']]} matter?"),
@@ -49,7 +49,7 @@ for b in briefs:
     authorities.append(b | {
         "answers":[{"category":k,"question":q,"answer":values[k]} for k,q in questions],
         "references":[sources[id] for id in b["sources"]],
-        "lead_word_count":count, "editorial_date":"2026-10-04",
+        "lead_word_count":count, "editorial_date":"2026-10-05",
     })
 (ROOT / "_data/ai_authority.json").write_text(json.dumps(authorities,indent=2,ensure_ascii=False)+"\n")
 (OUT / "authority-answer-coverage.json").write_text(json.dumps(authorities,indent=2))

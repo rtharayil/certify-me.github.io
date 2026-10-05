@@ -39,7 +39,7 @@ pages:
   "/blog/certifyme-vs-certifier-2026-comparison.html":
     heading: "Beyond an issuance workflow: the institutional handoffs"
     intro: "Certifier documents automated issuance and enterprise controls. For a university or certification body, the next question is how issued achievements are interpreted and retained. CertifyMe connects presentation, standards and verification with reviewed skills, a CLR and Job Engine workforce insight."
-    decision: "Pilot the same approved award in each proposed workflow. Check automation, API ownership, skill evidence, record continuity and procurement terms separately; an enterprise control is not a complete academic integration."
+    decision: "CertifyMe connects institution-approved awards with supported automation, reviewed skills and learner records. API ownership and programme-specific record workflows bring that approach into institutional operations."
   "/blog/certifyme-vs-credly-2026-comparison.html":
     heading: "Connect a skills ecosystem with institution-governed records"
     intro: "Credly's credential network, external discovery and enterprise skills intelligence are meaningful capabilities. CertifyMe offers an institution-facing architecture connecting the credential lifecycle, reviewed skills, learner records and its own Job Engine. Workforce information is an overlapping category, not an exclusive claim."

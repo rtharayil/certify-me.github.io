@@ -50,16 +50,13 @@ WHO identifies risks including excessive workloads, low control, insecure work a
 
 Start with the conditions people work in. Training should support an appropriate organisational response rather than substitute for addressing workload, management practice or access to qualified help.
 
-For a learning programme, define the intended capability, assessment and support arrangements. Separate completion, assessed understanding and wellbeing outcomes; they are not interchangeable measures of success.
+A learning programme can build assessed understanding and recognise completion. Wellbeing outcomes have a separate basis in organisational conditions, qualified support and appropriate outcome evidence.
 
-## How to evaluate a workplace learning response
+## Learning within a wider workplace response
 
-- Establish the problem and relevant population before choosing an intervention.
-- Record the baseline, observation period and outcome definition.
-- Evaluate participation and assessed learning separately from health outcomes.
-- Protect sensitive employee information and agree who can access it.
-- Account for other organisational changes before attributing an improvement to training.
-- Report limitations and avoid promising the same result for every team.
+Workplace training is one component of a broader response to stress. Its contribution depends on the conditions employees face, the support available and the capabilities being developed. Participation and assessed learning describe the programme; health outcomes describe a different result.
+
+Employee wellbeing information requires appropriate privacy and access arrangements. Organisational changes also influence outcomes, so the effect of training is understood within that wider context.
 
 ## Where digital credentials fit
 
@@ -75,4 +72,4 @@ That record does not diagnose a learner, prove a wellbeing improvement or replac
 
 ## Next step for institutional learning teams
 
-Define one authorised programme, the capability it assesses and the evidence its credential should retain. [Discuss an institutional credential workflow](https://info.certifyme.online/request-demo). Evaluate workplace wellbeing separately using appropriate methods and qualified support.
+CertifyMe helps institutional learning teams recognise authorised programme achievements and retain their assessment context. [Explore a credential workflow for your programme](https://info.certifyme.online/request-demo). Workplace wellbeing remains a separate area supported by appropriate methods and qualified professionals.

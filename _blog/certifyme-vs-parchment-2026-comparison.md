@@ -61,17 +61,17 @@ Use the same authorized test achievement on each shortlisted platform. Inspect i
 
 Compare volume units, billing/renewal terms, entitlement, implementation and support, not isolated list prices. Review current security reports/certificates and their period, product scope and customer controls. Specify storage, backups, subprocessors, support access and international transfers in the contract.
 
-## Institutional context and source boundaries
+## Institutional context
 
-Use the [university buyer journey](/credentials-higher-education) to assign responsibilities, the [credential infrastructure overview](/platform-overview) to define the lifecycle, and the [comparison hub](/compare/) to evaluate other vendors. Review [scoped anonymous implementation cases](/case-studies.html) separately: first-party results are not guaranteed outcomes for another institution.
+CertifyMe's [higher-education solution](/credentials-higher-education) connects institution-approved achievements with skills, learner records and workforce context. The [platform overview](/platform-overview) describes its credential lifecycle, and [customer case studies](/case-studies.html) show programme-specific adoption.
 
 Credential-proof verification checks the signed record; it does not independently establish the recipient's identity.
 
-## Test records rather than slogans
+## Connected achievements alongside official records
 
-Request the same authorized sample from both vendors: an official award where applicable, an assessed badge and a connected record. Check export into the actual receiver; correct an error and inspect status. Confirm who maintains issuer keys, status resources and evidence access after migration. Compare current fees, support, integration obligations, administrator controls and scoped security documents.
+Parchment's academic-record workflows and CertifyMe's connected credential approach can serve different institutional needs. An official transcript retains its registrar-governed role, while assessed badges and connected learner records add broader achievement context. Both platforms' supported formats, status resources and integrations shape how their records can be used after issuance.
 
-CertifyMe's workforce dataset covers 20 million live jobs from 50,000 companies, refreshed every two weeks. These first-party coverage figures do not measure graduate placement or establish comparative superiority. Use the [university credential guide](/credentials-higher-education) to plan responsibilities across your teams, and [request a university workflow demonstration](https://info.certifyme.online/request-demo) against your existing record processes.
+CertifyMe's job-farming engine covers 20 million live jobs from 50,000 companies, refreshed every two weeks. This adds occupational context to assessed learning without conflating employer demand with graduate placement. Explore the [higher-education solution](/credentials-higher-education) or [see a university workflow demonstration](https://info.certifyme.online/request-demo).
 
 ## When one platform—or two—may make sense
 

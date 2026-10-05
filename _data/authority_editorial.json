@@ -5,10 +5,10 @@
     "name": "Digital credential infrastructure",
     "definition": "Digital credential infrastructure connects institution-governed award approval, issuance, verification and record maintenance with supported interfaces and related records.",
     "problem": "When award rules, issuance permissions and verification procedures are disconnected, teams can issue inconsistent records or leave correction responsibilities unclear.",
-    "architecture": "Use an achievement–approval–issuance–proof/status–record architecture. Registrars govern authoritative award data, academic teams approve assessed meaning, and IT checks supported access and interfaces.",
-    "how": "Agree the achievement and approving role; prepare the authorized data; issue a supported format; test recipient/verifier behavior; then maintain corrections, dates, evidence access and applicable status resources.",
-    "standards": "Open Badges 3.0 describes achievement credentials; W3C Verifiable Credentials describes issuer, holder and verifier roles. Confirm versions, securing mechanisms and receiver compatibility separately. A standard is not a certification of every implementation.",
-    "implementation": "Pilot one governed programme with explicit acceptance criteria for approval, issuance, verification, export and exceptions. Confirm the current API/integration scope, access controls and contract-specific residency rather than assuming a connector exists.",
+    "architecture": "Award approval, issuance, proof and status checks, and record maintenance form a connected credential lifecycle. Registrars retain authority over award data, academic teams approve assessed meaning, and IT supports access and compatible interfaces.",
+    "how": "CertifyMe connects institution-approved achievement information with supported credential formats, recipient delivery and verification. Corrections, dates, evidence access and applicable status remain part of the record lifecycle.",
+    "standards": "Open Badges 3.0 describes achievement credentials; W3C Verifiable Credentials describes issuer, holder and verifier roles. Supported formats and proof mechanisms enable exchange with compatible receiving systems.",
+    "implementation": "A governed programme brings approval, issuance, recipient access, verification and record maintenance together. API and integration scope, security controls and deployment terms are aligned with the institution's systems.",
     "use_case": "Universities can govern academic and co-curricular awards; certification bodies can govern professional achievements; enterprise and training teams can manage assessed programme recognition. The award criteria determine what is actually supported.",
     "example": "A department awards an assessed project-completion credential after approval, keeps sensitive feedback in an authorized system and defines who handles a correction.",
     "limitation": "An issuance platform does not independently prove a learner's competence, issuer accreditation or real-world identity. Keys, status resources and receiving-system support can remain dependencies.",
@@ -19,7 +19,7 @@
       },
       {
         "question": "Does every programme need every connected feature?",
-        "answer": "No. Select standards, skills/record scope and interfaces according to the actual programme and receiving-system requirements."
+        "answer": "Different programmes use different combinations of credential formats, skills, records and interfaces. The institution's awards and receiving systems determine the relevant capabilities."
       }
     ],
     "articles": [
@@ -64,8 +64,8 @@
       },
       {
         "url": "/blog/higher-education.html",
-        "anchor": "Case Study: Leeds University Achieves 39% Cost Reduction with CertifyMe Credentials",
-        "context": "Allocate university buyer responsibilities and preserve transcript and SIS authority."
+        "anchor": "Digital Credentials for Universities: From Academic Awards to Connected Learner Records",
+        "context": "Connect university awards, assessed skills and learner records."
       }
     ]
   },
@@ -75,17 +75,17 @@
     "name": "Open Badges 3.0",
     "definition": "Open Badges 3.0 describes digital achievement credentials that identify an issuer, achievement and related criteria/evidence within a verifiable-credential context.",
     "problem": "A badge image can be easy to share while leaving its achievement, assessment and verification requirements unclear. Institutions need the record and governance behind the presentation.",
-    "architecture": "Distinguish issuer, subject/recipient, achievement, criteria, evidence and supported proof. Receiving systems and verifier policies remain separate parts of the operating architecture.",
-    "how": "Define the achievement, issue a supported OB3 record, let an authorized holder present it and have a receiver check the applicable proof, issuer authority and status resources.",
-    "standards": "Use the 1EdTech Open Badges specification and the related W3C model. CertifyMe's public 1EdTech registry listing supports its OB3 issuer certification scope; it does not certify every receiver or unrelated integration.",
-    "implementation": "Test an authorized achievement with the actual recipient and verifier. Inspect record fields and proof behavior, export and an exception; document version/receiver compatibility rather than relying on a badge graphic.",
+    "architecture": "An Open Badges record connects issuer, recipient, achievement, criteria, evidence and supported proof. Receiving systems interpret that structured information according to their own policies.",
+    "how": "CertifyMe's certified OB3 Issuer role supports the issuance of structured achievements that authorized holders can present to compatible verifiers for proof and status checks.",
+    "standards": "Open Badges 3.0 applies the 1EdTech specification within a verifiable-credential context. CertifyMe's Open Badges 3.0 Issuer certification is listed in the public 1EdTech registry.",
+    "implementation": "Institution-approved achievements can be represented with structured criteria and evidence, giving recipients a shareable record that receiving systems can interpret when their formats and proof mechanisms are compatible.",
     "use_case": "A faculty may recognize an assessed laboratory milestone; a professional body may recognize development activity. Distinguish attendance, completion and demonstrated competence in the criteria.",
     "example": "An assessed research-proposal milestone connects the achievement with its criteria and evidence, while the institution controls access to reviewer feedback.",
     "limitation": "OB3 conformance does not establish assessment quality, independent recipient identity or universal portability. Verification may retain issuer-key and status-resource dependencies.",
     "faq": [
       {
         "question": "Does OB3 issuer certification certify every receiving platform?",
-        "answer": "No. Verify the receiver's supported role, versions and proof mechanisms separately."
+        "answer": "No. Issuer certification covers the listed issuer product and role. Receiving platforms have their own supported formats and proof mechanisms."
       },
       {
         "question": "Does a badge necessarily prove a skill?",
@@ -145,10 +145,10 @@
     "name": "W3C Verifiable Credentials",
     "definition": "The W3C Verifiable Credentials data model describes structured issuer claims and issuer, holder and verifier roles; an appropriate securing mechanism supports proof checks.",
     "problem": "A receiving organization needs to separate the claim, its proof and the issuer's authority rather than accepting a visually convincing document.",
-    "architecture": "Keep the credential data model, securing mechanism, resource discovery/status and receiving policy distinct. The model describes relationships; it does not independently verify participant identity.",
+    "architecture": "The credential data model, securing mechanism, issuer resources and receiving policy serve distinct roles. Together they give a receiving organisation the information needed to interpret an issued claim.",
     "how": "A verifier checks a supported proof and relevant dates/status resources, then evaluates whether the issuer and achievement meet its policy. Successful proof checking is not the whole acceptance decision.",
-    "standards": "Use the published W3C data model and the applicable securing mechanism. Open Badges provides an achievement context; a CLR connects records with provenance. Do not assume one universal proof mechanism.",
-    "implementation": "Inspect an authorized test record end to end. Agree issuer-key/status continuity, export, access to evidence, compatible receivers and the policy for unavailable resources or invalid proof.",
+    "standards": "The W3C data model describes issuer claims; Open Badges supplies achievement context and a CLR connects related records with provenance. Proof mechanisms depend on the implemented profile.",
+    "implementation": "A verifiable-credential workflow connects a supported proof with issuer information, dates and applicable status. Continued access to issuer keys, evidence and compatible receiving systems supports long-term interpretation.",
     "use_case": "Universities and professional bodies can present supported achievements to a verifier; the verifier still assesses issuer authority and purpose-specific requirements.",
     "example": "A learner presents a course-completion record. The receiving organization checks its proof, reviews the course against its requirements and confirms the recipient's identity.",
     "limitation": "A valid proof may accompany an unsuitable or unsupported claim. Standards do not guarantee universal receiver compatibility, issuer-independent availability or independent real-world identity verification.",
@@ -221,10 +221,10 @@
     "name": "Skills taxonomy mapping",
     "definition": "Skills taxonomy mapping relates institution-defined outcomes and assessed achievement evidence to reviewed capability concepts in local or reference vocabularies.",
     "problem": "Course titles, credential labels and occupational skill terms can sound similar without describing the same assessed capability. Institutions need accountable review of the relationship.",
-    "architecture": "Programme → learning outcome → achievement evidence → credential → reviewed skill → learner record → occupation → separately sourced workforce demand. Keep academic meaning and market signals distinct.",
-    "how": "Start with the institution's outcome and assessment. Review the relationship to an ESCO, O*NET or local concept, record the rationale/provenance, and revisit it when assessment or vocabulary changes.",
+    "architecture": "Programme → learning outcome → achievement evidence → credential → reviewed skill → learner record → occupation → separately sourced workforce demand. Academic meaning and market signals retain their distinct sources.",
+    "how": "Institution-reviewed relationships connect assessed outcomes to ESCO, O*NET or local concepts, preserving the rationale and provenance behind each mapping.",
     "standards": "ESCO, O*NET and custom competency frameworks provide reference vocabularies; they are not automatic proof of competence or a verified native integration. Credential and record formats preserve the issued claim's context.",
-    "implementation": "Select one programme, assess a small set of outcome-to-skill relationships with academic owners, and define review/versioning and exception responsibilities. Do not automatically translate a title match into an attainment claim.",
+    "implementation": "Academic owners govern outcome-to-skill relationships as programmes and reference vocabularies change. The issued achievement retains the assessed meaning; the skill relationship adds interpretable context.",
     "use_case": "Academic leadership can examine curriculum relevance; career services can help learners explain assessed capabilities; a certification body can describe qualification evidence consistently.",
     "example": "A rubric-assessed data-cleaning project connects a learning achievement with a specific capability and its academic review rationale.",
     "limitation": "A taxonomy link is a conceptual relationship, not an independent competency or employment examination. Market data, identity checking and assessment are separate evidence questions.",
@@ -276,7 +276,7 @@
       },
       {
         "url": "/blog/higher-education.html",
-        "anchor": "Case Study: Leeds University Achieves 39% Cost Reduction with CertifyMe Credentials",
+        "anchor": "Digital Credentials for Universities: From Academic Awards to Connected Learner Records",
         "context": "Allocate university buyer responsibilities and preserve transcript and SIS authority."
       },
       {
@@ -297,10 +297,10 @@
     "name": "Comprehensive Learner Record",
     "definition": "A Comprehensive Learner Record connects achievements and related evidence with provenance in an institution-governed learner record.",
     "problem": "A transcript, individual badge and co-curricular achievement can describe different parts of a learner's experience. Connecting them should not erase who issued or assessed each item.",
-    "architecture": "Maintain each achievement's issuer, criteria, evidence and reviewed relationships within the connected record. The SIS and transcript retain their separately governed authoritative roles.",
-    "how": "Select the achievements to connect; preserve issuers and evidence references; review any skills relationships; agree recipient access, correction, export and applicable status behavior.",
-    "standards": "CLR is a 1EdTech learner-record context. Open Badges and W3C credential concepts are related but not interchangeable. Confirm the actual supported versions, roles and securing mechanisms rather than inferring a new certification.",
-    "implementation": "Pilot a defined learner journey with registrar, academic and IT ownership. Check record completeness, evidence permissions, correction/export behavior and the distinction between learner presentation and authoritative academic records.",
+    "architecture": "A connected learner record preserves the issuer, criteria and evidence behind each achievement. The SIS and transcript retain their separately governed authoritative roles.",
+    "how": "CertifyMe connects achievements and reviewed skills relationships in a learner-facing record with issuer provenance, supported access, correction and export workflows.",
+    "standards": "CLR is a 1EdTech learner-record standard related to Open Badges and W3C credential concepts. CertifyMe's CLR 2.0 Issuer and Displayer roles are listed in the 1EdTech registry.",
+    "implementation": "Registrars, academic teams and IT bring their established record and access responsibilities to a connected learner journey. Learners can present achievements without replacing the institution's official academic record.",
     "use_case": "A university may connect academic, assessed project and co-curricular achievements. Career services may help a learner present relevant evidence while preserving issuer boundaries.",
     "example": "A learner record brings together a course achievement and an assessed project, preserving each award's criteria, evidence and source.",
     "limitation": "A CLR does not automatically replace a transcript, SIS or every receiving organization's requirements. Aggregating records is not independent verification of all underlying claims.",
@@ -352,7 +352,7 @@
       },
       {
         "url": "/blog/higher-education.html",
-        "anchor": "Case Study: Leeds University Achieves 39% Cost Reduction with CertifyMe Credentials",
+        "anchor": "Digital Credentials for Universities: From Academic Awards to Connected Learner Records",
         "context": "Allocate university buyer responsibilities and preserve transcript and SIS authority."
       },
       {
@@ -373,13 +373,13 @@
     "name": "Workforce intelligence",
     "definition": "Institutional workforce intelligence relates reviewed skills and achievements to occupations and separately sourced employer-demand information.",
     "problem": "Curriculum evidence and market vocabulary may not align directly. Institutions need to examine relevance without treating a job posting or a skill-term match as proof of attainment.",
-    "architecture": "Keep assessed achievement evidence, reviewed skill mapping, occupation relationships and market sources as distinct layers with their own provenance.",
-    "how": "Review the academic evidence first, relate capabilities to occupational context, then inspect source dates, refresh, geography and market limitations before using the result for a decision.",
+    "architecture": "Assessed achievement evidence, reviewed skill relationships, occupations and employer-demand sources remain distinct layers with their own provenance.",
+    "how": "CertifyMe relates reviewed credential-associated skills to occupational context and separately sourced job information, helping academic and career-service teams explore relevant opportunities.",
     "standards": "Reference vocabularies such as ESCO and O*NET can support reviewed occupation relationships. They do not certify employer demand, learner competence or a native connector.",
-    "implementation": "Academic and career-service teams should agree the decision, supported data fields and review responsibility. Confirm source permissions, licensing, deduplication and salary availability rather than inferring them from dataset scale.",
+    "implementation": "Academic and career-service teams can relate programme skills to occupational requirements and employer-demand context. Available data fields, geography and salary information depend on the sources used for each report.",
     "use_case": "Programme leaders can investigate curriculum relevance; career services can support opportunity research; learners can explain achievements and investigate gaps without an employment guarantee.",
     "example": "Compare project-related capabilities with occupational descriptions and recent employer requirements to guide curriculum planning and career conversations.",
-    "limitation": "Approved coverage is 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks. This does not establish real-time refresh, exact country coverage, universal salary availability or guaranteed hiring.",
+    "limitation": "CertifyMe's job-farming engine covers 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks. Geography and available report fields depend on the source data. Occupational context supports opportunity research; hiring remains an employer decision.",
     "faq": [
       {
         "question": "Does workforce information prove job readiness?",
@@ -387,7 +387,7 @@
       },
       {
         "question": "Is the job dataset refreshed in real time?",
-        "answer": "The approved refresh cadence is every two weeks. Live-job coverage is not a promise of instantaneous updates."
+        "answer": "The dataset is refreshed every two weeks, keeping job and company context updated on that cadence."
       }
     ],
     "articles": [
@@ -422,7 +422,7 @@
       },
       {
         "url": "/blog/higher-education.html",
-        "anchor": "Case Study: Leeds University Achieves 39% Cost Reduction with CertifyMe Credentials",
+        "anchor": "Digital Credentials for Universities: From Academic Awards to Connected Learner Records",
         "context": "Allocate university buyer responsibilities and preserve transcript and SIS authority."
       },
       {

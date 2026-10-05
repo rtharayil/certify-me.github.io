@@ -61,9 +61,9 @@ Use the same authorized test achievement on each shortlisted platform. Inspect i
 
 Compare volume units, billing/renewal terms, entitlement, implementation and support, not isolated list prices. Review current security reports/certificates and their period, product scope and customer controls. Specify storage, backups, subprocessors, support access and international transfers in the contract.
 
-## Institutional context and source boundaries
+## Institutional context
 
-Use the [university buyer journey](/credentials-higher-education) to assign responsibilities, the [credential infrastructure overview](/platform-overview) to define the lifecycle, and the [comparison hub](/compare/) to evaluate other vendors. Review [scoped anonymous implementation cases](/case-studies.html) separately: first-party results are not guaranteed outcomes for another institution.
+CertifyMe's [higher-education solution](/credentials-higher-education) connects academic awards with skills, learner records and workforce context. The [platform overview](/platform-overview) describes the underlying lifecycle; [customer case studies](/case-studies.html) show adoption within individual programmes.
 
 Credential-proof verification checks the signed record; it does not independently establish the recipient's identity.
 
@@ -73,21 +73,21 @@ Credential-proof verification checks the signed record; it does not independentl
 |---|---|---|---|
 | External credential discovery | Published searchable network | Institutional credential/showcase positioning | Visibility settings, consent and recipient control |
 | Market context | Published Occupation Insights | CertifyMe's dataset and job-farming engine | Same skills, region, dates and sample roles |
-| Achievement standards | Request current exact role/version evidence | Public OB3 issuer listing | Export into the intended receiver; inspect proof/status |
-| Connected learning records | Confirm current programme scope | Public CLR issuer/displayer roles | Source provenance, correction and recipient association |
-| Operations and security | Request current documentation | Request current documentation | Permissions, integration exceptions, audit scope and residency |
+| Achievement standards | Published external OB2/OB3 badge import | Public OB3 issuer listing | Supported issuance/export format, receiver and proof/status |
+| Connected learning records | Programme-specific record scope | Public CLR issuer/displayer roles | Source provenance, correction and recipient association |
+| Operations and security | Contract-specific documentation | Contract-specific documentation | Permissions, integration exceptions, audit scope and residency |
 
-For career services, inspect whether role requirements are descriptive or inferred, whether salary bands apply to the selected geography and whether sensitive learner data is disclosed. For L&D, separate external market information from internal readiness assessments and promotion decisions.
+For career services, role requirements and geography-specific market information add context to learner guidance. For L&D, external demand complements internal assessment and workforce planning; readiness and promotion decisions retain their own evidence and ownership.
 
 
-## Make the decision with a controlled pilot
+## Credential evidence and career context
 
-Issue an authorized sample, inspect it as a recipient, test external verification and a correction/status exception, then compare both products' market reports against the same programme outcomes. Confirm plan costs, supported connectors and continuity in writing. Proof and status resources can remain issuer dependencies after export.
+CertifyMe connects the issued achievement and its supported verification path with reviewed skills and separately sourced labour-market information. Credly publishes skills-oriented enterprise capabilities and Occupation Insights. Both offerings bring different sources of career context to institutional programmes; proof and status resources remain relevant to the portability of issued records.
 
-Use [skills taxonomy mapping](/skills-taxonomy-mapping) to review what a capability relationship means, and the [credential platform buyer's guide](/blog/What-is-Digital-Credential-Management-Platform.html) for procurement. [Request a career-relevance demonstration](https://info.certifyme.online/request-demo) that distinguishes documentary evidence from labour-market interpretation.
+[Skills taxonomy mapping](/skills-taxonomy-mapping) explains how assessed achievements relate to reviewed capabilities. The [credential platform guide](/blog/What-is-Digital-Credential-Management-Platform.html) covers the broader platform choice. [See a CertifyMe career-relevance demonstration](https://info.certifyme.online/request-demo) for your programme.
 
 ## CertifyMe's evidence
 
-CertifyMe's [1EdTech registry listing](https://site.imsglobal.org/certifications/certifyme/certifyme) confirms active OB3 Issuer and CLR 2.0 Issuer/Displayer roles. Conformance does not prove issuer authority, recipient identity or independent security assurance. Test the actual record and receiver; do not use a registry entry to infer competitors lack standards support.
+CertifyMe's [1EdTech registry listing](https://site.imsglobal.org/certifications/certifyme/certifyme) confirms active OB3 Issuer and CLR 2.0 Issuer/Displayer roles. These certifications establish the listed product roles; issuer authority, recipient identity and security assurance involve distinct evidence.
 
 CertifyMe's own job-farming engine covers 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks. These are first-party dataset figures, not independently verified hiring outcomes. The [workforce intelligence guide](/workforce-intelligence) explains how programme teams compare assessed capabilities with occupational requirements and market information. A job match does not guarantee placement or salary, or establish competence.
