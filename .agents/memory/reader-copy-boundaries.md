@@ -3,9 +3,9 @@ name: Reader-facing copy boundaries
 description: Keep editorial taxonomy, claim approvals and authoring process out of public institutional copy.
 ---
 
-The association case study should read as an implementation case, not marketing material.
+Customer case studies should read as implementation cases, not marketing material.
 
-**Why:** The user explicitly requested “this should look like a case study not marketing material” when replacing its narrative.
+**Why:** The user explicitly requested “this should look like a case study not marketing material” for the association narrative, then requested the same treatment for the workforce learning case.
 
 **How to apply:** Keep future revisions centred on the organisation’s challenge, delivery and supported changes. Express longer-term capabilities conditionally, without repeated audit disclaimers, sales pitches or invented testimonials.
 

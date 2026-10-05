@@ -1,0 +1,142 @@
+A European Workforce Learning Organisation
+From fragmented training records to a portable record of learner capability
+40,000+ LEARNERS • 80,000+ CREDENTIALS • 66 LANGUAGES • MULTI-COUNTRY DELIVERY
+THE BUSINESS CHALLENGE
+Growth had created a learner-record problem
+The organisation is one of Europe's established providers of language and workforce training, supporting learners across multiple countries and operating within different regulatory and funding environments.
+Its scale brought a very practical operational challenge.
+The organisation was not delivering one type of learning to one type of learner through one system.
+It was managing different programmes, different learner populations, different delivery models and different requirements for recording achievement.
+A learner might complete language training, a vocational programme, an assessment or another form of structured development. The evidence generated from those experiences could look different depending on the programme, country or funding framework.
+For the learning business, this created a fundamental problem:
+The organisation knew what learners had completed, but it was becoming increasingly difficult to create one consistent picture of what learners had actually achieved and what capabilities those achievements represented.
+
+That mattered for more than record keeping.
+Learners increasingly needed to take evidence of their learning with them — to employers, other learning providers, professional environments and future programmes.
+The organisation also needed a more consistent way to handle different regulatory and funding requirements without building a separate credentialing and record-keeping process for every programme.
+And there was a longer-term opportunity.
+If learning achievements could be expressed as recognised skills, the organisation could begin connecting its learning portfolio with the skills employers and the wider labour market were looking for.
+The question became:
+How do we create a common learner record across a complex learning operation without forcing every programme and country into the same operational model?
+
+That became the starting point for the project.
+THE SOLUTION
+A common credential and skills layer across a diverse learning operation
+The organisation did not want another learning management system.
+It already had systems supporting learning delivery, learner information and programme operations.
+The requirement was to create a common layer for achievement, verification and skills that could work across that existing environment.
+CertifyMe was introduced as that layer.
+The implementation was built around six capabilities, with each layer addressing a different part of the business problem.
+01 — Presentation & Access
+Completed learning could be represented as a digital credential that learners could access and retain beyond the original programme.
+The credential became a persistent representation of the learner's achievement rather than another document generated at the end of a course.
+02 — Standards & Interoperability
+The organisation needed those achievements to be useful outside its own environment.
+Using recognised digital credential standards provided a consistent structure for representing achievements across programmes and learner journeys.
+This was particularly important for learners who might move between training providers, employers or countries.
+03 — Verification & Trust
+The credential needed to answer a basic question for anyone reviewing a learner's record:
+Can this achievement be trusted?
+The verification layer provided evidence of the issuer, recipient and achievement, allowing a learner's credentials to be independently checked rather than relying solely on a document supplied by the learner.
+04 — Skill Taxonomy Alignment
+This was where the project moved beyond credential management.
+The organisation began connecting learning outcomes with the skills represented by that learning.
+Where appropriate, skills could be aligned with recognised frameworks such as ESCO, creating a more consistent vocabulary across programmes and markets.
+This changed the meaning of the record.
+Instead of:
+Learner completed Programme A.
+
+the organisation could begin representing:
+Learner completed Programme A and demonstrated these capabilities.
+
+05 — Comprehensive Learner Record
+Once credentials and skills could be represented consistently, they could be brought together.
+A learner's record could accumulate achievements from different programmes rather than treating every completion as an isolated event.
+This was particularly relevant in workforce learning, where a learner's development may span several programmes, assessments and stages of training.
+The record could progressively become a representation of capability, rather than simply a history of course attendance.
+06 — Workforce Intelligence & Opportunity
+The final layer connected the learner's skills with the labour market.
+Skills could be considered in relation to occupations, employers, locations and workforce requirements.
+This created a different relationship between the learning business and the employment market.
+The organisation could begin looking beyond:
+“What training did we deliver?”
+towards:
+“What capabilities are we helping people develop, and where are those capabilities relevant?”
+HOW IT WAS IMPLEMENTED
+The six layers were built into the operating model — not bolted on afterwards
+The implementation began with discovery.
+The project team worked with the organisation to understand how learner information moved through its existing environment, how programmes were structured, how completion was recorded and how different regulatory and funding requirements affected the resulting records.
+This was particularly important because standardising the credential layer did not mean standardising every learning programme.
+Different programmes could continue to operate according to their own requirements while the achievement data was brought into a common structure.
+The implementation then worked through four practical stages:
+Discovery
+Existing learning processes, programme structures, learner data and regulatory requirements were mapped.
+The team identified where credentials should be generated, what information was required and how the credential layer would interact with existing systems.
+Integration
+The selected learning workflows were connected to CertifyMe.
+The objective was to allow achievement information generated through existing learning processes to flow into the credential environment without introducing a parallel manual process for administrators.
+Skills and credential modelling
+The programme outcomes were reviewed and the relevant skills identified.
+Where appropriate, these were mapped to recognised skills frameworks, providing a consistent language that could be used across different programmes.
+Validation and rollout
+Representative programmes were tested end-to-end.
+The organisation could validate the complete journey:
+Learning → Completion → Credential → Verification → Skills → Learner Record
+before extending the approach more broadly.
+Following production rollout, a 30-day hypercare period provided operational support while administrators and learners began using the new workflows in live delivery.
+Important: I would describe the three-month period as the initial implementation / rollout, if that is the actual agreed project fact. I would not imply that the organisation's entire multi-year transformation was completed in three months.
+
+WHAT CHANGED
+From a collection of training records to a common language of capability
+The most important change was not the number of digital credentials issued.
+It was the introduction of a common structure for representing learning achievements across a complex organisation.
+Before:
+Programme → Completion → Programme-specific record
+After:
+Learning → Achievement → Verified Credential → Skills → Learner Record → Workforce Context
+This allowed the organisation to support differences between programmes and markets while establishing a consistent underlying representation of learner achievement.
+For a learner, that meant achievements could become more portable and useful beyond the programme in which they were earned.
+For the organisation, it created a foundation for managing learning evidence at scale without treating every programme as a separate credentialing problem.
+OUTCOME
+Scale without losing the context behind the achievement
+The organisation has supported more than 40,000 learners and issued more than 80,000 digital credentials.
+The credential and skills model has supported:
+~82% adoption
+across the relevant learner population.
+The solution has also supported requirements across five regulatory / funding frameworks and 66 languages, reflecting the complexity of the organisation's operating environment.
+But the more significant outcome is structural.
+The organisation now has a way to connect learning achievements across a diverse training portfolio while retaining the information needed to understand what those achievements represent.
+The digital credential is no longer the end of the learning process.
+It becomes an entry point into a richer record:
+Achievement → Skill → Learner Record → Workforce Relevance
+WHY THIS MATTERS TO A LEARNING BUSINESS
+For the COO, the value is operational:
+One underlying credential and skills infrastructure can support different programmes, markets and requirements without creating a separate process for each one.
+For the learning leader, the value is educational:
+Learning outcomes can be connected to the skills they are intended to develop.
+For the learner, the value is portability:
+Achievements can remain useful beyond the organisation and beyond the programme in which they were earned.
+For the employer or receiving organisation, the value is trust:
+There is a verifiable source behind the learner's achievement.
+And for the business itself, the longer-term value is the ability to connect:
+Learning → Skills → Capability → Workforce Demand
+That is the shift from delivering training to building a more connected learner capability ecosystem.
+The six-layer transformation
+Layer	What it solved
+Presentation & Access	Made learning achievements accessible and portable
+Standards & Interoperability	Created a consistent representation across environments
+Verification & Trust	Made achievements independently verifiable
+Skill Taxonomy Alignment	Connected learning outcomes with recognised skills
+Comprehensive Learner Record	Connected achievements across the learner journey
+Workforce Intelligence & Opportunity	Connected learner capability with workforce context
+
+
+The resulting journey
+Learning
+→ Achievement
+→ Credential
+→ Verification
+→ Skills
+→ Learner Record
+→ Workforce Intelligence
+→ Opportunity
