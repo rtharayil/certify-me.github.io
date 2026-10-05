@@ -663,3 +663,59 @@ mtime_ms = 1791173860488
 storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/3ac1189e-c995-471a-ad53-74f69462db34/39e04182-2fbe-4cdf-b52e-64d573b0e2f7"
 storage_version_token = "1791173970621985"
 content_type = "text/html"
+
+[[outputs]]
+id = "xgP60R_g8L1UJHS9i4wsI"
+uri = "file://.local/reports/instructional-content-audit/deliverables/instructional-content-audit.html"
+type = "html"
+title = "CertifyMe content-format audit"
+description = "Readable findings, priority pages, shared-template causes, proposed phrasing directions and audit limits. No website copy changed."
+logical_id = "eba95c61-c66c-4417-a88b-24199e90fdf8"
+content_hash = "sha256:f3930951552440206a48be6270c0be212511686b5ebfb8dbab3a90a1fd146994"
+size = 8932
+mtime_ms = 1791175992404
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/eba95c61-c66c-4417-a88b-24199e90fdf8/bedc0fe8-4314-4079-82c6-b955a99273b9"
+storage_version_token = "1791176136213477"
+content_type = "text/html"
+
+[[outputs]]
+id = "46WURq3cZRgxpfUBBDP8v"
+uri = "file://.local/reports/instructional-content-audit/deliverables/instructional-content-findings.csv"
+type = "table"
+title = "Findings and editorial review candidates"
+description = "Exact published passages, affected URLs, source locations and recommended reframing. Confirmed issues and uncertain candidates are explicitly separated."
+logical_id = "5f616d25-5216-4e0f-bd0b-992fd6b4584c"
+content_hash = "sha256:325b570fc270f5b918f6faad04344bcf67db2ceafe0de702914718a5c86def77"
+size = 817216
+mtime_ms = 1791175992384
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/5f616d25-5216-4e0f-bd0b-992fd6b4584c/6e3f81b8-1a19-491d-bdae-ad5e7e13aaf2"
+storage_version_token = "1791176137656600"
+content_type = "text/csv"
+
+[[outputs]]
+id = "sb6tJQSH7xeB3BrtYrO31"
+uri = "file://.local/reports/instructional-content-audit/deliverables/instructional-content-page-coverage.csv"
+type = "table"
+title = "Full website coverage — 539 documents"
+description = "Every rendered URL, page type, audit disposition and content snapshot hash."
+logical_id = "9507ec30-1b78-42a8-a433-b1fa5b3a52c6"
+content_hash = "sha256:080010b77dbee6d621b387b77e4bb77b43ee574323ffc7768710605b1ff2bc6f"
+size = 153615
+mtime_ms = 1791175992400
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/9507ec30-1b78-42a8-a433-b1fa5b3a52c6/88670481-478d-46db-91cd-61ab2c5de204"
+storage_version_token = "1791176138934748"
+content_type = "text/csv"
+
+[[outputs]]
+id = "8Y9d_twcrSuM5SYOh7qxr"
+uri = "file://.local/reports/instructional-content-audit/deliverables/instructional-content-false-positive-controls.csv"
+type = "table"
+title = "Instructions and facts to preserve"
+description = "Contextual exclusions: legitimate tutorials, account help, application controls, legal conditions and factual explanations."
+logical_id = "b05ab89f-82b2-4fe1-bad5-86802dc31cc7"
+content_hash = "sha256:e61212bd32a862298d60a201d16221bccfb543c909f3fe070f6ca917c343307e"
+size = 130590
+mtime_ms = 1791175992388
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/b05ab89f-82b2-4fe1-bad5-86802dc31cc7/94e6d134-ee64-43b8-b3f0-1d4e06da324f"
+storage_version_token = "1791176140248276"
+content_type = "text/csv"
