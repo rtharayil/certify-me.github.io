@@ -645,7 +645,8 @@ a {
 }
 
 a:hover {
-  color: #353f4f!important;
+  /* A default for ordinary links, not an override of component CTA palettes. */
+  color: #353f4f;
   text-decoration: none;
 }
 

@@ -348,12 +348,16 @@
   white-space: nowrap;
 }
 
-.cp-btn--primary {
+.cp-btn--primary,
+.cp-btn--primary:hover,
+.cp-btn--primary:focus-visible {
   background: #fff;
   color: var(--cp-navy);
 }
 
-.cp-btn--secondary {
+.cp-btn--secondary,
+.cp-btn--secondary:hover,
+.cp-btn--secondary:focus-visible {
   color: #fff;
 }
 

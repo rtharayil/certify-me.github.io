@@ -86,3 +86,9 @@ Contrast audits must distinguish visible label text, actual painted backgrounds 
 **Why:** A site-wide color pass falsely flagged screen-reader-only navigation labels and readable white integration-banner labels over purple background images. Computed ancestor background colors alone did not describe the painted surface.
 
 **How to apply:** Exclude visually hidden accessibility text from visual-label checks. Treat image-dependent ratios as estimates until checked with the image loaded. Validate settled hover colors and keep provisional findings separate from confirmed defects.
+
+Report isolated hidden-control style checks separately from real interaction checks.
+
+**Why:** Initially hidden sample-portal controls can be checked with their original CSS and background ancestry in a separate fixture, but that does not establish that the signed-in screen or popup opens correctly.
+
+**How to apply:** Keep the app's authentication and hidden-state behavior intact. Exercise available real public openers for dialogs and menus; label isolated fixture results explicitly and do not count them as signed-in UI verification.

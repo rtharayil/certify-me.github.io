@@ -882,7 +882,7 @@
   color: #1a1a2e;
 }
 
-.post-content a {
+.post-content a:not(.btn):not(.cp-btn) {
   color: var(--cm-indigo) !important;
   font-weight: 600;
   text-decoration: underline;
@@ -890,7 +890,7 @@
   text-underline-offset: 2px;
 }
 
-.post-content a:hover {
+.post-content a:not(.btn):not(.cp-btn):hover {
   text-decoration-color: var(--cm-indigo);
 }
 
@@ -2439,16 +2439,16 @@
   width: fit-content;
 }
 .flp2-qual-card--cm4 .flp2-qc-cm-tag { background: rgba(255,255,255,.2); }
-.flp2-qc-num { font-size: .7rem; font-weight: 700; color: #9ca3af; letter-spacing: .08em; }
-.flp2-qual-card--cm .flp2-qc-num { color: #6366f1; }
+.flp2-qc-num { font-size: .7rem; font-weight: 700; color: #626b7b; letter-spacing: .08em; }
+.flp2-qual-card--cm .flp2-qc-num { color: #4f46c5; }
 .flp2-qual-card--cm4 .flp2-qc-num { color: #a5b4fc; }
 .flp2-qc-title { font-size: .95rem; font-weight: 700; color: #1f2937; margin: 0; line-height: 1.35; }
-.flp2-qc-desc  { font-size: .82rem; color: #6b7280; margin: 0; line-height: 1.5; flex: 1; }
+.flp2-qc-desc  { font-size: .82rem; color: #5b6270; margin: 0; line-height: 1.5; flex: 1; }
 .flp2-qc-verdict {
   display: inline-block; font-size: .78rem; font-weight: 700; padding: 6px 12px;
   border-radius: 6px; margin-top: auto;
 }
-.flp2-qc-verdict--neutral { background: #f3f4f6; color: #6b7280; }
+.flp2-qc-verdict--neutral { background: #f3f4f6; color: #5b6270; }
 .flp2-qc-verdict--cm      { background: #4f46e5; color: #fff; }
 .flp2-qual-card--cm4 .flp2-qc-verdict--cm { background: rgba(255,255,255,.2); }
 
@@ -2469,10 +2469,10 @@
 .flp2-qcd-signals { margin-bottom: 18px; }
 .flp2-qcd-signals-label {
   font-size: .68rem; font-weight: 800; text-transform: uppercase;
-  letter-spacing: .09em; color: #9ca3af; margin: 0 0 8px;
+  letter-spacing: .09em; color: #626b7b; margin: 0 0 8px;
 }
-.flp2-qual-card--cm  .flp2-qcd-signals-label { color: #818cf8; }
-.flp2-qual-card--cm4 .flp2-qcd-signals-label { color: #818cf8; }
+.flp2-qual-card--cm  .flp2-qcd-signals-label { color: #4f46c5; }
+.flp2-qual-card--cm4 .flp2-qcd-signals-label { color: #c7d2fe; }
 .flp2-qcd-signals ul {
   list-style: none; margin: 0; padding: 0;
   display: flex; flex-direction: column; gap: 6px;
@@ -2499,10 +2499,10 @@
 .flp2-qcd-who-label {
   display: block; font-size: .65rem; font-weight: 800;
   text-transform: uppercase; letter-spacing: .09em;
-  color: #9ca3af; margin-bottom: 3px;
+  color: #626b7b; margin-bottom: 3px;
 }
-.flp2-qual-card--cm  .flp2-qcd-who-label { color: #818cf8; }
-.flp2-qual-card--cm4 .flp2-qcd-who-label { color: #818cf8; }
+.flp2-qual-card--cm  .flp2-qcd-who-label { color: #4f46c5; }
+.flp2-qual-card--cm4 .flp2-qcd-who-label { color: #c7d2fe; }
 
 /* Risk callout */
 .flp2-qcd-risk {

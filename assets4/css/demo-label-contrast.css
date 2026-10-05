@@ -1,0 +1,40 @@
+/* Scoped palettes for standalone sample portals. Keep semantic hues, but use
+   shades that retain readable labels when a hidden screen or popup opens. */
+[data-cta-palette="bsi"] .nav-item.active,
+[data-cta-palette="bsi"] .btn-popup.confirm,
+[data-cta-palette="bsi"] .btn-download-evidence,
+[data-cta-palette="bsi"] .btn-submit {
+  background: #2563eb;
+  color: #fff;
+}
+[data-cta-palette="bsi"] .btn-submit:hover { background: #1d4ed8; }
+[data-cta-palette="bsi"] .btn-submit:disabled { color: #374151; }
+[data-cta-palette="bsi"] .btn-download {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+[data-cta-palette="bsi"] .btn-popup.success,
+[data-cta-palette="bsi"] .btn-popup.success:hover { background: #047857; }
+[data-cta-palette="bsi"] .nav-badge { background: #b91c1c; }
+[data-cta-palette="bsi"] #rejectButton,
+[data-cta-palette="bsi"] .btn-popup[style*="#ef4444"] {
+  background: #b91c1c !important; /* These sample buttons have inline fills. */
+}
+[data-cta-palette="bsi"] #successViewCertified { background: #2563eb !important; }
+[data-cta-palette="bsi"] .view-credentials-btn {
+  background: linear-gradient(135deg, #4b5fc4, #764ba2);
+}
+[data-cta-palette="qatar"] .ni.lo,
+[data-cta-palette="qatar"] .nav-item.logout { color: #a42e2e; }
+[data-cta-palette="qatar"].dark .ni.lo { color: #ffb4b4; }
+[data-cta-palette="qatar"] .notif-badge,
+[data-cta-palette="qatar"] .modal-action-btn.reject { background: #b83b3b; }
+[data-cta-palette="qatar"] .tbb .nb { background: #23734b; }
+[data-cta-palette="nyc"] .nav-it { color: #fff; }
+[data-cta-palette="nyc"] .nav-it.active {
+  background: #5b21b6;
+  color: #fff;
+}
+[data-cta-palette="nyc"] .s-tab { color: #fff; }
+[data-cta-palette="nyc"] .s-tab:not(.active):hover { background: #5b21b6; }
+[data-cta-palette="nyc"] .s-tab.active { color: var(--purple); }
+[data-cta-palette="nyc"] button[style*="#16A34A"] { background: #15803d !important; }
