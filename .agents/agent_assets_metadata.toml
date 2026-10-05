@@ -635,3 +635,31 @@ mtime_ms = 1791168081355
 storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/670d633e-61dc-4a20-8f4b-05442de11fea/de65cf80-7db9-45d4-b6e8-8f27ef2a251f"
 storage_version_token = "1791168127342108"
 content_type = "text/html"
+
+[[outputs]]
+id = "DSBvtsrxJCm1Kw2zk9AlR"
+uri = "file://.local/reports/university-buyer-research/research-protocol.html"
+type = "html"
+title = "University-buyer research protocol"
+description = "Five-second and two-minute test scripts, exact ten questions, consent, private observation rules and analysis guidance. Prepared, not run."
+logical_id = "229f8093-25ab-4646-8d54-0a83d7726d52"
+content_hash = "sha256:c4c99a4474592de7115ef744252698e5df520f8e0f5a90c5f58177a6708a62e1"
+size = 17390
+mtime_ms = 1791173886900
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/229f8093-25ab-4646-8d54-0a83d7726d52/428704f5-436d-4907-9e30-a4fdb49e2d54"
+storage_version_token = "1791173969371002"
+content_type = "text/html"
+
+[[outputs]]
+id = "F6VnGxBjLMJql7_GHCg8W"
+uri = "file://.local/reports/university-buyer-research/research-status.html"
+type = "html"
+title = "Research readiness and blocked validation status"
+description = "Preparation summary distinguishing editorial evidence from genuine customer research. No participants or observed responses collected."
+logical_id = "3ac1189e-c995-471a-ad53-74f69462db34"
+content_hash = "sha256:ceeefa62cd1eb7e1a36541cbd36f56dba8d52b2c94151864e9e6e6a59c2e377c"
+size = 4369
+mtime_ms = 1791173860488
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/3ac1189e-c995-471a-ad53-74f69462db34/39e04182-2fbe-4cdf-b52e-64d573b0e2f7"
+storage_version_token = "1791173970621985"
+content_type = "text/html"
