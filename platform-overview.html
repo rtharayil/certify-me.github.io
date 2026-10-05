@@ -33,15 +33,6 @@ custom_stylesheet: /assets4/css/platform-overview.css
   <div id="platform-reviews">
     {% include V4NewLook/G2Enterprise.html %}
   </div>
-  <section class="container py-5" aria-labelledby="platform-faq-title">
-    <h2 id="platform-faq-title">Institutional platform questions</h2>
-    {% for faq in page.faqs %}
-    <details class="border rounded p-3 mb-3">
-      <summary>{{ faq.question | escape }}</summary>
-      <div class="mt-3">{{ faq.answer | markdownify }}</div>
-    </details>
-    {% endfor %}
-  </section>
 </div>
 
 <!-- Review structured data accompanies the independent reviews section. -->

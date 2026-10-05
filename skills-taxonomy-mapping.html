@@ -247,17 +247,6 @@ faqs:
     </div>
   </section>
 
-  <section class="stm-section stm-section-soft" id="frequently-asked-questions" aria-labelledby="stm-faq">
-    <div class="stm-shell stm-faq-grid">
-      <div><p class="stm-eyebrow">Frequently asked questions</p><h2 id="stm-faq">Skills Mapping, Explained</h2><p>Answers to the questions institutions ask when connecting credentials to structured skills.</p></div>
-      <div class="stm-faq-list">
-        {% for faq in page.faqs %}
-        <details><summary>{{ faq.question | escape }}</summary><p>{{ faq.answer | escape }}</p></details>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-
   <section class="stm-final" aria-labelledby="stm-final-title">
     <div class="stm-shell stm-final-inner">
       <div><p class="stm-eyebrow">Discuss your institution's context</p><h2 id="stm-final-title">Give Learning and Credentials a Common Skills Language</h2><p>Talk through your outcomes, competency frameworks and the records you need to connect. Start with the decisions your institution needs to make.</p><span>For universities, colleges, professional associations and certification authorities.</span></div>

@@ -1,14 +1,10 @@
 {% assign aeo_authority = site.data.ai_authority | where: "url", page.url | first %}
 {% if aeo_authority %}
-<section class="container py-5 content-authority-editorial" data-ai-authority="{{ aeo_authority.id }}" aria-labelledby="aeo-{{ aeo_authority.id }}">
-  <h2 id="aeo-{{ aeo_authority.id }}">Common questions</h2>
-  {% for answer in aeo_authority.answers %}
-  <details class="mb-3">
-    <summary id="aeo-{{ aeo_authority.id }}-{{ forloop.index }}"><strong>{{ answer.question | escape }}</strong></summary>
-    <p data-answer-category="{{ answer.category }}">{{ answer.answer | escape }}</p>
-  </details>
-  {% endfor %}
-  <h2>Sources &amp; References</h2>
+{% assign authority_review = site.data.authority_editorial | where: "url", page.url | first %}
+{% include V4NewLook/institutional-faqs.html %}
+<section class="institutional-references" aria-labelledby="references-{{ aeo_authority.id }}">
+  <div class="institutional-references__shell">
+  <h2 id="references-{{ aeo_authority.id }}">Sources &amp; References</h2>
   <p>The references below explain the relevant standards. CertifyMe's <a href="{{ aeo_authority.url }}">product information</a> and <a href="/case-studies.html">customer case studies</a> describe institutional capabilities and adoption.</p>
   {% if aeo_authority.id == 'security' %}
   <p><strong>Security assurance evidence:</strong> Request the applicable SOC 2 report, ISO certificates and processing terms during procurement. The <a href="/security/">CertifyMe security summary</a> is a first-party description, not the complete independent report. The 1EdTech credential registry does not establish SOC 2, ISO or privacy-law compliance.</p>
@@ -17,5 +13,6 @@
   {% endif %}
   <p><a href="/platform-overview#credential-entities">Definitions and relationships</a> · <a href="/comprehensive-learner-record">learner-record provenance</a> · <a href="/skills-taxonomy-mapping">reviewed skills mappings</a> · <a href="/compare/">evidence-led platform comparisons</a></p>
   <p class="small">References accessed 4 October 2026.</p>
+  </div>
 </section>
 {% endif %}

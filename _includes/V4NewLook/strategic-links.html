@@ -1,28 +1,31 @@
 {% if page.seo_pillar %}
-<section class="container py-4" aria-labelledby="related-infrastructure-title">
-  <h2 id="related-infrastructure-title">Connected credential infrastructure</h2>
-  <nav aria-label="Related institutional capabilities">
-    <ul>
-      {% unless page.url == "/credentials-higher-education" %}<li><a href="/credentials-higher-education">Digital credentials for universities</a></li>{% endunless %}
-      {% unless page.url == "/platform-overview" %}<li><a href="/platform-overview">Digital credential infrastructure</a></li>{% endunless %}
-      <li><a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges 3.0 standards</a></li>
-      <li><a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C Verifiable Credentials</a></li>
-      {% unless page.url == "/certificate-verification" %}<li><a href="/certificate-verification">Digital credential verification</a></li>{% endunless %}
-      {% unless page.url == "/skills-taxonomy-mapping" %}<li><a href="/skills-taxonomy-mapping">Skills taxonomy mapping</a></li>{% endunless %}
-      {% unless page.url == "/comprehensive-learner-record" %}<li><a href="/comprehensive-learner-record">Comprehensive Learner Record</a></li>{% endunless %}
-      {% unless page.url == "/workforce-intelligence" %}<li><a href="/workforce-intelligence">Workforce intelligence for universities</a></li>{% endunless %}
-      <li><a href="/skills-passport">Learner Skill Passport</a></li>
-      <li><a href="/compare/">Digital credential platform comparisons</a></li>
-      <li><a href="/security/">Security, privacy and data residency</a></li>
-      <li><a href="/api/">Credential APIs</a></li>
-      <li><a href="/allIntegrations.html">Integration workflows</a></li>
-      <li><a href="/case-studies.html">Anonymous institutional case studies</a></li>
-      <li><a href="/digital-badges.html">Digital badge issuance</a></li>
-      <li><a href="/micro-credentials">Microcredential programmes</a></li>
-      <li><a href="/credential-analytics.html">Credential analytics</a></li>
-    </ul>
-  </nav>
-  <h3>Selected supporting resources</h3>
-  <ul>{% for resource in site.data.institutional_seo.supporting_resources %}<li><a href="{{ resource.url }}">{{ resource.title | escape }}</a></li>{% endfor %}</ul>
+<section class="institutional-links" aria-labelledby="related-infrastructure-title">
+  <div class="institutional-links__shell">
+    <header class="institutional-links__intro">
+      <h2 id="related-infrastructure-title">Connected credential infrastructure</h2>
+    </header>
+    <nav class="institutional-links__grid" aria-label="Related institutional capabilities">
+      {% for group in site.data.credential_navigation.groups %}
+      <div class="institutional-links__group">
+        <h3>{{ group.title | escape }}</h3>
+        <ul>
+          {% for link in group.links %}
+          {% unless page.url == link.url %}
+          <li><a href="{{ link.url | relative_url }}"><span>{{ link.title | escape }}</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          {% endunless %}
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </nav>
+    <div class="institutional-resources" aria-labelledby="supporting-resources-title">
+      <h3 id="supporting-resources-title">Selected supporting resources</h3>
+      <ul class="institutional-resources__grid">
+        {% for resource in site.data.institutional_seo.supporting_resources %}
+        <li><a href="{{ resource.url | relative_url }}"><span>{{ resource.title | escape }}</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </section>
 {% endif %}

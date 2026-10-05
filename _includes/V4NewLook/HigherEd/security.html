@@ -322,20 +322,3 @@ details[open] .he-faq-q::after { content: '−'; }
   </div>
 </section>
 
-<section class="he-faq content-section division">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <h2 class="s-38 w-700">Common questions</h2>
-      </div>
-    </div>
-    <div class="he-faq-list" id="institutional-faqs">
-      {% for faq in page.faqs %}
-      <details class="he-faq-item">
-        <summary class="he-faq-q">{{ faq.question | escape }}</summary>
-        <p class="he-faq-a">{{ faq.answer | escape }}</p>
-      </details>
-      {% endfor %}
-    </div>
-  </div>
-</section>

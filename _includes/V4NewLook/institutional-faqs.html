@@ -1,0 +1,58 @@
+{% assign empty_faqs = "" | split: "" %}
+{% assign page_questions = page.faqs | default: empty_faqs %}
+{% assign editorial_questions = authority_review.faq | default: empty_faqs %}
+{% assign shared_questions = aeo_authority.answers | default: empty_faqs %}
+{% assign all_questions = page_questions | concat: editorial_questions | concat: shared_questions %}
+{% assign seen_questions = "|" %}
+{% assign native_markdown = false %}
+{% if page.layout contains "Innerpages" or page.layout == "V4LayoutSingleBlogPost" or page.layout == "V4Layout-EduTranscript" or page.url == "/platform-overview" %}
+{% assign native_markdown = true %}
+{% endif %}
+<section id="faq" class="institutional-faqs" data-ai-authority="{{ aeo_authority.id }}" aria-labelledby="aeo-{{ aeo_authority.id }}">
+  <div class="institutional-faqs__shell">
+    <div class="institutional-faqs__intro">
+      {% case page.url %}
+      {% when "/platform-overview" %}<span id="platform-faq-title" class="institutional-faqs__anchor" aria-hidden="true"></span>
+      {% when "/comprehensive-learner-record" %}<span id="clr-faq" class="institutional-faqs__anchor" aria-hidden="true"></span>
+      {% when "/skills-taxonomy-mapping" %}<span id="stm-faq" class="institutional-faqs__anchor" aria-hidden="true"></span><span id="frequently-asked-questions" class="institutional-faqs__anchor" aria-hidden="true"></span>
+      {% when "/credentials-higher-education" %}<span id="institutional-faqs" class="institutional-faqs__anchor" aria-hidden="true"></span>
+      {% when "/workforce-intelligence" %}<span id="wi-answers-title" class="institutional-faqs__anchor" aria-hidden="true"></span>
+      {% when "/security/", "/certificate-verification" %}<span id="credential-faq-heading" class="institutional-faqs__anchor" aria-hidden="true"></span>
+      {% endcase %}
+      <h2 id="aeo-{{ aeo_authority.id }}">Common questions</h2>
+      <p>Answers to the questions institutional teams ask.</p>
+    </div>
+    <div class="institutional-faqs__list">
+      {% for faq in all_questions %}
+      {% assign question_key = faq.question | strip | downcase | prepend: "|" | append: "|" %}
+      {% unless seen_questions contains question_key %}
+      {% assign seen_questions = seen_questions | append: question_key %}
+      {% assign faq_category = nil %}
+      {% for answer in aeo_authority.answers %}
+      {% assign answer_key = answer.question | strip | downcase | prepend: "|" | append: "|" %}
+      {% if answer_key == question_key %}{% assign faq_category = answer.category %}{% endif %}
+      {% endfor %}
+      <details class="institutional-faqs__item">
+        <summary>
+          <span>
+            {% for answer in aeo_authority.answers %}
+            {% assign answer_key = answer.question | strip | downcase | prepend: "|" | append: "|" %}
+            {% if answer_key == question_key %}<span id="aeo-{{ aeo_authority.id }}-{{ forloop.index }}" class="institutional-faqs__anchor" aria-hidden="true"></span>{% endif %}
+            {% endfor %}
+            {{ faq.question | escape }}
+          </span>
+          <span class="institutional-faqs__toggle" aria-hidden="true"></span>
+        </summary>
+        <div class="institutional-faqs__answer{% if page.layout == 'V4LayoutSingleBlogPost' %} blog-faq-answer{% endif %}"{% if faq_category %} data-answer-category="{{ faq_category | escape }}"{% endif %}>
+          {% if native_markdown and forloop.index <= page_questions.size %}
+          {{ faq.answer | markdownify }}
+          {% else %}
+          <p>{{ faq.answer | escape }}</p>
+          {% endif %}
+        </div>
+      </details>
+      {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

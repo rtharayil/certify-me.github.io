@@ -109,6 +109,9 @@
   <!-- ENTERPRISE OVERRIDES — loaded last, highest specificity -->
   <link href="/assets4/css/enterprise-overrides.css" rel="stylesheet">
   <link href="/assets4/css/site-typography.css" rel="stylesheet">
+  {% if page.seo_pillar %}
+  <link href="/assets4/css/institutional-sections.css" rel="stylesheet">
+  {% endif %}
 
   {% if page.layout == "V4Layout" or page.layout == "V4LayoutVideo" or page.url == "/digital-credential-maturity/" or page.url == "/platform-overview" %}
   <!-- MOBILE UX — layouts using the homepage components + credential-maturity mobile/tablet re-composition -->

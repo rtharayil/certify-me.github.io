@@ -1,4 +1,5 @@
-{% if page.faqs and page.faqs.size > 0 %}
+{% assign consolidated_faq = site.data.ai_authority | where: "url", page.url | first %}
+{% if page.faqs and page.faqs.size > 0 and consolidated_faq == nil %}
 <section class="faqs-section py-5" aria-labelledby="credential-faq-heading">
   <div class="container">
     <h2 id="credential-faq-heading">{{ page.FAQTitle | default: "Frequently Asked Questions" | escape }}</h2>

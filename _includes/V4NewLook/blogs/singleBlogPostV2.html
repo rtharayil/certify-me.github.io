@@ -844,7 +844,6 @@ so the section is never empty.
                     <div class="single-post-txt blogcontent lh-lg">
                         {{ page.content }}
                         {% include V4NewLook/authority-editorial.html %}
-                        {% include V4NewLook/aeo-answers.html %}
                         {% if page.comparison_page %}
                         <aside class="border rounded p-3 my-4" aria-label="Institutional comparison context">
                           <p>Evaluate your institution's requirements with the <a href="/compare/">digital credential platform comparison hub</a> and the <a href="/credentials-higher-education">digital credentials for universities guide</a>. Confirm current vendor capabilities, certification roles, security evidence and plan inclusions before procurement.</p>
@@ -852,7 +851,8 @@ so the section is never empty.
                         {% endif %}
                     </div>
 
-                    {% if page.faqs and page.faqs.size > 0 and page.faqs_in_content != true %}
+                    {% assign consolidated_blog_faq = site.data.ai_authority | where: "url", page.url | first %}
+                    {% if page.faqs and page.faqs.size > 0 and page.faqs_in_content != true and consolidated_blog_faq == nil %}
                     {% include V4NewLook/blogs/_faq.html faqs=page.faqs %}
                     {% endif %}
                     {% include V4NewLook/comparison-sources.html %}
