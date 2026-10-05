@@ -40,7 +40,7 @@ A [Comprehensive Learner Record](/comprehensive-learner-record) connects achieve
 
 See how university teams use [workforce intelligence](/workforce-intelligence) to investigate occupations and employer demand. Check source dates, geographic coverage, duplicate handling and the meaning of rankings before using a report in curriculum or career decisions.
 
-## Illustrative example: programme relevance review
+## Review programme relevance
 
 An academic team could compare a reviewed project-related skill with occupational descriptions and recent employer requirements. The result may suggest an assessment or curriculum question. It does not prove that the learner is ready for every matching role or that a particular vacancy remains open.
 

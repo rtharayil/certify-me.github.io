@@ -38,9 +38,8 @@ Who issued it? Who or what is it about? What achievement and criteria are stated
 
 [Open Badges 3.0](/blog/why-institutions-should-embrace-open-badges-3-0-standards) addresses achievement credentials. The [W3C Verifiable Credentials model](/blog/Understanding-W3C-Verifiable-Credentials.html) describes issuer, holder and verifier relationships. Neither a label nor a signature establishes every kind of trust on its own.
 
-## Illustrative example
 
-A university could issue a project-completion credential identifying the learner, the assessed project and the award criteria. A verifier still needs to decide whether that issuer and assessment are appropriate for the intended use. This fictional example is not a customer result.
+A university could issue a project-completion credential identifying the learner, the assessed project and the award criteria. The recipient can review the issuer, assessment and evidence against their requirements.
 
 ## Separate credentials, skills and learner records
 

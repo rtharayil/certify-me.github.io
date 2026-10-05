@@ -75,7 +75,7 @@ Use the [institutional platform buyer's guide](/blog/What-is-Digital-Credential-
 
 CertifyMe's [public 1EdTech listing](https://site.imsglobal.org/certifications/certifyme/certifyme) records OB3 Issuer and CLR 2.0 Issuer/Displayer roles. That conformance evidence should be read separately from privacy, security or assessment assurance. For connected achievements, inspect [CLR governance](/comprehensive-learner-record) and how each source award retains its issuer and evidence.
 
-CertifyMe connects reviewed skills and learner records to workforce context. Its Job Engine covers 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks through its own job-farming engine. These published coverage figures describe the dataset, not employment outcomes. Review a sample report, the mapping methodology and your contracted scope.
+CertifyMe connects reviewed skills and learner records to workforce context. Its Job Engine covers 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks through its own job-farming engine. Review the workforce reports, mapping methodology and features included in your plan.
 
 
 ## Compare the actual certification workflow

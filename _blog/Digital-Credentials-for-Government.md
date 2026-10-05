@@ -39,7 +39,7 @@ The [NIST Digital Identity Guidelines](https://pages.nist.gov/800-63-4/) disting
 
 ## An agency-training example
 
-**Illustrative workflow, not a deployment claim:** an agency runs a records-management course. Its training office approves completion, issues a record with course criteria and dates, and retains assessment evidence in an authorized system. Another department can check the record and decide whether the course meets its requirement. It still applies its own staff identity and access checks.
+An agency runs a records-management course. Its training office approves completion, issues a record with course criteria and dates, and retains assessment evidence in an authorized system. Another department can check the record and decide whether the course meets its requirement. It still applies its own staff identity and access checks.
 
 Use the [credential infrastructure overview](/platform-overview) for award governance, and the [Open Badges institutional guide](/blog/why-institutions-should-embrace-open-badges-3-0-standards) for achievement structure. Where multiple awards are connected, a [Comprehensive Learner Record](/comprehensive-learner-record) can retain their provenance; it does not grant an identity entitlement or permission to practise.
 

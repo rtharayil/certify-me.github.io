@@ -76,7 +76,7 @@ You know those private‑label brands at grocery stores? Same product—a jar of
 
 <br>
 
-### An illustrative design decision
+### Choose your branding approach
 
 A registrar may choose a consistent institution-approved template across departments. That is a presentation choice, not evidence of increased perceived value or employer trust. This example asserts no customer outcome.
 

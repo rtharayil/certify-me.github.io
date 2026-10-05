@@ -49,7 +49,7 @@ A [Comprehensive Learner Record](/comprehensive-learner-record) may aggregate ac
 
 <img class="img-fluid r-16 d-block mx-auto" src="/img/blog/ultimate-guide-to-verified-credentials/Verification image.png" alt="Verification image">
 
-## Illustrative verification decision
+## Make verification decisions
 
 An employer may accept a current professional-development achievement after proof and issuer checks, while still requiring a separate regulated license. The example shows a purpose-specific decision, not a claim that one credential replaces every qualification.
 

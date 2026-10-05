@@ -85,7 +85,7 @@ A customer relationship management (CRM) system can help training teams organise
 
 At its core, a CRM is like a digital notebook where you track every individual’s interaction with your training program. Want to remember who attended what session? Who asked for extra resources? Who still hasn’t completed their onboarding? CRM handles that.
 
-**Illustrative example:** Imagine you're part of a student organization planning weekly skill sessions. You want to follow up with those who missed the last session, share resources with top performers, or even send out [certificates using a reliable certificate maker](https://certifyme.online/blog/15-certificate-maker.html). A CRM like **HubSpot** or **Zoho CRM** lets you tag participants, send them targeted emails, and keep all this information neat and searchable.
+Imagine you're part of a student organization planning weekly skill sessions. You want to follow up with those who missed the last session, share resources with top performers, or even send out [certificates using a reliable certificate maker](https://certifyme.online/blog/15-certificate-maker.html). A CRM like **HubSpot** or **Zoho CRM** lets you tag participants, send them targeted emails, and keep all this information neat and searchable.
 
 **Pro Tip:** Check the provider's current plan before uploading learner data. A free account, educational licence, open-source download and time-limited trial are different arrangements; hosting, API access and administrative controls may have separate costs.
 
@@ -179,7 +179,7 @@ Training works best when it’s a team effort. Collaboration tools help trainers
 1. **Notion** for organizing notes, schedules, and content<br>
 1. **Slack** for chat-based discussion threads
 
-**Illustrative use case:** A student leadership camp could use shared folders to collaborate on schedules, slides, and feedback in real time. No more endless email chains.
+A student leadership camp could use shared folders to collaborate on schedules, slides, and feedback in real time. No more endless email chains.
 
 **Tip:** Set ground rules for tool use. Too many tools can overwhelm people.
 
@@ -373,7 +373,7 @@ Use a short, accessible survey: could learners find resources, resume after an a
 
 These are categories, not nine mandatory purchases. Existing institutional tools may cover several. Check current official plans; do not assume a free tier provides institutional SSO, API/export or support.
 
-Completion data must pass through an **approved award decision** before issuance. For an illustrative laboratory workshop, attendance could earn a participation record, while a reviewed practical task could earn an assessed milestone. The LMS result, assessor approval and credential should remain distinct. See [credential infrastructure governance](/platform-overview) for ownership and the [API custom-attributes guide](/blog/CertifyMe-Custom-Attributes-API-Guide.html) for explicit field mapping. A connector claim is not a tested integration.
+Completion data must pass through an **approved award decision** before issuance. For a laboratory workshop, attendance could earn a participation record, while a reviewed practical task could earn an assessed milestone. The LMS result, assessor approval and credential should remain distinct. See [credential infrastructure governance](/platform-overview) for ownership and the [API custom-attributes guide](/blog/CertifyMe-Custom-Attributes-API-Guide.html) for explicit field mapping.
 
 ## Final Thoughts: Start Small, Build Smart
 

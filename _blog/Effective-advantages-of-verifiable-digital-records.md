@@ -31,9 +31,9 @@ The [W3C Verifiable Credentials model](/blog/Understanding-W3C-Verifiable-Creden
 
 <img class="img-fluid r-16" src="/img/blog/digital-credential-sharing-benefits.png" alt="Benefits of digital credential sharing">
 
-## Illustrative example: a professional renewal
+## Manage professional renewals
 
-A professional body could issue a renewal credential after checking continuing-development evidence. A receiving employer checks issuer authority, the achievement, dates and applicable status. This is an illustrative workflow, not a claim that every credentialing system supports the same renewal process.
+A professional body could issue a renewal credential after checking continuing-development evidence. A receiving employer checks issuer authority, the achievement, dates and applicable status.
 
 <img class="img-fluid r-16" src="/img/blog/digital-transformation-advantages.png" alt="Image showing the benefits of digital transformation">
 

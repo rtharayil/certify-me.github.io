@@ -332,7 +332,7 @@ A credential first serves the learner's achievement. Make posting optional; do n
 
 Test the real [verification workflow](/certificate-verification), not only a share button. A visitor should be able to distinguish attendance from assessed completion and understand the status of the award. Use [white-label governance guidance](/blog/White-Labeling-Digital-Credentials.html) for presentation without confusing a logo with proof.
 
-For an illustrative campaign, record the eligible cohort, chosen shares, credential views, onward visits and enquiries over an agreed period. Report the denominator and measurement limits. Link clicks are engagement signals, not proof of enrolment, learning or causal revenue. Review [credential analytics scope](/credential-analytics.html) before publishing ROI claims.
+For a campaign, record the eligible cohort, chosen shares, credential views, onward visits and enquiries over an agreed period. Report the denominator and measurement limits. Link clicks are engagement signals, not proof of enrolment, learning or causal revenue. Review [credential analytics scope](/credential-analytics.html) before publishing ROI claims.
 
 ## Final Thoughts: Why This Matters Now More Than Ever
 

@@ -154,7 +154,7 @@ An assessed award can describe a relevant capability, but a record does not auto
 
 <br>
 
-## Illustrative University Use Cases
+## University Use Cases
 
 Let’s zoom in on campus life for a second. Universities have jumped on the digital credentials train—and for good reason.
 

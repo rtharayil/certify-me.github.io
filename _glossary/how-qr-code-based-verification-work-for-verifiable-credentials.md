@@ -47,7 +47,7 @@ Here's how the process unfolds from issuance to verification.
 
 ### Step 1: QR Code Generation at the Time of Issuance
 
-<img class="img-fluid r-16" src="/assets4/images/Glossary/sample-certificate-with-qr-code.png" alt="Sample Certificate with QR Code" style="display: block; margin: 0 auto; width:70%;">
+<img class="img-fluid r-16" src="/assets4/images/Glossary/sample-certificate-with-qr-code.png" alt="Certificate with QR Code" style="display: block; margin: 0 auto; width:70%;">
 
 <br>
 

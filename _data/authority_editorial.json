@@ -10,7 +10,7 @@
     "standards": "Open Badges 3.0 describes achievement credentials; W3C Verifiable Credentials describes issuer, holder and verifier roles. Confirm versions, securing mechanisms and receiver compatibility separately. A standard is not a certification of every implementation.",
     "implementation": "Pilot one governed programme with explicit acceptance criteria for approval, issuance, verification, export and exceptions. Confirm the current API/integration scope, access controls and contract-specific residency rather than assuming a connector exists.",
     "use_case": "Universities can govern academic and co-curricular awards; certification bodies can govern professional achievements; enterprise and training teams can manage assessed programme recognition. The award criteria determine what is actually supported.",
-    "example": "Illustrative example: a department awards an assessed project-completion credential after approval, keeps sensitive feedback in an authorized system and defines who handles a correction. This is a fictional workflow, not an integration promise.",
+    "example": "A department awards an assessed project-completion credential after approval, keeps sensitive feedback in an authorized system and defines who handles a correction.",
     "limitation": "An issuance platform does not independently prove a learner's competence, issuer accreditation or real-world identity. Keys, status resources and receiving-system support can remain dependencies.",
     "faq": [
       {
@@ -80,7 +80,7 @@
     "standards": "Use the 1EdTech Open Badges specification and the related W3C model. CertifyMe's public 1EdTech registry listing supports its OB3 issuer certification scope; it does not certify every receiver or unrelated integration.",
     "implementation": "Test an authorized achievement with the actual recipient and verifier. Inspect record fields and proof behavior, export and an exception; document version/receiver compatibility rather than relying on a badge graphic.",
     "use_case": "A faculty may recognize an assessed laboratory milestone; a professional body may recognize development activity. Distinguish attendance, completion and demonstrated competence in the criteria.",
-    "example": "Illustrative example: an assessed research-proposal milestone includes criteria and an authorized evidence reference. The badge does not claim competence beyond the assessment or release confidential reviewer comments.",
+    "example": "An assessed research-proposal milestone connects the achievement with its criteria and evidence, while the institution controls access to reviewer feedback.",
     "limitation": "OB3 conformance does not establish assessment quality, independent recipient identity or universal portability. Verification may retain issuer-key and status-resource dependencies.",
     "faq": [
       {
@@ -150,7 +150,7 @@
     "standards": "Use the published W3C data model and the applicable securing mechanism. Open Badges provides an achievement context; a CLR connects records with provenance. Do not assume one universal proof mechanism.",
     "implementation": "Inspect an authorized test record end to end. Agree issuer-key/status continuity, export, access to evidence, compatible receivers and the policy for unavailable resources or invalid proof.",
     "use_case": "Universities and professional bodies can present supported achievements to a verifier; the verifier still assesses issuer authority and purpose-specific requirements.",
-    "example": "Illustrative example: a learner presents a course-completion record. The receiving organization validates supported proof and then decides whether the issuer's course meets its requirement; it separately handles identity assurance.",
+    "example": "A learner presents a course-completion record. The receiving organization checks its proof, reviews the course against its requirements and confirms the recipient's identity.",
     "limitation": "A valid proof may accompany an unsuitable or unsupported claim. Standards do not guarantee universal receiver compatibility, issuer-independent availability or independent real-world identity verification.",
     "faq": [
       {
@@ -226,7 +226,7 @@
     "standards": "ESCO, O*NET and custom competency frameworks provide reference vocabularies; they are not automatic proof of competence or a verified native integration. Credential and record formats preserve the issued claim's context.",
     "implementation": "Select one programme, assess a small set of outcome-to-skill relationships with academic owners, and define review/versioning and exception responsibilities. Do not automatically translate a title match into an attainment claim.",
     "use_case": "Academic leadership can examine curriculum relevance; career services can help learners explain assessed capabilities; a certification body can describe qualification evidence consistently.",
-    "example": "Illustrative example: a rubric-assessed data-cleaning project is related to a specific capability with a recorded review rationale. It does not imply the learner mastered every skill in the broader occupation.",
+    "example": "A rubric-assessed data-cleaning project connects a learning achievement with a specific capability and its academic review rationale.",
     "limitation": "A taxonomy link is a conceptual relationship, not an independent competency or employment examination. Market data, identity checking and assessment are separate evidence questions.",
     "faq": [
       {
@@ -302,7 +302,7 @@
     "standards": "CLR is a 1EdTech learner-record context. Open Badges and W3C credential concepts are related but not interchangeable. Confirm the actual supported versions, roles and securing mechanisms rather than inferring a new certification.",
     "implementation": "Pilot a defined learner journey with registrar, academic and IT ownership. Check record completeness, evidence permissions, correction/export behavior and the distinction between learner presentation and authoritative academic records.",
     "use_case": "A university may connect academic, assessed project and co-curricular achievements. Career services may help a learner present relevant evidence while preserving issuer boundaries.",
-    "example": "Illustrative example: a learner record connects an institution's course achievement and an assessed project, each with its own criteria and evidence access. It does not turn attendance into demonstrated competence.",
+    "example": "A learner record brings together a course achievement and an assessed project, preserving each award's criteria, evidence and source.",
     "limitation": "A CLR does not automatically replace a transcript, SIS or every receiving organization's requirements. Aggregating records is not independent verification of all underlying claims.",
     "faq": [
       {
@@ -378,7 +378,7 @@
     "standards": "Reference vocabularies such as ESCO and O*NET can support reviewed occupation relationships. They do not certify employer demand, learner competence or a native connector.",
     "implementation": "Academic and career-service teams should agree the decision, supported data fields and review responsibility. Confirm source permissions, licensing, deduplication and salary availability rather than inferring them from dataset scale.",
     "use_case": "Programme leaders can investigate curriculum relevance; career services can support opportunity research; learners can explain achievements and investigate gaps without an employment guarantee.",
-    "example": "Illustrative example: a reviewed project-related capability is compared with occupational descriptions and recent employer requirements. The result suggests a curriculum or career conversation, not a promised vacancy match.",
+    "example": "Compare project-related capabilities with occupational descriptions and recent employer requirements to guide curriculum planning and career conversations.",
     "limitation": "Approved coverage is 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks. This does not establish real-time refresh, exact country coverage, universal salary availability or guaranteed hiring.",
     "faq": [
       {

@@ -17,8 +17,6 @@ faqs:
     answer: "No. Shares, views, visits, enquiries and enrolments are distinct events. Track them with a stated method and do not infer a conversion rate."
   - question: "Can credential analytics show marketing ROI by itself?"
     answer: "No. ROI requires attributable outcomes and full costs. Engagement metrics alone are not revenue or causal impact."
-  - question: "Are the examples customer success stories?"
-    answer: "No. They are illustrative uses. Refer to approved anonymous case studies for separately bounded first-party implementation evidence."
 ---
 
 A learner who voluntarily shares a credential may expose an institution's programme to a new audience. That is a possible marketing benefit, not a guaranteed endorsement, enrolment or hiring result. The learner's achievement should remain the primary purpose of the record.
@@ -43,7 +41,7 @@ The credential page should identify the authorized issuer, achievement, criteria
 
 Institution-approved [white labeling](/blog/White-Labeling-Digital-Credentials.html) can create consistent presentation. It does not independently establish accreditation, authenticity, security or employer acceptance. Keep a programme call to action secondary to the award information.
 
-## Three illustrative uses—not customer case studies
+## Credential use cases
 
 A leadership programme could describe a validated student role. A continuing-education course could recognize assessed completion. An alumni volunteering programme could record verified service under approved criteria. Each may offer optional sharing instructions. These examples assert no application increase, tripled reach or employment result.
 

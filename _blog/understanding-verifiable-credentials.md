@@ -23,9 +23,9 @@ Verifiable credentials are structured issuer statements with a supported securin
 
 The claim describes the subject and achievement. The proof mechanism supports integrity/signing-authority checks. The verifier's policy determines whether the issuer and claim are suitable for the intended use. None of these layers should be silently substituted for another.
 
-## An illustrative issuer–holder–verifier scenario
+## The issuer–holder–verifier workflow
 
-An institution issues a fictional course-completion achievement. The learner presents it to a receiving organization. The receiver checks the supported proof and relevant issuer/status resources, then decides whether the achievement meets its own requirement. Independent identity assurance is a separate process.
+An institution issues a course-completion achievement. The learner presents it to a receiving organization. The receiver checks the supported proof and relevant issuer/status resources, then decides whether the achievement meets its own requirement. Independent identity assurance is a separate process.
 
 ## Read the model rather than the marketing shorthand
 

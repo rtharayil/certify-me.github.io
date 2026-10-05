@@ -38,7 +38,7 @@ The [credential infrastructure overview](/platform-overview) connects approval, 
 4. The recipient receives a clear award and optional sharing instructions. Public data is minimized.
 5. The owner handles corrections, renewal, applicable status resources and retention.
 
-**Illustrative example:** a service team completes an assessed product-support module. Its credential describes that module and criteria, while a manager separately decides whether the employee is ready for a particular assignment. This is not a customer result or a prediction of improved performance.
+A service team completes an assessed product-support module. Its credential describes that module and criteria, while a manager separately decides whether the employee is ready for a particular assignment.
 
 ## Verification is not a skills guarantee
 

@@ -3,7 +3,7 @@
 
   var dialog = document.getElementById("credential-sample-dialog");
   var opener = document.querySelector("[data-credential-open]");
-  if (!dialog || !opener) return;
+  if (!dialog) return;
 
   var panel = dialog.querySelector(".credential-modal__panel");
   var tour = dialog.querySelector("[data-credential-tour]");
@@ -47,7 +47,7 @@
   var homepageReadingLayout = document.body.classList.contains("homepage-audited");
   var storyUrl = new URL("/", window.location.origin);
   storyUrl.searchParams.set("story", "certificate");
-  var storyText = "Explore CertifyMe's fictional university credential walkthrough. Sharing this link opens the tour only; it does not share a learner record.";
+  var storyText = "Explore how CertifyMe connects university credentials, skills, learner records and career opportunities.";
 
   var dwellByPanel = [10400, 12000, 17600, 12000, 12000, 12800, 12800];
 
@@ -281,7 +281,7 @@
     if (previousFocus && typeof previousFocus.focus === "function") previousFocus.focus();
   }
 
-  opener.addEventListener("click", open);
+  if (opener) opener.addEventListener("click", open);
   window.addEventListener("resize", syncViewport);
   if (typeof ResizeObserver === "function") {
     var stickyBoundsObserver = new ResizeObserver(syncHeaderHeight);
@@ -393,7 +393,7 @@
         field.remove();
         if (!copied) throw new Error("Copy unavailable");
       }
-      shareStatus.textContent = "Tour link copied. It opens this fictional walkthrough only.";
+      shareStatus.textContent = "Tour link copied.";
     } catch (error) {
       shareStatus.textContent = "Could not copy the tour link in this browser.";
     }
@@ -408,11 +408,11 @@
       }
       try {
         await navigator.share({
-          title: "Fictional university credential walkthrough · CertifyMe",
+          title: "University credential walkthrough · CertifyMe",
           text: storyText,
           url: storyUrl.href
         });
-        shareStatus.textContent = "Fictional walkthrough link shared.";
+        shareStatus.textContent = "Tour link shared.";
       } catch (error) {
         var errorName = error && typeof error === "object" ? error.name : undefined;
         if (errorName !== "AbortError") await copyStoryLink();

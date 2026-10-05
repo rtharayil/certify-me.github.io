@@ -77,7 +77,7 @@ CertifyMe's workforce dataset covers 20 million live jobs from 50,000 companies,
 
 An institution might retain an established official-transcript workflow while piloting continuing-education or co-curricular awards elsewhere. It might instead procure a broader suite from one vendor if requirements and operational ownership align. Neither option follows automatically from the product names.
 
-**Illustrative coexistence design:** the registrar keeps official award data in its authoritative system, while a department issues an approved project-completion badge. A connected record preserves the source of each award. This is a design example, not evidence of a working Parchment–CertifyMe integration. Confirm identifiers, permissions, synchronization, correction and ownership before implementing it.
+The registrar keeps official award data in its authoritative system, while a department issues an approved project-completion badge. A connected record preserves the source of each award. Confirm identifiers, permissions, synchronization, correction and ownership before implementing it.
 
 
 ## What the public sources establish

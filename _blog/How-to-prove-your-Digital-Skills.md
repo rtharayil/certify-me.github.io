@@ -51,9 +51,9 @@ A [Comprehensive Learner Record](/comprehensive-learner-record) can connect achi
 
 Use [workforce intelligence](/workforce-intelligence) to investigate occupational requirements and market signals. A matched term is a prompt for review, not proof of job readiness or a promise of employment. Ask career services to help explain gaps and next learning steps.
 
-## Illustrative portfolio entry
+## Build a skills portfolio
 
-A learner could present an assessed spreadsheet model, a short explanation of data quality decisions and an institution-issued achievement with criteria. The example is fictional and does not imply endorsement by any software vendor.
+A learner could present an assessed spreadsheet model, a short explanation of data quality decisions and an institution-issued achievement with criteria.
 
 ## Plan your next step
 

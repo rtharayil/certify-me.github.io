@@ -33,7 +33,7 @@ For the technical explanation, see the [institutional W3C guide](/blog/Understan
 
 Selective disclosure lets a holder reveal a subset of claims with a supported proof mechanism. It requires compatible issuance, presentation and verification. Ordinary signed records do not necessarily support it; deleting fields from a signed credential may invalidate its proof.
 
-**Illustrative example:** an internship provider needs confirmation of course completion, not a student's address or full academic history. The institution could issue a minimal achievement record. If it supports an appropriate selective-disclosure mechanism and receiver, a holder may instead present only permitted claims. This is a design option—not a claim that every CertifyMe credential supports it.
+An internship provider needs confirmation of course completion, not a student's address or full academic history. The institution could issue a minimal achievement record. If it supports an appropriate selective-disclosure mechanism and receiver, a holder may instead present only permitted claims.
 
 Even selective disclosure does not prevent a receiver from retaining disclosed data. Identifiers, status lookups and repeated presentations can create correlation risks. Ask what is logged and who can access those logs.
 

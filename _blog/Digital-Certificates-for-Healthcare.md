@@ -49,7 +49,7 @@ SOC 2 is an attestation report on specified controls and a defined system, not a
 4. Test issuance, correction, expiration and status checks with the actual receiving team. A link or QR code is an access route—not an independent identity check.
 5. Keep licences and mandatory employment authorizations checked against the relevant regulator, even when staff also carry training badges.
 
-**Illustrative example:** a hospital education department could recognize completion of an assessed infection-control refresher. The credential describes that course and its criteria; it does not certify professional licensure or claim that a patient-data system is secure. This is a proposed workflow, not a customer result.
+A hospital education department could recognize completion of an assessed infection-control refresher. The credential describes that course and its criteria; it does not certify professional licensure or claim that a patient-data system is secure.
 
 For a standards-based achievement record, review the [W3C credential model](https://www.w3.org/TR/vc-data-model-2.0/) and your receiver's supported proof mechanisms. Proof checking supports integrity and signing authority; assessment quality and real-world identity assurance remain separate.
 

@@ -2,10 +2,9 @@
 layout: experience-layout
 permalink: /lab
 html_output: true
-title: "Lab Assistant — Example Experience Record | CertifyMe"
-description: "Explore an illustrative lab-assistant experience record. This example view is not an issuer-verified university credential."
-experience_heading: "Lab Assistant — Example Experience Record"
-experience_notice: "Illustrative experience view, not an issuer-verified public credential."
+title: "Lab Assistant — Experience Record | CertifyMe"
+description: "Explore a lab-assistant experience record connecting university achievements, skills and evidence."
+experience_heading: "Lab Assistant — Experience Record"
 ---
 
 <!-- Experience Header -->

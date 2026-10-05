@@ -46,7 +46,7 @@ In the [institutional lifecycle](/platform-overview), separate award approval fr
 
 For [Open Badges achievement credentials](/blog/why-institutions-should-embrace-open-badges-3-0-standards), inspect issuer, achievement and criteria rather than inferring competence from the image. Compatibility with a receiving system should be tested.
 
-## Illustrative exception handling
+## Handle verification exceptions
 
 If a credential's proof validates but the awarding institution cannot be confirmed, do not mark the whole application verified. Escalate the authority question. If a status resource is unavailable, record that uncertainty rather than treating it as valid or revoked.
 

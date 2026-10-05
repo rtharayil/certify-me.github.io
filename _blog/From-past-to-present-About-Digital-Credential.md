@@ -34,7 +34,7 @@ Institutions have long used paper records to recognize qualifications and achiev
 
 Metadata makes an award interpretable. It should distinguish attendance from assessed completion, identify the authorized issuer and explain what the learner did. A record's proof supports tamper evidence relative to its signing key; it is not “bank-level security,” independent identity verification or a guarantee that the achievement is true.
 
-**Illustrative example:** a university replaces a mailed short-course certificate with an approved structured award. The recipient shares a supported record, while the registrar retains correction responsibility and academic staff retain assessment evidence. This is a proposed workflow, not a reported customer saving.
+A university replaces a mailed short-course certificate with an approved structured award. The recipient shares a supported record, while the registrar retains correction responsibility and academic staff retain assessment evidence.
 
 ## What remains after the move online
 

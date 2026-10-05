@@ -45,7 +45,7 @@ Do not call Sertifier an entry-level product that necessarily requires migration
 
 ## Recurring compliance is a lifecycle test
 
-**Illustrative programme:** an employer requires an annual equipment-safety refresher. The authorized assessor approves completion; the issued record names the course, criteria, relevant dates and employee association. Renewal rules create a new or updated record under the institution's policy. The credential does not itself grant equipment access or independently prove identity.
+An employer requires an annual equipment-safety refresher. The authorized assessor approves completion; the issued record names the course, criteria, relevant dates and employee association. Renewal rules create a new or updated record under the institution's policy. The credential does not itself grant equipment access or independently prove identity.
 
 Test that workflow with every shortlisted vendor: duplicate events, a missed refresher, an incorrect employee identifier, a corrected award and account deprovisioning. Ask how receivers discover status changes and what happens when they cannot resolve a key or status resource. Do not assume all verifiers see revocation instantaneously.
 

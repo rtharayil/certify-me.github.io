@@ -329,7 +329,7 @@ If you believe skills should be seen—not just assumed—then this is a tool wo
 
 [NACE's career-readiness competencies](https://www.naceweb.org/career-readiness/competencies) provide a framework for discussing areas such as communication and teamwork. An institution must define its own assessment and justify any alignment; naming NACE does not make a badge NACE-certified.
 
-Illustrative workflow: faculty assess a team project against a published rubric, approve a milestone and retain authorized evidence. Career services helps learners explain the assessment's scope. Use [skills taxonomy mapping](/skills-taxonomy-mapping) to review the relationship and [learner record governance](/comprehensive-learner-record) to preserve provenance. A list of badges is not an independent proficiency test or a guarantee of employer acceptance.
+Faculty assess a team project against a published rubric, approve a milestone and retain authorized evidence. Career services helps learners explain the achievement. Use [skills taxonomy mapping](/skills-taxonomy-mapping) to connect the learning with relevant capabilities and [learner record governance](/comprehensive-learner-record) to keep each achievement connected to its source.
 
 ## Conclusion
 

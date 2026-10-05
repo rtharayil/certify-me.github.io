@@ -40,7 +40,7 @@ The [Open Badges 3.0 specification](https://www.imsglobal.org/spec/ob/v3p0/) des
 5. Explain what is public and make sharing optional. Students should not have to advertise the institution to receive recognition.
 6. Collect voluntary feedback and compare participation and assessed completion against a documented baseline.
 
-**Illustrative example, not a university result:** a sustainability course recognizes a reviewed project proposal. The badge names that assessment, while peer discussion and attendance are measured separately. This example does not claim a retention increase, internship advantage or demonstrated customer success.
+A sustainability course recognizes a reviewed project proposal. The badge names that assessment, while peer discussion and attendance are measured separately.
 
 ## Measure engagement and learning separately
 

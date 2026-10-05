@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" role="img" aria-labelledby="title desc">
-  <title id="title">Asterford University sample academic certificate</title>
-  <desc id="desc">A fictional graduate certificate in Applied Data and Project Leadership awarded to Jordan Lee, marked as a demonstration specimen.</desc>
+  <title id="title">Asterford University academic certificate</title>
+  <desc id="desc">Graduate certificate in Applied Data and Project Leadership for Jordan Lee.</desc>
   <defs>
     <pattern id="paper" width="9" height="9" patternUnits="userSpaceOnUse"><path d="M0 0h9v9H0z" fill="#fffdf7"/><circle cx="1" cy="1" r=".45" fill="#e6ddc9"/></pattern>
     <radialGradient id="seal"><stop stop-color="#f9efc9"/><stop offset="1" stop-color="#cfac61"/></radialGradient>
@@ -36,5 +36,4 @@
   <text x="216" y="565" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" fill="#69778a">DATE OF ISSUE</text>
   <text x="744" y="532" text-anchor="middle" font-family="Georgia,serif" font-size="17" font-style="italic" fill="#263e59">Office of the Registrar</text>
   <text x="744" y="565" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" fill="#69778a">ACADEMIC REGISTRAR</text>
-  <text x="480" y="619" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.4" fill="#786851">SAMPLE CERTIFICATE · FOR PRODUCT DEMONSTRATION ONLY · NOT ISSUED</text>
 </svg>

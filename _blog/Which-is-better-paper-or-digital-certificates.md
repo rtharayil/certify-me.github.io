@@ -283,7 +283,7 @@ Digital certificates are fast.
 
 1. Accessible 24/7—no need to “wait for office hours”
 
-*Illustrative workflow:* A registrar approves a batch, checks recipient data and sends the credentials through the institution's delivery process. Measure processing time and support requests against your own baseline.
+A registrar approves a batch, checks recipient data and sends the credentials through the institution's delivery process. Measure processing time and support requests against your own baseline.
 
 <br>
 
@@ -383,7 +383,6 @@ That said, hybrid models exist too. Some universities issue both paper and digit
 
 ## Practical examples for learners and registrars
 
-These are illustrative situations, not customer testimonials.
 
 ### A graduate sharing an achievement
 

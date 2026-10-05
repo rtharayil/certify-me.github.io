@@ -55,7 +55,7 @@ Hash anchoring cannot itself revoke a record. An issuer needs a separate status 
 
 ## Institutional example and product questions
 
-**Illustrative example:** a university approves a laboratory-assessment award, signs its record and optionally anchors a hash. The employer can check integrity and read the stated criteria, but must decide whether that assessment meets the role's requirement. This is a proposed workflow, not a named customer result.
+A university approves a laboratory-assessment award, signs its record and optionally anchors a hash. The employer can check integrity and read the stated criteria, but must decide whether that assessment meets the role's requirement.
 
 For any learner credential network, ask for the current ledger, anchoring method, proof format, key/status continuity and privacy documentation before asserting how it works. This article does not claim a specific current CertifyMe LCN deployment or an implementation by a healthcare regulator. For CertifyMe's independently documented standards role, use the [OB3 certification evidence](/blog/certifyme-open-badge-3-0-certified).
 

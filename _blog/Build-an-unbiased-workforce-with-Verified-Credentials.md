@@ -41,7 +41,7 @@ Read the [W3C credential guide](/blog/Understanding-W3C-Verifiable-Credentials.h
 
 Academic teams should state assessment criteria clearly. Career services can help learners explain what an award does and does not show. Registrars maintain corrections and authoritative records, while IT validates the supported proof and receiver. Use [skills taxonomy mapping](/skills-taxonomy-mapping) to review capability labels rather than treating an automated label as independent evidence of proficiency.
 
-**Illustrative comparison, not a hiring result:** two applicants present different course-completion awards. The employer evaluates the same job-related task and checks each record's criteria. It does not assume either applicant is stronger because the badge is more polished or the institution is better known.
+Two applicants present different course-completion awards. The employer evaluates the same job-related task and checks each record's criteria. It does not assume either applicant is stronger because the badge is more polished or the institution is better known.
 
 ## Measure fairness separately from verification
 

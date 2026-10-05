@@ -30,7 +30,7 @@ For each badge, record: the outcome in the programme's language; the assessment 
 
 <img class="img-fluid r-16" src="/img/blog/badge-credibility-pyramid.png" alt="Credibility of badges" style="display: block; margin: 0 auto;">
 
-## Illustrative example: a research-methods milestone
+## Recognise a research-methods milestone
 
 A department could recognize a learner's completed research proposal after rubric-based assessment. The credential could identify the achievement and criteria while keeping confidential feedback in an authorized system. This example is a programme design pattern, not a claim about a named customer or a ready-made integration.
 

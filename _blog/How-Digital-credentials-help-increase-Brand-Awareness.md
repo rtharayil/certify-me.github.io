@@ -63,7 +63,7 @@ That’s where digital credentials step in.
 
 ## What are digital credentials (and why should you care)?
 
-Illustrative example: a student completes an assessed data-analytics course. Its award can describe the criteria, issuer and dates. Metadata makes the claim interpretable; supported proof, issuer authority and status checks address verification.
+A student completes an assessed data-analytics course. Its award can describe the criteria, issuer and dates. Metadata makes the claim interpretable; supported proof, issuer authority and status checks address verification.
 
 It can be:
 
@@ -114,7 +114,7 @@ Let’s walk through it, one platform at a time.
     It’s not you saying how great your brand is—it’s your students, alumni, and partners doing it for you.This is a similar concept to building high-quality backlinks, where a link from a reputable source is a vote of confidence. One of the best ways to achieve this is through [guest posting](https://marketinglad.io/sites-for-guest-posting/) on relevant sites.
 
     Example:
-    Illustrative example: a learner shares a leadership-course award with its programme description and verification link. Measure actual views and visits with an agreed method; this example asserts no reach or enrolment result.
+    A learner shares a leadership-course award with its programme description and verification link. Track views and visits to understand how credential sharing supports programme visibility.
 
     That’s the power of shareable proof.
 
@@ -232,7 +232,7 @@ Let’s walk through it, one platform at a time.
 
     **Pro Tip :** Use AI tools to predict trends in sharing patterns for your credentials. This helps you stay ahead of social media or content trends within your industry.
 
-    **Illustrative workflow:** a training team reviews aggregate credential engagement and tests a programme-page message. No named customer, AI accuracy or acquisition result is claimed.
+    A training team reviews aggregate credential engagement and tests a programme-page message.
 
 <br>
 

@@ -41,6 +41,6 @@ For the deeper technical process, use the [W3C institutional guide](/blog/Unders
 
 ## A worked recruiting example
 
-**Illustrative scenario:** an applicant shares a course-completion credential. The employer confirms the issuer, supported proof, recipient association and dates, then checks whether the stated course meets its requirement. If the status service is unavailable, the recruiter logs an unresolved check and requests an official confirmation. No universal seconds-or-minutes deadline is promised.
+An applicant shares a course-completion credential. The employer confirms the issuer, supported proof, recipient association and dates, then checks whether the stated course meets its requirement. If the status service is unavailable, the recruiter logs an unresolved check and requests an official confirmation.
 
 The [credential verification guide](/certificate-verification) connects these checks to platform presentation; the [fraud-prevention article](/blog/How-to-Prevent-Certification-and-Credential-Frauds.html) explains the wider controls. [Discuss a supported verification workflow](https://info.certifyme.online/request-demo) without confusing record integrity with independent identity or accreditation assurance.
