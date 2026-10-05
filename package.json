@@ -4,6 +4,7 @@
   "description": "## Validation",
   "main": "index.js",
   "scripts": {
+    "test:case-studies": "XDG_CONFIG_HOME=/tmp/case-studies-config XDG_CACHE_HOME=/tmp/case-studies-cache node scripts/validate-case-studies-index.cjs",
     "build:performance-css": "node scripts/build-performance-css.cjs",
     "test": "npm run test:private-uploads && npm run test:comparison-mobile && npm run test:images && npm run test:cta-contrast",
     "test:cta-contrast": "npm run build:performance-css && bundle exec jekyll build && node scripts/validate-cta-contrast.cjs",

@@ -1,0 +1,570 @@
+You're right. The previous versions were **assembling features**, not telling a compelling case study.
+
+For this one, I would make it feel like a **real university transformation story**. The reader should first understand the university's world, then feel the problem, then see how the six layers changed the architecture of the learner journey, and finally understand why this matters to a Dean, VC or CIO.
+
+I would use the anonymous description:
+
+> **A globally recognised university's executive education division**
+
+And I would make the **Job Engine / workforce intelligence the culmination of the story**, not a feature suddenly inserted at the end.
+
+---
+
+# CASE STUDY
+
+## A Globally Recognised University
+
+### **From Executive Education to a Connected Professional Journey**
+
+**36,000+ CREDENTIALS • ~24,000 PROFESSIONALS • 3+ YEARS • GLOBAL EXECUTIVE LEARNING**
+
+A globally recognised university's executive education division works with experienced professionals and leaders through a portfolio of executive and professional learning programmes delivered to an international audience.
+
+For the university, these programmes represent more than short-term learning.
+
+They are an important part of its relationship with professionals beyond the traditional degree journey.
+
+A participant may arrive with years of professional experience, complete one executive programme, return for another programme several years later, and continue developing throughout their career.
+
+The university wanted its digital experience to reflect that reality.
+
+The question was not simply how to issue a better certificate.
+
+It was:
+
+> **How can a university turn each executive-learning achievement into part of a professional journey that continues after the programme ends?**
+
+---
+
+# THE CHALLENGE
+
+## The programme ended. The learner journey didn't.
+
+The university already had the essential ingredients.
+
+It had the academic expertise.
+
+It had established executive education programmes.
+
+It had experienced learners from different professional backgrounds.
+
+It had an existing learning environment and processes for managing programme completion.
+
+What was missing was a connected way of carrying the value of that learning forward.
+
+A participant might complete a leadership programme and receive a certificate. Later, they might complete another programme, earn another certificate and develop another set of capabilities.
+
+From the university's perspective, however, these could remain separate achievements.
+
+From the learner's perspective, the problem was even more obvious.
+
+A senior professional does not necessarily want to say:
+
+> *"Here are the certificates I have collected."*
+
+They want to be able to demonstrate:
+
+> **"Here is what I have learned, what capabilities I have developed and how those capabilities contribute to my professional profile."**
+
+The university therefore faced three connected challenges.
+
+### **1. The achievement needed to travel**
+
+Executive learners move between organisations, roles, countries and professional networks.
+
+The university needed its recognition to remain useful outside the learning environment.
+
+### **2. The learning needed to say more**
+
+A programme title and completion date were not enough to describe the value of an executive education experience.
+
+The university needed a way to connect learning with the **skills and capabilities represented by that learning**.
+
+### **3. The university needed to connect learning with the world of work**
+
+The ultimate question was bigger still.
+
+If the university could understand the skills represented across its programmes, could those skills be connected with the professional market?
+
+Could a learner see where their capabilities were relevant?
+
+Could the university understand emerging workforce needs and use that insight to strengthen future learning?
+
+This led to a fundamentally different way of thinking about the credential.
+
+**The credential would not be the destination. It would be the starting point.**
+
+---
+
+# THE APPROACH
+
+## Building six layers around one learning achievement
+
+The university worked with CertifyMe to introduce a digital credential infrastructure layer around its existing learning environment.
+
+The objective was deliberately not to replace the LMS or create a second learning platform.
+
+The existing environment continued to support programme delivery.
+
+CertifyMe provided the connective layer around the **achievement**.
+
+The university used the six-layer approach to progressively increase the value of that achievement.
+
+---
+
+## 01 — PRESENTATION & ACCESS
+
+### Make the university's recognition visible after the programme
+
+The first step was straightforward.
+
+When a participant completed an eligible programme, the university could issue a digital credential representing the achievement.
+
+But the important change was what happened afterwards.
+
+The participant could continue accessing the achievement and use it beyond the original learning environment.
+
+The credential could become part of the professional identity of the learner rather than remaining a record buried inside the university's programme administration.
+
+That established the first principle:
+
+> **A university achievement should remain useful after the classroom experience ends.**
+
+---
+
+# 02 — STANDARDS & INTEROPERABILITY
+
+## Make the achievement portable
+
+The university did not want to create a credential that only made sense inside its own platform.
+
+The credentials were built around recognised standards, including **Open Badges 3.0 and W3C Verifiable Credentials**.
+
+This provided a standards-based representation of the university's recognition.
+
+For the learner, that matters because professional identity increasingly exists across multiple environments.
+
+For the university, it means the digital achievement is not simply another proprietary record.
+
+The university can issue the achievement.
+
+The learner can carry it.
+
+And another party can consume and verify it.
+
+---
+
+# 03 — VERIFICATION & TRUST
+
+## Put the university's authority behind the digital achievement
+
+Executive education carries the reputation of the institution delivering it.
+
+The university therefore needed more than a visually attractive digital certificate.
+
+The achievement needed to answer three fundamental questions:
+
+**Who issued it?**
+
+**Who earned it?**
+
+**What exactly was achieved?**
+
+The verification layer provided that foundation.
+
+The credential became independently verifiable evidence of the university-issued achievement.
+
+This shifted the credential from being primarily a **document** to being a **trusted digital record**.
+
+---
+
+# 04 — SKILL TAXONOMY ALIGNMENT
+
+## Move from programme names to capabilities
+
+This was the point at which the university could begin extracting more value from the learning itself.
+
+An executive programme does not exist simply to produce a completion record.
+
+It develops knowledge, competencies and capabilities.
+
+The university could therefore associate relevant skills with the achievements being issued and map those skills against structured taxonomies where appropriate.
+
+This creates a common language across programmes.
+
+Consider the difference.
+
+### Before
+
+**Executive Leadership Programme**  
+Completed — June 2026
+
+### Connected model
+
+**Executive Leadership Programme**
+
+→ verified achievement
+
+→ leadership-related skills
+
+→ structured taxonomy relationships
+
+→ part of the learner's broader professional record
+
+The programme itself had not changed.
+
+**What changed was how much information survived after the programme ended.**
+
+---
+
+# 05 — COMPREHENSIVE LEARNER RECORD
+
+## One programme becomes part of a longer relationship
+
+This is where the university's executive education proposition becomes particularly interesting.
+
+A professional's relationship with the university does not necessarily consist of one programme.
+
+They may return several times.
+
+They may complete different forms of executive education.
+
+They may accumulate credentials, competencies, skills and other achievements over many years.
+
+The Comprehensive Learner Record provides the foundation for bringing these achievements together.
+
+Instead of:
+
+**Programme A → Certificate**
+
+**Programme B → Certificate**
+
+**Programme C → Certificate**
+
+the university can move towards:
+
+### **One learner → many achievements → connected skills → continuing professional record**
+
+This changes the nature of the relationship.
+
+The university is no longer simply remembering **what the learner completed**.
+
+It can progressively build a picture of **what the learner has developed**.
+
+For a university investing in executive education and lifelong learning, that distinction is significant.
+
+---
+
+# 06 — WORKFORCE INTELLIGENCE & JOB ENGINE
+
+## Connect what the university teaches with where the world of work is moving
+
+The sixth layer completes the journey.
+
+Once learning achievements are connected to structured skills, those skills can be viewed in the context of the workforce.
+
+CertifyMe's **Job Engine** provides a way to bring job-market information into this model, connecting skills with occupations, jobs, employers, locations and workforce demand.
+
+The learner's record can therefore move from:
+
+> **What did I complete?**
+
+to:
+
+> **What capabilities have I developed?**
+
+and then towards:
+
+> **Where are those capabilities relevant?**
+
+That creates a very different relationship between executive education and career development.
+
+The university's learning is no longer represented only as a historical achievement.
+
+It can become part of a structured skills journey.
+
+---
+
+# THE LOOP
+
+## And the value does not stop with the learner
+
+The most interesting part of the model is that workforce intelligence can also flow **back towards the university**.
+
+The university can look at workforce demand and emerging skills as another source of context when thinking about its learning portfolio.
+
+The relationship becomes:
+
+### **WORKFORCE DEMAND**
+What capabilities are employers looking for?
+
+↓
+
+### **SKILL TAXONOMY**
+How can those capabilities be consistently described?
+
+↓
+
+### **EXECUTIVE EDUCATION**
+Where can those capabilities be developed?
+
+↓
+
+### **LEARNING**
+The professional develops the capability.
+
+↓
+
+### **CREDENTIAL**
+The university recognises the achievement.
+
+↓
+
+### **LEARNER RECORD**
+The achievement becomes part of a continuing professional history.
+
+↓
+
+### **JOB ENGINE**
+The skills can be viewed against professional opportunities.
+
+↓
+
+### **NEW LEARNING NEEDS**
+Emerging workforce requirements can inform future learning.
+
+This creates a relationship between **the university's learning portfolio and the workforce**, rather than treating them as separate worlds.
+
+---
+
+# IMPLEMENTATION
+
+## A four-month implementation built around the university's existing environment
+
+The university did not approach the project as a wholesale technology replacement.
+
+The implementation started with **discovery**.
+
+The executive education and technology teams worked through the existing learning workflows, programme structures, completion events and information required to issue credentials.
+
+The first objective was to understand where the credential layer should sit.
+
+The second was to understand what information needed to remain attached to the achievement after the programme was completed.
+
+The third was to establish how the credential, skills and learner-record components could evolve beyond the initial implementation.
+
+### Month 1 — Discovery
+
+The teams mapped the existing programme and learning workflows and identified the initial programmes and cohorts.
+
+Credential requirements, learner experience, data requirements and integration points were defined.
+
+The six-layer model was used to establish the target journey rather than designing only the certificate.
+
+---
+
+### Month 2 — Integration and configuration
+
+The selected learning workflows were connected to CertifyMe.
+
+Credential structures, university branding, achievement information and verification requirements were configured.
+
+The relevant learning outcomes were also reviewed to establish the skills representation and taxonomy mapping.
+
+The objective was to make credential issuance part of the programme workflow rather than another manual administrative activity.
+
+---
+
+### Month 3 — Iteration and validation
+
+The teams tested the complete experience.
+
+A programme completion needed to flow correctly into the credential process.
+
+The learner needed to receive and access the achievement.
+
+The credential needed to be verifiable.
+
+The skills representation needed to make sense.
+
+The resulting record needed to work as part of the broader learner journey.
+
+University stakeholders reviewed working versions throughout the implementation, allowing the experience to be refined before production.
+
+---
+
+### Month 4 — Production rollout
+
+The selected executive education programmes moved into production.
+
+The credential workflow became part of the operational learning process.
+
+The university now had the foundation to extend the approach to additional programmes and progressively build the skills and learner-record model.
+
+---
+
+# 30-DAY HYPERCARE
+
+## Making the change work in the real university environment
+
+Production launch was followed by **30 days of hypercare**.
+
+The focus during this period was not simply technical support.
+
+The implementation team worked with university administrators to validate the new operating process with live programme activity, resolve issues and refine the experience based on actual usage.
+
+This helped ensure that the credential workflow worked for all sides of the journey:
+
+**Programme team → University systems → Credential → Learner → Verifier**
+
+Only after that operational experience was established was the model ready to scale further.
+
+---
+
+# THE OUTCOME
+
+## The university extended the life of its executive-learning achievements
+
+The implementation has supported:
+
+### **36,000+**
+**DIGITAL CREDENTIALS ISSUED**
+
+### **~24,000**
+**PROFESSIONALS REACHED**
+
+### **3+ YEARS**
+**ONGOING ENGAGEMENT**
+
+### **GLOBAL**
+**EXECUTIVE EDUCATION PROGRAMMES**
+
+*Professional reach is an approximate figure based on the available case evidence.*
+
+But the numbers are only part of the story.
+
+The more important change was structural.
+
+The university moved from a model where an achievement could end as a certificate to one where the achievement could become the beginning of a longer digital record.
+
+---
+
+# BEFORE
+
+### **Programme**
+↓  
+### **Completion**
+↓  
+### **Certificate**
+
+The programme ended and the achievement largely remained a standalone record.
+
+---
+
+# AFTER
+
+### **Learning**
+↓
+### **Achievement**
+↓
+### **Digital Credential**
+↓
+### **Verification**
+↓
+### **Skills**
+↓
+### **Skill Taxonomy**
+↓
+### **Comprehensive Learner Record**
+↓
+### **Job & Workforce Intelligence**
+↓
+### **Opportunity**
+
+The difference is not simply digital.
+
+**It is informational.**
+
+More of the value created by the learning experience can remain connected to the learner after the programme ends.
+
+---
+
+# WHAT THIS MEANS FOR THE UNIVERSITY
+
+### For the Dean
+
+Executive education becomes more than a programme that ends with a certificate.
+
+The university can give learners a richer representation of what they achieved and the capabilities represented by the learning.
+
+### For the Vice Chancellor / President
+
+The model provides a foundation for a longer relationship between the university and professionals beyond individual programmes.
+
+Executive education becomes part of a broader lifelong-learning proposition.
+
+### For the CIO / IT Director
+
+The university does not need to replace the existing LMS.
+
+CertifyMe provides a dedicated credential, skills and achievement layer that can sit alongside the existing learning environment and use recognised standards.
+
+### For the learner
+
+A university programme becomes a portable, verifiable achievement that can contribute to a growing professional record.
+
+And over time, the learner can move from simply showing **what they studied** to demonstrating **what they can do**.
+
+---
+
+# THE SIX-LAYER JOURNEY
+
+**01 — PRESENTATION & ACCESS**  
+Make achievement visible and accessible.
+
+↓
+
+**02 — STANDARDS & INTEROPERABILITY**  
+Make it portable.
+
+↓
+
+**03 — VERIFICATION & TRUST**  
+Make it trustworthy.
+
+↓
+
+**04 — SKILL TAXONOMY ALIGNMENT**  
+Describe the capabilities behind the achievement.
+
+↓
+
+**05 — COMPREHENSIVE LEARNER RECORD**  
+Connect achievements across the learner journey.
+
+↓
+
+**06 — WORKFORCE INTELLIGENCE & OPPORTUNITY**  
+Connect capabilities with jobs, employers and workforce demand.
+
+---
+
+# THE BIGGER CHANGE
+
+The university did not simply digitise its executive education certificates.
+
+It changed what could happen **after the certificate was issued**.
+
+A learning experience could produce a verified achievement.
+
+That achievement could carry structured skills.
+
+Those skills could accumulate into a learner record.
+
+The learner record could be understood in the context of the workforce.
+
+And workforce intelligence could provide another source of insight into what professionals may need to learn next.
+
+### **The programme may end. The value of the learning does not have to.**
+
+*Customer identity withheld for confidentiality.*
