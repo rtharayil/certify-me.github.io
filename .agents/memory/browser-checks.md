@@ -80,3 +80,9 @@ Separate supplied article prose from rendering typography and generated reading 
 **Why:** Literal browser-text comparisons rejected unchanged supplied copy because Markdown rendered typographic apostrophes and mobile tables inserted a swipe hint into the article container.
 
 **How to apply:** Normalise straight/typographic quotation marks and whitespace, and exclude known generated controls from prose comparisons. Check those controls separately; do not weaken checks for substantive wording changes.
+
+Contrast audits must distinguish visible label text, actual painted backgrounds and settled interaction states.
+
+**Why:** A site-wide color pass falsely flagged screen-reader-only navigation labels and readable white integration-banner labels over purple background images. Computed ancestor background colors alone did not describe the painted surface.
+
+**How to apply:** Exclude visually hidden accessibility text from visual-label checks. Treat image-dependent ratios as estimates until checked with the image loaded. Validate settled hover colors and keep provisional findings separate from confirmed defects.

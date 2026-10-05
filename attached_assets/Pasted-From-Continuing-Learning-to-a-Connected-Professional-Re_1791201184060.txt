@@ -1,0 +1,125 @@
+From Continuing Learning to a Connected Professional Record
+How one of Europe's longest-established professional associations connected learning, skills and workforce information
+The organisation
+One of Europe's longest-established professional associations has supported its profession for generations through continuing education, short-format programmes and structured professional development.
+Its relationship with members extends well beyond individual courses. The association provides opportunities for professionals to continue learning, maintain their expertise and develop new capabilities throughout their careers.
+As the association's learning portfolio evolved, however, the way those achievements were recorded and connected had become increasingly important.
+A member could complete several programmes over a number of years and receive recognition for each one, but those achievements did not necessarily form a connected picture of professional development.
+The association wanted to improve this without replacing the systems already supporting its learning and member operations.
+The challenge
+The starting point was not simply a requirement to issue digital certificates.
+The association wanted to understand how a learning achievement could remain useful after the programme had ended.
+There were three related questions:
+How could the association provide trusted digital evidence of achievement?
+How could that achievement communicate the skills represented by the learning?
+How could those skills eventually be connected to the wider professional and workforce context?
+The project therefore needed to address the complete journey rather than just the credential itself.
+This is where the six-layer approach provided the structure for the implementation.
+The six-layer approach
+Rather than implementing six separate products or projects, the association used the six layers as a way of progressively building value around the same underlying achievement.
+1. Presentation & Access
+The first requirement was to make the achievement useful and accessible after completion.
+Instead of relying only on a certificate document, the association could provide a digital credential with a dedicated credential record, verification access and sharing capability.
+This gave members a persistent way to access and present their achievement.
+But this was deliberately treated as the first layer, not the end result.
+A better-looking certificate alone would not solve the association's broader problem.
+2. Standards & Interoperability
+The next question was whether the achievement could work beyond the association's own environment.
+The credentials were structured using recognised standards, including Open Badges 3.0 and W3C Verifiable Credentials, allowing the achievement to be represented in a way that supports interoperability.
+This was important for a professional body whose members may move between employers, professional organisations and learning environments throughout their careers.
+The association was therefore not simply creating another proprietary record.
+It was creating a standards-based representation of the achievement.
+3. Verification & Trust
+A professional credential needs to establish more than the fact that a document exists.
+It needs to establish who issued it, who earned it and what was actually achieved.
+The verification layer provided this foundation.
+The member could present the credential, while another party could verify the underlying achievement and its issuer.
+This was particularly relevant to a professional association because the value of its recognition depends partly on the trust placed in the organisation itself.
+The digital credential therefore carried the association's existing professional authority into a verifiable digital format.
+4. Skill Taxonomy Alignment
+This was where the project moved beyond conventional digital credentialing.
+The association began looking at the learning represented by its programmes in terms of skills and capabilities, rather than only programme names and completion status.
+Relevant skills could be associated with credentials and mapped to recognised taxonomies or professional skills frameworks.
+This created a common language for describing what a member had developed.
+For example, instead of a member's record simply showing:
+Completed Professional Programme X
+
+the record could also communicate the capabilities represented by that learning.
+This made individual achievements more useful when brought together with other learning experiences.
+5. Comprehensive Learner Record
+Once credentials and skills could be represented consistently, the next layer was to connect them.
+A member's development could no longer be viewed only as a sequence of individual programme completions.
+Credentials, skills, competencies and other relevant achievements could contribute to a connected professional record.
+This was particularly important for an association whose members may continue professional development over many years.
+The value of the record increases as the member continues learning.
+A programme completed this year becomes one part of a larger professional history rather than a standalone certificate that sits separately from everything else.
+6. Workforce Intelligence & Opportunity
+The final layer connected professional development with the environment in which those skills are used.
+The skills represented in the professional record could be considered alongside occupations, employers, locations and workforce demand through the workforce intelligence layer.
+This created a new relationship between the association's learning portfolio and the professional market.
+For the member, it could help provide context around where their capabilities may be relevant.
+For the association, it creates a way to consider whether the skills developed through its learning programmes continue to reflect changing professional requirements.
+This also creates a feedback loop for future learning:
+Workforce demand → Skills → Learning programmes → Member achievement → Professional record → Workforce context
+How the six layers came together
+The important point was that the six layers were not implemented as six independent initiatives.
+They built on one another.
+The implementation started with a learning achievement.
+That achievement became a digital credential.
+The credential was made interoperable and verifiable.
+Skills were associated with the achievement.
+Those skills could accumulate into a professional record.
+The record could then be understood in relation to workforce demand.
+The resulting journey was:
+Learning
+↓  
+Achievement
+↓  
+Presentation & Access
+↓  
+Standards & Interoperability
+↓  
+Verification & Trust
+↓  
+Skill Taxonomy Alignment
+↓  
+Comprehensive Learner Record
+↓  
+Workforce Intelligence & Opportunity
+That sequence gave the implementation a clear direction.
+At every stage, the association could ask a practical question:
+What additional value does this layer create for the member and for the organisation?
+
+Implementation
+The initial implementation was completed over approximately three months, followed by 30 days of hypercare.
+Month 1 — Discovery and design
+The project began by understanding the association's existing environment rather than starting with technology configuration.
+The teams reviewed the learning and programme processes, member data, completion workflows and relevant integration points.
+They also identified the first group of programmes to bring into the digital credential model.
+During this stage, the six-layer approach was used to define the target experience—from how an achievement would be presented and verified through to how skills and professional records could eventually be structured.
+Month 2 — Integration and configuration
+The second month focused on connecting the selected learning workflows to CertifyMe.
+Credential structures, branding, achievement information, verification requirements and the relevant skills mappings were configured.
+The teams tested the journey from programme completion through credential issuance and member access.
+The skills and taxonomy work was developed alongside the credential implementation rather than being treated as a later enhancement.
+Month 3 — Pilot and rollout
+The third month focused on end-to-end validation.
+The association reviewed working versions of the experience through iterative demonstrations.
+Feedback was incorporated into subsequent iterations before the selected programmes were moved into production.
+This approach allowed the organisation to validate both the technology and the member experience before extending the model further.
+30-day hypercare
+Following launch, the implementation entered a 30-day hypercare period.
+The team supported administrators, monitored the credential workflow and addressed issues arising from real-world programme delivery.
+The period also provided an opportunity to refine the operating model before expanding the approach to additional programmes.
+What changed
+The association started with a familiar model:
+Learning → Completion → Certificate
+The six-layer approach allowed it to progressively extend that model:
+Learning → Achievement → Credential → Verified Skills → Professional Record → Workforce Context
+That distinction is important.
+The project was not simply about digitising an existing certificate process.
+It created a way for the association to connect the learning it delivers, the achievements it recognises, the skills members develop and the professional context in which those skills matter.
+For members, this creates a foundation for a professional record that can grow as they continue learning.
+For the association, it provides a more structured way to understand and extend the value of its learning portfolio.
+And because each layer builds on the previous one, the association can continue expanding the model without having to redesign the entire learning environment each time.
+The six-layer approach gave the organisation a practical path from a single learning achievement to a connected professional record—and ultimately to a stronger connection between continuing education and the world of work

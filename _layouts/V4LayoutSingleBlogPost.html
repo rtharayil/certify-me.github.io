@@ -3,7 +3,7 @@
 
 {% include V4NewLook/blogs/head.html %}
 
-<body id="page-top">
+<body id="page-top"{% if page.case_study %} class="association-case-page"{% endif %}>
  
 	{% include V4NewLook/_GTMNoScript.html %}
     <div id="page" class="page font--jakarta">
@@ -13,7 +13,11 @@
 
 	
 
+        {% if page.case_study %}
+        {{ content }}
+        {% else %}
         {% include V4NewLook/blogs/singleBlogPostV2.html %}
+        {% endif %}
         {% if page.seo_pillar %}
         {% include V4NewLook/institutional-implementation.html %}
         {% include V4NewLook/strategic-links.html %}

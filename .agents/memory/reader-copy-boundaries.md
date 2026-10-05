@@ -3,6 +3,12 @@ name: Reader-facing copy boundaries
 description: Keep editorial taxonomy, claim approvals and authoring process out of public institutional copy.
 ---
 
+The association case study should read as an implementation case, not marketing material.
+
+**Why:** The user explicitly requested “this should look like a case study not marketing material” when replacing its narrative.
+
+**How to apply:** Keep future revisions centred on the organisation’s challenge, delivery and supported changes. Express longer-term capabilities conditionally, without repeated audit disclaimers, sales pitches or invented testimonials.
+
 The user requires every page to be consumable by the institutional ICP, without visible editorial metadata or AI-style authoring footprints. Parent assignments, SEO pillars, owner approvals and audit process descriptions belong in internal records, not visitor-facing prose.
 
 **Why:** The user found a shared “Put this resource in an institutional context” block explaining a “reviewed parent” and displaying generic standards links. Earlier page scores and model reviews missed these explicit defects.

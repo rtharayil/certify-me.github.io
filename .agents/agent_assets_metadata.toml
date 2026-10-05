@@ -719,3 +719,17 @@ mtime_ms = 1791175992388
 storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/b05ab89f-82b2-4fe1-bad5-86802dc31cc7/94e6d134-ee64-43b8-b3f0-1d4e06da324f"
 storage_version_token = "1791176140248276"
 content_type = "text/csv"
+
+[[outputs]]
+id = "Zk3Y7eJg4YGgumZh13_j8"
+uri = "file://.local/reports/cta-color-audit/CTA-label-color-inventory.csv"
+type = "table"
+title = "CTA label color audit — page-by-page inventory"
+description = "Affected URLs, CTA labels, normal/hover states, colors and contrast. Image-backed and transition-dependent cases are marked separately from definite color clashes."
+logical_id = "2c16fde6-bf14-4592-907e-061cff0815f5"
+content_hash = "sha256:0400140138829dcaac702c3ee8744838c7048821e3817f8c0ecc7a9152f6bec6"
+size = 1764972
+mtime_ms = 1791202587076
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/2c16fde6-bf14-4592-907e-061cff0815f5/fe0dc2b8-6e59-4b21-aec9-2ff67ad1dfc7"
+storage_version_token = "1791202757449786"
+content_type = "text/csv"
