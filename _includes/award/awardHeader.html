@@ -24,11 +24,11 @@
             <h1>{{page.Head1}}</h1>
             
             <div>
-                <h2 class="award-header-subheading">{{page.Head2}}</h2>
+                <h2 class="award-header-subheading">{% if page.archived %}Award Programme Archive{% else %}{{page.Head2}}{% endif %}</h2>
 
-                <p class="award-header-description">{{page.Head3}}</p>
+                <p class="award-header-description">{% if page.archived %}{{ site.data.award_archive[page.url].summary }}{% else %}{{page.Head3}}{% endif %}</p>
             </div>
-            <a href="#form" class="btn btn-primary btn-xl page-scroll" style="margin-top: 20px">{{page.HeadCTA}}</a>
+            <a href="{% if page.archived %}https://info.certifyme.online/request-demo{% else %}#form{% endif %}" class="btn btn-primary btn-xl page-scroll" style="margin-top: 20px">{% if page.archived %}Ask About Current Programmes{% else %}{{page.HeadCTA}}{% endif %}</a>
         </div>
     </div>
 </header>

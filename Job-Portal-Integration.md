@@ -1,19 +1,19 @@
 ---
 title: "Job Portal Integration"
 
-description: "Portals like LinkedIn helps you to know about the latest job opportunities depending on the skills acquired"
+description: "Help institutional careers teams connect issued achievements with professional profiles and job-market context."
 
 layout: V4LayoutInnerpages
 
 sitemap.priority: 0.9
 
 # hero section
-HeroTitle: Award Digital Certificates that Open New Avenues for Employment
-HeroText: Enable issuers to establish a learning environment that not only impels students to learn but also meets their ultimate goal, of landing a suitable job.
+HeroTitle: Connect Institutional Achievements with Career Opportunities
+HeroText: Help careers teams make learner achievements easier to share and relate programme skills to employment opportunities.
 HeroImage: /assets4/images/Job Portal/1.png
 
 BoxContentTitle: Bridge the Skills Gap
-BoxContentText: Our credible platform takes care of the complete certification process and also comes with an integrated career-advancing tool to promote student employability. Stand out in the competition by quickly identifying the opportunities available relevant to your credentials.
+BoxContentText: Connect issued achievements with career context. Careers teams can help recipients share their credentials and explore opportunities relevant to their programme skills.
 BoxImage: /assets4/images/Hero Images/Associations.png
 
 #features section

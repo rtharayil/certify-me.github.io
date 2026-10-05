@@ -45,7 +45,7 @@ Tailored for forklift academies, training centers, and safety compliance organiz
 
 1. Features green and off-white design elements, suitable for academic and industrial certifications.
 
-1. **Fully compliant structure:** Developed to align with safety certification protocols, ensuring consistency and validity across issued documents.
+1. **Consistent record structure:** Keep operator, training, assessment and issuer details together for review.
 
 1. **User-friendly customization:** Easily editable fields for candidate names, certification numbers, training completion dates, and signatures streamline the issuance process.
 

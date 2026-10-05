@@ -1,30 +1,31 @@
 ---
 layout: award
+archived: true
 
 title: CertifyMe National School Awards 2021
 
-description: A platform to honor and recognize the top 1% Schools across India
+description: "Archive of CertifyMe National School Awards 2021, recognising school teams and educational achievement in India."
 
 
 logo : /img/awards/awardlogo.png
 
 Head1:  CertifyMe National School  <br > Awards 2021
 Head2:  <br> Nomination are open! 
-Head3: <br>A platform to honor and recognize the top 1% Schools across India
+Head3: Recognition for school teams and educational achievement in India.
 BGImagelink: /img/awards/1.png
 preview: /img/awards/12.png
 HeadCTA: Nominate
 
 criteria: Our expert panel of judges will evaluate each nomination primarily based on the below three criteria
-criteria1H: Stategic Innovation
+criteria1H: Strategic Innovation
 
-criteria1: Skills, knowledge, and experience can only be effectively utilized if encompassed with creativity. Nominees enhancing business performance with novel and different solutions while bidding farewell to yesterday’s methods will be recognized.
+criteria1: Evaluation considered creative approaches to teaching, learning and school operations, and how those approaches supported the school community.
 
 criteria2H: Promotes Inclusivity
-criteria2: It is often important to provide actionable steps to improve diversity and inclusivity in one’s workplace rather than solely believe in the cause. Respectable candidates who have played a vital role in making the firm a comfortable, gender diverse, and culturally vast space for the workforce would gain points in this round.
+criteria2: Evaluation considered practical steps to support a welcoming and inclusive school environment for students and staff.
 
 criteria3H: Overcomes Challenges 
-criteria3: An organization’s strongest assets are undoubtedly its workforce. From strategizing workforce planning, upskill training, improving employee engagement to increasing turnover rates the HR and L&D sectors of a company have to overcome key challenges during the COVID era. We at CertifyMe believe that the top 1 percent expertise in the same must be recognized and rewarded.
+criteria3: Evaluation considered how school teams responded to COVID-era challenges, supported learning continuity and addressed the needs of students and staff.
 
 category: HR / L&D Award Categories
 category1H: Most innovative School in COVID-19
@@ -33,10 +34,10 @@ category3H: Excellence in Workplace Culture & Talent Management
 category4H: Best L&D /HR Team of the Year
 category5H: Best Process Innovation in HR/ L&D
 
-Why: <span>Why should I nominate myself or my team for the </span><br > HR and L & D Excellence  Awards 2021 <span>?</span>
+Why: Recognition in the CertifyMe National School Awards 2021
 
 Why1H: Get Recognised Internationally  
-Why1: Our award program handpicks only less than 1% of the top HR & L &D professionals. To be recognized in the top one percentage means you are the best in the industry across the globe. You deserve to be recognized for your hard work. Nominate yourself and your team now.
+Why1: Recognise school leaders and teams for their contributions to learning and their school communities. Explore the programme's recognition categories below.
 
 Why2H: Gain Better Visibility
 Why2: We will promote all our awardees through our social media posts and channels across Linkedin, Facebook, Twitter,  Instagram, Our Blog posts, etc. Our subscribers all across the globe will have access to this content and this will enable you gain more visibility and improve your personal / organization's branding. 
@@ -44,8 +45,8 @@ Why2: We will promote all our awardees through our social media posts and channe
 Why3H: Earn a Digital Credential 
 Why3: Earn a Verifiable Digital Credential as a proof of your achievement. The awarded digital credentials can be shared across various social media platforms and also can be added to your LinkedIn profile. You will also be allowed to use the badge , certificate in your resume and email signatures. 
 
-About: About <span> HR and L & D Excellence Awards 2021 </span>
-About1: CertifyMe " HR and L & D Excellence Awards 2021" is widely recognized across the corporate spectrum as the top honors for individual and team achievements in the domains of Human Resource and L&D. All organizations, public and private, for profit and non-profit, large and small may submit nominations. HR and L & D are key functions in any corporate firm, but unfortunately, professionals in this field of work are seldom recognized and often neglected to be appreciated for their selfless efforts. The HR and L & D Excellence Awards 2021 is an initiative to bridge this gap by recognizing and honoring the top 1% of HR and L&D professionals across the globe. If you are an HR professional and believe you have what it takes to make it to the top do not wait please nominate yourself or your team. We would love to hear about your achievements. Let the world know about you and your team.
+About: About the CertifyMe National School Awards 2021
+About1: The CertifyMe National School Awards 2021 programme recognises school teams in India. Explore the programme information and recognition categories below, or contact CertifyMe about current recognition programmes.
 
 
 

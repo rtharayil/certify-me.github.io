@@ -3,7 +3,7 @@ layout: V4Layout-SingleTemplate
 
 title: "Editable City & Guilds Certificate Template with Simple Border"
 
-description:  "DowGet a printable City & Guilds certificate template with minimalist border. Download this blank template for the professional recognition your learners deserve."
+description:  "Get a printable City & Guilds certificate template with a minimalist border. Adapt the layout to your institution's award details and issuance requirements."
 
 #tags section
 tag1: "Used 493 times"

@@ -33,5 +33,5 @@ Aids in the recognition of your brand and the development of client trust
 Brands can access the new emergent market more quickly by using white-labelling
 Allows for new ideas and information on current digital development
 
-*Advertise Certifyme.online white label features below*
+## White-Label Credential Features for Institutions
 

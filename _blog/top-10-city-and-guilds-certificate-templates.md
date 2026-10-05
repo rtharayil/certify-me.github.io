@@ -26,7 +26,7 @@ Certificates are not just documents, they are symbols of achievement, profession
 
 When it comes to vocational training and skills development, City & Guilds certificates carry a long-standing reputation for trust and authenticity. To help training providers, colleges, and accredited centres issue professional-looking credentials, professional certificate templates are available that are editable, printable, and ready for use.
 
-According to industry research, training providers using professional template systems report 40% faster certificate processing times and significantly higher learner satisfaction rates compared to custom-designed certificates.
+A reusable certificate layout helps training providers keep learner names, award details and issuer information consistent across a cohort.
 
 <br>
 
@@ -486,7 +486,7 @@ Note: Professional certificate templates that include proper verification elemen
 
 ## Conclusion
 
-Professional certificate design significantly impacts both administrative efficiency and learner outcomes. Research consistently shows that well-designed certificates increase learner motivation by up to 25% and reduce verification queries by 60%.
+Professional certificate design makes achievement details easier to read and gives administrators a consistent format for issuance. Clear issuer information and a verification route help reviewers find the underlying award record.
 
 The templates outlined above represent industry best practices, incorporating elements that have proven most effective for:
 

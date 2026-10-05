@@ -37,7 +37,7 @@ featured: true
 
 Celebrate improvement, excellence, and skill advancement with the Six Sigma Certificate Template. Designed for organizations that certify professionals in Six Sigma methodologies, this template ensures each certificate is credible and visually polished.
 
-The layout includes dedicated space for the recipient’s name, Six Sigma certification level or program title, date, authorized signature, certificate ID, and organization logo. You can also include a QR code for instant verification, providing confidence in the certificate’s authenticity.
+The layout includes dedicated space for the recipient’s name, Six Sigma certification level or program title, date, authorized signature, certificate ID, and organization logo. Add a QR code linked to the issuer's credential record so reviewers can find the award details.
 
 <br>
 

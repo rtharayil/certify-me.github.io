@@ -45,7 +45,7 @@ The A4-sized template includes editable sections for the trainee’s name, cours
 
 1. **Quick certification process:** Ideal for trainers who need to issue bulk OSHA cards efficiently and consistently.
 
-1. **Built-in verification:** Add a unique ID or QR code to confirm authenticity within seconds.
+1. **Verification link space:** Add the credential ID and a QR code that opens the issuer's award record.
 
 1. **Organized management:** Store, resend, and track issued cards from a single platform.
 

@@ -1,5 +1,6 @@
 ---
 layout: award
+archived: true
 
 title: Edvocate Leadership Awards 2023
 

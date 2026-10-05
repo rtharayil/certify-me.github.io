@@ -9,8 +9,8 @@ sitemap.priority: 0.9
 
 
 # hero section
-HeroTitle: " E-Portfolio and Skill Development Platform for K–12 and Higher Education"
-HeroText: "Empowering students to assess skills, discover career paths, and showcase growth through personalized learning paths and dynamic portfolios."
+HeroTitle: "E-Portfolios for Institutional Skills and Career Programmes"
+HeroText: "Give school and university teams a structured way to connect student achievements, skill development and career exploration. Learners can showcase their growth through portfolios."
 HeroDemoButton: "Request Demo"
 HeroDemoButtonLink: "https://info.certifyme.online/request-demo"
 HeroImage: "/assets4/images/ePlatform/E-Portfolio-And-Skill-Development-Software.png"

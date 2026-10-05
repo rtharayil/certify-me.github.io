@@ -25,7 +25,7 @@ featured: true
 
 1. Traditional credentials are vulnerable to forgery, slow to verify, and difficult to share securely, creating trust and efficiency problems for everyone involved.
 
-1. Platforms like CertifyMe allow organizations to issue thousands of credentials in minutes using bulk upload, removing the bottleneck of manual issuance entirely.
+1. CertifyMe lets organisations upload recipient data in batches rather than preparing each credential individually. This reduces repetitive issuance work while keeping award approval with the institution.
 
 <br>
 
@@ -61,7 +61,7 @@ Verifiable credentials are designed to be shared as a live link. That link takes
 
 Manually issuing credentials at scale means managing spreadsheets, creating personalized designs, and sending individual emails. This process creates errors and delays, and falls apart quickly when the volume gets high.
 
-On a platform like CertifyMe, an organization can upload recipient data via a CSV file, select a customized template, and publish hundreds or thousands of credentials in a single session. The platform handles generation and email distribution automatically. What previously took days of administrative work takes minutes.
+On CertifyMe, an organisation can upload recipient data through a CSV file, select a customised template and issue credentials as a batch. Automated generation and email distribution reduce repeated administrative steps; the institution reviews the award criteria and recipient records before issuance.
 
 <br>
 

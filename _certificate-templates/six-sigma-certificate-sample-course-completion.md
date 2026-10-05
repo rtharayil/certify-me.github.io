@@ -47,7 +47,7 @@ The template includes clear spaces for the learner’s name, belt level, course 
 
 1. **Designed for cohorts:** Quickly duplicate the template for multiple participants without distorting the layout.
 
-1. **Verification-ready:** Supports unique certificate IDs or QR-based validation for transparency and trust.
+1. **Verification link space:** Include the certificate ID and a QR code linked to the issuer's credential record.
 
 1. **Organized record maintenance:** Keep digital certificate data in a structured format for easy tracking.
 

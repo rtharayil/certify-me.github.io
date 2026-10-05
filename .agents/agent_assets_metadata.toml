@@ -565,3 +565,73 @@ mtime_ms = 1791140503333
 storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/546e1bf1-7488-47d0-885f-6a5831a905b4/18a2a82c-49f8-4323-9277-98eef9d7d26d"
 storage_version_token = "1791140591430893"
 content_type = "text/csv"
+
+[[outputs]]
+id = "XqAT5Z08vzMSR5YJ-Xcqk"
+uri = "file://.local/reports/final-icp-release/deliverables/icp-final-audit.csv"
+type = "table"
+title = "icp-final-audit.csv"
+description = "539 URL rows with ICP roles, page purpose, editorial scores, issues and actions. Non-buyer utility documents use N/A scores."
+logical_id = "521c6893-3e32-47bb-85eb-ee3ade4f27ec"
+content_hash = "sha256:90236b5a7a6dabfdcc23cd5582ccf35e9ea601da74eba9a4c37de0b8419fdaa5"
+size = 236999
+mtime_ms = 1791168079315
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/521c6893-3e32-47bb-85eb-ee3ade4f27ec/4d8bfa52-b4e5-4f6a-8e86-ecf10db40fb1"
+storage_version_token = "1791168121916515"
+content_type = "text/csv"
+
+[[outputs]]
+id = "AYb57UZ89FPV6M21llntq"
+uri = "file://.local/reports/final-icp-release/deliverables/message-consistency-final.csv"
+type = "table"
+title = "message-consistency-final.csv"
+description = "All 13 required concepts, canonical messages, participating pages and adjudicated consistency findings."
+logical_id = "bdc7d291-da2d-41cc-a8c2-ac9db7881c07"
+content_hash = "sha256:2a3c21e6e0c89f560918c874d1fba0adb28867e8206ce7ab8122c34f608606f4"
+size = 193673
+mtime_ms = 1791168079477
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/bdc7d291-da2d-41cc-a8c2-ac9db7881c07/8581faab-bde6-4501-a242-2176f6875db6"
+storage_version_token = "1791168123357258"
+content_type = "text/csv"
+
+[[outputs]]
+id = "wk_gCoePTYzloqckasS0b"
+uri = "file://.local/reports/final-icp-release/deliverables/ux-readability-final.csv"
+type = "table"
+title = "ux-readability-final.csv"
+description = "539 URL rows using the exact requested UX and readability columns, with remaining minor issues identified."
+logical_id = "3b6ef678-8573-479f-8220-ab73ed93bd9a"
+content_hash = "sha256:55d4f4c6d7fa14ee993ae32fd6737e3b1fd10ba7ca5f988b177f6b687b0231e0"
+size = 115525
+mtime_ms = 1791168079327
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/3b6ef678-8573-479f-8220-ab73ed93bd9a/6da3a753-18cd-4032-84ef-1ba3425cdb90"
+storage_version_token = "1791168124692847"
+content_type = "text/csv"
+
+[[outputs]]
+id = "MKpUq36WijGtIE-KIQuVV"
+uri = "file://.local/reports/final-icp-release/deliverables/message-consistency-audit.csv"
+type = "table"
+title = "message-consistency-audit.csv"
+description = "3,593 page/concept comparisons. Semantic similarity is a qualitative editorial assessment, not a measured embedding score."
+logical_id = "9c29131f-63ec-494c-bfed-17d0637cc37c"
+content_hash = "sha256:8e7fc3b07df625684b89dbcb21de8d9a17a9f00f58e00c80babe102268cfb08e"
+size = 4891552
+mtime_ms = 1791168079471
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/9c29131f-63ec-494c-bfed-17d0637cc37c/d6e2c933-c19a-49ab-9bed-0e58bb230f8a"
+storage_version_token = "1791168126005245"
+content_type = "text/csv"
+
+[[outputs]]
+id = "pMXwCGcdFLRql6Rjk2ZJ7"
+uri = "file://.local/reports/final-icp-release/deliverables/release-audit-summary.html"
+type = "html"
+title = "release-audit-summary.html"
+description = "Implemented corrections, verification evidence, remaining minor issues and unverified release gates. Production readiness is not declared."
+logical_id = "670d633e-61dc-4a20-8f4b-05442de11fea"
+content_hash = "sha256:aad5d07cef07397d098fa5273a41a64daa43b611b342be5b7c2fb7b344257c53"
+size = 5710
+mtime_ms = 1791168081355
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/670d633e-61dc-4a20-8f4b-05442de11fea/de65cf80-7db9-45d4-b6e8-8f27ef2a251f"
+storage_version_token = "1791168127342108"
+content_type = "text/html"

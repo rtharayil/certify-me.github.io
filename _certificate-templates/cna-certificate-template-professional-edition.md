@@ -57,7 +57,7 @@ A polished and modern certificate layout, this CNA certificate template is perfe
 
 1. **Certificate ID included** for organized record-keeping.
 
-1. **Valid until 2026** ensures long-term recognition.
+1. **Validity fields:** Record the issue and renewal dates required by your training programme.
 
 1. **The named institution space** (Liberty School of Nursing) highlights authority.
 

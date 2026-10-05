@@ -25,4 +25,10 @@ A qualified new architecture section does not resolve contradictory legacy copy 
 
 **Why:** A focused source-conditioned answer passed while other sections still promised universal verification, lifetime access and compatibility; illustrative interface figures also lacked visible qualifications.
 
-**How to apply:** Separately audit the full rendered body, labels, comparison sections and image captions. Mark demo values visibly as examples and do not infer full-page factual consistency from an accurate retrieved excerpt.
+**How to apply:** Separately audit the full rendered body, labels, comparison sections and image captions. Follow the current marketing-visual guidance in replit.md rather than adding disclaimer labels. Do not infer customer evidence from interface figures or full-page factual consistency from an accurate retrieved excerpt.
+
+Validate automated editorial-review coverage against the supplied page inventory before merging scores.
+
+**Why:** Structured model responses can silently omit pages, return source filenames instead of URLs, or label legitimate page-specific features as conflicts with an overly narrow canonical description.
+
+**How to apply:** Check exact URL membership and completeness, adjudicate quoted findings against the full page purpose and protected facts, and retain honest unresolved or N/A scores rather than forcing passing grades.

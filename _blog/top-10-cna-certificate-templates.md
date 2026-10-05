@@ -113,7 +113,7 @@ Below is our comprehensive collection of CNA certificate templates, each designe
 
 1. **Certificate tracking elements:** Displays certification ID and validity periods to highlight formal recognition and support compliance requirements.
 
-1. **Industry Insight:** Healthcare facilities increasingly prefer certificates that mirror medical institution standards. According to industry surveys, 78% of healthcare HR managers prioritize certificates with institutional authenticity when evaluating CNA candidates.
+1. **Institutional Use:** Include the issuing organisation, learner name, course details and completion date so healthcare hiring teams can identify the award and review its training context.
 
 <br>
 
@@ -154,7 +154,7 @@ Below is our comprehensive collection of CNA certificate templates, each designe
 
 1. **Unique traceability features:** Certification ID sections ensure each certificate carries distinctive identification for record-keeping and verification purposes.
 
-1. **Industry Insight:** Blue is the most trusted color in healthcare settings, with studies showing it increases perceived credibility by 23%. Community colleges report higher graduate placement rates when using professionally bordered certificates.
+1. **Design Guidance:** A restrained blue border provides visual structure while keeping the learner name, training details and issuing institution easy to read.
 
 <br>
 

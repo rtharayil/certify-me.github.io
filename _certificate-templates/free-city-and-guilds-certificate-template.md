@@ -27,7 +27,7 @@ imageLink: /assets4/images/certificate-templates/Editable Certificate Template 5
 featured: true
 ---
 
-Issue printable and accredited City and Guilds certificates for colleges, training providers, and accredited centres with this professional editable template. Personalise, download, and generate trusted certificates with our city and guilds blank certificate template.
+Authorised training teams can adapt this City & Guilds certificate layout to their learner and award details, then issue through their centre's approved certification process.
 
 <br>
 

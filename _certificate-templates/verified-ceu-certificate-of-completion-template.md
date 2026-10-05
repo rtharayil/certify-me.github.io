@@ -37,7 +37,7 @@ featured: true
 
 The verified CEU certificate of completion template provides a polished and professional way to recognize participants who complete continuing education programs. Its elegant design ensures each certificate is credible, visually appealing, and ready for verification.
 
-You can include a QR code for instant verification, offering recipients and institutions confidence in its authenticity.
+Add a QR code linked to the issuer's credential record so reviewers can find the learner, programme and award details.
 
 <br>
 
@@ -47,7 +47,7 @@ You can include a QR code for instant verification, offering recipients and inst
 
 1. **Efficient bulk issuance:** Generate multiple certificates at once with uploaded participant data, saving time and effort.
 
-1. **Verified authenticity:** Each certificate includes a unique ID or QR code for quick online validation.
+1. **Verification link space:** Include the credential ID and a QR code that opens the issuer's award record.
 
 1. **Centralized control:** Track, resend, and manage all certificates from one dashboard.
 

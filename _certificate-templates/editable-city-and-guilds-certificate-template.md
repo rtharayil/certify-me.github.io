@@ -3,7 +3,7 @@ layout: V4Layout-SingleTemplate
 
 title: "Editable City & Guilds Certificate Template with Red & White Background"
 
-description:  "Issue printable and accredited City and Guilds certificates for colleges, training providers, and accredited centres with this professional editable template. Personalise, download, and generate trusted certificates with this easy-to-use certificate template."
+description:  "An editable City & Guilds certificate layout for authorised training teams. Personalise learner and award fields, then issue through your centre's approved certification process."
 
 #tags section
 tag1: "Used 511 times"

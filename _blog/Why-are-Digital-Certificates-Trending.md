@@ -27,7 +27,7 @@ The recent global pandemic has led to digitalisation giving rise to many digital
 
 ## What is a Digital Certificate?
 
-A digital certificate is an encrypted digital file or document that verifies the system, server and contents of the certification. A digital certificate acts as evidence for the user’s achievement or accomplishment. It is a high-stake credential awarded to users who have completed their degree or a course.
+A digital achievement certificate records a learner's completed course, qualification or assessed achievement. It identifies the issuer and recipient and can include criteria, evidence and a verification route. This differs from a TLS website certificate, which secures a connection to a server.
 
 Digital Certificates are gaining popularity across all industries. Some of the reasons why they are trending could be as follows:
 
@@ -35,7 +35,7 @@ Digital Certificates are gaining popularity across all industries. Some of the r
 
 ## Security:
 
-A digital certificate comes with high-level encryption that secures the identity of both the issuer and the recipient from getting forged, manipulated or getting tampered with. The digital key allows users to access the file with security and denies third-party access. The digital signature verifies the contents of the certificates. A digital certificate is backed with meta-data that enables verification and traceability.
+A signed digital credential carries cryptographic proof that allows a verifier to check its issuer and detect changes to its signed content. The proof does not independently establish the recipient's real-world identity or the truth of every achievement claim. Issuer, recipient and achievement metadata provide context for verification.
 
 <br>
 

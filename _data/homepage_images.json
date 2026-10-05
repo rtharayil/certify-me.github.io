@@ -1,6 +1,6 @@
 {
   "brand": {"source": "assets4/images/Logo/1.png", "widths": [320, 640]},
-  "hero": {"source": "assets4/images/certifyme-verifiable-credentials-skills-clr-hero-960.webp", "widths": [480, 960], "quality": 85},
+  "hero": {"source": "assets4/images/certifyme-institutional-hero-clean.png", "widths": [480, 960], "quality": 85},
   "overview": {"source": "assets4/images/credential-six-layer-stack.webp", "widths": [480, 960, 1440, 1672]},
   "outcomes": {"source": "assets4/images/credential-institution-outcomes.webp", "widths": [480, 960, 1536]},
   "map": {"source": "assets4/images/certifyme-global-regions-map.png", "widths": [480, 960, 1440, 1774]},

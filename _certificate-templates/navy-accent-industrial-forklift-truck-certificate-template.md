@@ -43,7 +43,7 @@ This editable A4 template includes fields for trainee name, training program, co
 
 ### Why Choose CertifyMe’s Forklift Template?
 
-1. **Built for regulatory compliance:** Structured according to industrial safety certification requirements, ensuring every document meets recognized forklift operation standards.
+1. **Structured training record:** Organise training dates, assessment details and issuer information in a consistent layout.
 
 1. Navy blue design with a structured layout for training records. Colour and layout do not establish regulatory compliance.
 

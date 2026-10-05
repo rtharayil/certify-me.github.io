@@ -1,5 +1,6 @@
 ---
 layout: award
+archived: true
 
 title: Thought Leadership in L&D Awards 2023
 

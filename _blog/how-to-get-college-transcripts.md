@@ -153,7 +153,7 @@ When requesting a transcript, be prepared with:
 
 ### Fees and Processing Information
 
-Transcript requests often come with a fee, which can range from $5 to $25 per document. Payment options vary depending on your institution; many accept credit or debit cards, while others may require checks or money orders for mailed requests. Some institutions work also work with [high risk merchant accounts](https://tailoredpay.com/) to make sure the payment process goes smoothly.
+Transcript requests often come with a fee, which can range from $5 to $25 per document. Payment options vary depending on your institution; many accept credit or debit cards, while others may require checks or money orders for mailed requests. Check your registrar's accepted payment methods before submitting the request.
 
 <br>
 
@@ -204,6 +204,6 @@ In summary, obtaining a transcript certificate is a straightforward but essentia
 
 Tools like [**EduTranscript by CertifyMe**](https://www.edutranscript.com/) make ordering transcripts quick and hassle-free, offering easy online access and secure delivery to institutions. With features like expedited options and a reliable order history, CertifyMe keeps the process stress-free and incredibly efficient.
 
-If you're a high school or college student, or part of a university registrar or admin team, EduTranscript is definitely worth checking out—it’s super easy to use and makes the whole process a breeze. You can give it a [**try for free**](https://info.certifyme.online/eduTranscript-demo) right and I promise you’ll find it super helpful!
+University registrars and administrative teams can [request an EduTranscript walkthrough](https://info.certifyme.online/eduTranscript-demo) to discuss transcript request, delivery and verification workflows.
 
 

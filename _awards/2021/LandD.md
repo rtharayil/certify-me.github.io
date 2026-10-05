@@ -1,5 +1,6 @@
 ---
 layout: award
+archived: true
 
 title: HR and L & D Excellence Awards 2021 - LandD
 

@@ -1,0 +1,1274 @@
+============================================================
+FINAL ICP, WORD-LEVEL, UX, READABILITY & MESSAGE CONSISTENCY
+RELEASE AUDIT
+============================================================
+
+This is the FINAL editorial and buyer-experience gate.
+
+Do not assume that content is good simply because:
+
+- the grammar is correct
+- SEO is correct
+- the page ranks for the intended keyword
+- JSON-LD is valid
+- the content is factually supported
+- the page looks visually attractive
+
+The final question is:
+
+DOES THIS WEBSITE COMMUNICATE THE RIGHT MESSAGE,
+TO THE RIGHT BUYER,
+IN THE RIGHT LANGUAGE,
+IN THE RIGHT ORDER,
+WITH THE LEAST POSSIBLE COGNITIVE FRICTION?
+
+Audit every important page at word, sentence, section and page level.
+
+============================================================
+1. ICP MUST BE DEFINED BEFORE AUDITING
+============================================================
+
+Use the existing CertifyMe ICP/source-of-truth strategy.
+
+The primary institutional audience includes decision-makers such as:
+
+- University Vice Chancellors / Presidents
+- Deans
+- CIOs / CTOs
+- Registrars
+- Digital transformation leaders
+- Academic leadership
+- Continuing education / professional education leaders
+- Career services leaders
+- Certification and professional-body executives
+- Enterprise L&D / talent leaders where relevant
+
+The website should primarily communicate to institutional decision-makers.
+
+Do NOT allow B2C-style language to dominate institutional pages.
+
+Do NOT make the website sound like a consumer certificate generator.
+
+Do NOT make the website sound like a generic job board.
+
+Do NOT make the website sound like a generic LMS.
+
+Do NOT make the website sound like a generic HR platform.
+
+============================================================
+2. ICP WORD-LEVEL AUDIT
+============================================================
+
+Review important page copy WORD BY WORD.
+
+For every section ask:
+
+Would my intended ICP naturally use this word?
+
+Would a university decision-maker understand it?
+
+Does this word communicate institutional value?
+
+Does this word make CertifyMe sound more credible or less credible?
+
+Is this word unnecessarily promotional?
+
+Is this word unnecessarily technical?
+
+Is this word consumer-oriented?
+
+Is this word vague?
+
+Is this word repetitive?
+
+Is there a more precise word?
+
+Examples of words requiring scrutiny:
+
+"users"
+"learners"
+"customers"
+"institutions"
+"organizations"
+"students"
+"employees"
+"professionals"
+"members"
+"issuers"
+"recipients"
+
+Use the term that matches the actual audience and context.
+
+============================================================
+3. ICP MESSAGE TEST
+============================================================
+
+For every important page identify:
+
+PRIMARY ICP
+SECONDARY ICP
+USER
+BUYER
+INFLUENCER
+
+Do not assume they are the same person.
+
+For example:
+
+University:
+
+Buyer:
+Senior institutional leadership / procurement
+
+Influencers:
+CIO, Dean, Registrar, Digital Transformation
+
+Users:
+Administrators, faculty, students, credential recipients
+
+The page should primarily address the BUYER'S problem while remaining useful to influencers and users.
+
+============================================================
+4. BUYER PROBLEM TEST
+============================================================
+
+Every strategic page should answer:
+
+What institutional problem does this solve?
+
+Why should the buyer care?
+
+What changes if the institution implements this?
+
+Why is this better than continuing with the current approach?
+
+What makes CertifyMe relevant?
+
+What evidence supports the claim?
+
+If the page only describes features without explaining institutional value, flag it.
+
+============================================================
+5. WORD-BY-WORD VALUE TEST
+============================================================
+
+Review important copy using:
+
+WORD
+→ SENTENCE
+→ SECTION
+→ PAGE
+→ BUYER OUTCOME
+
+Ask whether each major statement contributes to understanding.
+
+Remove or rewrite words that add:
+
+- fluff
+- unnecessary adjectives
+- repetition
+- vague marketing language
+- unnecessary technical complexity
+- unnecessary qualification
+- ambiguity
+
+Do NOT shorten content simply for the sake of shortening it.
+
+The objective is:
+
+MAXIMUM MEANING
+WITH MINIMUM COGNITIVE FRICTION.
+
+============================================================
+6. "SO WHAT?" TEST
+============================================================
+
+For every major section ask:
+
+SO WHAT?
+
+Why should the ICP care?
+
+Example:
+
+Weak:
+
+"CertifyMe supports Open Badges 3.0."
+
+Better:
+
+"CertifyMe supports Open Badges 3.0, giving institutions a standards-based way to issue portable, verifiable digital credentials."
+
+Only use the stronger wording if supported by evidence.
+
+The second sentence explains why the capability matters.
+
+============================================================
+7. "WHY CERTIFYME?" TEST
+============================================================
+
+After reading each strategic page, ask:
+
+Why CertifyMe?
+
+The answer should emerge naturally.
+
+The website should communicate that CertifyMe connects:
+
+Presentation & Access
+→ Standards & Interoperability
+→ Verification & Trust
+→ Skill Taxonomy Alignment
+→ Comprehensive Learner Record
+→ Workforce Intelligence & Opportunity
+→ Job Engine
+
+The buyer should understand that CertifyMe is more than a credential issuing tool.
+
+Do not hide this differentiation.
+
+============================================================
+8. MESSAGE SIMILARITY AUDIT
+============================================================
+
+Perform a full-site semantic similarity audit.
+
+The objective is NOT to make every page identical.
+
+The objective is to prevent different pages from explaining the same idea in unnecessarily different ways.
+
+Identify pages where:
+
+- the same concept is described differently
+- terminology changes
+- positioning changes
+- definitions conflict
+- the same paragraph appears repeatedly
+- different pages use different names for the same product capability
+- the same value proposition is expressed in contradictory ways
+
+Create:
+
+message-consistency-audit.csv
+
+Columns:
+
+URL
+Page Type
+Concept
+Current Message
+Related Page
+Related Message
+Similarity
+Consistency
+Conflict
+Recommended Canonical Message
+
+============================================================
+9. CANONICAL MESSAGE TEST
+============================================================
+
+Establish canonical wording for important concepts.
+
+Examples:
+
+CertifyMe:
+"Digital credential infrastructure for institutions."
+
+Six-layer architecture:
+"Presentation & Access → Standards & Interoperability → Verification & Trust → Skill Taxonomy Alignment → Comprehensive Learner Record → Workforce Intelligence & Opportunity."
+
+Job Engine:
+Use the approved current definition.
+
+CLR:
+Use the approved current definition.
+
+Skill Taxonomy:
+Use the approved current definition.
+
+Open Badges:
+Use the approved standards terminology.
+
+Do not allow pages to invent alternate definitions unless there is a legitimate contextual reason.
+
+============================================================
+10. SAME MESSAGE, DIFFERENT AUDIENCE
+============================================================
+
+Do NOT copy the exact same marketing message onto every page.
+
+Instead preserve the same underlying meaning while adapting it to the ICP.
+
+Example:
+
+University Leadership:
+
+"Create an institutional record of achievement that extends beyond the traditional transcript."
+
+Technical Buyer:
+
+"Connect credential issuance, verification, standards, skill taxonomies and learner records through a common infrastructure layer."
+
+Career Services:
+
+"Connect verified learner skills with workforce and opportunity intelligence."
+
+The underlying architecture remains consistent.
+
+The message is adapted to the audience.
+
+============================================================
+11. PAGE PURPOSE TEST
+============================================================
+
+Every page must have ONE primary purpose.
+
+Identify:
+
+PRIMARY INTENT
+PRIMARY ICP
+PRIMARY QUESTION
+PRIMARY ACTION
+
+If a page tries to:
+
+- explain the product
+- sell the product
+- educate about standards
+- compare competitors
+- explain skills
+- explain CLR
+- explain jobs
+
+all at once, flag it.
+
+Improve information hierarchy.
+
+============================================================
+12. ABOVE-THE-FOLD TEST
+============================================================
+
+For every strategic page inspect the first screen.
+
+Within seconds, can the visitor understand:
+
+WHAT THIS IS
+WHO IT IS FOR
+WHY IT MATTERS
+WHAT TO DO NEXT
+
+The hero should not require the visitor to read several paragraphs.
+
+============================================================
+13. 5-SECOND TEST
+============================================================
+
+Pretend the ICP lands on the page for five seconds.
+
+Then ask:
+
+What would they remember?
+
+If the answer is unclear, improve the hero.
+
+The hero should not be overloaded with:
+
+- multiple competing claims
+- too many statistics
+- excessive badges
+- multiple CTAs
+- long paragraphs
+
+============================================================
+14. 30-SECOND TEST
+============================================================
+
+After approximately 30 seconds, the visitor should understand:
+
+- what CertifyMe is
+- what problem it solves
+- who it serves
+- what makes it different
+
+If not, restructure the page.
+
+============================================================
+15. SCANABILITY TEST
+============================================================
+
+Users do not read every word.
+
+Check:
+
+- headings
+- subheadings
+- bold text
+- bullets
+- tables
+- diagrams
+- spacing
+- section ordering
+
+A visitor scanning only headings should still understand the story.
+
+Perform a:
+
+HEADINGS-ONLY TEST
+
+Read only:
+
+H1
+H2
+H3
+
+Does the page still make sense?
+
+If not, improve the heading structure.
+
+============================================================
+16. INFORMATION DENSITY TEST
+============================================================
+
+Identify sections that are:
+
+TOO DENSE
+
+or:
+
+TOO EMPTY
+
+Too dense:
+
+- long paragraphs
+- multiple concepts in one section
+- overloaded tables
+- too many bullets
+
+Too empty:
+
+- large visual sections with little information
+- generic statements
+- unnecessary spacing
+- repeated claims
+
+Target balanced information density.
+
+============================================================
+17. COGNITIVE LOAD TEST
+============================================================
+
+Identify where the visitor must remember too many concepts at once.
+
+For example:
+
+If a section introduces:
+
+credentials
+standards
+verification
+skills
+CLR
+jobs
+taxonomy
+workforce intelligence
+
+all in one paragraph, restructure it.
+
+Introduce concepts progressively.
+
+The six-layer architecture should provide the organizing framework.
+
+============================================================
+18. MESSAGE ORDER TEST
+============================================================
+
+The typical institutional story should be:
+
+PROBLEM
+↓
+WHY IT MATTERS
+↓
+APPROACH
+↓
+CERTIFYME
+↓
+HOW IT WORKS
+↓
+EVIDENCE
+↓
+DIFFERENTIATION
+↓
+NEXT STEP
+
+Where appropriate.
+
+Do not start every page with generic product features.
+
+============================================================
+19. "TOO MUCH MARKETING" TEST
+============================================================
+
+Flag pages with excessive:
+
+- superlatives
+- adjectives
+- promotional statements
+- repeated CTAs
+- "transform"
+- "revolutionize"
+- "unlock"
+- "empower"
+- "seamless"
+- "powerful"
+
+Replace with useful information where appropriate.
+
+============================================================
+20. "TOO LITTLE MARKETING" TEST
+============================================================
+
+Do not swing too far in the opposite direction.
+
+The website is a marketing website.
+
+It should clearly communicate:
+
+WHY CERTIFYME
+
+WHAT CERTIFYME DOES BETTER
+
+WHO SHOULD CHOOSE CERTIFYME
+
+WHAT THE DIFFERENCE MEANS
+
+Do not turn pages into neutral encyclopedic articles.
+
+============================================================
+21. CERTIFYME POSITIONING BALANCE
+============================================================
+
+Target:
+
+FACTUAL
++
+CONFIDENT
++
+USEFUL
++
+DIFFERENTIATED
+
+Avoid:
+
+PASSIVE
++
+OVERLY NEUTRAL
++
+HEDGED
++
+GENERIC
+
+Also avoid:
+
+AGGRESSIVE
++
+UNSUPPORTED
++
+COMPETITOR-BASHING
+
+If CertifyMe has a documented advantage, state it clearly.
+
+============================================================
+22. COMPARISON PAGE MESSAGE TEST
+============================================================
+
+Every comparison page must answer:
+
+What is the competitor good at?
+
+What is CertifyMe good at?
+
+What is the architectural difference?
+
+What standards matter?
+
+What happens after credential issuance?
+
+How are skills represented?
+
+How does CLR fit?
+
+How does Workforce Intelligence fit?
+
+What does the Job Engine add?
+
+Who is each platform best suited for?
+
+Why might an institution choose CertifyMe?
+
+The comparison should not be neutral merely for the sake of neutrality.
+
+============================================================
+23. COMPARISON READABILITY TEST
+============================================================
+
+Review:
+
+- introduction
+- executive summary
+- tables
+- sections
+- verdict
+- sources
+- CTA
+
+The reader should be able to understand the comparison WITHOUT reading every word.
+
+Create a clear hierarchy:
+
+Quick answer
+↓
+Comparison
+↓
+Key differences
+↓
+Detailed analysis
+↓
+CertifyMe architecture
+↓
+Workforce / Job Engine
+↓
+Best fit
+↓
+Sources
+↓
+Next step
+
+============================================================
+24. BLOG MESSAGE TEST
+============================================================
+
+For every blog ask:
+
+What question is the reader asking?
+
+Does the first section answer it?
+
+Does the article maintain that focus?
+
+Does it introduce unnecessary CertifyMe marketing?
+
+Does it contain enough useful information?
+
+Does the conclusion answer the original question?
+
+Does the article naturally connect to CertifyMe where appropriate?
+
+Do not force the six-layer architecture or Job Engine into unrelated blogs.
+
+============================================================
+25. BLOG READABILITY TEST
+============================================================
+
+Check:
+
+- paragraph length
+- sentence length
+- heading frequency
+- heading quality
+- bullet usage
+- table usage
+- examples
+- transitions
+- conclusion
+
+Avoid:
+
+- paragraph after paragraph of similar structure
+- excessive headings
+- generic intros
+- repetitive summaries
+- repetitive conclusions
+- unnecessary CTAs
+
+============================================================
+26. WORD CHOICE AUDIT
+============================================================
+
+For important pages, identify words that may be:
+
+TOO TECHNICAL
+TOO GENERIC
+TOO MARKETING-HEAVY
+TOO CONSUMER-ORIENTED
+TOO WEAK
+TOO STRONG
+TOO REPETITIVE
+AMBIGUOUS
+
+For each flagged word determine whether a more precise alternative exists.
+
+Do not change terminology simply for variation.
+
+Consistency is more important than stylistic variation.
+
+============================================================
+27. ACTIVE VS PASSIVE LANGUAGE
+============================================================
+
+Where appropriate prefer direct language.
+
+Weak:
+
+"Credentials can be issued and verified through the platform."
+
+Better:
+
+"Institutions can issue and verify credentials through CertifyMe."
+
+Only use the stronger form when factually supported.
+
+Avoid excessive passive voice.
+
+============================================================
+28. JARGON TEST
+============================================================
+
+Identify jargon that the primary ICP may not immediately understand.
+
+Examples:
+
+- VC
+- CLR
+- ESCO
+- O*NET
+- taxonomy
+- credential schema
+- interoperability
+- cryptographic verification
+
+Do not remove important technical terminology.
+
+Instead:
+
+- define it
+- contextualize it
+- or link to an explanation
+
+The objective is:
+
+TECHNICALLY CREDIBLE
++
+EXECUTIVE FRIENDLY
+
+============================================================
+29. ACRONYM TEST
+============================================================
+
+On first use:
+
+Spell out the term.
+
+Example:
+
+Comprehensive Learner Record (CLR)
+
+Then use:
+
+CLR
+
+Do not introduce unexplained acronyms.
+
+============================================================
+30. CTA TEST
+============================================================
+
+Every strategic page should have an appropriate next step.
+
+Check:
+
+- Is the CTA relevant?
+- Is it clear?
+- Is it repeated too often?
+- Does it match buyer intent?
+- Is it too aggressive?
+- Is there a CTA when one is genuinely useful?
+
+Examples:
+
+"Explore the Platform"
+
+"Talk to CertifyMe"
+
+"Request a Demo"
+
+"Explore Digital Credential Infrastructure"
+
+"See How It Works"
+
+Use the most appropriate CTA for the page.
+
+============================================================
+31. MESSAGE REPETITION TEST
+============================================================
+
+Some repetition is necessary for SEO and positioning.
+
+But identify:
+
+EXCESSIVE REPETITION
+
+Examples:
+
+"Digital credential infrastructure" repeated unnaturally every few sentences.
+
+"Trusted by institutions" repeated across multiple sections.
+
+"Open Badges 3.0" mentioned repeatedly without adding meaning.
+
+Do not remove important terminology.
+
+Instead distribute it naturally.
+
+============================================================
+32. SEMANTIC CONSISTENCY TEST
+============================================================
+
+Different wording is acceptable only when the meaning remains consistent.
+
+Example:
+
+"Credential verification"
+
+"Verify digital credentials"
+
+"Credential authenticity"
+
+These may be related concepts.
+
+But do not accidentally make them appear to be different products or features.
+
+============================================================
+33. PAGE-TO-PAGE MESSAGE FLOW
+============================================================
+
+Review important pages as a visitor would navigate:
+
+Homepage
+→ Product
+→ Standards
+→ Skills
+→ CLR
+→ Workforce
+→ Job Engine
+→ Comparison
+→ Contact/Demo
+
+Ask:
+
+Does each page logically continue the story?
+
+Does the visitor understand why the next page matters?
+
+Are pages repeating information unnecessarily?
+
+Are there missing conceptual links?
+
+============================================================
+34. ICP NAVIGATION TEST
+============================================================
+
+Pretend to be a university decision-maker.
+
+Starting at the homepage, can I quickly find:
+
+What CertifyMe is
+Why my institution needs it
+How it works
+Standards
+Security
+Integrations
+Skills
+CLR
+Workforce Intelligence
+Job Engine
+Case studies
+Comparison information
+Contact/demo
+
+If not, improve navigation or contextual links.
+
+============================================================
+35. FINAL WORD-LEVEL QUALITY CHECK
+============================================================
+
+Do a final editorial pass on every important page.
+
+Look for:
+
+- awkward words
+- unnecessary words
+- repeated words
+- ambiguous words
+- overly promotional words
+- weak words
+- unsupported strong words
+- inconsistent terminology
+- grammatical constructions that slow comprehension
+
+Do not rewrite merely to make the text different.
+
+Rewrite only where comprehension, credibility, precision or ICP alignment improves.
+
+============================================================
+36. FINAL MESSAGE SIMILARITY CHECK
+============================================================
+
+Use semantic similarity analysis to detect:
+
+- duplicate sections
+- near-duplicate paragraphs
+- repeated positioning
+- conflicting positioning
+- pages competing for the same message
+- pages that should reference one another
+- pages that are too similar to each other
+
+Do not automatically merge similar pages.
+
+Determine whether similarity is:
+
+INTENTIONAL
+HELPFUL
+REDUNDANT
+CONFLICTING
+
+============================================================
+37. FINAL ICP SCORECARD
+============================================================
+
+Create:
+
+icp-final-audit.csv
+
+Columns:
+
+URL
+Page Type
+Primary ICP
+Secondary ICP
+Buyer
+User
+Primary Problem
+Primary Value Proposition
+ICP Relevance /10
+Clarity /10
+Institutional Relevance /10
+Decision Usefulness /10
+CertifyMe Differentiation /10
+Message Consistency /10
+Readability /10
+UX /10
+CTA Clarity /10
+Issues
+Action
+
+Target:
+
+No strategic page below 8/10 in ICP relevance or clarity.
+
+============================================================
+38. FINAL MESSAGE CONSISTENCY SCORECARD
+============================================================
+
+Create:
+
+message-consistency-final.csv
+
+Columns:
+
+Concept
+Canonical Message
+Pages Using It
+Consistent
+Conflicting Pages
+Redundant Pages
+Required Fix
+
+Critical concepts:
+
+CertifyMe
+Digital Credential Infrastructure
+Presentation & Access
+Standards & Interoperability
+Open Badges 3.0
+W3C Verifiable Credentials
+Verification & Trust
+Skill Taxonomy
+CLR
+Skill Passport
+Workforce Intelligence
+Job Engine
+Opportunity Intelligence
+
+============================================================
+39. FINAL UX READABILITY SCORECARD
+============================================================
+
+Create:
+
+ux-readability-final.csv
+
+Columns:
+
+URL
+Page Type
+First-Screen Clarity /10
+Scanability /10
+Heading Clarity /10
+Paragraph Readability /10
+Information Density /10
+Navigation /10
+CTA Clarity /10
+Mobile Readability /10
+Table Readability /10
+Cognitive Load /10
+Overall UX /10
+Issues
+Action
+
+Target:
+
+No important page below 8/10 overall.
+
+============================================================
+40. FINAL "ONE SENTENCE" TEST
+============================================================
+
+For every important page, generate an internal one-sentence summary:
+
+"This page is for [ICP] who needs [problem], and CertifyMe provides [solution/value]."
+
+If the team cannot produce a clear sentence:
+
+The page's positioning is unclear.
+
+Fix the page.
+
+Do not publish the one-sentence summary automatically.
+
+It is an internal QA test.
+
+============================================================
+41. FINAL "HEADINGS ONLY" TEST
+============================================================
+
+Extract only:
+
+H1
+H2
+H3
+
+for every strategic page.
+
+Read them sequentially.
+
+The page should still tell a coherent story.
+
+If headings are generic or disconnected:
+
+rewrite them.
+
+============================================================
+42. FINAL "FIVE-SECOND" TEST
+============================================================
+
+Inspect the hero/first viewport.
+
+Ask:
+
+What is this?
+
+Who is it for?
+
+Why should I care?
+
+What should I do next?
+
+If any answer is unclear, improve the first screen.
+
+============================================================
+43. FINAL "UNIVERSITY BUYER" TEST
+============================================================
+
+Pretend you are a university decision-maker with two minutes.
+
+Can you determine:
+
+1. What CertifyMe is?
+2. Why the institution needs it?
+3. What standards it supports?
+4. How verification works?
+5. How skills fit in?
+6. How CLR fits in?
+7. How workforce intelligence fits in?
+8. What the Job Engine does?
+9. How CertifyMe differs from alternatives?
+10. How to start a conversation?
+
+If not, fix the information architecture or messaging.
+
+============================================================
+44. FINAL "DO NOT DOWNPLAY CERTIFYME" TEST
+============================================================
+
+Search the site for places where CertifyMe is unnecessarily weakened by:
+
+- excessive hedging
+- vague language
+- burying key capabilities
+- hiding differentiators
+- overly neutral conclusions
+- competitor-first framing
+- excessive focus on competitor strengths
+- weak CTA
+- weak value proposition
+
+Correct these where the underlying capability is verified.
+
+Use confident factual language.
+
+Example:
+
+Weak:
+
+"CertifyMe can help institutions explore skills."
+
+Stronger, if supported:
+
+"CertifyMe connects credentials with structured skill information and taxonomy-aligned skill claims."
+
+============================================================
+45. FINAL "DO NOT OVERSOLD CERTIFYME" TEST
+============================================================
+
+Also identify:
+
+- exaggerated claims
+- unsupported superiority
+- unsupported market leadership
+- absolute claims
+- guaranteed outcomes
+
+Rewrite them to evidence-aligned language.
+
+============================================================
+46. FINAL RELEASE STANDARD
+============================================================
+
+The website should feel:
+
+CLEAR
++
+INTELLIGENT
++
+INSTITUTIONAL
++
+AUTHORITATIVE
++
+EASY TO READ
++
+EASY TO SCAN
++
+FACTUAL
++
+CONFIDENT
++
+DIFFERENTIATED
+
+It should NOT feel:
+
+GENERIC
++
+AI-GENERATED
++
+OVER-PROMOTIONAL
++
+TECHNICALLY DENSE
++
+CONFUSING
++
+REPETITIVE
++
+OVERLY NEUTRAL
++
+CONSUMER-ORIENTED
+
+============================================================
+47. FINAL RELEASE DECISION
+============================================================
+
+Do not declare READY FOR PRODUCTION until:
+
+- ICP alignment passes
+- word-level clarity passes
+- message consistency passes
+- page purpose passes
+- readability passes
+- UX passes
+- comparison readability passes
+- blog readability passes
+- CertifyMe differentiation passes
+- six-layer clarity passes
+- Job Engine visibility passes
+- factual evidence passes
+- AI SEO passes
+- AI-content quality passes
+- HTML passes
+- JSON-LD passes
+- schema passes
+- accessibility passes
+- mobile passes
+- technical SEO passes
+
+No P0/P1 issues may remain.
+
+============================================================
+48. FINAL PRINCIPLE
+============================================================
+
+The website must not merely be:
+
+SEO CORRECT.
+
+It must be:
+
+BUYER CORRECT.
+
+Every important word should help the intended ICP understand:
+
+WHAT CERTIFYME IS
+WHY IT MATTERS
+HOW IT WORKS
+WHY IT IS DIFFERENT
+WHY THE DIFFERENCE MATTERS
+WHAT EVIDENCE SUPPORTS IT
+WHAT TO DO NEXT
+
+The final objective is:
+
+RIGHT MESSAGE
++
+RIGHT ICP
++
+RIGHT WORDS
++
+RIGHT ORDER
++
+RIGHT EVIDENCE
++
+RIGHT UX
++
+RIGHT AI KNOWLEDGE MODEL
+
+Only then is the website ready.

@@ -45,7 +45,7 @@ This template includes fields for trainee name, certification details, completio
 
 1. Professional layout suitable for training institutions and corporate safety teams.
 
-1. **Compliance-ready structure:** Developed to align with standard forklift safety certification protocols, guaranteeing consistency and regulatory compliance across all issued certificates.
+1. **Consistent training documentation:** Organise the operator, course, assessment and issuer details for review against your training requirements.
 
 1. **Easy customization:** Editable fields for trainee names, certification numbers, completion dates, and signatories allow efficient issuance of certificates without design compromise.
 

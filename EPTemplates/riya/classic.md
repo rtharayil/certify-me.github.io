@@ -27,7 +27,7 @@ Experience:
   - year: 2025
     name: "UI/UX Developer"
     company: "TechCraft Solutions"
-    description: "Involved in frontend a development, feature enhancement, sprint-baseddelivery, production debugging, and collaborating with cross-functional teams to deliver reliable software solutions."
+    description: "Involved in frontend development, feature enhancement, sprint-based delivery, production debugging, and collaborating with cross-functional teams to deliver reliable software solutions."
 
   - year: 2023
     name: "Lab Assistant Experience"

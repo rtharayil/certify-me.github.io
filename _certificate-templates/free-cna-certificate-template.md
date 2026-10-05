@@ -45,7 +45,7 @@ This CNA certificate template highlights training accomplishment with a straight
 
 1. **Flexible customization:** You can easily add names, completion dates, and certificate IDs without any design hassle, making every certificate unique and personalized.
 
-1. **Professional authority space:** The CEO signature line is thoughtfully included, giving the certificate a professional touch and validating its authenticity.
+1. **Issuer signature space:** Include the name and signature of the person authorised to approve the award.
 
 1. **Print and digital usability:** Our templates are optimized for both printing and digital sharing, so recipients can frame them or showcase them online.
 

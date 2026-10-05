@@ -8,11 +8,11 @@ layout: V4LayoutInnerpages
 sitemap.priority: 0.9
 
 # hero section
-HeroTitle: Award Verifiable Digital Badges to Drive Business Growth
-HeroText: Bring value to your product training program participants by issuing tangible, socially shareable, and secure open badges for an online demonstration.
+HeroTitle: Verifiable Credentials for Product Training Teams
+HeroText: Give customers, partners and employees a clear record of completed product training, with issuer details and an achievement they can share.
 
 BoxContentTitle: An Automated, Efficient, and Cost-effective Credentialing Program
-BoxContentText: Eliminate monotonous, labor-intensive and delayed certification programs and welcome a fast and automated credentialing process. We seamlessly integrate with your existing learning management systems (LMSs) following a no-code integration process for instant credentialing. <br> Our digital badging process also functions as a sustainable alternative to traditional, paper certification systems. Ditch the high cost of paper, ink, labor charge, and certificate delivery - perform everything digitally at a fraction of the cost.
+BoxContentText: Reduce repeated certificate preparation with batch issuance and digital delivery. Connect approved training outcomes from your learning management system (LMS) through a supported integration workflow. Your team retains control of award criteria and recipient approval, while participants receive an achievement record they can share.
 BoxImage: /assets4/images/Hero Images/Associations.png
 
 #features section

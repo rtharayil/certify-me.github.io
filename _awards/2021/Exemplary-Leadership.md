@@ -1,5 +1,6 @@
 ---
 layout: award
+archived: true
 
 title: Exemplary Leadership Awards 2021
 

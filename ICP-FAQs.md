@@ -1,7 +1,7 @@
 ---
-title: "FAQ's - Industry Use Case"
+title: "Institutional Digital Credentialing FAQs"
 
-description: "Industry-specific FAQs covering how CertifyMe fits different use cases, from associations and training providers to enterprises and educational institutions."
+description: "Answers for institutional leaders evaluating credential issuance, standards, learner records and implementation across education, certification and enterprise training."
 
 layout: V4LayoutICP_FAQ
 

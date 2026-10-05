@@ -1,5 +1,6 @@
 ---
 layout: award
+archived: true
 
 title: Excellence in eLearning Leadership Award 2023 (ELLA)
 

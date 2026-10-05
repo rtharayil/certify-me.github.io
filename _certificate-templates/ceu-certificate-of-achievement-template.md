@@ -37,7 +37,7 @@ featured: true
 
 Celebrate milestones and accomplishments with the Official CEU Certificate of Achievement Template. Designed to honor participants who complete accredited programs or demonstrate exceptional achievements, this template ensures certificates are both credible and visually appealing.
 
-The layout includes space for the recipient’s name, achievement or program title, date, authorized signature, certificate ID, and organization logo. A QR code can be added to provide instant verification, giving recipients and institutions confidence in its authenticity.
+The layout includes space for the recipient’s name, achievement or program title, date, authorized signature, certificate ID, and organization logo. Add a QR code linked to the issuer's award record so reviewers can find the achievement details.
 
 
 <br>
@@ -62,6 +62,6 @@ The layout includes space for the recipient’s name, achievement or program tit
 
 1. **Recognizes accomplishment:** Provides recipients with formal proof of CEU-accredited completion.
 
-1. **Widely accepted:** Trusted by institutions and employers as a valid record of achievement.
+1. **Clear achievement details:** Present the completed programme, credit information and issuing organisation for review.
 
 1. **Simplifies record-keeping:** Structured layout makes storing, retrieving, and auditing certificates straightforward.

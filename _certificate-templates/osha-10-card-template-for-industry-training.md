@@ -57,7 +57,7 @@ This A4 card template includes editable spaces for the participant’s name, cou
 
 ### Key Benefits
 
-1. **Demonstrates safety compliance:** Confirms that workers have completed official OSHA 10-hour General Industry training.
+1. **Training documentation:** Provides fields for the completed course, training dates and authorised issuer details.
 
 1. **Enhances credibility:** Builds confidence among employers, clients, and safety auditors.
 

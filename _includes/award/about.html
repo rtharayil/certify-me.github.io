@@ -2,6 +2,18 @@
     
    <section id="about" class="about-area pt-70">
 <style>
+.about-area {
+    position: relative;
+    overflow: hidden;
+}
+.about-area .about-shape-1 img {
+    max-width: 100%;
+    height: auto;
+}
+.about-area .about-image img {
+    max-width: 100%;
+    height: auto;
+}
 @media (max-width: 767px) {
     .text {
       margin-left: 10px; } 
@@ -24,8 +36,8 @@
                         <h2 class="title">{{page.About}}</h2>
                        
                     </div> <!-- section title -->
-                    <p class="text" > {{page.About1}} </p>
-                    <a  href="#form" class="main-btn">Nominate </a>
+                    <p class="text">{% if page.archived %}{{ site.data.award_archive[page.url].about }}{% else %}{{page.About1}}{% endif %}</p>
+                    <a href="{% if page.archived %}https://info.certifyme.online/request-demo{% else %}#form{% endif %}" class="main-btn">{% if page.archived %}Ask About Current Programmes{% else %}Nominate{% endif %}</a>
                 </div> <!-- about content --> 
             </div>	
             <div class="col-lg-6">
@@ -35,8 +47,8 @@
             </div>
         </div> <!-- row -->
     </div> <!-- container -->
-    <div class="about-shape-1">
-        <img src="/assets/images/about-shape-1.svg" alt="shape">
+    <div class="about-shape-1" aria-hidden="true">
+        <img src="/assets/images/about-shape-1.svg" alt="">
     </div>
 </section>
 

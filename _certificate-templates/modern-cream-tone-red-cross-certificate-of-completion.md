@@ -57,6 +57,6 @@ This **Red Cross** certificate of completion template is designed with a minimal
 
 1. **Instant authenticity:** Unique IDs or QR codes can be integrated for fast verification.
 
-1. **Universal recognition:** Carries the professional weight of Red Cross certifications worldwide.
+1. **Clear completion record:** Provides space for the course, learner, issue date and issuing organisation.
 
 1. **Cost-effective design:** Elegant yet affordable for institutions certifying multiple trainees.

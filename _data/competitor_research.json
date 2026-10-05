@@ -18,7 +18,7 @@
         "CLR": ["NOT PUBLICLY SPECIFIED", ["S01", "S03"], "Pathways and a wallet do not establish a CLR 2.0 implementation or certification role."],
         "Skills": ["Credential skills and learning outcomes are linked to Job Market Insights.", ["S01"]],
         "Learner Records": ["A digital wallet and visual milestone learning pathways are documented; this is not evidence of CLR conformance.", ["S01", "S03"]],
-        "Workforce Intelligence": ["Job Market Insights tied to programme skills and learning outcomes are documented. Exact dataset coverage, licensing and refresh are NOT PUBLICLY SPECIFIED in reviewed sources.", ["S01"]],
+        "Workforce Intelligence": ["Job Market Insights tied to programme skills and learning outcomes are documented. Exact dataset coverage, licensing and refresh are NOT PUBLICLY SPECIFIED.", ["S01"]],
         "Verification": ["Verifiable credentials and conversion into supported open formats at sharing or verification are described.", ["S01", "S03"]],
         "Analytics": ["Email and credential engagement, social shares, referrals, pathway completions and dropoffs.", ["S01"]],
         "API": ["Pricing lists API access and exportable insights data; the platform links public API documentation. Confirm plan entitlements.", ["S01", "S02"]],

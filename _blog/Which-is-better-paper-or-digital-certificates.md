@@ -304,7 +304,7 @@ Multiply that by a few hundred—or a few thousand—students, and you're starin
 Digital certificates, meanwhile, eliminate most of these expenses.
 You’ll likely pay a licensing fee for a digital platform, but the long-term savings are significant. You’re cutting out paper, postage, and manual labor. Plus, fewer errors mean fewer reprints and re-issues.
 
-*Bonus Benefit:* Digital is also eco-friendly. No trees harmed. No carbon footprint from mailing paper across the globe.
+*Operational Benefit:* Digital delivery reduces the need to print and post individual certificates, especially for large or geographically distributed cohorts.
 
 <br>
 

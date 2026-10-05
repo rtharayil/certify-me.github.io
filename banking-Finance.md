@@ -11,14 +11,14 @@ talktoexpertlink: "https://info.certifyme.online/talk-with-expert"
 talkToOurExpertLink: "https://info.certifyme.online/talk-with-expert"
 
 HeroImg: 
-HeroTitle: How can financial teams verify issued records?
+HeroTitle: Verifiable Issued Records for Financial Institutions
 Hero2Msg: Your Brand And Trust
-HeroText: Issue verifiable bank statements, insurance credentials, and invoices for digitally evolved finance duties.
+HeroText: Help finance operations teams issue branded bank statements, insurance credentials and invoices with clear issuer information and a verification route.
 
 
 Feature1Image: /assets3/Image3/10.png
-Feature1Title: Open Source Verifiable Bank Statements
-Feature1Text: Ensure streamlined management of bank statements via our digital credential management software, CertifyMe. Our platform transforms the process of statement generation and distribution by automating it and replacing traditional, flawed documents with accurate, up-to-date statements for your customers. The secure documentation system also allows you to store, and access past statements, making it easy to track financial history and resolve any discrepancies. Check <a href="https://info.certifyme.online/request-demo">how we can simplify</a> your banking and finance processes.
+Feature1Title: Verifiable Bank Statement Records
+Feature1Text: Create and distribute statement records using approved issuer data. Include the statement period, recipient and issuer details so customers can review the document and its verification context. Your finance team remains responsible for source figures, approval and corrections. <a href="https://info.certifyme.online/request-demo">Discuss your financial-record workflow</a> with CertifyMe.
 
 
 
@@ -28,7 +28,7 @@ Feature2Text: Create and maintain issuer-managed credential records with clear r
 
 Feature3Image: /assets3/Image3/12.png
 Feature3Title: Low-Risk, Traceable Invoices for Bank Employees and Customers
-Feature3Text: Experience a seamless billing and payment process with our advanced digital credential management software. The intuitive platform of CertifyMe makes it a breeze to share authentic bank statements. Whenever a situation persists where a customer has to share bank details, sharing the credential or verified documents can do the job. The scannable statement indicates the document/credential is not tampered with. Tracking the information associated with bank invoices becomes simpler and hassle-free. Take control of your financial history and resolve financial discrepancies using our cutting-edge software. 
+Feature3Text: Publish issued invoice and statement records with clear references and issuer details. Staff and recipients can review the document through its verification route; your finance team controls the source figures and approval process.
 
 
 

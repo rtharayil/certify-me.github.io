@@ -61,7 +61,7 @@ The template includes fields for the participant’s name, course title, complet
 
 1. **Recognizes achievement:** Provides participants with tangible proof of their learning accomplishments.
 
-1. **Widely accepted:** Trusted by employers, institutions, and professional boards as authentic documentation.
+1. **Reviewable achievement details:** Present the completed programme, credit information and issuing organisation clearly.
 
 1. **Simplifies record-keeping:** Logical, structured design makes storing and retrieving certificates effortless.
 

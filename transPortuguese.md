@@ -8,7 +8,7 @@ layout: V4Layout
 sitemap.priority: 1
 
 # hero section 
-HeroTitle: Software seguro de gerenciamento de certificados e crachás para programas de aprendizagem
+HeroTitle: Infraestrutura de credenciais digitais para instituições
 HeroText: 'Classificado como líder em software de gerenciamento de credenciais digitais na indústria educacional - G2, TrustRadius, Capterra' 
 HeroImage: /assets4/images/Images Webp/digital credential software.webp
 HeroDemoButton: Solicite uma demonstração

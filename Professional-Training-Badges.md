@@ -8,10 +8,10 @@ layout: V4LayoutInnerpages
 sitemap.priority: 0.9
 
 # hero section
-HeroTitle: Take Your Business Forward and Boost Learner Engagement with Digital Credentials
-HeroText: Offer tangible and socially shareable representation of employee accomplishments to drive program growth and create course demand.
+HeroTitle: Digital Credentials for Professional Training Programmes
+HeroText: Help training and certification teams issue verifiable achievement records, track credential engagement and keep their organisation visible when recipients share awards.
 
-BoxContentTitle: Branded Digital Credentials for Zero Cost Marketing
+BoxContentTitle: Keep Your Institution Visible in Every Shared Credential
 BoxContentText: Issue white-labeled open badges that reflect your authentic brand image and create a trustworthy, credible appearance. Maintain a cohesive, consistent brand identity since participants first come across you to earn your micro badges. Our premium branding solution keeps you visible online & all across the credential. Manage your digital credential look & feel with complete authority.
 BoxImage: /assets4/images/Hero Images/Associations.png
 
@@ -27,12 +27,12 @@ Feature2Text: Attracting learners and improving learner engagement is a challeng
 
 Feature3Image: /assets4/images/Associations/3.png
 Feature3Title: Bank-level Encryption to Protect Your Credential Data
-Feature3Text: Blockchain-enabled, OpenBadge Version 2.0 & GDPR compliant, and encrypted online badges keep your credential information protected. Relax knowing your program details are in safe hands when you choose us as your credentialing partner. Eliminate any risks of credential fraud and forgery with CertifyMe.
+Feature3Text: CertifyMe supports Open Badges 3.0 for structured achievement records. Give reviewers a verification route to check the issuer and award details, while your team controls recipient data and issuance permissions.
 
 
 Feature4Image: /assets4/images/img-10.png
 Feature4Title: Automate Credentialing Process, Scale Program Growth, and Focus on Essentials
-Feature4Text: Replace the tedious manual credentialing process with an automated, faster, and safer credentialing system by choosing CertifyMe. No matter how many course participants you have or newly joined the session, scaling the badging program is hassle-free when we are with you. Our flexible pricing options offer the freedom of awarding as many credentials as you want while you are growing. Let us take the weight off your shoulders and you only focus on business growth.
+Feature4Text: Use batch issuance and digital delivery to reduce repeated credential preparation as your programme grows. Choose a plan that matches your award volume, and let your team focus on training quality and recipient support.
 
 
 # Feature5Image: /assets4/images/img-08.png

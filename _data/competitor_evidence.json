@@ -258,7 +258,7 @@
         {
           "vendor": "Accredible",
           "dimension": "Workforce Intelligence",
-          "current_claim": "Job Market Insights tied to programme skills and learning outcomes are documented. Exact dataset coverage, licensing and refresh are NOT PUBLICLY SPECIFIED in reviewed sources.",
+          "current_claim": "Job Market Insights tied to programme skills and learning outcomes are documented. Exact dataset coverage, licensing and refresh are NOT PUBLICLY SPECIFIED.",
           "source_url": "https://www.accredible.com/platform",
           "source_date": "2026-10-04",
           "source_date_basis": "retrieval/observation",

@@ -41,7 +41,7 @@ Our Red Cross certificate template features a polished red accent design that sy
 
 ### Why Choose CertifyMe's Red Cross Certificate Template?
 
-1. **Humanitarian authenticity:** Designed with the Red Cross values in mind, the template celebrates participants’ dedication to humanity and their contributions to the world.
+1. **Humanitarian focus:** The layout provides space to recognise participation and contribution to humanitarian activities.
 
 1. **Trusted symbolism:** The red accent style reinforces the credibility and global recognition of the Red Cross certificate template, making it instantly respected by institutions and employers.
 

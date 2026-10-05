@@ -48,7 +48,7 @@ It includes editable fields for operator name, course title, completion date, tr
 
 1. **Bulk issuance ready:** Perfect for certifying multiple operators efficiently in group sessions.
 
-1. **Built-in verification:** Unique IDs and QR codes make it easy to confirm the certificate’s authenticity.
+1. **Verification link space:** Use a credential ID and a QR code to direct reviewers to the issuer's award record.
 
 1. **Organized management:** Track, resend, and store all issued cards through a single platform.
 

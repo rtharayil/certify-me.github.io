@@ -1,5 +1,6 @@
 ---
 layout: award
+archived: true
 title: "Edvocate Leadership Awards 2022 — Archived Nomination Overview"
 description: "Archived nomination overview for the Edvocate Leadership Awards 2022, including leadership categories and evaluation criteria."
 logo : /img/awards/awardlogoLeader.png

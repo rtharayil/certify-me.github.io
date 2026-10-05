@@ -57,7 +57,7 @@ This certificate includes space for the participant's full name, workshop title,
 
 ### Key Benefits
 
-1. **Boosts credibility:** Validates participation in recognized process-improvement training.
+1. **Records participation:** Provides space for the issuer to document completed process-improvement training.
 
 1. **Professional recognition:** Supports employee growth and internal talent development.
 

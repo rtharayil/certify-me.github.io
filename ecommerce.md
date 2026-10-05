@@ -11,8 +11,8 @@ talktoexpertlink: "https://go.certifyme.online/talk-with-expert"
 talkToOurExpertLink: "https://go.certifyme.online/talk-with-expert"
 
 HeroImg: 
-HeroTitle: Credentials that Make E-Commerce Websites Trustworthy
-HeroText: CertifyMe can support digital records for product information and warranty documentation.
+HeroTitle: Verifiable Product Records for E-Commerce Teams
+HeroText: Give e-commerce operations teams issuer-branded digital records for product information and warranty documentation, with details customers can review.
 
 
 

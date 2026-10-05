@@ -1,4 +1,11 @@
 <section id="form">
+{% if page.archived %}
+    <div class="container">
+        <h2 class="title">Explore Current Recognition Programmes</h2>
+        <p>This page describes a past CertifyMe award programme. Talk to our team about current recognition opportunities and nomination requirements.</p>
+        <a href="https://info.certifyme.online/request-demo" class="main-btn">Contact CertifyMe</a>
+    </div>
+{% else %}
 
 
 
@@ -20,4 +27,5 @@
         </div>
     </div>
 
+{% endif %}
 </section>

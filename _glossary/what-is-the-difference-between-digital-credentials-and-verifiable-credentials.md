@@ -93,18 +93,14 @@ This verification can happen instantly and independently.
 Most verifiable credential ecosystems involve three roles: the issuer (who creates the credential), the holder (who receives and stores it), and the verifier (who checks its authenticity). This model allows credentials to be trusted and verified at scale.
 
 
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Credential Comparison</title>
+<div class="credential-type-comparison">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f9f9f9;
+    .credential-type-comparison {
+      overflow-x: auto;
+      max-width: 100%;
     }
 
-    table {
+    .credential-type-comparison table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 20px;
@@ -112,31 +108,29 @@ Most verifiable credential ecosystems involve three roles: the issuer (who creat
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    th, td {
+    .credential-type-comparison th, .credential-type-comparison td {
       padding: 12px 16px;
       border: 1px solid #ddd;
       text-align: left;
     }
 
-    th {
-      background-color: #007BFF;
+    .credential-type-comparison th {
+      background-color: #005f9e;
       color: white;
     }
 
-    tr:nth-child(even) {
+    .credential-type-comparison tr:nth-child(even) {
       background-color: #f2f2f2;
     }
 
-    tr:hover {
+    .credential-type-comparison tr:hover {
       background-color: #eef7ff;
     }
 
-    td strong {
+    .credential-type-comparison td strong {
       color: #333;
     }
   </style>
-</head>
-<body>
 
   <h2>Here’s a quick comparison to paint the picture:</h2>
 
@@ -213,8 +207,7 @@ Most verifiable credential ecosystems involve three roles: the issuer (who creat
     </tbody>
   </table>
 
-</body>
-</html>
+</div>
 
 <br>
 

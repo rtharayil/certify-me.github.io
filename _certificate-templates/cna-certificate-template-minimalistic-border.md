@@ -57,7 +57,7 @@ This CNA certificate template embodies professionalism and recognition. Its stru
 
 1. **Certificate ID included** for unique record-keeping.
 
-1. **Validity period until January 2026** emphasizes authenticity.
+1. **Renewal dates:** Enter the validity period defined by the issuing organisation.
 
 1. **CEO signature placement** adds institutional credibility.
 

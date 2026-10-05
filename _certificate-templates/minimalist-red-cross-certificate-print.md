@@ -59,6 +59,6 @@ This **Red Cross certificate print** is designed with a minimalist professional 
 
 1. **Fast personalization:** Minimalist layout allows trainers to quickly add participant details without design complexity.
 
-1. **Easy verification:** Supports unique certificate IDs or QR codes to confirm authenticity with ease.
+1. **Verification link space:** Add a credential ID and a QR code that opens the issuer's award record.
 
 1. **Affordable professionalism:** Combines a polished presentation with cost-effective efficiency.

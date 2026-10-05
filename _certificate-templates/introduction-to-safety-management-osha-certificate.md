@@ -45,7 +45,7 @@ The OSHA certificate template for Introduction to Safety Management is crafted f
 
 1. **Efficient for trainers:** Save time issuing multiple certificates with quick data upload and automatic generation.
 
-1. **Built-in verification:** Add a unique ID or QR code for instant validation of training authenticity.
+1. **Verification link space:** Include an award ID and a QR code linked to the issuer's training record.
 
 1. **Accessible record management:** Track issued certificates and reissue them anytime through a simple dashboard.
 

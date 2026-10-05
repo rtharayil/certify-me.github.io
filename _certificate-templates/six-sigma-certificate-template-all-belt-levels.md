@@ -59,7 +59,7 @@ The certificate includes editable sections for the candidate’s full name, belt
 
 1. **Recognizes growth across stages:** Perfect for progressive Lean Six Sigma training paths.
 
-1. **Proof of expertise:** Helps learners showcase officially acknowledged skills at every belt tier.
+1. **Achievement record:** Helps issuers document the learner's assessed belt level and programme details.
 
 1. **Industry-aligned design:** Matches common certification standards valued by employers.
 

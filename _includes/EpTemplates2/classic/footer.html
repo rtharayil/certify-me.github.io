@@ -62,7 +62,9 @@
     
     <div class="pt-8 border-t border-[hsl(var(--border))]/40">
       <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-[hsl(var(--muted-foreground))] text-sm">© {{ "now" | date: "%Y" }} {{ page.name | default: site.title | default: "Portfolio" }}. All rights reserved.</p>
+        {% assign copyright_name = page.name | default: site.title | default: "CertifyMe" %}
+        {% if copyright_name contains ".md" %}{% assign copyright_name = site.title | default: "CertifyMe" %}{% endif %}
+        <p class="text-[hsl(var(--muted-foreground))] text-sm">© {{ "now" | date: "%Y" }} {{ copyright_name | escape }}. All rights reserved.</p>
         <div class="flex gap-6 text-sm">
           <a href="#" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors">Privacy Policy</a>
           <a href="#" class="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors">Terms of Service</a>

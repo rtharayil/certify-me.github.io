@@ -47,7 +47,7 @@ The A4 template includes fields for the trainee's name, course title, completion
 
 1. **Bulk issuance:** Generate multiple certificates at once by uploading trainee data, reducing manual work.
 
-1. **Built-in verification:** Each certificate comes with a unique ID or QR code that allows anyone to confirm authenticity online.
+1. **Verification link space:** Include a credential ID and a QR code linked to your organisation's award record.
 
 1. **All-in-one platform:** Manage your templates, track issued certificates, and resend them anytime from a single dashboard.
 

@@ -296,7 +296,7 @@ That’s the power of digital credentials, and it’s something universities and
 
 So whether you're building a career or shaping one, remember: inclusion isn't just a checkbox. It’s a mindset—and it begins with how we see and support each other right now.
 
-Even beyond education, companies across sectors are realizing the [need for digital credentials in busines](https://www.certifyme.online/blog/Need-for-Digital-Credentials-for-businesses-and-commercial-purposes.html)—because in today’s world, proving skills matters more than ever.
+Even beyond education, companies across sectors are recognizing the [need for digital credentials in business](https://www.certifyme.online/blog/Need-for-Digital-Credentials-for-businesses-and-commercial-purposes.html) to document achievements and make skill evidence easier to review.
 
 <br>
 

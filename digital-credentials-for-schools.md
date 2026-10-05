@@ -1,15 +1,15 @@
 ---
 title: "Digital credentials for schools"
 
-description: "Schools can use the feature to create a school's own digital identity; this helps them build their brand and engage with potential students."
+description: "Help school leaders issue verifiable digital credentials, manage award records and give students a clear way to share achievements."
 
 layout: V4LayoutInnerpages
 
 sitemap.priority: 0.9
 
 # hero section
-HeroTitle: Issue Secure And Verifiable Digital Certificates to Boost Student Engagement
-HeroText: Empower your students to showcase achievements in a verifiable manner to potential employers.
+HeroTitle: Digital Credentials for School Achievement Records
+HeroText: Give school leaders a structured way to issue and verify achievements while helping students share what they have learned.
 
 BoxContentTitle: A Streamlined Digital Credentialing System
 BoxContentText: Ensure an efficient and hassle-free digital certification process for school students using the user-friendly platform of CertifyMe. Save time and administrative effort by automating your credentialing journey. Offer socially shareable, white-label friendly open badges for the best online exposure.
