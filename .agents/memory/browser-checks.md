@@ -74,3 +74,9 @@ Prefer the selected resource's unrounded ratio over a generous percentage tolera
 **Why:** Density-corrected heights can round to only a few pixels, making an undistorted logo appear substantially stretched. Raising a global ratio tolerance would also let genuinely squeezed images pass.
 
 **How to apply:** Keep the corrected natural dimensions in diagnostic reports, but use the independently decoded selected resource for the proportion assertion. Keep only a small layout/subpixel tolerance.
+
+Separate supplied article prose from rendering typography and generated reading controls when checking copy fidelity.
+
+**Why:** Literal browser-text comparisons rejected unchanged supplied copy because Markdown rendered typographic apostrophes and mobile tables inserted a swipe hint into the article container.
+
+**How to apply:** Normalise straight/typographic quotation marks and whitespace, and exclude known generated controls from prose comparisons. Check those controls separately; do not weaken checks for substantive wording changes.

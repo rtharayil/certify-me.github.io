@@ -852,7 +852,7 @@ so the section is never empty.
                         {% endif %}
                     </div>
 
-                    {% if page.faqs and page.faqs.size > 0 %}
+                    {% if page.faqs and page.faqs.size > 0 and page.faqs_in_content != true %}
                     {% include V4NewLook/blogs/_faq.html faqs=page.faqs %}
                     {% endif %}
                     {% include V4NewLook/comparison-sources.html %}
