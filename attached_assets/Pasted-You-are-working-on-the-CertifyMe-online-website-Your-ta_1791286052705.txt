@@ -1,0 +1,963 @@
+You are working on the CertifyMe.online website.
+
+Your task is to create a NEW, production-quality **Transcript Management** page inside the main CertifyMe website.
+
+IMPORTANT: Do NOT simply copy the existing EduTranscript page. Research the entire CertifyMe website first, understand its current design system, messaging, navigation, assets, images, videos, components and higher-education positioning, and then create a substantially better native CertifyMe page.
+
+==================================================
+1. CRAWL AND ANALYSE THE EXISTING WEBSITE
+==================================================
+
+Before writing or modifying code, crawl and analyse the CertifyMe website comprehensively.
+
+Start from:
+
+https://www.certifyme.online/
+
+Then crawl all relevant internal pages, including but not limited to:
+
+- Higher Education
+- Digital Credentials
+- Transcript Management
+- EduTranscript
+- Integrations
+- API
+- Security & Compliance
+- Verification
+- Analytics
+- White Labelling
+- Custom Wallet
+- Cryptographic Signature
+- Certificate Templates
+- SkillStory / Skill Passport
+- Student Experience
+- relevant blogs
+- relevant case studies
+- FAQs
+- comparison pages
+- resource pages
+- video pages
+
+Also inspect:
+
+- navigation
+- footer
+- header
+- CTA patterns
+- typography
+- buttons
+- cards
+- section spacing
+- responsive layouts
+- colour system
+- iconography
+- illustrations
+- product screenshots
+- videos
+- logos
+- trust badges
+- customer logos
+- testimonials
+- animations
+- existing reusable components
+
+DO NOT assume that the existing EduTranscript page represents the current CertifyMe design.
+
+The current CertifyMe Higher Education page should be treated as an important reference for the current brand direction and positioning.
+
+==================================================
+2. SPECIFICALLY ANALYSE THE EXISTING TRANSCRIPT CONTENT
+==================================================
+
+Inspect the existing:
+
+https://www.certifyme.online/eduTranscript.html
+
+and, if accessible:
+
+https://www.edutranscript.com/
+
+Extract and analyse:
+
+- all headings
+- copy
+- feature descriptions
+- CTA text
+- images
+- image URLs
+- image alt text
+- video embeds
+- video thumbnails
+- screenshots
+- product UI images
+- icons
+- testimonials
+- statistics
+- FAQs
+- links
+- downloadable resources
+- structured data
+- metadata
+- SEO title
+- meta description
+- canonical URL
+- Open Graph information
+
+Do NOT blindly copy claims.
+
+Cross-check claims against the current CertifyMe website.
+
+If an old claim is inconsistent with the current CertifyMe positioning, DO NOT reuse it.
+
+==================================================
+3. EXTRACT AND REUSE THE BEST EXISTING ASSETS
+==================================================
+
+For every relevant existing page:
+
+1. Identify all image assets.
+2. Identify the actual image URL/path.
+3. Download/copy the asset if technically possible.
+4. Identify whether it is:
+   - hero image
+   - product screenshot
+   - dashboard screenshot
+   - illustration
+   - customer logo
+   - testimonial image
+   - certification badge
+   - icon
+   - video thumbnail
+   - decorative image
+5. Identify the best page/section where the asset could be reused.
+
+DO NOT create fake placeholder images if a suitable CertifyMe asset already exists.
+
+Prioritise real CertifyMe product screenshots, real UI, real credential examples, real institutional logos and existing visual assets.
+
+If a relevant image exists elsewhere on certifyme.online, reuse it rather than generating a visually inconsistent replacement.
+
+==================================================
+4. EXTRACT AND REUSE VIDEOS
+==================================================
+
+Crawl relevant pages and identify all relevant videos.
+
+Look for:
+
+- YouTube embeds
+- Vimeo embeds
+- video URLs
+- product demo videos
+- transcript videos
+- higher-education videos
+- credential verification videos
+- student experience videos
+
+Where a relevant video exists, use the real video.
+
+Do NOT create fake video thumbnails.
+
+Create a visually strong video/demo section using the actual available video.
+
+If there is no relevant transcript-specific video, use the strongest relevant CertifyMe higher-education/product video and clearly frame it as a platform walkthrough.
+
+==================================================
+5. CREATE A NEW NATIVE CERTIFYME PAGE
+==================================================
+
+Create a new page:
+
+/transcript-management
+
+The page must feel like a first-class CertifyMe product page.
+
+It should NOT look like a separate EduTranscript microsite.
+
+The visual identity must be:
+
+- CertifyMe
+- enterprise-grade
+- modern
+- higher-education focused
+- trustworthy
+- clean
+- premium
+- technically credible
+- conversion-focused
+
+Use the existing CertifyMe design system.
+
+Do NOT introduce an unrelated colour palette or visual language.
+
+Use the existing CertifyMe indigo / light-background visual language where appropriate.
+
+==================================================
+6. CORE POSITIONING
+==================================================
+
+The central positioning should be:
+
+"Digital Transcript Management for Modern Universities"
+
+The page should communicate that CertifyMe is not simply a PDF transcript generator.
+
+Position transcript management as part of the university's broader digital credential infrastructure.
+
+Core narrative:
+
+Academic Record
+→ Digital Transcript
+→ Verification
+→ Credentials
+→ Comprehensive Learner Record
+→ Verified Skills
+→ Skill Passport
+→ Career Identity
+
+The transcript is an institutional record and should be:
+
+- secure
+- verifiable
+- accessible
+- portable
+- interoperable
+- institution-controlled
+- connected to the broader learner record
+
+==================================================
+7. HERO SECTION
+==================================================
+
+Create a powerful hero section.
+
+H1:
+
+Digital Transcript Management for Modern Universities
+
+Supporting headline:
+
+Turn academic records into trusted, verifiable digital transcripts.
+
+Supporting copy:
+
+CertifyMe helps universities digitize the complete transcript lifecycle — from student request and institutional approval to secure delivery and independent verification.
+
+Primary CTA:
+
+Request a Demo
+
+Secondary CTA:
+
+See How It Works
+
+Include a strong real CertifyMe transcript/product image.
+
+Prefer an existing relevant image discovered during the crawl.
+
+The hero should visually communicate:
+
+University
+→ CertifyMe
+→ Digital Transcript
+→ Verification
+
+Do not use generic stock photography if an existing CertifyMe product visual can be used.
+
+==================================================
+8. THE PROBLEM
+==================================================
+
+Create a section explaining the limitations of traditional transcript workflows.
+
+Suggested headline:
+
+A PDF Is Not a Modern Academic Record
+
+Explain the problems:
+
+- manual transcript requests
+- email-based processing
+- paper workflows
+- slow verification
+- forged or altered documents
+- administrative workload
+- students waiting for records
+- recipients contacting registrars
+- disconnected academic records
+
+Use a strong visual from the existing website where possible.
+
+Do not overuse generic icons.
+
+==================================================
+9. TRANSCRIPT LIFECYCLE
+==================================================
+
+Create a visually impressive workflow section:
+
+01 — Student Request
+02 — Institutional Review
+03 — Approval
+04 — Digital Issuance
+05 — Secure Delivery
+06 — Independent Verification
+07 — Lifecycle Management
+
+Each step should have concise copy.
+
+Use animation or scroll-based progression if consistent with the existing website.
+
+==================================================
+10. TRANSCRIPT MANAGEMENT FEATURES
+==================================================
+
+Create a feature section covering:
+
+- Digital transcript issuance
+- Student transcript requests
+- Automated processing
+- Institutional approval workflows
+- Batch issuance
+- SIS integration
+- LMS integration
+- API and webhooks
+- Secure delivery
+- Verification
+- Revocation/lifecycle management
+- Institutional branding
+- Custom domains
+- Analytics
+- Role-based administration
+- Auditability
+- Multilingual capability
+
+Use actual screenshots/assets wherever available.
+
+==================================================
+11. UNIVERSITY SYSTEM INTEGRATION
+==================================================
+
+Create a visual architecture section:
+
+University Systems
+
+SIS
+ERP
+LMS
+Student Portal
+Registrar Systems
+
+↓
+
+CertifyMe
+
+Transcript Management
+Credential Issuance
+Verification
+APIs
+Webhooks
+SSO
+
+↓
+
+Verified Academic Record
+
+Digital Transcript
+Degree
+Certificate
+Badge
+
+Use actual integration logos from the CertifyMe website where legally/technically appropriate.
+
+Do not invent integrations.
+
+Only mention integrations that are actually supported or documented by CertifyMe.
+
+==================================================
+12. "MORE THAN A TRANSCRIPT" SECTION
+==================================================
+
+This is a strategically important section.
+
+Explain that CertifyMe connects transcripts with the broader institutional credential ecosystem.
+
+Show:
+
+Degrees
++
+Transcripts
++
+Certificates
++
+Digital Badges
++
+Micro-Credentials
++
+Co-Curricular Records
++
+Internship Records
+
+↓
+
+Comprehensive Learner Record
+
+↓
+
+Verified Skills
+
+↓
+
+Skill Passport
+
+Use existing CertifyMe / SkillStory visual assets where available.
+
+Link to the relevant SkillStory page.
+
+==================================================
+13. VERIFICATION SECTION
+==================================================
+
+Create a section explaining why digital verification matters.
+
+Headline:
+
+Verify Academic Records in Seconds — Not Days
+
+Explain:
+
+- independent verification
+- institutional authority
+- cryptographic integrity
+- verification without unnecessary manual intervention
+- secure digital access
+- machine-readable records where supported
+
+Use the actual CertifyMe verification UI if available.
+
+Include a CTA:
+
+See How Verification Works
+
+Link to the appropriate existing CertifyMe verification page.
+
+==================================================
+14. STANDARDS AND TRUST
+==================================================
+
+Create a standards section.
+
+Use only claims that can be verified from the current CertifyMe website.
+
+Potential areas:
+
+- Open Badges 3.0
+- W3C Verifiable Credentials
+- CLR
+- SOC 2 Type II
+- ISO 27001
+- GDPR
+- FERPA
+
+Do NOT exaggerate or make unsupported compliance claims.
+
+Where certification logos/badges already exist on the CertifyMe website, reuse the actual assets.
+
+==================================================
+15. STUDENT EXPERIENCE
+==================================================
+
+Create a section focused on students.
+
+Headline:
+
+Give Students Instant Access to Their Academic Records
+
+Explain how students can:
+
+- request records
+- receive digital transcripts
+- access records
+- securely share records
+- provide records to universities
+- provide records to employers
+- maintain access to their digital academic history
+
+Use a real student-facing product screenshot if one exists.
+
+==================================================
+16. REGISTRAR / ADMINISTRATOR VALUE
+==================================================
+
+Create a section specifically for registrars and university administrators.
+
+Headline:
+
+Built for the University Registrar
+
+Show benefits:
+
+Less manual processing
+Faster fulfilment
+Centralised workflows
+Better verification
+Institutional control
+Scalable issuance
+Integration with existing systems
+Analytics and reporting
+
+Use real product UI screenshots.
+
+==================================================
+17. BRANDING / WHITE LABEL
+==================================================
+
+Explain that the institution remains the visible issuer.
+
+Include:
+
+- university logo
+- university colours
+- branded emails
+- branded credential pages
+- custom domain where supported
+- institutional verification experience
+
+Use real CertifyMe branding screenshots if available.
+
+==================================================
+18. ANALYTICS
+==================================================
+
+If the existing CertifyMe analytics product supports transcript-related analytics, create a section showing:
+
+- requests
+- issuance
+- claims/access
+- sharing
+- verification
+- engagement
+
+Do not invent metrics.
+
+Only use real metrics or clearly label conceptual examples.
+
+==================================================
+19. TRUST / SOCIAL PROOF
+==================================================
+
+Reuse relevant existing CertifyMe:
+
+- university logos
+- testimonials
+- G2/Capterra/TrustRadius information
+- institutional customer evidence
+
+Do not invent customers.
+
+Do not alter testimonial wording unless necessary for formatting.
+
+Prioritise higher-education evidence.
+
+==================================================
+20. VIDEO SECTION
+==================================================
+
+Add the strongest relevant CertifyMe video discovered during the crawl.
+
+Preferred order:
+
+1. Transcript management demo
+2. Higher education product demo
+3. Digital credential platform demo
+4. Verification demo
+
+Use the real video embed.
+
+Create a premium video card with:
+
+"See CertifyMe in Action"
+
+and a short supporting description.
+
+==================================================
+21. FAQ SECTION
+==================================================
+
+Create an SEO-friendly FAQ section.
+
+Questions should include:
+
+What is digital transcript management?
+
+How do universities issue digital transcripts?
+
+Can CertifyMe integrate with our SIS?
+
+Can students request transcripts online?
+
+How are digital transcripts verified?
+
+Can digital transcripts be branded with our university identity?
+
+Can CertifyMe manage degrees and certificates alongside transcripts?
+
+Are CertifyMe credentials interoperable?
+
+Can transcripts become part of a Comprehensive Learner Record?
+
+How does CertifyMe support transcript verification?
+
+Only provide answers supported by actual CertifyMe capabilities.
+
+==================================================
+22. FINAL CTA
+==================================================
+
+End with a strong institutional CTA.
+
+Headline:
+
+Modernize Your University's Transcript Experience
+
+Copy:
+
+Give students faster access to their academic records while giving registrars a secure, scalable and verifiable transcript workflow.
+
+CTA:
+
+Request a Demo
+
+Secondary CTA:
+
+Explore Higher Education
+
+==================================================
+23. INTERNAL LINKING
+==================================================
+
+Add contextual internal links to relevant CertifyMe pages.
+
+At minimum investigate and link to:
+
+- Higher Education
+- Digital Credential Infrastructure
+- Integrations
+- Security & Compliance
+- Verification
+- Analytics
+- SkillStory / Skill Passport
+- API
+- relevant FAQ
+- relevant case studies
+- relevant blogs
+
+Do NOT dump all links into one section.
+
+Use contextual anchor text.
+
+Example:
+
+"Explore CertifyMe's higher education credential infrastructure."
+
+"See how CertifyMe integrates with university systems."
+
+"Explore the SkillStory Skill Passport."
+
+==================================================
+24. SEO
+==================================================
+
+Create SEO metadata.
+
+Suggested title:
+
+Digital Transcript Management Software for Universities | CertifyMe
+
+Suggested meta description:
+
+Securely issue, manage and verify digital transcripts with CertifyMe. Automate transcript requests, integrate with your SIS, and give students accessible, verifiable academic records.
+
+Suggested URL:
+
+/transcript-management
+
+Primary keyword:
+
+digital transcript management
+
+Secondary keywords:
+
+digital transcript software
+transcript management system
+university transcript management
+academic transcript management
+digital transcripts for universities
+online transcript management
+transcript verification
+secure digital transcripts
+student transcript management
+university transcript software
+
+Do NOT keyword stuff.
+
+==================================================
+25. STRUCTURED DATA
+==================================================
+
+Implement appropriate structured data where technically appropriate.
+
+Consider:
+
+- SoftwareApplication
+- WebPage
+- FAQPage
+- BreadcrumbList
+- Organization
+
+Only implement schema that accurately reflects the page.
+
+==================================================
+26. IMAGE SEO
+==================================================
+
+Every meaningful image must have:
+
+- descriptive filename
+- meaningful alt text
+- lazy loading where appropriate
+- width/height to avoid layout shift
+- responsive sizing
+- WebP/AVIF where appropriate
+
+Do not use meaningless names such as:
+
+image1.png
+final-image.jpg
+hero-new.png
+
+Use semantic names such as:
+
+certifyme-digital-transcript-management-dashboard.webp
+
+==================================================
+27. PERFORMANCE
+==================================================
+
+The new page must be fast.
+
+Optimize:
+
+- image sizes
+- lazy loading
+- video loading
+- JavaScript
+- CSS
+- fonts
+- animations
+
+Do not sacrifice page speed for unnecessary animations.
+
+Avoid loading large videos automatically.
+
+Use poster images and lazy loading where appropriate.
+
+==================================================
+28. RESPONSIVE DESIGN
+==================================================
+
+The page must work exceptionally well on:
+
+- desktop
+- laptop
+- tablet
+- mobile
+
+Test:
+
+375px
+768px
+1024px
+1440px+
+
+Ensure:
+
+- no horizontal scrolling
+- readable typography
+- correctly cropped images
+- responsive cards
+- usable CTAs
+- accessible navigation
+
+==================================================
+29. ACCESSIBILITY
+==================================================
+
+Follow WCAG principles.
+
+Include:
+
+- proper heading hierarchy
+- alt text
+- keyboard navigation
+- sufficient contrast
+- visible focus states
+- accessible buttons
+- accessible video controls
+- semantic HTML
+
+==================================================
+30. DO NOT BREAK THE EXISTING WEBSITE
+==================================================
+
+This is extremely important.
+
+Do NOT:
+
+- redesign the whole CertifyMe website
+- change global navigation unnecessarily
+- change the existing homepage
+- change unrelated pages
+- remove existing assets
+- break existing routes
+- replace existing components globally unless required
+- introduce a separate design system
+
+Build the transcript page using the existing site's architecture and components wherever possible.
+
+==================================================
+31. CONTENT QUALITY
+==================================================
+
+The final page must sound like an enterprise B2B higher-education technology company.
+
+Avoid:
+
+- generic AI marketing language
+- excessive adjectives
+- meaningless claims
+- repetitive content
+- fake statistics
+- fake customer names
+- fake integrations
+- fake certifications
+- exaggerated "revolutionary" language
+
+Write for:
+
+- University Vice Chancellors
+- CIOs / CTOs
+- Registrars
+- Directors of IT
+- Digital Transformation leaders
+- Student Services leaders
+- Academic administration teams
+
+The page should answer:
+
+Why should a university modernize transcript management?
+
+Why CertifyMe?
+
+How does it work?
+
+How does it integrate?
+
+How is it verified?
+
+How does it benefit students?
+
+How does it benefit administrators?
+
+How does it fit into the university's broader digital credential strategy?
+
+==================================================
+32. IMPORTANT DIFFERENTIATION
+==================================================
+
+Do NOT position CertifyMe merely as:
+
+"another transcript generator."
+
+Position it as:
+
+"The digital infrastructure behind the modern university record."
+
+The transcript is one component of a broader verified academic record.
+
+The strategic story should be:
+
+University Systems
+→ CertifyMe
+→ Verified Academic Records
+→ Digital Credentials
+→ Comprehensive Learner Record
+→ Skills
+→ Skill Passport
+→ Career Identity
+
+==================================================
+33. ASSET AUDIT OUTPUT
+==================================================
+
+Before finalizing the implementation, create an internal asset audit.
+
+For every reused asset record:
+
+- source page
+- original URL/path
+- asset type
+- where reused
+- whether optimized
+- final filename
+
+For videos record:
+
+- source page
+- video URL
+- title
+- where embedded
+
+Do not display this audit publicly on the website.
+
+==================================================
+34. FINAL QA
+==================================================
+
+After implementation:
+
+1. Build the page.
+2. Run the application.
+3. Open /transcript-management.
+4. Test all buttons.
+5. Test all internal links.
+6. Test video.
+7. Test mobile.
+8. Test desktop.
+9. Check console errors.
+10. Check broken images.
+11. Check broken links.
+12. Check SEO metadata.
+13. Check canonical URL.
+14. Check structured data.
+15. Check accessibility.
+16. Check page speed.
+17. Check that existing pages still work.
+
+Fix all errors before completion.
+
+==================================================
+35. FINAL RESULT
+==================================================
+
+The final result must feel like a premium CertifyMe-native product page, not a copied EduTranscript landing page.
+
+Use the strongest existing CertifyMe assets, screenshots, videos, logos and visual components discovered during the crawl.
+
+The final page should make a university decision-maker immediately understand:
+
+"CertifyMe can modernize our transcript workflow today — and give us the infrastructure to build a complete, verifiable digital academic record tomorrow."
+
+Do not stop at analysis.
+
+Actually implement the page in the existing CertifyMe website codebase.

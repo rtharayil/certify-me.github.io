@@ -36,6 +36,39 @@ async function run() {
       assert.equal(await page.locator(".dci-layer").count(), 6);
       assert.equal(await page.locator(".dci-buyer-grid article").count(), 4);
       assert.equal(await page.locator("[data-template]").count(), 7);
+      assert.equal(await page.locator(".dci-system__outputs > div").count(), 6);
+      assert.equal(await page.locator("[data-eco-layer]").count(), 6);
+      assert.equal(await page.locator(".dci-implementation__phase").count(), 5);
+      assert.equal(await page.locator(".dci-implementation__workscope article").count(), 3);
+      assert((await page.locator(".dci-implementation").textContent()).includes("custom development"));
+      for (const source of await page.locator("[data-ecosystem-source]").all()) {
+        await source.click();
+        assert.equal(await source.getAttribute("aria-pressed"), "true");
+        assert.equal(await page.locator('[data-ecosystem-source][aria-pressed="true"]').count(), 1);
+        assert((await page.locator(".dci-ecosystem__detail-label").textContent()).includes(await source.locator("b").textContent()));
+      }
+      await page.locator('[data-ecosystem-source="workflow"]').press("Home");
+      assert.equal(await page.locator('[data-ecosystem-source="sis"]').getAttribute("aria-pressed"), "true");
+      await page.locator('[data-ecosystem-source="sis"]').press("ArrowDown");
+      assert.equal(await page.locator('[data-ecosystem-source="learning"]').getAttribute("aria-pressed"), "true");
+      const undersizedText = await page.evaluate(() => {
+        const walker = document.createTreeWalker(document.getElementById("dci-page"), NodeFilter.SHOW_TEXT);
+        const issues = [];
+        while (walker.nextNode()) {
+          const node = walker.currentNode;
+          const element = node.parentElement;
+          if (!/[A-Za-z0-9]/.test(node.textContent) || !element.getClientRects().length ||
+              ["SCRIPT", "STYLE"].includes(element.tagName)) continue;
+          const style = getComputedStyle(element);
+          if (style.visibility === "hidden") continue;
+          if (parseFloat(style.fontSize) < 13) issues.push({text: node.textContent.trim().slice(0, 60), class: element.className, size: style.fontSize});
+        }
+        return issues;
+      });
+      assert.deepEqual(undersizedText, [], `${width}px undersized text`);
+      for (const input of await page.locator(".dci-fields input").all()) {
+        assert(await input.evaluate(node => parseFloat(getComputedStyle(node).fontSize) >= 16), "Editor input must be at least 16px");
+      }
       const layout = await page.evaluate(() => {
         const root = document.querySelector(".dci");
         const lead = document.querySelector(".dci-hero__lead");
@@ -60,6 +93,21 @@ async function run() {
       assert.deepEqual(layout.duplicateIds, []);
       assert.deepEqual(layout.emptyLinks, []);
       assert.deepEqual(layout.overflowing, [], `${width}px clipped interface elements`);
+      const certificateIssues = await page.locator(".dci-paper").evaluate(paper => {
+        const issues = [], bounds = paper.getBoundingClientRect();
+        const contents = Array.from(paper.querySelectorAll("span,strong,a,img")).filter(node => node.getClientRects().length);
+        for (const node of contents) {
+          const rect = node.getBoundingClientRect();
+          if (rect.left < bounds.left || rect.right > bounds.right || rect.bottom > bounds.bottom) issues.push(`Outside certificate: ${node.className}`);
+        }
+        const qr = paper.querySelector(".dci-paper__qr").getBoundingClientRect();
+        const metadata = paper.querySelector(".dci-paper__metadata").getBoundingClientRect();
+        if (qr.left < metadata.right && qr.right > metadata.left && qr.top < metadata.bottom && qr.bottom > metadata.top) issues.push("QR overlaps credential metadata");
+        const annotation = paper.parentElement.querySelector(".dci-credential-art__annotation").getBoundingClientRect();
+        if (annotation.top < bounds.bottom) issues.push("Access-point caption overlaps certificate");
+        return issues;
+      });
+      assert.deepEqual(certificateIssues, [], `${width}px certificate alignment`);
       assert(Math.min(...layout.words.slice(0, 3)) > Math.max(...layout.words.slice(3)) * 1.3, "Foundation layers must be materially deeper");
 
       for (let index = 1; index <= 6; index++) {
@@ -75,6 +123,11 @@ async function run() {
         }, id);
         assert(bounds.navTop >= 0 && bounds.navTop < 200, `Sticky navigation is not visible: ${JSON.stringify(bounds)}`);
         assert(bounds.sectionTop >= bounds.navBottom - 2 && bounds.sectionTop < bounds.navBottom + 100, `Anchor is covered by navigation: ${JSON.stringify(bounds)}`);
+        const activeIsVisible = await page.locator(`.dci-layer-nav [href="#${id}"]`).evaluate(node => {
+          const item = node.getBoundingClientRect(), track = node.parentElement.getBoundingClientRect();
+          return item.left >= track.left - 2 && item.right <= track.right + 2;
+        });
+        assert(activeIsVisible, `${width}px active layer must remain visible in the readable navigation`);
       }
       assert(parseFloat(await page.locator("#dci-progress-bar").evaluate(node => node.style.width)) > 30, "Scroll progress did not update");
 
@@ -148,7 +201,7 @@ async function run() {
       }
       assert.deepEqual(contrastIssues, [], `${width}px control contrast`);
       assert.deepEqual(errors, [], `Browser errors at ${width}px`);
-      console.log(`${width}px: layout, six anchors, sticky navigation, progress, templates, preview, issuance, share/copy/download, keyboard tabs, signature match/mismatch, invalid/large file, drag/drop and contrast passed.`);
+       console.log(`${width}px: connected ecosystem, keyboard source selection, discovery-led implementation, legible text, layout, six anchors, sticky navigation, progress, templates, preview, issuance, share/copy/download, keyboard tabs, signature match/mismatch, invalid/large file, drag/drop and contrast passed.`);
       if (width === 1440) {
         const links = [...new Set(await page.locator('.dci a[href^="/"]').evaluateAll(nodes => nodes.map(node => node.getAttribute("href"))))];
         for (const href of links) {

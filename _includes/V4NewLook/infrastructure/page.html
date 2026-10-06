@@ -1,4 +1,6 @@
-<link rel="preload" as="script" href="/assets4/js/digital-credential-infrastructure.js">
+<link rel="stylesheet" href="/assets4/css/dci-experience.css">
+<link rel="stylesheet" href="/assets4/css/dci-refinement.css">
+<div class="dci-refined">
 <div class="dci" id="dci-page">
   <div class="dci-progress" aria-hidden="true"><span id="dci-progress-bar"></span></div>
 
@@ -13,6 +15,7 @@
           <a class="dci-button dci-button--quiet" href="/sample-credential">Explore a Credential <span aria-hidden="true">→</span></a>
         </div>
         <div class="dci-hero__footnote"><span class="dci-live-dot"></span>Institution-governed achievement infrastructure</div>
+        <nav class="dci-hero__jump" aria-label="Solution overview links"><a href="#dci-connected">Connected university solution <span aria-hidden="true">↓</span></a><a href="#dci-implementation">Discovery &amp; implementation <span aria-hidden="true">↓</span></a></nav>
       </div>
       <div class="dci-system" aria-label="Institutional systems connect through CertifyMe to credentials, verification, skills, learner records and workforce intelligence">
         <div class="dci-system__top">
@@ -27,7 +30,7 @@
         </div>
         <div class="dci-system__connector dci-system__connector--down"><i></i><span>governed achievement layer</span><i></i></div>
         <div class="dci-system__outputs">
-          <div><b>01</b><span>Credential</span></div><div><b>02</b><span>Verification</span></div><div><b>03</b><span>Skills</span></div><div><b>04</b><span>Learner record</span></div><div><b>05</b><span>Workforce intelligence</span></div>
+          <div><b>01</b><span>Access &amp; sharing</span></div><div><b>02</b><span>Standards</span></div><div><b>03</b><span>Verification &amp; trust</span></div><div><b>04</b><span>Skills alignment</span></div><div><b>05</b><span>Learner record</span></div><div><b>06</b><span>Workforce intelligence</span></div>
         </div>
         <div class="dci-system__caption"><span>Learning → achievement → evidence</span><span>Institution-controlled</span></div>
       </div>
@@ -36,6 +39,8 @@
       <span>Standards-aware by design</span><i></i><span>Open Badges 3.0</span><i></i><span>W3C Verifiable Credentials</span><i></i><span>Credential lifecycle</span>
     </div>
   </section>
+
+  {% include V4NewLook/infrastructure/solution.html %}
 
   <section class="dci-intro dci-section" aria-labelledby="dci-intro-title">
     <div class="dci-shell dci-intro__grid">
@@ -97,8 +102,10 @@
             <span class="dci-paper__label">CERTIFICATE OF ACHIEVEMENT</span><strong class="dci-paper__recipient">Alex Morgan</strong>
             <span class="dci-paper__program">Global Leadership Programme</span>
             <span class="dci-paper__description">has completed the programme requirements</span>
-            <div class="dci-paper__footer"><span>Issued 6 October 2026<br>Credential ID UE-GLP-2026-0148</span><span class="dci-paper__signature">Office of the Registrar</span></div>
-            <a class="dci-paper__qr" href="/sample-credential" aria-label="Scan to explore the existing sample credential"><img src="/assets4/images/dci-credential-qr.png" width="84" height="84" alt="QR code linking to the CertifyMe sample credential"><span>Scan to explore</span></a>
+            <div class="dci-paper__footer">
+              <div class="dci-paper__metadata"><span>Issued 6 October 2026<br>Credential ID UE-GLP-2026-0148</span><span class="dci-paper__signature">Office of the Registrar</span></div>
+              <a class="dci-paper__qr" href="/sample-credential" aria-label="Scan to explore the existing sample credential"><img src="/assets4/images/dci-credential-qr.png" width="84" height="84" alt="QR code linking to the CertifyMe sample credential"><span>Scan to explore</span></a>
+            </div>
           </div>
           <span class="dci-credential-art__annotation"><i></i>Credential access point</span>
         </div>
@@ -321,6 +328,8 @@
     </div>
   </section>
 
+  {% include V4NewLook/infrastructure/implementation.html %}
+
   <section class="dci-buyers">
     <div class="dci-shell"><div class="dci-buyers__head"><p class="dci-eyebrow">Institutional outcomes</p><h2>One architecture. Distinct responsibilities.</h2><p>Credential infrastructure connects teams around a shared institutional achievement lifecycle.</p></div>
       <div class="dci-buyer-grid">
@@ -336,5 +345,7 @@
     <div class="dci-shell dci-final__inner"><div><p class="dci-eyebrow">Digital credential infrastructure</p><h2>The certificate is only the beginning.</h2><p>Turn institutional learning evidence into credentials that can be accessed, shared, verified, connected to skills, assembled into learner records and understood in workforce context.</p></div><div class="dci-final__actions"><a class="dci-button dci-button--light" href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer">Request a Platform Demo <span>↗</span></a><a class="dci-final__link" href="/platform-overview">Explore the Platform <span>→</span></a></div></div>
   </section>
 </div>
+</div>
 <script src="/assets4/js/digital-credential-infrastructure.js" defer></script>
 <script src="/assets4/js/dci-pdf-check.js" defer></script>
+<script src="/assets4/js/dci-solution.js" defer></script>

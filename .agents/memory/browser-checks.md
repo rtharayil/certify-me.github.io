@@ -49,7 +49,7 @@ Restart the long-running Jekyll watcher after adding or changing a plugin, befor
 
 **Why:** A watcher with the old plugin registry regenerated the shared output directory after a successful standalone build and erased the new plugin's changes. This made a passing image-dimension audit appear to regress.
 
-**How to apply:** Restart once after the plugin batch, build the current source, and run the final audits against that output. Avoid concurrent generators with different loaded plugin versions.
+**How to apply:** Restart once after the plugin batch, build the current source, and run the final audits against that output. Keep one writer per shared build destination, including the watcher. Even same-version generators can race cleanup against copying and produce missing-file failures; isolate test destinations or serialize their writers.
 
 Distinguish a browser transport failure from a broken interaction when HTML loads but its script does not.
 

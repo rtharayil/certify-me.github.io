@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap");
+@import "./_original.css";
+@import "./_experience.css";
+
+.dci-canvas-shell { background: white; font-size: 18.496px; line-height: 1.55; }
+.dci-canvas-shell :is(p,a,li,span,td,th,button,input,select,textarea) { font-family: "Source Sans 3", sans-serif !important; }
+.dci-canvas-shell :is(h1,h2,h3,h4,h5,h6) { font-family: Manrope, sans-serif !important; }

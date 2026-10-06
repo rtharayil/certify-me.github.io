@@ -27,3 +27,4 @@
 - [Reader-copy boundaries](reader-copy-boundaries.md) — keep editorial taxonomy and approvals out of public copy; check shared text and never invent first-person experience.
 - [Shared question sections](shared-question-sections.md) — one FAQ per marketing page; consolidation must preserve source formatting, question anchors and schema.
 - [Hero summary length](hero-summary-length.md) — keep opening summaries to two or three lines; move full abstracts farther down the page.
+- [Infrastructure implementation positioning](infrastructure-implementation-positioning.md) — discovery-led custom and integration work must stay connected to the core six-layer architecture.
