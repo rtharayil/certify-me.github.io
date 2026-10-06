@@ -1,0 +1,13 @@
+{
+  "algorithm": "ECDSA",
+  "curve": "P-256",
+  "hash": "SHA-256",
+  "credentialId": "UE-GLP-2026-0148",
+  "publicKey": {
+    "kty": "EC",
+    "x": "sfbah2nnp231W-WJy0dmAltN9wVvkh-0x8Kxcjv8nGI",
+    "y": "bvg1cGURDNl1iaC0tt6JZeTCAi_15bkWgQdc26c0-4Y",
+    "crv": "P-256"
+  },
+  "signature": "JLe2QpM9YDGPDSVBOExsil3Ac7t7zUaijw6bz+h8wlK6w4i9q+KtFXbfExNTn8TsPvO0+L9r/oq6D3ksm3jMdA=="
+}

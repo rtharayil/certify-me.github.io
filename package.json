@@ -4,6 +4,8 @@
   "description": "## Validation",
   "main": "index.js",
   "scripts": {
+    "build:dci-credential": "node scripts/build-dci-credential.cjs",
+    "test:digital-credential-infrastructure": "XDG_CONFIG_HOME=/tmp/dci-config XDG_CACHE_HOME=/tmp/dci-cache node scripts/validate-digital-credential-infrastructure.cjs",
     "test:institutional-overview": "XDG_CONFIG_HOME=/tmp/institutional-overview-config XDG_CACHE_HOME=/tmp/institutional-overview-cache node scripts/validate-institutional-overview.cjs",
     "test:institutional-sections": "XDG_CONFIG_HOME=/tmp/institutional-sections-config XDG_CACHE_HOME=/tmp/institutional-sections-cache node scripts/validate-institutional-sections.cjs",
     "test:case-studies": "XDG_CONFIG_HOME=/tmp/case-studies-config XDG_CACHE_HOME=/tmp/case-studies-cache node scripts/validate-case-studies-index.cjs",
@@ -20,7 +22,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "playwright": "^1.62.1"
+    "playwright": "^1.62.1",
+    "qrcode": "^1.5.4"
   },
   "devDependencies": {
     "esbuild": "^0.28.1"

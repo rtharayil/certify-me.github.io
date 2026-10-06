@@ -75,6 +75,12 @@ Prefer the selected resource's unrounded ratio over a generous percentage tolera
 
 **How to apply:** Keep the corrected natural dimensions in diagnostic reports, but use the independently decoded selected resource for the proportion assertion. Keep only a small layout/subpixel tolerance.
 
+Inspect rendered overflow ancestors when adding sticky navigation; the shared menu can insert a containing wrapper at runtime.
+
+**Why:** Static Jekyll templates did not show an additional hidden-overflow wrapper. Correct anchor offsets and scroll tracking alone did not make the navigation stay visible.
+
+**How to apply:** Inspect the live ancestor chain and test actual sticky bounds after scrolling. Scope containment changes to the page being built so other layouts retain their existing behavior.
+
 Separate supplied article prose from rendering typography and generated reading controls when checking copy fidelity.
 
 **Why:** Literal browser-text comparisons rejected unchanged supplied copy because Markdown rendered typographic apostrophes and mobile tables inserted a swipe hint into the article container.

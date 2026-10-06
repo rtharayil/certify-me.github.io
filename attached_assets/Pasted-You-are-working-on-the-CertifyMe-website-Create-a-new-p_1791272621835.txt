@@ -1,0 +1,1346 @@
+You are working on the CertifyMe website.
+
+Create a new, production-quality solution page at:
+
+/solutions/digital-credential-infrastructure
+
+The purpose of this page is to establish CertifyMe as a serious enterprise-grade DIGITAL CREDENTIAL INFRASTRUCTURE platform for universities, professional bodies, education providers and enterprises.
+
+This is NOT a generic digital badge or certificate landing page.
+
+The page must communicate that CertifyMe provides infrastructure across the complete lifecycle of an institutional achievement:
+
+Learning Achievement
+→ Digital Credential
+→ Accessibility & Sharing
+→ Standards & Interoperability
+→ Verification & Trust
+→ Skills
+→ Comprehensive Learner Record
+→ Workforce Intelligence & Opportunity
+
+The page should be written and designed for senior institutional buyers:
+
+- CIO / IT Director
+- Registrar
+- Dean
+- Provost / Academic Leadership
+- Digital Transformation Leaders
+- Continuing / Executive Education Leaders
+- Careers and Employability Leaders
+- Professional Bodies and Certification Organisations
+
+==================================================
+1. CORE POSITIONING
+==================================================
+
+Primary positioning:
+
+"Digital Credential Infrastructure"
+
+Primary headline:
+
+"The infrastructure behind trusted, interoperable and intelligent digital credentials"
+
+Supporting message:
+
+"CertifyMe provides the digital credential infrastructure institutions need to create, issue, verify, manage and extend digital credentials — from the first award through skills, learner records and workforce intelligence."
+
+The central conceptual journey must be:
+
+LEARNING
+↓
+ACHIEVEMENT
+↓
+CREDENTIAL
+↓
+VERIFICATION
+↓
+SKILLS
+↓
+LEARNER RECORD
+↓
+WORKFORCE INTELLIGENCE
+
+Do NOT position CertifyMe merely as:
+
+- certificate software
+- badge software
+- certificate generator
+- PDF generator
+
+The page must communicate that credentials are the FOUNDATION of a broader institutional achievement infrastructure.
+
+==================================================
+2. IMPORTANT DESIGN PRINCIPLE
+==================================================
+
+Do not make the six layers look like six unrelated product features.
+
+They are an ARCHITECTURE.
+
+The visual hierarchy should show:
+
+LAYER 1
+Credential Accessibility & Sharing
+↓
+LAYER 2
+Standards & Interoperability
+↓
+LAYER 3
+Verification & Trust
+↓
+LAYER 4
+Skill Taxonomy Alignment
+↓
+LAYER 5
+Comprehensive Learner Record
+↓
+LAYER 6
+Workforce Intelligence & Opportunity
+
+Layers 1–3 must receive significantly more visual and content depth.
+
+Layers 4–6 should be shorter and more strategic.
+
+The visitor should understand:
+
+1. How the credential is created and accessed.
+2. How it is made portable and interoperable.
+3. How it is trusted and verified.
+4. How it becomes connected to skills.
+5. How multiple achievements become a learner record.
+6. How skills and records can be understood against workforce demand.
+
+==================================================
+3. USE EXISTING WEBSITE DESIGN SYSTEM
+==================================================
+
+Reuse the existing CertifyMe website:
+
+- Header
+- Navigation
+- Footer
+- Typography
+- Buttons
+- Spacing
+- Design tokens
+- Responsive behaviour
+- Existing component architecture
+
+Do NOT rebuild the entire website framework.
+
+Use CertifyMe's established visual identity.
+
+Primary accent:
+
+#4F46E5
+
+Use:
+
+- White
+- Very light indigo backgrounds
+- Dark charcoal typography
+- Indigo accents
+- Subtle borders
+- Minimal shadows
+- Generous whitespace
+
+Avoid:
+
+- excessive gradients
+- giant blue blocks
+- excessive rounded cards
+- stock-photo-heavy layouts
+- generic SaaS illustrations
+- AI-looking 3D graphics
+- glowing futuristic graphics
+- unnecessary decorative graphics
+
+The visual language should feel appropriate for:
+
+A UNIVERSITY CIO
+A REGISTRAR
+A DEAN
+A GOVERNMENT / PROFESSIONAL BODY
+A LARGE ENTERPRISE
+
+==================================================
+4. HERO SECTION
+==================================================
+
+Eyebrow:
+
+DIGITAL CREDENTIAL INFRASTRUCTURE
+
+Headline:
+
+The infrastructure behind trusted, interoperable and intelligent digital credentials
+
+Supporting copy:
+
+"CertifyMe provides the infrastructure institutions need to create, issue, verify, manage and extend digital credentials — from the first award through skills, learner records and workforce intelligence."
+
+Primary CTA:
+
+Request a Platform Demo
+
+Secondary CTA:
+
+Explore a Credential
+
+Hero visual:
+
+Create a sophisticated enterprise architecture visual.
+
+Show:
+
+INSTITUTIONAL SYSTEMS
+
+SIS
+LMS
+Assessment
+Training
+API
+
+↓
+
+CERTIFYME
+
+Digital Credential Infrastructure
+
+↓
+
+Credential
+Verification
+Skills
+Learner Record
+Workforce Intelligence
+
+The visual should look like a real enterprise architecture diagram.
+
+Do NOT use abstract AI graphics.
+
+Below the hero, include standards / trust indicators using only claims that already exist on the CertifyMe website.
+
+==================================================
+5. SIX-LAYER ARCHITECTURE INTRODUCTION
+==================================================
+
+Headline:
+
+One achievement. Six layers of infrastructure.
+
+Copy:
+
+"A digital credential is more than a certificate.
+
+For an institution, it needs to be accessible, recognisable, portable, interoperable, verifiable, connected to skills and useful within a broader learner and workforce context.
+
+CertifyMe builds these capabilities into six layers."
+
+Create a large interactive six-layer architecture.
+
+Each layer should be clickable and scroll to its detailed section.
+
+Show:
+
+01
+Credential Accessibility & Sharing
+
+02
+Standards & Interoperability
+
+03
+Verification & Trust
+
+04
+Skill Taxonomy Alignment
+
+05
+Comprehensive Learner Record
+
+06
+Workforce Intelligence & Opportunity
+
+Use a vertical architecture / stack visual.
+
+==================================================
+6. LAYER 01 — CREDENTIAL ACCESSIBILITY & SHARING
+==================================================
+
+Eyebrow:
+
+01 / CREDENTIAL ACCESSIBILITY & SHARING
+
+Headline:
+
+Make every achievement accessible, recognisable and ready to share.
+
+Opening copy:
+
+"The credential experience begins with a simple question:
+
+Can the learner access the achievement easily — and can the institution's recognition travel with them?"
+
+Explain that CertifyMe provides infrastructure for:
+
+- credential creation
+- credential templates
+- institutional branding
+- QR-based access
+- unique credential URLs
+- credential pages
+- manual issuance
+- bulk issuance
+- API-based issuance
+- credential sharing
+
+--------------------------------------------------
+6.1 QR CODE ACCESS
+--------------------------------------------------
+
+Headline:
+
+Scan. Open. Explore. Verify.
+
+Explain:
+
+Every credential can have a unique credential identifier and QR-based access point.
+
+Show:
+
+Credential PDF
+↓
+QR Code
+↓
+Credential Page
+↓
+Verification
+
+Explain that QR codes can provide a simple access mechanism from:
+
+- printed certificates
+- PDFs
+- mobile screens
+- CVs
+- presentations
+- shared documents
+
+Create a realistic credential mockup with a QR code.
+
+Add a visual interaction:
+
+"Scan to explore"
+
+Do NOT create a fake real-world QR destination.
+
+--------------------------------------------------
+6.2 CREDENTIAL TEMPLATE LIBRARY
+--------------------------------------------------
+
+Headline:
+
+Create credentials that look like your institution.
+
+Create an interactive template gallery.
+
+Show examples such as:
+
+- University Certificate
+- Executive Education
+- Professional Certification
+- Micro-Credential
+- Digital Badge
+- Course Completion
+- Continuing Education
+
+Show the workflow:
+
+Template
+→ Customize
+→ Approve
+→ Issue
+
+Explain that institutions can create reusable templates rather than designing every credential from scratch.
+
+--------------------------------------------------
+6.3 CREDENTIAL CUSTOMIZATION
+--------------------------------------------------
+
+Headline:
+
+Your institution. Your achievement. Your brand.
+
+Show configurable elements:
+
+- Institutional logo
+- Colours
+- Typography
+- Recipient name
+- Achievement name
+- Programme
+- Issue date
+- Expiration where applicable
+- Credential ID
+- QR code
+- Signatures
+- Supporting information
+- Skills
+- Evidence
+
+Create a realistic credential editor interface.
+
+Do NOT make this look like Canva.
+
+It should look like enterprise credential administration software.
+
+--------------------------------------------------
+6.4 CUSTOM CREDENTIAL PAGES
+--------------------------------------------------
+
+Headline:
+
+The credential does not end with the PDF.
+
+Explain:
+
+"The digital credential page becomes the persistent digital representation of the achievement."
+
+Show a realistic credential page UI containing:
+
+Institution
+Recipient
+Achievement
+Issue Date
+Credential ID
+Skills
+Evidence
+Verification Status
+
+Include:
+
+Share
+Verify
+Download
+Copy Link
+
+The credential page should look institutional and authoritative.
+
+--------------------------------------------------
+6.5 API-BASED ISSUANCE
+--------------------------------------------------
+
+Headline:
+
+Make credential issuance part of the workflow.
+
+Show:
+
+LMS / SIS
+↓
+API
+↓
+CertifyMe
+↓
+Credential
+↓
+Learner
+
+Explain:
+
+"When an eligible achievement is recorded in an institutional system, CertifyMe can be integrated to create and deliver the corresponding credential without requiring administrators to manually create each award."
+
+Also show three issuance methods:
+
+INDIVIDUAL
+Manual award
+
+BULK
+CSV / cohort issuance
+
+AUTOMATED
+API / system integration
+
+Do not claim integrations are out-of-the-box unless supported by the existing site.
+
+--------------------------------------------------
+6.6 SHARING
+--------------------------------------------------
+
+Headline:
+
+Let the achievement travel with the learner.
+
+Show:
+
+LinkedIn
+Email
+CV
+Website
+QR
+Credential URL
+Wallet
+
+Core message:
+
+"The learner should be able to carry the institution's recognition beyond the institution's systems."
+
+Create a visual showing one credential being distributed into multiple professional destinations.
+
+==================================================
+7. LAYER 02 — STANDARDS & INTEROPERABILITY
+==================================================
+
+Eyebrow:
+
+02 / STANDARDS & INTEROPERABILITY
+
+Headline:
+
+Build credentials on standards — not inside a proprietary silo.
+
+Opening copy:
+
+"A credential becomes significantly more valuable when other systems can understand it."
+
+Explain why standards matter.
+
+Do NOT explain standards at a superficial marketing level.
+
+--------------------------------------------------
+7.1 OPEN BADGES 3.0
+--------------------------------------------------
+
+Create a technical but executive-friendly section.
+
+Headline:
+
+Open Badges 3.0
+
+Explain the concepts:
+
+- Issuer
+- Recipient
+- Achievement
+- Criteria
+- Evidence
+- Achievement metadata
+- Skills
+- Status
+- Relationships
+
+Explain that Open Badges provides a structured way to represent achievements rather than treating a credential as only a visual document.
+
+Explain interoperability.
+
+Explain why independent 1EdTech certification matters:
+
+"Certification demonstrates conformance to the standard rather than simply a vendor stating that its platform supports it."
+
+Only use certification claims already supported by the CertifyMe website.
+
+Create a visual representation of an Open Badge 3.0 credential object.
+
+--------------------------------------------------
+7.2 W3C VERIFIABLE CREDENTIALS
+--------------------------------------------------
+
+Headline:
+
+W3C Verifiable Credentials
+
+Explain the core trust model:
+
+ISSUER
+University / Institution
+
+↓
+
+CREDENTIAL
+Achievement + Claims + Proof
+
+↓
+
+HOLDER
+Learner / Professional
+
+↓
+
+VERIFIER
+Employer / Institution / Regulator
+
+Explain that the W3C Verifiable Credentials model supports machine-readable and cryptographically verifiable claims.
+
+Create a structured credential visual showing:
+
+Issuer
+Holder
+Credential
+Achievement
+Proof
+
+--------------------------------------------------
+7.3 WHY THIS MATTERS
+--------------------------------------------------
+
+Create a comparison.
+
+TRADITIONAL DOCUMENT
+
+Visual document
+↓
+Human reads
+↓
+Manual verification
+
+STRUCTURED CREDENTIAL
+
+Machine-readable
+↓
+Structured claims
+↓
+Cryptographic proof
+↓
+Automated / compatible verification
+
+Then show:
+
+SIS
+LMS
+Assessment
+Training
+
+↓
+
+CERTIFYME
+
+↓
+
+Open Badges 3.0
+W3C Verifiable Credentials
+
+↓
+
+Wallets
+Learner Records
+Verification Systems
+Employer Systems
+
+==================================================
+8. LAYER 03 — VERIFICATION & TRUST
+==================================================
+
+This must be one of the strongest sections on the page.
+
+Eyebrow:
+
+03 / VERIFICATION & TRUST
+
+Headline:
+
+Prove three things. Not just one.
+
+Explain:
+
+01
+WHO ISSUED IT?
+
+Issuer authenticity
+
+02
+WHO WAS IT ISSUED TO?
+
+Recipient identity
+
+03
+HAS ANYTHING CHANGED?
+
+Credential integrity
+
+Make these three concepts visually prominent.
+
+Then introduce four verification pathways.
+
+==================================================
+8.1 ID TAGGING
+==================================================
+
+Headline:
+
+Bind the credential to an identity reference.
+
+Explain:
+
+An institution can associate a credential with an approved identity reference belonging to the recipient.
+
+Show:
+
+Credential
+↓
+Primary ID Reference
+↓
+Recipient
+
+Explain that during verification the relevant identifier can be used to confirm the credential's intended recipient.
+
+Do NOT expose real personal data.
+
+Use fictional placeholder data.
+
+==================================================
+8.2 OTP VERIFICATION
+==================================================
+
+Headline:
+
+Verify control of the registered contact.
+
+Show:
+
+Verifier starts verification
+↓
+OTP sent to registered email / supported contact
+↓
+Recipient enters OTP
+↓
+Verification result
+
+Explain that this provides an additional mechanism for confirming that the person associated with the credential can authenticate through the registered channel.
+
+==================================================
+8.3 CRYPTOGRAPHIC PDF VERIFICATION
+==================================================
+
+Headline:
+
+Drop the PDF. Check the signature.
+
+Create a realistic drag-and-drop verification interface.
+
+Show:
+
+Original Credential
+↓
+Cryptographic Signature
+↓
+Uploaded PDF
+↓
+Signature Validation
+
+Then show two possible states:
+
+MATCH
+
+Credential integrity confirmed
+
+MISMATCH
+
+Credential has changed
+
+Explain that cryptographic validation addresses document integrity.
+
+Do not claim that cryptographic validation proves recipient identity by itself.
+
+That distinction is important.
+
+==================================================
+8.4 SIGNED OPEN BADGE / VERIFIABLE CREDENTIAL
+==================================================
+
+Headline:
+
+Verify the credential's structured proof.
+
+Show a structured credential object:
+
+Issuer
+Recipient
+Achievement
+Evidence
+Proof
+Status
+
+Explain that verification can operate at the structured credential-data level rather than relying only on visual inspection of a PDF.
+
+Connect this section back to Open Badges 3.0 and W3C Verifiable Credentials.
+
+==================================================
+8.5 VERIFICATION MATRIX
+==================================================
+
+Create a clean enterprise table:
+
+METHOD | PRIMARY PURPOSE
+
+Credential ID / QR
+Credential lookup and issuer record
+
+ID Tagging
+Recipient identity association
+
+OTP
+Recipient authentication
+
+Cryptographic PDF
+Document integrity
+
+Signed Open Badge / VC
+Structured credential proof
+
+Make clear that these mechanisms address different trust questions and can complement one another.
+
+==================================================
+8.6 AUDITABILITY & CREDENTIAL LIFECYCLE
+==================================================
+
+Headline:
+
+Trust does not end when the credential is issued.
+
+Show lifecycle:
+
+Create
+↓
+Issue
+↓
+Verify
+↓
+Monitor status
+↓
+Revoke / Expire where applicable
+↓
+Verify current state
+
+Explain that institutional credential infrastructure must support lifecycle governance rather than treating issuance as the end of the process.
+
+Use only capabilities supported by the current CertifyMe product.
+
+==================================================
+9. LAYER 04 — SKILL TAXONOMY ALIGNMENT
+==================================================
+
+Eyebrow:
+
+04 / SKILL TAXONOMY ALIGNMENT
+
+Headline:
+
+Move from "what was completed?" to "what capability does it represent?"
+
+Keep this section shorter than Layers 1–3.
+
+Show:
+
+Institutional Achievement
+↓
+Learning Outcome
+↓
+Skill
+↓
+Taxonomy
+
+Explain:
+
+CertifyMe can connect institution-reviewed achievements and learning outcomes with structured skills.
+
+Mention relevant taxonomy approaches supported by the platform, such as:
+
+ESCO
+O*NET
+Institutional Skill Frameworks
+
+IMPORTANT:
+
+Do not imply that an external taxonomy replaces academic judgement.
+
+State:
+
+"The institution remains responsible for determining what its programme teaches and what an achievement represents. Taxonomies provide a common language for representing those capabilities."
+
+CTA:
+
+Explore Skills Taxonomy Mapping
+
+==================================================
+10. LAYER 05 — COMPREHENSIVE LEARNER RECORD
+==================================================
+
+Eyebrow:
+
+05 / COMPREHENSIVE LEARNER RECORD
+
+Headline:
+
+Connect achievements across the learner journey.
+
+Show:
+
+Degrees
+Certificates
+Badges
+Skills
+Competencies
+Projects
+Experiences
+Professional Learning
+
+↓
+
+COMPREHENSIVE LEARNER RECORD
+
+Explain:
+
+"A single credential represents one achievement. A learner record brings multiple achievements together."
+
+Show:
+
+Credential A
++
+Credential B
++
+Credential C
++
+Skills
++
+Experiences
+
+↓
+
+Connected Learner Record
+
+IMPORTANT:
+
+State:
+
+"A Comprehensive Learner Record complements rather than replaces the authoritative academic transcript."
+
+CTA:
+
+Explore Comprehensive Learner Records
+
+==================================================
+11. LAYER 06 — WORKFORCE INTELLIGENCE & OPPORTUNITY
+==================================================
+
+Eyebrow:
+
+06 / WORKFORCE INTELLIGENCE & OPPORTUNITY
+
+Headline:
+
+Connect learning with the world of work.
+
+Introduce the CertifyMe Job Engine.
+
+Show this pipeline:
+
+JOB SOURCES
+↓
+JOB INGESTION
+↓
+DATA ENRICHMENT
+↓
+NORMALISATION
+↓
+SKILL / TAXONOMY MAPPING
+↓
+OCCUPATION & JOB STRUCTURING
+↓
+WORKFORCE INTELLIGENCE
+
+Then:
+
+Verified Skills
++
+Learner Record
++
+Job Intelligence
+
+↓
+
+Career / Workforce Context
+
+Explain that workforce intelligence can provide context around:
+
+- occupations
+- jobs
+- employers
+- locations
+- skill demand
+- workforce demand
+- opportunity relevance
+
+Do NOT claim that CertifyMe guarantees employment or job placement.
+
+Position this as workforce intelligence and opportunity context.
+
+==================================================
+12. SIX-LAYER ARCHITECTURE SIGNATURE VISUAL
+==================================================
+
+Create a large, premium visual that becomes the signature graphic of the page.
+
+Show:
+
+01
+ACCESS
+
+↓
+02
+INTEROPERABILITY
+
+↓
+03
+TRUST
+
+↓
+04
+SKILLS
+
+↓
+05
+RECORD
+
+↓
+06
+WORKFORCE
+
+Then underneath:
+
+Credential
+→
+Verifiable Credential
+→
+Trusted Achievement
+→
+Skills
+→
+Learner Record
+→
+Workforce Context
+
+This should be visually memorable.
+
+==================================================
+13. INTEGRATION ARCHITECTURE
+==================================================
+
+Headline:
+
+Designed to work with the systems you already have.
+
+Show:
+
+SIS
+LMS
+Assessment
+Training
+Identity
+API / Webhooks
+
+↓
+
+CERTIFYME
+
+↓
+
+Credential
+Verification
+Skills
+CLR
+Workforce Intelligence
+
+Message:
+
+"CertifyMe provides a dedicated credential and achievement layer around the institutional systems already supporting learning and administration."
+
+Do NOT imply that every named system is an out-of-the-box integration.
+
+Use:
+
+"Connect through supported integrations, APIs and institutional workflows."
+
+==================================================
+14. BUYER VALUE
+==================================================
+
+Create four institutional buyer panels.
+
+REGISTRAR
+
+Institutional authority
+Credential provenance
+Verification
+Lifecycle governance
+
+CIO / IT DIRECTOR
+
+Integration
+Standards
+Security
+Scalability
+Interoperability
+
+DEAN / ACADEMIC LEADER
+
+Programme recognition
+Learning outcomes
+Skills
+Lifelong learning
+
+CAREERS / WORKFORCE
+
+Skills
+Occupations
+Employer demand
+Career context
+
+==================================================
+15. FINAL CTA
+==================================================
+
+Headline:
+
+The certificate is only the beginning.
+
+Copy:
+
+"CertifyMe provides the infrastructure to turn institutional learning evidence into credentials that can be accessed, shared, verified, connected to skills, assembled into learner records and understood in the context of the workforce."
+
+Primary CTA:
+
+Request a Platform Demo
+
+Secondary CTA:
+
+Explore the Platform
+
+==================================================
+16. UX REQUIREMENTS
+==================================================
+
+Implement:
+
+- Sticky six-layer navigation
+- Click-to-scroll navigation
+- Active layer highlighting
+- Scroll progress indicator
+- Smooth scrolling
+- Layer-specific anchor URLs
+- Interactive verification tabs
+- Credential template gallery
+- API issuance flow
+- Open Badges architecture visual
+- W3C VC architecture visual
+- Verification drag-and-drop mockup
+- Expandable technical explanations
+
+Animations must be subtle.
+
+Do not animate everything.
+
+Use animation to explain architecture and process.
+
+==================================================
+17. RESPONSIVE DESIGN
+==================================================
+
+Desktop:
+
+Use full architecture diagrams and side-by-side layouts.
+
+Tablet:
+
+Reduce diagram complexity while preserving hierarchy.
+
+Mobile:
+
+Stack architecture vertically.
+
+Maintain:
+
+01
+ACCESS
+
+02
+INTEROPERABILITY
+
+03
+TRUST
+
+04
+SKILLS
+
+05
+RECORD
+
+06
+WORKFORCE
+
+Ensure:
+
+- no horizontal scrolling
+- no clipped diagrams
+- readable tables
+- accessible buttons
+- appropriate spacing
+
+==================================================
+18. ACCESSIBILITY
+==================================================
+
+Implement:
+
+- semantic HTML
+- proper H1/H2/H3 hierarchy
+- keyboard navigation
+- visible focus states
+- accessible buttons
+- accessible tabs
+- ARIA labels where required
+- sufficient contrast
+- alt text for meaningful images
+- reduced-motion support
+
+==================================================
+19. SEO
+==================================================
+
+Primary keyword:
+
+digital credential infrastructure
+
+Secondary keywords:
+
+digital credential platform for universities
+digital credentials for higher education
+verifiable digital credentials
+Open Badges 3.0
+W3C Verifiable Credentials
+credential verification
+digital credential infrastructure for higher education
+skills taxonomy mapping
+Comprehensive Learner Record
+workforce intelligence
+digital credentials for universities
+
+Title:
+
+Digital Credential Infrastructure for Universities | CertifyMe
+
+Meta description:
+
+"CertifyMe provides digital credential infrastructure for universities and institutions — from credential issuance and verification to Open Badges 3.0, W3C Verifiable Credentials, skills, learner records and workforce intelligence."
+
+Use structured headings.
+
+Use appropriate internal links to:
+
+/skills-taxonomy-mapping
+/comprehensive-learner-record
+/career-opportunities
+Relevant credential and verification pages already present on the website.
+
+==================================================
+20. CONTENT QUALITY RULES
+==================================================
+
+This is extremely important.
+
+Do not invent:
+
+- customer names
+- universities
+- integrations
+- certifications
+- security claims
+- numerical statistics
+- product capabilities
+
+Where information is implementation-dependent, explicitly say:
+
+"Depending on institutional requirements"
+or
+"Available through supported configuration / integration."
+
+Do not overclaim.
+
+Do not describe future roadmap capabilities as currently available.
+
+Keep technical terminology accurate.
+
+Especially distinguish:
+
+ISSUER AUTHENTICITY
+from
+RECIPIENT IDENTITY
+from
+CREDENTIAL INTEGRITY.
+
+Do not say that a QR code itself provides cryptographic security.
+
+Do not say that a PDF signature automatically proves recipient identity.
+
+Do not say that Open Badges and W3C VC are the same standard.
+
+Explain their relationship accurately.
+
+==================================================
+21. VISUAL PRODUCT QUALITY
+==================================================
+
+The page should look like a flagship enterprise product page.
+
+Use actual-looking product interfaces for:
+
+- credential template management
+- credential page
+- verification
+- API issuance
+- learner record
+- skill mapping
+
+Do not make fake screenshots that look like generic SaaS dashboards.
+
+Use clean UI with realistic data.
+
+Use fictional names such as:
+
+"Alex Morgan"
+"Global Leadership Programme"
+"University Example"
+
+Never use real personal information.
+
+==================================================
+22. FINAL TEST
+==================================================
+
+Before considering the page complete:
+
+1. Run the application.
+2. Check the full page from top to bottom.
+3. Verify every CTA.
+4. Verify every anchor link.
+5. Verify every interactive section.
+6. Check mobile.
+7. Check tablet.
+8. Check desktop.
+9. Check accessibility.
+10. Check SEO metadata.
+11. Check page performance.
+12. Check that no content overflows horizontally.
+13. Check that no unsupported CertifyMe claims were introduced.
+14. Check that the six-layer architecture is visually obvious.
+15. Check that Layers 1–3 receive substantially more detail than Layers 4–6.
+
+FINAL DESIGN TEST:
+
+Ask:
+
+"If a university CIO spent three minutes on this page, would they understand that CertifyMe is infrastructure for the institutional achievement lifecycle rather than merely certificate software?"
+
+If the answer is no, revise the page.
+
+The final page should feel authoritative, technically credible, enterprise-grade and distinctly CertifyMe.
