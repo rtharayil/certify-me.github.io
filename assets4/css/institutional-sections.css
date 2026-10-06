@@ -1,4 +1,47 @@
 /* Shared capability navigation, supporting resources and consolidated FAQs. */
+.institutional-abstract {
+  padding: 48px 0;
+  background: #fff;
+  color: #292640;
+  font-family: "Source Sans 3", sans-serif;
+  text-align: left;
+}
+
+.institutional-abstract__shell {
+  width: min(900px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.institutional-abstract h2 {
+  margin: 0 0 18px;
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.institutional-abstract p {
+  margin: 0 0 14px;
+  color: #625f74;
+  font-size: 17px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.institutional-abstract p:last-child {
+  margin-bottom: 0;
+}
+
+.institutional-abstract a {
+  color: #342b78;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.institutional-abstract a:focus-visible {
+  outline: 2px solid #342b78;
+  outline-offset: 4px;
+}
+
 .institutional-links,
 .institutional-faqs,
 .institutional-references {
@@ -186,14 +229,19 @@
 
 .institutional-faqs__shell {
   display: grid;
-  grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: start;
-  gap: 64px;
+  gap: 32px;
+  max-width: 900px;
+}
+
+.institutional-faqs__intro {
+  text-align: center;
 }
 
 .institutional-faqs__intro p {
-  max-width: 280px;
-  margin: 16px 0 0;
+  max-width: 600px;
+  margin: 16px auto 0;
   color: var(--is-muted);
   font-size: 18px;
   line-height: 1.55;
@@ -325,10 +373,6 @@
   }
   .institutional-links__group {
     padding: 22px 18px 12px;
-  }
-  .institutional-faqs__shell {
-    grid-template-columns: minmax(0, .6fr) minmax(0, 1.4fr);
-    gap: 30px;
   }
 }
 

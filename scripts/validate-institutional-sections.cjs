@@ -6,6 +6,7 @@ const { chromium } = require("playwright");
 const { visibleLabelContrast } = require("./lib/visible-label-contrast.cjs");
 
 const base = process.env.INSTITUTIONAL_SECTIONS_BASE_URL || `https://${process.env.REPLIT_DEV_DOMAIN}`;
+const briefs = JSON.parse(fs.readFileSync("_data/ai_authority_briefs.json", "utf8"));
 const targets = JSON.parse(execFileSync("bundle", ["exec", "ruby", "-rjson", "-ryaml", "-e", `
   native = {}
   (Dir.glob('*.{html,md}') + Dir.glob('_blog/*.{html,md}')).each do |file|
@@ -61,6 +62,27 @@ async function check() {
         const response = await page.goto(base + target.url, { waitUntil: "domcontentloaded", timeout: 30000 });
         assert.equal(response.status(), 200);
         await page.locator(".institutional-links__grid").waitFor();
+        await page.evaluate(() => document.fonts.ready);
+        const brief = briefs.find(item => item.url === target.url);
+        const summary = page.locator(`[data-hero-summary="${brief.id}"]`);
+        const abstract = page.locator(`[data-institutional-abstract="${brief.id}"]`);
+        assert.equal(await summary.count(), 1, `${target.url}: short opening summary missing or duplicated`);
+        assert.equal((await summary.textContent()).trim(), brief.summary);
+        assert.equal(await abstract.count(), 1, `${target.url}: relocated abstract missing or duplicated`);
+        assert.equal((await abstract.locator("[data-ai-answer]").textContent()).trim(), brief.lead);
+        const placement = await summary.evaluate((node, id) => {
+          const range = document.createRange();
+          range.selectNodeContents(node);
+          const abstract = document.querySelector(`[data-institutional-abstract="${id}"]`);
+          const faq = document.querySelector(".institutional-faqs");
+          return {
+            lines: range.getClientRects().length,
+            movedDown: node.compareDocumentPosition(abstract) & Node.DOCUMENT_POSITION_FOLLOWING,
+            beforeFaq: abstract.compareDocumentPosition(faq) & Node.DOCUMENT_POSITION_FOLLOWING,
+          };
+        }, brief.id);
+        assert(placement.lines <= 3, `${target.url}: opening summary spans ${placement.lines} lines at ${width}px`);
+        assert(placement.movedDown && placement.beforeFaq, `${target.url}: abstract was not moved into the lower page content`);
         const result = await page.evaluate(() => {
           const normalise = value => value.replace(/\s+/g, " ").trim().toLowerCase();
           const section = document.querySelector(".institutional-faqs");
@@ -95,11 +117,21 @@ async function check() {
             links: [...document.querySelectorAll(".institutional-links a")].map(el => el.getAttribute("href")),
             groups: document.querySelectorAll(".institutional-links__group").length,
             resources: document.querySelectorAll(".institutional-resources__grid li").length,
+            faqCentered: (() => {
+              const shell = section.querySelector(".institutional-faqs__shell");
+              const intro = section.querySelector(".institutional-faqs__intro");
+              const list = section.querySelector(".institutional-faqs__list");
+              const bounds = list.getBoundingClientRect();
+              return getComputedStyle(shell).gridTemplateColumns.split(" ").length === 1
+                && getComputedStyle(intro).textAlign === "center"
+                && Math.abs((bounds.left + bounds.right) / 2 - innerWidth / 2) < 2;
+            })(),
             overflow, schemaErrors,
           };
         });
         assert.equal(result.faqSections, 1, `${target.url}: multiple FAQ sections`);
         assert.equal(result.faqHeadings, 1, `${target.url}: duplicate Common questions headings`);
+        assert.equal(result.faqCentered, true, `${target.url}: FAQ heading and list are not stacked and centered`);
         assert.equal(result.oldSections, 0, `${target.url}: legacy FAQ block remains`);
         assert.equal(result.overflow, false, `${target.url}: section overflow at ${width}px`);
         assert.equal(result.groups, 3);

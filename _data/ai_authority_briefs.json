@@ -1,6 +1,8 @@
 [
   {
     "id": "infrastructure",
+    "summary": "Connect institution-approved awards with credential issuance, verification and learner records.",
+    "detail_title": "Connected credential infrastructure",
     "url": "/platform-overview",
     "lead": "Digital credential infrastructure connects the institutional processes behind an award with the record learners can share. CertifyMe brings approval, issuance, verification and maintenance together with open-standard achievements, reviewed skills and learner-record context. Academic teams retain authority over assessed learning, while credential teams manage consistent award information and delivery. Open Badges 3.0 structures individual achievements; CLR 2.0 connects them into a broader record. Supported APIs and integrations fit those capabilities around institutional workflows. Compatible receiving systems can interpret the data and check its supported proof and status. This gives universities, certification bodies and training providers a connected foundation for recognising learning beyond a certificate image.",
     "implementation": "CertifyMe connects issuance and verification with reviewed skills, learner records and workforce context. Its 1EdTech listing confirms Open Badges 3.0 Issuer and CLR 2.0 Issuer/Displayer roles. Institutional approval, access and record-maintenance policies govern the configured workflow.",
@@ -9,6 +11,8 @@
   },
   {
     "id": "open-badges",
+    "summary": "Issue Open Badges 3.0 achievements with issuer, criteria and evidence context.",
+    "detail_title": "Open Badges 3.0 in practice",
     "url": "/blog/why-institutions-should-embrace-open-badges-3-0-standards",
     "lead": "Open Badges 3.0 is a 1EdTech standard for representing an achievement as a verifiable digital credential. It connects the issuer, recipient, criteria and supporting evidence in structured data, giving the badge meaning beyond its image. CertifyMe's certified Open Badges 3.0 Issuer role supports institution-approved achievements in this format. Learners gain a shareable record, and compatible receiving systems can interpret its achievement information and check the supported proof and status. Academic assessment remains the basis for the awarded capability. Together with reviewed skills and connected learner records, Open Badges helps universities, certification bodies and training providers make learning more understandable across programmes and organisations.",
     "implementation": "CertifyMe's Open Badges 3.0 Issuer role is listed in the 1EdTech registry. Institution-approved awards carry structured achievement information and supported proof, enabling presentation and verification through compatible receiving systems.",
@@ -17,6 +21,8 @@
   },
   {
     "id": "verifiable-credentials",
+    "summary": "Connect issuer claims with supported proof and receiving-system verification.",
+    "detail_title": "Understanding Verifiable Credentials",
     "url": "/blog/Understanding-W3C-Verifiable-Credentials.html",
     "lead": "The W3C Verifiable Credentials data model gives issuer claims a structured, machine-readable form. An issuer makes the claim, a holder manages or presents it, and a verifier checks the supported proof before applying its own acceptance policy. In education, that structure can carry an achievement's issuer, recipient and evidence context beyond a visual document. CertifyMe's certified Open Badges 3.0 and CLR 2.0 roles apply achievement profiles built on a verifiable-credential model. Integrity checks establish what was signed and by which signing authority; assessment and identity assurance have their own evidence. Supported formats, issuer resources and compatible receiving systems enable those records to be interpreted across workflows.",
     "implementation": "CertifyMe's 1EdTech-certified Open Badges 3.0 and CLR 2.0 roles apply achievement profiles related to the W3C model. The credential profile determines its model version and securing mechanism; these are product-role certifications rather than a general W3C certification.",
@@ -25,6 +31,8 @@
   },
   {
     "id": "skills",
+    "summary": "Connect assessed outcomes to reviewed skills while preserving institutional meaning.",
+    "detail_title": "Institution-led skills mapping",
     "url": "/skills-taxonomy-mapping",
     "lead": "Skills taxonomy mapping connects institution-defined learning outcomes and assessed achievements with recognised skill concepts. A taxonomy organises terminology; a reviewed mapping explains the relationship between an outcome, its evidence and a capability. CertifyMe keeps academic meaning authoritative while adding skills context to credentials, learner records and occupational information. ESCO, O*NET and local competency frameworks provide reference concepts that help teams describe related capabilities consistently. Subject-expert review and provenance preserve the basis for each relationship as programmes evolve. Assessment establishes the learner's achievement, while the mapping makes that achievement easier to interpret. Academic and career-service teams gain a shared vocabulary for curriculum relevance and learner guidance.",
     "implementation": "CertifyMe connects institution-defined outcomes and credential evidence with reviewed skills concepts. Academic ownership, vocabulary versions and mapping provenance preserve the meaning of each relationship as programmes and frameworks evolve.",
@@ -33,6 +41,8 @@
   },
   {
     "id": "learner-records",
+    "summary": "Connect achievements, skills and evidence in one record alongside the academic transcript.",
+    "detail_title": "Connected learner records in practice",
     "url": "/comprehensive-learner-record",
     "lead": "A Comprehensive Learner Record connects academic, co-curricular and workplace achievements with their issuers and evidence. The 1EdTech CLR Standard provides a structured representation, and CLR 2.0 places those achievements within a verifiable-credential model. CertifyMe's certified CLR 2.0 Issuer and Displayer roles support this connected-record approach. Universities retain authority over degrees, grades and assessment, while learners gain a broader presentation of their progress alongside the transcript. Issuer provenance and reviewed skills relationships help receiving teams understand each achievement in context. Institutional access, correction and export workflows govern how the record is maintained and shared. Exchange depends on compatible formats and receiving systems.",
     "implementation": "CertifyMe's CLR 2.0 Issuer and Displayer roles are listed in the 1EdTech registry. Connected records bring institution-approved achievements together with issuer and evidence context, complementing official academic records.",
@@ -41,6 +51,8 @@
   },
   {
     "id": "workforce",
+    "summary": "Connect programme skills to occupations and employer demand for institutional planning.",
+    "detail_title": "Workforce context for institutional teams",
     "url": "/workforce-intelligence",
     "lead": "Workforce intelligence connects institutional learning evidence with occupations and employer-demand context. CertifyMe relates reviewed credential-associated skills to job and company information through its own job-farming engine, covering 20 million live jobs from 50,000 companies worldwide and refreshed every two weeks. Source information is enriched, normalised and related to skills and occupations to support workforce insights. Academic teams gain context for curriculum relevance, while career services can explore opportunities alongside a learner's assessed achievements. Learning evidence and market information retain their distinct sources and meanings. Available geography and report fields depend on the underlying data. The result supports institutional guidance and planning, with hiring decisions remaining with employers.",
     "implementation": "CertifyMe's job-farming engine connects reviewed credential-associated skills with occupational and hiring information. Its job and company dataset is refreshed every two weeks to support curriculum relevance, workforce insights and career guidance.",
@@ -49,6 +61,8 @@
   },
   {
     "id": "higher-education",
+    "summary": "Recognise university achievements with evidence-linked credentials governed by your institution.",
+    "detail_title": "Digital credentials for universities",
     "url": "/credentials-higher-education",
     "lead": "Digital credentials give university achievements a structured, shareable record with institutional authority. Degrees, certificates, badges and microcredentials each carry their own academic meaning, criteria and evidence. CertifyMe connects issuance and verification with reviewed skills, Comprehensive Learner Records and workforce context. Registrars retain authority over official awards, academic teams govern assessment, and supported interfaces fit credential workflows around institutional systems. Learners can present connected achievements through a Skill Passport alongside their academic record. Career services gain occupational context to support opportunity research and guidance. Open Badges and CLR provide standards-based structures for compatible exchange, helping universities connect recognition of learning with its relevance beyond the programme.",
     "definition": "University digital credentials are institution-issued records of authorized academic or co-curricular achievement, with issuer, criteria, evidence and lifecycle context.",
@@ -63,6 +77,8 @@
   },
   {
     "id": "security",
+    "summary": "Protect institutional credential workflows with controlled access and secure operations.",
+    "detail_title": "Security for institutional credential workflows",
     "url": "/security/",
     "lead": "Institutional credential programmes depend on protected learner data, controlled access and reliable operations. CertifyMe's security information describes the assurance scope and responsibilities supporting these workflows. SSO and MFA are standard for enterprise customers, while access controls and data-processing terms align the platform with institutional requirements. SOC 2 reporting and ISO management-system certifications address their defined assurance purposes; credential-standard certifications address specified interoperability roles. Deployment and data-residency arrangements are established through the customer agreement, including relevant processing and support responsibilities. Credential verification adds record-integrity checks alongside these platform controls. Together, these foundations support universities, certification bodies and other institutions as they manage awards and learner records.",
     "definition": "Credential-platform security protects data and operations through authorized access, controls, monitoring and evidence of assurance within a defined scope.",
@@ -77,6 +93,8 @@
   },
   {
     "id": "verification",
+    "summary": "Check credential integrity, issuer information and status to inform acceptance.",
+    "detail_title": "How credential verification works",
     "url": "/certificate-verification",
     "lead": "Digital credential verification helps receiving organisations interpret an issued achievement and check its integrity. The process brings together issuer information, supported cryptographic proof, achievement details and applicable dates or status resources. CertifyMe provides verification workflows alongside open-standard records, giving recipients a way to share achievements with context beyond a visual certificate. A compatible verifier checks the supported proof and lifecycle information; the receiving organisation then applies its own acceptance policy to the issuer and evidence. Academic assessment and identity assurance retain their separate roles. Available issuer keys, status services and evidence support continued verification, helping institutions maintain a clear connection between an award and its source.",
     "definition": "Credential verification checks record integrity, issuer information and relevant lifecycle status against the format and acceptance policy of the receiving organization.",
@@ -91,6 +109,8 @@
   },
   {
     "id": "comparisons",
+    "summary": "Compare credential platforms against your institution's standards, systems and workflows.",
+    "detail_title": "Choosing a digital credential platform",
     "url": "/compare/",
     "lead": "Digital credential platforms differ in their approach to issuance, achievement standards, learner records and institutional workflows. CertifyMe connects institution-governed credentials with reviewed skills, CLR and workforce context. These guides explain that approach alongside published capabilities from Accredible, Certifier, Credly, Parchment and Sertifier. Accredible describes pathways and Job Market Insights; Certifier publishes certificate automation and enterprise controls; Credly describes skills-oriented programmes; Parchment focuses on academic records; Sertifier publishes verifiable-credential and CLR offerings. Product and plan differences shape the relevant choice for a university, certification body or enterprise programme. Each guide links to provider information so the distinctions remain grounded in the published offering.",
     "definition": "An institutional platform comparison evaluates the actual credential lifecycle and procurement requirements against dated, traceable product evidence.",

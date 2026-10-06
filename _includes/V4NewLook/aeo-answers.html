@@ -1,6 +1,7 @@
 {% assign aeo_authority = site.data.ai_authority | where: "url", page.url | first %}
 {% if aeo_authority %}
 {% assign authority_review = site.data.authority_editorial | where: "url", page.url | first %}
+{% include V4NewLook/institutional-abstract.html %}
 {% include V4NewLook/institutional-faqs.html %}
 <section class="institutional-references" aria-labelledby="references-{{ aeo_authority.id }}">
   <div class="institutional-references__shell">

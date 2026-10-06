@@ -109,6 +109,10 @@
   <!-- ENTERPRISE OVERRIDES — loaded last, highest specificity -->
   <link href="/assets4/css/enterprise-overrides.css" rel="stylesheet">
   <link href="/assets4/css/site-typography.css" rel="stylesheet">
+  {% assign overview_styles = site.data.authority_editorial | where: "url", page.url | first %}
+  {% if overview_styles %}
+  <link href="/assets4/css/institutional-overview.css" rel="stylesheet">
+  {% endif %}
   {% if page.seo_pillar %}
   <link href="/assets4/css/institutional-sections.css" rel="stylesheet">
   {% endif %}

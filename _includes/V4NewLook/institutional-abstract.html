@@ -1,0 +1,17 @@
+{% assign institutional_brief = site.data.ai_authority_briefs | where: "url", page.url | first %}
+{% if institutional_brief %}
+<section class="institutional-abstract" data-institutional-abstract="{{ institutional_brief.id }}" aria-labelledby="institutional-context-{{ institutional_brief.id }}">
+  <div class="institutional-abstract__shell">
+    <h2 id="institutional-context-{{ institutional_brief.id }}">{{ institutional_brief.detail_title | escape }}</h2>
+    <p><span data-ai-answer="{{ institutional_brief.id }}">{{ institutional_brief.lead | escape }}</span></p>
+    {% case institutional_brief.id %}
+    {% when "learner-records" %}
+    <p>For registrars and technology teams, a CLR brings learning evidence together alongside—not instead of—the authoritative transcript.</p>
+    {% when "skills" %}
+    <p>Relate learning outcomes and competencies to structured skills concepts. The resulting institutional skills layer can support curriculum review, Comprehensive Learner Records and informed workforce questions.</p>
+    {% when "infrastructure" %}
+    <p>Explore <a href="/credentials-higher-education">digital credentials for universities</a>, <a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges 3.0</a> and <a href="/certificate-verification">credential verification</a>, then connect the evidence through <a href="/skills-taxonomy-mapping">skills taxonomy mapping</a>, <a href="/comprehensive-learner-record">Comprehensive Learner Records</a> and <a href="/workforce-intelligence">workforce intelligence</a>.</p>
+    {% endcase %}
+  </div>
+</section>
+{% endif %}

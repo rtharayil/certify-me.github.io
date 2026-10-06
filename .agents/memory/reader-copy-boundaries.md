@@ -17,6 +17,12 @@ The user requires every page to be consumable by the institutional ICP, without 
 
 Do not invent personal experience in FAQs or turn an unsupported anecdote into a customer testimonial. Do not rewrite genuine attributed quotations merely because their style is informal.
 
+Further-reading selection notes are editorial guidance, not automatically visitor-facing resource descriptions.
+
+**Why:** A UI redesign proposed showing previously hidden annotations containing instructions to check evidence and assessment boundaries. That would reintroduce the authoring footprints the user rejected.
+
+**How to apply:** Preserve public resource titles and destinations when restyling link lists. Do not expose hidden annotations merely because they are available in the source data.
+
 
 **Why:** Broad style reviews missed unsupported first-person anecdotes and also proposed changing actual attributed customer quotes.
 

@@ -1,0 +1,37 @@
+Comprehensive Learner Record for institutions
+A Comprehensive Learner Record connects achievements and related evidence with provenance in an institution-governed learner record.
+
+The institutional problem and why it matters
+A transcript, individual badge and co-curricular achievement can describe different parts of a learner's experience. Connecting them should not erase who issued or assessed each item.
+
+Architecture and how it works
+A connected learner record preserves the issuer, criteria and evidence behind each achievement. The SIS and transcript retain their separately governed authoritative roles.
+
+CertifyMe connects achievements and reviewed skills relationships in a learner-facing record with issuer provenance, supported access, correction and export workflows.
+
+Standards and institutional workflows
+CLR is a 1EdTech learner-record standard related to Open Badges and W3C credential concepts. CertifyMe's CLR 2.0 Issuer and Displayer roles are listed in the 1EdTech registry.
+
+Registrars, academic teams and IT bring their established record and access responsibilities to a connected learner journey. Learners can present achievements without replacing the institution's official academic record.
+
+Use cases
+A university may connect academic, assessed project and co-curricular achievements. Career services may help a learner present relevant evidence while preserving issuer boundaries.
+
+A learner record brings together a course achievement and an assessed project, preserving each award's criteria, evidence and source.
+
+How the records are interpreted
+A CLR does not automatically replace a transcript, SIS or every receiving organization's requirements. Aggregating records is not independent verification of all underlying claims.
+
+Customer case studies describe institutional adoption in practice. CertifyMe's security and deployment information explains the foundations supporting these credential workflows.
+
+Further reading
+How Digital Badges Help You Stay on Track with Educational Goals
+Three Key Benefits of Verifiable Digital Records
+How can your institution benefit from Digital Credentials
+Proving Your Digital Skills A Simple How-To Guide
+What Are Digital Credentials? A Technical and Strategic Guide for Enterprise Organizations
+Digital Credentials for Universities: From Academic Awards to Connected Learner Records
+Learning Paths and Specializations with CertifyMe
+The Ultimate Guide to Verified Credentials in 2025
+Related concepts
+CertifyMe connects credential governance, reviewed skills, learner records and occupational context around institutional achievements

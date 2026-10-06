@@ -1,30 +1,65 @@
 {% assign authority_review = site.data.authority_editorial | where: "url", page.url | first %}
 {% if authority_review %}
 <section class="container py-5 content-authority-editorial" data-authority-review="{{ authority_review.id }}" aria-labelledby="authority-editorial-{{ authority_review.id }}">
-  <h2 id="authority-editorial-{{ authority_review.id }}">{{ authority_review.name | escape }} for institutions</h2>
-  <p><strong>{{ authority_review.definition | escape }}</strong></p>
-  <h3>The institutional problem and why it matters</h3>
-  <p>{{ authority_review.problem | escape }}</p>
-  <h3>Architecture and how it works</h3>
-  <p>{{ authority_review.architecture | escape }}</p>
-  <p>{{ authority_review.how | escape }}</p>
-  <h3>Standards and institutional workflows</h3>
-  <p>{{ authority_review.standards | escape }}</p>
-  <p>{{ authority_review.implementation | escape }}</p>
-  <h3>Use cases</h3>
-  <p>{{ authority_review.use_case | escape }}</p>
-  <p>{{ authority_review.example | escape }}</p>
-   <h3>How the records are interpreted</h3>
-  <p>{{ authority_review.limitation | escape }}</p>
-   <p><a href="/case-studies.html">Customer case studies</a> describe institutional adoption in practice. CertifyMe's <a href="/security/">security and deployment information</a> explains the foundations supporting these credential workflows.</p>
-  <h3>Further reading</h3>
-  <ul>
-    {% for reading in authority_review.reading %}
-    <li><a href="{{ reading.url }}">{{ reading.anchor | escape }}</a></li>
-    {% endfor %}
-  </ul>
-  <h3>Related concepts</h3>
-   <p>CertifyMe connects <a href="/platform-overview">credential governance</a>, <a href="/skills-taxonomy-mapping">reviewed skills</a>, <a href="/comprehensive-learner-record">learner records</a> and <a href="/workforce-intelligence">occupational context</a> around institutional achievements.</p>
-  <a class="btn r-04 btn--theme hover--black" href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer">See CertifyMe for Your Institution</a>
+  <div class="authority-editorial__inner">
+    <header class="authority-editorial__header">
+      <h2 id="authority-editorial-{{ authority_review.id }}">{{ authority_review.name | escape }} for institutions</h2>
+      <p class="authority-editorial__definition">{{ authority_review.definition | escape }}</p>
+    </header>
+
+    <div class="authority-editorial__topics">
+      <section class="authority-editorial__topic">
+        <h3>The institutional problem and why it matters</h3>
+        <p>{{ authority_review.problem | escape }}</p>
+      </section>
+
+      <section class="authority-editorial__topic">
+        <h3>Architecture and how it works</h3>
+        <p>{{ authority_review.architecture | escape }}</p>
+        <p>{{ authority_review.how | escape }}</p>
+      </section>
+
+      <section class="authority-editorial__topic">
+        <h3>Standards and institutional workflows</h3>
+        <p>{{ authority_review.standards | escape }}</p>
+        <p>{{ authority_review.implementation | escape }}</p>
+      </section>
+
+      <section class="authority-editorial__topic">
+        <h3>Use cases</h3>
+        <p>{{ authority_review.use_case | escape }}</p>
+        <p>{{ authority_review.example | escape }}</p>
+      </section>
+
+      <section class="authority-editorial__topic authority-editorial__topic--interpretation">
+        <h3>How the records are interpreted</h3>
+        <p>{{ authority_review.limitation | escape }}</p>
+        <p><a href="/case-studies.html">Customer case studies</a> describe institutional adoption in practice. CertifyMe's <a href="/security/">security and deployment information</a> explains the foundations supporting these credential workflows.</p>
+      </section>
+    </div>
+
+    <section class="authority-editorial__reading">
+      <div class="authority-editorial__reading-heading">
+        <h3>Further reading</h3>
+      </div>
+      <ul>
+        {% for reading in authority_review.reading %}
+        <li>
+          <a href="{{ reading.url }}">{{ reading.anchor | escape }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="authority-editorial__related">
+      <h3>Related concepts</h3>
+      <p>CertifyMe connects <a href="/platform-overview">credential governance</a>, <a href="/skills-taxonomy-mapping">reviewed skills</a>, <a href="/comprehensive-learner-record">learner records</a> and <a href="/workforce-intelligence">occupational context</a> around institutional achievements.</p>
+    </section>
+
+    <footer class="authority-editorial__footer">
+      <p>Discuss how this capability fits your institution.</p>
+      <a class="btn r-04 btn--theme hover--black authority-editorial__cta" href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer">See CertifyMe for Your Institution</a>
+    </footer>
+  </div>
 </section>
 {% endif %}

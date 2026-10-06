@@ -1,1 +1,1 @@
-{% assign aeo_lead = site.data.ai_authority_briefs | where: "url", page.url | first %}{% if aeo_lead %}<span data-ai-answer="{{ aeo_lead.id }}">{{ aeo_lead.lead | escape }}</span>{% endif %}
+{% assign aeo_lead = site.data.ai_authority_briefs | where: "url", page.url | first %}{% if aeo_lead %}<span data-hero-summary="{{ aeo_lead.id }}">{{ aeo_lead.summary | escape }}</span>{% endif %}
