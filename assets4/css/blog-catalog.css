@@ -1,0 +1,5 @@
+/* Blog reading must not depend on the legacy window-scrolling reveal library. */
+#blog-page .wow {
+  visibility: visible !important;
+  animation: none !important;
+}

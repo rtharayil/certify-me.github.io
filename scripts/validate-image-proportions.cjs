@@ -4,7 +4,7 @@ const os = require("node:os");
 const path = require("node:path");
 const http = require("node:http");
 const { execFileSync } = require("node:child_process");
-const { chromium } = require("playwright");
+const { chromium, devices } = require("playwright");
 const { inspectImages, inspectVisibility } = require("./lib/image-proportions.cjs");
 
 const ROOT = path.resolve(__dirname, "..");
@@ -99,10 +99,11 @@ async function startSite() {
   }
 }
 
-async function checkPage(browser, base, definition, width) {
+async function checkPage(browser, base, definition, width, contextOverrides = {}) {
   const context = await browser.newContext({
     viewport: { width, height: 1000 }, isMobile: width < 600, hasTouch: width < 600,
     ignoreHTTPSErrors: true,
+    ...contextOverrides,
   });
   const page = await context.newPage();
   const url = base + definition.route;
@@ -122,14 +123,27 @@ async function checkPage(browser, base, definition, width) {
       }
       await images.first().evaluate(el => el.scrollIntoView({ block: "center", behavior: "instant" }));
       await page.waitForTimeout(650);
-      // This suite tests blog proportions, not legacy entrance-animation
-      // visibility. Higher-education visibility is explicitly checked below.
+      // Verify scrolled blog cards as well as their proportions: readable
+      // content cannot depend on a window-only entrance-animation listener.
       const hasBox = await images.first().evaluate(el => {
         const rect = el.getBoundingClientRect();
         return rect.width > 0 && rect.height > 0;
       });
       if (!hasBox) {
         failures.push({ url, width, selector, reason: "Required representative image has no rendered box" });
+      }
+      if (definition.route === "/blog.html") {
+        const card = images.first().locator("xpath=ancestor::div[contains(concat(' ',normalize-space(@class),' '),' blog-post ')][1]");
+        const labels = card.locator(".blog-post-txt h2, .blog-post-txt h3, .blog-post-txt h4, .blog-post-txt h5, .blog-post-txt h6, .blog-post-txt p");
+        if (!await labels.count()) failures.push({ url, width, selector, reason: "Blog card has no accompanying text" });
+        for (const element of [images.first(), ...await labels.all()]) {
+          await element.evaluate(el => el.scrollIntoView({ block: "center", behavior: "instant" }));
+          await page.waitForTimeout(650);
+          const row = await element.evaluate(inspectVisibility);
+          const record = { url, width, group: selector, ...row };
+          checks.push(record);
+          if (row.status === "FAIL") failures.push(record);
+        }
       }
     }
     if (width < 600 && definition.route === "/credentials-higher-education.html") {
@@ -184,6 +198,15 @@ async function main() {
           report.checks.push(...result.checks);
           report.failures.push(...result.failures);
         }
+      }
+      const blog = PAGES.find(definition => definition.route === "/blog.html");
+      for (const [profile, overrides] of [
+        ["narrow-desktop", { isMobile: false, hasTouch: false }],
+        ["iphone-user-agent", { ...devices["iPhone 13"], viewport: { width: 390, height: 1000 } }],
+      ]) {
+        const result = await checkPage(browser, base, blog, 390, overrides);
+        report.checks.push(...result.checks.map(row => ({ ...row, profile })));
+        report.failures.push(...result.failures.map(row => ({ ...row, profile })));
       }
     }
   } catch (error) {

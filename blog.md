@@ -2,6 +2,7 @@
 title: "Digital Credentials Blog | CertifyMe"
 description: "Expert guides, research, and best practices on digital credentials, open badges, verifiable credentials, and credential management for institutions."
 layout: V4LayoutBlogs
+custom_stylesheet: /assets4/css/blog-catalog.css
 
 
 

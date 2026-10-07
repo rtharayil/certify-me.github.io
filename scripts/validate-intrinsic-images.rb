@@ -27,6 +27,20 @@ Dir.mktmpdir("certifyme-image-dimensions") do |dir|
   assert(scaled.include?('height="50"') && scaled.scan('width=').size == 1, "Existing width/aspect ratio not preserved")
   original = '<img src="/images/sample.png" width="80" height="80">'
   assert(CertifyMeIntrinsicImages.process(original, dir) == original, "Explicit dimensions changed")
+  # Render the real blog image template before the post-render dimensions hook.
+  # Title markup belongs in the editorial heading, never in image attributes.
+  card_source = File.read(File.expand_path("../_includes/V4NewLook/blogs/blogsLowerSection.html", __dir__))
+  image_template = card_source[/<img\b[^>]*>/m]
+  title_fixture = 'Credentials<br>for "Engineering" & Research > practice'
+  rendered = Liquid::Template.parse(image_template).render!(
+    { "article" => { "imageLink" => "/images/sample.png", "title" => title_fixture } },
+    filters: [Jekyll::Filters]
+  )
+  card = CertifyMeIntrinsicImages.process(rendered, dir)
+  assert(card.match?(/\A<img\b[^>]*>\z/), "Title markup broke the image tag")
+  assert(CGI.unescapeHTML(CertifyMeIntrinsicImages.attribute(card, "alt")) == 'Credentialsfor "Engineering" & Research > practice', "Plain-text escaped alternative text changed")
+  assert(CertifyMeIntrinsicImages.attribute(card, "width") == "640" && CertifyMeIntrinsicImages.attribute(card, "height") == "320", "Markup-bearing title lost intrinsic dimensions")
+  assert(title_fixture.include?("<br>"), "Fixture must retain the original editorial title")
   unsafe = '<img src="/images/../../private.png">'
   assert(CertifyMeIntrinsicImages.process(unsafe, dir) == unsafe, "Path traversal not rejected")
   FileUtils.mkdir_p(File.join(dir, "attached_assets"))

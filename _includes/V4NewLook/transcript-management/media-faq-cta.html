@@ -1,0 +1,50 @@
+<section class="tm-video" aria-labelledby="tm-video-title">
+  <div class="tm-shell tm-video-grid">
+    <div class="tm-video-copy">
+      <p class="tm-eyebrow">Transcript workflow walkthrough</p>
+      <h2 id="tm-video-title">See CertifyMe in action.</h2>
+      <p>Watch the EduTranscript product explainer to see how a digital transcript experience can support learners and institution teams.</p>
+      <p class="tm-video-watch"><a class="tm-link" href="https://www.youtube.com/watch?v=dWZx1b8BAq8" target="_blank" rel="noopener noreferrer">Watch the transcript demo on YouTube <span aria-hidden="true">↗</span></a></p>
+    </div>
+    <div class="tm-video-frame" id="tm-video-frame" data-tm-video>
+      <button class="tm-video-button" data-tm-video-button type="button" aria-label="Play EduTranscript - Product Explainer Video" aria-controls="tm-video-frame">
+        <img src="https://i.ytimg.com/vi/dWZx1b8BAq8/hqdefault.jpg" width="480" height="360" loading="lazy" alt="">
+        <span class="tm-play" aria-hidden="true"></span>
+      </button>
+      <noscript><style>#tm-page [data-tm-video-button] { display: none; }</style><a class="tm-video-button tm-video-noscript" href="https://www.youtube.com/watch?v=dWZx1b8BAq8" target="_blank" rel="noopener noreferrer">Watch EduTranscript - Product Explainer Video on YouTube</a></noscript>
+    </div>
+  </div>
+</section>
+
+<section class="tm-faq" aria-labelledby="tm-faq-title">
+  <div class="tm-shell tm-faq-layout">
+    <div class="tm-faq-intro">
+      <p class="tm-eyebrow">Questions from university teams</p>
+      <h2 id="tm-faq-title">Transcript management, explained.</h2>
+      <p>How requests, verification and connected academic records work for your institution.</p>
+    </div>
+    <div>
+      {% for faq in page.faqs %}
+      <details>
+        <summary>{{ faq.question | escape }}</summary>
+        <p>{{ faq.answer | escape }}</p>
+      </details>
+      {% endfor %}
+      <p><a class="tm-link" href="/allIntegrations">Review integrations</a> · <a class="tm-link" href="/api/">Explore the API</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="tm-final" aria-labelledby="tm-final-title">
+  <div class="tm-shell tm-final-grid">
+    <div>
+      <p class="tm-eyebrow">For university leadership, registrars and IT teams</p>
+      <h2 id="tm-final-title">Modernize your university's transcript experience.</h2>
+      <p>Give students faster access to their academic records while giving registrars a secure, scalable and verifiable transcript workflow.</p>
+    </div>
+    <div class="tm-final-actions">
+      <a class="tm-button tm-button-primary" href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer">Request a Demo <span class="tm-arrow" aria-hidden="true">→</span></a>
+      <a class="tm-button tm-button-secondary" href="/credentials-higher-education.html">Explore Higher Education <span class="tm-arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>

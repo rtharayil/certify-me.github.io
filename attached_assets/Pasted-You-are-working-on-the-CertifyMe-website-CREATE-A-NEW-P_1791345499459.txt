@@ -1,0 +1,1276 @@
+You are working on the CertifyMe website.
+
+CREATE A NEW, PRODUCTION-QUALITY SOLUTION PAGE FOR:
+
+/solutions/skill-passport
+
+The page must position CertifyMe Skill Passport as an institutional-grade learner record and verified skills identity layer.
+
+IMPORTANT:
+DO NOT create an abstract concept page.
+DO NOT invent a generic "Skill Passport" design.
+DO NOT generate random AI illustrations.
+DO NOT replace the existing CertifyMe design system.
+
+FIRST, YOU MUST RESEARCH AND ANALYZE:
+
+https://skillstory.org/
+
+You have permission to use the publicly available website content and visual assets as SOURCE MATERIAL for this page.
+
+============================================================
+PHASE 1 — ACTUALLY ANALYZE SKILLSTORY.ORG
+============================================================
+
+Before writing or coding the page, crawl and analyze the SkillStory website.
+
+At minimum inspect:
+
+https://skillstory.org/
+https://skillstory.org/skill-passport/
+https://skillstory.org/features/skill-passport/
+https://skillstory.org/features/portfolio-showcase/
+https://skillstory.org/features/credentials/
+https://skillstory.org/pricing/
+
+Also inspect the site's navigation and discover any additional pages that contain relevant Skill Passport product information, screenshots, diagrams, product visuals, portfolio visuals, credential visuals, learner-record visuals, attestation visuals, or relevant supporting content.
+
+DO NOT just read the homepage.
+
+Build an understanding of:
+
+1. How SkillStory defines a Skill Passport.
+2. What information goes into it.
+3. How skills are represented.
+4. How projects are represented.
+5. How experiences are represented.
+6. How credentials are represented.
+7. How achievements are represented.
+8. How attestation works.
+9. How verification works.
+10. How the learner owns the record.
+11. How the record remains lifelong.
+12. How the record is shared.
+13. How the record becomes a portfolio.
+14. How the record connects to CVs.
+15. How the record connects to jobs and opportunities.
+16. How CLR is used.
+17. How Open Badges are used.
+18. How W3C Verifiable Credentials are used.
+19. How the student/learner journey is presented visually.
+20. Which images and UI screenshots are actually used by SkillStory.
+
+IMPORTANT:
+
+Do not assume that every statement on SkillStory should be copied verbatim.
+
+Analyze the website and transform the B2C/student-oriented story into a B2B/institutional CertifyMe solution story.
+
+============================================================
+PHASE 2 — IDENTIFY AND REUSE VISUAL ASSETS
+============================================================
+
+THIS IS A CRITICAL REQUIREMENT.
+
+Do NOT generate replacement images if the SkillStory website already contains an appropriate visual.
+
+Inspect the HTML/CSS/assets of SkillStory and identify the actual image URLs and image files used for:
+
+- Skill Passport
+- Student Skill Passport
+- Learner record
+- Skills
+- Projects
+- Credentials
+- Portfolio
+- Attestation
+- Verification
+- Mobile Skill Passport
+- Student profile
+- Verified credentials
+- Portfolio showcase
+- Jobs / opportunities
+- CLR
+- Open Badges
+- Skill Passport card
+- Product UI
+- Dashboard UI
+
+Create an internal asset inventory before implementing the page.
+
+For each relevant asset record:
+
+- Original URL
+- Filename
+- Image dimensions
+- What section it belongs to
+- Whether it can be reused directly
+- Whether it needs cropping
+- Whether it needs resizing
+- Whether it can be used as a background
+- Whether it is a screenshot/UI asset
+
+Prefer the ACTUAL PRODUCT SCREENSHOTS and PRODUCT VISUALS from SkillStory.
+
+Do NOT create an artificial illustration when an existing SkillStory screenshot communicates the concept better.
+
+If an asset is available from SkillStory and can be legally reused within the same Tech99 / CertifyMe / SkillStory product ecosystem, download/use the actual asset.
+
+SkillStory is powered by CertifyMe / Tech99 Innovations, so preserve the product relationship.
+
+Where an image clearly belongs to SkillStory branding, adapt the surrounding presentation for CertifyMe rather than pretending it is a generic third-party asset.
+
+DO NOT alter the underlying product screenshot to falsely represent a capability.
+
+============================================================
+PHASE 3 — UNDERSTAND THE CERTIFYME POSITIONING
+============================================================
+
+This is NOT a standalone consumer SkillStory page.
+
+This page belongs under:
+
+CERTIFYME
+→ SOLUTIONS
+→ SKILL PASSPORT
+
+The target audience is institutional.
+
+Primary audience:
+
+- Vice Chancellor / President
+- Dean
+- CIO / IT Director
+- Registrar
+- Academic leaders
+- Digital transformation leaders
+- Careers / employability leaders
+- Continuing education leaders
+- Professional bodies
+- Education providers
+
+The page must answer:
+
+"Why should an institution provide every learner with a verified Skill Passport?"
+
+The answer should be much deeper than:
+
+"Students can build a profile."
+
+The institutional proposition is:
+
+CERTIFYME enables institutions to move from issuing individual credentials to building a persistent, learner-owned, verified record of achievement, skills, experiences and evidence.
+
+============================================================
+PHASE 4 — CORE POSITIONING
+============================================================
+
+Use this conceptual architecture:
+
+DIGITAL CREDENTIAL
+↓
+VERIFIED ACHIEVEMENT
+↓
+SKILLS
+↓
+PROJECTS & EVIDENCE
+↓
+EXPERIENCES
+↓
+COMPREHENSIVE LEARNER RECORD
+↓
+SKILL PASSPORT
+↓
+WORKFORCE INTELLIGENCE
+↓
+OPPORTUNITY
+
+The Skill Passport is the learner-facing record that brings together these elements.
+
+It should not be presented as merely:
+
+- a CV builder
+- a portfolio builder
+- a digital wallet
+- a certificate collection
+- a profile page
+
+It is the connected learner record.
+
+============================================================
+PHASE 5 — HERO
+============================================================
+
+Create a strong enterprise hero.
+
+EYEBROW:
+
+SKILL PASSPORT
+
+HEADLINE:
+
+From individual credentials to a lifelong verified learner record.
+
+Alternative headline if testing indicates stronger positioning:
+
+Give Every Learner a Verified Record of What They Can Do.
+
+Supporting copy:
+
+"CertifyMe Skill Passport brings credentials, verified skills, projects, experiences and achievements together into a portable learner record that can grow from education into professional life."
+
+CTA 1:
+
+Explore Skill Passport
+
+CTA 2:
+
+Request a Platform Demo
+
+Hero visual:
+
+DO NOT create a new abstract illustration if a suitable SkillStory product visual exists.
+
+Use the strongest existing SkillStory Skill Passport product screenshot / mobile UI / learner record visual.
+
+If necessary, combine:
+
+- Skill Passport mobile UI
+- learner record UI
+- credential UI
+- skills UI
+
+into a polished CertifyMe enterprise composition.
+
+The visual should show the PRODUCT, not an abstract person.
+
+============================================================
+PHASE 6 — REFRAME THE PROBLEM
+============================================================
+
+Headline:
+
+A transcript records part of the journey. A Skill Passport connects the whole journey.
+
+Explain the difference between:
+
+TRANSCRIPT
+
+Shows:
+
+- formal academic performance
+- courses
+- modules
+- grades
+- qualifications
+
+VERSUS
+
+SKILL PASSPORT
+
+Shows:
+
+- verified skills
+- credentials
+- projects
+- evidence
+- experiences
+- internships
+- achievements
+- leadership
+- competitions
+- community activity
+- attestations
+
+Use the existing SkillStory visual/comparison assets where useful.
+
+Do not attack transcripts.
+
+Explain:
+
+"The transcript remains an authoritative academic record. The Skill Passport extends the learner record by representing the broader evidence of what the learner has achieved and demonstrated."
+
+============================================================
+PHASE 7 — WHAT GOES INTO THE SKILL PASSPORT
+============================================================
+
+Create a visually rich section.
+
+Headline:
+
+Everything the learner achieves. One connected record.
+
+Use REAL SkillStory visuals wherever possible.
+
+Create six/seven content areas:
+
+01
+CREDENTIALS
+
+Digital credentials, certificates and badges issued by institutions.
+
+02
+SKILLS
+
+Technical, transferable and domain-specific skills.
+
+03
+PROJECTS
+
+Real work, research, applications, designs, code, publications and evidence.
+
+04
+EXPERIENCES
+
+Internships, volunteering, leadership, competitions, work experience and other meaningful activities.
+
+05
+ACHIEVEMENTS
+
+Awards, distinctions, recognitions and accomplishments.
+
+06
+ATTESTATIONS
+
+Trusted confirmations from teachers, mentors, institutions or other authorised parties.
+
+07
+EVIDENCE
+
+Documents, links, project outputs, supporting material and other evidence.
+
+Use real SkillStory screenshots or product visuals for each where possible.
+
+Do NOT create seven generic icons if actual product screenshots are available.
+
+============================================================
+PHASE 8 — THE IMPORTANT DIFFERENCE: VERIFIED
+============================================================
+
+Headline:
+
+A learner record is more valuable when someone else can trust it.
+
+This is one of the strongest sections.
+
+Explain:
+
+A normal CV says:
+
+"I have this skill."
+
+A portfolio says:
+
+"Here is my work."
+
+A Skill Passport adds:
+
+"Here is the evidence, and here is who verified it."
+
+Create a visual trust chain:
+
+LEARNER
+↓
+ACHIEVEMENT / EVIDENCE
+↓
+ATTESTATION
+↓
+DIGITAL SIGNATURE
+↓
+VERIFIED RECORD
+↓
+VERIFIER
+
+Use the existing SkillStory attestation workflow visuals.
+
+Explain the attestation workflow:
+
+1. Learner records achievement.
+2. Evidence is attached.
+3. Learner requests attestation.
+4. Teacher / mentor / authorised verifier reviews.
+5. Verifier approves / signs.
+6. Achievement becomes part of the verified record.
+7. Third party can verify it.
+
+IMPORTANT:
+
+Do not claim every possible Skill Passport item must be teacher-attested.
+
+Distinguish:
+
+- institution-issued credentials
+- learner-added evidence
+- educator/mentor attestations
+- verified credentials
+
+============================================================
+PHASE 9 — STUDENT-OWNED / LEARNER-OWNED
+============================================================
+
+Headline:
+
+The institution issues the achievement. The learner carries the record.
+
+This is a critical positioning point.
+
+Explain:
+
+The institution remains the trusted issuer / attestor.
+
+The learner maintains the portable record.
+
+The learner can carry the record:
+
+School
+→
+University
+→
+Higher Education
+→
+Internship
+→
+Employment
+→
+Career
+
+The record should not disappear when the learner leaves an institution.
+
+Use the existing SkillStory visual showing the lifelong journey if available.
+
+Create a lifecycle:
+
+FIRST ACHIEVEMENT
+↓
+SCHOOL
+↓
+UNIVERSITY
+↓
+INTERNSHIP
+↓
+CERTIFICATION
+↓
+EMPLOYMENT
+↓
+LIFELONG LEARNING
+
+Headline:
+
+Built once. Grows for life.
+
+============================================================
+PHASE 10 — CREDENTIALS + SKILLS
+============================================================
+
+Headline:
+
+A credential tells you what was awarded. Skills explain what it represents.
+
+Show:
+
+DIGITAL CREDENTIAL
+
+"Completed Advanced Data Analytics Programme"
+
+↓
+
+SKILLS
+
+Data Analysis
+Python
+Statistical Analysis
+Data Visualisation
+
+↓
+
+TAXONOMY
+
+ESCO / O*NET / Institutional Skill Framework
+
+↓
+
+LEARNER RECORD
+
+Explain that the Skill Passport becomes more valuable when credentials are connected to structured skills.
+
+Use CertifyMe's existing Skills Taxonomy Mapping terminology and link to the existing CertifyMe skills taxonomy solution page.
+
+Do not invent a taxonomy relationship for a specific credential unless it is clearly marked as an example.
+
+============================================================
+PHASE 11 — PROJECTS AND EVIDENCE
+============================================================
+
+Headline:
+
+Show what the learner can do, not just what they completed.
+
+Use SkillStory's existing project/portfolio visuals.
+
+Show examples:
+
+- Software project
+- Research
+- Design
+- Business project
+- Community initiative
+- Competition
+- Publication
+- Internship work
+
+For each, show:
+
+PROJECT
++
+DESCRIPTION
++
+EVIDENCE
++
+SKILLS
++
+VERIFICATION / ATTESTATION
+
+This section should visually communicate that the Skill Passport bridges the gap between formal credentials and demonstrated capability.
+
+============================================================
+PHASE 12 — PORTFOLIO
+============================================================
+
+Headline:
+
+Turn the learner record into a verified professional profile.
+
+Use the existing SkillStory Portfolio Showcase visual.
+
+Explain:
+
+The Skill Passport can become the underlying verified data layer for:
+
+- professional profile
+- portfolio
+- CV
+- admissions profile
+- scholarship application
+- internship application
+- career profile
+
+Do NOT position the portfolio as a separate product.
+
+Position it as a presentation layer built on the verified learner record.
+
+Architecture:
+
+SKILL PASSPORT
+↓
+Verified Skills
+Credentials
+Projects
+Experiences
+Achievements
+↓
+VERIFIED PORTFOLIO
+↓
+Universities
+Scholarships
+Employers
+
+Use existing SkillStory portfolio screenshots.
+
+============================================================
+PHASE 13 — VERIFIED CV
+============================================================
+
+Headline:
+
+A CV generated from verified learner data.
+
+Use the existing SkillStory CV visuals if available.
+
+Explain:
+
+Traditional CV:
+
+Self-reported
+
+Skill Passport-powered CV:
+
+Supported by verified credentials, achievements, skills and evidence.
+
+Show:
+
+SKILL PASSPORT
+↓
+VERIFIED CV
+↓
+PORTFOLIO
+↓
+APPLICATION
+
+Do not claim that all CV content is automatically verified unless technically supported.
+
+Make the distinction clear.
+
+============================================================
+PHASE 14 — COMPREHENSIVE LEARNER RECORD
+============================================================
+
+Headline:
+
+The Skill Passport is the learner-facing expression of a Comprehensive Learner Record.
+
+Explain CLR clearly but not excessively.
+
+Show:
+
+CREDENTIALS
++
+SKILLS
++
+COMPETENCIES
++
+PROJECTS
++
+EXPERIENCES
++
+ACHIEVEMENTS
+
+↓
+
+COMPREHENSIVE LEARNER RECORD
+
+↓
+
+SKILL PASSPORT
+
+Use existing CertifyMe / SkillStory CLR terminology.
+
+Mention:
+
+CLR 2.0
+
+Open Badges 3.0
+
+W3C Verifiable Credentials
+
+Only use standards claims supported by the existing CertifyMe / SkillStory website.
+
+Link to CertifyMe's Comprehensive Learner Record page.
+
+============================================================
+PHASE 15 — OPEN STANDARDS
+============================================================
+
+Headline:
+
+Built to travel with the learner.
+
+Explain the standards layer:
+
+CLR 2.0
+Open Badges 3.0
+W3C Verifiable Credentials
+
+Show:
+
+Institution
+↓
+CertifyMe
+↓
+Structured Credential / Learner Record
+↓
+Skill Passport
+↓
+University / Employer / Verifier
+
+Explain why portability matters.
+
+Do not make this a technical standards page.
+
+Keep it executive-friendly.
+
+Link to the CertifyMe Digital Credential Infrastructure page.
+
+============================================================
+PHASE 16 — VERIFICATION
+============================================================
+
+Headline:
+
+Anyone should be able to verify the record.
+
+Use SkillStory's existing verification visuals.
+
+Show:
+
+SHARE LINK
+
+↓
+
+VIEW RECORD
+
+↓
+
+SELECT ACHIEVEMENT
+
+↓
+
+VERIFY
+
+No login required for the public verifier experience if this is supported by the current SkillStory implementation.
+
+Explain:
+
+The value of the Skill Passport is not only that the learner can show it.
+
+It is that the recipient can independently establish whether the information can be trusted.
+
+============================================================
+PHASE 17 — FROM LEARNING TO OPPORTUNITY
+============================================================
+
+This section connects Skill Passport to the broader CertifyMe architecture.
+
+Headline:
+
+The learner record becomes more valuable when it connects to opportunity.
+
+Show:
+
+LEARNING
+↓
+CREDENTIAL
+↓
+SKILLS
+↓
+SKILL PASSPORT
+↓
+WORKFORCE INTELLIGENCE
+↓
+OPPORTUNITY
+
+Introduce CertifyMe's Job Engine.
+
+Explain that verified skills can provide context when looking at:
+
+- occupations
+- jobs
+- employers
+- locations
+- skill demand
+- workforce opportunities
+
+Do not turn this into a generic jobs page.
+
+The point is:
+
+"The Skill Passport provides the learner's verified capability context. Workforce intelligence provides the market context."
+
+This is the bridge.
+
+============================================================
+PHASE 18 — THE INSTITUTIONAL VALUE
+============================================================
+
+This is NOT a student-only page.
+
+Create a strong B2B section.
+
+Headline:
+
+What a Skill Passport gives the institution.
+
+Create five institutional outcomes.
+
+01
+EXTEND THE VALUE OF CREDENTIALS
+
+A certificate no longer exists as an isolated achievement.
+
+02
+BUILD A LIFELONG LEARNER RELATIONSHIP
+
+The learner can continue carrying the institution's achievements.
+
+03
+MAKE SKILLS VISIBLE
+
+Connect achievements to structured skills and competencies.
+
+04
+STRENGTHEN EMPLOYABILITY
+
+Give learners a trusted way to demonstrate capabilities to universities and employers.
+
+05
+CREATE A CONNECTED LEARNING-TO-WORKFORCE MODEL
+
+Connect verified learner capability with workforce intelligence.
+
+============================================================
+PHASE 19 — INSTITUTIONAL ARCHITECTURE
+============================================================
+
+Create an enterprise architecture diagram.
+
+INSTITUTIONAL SYSTEMS
+
+SIS
+LMS
+Assessment
+Credential Platform
+Career Services
+Training Systems
+
+↓
+
+CERTIFYME
+
+Credential Infrastructure
+
+↓
+
+SKILL PASSPORT
+
+Verified Learner Record
+
+↓
+
+PRESENTATION LAYERS
+
+CV
+Portfolio
+Profile
+Applications
+
+↓
+
+EXTERNAL ECOSYSTEM
+
+Universities
+Scholarship Boards
+Employers
+Professional Bodies
+Workforce Platforms
+
+Use clean architecture design.
+
+============================================================
+PHASE 20 — SIX-LAYER CERTIFYME ARCHITECTURE CONNECTION
+============================================================
+
+Connect this page to CertifyMe's existing six-layer architecture.
+
+Show:
+
+01
+PRESENTATION & ACCESS
+
+Credential and learner record access
+
+↓
+
+02
+STANDARDS & INTEROPERABILITY
+
+Open Badges / W3C VC / CLR
+
+↓
+
+03
+VERIFICATION & TRUST
+
+Attestation + verification
+
+↓
+
+04
+SKILL TAXONOMY ALIGNMENT
+
+Skills and competency mapping
+
+↓
+
+05
+COMPREHENSIVE LEARNER RECORD
+
+Skill Passport
+
+↓
+
+06
+WORKFORCE INTELLIGENCE & OPPORTUNITY
+
+Job Engine
+
+Make Layer 5 visually prominent because this is where Skill Passport sits.
+
+============================================================
+PHASE 21 — BEFORE / AFTER
+============================================================
+
+Create a strong visual comparison.
+
+BEFORE
+
+Transcript
++
+Certificates
++
+CV
++
+Portfolio
++
+Separate evidence
++
+Separate experiences
+
+↓
+
+Fragmented learner story
+
+AFTER
+
+ONE SKILL PASSPORT
+
+Credentials
++
+Skills
++
+Projects
++
+Experiences
++
+Achievements
++
+Evidence
++
+Attestations
+
+↓
+
+Verified learner identity
+
+This should be one of the strongest visual sections.
+
+============================================================
+PHASE 22 — USE REAL SKILLSTORY IMAGES
+============================================================
+
+This is mandatory.
+
+Where appropriate, reuse the actual SkillStory assets identified during Phase 1.
+
+Prioritize:
+
+1. Skill Passport mobile UI
+2. Skill Passport learner record
+3. Portfolio showcase
+4. Verified credentials
+5. Attestation workflow
+6. Skills display
+7. Projects
+8. Student / learner record
+9. CV
+10. Opportunities / jobs
+11. Skill Passport card
+12. Product dashboard
+
+Do not simply place the images randomly.
+
+Each image must support the section's story.
+
+For example:
+
+HERO
+→ Skill Passport product UI
+
+WHAT GOES INSIDE
+→ Learner record screenshot
+
+VERIFICATION
+→ Attestation / verification screenshot
+
+PORTFOLIO
+→ Portfolio screenshot
+
+CREDENTIALS
+→ Credential screenshot
+
+LIFELONG RECORD
+→ Skill Passport / learner journey visual
+
+OPPORTUNITY
+→ Job / opportunity visual
+
+Use CSS cropping/object-position where necessary to fit CertifyMe's layout.
+
+Do not distort screenshots.
+
+============================================================
+PHASE 23 — IMAGE INVENTORY
+============================================================
+
+Before completing implementation, create:
+
+/docs/skillstory-assets.md
+
+Document:
+
+Asset
+Original URL
+Used On Page
+Purpose
+Reuse Method
+
+This allows the CertifyMe team to understand which SkillStory assets were reused.
+
+============================================================
+PHASE 24 — CONTENT RULES
+============================================================
+
+DO NOT copy SkillStory's consumer language wholesale.
+
+Transform:
+
+"Your Child"
+"Student"
+"Build My Skill Passport"
+
+into institutional language such as:
+
+"Learner"
+"Institution"
+"University"
+"Education provider"
+"Professional body"
+"Employer"
+
+The page is a CertifyMe B2B solution page.
+
+However, retain the strongest conceptual ideas from SkillStory:
+
+- student/learner ownership
+- lifelong record
+- verified skills
+- projects
+- evidence
+- credentials
+- attestation
+- portability
+- portfolio
+- CLR
+- open standards
+- verification
+- career opportunity
+
+============================================================
+PHASE 25 — DO NOT INVENT CLAIMS
+============================================================
+
+Use the existing SkillStory website as the source for SkillStory-specific product functionality.
+
+Use the existing CertifyMe website as the source for CertifyMe-specific platform capabilities.
+
+Do NOT invent:
+
+- new certifications
+- new standards
+- new integrations
+- customer numbers
+- institutional customers
+- verification mechanisms
+- job-placement claims
+- employment outcomes
+- university partnerships
+- technical architecture that does not exist
+
+If a capability is shown on SkillStory but should be described as part of the broader CertifyMe platform, clearly position it appropriately.
+
+============================================================
+PHASE 26 — SEO
+============================================================
+
+Primary keyword:
+
+skill passport
+
+Secondary keywords:
+
+digital skill passport
+student skill passport
+learner record
+digital learner record
+comprehensive learner record
+verified learner record
+verified skills
+student digital portfolio
+digital credentials
+lifelong learner record
+skills passport
+skill passport for universities
+skill passport for students
+verified learner identity
+
+Suggested title:
+
+Skill Passport for Universities | Verified Learner Record | CertifyMe
+
+Suggested meta description:
+
+"Give every learner a portable, verified Skill Passport that brings together credentials, skills, projects, experiences and achievements — powered by CertifyMe."
+
+Use proper:
+
+H1
+H2
+H3
+
+Use internal links to:
+
+Digital Credential Infrastructure
+Skills Taxonomy Mapping
+Comprehensive Learner Record
+Workforce Intelligence / Job Engine
+Digital Credentials
+Verification
+
+============================================================
+PHASE 27 — DESIGN DIRECTION
+============================================================
+
+The page should NOT look like SkillStory copied into CertifyMe.
+
+It should feel like:
+
+CERTIFYME ENTERPRISE
++
+SKILLSTORY PRODUCT EXPERIENCE
++
+INSTITUTIONAL ARCHITECTURE
+
+Use CertifyMe branding.
+
+Use #4F46E5 as the primary accent.
+
+Use light backgrounds.
+
+Use product screenshots extensively.
+
+Avoid:
+
+- excessive cards
+- generic icons
+- abstract AI graphics
+- stock photos everywhere
+- giant gradients
+- childish student imagery
+- consumer SaaS styling
+
+The page should be credible to:
+
+University CIO
+Dean
+Registrar
+Vice Chancellor
+Provost
+Career Services Director
+Digital Transformation Director
+
+============================================================
+PHASE 28 — PAGE STRUCTURE
+============================================================
+
+Final page order:
+
+1. Hero
+2. The problem with fragmented learner records
+3. What is a Skill Passport?
+4. What goes inside it
+5. Verified achievements / attestation
+6. Learner ownership and lifelong record
+7. Credentials + skills
+8. Projects + evidence
+9. Verified portfolio
+10. Verified CV
+11. Comprehensive Learner Record
+12. Open standards
+13. Verification
+14. Learning → Skills → Workforce → Opportunity
+15. Institutional value
+16. Institutional architecture
+17. Six-layer CertifyMe architecture
+18. Before vs After
+19. Final CTA
+
+============================================================
+PHASE 29 — FINAL CTA
+============================================================
+
+Headline:
+
+Give every learner a record that grows with them.
+
+Copy:
+
+"CertifyMe Skill Passport connects credentials, skills, projects, experiences and achievements into a verified learner record designed to move with the learner from education into professional life."
+
+CTA:
+
+Request a Platform Demo
+
+Secondary CTA:
+
+Explore Digital Credential Infrastructure
+
+============================================================
+PHASE 30 — QUALITY CHECK
+============================================================
+
+Before declaring the page complete:
+
+1. Crawl SkillStory again.
+2. Verify that relevant SkillStory assets have actually been identified.
+3. Verify that actual product screenshots are being reused where appropriate.
+4. Verify that images are not stretched or distorted.
+5. Verify all internal links.
+6. Verify mobile responsiveness.
+7. Verify tablet responsiveness.
+8. Verify desktop layout.
+9. Verify accessibility.
+10. Verify SEO metadata.
+11. Verify H1/H2/H3 hierarchy.
+12. Verify no horizontal scrolling.
+13. Verify no invented CertifyMe claims.
+14. Verify no unsupported SkillStory claims have been transferred.
+15. Verify the page is B2B/institutional rather than consumer-focused.
+16. Verify the Skill Passport is clearly positioned as the learner-record layer of CertifyMe.
+17. Verify the page connects naturally to the six-layer CertifyMe architecture.
+18. Verify that the page uses REAL product visuals rather than generic illustrations wherever possible.
+
+FINAL TEST:
+
+Ask:
+
+"If I am a university CIO, Dean, Registrar or Vice Chancellor, do I understand why my institution should give learners a verified Skill Passport?"
+
+The answer must be immediately obvious.
+
+The final page should communicate:
+
+A credential proves an achievement.
+
+A skill explains capability.
+
+A learner record connects achievements.
+
+A Skill Passport gives the learner a portable, verified identity built from those achievements.
+
+And CertifyMe provides the infrastructure that makes the entire journey possible.
+
+DO NOT STOP AT A WIREFRAME.
+
+BUILD THE COMPLETE PAGE.
+
+DO NOT GIVE ME AN ABSTRACT DESIGN DESCRIPTION.
+
+ACTUALLY IMPLEMENT THE PAGE IN THE EXISTING REPLIT PROJECT.

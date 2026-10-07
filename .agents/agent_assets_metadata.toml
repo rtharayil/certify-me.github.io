@@ -733,3 +733,31 @@ mtime_ms = 1791202587076
 storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/2c16fde6-bf14-4592-907e-061cff0815f5/fe0dc2b8-6e59-4b21-aec9-2ff67ad1dfc7"
 storage_version_token = "1791202757449786"
 content_type = "text/csv"
+
+[[outputs]]
+id = "r1fHOAzvax6ikOkPGoVjc"
+uri = "file://.local/reports/queue-execution/p2-evidence-worksheet.csv"
+type = "table"
+title = "Evidence worksheet for 27 resources"
+description = "The resource inventory with empty performance and indexing fields awaiting authorized exports; no article decisions have been made."
+logical_id = "f47a49e1-a0f4-4235-913e-27dd2199d7f3"
+content_hash = "sha256:9b749fedef243093c2048ec04dc53aeefc234a0eb8129f808d3ad20ed61bd382"
+size = 5834
+mtime_ms = 1791295535179
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/f47a49e1-a0f4-4235-913e-27dd2199d7f3/f6fff293-ccc5-4663-a1dc-b213d36d6ca3"
+storage_version_token = "1791295787314413"
+content_type = "text/csv"
+
+[[outputs]]
+id = "nCjIh3BewwvOwWEH8pToe"
+uri = "file://.local/reports/queue-execution/institutional-pilot.md"
+type = "text"
+title = "Institutional credential pilot plan"
+description = "Required inputs and scoped checks for export, receiver compatibility, status changes, entitlements and continuity. The pilot has not been run."
+logical_id = "4f26137a-0199-417b-ad57-ea2cb053667c"
+content_hash = "sha256:981b573a6331d6dc8ffbb20acfcee898131dbd84872a5837ec0942ec2b3232f6"
+size = 2682
+mtime_ms = 1791295535263
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:c3253fc8-dfa5-489f-bbd8-9d16bfae2910/4f26137a-0199-417b-ad57-ea2cb053667c/9bf0d927-310c-4590-893d-c2564e36cbaa"
+storage_version_token = "1791295788583291"
+content_type = "text/markdown"

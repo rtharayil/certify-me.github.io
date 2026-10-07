@@ -98,3 +98,9 @@ Report isolated hidden-control style checks separately from real interaction che
 **Why:** Initially hidden sample-portal controls can be checked with their original CSS and background ancestry in a separate fixture, but that does not establish that the signed-in screen or popup opens correctly.
 
 **How to apply:** Keep the app's authentication and hidden-state behavior intact. Exercise available real public openers for dialogs and menus; label isolated fixture results explicitly and do not count them as signed-in UI verification.
+
+Test narrow desktop, touch emulation with the default user agent, and a real mobile user agent separately when checking legacy reveals.
+
+**Why:** The blog's scrolled previews stayed hidden with the default Chromium user agent but were visible with an iPhone user agent at the same width. Touch/viewport flags alone did not reproduce the mobile-browser behavior.
+
+**How to apply:** Do not use a passing mobile-user-agent run to dismiss a narrow-window visibility failure. Readability must work across all three profiles.
