@@ -1,0 +1,424 @@
+/* Shared capability navigation, supporting resources and consolidated FAQs. */
+.institutional-abstract {
+  padding: 48px 0;
+  background: #fff;
+  color: #292640;
+  font-family: "Source Sans 3", sans-serif;
+  text-align: left;
+}
+
+.institutional-abstract__shell {
+  width: min(900px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.institutional-abstract h2 {
+  margin: 0 0 18px;
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.institutional-abstract p {
+  margin: 0 0 14px;
+  color: #625f74;
+  font-size: 17px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.institutional-abstract p:last-child {
+  margin-bottom: 0;
+}
+
+.institutional-abstract a {
+  color: #342b78;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.institutional-abstract a:focus-visible {
+  outline: 2px solid #342b78;
+  outline-offset: 4px;
+}
+
+.institutional-links,
+.institutional-faqs,
+.institutional-references {
+  --is-ink: #292640;
+  --is-muted: #625f74;
+  --is-indigo: #342b78;
+  --is-line: #e1dfea;
+  font-family: "Source Sans 3", sans-serif;
+  color: var(--is-ink);
+  text-align: left;
+}
+
+.institutional-links *,
+.institutional-faqs *,
+.institutional-references * {
+  box-sizing: border-box;
+}
+
+.institutional-links__shell,
+.institutional-faqs__shell,
+.institutional-references__shell {
+  width: min(1140px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.institutional-links {
+  padding: 72px 0 80px;
+  background: #f8f7fb;
+  border-top: 1px solid var(--is-line);
+}
+
+.institutional-links h2,
+.institutional-faqs h2 {
+  margin: 0;
+  color: var(--is-ink);
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -.035em;
+}
+
+.institutional-links__intro {
+  max-width: 660px;
+  margin-bottom: 32px;
+}
+
+.institutional-links h2,
+.institutional-links h3 {
+  scroll-margin-top: 115px;
+}
+
+.institutional-links__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.institutional-links__group {
+  min-width: 0;
+  padding: 26px 24px 16px;
+  border: 1px solid var(--is-line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.institutional-links__group h3 {
+  margin: 0 0 14px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--is-line);
+  color: var(--is-indigo);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -.02em;
+}
+
+.institutional-links ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.institutional-links__group a,
+.institutional-links__group a:visited {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  padding: 11px 0;
+  color: var(--is-ink) !important;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.institutional-links__group li + li {
+  border-top: 1px solid #f0eef5;
+}
+
+.institutional-links svg {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  color: var(--is-indigo);
+}
+
+.institutional-links__group a:hover span {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.institutional-links a:focus-visible,
+.institutional-faqs a:focus-visible,
+.institutional-faqs summary:focus-visible,
+.institutional-references a:focus-visible {
+  outline: 2px solid var(--is-indigo);
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+
+.institutional-resources {
+  margin-top: 44px;
+  padding-top: 32px;
+  border-top: 1px solid var(--is-line);
+}
+
+.institutional-resources h3 {
+  margin: 0 0 20px;
+  color: var(--is-ink);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -.025em;
+}
+
+.institutional-resources__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.institutional-resources__grid li {
+  min-width: 0;
+}
+
+.institutional-resources__grid a,
+.institutional-resources__grid a:visited {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  height: 100%;
+  min-height: 90px;
+  padding: 22px 24px;
+  border: 1px solid #dfdbea;
+  border-radius: 10px;
+  background: #eeebf5;
+  color: var(--is-indigo) !important;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.institutional-resources__grid a:hover {
+  background: #e5e0f0;
+  border-color: #afa5ce;
+}
+
+.institutional-faqs {
+  padding: 72px 0;
+  background: #faf9fc;
+  border-block: 1px solid var(--is-line);
+  scroll-margin-top: 115px;
+}
+
+.institutional-faqs__shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: 32px;
+  max-width: 900px;
+}
+
+.institutional-faqs__intro {
+  text-align: center;
+}
+
+.institutional-faqs__intro p {
+  max-width: 600px;
+  margin: 16px auto 0;
+  color: var(--is-muted);
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.institutional-faqs__list {
+  min-width: 0;
+  overflow: visible;
+  border: 1px solid var(--is-line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.institutional-faqs__item + .institutional-faqs__item {
+  border-top: 1px solid var(--is-line);
+}
+
+.institutional-faqs__item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 68px;
+  padding: 20px 24px;
+  color: var(--is-ink);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  list-style: none;
+  cursor: pointer;
+}
+
+.institutional-faqs__item summary::-webkit-details-marker {
+  display: none;
+}
+
+.institutional-faqs__item summary:hover,
+.institutional-faqs__item[open] summary {
+  color: var(--is-indigo);
+  background: #f6f4fa;
+}
+
+.institutional-faqs__item:first-child summary {
+  border-radius: 13px 13px 0 0;
+}
+
+.institutional-faqs__item:last-child:not([open]) summary {
+  border-radius: 0 0 13px 13px;
+}
+
+.institutional-faqs__toggle {
+  position: relative;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #c9c1dd;
+  border-radius: 50%;
+}
+
+.institutional-faqs__toggle::before,
+.institutional-faqs__toggle::after {
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  width: 10px;
+  height: 2px;
+  background: var(--is-indigo);
+  content: "";
+}
+
+.institutional-faqs__toggle::after {
+  transform: rotate(90deg);
+}
+
+.institutional-faqs__item[open] .institutional-faqs__toggle::after {
+  display: none;
+}
+
+.institutional-faqs__answer {
+  padding: 0 24px 22px;
+  color: var(--is-muted);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.institutional-faqs__answer p {
+  margin: 0;
+  padding-top: 8px;
+}
+
+.institutional-faqs__anchor {
+  display: block;
+  height: 0;
+  scroll-margin-top: 115px;
+}
+
+.institutional-references {
+  padding: 36px 0 52px;
+  background: #fff;
+}
+
+.institutional-references h2 {
+  margin-bottom: 18px;
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: -.025em;
+}
+
+.institutional-references p,
+.institutional-references li {
+  max-width: 960px;
+  color: var(--is-muted);
+  font-size: 16px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.institutional-references ul {
+  padding-left: 20px;
+}
+
+.institutional-references li {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 900px) {
+  .institutional-links__grid {
+    gap: 14px;
+  }
+  .institutional-links__group {
+    padding: 22px 18px 12px;
+  }
+}
+
+@media (max-width: 680px) {
+  .institutional-links,
+  .institutional-faqs {
+    padding: 44px 0;
+  }
+  .institutional-links__shell,
+  .institutional-faqs__shell,
+  .institutional-references__shell {
+    width: calc(100% - 40px);
+  }
+  .institutional-links__grid,
+  .institutional-resources__grid,
+  .institutional-faqs__shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .institutional-links__group {
+    padding: 22px 20px 12px;
+  }
+  .institutional-resources {
+    margin-top: 32px;
+    padding-top: 28px;
+  }
+  .institutional-resources__grid a {
+    min-height: 86px;
+    padding: 20px;
+    gap: 18px;
+  }
+  .institutional-faqs__intro p {
+    max-width: none;
+  }
+  .institutional-faqs__item summary {
+    gap: 16px;
+    padding: 18px;
+    font-size: 17px;
+  }
+  .institutional-faqs__answer {
+    padding: 0 18px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .institutional-links a {
+    transition: none;
+  }
+}

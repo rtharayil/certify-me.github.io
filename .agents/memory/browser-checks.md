@@ -104,3 +104,9 @@ Test narrow desktop, touch emulation with the default user agent, and a real mob
 **Why:** The blog's scrolled previews stayed hidden with the default Chromium user agent but were visible with an iPhone user agent at the same width. Touch/viewport flags alone did not reproduce the mobile-browser behavior.
 
 **How to apply:** Do not use a passing mobile-user-agent run to dismiss a narrow-window visibility failure. Readability must work across all three profiles.
+
+Use the mockup artifact's actual managed port for local screenshots, and load copied native stylesheets as browser stylesheet links when extracting Jekyll pages.
+
+**Why:** The development-domain proxy routes `/__mockup/` correctly, but direct port-5000 screenshots reach Jekyll instead. Vite also interprets `/__mockup/` CSS imports as filesystem paths during transformation rather than public asset URLs.
+
+**How to apply:** Read the mockup workflow's open port before using the screenshot tool. Keep extracted native CSS as public files loaded with stylesheet links; isolate fonts and baseline tokens within the extracted group.
