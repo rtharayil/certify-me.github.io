@@ -30,3 +30,4 @@
 - [Infrastructure implementation positioning](infrastructure-implementation-positioning.md) — discovery-led custom and integration work must stay connected to the core six-layer architecture.
 - [EduTranscript source ownership](edutranscript-source-ownership.md) — the owner identifies EduTranscript as their product website; use its assets with current CertifyMe positioning.
 - [SkillStory source ownership](skillstory-source-ownership.md) — owner authorizes first-party product assets; ground Skill Passport in real visuals and institutional positioning.
+- [E-learning program positioning](elearning-positioning.md) — large-program operators first; connected achievement infrastructure around their existing LMS, not an LMS replacement.

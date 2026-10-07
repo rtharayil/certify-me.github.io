@@ -1,0 +1,12 @@
+<section class="el-section" id="faq" aria-labelledby="el-faq-title">
+  <div class="el-wrap">
+    <div class="el-kicker">Frequently asked</div>
+    <h2 id="el-faq-title">Questions from learning teams</h2>
+    {% for faq in page.faqs %}
+      <article class="el-faq">
+        <h3>{{ faq.question }}</h3>
+        <p>{{ faq.answer }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>

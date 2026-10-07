@@ -1,0 +1,631 @@
+You are rebuilding an existing page on the CertifyMe.online website.
+
+TARGET PAGE:
+
+https://www.certifyme.online/credentials-for-elearning-platforms
+
+Create a substantially better, modern, enterprise-grade version of this page.
+
+IMPORTANT:
+
+Do NOT simply redesign the existing page visually.
+
+Reposition and rebuild the page around CertifyMe's current six-layer architecture and the specific needs of large e-learning and learning-program organizations.
+
+The target audience is NOT generic learners.
+
+PRIMARY ICP:
+
+1. Program Managers
+2. Credential Managers
+3. Directors responsible for large learning programs
+4. Heads of Learning / Education Programs
+5. Learning Experience leaders
+6. Digital Learning leaders
+7. Certification / Credentialing leaders
+
+SECONDARY BUYERS:
+
+- CIO / CTO
+- Product leaders
+- LMS administrators
+- L&D leadership
+- Workforce development leaders
+- Continuing education leaders
+
+==================================================
+1. CRAWL THE EXISTING PAGE FIRST
+==================================================
+
+Before changing anything, fully inspect:
+
+https://www.certifyme.online/credentials-for-elearning-platforms
+
+Extract and understand:
+
+- existing copy
+- headings
+- CTAs
+- images
+- image URLs
+- videos
+- video URLs
+- testimonials
+- statistics
+- customer logos
+- G2 claims
+- integrations
+- FAQ content
+- metadata
+- structured data
+- internal links
+- navigation
+- footer
+- CSS
+- components
+- responsive behaviour
+
+The existing page currently focuses heavily on:
+
+- customized digital credentials
+- LMS integration
+- no-code certification
+- digital badges
+- social sharing
+- course value
+- brand reach
+
+Those concepts can remain, but they must be reframed within the newer CertifyMe architecture.
+
+DO NOT simply preserve the old page structure.
+
+==================================================
+2. CRAWL THE CURRENT CERTIFYME WEBSITE
+==================================================
+
+Analyse the current CertifyMe website comprehensively.
+
+At minimum inspect:
+
+https://www.certifyme.online/
+
+and the following relevant areas:
+
+- Digital Credential Infrastructure
+- Platform Overview
+- Higher Education
+- Enterprise
+- Certification Bodies
+- Training Providers
+- Integrations
+- API
+- Analytics
+- Security & Compliance
+- White Labeling
+- Learning Paths
+- Verification
+- Skill Taxonomy
+- Comprehensive Learner Record
+- Skill Passport
+- Workforce Intelligence
+- relevant blogs
+- relevant FAQs
+
+Pay particular attention to the current six-layer architecture.
+
+The current CertifyMe architecture is:
+
+01 — Credential Accessibility & Sharing
+02 — Standards & Interoperability
+03 — Verification & Trust
+04 — Skill Taxonomy Alignment
+05 — Comprehensive Learner Record
+06 — Workforce Intelligence & Opportunity
+
+The current CertifyMe digital infrastructure page describes these six layers as one connected architecture rather than six unrelated features.
+
+Preserve this conceptual architecture.
+
+==================================================
+3. IMPORTANT ICP SHIFT
+==================================================
+
+The page must be written specifically for people running LARGE learning programs.
+
+Do not write primarily for:
+
+- individual instructors
+- individual students
+- small course creators
+- casual certificate users
+
+Write for people responsible for:
+
+- hundreds or thousands of courses
+- thousands or millions of learners
+- multiple programs
+- multiple credential types
+- multiple business units
+- multiple LMS environments
+- credential governance
+- learner engagement
+- program outcomes
+- credential adoption
+- verification
+- skills mapping
+- reporting
+- integrations
+
+The buyer should immediately feel:
+
+"CertifyMe understands the complexity of running credentials at scale."
+
+==================================================
+4. CORE BUYER PROBLEM
+==================================================
+
+The page should start from this problem:
+
+Large learning programs already have an LMS.
+
+They already have courses.
+
+They already have learners.
+
+They already have completion data.
+
+But the achievement often stops at:
+
+"Course completed."
+
+The program needs to turn that completion into something more valuable:
+
+Learning
+↓
+Achievement
+↓
+Credential
+↓
+Verification
+↓
+Skills
+↓
+Learner Record
+↓
+Workforce Value
+
+The central message:
+
+CERTIFYME TURNS LEARNING COMPLETION INTO VERIFIED, MEASURABLE ACHIEVEMENT.
+
+==================================================
+5. NEW HERO
+==================================================
+
+Create a premium enterprise hero.
+
+H1:
+
+Turn Learning Programs Into Verifiable, Measurable Achievement
+
+Supporting headline:
+
+CertifyMe gives large e-learning and learning organizations the infrastructure to issue trusted credentials, connect achievements to skills, build learner records and measure the impact of their programs.
+
+Primary CTA:
+
+Request a Platform Demo
+
+Secondary CTA:
+
+See How It Works
+
+Supporting microcopy:
+
+Built for LMS-integrated learning programs at scale.
+
+Hero visual:
+
+Use the best REAL CertifyMe product / credential / LMS integration visual discovered during the crawl.
+
+Do NOT use generic stock photography.
+
+Do NOT create a fake AI dashboard.
+
+Prefer:
+
+- real credential interface
+- LMS integration flow
+- real credential dashboard
+- real learning path UI
+- real analytics
+- real verification UI
+
+==================================================
+6. HERO VISUAL STORY
+==================================================
+
+The hero visual should communicate:
+
+YOUR LMS
+
+Courses
+Assessments
+Completion
+Learner Data
+
+↓
+
+CERTIFYME
+
+Credential Engine
+
+↓
+
+VERIFIED ACHIEVEMENT
+
+Credential
+Skills
+Evidence
+Verification
+
+↓
+
+LEARNER
+
+Share
+Portfolio
+Skill Passport
+Career
+
+Keep the visual simple and enterprise-grade.
+
+==================================================
+7. THE BIG IDEA
+==================================================
+
+Immediately after the hero:
+
+H2:
+
+Your LMS Knows What Learners Completed.
+CertifyMe Makes That Achievement Valuable.
+
+Explain:
+
+An LMS is excellent at managing learning.
+
+But learning completion is not the same as a portable, trusted achievement.
+
+CertifyMe adds the credential and achievement infrastructure around the learning platform.
+
+Show:
+
+LMS
+
+"Course completed"
+
+↓
+
+CertifyMe
+
+"What was achieved?"
+
+↓
+
+Credential
+
+"Who issued it?"
+
+↓
+
+Verification
+
+"Can it be trusted?"
+
+↓
+
+Skills
+
+"What capability does it represent?"
+
+↓
+
+Learner Record
+
+"What else has this learner achieved?"
+
+↓
+
+Workforce
+
+"Where can those capabilities create value?"
+
+==================================================
+8. SIX-LAYER ARCHITECTURE
+==================================================
+
+This MUST be the central architecture of the page.
+
+Create a visually strong six-layer section.
+
+H2:
+
+One Learning Achievement. Six Layers of Value.
+
+01
+
+ACCESS & SHARING
+
+Make every achievement accessible, branded and ready to share.
+
+Capabilities:
+
+- digital credentials
+- branded credential pages
+- unique URLs
+- QR access
+- credential PDFs
+- learner sharing
+- custom domains
+- white-label experience
+
+02
+
+STANDARDS & INTEROPERABILITY
+
+Make credentials portable beyond your learning platform.
+
+Capabilities:
+
+- Open Badges 3.0
+- W3C Verifiable Credentials
+- CLR
+- LMS integrations
+- APIs
+- webhooks
+
+Do not overclaim interoperability.
+
+Explain that standards enable compatible ecosystems to consume and verify credential data.
+
+03
+
+VERIFICATION & TRUST
+
+Make achievements independently verifiable.
+
+Capabilities:
+
+- issuer identity
+- credential integrity
+- verification pages
+- credential status
+- lifecycle management
+- revocation where supported
+- cryptographic verification mechanisms
+
+04
+
+SKILL TAXONOMY ALIGNMENT
+
+Turn course completion into structured capability.
+
+Show:
+
+Course
+↓
+Learning Outcome
+↓
+Skill
+↓
+Taxonomy
+↓
+Credential
+
+Where supported, discuss:
+
+- ESCO
+- O*NET
+- institution-defined skill frameworks
+- custom competency models
+
+The institution/program remains responsible for determining what learning outcomes and achievements represent.
+
+05
+
+COMPREHENSIVE LEARNER RECORD
+
+Connect achievements across the learner journey.
+
+Include:
+
+- credentials
+- certificates
+- badges
+- skills
+- competencies
+- projects
+- experiences
+- assessments
+- professional learning
+
+Show:
+
+One course
+↓
+One credential
+
+Multiple credentials
+↓
+Learner record
+
+06
+
+WORKFORCE INTELLIGENCE & OPPORTUNITY
+
+Connect verified skills to real-world context.
+
+Show:
+
+Verified skills
+↓
+Occupation
+↓
+Employer
+↓
+Job
+↓
+Opportunity
+
+Explain that this helps learning organizations demonstrate the relevance and outcomes of their programs.
+
+==================================================
+9. PROGRAM MANAGER SECTION
+==================================================
+
+Create a section specifically for Program Managers.
+
+H2:
+
+For Program Managers: Turn Credentialing Into a Program Strategy
+
+Address:
+
+- credential strategy
+- multiple programs
+- credential pathways
+- completion-to-credential workflows
+- learner engagement
+- program analytics
+- credential adoption
+- branded experiences
+- outcome measurement
+
+Create a visual:
+
+PROGRAM
+
+Courses
+Assessments
+Learning paths
+
+↓
+
+CREDENTIAL STRATEGY
+
+Certificate
+Badge
+Micro-credential
+Milestone
+
+↓
+
+LEARNER OUTCOME
+
+Achievement
+Skills
+Record
+Opportunity
+
+==================================================
+10. CREDENTIAL MANAGER SECTION
+==================================================
+
+H2:
+
+For Credential Managers: Govern Every Credential at Scale
+
+Focus on:
+
+- credential templates
+- issuer controls
+- role-based administration
+- approval workflows
+- bulk issuance
+- API issuance
+- credential lifecycle
+- verification
+- revocation where supported
+- branding
+- credential status
+- reporting
+
+The message should be:
+
+"Manage thousands of credentials without turning credential operations into a manual process."
+
+==================================================
+11. DIRECTOR / LEARNING LEADER SECTION
+==================================================
+
+H2:
+
+For Learning Directors: Prove the Value of Your Programs
+
+Focus on:
+
+- credential adoption
+- learner engagement
+- credential sharing
+- verification
+- skills earned
+- learning pathways
+- program performance
+- workforce relevance
+
+Show the progression:
+
+Learning Activity
+
+↓
+
+Achievement
+
+↓
+
+Credential
+
+↓
+
+Skills
+
+↓
+
+Learner Outcomes
+
+↓
+
+Program Intelligence
+
+The Director should see CertifyMe as an outcome layer, not simply a certificate generator.
+
+==================================================
+12. LMS INTEGRATION
+==================================================
+
+H2:
+
+Keep Your LMS. Add a Credential Intelligence Layer.
+
+This is extremely important.
+
+DO NOT position CertifyMe as requiring the organization to replace its LMS.
+
+Show:
+
+Canvas
+Moodle
+Blackboard
+Other LMS
+Internal LMS
+Training Platform
+Assessment Platform
+
+↓
+
+CERTIFYME
+
+Credential Engine
+
+↓
