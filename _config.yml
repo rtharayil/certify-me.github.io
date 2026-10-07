@@ -12,6 +12,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - docs/skillstory-assets.md
+  - docs/edutranscript-assets.md
 
 collections:
     devopsma:

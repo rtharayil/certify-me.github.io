@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }}</title>
+  <link rel="canonical" href="{{ page.destination | absolute_url }}">
+  <meta http-equiv="refresh" content="0;url={{ page.destination | escape }}">
+</head>
+<body>
+  <p>Continue to <a href="{{ page.destination | relative_url }}">{{ page.title | escape }}</a>.</p>
+</body>
+</html>

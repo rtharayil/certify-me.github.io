@@ -1,0 +1,1543 @@
+You are working on the CertifyMe website.
+
+CREATE A NEW, PRODUCTION-QUALITY SOLUTION PAGE FOR:
+
+/solutions/transcript-management
+
+The purpose of this page is to position CertifyMe's transcript management capability, powered by EduTranscript, as a modern institutional academic-record infrastructure layer for universities.
+
+IMPORTANT:
+
+DO NOT create a generic transcript-management landing page.
+
+DO NOT simply copy EduTranscript.com.
+
+DO NOT create an abstract page with generic illustrations.
+
+DO NOT invent new product capabilities.
+
+DO NOT replace existing CertifyMe design patterns.
+
+FIRST, ACTUALLY ANALYZE THE EXISTING EDUTRANSCRIPT WEBSITE AND THEN BUILD THE PAGE.
+
+SOURCE WEBSITE:
+
+https://www.edutranscript.com/
+
+============================================================
+PHASE 1 — CRAWL AND ANALYZE EDUTRANSCRIPT.COM
+============================================================
+
+Before writing or coding the page, crawl the EduTranscript website.
+
+At minimum inspect:
+
+https://www.edutranscript.com/
+https://www.edutranscript.com/universities.html
+https://www.edutranscript.com/alumni.html
+https://www.edutranscript.com/fraud-prevention.html
+https://www.edutranscript.com/security-and-compliance.html
+https://www.edutranscript.com/about-us
+https://www.edutranscript.com/w3c-credentialing-partner-for-higher-education.html
+https://www.edutranscript.com/open-badge-credentialing-partner-for-higher-education.html
+
+Also inspect the navigation and discover other relevant EduTranscript pages covering:
+
+- transcript management
+- transcript requests
+- transcript verification
+- student workflows
+- alumni workflows
+- SIS integration
+- API
+- transcript security
+- fraud prevention
+- digital signatures
+- ID tagging
+- OTP verification
+- Open Badges
+- W3C Verifiable Credentials
+- privacy
+- compliance
+- transcript exchange
+- case studies
+- tutorials
+- product screenshots
+- product videos
+- transcript templates
+- dashboards
+- registrar workflows
+
+Do not stop after reading the homepage.
+
+Build an actual understanding of the product.
+
+============================================================
+PHASE 2 — CREATE AN EDUTRANSCRIPT PRODUCT MAP
+============================================================
+
+Before implementing the page, internally classify the EduTranscript capabilities into these areas:
+
+A. TRANSCRIPT REQUEST MANAGEMENT
+
+B. REGISTRAR WORKFLOW
+
+C. STUDENT / ALUMNI SELF-SERVICE
+
+D. TRANSCRIPT CREATION
+
+E. TRANSCRIPT DELIVERY
+
+F. TRANSCRIPT VERIFICATION
+
+G. FRAUD PREVENTION
+
+H. ID-BASED VERIFICATION
+
+I. OTP VERIFICATION
+
+J. CRYPTOGRAPHIC DIGITAL SIGNATURES
+
+K. AUDIT / CHANGE DETECTION
+
+L. SIS INTEGRATION
+
+M. API / AUTOMATION
+
+N. SECURITY & PRIVACY
+
+O. COMPLIANCE
+
+P. ALUMNI ACCESS
+
+Q. TRANSCRIPT EXCHANGE
+
+R. OPEN BADGES / VERIFIABLE CREDENTIALS
+
+S. DIGITAL / VERIFIABLE ACADEMIC RECORD
+
+T. FUTURE EXTENSION INTO SKILLS / LEARNER RECORD
+
+Use only capabilities actually supported by the source website.
+
+============================================================
+PHASE 3 — IDENTIFY AND REUSE REAL EDUTRANSCRIPT ASSETS
+============================================================
+
+THIS IS MANDATORY.
+
+Do not create artificial UI screenshots when EduTranscript already has the relevant visual.
+
+Inspect the actual HTML, CSS and image assets used by EduTranscript.
+
+Create an asset inventory.
+
+Identify actual images/screenshots for:
+
+- transcript dashboard
+- transcript request
+- transcript processing
+- registrar workflow
+- transcript verification
+- student portal
+- alumni portal
+- transcript document
+- digital signature
+- ID tagging
+- OTP verification
+- verification portal
+- SIS integration
+- API integration
+- security
+- compliance
+- transcript exchange
+- alumni access
+- transcript status
+- transcript delivery
+- product dashboard
+- mobile interface
+- Open Badges
+- W3C credentials
+- case studies
+- tutorials
+
+For every useful asset identify:
+
+- original URL
+- filename
+- dimensions
+- page where it appears
+- intended purpose
+- whether it can be reused
+- whether it should be cropped
+- whether it should be resized
+- whether it should be used as a product screenshot
+
+Prioritize ACTUAL PRODUCT SCREENSHOTS.
+
+Do not replace real product UI with AI-generated illustrations.
+
+If the asset is part of the same Tech99 / CertifyMe / EduTranscript product ecosystem, reuse it appropriately.
+
+The new page is a CertifyMe page, so adapt the presentation to CertifyMe branding.
+
+Do NOT falsely present a screenshot as something that does not exist.
+
+============================================================
+PHASE 4 — CREATE AN ASSET INVENTORY FILE
+============================================================
+
+Create:
+
+/docs/edutranscript-assets.md
+
+Include:
+
+Asset
+Original URL
+Section
+Purpose
+Reuse Method
+Notes
+
+This is required.
+
+============================================================
+PHASE 5 — CORE CERTIFYME POSITIONING
+============================================================
+
+This is a CERTIFYME solution page.
+
+It belongs under:
+
+CERTIFYME
+→ SOLUTIONS
+→ TRANSCRIPT MANAGEMENT
+
+The page should explain:
+
+"How does CertifyMe modernize the university transcript lifecycle?"
+
+The core architecture is:
+
+STUDENT INFORMATION SYSTEM
+↓
+TRANSCRIPT MANAGEMENT
+↓
+VERIFIED ACADEMIC RECORD
+↓
+DIGITAL TRANSCRIPT
+↓
+VERIFICATION
+↓
+COMPREHENSIVE LEARNER RECORD
+↓
+SKILLS
+↓
+WORKFORCE INTELLIGENCE
+
+The page should make one critical distinction:
+
+A transcript is not merely a PDF.
+
+It is an authoritative academic record.
+
+CertifyMe provides infrastructure to make that record:
+
+- easier to request
+- easier to process
+- easier to deliver
+- easier to verify
+- harder to forge
+- easier for students and alumni to access
+- interoperable with modern credential ecosystems
+- capable of becoming part of a broader learner record
+
+============================================================
+PHASE 6 — TARGET AUDIENCE
+============================================================
+
+Design and write for:
+
+- Registrar
+- CIO / IT Director
+- University Secretary
+- Academic Administration
+- Student Services
+- Admissions
+- Alumni Services
+- Digital Transformation Leaders
+- Provost / Academic Leadership
+- University Executive Leadership
+
+Secondary audience:
+
+- Employers
+- Credential evaluators
+- Partner institutions
+- Government agencies
+- Professional bodies
+
+This is NOT a student-only product page.
+
+The student experience is important, but the institutional buyer is the primary audience.
+
+============================================================
+PHASE 7 — HERO
+============================================================
+
+Create a premium enterprise hero.
+
+EYEBROW:
+
+TRANSCRIPT MANAGEMENT
+
+HEADLINE:
+
+Turn the university transcript into a secure, verifiable digital academic record.
+
+Alternative headline for testing:
+
+Modern transcript management for the modern university.
+
+Supporting copy:
+
+"CertifyMe helps universities automate transcript workflows, give students and alumni secure access to their academic records, integrate with existing student information systems, and issue transcripts that can be independently verified."
+
+Primary CTA:
+
+Request a Platform Demo
+
+Secondary CTA:
+
+See How It Works
+
+HERO VISUAL:
+
+Use the strongest actual EduTranscript product visual.
+
+Prefer:
+
+Transcript
++
+Registrar workflow
++
+Verification portal
+
+over generic student photography.
+
+If appropriate, create a composed visual:
+
+SIS
+↓
+EduTranscript / CertifyMe
+↓
+Transcript
+↓
+Student / Alumni
+↓
+Verifier
+
+Do not invent UI that is not present in the source product.
+
+============================================================
+PHASE 8 — THE PROBLEM
+============================================================
+
+Headline:
+
+The transcript is one of the university's most important records. Managing it should not depend on manual workflows.
+
+Explain the institutional problem.
+
+Traditional transcript processes can involve:
+
+- manual requests
+- email follow-ups
+- staff intervention
+- document preparation
+- printing
+- scanning
+- postage
+- repeated verification requests
+- fraud checks
+- student status enquiries
+- fragmented systems
+
+This creates pressure on registrar and student-service teams.
+
+Students and alumni may also need transcripts at critical moments:
+
+- graduate admissions
+- employment
+- professional licensing
+- immigration
+- international study
+- credential evaluation
+
+The page should establish:
+
+"The transcript request is not an isolated administrative transaction. It is part of the student's academic and professional journey."
+
+============================================================
+PHASE 9 — END-TO-END TRANSCRIPT WORKFLOW
+============================================================
+
+Headline:
+
+One workflow from request to verified transcript.
+
+Create a visual workflow:
+
+1
+REQUEST
+
+Student / Alumni submits request
+
+↓
+
+2
+AUTHENTICATE
+
+Identity / eligibility checks
+
+↓
+
+3
+PROCESS
+
+Registrar reviews request
+
+↓
+
+4
+GENERATE
+
+Transcript is prepared from institutional data
+
+↓
+
+5
+SIGN
+
+Transcript receives appropriate digital security / signature
+
+↓
+
+6
+DELIVER
+
+Student / recipient receives transcript
+
+↓
+
+7
+VERIFY
+
+Employer / university / evaluator verifies authenticity
+
+The exact workflow should reflect what EduTranscript actually supports.
+
+Do not invent steps that are not supported.
+
+============================================================
+PHASE 10 — REGISTRAR WORKFLOW
+============================================================
+
+Headline:
+
+Give the Registrar one place to manage transcript requests.
+
+Use actual EduTranscript screenshots.
+
+Show:
+
+Incoming requests
+↓
+Review
+↓
+Approve
+↓
+Process
+↓
+Dispatch
+↓
+Status
+
+Explain that a centralized workflow can reduce manual coordination and provide visibility into requests.
+
+Include:
+
+- request queue
+- status
+- student information
+- request details
+- processing state
+- delivery state
+
+Use actual screenshots wherever available.
+
+============================================================
+PHASE 11 — STUDENT AND ALUMNI SELF-SERVICE
+============================================================
+
+Headline:
+
+Let students and alumni manage their transcript requests without unnecessary registrar intervention.
+
+Use the real EduTranscript student/alumni visuals.
+
+Show:
+
+REQUEST
+↓
+TRACK
+↓
+RECEIVE
+↓
+ACCESS
+↓
+SHARE / VERIFY
+
+Explain:
+
+Students and alumni should be able to:
+
+- request transcripts
+- track request status
+- receive notifications
+- access records
+- retrieve records later
+- securely share transcripts
+
+Use actual product capabilities from the source website.
+
+Do not invent additional student functionality.
+
+============================================================
+PHASE 12 — TRANSCRIPT ACCESS
+============================================================
+
+Headline:
+
+Academic records should be available when the learner needs them.
+
+Explain:
+
+Students and alumni may need transcripts years after graduation.
+
+A digital transcript infrastructure should provide persistent, secure access rather than requiring alumni to repeatedly contact the Registrar.
+
+Show:
+
+STUDENT
+→
+GRADUATE
+→
+ALUMNI
+→
+PROFESSIONAL
+
+and:
+
+ONE RECORD
+→
+AVAILABLE WHEN NEEDED
+
+Use the actual EduTranscript alumni/access visual.
+
+============================================================
+PHASE 13 — SECURITY AND FRAUD PREVENTION
+============================================================
+
+This should be one of the strongest sections.
+
+Headline:
+
+A transcript is valuable because the institution stands behind it.
+
+Explain the fraud problem without using exaggerated language.
+
+Then introduce the security architecture.
+
+Show:
+
+INSTITUTION
+↓
+ACADEMIC RECORD
+↓
+DIGITAL TRANSCRIPT
+↓
+SECURITY / SIGNATURE
+↓
+VERIFIER
+
+============================================================
+PHASE 14 — ID-BASED TAGGING
+============================================================
+
+Headline:
+
+Bind the transcript to the right person.
+
+EduTranscript currently describes ID-based tagging using primary identifiers such as passports or other supported identity references.
+
+Explain:
+
+Transcript
+↓
+Primary Identifier
+↓
+Recipient
+
+The purpose is to strengthen the association between:
+
+WHO THE RECORD BELONGS TO
+
+and
+
+THE RECORD ITSELF.
+
+Do not expose real identifiers.
+
+Use fictional examples.
+
+IMPORTANT:
+
+Do not claim ID tagging alone proves every aspect of transcript authenticity.
+
+Explain it as a recipient-identity layer.
+
+============================================================
+PHASE 15 — OTP VERIFICATION
+============================================================
+
+Headline:
+
+Add recipient-controlled verification when it matters.
+
+Show:
+
+Verifier / Requester
+↓
+OTP
+↓
+Student / Alumni
+↓
+Consent / Authentication
+↓
+Transcript Access
+
+Explain that OTP can add a layer of recipient-controlled access and authentication.
+
+Use the actual EduTranscript workflow where supported.
+
+============================================================
+PHASE 16 — CRYPTOGRAPHIC DIGITAL SIGNATURES
+============================================================
+
+Headline:
+
+Make transcript tampering detectable.
+
+This needs a strong technical visual.
+
+Show:
+
+ORIGINAL TRANSCRIPT
+
+↓
+
+CRYPTOGRAPHIC SIGNATURE
+
+↓
+
+ISSUED DOCUMENT
+
+↓
+
+VERIFIER
+
+↓
+
+SIGNATURE CHECK
+
+Then:
+
+MATCH
+Authentic / unchanged
+
+or
+
+MISMATCH
+Document altered
+
+Explain the important distinction:
+
+A digital signature provides integrity/authenticity evidence for the signed document.
+
+It does not by itself establish every aspect of recipient identity.
+
+This distinction must remain technically accurate.
+
+Use actual EduTranscript screenshots of signed transcript verification if available.
+
+============================================================
+PHASE 17 — VERIFICATION PORTAL
+============================================================
+
+Headline:
+
+Let employers and institutions verify transcripts without calling the Registrar.
+
+Use the actual EduTranscript verification portal visual.
+
+Show:
+
+UPLOAD / ENTER VERIFICATION INFORMATION
+
+↓
+
+VERIFY
+
+↓
+
+RESULT
+
+Then display the three questions:
+
+WHO ISSUED IT?
+
+WHO WAS IT ISSUED TO?
+
+HAS IT BEEN ALTERED?
+
+This is a particularly important CertifyMe trust narrative.
+
+Make the verification experience feel simple.
+
+============================================================
+PHASE 18 — VERIFICATION MATRIX
+============================================================
+
+Create a technical but easy-to-understand table.
+
+METHOD
+PRIMARY PURPOSE
+
+Credential ID / Verification Code
+Find the institutional record
+
+QR / Link
+Access verification experience
+
+ID-Based Tagging
+Recipient identity association
+
+OTP
+Recipient authentication / controlled access
+
+Cryptographic Signature
+Document integrity / issuer authenticity
+
+Verification Portal
+Third-party validation
+
+Signed Open Badge / VC where applicable
+Structured credential verification
+
+IMPORTANT:
+
+Do not imply all methods are mandatory for every transcript.
+
+Explain that the appropriate verification model depends on institutional requirements.
+
+============================================================
+PHASE 19 — SIS INTEGRATION
+============================================================
+
+Headline:
+
+Keep the university's source system. Modernize what happens around it.
+
+This is strategically important.
+
+Do NOT position CertifyMe as replacing the SIS.
+
+Show:
+
+UNIVERSITY SIS
+
+Student
+Course
+Grades
+Credits
+Academic history
+
+↓
+
+CERTIFYME / EDUTRANSCRIPT
+
+Transcript Management
+
+↓
+
+Digital Transcript
+Verification
+Delivery
+
+The source website describes REST API-based integration with university SIS systems.
+
+Use that capability.
+
+Show a realistic integration diagram.
+
+============================================================
+PHASE 20 — API / AUTOMATION
+============================================================
+
+Headline:
+
+Turn transcript processing into a system workflow.
+
+Show:
+
+SIS
+↓
+REST API
+↓
+CERTIFYME
+↓
+Transcript Workflow
+↓
+Delivery
+↓
+Verification
+
+Explain:
+
+When academic data is available in the institutional system, the transcript workflow can be connected through APIs rather than relying on manual re-entry.
+
+Do not invent endpoint names.
+
+Do not invent integration vendors.
+
+Use "REST API" where supported by the source website.
+
+============================================================
+PHASE 21 — TRANSCRIPT EXCHANGE
+============================================================
+
+Headline:
+
+Move academic records between institutions with less friction.
+
+Use the existing EduTranscript alumni / exchange visuals.
+
+Show:
+
+INSTITUTION A
+
+↓
+
+VERIFIED TRANSCRIPT
+
+↓
+
+INSTITUTION B
+
+Use cases:
+
+- university admissions
+- transfer
+- graduate education
+- employment
+- credential evaluation
+
+Explain that verification should remain tied to institutional provenance.
+
+============================================================
+PHASE 22 — ALUMNI
+============================================================
+
+Headline:
+
+The Registrar's relationship with the learner does not end at graduation.
+
+This should be a strong institutional section.
+
+Show:
+
+CURRENT STUDENT
+↓
+GRADUATE
+↓
+ALUMNI
+↓
+CAREER
+↓
+FURTHER EDUCATION
+
+Explain:
+
+Transcript infrastructure should continue serving alumni years after graduation.
+
+Use:
+
+- secure access
+- request tracking
+- transcript retrieval
+- verification
+- sharing
+
+Use the actual EduTranscript alumni visuals.
+
+============================================================
+PHASE 23 — SECURITY, PRIVACY AND COMPLIANCE
+============================================================
+
+Headline:
+
+Academic records require institutional-grade protection.
+
+Use the actual EduTranscript security page as the source.
+
+Cover only claims actually supported by the source.
+
+Potential areas from the source include:
+
+- student data protection
+- secure transcript management
+- backups
+- recovery
+- privacy
+- GDPR
+- FERPA
+- COPPA
+- SOC 2 Type II
+- ISO 27001
+- ISO 27701
+
+IMPORTANT:
+
+Do not casually say:
+
+"Fully compliant with every regulation."
+
+Instead use precise language:
+
+"Designed to support institutional privacy and compliance requirements including..."
+
+If a certification claim is shown on the source website, preserve the exact scope and wording rather than expanding it.
+
+============================================================
+PHASE 24 — OPEN BADGES AND W3C
+============================================================
+
+Headline:
+
+A transcript can become part of the modern credential ecosystem.
+
+Do NOT turn this into another full standards page.
+
+Explain the connection:
+
+Traditional transcript
+↓
+Digital Transcript
+↓
+Verifiable Credential
+↓
+Learner Record
+↓
+Skill Passport
+
+Discuss:
+
+Open Badges 3.0
+
+W3C Verifiable Credentials
+
+Explain why standards matter:
+
+- structured data
+- interoperability
+- portability
+- machine-readable credentials
+- independent verification
+
+Use the actual EduTranscript standards visuals where available.
+
+Link to:
+
+/solutions/digital-credential-infrastructure
+
+============================================================
+PHASE 25 — TRANSCRIPT → LEARNER RECORD
+============================================================
+
+This is where the page should connect to the broader CertifyMe story.
+
+Headline:
+
+The transcript is one layer of the learner record.
+
+Show:
+
+TRANSCRIPT
+
+Courses
+Grades
+Credits
+Academic History
+
++
+
+DIGITAL CREDENTIALS
+
+Certificates
+Badges
+Achievements
+
++
+
+SKILLS
+
+Skills
+Competencies
+
++
+
+EXPERIENCES
+
+Projects
+Internships
+Activities
+
+↓
+
+COMPREHENSIVE LEARNER RECORD
+
+Do not suggest that a transcript itself contains every one of these things.
+
+Explain:
+
+"The transcript remains the authoritative academic record. CertifyMe can connect it with other verified achievements and skills to create a broader learner record."
+
+Link to:
+
+/solutions/comprehensive-learner-record
+
+============================================================
+PHASE 26 — TRANSCRIPT → SKILLS
+============================================================
+
+Headline:
+
+Academic records describe what was studied. Skills help describe what was developed.
+
+Connect transcript information to the CertifyMe Skills Taxonomy layer.
+
+Show:
+
+Course
+↓
+Learning Outcome
+↓
+Skill
+↓
+Taxonomy
+↓
+Learner Record
+
+Mention:
+
+ESCO
+O*NET
+Institutional Skill Frameworks
+
+Only where supported by the broader CertifyMe platform.
+
+Do not automatically infer skills from arbitrary grades or courses.
+
+Explain that institutional mapping / configuration determines the relationship.
+
+Link to:
+
+/solutions/skills-taxonomy-mapping
+
+============================================================
+PHASE 27 — TRANSCRIPT → WORKFORCE INTELLIGENCE
+============================================================
+
+Headline:
+
+Connect academic achievement with the world beyond the university.
+
+Introduce the broader CertifyMe architecture.
+
+Show:
+
+ACADEMIC RECORD
+↓
+CREDENTIALS
+↓
+SKILLS
+↓
+LEARNER RECORD
+↓
+WORKFORCE INTELLIGENCE
+
+Then:
+
+JOB ENGINE
+
+Occupations
+Jobs
+Employers
+Locations
+Skill Demand
+
+The purpose is NOT to turn EduTranscript into a job board.
+
+The purpose is to show the strategic evolution:
+
+Academic record
+→
+Verified skills
+→
+Workforce context
+
+Link to the broader CertifyMe workforce intelligence solution.
+
+============================================================
+PHASE 28 — THE SIX-LAYER CERTIFYME ARCHITECTURE
+============================================================
+
+Show where Transcript Management fits.
+
+01
+PRESENTATION & ACCESS
+
+Transcript and credential access
+
+↓
+
+02
+STANDARDS & INTEROPERABILITY
+
+Open standards
+
+↓
+
+03
+VERIFICATION & TRUST
+
+Identity + signatures + verification
+
+↓
+
+04
+SKILL TAXONOMY ALIGNMENT
+
+Academic achievements → skills
+
+↓
+
+05
+COMPREHENSIVE LEARNER RECORD
+
+Transcript + credentials + experiences
+
+↓
+
+06
+WORKFORCE INTELLIGENCE & OPPORTUNITY
+
+Skills → workforce context
+
+Highlight the first three layers as the core transcript infrastructure.
+
+============================================================
+PHASE 29 — BEFORE / AFTER
+============================================================
+
+Create a powerful comparison.
+
+BEFORE:
+
+Student requests transcript
+↓
+Manual processing
+↓
+Email / PDF
+↓
+Registrar follow-up
+↓
+Manual verification
+↓
+Paper / digital document
+↓
+Record remains isolated
+
+AFTER:
+
+Student / Alumni
+↓
+Digital request
+↓
+Automated workflow
+↓
+Institutional approval
+↓
+Secure transcript
+↓
+Digital verification
+↓
+Learner record
+↓
+Skills / Workforce context
+
+Make the transformation visual.
+
+============================================================
+PHASE 30 — INSTITUTIONAL VALUE
+============================================================
+
+Headline:
+
+What modern transcript infrastructure changes for the university.
+
+Create five institutional outcomes.
+
+01
+FOR THE REGISTRAR
+
+Less manual processing
+Centralized workflow
+Request visibility
+Verification support
+
+02
+FOR IT
+
+SIS integration
+REST APIs
+Standards
+Secure architecture
+
+03
+FOR STUDENTS AND ALUMNI
+
+Self-service
+Faster access
+Request tracking
+Secure sharing
+
+04
+FOR EMPLOYERS AND INSTITUTIONS
+
+Independent verification
+Clear provenance
+Reduced manual confirmation
+
+05
+FOR UNIVERSITY LEADERSHIP
+
+Lower administrative friction
+Better student experience
+Stronger academic-record integrity
+Foundation for modern learner records
+
+============================================================
+PHASE 31 — PRODUCT VISUALS
+============================================================
+
+Use real EduTranscript product visuals wherever possible.
+
+Priority order:
+
+1. Transcript dashboard
+2. Registrar request workflow
+3. Transcript verification portal
+4. Student/alumni portal
+5. Transcript document
+6. Digital signature verification
+7. ID tagging
+8. OTP
+9. SIS integration
+10. Transcript exchange
+11. Alumni access
+12. Security/compliance
+13. Open Badge / W3C
+14. Learner record connection
+
+Do NOT use generic stock images when a real product screenshot exists.
+
+============================================================
+PHASE 32 — CONTENT RULES
+============================================================
+
+This page must remain a CertifyMe page.
+
+Use EduTranscript as the source for understanding the transcript product.
+
+Do not make unsupported claims.
+
+Do not invent:
+
+- university customers
+- integrations
+- certifications
+- statistics
+- processing-time improvements
+- cost savings
+- fraud reduction percentages
+- API functionality
+- security mechanisms
+
+IMPORTANT:
+
+EduTranscript's current pages contain inconsistent numerical claims.
+
+Do NOT automatically copy statistics such as institution counts, transcript volumes or user counts from one page.
+
+If a number is not necessary, omit it.
+
+If a number is used, use only a clearly authoritative/current CertifyMe-approved claim.
+
+Do not reproduce conflicting figures from different EduTranscript pages.
+
+============================================================
+PHASE 33 — BRANDING
+============================================================
+
+This is a CERTIFYME SOLUTIONS page.
+
+Use:
+
+CertifyMe logo
+CertifyMe typography
+CertifyMe navigation
+CertifyMe footer
+CertifyMe CTA styles
+#4F46E5
+
+EduTranscript should be introduced as:
+
+"CertifyMe's transcript management solution"
+
+or
+
+"EduTranscript by CertifyMe"
+
+where appropriate.
+
+Do not make the page visually dependent on EduTranscript branding.
+
+The message should be:
+
+CERTIFYME
+Digital Credential Infrastructure
+
+→
+TRANSCRIPT MANAGEMENT
+EduTranscript
+
+============================================================
+PHASE 34 — SEO
+============================================================
+
+Primary keyword:
+
+transcript management
+
+Secondary keywords:
+
+transcript management system
+transcript management software
+digital transcript management
+digital transcript platform
+university transcript management
+academic transcript management
+verifiable transcripts
+digital transcripts for universities
+transcript verification
+secure transcript management
+student transcript portal
+alumni transcript management
+transcript automation
+transcript SIS integration
+electronic transcript management
+
+Suggested title:
+
+Transcript Management for Universities | EduTranscript by CertifyMe
+
+Suggested meta description:
+
+"Modernize university transcript management with CertifyMe. Automate transcript workflows, integrate with your SIS, provide secure student and alumni access, and enable verifiable digital transcripts."
+
+============================================================
+PHASE 35 — INTERNAL LINKING
+============================================================
+
+Link naturally to:
+
+/solutions/digital-credential-infrastructure
+
+/solutions/skill-passport
+
+/solutions/comprehensive-learner-record
+
+/solutions/skills-taxonomy-mapping
+
+Relevant verification pages
+
+Relevant digital credential pages
+
+Do not keyword-stuff links.
+
+============================================================
+PHASE 36 — DESIGN
+============================================================
+
+The page must feel:
+
+Institutional
+Secure
+Authoritative
+Modern
+Technical
+Trustworthy
+
+Avoid:
+
+- childish education graphics
+- generic university stock photography
+- excessive blue blocks
+- excessive rounded cards
+- AI-generated 3D graphics
+- generic cybersecurity imagery
+- decorative locks everywhere
+
+Use actual product interfaces.
+
+Use architecture diagrams.
+
+Use realistic transcript documents.
+
+Use subtle document / data / verification motifs.
+
+============================================================
+PHASE 37 — PAGE STRUCTURE
+============================================================
+
+Final page order:
+
+1. Hero
+2. Problem
+3. End-to-end workflow
+4. Registrar workflow
+5. Student / alumni self-service
+6. Secure transcript access
+7. Security and fraud prevention
+8. ID-based tagging
+9. OTP verification
+10. Cryptographic signatures
+11. Verification portal
+12. Verification matrix
+13. SIS integration
+14. API automation
+15. Transcript exchange
+16. Alumni lifecycle
+17. Security / privacy / compliance
+18. Open Badges / W3C
+19. Transcript → Learner Record
+20. Transcript → Skills
+21. Transcript → Workforce Intelligence
+22. Six-layer CertifyMe architecture
+23. Before / After
+24. Institutional value
+25. Final CTA
+
+============================================================
+PHASE 38 — FINAL CTA
+============================================================
+
+Headline:
+
+Modernize the academic record without replacing the systems that already run your university.
+
+Copy:
+
+"CertifyMe brings transcript requests, processing, delivery and verification into a modern digital workflow—while creating a foundation for secure, interoperable learner records."
+
+Primary CTA:
+
+Request a Platform Demo
+
+Secondary CTA:
+
+Explore Digital Credential Infrastructure
+
+============================================================
+PHASE 39 — FINAL QUALITY CHECK
+============================================================
+
+Before declaring the page complete:
+
+1. Crawl EduTranscript again.
+2. Verify all relevant product capabilities.
+3. Verify all reused images.
+4. Verify image URLs.
+5. Verify image dimensions.
+6. Verify screenshots are not distorted.
+7. Verify all internal links.
+8. Verify all CTAs.
+9. Verify mobile layout.
+10. Verify tablet layout.
+11. Verify desktop layout.
+12. Verify accessibility.
+13. Verify SEO metadata.
+14. Verify H1/H2/H3 structure.
+15. Verify no horizontal overflow.
+16. Verify no unsupported claims.
+17. Verify no conflicting statistics were copied.
+18. Verify the page is clearly B2B/institutional.
+19. Verify that the transcript remains positioned as an authoritative academic record.
+20. Verify that the page naturally connects transcript management to the broader CertifyMe credential infrastructure.
+
+FINAL TEST:
+
+Ask:
+
+"If I am a university Registrar, CIO, Provost or Vice Chancellor, do I immediately understand how CertifyMe can modernize transcript management without forcing me to replace my core student information system?"
+
+The answer must be YES.
+
+Then ask:
+
+"Do I understand that this is more than digitizing a PDF?"
+
+The answer must also be YES.
+
+The page should communicate:
+
+A transcript is an authoritative academic record.
+
+CertifyMe makes the transcript easier to request, process, deliver and verify.
+
+Security mechanisms establish trust in the record.
+
+Open standards make the record more interoperable.
+
+The transcript can then become part of a broader learner record.
+
+Skills can add capability context.
+
+Workforce intelligence can add opportunity context.
+
+DO NOT STOP AT A WIREFRAME.
+
+ACTUALLY IMPLEMENT THE COMPLETE PAGE IN THE EXISTING REPLIT PROJECT.

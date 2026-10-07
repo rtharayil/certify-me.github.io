@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include V4NewLook/head.html %}
+<body id="page-top">
+  {% include V4NewLook/_GTMNoScript.html %}
+  <div id="page" class="page font--jakarta">
+    {% include V4NewLook/navbar.html %}
+    <main id="main-content">
+      <nav class="container pt-4 pb-3 ts-breadcrumb" aria-label="Breadcrumb">
+        <ol class="list-inline mb-0">
+          <li class="list-inline-item"><a href="/">Home</a><span aria-hidden="true"> / </span></li>
+          <li class="list-inline-item"><a href="/allIntegrations">Solutions</a><span aria-hidden="true"> / </span></li>
+          <li class="list-inline-item" aria-current="page">Transcript Management</li>
+        </ol>
+      </nav>
+      {{ content }}
+    </main>
+    {% include V4NewLook/footer.html %}
+    {% include V4NewLook/scripts.html %}
+  </div>
+</body>
+</html>

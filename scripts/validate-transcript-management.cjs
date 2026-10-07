@@ -100,7 +100,7 @@ async function main() {
       await root.locator('a[href="#tm-lifecycle"]').click();
       const anchor = await root.locator("#tm-lifecycle").boundingBox();
       assert(anchor.y >= -1 && anchor.y < 220, `Lifecycle anchor obscured: ${anchor.y}`);
-      assert.equal(await page.locator('.wsmenu-list a[href="/transcript-management"]').count(), 1);
+      assert.equal(await page.locator('.wsmenu-list a[href="/solutions/transcript-management"]').count(), 1);
       assert.deepEqual(errors, []);
       report.profiles.push({ name, images: images.length, visibleChecks: visible, faqs: 10, result: "PASS" });
       console.log(`PASS ${name}: metadata, schema, layout, ${visible} scrolled elements, images, FAQ keyboard, video and anchors`);
