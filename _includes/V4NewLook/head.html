@@ -80,8 +80,13 @@
   {% include V4NewLook/_GTMScript.html %}
 
   <!-- GOOGLE FONTS — consolidated into one request -->
+  {% if page.local_brand_fonts %}
+  <link rel="preload" as="font" href="/assets4/fonts/association-solution/source-sans-3-latin.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="/assets4/fonts/association-solution/manrope-latin.woff2" type="font/woff2" crossorigin>
+  {% else %}
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  {% endif %}
 
   <!-- BOOTSTRAP CSS -->
   <link rel="stylesheet" href="/assets4/css/bootstrap.min.css">

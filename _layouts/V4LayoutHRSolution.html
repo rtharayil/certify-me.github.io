@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include V4NewLook/head.html %}
+<body id="page-top" class="hr-solution">
+  {% include V4NewLook/_GTMNoScript.html %}
+  <div id="page" class="page font--jakarta">
+    {% include V4NewLook/navbar.html %}
+    <main id="main-content">
+      {% include V4NewLook/strategic-breadcrumbs.html %}
+      {{ content }}
+    </main>
+    {% include V4NewLook/footer.html %}
+    {% include V4NewLook/scripts.html %}
+    <script defer src="/assets4/js/hr-solution.js"></script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1913 @@
+You are rebuilding the existing CertifyMe.online page:
+
+https://www.certifyme.online/digital-badges-for-hr
+
+The existing page is an older HR/L&D positioning page focused mainly on employee upskilling, engagement, recognition and digital badges.
+
+Rebuild it into a modern, enterprise-grade CertifyMe solution page for HR, Learning & Development, Talent Development and Workforce Development teams.
+
+IMPORTANT:
+
+Do NOT simply redesign the existing page.
+
+First crawl and analyse the existing page and the current CertifyMe website.
+
+Extract and reuse the strongest existing CertifyMe images, product screenshots, videos, logos, diagrams and links.
+
+Then rebuild the page around CertifyMe's current six-layer architecture.
+
+The page should move the buyer from:
+
+"Digital badges for employees"
+
+to:
+
+"Workforce learning → verified achievement → skills → employee record → workforce capability."
+
+==================================================
+1. CRAWL THE EXISTING HR PAGE
+==================================================
+
+Start with:
+
+https://www.certifyme.online/digital-badges-for-hr
+
+Extract and analyse:
+
+- page title
+- H1
+- all headings
+- copy
+- CTAs
+- images
+- image URLs
+- image alt text
+- screenshots
+- videos
+- video URLs
+- testimonials
+- statistics
+- customer logos
+- G2/Capterra/TrustRadius claims
+- FAQs if present
+- internal links
+- external links
+- metadata
+- canonical
+- structured data
+- CSS/components
+- responsive layout
+
+The current page contains themes around:
+
+- employee upskilling
+- employee engagement
+- digital badges
+- employee recognition
+- learning pathways
+- course completion
+- career growth
+
+Retain useful concepts, but do NOT preserve the old page structure.
+
+==================================================
+2. CRAWL CURRENT CERTIFYME
+==================================================
+
+Crawl:
+
+https://www.certifyme.online/
+
+Then investigate all relevant current pages, including:
+
+- Digital Credential Infrastructure
+- Enterprise
+- Digital Credentials
+- Digital Badges
+- E-Learning
+- Certification Bodies
+- Higher Education
+- Skill Passport
+- Comprehensive Learner Record
+- Skill Taxonomy
+- Verification
+- Analytics
+- Integrations
+- API
+- Security
+- White-label
+- Learning Paths
+- Job / Workforce Intelligence
+- relevant blogs
+- FAQs
+- case studies
+
+The current CertifyMe homepage positions the platform as institutional credential infrastructure connecting credentials to skills, CLR and workforce insights.
+
+Use that current positioning as the strategic foundation.
+
+==================================================
+3. CURRENT SIX-LAYER ARCHITECTURE
+==================================================
+
+Use the authoritative CertifyMe six-layer model:
+
+01 — PRESENTATION & ACCESS
+
+Make achievement visible, branded, accessible and shareable.
+
+02 — STANDARDS & INTEROPERABILITY
+
+Use recognised standards such as Open Badges 3.0 and W3C Verifiable Credentials.
+
+03 — VERIFICATION & TRUST
+
+Establish issuer, recipient and credential integrity.
+
+04 — SKILL TAXONOMY ALIGNMENT
+
+Connect achievements to structured skills and competency frameworks.
+
+05 — COMPREHENSIVE LEARNER RECORD
+
+Connect credentials, skills, achievements, projects, experiences and learning.
+
+06 — WORKFORCE INTELLIGENCE & OPPORTUNITY
+
+Connect verified capabilities to occupations, employers, jobs and workforce context.
+
+Do NOT present these as six unrelated feature blocks.
+
+They are one connected architecture.
+
+==================================================
+4. HR / L&D ICP
+==================================================
+
+The primary audience is enterprise HR and workforce learning leadership.
+
+PRIMARY ICP:
+
+- Chief Learning Officer
+- VP Learning & Development
+- Director of Learning & Development
+- Head of Talent Development
+- Director of Talent Development
+- Learning Program Director
+- Workforce Development Director
+- Head of Employee Development
+- Credential / Certification Program Manager
+- Learning Technology Director
+- HR Digital Transformation Director
+
+SECONDARY:
+
+- CHRO
+- CIO
+- CTO
+- HRIS Director
+- LMS Administrator
+- Talent Management Director
+- Skills Strategy leaders
+- Workforce Planning leaders
+
+Do NOT write this page primarily for individual employees.
+
+==================================================
+5. BUYER PROBLEMS
+==================================================
+
+Start with the actual enterprise problem.
+
+Organizations invest heavily in:
+
+- onboarding
+- compliance training
+- technical training
+- leadership development
+- professional development
+- certifications
+- academies
+- reskilling
+- upskilling
+- partner training
+- product training
+
+But learning systems often tell HR only:
+
+"Employee completed the course."
+
+That is not enough.
+
+The organization needs to understand:
+
+What did the employee achieve?
+
+What skills did they develop?
+
+What evidence supports those skills?
+
+Which credentials have they earned?
+
+What is still current?
+
+What can the employee demonstrate?
+
+How does this contribute to workforce capability?
+
+Create this narrative:
+
+LEARNING
+
+↓
+
+ACHIEVEMENT
+
+↓
+
+CREDENTIAL
+
+↓
+
+VERIFICATION
+
+↓
+
+SKILLS
+
+↓
+
+EMPLOYEE RECORD
+
+↓
+
+WORKFORCE CAPABILITY
+
+This is the central story.
+
+==================================================
+6. HERO
+==================================================
+
+Create a premium enterprise HR hero.
+
+H1:
+
+Turn Employee Learning Into Verified Skills and Workforce Capability
+
+Supporting headline:
+
+CertifyMe helps organizations issue trusted credentials, connect learning achievements to skills, build comprehensive employee records and understand how learning contributes to workforce capability.
+
+Primary CTA:
+
+Request a Demo
+
+Secondary CTA:
+
+See How It Works
+
+Supporting microcopy:
+
+Built for enterprise learning, upskilling, reskilling and workforce development programs.
+
+Hero visual:
+
+Use a REAL CertifyMe product screenshot discovered during the crawl.
+
+Preferred:
+
+Employee credential
++
+Skills
++
+Learning record
++
+Verification
++
+Workforce context
+
+Do not create a fake AI dashboard.
+
+Do not use generic stock photography if a real CertifyMe visual is available.
+
+==================================================
+7. HERO CONCEPT
+==================================================
+
+Show:
+
+ENTERPRISE LEARNING SYSTEMS
+
+LMS
+HRIS
+Talent Platform
+Academy
+Assessment
+Training
+
+↓
+
+CERTIFYME
+
+Credential & Achievement Infrastructure
+
+↓
+
+EMPLOYEE
+
+Credentials
+Skills
+Achievements
+Evidence
+
+↓
+
+WORKFORCE
+
+Capability
+Roles
+Career Pathways
+Opportunities
+
+==================================================
+8. THE BIG IDEA
+==================================================
+
+H2:
+
+Your LMS Knows What Employees Completed. CertifyMe Shows What They Achieved.
+
+Explain:
+
+An LMS records learning activity.
+
+CertifyMe turns that activity into trusted achievement.
+
+Show:
+
+Course Completed
+
+↓
+
+Credential
+
+↓
+
+Verification
+
+↓
+
+Skill
+
+↓
+
+Employee Record
+
+↓
+
+Workforce Capability
+
+This should replace the old generic "employee engagement" story.
+
+==================================================
+9. SIX-LAYER ARCHITECTURE
+==================================================
+
+Make this a major section.
+
+H2:
+
+Six Layers From Learning Activity to Workforce Intelligence
+
+01
+
+PRESENTATION & ACCESS
+
+Make employee achievements visible and usable.
+
+Capabilities:
+
+- digital certificates
+- digital badges
+- branded credential pages
+- unique URLs
+- QR access
+- credential PDFs
+- employee sharing
+- branded emails
+- custom domains where supported
+
+02
+
+STANDARDS & INTEROPERABILITY
+
+Make employee credentials portable.
+
+Use verified standards:
+
+- Open Badges 3.0
+- W3C Verifiable Credentials
+- CLR
+
+Explain interoperability carefully.
+
+03
+
+VERIFICATION & TRUST
+
+Give managers, employers, partners and other recipients confidence in the achievement.
+
+Show:
+
+Issuer
+↓
+Employee
+↓
+Achievement
+↓
+Evidence
+↓
+Status
+↓
+Verification
+
+04
+
+SKILL TAXONOMY ALIGNMENT
+
+Connect learning achievements to skills.
+
+Example:
+
+Learning Program
+
+↓
+
+Learning Outcome
+
+↓
+
+Skill
+
+↓
+
+Competency
+
+↓
+
+Role
+
+Where supported, investigate:
+
+- ESCO
+- O*NET
+- custom enterprise skills
+- internal competency frameworks
+
+Do not publish unsupported taxonomy claims.
+
+05
+
+COMPREHENSIVE LEARNER RECORD
+
+Connect employee learning across:
+
+- courses
+- credentials
+- certifications
+- assessments
+- projects
+- experiences
+- skills
+- achievements
+
+↓
+
+Employee Learner Record
+
+06
+
+WORKFORCE INTELLIGENCE & OPPORTUNITY
+
+Connect skills to:
+
+Employee
+↓
+Role
+↓
+Occupation
+↓
+Employer
+↓
+Workforce Demand
+↓
+Opportunity
+
+Do not promise automatic promotion or employment.
+
+==================================================
+10. FOR CHIEF LEARNING OFFICERS
+==================================================
+
+H2:
+
+Turn Learning Investment Into Visible Workforce Capability
+
+Write directly to CLOs.
+
+Show:
+
+Learning Investment
+
+↓
+
+Learning Participation
+
+↓
+
+Achievement
+
+↓
+
+Verified Skills
+
+↓
+
+Workforce Capability
+
+↓
+
+Program Intelligence
+
+Focus on:
+
+- learning outcomes
+- skills
+- credential adoption
+- employee development
+- workforce capability
+- program impact
+
+==================================================
+11. FOR L&D DIRECTORS
+==================================================
+
+H2:
+
+Manage Every Learning Achievement at Scale
+
+Address:
+
+- multiple academies
+- multiple programs
+- multiple credential types
+- multiple business units
+- large employee populations
+- automated issuance
+- credential governance
+- templates
+- analytics
+- verification
+
+Key message:
+
+Scale recognition and credentialing without scaling manual administration.
+
+==================================================
+12. FOR TALENT DEVELOPMENT
+==================================================
+
+H2:
+
+Connect Learning to Career Development
+
+Show:
+
+Learning
+↓
+Achievement
+↓
+Skill
+↓
+Employee Profile
+↓
+Career Path
+↓
+Opportunity
+
+Explain how verified learning achievements can become useful inputs into career development.
+
+Do not claim CertifyMe is an HR performance-management system unless supported.
+
+==================================================
+13. UPSKILLING & RESKILLING
+==================================================
+
+H2:
+
+Make Upskilling Measurable
+
+Example:
+
+Employee completes:
+
+Cloud Fundamentals
+
+↓
+
+Credential
+
+↓
+
+Skills:
+
+Cloud Architecture
+Cloud Security
+Cloud Operations
+
+↓
+
+Employee Record
+
+↓
+
+Role / Career Path
+
+Use a conceptual example.
+
+Clearly label examples as illustrative.
+
+==================================================
+14. EMPLOYEE RECOGNITION
+==================================================
+
+H2:
+
+Recognition That Goes Beyond a Certificate
+
+The current page heavily emphasizes recognition.
+
+Keep recognition, but reposition it.
+
+Old:
+
+"Give employees badges."
+
+New:
+
+"Create persistent, verifiable evidence of employee achievement."
+
+Show:
+
+Achievement
+↓
+Recognition
+↓
+Credential
+↓
+Skill
+↓
+Employee Record
+
+Explain that recognition becomes more valuable when it remains accessible and verifiable.
+
+==================================================
+15. LEARNING PATHWAYS
+==================================================
+
+H2:
+
+Turn Courses Into Career-Ready Learning Pathways
+
+Show:
+
+Course 1
+↓
+Credential
+
+Course 2
+↓
+Credential
+
+Assessment
+↓
+Verified Skill
+
+Advanced Program
+↓
+Credential
+
+↓
+
+Skill Cluster
+
+↓
+
+Career Pathway
+
+Use actual CertifyMe Learning Path assets if available.
+
+Do not invent functionality.
+
+==================================================
+16. CREDENTIAL MANAGEMENT
+==================================================
+
+H2:
+
+Govern Employee Credentials From Issuance to Expiry
+
+Cover where supported:
+
+- templates
+- automated issuance
+- bulk issuance
+- API issuance
+- approval workflows
+- expiry
+- renewal
+- revocation
+- verification
+- issuer governance
+- role-based administration
+
+Create lifecycle:
+
+ELIGIBILITY
+↓
+LEARNING
+↓
+ASSESSMENT
+↓
+ISSUANCE
+↓
+VERIFICATION
+↓
+EXPIRY
+↓
+RENEWAL
+
+==================================================
+17. SKILL MAPPING
+==================================================
+
+H2:
+
+Make Learning Data Useful as Skills Data
+
+This should be one of the strongest sections.
+
+Show:
+
+Learning Program
+
+↓
+
+Learning Outcomes
+
+↓
+
+Credential
+
+↓
+
+Skills
+
+↓
+
+Competency
+
+↓
+
+Role
+
+Explain that the goal is not simply to issue a badge.
+
+The goal is to make learning achievements understandable as structured capability.
+
+==================================================
+18. EMPLOYEE LEARNER RECORD
+==================================================
+
+H2:
+
+One Record for Every Learning Achievement
+
+Show:
+
+Onboarding
++
+Compliance
++
+Technical Training
++
+Leadership
++
+Certifications
++
+Professional Development
++
+Projects
++
+Skills
+
+↓
+
+Comprehensive Employee Learning Record
+
+↓
+
+Skill Passport
+
+Use the current CertifyMe Skill Passport architecture where relevant.
+
+Link to:
+
+/skills-passport
+
+==================================================
+19. WORKFORCE INTELLIGENCE
+==================================================
+
+H2:
+
+Connect Learning to Workforce Context
+
+Show:
+
+Verified Skills
+
+↓
+
+Occupation
+
+↓
+
+Role
+
+↓
+
+Employer
+
+↓
+
+Workforce Demand
+
+↓
+
+Opportunity
+
+Explain how workforce intelligence can help organizations understand the relevance of skills and learning programs.
+
+Do not imply that CertifyMe automatically makes HR decisions.
+
+==================================================
+20. HR SYSTEM INTEGRATION
+==================================================
+
+H2:
+
+Keep Your HR and Learning Systems. Add the Credential Layer.
+
+Show:
+
+HRIS
+LMS
+Talent Platform
+Assessment
+Academy
+Internal Systems
+
+↓
+
+CERTIFYME
+
+Credentials
+Verification
+Skills
+CLR
+Workforce Intelligence
+
+↓
+
+EMPLOYEE
+
+Verified Record
+
+Investigate actual current integrations.
+
+Potential systems may include:
+
+- Workday
+- Salesforce
+- HR Cloud
+- LMS platforms
+- internal systems
+
+ONLY mention a named integration if verified on the current CertifyMe site.
+
+The current site documents HR Cloud integration and current platform materials describe APIs, webhooks, SSO and enterprise integrations. Verify every named connector before publishing. 
+
+==================================================
+21. AUTOMATION
+==================================================
+
+H2:
+
+Automate Credentialing From Your Existing Learning Systems
+
+Example:
+
+Employee completes training
+
+↓
+
+LMS sends completion
+
+↓
+
+CertifyMe evaluates issuance rule
+
+↓
+
+Credential issued
+
+↓
+
+Employee notified
+
+↓
+
+Credential claimed
+
+↓
+
+Credential shared
+
+↓
+
+Verification available
+
+Use actual API/webhook capabilities.
+
+==================================================
+22. ENTERPRISE SCALE
+==================================================
+
+H2:
+
+Built for Workforce Learning at Scale
+
+Address:
+
+- thousands of employees
+- multiple business units
+- multiple programs
+- multiple credential types
+- global workforce
+- automated issuance
+- bulk issuance
+- APIs
+- role-based governance
+- analytics
+
+Do NOT invent customer volume.
+
+Do not reuse the old 5,000+ / 1M+ / 500K+ statistics unless verified against current authoritative CertifyMe sources.
+
+==================================================
+23. GOVERNANCE
+==================================================
+
+H2:
+
+Scale Learning Recognition Without Losing Governance
+
+Cover:
+
+- issuer authority
+- credential templates
+- approval workflows
+- roles
+- permissions
+- credential lifecycle
+- verification
+- auditability
+- program governance
+
+The message:
+
+Automation should increase control, not reduce it.
+
+==================================================
+24. VERIFICATION
+==================================================
+
+H2:
+
+Make Employee Achievements Easy to Verify
+
+Show:
+
+Employee shares credential
+
+↓
+
+Manager / Employer / Partner opens credential
+
+↓
+
+Issuer identified
+
+↓
+
+Achievement displayed
+
+↓
+
+Status checked
+
+↓
+
+Verification completed
+
+Use the real CertifyMe verification interface.
+
+==================================================
+25. PROFESSIONAL MOBILITY
+==================================================
+
+H2:
+
+Give Employees a Portable Record of What They Can Do
+
+Show:
+
+Credentials
++
+Skills
++
+Achievements
++
+Evidence
+
+↓
+
+Employee Skill Record
+
+↓
+
+Career Development
+
+↓
+
+Internal Mobility
+
+↓
+
+External Opportunity
+
+Be careful:
+
+Do not claim CertifyMe guarantees career advancement.
+
+Position it as infrastructure for portable evidence of capability.
+
+==================================================
+26. ANALYTICS
+==================================================
+
+H2:
+
+Measure What Happens After Learning
+
+Show possible analytics:
+
+Credentials issued
+Credentials claimed
+Credential engagement
+Credential sharing
+Verification
+Skills represented
+Program participation
+Learning pathways
+
+Only use metrics the current platform actually supports.
+
+Use actual dashboard screenshots where available.
+
+==================================================
+27. BUSINESS VALUE
+==================================================
+
+H2:
+
+Make Learning More Visible Across the Organization
+
+Show:
+
+Learning Activity
+
+↓
+
+Achievement
+
+↓
+
+Verified Skills
+
+↓
+
+Employee Capability
+
+↓
+
+Workforce Intelligence
+
+This helps L&D leaders communicate the value of learning beyond completion rates.
+
+Do NOT promise specific ROI unless supported by evidence.
+
+==================================================
+28. USE CASES
+==================================================
+
+Create cards:
+
+Employee Upskilling
+
+Employee Reskilling
+
+Leadership Development
+
+Technical Academies
+
+Compliance Training
+
+Partner / Customer Training
+
+Professional Certification
+
+Onboarding
+
+Continuing Professional Development
+
+Workforce Development
+
+==================================================
+29. CERTIFICATION
+==================================================
+
+For organizations issuing professional or internal certifications:
+
+H2:
+
+Credential Every Stage of Professional Development
+
+Show:
+
+Training
+↓
+Assessment
+↓
+Certification
+↓
+Renewal
+↓
+Recertification
+
+This makes the page useful beyond simple employee badges.
+
+==================================================
+30. STANDARDS
+==================================================
+
+H2:
+
+Built on Recognised Digital Credential Standards
+
+Use verified current standards:
+
+Open Badges 3.0
+W3C Verifiable Credentials
+CLR
+
+Explain:
+
+Open Badges 3.0
+→ structured, interoperable digital credentials
+
+W3C Verifiable Credentials
+→ machine-verifiable digital claims
+
+CLR
+→ connected learner achievement records
+
+Do not claim every HR ecosystem supports every standard.
+
+==================================================
+31. SECURITY
+==================================================
+
+H2:
+
+Enterprise-Grade Trust for Workforce Credentials
+
+Use current CertifyMe security information.
+
+Potential areas:
+
+- credential integrity
+- verification
+- access control
+- data protection
+- auditability
+- platform security
+- enterprise requirements
+
+Do not copy unsupported compliance claims.
+
+==================================================
+32. SOCIAL SHARING
+==================================================
+
+Do not make LinkedIn/social sharing the central product value.
+
+Instead:
+
+H2:
+
+Let Employees Take Their Achievements With Them
+
+Show:
+
+Credential
+↓
+Credential Page
+↓
+LinkedIn / CV / Portfolio
+↓
+Employer / Partner
+↓
+Verification
+
+Social sharing is a distribution channel.
+
+The real value is portable, verifiable evidence.
+
+==================================================
+33. CUSTOMER PROOF
+==================================================
+
+Crawl the current CertifyMe site for legitimate:
+
+- enterprise customers
+- L&D customers
+- workforce development customers
+- testimonials
+- case studies
+- G2 evidence
+- relevant reviews
+
+Prioritize proof from workforce / enterprise contexts.
+
+Do not invent customers.
+
+Do not reuse old statistics without verifying them.
+
+The existing HR page currently shows older statistics and review claims. Validate all such numbers before reuse.
+
+==================================================
+34. VIDEO
+==================================================
+
+Find the strongest relevant current CertifyMe video.
+
+Preferred:
+
+1. Enterprise learning
+2. Employee credentials
+3. Learning pathway
+4. Skills
+5. Verification
+6. Workforce intelligence
+
+Create:
+
+H2:
+
+See CertifyMe in Action
+
+Use actual video.
+
+Lazy load.
+
+==================================================
+35. FAQ
+==================================================
+
+Create SEO-friendly enterprise HR FAQs.
+
+Questions:
+
+What are digital badges for employees?
+
+How can HR teams issue digital credentials?
+
+Can CertifyMe integrate with our LMS?
+
+Can CertifyMe integrate with our HRIS?
+
+Can employee credentials be issued automatically?
+
+Can we map learning achievements to skills?
+
+Can employee credentials expire?
+
+Can employees share their credentials?
+
+Can managers verify employee credentials?
+
+Can we manage multiple learning programs?
+
+Can we issue Open Badges 3.0 credentials?
+
+Can credentials become part of a Comprehensive Learner Record?
+
+Can CertifyMe support upskilling and reskilling programs?
+
+Can CertifyMe support large enterprise learning programs?
+
+Can credentials be connected to workforce opportunities?
+
+Answer ONLY using verified current CertifyMe capabilities.
+
+==================================================
+36. SEO
+==================================================
+
+KEEP URL:
+
+/digital-badges-for-hr
+
+SEO TITLE:
+
+Digital Badges & Credentials for HR and L&D | CertifyMe
+
+Alternative:
+
+Digital Credential Platform for Employee Learning & Development | CertifyMe
+
+META DESCRIPTION:
+
+Turn employee learning into verified credentials and skills with CertifyMe. Automate credential issuance, map achievements to skills and build connected employee learning records.
+
+PRIMARY KEYWORD:
+
+digital badges for HR
+
+SECONDARY KEYWORDS:
+
+digital badges for employees
+employee digital credentials
+HR digital credential platform
+L&D digital credentials
+employee learning credentials
+employee certification platform
+workforce credentialing
+employee skills credentials
+digital badges for employees
+employee upskilling credentials
+employee reskilling credentials
+corporate learning credentials
+enterprise credential management
+
+Do not keyword stuff.
+
+==================================================
+37. INTERNAL LINKING
+==================================================
+
+Add contextual links to:
+
+- Digital Credential Infrastructure
+- Enterprise
+- E-Learning
+- Digital Badges
+- Skill Taxonomy
+- Comprehensive Learner Record
+- Skill Passport
+- Verification
+- Analytics
+- Integrations
+- API
+- Security
+- Learning Paths
+- Workforce Intelligence
+
+Use contextual anchor text.
+
+Do not create a generic link dump.
+
+==================================================
+38. IMAGE EXTRACTION
+==================================================
+
+Find and reuse the strongest assets from:
+
+- current HR page
+- Enterprise page
+- Digital Badges page
+- E-Learning page
+- Skill Passport page
+- Digital Credential Infrastructure page
+- Integration pages
+- Analytics
+- Verification
+
+For each asset identify internally:
+
+- source URL
+- original page
+- type
+- dimensions
+- intended new section
+- optimized filename
+
+==================================================
+39. VIDEO EXTRACTION
+==================================================
+
+Find all relevant videos.
+
+Internally record:
+
+- source page
+- video URL
+- title
+- recommended section
+
+Do not expose the audit publicly.
+
+==================================================
+40. IMAGE SEO
+==================================================
+
+Every image:
+
+- semantic filename
+- meaningful alt
+- width
+- height
+- responsive sizing
+- lazy loading
+- WebP/AVIF where possible
+
+Example:
+
+certifyme-employee-skills-credential-dashboard.webp
+
+NOT:
+
+hero-image-new-final.png
+
+==================================================
+41. DESIGN
+==================================================
+
+Use the current CertifyMe design language.
+
+Preferred:
+
+- white/light backgrounds
+- CertifyMe indigo
+- clean enterprise typography
+- strong product screenshots
+- architecture diagrams
+- restrained animation
+- generous whitespace
+
+Avoid:
+
+- generic HR stock photos
+- AI-generated workforce graphics
+- excessive gradients
+- glassmorphism
+- giant blue blocks
+- generic "happy employee" imagery
+
+Real product UI should carry the visual story.
+
+==================================================
+42. MOBILE
+==================================================
+
+Test:
+
+375px
+390px
+768px
+1024px
+1440px
+1920px
+
+No horizontal scrolling.
+
+Six-layer architecture must collapse cleanly.
+
+Tables and diagrams must remain usable on mobile.
+
+==================================================
+43. ACCESSIBILITY
+==================================================
+
+Implement:
+
+- semantic HTML
+- H1-H6 hierarchy
+- alt text
+- keyboard navigation
+- visible focus
+- accessible accordions
+- accessible video controls
+- adequate colour contrast
+
+==================================================
+44. PERFORMANCE
+==================================================
+
+Optimize:
+
+- images
+- video
+- fonts
+- CSS
+- JavaScript
+- animations
+
+Use:
+
+- lazy loading
+- responsive images
+- modern image formats
+- video posters
+
+Target excellent Core Web Vitals.
+
+==================================================
+45. STRUCTURED DATA
+==================================================
+
+Implement where appropriate:
+
+- WebPage
+- SoftwareApplication
+- FAQPage
+- BreadcrumbList
+- Organization
+
+Only use schema supported by actual page content.
+
+==================================================
+46. CONTENT QUALITY
+==================================================
+
+Remove generic legacy HR language such as:
+
+"Boost employee engagement."
+
+"Motivate your workforce."
+
+"Recognize employees."
+
+"Create career opportunities."
+
+These can remain as secondary benefits, but they must not be the primary value proposition.
+
+The new language should emphasize:
+
+- workforce capability
+- verified skills
+- learning outcomes
+- credential governance
+- employee development
+- skill visibility
+- learning pathways
+- workforce intelligence
+- internal mobility
+- portable evidence
+- automation
+- enterprise scale
+
+==================================================
+47. IMPORTANT POSITIONING
+==================================================
+
+Do NOT position CertifyMe as merely:
+
+"An employee badge platform."
+
+Position it as:
+
+THE CREDENTIAL AND SKILL INFRASTRUCTURE FOR WORKFORCE LEARNING.
+
+The hierarchy:
+
+LEARNING
+
+↓
+
+ACHIEVEMENT
+
+↓
+
+CREDENTIAL
+
+↓
+
+VERIFICATION
+
+↓
+
+SKILLS
+
+↓
+
+EMPLOYEE LEARNER RECORD
+
+↓
+
+WORKFORCE CAPABILITY
+
+↓
+
+CAREER / OPPORTUNITY
+
+==================================================
+48. OLD VS NEW
+==================================================
+
+Create a powerful comparison.
+
+OLD:
+
+Course completed
+↓
+PDF certificate
+↓
+Employee stores it
+↓
+Maybe shares it
+
+NEW:
+
+Learning
+↓
+Achievement
+↓
+Credential
+↓
+Verification
+↓
+Skills
+↓
+Employee Record
+↓
+Workforce Context
+
+H2:
+
+The Value of Employee Learning Doesn't End When the Course Ends.
+
+==================================================
+49. FINAL PAGE STRUCTURE
+==================================================
+
+Build approximately:
+
+01 HERO
+
+Turn Employee Learning Into Verified Skills and Workforce Capability
+
+02 THE GAP
+
+Your LMS Knows What Employees Completed. CertifyMe Shows What They Achieved.
+
+03 SIX-LAYER ARCHITECTURE
+
+Six Layers From Learning Activity to Workforce Intelligence
+
+04 CLO
+
+Turn Learning Investment Into Visible Workforce Capability
+
+05 L&D DIRECTOR
+
+Manage Every Learning Achievement at Scale
+
+06 TALENT DEVELOPMENT
+
+Connect Learning to Career Development
+
+07 UPSKILLING / RESKILLING
+
+Make Upskilling Measurable
+
+08 RECOGNITION
+
+Recognition That Goes Beyond a Certificate
+
+09 LEARNING PATHWAYS
+
+Turn Courses Into Career-Ready Learning Pathways
+
+10 CREDENTIAL MANAGEMENT
+
+Govern Employee Credentials From Issuance to Expiry
+
+11 SKILL MAPPING
+
+Make Learning Data Useful as Skills Data
+
+12 EMPLOYEE LEARNER RECORD
+
+One Record for Every Learning Achievement
+
+13 WORKFORCE INTELLIGENCE
+
+Connect Learning to Workforce Context
+
+14 HR SYSTEM INTEGRATION
+
+Keep Your HR and Learning Systems. Add the Credential Layer.
+
+15 AUTOMATION
+
+Automate Credentialing From Existing Systems
+
+16 ENTERPRISE SCALE
+
+Built for Workforce Learning at Scale
+
+17 GOVERNANCE
+
+Scale Learning Recognition Without Losing Governance
+
+18 VERIFICATION
+
+Make Employee Achievements Easy to Verify
+
+19 PROFESSIONAL MOBILITY
+
+Give Employees a Portable Record of What They Can Do
+
+20 ANALYTICS
+
+Measure What Happens After Learning
+
+21 USE CASES
+
+22 CERTIFICATION
+
+23 STANDARDS & SECURITY
+
+24 BUSINESS VALUE
+
+25 OLD VS NEW
+
+26 CUSTOMER PROOF
+
+27 VIDEO
+
+28 FAQ
+
+29 FINAL CTA
+
+==================================================
+50. FINAL CTA
+==================================================
+
+End with:
+
+H2:
+
+Turn Learning Into Workforce Capability
+
+Supporting copy:
+
+Give your employees trusted evidence of what they have learned, achieved and can demonstrate — while giving L&D leaders the infrastructure to connect learning with skills and workforce needs.
+
+Primary CTA:
+
+Request a Platform Demo
+
+Secondary CTA:
+
+Talk to an L&D Expert
+
+==================================================
+51. ASSET AUDIT
+==================================================
+
+Create an internal audit of every reused:
+
+IMAGE
+- source URL
+- source page
+- asset type
+- dimensions
+- new section
+- optimized filename
+
+VIDEO
+- source page
+- URL
+- title
+- new section
+
+Do NOT display this audit publicly.
+
+==================================================
+52. FINAL QA
+==================================================
+
+After implementation:
+
+1. Run the application.
+2. Open /digital-badges-for-hr.
+3. Test every CTA.
+4. Test every internal link.
+5. Test every image.
+6. Test every video.
+7. Test mobile.
+8. Test desktop.
+9. Check console errors.
+10. Check broken links.
+11. Check broken images.
+12. Check SEO title.
+13. Check meta description.
+14. Check canonical.
+15. Check structured data.
+16. Check accessibility.
+17. Check Core Web Vitals.
+18. Verify all six layers.
+19. Verify all HR/L&D claims.
+20. Remove outdated statistics.
+21. Confirm existing CertifyMe pages still work.
+
+Fix all issues before completion.
+
+==================================================
+FINAL OBJECTIVE
+==================================================
+
+The finished page should make a CLO, L&D Director or Talent Development leader think:
+
+"CertifyMe doesn't just give our employees badges. It turns our learning achievements into trusted credentials, structured skills and a workforce record we can actually use."
+
+It must NOT feel like:
+
+"Another employee recognition badge tool."
+
+The final architecture should communicate:
+
+ENTERPRISE LEARNING
+
+LMS
+Academy
+Assessment
+Development
+Certification
+
+↓
+
+CERTIFYME
+
+Credential Infrastructure
+Verification
+Skills
+CLR
+Workforce Intelligence
+
+↓
+
+EMPLOYEE
+
+Achievements
+Credentials
+Skills
+Learning Record
+
+↓
+
+WORKFORCE
+
+Capability
+Career Development
+Internal Mobility
+Opportunity
+
+Actually implement the page in the existing CertifyMe codebase.
+
+Do not stop at analysis.

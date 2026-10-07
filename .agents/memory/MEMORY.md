@@ -31,3 +31,5 @@
 - [EduTranscript source ownership](edutranscript-source-ownership.md) — the owner identifies EduTranscript as their product website; use its assets with current CertifyMe positioning.
 - [SkillStory source ownership](skillstory-source-ownership.md) — owner authorizes first-party product assets; ground Skill Passport in real visuals and institutional positioning.
 - [E-learning program positioning](elearning-positioning.md) — large-program operators first; connected achievement infrastructure around their existing LMS, not an LMS replacement.
+- [Professional association positioning](association-positioning.md) — association executives and credential/CPD leaders first; governed professional achievement infrastructure, not a badge generator.
+- [Enterprise HR/L&D positioning](hr-learning-positioning.md) — buyer-first credential and skill infrastructure; verified learning records precede optional workforce context.
