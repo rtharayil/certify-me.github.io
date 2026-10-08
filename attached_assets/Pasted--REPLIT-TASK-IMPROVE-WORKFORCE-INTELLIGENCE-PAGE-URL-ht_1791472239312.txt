@@ -1,0 +1,135 @@
+# REPLIT TASK — IMPROVE WORKFORCE INTELLIGENCE PAGE
+
+URL:
+https://www.certifyme.online/workforce-intelligence
+
+PURPOSE:
+
+This is the institutional workforce-intelligence solution.
+
+Its question is:
+
+> How can institutions connect programme skills and learning evidence to labour-market and employer demand?
+
+Do not turn it into a student job-search page.
+
+## HERO
+
+Keep the strong category:
+
+# Workforce Intelligence for Universities
+
+Hero:
+
+## Connect Programme Skills to Workforce Demand
+
+Supporting copy:
+
+Understand how institution-defined programme skills relate to occupations, employers, locations and changing workforce demand.
+
+## CORE STORY
+
+Programme
+→ Learning outcomes
+→ Skills
+→ Occupations
+→ Employer demand
+→ Institutional decision
+
+Make this the dominant visual.
+
+## THREE BUYER QUESTIONS
+
+Build the page around:
+
+### What skills do our programmes develop?
+
+### Which occupations use those skills?
+
+### How is employer demand changing?
+
+Then show how CertifyMe helps investigate each question.
+
+## UX
+
+Create a "programme intelligence" dashboard mockup.
+
+Example:
+
+Programme:
+MSc Business Analytics
+
+Skills:
+SQL
+Data Analysis
+Statistics
+Data Visualisation
+
+Occupations:
+Data Analyst
+Business Analyst
+
+Market:
+Employer demand
+Location
+Skill demand
+
+Use real product concepts only.
+
+## IMPORTANT
+
+Clearly separate:
+
+INSTITUTIONAL EVIDENCE
+from
+EXTERNAL MARKET DATA
+
+Do not imply that employer data comes directly from the institution.
+
+Explain that market intelligence is separately sourced and mapped.
+
+## SECTIONS
+
+1. What Is Workforce Intelligence?
+2. From Programme Evidence to Workforce Questions
+3. Skills → Occupations
+4. Employer Demand
+5. Curriculum & Programme Planning
+6. Career / Employability Teams
+7. Employer Engagement
+8. Job Engine / Data Architecture
+9. Institutional Governance
+10. CTA
+
+## SEO
+
+Primary:
+Workforce Intelligence for Universities
+
+Secondary:
+workforce intelligence higher education
+skills intelligence for universities
+university workforce intelligence
+curriculum workforce alignment
+skills demand analysis
+labour market intelligence for universities
+
+Title:
+Workforce Intelligence for Universities | CertifyMe
+
+Meta:
+Connect programme skills and learning evidence to occupations, employer demand and workforce trends for institutional planning.
+
+## DO NOT
+
+Do not position this as:
+"Find jobs for students."
+
+That is a different product story.
+
+## CTA
+
+Explore Workforce Intelligence
+
+Secondary:
+Discuss Your Institutional Use Case
