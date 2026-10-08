@@ -1,351 +1,210 @@
-<link rel="stylesheet" href="/assets4/css/dci-experience.css">
-<link rel="stylesheet" href="/assets4/css/dci-refinement.css">
-<div class="dci-refined">
 <div class="dci" id="dci-page">
   <div class="dci-progress" aria-hidden="true"><span id="dci-progress-bar"></span></div>
-
   <section class="dci-hero" aria-labelledby="dci-title">
     <div class="dci-shell dci-hero__grid">
       <div class="dci-hero__copy">
-        <p class="dci-eyebrow"><span class="dci-eyebrow__mark"></span>Digital credential infrastructure</p>
-        <h1 id="dci-title">The infrastructure behind trusted, interoperable and intelligent digital credentials</h1>
-        <p class="dci-hero__lead">Create, issue and verify credentials that connect achievements to skills, records and workforce context.</p>
+        <p class="dci-eyebrow"><span aria-hidden="true"></span>CertifyMe / Infrastructure</p>
+        <h1 id="dci-title">Digital Credential Infrastructure</h1>
+        <h2 class="dci-hero__headline">The Infrastructure Behind Trusted Digital Credentials</h2>
+        <p class="dci-hero__lead">CertifyMe provides the infrastructure to create, issue, manage, verify and share digital credentials across the systems organisations already use.</p>
         <div class="dci-actions">
           <a class="dci-button dci-button--primary" href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer">Request a Platform Demo <span aria-hidden="true">↗</span></a>
-          <a class="dci-button dci-button--quiet" href="/sample-credential">Explore a Credential <span aria-hidden="true">→</span></a>
+          <a class="dci-button dci-button--secondary" href="#dci-lifecycle">See How It Works <span aria-hidden="true">↓</span></a>
         </div>
-        <div class="dci-hero__footnote"><span class="dci-live-dot"></span>Institution-governed achievement infrastructure</div>
-        <nav class="dci-hero__jump" aria-label="Solution overview links"><a href="#dci-connected">Connected university solution <span aria-hidden="true">↓</span></a><a href="#dci-implementation">Discovery &amp; implementation <span aria-hidden="true">↓</span></a></nav>
+        <p class="dci-hero__note">A governed credential layer for approved achievements—not a replacement for the systems that record them.</p>
       </div>
-      <div class="dci-system" aria-label="Institutional systems connect through CertifyMe to credentials, verification, skills, learner records and workforce intelligence">
-        <div class="dci-system__top">
-          <span class="dci-system__label">Institutional systems</span>
-          <div class="dci-system__sources"><span>SIS</span><span>LMS</span><span>Assessment</span><span>Training</span><span>API</span></div>
+
+      <figure class="dci-architecture" aria-labelledby="dci-architecture-caption">
+        <div class="dci-architecture__lane">
+          <span class="dci-architecture__eyebrow">01 / Source systems</span>
+          <div class="dci-source-list" aria-label="Examples of source systems">
+            <span>SIS</span><span>LMS</span><span>HRIS</span><span>Training</span><span>Assessment</span><span>Membership</span><span>APIs</span>
+          </div>
         </div>
-        <div class="dci-system__connector"><i></i><span>achievement evidence</span><i></i></div>
-        <div class="dci-system__core">
-          <span class="dci-system__core-mark">C</span>
-          <div><strong>CertifyMe</strong><span>Digital Credential Infrastructure</span></div>
-          <span class="dci-system__core-index">01—06</span>
+        <div class="dci-architecture__connector" aria-hidden="true"><span></span><b>approved achievement data</b><span></span></div>
+        <div class="dci-architecture__core">
+          <span class="dci-architecture__monogram" aria-hidden="true">C</span>
+          <span><strong>CertifyMe</strong><small>Digital Credential Infrastructure</small></span>
+          <span class="dci-architecture__index">01—06</span>
         </div>
-        <div class="dci-system__connector dci-system__connector--down"><i></i><span>governed achievement layer</span><i></i></div>
-        <div class="dci-system__outputs">
-          <div><b>01</b><span>Access &amp; sharing</span></div><div><b>02</b><span>Standards</span></div><div><b>03</b><span>Verification &amp; trust</span></div><div><b>04</b><span>Skills alignment</span></div><div><b>05</b><span>Learner record</span></div><div><b>06</b><span>Workforce intelligence</span></div>
+        <div class="dci-architecture__connector" aria-hidden="true"><span></span><b>credential lifecycle</b><span></span></div>
+        <div class="dci-architecture__lifecycle" aria-label="Create, issue, verify, manage and share">
+          <span>Create</span><i aria-hidden="true">→</i><span>Issue</span><i aria-hidden="true">→</i><span>Verify</span><i aria-hidden="true">→</i><span>Manage</span><i aria-hidden="true">→</i><span>Share</span>
         </div>
-        <div class="dci-system__caption"><span>Learning → achievement → evidence</span><span>Institution-controlled</span></div>
+        <div class="dci-architecture__connector dci-architecture__connector--short" aria-hidden="true"><span></span><span></span></div>
+        <div class="dci-architecture__extensions">
+          <span>Skills</span><i aria-hidden="true">→</i><span>Learner / achievement records</span><i aria-hidden="true">→</i><span>Downstream intelligence</span>
+        </div>
+        <figcaption id="dci-architecture-caption">Approved achievements move through a governed credential lifecycle; extensions are optional.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="dci-section dci-definition" aria-labelledby="dci-definition-title">
+    <div class="dci-shell dci-definition__grid">
+      <div>
+        <p class="dci-eyebrow">01 / The infrastructure</p>
+        <h2 id="dci-definition-title">What Is Digital Credential Infrastructure?</h2>
+      </div>
+      <div class="dci-prose">
+        <p>Digital credential infrastructure turns an organisation-approved achievement into a credential that can be issued, maintained, checked and shared. It connects the source of the achievement to the credential lifecycle without asking organisations to replace the systems they already rely on.</p>
+        <p>That matters because a document alone is difficult to update, verify consistently or interpret across systems. Structured credentials carry defined claims and issuer provenance; governance keeps those claims tied to the organisation’s award policies.</p>
+        <details class="dci-details">
+          <summary>What the infrastructure handles</summary>
+          <p>Credential creation and issuance workflows, hosted credential access, standards-based representation, verification pathways, status management, and optional links from achievements to reviewed skills or learner records.</p>
+        </details>
       </div>
     </div>
-    <div class="dci-shell dci-proofline" aria-label="Standards and trust capabilities">
-      <span>Standards-aware by design</span><i></i><span>Open Badges 3.0</span><i></i><span>W3C Verifiable Credentials</span><i></i><span>Credential lifecycle</span>
+  </section>
+
+  <section class="dci-section dci-lifecycle" id="dci-lifecycle" aria-labelledby="dci-lifecycle-title">
+    <div class="dci-shell">
+      <div class="dci-section-heading">
+        <p class="dci-eyebrow">02 / The credential lifecycle</p>
+        <h2 id="dci-lifecycle-title">The Credential Lifecycle</h2>
+        <p>Each step has a distinct role. The issuing organisation remains accountable for what the achievement means.</p>
+      </div>
+      <ol class="dci-lifecycle__steps">
+        <li><span>01</span><h3>Create</h3><p>Define the achievement, issuer, recipient claims and relevant criteria.</p></li>
+        <li><span>02</span><h3>Issue</h3><p>Release credentials through manual, bulk or scoped system workflows.</p></li>
+        <li><span>03</span><h3>Verify</h3><p>Check issuer provenance, credential integrity and status using the applicable method.</p></li>
+        <li><span>04</span><h3>Manage</h3><p>Maintain credential records and lifecycle state, including expiry or revocation where applicable.</p></li>
+        <li><span>05</span><h3>Share</h3><p>Give recipients a digital credential representation they can access and share.</p></li>
+      </ol>
+      <details class="dci-details dci-details--wide">
+        <summary>Issuance options and workflow scope</summary>
+        <p>Credential workflows may support individual awards, bulk issuance and API-based issuance. The appropriate route depends on the source system, approved fields, permissions, award rules and agreed integration scope; a named system is not a promise of a prebuilt connector.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="dci-section dci-layers" id="dci-layers" aria-labelledby="dci-layers-title">
+    <div class="dci-shell">
+      <div class="dci-section-heading dci-section-heading--split">
+        <div><p class="dci-eyebrow">03 / A clear foundation. Optional extensions.</p><h2 id="dci-layers-title">Six-Layer Architecture</h2></div>
+        <p>The first three layers establish access, interoperability and trust. Skills, learner records and workforce context extend that foundation when useful.</p>
+      </div>
+      <div class="dci-layer-list">
+        <article class="dci-layer-card" id="layer-01">
+          <span class="dci-layer-card__number">01</span>
+          <div><h3>Credential Access &amp; Sharing</h3><p>Credential pages, unique URLs and QR-based access help recipients find and share an issued achievement.</p></div>
+          <a href="#layer-01-details" aria-label="Explore Credential Access and Sharing details">Explore more <span aria-hidden="true">↓</span></a>
+          <details class="dci-details dci-layer-card__details" id="layer-01-details"><summary>Access, issuance and administration details</summary><p>Supported capabilities include reusable credential templates, organisation branding, manual and bulk issuance, API-based issuance, credential IDs, QR access and hosted credential pages. A QR code is a route to a record, not a cryptographic security mechanism.</p></details>
+        </article>
+        <article class="dci-layer-card" id="layer-02">
+          <span class="dci-layer-card__number">02</span>
+          <div><h3>Standards &amp; Interoperability</h3><p>Represent achievements in structured formats designed for exchange beyond a single visual document.</p></div>
+          <a href="#dci-standards" aria-label="Explore standards and interoperability">Explore more <span aria-hidden="true">↓</span></a>
+        </article>
+        <article class="dci-layer-card" id="layer-03">
+          <span class="dci-layer-card__number">03</span>
+          <div><h3>Verification &amp; Trust</h3><p>Make issuer provenance, integrity and current status checkable through the relevant verification pathway.</p></div>
+          <a href="#dci-trust" aria-label="Explore verification and trust">Explore more <span aria-hidden="true">↓</span></a>
+        </article>
+        <article class="dci-layer-card dci-layer-card--extension" id="layer-04">
+          <span class="dci-layer-card__number">04</span>
+          <div><h3>Skill Taxonomy Mapping</h3><p>Connect reviewed learning outcomes to skills using a shared vocabulary, with organisational judgement retained.</p></div>
+          <a href="/skills-taxonomy-mapping">Explore solution <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="dci-layer-card dci-layer-card--extension" id="layer-05">
+          <span class="dci-layer-card__number">05</span>
+          <div><h3>Comprehensive Learner Record</h3><p>Bring achievements together across a learner journey; this complements rather than replaces an authoritative transcript.</p></div>
+          <a href="/comprehensive-learner-record">Explore solution <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="dci-layer-card dci-layer-card--extension" id="layer-06">
+          <span class="dci-layer-card__number">06</span>
+          <div><h3>Workforce Intelligence &amp; Opportunity</h3><p>Optionally relate structured skills and achievement evidence to separately sourced labour-market context.</p></div>
+          <a href="/workforce-intelligence#wi-pathways">Explore solution <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
     </div>
   </section>
 
   {% include V4NewLook/infrastructure/solution.html %}
 
-  <section class="dci-intro dci-section" aria-labelledby="dci-intro-title">
-    <div class="dci-shell dci-intro__grid">
-      <div><p class="dci-eyebrow">A complete achievement lifecycle</p><h2 id="dci-intro-title">One achievement.<br><em>Six layers of infrastructure.</em></h2></div>
-      <div class="dci-intro__copy"><p>CertifyMe provides the infrastructure institutions need to create, issue, verify, manage and extend digital credentials — from the first award through skills, learner records and workforce intelligence.</p><p class="dci-lead">A digital credential is more than a certificate.</p><p>For an institution, it needs to be accessible, recognisable, portable, interoperable, verifiable, connected to skills and useful within a broader learner and workforce context. CertifyMe builds these capabilities as a connected architecture.</p></div>
-    </div>
-    <div class="dci-shell dci-lifecycle-ribbon" aria-label="Learning becomes an achievement, credential, verified skill, learner record and workforce context">
-      <span>Learning</span><i>→</i><span>Achievement</span><i>→</i><span>Credential</span><i>→</i><span>Verification</span><i>→</i><span>Skills</span><i>→</i><span>Learner record</span><i>→</i><span>Workforce intelligence</span>
-    </div>
-    <div class="dci-shell dci-stack-wrap">
-      <div class="dci-stack" aria-label="Interactive six-layer credential infrastructure architecture">
-        <div class="dci-stack__spine" aria-hidden="true"></div>
-        {% assign dci_layers = "01|Credential Accessibility & Sharing|ACCESS|layer-01,02|Standards & Interoperability|INTEROPERABILITY|layer-02,03|Verification & Trust|TRUST|layer-03,04|Skill Taxonomy Alignment|SKILLS|layer-04,05|Comprehensive Learner Record|RECORD|layer-05,06|Workforce Intelligence & Opportunity|WORKFORCE|layer-06" | split: "," %}
-        {% for layer in dci_layers %}
-          {% assign dci_parts = layer | split: "|" %}
-          <a class="dci-stack__row{% if forloop.index <= 3 %} dci-stack__row--foundation{% endif %}" href="#{{ dci_parts[3] }}" data-layer-link="{{ dci_parts[3] }}">
-            <span class="dci-stack__number">{{ dci_parts[0] }}</span><span class="dci-stack__name">{{ dci_parts[1] }}</span><span class="dci-stack__tag">{{ dci_parts[2] }}</span><span class="dci-stack__arrow" aria-hidden="true">↘</span>
-          </a>
-        {% endfor %}
+  <section class="dci-section dci-standards" id="dci-standards" aria-labelledby="dci-standards-title">
+    <div class="dci-shell dci-standards__grid">
+      <div>
+        <p class="dci-eyebrow">05 / Standards &amp; interoperability</p>
+        <h2 id="dci-standards-title">Standards &amp; Interoperability</h2>
+        <p>Standards describe the credential’s data and claims—not merely how a certificate looks. They support interoperability, while verification still depends on the relevant trust and status resources.</p>
       </div>
-      <div class="dci-stack__note"><span class="dci-stack__note-mark">↓</span><span><strong>One governed architecture</strong><br>Access and trust create the foundation. Skills, records and workforce context extend what an achievement can communicate.</span></div>
-    </div>
-  </section>
-
-  <nav class="dci-layer-nav" aria-label="Six-layer architecture navigation">
-    <div class="dci-shell dci-layer-nav__inner">
-      <span class="dci-layer-nav__label">Architecture</span>
-      <div class="dci-layer-nav__links">
-        <a href="#layer-01" data-layer-link="layer-01"><b>01</b><span>Access</span></a>
-        <a href="#layer-02" data-layer-link="layer-02"><b>02</b><span>Standards</span></a>
-        <a href="#layer-03" data-layer-link="layer-03"><b>03</b><span>Trust</span></a>
-        <a href="#layer-04" data-layer-link="layer-04"><b>04</b><span>Skills</span></a>
-        <a href="#layer-05" data-layer-link="layer-05"><b>05</b><span>Record</span></a>
-        <a href="#layer-06" data-layer-link="layer-06"><b>06</b><span>Workforce</span></a>
-      </div>
-      <span class="dci-layer-nav__progress" id="dci-nav-progress">01 / 06</span>
-    </div>
-  </nav>
-
-  <section class="dci-layer dci-layer--deep" id="layer-01" aria-labelledby="layer-01-title">
-    <div class="dci-shell">
-      <div class="dci-section-head dci-section-head--split">
-        <div><p class="dci-eyebrow"><span>01</span> / Credential accessibility &amp; sharing</p><h2 id="layer-01-title">Make every achievement accessible, recognisable and ready to share.</h2></div>
-        <div class="dci-section-head__aside"><p>The credential experience begins with a simple question: can the learner access the achievement easily — and can the institution’s recognition travel with them?</p><p>CertifyMe supports credential creation, reusable templates, institutional branding, QR-based access, unique credential URLs, manual and bulk issuance, API-based issuance and sharing.</p></div>
-      </div>
-
-      <div class="dci-feature dci-feature--qr">
-        <div class="dci-feature__copy">
-          <p class="dci-kicker">01.1 / Access point</p><h3>Scan. Open. Explore. Verify.</h3>
-          <p>Each credential can carry a unique identifier and QR-based access point. The QR opens a credential page; it is a convenient route to the record, not a cryptographic security mechanism by itself.</p>
-          <div class="dci-route" aria-label="Credential PDF leads to QR code, credential page and verification">
-            <span>Credential PDF</span><i>↓</i><span>QR code</span><i>↓</i><span>Credential page</span><i>↓</i><span>Verification</span>
-          </div>
-          <p class="dci-muted">Printed certificates · PDFs · mobile screens · CVs · presentations · shared documents</p>
-        </div>
-        <div class="dci-credential-art">
-          <div class="dci-paper">
-            <div class="dci-paper__rule"></div><span class="dci-paper__brand">UNIVERSITY EXAMPLE <small>OFFICE OF CONTINUING STUDIES</small></span>
-            <span class="dci-paper__label">CERTIFICATE OF ACHIEVEMENT</span><strong class="dci-paper__recipient">Alex Morgan</strong>
-            <span class="dci-paper__program">Global Leadership Programme</span>
-            <span class="dci-paper__description">has completed the programme requirements</span>
-            <div class="dci-paper__footer">
-              <div class="dci-paper__metadata"><span>Issued 6 October 2026<br>Credential ID UE-GLP-2026-0148</span><span class="dci-paper__signature">Office of the Registrar</span></div>
-              <a class="dci-paper__qr" href="/sample-credential" aria-label="Scan to explore the existing sample credential"><img src="/assets4/images/dci-credential-qr.png" width="84" height="84" alt="QR code linking to the CertifyMe sample credential"><span>Scan to explore</span></a>
-            </div>
-          </div>
-          <span class="dci-credential-art__annotation"><i></i>Credential access point</span>
-        </div>
-      </div>
-
-      <div class="dci-feature dci-feature--templates">
-        <div class="dci-feature__copy">
-          <p class="dci-kicker">01.2 / Template governance</p><h3>Create credentials that look like your institution.</h3>
-          <p>Reusable templates give credential teams a consistent starting point. Set the award’s visual language and required fields once, then adapt it to the programme and approval workflow.</p>
-          <div class="dci-workflow"><span class="is-current">Template</span><i>→</i><span>Customize</span><i>→</i><span>Approve</span><i>→</i><span>Issue</span></div>
-        </div>
-        <div class="dci-template-ui" aria-label="Interactive credential template library">
-          <div class="dci-ui-bar"><span class="dci-ui-dots"><i></i><i></i><i></i></span><strong>Credential templates</strong><span class="dci-ui-context">Institution / Awards</span></div>
-          <div class="dci-template-ui__body">
-            <div class="dci-template-list" role="group" aria-label="Choose a credential template">
-              <button class="dci-template-choice is-selected" type="button" data-template="University Certificate" data-program="Global Leadership Programme"><span class="dci-template-choice__glyph">UC</span><span>University Certificate<small>Formal award</small></span><i>✓</i></button>
-              <button class="dci-template-choice" type="button" data-template="Executive Education" data-program="Executive Leadership"><span class="dci-template-choice__glyph">EE</span><span>Executive Education<small>Professional learning</small></span><i>✓</i></button>
-              <button class="dci-template-choice" type="button" data-template="Professional Certification" data-program="Certified Practice"><span class="dci-template-choice__glyph">PC</span><span>Professional Certification<small>Body / association</small></span><i>✓</i></button>
-              <button class="dci-template-choice" type="button" data-template="Micro-Credential" data-program="Applied Data Practice"><span class="dci-template-choice__glyph">MC</span><span>Micro-Credential<small>Focused achievement</small></span><i>✓</i></button>
-              <button class="dci-template-choice" type="button" data-template="Digital Badge" data-program="Research Communication"><span class="dci-template-choice__glyph">DB</span><span>Digital Badge<small>Shareable recognition</small></span><i>✓</i></button>
-              <button class="dci-template-choice" type="button" data-template="Course Completion" data-program="Foundations of Public Health"><span class="dci-template-choice__glyph">CC</span><span>Course Completion<small>Programme completion</small></span><i>✓</i></button>
-              <button class="dci-template-choice" type="button" data-template="Continuing Education" data-program="Continuing Professional Learning"><span class="dci-template-choice__glyph">CE</span><span>Continuing Education<small>Ongoing development</small></span><i>✓</i></button>
-            </div>
-            <div class="dci-template-preview"><span class="dci-template-preview__label">SELECTED TEMPLATE</span><div class="dci-mini-certificate"><span>UNIVERSITY EXAMPLE</span><b id="dci-template-preview-name">University Certificate</b><i></i><small>Achievement · Recipient · Issue date</small></div><span class="dci-template-preview__meta"><i></i>Ready for customization</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="dci-feature dci-feature--editor">
-        <div class="dci-feature__copy">
-          <p class="dci-kicker">01.3 / Credential administration</p><h3>Your institution. Your achievement. Your brand.</h3>
-          <p>Configure the credential’s identity and achievement details in an administrative workflow, not a free-form design canvas. Preview updates as the fields change.</p>
-          <details class="dci-disclosure"><summary>Configurable credential elements</summary><p>Institutional logo, colours, typography, recipient and achievement names, programme, issue date, expiration where applicable, credential ID, QR code, signatures, supporting information, skills and evidence.</p></details>
-        </div>
-        <div class="dci-editor">
-          <div class="dci-ui-bar"><span class="dci-ui-dots"><i></i><i></i><i></i></span><strong>Credential configuration</strong><span class="dci-editor__saved"><i></i>Draft</span></div>
-          <div class="dci-editor__body">
-            <form class="dci-fields" id="dci-credential-form">
-              <label>Recipient name<input id="dci-recipient-input" type="text" value="Alex Morgan" maxlength="48"></label>
-              <label>Achievement<input id="dci-achievement-input" type="text" value="Global Leadership Programme" maxlength="64"></label>
-              <label>Issue date<input id="dci-date-input" type="text" value="6 October 2026" maxlength="32"></label>
-              <label>Credential ID<input type="text" value="UE-GLP-2026-0148" readonly></label>
-              <div class="dci-field-note"><span class="dci-field-note__icon">i</span>Preview reflects the fields shown. Issuance follows institutional approval.</div>
-            </form>
-            <div class="dci-editor-preview"><span class="dci-editor-preview__institution">UNIVERSITY EXAMPLE</span><span class="dci-editor-preview__overline">CERTIFICATE OF ACHIEVEMENT</span><strong id="dci-preview-recipient">Alex Morgan</strong><span id="dci-preview-achievement">Global Leadership Programme</span><small>Issued <span id="dci-preview-date">6 October 2026</span></small><span class="dci-editor-preview__sig">Registrar’s Office</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="dci-feature dci-feature--credential-page">
-        <div class="dci-feature__copy"><p class="dci-kicker">01.4 / Persistent representation</p><h3>The credential does not end with the PDF.</h3><p>The digital credential page becomes the persistent digital representation of the achievement: a place to see who issued it, what it recognises and how its current status can be checked.</p>
-          <div class="dci-actions dci-actions--small"><button class="dci-text-button" type="button" data-action="share">Share <span>↗</span></button><button class="dci-text-button" type="button" data-action="copy">Copy link <span>⧉</span></button><a class="dci-text-button" href="/assets4/docs/dci-credential.pdf" download>Download <span>↓</span></a><a class="dci-text-button" href="#layer-03">Verify <span>→</span></a></div><p class="dci-action-status" id="dci-share-status" role="status" aria-live="polite"></p>
-        </div>
-        <div class="dci-record-card">
-          <div class="dci-record-card__top"><span class="dci-record-card__seal">UE</span><span><strong>University Example</strong><small>Issued credential</small></span><span class="dci-status"><i></i>Current</span></div>
-          <div class="dci-record-card__main"><span class="dci-record-card__label">ACHIEVEMENT</span><h4 id="dci-record-achievement">Global Leadership Programme</h4><p>Awarded to <strong id="dci-record-recipient">Alex Morgan</strong></p></div>
-          <div class="dci-record-card__facts"><div><span>Issue date</span><strong id="dci-record-date">6 October 2026</strong></div><div><span>Credential ID</span><strong>UE-GLP-2026-0148</strong></div></div>
-          <div class="dci-record-card__skills"><span>CONNECTED SKILLS</span><div><i>Strategic leadership</i><i>Communication</i><i>Decision-making</i></div></div>
-          <div class="dci-record-card__skills"><span>EVIDENCE</span><div><i>Programme assessment</i><i>Completion criteria</i></div></div>
-          <div class="dci-record-card__bottom"><span>Verification available</span><a href="/sample-credential">Open credential page →</a></div>
-        </div>
-      </div>
-
-      <div class="dci-feature dci-feature--api">
-        <div class="dci-feature__copy"><p class="dci-kicker">01.5 / Issuance workflows</p><h3>Make credential issuance part of the workflow.</h3><p>When an eligible achievement is recorded in an institutional system, CertifyMe can be integrated to create and deliver the corresponding credential without requiring administrators to manually create each award. Connect through supported integrations, APIs and institutional workflows.</p>
-          <div class="dci-methods" role="group" aria-label="Credential issuance methods"><button type="button" data-issuance="individual"><b>Individual</b><span>Manual award</span></button><button type="button" data-issuance="bulk"><b>Bulk</b><span>CSV / cohort issuance</span></button><button type="button" class="is-selected" data-issuance="automated"><b>Automated</b><span>API / system integration</span></button></div>
-        </div>
-        <div class="dci-api-flow">
-          <div class="dci-api-flow__step dci-api-flow__source"><span id="dci-issuance-source">LMS / SIS / institutional system</span><small id="dci-issuance-sub">Eligible achievement event</small></div><i>↓</i>
-          <div class="dci-api-flow__step dci-api-flow__api"><span id="dci-issuance-action">API / integrated issuance</span><small>Configured issuance workflow</small></div><i>↓</i>
-          <div class="dci-api-flow__step dci-api-flow__core"><b>C</b><span>CertifyMe</span><small>Credential infrastructure</small></div><i>↓</i>
-          <div class="dci-api-flow__step dci-api-flow__out"><span>Credential</span><small>Delivered to learner</small></div>
-          <i>↓</i><div class="dci-api-flow__step dci-api-flow__out"><span>Learner</span><small>Credential access and sharing</small></div>
-        </div>
-      </div>
-
-      <div class="dci-feature dci-feature--share">
-        <div class="dci-feature__copy"><p class="dci-kicker">01.6 / Learner-controlled sharing</p><h3>Let the achievement travel with the learner.</h3><p>The learner should be able to carry the institution’s recognition beyond the institution’s systems, while the institution remains the source of the award.</p></div>
-        <div class="dci-share-map" aria-label="Credential can be shared through LinkedIn, email, CV, website, QR code, credential URL and wallet">
-          <div class="dci-share-map__center"><span class="dci-share-map__seal">UE</span><b>Institutional<br>credential</b><small>Persistent credential page</small></div>
-          <span class="dci-destination dci-destination--linkedin">LinkedIn</span><span class="dci-destination dci-destination--email">Email</span><span class="dci-destination dci-destination--cv">CV</span><span class="dci-destination dci-destination--web">Website</span><span class="dci-destination dci-destination--qr">QR</span><span class="dci-destination dci-destination--url">Credential URL</span><span class="dci-destination dci-destination--wallet">Wallet</span>
-          <svg class="dci-share-map__lines" viewBox="0 0 720 230" aria-hidden="true"><path d="M360 115 98 28M360 115 273 23M360 115 475 24M360 115 626 39M360 115 85 194M360 115 280 208M360 115 526 198"/></svg>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="dci-layer dci-layer--deep dci-layer--standards" id="layer-02" aria-labelledby="layer-02-title">
-    <div class="dci-shell">
-      <div class="dci-section-head dci-section-head--split"><div><p class="dci-eyebrow"><span>02</span> / Standards &amp; interoperability</p><h2 id="layer-02-title">Build credentials on standards — not inside a proprietary silo.</h2></div><div class="dci-section-head__aside"><p>A credential becomes significantly more valuable when other systems can understand it. Standards describe structured claims and their relationships, not just the appearance of a document.</p><p>They reduce dependency on a single presentation format; practical verification still relies on issuer keys and applicable status resources.</p></div></div>
-      <div class="dci-standards-grid">
-        <article class="dci-standard-card">
-          <div class="dci-standard-card__head"><span class="dci-standard-card__index">A</span><div><p class="dci-kicker">Achievement data model</p><h3>Open Badges 3.0</h3></div><span class="dci-standard-card__tag">1EdTech</span></div>
-          <p>Open Badges represents an achievement as structured information rather than treating the credential as only a visual document. An issuer makes an assertion about a recipient and an achievement, supported by criteria and, where provided, evidence and related metadata.</p>
-          <div class="dci-object" aria-label="Open Badges 3.0 object components">
-            <div class="dci-object__root"><b>Achievement Credential</b><span>Structured assertion</span></div>
-            <div class="dci-object__branches"><div><b>Issuer</b><span>Organisation</span></div><div><b>Recipient</b><span>Subject</span></div><div><b>Achievement</b><span>Title &amp; description</span></div><div><b>Criteria</b><span>How earned</span></div><div><b>Evidence</b><span>Supporting work</span></div><div><b>Metadata</b><span>Skills · status · relations</span></div></div>
-          </div>
-          <details class="dci-disclosure"><summary>Why independent certification matters</summary><p>CertifyMe's Open Badges 3.0 Issuer certification is listed in the 1EdTech registry. Independent certification demonstrates conformance to a defined standard rather than relying only on a vendor’s statement that its platform supports it.</p></details>
-          <p class="dci-standard-card__foot"><a href="https://site.imsglobal.org/certifications/certifyme/certifyme" target="_blank" rel="noopener noreferrer">View CertifyMe's 1EdTech certification listing →</a></p>
+      <div class="dci-standard-list">
+        <article class="dci-standard">
+          <div class="dci-standard__heading"><span>Achievement specification</span><h3>Open Badges 3.0</h3></div>
+          <p>An achievement-focused specification for structured claims about an issuer, recipient and achievement, with criteria and supporting evidence where provided.</p>
+          <details class="dci-details">
+            <summary>Certification and implementation</summary>
+            <p>CertifyMe supports Open Badges 3.0 as a certified issuer. Certification is scoped to the issuer capability; it is not a claim that every downstream verifier, wallet or service is certified.</p>
+            <a href="https://site.imsglobal.org/certifications/certifyme/certifyme" target="_blank" rel="noopener noreferrer">View CertifyMe’s 1EdTech certification listing ↗</a>
+          </details>
         </article>
-        <article class="dci-standard-card dci-standard-card--vc">
-          <div class="dci-standard-card__head"><span class="dci-standard-card__index">B</span><div><p class="dci-kicker">Credential trust model</p><h3>W3C Verifiable Credentials</h3></div><span class="dci-standard-card__tag">W3C model</span></div>
-          <p>The W3C Verifiable Credentials model supports machine-readable claims and cryptographic proofs that can be checked by a verifier. It is a broader data model; Open Badges 3.0 is an achievement-focused specification that can use the VC data model.</p>
-          <div class="dci-vc-flow" aria-label="Issuer creates a credential for a holder, which a verifier can check">
-            <div><span class="dci-vc-flow__icon">I</span><b>Issuer</b><small>University / institution</small></div><i>→</i><div class="dci-vc-flow__credential"><span class="dci-vc-flow__icon">C</span><b>Credential</b><small>Achievement + claims + proof</small></div><i>→</i><div><span class="dci-vc-flow__icon">H</span><b>Holder</b><small>Learner / professional</small></div><i>→</i><div><span class="dci-vc-flow__icon">V</span><b>Verifier</b><small>Employer / institution / regulator</small></div>
-          </div>
-          <div class="dci-json"><div><span>Credential object</span><span>STRUCTURED CLAIMS</span></div><pre><code>{
-  "issuer": "University Example",
-  "credentialSubject": {
-    "achievement": "Global Leadership Programme"
-  },
-  "proof": { "type": "issuer proof" },
-  "credentialStatus": "current"
-}</code></pre></div>
+        <article class="dci-standard">
+          <div class="dci-standard__heading"><span>Credential data model</span><h3>W3C Verifiable Credentials</h3></div>
+          <p>A W3C model for machine-readable claims and cryptographic proof. Open Badges 3.0 is an achievement specification that can use this model.</p>
+          <details class="dci-details">
+            <summary>What interoperability does—and does not—mean</summary>
+            <p>W3C is a standards model, not a vendor certification. Portability and ongoing checks depend on the credential format and on accessible issuer-key and status resources used by the verifier.</p>
+          </details>
         </article>
       </div>
-      <div class="dci-compare">
-        <div class="dci-compare__head"><p class="dci-kicker">Why the structure matters</p><h3>From document review to interpretable claims.</h3></div>
-        <div class="dci-compare__column"><span class="dci-compare__label">Traditional document</span><div>Visual document</div><i>↓</i><div>Human reads</div><i>↓</i><div>Manual verification</div></div>
-        <div class="dci-compare__switch" aria-hidden="true">→</div>
-        <div class="dci-compare__column dci-compare__column--structured"><span class="dci-compare__label">Structured credential</span><div>Machine-readable</div><i>↓</i><div>Structured claims</div><i>↓</i><div>Cryptographic proof</div><i>↓</i><div>Compatible verification</div></div>
-      </div>
-      <div class="dci-standards-route"><div><span>SIS</span><span>LMS</span><span>Assessment</span><span>Training</span></div><i>↓</i><b>CERTIFYME</b><i>↓</i><div class="dci-standards-route__standards"><span>Open Badges 3.0</span><span>W3C Verifiable Credentials</span></div><i>↓</i><div><span>Wallets</span><span>Learner records</span><span>Verification systems</span><span>Employer systems</span></div></div>
     </div>
   </section>
 
-  <section class="dci-layer dci-layer--deep dci-layer--trust" id="layer-03" aria-labelledby="layer-03-title">
+  <section class="dci-section dci-trust" id="dci-trust" aria-labelledby="dci-trust-title">
     <div class="dci-shell">
-      <div class="dci-section-head dci-section-head--split"><div><p class="dci-eyebrow"><span>03</span> / Verification &amp; trust</p><h2 id="layer-03-title">Prove three things.<br><em>Not just one.</em></h2></div><div class="dci-section-head__aside"><p>Verification is not a single yes-or-no question. Issuer authenticity, recipient identity and document integrity are distinct trust questions. A method that addresses one does not automatically prove the others.</p></div></div>
-      <div class="dci-trust-questions">
-        <article><span>01</span><div><b>Who issued it?</b><p>Issuer authenticity</p></div><i>Institution / key</i></article>
-        <article><span>02</span><div><b>Who was it issued to?</b><p>Recipient identity association</p></div><i>Subject / identity reference</i></article>
-        <article><span>03</span><div><b>Has anything changed?</b><p>Credential integrity</p></div><i>Signed data / document</i></article>
+      <div class="dci-section-heading">
+        <p class="dci-eyebrow">06 / Verification &amp; trust</p>
+        <h2 id="dci-trust-title">Verification &amp; Trust</h2>
+        <p>Credential integrity or issuer provenance does not independently establish that the person presenting a credential is its recipient.</p>
       </div>
-      <div class="dci-verify-tabs">
-        <div class="dci-verify-tabs__intro"><p class="dci-kicker">Verification pathways</p><h3>Different checks.<br>Different trust questions.</h3><p>Select a pathway to understand what it is designed to establish.</p>
-          <div class="dci-tab-list" role="tablist" aria-label="Credential verification methods">
-            <button id="dci-tab-id" role="tab" aria-selected="true" aria-controls="dci-panel-id" tabindex="0" data-verify-tab="id">ID tagging</button>
-            <button id="dci-tab-otp" role="tab" aria-selected="false" aria-controls="dci-panel-otp" tabindex="-1" data-verify-tab="otp">OTP</button>
-            <button id="dci-tab-pdf" role="tab" aria-selected="false" aria-controls="dci-panel-pdf" tabindex="-1" data-verify-tab="pdf">Signed PDF</button>
-            <button id="dci-tab-vc" role="tab" aria-selected="false" aria-controls="dci-panel-vc" tabindex="-1" data-verify-tab="vc">Signed credential</button>
-          </div>
+      <div class="dci-trust__questions">
+        <article><span>01</span><h3>Who issued it?</h3><p>Issuer provenance is checked against the issuer information and applicable trust material.</p></article>
+        <article><span>02</span><h3>Has it changed?</h3><p>A signature or proof can support integrity checking of the credential data or signed document.</p></article>
+        <article><span>03</span><h3>Who is presenting it?</h3><p>Recipient identity is a separate question requiring an appropriate identity-association or authentication method.</p></article>
+      </div>
+      <details class="dci-details dci-details--wide">
+        <summary>Verification methods and boundaries</summary>
+        <div class="dci-trust__detail-grid">
+          <p><strong>Credential ID or QR:</strong> directs a verifier to a credential record; lookup alone is not cryptographic integrity proof.</p>
+          <p><strong>Identity reference or OTP:</strong> may associate a credential with an approved recipient reference or show control of a registered contact, depending on configuration.</p>
+          <p><strong>Signed PDF or structured credential:</strong> can help check document integrity or issuer proof. A successful check does not by itself confirm the presenter’s real-world identity.</p>
+          <p><strong>Continuity:</strong> ongoing verification can rely on accessible issuer keys and applicable status or revocation resources.</p>
         </div>
-        <div class="dci-verify-panel-wrap">
-          <section class="dci-verify-panel" id="dci-panel-id" role="tabpanel" aria-labelledby="dci-tab-id" data-verify-panel="id">
-            <p class="dci-kicker">Recipient identity association</p><h4>Bind the credential to an identity reference.</h4><p>An institution can associate a credential with an approved identity reference belonging to the recipient. During verification, the relevant identifier can be used to confirm the credential’s intended recipient.</p>
-            <div class="dci-id-flow"><span>Credential</span><i>↓</i><span>Primary ID reference <b>•••• •• 42</b></span><i>↓</i><span>Intended recipient</span></div>
-          </section>
-          <section class="dci-verify-panel" id="dci-panel-otp" role="tabpanel" aria-labelledby="dci-tab-otp" data-verify-panel="otp" hidden>
-            <p class="dci-kicker">Recipient authentication</p><h4>Verify control of the registered contact.</h4><p>Where enabled and configured, a verifier can request an OTP to a registered email or supported contact. The recipient enters it to demonstrate control of that channel.</p>
-            <div class="dci-otp-flow"><span>Verifier starts check</span><i>↓</i><span>OTP to registered contact</span><i>↓</i><span>Recipient enters code</span><i>↓</i><span>Authentication result</span></div>
-          </section>
-          <section class="dci-verify-panel" id="dci-panel-pdf" role="tabpanel" aria-labelledby="dci-tab-pdf" data-verify-panel="pdf" hidden>
-            <p class="dci-kicker">Document integrity</p><h4>Drop the PDF. Check the signature.</h4><p>Download the credential PDF and validate its detached public-key signature. This checks document integrity; recipient identity uses a separate verification pathway.</p>
-            <div class="dci-sign-flow"><span>Original credential</span><i>→</i><span>Cryptographic signature</span><i>→</i><span>Uploaded PDF</span><i>→</i><span>Signature validation</span></div>
-            <div class="dci-drop" id="dci-pdf-drop" tabindex="0" role="group" aria-keyshortcuts="Enter Space" aria-label="Choose or drop the credential PDF to check its document signature">
-              <span class="dci-drop__icon" aria-hidden="true">PDF</span><strong>Drop the credential PDF here</strong><span>or choose a file to run a local integrity check</span>
-              <input id="dci-pdf-file" type="file" accept="application/pdf,.pdf" tabindex="-1" aria-label="Choose a credential PDF">
-              <button type="button" class="dci-drop__choose">Choose PDF</button>
-            </div>
-            <p id="dci-pdf-result" class="dci-pdf-result" role="status" aria-live="polite">Download the credential PDF, then drop it here to check its document signature.</p>
-            <a class="dci-download-sample" href="/assets4/docs/dci-credential.pdf" download>Download the signed credential PDF <span>↓</span></a>
-            <p class="dci-note">A match supports document integrity only. A PDF signature alone does not prove recipient identity.</p>
-          </section>
-          <section class="dci-verify-panel" id="dci-panel-vc" role="tabpanel" aria-labelledby="dci-tab-vc" data-verify-panel="vc" hidden>
-            <p class="dci-kicker">Structured proof</p><h4>Verify the credential’s structured proof.</h4><p>Open Badges 3.0 and W3C Verifiable Credentials can carry structured claims and proof. Verification examines credential data rather than relying only on visual inspection of a PDF.</p>
-            <div class="dci-proof-fields"><span>Issuer <b>University Example</b></span><span>Recipient <b>Alex Morgan</b></span><span>Achievement <b>Global Leadership Programme</b></span><span>Evidence <b>Programme criteria</b></span><span>Proof <b>Issuer proof</b></span><span>Status <b>Current</b></span></div>
-            <p class="dci-note">Ongoing verification can depend on issuer keys and applicable status or revocation resources.</p>
-          </section>
-        </div>
-      </div>
+      </details>
+    </div>
+  </section>
 
-      <div class="dci-verification-matrix">
-        <div class="dci-matrix-heading"><p class="dci-kicker">Verification matrix</p><h3>Match the method to the question.</h3><p>Mechanisms address different trust questions and can complement one another.</p></div>
-        <div class="dci-table-scroll" tabindex="0" aria-label="Scrollable verification method and purpose table"><table><thead><tr><th scope="col">Method</th><th scope="col">Primary purpose</th><th scope="col">What it does not establish alone</th></tr></thead><tbody><tr><th scope="row">Credential ID / QR</th><td>Credential lookup and issuer record</td><td>Cryptographic integrity by itself</td></tr><tr><th scope="row">ID tagging</th><td>Recipient identity association</td><td>Independent identity proof</td></tr><tr><th scope="row">OTP</th><td>Recipient authentication through registered contact</td><td>Issuer authenticity or document integrity</td></tr><tr><th scope="row">Cryptographic PDF</th><td>Document integrity</td><td>Recipient’s real-world identity</td></tr><tr><th scope="row">Signed Open Badge / VC</th><td>Structured credential proof</td><td>Continuity without issuer key/status resources</td></tr></tbody></table></div>
-      </div>
-      <div class="dci-lifecycle">
-        <div><p class="dci-kicker">Institutional governance</p><h3>Trust does not end when the credential is issued.</h3><p>Credential infrastructure must support lifecycle governance. Issuance is one point in an institution’s continuing responsibility for award status.</p></div>
-        <div class="dci-lifecycle__steps"><span>Create</span><i>→</i><span>Issue</span><i>→</i><span>Verify</span><i>→</i><span>Monitor status</span><i>→</i><span>Revoke / expire where applicable</span><i>→</i><span>Check current state</span></div>
+  <section class="dci-section dci-governance" aria-labelledby="dci-governance-title">
+    <div class="dci-shell dci-governance__grid">
+      <div><p class="dci-eyebrow">07 / The issuer owns the meaning</p><h2 id="dci-governance-title">Credential Governance</h2></div>
+      <div class="dci-prose">
+        <p>Governance defines which system is authoritative, which achievements qualify, what data may be used, who approves issuance and who stewards the credential after award.</p>
+        <p>CertifyMe provides the credential infrastructure around those decisions. It does not replace the organisation’s award authority, policies or responsibility for its claims.</p>
+        <details class="dci-details"><summary>Governance questions to settle</summary><ul><li>Which source is authoritative for achievement and recipient details?</li><li>Which criteria, evidence and fields belong in the credential?</li><li>Who approves issuance and handles corrections or revocation?</li><li>Which key and status resources must remain available for verification?</li></ul></details>
       </div>
     </div>
   </section>
 
-  <section class="dci-layer dci-layer--strategic" id="layer-04" aria-labelledby="layer-04-title">
-    <div class="dci-shell dci-strategy">
-      <div class="dci-strategy__intro"><p class="dci-eyebrow"><span>04</span> / Skill taxonomy alignment</p><h2 id="layer-04-title">Move from “what was completed?” to “what capability does it represent?”</h2><p>CertifyMe can connect institution-reviewed achievements and learning outcomes with structured skills. Frameworks such as ESCO, O*NET and institutional skill frameworks provide a common language; they do not replace academic judgement.</p><blockquote>The institution remains responsible for determining what its programme teaches and what an achievement represents. Taxonomies provide a common language for representing those capabilities.</blockquote><a class="dci-inline-link" href="/skills-taxonomy-mapping">Explore Skills Taxonomy Mapping <span>→</span></a></div>
-      <div class="dci-skill-map"><div class="dci-skill-map__steps"><span>Institutional achievement</span><i>↓</i><span>Learning outcome</span><i>↓</i><span>Skill</span><i>↓</i><span>Taxonomy mapping</span></div><div class="dci-skill-map__panel"><div class="dci-skill-map__title"><span>REVIEWED ALIGNMENT</span><span>Institution-controlled</span></div><div class="dci-skill-map__row"><span>Outcome</span><b>Evaluate strategic choices</b></div><div class="dci-skill-map__row"><span>Skill concept</span><b>Strategic decision-making</b></div><div class="dci-skill-map__row"><span>Framework</span><b>Institutional / ESCO / O*NET</b></div><div class="dci-skill-map__review"><span>Academic review</span><b>Required before representation</b></div></div></div>
-    </div>
-  </section>
-
-  <section class="dci-layer dci-layer--strategic dci-layer--record" id="layer-05" aria-labelledby="layer-05-title">
-    <div class="dci-shell dci-strategy">
-      <div class="dci-strategy__intro"><p class="dci-eyebrow"><span>05</span> / Comprehensive Learner Record</p><h2 id="layer-05-title">Connect achievements across the learner journey.</h2><p>A single credential represents one achievement. A learner record brings multiple achievements together — degrees, certificates, badges, skills, competencies, projects, experiences and professional learning.</p><p class="dci-callout">A Comprehensive Learner Record complements rather than replaces the authoritative academic transcript.</p><a class="dci-inline-link" href="/comprehensive-learner-record">Explore Comprehensive Learner Records <span>→</span></a></div>
-      <div class="dci-learner-record">
-        <div class="dci-record-inputs"><span>Degree</span><span>Certificate</span><span>Badge</span><span>Skills</span><span>Competencies</span><span>Projects &amp; experiences</span><span>Professional learning</span></div><div class="dci-record-merge"><i></i><i></i><i></i><b>+</b></div>
-        <div class="dci-learner-record__sheet"><div class="dci-lr-head"><span class="dci-lr-seal">UE</span><span><b>Learner achievement record</b><small>Connected learning evidence</small></span><span class="dci-lr-chip">CLR</span></div><div class="dci-lr-person"><strong>Alex Morgan</strong><span>Learning and achievement overview</span></div><div class="dci-lr-entry"><span class="dci-lr-entry__dot"></span><span><b>Global Leadership Programme</b><small>Certificate · University Example · 2025</small></span><span class="dci-lr-entry__verified">Verified</span></div><div class="dci-lr-entry"><span class="dci-lr-entry__dot"></span><span><b>Applied Data Practice</b><small>Micro-credential · University Example · 2024</small></span><span class="dci-lr-entry__verified">Verified</span></div><div class="dci-lr-skills"><span>SKILLS ACROSS ACHIEVEMENTS</span><i>Leadership</i><i>Data literacy</i><i>Communication</i></div></div>
-        <div class="dci-learner-record__caption">Credential A <b>+</b> Credential B <b>+</b> Credential C <b>+</b> Skills &amp; experiences <i>→</i> Connected learner record</div>
+  <section class="dci-section dci-extensions" aria-labelledby="dci-extensions-title">
+    <div class="dci-shell dci-extensions__inner">
+      <div><p class="dci-eyebrow">08 / Beyond the credential</p><h2 id="dci-extensions-title">Extend the achievement only where it adds value.</h2></div>
+      <p>Skills, records and workforce context are downstream options—not prerequisites for issuing or verifying a digital credential.</p>
+      <div class="dci-extension-links">
+        <a href="/skills-taxonomy-mapping"><span>04 / Skills</span><strong>Skill Taxonomy Mapping</strong><i aria-hidden="true">↗</i></a>
+        <a href="/comprehensive-learner-record"><span>05 / Records</span><strong>Comprehensive Learner Record</strong><i aria-hidden="true">↗</i></a>
+        <a href="/workforce-intelligence#wi-pathways"><span>06 / Context</span><strong>Workforce Intelligence &amp; Opportunity</strong><i aria-hidden="true">↗</i></a>
       </div>
-    </div>
-  </section>
-
-  <section class="dci-layer dci-layer--strategic dci-layer--workforce" id="layer-06" aria-labelledby="layer-06-title">
-    <div class="dci-shell dci-strategy">
-      <div class="dci-strategy__intro"><p class="dci-eyebrow"><span>06</span> / Workforce intelligence &amp; opportunity</p><h2 id="layer-06-title">Connect learning with the world of work.</h2><p>CertifyMe’s Job Engine brings separately sourced job information into context with structured skills and learner evidence. It can help institutions understand occupations, employers, locations, skill demand and opportunity relevance.</p><a class="dci-inline-link" href="/workforce-intelligence#wi-pathways">Explore workforce intelligence <span>→</span></a></div>
-      <div class="dci-job-engine"><div class="dci-job-engine__heading"><span>JOB ENGINE</span><span>Market context</span></div><div class="dci-job-engine__pipeline"><span>Job sources</span><i>↓</i><span>Job ingestion</span><i>↓</i><span>Data enrichment</span><i>↓</i><span>Normalisation</span><i>↓</i><span>Skill / taxonomy mapping</span><i>↓</i><span>Occupation &amp; job structuring</span><i>↓</i><span>Workforce intelligence</span></div><div class="dci-job-engine__join"><div><b>Reviewed skills</b><span>Learning evidence</span></div><i>+</i><div><b>Learner record</b><span>Connected achievements</span></div><i>+</i><div><b>Job intelligence</b><span>Market context</span></div></div><div class="dci-job-engine__result">Career / workforce context <span>Occupations · employers · locations · demand</span></div></div>
-    </div>
-  </section>
-
-  <section class="dci-signature" aria-labelledby="dci-signature-title">
-    <div class="dci-shell"><div class="dci-signature__head"><p class="dci-eyebrow">The architecture, at a glance</p><h2 id="dci-signature-title">An achievement grows into institutional intelligence.</h2></div>
-      <div class="dci-signature__stack">{% assign signature_layers = "01|ACCESS,02|INTEROPERABILITY,03|TRUST,04|SKILLS,05|RECORD,06|WORKFORCE" | split: "," %}{% for layer in signature_layers %}{% assign signature_parts = layer | split: "|" %}<a href="#layer-0{{ forloop.index }}"><b>{{ signature_parts[0] }}</b><span>{{ signature_parts[1] }}</span><i>↓</i></a>{% endfor %}</div>
-      <div class="dci-signature__journey"><span>Credential</span><i>→</i><span>Verifiable credential</span><i>→</i><span>Trusted achievement</span><i>→</i><span>Skills</span><i>→</i><span>Learner record</span><i>→</i><span>Workforce context</span></div>
-    </div>
-  </section>
-
-  <section class="dci-integration dci-section" aria-labelledby="dci-integration-title">
-    <div class="dci-shell dci-integration__grid"><div><p class="dci-eyebrow">Institutional fit</p><h2 id="dci-integration-title">Designed to work with the systems you already have.</h2><p>CertifyMe provides a dedicated credential and achievement layer around the institutional systems already supporting learning and administration. Connect through supported integrations, APIs and institutional workflows.</p></div>
-      <div class="dci-integration-map"><div class="dci-integration-map__inputs"><span>SIS</span><span>LMS</span><span>Assessment</span><span>Training</span><span>Identity</span><span>API / Webhooks</span></div><i>↓</i><b class="dci-integration-map__core">CERTIFYME <small>Credential &amp; achievement layer</small></b><i>↓</i><div class="dci-integration-map__outputs"><span>Credential</span><span>Verification</span><span>Skills</span><span>CLR</span><span>Workforce intelligence</span></div></div>
     </div>
   </section>
 
   {% include V4NewLook/infrastructure/implementation.html %}
 
-  <section class="dci-buyers">
-    <div class="dci-shell"><div class="dci-buyers__head"><p class="dci-eyebrow">Institutional outcomes</p><h2>One architecture. Distinct responsibilities.</h2><p>Credential infrastructure connects teams around a shared institutional achievement lifecycle.</p></div>
-      <div class="dci-buyer-grid">
-        <article><span class="dci-buyer-grid__number">01</span><p>Registrar</p><h3>Authority &amp; stewardship</h3><ul><li>Institutional authority</li><li>Credential provenance</li><li>Verification</li><li>Lifecycle governance</li></ul></article>
-        <article><span class="dci-buyer-grid__number">02</span><p>CIO / IT Director</p><h3>Architecture &amp; fit</h3><ul><li>Integration pathways</li><li>Standards</li><li>Security requirements</li><li>Scalability &amp; interoperability</li></ul></article>
-        <article><span class="dci-buyer-grid__number">03</span><p>Dean / Academic leader</p><h3>Meaningful recognition</h3><ul><li>Programme recognition</li><li>Learning outcomes</li><li>Skills</li><li>Lifelong learning</li></ul></article>
-        <article><span class="dci-buyer-grid__number">04</span><p>Careers / Workforce</p><h3>Learning in context</h3><ul><li>Skills</li><li>Occupations</li><li>Employer demand</li><li>Career context</li></ul></article>
-      </div>
+  <section class="dci-final" aria-labelledby="dci-final-title">
+    <div class="dci-shell dci-final__inner">
+      <div><p class="dci-eyebrow">CertifyMe / Digital Credential Infrastructure</p><h2 id="dci-final-title">Build Your Digital Credential Infrastructure</h2><p>Bring your achievement sources, governance requirements and integration context. Start with the credential lifecycle; extend it as your needs call for.</p></div>
+      <a class="dci-button dci-button--primary dci-button--final" href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer">Build Your Digital Credential Infrastructure <span aria-hidden="true">↗</span></a>
     </div>
   </section>
-
-  <section class="dci-final">
-    <div class="dci-shell dci-final__inner"><div><p class="dci-eyebrow">Digital credential infrastructure</p><h2>The certificate is only the beginning.</h2><p>Turn institutional learning evidence into credentials that can be accessed, shared, verified, connected to skills, assembled into learner records and understood in workforce context.</p></div><div class="dci-final__actions"><a class="dci-button dci-button--light" href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer">Request a Platform Demo <span>↗</span></a><a class="dci-final__link" href="/platform-overview">Explore the Platform <span>→</span></a></div></div>
-  </section>
-</div>
 </div>
 <script src="/assets4/js/digital-credential-infrastructure.js" defer></script>
-<script src="/assets4/js/dci-pdf-check.js" defer></script>
-<script src="/assets4/js/dci-solution.js" defer></script>
