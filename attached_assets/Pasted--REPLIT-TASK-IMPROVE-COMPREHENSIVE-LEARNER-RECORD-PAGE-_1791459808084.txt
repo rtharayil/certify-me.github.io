@@ -1,0 +1,132 @@
+# REPLIT TASK — IMPROVE COMPREHENSIVE LEARNER RECORD PAGE
+
+URL:
+https://www.certifyme.online/comprehensive-learner-record
+
+PURPOSE:
+
+This page explains:
+
+> HOW a Comprehensive Learner Record brings multiple achievements together.
+
+It should NOT become the Skill Passport page.
+
+## PRIMARY POSITIONING
+
+H1:
+
+# Comprehensive Learner Record
+
+Hero:
+
+## Bring the Complete Learning Journey Into One Connected Record
+
+Supporting copy:
+
+Connect degrees, certificates, badges, skills, competencies, projects and experiences into a structured learner record while preserving the institution as the source of each achievement.
+
+## MOST IMPORTANT DISTINCTION
+
+Make this visually prominent:
+
+TRANSCRIPT
+Academic record
+
+CLR
+Broader learning and achievement record
+
+Then:
+
+> A CLR complements the authoritative academic transcript. It does not replace it.
+
+## CORE STORY
+
+Separate:
+
+1. What the transcript contains
+2. What a CLR adds
+3. Where credentials fit
+4. Where skills fit
+5. Where experiences fit
+6. How provenance is preserved
+
+## UX
+
+Create an interactive "build the record" visual:
+
+Degree
++
+Certificate
++
+Badge
++
+Skills
++
+Project
++
+Experience
+
+↓
+
+COMPREHENSIVE LEARNER RECORD
+
+Clicking each item should show what it contributes.
+
+## SECTIONS
+
+1. What Is a Comprehensive Learner Record?
+2. Transcript vs CLR
+3. What Goes Into a CLR?
+4. How Credentials Become Record Components
+5. Skills & Competencies
+6. Projects & Experiences
+7. Provenance & Verification
+8. Standards
+9. Institutional Governance
+10. How CLR Connects to Skill Passport
+11. How CLR Connects to Workforce Intelligence
+12. CTA
+
+## IMPORTANT PRODUCT RELATIONSHIP
+
+Clearly explain:
+
+CertifyMe Credential Infrastructure
+→ creates/verifies achievements
+
+CLR
+→ connects those achievements
+
+Skill Passport
+→ presents the connected record to the learner
+
+Do not confuse these three.
+
+## SEO
+
+Primary:
+Comprehensive Learner Record
+
+Secondary:
+CLR platform
+Comprehensive Learner Record platform
+digital learner record
+CLR 2.0
+learner achievement record
+student digital record
+
+Title:
+Comprehensive Learner Record (CLR) Platform | CertifyMe
+
+H1:
+Comprehensive Learner Record
+
+Meta:
+Connect credentials, skills, competencies, projects and experiences in a Comprehensive Learner Record alongside the authoritative academic transcript.
+
+## CTA
+
+Build a Comprehensive Learner Record
+
+Secondary:
+Request an Institutional Demo

@@ -1,12 +1,13 @@
 ---
-layout: V4LayoutContent
+layout: V4LayoutCLR
 seo_pillar: true
-last_modified_at: "2026-10-04"
+last_modified_at: "2026-10-08"
 breadcrumb_label: "Comprehensive Learner Record"
 permalink: /comprehensive-learner-record
 title: "Comprehensive Learner Record (CLR) Platform | CertifyMe"
-description: "Build institution-led Comprehensive Learner Records connecting degrees, credentials, skills and achievements while retaining issuer provenance."
-abstract: "Connect institution-issued achievements and reviewed skills in a broader digital learner record, without replacing the academic transcript."
+description: "Connect credentials, skills, competencies, projects and experiences in a Comprehensive Learner Record alongside the authoritative academic transcript."
+abstract: "Connect degrees, certificates, badges, skills, competencies, projects and experiences into a structured learner record while preserving the institution as the source of each achievement."
+seo_keywords: "Comprehensive Learner Record, CLR platform, Comprehensive Learner Record platform, digital learner record, CLR 2.0, learner achievement record, student digital record"
 custom_stylesheet: /assets4/css/comprehensive-learner-record.css
 sitemap.priority: 0.9
 faqs:
@@ -19,15 +20,15 @@ faqs:
   - question: "What is CLR 2.0?"
     answer: "CLR 2.0 is a version of the 1EdTech Comprehensive Learner Record Standard. It specifies an interoperable format for representing a learner's achievements and uses the W3C Verifiable Credentials model; use of the standard alone does not verify a particular product or record."
   - question: "Does a CLR replace a transcript?"
-    answer: "No. A CLR can complement an academic transcript by representing a broader set of learning and professional achievements."
+    answer: "A CLR complements the authoritative academic transcript. It does not replace it."
   - question: "What can be included in a Comprehensive Learner Record?"
-    answer: "Depending on the implementation, it can represent courses, credentials, skills, competencies, projects, experiences and employer-based achievements."
+    answer: "Depending on the implementation, it can represent degrees, courses, certificates, badges, skills, competencies, projects, experiences and employer-based achievements."
   - question: "Can a CLR include digital badges?"
     answer: "Yes. Open Badges can form part of a broader learner record when represented according to the applicable standards."
   - question: "How does a CLR work with digital credentials?"
-    answer: "A CLR can bring separately issued digital credentials and their achievement information into a wider learning context. Each credential's issuer, evidence and status should remain traceable rather than becoming an unsupported skills summary."
+    answer: "Credential Infrastructure creates and verifies achievements; a CLR connects those achievements into a broader record. Each credential's issuer, evidence and status should remain traceable."
   - question: "Can a CLR include skills?"
-    answer: "Yes. Skills and competencies can be connected to the achievements and credentials that provide their context."
+    answer: "Yes. Skills and competencies can be connected to the achievements and credentials that provide their context. Reviewed relationships preserve the institution's definitions and supporting evidence."
   - question: "Is a CLR the same as a Learning and Employment Record?"
     answer: "Not exactly. Learning and Employment Record (LER) is a broader category of records, while the 1EdTech CLR Standard is a particular technical specification for interoperable learner records."
   - question: "Is CLR compatible with Verifiable Credentials?"
@@ -39,121 +40,4 @@ faqs:
   - question: "Can a learner have achievements from multiple organisations?"
     answer: "The CLR Standard supports achievements from multiple issuers. Each issuer and component achievement should retain its own provenance and verification context."
 ---
-
-<div class="clr">
-  <section class="clr-hero" aria-labelledby="clr-title">
-    <div class="clr-shell clr-hero-grid">
-      <div class="clr-hero-copy">
-        <p class="clr-eyebrow">Comprehensive Learner Record</p>
-        <h1 id="clr-title">Comprehensive Learner Records for Institutions</h1>
-        <p class="clr-lead">{% include V4NewLook/aeo-lead.html %}</p>
-        <div class="clr-actions"><a class="clr-button clr-primary" href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer">Request an Institutional Demo</a><a class="clr-button clr-outline" href="/workforce-intelligence">Explore Workforce Intelligence <span aria-hidden="true">→</span></a></div>
-        <p class="clr-trustline">For universities and professional bodies <span aria-hidden="true">·</span> Institution-led and evidence-linked</p>
-      </div>
-      <div id="sample-record" class="clr-preview" aria-label="Learner record">
-        <div class="clr-preview-top"><span>Comprehensive learner record</span></div>
-        <div class="clr-preview-identity"><div class="clr-avatar" aria-hidden="true">LP</div><div><strong>Lisa Patinson</strong><span>BSc Data Science · Riverside University</span></div></div>
-        <div class="clr-preview-group"><span>Academic achievement</span><strong>BSc Data Science</strong><small>2026</small></div>
-        <div class="clr-preview-grid"><div class="clr-preview-group"><span>Credentials</span><strong>Data Analytics Certificate</strong><small>Cloud Computing Micro-credential</small></div><div class="clr-preview-group"><span>Skills associated with learning</span><strong>Data analysis · Python</strong><small>SQL · Statistical analysis</small></div></div>
-        <div class="clr-preview-group"><span>Experiences</span><strong>Industry placement · Capstone project</strong></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="clr-section" aria-labelledby="clr-why">
-    <div class="clr-shell">
-      <div class="clr-intro"><p class="clr-eyebrow">One record, broader institutional evidence</p><h2 id="clr-why">Represent More of What Your Institution Recognises</h2><p>A Comprehensive Learner Record (CLR) is a structured digital record of achievements, credentials and related learning evidence. Universities use the model to connect degrees, courses, micro-credentials, skills and experiences across systems while preserving who issued each claim. The CLR complements the transcript; it does not replace the authoritative academic record.</p></div>
-      <div class="clr-compare">
-        <div><span class="clr-kicker">An essential academic record</span><h3>Transcript</h3><p>Documents courses, grades and formal academic progression.</p></div>
-        <div><span class="clr-kicker">A broader learning record</span><h3>Comprehensive Learner Record</h3><p>Can connect academic achievements with additional credentials, skills and experiences in a portable digital format.</p></div>
-      </div>
-      <p class="clr-note">A CLR complements the transcript. It does not replace the authoritative academic record.</p>
-    </div>
-  </section>
-
-  <section class="clr-section clr-soft" aria-labelledby="clr-systems">
-    <div class="clr-shell">
-      <div class="clr-intro"><p class="clr-eyebrow">For technology leadership</p><h2 id="clr-systems">Plan a Governed Record Across Existing Systems</h2><p>Student information systems, learning platforms, credential infrastructure and skills frameworks hold different pieces of the evidence. A CLR strategy defines how they contribute to a structured record, which institution or body issued each achievement, and where sharing and verification occur.</p></div>
-      <div class="clr-architecture" aria-label="Institutional sources, learner record and downstream uses">
-        <div><span>Institutional sources</span><strong>Student information · learning management · digital credentials · reviewed skills</strong><small>Identify ownership, permissions and source of truth.</small></div>
-        <b aria-hidden="true">→</b>
-        <div class="clr-architecture-focus"><span>Record layer</span><strong>Comprehensive Learner Record</strong><small>Keep achievement, issuer and evidence context together.</small></div>
-        <b aria-hidden="true">→</b>
-        <div><span>Appropriate uses</span><strong>Verification · learner-led sharing · institutional insight</strong><small>Define access, exchange and status-check requirements.</small></div>
-      </div>
-      <p class="clr-note">Architecture illustration, not a claim of out-of-the-box SIS/LMS connections. Confirm supported APIs, integrations, identity and data flows for each implementation.</p>
-      <a class="clr-link" href="/allIntegrations">Explore existing integrations <span aria-hidden="true">→</span></a>
-    </div>
-  </section>
-
-  <section class="clr-section" aria-labelledby="clr-concept">
-    <div class="clr-shell">
-      <div class="clr-intro"><p class="clr-eyebrow">The CLR model</p><h2 id="clr-concept">From Individual Credentials to a More Complete Record</h2><p>A CLR connects related achievements while preserving the meaning and origin of each component. The underlying credentials do not disappear into a summary.</p></div>
-      <div class="clr-flow" aria-label="Academic achievements, credentials, skills and experiences contribute to a comprehensive learner record">
-        <div class="clr-flow-inputs"><span>Degrees &amp; courses</span><span>Certificates &amp; badges</span><span>Skills &amp; competencies</span><span>Projects &amp; experiences</span></div><span class="clr-flow-arrow" aria-hidden="true">→</span><div class="clr-flow-result"><small>Connected together</small><strong>Comprehensive<br>Learner Record</strong><span>Issuer and achievement context retained</span></div>
-      </div>
-      <div class="clr-six">
-        <article><h3>Academic achievements</h3><p>Courses, degrees and formal learning.</p></article><article><h3>Credentials</h3><p>Certificates, badges and micro-credentials.</p></article><article><h3>Skills &amp; competencies</h3><p>Capabilities tied to learning outcomes.</p></article><article><h3>Projects &amp; experiences</h3><p>Relevant placements, projects and evidence.</p></article><article><h3>Professional development</h3><p>Continuing education and certifications.</p></article><article><h3>Work-based learning</h3><p>Where supported, employer-issued milestones.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="clr-section" aria-labelledby="clr-university">
-    <div class="clr-shell">
-      <div class="clr-intro"><p class="clr-eyebrow">For university leadership</p><h2 id="clr-university">One Record. Multiple Institutional Uses.</h2><p>Connect achievements across the student lifecycle so programme, credential and skills evidence can be understood together—without weakening the role of the Registrar or the academic transcript.</p></div>
-      <div class="clr-three">
-        <article><span>01 / Academic strategy</span><h3>Broader programme evidence</h3><p>Represent degrees, courses and micro-credentials with their achievement context.</p></article>
-        <article><span>02 / Skills &amp; employability</span><h3>Structured capabilities</h3><p>Connect reviewed skills to the outcomes and credentials that support them.</p></article>
-        <article><span>03 / Digital strategy</span><h3>Trusted exchange</h3><p>Plan portable records and appropriate sharing while retaining issuer provenance.</p></article>
-      </div>
-      <a class="clr-link" href="/credentials-higher-education">Explore credentials for higher education <span aria-hidden="true">→</span></a><br>
-      <a class="clr-link" href="/">Explore Digital Credential Infrastructure <span aria-hidden="true">→</span></a>
-    </div>
-  </section>
-
-  <section class="clr-section clr-navy" aria-labelledby="clr-skills">
-    <div class="clr-shell clr-split">
-      <div><p class="clr-eyebrow">Skills in context</p><h2 id="clr-skills">Keep Skills Connected to Their Evidence</h2><p>A skill connected to an assessed learning outcome or issued credential tells a clearer story than a list of keywords. Institutional teams define and review those relationships through Skills Taxonomy Mapping; the CLR retains the achievement and issuer context.</p><a class="clr-link" href="/skills-taxonomy-mapping">Explore Skills Taxonomy Mapping <span aria-hidden="true">→</span></a></div>
-      <div class="clr-chain" aria-label="Learning connects to achievement, skills, credentials and the learner record"><span>Learning</span><span>Achievement</span><span>Skill</span><span>Credential</span><span>Learner record</span></div>
-    </div>
-  </section>
-
-  <section class="clr-section" aria-labelledby="clr-trust">
-    <div class="clr-shell">
-      <div class="clr-intro"><p class="clr-eyebrow">Provenance &amp; verification</p><h2 id="clr-trust">A Learner Record Should Be More Than a Static Document</h2><p>A verifiable record depends on who issued an achievement, what was claimed and how its status can be checked. The <a href="https://www.1edtech.org/standards/clr" target="_blank" rel="noopener noreferrer">1EdTech CLR Standard</a> describes a format for interoperable learner records; <a href="https://www.w3.org/TR/vc-data-model-2.0/" target="_blank" rel="noopener noreferrer">W3C Verifiable Credentials</a> provide a model for machine-verifiable claims.</p></div>
-      <div class="clr-three"><article><span>01 / Issuer</span><h3>Know the source</h3><p>Keep each achievement connected to its issuing organisation.</p></article><article><span>02 / Learner</span><h3>Keep the context</h3><p>Bring related achievements together without erasing their origins.</p></article><article><span>03 / Verifier</span><h3>Check the claim</h3><p>Use available issuer and status information to assess a credential.</p></article></div>
-      <a class="clr-link" href="/certificate-verification">Explore credential verification <span aria-hidden="true">→</span></a>
-    </div>
-  </section>
-
-  <section class="clr-section clr-soft" aria-labelledby="clr-issuers">
-    <div class="clr-shell clr-split">
-      <div><p class="clr-eyebrow">Across organisations</p><h2 id="clr-issuers">Learning Doesn't Come From One Institution</h2><p>A learner's record may connect achievements from a university, professional body, training provider and employer. Each organisation remains the source of its own claims; bringing achievements together does not transfer or guarantee their validity.</p><a class="clr-link" href="/skills-passport">Explore the Skills Passport <span aria-hidden="true">→</span></a></div>
-      <div class="clr-source-list" aria-label="Sources of a learner's achievements"><div><span>University</span><strong>Degree</strong></div><div><span>Professional body</span><strong>Certification</strong></div><div><span>Training provider</span><strong>Short course</strong></div><div><span>Employer</span><strong>Work-based milestone</strong></div></div>
-    </div>
-  </section>
-
-  <section class="clr-section" aria-labelledby="clr-professional">
-    <div class="clr-shell clr-split">
-      <div><p class="clr-eyebrow">For chartered &amp; certification bodies</p><h2 id="clr-professional">Comprehensive Records for Professional Achievement</h2><p>A professional body can use the CLR model to connect certification, membership achievements, continuing professional development (CPD), assessed competencies and renewal milestones. The issuing body remains authoritative for its own standards, evidence and credential status.</p><a class="clr-link" href="/digital-badges-for-associations">Explore association credentials <span aria-hidden="true">→</span></a></div>
-      <div class="clr-checks"><span>Professional certifications</span><span>Membership achievements</span><span>CPD and work-based learning</span><span>Competencies and skills</span><span>Renewal milestones and verification</span></div>
-    </div>
-  </section>
-
-  <section class="clr-section" aria-labelledby="clr-governance">
-    <div class="clr-shell">
-      <div class="clr-intro"><p class="clr-eyebrow">Standards &amp; governance</p><h2 id="clr-governance">Standards First. Institutionally Governed.</h2><p><a href="https://www.1edtech.org/standards/clr" target="_blank" rel="noopener noreferrer">1EdTech's CLR 2.0 standard</a>, <a href="https://www.1edtech.org/standards/ob" target="_blank" rel="noopener noreferrer">Open Badges 3.0</a> and the <a href="https://www.w3.org/TR/vc-data-model-2.0/" target="_blank" rel="noopener noreferrer">W3C Verifiable Credentials model</a> provide relevant technical foundations. An institution still decides what an achievement means, what evidence supports it and who can issue it. A standard reference is not proof that the illustrated record is certified or independently verified.</p></div>
-      <div class="clr-six"><article><h3>Accuracy</h3><p>Represent the achievement as issued.</p></article><article><h3>Provenance</h3><p>Keep the issuing source clear.</p></article><article><h3>Verification</h3><p>Check relevant credential status.</p></article><article><h3>Interoperability</h3><p>Use open formats where appropriate.</p></article><article><h3>Learner control</h3><p>Support access and sharing.</p></article><article><h3>Institutional oversight</h3><p>Retain academic and professional governance.</p></article></div>
-      <a class="clr-link" href="/digital-badges">Explore digital badges <span aria-hidden="true">→</span></a>
-    </div>
-  </section>
-
-  <section class="clr-section clr-navy" aria-labelledby="clr-process">
-    <div class="clr-shell">
-      <div class="clr-intro"><p class="clr-eyebrow">A practical model</p><h2 id="clr-process">Build a Comprehensive Learner Record in Six Steps</h2></div>
-      <ol class="clr-steps"><li><span>01</span><h3>Connect</h3><p>Identify relevant institutional systems and data.</p></li><li><span>02</span><h3>Define</h3><p>Agree which achievements and skills belong.</p></li><li><span>03</span><h3>Issue</h3><p>Create digital credentials for eligible achievements.</p></li><li><span>04</span><h3>Assemble</h3><p>Bring related records together with their context.</p></li><li><span>05</span><h3>Verify</h3><p>Preserve issuer and credential status information.</p></li><li><span>06</span><h3>Share</h3><p>Enable appropriate learner-led sharing.</p></li></ol>
-    </div>
-  </section>
-
-  <section class="clr-final" aria-labelledby="clr-final-title"><div class="clr-shell clr-final-inner"><div><p class="clr-eyebrow">Discuss your institution's context</p><h2 id="clr-final-title">Connect Achievements in a Governed Learner Record</h2><p>Talk through your credential sources, skills frameworks and verification needs as part of an institution-led digital credential strategy.</p><small>For universities, colleges, professional associations and certification authorities.</small></div><div class="clr-actions"><a class="clr-button clr-light" href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer">Request an Institutional Demo</a><a class="clr-button clr-on-dark" href="/workforce-intelligence">Explore Workforce Intelligence <span aria-hidden="true">→</span></a></div></div></section>
-</div>
+{% include V4NewLook/clr/page.html %}
