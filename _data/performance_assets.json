@@ -465,9 +465,9 @@
       "bytes": 15639
     },
     "/assets4/css/workforce-intelligence.css": {
-      "href": "/assets4/css/workforce-intelligence.5672b4f80ed8.min.css",
-      "original_bytes": 20496,
-      "bytes": 18185
+      "href": "/assets4/css/workforce-intelligence.f583817677d7.min.css",
+      "original_bytes": 20547,
+      "bytes": 18218
     }
   },
   "method": "Measured resources only; lossless WebP, unchanged SVG vectors with smaller lossless embedded rasters; originals retained. CSS parser minification, no unused-rule purge."

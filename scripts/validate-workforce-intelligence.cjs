@@ -34,6 +34,8 @@ async function run() {
       assert.equal((await page.goto(base + route, { waitUntil: "load" })).status(), 200);
       await page.evaluate(() => document.fonts.ready);
       const root = page.locator("#wi-page");
+      assert.equal(await root.locator(".wi-hero-head .wi-button").first().evaluate(node => getComputedStyle(node).backgroundColor), "rgb(57, 53, 139)");
+      assert.equal(await root.locator(".wi-hero").evaluate(node => getComputedStyle(node).backgroundColor), "rgb(245, 245, 255)");
       assert.equal(await page.title(), "Workforce Intelligence for Universities | CertifyMe");
       assert.equal(await page.locator('meta[name="description"]').getAttribute("content"),
         "Connect programme skills and learning evidence to occupations, employer demand and workforce trends for institutional planning.");

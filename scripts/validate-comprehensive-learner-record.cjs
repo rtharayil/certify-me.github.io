@@ -31,6 +31,8 @@ async function run() {
       assert.equal((await page.goto(base + route, { waitUntil: "load" })).status(), 200);
       await page.evaluate(() => document.fonts.ready);
       const root = page.locator("#clr-page");
+      assert.equal(await root.locator(".clr-hero .clr-primary").evaluate(node => getComputedStyle(node).backgroundColor), "rgb(57, 53, 139)");
+      assert.equal(await root.locator(".clr-hero").evaluate(node => getComputedStyle(node).backgroundColor), "rgb(245, 245, 255)");
       assert.equal(await page.title(), "Comprehensive Learner Record (CLR) Platform | CertifyMe");
       assert.equal(await page.locator('meta[name="description"]').getAttribute("content"),
         "Connect credentials, skills, competencies, projects and experiences in a Comprehensive Learner Record alongside the authoritative academic transcript.");
