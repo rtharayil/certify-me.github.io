@@ -1,0 +1,138 @@
+# REPLIT TASK — IMPROVE SKILLS TAXONOMY MAPPING
+
+URL:
+https://www.certifyme.online/skills-taxonomy-mapping
+
+PURPOSE:
+
+This Solution page explains:
+
+> HOW CertifyMe maps institutional achievements and learning outcomes to structured skills.
+
+It should NOT become a general university digital credential page.
+
+## POSITIONING
+
+Change the primary positioning from:
+
+Skills Taxonomy Mapping for Universities
+
+to:
+
+# Skills Taxonomy Mapping
+
+Hero:
+
+## Turn Learning Outcomes Into Structured Skills
+
+Supporting copy:
+
+Connect institution-defined learning outcomes, achievements and evidence to reviewed skills using recognised and institution-specific taxonomies.
+
+## CORE STORY
+
+The narrative must be:
+
+Learning outcome
+→ Evidence
+→ Institutional review
+→ Skill
+→ Taxonomy
+→ Credential
+→ Learner record
+→ Workforce context
+
+Make this visual.
+
+## EXPLAIN AN IMPORTANT PRINCIPLE
+
+Do not imply that AI automatically determines what a credential means.
+
+Clearly communicate:
+
+> The institution determines what an achievement represents. Taxonomies provide a common language for representing and comparing those capabilities.
+
+This is already one of the strongest ideas on the current page. Preserve it.
+
+## UX
+
+Create an interactive mapping example:
+
+Institution outcome:
+"Evaluate strategic choices"
+
+↓
+Mapped skill:
+"Strategic decision-making"
+
+↓
+Framework:
+Institutional / ESCO / O*NET
+
+↓
+Credential:
+Programme achievement
+
+Allow users to explore 2–3 examples.
+
+## SECTIONS
+
+1. What Is Skills Taxonomy Mapping?
+2. Why Credentials Need a Skills Layer
+3. How CertifyMe Maps Outcomes to Skills
+4. Institutional Skills vs External Taxonomies
+5. ESCO / O*NET / Custom Frameworks
+6. Review & Governance
+7. Skills in Credentials
+8. Skills in Learner Records
+9. Skills in Workforce Intelligence
+10. CTA
+
+## DO NOT
+
+Do not spend large sections explaining digital credentials generally.
+
+Do not duplicate the Infrastructure page.
+
+Do not turn this into a workforce-intelligence page.
+
+## SEO
+
+Primary:
+Skills Taxonomy Mapping
+
+Secondary:
+skills taxonomy mapping software
+credential to skill mapping
+learning outcomes to skills
+skills mapping for institutions
+ESCO skills mapping
+O*NET skills mapping
+digital credential skills mapping
+
+Title:
+Skills Taxonomy Mapping | CertifyMe
+
+H1:
+Skills Taxonomy Mapping
+
+Meta:
+Map learning outcomes and institutional achievements to reviewed skills using ESCO, O*NET and custom skills frameworks.
+
+## INTERNAL LINKS
+
+Link naturally to:
+
+Digital Credential Infrastructure
+Comprehensive Learner Record
+Workforce Intelligence
+Skill Passport
+
+## CTA
+
+Map Your Skills Framework
+
+Secondary:
+Request an Institutional Demo
+
+Make the page visually demonstrate the mapping process rather than explaining it only through text.
