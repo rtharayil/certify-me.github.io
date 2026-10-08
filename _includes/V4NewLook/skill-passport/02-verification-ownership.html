@@ -1,91 +1,88 @@
-<section class="sp-section sp-attestation" id="verified-achievements" aria-labelledby="sp-attestation-title">
+<section class="sp-section sp-explorer" id="passport-explorer" aria-labelledby="sp-explorer-title">
   <div class="sp-shell">
-    <div class="sp-attestation-grid">
-      <div class="sp-attestation-copy">
-        <p class="sp-eyebrow">Trust, with provenance</p>
-        <h2 id="sp-attestation-title">A learner record is more valuable when someone else can trust it.</h2>
-        <div class="sp-voice-contrast">
-          <div><strong>A CV says</strong>“I have this skill.”</div>
-          <div><strong>A portfolio says</strong>“Here is my work.”</div>
-          <div><strong>A Skill Passport adds</strong>“Here is the evidence, and here is who verified it.”</div>
-        </div>
-        <p>A learner can add an achievement and supporting evidence, then request an attestation. An educator or mentor reviews the submission and may approve, decline or ask for more information. An approval is digitally signed.</p>
-        <div class="sp-trust-chain" aria-label="Attested achievement trust chain">
-          <span>Learner</span><b aria-hidden="true">→</b><span>Achievement / evidence</span><b aria-hidden="true">→</b><span>Attestation</span><b aria-hidden="true">→</b><span>Digital signature</span><b aria-hidden="true">→</b><span>Verified record</span><b aria-hidden="true">→</b><span>Verifier</span>
-        </div>
-        <ol class="sp-workflow">
-          <li>Record an achievement</li><li>Attach supporting evidence</li><li>Request an attestation</li>
-          <li>Educator or mentor reviews</li><li>Approve and digitally sign</li><li>Add the attested achievement to the record</li><li>Share the verification link</li>
-        </ol>
-        <div class="sp-entry-types" aria-label="Record entry types">
-          <span>Institution-issued credentials</span><span>Learner-added entries</span><span>Educator-attested achievements</span>
-        </div>
+    <div class="sp-section-heading sp-explorer-heading">
+      <p class="sp-eyebrow">04 · Explore the record</p>
+      <h2 id="sp-explorer-title">Credentials</h2>
+      <p>Move through the parts of a Skill Passport. Each item keeps its source, and verification applies to that item—not automatically to everything in the record.</p>
+    </div>
+    <div class="sp-source-key" aria-label="How record items are sourced and verified">
+      <span class="sp-source-pill is-issued"><i aria-hidden="true"></i><b>Institution-issued</b><small>Issued by an institution</small></span>
+      <span class="sp-source-pill is-added"><i aria-hidden="true"></i><b>Learner-added</b><small>Added by the learner</small></span>
+      <span class="sp-source-pill is-attested"><i aria-hidden="true"></i><b>Attested</b><small>Reviewed and confirmed by an attestor</small></span>
+    </div>
+    <div class="sp-explorer-frame" data-sp-tabs>
+      <div class="sp-tab-list" role="tablist" aria-label="Skill Passport record categories">
+        <button type="button" role="tab" id="sp-tab-credentials" aria-controls="sp-panel-credentials" aria-selected="true" tabindex="0" data-sp-tab="credentials">Credentials</button>
+        <button type="button" role="tab" id="sp-tab-skills" aria-controls="sp-panel-skills" aria-selected="false" tabindex="-1" data-sp-tab="skills">Skills</button>
+        <button type="button" role="tab" id="sp-tab-projects" aria-controls="sp-panel-projects" aria-selected="false" tabindex="-1" data-sp-tab="projects">Projects</button>
+        <button type="button" role="tab" id="sp-tab-experiences" aria-controls="sp-panel-experiences" aria-selected="false" tabindex="-1" data-sp-tab="experiences">Experiences</button>
+        <button type="button" role="tab" id="sp-tab-achievements" aria-controls="sp-panel-achievements" aria-selected="false" tabindex="-1" data-sp-tab="achievements">Achievements</button>
+        <button type="button" role="tab" id="sp-tab-evidence" aria-controls="sp-panel-evidence" aria-selected="false" tabindex="-1" data-sp-tab="evidence">Evidence</button>
       </div>
-      <figure class="sp-media sp-attestation-visual">
-        <img src="/assets4/images/skill-passport/skill-passport-attestation-workflow.webp" width="800" height="902" alt="SkillStory attestation workflow from learner achievement and evidence through educator review to digitally signed approval" loading="lazy">
-        <figcaption>Attestation adds an educator or mentor’s confirmation to a learner-recorded achievement.</figcaption>
-        <a class="sp-product-view" href="/assets4/images/skill-passport/skill-passport-attestation-workflow.webp" target="_blank" rel="noopener noreferrer">View the full attestation workflow <span aria-hidden="true">↗</span></a>
-      </figure>
+      <div class="sp-panel-stack">
+        <section class="sp-record-panel" role="tabpanel" id="sp-panel-credentials" aria-labelledby="sp-tab-credentials" tabindex="0" data-sp-panel="credentials">
+          <div class="sp-record-copy"><span class="sp-record-kicker">An achievement from its issuer</span><h3>Credentials</h3><p>Digital certificates and badges record achievements awarded by an institution. Their source remains visible as the learner brings them into a wider record.</p><p class="sp-item-status"><span class="sp-status-dot is-issued"></span><strong>Institution-issued</strong><span>Issued by the awarding institution</span></p><p class="sp-verification-note">Verification is specific to the credential and its issuer.</p></div>
+          <figure class="sp-record-visual"><a href="/assets4/images/skill-passport/student-learner-record-ananya.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size SkillStory learner record visual"><img src="/assets4/images/skill-passport/student-learner-record-ananya.webp" width="1178" height="1335" alt="SkillStory learner record visual representing credentials within a connected learner profile" loading="lazy"></a><figcaption>Credentials sit alongside other achievements, with their source retained.</figcaption></figure>
+        </section>
+        <section class="sp-record-panel" role="tabpanel" id="sp-panel-skills" aria-labelledby="sp-tab-skills" tabindex="0" data-sp-panel="skills">
+          <div class="sp-record-copy"><span class="sp-record-kicker">Capability with context</span><h3>Skills</h3><p>Skills help explain what learning represents. Each skill is shown with the achievement or evidence that supports it, whether institution-issued, learner-added or attested.</p><p class="sp-item-status"><span class="sp-status-dot is-source-linked"></span><strong>Source-linked</strong><span>Shown with its supporting achievement or context</span></p><p class="sp-verification-note">Each supporting item carries its own source and verification status.</p></div>
+          <figure class="sp-record-visual"><a href="/assets4/images/skill-passport/student-skill-passport-overview.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size SkillStory Skill Passport overview"><img src="/assets4/images/skill-passport/student-skill-passport-overview.webp" width="800" height="916" alt="SkillStory Skill Passport overview with skills, projects, credentials and achievements in one learner record" loading="lazy"></a><figcaption>Skills can be connected to the learning and evidence behind them.</figcaption></figure>
+        </section>
+        <section class="sp-record-panel" role="tabpanel" id="sp-panel-projects" aria-labelledby="sp-tab-projects" tabindex="0" data-sp-panel="projects">
+          <div class="sp-record-copy"><span class="sp-record-kicker">Work, shown in context</span><h3>Projects</h3><p>Research, designs, software, publications and other work let learners show how they applied what they learned. A project can include its own supporting evidence.</p><p class="sp-item-status"><span class="sp-status-dot is-added"></span><strong>Learner-added</strong><span>Added and described by the learner</span></p><p class="sp-verification-note">Learner-added work remains identified as learner-added unless separately attested.</p></div>
+          <figure class="sp-record-visual"><a href="/assets4/images/skill-passport/cv-portfolio-showcase.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size SkillStory portfolio and project showcase"><img src="/assets4/images/skill-passport/cv-portfolio-showcase.webp" width="900" height="591" alt="SkillStory portfolio showcase presenting learner projects and supporting evidence" loading="lazy"></a><figcaption>Projects bring tangible work into the learner's achievement story.</figcaption></figure>
+        </section>
+        <section class="sp-record-panel" role="tabpanel" id="sp-panel-experiences" aria-labelledby="sp-tab-experiences" tabindex="0" data-sp-panel="experiences">
+          <div class="sp-record-copy"><span class="sp-record-kicker">Learning across settings</span><h3>Experiences</h3><p>Internships, volunteering, leadership and other meaningful activity can make a record more complete. The learner can describe the experience and add material that supports it.</p><p class="sp-item-status"><span class="sp-status-dot is-added"></span><strong>Learner-added</strong><span>Source and supporting material stay visible</span></p><p class="sp-verification-note">An experience is not institution-verified simply because it appears in the passport.</p></div>
+          <figure class="sp-record-visual"><a href="/assets4/images/skill-passport/learner-journey.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size SkillStory learner journey visual"><img src="/assets4/images/skill-passport/learner-journey.webp" width="836" height="941" alt="SkillStory learner journey visual showing a learner record across education and professional life" loading="lazy"></a><figcaption>A learner's story grows through education and experiences over time.</figcaption></figure>
+        </section>
+        <section class="sp-record-panel" role="tabpanel" id="sp-panel-achievements" aria-labelledby="sp-tab-achievements" tabindex="0" data-sp-panel="achievements">
+          <div class="sp-record-copy"><span class="sp-record-kicker">A trusted confirmation</span><h3>Achievements</h3><p>A learner can record an achievement and request an educator or mentor to attest to it. The attestor reviews the submitted achievement and supporting evidence before confirming it.</p><p class="sp-item-status"><span class="sp-status-dot is-attested"></span><strong>Attested</strong><span>Confirmed by an identified attestor</span></p><p class="sp-verification-note">Attestation applies to the reviewed achievement and its evidence, not the entire passport.</p></div>
+          <figure class="sp-record-visual"><a href="/assets4/images/skill-passport/skill-passport-attestation-workflow.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size SkillStory attestation workflow"><img src="/assets4/images/skill-passport/skill-passport-attestation-workflow.webp" width="800" height="902" alt="SkillStory attestation workflow showing learner evidence reviewed and digitally signed by an educator or mentor" loading="lazy"></a><figcaption>Attestation adds an educator's or mentor's confirmation to a specific achievement.</figcaption></figure>
+        </section>
+        <section class="sp-record-panel" role="tabpanel" id="sp-panel-evidence" aria-labelledby="sp-tab-evidence" tabindex="0" data-sp-panel="evidence">
+          <div class="sp-record-copy"><span class="sp-record-kicker">The source behind the claim</span><h3>Evidence</h3><p>Documents, links and outputs can support credentials, skills, projects or experiences. The source stays attached to the item so a recipient can understand what is being presented.</p><p class="sp-item-status"><span class="sp-status-dot is-added"></span><strong>Source retained</strong><span>Evidence may be learner-added or issuer-provided</span></p><p class="sp-verification-note">Evidence can support verification; it does not make every connected item verified automatically.</p></div>
+          <figure class="sp-record-visual"><a href="/assets4/images/skill-passport/portfolio-tpl-classic-light.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size SkillStory portfolio visual"><img src="/assets4/images/skill-passport/portfolio-tpl-classic-light.webp" width="680" height="440" alt="SkillStory portfolio presentation of learner work and supporting evidence" loading="lazy"></a><figcaption>Supporting material gives recipients context for a learner's work.</figcaption></figure>
+        </section>
+      </div>
+      <p class="sp-explorer-foot">Source and verification are item-level. Learners can add to the record without changing an item's issuer or verification status.</p>
     </div>
   </div>
 </section>
 
-<section class="sp-section sp-lifelong" id="learner-ownership" aria-labelledby="sp-lifelong-title">
-  <div class="sp-shell sp-lifelong-grid">
-    <div class="sp-lifelong-copy">
-      <p class="sp-eyebrow">A relationship that continues</p>
-      <h2 id="sp-lifelong-title">The institution issues the achievement. The learner carries the record.</h2>
-      <p>The issuing institution remains the trusted source of its credential. The learner maintains a portable record that can grow across institutions, learning and work—rather than ending at graduation.</p>
-      <ol class="sp-lifecycle">
-        <li>First achievement</li><li>School</li><li>University</li><li>Internship</li>
-        <li>Certification</li><li>Employment</li><li>Lifelong learning</li>
-      </ol>
-      <p class="sp-built-note">Built once. Grows for life.</p>
-    </div>
-    <figure class="sp-media sp-lifelong-art">
-      <img src="/assets4/images/skill-passport/learner-journey.webp" width="836" height="941" alt="SkillStory learner journey visual representing a learner record across education and professional life" loading="lazy">
-      <figcaption>The learner record can remain useful as a learner moves from education into professional life.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section class="sp-section sp-skills" id="credentials-to-skills" aria-labelledby="sp-skills-title">
-  <div class="sp-shell sp-skills-grid">
-    <div class="sp-skills-copy">
-      <p class="sp-eyebrow">Make achievement legible</p>
-      <h2 id="sp-skills-title">A credential tells you what was awarded. Skills explain what it represents.</h2>
-      <p>Connecting credentials to structured skills helps learners and institutions describe capability with more context. Mapping can draw on ESCO, O*NET or an institution’s own framework, according to the institution’s approach.</p>
-      <a class="sp-link sp-inline-link" href="/skills-taxonomy-mapping">Explore Skills Taxonomy Mapping <span aria-hidden="true">→</span></a>
-    </div>
+<section class="sp-section sp-skills-detail" id="skills" aria-labelledby="sp-skills-title">
+  <div class="sp-shell sp-two-column">
     <div>
-      <div class="sp-skill-chain" aria-label="Credential to skills to learner record">
-        <div class="sp-skill-node"><strong>DIGITAL CREDENTIAL</strong><span>Programme achievement</span></div>
-        <span class="sp-chain-arrow" aria-hidden="true">→</span>
-        <div class="sp-skill-node"><strong>SKILLS</strong><span>Analysis<br>Research<br>Communication</span></div>
-        <span class="sp-chain-arrow" aria-hidden="true">→</span>
-        <div class="sp-skill-node"><strong>TAXONOMY</strong><span>ESCO / O*NET / Institutional framework</span></div>
-        <span class="sp-chain-arrow" aria-hidden="true">→</span>
-        <div class="sp-skill-node"><strong>LEARNER RECORD</strong><span>Achievement with connected capability</span></div>
-      </div>
-      <p class="sp-skill-foot">The skill relationship is established through institutional and credential context—not assumed from a certificate title alone.</p>
+      <p class="sp-eyebrow">05 · Capabilities connected to learning</p>
+      <h2 id="sp-skills-title">Skills</h2>
+      <p class="sp-body">Skills add meaning to what a credential represents. They can be connected to a programme, assessment or other supporting context, helping the learner explain capabilities alongside the achievement.</p>
+      <p class="sp-small-note">A skill's source and verification status remain tied to the evidence supporting that item.</p>
+    </div>
+    <figure class="sp-media sp-skills-visual"><a href="/assets4/images/skill-passport/student-skill-passport-overview.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size SkillStory Skill Passport overview"><img src="/assets4/images/skill-passport/student-skill-passport-overview.webp" width="800" height="916" alt="SkillStory Skill Passport view connecting skills with credentials, projects and achievements" loading="lazy"></a><figcaption>Skills add context to the achievements the learner carries.</figcaption></figure>
+  </div>
+</section>
+
+<section class="sp-section sp-projects-detail" id="projects-and-evidence" aria-labelledby="sp-projects-title">
+  <div class="sp-shell sp-two-column">
+    <figure class="sp-media sp-projects-visual"><a href="/assets4/images/skill-passport/cv-portfolio-showcase.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size SkillStory projects and portfolio visual"><img src="/assets4/images/skill-passport/cv-portfolio-showcase.webp" width="900" height="591" alt="SkillStory portfolio showing projects and learner evidence in context" loading="lazy"></a><figcaption>Projects bring a learner's work and supporting material into view.</figcaption></figure>
+    <div>
+      <p class="sp-eyebrow">06 · Work and what supports it</p>
+      <h2 id="sp-projects-title">Projects &amp; Evidence</h2>
+      <p class="sp-body">Projects may include research, design, software, publications, community work or internship outcomes. Supporting links, documents and outputs add context while keeping the source of each item visible.</p>
+      <p class="sp-small-note">Learners can add project evidence. It is not institution-verified unless an institution separately issues or attests to it.</p>
     </div>
   </div>
 </section>
 
-<section class="sp-section sp-evidence" id="projects-and-evidence" aria-labelledby="sp-evidence-title">
-  <div class="sp-shell sp-evidence-grid">
-    <figure class="sp-media sp-evidence-visual">
-      <img src="/assets4/images/skill-passport/cv-portfolio-showcase.webp" width="900" height="591" alt="SkillStory portfolio showcase showing projects and learner evidence presented alongside skills and credentials" loading="lazy">
-      <figcaption>Projects and supporting evidence give context to what a learner can do.</figcaption>
-    </figure>
-    <div class="sp-evidence-copy">
-      <p class="sp-eyebrow">Capability in context</p>
-      <h2 id="sp-evidence-title">Show what the learner can do, not just what they completed.</h2>
-      <p>Projects connect learning to tangible work. Research, software, design, business initiatives, community activity, competitions, publications and internship work can all add meaningful context to a learner record.</p>
-      <div class="sp-evidence-formula">
-        <div><strong>Project</strong> + description</div><div><strong>Evidence</strong> + supporting material</div>
-        <div><strong>Skills</strong> + demonstrated capability</div><div><strong>Attestation</strong> + reviewer, where applicable</div>
-      </div>
+<section class="sp-section sp-attestation" id="attestations" aria-labelledby="sp-attestation-title">
+  <div class="sp-shell sp-two-column">
+    <div>
+      <p class="sp-eyebrow">07 · Attested achievement</p>
+      <h2 id="sp-attestation-title">Attestations</h2>
+      <p class="sp-body">Learners can add an achievement and supporting evidence, then ask an educator or mentor to review it. If approved, the attestation records who confirmed that achievement and when.</p>
+      <ol class="sp-review-steps"><li><span>01</span>Record an achievement and its evidence</li><li><span>02</span>Request review from an educator or mentor</li><li><span>03</span>Attestor reviews the achievement and supporting evidence</li><li><span>04</span>Share the attested achievement with its verification context</li></ol>
+      <div class="sp-source-key sp-source-key-compact" aria-label="Record item sources"><span class="sp-source-pill is-issued"><i aria-hidden="true"></i><b>Institution-issued</b></span><span class="sp-source-pill is-added"><i aria-hidden="true"></i><b>Learner-added</b></span><span class="sp-source-pill is-attested"><i aria-hidden="true"></i><b>Attested</b></span></div>
     </div>
+    <figure class="sp-media sp-attestation-visual"><a href="/assets4/images/skill-passport/skill-passport-attestation-workflow.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size SkillStory attestation workflow"><img src="/assets4/images/skill-passport/skill-passport-attestation-workflow.webp" width="800" height="902" alt="SkillStory attestation workflow from learner-submitted achievement through educator review to attested record" loading="lazy"></a><figcaption>Review and confirmation attach to the individual achievement.</figcaption></figure>
   </div>
 </section>

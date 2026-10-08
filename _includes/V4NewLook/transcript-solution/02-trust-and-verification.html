@@ -1,154 +1,91 @@
-<section class="tm-section tm-section-access-control" aria-labelledby="tm-otp">
-  <span class="tm-section-index" aria-hidden="true">09</span>
-  <div class="tm-shell tm-two-col reverse">
-    <div class="tm-art">
-      <figure class="tm-image-frame">
-        <a class="tm-image-link" href="/assets4/images/transcript-solution/otp-verification-edutranscript.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size OTP workflow artwork">
-          <img src="/assets4/images/transcript-solution/otp-verification-edutranscript.webp" width="700" height="500" alt="EduTranscript OTP workflow artwork showing requester, learner authorization and transcript access" loading="lazy" decoding="async">
-        </a>
-        <figcaption class="tm-caption">Learner authorization before transcript access. Select to view full size.</figcaption>
-      </figure>
-    </div>
-    <div>
-      <p class="tm-eyebrow">Recipient-controlled access</p>
-      <h2 id="tm-otp">Add recipient-controlled verification when it matters.</h2>
-      <p class="tm-copy">An OTP step can ask a student or alumnus to authorize access before a verifier receives a transcript. It supports recipient authentication and consent; it is not a cryptographic check of the document itself.</p>
-      <ul class="tm-chain" aria-label="OTP access path"><li>Requester</li><li>OTP</li><li>Student / Alumni</li><li>Consent</li><li>Access</li></ul>
-    </div>
-  </div>
-</section>
-
-<section class="tm-section tm-section-integrity" aria-labelledby="tm-signatures">
-  <span class="tm-section-index" aria-hidden="true">10</span>
-  <div class="tm-shell">
-    <div class="tm-heading">
-      <p class="tm-eyebrow">Document integrity</p>
-      <h2 id="tm-signatures">Make transcript tampering detectable.</h2>
-      <p>A cryptographic signature provides integrity and issuer-authenticity evidence for the signed document. It does not, by itself, establish every aspect of recipient identity.</p>
-    </div>
-    <div class="tm-signature" aria-label="Signature verification flow">
-      <div><strong>ORIGINAL</strong><span>Institution-approved transcript</span></div><div><strong>SIGN</strong><span>Cryptographic signature</span></div><div><strong>ISSUE</strong><span>Signed document</span></div><div><strong>VERIFY</strong><span>Check the signature</span></div><div><strong>RESULT</strong><span>Compare integrity</span></div>
-    </div>
-    <div class="tm-result">
-      <div><strong>MATCH</strong>Signature check matches; document integrity is supported.</div>
-      <div><strong>MISMATCH</strong>Integrity check failed or document changed; investigate with the issuer.</div>
-    </div>
-    <div class="tm-two-col">
-      <figure class="tm-image-frame">
-        <a class="tm-image-link" href="/assets4/images/transcript-solution/digital-cryptographic-signatures-edutranscript.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size cryptographic signature artwork">
-          <img src="/assets4/images/transcript-solution/digital-cryptographic-signatures-edutranscript.webp" width="700" height="500" alt="EduTranscript graphic illustrating a digitally signed academic transcript and signature verification" loading="lazy" decoding="async">
-        </a>
-        <figcaption class="tm-caption">Institutional signing and document integrity. Select to view full size.</figcaption>
-      </figure>
-      <p class="tm-note">A mismatch indicates an integrity failure or alteration; it does not automatically establish fraud. Issuer and recipient checks remain distinct.</p>
-    </div>
-  </div>
-</section>
-
-<section class="tm-section tm-section-verification" aria-labelledby="tm-portal">
-  <span class="tm-section-index" aria-hidden="true">11</span>
-  <div class="tm-shell tm-two-col reverse">
-    <div class="tm-art">
-      <figure class="tm-image-frame">
-        <a class="tm-image-link" href="/assets4/images/transcript-solution/edutranscript-credential-verification-portal.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size verification portal artwork">
-          <img src="/assets4/images/transcript-solution/edutranscript-credential-verification-portal.webp" width="700" height="500" alt="EduTranscript verification portal artwork illustrating document submission for validation" loading="lazy" decoding="async">
-        </a>
-        <figcaption class="tm-caption">A direct route from a transcript to its verification result. Select to view full size.</figcaption>
-      </figure>
-    </div>
-    <div>
-      <p class="tm-eyebrow">For employers and institutions</p>
-      <h2 id="tm-portal">Let employers and institutions verify transcripts without calling the Registrar.</h2>
-      <p class="tm-copy">A verification experience gives third parties a direct way to check the information presented and its institutional provenance.</p>
-      <ol class="tm-flow tm-flow-compact">
-        <li><strong>Submit</strong><span>Upload or enter verification information.</span></li><li><strong>Verify</strong><span>Check the available issuer and integrity evidence.</span></li><li><strong>Review</strong><span>Assess the result and relevant details.</span></li>
-      </ol>
-      <div class="tm-identity" aria-label="Core verification questions">
-        <span>WHO ISSUED IT?</span><b aria-hidden="true">·</b><span>WHO WAS IT ISSUED TO?</span><b aria-hidden="true">·</b><span>HAS IT BEEN ALTERED?</span>
-      </div>
-      <p class="tm-copy">Review issuer authority, the named recipient and signed-document integrity as separate checks. Verification uses issuer keys and applicable status resources.</p>
-    </div>
-  </div>
-</section>
-
-<section class="tm-section tm-section-matrix" aria-labelledby="tm-matrix">
-  <span class="tm-section-index" aria-hidden="true">12</span>
-  <div class="tm-shell">
-    <div class="tm-heading">
-      <p class="tm-eyebrow">Choose the appropriate control</p>
-      <h2 id="tm-matrix">Verification methods answer different questions.</h2>
-      <p>Institutions configure a verification model to fit their requirements. These methods are complementary options—not mandatory steps for every transcript.</p>
-    </div>
-     <div class="tm-table-scroll">
-      <table class="tm-matrix">
-        <thead><tr><th scope="col">Method</th><th scope="col">Primary purpose</th></tr></thead>
-        <tbody>
-          <tr><td>Credential ID / Verification Code</td><td>Find the institutional record</td></tr>
-          <tr><td>QR / Secure link</td><td>Access the verification experience</td></tr>
-          <tr><td>ID-based tagging</td><td>Associate the record with its intended recipient</td></tr>
-          <tr><td>OTP</td><td>Recipient authentication or controlled access</td></tr>
-          <tr><td>Cryptographic signature</td><td>Document integrity and issuer-authenticity evidence</td></tr>
-          <tr><td>Verification portal</td><td>Third-party validation</td></tr>
-          <tr><td>Signed Open Badge / Verifiable Credential</td><td>Structured credential verification, where applicable</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="tm-copy tm-table-note">Read more about <a href="/certificate-verification">digital credential verification</a> and the <a href="/api/">CertifyMe REST API</a>.</p>
-  </div>
-</section>
-
 <section class="tm-section tm-section-source" aria-labelledby="tm-sis">
-  <span class="tm-section-index" aria-hidden="true">13</span>
+  <span class="tm-section-index" aria-hidden="true">06</span>
   <div class="tm-shell tm-two-col">
     <div>
-      <p class="tm-eyebrow">Keep the source of truth</p>
-      <h2 id="tm-sis">Keep the university's source system. Modernize what happens around it.</h2>
-      <p class="tm-copy">The SIS remains the institutional source of truth for student, course, grade, credit and academic-history data. EduTranscript can connect to university SIS systems through REST API integration, with scope defined for the institution.</p>
-      <p class="tm-note">Keep academic data in the system your university already trusts. Our team works with you to define the integration scope, record mapping and institutional workflow.</p>
+      <p class="tm-eyebrow">SIS integration</p>
+      <h2 id="tm-sis">SIS Integration</h2>
+      <p class="tm-copy">The SIS remains authoritative for student, course, grade, credit and academic-history data. EduTranscript by CertifyMe connects the transcript process to institutional systems through configurable integration, with scope and record mapping defined with the university.</p>
+      <p class="tm-note">Use the systems your institution trusts. Define the connection, approved data and workflow with your IT and Registrar teams.</p>
     </div>
-    <div>
-      <ol class="tm-architecture" aria-label="Institutional SIS and transcript management architecture">
-        <li><span class="tm-n">01</span><span><strong>UNIVERSITY SIS</strong><span>Student · courses · grades · credits · academic history</span></span></li>
-        <li><span class="tm-n">02</span><span><strong>CERTIFYME / EDUTRANSCRIPT</strong><span>Transcript management workflow</span></span></li>
-        <li><span class="tm-n">03</span><span><strong>DIGITAL TRANSCRIPT</strong><span>Prepare, deliver and verify</span></span></li>
-      </ol>
+    <div class="tm-sis-visual" role="img" aria-label="University SIS remains the authoritative academic data source, connected to EduTranscript transcript workflow and digital transcripts">
+      <div class="tm-sis-node"><span><strong>UNIVERSITY SIS</strong><span>Authoritative academic data</span></span><span aria-hidden="true">01</span></div>
+      <div class="tm-sis-arrow" aria-hidden="true">↓ institution-configured connection</div>
+      <div class="tm-sis-node"><span><strong>EDUTRANSCRIPT BY CERTIFYME</strong><span>Requests · review · processing</span></span><span aria-hidden="true">02</span></div>
+      <div class="tm-sis-arrow" aria-hidden="true">↓ approved workflow</div>
+      <div class="tm-sis-node"><span><strong>DIGITAL TRANSCRIPT</strong><span>Prepared · delivered · verifiable</span></span><span aria-hidden="true">03</span></div>
+      <p class="tm-sis-foot">Connection and data mapping are scoped to institutional requirements.</p>
     </div>
   </div>
 </section>
 
-<section class="tm-section tm-section-api" aria-labelledby="tm-api">
-  <span class="tm-section-index" aria-hidden="true">14</span>
+<section class="tm-section tm-section-integrity" aria-labelledby="tm-security">
+  <span class="tm-section-index" aria-hidden="true">07</span>
   <div class="tm-shell">
     <div class="tm-heading">
-      <p class="tm-eyebrow">Institution-scoped connection</p>
-      <h2 id="tm-api">Turn transcript processing into a system workflow.</h2>
-      <p>Where academic data is available in the institution's SIS, a REST API connection can support a workflow without relying on manual re-entry at every hand-off.</p>
+      <p class="tm-eyebrow">Transcript security and integrity</p>
+      <h2 id="tm-security">Transcript Security &amp; Integrity</h2>
+      <p>Digital signing can provide evidence of issuer authenticity and document integrity. Identity association, access control and signature validation address distinct parts of transcript trust.</p>
     </div>
-    <ol class="tm-architecture" aria-label="REST API transcript process">
-      <li><span class="tm-n">01</span><span><strong>UNIVERSITY SIS</strong><span>Institution-approved academic data</span></span></li>
-      <li><span class="tm-n">02</span><span><strong>REST API</strong><span>Connection scoped to institutional requirements</span></span></li>
-      <li><span class="tm-n">03</span><span><strong>CERTIFYME</strong><span>Transcript request and processing workflow</span></span></li>
-      <li><span class="tm-n">04</span><span><strong>DELIVERY &amp; VERIFICATION</strong><span>Secure transcript access and checks</span></span></li>
-    </ol>
+    <div class="tm-two-col">
+      <div>
+        <figure class="tm-image-frame">
+          <a class="tm-image-link" href="/assets4/images/transcript-solution/digital-cryptographic-signatures-edutranscript.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size EduTranscript digital signature artwork">
+            <img src="/assets4/images/transcript-solution/digital-cryptographic-signatures-edutranscript.webp" width="700" height="500" alt="EduTranscript cryptographic signature and transcript integrity" loading="lazy" decoding="async">
+          </a>
+          <figcaption class="tm-caption">Digital signing supports transcript integrity and issuer provenance.</figcaption>
+        </figure>
+      </div>
+      <div>
+        <ul class="tm-list" aria-label="Distinct transcript trust controls">
+          <li><strong>Issuer provenance</strong> — identify the institution responsible for the record.</li>
+          <li><strong>Document integrity</strong> — check whether signed content matches its issued state.</li>
+          <li><strong>Recipient access</strong> — apply institutional controls for who can access a record.</li>
+        </ul>
+        <p class="tm-note">Issuer keys, applicable status information and verification resources support the record's verification lifecycle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tm-section tm-section-verification" aria-labelledby="tm-recipient">
+  <span class="tm-section-index" aria-hidden="true">08</span>
+  <div class="tm-shell tm-two-col reverse">
+    <div class="tm-art">
+      <figure class="tm-image-frame">
+        <a class="tm-image-link" href="/assets4/images/transcript-solution/edutranscript-credential-verification-portal.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size EduTranscript transcript verification portal">
+          <img src="/assets4/images/transcript-solution/edutranscript-credential-verification-portal.webp" width="700" height="500" alt="EduTranscript verification portal for recipients checking a digital transcript" loading="lazy" decoding="async">
+        </a>
+        <figcaption class="tm-caption">A direct verification experience for transcript recipients.</figcaption>
+      </figure>
+    </div>
+    <div>
+      <p class="tm-eyebrow">Recipient verification</p>
+      <h2 id="tm-recipient">Recipient Verification</h2>
+      <p class="tm-copy">A recipient can use the transcript's verification experience to review available institutional provenance and integrity evidence, helping reduce routine verification calls to the Registrar.</p>
+      <div class="tm-check-grid">
+        <div class="tm-check"><strong>Issuer</strong><p>Which institution issued the record?</p></div>
+        <div class="tm-check"><strong>Recipient</strong><p>Who is named on the transcript?</p></div>
+        <div class="tm-check"><strong>Integrity</strong><p>Does the available signature evidence match?</p></div>
+      </div>
+      <p class="tm-copy">Verification depends on applicable issuer keys and status resources being available for the relevant record.</p>
+    </div>
   </div>
 </section>
 
 <section class="tm-section tm-section-exchange" aria-labelledby="tm-exchange">
-  <span class="tm-section-index" aria-hidden="true">15</span>
-  <div class="tm-shell tm-two-col reverse">
-    <div class="tm-art">
-      <figure class="tm-image-frame">
-        <a class="tm-image-link" href="/assets4/images/transcript-solution/landd2.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size transcript exchange artwork">
-          <img src="/assets4/images/transcript-solution/landd2.webp" width="556" height="583" alt="EduTranscript artwork for alumni access and academic record sharing between recipients" loading="lazy" decoding="async">
-        </a>
-        <figcaption class="tm-caption">Secure academic-record sharing beyond the issuing university.</figcaption>
-      </figure>
-    </div>
+  <span class="tm-section-index" aria-hidden="true">09</span>
+  <div class="tm-shell tm-two-col">
     <div>
-      <p class="tm-eyebrow">Institution-to-institution exchange</p>
-      <h2 id="tm-exchange">Move academic records between institutions with less friction.</h2>
-      <p class="tm-copy">A verified digital transcript can help support admissions, transfer, graduate education, employment and credential evaluation. Its provenance remains connected to the issuing institution; acceptance is determined by the receiving organization.</p>
-      <ul class="tm-chain" aria-label="Academic record exchange"><li>Institution A</li><li>Verified transcript</li><li>Institution B</li></ul>
+      <p class="tm-eyebrow">Institution-to-institution sharing</p>
+      <h2 id="tm-exchange">Institution-to-Institution Sharing</h2>
+      <p class="tm-copy">A learner can share an issued transcript with another university, an employer or a credential evaluator. The record's verification remains connected to its issuing institution; the receiving organization decides how it is accepted and reviewed.</p>
+    </div>
+    <div class="tm-art">
+      <ol class="tm-architecture" aria-label="Transcript sharing between issuing institution, learner, and recipient">
+        <li><span class="tm-n">01</span><span><strong>ISSUING INSTITUTION</strong><span>Approves and issues the academic record</span></span></li>
+        <li><span class="tm-n">02</span><span><strong>LEARNER SHARES</strong><span>Provides transcript access to a chosen recipient</span></span></li>
+        <li><span class="tm-n">03</span><span><strong>RECEIVING ORGANIZATION</strong><span>Reviews the transcript and available verification</span></span></li>
+      </ol>
     </div>
   </div>
 </section>

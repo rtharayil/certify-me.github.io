@@ -1,189 +1,49 @@
-<section class="tm-section tm-section-alumni" aria-labelledby="tm-alumni">
-  <span class="tm-section-index" aria-hidden="true">16</span>
-  <div class="tm-shell tm-two-col">
-    <div>
-      <p class="tm-eyebrow">A lasting institutional relationship</p>
-      <h2 id="tm-alumni">The Registrar's relationship with the learner does not end at graduation.</h2>
-      <p class="tm-copy">Alumni may need transcripts for a new role, further study or professional evaluation years after graduation. Transcript infrastructure can continue to support secure access, request tracking, retrieval, verification and sharing.</p>
-      <ul class="tm-chain" aria-label="Alumni transcript lifecycle"><li>Current student</li><li>Graduate</li><li>Alumni</li><li>Career</li><li>Further education</li></ul>
-    </div>
-    <div class="tm-art">
-      <figure class="tm-image-frame">
-        <a class="tm-image-link" href="/assets4/images/transcript-solution/verf8.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size alumni access visual">
-          <img src="/assets4/images/transcript-solution/verf8.webp" width="704" height="642" alt="EduTranscript alumni access artwork illustrating access to a transcript beyond graduation" loading="lazy" decoding="async">
-        </a>
-        <figcaption class="tm-caption">Academic-record access that continues beyond graduation.</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<section class="tm-section tm-section-privacy" aria-labelledby="tm-privacy">
-  <span class="tm-section-index" aria-hidden="true">17</span>
-  <div class="tm-shell tm-two-col reverse">
-    <div class="tm-art">
-      <figure class="tm-image-frame">
-        <a class="tm-image-link" href="/assets4/images/transcript-solution/reliable-data-backup-and-recovery.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size data backup and recovery artwork">
-          <img src="/assets4/images/transcript-solution/reliable-data-backup-and-recovery.webp" width="700" height="500" alt="EduTranscript backup and recovery artwork representing protection and record continuity" loading="lazy" decoding="async">
-        </a>
-        <figcaption class="tm-caption">Backup and recovery support academic-record continuity.</figcaption>
-      </figure>
-    </div>
-    <div>
-      <p class="tm-eyebrow">Institutional protection</p>
-      <h2 id="tm-privacy">Academic records require institutional-grade protection.</h2>
-      <p class="tm-copy">Protect sensitive learner information with encryption, role-based access and audit logging. Backup and recovery support continuity, while corrections and reissuance remain part of institutional record stewardship.</p>
-      <p class="tm-copy">CertifyMe is designed to support institutional privacy and compliance requirements, including the considerations universities address under GDPR, FERPA and COPPA. Each institution must assess applicable law, policy, permissions and consent in its own context.</p>
-      <p class="tm-note">Review <a href="/security/">security and privacy practices</a> with your IT and academic-governance teams.</p>
-    </div>
-  </div>
-</section>
-
-<section class="tm-section tm-section-standards" aria-labelledby="tm-standards">
-  <span class="tm-section-index" aria-hidden="true">18</span>
+<section class="tm-section tm-section-governance" aria-labelledby="tm-governance">
+  <span class="tm-section-index" aria-hidden="true">10</span>
   <div class="tm-shell">
     <div class="tm-heading">
-      <p class="tm-eyebrow">Standards-based credential infrastructure</p>
-      <h2 id="tm-standards">A transcript can become part of the modern credential ecosystem.</h2>
-      <p>Connect the academic record with a standards-based credential strategy that supports structured data, portability and verification.</p>
+      <p class="tm-eyebrow">Governance and retention</p>
+      <h2 id="tm-governance">Governance / Retention</h2>
+      <p>Academic records need clear owners and operating rules. EduTranscript by CertifyMe supports a transcript workflow that can be aligned with university governance, privacy requirements and records-management practice.</p>
     </div>
-    <ul class="tm-chain" aria-label="Credential ecosystem path">
-      <li>Traditional transcript</li><li>Digital transcript</li><li>Verifiable credential</li><li>Learner record</li><li>Skill Passport</li>
-    </ul>
     <div class="tm-two-col">
       <div>
-        <h3>Structured and portable</h3>
-        <p class="tm-copy">Open Badges 3.0 and W3C Verifiable Credentials support structured, machine-readable achievements and independent verification in supported credential formats. Choose the representation appropriate to your institution and receiving systems.</p>
-        <p><a href="/solutions/digital-credential-infrastructure">Explore digital credential infrastructure</a> or <a href="/solutions/skill-passport">see Skill Passport</a>.</p>
+        <ul class="tm-list" aria-label="Institution-governed transcript management responsibilities">
+          <li>Define who may request and access each record.</li>
+          <li>Set review, approval and reissue responsibilities.</li>
+          <li>Align transcript availability and retention with institutional schedules.</li>
+          <li>Coordinate integration and security requirements with IT and records teams.</li>
+        </ul>
       </div>
-      <div class="tm-note">The digital transcript provides academic detail. A standards-based credential adds structured verification data, helping that achievement connect with learner records and Skill Passports.</div>
+      <div>
+        <p class="tm-copy">Where verification depends on issuer keys or status resources, institutions should plan for those dependencies as part of their operating model. Retention and ongoing availability follow the institution's chosen policy and service configuration.</p>
+        <p class="tm-note">EduTranscript keeps the university in control of the academic record and the rules around its use.</p>
+        <p class="tm-copy">Review <a href="/security/">security and privacy practices</a> with your IT, Registrar and records-management teams.</p>
+      </div>
     </div>
-  </div>
-</section>
-
-<section class="tm-section tm-section-record" aria-labelledby="tm-learner-record">
-  <span class="tm-section-index" aria-hidden="true">19</span>
-  <div class="tm-shell">
-    <div class="tm-heading">
-      <p class="tm-eyebrow">From transcript to connected achievement</p>
-      <h2 id="tm-learner-record">The transcript is one layer of the learner record.</h2>
-      <p>The transcript remains the authoritative academic record. CertifyMe can connect it with other verified achievements and skills to create a broader learner record.</p>
+    {% if page.faqs %}
+    <div class="tm-faq" aria-label="Transcript management frequently asked questions">
+      {% for faq in page.faqs %}
+      <details>
+        <summary>{{ faq.question | escape }}</summary>
+        <div class="tm-faq-answer"><p>{{ faq.answer | escape }}</p></div>
+      </details>
+      {% endfor %}
     </div>
-    <div class="tm-compare">
-      <div class="tm-compare-panel"><h3>TRANSCRIPT</h3><p>Courses · grades · credits · academic history</p></div>
-      <div class="tm-compare-panel"><h3>DIGITAL CREDENTIALS</h3><p>Certificates · badges · achievements</p></div>
-      <div class="tm-compare-panel"><h3>SKILLS</h3><p>Skills · competencies</p></div>
-      <div class="tm-compare-panel"><h3>EXPERIENCES</h3><p>Projects · internships · activities</p></div>
-    </div>
-     <p class="tm-note" style="margin-top:14px">Bring these distinct sources of achievement together in a Comprehensive Learner Record, while preserving the transcript's academic authority.</p>
-    <p><a href="/solutions/comprehensive-learner-record">Explore the Comprehensive Learner Record →</a></p>
-  </div>
-</section>
-
-<section class="tm-section tm-section-skills" aria-labelledby="tm-skills">
-  <span class="tm-section-index" aria-hidden="true">20</span>
-  <div class="tm-shell tm-two-col">
-    <div>
-      <p class="tm-eyebrow">Institution-configured mapping</p>
-      <h2 id="tm-skills">Academic records describe what was studied. Skills help describe what was developed.</h2>
-      <p class="tm-copy">As a wider CertifyMe platform connection, institutions can map learning outcomes to skills and taxonomies such as ESCO, O*NET or their own skill frameworks.</p>
-      <p class="tm-note">The mapping is configured by the institution. CertifyMe does not automatically infer skills from arbitrary courses or grades.</p>
-      <p><a href="/solutions/skills-taxonomy-mapping">Explore skills taxonomy mapping →</a></p>
-    </div>
-    <ol class="tm-architecture" aria-label="Institutional learning outcome to skill mapping">
-      <li><span class="tm-n">01</span><span><strong>COURSE</strong><span>Approved learning context</span></span></li>
-      <li><span class="tm-n">02</span><span><strong>LEARNING OUTCOME</strong><span>Defined by institutional curriculum</span></span></li>
-      <li><span class="tm-n">03</span><span><strong>SKILL</strong><span>Institution-configured relationship</span></span></li>
-      <li><span class="tm-n">04</span><span><strong>TAXONOMY</strong><span>ESCO · O*NET · institutional framework</span></span></li>
-      <li><span class="tm-n">05</span><span><strong>LEARNER RECORD</strong><span>Connected evidence and context</span></span></li>
-    </ol>
-  </div>
-</section>
-
-<section class="tm-section tm-section-workforce" aria-labelledby="tm-workforce">
-  <span class="tm-section-index" aria-hidden="true">21</span>
-  <div class="tm-shell tm-two-col reverse">
-    <div class="tm-art">
-      <ol class="tm-architecture" aria-label="Broader CertifyMe academic record to workforce intelligence connection">
-        <li><span class="tm-n">01</span><span><strong>ACADEMIC RECORD</strong><span>Institution-approved learning history</span></span></li>
-        <li><span class="tm-n">02</span><span><strong>CREDENTIALS</strong><span>Verified achievements</span></span></li>
-        <li><span class="tm-n">03</span><span><strong>SKILLS</strong><span>Configured skill relationships</span></span></li>
-        <li><span class="tm-n">04</span><span><strong>LEARNER RECORD</strong><span>Connected evidence</span></span></li>
-        <li><span class="tm-n">05</span><span><strong>WORKFORCE INTELLIGENCE</strong><span>Wider platform context</span></span></li>
-      </ol>
-    </div>
-    <div>
-      <p class="tm-eyebrow">The wider platform</p>
-      <h2 id="tm-workforce">Connect academic achievement with the world beyond the university.</h2>
-      <p class="tm-copy">When institutions choose to connect these layers, workforce intelligence can add context around occupations, jobs, employers, locations and skill demand.</p>
-      <p class="tm-copy">CertifyMe's Job Engine brings occupations, jobs, employers, locations and skill demand into that institutional view—helping university teams connect academic achievement, verified skills and workforce context.</p>
-      <p><a href="/workforce-intelligence">Explore workforce intelligence →</a></p>
-    </div>
-  </div>
-</section>
-
-<section class="tm-section tm-section-platform" aria-labelledby="tm-six-layer">
-  <span class="tm-section-index" aria-hidden="true">22</span>
-  <div class="tm-shell">
-    <div class="tm-heading">
-      <p class="tm-eyebrow">Where transcript management fits</p>
-      <h2 id="tm-six-layer">Six layers connect institutional achievement to learner opportunity.</h2>
-      <p>The first three layers form the core transcript infrastructure. Later layers represent configured connections across the wider CertifyMe platform.</p>
-    </div>
-    <ol class="tm-platform-path" aria-label="University systems connect to a broader institutional learner-record architecture">
-      <li>Student information system</li><li>Transcript management</li><li>Verified academic record</li><li>Digital transcript</li><li>Verification</li><li>Comprehensive Learner Record</li><li>Skills</li><li>Workforce intelligence</li>
-    </ol>
-    <div class="tm-layers">
-      <div class="tm-layer core"><span class="tm-n">01</span><strong>PRESENTATION &amp; ACCESS</strong><p>Transcript and credential access</p></div>
-      <div class="tm-layer core"><span class="tm-n">02</span><strong>STANDARDS &amp; INTEROPERABILITY</strong><p>Open standards, where applicable</p></div>
-      <div class="tm-layer core"><span class="tm-n">03</span><strong>VERIFICATION &amp; TRUST</strong><p>Identity association, signatures and verification</p></div>
-      <div class="tm-layer"><span class="tm-n">04</span><strong>SKILL TAXONOMY ALIGNMENT</strong><p>Academic achievements mapped to skills</p></div>
-      <div class="tm-layer"><span class="tm-n">05</span><strong>COMPREHENSIVE LEARNER RECORD</strong><p>Transcript, credentials and experiences</p></div>
-      <div class="tm-layer"><span class="tm-n">06</span><strong>WORKFORCE INTELLIGENCE &amp; OPPORTUNITY</strong><p>Skills connected to workforce context</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="tm-section tm-section-comparison" aria-labelledby="tm-before-after">
-  <span class="tm-section-index" aria-hidden="true">23</span>
-  <div class="tm-shell">
-    <div class="tm-heading">
-      <p class="tm-eyebrow">A modern operating model</p>
-      <h2 id="tm-before-after">Move from scattered hand-offs to a connected transcript workflow.</h2>
-    </div>
-    <div class="tm-compare">
-      <div class="tm-compare-panel"><h3>FRAGMENTED PROCESS</h3><ol><li>Student requests transcript</li><li>Manual processing and follow-up</li><li>Email, PDF or physical dispatch</li><li>Registrar handles verification calls</li><li>Record remains isolated</li></ol></div>
-       <div class="tm-compare-panel after"><h3>CONNECTED INFRASTRUCTURE</h3><ol><li>Student or alumnus makes digital request</li><li>Automated workflow with institutional review and approval</li><li>Secure transcript prepared from approved data</li><li>Digital delivery and verification for recipients</li><li>Foundation for broader learner record</li><li>Configured skills and workforce context</li></ol></div>
-    </div>
-  </div>
-</section>
-
-<section class="tm-section tm-section-value" aria-labelledby="tm-value">
-  <span class="tm-section-index" aria-hidden="true">24</span>
-  <div class="tm-shell">
-    <div class="tm-heading">
-      <p class="tm-eyebrow">Institutional value</p>
-      <h2 id="tm-value">What modern transcript infrastructure changes for the university.</h2>
-      <p>Designed for the offices that own academic records, technology, learner experience and institutional trust.</p>
-    </div>
-    <div class="tm-audience-grid">
-      <article class="tm-audience"><h3>01 · For the Registrar</h3><p>Less manual coordination, centralized workflow, request visibility and verification support.</p></article>
-      <article class="tm-audience"><h3>02 · For IT</h3><p>SIS integration, REST API connection, standards where applicable and a security-minded architecture.</p></article>
-      <article class="tm-audience"><h3>03 · For Students and Alumni</h3><p>Self-service requests, status tracking, secure access and sharing when records are needed.</p></article>
-      <article class="tm-audience"><h3>04 · For Employers and Institutions</h3><p>Direct verification options and clearer issuer provenance to support record review.</p></article>
-      <article class="tm-audience"><h3>05 · For University Leadership</h3><p>Less administrative friction, an improved learner experience, academic-record integrity and a foundation for modern learner records.</p></article>
-    </div>
+    {% endif %}
   </div>
 </section>
 
 <section class="tm-final" aria-labelledby="tm-final-title">
   <div class="tm-shell">
-    <p class="tm-eyebrow" style="color:#c5c8ff">EduTranscript by CertifyMe</p>
-    <h2 id="tm-final-title">Modernize the academic record without replacing the systems that already run your university.</h2>
-    <p>CertifyMe brings transcript requests, processing, delivery and verification into a modern digital workflow—while creating a foundation for secure, interoperable learner records.</p>
+    <p class="tm-eyebrow">EduTranscript by CertifyMe</p>
+    <h2 id="tm-final-title">Modernize Transcript Management</h2>
+    <p>Bring transcript requests, processing, delivery and verification into a connected institutional workflow—with the SIS continuing as the authoritative source of academic data.</p>
     <div class="tm-final-actions">
-      <a class="tm-button tm-button-primary" href="https://info.certifyme.online/request-demo">Request a Platform Demo <span class="tm-arrow" aria-hidden="true">→</span></a>
-      <a class="tm-button tm-button-secondary" href="/solutions/digital-credential-infrastructure">Explore Digital Credential Infrastructure</a>
+      <a class="tm-button tm-button-primary" href="https://info.certifyme.online/request-demo">Modernize Transcript Management <span class="tm-arrow" aria-hidden="true">→</span></a>
+      <a class="tm-button tm-button-secondary" href="https://info.certifyme.online/request-demo">Request a Platform Demo</a>
     </div>
   </div>
 </section>
+
+<script src="/assets4/js/transcript-solution.js" defer></script>

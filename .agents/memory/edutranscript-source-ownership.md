@@ -14,3 +14,9 @@ The owner positions EduTranscript as CertifyMe's institutional academic-record i
 **Why:** The owner explicitly defines the transcript as an authoritative academic record and the university's existing SIS as the source system.
 
 **How to apply:** Lead with registrar and IT workflows, preserve institutional approval and source-system ownership, and connect learner access to that institutional story.
+
+The Transcript Management solution explains how institutions digitise and automate transcript operations. Keep EduTranscript by CertifyMe a distinct product story, not a general digital credential feature.
+
+**Why:** The owner's revised brief explicitly separates transcript management from general credential infrastructure and prioritises Registrar, Student Services, IT and Records Management.
+
+**How to apply:** Lead with request-to-verification operations and SIS ownership. Use learner access as part of that institutional workflow, and keep wider credential positioning secondary.

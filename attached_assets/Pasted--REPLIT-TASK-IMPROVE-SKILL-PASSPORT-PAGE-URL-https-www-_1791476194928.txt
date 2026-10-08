@@ -1,0 +1,117 @@
+# REPLIT TASK — IMPROVE SKILL PASSPORT PAGE
+
+URL:
+https://www.certifyme.online/solutions/skill-passport
+
+PURPOSE:
+
+This page explains:
+
+> HOW a learner carries, presents and shares a connected verified record of achievement.
+
+Do not turn it into another CLR page.
+
+## HERO
+
+# Skill Passport
+
+Hero:
+
+## A Lifelong, Verified Record of What a Learner Has Achieved
+
+Supporting copy:
+
+Bring credentials, verified skills, projects, experiences and achievements together into a learner-controlled record that can be carried and shared beyond the institution.
+
+## CORE DISTINCTION
+
+Make this visual:
+
+CERTIFICATE
+= one achievement
+
+CLR
+= connected structured record
+
+SKILL PASSPORT
+= learner-facing, portable expression of that record
+
+This distinction must be immediately understandable.
+
+## CORE STORY
+
+Institution issues achievement
+→ Credential
+→ CLR
+→ Skill Passport
+→ Portfolio / CV / Application
+→ Employer / Institution / Verifier
+
+## UX
+
+Show an actual Skill Passport interface as the hero visual.
+
+Then create interactive tabs:
+
+Credentials
+Skills
+Projects
+Experiences
+Achievements
+Evidence
+
+Clicking each tab updates the visual.
+
+## IMPORTANT
+
+Clearly distinguish:
+
+Institution-issued evidence
+vs
+Learner-added evidence
+vs
+Attested evidence
+
+Do not imply every item in the Skill Passport is institution-verified.
+
+## SECTIONS
+
+1. What Is a Skill Passport?
+2. Transcript vs Skill Passport
+3. Credential → CLR → Skill Passport
+4. Credentials
+5. Skills
+6. Projects & Evidence
+7. Attestations
+8. Portfolio / CV
+9. Verification
+10. Lifelong learner journey
+11. Workforce context
+12. Institutional value
+13. CTA
+
+## SEO
+
+Primary:
+Skill Passport
+
+Secondary:
+digital skill passport
+learner skill passport
+verified learner record
+digital learner portfolio
+skills passport
+portable learner record
+
+Title:
+Skill Passport | Verified Learner Record | CertifyMe
+
+Meta:
+Give learners a portable Skill Passport connecting verified credentials, skills, projects, experiences and achievements in one learner record.
+
+## CTA
+
+Explore Skill Passport
+
+Secondary:
+Request a Platform Demo

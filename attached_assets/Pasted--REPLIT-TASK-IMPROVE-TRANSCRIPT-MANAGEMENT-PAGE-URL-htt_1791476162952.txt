@@ -1,0 +1,116 @@
+# REPLIT TASK — IMPROVE TRANSCRIPT MANAGEMENT PAGE
+
+URL:
+https://www.certifyme.online/solutions/transcript-management
+
+PRODUCT:
+EduTranscript by CertifyMe
+
+PURPOSE:
+
+This page explains:
+
+> HOW institutions digitise and automate transcript management.
+
+Do not turn this into a general digital credential page.
+
+## HERO
+
+# Transcript Management Software for Universities
+
+Subheadline:
+
+## From Transcript Request to Secure Verification
+
+Supporting copy:
+
+Automate transcript requests, processing, delivery and verification while keeping the university SIS as the authoritative source of academic data.
+
+## PRIMARY STORY
+
+Request
+→ Authenticate
+→ Review
+→ Generate
+→ Sign
+→ Deliver
+→ Verify
+
+Make this the hero-level visual.
+
+## BUYERS
+
+Prioritise:
+
+Registrar
+Student Services
+IT
+Records Management
+
+Do not make students the only audience.
+
+## KEY DIFFERENTIATOR
+
+Make this statement prominent:
+
+> Keep the university's SIS as the source of truth. Modernize the workflow around it.
+
+This is one of the strongest messages on the current page.
+
+## SECTIONS
+
+1. The Transcript Management Problem
+2. One Workflow From Request to Verification
+3. Registrar Operations
+4. Student & Alumni Portal
+5. Secure Long-Term Access
+6. SIS Integration
+7. Transcript Security & Integrity
+8. Recipient Verification
+9. Institution-to-Institution Sharing
+10. Governance / Retention
+11. CTA
+
+## UX
+
+Build a workflow animation/interactive stepper.
+
+Clicking each step changes the UI screenshot.
+
+Use actual EduTranscript concepts.
+
+## SEO
+
+Primary:
+Transcript Management Software
+
+Secondary:
+transcript management software for universities
+digital transcript management
+digital transcript software
+transcript automation
+digital transcript verification
+university transcript system
+
+Title:
+Transcript Management Software for Universities | EduTranscript
+
+Meta:
+Automate university transcript requests, processing, delivery and verification with EduTranscript by CertifyMe.
+
+## PRODUCT BRANDING
+
+Use:
+
+EduTranscript by CertifyMe
+
+consistently.
+
+Do not make EduTranscript appear to be merely another feature of CertifyMe.
+
+## CTA
+
+Modernize Transcript Management
+
+Secondary:
+Request a Platform Demo
