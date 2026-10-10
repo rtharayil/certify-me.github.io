@@ -93,6 +93,22 @@ async function run() {
       assert.equal(await page.locator("h1").count(), 1);
       assert.equal(await root.locator("h1").innerText(),
         "Choose the Right Foundation for Your Credential Programs");
+      assert.equal(await root.locator(".pricing-hero .pricing-eyebrow").innerText(),
+        "PLANS FOR INSTITUTIONAL CREDENTIAL INFRASTRUCTURE");
+      assert.equal(await root.locator(".pricing-hero__copy").innerText(),
+        "From issuing trusted digital credentials to managing institution-wide programs, CertifyMe helps organizations scale credential operations with the right level of control, integration, and governance.");
+      assert.equal(await root.locator(".pricing-hero .pricing-btn--quiet").innerText(), "Explore Platform Capabilities");
+      for (const selector of [".pricing-hero", ".pricing-final"])
+        assert.equal(await root.locator(`${selector} .pricing-btn--quiet`).getAttribute("href"), "/platform-overview");
+      assert.deepEqual(await root.locator(".pricing-model__item h3").allTextContents(),
+        ["Annual credential volume", "Recipient population", "Administrative users and organizational scope"]);
+      assert(await root.evaluate(element => {
+        const selectors = [".pricing-hero", ".pricing-plans", ".pricing-model",
+          ".pricing-category", ".pricing-solutions", ".pricing-enterprise", ".pricing-faq", ".pricing-final"];
+        const nodes = selectors.map(selector => element.querySelector(selector));
+        return nodes.every((node, i) => node && (!i ||
+          (nodes[i - 1].compareDocumentPosition(node) & Node.DOCUMENT_POSITION_FOLLOWING)));
+      }), `${name}: required page section order`);
       assert.equal(await page.title(), "CertifyMe Pricing | Digital Credential Platform for Institutions");
       assert.equal(await page.locator('meta[name="description"]').getAttribute("content"),
         "Explore CertifyMe plans for digital credential issuance, institutional administration, verification, integrations, and enterprise credential management.");
@@ -117,6 +133,7 @@ async function run() {
         assert.deepEqual(await card.locator(".pricing-card__list li").allTextContents(), plan.bullets);
         assert.equal(await card.locator(".pricing-btn").innerText(), plan.cta);
         assert.equal(await card.locator(".pricing-btn").getAttribute("href"), plan.href);
+        assert.equal(await card.locator(".pricing-card__note").innerText(), plan.note);
         const disclosure = card.locator("details");
         const summary = disclosure.locator("summary");
         await summary.focus();
@@ -182,6 +199,14 @@ async function run() {
         assert.equal(await faq.locator(".pricing-faq__answer").innerText(), data.faqs[i].answer);
       }
       assert.equal(await root.locator(".pricing-solution").count(), 4);
+      for (let i = 0; i < data.solutions.cards.length; i++) {
+        const solution = data.solutions.cards[i], card = root.locator(".pricing-solution").nth(i);
+        assert.equal(await card.locator(".pricing-eyebrow").textContent(), solution.title);
+        assert.equal(await card.locator("p:not(.pricing-eyebrow)").innerText(), solution.description);
+        assert.equal(await card.locator("a").first().getAttribute("href"), solution.href);
+        if (solution.transcript_href)
+          assert.equal(await card.locator("a").nth(1).getAttribute("href"), "/solutions/transcript-management");
+      }
       assert.equal(await root.locator(".pricing-enterprise__list li").count(), 6);
       for (const selector of [".pricing-model", ".pricing-solutions", ".pricing-enterprise", ".pricing-final"])
         assert(await root.locator(selector).isVisible());
@@ -227,9 +252,13 @@ async function run() {
 
     const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 844 } });
     const page = await context.newPage();
+    let pricingContent;
     for (const route of ["/pricing", "/pricing.html"]) {
       assert.equal((await page.goto(`${base}${route}`)).status(), 200);
       assert.equal(await page.locator('link[rel="canonical"]').getAttribute("href"), "https://www.certifyme.online/pricing");
+      const content = await page.locator("main").innerHTML();
+      if (pricingContent === undefined) pricingContent = content;
+      else assert.equal(content, pricingContent, "Both pricing routes must render identical content");
       await page.locator(".pricing-category").nth(3).locator("summary").click();
       assert(await page.locator(".pricing-category").nth(3).locator("table").isVisible());
     }
@@ -237,7 +266,9 @@ async function run() {
     for (const href of await page.locator("main a").evaluateAll(nodes => nodes.map(a => a.getAttribute("href"))))
       if (href.startsWith("/")) routes.add(href);
     for (const route of routes) assert.equal((await context.request.get(`${base}${route}`)).status(), 200, route);
-    for (const route of ["/_data/pricing.yml", "/attached_assets/Pasted--CERTIFYME-PRICING-PAGE-COMPLETE-REDESIGN-YOUR-ROLE-You_1791603707613.txt"])
+    for (const route of ["/_data/pricing.yml",
+      "/attached_assets/Pasted--CERTIFYME-PRICING-PAGE-COMPLETE-REDESIGN-YOUR-ROLE-You_1791603707613.txt",
+      "/attached_assets/Pasted--CERTIFYME-PRICING-PAGE-FINAL-CORRECTIVE-IMPLEMENTATION_1791618233581.txt"])
       assert.equal((await context.request.get(`${base}${route}`)).status(), 404, `${route}: private input exposed`);
     const sitemap = await (await context.request.get(`${base}/sitemap.xml`)).text();
     assert.equal((sitemap.match(/<loc>[^<]*\/pricing(?:\.html)?<\/loc>/g) || []).length, 1);

@@ -20,3 +20,9 @@ Skill Passport access is restricted to Professional and Enterprise as an add-on,
 **Why:** The owner specifies “access to Skill Passport is only at Enterprise and Professional based as addon.”
 
 **How to apply:** Do not present Skill Passport as a core-plan inclusion or an Essentials add-on.
+
+When applying the final corrective pricing brief, the owner explicitly selected “Keep your recent corrections”: apply its other content and UX requirements without reinstating its conflicting commercial caps or branding/module entitlements.
+
+**Why:** The owner resolved the contradiction between the uploaded brief and their direct commercial instructions.
+
+**How to apply:** Treat the recent commercial corrections above as authoritative when reconciling that brief.
