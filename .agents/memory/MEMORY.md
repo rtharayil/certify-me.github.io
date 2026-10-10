@@ -34,3 +34,4 @@
 - [Professional association positioning](association-positioning.md) — association executives and credential/CPD leaders first; governed professional achievement infrastructure, not a badge generator.
 - [Enterprise HR/L&D positioning](hr-learning-positioning.md) — buyer-first credential and skill infrastructure; verified learning records precede optional workforce context.
 - [CertifyMe colour consistency](brand-colour-consistency.md) — page refreshes must retain the existing site colour theme, not introduce independent palettes.
+- [Pricing commercial approval](pricing-commercial-approval.md) — proposed packaging requires explicit commercial sign-off before publication; design approval is not pricing approval.

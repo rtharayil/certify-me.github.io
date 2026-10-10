@@ -2,6 +2,8 @@
 (function () {
   function prepareTables() {
     document.querySelectorAll('main table, .single-post-txt table').forEach(function (table, index) {
+      // These comparisons already provide labeled, stacked cells on phones.
+      if (table.getAttribute('data-responsive-table') === 'stacked') return;
       var ancestor = table.parentElement;
       while (ancestor && ancestor !== document.body) {
         var overflow = getComputedStyle(ancestor).overflowX;

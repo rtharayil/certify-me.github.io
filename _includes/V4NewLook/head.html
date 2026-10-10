@@ -12,6 +12,7 @@
 
   <!-- TITLE & CORE META -->
   {% assign meta_title = page.title | escape %}{% assign meta_description = page.description | escape %}{% assign meta_abstract = page.abstract | default: page.description | escape %}
+  {% if page.canonical_url %}{% assign page_canonical_url = page.canonical_url %}{% else %}{% capture page_canonical_url %}{{ site.canonical_origin }}{{ page.url }}{% endcapture %}{% endif %}
   {% include seo-image-url.html %}
   <title>{{ meta_title }}</title>
   <meta name="description" content="{{ meta_description }}">
@@ -21,7 +22,7 @@
   <meta name="theme-color" content="#4A6CF7">
 
   <!-- CANONICAL URL -->
-  <link rel="canonical" href="https://www.certifyme.online{{ page.url }}">
+  <link rel="canonical" href="{{ page_canonical_url | escape }}">
 
   <!-- OPEN GRAPH -->
   <meta property="og:type" content="{% if page.layout contains 'SingleBlogPost' %}article{% else %}website{% endif %}">
@@ -29,7 +30,7 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="{{ meta_title }}">
   <meta property="og:description" content="{{ meta_abstract }}">
-  <meta property="og:url" content="https://www.certifyme.online{{ page.url }}">
+  <meta property="og:url" content="{{ page_canonical_url | escape }}">
   {% if page.imageLink %}
     <meta property="og:image" content="{{ seo_image | escape }}">
   {% else %}
@@ -255,7 +256,7 @@
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "@id": "https://www.certifyme.online{{ page.url }}#faq",
+      "@id": "{{ page_canonical_url }}#faq",
     "mainEntity": [
       {% for faq in page.faqs %}
       {% assign faq_answer = faq.answer %}
@@ -281,8 +282,8 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://www.certifyme.online{{ page.url }}#webpage",
-    "url": "https://www.certifyme.online{{ page.url }}",
+    "@id": "{{ page_canonical_url }}#webpage",
+    "url": "{{ page_canonical_url }}",
             "name": {{ page.breadcrumb_label | default: page.title | jsonify }},
     "description": {{ page.description | jsonify }},
     {% if page.HeroImage and page.HeroImageWidth and page.HeroImageHeight %}
@@ -314,7 +315,7 @@
           "@type": "ListItem",
           "position": 2,
           "name": {{ page.title | jsonify }},
-      "item": "https://www.certifyme.online{{ page.url }}"
+      "item": "{{ page_canonical_url }}"
         }{% endif %}
       ]
     }

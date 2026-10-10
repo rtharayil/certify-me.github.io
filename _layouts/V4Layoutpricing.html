@@ -1,85 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-
 {% include V4NewLook/head.html %}
-
-<!-- STRUCTURED DATA: SoftwareApplication / Pricing (M2) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "@id": "https://www.certifyme.online/#software",
-  "name": "CertifyMe",
-  "applicationCategory": "BusinessApplication",
-  "operatingSystem": "Web",
-  "url": "https://www.certifyme.online/pricing",
-  "description": "Affordable digital credential management software for issuing, managing and verifying certificates, badges and diplomas at scale.",
-  "offers": [
-    {
-      "@type": "Offer",
-      "name": "Starter Plan",
-      "description": "For small teams getting started with digital credentials.",
-      "price": "0",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "url": "https://www.certifyme.online/pricing"
-    },
-    {
-      "@type": "Offer",
-      "name": "Professional Plan",
-      "description": "For growing institutions issuing credentials at scale.",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "url": "https://www.certifyme.online/pricing"
-    },
-    {
-      "@type": "Offer",
-      "name": "Enterprise Plan",
-      "description": "Custom pricing for large organisations with advanced automation and white-label needs.",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "url": "https://www.certifyme.online/pricing"
-    }
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "500",
-    "bestRating": "5",
-    "worstRating": "1"
-  }
-}
-</script>
-
 <body id="page-top">
-        {% include V4NewLook/_GTMNoScript.html %}
+  {% include V4NewLook/_GTMNoScript.html %}
+  <div id="page" class="page font--jakarta pricing-page">
+    {% include V4NewLook/navbar.html %}
+    <main id="main-content">
+      {% assign pricing = site.data.pricing %}
+      <section class="pricing-hero">
+        <div class="pricing-wrap">
+          <p class="pricing-eyebrow">Digital credential infrastructure for institutions</p>
+          <h1>Choose the Right Foundation for Your Credential Programs</h1>
+          <p class="pricing-hero__copy">CertifyMe connects credential issuance, institutional administration, verification, and the governance your programs need to grow.</p>
+          <div class="pricing-actions">
+            <a class="pricing-btn" href="{{ pricing.hero.primary_href }}">{{ pricing.hero.primary_cta }}</a>
+            <a class="pricing-btn pricing-btn--quiet" href="{{ pricing.hero.secondary_href }}">{{ pricing.hero.secondary_cta }}</a>
+          </div>
+        </div>
+      </section>
 
-    <div id="page" class="page font--jakarta">
-        {% include V4NewLook/navbar.html %}
+      <section class="pricing-plan-intro">
+        <div class="pricing-wrap">
+          <p class="pricing-eyebrow">Three plans. A clear path to scale.</p>
+          <h2 class="pricing-title">Choose the scope that fits your credential operations.</h2>
+          <p class="pricing-lead">Compare included capacity, administrative scope, and the governance capabilities that support your institution.</p>
+        </div>
+      </section>
 
-        <main id="main-content">
+      <section class="pricing-wrap" aria-label="CertifyMe plans">
+        <div class="pricing-plans">
+          {% for plan in pricing.plans %}
+          <article class="pricing-card{% if plan.key == 'professional' %} pricing-card--recommended{% endif %}">
+            <span class="pricing-card__badge"{% unless plan.badge %} aria-hidden="true"{% endunless %}>{{ plan.badge }}</span>
+            <p class="pricing-card__audience">{{ plan.audience }}</p>
+            <h3>{{ plan.name }}</h3>
+            <p class="pricing-card__headline">{{ plan.headline }}</p>
+            <p class="pricing-card__description">{{ plan.description }}</p>
+            <div class="pricing-capacity" aria-label="{{ plan.name }} plan capacity">
+              <div class="pricing-capacity__row"><span>Annual credentials</span><strong>{{ plan.capacity.credentials }}</strong></div>
+              <div class="pricing-capacity__row"><span>Recipients / learners</span><strong>{{ plan.capacity.recipients }}</strong></div>
+              <div class="pricing-capacity__row"><span>Administrative accounts</span><strong>{{ plan.capacity.administrators }}</strong></div>
+              <div class="pricing-capacity__row"><span>Departments</span><strong>{{ plan.capacity.departments }}</strong></div>
+              <div class="pricing-capacity__row"><span>Projects</span><strong>{{ plan.capacity.projects }}</strong></div>
+            </div>
+            <ul class="pricing-card__list">
+              {% for bullet in plan.bullets %}<li>{{ bullet }}</li>{% endfor %}
+            </ul>
+            <div class="pricing-card__bottom">
+              <details class="pricing-plan-details">
+                <summary>View {{ plan.name }} capabilities</summary>
+                <ul>{% for entitlement in plan.entitlements %}<li>{{ entitlement }}</li>{% endfor %}</ul>
+              </details>
+              <a class="pricing-btn" href="{{ plan.href }}">{{ plan.cta }}</a>
+              <p class="pricing-card__note">{% if plan.key == 'essentials' %}{{ plan.note_prefix }}{{ plan.capacity.credentials | downcase }}{{ plan.note_suffix }}{% else %}{{ plan.note }}{% endif %}</p>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
 
-        {% include V4NewLook/pricing/PricingPlan.html %}
+      <section class="pricing-section pricing-model">
+        <div class="pricing-wrap">
+          <p class="pricing-eyebrow">A transparent way to scope your plan</p>
+          <h2 class="pricing-title">Pricing that scales with your institution</h2>
+          <div class="pricing-model__copy">
+            <p>CertifyMe plans are designed around the scale and complexity of your credential operations.</p>
+            <p>Your subscription defines the administrative capabilities and organizational scope available to your team. Annual credential volume defines your included issuance capacity, while recipient allowances help establish the population covered by your subscription.</p>
+            <p>Institutions with higher volumes, more complex organizational structures, or additional integration and governance requirements can discuss a tailored arrangement with our team.</p>
+          </div>
+          <div class="pricing-model__grid">
+            <article class="pricing-model__item">
+              <p class="pricing-eyebrow">Capacity measure</p>
+              <h3>How many credentials you issue</h3>
+              <p>Your annual allowance covers the number of digital credentials issued during the subscription year.</p>
+            </article>
+            <article class="pricing-model__item">
+              <p class="pricing-eyebrow">Covered population</p>
+              <h3>How many learners your subscription covers</h3>
+              <p>A recipient is a person receiving credentials. One recipient may receive multiple credentials.</p>
+            </article>
+            <article class="pricing-model__item">
+              <p class="pricing-eyebrow">Operational scope</p>
+              <h3>How your team manages credential operations</h3>
+              <p>Administrative accounts, departments, projects, and permissions determine how your organization manages its credential programs.</p>
+            </article>
+          </div>
+          <p class="pricing-model__clarifier"><strong>Recipients and administrative users are different.</strong> A student receiving a credential is not the same as an administrator managing the platform. Discuss additional capacity with our team; capacity and any associated charges are agreed with the customer.</p>
+        </div>
+      </section>
 
-                {% include V4NewLook/pricing/comparePlans.html %}
+      <section class="pricing-section">
+        <div class="pricing-wrap">
+          <div class="pricing-compare__head">
+            <div>
+              <p class="pricing-eyebrow">Feature-by-feature</p>
+              <h2 class="pricing-title">Compare CertifyMe plans</h2>
+              <p class="pricing-lead">Choose the right combination of credential management, operational control, and institutional governance.</p>
+            </div>
+          </div>
+          <div class="pricing-legend" aria-label="Entitlement terminology">
+            <span>Included</span><span>Optional / package-defined</span><span>Contract-defined / configuration-dependent</span>
+          </div>
+          {% for category in pricing.comparison %}
+          <details class="pricing-category"{% if forloop.first %} open{% endif %}>
+            <summary>{{ category.category }}</summary>
+            <div class="pricing-category__body">
+              <table class="pricing-matrix" data-responsive-table="stacked" aria-label="{{ category.category }} plan comparison">
+                <thead>
+                  <tr><th scope="col">Feature</th>{% for plan in pricing.plans %}<th scope="col">{{ plan.name }}</th>{% endfor %}</tr>
+                </thead>
+                <tbody>
+                  {% for row in category.rows %}
+                  <tr>
+                    <td>{{ row.feature }}</td>
+                    {% for plan in pricing.plans %}
+                    {% assign cell = row[plan.key] %}
+                    {% if cell contains "capacity." %}
+                      {% assign capacity_field = cell | remove: "capacity." %}
+                      {% assign cell = plan.capacity[capacity_field] %}
+                    {% endif %}
+                    <td data-plan="{{ plan.name }}"><span class="pricing-matrix__state">{{ cell }}</span></td>
+                    {% endfor %}
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </details>
+          {% endfor %}
+          <p class="pricing-model__clarifier">Essentials provides standard activity visibility. Professional adds stronger operational visibility across projects and teams. Enterprise may include advanced forensic audit capabilities and institution-wide governance, subject to verified configuration. Standard activity history is not the same as forensic audit logging.</p>
+        </div>
+      </section>
 
-                {% include V4NewLook/pricing/pricingFAQ.html %}
-                
-                {% include V4NewLook/pricing/clientBrand.html %}
+      <section class="pricing-section pricing-solutions">
+        <div class="pricing-wrap">
+          <p class="pricing-eyebrow">Beyond core credential operations</p>
+          <h2 class="pricing-title">{{ pricing.solutions.heading }}</h2>
+          <p class="pricing-lead">{{ pricing.solutions.copy }}</p>
+          <div class="pricing-solutions__grid">
+            {% for solution in pricing.solutions.cards %}
+            <article class="pricing-solution">
+              <span class="pricing-solution__index" aria-hidden="true">0{{ forloop.index }}</span>
+              <p class="pricing-eyebrow">{{ solution.title }}</p>
+              <h3>{{ solution.headline }}</h3>
+              <p>{{ solution.description }}</p>
+              <a href="{{ solution.href }}">{{ solution.link }} <span aria-hidden="true">→</span></a>
+              {% if solution.transcript_href %}<a href="{{ solution.transcript_href }}">{{ solution.transcript_link }} <span aria-hidden="true">→</span></a>{% endif %}
+            </article>
+            {% endfor %}
+          </div>
+          <p class="pricing-solutions__note">{{ pricing.solutions.note }}</p>
+          <div class="pricing-actions"><a class="pricing-btn pricing-btn--quiet" href="{{ pricing.solutions.cta_href }}">{{ pricing.solutions.cta }}</a></div>
+        </div>
+      </section>
 
-                {% include V4NewLook/pricing/banner.html %}
+      <section class="pricing-section pricing-enterprise">
+        <div class="pricing-wrap">
+          <div class="pricing-enterprise__panel">
+            <div>
+              <p class="pricing-eyebrow">For complex operations</p>
+              <h2 class="pricing-title">{{ pricing.enterprise.heading }}</h2>
+              <p class="pricing-enterprise__copy">{{ pricing.enterprise.copy }}</p>
+              <a class="pricing-btn" href="{{ pricing.enterprise.href }}">{{ pricing.enterprise.cta }}</a>
+            </div>
+            <ul class="pricing-enterprise__list">
+              {% for capability in pricing.enterprise.capabilities %}<li>{{ capability }}</li>{% endfor %}
+            </ul>
+          </div>
+        </div>
+      </section>
 
-                </main><!-- /#main-content -->
+      <section class="pricing-section">
+        <div class="pricing-wrap">
+          <p class="pricing-eyebrow">Answers for institutional teams</p>
+          <h2 class="pricing-title">Frequently asked questions</h2>
+          {% for faq in pricing.faqs %}
+          <details class="pricing-faq">
+            <summary>{{ faq.question }}</summary>
+            <div class="pricing-faq__answer">{{ faq.answer }}</div>
+          </details>
+          {% endfor %}
+        </div>
+      </section>
 
-        {% include V4NewLook/footer.html %}
-
-                {% include V4NewLook/scripts.html %}
-
-
-
-    </div>
-
-
+      <section class="pricing-final">
+        <div class="pricing-wrap pricing-final__inner">
+          <div>
+            <p class="pricing-eyebrow">A conversation, shaped around your institution</p>
+            <h2 class="pricing-title">{{ pricing.final.heading }}</h2>
+            <p class="pricing-lead">{{ pricing.final.copy }}</p>
+          </div>
+          <div class="pricing-final__actions">
+            <a class="pricing-btn" href="{{ pricing.final.primary_href }}">{{ pricing.final.primary_cta }}</a>
+            <a class="pricing-btn pricing-btn--quiet" href="{{ pricing.final.secondary_href }}">{{ pricing.final.secondary_cta }}</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    {% include V4NewLook/footer.html %}
+    {% include V4NewLook/scripts.html %}
+  </div>
 </body>
-
 </html>

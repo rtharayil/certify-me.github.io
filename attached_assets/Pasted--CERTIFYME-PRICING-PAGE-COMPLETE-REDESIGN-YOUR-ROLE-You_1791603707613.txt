@@ -1,0 +1,982 @@
+# CERTIFYME PRICING PAGE: COMPLETE REDESIGN
+
+## YOUR ROLE
+
+You are implementing a complete, production-quality redesign of the CertifyMe pricing page.
+
+ChatGPT has already reviewed the current website, the broader product positioning, the legacy pricing structure, and previous discussions about CertifyMe's capabilities and pricing.
+
+**Your role is to execute the specification below. Do not independently redesign the pricing strategy, invent product capabilities, or change the approved plan structure.**
+
+This task requires redesigning the entire pricing page from top to bottom—not merely changing three pricing cards or updating the existing comparison table.
+
+The finished page must have a coherent visual design, new content hierarchy, clear plan differentiation, comprehensive feature comparison, responsive layouts, and appropriate calls to action.
+
+Do not redesign the rest of the website.
+
+---
+
+# 1. BUSINESS CONTEXT
+
+**Company:** Tech99 Innovations Private Limited  
+**Product:** CertifyMe  
+**Website:** https://www.certifyme.online/  
+**Pricing page:** https://www.certifyme.online/pricing
+
+CertifyMe is a digital credential infrastructure platform for institutions.
+
+The platform has evolved beyond certificate and badge creation. Its broader capabilities include:
+
+1. Digital credential creation, issuance, and management.
+2. Standards-based credential interoperability.
+3. Credential verification and trust.
+4. Organization, department, project, and folder management.
+5. Administrative roles and access controls.
+6. Credential analytics and engagement insights.
+7. APIs and integrations.
+8. Auditability and forensic audit capabilities.
+9. Skills Taxonomy Mapping.
+10. Comprehensive Learner Records.
+11. Workforce Intelligence.
+12. Related learner-facing capabilities, including Skill Passport.
+
+The wider product ecosystem includes CertifyMe, SkillStory, and EduTranscript.
+
+The pricing page must communicate this evolution without suggesting that every product or advanced module is included in every subscription.
+
+## Business objective
+
+Transform the pricing page into a clear enterprise SaaS buying experience that helps institutional buyers understand:
+
+- Which plan fits their organization.
+- How credential volume affects their subscription.
+- How administrative complexity affects plan selection.
+- Which governance capabilities are included.
+- Which integrations and advanced capabilities may require a tailored arrangement.
+- When they should contact CertifyMe for an enterprise proposal.
+
+The page should appeal to universities, professional bodies, certification authorities, training providers, government institutions, and enterprises.
+
+**Position CertifyMe as institutional digital credential infrastructure—not a certificate designer.**
+
+---
+
+# 2. EXECUTE A COMPLETE PAGE REDESIGN
+
+The existing page uses the legacy plans StartUp, Signature, and Enterprise and gives prominence to template counts, administrator counts, and a large legacy feature matrix.
+
+Replace the entire pricing-page experience.
+
+Do not preserve the old page structure merely because it already exists.
+
+You must redesign:
+
+- Hero section.
+- Page introduction.
+- Pricing-card layout.
+- Plan hierarchy.
+- Capacity presentation.
+- Feature comparison.
+- Advanced solution presentation.
+- Enterprise requirements section.
+- FAQ section.
+- Final conversion section.
+- Mobile layout.
+- Visual styling.
+- Spacing and typography.
+- Interaction patterns.
+- Content hierarchy.
+
+Retain the existing website header, navigation, footer, and shared design conventions where appropriate.
+
+The redesign must feel like a natural but substantial improvement to the current CertifyMe website.
+
+Do not modify unrelated pages.
+
+---
+
+# 3. THE THREE PLANS
+
+Implement exactly three plans:
+
+1. Essentials
+2. Professional
+3. Enterprise
+
+Do not introduce a fourth plan.
+
+Do not rename these plans.
+
+Do not display fabricated monetary prices.
+
+Use a request-pricing or consultation model.
+
+## PLAN A: ESSENTIALS
+
+### Plan name
+
+Essentials
+
+### Audience label
+
+FOR SMALLER TEAMS AND CREDENTIAL PROGRAMS
+
+### Headline
+
+**Trusted digital credentials, made simple.**
+
+### Description
+
+Issue and manage trusted digital credentials with the essential tools needed to run a credential program.
+
+Designed for smaller institutions, individual departments, training providers, and organizations beginning their digital credential journey.
+
+### Proposed capacity
+
+| Metric | Included allowance |
+|---|---:|
+| Annual credentials issued | Up to 5,000 |
+| Recipients / learners | Up to 5,000 |
+| Administrative accounts | Up to 2 |
+| Departments | 1 |
+| Projects | Up to 3 |
+
+These are proposed commercial limits. Keep them centrally configurable so the CertifyMe team can approve or adjust them before publication.
+
+### Include these features
+
+- Credential creation and management.
+- Credential template management.
+- Individual credential issuance.
+- Bulk credential issuance.
+- Digital credential access and sharing.
+- QR and URL-based credential access.
+- Supported credential verification.
+- Standard credential lifecycle management.
+- Standard analytics and reporting.
+- Essential administrative controls.
+- Standard platform security.
+- Standard support resources.
+
+### Plan-card bullets
+
+Display these six benefits:
+
+- Create and issue digital credentials.
+- Issue credentials individually or in bulk.
+- Enable digital credential access and sharing.
+- Support credential verification.
+- Monitor credential activity through standard analytics.
+- Manage credential programs with essential administrative controls.
+
+### CTA
+
+**Discuss Your Requirements**
+
+### Supporting note
+
+"Includes up to 5,000 credentials annually. Contact our team if your requirements exceed the included capacity."
+
+---
+
+## PLAN B: PROFESSIONAL
+
+### Plan name
+
+Professional
+
+### Badge
+
+RECOMMENDED FOR GROWING INSTITUTIONS
+
+### Audience label
+
+FOR MULTI-TEAM CREDENTIAL OPERATIONS
+
+### Headline
+
+**Manage credential programs across teams.**
+
+### Description
+
+Coordinate credential operations across departments and projects with clearer administrative ownership, project-level access controls, and expanded reporting and integration capabilities.
+
+Designed for universities, professional bodies, and organizations managing multiple credential programs.
+
+### Proposed capacity
+
+| Metric | Included allowance |
+|---|---:|
+| Annual credentials issued | Up to 50,000 |
+| Recipients / learners | Up to 25,000 |
+| Administrative accounts | Up to 10 |
+| Departments | Up to 10 |
+| Projects | Up to 25 |
+
+These are proposed commercial limits. Keep them centrally configurable and subject to commercial approval before publication.
+
+### Include these features
+
+Everything in Essentials, plus:
+
+- Multiple department management.
+- Expanded project management.
+- Folder-based organization.
+- Project-level user assignment.
+- Project-scoped roles and permissions.
+- Expanded administrative governance.
+- Searchable activity history and standard audit trails.
+- Expanded analytics and reporting.
+- Expanded API and integration capabilities.
+- Institutional branding options.
+- More flexible credential-program administration.
+- Expanded onboarding and support options according to the approved commercial package.
+
+### Plan-card bullets
+
+Display these six benefits:
+
+- Everything in Essentials.
+- Manage multiple departments and projects.
+- Organize credential programs using folders.
+- Assign users to specific projects.
+- Apply project-level access controls and permissions.
+- Gain expanded visibility into credential activity and program performance.
+
+### CTA
+
+**Discuss Your Requirements**
+
+### Supporting note
+
+"Designed for institutions managing multiple credential programs, departments, and administrative teams."
+
+---
+
+## PLAN C: ENTERPRISE
+
+### Plan name
+
+Enterprise
+
+### Audience label
+
+FOR INSTITUTION-WIDE AND COMPLEX DEPLOYMENTS
+
+### Headline
+
+**Institution-wide governance and scale.**
+
+### Description
+
+Manage digital credential infrastructure across complex organizational structures with advanced governance, forensic audit capabilities, enterprise integrations, and tailored deployment arrangements.
+
+Designed for universities, government organizations, large professional bodies, and enterprises with complex operational requirements.
+
+### Capacity
+
+| Metric | Included allowance |
+|---|---|
+| Annual credentials issued | Custom |
+| Recipients / learners | Custom |
+| Administrative accounts | Contract-defined |
+| Departments | Contract-defined |
+| Projects | Contract-defined |
+
+Do not label these allowances as unlimited.
+
+### Include these capabilities, subject to the actual offering and agreed configuration
+
+- Institution-wide credential administration.
+- Contract-defined organizational capacity.
+- Advanced access governance.
+- Forensic audit logging.
+- Advanced audit reporting where available.
+- Enterprise identity integration and SSO where supported.
+- Advanced API and integration requirements.
+- Custom integration work.
+- Custom workflows where supported.
+- Enterprise onboarding and training.
+- Security review assistance where available.
+- Custom SLA and DPA arrangements subject to agreement.
+- Dedicated hosting or deployment options where offered.
+- Data residency arrangements where available.
+- Tailored implementation and support.
+
+Do not claim specific audit-log retention, SIEM integration, immutable logs, dedicated infrastructure, or other advanced capabilities unless the existing product and commercial offering substantiate them.
+
+### Plan-card bullets
+
+Display these six benefits:
+
+- Institution-wide credential operations.
+- Advanced governance and access controls.
+- Forensic audit logging capabilities.
+- Enterprise integration and automation options.
+- Tailored hosting and data residency arrangements.
+- Custom implementation, service, and support agreements.
+
+### CTA
+
+**Talk to Our Enterprise Team**
+
+### Supporting note
+
+"Enterprise capacity and capabilities are tailored to your institution's operational, technical, and governance requirements."
+
+---
+
+# 4. PRICING MODEL
+
+Create a visually distinct section explaining how the pricing model works.
+
+## Heading
+
+**Pricing that scales with your institution**
+
+## Body copy
+
+"CertifyMe plans are designed around the scale and complexity of your credential operations.
+
+Your subscription defines the administrative capabilities and organizational scope available to your team. Annual credential volume defines your included issuance capacity, while recipient allowances help establish the population covered by your subscription.
+
+Institutions with higher volumes, more complex organizational structures, or additional integration and governance requirements can discuss a tailored arrangement with our team."
+
+Display three visual cards or columns.
+
+### Annual credential volume
+
+**How many credentials you issue**
+
+"Your annual allowance covers the number of digital credentials issued during the subscription year."
+
+### Recipient population
+
+**How many learners your subscription covers**
+
+"A recipient is a person receiving credentials. One recipient may receive multiple credentials."
+
+### Administrative users and organizational scope
+
+**How your team manages credential operations**
+
+"Administrative accounts, departments, projects, and permissions determine how your organization manages its credential programs."
+
+Include the following clarification:
+
+"Recipients and administrative users are different. A student receiving a credential is not the same as an administrator managing the platform."
+
+Do not add a monthly-versus-annual billing selector.
+
+Do not invent monetary prices.
+
+Do not imply automatic overage billing.
+
+Additional capacity must be discussed with the CertifyMe team.
+
+---
+
+# 5. COMPLETE FEATURE COMPARISON
+
+Redesign the comparison experience rather than copying the legacy feature table.
+
+## Heading
+
+**Compare CertifyMe plans**
+
+## Supporting copy
+
+"Choose the right combination of credential management, operational control, and institutional governance."
+
+Use grouped categories.
+
+On desktop, use a readable comparison table with a sticky or clearly visible feature column if appropriate.
+
+On mobile, use expandable feature categories or a stacked comparison layout.
+
+Do not force visitors to navigate an excessively wide table.
+
+## CATEGORY 1: CREDENTIAL MANAGEMENT
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Credential creation and management | Included | Included | Included |
+| Credential template management | Included | Included | Included |
+| Individual issuance | Included | Included | Included |
+| Bulk issuance | Included | Included | Included |
+| Digital credential sharing | Included | Included | Included |
+| Credential lifecycle management | Standard capabilities | Standard capabilities | According to configuration |
+| Expiry and revocation | Supported product capabilities | Supported product capabilities | According to configuration |
+
+## CATEGORY 2: VERIFICATION AND STANDARDS
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| QR and URL access | Included | Included | Included |
+| Supported credential verification | Included | Included | Included |
+| Open Badges 3.0 | Supported formats | Supported formats | Supported formats |
+| W3C Verifiable Credentials | Supported configurations | Supported configurations | Supported configurations |
+| Cryptographic signing | According to supported credential configuration | According to supported credential configuration | According to agreed configuration |
+
+Do not imply that every external platform accepts every credential format.
+
+Do not imply that a QR code alone proves credential authenticity.
+
+## CATEGORY 3: ORGANIZATION AND ACCESS
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Departments | 1 | Up to 10 | Contract-defined |
+| Projects | Up to 3 | Up to 25 | Contract-defined |
+| Folders | Standard organization capabilities | Expanded organization capabilities | According to configuration |
+| Administrative accounts | Up to 2 | Up to 10 | Contract-defined |
+| Role-based access management | Essential controls | Expanded controls | Advanced governance |
+| Project-level user assignment | Basic organizational access | Included | Included |
+| Project-scoped permissions | Essential access controls | Included | Advanced controls where supported |
+| Organization-wide administration | Basic | Multi-team | Institution-wide |
+
+## CATEGORY 4: AUDITABILITY AND GOVERNANCE
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Activity history | Standard | Expanded | Expanded |
+| Standard audit trails | Standard capabilities | Included | Included |
+| Searchable activity history | Standard capabilities where available | Included where supported | Included where supported |
+| Forensic audit logging | Not included as an advanced plan entitlement | Not included as a standard entitlement | Included subject to verified configuration |
+| Advanced audit reporting | Not included as a standard entitlement | Optional where approved | According to agreed configuration |
+| Custom audit retention | Standard policy | Available options | According to contract and technical capability |
+
+The plan distinction must be clear:
+
+- Essentials provides standard activity visibility.
+- Professional provides stronger operational visibility across projects and teams.
+- Enterprise provides advanced forensic audit capabilities and institution-wide governance, subject to the verified offering.
+
+Do not describe standard activity history as equivalent to forensic audit logging.
+
+Do not claim logs are immutable or tamper-proof without technical evidence.
+
+## CATEGORY 5: APIS AND INTEGRATIONS
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Standard API capabilities | Included where available | Included | Included |
+| Advanced API capabilities | Not a standard entitlement | Included according to approved package | According to configuration |
+| Standard supported integrations | Included where applicable | Expanded options | Agreed integration scope |
+| Webhooks and automation | Standard capabilities where available | Expanded capabilities where available | According to configuration |
+| Custom integration work | Not included | Separately scoped | Available by agreement |
+
+## CATEGORY 6: BRANDING AND RECIPIENT EXPERIENCE
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Credential branding | Included | Included | Included |
+| Standard credential pages | Included | Included | Included |
+| Custom domains | According to approved package | According to approved package | According to agreement |
+| White-label email | According to approved package | According to approved package | According to agreement |
+| Custom wallet | Optional module | Optional module | Available by agreement |
+| Showcase Directory | Optional module | Optional module | Available by agreement |
+
+Do not promise custom domains or white-label features in a particular plan unless the corresponding commercial entitlement has been approved.
+
+## CATEGORY 7: ANALYTICS AND REPORTING
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Credential issuance analytics | Included | Included | Included |
+| Standard engagement insights | Included according to the standard product | Included | Included |
+| Project-level reporting | Basic | Expanded | Advanced where available |
+| Advanced analytics | Not a standard entitlement | According to approved package | According to agreement |
+| Custom reports | Not included as a standard entitlement | Optional where supported | According to agreement |
+
+## CATEGORY 8: SUPPORT AND ENTERPRISE SERVICES
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Standard support | Included | Included | Included |
+| Onboarding | Standard package | Expanded package | According to agreement |
+| Additional training | Optional | According to package | According to agreement |
+| Dedicated account management | Not included as standard | Optional | According to agreement |
+| Custom SLA | Not included | Not included as standard | Subject to agreement |
+| Custom DPA | According to standard arrangements | Subject to agreement | Subject to agreement |
+| Security review assistance | Standard documentation | Where available | According to agreement |
+| Dedicated hosting | Not included as standard | Not included as standard | Where available |
+| Data residency arrangements | Standard available options | According to available options | According to agreement |
+
+### Comparison-table design rules
+
+- Display a clear distinction between included, optional, and contract-defined features.
+- Use labels rather than unexplained checkmarks alone.
+- Use restrained colours.
+- Avoid excessive borders.
+- Keep category headings visually distinct.
+- Make the table easy to scan.
+- Keep important limitations visible.
+- Use expandable categories where appropriate.
+- Preserve all feature information on mobile.
+- Do not invent feature entitlements to fill empty cells.
+
+---
+
+# 6. ADVANCED SOLUTIONS SECTION
+
+The page must explain that CertifyMe can extend beyond the core credential platform.
+
+## Heading
+
+**Extend your credential infrastructure**
+
+## Supporting copy
+
+"Build on trusted digital credentials with capabilities that connect achievements to skills, learner records, and workforce context."
+
+Create four visually distinct solution cards.
+
+### CARD 1: SKILLS TAXONOMY MAPPING
+
+**Headline:** Connect learning outcomes to skills.
+
+**Description:**
+
+"Relate institution-defined learning outcomes, credentials, and evidence to reviewed skills and competency frameworks."
+
+**Link:**
+
+https://www.certifyme.online/skills-taxonomy-mapping
+
+### CARD 2: COMPREHENSIVE LEARNER RECORD
+
+**Headline:** Bring achievements together.
+
+**Description:**
+
+"Connect credentials, skills, projects, experiences, and other learning evidence in a structured learner record while preserving their origins."
+
+**Link:**
+
+https://www.certifyme.online/comprehensive-learner-record
+
+### CARD 3: WORKFORCE INTELLIGENCE
+
+**Headline:** Add workforce context to learning.
+
+**Description:**
+
+"Relate reviewed skills and learner-record context to occupations and labour-market information from appropriate external sources."
+
+**Link:**
+
+https://www.certifyme.online/workforce-intelligence
+
+### CARD 4: SKILL PASSPORT AND TRANSCRIPT MANAGEMENT
+
+**Headline:** Support the wider learner journey.
+
+**Description:**
+
+"Explore connected learner records, Skill Passport capabilities, and transcript-management workflows designed for institutional needs."
+
+Use the verified existing Skill Passport page:
+
+https://www.certifyme.online/solutions/skill-passport
+
+For transcript management, discover and reuse the existing verified internal page route. Do not invent a new URL.
+
+### CTA
+
+**Explore Institutional Solutions**
+
+### Commercial rule
+
+These cards describe related capabilities and modules.
+
+Do not imply that every solution is automatically included in all three core plans.
+
+Do not invent add-on prices.
+
+---
+
+# 7. ENTERPRISE SECTION
+
+Create a visually distinct enterprise section.
+
+Use a light background and restrained indigo accents.
+
+## Heading
+
+**Complex requirements? Let's design the right configuration.**
+
+## Body copy
+
+"Large institutions often need more than a standard subscription. CertifyMe can discuss organizational complexity, advanced governance, integrations, credential volumes, hosting arrangements, and contractual service requirements as part of an institution-specific proposal."
+
+Display six concise capability items:
+
+- Multi-department and multi-project operations.
+- Advanced access governance and auditability.
+- Enterprise APIs and integrations.
+- Higher credential volumes.
+- Hosting and data residency requirements.
+- Implementation, onboarding, and contractual support.
+
+### CTA
+
+**Talk to Our Enterprise Team**
+
+Use the existing approved demo/contact destination.
+
+Do not create a new form or external endpoint.
+
+---
+
+# 8. FAQ SECTION
+
+Create an accessible accordion interface.
+
+## Heading
+
+**Frequently asked questions**
+
+### Question 1: How does CertifyMe pricing work?
+
+"CertifyMe plans are designed around annual credential volume, recipient population, administrative requirements, and organizational scope. Enterprise requirements can be discussed with our team."
+
+### Question 2: What is the difference between recipients and credentials?
+
+"A recipient is a person receiving a credential. A recipient may receive multiple credentials during the subscription year, so recipient population and annual credential issuance are different measures."
+
+### Question 3: Are students counted as administrative users?
+
+"No. Students and other credential recipients are different from administrative users. Administrative users access the platform to manage credential programs."
+
+### Question 4: What happens if we need more credentials?
+
+"Contact our team to discuss additional capacity and the most appropriate subscription arrangement. Any additional capacity and associated charges will be agreed with the customer."
+
+### Question 5: Can departments manage their own projects?
+
+"CertifyMe supports project-management and administrative-access capabilities. The available permissions depend on the applicable configuration and subscription arrangement."
+
+### Question 6: Does CertifyMe provide forensic audit logs?
+
+"CertifyMe provides administrative and audit-related capabilities. Advanced forensic audit functionality and its specific scope are available according to the applicable enterprise configuration."
+
+### Question 7: Can CertifyMe integrate with our existing systems?
+
+"CertifyMe provides API and integration capabilities for supported systems. Integration requirements depend on the systems involved, technical scope, and agreed implementation."
+
+### Question 8: Are Skills Taxonomy Mapping and Comprehensive Learner Records included?
+
+"These capabilities form part of the broader CertifyMe ecosystem. Their availability and commercial packaging depend on the applicable product and institutional requirements."
+
+### Question 9: Can we arrange dedicated hosting or data residency?
+
+"Hosting and data residency requirements can be discussed with our team. Available options depend on the deployment configuration and applicable agreement."
+
+### Question 10: Can we request a tailored enterprise proposal?
+
+"Yes. Contact our team to discuss your credential volumes, organizational structure, integrations, governance requirements, and implementation needs."
+
+Do not add invented answers about pricing, security certifications, or technical capabilities.
+
+---
+
+# 9. FINAL CONVERSION SECTION
+
+Create a visually strong but restrained final CTA section.
+
+Use a light indigo background or another existing CertifyMe brand treatment.
+
+## Heading
+
+**Let's design the right credential infrastructure for your institution.**
+
+## Supporting copy
+
+"Tell us about your credential programs, recipient population, expected issuance volume, integrations, and governance requirements. Our team will help identify the appropriate plan and discuss any additional capabilities you may need."
+
+### Primary CTA
+
+**Discuss Your Requirements**
+
+### Secondary CTA
+
+**Explore the Platform**
+
+Use existing CTA destinations and reusable components.
+
+---
+
+# 10. COMPLETE VISUAL REDESIGN SPECIFICATION
+
+The page must be visually redesigned from top to bottom.
+
+Do not simply apply new colours to the existing cards and table.
+
+## Brand
+
+Primary colour:
+
+`#4F46E5`
+
+Use the current CertifyMe logo, typography, navigation, footer, and established website conventions.
+
+## Overall appearance
+
+Create a clean, modern B2B enterprise SaaS pricing page.
+
+The page should communicate:
+
+- Trust.
+- Institutional credibility.
+- Clarity.
+- Operational maturity.
+- Technical capability.
+- Commercial transparency.
+
+Avoid making it look like a consumer subscription page.
+
+## Layout
+
+Use a centred content container consistent with the existing website.
+
+Maintain generous whitespace and clear section separation.
+
+Use a consistent spacing system.
+
+Use a strong heading hierarchy.
+
+Keep paragraphs short and readable.
+
+## Hero
+
+- Prominent H1.
+- Restrained eyebrow text.
+- Clear supporting paragraph.
+- Two CTAs.
+- Generous whitespace.
+- No oversized decorative illustrations.
+- No fabricated product screenshots.
+
+## Pricing cards
+
+Use three visually balanced cards.
+
+Each card must show:
+
+1. Plan name.
+2. Intended customer.
+3. Value proposition.
+4. Recipient allowance.
+5. Annual credential allowance.
+6. Administrator allowance.
+7. Department and project allowance.
+8. Six concise feature bullets.
+9. CTA.
+10. Relevant supporting note.
+
+Make the Professional plan slightly more prominent using a subtle border, restrained background treatment, or small badge.
+
+Do not make the other plans visually unattractive.
+
+Do not fabricate a discount or savings claim.
+
+Do not display fake prices.
+
+## Feature comparison
+
+Use a polished, grouped comparison layout.
+
+Avoid a massive uninterrupted table.
+
+Use expandable categories or accordions to improve readability.
+
+Make it easy to compare plan entitlements without forcing users to read every row.
+
+## Advanced solutions
+
+Use four consistent cards with simple icons where suitable.
+
+Do not use generic AI-generated illustrations.
+
+Do not introduce unrelated imagery.
+
+## Enterprise section
+
+Use a clear visual transition from general plans to tailored enterprise requirements.
+
+Maintain the existing brand language.
+
+## FAQ
+
+Use accessible accordion controls.
+
+Provide enough spacing between questions.
+
+Ensure the open and closed states are visually clear.
+
+## Final CTA
+
+Use a concise closing message with a strong visual hierarchy and clear action.
+
+## Do not use
+
+- Excessive gradients.
+- Heavy indigo blocks.
+- Cartoon illustrations.
+- Generic AI artwork.
+- Excessive animations.
+- Artificial urgency.
+- Fake testimonials.
+- Fabricated customer logos.
+- Invented discounts.
+- Unnecessary pricing toggles.
+- Excessive decorative graphics.
+
+---
+
+# 11. RESPONSIVE DESIGN
+
+## Desktop
+
+- Display all three pricing cards side by side.
+- Keep their main content aligned.
+- Make capacity allowances easy to scan.
+- Make Professional the recommended plan.
+- Present comparison categories clearly.
+- Use the full content width effectively.
+
+## Tablet
+
+- Adapt card widths and spacing.
+- Avoid cramped feature lists.
+- Use expandable comparison sections if necessary.
+- Preserve visual hierarchy.
+
+## Mobile
+
+- Stack the pricing cards vertically.
+- Keep the primary CTA visible and easy to tap.
+- Display all capacity limits without clipping.
+- Use readable typography.
+- Prevent horizontal page overflow.
+- Convert the feature comparison into grouped accordions or stacked comparisons.
+- Preserve every important feature and limitation.
+- Make the FAQ accessible.
+- Keep the existing site navigation functional.
+
+Do not hide material pricing or entitlement information on mobile.
+
+---
+
+# 12. SEO AND ROUTING
+
+The intended public pricing route is:
+
+`https://www.certifyme.online/pricing`
+
+The current legacy page is also accessible through:
+
+`https://www.certifyme.online/pricing.html`
+
+Inspect the existing hosting and routing configuration before changing either route.
+
+Preserve compatibility with the existing page.
+
+Avoid duplicate indexable pricing URLs.
+
+## Title
+
+CertifyMe Pricing | Digital Credential Platform for Institutions
+
+## Meta description
+
+"Explore CertifyMe plans for digital credential issuance, institutional administration, verification, integrations, and enterprise credential management."
+
+## H1
+
+Choose the Right Foundation for Your Credential Programs
+
+## SEO requirements
+
+- Use one clear H1.
+- Maintain a logical H2/H3 hierarchy.
+- Preserve existing metadata conventions.
+- Use the appropriate canonical URL.
+- Preserve existing analytics and tracking.
+- Use descriptive internal links.
+- Link to relevant existing solution pages.
+- Do not keyword-stuff.
+- Do not invent pricing structured data.
+- Do not add fabricated reviews or ratings.
+- Do not modify unrelated page metadata.
+
+---
+
+# 13. TECHNICAL IMPLEMENTATION
+
+Inspect the existing repository to understand its framework and build process.
+
+Use the existing technology stack.
+
+If the site uses Jekyll, implement the page using its existing layouts, includes, front matter, assets, and conventions.
+
+Do not migrate the website to another framework.
+
+## Required implementation behaviour
+
+- Reuse the existing header.
+- Reuse the existing footer.
+- Reuse existing navigation components.
+- Reuse the existing demo/contact CTA.
+- Preserve current analytics and tracking.
+- Preserve existing consent and privacy behaviour.
+- Use semantic HTML.
+- Keep CSS scoped to the pricing page where practical.
+- Avoid unnecessary JavaScript.
+- Avoid unnecessary dependencies.
+- Keep the page configuration maintainable.
+- Preserve unrelated website functionality.
+
+## Central configuration
+
+Keep the three plans, limits, and feature entitlements in a central configuration structure or data file.
+
+Each plan should support fields equivalent to:
+
+- Plan name.
+- Audience label.
+- Headline.
+- Description.
+- Recipient allowance.
+- Annual credential allowance.
+- Administrative-account allowance.
+- Department allowance.
+- Project allowance.
+- Feature entitlements.
+- CTA label.
+- CTA destination.
+- Commercial approval status.
+
+Do not hard-code the same plan limits in multiple places.
+
+Keep the proposed limits configurable.
+
+Do not expose internal approval metadata to website visitors.
+
+Do not create an interactive pricing calculator unless specifically requested.
+
+---
+
+# 14. COMMERCIAL SAFEGUARDS
+
+The numerical limits in this specification are proposed packaging recommendations, not confirmed commercial commitments.
+
+Before the page is published to production, the CertifyMe team must approve:
+
+- 5,000 annual credentials for Essentials.
+- 50,000 annual credentials for Professional.
+- 5,000 recipients for Essentials.
+- 25,000 recipients for Professional.
+- Administrator allowances.
+- Department
