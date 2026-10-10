@@ -116,6 +116,7 @@
   @media (min-width: 981px) {
     .pricing-plans { row-gap: 0; }
     .pricing-card { display: grid; grid-template-rows: subgrid; grid-row: span 8; row-gap: 0; }
+    .pricing-card__bottom { margin-top: 0; }
   }
 }
 

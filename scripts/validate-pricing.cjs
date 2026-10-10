@@ -20,9 +20,22 @@ const profiles = [320, 390, 768, 1024, 1440, 1920].map(width => ({
 profiles.push({ name: "iPhone touch", ...devices["iPhone 13"] });
 
 assert.deepEqual(data.plans.map(p => p.name), ["Essentials", "Professional", "Enterprise"]);
-assert.deepEqual(data.comparison.map(c => c.rows.length), [7, 5, 8, 6, 5, 6, 5, 9]);
+assert.deepEqual(data.comparison.map(c => c.rows.length), [7, 5, 8, 6, 5, 7, 5, 9]);
 assert.equal(data.faqs.length, 10);
 assert.equal(data.solutions.cards.length, 4);
+assert.equal(data.plans[0].capacity.recipients, "From 500 onwards");
+assert.equal(data.plans[1].capacity.recipients, "From 1,000 onwards");
+for (const plan of data.plans.slice(0, 2)) assert.equal(plan.capacity.credentials, "No limit");
+const skillPassport = data.comparison.flatMap(category => category.rows).find(row => row.feature === "Skill Passport");
+assert.deepEqual([skillPassport.essentials, skillPassport.professional, skillPassport.enterprise],
+  ["Not available", "Optional add-on", "Optional add-on"]);
+assert(!data.plans[0].entitlements.some(text => /Skill Passport/.test(text)));
+for (const plan of data.plans.slice(1))
+  assert(plan.entitlements.includes("Skill Passport access as an optional add-on."));
+for (const feature of ["Custom domains", "White-label email"]) {
+  const row = data.comparison.flatMap(category => category.rows).find(row => row.feature === feature);
+  assert.deepEqual([row.essentials, row.professional, row.enterprise], ["Not included", "Included", "Included"]);
+}
 for (const plan of data.plans) {
   assert.equal(plan.bullets.length, 6);
   assert(plan.entitlements.length >= 12);
@@ -114,7 +127,9 @@ async function run() {
         assert(!(await disclosure.evaluate(e => e.open)));
       }
       const note = await cards.first().locator(".pricing-card__note").innerText();
-      assert.equal(note, `${data.plans[0].note_prefix}${data.plans[0].capacity.credentials.toLowerCase()}${data.plans[0].note_suffix}`);
+      assert.equal(note, data.plans[0].note);
+      for (const card of await cards.all())
+        assert.equal(await card.locator(".pricing-capacity__row span").nth(1).innerText(), "Students per year");
       const boxes = await cards.evaluateAll(nodes => nodes.map(e => {
         const r = e.getBoundingClientRect(); return { x: r.x, y: r.y, bottom: r.bottom };
       }));
@@ -154,7 +169,7 @@ async function run() {
         assert(!(await category.evaluate(e => e.open)));
         await summary.press("Enter");
       }
-      assert.equal(await root.locator(".pricing-matrix tbody tr").count(), 51);
+      assert.equal(await root.locator(".pricing-matrix tbody tr").count(), 52);
       assert.equal(await root.locator(".editorial-table-scroll,.editorial-table-hint").count(), 0,
         "Stacked comparisons must not receive the legacy horizontal-scroll treatment");
       const faqs = root.locator(".pricing-faq");
@@ -173,6 +188,7 @@ async function run() {
       const publicText = await root.innerText();
       assert(!/unlimited|StartUp|Signature|pending|commercial_approval|approved_at|\$\s*\d|save \d+%|free trial/i.test(publicText));
       assert.match(publicText, /not automatically included in core plans/);
+      assert.match(publicText, /Skill Passport is available only as an optional add-on to Professional and Enterprise, not Essentials/);
       assert.match(publicText, /Recipients and administrative users are different/);
       const schema = (await page.locator('script[type="application/ld+json"]').allTextContents())
         .map(text => JSON.parse(text));
@@ -205,7 +221,7 @@ async function run() {
         await menuToggle.click();
         assert.equal(await menuToggle.getAttribute("aria-expanded"), "false");
       }
-      console.log(`PASS ${name}: three plans, aligned/stacked cards, all 51 feature rows and 10 FAQs, keyboard disclosures, contrast, geometry, metadata and safeguards`);
+      console.log(`PASS ${name}: three plans, aligned/stacked cards, all 52 feature rows and 10 FAQs, keyboard disclosures, contrast, geometry, metadata and safeguards`);
       await context.close();
     }
 

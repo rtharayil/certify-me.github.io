@@ -38,7 +38,7 @@
             <p class="pricing-card__description">{{ plan.description }}</p>
             <div class="pricing-capacity" aria-label="{{ plan.name }} plan capacity">
               <div class="pricing-capacity__row"><span>Annual credentials</span><strong>{{ plan.capacity.credentials }}</strong></div>
-              <div class="pricing-capacity__row"><span>Recipients / learners</span><strong>{{ plan.capacity.recipients }}</strong></div>
+              <div class="pricing-capacity__row"><span>Students per year</span><strong>{{ plan.capacity.recipients }}</strong></div>
               <div class="pricing-capacity__row"><span>Administrative accounts</span><strong>{{ plan.capacity.administrators }}</strong></div>
               <div class="pricing-capacity__row"><span>Departments</span><strong>{{ plan.capacity.departments }}</strong></div>
               <div class="pricing-capacity__row"><span>Projects</span><strong>{{ plan.capacity.projects }}</strong></div>
@@ -52,7 +52,7 @@
                 <ul>{% for entitlement in plan.entitlements %}<li>{{ entitlement }}</li>{% endfor %}</ul>
               </details>
               <a class="pricing-btn" href="{{ plan.href }}">{{ plan.cta }}</a>
-              <p class="pricing-card__note">{% if plan.key == 'essentials' %}{{ plan.note_prefix }}{{ plan.capacity.credentials | downcase }}{{ plan.note_suffix }}{% else %}{{ plan.note }}{% endif %}</p>
+              <p class="pricing-card__note">{{ plan.note }}</p>
             </div>
           </article>
           {% endfor %}
@@ -65,14 +65,14 @@
           <h2 class="pricing-title">Pricing that scales with your institution</h2>
           <div class="pricing-model__copy">
             <p>CertifyMe plans are designed around the scale and complexity of your credential operations.</p>
-            <p>Your subscription defines the administrative capabilities and organizational scope available to your team. Annual credential volume defines your included issuance capacity, while recipient allowances help establish the population covered by your subscription.</p>
+            <p>Your subscription defines the students covered per year, administrative capabilities, and organizational scope available to your team. Essentials and Professional have no limit on credentials issued to covered students.</p>
             <p>Institutions with higher volumes, more complex organizational structures, or additional integration and governance requirements can discuss a tailored arrangement with our team.</p>
           </div>
           <div class="pricing-model__grid">
             <article class="pricing-model__item">
               <p class="pricing-eyebrow">Capacity measure</p>
               <h3>How many credentials you issue</h3>
-              <p>Your annual allowance covers the number of digital credentials issued during the subscription year.</p>
+              <p>Essentials and Professional have no credential issuance limit for covered students. Enterprise capacity is tailored by agreement.</p>
             </article>
             <article class="pricing-model__item">
               <p class="pricing-eyebrow">Covered population</p>
