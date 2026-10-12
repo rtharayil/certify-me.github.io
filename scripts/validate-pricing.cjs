@@ -222,6 +222,8 @@ async function run() {
       assert(schemaText.includes("https://www.certifyme.online/pricing#webpage"));
       assert.equal(await page.locator('header').count(), 1);
       assert.equal(await page.locator('footer').count(), 1);
+      const plansLink = page.locator('#wsmenu-main a[href="/pricing"]');
+      assert.equal((await plansLink.textContent()).trim(), "Plans");
       assert(await page.locator('script[src*="googletagmanager"],iframe[src*="googletagmanager"]').count() > 0);
       const contrast = (await root.evaluate(visibleLabelContrast))
         .filter(row => !row.provisional && row.ratio < row.required);
@@ -241,8 +243,7 @@ async function run() {
       if (await menuToggle.isVisible()) {
         await menuToggle.click();
         assert.equal(await menuToggle.getAttribute("aria-expanded"), "true");
-        const pricingLink = page.locator("#wsmenu-main").getByRole("link", { name: "Pricing", exact: true });
-        await pricingLink.waitFor({ state: "visible" });
+        await plansLink.waitFor({ state: "visible" });
         await menuToggle.click();
         assert.equal(await menuToggle.getAttribute("aria-expanded"), "false");
       }
