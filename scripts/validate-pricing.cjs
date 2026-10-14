@@ -35,13 +35,71 @@ const featureCount = data.comparison.reduce((total, category) => total + categor
 assert(featureCount > 0);
 const features = data.comparison.flatMap(category => category.rows);
 assert.equal(new Set(features.map(row => row.feature)).size, featureCount, "No duplicate comparison labels");
+// Every card highlight must describe capabilities actually available to that plan.
+const summaryFeatureRefs = {
+  essentials: [
+    ["Digital certificates", "Digital badges", "Open Badges"],
+    ["Individual / quick award", "CSV bulk award"],
+    ["Template creation and editing", "Upload existing credential designs", "Badge template library", "Certificate template library"],
+    ["Correct / edit credentials", "Delete credentials", "Regenerate individual credential images"],
+    ["Learner-facing wallet or profile", "Recipient credential access and retrieval", "Social and professional sharing"],
+    ["QR-code entry and lookup", "Unique credential ID lookup", "Current credential status checks"],
+    ["Credential issuance reporting", "Credential views", "Social sharing and engagement", "Download reporting"],
+    ["Basic APIs", "CSV data import"],
+  ],
+  professional: [
+    ["Stackable micro-credentials", "Learning paths", "Showcase directory"],
+    ["Open Badges 3.0 verification", "OTP-based verification", "Signed PDF integrity verification", "Structured credential proof verification"],
+    ["Revoke credentials", "Bulk deletion of credentials", "Bulk modification or reissuance of credentials", "Bulk regeneration of credential images"],
+    ["Credential page branding", "Custom domains", "White-label email"],
+    ["Fine-grained department permissions"],
+    ["Advanced analytics", "Reporting data export", "Export credential information"],
+    ["Advanced APIs", "Google Forms automation", "Workflow automation / Zapier"],
+    ["ESCO, O*NET and institutional framework mapping", "Job and occupation context", "Employer and location context"],
+  ],
+  enterprise: [
+    ["Cross-department / institution-wide administration", "Project-scoped permissions"],
+    ["Connected record of achievements and learning", "CLR creation", "CLR display", "Learner-facing wallet or profile"],
+    ["Skill Passport", "Transcript-management connections", "Credential-to-skill relationships"],
+    ["W3C Verifiable Credentials", "CLR 2.0 exchange formats"],
+    ["Webhooks", "Reporting API access", "SIS, HRIS and institutional integrations"],
+    ["Single sign-on", "OAuth for email access", "Administrative audit trails"],
+    ["Data residency", "Dedicated deployment"],
+    ["Onboarding", "Integration implementation", "Advanced training"],
+  ],
+};
+const summaryFeaturesByLabel = new Map(features.map(row => [row.feature, row]));
+for (const plan of data.plans) {
+  assert.equal(plan.bullets.length, summaryFeatureRefs[plan.key].length);
+  for (const labels of summaryFeatureRefs[plan.key])
+    for (const label of labels) {
+      const row = summaryFeaturesByLabel.get(label);
+      assert(row, `${plan.name}: unknown summary feature ${label}`);
+      assert(!/^(Not included|Not available|No departments)/i.test(row[plan.key]),
+        `${plan.name}: summary must not advertise unavailable ${label}`);
+    }
+}
+assert.match(data.plans[0].bullets.join(" "), /Open Badges 2\.1/);
+assert.match(data.plans[1].bullets.join(" "), /Open Badges 3\.0/);
+assert.match(data.plans[1].note, /Lifecycle history\/audit records are an optional paid add-on/);
+assert.match(data.plans[1].note, /paid recurring add-ons, not institution-wide access/);
+assert.match(data.plans[1].bullets.join(" "), /subject to reviewed mapping and module scope/);
+assert.match(data.plans[2].bullets.join(" "), /full SkillStory, subject to agreed module scope/);
+assert.match(data.plans[2].note, /supported configurations and agreed scopes/);
 assert(data.plans[0].bullets.includes("QR/ID record lookup and credential status checks."),
   "The Essentials card must distinguish basic verification from Professional-onward proof methods");
 assert(!data.enterprise.capabilities.some(text => /higher credential volumes/i.test(text)),
   "Enterprise must not imply a higher issuance ceiling than plans with no limit for covered students");
 assert(data.enterprise.capabilities.includes("Contract-defined credential capacity."));
-assert.match(data.security_clarifier, /Credential lifecycle history and audit records are separate/);
-assert.match(data.security_clarifier, /Professional offers them as an optional paid add-on/);
+assert.equal(data.security_clarifier, "Audit records and data arrangements: what to check");
+assert.deepEqual(data.security_guidance.map(item => item.title), [
+  "Administrative audit trails", "Credential lifecycle history", "Forensic logging requirements",
+  "Backups, recovery and leaving the service",
+]);
+const securityGuidanceText = data.security_guidance.map(item => item.copy).join(" ");
+assert.match(securityGuidanceText, /Professional: optional paid add-on/);
+assert.match(securityGuidanceText, /Enterprise: included, subject to agreed audit and retention scope/);
+assert.match(securityGuidanceText, /buying it does not unlock other Enterprise features/);
 const creation = data.comparison.find(category => category.category === "Credential Creation and Design");
 const approvedCreation = [
   ["Digital certificates", "Included", "Included", "Included"],
@@ -391,8 +449,8 @@ const hostingFaq = data.faqs.find(faq => faq.question === "Can we arrange dedica
 assert.match(hostingFaq.answer, /Essentials hosts data in the APAC region only/);
 assert.match(hostingFaq.answer, /Professional offers hosting options in APAC, EU, or US/);
 assert.match(hostingFaq.answer, /subject to technical feasibility, applicable law and commercial approval/);
-assert.match(data.security_clarifier, /not the presence or absence of underlying platform practices/);
-assert.match(data.security_clarifier, /customers' standard data rights/);
+assert.match(securityGuidanceText, /does not mean underlying platform practices are absent/);
+assert.match(securityGuidanceText, /customers' standard data rights/);
 for (const category of data.comparison)
   for (const source of category.evidence) assert(fs.existsSync(source), `Missing capability evidence: ${source}`);
 assert.deepEqual(data.plans[0].capacity, {
@@ -441,7 +499,7 @@ for (const feature of ["Custom domains", "White-label email"]) {
   assert.deepEqual([row.essentials, row.professional, row.enterprise], ["Not included", "Available", "Available"]);
 }
 for (const plan of data.plans) {
-  assert.equal(plan.bullets.length, 6);
+  assert.equal(plan.bullets.length, 8, "Each plan needs eight concise, differentiated highlights");
   assert(!Object.hasOwn(plan, "entitlements"), "Detailed capabilities must have one source: pricing_features.yml");
   assert(plan.commercial_approval_status);
 }
@@ -595,7 +653,7 @@ async function run() {
       }
       const note = await cards.first().locator(".pricing-card__note").innerText();
       assert.equal(note, data.plans[0].note);
-       assert.equal(normalize(await root.locator(".pricing-model__clarifier").last().innerText()),
+       assert.equal(normalize(await root.locator(".pricing-audit-guidance h3").innerText()),
          data.security_clarifier, "The security clarification must also come from pricing_features.yml");
       for (const card of await cards.all())
         assert.equal(await card.locator(".pricing-capacity__row span").nth(1).innerText(), "Students per year");
@@ -660,15 +718,19 @@ async function run() {
           assert.equal(await card.locator("a").nth(1).getAttribute("href"), "/solutions/transcript-management");
       }
       assert.equal(await root.locator(".pricing-enterprise__list li").count(), 6);
-      assert.deepEqual(await root.locator(".pricing-legend span").allTextContents(), [
-        "Included / available", "Not included / unavailable", "Optional paid add-on",
-        "Contract-defined / configuration-dependent",
-      ], `${name}: legend must explain included, unavailable, paid add-on and contract-scoped labels`);
+      assert.equal(await root.locator(".pricing-legend").count(), 0,
+        `${name}: omit the redundant legend; keep availability and scope in the individual comparison cells`);
       assert.match(await root.locator("#plan-essentials .pricing-card__list").innerText(),
         /QR\/ID record lookup and credential status checks/);
       assert(!/higher credential volumes/i.test(await root.locator(".pricing-enterprise").innerText()));
-      assert.match(await root.locator(".pricing-model__clarifier").last().innerText(),
-        /Credential lifecycle history and audit records are separate/);
+      const auditGuidance = root.locator(".pricing-audit-guidance");
+      assert.equal(await auditGuidance.locator("h3").innerText(), data.security_clarifier);
+      assert.equal(await auditGuidance.locator("li").count(), 4);
+      for (let i = 0; i < data.security_guidance.length; i++) {
+        const item = auditGuidance.locator("li").nth(i);
+        assert.equal(await item.locator("strong").innerText(), data.security_guidance[i].title);
+        assert.equal(await item.locator("p").innerText(), data.security_guidance[i].copy);
+      }
       assert.equal(await root.locator(".pricing-guidance__item").count(), 6);
       assert.match(await root.locator(".pricing-departments").innerText(), /paid recurring add-ons/);
       assert.match(await root.locator(".pricing-departments").innerText(), /zero departments/);
@@ -715,10 +777,20 @@ async function run() {
       assert.deepEqual(errors, []);
       const menuToggle = page.locator("#wsnavtoggle");
       if (await menuToggle.isVisible()) {
+        await page.evaluate(() => {
+          document.body.scrollTo({ top: 0, behavior: "instant" });
+          window.scrollTo({ top: 0, behavior: "instant" });
+        });
+        if (await menuToggle.getAttribute("aria-expanded") === "true") {
+          await menuToggle.click();
+          await page.waitForFunction(() => document.querySelector("#wsnavtoggle").getAttribute("aria-expanded") === "false");
+        }
         await menuToggle.click();
+        await page.waitForFunction(() => document.querySelector("#wsnavtoggle").getAttribute("aria-expanded") === "true");
         assert.equal(await menuToggle.getAttribute("aria-expanded"), "true");
         await plansLink.waitFor({ state: "visible" });
         await menuToggle.click();
+        await page.waitForFunction(() => document.querySelector("#wsnavtoggle").getAttribute("aria-expanded") === "false");
         assert.equal(await menuToggle.getAttribute("aria-expanded"), "false");
       }
       console.log(`PASS ${name}: approved displayed limits, three plans, all ${featureCount} feature rows in 14 categories and ${data.faqs.length} FAQs, department add-ons, trust, keyboard disclosures, contrast, geometry, metadata and safeguards`);

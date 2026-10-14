@@ -110,3 +110,9 @@ Use the mockup artifact's actual managed port for local screenshots, and load co
 **Why:** The development-domain proxy routes `/__mockup/` correctly, but direct port-5000 screenshots reach Jekyll instead. Vite also interprets `/__mockup/` CSS imports as filesystem paths during transformation rather than public asset URLs.
 
 **How to apply:** Read the mockup workflow's open port before using the screenshot tool. Keep extracted native CSS as public files loaded with stylesheet links; isolate fonts and baseline tokens within the extracted group.
+
+Start mobile navigation checks from a known scroll and open state after long-page keyboard or hover checks; wait for the observable expanded state instead of assuming it changes immediately.
+
+**Why:** A longer pricing guidance section exposed a false open-state expectation at the end of a full-page interaction run. Returning to the top and resetting an already-open menu through its real control made the navigation check reliable.
+
+**How to apply:** Account for this site's body scrolling, use visible controls rather than forced DOM state changes, and wait for `aria-expanded` on both opening and closing.

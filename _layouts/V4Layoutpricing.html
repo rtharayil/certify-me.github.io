@@ -103,9 +103,6 @@
               <p class="pricing-lead">Choose the right combination of credential management, operational control, and institutional governance.</p>
             </div>
           </div>
-          <div class="pricing-legend" aria-label="Entitlement terminology">
-            <span>Included / available</span><span>Not included / unavailable</span><span>Optional paid add-on</span><span>Contract-defined / configuration-dependent</span>
-          </div>
           {% for category in comparison %}
           <details class="pricing-category"{% if forloop.first %} open{% endif %}>
               <summary>{{ category.category | escape }}</summary>
@@ -128,7 +125,14 @@
             </div>
           </details>
           {% endfor %}
-          <p class="pricing-model__clarifier">{{ pricing.security_clarifier | escape }}</p>
+          <section class="pricing-model__clarifier pricing-audit-guidance" aria-labelledby="pricing-audit-guidance-title">
+            <h3 id="pricing-audit-guidance-title">{{ pricing.security_clarifier | escape }}</h3>
+            <ul>
+              {% for item in pricing.security_guidance %}
+              <li><strong>{{ item.title | escape }}</strong><p>{{ item.copy | escape }}</p></li>
+              {% endfor %}
+            </ul>
+          </section>
         </div>
       </section>
 

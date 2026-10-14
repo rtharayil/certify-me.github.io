@@ -99,6 +99,24 @@ The owner's lifecycle correction makes credential revocation and bulk deletion/m
 
 **How to apply:** Keep revocation permission separate from checking revocation status. Do not bundle other Enterprise rights with the Professional history add-on or invent its price, export formats, processing limits or retention periods.
 
+Buyer-facing audit and data guidance should state plan inclusions and concrete questions to confirm, rather than presenting a dense paragraph of qualifications.
+
+**Why:** The owner found the earlier audit/backup/retention paragraph uninformative and asked for more useful guidance.
+
+**How to apply:** Separate administrative trails, credential lifecycle history, forensic requirements and backup/exit arrangements. Ask buyers to confirm logging coverage, access, retention, recovery and export terms without implying unapproved guarantees.
+
+Avoid a separate availability legend when comparison cells already spell out inclusion, exclusions, paid add-ons and agreed scope.
+
+**Why:** The owner questioned whether the legend added value; repeating those labels above the table adds clutter without explaining anything new.
+
+**How to apply:** Keep clear availability and qualifications in each feature cell. Add explanatory UI only when it clarifies an otherwise ambiguous symbol or term.
+
+The introductory three plan cards should summarize core capabilities and meaningful upgrade differences, rather than repeat only capacities or serve as complete feature inventories.
+
+**Why:** The owner specifically asked whether this section uses the right feature selection as the summary of all plans.
+
+**How to apply:** Select highlights from the approved matrix, retain paid-add-on and module-scope distinctions, and keep the full inventory in each plan's capabilities disclosure and the comparison table. Do not imply all Enterprise capabilities are standard Professional upgrades.
+
 The owner's creation/design correction starts stackable micro-credentials, learning paths, showcase directory and achievement metadata at Professional. Credential evidence and agreed-scope design integrations are Enterprise-only. Both template libraries, template editing/preview, custom data fields, design uploads/options and issuer details are included across all plans.
 
 **Why:** The owner explicitly separates creation capabilities and library availability from the number of credential templates permitted by a plan.
