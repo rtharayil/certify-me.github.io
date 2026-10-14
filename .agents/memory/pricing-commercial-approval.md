@@ -15,6 +15,12 @@ The owner now specifies a minimum of 250 students per year for all plans, supers
 
 **How to apply:** Preserve annual student starting thresholds rather than reverting to credential-volume caps. Custom domain and email must not be offered in Essentials. These corrections do not approve every remaining proposed allowance or authorize publication.
 
+Do not position Enterprise as providing a higher credential issuance ceiling than Essentials or Professional. Frame Enterprise around institutional scope, governance and contract-defined capacity.
+
+**Why:** Essentials and Professional already have no issuance limit for covered students; a “higher credential volumes” upgrade claim contradicts those approved terms.
+
+**How to apply:** Keep student coverage, credential issuance and organizational scope distinct in upgrade guidance. Describe only the specific Enterprise allowances as contract-defined, not the shared 250-student starting threshold.
+
 The owner's later CLR/SkillStory correction makes Skill Passport Enterprise-only, subject to agreed module scope; it is not included in Essentials or Professional.
 
 **Why:** The owner explicitly supersedes the earlier Professional/Enterprise add-on rule: “Skill Passport must not be displayed as an optional add-on for Professional.”

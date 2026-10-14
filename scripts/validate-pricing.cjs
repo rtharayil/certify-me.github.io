@@ -35,6 +35,13 @@ const featureCount = data.comparison.reduce((total, category) => total + categor
 assert(featureCount > 0);
 const features = data.comparison.flatMap(category => category.rows);
 assert.equal(new Set(features.map(row => row.feature)).size, featureCount, "No duplicate comparison labels");
+assert(data.plans[0].bullets.includes("QR/ID record lookup and credential status checks."),
+  "The Essentials card must distinguish basic verification from Professional-onward proof methods");
+assert(!data.enterprise.capabilities.some(text => /higher credential volumes/i.test(text)),
+  "Enterprise must not imply a higher issuance ceiling than plans with no limit for covered students");
+assert(data.enterprise.capabilities.includes("Contract-defined credential capacity."));
+assert.match(data.security_clarifier, /Credential lifecycle history and audit records are separate/);
+assert.match(data.security_clarifier, /Professional offers them as an optional paid add-on/);
 const creation = data.comparison.find(category => category.category === "Credential Creation and Design");
 const approvedCreation = [
   ["Digital certificates", "Included", "Included", "Included"],
@@ -65,6 +72,9 @@ const templateRow = creation.rows.find(row => row.feature === "Credential templa
 for (const plan of data.plans)
   assert.equal(templateRow[plan.key], "capacity.templates", "Keep template counts connected to the single capacity source");
 const creationFaq = data.faqs.find(faq => faq.question === "How many templates and administrators are included?");
+assert.match(creationFaq.answer, /Enterprise template, administrator and department allowances are contract-defined; project capacity is proposal-specific/);
+assert.match(creationFaq.answer, /All plans start from a minimum of 250 students per year/);
+assert(!/other allowances are contract-defined/.test(creationFaq.answer));
 assert.match(creationFaq.answer, /library access does not increase the plan's template limit/);
 assert.match(creationFaq.answer, /Stackable micro-credentials, learning paths, showcase directory and achievement metadata start with Professional/);
 assert.match(creationFaq.answer, /Credential evidence is Enterprise-only/);
@@ -650,6 +660,15 @@ async function run() {
           assert.equal(await card.locator("a").nth(1).getAttribute("href"), "/solutions/transcript-management");
       }
       assert.equal(await root.locator(".pricing-enterprise__list li").count(), 6);
+      assert.deepEqual(await root.locator(".pricing-legend span").allTextContents(), [
+        "Included / available", "Not included / unavailable", "Optional paid add-on",
+        "Contract-defined / configuration-dependent",
+      ], `${name}: legend must explain included, unavailable, paid add-on and contract-scoped labels`);
+      assert.match(await root.locator("#plan-essentials .pricing-card__list").innerText(),
+        /QR\/ID record lookup and credential status checks/);
+      assert(!/higher credential volumes/i.test(await root.locator(".pricing-enterprise").innerText()));
+      assert.match(await root.locator(".pricing-model__clarifier").last().innerText(),
+        /Credential lifecycle history and audit records are separate/);
       assert.equal(await root.locator(".pricing-guidance__item").count(), 6);
       assert.match(await root.locator(".pricing-departments").innerText(), /paid recurring add-ons/);
       assert.match(await root.locator(".pricing-departments").innerText(), /zero departments/);
