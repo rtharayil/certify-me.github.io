@@ -35,6 +35,222 @@ const featureCount = data.comparison.reduce((total, category) => total + categor
 assert(featureCount > 0);
 const features = data.comparison.flatMap(category => category.rows);
 assert.equal(new Set(features.map(row => row.feature)).size, featureCount, "No duplicate comparison labels");
+const creation = data.comparison.find(category => category.category === "Credential Creation and Design");
+const approvedCreation = [
+  ["Digital certificates", "Included", "Included", "Included"],
+  ["Digital badges", "Included", "Included", "Included"],
+  ["Stackable micro-credentials", "Not included", "Included", "Included"],
+  ["Learning paths", "Not included", "Included", "Included"],
+  ["Showcase directory", "Not included", "Included", "Included"],
+  ["Credential templates", "3", "10", "Contract-defined"],
+  ["Template creation and editing", "Included", "Included", "Included"],
+  ["Credential preview", "Included", "Included", "Included"],
+  ["Custom attributes and credential data fields", "Included", "Included", "Included"],
+  ["Upload existing credential designs", "Included", "Included", "Included"],
+  ["Credential design options", "Included", "Included", "Included"],
+  ["Badge template library", "Included", "Included", "Included"],
+  ["Certificate template library", "Included", "Included", "Included"],
+  ["Achievement metadata", "Not included", "Included", "Included"],
+  ["Issuer details", "Included", "Included", "Included"],
+  ["Credential evidence", "Not included", "Not included", "Included"],
+  ["Credential design integrations", "Not included", "Not included",
+    "Available, subject to agreed integration scope"],
+];
+assert.deepEqual(creation.rows.map(row => [row.feature, ...data.plans.map(plan => {
+  const value = row[plan.key];
+  return value.startsWith("capacity.") ? plan.capacity[value.slice(9)] : value;
+})]), approvedCreation, "Preserve all seventeen approved creation/design rows and unchanged central template limits");
+assert(!features.some(row => row.feature === "Micro-credentials"), "Rename micro-credentials without a duplicate row");
+const templateRow = creation.rows.find(row => row.feature === "Credential templates");
+for (const plan of data.plans)
+  assert.equal(templateRow[plan.key], "capacity.templates", "Keep template counts connected to the single capacity source");
+const creationFaq = data.faqs.find(faq => faq.question === "How many templates and administrators are included?");
+assert.match(creationFaq.answer, /library access does not increase the plan's template limit/);
+assert.match(creationFaq.answer, /Stackable micro-credentials, learning paths, showcase directory and achievement metadata start with Professional/);
+assert.match(creationFaq.answer, /Credential evidence is Enterprise-only/);
+assert.match(creationFaq.answer, /credential design integrations are available only with Enterprise, subject to agreed integration scope/);
+const lifecycle = data.comparison.find(category => category.category === "Credential Lifecycle Management");
+const approvedLifecycle = [
+  ["View and retrieve issued records", "Included", "Included", "Included"],
+  ["Correct / edit credentials", "Included", "Included", "Included"],
+  ["Revoke credentials", "Not included", "Included", "Included"],
+  ["Delete credentials", "Included", "Included", "Included"],
+  ["Bulk deletion of credentials", "Not included", "Included", "Included"],
+  ["Bulk modification or reissuance of credentials", "Not included", "Included", "Included"],
+  ["Regenerate individual credential images", "Included", "Included", "Included"],
+  ["Bulk regeneration of credential images", "Not included", "Included", "Included"],
+  ["Set and manage expiry", "Included", "Included", "Included"],
+  ["Current credential status checks", "Included", "Included", "Included"],
+  ["Export credential information", "Basic export", "Advanced export", "Advanced export"],
+  ["Lifecycle history and audit records", "Not included", "Optional paid add-on",
+    "Included, subject to agreed audit and retention scope"],
+];
+assert.deepEqual(lifecycle.rows.map(row => [row.feature, ...data.plans.map(plan => row[plan.key])]),
+  approvedLifecycle, "Preserve the twelve explicitly approved lifecycle rows; do not invent rows to meet the brief's inconsistent count");
+const auditFaq = data.faqs.find(faq => faq.question === "Does CertifyMe provide forensic audit logs?");
+assert.match(auditFaq.answer, /Administrative audit trails and credential lifecycle history are distinct from forensic audit logging/);
+assert.match(auditFaq.answer, /Professional includes basic administrative audit trails/);
+assert.match(auditFaq.answer, /optional paid add-on for Professional/);
+assert.match(auditFaq.answer, /included with Enterprise subject to agreed audit and retention scope/);
+assert.match(auditFaq.answer, /does not grant other Enterprise entitlements/);
+const verification = data.comparison.find(category => category.category === "Verification and Trust");
+const approvedVerification = [
+  ["QR-code entry and lookup", "Included — record lookup", "Included — record lookup", "Included — record lookup"],
+  ["Unique credential ID lookup", "Included — record lookup", "Included — record lookup", "Included — record lookup"],
+  ["Smart ID tagging", "Not included", "Available", "Available"],
+  ["OTP-based verification", "Not included", "Available", "Available"],
+  ["Signed PDF integrity verification", "Not included", "Supported signed configuration",
+    "Available, subject to agreed signed configuration"],
+  ["Structured credential proof verification", "Not included",
+    "Available for supported proof formats and verifiers", "Available for supported proof formats and verifiers"],
+  ["Open Badges 3.0 verification", "Not included", "Available", "Available"],
+  ["Issuer and recipient information", "Available", "Available", "Available"],
+  ["Expiry verification", "Available", "Available", "Available"],
+  ["Revocation verification", "Available", "Available", "Available"],
+  ["Public verification pages", "Standard CertifyMe experience", "Standard CertifyMe experience",
+    "Available, subject to agreed branding governance"],
+  ["Verification widget", "Not included", "Available", "Available, subject to applicable configuration"],
+];
+assert.deepEqual(verification.rows.map(row => [row.feature, ...data.plans.map(plan => row[plan.key])]),
+  approvedVerification, "Preserve all twelve approved verification rows, lookup/proof distinctions and configuration scopes");
+assert.equal(features.filter(row => row.feature === "Open Badges 3.0 verification").length, 1);
+const standards = data.comparison.find(category => category.category === "Standards and Interoperability");
+const approvedStandards = [
+  ["Open Badges", "Open Badges 2.1", "Open Badges 3.0", "Open Badges 3.0"],
+  ["W3C Verifiable Credentials", "Not included", "Not included",
+    "Supported, subject to the supported credential configuration"],
+  ["CLR 2.0 exchange formats", "Not included", "Not included",
+    "Available, subject to agreed CLR module and exchange-format scope"],
+  ["Credential portability and exchange", "Available for supported compatible formats and receivers",
+    "Available for supported compatible formats and receivers", "Available, subject to agreed exchange scope"],
+  ["Receiving-platform compatibility", "Not included", "Not included",
+    "Available, subject to agreed receiving-platform scope"],
+];
+assert.deepEqual(standards.rows.map(row => [row.feature, ...data.plans.map(plan => row[plan.key])]),
+  approvedStandards, "Preserve all five approved standards, versions, plan boundaries and exchange scopes");
+assert(!features.some(row => ["Open Badges 3.0", "CLR exchange formats"].includes(row.feature)),
+  "Rename the standards rows without retaining duplicate or superseded labels");
+const verificationFaq = data.faqs.find(faq => faq.question === "What does credential verification establish?");
+assert.match(verificationFaq.answer, /Essentials uses Open Badges 2\.1; Professional and Enterprise use Open Badges 3\.0/);
+assert.match(verificationFaq.answer, /W3C Verifiable Credentials and CLR 2\.0 exchange formats are Enterprise-only/);
+assert.match(verificationFaq.answer, /agreed CLR module and exchange-format scope/);
+assert.match(verificationFaq.answer, /portability remains available across all plans for supported compatible formats and receivers/);
+assert.match(verificationFaq.answer, /not universal external acceptance/);
+assert.match(verificationFaq.answer, /checking revocation status is not permission to revoke a credential/);
+assert.match(verificationFaq.answer, /Essentials does not include revocation, while Professional and Enterprise do/);
+assert.match(verificationFaq.answer, /they are not cryptographic proof/);
+assert.match(verificationFaq.answer, /are not included in Essentials; they start with Professional/);
+assert.match(verificationFaq.answer, /Enterprise signed PDF verification is subject to agreed signed configuration/);
+assert.match(verificationFaq.answer, /verification widget is subject to applicable configuration/);
+assert.match(verificationFaq.answer, /standard CertifyMe experience in Essentials and Professional/);
+assert.match(verificationFaq.answer, /Verification page customization is a separate entitlement, subject to agreed contract scope/);
+const branding = data.comparison.find(category => category.category === "Branding and Learner Experience");
+const approvedBranding = [
+  ["Credential page branding", "Not included", "Available", "Available"],
+  ["Organization / institution pages", "Not included", "Not included", "Available"],
+  ["Custom domains", "Not included", "Available", "Available"],
+  ["White-label email", "Not included", "Available", "Available"],
+  ["SMTP configuration", "Not included", "Available", "Available"],
+  ["OAuth for email access", "Not included", "Not included", "Available"],
+  ["Email customization", "Not included", "Available", "Available"],
+  ["Navigation customization", "Not included", "Available", "Available"],
+  ["Footer customization", "Not included", "Available", "Available"],
+  ["Verification page customization", "Not included",
+    "Available, subject to agreed contract scope", "Available, subject to agreed contract scope"],
+  ["Custom URLs", "Not included", "Available", "Available"],
+  ["Custom wallet", "Not included", "Not included", "Available"],
+  ["Learner-facing wallet or profile", "Basic wallet/profile", "Basic wallet/profile",
+    "Full SkillStory experience, subject to agreed Enterprise module scope"],
+];
+assert.deepEqual(branding.rows.map(row => [row.feature, ...data.plans.map(plan => row[plan.key])]),
+  approvedBranding, "Preserve all thirteen approved branding, email and learner experience distinctions");
+assert(!features.some(row => /Verification[- ]page branding/i.test(row.feature)),
+  "Rename the verification customization feature without retaining the old row");
+assert.equal(features.filter(row => row.feature === "OAuth for email access").length, 1);
+assert(data.plans[0].bullets.includes("Basic learner wallet/profile, credential access and sharing."));
+const brandingFaq = data.faqs.find(faq => faq.question === "Which plans include custom branding?");
+assert.match(brandingFaq.answer, /subject to agreed contract scope/);
+assert.match(brandingFaq.answer, /OAuth for email access, and custom learner wallets are Enterprise-only/);
+assert.match(brandingFaq.answer, /Essentials and Professional include a basic learner-facing wallet\/profile/);
+assert.match(brandingFaq.answer, /full SkillStory experience, subject to agreed Enterprise module scope/);
+assert.match(brandingFaq.answer, /A custom domain does not automatically include every form of white labeling/);
+const publicVerification = features.find(row => row.feature === "Public verification pages");
+assert.deepEqual(data.plans.map(plan => publicVerification[plan.key]),
+  ["Standard CertifyMe experience", "Standard CertifyMe experience", "Available, subject to agreed branding governance"],
+  "Standard public verification availability must not be confused with contract-scoped page customization");
+const administration = data.comparison.find(category => category.category === "Administrators, Projects and Departments");
+const approvedAdministration = [
+  ["Administrative accounts", "1", "2 per department", "Contract-defined"],
+  ["Administrator invitations and management", "One administrator only", "Two administrators per department", "Contract-defined roles"],
+  ["Role-based access", "Not included", "Department-scoped permissions", "Agreed institution-wide governance"],
+  ["Projects", "2", "5", "Proposal-specific"],
+  ["Project-level user assignment", "Not included", "Not included", "Available, subject to agreed project access scope"],
+  ["Project-scoped permissions", "Not included", "Not included", "Available, subject to agreed project permission scope"],
+  ["Folders", "Available", "Available", "Available"],
+  ["Departments", "0", "1 included", "Contract-defined"],
+  ["Additional departments", "Not available", "Paid recurring add-on", "Contract-defined"],
+  ["Department management", "Not included", "Included department and purchased add-ons", "Agreed governance scope"],
+  ["Department resource ownership", "No departments", "Authorized department resources", "Agreed governance scope"],
+  ["Fine-grained department permissions", "No departments", "Department-scoped access", "Agreed governance scope"],
+  ["Templates, records, reports and configuration access", "Single administrator",
+    "Authorized department and project scope", "Agreed role and resource scope"],
+  ["Department-scoped export access", "No departments", "Available for authorized resources", "Agreed role and export scope"],
+  ["Cross-department / institution-wide administration", "Not available",
+    "Not included; department add-ons do not grant it", "Available, subject to agreed institution-wide governance"],
+];
+assert.deepEqual(administration.rows.map(row => [row.feature, ...data.plans.map(plan => {
+  const value = row[plan.key];
+  return value.startsWith("capacity.") ? plan.capacity[value.slice(9)] : value;
+})]), approvedAdministration, "Preserve all fifteen approved administration rows, scopes and existing counts");
+assert(data.plans[1].bullets.includes("Fine-grained department permissions for authorized resources."));
+assert(!/supported project permissions/i.test(JSON.stringify(data.plans)));
+const departmentFaq = data.faqs.find(faq => faq.question === "Can departments manage their own projects?");
+assert.match(departmentFaq.answer, /Project-level user assignment and project-scoped permissions are not included in Essentials or Professional/);
+assert.match(departmentFaq.answer, /they do not grant cross-department or institution-wide administrative access/);
+assert.match(departmentFaq.answer, /Folders are available across all three plans/);
+const analytics = data.comparison.find(category => category.category === "Analytics and Reporting");
+const approvedAnalytics = [
+  ["Credential issuance reporting", "Available", "Available", "Available"],
+  ["Credential views", "Available", "Available", "Available"],
+  ["Download reporting", "Basic download reporting", "Advanced download reporting", "Advanced download reporting"],
+  ["Social sharing and engagement", "Available", "Available", "Available"],
+  ["Verification activity reporting", "Not included", "Available", "Available"],
+  ["Template-level reporting", "Not included", "Available", "Available"],
+  ["Project-level reporting", "Not included", "Available", "Available"],
+  ["Reporting data export", "Not included", "Available", "Available"],
+  ["Reporting API access", "Not included", "Not included", "Available"],
+  ["Advanced analytics", "Not included", "Available", "Available"],
+];
+assert.deepEqual(analytics.rows.map(row => [row.feature, ...data.plans.map(plan => row[plan.key])]),
+  approvedAnalytics, "Preserve all ten approved analytics/reporting boundaries and basic/advanced download distinction");
+assert(data.plans[0].bullets.includes("Credential issuance, views, sharing, and basic download reporting."));
+const apiAutomation = data.comparison.find(category => category.category === "APIs, Automation and Integrations");
+const approvedApiAutomation = [
+  ["Basic APIs", "Available", "Available", "Available"],
+  ["Advanced APIs", "Not included", "Available", "Available"],
+  ["Webhooks", "Not included", "Not included", "Available"],
+  ["CSV data import", "Available", "Available", "Available"],
+  ["Documented LMS connectors / plugins", "Not included", "Not included",
+    "Available, subject to agreed connector and implementation scope"],
+  ["Google Forms automation", "Not included", "Available", "Available, subject to applicable configuration"],
+  ["Workflow automation / Zapier", "Not included", "Available", "Available, subject to applicable workflow scope"],
+  ["SIS, HRIS and institutional integrations", "Not included", "Not included",
+    "Available, subject to agreed integration scope"],
+  ["Custom integrations or plugins", "Not included", "Not included", "Available, subject to agreed scope"],
+];
+assert.deepEqual(apiAutomation.rows.map(row => [row.feature, ...data.plans.map(plan => row[plan.key])]),
+  approvedApiAutomation, "Preserve all nine approved API, automation and integration boundaries and qualifications");
+const apiFaq = data.faqs.find(faq => faq.question === "Can CertifyMe integrate with our existing systems?");
+assert.match(apiFaq.answer, /Basic APIs and CSV data import are available across all three plans/);
+assert.match(apiFaq.answer, /CSV import supporting issuance-import workflows/);
+assert.match(apiFaq.answer, /Advanced APIs are available from Professional onward/);
+assert.match(apiFaq.answer, /Reporting API access is a separate feature available only with Enterprise/);
+assert.match(apiFaq.answer, /available only with Enterprise/);
+const automationFaq = data.faqs.find(faq => faq.question === "Are all integrations ready-to-enable native connectors?");
+assert.match(automationFaq.answer, /Google Forms automation and workflow automation through Zapier are available from Professional onward/);
+assert.match(automationFaq.answer, /subject to applicable configuration/);
+assert.match(automationFaq.answer, /subject to applicable workflow scope/);
+assert.match(automationFaq.answer, /does not mean every platform or workflow is automatically configured/);
 const taxonomy = data.comparison.find(category => category.category === "Skills Taxonomy Mapping");
 const approvedTaxonomy = [
   ["Institution-defined skills and outcomes", "Available", "Available", "Available"],
@@ -69,9 +285,9 @@ const approvedLearnerRecord = [
 ].map(([feature, enterprise]) => [feature, "Not included", "Not included", enterprise]);
 assert.deepEqual(learnerRecord.rows.map(row => [row.feature, ...data.plans.map(plan => row[plan.key])]),
   approvedLearnerRecord, "Preserve all seven Enterprise-only CLR/SkillStory features and their agreed scopes");
-const exchangeFormats = features.find(row => row.feature === "CLR exchange formats");
+const exchangeFormats = features.find(row => row.feature === "CLR 2.0 exchange formats");
 assert.deepEqual(data.plans.map(plan => exchangeFormats[plan.key]),
-  ["Not included", "Not included", "Available, subject to agreed module and exchange-format scope"],
+  ["Not included", "Not included", "Available, subject to agreed CLR module and exchange-format scope"],
   "The related exchange-format reference must not imply CLR access in Essentials or Professional");
 const learnerRecordFaq = data.faqs.find(faq => faq.question === "Are Skills Taxonomy Mapping and Comprehensive Learner Records included?");
 assert.match(learnerRecordFaq.answer, /are not included in Essentials or Professional/);
@@ -196,7 +412,7 @@ for (const source of ["whitelabel-credentials.md", "Admin-Roles.md",
 for (const [feature, expected] of [
   ["Additional departments", ["Not available", "Paid recurring add-on", "Contract-defined"]],
   ["Department management", ["Not included", "Included department and purchased add-ons", "Agreed governance scope"]],
-  ["Credential page branding", ["Standard CertifyMe branding", "Supported custom branding", "Agreed branding governance"]],
+  ["Credential page branding", ["Not included", "Available", "Available"]],
 ]) {
   const row = features.find(row => row.feature === feature);
   assert.deepEqual(data.plans.map(plan => row[plan.key]), expected, `${feature}: approved plan boundary`);
@@ -212,7 +428,7 @@ assert.deepEqual([skillPassport.essentials, skillPassport.professional, skillPas
   ["Not included", "Not included", "Available, subject to agreed module scope"]);
 for (const feature of ["Custom domains", "White-label email"]) {
   const row = data.comparison.flatMap(category => category.rows).find(row => row.feature === feature);
-  assert.deepEqual([row.essentials, row.professional, row.enterprise], ["Not included", "Included", "Included"]);
+  assert.deepEqual([row.essentials, row.professional, row.enterprise], ["Not included", "Available", "Available"]);
 }
 for (const plan of data.plans) {
   assert.equal(plan.bullets.length, 6);

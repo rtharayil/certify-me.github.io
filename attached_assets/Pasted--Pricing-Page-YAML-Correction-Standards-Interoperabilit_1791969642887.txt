@@ -1,0 +1,44 @@
+# Pricing Page YAML Correction — Standards & Interoperability
+
+Update the existing YAML entries for the **Standards & Interoperability** category according to the approved plan entitlements below.
+
+## 1. Approved feature comparison
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Open Badges | Open Badges 2.1 | Open Badges 3.0 | Open Badges 3.0 |
+| W3C Verifiable Credentials | Not included | Not included | Supported, subject to the supported credential configuration |
+| CLR 2.0 exchange formats | Not included | Not included | Available, subject to agreed CLR module and exchange-format scope |
+| Credential portability and exchange | Available for supported compatible formats and receivers | Available for supported compatible formats and receivers | Available, subject to agreed exchange scope |
+| Receiving-platform compatibility | Not included | Not included | Available, subject to agreed receiving-platform scope |
+
+## 2. Required corrections
+
+1. **Open Badges:** Essentials uses Open Badges 2.1. Open Badges 3.0 starts at Professional and continues with Enterprise.
+2. **W3C Verifiable Credentials:** Enterprise only. Do not show this as included in Essentials or Professional.
+3. **CLR 2.0 exchange formats:** Enterprise only, subject to the agreed CLR module and exchange-format scope. Use the explicit label “CLR 2.0,” not the generic “CLR exchange formats.”
+4. **Credential portability and exchange:** Available in all three plans for supported compatible formats and receivers. Do not confuse basic portability with CLR 2.0 exchange.
+5. **Receiving-platform compatibility:** Enterprise only, subject to agreed receiving-platform scope.
+
+## 3. Implementation rules
+
+- Update existing YAML entries in place, preserving stable feature IDs and the current schema.
+- Rename the CLR feature to “CLR 2.0 exchange formats” if needed, without creating a duplicate entry.
+- Keep Open Badges 2.1, Open Badges 3.0, W3C Verifiable Credentials, and CLR 2.0 as distinct capabilities.
+- Do not imply that every plan supports the same standards or credential configurations.
+- Do not promise universal receiving-platform compatibility or acceptance by every external institution, employer, wallet, or platform.
+- Do not invent additional standards, certifications, formats, or integrations.
+- Do not change unrelated plan entitlements, pricing, or feature categories.
+
+## 4. Validation
+
+- Validate YAML syntax and schema.
+- Verify all five feature rows against the approved matrix.
+- Confirm Open Badges 2.1 is shown for Essentials and Open Badges 3.0 for Professional and Enterprise.
+- Confirm W3C Verifiable Credentials, CLR 2.0 exchange formats, and receiving-platform compatibility are Enterprise-only.
+- Confirm credential portability and exchange remain available across all three plans for supported formats and receivers.
+- Test desktop and mobile rendering.
+- Search for conflicting standards descriptions within the pricing-page configuration and correct them within this scope.
+- Report the file changed and the actual validation results.
+
+**Implement these approved corrections only. Do not repeat the product analysis or modify unrelated entitlements.**

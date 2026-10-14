@@ -21,9 +21,9 @@ plans:
     bullets:
       - "Create and issue digital credentials."
       - "Issue credentials individually or in bulk."
-      - "Enable digital credential access and sharing."
+      - "Basic learner wallet/profile, credential access and sharing."
       - "Support credential verification."
-      - "Monitor credential activity with standard analytics."
+      - "Credential issuance, views, sharing, and basic download reporting."
       - "One administrator, three templates, and standard CertifyMe branding."
     note: "No limit on credentials issued to the students covered by your annual subscription."
     cta: "Discuss Your Requirements"
@@ -47,7 +47,7 @@ plans:
       - "One included department; more as paid recurring add-ons."
       - "Organize credential programs using folders."
       - "Ten credential templates."
-      - "Fine-grained department access and supported project permissions."
+      - "Fine-grained department permissions for authorized resources."
       - "Custom branding, domain, and email."
     note: "Five projects. Two administrators per department. Additional departments cost extra on a recurring basis; contact our team for a proposal."
     cta: "Discuss Your Requirements"
@@ -132,11 +132,11 @@ faqs:
   - question: "What happens if we need more credentials?"
     answer: "Essentials and Professional have no limit on credentials issued to the students covered by your subscription. If you need to cover more students, contact our team to discuss your annual student population and the appropriate subscription arrangement. Enterprise capacity is tailored by agreement."
   - question: "Can departments manage their own projects?"
-    answer: "Essentials has no departments or department-management add-ons. Professional includes one department with fine-grained access to authorized department resources. Additional departments cost extra as paid recurring add-ons; they do not grant institution-wide administrative access. Enterprise governance is scoped by agreement."
+    answer: "Essentials has no departments or department-management add-ons. Professional includes one department with fine-grained access and export access for authorized resources, subject to existing permissions. Project-level user assignment and project-scoped permissions are not included in Essentials or Professional; they are available only with Enterprise, subject to the agreed project access and permission scopes. Additional Professional departments cost extra as paid recurring add-ons; they do not grant cross-department or institution-wide administrative access. Institution-wide administration is available only with Enterprise, subject to agreed governance. Folders are available across all three plans."
   - question: "Does CertifyMe provide forensic audit logs?"
-    answer: "Standard activity history is different from forensic audit logging. Essentials does not include a plan-specific administrative audit-trail feature. Professional includes basic administrative audit trails; Enterprise includes advanced administrative audit trails. Advanced trails do not automatically establish a forensic logging capability. Confirm forensic scope, retention and reporting requirements for the applicable configuration and agreement."
+    answer: "Administrative audit trails and credential lifecycle history are distinct from forensic audit logging. Essentials does not include a plan-specific administrative audit-trail feature. Professional includes basic administrative audit trails; Enterprise includes advanced administrative audit trails. Credential lifecycle history and audit records are not included in Essentials, are an optional paid add-on for Professional, and are included with Enterprise subject to agreed audit and retention scope. Contact our team for the approved add-on configuration and commercial terms; purchasing the Professional lifecycle history add-on does not grant other Enterprise entitlements. Advanced trails do not automatically establish a forensic logging capability. Confirm forensic scope, retention and reporting requirements for the applicable configuration and agreement."
   - question: "Can CertifyMe integrate with our existing systems?"
-    answer: "CertifyMe provides API and integration capabilities for supported systems. Integration requirements depend on the systems involved, technical scope, and agreed implementation."
+    answer: "Basic APIs and CSV data import are available across all three plans, with CSV import supporting issuance-import workflows. Advanced APIs are available from Professional onward. Reporting API access is a separate feature available only with Enterprise. Webhooks, documented LMS connectors or plugins, SIS/HRIS and institutional integrations, and custom integrations or plugins are available only with Enterprise. LMS connectors require an agreed connector and implementation scope; institutional and custom integrations require an agreed scope. API availability does not imply any particular rate limit or usage quota."
   - question: "Are Skills Taxonomy Mapping and Comprehensive Learner Records included?"
     answer: "Institution-defined skills and outcomes are available across all three plans. ESCO, O*NET and institutional framework mapping is available from Professional, subject to reviewed mapping scope; Enterprise framework and mapping scope is agreed. Credential-to-skill relationships, institutional review and approval of mappings, evidence and provenance for skill relationships, and reuse of reviewed mappings are Enterprise-only, subject to their agreed scopes. Institution-defined skills and outcomes do not automatically include these capabilities. Comprehensive Learner Record and SkillStory capabilities—including connected achievement records, CLR creation and display, learner-record sharing, achievement evidence and provenance, and Skill Passport—are not included in Essentials or Professional. Enterprise availability is subject to the relevant agreed module, sharing or learner-record scope. Transcript-management connections also require Enterprise and agreed integration scope. Basic recipient credential wallets and access to issued credentials are separate capabilities; their existing plan scope is unchanged."
   - question: "Can we arrange dedicated hosting or data residency?"
@@ -144,17 +144,17 @@ faqs:
   - question: "Can we request a tailored enterprise proposal?"
     answer: "Yes. Contact our team to discuss credential volumes, organizational structure, integrations, governance requirements, and implementation needs."
   - question: "How many templates and administrators are included?"
-    answer: "Essentials includes exactly three credential templates, one administrator and two projects. Professional includes exactly ten credential templates, five projects and two administrators per department. Enterprise project capacity is proposal-specific; other allowances are contract-defined. Templates, projects, administrators, recipients and credentials are separate quantities."
+    answer: "Essentials includes exactly three credential templates, one administrator and two projects. Professional includes exactly ten credential templates, five projects and two administrators per department. Enterprise project capacity is proposal-specific; other allowances are contract-defined. Templates, projects, administrators, recipients and credentials are separate quantities. Template creation and editing, and both badge and certificate template libraries, are included across all plans; library access does not increase the plan's template limit. Stackable micro-credentials, learning paths, showcase directory and achievement metadata start with Professional. Credential evidence is Enterprise-only; credential design integrations are available only with Enterprise, subject to agreed integration scope."
   - question: "How are additional Professional departments billed?"
     answer: "One department is included in Professional. Additional departments are paid recurring add-ons, not a one-time purchase or a move to Enterprise. Contact our team for the applicable recurring price, billing period and department scope."
   - question: "Which plans include custom branding?"
-    answer: "Essentials uses standard CertifyMe branding and has no custom-branding or white-label entitlement. Supported custom branding starts with Professional, including custom domain and email. Enterprise branding governance is defined by agreement. A custom domain or email is not the same as a custom wallet or a complete white-label deployment."
+    answer: "Essentials uses standard CertifyMe branding and does not include custom branding or white-label capabilities. Credential page branding, custom domains, white-label email, SMTP configuration, email customization, navigation and footer customization, and custom URLs are available from Professional onward. Verification page customization is available with Professional and Enterprise, subject to agreed contract scope. Organization and institution pages, OAuth for email access, and custom learner wallets are Enterprise-only. Essentials and Professional include a basic learner-facing wallet/profile; Enterprise includes the full SkillStory experience, subject to agreed Enterprise module scope. White-label email, SMTP configuration, OAuth and email customization are separate capabilities. A custom domain does not automatically include every form of white labeling."
   - question: "What happens when we reach a plan limit?"
     answer: "Contact our team to agree the appropriate capacity or plan before expanding your programme. Professional supports paid recurring department add-ons. Other overage, upgrade and downgrade rules depend on your existing subscription agreement; do not assume automatic overage billing or that a plan change deletes existing records."
   - question: "What does credential verification establish?"
-    answer: "QR codes and credential IDs locate a record; they are not cryptographic proof. Supported signed PDFs and structured credential proofs can establish integrity or issuer proof. Review issuer context and applicable expiry, revocation and status information. A valid signature or OTP check is not independent real-world identity verification."
+    answer: "QR codes and credential IDs locate a record; they are not cryptographic proof. Supported signed PDFs and structured credential proofs can establish integrity or issuer proof. Review issuer context and applicable expiry, revocation and status information. Expiry and revocation verification remain available across all plans; checking revocation status is not permission to revoke a credential. Essentials does not include revocation, while Professional and Enterprise do. A valid signature or OTP check is not independent real-world identity verification. Smart ID tagging, OTP-based verification, signed PDF integrity verification, structured credential proof verification, Open Badges 3.0 verification and the verification widget are not included in Essentials; they start with Professional. PDF and structured-proof checks retain their supported signed configuration, proof-format and verifier distinctions. Enterprise signed PDF verification is subject to agreed signed configuration; its verification widget is subject to applicable configuration. Public verification pages use the standard CertifyMe experience in Essentials and Professional; Enterprise pages are available subject to agreed branding governance. Verification page customization is a separate entitlement, subject to agreed contract scope. Essentials uses Open Badges 2.1; Professional and Enterprise use Open Badges 3.0. W3C Verifiable Credentials and CLR 2.0 exchange formats are Enterprise-only, subject to the supported credential configuration and agreed CLR module and exchange-format scope, respectively. Credential portability remains available across all plans for supported compatible formats and receivers. Enterprise receiving-platform compatibility is subject to agreed scope, not universal external acceptance."
   - question: "Are all integrations ready-to-enable native connectors?"
-    answer: "No. The available workflow may use a documented connector, configurable API or automation, or a separately scoped custom integration. Confirm the relevant platform, permissions, data flow and implementation responsibility with our team."
+    answer: "No. Google Forms automation and workflow automation through Zapier are available from Professional onward. Enterprise Google Forms automation is subject to applicable configuration, and Enterprise Zapier automation is subject to applicable workflow scope. Documented LMS connectors or plugins, SIS/HRIS and institutional integrations, and custom integrations or plugins are Enterprise-only and require the relevant agreed connector, implementation or integration scope. Availability does not mean every platform or workflow is automatically configured or requires no implementation work."
   - question: "What security information can we review?"
     answer: "Encryption in transit and at rest is included with all plans. Essentials and Professional include standard credential data security controls and a standard DPA and contractual privacy terms. Enterprise governance controls and DPA customization are subject to agreement. SSO is available only with Enterprise; MFA is included with Professional and Enterprise, not Essentials. Enterprise provides access to vulnerability-management evidence, penetration-testing documentation, and security questionnaire and procurement support. This evidence access does not imply that vulnerability management or security testing occurs only for Enterprise. Plan-specific backup and recovery commitments and customized retention, export and exit arrangements are defined by the Enterprise plan and contract. Essentials and Professional have no such plan-specific commitments or customized arrangements; this does not remove standard data rights or describe the presence or absence of underlying platform practices. Review our security page and the applicable agreement; no recovery times, report distribution rights or new certifications are promised here."
   - question: "What implementation and support can be arranged?"
@@ -181,17 +181,21 @@ comparison:
   rows:
     - {feature: "Digital certificates", essentials: "Included", professional: "Included", enterprise: "Included"}
     - {feature: "Digital badges", essentials: "Included", professional: "Included", enterprise: "Included"}
-    - {feature: "Micro-credentials", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Stackable micro-credentials", essentials: "Not included", professional: "Included", enterprise: "Included"}
+    - {feature: "Learning paths", essentials: "Not included", professional: "Included", enterprise: "Included"}
+    - {feature: "Showcase directory", essentials: "Not included", professional: "Included", enterprise: "Included"}
     - {feature: "Credential templates", essentials: "capacity.templates", professional: "capacity.templates", enterprise: "capacity.templates"}
     - {feature: "Template creation and editing", essentials: "Included", professional: "Included", enterprise: "Included"}
     - {feature: "Credential preview", essentials: "Included", professional: "Included", enterprise: "Included"}
-    - {feature: "Custom attributes and credential data fields", essentials: "Supported fields; confirm scope", professional: "Supported fields; confirm scope", enterprise: "Agreed configuration"}
+    - {feature: "Custom attributes and credential data fields", essentials: "Included", professional: "Included", enterprise: "Included"}
     - {feature: "Upload existing credential designs", essentials: "Included", professional: "Included", enterprise: "Included"}
-    - {feature: "Credential design options", essentials: "Confirm supported design options", professional: "Confirm supported design options", enterprise: "Agreed design scope"}
-    - {feature: "Achievement metadata", essentials: "Supported credential formats", professional: "Supported credential formats", enterprise: "Supported credential formats"}
-    - {feature: "Issuer details", essentials: "Supported credential formats", professional: "Supported credential formats", enterprise: "Supported credential formats"}
-    - {feature: "Credential evidence", essentials: "Supported credential formats", professional: "Supported credential formats", enterprise: "Supported credential formats"}
-    - {feature: "Credential design integrations", essentials: "Confirm integration and package", professional: "Confirm integration and package", enterprise: "Agreed integration scope"}
+    - {feature: "Credential design options", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Badge template library", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Certificate template library", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Achievement metadata", essentials: "Not included", professional: "Included", enterprise: "Included"}
+    - {feature: "Issuer details", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Credential evidence", essentials: "Not included", professional: "Not included", enterprise: "Included"}
+    - {feature: "Credential design integrations", essentials: "Not included", professional: "Not included", enterprise: "Available, subject to agreed integration scope"}
 - category: "Issuance and Delivery"
   evidence: ["_includes/V4NewLook/pricing/Admin-roles.html", "api.md", "digital-credential-infrastructure.html"]
   rows:
@@ -211,93 +215,99 @@ comparison:
   evidence: ["_includes/V4NewLook/pricing/Admin-roles.html", "digital-credential-infrastructure.html", "certificate-verification.md"]
   rows:
     - {feature: "View and retrieve issued records", essentials: "Included", professional: "Included", enterprise: "Included"}
-    - {feature: "Correct / edit credentials", essentials: "Supported lifecycle", professional: "Supported lifecycle", enterprise: "Supported lifecycle"}
-    - {feature: "Revoke credentials", essentials: "Supported lifecycle", professional: "Supported lifecycle", enterprise: "Supported lifecycle"}
-    - {feature: "Delete credentials", essentials: "Supported lifecycle", professional: "Supported lifecycle", enterprise: "Supported lifecycle"}
-    - {feature: "Set and manage expiry", essentials: "Supported lifecycle", professional: "Supported lifecycle", enterprise: "Supported lifecycle"}
-    - {feature: "Current credential status checks", essentials: "Supported format and status service", professional: "Supported format and status service", enterprise: "Supported format and status service"}
-    - {feature: "Export credential information", essentials: "Confirm export scope", professional: "Confirm export scope", enterprise: "Agreed export scope"}
-    - {feature: "Lifecycle history and audit records", essentials: "Confirm record scope", professional: "Confirm record scope", enterprise: "Agreed audit and retention scope"}
+    - {feature: "Correct / edit credentials", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Revoke credentials", essentials: "Not included", professional: "Included", enterprise: "Included"}
+    - {feature: "Delete credentials", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Bulk deletion of credentials", essentials: "Not included", professional: "Included", enterprise: "Included"}
+    - {feature: "Bulk modification or reissuance of credentials", essentials: "Not included", professional: "Included", enterprise: "Included"}
+    - {feature: "Regenerate individual credential images", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Bulk regeneration of credential images", essentials: "Not included", professional: "Included", enterprise: "Included"}
+    - {feature: "Set and manage expiry", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Current credential status checks", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Export credential information", essentials: "Basic export", professional: "Advanced export", enterprise: "Advanced export"}
+    - {feature: "Lifecycle history and audit records", essentials: "Not included", professional: "Optional paid add-on", enterprise: "Included, subject to agreed audit and retention scope"}
 - category: "Verification and Trust"
   evidence: ["certificate-verification.md", "digital-credential-infrastructure.html", "_includes/V4NewLook/infrastructure/page.html"]
   rows:
     - {feature: "QR-code entry and lookup", essentials: "Included — record lookup", professional: "Included — record lookup", enterprise: "Included — record lookup"}
     - {feature: "Unique credential ID lookup", essentials: "Included — record lookup", professional: "Included — record lookup", enterprise: "Included — record lookup"}
-    - {feature: "Smart ID tagging", essentials: "Confirm verification configuration", professional: "Confirm verification configuration", enterprise: "Agreed verification configuration"}
-    - {feature: "OTP-based verification", essentials: "Confirm verification configuration", professional: "Confirm verification configuration", enterprise: "Agreed verification configuration"}
-    - {feature: "Signed PDF integrity verification", essentials: "Supported signed configuration", professional: "Supported signed configuration", enterprise: "Agreed signed configuration"}
-    - {feature: "Structured credential proof verification", essentials: "Compatible proof and verifier", professional: "Compatible proof and verifier", enterprise: "Compatible proof and verifier"}
-    - {feature: "Issuer and recipient information", essentials: "Supported credential format", professional: "Supported credential format", enterprise: "Supported credential format"}
-    - {feature: "Expiry verification", essentials: "Applicable expiry information", professional: "Applicable expiry information", enterprise: "Applicable expiry information"}
-    - {feature: "Revocation verification", essentials: "Applicable revocation information", professional: "Applicable revocation information", enterprise: "Applicable revocation information"}
-    - {feature: "Public verification pages", essentials: "Standard CertifyMe experience", professional: "Supported custom branding", enterprise: "Agreed branding governance"}
-    - {feature: "Verification widget", essentials: "Confirm module availability", professional: "Confirm module availability", enterprise: "Separately scoped"}
+    - {feature: "Smart ID tagging", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "OTP-based verification", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "Signed PDF integrity verification", essentials: "Not included", professional: "Supported signed configuration", enterprise: "Available, subject to agreed signed configuration"}
+    - {feature: "Structured credential proof verification", essentials: "Not included", professional: "Available for supported proof formats and verifiers", enterprise: "Available for supported proof formats and verifiers"}
+    - {feature: "Open Badges 3.0 verification", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "Issuer and recipient information", essentials: "Available", professional: "Available", enterprise: "Available"}
+    - {feature: "Expiry verification", essentials: "Available", professional: "Available", enterprise: "Available"}
+    - {feature: "Revocation verification", essentials: "Available", professional: "Available", enterprise: "Available"}
+    - {feature: "Public verification pages", essentials: "Standard CertifyMe experience", professional: "Standard CertifyMe experience", enterprise: "Available, subject to agreed branding governance"}
+    - {feature: "Verification widget", essentials: "Not included", professional: "Available", enterprise: "Available, subject to applicable configuration"}
 - category: "Standards and Interoperability"
   evidence: ["_includes/V4NewLook/head.html", "_includes/V4NewLook/infrastructure/page.html", "comprehensive-learner-record.html"]
   rows:
-    - {feature: "Open Badges 3.0", essentials: "Supported credential format", professional: "Supported credential format", enterprise: "Supported credential format"}
-    - {feature: "W3C Verifiable Credentials", essentials: "Supported credential configuration", professional: "Supported credential configuration", enterprise: "Supported credential configuration"}
-    - {feature: "CLR exchange formats", essentials: "Not included", professional: "Not included", enterprise: "Available, subject to agreed module and exchange-format scope"}
-    - {feature: "Credential portability and exchange", essentials: "Compatible formats and receivers", professional: "Compatible formats and receivers", enterprise: "Agreed exchange scope"}
-    - {feature: "Receiving-platform compatibility", essentials: "Confirm format and receiving platform", professional: "Confirm format and receiving platform", enterprise: "Agreed receiving-platform scope"}
+    - {feature: "Open Badges", essentials: "Open Badges 2.1", professional: "Open Badges 3.0", enterprise: "Open Badges 3.0"}
+    - {feature: "W3C Verifiable Credentials", essentials: "Not included", professional: "Not included", enterprise: "Supported, subject to the supported credential configuration"}
+    - {feature: "CLR 2.0 exchange formats", essentials: "Not included", professional: "Not included", enterprise: "Available, subject to agreed CLR module and exchange-format scope"}
+    - {feature: "Credential portability and exchange", essentials: "Available for supported compatible formats and receivers", professional: "Available for supported compatible formats and receivers", enterprise: "Available, subject to agreed exchange scope"}
+    - {feature: "Receiving-platform compatibility", essentials: "Not included", professional: "Not included", enterprise: "Available, subject to agreed receiving-platform scope"}
 - category: "Branding and Learner Experience"
   evidence: ["whitelabel-credentials.md", "custom-badge-wallet.md"]
   rows:
-    - {feature: "Credential page branding", essentials: "Standard CertifyMe branding", professional: "Supported custom branding", enterprise: "Agreed branding governance"}
-    - {feature: "Organization / institution pages", essentials: "Standard CertifyMe experience", professional: "Confirm customization scope", enterprise: "Agreed customization scope"}
-    - {feature: "Custom domains", essentials: "Not included", professional: "Included", enterprise: "Included"}
-    - {feature: "White-label email", essentials: "Not included", professional: "Included", enterprise: "Included"}
-    - {feature: "SMTP configuration", essentials: "Not included", professional: "Confirm supported configuration", enterprise: "Agreed configuration"}
-    - {feature: "Email customization", essentials: "Standard CertifyMe branding", professional: "Supported custom branding", enterprise: "Agreed branding governance"}
-    - {feature: "Navigation customization", essentials: "Not included", professional: "Confirm customization scope", enterprise: "Agreed customization scope"}
-    - {feature: "Footer customization", essentials: "Not included", professional: "Confirm customization scope", enterprise: "Agreed customization scope"}
-    - {feature: "Verification-page branding", essentials: "Standard CertifyMe branding", professional: "Supported custom branding", enterprise: "Agreed branding governance"}
-    - {feature: "Custom URLs", essentials: "Not included", professional: "Confirm customization scope", enterprise: "Agreed customization scope"}
-    - {feature: "Custom wallet", essentials: "No custom-branding entitlement", professional: "Confirm separate module availability", enterprise: "Separately scoped"}
-    - {feature: "Learner-facing wallet or profile", essentials: "Confirm learner experience scope", professional: "Confirm learner experience scope", enterprise: "Agreed learner experience"}
+    - {feature: "Credential page branding", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "Organization / institution pages", essentials: "Not included", professional: "Not included", enterprise: "Available"}
+    - {feature: "Custom domains", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "White-label email", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "SMTP configuration", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "OAuth for email access", essentials: "Not included", professional: "Not included", enterprise: "Available"}
+    - {feature: "Email customization", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "Navigation customization", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "Footer customization", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "Verification page customization", essentials: "Not included", professional: "Available, subject to agreed contract scope", enterprise: "Available, subject to agreed contract scope"}
+    - {feature: "Custom URLs", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "Custom wallet", essentials: "Not included", professional: "Not included", enterprise: "Available"}
+    - {feature: "Learner-facing wallet or profile", essentials: "Basic wallet/profile", professional: "Basic wallet/profile", enterprise: "Full SkillStory experience, subject to agreed Enterprise module scope"}
 - category: "Administrators, Projects and Departments"
   evidence: ["_includes/V4NewLook/pricing/Admin-roles.html"]
   rows:
     - {feature: "Administrative accounts", essentials: "capacity.administrators", professional: "capacity.administrators", enterprise: "capacity.administrators"}
     - {feature: "Administrator invitations and management", essentials: "One administrator only", professional: "Two administrators per department", enterprise: "Contract-defined roles"}
-    - {feature: "Role-based access", essentials: "Essential administrative controls", professional: "Department-scoped permissions", enterprise: "Agreed institution-wide governance"}
+    - {feature: "Role-based access", essentials: "Not included", professional: "Department-scoped permissions", enterprise: "Agreed institution-wide governance"}
     - {feature: "Projects", essentials: "capacity.projects", professional: "capacity.projects", enterprise: "capacity.projects"}
-    - {feature: "Project-level user assignment", essentials: "Confirm project access scope", professional: "Supported project assignment", enterprise: "Agreed project access scope"}
-    - {feature: "Project-scoped permissions", essentials: "Confirm project permission scope", professional: "Supported project permissions", enterprise: "Agreed project permission scope"}
-    - {feature: "Folders", essentials: "Confirm organization scope", professional: "Folder-based organization", enterprise: "Agreed organization scope"}
+    - {feature: "Project-level user assignment", essentials: "Not included", professional: "Not included", enterprise: "Available, subject to agreed project access scope"}
+    - {feature: "Project-scoped permissions", essentials: "Not included", professional: "Not included", enterprise: "Available, subject to agreed project permission scope"}
+    - {feature: "Folders", essentials: "Available", professional: "Available", enterprise: "Available"}
     - {feature: "Departments", essentials: "capacity.departments", professional: "capacity.departments", enterprise: "capacity.departments"}
     - {feature: "Additional departments", essentials: "Not available", professional: "Paid recurring add-on", enterprise: "Contract-defined"}
     - {feature: "Department management", essentials: "Not included", professional: "Included department and purchased add-ons", enterprise: "Agreed governance scope"}
     - {feature: "Department resource ownership", essentials: "No departments", professional: "Authorized department resources", enterprise: "Agreed governance scope"}
     - {feature: "Fine-grained department permissions", essentials: "No departments", professional: "Department-scoped access", enterprise: "Agreed governance scope"}
     - {feature: "Templates, records, reports and configuration access", essentials: "Single administrator", professional: "Authorized department and project scope", enterprise: "Agreed role and resource scope"}
-    - {feature: "Department-scoped export access", essentials: "No departments", professional: "Authorized resources; confirm export scope", enterprise: "Agreed role and export scope"}
-    - {feature: "Cross-department / institution-wide administration", essentials: "No departments", professional: "Not granted by department add-ons", enterprise: "Agreed institution-wide governance"}
+    - {feature: "Department-scoped export access", essentials: "No departments", professional: "Available for authorized resources", enterprise: "Agreed role and export scope"}
+    - {feature: "Cross-department / institution-wide administration", essentials: "Not available", professional: "Not included; department add-ons do not grant it", enterprise: "Available, subject to agreed institution-wide governance"}
 - category: "Analytics and Reporting"
   evidence: ["credential-analytics.md", "skills-taxonomy-mapping.html", "_includes/V4NewLook/workforce-intelligence/page.html"]
   rows:
-    - {feature: "Credential issuance reporting", essentials: "Standard analytics", professional: "Confirm reporting scope", enterprise: "Agreed reporting scope"}
-    - {feature: "Credential views", essentials: "Standard analytics", professional: "Confirm reporting scope", enterprise: "Agreed reporting scope"}
-    - {feature: "Download reporting", essentials: "Standard analytics", professional: "Confirm reporting scope", enterprise: "Agreed reporting scope"}
-    - {feature: "Social sharing and engagement", essentials: "Standard analytics", professional: "Confirm reporting scope", enterprise: "Agreed reporting scope"}
-    - {feature: "Verification activity reporting", essentials: "Confirm reporting scope", professional: "Confirm reporting scope", enterprise: "Agreed reporting scope"}
-    - {feature: "Template-level reporting", essentials: "Confirm reporting scope", professional: "Confirm reporting scope", enterprise: "Agreed reporting scope"}
-    - {feature: "Project-level reporting", essentials: "Confirm reporting scope", professional: "Confirm reporting scope", enterprise: "Agreed reporting scope"}
-    - {feature: "Reporting data export", essentials: "Confirm export scope", professional: "Confirm export scope", enterprise: "Agreed export scope"}
-    - {feature: "Reporting API access", essentials: "Confirm API scope", professional: "Confirm API scope", enterprise: "Agreed API scope"}
-    - {feature: "Advanced analytics", essentials: "Confirm package scope", professional: "Confirm package scope", enterprise: "Agreed reporting scope"}
+    - {feature: "Credential issuance reporting", essentials: "Available", professional: "Available", enterprise: "Available"}
+    - {feature: "Credential views", essentials: "Available", professional: "Available", enterprise: "Available"}
+    - {feature: "Download reporting", essentials: "Basic download reporting", professional: "Advanced download reporting", enterprise: "Advanced download reporting"}
+    - {feature: "Social sharing and engagement", essentials: "Available", professional: "Available", enterprise: "Available"}
+    - {feature: "Verification activity reporting", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "Template-level reporting", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "Project-level reporting", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "Reporting data export", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "Reporting API access", essentials: "Not included", professional: "Not included", enterprise: "Available"}
+    - {feature: "Advanced analytics", essentials: "Not included", professional: "Available", enterprise: "Available"}
 - category: "APIs, Automation and Integrations"
   evidence: ["api.md", "integrations.md", "allIntegrations.md"]
   rows:
-    - {feature: "Basic APIs", essentials: "Confirm API scope and limits", professional: "Confirm API scope and limits", enterprise: "Agreed API scope and limits"}
-    - {feature: "Advanced APIs", essentials: "Confirm API scope and limits", professional: "Confirm API scope and limits", enterprise: "Agreed API scope and limits"}
-    - {feature: "Webhooks", essentials: "Confirm workflow scope", professional: "Confirm workflow scope", enterprise: "Agreed workflow scope"}
-    - {feature: "CSV data import", essentials: "Supported issuance import", professional: "Supported issuance import", enterprise: "Supported issuance import"}
-    - {feature: "Documented LMS connectors / plugins", essentials: "Confirm connector and package", professional: "Confirm connector and package", enterprise: "Agreed connector and implementation"}
-    - {feature: "Google Forms automation", essentials: "Confirm connector and package", professional: "Confirm connector and package", enterprise: "Agreed automation scope"}
-    - {feature: "Workflow automation / Zapier", essentials: "Confirm workflow and package", professional: "Confirm workflow and package", enterprise: "Agreed automation scope"}
-    - {feature: "SIS, HRIS and institutional integrations", essentials: "Requirements-led scoping", professional: "Requirements-led scoping", enterprise: "Agreed integration scope"}
-    - {feature: "Custom integrations or plugins", essentials: "Separately scoped", professional: "Separately scoped", enterprise: "Separately scoped"}
+    - {feature: "Basic APIs", essentials: "Available", professional: "Available", enterprise: "Available"}
+    - {feature: "Advanced APIs", essentials: "Not included", professional: "Available", enterprise: "Available"}
+    - {feature: "Webhooks", essentials: "Not included", professional: "Not included", enterprise: "Available"}
+    - {feature: "CSV data import", essentials: "Available", professional: "Available", enterprise: "Available"}
+    - {feature: "Documented LMS connectors / plugins", essentials: "Not included", professional: "Not included", enterprise: "Available, subject to agreed connector and implementation scope"}
+    - {feature: "Google Forms automation", essentials: "Not included", professional: "Available", enterprise: "Available, subject to applicable configuration"}
+    - {feature: "Workflow automation / Zapier", essentials: "Not included", professional: "Available", enterprise: "Available, subject to applicable workflow scope"}
+    - {feature: "SIS, HRIS and institutional integrations", essentials: "Not included", professional: "Not included", enterprise: "Available, subject to agreed integration scope"}
+    - {feature: "Custom integrations or plugins", essentials: "Not included", professional: "Not included", enterprise: "Available, subject to agreed scope"}
 - category: "Skills Taxonomy Mapping"
   evidence: ["skills-taxonomy-mapping.html"]
   rows:

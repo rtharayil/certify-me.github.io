@@ -1,0 +1,70 @@
+# Pricing Page YAML Correction — Branding, Customization & Learner Experience
+
+Update the existing YAML configuration for the **Branding, Customization & Learner Experience** category using the approved plan entitlements below.
+
+## 1. Approved feature comparison
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Credential page branding | Not included | Available | Available |
+| Organization and institution pages | Not included | Not included | Available |
+| Custom domain | Not included | Available | Available |
+| White-label email | Not included | Available | Available |
+| SMTP email configuration | Not included | Available | Available |
+| OAuth for email access | Not included | Not included | Available |
+| Email customization | Not included | Available | Available |
+| Navigation customization | Not included | Available | Available |
+| Footer customization | Not included | Available | Available |
+| Verification page customization | Not included | Available, subject to agreed contract scope | Available, subject to agreed contract scope |
+| Custom URLs | Not included | Available | Available |
+| Custom learner wallet | Not included | Not included | Available |
+| Learner-facing wallet or profile | Basic wallet/profile | Basic wallet/profile | Full SkillStory experience |
+
+## 2. Required corrections
+
+1. **Credential page branding:** Available from Professional onward.
+2. **Organization and institution pages:** Enterprise only.
+3. **Custom domain:** Available from Professional onward.
+4. **White-label email:** Available from Professional onward.
+5. **SMTP email configuration:** Available from Professional onward.
+6. **OAuth for email access:** Add this as a new feature row. It is Enterprise only.
+7. **Email customization:** Available from Professional onward.
+8. **Navigation customization:** Available from Professional onward.
+9. **Footer customization:** Available from Professional onward.
+10. **Verification page customization:** Rename the existing “Verification page branding” feature to “Verification page customization.” It is available from Professional onward, subject to the agreed contract scope.
+11. **Custom URLs:** Available from Professional onward.
+12. **Custom learner wallet:** Enterprise only.
+13. **Learner-facing wallet or profile:** Essentials and Professional include the basic wallet/profile experience. Enterprise includes the full SkillStory experience, subject to the agreed Enterprise module scope.
+
+## 3. Important entitlement distinctions
+
+- Do not confuse credential page branding with organization or institution pages.
+- Do not treat white-label email, SMTP configuration, OAuth for email access, and email customization as interchangeable features. They must remain separate comparison rows.
+- Do not imply that OAuth is available for Essentials or Professional.
+- Do not imply that custom domain availability automatically includes every form of white labeling.
+- Verification page customization must retain its contract-scope qualification.
+- The basic learner-facing wallet/profile remains available in Essentials and Professional. Do not remove basic credential access or sharing because the full SkillStory experience is Enterprise-only.
+- The full SkillStory experience must be clearly distinguished from the basic wallet/profile. Do not present them as identical features.
+- Do not invent supported OAuth providers, SMTP providers, domain limits, or customization capabilities.
+
+## 4. YAML and implementation rules
+
+- Update existing YAML entries in place, preserving stable feature IDs and the current schema.
+- Add a new stable feature entry for **OAuth for email access**, following existing ID and ordering conventions.
+- Rename the verification-page feature without creating a duplicate row.
+- Preserve existing prices, quotas, and unrelated plan entitlements.
+- Use clear availability labels and scope qualifications in the rendered comparison table.
+- Ensure the same entitlement descriptions appear consistently across plan cards, comparison tables, tooltips, and relevant pricing-page FAQs.
+
+## 5. Validation
+
+- Validate YAML syntax and schema.
+- Verify all 13 feature rows against the approved matrix.
+- Confirm OAuth for email access is Enterprise-only.
+- Confirm the basic wallet/profile remains available in Essentials and Professional, while full SkillStory is Enterprise-level.
+- Confirm verification page customization retains the agreed contract-scope qualification.
+- Test desktop and mobile rendering.
+- Search the pricing-page configuration for conflicting descriptions of branding, email, URLs, wallet, and SkillStory capabilities; correct conflicts within this scope.
+- Report the file changed and the actual validation results.
+
+**Implement these approved corrections only. Do not redo the product analysis, change unrelated entitlements, or invent additional features.**

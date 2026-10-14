@@ -1,0 +1,34 @@
+# Pricing Page YAML Correction — Verification & Trust
+
+Update the existing YAML entries for the **Verification & Trust** category using the approved plan entitlements below.
+
+## 1. Approved feature comparison
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| QR-code entry and lookup | Included — record lookup | Included — record lookup | Included — record lookup |
+| Unique credential ID lookup | Included — record lookup | Included — record lookup | Included — record lookup |
+| Smart ID tagging | Not included | Available | Available |
+| OTP-based verification | Not included | Available | Available |
+| Signed PDF integrity verification | Not included | Supported signed configuration | Available, subject to agreed signed configuration |
+| Structured credential proof verification | Not included | Available for supported proof formats and verifiers | Available for supported proof formats and verifiers |
+| Open Badges 3.0 verification | Not included | Available | Available |
+| Issuer and recipient information | Available | Available | Available |
+| Expiry verification | Available | Available | Available |
+| Revocation verification | Available | Available | Available |
+| Public verification pages | Standard CertifyMe experience | Standard CertifyMe experience | Available, subject to agreed branding governance |
+| Verification widget | Not included | Available | Available, subject to applicable configuration |
+
+## 2. Required corrections
+
+1. **QR-code entry and lookup:** Available across all three plans.
+2. **Unique credential ID lookup:** Available across all three plans.
+3. **Smart ID tagging:** Available from Professional onward.
+4. **OTP-based verification:** Available from Professional onward.
+5. **Signed PDF integrity verification:** Starts at Professional. Preserve the supported signed configuration distinction and the agreed Enterprise configuration.
+6. **Structured credential proof verification:** Starts at Professional and continues with Enterprise. Do not imply that Essentials includes this capability.
+7. **Open Badges 3.0 verification:** Add a new feature row. Available for Professional and Enterprise; not included in Essentials, which uses Open Badges 2.1.
+8. **Issuer and recipient information:** Available across all three plans.
+9. **Expiry verification:** Available across all three plans.
+10. **Revocation verification:** Available across all three plans.
+11. **Public verification pages:** Available across all plans. Essentials uses the standard CertifyMe experience. Do
