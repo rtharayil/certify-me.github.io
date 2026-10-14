@@ -1,0 +1,22 @@
+I"i<p>Institutions have long used paper records to recognize qualifications and achievements. Digital delivery changes how those records are distributed and checked; it does not automatically change who has authority to award them. This guide does not assign a single origin date to certificates or assume all digital badges descend from one historical use.</p>
+
+<h2 id="three-stages-with-different-capabilities">Three stages with different capabilities</h2>
+
+<p><strong>Paper record:</strong> a physical presentation of an institution’s award. Verification may require checking an official register or contacting the issuer.</p>
+
+<p><strong>Digital document:</strong> a downloadable image or PDF. It reduces some printing and delivery work, but its verification depends on the actual signing or record-checking method. A digital file is not inherently verifiable; a PDF may also carry a valid digital signature.</p>
+
+<p><strong>Structured achievement credential:</strong> a record describes the issuer, recipient, achievement, criteria, dates and relevant evidence. An appropriate proof mechanism supports integrity checks. The <a href="https://www.imsglobal.org/spec/ob/v3p0/">Open Badges 3.0 specification</a> supplies an achievement model, and the <a href="https://www.w3.org/TR/vc-data-model-2.0/">W3C VC model</a> describes issuer, holder and verifier relationships. Neither requires every implementation to use blockchain.</p>
+
+<h2 id="what-metadata-contributes">What metadata contributes</h2>
+
+<p>Metadata makes an award interpretable. It should distinguish attendance from assessed completion, identify the authorized issuer and explain what the learner did. A record’s proof supports tamper evidence relative to its signing key; it is not “bank-level security,” independent identity verification or a guarantee that the achievement is true.</p>
+
+<p>A university replaces a mailed short-course certificate with an approved structured award. The recipient shares a supported record, while the registrar retains correction responsibility and academic staff retain assessment evidence.</p>
+
+<h2 id="what-remains-after-the-move-online">What remains after the move online</h2>
+
+<p>Institutions still need approval, access controls, recipient matching, evidence retention and status maintenance. Exporting a credential does not remove issuer-key or status-resource dependencies. Compare printing and administration costs with software, integration, support and continuity costs before claiming savings.</p>
+
+<p>Read the <a href="/platform-overview">credential infrastructure overview</a> for accountable implementation and the <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C technical guide</a> for proof boundaries. <a href="https://info.certifyme.online/request-demo">Discuss a governed transition from paper</a> without assuming every existing record or receiving system can be replaced.</p>
+:ET

@@ -1,0 +1,146 @@
+I"�<p>LinkedIn lets recipients display credentials in their professional profiles. Issuers should explain what each credential recognises and how it can be verified.</p>
+
+<div style="background:#f7f9fc;border-left:4px solid #4c6ef5;padding:16px 20px;margin:24px 0;border-radius:6px;">
+<strong>TL;DR:</strong> To share a company digital badge on LinkedIn: log in, open your Profile, click "Add profile section," choose Licenses &amp; Certifications, then fill in the badge name, issuer, and date and upload the badge image or link. Using the Open Badge standard keeps the badge verifiable, so claims can't be faked.
+</div>
+
+<p><br /></p>
+
+<p>These digital badges, often based on the <a href="https://openbadges.org/">Open Badge standard</a> developed by <a href="https://www.mozilla.org/en-US/?v=1">Mozilla</a>, offer a modern and verifiable way to recognize and display skills and accomplishments.</p>
+
+<p><br /></p>
+
+<p>This guide covers badge design, award criteria, issuance and sharing on LinkedIn.</p>
+
+<p><br /></p>
+
+<h2 id="understanding-digital-badges">Understanding Digital Badges</h2>
+
+<h3 id="the-complete-digital-badge-definition">The Complete Digital Badge Definition</h3>
+
+<p><a href="https://certifyme.online/digital-badges">Digital badges</a> are online representations of skills, accomplishments, or certifications earned by individuals. They are often used to validate and showcase achievements in various fields, including education, professional development, and training. These badges can be displayed on websites, social media profiles, or online resumes.</p>
+
+<p><br /></p>
+
+<h3 id="benefits-of-digital-badges">Benefits of Digital Badges</h3>
+
+<p><img class="img-fluid r-16" src="/img/blog/Guide to Creating LinkedIn Digital Badges for Your Company/1.png" alt="Benefits of Digital Badges" /></p>
+
+<ol>
+  <li><b>Credibility:</b> Digital badges provide a verifiable way to prove one’s skills and achievements, enhancing credibility.</li>
+  <li><b>Visibility:</b> They allow individuals to showcase their qualifications to a broader audience, including potential employers or collaborators.</li>
+  <li><b>Motivation:</b> The pursuit of earning badges can motivate individuals to continuously improve their skills.</li>
+  <li><b>Standardization:</b> Using open badge standards ensures compatibility and consistency across different platforms.</li>
+</ol>
+
+<p><br /></p>
+
+<h2 id="preparing-for-badge-creation">Preparing for Badge Creation</h2>
+
+<h3 id="identify-your-target-audience">Identify Your Target Audience</h3>
+
+<p>Before creating digital badges, identify who you want to target with these credentials. Are they your employees, students, customers, or a broader online community? Understanding your audience will help you tailor your badge criteria and design to their specific needs.</p>
+
+<p>Choose a badge, a certificate or both according to your award requirements and how recipients will use the record.</p>
+
+<p><br /></p>
+
+<h3 id="define-badge-criteria">Define Badge Criteria</h3>
+
+<p>Clearly define the requirements for earning a badge. What skills or accomplishments should someone demonstrate to receive your badge? Ensure that these criteria are both achievable and valuable to your target audience.</p>
+
+<p><br /></p>
+
+<h3 id="designing-your-badge">Designing Your Badge</h3>
+
+<p>The visual design of your badge matters. It should be eye-catching, professional, and represent the achievement it signifies. Consider hiring a graphic designer if you lack design skills. Be mindful of accessibility and ensure your badge is easy to perceive and understand.</p>
+
+<p><br /></p>
+
+<h2 id="creating-your-linkedin-digital-badge">Creating Your LinkedIn Digital Badge</h2>
+
+<h3 id="choosing-a-badge-platform">Choosing a Badge Platform</h3>
+
+<p>Select a <a href="https://www.certifyme.online/glossary/what-is-a-digital-credentialing-service.html">digital credentialing service</a> or tool for creating and managing your digital badges. Some popular options include <a href="https://certifyme.online/"> CertifyMe </a>, Credly and Accredible. Ensure that the platform supports the Open Badge standard for interoperability.</p>
+
+<p><br /></p>
+
+<h3 id="selecting-badge-elements">Selecting Badge Elements</h3>
+
+<ol>
+  <li><b>Badge Image:</b> Upload your badge design, adhering to the recommended image dimensions.</li>
+  <li><b>Badge Name:</b> Give your badge a clear and concise name that reflects its purpose.</li>
+  <li><b>Badge Description:</b> Provide a detailed description of the badge’s criteria and significance.</li>
+  <li><b>Badge Expiry (Optional):</b> Decide if your badge should expire after a certain period.</li>
+  <li><b>Badge Tags:</b> Add relevant tags to help users discover your badge.</li>
+</ol>
+
+<p><br /></p>
+
+<h3 id="customizing-badge-metadata">Customizing Badge Metadata</h3>
+
+<p>Include metadata such as issuer information, criteria, and badge alignment. This metadata ensures the badge’s authenticity and compliance with open badge standards.</p>
+
+<p><br /></p>
+
+<h2 id="how-to-make-your-badge-verifiable">How to Make Your Badge Verifiable?</h2>
+
+<ol>
+  <li>
+    <p><b>Implement Open Badge Standard:</b> To ensure the credibility of your badges, follow the Open Badge standard developed by Mozilla. This standard includes metadata that makes it possible to verify the badge’s authenticity.</p>
+  </li>
+  <li>
+    <p><b>Badge Issuing Process:</b> Establish a clear process for issuing badges to individuals who meet the criteria. This process should include verification steps to prevent fraudulent badge claims.</p>
+  </li>
+</ol>
+
+<p>Further Reading : <a href="https://www.certifyme.online/blog/three-top-credly-alternatives-training-and-development.html">Best Alternatives to Credly Badges</a></p>
+
+<p><br /></p>
+
+<h2 id="how-to-share-your-badge-on-linkedin">How to Share Your Badge on Linkedin?</h2>
+
+<h3 id="uploading-your-badge">Uploading Your Badge</h3>
+
+<ol>
+  <li>Log in to your LinkedIn profile.</li>
+  <li>Go to your “Profile” and click on the “Add profile section” button.</li>
+  <li>Select “<a href="https://www.linkedin.com/help/linkedin/answer/a704787/add-learning-certificates-of-completion-and-skills-to-your-linkedin-profile"><b><u>Licenses &amp; Certifications</u></b></a>.”</li>
+  <li>Fill in the required information, including the name, issuer, and issuance date of your badge.</li>
+  <li>Upload the badge image or link to the badge hosted on your badge platform.</li>
+  <li>Adding a Badge Description</li>
+  <li>Write a compelling description of your badge. Explain its significance, the skills it represents, and how it benefits the recipient. This description will help viewers understand the value of your badge.</li>
+</ol>
+
+<p><br /></p>
+
+<h2 id="promoting-your-digital-badges">Promoting Your Digital Badges</h2>
+
+<ol>
+  <li>
+    <p>Announce the badge programme through your institution’s website, newsletters and relevant channels. Explain eligibility, award criteria and how recipients can share their credentials.</p>
+  </li>
+  <li>
+    <p><b>Leveraging Employee Advocacy:</b> Encourage your employees to share their earned badges on their LinkedIn profiles. This not only showcases their skills but also promotes your company’s commitment to professional development.</p>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<h2 id="monitoring-and-analyzing-badge-engagement">Monitoring and Analyzing Badge Engagement</h2>
+
+<ol>
+  <li>
+    <p><b>Measuring Badge Impact:</b> Use analytics tools to track badge engagement. Measure the number of badges issued, views, and clicks on LinkedIn. Assess the impact of badges on skill development and career advancement.</p>
+  </li>
+  <li>
+    <p><b>Gathering Feedback:</b>  Collect feedback from badge earners and viewers by reviewing <a href="https://sloneek.com/lexicon/types-of-feedback">types of feedback</a> to guide improvements. Understand their experiences with the badge system and make improvements based on their suggestions.</p>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Before launching, confirm award criteria, recipient details, branding and verification. Give recipients clear instructions for adding the credential to LinkedIn.</p>
+:ET

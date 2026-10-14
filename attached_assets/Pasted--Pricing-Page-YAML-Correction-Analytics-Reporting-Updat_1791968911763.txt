@@ -1,0 +1,51 @@
+# Pricing Page YAML Correction — Analytics & Reporting
+
+Update the existing YAML entries for the **Analytics & Reporting** category. Implement only the approved availability and capability distinctions below.
+
+## 1. Approved feature availability
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Credential issuance reporting | Available | Available | Available |
+| Credential views | Available | Available | Available |
+| Download reporting | Basic download reporting | Advanced download reporting | Advanced download reporting |
+| Social sharing and engagement | Available | Available | Available |
+| Verification activity reporting | Not included | Available | Available |
+| Template-level reporting | Not included | Available | Available |
+| Project-level reporting | Not included | Available | Available |
+| Reporting data export | Not included | Available | Available |
+| Reporting API access | Not included | Not included | Available |
+| Advanced analytics | Not included | Available | Available |
+
+## 2. Required corrections
+
+1. **Credential issuance reporting:** Available across all three plans.
+2. **Credential views:** Available across all three plans.
+3. **Download reporting:** Essentials includes basic reporting; Professional and Enterprise include advanced reporting.
+4. **Social sharing and engagement:** Available across all three plans.
+5. **Verification activity reporting:** Available from Professional onward.
+6. **Template-level reporting:** Available from Professional onward.
+7. **Project-level reporting:** Available from Professional onward.
+8. **Reporting data export:** Available from Professional onward.
+9. **Reporting API access:** Enterprise only.
+10. **Advanced analytics:** Available from Professional onward.
+
+## 3. Implementation rules
+
+- Update the existing YAML entries in place, preserving stable feature IDs and the existing schema.
+- Replace ambiguous descriptions such as “Confirm reporting scope,” “Confirm export scope,” and “Confirm API scope” with the approved availability labels.
+- Keep basic download reporting distinct from advanced download reporting.
+- Keep reporting API access separate from general API access.
+- Do not imply that all analytics features are available in Essentials merely because basic credential reporting is included.
+- Do not invent metrics, dashboards, export formats, API limits, or analytics capabilities beyond the existing implemented functionality.
+- Do not change pricing, quotas, or unrelated plan entitlements.
+
+## 4. Validation
+
+- Validate YAML syntax and schema.
+- Confirm all ten features match the approved matrix.
+- Verify the comparison table renders correctly on desktop and mobile.
+- Check for conflicting descriptions of analytics and reporting elsewhere in the pricing-page configuration and correct them within this scope.
+- Report the file changed and the actual validation results.
+
+**Implement these approved corrections only. Do not repeat the product analysis or modify unrelated entitlements.**

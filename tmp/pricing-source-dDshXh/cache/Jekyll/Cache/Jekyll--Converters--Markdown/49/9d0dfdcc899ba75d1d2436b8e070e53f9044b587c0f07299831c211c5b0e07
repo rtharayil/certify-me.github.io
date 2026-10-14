@@ -1,0 +1,37 @@
+I":<p>Verifiable credentials can help a learner present a structured issuer claim without repeatedly requesting a new document. Privacy depends on how that record is issued, stored, presented and logged—not simply on the word “verifiable.” A signed credential is not automatically encrypted, anonymous or selectively disclosable.</p>
+
+<h2 id="digital-and-verifiable-are-different">Digital and verifiable are different</h2>
+
+<p>A digital record can be an image, PDF or database entry. A verifiable credential uses a structured data model and an appropriate securing mechanism so a receiver can check proof. The <a href="https://www.w3.org/TR/vc-data-model-2.0/">W3C VC Data Model 2.0</a> distinguishes issuer, holder and verifier roles and discusses privacy risks. A signature supports integrity and signing authority; it does not limit who can read an openly shared credential.</p>
+
+<p>For the technical explanation, see the <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">institutional W3C guide</a>. This article focuses on data minimization and learner choices rather than repeating the full standards tutorial.</p>
+
+<h2 id="selective-disclosure-is-a-capability-to-test">Selective disclosure is a capability to test</h2>
+
+<p>Selective disclosure lets a holder reveal a subset of claims with a supported proof mechanism. It requires compatible issuance, presentation and verification. Ordinary signed records do not necessarily support it; deleting fields from a signed credential may invalidate its proof.</p>
+
+<p>An internship provider needs confirmation of course completion, not a student’s address or full academic history. The institution could issue a minimal achievement record. If it supports an appropriate selective-disclosure mechanism and receiver, a holder may instead present only permitted claims.</p>
+
+<p>Even selective disclosure does not prevent a receiver from retaining disclosed data. Identifiers, status lookups and repeated presentations can create correlation risks. Ask what is logged and who can access those logs.</p>
+
+<h2 id="a-practical-privacy-checklist-for-registrars">A practical privacy checklist for registrars</h2>
+
+<ol>
+  <li>Define the minimum information needed to describe and evaluate the achievement. Avoid publishing student identifiers, dates of birth or confidential assessment details without a justified requirement.</li>
+  <li>Keep sensitive evidence in an authorized system; make access conditions clear instead of exposing it through a public URL.</li>
+  <li>Show learners what a public credential page reveals before they share it. Sharing should be optional and not required for an award.</li>
+  <li>Document storage, retention, access controls, deletion responsibilities and export. Distinguish deleting a hosted page from removing every copy previously shared.</li>
+  <li>Test the actual wallet and receiver. Include lost-device recovery and an unavailable proof/status resource.</li>
+  <li>Review any proposed selective-disclosure feature with IT and the privacy office; inspect what the verifier actually receives.</li>
+</ol>
+
+<h2 id="what-verifiable-credentials-do-not-replace">What verifiable credentials do not replace</h2>
+
+<p>Passwords and authentication services control access; achievement credentials describe issuer claims. Neither is a universal replacement for the other. A signed subject identifier is not independent real-world identity verification. Receiver acceptance, issuer-key resolution and status resources may remain dependencies after export.</p>
+
+<p>For connected achievement histories, <a href="/comprehensive-learner-record">Comprehensive Learner Record governance</a> helps define provenance and access rather than turning every award into a public profile. Use <a href="/platform-overview">credential infrastructure responsibilities</a> to assign who approves disclosure, handles corrections and responds to privacy requests.</p>
+
+<h2 id="begin-with-a-minimum-data-pilot">Begin with a minimum-data pilot</h2>
+
+<p>Choose one achievement, issue an authorized sample and inspect it as a learner and a verifier. Record exposed fields and log behavior; resolve excess disclosure before rollout. <a href="https://info.certifyme.online/request-demo">Discuss a privacy-aware credential workflow</a> with your registrar, IT and privacy teams. Do not equate cryptographic validity with a privacy certification.</p>
+:ET

@@ -1,0 +1,48 @@
+# Pricing Page YAML Correction — APIs, Automation & Integrations
+
+Update the existing YAML entries for the **APIs, Automation & Integrations** category according to the approved plan entitlements below.
+
+## 1. Approved feature availability
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Basic APIs | Available | Available | Available |
+| Advanced APIs | Not included | Available | Available |
+| Webhooks | Not included | Not included | Available |
+| CSV data import | Available | Available | Available |
+| Documented LMS connectors / plugins | Not included | Not included | Available, subject to agreed connector and implementation scope |
+| Google Forms automation | Not included | Available | Available, subject to applicable configuration |
+| Workflow automation / Zapier | Not included | Available | Available, subject to applicable workflow scope |
+| SIS, HRIS, and institutional integrations | Not included | Not included | Available, subject to agreed integration scope |
+| Custom integrations or plugins | Not included | Not included | Available, subject to agreed scope |
+
+## 2. Required corrections
+
+1. **Basic APIs:** Available across all three plans.
+2. **Advanced APIs:** Available from Professional onward.
+3. **Webhooks:** Enterprise only.
+4. **CSV data import:** Available across all three plans for supported issuance-import workflows.
+5. **Documented LMS connectors / plugins:** Enterprise only, subject to the agreed connector and implementation scope.
+6. **Google Forms automation:** Available from Professional onward.
+7. **Workflow automation / Zapier:** Available from Professional onward.
+8. **SIS, HRIS, and institutional integrations:** Enterprise only, subject to the agreed integration scope.
+9. **Custom integrations or plugins:** Enterprise only, subject to the agreed scope.
+
+## 3. Implementation rules
+
+- Update the existing YAML entries in place, preserving stable feature IDs and the existing schema.
+- Replace ambiguous phrases such as “Confirm API scope and limits” with clear availability labels for the approved plan boundaries.
+- Retain scope qualifications for integrations and automation where specified above.
+- Do not imply that every LMS, SIS, HRIS, Google Forms workflow, or Zapier integration is automatically configured or included without implementation work.
+- Do not invent API rate limits, usage quotas, supported connector lists, or integration fees.
+- Do not change unrelated plan entitlements, pricing, quotas, or feature categories.
+
+## 4. Validation
+
+- Validate YAML syntax and schema.
+- Verify all nine features against the approved availability matrix.
+- Confirm the pricing comparison table renders correctly on desktop and mobile.
+- Search for contradictory descriptions of these APIs, connectors, and automation features elsewhere in the pricing-page configuration and correct them within this scope.
+- Report the file changed and the actual validation results.
+
+**Implement these approved corrections only. Do not redo the product analysis or modify unrelated entitlements.**

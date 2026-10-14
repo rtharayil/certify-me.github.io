@@ -1,0 +1,108 @@
+I"�<h2 id="tldr">TL;DR</h2>
+
+<ol>
+  <li>
+    <p>Cryptographic checks detect changes to protected data when verified; they do not prevent every fraud or automatically revoke the issuer’s original record.</p>
+  </li>
+  <li>
+    <p>Bulk workflows can reduce printing and manual handling. Savings depend on volume, platform costs and implementation.</p>
+  </li>
+  <li>
+    <p>Recipients can share a credential with compatible verification services. Availability, status and access depend on the required resources.</p>
+  </li>
+  <li>
+    <p>Issuers can include award criteria, skills and supporting evidence. Field requirements vary by the applicable credential standard and profile.</p>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<h2 id="benefits-of-verifiable-credentials-for-organisations">Benefits of Verifiable Credentials for Organisations</h2>
+
+<h3 id="reduced-risk-of-forgery-and-tampering">Reduced Risk of Forgery and Tampering</h3>
+
+<p><img class="img-fluid r-16" src="/assets4/images/Glossary/secured-and-immutable-credential.png" alt="Secured and Immutable Credential" style="display: block; margin: 0 auto; width:70%;" /></p>
+
+<p>A verifiable credential does not require an immutable ledger. Its securing mechanism lets a compatible verifier detect changes to protected data when checking the proof. Altering a copy does not automatically revoke the issuer’s original credential.</p>
+
+<p>Integrity checks reduce the need for a human issuer to inspect every request. They address one part of <a href="https://www.certifyme.online/blog/How-to-Prevent-Certification-and-Credential-Frauds.html">credential fraud</a>: issuer authority, credential status and the presenter’s identity still require appropriate checks.</p>
+
+<p><br /></p>
+
+<h3 id="scalable-credential-management-for-issuers">Scalable Credential Management for Issuers</h3>
+
+<p><img class="img-fluid r-16" src="/assets4/images/Glossary/automated-bulk-issuance-of-digital-credentials.png" alt="Automated bulk issuance of digital credentials" style="display: block; margin: 0 auto; width:70%;" /></p>
+
+<p>CertifyMe supports bulk issuance using prepared recipient data and approved templates. Validate the award decisions, fields and delivery workflow before scheduling a batch; throughput depends on its size and the agreed implementation.</p>
+
+<p>Reusable templates and validated mappings improve consistency. They do not eliminate human error: incorrect input data can still produce an incorrect award.</p>
+
+<p><br /></p>
+
+<h3 id="cost-and-resource-efficiency">Cost and Resource Efficiency</h3>
+
+<p><img class="img-fluid r-16" src="/assets4/images/Glossary/cost-of-traditional-credentials-vs-digital-credentials.png" alt="Cost of traditional credentialing vs digital credentialing" style="display: block; margin: 0 auto; width:70%;" /></p>
+
+<p>Digital delivery can reduce printing, packaging and postage compared with a paper-based workflow. <a href="https://www.certifyme.online/blog/Which-is-better-paper-or-digital-certificates.html">Digital certificates</a> still incur platform, implementation, support and record-management costs.</p>
+
+<p>Estimate the total cost for the institution’s expected volume, corrections, integrations and retention period. Digital delivery does not establish a guaranteed saving or a negligible difference between small and large programmes.</p>
+
+<p><br /></p>
+
+<h3 id="improved-brand-visibility-for-issuers">Improved Brand Visibility for Issuers</h3>
+
+<p><img class="img-fluid r-16" src="/assets4/images/Glossary/branding-opportunities-in-a-verifiable-credential.png" alt="Branding opportunities in a verifiable credential" style="display: block; margin: 0 auto; width:70%;" /></p>
+
+<p>Every time a recipient shares their verifiable credential, it includes the issuer’s branding and links back to a hosted verification page. That means every LinkedIn post, every email signature, every digital resume carrying your credential is also carrying your name and logo to a new audience.</p>
+
+<p>Traditional certificates don’t do this. Once a paper certificate leaves your hands, it stops working for you. A verifiable credential keeps doing it for as long as the recipient shares it. Organizations actively using this for <a href="https://www.certifyme.online/blog/How-Digital-credentials-help-increase-Brand-Awareness.html">brand awareness</a> find that recipients become passive advocates every time they share a credential online.</p>
+
+<p><br /></p>
+
+<h2 id="benefits-for-recipients-of-verifiable-credentials">Benefits for Recipients of Verifiable Credentials</h2>
+
+<h3 id="self-service-verification-with-clear-dependencies">Self-Service Verification with Clear Dependencies</h3>
+
+<p>Traditional certificate verification requires the verifier to contact the issuing organization, wait for a response, and hope the right person is available. That process introduces delays for both parties.</p>
+
+<p>Cryptographic proofs support integrity and issuer checks. They are not the same as encryption for confidentiality. A compatible verification service uses the required keys and applicable status information; an issuer may not need to answer each request manually, but verification resources must remain available.</p>
+
+<p><br /></p>
+
+<h3 id="easy-secure-sharing-across-platforms">Easy, Secure Sharing Across Platforms</h3>
+
+<p>A physical certificate has one natural lifecycle: issued, received, stored. Sharing it means scanning, emailing a copy, and hoping the recipient trusts what they’re looking at.</p>
+
+<p>Recipients can share a credential page or supported export. Access controls, hosting, credential status and retention terms determine whether a link remains usable. For continuity, agree what data and verification resources must be retained rather than assuming that every link lasts forever.</p>
+
+<p><br /></p>
+
+<h3 id="transparent-metadata-for-greater-context">Transparent Metadata for Greater Context</h3>
+
+<p>Traditional certificates show what someone earned and who issued it. That’s usually it. An employer reviewing a certificate has no way to know what the course covered, how long it took, what criteria were assessed, or what skills were demonstrated.</p>
+
+<p>Depending on the credential standard and institutional profile, useful fields can include:</p>
+
+<ol>
+  <li>Issuer and recipient details</li>
+  <li>Credential title and description</li>
+  <li>Issue date and expiration (if applicable)</li>
+  <li>Course duration and curriculum</li>
+  <li>Skills acquired</li>
+  <li>Criteria met to earn it</li>
+</ol>
+
+<p>These fields help a reviewer interpret the award. Missing context, issuer authority, identity checks or programme-specific requirements may still require follow-up.</p>
+
+<p><br /></p>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p><a href="https://www.certifyme.online/">CertifyMe</a> connects governed issuance, branded credentials and verification. Discuss the intended fields, workflow, retention and export requirements before choosing an implementation.</p>
+
+<h2 id="sources--references">Sources &amp; References</h2>
+
+<ul>
+  <li><strong>W3C — <a href="https://www.w3.org/TR/vc-data-model-2.0/">Verifiable Credentials Data Model 2.0</a></strong>: defines issuer, holder and verifier relationships and explains securing mechanisms and verification limits. It does not require blockchain or guarantee that issuer claims are true.</li>
+</ul>
+:ET

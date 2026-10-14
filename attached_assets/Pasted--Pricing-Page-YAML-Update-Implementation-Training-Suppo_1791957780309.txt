@@ -1,0 +1,79 @@
+# Pricing Page YAML Update — Implementation, Training & Support
+
+Update the existing CertifyMe pricing-page YAML configuration for the **Implementation, Training & Support** category.
+
+## 1. Implementation instructions
+
+- Update the existing YAML entries rather than creating duplicate features.
+- Preserve the current YAML schema, feature IDs, ordering conventions, and plan-entitlement format.
+- Apply the availability rules below consistently across Essentials, Professional, and Enterprise.
+- Use clear, customer-facing descriptions.
+- Do not change pricing, quotas, other feature categories, or unrelated plan entitlements.
+- Do not interpret a feature being unavailable as a general support restriction when another form of support is explicitly included.
+- Ensure the pricing comparison table displays the updated values correctly.
+
+## 2. Approved support and implementation matrix
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Self-service documentation | Available | Available | Available |
+| Email support | Available | Available | Available |
+| Onboarding | Self-onboarding through videos | Standard onboarding | White-glove onboarding |
+| Administrator training | Online training videos | One 45-minute, one-to-one online training session | Advanced administrator training |
+| Advanced training | Not included | Not included | Available |
+| Credential consultation | Not included | Not included | Available |
+| Discovery and requirements definition | Not included | Not included | Available |
+| Migration support | Not included | Not included | Available, subject to agreed migration scope |
+| Integration implementation | Not included | Not included | Available |
+| Testing and user acceptance support | Not included | Not included | Available |
+| Go-live assistance | Not included | Not included | Available |
+| Dedicated account manager | Not included | Available | Available |
+| Service-level escalation | Not included | Not included | Available |
+
+## 3. Required customer-facing wording
+
+Use the following descriptions, or concise equivalents that preserve their meaning.
+
+- **Self-service documentation:** Access to self-service documentation.
+- **Email support:** Email support is available across all plans.
+- **Essentials onboarding:** Self-onboarding using online videos.
+- **Professional onboarding:** Standard onboarding.
+- **Enterprise onboarding:** White-glove onboarding.
+- **Essentials administrator training:** Administrator training videos.
+- **Professional administrator training:** One 45-minute, one-to-one online administrator training session included.
+- **Enterprise advanced training:** Advanced administrator training.
+- **Credential consultation:** Enterprise credential consultation.
+- **Discovery and requirements definition:** Enterprise discovery and requirements definition.
+- **Migration support:** Enterprise migration support, subject to the agreed migration scope.
+- **Integration implementation:** Enterprise integration implementation.
+- **Testing and user acceptance:** Enterprise testing and user acceptance support.
+- **Go-live assistance:** Enterprise go-live assistance.
+- **Dedicated account manager:** Available with Professional and Enterprise.
+- **Service-level escalation:** Enterprise service-level escalation.
+
+## 4. Entitlement and display rules
+
+1. Self-service documentation and email support must show as available in all three plans.
+2. Do not label documentation as “standard resources” or imply that it is restricted to a particular plan.
+3. Essentials onboarding must explicitly refer to self-onboarding through videos. Do not imply that assisted onboarding is included.
+4. Professional onboarding must be labeled standard onboarding; do not describe it as white-glove onboarding.
+5. The Professional administrator-training entitlement is exactly one 45-minute, one-to-one online session. Do not imply unlimited or recurring individual training.
+6. Enterprise advanced training, credential consultation, discovery, migration support, integration implementation, testing and user acceptance, and go-live assistance must not appear as included in Essentials or Professional.
+7. Migration support must explicitly remain subject to the agreed migration scope.
+8. A dedicated account manager must be shown as unavailable for Essentials and available for Professional and Enterprise.
+9. Service-level escalation must be shown as an Enterprise entitlement only. Do not confuse this with the email support available across all plans.
+10. Use consistent labels and availability indicators across the plan cards, full comparison table, mobile layout, and any pricing-page FAQ that references these services.
+
+## 5. Validation
+
+After updating the YAML:
+
+- Validate the YAML syntax and schema.
+- Check that every feature has the correct value for all three plans.
+- Confirm that the pricing page renders the approved descriptions and availability states.
+- Search the pricing-page code and associated configuration for conflicting descriptions of these services.
+- Update conflicting references within the pricing-page scope.
+- Do not change unrelated YAML entries or existing customer entitlements.
+- Report the exact file changed and the validation results.
+
+**Implement these approved changes only. Do not revisit the pricing strategy or ask Replit to perform a new analysis.**

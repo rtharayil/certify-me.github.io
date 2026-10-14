@@ -1,0 +1,32 @@
+I"i
+<p>Verifiable credentials are structured issuer statements with a supported securing mechanism. Understanding them starts by separating the claim, the proof and the verifier’s policy decision.</p>
+
+<h2 id="three-layers-to-read">Three layers to read</h2>
+
+<p>The claim describes the subject and achievement. The proof mechanism supports integrity/signing-authority checks. The verifier’s policy determines whether the issuer and claim are suitable for the intended use. None of these layers should be silently substituted for another.</p>
+
+<h2 id="the-issuerholderverifier-workflow">The issuer–holder–verifier workflow</h2>
+
+<p>An institution issues a course-completion achievement. The learner presents it to a receiving organization. The receiver checks the supported proof and relevant issuer/status resources, then decides whether the achievement meets its own requirement. Independent identity assurance is a separate process.</p>
+
+<h2 id="read-the-model-rather-than-the-marketing-shorthand">Read the model rather than the marketing shorthand</h2>
+
+<p>The <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C data-model authority guide</a> explains roles and boundaries. It does not require one universal proof mechanism or establish every participant’s authority.</p>
+
+<h2 id="connect-the-achievement-context">Connect the achievement context</h2>
+
+<p>An <a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges achievement credential</a> describes an achievement within the related standards context. A <a href="/comprehensive-learner-record">Comprehensive Learner Record</a> can connect multiple achievements with their provenance.</p>
+
+<h2 id="prepare-the-operating-responsibilities">Prepare the operating responsibilities</h2>
+
+<p>The <a href="/platform-overview">institutional credential lifecycle</a> assigns approval, issuance and maintenance. Ask about export, key/status continuity, access to evidence and supported recipient/verifier behavior before procurement.</p>
+
+<h2 id="know-the-limits">Know the limits</h2>
+
+<p>Standards can reduce dependency on a single presentation format, but verification may still require issuer resources. A credential can have a valid proof and an unsupported or inappropriate claim. Do not promise universal interoperability, fraud elimination or privacy merely because a credential is digital.</p>
+
+<h2 id="plan-your-next-step">Plan your next step</h2>
+
+<p>See how CertifyMe’s structured credential records support your institution’s awards and verification workflows. <a href="https://info.certifyme.online/request-demo">Request an institutional demo</a>.</p>
+
+:ET

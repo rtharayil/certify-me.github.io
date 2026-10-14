@@ -1,0 +1,100 @@
+I"0$<p><span data-hero-summary="verifiable-credentials">Connect issuer claims with supported proof and receiving-system verification.</span></p>
+
+<h2 id="the-structure-behind-a-verifiable-achievement">The structure behind a verifiable achievement</h2>
+
+<p>An achievement credential connects the issuer’s claim with its subject, supported proof and applicable status. The holder presents the record, and a compatible verifier checks the proof and available issuer resources. A failed proof or unavailable resource changes what the receiving organisation can establish.</p>
+
+<h2 id="keep-the-institutional-meaning-outside-the-cryptographic-shortcut">Keep the institutional meaning outside the cryptographic shortcut</h2>
+
+<p>Use the <a href="/platform-overview">institutional issuance lifecycle</a> to decide who approves an award and who handles corrections. A securing mechanism cannot decide whether assessment evidence justified the achievement.</p>
+
+<h2 id="connect-the-standard-to-related-records">Connect the standard to related records</h2>
+
+<p>An <a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges achievement credential</a> specializes the achievement context. A <a href="/comprehensive-learner-record">Comprehensive Learner Record</a> can connect records while retaining provenance. <a href="/skills-taxonomy-mapping">Reviewed skill relationships</a> remain distinct from cryptographic proof.</p>
+
+<h2 id="institutional-adoption-in-practice">Institutional adoption in practice</h2>
+
+<p>The <a href="/case-studies.html">customer case studies</a> show how institutional programmes use credential workflows. Standards define the record structure; issuer authority and assessment give the represented achievement its meaning.</p>
+
+<h2 id="existing-operational-reference">Existing operational reference</h2>
+
+<h2 id="what-are-w3c-verifiable-credentials">What are W3C Verifiable Credentials?</h2>
+
+<p>A <strong>W3C Verifiable Credential (VC)</strong> represents issuer claims about a subject in a machine-verifiable format. A supported securing mechanism lets a verifier check integrity and signing authority. That check is distinct from deciding whether an issuer is trusted, whether the credential belongs to the presenter, and whether its evidence meets an institution’s requirements.</p>
+
+<p>For universities, professional bodies and training providers, this is part of <a href="/platform-overview">digital credential infrastructure</a>, not simply a signed image. A degree, certification or assessed achievement can carry issuer and evidence context for another institution or employer to evaluate.</p>
+
+<h2 id="issuer-holder-subject-and-verifier">Issuer, holder, subject and verifier</h2>
+
+<ul>
+  <li><strong>Issuer:</strong> makes the claims and secures the credential using a supported mechanism.</li>
+  <li><strong>Subject:</strong> the entity the claims concern; often a learner, but not necessarily the holder.</li>
+  <li><strong>Holder:</strong> possesses credentials and can present them to a verifier.</li>
+  <li><strong>Verifier:</strong> checks the presentation, credential proof, issuer authority, validity and applicable status against its own acceptance policy.</li>
+</ul>
+
+<p>The W3C data model describes these roles; it does not automatically verify the identity of each participant. The issuer still needs an appropriate process for identifying subjects and establishing achievement evidence.</p>
+
+<h2 id="credential-components-and-verification">Credential components and verification</h2>
+
+<p>A credential typically identifies its issuer, type and subject claims. Depending on the model version and implementation, it may include validity information, evidence, schemas, status references and a securing mechanism.</p>
+
+<ol>
+  <li>Obtain the credential or presentation in a supported format.</li>
+  <li>Validate the data structure and the supported cryptographic securing mechanism.</li>
+  <li>Resolve the relevant issuer verification material and establish why that issuer is authoritative.</li>
+  <li>Check validity and applicable revocation or suspension resources.</li>
+  <li>Assess subject binding, achievement criteria and evidence against the receiving institution’s policy.</li>
+</ol>
+
+<p>Keys, status services and other referenced resources can require network access. A QR code or webpage is an access path, not by itself proof. See <a href="/certificate-verification">credential verification</a> for the institutional trust process.</p>
+
+<h2 id="portability-and-interoperability">Portability and interoperability</h2>
+
+<p>Portability means a credential can move beyond the interface that originally issued it. Successful interoperability still requires compatible data formats, securing mechanisms, identifier resolution, exchange protocols and receiving-system policies.</p>
+
+<p>The <a href="https://www.w3.org/TR/vc-data-model/">W3C VC Data Model 1.1</a> and <a href="https://www.w3.org/TR/vc-data-model-2.0/">Data Model 2.0</a> describe model versions. A product’s use of a VC-based standard does not establish that it supports every version, proof suite or wallet. Institutions should test the actual issue, export, presentation and verification paths.</p>
+
+<h2 id="open-badges-skills-and-learner-records">Open Badges, skills and learner records</h2>
+
+<p><a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges 3.0</a> applies a VC-based model to achievement claims, including criteria, issuer and evidence information. The <a href="https://site.imsglobal.org/certifications/certifyme/certifyme">1EdTech certification registry</a> lists CertifyMe’s Open Badges 3.0 Issuer and CLR 2.0 Issuer/Displayer roles. It is not a general “W3C-certified” designation.</p>
+
+<p><a href="/skills-taxonomy-mapping">Skills taxonomy mapping</a> relates an achievement to reviewed skills concepts. A <a href="/comprehensive-learner-record">Comprehensive Learner Record</a> brings achievements together while retaining their provenance. <a href="/workforce-intelligence">Workforce intelligence</a> compares that skills context with occupations and separately sourced market information; a signed credential does not guarantee employability.</p>
+
+<h2 id="verifiable-credentials-versus-pdfs">Verifiable credentials versus PDFs</h2>
+
+<div class="table-responsive" tabindex="0" role="region" aria-label="PDF and Verifiable Credential comparison">
+<table class="table">
+<thead><tr><th scope="col">Question</th><th scope="col">PDF or certificate image</th><th scope="col">VC-based credential</th></tr></thead>
+<tbody>
+<tr><th scope="row">Integrity</th><td>An unsigned image alone has no cryptographic integrity check; a PDF can also be digitally signed.</td><td>A supported securing mechanism permits machine verification.</td></tr>
+<tr><th scope="row">Issuer trust</th><td>Requires a reliable source or verification process.</td><td>Still requires trusted issuer identification and relevant authority.</td></tr>
+<tr><th scope="row">Status</th><td>May be maintained separately by the issuer.</td><td>Can reference status information where implemented; availability still matters.</td></tr>
+<tr><th scope="row">Privacy</th><td>Depends on its content, access and sharing arrangements.</td><td>Selective disclosure and encryption depend on format and implementation.</td></tr>
+<tr><th scope="row">Receiving systems</th><td>Usually document workflows.</td><td>Must support the actual format, proof and acceptance policy.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="verifiable-credentials-in-institutional-workflows">Verifiable credentials in institutional workflows</h2>
+
+<p>Registrars govern awards and corrections, academic teams establish assessed meaning, and supported <a href="/api/">APIs</a> and <a href="/allIntegrations.html">integrations</a> connect record workflows with institutional systems. <a href="/security/">Security controls</a> support access and data handling, while career services help learners present achievements in occupational context.</p>
+
+<p>CertifyMe brings approved achievement information into a supported credential format with issuance, sharing and verification workflows. Criteria and subject associations remain part of the record context, while corrections and applicable status processes support its ongoing lifecycle.</p>
+
+<h2 id="authoritative-standards-references">Authoritative standards references</h2>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/vc-data-model-2.0/">W3C Verifiable Credentials Data Model 2.0</a></li>
+  <li><a href="https://www.w3.org/TR/vc-data-model/">W3C Verifiable Credentials Data Model 1.1</a></li>
+  <li><a href="https://www.1edtech.org/standards/ob">1EdTech Open Badges standard</a></li>
+  <li><a href="https://www.1edtech.org/standards/clr">1EdTech Comprehensive Learner Record standard</a></li>
+</ul>
+
+<p>Updated 3 October 2026. Standards explain an architecture; product certification roles and implementation scope should be checked separately.</p>
+
+<h2 id="plan-your-next-step">Plan your next step</h2>
+
+<p>See how CertifyMe’s structured achievement records support your institution’s credential workflows. <a href="https://info.certifyme.online/request-demo">Request an institutional demo</a>.</p>
+
+:ET

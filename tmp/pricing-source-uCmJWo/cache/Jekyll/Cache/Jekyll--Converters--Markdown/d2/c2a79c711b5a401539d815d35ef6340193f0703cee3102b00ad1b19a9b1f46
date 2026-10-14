@@ -1,0 +1,2 @@
+I"<p>Changing signed data causes cryptographic verification to fail when checked. Verification still requires the relevant issuer, key and status resources. Plan export, retention and continuity; a hosted link alone does not guarantee verification if services become unavailable.</p>
+:ET

@@ -11,6 +11,7 @@
     "test:transcript-solution": "node scripts/validate-transcript-solution.cjs",
     "test:skill-passport": "node scripts/validate-skill-passport.cjs",
     "test:pricing": "node scripts/validate-pricing.cjs",
+    "test:pricing-source": "node scripts/validate-pricing-source.cjs",
     "test:institutional-overview": "XDG_CONFIG_HOME=/tmp/institutional-overview-config XDG_CACHE_HOME=/tmp/institutional-overview-cache node scripts/validate-institutional-overview.cjs",
     "test:institutional-sections": "XDG_CONFIG_HOME=/tmp/institutional-sections-config XDG_CACHE_HOME=/tmp/institutional-sections-cache node scripts/validate-institutional-sections.cjs",
     "test:case-studies": "XDG_CONFIG_HOME=/tmp/case-studies-config XDG_CACHE_HOME=/tmp/case-studies-cache node scripts/validate-case-studies-index.cjs",

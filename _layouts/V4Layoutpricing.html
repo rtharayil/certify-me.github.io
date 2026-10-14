@@ -6,24 +6,17 @@
   <div id="page" class="page font--jakarta pricing-page">
     {% include V4NewLook/navbar.html %}
     <main id="main-content">
-      {% assign pricing = site.data.pricing %}
-      <section class="pricing-hero">
+      {% assign pricing = site.data.pricing_features %}
+      {% assign comparison = pricing.comparison %}
+      <section class="pricing-plan-intro" aria-labelledby="pricing-intro-title">
         <div class="pricing-wrap">
-          <p class="pricing-eyebrow">Plans for institutional credential infrastructure</p>
-          <h1>Choose the Right Foundation for Your Credential Programs</h1>
-          <p class="pricing-hero__copy">From issuing trusted digital credentials to managing institution-wide programs, CertifyMe helps organizations scale credential operations with the right level of control, integration, and governance.</p>
+          <p class="pricing-eyebrow">{{ pricing.hero.eyebrow }}</p>
+          <h1 id="pricing-intro-title" class="pricing-title">{{ pricing.hero.heading }}</h1>
+          <p class="pricing-lead">{{ pricing.hero.copy }}</p>
           <div class="pricing-actions">
             <a class="pricing-btn" href="{{ pricing.hero.primary_href }}">{{ pricing.hero.primary_cta }}</a>
             <a class="pricing-btn pricing-btn--quiet" href="{{ pricing.hero.secondary_href }}">{{ pricing.hero.secondary_cta }}</a>
           </div>
-        </div>
-      </section>
-
-      <section class="pricing-plan-intro">
-        <div class="pricing-wrap">
-          <p class="pricing-eyebrow">Three plans. A clear path to scale.</p>
-          <h2 class="pricing-title">Choose the scope that fits your credential operations.</h2>
-          <p class="pricing-lead">Compare included capacity, administrative scope, and the governance capabilities that support your institution.</p>
         </div>
       </section>
 
@@ -50,7 +43,16 @@
             <div class="pricing-card__bottom">
               <details class="pricing-plan-details">
                 <summary>View {{ plan.name }} capabilities</summary>
-                <ul>{% for entitlement in plan.entitlements %}<li>{{ entitlement }}</li>{% endfor %}</ul>
+                {% for category in comparison %}
+                <details class="pricing-plan-category">
+                  <summary>{{ category.category | escape }}</summary>
+                  <ul>
+                    {% for row in category.rows %}
+                    <li><strong>{{ row.feature | escape }}:</strong> {% include V4NewLook/pricing/feature-value.html row=row plan=plan %}</li>
+                    {% endfor %}
+                  </ul>
+                </details>
+                {% endfor %}
               </details>
               <a class="pricing-btn" href="{{ plan.href }}">{{ plan.cta }}</a>
               <p class="pricing-card__note">{{ plan.note }}</p>
@@ -104,26 +106,20 @@
           <div class="pricing-legend" aria-label="Entitlement terminology">
             <span>Included</span><span>Optional / package-defined</span><span>Contract-defined / configuration-dependent</span>
           </div>
-          {% assign comparison = site.data[pricing.comparison_data] %}
           {% for category in comparison %}
           <details class="pricing-category"{% if forloop.first %} open{% endif %}>
-            <summary>{{ category.category }}</summary>
+              <summary>{{ category.category | escape }}</summary>
             <div class="pricing-category__body">
-              <table class="pricing-matrix" data-responsive-table="stacked" aria-label="{{ category.category }} plan comparison">
+              <table class="pricing-matrix" data-responsive-table="stacked" aria-label="{{ category.category | escape }} plan comparison">
                 <thead>
                   <tr><th scope="col">Feature</th>{% for plan in pricing.plans %}<th scope="col">{{ plan.name }}</th>{% endfor %}</tr>
                 </thead>
                 <tbody>
                   {% for row in category.rows %}
                   <tr>
-                    <td>{{ row.feature }}</td>
+                    <td>{{ row.feature | escape }}</td>
                     {% for plan in pricing.plans %}
-                    {% assign cell = row[plan.key] %}
-                    {% if cell contains "capacity." %}
-                      {% assign capacity_field = cell | remove: "capacity." %}
-                      {% assign cell = plan.capacity[capacity_field] %}
-                    {% endif %}
-                    <td data-plan="{{ plan.name }}"><span class="pricing-matrix__state">{{ cell }}</span></td>
+                    <td data-plan="{{ plan.name }}"><span class="pricing-matrix__state">{% include V4NewLook/pricing/feature-value.html row=row plan=plan %}</span></td>
                     {% endfor %}
                   </tr>
                   {% endfor %}
@@ -132,7 +128,7 @@
             </div>
           </details>
           {% endfor %}
-          <p class="pricing-model__clarifier">Standard activity history records routine platform activity. Any expanded audit scope, retention, or forensic capabilities must be confirmed for the applicable configuration and, where relevant, defined in the contract.</p>
+          <p class="pricing-model__clarifier">{{ pricing.security_clarifier | escape }}</p>
         </div>
       </section>
 

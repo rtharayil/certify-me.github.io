@@ -1,0 +1,176 @@
+# Pricing Page YAML Update — Security, Privacy & Institutional Assurance
+
+## 1. Objective
+
+Update the existing pricing-page YAML configuration for **Security, Privacy & Institutional Assurance** to reflect the approved plan entitlements below.
+
+This is an implementation task, not a new analysis exercise.
+
+- Update existing YAML entries rather than creating duplicate features.
+- Preserve the current YAML schema, feature IDs, and ordering conventions.
+- Use precise, customer-facing descriptions that accurately communicate the security and contractual differences between plans.
+- Do not change pricing, implementation/support entitlements, usage limits, or other unrelated features.
+- Do not invent certifications, security guarantees, compliance claims, or contractual commitments.
+
+## 2. Approved plan comparison
+
+| Security feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Data encryption in transit and at rest | Included | Included | Included |
+| Credential data security controls | Standard controls | Standard controls | Custom governance controls, as agreed |
+| Single sign-on (SSO) | Not included | Not included | Available |
+| Multi-factor authentication (MFA) | Not included | Included | Included |
+| Backup arrangements | Not included as a plan-specific commitment | Not included as a plan-specific commitment | Defined by the agreed plan and contract |
+| Recovery arrangements | Not included as a plan-specific commitment | Not included as a plan-specific commitment | Defined by the agreed plan and contract |
+| Administrative audit trails | Not included as a plan-specific feature | Basic audit trails | Advanced audit trails |
+| Vulnerability management evidence | Not included | Not included | Available |
+| Penetration-testing documentation | Not included | Not included | Available |
+| Security questionnaires and procurement support | Not included | Not included | Available |
+| Data Processing Agreement (DPA) and contractual privacy terms | Standard DPA and terms | Standard DPA and terms | Customizable by agreement |
+| Data residency | APAC region only | APAC, EU, or US | Location agreed contractually |
+| Dedicated deployment | Not included | Not included | Available |
+| Data retention and exit arrangements | Not included as a plan-specific contractual arrangement | Not included as a plan-specific contractual arrangement | Defined contractually |
+
+## 3. Required customer-facing wording
+
+Use the following wording, or concise equivalents that preserve the exact meaning.
+
+### Data encryption in transit and at rest
+**All plans:** Encryption of data in transit and at rest is included.
+
+This must be explicitly visible in the comparison table for all three plans. Do not mark it as Enterprise-only or imply that Essentials and Professional lack encryption.
+
+### Credential data security controls
+- **Essentials:** Standard credential data security controls.
+- **Professional:** Standard credential data security controls.
+- **Enterprise:** Custom credential data governance controls, as agreed.
+
+Do not describe standard controls as an absence of security. Enterprise provides agreed customization of governance controls, not an automatic guarantee of unrestricted customization.
+
+### Single sign-on (SSO)
+- **Essentials:** Not included.
+- **Professional:** Not included.
+- **Enterprise:** SSO available.
+
+Do not imply that SSO is available in Essentials or Professional through an unapproved add-on.
+
+### Multi-factor authentication (MFA)
+- **Essentials:** Not included.
+- **Professional:** MFA included.
+- **Enterprise:** MFA included.
+
+Keep MFA distinct from SSO. Do not combine them into a single row that obscures the plan differences.
+
+### Backup arrangements
+- **Essentials:** No plan-specific backup commitment.
+- **Professional:** No plan-specific backup commitment.
+- **Enterprise:** Backup arrangements defined by the agreed plan and contract.
+
+Do not imply that the underlying platform does not perform backups where applicable. This comparison concerns the plan-specific backup arrangement or commitment. If existing contractual or technical documentation establishes a baseline service applicable to all plans, do not contradict it; flag the conflict for clarification before publishing.
+
+### Recovery arrangements
+- **Essentials:** No plan-specific recovery commitment.
+- **Professional:** No plan-specific recovery commitment.
+- **Enterprise:** Recovery arrangements defined by the agreed plan and contract.
+
+Do not invent recovery time objectives (RTOs), recovery point objectives (RPOs), or guaranteed recovery times.
+
+### Administrative audit trails
+- **Essentials:** Not included as a plan-specific audit-trail feature.
+- **Professional:** Basic administrative audit trails.
+- **Enterprise:** Advanced administrative audit trails.
+
+Keep basic and advanced auditability distinct. Do not imply that Professional includes every advanced Enterprise audit capability.
+
+### Vulnerability management evidence
+- **Essentials:** Not included.
+- **Professional:** Not included.
+- **Enterprise:** Vulnerability management evidence available.
+
+Do not claim that vulnerability management itself occurs only for Enterprise unless that is independently established. The plan distinction here is access to vulnerability-management evidence.
+
+### Penetration-testing documentation
+- **Essentials:** Not included.
+- **Professional:** Not included.
+- **Enterprise:** Penetration-testing documentation available.
+
+Do not imply that a penetration test has been performed within a particular period, or that a report will always be available for unrestricted distribution, unless confirmed by approved security documentation.
+
+### Security questionnaires and procurement support
+- **Essentials:** Not included.
+- **Professional:** Not included.
+- **Enterprise:** Security questionnaire and procurement support available.
+
+Do not promise completion times or acceptance by a particular procurement authority.
+
+### DPA and contractual privacy terms
+- **Essentials:** Standard Data Processing Agreement (DPA) and standard contractual privacy terms.
+- **Professional:** Standard Data Processing Agreement (DPA) and standard contractual privacy terms.
+- **Enterprise:** Customizable DPA and contractual privacy terms, subject to agreement.
+
+Do not imply that standard privacy obligations are absent from Essentials or Professional. Enterprise allows agreed contractual customization, subject to legal and commercial approval.
+
+### Data residency
+- **Essentials:** Data hosted in the APAC region.
+- **Professional:** Hosting options in APAC, EU, or US.
+- **Enterprise:** Data residency and hosting location agreed contractually to meet the deployment requirements.
+
+For Enterprise, communicate that the hosting location is determined through the agreed contract and deployment design, subject to technical feasibility, applicable law, and commercial approval.
+
+Do not promise that data can be hosted in literally any location without restriction. Do not display the same regional limitations as Professional for Enterprise if the contract supports a different agreed location.
+
+### Dedicated deployment
+- **Essentials:** Not included.
+- **Professional:** Not included.
+- **Enterprise:** Dedicated deployment available, subject to agreed scope and configuration.
+
+Do not equate dedicated deployment with a particular cloud provider, architecture, or isolation model unless that is explicitly approved.
+
+### Data retention and exit arrangements
+- **Essentials:** No customized plan-specific retention or exit arrangement.
+- **Professional:** No customized plan-specific retention or exit arrangement.
+- **Enterprise:** Data retention, export, and exit arrangements defined contractually.
+
+Do not imply that customers have no rights to their data under the standard terms. The distinction is the availability of specifically agreed retention and exit arrangements. Do not invent retention periods, export formats, deletion deadlines, or transition assistance commitments.
+
+## 4. Display and terminology rules
+
+1. Show encryption in transit and at rest as explicitly included in all three plans.
+2. Keep SSO and MFA in separate comparison rows.
+3. Distinguish platform security controls from customer-facing security documentation and contractual commitments.
+4. Distinguish standard security controls from custom Enterprise governance.
+5. Distinguish baseline operational practices from plan-specific backup and recovery commitments.
+6. Distinguish basic administrative audit trails from advanced audit trails.
+7. Use consistent wording across plan cards, comparison rows, tooltips, FAQs, and related pricing-page content.
+8. Use clear availability labels such as **Included**, **Available**, **By agreement**, and **Not included** where appropriate. Do not rely solely on checkmarks or crosses where a qualification is necessary.
+9. Do not use absolute claims such as “fully secure,” “completely compliant,” or “guaranteed recovery.”
+10. Do not add a certification badge or claim SOC 2, ISO 27001, or any other certification unless the current approved evidence explicitly supports it.
+
+## 5. YAML and implementation requirements
+
+- Locate the existing security/privacy feature definitions and update them in place.
+- Preserve stable feature IDs wherever possible.
+- Follow the existing schema for plan values, descriptions, categories, and display order.
+- Ensure that the UI distinguishes unavailable features from contract-dependent features.
+- Do not expose internal YAML values or implementation terminology to customers.
+- Do not make changes to backend authentication, encryption, backup infrastructure, or deployment architecture as part of this pricing-content task unless separately authorized.
+- If plan entitlements are also enforced in code, verify the existing behavior and report discrepancies rather than silently introducing unrelated security changes.
+
+## 6. Validation checklist
+
+After updating the YAML:
+
+- Validate YAML syntax and schema.
+- Confirm all 14 security/privacy rows are present and accurately represented.
+- Confirm encryption in transit and at rest is included for all plans.
+- Confirm SSO is Enterprise-only.
+- Confirm MFA is available for Professional and Enterprise, not Essentials.
+- Confirm basic audit trails start at Professional and advanced audit trails are Enterprise-only.
+- Confirm APAC-only residency for Essentials, APAC/EU/US options for Professional, and contractually agreed location for Enterprise.
+- Confirm dedicated deployment and contractual retention/exit arrangements are Enterprise-only.
+- Confirm backup, recovery, and data-processing language does not contradict the current legal terms or documented platform operation.
+- Check the rendered comparison table on desktop and mobile.
+- Search for conflicting pricing-page descriptions and correct them within the approved scope.
+- Report the exact file changed, the validation results, and any factual or contractual conflicts that require product-owner approval.
+
+**Implement these approved changes only. Do not redo the product analysis, modify unrelated pricing entitlements, or invent security commitments.**

@@ -1,0 +1,42 @@
+# Pricing Page YAML Correction — Skills Taxonomy Mapping
+
+Update the existing YAML entries for the **Skills Taxonomy Mapping** category. Implement only the availability corrections below.
+
+## 1. Approved feature availability
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Institution-defined skills and outcomes | Available | Available | Available |
+| Credential-to-skill relationships | Not included | Not included | Available, subject to agreed module scope |
+| ESCO, O*NET, and institutional framework mapping | Not included | Available, subject to reviewed mapping scope | Available, subject to agreed framework and mapping scope |
+| Institutional review and approval of mappings | Not included | Not included | Available, subject to agreed review responsibilities |
+| Evidence and provenance for skill relationships | Not included | Not included | Available, subject to agreed evidence scope |
+| Reuse of reviewed skill mappings | Not included | Not included | Available, subject to agreed mapping scope |
+
+## 2. Required corrections
+
+1. **Institution-defined skills and outcomes:** Available across all three plans. Remove any wording suggesting this capability requires a separate module or confirmation.
+2. **Credential-to-skill relationships:** Enterprise only.
+3. **ESCO, O*NET, and institutional framework mapping:** Available from Professional onward; not included in Essentials.
+4. **Institutional review and approval of mappings:** Enterprise only.
+5. **Evidence and provenance for skill relationships:** Enterprise only.
+6. **Reuse of reviewed skill mappings:** Enterprise only.
+
+## 3. Implementation rules
+
+- Update the existing YAML entries in place.
+- Preserve stable feature IDs, schema, category ordering, and existing configuration conventions.
+- Use clear and consistent availability labels in the pricing comparison table.
+- Retain scope qualifications for Enterprise features where specified above.
+- Do not imply that institution-defined skills and outcomes automatically include taxonomy mapping, credential-to-skill relationships, institutional approval workflows, or evidence provenance.
+- Do not change any unrelated features, prices, quotas, or plan entitlements.
+
+## 4. Validation
+
+- Validate YAML syntax and schema.
+- Verify that all six features have the correct availability for each plan.
+- Check desktop and mobile pricing-table rendering.
+- Search for conflicting descriptions of these features elsewhere in the pricing-page configuration and correct them within this scope.
+- Report the file changed and the actual validation results.
+
+**Implement these approved corrections only. Do not repeat the product analysis or modify unrelated entitlements.**

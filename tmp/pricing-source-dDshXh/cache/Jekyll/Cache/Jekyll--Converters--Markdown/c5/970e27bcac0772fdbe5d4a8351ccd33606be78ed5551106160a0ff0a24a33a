@@ -1,0 +1,157 @@
+I"h$<p>Bulk delivery helps teams distribute certificates to multiple recipients. This guide covers preparing recipient data, uploading a template and checking the batch before delivery.</p>
+
+<p>If you’re still evaluating delivery formats, this quick read on <a href="https://www.certifyme.online/blog/Which-is-better-paper-or-digital-certificates.html">paper vs. digital certificates</a> can help you make an informed decision.</p>
+
+<p><br /></p>
+
+<h2 id="step-1-choosing-a-digital-credential-management-platform">Step 1: Choosing a Digital Credential Management Platform</h2>
+
+<p>Choose a platform that fits the authorised award, recipient fields and delivery workflow. Review how it <a href="https://www.certifyme.online/glossary/how-to-create-and-share-digital-credentials-with-students-securely.html">shares credentials securely</a>, preserves issuer information and supports integrity checks.</p>
+
+<p><a href="https://www.certifyme.online/">CertifyMe</a> supports branded bulk issuance and issuer-managed credential records. Validate recipient data, permissions and delivery before issuing a production batch.</p>
+
+<p>Bulk issuance supports programmes with multiple recipients. Review plan limits and recipient data before delivery.</p>
+
+<p><br /></p>
+
+<h2 id="step-2-signing-up-and-logging-in-to-your-account">Step 2: Signing Up and Logging In to Your Account</h2>
+
+<p><img class="img-fluid r-16" src="/img/blog/Send Multiple Certificates in a Single Click with CertifyMe Certificate Generator/1.png" alt="CertifyMe login" /></p>
+
+<p>To get started with CertifyMe, you need to sign up for an account. The registration process is straightforward:</p>
+<ol>
+  <li>
+    <p>Visit the CertifyMe website and click on the <a href="https://credential.certifyme.online/auth/preregister/nav@certifyme.online">‘Try For Free’</a> button on the top right corner.</p>
+  </li>
+  <li>
+    <p>Fill in the required details, including your name, email address, and organization information.</p>
+  </li>
+  <li>
+    <p>Create a secure password and agree to the terms and conditions.</p>
+  </li>
+  <li>
+    <p>Verify your email address to complete the registration process.</p>
+  </li>
+</ol>
+
+<p>Once registered, log in to your CertifyMe account using your email and password. This account will be your central hub for managing certificate designs, recipients, and distributions.</p>
+
+<p><br /></p>
+
+<h2 id="step-3-design-and-upload-your-certificate-template">Step 3: Design and Upload Your Certificate Template</h2>
+
+<p><img class="img-fluid r-16" src="/img/blog/Send Multiple Certificates in a Single Click with CertifyMe Certificate Generator/2.png" alt="CertifyMe Design Template" /></p>
+
+<p>After logging in, the next step is to design your certificate template. In CertifyMe, navigate to the ‘Design Template’ section via the navigation bar on the left. Next, click on “Edit your credential template,” which will take you to the credential template editor.
+<b>Upload a Pre-Designed Template:</b> If you already have a certificate design ready, simply upload it to the editor.</p>
+
+<p>If you don’t already have a design, you can explore <a href="https://certifyme.online/blog/15-certificate-maker.html">free certificate maker tools</a> to create a professional-looking template before uploading it to CertifyMe.</p>
+
+<p>Ensure your template includes space for variable attributes, such as the recipient’s name, course title, and date of completion, to personalize each certificate effectively.</p>
+
+<p><br /></p>
+
+<h2 id="step-4-add-variable-attributes">Step 4: Add Variable Attributes</h2>
+
+<p>To make your certificates more impactful, consider using professionally crafted <a href="https://www.certifyme.online/blog/best-certificate-wording-examples.html">certificate wording examples</a> that align with the purpose of your program.</p>
+
+<p><img class="img-fluid r-16" src="/img/blog/Send Multiple Certificates in a Single Click with CertifyMe Certificate Generator/3.png" alt="CertifyMe credential template editor" /></p>
+
+<p>Variable attributes are placeholders in the certificate template that can be personalized for each recipient. They allow for the dynamic insertion of information such as names, course titles, and dates, making each certificate unique. To add variable attributes in CertifyMe:</p>
+
+<ol>
+  <li>
+    <p>In the template design interface, locate the option to add variable fields.</p>
+  </li>
+  <li>
+    <p>Click on the desired area in the template to insert standard fields like the recipient’s name, course name, and completion date.</p>
+  </li>
+  <li>
+    <p>You can also add custom variables, such as QR codes or unique number IDs, for additional security or functionality.</p>
+  </li>
+  <li>
+    <p>Use drag-and-drop functionality or precise placement tools to position these fields correctly on the template.</p>
+  </li>
+</ol>
+
+<p>These features ensure that each certificate is personalized and meets your specific requirements.</p>
+
+<p><br /></p>
+
+<h2 id="step-5-save-your-template">Step 5: Save Your Template</h2>
+
+<p>After designing your certificate and adding the necessary variable attributes, it’s important to fill out the program details. These details serve as the metadata for each credential, ensuring accurate and complete information is associated with every certificate issued. Be sure to fill out these fields carefully and thoroughly.</p>
+
+<ol>
+  <li>
+    <p>Enter all required program details, including the course name, issuing organization, and any other relevant information.</p>
+  </li>
+  <li>
+    <p>Once all details are completed, click on the “Save my Credential Template” button to save your design.</p>
+  </li>
+  <li>
+    <p>Name your template descriptively, making it easy to locate and reuse for future certificate distributions.</p>
+  </li>
+</ol>
+
+<p>This step ensures that your certificates are well-organized and easy to manage within the CertifyMe platform.</p>
+
+<p><br /></p>
+
+<h2 id="step-6-prepare-and-upload-a-csv-file">Step 6: Prepare and Upload a CSV File</h2>
+
+<p>To efficiently send multiple certificates via email, you’ll need to prepare a CSV file containing the necessary recipient information:</p>
+
+<ol>
+  <li>
+    <p>Create a CSV file where each row represents a different recipient. Include columns for each variable attribute, such as Name, Course Name, and Date of Completion.</p>
+  </li>
+  <li>
+    <p>In CertifyMe, navigate to the “Award Credentials” page for the specific credential template you want to use.</p>
+  </li>
+  <li>
+    <p>Click the “Bulk Award” button, which will reveal the “Upload CSV” option along with a <a href="https://credential.certifyme.online/credentialTemplate/generateSampleCSV/17383">sample CSV</a> file you can download for reference.</p>
+  </li>
+  <li>
+    <p>Upload your completed CSV file, ensuring that each column aligns with the corresponding variable attribute in your certificate template.</p>
+  </li>
+  <li>
+    <p>Verify the data mapping to confirm that all recipient information is accurate and properly assigned.</p>
+  </li>
+</ol>
+
+<p>This process allows you to efficiently manage and distribute a large number of certificates, ensuring that each recipient receives their personalized certificate.</p>
+
+<p><br /></p>
+
+<h2 id="use-certifymes-api-for-large-scale-distribution-optional">Use CertifyMe’s API for Large-Scale Distribution (Optional)</h2>
+
+<p>For organizations that need to send a large volume of certificates, CertifyMe offers an API to automate the process:</p>
+
+<ol>
+  <li>
+    <p>Consult CertifyMe’s API documentation for detailed instructions on integrating the API with your systems.</p>
+  </li>
+  <li>
+    <p><a href="https://info.certifyme.online/talk-with-expert">Contact CertifyMe’s support team</a> to set up API access and receive assistance with the integration process.</p>
+  </li>
+  <li>
+    <p>Use the API to automate the certificate issuance process, which is ideal for ongoing or large-scale distributions.</p>
+  </li>
+</ol>
+
+<p><img class="img-fluid r-16" src="/img/blog/CertifyMe-API.png" alt="CertifyMe API integration process of consultation, support and issuance " style="display: block; margin: 0 auto;" /></p>
+
+<p>This automation is particularly useful for organizations that frequently issue certificates, providing a streamlined and scalable solution.</p>
+
+<p><br /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Sending multiple certificates via email is essential in various scenarios, such as issuing course completions, recognizing employee achievements, or validating event participation. Ensuring this process is handled accurately is crucial to prevent errors and maintain the integrity of each certificate.</p>
+
+<p>Proper management is key to delivering personalized, secure certificates that reflect your organization’s professionalism.For organizations looking to maintain brand consistency and visibility, <a href="https://www.certifyme.online/blog/White-Labeling-Digital-Credentials.html">white labeling digital credentials</a> offers a seamless way to issue certificates under your own brand identity.</p>
+
+<p>Before distributing a batch, check the template, recipient details and award approvals. Test a small batch to confirm that the delivery and verification workflow meets your institution’s requirements.</p>
+
+:ET

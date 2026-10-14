@@ -1,0 +1,43 @@
+I"�<p>A blockchain can record a reference associated with a credential, such as a cryptographic hash. That can help detect changes to a specific record. It does <strong>not</strong> independently establish that the learner earned the award, the issuer is authorized, or the person presenting it is its rightful subject. Blockchain is one possible implementation choice, not a requirement of digital credentialing.</p>
+
+<h2 id="how-hash-anchoring-works">How hash anchoring works</h2>
+
+<p>An issuer prepares an approved credential, produces a hash using a documented representation, and records that hash or a related commitment in a ledger transaction. A verifier obtains the credential, recomputes the hash using the same method and checks the ledger reference. A match supports the conclusion that the supplied data matches the anchored data. It does not prove the anchored claim was true.</p>
+
+<p>A digital signature adds a distinct check: integrity relative to an authorized signing key. The institution must govern key custody and issuer authority. For the broader process, see the <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C credential verification guide</a>.</p>
+
+<h2 id="public-and-permissioned-chains-differ">Public and permissioned chains differ</h2>
+
+<p>Public permissionless networks and private permissioned networks have different validator participation, consensus rules, governance and visibility. Not every node keeps every record. “An attacker needs more than half the network” is not a universal security rule: attack thresholds, finality and recovery depend on the protocol and deployment.</p>
+
+<p>Changing an old block can invalidate later hash links, but the practical difficulty of rewriting history depends on consensus, validator control and the trust model. “Tamper-evident” is more accurate than “impossible to change.” A permissioned administrator or compromised issuer key remains part of the risk analysis.</p>
+
+<h2 id="a-hash-is-not-a-complete-privacy-solution">A hash is not a complete privacy solution</h2>
+
+<p>Avoid placing names, student IDs or sensitive evidence on a public ledger. Even hashes and transaction metadata may create linkability or guessing risks, particularly for predictable inputs. Keep authorized source evidence off-chain, minimize exposed metadata and assess retention and deletion obligations. Do not assume all vendors store only hashes or that all credential data lives solely in a holder’s wallet.</p>
+
+<p>Ask where full records are stored, who can read them, whether a public verification link reveals personal data, and how consent or restricted access works. A cryptographically valid record can still disclose too much information.</p>
+
+<h2 id="what-a-verifier-must-still-do">What a verifier must still do</h2>
+
+<ol>
+  <li>Obtain the actual credential—not only a screenshot or QR image.</li>
+  <li>Check its supported proof or anchor against the documented verification method.</li>
+  <li>Evaluate issuer authority, achievement criteria and any permitted evidence.</li>
+  <li>Check relevant dates and status, including corrections or revocation.</li>
+  <li>Match the recipient to the applicant under a separate, proportionate identity policy.</li>
+  <li>Report unavailable keys, status or ledger resources as unresolved checks.</li>
+</ol>
+
+<p>Hash anchoring cannot itself revoke a record. An issuer needs a separate status process that verifiers actually consult. Nor does a globally accessible ledger guarantee compatibility with every employer or wallet.</p>
+
+<h2 id="institutional-example-and-product-questions">Institutional example and product questions</h2>
+
+<p>A university approves a laboratory-assessment award, signs its record and optionally anchors a hash. The employer can check integrity and read the stated criteria, but must decide whether that assessment meets the role’s requirement.</p>
+
+<p>For any learner credential network, ask for the current ledger, anchoring method, proof format, key/status continuity and privacy documentation before asserting how it works. This article does not claim a specific current CertifyMe LCN deployment or an implementation by a healthcare regulator. For CertifyMe’s independently documented standards role, use the <a href="/blog/certifyme-open-badge-3-0-certified">OB3 certification evidence</a>.</p>
+
+<h2 id="is-blockchain-necessary">Is blockchain necessary?</h2>
+
+<p>No. The <a href="https://www.w3.org/TR/vc-data-model-2.0/">W3C VC model</a> and <a href="https://www.imsglobal.org/spec/ob/v3p0/">Open Badges 3.0 specification</a> do not require every achievement credential to use blockchain. Compare the cost, governance, privacy and continuity of the proposed implementation with other supported proof mechanisms. Use <a href="/platform-overview">credential infrastructure governance</a> to assign responsibilities before selecting the technology. <a href="https://info.certifyme.online/request-demo">Discuss your verification requirements</a>, including what happens when a service is unavailable.</p>
+:ET

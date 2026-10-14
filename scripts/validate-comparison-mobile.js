@@ -5,6 +5,7 @@ const fs = require("node:fs");
 const http = require("node:http");
 const https = require("node:https");
 const path = require("node:path");
+const os = require("node:os");
 const { chromium } = require("playwright");
 
 const ROOT = path.resolve(__dirname, "..");
@@ -56,8 +57,8 @@ function waitForServer(url) {
   });
 }
 
-function startSite() {
-  execFileSync("bundle", ["exec", "jekyll", "build", "--destination", "_site"], {
+function startSite(destination) {
+  execFileSync("bundle", ["exec", "jekyll", "build", "--destination", destination], {
     cwd: ROOT,
     stdio: "inherit",
   });
@@ -74,6 +75,8 @@ function startSite() {
       String(PORT),
       "--skip-initial-build",
       "--no-watch",
+      "--destination",
+      destination,
     ],
     { cwd: ROOT, detached: true, stdio: ["ignore", "pipe", "pipe"] },
   );
@@ -188,9 +191,11 @@ async function main() {
   }
 
   const managedServer = !process.env.COMPARISON_BASE_URL;
-  const site = managedServer ? startSite() : null;
+  const destination = managedServer ? fs.mkdtempSync(path.join(os.tmpdir(), "comparison-mobile-")) : null;
+  let site;
 
   try {
+    if (managedServer) site = startSite(destination);
     await waitForServer(`${BASE_URL}${paths[0]}`);
     const browserPath = process.env.CHROMIUM_PATH || execFileSync("which", ["chromium"], { encoding: "utf8" }).trim();
     const browser = await chromium.launch({ headless: true, executablePath: browserPath });
@@ -219,6 +224,7 @@ async function main() {
     if (site) {
       await stopSite(site);
     }
+    if (destination) fs.rmSync(destination, { recursive: true, force: true });
   }
 }
 

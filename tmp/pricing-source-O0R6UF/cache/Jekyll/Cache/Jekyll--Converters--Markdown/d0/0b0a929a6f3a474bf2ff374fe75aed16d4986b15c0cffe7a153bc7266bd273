@@ -1,0 +1,63 @@
+I"�<p>CertifyMe has an active <strong>Open Badges 3.0 Issuer</strong> listing in the <a href="https://site.imsglobal.org/certifications/certifyme/certifyme">public 1EdTech certification registry</a>. The listing checked on 4 October 2026 records certification on <strong>11 May 2026</strong>, registration <strong>IMSO4ce2026W1</strong>, including <strong>API Service Consumer (Write)</strong>. This is useful evidence of a specified interoperability role—not a blanket guarantee about security, identity or every receiving system.</p>
+
+<h2 id="certified-achievement-and-learner-record-roles">Certified achievement and learner-record roles</h2>
+
+<p>Alongside Open Badges 3.0 issuance, the registry lists CertifyMe’s active <strong>CLR 2.0 Issuer and Displayer</strong> roles, certified <strong>24 August 2026</strong>, registration <strong>IMSR2ce2026W1</strong>. These roles support structured individual achievements and connected learner records, with exchange dependent on compatible receiving systems.</p>
+
+<p>The registry states that CertifyMe has <strong>not yet been vetted for privacy and security</strong>. OB3 certification must not be represented as a SOC 2 report, ISO certification or independent security audit. Request those documents separately and check dates, legal entity, system scope and customer responsibilities.</p>
+
+<h2 id="what-open-badges-30-changes">What Open Badges 3.0 changes</h2>
+
+<p>The <a href="https://www.imsglobal.org/spec/ob/v3p0/">1EdTech specification</a> describes achievement credentials in a W3C Verifiable Credentials context. The achievement, issuer, recipient, criteria, evidence and securing mechanism matter more than the badge image. The <a href="https://www.w3.org/TR/vc-data-model-2.0/">W3C VC Data Model 2.0</a> is a Recommendation dated 15 May 2025.</p>
+
+<p>OB2 already described structured achievement data and verification options; it was not merely a proprietary image format. OB3 aligns achievement credentials with the VC model and related proof and exchange requirements. Do not interpret this change as compulsory blockchain, a DID for every issuer or automatic selective disclosure. These depend on the supported implementation and securing mechanism.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Procurement question</th>
+      <th>What certification helps establish</th>
+      <th>What still needs testing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Is the issuing role listed?</td>
+      <td>A public, role-specific conformance record</td>
+      <td>Product/version and contracted functionality</td>
+    </tr>
+    <tr>
+      <td>Can recipients export a credential?</td>
+      <td>A standards context for achievement data</td>
+      <td>Actual export format and receiving wallet support</td>
+    </tr>
+    <tr>
+      <td>Can proof be checked elsewhere?</td>
+      <td>Structured credential and supported proof requirements</td>
+      <td>Verifier support, issuer keys and resource availability</td>
+    </tr>
+    <tr>
+      <td>Can status changes be checked?</td>
+      <td>A specification context for status handling</td>
+      <td>Current endpoint, propagation, caches and unavailable-resource policy</td>
+    </tr>
+    <tr>
+      <td>Does the award prove competence?</td>
+      <td>No independent assessment conclusion</td>
+      <td>Issuer authority, criteria and assessment evidence</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="portability-retains-operational-dependencies">Portability retains operational dependencies</h2>
+
+<p>A downloadable credential can reduce dependence on a single display page, but verification may still require issuer-key resolution, status information or accessible evidence. A missing service should be reported as an unresolved check, not silently treated as valid. Wallets must support the particular format and proof type; “W3C compatible” is not enough to promise universal compatibility.</p>
+
+<p>Before rollout, inspect an authorized test award in the intended receiver, test an altered record and a status exception, and request a written continuity plan for contract termination. Do not promise instantaneous revocation across every cache or independent real-world recipient identity merely because a subject identifier is signed.</p>
+
+<h2 id="compare-vendors-using-current-evidence">Compare vendors using current evidence</h2>
+
+<p>CertifyMe’s listing does not make it the only standards-based platform. For example, <a href="https://www.accredible.com/newsroom/accredible-launches-support-for-open-badge-3-0-and-w3c-verifiable-credentials">Accredible’s January 2026 announcement</a> documents OB3 and W3C VC export and ingestion. Look up each vendor’s precise certified role in the <a href="https://site.imsglobal.org/certifications">registry</a>, and ask for a current sample. An unconfirmed feature is not an absent feature.</p>
+
+<p>For definitions, use the <a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">institutional OB3 guide</a>; this article focuses on CertifyMe’s public certification evidence. For connected records, use the <a href="/comprehensive-learner-record">CLR governance guide</a>. <a href="https://info.certifyme.online/request-demo">Request a standards-focused demonstration</a> covering your institution’s issuance and receiver requirements.</p>
+:ET

@@ -1,0 +1,43 @@
+I"l<p>Verified achievement records can make an applicant’s learning easier to inspect. They do not make a hiring process unbiased by themselves. An employer must still decide which evidence is relevant, whether the assessment is sound and whether applicants had fair access to that opportunity.</p>
+
+<h2 id="what-a-credential-check-can-establish">What a credential check can establish</h2>
+
+<p>A supported proof check can detect changes relative to a signing key and identify an issuer under the verification policy. The record may describe criteria, dates and evidence. It does not independently establish the learner’s real-world identity, competence beyond the assessment or the fairness of the employer’s scoring model.</p>
+
+<p>Read the <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C credential guide</a> to distinguish proof checking from acceptance. Blockchain is not compulsory, and no format makes false issuer claims impossible.</p>
+
+<h2 id="make-evidence-review-consistent">Make evidence review consistent</h2>
+
+<ol>
+  <li>Define job-related criteria before reviewing applicants. Distinguish required licences from optional learning achievements.</li>
+  <li>Accept equivalent evidence where appropriate: a credential, a reviewed portfolio, a practical exercise or other justified assessment. Avoid making access to one platform a hidden hiring requirement.</li>
+  <li>Use a common rubric and record reasons for scores. A prestigious issuer name should not silently substitute for evidence of the relevant capability.</li>
+  <li>Verify issuer authority, achievement scope, applicable dates/status and permitted evidence. Match the recipient separately under a proportionate identity process.</li>
+  <li>Provide an accessible route to correct a record or explain an unavailable verification service. Missing network resources are not evidence that an applicant lied.</li>
+  <li>Review who is excluded and why. Credential formats, opportunity access and institutional prestige can themselves reproduce bias.</li>
+</ol>
+
+<h2 id="what-universities-can-do">What universities can do</h2>
+
+<p>Academic teams should state assessment criteria clearly. Career services can help learners explain what an award does and does not show. Registrars maintain corrections and authoritative records, while IT validates the supported proof and receiver. Use <a href="/skills-taxonomy-mapping">skills taxonomy mapping</a> to review capability labels rather than treating an automated label as independent evidence of proficiency.</p>
+
+<p>Two applicants present different course-completion awards. The employer evaluates the same job-related task and checks each record’s criteria. It does not assume either applicant is stronger because the badge is more polished or the institution is better known.</p>
+
+<h2 id="measure-fairness-separately-from-verification">Measure fairness separately from verification</h2>
+
+<p>Track unresolved record checks, correction requests and decision consistency. Evaluate selection patterns and accommodation needs under the applicable legal and organizational process. Do not claim improved diversity, productivity or retention merely because records became easier to verify; those outcomes require a separate study.</p>
+
+<p>For implementation ownership, see <a href="/platform-overview">credential infrastructure governance</a>. <a href="https://info.certifyme.online/request-demo">Discuss an evidence-aware credential workflow</a> with programme and hiring stakeholders—not a promise of bias elimination.</p>
+
+<h2 id="use-workforce-context-without-turning-it-into-a-selection-score">Use workforce context without turning it into a selection score</h2>
+
+<p>A reviewed credential explains an achievement; a job record describes an employer’s requirements. CertifyMe’s Job Engine can relate those skill contexts for programme planning and career guidance. It does not establish that an applicant is suitable, remove hiring bias or replace a consistent assessment rubric.</p>
+
+<section class="cm-job-engine" aria-label="Job Engine workforce infrastructure" data-job-engine-story="">
+  <h3>Job Engine: the infrastructure behind workforce insight</h3>
+  <p>CertifyMe's <strong>Job Engine</strong>—CertifyMe's own job-farming engine—sources company and job-provider records, ingests and enriches them, normalises job attributes, and maps relevant skills and taxonomies. Structured occupation and job relationships turn those records into workforce and opportunity insight.</p>
+  <p class="cm-job-flow">Job sourcing <span aria-hidden="true">→</span> Ongoing ingestion <span aria-hidden="true">→</span> Enrichment <span aria-hidden="true">→</span> Normalisation <span aria-hidden="true">→</span> Skill/taxonomy mapping <span aria-hidden="true">→</span> Occupation/job structuring <span aria-hidden="true">→</span> Workforce insight</p>
+  <p><strong>20 million live jobs · 50,000 companies worldwide · refreshed every two weeks.</strong> This market context helps institutions review programme relevance and explore career pathways.</p>
+  <p>Connect institution-reviewed <a href="/skills-taxonomy-mapping">skills</a> in a <a href="/comprehensive-learner-record">learner record</a> with job and occupation information. Curriculum teams can examine employer demand; careers teams can explain how learning relates to roles and opportunities. <a href="/workforce-intelligence">Explore Workforce Intelligence</a>.</p>
+</section>
+:ET

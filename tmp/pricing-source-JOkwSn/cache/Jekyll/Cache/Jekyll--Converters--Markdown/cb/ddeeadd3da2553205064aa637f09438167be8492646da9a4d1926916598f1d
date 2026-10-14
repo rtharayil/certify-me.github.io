@@ -1,0 +1,45 @@
+I"C<p>A verified credential should be accepted only for a defined purpose after issuer authority, supported proof, dates and applicable status are assessed. Verification is a decision process, not a universal trust label.</p>
+
+<h2 id="use-a-decision-ladder">Use a decision ladder</h2>
+
+<p>Read the claim; identify the issuer; check the securing mechanism; inspect dates/status; assess the criteria/evidence; and record whether the result is sufficient for the receiving organization’s purpose. Each unresolved step should remain visible.</p>
+
+<p><img class="img-fluid r-16 d-block mx-auto" src="/img/blog/ultimate-guide-to-verified-credentials/w3c.jpg" alt="What Are Verified Credentials?" /></p>
+
+<h2 id="keep-roles-distinct">Keep roles distinct</h2>
+
+<p>The <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C issuer–holder–verifier model</a> describes who issues, holds and checks a credential. The model does not independently establish accreditation, recipient identity or assessment quality.</p>
+
+<p><img class="img-fluid r-16" src="/img/blog/ultimate-guide-to-verified-credentials/Key-Components-Of-Verified-Credentials.png" alt="Key-Components-Of-Verified-Credentials" /></p>
+
+<h2 id="treat-format-as-one-part-of-the-decision">Treat format as one part of the decision</h2>
+
+<p>For <a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges achievement credentials</a>, inspect the issuer, achievement and criteria. A familiar badge graphic or a QR code is not proof by itself.</p>
+
+<p><img class="img-fluid r-16 d-block mx-auto" src="/img/blog/ultimate-guide-to-verified-credentials/IMG-20241127-WA0011.jpg" alt="image" /></p>
+
+<h2 id="plan-exceptions-and-continuity">Plan exceptions and continuity</h2>
+
+<p>Use the <a href="/platform-overview">institutional credential lifecycle</a> to define corrections, status changes and issuer-resource continuity. If a proof or status resource is unavailable, record the uncertainty instead of treating it as a valid or revoked record.</p>
+
+<p><img class="img-fluid r-16 d-block mx-auto" src="/img/blog/ultimate-guide-to-verified-credentials/Credential Verification.png" alt="Credential Verification" /></p>
+
+<h2 id="check-connected-records-without-losing-accountability">Check connected records without losing accountability</h2>
+
+<p>A <a href="/comprehensive-learner-record">Comprehensive Learner Record</a> may aggregate achievements, but each underlying claim retains an issuer and evidence boundary. A presentation layer should not conceal those dependencies.</p>
+
+<p><img class="img-fluid r-16 d-block mx-auto" src="/img/blog/ultimate-guide-to-verified-credentials/Verification image.png" alt="Verification image" /></p>
+
+<h2 id="make-verification-decisions">Make verification decisions</h2>
+
+<p>An employer may accept a current professional-development achievement after proof and issuer checks, while still requiring a separate regulated license. The example shows a purpose-specific decision, not a claim that one credential replaces every qualification.</p>
+
+<h2 id="first-party-implementation-context">First-party implementation context</h2>
+
+<p>Review <a href="/case-studies.html">anonymous institutional cases</a> and the <a href="/certificate-verification">public verification guide</a> for existing context. Do not transfer one programme’s scope or results to an unrelated use case.</p>
+
+<h2 id="plan-your-next-step">Plan your next step</h2>
+
+<p>Explore how CertifyMe connects your institution’s achievement records with sharing and verification. <a href="https://info.certifyme.online/request-demo">Request an institutional demo</a>.</p>
+
+:ET

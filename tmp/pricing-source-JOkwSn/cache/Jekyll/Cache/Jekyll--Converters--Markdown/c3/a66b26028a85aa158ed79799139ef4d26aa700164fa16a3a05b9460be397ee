@@ -1,0 +1,130 @@
+I"�<p>E-learning statistics are useful when they answer a specific institutional question. Participation, learning outcomes, market forecasts and business returns measure different things; one should not be used as proof of another.</p>
+
+<p>This guide uses US government distance-education data and an identified online-learning research review. The sources were checked on 4 October 2026. Their observation periods remain explicit, rather than presenting older projections as measured current results.</p>
+
+<h2 id="distance-education-participation-a-defined-population">Distance-education participation: a defined population</h2>
+
+<p>The National Center for Education Statistics’ <strong>Digest Table 311.15</strong> reports fall 2024 enrollment at US degree-granting postsecondary institutions. “Distance education” is the category used by that dataset; it is not a count of every learner using a digital tool.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fall 2024 statistic</th>
+      <th>Population or denominator</th>
+      <th>Interpretation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>19,659,633 students in total</td>
+      <td>US degree-granting postsecondary institutions in the table</td>
+      <td>The enrollment base, not the worldwide e-learning market.</td>
+    </tr>
+    <tr>
+      <td>10,761,754 students; 54.7%</td>
+      <td>All students in that population</td>
+      <td>Took at least one distance-education course.</td>
+    </tr>
+    <tr>
+      <td>5,547,429 students; 28.2%</td>
+      <td>All students in that population</td>
+      <td>Took some, but not all, courses through distance education.</td>
+    </tr>
+    <tr>
+      <td>5,214,325 students; 26.5%</td>
+      <td>All students in that population</td>
+      <td>Took courses exclusively through distance education.</td>
+    </tr>
+    <tr>
+      <td>54.6% of undergraduates</td>
+      <td>Undergraduate enrollment in the same table</td>
+      <td>Took at least one distance-education course.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The “some” and “exclusively” counts sum to the “any distance education” count. Do not add all three as if they describe separate groups. Rounded percentages can differ slightly from calculations using the published counts.</p>
+
+<p>These figures establish participation within a defined US higher-education population. They do not establish course quality, student satisfaction, global adoption or an institution’s financial return.</p>
+
+<h2 id="what-research-says-about-learning-outcomes">What research says about learning outcomes</h2>
+
+<p>The US Department of Education’s <strong>2009 Evaluation of Evidence-Based Practices in Online Learning</strong> synthesised <strong>51 study effects</strong>, mostly involving older learners. The report found better average outcomes in the included online-learning conditions, with a stronger advantage in blended conditions.</p>
+
+<p>The report also warns against attributing the difference to the delivery medium alone. Conditions could differ in learning time, materials and instructional approaches. It is historical evidence about the included studies—not a promise that moving any course online improves results.</p>
+
+<p>For a new programme, assess the learning design, learner support and assessment evidence. Do not substitute a general research result for evaluation of your own course.</p>
+
+<h2 id="trends-worth-evaluating-without-invented-growth-claims">Trends worth evaluating without invented growth claims</h2>
+
+<h3 id="flexible-delivery">Flexible delivery</h3>
+
+<p>Distance participation makes flexible access an important design question. Decide which activities can be asynchronous and which require supervised practice, collaboration or assessment. Flexibility should preserve the programme’s learning and accessibility requirements.</p>
+
+<h3 id="blended-learning">Blended learning</h3>
+
+<p>Define the role of each delivery mode. Keep the intended outcomes, assessment criteria and additional learning time visible when comparing a blended programme with another format.</p>
+
+<h3 id="learner-support-and-accessibility">Learner support and accessibility</h3>
+
+<p>Test device access, connectivity, accessible content and support arrangements with the intended learners. An enrollment figure does not tell you whether those conditions are adequate for your population.</p>
+
+<h3 id="evidence-after-course-completion">Evidence after course completion</h3>
+
+<p>Completion records, assessed competence and learner-facing credentials serve different purposes. Decide what the institution is authorised to award and which evidence belongs with it.</p>
+
+<h2 id="how-to-measure-programme-value">How to measure programme value</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Decision question</th>
+      <th>Measure to define</th>
+      <th>What not to infer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Are learners participating?</td>
+      <td>Enrollment, active participation and a defined completion measure</td>
+      <td>Participation alone does not establish competence.</td>
+    </tr>
+    <tr>
+      <td>Did learners meet the outcomes?</td>
+      <td>Assessment method, criteria and demonstrated achievement</td>
+      <td>A delivery platform is not proof of learning quality.</td>
+    </tr>
+    <tr>
+      <td>Can the programme operate sustainably?</td>
+      <td>Implementation, content, support and ongoing costs</td>
+      <td>A quoted market-growth forecast is not programme ROI.</td>
+    </tr>
+    <tr>
+      <td>Is the award useful after completion?</td>
+      <td>Issuer authority, evidence, skills relationships and record use</td>
+      <td>Sharing activity is not an employment guarantee.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A reported proportion of organisations experiencing a revenue increase is not the size of that increase. Without the original cohort, period and method, neither should become a blanket ROI claim in a procurement case.</p>
+
+<h2 id="where-certifyme-fits">Where CertifyMe fits</h2>
+
+<p>CertifyMe provides institutional credential infrastructure after an authorised achievement. It connects issuer-managed records, reviewed skill relationships, learner records and workforce evidence within a governed lifecycle.</p>
+
+<p>It complements an LMS rather than replacing teaching, assessment or academic authority. Use <a href="/platform-overview">the platform overview</a>, <a href="/skills-taxonomy-mapping">skills taxonomy mapping</a> and <a href="/comprehensive-learner-record">Comprehensive Learner Records</a> to define what remains useful after issuance.</p>
+
+<p>For career-related programmes, <a href="/workforce-intelligence">workforce intelligence</a> adds separately sourced job and occupation context. That information does not itself prove learner competence, employment or financial return.</p>
+
+<h2 id="sources--references">Sources &amp; References</h2>
+
+<ul>
+  <li><strong>US Department of Education, National Center for Education Statistics</strong> — <a href="https://nces.ed.gov/programs/digest/d25/tables/dt25_311.15.asp">Digest of Education Statistics 2025, Table 311.15</a>, <em>Number and percentage of students enrolled in degree-granting postsecondary institutions, by distance education participation</em>. Source for the fall 2024 counts and percentages above.</li>
+  <li><strong>US Department of Education, Office of Planning, Evaluation, and Policy Development</strong> — <a href="https://files.eric.ed.gov/fulltext/ED505824.pdf">Evaluation of Evidence-Based Practices in Online Learning: A Meta-Analysis and Review of Online Learning Studies</a>, May 2009. Source for the synthesis and its methodological qualifications.</li>
+</ul>
+
+<h2 id="next-step-for-institutional-learning-teams">Next step for institutional learning teams</h2>
+
+<p>Select a representative programme and define its learning outcomes, assessment, award authority and recipient record. <a href="https://info.certifyme.online/request-demo">Request an institutional demo</a> to test that credential workflow. Measure the learning programme and the credential lifecycle separately.</p>
+:ET

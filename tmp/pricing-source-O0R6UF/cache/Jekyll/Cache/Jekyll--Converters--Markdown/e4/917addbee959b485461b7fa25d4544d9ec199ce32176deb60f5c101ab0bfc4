@@ -1,0 +1,26 @@
+I"�<p>Digital diploma records can reduce some manual verification work when the employer has a supported record and a compatible verification route. They are not fake-proof, and a quick link check is not the whole hiring decision.</p>
+
+<h2 id="a-recruiter-verification-checklist">A recruiter verification checklist</h2>
+
+<ol>
+  <li><strong>Get the actual record or official verification link.</strong> A screenshot or QR image alone is not an authoritative award. Navigate from a trusted issuer source where possible; beware lookalike domains.</li>
+  <li><strong>Check the issuer and award authority.</strong> Confirm the institution, programme, award title and applicable accreditation or recognition through appropriate official sources. A platform’s signature does not certify every issuer’s academic authority.</li>
+  <li><strong>Check supported proof.</strong> Verify integrity under the applicable format and proof mechanism. A hosted page may provide an issuer-controlled lookup; an exported signed record requires compatible tools and available keys.</li>
+  <li><strong>Match the recipient separately.</strong> Compare the award subject with the applicant under the employer’s privacy-aware identity process. A signed name does not independently identify the person presenting it.</li>
+  <li><strong>Check dates and status.</strong> Inspect issuance, relevant validity and revocation/correction information where supported. A graduate degree and a time-limited professional licence have different lifecycle rules.</li>
+  <li><strong>Evaluate the hiring requirement.</strong> A diploma documents an award; it does not prove every workplace capability or satisfy every jurisdiction’s regulated-role requirement.</li>
+  <li><strong>Record unresolved checks.</strong> If keys, status or evidence cannot be reached, seek clarification from the official issuer. Unavailable resources are not automatically a valid result—or proof of fraud.</li>
+</ol>
+
+<h2 id="what-a-digital-credential-adds">What a digital credential adds</h2>
+
+<p>The <a href="https://www.w3.org/TR/vc-data-model-2.0/">W3C VC model</a> separates structured issuer claims from the verifier’s acceptance decision. Appropriate proof can make a record tamper-evident. Blockchain is not compulsory, and international access does not guarantee recognition or compatible verification in every country.</p>
+
+<p>For the deeper technical process, use the <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C institutional guide</a>. For authoritative academic records, follow the institution’s official registrar procedures rather than replacing a requested transcript with a different award type.</p>
+
+<h2 id="a-worked-recruiting-example">A worked recruiting example</h2>
+
+<p>An applicant shares a course-completion credential. The employer confirms the issuer, supported proof, recipient association and dates, then checks whether the stated course meets its requirement. If the status service is unavailable, the recruiter logs an unresolved check and requests an official confirmation.</p>
+
+<p>The <a href="/certificate-verification">credential verification guide</a> connects these checks to platform presentation; the <a href="/blog/How-to-Prevent-Certification-and-Credential-Frauds.html">fraud-prevention article</a> explains the wider controls. <a href="https://info.certifyme.online/request-demo">Discuss a supported verification workflow</a> without confusing record integrity with independent identity or accreditation assurance.</p>
+:ET

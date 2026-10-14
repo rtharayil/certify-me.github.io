@@ -1,0 +1,63 @@
+# Pricing Page YAML Correction — Administration, Projects & Departments
+
+Update the existing YAML entries for the **Administration, Projects & Departments** category according to the approved rules below.
+
+## 1. Approved feature comparison
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Administrative accounts | 1 | 2 per department | Contract-defined |
+| Administrator invitations and management | One administrator only | Two administrators per department | Contract-defined roles |
+| Role-based access | Not included | Department-scoped permissions | Agreed institution-wide governance |
+| Projects | 2 | 5 | Proposal-specific |
+| Project-level user assignment | Not included | Not included | Available, subject to agreed project access scope |
+| Project-scoped permissions | Not included | Not included | Available, subject to agreed project permission scope |
+| Folders | Available | Available | Available |
+| Departments | 0 | 1 included | Contract-defined |
+| Additional departments | Not available | Paid recurring add-on | Contract-defined |
+| Department management | Not included | Included department and purchased add-ons | Agreed governance scope |
+| Department resource ownership | No departments | Authorized department resources | Agreed governance scope |
+| Fine-grained department permissions | No departments | Department-scoped access | Agreed governance scope |
+| Templates, records, reports and configuration access | Single administrator | Authorized department and project scope | Agreed role and resource scope |
+| Department-scoped export access | No departments | Available for authorized resources | Agreed role and export scope |
+| Cross-department / institution-wide administration | Not available | Not included; department add-ons do not grant it | Available, subject to agreed institution-wide governance |
+
+## 2. Required corrections
+
+1. **Administrative accounts:** No change.
+2. **Administrator invitations and management:** No change.
+3. **Role-based access:** Remove Essential administrative controls as an entitlement. Role-based access starts at Professional.
+4. **Projects:** Preserve the limits of 2 for Essentials, 5 for Professional, and proposal-specific for Enterprise.
+5. **Project-level user assignment:** Enterprise only.
+6. **Project-scoped permissions:** Enterprise only.
+7. **Folders:** Available in all three plans. Remove wording that suggests folder availability or organization scope needs confirmation.
+8. **Departments:** Preserve zero for Essentials, one included department for Professional, and contract-defined capacity for Enterprise.
+9. **Additional departments:** Keep unavailable for Essentials, available as a paid recurring add-on for Professional, and contract-defined for Enterprise.
+10. **Department management:** No change.
+11. **Department resource ownership:** No change.
+12. **Fine-grained department permissions:** No change.
+13. **Templates, records, reports and configuration access:** No change.
+14. **Department-scoped export access:** Remove “confirm export scope.” State that export access is available for authorized Professional resources, subject to the existing permissions. Preserve the agreed Enterprise role and export scope.
+15. **Cross-department / institution-wide administration:** Enterprise only. Professional department add-ons must not grant institution-wide administrative access.
+
+## 3. Implementation rules
+
+- Update existing YAML entries in place, preserving stable feature IDs and schema.
+- Do not change the confirmed account counts, project counts, or other unchanged entitlements.
+- Enforce role-based and resource-scoped access according to the existing authorization model.
+- Ensure the UI clearly distinguishes department-level permissions from institution-wide administration.
+- Do not invent Enterprise account counts, project limits, or department limits.
+- Do not change pricing, billing rules, or unrelated feature categories.
+
+## 4. Validation
+
+- Validate YAML syntax and schema.
+- Verify all 15 feature rows against the approved comparison.
+- Check that the pricing page renders correctly on desktop and mobile.
+- Verify that project assignment and project-scoped permissions are not presented as included in Essentials or Professional.
+- Verify that folders are shown as available across all plans.
+- Verify that additional Professional departments do not grant cross-department administration.
+- Check for contradictory descriptions within the pricing-page configuration and correct them within this scope.
+- Report the file changed and the actual validation results.
+
+**Implement these approved corrections only. Do not repeat the product analysis or modify unrelated entitlements.**

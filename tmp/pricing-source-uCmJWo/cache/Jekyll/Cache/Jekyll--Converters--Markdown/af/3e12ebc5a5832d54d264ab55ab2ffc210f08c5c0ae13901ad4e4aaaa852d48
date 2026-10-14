@@ -1,0 +1,43 @@
+I"D<p>Preventing credential fraud requires checking the issuer, achievement, proof, dates and status together. A polished certificate, QR code or valid signature alone is not sufficient.</p>
+
+<h2 id="use-an-authorityintegritystatus-checklist">Use an authority–integrity–status checklist</h2>
+
+<p>Authority: identify the issuer and confirm its right to award the achievement. Integrity: check the supported proof against the signed data. Status: inspect dates and applicable correction, expiry or revocation information. Record the decision and any exceptions.</p>
+
+<p><img class="img-fluid r-16" src="/img/blog/types-of-certification-fraud.png" alt="The various types of Certification fraud" style="display: block; margin: 0 auto;" /></p>
+
+<h2 id="treat-a-qr-code-as-an-access-path">Treat a QR code as an access path</h2>
+
+<p>A QR code can take a reviewer to a record, but it is not itself proof. Check the destination and actual verification result using the <a href="/certificate-verification">credential verification workflow</a>; do not accept appearance or a familiar logo as authority.</p>
+
+<p><img class="img-fluid r-16" src="/img/blog/challenges-in-academic-credential-verification.png" alt="Ways showcasing challenges in academic credential verification" style="display: block; margin: 0 auto;" /></p>
+
+<h2 id="understand-what-cryptography-does-not-prove">Understand what cryptography does not prove</h2>
+
+<p>The <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C verification roles</a> distinguish proof checking from policy decisions. A signature does not independently establish a recipient’s identity, accreditation or the quality of the assessment.</p>
+
+<p><img class="img-fluid r-16" src="/img/blog/streamlining-credential-management.png" alt="Ways to streamline credential management" style="display: block; margin: 0 auto;" /></p>
+
+<h2 id="design-controls-before-issuing">Design controls before issuing</h2>
+
+<p>In the <a href="/platform-overview">institutional lifecycle</a>, separate award approval from issuance permissions. Define correction/status procedures, escalation for suspicious records and continuity for issuer resources. Ask which controls are actually included before promising automation.</p>
+
+<p><img class="img-fluid r-16" src="/img/blog/digital-credentialing-strategies.png" alt="Strategies of digital credentialing" style="display: block; margin: 0 auto;" /></p>
+
+<h2 id="check-the-credential-format">Check the credential format</h2>
+
+<p>For <a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges achievement credentials</a>, inspect issuer, achievement and criteria rather than inferring competence from the image. Compatibility with a receiving system should be tested.</p>
+
+<h2 id="handle-verification-exceptions">Handle verification exceptions</h2>
+
+<p>If a credential’s proof validates but the awarding institution cannot be confirmed, do not mark the whole application verified. Escalate the authority question. If a status resource is unavailable, record that uncertainty rather than treating it as valid or revoked.</p>
+
+<h2 id="train-reviewers-on-evidence-not-slogans">Train reviewers on evidence, not slogans</h2>
+
+<p>Keep an agreed procedure and audit trail for manual decisions. No system can guarantee the absence of fraud; the purpose is to reduce avoidable risk and make unresolved questions explicit.</p>
+
+<h2 id="plan-your-next-step">Plan your next step</h2>
+
+<p>Discuss the actual award, evidence and implementation requirements with your institution. <a href="https://info.certifyme.online/request-demo">Request an institutional demo</a>.</p>
+
+:ET

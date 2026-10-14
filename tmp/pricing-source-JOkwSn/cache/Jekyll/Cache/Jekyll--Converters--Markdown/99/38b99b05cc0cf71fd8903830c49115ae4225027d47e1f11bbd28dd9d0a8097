@@ -1,0 +1,81 @@
+I"¨<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://www.certifyme.online/api/#techarticle",
+  "headline": "CertifyMe REST API for Digital Credential Automation",
+  "description": "REST API reference for awarding, retrieving, editing, and deleting verifiable digital credentials and badges programmatically via CertifyMe.",
+  "url": "https://www.certifyme.online/api/",
+  "author": {
+    "@type": "Organization",
+    "name": "CertifyMe",
+    "url": "https://www.certifyme.online"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CertifyMe",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.certifyme.online/assets4/images/Logo/CertifyMe-LOGO.jpg"
+    }
+  },
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "CertifyMe API",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "url": "https://my.certifyme.online/api/v2/",
+    "documentation": "https://cme-api-v2.readme.io",
+    "featureList": [
+      "Award digital credentials via REST API",
+      "Retrieve credential details by ID",
+      "Edit and revoke credentials programmatically",
+      "Create and manage credential templates via API",
+      "Retrieve credential analytics data via API",
+      "Organise credentials into folders via Project Manager API",
+      "Bulk credential issuance support",
+      "JSON request and response format",
+      "OpenAPI-compatible documentation"
+    ]
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the CertifyMe API base URL?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The base URL for all CertifyMe API v2 endpoints is https://my.certifyme.online/api/v2/. Interactive API reference documentation is at https://cme-api-v2.readme.io."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which API tier do I need to award credentials?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Awarding, retrieving, editing, and deleting credentials is part of the Credential API (Basic tier), included in all CertifyMe plans."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does CertifyMe support bulk credential issuance via API?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Credential API supports bulk issuance workflows. CertifyMe also integrates with Zapier, Make, and major LMS platforms for no-code bulk issuance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where can I find the full API reference?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The complete interactive API reference is at https://cme-api-v2.readme.io. An OpenAPI-compatible index for AI agents is at https://cme-api-v2.readme.io/llms.txt."
+        }
+      }
+    ]
+  }
+}
+</script>
+
+:ET

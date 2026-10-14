@@ -1,0 +1,63 @@
+I"w<p>Digital certificates in network security usually mean <strong>public-key certificates</strong>, not course-completion certificates. A public-key certificate binds a public key to a subject under an issuer’s policy. An achievement credential records what an institution says a learner earned. They solve different problems, even when both use digital signatures.</p>
+
+<h2 id="what-a-public-key-certificate-contains">What a public-key certificate contains</h2>
+
+<p>An X.509 certificate includes a subject, issuer, public key, serial number, validity interval and extensions such as permitted key uses and subject alternative names. The issuing certificate authority signs it. A relying system checks the signature chain, hostname or intended identity, validity, permitted use and applicable revocation information against its trust policy. A valid certificate does not mean the website’s content is honest or the software is harmless.</p>
+
+<h2 id="common-certificate-types">Common certificate types</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Institutional use</th>
+      <th>Important boundary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TLS server certificate</td>
+      <td>Authenticate the server and support HTTPS transport security</td>
+      <td>Does not prove a course award or the truth of a website</td>
+    </tr>
+    <tr>
+      <td>Client certificate</td>
+      <td>Authenticate a device or account to a configured service</td>
+      <td>Access permissions and identity enrollment remain separate</td>
+    </tr>
+    <tr>
+      <td>Code-signing certificate</td>
+      <td>Verify publisher signature and detect changes to signed software</td>
+      <td>Signed software can still contain vulnerabilities or malware</td>
+    </tr>
+    <tr>
+      <td>S/MIME certificate</td>
+      <td>Support email signing or encryption in compatible clients</td>
+      <td>Key management and recipient compatibility are required</td>
+    </tr>
+    <tr>
+      <td>CA certificate</td>
+      <td>Establish a root or intermediate in a trust chain</td>
+      <td>Trust is determined by the relying system, not by the certificate alone</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A digital signature proves integrity relative to a signing key. A certificate supplies a policy-governed binding for that key. Signing is not the same as encrypting: modern TLS negotiates session keys; it does not simply encrypt every message with the certificate’s public key. See <a href="https://www.rfc-editor.org/rfc/rfc5280">RFC 5280’s certificate profile</a> and the <a href="https://www.rfc-editor.org/rfc/rfc8446">TLS 1.3 protocol</a>.</p>
+
+<h2 id="dv-ov-and-ev-are-validation-categoriesnot-encryption-strengths">DV, OV and EV are validation categories—not encryption strengths</h2>
+
+<p>Domain Validation checks domain control. Organization Validation additionally checks organizational information. Extended Validation applies a more extensive identity-validation policy. With comparable keys and TLS configuration, these categories do not provide progressively stronger traffic encryption. Do not choose EV on the promise of a green address bar or treat any browser indicator as proof that a business is trustworthy. Use maintained browsers, endpoint protection, updates and safe download practices regardless of certificate type.</p>
+
+<p>“Class 1/2/3” is not a universal classification for modern public-web TLS. Where a jurisdiction or signing provider uses classes, request its current certificate policy and identity-assurance requirements rather than assuming a global ladder.</p>
+
+<h2 id="renewal-requirements-have-changed">Renewal requirements have changed</h2>
+
+<p>The <a href="https://cabforum.org/working-groups/server/baseline-requirements/">CA/Browser Forum TLS Baseline Requirements</a> limit newly issued publicly trusted TLS subscriber certificates to <strong>200 days from 15 March 2026</strong>, with further scheduled reductions. This is not a rule for every private PKI or every certificate purpose. IT teams should inventory endpoints, automate renewal where supported, monitor failures, protect private keys and test revocation procedures. Expiration does not undo damage from a compromised key.</p>
+
+<h2 id="who-issues-which-certificate">Who issues which certificate?</h2>
+
+<p>Public TLS CAs such as Let’s Encrypt and DigiCert issue under browser-trust policies. An organization may operate a private CA for its own trusted systems. <strong>CertifyMe is an achievement-credential platform, not a public TLS certificate authority.</strong> Evaluate PKI tooling with IT/security; evaluate <a href="/platform-overview">digital credential infrastructure</a> with the academic or programme owner. For issuer, holder and verifier responsibilities in achievement records, read the <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C Verifiable Credentials guide</a>.</p>
+
+<p>A university may need both: HTTPS for its credential pages and governed, verifiable awards for learners. One does not substitute for the other. <a href="https://info.certifyme.online/request-demo">Discuss an achievement-credential workflow</a> only after defining what the institution is authorized to recognize.</p>
+:ET

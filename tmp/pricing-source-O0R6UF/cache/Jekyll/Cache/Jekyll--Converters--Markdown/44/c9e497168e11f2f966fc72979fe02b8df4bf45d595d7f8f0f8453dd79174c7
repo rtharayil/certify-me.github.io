@@ -1,0 +1,221 @@
+I"(<p>Custom credential attributes let an issuing workflow supply programme-specific values. Match field names and permitted values to the current template and API contract before issuing records.</p>
+
+<h2 id="validate-the-data-contract-before-a-bulk-request">Validate the data contract before a bulk request</h2>
+
+<p>The existing examples below describe the documented Custom. field convention. Check the exact field name, type, requiredness and current endpoint documentation; do not infer support for a new field or authentication protocol from an example.</p>
+
+<h2 id="keep-assessment-and-transport-responsibilities-separate">Keep assessment and transport responsibilities separate</h2>
+
+<p>The institution decides who earned the achievement and approves the source data. The API transports an issuance request; it does not independently validate the learner’s competence or identity. Place these responsibilities within the <a href="/platform-overview">institutional issuance lifecycle</a>.</p>
+
+<h2 id="test-failure-and-correction-paths">Test failure and correction paths</h2>
+
+<p>Test a missing required value, an unexpected field, duplicate requests and a correction in a safe test programme. Agree retry and reconciliation behavior with the current API documentation; this guide does not promise automatic idempotency or a particular integration.</p>
+
+<h2 id="check-the-record-after-issuance">Check the record after issuance</h2>
+
+<p>Inspect the returned credential against the approved input and <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">credential proof and status checks</a>. Where the programme uses <a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges achievement fields</a>, distinguish the credential’s standard fields from institution-specific attributes. Never place secrets or unnecessary personal data in a public credential.</p>
+
+<h2 id="existing-operational-reference">Existing operational reference</h2>
+
+<h2 id="handling-custom-attributes-in-templates">Handling Custom Attributes in Templates</h2>
+
+<p>CertifyMe allows you to dynamically insert custom data fields into your digital credentials using <strong>custom attributes</strong>. This guide outlines how to use the CertifyMe API to assign these attributes during the credential issuance process.</p>
+
+<blockquote>
+  <p><strong>Audience:</strong> Developers integrating CertifyMe’s credential issuance API into their systems, particularly those using custom fields in templates.</p>
+</blockquote>
+
+<p><br /></p>
+
+<h2 id="overview">Overview</h2>
+
+<p>Custom attributes are dynamic data fields defined within a <strong>template</strong> on the CertifyMe platform. These can include information such as <code class="highlighter-rouge">"eventdate"</code>, <code class="highlighter-rouge">"Credits"</code>, <code class="highlighter-rouge">"CourseName"</code>, and more. When issuing a credential via API, you must provide these custom values prefixed with <code class="highlighter-rouge">Custom.</code> followed by the <strong>exact field name</strong> used in the template.</p>
+
+<p><br /></p>
+
+<h2 id="endpoint-information">Endpoint Information</h2>
+
+<p><strong>URL:</strong><br />
+<code class="highlighter-rouge">https://eu2.certifyme.org/api/v2/credential</code></p>
+
+<p><strong>Method:</strong><br />
+<code class="highlighter-rouge">POST</code></p>
+
+<p><strong>Headers:</strong></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Authorization: &lt;API Token&gt;
+accept: application/json
+content-type: application/json
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="request-body-parameters">Request Body Parameters</h2>
+<style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px 12px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+</style>
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>name</code></td>
+      <td>string</td>
+      <td>Recipient's full name.</td>
+    </tr>
+    <tr>
+      <td><code>email</code></td>
+      <td>string</td>
+      <td>Recipient's email address.</td>
+    </tr>
+    <tr>
+      <td><code>template_ID</code></td>
+      <td>string</td>
+      <td>ID of the template to be used (retrieved from the CertifyMe dashboard).</td>
+    </tr>
+    <tr>
+      <td><code>text</code></td>
+      <td>string</td>
+      <td>Additional text shown on certificate (e.g., designation).</td>
+    </tr>
+    <tr>
+      <td><code>verify_mode</code></td>
+      <td>string</td>
+      <td>Verification type (e.g., <code>SSN</code>, <code>Code</code>, <code>None</code>).</td>
+    </tr>
+    <tr>
+      <td><code>verify_code</code></td>
+      <td>string</td>
+      <td>Verification code if applicable.</td>
+    </tr>
+    <tr>
+      <td><code>Custom.&lt;Field&gt;</code></td>
+      <td>string</td>
+      <td>Custom attributes defined in the template (see examples below).</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>Custom field names <strong>must exactly match</strong> those defined in your CertifyMe template (case-sensitive).<br />
+Prefix <code class="highlighter-rouge">Custom.</code> is <strong>mandatory</strong> for all custom fields.</p>
+</blockquote>
+
+<p><br /></p>
+
+<h2 id="custom-attribute-syntax">Custom Attribute Syntax</h2>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"Custom.&lt;FieldName&gt;"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;Value&gt;"</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Where:</p>
+<ul>
+  <li><code class="highlighter-rouge">&lt;FieldName&gt;</code> is the exact name of the custom field as defined in the template.</li>
+  <li><code class="highlighter-rouge">&lt;Value&gt;</code> is the value you’d like to assign to that field.</li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="example-requests">Example Requests</h2>
+
+<h3 id="1-single-custom-attribute-eventdate">1. Single Custom Attribute: <code class="highlighter-rouge">eventdate</code></h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">--request</span> POST <span class="se">\</span>
+  <span class="nt">--url</span> https://eu2.certifyme.org/api/v2/credential <span class="se">\</span>
+  <span class="nt">--header</span> <span class="s1">'Authorization: &lt;API Token&gt;'</span> <span class="se">\</span>
+  <span class="nt">--header</span> <span class="s1">'accept: application/json'</span> <span class="se">\</span>
+  <span class="nt">--header</span> <span class="s1">'content-type: application/json'</span> <span class="se">\</span>
+  <span class="nt">--data</span> <span class="s1">'
+{
+  "name": "Anju",
+  "template_ID": "12",
+  "email": "anju@certifyme.cc",
+  "text": "Manager, CertifyMe",
+  "verify_mode": "SSN",
+  "verify_code": "123456",
+  "Custom.eventdate": "29th April"
+}'</span>
+</code></pre></div></div>
+
+<h3 id="2-multiple-custom-attributes-eventdate-credits">2. Multiple Custom Attributes: <code class="highlighter-rouge">eventdate</code>, <code class="highlighter-rouge">Credits</code></h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">--request</span> POST <span class="se">\</span>
+  <span class="nt">--url</span> https://eu2.certifyme.org/api/v2/credential <span class="se">\</span>
+  <span class="nt">--header</span> <span class="s1">'Authorization: &lt;API Token&gt;'</span> <span class="se">\</span>
+  <span class="nt">--header</span> <span class="s1">'accept: application/json'</span> <span class="se">\</span>
+  <span class="nt">--header</span> <span class="s1">'content-type: application/json'</span> <span class="se">\</span>
+  <span class="nt">--data</span> <span class="s1">'
+{
+  "name": "Anju",
+  "template_ID": "12",
+  "email": "anju@certifyme.cc",
+  "text": "Manager, CertifyMe",
+  "verify_mode": "SSN",
+  "verify_code": "123456",
+  "Custom.eventdate": "29th April",
+  "Custom.Credits": "100"
+}'</span>
+</code></pre></div></div>
+
+<h3 id="3-extended-example-with-more-custom-fields">3. Extended Example with More Custom Fields</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">--request</span> POST <span class="se">\</span>
+  <span class="nt">--url</span> https://eu2.certifyme.org/api/v2/credential <span class="se">\</span>
+  <span class="nt">--header</span> <span class="s1">'Authorization: &lt;API Token&gt;'</span> <span class="se">\</span>
+  <span class="nt">--header</span> <span class="s1">'accept: application/json'</span> <span class="se">\</span>
+  <span class="nt">--header</span> <span class="s1">'content-type: application/json'</span> <span class="se">\</span>
+  <span class="nt">--data</span> <span class="s1">'
+{
+  "name": "Anju",
+  "template_ID": "12",
+  "email": "anju@certifyme.cc",
+  "text": "Manager, CertifyMe",
+  "verify_mode": "SSN",
+  "verify_code": "123456",
+  "Custom.eventdate": "29th April",
+  "Custom.Credits": "100",
+  "Custom.CourseName": "Advanced Leadership"
+}'</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="tips-for-success">Tips for Success</h2>
+
+<ul>
+  <li>Custom field names must be an <strong>exact match</strong> (case-sensitive).</li>
+  <li>Prefix <code class="highlighter-rouge">Custom.</code> is <strong>mandatory</strong>.</li>
+  <li>You may include <strong>as many custom fields</strong> as are defined in the template.</li>
+  <li>Use the <strong>API playground</strong> to generate and validate request payloads.</li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="support">Support</h2>
+
+<p>For support or questions, please contact <strong>support@certifyme.cc</strong>.</p>
+
+<h2 id="plan-your-next-step">Plan your next step</h2>
+
+<p>Discuss the actual award, evidence and implementation requirements with your institution. <a href="https://info.certifyme.online/request-demo">Request an institutional demo</a>.</p>
+
+:ET

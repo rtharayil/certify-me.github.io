@@ -1,0 +1,233 @@
+I"�[<div id="el-page">
+  <section class="el-hero" aria-labelledby="el-title">
+  <div class="el-wrap">
+    <div class="el-hero-grid">
+      <div class="el-hero-copy">
+        <div class="el-kicker">Credential infrastructure for learning at scale</div>
+        <h1 id="el-title">Turn Learning Programs Into Verifiable, Measurable Achievement</h1>
+        <p class="el-lead">CertifyMe gives large e-learning and learning organizations the infrastructure to issue trusted credentials, connect achievements to skills, build learner records and measure the impact of their programs.</p>
+        <div class="el-actions">
+          <a class="el-btn" href="https://info.certifyme.online/request-demo">Request a Platform Demo</a>
+          <a class="el-btn el-btn--outline" href="#el-how-it-works">See How It Works</a>
+        </div>
+        <p class="el-micro">Built for LMS-integrated learning programs at scale.</p>
+      </div>
+      <figure class="el-hero-art">
+        <a href="https://credential.certifyme.online/learningPaths/awardee/269d680010495" target="_blank" rel="noopener noreferrer" aria-label="Open the CertifyMe learning path sample">
+          <img src="/assets4/images/elearning-solution/learning-path.webp" width="1292" height="454" alt="CertifyMe learning path showing three program milestones with completion progress and credential awards" />
+        </a>
+        <figcaption><span>Learning paths connect milestones to achievements.</span><a href="https://credential.certifyme.online/learningPaths/awardee/269d680010495" target="_blank" rel="noopener noreferrer">View the learning path sample ↗</a></figcaption>
+      </figure>
+    </div>
+    <div class="el-flow" aria-label="From an existing learning management system to learner value">
+      <div class="el-flow-step"><b>Your LMS</b><strong>Learning activity</strong><span>Courses · Assessments · Completion · Learner data</span></div>
+      <div class="el-flow-step"><b>CertifyMe</b><strong>Credential engine</strong><span>Achievement rules · Issuance · Program workflow</span></div>
+      <div class="el-flow-step"><b>Verified achievement</b><strong>Credential &amp; skills</strong><span>Evidence · Verification · Learner record</span></div>
+      <div class="el-flow-step"><b>Learner</b><strong>Value that travels</strong><span>Share · Portfolio · Skill Passport · Career context</span></div>
+    </div>
+  </div>
+</section>
+
+  <section class="el-section el-big-idea" id="el-how-it-works" aria-labelledby="el-big-idea-title">
+  <div class="el-wrap el-two-col">
+    <div>
+      <div class="el-kicker">From completion to capability</div>
+      <h2 id="el-big-idea-title">Your LMS Knows What Learners Completed. CertifyMe Makes That Achievement Valuable.</h2>
+      <p><strong>CertifyMe turns learning completion into verified, measurable achievement.</strong></p>
+      <p>An LMS is excellent at managing learning. But learning completion is not the same as a portable, trusted achievement. CertifyMe adds the credential and achievement infrastructure around the learning platform—so a completed course can become meaningful evidence of what a learner knows and can do.</p>
+      <p>The result is a connected path from course activity to an achievement that can be verified, understood and used.</p>
+    </div>
+    <div class="el-meaning-list" aria-label="The questions answered along the achievement journey">
+      <div class="el-meaning"><span class="el-meaning-no">01</span><div><strong>LMS</strong><small>Course completed</small></div><span class="el-meaning-arrow">↓</span></div>
+      <div class="el-meaning"><span class="el-meaning-no">02</span><div><strong>CertifyMe</strong><small>What was achieved?</small></div><span class="el-meaning-arrow">↓</span></div>
+      <div class="el-meaning"><span class="el-meaning-no">03</span><div><strong>Credential</strong><small>Who issued it?</small></div><span class="el-meaning-arrow">↓</span></div>
+      <div class="el-meaning"><span class="el-meaning-no">04</span><div><strong>Verification</strong><small>Can it be trusted?</small></div><span class="el-meaning-arrow">↓</span></div>
+      <div class="el-meaning"><span class="el-meaning-no">05</span><div><strong>Skills</strong><small>What capability does it represent?</small></div><span class="el-meaning-arrow">↓</span></div>
+      <div class="el-meaning"><span class="el-meaning-no">06</span><div><strong>Learner record</strong><small>What else has this learner achieved?</small></div><span class="el-meaning-arrow">↓</span></div>
+      <div class="el-meaning"><span class="el-meaning-no">07</span><div><strong>Workforce</strong><small>Where can those capabilities create value?</small></div><span class="el-meaning-arrow"></span></div>
+    </div>
+  </div>
+</section>
+
+  <section class="el-section el-architecture" aria-labelledby="el-architecture-title">
+  <div class="el-wrap">
+    <div class="el-arch-head">
+      <div>
+        <div class="el-kicker">A connected architecture</div>
+        <h2 id="el-architecture-title">One Learning Achievement. Six Layers of Value.</h2>
+        <p class="el-lead">A single achievement becomes more useful at every layer—from an accessible credential to the workforce context that helps programs show their relevance.</p>
+      </div>
+      <div class="el-arch-spine" aria-hidden="true">Achievement infrastructure · 01—06</div>
+    </div>
+    <ol class="el-architecture-rail" aria-label="Follow one achievement through the six layers">
+      <li><a href="#el-layer-01"><span>01</span>Access &amp; sharing</a></li>
+      <li><a href="#el-layer-02"><span>02</span>Standards</a></li>
+      <li><a href="#el-layer-03"><span>03</span>Verification &amp; trust</a></li>
+      <li><a href="#el-layer-04"><span>04</span>Skills alignment</a></li>
+      <li><a href="#el-layer-05"><span>05</span>Learner record</a></li>
+      <li><a href="#el-layer-06"><span>06</span>Workforce context</a></li>
+    </ol>
+    <article class="el-layer" id="el-layer-01">
+      <div class="el-layer-num">01</div><div><div class="el-layer-title">ACCESS &amp; SHARING</div><h3>Make every achievement accessible, branded and ready to share.</h3></div>
+      <div class="el-detail"><p>Give each learner a credential they can access, present and share beyond the course environment.</p><div class="el-tags"><span class="el-tag">Digital credentials</span><span class="el-tag">Branded credential pages</span><span class="el-tag">Unique URLs</span><span class="el-tag">QR access</span><span class="el-tag">Credential PDFs</span><span class="el-tag">Learner sharing</span><span class="el-tag">Custom domains</span><span class="el-tag">White-label experience</span></div></div>
+    </article>
+    <article class="el-layer" id="el-layer-02">
+      <div class="el-layer-num">02</div><div><div class="el-layer-title">STANDARDS &amp; INTEROPERABILITY</div><h3>Make credentials portable beyond your learning platform.</h3></div>
+      <div class="el-detail"><p>Open Badges 3.0, W3C Verifiable Credentials and CLR support compatible systems in consuming and verifying credential data. Integration scope is agreed for each environment.</p><div class="el-tags"><span class="el-tag">Open Badges 3.0</span><span class="el-tag">W3C Verifiable Credentials</span><span class="el-tag">CLR</span><span class="el-tag">LMS integrations</span><span class="el-tag">APIs</span><span class="el-tag">Webhook / event workflows</span></div><p><a href="/integrations">Explore integrations</a> · <a href="/api/">Explore API options</a></p></div>
+    </article>
+    <article class="el-layer" id="el-layer-03">
+      <div class="el-layer-num">03</div><div><div class="el-layer-title">VERIFICATION &amp; TRUST</div><h3>Make achievements independently verifiable.</h3></div>
+      <div class="el-detail"><p>Keep issuer identity, credential integrity and credential status connected, with lifecycle controls configured for each program. Issuer trust is distinct from verifying a recipient’s identity.</p><div class="el-tags"><span class="el-tag">Issuer identity</span><span class="el-tag">Credential integrity</span><span class="el-tag">Verification pages</span><span class="el-tag">Credential status</span><span class="el-tag">Lifecycle management</span><span class="el-tag">Revocation where supported</span><span class="el-tag">Cryptographic verification mechanisms</span></div><p><a href="/certificate-verification">Explore credential verification</a></p></div>
+    </article>
+    <article class="el-layer" id="el-layer-04">
+      <div class="el-layer-num">04</div><div><div class="el-layer-title">SKILL TAXONOMY ALIGNMENT</div><h3>Turn course completion into structured capability.</h3></div>
+      <div class="el-detail"><p>Programs define learning outcomes and review how they map to ESCO, O*NET or their own frameworks. The institution determines what each achievement represents.</p><div class="el-tags"><span class="el-tag">ESCO</span><span class="el-tag">O*NET</span><span class="el-tag">Institution-defined frameworks</span><span class="el-tag">Custom competency models</span></div><div class="el-inline-flow" aria-label="Course leads to learning outcome, skill, taxonomy and credential"><span>Course</span><span>Learning outcome</span><span>Skill</span><span>Taxonomy</span><span>Credential</span></div><p><a href="/skills-taxonomy-mapping">Explore skills taxonomy mapping</a></p></div>
+    </article>
+    <article class="el-layer" id="el-layer-05">
+      <div class="el-layer-num">05</div><div><div class="el-layer-title">COMPREHENSIVE LEARNER RECORD</div><h3>Connect achievements across the learner journey.</h3></div>
+      <div class="el-detail"><p>Retain provenance as records bring learning evidence together across programs and over time.</p><div class="el-tags"><span class="el-tag">Credentials</span><span class="el-tag">Certificates</span><span class="el-tag">Badges</span><span class="el-tag">Skills</span><span class="el-tag">Competencies</span><span class="el-tag">Projects</span><span class="el-tag">Experiences</span><span class="el-tag">Assessments</span><span class="el-tag">Professional learning</span></div><div class="el-inline-flow" aria-label="One course can lead to one credential; multiple credentials build a learner record"><span>One course</span><span>One credential</span><span>Multiple credentials</span><span>Learner record</span></div><p><a href="/comprehensive-learner-record">Explore Comprehensive Learner Record</a></p></div>
+    </article>
+    <article class="el-layer" id="el-layer-06">
+      <div class="el-layer-num">06</div><div><div class="el-layer-title">WORKFORCE INTELLIGENCE &amp; OPPORTUNITY</div><h3>Connect verified skills to real-world context.</h3></div>
+      <div class="el-detail"><p>Connect verified skills with occupations, employers, jobs and opportunity context—helping learning organizations demonstrate program relevance.</p><div class="el-inline-flow" aria-label="Verified skills connect to occupations, employers, jobs and opportunity"><span>Verified skills</span><span>Occupation</span><span>Employer</span><span>Job</span><span>Opportunity</span></div><p><a href="/workforce-intelligence">Explore workforce intelligence</a> · <a href="/solutions/skill-passport">Explore the Skill Passport</a></p></div>
+    </article>
+  </div>
+</section>
+
+  <section class="el-section el-role-section" aria-labelledby="el-program-title">
+  <div class="el-wrap el-role">
+    <div><div class="el-kicker">For program managers</div><h2 id="el-program-title">For Program Managers: Turn Credentialing Into a Program Strategy</h2><p>Coordinate credential pathways across multiple programs, connect course completions to the right award and build learner engagement into the program experience.</p><p>Give every program a coherent credential strategy—with branded experiences, adoption visibility and outcome measurement tied to your learning goals.</p></div>
+    <div>
+      <div class="el-role-art" aria-label="Program to credential strategy to learner outcome">
+        <div class="el-role-column"><b>PROGRAM</b><span>Courses</span><span>Assessments</span><span>Learning paths</span></div>
+        <div class="el-role-column"><b>CREDENTIAL STRATEGY</b><span>Certificate</span><span>Badge</span><span>Micro-credential</span><span>Milestone</span></div>
+        <div class="el-role-column"><b>LEARNER OUTCOME</b><span>Achievement</span><span>Skills</span><span>Record</span><span>Opportunity</span></div>
+      </div>
+      <div class="el-role-list"><span>Multiple programs</span><span>Completion-to-credential workflows</span><span>Learner engagement</span><span>Credential adoption</span><span>Program analytics</span><span>Branded experiences</span><span>Outcome measurement</span><span><a href="/blog/learning-paths-and-specializations-with-certifyme">Learning pathways</a></span></div>
+    </div>
+  </div>
+</section>
+
+  <section class="el-section el-manager" aria-labelledby="el-credential-title">
+  <div class="el-wrap el-manager-grid">
+    <div>
+      <div class="el-kicker">For credential managers</div>
+      <h2 id="el-credential-title">For Credential Managers: Govern Every Credential at Scale</h2>
+      <p class="el-lead">Manage thousands of credentials without turning credential operations into a manual process.</p>
+      <p>Bring templates, issuer controls and role-based administration into a governed workflow. Use approval processes, bulk or API issuance, lifecycle controls, verification and reporting to manage awards across programs with consistent branding.</p>
+      <div class="el-role-list"><span>Credential templates</span><span>Issuer controls</span><span>Role-based administration</span><span>Approval workflows</span><span>Bulk issuance</span><span>API issuance</span><span>Credential lifecycle</span><span>Verification &amp; status</span><span>Revocation where supported</span><span>Branding</span><span>Reporting</span></div>
+      <p><a href="/Admin-Roles">Administration &amp; roles</a> · <a href="/whitelabel-credentials">Credential branding</a></p>
+      <blockquote class="el-quote">“As a training provider, we appreciate the user-friendly interface and customizable digital badging options, which our students enthusiastically showcase on their social media profiles.”<cite>Training provider</cite></blockquote>
+    </div>
+    <figure class="el-product-shot">
+      <a href="/assets4/images/Glossary/credential-templates-on-home-page.png" target="_blank" rel="noopener noreferrer" aria-label="View the credential award screen at full size"><img src="/assets4/images/Glossary/credential-templates-on-home-page.png" width="579" height="237" loading="lazy" alt="CertifyMe award screen showing a credential template, bulk award and quick award options" /></a>
+      <figcaption>Credential award operations: quick award and bulk award from a selected template.</figcaption>
+    </figure>
+  </div>
+</section>
+
+  <section class="el-section el-director" aria-labelledby="el-director-title">
+  <div class="el-wrap">
+    <div class="el-kicker">For learning directors</div>
+    <h2 id="el-director-title">For Learning Directors: Prove the Value of Your Programs</h2>
+    <p class="el-lead">See beyond course completion. Connect credential adoption, learner engagement, sharing, verification, skills and learning pathways to a clearer view of program performance and workforce relevance.</p>
+    <div class="el-outcome-rail" aria-label="Learning activity leads through achievement, credentials and skills to learner outcomes and program intelligence">
+      <div><span>01</span>Learning Activity</div><div><span>02</span>Achievement</div><div><span>03</span>Credential</div><div><span>04</span>Skills</div><div><span>05</span>Learner Outcomes</div><div><span>06</span>Program Intelligence</div>
+    </div>
+    <p class="el-director-note">Credential analytics measures credential engagement. Program outcomes are understood alongside your organization’s learning and outcome evidence—making CertifyMe an outcome layer for learning, not simply a certificate generator.</p>
+    <p><a href="/credential-analytics">Explore credential analytics</a> · <a href="/blog/elearning-case">Read an e-learning organization story</a></p>
+  </div>
+</section>
+
+  <section class="el-section el-integration" aria-labelledby="el-integration-title">
+  <div class="el-wrap">
+    <div class="el-integration-intro">
+      <div class="el-kicker">Works around the learning you already run</div>
+      <h2 id="el-integration-title">Keep Your LMS. Add a Credential Intelligence Layer.</h2>
+      <p class="el-lead">Keep your courses, learners and learning platform. CertifyMe adds the credential and achievement layer around your existing environment—without asking you to replace your LMS.</p>
+    </div>
+    <ul class="el-sources" aria-label="Learning environments that can be scoped for integration">
+      <li>Canvas</li><li>Moodle</li><li>Blackboard</li><li>Other LMS</li><li>Internal LMS</li><li>Training Platform</li><li>Assessment Platform</li>
+    </ul>
+    <div class="el-int-flow" aria-label="Learning environments connect through agreed integration scope to CertifyMe and deliver verified learner achievements">
+      <div class="el-int-arrow" aria-hidden="true"></div>
+      <div class="el-engine"><strong>CERTIFYME</strong><span>Credential Engine</span></div>
+      <div class="el-int-arrow" aria-hidden="true"></div>
+    </div>
+    <div class="el-output"><span>Credentials</span><span>Skills</span><span>Evidence</span><span>Verification</span><span>Learner record</span><span>Sharing</span><span>Skill Passport</span><span>Career context</span></div>
+    <p class="el-integration-note">Integration scope is agreed for each environment using available integrations, APIs and automation workflows. The right approach depends on your platform and program requirements.</p>
+    <p class="el-integration-note"><a href="/allIntegrations">Browse integrations</a> · <a href="/integrations">Integration options</a> · <a href="/api/">API</a> · <a href="https://www.youtube.com/watch?v=TJMwk6qIxSc" target="_blank" rel="noopener noreferrer">Watch the CertifyMe explainer</a></p>
+  </div>
+</section>
+
+  <section class="el-proof" aria-label="E-learning program story">
+  <div class="el-wrap el-proof-grid">
+    <div>
+      <div class="el-kicker">A program in practice</div>
+      <div class="el-stat"><strong>40,000+</strong><span>learners in a European workforce learning organization</span></div>
+      <p style="margin-top:14px"><strong>80,000+ digital credentials</strong> and approximately <strong>82% adoption</strong> across the relevant learner population.</p>
+    </div>
+    <div><p>See how an established learning organization connected its learner community with digital credentials at program scale.</p><p><a href="/blog/elearning-case">Read the e-learning case story →</a></p></div>
+  </div>
+</section>
+
+  <section class="el-section" id="faq" aria-labelledby="el-faq-title">
+  <div class="el-wrap">
+    <div class="el-kicker">Frequently asked</div>
+    <h2 id="el-faq-title">Questions from learning teams</h2>
+    
+      <article class="el-faq">
+        <h3>How does CertifyMe integrate with eLearning platforms?</h3>
+        <p>Keep your existing LMS as the learning system. CertifyMe connects credential issuance to approved completion or assessment data through REST API, available integrations and automation workflows. The connection method, data mapping, award rules and event or webhook handling are agreed for each environment. Explore the integration directory and API documentation with your LMS administrators.</p>
+      </article>
+    
+      <article class="el-faq">
+        <h3>Can credentials be issued automatically when a course is completed?</h3>
+        <p>Yes. A configured completion-to-credential workflow can use approved LMS or assessment data to trigger issuance. Your program sets eligibility, evidence requirements, templates and any approval steps. CertifyMe then provides the credential and its access and verification experience, without requiring staff to prepare each certificate individually.</p>
+      </article>
+    
+      <article class="el-faq">
+        <h3>Do eLearning credentials need to be Open Badges compliant?</h3>
+        <p>Choose the credential format that fits your program and receiving systems. Open Badges 3.0 and W3C Verifiable Credentials support structured achievement data and verification in compatible ecosystems. A branded certificate PDF is an access format; standards-based credential data carries structured achievement evidence beyond that visual representation.</p>
+      </article>
+    
+      <article class="el-faq">
+        <h3>How do we govern credentials across multiple programs and teams?</h3>
+        <p>Use reusable templates, issuer controls, role-based administration and defined approval workflows to keep awards consistent across programs and business units. Combine bulk or API issuance with credential status, lifecycle management and reporting. Your organization determines who can approve, issue, maintain and revoke credentials within its configured lifecycle.</p>
+      </article>
+    
+      <article class="el-faq">
+        <h3>Does CertifyMe automatically turn course completion into verified skills?</h3>
+        <p>Your program defines what an achievement represents. Learning outcomes and assessment evidence inform reviewed skill relationships using ESCO, O*NET, organization-defined frameworks or custom competency models. Those relationships can connect credentials with skills and learner records; course completion alone does not independently demonstrate every claimed capability.</p>
+      </article>
+    
+      <article class="el-faq">
+        <h3>What can Learning Directors measure?</h3>
+        <p>Credential analytics helps teams understand issuance and learner engagement, including credential views, downloads and sharing. Combine those signals with your organization's learning, assessment and outcome evidence to evaluate program performance, pathways, skills coverage and workforce relevance.</p>
+      </article>
+    
+      <article class="el-faq">
+        <h3>Can achievements from different programs become one learner record?</h3>
+        <p>A Comprehensive Learner Record can connect credentials, certificates, badges, skills, competencies, projects, experiences, assessments and professional learning across a learner's journey. Your organization defines the accepted sources and governance while retaining issuer provenance and the context of each achievement.</p>
+      </article>
+    
+      <article class="el-faq">
+        <h3>How can we assess enterprise security and branded experiences?</h3>
+        <p>Review role-based access, enterprise SSO and MFA, data handling and security requirements with your IT and governance teams. White-label credential pages, custom domains and reusable templates support consistent program branding. Agree integration scope, lifecycle responsibilities and the applicable service configuration before rollout.</p>
+      </article>
+    
+  </div>
+</section>
+
+  <section class="el-final" aria-labelledby="el-final-title">
+  <div class="el-wrap">
+    <div class="el-kicker">Bring achievement into focus</div>
+    <h2 id="el-final-title">Build more value around the learning you already deliver.</h2>
+    <p>See how credential infrastructure can fit your programs, LMS environments and learner outcomes.</p>
+    <a class="el-btn" href="https://info.certifyme.online/request-demo">Request a Platform Demo</a>
+  </div>
+</section>
+
+</div>
+
+:ET

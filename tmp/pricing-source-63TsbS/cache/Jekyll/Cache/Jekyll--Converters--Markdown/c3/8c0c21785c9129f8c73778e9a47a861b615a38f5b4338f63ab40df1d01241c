@@ -1,0 +1,37 @@
+I"�<p>An Open Badge is a digital achievement credential that describes what was awarded, by whom and under which criteria. The badge image is its visual representation, not the whole record.</p>
+
+<h2 id="inspect-achievement-and-evidence">Inspect achievement and evidence</h2>
+
+<p>The achievement description should identify participation, completion or assessment. Criteria explain what was required; evidence references help a receiving team understand what supports the award, subject to privacy and access rules.</p>
+
+<p><img class="img-fluid r-16" src="/img/blog/certificate-information.png" alt="Information of certificates" style="display: block; margin: 0 auto;" /></p>
+
+<h2 id="know-which-version-is-being-discussed">Know which version is being discussed</h2>
+
+<p>The <a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges 3.0 guide</a> explains the achievement model and its relationship to verifiable credentials. Older implementations and receivers may support different versions; test compatibility instead of assuming universal acceptance.</p>
+
+<p><img class="img-fluid r-16" src="/img/blog/open-badge-contents.png" alt=" Contents of open badge" style="display: block; margin: 0 auto;" /></p>
+
+<h2 id="do-not-confuse-format-with-assessment-quality">Do not confuse format with assessment quality</h2>
+
+<p>A valid proof may establish record integrity and signing authority, but not whether the issuer used an appropriate assessment. Use <a href="/skills-taxonomy-mapping">institution-reviewed skills relationships</a> when interpreting capability statements.</p>
+
+<p><img class="img-fluid r-16" src="/img/blog/strong-profesional-presence.png" alt="Ways to build a strong professional presence" style="display: block; margin: 0 auto;" /></p>
+
+<h2 id="design-a-badge-with-an-explicit-purpose">Design a badge with an explicit purpose</h2>
+
+<p>For a fictional laboratory-safety milestone, describe the assessed task and the passing criterion rather than writing a broad claim of professional competence. Keep protected evidence in an authorized environment.</p>
+
+<h2 id="connect-achievements-over-time">Connect achievements over time</h2>
+
+<p>A <a href="/comprehensive-learner-record">Comprehensive Learner Record</a> can connect badges with other achievements and preserve provenance. Decide how the institution will handle corrections, status changes and evidence access.</p>
+
+<h2 id="use-documented-scope">Use documented scope</h2>
+
+<p>CertifyMe’s <a href="/blog/certifyme-open-badge-3-0-certified">issuer certification article</a> links the registry evidence. An issuer-role certification should not be expanded into a promise of every receiver’s compatibility or every unrelated security capability.</p>
+
+<h2 id="plan-your-next-step">Plan your next step</h2>
+
+<p>See how CertifyMe turns institution-approved achievements into structured, shareable badge records. <a href="https://info.certifyme.online/request-demo">Request an institutional demo</a>.</p>
+
+:ET

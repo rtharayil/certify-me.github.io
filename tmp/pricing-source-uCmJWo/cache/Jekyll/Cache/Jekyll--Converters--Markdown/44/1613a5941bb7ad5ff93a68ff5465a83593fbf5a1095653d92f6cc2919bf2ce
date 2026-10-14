@@ -1,0 +1,37 @@
+I"�<p>A digital badge can be useful evidence of an achievement, but its meaning depends on issuer authority, criteria and assessment. Several common badge claims confuse presentation with proof.</p>
+
+<h2 id="myth-every-badge-demonstrates-assessed-competence">Myth: every badge demonstrates assessed competence</h2>
+
+<p>Badges may recognize participation, completion or assessment. Read the achievement criteria before interpreting a skill claim. Institutions should make the distinction explicit rather than relying on the badge name.</p>
+
+<p><img class="img-fluid r-16" src="/img/blog/digital-badges-information.png" alt="Information about digital badges" style="display: block; margin: 0 auto;" /></p>
+
+<h2 id="myth-a-badge-image-is-an-open-badge">Myth: a badge image is an Open Badge</h2>
+
+<p>An image can represent an award without carrying a standards-based credential. <a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges 3.0</a> describes an achievement credential and associated data; confirm the actual issued format and supported proof mechanism.</p>
+
+<p><img class="img-fluid r-16" src="/img/blog/digital-badges-unveiling-layers-of-trust.png" alt="Unveiling of layers of trust of digital badges" style="display: block; margin: 0 auto;" /></p>
+
+<h2 id="myth-a-valid-signature-proves-everything">Myth: a valid signature proves everything</h2>
+
+<p>A valid proof can establish the integrity of signed data and signing authority. It does not independently establish the learner’s real-world identity, the quality of assessment or the issuer’s right to award a qualification. The <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C issuer–holder–verifier model</a> separates these responsibilities.</p>
+
+<p><img class="img-fluid r-16" src="/img/blog/digital-badge-trust-pyramid.png" alt="Trust pyramid of digital badges" style="display: block; margin: 0 auto;" /></p>
+
+<h2 id="myth-portability-removes-every-dependency">Myth: portability removes every dependency</h2>
+
+<p>Exportable standards can reduce reliance on one presentation interface. Verification may still depend on issuer keys and status resources, while receiving systems must support the format and proof mechanism. Confirm continuity arrangements before procurement.</p>
+
+<h2 id="myth-adding-skill-names-makes-a-record-credible">Myth: adding skill names makes a record credible</h2>
+
+<p>An institution must review the relationship between an assessed outcome and a taxonomy concept. Use <a href="/skills-taxonomy-mapping">reviewed skills relationships</a>, then preserve provenance when connecting achievements in a <a href="/comprehensive-learner-record">learner record</a>.</p>
+
+<h2 id="a-practical-badge-review">A practical badge review</h2>
+
+<p>Ask: who issued it, what was assessed, where the criteria are, what evidence is available, whether proof/status checks succeed, and how the result will be used. For a rollout, connect the answer to the <a href="/platform-overview">governed credential lifecycle</a>, not only a design tool.</p>
+
+<h2 id="plan-your-next-step">Plan your next step</h2>
+
+<p>Discuss the actual award, evidence and implementation requirements with your institution. <a href="https://info.certifyme.online/request-demo">Request an institutional demo</a>.</p>
+
+:ET

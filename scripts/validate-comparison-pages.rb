@@ -4,9 +4,12 @@
 require "json"
 require "open3"
 require "pathname"
+require "tmpdir"
+require "fileutils"
 
 ROOT = Pathname.new(__dir__).join("..").realpath
-SITE_DIR = ROOT.join("_site")
+SITE_DIR = Pathname.new(Dir.mktmpdir("comparison-pages-"))
+at_exit { FileUtils.remove_entry(SITE_DIR.to_s) if SITE_DIR.exist? }
 CANONICAL_ORIGIN = "https://www.certifyme.online"
 REQUIRED_RESOURCE_LINKS = [
   "/digital-credential-maturity/",

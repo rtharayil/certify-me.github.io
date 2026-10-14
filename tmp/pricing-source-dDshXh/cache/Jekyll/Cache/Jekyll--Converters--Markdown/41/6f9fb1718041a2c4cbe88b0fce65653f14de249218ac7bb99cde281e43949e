@@ -1,0 +1,35 @@
+I"#<p><span data-hero-summary="open-badges">Issue Open Badges 3.0 achievements with issuer, criteria and evidence context.</span></p>
+
+<h2 id="start-with-the-achievement-model">Start with the achievement model</h2>
+
+<p>Define the issuer, achievement, criteria and supporting evidence. State whether an award recognizes participation, completion or demonstrated competence. Programme governance supplies the meaning; a standard does not independently perform assessment.</p>
+
+<h2 id="understand-the-relationship-to-w3c-credentials">Understand the relationship to W3C credentials</h2>
+
+<p>The <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C Verifiable Credentials model</a> distinguishes issuer, holder and verifier roles. Check the supported securing mechanism and resources needed for proof and status verification; do not assume every implementation uses the same mechanism.</p>
+
+<h2 id="evaluate-issuer-certification-accurately">Evaluate issuer certification accurately</h2>
+
+<p>The <a href="https://site.imsglobal.org/certifications/certifyme/certifyme">1EdTech registry</a> is the public source for CertifyMe’s OB3 issuer certification scope. Issuer certification is not certification of every integration, receiver, skills relationship or security management system.</p>
+
+<h2 id="use-a-programme-to-record-architecture">Use a programme-to-record architecture</h2>
+
+<p>Place award approval and maintenance within the <a href="/platform-overview">institutional credential lifecycle</a>. Keep assessment evidence attributable, review <a href="/skills-taxonomy-mapping">achievement-to-skill relationships</a>, and preserve provenance when achievements contribute to a <a href="/comprehensive-learner-record">Comprehensive Learner Record</a>.</p>
+
+<h2 id="sharing-and-verification-across-compatible-systems">Sharing and verification across compatible systems</h2>
+
+<p>An Open Badges 3.0 record carries structured achievement information and supported proof. Compatible receiving systems can interpret those fields and check applicable status, giving learners a way to present the award beyond its original interface. Exchange depends on the implemented formats and receiving-system support.</p>
+
+<h2 id="review-privacy-and-portability-limits">Review privacy and portability limits</h2>
+
+<p>An exported achievement may remain dependent on issuer keys and status resources. Control access to sensitive evidence, and distinguish a signed subject association from independent identity verification.</p>
+
+<h2 id="use-case-evidence-with-its-actual-scope">Use case evidence with its actual scope</h2>
+
+<p><a href="/case-studies.html">Anonymous institutional cases</a> demonstrate programme-specific implementation outcomes. They do not establish that OB3 itself guarantees employment, a cost-saving percentage or a particular receiving-system integration.</p>
+
+<h2 id="plan-your-next-step">Plan your next step</h2>
+
+<p>Explore Open Badges 3.0 issuance and connected learner records for your institution. <a href="https://info.certifyme.online/request-demo">Request an institutional demo</a>.</p>
+
+:ET

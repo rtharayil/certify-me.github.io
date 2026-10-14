@@ -1,0 +1,33 @@
+# Pricing Page YAML Correction — Workforce Intelligence and Job Engine
+
+Update the existing YAML entries for the **Workforce Intelligence and Job Engine** category using the approved availability rules below.
+
+## 1. Corrected feature availability
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Job and occupation context | Not included | Available, subject to module scope | Available, subject to agreed module and source scope |
+| Employer and location context | Not included | Available, subject to module scope | Available, subject to agreed source scope |
+| Reviewed skill and taxonomy enrichment | Not included | Available, subject to module scope | Available, subject to agreed enrichment scope |
+| Workforce demand and program relevance | Not included | Available, subject to module scope | Available, subject to agreed intelligence scope |
+| Career and opportunity insights | Available | Available | Available |
+| Job-provider connections | Not included | Available, subject to provider and implementation scope | Available, subject to agreed provider and implementation scope |
+
+## 2. Required corrections
+
+1. **Career and opportunity insights** must be available across Essentials, Professional, and Enterprise. Remove wording such as “Confirm learner module scope” for this feature.
+2. The other five features must be unavailable in Essentials and available from Professional onward, subject to the applicable module, source, provider, and implementation scope.
+3. For Enterprise, retain the requirement to agree on the relevant module and implementation scope.
+4. Do not interpret availability from Professional onward as unlimited access to every data source, job provider, integration, or advanced intelligence capability.
+5. Do not change any other pricing categories, plan limits, commercial terms, or feature entitlements.
+
+## 3. Implementation and validation
+
+- Update the existing YAML feature entries in place, preserving stable feature IDs and the current schema.
+- Use consistent availability labels and customer-facing descriptions.
+- Verify that the pricing comparison table reflects the corrected availability on desktop and mobile.
+- Search for conflicting descriptions of these six features elsewhere in the pricing-page configuration and correct them within this scope.
+- Validate YAML syntax and schema.
+- Report the file changed and the validation results.
+
+**Implement these corrections only. Do not conduct a new product analysis or modify unrelated entitlements.**

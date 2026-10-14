@@ -1,0 +1,686 @@
+I"�d<p>Digital credentials can start with something simple: a certificate for a workshop, a digital badge for a student event, or recognition for completing a short course.</p>
+
+<p>For these smaller use cases, free digital credential software can be useful.</p>
+
+<p>But the requirements change when a university or institution begins issuing credentials across programmes, departments, learners, professional education and continuing education.</p>
+
+<p>At that point, the question is no longer simply:</p>
+
+<blockquote>
+  <p>“Which software lets us create certificates for free?”</p>
+</blockquote>
+
+<p>The more important question becomes:</p>
+
+<blockquote>
+  <p>“Which credential platform can support our institution as our credentialing programme grows?”</p>
+</blockquote>
+
+<p>That distinction is important when evaluating free digital credential management software.</p>
+
+<h2 id="what-is-free-digital-credential-management-software">What Is Free Digital Credential Management Software?</h2>
+
+<p>Free digital credential management software allows an organisation to create, issue or manage digital certificates and badges without paying, usually within defined limits.</p>
+
+<p>However, “free” can describe several different models:</p>
+
+<ul>
+  <li>A completely free credential tool</li>
+  <li>A free tier with limits on issuance</li>
+  <li>A free trial of an enterprise platform</li>
+  <li>A free certificate or badge generator</li>
+  <li>Open-source credential software</li>
+  <li>A platform offering selected capabilities at no cost</li>
+</ul>
+
+<p>These models are not equivalent.</p>
+
+<p>A free certificate maker may be sufficient when you need to create a small number of certificates.</p>
+
+<p>A university managing thousands of credentials may need a much broader platform covering issuance, verification, standards, integrations, governance, analytics and learner records.</p>
+
+<p>The right choice therefore depends on what the institution is trying to achieve—not simply whether the software is free.</p>
+
+<h2 id="when-does-free-credential-software-make-sense">When Does Free Credential Software Make Sense?</h2>
+
+<p>Free software can be a practical starting point for smaller programmes and pilots.</p>
+
+<p>For example, an institution may use a free or limited platform for:</p>
+
+<h3 id="student-events">Student events</h3>
+
+<p>Hackathons, student competitions, clubs and extracurricular activities may require a small number of digital badges or certificates.</p>
+
+<h3 id="workshops-and-short-programmes">Workshops and short programmes</h3>
+
+<p>A department running occasional workshops may not initially need a full institutional credential infrastructure.</p>
+
+<h3 id="professional-development-pilots">Professional development pilots</h3>
+
+<p>A university may want to test digital credentials with one programme before expanding them across the institution.</p>
+
+<h3 id="proof-of-concept">Proof of concept</h3>
+
+<p>A pilot can help academic and technology teams understand how digital credentials work before selecting an institution-wide platform.</p>
+
+<h3 id="small-training-programmes">Small training programmes</h3>
+
+<p>Training providers and individual departments may have relatively simple issuance requirements.</p>
+
+<p>For these situations, a free solution can make sense.</p>
+
+<p>The important point is to understand where the free solution ends and the institution’s longer-term requirements begin.</p>
+
+<h2 id="when-does-free-software-stop-being-enough">When Does Free Software Stop Being Enough?</h2>
+
+<p>The transition usually happens when credentialing becomes an institutional process rather than an individual activity.</p>
+
+<p>For example, consider a university that wants to issue credentials for:</p>
+
+<ul>
+  <li>Degrees and diplomas</li>
+  <li>Short courses</li>
+  <li>Professional education</li>
+  <li>Continuing education</li>
+  <li>Microcredentials</li>
+  <li>Skills programmes</li>
+  <li>Workshops</li>
+  <li>Competency-based achievements</li>
+  <li>Student activities</li>
+  <li>Industry certifications</li>
+</ul>
+
+<p>The platform now needs to manage significantly more than certificate creation.</p>
+
+<p>The institution may need:</p>
+
+<ul>
+  <li>High-volume issuance</li>
+  <li>Multiple credential types</li>
+  <li>Institutional branding</li>
+  <li>Verification</li>
+  <li>Credential lifecycle management</li>
+  <li>Administrative governance</li>
+  <li>APIs and integrations</li>
+  <li>Reporting and analytics</li>
+  <li>Standards interoperability</li>
+  <li>Learner access</li>
+  <li>Skill mapping</li>
+  <li>Comprehensive learner records</li>
+  <li>Workforce and career context</li>
+</ul>
+
+<p>This is where universities should evaluate the architecture of the credential platform, rather than simply its price.</p>
+
+<h2 id="what-should-universities-look-for-in-digital-credential-software">What Should Universities Look for in Digital Credential Software?</h2>
+
+<p>There is no single feature that determines whether a credential platform is appropriate for a university.</p>
+
+<p>A better approach is to evaluate the platform across the complete credential lifecycle.</p>
+
+<h3 id="1-standards-and-interoperability">1. Standards and Interoperability</h3>
+
+<p>Digital credentials become more valuable when they can operate across systems and ecosystems.</p>
+
+<p>Universities should ask:</p>
+
+<ul>
+  <li>Does the platform support recognised credential standards?</li>
+  <li>Can credentials be consumed outside the issuing platform?</li>
+  <li>Can learners share credentials with employers and other organisations?</li>
+  <li>Can credentials work with external verification systems?</li>
+</ul>
+
+<p>Standards such as Open Badges 3.0 and W3C Verifiable Credentials are important considerations when evaluating interoperability.</p>
+
+<p>The objective should not simply be to create a digital version of a paper certificate.</p>
+
+<p>It should be to create a portable and verifiable institutional record of achievement.</p>
+
+<h3 id="2-verification-and-trust">2. Verification and Trust</h3>
+
+<p>A digital credential needs to provide confidence that the achievement is genuine.</p>
+
+<p>Institutions should evaluate how a platform handles:</p>
+
+<ul>
+  <li>Issuer identity</li>
+  <li>Recipient information</li>
+  <li>Credential integrity</li>
+  <li>Verification</li>
+  <li>Credential status</li>
+  <li>Revocation or lifecycle requirements</li>
+</ul>
+
+<p>This is particularly important when credentials are used by employers, professional bodies, government organisations or other educational institutions.</p>
+
+<p>A credential should be easy to verify without requiring the verifier to simply trust an image or PDF.</p>
+
+<h3 id="3-institutional-governance">3. Institutional Governance</h3>
+
+<p>University credentialing involves more than the person issuing the credential.</p>
+
+<p>Different departments may have different responsibilities.</p>
+
+<p>For example:</p>
+
+<p>Academic department → Programme administrator → Approver → Issuer → Learner → Verifier</p>
+
+<p>The platform should therefore be evaluated for institutional governance, including:</p>
+
+<ul>
+  <li>Roles and permissions</li>
+  <li>Administrative control</li>
+  <li>Issuing authority</li>
+  <li>Approval processes</li>
+  <li>Department-level administration</li>
+  <li>Credential management</li>
+</ul>
+
+<p>This becomes increasingly important as credential issuance expands across an institution.</p>
+
+<h3 id="4-integrations">4. Integrations</h3>
+
+<p>A university’s credential platform should not operate as an isolated system.</p>
+
+<p>It may need to connect with existing institutional technology, including:</p>
+
+<ul>
+  <li>Learning management systems</li>
+  <li>Student systems</li>
+  <li>Training platforms</li>
+  <li>APIs</li>
+  <li>Existing academic workflows</li>
+  <li>Other institutional applications</li>
+</ul>
+
+<p>Before choosing a platform, technology teams should understand how credentials will move from the institution’s existing systems into the credentialing workflow.</p>
+
+<h3 id="5-credential-lifecycle-management">5. Credential Lifecycle Management</h3>
+
+<p>Issuing a credential is only one part of its lifecycle.</p>
+
+<p>Universities should consider how the platform supports processes such as:</p>
+
+<p>Create → Approve → Issue → Share → Verify → Manage → Revoke where applicable</p>
+
+<p>The exact lifecycle will vary by credential type.</p>
+
+<p>The important question is whether the platform provides institutional control throughout the credential’s useful life.</p>
+
+<h3 id="6-institutional-branding">6. Institutional Branding</h3>
+
+<p>A university’s credentials represent the institution.</p>
+
+<p>Therefore, institutions should consider whether they can maintain:</p>
+
+<ul>
+  <li>Institutional branding</li>
+  <li>Consistent credential designs</li>
+  <li>Branded credential pages</li>
+  <li>Institutional identity</li>
+  <li>Appropriate recipient-facing experiences</li>
+</ul>
+
+<p>The objective is not simply to produce a visually attractive certificate.</p>
+
+<p>It is to provide a credible digital representation of institutional achievement.</p>
+
+<h3 id="7-analytics-and-reporting">7. Analytics and Reporting</h3>
+
+<p>Once credentials are being issued at scale, institutions need visibility into what is happening.</p>
+
+<p>Depending on the platform, useful reporting may include:</p>
+
+<ul>
+  <li>Credentials issued</li>
+  <li>Credential engagement</li>
+  <li>Views</li>
+  <li>Verification</li>
+  <li>Sharing</li>
+  <li>Programme-level activity</li>
+</ul>
+
+<p>This can help institutions understand how learners interact with their achievements and how credential programmes are performing.</p>
+
+<h3 id="8-skill-taxonomy-alignment">8. Skill Taxonomy Alignment</h3>
+
+<p>A credential can describe much more than the name of an award.</p>
+
+<p>For example:</p>
+
+<p>Bachelor of Engineering</p>
+
+<p>is useful information.</p>
+
+<p>But the achievement becomes more structured when the associated learning and competencies can also be represented as skills.</p>
+
+<p>This creates a connection between:</p>
+
+<p>Achievement → Credential → Skills</p>
+
+<p>Institutions evaluating a credential platform should therefore ask whether credentials can be connected to recognised or institution-defined skill models.</p>
+
+<p>This is the foundation for Skill Taxonomy Alignment.</p>
+
+<h3 id="9-comprehensive-learner-records">9. Comprehensive Learner Records</h3>
+
+<p>A learner’s achievements rarely exist in one form.</p>
+
+<p>A university may have information about:</p>
+
+<ul>
+  <li>Degrees</li>
+  <li>Diplomas</li>
+  <li>Certificates</li>
+  <li>Badges</li>
+  <li>Skills</li>
+  <li>Competencies</li>
+  <li>Projects</li>
+  <li>Assessments</li>
+  <li>Experiences</li>
+</ul>
+
+<p>A Comprehensive Learner Record (CLR) provides a way to bring these different achievements together into a connected learner record.</p>
+
+<p>This changes the role of a credential platform.</p>
+
+<p>Instead of simply asking:</p>
+
+<blockquote>
+  <p>“Can this platform issue a certificate?”</p>
+</blockquote>
+
+<p>institutions can ask:</p>
+
+<blockquote>
+  <p>“Can this platform help us build a connected record of learner achievement?”</p>
+</blockquote>
+
+<h3 id="10-workforce-intelligence-and-opportunity">10. Workforce Intelligence and Opportunity</h3>
+
+<p>The next step is connecting verified achievement and skills with the world of work.</p>
+
+<p>A connected learner record can provide context around:</p>
+
+<ul>
+  <li>Skills</li>
+  <li>Occupations</li>
+  <li>Jobs</li>
+  <li>Employers</li>
+  <li>Locations</li>
+  <li>Workforce demand</li>
+  <li>Relevant opportunities</li>
+</ul>
+
+<p>This creates a progression from:</p>
+
+<p>Credential → Skills → Learner Record → Workforce Intelligence → Opportunity</p>
+
+<p>For universities focused on employability and learner outcomes, this can become an important part of the credential strategy.</p>
+
+<h2 id="free-vs-institutional-credential-software-what-should-you-evaluate">Free vs Institutional Credential Software: What Should You Evaluate?</h2>
+
+<p>Instead of choosing software based only on whether it has a free plan, universities should evaluate the following:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Capability</th>
+      <th>What to Check</th>
+      <th>Why It Matters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Free access</td>
+      <td>Free tier, trial or limited plan</td>
+      <td>Useful for pilots</td>
+    </tr>
+    <tr>
+      <td>Credential issuance</td>
+      <td>Types and volume supported</td>
+      <td>Determines practical usability</td>
+    </tr>
+    <tr>
+      <td>Digital badges</td>
+      <td>Badge creation and delivery</td>
+      <td>Supports diverse achievements</td>
+    </tr>
+    <tr>
+      <td>Open Badges 3.0</td>
+      <td>Standards support</td>
+      <td>Interoperability</td>
+    </tr>
+    <tr>
+      <td>Verifiable credentials</td>
+      <td>Support for verifiable achievement</td>
+      <td>Trust and portability</td>
+    </tr>
+    <tr>
+      <td>Verification</td>
+      <td>How third parties verify credentials</td>
+      <td>Employer/institution confidence</td>
+    </tr>
+    <tr>
+      <td>Lifecycle management</td>
+      <td>Issuance, management and status</td>
+      <td>Long-term credential control</td>
+    </tr>
+    <tr>
+      <td>Bulk issuance</td>
+      <td>Automated/high-volume workflows</td>
+      <td>University-scale delivery</td>
+    </tr>
+    <tr>
+      <td>API/integrations</td>
+      <td>Integration capabilities</td>
+      <td>Connects existing systems</td>
+    </tr>
+    <tr>
+      <td>Governance</td>
+      <td>Roles and permissions</td>
+      <td>Institutional control</td>
+    </tr>
+    <tr>
+      <td>Branding</td>
+      <td>Institutional identity</td>
+      <td>Consistent learner experience</td>
+    </tr>
+    <tr>
+      <td>Analytics</td>
+      <td>Usage and engagement reporting</td>
+      <td>Programme insight</td>
+    </tr>
+    <tr>
+      <td>Learner access</td>
+      <td>Wallet or learner-facing access</td>
+      <td>Learner ownership and portability</td>
+    </tr>
+    <tr>
+      <td>Skill mapping</td>
+      <td>Skills associated with achievement</td>
+      <td>Structured learner outcomes</td>
+    </tr>
+    <tr>
+      <td>CLR</td>
+      <td>Connected learner record</td>
+      <td>Broader achievement representation</td>
+    </tr>
+    <tr>
+      <td>Workforce intelligence</td>
+      <td>Jobs, occupations and demand context</td>
+      <td>Employability and career alignment</td>
+    </tr>
+    <tr>
+      <td>Security</td>
+      <td>Security and compliance controls</td>
+      <td>Institutional risk management</td>
+    </tr>
+    <tr>
+      <td>Scalability</td>
+      <td>Ability to expand beyond a pilot</td>
+      <td>Long-term suitability</td>
+    </tr>
+    <tr>
+      <td>Support</td>
+      <td>Implementation and ongoing support</td>
+      <td>Operational continuity</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This framework is more useful than comparing platforms solely on the number of free certificates they provide.</p>
+
+<h2 id="free-certificate-maker-vs-digital-credential-management-platform">Free Certificate Maker vs Digital Credential Management Platform</h2>
+
+<p>These terms are sometimes used interchangeably, but they describe different levels of capability.</p>
+
+<h3 id="a-free-certificate-maker">A free certificate maker</h3>
+
+<p>Typically focuses on:</p>
+
+<p>Design → Generate → Download</p>
+
+<p>This can be sufficient for simple use cases.</p>
+
+<h3 id="a-digital-credential-platform">A digital credential platform</h3>
+
+<p>Can involve:</p>
+
+<p>Create → Issue → Verify → Manage → Share → Analyse</p>
+
+<h3 id="institutional-digital-credential-infrastructure">Institutional digital credential infrastructure</h3>
+
+<p>Can extend further:</p>
+
+<p>Achievement → Credential → Standards → Verification → Skills → Learner Record → Workforce Intelligence → Opportunity</p>
+
+<p>For universities, understanding this distinction is important before selecting a platform.</p>
+
+<h2 id="where-certifyme-fits">Where CertifyMe Fits</h2>
+
+<p>CertifyMe approaches digital credentials as digital credential infrastructure for institutions, rather than treating credentialing simply as certificate generation.</p>
+
+<p>The platform’s model connects six layers:</p>
+
+<h3 id="01--presentation--access">01 — Presentation &amp; Access</h3>
+
+<p>Make achievements visible, branded, accessible and shareable through credential design, credential pages, unique URLs and QR access.</p>
+
+<h3 id="02--standards--interoperability">02 — Standards &amp; Interoperability</h3>
+
+<p>Use recognised standards such as Open Badges 3.0 and W3C Verifiable Credentials to support interoperability.</p>
+
+<h3 id="03--verification--trust">03 — Verification &amp; Trust</h3>
+
+<p>Establish the issuer, recipient and integrity of the credential using mechanisms designed for verifiable achievement.</p>
+
+<h3 id="04--skill-taxonomy-alignment">04 — Skill Taxonomy Alignment</h3>
+
+<p>Connect achievements to structured skill models, including recognised taxonomies and institution-defined skill frameworks where applicable.</p>
+
+<h3 id="05--comprehensive-learner-record">05 — Comprehensive Learner Record</h3>
+
+<p>Bring degrees, credentials, skills, competencies, projects, experiences and other achievements into a connected learner record.</p>
+
+<h3 id="06--workforce-intelligence--opportunity">06 — Workforce Intelligence &amp; Opportunity</h3>
+
+<p>Use verified skills and learner records to understand occupations, jobs, employers, locations, workforce demand and relevant opportunities.</p>
+
+<p>The resulting institutional journey is:</p>
+
+<p>Achievement<br />↓<br />Credential<br />↓<br />Standards<br />↓<br />Verification<br />↓<br />Skills<br />↓<br />Learner Record<br />↓<br />Workforce Intelligence<br />↓<br />Opportunity</p>
+
+<p>This is the distinction between simply issuing digital certificates and building a broader institutional credential infrastructure.</p>
+
+<h2 id="when-should-a-university-move-beyond-a-free-platform">When Should a University Move Beyond a Free Platform?</h2>
+
+<p>There is no universal threshold.</p>
+
+<p>A university should consider moving beyond a free or limited solution when its requirements begin to include:</p>
+
+<ul>
+  <li>Multiple departments or programmes</li>
+  <li>Larger credential volumes</li>
+  <li>Institutional governance</li>
+  <li>Automated issuance</li>
+  <li>System integrations</li>
+  <li>Standards interoperability</li>
+  <li>Formal verification</li>
+  <li>Analytics</li>
+  <li>Skill mapping</li>
+  <li>Learner records</li>
+  <li>Long-term credential management</li>
+  <li>Workforce and career outcomes</li>
+</ul>
+
+<p>The decision should therefore be based on institutional requirements rather than the number of free credentials available.</p>
+
+<p>A free tier may be an excellent way to validate an idea.</p>
+
+<p>It may not necessarily be the right foundation for an institution-wide credential strategy.</p>
+
+<h2 id="questions-to-ask-before-choosing-a-digital-credential-platform">Questions to Ask Before Choosing a Digital Credential Platform</h2>
+
+<p>Before selecting a platform, universities should ask:</p>
+
+<h3 id="is-it-standards-based">Is it standards-based?</h3>
+
+<p>Can the credentials operate beyond the platform?</p>
+
+<h3 id="can-employers-and-other-institutions-verify-credentials">Can employers and other institutions verify credentials?</h3>
+
+<p>Verification should be simple and trustworthy.</p>
+
+<h3 id="can-it-integrate-with-our-existing-systems">Can it integrate with our existing systems?</h3>
+
+<p>The credential workflow should fit the institution’s technology environment.</p>
+
+<h3 id="can-different-departments-operate-under-appropriate-governance">Can different departments operate under appropriate governance?</h3>
+
+<p>Institution-wide credentialing requires administrative control.</p>
+
+<h3 id="can-achievements-be-connected-to-skills">Can achievements be connected to skills?</h3>
+
+<p>This helps move beyond credential issuance toward structured learner outcomes.</p>
+
+<h3 id="can-multiple-achievements-become-a-learner-record">Can multiple achievements become a learner record?</h3>
+
+<p>This is important for institutions building a longer-term learner identity.</p>
+
+<h3 id="can-the-platform-support-workforce-context">Can the platform support workforce context?</h3>
+
+<p>For institutions focused on employability, skills and learner outcomes, this can become increasingly valuable.</p>
+
+<style>
+    .blog-faq-section {
+        margin-top: 50px;
+        padding-top: 40px;
+        border-top: 1px solid #e6e6f0;
+    }
+
+    .blog-faq-section .faq-heading {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 24px;
+        color: #14142b;
+    }
+
+    .blog-faq-item {
+        border: 1px solid #e6e6f0;
+        border-radius: 12px;
+        margin-bottom: 14px;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    .blog-faq-question {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 18px 22px;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: 600;
+        color: #14142b;
+        list-style: none;
+    }
+
+    .blog-faq-question::-webkit-details-marker {
+        display: none;
+    }
+
+    .blog-faq-question::after {
+        content: "+";
+        font-size: 22px;
+        font-weight: 400;
+        color: #4A6CF7;
+        flex-shrink: 0;
+        transition: transform 0.2s ease;
+    }
+
+    .blog-faq-item[open] .blog-faq-question::after {
+        transform: rotate(45deg);
+    }
+
+    .blog-faq-answer {
+        padding: 0 22px 20px;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #4b4b63;
+    }
+</style>
+
+<div class="blog-faq-section">
+    <h2 class="faq-heading">Frequently Asked Questions</h2>
+
+    
+    <details class="blog-faq-item">
+        <summary class="blog-faq-question">Is free digital credential software suitable for universities?</summary>
+        <div class="blog-faq-answer"><p>It can be suitable for small programmes, pilots, workshops or student activities. For institution-wide credentialing, universities should evaluate additional requirements such as governance, standards, integrations, verification, scalability and learner records.</p>
+</div>
+    </details>
+    
+    <details class="blog-faq-item">
+        <summary class="blog-faq-question">What is the difference between a free certificate maker and credential management software?</summary>
+        <div class="blog-faq-answer"><p>A certificate maker generally focuses on creating a certificate. Credential management software supports a broader lifecycle involving issuing, managing, sharing and verifying digital credentials.</p>
+</div>
+    </details>
+    
+    <details class="blog-faq-item">
+        <summary class="blog-faq-question">What should universities check before choosing free credential software?</summary>
+        <div class="blog-faq-answer"><p>Universities should evaluate standards, verification, governance, integrations, credential lifecycle management, analytics, security, scalability, skills and learner-record capabilities.</p>
+</div>
+    </details>
+    
+    <details class="blog-faq-item">
+        <summary class="blog-faq-question">Are Open Badges 3.0 important for institutional credentialing?</summary>
+        <div class="blog-faq-answer"><p>Open Badges 3.0 is an important interoperability consideration for institutions that want credentials to operate within a broader digital credential ecosystem.</p>
+</div>
+    </details>
+    
+    <details class="blog-faq-item">
+        <summary class="blog-faq-question">When should an institution move from a free platform to an institutional platform?</summary>
+        <div class="blog-faq-answer"><p>When credentialing becomes a recurring, multi-programme or institution-wide process and requires capabilities beyond basic certificate creation.</p>
+</div>
+    </details>
+    
+    <details class="blog-faq-item">
+        <summary class="blog-faq-question">Can digital credentials be connected to skills?</summary>
+        <div class="blog-faq-answer"><p>Yes, depending on the platform and implementation. Skill alignment can connect an achievement with structured skills and competencies.</p>
+</div>
+    </details>
+    
+    <details class="blog-faq-item">
+        <summary class="blog-faq-question">What should universities consider when integrating credential software?</summary>
+        <div class="blog-faq-answer"><p>They should evaluate APIs, existing institutional systems, authentication, workflows, data flows, governance and the operational responsibilities associated with the integration.</p>
+</div>
+    </details>
+    
+</div>
+
+<h2 id="final-takeaway">Final Takeaway</h2>
+
+<p>Free digital credential software can be a good starting point—but the right starting point depends on the problem you are trying to solve.</p>
+
+<p>For a single workshop or small event, a simple free tool may be enough.</p>
+
+<p>For a university building a long-term digital credential strategy, the evaluation needs to go further.</p>
+
+<p>The important questions become:</p>
+
+<ul>
+  <li>Can credentials be trusted?</li>
+  <li>Can they work across systems?</li>
+  <li>Can the institution govern them?</li>
+  <li>Can achievements connect to skills?</li>
+  <li>Can those achievements contribute to a comprehensive learner record?</li>
+  <li>Can verified skills eventually connect learners with workforce opportunities?</li>
+</ul>
+
+<p>That is where digital credentialing evolves from certificate creation to institutional digital credential infrastructure.</p>
+
+<p><a href="/platform-overview">Explore how CertifyMe connects credentials, standards, verification, skills, learner records and workforce intelligence for institutions.</a></p>
+:ET

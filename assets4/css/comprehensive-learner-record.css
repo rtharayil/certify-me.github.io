@@ -154,7 +154,7 @@
 #clr-page .clr-light { color: var(--clr-blue-deep); background: #ffffff; }
 #clr-page .clr-light:hover { background: #e4e3f3; }
 #clr-page .clr-on-dark { color: #fff; border-color: #847dc4; }
-#clr-page .clr-on-dark:hover { background: #3d347e; }
+#clr-page .clr-on-dark:hover { color: #fff; background: #3d347e; }
 #clr-page .clr-dark a:focus-visible, #clr-page .clr-final a:focus-visible { outline-color: var(--clr-teal); }
 
 /* Interactive builder: all six contribution explanations remain available without JavaScript. */

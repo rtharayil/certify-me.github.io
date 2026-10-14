@@ -1,0 +1,202 @@
+I"�.<div class="case-index">
+  <header class="case-index__hero">
+    <div class="case-index__hero-inner">
+      <div class="case-index__hero-copy">
+        <p class="case-index__eyebrow"><span aria-hidden="true"></span> Institutional case studies</p>
+        <h1>When learning ends,<br /><em>recognition continues.</em></h1>
+        <p class="case-index__dek">Universities run learning across programmes, systems and careers. These stories show how credential infrastructure can connect the achievement to what comes next—without asking institutions to give up their academic authority or existing learning environment.</p>
+        <a class="case-index__hero-link" href="#executive-education">Start with the university story <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="case-index__journey" aria-label="A learning achievement can become a portable, verifiable credential with skills context">
+        <p class="case-index__journey-label">From programme to credential</p>
+        <div class="case-index__journey-step"><span>01</span><b>Learning</b><small>Programme experience</small></div>
+        <div class="case-index__journey-rule" aria-hidden="true"></div>
+        <div class="case-index__journey-step"><span>02</span><b>Achievement</b><small>Institutional recognition</small></div>
+        <div class="case-index__journey-rule" aria-hidden="true"></div>
+        <div class="case-index__journey-step case-index__journey-step--accent"><span>03</span><b>Credential</b><small>Portable · verifiable · skills-aware</small></div>
+      </div>
+      <span class="case-index__hero-index" aria-hidden="true">C / 01—03</span>
+    </div>
+  </header>
+
+  <div class="case-index__main">
+    <nav class="case-index__contents" aria-label="Case study navigation">
+      <span>Explore by operating context</span>
+      <a href="#executive-education">Executive education <i aria-hidden="true">01</i></a>
+      <a href="#workforce-training">Workforce learning <i aria-hidden="true">02</i></a>
+      <a href="#professional-association">Professional associations <i aria-hidden="true">03</i></a>
+      <a href="#applied-sciences">Applied sciences <i aria-hidden="true">04</i></a>
+    </nav>
+
+    <section class="case-index__stories" aria-labelledby="stories-heading">
+      <div class="case-index__section-intro">
+        <p class="case-index__kicker">Inside the implementations <span> / </span> 01—03</p>
+        <h2 id="stories-heading">Credential infrastructure in practice.</h2>
+        <p>Executive education, multi-country workforce learning and continuing professional development—three implementations built around existing programmes and systems.</p>
+      </div>
+
+      
+      
+      <article id="executive-education" class="case-story case-story--featured">
+        <div class="case-story__rail">
+          <span class="case-story__number">01</span>
+          <span class="case-story__rail-line" aria-hidden="true"></span>
+          <span class="case-story__category">University executive education</span>
+        </div>
+        <div class="case-story__body">
+          <p class="case-story__customer">A globally recognised university’s executive education division</p>
+          <h3>From executive education to a connected professional journey</h3>
+          <p class="case-story__summary">Connect recognition across executive programmes while preserving the university’s learning environment and academic authority.</p>
+
+          <div class="case-story__operating-model">
+            <div>
+              <span class="case-story__field-label">The challenge</span>
+              <p>Programme achievements remained separate records across a continuing professional journey.</p>
+            </div>
+            <div>
+              <span class="case-story__field-label">What was put in place</span>
+              <p>A credential and skills layer alongside existing learning systems, with standards-based verification.</p>
+            </div>
+          </div>
+
+          <div class="case-story__evidence">
+            <p class="case-story__field-label">At a glance</p>
+            <ul class="case-story__metrics">
+              
+              <li><strong>36,000+</strong><span>Digital credentials issued</span></li>
+              
+              <li><strong>≈24,000</strong><span>Professionals reached</span></li>
+              
+              <li><strong>3+ years</strong><span>Ongoing engagement</span></li>
+              
+            </ul>
+            
+          </div>
+
+          <div class="case-story__delivery">
+            <span><small>Initial delivery</small>Four-month initial implementation</span>
+            <span><small>Post-launch support</small>30-day hypercare</span>
+          </div>
+          <p class="case-story__buyer-value"><span>Why it matters to institutional teams</span>A foundation for continuing professional records, with workforce context as a further capability.</p>
+          <a class="case-story__read-link" href="/blog/higher-education.html" aria-label="Read case study: From executive education to a connected professional journey">Read the implementation story <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      
+      <article id="workforce-training" class="case-story">
+        <div class="case-story__rail">
+          <span class="case-story__number">02</span>
+          <span class="case-story__rail-line" aria-hidden="true"></span>
+          <span class="case-story__category">Workforce learning</span>
+        </div>
+        <div class="case-story__body">
+          <p class="case-story__customer">A European language and workforce learning organisation</p>
+          <h3>From fragmented training records to a portable learner record</h3>
+          <p class="case-story__summary">Represent achievements consistently across a multi-country learning operation without forcing every programme into the same operating model.</p>
+
+          <div class="case-story__operating-model">
+            <div>
+              <span class="case-story__field-label">The challenge</span>
+              <p>Different programmes, countries and funding requirements produced fragmented learning evidence.</p>
+            </div>
+            <div>
+              <span class="case-story__field-label">What was put in place</span>
+              <p>A common credential and skills structure connected to selected learning workflows, with appropriate ESCO mappings.</p>
+            </div>
+          </div>
+
+          <div class="case-story__evidence">
+            <p class="case-story__field-label">At a glance</p>
+            <ul class="case-story__metrics">
+              
+              <li><strong>40,000+</strong><span>Learners supported</span></li>
+              
+              <li><strong>80,000+</strong><span>Digital credentials issued</span></li>
+              
+              <li><strong>≈82%</strong><span>Adoption across the relevant learner population</span></li>
+              
+            </ul>
+            <p class="case-story__context">66 languages · Five regulatory / funding frameworks</p>
+          </div>
+
+          <div class="case-story__delivery">
+            <span><small>Initial delivery</small>Discovery, integration, skills modelling and rollout</span>
+            <span><small>Post-launch support</small>30-day hypercare</span>
+          </div>
+          <p class="case-story__buyer-value"><span>Why it matters to institutional teams</span>Shared credential infrastructure across different programmes, languages and regulatory requirements.</p>
+          <a class="case-story__read-link" href="/blog/elearning-case.html" aria-label="Read case study: From fragmented training records to a portable learner record">Read the implementation story <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      
+      <article id="professional-association" class="case-story">
+        <div class="case-story__rail">
+          <span class="case-story__number">03</span>
+          <span class="case-story__rail-line" aria-hidden="true"></span>
+          <span class="case-story__category">Professional association</span>
+        </div>
+        <div class="case-story__body">
+          <p class="case-story__customer">One of Europe’s longest-established professional associations</p>
+          <h3>From continuing learning to a connected professional record</h3>
+          <p class="case-story__summary">Make continuing-learning achievements accessible and verifiable, with skills context that can support a longer professional record.</p>
+
+          <div class="case-story__operating-model">
+            <div>
+              <span class="case-story__field-label">The challenge</span>
+              <p>Individual programme achievements did not form a connected picture of continuing professional development.</p>
+            </div>
+            <div>
+              <span class="case-story__field-label">What was put in place</span>
+              <p>Selected learning workflows connected to digital credentials, verification and configured skills mappings.</p>
+            </div>
+          </div>
+
+          <div class="case-story__evidence">
+            <p class="case-story__field-label">At a glance</p>
+            <ul class="case-story__metrics">
+              
+              <li><strong>≈3 months</strong><span>Initial implementation</span></li>
+              
+              <li><strong>30 days</strong><span>Post-launch hypercare</span></li>
+              
+            </ul>
+            <p class="case-story__context">Selected learning programmes and credential workflows</p>
+          </div>
+
+          <div class="case-story__delivery">
+            <span><small>Initial delivery</small>Approximately three-month initial implementation</span>
+            <span><small>Post-launch support</small>30-day hypercare</span>
+          </div>
+          <p class="case-story__buyer-value"><span>Why it matters to institutional teams</span>A foundation for recognising development across a member’s professional life.</p>
+          <a class="case-story__read-link" href="/blog/association-case.html" aria-label="Read case study: From continuing learning to a connected professional record">Read the implementation story <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      
+    </section>
+
+    
+    <section id="applied-sciences" class="case-index__applied" aria-labelledby="applied-heading">
+      <div class="case-index__applied-heading">
+        <p class="case-index__kicker">A related programme result <span> / </span> 04</p>
+        <h2 id="applied-heading">Applied sciences</h2>
+        <p>Applied-sciences university</p>
+      </div>
+      <div class="case-index__applied-content">
+        <div class="case-index__applied-pair">
+          <div><span class="case-index__field-label">The focus</span><p>Connect assessed competencies, achievements and career-services engagement.</p></div>
+          <div><span class="case-index__field-label">The approach</span><p>Competency-linked badges, learner profiles, job intelligence, opportunities and a showcase directory.</p></div>
+        </div>
+        <p class="case-index__field-label">Programme results</p>
+        <p class="case-index__applied-outcome">7,800+ students issued verified badges; 24,000+ credentials over three years; 45% higher career-services engagement and approximately 38% student adoption.</p>
+      </div>
+    </section>
+
+    <section class="case-index__closing" aria-labelledby="closing-heading">
+      <p class="case-index__kicker">For your institution</p>
+      <div>
+        <h2 id="closing-heading">Bring your operating model into the conversation.</h2>
+        <p>Talk through programme workflows, existing learning systems and the recognition your institution wants to carry forward.</p>
+      </div>
+      <a href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer">Discuss your institution’s needs <span aria-hidden="true">↗</span></a>
+    </section>
+  </div>
+</div>
+:ET

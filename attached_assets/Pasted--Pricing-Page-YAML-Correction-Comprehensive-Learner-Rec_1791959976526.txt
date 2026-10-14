@@ -1,0 +1,36 @@
+# Pricing Page YAML Correction — Comprehensive Learner Record and SkillStory
+
+Update the existing YAML entries for the **Comprehensive Learner Record and SkillStory** category according to the approved availability rules below.
+
+## 1. Corrected feature availability
+
+| Feature | Essentials | Professional | Enterprise |
+|---|---|---|---|
+| Connected record of achievements and learning | Not included | Not included | Available, subject to agreed module scope |
+| CLR creation | Not included | Not included | Available, subject to agreed module scope |
+| CLR display | Not included | Not included | Available, subject to agreed module scope |
+| Learner-record sharing | Not included | Not included | Available, subject to agreed sharing scope |
+| Achievement evidence and provenance | Not included | Not included | Available, subject to agreed learner-record scope |
+| Skill Passport | Not included | Not included | Available, subject to agreed module scope |
+| Transcript-management connections | Not included | Not included | Available, subject to agreed integration scope |
+
+## 2. Required corrections
+
+1. All seven features must be marked **Not included** for Essentials and Professional.
+2. Remove the existing “Separate module,” “Confirm availability,” “Optional add-on,” and “Separately scoped” descriptions from the Essentials and Professional columns.
+3. For Enterprise, retain the relevant scope or agreement qualification for each feature.
+4. Skill Passport must not be displayed as an optional add-on for Professional. It is available only at the Enterprise level, subject to agreed module scope.
+5. Do not imply that a basic recipient credential wallet or access to an issued credential is unavailable in Essentials or Professional merely because the broader CLR and SkillStory capabilities are Enterprise-only. Keep these separate if they are represented elsewhere in the pricing configuration.
+6. Do not imply that transcript-management integration is automatically included in Enterprise without the agreed integration scope.
+
+## 3. Implementation and validation
+
+- Update existing YAML entries in place, preserving stable feature IDs and the current schema.
+- Keep the feature names and category structure consistent with the existing pricing page.
+- Verify that the pricing comparison table displays the correct availability across all three plans.
+- Check desktop and mobile rendering.
+- Search for conflicting descriptions of CLR, Skill Passport, SkillStory, learner-record sharing, and transcript-management connections within the pricing-page configuration. Correct only conflicting references within this scope.
+- Validate YAML syntax and schema.
+- Report the file changed and the validation results.
+
+**Implement these approved corrections only. Do not conduct a new product analysis or modify unrelated plan entitlements.**

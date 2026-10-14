@@ -1,0 +1,7 @@
+{%- assign feature_value = include.row[include.plan.key] -%}
+{%- assign value_prefix = feature_value | slice: 0, 9 -%}
+{%- if value_prefix == "capacity." -%}
+  {%- assign capacity_field = feature_value | remove_first: "capacity." -%}
+  {%- assign feature_value = include.plan.capacity[capacity_field] -%}
+{%- endif -%}
+{{- feature_value | escape -}}

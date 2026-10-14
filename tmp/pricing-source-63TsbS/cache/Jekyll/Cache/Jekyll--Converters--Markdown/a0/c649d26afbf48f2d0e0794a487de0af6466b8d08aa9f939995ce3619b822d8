@@ -1,0 +1,30 @@
+I"�
+<p>A digital credential is an issuer’s digital statement about an achievement or qualification. Its meaning comes from the issuer, subject, criteria, evidence and applicable proof/status information—not the appearance of a PDF or badge.</p>
+
+<h2 id="distinguish-a-record-from-its-presentation">Distinguish a record from its presentation</h2>
+
+<p>A PDF, image or web page may present an achievement. A standards-based credential is a structured record that can carry issuer and achievement information. Not every digital certificate uses the same data model or securing mechanism.</p>
+
+<h2 id="read-five-questions-before-accepting-the-claim">Read five questions before accepting the claim</h2>
+
+<p>Who issued it? Who or what is it about? What achievement and criteria are stated? What evidence supports the award? Can the proof, dates and applicable status be checked? The <a href="/platform-overview">credential lifecycle</a> assigns responsibility for these questions.</p>
+
+<h2 id="understand-the-related-standards">Understand the related standards</h2>
+
+<p><a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges 3.0</a> addresses achievement credentials. The <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C Verifiable Credentials model</a> describes issuer, holder and verifier relationships. Neither a label nor a signature establishes every kind of trust on its own.</p>
+
+<p>A university could issue a project-completion credential identifying the learner, the assessed project and the award criteria. The recipient can review the issuer, assessment and evidence against their requirements.</p>
+
+<h2 id="separate-credentials-skills-and-learner-records">Separate credentials, skills and learner records</h2>
+
+<p>A credential may carry an achievement related to a skill, but the mapping needs review. A <a href="/comprehensive-learner-record">Comprehensive Learner Record</a> can organize several achievements while preserving their issuers and evidence; it is not automatic replacement of the transcript.</p>
+
+<h2 id="digital-credentials-in-institutional-practice">Digital credentials in institutional practice</h2>
+
+<p>CertifyMe connects credential issuance with recipient access, verification and supported record-maintenance workflows. <a href="/case-studies.html">Customer case studies</a> describe programme-specific adoption, while the <a href="/credentials-higher-education">higher-education solution</a> connects university awards with skills and learner records.</p>
+
+<h2 id="plan-your-next-step">Plan your next step</h2>
+
+<p>Explore a connected credential experience for your institution’s achievements. <a href="https://info.certifyme.online/request-demo">Request an institutional demo</a>.</p>
+
+:ET

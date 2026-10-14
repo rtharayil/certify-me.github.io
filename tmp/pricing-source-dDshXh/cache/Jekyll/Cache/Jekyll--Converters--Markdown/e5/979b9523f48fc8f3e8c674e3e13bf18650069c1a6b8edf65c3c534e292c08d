@@ -1,0 +1,143 @@
+I"9<p>Migration depends on both platforms’ supported export and import formats. Standards can help, but do not guarantee that every credential, template or status record transfers unchanged.</p>
+
+<p>This article covers both scenarios as step-by-step guides. The key difference between the two comes down to one thing: whether your current system can export structured data.</p>
+
+<p><br /></p>
+
+<h2 id="tldr">TL;DR</h2>
+
+<ol>
+  <li>
+    <p>Confirm export support, proof formats, recipient data and status handling with both providers. Test a representative migration before reissuing or importing a full batch.</p>
+  </li>
+  <li>
+    <p>The essential dataset to export includes issuer details, recipient details, credential title, issue and expiry dates, credential ID, and verification URLs — missing any of these creates problems during reissuance.</p>
+  </li>
+  <li>
+    <p>Migrating from a closed or traditional system is harder only at the data collection stage — once you have a properly structured CSV, the reissuance process is identical.</p>
+  </li>
+  <li>
+    <p>Open standards compliance is what prevents vendor lock-in — credentials issued under W3C and Open Badges remain portable across any compatible platform, now and in the future.</p>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<h2 id="path-1-migrating-from-a-standards-compliant-platform">Path 1: Migrating from a Standards-Compliant Platform</h2>
+
+<p>If your current platform follows <a href="https://www.certifyme.online/blog/Understanding-W3C-Verifiable-Credentials.html">W3C Verifiable Credentials</a> and Open Badges standards, the migration is structured and predictable. Interoperability is built into both ends by design.</p>
+
+<p><br /></p>
+
+<h3 id="step-1-export-your-credential-data">Step 1: Export Your Credential Data</h3>
+
+<p>Log into your existing platform dashboard and locate the section where issued credentials are stored. Most compliant platforms allow data export in CSV or JSON format. CSV is generally easier to work with for bulk migration.</p>
+
+<p>Some platforms let you export directly from the dashboard. Others require you to contact support for a full data export. Either way, make sure your exported dataset includes all of the following before moving on:</p>
+
+<ol>
+  <li>Issuer details</li>
+  <li>Recipient name and email</li>
+  <li>Credential title and description</li>
+  <li>Issue date and expiry date</li>
+  <li>Credential ID</li>
+  <li>Verification URLs</li>
+</ol>
+
+<p>Missing metadata at this stage means missing information in the reissued credentials.</p>
+
+<p><br /></p>
+
+<h3 id="step-2-recreate-your-templates">Step 2: Recreate Your Templates</h3>
+
+<p>Before importing any data, recreate your credential templates on the new platform. If you had five certificate designs and three badge designs on the previous platform, you’ll need all eight before bulk upload. White-label customization options mean you can typically match the original design closely.</p>
+
+<p><br /></p>
+
+<h3 id="step-3-bulk-upload-and-reissue">Step 3: Bulk Upload and Reissue</h3>
+
+<p>Connect with the new platform’s team to explain your migration. They’ll guide you through field mapping — matching your CSV columns to the required fields — and then bulk issuance takes care of the rest. The platform generates new standards-compliant verifiable credentials for each recipient in the dataset.</p>
+
+<p><br /></p>
+
+<h3 id="step-4-test-before-you-communicate">Step 4: Test Before You Communicate</h3>
+
+<p>After reissuance, test a sample of credentials before notifying anyone. Confirm that all five verification methods work correctly:</p>
+
+<ol>
+  <li>QR code scan</li>
+  <li>Unique credential ID</li>
+  <li>ID tagging</li>
+  <li>OTP-based verification</li>
+  <li>Cryptographic signature validation</li>
+</ol>
+
+<p>Catching issues here is far easier than handling them after recipients have been notified.</p>
+
+<p><br /></p>
+
+<h3 id="step-5-notify-credential-holders">Step 5: Notify Credential Holders</h3>
+
+<p>Email all recipients to let them know their credentials have been reissued on a new platform. Most platforms also send an automated email at issuance, so you can pair that with a separate announcement on your website or social channels if needed.</p>
+
+<p><br /></p>
+
+<h2 id="path-2-migrating-from-a-traditional-system">Path 2: Migrating from a Traditional System</h2>
+
+<p>Most organizations haven’t yet adopted a verifiable credentialing platform. They’re working from spreadsheets, static PDFs, or internal databases with no structured export function. This path is harder only at the first step.</p>
+
+<p><br /></p>
+
+<h3 id="step-1-build-your-csv-manually">Step 1: Build Your CSV Manually</h3>
+
+<p>Closed systems won’t give you a clean export. You’ll need to pull data from wherever it lives and build a CSV file yourself. This is the one step that takes more effort than the standards-compliant migration.
+Your CSV needs to include:</p>
+
+<ol>
+  <li>Recipient name</li>
+  <li>Recipient email or unique identifier</li>
+  <li>Credential title</li>
+  <li>Issue date and expiry date</li>
+  <li>Description or skills covered</li>
+  <li>Any relevant evidence links</li>
+</ol>
+
+<p>Take the time to get this right. Errors here carry through into the issued credentials. The broader question of <a href="/compare/">evaluating a credential platform</a> for your new system is worth thinking through in parallel — specifically its verification methods, revocation controls, supported standards and continuity arrangements.</p>
+
+<p><br /></p>
+
+<h3 id="step-2-build-templates">Step 2: Build Templates</h3>
+
+<p>Same process as Path 1. Create your certificate and badge templates on the new platform, filling in the program details, eligibility criteria, and skills acquired.</p>
+
+<p><br /></p>
+
+<h3 id="step-3-bulk-upload-and-reissue-1">Step 3: Bulk Upload and Reissue</h3>
+
+<p>Once your CSV is ready and templates are set, upload the file through the bulk upload feature. Check the preview to confirm field mapping is correct, then initiate issuance. The platform generates verifiable credentials for every recipient, each with QR codes, verification methods, and standards-compliant metadata.</p>
+
+<p><br /></p>
+
+<h3 id="step-4-notify-recipients">Step 4: Notify Recipients</h3>
+
+<p>Because recipients in a closed system migration won’t have received credentials through the new platform before, communication here needs a little more context. Let them know:</p>
+
+<ol>
+  <li>Their credentials have been reissued on a new platform</li>
+  <li>How to access their updated credentials</li>
+  <li>How to store them in a digital wallet</li>
+  <li>How to share them with verifiers</li>
+</ol>
+
+<p><br /></p>
+
+<h2 id="think-about-this-before-you-commit-to-any-platform">Think About This Before You Commit to Any Platform</h2>
+
+<p>If you’re migrating now, you already know what vendor lock-in feels like. The reason migration is straightforward between standards-compliant platforms is because W3C and Open Badges compliance builds portability into the credential itself — not into a specific vendor’s system.</p>
+
+<p>Whatever platform you choose next, make sure it follows these open standards. That’s the only guarantee that you won’t find yourself in the same position again two or three years from now.</p>
+
+<p>If you’re evaluating <a href="https://www.certifyme.online/">CertifyMe</a> as part of this decision, it’s worth having a direct conversation rather than trying to figure out compatibility and migration scope on your own. The team can walk you through exactly what your migration would involve based on your current setup, whether you’re coming from Accredible, a proprietary system, or a folder of PDFs.</p>
+
+<p>You can <a href="https://info.certifyme.online/request-demo?_gl=1*17cf2r9*_gcl_au*MTg4MDEwMTQyOS4xNzcwMDMwMTU1*_ga*MTA3NzY4NzM1My4xNzU0Mzg5MzQ1*_ga_8CWQ2KJW5K*czE3NzQ5MzgyMzYkbzI5MiRnMSR0MTc3NDkzODg3NiRqNTgkbDAkaDA.">book a demo with us</a> to start that conversation.</p>
+:ET

@@ -47,7 +47,7 @@ Keep browser configuration and cache state outside the watched Jekyll workspace 
 
 Restart the long-running Jekyll watcher after adding or changing a plugin, before trusting a fresh standalone build's output.
 
-**Why:** A watcher with the old plugin registry regenerated the shared output directory after a successful standalone build and erased the new plugin's changes. This made a passing image-dimension audit appear to regress.
+**Why:** A watcher with the old plugin registry regenerated the shared output directory after a successful standalone build and erased the new plugin's changes. This made a passing image-dimension audit appear to regress. Completion checks can also launch independent builds concurrently, so a successful standalone build does not establish that shared-output validation is reliable.
 
 **How to apply:** Restart once after the plugin batch, build the current source, and run the final audits against that output. Keep one writer per shared build destination, including the watcher. Even same-version generators can race cleanup against copying and produce missing-file failures; isolate test destinations or serialize their writers.
 

@@ -1,0 +1,97 @@
+I"-<p>In the context of verifiable digital credentials, the word verifiable means that a credential’s authenticity and integrity can be independently checked.</p>
+
+<p>It is not just about the credential existing digitally or being cryptographically signed. While these can be part of the overall verifiable credentials ecosystem, the verifiability aspect goes much deeper. It refers to a built-in ability to verify the claims inside the credential, confirm who issued it, check whether  it has been altered and determine whether it is still valid, without manual confirmation from the issuer.</p>
+
+<p>With this detailed blog, let’s understand what “verifiable” really means and why it matters.</p>
+
+<p><br /></p>
+
+<h2 id="tldr">TL;DR</h2>
+
+<p>The word “verifiable” in a verifiable credential means that a credential can be verified independently without contacting the issuer or asking for unnecessary personal information from the holder</p>
+
+<p>Verification typically include checking :</p>
+<ul>
+  <li>The authenticity of the issuer</li>
+  <li>The integrity of the credential (tamper-evidence)</li>
+  <li>The validity status (active, expired or revoked)</li>
+  <li>And, where required, proof that the presenter is authorized to use it</li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="verifiable-vs-simply-digital-why-the-difference-matters">Verifiable vs Simply Digital: Why the Difference Matters</h2>
+
+<p>Before diving into what makes a <a href="https://www.certifyme.online/blog/What-is-a-Digital-Credential.html">digital credential</a> verifiable, let’s quickly understand the difference between a verifiable digital credential and a simple digital credential.</p>
+
+<p>While the term “digital credential” is widely used to refer to verifiable credentials, it should not be mistaken as referring only to a digital format. In simple terms, a digital format means a credential that can be stored digitally, such as PDFs, image formats, or text formats.</p>
+
+<p>A digitally signed pdf can prove who signed it, but it is usually not designed for portable, machine-readable verification across platforms. It may confirm document integrity, but it does not typically include standardized status checks, structured claims or interoperable verification workflows.</p>
+
+<p>A <a href="https://www.certifyme.online/glossary/what-are-verifiable-credentials">verifiable credential</a>, on the other hand, is designed to prove claims in a standardized, machine-readable way. The difference becomes important when credentials are shared widely, reused across platforms, or evaluated by third parties who have no prior relationship with the issuer or the holder.</p>
+
+<p>If a verifier must email or call the issuer every time, the system does not scale. Verifiable credentials are built to avoid that dependency.</p>
+
+<p><br /></p>
+
+<h2 id="what-makes-a-digital-credential-verifiable">What Makes a Digital Credential “Verifiable”?</h2>
+
+<p>A digital credential is considered verifiable when certain conditions are met. These conditions are :-</p>
+
+<ol>
+  <li>
+    <p>First, the issuer must be clearly identifiable. A verifier should be able to see who issued the credential and confirm that the issuer is legitimate.</p>
+  </li>
+  <li>
+    <p>Second, the credential must be tamper-evident. Any attempt to alter the credential should break verification immediately.</p>
+  </li>
+  <li>
+    <p>Third, the credential must be tamper-evident. Any attempt to alter the credential should invalidate its cryptographic proof.</p>
+  </li>
+  <li>
+    <p>Fourth, the credential’s status must be checkable. This includes knowing whether the credential is active, expired, suspended or revoked.</p>
+  </li>
+</ol>
+
+<p>Finally, verification should work without manual intervention. The verifier should not need to email, call, or otherwise contact the issuer to confirm authenticity.</p>
+
+<p>In some use cases, verification may also include binding the credential to the presenter through <a href="https://www.prove.com/blog/what-is-cryptographic-authentication-why-are-leading-companies-moving-away-from-risk-based-authentication">cryptographic proof</a>, ensuring that the person presenting it is authorized to use it.</p>
+
+<p>When all of these conditions are met, a credential can truly be called verifiable.</p>
+
+<p><br /></p>
+
+<h2 id="why-verifiable-is-essential-for-badges-and-digital-credentials">Why “Verifiable” Is Essential for Badges and Digital Credentials</h2>
+
+<p>Let’s understand the importance of verifiability with a simple example.</p>
+
+<p>Imagine a person who needs to prove a professional qualification to a third party without revealing more personal information than necessary. At the same time, the third-party verifier needs strong assurance that the claim is authentic.</p>
+
+<p>In such a situation, a training institution issues a <a href="https://www.certifyme.online/blog/Understanding-W3C-Verifiable-Credentials.html">W3C verifiable credential</a>. The credential contains structured claims about the individual and is cryptographically signed by the issuer.</p>
+
+<p>When the credential is presented, the verifier can :</p>
+
+<ol>
+  <li>Check the issuer’s digital signature</li>
+  <li>Confirm that the credential has not been altered</li>
+  <li>Check whether the credential is still valid</li>
+  <li>Optionally verify that the presenter is authorized to use it</li>
+</ol>
+
+<p>This process can be triggered through practical workflows such as scanning a QR code or using a verification portal. In some implementations, additional steps like one-time passwords (OTP) may be used for access control.</p>
+
+<p>However, the core “verifiable” property does not come from the QR code or OTP itself. It comes from the underlying cryptographic proof and status check that confirm authenticity and integrity.</p>
+
+<p>The issuer does not need to be contacted personally for each verification and the holder does not need to disclose unnecessary sensitive information. This allows trust to scale while maintaining privacy.</p>
+
+<p><br /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>In digital credentials, “verifiable” is not just a label. It is a defining property based on independent, tamper-evident and standardized verification.</p>
+
+<p>While many credentials may be digital, only those designed for independent cryptographic verification and status validation truly qualify as verifiable credentials.</p>
+
+<p>Understanding this distinction helps organizations and individuals choose credentialing systems that scale trust, not just storage. In a world where credentials are widely shared and quickly evaluated, verifiability is what turns digital information into reliable proof.</p>
+
+:ET

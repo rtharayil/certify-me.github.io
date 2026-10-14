@@ -1,0 +1,15 @@
+I"ë<section class="container py-5" aria-labelledby="trust-evidence-title">
+  <h2 id="trust-evidence-title">Evidence for institutional procurement</h2>
+  <p>SOC 2 Type II Attested: examination period 1 Februaryâ€“30 April 2026; criteria Security, Availability and Confidentiality. The restricted-use report is available through an appropriate procurement process, not as a public website download. Review its scope, complementary customer controls and subservice responsibilities before relying on it for your implementation.</p>
+  <div class="table-responsive" tabindex="0" role="region" aria-label="Certification scopes and printed expiry dates">
+    <table class="table">
+      <thead><tr><th scope="col">Management-system standard</th><th scope="col">Scope</th><th scope="col">Printed expiry</th></tr></thead>
+      <tbody><tr><th scope="row">ISO/IEC 27001:2022</th><td>Information security management</td><td>4 June 2027</td></tr><tr><th scope="row">ISO/IEC 27701:2019</th><td>Privacy information management</td><td>5 September 2027</td></tr><tr><th scope="row">ISO 9001:2015</th><td>Quality management</td><td>28 April 2027</td></tr><tr><th scope="row">ISO 14001:2015</th><td>Environmental management</td><td>16 September 2028</td></tr><tr><th scope="row">ISO 22301:2019</th><td>Business continuity management</td><td>8 February 2029</td></tr></tbody>
+    </table>
+  </div>
+  <p>Request current certificates and surveillance information during procurement. Printed expiry dates alone do not establish continuing certification status.</p>
+  <h3>Shared responsibilities before rollout</h3>
+  <p>Agree identity and access policies, evidence requirements, retention, correction, revocation, backup and continuity arrangements. Validate the actual <a href="/api/">API permissions</a>, <a href="/allIntegrations.html">integration workflows</a> and <a href="/certificate-verification">credential-verification process</a> for your institution.</p>
+  <p>Standards scope: <a href="https://site.imsglobal.org/certifications/certifyme/certifyme" target="_blank" rel="noopener noreferrer">1EdTech's registry</a> lists Open Badges 3.0 Issuer and CLR 2.0 Issuer/Displayer roles. These certifications do not establish universal wallet acceptance or certify every individual record.</p>
+</section>
+:ET

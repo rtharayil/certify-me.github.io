@@ -1,0 +1,207 @@
+I"�(<p>This guide covers preparing, issuing and sharing digital credentials with students.</p>
+
+<p>Plan the rollout around templates, award approvals, recipient data and delivery. Technical requirements depend on your systems and selected integration.</p>
+
+<p>After issuance, explain how students can access and share their credentials.</p>
+
+<p><br /></p>
+
+<h2 id="tldr">TL;DR</h2>
+
+<ol>
+  <li>Digital credentials can be created easily using ready-made templates without technical expertise.</li>
+  <li>Institutions can issue credentials instantly to individual students using quick issuance features.</li>
+  <li>Bulk issuance allows universities to award credentials to entire batches using a simple CSV upload.</li>
+  <li>A structured digital credentialing platform ensures secure sharing, scalability, and long-term verification.</li>
+</ol>
+
+<p><br /></p>
+
+<h2 id="how-to-create-a-verifiable-credential">How to Create a Verifiable Credential?</h2>
+
+<p>Creating a <a href="https://www.certifyme.online/blog/Understanding-W3C-Verifiable-Credentials.html">verifiable credential</a> on CertifyMe is a structured but simple process. Universities and educational institutions can design certificates or badges without any technical setup by following these steps.</p>
+
+<p><br /></p>
+
+<h3 id="log-in-or-create-a-certifyme-account">Log In or Create a CertifyMe Account</h3>
+
+<p><img class="img-fluid r-16" src="/assets4/images/Glossary/certifyMe-dashboard.png" alt="CertifyMe dashboard" style="display: block; margin: 0 auto; width:70%;" /></p>
+
+<p><br /></p>
+
+<p>Start by logging in to your CertifyMe account. If you do not already have an account, you can sign up using basic institutional details. Once logged in, you will land on the dashboard.</p>
+
+<p>From the dashboard, look at the left-hand menu. Just below the Home button, you will find the Design Template option. Click on it to begin creating a new credential.</p>
+
+<p><br /></p>
+
+<h3 id="follow-three-simple-steps-to-create-credential">Follow Three Simple Steps to Create Credential</h3>
+
+<p><img class="img-fluid r-16" src="/assets4/images/Glossary/design-template-page.png" alt="Design template page" style="display: block; margin: 0 auto; width:70%;" /></p>
+
+<p><br /></p>
+
+<p>Now, click on “Design Template” to access the credential template editor. Here, you’ll find three simple steps to create your own template.</p>
+
+<p><br /></p>
+
+<p><strong>Step 1: Update your program details.</strong></p>
+
+<p><img class="img-fluid r-16" src="/assets4/images/Glossary/program-details-page.png" alt="Program details page" style="display: block; margin: 0 auto; width:70%;" /></p>
+
+<p><br /></p>
+
+<p>In this section, you will enter the core information of your credential, including:</p>
+
+<ol>
+  <li>Credential name</li>
+  <li>Issuing institution name</li>
+  <li>Credential description to provide context</li>
+  <li>Acquired skills that learners gain through the program</li>
+  <li>Credential signatory name</li>
+  <li>Earning criteria that define how the credential is achieved</li>
+</ol>
+
+<p>This information helps verifiers clearly understand what the credential represents and how it was earned.</p>
+
+<p><br /></p>
+
+<p><strong>Step 2: Edit your credential template image</strong></p>
+
+<p><img class="img-fluid r-16" src="/assets4/images/Glossary/credential-customisation-page.png" alt="Credential customisation page" style="display: block; margin: 0 auto; width:70%;" /></p>
+
+<p><br /></p>
+
+<p>Click on Edit this image, which opens the visual editor. Here, you can fully customize the look of your certificate or badge. You can adjust layout elements, text placement, and visual components to match your institution’s branding. Once customization is complete, click Save to apply the changes.</p>
+
+<p><strong>Step 3: Update your branding details</strong></p>
+
+<p><img class="img-fluid r-16" src="/assets4/images/Glossary/branding-details-page.png" alt="Branding details page" style="display: block; margin: 0 auto; width:70%;" /></p>
+
+<p><br /></p>
+
+<p>You can enhance the credential with additional branding elements, like:</p>
+
+<ol>
+  <li>Marketing banner</li>
+  <li>Branding message</li>
+  <li>Call-to-action button label</li>
+  <li>Call-to-action link</li>
+  <li>Optional video link</li>
+</ol>
+
+<p>These elements help institutions extend brand visibility while keeping the credential informative and professional.</p>
+
+<p>After completing all three steps, finalize the process by clicking Save my credential template. Your verifiable credential certificate or badge is now ready to be issued to students.</p>
+
+<p><br /></p>
+
+<h2 id="how-to-issue-a-credential-to-a-student">How to Issue a Credential to a Student?</h2>
+
+<p>Once your credential template is ready, issuing it to a student is a quick and straightforward process. In CertifyMe, this is done using the Quick Award feature, which is ideal for issuing individual credentials.</p>
+
+<p><br /></p>
+
+<h3 id="step-1-select-the-credential-template">Step 1: Select the Credential Template</h3>
+
+<p><img class="img-fluid r-16" src="/assets4/images/Glossary/credential-templates-on-home-page.png" alt="Credential templates on home page" style="display: block; margin: 0 auto; width:70%;" /></p>
+
+<p><br /></p>
+
+<p>Start by going to the Home page of your CertifyMe dashboard. Here, you will see all the credential templates you have already created.</p>
+
+<p>Click on the “more” button of the template you want to issue and select “award credential” from the drop down menu. This will take you to the Award Credentials page.</p>
+
+<p><br /></p>
+
+<h3 id="step-2-use-the-quick-award-option">Step 2: Use the Quick Award Option</h3>
+
+<p><img class="img-fluid r-16" src="/assets4/images/Glossary/certifyme-quick-award-feature.png" alt="CertifyMe’s quick award feature" style="display: block; margin: 0 auto; width:70%;" /></p>
+
+<p><br /></p>
+
+<p>On the Award Credentials page, you will see the credential preview on the left side. On the right-hand side, you will find the Quick Award section.</p>
+
+<p>In this section, enter:</p>
+
+<ol>
+  <li>The name of the awardee</li>
+  <li>The email address of the awardee</li>
+</ol>
+
+<p>The email address is important, as the issued credential will be delivered directly to the student’s inbox.</p>
+
+<p><br /></p>
+
+<h3 id="step-3-award-the-credential">Step 3: Award the Credential</h3>
+
+<p>After filling in the required details, simply click on Award.</p>
+
+<p>The credential is instantly issued and sent to the student via email. The student can then access, store, and share the credential securely using the verification link provided.</p>
+
+<p><br /></p>
+
+<h2 id="automating-credential-issuance-at-scale">Automating Credential Issuance at Scale</h2>
+
+<p>Universities and educational institutions rarely issue credentials one at a time. In most cases, <a href="https://www.certifyme.online/blog/linkedin-badges-for-companies.html">digital badges</a>, certificates or transcripts are awarded to entire batches of students at once. This is where bulk issuance becomes essential. Instead of repeating the same steps for every student, bulk issuing allows institutions to issue hundreds or even thousands of credentials in a single workflow, saving both time and effort.</p>
+
+<p>CertifyMe’s Bulk Award feature is designed specifically for this purpose.</p>
+
+<p><br /></p>
+
+<h3 id="step-1-click-on-the-bulk-award-option">Step 1: Click on the Bulk Award Option</h3>
+
+<p><img class="img-fluid r-16" src="/assets4/images/Glossary/certifyme-bulk-award-feature.png" alt="CertifyMe’s bulk award feature" style="display: block; margin: 0 auto; width:70%;" /></p>
+
+<p><br /></p>
+
+<p>From the Award Credentials page, select the credential template you want to issue. Just below the selected certificate, you will find the Bulk Award button.</p>
+
+<p>Clicking on this button will take you to the Bulk Award page.</p>
+
+<h3 id="step-2-download-the-sample-csv-file">Step 2: Download the Sample CSV File</h3>
+
+<p><img class="img-fluid r-16" src="/assets4/images/Glossary/download-sample-CSV-file.png" alt="Download sample CSV file" style="display: block; margin: 0 auto; width:70%;" /></p>
+
+<p><br /></p>
+
+<p>On the Bulk Award page, the first step is to download the sample CSV file.</p>
+
+<p>This file contains the required structure for bulk issuance. You simply need to add student details such as names and email addresses for all recipients in this file. Once all the information is added, save the file on your system.</p>
+
+<p><br /></p>
+
+<h3 id="step-3-upload-the-completed-csv-file">Step 3: Upload the Completed CSV File</h3>
+
+<p><img class="img-fluid r-16" src="/assets4/images/Glossary/upload-CSV-file-with-awardees-details.png" alt="Upload CSV file with awardee’s details" style="display: block; margin: 0 auto; width:70%;" /></p>
+
+<p><br /></p>
+
+<p>After preparing the CSV file, return to the Bulk Award page and click Next.</p>
+
+<p>You will now see the option to upload your file. Click on Choose File, select the completed CSV file, and proceed by clicking Next again.</p>
+
+<p>At this stage, CertifyMe fetches and displays all the student data from the file, allowing you to review the details before issuance.</p>
+
+<p><br /></p>
+
+<h3 id="step-4-initiate-bulk-issuance">Step 4: Initiate Bulk Issuance</h3>
+
+<p><img class="img-fluid r-16" src="/assets4/images/Glossary/bulk-award-CSV-file-preview.png" alt="Bulk award CSV file preview" style="display: block; margin: 0 auto; width:70%;" /></p>
+
+<p><br /></p>
+
+<p>Once everything looks correct, click on Award Credentials in Bulk to start the issuance process.</p>
+
+<p>If your workflow requires approval, the credentials can be sent to the Drafts section for review before being issued. Otherwise, the credentials are directly sent to the students’ email addresses.</p>
+
+<p>This approach ensures fast, accurate, and scalable credential issuance without manual repetition.</p>
+
+<p><br /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Creating and sharing digital credentials does not have to be complex or technical. With the right platform in place, educational institutions can design, issue, and manage credentials in a structured and secure way.</p>
+
+<p>From single awards to large-scale bulk issuance, <a href="https://www.certifyme.online/">CertifyMe</a> simplifies student record management from day one. So, if you are ready to digitize your credential issuance process, start for free with us.</p>
+:ET

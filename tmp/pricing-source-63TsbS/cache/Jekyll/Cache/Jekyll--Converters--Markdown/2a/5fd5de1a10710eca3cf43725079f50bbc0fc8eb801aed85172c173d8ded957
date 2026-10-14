@@ -1,0 +1,37 @@
+I"ê<p>Credential security depends on trustworthy issuance, appropriate proof checking and record maintenance. It should not be reduced to a blanket blockchain or encryption claim.</p>
+
+<h2 id="separate-record-integrity-from-issuer-authority">Separate record integrity from issuer authority</h2>
+
+<p>A supported proof mechanism can help detect changes to signed data. A verifier must also assess who issued the achievement and whether that issuer is authoritative for the use case. The <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C trust roles</a> make this distinction explicit.</p>
+
+<p><img class="img-fluid r-16" src="/img/blog/How does CertifyMe-authenticity-of-digital-credentials.png" alt="Image showing CertifyMe ensuring the integrity and authenticity of digital credentials" style="display: block; margin: 0 auto;" /></p>
+
+<h2 id="separate-credential-proof-from-platform-controls">Separate credential proof from platform controls</h2>
+
+<p>Authentication, permissions, monitoring and data protection govern the platform. A <a href="/platform-overview">governed credential lifecycle</a> determines approval, issuance and correction responsibilities. Neither control category replaces the other.</p>
+
+<p><img class="img-fluid r-16" src="/img/blog/How does CertifyMe handle the validation of digital credentials-by-third-parties.png" alt="Image showing how CertifyMe handles validation by third parties" style="display: block; margin: 0 auto;" /></p>
+
+<h2 id="describe-standards-accurately">Describe standards accurately</h2>
+
+<p><a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges achievement credentials</a> carry achievement information with an applicable proof mechanism. Do not infer that every credential is stored on a blockchain or that the format independently verifies real-world recipient identity.</p>
+
+<p><img class="img-fluid r-16" src="/img/blog/How-does-CertifyMe-handle-user-authentication-and-access-control.png" alt="Image showing CertifyMe handle user authentication and access control?" style="display: block; margin: 0 auto;" /></p>
+
+<h2 id="use-the-actual-assurance-scope">Use the actual assurance scope</h2>
+
+<p>The <a href="/security/">security page</a> describes approved SOC 2 Type II attestation wording, distinct ISO management-system purposes and enterprise authentication. A GDPR policy is not an independent GDPR certification; ISO quality and environmental scopes are not cybersecurity certifications.</p>
+
+<h2 id="security-aligned-with-institutional-operations">Security aligned with institutional operations</h2>
+
+<p>Authentication, evidence access, record maintenance and continuity support institutional credential operations. Deployment and residency terms establish the agreed scope for storage, backups and support access.</p>
+
+<h2 id="verification-results-with-clear-meaning">Verification results with clear meaning</h2>
+
+<p>Supported proof checks can reveal changes to signed credential data. Verification also depends on available issuer and status resources; an unresolved resource remains an unresolved check. This gives receiving teams a meaningful result rather than treating every record as equally verified.</p>
+
+<h2 id="plan-your-next-step">Plan your next step</h2>
+
+<p>Explore CertifyMe‚Äôs credential verification and enterprise security foundations for your institution. <a href="https://info.certifyme.online/request-demo">Request an institutional demo</a>.</p>
+
+:ET

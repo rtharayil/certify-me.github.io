@@ -1,0 +1,57 @@
+I"�<p>In healthcare, “digital certificate” can mean a clinician’s training award, a public-key certificate securing a service, or a record of organizational accreditation. These are not interchangeable. A course badge does not encrypt patient records, provide two-factor authentication or establish a clinician’s licence to practise.</p>
+
+<h2 id="three-records-with-different-owners">Three records with different owners</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Record</th>
+      <th>Accountable owner</th>
+      <th>What to verify</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Training or continuing-education credential</td>
+      <td>Education team and authorized awarding body</td>
+      <td>Recipient, course, assessment or attendance criteria, dates and award status</td>
+    </tr>
+    <tr>
+      <td>TLS or client-authentication certificate</td>
+      <td>IT/security and certificate authority</td>
+      <td>Key binding, trust chain, permitted use, expiry and revocation</td>
+    </tr>
+    <tr>
+      <td>Professional licence or facility accreditation</td>
+      <td>Regulator or accrediting organization</td>
+      <td>Current official register, jurisdiction, scope and restrictions</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>An institution can connect these workflows, but should not collapse them into a single “verified” label. For the technical distinction, see <a href="/blog/Most-Common-Types-of-Digital-certificate.html">common public-key certificate types</a>.</p>
+
+<h2 id="hipaa-soc-2-and-accreditation-are-separate-questions">HIPAA, SOC 2 and accreditation are separate questions</h2>
+
+<p>The <a href="https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html">US Department of Health and Human Services</a> explains that HIPAA applies to covered entities and business associates. Where a business associate handles protected health information, the required contractual arrangement and applicable safeguards must be addressed. Issuing a training certificate is not automatic HIPAA compliance, and not every education record is protected health information.</p>
+
+<p>SOC 2 is an attestation report on specified controls and a defined system, not a clinician identity certificate or blanket approval for healthcare use. Ask for the current report, period, scope, exceptions and customer responsibilities. ISO certification and healthcare accreditation similarly have specific scopes. Do not infer that a platform holds an accreditation or meets a healthcare-network requirement from a generic security claim.</p>
+
+<h2 id="a-practical-staff-training-workflow">A practical staff-training workflow</h2>
+
+<ol>
+  <li>Education leads define whether the award recognizes attendance, assessed completion or a regulated credit requirement.</li>
+  <li>The credentialing office checks the recipient against its authoritative staff record and confirms the awarding authority.</li>
+  <li>IT and privacy teams approve the minimum data released. Keep patient cases, clinical identifiers and confidential feedback out of public credential pages.</li>
+  <li>Test issuance, correction, expiration and status checks with the actual receiving team. A link or QR code is an access route—not an independent identity check.</li>
+  <li>Keep licences and mandatory employment authorizations checked against the relevant regulator, even when staff also carry training badges.</li>
+</ol>
+
+<p>A hospital education department could recognize completion of an assessed infection-control refresher. The credential describes that course and its criteria; it does not certify professional licensure or claim that a patient-data system is secure.</p>
+
+<p>For a standards-based achievement record, review the <a href="https://www.w3.org/TR/vc-data-model-2.0/">W3C credential model</a> and your receiver’s supported proof mechanisms. Proof checking supports integrity and signing authority; assessment quality and real-world identity assurance remain separate.</p>
+
+<h2 id="procurement-and-reporting">Procurement and reporting</h2>
+
+<p>Use <a href="/platform-overview">credential infrastructure governance</a> to assign issuance and maintenance responsibilities. Count approved completions, missing records, correction rates and overdue refreshers. Do not treat credential-page views as evidence of patient safety or regulatory compliance. <a href="https://info.certifyme.online/request-demo">Discuss a staff-training credential pilot</a> with a defined data and approval boundary.</p>
+:ET

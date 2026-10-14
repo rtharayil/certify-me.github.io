@@ -1,0 +1,291 @@
+I"Xb<p data-comparison-summary="certifier">Certifier documents certificate and badge issuance, OB3, API automation and enterprise controls. CertifyMe's institutional approach connects presentation and access, standards, verification, reviewed skills, a Comprehensive Learner Record and workforce intelligence through its own Job Engine. A certification body or university looking beyond automated delivery should compare how approved achievements retain evidence, connect to skills and remain useful in a broader record. Keep the issuance workflow and the downstream academic or workforce requirements separate when evaluating each platform.</p>
+
+<p><strong>Evidence checked 4 October 2026.</strong> Competitor statements below link to current official product, pricing or legal sources. CertifyMe references identify its own product information or the public standards registry. These are documented claims, not authenticated feature tests. <strong>NOT PUBLICLY SPECIFIED</strong> means unverified in the reviewed sources, never that a vendor lacks the feature.</p>
+
+<p>Certifier and CertifyMe both offer digital achievement credentialing. Treat this as an institutional evaluation, not a claim that one only makes PDFs. This comparison is published by CertifyMe, and sources were checked on 4 October 2026.</p>
+
+<h2 id="certifier-is-more-than-a-pdf-generator">Certifier is more than a PDF generator</h2>
+
+<p><a href="https://certifier.io/">Certifier’s current site</a> describes an AI-powered platform for <strong>verifiable certificates, credentials and badges</strong>, connecting to existing tools and running certifications from one place. Its <a href="https://certifier.io/integrations">integration directory</a> is an appropriate starting point for a connector checklist. Those descriptions do not justify labeling the product event-only or asserting that a university will outgrow it.</p>
+
+<p>For a continuing-education team, evaluate recipient delivery, the distinction between a downloaded PDF and its verifiable record, renewal/correction handling and integration entitlement. Ask for exact standards versions, proof mechanisms and current certification identifiers. Do not infer lack of support from a homepage that does not mention a feature.</p>
+
+<h2 id="evidence-led-comparison">Evidence-led comparison</h2>
+
+<table data-comparison-evidence="certifier" style="width:100%;border-collapse:collapse;">
+  <thead><tr><th scope="col" style="padding:8px;border:1px solid #ddd;">Dimension</th><th scope="col" style="padding:8px;border:1px solid #ddd;">Certifier</th><th scope="col" style="padding:8px;border:1px solid #ddd;">CertifyMe</th></tr></thead>
+  <tbody>
+  
+  
+  <tr data-evidence-dimension="ICP">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Who it serves</th>
+    <td style="padding:8px;border:1px solid #ddd;">Organizations running certification programmes, including small teams and enterprise credential issuers.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Institutional issuers: universities, professional bodies, enterprises and training organizations.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Positioning">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Positioning</th>
+    <td style="padding:8px;border:1px solid #ddd;">Digital certificate and badge issuance with branded delivery and enterprise credential workflows.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Connected institutional credential infrastructure linking awards, reviewed skills, learner records and Job Engine workforce intelligence.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Credentialing">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Credentialing</th>
+    <td style="padding:8px;border:1px solid #ddd;">Design, generate, send, manage and verify digital certificates and badges.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Digital credential issuance and verification with open-standard achievement and record context.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Digital Badges">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Digital Badges</th>
+    <td style="padding:8px;border:1px solid #ddd;">Vendor documents digital badge issuance and automatic OB3 compliance for issued badges.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Digital badges represent institution-authorized achievements; confirm the implemented format.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Open Badges">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Open Badges</th>
+    <td style="padding:8px;border:1px solid #ddd;">Official OB3 guide states that issued badges support Open Badges 3.0 and claims 1EdTech certification. Exact registry role and sample export should be checked.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Public registry lists active Open Badges 3.0 Issuer certification for the specified CertifyMe product.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="W3C VC">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">W3C Verifiable Credentials</th>
+    <td style="padding:8px;border:1px solid #ddd;">Not specified in the reviewed public sources</td>
+    <td style="padding:8px;border:1px solid #ddd;">OB3/CLR achievement profiles use the VC model. No general W3C certification or universal v2.0/proof-suite support is inferred.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="CLR">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Learner records (CLR)</th>
+    <td style="padding:8px;border:1px solid #ddd;">Not specified in the reviewed public sources</td>
+    <td style="padding:8px;border:1px solid #ddd;">Public registry lists active CLR 2.0 Issuer and Displayer roles for the specified product.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Skills">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Skills</th>
+    <td style="padding:8px;border:1px solid #ddd;">Skills are listed in the credential design feature matrix. Automatic taxonomy mapping is Not specified in the reviewed public sources.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Institution-led taxonomy mapping keeps reviewed outcomes and evidence authoritative; no native reference-framework connector is inferred.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Learner Records">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Learner Records</th>
+    <td style="padding:8px;border:1px solid #ddd;">Learning pathway creation is listed; a standards-based aggregate learner-record profile is Not specified in the reviewed public sources.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Connected achievements with issuer/evidence provenance; a learner-facing Skill Passport is not a new standards certification.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Workforce Intelligence">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Workforce Intelligence</th>
+    <td style="padding:8px;border:1px solid #ddd;">Not specified in the reviewed public sources</td>
+    <td style="padding:8px;border:1px solid #ddd;">Credential-associated skills are related to occupational/hiring context. Source permissions, coverage and contractual availability require review.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Verification">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Verification</th>
+    <td style="padding:8px;border:1px solid #ddd;">OB3 guide describes badge metadata, a unique identifier and verification; test a real export and status lifecycle.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Check record proof, issuer and relevant lifecycle resources; this is not independent identity verification.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Analytics">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Analytics</th>
+    <td style="padding:8px;border:1px solid #ddd;">Advanced analytics is listed in paid-plan and enterprise features; confirm metrics and plan access.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Credential/programme analytics are documented; agree metrics and export requirements rather than treating engagement as a career outcome.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="API">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">API</th>
+    <td style="padding:8px;border:1px solid #ddd;">Pricing lists API access and documentation; legal terms define API access and its agreement/order conditions.</td>
+    <td style="padding:8px;border:1px solid #ddd;">API documentation and integration workflows are published; confirm the current field contract, authentication, entitlements and retry behavior.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Integrations">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Integrations</th>
+    <td style="padding:8px;border:1px solid #ddd;">Pricing and enterprise documentation list automation connections, including Zapier, Make and Pipedream, with tailored integrations at enterprise level.</td>
+    <td style="padding:8px;border:1px solid #ddd;">An integrations directory is published; validate each required connector and scope before procurement.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Security">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Security</th>
+    <td style="padding:8px;border:1px solid #ddd;">Security hub states ISO 27001 and ISO 9001 certification and GDPR practices; explicitly says it has no separate SOC 2 compliance report. Request current certificate scope.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Public security page states scoped assurance information. Review examination period, management-system scope, customer controls and current documents.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Data Residency">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Data Residency</th>
+    <td style="padding:8px;border:1px solid #ddd;">Security hub states infrastructure is hosted on AWS within Europe. This alone does not establish EU-only processing or a selectable worldwide residency guarantee.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Hosting is available globally. Confirm storage locations, backups, support access and transfers against the data-residency terms in your contract.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Pricing">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Pricing</th>
+    <td style="padding:8px;border:1px solid #ddd;">Public free and paid tiers with annual issuing limits, billing choices and custom Enterprise pricing. Values vary with selected volume and billing; obtain a like-for-like quote.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Assess the current public plan/enterprise quote, volume, inclusions and deployment requirements; no universal competitor price advantage is claimed.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Contract">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Contract</th>
+    <td style="padding:8px;border:1px solid #ddd;">Terms define monthly/multiple-month or annual subscription periods and a minimum obligation for each subscription term; API terms may depend on the agreement/order.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Confirm actual minimum term, renewal, SLA, retention and verification continuity in the agreement.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Higher Education">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Higher Education</th>
+    <td style="padding:8px;border:1px solid #ddd;">Enterprise product article explicitly discusses university continuing education and microcredential workflows.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Higher-education credentials connect academic awards, reviewed skills, learner records and career relevance under institutional authority.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Enterprise">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Enterprise</th>
+    <td style="padding:8px;border:1px solid #ddd;">Enterprise page lists SAML SSO, audit logs, custom DPA/SLA, roles, white-labeling and tailored integrations.</td>
+    <td style="padding:8px;border:1px solid #ddd;">SSO and MFA are standard for enterprise customers. Confirm supported protocols, deployment details and contractual controls for your institution.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Certification Bodies">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Certification Bodies</th>
+    <td style="padding:8px;border:1px solid #ddd;">Enterprise article documents membership, partner and customer certification workflows; confirm the professional body&#39;s specific approval and renewal requirements.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Programme owners retain assessment, certification criteria, renewal and record authority.</td>
+  </tr>
+  
+  
+  <tr data-evidence-dimension="Workforce Use Cases">
+    <th scope="row" style="padding:8px;border:1px solid #ddd;">Workforce Use Cases</th>
+    <td style="padding:8px;border:1px solid #ddd;">Enterprise and partner training/certification issuance workflows; a labour-market intelligence product is not established by these use cases.</td>
+    <td style="padding:8px;border:1px solid #ddd;">Institutional curriculum relevance and career context; no employment or salary guarantee.</td>
+  </tr>
+  
+  </tbody>
+</table>
+<p class="small">Based on official sources checked 4 October 2026. See Sources &amp; References below. Published capabilities and security statements should be confirmed against your programme and contract.</p>
+
+<style>
+  .cm-infra { margin: 36px 0; padding: 28px; border: 1px solid #e2e1f5; border-radius: 14px; background: #fff; }
+  .cm-infra h2 { color: #282b75; font-size: 1.65rem; line-height: 1.3; margin-bottom: 14px; }
+  #main-content .cm-infra h3 { font-size: 18px !important; line-height: 1.35; margin: 0; color: #282b75; }
+  .cm-infra p { line-height: 1.65; }
+  .cm-infra .cm-infra-flow { color: #444078; font-weight: 600; line-height: 1.8; }
+  .cm-infra ol { list-style: none; padding: 0; margin: 24px 0; }
+  .cm-infra li { position: relative; display: grid; grid-template-columns: 36px minmax(160px, .7fr) minmax(0, 1.7fr); gap: 18px; padding: 16px 0; border-bottom: 1px solid #eeedf7; align-items: start; }
+  .cm-infra li p { margin: 0; font-size: .98rem; }
+  .cm-infra .cm-stage { border: 1px solid #4f46e5; color: #4f46e5; border-radius: 50%; width: 36px; height: 36px; display: grid; place-items: center; font-size: .85rem; font-weight: 700; background: #fff; }
+  .cm-infra li:not(:last-child)::after { content: "↓"; position: absolute; bottom: -12px; left: 12px; color: #4f46e5; background: #fff; z-index: 1; }
+  .cm-infra .cm-job-engine { border-top: 1px solid #e2e1f5; padding-top: 22px; margin-top: 24px; }
+  .cm-infra .cm-job-engine h3 { margin-bottom: 12px; }
+  .cm-infra .cm-job-flow { font-size: .9rem; color: #444078; line-height: 1.85; }
+  @media (max-width: 767.98px) {
+    .cm-infra { padding: 20px 16px; }
+    .cm-infra li { grid-template-columns: 36px minmax(0, 1fr); gap: 8px 14px; }
+    .cm-infra li p { grid-column: 2; }
+    .cm-infra h2 { font-size: 1.4rem; }
+  }
+</style>
+
+<section class="cm-infra" aria-label="Connected six-layer credential architecture" data-connected-infrastructure="">
+  <h2>Beyond an issuance workflow: the institutional handoffs</h2>
+  <p>Certifier documents automated issuance and enterprise controls. For a university or certification body, the next question is how issued achievements are interpreted and retained. CertifyMe connects presentation, standards and verification with reviewed skills, a CLR and Job Engine workforce insight.</p>
+  <p class="cm-infra-flow">Achievement → Credential → Standards → Verification → Skills → Learner Record → Workforce Intelligence → Opportunity</p>
+  <ol>
+    <li><span class="cm-stage" aria-hidden="true">01</span><h3>Presentation &amp; Access</h3><p>Design, credential pages, unique URLs, QR access and sharing make the achievement accessible. The visible record leads to its structured data; a QR code is access, not proof.</p></li>
+    <li><span class="cm-stage" aria-hidden="true">02</span><h3>Standards &amp; Interoperability</h3><p><a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges 3.0</a> and the <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C VC model</a> structure claims for compatible exchange. Confirm the implemented profile and receiver before relying on interoperability.</p></li>
+    <li><span class="cm-stage" aria-hidden="true">03</span><h3>Verification &amp; Trust</h3><p><a href="/certificate-verification">Verification</a> examines issuer authority, proof integrity and applicable status. That record supplies achievement context for skill review; valid proof alone does not establish competence or independent learner identity.</p></li>
+    <li><span class="cm-stage" aria-hidden="true">04</span><h3>Skill Taxonomy Alignment</h3><p>Academic review relates outcomes and evidence to <a href="/skills-taxonomy-mapping">ESCO, O*NET or institutional skill frameworks</a>. Those reviewed relationships can travel with the achievement into a learner record.</p></li>
+    <li><span class="cm-stage" aria-hidden="true">05</span><h3>Comprehensive Learner Record</h3><p>A <a href="/comprehensive-learner-record">CLR</a> connects achievements, skills and experiences with their provenance. It complements the transcript and supplies learning context for careers teams, not a replacement SIS.</p></li>
+    <li><span class="cm-stage" aria-hidden="true">06</span><h3>Workforce Intelligence &amp; Opportunity</h3><p><a href="/workforce-intelligence">Workforce Intelligence</a> relates reviewed skills and learner-record context to occupations, jobs and employers through the Job Engine. Opportunity insight informs decisions; it does not guarantee employment.</p></li>
+  </ol>
+  <p>CertifyMe connects institution-approved awards with supported automation, reviewed skills and learner records. API ownership and programme-specific record workflows bring that approach into institutional operations.</p>
+  <section class="cm-job-engine" aria-label="Job Engine workforce infrastructure" data-job-engine-story="">
+  <h3>Job Engine: the infrastructure behind workforce insight</h3>
+  <p>CertifyMe's <strong>Job Engine</strong>—CertifyMe's own job-farming engine—sources company and job-provider records, ingests and enriches them, normalises job attributes, and maps relevant skills and taxonomies. Structured occupation and job relationships turn those records into workforce and opportunity insight.</p>
+  <p class="cm-job-flow">Job sourcing <span aria-hidden="true">→</span> Ongoing ingestion <span aria-hidden="true">→</span> Enrichment <span aria-hidden="true">→</span> Normalisation <span aria-hidden="true">→</span> Skill/taxonomy mapping <span aria-hidden="true">→</span> Occupation/job structuring <span aria-hidden="true">→</span> Workforce insight</p>
+  <p><strong>20 million live jobs · 50,000 companies worldwide · refreshed every two weeks.</strong> This market context helps institutions review programme relevance and explore career pathways.</p>
+  <p>Connect institution-reviewed <a href="/skills-taxonomy-mapping">skills</a> in a <a href="/comprehensive-learner-record">learner record</a> with job and occupation information. Curriculum teams can examine employer demand; careers teams can explain how learning relates to roles and opportunities. <a href="/workforce-intelligence">Explore Workforce Intelligence</a>.</p>
+</section>
+  <p>Assess the implemented <a href="/platform-overview">credential infrastructure</a>, <a href="/security/">security and governance scope</a>, and <a href="/case-studies.html">documented institutional case evidence</a>. For a university programme, start with the <a href="/credentials-higher-education">higher-education journey</a>.</p>
+  <a class="btn r-04 btn--theme hover--black" href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer">Explore the Connected Credential Journey</a>
+</section>
+
+<h2 id="what-to-test-with-certifier">What to test with Certifier</h2>
+
+<p>Match annual issuance limits and billing to your programme. Test an OB3 export, the actual CRM/LMS workflow, roles, audit logs and SSO. Do not equate ISO certification with a SOC 2 report.</p>
+
+<p>Use the same authorized test achievement on each shortlisted platform. Inspect issuer, recipient reference, criteria/evidence, exported format and proof. Test the receiving system, status changes, corrections and unavailable verification resources. Measure issuance and engagement separately from skills attainment or employment outcomes.</p>
+
+<h2 id="commercial-and-security-due-diligence">Commercial and security due diligence</h2>
+
+<p>Compare volume units, billing/renewal terms, entitlement, implementation and support, not isolated list prices. Review current security reports/certificates and their period, product scope and customer controls. Specify storage, backups, subprocessors, support access and international transfers in the contract.</p>
+
+<h2 id="institutional-context">Institutional context</h2>
+
+<p>CertifyMe’s <a href="/credentials-higher-education">higher-education solution</a> connects university awards with reviewed skills and learner records. The <a href="/platform-overview">platform overview</a> explains the infrastructure behind this approach, and <a href="/case-studies.html">customer case studies</a> show programme-specific adoption.</p>
+
+<p>Credential-proof verification checks the signed record; it does not independently establish the recipient’s identity.</p>
+
+<h2 id="cost-and-continuity-matter-beyond-issuance">Cost and continuity matter beyond issuance</h2>
+
+<p>Compare recipient/issuance limits, API access, branding, support, administrator roles, renewal operations and export rights in current written proposals. Security assertions require current scoped reports; neither standards support nor a marketing compliance logo substitutes for them. Before signing, document issuer-key and status-resource maintenance after migration.</p>
+
+<p>Use the <a href="/blog/What-is-Digital-Credential-Management-Platform.html">institutional platform buyer’s guide</a> for the full evaluation. This article’s distinct focus is certificate-production versus certification-lifecycle requirements—not a market ranking. <a href="https://info.certifyme.online/request-demo">Request a programme-specific demonstration</a> with the same test award for both products.</p>
+
+<h2 id="certifymes-institutional-scope">CertifyMe’s institutional scope</h2>
+
+<p>CertifyMe’s <a href="https://site.imsglobal.org/certifications/certifyme/certifyme">public 1EdTech listing</a> records OB3 Issuer and CLR 2.0 Issuer/Displayer roles. That conformance evidence should be read separately from privacy, security or assessment assurance. For connected achievements, inspect <a href="/comprehensive-learner-record">CLR governance</a> and how each source award retains its issuer and evidence.</p>
+
+<p>CertifyMe connects reviewed skills and learner records to workforce context. Its Job Engine covers 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks through its own job-farming engine. Review the workforce reports, mapping methodology and features included in your plan.</p>
+
+<h2 id="compare-the-actual-certification-workflow">Compare the actual certification workflow</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Requirement</th>
+      <th>Evidence available</th>
+      <th>Question for both vendors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Design and issuance</td>
+      <td>Both publish credential creation offerings</td>
+      <td>Can our authorized staff issue an accessible, correct award?</td>
+    </tr>
+    <tr>
+      <td>Verifiable record</td>
+      <td>Certifier describes verifiable credentials; CertifyMe has listed issuer roles</td>
+      <td>What is exported and what proof can our receiver check?</td>
+    </tr>
+    <tr>
+      <td>Lifecycle</td>
+      <td>Current behavior must be demonstrated</td>
+      <td>How do correction, renewal, expiry and status changes behave?</td>
+    </tr>
+    <tr>
+      <td>Programme integration</td>
+      <td>Both publish integration offerings</td>
+      <td>Which exact connector and plan handles our completion event?</td>
+    </tr>
+    <tr>
+      <td>Skills and records</td>
+      <td>CertifyMe describes institutional skills/record scope</td>
+      <td>How are outcome mappings reviewed and provenance retained?</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A strong pilot includes a duplicate completion event, an incorrect recipient address, an amended award and an unavailable status service. Record what needs manual intervention. A fast design experience does not by itself establish assessment quality, and a cryptographic proof does not independently identify the learner.</p>
+:ET

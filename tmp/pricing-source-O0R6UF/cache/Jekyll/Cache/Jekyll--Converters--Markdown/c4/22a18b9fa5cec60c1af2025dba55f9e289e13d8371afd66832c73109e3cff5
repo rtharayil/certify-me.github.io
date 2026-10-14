@@ -1,0 +1,45 @@
+I"�<p>A custom credential domain is a presentation and routing choice. It does not change who awards the achievement or make a record authentic by itself. Have the institution’s DNS administrator approve a dedicated subdomain and confirm the current platform target with CertifyMe before changing production DNS.</p>
+
+<h2 id="1-choose-a-dedicated-subdomain">1. Choose a dedicated subdomain</h2>
+
+<p>Examples include <code class="highlighter-rouge">badge.example.edu</code>, <code class="highlighter-rouge">certificate.example.edu</code> or <code class="highlighter-rouge">credential.example.edu</code>. These are fictional domains. Avoid replacing the institution’s main website, mail host or an existing service. Record who owns the DNS zone and who maintains the platform mapping.</p>
+
+<h2 id="2-add-the-confirmed-cname">2. Add the confirmed CNAME</h2>
+
+<p>The documented CertifyMe target in this guide is <code class="highlighter-rouge">app.certifyme.online</code>; confirm it with the onboarding team for the current setup. A typical record looks like:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Type:   CNAME
+Name:   certificate
+Target: app.certifyme.online
+TTL:    according to your DNS policy
+</code></pre></div></div>
+
+<p>Some providers want only the host label (<code class="highlighter-rouge">certificate</code>), while others accept a fully qualified name. Do not accidentally create <code class="highlighter-rouge">certificate.example.edu.example.edu</code>. A CNAME target is a hostname, not an HTTPS URL or a path. Check for conflicting records before adding it.</p>
+
+<h2 id="3-understand-the-routing-and-activation-flow">3. Understand the routing and activation flow</h2>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Recipient opens certificate.example.edu
+    -&gt; DNS resolves the CNAME target
+    -&gt; CertifyMe recognizes the approved custom hostname
+    -&gt; TLS certificate covers certificate.example.edu
+    -&gt; the requested credential page is served
+</code></pre></div></div>
+
+<p>DNS alone does not complete platform activation or TLS provisioning. Provide only the approved hostname through the normal onboarding channel; never send private keys, DNS account passwords or email credentials in a support message.</p>
+
+<h2 id="4-follow-your-current-dns-providers-instructions">4. Follow your current DNS provider’s instructions</h2>
+
+<p><a href="https://www.godaddy.com/help/add-a-cname-record-19236">GoDaddy’s maintained CNAME instructions</a> specify a host prefix in the Name field and explain that global updates can take up to 48 hours. Exact UI labels and propagation vary. For other registrars, use their current official documentation rather than an old Google Domains or BigRock menu sequence. The authoritative DNS provider may differ from the domain registrar.</p>
+
+<h2 id="5-test-before-distributing-links">5. Test before distributing links</h2>
+
+<p>Have IT confirm DNS resolution, the approved platform mapping and a valid TLS hostname without browser warnings. Open an authorized test credential on desktop and mobile, then check its sharing and verification links. Retain the official issuer identity and evidence/status behavior after branding.</p>
+
+<p>If DNS resolves but the page fails, check platform activation and TLS separately. If a browser warns about the certificate, stop distributing the link and resolve the hostname/certificate mismatch; do not instruct recipients to bypass the warning. Record an escalation owner and monitor renewals.</p>
+
+<h2 id="6-plan-maintenance-and-exit">6. Plan maintenance and exit</h2>
+
+<p>The institution owns its domain; the platform serves the record under the agreed mapping. Decide what happens to custom URLs, TLS, keys and status resources if the contract ends. Remove unused mappings under a controlled offboarding process to avoid leaving orphaned DNS.</p>
+
+<p>Use the <a href="/blog/white-labeling-and-branding-with-certifyme.html">branding implementation guide</a> for email and presentation, and <a href="/platform-overview">credential infrastructure governance</a> for record ownership. <a href="https://info.certifyme.online/request-demo">Discuss the current domain setup</a> before changing a live service.</p>
+:ET

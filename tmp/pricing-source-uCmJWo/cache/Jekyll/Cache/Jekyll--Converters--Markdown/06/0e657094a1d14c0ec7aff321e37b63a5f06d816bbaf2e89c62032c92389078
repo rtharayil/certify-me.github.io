@@ -1,0 +1,113 @@
+I"A3<p>Accredible, Certifier, Credly and CertifyMe all address digital achievement credentialing. Compare documented pathways, automated issuance and network discovery with your institution’s governed record requirements. CertifyMe connects presentation and access, standards, verification, reviewed skills, a Comprehensive Learner Record and Job Engine workforce intelligence. These capabilities overlap; the useful choice depends on how the handoffs serve your programme. This is CertifyMe’s own blog, not an independent ranking. Primary sources below were checked on 4 October 2026.</p>
+
+<h2 id="what-current-sources-actually-document">What current sources actually document</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Publicly documented scope</th>
+      <th>Evidence and next check</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Accredible</td>
+      <td>Certificates/badges, pathways, stackable credentials, learner spotlighting, OB3 and W3C VC export/ingestion</td>
+      <td><a href="https://www.accredible.com/">Product site</a> and <a href="https://www.accredible.com/newsroom/accredible-launches-support-for-open-badge-3-0-and-w3c-verifiable-credentials">January 2026 standards announcement</a>; test intended receiver</td>
+    </tr>
+    <tr>
+      <td>Certifier</td>
+      <td>Verifiable certificates, credentials and badges, AI-assisted creation, connected tools and certification operations</td>
+      <td><a href="https://certifier.io/">Product site</a>; confirm exact standards and lifecycle entitlement</td>
+    </tr>
+    <tr>
+      <td>Credly</td>
+      <td>Searchable credential network and external labour-market/occupation insights</td>
+      <td><a href="https://info.credly.com/">Product site</a> and <a href="https://info.credly.com/product/labor-market">Occupation Insights</a>; confirm relevant geography and mappings</td>
+    </tr>
+    <tr>
+      <td>CertifyMe</td>
+      <td>Institutional credentials, connected learning records, skills and workforce context; listed OB3/CLR roles</td>
+      <td><a href="https://site.imsglobal.org/certifications/certifyme/certifyme">1EdTech registry</a> and <a href="/platform-overview">platform scope</a>; test contract and receiver</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>These are source observations, not hands-on scores. Do not infer an unmentioned feature is absent. Certifier is not merely an event-PDF tool; Credly is not confined to internal Pearson recognition; Accredible documents newer standards explicitly.</p>
+
+<h2 id="choose-requirements-by-institutional-responsibility">Choose requirements by institutional responsibility</h2>
+
+<p>For a <strong>university</strong>, the registrar owns authoritative award records, academic teams approve assessment meaning, IT verifies interfaces and privacy, and career services reviews market interpretation. For a <strong>certification body</strong>, expiry, renewal and authority to award matter. For <strong>L&amp;D</strong>, account provisioning, recurring learning rules and integration failures matter. For a <strong>training provider</strong>, reliable delivery, recipient experience and controlled award criteria matter.</p>
+
+<p>None of these use cases is a sufficient reason to declare a vendor universally best. Ask each shortlisted vendor to demonstrate the same authorized sample and exception cases.</p>
+
+<h2 id="procurement-questions-to-ask">Procurement questions to ask</h2>
+
+<ol>
+  <li><strong>Standards:</strong> which exact format, version, proof and certified role apply to the product being offered? Check the current <a href="https://site.imsglobal.org/certifications">1EdTech registry</a>. Support and certification are distinct; certification is not a privacy/security audit.</li>
+  <li><strong>Lifecycle:</strong> how are corrections, renewals, expiration and revocation represented? What happens when a status endpoint is unavailable or cached?</li>
+  <li><strong>Integration:</strong> which connector, API permission and plan handle the actual SIS/LMS/HRIS event? Test retries, duplicates, failed delivery and account removal.</li>
+  <li><strong>Security:</strong> request current scoped audit documentation and applicable ISO certificates, with dates, exceptions, legal entity and hosting region. GDPR obligations are not a generic product certificate.</li>
+  <li><strong>Pricing:</strong> compare recipient and issuance limits, renewals, API access, domains, support, administrators and export—not only a headline per-credential cost.</li>
+  <li><strong>Continuity:</strong> what data and proof can be exported, and who maintains issuer keys, status and evidence resources after termination? Standards reduce some lock-in but do not guarantee issuer-independent verification forever.</li>
+  <li><strong>Career context:</strong> what is sourced market data versus an inferred skill match or measured employment outcome?</li>
+</ol>
+
+<h2 id="workforce-data-is-not-graduate-outcome-evidence">Workforce data is not graduate-outcome evidence</h2>
+
+<p>Credly describes external occupation insights and 24/7 job-posting updates. CertifyMe’s own job-farming engine covers 20 million live jobs from 50,000 companies worldwide, refreshed every two weeks. These first-party statements describe different datasets and update processes, not independently comparable benchmarks. Test relevance, freshness and geographic coverage against the same programme. A job match or salary band does not show that a learner obtained employment.</p>
+
+<h2 id="keep-broad-and-focused-comparisons-distinct">Keep broad and focused comparisons distinct</h2>
+
+<p>This overview supplies the common procurement framework. For specific operational decisions, read <a href="/blog/certifyme-vs-accredible-2026-comparison">Accredible standards and pathway overlap</a>, <a href="/blog/certifyme-vs-certifier-2026-comparison">Certifier certification-lifecycle requirements</a>, <a href="/blog/certifyme-vs-credly-2026-comparison">Credly external career context</a>, <a href="/blog/certifyme-vs-parchment-2026-comparison">Parchment’s broader university scope</a> or <a href="/blog/certifyme-vs-sertifier-2026-comparison">Sertifier governance and automation</a>.</p>
+
+<p>Use the <a href="/blog/What-is-Digital-Credential-Management-Platform.html">credential platform buyer’s guide</a> to record acceptance criteria. <a href="https://info.certifyme.online/request-demo">Request a scoped institutional demo</a> and judge each platform against those criteria, without relying on unsupported rankings or promised SEO, hiring or placement gains.</p>
+
+<style>
+  .cm-infra { margin: 36px 0; padding: 28px; border: 1px solid #e2e1f5; border-radius: 14px; background: #fff; }
+  .cm-infra h2 { color: #282b75; font-size: 1.65rem; line-height: 1.3; margin-bottom: 14px; }
+  #main-content .cm-infra h3 { font-size: 18px !important; line-height: 1.35; margin: 0; color: #282b75; }
+  .cm-infra p { line-height: 1.65; }
+  .cm-infra .cm-infra-flow { color: #444078; font-weight: 600; line-height: 1.8; }
+  .cm-infra ol { list-style: none; padding: 0; margin: 24px 0; }
+  .cm-infra li { position: relative; display: grid; grid-template-columns: 36px minmax(160px, .7fr) minmax(0, 1.7fr); gap: 18px; padding: 16px 0; border-bottom: 1px solid #eeedf7; align-items: start; }
+  .cm-infra li p { margin: 0; font-size: .98rem; }
+  .cm-infra .cm-stage { border: 1px solid #4f46e5; color: #4f46e5; border-radius: 50%; width: 36px; height: 36px; display: grid; place-items: center; font-size: .85rem; font-weight: 700; background: #fff; }
+  .cm-infra li:not(:last-child)::after { content: "↓"; position: absolute; bottom: -12px; left: 12px; color: #4f46e5; background: #fff; z-index: 1; }
+  .cm-infra .cm-job-engine { border-top: 1px solid #e2e1f5; padding-top: 22px; margin-top: 24px; }
+  .cm-infra .cm-job-engine h3 { margin-bottom: 12px; }
+  .cm-infra .cm-job-flow { font-size: .9rem; color: #444078; line-height: 1.85; }
+  @media (max-width: 767.98px) {
+    .cm-infra { padding: 20px 16px; }
+    .cm-infra li { grid-template-columns: 36px minmax(0, 1fr); gap: 8px 14px; }
+    .cm-infra li p { grid-column: 2; }
+    .cm-infra h2 { font-size: 1.4rem; }
+  }
+</style>
+
+<section class="cm-infra" aria-label="Connected six-layer credential architecture" data-connected-infrastructure="">
+  <h2>Compare platforms around a connected institutional journey</h2>
+  <p>These four providers have overlapping credential capabilities. CertifyMe&#39;s institutional approach connects presentation, standards and verification with reviewed skills, a CLR and its own Job Engine. Compare those handoffs alongside each vendor&#39;s documented strengths.</p>
+  <p class="cm-infra-flow">Achievement → Credential → Standards → Verification → Skills → Learner Record → Workforce Intelligence → Opportunity</p>
+  <ol>
+    <li><span class="cm-stage" aria-hidden="true">01</span><h3>Presentation &amp; Access</h3><p>Design, credential pages, unique URLs, QR access and sharing make the achievement accessible. The visible record leads to its structured data; a QR code is access, not proof.</p></li>
+    <li><span class="cm-stage" aria-hidden="true">02</span><h3>Standards &amp; Interoperability</h3><p><a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges 3.0</a> and the <a href="/blog/Understanding-W3C-Verifiable-Credentials.html">W3C VC model</a> structure claims for compatible exchange. Confirm the implemented profile and receiver before relying on interoperability.</p></li>
+    <li><span class="cm-stage" aria-hidden="true">03</span><h3>Verification &amp; Trust</h3><p><a href="/certificate-verification">Verification</a> examines issuer authority, proof integrity and applicable status. That record supplies achievement context for skill review; valid proof alone does not establish competence or independent learner identity.</p></li>
+    <li><span class="cm-stage" aria-hidden="true">04</span><h3>Skill Taxonomy Alignment</h3><p>Academic review relates outcomes and evidence to <a href="/skills-taxonomy-mapping">ESCO, O*NET or institutional skill frameworks</a>. Those reviewed relationships can travel with the achievement into a learner record.</p></li>
+    <li><span class="cm-stage" aria-hidden="true">05</span><h3>Comprehensive Learner Record</h3><p>A <a href="/comprehensive-learner-record">CLR</a> connects achievements, skills and experiences with their provenance. It complements the transcript and supplies learning context for careers teams, not a replacement SIS.</p></li>
+    <li><span class="cm-stage" aria-hidden="true">06</span><h3>Workforce Intelligence &amp; Opportunity</h3><p><a href="/workforce-intelligence">Workforce Intelligence</a> relates reviewed skills and learner-record context to occupations, jobs and employers through the Job Engine. Opportunity insight informs decisions; it does not guarantee employment.</p></li>
+  </ol>
+  <p>Define one award and its downstream use before comparing products. Assess programme engagement, network discovery, record authority, receiving systems and workforce-source scope as separate buyer requirements.</p>
+  <section class="cm-job-engine" aria-label="Job Engine workforce infrastructure" data-job-engine-story="">
+  <h3>Job Engine: the infrastructure behind workforce insight</h3>
+  <p>CertifyMe's <strong>Job Engine</strong>—CertifyMe's own job-farming engine—sources company and job-provider records, ingests and enriches them, normalises job attributes, and maps relevant skills and taxonomies. Structured occupation and job relationships turn those records into workforce and opportunity insight.</p>
+  <p class="cm-job-flow">Job sourcing <span aria-hidden="true">→</span> Ongoing ingestion <span aria-hidden="true">→</span> Enrichment <span aria-hidden="true">→</span> Normalisation <span aria-hidden="true">→</span> Skill/taxonomy mapping <span aria-hidden="true">→</span> Occupation/job structuring <span aria-hidden="true">→</span> Workforce insight</p>
+  <p><strong>20 million live jobs · 50,000 companies worldwide · refreshed every two weeks.</strong> This market context helps institutions review programme relevance and explore career pathways.</p>
+  <p>Connect institution-reviewed <a href="/skills-taxonomy-mapping">skills</a> in a <a href="/comprehensive-learner-record">learner record</a> with job and occupation information. Curriculum teams can examine employer demand; careers teams can explain how learning relates to roles and opportunities. <a href="/workforce-intelligence">Explore Workforce Intelligence</a>.</p>
+</section>
+  <p>Assess the implemented <a href="/platform-overview">credential infrastructure</a>, <a href="/security/">security and governance scope</a>, and <a href="/case-studies.html">documented institutional case evidence</a>. For a university programme, start with the <a href="/credentials-higher-education">higher-education journey</a>.</p>
+  <a class="btn r-04 btn--theme hover--black" href="https://info.certifyme.online/request-demo" target="_blank" rel="noopener noreferrer">Explore the Connected Credential Journey</a>
+</section>
+
+:ET

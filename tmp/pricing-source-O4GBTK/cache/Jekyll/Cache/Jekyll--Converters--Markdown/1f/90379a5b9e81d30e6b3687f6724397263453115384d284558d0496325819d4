@@ -1,0 +1,20 @@
+I"M<h2 id="how-university-credential-verification-works">How university credential verification works</h2>
+
+<ol>
+  <li>Locate the issued record through its link, QR code or supported credential file.</li>
+  <li>Inspect the issuer, recipient reference, achievement, criteria and evidence.</li>
+  <li>Validate supported cryptographic proof against the appropriate issuer information.</li>
+  <li>Check applicable expiry, status and revocation resources.</li>
+  <li>Record what was checked and resolve unavailable resources or inconsistent information.</li>
+</ol>
+
+<h2 id="open-standards-and-implementation">Open standards and implementation</h2>
+
+<p><a href="/blog/why-institutions-should-embrace-open-badges-3-0-standards">Open Badges 3.0</a> uses the <a href="https://www.w3.org/TR/vc-data-model-1.1/">W3C Verifiable Credentials model</a> for structured achievement claims. Agree supported credential versions, proof mechanisms, key rotation, status services and verification policies. Standards do not eliminate dependencies on maintained issuer resources.</p>
+
+<h2 id="institutional-use-cases">Institutional use cases</h2>
+
+<p>Registrars can define verification policies for digital diplomas and certificates. Receiving universities can review qualification evidence. Employers can inspect shared achievement records without treating a signed credential as independent identity verification.</p>
+
+<p>Connect verified achievements to <a href="/skills-taxonomy-mapping">skills taxonomy mapping</a> and <a href="/comprehensive-learner-record">Comprehensive Learner Records</a>, while preserving issuer provenance.</p>
+:ET

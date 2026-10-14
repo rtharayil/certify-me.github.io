@@ -1,0 +1,48 @@
+I"N<p>Businesses can use digital achievements to document approved training and make records easier to inspect. The value depends on assessment, governance and integration—not merely issuing more badges. A credential does not guarantee faster hiring, better retention, higher employee satisfaction or a promotion.</p>
+
+<h2 id="choose-the-business-problem">Choose the business problem</h2>
+
+<p>For hiring, identify which job-related award or assessment needs checking. For employee learning, define the milestone and evidence required. For recurring training, assign expiry, renewal and exception responsibilities. Do not confuse issuing a record with delivering the training or authorizing someone to work in a regulated role.</p>
+
+<p>The <a href="/platform-overview">credential infrastructure overview</a> connects approval, issuance, verification and maintenance. Academic or programme owners retain responsibility for what an award means; a platform transports and presents their claim.</p>
+
+<h2 id="a-business-workflow-with-accountable-owners">A business workflow with accountable owners</h2>
+
+<ol>
+  <li>The programme owner publishes attendance, completion or assessment criteria.</li>
+  <li>An authorized assessor approves the evidence; HR or the record owner confirms the recipient association.</li>
+  <li>IT maps approved completion data to the supported issuance interface and tests permissions, retries and duplicates.</li>
+  <li>The recipient receives a clear award and optional sharing instructions. Public data is minimized.</li>
+  <li>The owner handles corrections, renewal, applicable status resources and retention.</li>
+</ol>
+
+<p>A service team completes an assessed product-support module. Its credential describes that module and criteria, while a manager separately decides whether the employee is ready for a particular assignment.</p>
+
+<h2 id="verification-is-not-a-skills-guarantee">Verification is not a skills guarantee</h2>
+
+<p>The <a href="https://www.w3.org/TR/vc-data-model-2.0/">W3C VC model</a> describes structured issuer claims and roles. A supported signature can make a record tamper-evident; it does not independently establish issuer accreditation, recipient identity or competence beyond the assessment. Blockchain is optional. Wallet portability depends on the actual format, proof, receiver and availability of issuer keys/status resources.</p>
+
+<p>For hiring, review <a href="/blog/Build-an-unbiased-workforce-with-Verified-Credentials.html">evidence-aware fair hiring</a>. Treat alternative learning evidence consistently and do not make one platform or issuer pedigree a hidden prerequisite.</p>
+
+<h2 id="measure-operational-and-people-outcomes-separately">Measure operational and people outcomes separately</h2>
+
+<p>Compare approval-to-issuance time, correction rates, unresolved checks, renewal administration and support costs against a documented baseline. Include licences, integration, support, governance and continuity in total cost—not only printing saved.</p>
+
+<p>Engagement surveys, retention, employee net promoter scores and hiring performance require their own measurement. Badge views are not a substitute. Employees should not be expected to complete required work outside paid or otherwise applicable working arrangements simply because a course is online.</p>
+
+<h2 id="connected-workflows-for-organisational-learning">Connected workflows for organisational learning</h2>
+
+<p>Supported connectors and APIs bring institution-approved programme information into credential workflows. Connection options depend on the relevant systems and supported actions. The <a href="/blog/three-top-credly-alternatives-training-and-development.html">L&amp;D alternatives guide</a> explains recurring programme operations, while <a href="/skills-taxonomy-mapping">skills taxonomy mapping</a> connects assessed learning with reviewed capabilities. <a href="https://info.certifyme.online/request-demo">See CertifyMe for your organisation’s learning programmes</a>.</p>
+
+<h2 id="extend-reviewed-learning-records-into-workforce-planning">Extend reviewed learning records into workforce planning</h2>
+
+<p>A business can retain credential and skill evidence in a broader learner record, then investigate how those reviewed skills relate to occupations and employer requirements. CertifyMe’s Job Engine supplies market context for that investigation. Treat it as input to programme planning, not an automated employee ranking or a guaranteed staffing outcome.</p>
+
+<section class="cm-job-engine" aria-label="Job Engine workforce infrastructure" data-job-engine-story="">
+  <h3>Job Engine: the infrastructure behind workforce insight</h3>
+  <p>CertifyMe's <strong>Job Engine</strong>—CertifyMe's own job-farming engine—sources company and job-provider records, ingests and enriches them, normalises job attributes, and maps relevant skills and taxonomies. Structured occupation and job relationships turn those records into workforce and opportunity insight.</p>
+  <p class="cm-job-flow">Job sourcing <span aria-hidden="true">→</span> Ongoing ingestion <span aria-hidden="true">→</span> Enrichment <span aria-hidden="true">→</span> Normalisation <span aria-hidden="true">→</span> Skill/taxonomy mapping <span aria-hidden="true">→</span> Occupation/job structuring <span aria-hidden="true">→</span> Workforce insight</p>
+  <p><strong>20 million live jobs · 50,000 companies worldwide · refreshed every two weeks.</strong> This market context helps institutions review programme relevance and explore career pathways.</p>
+  <p>Connect institution-reviewed <a href="/skills-taxonomy-mapping">skills</a> in a <a href="/comprehensive-learner-record">learner record</a> with job and occupation information. Curriculum teams can examine employer demand; careers teams can explain how learning relates to roles and opportunities. <a href="/workforce-intelligence">Explore Workforce Intelligence</a>.</p>
+</section>
+:ET

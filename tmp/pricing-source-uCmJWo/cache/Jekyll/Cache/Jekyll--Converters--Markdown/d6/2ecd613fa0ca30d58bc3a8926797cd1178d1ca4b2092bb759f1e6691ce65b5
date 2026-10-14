@@ -1,0 +1,127 @@
+I":<p>Learning paths organize sequential milestones toward a programme goal. Recognition should reflect the assessed achievement at each stage rather than merely recording navigation through content.</p>
+
+<h2 id="define-a-milestone-contract">Define a milestone contract</h2>
+
+<p>For each stage specify the outcome, prerequisites, assessment, evidence and approving role. Keep participation, completion and competence distinct. The operational examples below should be checked against current product documentation before assuming a particular automated prerequisite feature.</p>
+
+<h2 id="relate-the-path-to-a-microcredential-programme">Relate the path to a microcredential programme</h2>
+
+<p>Use <a href="/micro-credentials">microcredential programme guidance</a> to define the scope of each achievement. A sequence of short activities does not automatically constitute a recognized qualification or accredited programme.</p>
+
+<h2 id="review-capability-relationships">Review capability relationships</h2>
+
+<p>Use <a href="/skills-taxonomy-mapping">skills taxonomy mapping</a> to relate assessed milestones to capabilities. Academic review is needed; similarity between a course name and a skill term is not sufficient.</p>
+
+<h2 id="preserve-achievements-and-provenance">Preserve achievements and provenance</h2>
+
+<p>A <a href="/comprehensive-learner-record">Comprehensive Learner Record</a> can connect the path’s achievements while keeping issuer and assessment context. Agree how repeated modules, changes and prior learning will be handled.</p>
+
+<h2 id="do-not-substitute-opportunity-matches-for-assessment">Do not substitute opportunity matches for assessment</h2>
+
+<p><a href="/workforce-intelligence">Workforce intelligence</a> can inform relevance and career investigation. It does not prove that the path prepares every learner for every matching job. Use an authorized pilot and measured outcomes to evaluate the design.</p>
+
+<h2 id="existing-operational-reference">Existing operational reference</h2>
+
+<p>Learning paths organise a sequence of achievements. Institutions can use them to define milestones, award criteria and recognition within a programme.</p>
+
+<p><br /></p>
+
+<h2 id="what-is-a-learning-path">What is a Learning Path?</h2>
+
+<p>A learning path is a structured sequence of courses, modules, or milestones designed to guide learners through a comprehensive educational journey. It helps learners achieve specific learning goals by following a predefined roadmap. Learning paths ensure that learners progress logically and systematically, building on their knowledge and skills as they advance.</p>
+
+<p><br /></p>
+
+<p>Explore the structure of a learning path <a href="https://www.youtube.com/watch?v=kXYADGPoars">here</a></p>
+
+<p><br /></p>
+
+<h2 id="how-to-create-a-learning-path">How to Create a Learning Path</h2>
+
+<p>Creating a learning path in CertifyMe is straightforward and user-friendly. Follow these steps to set up a structured educational journey:</p>
+
+<ol>
+  <li><b>Log in to your CertifyMe account. </b></li>
+  <li><b>Navigate to the “Learning Paths” section. </b></li>
+  <li><b>Click on “Create New Learning Path.” </b></li>
+  <li><b>Enter the name and description of the learning path. </b></li>
+  <li><b>Add the courses, modules, or milestones that make up the learning path. </b></li>
+  <li><b>Arrange them in the desired order. </b></li>
+  <li><b>Click “Save” to finalize the learning path. </b></li>
+</ol>
+
+<p>You can follow along this step by step tutorial <a href="https://www.youtube.com/watch?v=UolXiFolNAA">video</a></p>
+
+<p><br /></p>
+
+<p><img class="img-fluid r-16" src="/assets4/images/l_image1.png" alt="Learning paths in CertifyMe" /></p>
+
+<p><br /></p>
+
+<h2 id="how-to-add-a-template-to-the-learning-path">How to Add a Template to the Learning Path</h2>
+
+<p>Templates streamline the design and presentation of your learning path by providing a consistent and professional framework that ensures uniformity across all learning modules. To add a template to your learning path, simply follow the steps given below:</p>
+
+<ol>
+  <li><b>Open the learning path you wish to edit. </b></li>
+  <li><b> Navigate to the “Templates” section within the learning path settings. </b></li>
+  <li><b> Click “Add Template.” </b></li>
+  <li><b> Choose a pre-designed template or create a new one. </b></li>
+  <li><b> Customize the template with relevant information, branding, and design elements. </b></li>
+  <li><b> Save the template and assign it to the appropriate parts of the learning path. </b></li>
+</ol>
+
+<h2 id="what-is-specialization-in-a-learning-path">What is Specialization in a Learning Path?</h2>
+
+<p>Specialization in a learning path refers to a subset of courses or modules focused on a particular subject area. It allows learners to gain deeper expertise in a specific field within the broader learning path. Specializations are essential for learners who want to master topics or skills beyond the general curriculum.</p>
+
+<p><br /></p>
+
+<h2 id="how-to-add-specializations-to-the-learning-path">How to Add Specializations to the Learning Path</h2>
+
+<p>Specializations enhance learning paths by providing learners with targeted training that deepens their expertise in particular subjects. To add specializations:</p>
+
+<ol>
+  <li><b> Go to the “Learning Paths” section and select the learning path you want to edit. </b></li>
+  <li><b> Click on “Add Specialization.” </b></li>
+  <li><b> Enter the name and description of the specialization. </b></li>
+  <li><b> Assign relevant courses or modules to the specialization. </b></li>
+  <li><b> Save the changes to integrate the specialization into the learning path. </b></li>
+</ol>
+
+<p><br /></p>
+
+<p><img class="img-fluid r-16" src="/assets4/images/l_image2.png" alt="Specialization within learning paths in CertifyMe" /></p>
+
+<h2 id="what-is-recognition-in-a-learning-path">What is Recognition in a Learning Path?</h2>
+
+<p>Recognition in a learning path refers to the awards, badges, certificates, or other acknowledgments given to learners upon achieving certain milestones or completing specific courses within the learning path. It serves to motivate learners and provide tangible proof of their accomplishments. Recognitions can be a powerful tool to encourage continuous learning and celebrate progress.</p>
+
+<p><br /></p>
+
+<h2 id="how-to-add-recognitions-to-the-learning-path">How to Add Recognitions to the Learning Path</h2>
+
+<p>To add a recognition to your learning path:</p>
+
+<ol>
+  <li><b> Open the learning path you wish to edit. </b></li>
+  <li><b> Navigate to the “Recognition” section. </b></li>
+  <li><b> Click on “Add Recognition.” </b></li>
+  <li><b> Define the criteria for earning recognition, such as completing specific courses or achieving certain milestones. </b></li>
+  <li><b> Choose the type of recognition, such as badges, certificates, or awards. </b></li>
+  <li><b> Save the settings to integrate recognition into the learning path. </b></li>
+</ol>
+
+<p>By following these guidelines, you can create effective learning paths and specializations with CertifyMe, enhancing the educational experience for your learners and ensuring they achieve their learning goals efficiently and effectively.</p>
+
+<p><br /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Review each pathway’s milestones and award criteria with the responsible academic or training team. Measure participation and completion against your programme’s baseline.</p>
+
+<h2 id="plan-your-next-step">Plan your next step</h2>
+
+<p>Discuss the actual award, evidence and implementation requirements with your institution. <a href="https://info.certifyme.online/request-demo">Request an institutional demo</a>.</p>
+
+:ET
