@@ -1,0 +1,188 @@
+# Documented capability inventory, not runtime entitlement configuration.
+# Values marked "Confirm package scope" require an approved commercial proposal.
+# Evidence is private Jekyll data; never expose source paths in reader copy.
+- category: "Credential Creation and Design"
+  evidence: ["_includes/V4NewLook/pricing/comparePlans.html", "digital-certificate.md", "digital-badges.md", "micro-credentials.md"]
+  rows:
+    - {feature: "Digital certificates", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Digital badges", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Micro-credentials", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Credential templates", essentials: "capacity.templates", professional: "capacity.templates", enterprise: "capacity.templates"}
+    - {feature: "Template designer and editing", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Credential preview", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Custom attributes and data fields", essentials: "Supported fields", professional: "Supported fields", enterprise: "Agreed configuration"}
+    - {feature: "Upload an existing design", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Achievement metadata and issuer details", essentials: "Supported formats", professional: "Supported formats", enterprise: "Supported formats"}
+    - {feature: "Credential evidence", essentials: "Supported formats", professional: "Supported formats", enterprise: "Supported formats"}
+    - {feature: "Canva design integration", essentials: "Confirm package scope", professional: "Confirm package scope", enterprise: "Confirm integration scope"}
+    - {feature: "Page size options", essentials: "Confirm package scope", professional: "Confirm package scope", enterprise: "Agreed design scope"}
+    - {feature: "Page quality options", essentials: "Confirm package scope", professional: "Confirm package scope", enterprise: "Agreed design scope"}
+- category: "Issuance and Delivery"
+  evidence: ["_includes/V4NewLook/pricing/comparePlans.html", "_includes/V4NewLook/pricing/Admin-roles.html", "api.md"]
+  rows:
+    - {feature: "Individual / quick award", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "CSV bulk award", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "API-based issuance", essentials: "Confirm API scope", professional: "Confirm API scope", enterprise: "Agreed API scope"}
+    - {feature: "Email delivery", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "PDF attachments in email", essentials: "Confirm package scope", professional: "Confirm package scope", enterprise: "Agreed delivery scope"}
+    - {feature: "Individual email resend", essentials: "Supported lifecycle", professional: "Supported lifecycle", enterprise: "Supported lifecycle"}
+    - {feature: "Bulk resend", essentials: "Confirm package scope", professional: "Confirm package scope", enterprise: "Agreed delivery scope"}
+    - {feature: "Individual credential download", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Bulk credential download", essentials: "Confirm package scope", professional: "Confirm package scope", enterprise: "Agreed download scope"}
+    - {feature: "Recipient credential access and retrieval", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Social and professional sharing", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "LinkedIn licences and certifications sharing", essentials: "Supported sharing", professional: "Supported sharing", enterprise: "Supported sharing"}
+- category: "Credential Lifecycle Management"
+  evidence: ["_includes/V4NewLook/pricing/Admin-roles.html", "digital-credential-infrastructure.html", "certificate-verification.md"]
+  rows:
+    - {feature: "View and retrieve issued records", essentials: "Included", professional: "Included", enterprise: "Included"}
+    - {feature: "Correct / edit credentials", essentials: "Supported lifecycle", professional: "Supported lifecycle", enterprise: "Supported lifecycle"}
+    - {feature: "Revoke credentials", essentials: "Supported lifecycle", professional: "Supported lifecycle", enterprise: "Supported lifecycle"}
+    - {feature: "Delete credentials", essentials: "Supported lifecycle", professional: "Supported lifecycle", enterprise: "Supported lifecycle"}
+    - {feature: "Set and manage expiry", essentials: "Supported lifecycle", professional: "Supported lifecycle", enterprise: "Supported lifecycle"}
+    - {feature: "Current credential status checks", essentials: "Supported format and status service", professional: "Supported format and status service", enterprise: "Supported format and status service"}
+    - {feature: "Export credential information", essentials: "Confirm export scope", professional: "Confirm export scope", enterprise: "Agreed export scope"}
+    - {feature: "Activity history and lifecycle audit records", essentials: "Confirm record scope", professional: "Confirm record scope", enterprise: "Agreed audit and retention scope"}
+- category: "Verification and Trust"
+  evidence: ["certificate-verification.md", "_includes/V4NewLook/pricing/comparePlans.html", "_includes/V4NewLook/infrastructure/page.html"]
+  rows:
+    - {feature: "QR-code entry and lookup", essentials: "Included — record lookup", professional: "Included — record lookup", enterprise: "Included — record lookup"}
+    - {feature: "Unique credential ID lookup", essentials: "Included — record lookup", professional: "Included — record lookup", enterprise: "Included — record lookup"}
+    - {feature: "Smart ID tagging", essentials: "Confirm verification configuration", professional: "Confirm verification configuration", enterprise: "Agreed verification configuration"}
+    - {feature: "OTP-based verification", essentials: "Confirm verification configuration", professional: "Confirm verification configuration", enterprise: "Agreed verification configuration"}
+    - {feature: "Signed PDF integrity verification", essentials: "Supported signed configuration", professional: "Supported signed configuration", enterprise: "Agreed signed configuration"}
+    - {feature: "Structured credential proof verification", essentials: "Compatible proof and verifier", professional: "Compatible proof and verifier", enterprise: "Compatible proof and verifier"}
+    - {feature: "Issuer and recipient information", essentials: "Supported credential format", professional: "Supported credential format", enterprise: "Supported credential format"}
+    - {feature: "Expiry and revocation verification", essentials: "Applicable status information", professional: "Applicable status information", enterprise: "Applicable status information"}
+    - {feature: "Public verification pages", essentials: "Standard CertifyMe experience", professional: "Supported custom branding", enterprise: "Agreed branding governance"}
+    - {feature: "Verification widget", essentials: "Confirm module availability", professional: "Confirm module availability", enterprise: "Separately scoped"}
+- category: "Standards and Interoperability"
+  evidence: ["_includes/V4NewLook/head.html", "_includes/V4NewLook/infrastructure/page.html", "comprehensive-learner-record.html"]
+  rows:
+    - {feature: "Open Badges 3.0", essentials: "Supported credential format", professional: "Supported credential format", enterprise: "Supported credential format"}
+    - {feature: "W3C Verifiable Credentials", essentials: "Supported credential configuration", professional: "Supported credential configuration", enterprise: "Supported credential configuration"}
+    - {feature: "Credential portability and exchange", essentials: "Compatible formats and receivers", professional: "Compatible formats and receivers", enterprise: "Agreed exchange scope"}
+    - {feature: "CLR exchange formats", essentials: "Separate module; confirm format", professional: "Separate module; confirm format", enterprise: "Agreed module and format"}
+- category: "Branding and Learner Experience"
+  evidence: ["whitelabel-credentials.md", "_includes/V4NewLook/pricing/comparePlans.html"]
+  rows:
+    - {feature: "Credential page branding", essentials: "Standard CertifyMe branding", professional: "Supported custom branding", enterprise: "Agreed branding governance"}
+    - {feature: "Organization / institution pages", essentials: "Standard CertifyMe experience", professional: "Confirm customization scope", enterprise: "Agreed customization scope"}
+    - {feature: "Custom domains", essentials: "Not included", professional: "Included", enterprise: "Included"}
+    - {feature: "White-label email", essentials: "Not included", professional: "Included", enterprise: "Included"}
+    - {feature: "SMTP configuration", essentials: "Not included", professional: "Confirm supported configuration", enterprise: "Agreed configuration"}
+    - {feature: "Email customization", essentials: "Standard CertifyMe branding", professional: "Supported custom branding", enterprise: "Agreed branding governance"}
+    - {feature: "Navigation customization", essentials: "Not included", professional: "Confirm customization scope", enterprise: "Agreed customization scope"}
+    - {feature: "Footer customization", essentials: "Not included", professional: "Confirm customization scope", enterprise: "Agreed customization scope"}
+    - {feature: "Verification-page branding", essentials: "Standard CertifyMe branding", professional: "Supported custom branding", enterprise: "Agreed branding governance"}
+    - {feature: "Custom URLs", essentials: "Not included", professional: "Confirm customization scope", enterprise: "Agreed customization scope"}
+    - {feature: "Video branding space", essentials: "Not included", professional: "Confirm customization scope", enterprise: "Agreed customization scope"}
+    - {feature: "Lead capture", essentials: "Confirm package scope", professional: "Confirm package scope", enterprise: "Agreed configuration"}
+    - {feature: "Multilingual credential experience", essentials: "Confirm supported languages", professional: "Confirm supported languages", enterprise: "Agreed language scope"}
+- category: "Administrators, Projects and Departments"
+  evidence: ["_includes/V4NewLook/pricing/Admin-roles.html"]
+  rows:
+    - {feature: "Administrative accounts", essentials: "capacity.administrators", professional: "capacity.administrators", enterprise: "capacity.administrators"}
+    - {feature: "Administrator invitations and management", essentials: "One administrator only", professional: "Within agreed allowance", enterprise: "Contract-defined roles"}
+    - {feature: "Role-based access", essentials: "Essential administrative controls", professional: "Department-scoped permissions", enterprise: "Agreed institution-wide governance"}
+    - {feature: "Projects", essentials: "capacity.projects", professional: "capacity.projects", enterprise: "capacity.projects"}
+    - {feature: "Folders", essentials: "Confirm organization scope", professional: "Folder-based organization", enterprise: "Agreed organization scope"}
+    - {feature: "Departments", essentials: "capacity.departments", professional: "capacity.departments", enterprise: "capacity.departments"}
+    - {feature: "Additional departments", essentials: "Not available", professional: "Paid recurring add-on", enterprise: "Contract-defined"}
+    - {feature: "Department management", essentials: "Not included", professional: "Included department and purchased add-ons", enterprise: "Agreed governance scope"}
+    - {feature: "Department resource ownership", essentials: "No departments", professional: "Authorized department resources", enterprise: "Agreed governance scope"}
+    - {feature: "Fine-grained department permissions", essentials: "No departments", professional: "Department-scoped access", enterprise: "Agreed governance scope"}
+    - {feature: "Project-level user assignment", essentials: "Confirm project access scope", professional: "Supported project assignment", enterprise: "Agreed project access scope"}
+    - {feature: "Templates, records, reports and configuration access", essentials: "Single administrator", professional: "Authorized department and project scope", enterprise: "Agreed role and resource scope"}
+    - {feature: "Cross-department / institution-wide administration", essentials: "No departments", professional: "Not granted by department add-ons", enterprise: "Agreed institution-wide governance"}
+- category: "Analytics and Reporting"
+  evidence: ["credential-analytics.md", "_includes/V4NewLook/pricing/comparePlans.html"]
+  rows:
+    - {feature: "Credential issuance reporting", essentials: "Standard analytics", professional: "Confirm reporting scope", enterprise: "Agreed reporting scope"}
+    - {feature: "Credential views", essentials: "Standard analytics", professional: "Confirm reporting scope", enterprise: "Agreed reporting scope"}
+    - {feature: "Download reporting", essentials: "Standard analytics", professional: "Confirm reporting scope", enterprise: "Agreed reporting scope"}
+    - {feature: "Social sharing and engagement", essentials: "Standard analytics", professional: "Confirm reporting scope", enterprise: "Agreed reporting scope"}
+    - {feature: "Verification activity reporting", essentials: "Confirm reporting scope", professional: "Confirm reporting scope", enterprise: "Agreed reporting scope"}
+    - {feature: "Template-level reporting", essentials: "Confirm reporting scope", professional: "Confirm reporting scope", enterprise: "Agreed reporting scope"}
+    - {feature: "Project-level reporting", essentials: "Confirm reporting scope", professional: "Confirm reporting scope", enterprise: "Agreed reporting scope"}
+    - {feature: "Reporting data export", essentials: "Confirm export scope", professional: "Confirm export scope", enterprise: "Agreed export scope"}
+    - {feature: "Reporting API access", essentials: "Confirm API scope", professional: "Confirm API scope", enterprise: "Agreed API scope"}
+    - {feature: "Advanced analytics", essentials: "Confirm package scope", professional: "Confirm package scope", enterprise: "Agreed reporting scope"}
+    - {feature: "Marketing performance analysis", essentials: "Confirm package scope", professional: "Confirm package scope", enterprise: "Agreed reporting scope"}
+    - {feature: "Carbon emission report", essentials: "Confirm report scope", professional: "Confirm report scope", enterprise: "Confirm report scope"}
+- category: "APIs, Automation and Integrations"
+  evidence: ["api.md", "integrations.md", "allIntegrations.md", "_includes/V4NewLook/pricing/comparePlans.html"]
+  rows:
+    - {feature: "Basic APIs", essentials: "Confirm API scope and limits", professional: "Confirm API scope and limits", enterprise: "Agreed API scope and limits"}
+    - {feature: "Advanced APIs", essentials: "Confirm API scope and limits", professional: "Confirm API scope and limits", enterprise: "Agreed API scope and limits"}
+    - {feature: "Webhooks", essentials: "Confirm workflow scope", professional: "Confirm workflow scope", enterprise: "Agreed workflow scope"}
+    - {feature: "CSV data import", essentials: "Supported issuance import", professional: "Supported issuance import", enterprise: "Supported issuance import"}
+    - {feature: "Documented LMS connectors / plugins", essentials: "Confirm connector and package", professional: "Confirm connector and package", enterprise: "Agreed connector and implementation"}
+    - {feature: "Google Forms automation", essentials: "Confirm connector and package", professional: "Confirm connector and package", enterprise: "Agreed automation scope"}
+    - {feature: "Workflow automation / Zapier", essentials: "Confirm workflow and package", professional: "Confirm workflow and package", enterprise: "Agreed automation scope"}
+    - {feature: "SIS, HRIS and institutional integrations", essentials: "Requirements-led scoping", professional: "Requirements-led scoping", enterprise: "Agreed integration scope"}
+    - {feature: "Custom integrations or plugins", essentials: "Separately scoped", professional: "Separately scoped", enterprise: "Separately scoped"}
+- category: "Skills Taxonomy Mapping"
+  evidence: ["skills-taxonomy-mapping.html"]
+  rows:
+    - {feature: "Institution-defined skills and outcomes", essentials: "Separate module; confirm availability", professional: "Separate module; confirm availability", enterprise: "Agreed module scope"}
+    - {feature: "Credential-to-skill relationships", essentials: "Separate module; confirm availability", professional: "Separate module; confirm availability", enterprise: "Agreed module scope"}
+    - {feature: "ESCO, O*NET and institutional framework mapping", essentials: "Reviewed mapping scope", professional: "Reviewed mapping scope", enterprise: "Agreed framework and mapping scope"}
+    - {feature: "Institutional review and approval of mappings", essentials: "Separate module scope", professional: "Separate module scope", enterprise: "Agreed review responsibilities"}
+    - {feature: "Evidence and provenance for skill relationships", essentials: "Separate module scope", professional: "Separate module scope", enterprise: "Agreed evidence scope"}
+    - {feature: "Reuse of reviewed skill mappings", essentials: "Confirm module scope", professional: "Confirm module scope", enterprise: "Agreed mapping scope"}
+- category: "Comprehensive Learner Record and SkillStory"
+  evidence: ["comprehensive-learner-record.html", "_includes/V4NewLook/skill-passport/03-record-outputs.html", "custom-badge-wallet.md"]
+  rows:
+    - {feature: "Learner-facing wallet or profile", essentials: "Confirm learner experience scope", professional: "Confirm learner experience scope", enterprise: "Agreed learner experience"}
+    - {feature: "Connected record of achievements and learning", essentials: "Separate module; confirm availability", professional: "Separate module; confirm availability", enterprise: "Agreed module scope"}
+    - {feature: "CLR creation and display", essentials: "Separate module; confirm availability", professional: "Separate module; confirm availability", enterprise: "Agreed module scope"}
+    - {feature: "Learner-record sharing", essentials: "Separate module scope", professional: "Separate module scope", enterprise: "Agreed sharing scope"}
+    - {feature: "Achievement evidence and provenance", essentials: "Separate learner-record scope", professional: "Separate learner-record scope", enterprise: "Agreed learner-record scope"}
+    - {feature: "Skill Passport", essentials: "Not available", professional: "Optional add-on", enterprise: "Optional add-on"}
+    - {feature: "Transcript-management connections", essentials: "Separately scoped", professional: "Separately scoped", enterprise: "Agreed integration scope"}
+    - {feature: "Custom wallet", essentials: "No custom-branding entitlement", professional: "Confirm separate module availability", enterprise: "Separately scoped"}
+    - {feature: "Showcase Directory", essentials: "Confirm separate module availability", professional: "Confirm separate module availability", enterprise: "Separately scoped"}
+    - {feature: "Learning paths and specialization", essentials: "Confirm module scope", professional: "Confirm module scope", enterprise: "Agreed module scope"}
+- category: "Workforce Intelligence and Job Engine"
+  evidence: ["_includes/V4NewLook/workforce-intelligence/page.html", "_includes/V4NewLook/skill-passport/03-record-outputs.html"]
+  rows:
+    - {feature: "Job and occupation context", essentials: "Separate module; confirm availability", professional: "Separate module; confirm availability", enterprise: "Agreed module and source scope"}
+    - {feature: "Employer and location context", essentials: "Separate module scope", professional: "Separate module scope", enterprise: "Agreed source scope"}
+    - {feature: "Reviewed skill and taxonomy enrichment", essentials: "Separate module scope", professional: "Separate module scope", enterprise: "Agreed enrichment scope"}
+    - {feature: "Workforce demand and programme relevance", essentials: "Separate module scope", professional: "Separate module scope", enterprise: "Agreed intelligence scope"}
+    - {feature: "Career and opportunity insights", essentials: "Confirm learner module scope", professional: "Confirm learner module scope", enterprise: "Agreed learner module scope"}
+    - {feature: "Job-provider connections", essentials: "Confirm provider and implementation", professional: "Confirm provider and implementation", enterprise: "Agreed provider and implementation"}
+- category: "Security, Privacy and Institutional Assurance"
+  evidence: ["security.md", "_includes/V4NewLook/pricing/comparePlans.html"]
+  rows:
+    - {feature: "Data encryption in transit and at rest", essentials: "Platform protection; review scope", professional: "Platform protection; review scope", enterprise: "Platform protection; review scope"}
+    - {feature: "Credential data security controls", essentials: "Platform controls; review scope", professional: "Platform controls; review scope", enterprise: "Agreed governance controls"}
+    - {feature: "Single sign-on", essentials: "Confirm authentication scope", professional: "Confirm authentication scope", enterprise: "Standard; confirm implementation"}
+    - {feature: "Multi-factor authentication", essentials: "Confirm authentication scope", professional: "Confirm authentication scope", enterprise: "Standard; confirm implementation"}
+    - {feature: "Backup arrangements", essentials: "Confirm operational arrangements", professional: "Confirm operational arrangements", enterprise: "Agree backup arrangements"}
+    - {feature: "Recovery arrangements", essentials: "Confirm operational arrangements", professional: "Confirm operational arrangements", enterprise: "Agree recovery arrangements"}
+    - {feature: "Administrative audit trails", essentials: "Confirm audit scope", professional: "Confirm audit scope", enterprise: "Agreed audit and retention scope"}
+    - {feature: "Vulnerability-management evidence", essentials: "Request applicable documentation", professional: "Request applicable documentation", enterprise: "Procurement review"}
+    - {feature: "Penetration-test documentation", essentials: "Request applicable documentation", professional: "Request applicable documentation", enterprise: "Procurement review"}
+    - {feature: "Security questionnaire and procurement support", essentials: "Confirm support scope", professional: "Confirm support scope", enterprise: "Agreed review support"}
+    - {feature: "DPA and contractual privacy terms", essentials: "Applicable privacy terms", professional: "Applicable privacy terms", enterprise: "Agreed DPA and privacy terms"}
+    - {feature: "Data residency", essentials: "Confirm contractual arrangements", professional: "Confirm contractual arrangements", enterprise: "Contract-defined; confirm availability"}
+    - {feature: "Dedicated deployment", essentials: "Confirm separate offering", professional: "Confirm separate offering", enterprise: "Separately scoped; confirm availability"}
+    - {feature: "Retention and exit arrangements", essentials: "Confirm contractual arrangements", professional: "Confirm contractual arrangements", enterprise: "Agreed retention and exit terms"}
+- category: "Implementation, Support and Services"
+  evidence: ["_includes/V4NewLook/pricing/comparePlans.html", "_includes/V4NewLook/infrastructure/page.html"]
+  rows:
+    - {feature: "Self-service documentation", essentials: "Standard resources", professional: "Standard resources", enterprise: "Standard resources"}
+    - {feature: "Email support", essentials: "Confirm support arrangement", professional: "Confirm support arrangement", enterprise: "Contract-defined support"}
+    - {feature: "Onboarding", essentials: "Confirm package scope", professional: "Confirm package scope", enterprise: "Agreed onboarding"}
+    - {feature: "Administrator training", essentials: "Confirm training scope", professional: "Confirm training scope", enterprise: "Agreed training"}
+    - {feature: "Advanced training / credential consultation", essentials: "Separately scoped", professional: "Separately scoped", enterprise: "Agreed service scope"}
+    - {feature: "Credential design assistance", essentials: "Confirm service availability", professional: "Confirm service availability", enterprise: "Agreed design assistance"}
+    - {feature: "Discovery and requirements definition", essentials: "Confirm implementation scope", professional: "Confirm implementation scope", enterprise: "Agreed implementation scope"}
+    - {feature: "Migration", essentials: "Separately scoped", professional: "Separately scoped", enterprise: "Agreed migration scope"}
+    - {feature: "Integration implementation", essentials: "Separately scoped", professional: "Separately scoped", enterprise: "Agreed implementation scope"}
+    - {feature: "Testing and user acceptance", essentials: "Confirm implementation scope", professional: "Confirm implementation scope", enterprise: "Agreed implementation scope"}
+    - {feature: "Go-live assistance", essentials: "Confirm implementation scope", professional: "Confirm implementation scope", enterprise: "Agreed implementation scope"}
+    - {feature: "Dedicated account management", essentials: "Confirm support arrangement", professional: "Confirm support arrangement", enterprise: "Agreed account management"}
+    - {feature: "Service levels and escalation", essentials: "Applicable support terms", professional: "Applicable support terms", enterprise: "Contract-defined; no fixed SLA implied"}

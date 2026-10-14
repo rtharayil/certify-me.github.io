@@ -110,6 +110,31 @@
 .pricing-final__actions { display: flex; flex: 0 0 auto; flex-direction: column; gap: 10px; }
 .pricing-final__actions .pricing-btn { min-width: 210px; }
 .pricing-page :focus-visible { outline: 3px solid #837df4; outline-offset: 3px; }
+.pricing-guidance { padding-top: 52px; }
+.pricing-guidance__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(24px, 5vw, 70px); margin-top: 28px; border-top: 1px solid var(--price-line); }
+.pricing-guidance__item { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 14px; padding: 21px 0; border-bottom: 1px solid var(--price-line); }
+.pricing-guidance__index { padding-top: 3px; color: var(--price-indigo); font-size: .76rem; font-weight: 800; letter-spacing: .06em; }
+.pricing-guidance__item h3 { margin: 0; color: #292e53; font-size: 1.12rem; line-height: 1.3; }
+.pricing-guidance__item p { margin: 7px 0 0; color: var(--price-muted); line-height: 1.52; }
+.pricing-guidance__item a, .pricing-trust a { color: var(--price-indigo); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.pricing-guidance__item a:hover, .pricing-trust a:hover { color: #3930c7; }
+.pricing-departments { background: #f4f4ff; }
+.pricing-departments__inner { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(36px, 7vw, 100px); align-items: start; }
+.pricing-departments__intro .pricing-lead { margin-top: 17px; }
+.pricing-departments__details { display: grid; gap: 12px; }
+.pricing-departments__details article { padding: 20px 22px; border: 1px solid #deddf1; border-radius: 9px; background: rgba(255,255,255,.82); }
+.pricing-departments__plan { margin: 0 0 6px; color: var(--price-indigo); font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.pricing-departments__details article > p:last-child { margin: 0; color: #505875; line-height: 1.55; }
+.pricing-departments__scope { margin: 4px 0 0; padding: 14px 17px; border-left: 3px solid #817cf0; color: #505875; font-size: .94rem; line-height: 1.55; }
+.pricing-trust { background: #fff; }
+.pricing-trust__grid { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 14px; margin-top: 34px; }
+.pricing-trust__grid article { min-width: 0; padding: 25px; border: 1px solid var(--price-line); border-radius: 10px; background: #fdfdff; }
+.pricing-trust__grid .pricing-trust__lead { background: #f4f3ff; border-color: #dddcf4; }
+.pricing-trust__grid h3 { margin: 0; color: #292e53; font-size: 1.17rem; line-height: 1.3; }
+.pricing-trust__grid p { margin: 12px 0 19px; color: var(--price-muted); line-height: 1.55; }
+.pricing-trust__grid article > a { display: inline-block; }
+.pricing-trust__links { display: flex; flex-wrap: wrap; gap: 8px 14px; }
+.pricing-trust__links a { font-size: .91rem; }
 @supports (grid-template-rows: subgrid) {
   @media (min-width: 981px) {
     .pricing-plans { row-gap: 0; }
@@ -126,6 +151,9 @@
   .pricing-solutions__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pricing-model__grid { grid-template-columns: 1fr 1fr; }
   .pricing-model__item:last-child { grid-column: 1 / -1; }
+  .pricing-departments__inner { grid-template-columns: 1fr; gap: 24px; }
+  .pricing-trust__grid { grid-template-columns: 1fr 1fr; }
+  .pricing-trust__grid article:last-child { grid-column: 1 / -1; }
 }
 @media (max-width: 767px) {
   .pricing-wrap { width: min(100% - 36px, 580px); }
@@ -144,6 +172,9 @@
   .pricing-card__list { margin-bottom: 21px; }
   .pricing-model__grid { grid-template-columns: 1fr; }
   .pricing-model__item:last-child { grid-column: auto; }
+  .pricing-guidance { padding-top: 28px; }
+  .pricing-guidance__list { grid-template-columns: 1fr; margin-top: 23px; }
+  .pricing-guidance__item { padding: 17px 0; }
   .pricing-compare__head { display: block; }
   .pricing-category__body { padding: 0 12px 12px; }
   .pricing-matrix, .pricing-matrix tbody { display: block; width: 100%; }
@@ -159,6 +190,9 @@
   .pricing-solution__index { margin-bottom: 14px; }
   .pricing-enterprise__panel { grid-template-columns: 1fr; gap: 22px; padding: 26px 22px; }
   .pricing-enterprise__list { grid-template-columns: 1fr; }
+  .pricing-trust__grid { grid-template-columns: 1fr; margin-top: 24px; }
+  .pricing-trust__grid article:last-child { grid-column: auto; }
+  .pricing-trust__grid article { padding: 21px; }
   .pricing-final__inner { display: block; }
   .pricing-final__actions { margin-top: 25px; }
   .pricing-final__actions .pricing-btn { width: 100%; }

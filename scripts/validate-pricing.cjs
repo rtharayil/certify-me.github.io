@@ -12,6 +12,8 @@ const { visibleLabelContrast } = require("./lib/visible-label-contrast.cjs");
 const base = process.env.PRICING_TEST_BASE_URL || `https://${process.env.REPLIT_DEV_DOMAIN}`;
 const data = JSON.parse(execFileSync("ruby", ["-rjson", "-ryaml", "-e",
   'puts JSON.generate(YAML.load_file("_data/pricing.yml"))'], { encoding: "utf8" }));
+data.comparison = JSON.parse(execFileSync("ruby", ["-rjson", "-ryaml", "-e",
+  'puts JSON.generate(YAML.load_file("_data/pricing_features.yml"))'], { encoding: "utf8" }));
 const normalize = text => text.trim().replace(/\s+/g, " ");
 const temp = fs.mkdtempSync(path.join(os.tmpdir(), "pricing-browser-"));
 const profiles = [320, 390, 768, 1024, 1440, 1920].map(width => ({
@@ -20,8 +22,30 @@ const profiles = [320, 390, 768, 1024, 1440, 1920].map(width => ({
 profiles.push({ name: "iPhone touch", ...devices["iPhone 13"] });
 
 assert.deepEqual(data.plans.map(p => p.name), ["Essentials", "Professional", "Enterprise"]);
-assert.deepEqual(data.comparison.map(c => c.rows.length), [7, 5, 8, 6, 5, 7, 5, 9]);
-assert.equal(data.faqs.length, 10);
+assert.deepEqual(data.comparison.map(c => c.rows.length), [13, 12, 8, 10, 4, 13, 13, 12, 9, 6, 10, 6, 14, 13]);
+assert.equal(data.faqs.length, 18);
+const featureCount = data.comparison.reduce((total, category) => total + category.rows.length, 0);
+assert.equal(featureCount, 143);
+const features = data.comparison.flatMap(category => category.rows);
+assert.equal(new Set(features.map(row => row.feature)).size, featureCount, "No duplicate comparison labels");
+for (const category of data.comparison)
+  for (const source of category.evidence) assert(fs.existsSync(source), `Missing capability evidence: ${source}`);
+assert.deepEqual(data.plans[0].capacity, {
+  credentials: "No limit", recipients: "From 500 onwards", templates: "3",
+  administrators: "1", departments: "0", projects: "Confirm in proposal",
+});
+assert.equal(data.plans[1].capacity.templates, "10");
+assert.equal(data.plans[1].capacity.departments, "1 included");
+assert.equal(data.plans[1].capacity.administrators, "Confirm in proposal");
+assert.equal(data.plans[1].capacity.projects, "Confirm in proposal");
+for (const [feature, expected] of [
+  ["Additional departments", ["Not available", "Paid recurring add-on", "Contract-defined"]],
+  ["Department management", ["Not included", "Included department and purchased add-ons", "Agreed governance scope"]],
+  ["Credential page branding", ["Standard CertifyMe branding", "Supported custom branding", "Agreed branding governance"]],
+]) {
+  const row = features.find(row => row.feature === feature);
+  assert.deepEqual(data.plans.map(plan => row[plan.key]), expected, `${feature}: approved plan boundary`);
+}
 assert.equal(data.solutions.cards.length, 4);
 assert.equal(data.plans[0].capacity.recipients, "From 500 onwards");
 assert.equal(data.plans[1].capacity.recipients, "From 1,000 onwards");
@@ -77,12 +101,33 @@ async function run() {
     for (const { name, ...options } of profiles) {
       const context = await browser.newContext({ ...options, reducedMotion: "reduce" });
       const page = await context.newPage();
+      await page.addInitScript(() => {
+        window.__pricingLayoutShift = 0;
+        if (PerformanceObserver.supportedEntryTypes.includes("layout-shift")) {
+          new PerformanceObserver(list => {
+            for (const entry of list.getEntries())
+              if (!entry.hadRecentInput) window.__pricingLayoutShift += entry.value;
+          }).observe({ type: "layout-shift", buffered: true });
+        }
+      });
       const errors = [];
       page.on("pageerror", error => errors.push(error.message));
       const response = await page.goto(`${base}/pricing`, { waitUntil: "load" });
       assert.equal(response.status(), 200);
       assert.match(response.headers()["content-type"], /text\/html/);
       await page.evaluate(() => document.fonts.ready);
+      if (name === "1440px") {
+        const lab = await page.evaluate(() => {
+          const navigation = performance.getEntriesByType("navigation")[0];
+          return {
+            domContentLoadedMs: Math.round(navigation.domContentLoadedEventEnd),
+            loadMs: Math.round(navigation.loadEventEnd),
+            observedInitialLayoutShift: window.__pricingLayoutShift,
+            resources: performance.getEntriesByType("resource").length,
+          };
+        });
+        console.log(`LAB desktop initial navigation (not field CWV): ${JSON.stringify(lab)}`);
+      }
       const root = page.locator("main#main-content");
       assert(await page.evaluate(() => {
         const hero = document.querySelector(".pricing-hero .pricing-eyebrow").getBoundingClientRect();
@@ -103,8 +148,9 @@ async function run() {
       assert.deepEqual(await root.locator(".pricing-model__item h3").allTextContents(),
         ["Annual credential volume", "Recipient population", "Administrative users and organizational scope"]);
       assert(await root.evaluate(element => {
-        const selectors = [".pricing-hero", ".pricing-plans", ".pricing-model",
-          ".pricing-category", ".pricing-solutions", ".pricing-enterprise", ".pricing-faq", ".pricing-final"];
+        const selectors = [".pricing-hero", ".pricing-plans", ".pricing-guidance", ".pricing-model",
+          ".pricing-category", ".pricing-departments", ".pricing-solutions", ".pricing-enterprise",
+          ".pricing-trust", ".pricing-faq", ".pricing-final"];
         const nodes = selectors.map(selector => element.querySelector(selector));
         return nodes.every((node, i) => node && (!i ||
           (nodes[i - 1].compareDocumentPosition(node) & Node.DOCUMENT_POSITION_FOLLOWING)));
@@ -161,7 +207,7 @@ async function run() {
       }
 
       const categories = root.locator(".pricing-category");
-      assert.equal(await categories.count(), 8);
+      assert.equal(await categories.count(), 14);
       for (let i = 0; i < data.comparison.length; i++) {
         const category = categories.nth(i), summary = category.locator("summary");
         assert.equal(await summary.innerText(), data.comparison[i].category);
@@ -186,11 +232,11 @@ async function run() {
         assert(!(await category.evaluate(e => e.open)));
         await summary.press("Enter");
       }
-      assert.equal(await root.locator(".pricing-matrix tbody tr").count(), 52);
+      assert.equal(await root.locator(".pricing-matrix tbody tr").count(), featureCount);
       assert.equal(await root.locator(".editorial-table-scroll,.editorial-table-hint").count(), 0,
         "Stacked comparisons must not receive the legacy horizontal-scroll treatment");
       const faqs = root.locator(".pricing-faq");
-      assert.equal(await faqs.count(), 10);
+      assert.equal(await faqs.count(), data.faqs.length);
       for (let i = 0; i < data.faqs.length; i++) {
         const faq = faqs.nth(i), summary = faq.locator("summary");
         assert.equal(await summary.innerText(), data.faqs[i].question);
@@ -208,10 +254,18 @@ async function run() {
           assert.equal(await card.locator("a").nth(1).getAttribute("href"), "/solutions/transcript-management");
       }
       assert.equal(await root.locator(".pricing-enterprise__list li").count(), 6);
-      for (const selector of [".pricing-model", ".pricing-solutions", ".pricing-enterprise", ".pricing-final"])
+      assert.equal(await root.locator(".pricing-guidance__item").count(), 6);
+      assert.match(await root.locator(".pricing-departments").innerText(), /paid recurring add-ons/);
+      assert.match(await root.locator(".pricing-departments").innerText(), /zero departments/);
+      assert.match(await root.locator(".pricing-departments").innerText(), /does not grant institution-wide administration/);
+      assert.match(await root.locator(".pricing-trust").innerText(), /Lookup is not cryptographic proof/);
+      for (const href of await root.locator('a[href^="#"]').evaluateAll(nodes => nodes.map(node => node.getAttribute("href"))))
+        assert.equal(await root.locator(`[id="${href.slice(1)}"]`).count(), 1, `${name}: missing in-page target ${href}`);
+      for (const selector of [".pricing-model", ".pricing-guidance", ".pricing-departments",
+        ".pricing-solutions", ".pricing-enterprise", ".pricing-trust", ".pricing-final"])
         assert(await root.locator(selector).isVisible());
       const publicText = await root.innerText();
-      assert(!/unlimited|StartUp|Signature|pending|commercial_approval|approved_at|\$\s*\d|save \d+%|free trial/i.test(publicText));
+      assert(!/unlimited|StartUp|Signature plans?|pending|commercial_approval|approved_at|backend enforcement|Up to 2\b|Up to 10\b|Up to 25\b|\$\s*\d|save \d+%|free trial/i.test(publicText));
       assert.match(publicText, /not automatically included in core plans/);
       assert.match(publicText, /Skill Passport is available only as an optional add-on to Professional and Enterprise, not Essentials/);
       assert.match(publicText, /Recipients and administrative users are different/);
@@ -247,7 +301,7 @@ async function run() {
         await menuToggle.click();
         assert.equal(await menuToggle.getAttribute("aria-expanded"), "false");
       }
-      console.log(`PASS ${name}: three plans, aligned/stacked cards, all 52 feature rows and 10 FAQs, keyboard disclosures, contrast, geometry, metadata and safeguards`);
+      console.log(`PASS ${name}: approved displayed limits, three plans, all ${featureCount} feature rows in 14 categories and ${data.faqs.length} FAQs, department add-ons, trust, keyboard disclosures, contrast, geometry, metadata and safeguards`);
       await context.close();
     }
 
@@ -268,6 +322,8 @@ async function run() {
       if (href.startsWith("/")) routes.add(href);
     for (const route of routes) assert.equal((await context.request.get(`${base}${route}`)).status(), 200, route);
     for (const route of ["/_data/pricing.yml",
+      "/_data/pricing_features.yml", "/docs/pricing-implementation.md",
+      "/attached_assets/Pasted--MASTER-IMPLEMENTATION-SPECIFICATION-CERTIFYME-PRICING-_1791951522551.txt",
       "/attached_assets/Pasted--CERTIFYME-PRICING-PAGE-COMPLETE-REDESIGN-YOUR-ROLE-You_1791603707613.txt",
       "/attached_assets/Pasted--CERTIFYME-PRICING-PAGE-FINAL-CORRECTIVE-IMPLEMENTATION_1791618233581.txt"])
       assert.equal((await context.request.get(`${base}${route}`)).status(), 404, `${route}: private input exposed`);
@@ -277,6 +333,10 @@ async function run() {
       assert.equal((await page.goto(`${base}${route}`)).status(), 200);
       assert.equal(await page.locator('link[rel="canonical"]').getAttribute("href"), `https://www.certifyme.online${route}`);
     }
+    assert.equal((await page.goto(`${base}/whitelabel-credentials.html`)).status(), 200);
+    const brandingText = await page.locator("body").textContent();
+    assert(!/Signature plans?/.test(brandingText));
+    assert.match(brandingText, /Supported custom branding, custom domain and email start with Professional/);
     console.log("PASS both pricing routes, one indexable canonical, no-JS disclosures, linked solutions, private exclusions and unchanged unrelated canonicals");
     await context.close();
   } finally {

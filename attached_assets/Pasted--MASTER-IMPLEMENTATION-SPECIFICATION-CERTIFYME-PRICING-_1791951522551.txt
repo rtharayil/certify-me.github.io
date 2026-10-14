@@ -1,0 +1,505 @@
+# MASTER IMPLEMENTATION SPECIFICATION — CERTIFYME PRICING PAGE
+
+## 1. Purpose and authority
+
+Implement the approved CertifyMe pricing-page redesign and related entitlement corrections using the complete specification below.
+
+**ChatGPT has already performed the product, pricing, feature, positioning, and ICP analysis. This specification is the source of product and commercial decisions.**
+
+You are the implementation agent, not the product strategist.
+
+### You must NOT:
+- Conduct a new product strategy, ICP, packaging, pricing, or positioning exercise.
+- Ask yourself which features belong in which plan.
+- Invent, change, or infer prices, quotas, entitlements, add-on charges, or enterprise commitments.
+- Rename the three approved plans or introduce additional subscription tiers.
+- Replace the six-layer architecture with six pricing tiers.
+- Simplify the feature inventory by omitting difficult or less visible capabilities.
+- Make unsupported claims about integrations, security certifications, SLAs, standards, or product capabilities.
+- Rewrite approved product positioning or independently change the commercial model.
+- Remove existing functionality, data, permissions, or customer entitlements as a side effect of the implementation.
+
+If a necessary implementation fact cannot be established from the approved specification or existing code/configuration, record it as a clearly identified blocker for the product owner. Do not resolve it through invention.
+
+## 2. Scope of work
+
+Implement the pricing page and the related functionality required for the displayed plan entitlements to be accurate.
+
+This includes:
+1. Pricing-page structure, copy, plan cards, feature comparison, add-ons, FAQs, and calls to action.
+2. The feature-by-feature comparison table.
+3. Plan entitlement display and any existing entitlement configuration that must be corrected to enforce the approved rules.
+4. Department and department-manager access behavior where affected by the approved plan rules.
+5. Recurring add-on handling for additional Professional departments, using the existing supported billing mechanism and approved configured price.
+6. Links from the pricing page to relevant existing product, integration, security, and institutional pages.
+7. Responsive behavior, accessibility, performance, SEO metadata, analytics hooks already used by the site, and regression testing.
+8. Relevant references elsewhere on the website that would otherwise contradict the new pricing page.
+
+Do not rebuild unrelated products or redesign the entire website. Make only the changes needed for a coherent, accurate, maintainable pricing experience.
+
+## 3. Approved commercial structure
+
+There must be exactly three plans:
+
+- Essentials
+- Professional
+- Enterprise
+
+The six-layer model is an internal product-analysis framework. It is not a pricing hierarchy, and it must not be represented as six plans.
+
+### Essentials — approved entitlements
+
+- Exactly 1 administrator.
+- Exactly 3 credential templates.
+- Zero departments.
+- No department-management functionality or department add-ons.
+- Standard CertifyMe branding.
+- No custom branding or white-label entitlement.
+- Foundational credential creation, issuance, management, sharing, and verification remain available.
+- Do not artificially remove foundational trust or credential-lifecycle functions simply to differentiate higher plans.
+
+### Professional — approved entitlements
+
+- Exactly 10 credential templates.
+- 1 department included.
+- Additional departments are available as paid recurring add-ons.
+- Department-level access control must be fine-grained and enforced.
+- Custom branding starts at Professional.
+- Preserve the existing approved Professional administrator allowance and all other currently configured limits unless an explicit approved change exists.
+- An additional department does not automatically grant institution-wide administrative access.
+- Department managers must be restricted to their authorized department and resources.
+
+### Enterprise — approved positioning
+
+Position Enterprise for universities, colleges, large institutions, professional bodies, public-sector organizations, and other organizations that need institution-wide governance and a managed implementation.
+
+The Enterprise offer must communicate, where supported and commercially approved:
+
+- Institution-wide administration and governance.
+- Centralized branding governance.
+- Advanced permissions and auditability.
+- Enterprise integrations and identity capabilities.
+- Security review and procurement support.
+- Implementation planning, migration, integration, testing, training, and go-live assistance.
+- Contractually defined support, service levels, and escalation.
+- Deployment, data residency, and contractual arrangements where available.
+- Optional advanced products and ecosystem capabilities.
+
+Do not invent Enterprise prices, capacity limits, implementation fees, hosting options, security certifications, response times, SLAs, or contractual promises. Use approved existing configuration and commercial material. If a value is unavailable, use the approved sales-contact approach rather than fabricating it.
+
+### Other quotas and limits
+
+Preserve existing approved/configured limits for:
+
+- Annual credentials issued.
+- Recipients or learners.
+- Projects.
+- Other usage limits.
+- API usage and integrations, where applicable.
+- Existing add-ons and usage-based charges.
+
+Do not substitute previously discussed illustrative quotas for the current configured values.
+
+Display credentials, recipients, templates, administrators, departments, and projects as distinct concepts. Never imply that these quantities are interchangeable.
+
+Clearly explain the relevant billing period, included capacity, add-on availability, and what happens when a limit is reached—but only where the behavior is confirmed by the existing implementation or approved commercial rules.
+
+## 4. Full product feature inventory
+
+The feature comparison must be exhaustive enough for an institutional buyer to make a meaningful decision. Do not restrict the comparison to the small number of bullets shown on the plan cards.
+
+Organize the comparison into the categories below. Include an individual row for each meaningful capability that is confirmed as implemented and relevant to the product. Consolidate only genuinely duplicate labels, not different capabilities.
+
+### A. Credential creation and design
+- Certificates, badges, micro-credentials, and other supported credential types.
+- Template creation, editing, preview, and template limits.
+- Custom attributes and supported credential data fields.
+- Uploading existing designs and supported design options.
+- Credential metadata, achievement information, evidence, and issuer details.
+- Branding within the credential itself.
+- Single and bulk credential creation.
+- Any supported credential design integrations.
+
+### B. Issuance and delivery
+- Quick or manual award.
+- CSV or spreadsheet-based bulk award.
+- API-based issuance, where supported.
+- Email delivery and supported attachments.
+- Individual and bulk resend.
+- Downloading credentials and associated records.
+- Learner access and credential retrieval.
+- Supported social and professional sharing workflows.
+- Supported issuance automation and integrations.
+
+### C. Credential lifecycle management
+Represent each distinct lifecycle capability separately:
+- Create and issue.
+- View and retrieve.
+- Correct or edit, where supported.
+- Reissue or replace, where supported.
+- Revoke.
+- Delete.
+- Set or manage expiry, where supported.
+- Check current status.
+- Export credential information.
+- Maintain relevant history and audit records, where implemented.
+
+Do not treat revocation, expiry, deletion, correction, and reissuance as synonyms. They have different effects and must be represented accurately.
+
+### D. Verification and trust
+Include the applicable methods individually:
+- QR-code entry and credential lookup.
+- Unique credential ID lookup.
+- Smart ID tagging.
+- OTP-based verification.
+- Signed PDF integrity verification.
+- Structured Open Badges or Verifiable Credential proof verification.
+- Issuer and recipient information.
+- Applicable expiry, revocation, or status checks.
+- Public verification pages or portals.
+- Verification widgets.
+- API-based verification.
+- Verification activity reporting, where available.
+
+Do not imply that QR codes alone provide cryptographic verification. Distinguish lookup, identity association, document integrity, and cryptographic proof.
+
+Do not claim every method is available in every plan unless the actual implementation and approved entitlement configuration support that claim.
+
+### E. Standards and interoperability
+Represent confirmed capabilities separately:
+- Open Badges 3.0.
+- W3C Verifiable Credentials.
+- Supported Comprehensive Learner Record standards and formats.
+- Credential portability and supported exchange/export.
+- Supported receiving platforms and integrations.
+
+Describe standards accurately. Certification of an issuer product must not be presented as independent certification of every credential, deployment, or connected system.
+
+### F. Branding and learner experience
+- Standard CertifyMe-branded experiences.
+- Credential page branding.
+- Institution or organization pages.
+- Custom domains.
+- Custom email domains or SMTP configuration.
+- Email customization.
+- Navigation, footer, or other page customization where supported.
+- Verification-page branding.
+- Custom wallet or learner-facing experience where available.
+- Custom URLs and other white-label capabilities.
+
+Enforce the approved plan boundary: Essentials uses standard CertifyMe branding; Professional introduces supported custom branding; Enterprise may provide broader institution-wide branding governance where supported.
+
+Do not present a custom domain, email domain, custom wallet, or complete white-label deployment as the same entitlement.
+
+### G. Administrators, projects, and departments
+- Administrator quantity.
+- Administrator invitations and management.
+- Supported roles and permissions.
+- Project quantity and project-level access.
+- Department quantity and department management.
+- Department-level resource ownership.
+- Fine-grained department permissions.
+- Cross-department visibility and institution-wide administration.
+- Access to credential templates, issued credentials, reports, exports, and configuration.
+- Auditability of administrative actions, where supported.
+
+Make the distinction between having multiple departments and having institution-wide governance explicit.
+
+### H. Analytics and reporting
+Include separate rows for supported capabilities such as:
+- Credential issuance reports.
+- Recipient and claim activity.
+- Downloads and views.
+- Social sharing and engagement.
+- Verification activity.
+- Template and project reporting.
+- Department-level reporting.
+- Employee or learner credential reports.
+- Credential expiry and revocation status reports.
+- Skills and taxonomy reports.
+- Workforce or job-intelligence reports.
+- Export and API access to reporting data.
+- Advanced analytics, where implemented.
+
+Do not label all analytics as one undifferentiated feature. Credential engagement analytics, compliance reporting, skills analysis, and workforce intelligence answer different buyer questions.
+
+### I. APIs, automation, and integrations
+- Basic and advanced APIs, where those are actual product distinctions.
+- API-based issuance and credential retrieval.
+- Supported webhooks.
+- CSV import/export.
+- Native LMS integrations.
+- SIS, HRIS, training, and other institutional integrations where supported.
+- SSO and identity integrations where supported.
+- Workflow automation and supported connectors.
+- Custom integrations or plugins where commercially offered.
+- Integration implementation and monitoring where available.
+
+Distinguish native, documented, configurable, and custom integrations. Do not imply that every named platform is a ready-to-enable native integration unless that is true.
+
+### J. Skills Taxonomy Mapping
+- Institution-defined skills and learning outcomes.
+- Credential-to-skill relationships.
+- Mapping to ESCO, O*NET, and institutional frameworks where supported.
+- Review and approval of skill mappings.
+- Evidence and provenance connecting achievements to skills.
+- Reuse and reporting of mappings, where supported.
+- Mapping version history and governance only if implemented.
+
+Do not imply that skills are automatically inferred from any certificate title, grade, or course without the necessary configured mapping and institutional review.
+
+### K. Comprehensive Learner Record and SkillStory
+Distinguish basic credential access from the wider learner-record ecosystem.
+
+Represent applicable capabilities separately:
+- Recipient access to issued credentials.
+- A learner-facing wallet or profile.
+- A connected record of degrees, credentials, badges, skills, competencies, projects, experiences, and assessments.
+- CLR creation, display, exchange, or export where supported.
+- Skill Passport / SkillStory learner experience.
+- Sharing of a learner's record.
+- Evidence and provenance for individual achievements.
+- Connections to transcript and other institutional records where implemented.
+
+A basic recipient's ability to access or share an issued credential must not be confused with an advanced CLR, custom wallet, or SkillStory entitlement.
+
+Do not imply that CertifyMe replaces the authoritative institutional transcript or that every potential CLR integration is automatically available.
+
+### L. Workforce Intelligence and Job Engine
+- Job and occupation data.
+- Employer and location context.
+- Skill and taxonomy enrichment.
+- Job-intelligence reports.
+- Workforce demand and programme relevance insights.
+- Career and opportunity insights.
+- Learner-level job matching or application pathways, where implemented.
+- Integrations with job providers or other workforce sources where supported.
+
+Separate credential analytics from workforce intelligence. Do not imply that a credential automatically guarantees employment or that all workforce features are included in every subscription.
+
+### M. Security, privacy, and institutional assurance
+Include relevant, confirmed capabilities such as:
+- Role-based access.
+- Authentication controls.
+- SSO or MFA where supported.
+- Data encryption.
+- Backups and recovery.
+- Audit trails.
+- Vulnerability management.
+- Penetration-test documentation or reports where available.
+- Security questionnaire and procurement support.
+- Data processing agreements and contractual privacy terms.
+- Data residency or dedicated deployment options where offered.
+- Retention, export, and exit arrangements where documented.
+
+Do not invent security claims or make unsupported statements such as “bank-grade,” “fully compliant,” or guaranteed security outcomes. Do not imply that a security feature is exclusive to Enterprise if it is a foundational platform protection shared by all plans.
+
+### N. Implementation, support, and services
+Represent relevant service distinctions:
+- Self-service documentation.
+- Email, chat, or other support channels actually offered.
+- Standard onboarding.
+- Administrator training.
+- Advanced training or consultation.
+- Migration.
+- Integration implementation.
+- Discovery and requirements definition.
+- Testing, user acceptance, and go-live support.
+- Dedicated account management where offered.
+- Service-level agreements and escalation arrangements where contractually available.
+
+Do not promise an implementation duration, support response time, or service level unless it is approved and contractually supportable.
+
+## 5. Optional modules and add-ons
+
+The pricing page must distinguish:
+1. Included plan entitlements.
+2. Paid recurring add-ons.
+3. Optional products or modules.
+4. Enterprise services quoted according to requirements.
+
+Use the existing approved billing and commercial configuration for prices.
+
+Additional Professional departments are a specifically approved recurring add-on. The page must make clear that one department is included and additional departments cost extra.
+
+Do not invent add-on prices or imply that purchasing an additional department automatically upgrades a customer to Enterprise or provides institution-wide governance.
+
+For optional SkillStory, CLR, workforce intelligence, custom wallet, dedicated deployment, or other advanced capabilities, use the approved existing commercial model. Do not silently bundle or exclude them based on assumptions.
+
+## 6. ICP validation already completed
+
+The pricing page must serve the following institutional buyer groups without creating separate plan tiers for each.
+
+### Higher education
+Buyers include registrars, CIOs, IT directors, provosts, deans, and continuing education leaders.
+
+They need to understand credential lifecycle, bulk issuance, branding, verification, departmental governance, SIS/LMS integrations, migration, institutional reporting, CLR, skills mapping, security, and implementation.
+
+### Professional and chartered bodies
+Buyers include certification directors, membership directors, registrars, and compliance leaders.
+
+They need credential validity, expiry and revocation, professional certification records, verification, renewal-related workflows where supported, auditability, and connections to membership or certification systems.
+
+### K-12 and schools
+Buyers include principals, district administrators, and program coordinators.
+
+They need ease of use, safe and appropriate administrative access, bulk awards, branding, student or recipient capacity, template limits, predictable pricing, and a clear path to scale.
+
+### Enterprise HR and L&D
+Buyers include HR technology leaders, L&D directors, compliance leads, and talent leaders.
+
+They need employee credentials, training and certification records, expiry and compliance reporting where supported, department permissions, HR/LMS integrations, skills mapping, and meaningful reports.
+
+### Government and public-sector organizations
+Buyers include programme owners, IT leadership, procurement, security, and compliance teams.
+
+They need transparent security and privacy information, documented integrations, governance, deployment options, implementation responsibility, support commitments, data export, and contractual clarity.
+
+### Training providers
+Buyers include owners, programme directors, and operations leaders.
+
+They need cohorts and bulk issuance, templates, branding, recipient access, verification, engagement analytics, supported integrations, and predictable scaling costs.
+
+### ICP implementation requirements
+The page must let buyers determine:
+- What exactly is included?
+- Which quota applies to credentials, recipients, templates, administrators, departments, and projects?
+- What happens when a quota is reached?
+- Can departments be isolated from one another?
+- Which branding options are available?
+- Which integrations are native versus configurable or custom?
+- Which analytics and reports are included?
+- Which advanced modules require a separate purchase or implementation?
+- What security documentation and contractual options are available?
+- What onboarding, migration, integration, and training support is included?
+- How can the buyer request a demo or an enterprise discussion?
+
+Do not add unverified features to satisfy an ICP need. Where a buyer need is not met by a confirmed feature, avoid implying that it is included.
+
+## 7. Required pricing-page information architecture
+
+Implement the page in this order:
+
+1. **Clear positioning and introduction** explaining CertifyMe's institutional digital credential infrastructure.
+2. **Three plan cards:** Essentials, Professional, Enterprise.
+3. **Plan-selection guidance** explaining the type of organization and operating model each plan suits.
+4. **Key limits at a glance:** templates, administrators, departments, recipients, credentials, and projects wherever the approved values are available.
+5. **Feature-by-feature comparison table** with all relevant categories from Section 4.
+6. **Department and add-on explanation**, including the included Professional department and recurring add-on model.
+7. **Advanced product/module explanation** for the broader ecosystem.
+8. **Enterprise readiness section** covering implementation, governance, integrations, security review, support, and contract-defined options.
+9. **Trust and standards section** using only substantiated claims.
+10. **Buyer-focused FAQs** addressing limits, add-ons, branding, verification, integrations, security, implementation, support, and scaling.
+11. **Clear calls to action** appropriate to each plan and the existing sales process.
+
+The plan cards must be concise. The comparison table carries the detailed inventory.
+
+Use expandable categories if necessary to keep the page navigable, but ensure that the information is accessible, indexable where appropriate, and not lost on mobile. Do not hide essential limits or costs behind vague labels.
+
+## 8. Website consistency and content governance
+
+The pricing page must be consistent with the current CertifyMe positioning and relevant website pages, including the homepage, platform overview, digital credential infrastructure, Skills Taxonomy Mapping, Comprehensive Learner Record, Skill Passport, workforce intelligence, transcript management, integrations, security, and relevant FAQs.
+
+Use the current three-plan structure and the approved rules in this specification.
+
+Legacy references to StartUp, Signature, outdated template counts, old administrator allowances, old pricing, or contradictory package descriptions must not continue to mislead visitors. Update relevant pricing references within scope or identify the exact page and passage requiring an approved follow-up.
+
+Do not globally replace every historical mention of a plan name if it refers to a legacy customer, historical document, or unrelated context. Preserve historical information where appropriate.
+
+Treat the six-layer model as the product architecture that explains the breadth of the platform—not a mandatory plan-by-plan structure.
+
+## 9. Design and usability requirements
+
+- Preserve CertifyMe's existing design system and brand identity.
+- Use a clean, credible, enterprise-grade presentation appropriate for universities, professional bodies, and institutional buyers.
+- Make plan limits and differences easy to scan.
+- Use consistent labels and terminology across cards, comparison rows, FAQs, and related links.
+- Avoid vague “+ More” feature lists as substitutes for meaningful disclosure.
+- Avoid excessive visual density: organize the full comparison into clearly labeled categories.
+- Provide responsive desktop, tablet, and mobile layouts.
+- Maintain keyboard navigation, accessible contrast, visible focus states, meaningful link labels, and semantic headings.
+- Ensure that comparison controls, accordions, tooltips, and calls to action work as intended.
+- Preserve the site's existing framework, component conventions, and reusable patterns where practical.
+
+## 10. Entitlement and billing correctness
+
+Where the implementation requires entitlement changes:
+
+- Essentials must enforce exactly one administrator, three templates, zero departments, no department-management entitlement, and standard CertifyMe branding.
+- Professional must enforce ten templates, one included department, the approved existing administrator allowance, and supported custom branding.
+- Additional Professional departments must use the approved recurring billing mechanism and configured price.
+- Department-level permissions must be enforced server-side and not merely hidden in the user interface.
+- Department managers must not access other departments' resources unless separately authorized.
+- Enterprise entitlements must follow existing approved configuration or contract-defined mechanisms.
+- All other existing approved quotas must remain unchanged unless an explicit approved rule says otherwise.
+
+Check the relevant server-side validation, UI restrictions, API authorization, billing configuration, plan upgrades/downgrades, and existing customer handling.
+
+Do not introduce a migration that unexpectedly removes existing customer access, data, departments, branding, or permissions. Preserve existing customer entitlements safely and backwards-compatibly.
+
+Do not treat a pricing-table change as proof that a feature is technically enforced. Test the actual entitlement behavior.
+
+## 11. SEO and technical quality
+
+- Preserve the canonical URL and existing routing conventions.
+- Update the page title, meta description, headings, internal links, and structured data only where appropriate and accurate.
+- Avoid duplicate or conflicting pricing metadata.
+- Preserve existing analytics and conversion tracking.
+- Check page performance, layout shifts, accessibility, and responsive behavior.
+- Avoid exposing private configuration, secrets, or internal commercial data.
+- Ensure that no unsupported price or entitlement appears in metadata, structured data, FAQs, or hidden page content.
+
+## 12. Required implementation tests
+
+Test all three plans and relevant user roles.
+
+### Pricing-page tests
+- Exactly three plans are displayed.
+- Correct plan names and approved limits appear everywhere.
+- All relevant comparison rows are accurate.
+- The page does not show legacy plan names or contradictory limits in current pricing content.
+- Optional modules and add-ons are clearly distinguished from included entitlements.
+- Calls to action, links, mobile layouts, and expandable sections work.
+
+### Entitlement tests
+- Essentials cannot create a second administrator.
+- Essentials cannot create or manage departments.
+- Essentials cannot exceed three templates under the applicable rules.
+- Professional cannot exceed ten templates under the applicable rules.
+- Professional starts with one included department.
+- Additional Professional departments follow the approved paid recurring add-on flow.
+- Department managers cannot access unauthorized department resources.
+- Custom branding follows the approved plan boundary.
+- Other existing quotas and entitlements remain unchanged.
+- Enterprise functionality follows approved configuration and contract rules.
+
+### Regression and migration tests
+- Existing customers retain appropriate access and data.
+- Existing credentials remain accessible and verifiable.
+- Upgrades and downgrades do not create unintended access or data loss.
+- Billing and entitlement state remain consistent.
+- API and server-side authorization cannot bypass plan restrictions.
+- Existing pages and unrelated functionality continue to work.
+
+Do not claim tests passed unless they were actually executed.
+
+## 13. Required delivery
+
+After implementation, provide a concise, factual report containing:
+
+1. Files and components changed.
+2. Pricing-page sections implemented.
+3. Entitlement and billing changes made.
+4. Confirmed plan rules enforced.
+5. Tests executed and their actual results.
+6. Any regressions or unresolved implementation blockers.
+7. Any existing product capability that could not be confirmed and was therefore not advertised.
+8. Any website inconsistency discovered that falls outside the approved implementation scope.
+
+Separate completed work from unresolved issues. Do not present recommendations as completed implementation.
+
+## Final instruction
+
+**Implement this specification; do not repeat the analysis.**
+
+The plan structure, commercial rules, ICP requirements, feature taxonomy, and page architecture are already defined here. Use the existing codebase to implement them accurately, preserve backwards compatibility, and report genuine blockers rather than making product or commercial decisions.

@@ -13,6 +13,7 @@ exclude:
   - README.md
   - docs/skillstory-assets.md
   - docs/edutranscript-assets.md
+  - docs/pricing-implementation.md
 
 collections:
     devopsma:

@@ -59,9 +59,9 @@ seo_keywords: "white label credentials, white label digital badges, white label 
 
 faqs:
   - question: "What does white-label credentialing mean?"
-    answer: "White-label credentialing means the credential platform operates entirely under your organisation's brand identity — your logo, colours, domain name, and email sender. Recipients see your brand throughout the issuance, delivery, and verification experience. There is no CertifyMe branding visible to end users."
+    answer: "White-label credentialing uses supported custom branding across agreed credential experiences. Custom domains, email branding, page customization and custom wallets are distinct capabilities; confirm the exact scope rather than assuming a completely unbranded deployment."
   - question: "Can I use my own domain for white-label credentials?"
-    answer: "Yes. CertifyMe supports custom domain configuration for white-label deployments. Your credential landing pages, verification URLs, and learner wallet all operate under your domain — reinforcing brand trust with recipients and employers."
+    answer: "Custom domains are available from Professional onward. Confirm which credential and verification pages are covered by your configuration. A custom domain does not automatically include a custom learner wallet."
   - question: "Is white-label credentialing included in all CertifyMe plans?"
-    answer: "White-label credential customisation is available on CertifyMe's Signature and Enterprise plans. The level of customisation — including custom domain, email branding, and full UI rebranding — increases with higher tiers. Contact the CertifyMe team for details specific to your requirements."
+    answer: "Essentials uses standard CertifyMe branding and does not include custom branding or white-label capabilities. Supported custom branding, custom domain and email start with Professional. Enterprise branding governance and any broader customization are defined by agreement. Compare the current Essentials, Professional and Enterprise plans on our pricing page."
 ---
